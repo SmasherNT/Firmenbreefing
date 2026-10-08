@@ -2,11 +2,14 @@
 ## Werte ohne Rückfrage ergänzen
 Sprache: Deutsch. Zielgruppe: Top-Management und Gesprächsvorbereitung.
 Stichtag: tatsächliches aktuelles Datum der Laufumgebung (YYYY-MM-DD).
+Recherchezeitraum: 3 Jahre vor Stichtag für Entwicklungen; ältere Quellen nur als
+markierte Strukturquellen. Aktuelle Entwicklungen: letzte 4 Monate vor Stichtag.
 Unternehmensgrenze: eindeutig identifizierte Unternehmensgruppe und relevante,
 öffentlich belegte Gesellschaften/Partner. Offizielle Firmenwebsite recherchieren.
 Grundblick: global; Nutzerthemen bestimmen die vertieften regionalen Schwerpunkte.
 Ausgabe: output/briefing.html, output/abnahme.md; kompakt mit aufklappbaren vertiefenden Details.
-Quellen: öffentlich, möglichst primär und zum Stichtag passend.
+Quellen: öffentlich, möglichst primär und zum Stichtag passend; Abruf nach
+references/quellenzugang.md (Browser-Abruf vor „nicht abrufbar“).
 Rechercheumfang: entscheidungsrelevante Befunde, keine Vollständigkeit behaupten.
 Nutzerangaben überschreiben Defaults; nie fehlende Person/Region hinzuerfinden.
 
@@ -21,6 +24,13 @@ Unterschied gezielt nachfragen. Themen nicht als bereits belegte Tatsachen lesen
 Kein Nutzerthema: allgemeines Firmenbriefing. Keine Person: Profilabschnitt entfällt.
 Nutzer-Position ist anfangs „Nutzerangabe, noch nicht verifiziert“.
 Keine feste Beispiel-Firma und keinen festen Stichtag in Defaults eintragen.
+
+## Speicherung (verbindlich)
+Auftrag, Recherche und Ausgaben (input/auftrag.md, work/, output/, archive/)
+bleiben nur lokal in der Sitzung und werden nie committet oder gepusht
+(.gitignore). Übergabe an den Nutzer ausschließlich über Claude
+(Datei-Download im Chat). Git nur für Änderungen an Regeln, Skills,
+Agenten und Werkzeugen – ohne Firmen-, Personen- oder Auftragsbezug.
 
 ## Wiederholte Aufträge
 Vor neuem Lauf vorhandene input/auftrag.md, work/ und output/ unter

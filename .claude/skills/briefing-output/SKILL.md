@@ -18,3 +18,4 @@ interne Links, mobile Darstellung und Druckansicht tatsächlich prüfen;
 nicht ausführbare Kontrollen in der Abnahme als nicht geprüft kennzeichnen.
 Erstelle output/abnahme.md gemäß Strukturvorlage. Dateipfade und Cloud-
 Ausgabemöglichkeiten nennen. Keine öffentliche Veröffentlichung automatisch.
+Ausgaben nicht committen; Übergabe als Datei im Chat.

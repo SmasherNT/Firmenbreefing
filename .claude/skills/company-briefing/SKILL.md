@@ -7,8 +7,8 @@ when_to_use: Bei jeder Anfrage nach einem Firmenbriefing, Unternehmensbriefing, 
 Der Hauptagent steuert den Ablauf. Einrichtung, Konfigurationsprüfung oder
 Fragen zum System sind kein Auftrag: dann nichts recherchieren und
 input/auftrag.md nicht anlegen.
-Lies CLAUDE.md, references/defaults.md, references/briefing-struktur.md und
-references/uebergabe.md; sie sind verbindlich.
+Lies CLAUDE.md, references/defaults.md, references/briefing-struktur.md,
+references/uebergabe.md und references/quellenzugang.md; sie sind verbindlich.
 
 ## Ablauf (Reihenfolge einhalten)
 1. Auftrag: Firma, Themen in Nutzerreihenfolge und Gesprächspartner/Position
@@ -53,6 +53,8 @@ Tatsächlich aufgerufene Agenten, Phasen und Dateien für output/abnahme.md
 protokollieren. Personenprofil nur, wenn ein Gesprächspartner genannt ist.
 
 ## Abschluss
-Ergebnisse im Arbeitsbranch committen und pushen (Dateisicherung).
-Keine öffentliche Veröffentlichung ohne ausdrücklichen Nutzerwunsch.
+Auftrags-, Recherche- und Ausgabedateien NICHT committen oder pushen
+(siehe defaults.md, Speicherung). output/briefing.html und output/abnahme.md
+per Datei-Übergabe im Chat bereitstellen. Keine öffentliche Veröffentlichung
+ohne ausdrücklichen Nutzerwunsch.
 Dem Nutzer Pfade, Status, offene Lücken und Abnahmeergebnis nennen.

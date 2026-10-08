@@ -6,12 +6,18 @@
    belegte Lage, relevante Akteure/Produkte, Status/Datum, Bedeutung als
    Analysteninterpretation, Datenlücken und daraus abgeleitete Gesprächsfragen.
 4. Beruflicher Gesprächspartner-Kontext, falls genannt: belegte aktuelle Rolle,
-   Zuständigkeit und öffentlich dokumentierter beruflicher Hintergrund.
+   Zuständigkeit und beruflicher Werdegang als Zeitleiste mit Quelle je Station.
    Nutzerangabe und verifizierte Information sichtbar unterscheiden.
-5. Kompakte Firmenbasis: Portfolio, Struktur/Partnerschaften, Markt/Wettbewerb.
-6. Themenbezogene SWOT, bis 3 Punkte je Quadrant; keine unbelegten Füllpunkte.
+5. Firmenbasis: Portfolio mit Reifegrad-Skala (Stufe 1–6, Kriterien sichtbar,
+   Zählung je Stufe, H/U-Kennzeichnung), Struktur/Partnerschaften nach
+   Kategorien (Töchter, Zukäufe, JVs, Investoren, Partner, Distributoren je
+   Land, Kunden), Markt/Wettbewerb.
+6. Themenbezogene SWOT, bis 3 Punkte je Quadrant; je Punkt aufklappbar
+   Evidenz, strategische Bedeutung und positiver/negativer Beitrag.
 7. Offene Punkte und Gesprächsfragen (Vorschläge, keine Firmenbehauptungen).
-8. Quellenregister mit Claim-Zuordnung, Titel, Datum, Direktlink, Abrufdatum.
+8. Quellenregister je Modul mit Quellentyp, Claim-Zuordnung, Titel, Datum,
+   Direktlink, Abrufdatum und Evidenzhinweis; jeder Abschnitt verlinkt
+   „Quellen →“ auf sein Register.
 
 ## Darstellung
 Eine eigenständige HTML mit eingebettetem CSS, ohne externe Bibliotheken.
@@ -25,6 +31,7 @@ Wesentliche Widersprüche und öffentliche Lücken auch in Kurzfassung sichtbar.
 Tatsächlich aufgerufene Agenten und deren Dateien benennen.
 Auftragsnormalisierung, Themenabdeckung, Personenstatus, Delegation,
 Reihenfolge, Reviews, geschlossene Fehler, Quellenlinks, interne HTML-Links,
-Mobil-/Druckansicht und Dateisicherung: bestanden/offen/nicht geprüft.
+Mobil-/Druckansicht, Quellentypen/Datumsregeln und Nicht-Speicherung in Git
+(git status: keine Auftrags-/Recherchedateien versioniert): bestanden/offen/nicht geprüft.
 Konfigurationstest allein ist kein durchgeführter Agentenlauf.
 Keine Prüfung als bestanden melden, die nicht tatsächlich durchgeführt wurde.
