@@ -45,11 +45,14 @@ def curl(url, binary=False):
 
 def seite(url):
     if os.path.exists(CHROMIUM):
-        r = subprocess.run(
-            [CHROMIUM, "--headless=new", "--no-sandbox", "--disable-gpu",
-             f"--user-agent={UA}", "--virtual-time-budget=8000", "--dump-dom", url],
-            capture_output=True, timeout=90)
-        dom = r.stdout.decode("utf-8", "ignore")
+        try:
+            r = subprocess.run(
+                [CHROMIUM, "--headless=new", "--no-sandbox", "--disable-gpu",
+                 f"--user-agent={UA}", "--virtual-time-budget=8000", "--dump-dom", url],
+                capture_output=True, timeout=90)
+            dom = r.stdout.decode("utf-8", "ignore")
+        except subprocess.TimeoutExpired:
+            dom = ""
         if len(dom) > 2000 and "403 Forbidden" not in dom[:2000]:
             return "chromium", dom
     dom = curl(url)
