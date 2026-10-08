@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing Quantum Systems</title>
+<style>
+:root{--bg:#fbfbf9;--fg:#1d2025;--muted:#5d6470;--line:#d9dce1;--accent:#1f4e79;--card:#ffffff;--warn:#8a4b00;--warnbg:#fff4e0;--ok:#245c2e;--okbg:#e9f5ea;--int:#4b3a7a;--intbg:#f0ecfa}
+@media (prefers-color-scheme:dark){:root{--bg:#16181c;--fg:#e6e8eb;--muted:#a3a9b3;--line:#343842;--accent:#8db8e8;--card:#1e2126;--warn:#f0b65a;--warnbg:#3a2c14;--ok:#8fd19a;--okbg:#1d3322;--int:#c4b5f0;--intbg:#2a2440}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.9rem;margin:.2em 0 .1em}
+h2{font-size:1.35rem;margin:2.2em 0 .6em;padding-bottom:.25em;border-bottom:2px solid var(--accent)}
+h3{font-size:1.08rem;margin:1.4em 0 .4em}
+a{color:var(--accent)}
+.meta{color:var(--muted);font-size:.93rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin:12px 0}
+.kv{display:grid;grid-template-columns:minmax(150px,220px) 1fr;gap:4px 14px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0}
+.tag{display:inline-block;font-size:.75rem;font-weight:600;padding:1px 7px;border-radius:10px;vertical-align:1px;white-space:nowrap}
+.fact{background:var(--okbg);color:var(--ok)}
+.interp{background:var(--intbg);color:var(--int)}
+.gap{background:var(--warnbg);color:var(--warn)}
+.user{background:var(--warnbg);color:var(--warn)}
+.cid{font-size:.78rem;font-family:ui-monospace,Menlo,Consolas,monospace;text-decoration:none;white-space:nowrap}
+.cid::before{content:"["}.cid::after{content:"]"}
+.alert{border-left:4px solid var(--warn);background:var(--warnbg);padding:10px 14px;border-radius:4px;margin:12px 0}
+.table-wrap{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 14px;margin:10px 0}
+summary{cursor:pointer;font-weight:600}
+nav.toc{font-size:.93rem}
+nav.toc ol{margin:.3em 0;padding-left:1.3em;columns:2;column-gap:28px}
+.swot{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.swot .card h3{margin-top:0}
+ul.tight li{margin:.25em 0}
+@media (max-width:640px){.kv{grid-template-columns:1fr}.swot{grid-template-columns:1fr}nav.toc ol{columns:1}h1{font-size:1.5rem}}
+@media print{body{background:#fff;color:#000;font-size:11pt}main{max-width:none;padding:0}details{border:none;padding:0}details>summary{list-style:none}details::details-content{display:block;content-visibility:visible;height:auto}a{color:#000}.card{break-inside:avoid}h2{break-after:avoid}nav.toc{display:none}}
+</style>
+</head>
+<body>
+<main>
+
+<header>
+<p class="meta">Firmenbriefing · Gesprächsvorbereitung Top-Management</p>
+<h1>Quantum Systems</h1>
+<div class="card">
+<dl class="kv">
+<dt>Unternehmen</dt><dd>Quantum-Systems GmbH, Gilching bei München; Hersteller unbemannter Systeme (Drohnen, zunehmend Bodensysteme und Autonomie-Software MOSAIC) <a class="cid" href="#q-p1">P1</a> <a class="cid" href="#q-c1">C1</a></dd>
+<dt>Stichtag</dt><dd>2026-10-08 (alle Quellen an diesem Tag abgerufen)</dd>
+<dt>Themen (Nutzerreihenfolge)</dt><dd>1. Kooperationen mit Fahrzeugherstellern · 2. Business Development Middle East</dd>
+<dt>Gesprächspartner</dt><dd>Hendrik Kramer – <span class="tag user">Nutzerangabe</span> Vice President Land Domain. <span class="tag fact">Quellenstatus</span> Bezeichnung „VP Land Domain“ in Fachmedien 04–06/2026 belegt, zuletzt (07/2026) „VP Ground Domain“; aktuelle offizielle Bezeichnung nicht primär belegt <a class="cid" href="#q-h2">H2</a></dd>
+<dt>Gesamtstatus</dt><dd>Faktenbasis und SWOT geprüft (Basis- und Final-Review). Offizielle Website quantum-systems.com war am Stichtag nicht abrufbar (HTTP 403); Firmenangaben stammen daher aus Fachpresse und Partnerquellen.</dd>
+</dl>
+</div>
+<p class="meta">Legende: <span class="tag fact">Fakt</span> belegt · <span class="tag interp">Interpretation</span> Analysteneinordnung · <span class="tag gap">Lücke</span> öffentlich nicht belegt (kein Beweis einer Schwäche) · Claim-IDs verlinken ins <a href="#quellen">Quellenregister</a>.</p>
+<nav class="toc card" aria-label="Inhalt">
+<strong>Inhalt</strong>
+<ol>
+<li><a href="#summary">Executive Summary</a></li>
+<li><a href="#thema1">Thema 1: Fahrzeughersteller</a></li>
+<li><a href="#thema2">Thema 2: Middle East</a></li>
+<li><a href="#person">Gesprächspartner</a></li>
+<li><a href="#basis">Firmenbasis</a></li>
+<li><a href="#swot">SWOT</a></li>
+<li><a href="#fragen">Offene Punkte &amp; Fragen</a></li>
+<li><a href="#quellen">Quellenregister</a></li>
+</ol>
+</nav>
+</header>
+
+<section id="summary">
+<h2>Executive Summary</h2>
+<ol class="tight">
+<li><span class="tag fact">Fakt</span> <strong>Daimler Truck ist der einzige in den geprüften öffentlichen Quellen belegte Fahrzeughersteller-Partner.</strong> Das MoU vom 11.03.2026 führte binnen vier Monaten zu zwei Kundenprojekten: dem Bundeswehr-F&amp;T-Projekt InterRoC und einem Vertrag mit der ukrainischen Nationalgarde (08.07.2026: 10 Zetros-Lkw mit Autonomy Kit + 10 MANDRILL-UGV). <a class="cid" href="#q-t1">T1</a> <a class="cid" href="#q-t3">T3</a> <a class="cid" href="#q-t4">T4</a></li>
+<li><span class="tag fact">Fakt</span> <strong>Rollenmodell:</strong> Daimler liefert Fahrzeugplattform und Industrialisierung, Quantum Systems Autonomie (MOSAIC Ground Autonomy Kit), Software und Drohnen. Das Kit ist laut Hersteller herstellerunabhängig und nachrüstbar. <a class="cid" href="#q-t2">T2</a> <a class="cid" href="#q-t3">T3</a></li>
+<li><span class="tag fact">Fakt</span> <strong>Reifegrad:</strong> Vorstellung, F&amp;T-Auftrag und Erprobungsvertrag sind belegt – keine Auslieferung oder Serienbeschaffung der Land-Systeme bis zum Stichtag. <a class="cid" href="#q-s4">S4</a> <a class="cid" href="#q-m1">M1</a></li>
+<li><span class="tag gap">Lücke</span> <strong>Middle East:</strong> Keine Gesellschaft, Niederlassung, kein JV und kein bestätigter Auftrag von Quantum Systems in der Region öffentlich belegt. Nur Einzelsignale: IDEX 2023 (VAE), Systeme bei jordanischen Streitkräften (2024), Israel-Kooperation (2019). <a class="cid" href="#q-t7">T7</a> <a class="cid" href="#q-t8">T8</a> <a class="cid" href="#q-t9">T9</a> <a class="cid" href="#q-t10">T10</a></li>
+<li><span class="tag interp">Interpretation</span> <strong>Golfmarkt Land:</strong> In den VAE ist EDGE über Milrem staatlich verankerter UGV-Anbieter mit eigenem Großauftrag; Saudi-Arabien verlangt &gt;50 % Lokalisierung bis 2030. Lokale Wertschöpfung dürfte für einen Land-Domain-Eintritt relevant sein. <a class="cid" href="#q-m8">M8</a> <a class="cid" href="#q-s10">S10</a></li>
+<li><span class="tag fact">Fakt</span> <strong>Hendrik Kramer</strong> ist öffentlich Sprecher der Daimler-Projekte und seit 11.05.2026 zusätzlich Geschäftsführer des UGV-JV Quantum Tencore Industries; ein öffentlicher Bezug zu Middle East ist nicht belegt. <a class="cid" href="#q-h3">H3</a> <a class="cid" href="#q-h5">H5</a></li>
+</ol>
+<div class="alert"><strong>Wesentliche Lücken/Widersprüche:</strong> Website nicht abrufbar (403) · Titel Kramer „Land“ vs. „Ground Domain“ · InterRoC-Auftragnehmer uneinheitlich berichtet (Quantum Systems allein vs. beide Firmen) · Lieferzeitplan NGU-Vertrag offen · Middle East weitgehend öffentlich unbelegt · deutsche Exportkontrollpraxis für die Region nicht geprüft.</div>
+</section>
+
+<section id="thema1">
+<h2>Thema 1 – Kooperationen mit Fahrzeugherstellern</h2>
+<h3>Belegte Lage</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Partner</th><th>Produkt/Integration</th><th>Zweck</th><th>Status</th><th>Datum</th><th>Beleg</th></tr></thead>
+<tbody>
+<tr><td>Daimler Truck (OEM)</td><td>Mercedes-Benz Arocs in MOSAIC integriert</td><td>Luft-/Bodendaten verbinden, Lagebild, Personalschutz</td><td>MoU unterzeichnet; Demonstrator auf Log.Net</td><td>11.03.2026</td><td><a class="cid" href="#q-t1">T1</a></td></tr>
+<tr><td>Daimler Truck (OEM)</td><td>MOSAIC Ground Autonomy Kit auf Daimler-Plattformen</td><td>Teleoperiertes Fahren (laut Hersteller verfügbar); Leader-Follower-Konvois (geplant)</td><td>Partnerschaft offiziell; Kit vorgestellt</td><td>03/2026</td><td><a class="cid" href="#q-t2">T2</a></td></tr>
+<tr><td>Daimler Truck + Bundeswehr</td><td>KI-/Autonomie auf militärischen Daimler-Lkw (InterRoC)</td><td>Unbemannte Konvois; Zulassungs-/Sicherheitsprozess mit ZKfWBw</td><td>F&amp;T-Auftrag, Erprobung; kein Wert/Stückzahl</td><td>gemeldet 16.06.2026</td><td><a class="cid" href="#q-t3">T3</a></td></tr>
+<tr><td>Daimler Truck + Nationalgarde Ukraine</td><td>10 Zetros mit Autonomy Kit + 10 MANDRILL</td><td>Validierung unter Frontbedingungen</td><td>Vertrag (mehrere Mio. EUR) unterzeichnet; Lieferung nicht belegt</td><td>08.07.2026</td><td><a class="cid" href="#q-t4">T4</a></td></tr>
+<tr><td>Daimler Truck (OEM)</td><td>Quantum Systems Drone Ports auf Zetros 2648A</td><td>Drohnenstart/-landung vom Fahrzeug</td><td>Messe-Exponat Eurosatory; Daimler nennt QS „strategic partner“</td><td>06/2026</td><td><a class="cid" href="#q-t5">T5</a></td></tr>
+<tr><td>Rheinmetall, KNDS, GDELS, Arquus, Iveco, RMMV</td><td colspan="4"><span class="tag gap">Lücke</span> Keine öffentlich belegte Kooperation mit Quantum Systems gefunden</td><td><a class="cid" href="#q-t6">T6</a></td></tr>
+</tbody></table></div>
+<details><summary>Akteure und eigene Land-Fähigkeiten (Details)</summary>
+<ul class="tight">
+<li><span class="tag fact">Fakt</span> Übernahme FERNRIDE (Bodenautonomie, München), angekündigt 17.12.2025; Technologie fließt in MOSAIC UXS. <a class="cid" href="#q-c3">C3</a></li>
+<li><span class="tag fact">Fakt</span> MANDRILL – erstes eigenes UGV, vorgestellt 23.02.2026 (Enforce Tac); Rollen u. a. Logistik, MedEvac, EW, Drohnenstart/-landung; Leistungsdaten nur Herstellerangabe. <a class="cid" href="#q-p5">P5</a> <a class="cid" href="#q-h4">H4</a></li>
+<li><span class="tag fact">Fakt</span> JV Quantum Tencore Industries (mit ukr. Tencore) für 2.000 TerMIT-UGV ausgewählt (06/2026), deutsche Finanzierung, Fertigung in Deutschland mit ungenanntem Industriepartner. <a class="cid" href="#q-p7">P7</a> <a class="cid" href="#q-c6">C6</a></li>
+<li><span class="tag fact">Fakt</span> ARX Robotics (UGV-Hersteller, kein klassischer Fahrzeug-OEM): strategische Partnerschaft seit 07.05.2024; Daimler führt ARX ebenfalls als Partner. <a class="cid" href="#q-c11">C11</a> <a class="cid" href="#q-t5">T5</a></li>
+<li><span class="tag fact">Fakt</span> Daimler Truck sieht Partnerschaften mit Spezialisten und Start-ups als zentral für seine Defence-Strategie. <a class="cid" href="#q-m2">M2</a></li>
+</ul>
+</details>
+<h3>Bedeutung <span class="tag interp">Interpretation</span></h3>
+<p>Die Daimler-Beziehung ist über eine Absichtserklärung hinaus mit Kundenprojekten unterlegt (Stärke S1); Quantum Systems bringt mit FERNRIDE-Übernahme, MANDRILL, QTI-JV-Beteiligung und MOSAIC eigene Land-Fähigkeiten ein und ist nicht bloß Komponentenlieferant (S2). Grenzen: früher Reifegrad (S4), Plattform und Industrialisierung beim OEM (S5), nicht exklusive Partnerschaft (S9) und ein Markt, der noch in der F&amp;T-Phase ist (S11). Das herstellerunabhängige Kit und die Partnerstrategie der OEMs eröffnen grundsätzlich weitere OEM-Kooperationen (S7). <a class="cid" href="#q-s1">S1</a> <a class="cid" href="#q-s2">S2</a> <a class="cid" href="#q-s7">S7</a></p>
+<h3>Datenlücken</h3>
+<ul class="tight">
+<li><span class="tag gap">Lücke</span> Verbindlichkeit/Volumen des MoU; Exklusivität. <a class="cid" href="#q-t1">T1</a></li>
+<li><span class="tag gap">Lücke</span> Lieferstand NGU-Vertrag (Janes: kein Zeitplan; Militarnyi: „by the end of the year“). <a class="cid" href="#q-t4">T4</a></li>
+<li><span class="tag gap">Lücke</span> Weitere OEMs; Identität des QTI-Fertigungspartners. <a class="cid" href="#q-t6">T6</a></li>
+<li><span class="tag gap">Lücke</span> Keine Behördenquelle zu InterRoC/NGU; Auftragnehmerrolle bei InterRoC uneinheitlich berichtet. <a class="cid" href="#q-t3">T3</a></li>
+</ul>
+<h3>Gesprächsfragen (Vorschläge)</h3>
+<ul class="tight">
+<li>Welche Meilensteine sind im NGU-Erprobungsvertrag vereinbart – wann laufen die ersten Zetros unter Frontbedingungen?</li>
+<li>Wie verbindlich ist die Daimler-Partnerschaft, und ist das Autonomy Kit bereits auf weiteren Herstellerplattformen erprobt?</li>
+<li>Wie ist die Rollenteilung bei InterRoC vertraglich geregelt, und welcher Pfad führt von F&amp;T zur Serienbeschaffung?</li>
+<li>Wer ist Fertigungspartner der QTI in Deutschland?</li>
+</ul>
+</section>
+
+<section id="thema2">
+<h2>Thema 2 – Business Development Middle East</h2>
+<p class="meta">Länderabgrenzung: geprüft wurden VAE, Saudi-Arabien, Katar, Oman, Kuwait, Bahrain, Jordanien, Israel, Irak, Türkei, Ägypten (Naher Osten inkl. Levante und Türkei – nicht gleichgesetzt mit GCC). Messepräsenz oder Exportfähigkeit wird nicht als Geschäftspräsenz gewertet.</p>
+<h3>Belegte Lage je Land</h3>
+<div class="table-wrap"><table>
+<thead><tr><th>Land</th><th>Aktivität</th><th>Partner</th><th>Kunde</th><th>Präsenz</th><th>Status</th><th>Beleg</th></tr></thead>
+<tbody>
+<tr><td>VAE</td><td>Aussteller IDEX 2023 (Vector)</td><td>nicht belegt</td><td>nicht belegt</td><td>keine Gesellschaft belegt</td><td>Messepräsenz 2023</td><td><a class="cid" href="#q-t8">T8</a></td></tr>
+<tr><td>Jordanien</td><td>Vector/Scorpion beim Drohnendirektorat der Streitkräfte gezeigt</td><td>nicht belegt</td><td>Nutzung angezeigt, Beschaffungsweg unbelegt</td><td>keine</td><td>Indiz 10/2024</td><td><a class="cid" href="#q-t9">T9</a></td></tr>
+<tr><td>Israel</td><td>Kooperation angekündigt</td><td>FlyTech (F.T. Aerial Solutions)</td><td>nicht belegt</td><td>keine</td><td>2019; heutiger Status unbekannt</td><td><a class="cid" href="#q-t10">T10</a></td></tr>
+<tr><td>Saudi-Arabien, Katar, Oman, Kuwait, Bahrain, Irak, Türkei, Ägypten</td><td colspan="5"><span class="tag gap">Lücke</span> Keine öffentlichen Belege (auch nicht zu WDS 2026, UMEX 2026, DIMDEX 2026)</td><td><a class="cid" href="#q-t11">T11</a></td></tr>
+</tbody></table></div>
+<h3>Relevante Akteure und Marktumfeld</h3>
+<ul class="tight">
+<li><span class="tag fact">Fakt</span> EDGE (VAE) hält seit 02/2023 die Mehrheit am UGV-Hersteller Milrem Robotics (Mitgesellschafter u. a. KMW). <a class="cid" href="#q-m4">M4</a></li>
+<li><span class="tag fact">Fakt</span> VAE-Verteidigungsministerium bestellte bei Milrem 20 Robotic Combat Vehicles und 40 THeMIS (01/2024); Folgeauftrag nach Erprobung möglich. <a class="cid" href="#q-m5">M5</a></li>
+<li><span class="tag fact">Fakt</span> EDGE investiert 200 Mio. USD in ein JV mit Anduril zur Entwicklung/Produktion autonomer Systeme (Luftsystem Omen) in den VAE (11/2025). <a class="cid" href="#q-m6">M6</a></li>
+<li><span class="tag fact">Fakt</span> Saudi-Arabien (GAMI): Ziel, über 50 % der Militärausgaben bis 2030 zu lokalisieren. <a class="cid" href="#q-m7">M7</a></li>
+</ul>
+<h3>Bedeutung <span class="tag interp">Interpretation</span></h3>
+<p>Nachfrage nach UGV (VAE) und politischer Lokalisierungsdruck (Saudi-Arabien) sind belegt (Chance S8); zugleich träfe ein Land-Domain-Eintritt auf einen staatlich verankerten UGV-Anbieter und hohe Lokalisierungsziele (Risiko S10). Erwerb (Milrem, Land) und JV (Anduril, Luft) sind unterschiedliche Muster; ein Land-JV-Muster am Golf ist nicht belegt. Die JV-Erfahrung von Quantum Systems aus der Ukraine (S3) ist ein möglicher Anknüpfungspunkt, aber kein Beleg für eine Nahost-Strategie. <a class="cid" href="#q-m8">M8</a> <a class="cid" href="#q-s3">S3</a> <a class="cid" href="#q-s8">S8</a> <a class="cid" href="#q-s10">S10</a></p>
+<h3>Datenlücken</h3>
+<ul class="tight">
+<li><span class="tag gap">Lücke</span> Händlerliste/Pressebereich von Quantum Systems nicht abrufbar (403) – mögliche Regionalpartner unbekannt. <a class="cid" href="#q-t7">T7</a></li>
+<li><span class="tag gap">Lücke</span> Keine öffentliche Regionalverantwortung, kein Regionalbüro belegt; kein Bezug von Hendrik Kramer zur Region belegt. <a class="cid" href="#q-h5">H5</a></li>
+<li><span class="tag gap">Lücke</span> Deutsche Rüstungsexportgenehmigungspraxis für die Region nicht geprüft.</li>
+</ul>
+<h3>Gesprächsfragen (Vorschläge)</h3>
+<ul class="tight">
+<li>Welche Rolle spielt der Nahe Osten in der Land-Domain-Planung – und welche Länder haben Priorität?</li>
+<li>Bestehen aktive Vertriebs- oder Integrationspartner in der Region (z. B. aus früheren Kontakten in Israel oder Jordanien)?</li>
+<li>Wie würde Quantum Systems Lokalisierungsanforderungen (z. B. Saudi-Arabien) adressieren – JV, Lizenz, lokale Integration?</li>
+<li>Wie sieht Quantum Systems Milrem/EDGE: Wettbewerber oder potenzieller Partner?</li>
+<li>Welche Exportkontrollrahmen sind für die Land-Systeme in der Region maßgeblich?</li>
+</ul>
+</section>
+
+<section id="person">
+<h2>Gesprächspartner – Hendrik Kramer</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Aspekt</th><th>Nutzerangabe</th><th>Verifizierter Stand</th><th>Beleg</th></tr></thead>
+<tbody>
+<tr><td>Position</td><td><span class="tag user">Nutzerangabe</span> Vice President Land Domain</td><td>„VP Land Domain“ in suv.report (04/2026), Euro-SD (06/2026), hartpunkt (06/2026, nach Angaben von Quantum Systems). Jüngste Belege (ES&amp;T, Janes 07/2026) und Drones Magazin (03/2026): „VP Ground Domain“. Aktuelle offizielle Bezeichnung nicht primär belegt.</td><td><a class="cid" href="#q-h2">H2</a></td></tr>
+<tr><td>Weitere Funktion</td><td>–</td><td><span class="tag fact">Fakt</span> Geschäftsführer der Quantum Tencore Industries GmbH seit 11.05.2026 (Handelsregister laut hartpunkt) – UGV-Produktion für die Ukraine</td><td><a class="cid" href="#q-h3">H3</a></td></tr>
+<tr><td>Frühere Rolle bei QS</td><td>–</td><td><span class="tag fact">Fakt</span> 02/2026 „Head of the Ground Robotics Domain“ bei Vorstellung von MANDRILL</td><td><a class="cid" href="#q-h4">H4</a></td></tr>
+<tr><td>Herkunft FERNRIDE</td><td>–</td><td><span class="tag interp">Interpretation</span> Ein Hendrik Kramer war CEO/Mitgründer von FERNRIDE bei der Übernahme 12/2025 (H1). Dass es dieselbe Person ist, ist plausibel, aber in keiner geöffneten Quelle ausdrücklich belegt – im Gespräch nicht als Fakt verwenden.</td><td><a class="cid" href="#q-h1">H1</a> <a class="cid" href="#q-h6">H6</a></td></tr>
+<tr><td>Bezug zu Thema 1</td><td>–</td><td><span class="tag fact">Fakt</span> Zitiert zur Daimler-Partnerschaft/Autonomy Kit (03/2026) und zum NGU-Vertrag mit Daimler-Zetros (07/2026)</td><td><a class="cid" href="#q-h5">H5</a></td></tr>
+<tr><td>Bezug zu Thema 2</td><td>–</td><td><span class="tag gap">Lücke</span> öffentlich nicht belegt</td><td><a class="cid" href="#q-h5">H5</a></td></tr>
+</tbody></table></div>
+<details><summary>Öffentliche Aussagen (Auszüge)</summary>
+<ul class="tight">
+<li>„Autonomie in der militärischen Logistik bedeutet, die operative Leistungsfähigkeit moderner Streitkräfte zu vervielfachen“ (03/2026) <a class="cid" href="#q-h5">H5</a></li>
+<li>„Wir freuen uns darauf, die unbemannten Zetros-Lkw und Mandrill-UGV unter Frontbedingungen in der Ukraine zu validieren“ (07/2026) <a class="cid" href="#q-t4">T4</a></li>
+<li>„With MANDRILL, we are laying the foundation for a powerful and scalable family of systems in the ground-based sector“ (02/2026) <a class="cid" href="#q-h4">H4</a></li>
+</ul>
+<p class="meta">Ausbildung und früherer Werdegang: nicht primär belegt, daher nicht aufgeführt. Keine privaten Daten erhoben.</p>
+</details>
+</section>
+
+<section id="basis">
+<h2>Kompakte Firmenbasis</h2>
+<h3>Portfolio</h3>
+<ul class="tight">
+<li><span class="tag fact">Fakt</span> Luftsysteme als eingeführter Kern: Vector (eVTOL-ISR; seit 2022 in der Ukraine; Aufträge u. a. Rumänien, Bundeswehr, Spanien) <a class="cid" href="#q-p9">P9</a>; Twister (Bundeswehr-Rahmenvertrag bis zu 747 Systeme, 147 fest, 12.12.2025) <a class="cid" href="#q-p10">P10</a>.</li>
+<li><span class="tag fact">Fakt</span> Software MOSAIC UXS als verbindende Plattform für Luft- und Bodensysteme; Land-Angebot: MOSAIC Ground Autonomy Kit, MANDRILL, TerMIT über QTI. <a class="cid" href="#q-p2">P2</a> <a class="cid" href="#q-p5">P5</a> <a class="cid" href="#q-p7">P7</a></li>
+</ul>
+<details><summary>Struktur und Partnerschaften</summary>
+<ul class="tight">
+<li><span class="tag fact">Fakt</span> Übernahmen: AirRobot (2025; Vollzug widersprüchlich berichtet) <a class="cid" href="#q-c2">C2</a>, FERNRIDE (12/2025) <a class="cid" href="#q-c3">C3</a>.</li>
+<li><span class="tag fact">Fakt</span> Ukraine-JVs: Quantum Frontline Industries (aktiv), Quantum Tencore Industries (GmbH besteht), Quantum WIY Industries (angekündigt). Beteiligungsquoten nicht veröffentlicht. <a class="cid" href="#q-c5">C5</a></li>
+<li><span class="tag fact">Fakt</span> Series D über 1,2 Mrd. USD (gemeldet 02.07.2026), Co-Leads Blackstone, Airbus, Noteus, Advent. <a class="cid" href="#q-c13">C13</a></li>
+<li><span class="tag fact">Fakt</span> Airbus Helicopters: Kooperation zur Integration von C-UAS-Abfangdrohnen auf H145M (10.06.2026). <a class="cid" href="#q-c14">C14</a></li>
+</ul>
+</details>
+<details><summary>Markt und Wettbewerb</summary>
+<ul class="tight">
+<li><span class="tag fact">Fakt</span> Autonome militärische Logistikfahrzeuge in Europa: F&amp;T-/Erprobungsphase; InterRoC soll Grundlage künftiger Bundeswehr-Programme sein. <a class="cid" href="#q-m1">M1</a></li>
+<li><span class="tag fact">Fakt</span> OEM-Partnerstrategie bei Daimler Truck; ARX Robotics parallel Daimler-Partner. <a class="cid" href="#q-m2">M2</a> <a class="cid" href="#q-t5">T5</a></li>
+<li><span class="tag fact">Fakt</span> Golf: EDGE/Milrem (UGV, VAE), EDGE–Anduril-JV (Luft), GAMI-Lokalisierungsziel. <a class="cid" href="#q-m4">M4</a>–<a class="cid" href="#q-m7">M7</a></li>
+<li><span class="tag gap">Lücke</span> Keine belegte, sauber abgegrenzte Marktgröße – bewusst nicht genannt.</li>
+</ul>
+</details>
+</section>
+
+<section id="swot">
+<h2>Themenbezogene SWOT</h2>
+<p class="meta">Alle Punkte sind Analysteninterpretationen auf Basis geprüfter Claims. Öffentliche Datenlücken (z. B. Middle East, weitere OEMs) sind nicht als Schwäche gewertet.</p>
+<div class="swot">
+<div class="card"><h3>Stärken</h3><ul class="tight">
+<li>Schnell vertiefte OEM-Kooperation mit Daimler Truck und zwei Kundenprojekten <a class="cid" href="#q-s1">S1</a></li>
+<li>Eigene Land-Domäne (FERNRIDE-Übernahme, MANDRILL-Eigenentwicklung, QTI-JV-Beteiligung) mit MOSAIC als Klammer <a class="cid" href="#q-s2">S2</a></li>
+<li>Erfahrung mit Produktions-JVs und große Kapitalbasis (Series D) <a class="cid" href="#q-s3">S3</a></li>
+</ul></div>
+<div class="card"><h3>Schwächen</h3><ul class="tight">
+<li>Früher Reifegrad: keine Auslieferung/Serie der Land-Systeme belegt; Fähigkeiten teils nur Herstellerangaben <a class="cid" href="#q-s4">S4</a></li>
+<li>Im belegten Modell liegen Fahrzeugplattform und Industrialisierung beim OEM-Partner <a class="cid" href="#q-s5">S5</a></li>
+</ul></div>
+<div class="card"><h3>Chancen</h3><ul class="tight">
+<li>InterRoC als Grundlage künftiger Bundeswehr-Programme; Ukraine-Erprobung als Referenz <a class="cid" href="#q-s6">S6</a></li>
+<li>OEM-Partnerstrategie + herstellerunabhängiges Kit → weitere OEM-Kooperationen möglich <a class="cid" href="#q-s7">S7</a></li>
+<li>Belegte UGV-Nachfrage (VAE) und Lokalisierungspolitik (KSA) – hohe Unsicherheit <a class="cid" href="#q-s8">S8</a></li>
+</ul></div>
+<div class="card"><h3>Risiken</h3><ul class="tight">
+<li>Nicht exklusive Daimler-Partnerschaft, Verbindlichkeit offen; ARX parallel Partner <a class="cid" href="#q-s9">S9</a></li>
+<li>Staatlich verankerter UGV-Anbieter (VAE) und hohe Lokalisierungsziele (KSA) <a class="cid" href="#q-s10">S10</a></li>
+<li>Markt in F&amp;T-Phase: Timing und Umfang von Serienbeschaffungen offen <a class="cid" href="#q-s11">S11</a></li>
+</ul></div>
+</div>
+</section>
+
+<section id="fragen">
+<h2>Offene Punkte und Gesprächsfragen</h2>
+<p class="meta">Vorschläge zur Gesprächsführung – keine Firmenbehauptungen.</p>
+<ol class="tight">
+<li>Wie geht es nach dem NGU-Erprobungsvertrag weiter – Lieferzeitplan und Kriterien für Folgeaufträge?</li>
+<li>Gibt es neben Daimler Truck weitere Fahrzeughersteller, mit denen das Autonomy Kit integriert oder erprobt wird?</li>
+<li>Wie ist die Zusammenarbeit mit ARX Robotics heute zu der eigenen UGV-Linie MANDRILL abgegrenzt?</li>
+<li>Welche Länder im Nahen Osten priorisiert Quantum Systems für die Land Domain, und über welches Modell (Partner, JV, Lokalisierung)?</li>
+<li>Wer verantwortet das Business Development Middle East bei Quantum Systems, und wie ist die Land Domain eingebunden?</li>
+<li>Wie lautet der aktuelle offizielle Titel – „Land Domain“ oder „Ground Domain“?</li>
+</ol>
+<div class="alert"><strong>Offene Datenpunkte:</strong> offizielle Website/Pressebereich (403) · Lieferstand NGU, MANDRILL, QTI · QTI-Fertigungspartner · Behördenbelege InterRoC/NGU · Beteiligungsquoten JVs/Investoren · Exportkontrolle Region · Status Israel-Kooperation · Beschaffungsweg Jordanien.</div>
+</section>
+
+<section id="quellen">
+<h2>Quellenregister</h2>
+<p class="meta">Abrufdatum aller Quellen: 2026-10-08. Vollständige Claim-Dokumentation in work/*.md.</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Claim</th><th>Aussage (kurz)</th><th>Quelle / Titel</th><th>Datum</th><th>Link</th></tr></thead>
+<tbody>
+<tr id="q-t1"><td>T1</td><td>MoU Daimler Truck – Quantum Systems, Arocs in MOSAIC</td><td>Daimler Truck Newsroom: Zu Land und in der Luft: Daimler Truck schließt Partnerschaft mit deutschem Drohnenhersteller Quantum Systems</td><td>2026-03-11</td><td><a href="https://www.daimlertruck.com/newsroom/pressemitteilung/zu-land-und-in-der-luft-daimler-truck-schliesst-partnerschaft-mit-deutschem-drohnenhersteller-quantum-systems-53395554" rel="noopener">Quelle öffnen</a></td></tr>
+<tr><td>T1</td><td>Zweitbeleg MoU</td><td>EDR Magazine: On land and in the air: Daimler Truck enters partnership with German drone manufacturer Quantum Systems</td><td>2026-03-12</td><td><a href="https://www.edrmagazine.eu/%e2%96%ba-on-land-and-in-the-air-daimler-truck-enters-partnership-with-german-drone-manufacturer-quantum-systems" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-t2"><td>T2</td><td>MOSAIC Ground Autonomy Kit, Partnerschaft offiziell</td><td>Drones Magazin (Presse): Quantum Systems gibt offizielle Partnerschaft mit Daimler Truck bekannt und stellt das MOSAIC Ground Autonomy Kit vor</td><td>2026-03-16</td><td><a href="https://www.drones-magazin.de/presse/quantum-systems-gibt-offizielle-partnerschaft-mit-daimler-truck-bekannt-und-stellt-das-mosaic-ground-autonomy-kit-vor/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-t3"><td>T3</td><td>InterRoC – Bundeswehr-F&amp;T, Daimler-Plattformen</td><td>Euro-SD: Quantum Systems and Daimler Truck build autonomous convoys for the German Armed Forces</td><td>2026-06-16</td><td><a href="https://euro-sd.com/2026/06/news/exclusive-news/51494/quantum-systems-and-daimler-truck-build-autonomous-convoys/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr><td>T3</td><td>InterRoC Zweitbeleg</td><td>ES&amp;T: InterRoC: Automatisierte Transportfahrzeuge und Konvois</td><td>2026-07-05</td><td><a href="https://esut.de/2026/07/meldungen/72476/interroc-automatisierte-transportfahrzeuge-und-konvois/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-t4"><td>T4</td><td>NGU-Vertrag 10 Zetros + 10 MANDRILL</td><td>ES&amp;T: Quantum Systems liefert mit Daimler Truck autonome Bodensysteme an die Ukraine</td><td>2026-07-13</td><td><a href="https://esut.de/2026/07/meldungen/72720/quantum-systems-liefert-mit-daimler-truck-autonome-bodensysteme-an-die-ukraine/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr><td>T4</td><td>NGU-Vertrag Zweitbeleg</td><td>Janes: Quantum Systems to deliver UGVs and unmanned trucks to Ukraine&#x27;s National Guard</td><td>2026-07-14</td><td><a href="https://www.janes.com/defence-intelligence-insights/defence-news/air/quantum-systems-to-deliver-ugvs-and-unmanned-trucks-to-ukraines-national-guard" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-t5"><td>T5</td><td>Daimler: QS „strategic partner“, Drone Ports auf Zetros</td><td>Daimler Truck Newsroom: Daimler Truck Showcases Comprehensive Portfolio of Defence Mobility Solutions at Eurosatory 2026</td><td>2026-06-11</td><td><a href="https://www.daimlertruck.com/en/newsroom/pressrelease/daimler-truck-showcases-comprehensive-portfolio-of-defence-mobility-solutions-at-eurosatory-2026-53501140" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-t6"><td>T6</td><td>Keine Kooperation mit Rheinmetall, KNDS, GDELS, Arquus, Iveco, RMMV belegt</td><td>Datenlücke (eigene Suchen, work/kontext.md, work/cluster.md)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-t7"><td>T7</td><td>Keine Gesellschaft/JV/Auftrag im Nahen Osten belegt; Händlerseite 403</td><td>Datenlücke; quantum-systems.com/find-a-dealer nicht abrufbar</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-t8"><td>T8</td><td>VAE: IDEX-2023-Aussteller</td><td>Shephard Media: IDEX 2023: Quantum Systems drone proves popular in Ukraine</td><td>2023-02-23</td><td><a href="https://www.shephardmedia.com/news/uv-online/quantum-systems-drone-proves-popular-in-ukraine/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-t9"><td>T9</td><td>Jordanien: Vector/Scorpion bei Streitkräften gezeigt</td><td>Janes: Jordan&#x27;s drone directorate displays Quantum UAVs</td><td>2024-10-04</td><td><a href="https://www.janes.com/defence-intelligence-insights/defence-news/air/jordans-drone-directorate-displays-quantum-uavs" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-t10"><td>T10</td><td>Israel: Kooperation mit FlyTech</td><td>sUAS News: Quantum Systems to cooperate with FlyTech in Israel</td><td>2019-02 (aus URL)</td><td><a href="https://www.suasnews.com/2019/02/quantum-systems-to-cooperate-with-flytech-in-israel/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-t11"><td>T11</td><td>Keine Belege für KSA, Katar, Oman, Kuwait, Bahrain, Irak, Türkei, Ägypten</td><td>Datenlücke (eigene Suchen)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-h1"><td>H1</td><td>Hendrik Kramer CEO/Mitgründer FERNRIDE (12/2025)</td><td>DroneLife: Quantum Systems Acquires FERNRIDE to Expand into Autonomous Ground Systems</td><td>2025-12-17</td><td><a href="https://dronelife.com/2025/12/17/quantum-systems-acquires-fernride-ground-autonomy/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-h2"><td>H2</td><td>Titel „VP Land Domain“ (06/2026)</td><td>hartpunkt: Hendrik Kramer zum Geschäftsführer der Quantum Tencore Industries GmbH berufen</td><td>2026-06-19</td><td><a href="https://www.hartpunkt.de/hendrik-kramer-zum-geschaeftsfuehrer-der-quantum-tencore-industries-gmbh-berufen/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr><td>H2</td><td>Titel „VP Land Domain“ (04/2026)</td><td>suv.report: Quantum Systems gründet zwei neue deutsch-ukrainische Joint Ventures für Drohnen und Bodensysteme</td><td>2026-04-15</td><td><a href="https://suv.report/quantum-systems-gruendet-zwei-neue-deutsch-ukrainische-joint-ventures-fuer-drohnen-und-bodensysteme/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr><td>H2</td><td>Titel „VP Ground Domain“ (07/2026)</td><td>ES&amp;T (s. T4); Euro-SD (s. T3) „Vice President of the Land Domain“</td><td>2026-07-13 / 2026-06-16</td><td><a href="https://esut.de/2026/07/meldungen/72720/quantum-systems-liefert-mit-daimler-truck-autonome-bodensysteme-an-die-ukraine/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-h3"><td>H3</td><td>Geschäftsführer QTI seit 11.05.2026</td><td>hartpunkt (s. H2); Euro-SD: Quantum Systems and Tencore to co-produce 2,000 TerMIT UGVs</td><td>2026-06-19</td><td><a href="https://euro-sd.com/2026/06/news/land/51687/quantum-systems-and-tencore-to-co-produce-2000-termit-ugvs/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-h4"><td>H4</td><td>„Head of the Ground Robotics Domain“ (02/2026)</td><td>Euro-SD: Quantum Systems unveils its first UGV at Enforce Tac 2026</td><td>2026-02-23</td><td><a href="https://euro-sd.com/2026/02/enforce-tac/49502/quantum-systems-unveils-its-first-ugv/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-h5"><td>H5</td><td>Sprecher zu Thema 1; kein öffentlicher Bezug zu Thema 2</td><td>Drones Magazin (s. T2); ES&amp;T (s. T4)</td><td>2026-03-16 / 2026-07-13</td><td><a href="https://www.drones-magazin.de/presse/quantum-systems-gibt-offizielle-partnerschaft-mit-daimler-truck-bekannt-und-stellt-das-mosaic-ground-autonomy-kit-vor/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-h6"><td>H6</td><td>Interpretation: FERNRIDE-CEO = QS-VP (plausibel, nicht ausdrücklich belegt)</td><td>Ableitung aus H1, H2, H4, C3</td><td>–</td><td>–</td></tr>
+<tr id="q-m1"><td>M1</td><td>InterRoC als Grundlage künftiger Programme</td><td>Euro-SD (s. T3); ES&amp;T (s. T3)</td><td>2026-06-16</td><td><a href="https://euro-sd.com/2026/06/news/exclusive-news/51494/quantum-systems-and-daimler-truck-build-autonomous-convoys/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-m2"><td>M2</td><td>Daimler-Defence-Strategie mit Partnern/Start-ups</td><td>Daimler Truck Newsroom (s. T1); EDR (s. T1)</td><td>2026-03-11</td><td><a href="https://www.daimlertruck.com/newsroom/pressemitteilung/zu-land-und-in-der-luft-daimler-truck-schliesst-partnerschaft-mit-deutschem-drohnenhersteller-quantum-systems-53395554" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-m4"><td>M4</td><td>EDGE Mehrheit an Milrem Robotics</td><td>Breaking Defense: Emirati conglomerate EDGE grabs majority stake in Estonian robotics firm</td><td>2023-02-16</td><td><a href="https://breakingdefense.com/2023/02/emirati-conglomerate-edge-grabs-majority-stake-in-estonian-robotics-firm/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-m5"><td>M5</td><td>VAE-MoD: 20 RCV + 40 THeMIS bei Milrem</td><td>Army Recognition: UMEX 2024: EDGE Group signs historic deal to boost UAE&#x27;s defense capabilities with combat UGVs</td><td>2024-01-26</td><td><a href="https://www.armyrecognition.com/archives/archives-land-defense/land-defense-2024/umex-2024-edge-group-signs-historic-deal-to-boost-uae-s-defense-capabilities-with-combat-ugvs" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-m6"><td>M6</td><td>EDGE–Anduril-JV 200 Mio. USD (Luftsystem Omen)</td><td>EnterpriseAM: EDGE Group to invest USD 200 mn in JV with US defense tech firm Anduril</td><td>2025-11-14</td><td><a href="https://enterpriseam.com/uae/2025/11/14/edge-group-to-invest-usd-200-mn-in-jv-with-us-defense-tech-firm-anduril-to-co-develop-drones-in-the-uae/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-m7"><td>M7</td><td>GAMI: &gt;50 % Lokalisierung bis 2030</td><td>GAMI: About GAMI</td><td>o. D.</td><td><a href="https://www.gami.gov.sa/en/about-gami" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-m8"><td>M8</td><td>Interpretation: lokale Wertschöpfung relevant; Erwerb (Land) ≠ JV (Luft)</td><td>Ableitung aus M4–M7</td><td>–</td><td>–</td></tr>
+<tr id="q-p1"><td>P1</td><td>Sitz Gilching, Produktlinien</td><td>German Pavilion HEMUS 2026: Quantum-Systems GmbH (Ausstellerprofil)</td><td>o. D.</td><td><a href="https://hemus.german-pavilion.com/en/sites/exhibitors/139215" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-p2"><td>P2</td><td>Autonomy Kit vorgestellt (LogNet 2026)</td><td>ES&amp;T: Quantum Systems stellt Autonomie-Kit für militärische Logistik vor</td><td>2026-03-12</td><td><a href="https://esut.de/2026/03/meldungen/68927/quantum-systems-stellt-autonomie-kit-fuer-militaerische-logistik-vor/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-p5"><td>P5</td><td>MANDRILL vorgestellt</td><td>Euro-SD (s. H4)</td><td>2026-02-23</td><td><a href="https://euro-sd.com/2026/02/enforce-tac/49502/quantum-systems-unveils-its-first-ugv/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-p7"><td>P7</td><td>QTI: 2.000 TerMIT-UGV</td><td>Euro-SD (s. H3)</td><td>2026-06-19</td><td><a href="https://euro-sd.com/2026/06/news/land/51687/quantum-systems-and-tencore-to-co-produce-2000-termit-ugvs/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-p9"><td>P9</td><td>Vector: Einsatz/Aufträge</td><td>ES&amp;T: Spanien bestellt sUAS Vector und Twister bei Quantum Systems</td><td>2025-05-05</td><td><a href="https://esut.de/2025/05/meldungen/59334/spanien-bestellt-suas-vector-und-twister-bei-quantum-systems/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-p10"><td>P10</td><td>Twister: bis zu 747 Systeme Bundeswehr</td><td>ES&amp;T: Quantum Systems liefert bis zu 747 Aufklärungsdrohnen Twister an die Bundeswehr</td><td>2025-12-12</td><td><a href="https://esut.de/2025/12/meldungen/66194/quantum-systems-liefert-bis-zu-747-aufklaerungsdrohnen-twister/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-c1"><td>C1</td><td>Identität Quantum-Systems GmbH</td><td>Wikipedia: Quantum Systems</td><td>o. D.</td><td><a href="https://en.wikipedia.org/wiki/Quantum_Systems" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-c2"><td>C2</td><td>Übernahme AirRobot</td><td>Munich Startup: Quantum Systems acquires AirRobot</td><td>2025-03-13</td><td><a href="https://www.munich-startup.de/en/news/quantum-systems-acquires-airrobot" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-c3"><td>C3</td><td>Übernahme FERNRIDE</td><td>FERNRIDE: Quantum Systems acquires FERNRIDE</td><td>2025-12-17</td><td><a href="https://fernride.com/news/quantum-systems-acquires-fernride" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-c5"><td>C5</td><td>JVs QWI und QTI</td><td>Militarnyi: Quantum Systems to Launch Two Joint Ventures in Ukraine with WIY Drones and Tencore</td><td>2026-04-15</td><td><a href="https://militarnyi.com/en/news/quantum-systems-to-launch-two-joint-ventures-in-ukraine-with-wiy-drones-and-tencore/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-c6"><td>C6</td><td>QTI-Auftrag 2.000 TerMIT</td><td>Tectonic Defense: Quantum Systems Makes Serious Land Domain Moves</td><td>2026-06-22</td><td><a href="https://www.tectonicdefense.com/quantum-systems-makes-serious-land-domain-moves/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-c11"><td>C11</td><td>Partnerschaft ARX Robotics</td><td>ES&amp;T: Quantum Systems und ARX Robotics schließen strategische Partnerschaft</td><td>2024-05-10</td><td><a href="https://esut.de/2024/05/meldungen/49614/quantum-systems-und-arx-robotics-schliessen-strategische-partnerschaft/" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-c13"><td>C13</td><td>Series D 1,2 Mrd. USD</td><td>MarketScreener/Reuters: German drone maker Quantum Systems secures $1.2 billion funding</td><td>2026-07-02</td><td><a href="https://www.marketscreener.com/news/german-drone-maker-quantum-systems-secures-1-2-billion-funding-ce7f5fd3d989ff26" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-c14"><td>C14</td><td>Airbus Helicopters C-UAS auf H145M</td><td>Airbus: Airbus and Quantum Systems to cooperate on integration of counter UAS interceptors on military helicopters</td><td>2026-06-10</td><td><a href="https://www.airbus.com/en/newsroom/press-releases/2026-06-airbus-and-quantum-systems-to-cooperate-on-integration-of-counter-uas-interceptors-on-military" rel="noopener">Quelle öffnen</a></td></tr>
+<tr id="q-s1"><td>S1</td><td>Stärke: OEM-Kooperation Daimler mit Kundenprojekten <span class="tag interp">Interpretation</span></td><td>Ableitung aus geprüften Claims (work/swot.md, geprüft in work/review-final.md)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-s2"><td>S2</td><td>Stärke: eigene Land-Domäne <span class="tag interp">Interpretation</span></td><td>Ableitung aus geprüften Claims (work/swot.md, geprüft in work/review-final.md)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-s3"><td>S3</td><td>Stärke: JV-Erfahrung, Kapitalbasis <span class="tag interp">Interpretation</span></td><td>Ableitung aus geprüften Claims (work/swot.md, geprüft in work/review-final.md)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-s4"><td>S4</td><td>Schwäche: früher Reifegrad <span class="tag interp">Interpretation</span></td><td>Ableitung aus geprüften Claims (work/swot.md, geprüft in work/review-final.md)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-s5"><td>S5</td><td>Schwäche: Plattform/Industrialisierung beim OEM <span class="tag interp">Interpretation</span></td><td>Ableitung aus geprüften Claims (work/swot.md, geprüft in work/review-final.md)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-s6"><td>S6</td><td>Chance: InterRoC/Ukraine-Referenz <span class="tag interp">Interpretation</span></td><td>Ableitung aus geprüften Claims (work/swot.md, geprüft in work/review-final.md)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-s7"><td>S7</td><td>Chance: weitere OEMs <span class="tag interp">Interpretation</span></td><td>Ableitung aus geprüften Claims (work/swot.md, geprüft in work/review-final.md)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-s8"><td>S8</td><td>Chance: Golf-Nachfrage/Lokalisierung <span class="tag interp">Interpretation</span></td><td>Ableitung aus geprüften Claims (work/swot.md, geprüft in work/review-final.md)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-s9"><td>S9</td><td>Risiko: nicht exklusive Partnerschaft <span class="tag interp">Interpretation</span></td><td>Ableitung aus geprüften Claims (work/swot.md, geprüft in work/review-final.md)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-s10"><td>S10</td><td>Risiko: Golf-Champion, Lokalisierung <span class="tag interp">Interpretation</span></td><td>Ableitung aus geprüften Claims (work/swot.md, geprüft in work/review-final.md)</td><td>2026-10-08</td><td>–</td></tr>
+<tr id="q-s11"><td>S11</td><td>Risiko: F&amp;T-Phase, Timing <span class="tag interp">Interpretation</span></td><td>Ableitung aus geprüften Claims (work/swot.md, geprüft in work/review-final.md)</td><td>2026-10-08</td><td>–</td></tr>
+</tbody></table></div>
+</section>
+
+<footer class="meta"><p>Erstellt 2026-10-08 · Quellenstand bis Stichtag · Interne Gesprächsvorbereitung, nicht zur Veröffentlichung.</p></footer>
+</main>
+<script>window.addEventListener('beforeprint',function(){document.querySelectorAll('details').forEach(function(d){d.open=true;});});</script>
+</body>
+</html>
