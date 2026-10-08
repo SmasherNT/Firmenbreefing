@@ -11,11 +11,12 @@
 | Prüfumfang | alle T- und H-Claims; Daimler-bezogene P/C-Claims (P2, P3, P4, P13, C7–C10); Personen-/JV-Bezug (P6, P7, C3, C5, C6); Middle-East-C-Claims (C15–C17); alle M-Claims. Nicht vertieft: P1, P5 (nur Kramer-Bezug), P8–P12, C1, C2, C4, C11–C14 |
 | Abrufdatum aller Prüfungen | 2026-10-08 |
 | Einschränkung | quantum-systems.com liefert HTTP 403. Es gibt keine Firmenbiografie, keine Händlerliste und keine Original-PM von Quantum Systems. Partner-Primärquellen (Daimler Truck, FERNRIDE, GAMI) wurden geöffnet. |
-| Status | **bestanden mit Auflagen.** Die Faktenbasis ist überwiegend korrekt belegt. Drei wesentliche Korrekturen (Person/Rollenstatus, Identitätsbrücke, Markt-Ableitung) sind vor der SWOT bzw. vor dem HTML nötig. |
+| Status (Erstprüfung) | **bestanden mit Auflagen.** Die Faktenbasis ist überwiegend korrekt belegt. Drei wesentliche Korrekturen (Person/Rollenstatus, Identitätsbrücke, Markt-Ableitung) sind vor der SWOT bzw. vor dem HTML nötig. |
+| Status (nach Korrekturrunde 1) | **bestanden.** Keine offenen wesentlichen Fehler; siehe Abschnitt „Nachprüfung Korrekturrunde 1“. |
 
 Nutzerangaben: Die Position „Vice President Land Domain“ wurde als Nutzerangabe behandelt und unabhängig geprüft. Die Themen wurden als Untersuchungsfragen geprüft, nicht als Tatsachen.
 
-## Prüftabelle
+## Prüftabelle (Erstprüfung)
 
 | Claim-ID | Ergebnis | Begründung / Belegstelle | nötige Änderung | zuständige Rolle |
 |---|---|---|---|---|
@@ -71,13 +72,13 @@ Nutzerangaben: Die Position „Vice President Land Domain“ wurde als Nutzerang
 - **Stichtag und Firmenbezug:** In allen Modulen einheitlich 2026-10-08 und Quantum-Systems GmbH, Gilching.
 - **Hinweis für das Struktur-Modul (kein Claim):** In einem Suchtreffer erscheint ein Sifted-Artikel mit URL-Slug „…merger-stark“. Der geöffnete Inhalt war abgeschnitten, ein Zusammenschluss ist nicht belegt. Er ist in cluster.md korrekt als „nicht verifiziert“ geführt. Kein Handlungsbedarf außer der Beibehaltung als offene Lücke.
 
-## Offene wesentliche Fehler
+## Offene wesentliche Fehler (Stand Erstprüfung; Stand nach Korrekturrunde 1 siehe unten)
 
 1. **H2 / Personenstatus:** Die Rolle ist als „bestätigt“ geführt, obwohl die jüngsten Belege (07/2026) „VP Ground Domain“ lauten und der Stand zum Stichtag nicht belegt ist. Der Personenstatus „vollständig“ ist überzogen.
 2. **Identitätsbrücke FERNRIDE → Quantum Systems:** Sie wird als Fakt dargestellt, ist aber eine Interpretation ohne ausdrücklichen Beleg.
 3. **M8 (und abhängig T12, M-Kernaussagen 3 und 5):** Ein JV-Muster aus einem Luftsystem wird auf das Landsegment übertragen.
 
-## Nicht wesentliche Korrekturen
+## Nicht wesentliche Korrekturen (Stand Erstprüfung)
 
 C7 (untauglicher Zweitbeleg), C6/P7 (Bezeichnung des Finanzierers), C8/T3 (Auftragnehmerrolle uneinheitlich), P6 (Formulierung des TÜV-Widerspruchs), P4 (Jahr „Ende 2026“ abgeleitet), C5 (QTI-Status), C16 (Datum laut URL), M2 (Primärbeleg ergänzen), H3 (Zweitbeleg ergänzen), „einziger OEM“ mit Quellenvorbehalt versehen.
 
@@ -90,7 +91,50 @@ C7 (untauglicher Zweitbeleg), C6/P7 (Bezeichnung des Finanzierers), C8/T3 (Auftr
 - Deutsche Exportgenehmigungspraxis für die Region nicht geprüft.
 - Kein öffentlicher Bezug Kramers zum Nahen Osten.
 
-## Ausgabereife
+## Ausgabereife (Stand Erstprüfung)
 
 - **SWOT:** Darf beginnen, sofern sie die drei wesentlichen Punkte in korrigierter Form verwendet. Sie darf keine aktuelle Rolle „VP Land Domain“ als gesichert annehmen, keine belegte FERNRIDE-Identität voraussetzen und kein Land-JV-Muster am Golf als Fakt behandeln.
 - **HTML:** **nicht ausgabereif**, bis die drei wesentlichen Fehler in kontext.md und markt.md korrigiert sind und das Final-Review die abhängigen Ableitungen (T12, SWOT) erneut geprüft hat.
+
+## Nachprüfung Korrekturrunde 1
+
+Geprüft am 2026-10-08. Gegenstand sind nur die geänderten Claims und die davon abhängigen Aussagen in kontext.md, markt.md, portfolio.md und cluster.md (jeweils Abschnitt „Korrekturrunde 1“ sowie die geänderten Tabellenzeilen). Abgeglichen wurde mit den in der Erstprüfung geöffneten Originalbelegen. Neue Quellen haben die Analysten nicht eingeführt; EDR (C7) und Euro-SD 19.06.2026 (C6, H3) waren bereits geprüft.
+
+| Claim-ID / Stelle | Ergebnis | Begründung / Belegstelle | nötige Änderung | zuständige Rolle |
+|---|---|---|---|---|
+| H2 (kontext.md, Claim und Personentabelle) | geprüft | Die Bezeichnungen sind jetzt je Quelle getrennt geführt: Land Domain 04–06/2026, Ground Domain 03/2026 und 07/2026. Die jüngsten Belege lauten „Ground“, der aktuelle Titel ist als nicht belegt markiert. Nutzerangabe und Verifizierung sind getrennt. Das deckt sich mit suv.report, Euro-SD, hartpunkt, ES&T und Janes. | keine | Hauptagent |
+| Personenstatus (kontext.md, Kopf und Rückgabe) | geprüft | Auf „teilweise“ gesetzt, mit Begründung (Land/Ground, Identität abgeleitet, Ausbildung offen). | keine | Hauptagent |
+| H6 (neu) | geprüft, **formale Korrektur** | Der Inhalt ist korrekt: als Interpretation geführt, Unsicherheit mittel, „im Gespräch nicht als Fakt verwenden“. Die H6-Zeile steht aber mit 12 Spalten **in der 4-spaltigen Tabelle „Gesprächspartner – Hendrik Kramer“** (zwischen „Bezug zu Thema 1“ und „Bezug zu Thema 2“) statt in der Claims-Tabelle. Dadurch fehlt H6 im Claim-Register und die Tabelle wird fehlerhaft dargestellt. | H6-Zeile in die Claims-Tabelle verschieben (nach H5). In der Personentabelle bleibt nur der Verweis „H6“. | Hauptagent |
+| Identitätsabgleich (kontext.md) | geprüft | Ausdrücklich belegt (H2–H5) und abgeleitet (H6) sind jetzt getrennt. Portfolio (P6, P7, Widersprüche) und Cluster (Hinweis an H-Modul) sind konsistent nachgezogen. | keine | – |
+| H3 | geprüft | Euro-SD vom 19.06.2026 ist als Zweitbeleg ergänzt („Managing Director of Quantum Tencore Industries“, bereits geprüft). | keine | Hauptagent |
+| T3 | geprüft | Der Vermerk zum uneinheitlichen Auftragnehmer passt zu den Belegen: Euronews nennt beide Firmen; Euro-SD und ES&T nennen Quantum Systems als Beauftragten und Daimler als Plattform. | keine | Hauptagent |
+| T12 und T-Kernaussage Thema 2 Nr. 3 | geprüft | Die Ableitung stützt sich jetzt nur auf EDGE/Milrem (Beteiligung, Land) und die GAMI-Lokalisierung. Kein Land-JV-Muster mehr, als Interpretation gekennzeichnet. | keine | Hauptagent |
+| T-Kernaussage Thema 1 Nr. 1 | geprüft | Mit „in den geprüften öffentlichen Quellen“ eingeschränkt. | keine | Hauptagent |
+| M8, M-Kernaussagen 3 und 5 | geprüft | Erwerb (Milrem, Land) und JV (Anduril, Luft) sind jetzt getrennt und „nicht gleichzusetzen“. Die Folgerung ist auf „lokale Wertschöpfung dürfte relevant sein“ abgeschwächt und als Interpretation gekennzeichnet. Das deckt sich mit Breaking Defense, Army Recognition, EnterpriseAM und GAMI. | keine | Hauptagent |
+| M2 | geprüft | Daimler-PM als Primärbeleg ergänzt; Wortlaut geprüft. Das Veröffentlichungsdatum steht nur als 2026-03-12 (EDR), die Daimler-PM ist vom 11.03.2026. | Datum auf „2026-03-11; 2026-03-12“ ergänzen (nicht wesentlich) | Hauptagent |
+| P4 | geprüft | „by the end of the year“ wörtlich wiedergegeben; „Ende 2026“ als Ableitung gekennzeichnet; Janes ohne Zeitplan. Die alte Formulierung „P4 nennt Herstellerangabe Ende 2026“ im Abschluss von kontext.md ist nur noch eine sprachliche Altlast. | Abschluss kontext.md an P4 angleichen (nicht wesentlich) | Hauptagent |
+| P6 und Portfolio-Widersprüche (TÜV) | **kleine Korrektur offen** | Die Zuordnung zu FERNRIDE als Primärangabe ist jetzt korrekt. Weiterhin steht dort aber „Euro-SD: Quantum Systems; ES&T: Daimler Truck“. Geprüft: Euro-SD schreibt im Passiv „In 2025, Europe's first TÜV-certified autonomous truck was delivered“ und nennt kein Subjekt. Bei ES&T ist grammatisch Quantum Systems Subjekt („das Unternehmen“), der Bezug bleibt aber offen. **Keine der beiden Quellen ordnet den Lkw Daimler zu, und Euro-SD ordnet ihn niemandem ausdrücklich zu.** | Formulieren: „Euro-SD und ES&T erwähnen den Lkw ohne FERNRIDE-Bezug und ohne eindeutige Zuordnung“. Die Klammerzuordnungen streichen. Nicht wesentlich, weil die TÜV-Aussage in keine Kern- oder Strategieableitung eingeht. | Portfolio-Analyst |
+| P7 | geprüft | Die Abweichung beim Geldgeber (Euro-SD: BMVg; Tectonic: German Armed Forces) ist korrekt; als „deutsche Finanzierung“ zusammengefasst. Identitätsvorbehalt ergänzt. | keine | Portfolio-Analyst |
+| P13 und Portfolio-Kernaussage 1 | geprüft | Auf „in den geprüften öffentlichen Quellen“ eingeschränkt. Die Möglichkeit nicht öffentlicher OEM-Kooperationen ist genannt. | keine | Portfolio-Analyst |
+| C5 | geprüft | QTI als GmbH mit GF ab 11.05.2026 laut hartpunkt (Registerbezug, Register nicht geöffnet). QWI bleibt unklar. Das entspricht dem Beleg. Militarnyi wurde vom Prüfer nicht geöffnet; die QWI/QTI-Ankündigung ist durch suv.report (15.04.2026) gedeckt. | keine | Struktur-Analyst |
+| C6 | geprüft | Euro-SD ergänzt; Geldgeber-Abweichung, 12 Monate, ungenannter Industriepartner: alles wie geprüft. | keine | Struktur-Analyst |
+| C7 | geprüft | Der untaugliche Zweitbeleg ist ersetzt durch EDR (12.03.2026). Transparent vermerkt, dass EDR die Daimler-PM wiedergibt und kein unabhängiger Beleg ist. Das ist korrekt. | keine | Struktur-Analyst |
+| C8 und Beziehungstabelle | geprüft | ES&T (05.07.2026) ergänzt. Der uneinheitliche Auftragnehmer ist vermerkt (Euronews beide; ES&T QS mit Daimler als Plattformpartner). Euro-SD sagt ebenfalls „commissioned Quantum Systems“ (vom Prüfer geöffnet) und stützt damit die ES&T-Lesart. | optional Euro-SD als weiteren Beleg ergänzen (nicht wesentlich) | Struktur-Analyst |
+| C16 | geprüft | Datum als aus URL/Breadcrumb abgeleitet gekennzeichnet. | keine | Struktur-Analyst |
+| Cluster-Kernaussagen 1, 5 und Einordnung Thema 1 | geprüft | Konsistent mit C5–C8; Quellenvorbehalt beim „einzigen OEM“ ergänzt. | keine | Struktur-Analyst |
+| Cluster, Hinweis an H-Modul | geprüft | Die Identität ist nicht ausdrücklich belegt; das ist korrekt. Die Rolle „VP Land Domain“ ist dort als „belegt“ bezeichnet, ohne die Ground-Abweichung zu nennen. Maßgeblich ist H2 in kontext.md, das korrekt ist. | keine (für das HTML gilt H2) | – |
+
+### Abhängigkeiten
+
+- Die SWOT darf sich nur auf H2 in der korrigierten Fassung (Titel uneinheitlich), auf H6 als Interpretation und auf M8 in der neuen Fassung stützen. Diese Vorgabe ist jetzt durch die Moduldateien selbst gedeckt.
+- Durch die Korrekturen ist keine Kernaussage weggefallen. Die Executive-Summary-tauglichen Aussagen zu Daimler, Land-Domäne und Middle-East-Datenlücke bleiben belegt.
+
+### Ergebnis Korrekturrunde 1
+
+- **Offene wesentliche Fehler: keine.** Alle drei wesentlichen Fehler der Erstprüfung (H2/Personenstatus, Identitätsbrücke, M8 samt abhängigen Aussagen) sind sachlich korrekt behoben.
+- **Verbleibende nicht wesentliche Korrekturen, vor der HTML-Erstellung zu erledigen:**
+  1. H6 in die Claims-Tabelle von kontext.md verschieben (Hauptagent).
+  2. TÜV-Zuordnung in P6 und den Portfolio-Widersprüchen korrigieren: Die Klammerzuordnungen „Euro-SD: Quantum Systems; ES&T: Daimler Truck“ sind nicht belegt und müssen gestrichen werden (Portfolio-Analyst).
+  3. M2-Datum um 2026-03-11 ergänzen; den Abschluss von kontext.md zu „Ende 2026“ an P4 angleichen (Hauptagent).
+- **SWOT:** **darf starten.**
+- **HTML:** Noch nicht freigegeben. Erst nach SWOT und Final-Review, in dem die SWOT-Ableitungen (S-Claims) und eventuell weitere geänderte Claims geprüft werden. Die drei kleinen Korrekturen oben sollten bis dahin erledigt sein.

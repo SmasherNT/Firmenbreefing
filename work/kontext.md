@@ -55,7 +55,6 @@ Länderabgrenzung: geprüft wurden VAE, Saudi-Arabien, Katar, Oman, Kuwait, Bahr
 | Weitere Funktion | – | Geschäftsführer Quantum Tencore Industries GmbH (QTI) seit 11.05.2026 (Handelsregister laut hartpunkt) | H3 |
 | Vorherige Rolle | – | Feb. 2026 „Head of the Ground Robotics Domain“ bei QS (H4). Ein Hendrik Kramer war CEO/Mitgründer von FERNRIDE bei der Übernahme 12/2025 (H1); dass es dieselbe Person ist, sagt keine geöffnete Quelle ausdrücklich – **Analysteninterpretation, hohe Plausibilität** (H6) | H1, H4, H6 |
 | Bezug zu Thema 1 | – | **belegt**: zitiert zur Daimler-Partnerschaft/Autonomy Kit und zum Ukraine-Vertrag mit Daimler-Zetros | H5 |
-| H6 | Der FERNRIDE-Mitgründer/CEO Hendrik Kramer (H1) ist mit hoher Plausibilität dieselbe Person wie der Quantum-Systems-VP (H2): gleicher Name, FERNRIDE-Technologie wurde in die QS-Bodenautonomie (MOSAIC) integriert, Kramer leitet seit 02/2026 die neue Ground-Domain. | Interpretation | H1, H2, H4, C3 | – | – | – | – | – | 2026-10-08 | Keine geöffnete Quelle stellt die Personenidentität ausdrücklich her | mittel: im Gespräch nicht als Fakt verwenden, ggf. erfragen |
 | Bezug zu Thema 2 | – | **öffentlich nicht belegt** | – |
 | Ausbildung | – | nicht primär belegt (nur LinkedIn-Suchtreffer, nicht geöffnet) – nicht verwendet | – |
 
@@ -82,12 +81,13 @@ Identitätsabgleich: Für Mandrill-Vorstellung, Daimler-Kit, InterRoC, QTI und N
 | H3 | Hendrik Kramer ist mit Wirkung zum 11.05.2026 Geschäftsführer der Quantum Tencore Industries GmbH (JV mit Tencore, UGV-Produktion für die Ukraine), zusätzlich zu seiner VP-Rolle. | Fakt | Handelsregistereintrag laut hartpunkt; Euro-SD 19.06.2026 als Zweitbeleg der QTI-Rolle (vgl. P7) | hartpunkt; Euro-SD | Hendrik Kramer zum Geschäftsführer der Quantum Tencore Industries GmbH berufen | 2026-06-19 | 2026-05-11 | https://www.hartpunkt.de/hendrik-kramer-zum-geschaeftsfuehrer-der-quantum-tencore-industries-gmbh-berufen/ ; https://euro-sd.com/2026/06/news/land/51687/quantum-systems-and-tencore-to-co-produce-2000-termit-ugvs/ | 2026-10-08 | Registereintrag zitiert; QTI Teil von „Quantum Industries“ unter Matthias Lehna | gering; Register nicht selbst geöffnet |
 | H4 | Im Februar 2026 wurde Kramer bei der Vorstellung des MANDRILL-UGV als „Head of the Ground Robotics Domain at Quantum Systems“ zitiert. | Fakt | Fachpresse | Euro-SD | Quantum Systems unveils its first UGV at Enforce Tac 2026 | 2026-02-23 | 2026-02-23 | https://euro-sd.com/2026/02/enforce-tac/49502/quantum-systems-unveils-its-first-ugv/ | 2026-10-08 | „With MANDRILL, we are laying the foundation for a powerful and scalable family of systems in the ground-based sector“ | gering |
 | H5 | Kramer ist öffentlich als Sprecher zu Thema 1 dokumentiert: Autonomy-Kit/Daimler-Partnerschaft (03/2026) und NGU-Vertrag mit Daimler-Zetros (07/2026). Zu Thema 2 ist kein öffentlicher Bezug belegt. | Fakt (Thema 1); Datenlücke (Thema 2) | T2, T4 | Drones Magazin; ES&T | s. T2, T4 | 2026-03-16; 2026-07-13 | – | s. T2, T4 | 2026-10-08 | „Autonomie in der militärischen Logistik bedeutet, die operative Leistungsfähigkeit moderner Streitkräfte zu vervielfachen“; „…die unbemannten Zetros-Lkw und Mandrill-UGV unter Frontbedingungen in der Ukraine zu validieren“ | gering (Thema 1) |
+| H6 | Der FERNRIDE-Mitgründer/CEO Hendrik Kramer (H1) ist mit hoher Plausibilität dieselbe Person wie der Quantum-Systems-VP (H2): gleicher Name, FERNRIDE-Technologie wurde in die QS-Bodenautonomie (MOSAIC) integriert, Kramer leitet seit 02/2026 die neue Ground-Domain. | Interpretation | H1, H2, H4, C3 | – | – | – | – | – | 2026-10-08 | Keine geöffnete Quelle stellt die Personenidentität ausdrücklich her | mittel: im Gespräch nicht als Fakt verwenden, ggf. erfragen |
 
 ## Abschluss
 
 - Offizielle Website und Pressebereich nicht abrufbar (403) – keine Firmenbiografie zu Kramer, keine Händlerliste.
 - Widerspruch: Bezeichnung „Land Domain“ vs. „Ground Domain“ (vermutlich Synonym/Umbenennung, nicht belegt).
-- Lieferstand NGU-Vertrag offen (Janes: kein Zeitplan; P4 nennt Herstellerangabe Ende 2026).
+- Lieferstand NGU-Vertrag offen (Janes: kein Zeitplan; Militarnyi laut P4: „by the end of the year“, Jahreszuordnung abgeleitet).
 - Middle East weitgehend öffentliche Datenlücke; keine Verbindung Kramer–Middle East belegt.
 
 Rückgabe: work/kontext.md, Status: Thema 1 vollständig, Thema 2 teilweise, Person teilweise (Bezeichnung Land/Ground, FERNRIDE-Identität nur abgeleitet), Ausbildung offen.
