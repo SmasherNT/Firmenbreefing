@@ -26,7 +26,8 @@ identifizieren; ohne diesen keinen unabhängigen neuen Interpretationslauf erfin
    Basis-Review. Selektiven Kontext und betroffene Bewertungen erneuern.
    Nach zwei erfolglosen Korrekturrunden Materialfehler blockieren.
 8. Abnahme aktualisieren: mechanischer Pass, Inhaltsreview und offene Fragen
-   getrennt ausweisen. Keine finale HTML: Ausgabeanschluss folgt im nächsten Schritt.
+   getrennt ausweisen. Keine HTML implizit starten; company-briefing beauftragt anschließend
+   briefing-output nach references/ausgabe-html-v2.md.
 Aufrufhilfe: python3 scripts/check-interpretation.py --help.
 Vorgegebene Laufdateien erhalten; Korrekturen versionieren und überholte Reviews
 nicht weiter als freigegeben behandeln. Nur kompakte Statusrückgabe.

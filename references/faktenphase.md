@@ -1,7 +1,8 @@
 # Faktenphase v2: Vertrag und Durchführung
 ## Umfang
 Aktiv nur bei ausdrücklich delegiertem mode=facts-v2 bzw. facts-briefing.
-Die alten vollständigen HTML-/Modultestabläufe behalten ihre bisherigen Pfade.
+Neue vollständige HTML-Aufträge delegieren runs/<run_id>/.
+Bestehende Markdown-Modultests bleiben Legacy; keine Mischläufe.
 Neue Faktenphase schreibt JSON statt paralleler Langberichte und produziert
 keine finale HTML, Scores oder SWOT. Horváth-Kapitel und separate Firmen-
 Deep-Dives entfallen. Fakten zu relevanten JV/Tochtergesellschaften bleiben erlaubt.
@@ -9,7 +10,8 @@ Faktenrecherche umfasst öffentliche Nachrichten/Fachmedien nach Quellenkatalog;
 keine festen Beispielunternehmen, Daten oder Technologie-Kriterien übernehmen.
 
 ## Auftrag und Rollen
-Hauptagent erstellt pro Lauf in tests/<run_id>/input/ den Originalauftrag und
+Hauptagent erstellt im delegierten Lauf (Vollbriefing runs/<run_id>/,
+isolierter Fakten-Test tests/<run_id>/) unter input/ den Originalauftrag und
 facts-run.json. Kein input/auftrag.md des alten Ablaufs überschreiben.
 Manifest: schema_version=1, mode="facts-v2", run_id, company, as_of (YYYY-MM-DD),
 scope (nicht leer), selected_roles (nicht leere Liste aus context/portfolio/cluster/market).
@@ -101,7 +103,7 @@ Abnahme unterscheidet formale Prüfung, Inhaltsprüfung, Abdeckung und nicht gep
 
 ## Kompatibilität und Rückgabe
 Keine JSON-Claims automatisch in alte .md-Pfade kopieren. Legacy-HTML/Skills
-nicht mit v2-Dateien mischen; Anschluss der Ausgabe erfolgt im nächsten Schritt.
+nicht mit v2-Dateien mischen; V2-Ausgabe nach references/ausgabe-html-v2.md.
 Rückgabe nur Pfad, Status, Kernergebnis-IDs und offene Fragen, keine Langberichtkopie.
 Das Vorbereitungsskript meldet nur Fehler/Zähler; Fingerprints bleiben in der
 facts-validation.json, damit lange Erfolgslisten keinen Toolkontext verbrauchen.

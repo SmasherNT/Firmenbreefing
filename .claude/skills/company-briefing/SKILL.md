@@ -1,61 +1,32 @@
 ---
 name: company-briefing
-description: Erstellt aus einer kurzen natürlichen Anfrage ein belegtes HTML-Firmenbriefing und steuert Auftrag, Agenten, Reviews und Ausgabe.
-when_to_use: Bei jeder Anfrage nach einem Firmenbriefing, Unternehmensbriefing, Firmenprofil oder einer Gesprächsvorbereitung zu einem Unternehmen, auch ohne Slash-Befehl und ohne Formular, z. B. „Erstelle ein Briefing zu <Firma> mit Fokus <Themen>, Gesprächspartner <Name>, <Position>“ oder „Mach auch ein Briefing zu <Firma>“. Nicht bei Einrichtung oder Konfigurationsprüfung.
+description: Erstelle aus einer kurzen Anfrage ein vollständiges HTML-Firmenbriefing mit vier Faktenrollen, zwei Interpretationsrollen, Reviews und fester HTML-Ausgabe. Nicht bei Einrichtung oder Systemfragen.
 ---
 
-Bei ausdrücklich einzelnen Modulen oder Modultests stattdessen module-briefing
-verwenden und references/modultest.md lesen; nicht diesen vollständigen Ablauf starten.
+Lies CLAUDE.md, references/defaults.md und references/ausgabe-html-v2.md.
+Einzelne Phasen/Modultests haben Vorrang. Bestehende Markdown-Läufe nur explizit
+nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
+1. Firma, Themen in Nutzerreihenfolge, optionale berufliche Person/Rolle aus
+   Nachricht übernehmen; Defaults ergänzen, kein Formular verlangen.
+   Nur blockierende Mehrdeutigkeit klären. Unter runs/<neue_run_id>/input/
+   Originalauftrag und facts-run.json erstellen. Alte Läufe erhalten.
+   topics=[{id,label}], person als Nutzerangabe. Einrichtung ist kein Auftrag.
+2. facts-briefing im delegierten Lauf mit context/portfolio/cluster/market
+   ausführen. Alle vier Faktenagenten delegieren; Vergleichsplan vor
+   Wettbewerbsrecherche aus Auftrag festlegen. Delegation nennt Identität,
+   mode=facts-v2, Eingaben, Tabellenvertrag und exakten Zielpfad.
+3. Paket lokal zusammenführen. source-reviewer prüft wesentliche Claims
+   und module_views. Explizite Reviewer-Entscheidungen per stamp-review ergänzen.
+4. interpretation-briefing mit Positionierung und SWOT ausführen. Positionierung
+   liefert 4–6 executive_summary-I-Claims aus A-Fakten, die auftragsbezogene Matrix
+   und Themen-/Produkt-/Industrie-/Regionaleinordnung. Nur selektive Kontexte.
+   SWOT danach; ein gemeinsames Schluss-Review für beide Ableitungen.
+5. briefing-output im selben Lauf mit --full ausführen. Hauptagent koordiniert
+   und rendert; keine eigenen Fakten-/Interpretations-JSONs oder LLM-HTML.
+6. output/abnahme.md mit tatsächlichen Agenten/Reviews/Prüfungen aktualisieren.
+   Dateien im Arbeitsbranch committen/pushen; keine öffentliche Veröffentlichung.
 
-Der Hauptagent steuert den Ablauf. Einrichtung, Konfigurationsprüfung oder
-Fragen zum System sind kein Auftrag: dann nichts recherchieren und
-input/auftrag.md nicht anlegen.
-Lies CLAUDE.md, references/defaults.md, references/briefing-struktur.md und
-references/uebergabe.md; sie sind verbindlich.
-
-## Ablauf (Reihenfolge einhalten)
-1. Auftrag: Firma, Themen in Nutzerreihenfolge und Gesprächspartner/Position
-   aus der aktuellen Nachricht übernehmen, übrige Werte aus defaults.md.
-   Kein Formular, kein Slash-Befehl; nur bei blockierender Mehrdeutigkeit
-   fragen. „auch“ setzt kein früheres Briefing voraus.
-   Vorhandene input/auftrag.md, work/ und output/ nach defaults.md unter
-   archive/<YYYYMMDD-HHMMSS>-<Firmenname>/ sichern, danach work/ und output/
-   bis auf .gitkeep leeren. Stichtag mit `date +%F` ermitteln.
-   input/auftrag.md nach defaults.md anlegen.
-2. Portfolio und Struktur parallel delegieren: portfolio-analyst und
-   cluster-analyst. Jede Delegation nennt Eingabedateien, Firma,
-   Unternehmensgrenze, Stichtag, Nutzerthemen und Zielpfad.
-3. Markt sowie Themen/Person: Hauptagent wendet briefing-context selbst an,
-   nachdem work/portfolio.md und work/cluster.md vorliegen.
-4. Basis-Review: source-reviewer mit Phase basis und den Dateien aus 2 und 3.
-5. Korrekturen: wesentliche Fehler durch die zuständige Rolle beheben lassen
-   (Analysten erneut delegieren, eigene Dateien selbst korrigieren), danach
-   geänderte Claims erneut durch source-reviewer Phase basis prüfen lassen.
-6. SWOT: swot-analyst erst, wenn review-basis keine offenen wesentlichen
-   Fehler mehr meldet.
-7. Schluss-Review: source-reviewer mit Phase final; Korrekturen wie in 5,
-   abhängige Schlussfolgerungen erneut prüfen lassen.
-8. Ausgabe: Hauptagent wendet briefing-output an.
-Bleiben nach zwei Korrekturrunden wesentliche Fehler offen, keine finale
-HTML erstellen; Status blockiert mit konkreten Punkten an den Nutzer melden.
-
-## Zuständigkeiten (nur eigene Dateien schreiben)
-| Datei | Rolle |
-|---|---|
-| archive/, input/auftrag.md | Hauptagent |
-| work/portfolio.md | portfolio-analyst |
-| work/cluster.md | cluster-analyst |
-| work/markt.md, work/kontext.md | Hauptagent (briefing-context) |
-| work/review-basis.md, work/review-final.md | source-reviewer |
-| work/swot.md | swot-analyst |
-| output/briefing.html, output/abnahme.md | Hauptagent (briefing-output) |
-Die Methoden portfolio-analysis, cluster-analysis und swot-analysis führt
-der Hauptagent nicht selbst aus, sondern delegiert an die Agenten.
-Der Hauptagent ändert keine Analysten- oder Reviewdateien.
-Tatsächlich aufgerufene Agenten, Phasen und Dateien für output/abnahme.md
-protokollieren. Personenprofil nur, wenn ein Gesprächspartner genannt ist.
-
-## Abschluss
-Ergebnisse im Arbeitsbranch committen und pushen (Dateisicherung).
-Keine öffentliche Veröffentlichung ohne ausdrücklichen Nutzerwunsch.
-Dem Nutzer Pfade, Status, offene Lücken und Abnahmeergebnis nennen.
+Keine Horváth-Kapitel oder separaten Unternehmens-Deep-Dives; JV-Fakten bleiben
+im Cluster. Neue Faktenfragen gezielt delegieren, erneut durch Basis-Review,
+abhängige Interpretationen aktualisieren. Keine fremden Dateien umschreiben.
+Nach zwei erfolglosen Korrekturrunden Materialfehler blockieren. Rückgabe kurz.

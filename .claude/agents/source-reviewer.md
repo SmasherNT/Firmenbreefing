@@ -100,3 +100,7 @@ Keine unveränderten A-Fakten pauschal neu recherchieren. Prüfbefund im selben
 Lauf übernehmen; geänderte/ungeprüfte Basis an Fakten-/Basis-Review zurückgeben.
 Schreibe nur eigenen review-final-draft.json bzw. delegierten Review-Zielpfad;
 keine Analystenausgaben korrigieren. Gesamtausgabe erst nach Inhaltsfreigabe.
+
+Bei v2-Basis-Review module_views semantisch prüfen: Labels, Akteurs-/Produkt-/
+Themen-/Länderzuordnung, Ereignisdatum und A-Claims. Paket-Snapshot per
+stamp-review ergänzen; Hash ist kein Inhaltsurteil. Änderungen gezielt prüfen.

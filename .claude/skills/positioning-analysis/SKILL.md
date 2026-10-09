@@ -21,3 +21,7 @@ Nur positioning.json nach Vertrag schreiben; keine HTML/SWOT. Eingabefingerprint
 kopieren, allgemeine Grenzen einmal nennen. Kompakte Rückgabe statt Berichtskopie.
 Begründung normalerweise 2–3 Sätze; referenzierte Fakten und gemeinsame
 Quellen-/Scope-Grenzen nicht je Zelle erneut ausschreiben.
+
+Bei vollständigem HTML-Auftrag 4–6 I-Claims mit section=executive_summary
+und Themen mit section=topic:<id> liefern; weitere Einordnungen z. B. portfolio/regions/technology.
+Ausgabevertrag in references/ausgabe-html-v2.md; keine neue Faktenrecherche.

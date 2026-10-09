@@ -25,3 +25,6 @@ Claim-Auszüge laden. Ohne beauftragten Wettbewerbsvergleich ist kein Matrixplan
 Bei Wettbewerbsauftrag ohne Plan gezielt diesen Input anfordern, nicht eigene
 Spalten nach recherchierten Vorteilen wählen. Ohne Regionenauftrag keine
 zusätzliche umfangreiche Länderanalyse. Nur delegiertes market-facts.json schreiben.
+
+Bei facts-v2 für HTML die kompakten Tabellen/Claim-Zuordnungen nach
+references/ausgabe-html-v2.md liefern. Keine parallelen Langberichte erstellen.

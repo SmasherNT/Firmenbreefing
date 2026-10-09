@@ -28,3 +28,6 @@ work/cluster.md inkl. network-data nach bisherigem Schema schreiben.
 Modultest: delegierte Pfade und Auswahl nach references/modultest.md haben Vorrang;
 2b verlangt keine weiteren Module. Hauptfunktion/focus sind redaktionell, keine Bewertung.
 Keine Markt-/SWOT-Analyse oder eigene finale HTML erstellen.
+
+Bei facts-v2 für HTML die kompakten Tabellen/Claim-Zuordnungen nach
+references/ausgabe-html-v2.md liefern. Keine parallelen Langberichte erstellen.

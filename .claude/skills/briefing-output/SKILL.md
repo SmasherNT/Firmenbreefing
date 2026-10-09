@@ -1,66 +1,24 @@
 ---
 name: briefing-output
-description: Verdichtet geprüfte Firmen-, Themen- und Personenmodule zu einem HTML-Briefing.
+description: Erzeuge aus freigegebenen facts-v2/interpret-v2-Dateien eine kompakte eigenständige HTML mit Matrix, Cluster-Netz, Details und Quellen; unterstütze bestehende Legacy-Modultests.
 ---
 
-Der Hauptagent verwendet diese Methode.
-Lies input/auftrag.md, CLAUDE.md und alle references-Vorlagen sowie
-work/portfolio.md, work/cluster.md, work/markt.md, work/kontext.md,
-work/swot.md, work/review-basis.md und work/review-final.md.
-Keine finale HTML bei offenen wesentlichen Fehlern erstellen.
-Nur geprüfte Claims verwenden; keine neue Unternehmensbehauptung hinzufügen.
-Erstelle output/briefing.html exakt nach references/briefing-struktur.md.
-Priorisierte Nutzerthemen stehen vor der kompakten allgemeinen Firmenbasis.
-Berufliches Personenprofil nur falls beauftragt; Nutzerrolle von verifizierter
-Rolle trennen. Status, Datum und Unsicherheit auch beim Kürzen erhalten.
-Jede Kernaussage auf Claim und Originalquelle verlinken. Lesbarkeit,
-interne Links, mobile Darstellung und Druckansicht tatsächlich prüfen;
-nicht ausführbare Kontrollen in der Abnahme als nicht geprüft kennzeichnen.
-Erstelle output/abnahme.md gemäß Strukturvorlage. Dateipfade und Cloud-
-Ausgabemöglichkeiten nennen. Keine öffentliche Veröffentlichung automatisch.
+Lies Auftrag und references/ausgabe-html-v2.md. Delegation nennt Lauf, Manifest,
+Paket, Reviews, vorhandene Interpretationen samt Kontexten und aktuellem Plan.
+Explizite Markdown-Modultests nach references/legacy-html-output.md durchführen.
+1. V2-Dateien desselben Laufs an scripts/render-briefing.py übergeben.
+   Vollständiges Firmenbriefing: --full. Aufruf in der Referenz.
+   Vorlage und JavaScript nicht als Standard in den Modellkontext laden.
+2. Fehler gezielt an zuständige Fakten-/Interpretations-/Prüfrolle geben;
+   keine fremden Dateien korrigieren oder Prüfbarrieren umgehen.
+   Keine finale HTML bei Materialfehlern, veralteten Reviews, blockierenden Fragen.
+   Ältere Erfolgsdatei nach Fehlern nicht als aktuellen Erfolg ausgeben.
+3. HTML prüfen: interne/Quellenlinks, Netzwerk/Filter/Details, Mobil und Druck.
+   Nicht ausführbare Prüfung als offen nennen. Keine neue Behauptung beim Rendern.
+4. output/abnahme.md: tatsächliche Agenten/Dateien/Reviews, formale Prüfungen,
+   Inhaltsreview, Abdeckung, visuelle Kontrollen und offene Punkte unterscheiden.
+   Mechanischer Pass ist keine Freigabe; Konfigurationstest ist kein Firmenlauf.
 
-## Ausnahme für ausdrücklich beauftragte Modultests
-Bei Modus modultest lies references/modultest.md. Die Delegation nennt
-Testauftrag, Auswahl, Eingaben und Zielpfad. Diese Pfade ersetzen die festen
-input/work/output-Pfade oben. Nicht gewählte Module sind keine Pflicht.
-Im Standardlauf bleiben die obigen Regeln unverändert.
-
-Im Modultest nur ausgewählte Kapitel rendern. Nach fehlerfreiem Basis-Review
-ist kein SWOT-/Schluss-Review nötig. Ohne Basis-Review nur sichtbar ungeprüfter
-Entwurf; bekannte wesentliche Fehler blockieren jede HTML-Ausgabe.
-
-## Unternehmensnetzwerk darstellen
-Wenn Cluster beauftragt ist, lies references/cluster-recherche.md und übernimm
-seine geprüften Knoten/Kanten und Querverbindungen in eine kompakte anklickbare
-Netzwerkübersicht. Zielunternehmen zentral und umliegende Akteure als Netz anordnen. Linien
-bleiben zunächst unbeschriftet; Typ, Richtung, Status, Quoten und Originalquellen
-erscheinen erst beim Anklicken im Detailfeld. Indirekte Pfade im Detail erklären.
-Keine neuen Beziehungen beim Zeichnen ableiten. Beschriftete Beziehungstabelle
-als zugängliche und druckbare Alternative anbieten. Geschäftsbericht-Abdeckung
-und wesentliche öffentliche Lücken sichtbar halten. Gilt auch für 2b-Modultests.
-
-## Wiederverwendbare Netzwerkkomponente in Schritt 7
-Lies references/netzwerk-html.md und references/templates/cluster-network.html.
-Übernimm das geprüfte network-data-JSON aus der Cluster-Datei in diese lokale
-HTML/CSS/JavaScript-Komponente. Platzhalter sicher ersetzen, Schema/Claim-
-Referenzen prüfen. Kein neues Netzwerk recherchieren oder aus Tabellen erfinden.
-Knotenarten unterschiedlich färben, Beziehungskategorien kombinierbar filtern
-und belegten Produktbezug filterbar machen. Originalquellen mit Titel/Datum und
-Bericht-Seite direkt im ausgewählten Verbindungsdetail verlinken.
-Die Vorlage in die finale briefing.html einbetten; kein separater Grafik-Link
-als Ersatz. Quellenregister und druckbare Tabelle mit denselben Belegen und deren Quellenart füllen.
-Interaktionen, Responsivität, Druck und Links tatsächlich nach der Abnahme in
-netzwerk-html.md prüfen; nicht ausführbare Kontrollen ehrlich kennzeichnen.
-
-Bei jedem neuen Auftrag die Vorlage mit dem vollständig neuen Netzwerk dieser
-Firma befüllen. company/as_of und Zielknoten mit dem aktuellen Auftrag abgleichen.
-Nur den Renderer wiederverwenden, niemals den Datensatz der vorigen Firma.
-
-
-## Referenzlayout verbindlich verwenden
-Die neue Vier-Cluster-Darstellung aus netzwerk-html.md und cluster-network.html
-unverändert als Darstellungsbasis verwenden: vier feste Bereiche, zentrales Ziel,
-aufklappbare Akteure und Detailfeld rechts bzw. mobil darunter. Keine einfache
-Ringanordnung als Ersatz. cluster/focus aus der geprüften Übergabe übernehmen.
-Keine analytischen Relevanzscores neu erzeugen. Rechercheabdeckung und lange
-Register aufklappbar halten; Einschränkungen direkt im Detail zeigen.
+Neue Firma/Lauf bedeutet neue Daten. Nur Code/Layout wiederverwenden. Keine
+Langberichte oder Quellenvolltexte als Standard-Ausgabeprüfkontext, keine weitere
+LLM-Runde für HTML/Quellenformatierung. Rückgabe mit Pfad und Status.

@@ -3,8 +3,9 @@
 Nur bei ausdrücklich beauftragter Interpretation einer bestehenden Faktenphase.
 Keine Einrichtung als Firmenanalyse behandeln. Dieselbe run_id/company/as_of
 wie facts-run.json und review-packet.json verwenden. Kein neuer Faktenauftrag.
-Positionierung -> SWOT -> source-reviewer Phase final; Ausgabeanschluss folgt später.
-Bisheriger vollständiger HTML-Ablauf bleibt bis zur Migration separat.
+Positionierung -> SWOT -> gemeinsamer Schluss-Review -> explizit beauftragte
+Ausgabe nach ausgabe-html-v2.md. Neue vollständige HTML-Aufträge nutzen v2;
+bestehende Legacy-Markdown-Läufe bleiben getrennt.
 Keine Horváth-Angebotskapitel, keine separaten Firmen-Deep-Dives.
 
 ## Geprüfte Grundlage und kompakte Eingabe

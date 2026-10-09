@@ -27,3 +27,8 @@ Vor neuem Lauf vorhandene input/auftrag.md, work/ und output/ unter
 archive/<Zeitstempel>-<Firmenname>/ sichern; keine alten Claims übernehmen.
 Gleichen Stichtag/Firmenbezug in allen neuen Modulköpfen prüfen.
 Kein erfolgreicher Vorgänger oder Gesprächsverlauf allein aus „auch“ ableiten.
+
+## Neue vollständige HTML-Briefings (v2)
+Pfade runs/<neue_run_id>/input/, work/, output/; frühere Läufe erhalten.
+Ausgabe nach ausgabe-html-v2.md. Root-/Archivregeln oben nur für ausdrücklich
+bestehende Legacy-Markdown-Läufe. Einrichtung erzeugt keinen Firmenauftrag.

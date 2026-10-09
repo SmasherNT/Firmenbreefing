@@ -231,6 +231,10 @@ def build(manifest, modules, plan=None):
     packet = {"schema_version": 1, "mode": "facts-v2", "run_id": manifest.get("run_id"),
               "company": manifest.get("company"), "as_of": manifest.get("as_of"),
               "claims": claims, "sources": sorted(sources.values(), key=lambda s: s["id"]),
+              "module_views": [{"role": d.get("role"), **{k: d[k] for k in
+                                  ("company_facts", "events", "profile", "products", "regions",
+                                   "topics", "peers", "observations", "gaps", "coverage", "report_log")
+                                  if k in d}} for d in modules if isinstance(d, dict)],
               "module_context": [{"role": d.get("role"), "scope": d.get("scope"),
                                   "status": d.get("status"),
                                   "shared_limitations": d.get("shared_limitations", []),
@@ -245,6 +249,8 @@ def build(manifest, modules, plan=None):
     return {"run_id": manifest.get("run_id"), "company": manifest.get("company"),
             "as_of": manifest.get("as_of"), "phase": "basis",
             "required_full_review_ids": required,
+            "packet_fingerprint": hashlib.sha256(json.dumps(packet, sort_keys=True,
+                 ensure_ascii=False, separators=(",", ":"), allow_nan=False).encode()).hexdigest(),
             "errors": errors, "fingerprints": check.get("fingerprints", {}),
             "module_status": {d.get("role"): d.get("status") for d in modules if isinstance(d, dict) and isinstance(d.get("role"), str)},
             "notice": "Formal validation only; factual accuracy, coverage and source independence not verified."}, packet

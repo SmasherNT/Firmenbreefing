@@ -21,3 +21,6 @@ Sonst CLAUDE.md, uebergabe.md, defaults.md und briefing-struktur.md lesen:
 work/portfolio.md nach bisherigem Übergabeschema schreiben, ebenfalls nur Fakten.
 Bei Modultest ersetzen die delegierten Pfade diese Standardpfade; nur den
 ausgewählten Umfang bearbeiten (references/modultest.md).
+
+Bei facts-v2 für HTML die kompakten Tabellen/Claim-Zuordnungen nach
+references/ausgabe-html-v2.md liefern. Keine parallelen Langberichte erstellen.

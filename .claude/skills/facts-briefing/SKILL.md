@@ -5,7 +5,7 @@ description: Steuere ausdrücklich beauftragte Faktenbasis- oder Faktenagenten-T
 
 Lies references/faktenphase.md, defaults.md und bei Wettbewerb capability-matrix.md.
 Einrichtung/Systemfragen sind keine Rechercheaufträge.
-1. Isolierten Lauf tests/<run_id>/ mit Originalauftrag, Manifest und work/output
+1. Delegierten Lauf verwenden; sonst isolierten Test tests/<run_id>/ mit Originalauftrag, Manifest und work/output
    anlegen. Firmenidentität/Stichtag normalisieren; nur beauftragte Rollen wählen.
 2. Kontext, Portfolio und Cluster soweit ausgewählt delegieren, ggf. parallel.
    Eingaben, mode=facts-v2 und genau einen Ausgabeweg je Rolle nennen.

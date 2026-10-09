@@ -115,3 +115,7 @@ Ausgabe review-basis.md / review-final.md mit genau einem JSON-Codeblock;
 reines JSON zulässig. Bei Legacy-Modus bisherigen Bericht beibehalten.
 Details und lokale Aufrufe in interpretationsphase.md; Fingerprints nicht
 manuell erfinden oder im Agentenkontext als lange Erfolgsliste wiederholen.
+
+Bei v2-HTML auch module_views (Labels, Zuordnungen, Ereignisdatum) im Basis-Review
+prüfen. facts-validation.packet_fingerprint bindet den Paketstand; stamp-review
+ergänzt input_fingerprint. Unveränderte A-Urteile übernehmen, Änderungen gezielt prüfen.

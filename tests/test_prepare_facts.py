@@ -61,6 +61,16 @@ class FactsTests(unittest.TestCase):
         changed["claims"][0]["statement"] += " changed"
         self.assertNotEqual(result["fingerprints"], self.result(changed)["fingerprints"])
 
+    def test_mapping_changes_packet_snapshot_not_individual_fact_hash(self):
+        changed = copy.deepcopy(self.module)
+        changed['products'] = [dict(id='inspection', label='Inspection', claim_ids=['P001'])]
+        original, packet = FACTS.build(self.manifest, [changed])
+        self.assertEqual(packet['module_views'][0]['products'][0]['label'], 'Inspection')
+        changed['products'][0]['label'] = 'Changed mapping'
+        later = self.result(changed)
+        self.assertEqual(original['fingerprints'], later['fingerprints'])
+        self.assertNotEqual(original['packet_fingerprint'], later['packet_fingerprint'])
+
     def test_source_identity_preserves_queries(self):
         self.assertEqual(FACTS.source_id("https://example.org/product#page=4"), self.source["id"])
         self.assertNotEqual(FACTS.source_id("https://example.org/product?lang=de"), self.source["id"])

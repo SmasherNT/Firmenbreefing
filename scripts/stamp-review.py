@@ -36,7 +36,10 @@ def stamp(draft, validation):
             row = by_id.get(cid, {})
             if row.get("depth") != "A" or row.get("status") not in {"geprüft", "übernommen"}:
                 raise ValueError("required full check missing: " + cid)
-    return {**draft, "claims": rows}
+    result = {**draft, "claims": rows}
+    if draft["phase"] == "basis" and validation.get("packet_fingerprint"):
+        result["input_fingerprint"] = validation["packet_fingerprint"]
+    return result
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)

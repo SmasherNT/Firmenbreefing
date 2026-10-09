@@ -18,3 +18,6 @@ Lies delegierten Auftrag/Manifest und references/faktenphase.md.
 Keine Executive Summary, Bewertungen, Horváth-Angebote oder separate Firmen-
 Deep-Dives erzeugen. Produkt-/Netzwerk-/Marktfakten den zuständigen Rollen zuweisen.
 Bei Quellenzugriffsgrenze status/gaps benennen, keine Annahme als Fakt ergänzen.
+
+Bei facts-v2 für HTML die kompakten Tabellen/Claim-Zuordnungen nach
+references/ausgabe-html-v2.md liefern. Keine parallelen Langberichte erstellen.

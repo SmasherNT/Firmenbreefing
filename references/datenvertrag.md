@@ -2,9 +2,11 @@
 Status: Faktenrollen (facts-v2) und Interpretation (interpret-v2) angeschlossen.
 Aufruf, isolierte Pfade und Validierung nach faktenphase.md; neue Faktenaufträge
 nutzen facts-briefing. Interpretation vorhandener Fakten nutzt interpretation-briefing
-nach interpretationsphase.md. HTML und gemeinsamer Dokumentcache folgen später.
-Bestehende HTML-Aufträge behalten vorerst die alten Modulpfade nach
-uebergabe.md. Keine Mischläufe oder zwei konkurrierenden Faktenbestände.
+nach interpretationsphase.md. HTML nach ausgabe-html-v2.md ist angeschlossen;
+ein gemeinsamer Dokumentcache folgt später.
+Neue vollständige HTML-Aufträge verwenden runs/<run_id>/ und den V2-Renderer.
+Bestehende Markdown-Modultests bleiben expliziter Legacy-Modus nach uebergabe.md.
+Keine Mischläufe oder zwei konkurrierenden Faktenbestände.
 
 ## Zielstruktur und Rollen
 Layoutreferenz: vom Nutzer bereitgestellte vollständige Briefing-HTML.
@@ -140,3 +142,8 @@ ersetzen keinen tatsächlichen Recherchelauf. Reihenfolge mit Nutzer
 schrittweise bearbeiten. Umstellung alter Pfade und Archivierung einmal konsistent
 durchführen, keine Mischläufe. Tests müssen Scope-Ausschlüsse, Trennung der Phasen,
 Claim-/Quellenintegrität und tatsächliche Token-/Aufwandsmessung berücksichtigen.
+
+## Aktueller Anschluss
+Fakten- und Interpretationsphase für neue vollständige HTML-Briefings über
+ausgabe-html-v2.md angeschlossen. Dokumentcache und reale Token-/Kostenmessung
+noch offen. Bestehende Legacy-Markdown-Läufe bleiben getrennt.
