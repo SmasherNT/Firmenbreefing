@@ -69,3 +69,17 @@ verbindlich einschließlich offener Entdeckung, Gegenrecherche und Folgesuche.
 Auch geprüfte eigenständige Medienberichte ohne auffindbare Unternehmensmeldung
 zulassen; Quellenart, Unabhängigkeit und Unsicherheit offenlegen. Keine feste
 Quellenliste, Zahl von Knoten oder Zahl von Suchrunden als Vollständigkeitsmaß.
+
+## Sparsame Quellenprüfung (Schritt 4 und 6)
+references/quellenpruefung.md ist die verbindliche Methode für source-reviewer.
+Hauptagent liefert kompakte Claim-/Quellenpakete nach uebergabe.md; keine finale
+HTML oder vollständigen Quelltexte als Standard-Prüfkontext.
+Wesentliche Aussagen und jede Netzwerkkante vollständig prüfen; ergänzende
+Hintergrunddetails per dokumentierter Stichprobe mit Ausweitung bei Fehlern.
+Formale Datenkontrollen lokal mit scripts/check-review-data.py durchführen.
+Quellen gemeinsam für mehrere Claims prüfen; nur Fehler ausführlich berichten.
+Schritt 6 übernimmt unveränderte bestätigte Fakten desselben Auftrags/Stichtags
+und prüft SWOT-Ableitungen, neue/geänderte Claims und betroffene Abhängigkeiten.
+Stichprobenclaims vor Nutzung als strategische Faktenbasis vollständig prüfen.
+Nicht einzeln geprüfte Hintergrunddetails ausdrücklich ausweisen.
+Die breite Recherche bleibt Pflicht; die Prüfung wiederholt sie nicht vollständig.
