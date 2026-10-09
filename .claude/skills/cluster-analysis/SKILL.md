@@ -15,3 +15,9 @@ Nutze C-Claims und schreibe work/cluster.md nach dem Übergabeschema.
 Markiere Grenzen öffentlicher Informationen; keine vollständige juristische
 Konzernstruktur behaupten, wenn relevante Daten fehlen.
 Priorisiere die Nutzerthemen aus dem Auftrag; themenrelevante Angebote/Beziehungen belegen.
+
+## Ausnahme für ausdrücklich beauftragte Modultests
+Bei Modus modultest lies references/modultest.md. Die Delegation nennt
+Testauftrag, Auswahl, Eingaben und Zielpfad. Diese Pfade ersetzen die festen
+input/work/output-Pfade oben. Nicht gewählte Module sind keine Pflicht.
+Im Standardlauf bleiben die obigen Regeln unverändert.

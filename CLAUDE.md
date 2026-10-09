@@ -4,7 +4,11 @@ Nur Konfiguration erstellen und prüfen. Keine Firmenanalyse, bevor der Nutzer
 explizit ein Briefing anfordert. Bis dahin input/auftrag.md nicht anlegen.
 
 ## Kurze Anfrage automatisch ausführen
-Bei einer Anfrage nach einem HTML-Firmenbriefing benutze company-briefing.
+Bei einer Anfrage nach einem vollständigen HTML-Firmenbriefing benutze company-briefing.
+Bei ausdrücklich einzelnen Modulen, Teilanalysen oder Modultests benutze
+module-briefing und den neuen Agenten module-contractor. Dieser Modus hat
+Vorrang vor dem vollständigen Ablauf; lies references/modultest.md.
+Erzeuge den Testauftrag nur im isolierten Testverzeichnis, nicht in input/auftrag.md.
 Lies references/defaults.md, references/briefing-struktur.md und
 references/uebergabe.md. Diese Dateien sind verbindliche Projektanweisungen.
 Übernimm Firma, Themen und Gesprächspartner aus der aktuellen Nachricht.
@@ -29,3 +33,10 @@ Hauptagent koordiniert, recherchiert Themen/Person/Markt und erstellt HTML.
 Vor SWOT Faktenbasis prüfen, danach Ableitungen und geänderte Claims prüfen.
 Keine finale Ausgabe bei offenen wesentlichen Fehlern. Nach Korrekturen
 abhängige Schlussfolgerungen erneut prüfen. Öffentliche Lücken sichtbar lassen.
+
+## Alternative Modulaufträge
+Im Modus modultest gelten references/modultest.md und die dortigen
+Pfad-/Abhängigkeitsausnahmen für alle beteiligten Rollen und Skills.
+module-contractor plant; der Hauptagent führt die gewählten Schritte aus.
+Erlaube insbesondere 2a und/oder 2b und/oder 3 -> 4 -> 7 ohne 5/6.
+Quellenqualität und transparente Prüfstatus bleiben verbindlich.

@@ -16,3 +16,9 @@ Kooperation, Eigentum, Joint Venture und Standort eindeutig unterscheiden.
 Melde fehlende Voraussetzungen und Datenlücken; erfinde keine Belege.
 Abschluss: beauftragter Umfang bearbeitet oder klar als teilweise/blockiert markiert.
 Rückgabe an Hauptagent: Dateipfad, Status, Kernergebnisse, offene Punkte.
+
+## Ausnahme für ausdrücklich beauftragte Modultests
+Bei Modus modultest lies references/modultest.md. Die Delegation nennt
+Testauftrag, Auswahl, Eingaben und Zielpfad. Diese Pfade ersetzen die festen
+input/work/output-Pfade oben. Nicht gewählte Module sind keine Pflicht.
+Im Standardlauf bleiben die obigen Regeln unverändert.

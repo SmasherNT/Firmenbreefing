@@ -4,6 +4,9 @@ description: Erstellt aus einer kurzen natürlichen Anfrage ein belegtes HTML-Fi
 when_to_use: Bei jeder Anfrage nach einem Firmenbriefing, Unternehmensbriefing, Firmenprofil oder einer Gesprächsvorbereitung zu einem Unternehmen, auch ohne Slash-Befehl und ohne Formular, z. B. „Erstelle ein Briefing zu <Firma> mit Fokus <Themen>, Gesprächspartner <Name>, <Position>“ oder „Mach auch ein Briefing zu <Firma>“. Nicht bei Einrichtung oder Konfigurationsprüfung.
 ---
 
+Bei ausdrücklich einzelnen Modulen oder Modultests stattdessen module-briefing
+verwenden und references/modultest.md lesen; nicht diesen vollständigen Ablauf starten.
+
 Der Hauptagent steuert den Ablauf. Einrichtung, Konfigurationsprüfung oder
 Fragen zum System sind kein Auftrag: dann nichts recherchieren und
 input/auftrag.md nicht anlegen.

@@ -21,3 +21,9 @@ Nenne offene wesentliche Fehler, transparente Datenlücken und Ausgabereife.
 Ein erreichbarer Link allein ist kein bestandener Quellencheck.
 Rückgabe: Review-Pfad, Phase, Status und notwendige Korrekturen.
 Prüfe insbesondere alle Nutzerthemen, T-/H-Claims, Personenidentität, Rollenstatus, Länderabgrenzung und Partnerstatus. Nutzerangaben nicht als verifizierte Tatsachen behandeln.
+
+## Ausnahme für ausdrücklich beauftragte Modultests
+Bei Modus modultest lies references/modultest.md. Die Delegation nennt
+Testauftrag, Auswahl, Eingaben und Zielpfad. Diese Pfade ersetzen die festen
+input/work/output-Pfade oben. Nicht gewählte Module sind keine Pflicht.
+Im Standardlauf bleiben die obigen Regeln unverändert.

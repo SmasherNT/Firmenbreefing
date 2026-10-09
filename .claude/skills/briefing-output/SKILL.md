@@ -18,3 +18,13 @@ interne Links, mobile Darstellung und Druckansicht tatsächlich prüfen;
 nicht ausführbare Kontrollen in der Abnahme als nicht geprüft kennzeichnen.
 Erstelle output/abnahme.md gemäß Strukturvorlage. Dateipfade und Cloud-
 Ausgabemöglichkeiten nennen. Keine öffentliche Veröffentlichung automatisch.
+
+## Ausnahme für ausdrücklich beauftragte Modultests
+Bei Modus modultest lies references/modultest.md. Die Delegation nennt
+Testauftrag, Auswahl, Eingaben und Zielpfad. Diese Pfade ersetzen die festen
+input/work/output-Pfade oben. Nicht gewählte Module sind keine Pflicht.
+Im Standardlauf bleiben die obigen Regeln unverändert.
+
+Im Modultest nur ausgewählte Kapitel rendern. Nach fehlerfreiem Basis-Review
+ist kein SWOT-/Schluss-Review nötig. Ohne Basis-Review nur sichtbar ungeprüfter
+Entwurf; bekannte wesentliche Fehler blockieren jede HTML-Ausgabe.

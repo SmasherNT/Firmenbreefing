@@ -27,3 +27,9 @@ work/portfolio.md und work/cluster.md. Fehlende Eingaben konkret melden.
 4. Verbindung Person/Thema nur bei Beleg; sonst „öffentlich nicht belegt“.
 Beide Dateien mit gemeinsamen Modulkopf, Claims, Lücken und Status liefern.
 Keine SWOT vorwegnehmen und keine Marktgröße ohne belegte Abgrenzung nennen.
+
+## Ausnahme für ausdrücklich beauftragte Modultests
+Bei Modus modultest lies references/modultest.md. Die Delegation nennt
+Testauftrag, Auswahl, Eingaben und Zielpfad. Diese Pfade ersetzen die festen
+input/work/output-Pfade oben. Nicht gewählte Module sind keine Pflicht.
+Im Standardlauf bleiben die obigen Regeln unverändert.
