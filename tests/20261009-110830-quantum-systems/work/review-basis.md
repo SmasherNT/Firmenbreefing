@@ -1,5 +1,7 @@
 # Review Phase basis – Modultest Quantum Systems (2b -> 4 -> 7)
 
+> **Aktueller Status (nach Nachprüfung Runde 1): bestanden mit Hinweisen.** Siehe Abschnitt „Nachprüfung Runde 1“ am Dateiende. Der folgende Erstbefund bleibt zur Nachvollziehbarkeit unverändert erhalten.
+
 ## Kopf
 | Feld | Wert |
 |---|---|
@@ -10,7 +12,7 @@
 | Nutzerthemen / Person | keine genannt. Es gibt also keine T- oder H-Claims und kein Personenprofil zu prüfen. Die öffentlichen Geschäftsführungsrollen in C-02 wurden als berufliche Rollen geprüft. |
 | Stichtag / Prüfdatum | 2026-10-09 / 2026-10-09 |
 | Regeln | CLAUDE.md, uebergabe.md, defaults.md, briefing-struktur.md, cluster-recherche.md, netzwerk-html.md, modultest.md |
-| Gesamturteil | **nicht bestanden (wesentliche Fehler)**. Es gibt 3 wesentliche Korrekturen (W1 bis W3) und 2 Pflicht-Kleinkorrekturen (K1, K2). Alle sind eng umrissen; danach ist eine gezielte Nachprüfung nötig. |
+| Gesamturteil (Erstprüfung) | **nicht bestanden (wesentliche Fehler)**. Es gibt 3 wesentliche Korrekturen (W1 bis W3) und 2 Pflicht-Kleinkorrekturen (K1, K2). Alle sind eng umrissen; danach ist eine gezielte Nachprüfung nötig. |
 
 ## Methode
 Die Originalbelege habe ich selbst geöffnet und die Belegstellen gelesen, nicht nur die Links aufgerufen. Bei PDFs habe ich die Seiten gerendert gelesen:
@@ -160,8 +162,105 @@ Nicht selbst geöffnet:
 
 Die Lücken sind korrekt nicht als fehlende Beziehungen oder als Schwächen gewertet.
 
-## Ausgabereife
+## Ausgabereife (Erstprüfung)
 - **Schritt 7 ist derzeit nicht freigegeben.** Der Status ist „nicht bestanden (wesentliche Fehler)“, da W1 bis W3 sowie K1 und K2 offen sind.
 - Nach der Korrektur durch den cluster-analyst in work/cluster.md prüft der source-reviewer erneut. Die Nachprüfung beschränkt sich auf W1–W3, K1–K2 und die davon abhängigen Stellen: Kernaussagen, Q3/Q4, Beziehungstabelle, JSON-Kanten E23–E26 und E32/E33.
 - Die übrigen Claims (C-01 bis C-16, C-18, C-19, C-22, C-24 bis C-30) sind geprüft und bleiben gültig, solange sie nicht geändert werden.
 - Korrekturrunde: 0 von 2.
+
+---
+
+## Nachprüfung Runde 1
+
+### Kopf
+| Feld | Wert |
+|---|---|
+| Prüfgegenstand | work/cluster.md nach „Korrekturprotokoll Runde 1“ (Stand: C-01 bis C-31, E01 bis E37, S01 bis S36, network-data v1) |
+| Prüfdatum | 2026-10-09 |
+| Korrekturrunde | 1 von 2 |
+| Umfang | W1–W3 und K1–K2 sowie alle abhängigen Stellen: Kopf, Übersicht, Kernaussagen, Akteursliste, Beziehungstabelle, Q1–Q5, Lücken, Claim-Register, Quellenregister und network-data. Dazu der neue Claim C-31 mit Quelle S36 und alle im Protokoll genannten geänderten Claims, Kanten und Quellenkennzeichnungen. |
+| Methode | Die geänderten Aussagen habe ich mit den in dieser Sitzung gelesenen Originalbelegen abgeglichen: JA-Kopie S. 4–10 und S. 12–18 (S. 6 für C-31 gezielt nachgelesen), S12, S14, S22, S23, S24, S25, S26, S28, S29, S30, S31, S32 und S34. Das network-data-JSON habe ich vollständig auf IDs, Referenzen, Kategorien, Status und as_of geprüft. Neue Quellen außer S36 sind nicht hinzugekommen; S36 ist dieselbe Datei wie S16, Seite 6. |
+| **Gesamturteil** | **bestanden mit Hinweisen** |
+
+### Prüftabelle Nachprüfung
+| Claim-/Kanten-ID | Ergebnis | Begründung / Belegstelle | nötige Änderung | zuständige Rolle |
+|---|---|---|---|---|
+| W1 – E23 (JSON) | geprüft | `categories` ist jetzt `["owner","partner"]`, Typ „Minderheitsbeteiligung“. Damit erfasst der Eigentumsfilter die Kante. Die Option war im Erstbefund ausdrücklich zugelassen. | – | – |
+| W2 – C-21, E24, E25, E26 | geprüft | „erste Serie“ ist überall entfernt. Der Status lautet einheitlich „gegründet; Serienfertigung angekündigt; Produktionsstand nicht belegt“. E26 lautet „angekündigt; Lieferungen nicht belegt“, Typ „Vorgesehene Lieferbeziehung“, Summary im Konjunktiv („sollen“). Das entspricht S29 (Serienproduktion geplant), S30 (Gründung und Pläne) und S31 („will be delivered“). Kernaussage 4, Übersicht, Akteursliste (qfi, ukraine_mod), Pfadtext, Q4 und Lücken sind konsistent. | – | – |
+| W3 – C-17, Q3, E32, E33, nordic_unmanned | geprüft | „Paketerwerb aus einer Verkäuferhand“ ist gestrichen. Q3 trennt jetzt Belegtes und Nicht-Belegtes: Belegt sind die NU-Zugehörigkeit seit 2021 (S23) bzw. zum 13.12.2024 (S24) und die Erwerbe durch Quantum (S20, S12, S25). Nicht belegt sind Verkäufer und gemeinsamer Vorgang. Die Summaries von E32/E33 sagen nicht mehr „an Quantum verkauft“; das Ende der Zugehörigkeit ist als aus E20/E21 abgeleitet gekennzeichnet. Bird & Bird wird korrekt nicht verwendet. Die Akteursliste markiert die Verkäuferrolle ausdrücklich als „nicht belegt“. | – | – |
+| K1 – C-20, E23 | geprüft | Ereignisdatum „Juni 2025 (laut S29)“, Meldung 16.07.2025 (S28). JSON as_of 2025-06-30 mit uncertainty „Monat laut S29, Tag unbekannt (as_of = Monatsende als Näherung)“. Optionsfrist „ca. Juni 2026“. S28 ist als Wiedergabe von forbes.ua/Frontline gekennzeichnet. Das deckt sich mit S29 („im Juni 2025 zehn Prozent“) und S28. | – | – |
+| K2 – C-23, E28 | geprüft | Der 26.09.2023 und „Rahmenvertrag“ sind gestrichen. Als Ereignis steht „Meldung 29.09.2023 (Vertragsdatum nicht belegt)“; im JSON steht uncertainty „Vertragsdatum nicht belegt; as_of = Meldedatum“. Das deckt sich mit S32. | – | – |
+| C-05 / E02 | geprüft | Ergänzt: S08 nennt keine Quote. E02 enthält jetzt in uncertainty „Quelle nennt nur ‚April 2025‘ (as_of = Monatsende als Näherung, Tag unbekannt)“. Das entspricht H1 2025, gedruckt S. 1. | – | – |
+| C-08 / E08 | geprüft | S11 ist bei E08 ergänzt. Beide Quellen sind ausdrücklich als „Wiedergabe derselben Investorenliste, keine unabhängige Bestätigung“ gekennzeichnet. S11 nennt DTCP unter den bestehenden Investoren; das ist bestätigt. | – | – |
+| C-11 / E05 / airbus_ds | geprüft mit Hinweis | Die uncertainty zur Bezeichnung „Airbus“ in S13/S15 und zur Zuordnung über den S14-Text ist korrekt; legal_name ist „Airbus Defence and Space (Airbus-Konzern)“. Kleiner Bruch: E05 verweist in der uncertainty auf S15, `source_ids` von E05 enthält S15 aber nicht (nur S10, S14, S13). | Hinweis N1: S15 in E05 `source_ids` und in der Quellenspalte der Beziehungstabelle aufnehmen, oder die uncertainty nur auf S13 beziehen | cluster-analyst |
+| C-15 / E20 | geprüft | „Arnsberg/Eigenständigkeit nur in S22“ und „Verkäufer nicht belegt“ sind ergänzt. Das deckt sich mit S21 (ohne Arnsberg), S22 (eigenständiges Unternehmen, Standort Arnsberg) und S23 (kein Verkäufer genannt). | – | – |
+| C-18 / E21 / nu_uk | geprüft | Die S12-Paraphrase gibt jetzt wortgetreu „acquired and integrated … Nordic Unmanned“ wieder. Die Zuordnung zu NU UK über JA S. 10 und S25 ist offengelegt. Die Datierung „2025“ ist als abgeleitet gekennzeichnet. Das deckt sich mit S12 S. 1, JA S. 10 und S25. | – | – |
+| C-19 / E22 | geprüft | Die Integration ist als Absicht formuliert („soll … integriert werden“ laut S26); im JSON lautet der Status „Übernahme abgeschlossen; Integration beabsichtigt“. Das deckt sich mit S26 und S27. | – | – |
+| C-27 / E37 | geprüft | Als Verkäufer steht „Airbus (Konzern)“ in Claim, Summary, Q2 und Übersicht. Die uncertainty erklärt die Darstellung über den Knoten airbus_ds. Das deckt sich mit S34. | – | – |
+| **C-31 (neu) / S36 (neu)** | geprüft mit Hinweis | Die Aussage ist wörtlich durch JA S. 6 gedeckt: GV vom 05.11.2024 beschließt eine Erhöhung um 203,00 EUR, wirksam mit HR-Eintragung am 09.01.2025; „Die Ausgabe der Anteile war Teil des Kaufpreises für eine in 2024 erworbene Tochtergesellschaft“. VSOP→EIP: Anteile „mittels einer Zwischengesellschaft an die Mitarbeiter übertragen“, „nicht stimmberechtigte Gesellschaftsanteile an der Quantum Systems GmbH“. Die Unsicherheit (Tochter, Verkäufer und Zwischengesellschaft nicht genannt; keine Kontrollaussage) ist korrekt. S36 hat Seite und Abschnitt richtig und ist als Drittanbieter-Kopie gekennzeichnet. Zwei Formulierungen außerhalb des Claims gehen leicht über die Quelle hinaus, siehe N2. | Hinweis N2 | cluster-analyst |
+| Kennzeichnung S10, S13, S25, S28 | geprüft | Die Bezeichnungen „Wiedergabe der Firmen-PM“ bzw. „Wiedergabe von forbes.ua/Frontline-Angaben“ stehen konsistent in Quellenregister, JSON-Namen und Faktenbasis der Claims. | – | – |
+| Kennzeichnung S16–S20, S36 | geprüft | „Kopie des Unternehmensregister-Auszugs (Drittanbieter craft.co)“ steht in Name und Titel (Tabelle und JSON), im Kopf, im Protokoll und in der Faktenbasis von C-01, C-02, C-12, C-13, C-15, C-18, C-22, C-29 und C-31. Die Kanten E14–E18 und E27 tragen die uncertainty „nur in Kopie … belegt“. | – | – |
+| Übrige Claims (C-01 bis C-04, C-06, C-07, C-09, C-10, C-12 bis C-14, C-16, C-22, C-24 bis C-26, C-28 bis C-30) | geprüft (unverändert) | Gegenüber der Erstprüfung inhaltlich unverändert; nur die Quellenkennzeichnung wurde angepasst. Der Erstbefund bleibt gültig. | – | – |
+
+### Querverbindungen nach Korrektur
+| Punkt | Ergebnis | Befund |
+|---|---|---|
+| Q1 | geprüft | unverändert, korrekt |
+| Q2 | geprüft | Formulierung „Airbus (Konzern)“ korrekt; weiterhin Überschneidung, keine Kooperation |
+| Q3 | geprüft | Belegtes und Nicht-Belegtes sind getrennt; keine unbelegte Verkäuferkante |
+| Q4 | geprüft | Datum Juni 2025; Status „angekündigt“; Interpretation getrennt |
+| Q5 | geprüft | unverändert, korrekt |
+
+### network-data (Nachprüfung)
+| Prüfpunkt | Ergebnis | Befund |
+|---|---|---|
+| company / as_of / target | geprüft | unverändert: „Quantum Systems“, 2026-10-09, genau ein target „qs“ |
+| ID-Eindeutigkeit | geprüft | 28 Knoten, 37 Kanten (E01–E37), 36 Quellen (S01–S36), 2 Produkte; alle eindeutig |
+| Referenzintegrität | geprüft | Alle from/to und product_ids sind gültig. Alle source_ids existieren; S36 ist registriert, aber keiner Kante zugeordnet (zulässig, da C-31 ohne Kante dokumentiert ist). Alle claim_ids liegen in C-01–C-30 und sind im Register dokumentiert. |
+| Kategorien | geprüft | E23 korrigiert; alle Werte stammen aus der zulässigen Liste |
+| Status / as_of | geprüft | E02, E04 und E23 sind als Monatsend-Näherung gekennzeichnet. E32/E33 haben as_of = letzter belegter Stand, Ende abgeleitet und gekennzeichnet. E26 ist angekündigt. Series D ist durchgehend „unterzeichnet; Closing nicht belegt“. |
+| Richtung, Quotenarten, Produkte | geprüft | unverändert korrekt |
+| JSON ↔ lesbare Tabellen | geprüft mit Hinweis | Inhaltlich übereinstimmend; einzige Abweichung ist S15 bei E05 (N1) |
+
+### Verbleibende Hinweise (nicht blockierend)
+- **N1 – E05 Quellenbezug:** S15 in `source_ids` von E05 und in die Quellenspalte der Beziehungstabelle aufnehmen, oder den S15-Verweis in der uncertainty streichen. Das ist eine reine Referenzkonsistenz; der Inhalt ist durch S13/S14 gedeckt.
+- **N2 – C-31-Ableitungen außerhalb des Claims:**
+  - In der Übersichtszeile „Kontrolle“ steht „über eine Zwischengesellschaft gehalten werden“. Die Quelle sagt nur „mittels einer Zwischengesellschaft an die Mitarbeiter übertragen“.
+  - In den Lücken steht, Anteile seien „an den Verkäufer einer Tochter“ gegangen. Die Quelle nennt nur „Teil des Kaufpreises“; der Empfänger ist eine naheliegende Ableitung.
+  - Empfehlung: an den Wortlaut von C-31 angleichen.
+  - Selbstkorrektur des Reviewers: Mein Erstbefund (Zeile „Kapital vs. Stimmrechte“) hat dieselbe ungenaue Formulierung „gehalten“ verwendet. Maßgeblich ist der Wortlaut „übertragen“.
+
+N1 und N2 sind keine wesentlichen Fehler. Sie dürfen vor oder in Schritt 7 korrigiert werden; die HTML-Ausgabe muss dann den Wortlaut von C-31 verwenden und nicht die beiden Ableitungen.
+
+### Für die HTML-Ausgabe zwingend sichtbar zu machen (Verantwortung Hauptagent, Schritt 7)
+1. **Drittanbieter-Kopie:**
+   - Quellen S16–S20 und S36 sichtbar als „Kopie des Unternehmensregister-Auszugs auf Drittanbieter-Host (craft.co); Original im Unternehmensregister nicht direkt geöffnet“ führen.
+   - Ausdrücklich sagen, dass die Quoten 100 %, 74 % und 51 %, die 67.635 TEUR, die Konzernabschlusspflicht und C-31 nur dort belegt sind.
+2. **Wiedergaben:**
+   - S10, S13 und S25 als „Wiedergabe der Firmen-PM“ und S28 als „Wiedergabe von forbes.ua/Frontline-Angaben“ kennzeichnen; das sind keine unabhängigen Zweitbelege.
+   - Hinweis aufnehmen, dass die HTML-Seiten von quantum-systems.com nicht abrufbar waren (HTTP 403). S12 ist das Original-PDF auf der Firmendomain.
+3. **Series D:**
+   - Status „unterzeichnet (Signing 02.07.2026); Closing nicht belegt“ bei E05 und E09–E13 sowie in der Zusammenfassung. Sekundärmeldungen mit „abgeschlossen“ nicht übernehmen.
+   - Hinweis, dass der Co-Lead in S13/S15 nur als „Airbus“ bezeichnet ist.
+4. **HENSOLDT:** 1,6 % nur als Quote zum Erwerb 2025; Teilverkauf im Juli 2026 vereinbart, Vollzug und Umfang nicht belegt; aktueller Anteil unbekannt.
+5. **Kontrolle:**
+   - Cap Table, Kapital-, Stimmrechts- und Kontrollverhältnisse unbekannt; keine Kontrollaussage, auch nicht aus C-30 oder C-31.
+   - C-30 sowie die Interpretationen in Q1, Q2 und Q4 sichtbar als Analysteninterpretation kennzeichnen.
+6. **QFI/Frontline:**
+   - QFI ist gegründet; Serienfertigung und Lieferungen an die Ukraine sind nur angekündigt, der Produktionsstand ist nicht belegt.
+   - Frontline: 10 % seit Juni 2025; Optionsausübung (bis 25 %, Frist ca. Juni 2026) nicht belegt.
+7. **AirRobot/NU UK:**
+   - Der Verkäufer an Quantum ist nicht belegt; frühere NU-Zugehörigkeit nur bis mindestens 13.12.2024.
+   - Erwerbsdatum NU UK „2025 (abgeleitet)“; das JA ordnet beide Erwerbe sprachlich dem GJ 2024 zu.
+8. **Indirekte Pfade:** MIKADO II, TIQUILA/Lockheed Martin UK/UK MoD und die QFI-Lieferung nur als indirekte Pfade über AirRobot bzw. QFI darstellen. Keine direkte Vertragsbeziehung von Quantum anzeigen.
+9. **Zeitangaben:**
+   - Bei E02 (April 2025), E04 (Juli 2026) und E23 (Juni 2025) den Monat anzeigen, nicht das Näherungsdatum als exakten Tag.
+   - FALKE: nur das Meldedatum 29.09.2023; Vertragsdatum nicht belegt.
+10. **Geschäftsberichts-Lücken:** Konzernabschluss 2025 öffentlich nicht gefunden; HENSOLDT-GB 2025 nicht zugänglich; Airbus-GB 2025 nicht geprüft; NU AR 2024 nicht gefunden. Ausdrücklich angeben, dass diese Lücken weder eine fehlende Beziehung noch eine Schwäche bedeuten.
+
+### Ausgabereife nach Runde 1
+- **Status: bestanden mit Hinweisen.** Es gibt keine offenen wesentlichen Fehler. W1–W3 und K1–K2 sind geschlossen; die Hinweise aus der Erstprüfung (H5, H6, H8, H10, C-05, C-18, C-19) sind umgesetzt.
+- **Schritt 7 ist freigegeben.** Bedingung: Die oben genannten Punkte 1–10 erscheinen sichtbar im HTML. Die Ausgabe führt keine neuen Unternehmensbehauptungen ein; sonst muss Schritt 4 erneut laufen (modultest.md).
+- Wird N1 oder N2 vor Schritt 7 in cluster.md korrigiert, ist das als redaktionelle Angleichung ohne neue Prüfung zulässig, solange der Inhalt dem hier geprüften Wortlaut entspricht.
+- Die technische Prüfung der Netzwerkdarstellung (Browser, Mobil, Druck, Filter) gehört zu Schritt 7 und zur Abnahme des Hauptagenten. Sie ist nicht Teil dieses Reviews.
+- Korrekturrunde: 1 von 2, erfolgreich.
