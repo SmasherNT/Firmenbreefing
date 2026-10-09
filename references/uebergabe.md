@@ -56,3 +56,9 @@ mit den gleichnamigen Einträgen im Prüfpaket übereinstimmen.
 Claim-Fingerprints aus dem Prüfskript im Review festhalten; sie unterstützen
 Änderungserkennung, ersetzen aber keine Inhaltsprüfung oder Aktualitätskontrolle.
 Kein zusätzliches dauerhaftes Analysten-Ergebnis oder neues Pflichtmodul.
+
+## Faktenphase v2
+Bei ausdrücklichem mode=facts-v2 gilt references/faktenphase.md für Format/Pfade:
+kompakte JSON-Fakten statt paralleler Markdown-Berichte. Quellenprüfung bleibt
+quellenpruefung.md; Interpretation folgt erst nach geprüfter Faktenbasis.
+Capability-Vergleichsplan und reine Beobachtungen nach capability-matrix.md.

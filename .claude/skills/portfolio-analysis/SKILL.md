@@ -1,23 +1,23 @@
 ---
 name: portfolio-analysis
-description: Analysiert Produktangebot und belegten Reifegrad für einen Firmenauftrag.
+description: Recherchiere Produkte, Anwendungen, Eigenschaften und belegten Status für Firmenbriefings. Liefere reine Fakten; Reifegradbewertung erst in der späteren Positionierung.
 ---
 
-Lies input/auftrag.md, CLAUDE.md und references/uebergabe.md, references/defaults.md und references/briefing-struktur.md.
-Fehlt der tatsächliche Auftrag, keine Analyse beginnen.
-1. Recherchiere Produktgruppen und Anwendungen in Originalquellen.
-2. Trenne Produkte, Software, Dienstleistungen und Ankündigungen.
-3. Unterscheide vorgestellt, erprobt, bestellt und nachweislich ausgeliefert.
-4. Produktwerbung belegt keine Serienreife oder Überlegenheit.
-5. Erstelle eine Tabelle: Angebot, Anwendung, belegter Status, Claim-ID, Quelle.
-Nutze P-Claims. Belege relevante Eigenschaften und markiere Herstellerangaben.
-Ergänze Unsicherheiten und öffentliche Lücken.
-Schreibe work/portfolio.md nach dem Übergabeschema.
-Keinen Marktvergleich und keine vollständige SWOT als Ersatz für das Portfolio.
-Priorisiere die Nutzerthemen aus dem Auftrag; themenrelevante Angebote/Beziehungen belegen.
+Lies tatsächlichen Auftrag; ohne ihn keine Recherche.
+1. Produkte, Software, Dienstleistungen und Ankündigungen unterscheiden.
+2. Eigenschaften/Subsysteme, Anwendungen, belegte Integration und gemeldete
+   Tests/Aufträge/Lieferungen erfassen, Quellenart und Aussageursprung nennen.
+3. Technologie & Industrie der Zielprodukte erfassen; Partnerbeziehungen an
+   Cluster, Peervergleich an Markt weitergeben. Keine doppelte Faktfassung.
+4. Nachrichten/Fachmedien nach cluster-quellenkatalog.md aktiv einbeziehen.
+   Quellen lesen; Werbung ist kein Beleg technischer Überlegenheit oder Serienreife.
+5. P-Claims mit Belegstelle/Unsicherheit liefern. Lieferstatus beim Lesen
+   erfassen, keine eigene routinemäßige zusätzliche Lieferstatusrecherche.
 
-## Ausnahme für ausdrücklich beauftragte Modultests
-Bei Modus modultest lies references/modultest.md. Die Delegation nennt
-Testauftrag, Auswahl, Eingaben und Zielpfad. Diese Pfade ersetzen die festen
-input/work/output-Pfade oben. Nicht gewählte Module sind keine Pflicht.
-Im Standardlauf bleiben die obigen Regeln unverändert.
+Bei mode=facts-v2 references/faktenphase.md lesen und ausschließlich den delegierten
+portfolio-facts.json mit products/claims/coverage/source_proposals schreiben.
+Keine Scores, Skalen, Rankings oder Analysteninterpretation.
+Sonst CLAUDE.md, uebergabe.md, defaults.md und briefing-struktur.md lesen:
+work/portfolio.md nach bisherigem Übergabeschema schreiben, ebenfalls nur Fakten.
+Bei Modultest ersetzen die delegierten Pfade diese Standardpfade; nur den
+ausgewählten Umfang bearbeiten (references/modultest.md).

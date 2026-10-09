@@ -1,8 +1,9 @@
 # Schritt 2: gemeinsames Daten- und Übergabeformat
-Status: festgelegter Zielvertrag für den schrittweisen Umbau.
-Diese Datei dokumentiert die neue Architektur; sie aktiviert noch keine neuen
-Agenten oder Ausgabewege. Bis zur Anschlussimplementierung gelten die bisherigen
-Moduldateien nach uebergabe.md. Keine zwei konkurrierenden Datenbestände pflegen.
+Status: Faktenrollen in Schritt 3 für den Modus facts-v2 angeschlossen.
+Aufruf, isolierte Pfade und Validierung nach faktenphase.md; neue Faktenaufträge
+nutzen facts-briefing. Interpretation/HTML und gemeinsamer Dokumentcache folgen
+später. Bestehende HTML-Aufträge behalten vorerst die alten Modulpfade nach
+uebergabe.md. Keine Mischläufe oder zwei konkurrierenden Faktenbestände.
 
 ## Zielstruktur und Rollen
 Layoutreferenz: vom Nutzer bereitgestellte vollständige Briefing-HTML.
@@ -128,8 +129,9 @@ noch keine komplette Interpretation oder alle neuen Modulfelder.
 Kein Prüfschritt als bestanden ausgeben, bevor Adapter/Validierung implementiert sind.
 
 ## Nächster Umsetzungsschritt
-Zuerst Faktenrollen/Skills auf diesen Vertrag anschließen, danach Interpretation,
-Koordination/Cache, Renderer und ein begrenzter Modultest. Reihenfolge mit Nutzer
+Faktenrollen/Skills sind für facts-v2 angeschlossen. Als Nächstes Interpretation,
+Koordination/Cache und Renderer anschließen; begrenzte Konfigurations-/Fixturetests
+ersetzen keinen tatsächlichen Recherchelauf. Reihenfolge mit Nutzer
 schrittweise bearbeiten. Umstellung alter Pfade und Archivierung einmal konsistent
 durchführen, keine Mischläufe. Tests müssen Scope-Ausschlüsse, Trennung der Phasen,
 Claim-/Quellenintegrität und tatsächliche Token-/Aufwandsmessung berücksichtigen.

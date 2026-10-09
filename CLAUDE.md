@@ -4,6 +4,9 @@ Nur Konfiguration erstellen und prüfen. Keine Firmenanalyse, bevor der Nutzer
 explizit ein Briefing anfordert. Bis dahin input/auftrag.md nicht anlegen.
 
 ## Kurze Anfrage automatisch ausführen
+Bei ausdrücklich beauftragter Faktenbasis/Faktenagenten-Test benutze facts-briefing
+und mode=facts-v2 nach references/faktenphase.md. Dieser auf die Faktenphase
+begrenzte Modus hat Vorrang; keine HTML/SWOT implizit ergänzen.
 Bei einer Anfrage nach einem vollständigen HTML-Firmenbriefing benutze company-briefing.
 Bei ausdrücklich einzelnen Modulen, Teilanalysen oder Modultests benutze
 module-briefing und den neuen Agenten module-contractor. Dieser Modus hat
@@ -83,3 +86,16 @@ und prüft SWOT-Ableitungen, neue/geänderte Claims und betroffene Abhängigkeit
 Stichprobenclaims vor Nutzung als strategische Faktenbasis vollständig prüfen.
 Nicht einzeln geprüfte Hintergrunddetails ausdrücklich ausweisen.
 Die breite Recherche bleibt Pflicht; die Prüfung wiederholt sie nicht vollständig.
+
+## Faktenrollen und auftragsbezogene Capability Matrix
+Faktenphase v2 folgt faktenphase.md und dem Datenvertrag. Kontext/Portfolio/
+Cluster/Markt recherchieren Fakten; Bewertungen bleiben späterer Positionierung
+und SWOT vorbehalten. Technologie & Industrie im Cluster als Beziehungen und
+im Markt als vergleichbare Fähigkeiten recherchieren. Hauptagent definiert bei
+Wettbewerbsauftrag den Vergleichsplan nach capability-matrix.md vor der
+Wettbewerbsrecherche; Kriterien aus Auftrag, keine feste Branchenmatrix.
+Im v2-Modus schreibt der Hauptagent keine Analysten-JSON-Dateien und keine
+Portfolio-/Cluster-/Markt-/Personenfakten selbst; er delegiert an die vier Rollen.
+Die alte company-briefing/Modultest-Orchestrierung bleibt bis zum Anschluss der
+Interpretation/HTML aktiv für bisherige HTML-Aufträge; keine JSON/Markdown-Mischläufe.
+Keine Horváth-Angebotskapitel oder separaten Firmen-Deep-Dives im v2-Zielprodukt.

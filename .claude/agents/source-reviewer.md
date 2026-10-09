@@ -75,3 +75,13 @@ Eine reine Unternehmens-PM-Suche als unzureichende Abdeckung zurückmelden.
 Eigenständige redaktionelle Berichte nicht allein wegen fehlender PM ablehnen;
 Inhalt, Unabhängigkeit und Einschränkungen prüfen. Kopierte PMs bleiben ein
 Ursprungsbeleg. Gerüchte nicht als bestehende Beziehungen freigeben.
+
+## Faktenphase v2
+Bei mode=facts-v2 gilt references/faktenphase.md für isolierte Laufpfade.
+Delegation nennt Phase basis, Auftrag, review-packet.json, ausgewählte Module
+und genauen Review-Zielpfad. Nur tatsächlich beauftragte Rollen prüfen;
+alte portfolio.md/cluster.md/markt.md/kontext.md sind keine Voraussetzung.
+Kompakte JSON-Claims, sources und network sind die Prüfeingaben; Abdeckung nur
+aus den benannten Modulauszügen lesen. Prüfung bleibt quellenpruefung.md.
+Quellenregistry/Analystenmodule nicht ändern. Review im delegierten Lauf speichern.
+Formale Validierung ist kein Inhalts- oder vollständiger Recherchecheck.

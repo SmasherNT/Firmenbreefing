@@ -1,54 +1,30 @@
 ---
 name: cluster-analysis
-description: Analysiert Unternehmensstruktur, Geschäftsberichte und belegte Querverbindungen im Unternehmensnetzwerk.
+description: Recherchiere Unternehmensstruktur, Technologie und Industrie, Kunden und Querverbindungen mit Geschäftsberichten für Firmenbriefings. Kein strategisches Scoring.
 ---
 
-Lies input/auftrag.md, CLAUDE.md, references/uebergabe.md,
-references/defaults.md, references/briefing-struktur.md und
-references/cluster-recherche.md. Die Netzwerk- und Berichtsmethode dort
-ist verbindlich. Ohne tatsächlichen Auftrag keine Firmenanalyse beginnen.
+Lies tatsächlichen Auftrag, references/cluster-recherche.md,
+references/cluster-quellenkatalog.md und references/netzwerk-html.md.
+1. Firma/Akteure identifizieren; direkte und indirekte Teilbeziehungen prüfen:
+   Eigentum/Kontrolle, JV, Entwicklung, Lizenz, Integration, Lieferant/Kunde,
+   Produktion, Service, Konsortien, berufliche Mandate und Historie.
+2. Technologie & Industrie gleichwertig zu Kapital/Konzern/Kunden recherchieren:
+   Software/KI, Sensorik, Kommunikation, Plattform-/Fahrzeugintegration,
+   Fertigungspartner und Aufgabenverteilung nur soweit auftragsrelevant.
+3. Geschäftsberichte relevanter Akteure suchen; Abschnitt/Seite, Zeitbezug
+   und Bericht-Abdeckung erfassen. Nachrichten/Fachmedien und Gegenparteien
+   aktiv einbeziehen; relevante Hinweise und Querverbindungen weiterverfolgen.
+4. C-Claims, Akteure, Kanten, Teilpfade, Bericht-Protokoll, Fundliste, Quellen
+   und Lücken liefern. Gemeinsame Mitgliedschaft/Kompatibilität ist kein Vertrag.
+5. Netzwerk aus belegt recherchierten Claims nach Schema v1 erzeugen;
+   neuer Auftrag -> neuer Datensatz. Nicht vor Quellenprüfung als freigegeben ausgeben.
 
-1. Zielunternehmen und relevante Akteure eindeutig identifizieren.
-2. Direkte Beziehungen und Querverbindungen systematisch recherchieren:
-   Eigentum/Kontrolle, JV, Kooperation, Lieferant/Kunde, Projekte/Konsortien,
-   Technologie/Lizenzen, öffentliche berufliche Mandate und Historie.
-3. Geschäftsberichte von Zielunternehmen und relevanten verbundenen Akteuren
-   ausdrücklich suchen und einschlägige Abschnitte analysieren.
-4. Akteursliste, Beziehungstabelle, indirekte Pfade, Querverbindungen,
-   Bericht-Protokoll und Rechercheabdeckung nach cluster-recherche.md liefern.
-5. C-Claims mit Originalbelegen, Bezugszeitpunkt, Status und Unsicherheit
-   dokumentieren; Geschäftsberichte mit Geschäftsjahr und Seite/Abschnitt.
-6. Quellen abgleichen; Überschneidung nicht als Zusammenarbeit ausgeben,
-   Kapitalanteil/Stimmrechte/Kontrolle trennen, historische Status erhalten.
-
-Schreibe ausschließlich work/cluster.md nach uebergabe.md.
-Nutzerthemen priorisieren; Recherchegrenzen und Lücken transparent benennen.
-Keine vollständige Konzernstruktur oder Lieferkette behaupten.
-Keine Markt-/SWOT-Analyse als Ersatz für die Netzwerkprüfung.
-
-## Ausnahme für ausdrücklich beauftragte Modultests
-Bei Modus modultest lies references/modultest.md. Die Delegation nennt
-Testauftrag, Auswahl, Eingaben und Zielpfad. Diese Pfade ersetzen die festen
-input/work/output-Pfade oben. Nicht gewählte Module sind keine Pflicht.
-Die gesamte Netzwerk-/Berichtsmethode gehört zu 2b; sie benötigt weder 2a
-noch 3, 5 oder 6. Im Standardlauf bleiben die üblichen Abhängigkeiten bestehen.
-
-## Übergabe an die HTML-Ausgabe
-Lies references/netzwerk-html.md. Zusätzlich zu den lesbaren Tabellen das
-network-data-JSON nach Schema v1 in work/cluster.md liefern. Es enthält genau
-ein Zielunternehmen, eindeutig typisierte Knoten, belegte Kanten, Filterkategorien,
-Produkt-IDs und Originalquellen mit Geschäftsbericht-Belegstellen.
-Keine Beispiel-/Demo-Daten einsetzen; keine zusätzliche Pflichtdatei schreiben.
-
-Jeder neue Firmenauftrag erhält einen vollständig neu recherchierten Datensatz.
-company/as_of müssen zum Auftrag passen; keine inhaltliche Übernahme aus früheren
-Firmenläufen. Das Schema enthält keine festen Firmen oder Verbindungen.
-
-
-## Vertiefte Technologie- und Kundenrecherche
-Lies references/cluster-quellenkatalog.md zusätzlich zu cluster-recherche.md.
-Prüfe Technologie & Industrie sowie Kunden & Marktzugang in zwei Durchgängen,
-mit Gegenrecherche bei Partnern, Auftraggebern, Projekten und öffentlichen
-Vergabe-/Forschungsportalen. Quellenart, Beschaffungs-/Umsetzungsstatus und
-Abdeckungsmatrix dokumentieren. Neue Beziehungen erst nach Quellenprüfung
-in network-data übernehmen; keine Knoten oder Quoten zur Grafikfüllung erfinden.
+Bei mode=facts-v2 references/faktenphase.md lesen und ausschließlich delegiertes
+cluster-facts.json mit network/actors/relationships/report_log schreiben.
+Die JSON- und Faktenbegrenzung ersetzt Markdown-/Interpretationsanforderungen
+in den Referenzen. Kein edge.interpretation, Gewichtung oder Score.
+Sonst CLAUDE.md, uebergabe.md, defaults.md und briefing-struktur.md lesen;
+work/cluster.md inkl. network-data nach bisherigem Schema schreiben.
+Modultest: delegierte Pfade und Auswahl nach references/modultest.md haben Vorrang;
+2b verlangt keine weiteren Module. Hauptfunktion/focus sind redaktionell, keine Bewertung.
+Keine Markt-/SWOT-Analyse oder eigene finale HTML erstellen.
