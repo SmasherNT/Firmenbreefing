@@ -37,3 +37,14 @@ Kontrolliere Geschäftsbericht-Protokoll, Geschäftsjahr, Veröffentlichung,
 Seite/Abschnitt und tatsächliche Unterstützung der Aussage.
 Gemeinsame Kunden, Partner oder Verbände beweisen keine bilaterale Kooperation.
 Recherchegrenzen dürfen nicht als Nachweis einer fehlenden Beziehung gelten.
+
+## Netzwerkdaten für Schritt 7
+Bei Cluster im Auftrag references/netzwerk-html.md lesen. network-data-JSON
+gegen C-Claims und Originalbelege abgleichen: Knotenidentität/-art, genau ein Ziel,
+Kantenrichtung, Kategorien, Produktzuordnungen, Quoten/Status, Referenzintegrität
+und Quellenlinks/Belegstellen. Kein Produktbezug allein aus einem Firmennamen
+oder ähnlichem Portfolio. Fehler an cluster-analyst zurückgeben; dessen Datei
+nicht selbst ändern. Ausgabeprüfung bleibt Verantwortung des Hauptagenten.
+
+company/as_of und Zielknoten müssen zum aktuellen Auftrag passen. Prüfe auch,
+dass kein alter Firmendatensatz als neues Rechercheergebnis übernommen wurde.

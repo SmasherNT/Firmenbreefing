@@ -32,3 +32,14 @@ Testauftrag, Auswahl, Eingaben und Zielpfad. Diese Pfade ersetzen die festen
 input/work/output-Pfade oben. Nicht gewählte Module sind keine Pflicht.
 Die gesamte Netzwerk-/Berichtsmethode gehört zu 2b; sie benötigt weder 2a
 noch 3, 5 oder 6. Im Standardlauf bleiben die üblichen Abhängigkeiten bestehen.
+
+## Übergabe an die HTML-Ausgabe
+Lies references/netzwerk-html.md. Zusätzlich zu den lesbaren Tabellen das
+network-data-JSON nach Schema v1 in work/cluster.md liefern. Es enthält genau
+ein Zielunternehmen, eindeutig typisierte Knoten, belegte Kanten, Filterkategorien,
+Produkt-IDs und Originalquellen mit Geschäftsbericht-Belegstellen.
+Keine Beispiel-/Demo-Daten einsetzen; keine zusätzliche Pflichtdatei schreiben.
+
+Jeder neue Firmenauftrag erhält einen vollständig neu recherchierten Datensatz.
+company/as_of müssen zum Auftrag passen; keine inhaltliche Übernahme aus früheren
+Firmenläufen. Das Schema enthält keine festen Firmen oder Verbindungen.

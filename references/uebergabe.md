@@ -23,3 +23,7 @@ Bei Geschäftsberichten zusätzlich Geschäftsjahr, Seite/Abschnitt und Bezugs-
 zeitpunkt erfassen; PDF-Seite und gedruckte Seite bei Abweichung unterscheiden.
 Direkte Beziehung, indirekter belegter Pfad und bloße Überschneidung trennen.
 Gemeinsame Knoten-/Kanten-IDs ermöglichen nachvollziehbare Querverweise im HTML.
+
+Für die automatische Netzwerkübernahme in Schritt 7 zusätzlich im Cluster-Modul
+network-data-JSON nach references/netzwerk-html.md liefern. Seine Quellen-/Claim-
+Referenzen müssen mit der lesbaren Recherche und dem Quellenregister übereinstimmen.

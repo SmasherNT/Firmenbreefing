@@ -109,8 +109,9 @@ Alles bleibt in der bestehenden Cluster-Datei; keine neuen Pflichtmodule.
 Hauptagent übernimmt ausschließlich dokumentierte Akteure und Beziehungen
 in eine anklickbare Netzwerkübersicht mit Quellen-Deep-Dives.
 Eigentum, operative Kooperation, Projektteilnahme, Überschneidung und
-historische Beziehungen durch Beschriftung/Linienstil unterscheiden.
-Indirekte Pfade sichtbar kennzeichnen; Quoten nur bei passendem Beziehungstyp.
+historische Beziehungen im angeklickten Detailfeld eindeutig unterscheiden.
+Linien zunächst ohne Beschriftung/Quoten; Zielunternehmen zentral im Netz.
+Indirekte Pfade im Detail erklären; Quoten nur bei passendem Beziehungstyp.
 Kompakte Übersicht, Details aufklappbar; beschriftete Beziehungstabelle als
 zugängliche Alternative und druckbare Darstellung.
 Keine automatischen Zentralitäts-/Abhängigkeitswerte aus einem unvollständigen
@@ -118,3 +119,8 @@ Netz berechnen. Bedeutungen wie Abhängigkeit oder Einfluss sind belegte
 Fakten oder ausdrücklich begründete Interpretationen, keine Grafikdekoration.
 Quellenprüfer kontrolliert Identitäten, Teilpfade, Quotenarten, Zeitstatus,
 Geschäftsbericht-Belegstellen und die Trennung von Überschneidung/Kooperation.
+
+## Strukturierte Netzwerkdaten
+Liefere zusätzlich network-data in derselben Cluster-Datei nach
+references/netzwerk-html.md. Schritt 7 nutzt damit die wiederverwendbare
+interaktive Komponente inklusive Knotenfarben, Filtern und Originalquellen.

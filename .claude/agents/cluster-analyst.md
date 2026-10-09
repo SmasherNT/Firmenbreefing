@@ -25,3 +25,14 @@ Bei Modus modultest lies references/modultest.md. Die Delegation nennt
 Testauftrag, Auswahl, Eingaben und Zielpfad. Diese Pfade ersetzen die festen
 input/work/output-Pfade oben. Nicht gewählte Module sind keine Pflicht.
 Im Standardlauf bleiben die obigen Regeln unverändert.
+
+## Grafikfähige Übergabe für Schritt 7
+Lies references/netzwerk-html.md und ergänze in deiner Cluster-Datei den
+Abschnitt network-data mit JSON nach Schema v1. Knotenarten, Filterkategorien,
+belegte Produktzuordnungen und direkte Originalquellen vollständig zuordnen.
+Nur tatsächlich belegte Akteure/Beziehungen aus deinen C-Claims übernehmen.
+Hauptagent/Schritt 7 rendert die geprüfte Übergabe mit der bereitgestellten Vorlage.
+
+Bei jedem neuen Firmenauftrag ein vollständig neues Netzwerk recherchieren und
+neues network-data mit company/as_of erzeugen. Keine alten Firmen, Beziehungen
+oder Quellen übernehmen. Nur das Darstellungsformat wird wiederverwendet.

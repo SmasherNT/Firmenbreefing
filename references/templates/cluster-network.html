@@ -1,0 +1,103 @@
+<!-- Schritt 7 ersetzt den JSON-Datenplatzhalter durch neue geprüfte Firmendaten. -->
+<section id="briefing-company-network" aria-label="Unternehmensnetzwerk">
+  <h3>Unternehmensnetzwerk</h3>
+  <div class="cn-filters" aria-label="Beziehungen filtern"></div>
+  <label class="cn-product-label">Produktbezug <select class="cn-product"><option value="all">Alle Produkte</option></select></label>
+  <div class="cn-plot"><svg class="cn-svg" role="img" aria-label="Unternehmensnetzwerk mit dem Zielunternehmen im Zentrum"></svg><div class="cn-keyboard"></div></div>
+  <div class="cn-legend" aria-label="Knotenfarben"></div>
+  <div class="cn-count" aria-live="polite"></div>
+  <div class="cn-details" hidden aria-live="polite"><div class="cn-detail-head"><h4></h4><button type="button" class="cn-close">Schließen</button></div><div class="cn-detail-content"></div></div>
+  <p class="cn-error" hidden role="alert"></p>
+  <details class="cn-table"><summary>Beziehungen und Originalquellen</summary><div class="cn-table-wrap"><table><thead><tr><th>Von → Zu</th><th>Beziehung</th><th>Status</th><th>Originalquellen</th></tr></thead><tbody></tbody></table></div></details>
+  <script type="application/json" class="cn-data">__CLUSTER_NETWORK_JSON__</script>
+</section>
+<style>
+#briefing-company-network{--cn-fg:light-dark(#20252d,#edf0f5);--cn-bg:light-dark(#fff,#15181e);--cn-muted:light-dark(#636b77,#aab3c1);--cn-line:light-dark(#bcc3cd,#626c7b);--cn-ring:light-dark(#2563eb,#86b0ff);--cn-target:light-dark(#273447,#e0e8f4);--cn-target-text:light-dark(#fff,#182335);color-scheme:light dark;color:var(--cn-fg);width:100%}
+#briefing-company-network .cn-filters,#briefing-company-network .cn-legend{display:flex;flex-wrap:wrap;gap:8px 16px}
+#briefing-company-network .cn-filters label,#briefing-company-network .cn-legend span{display:inline-flex;gap:6px;align-items:center}
+#briefing-company-network .cn-product-label{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0}
+#briefing-company-network button,#briefing-company-network select{font:inherit;color:var(--cn-fg);background:var(--cn-bg);border:1px solid var(--cn-line);border-radius:6px;padding:6px 9px}
+#briefing-company-network .cn-dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}
+#briefing-company-network .cn-plot{position:relative;width:100%}
+#briefing-company-network .cn-svg{display:block;width:100%}
+#briefing-company-network .cn-keyboard{position:absolute;inset:0;pointer-events:none}
+#briefing-company-network .cn-key{position:absolute;width:32px;height:32px;transform:translate(-50%,-50%);border:0;background:transparent;padding:0;pointer-events:none}
+#briefing-company-network .cn-key:focus-visible{outline:2px solid var(--cn-ring);background:var(--cn-bg)}
+#briefing-company-network .cn-line{stroke:var(--cn-line);stroke-width:1.5;fill:none}
+#briefing-company-network .cn-line-selected{stroke:var(--cn-fg);stroke-width:2.5}
+#briefing-company-network .cn-hit{stroke:transparent;stroke-width:24;fill:none;pointer-events:stroke;cursor:pointer}
+#briefing-company-network .cn-svg text{font:12px sans-serif;fill:var(--cn-fg)}
+#briefing-company-network .cn-node-label{paint-order:stroke;stroke:var(--cn-bg);stroke-width:5px;stroke-linejoin:round}
+#briefing-company-network .cn-count{color:var(--cn-muted);margin:10px 0;font-size:12px}
+#briefing-company-network .cn-detail-head{display:flex;gap:12px;align-items:center;justify-content:space-between}
+#briefing-company-network .cn-detail-head h4{margin:0}
+#briefing-company-network .cn-details{border-top:1px solid var(--cn-line);padding:14px 0}
+#briefing-company-network .cn-details p{margin:8px 0;overflow-wrap:anywhere}
+#briefing-company-network a{color:var(--cn-ring);overflow-wrap:anywhere}
+#briefing-company-network .cn-table-wrap{overflow-x:auto}
+#briefing-company-network table{width:100%;border-collapse:collapse;font-size:13px}
+#briefing-company-network th,#briefing-company-network td{padding:8px;text-align:left;vertical-align:top;border-bottom:1px solid var(--cn-line);overflow-wrap:anywhere}
+#briefing-company-network .cn-error{color:var(--cn-fg)}
+@media(pointer:coarse){#briefing-company-network .cn-hit{stroke-width:36}#briefing-company-network button,#briefing-company-network select{min-height:44px}}
+@media print{#briefing-company-network .cn-filters,#briefing-company-network .cn-product-label,#briefing-company-network .cn-close,#briefing-company-network .cn-keyboard{display:none}#briefing-company-network .cn-table{display:block}#briefing-company-network .cn-table-wrap{overflow:visible}#briefing-company-network .cn-table summary{display:none}#briefing-company-network .cn-table>*:not(summary){display:block!important}#briefing-company-network .cn-svg{break-inside:avoid}}
+</style>
+<script>
+(()=>{
+ const root=document.getElementById('briefing-company-network');
+ if(!root)return;
+ const kinds={target:['Zielunternehmen','#273447','#e0e8f4'],partner:['Partner','#2563eb','#83b1ff'],customer:['Kunde','#198761','#63d4a6'],jv:['Joint Venture','#8550b8','#c6a0fb'],owner:['Eigentümer','#bd6a17','#f2b46c'],supplier:['Zulieferer','#bf405a','#ff92aa'],subsidiary:['Tochtergesellschaft','#127d90','#71d3e7'],project:['Projektpartner','#8b7920','#dace77'],person:['Mandatsträger','#b14ea1','#efa1dd'],institution:['Institution','#526580','#abc0dd'],other:['Weitere Akteure','#686b75','#b7bbc8']};
+ const categories={partner:'Partner',customer:'Kunden',jv:'Joint Ventures',owner:'Eigentum',supplier:'Zulieferer',subsidiary:'Tochtergesellschaften',project:'Projekte',other:'Weitere Beziehungen'};
+ const svg=root.querySelector('.cn-svg'),plot=root.querySelector('.cn-plot'),keyboard=root.querySelector('.cn-keyboard'),detail=root.querySelector('.cn-details');
+ const ns='http://www.w3.org/2000/svg';
+ function dom(tag,parent,text){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(parent)parent.appendChild(e);return e;}
+ function mark(tag,attrs,parent){const e=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,String(v)));parent.appendChild(e);return e;}
+ function safeURL(value){const u=new URL(value);if(!['http:','https:'].includes(u.protocol))throw Error('Unzulässiger Quellenlink');return u.href;}
+ function color(kind){const c=kinds[kind];return 'light-dark('+c[1]+','+c[2]+')';}
+ try{
+  const data=JSON.parse(root.querySelector('.cn-data').textContent);
+  if(data.schema_version!==1||typeof data.company!=='string'||!data.company.trim()||!/^\d{4}-\d{2}-\d{2}$/.test(data.as_of)||![data.nodes,data.edges,data.sources,data.products].every(Array.isArray))throw Error('Ungültiges Netzwerkformat oder Firmenbezug');
+  function index(items){const m=new Map();items.forEach(x=>{if(!x.id||m.has(x.id))throw Error('Fehlende oder doppelte ID');m.set(x.id,x);});return m;}
+  const nodes=index(data.nodes),sources=index(data.sources),products=index(data.products),edgeIndex=index(data.edges);
+  if(!nodes.has(data.target_id)||data.nodes.filter(n=>n.kind==='target').length!==1||nodes.get(data.target_id).kind!=='target')throw Error('Zielunternehmen fehlt');
+  data.nodes.forEach(n=>{if(!kinds[n.kind]||typeof n.label!=='string'||!n.label.trim())throw Error('Ungültiger Knoten');});
+  data.products.forEach(p=>{if(typeof p.label!=='string')throw Error('Ungültiges Produkt');});
+  data.sources.forEach(s=>{if(!s.title||!s.name)throw Error('Quellenmetadaten fehlen');safeURL(s.url);});
+  data.edges.forEach(e=>{if(!nodes.has(e.from)||!nodes.has(e.to)||e.from===e.to||!Array.isArray(e.categories)||!e.categories.length||e.categories.some(c=>!categories[c])||!Array.isArray(e.product_ids)||e.product_ids.some(p=>!products.has(p))||!Array.isArray(e.source_ids)||!e.source_ids.length||e.source_ids.some(s=>!sources.has(s))||!Array.isArray(e.claim_ids)||!e.claim_ids.length||!e.type||!e.summary||!e.status||!e.as_of)throw Error('Unvollständige Beziehung oder Belege');});
+  let selected=null;
+  const available=[...new Set(data.edges.flatMap(e=>e.categories))];
+  available.forEach(c=>{const label=dom('label',root.querySelector('.cn-filters'));const input=dom('input',label);input.type='checkbox';input.value=c;input.checked=true;dom('span',label,categories[c]);input.addEventListener('change',draw);});
+  data.products.forEach(p=>{const option=dom('option',root.querySelector('.cn-product'),p.label);option.value=p.id;});
+  root.querySelector('.cn-product-label').hidden=!data.products.length;
+  [...new Set(data.nodes.map(n=>n.kind))].forEach(k=>{const label=dom('span',root.querySelector('.cn-legend'));const dot=dom('i',label);dot.className='cn-dot';dot.style.background=color(k);dom('span',label,kinds[k][0]);});
+  function sourceList(ids,parent){ids.forEach(id=>{const s=sources.get(id);const p=dom('p',parent);const a=dom('a',p,s.name+' · '+s.title);a.href=safeURL(s.url);a.target='_blank';a.rel='noopener noreferrer';dom('span',p,' · '+(s.published_date||'o. D.')+(s.report_year?' · Geschäftsjahr '+s.report_year:'')+(s.page?' · Seite '+s.page:'')+(s.section?' · '+s.section:'')+(s.accessed_date?' · Abruf '+s.accessed_date:''));});}
+  function selectEdge(id){selected=id;const e=edgeIndex.get(id);detail.hidden=false;detail.querySelector('h4').textContent=nodes.get(e.from).label+' → '+nodes.get(e.to).label;const body=detail.querySelector('.cn-detail-content');body.replaceChildren();dom('p',body,e.type+' · '+e.status+' · Stand '+e.as_of);dom('p',body,e.summary);if(e.interpretation)dom('p',body,'Analysteninterpretation: '+e.interpretation);if(e.capital_share)dom('p',body,'Kapitalanteil: '+e.capital_share);if(e.voting_share)dom('p',body,'Stimmrechte: '+e.voting_share);if(e.control)dom('p',body,'Kontrolle: '+e.control);if(e.product_ids.length)dom('p',body,'Produktbezug: '+e.product_ids.map(p=>products.get(p).label).join(', '));if(e.uncertainty)dom('p',body,'Unsicherheit: '+e.uncertainty);dom('p',body,'Claims: '+e.claim_ids.join(', '));sourceList(e.source_ids,body);draw();}
+  const tableBody=root.querySelector('tbody');
+  data.edges.forEach(e=>{const tr=dom('tr',tableBody);dom('td',tr,nodes.get(e.from).label+' → '+nodes.get(e.to).label);dom('td',tr,e.type+' · '+e.summary+' · '+e.claim_ids.join(', '));dom('td',tr,e.status+' · '+e.as_of);sourceList(e.source_ids,dom('td',tr));});
+  function draw(){
+   const w=plot.clientWidth||700,narrow=w<500,cx=w/2;
+   const enabled=new Set([...root.querySelectorAll('.cn-filters input:checked')].map(x=>x.value));const product=root.querySelector('.cn-product').value;
+   const visible=data.edges.filter(e=>e.categories.some(c=>enabled.has(c))&&(product==='all'||e.product_ids.includes(product)));
+   const visibleIds=new Set([data.target_id,...visible.flatMap(e=>[e.from,e.to])]);
+   if(selected&&!visible.some(e=>e.id===selected)){selected=null;detail.hidden=true;}
+   const around=data.nodes.filter(n=>n.id!==data.target_id),rings=Math.max(1,Math.ceil(around.length/(narrow?8:12))),h=(narrow?650:520)+(rings-1)*180,cy=h/2;
+   svg.setAttribute('viewBox','0 0 '+w+' '+h);svg.style.height=h+'px';svg.replaceChildren();keyboard.replaceChildren();mark('title',{},svg).textContent='Zielunternehmen im Zentrum. Verbindungen anklicken für Originalquellen und Details.';
+   const positions=new Map([[data.target_id,{x:cx,y:cy}]]),maxRadiusX=(w-100)/2,maxRadiusY=h/2-80,capacity=narrow?8:12;
+   around.forEach((n,i)=>{const ring=Math.floor(i/capacity),count=Math.min(capacity,around.length-ring*capacity),angle=-Math.PI/2+(i%capacity)*2*Math.PI/count+ring*.15,scale=rings===1?1:.55+.45*ring/(rings-1);positions.set(n.id,{x:cx+maxRadiusX*scale*Math.cos(angle),y:cy+maxRadiusY*scale*Math.sin(angle)});});
+   const lines=mark('g',{},svg),hits=mark('g',{},svg),nlayer=mark('g',{},svg);
+   visible.forEach(e=>{const a=positions.get(e.from),b=positions.get(e.to),dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1,ra=e.from===data.target_id?44:25,rb=e.to===data.target_id?44:25,x1=a.x+dx/len*ra,y1=a.y+dy/len*ra,x2=b.x-dx/len*rb,y2=b.y-dy/len*rb,mx=(x1+x2)/2,my=(y1+y2)/2,cross=e.from!==data.target_id&&e.to!==data.target_id;
+    const peers=visible.filter(p=>(p.from===e.from&&p.to===e.to)||(p.from===e.to&&p.to===e.from)),offset=(peers.findIndex(p=>p.id===e.id)-(peers.length-1)/2)*24;
+    const orientation=e.from<e.to?1:-1;
+    const qx=mx+(cross?(mx-cx)*.18:0)-dy/len*offset*orientation,qy=my+(cross?(my-cy)*.18:0)+dx/len*offset*orientation,d='M '+x1+' '+y1+' Q '+qx+' '+qy+' '+x2+' '+y2;
+    mark('path',{d,class:'cn-line'+(selected===e.id?' cn-line-selected':''),'stroke-dasharray':e.historical?'5 4':e.overlap?'2 4':'none'},lines);
+    const hit=mark('path',{d,class:'cn-hit','aria-hidden':'true'},hits);hit.addEventListener('click',()=>selectEdge(e.id));
+    const button=dom('button',keyboard);button.type='button';button.className='cn-key';button.style.left=(x1+2*qx+x2)/4+'px';button.style.top=(y1+2*qy+y2)/4+'px';button.setAttribute('aria-label','Verbindung '+nodes.get(e.from).label+' und '+nodes.get(e.to).label+' öffnen');button.addEventListener('click',()=>selectEdge(e.id));
+   });
+   function wrap(label){const words=label.split(/\s+/),out=[];let line='';words.forEach(word=>{if((line+' '+word).trim().length>15&&line){out.push(line);line=word;}else line=(line+' '+word).trim();});if(line)out.push(line);return out;}
+   data.nodes.filter(n=>visibleIds.has(n.id)).forEach(n=>{const p=positions.get(n.id),isTarget=n.id===data.target_id,r=isTarget?44:25,g=mark('g',{'data-node-id':n.id},nlayer);mark('circle',{cx:p.x,cy:p.y,r,fill:isTarget?'var(--cn-target)':color(n.kind),'fill-opacity':isTarget?1:.18,stroke:'var(--cn-line)','stroke-width':1},g);if(!isTarget)mark('circle',{cx:p.x,cy:p.y,r:6,fill:color(n.kind)},g);const labels=wrap(n.label);labels.forEach((line,i)=>{const t=mark('text',{x:p.x,y:isTarget?p.y+(i-(labels.length-1)/2)*14:p.y+r+16+i*14,'text-anchor':'middle',class:isTarget?'':'cn-node-label',style:isTarget?'fill:var(--cn-target-text)':''},g);t.textContent=line;});});
+   root.querySelector('.cn-count').textContent=(visibleIds.size-1)+' Akteure · '+visible.length+' Verbindungen'+(product!=='all'?' · Nur belegter Produktbezug':'');
+  }
+  root.querySelector('.cn-close').addEventListener('click',()=>{selected=null;detail.hidden=true;draw();});root.querySelector('.cn-product').addEventListener('change',draw);new ResizeObserver(draw).observe(plot);draw();
+  window.addEventListener('beforeprint',()=>{root.querySelector('.cn-table').open=true;});
+ }catch(error){const warning=root.querySelector('.cn-error');warning.hidden=false;warning.textContent='Netzwerkdaten sind unvollständig oder ungültig. Bitte die Cluster-Übergabe prüfen.';console.error('Cluster network:',error.message);}
+})();
+</script>

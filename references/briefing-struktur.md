@@ -32,11 +32,19 @@ Keine Prüfung als bestanden melden, die nicht tatsächlich durchgeführt wurde.
 ## Cluster-Netzwerk in der HTML
 Im Abschnitt Struktur/Partnerschaften bzw. einem eigenständigen 2b-Modultest
 kompakte anklickbare Netzwerkübersicht nach references/cluster-recherche.md
-zeigen: direkte Beziehungen und belegte Querverbindungen, keine Beschränkung
-auf JV. Beziehungstypen, historische Status, Überschneidungen und indirekte
-Pfade klar trennen. Zugehörige Deep-Dives zeigen Rolle/Gegenstand, Quotenarten,
+zeigen: Zielunternehmen in der Mitte, umliegende Knoten als Netz und belegte
+Querverbindungen zwischen ihnen. Jede Knotenart hat eine eigene Farbe.
+Linien bleiben unbeschriftet; Informationen erst beim Anklicken anzeigen.
+Kategorie- und Produktfilter nach references/netzwerk-html.md anbieten.
+Beziehungstypen, historische Status, Überschneidungen und indirekte Pfade
+im Detailfeld klar trennen. Zugehörige Deep-Dives zeigen Rolle/Gegenstand, Quotenarten,
 Status/Bezugszeitpunkt, Claim-ID und Quellen inklusive Geschäftsbericht-Seiten.
 Beziehungstabelle als zugängliche und druckbare Alternative bereitstellen.
 Geschäftsbericht-Abdeckung, Recherchegrenzen und wesentliche Lücken nennen.
 Abnahme ergänzt Netzwerk-Konsistenz, Bericht-Belegstellen und Querverbindungs-
 prüfung; nicht durchgeführte Kontrollen nicht als bestanden melden.
+
+Die Netzwerkkomponente aus references/templates/cluster-network.html lokal
+mit geprüften Cluster-Daten einbetten. Originalquellen direkt im Verbindungs-
+detail und im Quellenregister verlinken. Abnahme ergänzt Filter, Auswahl,
+Knotenfarben, zentrale Zielposition und Übereinstimmung von JSON/Claims/Quellen.
