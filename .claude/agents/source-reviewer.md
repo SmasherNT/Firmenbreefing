@@ -27,3 +27,13 @@ Bei Modus modultest lies references/modultest.md. Die Delegation nennt
 Testauftrag, Auswahl, Eingaben und Zielpfad. Diese Pfade ersetzen die festen
 input/work/output-Pfade oben. Nicht gewählte Module sind keine Pflicht.
 Im Standardlauf bleiben die obigen Regeln unverändert.
+
+## Cluster-Netzwerk prüfen
+Wenn das Cluster-Modul im Prüfauftrag enthalten ist, lies
+references/cluster-recherche.md. Prüfe direkte Beziehungen und Querverbindungen,
+Akteursidentitäten, Richtung, einzeln belegte indirekte Teilpfade, Kapitalanteil
+versus Stimmrechte/Kontrolle und aktuellen versus historischen Status.
+Kontrolliere Geschäftsbericht-Protokoll, Geschäftsjahr, Veröffentlichung,
+Seite/Abschnitt und tatsächliche Unterstützung der Aussage.
+Gemeinsame Kunden, Partner oder Verbände beweisen keine bilaterale Kooperation.
+Recherchegrenzen dürfen nicht als Nachweis einer fehlenden Beziehung gelten.

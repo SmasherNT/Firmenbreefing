@@ -16,3 +16,10 @@ Bei Interpretationen nachvollziehbar von Fakten zur Einordnung argumentieren.
 Offene Datenlücken, Widersprüche und ihre Auswirkung nennen.
 Rückgabe an Hauptagent: Pfad, Bearbeitungsstatus, Kernergebnisse, offene Punkte.
 Kein vollständiges Ergebnis behaupten, wenn Pflichtteile fehlen.
+
+## Ergänzung für Cluster-Claims
+Netzwerkdaten und Rechercheabdeckung folgen references/cluster-recherche.md.
+Bei Geschäftsberichten zusätzlich Geschäftsjahr, Seite/Abschnitt und Bezugs-
+zeitpunkt erfassen; PDF-Seite und gedruckte Seite bei Abweichung unterscheiden.
+Direkte Beziehung, indirekter belegter Pfad und bloße Überschneidung trennen.
+Gemeinsame Knoten-/Kanten-IDs ermöglichen nachvollziehbare Querverweise im HTML.

@@ -28,3 +28,15 @@ Reihenfolge, Reviews, geschlossene Fehler, Quellenlinks, interne HTML-Links,
 Mobil-/Druckansicht und Dateisicherung: bestanden/offen/nicht geprüft.
 Konfigurationstest allein ist kein durchgeführter Agentenlauf.
 Keine Prüfung als bestanden melden, die nicht tatsächlich durchgeführt wurde.
+
+## Cluster-Netzwerk in der HTML
+Im Abschnitt Struktur/Partnerschaften bzw. einem eigenständigen 2b-Modultest
+kompakte anklickbare Netzwerkübersicht nach references/cluster-recherche.md
+zeigen: direkte Beziehungen und belegte Querverbindungen, keine Beschränkung
+auf JV. Beziehungstypen, historische Status, Überschneidungen und indirekte
+Pfade klar trennen. Zugehörige Deep-Dives zeigen Rolle/Gegenstand, Quotenarten,
+Status/Bezugszeitpunkt, Claim-ID und Quellen inklusive Geschäftsbericht-Seiten.
+Beziehungstabelle als zugängliche und druckbare Alternative bereitstellen.
+Geschäftsbericht-Abdeckung, Recherchegrenzen und wesentliche Lücken nennen.
+Abnahme ergänzt Netzwerk-Konsistenz, Bericht-Belegstellen und Querverbindungs-
+prüfung; nicht durchgeführte Kontrollen nicht als bestanden melden.

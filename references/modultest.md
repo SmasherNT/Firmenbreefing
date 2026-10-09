@@ -90,3 +90,10 @@ Ein erfolgreicher tatsächlicher Lauf bleibt nachzuweisen:
 - Fortsetzung 4 -> 7 benötigt die benannten vorhandenen Ergebnisse.
 - 7 ohne 4 ist sichtbar ungeprüft; offene Fehler blockieren.
 - Normale vollständige Briefings verwenden weiter company-briefing.
+
+## Vertiefte Cluster-Analyse in 2b
+2b umfasst auch die Geschäftsbericht- und Querverbindungsprüfung gemäß
+references/cluster-recherche.md. Sie bleibt innerhalb von work/cluster.md
+im jeweiligen Testverzeichnis und aktiviert keine weiteren Module.
+Ein Lauf 2b -> 4 -> 7 prüft und visualisiert dieses Unternehmensnetzwerk ohne
+Portfolio-, Markt- oder SWOT-Pflicht. Bericht-Zugriffslücken ehrlich dokumentieren.

@@ -28,3 +28,12 @@ Im Standardlauf bleiben die obigen Regeln unverändert.
 Im Modultest nur ausgewählte Kapitel rendern. Nach fehlerfreiem Basis-Review
 ist kein SWOT-/Schluss-Review nötig. Ohne Basis-Review nur sichtbar ungeprüfter
 Entwurf; bekannte wesentliche Fehler blockieren jede HTML-Ausgabe.
+
+## Unternehmensnetzwerk darstellen
+Wenn Cluster beauftragt ist, lies references/cluster-recherche.md und übernimm
+seine geprüften Knoten/Kanten und Querverbindungen in eine kompakte anklickbare
+Netzwerkübersicht. Beziehungstyp, Richtung, Status und indirekte Pfade klar
+beschriften; Details und Bericht-Belegstellen aufklappbar, mit Quellenlinks.
+Keine neuen Beziehungen beim Zeichnen ableiten. Beschriftete Beziehungstabelle
+als zugängliche und druckbare Alternative anbieten. Geschäftsbericht-Abdeckung
+und wesentliche öffentliche Lücken sichtbar halten. Gilt auch für 2b-Modultests.

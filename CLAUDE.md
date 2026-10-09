@@ -40,3 +40,12 @@ Pfad-/Abhängigkeitsausnahmen für alle beteiligten Rollen und Skills.
 module-contractor plant; der Hauptagent führt die gewählten Schritte aus.
 Erlaube insbesondere 2a und/oder 2b und/oder 3 -> 4 -> 7 ohne 5/6.
 Quellenqualität und transparente Prüfstatus bleiben verbindlich.
+
+## Unternehmensnetzwerk und Geschäftsberichte
+Cluster-Analysen folgen verbindlich references/cluster-recherche.md.
+Neben direkten Beziehungen Querverbindungen zwischen relevanten Akteuren
+prüfen, auch außerhalb von Joint Ventures. Geschäftsberichte des Zielunternehmens
+und relevanter verbundener Akteure ausdrücklich suchen und analysieren.
+Eigentum/Kontrolle, operative Beziehungen, Projekte, öffentliche berufliche
+Mandate, Überschneidungen und Historie getrennt belegen und darstellen.
+Das gilt auch für einzelne 2b-Modultests; es erzeugt keine weiteren Pflichtmodule.
