@@ -1,19 +1,21 @@
 ---
 name: swot-analysis
-description: Leitet eine belegte SWOT aus geprüften Unternehmens- und Marktgrundlagen ab.
+description: Leite eine konkrete SWOT aus geprüften Unternehmens-/Marktfakten und aktueller Positionierung ab. Keine eigene Faktenrecherche.
 ---
 
-Lies input/auftrag.md, CLAUDE.md, references/uebergabe.md,
-work/portfolio.md, work/cluster.md, work/markt.md, work/kontext.md und work/review-basis.md.
-Beginne erst, wenn Pflichtmodule vollständig oder akzeptierte Lücken transparent
-markiert und keine wesentlichen Fehler der Faktenbasis offen sind.
-Strengths/Weaknesses: bestehende interne Vorteile/Grenzen.
-Opportunities/Threats: externe Chancen/Risiken.
-Maximal 3 Punkte je Quadrant; weniger, wenn Evidenz fehlt.
-Je S-Claim: konkrete Aussage, Kategorie, P-/C-/M-/T-/H-Faktenbasis,
-begründete Interpretation, Belege und Unsicherheit.
-Keine Datenlücke als betriebliche Schwäche ausgeben.
-Keine Produkteigenschaft ohne begründeten Vorteil als Stärke auflisten.
-Schreibe work/swot.md nach dem Übergabeschema.
-Zusätzliche wesentliche Fakten müssen im abschließenden Review geprüft werden.
-Lies references/defaults.md und references/briefing-struktur.md. Richte die SWOT an den Nutzerthemen aus.
+Strengths/Weaknesses als bestehende interne Vorteile/Grenzen behandeln;
+Opportunities/Threats als externe Chancen/Risiken. Maximal drei Punkte je Quadrant.
+Keine Datenlücke als Schwäche; kein Produktmerkmal ohne begründeten Vorteil als Stärke.
+Je S-Claim konkrete Aussage, Abhängigkeiten, nachvollziehbare Ableitung und Unsicherheit.
+Keine generischen Füllpunkte, erfundenen Marktgrößen oder neuen Fakten.
+Bei mode=interpret-v2 Auftrag/Kontext und references/interpretationsphase.md
+an der Repositorywurzel lesen. Begründung normalerweise 2–3 Sätze;
+gemeinsame Grenzen einmal unter shared_limitations, keine Faktenkopien je Punkt.
+Nur delegiertes swot.json schreiben. Aktuelle A-Fakten und ggf. bereitgestellte
+I-Claims verwenden; pending_checks und unbewertete Matrix-Lücken sind keine SWOT-Basis.
+Bei fehlenden entscheidenden Daten konkrete research_requests statt eigener Websuche.
+input_fingerprint kopieren. Nicht beauftragte Themen nicht nachträglich erweitern.
+Legacy: CLAUDE.md, uebergabe.md, defaults.md, briefing-struktur.md und
+beauftragte Fakten-/Basis-Reviewdateien lesen. Erst ohne offene wesentliche
+Fehler starten; work/swot.md nach bisherigem Schema schreiben.
+Neue erforderliche Fakten an Faktenrolle zurückgeben und prüfen lassen.

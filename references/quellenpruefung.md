@@ -97,3 +97,21 @@ Dokumentiere Stichprobengruppen/Auswahl und Erweiterungen, Quellenabrufgruppen,
 wiederverwendete Prüfergebnisse und offene wesentliche Fehler.
 Datenlücken und nicht geprüfte Hintergrunddetails sind keine bestätigten Fakten.
 Keine finale Freigabe mit offenen wesentlichen Fehlern oder ungeprüften A-Claims.
+
+## Maschinenlesbares Review im v2-Lauf
+facts-v2/interpret-v2 verwenden einen kompakten JSON-Review-Entwurf mit
+schema_version=1, run_id, company, as_of, phase=basis/final,
+status=freigegeben/teilweise/blockiert, material_errors (Liste), claims (Liste).
+Je Claim id, depth=A/B und expliziter status=geprüft/übernommen/
+nicht einzeln geprüft/Korrektur/offen. Tatsächlichen Prüfumfang, Quellenabrufe,
+Belegstellen oder Verweis auf vorherigen Befund und Stichproben dokumentieren.
+Nur Fehler mit reason/action/owner ausführlich. Kein mechanischer Erfolg als
+Inhaltsprüfung zählen. Jede finale I-/S-Ableitung benötigt Inhaltsprüfung A.
+Hauptagent ergänzt mit scripts/stamp-review.py die Fingerprints aus
+facts-validation.json (basis) oder interpretation-validation.json (final).
+Das Skript bewahrt Entscheidungen; es prüft Identität/Referenzen und blockiert
+fehlende Pflichtprüfungen, kann aber keine Wahrheit oder Ableitung freigeben.
+Ausgabe review-basis.md / review-final.md mit genau einem JSON-Codeblock;
+reines JSON zulässig. Bei Legacy-Modus bisherigen Bericht beibehalten.
+Details und lokale Aufrufe in interpretationsphase.md; Fingerprints nicht
+manuell erfinden oder im Agentenkontext als lange Erfolgsliste wiederholen.

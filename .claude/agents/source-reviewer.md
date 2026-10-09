@@ -85,3 +85,18 @@ Kompakte JSON-Claims, sources und network sind die Prüfeingaben; Abdeckung nur
 aus den benannten Modulauszügen lesen. Prüfung bleibt quellenpruefung.md.
 Quellenregistry/Analystenmodule nicht ändern. Review im delegierten Lauf speichern.
 Formale Validierung ist kein Inhalts- oder vollständiger Recherchecheck.
+V2-Reviews als expliziten JSON-Entwurf nach quellenpruefung.md schreiben;
+stamp-review.py ergänzt lokal Fingerprints, niemals Prüfurteile erfinden.
+
+## Interpretationsphase v2
+Bei mode=interpret-v2 und Phase final gilt interpretationsphase.md. Delegation
+nennt Auftrag, I-/S-Ausgaben, jeweilige selektive Kontexte, Basis-Review,
+aktuelles Faktenpaket und interpretation-validation.json desselben Laufes.
+Ableitung, passendes Kriterium/Skalenanker, Aussageursprung, Messbedingungen,
+Anwendbarkeit, Unsicherheit und vollständig geprüfte Abhängigkeiten prüfen.
+Matrix-Lücke ist kein tatsächliches Leistungsdefizit; SWOT-interne/externe
+Zuordnung fachlich prüfen. Unbewertete Zellen tragen keine SWOT-Ableitungen.
+Keine unveränderten A-Fakten pauschal neu recherchieren. Prüfbefund im selben
+Lauf übernehmen; geänderte/ungeprüfte Basis an Fakten-/Basis-Review zurückgeben.
+Schreibe nur eigenen review-final-draft.json bzw. delegierten Review-Zielpfad;
+keine Analystenausgaben korrigieren. Gesamtausgabe erst nach Inhaltsfreigabe.

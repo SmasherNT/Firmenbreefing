@@ -55,6 +55,8 @@ class FactsTests(unittest.TestCase):
     def test_valid_packet_and_fingerprint_changes(self):
         result = self.result()
         self.assertEqual(result["errors"], [])
+        self.assertEqual(result["run_id"], self.manifest["run_id"])
+        self.assertEqual(result["phase"], "basis")
         changed = copy.deepcopy(self.module)
         changed["claims"][0]["statement"] += " changed"
         self.assertNotEqual(result["fingerprints"], self.result(changed)["fingerprints"])
@@ -137,6 +139,7 @@ class FactsTests(unittest.TestCase):
                              "edges": [{"id": "e1", "from": "n1", "to": "n2",
                                         "source_ids": [self.source["id"]], "claim_ids": ["C001"], "product_ids": []}]}
         self.assertEqual(self.result(module, manifest)["errors"], [])
+        self.assertEqual(self.result(module, manifest)["required_full_review_ids"], ["C001"])
         module["network"]["edges"][0]["interpretation"] = "Strategic advantage"
         self.assertTrue(self.result(module, manifest)["errors"])
 

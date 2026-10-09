@@ -228,7 +228,8 @@ def build(manifest, modules, plan=None):
                 refs = row.get("claim_ids")
                 if not isinstance(refs, list) or not refs or any(not isinstance(c, str) or c not in ids for c in refs):
                     errors.append("market: observation requires known claim_ids")
-    packet = {"company": manifest.get("company"), "as_of": manifest.get("as_of"),
+    packet = {"schema_version": 1, "mode": "facts-v2", "run_id": manifest.get("run_id"),
+              "company": manifest.get("company"), "as_of": manifest.get("as_of"),
               "claims": claims, "sources": sorted(sources.values(), key=lambda s: s["id"]),
               "module_context": [{"role": d.get("role"), "scope": d.get("scope"),
                                   "status": d.get("status"),
@@ -239,7 +240,12 @@ def build(manifest, modules, plan=None):
         packet["network"] = networks[0]
     check = review_validator()(packet)
     errors.extend(check["errors"])
-    return {"errors": errors, "fingerprints": check.get("fingerprints", {}),
+    required = sorted({c for n in networks for e in n.get("edges", []) if isinstance(e, dict)
+                       for c in e.get("claim_ids", []) if isinstance(c, str)})
+    return {"run_id": manifest.get("run_id"), "company": manifest.get("company"),
+            "as_of": manifest.get("as_of"), "phase": "basis",
+            "required_full_review_ids": required,
+            "errors": errors, "fingerprints": check.get("fingerprints", {}),
             "module_status": {d.get("role"): d.get("status") for d in modules if isinstance(d, dict) and isinstance(d.get("role"), str)},
             "notice": "Formal validation only; factual accuracy, coverage and source independence not verified."}, packet
 

@@ -92,6 +92,10 @@ Es ersetzt weder Inhaltsprüfung noch Cache. Vorhandene Quellen/Belegstellen
 gezielt wiederverwenden; vollständiger Dokumentcache folgt später.
 source-reviewer Phase basis erhält Auftrag, Paket und nur nötige Abdeckung/Netzwerk.
 Interpretation darf erst nach tatsächlicher Freigabe starten.
+Für anschließende interpret-v2-Läufe maschinenlesbares Basis-Review nach
+quellenpruefung.md schreiben. facts-validation.json enthält Laufidentität,
+phase=basis und required_full_review_ids für eingezeichnete Netzwerkkanten.
+Reviewer entscheidet inhaltlich; stamp-review.py übernimmt nur Fingerprints.
 Nach zwei erfolglosen Korrekturrunden wesentlicher Fehler blockieren.
 Abnahme unterscheidet formale Prüfung, Inhaltsprüfung, Abdeckung und nicht geprüft.
 

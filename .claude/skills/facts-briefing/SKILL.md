@@ -22,9 +22,12 @@ Einrichtung/Systemfragen sind keine Rechercheaufträge.
 6. source-reviewer Phase basis mit Auftrag, review-packet.json, Abdeckung
    und ggf. Netzwerk delegieren. quellenpruefung.md beachten.
    mode=facts-v2 und Ziel <Lauf>/work/review-basis.md explizit nennen.
+   Bei v2 maschinenlesbaren Reviewer-Entwurf nach quellenpruefung.md verlangen;
+   Fingerprints mit stamp-review.py --draft <review-basis-draft.json>
+   --validation <facts-validation.json> --out <review-basis.md> lokal ergänzen.
    Wesentliche Korrekturen gezielt zurückgeben und betroffene Claims erneut prüfen.
 7. Abnahme unter <Lauf>/output/abnahme.md: aufgerufene Rollen, Faktenabdeckung,
    Mechanik, Inhalt, offene Lücken und nicht geprüfte Punkte nennen.
-   Keine Bewertung/HTML starten: Anschluss der Interpretation folgt später.
+   Keine Bewertung/HTML implizit starten; Interpretation ist separat beauftragbar.
 Vorhandene Läufe nicht überschreiben; neuer Lauf hat neue ID. Rückgabe kurz.
 Bei Änderungen Manifest/Plan beibehalten oder versionieren; keine Mischstände.

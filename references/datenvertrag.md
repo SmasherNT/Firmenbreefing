@@ -1,8 +1,9 @@
 # Schritt 2: gemeinsames Daten- und Übergabeformat
-Status: Faktenrollen in Schritt 3 für den Modus facts-v2 angeschlossen.
+Status: Faktenrollen (facts-v2) und Interpretation (interpret-v2) angeschlossen.
 Aufruf, isolierte Pfade und Validierung nach faktenphase.md; neue Faktenaufträge
-nutzen facts-briefing. Interpretation/HTML und gemeinsamer Dokumentcache folgen
-später. Bestehende HTML-Aufträge behalten vorerst die alten Modulpfade nach
+nutzen facts-briefing. Interpretation vorhandener Fakten nutzt interpretation-briefing
+nach interpretationsphase.md. HTML und gemeinsamer Dokumentcache folgen später.
+Bestehende HTML-Aufträge behalten vorerst die alten Modulpfade nach
 uebergabe.md. Keine Mischläufe oder zwei konkurrierenden Faktenbestände.
 
 ## Zielstruktur und Rollen
@@ -28,7 +29,7 @@ eine zweite abweichende Faktfassung anzulegen. Jede wesentliche Interpretation
 muss auf geprüfte Fakten zurückführbar sein.
 
 ## Geplante Aufteilung und Schreibrechte
-| Zielpfad (erst beim Anschluss aktivieren) | Inhalt | Schreiber |
+| Zielpfad (v2 isoliert unter tests/<run_id>/) | Inhalt | Schreiber |
 |---|---|---|
 | work/sources.json | konsolidiertes Quellenregister | Hauptagent |
 | work/context-facts.json | Firmenbasis, Ereignisse, berufliches Profil | Kontextrecherche |
@@ -39,8 +40,9 @@ muss auf geprüfte Fakten zurückführbar sein.
 | work/swot.json | begründete SWOT-Punkte | SWOT-Agent |
 | work/review-basis.md, work/review-final.md | Prüfbefunde nach bestehender Methode | Quellenprüfer |
 
-Jedes JSON-Modul: schema_version, run_id, company, as_of, scope, status, claims,
-gaps; fachliche Produkt-/Akteurs-/Beziehungstabellen zusätzlich, wenn nötig.
+Jedes Fakten-JSON-Modul: schema_version, run_id, company, as_of, scope, status,
+claims, gaps; fachliche Produkt-/Akteurs-/Beziehungstabellen zusätzlich, wenn nötig.
+Interpretationsmodule führen interpretations/research_requests statt claims/gaps.
 status: vollständig / teilweise / blockiert. Nicht beauftragte Module entfallen.
 Agenten schlagen neue Quellen in ihrem eigenen Modul unter source_proposals vor.
 Nur Hauptagent konsolidiert das gemeinsame Register; keine parallelen Schreibzugriffe.
@@ -85,7 +87,7 @@ Bloß berichtete Lieferung nicht als unabhängig bestätigten Vollzug ausgeben.
 
 ## Interpretationsfelder und Freigabe
 id, statement, section, depends_on, reasoning, method, uncertainty.
-depends_on enthält bestehende Fakten- und ggf. bereits geprüfte I-Claim-IDs.
+depends_on enthält bestehende A-Fakten- und ggf. aktuelle I-Claim-IDs.
 reasoning erklärt die Ableitung; method nennt vorab definierte Kriterien.
 Bewertungen wie Produktreife oder regionale Präsenzskalen nur hier berechnen.
 Ein Score braucht methodisch passende Evidenz; fehlende Belege nicht als
@@ -98,6 +100,8 @@ Interpretationsrollen führen keine eigene allgemeine Recherche durch.
 Konkrete Lücken an Faktenrolle zurückgeben; neue Fakten erneut prüfen.
 Geänderte Fakten invalidieren betroffene Bewertungen/Schlussfolgerungen.
 Quellenprüfer bewertet Ableitungen, nicht nur die Existenz ihrer Referenzen.
+Positionierung und SWOT erhalten gemeinsam das Schluss-Review; keine zusätzliche
+pauschale Quellenprüfschleife zwischen diesen beiden Rollen einführen.
 
 ## Tokenbegrenzung bei Übergaben
 - Metadaten einmal speichern, per Quellen-ID referenzieren.
@@ -124,12 +128,13 @@ Das bestehende scripts/check-review-data.py erwartet company/as_of, sources,
 claims und optional network. Bei späterem Anschluss aus Fakten-/Quellenregistern
 ein temporäres Paket erzeugen; evidence/location bleiben dort Strings, zusätzliche
 evidence_items werden eindeutig als Quellenauszüge/Belegstellen zusammengeführt.
-Interpretergebnisse separat gegen depends_on prüfen; das aktuelle Skript prüft
-noch keine komplette Interpretation oder alle neuen Modulfelder.
+check-interpretation.py prüft den angeschlossenen Interpretationsvertrag,
+Prüfstände, Abhängigkeiten und Matrixreferenzen. Es prüft keine fachliche
+Richtigkeit, Quelleninhalte oder Aktualität entfernter Webseiten.
 Kein Prüfschritt als bestanden ausgeben, bevor Adapter/Validierung implementiert sind.
 
 ## Nächster Umsetzungsschritt
-Faktenrollen/Skills sind für facts-v2 angeschlossen. Als Nächstes Interpretation,
+Fakten- und Interpretationsrollen sind angeschlossen. Als Nächstes
 Koordination/Cache und Renderer anschließen; begrenzte Konfigurations-/Fixturetests
 ersetzen keinen tatsächlichen Recherchelauf. Reihenfolge mit Nutzer
 schrittweise bearbeiten. Umstellung alter Pfade und Archivierung einmal konsistent

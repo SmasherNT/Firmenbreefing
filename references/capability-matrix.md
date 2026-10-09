@@ -44,5 +44,11 @@ Evidenzstand, keine vermutete technische Schwäche bei fehlender Veröffentlichu
 Ordinale Scores nicht automatisch addieren/mitteln oder als Gesamt-Ranking ausgeben.
 Kriterienänderung: Auftrag/Scope-Grund, neue version und alle betroffenen
 Beobachtungen/Bewertungen aktualisieren; keine selektive Anpassung eines Peers.
-Die vollständige Bewertung und Zell-Deep-Dives werden in der Interpretationsphase
-implementiert. Markt-Fakten allein sind noch keine bewertete Capability Matrix.
+Positionierung liefert diese Bewertungen und Zellbegründungen nach
+interpretationsphase.md; Markt-Fakten allein sind noch keine bewertete Matrix.
+Der HTML-Anschluss der Zell-Deep-Dives folgt im Ausgabeschritt.
+
+Andere beauftragte Scores nur mit zusätzlicher assessment_methods-Liste im Plan:
+je Methode id, assessment_type, applicability und anchors mit erklärten Stufen.
+Positionierung nennt method_id, subject und score; ohne Methode qualitative
+Einordnung. Keine Pflichtscores oder festen Skalen für jede Branche hinzufügen.
