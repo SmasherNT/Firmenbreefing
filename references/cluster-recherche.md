@@ -124,3 +124,12 @@ Geschäftsbericht-Belegstellen und die Trennung von Überschneidung/Kooperation.
 Liefere zusätzlich network-data in derselben Cluster-Datei nach
 references/netzwerk-html.md. Schritt 7 nutzt damit die wiederverwendbare
 interaktive Komponente inklusive Knotenfarben, Filtern und Originalquellen.
+
+
+## Vertiefung aller vier Cluster
+Lies references/cluster-quellenkatalog.md. Technologie & Industrie sowie
+Kunden & Marktzugang gehören ausdrücklich zum Cluster-Modul, auch bei 2b-Tests.
+Recherche nicht auf Eigentum/JV und Mutter-Newsroom begrenzen. Für beide Bereiche
+produkt- und länderbezogene Gegenrecherche und Abdeckungsmatrix liefern.
+Primärquellen priorisieren, ergänzende öffentliche Fachquellen nach Quellenkatalog
+kennzeichnen; dessen Quellenklassifikation konkretisiert die bisherigen Regeln.

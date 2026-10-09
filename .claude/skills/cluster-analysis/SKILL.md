@@ -43,3 +43,12 @@ Keine Beispiel-/Demo-Daten einsetzen; keine zusätzliche Pflichtdatei schreiben.
 Jeder neue Firmenauftrag erhält einen vollständig neu recherchierten Datensatz.
 company/as_of müssen zum Auftrag passen; keine inhaltliche Übernahme aus früheren
 Firmenläufen. Das Schema enthält keine festen Firmen oder Verbindungen.
+
+
+## Vertiefte Technologie- und Kundenrecherche
+Lies references/cluster-quellenkatalog.md zusätzlich zu cluster-recherche.md.
+Prüfe Technologie & Industrie sowie Kunden & Marktzugang in zwei Durchgängen,
+mit Gegenrecherche bei Partnern, Auftraggebern, Projekten und öffentlichen
+Vergabe-/Forschungsportalen. Quellenart, Beschaffungs-/Umsetzungsstatus und
+Abdeckungsmatrix dokumentieren. Neue Beziehungen erst nach Quellenprüfung
+in network-data übernehmen; keine Knoten oder Quoten zur Grafikfüllung erfinden.

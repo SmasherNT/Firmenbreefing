@@ -48,3 +48,12 @@ nicht selbst ändern. Ausgabeprüfung bleibt Verantwortung des Hauptagenten.
 
 company/as_of und Zielknoten müssen zum aktuellen Auftrag passen. Prüfe auch,
 dass kein alter Firmendatensatz als neues Rechercheergebnis übernommen wurde.
+
+
+## Erweiterte Cluster-Abdeckung
+Lies references/cluster-quellenkatalog.md. Prüfe Technologie-/Integrationsbelege
+und Kunden-/Marktzugangspfade sowie Quellenart und Abdeckungsmatrix. Patent,
+Kompatibilität, Verbands-/Messeteilnahme sind kein Liefervertrag. Ausschreibung,
+Pilot, Zuschlag, Rahmenhöchstwert und ausgeführte Lieferung getrennt behandeln.
+Neue Sekundärbelege und Quellenkopien ausdrücklich markieren. cluster/focus
+prüfen, ohne eine vollständige oder gleichmäßig gefüllte Grafik zu verlangen.

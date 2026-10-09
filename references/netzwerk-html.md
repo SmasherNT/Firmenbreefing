@@ -16,7 +16,7 @@ Der Cluster-Agent erstellt keine eigene finale HTML und überspringt keine Revie
 - Knoten zeigen kurze Unternehmensnamen. Jede Knotenart hat eine eigene,
   konsistente Farbe und erscheint in der Farblegende.
 - Linien zeigen anfangs keine Beschriftung, Quote, Quellen oder Hover-Details.
-  Klick, Touch oder Tastaturauswahl öffnet ein Detailfeld unter der Grafik.
+  Klick, Touch oder Tastaturauswahl öffnet ein Detailfeld rechts neben der Grafik (mobil darunter).
 - Details zeigen Von/Zu, Beziehungstyp, Gegenstand, Status, Datum, Quotenarten,
   Produktbezug, Unsicherheit und Claim-IDs sowie klickbare Originalquellen.
 - Filter für Partner, Kunden, Joint Ventures, Eigentum, Zulieferer,
@@ -31,8 +31,8 @@ auch wenn ihre primäre Knotenart eine andere Kategorie hat.
 Beispiel: JV-Filter zeigt auch seine Mitgesellschafter und alle passenden Kanten.
 Eine Firma mit mehreren Rollen bleibt ein Knoten. Ihre primäre Knotenart bestimmt
 die Farbe; Beziehungen können mehrere Filterkategorien tragen.
-Das Zielunternehmen bleibt immer sichtbar. Knotenpositionen bleiben beim
-Filtern möglichst stabil. Leere Ergebnisse verständlich anzeigen.
+Das Zielunternehmen bleibt immer sichtbar. Knoten bleiben im zugewiesenen Cluster; bei Filtern darf das Layout kompakt
+neu angeordnet werden, ohne die Clusterzuordnung zu verändern. Leere Ergebnisse verständlich anzeigen.
 Unzugeordnete Produktbeziehungen nur unter "Alle Produkte", nicht künstlich
 einem bestimmten Produkt zuschlagen.
 
@@ -61,7 +61,9 @@ Top-Level:
 
 Jede ID ist innerhalb ihrer Liste eindeutig und stabil.
 Nodes: id, label (kurzer tatsächlicher Name, möglichst maximal 30 Zeichen),
-kind. Optional legal_name für den vollständigen Namen.
+kind. Optional legal_name für den vollständigen Namen, cluster für die Darstellungsgruppe
+(capital, structure, technology, market) und focus (Boolean) für eine begründete
+redaktionelle Erstansicht. cluster ist keine juristische Kategorie.
 kind: target, partner, customer, jv, owner, supplier, subsidiary, project,
 person, institution oder other. Genau ein target; target_id zeigt auf ihn.
 kind wird aus belegten Rollen gewählt; keine zusätzlichen Firmen erfinden.
@@ -85,8 +87,11 @@ direkte Kante. Mehrere Vorgänge zwischen denselben Akteuren bleiben getrennte K
 
 Sources: id, name, title, url, published_date, accessed_date.
 published_date = Datum oder null bei o. D.; niemals ein Datum erfinden.
-Optional report_year, page, section. Gedruckte/PDF-Seite in page ausdrücklich
-unterscheiden, wenn abweichend. URLs nur tatsächlich geöffnete http(s)-Originalquellen.
+Optional report_year, page, section, source_kind (Originalbericht, amtlicher
+Datensatz, Herstellerangabe, Partnerangabe, Sekundärquelle, Drittanbieter-Kopie
+oder Wiedergabe). Quellenart auch im Review erfassen. Gedruckte/PDF-Seite in page ausdrücklich
+unterscheiden, wenn abweichend. URLs nur tatsächlich geöffnete http(s)-Quellen; Primär-/Sekundärart und Kopien
+nach references/cluster-quellenkatalog.md ausdrücklich klassifizieren.
 Direkter Dokumentlink bleibt erhalten; bei PDF die Belegseite im Detail nennen.
 Ein #page-Fragment kann zusätzlich angeboten werden, wenn der Viewer es unterstützt;
 die ausgeschriebene Seitenangabe darf nicht davon abhängen.
@@ -116,9 +121,10 @@ Fehlende öffentliche Belege als Lücke dokumentieren und nicht als Kante zeichn
 
 Der Renderer ist eine Vorlage, keine Garantie für jede Netzgröße.
 Bei vielen Akteuren oder langen Namen Layout anpassen, ohne Daten/Belege zu
-ändern: weitere Ringe, aufklappbare Teilnetze oder bewusste Begrenzung der
+ändern: aufklappbare Cluster, Teilnetze oder bewusste Begrenzung der
 Erstansicht mit sichtbarer Erweiterungsmöglichkeit. Keine unsichtbare Datenkürzung.
-Knoten dürfen sich auch mobil nicht überlappen; Farben zusätzlich durch Legende
+Knoten dürfen sich nicht überlappen; mobil bleibt die Mindestbreite horizontal
+verschiebbar erhalten; Farben zusätzlich durch Legende
 und die im Detail erklärte Rolle erschließen. Keine Beschriftungen auf Linien
 hinzufügen, um Platzprobleme zu umgehen.
 Kein starres Bild, keine reine Mermaid-Grafik und keine externe Live-Datenquelle
@@ -135,3 +141,32 @@ Technische Datenvalidierung ersetzt keinen inhaltlichen Quellencheck.
 Nicht ausführbare Browserprüfungen als nicht geprüft melden.
 Die installierte Vorlage wurde syntaktisch geprüft; ein tatsächlicher
 Claude-Recherche- und Browserlauf mit echten Daten bleibt nachzuweisen.
+
+
+## Vier-Cluster-Layout (verbindliche neue Standarddarstellung)
+Zielunternehmen zentral zwischen vier festen Bereichen: Kapital & Investoren,
+Konzern & Joint Ventures, Technologie & Industrie, Kunden & Marktzugang.
+Je Knoten eine Farbe nach Knotenart, eine eindeutige Identität, kein Relevanzscore.
+Erstansicht maximal vier Akteure je Bereich; focus priorisiert die Auswahl,
+begründet in der Cluster-Datei. Andere Akteure per Cluster aufklappen erreichbar.
+Querverbindungen zunächst ausgeblendet, zuschaltbar und nach Knotenauswahl
+im betreffenden Teilnetz sichtbar. Auswahl listet alle Rollen eines Akteurs;
+Linien bleiben unbeschriftet, Quellen und Unsicherheiten nur im Klickdetail.
+Suche, Status-, Kategorie- und belegte Produktfilter verwenden.
+Linien der gleichen Akteurspaarung getrennt führen. Reduzierte Erstansicht
+mit sichtbarem Gesamtzähler; die vollständige Tabelle enthält alle Beziehungen.
+Auf kleinen Bildschirmen Grafik horizontal verschiebbar mit lesbarer Mindestbreite
+640px, Detailfeld darunter und Tastatur-Beziehungsauswahl als Alternative.
+Keine Pflicht, leere Bereiche mit ungeprüften Akteuren zu füllen.
+Lange Prüfhinweise, Abdeckungsmatrix und Register aufklappbar; wesentliche
+Unsicherheiten trotzdem am betroffenen Claim/Verbindungsdetail sichtbar halten.
+Abnahme zusätzlich: alle Cluster aufklappen, Querverbindungen, Suche/Status,
+Knoten-/Linienklick, gleichzeitige Rollen, keine alten Details nach Filterwechsel.
+
+JV-Kontextkanten haben Vorrang vor dem standardmäßig ausgeblendeten
+Querverbindungsfilter: passende Gesellschafter-zu-JV-Kanten bleiben sichtbar.
+Die vollständige Tabelle bewahrt auch Quoten, Kontrolle, Produktbezug,
+Interpretationen und Unsicherheiten; Claim-IDs sind interne Sprunglinks.
+Datumspräzision beibehalten: Kanten as_of YYYY-MM oder YYYY-MM-DD,
+Top-Level-Stichtag und Quellendaten YYYY-MM-DD; unbekannte Veröffentlichung
+explizit null. Pflichtmetadaten nicht mit fehlenden Feldern verwechseln.

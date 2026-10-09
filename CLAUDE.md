@@ -18,7 +18,8 @@ Mehrdeutigkeit nachfragen. Das Wort „auch“ setzt kein früheres Briefing vor
 Erst beim tatsächlichen Auftrag input/auftrag.md automatisch erzeugen.
 
 ## Quellen und Zuständigkeiten
-Nur öffentliche Originalquellen tatsächlich öffnen; Unternehmens-, Partner-
+Öffentliche Quellen tatsächlich öffnen; Originalquellen priorisieren, ergänzende
+Sekundärbelege nach references/cluster-quellenkatalog.md kennzeichnen. Unternehmens-, Partner-
 und Behördenquellen bevorzugen. Wichtige Aussagen möglichst zweitbelegen.
 Fakten, Herstellerangaben, Nutzerangaben und Interpretation unterscheiden.
 Je wesentlicher Aussage Claim-ID, Titel, Datum/o. D., Link, Abrufdatum,
@@ -49,3 +50,12 @@ und relevanter verbundener Akteure ausdrücklich suchen und analysieren.
 Eigentum/Kontrolle, operative Beziehungen, Projekte, öffentliche berufliche
 Mandate, Überschneidungen und Historie getrennt belegen und darstellen.
 Das gilt auch für einzelne 2b-Modultests; es erzeugt keine weiteren Pflichtmodule.
+
+
+## Vertiefte Technologie- und Kundenrecherche
+Lies references/cluster-quellenkatalog.md zusätzlich zu cluster-recherche.md.
+Prüfe Technologie & Industrie sowie Kunden & Marktzugang in zwei Durchgängen,
+mit Gegenrecherche bei Partnern, Auftraggebern, Projekten und öffentlichen
+Vergabe-/Forschungsportalen. Quellenart, Beschaffungs-/Umsetzungsstatus und
+Abdeckungsmatrix dokumentieren. Neue Beziehungen erst nach Quellenprüfung
+in network-data übernehmen; keine Knoten oder Quoten zur Grafikfüllung erfinden.

@@ -48,10 +48,19 @@ Knotenarten unterschiedlich färben, Beziehungskategorien kombinierbar filtern
 und belegten Produktbezug filterbar machen. Originalquellen mit Titel/Datum und
 Bericht-Seite direkt im ausgewählten Verbindungsdetail verlinken.
 Die Vorlage in die finale briefing.html einbetten; kein separater Grafik-Link
-als Ersatz. Quellenregister und druckbare Tabelle mit denselben Belegen füllen.
+als Ersatz. Quellenregister und druckbare Tabelle mit denselben Belegen und deren Quellenart füllen.
 Interaktionen, Responsivität, Druck und Links tatsächlich nach der Abnahme in
 netzwerk-html.md prüfen; nicht ausführbare Kontrollen ehrlich kennzeichnen.
 
 Bei jedem neuen Auftrag die Vorlage mit dem vollständig neuen Netzwerk dieser
 Firma befüllen. company/as_of und Zielknoten mit dem aktuellen Auftrag abgleichen.
 Nur den Renderer wiederverwenden, niemals den Datensatz der vorigen Firma.
+
+
+## Referenzlayout verbindlich verwenden
+Die neue Vier-Cluster-Darstellung aus netzwerk-html.md und cluster-network.html
+unverändert als Darstellungsbasis verwenden: vier feste Bereiche, zentrales Ziel,
+aufklappbare Akteure und Detailfeld rechts bzw. mobil darunter. Keine einfache
+Ringanordnung als Ersatz. cluster/focus aus der geprüften Übergabe übernehmen.
+Keine analytischen Relevanzscores neu erzeugen. Rechercheabdeckung und lange
+Register aufklappbar halten; Einschränkungen direkt im Detail zeigen.

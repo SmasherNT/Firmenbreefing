@@ -36,3 +36,12 @@ Hauptagent/Schritt 7 rendert die geprüfte Übergabe mit der bereitgestellten Vo
 Bei jedem neuen Firmenauftrag ein vollständig neues Netzwerk recherchieren und
 neues network-data mit company/as_of erzeugen. Keine alten Firmen, Beziehungen
 oder Quellen übernehmen. Nur das Darstellungsformat wird wiederverwendet.
+
+
+## Vertiefte Technologie- und Kundenrecherche
+Lies references/cluster-quellenkatalog.md zusätzlich zu cluster-recherche.md.
+Prüfe Technologie & Industrie sowie Kunden & Marktzugang in zwei Durchgängen,
+mit Gegenrecherche bei Partnern, Auftraggebern, Projekten und öffentlichen
+Vergabe-/Forschungsportalen. Quellenart, Beschaffungs-/Umsetzungsstatus und
+Abdeckungsmatrix dokumentieren. Neue Beziehungen erst nach Quellenprüfung
+in network-data übernehmen; keine Knoten oder Quoten zur Grafikfüllung erfinden.
