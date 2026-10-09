@@ -59,3 +59,13 @@ mit Gegenrecherche bei Partnern, Auftraggebern, Projekten und öffentlichen
 Vergabe-/Forschungsportalen. Quellenart, Beschaffungs-/Umsetzungsstatus und
 Abdeckungsmatrix dokumentieren. Neue Beziehungen erst nach Quellenprüfung
 in network-data übernehmen; keine Knoten oder Quoten zur Grafikfüllung erfinden.
+
+## Breite öffentliche Recherche als Standard
+Für die beauftragten Module zusätzlich zu Unternehmens-/Behördenquellen aktiv
+Nachrichten-, Wirtschafts-, Fach- und regional relevante Medien durchsuchen.
+Neue Hinweise auf Akteure, Produkte, Programme und Beziehungen gezielt
+weiterverfolgen. Für Cluster gilt der Ablauf in references/cluster-quellenkatalog.md
+verbindlich einschließlich offener Entdeckung, Gegenrecherche und Folgesuche.
+Auch geprüfte eigenständige Medienberichte ohne auffindbare Unternehmensmeldung
+zulassen; Quellenart, Unabhängigkeit und Unsicherheit offenlegen. Keine feste
+Quellenliste, Zahl von Knoten oder Zahl von Suchrunden als Vollständigkeitsmaß.

@@ -73,6 +73,12 @@ Einschränkung dokumentieren und andere öffentliche Originalquellen prüfen.
 Fehlender Bericht bedeutet weder fehlende Beziehung noch Unternehmensschwäche.
 
 ## Weitere Quellen und Gegenprüfung
+Breite Web-, Nachrichten- und Fachmediensuche nach cluster-quellenkatalog.md
+ist verbindlich. Medienartikel aktiv zur Entdeckung zusätzlicher Akteure,
+Produkte, Kunden und Querverbindungen nutzen und deren Hinweise weiterverfolgen.
+Öffentlich zugängliche, geprüfte redaktionelle Berichte können eigenständige
+Belege sein; keine automatische Verwerfung mangels Unternehmens-PM. Quellenart,
+Unabhängigkeit, Unsicherheit und fehlende Originalbestätigung sichtbar ausweisen.
 Offizielle Unternehmens-/Partnerveröffentlichungen und Investor-Relations-
 Unterlagen, öffentliche Register und Behördenentscheidungen, offizielle
 Projekt-/Konsortialseiten und Vergabebekanntmachungen tatsächlich öffnen.
@@ -131,5 +137,7 @@ Lies references/cluster-quellenkatalog.md. Technologie & Industrie sowie
 Kunden & Marktzugang gehören ausdrücklich zum Cluster-Modul, auch bei 2b-Tests.
 Recherche nicht auf Eigentum/JV und Mutter-Newsroom begrenzen. Für beide Bereiche
 produkt- und länderbezogene Gegenrecherche und Abdeckungsmatrix liefern.
-Primärquellen priorisieren, ergänzende öffentliche Fachquellen nach Quellenkatalog
-kennzeichnen; dessen Quellenklassifikation konkretisiert die bisherigen Regeln.
+Breite Entdeckung, zwei Kerndurchgänge und gezielte Folgerecherche nach
+Quellenkatalog ausführen. Primärquellen priorisieren, Nachrichten-/Fachartikel
+aktiv suchen und klassifizieren; Suchbegriffe, Artikel und Hinweisverfolgung
+protokollieren. Der Quellenkatalog konkretisiert die bisherigen Regeln.

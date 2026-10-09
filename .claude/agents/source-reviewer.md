@@ -57,3 +57,11 @@ Kompatibilität, Verbands-/Messeteilnahme sind kein Liefervertrag. Ausschreibung
 Pilot, Zuschlag, Rahmenhöchstwert und ausgeführte Lieferung getrennt behandeln.
 Neue Sekundärbelege und Quellenkopien ausdrücklich markieren. cluster/focus
 prüfen, ohne eine vollständige oder gleichmäßig gefüllte Grafik zu verlangen.
+
+## Breite Medienrecherche prüfen
+Prüfe bei Cluster-Aufträgen, dass offene Nachrichten-/Fachmediensuche und
+Verfolgung relevanter Hinweise in Abdeckungsmatrix/Fundliste dokumentiert sind.
+Eine reine Unternehmens-PM-Suche als unzureichende Abdeckung zurückmelden.
+Eigenständige redaktionelle Berichte nicht allein wegen fehlender PM ablehnen;
+Inhalt, Unabhängigkeit und Einschränkungen prüfen. Kopierte PMs bleiben ein
+Ursprungsbeleg. Gerüchte nicht als bestehende Beziehungen freigeben.

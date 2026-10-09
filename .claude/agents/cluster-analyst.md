@@ -45,3 +45,13 @@ mit Gegenrecherche bei Partnern, Auftraggebern, Projekten und öffentlichen
 Vergabe-/Forschungsportalen. Quellenart, Beschaffungs-/Umsetzungsstatus und
 Abdeckungsmatrix dokumentieren. Neue Beziehungen erst nach Quellenprüfung
 in network-data übernehmen; keine Knoten oder Quoten zur Grafikfüllung erfinden.
+
+## Breite Nachrichten- und Fachmedienrecherche
+Führe die offene Entdeckung und Hinweisverfolgung nach Quellenkatalog verbindlich
+zusätzlich zu den zwei Kerndurchgängen aus. Suche nach Firma, Produkten, Partnern,
+Programmen und Zielmärkten auch in Nachrichten, Wirtschafts-/Fachmedien und
+relevanten lokalen Medien. Folge neuen Akteuren und Querverbindungen über JV hinaus.
+Geprüfte eigenständige Medienberichte als Belege zulassen, fehlende
+Originalbestätigung und Quellenart sichtbar ausweisen. Eine reine PM-Suche
+oder zwei Suchrunden mit noch offenen relevanten Hinweisen erfüllen den Auftrag
+nicht. Fundliste, Suchabdeckung und begründetes Rechercheende dokumentieren.
