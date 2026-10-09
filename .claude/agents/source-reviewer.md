@@ -15,6 +15,9 @@ schreibe work/review-final.md. Fehlende Phase oder Dateien konkret melden.
 Arbeite verbindlich nach references/quellenpruefung.md: A-Claims vollständig,
 B-Hintergrunddetails mit dokumentierter Stichprobe und Fehlereskalation prüfen.
 Jede eingezeichnete Netzwerkkante bleibt A. Quellen je Dokument bündeln.
+Lieferstatus nach quellenpruefung.md nur bei wesentlicher Verwendung oder
+Widerspruch vollständig prüfen; Hintergrunddetails nach B. Keine separate
+Prüfschleife/Zweitrecherche je Lieferung; berichtete Herstellerangaben kennzeichnen.
 Formale Kontrollen durch scripts/check-review-data.py durchführen, soweit verfügbar.
 Kompakte Claim-Pakete statt vollständiger HTML/Quelltexte als Standardkontext lesen.
 Bereits geprüfte unveränderte Claims im selben Auftrag/Stichtag wiederverwenden;

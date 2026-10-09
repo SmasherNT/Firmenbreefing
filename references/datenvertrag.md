@@ -76,6 +76,11 @@ Fact/Interpretation nicht anhand sprachlicher Sicherheit vermischen:
 "Auftrag angekündigt", "Lieferung berichtet" sind belegbare Statusaussagen;
 "starke Position" oder ein Reifegradscore gehören zu Interpretationen.
 Rechercheabdeckung/Fundliste getrennt von belegten Claims speichern.
+Lieferstatus beim ersten Quellenlesen erfassen, Aussageursprung sichtbar lassen.
+Keine separate routinemäßige Bestätigungsrecherche oder Prüfschleife pro Lieferung.
+Vollprüfung nur bei entscheidungstragender Verwendung oder Widersprüchen,
+gebündelt mit der Quellenprüfung nach quellenpruefung.md; sonst B-Hintergrunddetail.
+Bloß berichtete Lieferung nicht als unabhängig bestätigten Vollzug ausgeben.
 
 ## Interpretationsfelder und Freigabe
 id, statement, section, depends_on, reasoning, method, uncertainty.

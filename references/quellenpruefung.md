@@ -33,6 +33,24 @@ Aussagen, die später eine Schlussfolgerung tragen, vor Freigabe nach A hochstuf
 Reine Interpretationen auf belegte Fakten und nachvollziehbare Ableitung prüfen;
 kein Originalbeleg kann die Analysteninterpretation selbst als Fakt bestätigen.
 
+## Lieferstatus ohne separate Prüfschleife
+Recherche-Rolle erfasst beim ersten Lesen den ausdrücklich genannten Status
+und den Aussageursprung: angekündigt / beauftragt / Lieferung berichtet /
+Auslieferung belegt, jeweils nur soweit die Quelle dies tatsächlich trägt.
+Keine automatische Zusatzrecherche zur unabhängigen Bestätigung jeder Lieferangabe.
+Bei Herstellerangabe sichtbar "Lieferung laut Hersteller berichtet" verwenden;
+das bestätigt den Inhalt der Meldung, nicht unabhängig den tatsächlichen Vollzug.
+Lieferstatus vollständig (A) im selben Quellenaufruf prüfen, wenn er Produktreife,
+regionale Präsenz, eine zentrale Kundenbeziehung, einen Netzwerk-Beziehungsstatus
+oder eine andere wesentliche Bewertung trägt, oder Angaben widersprüchlich sind.
+Keine eigene Delegation, neue Prüfrunde oder breit angelegte Zweitrecherche allein
+für diesen Status. Gezielt nachrecherchieren nur, wenn eine wesentliche Aussage
+sonst unklar/falsch wäre; alternativ Unsicherheit zeigen und Bewertung begrenzen.
+Nicht entscheidungstragende Lieferdetails nach B behandeln; erneute Prüfung nur
+bei Änderung, Stichprobenfehler oder späterer Nutzung als wesentliche Faktenbasis.
+Die Pflichtprüfung aller Netzwerkkanten bleibt bestehen, wird aber je Quelle
+mit den übrigen Beziehungsmerkmalen gebündelt.
+
 ## Mechanische Prüfungen auslagern
 scripts/check-review-data.py prüft ein temporäres JSON-Prüfpaket lokal mit Python 3:
 Pflichtfelder, IDs, Quellen-/Claimreferenzen, Datumsformate, identisches company/as_of
