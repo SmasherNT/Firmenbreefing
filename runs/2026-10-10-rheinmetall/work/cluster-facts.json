@@ -1,0 +1,4726 @@
+{
+ "schema_version": 1,
+ "mode": "facts-v2",
+ "role": "cluster",
+ "run_id": "2026-10-10-rheinmetall",
+ "company": "Rheinmetall AG",
+ "as_of": "2026-10-10",
+ "scope": "Unternehmensnetzwerk der Rheinmetall AG im Flugabwehrgeschäft (Rheinmetall Air Defence AG u. a.) und für den Marktzugang in den Golfstaaten (GCC): Eigentum/Kontrolle, JV/Lokalisierung, Technologie-/Industriepartner, Kunden/Auftraggeber, Querverbindungen, Exportgenehmigungsrahmen DE/CH; Stichtag 2026-10-10",
+ "status": "teilweise",
+ "document_scope": "Öffentlich zugängliche Quellen, abgerufen am 2026-10-10. Geschäftsberichte als Originalberichte; Pressemitteilungen als Hersteller-/Partnerangaben; Fach- und Wirtschaftsmedien als Sekundärquellen gekennzeichnet. Netzwerk enthält nur Beziehungen mit geöffnetem Beleg; noch nicht quellengeprüft (Basis-Review ausstehend).",
+ "shared_limitations": [
+  "Keine Register- oder kostenpflichtigen Datenbanken genutzt; Anteilsangaben aus Rheinmetall-Geschäftsberichten (Kapitalanteile; Stimmrechte nur wo ausdrücklich angegeben).",
+  "Mehrere Janes-Artikel nur bis zur Bezahlschranke lesbar; nur frei lesbare Passagen als Evidenz verwendet.",
+  "Gemeinsame Programmteilnahme oder Integrationsfähigkeit wird nicht als bilateraler Vertrag dargestellt.",
+  "Fehlende öffentliche Belege sind Datenlücken, kein Nachweis fehlender Beziehungen."
+ ],
+ "claims": [
+  {
+   "id": "C-STR-01",
+   "statement": "Laut Anteilsbesitzliste im Rheinmetall-Geschäftsbericht 2025 hält die Rheinmetall AG 100 % direkt an der Rheinmetall Air Defence AG, Zürich (vollkonsolidiertes Tochterunternehmen; Eigenkapital 386.181 TEUR, Jahresergebnis nach EAV 117.135 TEUR).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7"
+   ],
+   "evidence": "Auszug: Rheinmetall Air Defence AG, Zürich/Schweiz – direkter Anteil 100, indirekter Anteil –, Eigenkapital 386.181, Jahresergebnis 117.135 (TEUR); Abschnitt Vollkonsolidierte Tochterunternehmen | Paraphrase: Vorjahr: Rheinmetall Air Defence AG, Zürich/Schweiz 100 % direkt, Eigenkapital 373.980 TEUR",
+   "location": "S. 268 (Druck- = PDF-Seite), Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste | Geschäftsbericht 2024, Anteilsbesitzliste 2024, S. 254",
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "Rheinmetall Air Defence AG, Zürich/Schweiz – direkter Anteil 100, indirekter Anteil –, Eigenkapital 386.181, Jahresergebnis 117.135 (TEUR); Abschnitt Vollkonsolidierte Tochterunternehmen",
+     "mode": "Auszug",
+     "location": "S. 268 (Druck- = PDF-Seite), Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste"
+    },
+    {
+     "source_id": "S-b159a0c9329835a7",
+     "text": "Vorjahr: Rheinmetall Air Defence AG, Zürich/Schweiz 100 % direkt, Eigenkapital 373.980 TEUR",
+     "mode": "Paraphrase",
+     "location": "Geschäftsbericht 2024, Anteilsbesitzliste 2024, S. 254"
+    }
+   ],
+   "event_date": "2025-12-31",
+   "event_status": "Stand Abschlussstichtag"
+  },
+  {
+   "id": "C-STR-02",
+   "statement": "Laut Rheinmetall-Unternehmensseite bündelt die Rheinmetall Air Defence AG (Hauptsitz Zürich) sämtliche Flugabwehr-Aktivitäten des Konzerns; sie ging aus der zum 1. Januar 2009 umfirmierten Oerlikon Contraves AG hervor, die Marke Oerlikon wird weitergeführt. Rheinmetall nennt Skyguard, Skyshield, Skyranger, Skynex sowie marineseitig Millennium Gun und Searanger als Produktlinien und gibt Streitkräfte in mehr als 40 Ländern als Nutzer an.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-18ce19a1fbbec148"
+   ],
+   "evidence": "Auszug: Unter dem Dach der Rheinmetall Air Defence AG werden sämtliche Flugabwehr-Aktivitäten des Rheinmetall-Konzerns gebündelt ... die Oerlikon Contraves AG zum 1. Januar 2009 umfirmiert ... Streitkräfte in mehr als 40 Ländern",
+   "location": "Seite 'Über uns', Abschnitt Unternehmensbeschreibung",
+   "uncertainty": "Länderzahl ist Herstellerangabe ohne Länderliste; Seite ohne Datum.",
+   "proposed_depth": "B",
+   "depth_reason": "ergänzendes Hintergrunddetail"
+  },
+  {
+   "id": "C-STR-03",
+   "statement": "Laut Geschäftsbericht 2025 wurde die Division Electronic Solutions mit Wirkung zum 1. Januar 2026 in die Divisionen Air Defence und Digital Systems aufgeteilt; die Division Air Defence bündelt die Flugabwehrfähigkeiten und hat eine eigene Divisionsleitung unterhalb des Vorstands.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Auszug: Mit Wirkung zum 1. Januar 2026 wurde die Division Electronic Solutions in die Divisionen Air Defence und Digital Systems aufgeteilt ... Die neuen Divisionen haben jeweils eine eigene Divisionsleitung unterhalb des Vorstands",
+   "location": "S. 265, Konzernanhang, Ereignisse nach dem Bilanzstichtag",
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Strukturrahmen Flugabwehr",
+   "event_date": "2026-01-01",
+   "event_status": "vollzogen laut Bericht"
+  },
+  {
+   "id": "C-STR-04",
+   "statement": "Laut Anteilsbesitzliste 2025 hält Rheinmetall indirekt 51 % an der Rheinmetall Denel Munition (Pty) Ltd., Somerset West (vollkonsolidiert); der Anteil anderer Gesellschafter wird mit 49 % ausgewiesen. Nach Rheinmetall-Unternehmensseite ist die Rheinmetall Waffe Munition GmbH Mehrheitsgesellschafterin (51 %) und Denel hält 49 %; RDM wurde am 1. September 2008 gegründet und ist neben Südafrika vor allem in Asien, im Mittleren Osten und in Südamerika aktiv.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-f4730b21412bb02a",
+    "S-1f76748059d5008c"
+   ],
+   "evidence": "Auszug: Rheinmetall Denel Munition (Pty) Ltd., Somerset West/Südafrika – indirekter Anteil 51 | Auszug: Anteile anderer Gesellschafter: Rheinmetall Denel Munition Pty. Ltd. Anteil Fremde 49% | Auszug: Tochtergesellschaft der Rheinmetall Waffe Munition GmbH (51 %) und der südafrikanischen Denel (Pty) Ltd. ... Rheinmetall ist Mehrheitsgesellschafter, während Denel 49% der Anteile hält ... vor allem – neben Südafrika – in Asien, im Mittleren Osten und in Südamerika",
+   "location": "S. 268, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste | S. 240, Konzernanhang, Anteile anderer Gesellschafter | Unternehmensseite RDM, Absätze 1–3",
+   "uncertainty": "Geschäftsbericht nennt den 49-%-Gesellschafter nicht namentlich; Name Denel aus undatierter Unternehmensseite.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "Rheinmetall Denel Munition (Pty) Ltd., Somerset West/Südafrika – indirekter Anteil 51",
+     "mode": "Auszug",
+     "location": "S. 268, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste"
+    },
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "Anteile anderer Gesellschafter: Rheinmetall Denel Munition Pty. Ltd. Anteil Fremde 49%",
+     "mode": "Auszug",
+     "location": "S. 240, Konzernanhang, Anteile anderer Gesellschafter"
+    },
+    {
+     "source_id": "S-1f76748059d5008c",
+     "text": "Tochtergesellschaft der Rheinmetall Waffe Munition GmbH (51 %) und der südafrikanischen Denel (Pty) Ltd. ... Rheinmetall ist Mehrheitsgesellschafter, während Denel 49% der Anteile hält ... vor allem – neben Südafrika – in Asien, im Mittleren Osten und in Südamerika",
+     "mode": "Auszug",
+     "location": "Unternehmensseite RDM, Absätze 1–3"
+    }
+   ],
+   "event_date": "2025-12-31",
+   "event_status": "Stand Abschlussstichtag"
+  },
+  {
+   "id": "C-STR-05",
+   "statement": "Laut Anteilsbesitzliste 2025 bestehen im GCC folgende vollkonsolidierte Rheinmetall-Gesellschaften: Rheinmetall International Defence and Security Ltd., Riad (100 % indirekt), Rheinmetall International Services Limited, Abu Dhabi (100 % indirekt), Rheinmetall Protection Systems Gulf (FZE), Schardscha (100 % indirekt) sowie Rheinmetall Projects Development Consultancy LLC, Abu Dhabi (49 % direkt, vollkonsolidiert aufgrund der Mehrheit der Stimmrechte, Fußnote 2).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7"
+   ],
+   "evidence": "Auszug: Rheinmetall International Defence and Security Ltd., Riyadh/Saudi-Arabien – 100 (indirekt); Rheinmetall International Services Limited, Abu Dhabi – 100 (indirekt); Rheinmetall Projects Development Consultancy LLC, Abu Dhabi (2) 49 (direkt); Rheinmetall Protection Systems Gulf (FZE), Schardscha – 100 (indirekt); Fußnote 2: Vollkonsolidierung aufgrund der Mehrheit der Stimmrechte | Paraphrase: Vorjahresliste enthält Rheinmetall International Services Limited, Abu Dhabi (100 % indirekt) und Rheinmetall Protection Systems Gulf (FZE), Schardscha; Rheinmetall Projects Development Consultancy LLC nicht gefunden",
+   "location": "S. 269 (Gesellschaften) und S. 271 (Fußnoten), Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste | Geschäftsbericht 2024, Anteilsbesitzliste 2024, S. 252 und 254",
+   "uncertainty": "Geschäftszweck der Gesellschaften im Bericht nicht beschrieben; Abwesenheit von Rheinmetall Projects Development Consultancy in der Vorjahresliste nur per Textsuche geprüft.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "Rheinmetall International Defence and Security Ltd., Riyadh/Saudi-Arabien – 100 (indirekt); Rheinmetall International Services Limited, Abu Dhabi – 100 (indirekt); Rheinmetall Projects Development Consultancy LLC, Abu Dhabi (2) 49 (direkt); Rheinmetall Protection Systems Gulf (FZE), Schardscha – 100 (indirekt); Fußnote 2: Vollkonsolidierung aufgrund der Mehrheit der Stimmrechte",
+     "mode": "Auszug",
+     "location": "S. 269 (Gesellschaften) und S. 271 (Fußnoten), Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste"
+    },
+    {
+     "source_id": "S-b159a0c9329835a7",
+     "text": "Vorjahresliste enthält Rheinmetall International Services Limited, Abu Dhabi (100 % indirekt) und Rheinmetall Protection Systems Gulf (FZE), Schardscha; Rheinmetall Projects Development Consultancy LLC nicht gefunden",
+     "mode": "Paraphrase",
+     "location": "Geschäftsbericht 2024, Anteilsbesitzliste 2024, S. 252 und 254"
+    }
+   ],
+   "event_date": "2025-12-31",
+   "event_status": "Stand Abschlussstichtag"
+  },
+  {
+   "id": "C-STR-06",
+   "statement": "Laut Anteilsbesitzliste 2025 hält Rheinmetall indirekt 20 % an der RADARABIA for Industry LLC, Riad (at-equity bewertet; Eigenkapital −4.392 TEUR, Jahresergebnis −4.159 TEUR); im Vorjahresbericht ist dieselbe 20-%-Beteiligung mit Vorjahreszahlen (Eigenkapital −459 TEUR, Ergebnis −933 TEUR) aufgeführt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7"
+   ],
+   "evidence": "Auszug: RADARABIA for Industry LLC, Riyadh/Saudi-Arabien – indirekt 20, Eigenkapital −4.392, Jahresergebnis −4.159 (TEUR); Abschnitt At-Equity-bewertete Beteiligungen | Auszug: RADARABIA for Industry LLC, Riyadh/Saudi-Arabien (6) – 20, −459, −933; Fußnote 6: Eigenkapital und Ergebnis aus Vorjahren",
+   "location": "S. 270, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste | Geschäftsbericht 2024, S. 256, Anteilsbesitzliste 2024",
+   "uncertainty": "Bericht nennt die übrigen Gesellschafter nicht.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "RADARABIA for Industry LLC, Riyadh/Saudi-Arabien – indirekt 20, Eigenkapital −4.392, Jahresergebnis −4.159 (TEUR); Abschnitt At-Equity-bewertete Beteiligungen",
+     "mode": "Auszug",
+     "location": "S. 270, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste"
+    },
+    {
+     "source_id": "S-b159a0c9329835a7",
+     "text": "RADARABIA for Industry LLC, Riyadh/Saudi-Arabien (6) – 20, −459, −933; Fußnote 6: Eigenkapital und Ergebnis aus Vorjahren",
+     "mode": "Auszug",
+     "location": "Geschäftsbericht 2024, S. 256, Anteilsbesitzliste 2024"
+    }
+   ],
+   "event_date": "2025-12-31",
+   "event_status": "Stand Abschlussstichtag"
+  },
+  {
+   "id": "C-STR-07",
+   "statement": "Laut Anteilsbesitzliste 2025 hält Rheinmetall indirekt 49 % an der Rheinmetall Barzan Advanced Technologies QSTP, LLC, Doha (at-equity bewertet, ohne Joint-Venture-Kennzeichnung; Eigenkapital 14.545 TEUR, Jahresergebnis 1.553 TEUR); 2024 war die Beteiligung ebenfalls mit 49 % ausgewiesen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7"
+   ],
+   "evidence": "Auszug: Rheinmetall Barzan Advanced Technologies QSTP, LLC, Doha/Katar – indirekt 49, Eigenkapital 14.545, Jahresergebnis 1.553 (TEUR) | Auszug: Rheinmetall Barzan Advanced Technologies QSTP, LLC, Doha/Katar – 49, 14.799, −2.839",
+   "location": "S. 271, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste, Abschnitt At-Equity-bewertete Beteiligungen | Geschäftsbericht 2024, S. 256",
+   "uncertainty": "Einstufung als assoziiertes Unternehmen vs. Gemeinschaftsunternehmen aus der fehlenden Fußnote (5) abgeleitet, nicht ausdrücklich beschrieben.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "Rheinmetall Barzan Advanced Technologies QSTP, LLC, Doha/Katar – indirekt 49, Eigenkapital 14.545, Jahresergebnis 1.553 (TEUR)",
+     "mode": "Auszug",
+     "location": "S. 271, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste, Abschnitt At-Equity-bewertete Beteiligungen"
+    },
+    {
+     "source_id": "S-b159a0c9329835a7",
+     "text": "Rheinmetall Barzan Advanced Technologies QSTP, LLC, Doha/Katar – 49, 14.799, −2.839",
+     "mode": "Auszug",
+     "location": "Geschäftsbericht 2024, S. 256"
+    }
+   ],
+   "event_date": "2025-12-31",
+   "event_status": "Stand Abschlussstichtag"
+  },
+  {
+   "id": "C-STR-08",
+   "statement": "Laut Anteilsbesitzliste 2025 hält Rheinmetall indirekt 40 % an der Rheinmetall Arabia Simulation and Training LLC, Riad, die als Joint Venture gekennzeichnet ist (Fußnote 5).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Auszug: Rheinmetall Arabia Simulation and Training LLC, Riyadh/Saudi-Arabien (5) – 40, Eigenkapital 13.625, Jahresergebnis 3.187 (TEUR); Fußnote 5: Joint Ventures",
+   "location": "S. 271, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste",
+   "uncertainty": "JV-Partner öffentlich nicht identifiziert; kein belegter Flugabwehrbezug.",
+   "proposed_depth": "B",
+   "depth_reason": "Struktur-Hintergrund ohne Netzwerk-Partner",
+   "event_date": "2025-12-31",
+   "event_status": "Stand Abschlussstichtag"
+  },
+  {
+   "id": "C-STR-09",
+   "statement": "Laut Anteilsbesitzliste 2025 hält die Rheinmetall AG 100 % direkt an der Rheinmetall Electronics GmbH, Bremen, und indirekt 100 % an der Rheinmetall Italia S.p.A., Rom.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Auszug: Rheinmetall Electronics GmbH, Bremen/Deutschland (1) 100 (direkt); Rheinmetall Italia S.p.A., Rom/Italien – 100 (indirekt)",
+   "location": "S. 268 und S. 269, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste",
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2025-12-31",
+   "event_status": "Stand Abschlussstichtag"
+  },
+  {
+   "id": "C-TI-01",
+   "statement": "Laut Rheinmetall-Pressemitteilung unterzeichneten das BAAINBw und die 2021 gegründete ARGE NNbS (Rheinmetall Electronics GmbH, Diehl Defence GmbH & Co. KG, Hensoldt Sensors GmbH) am 25. Januar 2024 den Entwicklungsvertrag für das Luftverteidigungssystem Nah- und Nächstbereichsschutz (rund 1,2 Mrd. EUR brutto; Leistungsanteile Rheinmetall 607, Diehl 339, Hensoldt 284 Mio. EUR); Ziel ist u. a. die Vernetzung mit IRIS-T SLM und dem Skyranger 30. Der Rheinmetall-Geschäftsbericht 2025 führt die ARGE NNbS als Joint Operation mit 33 % Anteil; der Hensoldt-Geschäftsbericht 2025 nennt NNbS-Aufträge im Vorjahr 2024.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-f562ccee195198fd",
+    "S-f4730b21412bb02a",
+    "S-7066a889ca7eaad4"
+   ],
+   "evidence": "Auszug: BAAINBw und ARGE NNbS haben am 25. Januar 2024 den Entwicklungsvertrag ... unterzeichnet. Der 2021 gegründeten ARGE NNbS gehören ... Rheinmetall Electronics GmbH (Bremen), Diehl Defence GmbH & Co. KG (Überlingen) und Hensoldt Sensors GmbH (Taufkirchen) an ... Rheinmetall 607 MioEUR, Diehl 339 MioEUR und Hensoldt 284 MioEUR ... Vertragspartner des Bundes ist die ARGE NNbS | Auszug: Joint Operations: ARGE NNbS, Bremen/Deutschland – 33 | Auszug: Der Vorjahreszeitraum beinhaltete insbesondere Aufträge für das Luftverteidigungssystem Nah- und Nächstbereichsschutz (LVS NNbS)",
+   "location": "Pressemitteilung 25.01.2024, Absätze 1–4 | S. 271, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste | HENSOLDT Geschäftsbericht 2025, Zusammengefasster Lagebericht, Auftragseingang, S. 32 (PDF S. 32)",
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-f562ccee195198fd",
+     "text": "BAAINBw und ARGE NNbS haben am 25. Januar 2024 den Entwicklungsvertrag ... unterzeichnet. Der 2021 gegründeten ARGE NNbS gehören ... Rheinmetall Electronics GmbH (Bremen), Diehl Defence GmbH & Co. KG (Überlingen) und Hensoldt Sensors GmbH (Taufkirchen) an ... Rheinmetall 607 MioEUR, Diehl 339 MioEUR und Hensoldt 284 MioEUR ... Vertragspartner des Bundes ist die ARGE NNbS",
+     "mode": "Auszug",
+     "location": "Pressemitteilung 25.01.2024, Absätze 1–4"
+    },
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "Joint Operations: ARGE NNbS, Bremen/Deutschland – 33",
+     "mode": "Auszug",
+     "location": "S. 271, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste"
+    },
+    {
+     "source_id": "S-7066a889ca7eaad4",
+     "text": "Der Vorjahreszeitraum beinhaltete insbesondere Aufträge für das Luftverteidigungssystem Nah- und Nächstbereichsschutz (LVS NNbS)",
+     "mode": "Auszug",
+     "location": "HENSOLDT Geschäftsbericht 2025, Zusammengefasster Lagebericht, Auftragseingang, S. 32 (PDF S. 32)"
+    }
+   ],
+   "event_date": "2024-01-25",
+   "event_status": "Entwicklungsvertrag unterzeichnet"
+  },
+  {
+   "id": "C-TI-02",
+   "statement": "Laut Hensoldt-Mitteilung vom 12. Dezember 2025 haben Hensoldt und die Rheinmetall Air Defence AG einen bis in die 2030er Jahre gültigen Rahmenvertrag über SPEXER-2000-Radare für bodengebundene Flugabwehr, insbesondere Drohnenabwehr und Skyranger 30, geschlossen; verschiedene Rheinmetall-Gesellschaften können darunter abrufen.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-9a5c062158c7a42c"
+   ],
+   "evidence": "Auszug: HENSOLDT is equipping air defence systems from Rheinmetall subsidiary Rheinmetall Air Defence AG with radars from its SPEXER 2000 product family. The companies have now signed a long-term framework agreement that will remain valid until the 2030s ... Various companies within the Rheinmetall Group can place orders",
+   "location": "Pressemitteilung 12/12/2025, Absätze 1–3",
+   "uncertainty": "Rahmenvolumen nicht verbindlich beziffert; keine Rheinmetall-Gegenmitteilung geöffnet.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2025-12-12",
+   "event_status": "Rahmenvertrag unterzeichnet (Abrufe nicht einzeln belegt)"
+  },
+  {
+   "id": "C-TI-03",
+   "statement": "Laut EDR Magazine (Wiedergabe der Unternehmensmitteilung) unterzeichneten Rheinmetall Electronics und MBDA Deutschland auf der ILA 2024 (5. Juni 2024) eine Absichtserklärung (LOI), MBDAs Small Anti Drone Missile in den Skyranger 30 und weitere Rheinmetall-Fahrzeuge zu integrieren und einen Werfer zu entwickeln und zu fertigen.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-f9b9880f37c53f47"
+   ],
+   "evidence": "Auszug: Rheinmetall Electronics and MBDA Deutschland signed a corresponding Letter of Intent (LOI) at ILA 2024 ... intend to integrate MBDA's Small Anti Drone Missile (SADM) into the Skyranger 30 and other Rheinmetall military vehicles",
+   "location": "Artikel vom 05.06.2024, Absätze 1–2",
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2024-06-05",
+   "event_status": "Absichtserklärung (LOI), kein Vertrag belegt"
+  },
+  {
+   "id": "C-TI-04",
+   "statement": "Laut The Defense Post (13.11.2025) hat Deutschland MBDA mit Entwicklung und Lieferung des Abfangflugkörpers DefendAir zur Integration in den Skyranger 30 beauftragt; der Haushaltsausschuss hatte rund 490 Mio. EUR gebilligt. Rheinmetall soll den erforderlichen Werfer bereits in den Turm integriert haben (laut Bericht 'reportedly').",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-2ea4c76a82bda463"
+   ],
+   "evidence": "Auszug: Germany has contracted MBDA to develop and supply the DefendAir anti-drone guided missile system for integration with the Skyranger 30 ... approximately 490 million euros ... Skyranger developer Rheinmetall has reportedly already incorporated the required launcher",
+   "location": "Artikel vom 13.11.2025, Absätze 1–2 und 6",
+   "uncertainty": "Sekundärquelle; Vertragsdokument/BAAINBw-Mitteilung nicht geöffnet; Gleichsetzung DefendAir = SADM laut Artikel ('also called Small Anti-Drone Missile').",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2025-11",
+   "event_status": "Auftrag an MBDA berichtet"
+  },
+  {
+   "id": "C-TI-05",
+   "statement": "HALCON (Teil der EDGE Group, VAE) und Rheinmetall kündigten auf der IDEX 2021 an, gemeinsam eine C-RAM-Lösung aus HALCONs Lenkflugkörper SkyKnight und Rheinmetalls Skynex anzubieten; laut HALCON-CEO ist Rheinmetall für die Integration verantwortlich und die VAE-Streitkräfte sollen erster Kunde sein. Laut Janes (24.02.2025) wird SkyKnight in Kooperation mit der Rheinmetall Air Defence in Skynex integriert, Testschüsse hatten begonnen und EDGE erwartet die volle Qualifikation bis Ende 2026.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-e59dc842147cf65f",
+    "S-faf804b35f3ff96a",
+    "S-ef86c664e3ccb75b"
+   ],
+   "evidence": "Auszug: We are pleased to team up with Rheinmetall ... jointly offer the world's most advanced and comprehensive C-RAM solution, leveraging our SkyKnight missile and Rheinmetall's Skynex solution, said Al Bannai | Auszug: HALCON, a part of EDGE Group ... in cooperation with Rheinmetall, who is responsible for the integration of the system ... UAE armed forces being the first customer | Auszug: The Skyknight air-defence system is built in co-operation with Rheinmetall Air Defence of Switzerland, with Skyknight integrating into Rheinmetall's Skynex ... By the end of 2026 Edge expects the missile to be fully qualified",
+   "location": "Artikel vom 23.02.2021, Zitat EDGE-CEO | Artikel vom 24.02.2021, Absätze 2–4 | Artikel vom 24.02.2025, Absätze 1–2 und 4",
+   "uncertainty": "Keine Rheinmetall-Primärmitteilung geöffnet; Kunden- oder Liefervertrag nicht belegt; Qualifikationsstatus zum Stichtag offen.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-e59dc842147cf65f",
+     "text": "We are pleased to team up with Rheinmetall ... jointly offer the world's most advanced and comprehensive C-RAM solution, leveraging our SkyKnight missile and Rheinmetall's Skynex solution, said Al Bannai",
+     "mode": "Auszug",
+     "location": "Artikel vom 23.02.2021, Zitat EDGE-CEO"
+    },
+    {
+     "source_id": "S-faf804b35f3ff96a",
+     "text": "HALCON, a part of EDGE Group ... in cooperation with Rheinmetall, who is responsible for the integration of the system ... UAE armed forces being the first customer",
+     "mode": "Auszug",
+     "location": "Artikel vom 24.02.2021, Absätze 2–4"
+    },
+    {
+     "source_id": "S-ef86c664e3ccb75b",
+     "text": "The Skyknight air-defence system is built in co-operation with Rheinmetall Air Defence of Switzerland, with Skyknight integrating into Rheinmetall's Skynex ... By the end of 2026 Edge expects the missile to be fully qualified",
+     "mode": "Auszug",
+     "location": "Artikel vom 24.02.2025, Absätze 1–2 und 4"
+    }
+   ],
+   "event_date": "2021-02",
+   "event_status": "Kooperation angekündigt 2021; Tests 2025 berichtet; Qualifikation erwartet (Partnerangabe)"
+  },
+  {
+   "id": "C-TI-06",
+   "statement": "Laut EDR Magazine (08.03.2021) hatte Rheinmetall für Skynex zuvor eine Kooperation mit Denel (Lenkflugkörper Cheetah) begonnen, die nach dem Bericht eingestellt wurde, bevor die Zusammenarbeit mit HALCON folgte; Rheinmetall führte SkyKnight zudem unter den für Skyranger 30 integrierbaren Flugkörpern.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-829071fd179d4705"
+   ],
+   "evidence": "Auszug: Rheinmetall considered adding a missile system to the Skynex, and started cooperation with Denel of South Africa, which proposed its Cheetah. This programme has however been since discontinued, and now the German company has teamed up with Halcon",
+   "location": "Artikel vom 08.03.2021, Absatz 2",
+   "uncertainty": "Nur eine Sekundärquelle; Zeitraum der Denel-Kooperation nicht angegeben.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2021-03-08",
+   "event_status": "historisch (eingestellt laut Bericht)"
+  },
+  {
+   "id": "C-TI-07",
+   "statement": "Rheinmetall hat 2025 seine 50-%-Beteiligung (gehalten über Rheinmetall Electronics GmbH) am Joint Venture AIM Infrarot-Module GmbH, Heilbronn, an den Mitgesellschafter Diehl Defence verkauft (Aufsichtsratszustimmung Anfang November 2025, Abgangsgewinn 46 Mio. EUR); der Diehl-Geschäftsbericht 2025 bestätigt die Übernahme der weiteren 50 % von Rheinmetall.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7",
+    "S-2fab023367922b5c"
+   ],
+   "evidence": "Auszug: stimmte der Aufsichtsrat dem Verkauf sämtlicher Anteile der Rheinmetall Electronics GmbH an der AIM Infrarot-Module GmbH an den Mitgesellschafter Diehl Defence GmbH & Co. KG zu | Auszug: Aus dem Abgang der 50%-Beteiligung am Technologie-Unternehmen AIM Infrarot-Module GmbH, Heilbronn, resultierte ein Gewinn von 46 MioEUR | Paraphrase: AIM Infrarot-Module GmbH, Heilbronn – 50 (at-equity) | Auszug: Diehl Defence war bislang mit einem Anteil von 50 Prozent an AIM beteiligt und hat im Berichtsjahr nun die weiteren 50 Prozent vom zweiten Gesellschafter Rheinmetall übernommen",
+   "location": "S. 15, Bericht des Aufsichtsrats | S. 234, Konzernanhang, Erläuterungen zur Bilanz | Geschäftsbericht 2024, S. 256 | Diehl Geschäftsbericht 2025, Bereich Defence, PDF S. 23 (gleichlautend S. 11)",
+   "uncertainty": "Genaues Vollzugsdatum nicht angegeben; Flugabwehrbezug von AIM (Infrarotdetektoren) nicht ausdrücklich beschrieben.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "stimmte der Aufsichtsrat dem Verkauf sämtlicher Anteile der Rheinmetall Electronics GmbH an der AIM Infrarot-Module GmbH an den Mitgesellschafter Diehl Defence GmbH & Co. KG zu",
+     "mode": "Auszug",
+     "location": "S. 15, Bericht des Aufsichtsrats"
+    },
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "Aus dem Abgang der 50%-Beteiligung am Technologie-Unternehmen AIM Infrarot-Module GmbH, Heilbronn, resultierte ein Gewinn von 46 MioEUR",
+     "mode": "Auszug",
+     "location": "S. 234, Konzernanhang, Erläuterungen zur Bilanz"
+    },
+    {
+     "source_id": "S-b159a0c9329835a7",
+     "text": "AIM Infrarot-Module GmbH, Heilbronn – 50 (at-equity)",
+     "mode": "Paraphrase",
+     "location": "Geschäftsbericht 2024, S. 256"
+    },
+    {
+     "source_id": "S-2fab023367922b5c",
+     "text": "Diehl Defence war bislang mit einem Anteil von 50 Prozent an AIM beteiligt und hat im Berichtsjahr nun die weiteren 50 Prozent vom zweiten Gesellschafter Rheinmetall übernommen",
+     "mode": "Auszug",
+     "location": "Diehl Geschäftsbericht 2025, Bereich Defence, PDF S. 23 (gleichlautend S. 11)"
+    }
+   ],
+   "event_date": "2025",
+   "event_status": "vollzogen laut beiden Geschäftsberichten (historische Beziehung)"
+  },
+  {
+   "id": "C-TI-08",
+   "statement": "Laut Diehl-Geschäftsbericht 2025 hat Diehl Defence im Berichtsjahr Vereinbarungen mit neuen Partnern wie EDGE aus den Vereinigten Arabischen Emiraten getroffen.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-2fab023367922b5c"
+   ],
+   "evidence": "Auszug: Hierzu gehören Vereinbarungen mit neuen Partnern wie EDGE aus den Vereinigten Arabischen Emiraten",
+   "location": "Diehl Geschäftsbericht 2025, Bereich Defence, PDF S. 22",
+   "uncertainty": "Gegenstand und Art der Vereinbarung im Bericht nicht genannt; kein Bezug zu Rheinmetall.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2025",
+   "event_status": "Vereinbarung berichtet (Gegenstand nicht genannt)"
+  },
+  {
+   "id": "C-TI-09",
+   "statement": "Laut Rheinmetall-Pressemitteilung (23.02.2024) liefert Rheinmetall 36 Skyranger-30-Systeme auf Pandur-EVO-6x6-Fahrzeugen für Österreich als Unterauftragnehmer von GDELS; Bewaffnung 30-mm-Kanone und Mistral-Lenkflugkörper, Lieferbeginn 2026, Auftragswert im mittleren dreistelligen Millionen-Euro-Bereich.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-562f0f3f359a746b"
+   ],
+   "evidence": "Auszug: Austria procuring 36 Skyranger 30 air defence systems on Pandur EVO 6x6 vehicles from GDELS ... Rheinmetall is serving as a subcontractor of GDELS ... guided missiles, in this case the Mistral ... Delivery commences in 2026",
+   "location": "Pressemitteilung 23.02.2024, Aufzählung und Absätze 1–3",
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2024-02-23",
+   "event_status": "beauftragt (Lieferbeginn 2026 angekündigt)"
+  },
+  {
+   "id": "C-GCC-01",
+   "statement": "Barzan Holdings (Katar) und die Rheinmetall AG gründeten laut Qatar Tribune auf der DIMDEX 2018 das Joint Venture Rheinmetall Barzan Advanced Technologies (RBAT) mit den Zielen Munitionsfertigung in Katar, Schutz strategischer Einrichtungen/kritischer Infrastruktur sowie Forschung zu UGV und Hochenergielaser. Laut Gulf Times unterzeichnete RBAT dort u. a. eine Notice to Proceed für ein Munitionswerk (Mittelkaliber bis Fliegerbomben und Flugkörpermontage) und eine Vereinbarung mit den Qatar Emiri Naval Forces über Schutz kritischer Infrastruktur für einen neuen Marinestützpunkt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f1384405c8dd2505",
+    "S-4423d24b37b6b642"
+   ],
+   "evidence": "Auszug: Barzan Holdings signed a JV agreement with large German defence company Rheinmetall AG and the agreement creates a JV called Rheinmetall Barzan Advanced Technologies (RBAT) that will develop an ammunition manufacturing base in Qatar, provide security for strategic venues and critical infrastructure in Qatar, and develop research in UGV ... and HEL | Auszug: RBAT signed a notice to proceed to build an ammunition production plant in Qatar ... ranging from medium calibre rounds to aircraft bombs and missile assembly ... RBAT signed an agreement with the Qatar Emiri Naval Forces to provide critical infrastructure protection ... for a new naval base",
+   "location": "Artikel vom 14.03.2018, Absatz zu Rheinmetall | Artikel vom 15.03.2018, Absätze 4–7",
+   "uncertainty": "Katarische Medien geben Barzan-Mitteilung wieder; keine Rheinmetall-Primärquelle geöffnet; Quoten der Gesellschafter dort nicht genannt (49 % Rheinmetall laut C-STR-07).",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-f1384405c8dd2505",
+     "text": "Barzan Holdings signed a JV agreement with large German defence company Rheinmetall AG and the agreement creates a JV called Rheinmetall Barzan Advanced Technologies (RBAT) that will develop an ammunition manufacturing base in Qatar, provide security for strategic venues and critical infrastructure in Qatar, and develop research in UGV ... and HEL",
+     "mode": "Auszug",
+     "location": "Artikel vom 14.03.2018, Absatz zu Rheinmetall"
+    },
+    {
+     "source_id": "S-4423d24b37b6b642",
+     "text": "RBAT signed a notice to proceed to build an ammunition production plant in Qatar ... ranging from medium calibre rounds to aircraft bombs and missile assembly ... RBAT signed an agreement with the Qatar Emiri Naval Forces to provide critical infrastructure protection ... for a new naval base",
+     "mode": "Auszug",
+     "location": "Artikel vom 15.03.2018, Absätze 4–7"
+    }
+   ],
+   "event_date": "2018-03",
+   "event_status": "JV gegründet; Werk per Notice to Proceed beauftragt, Fertigstellung nicht belegt"
+  },
+  {
+   "id": "C-GCC-02",
+   "statement": "Laut Aviation Week und Janes (07.03.2022) gründeten Rheinmetall Air Defence und die saudische MAZ Group auf der World Defense Show 2022 das Joint Venture RADARABIA (auch RAD Arabia Co.) für Fertigung, Instandhaltung (MRO), Ersatzteile und Ausbildung bei boden- und seegestützten Flugabwehrsystemen mit einem Werk in Dschidda; nach Janes betrifft dies insbesondere MRO an Skyguard-Flugabwehrkanonen der Royal Saudi Air Defense Forces, und laut beiden Unternehmen soll Technologietransfer aus der Schweizer Oerlikon-Einheit 60 % Lokalisierung ermöglichen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-7dbdfac4d40d7b07",
+    "S-458cf180e9a20818",
+    "S-d401a7e147a6b2d4"
+   ],
+   "evidence": "Auszug: Rheinmetall Air Defense and MAZ Group have joined forces to create the local joint venture RADARABIA ... will build a factory in the Kingdom of Saudi Arabia with an area of 25,000 square meters ... maintain the equipment and produce the spare parts | Auszug: The joint venture will establish a 25,000 sq ft factory in Jeddah, which will undertake maintenance, repair, and overhaul (MRO) work on Skyguard anti-aircraft guns operated by the Royal Saudi Air Defense Forces ... technology will be transferred from Rheinmetall's Swiss-based Oerlikon subsidiary to enable 60% localisation | Auszug: Rheinmetall Defense and Saudi MAZ Group announced the establishment of the RAD Arabia Co. ... factory in Jeddah, which spans over an area of 25,000 square meters",
+   "location": "Artikel vom 07.03.2022, Absätze 1–4 | Artikel vom 07.03.2022, Absätze 1–3 | Artikel vom 07.03.2022, Absätze 2 und 5",
+   "uncertainty": "Widerspruch bei Werksfläche (25.000 m² laut Aviation Week/Argaam vs. 25.000 sq ft laut Janes); 60 % Lokalisierung ist Unternehmensangabe; keine Rheinmetall-Primärmitteilung gefunden.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-7dbdfac4d40d7b07",
+     "text": "Rheinmetall Air Defense and MAZ Group have joined forces to create the local joint venture RADARABIA ... will build a factory in the Kingdom of Saudi Arabia with an area of 25,000 square meters ... maintain the equipment and produce the spare parts",
+     "mode": "Auszug",
+     "location": "Artikel vom 07.03.2022, Absätze 1–4"
+    },
+    {
+     "source_id": "S-458cf180e9a20818",
+     "text": "The joint venture will establish a 25,000 sq ft factory in Jeddah, which will undertake maintenance, repair, and overhaul (MRO) work on Skyguard anti-aircraft guns operated by the Royal Saudi Air Defense Forces ... technology will be transferred from Rheinmetall's Swiss-based Oerlikon subsidiary to enable 60% localisation",
+     "mode": "Auszug",
+     "location": "Artikel vom 07.03.2022, Absätze 1–3"
+    },
+    {
+     "source_id": "S-d401a7e147a6b2d4",
+     "text": "Rheinmetall Defense and Saudi MAZ Group announced the establishment of the RAD Arabia Co. ... factory in Jeddah, which spans over an area of 25,000 square meters",
+     "mode": "Auszug",
+     "location": "Artikel vom 07.03.2022, Absätze 2 und 5"
+    }
+   ],
+   "event_date": "2022-03-06",
+   "event_status": "JV-Gründung angekündigt; Werksbetrieb zum Stichtag nicht belegt"
+  },
+  {
+   "id": "C-GCC-03",
+   "statement": "Laut Argaam (07.03.2022) erklärte Rheinmetall-Verwaltungsratsmitglied Zino Hart bei der RADARABIA-Gründung, Saudi-Arabien sei seit vielen Jahren einer der größten Kunden von Rheinmetall; nach Janes betreiben die Royal Saudi Air Defense Forces Skyguard-Flugabwehrkanonen, für die RADARABIA MRO-Leistungen übernehmen soll.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-d401a7e147a6b2d4",
+    "S-458cf180e9a20818"
+   ],
+   "evidence": "Auszug: The company executive indicated that Rheinmetall has chosen the Kingdom as one of its largest customers for many years | Auszug: Skyguard anti-aircraft guns operated by the Royal Saudi Air Defense Forces",
+   "location": "Artikel vom 07.03.2022, Absatz 3 | Artikel vom 07.03.2022, Absatz 2",
+   "uncertainty": "Keine konkreten Saudi-Verträge mit Rheinmetall Air Defence öffentlich geöffnet; Kundenbeziehung beruht auf Herstellerangabe und Betreiberhinweis.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-d401a7e147a6b2d4",
+     "text": "The company executive indicated that Rheinmetall has chosen the Kingdom as one of its largest customers for many years",
+     "mode": "Auszug",
+     "location": "Artikel vom 07.03.2022, Absatz 3"
+    },
+    {
+     "source_id": "S-458cf180e9a20818",
+     "text": "Skyguard anti-aircraft guns operated by the Royal Saudi Air Defense Forces",
+     "mode": "Auszug",
+     "location": "Artikel vom 07.03.2022, Absatz 2"
+    }
+   ],
+   "event_date": "2022-03-07",
+   "event_status": "Kundenbeziehung als Herstellerangabe berichtet; Verträge/Volumina nicht öffentlich belegt"
+  },
+  {
+   "id": "C-GCC-04",
+   "statement": "Laut Army Recognition (17.11.2025), unter Berufung auf Tactical Report vom 12.11.2025, prüft Saudi-Arabien den Skyranger 30 und behält sein Interesse daran bei; ein Vertrag ist nicht unterzeichnet. Eine Delegation der SAMI-Sparte Land Systems soll in den Vormonaten das Rheinmetall-Werk in Kassel besucht haben.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f06315f4acc363fb"
+   ],
+   "evidence": "Auszug: As reported by Tactical Report on November 12, 2025, Saudi Arabia ... keeping its interest in Rheinmetall's Skyranger 30 ... A delegation from Saudi Arabian Military Industries (SAMI)' Land Systems division had visited Rheinmetall's facility in Kassel ... Saudi Arabia, which has not yet signed a contract",
+   "location": "Artikel vom 17.11.2025, Absätze 2 und letzter Absatz",
+   "uncertainty": "Sekundärquelle, die einen nicht geöffneten Bezahldienst zitiert; keine Bestätigung durch Rheinmetall, SAMI oder saudische Behörden. Nicht als Netzwerkkante übernommen.",
+   "proposed_depth": "B",
+   "depth_reason": "Hinweis ohne belegte Beziehung",
+   "event_date": "2025-11-12",
+   "event_status": "Interesse/Gespräche berichtet; kein Vertrag"
+  },
+  {
+   "id": "C-GCC-05",
+   "statement": "Laut Defense News (06.04.2016, unter Berufung auf die Saudi Press Agency) eröffneten Rheinmetall Denel Munition (RDM) und die saudische Military Industries Corporation 2016 im Rüstungskomplex Al-Kharj ein Werk für Mörser-, Artillerie- und Fliegerbombenmunition. Der südafrikanische Minister für öffentliche Unternehmen stellte dagegen in einer parlamentarischen Antwort (Frage vom 20.05.2016) fest, es sei kein Joint Venture mit der MIC gebildet worden; RDM habe das Werk als schlüsselfertige Lösung im Rahmen einer Lieferanten-Kunden-Beziehung geplant und gebaut.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-05ab0d04fb7863ad",
+    "S-549848d0df9ec6ae"
+   ],
+   "evidence": "Auszug: Rheinmetall Denel Munition (RDM) and Saudi Military Industries Corp. (SAMIC) have opened a joint weapons factory ... in the Al-Kharj military industrial complex | Auszug: No merger or any kind of joint venture has been formed between Denel SOC Ltd, its subsidiaries or associated companies and the Military Industries Corporation (MIC) ... Rheinmetall Denel Munition (Pty) Ltd ... has designed and built the plant on a turnkey solution basis, as part of the supplier customer transaction arrangement",
+   "location": "Artikel vom 06.04.2016, Absätze 1–3 | Antwort auf Frage NW1259, Punkt 1",
+   "uncertainty": "Widerspruch zur Beziehungsart (gemeinsames Werk vs. schlüsselfertige Lieferung); Netzwerk führt die amtlich beschriebene Lieferbeziehung. Antwortdatum der Parlamentsantwort nicht ausgewiesen.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-05ab0d04fb7863ad",
+     "text": "Rheinmetall Denel Munition (RDM) and Saudi Military Industries Corp. (SAMIC) have opened a joint weapons factory ... in the Al-Kharj military industrial complex",
+     "mode": "Auszug",
+     "location": "Artikel vom 06.04.2016, Absätze 1–3"
+    },
+    {
+     "source_id": "S-549848d0df9ec6ae",
+     "text": "No merger or any kind of joint venture has been formed between Denel SOC Ltd, its subsidiaries or associated companies and the Military Industries Corporation (MIC) ... Rheinmetall Denel Munition (Pty) Ltd ... has designed and built the plant on a turnkey solution basis, as part of the supplier customer transaction arrangement",
+     "mode": "Auszug",
+     "location": "Antwort auf Frage NW1259, Punkt 1"
+    }
+   ],
+   "event_date": "2016-03-27",
+   "event_status": "historisch; Anlagenlieferung abgeschlossen laut Berichten"
+  },
+  {
+   "id": "C-GCC-06",
+   "statement": "Laut Reuters-Bericht in Gulf News (08.11.2018) bot Saudi-Arabien über SAMI 1 Mrd. USD für eine breite Partnerschaft mit Denel, die nach einer Quelle auch den Erwerb von Denels 49-%-Anteil an Rheinmetall Denel Munition umfassen sollte; SAMI-CEO Andreas Schwer bestätigte Gespräche, aber keinen Abschluss. Rheinmetall weist zum Stichtag 31.12.2025 weiterhin einen 49-%-Fremdanteil an RDM aus und nennt auf seiner Website Denel als 49-%-Gesellschafter.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-d86e149497cf99ac"
+   ],
+   "evidence": "Auszug: Saudi Arabia has made a $1 billion bid for a broad partnership with ... Denel that would include acquisition of a minority stake in a joint venture with Germany's Rheinmetall ... targeting Denel's 49 per cent stake in Rheinmetall Denel Munition",
+   "location": "Artikel vom 08.11.2018, Absätze 1–3 und 5",
+   "uncertainty": "Anonyme Quelle; Ausgang des Angebots nicht ausdrücklich berichtet; Fortbestand von Denels Anteil nur aus Rheinmetall-Angaben (C-STR-04).",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "depends_on": [
+    "C-STR-04"
+   ],
+   "event_date": "2018-11-08",
+   "event_status": "Angebot berichtet; Vollzug nicht belegt (historisch)"
+  },
+  {
+   "id": "C-GCC-07",
+   "statement": "Laut Arab News (25.02.2019) ist Andreas Schwer seit Januar 2018 CEO der Saudi Arabian Military Industries (SAMI); zuvor war er 2012–2015 Mitglied der Geschäftsleitung von Rheinmetall Defence (CEO der Division Combat Systems) und 2016–2017 Chairman und President der Rheinmetall International AG, zuständig u. a. für Gesellschaften und Joint Ventures in Exportmärkten wie dem Nahen Osten.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5ac272b822ef96f9"
+   ],
+   "evidence": "Auszug: Schwer has been working as the chief executive officer of the Saudi Arabian Military Industries (SAMI) since January 2018 ... member of the executive management board of Rheinmetall Defense ... between 2012 and 2015 ... chairman and president of Rheinmetall International AG for two years between 2016 and 2017",
+   "location": "Profil vom 25.02.2019, Absätze 1 und 4–5",
+   "uncertainty": "Aktuelle Funktion von Schwer zum Stichtag nicht geprüft; nur öffentliche berufliche Angaben.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2019-02-25",
+   "event_status": "Stand Februar 2019; aktuelle Funktion nicht geprüft"
+  },
+  {
+   "id": "C-GCC-08",
+   "statement": "Laut Janes (14.10.2022) verfügen die Qatar Emiri Air Defence Forces über Rheinmetalls Skynex, wie ein am 13.10.2022 veröffentlichtes Video des katarischen Verteidigungsministeriums (Übung 'Shield 6 (Skynex)') zeigte; laut Janes (15.12.2022) bestätigte Rheinmetall gegenüber Janes, dass die ersten gelieferten Skynex-Systeme für Katar bestimmt waren.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-18fa7e4158bdc58b",
+    "S-f71c0348db6067c4"
+   ],
+   "evidence": "Auszug: The Qatar Emiri Air Defence Forces (QEADF) now has the Rheinmetall Skynex short-range air-defence system, the Qatari Ministry of Defence (MoD) revealed on 13 October when it released a video | Auszug: Rheinmetall has confirmed that the first Skynex systems it supplied were for Qatar",
+   "location": "Artikel vom 14.10.2022, Absatz 1 | Artikel vom 15.12.2022, letzter frei lesbarer Absatz",
+   "uncertainty": "Rheinmetall-Bestätigung nur über Janes überliefert; Vertragsdatum, Umfang und Wert nicht öffentlich bestätigt.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-18fa7e4158bdc58b",
+     "text": "The Qatar Emiri Air Defence Forces (QEADF) now has the Rheinmetall Skynex short-range air-defence system, the Qatari Ministry of Defence (MoD) revealed on 13 October when it released a video",
+     "mode": "Auszug",
+     "location": "Artikel vom 14.10.2022, Absatz 1"
+    },
+    {
+     "source_id": "S-f71c0348db6067c4",
+     "text": "Rheinmetall has confirmed that the first Skynex systems it supplied were for Qatar",
+     "mode": "Auszug",
+     "location": "Artikel vom 15.12.2022, letzter frei lesbarer Absatz"
+    }
+   ],
+   "event_date": "2022-10-13",
+   "event_status": "Lieferung/Betrieb berichtet"
+  },
+  {
+   "id": "C-GCC-09",
+   "statement": "Laut Janes (01.11.2019) meldete Rheinmetall am 30.10.2019 einen Auftrag eines nicht genannten internationalen Kunden über rund 210 Mio. EUR für Kurzstrecken-Flugabwehr (Skymaster, X-TAR3D-Radare, Revolver Gun Mk3) mit Lieferabschluss 2022; Rheinmetall konnte Kunde und Region nicht nennen, deutete aber einen Zusammenhang mit dem Angriff auf saudische Ölanlagen vom 14.09.2019 an. Janes stellte 2022 einen Bezug zur Katar-Lieferung her, Rheinmetall hat den katarischen Vertrag aber nicht bekanntgegeben.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-eb780da12d4e3349",
+    "S-18fa7e4158bdc58b"
+   ],
+   "evidence": "Auszug: Rheinmetall announced on 30 October that it had been awarded a EUR210 million ... contract to supply its latest short-range air defence systems to an international customer ... unable to identify the customer or its region but suggested the contract was related to the 14 September ... attack on Saudi oil facilities | Auszug: While Rheinmetall has not announced its Qatari contract, it said in October 2019 that an international customer ... had placed a contract worth around EUR210 million",
+   "location": "Artikel vom 01.11.2019, Absätze 1 und 3 | Artikel vom 14.10.2022, letzter Absatz",
+   "uncertainty": "Zuordnung des 2019er Auftrags zu Katar ist nicht offiziell bestätigt.",
+   "proposed_depth": "B",
+   "depth_reason": "Kontext zur Kundenzuordnung, keine eigene Kante",
+   "evidence_items": [
+    {
+     "source_id": "S-eb780da12d4e3349",
+     "text": "Rheinmetall announced on 30 October that it had been awarded a EUR210 million ... contract to supply its latest short-range air defence systems to an international customer ... unable to identify the customer or its region but suggested the contract was related to the 14 September ... attack on Saudi oil facilities",
+     "mode": "Auszug",
+     "location": "Artikel vom 01.11.2019, Absätze 1 und 3"
+    },
+    {
+     "source_id": "S-18fa7e4158bdc58b",
+     "text": "While Rheinmetall has not announced its Qatari contract, it said in October 2019 that an international customer ... had placed a contract worth around EUR210 million",
+     "mode": "Auszug",
+     "location": "Artikel vom 14.10.2022, letzter Absatz"
+    }
+   ],
+   "event_date": "2019-10-30",
+   "event_status": "Auftrag gemeldet; Kunde nicht offiziell benannt"
+  },
+  {
+   "id": "C-GCC-10",
+   "statement": "Laut SRF (12.07.2022) bestanden die von SECO bewilligten Schweizer Kriegsmaterialexporte nach Katar im ersten Halbjahr 2022 hauptsächlich aus Flugabwehrsystemen zum Schutz der Stadien der Fußball-WM; Katar erhielt nach SECO acht Kanonen samt Munition und musste schriftlich garantieren, sie nicht an Drittstaaten weiterzugeben und Vor-Ort-Kontrollen zuzulassen. Saudi-Arabien erhielt ausschließlich Ersatzteile und Munition für Flugabwehrsysteme; Exporte, die für den Jemen-Konflikt geeignet sind, werden laut SECO nicht bewilligt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-2110be9897c66baf"
+   ],
+   "evidence": "Auszug: Bei den Exporten nach Katar handelt es sich nach Angaben des Seco hauptsächlich um Flugabwehrsysteme ... Katar erhielt acht Kanonen samt Munition ... schriftlich garantieren ... Saudi-Arabien erhielt ausschliesslich Ersatzteile und Munition für Flugabwehrsysteme",
+   "location": "Artikel vom 12.07.2022, Abschnitte 'Flugabwehrsysteme für Fussball-WM' und 'Auflagen für Saudi-Arabien'",
+   "uncertainty": "Hersteller wird im Bericht nicht genannt; Verknüpfung mit Rheinmetall Air Defence nicht belegt, daher keine Netzwerkkante.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2022-07-12",
+   "event_status": "Exportbewilligung/Ausfuhr berichtet"
+  },
+  {
+   "id": "C-GCC-11",
+   "statement": "Laut Rheinmetall-Pressemitteilung (10.07.2026) beauftragten die Kuwaiti Naval Forces Rheinmetall erstmals mit dem Täuschkörper-Schutzsystem MASS samt Omnitrap-Munition für acht Schiffe der Al-Dorra-Klasse (Auftragswert im unteren zweistelligen plus hohen einstelligen Mio.-EUR-Bereich, gebucht Q2 2026, Lieferung bis Q2 2029); die Boote baut Abu Dhabi Shipbuilding im Auftrag der EDGE Group als Generalunternehmer.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-a831015ab01561c0"
+   ],
+   "evidence": "Auszug: Rheinmetall is supplying the Kuwaiti Naval Forces with Multi Ammunition Softkill Systems (MASS). This is the first delivery of the decoy launcher to Kuwait ... They are being built by Abu Dhabi Shipbuilding on behalf of the United Arab Emirates-based EDGE Group, which is acting as the prime contractor",
+   "location": "Pressemitteilung 2026-07-10, Absätze 1–2",
+   "uncertainty": "Vertragsrichtung (Kuwait direkt oder über EDGE) in der Mitteilung nicht eindeutig; gemeinsame Programmteilnahme von Rheinmetall und EDGE belegt keinen bilateralen Vertrag.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2026-07-10",
+   "event_status": "beauftragt (Q2 2026 gebucht)"
+  },
+  {
+   "id": "C-GCC-12",
+   "statement": "Laut NZZ (20.03.2026) erklärte Rheinmetall-CEO Armin Papperger in einem Interview, Skynex sei erprobt und u. a. in mehreren Golfstaaten im Einsatz; zugleich kritisierte er die restriktive Schweizer Exportgesetzgebung.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-5d5582a381f69b08"
+   ],
+   "evidence": "Auszug: Das Skynex-System ist erprobt und unter anderem in mehreren Golfstaaten im Einsatz, wie der CEO von Rheinmetall, Armin Papperger, kürzlich in einem Interview erklärt hatte. Gleichzeitig kritisierte er die restriktive Exportgesetzgebung der Schweiz",
+   "location": "Artikel vom 20.03.2026, Absatz zu Skynex",
+   "uncertainty": "Golfstaaten nicht namentlich genannt; Interview selbst nicht geöffnet.",
+   "proposed_depth": "B",
+   "depth_reason": "Herstellerangabe ohne Länderzuordnung",
+   "event_date": "2026-03",
+   "event_status": "Herstellerangabe berichtet"
+  },
+  {
+   "id": "C-GCC-13",
+   "statement": "Laut Rheinmetall-Pressemitteilung (02.07.2026) verbuchte Rheinmetall im zweiten Quartal 2026 den Erstauftrag eines neuen, nicht genannten internationalen Kunden über vier Skynex-Systeme im Wert von mehreren hundert Mio. EUR (Lieferung innerhalb von 39 Monaten); Hauptauftragnehmer ist die Rheinmetall Italia S.p.A., beteiligt sind u. a. Rheinmetall Air Defence, Rheinmetall MAN Military Vehicles und Rheinmetall Waffe Munition (Schweiz).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-038334f593d8d949"
+   ],
+   "evidence": "Auszug: Bei dem im zweiten Quartal 2026 verbuchten Auftrag handelt es sich um den Erstauftrag eines neuen internationalen Kunden im Wert von mehreren hundert Millionen Euro ... Rheinmetall Italia S.p.A. fungiert als Hauptauftragnehmer ... Rheinmetall Air Defence, Rheinmetall MAN Military Vehicles und Rheinmetall Waffe Munition (Schweiz)",
+   "location": "Pressemitteilung 02.07.2026, Absätze 2–3",
+   "uncertainty": "Kunde und Land nicht genannt; keine öffentliche Zuordnung zu einem GCC-Staat gefunden.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2026-07-02",
+   "event_status": "beauftragt (Kunde nicht genannt)"
+  },
+  {
+   "id": "C-KD-01",
+   "statement": "Laut Rheinmetall-Pressemitteilung (27.02.2024) beauftragte die Bundeswehr Rheinmetall mit einem Prototyp und 18 Serienfahrzeugen Skyranger 30 auf Boxer (595 Mio. EUR inkl. MwSt., Option auf 30 weitere Systeme; Bewaffnung Stinger).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-b8a3496f93a22c8c"
+   ],
+   "evidence": "Auszug: Worth €595 million (including value added tax), the contract encompasses delivery of a prototype and another 18 series production vehicles. In addition, an option exists for a further 30 systems ... armed with Stinger missiles",
+   "location": "Pressemitteilung 27.02.2024, Absätze 1–2",
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2024-02-27",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "C-KD-02",
+   "statement": "Laut Rheinmetall-Pressemitteilung (12.12.2025) beauftragte das niederländische Verteidigungsministerium die Rheinmetall Air Defence mit einer zweistelligen Zahl Skyranger-Systeme (hoher dreistelliger Mio.-EUR-Wert; Lieferung Ende 2028 bis Ende 2029).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-60677f3d57da054d"
+   ],
+   "evidence": "Auszug: The Dutch Ministry of Defence has commissioned Rheinmetall Air Defence to supply a two-digit number of Skyranger air defence systems ... first ... delivered at the end of 2028, with the final delivery scheduled before the end of 2029",
+   "location": "Pressemitteilung 12/12/2025, Absatz 1",
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2025-12-12",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "C-KD-03",
+   "statement": "Laut Rheinmetall-Pressemitteilung (24.06.2026) beauftragte die rumänische Regierung Rheinmetall mit 24 Skyranger-35-Systemen auf Lynx KF41 sowie sieben Skynex-Systemen und zwei Millennium Guns als Teil eines Gesamtauftrags von 5,7 Mrd. EUR.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-6bdb338d23c29e11"
+   ],
+   "evidence": "Auszug: The Romanian government has awarded the company a contract to supply Skyranger 35 air defence systems ... part of a historic major order worth €5.7 billion ... includes not only 24 Skyranger 35 systems, but also seven Skynex systems and two Millennium Guns",
+   "location": "Pressemitteilung 24/06/2026, Absatz 1",
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2026-06-24",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "C-KD-04",
+   "statement": "Laut Geschäftsbericht 2025 wurde 2025 in Italien das 35-mm-Skynex-Flugabwehrsystem eingeführt; die Business Unit Air Defence and Radar Systems lieferte 2025 weitere Skyranger- und Skynex-Systeme an europäische Kunden, und der Auftragsbestand enthält u. a. den Entwicklungsvertrag LVS NNbS und den Liefervertrag Skyranger 30.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Auszug: So wurde z. B. im abgelaufenen Geschäftsjahr in Italien das 35mm-Skynex-Flugabwehrsystem eingeführt | Auszug: Business Unit Air Defence and Radar Systems mit der Lieferung weiterer Skyranger- und Skynex-Flugabwehrsysteme – jeweils an europäische Kunden ... Entwicklungsvertrag für das Luftverteidigungssystem Nah- und Nächstbereichsschutz (LVS NNbS) sowie ... Liefervertrag für das mobile Flugabwehrsystem Skyranger 30",
+   "location": "S. 39, Zusammengefasster Lagebericht, Strategie | S. 65, Zusammengefasster Lagebericht, Geschäftsverlauf in den Segmenten (Electronic Solutions)",
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "So wurde z. B. im abgelaufenen Geschäftsjahr in Italien das 35mm-Skynex-Flugabwehrsystem eingeführt",
+     "mode": "Auszug",
+     "location": "S. 39, Zusammengefasster Lagebericht, Strategie"
+    },
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "Business Unit Air Defence and Radar Systems mit der Lieferung weiterer Skyranger- und Skynex-Flugabwehrsysteme – jeweils an europäische Kunden ... Entwicklungsvertrag für das Luftverteidigungssystem Nah- und Nächstbereichsschutz (LVS NNbS) sowie ... Liefervertrag für das mobile Flugabwehrsystem Skyranger 30",
+     "mode": "Auszug",
+     "location": "S. 65, Zusammengefasster Lagebericht, Geschäftsverlauf in den Segmenten (Electronic Solutions)"
+    }
+   ],
+   "event_date": "2025",
+   "event_status": "Einführung/Lieferungen laut Bericht"
+  },
+  {
+   "id": "C-KD-05",
+   "statement": "Laut NZZ (20.03.2026) sieht die Schweizer Armeebotschaft 2026 die freihändige Beschaffung von 32 Skynex-Systemen der Rheinmetall Air Defence samt Munition vor (Verpflichtungskredit 800 Mio. CHF, Auslieferung ab 2028); eine verbindliche Rheinmetall-Offerte lag dem VBS laut Botschaft noch nicht vor.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5d5582a381f69b08"
+   ],
+   "evidence": "Auszug: Für die geplanten 32 Systeme samt Munition ist ein Verpflichtungskredit von insgesamt 800 Millionen Franken vorgesehen ... dem VBS bislang keine verbindliche Offerte von Rheinmetall vor ... «freihändige Vergabe»",
+   "location": "Artikel vom 20.03.2026, Abschnitt Drohnenabwehr",
+   "uncertainty": "Armeebotschaft selbst nicht geöffnet; parlamentarischer Beschluss zum Stichtag nicht geprüft.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2026-03-20",
+   "event_status": "Beschaffung beantragt (Armeebotschaft); kein Vertrag belegt"
+  },
+  {
+   "id": "C-EX-01",
+   "statement": "Laut Handelsblatt (20.03.2026) erleichterte die Bundesregierung per befristeter Allgemeingenehmigung die Ausfuhr bestimmter Güter zur Luft- und Marineverteidigung nach Saudi-Arabien, VAE, Katar, Kuwait, Bahrain, Oman und in die Ukraine ohne Einzelantrag beim BAFA (mit Registrierungs- und monatlichen Meldepflichten); Wirtschaftsministerin Reiche begründete dies mit iranischen Angriffen auf die Golfstaaten. Laut BAFA (AGG Nr. 48) wurde die Genehmigung mit Bekanntgabe vom 10.09.2026 bis 15.09.2027 verlängert.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-029c4a01d549a4b2",
+    "S-c99327dbed7f6de5"
+   ],
+   "evidence": "Auszug: Die Bundesregierung vereinfacht die Ausfuhr von bestimmten Rüstungsgütern zur Luft- und Seeverteidigung an die Golfstaaten und die Ukraine ... Saudi-Arabien, ... Vereinigten Arabischen Emirate, ... Katar, Kuwait, Bahrain, Oman ... ohne zuvor einen einzelnen Antrag ... bis zum 15. September 2026 befristet | Paraphrase: AGG Nr. 48 (Ausfuhr ... von Rüstungsgütern in bestimmte Länder zu Verteidigungszwecken): Bahrain, Katar, Kuwait, Oman, Saudi-Arabien, VAE, Ukraine; Güter der Luft- und Marineverteidigung; verlängert bis 15.09.2027, Bekanntgabe 10.09.2026; Abschnitt II Punkt 6.6 neu",
+   "location": "Artikel vom 20.03.2026, Absätze 1–3 | Übersichtsseite Allgemeine Genehmigungen, Abschnitt AGG Nr. 48 (per Abrufwerkzeug zusammengefasst gelesen)",
+   "uncertainty": "Ursprüngliches Laufzeitende abweichend angegeben (15.09.2026 laut Handelsblatt vs. 09.09.2026 laut BAFA-Übersicht); Volltext der AGG und BMWE-Mitteilung nicht geöffnet (Zugriffssperre); keine Rheinmetall-spezifische Nutzung belegt.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "evidence_items": [
+    {
+     "source_id": "S-029c4a01d549a4b2",
+     "text": "Die Bundesregierung vereinfacht die Ausfuhr von bestimmten Rüstungsgütern zur Luft- und Seeverteidigung an die Golfstaaten und die Ukraine ... Saudi-Arabien, ... Vereinigten Arabischen Emirate, ... Katar, Kuwait, Bahrain, Oman ... ohne zuvor einen einzelnen Antrag ... bis zum 15. September 2026 befristet",
+     "mode": "Auszug",
+     "location": "Artikel vom 20.03.2026, Absätze 1–3"
+    },
+    {
+     "source_id": "S-c99327dbed7f6de5",
+     "text": "AGG Nr. 48 (Ausfuhr ... von Rüstungsgütern in bestimmte Länder zu Verteidigungszwecken): Bahrain, Katar, Kuwait, Oman, Saudi-Arabien, VAE, Ukraine; Güter der Luft- und Marineverteidigung; verlängert bis 15.09.2027, Bekanntgabe 10.09.2026; Abschnitt II Punkt 6.6 neu",
+     "mode": "Paraphrase",
+     "location": "Übersichtsseite Allgemeine Genehmigungen, Abschnitt AGG Nr. 48 (per Abrufwerkzeug zusammengefasst gelesen)"
+    }
+   ],
+   "event_date": "2026-03-20",
+   "event_status": "in Kraft; verlängert (Stand BAFA-Seite)"
+  },
+  {
+   "id": "C-EX-02",
+   "statement": "Der Schweizer Bundesrat entschied am 20.03.2026, dass Kriegsmaterialausfuhren an die in den internationalen bewaffneten Konflikt mit Iran verwickelten Länder für die Dauer des Konflikts nicht bewilligt werden können; die Mitteilung nennt ausdrücklich die USA (seit 28.02.2026 keine neuen Bewilligungen) und lässt bestehende Bewilligungen durch eine interdepartementale Expertengruppe prüfen. Golfstaaten werden in der Mitteilung nicht namentlich genannt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-bd063e8375865fb5"
+   ],
+   "evidence": "Auszug: Die Ausfuhr von Kriegsmaterial an die in den internationalen bewaffneten Konflikt mit dem Iran verwickelten Länder kann während der Dauer des Konfliktes nicht bewilligt werden ... Kriegsmaterialexporte in die USA können zurzeit nicht bewilligt werden",
+   "location": "Medienmitteilung vom 20.03.2026, Absätze 1–3",
+   "uncertainty": "Ob und welche GCC-Staaten als konfliktbeteiligt eingestuft werden, ist in der geöffneten Mitteilung nicht festgelegt.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkante / wesentliche Beziehung",
+   "event_date": "2026-03-20",
+   "event_status": "Bundesratsentscheid"
+  },
+  {
+   "id": "C-EX-03",
+   "statement": "Laut SECO-Statistik der Schweizer Kriegsmaterialausfuhren 2025 (Endempfängerstaaten, Gesamtwert 948.193.209 CHF an 64 Länder) gingen nach Saudi-Arabien 4.417.519 CHF, Kuwait 3.748.810 CHF, Katar 1.980.414 CHF, Oman 693.053 CHF und Bahrain 492.469 CHF; die Vereinigten Arabischen Emirate sind in der Liste nicht aufgeführt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-954b1ad2b853fa8f"
+   ],
+   "evidence": "Auszug: Saudi-Arabien 4'417'519; Kuwait 3'748'810; Katar 1'980'414; Oman 693'053; Bahrain 492'469; Total: 64 Länder CHF 948'193'209",
+   "location": "Tabelle 'Ausfuhr von Kriegsmaterial: 1.1.–31.12.2025; Endempfängerstaaten', S. 1",
+   "uncertainty": "Statistik ohne Hersteller- oder Güterzuordnung je Land; kein Rheinmetall-Bezug ableitbar.",
+   "proposed_depth": "B",
+   "depth_reason": "Exportkontext ohne Netzwerkkante",
+   "event_date": "2025-12-31",
+   "event_status": "amtliche Jahresstatistik"
+  }
+ ],
+ "source_proposals": [
+  {
+   "id": "S-f4730b21412bb02a",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Geschäftsbericht 2025",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/GB/Rheinmetall-Geschaeftsbericht-2025.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-10",
+   "source_kind": "Originalbericht",
+   "report_year": 2025
+  },
+  {
+   "id": "S-b159a0c9329835a7",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Geschäftsbericht 2024",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2025/GB/Rheinmetall-Geschaeftsbericht-2024.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-10",
+   "source_kind": "Originalbericht",
+   "report_year": 2024
+  },
+  {
+   "id": "S-4423d24b37b6b642",
+   "name": "Gulf Times",
+   "title": "Barzan signs seven agreements at Dimdex",
+   "url": "https://www.gulf-times.com/story/585186/Barzan-signs-seven-agreements-at-Dimdex",
+   "published_date": "2018-03-15",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-f1384405c8dd2505",
+   "name": "Qatar Tribune",
+   "title": "Barzan Holdings inks deals to meet Qatar's defence needs",
+   "url": "https://www.qatar-tribune.com/article/116179/FIRSTPAGE/Barzan-Holdings-inks-deals-to-meet-Qatar-39s-defence-needs",
+   "published_date": "2018-03-14",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-7dbdfac4d40d7b07",
+   "name": "Aviation Week",
+   "title": "WDS: Rheinmetall Air Defense and MAZ Group create joint venture",
+   "url": "https://aviationweek.com/aerospace/wds-rheinmetall-air-defense-maz-group-create-joint-venture",
+   "published_date": "2022-03-07",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-458cf180e9a20818",
+   "name": "Janes",
+   "title": "WDS 2022: Rheinmetall, MAZ Group launch joint venture",
+   "url": "https://www.janes.com/defence-intelligence-insights/defence-news/industry/wds-2022-rheinmetall-maz-group-launch-joint-venture",
+   "published_date": "2022-03-07",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-d401a7e147a6b2d4",
+   "name": "Argaam",
+   "title": "Switzerland set to transfer military resources, skills to Saudi Arabia in coming months",
+   "url": "https://www.argaam.com/en/article/articledetail/id/1540950",
+   "published_date": "2022-03-07",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-d86e149497cf99ac",
+   "name": "Gulf News (Reuters)",
+   "title": "Saudi Arabia makes a push for defence joint ventures",
+   "url": "https://gulfnews.com/business/saudi-arabia-makes-a-push-for-defence-joint-ventures-1.1541688391200",
+   "published_date": "2018-11-08",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-05ab0d04fb7863ad",
+   "name": "Defense News",
+   "title": "Rheinmetall Denel Munition Factory Opens in Saudi Arabia",
+   "url": "https://www.defensenews.com/home/2016/04/06/rheinmetall-denel-munition-factory-opens-in-saudi-arabia/",
+   "published_date": "2016-04-06",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-549848d0df9ec6ae",
+   "name": "Parliamentary Monitoring Group (Südafrika)",
+   "title": "Question NW1259 to the Minister of Public Enterprises",
+   "url": "https://pmg.org.za/committee-question/3060/",
+   "published_date": null,
+   "accessed_date": "2026-10-10",
+   "source_kind": "amtlicher Datensatz"
+  },
+  {
+   "id": "S-18fa7e4158bdc58b",
+   "name": "Janes",
+   "title": "Qatar unveils Skynex air defence",
+   "url": "https://www.janes.com/defence-intelligence-insights/defence-news/weapons/qatar-unveils-skynex-air-defence",
+   "published_date": "2022-10-14",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-f71c0348db6067c4",
+   "name": "Janes",
+   "title": "Rheinmetall to supply Ukraine with Skynex after confirming Qatar delivery",
+   "url": "https://www.janes.com/defence-intelligence-insights/defence-news/weapons/rheinmetall-to-supply-ukraine-with-skynex-after-confirming-qatar-delivery",
+   "published_date": "2022-12-15",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-eb780da12d4e3349",
+   "name": "Janes",
+   "title": "Rheinmetall announces large air defence contract",
+   "url": "https://www.janes.com/defence-intelligence-insights/defence-news/rheinmetall-announces-large-air-defence-contract",
+   "published_date": "2019-11-01",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-038334f593d8d949",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall liefert vier Skynex-Systeme an internationalen Kunden",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/07/2026-07-02-rheinmetall-liefert-vier-skynex-systeme-an-internationalen-kunden",
+   "published_date": "2026-07-02",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-f06315f4acc363fb",
+   "name": "Army Recognition",
+   "title": "Saudi Arabia eyes Rheinmetall's Skyranger 30 air defense system to stop growing drone threats",
+   "url": "https://www.armyrecognition.com/archives/archives-land-defense/defense-news-army-2025/saudi-arabia-eyes-rheinmetalls-skyranger-30-air-defense-system-to-stop-growing-drone-threats",
+   "published_date": "2025-11-17",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-f562ccee195198fd",
+   "name": "Rheinmetall AG",
+   "title": "Startschuss für Luftverteidigungssystem NNbS",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2024/01/2024-01-25-startschuss-fuer-luftverteidigungssystem-nnbs",
+   "published_date": "2024-01-25",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-9a5c062158c7a42c",
+   "name": "HENSOLDT",
+   "title": "HENSOLDT supplies radars for Rheinmetall air defence systems",
+   "url": "https://www.hensoldt.net/news/hensoldt-supplies-radars-for-rheinmetall-air-defence-systems",
+   "published_date": "2025-12-12",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Partnerangabe"
+  },
+  {
+   "id": "S-f9b9880f37c53f47",
+   "name": "EDR Magazine",
+   "title": "ILA 2024: Rheinmetall and MBDA sign agreement to integrate the Small Anti Drone Missile into the Skyranger 30 and other military platforms",
+   "url": "https://www.edrmagazine.eu/ila-2024-rheinmetall-and-mbda-sign-agreement-to-integrate-the-small-anti-drone-missile-into-the-skyranger-30-and-other-military-platforms",
+   "published_date": "2024-06-05",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Wiedergabe"
+  },
+  {
+   "id": "S-2ea4c76a82bda463",
+   "name": "The Defense Post",
+   "title": "MBDA to Arm German Skyranger 30 With Counter-Small-Drone Missile",
+   "url": "https://thedefensepost.com/2025/11/13/mbda-german-skyranger/",
+   "published_date": "2025-11-13",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-60677f3d57da054d",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall to supply Skyranger 30 to the Netherlands",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-12-rheinmetall-to-supply-skyranger-30-for-the-dutch-armed-forces",
+   "published_date": "2025-12-12",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-562f0f3f359a746b",
+   "name": "Rheinmetall AG",
+   "title": "Market breakthrough in Austria: Rheinmetall supplies Skyranger 30",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/02/2024-02-23-rheinmetall-supplies-skyranger-30-to-austria",
+   "published_date": "2024-02-23",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-b8a3496f93a22c8c",
+   "name": "Rheinmetall AG",
+   "title": "Mobile air defence: Rheinmetall to supply the Bundeswehr with Skyranger 30 on Boxer platform",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/02/2024-02-27-bundeswehr-ordered-skyranger-30-mobile-air-defence-system",
+   "published_date": "2024-02-27",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-029c4a01d549a4b2",
+   "name": "Handelsblatt",
+   "title": "Waffenindustrie: Deutschland erleichtert Rüstungsexporte an Golfstaaten und Ukraine",
+   "url": "https://www.handelsblatt.com/politik/deutschland/waffenindustrie-deutschland-erleichtert-ruestungsexporte-an-golfstaaten-und-ukraine/100210232.html",
+   "published_date": "2026-03-20",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-c99327dbed7f6de5",
+   "name": "BAFA",
+   "title": "Allgemeine Genehmigungen (Übersichtsseite, Abschnitt AGG Nr. 48)",
+   "url": "https://www.bafa.de/DE/Aussenwirtschaft/Ausfuhrkontrolle/Antragsarten/Allgemeine_Genehmigungen/allgemeine_genehmigungen_node.html",
+   "published_date": null,
+   "accessed_date": "2026-10-10",
+   "source_kind": "amtlicher Datensatz"
+  },
+  {
+   "id": "S-2110be9897c66baf",
+   "name": "SRF",
+   "title": "Rüstungsindustrie – Schweiz exportiert mehr Kriegsmaterial",
+   "url": "https://www.srf.ch/news/schweiz/ruestungsindustrie-schweiz-exportiert-mehr-kriegsmaterial",
+   "published_date": "2022-07-12",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-954b1ad2b853fa8f",
+   "name": "SECO",
+   "title": "Ausfuhr von Kriegsmaterial: 1.1.–31.12.2025; Endempfängerstaaten",
+   "url": "https://www.seco.admin.ch/dam/it/sd-web/x9hqmWfFcvm4/Ausfuhren%20d_f%20nach%20Endempf%C3%A4ngerstaaten%202025.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-10",
+   "source_kind": "amtlicher Datensatz",
+   "report_year": 2025
+  },
+  {
+   "id": "S-bd063e8375865fb5",
+   "name": "WBF (Schweiz)",
+   "title": "Iran-Konflikt: Auswirkungen auf kriegsrelevante Exporte",
+   "url": "https://www.wbf.admin.ch/de/newnsb/eLmLXeiHSswJO0UIAyqb8",
+   "published_date": "2026-03-20",
+   "accessed_date": "2026-10-10",
+   "source_kind": "amtlicher Datensatz"
+  },
+  {
+   "id": "S-5d5582a381f69b08",
+   "name": "NZZ",
+   "title": "Armeebotschaft 2026: Bundesrat will bei der Luftverteidigung nachrüsten",
+   "url": "https://www.nzz.ch/schweiz/armeebotschaft-2026-der-bundesrat-will-moegliche-angriffe-aus-der-luft-mit-einem-schweizer-drohnenabwehrsystem-bekaempfen-ld.1930274",
+   "published_date": "2026-03-20",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-a831015ab01561c0",
+   "name": "Rheinmetall AG",
+   "title": "Kuwait procures Rheinmetall's MASS decoy launchers",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/07/2026-07-10-kuwait-commissions-rheinmetall-mass-ship-protection-systems",
+   "published_date": "2026-07-10",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-faf804b35f3ff96a",
+   "name": "Breaking Defense",
+   "title": "UAE's First Air Defense Missile To Be Used on German Oerlikon Skynex",
+   "url": "https://breakingdefense.com/2021/02/uaes-first-air-defense-missile-to-be-used-on-german-oerlikon-skynex/",
+   "published_date": "2021-02-24",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-ef86c664e3ccb75b",
+   "name": "Janes",
+   "title": "IDEX 2025: Skyknight air-defence system undergoes testing",
+   "url": "https://www.janes.com/defence-intelligence-insights/defence-news/defence/idex-2025-skyknight-air-defence-system-undergoes-testing",
+   "published_date": "2025-02-24",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-829071fd179d4705",
+   "name": "EDR Magazine",
+   "title": "Halcon and Rheinmetall Air Defence team up for the Skynex",
+   "url": "https://www.edrmagazine.eu/halcon-and-rheinmetall-air-defence-team-up-for-the-skynex",
+   "published_date": "2021-03-08",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-e59dc842147cf65f",
+   "name": "Gulf News",
+   "title": "IDEX 2021: First UAE-made rocket and artillery interceptor missile 'SkyKnight' takes wings",
+   "url": "https://gulfnews.com/business/markets/idex-2021-first-uae-made-rocket-and-artillery-interceptor-missile-skyknight-takes-wings-1.1614071964600",
+   "published_date": "2021-02-23",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-2fab023367922b5c",
+   "name": "Diehl Stiftung & Co. KG",
+   "title": "Diehl Geschäftsbericht 2025",
+   "url": "https://www.diehl.com/Geschaeftsbericht_2025/flipbook.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-10",
+   "source_kind": "Originalbericht",
+   "report_year": 2025
+  },
+  {
+   "id": "S-7066a889ca7eaad4",
+   "name": "HENSOLDT AG",
+   "title": "Geschäftsbericht der HENSOLDT AG 2025",
+   "url": "https://investors.hensoldt.net/media/document/1e6664b4-3343-4297-837a-3924a62fd59c/assets/DE000HAG0005-JA-2025-EQ-D-00.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-10",
+   "source_kind": "Originalbericht",
+   "report_year": 2025
+  },
+  {
+   "id": "S-1f76748059d5008c",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Denel Munition (Pty) Ltd. (Unternehmensseite)",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-denel-munition",
+   "published_date": null,
+   "accessed_date": "2026-10-10",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-5ac272b822ef96f9",
+   "name": "Arab News",
+   "title": "FaceOf: Andreas Schwer, chief executive officer of the Saudi Arabian Military Industries",
+   "url": "https://www.arabnews.com/saudi-arabia/faceof-andreas-schwer-chief-executive-officer-of-the-saudi-arabian-military-industries-1457516",
+   "published_date": "2019-02-25",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-18ce19a1fbbec148",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Air Defence – Über uns",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-air-defence/ueber-uns",
+   "published_date": null,
+   "accessed_date": "2026-10-10",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-6bdb338d23c29e11",
+   "name": "Rheinmetall AG",
+   "title": "Romania orders Skyranger 35 air defence systems from Rheinmetall",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-24-romania-orders-skyranger-35-air-defence-systems-from-rheinmetall",
+   "published_date": "2026-06-24",
+   "accessed_date": "2026-10-10",
+   "source_kind": "Herstellerangabe"
+  }
+ ],
+ "gaps": [
+  {
+   "topic": "golfstaaten",
+   "gap": "Kein öffentlicher Beleg für Rheinmetall-Flugabwehrverträge mit Oman oder Bahrain im geprüften Umfang; Datenlücke, keine Aussage über Nichtbestehen."
+  },
+  {
+   "topic": "golfstaaten",
+   "gap": "Partner und Geschäftszweck der Rheinmetall Arabia Simulation and Training LLC (40 % JV) sowie der Rheinmetall Projects Development Consultancy LLC öffentlich nicht identifiziert."
+  },
+  {
+   "topic": "golfstaaten",
+   "gap": "Betriebsstatus des RADARABIA-Werks (Dschidda) und des RBAT-Munitionswerks (Katar) nach 2022 bzw. 2018 öffentlich nicht belegt; RADARABIA weist 2025 negatives Eigenkapital aus (C-STR-06)."
+  },
+  {
+   "topic": "golfstaaten",
+   "gap": "Zuordnung des Skynex-Auftrags 2019 (210 Mio. EUR) und des Skynex-Auftrags Q2 2026 zu konkreten Golfstaaten nicht offiziell bestätigt."
+  },
+  {
+   "topic": "golfstaaten",
+   "gap": "Ob die Schweiz GCC-Staaten im Iran-Konflikt als konfliktbeteiligt einstuft (Auswirkung auf Rheinmetall Air Defence AG, Zürich), ist in der geöffneten Bundesratsmitteilung nicht festgelegt."
+  },
+  {
+   "topic": "flugabwehr",
+   "gap": "Lieferverträge für Effektoren (Stinger, Mistral) in Skyranger-Konfigurationen: Lieferant/Vertragsweg nicht öffentlich belegt; nur Bewaffnungsangaben in Rheinmetall-Mitteilungen."
+  },
+  {
+   "topic": "flugabwehr",
+   "gap": "Nutzerangabe: aktueller Hauptverantwortlicher für das Flugabwehrgeschäft gehört zur Kontextrolle; Rheinmetall-Mitteilung vom 24.06.2026 nennt Oliver Dürr als 'Head of Rheinmetall's Air Defence Division' (Hinweis an Kontextrolle, kein C-Claim)."
+  }
+ ],
+ "coverage": [
+  {
+   "cluster": "Kapital/Konzern",
+   "subject": "Rheinmetall AG, Rheinmetall Air Defence AG",
+   "search": "Rheinmetall Geschäftsbericht 2025/2024 Anteilsbesitzliste; Rheinmetall Air Defence Unternehmensseite",
+   "opened": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7",
+    "S-18ce19a1fbbec148"
+   ],
+   "claim_ids": [
+    "C-STR-01",
+    "C-STR-02",
+    "C-STR-03",
+    "C-STR-09"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Zwischengesellschaften indirekter Beteiligungen nicht ausgewiesen; Handelsregister nicht abgefragt"
+  },
+  {
+   "cluster": "Konzern/JV",
+   "subject": "GCC-Gesellschaften (Riad, Abu Dhabi, Schardscha, Doha)",
+   "search": "Anteilsbesitzliste; 'Rheinmetall Arabia Simulation and Training'; 'Rheinmetall International Defence and Security'",
+   "opened": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7"
+   ],
+   "claim_ids": [
+    "C-STR-05",
+    "C-STR-06",
+    "C-STR-07",
+    "C-STR-08"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Geschäftszweck und Partner von RAST, RPDC, RIDS öffentlich nicht gefunden"
+  },
+  {
+   "cluster": "Konzern/JV",
+   "subject": "RADARABIA / MAZ Group (Saudi-Arabien)",
+   "search": "RADARABIA Riyadh Rheinmetall; Radarabia Jeddah Skyguard MAZ; Status 2024/2025",
+   "opened": [
+    "S-7dbdfac4d40d7b07",
+    "S-458cf180e9a20818",
+    "S-d401a7e147a6b2d4"
+   ],
+   "claim_ids": [
+    "C-GCC-02",
+    "C-GCC-03"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Rheinmetall-Primärmitteilung nicht gefunden; Kanzleibericht (legalcommunitymena) und Times Aerospace nicht zugänglich (403/504); Werksstatus nach 2022 öffentlich nicht belegt; Tactical Report (Bezahldienst) nicht geöffnet"
+  },
+  {
+   "cluster": "Konzern/JV",
+   "subject": "RBAT / Barzan Holdings (Katar)",
+   "search": "'Rheinmetall Barzan Advanced Technologies'; RBAT Qatar ammunition plant 2024–2026",
+   "opened": [
+    "S-f1384405c8dd2505",
+    "S-4423d24b37b6b642",
+    "S-f4730b21412bb02a"
+   ],
+   "claim_ids": [
+    "C-GCC-01",
+    "C-STR-07"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Fertigstellung/Betrieb Munitionswerk nicht belegt; QSTP-Profilseite 404; keine Meldungen 2024–2026 gefunden"
+  },
+  {
+   "cluster": "Konzern/JV",
+   "subject": "RDM, Denel, MIC/SAMI (historisch)",
+   "search": "Rheinmetall Denel Munition Saudi Al-Kharj; Saudi bid Denel RDM; Denel integrated report",
+   "opened": [
+    "S-05ab0d04fb7863ad",
+    "S-549848d0df9ec6ae",
+    "S-d86e149497cf99ac",
+    "S-1f76748059d5008c",
+    "S-f4730b21412bb02a"
+   ],
+   "claim_ids": [
+    "C-STR-04",
+    "C-GCC-05",
+    "C-GCC-06"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Widerspruch Beziehungsart 2016 dokumentiert; Ausgang des SAMI-Angebots nicht ausdrücklich berichtet; Denel-Bericht nicht gefunden"
+  },
+  {
+   "cluster": "Technologie/Industrie (Durchgang 1)",
+   "subject": "NNbS, Hensoldt, Diehl, MBDA",
+   "search": "NNbS ARGE Rheinmetall Diehl Hensoldt; Hensoldt SPEXER Rheinmetall Air Defence; MBDA SADM Skyranger",
+   "opened": [
+    "S-f562ccee195198fd",
+    "S-9a5c062158c7a42c",
+    "S-f9b9880f37c53f47",
+    "S-2ea4c76a82bda463",
+    "S-f4730b21412bb02a"
+   ],
+   "claim_ids": [
+    "C-TI-01",
+    "C-TI-02",
+    "C-TI-03",
+    "C-TI-04"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "MBDA-Primärmitteilung und BAAINBw-Vertragsmeldung DefendAir nicht geöffnet"
+  },
+  {
+   "cluster": "Technologie/Industrie (Durchgang 2, Gegenrecherche)",
+   "subject": "Partnerberichte Hensoldt/Diehl; EDGE/HALCON; Denel Cheetah; AIM",
+   "search": "Hensoldt Geschäftsbericht 2025; Diehl Geschäftsbericht 2025; HALCON SkyKnight Skynex; EDGE Rheinmetall",
+   "opened": [
+    "S-7066a889ca7eaad4",
+    "S-2fab023367922b5c",
+    "S-e59dc842147cf65f",
+    "S-faf804b35f3ff96a",
+    "S-ef86c664e3ccb75b",
+    "S-829071fd179d4705"
+   ],
+   "claim_ids": [
+    "C-TI-01",
+    "C-TI-05",
+    "C-TI-06",
+    "C-TI-07",
+    "C-TI-08"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Keine EDGE-/Rheinmetall-Primärmitteilung zu SkyKnight geöffnet; Qualifikationsstatus Ende 2026 offen; Lumibird (Laserentfernungsmesser), Curtiss-Wright und Lockheed Martin (US-Angebot) nur als Hinweise in Army Recognition, nicht verfolgt"
+  },
+  {
+   "cluster": "Technologie/Industrie",
+   "subject": "Plattformpartner (GDELS, Boxer, Lynx)",
+   "search": "Rheinmetall Skyranger Austria Pandur; Denmark Piranha",
+   "opened": [
+    "S-562f0f3f359a746b"
+   ],
+   "claim_ids": [
+    "C-TI-09"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Dänemark-Auftrag (Piranha V) nur über nicht zugängliche/sekundäre Quellen (militaeraktuell 403); nicht übernommen"
+  },
+  {
+   "cluster": "Kunden/Marktzugang (Durchgang 1)",
+   "subject": "Katar (Skynex, Exporte)",
+   "search": "Rheinmetall Skynex Qatar; Qatar unveils Skynex; SECO Katar Flugabwehr WM",
+   "opened": [
+    "S-18fa7e4158bdc58b",
+    "S-f71c0348db6067c4",
+    "S-eb780da12d4e3349",
+    "S-2110be9897c66baf"
+   ],
+   "claim_ids": [
+    "C-GCC-08",
+    "C-GCC-09",
+    "C-GCC-10"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Kein katarisches Beschaffungsdokument öffentlich gefunden"
+  },
+  {
+   "cluster": "Kunden/Marktzugang (Durchgang 1)",
+   "subject": "Saudi-Arabien (Skyguard, Skyranger-Interesse, WDS 2026)",
+   "search": "Rheinmetall Saudi Arabia Skyranger; SAMI GAMI Rheinmetall agreement 2025 2026; WDS 2026 Rheinmetall",
+   "opened": [
+    "S-f06315f4acc363fb",
+    "S-d401a7e147a6b2d4",
+    "S-458cf180e9a20818"
+   ],
+   "claim_ids": [
+    "C-GCC-03",
+    "C-GCC-04"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Keine Rheinmetall-SAMI- oder GAMI-Vereinbarung öffentlich gefunden; SAMI-Mitteilung WDS 2026 nennt Rheinmetall nicht (nur Suchtreffer)"
+  },
+  {
+   "cluster": "Kunden/Marktzugang (Durchgang 2, Gegenrecherche)",
+   "subject": "VAE, Kuwait, Oman, Bahrain",
+   "search": "Rheinmetall EDGE UAE; Rheinmetall Skyguard Kuwait Oman Bahrain; Kuwait MASS Al Dorra",
+   "opened": [
+    "S-a831015ab01561c0",
+    "S-e59dc842147cf65f",
+    "S-faf804b35f3ff96a"
+   ],
+   "claim_ids": [
+    "C-GCC-11",
+    "C-TI-05"
+   ],
+   "status": "geprüft mit Befund (Kuwait, VAE); ohne öffentlichen Beleg (Oman, Bahrain)",
+   "gaps": "Für Oman und Bahrain keine öffentlich belegte Rheinmetall-Flugabwehrbeziehung gefunden; Skyguard-Aufträge 2017/2022/2023 an ungenannte Kunden nicht zuordenbar"
+  },
+  {
+   "cluster": "Kunden/Marktzugang",
+   "subject": "Unbenannter Skynex-Kunde 2026, Gulf-Hinweise",
+   "search": "Rheinmetall vier Skynex internationaler Kunde 2026; Rheinmetall Gulf air defence 2026 Iran",
+   "opened": [
+    "S-038334f593d8d949",
+    "S-5d5582a381f69b08"
+   ],
+   "claim_ids": [
+    "C-GCC-12",
+    "C-GCC-13"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Kunde nicht öffentlich benannt; keine Zuordnung zu GCC möglich"
+  },
+  {
+   "cluster": "Kunden/Marktzugang",
+   "subject": "Europäische Flugabwehrkunden (DE, NL, AT, RO, IT, CH)",
+   "search": "Rheinmetall Skyranger Bundeswehr/Netherlands/Austria/Romania; Armeebotschaft 2026 Skynex",
+   "opened": [
+    "S-b8a3496f93a22c8c",
+    "S-60677f3d57da054d",
+    "S-562f0f3f359a746b",
+    "S-6bdb338d23c29e11",
+    "S-f4730b21412bb02a",
+    "S-5d5582a381f69b08"
+   ],
+   "claim_ids": [
+    "C-KD-01",
+    "C-KD-02",
+    "C-KD-03",
+    "C-KD-04",
+    "C-KD-05",
+    "C-TI-09"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Bundeswehr-Großauftrag (bis 600 Skyranger) nur Medienberichte ohne Bestätigung, nicht übernommen; Ukraine-Skynex-Lieferungen nicht übernommen (nur Handelsblatt-Bezug in Janes)"
+  },
+  {
+   "cluster": "Exportgenehmigung",
+   "subject": "Deutschland (AGG Nr. 48), Schweiz (Bundesrat/SECO)",
+   "search": "Allgemeingenehmigung Golfstaaten 2026; BAFA AGG 48; Bundesrat Iran-Konflikt Kriegsmaterial; SECO Endempfängerstaaten 2025",
+   "opened": [
+    "S-029c4a01d549a4b2",
+    "S-c99327dbed7f6de5",
+    "S-bd063e8375865fb5",
+    "S-954b1ad2b853fa8f",
+    "S-2110be9897c66baf"
+   ],
+   "claim_ids": [
+    "C-EX-01",
+    "C-EX-02",
+    "C-EX-03",
+    "C-GCC-10"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "BMWE-Pressemitteilung (Radware-Sperre) und AGG-Volltext nicht gelesen; Schweizer Einstufung der GCC-Staaten als konfliktbeteiligt nicht belegt; Rheinmetall-spezifische Genehmigungen nicht öffentlich"
+  },
+  {
+   "cluster": "Berufliche Mandate",
+   "subject": "Andreas Schwer (Rheinmetall → SAMI)",
+   "search": "Andreas Schwer SAMI Rheinmetall",
+   "opened": [
+    "S-5ac272b822ef96f9"
+   ],
+   "claim_ids": [
+    "C-GCC-07"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Aktuelle Funktion nicht geprüft; Leitung der Division Air Defence (Personenprofil) ist Aufgabe der Kontextrolle"
+  }
+ ],
+ "topics": [
+  {
+   "id": "flugabwehr",
+   "label": "Flugabwehr: Konzernstruktur, Technologiepartner und Kunden",
+   "claim_ids": [
+    "C-STR-01",
+    "C-STR-03"
+   ],
+   "sections": [
+    {
+     "label": "Struktur Flugabwehr",
+     "claim_ids": [
+      "C-STR-01",
+      "C-STR-02",
+      "C-STR-03",
+      "C-STR-09"
+     ]
+    },
+    {
+     "label": "Technologie- und Industriepartner",
+     "claim_ids": [
+      "C-TI-01",
+      "C-TI-02",
+      "C-TI-03",
+      "C-TI-04",
+      "C-TI-05",
+      "C-TI-06",
+      "C-TI-07",
+      "C-TI-09"
+     ]
+    },
+    {
+     "label": "Kunden und Aufträge (öffentlich belegt)",
+     "claim_ids": [
+      "C-KD-01",
+      "C-KD-02",
+      "C-KD-03",
+      "C-KD-04",
+      "C-KD-05",
+      "C-GCC-08",
+      "C-GCC-13"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "golfstaaten",
+   "label": "Golfstaaten: Beteiligungen, Partner, Kunden und Exportrahmen",
+   "claim_ids": [
+    "C-STR-05",
+    "C-GCC-01",
+    "C-GCC-02",
+    "C-GCC-08"
+   ],
+   "sections": [
+    {
+     "label": "Konzerngesellschaften und Beteiligungen im GCC",
+     "claim_ids": [
+      "C-STR-05",
+      "C-STR-06",
+      "C-STR-07",
+      "C-STR-08"
+     ]
+    },
+    {
+     "label": "Lokale Partner und Joint Ventures",
+     "claim_ids": [
+      "C-GCC-01",
+      "C-GCC-02",
+      "C-TI-05",
+      "C-TI-08"
+     ]
+    },
+    {
+     "label": "Kunden und Aufträge im GCC",
+     "claim_ids": [
+      "C-GCC-03",
+      "C-GCC-08",
+      "C-GCC-09",
+      "C-GCC-11",
+      "C-GCC-12",
+      "C-GCC-04"
+     ]
+    },
+    {
+     "label": "Historische Bezüge (RDM/Saudi-Arabien, Personal)",
+     "claim_ids": [
+      "C-STR-04",
+      "C-GCC-05",
+      "C-GCC-06",
+      "C-GCC-07"
+     ]
+    },
+    {
+     "label": "Exportgenehmigungsrahmen Deutschland/Schweiz",
+     "claim_ids": [
+      "C-EX-01",
+      "C-EX-02",
+      "C-EX-03",
+      "C-GCC-10"
+     ]
+    }
+   ]
+  }
+ ],
+ "report_log": [
+  {
+   "actor": "Rheinmetall AG",
+   "report": "Geschäftsbericht 2025",
+   "fiscal_year": "2025",
+   "published": "nicht separat datiert (Bilanzvorlage laut Suchtreffer 11.03.2026; PDF-Erstellung 10.03.2026)",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/GB/Rheinmetall-Geschaeftsbericht-2025.pdf",
+   "sections": "S. 15 (Bericht AR), S. 31 (F&E), S. 39 (Strategie), S. 65 (Segment Electronic Solutions), S. 234, S. 240, S. 265 (Ereignisse nach Stichtag), S. 267–271 (Anteilsbesitzliste inkl. Fußnoten); Druck- = PDF-Seite",
+   "findings": "Air Defence AG 100 %; GCC-Gesellschaften; RADARABIA 20 %; RBAT 49 %; RAST 40 % JV; ARGE NNbS 33 %; RDM 51 %; AIM-Verkauf an Diehl; Divisionsteilung 2026; keine GCC-spezifischen Flugabwehrkunden im Bericht gefunden (Textsuche Saudi/Katar/VAE/Golf)",
+   "claim_ids": [
+    "C-STR-01",
+    "C-STR-03",
+    "C-STR-04",
+    "C-STR-05",
+    "C-STR-06",
+    "C-STR-07",
+    "C-STR-08",
+    "C-STR-09",
+    "C-TI-01",
+    "C-TI-07",
+    "C-KD-04"
+   ],
+   "status": "analysiert (gezielte Abschnitte, Textsuche im Gesamtdokument)"
+  },
+  {
+   "actor": "Rheinmetall AG",
+   "report": "Geschäftsbericht 2024 (Vorjahresvergleich)",
+   "fiscal_year": "2024",
+   "published": "nicht separat datiert",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2025/GB/Rheinmetall-Geschaeftsbericht-2024.pdf",
+   "sections": "Anteilsbesitzliste 2024, S. 252–256",
+   "findings": "RADARABIA 20 %, RBAT 49 %, RAST 40 %, AIM 50 % bereits 2024 gelistet; Rheinmetall Projects Development Consultancy LLC nicht gefunden",
+   "claim_ids": [
+    "C-STR-01",
+    "C-STR-05",
+    "C-STR-06",
+    "C-STR-07",
+    "C-TI-07"
+   ],
+   "status": "nur teilweise gelesen (Anteilsbesitzliste)"
+  },
+  {
+   "actor": "Rheinmetall AG",
+   "report": "Halbjahresfinanzbericht H1 2026",
+   "fiscal_year": "2026 (H1)",
+   "published": "2026-08-06 (laut Suchtreffer)",
+   "url": "",
+   "sections": "–",
+   "findings": "Nur Suchtreffer zur Pressemitteilung (Air-Defence-Umsatz/Aufträge); Finanzkennzahlen gehören zur Kontextrolle",
+   "claim_ids": [],
+   "status": "nicht geprüft (Grund: Kennzahlen außerhalb Cluster-Auftrag; Bericht nicht geöffnet)"
+  },
+  {
+   "actor": "HENSOLDT AG",
+   "report": "Geschäftsbericht der HENSOLDT AG 2025",
+   "fiscal_year": "2025",
+   "published": "nicht datiert (PDF-Erstellung 24.03.2026)",
+   "url": "https://investors.hensoldt.net/media/document/1e6664b4-3343-4297-837a-3924a62fd59c/assets/DE000HAG0005-JA-2025-EQ-D-00.pdf",
+   "sections": "S. 32–33 (Auftragseingang); Textsuche 'Rheinmetall', 'Saudi', 'Katar', 'Golf'",
+   "findings": "NNbS-Aufträge im Vorjahr bestätigt; Rheinmetall-Rahmenvertrag im Bericht nicht genannt; HENSOLDT Middle East (Riad) ohne Rheinmetall-Bezug",
+   "claim_ids": [
+    "C-TI-01"
+   ],
+   "status": "analysiert (Textsuche + Lagebericht-Abschnitt)"
+  },
+  {
+   "actor": "Diehl Stiftung & Co. KG (Diehl Defence)",
+   "report": "Diehl Geschäftsbericht 2025",
+   "fiscal_year": "2025",
+   "published": "nicht datiert (PDF-Erstellung 21.07.2026)",
+   "url": "https://www.diehl.com/Geschaeftsbericht_2025/flipbook.pdf",
+   "sections": "PDF S. 11, 22–23 (Defence), S. 60 (Beteiligungen); Textsuche 'Rheinmetall', 'NNbS', 'EDGE', 'Saudi'",
+   "findings": "Übernahme der restlichen 50 % an AIM von Rheinmetall; Vereinbarungen mit EDGE; Diehl Defence Military Equipment LLC (Saudi-Arabien); NNbS im Bericht nicht gefunden",
+   "claim_ids": [
+    "C-TI-07",
+    "C-TI-08"
+   ],
+   "status": "analysiert (Textsuche + Defence-Abschnitt)"
+  },
+  {
+   "actor": "Denel SOC Ltd",
+   "report": "Integrated Report 2024/25",
+   "fiscal_year": "2024/25",
+   "published": "–",
+   "url": "",
+   "sections": "–",
+   "findings": "Kein Berichtsdokument gefunden (Websuche); RDM-Anteil nur aus Rheinmetall-Quellen",
+   "claim_ids": [],
+   "status": "öffentlich nicht gefunden (im geprüften Umfang)"
+  },
+  {
+   "actor": "EDGE Group PJSC / HALCON",
+   "report": "Geschäftsbericht",
+   "fiscal_year": "2025",
+   "published": "–",
+   "url": "",
+   "sections": "–",
+   "findings": "Kein öffentlicher Geschäftsbericht gefunden",
+   "claim_ids": [],
+   "status": "öffentlich nicht gefunden (im geprüften Umfang)"
+  },
+  {
+   "actor": "Barzan Holdings",
+   "report": "Geschäftsbericht",
+   "fiscal_year": "–",
+   "published": "–",
+   "url": "",
+   "sections": "–",
+   "findings": "Kein öffentlicher Bericht gefunden",
+   "claim_ids": [],
+   "status": "öffentlich nicht gefunden (im geprüften Umfang)"
+  },
+  {
+   "actor": "SAMI / MAZ Group",
+   "report": "Geschäftsbericht",
+   "fiscal_year": "–",
+   "published": "–",
+   "url": "",
+   "sections": "–",
+   "findings": "Kein öffentlicher Bericht gefunden; MAZ Group privat",
+   "claim_ids": [],
+   "status": "öffentlich nicht gefunden (im geprüften Umfang)"
+  },
+  {
+   "actor": "MBDA",
+   "report": "Geschäftsbericht",
+   "fiscal_year": "–",
+   "published": "–",
+   "url": "",
+   "sections": "–",
+   "findings": "Nicht gesucht; Beziehung über LOI/Medienbericht belegt",
+   "claim_ids": [],
+   "status": "nicht geprüft (Grund: Zeitbudget, nachrangig für GCC-Fokus)"
+  }
+ ],
+ "actors": [
+  {
+   "id": "rheinmetall",
+   "label": "Rheinmetall AG",
+   "legal_name": "Rheinmetall AG, Düsseldorf",
+   "kind": "target",
+   "cluster": "target",
+   "level": 0,
+   "claim_ids": [
+    "C-GCC-03",
+    "C-GCC-07",
+    "C-GCC-08",
+    "C-GCC-11",
+    "C-GCC-13",
+    "C-KD-01",
+    "C-KD-03",
+    "C-KD-04",
+    "C-STR-01",
+    "C-STR-02",
+    "C-STR-04",
+    "C-STR-05",
+    "C-STR-06",
+    "C-STR-07",
+    "C-STR-08",
+    "C-STR-09",
+    "C-TI-09"
+   ]
+  },
+  {
+   "id": "rad",
+   "label": "Rheinmetall Air Defence",
+   "legal_name": "Rheinmetall Air Defence AG, Zürich",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "level": 1,
+   "claim_ids": [
+    "C-GCC-02",
+    "C-KD-02",
+    "C-KD-05",
+    "C-STR-01",
+    "C-STR-02",
+    "C-TI-02",
+    "C-TI-05",
+    "C-TI-06"
+   ]
+  },
+  {
+   "id": "rh_electronics",
+   "label": "Rheinmetall Electronics",
+   "legal_name": "Rheinmetall Electronics GmbH, Bremen",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "level": 1,
+   "claim_ids": [
+    "C-STR-09",
+    "C-TI-01",
+    "C-TI-03",
+    "C-TI-07"
+   ]
+  },
+  {
+   "id": "rh_italia",
+   "label": "Rheinmetall Italia",
+   "legal_name": "Rheinmetall Italia S.p.A., Rom",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "level": 1,
+   "claim_ids": [
+    "C-GCC-13",
+    "C-STR-09"
+   ]
+  },
+  {
+   "id": "rdm",
+   "label": "Rheinmetall Denel Munition",
+   "legal_name": "Rheinmetall Denel Munition (Pty) Ltd., Somerset West",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "level": 1,
+   "claim_ids": [
+    "C-GCC-05",
+    "C-STR-04"
+   ]
+  },
+  {
+   "id": "rids",
+   "label": "Rh. Int. Defence & Security",
+   "legal_name": "Rheinmetall International Defence and Security Ltd., Riad",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "level": 1,
+   "claim_ids": [
+    "C-STR-05"
+   ]
+  },
+  {
+   "id": "rh_uae",
+   "label": "Rh. Int. Services (Abu Dhabi)",
+   "legal_name": "Rheinmetall International Services Limited, Abu Dhabi",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "level": 1,
+   "claim_ids": [
+    "C-STR-05"
+   ]
+  },
+  {
+   "id": "rpdc",
+   "label": "Rh. Projects Dev. Consultancy",
+   "legal_name": "Rheinmetall Projects Development Consultancy LLC, Abu Dhabi",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "level": 1,
+   "claim_ids": [
+    "C-STR-05"
+   ]
+  },
+  {
+   "id": "rps_gulf",
+   "label": "RPS Gulf (Schardscha)",
+   "legal_name": "Rheinmetall Protection Systems Gulf (FZE), Schardscha",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "level": 1,
+   "claim_ids": [
+    "C-STR-05"
+   ]
+  },
+  {
+   "id": "radarabia",
+   "label": "RADARABIA",
+   "legal_name": "RADARABIA for Industry LLC, Riad",
+   "kind": "jv",
+   "cluster": "structure",
+   "level": 1,
+   "claim_ids": [
+    "C-GCC-02",
+    "C-STR-06"
+   ]
+  },
+  {
+   "id": "rbat",
+   "label": "RBAT",
+   "legal_name": "Rheinmetall Barzan Advanced Technologies QSTP, LLC, Doha",
+   "kind": "jv",
+   "cluster": "structure",
+   "level": 1,
+   "claim_ids": [
+    "C-GCC-01",
+    "C-STR-07"
+   ]
+  },
+  {
+   "id": "rast",
+   "label": "Rh. Arabia Simulation & Training",
+   "legal_name": "Rheinmetall Arabia Simulation and Training LLC, Riad",
+   "kind": "jv",
+   "cluster": "structure",
+   "level": 1,
+   "claim_ids": [
+    "C-STR-08"
+   ]
+  },
+  {
+   "id": "denel",
+   "label": "Denel",
+   "legal_name": "Denel (Pty) Ltd. / Denel SOC Ltd, Pretoria",
+   "kind": "partner",
+   "cluster": "capital",
+   "level": 1,
+   "claim_ids": [
+    "C-GCC-06",
+    "C-STR-04",
+    "C-TI-06"
+   ]
+  },
+  {
+   "id": "arge_nnbs",
+   "label": "ARGE NNbS",
+   "legal_name": "Arbeitsgemeinschaft Nah- und Nächstbereichsschutz, Bremen",
+   "kind": "project",
+   "cluster": "technology",
+   "level": 1,
+   "claim_ids": [
+    "C-TI-01"
+   ]
+  },
+  {
+   "id": "diehl",
+   "label": "Diehl Defence",
+   "legal_name": "Diehl Defence GmbH & Co. KG, Überlingen",
+   "kind": "partner",
+   "cluster": "technology",
+   "level": 2,
+   "claim_ids": [
+    "C-TI-01",
+    "C-TI-07",
+    "C-TI-08"
+   ]
+  },
+  {
+   "id": "hensoldt",
+   "label": "Hensoldt",
+   "legal_name": "HENSOLDT (Hensoldt Sensors GmbH / HENSOLDT AG)",
+   "kind": "supplier",
+   "cluster": "technology",
+   "level": 1,
+   "claim_ids": [
+    "C-TI-01",
+    "C-TI-02"
+   ]
+  },
+  {
+   "id": "mbda",
+   "label": "MBDA Deutschland",
+   "legal_name": "MBDA Deutschland",
+   "kind": "partner",
+   "cluster": "technology",
+   "level": 1,
+   "claim_ids": [
+    "C-TI-03",
+    "C-TI-04"
+   ]
+  },
+  {
+   "id": "halcon",
+   "label": "HALCON",
+   "legal_name": "HALCON (EDGE Group), VAE",
+   "kind": "partner",
+   "cluster": "technology",
+   "level": 1,
+   "claim_ids": [
+    "C-TI-05"
+   ]
+  },
+  {
+   "id": "aim",
+   "label": "AIM Infrarot-Module",
+   "legal_name": "AIM Infrarot-Module GmbH, Heilbronn",
+   "kind": "other",
+   "cluster": "technology",
+   "level": 1,
+   "claim_ids": [
+    "C-TI-07"
+   ]
+  },
+  {
+   "id": "gdels",
+   "label": "GDELS",
+   "legal_name": "General Dynamics European Land Systems",
+   "kind": "partner",
+   "cluster": "technology",
+   "level": 1,
+   "claim_ids": [
+    "C-TI-09"
+   ]
+  },
+  {
+   "id": "maz",
+   "label": "MAZ Group",
+   "legal_name": "MAZ Group, Saudi-Arabien",
+   "kind": "partner",
+   "cluster": "market",
+   "level": 2,
+   "claim_ids": [
+    "C-GCC-02"
+   ]
+  },
+  {
+   "id": "barzan",
+   "label": "Barzan Holdings",
+   "legal_name": "Barzan Holdings, Katar",
+   "kind": "partner",
+   "cluster": "market",
+   "level": 2,
+   "claim_ids": [
+    "C-GCC-01"
+   ]
+  },
+  {
+   "id": "edge",
+   "label": "EDGE Group",
+   "legal_name": "EDGE Group, Abu Dhabi",
+   "kind": "partner",
+   "cluster": "market",
+   "level": 2,
+   "claim_ids": [
+    "C-GCC-11",
+    "C-TI-05",
+    "C-TI-08"
+   ]
+  },
+  {
+   "id": "qeadf",
+   "label": "Qatar Air Defence Forces",
+   "legal_name": "Qatar Emiri Air Defence Forces",
+   "kind": "customer",
+   "cluster": "market",
+   "level": 1,
+   "claim_ids": [
+    "C-GCC-08"
+   ]
+  },
+  {
+   "id": "qenf",
+   "label": "Qatar Emiri Naval Forces",
+   "legal_name": "Qatar Emiri Naval Forces",
+   "kind": "customer",
+   "cluster": "market",
+   "level": 2,
+   "claim_ids": [
+    "C-GCC-01"
+   ]
+  },
+  {
+   "id": "rsadf",
+   "label": "Royal Saudi Air Defense",
+   "legal_name": "Royal Saudi Air Defense Forces",
+   "kind": "customer",
+   "cluster": "market",
+   "level": 1,
+   "claim_ids": [
+    "C-GCC-02",
+    "C-GCC-03"
+   ]
+  },
+  {
+   "id": "kuwait_navy",
+   "label": "Kuwaiti Naval Forces",
+   "legal_name": "Kuwaiti Naval Forces",
+   "kind": "customer",
+   "cluster": "market",
+   "level": 1,
+   "claim_ids": [
+    "C-GCC-11"
+   ]
+  },
+  {
+   "id": "adsb",
+   "label": "Abu Dhabi Shipbuilding",
+   "legal_name": "Abu Dhabi Shipbuilding",
+   "kind": "other",
+   "cluster": "market",
+   "level": 2,
+   "claim_ids": [
+    "C-GCC-11"
+   ]
+  },
+  {
+   "id": "mic",
+   "label": "Military Industries Corp.",
+   "legal_name": "Military Industries Corporation (MIC), Saudi-Arabien",
+   "kind": "customer",
+   "cluster": "market",
+   "level": 1,
+   "claim_ids": [
+    "C-GCC-05"
+   ]
+  },
+  {
+   "id": "sami",
+   "label": "SAMI",
+   "legal_name": "Saudi Arabian Military Industries",
+   "kind": "other",
+   "cluster": "market",
+   "level": 2,
+   "claim_ids": [
+    "C-GCC-06",
+    "C-GCC-07"
+   ]
+  },
+  {
+   "id": "schwer",
+   "label": "Andreas Schwer",
+   "legal_name": "Dr. Andreas Schwer",
+   "kind": "person",
+   "cluster": "market",
+   "level": 1,
+   "claim_ids": [
+    "C-GCC-07"
+   ]
+  },
+  {
+   "id": "bundeswehr",
+   "label": "Bundeswehr / BAAINBw",
+   "legal_name": "Bundesamt für Ausrüstung, Informationstechnik und Nutzung der Bundeswehr",
+   "kind": "customer",
+   "cluster": "market",
+   "level": 1,
+   "claim_ids": [
+    "C-KD-01",
+    "C-TI-01",
+    "C-TI-04"
+   ]
+  },
+  {
+   "id": "nl_mod",
+   "label": "NL Verteidigungsministerium",
+   "legal_name": "Ministerie van Defensie (Niederlande)",
+   "kind": "customer",
+   "cluster": "market",
+   "level": 1,
+   "claim_ids": [
+    "C-KD-02"
+   ]
+  },
+  {
+   "id": "austria",
+   "label": "Österreich",
+   "legal_name": "Republik Österreich (Streitkräfte)",
+   "kind": "customer",
+   "cluster": "market",
+   "level": 1,
+   "claim_ids": [
+    "C-TI-09"
+   ]
+  },
+  {
+   "id": "romania",
+   "label": "Rumänien",
+   "legal_name": "Regierung von Rumänien",
+   "kind": "customer",
+   "cluster": "market",
+   "level": 1,
+   "claim_ids": [
+    "C-KD-03"
+   ]
+  },
+  {
+   "id": "italy",
+   "label": "Italien",
+   "legal_name": "Italien (Streitkräfte)",
+   "kind": "customer",
+   "cluster": "market",
+   "level": 1,
+   "claim_ids": [
+    "C-KD-04"
+   ]
+  },
+  {
+   "id": "swiss_vbs",
+   "label": "Schweiz (VBS)",
+   "legal_name": "Eidgenössisches Departement für Verteidigung, Bevölkerungsschutz und Sport",
+   "kind": "customer",
+   "cluster": "market",
+   "level": 1,
+   "claim_ids": [
+    "C-KD-05"
+   ]
+  }
+ ],
+ "relationships": [
+  {
+   "id": "E01",
+   "from": "rheinmetall",
+   "to": "rad",
+   "type": "Beteiligung (Tochter)",
+   "relation": "direkt",
+   "capital_share": "100 % direkt",
+   "voting_share": "nicht angegeben",
+   "control": "vollkonsolidiert",
+   "status": "aktiv (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-STR-01",
+    "C-STR-02"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7",
+    "S-18ce19a1fbbec148"
+   ]
+  },
+  {
+   "id": "E02",
+   "from": "rheinmetall",
+   "to": "rh_electronics",
+   "type": "Beteiligung (Tochter)",
+   "relation": "direkt",
+   "capital_share": "100 % direkt",
+   "voting_share": "nicht angegeben",
+   "control": "vollkonsolidiert",
+   "status": "aktiv (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-STR-09"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ]
+  },
+  {
+   "id": "E03",
+   "from": "rheinmetall",
+   "to": "rh_italia",
+   "type": "Beteiligung (Tochter) / Hauptauftragnehmer",
+   "relation": "direkt",
+   "capital_share": "100 % indirekt",
+   "voting_share": "nicht angegeben",
+   "control": "vollkonsolidiert",
+   "status": "aktiv",
+   "as_of": "2026-07-02",
+   "claim_ids": [
+    "C-STR-09",
+    "C-GCC-13"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-038334f593d8d949"
+   ]
+  },
+  {
+   "id": "E04",
+   "from": "rheinmetall",
+   "to": "rdm",
+   "type": "Beteiligung (Tochter)",
+   "relation": "direkt",
+   "capital_share": "51 % indirekt",
+   "voting_share": "nicht angegeben",
+   "control": "vollkonsolidiert",
+   "status": "aktiv (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-STR-04"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-1f76748059d5008c"
+   ]
+  },
+  {
+   "id": "E05",
+   "from": "denel",
+   "to": "rdm",
+   "type": "Minderheitsbeteiligung",
+   "relation": "direkt (Konzerngesellschaft)",
+   "capital_share": "49 %",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "aktiv (Unternehmensseite o. D.; 49 % Fremdanteil Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-STR-04"
+   ],
+   "source_ids": [
+    "S-1f76748059d5008c",
+    "S-f4730b21412bb02a"
+   ]
+  },
+  {
+   "id": "E06",
+   "from": "rheinmetall",
+   "to": "rids",
+   "type": "Beteiligung (Tochter)",
+   "relation": "direkt",
+   "capital_share": "100 % indirekt",
+   "voting_share": "nicht angegeben",
+   "control": "vollkonsolidiert",
+   "status": "aktiv (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-STR-05"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ]
+  },
+  {
+   "id": "E07",
+   "from": "rheinmetall",
+   "to": "rh_uae",
+   "type": "Beteiligung (Tochter)",
+   "relation": "direkt",
+   "capital_share": "100 % indirekt",
+   "voting_share": "nicht angegeben",
+   "control": "vollkonsolidiert",
+   "status": "aktiv (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-STR-05"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7"
+   ]
+  },
+  {
+   "id": "E08",
+   "from": "rheinmetall",
+   "to": "rpdc",
+   "type": "Beteiligung (Tochter, Stimmrechtsmehrheit)",
+   "relation": "direkt",
+   "capital_share": "49 % direkt",
+   "voting_share": "Mehrheit der Stimmrechte (Quote nicht angegeben)",
+   "control": "vollkonsolidiert",
+   "status": "aktiv (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-STR-05"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ]
+  },
+  {
+   "id": "E09",
+   "from": "rheinmetall",
+   "to": "rps_gulf",
+   "type": "Beteiligung (Tochter)",
+   "relation": "direkt",
+   "capital_share": "100 % indirekt",
+   "voting_share": "nicht angegeben",
+   "control": "vollkonsolidiert",
+   "status": "aktiv (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-STR-05"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7"
+   ]
+  },
+  {
+   "id": "E10",
+   "from": "rheinmetall",
+   "to": "radarabia",
+   "type": "Beteiligung (at-equity)",
+   "relation": "direkt",
+   "capital_share": "20 % indirekt",
+   "voting_share": "nicht angegeben",
+   "control": "at-equity (maßgeblicher Einfluss/gemeinschaftlich nicht spezifiziert)",
+   "status": "aktiv (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-STR-06"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7"
+   ]
+  },
+  {
+   "id": "E11",
+   "from": "rad",
+   "to": "radarabia",
+   "type": "JV-Gründung",
+   "relation": "direkt (Konzerngesellschaft)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "angekündigt 2022; Werksbetrieb nicht belegt",
+   "as_of": "2022-03-06",
+   "claim_ids": [
+    "C-GCC-02"
+   ],
+   "source_ids": [
+    "S-7dbdfac4d40d7b07",
+    "S-458cf180e9a20818",
+    "S-d401a7e147a6b2d4"
+   ]
+  },
+  {
+   "id": "E12",
+   "from": "maz",
+   "to": "radarabia",
+   "type": "JV-Gesellschafter",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "angekündigt 2022",
+   "as_of": "2022-03-06",
+   "claim_ids": [
+    "C-GCC-02"
+   ],
+   "source_ids": [
+    "S-7dbdfac4d40d7b07",
+    "S-458cf180e9a20818",
+    "S-d401a7e147a6b2d4"
+   ]
+  },
+  {
+   "id": "E13",
+   "from": "radarabia",
+   "to": "rsadf",
+   "type": "geplante MRO-Leistung",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "angekündigt (2022)",
+   "as_of": "2022-03-07",
+   "claim_ids": [
+    "C-GCC-02"
+   ],
+   "source_ids": [
+    "S-458cf180e9a20818"
+   ]
+  },
+  {
+   "id": "E14",
+   "from": "rheinmetall",
+   "to": "rsadf",
+   "type": "Kundenbeziehung (Herstellerangabe)",
+   "relation": "direkt",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "berichtet (Herstellerangabe 2022)",
+   "as_of": "2022-03-07",
+   "claim_ids": [
+    "C-GCC-03"
+   ],
+   "source_ids": [
+    "S-d401a7e147a6b2d4",
+    "S-458cf180e9a20818"
+   ]
+  },
+  {
+   "id": "E15",
+   "from": "rheinmetall",
+   "to": "rbat",
+   "type": "Beteiligung (at-equity)",
+   "relation": "direkt",
+   "capital_share": "49 % indirekt",
+   "voting_share": "nicht angegeben",
+   "control": "at-equity",
+   "status": "aktiv (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-STR-07"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7"
+   ]
+  },
+  {
+   "id": "E16",
+   "from": "barzan",
+   "to": "rbat",
+   "type": "JV-Gesellschafter",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "gegründet 2018",
+   "as_of": "2018-03",
+   "claim_ids": [
+    "C-GCC-01"
+   ],
+   "source_ids": [
+    "S-f1384405c8dd2505",
+    "S-4423d24b37b6b642"
+   ]
+  },
+  {
+   "id": "E17",
+   "from": "rbat",
+   "to": "qenf",
+   "type": "Vereinbarung Infrastrukturschutz",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "Vereinbarung unterzeichnet 2018; Umsetzung nicht belegt",
+   "as_of": "2018-03-15",
+   "claim_ids": [
+    "C-GCC-01"
+   ],
+   "source_ids": [
+    "S-4423d24b37b6b642"
+   ]
+  },
+  {
+   "id": "E18",
+   "from": "rheinmetall",
+   "to": "qeadf",
+   "type": "Lieferung Skynex",
+   "relation": "direkt",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "Lieferung/Betrieb berichtet (2022)",
+   "as_of": "2022-10-13",
+   "claim_ids": [
+    "C-GCC-08"
+   ],
+   "source_ids": [
+    "S-18fa7e4158bdc58b",
+    "S-f71c0348db6067c4"
+   ]
+  },
+  {
+   "id": "E19",
+   "from": "rheinmetall",
+   "to": "rast",
+   "type": "Beteiligung (Joint Venture)",
+   "relation": "direkt",
+   "capital_share": "40 % indirekt",
+   "voting_share": "nicht angegeben",
+   "control": "gemeinschaftlich (JV)",
+   "status": "aktiv (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-STR-08"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ]
+  },
+  {
+   "id": "E20",
+   "from": "rh_electronics",
+   "to": "arge_nnbs",
+   "type": "ARGE-Mitglied",
+   "relation": "direkt (Konzerngesellschaft)",
+   "capital_share": "33 % (Joint Operation)",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "Entwicklungsvertrag 2024",
+   "as_of": "2024-01-25",
+   "claim_ids": [
+    "C-TI-01"
+   ],
+   "source_ids": [
+    "S-f562ccee195198fd",
+    "S-f4730b21412bb02a"
+   ]
+  },
+  {
+   "id": "E21",
+   "from": "diehl",
+   "to": "arge_nnbs",
+   "type": "ARGE-Mitglied",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "Entwicklungsvertrag 2024",
+   "as_of": "2024-01-25",
+   "claim_ids": [
+    "C-TI-01"
+   ],
+   "source_ids": [
+    "S-f562ccee195198fd"
+   ]
+  },
+  {
+   "id": "E22",
+   "from": "hensoldt",
+   "to": "arge_nnbs",
+   "type": "ARGE-Mitglied",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "Entwicklungsvertrag 2024",
+   "as_of": "2024-01-25",
+   "claim_ids": [
+    "C-TI-01"
+   ],
+   "source_ids": [
+    "S-f562ccee195198fd",
+    "S-7066a889ca7eaad4"
+   ]
+  },
+  {
+   "id": "E23",
+   "from": "arge_nnbs",
+   "to": "bundeswehr",
+   "type": "Entwicklungsvertrag LVS NNbS",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "beauftragt 2024",
+   "as_of": "2024-01-25",
+   "claim_ids": [
+    "C-TI-01"
+   ],
+   "source_ids": [
+    "S-f562ccee195198fd"
+   ]
+  },
+  {
+   "id": "E24",
+   "from": "hensoldt",
+   "to": "rad",
+   "type": "Rahmenvertrag Radare",
+   "relation": "direkt (Konzerngesellschaft)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "Rahmenvertrag 12/2025",
+   "as_of": "2025-12-12",
+   "claim_ids": [
+    "C-TI-02"
+   ],
+   "source_ids": [
+    "S-9a5c062158c7a42c"
+   ]
+  },
+  {
+   "id": "E25",
+   "from": "mbda",
+   "to": "rh_electronics",
+   "type": "Absichtserklärung Flugkörperintegration",
+   "relation": "direkt (Konzerngesellschaft)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "LOI 2024",
+   "as_of": "2024-06-05",
+   "claim_ids": [
+    "C-TI-03"
+   ],
+   "source_ids": [
+    "S-f9b9880f37c53f47"
+   ]
+  },
+  {
+   "id": "E26",
+   "from": "mbda",
+   "to": "bundeswehr",
+   "type": "Auftrag DefendAir",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "Auftrag berichtet 2025",
+   "as_of": "2025-11-13",
+   "claim_ids": [
+    "C-TI-04"
+   ],
+   "source_ids": [
+    "S-2ea4c76a82bda463"
+   ]
+  },
+  {
+   "id": "E27",
+   "from": "halcon",
+   "to": "rad",
+   "type": "Flugkörperpartner Skynex",
+   "relation": "direkt (Konzerngesellschaft)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "angekündigt 2021; Tests 2025 berichtet",
+   "as_of": "2025-02-24",
+   "claim_ids": [
+    "C-TI-05"
+   ],
+   "source_ids": [
+    "S-e59dc842147cf65f",
+    "S-faf804b35f3ff96a",
+    "S-ef86c664e3ccb75b"
+   ]
+  },
+  {
+   "id": "E28",
+   "from": "edge",
+   "to": "halcon",
+   "type": "Konzernzugehörigkeit",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "aktiv (Stand 2021/2025 berichtet)",
+   "as_of": "2021-02-24",
+   "claim_ids": [
+    "C-TI-05"
+   ],
+   "source_ids": [
+    "S-faf804b35f3ff96a"
+   ]
+  },
+  {
+   "id": "E29",
+   "from": "denel",
+   "to": "rad",
+   "type": "frühere Flugkörperkooperation",
+   "relation": "historisch",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "historisch (eingestellt)",
+   "as_of": "2021-03-08",
+   "claim_ids": [
+    "C-TI-06"
+   ],
+   "source_ids": [
+    "S-829071fd179d4705"
+   ]
+  },
+  {
+   "id": "E30",
+   "from": "rh_electronics",
+   "to": "aim",
+   "type": "frühere JV-Beteiligung",
+   "relation": "historisch",
+   "capital_share": "50 % (bis 2025)",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "historisch (Verkauf 2025)",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-TI-07"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-b159a0c9329835a7",
+    "S-2fab023367922b5c"
+   ]
+  },
+  {
+   "id": "E31",
+   "from": "diehl",
+   "to": "aim",
+   "type": "Alleingesellschafter",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "100 % (nach Übernahme)",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "vollzogen 2025",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-TI-07"
+   ],
+   "source_ids": [
+    "S-2fab023367922b5c",
+    "S-f4730b21412bb02a"
+   ]
+  },
+  {
+   "id": "E32",
+   "from": "diehl",
+   "to": "edge",
+   "type": "Vereinbarung",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "berichtet 2025",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-TI-08"
+   ],
+   "source_ids": [
+    "S-2fab023367922b5c"
+   ]
+  },
+  {
+   "id": "E33",
+   "from": "rheinmetall",
+   "to": "gdels",
+   "type": "Unterauftrag Skyranger Österreich",
+   "relation": "direkt",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "beauftragt 2024",
+   "as_of": "2024-02-23",
+   "claim_ids": [
+    "C-TI-09"
+   ],
+   "source_ids": [
+    "S-562f0f3f359a746b"
+   ]
+  },
+  {
+   "id": "E34",
+   "from": "rheinmetall",
+   "to": "austria",
+   "type": "Flugabwehrprojekt Österreich",
+   "relation": "direkt",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "beauftragt 2024; Lieferbeginn 2026 angekündigt",
+   "as_of": "2024-02-23",
+   "claim_ids": [
+    "C-TI-09"
+   ],
+   "source_ids": [
+    "S-562f0f3f359a746b"
+   ]
+  },
+  {
+   "id": "E35",
+   "from": "rheinmetall",
+   "to": "bundeswehr",
+   "type": "Auftrag Skyranger 30",
+   "relation": "direkt",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "beauftragt 2024",
+   "as_of": "2024-02-27",
+   "claim_ids": [
+    "C-KD-01"
+   ],
+   "source_ids": [
+    "S-b8a3496f93a22c8c"
+   ]
+  },
+  {
+   "id": "E36",
+   "from": "rad",
+   "to": "nl_mod",
+   "type": "Auftrag Skyranger",
+   "relation": "direkt (Konzerngesellschaft)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "beauftragt 2025",
+   "as_of": "2025-12-12",
+   "claim_ids": [
+    "C-KD-02"
+   ],
+   "source_ids": [
+    "S-60677f3d57da054d"
+   ]
+  },
+  {
+   "id": "E37",
+   "from": "rheinmetall",
+   "to": "romania",
+   "type": "Auftrag Skyranger 35/Skynex",
+   "relation": "direkt",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "beauftragt 2026",
+   "as_of": "2026-06-24",
+   "claim_ids": [
+    "C-KD-03"
+   ],
+   "source_ids": [
+    "S-6bdb338d23c29e11"
+   ]
+  },
+  {
+   "id": "E38",
+   "from": "rheinmetall",
+   "to": "italy",
+   "type": "Einführung Skynex",
+   "relation": "direkt",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "eingeführt 2025 laut Bericht",
+   "as_of": "2025-12-31",
+   "claim_ids": [
+    "C-KD-04"
+   ],
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ]
+  },
+  {
+   "id": "E39",
+   "from": "rad",
+   "to": "swiss_vbs",
+   "type": "geplante Beschaffung Skynex",
+   "relation": "direkt (Konzerngesellschaft)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "beantragt 2026; kein Vertrag belegt",
+   "as_of": "2026-03-20",
+   "claim_ids": [
+    "C-KD-05"
+   ],
+   "source_ids": [
+    "S-5d5582a381f69b08"
+   ]
+  },
+  {
+   "id": "E40",
+   "from": "rheinmetall",
+   "to": "kuwait_navy",
+   "type": "Auftrag MASS",
+   "relation": "direkt",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "beauftragt (Q2 2026)",
+   "as_of": "2026-07-10",
+   "claim_ids": [
+    "C-GCC-11"
+   ],
+   "source_ids": [
+    "S-a831015ab01561c0"
+   ]
+  },
+  {
+   "id": "E41",
+   "from": "edge",
+   "to": "kuwait_navy",
+   "type": "Generalunternehmer Al-Dorra",
+   "relation": "Überschneidung",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "laufend (2026)",
+   "as_of": "2026-07-10",
+   "claim_ids": [
+    "C-GCC-11"
+   ],
+   "source_ids": [
+    "S-a831015ab01561c0"
+   ]
+  },
+  {
+   "id": "E42",
+   "from": "adsb",
+   "to": "edge",
+   "type": "Schiffbau im Auftrag",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "laufend (2026)",
+   "as_of": "2026-07-10",
+   "claim_ids": [
+    "C-GCC-11"
+   ],
+   "source_ids": [
+    "S-a831015ab01561c0"
+   ]
+  },
+  {
+   "id": "E43",
+   "from": "rdm",
+   "to": "mic",
+   "type": "Anlagenlieferung Munitionswerk",
+   "relation": "historisch",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "historisch (2016)",
+   "as_of": "2016-03-27",
+   "claim_ids": [
+    "C-GCC-05"
+   ],
+   "source_ids": [
+    "S-549848d0df9ec6ae",
+    "S-05ab0d04fb7863ad"
+   ]
+  },
+  {
+   "id": "E44",
+   "from": "sami",
+   "to": "denel",
+   "type": "Übernahmeangebot (berichtet)",
+   "relation": "historisch",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "historisch; Angebot ohne belegten Vollzug",
+   "as_of": "2018-11-08",
+   "claim_ids": [
+    "C-GCC-06"
+   ],
+   "source_ids": [
+    "S-d86e149497cf99ac"
+   ]
+  },
+  {
+   "id": "E45",
+   "from": "schwer",
+   "to": "rheinmetall",
+   "type": "frühere Führungsfunktionen",
+   "relation": "historisch",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "historisch (bis 2017)",
+   "as_of": "2017-12",
+   "claim_ids": [
+    "C-GCC-07"
+   ],
+   "source_ids": [
+    "S-5ac272b822ef96f9"
+   ]
+  },
+  {
+   "id": "E46",
+   "from": "schwer",
+   "to": "sami",
+   "type": "CEO (Stand 2019)",
+   "relation": "Querverbindung (Ebene 2)",
+   "capital_share": "n. a./unbekannt",
+   "voting_share": "nicht angegeben",
+   "control": "nicht angegeben",
+   "status": "Stand 02/2019; aktueller Status nicht geprüft",
+   "as_of": "2019-02-25",
+   "claim_ids": [
+    "C-GCC-07"
+   ],
+   "source_ids": [
+    "S-5ac272b822ef96f9"
+   ]
+  }
+ ],
+ "network": {
+  "schema_version": 1,
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-10",
+  "target_id": "rheinmetall",
+  "nodes": [
+   {
+    "id": "rheinmetall",
+    "label": "Rheinmetall AG",
+    "kind": "target",
+    "legal_name": "Rheinmetall AG, Düsseldorf",
+    "focus": true
+   },
+   {
+    "id": "rad",
+    "label": "Rheinmetall Air Defence",
+    "kind": "subsidiary",
+    "legal_name": "Rheinmetall Air Defence AG, Zürich",
+    "cluster": "structure",
+    "focus": true
+   },
+   {
+    "id": "rh_electronics",
+    "label": "Rheinmetall Electronics",
+    "kind": "subsidiary",
+    "legal_name": "Rheinmetall Electronics GmbH, Bremen",
+    "cluster": "structure",
+    "focus": false
+   },
+   {
+    "id": "rh_italia",
+    "label": "Rheinmetall Italia",
+    "kind": "subsidiary",
+    "legal_name": "Rheinmetall Italia S.p.A., Rom",
+    "cluster": "structure",
+    "focus": false
+   },
+   {
+    "id": "rdm",
+    "label": "Rheinmetall Denel Munition",
+    "kind": "subsidiary",
+    "legal_name": "Rheinmetall Denel Munition (Pty) Ltd., Somerset West",
+    "cluster": "structure",
+    "focus": true
+   },
+   {
+    "id": "rids",
+    "label": "Rh. Int. Defence & Security",
+    "kind": "subsidiary",
+    "legal_name": "Rheinmetall International Defence and Security Ltd., Riad",
+    "cluster": "structure",
+    "focus": false
+   },
+   {
+    "id": "rh_uae",
+    "label": "Rh. Int. Services (Abu Dhabi)",
+    "kind": "subsidiary",
+    "legal_name": "Rheinmetall International Services Limited, Abu Dhabi",
+    "cluster": "structure",
+    "focus": false
+   },
+   {
+    "id": "rpdc",
+    "label": "Rh. Projects Dev. Consultancy",
+    "kind": "subsidiary",
+    "legal_name": "Rheinmetall Projects Development Consultancy LLC, Abu Dhabi",
+    "cluster": "structure",
+    "focus": false
+   },
+   {
+    "id": "rps_gulf",
+    "label": "RPS Gulf (Schardscha)",
+    "kind": "subsidiary",
+    "legal_name": "Rheinmetall Protection Systems Gulf (FZE), Schardscha",
+    "cluster": "structure",
+    "focus": false
+   },
+   {
+    "id": "radarabia",
+    "label": "RADARABIA",
+    "kind": "jv",
+    "legal_name": "RADARABIA for Industry LLC, Riad",
+    "cluster": "structure",
+    "focus": true
+   },
+   {
+    "id": "rbat",
+    "label": "RBAT",
+    "kind": "jv",
+    "legal_name": "Rheinmetall Barzan Advanced Technologies QSTP, LLC, Doha",
+    "cluster": "structure",
+    "focus": true
+   },
+   {
+    "id": "rast",
+    "label": "Rh. Arabia Simulation & Training",
+    "kind": "jv",
+    "legal_name": "Rheinmetall Arabia Simulation and Training LLC, Riad",
+    "cluster": "structure",
+    "focus": false
+   },
+   {
+    "id": "denel",
+    "label": "Denel",
+    "kind": "partner",
+    "legal_name": "Denel (Pty) Ltd. / Denel SOC Ltd, Pretoria",
+    "cluster": "capital",
+    "focus": true
+   },
+   {
+    "id": "arge_nnbs",
+    "label": "ARGE NNbS",
+    "kind": "project",
+    "legal_name": "Arbeitsgemeinschaft Nah- und Nächstbereichsschutz, Bremen",
+    "cluster": "technology",
+    "focus": false
+   },
+   {
+    "id": "diehl",
+    "label": "Diehl Defence",
+    "kind": "partner",
+    "legal_name": "Diehl Defence GmbH & Co. KG, Überlingen",
+    "cluster": "technology",
+    "focus": true
+   },
+   {
+    "id": "hensoldt",
+    "label": "Hensoldt",
+    "kind": "supplier",
+    "legal_name": "HENSOLDT (Hensoldt Sensors GmbH / HENSOLDT AG)",
+    "cluster": "technology",
+    "focus": true
+   },
+   {
+    "id": "mbda",
+    "label": "MBDA Deutschland",
+    "kind": "partner",
+    "legal_name": "MBDA Deutschland",
+    "cluster": "technology",
+    "focus": true
+   },
+   {
+    "id": "halcon",
+    "label": "HALCON",
+    "kind": "partner",
+    "legal_name": "HALCON (EDGE Group), VAE",
+    "cluster": "technology",
+    "focus": true
+   },
+   {
+    "id": "aim",
+    "label": "AIM Infrarot-Module",
+    "kind": "other",
+    "legal_name": "AIM Infrarot-Module GmbH, Heilbronn",
+    "cluster": "technology",
+    "focus": false
+   },
+   {
+    "id": "gdels",
+    "label": "GDELS",
+    "kind": "partner",
+    "legal_name": "General Dynamics European Land Systems",
+    "cluster": "technology",
+    "focus": false
+   },
+   {
+    "id": "maz",
+    "label": "MAZ Group",
+    "kind": "partner",
+    "legal_name": "MAZ Group, Saudi-Arabien",
+    "cluster": "market",
+    "focus": true
+   },
+   {
+    "id": "barzan",
+    "label": "Barzan Holdings",
+    "kind": "partner",
+    "legal_name": "Barzan Holdings, Katar",
+    "cluster": "market",
+    "focus": true
+   },
+   {
+    "id": "edge",
+    "label": "EDGE Group",
+    "kind": "partner",
+    "legal_name": "EDGE Group, Abu Dhabi",
+    "cluster": "market",
+    "focus": true
+   },
+   {
+    "id": "qeadf",
+    "label": "Qatar Air Defence Forces",
+    "kind": "customer",
+    "legal_name": "Qatar Emiri Air Defence Forces",
+    "cluster": "market",
+    "focus": true
+   },
+   {
+    "id": "qenf",
+    "label": "Qatar Emiri Naval Forces",
+    "kind": "customer",
+    "legal_name": "Qatar Emiri Naval Forces",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "rsadf",
+    "label": "Royal Saudi Air Defense",
+    "kind": "customer",
+    "legal_name": "Royal Saudi Air Defense Forces",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "kuwait_navy",
+    "label": "Kuwaiti Naval Forces",
+    "kind": "customer",
+    "legal_name": "Kuwaiti Naval Forces",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "adsb",
+    "label": "Abu Dhabi Shipbuilding",
+    "kind": "other",
+    "legal_name": "Abu Dhabi Shipbuilding",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "mic",
+    "label": "Military Industries Corp.",
+    "kind": "customer",
+    "legal_name": "Military Industries Corporation (MIC), Saudi-Arabien",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "sami",
+    "label": "SAMI",
+    "kind": "other",
+    "legal_name": "Saudi Arabian Military Industries",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "schwer",
+    "label": "Andreas Schwer",
+    "kind": "person",
+    "legal_name": "Dr. Andreas Schwer",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "bundeswehr",
+    "label": "Bundeswehr / BAAINBw",
+    "kind": "customer",
+    "legal_name": "Bundesamt für Ausrüstung, Informationstechnik und Nutzung der Bundeswehr",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "nl_mod",
+    "label": "NL Verteidigungsministerium",
+    "kind": "customer",
+    "legal_name": "Ministerie van Defensie (Niederlande)",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "austria",
+    "label": "Österreich",
+    "kind": "customer",
+    "legal_name": "Republik Österreich (Streitkräfte)",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "romania",
+    "label": "Rumänien",
+    "kind": "customer",
+    "legal_name": "Regierung von Rumänien",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "italy",
+    "label": "Italien",
+    "kind": "customer",
+    "legal_name": "Italien (Streitkräfte)",
+    "cluster": "market",
+    "focus": false
+   },
+   {
+    "id": "swiss_vbs",
+    "label": "Schweiz (VBS)",
+    "kind": "customer",
+    "legal_name": "Eidgenössisches Departement für Verteidigung, Bevölkerungsschutz und Sport",
+    "cluster": "market",
+    "focus": false
+   }
+  ],
+  "edges": [
+   {
+    "id": "E01",
+    "from": "rheinmetall",
+    "to": "rad",
+    "type": "Beteiligung (Tochter)",
+    "summary": "Rheinmetall AG hält 100 % direkt an der Rheinmetall Air Defence AG, die laut Rheinmetall sämtliche Flugabwehraktivitäten bündelt.",
+    "categories": [
+     "subsidiary",
+     "owner"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f4730b21412bb02a",
+     "S-b159a0c9329835a7",
+     "S-18ce19a1fbbec148"
+    ],
+    "claim_ids": [
+     "C-STR-01",
+     "C-STR-02"
+    ],
+    "status": "aktiv (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "100 % direkt",
+    "control": "vollkonsolidiert"
+   },
+   {
+    "id": "E02",
+    "from": "rheinmetall",
+    "to": "rh_electronics",
+    "type": "Beteiligung (Tochter)",
+    "summary": "Rheinmetall AG hält 100 % direkt an der Rheinmetall Electronics GmbH.",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f4730b21412bb02a"
+    ],
+    "claim_ids": [
+     "C-STR-09"
+    ],
+    "status": "aktiv (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "100 % direkt",
+    "control": "vollkonsolidiert"
+   },
+   {
+    "id": "E03",
+    "from": "rheinmetall",
+    "to": "rh_italia",
+    "type": "Beteiligung (Tochter) / Hauptauftragnehmer",
+    "summary": "Rheinmetall hält indirekt 100 % an der Rheinmetall Italia S.p.A.; sie ist Hauptauftragnehmerin des Skynex-Auftrags eines internationalen Kunden (Q2 2026).",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [
+     "skynex"
+    ],
+    "source_ids": [
+     "S-f4730b21412bb02a",
+     "S-038334f593d8d949"
+    ],
+    "claim_ids": [
+     "C-STR-09",
+     "C-GCC-13"
+    ],
+    "status": "aktiv",
+    "as_of": "2026-07-02",
+    "capital_share": "100 % indirekt",
+    "control": "vollkonsolidiert"
+   },
+   {
+    "id": "E04",
+    "from": "rheinmetall",
+    "to": "rdm",
+    "type": "Beteiligung (Tochter)",
+    "summary": "Rheinmetall hält indirekt 51 % (über Rheinmetall Waffe Munition GmbH) an Rheinmetall Denel Munition.",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f4730b21412bb02a",
+     "S-1f76748059d5008c"
+    ],
+    "claim_ids": [
+     "C-STR-04"
+    ],
+    "status": "aktiv (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "51 % indirekt",
+    "control": "vollkonsolidiert"
+   },
+   {
+    "id": "E05",
+    "from": "denel",
+    "to": "rdm",
+    "type": "Minderheitsbeteiligung",
+    "summary": "Denel hält laut Rheinmetall 49 % an Rheinmetall Denel Munition.",
+    "categories": [
+     "owner",
+     "jv"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-1f76748059d5008c",
+     "S-f4730b21412bb02a"
+    ],
+    "claim_ids": [
+     "C-STR-04"
+    ],
+    "status": "aktiv (Unternehmensseite o. D.; 49 % Fremdanteil Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "49 %"
+   },
+   {
+    "id": "E06",
+    "from": "rheinmetall",
+    "to": "rids",
+    "type": "Beteiligung (Tochter)",
+    "summary": "Rheinmetall hält indirekt 100 % an Rheinmetall International Defence and Security Ltd., Riad.",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f4730b21412bb02a"
+    ],
+    "claim_ids": [
+     "C-STR-05"
+    ],
+    "status": "aktiv (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "100 % indirekt",
+    "control": "vollkonsolidiert"
+   },
+   {
+    "id": "E07",
+    "from": "rheinmetall",
+    "to": "rh_uae",
+    "type": "Beteiligung (Tochter)",
+    "summary": "Rheinmetall hält indirekt 100 % an Rheinmetall International Services Limited, Abu Dhabi.",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f4730b21412bb02a",
+     "S-b159a0c9329835a7"
+    ],
+    "claim_ids": [
+     "C-STR-05"
+    ],
+    "status": "aktiv (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "100 % indirekt",
+    "control": "vollkonsolidiert"
+   },
+   {
+    "id": "E08",
+    "from": "rheinmetall",
+    "to": "rpdc",
+    "type": "Beteiligung (Tochter, Stimmrechtsmehrheit)",
+    "summary": "Rheinmetall AG hält 49 % direkt an Rheinmetall Projects Development Consultancy LLC, Abu Dhabi; Vollkonsolidierung aufgrund der Mehrheit der Stimmrechte.",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f4730b21412bb02a"
+    ],
+    "claim_ids": [
+     "C-STR-05"
+    ],
+    "status": "aktiv (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "49 % direkt",
+    "voting_share": "Mehrheit der Stimmrechte (Quote nicht angegeben)",
+    "control": "vollkonsolidiert"
+   },
+   {
+    "id": "E09",
+    "from": "rheinmetall",
+    "to": "rps_gulf",
+    "type": "Beteiligung (Tochter)",
+    "summary": "Rheinmetall hält indirekt 100 % an Rheinmetall Protection Systems Gulf (FZE), Schardscha.",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f4730b21412bb02a",
+     "S-b159a0c9329835a7"
+    ],
+    "claim_ids": [
+     "C-STR-05"
+    ],
+    "status": "aktiv (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "100 % indirekt",
+    "control": "vollkonsolidiert"
+   },
+   {
+    "id": "E10",
+    "from": "rheinmetall",
+    "to": "radarabia",
+    "type": "Beteiligung (at-equity)",
+    "summary": "Rheinmetall hält indirekt 20 % an RADARABIA for Industry LLC, Riad (at-equity).",
+    "categories": [
+     "jv",
+     "owner"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f4730b21412bb02a",
+     "S-b159a0c9329835a7"
+    ],
+    "claim_ids": [
+     "C-STR-06"
+    ],
+    "status": "aktiv (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "20 % indirekt",
+    "control": "at-equity (maßgeblicher Einfluss/gemeinschaftlich nicht spezifiziert)"
+   },
+   {
+    "id": "E11",
+    "from": "rad",
+    "to": "radarabia",
+    "type": "JV-Gründung",
+    "summary": "Rheinmetall Air Defence gründete 2022 mit der MAZ Group das JV RADARABIA für Fertigung, MRO und Ausbildung bei Flugabwehrsystemen in Saudi-Arabien.",
+    "categories": [
+     "jv"
+    ],
+    "product_ids": [
+     "skyguard"
+    ],
+    "source_ids": [
+     "S-7dbdfac4d40d7b07",
+     "S-458cf180e9a20818",
+     "S-d401a7e147a6b2d4"
+    ],
+    "claim_ids": [
+     "C-GCC-02"
+    ],
+    "status": "angekündigt 2022; Werksbetrieb nicht belegt",
+    "as_of": "2022-03-06"
+   },
+   {
+    "id": "E12",
+    "from": "maz",
+    "to": "radarabia",
+    "type": "JV-Gesellschafter",
+    "summary": "Die MAZ Group ist saudischer Partner im JV RADARABIA (Quote öffentlich nicht angegeben).",
+    "categories": [
+     "jv"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-7dbdfac4d40d7b07",
+     "S-458cf180e9a20818",
+     "S-d401a7e147a6b2d4"
+    ],
+    "claim_ids": [
+     "C-GCC-02"
+    ],
+    "status": "angekündigt 2022",
+    "as_of": "2022-03-06"
+   },
+   {
+    "id": "E13",
+    "from": "radarabia",
+    "to": "rsadf",
+    "type": "geplante MRO-Leistung",
+    "summary": "RADARABIA soll laut Janes MRO an Skyguard-Flugabwehrkanonen der Royal Saudi Air Defense Forces übernehmen.",
+    "categories": [
+     "customer",
+     "project"
+    ],
+    "product_ids": [
+     "skyguard"
+    ],
+    "source_ids": [
+     "S-458cf180e9a20818"
+    ],
+    "claim_ids": [
+     "C-GCC-02"
+    ],
+    "status": "angekündigt (2022)",
+    "as_of": "2022-03-07",
+    "uncertainty": "Leistungsbeziehung angekündigt, Vertrag nicht belegt"
+   },
+   {
+    "id": "E14",
+    "from": "rheinmetall",
+    "to": "rsadf",
+    "type": "Kundenbeziehung (Herstellerangabe)",
+    "summary": "Rheinmetall bezeichnet Saudi-Arabien als langjährigen Großkunden; die RSADF betreiben Skyguard-Flugabwehrkanonen.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "skyguard"
+    ],
+    "source_ids": [
+     "S-d401a7e147a6b2d4",
+     "S-458cf180e9a20818"
+    ],
+    "claim_ids": [
+     "C-GCC-03"
+    ],
+    "status": "berichtet (Herstellerangabe 2022)",
+    "as_of": "2022-03-07",
+    "uncertainty": "keine konkreten Verträge öffentlich belegt"
+   },
+   {
+    "id": "E15",
+    "from": "rheinmetall",
+    "to": "rbat",
+    "type": "Beteiligung (at-equity)",
+    "summary": "Rheinmetall hält indirekt 49 % an Rheinmetall Barzan Advanced Technologies, Doha (at-equity).",
+    "categories": [
+     "jv",
+     "owner"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f4730b21412bb02a",
+     "S-b159a0c9329835a7"
+    ],
+    "claim_ids": [
+     "C-STR-07"
+    ],
+    "status": "aktiv (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "49 % indirekt",
+    "control": "at-equity"
+   },
+   {
+    "id": "E16",
+    "from": "barzan",
+    "to": "rbat",
+    "type": "JV-Gesellschafter",
+    "summary": "Barzan Holdings gründete 2018 mit der Rheinmetall AG das JV RBAT (Munitionsfertigung, Infrastrukturschutz, Forschung).",
+    "categories": [
+     "jv"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f1384405c8dd2505",
+     "S-4423d24b37b6b642"
+    ],
+    "claim_ids": [
+     "C-GCC-01"
+    ],
+    "status": "gegründet 2018",
+    "as_of": "2018-03"
+   },
+   {
+    "id": "E17",
+    "from": "rbat",
+    "to": "qenf",
+    "type": "Vereinbarung Infrastrukturschutz",
+    "summary": "RBAT unterzeichnete 2018 eine Vereinbarung mit den Qatar Emiri Naval Forces über Schutz kritischer Infrastruktur eines neuen Marinestützpunkts.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-4423d24b37b6b642"
+    ],
+    "claim_ids": [
+     "C-GCC-01"
+    ],
+    "status": "Vereinbarung unterzeichnet 2018; Umsetzung nicht belegt",
+    "as_of": "2018-03-15"
+   },
+   {
+    "id": "E18",
+    "from": "rheinmetall",
+    "to": "qeadf",
+    "type": "Lieferung Skynex",
+    "summary": "Die Qatar Emiri Air Defence Forces verfügen laut Janes über Skynex; Rheinmetall bestätigte laut Janes Katar als ersten Skynex-Kunden.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "skynex"
+    ],
+    "source_ids": [
+     "S-18fa7e4158bdc58b",
+     "S-f71c0348db6067c4"
+    ],
+    "claim_ids": [
+     "C-GCC-08"
+    ],
+    "status": "Lieferung/Betrieb berichtet (2022)",
+    "as_of": "2022-10-13",
+    "uncertainty": "Vertragsdaten nicht offiziell veröffentlicht"
+   },
+   {
+    "id": "E19",
+    "from": "rheinmetall",
+    "to": "rast",
+    "type": "Beteiligung (Joint Venture)",
+    "summary": "Rheinmetall hält indirekt 40 % an der Rheinmetall Arabia Simulation and Training LLC, Riad (JV; Partner nicht identifiziert).",
+    "categories": [
+     "jv"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f4730b21412bb02a"
+    ],
+    "claim_ids": [
+     "C-STR-08"
+    ],
+    "status": "aktiv (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "40 % indirekt",
+    "control": "gemeinschaftlich (JV)"
+   },
+   {
+    "id": "E20",
+    "from": "rh_electronics",
+    "to": "arge_nnbs",
+    "type": "ARGE-Mitglied",
+    "summary": "Rheinmetall Electronics ist Mitglied der ARGE NNbS (Joint Operation, 33 %; Leistungsanteil 607 Mio. EUR).",
+    "categories": [
+     "project",
+     "jv"
+    ],
+    "product_ids": [
+     "skyranger30"
+    ],
+    "source_ids": [
+     "S-f562ccee195198fd",
+     "S-f4730b21412bb02a"
+    ],
+    "claim_ids": [
+     "C-TI-01"
+    ],
+    "status": "Entwicklungsvertrag 2024",
+    "as_of": "2024-01-25",
+    "capital_share": "33 % (Joint Operation)"
+   },
+   {
+    "id": "E21",
+    "from": "diehl",
+    "to": "arge_nnbs",
+    "type": "ARGE-Mitglied",
+    "summary": "Diehl Defence ist Mitglied der ARGE NNbS (Leistungsanteil 339 Mio. EUR; IRIS-T SLM-Einbindung).",
+    "categories": [
+     "project"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f562ccee195198fd"
+    ],
+    "claim_ids": [
+     "C-TI-01"
+    ],
+    "status": "Entwicklungsvertrag 2024",
+    "as_of": "2024-01-25"
+   },
+   {
+    "id": "E22",
+    "from": "hensoldt",
+    "to": "arge_nnbs",
+    "type": "ARGE-Mitglied",
+    "summary": "Hensoldt Sensors ist Mitglied der ARGE NNbS (Leistungsanteil 284 Mio. EUR; Radare).",
+    "categories": [
+     "project"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f562ccee195198fd",
+     "S-7066a889ca7eaad4"
+    ],
+    "claim_ids": [
+     "C-TI-01"
+    ],
+    "status": "Entwicklungsvertrag 2024",
+    "as_of": "2024-01-25"
+   },
+   {
+    "id": "E23",
+    "from": "arge_nnbs",
+    "to": "bundeswehr",
+    "type": "Entwicklungsvertrag LVS NNbS",
+    "summary": "Das BAAINBw beauftragte die ARGE NNbS am 25.01.2024 mit der Entwicklung des LVS NNbS (rd. 1,2 Mrd. EUR brutto).",
+    "categories": [
+     "customer",
+     "project"
+    ],
+    "product_ids": [
+     "skyranger30"
+    ],
+    "source_ids": [
+     "S-f562ccee195198fd"
+    ],
+    "claim_ids": [
+     "C-TI-01"
+    ],
+    "status": "beauftragt 2024",
+    "as_of": "2024-01-25"
+   },
+   {
+    "id": "E24",
+    "from": "hensoldt",
+    "to": "rad",
+    "type": "Rahmenvertrag Radare",
+    "summary": "Hensoldt liefert SPEXER-2000-Radare an die Rheinmetall Air Defence (Rahmenvertrag bis in die 2030er, u. a. Skyranger 30).",
+    "categories": [
+     "supplier"
+    ],
+    "product_ids": [
+     "spexer",
+     "skyranger30"
+    ],
+    "source_ids": [
+     "S-9a5c062158c7a42c"
+    ],
+    "claim_ids": [
+     "C-TI-02"
+    ],
+    "status": "Rahmenvertrag 12/2025",
+    "as_of": "2025-12-12"
+   },
+   {
+    "id": "E25",
+    "from": "mbda",
+    "to": "rh_electronics",
+    "type": "Absichtserklärung Flugkörperintegration",
+    "summary": "MBDA Deutschland und Rheinmetall Electronics vereinbarten per LOI die Integration der SADM in Skyranger 30.",
+    "categories": [
+     "partner"
+    ],
+    "product_ids": [
+     "sadm",
+     "skyranger30"
+    ],
+    "source_ids": [
+     "S-f9b9880f37c53f47"
+    ],
+    "claim_ids": [
+     "C-TI-03"
+    ],
+    "status": "LOI 2024",
+    "as_of": "2024-06-05"
+   },
+   {
+    "id": "E26",
+    "from": "mbda",
+    "to": "bundeswehr",
+    "type": "Auftrag DefendAir",
+    "summary": "Deutschland beauftragte MBDA laut Bericht mit DefendAir zur Integration in Skyranger 30.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "sadm",
+     "skyranger30"
+    ],
+    "source_ids": [
+     "S-2ea4c76a82bda463"
+    ],
+    "claim_ids": [
+     "C-TI-04"
+    ],
+    "status": "Auftrag berichtet 2025",
+    "as_of": "2025-11-13",
+    "uncertainty": "Sekundärquelle"
+   },
+   {
+    "id": "E27",
+    "from": "halcon",
+    "to": "rad",
+    "type": "Flugkörperpartner Skynex",
+    "summary": "HALCON liefert/entwickelt den SkyKnight-Flugkörper zur Integration in Skynex; Rheinmetall Air Defence verantwortet die Integration (Partnerangabe).",
+    "categories": [
+     "partner",
+     "supplier"
+    ],
+    "product_ids": [
+     "skyknight",
+     "skynex"
+    ],
+    "source_ids": [
+     "S-e59dc842147cf65f",
+     "S-faf804b35f3ff96a",
+     "S-ef86c664e3ccb75b"
+    ],
+    "claim_ids": [
+     "C-TI-05"
+    ],
+    "status": "angekündigt 2021; Tests 2025 berichtet",
+    "as_of": "2025-02-24",
+    "uncertainty": "Partnerangaben über Medien; Qualifikation erwartet Ende 2026"
+   },
+   {
+    "id": "E28",
+    "from": "edge",
+    "to": "halcon",
+    "type": "Konzernzugehörigkeit",
+    "summary": "HALCON ist laut Berichten Teil der EDGE Group.",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-faf804b35f3ff96a"
+    ],
+    "claim_ids": [
+     "C-TI-05"
+    ],
+    "status": "aktiv (Stand 2021/2025 berichtet)",
+    "as_of": "2021-02-24"
+   },
+   {
+    "id": "E29",
+    "from": "denel",
+    "to": "rad",
+    "type": "frühere Flugkörperkooperation",
+    "summary": "Rheinmetall hatte für Skynex laut EDR eine Kooperation mit Denel (Cheetah) begonnen, die eingestellt wurde.",
+    "categories": [
+     "partner"
+    ],
+    "product_ids": [
+     "skynex"
+    ],
+    "source_ids": [
+     "S-829071fd179d4705"
+    ],
+    "claim_ids": [
+     "C-TI-06"
+    ],
+    "status": "historisch (eingestellt)",
+    "as_of": "2021-03-08",
+    "historical": true,
+    "uncertainty": "nur eine Sekundärquelle"
+   },
+   {
+    "id": "E30",
+    "from": "rh_electronics",
+    "to": "aim",
+    "type": "frühere JV-Beteiligung",
+    "summary": "Rheinmetall Electronics hielt 50 % an AIM Infrarot-Module und verkaufte sie 2025 an Diehl Defence.",
+    "categories": [
+     "jv"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-f4730b21412bb02a",
+     "S-b159a0c9329835a7",
+     "S-2fab023367922b5c"
+    ],
+    "claim_ids": [
+     "C-TI-07"
+    ],
+    "status": "historisch (Verkauf 2025)",
+    "as_of": "2025-12-31",
+    "historical": true,
+    "capital_share": "50 % (bis 2025)"
+   },
+   {
+    "id": "E31",
+    "from": "diehl",
+    "to": "aim",
+    "type": "Alleingesellschafter",
+    "summary": "Diehl Defence übernahm 2025 die weiteren 50 % an AIM von Rheinmetall.",
+    "categories": [
+     "owner"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-2fab023367922b5c",
+     "S-f4730b21412bb02a"
+    ],
+    "claim_ids": [
+     "C-TI-07"
+    ],
+    "status": "vollzogen 2025",
+    "as_of": "2025-12-31",
+    "capital_share": "100 % (nach Übernahme)"
+   },
+   {
+    "id": "E32",
+    "from": "diehl",
+    "to": "edge",
+    "type": "Vereinbarung",
+    "summary": "Diehl Defence hat laut eigenem Geschäftsbericht 2025 Vereinbarungen mit EDGE getroffen (Gegenstand nicht genannt).",
+    "categories": [
+     "partner"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-2fab023367922b5c"
+    ],
+    "claim_ids": [
+     "C-TI-08"
+    ],
+    "status": "berichtet 2025",
+    "as_of": "2025-12-31",
+    "overlap": false
+   },
+   {
+    "id": "E33",
+    "from": "rheinmetall",
+    "to": "gdels",
+    "type": "Unterauftrag Skyranger Österreich",
+    "summary": "Rheinmetall liefert Skyranger 30 für Österreich als Unterauftragnehmer von GDELS (Pandur EVO).",
+    "categories": [
+     "supplier"
+    ],
+    "product_ids": [
+     "skyranger30"
+    ],
+    "source_ids": [
+     "S-562f0f3f359a746b"
+    ],
+    "claim_ids": [
+     "C-TI-09"
+    ],
+    "status": "beauftragt 2024",
+    "as_of": "2024-02-23"
+   },
+   {
+    "id": "E34",
+    "from": "rheinmetall",
+    "to": "austria",
+    "type": "Flugabwehrprojekt Österreich",
+    "summary": "Österreich beschafft 36 Skyranger 30 auf Pandur EVO; Rheinmetall als Unterauftragnehmer von GDELS.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "skyranger30"
+    ],
+    "source_ids": [
+     "S-562f0f3f359a746b"
+    ],
+    "claim_ids": [
+     "C-TI-09"
+    ],
+    "status": "beauftragt 2024; Lieferbeginn 2026 angekündigt",
+    "as_of": "2024-02-23"
+   },
+   {
+    "id": "E35",
+    "from": "rheinmetall",
+    "to": "bundeswehr",
+    "type": "Auftrag Skyranger 30",
+    "summary": "Bundeswehr beauftragte 2024 einen Prototyp und 18 Serienfahrzeuge Skyranger 30 auf Boxer.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "skyranger30"
+    ],
+    "source_ids": [
+     "S-b8a3496f93a22c8c"
+    ],
+    "claim_ids": [
+     "C-KD-01"
+    ],
+    "status": "beauftragt 2024",
+    "as_of": "2024-02-27"
+   },
+   {
+    "id": "E36",
+    "from": "rad",
+    "to": "nl_mod",
+    "type": "Auftrag Skyranger",
+    "summary": "Das niederländische Verteidigungsministerium beauftragte Rheinmetall Air Defence mit Skyranger-Systemen.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "skyranger30"
+    ],
+    "source_ids": [
+     "S-60677f3d57da054d"
+    ],
+    "claim_ids": [
+     "C-KD-02"
+    ],
+    "status": "beauftragt 2025",
+    "as_of": "2025-12-12"
+   },
+   {
+    "id": "E37",
+    "from": "rheinmetall",
+    "to": "romania",
+    "type": "Auftrag Skyranger 35/Skynex",
+    "summary": "Rumänien beauftragte 24 Skyranger 35, sieben Skynex und zwei Millennium Guns.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "skyranger35",
+     "skynex",
+     "millennium"
+    ],
+    "source_ids": [
+     "S-6bdb338d23c29e11"
+    ],
+    "claim_ids": [
+     "C-KD-03"
+    ],
+    "status": "beauftragt 2026",
+    "as_of": "2026-06-24"
+   },
+   {
+    "id": "E38",
+    "from": "rheinmetall",
+    "to": "italy",
+    "type": "Einführung Skynex",
+    "summary": "2025 wurde in Italien das Skynex-System eingeführt (Geschäftsbericht 2025).",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "skynex"
+    ],
+    "source_ids": [
+     "S-f4730b21412bb02a"
+    ],
+    "claim_ids": [
+     "C-KD-04"
+    ],
+    "status": "eingeführt 2025 laut Bericht",
+    "as_of": "2025-12-31"
+   },
+   {
+    "id": "E39",
+    "from": "rad",
+    "to": "swiss_vbs",
+    "type": "geplante Beschaffung Skynex",
+    "summary": "Armeebotschaft 2026 sieht freihändige Beschaffung von 32 Skynex-Systemen vor; keine verbindliche Offerte laut Botschaft.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "skynex"
+    ],
+    "source_ids": [
+     "S-5d5582a381f69b08"
+    ],
+    "claim_ids": [
+     "C-KD-05"
+    ],
+    "status": "beantragt 2026; kein Vertrag belegt",
+    "as_of": "2026-03-20",
+    "uncertainty": "Sekundärquelle; Parlamentsentscheid nicht geprüft"
+   },
+   {
+    "id": "E40",
+    "from": "rheinmetall",
+    "to": "kuwait_navy",
+    "type": "Auftrag MASS",
+    "summary": "Kuwaiti Naval Forces beauftragten Rheinmetall mit MASS-Täuschkörpersystemen für acht Al-Dorra-Boote.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "mass"
+    ],
+    "source_ids": [
+     "S-a831015ab01561c0"
+    ],
+    "claim_ids": [
+     "C-GCC-11"
+    ],
+    "status": "beauftragt (Q2 2026)",
+    "as_of": "2026-07-10"
+   },
+   {
+    "id": "E41",
+    "from": "edge",
+    "to": "kuwait_navy",
+    "type": "Generalunternehmer Al-Dorra",
+    "summary": "EDGE Group ist Generalunternehmer des kuwaitischen Al-Dorra-Programms.",
+    "categories": [
+     "project",
+     "customer"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-a831015ab01561c0"
+    ],
+    "claim_ids": [
+     "C-GCC-11"
+    ],
+    "status": "laufend (2026)",
+    "as_of": "2026-07-10",
+    "overlap": true,
+    "uncertainty": "Gemeinsame Programmteilnahme mit Rheinmetall belegt keinen bilateralen Vertrag"
+   },
+   {
+    "id": "E42",
+    "from": "adsb",
+    "to": "edge",
+    "type": "Schiffbau im Auftrag",
+    "summary": "Abu Dhabi Shipbuilding baut die Al-Dorra-Boote im Auftrag der EDGE Group.",
+    "categories": [
+     "supplier"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-a831015ab01561c0"
+    ],
+    "claim_ids": [
+     "C-GCC-11"
+    ],
+    "status": "laufend (2026)",
+    "as_of": "2026-07-10"
+   },
+   {
+    "id": "E43",
+    "from": "rdm",
+    "to": "mic",
+    "type": "Anlagenlieferung Munitionswerk",
+    "summary": "RDM plante und baute 2016 ein Munitionswerk in Al-Kharj für die saudische MIC (schlüsselfertig laut südafrikanischer Regierung).",
+    "categories": [
+     "supplier",
+     "customer"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-549848d0df9ec6ae",
+     "S-05ab0d04fb7863ad"
+    ],
+    "claim_ids": [
+     "C-GCC-05"
+    ],
+    "status": "historisch (2016)",
+    "as_of": "2016-03-27",
+    "historical": true,
+    "uncertainty": "Defense News spricht von gemeinsamem Werk; amtlich als Lieferbeziehung beschrieben"
+   },
+   {
+    "id": "E44",
+    "from": "sami",
+    "to": "denel",
+    "type": "Übernahmeangebot (berichtet)",
+    "summary": "SAMI bot laut Reuters 2018 eine Partnerschaft mit Denel inkl. Erwerb von Denels 49-%-Anteil an RDM an; Vollzug nicht belegt.",
+    "categories": [
+     "other"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-d86e149497cf99ac"
+    ],
+    "claim_ids": [
+     "C-GCC-06"
+    ],
+    "status": "historisch; Angebot ohne belegten Vollzug",
+    "as_of": "2018-11-08",
+    "historical": true,
+    "uncertainty": "anonyme Quelle"
+   },
+   {
+    "id": "E45",
+    "from": "schwer",
+    "to": "rheinmetall",
+    "type": "frühere Führungsfunktionen",
+    "summary": "Andreas Schwer war 2012–2015 in der Geschäftsleitung von Rheinmetall Defence und 2016–2017 Chairman/President der Rheinmetall International AG.",
+    "categories": [
+     "other"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-5ac272b822ef96f9"
+    ],
+    "claim_ids": [
+     "C-GCC-07"
+    ],
+    "status": "historisch (bis 2017)",
+    "as_of": "2017-12",
+    "historical": true
+   },
+   {
+    "id": "E46",
+    "from": "schwer",
+    "to": "sami",
+    "type": "CEO (Stand 2019)",
+    "summary": "Andreas Schwer war laut Arab News seit Januar 2018 CEO von SAMI (Stand Februar 2019).",
+    "categories": [
+     "other"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-5ac272b822ef96f9"
+    ],
+    "claim_ids": [
+     "C-GCC-07"
+    ],
+    "status": "Stand 02/2019; aktueller Status nicht geprüft",
+    "as_of": "2019-02-25",
+    "uncertainty": "aktuelle Funktion nicht geprüft"
+   }
+  ],
+  "products": [
+   {
+    "id": "skynex",
+    "label": "Skynex"
+   },
+   {
+    "id": "skyranger30",
+    "label": "Skyranger 30"
+   },
+   {
+    "id": "skyranger35",
+    "label": "Skyranger 35"
+   },
+   {
+    "id": "skyguard",
+    "label": "Skyguard"
+   },
+   {
+    "id": "skyknight",
+    "label": "SkyKnight (HALCON)"
+   },
+   {
+    "id": "spexer",
+    "label": "SPEXER 2000 (Hensoldt)"
+   },
+   {
+    "id": "sadm",
+    "label": "SADM / DefendAir (MBDA)"
+   },
+   {
+    "id": "mass",
+    "label": "MASS (Schiffsschutz)"
+   },
+   {
+    "id": "millennium",
+    "label": "Millennium Gun"
+   }
+  ],
+  "sources": [
+   {
+    "id": "S-038334f593d8d949",
+    "name": "Rheinmetall AG",
+    "title": "Rheinmetall liefert vier Skynex-Systeme an internationalen Kunden",
+    "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/07/2026-07-02-rheinmetall-liefert-vier-skynex-systeme-an-internationalen-kunden",
+    "published_date": "2026-07-02",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-05ab0d04fb7863ad",
+    "name": "Defense News",
+    "title": "Rheinmetall Denel Munition Factory Opens in Saudi Arabia",
+    "url": "https://www.defensenews.com/home/2016/04/06/rheinmetall-denel-munition-factory-opens-in-saudi-arabia/",
+    "published_date": "2016-04-06",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-18ce19a1fbbec148",
+    "name": "Rheinmetall AG",
+    "title": "Rheinmetall Air Defence – Über uns",
+    "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-air-defence/ueber-uns",
+    "published_date": null,
+    "accessed_date": "2026-10-10",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-18fa7e4158bdc58b",
+    "name": "Janes",
+    "title": "Qatar unveils Skynex air defence",
+    "url": "https://www.janes.com/defence-intelligence-insights/defence-news/weapons/qatar-unveils-skynex-air-defence",
+    "published_date": "2022-10-14",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-1f76748059d5008c",
+    "name": "Rheinmetall AG",
+    "title": "Rheinmetall Denel Munition (Pty) Ltd. (Unternehmensseite)",
+    "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-denel-munition",
+    "published_date": null,
+    "accessed_date": "2026-10-10",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-2ea4c76a82bda463",
+    "name": "The Defense Post",
+    "title": "MBDA to Arm German Skyranger 30 With Counter-Small-Drone Missile",
+    "url": "https://thedefensepost.com/2025/11/13/mbda-german-skyranger/",
+    "published_date": "2025-11-13",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-2fab023367922b5c",
+    "name": "Diehl Stiftung & Co. KG",
+    "title": "Diehl Geschäftsbericht 2025",
+    "url": "https://www.diehl.com/Geschaeftsbericht_2025/flipbook.pdf",
+    "published_date": null,
+    "accessed_date": "2026-10-10",
+    "source_kind": "Originalbericht",
+    "report_year": 2025
+   },
+   {
+    "id": "S-4423d24b37b6b642",
+    "name": "Gulf Times",
+    "title": "Barzan signs seven agreements at Dimdex",
+    "url": "https://www.gulf-times.com/story/585186/Barzan-signs-seven-agreements-at-Dimdex",
+    "published_date": "2018-03-15",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-458cf180e9a20818",
+    "name": "Janes",
+    "title": "WDS 2022: Rheinmetall, MAZ Group launch joint venture",
+    "url": "https://www.janes.com/defence-intelligence-insights/defence-news/industry/wds-2022-rheinmetall-maz-group-launch-joint-venture",
+    "published_date": "2022-03-07",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-549848d0df9ec6ae",
+    "name": "Parliamentary Monitoring Group (Südafrika)",
+    "title": "Question NW1259 to the Minister of Public Enterprises",
+    "url": "https://pmg.org.za/committee-question/3060/",
+    "published_date": null,
+    "accessed_date": "2026-10-10",
+    "source_kind": "amtlicher Datensatz"
+   },
+   {
+    "id": "S-562f0f3f359a746b",
+    "name": "Rheinmetall AG",
+    "title": "Market breakthrough in Austria: Rheinmetall supplies Skyranger 30",
+    "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/02/2024-02-23-rheinmetall-supplies-skyranger-30-to-austria",
+    "published_date": "2024-02-23",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-5ac272b822ef96f9",
+    "name": "Arab News",
+    "title": "FaceOf: Andreas Schwer, chief executive officer of the Saudi Arabian Military Industries",
+    "url": "https://www.arabnews.com/saudi-arabia/faceof-andreas-schwer-chief-executive-officer-of-the-saudi-arabian-military-industries-1457516",
+    "published_date": "2019-02-25",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-5d5582a381f69b08",
+    "name": "NZZ",
+    "title": "Armeebotschaft 2026: Bundesrat will bei der Luftverteidigung nachrüsten",
+    "url": "https://www.nzz.ch/schweiz/armeebotschaft-2026-der-bundesrat-will-moegliche-angriffe-aus-der-luft-mit-einem-schweizer-drohnenabwehrsystem-bekaempfen-ld.1930274",
+    "published_date": "2026-03-20",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-60677f3d57da054d",
+    "name": "Rheinmetall AG",
+    "title": "Rheinmetall to supply Skyranger 30 to the Netherlands",
+    "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-12-rheinmetall-to-supply-skyranger-30-for-the-dutch-armed-forces",
+    "published_date": "2025-12-12",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-6bdb338d23c29e11",
+    "name": "Rheinmetall AG",
+    "title": "Romania orders Skyranger 35 air defence systems from Rheinmetall",
+    "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-24-romania-orders-skyranger-35-air-defence-systems-from-rheinmetall",
+    "published_date": "2026-06-24",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-7066a889ca7eaad4",
+    "name": "HENSOLDT AG",
+    "title": "Geschäftsbericht der HENSOLDT AG 2025",
+    "url": "https://investors.hensoldt.net/media/document/1e6664b4-3343-4297-837a-3924a62fd59c/assets/DE000HAG0005-JA-2025-EQ-D-00.pdf",
+    "published_date": null,
+    "accessed_date": "2026-10-10",
+    "source_kind": "Originalbericht",
+    "report_year": 2025
+   },
+   {
+    "id": "S-7dbdfac4d40d7b07",
+    "name": "Aviation Week",
+    "title": "WDS: Rheinmetall Air Defense and MAZ Group create joint venture",
+    "url": "https://aviationweek.com/aerospace/wds-rheinmetall-air-defense-maz-group-create-joint-venture",
+    "published_date": "2022-03-07",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-829071fd179d4705",
+    "name": "EDR Magazine",
+    "title": "Halcon and Rheinmetall Air Defence team up for the Skynex",
+    "url": "https://www.edrmagazine.eu/halcon-and-rheinmetall-air-defence-team-up-for-the-skynex",
+    "published_date": "2021-03-08",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-9a5c062158c7a42c",
+    "name": "HENSOLDT",
+    "title": "HENSOLDT supplies radars for Rheinmetall air defence systems",
+    "url": "https://www.hensoldt.net/news/hensoldt-supplies-radars-for-rheinmetall-air-defence-systems",
+    "published_date": "2025-12-12",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Partnerangabe"
+   },
+   {
+    "id": "S-a831015ab01561c0",
+    "name": "Rheinmetall AG",
+    "title": "Kuwait procures Rheinmetall's MASS decoy launchers",
+    "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/07/2026-07-10-kuwait-commissions-rheinmetall-mass-ship-protection-systems",
+    "published_date": "2026-07-10",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-b159a0c9329835a7",
+    "name": "Rheinmetall AG",
+    "title": "Rheinmetall Geschäftsbericht 2024",
+    "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2025/GB/Rheinmetall-Geschaeftsbericht-2024.pdf",
+    "published_date": null,
+    "accessed_date": "2026-10-10",
+    "source_kind": "Originalbericht",
+    "report_year": 2024
+   },
+   {
+    "id": "S-b8a3496f93a22c8c",
+    "name": "Rheinmetall AG",
+    "title": "Mobile air defence: Rheinmetall to supply the Bundeswehr with Skyranger 30 on Boxer platform",
+    "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/02/2024-02-27-bundeswehr-ordered-skyranger-30-mobile-air-defence-system",
+    "published_date": "2024-02-27",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-d401a7e147a6b2d4",
+    "name": "Argaam",
+    "title": "Switzerland set to transfer military resources, skills to Saudi Arabia in coming months",
+    "url": "https://www.argaam.com/en/article/articledetail/id/1540950",
+    "published_date": "2022-03-07",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-d86e149497cf99ac",
+    "name": "Gulf News (Reuters)",
+    "title": "Saudi Arabia makes a push for defence joint ventures",
+    "url": "https://gulfnews.com/business/saudi-arabia-makes-a-push-for-defence-joint-ventures-1.1541688391200",
+    "published_date": "2018-11-08",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-e59dc842147cf65f",
+    "name": "Gulf News",
+    "title": "IDEX 2021: First UAE-made rocket and artillery interceptor missile 'SkyKnight' takes wings",
+    "url": "https://gulfnews.com/business/markets/idex-2021-first-uae-made-rocket-and-artillery-interceptor-missile-skyknight-takes-wings-1.1614071964600",
+    "published_date": "2021-02-23",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-ef86c664e3ccb75b",
+    "name": "Janes",
+    "title": "IDEX 2025: Skyknight air-defence system undergoes testing",
+    "url": "https://www.janes.com/defence-intelligence-insights/defence-news/defence/idex-2025-skyknight-air-defence-system-undergoes-testing",
+    "published_date": "2025-02-24",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-f1384405c8dd2505",
+    "name": "Qatar Tribune",
+    "title": "Barzan Holdings inks deals to meet Qatar's defence needs",
+    "url": "https://www.qatar-tribune.com/article/116179/FIRSTPAGE/Barzan-Holdings-inks-deals-to-meet-Qatar-39s-defence-needs",
+    "published_date": "2018-03-14",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-f4730b21412bb02a",
+    "name": "Rheinmetall AG",
+    "title": "Rheinmetall Geschäftsbericht 2025",
+    "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/GB/Rheinmetall-Geschaeftsbericht-2025.pdf",
+    "published_date": null,
+    "accessed_date": "2026-10-10",
+    "source_kind": "Originalbericht",
+    "report_year": 2025
+   },
+   {
+    "id": "S-f562ccee195198fd",
+    "name": "Rheinmetall AG",
+    "title": "Startschuss für Luftverteidigungssystem NNbS",
+    "url": "https://www.rheinmetall.com/de/media/news-watch/news/2024/01/2024-01-25-startschuss-fuer-luftverteidigungssystem-nnbs",
+    "published_date": "2024-01-25",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-f71c0348db6067c4",
+    "name": "Janes",
+    "title": "Rheinmetall to supply Ukraine with Skynex after confirming Qatar delivery",
+    "url": "https://www.janes.com/defence-intelligence-insights/defence-news/weapons/rheinmetall-to-supply-ukraine-with-skynex-after-confirming-qatar-delivery",
+    "published_date": "2022-12-15",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-f9b9880f37c53f47",
+    "name": "EDR Magazine",
+    "title": "ILA 2024: Rheinmetall and MBDA sign agreement to integrate the Small Anti Drone Missile into the Skyranger 30 and other military platforms",
+    "url": "https://www.edrmagazine.eu/ila-2024-rheinmetall-and-mbda-sign-agreement-to-integrate-the-small-anti-drone-missile-into-the-skyranger-30-and-other-military-platforms",
+    "published_date": "2024-06-05",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Wiedergabe"
+   },
+   {
+    "id": "S-faf804b35f3ff96a",
+    "name": "Breaking Defense",
+    "title": "UAE's First Air Defense Missile To Be Used on German Oerlikon Skynex",
+    "url": "https://breakingdefense.com/2021/02/uaes-first-air-defense-missile-to-be-used-on-german-oerlikon-skynex/",
+    "published_date": "2021-02-24",
+    "accessed_date": "2026-10-10",
+    "source_kind": "Sekundärquelle"
+   }
+  ]
+ },
+ "focus_note": "focus=true nur als redaktionelle Erstansicht (max. vier je Bereich): strukturtragende Flugabwehr-/GCC-Einheiten (structure), direkte Flugabwehr-Technologiepartner mit Primär-/Partnerbeleg (technology), GCC-JV-Partner und belegter GCC-Flugabwehrkunde (market), Denel als Mitgesellschafter (capital). Keine Gewichtung.",
+ "reuse_claim_ids": []
+}
