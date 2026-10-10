@@ -1,0 +1,2034 @@
+{
+  "schema_version": 1,
+  "mode": "facts-v2",
+  "role": "market",
+  "run_id": "2026-10-10-rheinmetall",
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-10",
+  "scope": "Markt und Marktzugang Flugabwehr in den Golfstaaten (GCC: Saudi-Arabien, VAE, Katar, Kuwait, Bahrain, Oman): Bedrohungslage, Budgets, Programme, Beschaffungswege, Lokalisierung, Exportkontrolle DE/CH; Wettbewerbsbeobachtungen SHORAD/VSHORAD/C-UAS nach Vergleichsplan v1",
+  "status": "teilweise",
+  "comparison_plan_version": 1,
+  "document_scope": "Öffentliche Quellen bis Stichtag 2026-10-10, abgerufen am 2026-10-10. Rheinmetall-Produkteigenschaften liefert das Portfolio-Modul; hier nur Golf-/Marktfakten der Rheinmetall-Zeile.",
+  "shared_limitations": [
+    "Laufender Iran-Konflikt seit 2026-02-28: Lagezahlen sind amtliche oder Medienangaben ohne unabhängige Verifikation und können sich rasch ändern.",
+    "Golfstaaten veröffentlichen Verteidigungsbudgets und Beschaffungen nur eingeschränkt; viele Verträge laufen über US-FMS oder ohne Kundennennung.",
+    "Herstellerangaben (Kategorie Herstellerangabe) belegen die Aussage des Herstellers, nicht den tatsächlichen Vollzug.",
+    "US-FMS-Notifizierungen sind mögliche Verkäufe, keine Verträge."
+  ],
+  "claims": [
+    {
+      "id": "M-GCC-THREAT-01",
+      "statement": "Laut Al Jazeera (9. März 2026) greifen die USA und Israel Iran seit dem 28. Februar 2026 an; Iran reagierte mit Raketen- und Drohnenangriffen auf Ziele in Golfstaaten. Gemeldet wurden u. a. abgefangene Drohnen auf das saudische Shaybah-Ölfeld, ein Geschoss in al-Kharj mit mindestens zwei Toten, ein Brand in der Ölindustriezone Fujairah (VAE) durch Trümmer, Angriffe auf Katar und Kuwait sowie ein Drohnenangriff auf Sitra (Bahrain) mit 32 Verletzten und ein Brand in der Bapco-Raffinerie mit Force-Majeure-Erklärung.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-d246fbdc9c4c6b97"
+      ],
+      "evidence": "Paraphrase: Kriegsbeginn 28.02.2026; Saudi-Arabien fing vier Drohnen Richtung Shaybah ab; Projektil in al-Kharj (2 Tote, 12 Verletzte); Fujairah-Brand durch Trümmer; Bapco erklärt Force Majeure; 32 Verletzte in Sitra laut Staatsmedien",
+      "location": "Artikeltext, Abschnitte zu Saudi-Arabien, VAE, Bahrain und Kriegskontext",
+      "uncertainty": "Zahlen beruhen auf amtlichen Angaben bzw. Staatsmedien, nicht unabhängig verifiziert.",
+      "event_date": "2026-02-28",
+      "event_status": "berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Belegt Bedrohungslage als Nachfragekontext"
+    },
+    {
+      "id": "M-UAE-THREAT-01",
+      "statement": "Das VAE-Verteidigungsministerium gab laut Gulf News am 3. April 2026 an, die Luftverteidigung habe seit Beginn der iranischen Angriffe 475 ballistische Raketen, 23 Marschflugkörper und 2.085 Drohnen bekämpft; 12 Menschen seien getötet und 203 verletzt worden.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-2e4f786c41d7b2ee"
+      ],
+      "evidence": "Auszug: \"475 ballistic missiles, 23 cruise missiles, and 2,085 drones\"; \"A total of 203 were also injured\"",
+      "location": "Artikeltext, Absatz mit kumulierten Zahlen des Verteidigungsministeriums (Stand 3. April 2026)",
+      "uncertainty": "Amtliche Angabe; 'bekämpft' (engaged) ist nicht gleichbedeutend mit erfolgreich abgefangen; Methodik nicht veröffentlicht.",
+      "event_date": "2026-04-03",
+      "event_status": "berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Kennzahl zur Bedrohungsintensität im Hauptmarkt VAE"
+    },
+    {
+      "id": "M-GCC-THREAT-02",
+      "statement": "Eine Zählung von Asharq Al-Awsat auf Basis amtlicher GCC-Angaben (veröffentlicht 3. Juni 2026) nennt für Februar bis Anfang Juni 2026 rund 7.028 iranische Angriffe auf Golfstaaten (ca. 1.716 Raketen, 5.311 Drohnen): VAE 2.846, Saudi-Arabien 1.234, Kuwait 1.194, Katar 737, Bahrain 700, Oman 26.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-00b3bb9075c00199"
+      ],
+      "evidence": "Auszug: \"about 7,028\" including \"around 1,716 missiles and 5,311 drones\"; UAE 2,846, Saudi Arabia 1,234, Kuwait 1,194, Qatar 737, Bahrain 700, Oman 26",
+      "location": "Artikeltext, Tally-Absatz",
+      "uncertainty": "Medienzählung; Ländersummen ergeben 6.737 statt 7.028, Differenz unerklärt; keine Aufteilung Rakete/Drohne je Land.",
+      "event_date": "2026-06-03",
+      "event_status": "berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Länderverteilung der Bedrohung"
+    },
+    {
+      "id": "M-GCC-THREAT-03",
+      "statement": "Laut Al Jazeera (12. Juli 2026) meldeten VAE, Katar, Kuwait, Oman und Bahrain nach US-Angriffen auf Iran erneut Raketen- bzw. Drohnenangriffe; in Katar wurden drei Menschen durch Splitter verletzt, in Kuwait u. a. eine Offshore-Ölplattform getroffen, Oman meldete Drohnentreffer in Musandam und Al Wusta. Der Bericht verweist auf eine fragile Waffenruhe und ein Mitte Juni unterzeichnetes US-Iran-Memorandum.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-4abfdb5bf72ddb30"
+      ],
+      "evidence": "Paraphrase: Angriffe auf VAE, Katar, Kuwait, Oman und Bahrain trotz Bemühungen um eine 'fragile truce'; Katar 3 Verletzte; Kuwait Grenzposten und Offshore-Plattform; Oman Drohnenangriffe Musandam/Al Wusta",
+      "location": "Artikeltext, Länderabschnitte und Kontext zur Waffenruhe",
+      "uncertainty": "Status der Waffenruhe im Artikel nicht formal festgestellt.",
+      "event_date": "2026-07-12",
+      "event_status": "berichtet",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-KWT-THREAT-01",
+      "statement": "Laut Breaking Defense griff Iran am 3. Juni 2026 den Flughafen Kuwait mit Raketen und Drohnen an; eine Person wurde getötet, Anlagen beschädigt und der Flugbetrieb unterbrochen. Ein zitierter pensionierter kuwaitischer Oberst führte dies auf kostengünstige Shahed-Drohnen zurück, die Patriot-Batterien überlastet hätten.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-7a89b412faeaf6ce"
+      ],
+      "evidence": "Paraphrase: Angriff am 3. Juni auf Kuwaits Flughafen; ein Toter; Col. (ret.) Zafer Al Ajami: \"low-cost Shahed drones overwhelmed Patriot batteries\"",
+      "location": "Artikeltext, Kontextabsatz zum Angriff",
+      "uncertainty": "Bewertung zur Patriot-Überlastung ist Expertenmeinung, keine amtliche Feststellung.",
+      "event_date": "2026-06-03",
+      "event_status": "berichtet",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-GCC-THREAT-04",
+      "statement": "Gulf News (8. Oktober 2026) berichtet keine direkten iranischen Angriffe auf die VAE an diesem Tag, wohl aber von Huthi beanspruchte Raketenangriffe auf den Flughafen Riad (nicht unabhängig verifiziert), von saudischen Behörden bezifferte drei Tote und 36 Verletzte bei Angriffen auf Flughäfen sowie einen mit Projektilen getroffenen Tanker rund 51 Seemeilen vor Katar; VAE-Flughäfen seien in Betrieb.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-3570dec2635e340e"
+      ],
+      "evidence": "Paraphrase: Huthi-Anspruch auf Angriff auf King Khalid International Airport \"could not immediately be independently verified\"; saudische Behörden: 3 Tote, 36 Verletzte; UKMTO: Tanker 51 nm vor Katar getroffen; DXB/AUH operational",
+      "location": "Artikeltext, Abschnitte Angriffe/Luftfahrt/Schifffahrt",
+      "uncertainty": "Tagesaktueller Lagebericht; Gesamtstatus des Konflikts zum Stichtag nicht abschließend belegt.",
+      "event_date": "2026-10-08",
+      "event_status": "berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Aktuellster Lagestand zum Stichtag"
+    },
+    {
+      "id": "M-SAU-THREAT-01",
+      "statement": "Middle East Eye berichtet am 6. Oktober 2026 unter Berufung auf überwiegend anonyme türkische Regierungsquellen, die Türkei unterhalte seit dem Vorjahr Luftverteidigungs- und EloKa-Ausrüstung in Saudi-Arabien und plane wegen eskalierender Huthi-Angriffe weiteres Personal und Gerät zu entsenden; Türkei, Pakistan und Saudi-Arabien kündigten an, kollektive Verteidigungszusagen unter der 'Makkah Alliance for Defence' sofort umzusetzen.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-37ccf8b458258ca3"
+      ],
+      "evidence": "Paraphrase: Türkei hat seit letztem Jahr \"air defence systems and electronic warfare equipment\" im Königreich; gemeinsame Erklärung zur sofortigen Umsetzung kollektiver Verteidigungszusagen; Systemtypen nicht genannt",
+      "location": "Artikeltext, Absätze zu Entsendung, gemeinsamer Erklärung und Quellen",
+      "uncertainty": "Überwiegend anonyme Quellen; Systemtypen nicht benannt.",
+      "event_date": "2026-10-06",
+      "event_status": "angekündigt",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-BHR-THREAT-01",
+      "statement": "Der Congressional Research Service (Stand 23. September 2026) beschreibt Bahrain bis August 2026 als nach VAE, Kuwait und Saudi-Arabien viertmeist angegriffenes Land; iranische Angriffe trafen Raffinerie, Aluminiumhütte, Entsalzungsanlage, ein Rechenzentrum und US-Einrichtungen. Bahrainische und US-Kräfte setzten Patriot, F-16 Block 70 und Zerstörer ein, dennoch drangen Raketen und Drohnen in den Luftraum ein.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-4691f9471b203297"
+      ],
+      "evidence": "Paraphrase: \"Bahrain has been the fourth-most-targeted country\"; Patriot missile defense systems, F-16 Block 70 und Arleigh-Burke-Zerstörer zum Abfangen genutzt; Angriffe \"penetrated Bahraini airspace\"",
+      "location": "S. 1 (Issues for Congress) und S. 3–4 (NSA Bahrain)",
+      "uncertainty": "CRS stützt sich teils auf Medienberichte; Schadenszahlen vorläufig.",
+      "event_status": "berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Behördliche Lagebeschreibung Bahrain"
+    },
+    {
+      "id": "M-GCC-THREAT-05",
+      "statement": "The National (17. März 2026) berichtet von Videos, die Hubschrauber mit Miniguns beim Abschuss von Drohnen über Golfstädten zeigen sollen, und von Analystenempfehlungen, nach ukrainischem Vorbild Maschinengewehre bzw. Flugabwehrartillerie einzusetzen; der Artikel nennt Kosten von etwa 12 Mio. US-Dollar je THAAD- und etwa 1 Mio. US-Dollar je Patriot-Abfang gegenüber rund 20.000 US-Dollar für APKWS II und gibt an, von über 1.500 Drohnen gegen die VAE seien etwa 90 % abgeschossen worden oder ins Meer gefallen.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-68cd066e40b60677"
+      ],
+      "evidence": "Paraphrase: \"videos have emerged showing helicopters with miniguns shooting down drones over Gulf cities\"; THAAD ca. 12 Mio. USD, Patriot ca. 1 Mio. USD, APKWS II ca. 20.000 USD; >1.500 Drohnen gegen VAE, ca. 90 % abgeschossen oder ins Meer gefallen",
+      "location": "Artikeltext, Absätze zu Videos, Kosten und Shahed-Drohnen",
+      "uncertainty": "Kostenangaben sind Medien-/Analystenschätzungen ohne Methodik; Videos nicht verifiziert.",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-SAU-BUDGET-01",
+      "statement": "SIPRI schätzt die saudischen Militärausgaben 2025 auf 83,2 Mrd. US-Dollar (+1,4 % gegenüber 2024; Rang 8 weltweit; geschätzt 6,5 % des BIP); Saudi-Arabien war 2025 der größte Militärausgeber im Nahen Osten (Region gesamt geschätzt 218 Mrd. US-Dollar, ohne VAE, Syrien, Jemen).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-c07effa3f3662a94"
+      ],
+      "evidence": "Auszug: \"8 7 Saudi Arabia [83.2] 1.4 12 [6.5]\"; \"The region's largest spender in 2025 was Saudi Arabia\"; \"Figures exclude Syria, the United Arab Emirates and Yemen\"",
+      "location": "Fact Sheet April 2026, Tabelle 1 (S. 2) und Abschnitt 'The Middle East' (S. 7, 11); Tabelle 2 Fußnote g",
+      "uncertainty": "Eckige Klammern = SIPRI-Schätzung; SIPRI weist auf geringe Transparenz der Golf-Haushalte hin.",
+      "proposed_depth": "A",
+      "depth_reason": "Kennzahl Marktgröße Saudi-Arabien"
+    },
+    {
+      "id": "M-KWT-BUDGET-01",
+      "statement": "Laut SIPRI beliefen sich Kuwaits Militärausgaben 2025 auf 8,1 Mrd. US-Dollar (Rang 35 weltweit; 4,7 % des BIP).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-c07effa3f3662a94"
+      ],
+      "evidence": "Auszug: \"35 35 Kuwait 8.1 1.5 2.5 4.7\"",
+      "location": "Fact Sheet April 2026, Tabelle 1 (S. 2)",
+      "uncertainty": "",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-OMN-BUDGET-01",
+      "statement": "SIPRI weist Oman 2025 mit einer Militärlast von 5,7 % des BIP unter den zehn Ländern mit der höchsten Militärlast aus; ein Ausgabenbetrag für Oman erscheint nicht in der Top-40-Tabelle.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-c07effa3f3662a94"
+      ],
+      "evidence": "Auszug: Abbildung 3: \"8. Oman 5.7%\"",
+      "location": "Fact Sheet April 2026, Abbildung 3 (Militärlast nach Ländern)",
+      "uncertainty": "",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-UAE-BUDGET-01",
+      "statement": "SIPRI schließt die VAE aus der Regionalsumme Naher Osten 2025 aus (keine belastbaren Daten); VAE, Katar und Bahrain erscheinen nicht in SIPRIs Top-40-Ausgabentabelle 2025.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-c07effa3f3662a94"
+      ],
+      "evidence": "Auszug: \"g Figures exclude Syria, the United Arab Emirates and Yemen.\"",
+      "location": "Fact Sheet April 2026, Tabelle 2, Fußnote g; Tabelle 1",
+      "uncertainty": "Fehlende SIPRI-Daten sind Transparenzlücke, keine Aussage zur Ausgabenhöhe.",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-SAU-BUDGET-02",
+      "statement": "Laut Daten des saudischen Finanzministeriums (Argaam, 5. Mai 2026) entfielen im ersten Quartal 2026 64,71 Mrd. SAR der Staatsausgaben auf den Militärsektor; die Gesamtausgaben stiegen gegenüber Vorjahresquartal um 20 % auf 387 Mrd. SAR.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-13ac2bcc7a8d3bc1"
+      ],
+      "evidence": "Auszug: \"SAR 64.71 billion to the military sector\"",
+      "location": "Artikeltext, Absatz zu Sektorausgaben Q1 2026",
+      "uncertainty": "Vorjahresvergleich für den Militärsektor im geöffneten Artikel nicht angegeben.",
+      "event_date": "2026-05-05",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-SAU-LOCAL-01",
+      "statement": "Die saudische Rüstungsbehörde GAMI gab im November 2025 an, der lokalisierte Anteil der Militärausgaben habe Ende 2024 24,89 % erreicht; Ziel ist mehr als 50 % bis 2030 (Vision 2030).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-591cad6afbdb6208"
+      ],
+      "evidence": "Auszug: localization \"reached 24.89 percent by the end of 2024\"; goal \"of exceeding 50 percent by 2030\"",
+      "location": "Artikeltext, Einleitung (GAMI, erstes jährliches Sektortreffen Riad)",
+      "uncertainty": "Behördenangabe; Berechnungsmethode öffentlich nicht im Detail dokumentiert.",
+      "event_date": "2025-11-10",
+      "proposed_depth": "A",
+      "depth_reason": "Lokalisierungsvorgabe als Marktzugangsbedingung"
+    },
+    {
+      "id": "M-UAE-ACCESS-01",
+      "statement": "Laut US-Handelsministerium (Country Commercial Guide, Stand 25. August 2025) verwaltet der Tawazun Council seit Februar 2021 alle Beschaffungen für die VAE-Streitkräfte und die Abu Dhabi Police und beaufsichtigt das Offset-Programm 'Tawazun Economic Program'; Offset-Pflichten greifen bei Verträgen über 10 Mio. US-Dollar. Die Luftverteidigung (AFAD) erhalte traditionell den größten Anteil des Beschaffungsbudgets; Raketenabwehr sei Top-Priorität.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-ee64de417a6b1930"
+      ],
+      "evidence": "Auszug: \"appointed to manage all acquisitions for the UAE Armed Forces and Abu Dhabi Police\"; \"The Tawazun Economic Program ... is the UAE's offset program\"; Schwelle über 10 Mio. USD; AFAD \"traditionally receives the lion's share\"",
+      "location": "Abschnitt Defense, Unterabschnitte Overview/Tawazun/Opportunities",
+      "uncertainty": "Offset-Prozentsätze im Leitfaden nicht genannt; ältere Medienangaben (60 %) nicht aktuell bestätigt.",
+      "proposed_depth": "A",
+      "depth_reason": "Beschaffungsweg und Lokalisierungspflicht VAE"
+    },
+    {
+      "id": "M-GCC-PROG-01",
+      "statement": "Defense News berichtet am 19. März 2026 über US-Notifizierungen möglicher Rüstungsverkäufe: an die VAE ein Langstreckenradar (4,5 Mrd. US-Dollar, Integration mit THAAD) und ein ortsfestes Drohnenabwehrsystem (2,1 Mrd. US-Dollar), an Kuwait Radare für die untere Luft- und Raketenabwehrschicht (8 Mrd. US-Dollar).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-4c4af0e05b9558f2"
+      ],
+      "evidence": "Paraphrase: UAE long-range radar 4,5 Mrd. USD (THAAD), UAE fixed-site counter-drone 2,1 Mrd. USD (\"designed to counter small drones\"), Kuwait lower tier air and missile defense radars 8 Mrd. USD",
+      "location": "Artikeltext, Auflistung der Notifizierungen",
+      "uncertainty": "Notifizierung = mögliche Verkäufe; kein Vertragsabschluss belegt.",
+      "event_date": "2026-03-19",
+      "event_status": "angekündigt",
+      "proposed_depth": "A",
+      "depth_reason": "Beschaffungsweg FMS und Programmumfang"
+    },
+    {
+      "id": "M-UAE-PROG-01",
+      "statement": "Das US-State-Department genehmigte laut Unmanned Airspace (19. März 2026) einen möglichen FMS-Verkauf an die VAE von zehn FS-LIDS-Systemverbünden (Fixed Site-Low, Slow, Small UAS Integrated Defeat System) inklusive 240 Coyote-Block-2-Abfangflugkörpern, Ku-Band-Radaren, Coyote-4-Pack-Startern und EO/IR-Kameras; geschätzte Gesamtkosten 2,10 Mrd. US-Dollar.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-d7c95ccbcee5e1ba"
+      ],
+      "evidence": "Auszug: \"ten (10) Fixed Site- Low, Slow, Small Unmanned Aircraft Integrated Defeat System (FS-LIDS) System of Systems\"; \"two hundred forty (240) Coyote Block 2 All-Up-Rounds\"; \"The estimated total cost is USD2.10 billion\"",
+      "location": "Artikeltext, zitierte State-Department-Mitteilung",
+      "uncertainty": "Genehmigung eines möglichen Verkaufs, kein Vertrag; DSCA-Original nicht direkt geöffnet.",
+      "event_date": "2026-03-19",
+      "event_status": "angekündigt",
+      "proposed_depth": "A",
+      "depth_reason": "Konkurrierendes C-UAS-Programm VAE"
+    },
+    {
+      "id": "M-QAT-PROG-01",
+      "statement": "Laut GovCon Wire (30. November 2022) genehmigte das US-State-Department einen möglichen FMS-Verkauf an Katar von zehn FS-LIDS-Einheiten und 200 Coyote-Block-2-Abfangflugkörpern im Wert von etwa 1 Mrd. US-Dollar; als Hauptauftragnehmer wurden Raytheon Technologies, Northrop Grumman und SRC genannt.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a23dcdde6a28b4bb"
+      ],
+      "evidence": "Paraphrase: Qatar seeks 10 FS-LIDS units and 200 Coyote Block 2 interceptors; potential 1 Mrd. USD; RTX, Northrop Grumman und SRC \"will serve as the principal contractors\"",
+      "location": "Artikeltext, Absätze 1–3",
+      "uncertainty": "Genehmigung, kein belegter Vertrags-/Lieferstatus.",
+      "event_date": "2022-11-30",
+      "event_status": "angekündigt",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-KWT-PROG-01",
+      "statement": "Das US-State-Department genehmigte laut Breaking Defense am 5. Juni 2026 einen möglichen FMS-Verkauf von Anduril-Drohnenabwehrsystemen (u. a. Roadrunner-M, Anvil, Lattice-C2, Sentry Towers, Pulsar-EloKa) an Kuwait im geschätzten Wert von 1,98 Mrd. US-Dollar.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-7a89b412faeaf6ce"
+      ],
+      "evidence": "Paraphrase: Estimated value 1,98 Mrd. USD; Roadrunner-Munition, Anvil-Kinetic, Lattice, Long Range Sentry Tower, Pulsar; State-Department-Ankündigung 5. Juni",
+      "location": "Artikeltext, Absätze 1–3",
+      "uncertainty": "Mögliche Verkäufe; Mengen und Werte können sich in Verhandlungen ändern (laut Artikel).",
+      "event_date": "2026-06-05",
+      "event_status": "angekündigt",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-KWT-PROG-02",
+      "statement": "Kongsberg meldete am 30. Juni 2026 einen Vertrag mit Raytheon über NASAMS-Lieferungen an Kuwait über das US-FMS-Programm mit einem Wert für Kongsberg von etwa 400 Mio. US-Dollar; NASAMS soll Teil der geschichteten Luftverteidigungsarchitektur Kuwaits werden.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-346bbac409450892"
+      ],
+      "evidence": "Auszug: \"KONGSBERG has signed a contract with Raytheon for deliveries of the NASAMS air defence system to Kuwait\"; Wert für Kongsberg ca. 400 Mio. USD; \"an integrated part of Kuwait's layered air defence architecture\"",
+      "location": "Börsenmitteilung 30.06.2026, Absätze 1–2",
+      "uncertainty": "Lieferplan in der geöffneten Mitteilung nicht angegeben.",
+      "event_date": "2026-06-30",
+      "event_status": "beauftragt",
+      "proposed_depth": "A",
+      "depth_reason": "Belegter Vertrag eines Wettbewerbers in GCC"
+    },
+    {
+      "id": "M-QAT-PROG-02",
+      "statement": "Laut Teknisk Ukeblad (11. Juli 2019) schloss Kongsberg mit Raytheon als Hauptauftragnehmer für Katars Luftverteidigung einen NASAMS-Vertrag über 5,6 Mrd. NOK; Katar wird Erstnutzer des AMRAAM-ER; Kongsberg und Raytheon zählten damit elf NASAMS-Länder mit kompletten Systemen, darunter Katar und Oman.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-1e47bb01c749039c"
+      ],
+      "evidence": "Paraphrase: Vertrag mit Raytheon, \"prime contractor\" für Katars Luftverteidigung; 5,6 Mrd. NOK; Qualifizierung AMRAAM-ER mit Katar als erstem Nutzer; 11 NASAMS-Länder inkl. Katar und Oman",
+      "location": "Artikeltext, Überschrift und Absätze zu Umfang/Installed Base",
+      "uncertainty": "Aktueller Liefer-/Betriebsstatus in Katar und Oman nicht gesondert belegt.",
+      "event_date": "2019-07-11",
+      "event_status": "beauftragt",
+      "proposed_depth": "A",
+      "depth_reason": "Gulf-Zugang NASAMS"
+    },
+    {
+      "id": "M-SAU-PROG-01",
+      "statement": "Laut Korea Times (6. Februar 2024) schloss LIG Nex1 mit dem saudischen Verteidigungsministerium einen Vertrag über das Mittelstrecken-Flugabwehrsystem Cheongung M-SAM II im Wert von 3,2 Mrd. US-Dollar; es ist nach einem VAE-Vertrag vom Januar 2022 der zweite Exportverkauf des Systems.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-1bc2890891ce328b"
+      ],
+      "evidence": "Paraphrase: LIG Nex1 inked the contract with the Saudi defense ministry (unterzeichnet im November); 3,2 Mrd. USD; zweiter Export nach \"a deal with the United Arab Emirates (UAE) in January 2022\"",
+      "location": "Artikeltext, Absätze 1–3",
+      "uncertainty": "Lieferstatus nicht belegt; System ist Mittelstrecke und nicht Teil der SHORAD-Vergleichsgruppe.",
+      "event_status": "beauftragt",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-BHR-PROG-01",
+      "statement": "Der Congressional Research Service listet für Bahrain im US-Haushaltsjahr 2026 notifizierte FMS-Verkäufe u. a. von Patriot-Flugkörpern (1,62 Mrd. US-Dollar), APKWS-II (253 Mio. US-Dollar) und AH-1Z-Kampfhubschraubern (950 Mio. US-Dollar).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-4691f9471b203297"
+      ],
+      "evidence": "Auszug: \"2026 Patriot Missiles $1.62 billion\"; \"2026 Advance Precision Kill Weapon System-II $253 million\"; \"2026 AH-1Z Attack Helicopters $950 million\"",
+      "location": "S. 6, Tabelle 1 'Recent U.S. Foreign Military Sales to Bahrain Notified to Congress'",
+      "uncertainty": "Notifizierungen, kein Lieferstatus.",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-GCC-TUR-01",
+      "statement": "Middle East Eye berichtet am 11. Mai 2026 unter Berufung auf zwei anonyme türkische Branchenquellen, Saudi-Arabien und Katar hätten Verträge über das ASELSAN-System Korkut 100/25 (25-mm-Munition gegen FPV-/kabelgebundene Drohnen) unterzeichnet; Kuwait habe ein Regierungsprotokoll zur Beschaffung türkischer Systeme unterzeichnet, Oman zeige Interesse. Eine Quelle nennt mehrjährige Lieferrückstände bei US-Patriot- und THAAD-Systemen als Motiv.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-21860c781614d433"
+      ],
+      "evidence": "Auszug: \"both countries signed contracts to purchase the Korkut 100/25 air defence system\"; Kuwait \"signed a government-to-government sales protocol\"; \"There is even an interest from Oman\"; \"face delivery backlogs of several years for Patriot and THAAD systems\"",
+      "location": "Artikeltext (Ragip Soylu), Absätze zu Korkut, Kuwait, Oman, US-Lieferzeiten",
+      "uncertainty": "Ausschließlich anonyme Quellen; keine offizielle Bestätigung durch ASELSAN oder Käuferstaaten gefunden.",
+      "event_date": "2026-05-11",
+      "event_status": "berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Trägt Wettbewerbsbeobachtung Korkut; nur sekundär/anonym belegt"
+    },
+    {
+      "id": "M-SAU-PROG-02",
+      "statement": "Army Recognition berichtet von der World Defense Show 2026 (Riad), dass eine LKW-montierte VLU-MICA-Konfiguration (MBDA VL MICA) gezeigt wurde, und dass in den letzten Jahren veröffentlichte Bilder VL MICA im Bestand der saudischen Nationalgarde bestätigt hätten; beworbene Abfangreichweite bis 20 km.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-873f7366346b9261"
+      ],
+      "evidence": "Auszug: \"a truck-mounted VLU MICA configuration based on the VL MICA missile was displayed\"; \"imagery released in recent years has confirmed the presence of VL MICA within the Saudi Arabian National Guard inventory\"; \"up to 20 km\"",
+      "location": "Artikeltext, Absätze 1–3",
+      "uncertainty": "Kein Vertrag, Wert oder Menge öffentlich; Aussteller nicht genannt.",
+      "event_date": "2026-02-11",
+      "proposed_depth": "A",
+      "depth_reason": "Gulf-Zugang VL MICA"
+    },
+    {
+      "id": "M-QAT-RHM-01",
+      "statement": "Laut Janes zeigte das katarische Verteidigungsministerium am 13. Oktober 2022, dass die Qatar Emiri Air Defence Forces über Rheinmetalls Skynex verfügen (u. a. acht 35-mm-Revolver Gun Mk3 und ein X-TAR3D-Radar in der Übung 'Shield 6 (Skynex)'); Rheinmetall hatte keinen Katar-Vertrag angekündigt.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-6cd5701123f00a73"
+      ],
+      "evidence": "Paraphrase: QEADF \"now has the Rheinmetall Skynex\"; acht Revolver Gun Mk3, ein X-TAR3D; Rheinmetall hat keinen katarischen Vertrag angekündigt",
+      "location": "Artikeltext (Jeremy Binnie), Absätze 1–3",
+      "uncertainty": "",
+      "event_date": "2022-10-13",
+      "event_status": "Betrieb berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Belegter Betrieb Rheinmetall-System in GCC"
+    },
+    {
+      "id": "M-QAT-RHM-02",
+      "statement": "Rheinmetall bestätigte gegenüber Janes (Dezember 2022), dass die ersten von ihm gelieferten Skynex-Systeme für Katar bestimmt waren.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-3b004b2cc914ddc4"
+      ],
+      "evidence": "Auszug: \"Rheinmetall has confirmed that the first Skynex systems it supplied were for Qatar.\"",
+      "location": "Artikeltext, Absatz zu Katar",
+      "uncertainty": "Unternehmensauskunft; Lieferdatum und Umfang nicht genannt; Zuordnung des 2019 gemeldeten 210-Mio.-EUR-Auftrags zu Katar nicht bestätigt.",
+      "event_date": "2022-12-15",
+      "event_status": "Lieferung laut Hersteller berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Lieferstatus Rheinmetall in GCC"
+    },
+    {
+      "id": "M-QAT-RHM-03",
+      "statement": "Bei der DIMDEX 2026 in Doha (Januar 2026) war laut Army Recognition eine Skynex-Konfiguration am Stand der Qatar Emiri Air Defence Forces ausgestellt: Skymaster-Gefechtsführung, X-TAR3D-Radar (50 km), unbemannte 35-mm-Revolver Gun Mk3 (nominell 1.000 Schuss/min, Wirkreichweite bis 4.000 m, 252 Schuss bereit) mit AHEAD-Munition; erweiterbar um Lenkflugkörper-Effektoren.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-3c0b72dcdb4a669f"
+      ],
+      "evidence": "Paraphrase: Skynex am QEADF-Stand; X-TAR3D 50 km; Revolver Gun Mk3 35×228 mm, 1.000 rds/min, bis 4.000 m, 252 ready rounds; AHEAD; \"can accept additional effectors, including missile-based solutions\"",
+      "location": "Artikeltext, Abschnitte Konfiguration/Effektor",
+      "uncertainty": "Technische Werte sind Hersteller-/Messeangaben, keine gemessenen Kundenwerte; kein Bericht über Einsatz 2026.",
+      "event_date": "2026-01-19",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-QAT-RHM-04",
+      "statement": "Laut Gulf Times (14. März 2018) gründeten Barzan Holdings und die Rheinmetall AG auf der DIMDEX 2018 das Joint Venture Rheinmetall Barzan Advanced Technologies (RBAT) für eine Munitionsfertigungsbasis in Katar, den Schutz strategischer Einrichtungen und kritischer Infrastruktur sowie Forschung zu UGV und Hochenergielaser.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-48538d413f65c35e"
+      ],
+      "evidence": "Auszug: agreement \"created a JV called Rheinmetall Barzan Advanced Technologies (RBAT)\"; \"develop an ammunition manufacturing base in Qatar\"; \"provide security for strategic venues and critical infrastructure in Qatar\"",
+      "location": "Artikeltext, Absatz zu Rheinmetall",
+      "uncertainty": "Anteile, Fertigungsbeginn und Kapazität nicht belegt; Eigentumsfakten liegen beim Cluster-Modul.",
+      "event_date": "2018-03-14",
+      "event_status": "angekündigt",
+      "proposed_depth": "A",
+      "depth_reason": "Lokale Industriepartnerschaft Rheinmetall Katar"
+    },
+    {
+      "id": "M-QAT-BARZAN-01",
+      "statement": "Laut Breaking Defense (6. März 2024) sagte Barzans stellvertretender CEO Mohammad Al Marri, Barzan habe 2023 einen Vertrag mit Katars Luftverteidigungskräften über ein C-UAS-System mit Soft- und Hard-Kill-Fähigkeiten geschlossen, das in operativer Erprobung sei; vier Systeme seien vollständig in Katar produziert worden. Am Stand von RBAT wurden auf der DIMDEX 2024 C-UAS, UGV, Radare und Störsender gezeigt.",
+      "kind": "Partnerangabe",
+      "source_ids": [
+        "S-2de1e709dd2666d5"
+      ],
+      "evidence": "Paraphrase: Barzan signed a contract with Qatar's air defense forces \"last year\" for the cUAS system; soft kill/hard kill; operational trials; \"We are in an advanced phase of the production process\"; vier Systeme in Katar produziert; RBAT-Stand mit C-UAS",
+      "location": "Artikeltext (Agnes Helou), Abschnitte Barzan/RBAT",
+      "uncertainty": "Unternehmensaussage; Rolle von Rheinmetall/RBAT im C-UAS-Vertrag im Artikel nicht ausdrücklich zugeordnet; Liefertermin unklar.",
+      "event_date": "2024-03-06",
+      "event_status": "beauftragt",
+      "proposed_depth": "A",
+      "depth_reason": "Regionale Industrie mit eigenem C-UAS-Angebot"
+    },
+    {
+      "id": "M-SAU-RHM-01",
+      "statement": "Laut Argaam kündigten Rheinmetall Defence und die saudische MAZ Group auf der World Defense Show 2022 die RAD Arabia Co. an, die saudische Ingenieure für land- und seegestützte Luftverteidigungssysteme qualifizieren und ausbilden sowie in einer 25.000 m² großen Fabrik in Dschidda Waffen- und Luftverteidigungstechnik lokal fertigen, warten und Ersatzteile produzieren soll; Rheinmetall bezeichnete Saudi-Arabien als langjährigen größten Kunden.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-d401a7e147a6b2d4"
+      ],
+      "evidence": "Paraphrase: RAD Arabia Co. (Rheinmetall Defense und MAZ Group) angekündigt; Ausbildung zu \"land and sea air defense systems\"; 25.000-m²-Fabrik in Dschidda; MRO und Ersatzteile; Saudi-Arabien \"one of its largest customers for many years\"",
+      "location": "Artikeltext, Absätze zu RAD Arabia und Aussagen Zino Hart/Ibrahim Al-Zeer",
+      "uncertainty": "Veröffentlichungsdatum-Format mehrdeutig (07/03/2022); Umsetzungsstand der Fabrik nicht belegt; Lokalisierungsquote 60 % nur in nicht geöffneten Quellen.",
+      "event_status": "angekündigt",
+      "proposed_depth": "A",
+      "depth_reason": "Lokale Industriepartnerschaft Rheinmetall Saudi-Arabien"
+    },
+    {
+      "id": "M-SAU-RHM-02",
+      "statement": "Janes bestätigte im Februar 2020 anhand eines Fotos der Saudi Press Agency den Erwerb eines Rheinmetall-Skyguard-3-Systems durch Saudi-Arabien (Stellung an der King Abdulaziz Naval Base, Al-Dschubail; laut Satellitenbildern Mitte 2019 eingerichtet).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-d5c3acd69d302e6f"
+      ],
+      "evidence": "Paraphrase: Saudi acquisition of the Rheinmetall Skyguard 3 confirmed by SPA photo at King Abdulaziz Naval Base; set up June–July 2019; zwei 35-mm-GDF-Kanonen und Feuerleitgerät",
+      "location": "Artikeltext, Absätze 1–3",
+      "uncertainty": "Menge, Wert und Vertragsdatum nicht veröffentlicht.",
+      "event_date": "2020-02-26",
+      "event_status": "Betrieb berichtet",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-RHM-GULF-01",
+      "statement": "Laut Gabelli-Analystennotiz (27. März 2026) sagte Rheinmetall-CEO Papperger in der Telefonkonferenz vom 11. März 2026 sinngemäß, nahezu alle derzeit im Nahen Osten angegriffenen Länder nutzten Rheinmetalls kanonenbasierte Flugabwehr, Kunden hätten dringend weitere Systeme angefragt und erste Lieferungen in den Nahen Osten würden ab August 2026 erwartet; für das neue Segment Air Defence prognostiziere Rheinmetall bis zu 25 % Umsatzwachstum 2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3cb9686bfe911020"
+      ],
+      "evidence": "Auszug: \"nearly all countries currently under attack in the Middle East would use Rheinmetall's gun-based air defense systems\"; \"With the first deliveries to the Middle East now expected as early as August\"; \"up to 25% year-over-year sales growth in 2026 for its new Air Defense segment\"",
+      "location": "Abschnitt Rheinmetall (Q4-2025-Call 11.03.2026)",
+      "uncertainty": "Paraphrase durch Analysten, kein Wortprotokoll; Kunden/Länder nicht benannt; Liefererwartung ist Ankündigung.",
+      "event_date": "2026-03-11",
+      "event_status": "angekündigt",
+      "proposed_depth": "A",
+      "depth_reason": "Herstellerangabe zu Golf-Nachfrage und Präsenz"
+    },
+    {
+      "id": "M-RHM-GULF-02",
+      "statement": "Business AM (10. Mai 2026) gibt einen Bloomberg-Bericht vom 8. Mai 2026 wieder: Laut CEO Papperger seien in der Region rund 150 Skyranger- und Skynex-Systeme im Einsatz; ohne Verzögerungen für europäische Kunden könne Rheinmetall 2026 nur etwa zehn Skyranger-/Skynex-Kanonen an Golfstaaten liefern; bis Ende 2027 solle die Zahl in der Region nahezu verdoppelt werden.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-eec5e9e91d4acc36"
+      ],
+      "evidence": "Auszug: \"environ 150 Skyranger et Skynex sont opérationnels dans la région\"; \"ne peut livrer qu'une dizaine de canons Skyranger et Skynex aux pays du Golfe cette année\"; \"presque doubler ... d'ici fin 2027\"",
+      "location": "Artikeltext, Absätze 1–3",
+      "uncertainty": "Sekundäre Wiedergabe; Bloomberg-Original (403) nicht geöffnet; Länder nicht genannt; 'Region' nicht exakt abgegrenzt.",
+      "event_date": "2026-05-08",
+      "event_status": "angekündigt",
+      "proposed_depth": "A",
+      "depth_reason": "Herstellerangabe zu Lieferfähigkeit Golf"
+    },
+    {
+      "id": "M-RHM-CAP-01",
+      "statement": "Im Euronews-Interview (17. September 2026) sagte Papperger, Rheinmetall werde ab Ende des kommenden Jahres bis zu 400 Skyranger pro Jahr bauen können; die Fertigung von Mittelkalibermunition sei von unter einer auf vier Millionen Schuss gestiegen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-aaaf59c399a65ff2"
+      ],
+      "evidence": "Auszug: \"From the end of next year we will build, or be able to build, up to 400 a year\"; Mittelkaliber von unter 1 Mio. auf 4 Mio. Schuss",
+      "location": "Interviewtext, Abschnitte Kapazität",
+      "uncertainty": "Kapazitätsziel, kein Ist-Wert; Golf-Anteil nicht genannt; Portfolio-Modul kann Detailfakten führen.",
+      "event_date": "2026-09-17",
+      "event_status": "angekündigt",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-RHM-ORDER-01",
+      "statement": "ESUT (3. Juli 2026) berichtet über Rheinmetalls Auftrag für vier Skynex-Systeme eines nicht genannten internationalen Kunden (mehrere hundert Mio. EUR, Auslieferung bis 2029, Prime Rheinmetall Italia mit Rheinmetall Air Defence u. a.); eine Region wird nicht genannt.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-4ea803eb7cb384c9"
+      ],
+      "evidence": "Paraphrase: \"nicht näher bezeichneter internationaler Kunde\"; mehrere hundert Mio. EUR; Auslieferung bis 2029; Rheinmetall Italia als Prime, Koordination mit Rheinmetall Air Defence",
+      "location": "Artikeltext, Absätze 1–4",
+      "uncertainty": "Kunde nicht identifiziert; kein Golfbezug belegt.",
+      "event_date": "2026-07-02",
+      "event_status": "beauftragt",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-RHM-CUAS-01",
+      "statement": "Militarnyi berichtet (12. Juli 2025), die ukrainische Luftwaffe habe ein Video veröffentlicht, das Skynex-Systeme beim Zerstören von Shahed-Drohnen zeige; laut Videoauswertung des Autors werden AHEAD-Programmierzündermunition und 35-mm-Oerlikon-Mk3-Kanonen eingesetzt.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-ef46277a93dc371d"
+      ],
+      "evidence": "Paraphrase: \"A video of the system in action was published by the Ukrainian Air Force\"; Vertreter: \"showing flawless results in destroying enemy strike UAVs\"; AHEAD-Typ laut Videoanalyse",
+      "location": "Artikeltext, Absätze 1–3",
+      "uncertainty": "Einsatz außerhalb GCC; Wirksamkeitsaussage ist Nutzerangabe ohne Statistik; ggf. mit Portfolio-P-Claim abgleichen.",
+      "event_date": "2025-07-12",
+      "event_status": "Einsatz berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Trägt Evidenzstufe Drohnenabwehr Rheinmetall-Zeile"
+    },
+    {
+      "id": "M-UAE-EDGE-01",
+      "statement": "EDGE-Tochter Halcon stellte auf der IDEX 2021 den Flugabwehrflugkörper SkyKnight vor; laut EDR Magazine integriert Rheinmetall Air Defence SkyKnight in das Skynex-System (Container mit 60 Flugkörpern, Batterie bis vier Revolver Guns und vier SkyKnight-Startern, Reichweite bis 10 km laut Halcon).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-829071fd179d4705"
+      ],
+      "evidence": "Paraphrase: Rheinmetall Air Defence integriert SkyKnight in Skynex; 20-Fuß-Container mit 60 Flugkörpern; bis zu vier Revolver Guns und vier Starter; bis 10 km (Halcon-Angabe)",
+      "location": "Artikeltext (Paolo Valpolini), Absätze 1–5",
+      "uncertainty": "Reichweiten sind Herstellerangaben.",
+      "event_date": "2021-03-08",
+      "event_status": "angekündigt",
+      "proposed_depth": "A",
+      "depth_reason": "Querverbindung Rheinmetall–EDGE (Integration)"
+    },
+    {
+      "id": "M-UAE-EDGE-02",
+      "statement": "Laut Janes (24. Februar 2025) bestätigte ein EDGE-Vertreter auf der IDEX 2025, dass Testschüsse des Skyknight begonnen hätten; die volle Qualifikation werde bis Ende 2026 erwartet. Skyknight sei in Kooperation mit Rheinmetall Air Defence entwickelt worden und in Skynex integriert (zusammen mit Revolver Gun Mk3, geführt über die Oerlikon Multi Sensor Unit).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-ef86c664e3ccb75b"
+      ],
+      "evidence": "Paraphrase: \"test-firing has already commenced for the missile\"; volle Qualifikation bis Ende 2026 erwartet; developed in cooperation with Rheinmetall Air Defence; integrates with Skynex",
+      "location": "Artikeltext (Christopher Petrov), Absätze 1–4",
+      "uncertainty": "Qualifikationsstatus zum Stichtag nicht belegt.",
+      "event_date": "2025-02-24",
+      "event_status": "Erprobung",
+      "proposed_depth": "A",
+      "depth_reason": "Status regionaler Effektor mit Rheinmetall-Bezug"
+    },
+    {
+      "id": "M-UAE-EDGE-03",
+      "statement": "EDGE-CEO Hamad Al Marar sagte laut Breaking Defense (11. Mai 2026), die VAE hätten im Iran-Konflikt EDGE-Soft-Kill-Systeme (Störsender/Spoofer, u. a. SKYSHIELD) eingesetzt; Skyknight sei noch nicht in Dienst gewesen und gehe in Produktion. EDGE-Sensoren würden in katarische Systeme integriert; mit Barzan bestehe eine Partnerschaft.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-7a92bf0944771ac1"
+      ],
+      "evidence": "Auszug: UAE used \"everything around the soft kill, in terms of jammers and spoofers\"; \"Skyknight wasn't in service. It's going into production, so it will be in service very soon.\"",
+      "location": "Interviewtext (SAHA 2026), Abschnitte Iran-Konflikt und Partnerschaften",
+      "uncertainty": "CEO-Aussage, nicht unabhängig verifiziert; Rheinmetall im Interview nicht erwähnt.",
+      "event_date": "2026-05-11",
+      "event_status": "Einsatz laut Hersteller berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Einsatz-/Produktionsstatus regionaler Peer"
+    },
+    {
+      "id": "M-PEER-KOR-01",
+      "statement": "Quwa fasst ASELSAN-Broschüren (März 2026) zum Korkut 150/35 und 140/35 zusammen: zwei 35-mm-Kanonen mit ATOM-Airburst-Munition, zusammen 1.100 Schuss/min, effektive Reichweite 4 km, Feuerleitradar und EO-Sensorik, separates Führungssystem mit 3D-Suchradar; UAV zählen zu den vorgesehenen Zielen. Laut ASELSAN-Geschäftsbericht 2025 erfolgte eine erste Auslandslieferung des Kettenfahrzeugs 150/35 (Kunde ungenannt); Quwa identifizierte Korkut bei einer Präsentation der pakistanischen Luftwaffe im September 2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-c44a53b9b7fed3f5"
+      ],
+      "evidence": "Paraphrase: Zwei 35-mm-Kanonen, ATOM 35 ABM, \"1,100 rounds per minute across both guns\", 4 km effektiv; Feuerleitradar/EO; C2 mit 3D-Radar; UAV als Ziele; erste Auslandslieferung 150/35 laut ASELSAN-Geschäftsbericht 2025; Pakistan-Präsentation September 2026",
+      "location": "Artikeltext, Abschnitte Konfiguration, Betreiber, Lieferungen",
+      "uncertainty": "Herstellerdaten über Sekundärquelle; ASELSAN-Originaldokumente nicht geöffnet; Korkut 100/25 dort nicht behandelt.",
+      "event_date": "2026-09-16",
+      "proposed_depth": "A",
+      "depth_reason": "Systemprofil Wettbewerber"
+    },
+    {
+      "id": "M-PEER-EOS-01",
+      "statement": "EOS meldete am 19. Juni 2026 einen Auftrag über 124 Mio. US-Dollar für das kanonenbasierte Drohnenabwehr-Waffensystem Slinger an Generation 5 Holding (100 % VAE-eigen, Abu Dhabi); Fertigung in Australien und den VAE, Lieferung 2027–2028, vorbehaltlich Exportgenehmigungen. Zudem vereinbarten EOS und Gen5 bedingt ein 50/50-Joint-Venture in Abu Dhabi u. a. für Hochenergielaser und die Fertigung der Waffenstationen R400/R500/R800 in den VAE und weiteren MENA-Ländern.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-0ee334ddc9eec2c2"
+      ],
+      "evidence": "Auszug: \"US$124m (~A$175m) order for its Slinger Counter-Drone Remote Weapon System\"; \"expected to be manufactured in Australia and the UAE, and be delivered during 2027 and 2028\"; \"subject to export approvals requirements\"; JV \"50/50 equity contribution\"",
+      "location": "ASX-Mitteilung S. 1–2",
+      "uncertainty": "Bedingter JV-Vertrag; Endkunde laut Mitteilung nur indirekt (Systeme zur Stärkung der Verteidigung); Exportgenehmigung offen.",
+      "event_date": "2026-06-19",
+      "event_status": "beauftragt",
+      "proposed_depth": "A",
+      "depth_reason": "Belegter GCC-Vertrag eines Kanonen-C-UAS-Wettbewerbers"
+    },
+    {
+      "id": "M-PEER-EOS-02",
+      "statement": "Laut Defence Industry Europe (9. Oktober 2026) unterzeichnete EOS einen bedingten Vertrag über 370 Mio. GBP für ein landesweites Drohnenabwehrsystem in einem nicht genannten GCC-Staat; Kern ist das KI-gestützte Führungssystem NiDAR mit Sensoren und Effektoren von Drittanbietern; Arbeitsbeginn erst nach Erfüllung u. a. von Bankgarantie, Anzahlung und Exportlizenzen.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-16987d30779651f5"
+      ],
+      "evidence": "Paraphrase: £370 Mio.; Kunde \"member of the Gulf Co-operation Council\"; NiDAR als Kern; Drittanbieter-Interceptoren und Jammer; Bedingungen Bankgarantie, Vorauszahlung, Exportlizenzen",
+      "location": "Artikeltext (Martin Chomsky), Abschnitte Vertrag/Bedingungen/Systeme",
+      "uncertainty": "Bedingter Vertrag; Land nicht genannt; Slinger im Vertrag nicht erwähnt.",
+      "event_date": "2026-10-09",
+      "event_status": "beauftragt (bedingt)",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-PEER-EOS-03",
+      "statement": "The Defense Post (6. Oktober 2023) beschreibt Slinger als auf Standardfahrzeuge montierbares 30-mm-System (M230LF) mit Zielverfolgungsradar und berichteter Reichweite von über 800 m gegen Drohnen; EOS sende zehn Systeme in die Ukraine, Lieferung bis Ende 2023 erwartet.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-0e7ad928d9638007"
+      ],
+      "evidence": "Paraphrase: 30 mm Bushmaster M230LF; tracking radar; \"reportedly\" >800 m; 10 Slinger systems to Ukraine; \"expected to receive ... by the end of this year\"",
+      "location": "Artikeltext (Joe Saballa), Absätze 1–5",
+      "uncertainty": "Kein Kampfeinsatz oder Testergebnis berichtet; Reichweite 'reportedly'.",
+      "event_date": "2023-10-06",
+      "event_status": "angekündigt",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-PEER-NASAMS-01",
+      "statement": "Laut Defence Industry Europe (25. Februar 2025) gab der norwegische Oberst Per Steinar Trøite an, NASAMS habe in der Ukraine etwa 900 Luftziele bei einer berichteten Trefferquote von 94 % abgefangen, davon rund 40 % Drohnen (überwiegend Shahed) und rund 60 % Marschflugkörper.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-3d92fa89ab4d601e"
+      ],
+      "evidence": "Paraphrase: \"intercept approximately 900 aerial threats\"; \"a reported 94% hit rate\"; ca. 60 % Marschflugkörper, ca. 40 % Drohnen \"primarily Shahed loitering munitions\"",
+      "location": "Artikeltext, Absätze 1–3 (Quelle Aftenposten)",
+      "uncertainty": "Amtliche norwegische Schätzung; Einsatz außerhalb GCC; Flugkörpertypen nicht spezifiziert.",
+      "event_date": "2025-02-25",
+      "event_status": "Einsatz berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Drohnenabwehr-Evidenz Wettbewerber"
+    },
+    {
+      "id": "M-PEER-MICA-01",
+      "statement": "MBDA gibt an, VL MICA NG biete verbesserte Fähigkeiten gegen 'atypische Ziele (UAV, Kleinflugzeuge)'; der MICA-NG-Flugkörper solle im Boden-Luft-Modus Ziele in über 40 km Entfernung abfangen und ab 2026 in Serie verfügbar sein; die VL-MICA-Familie sei von 15 Streitkräften eingeführt.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-06318d4e0dd58da5"
+      ],
+      "evidence": "Auszug: \"improved capabilities to handle atypical targets (UAVs, small aircraft)\"; \"will be able to intercept targets over 40 km away\"; \"15 armed forces around the world\"; \"available in series production from 2026\"",
+      "location": "Pressemitteilung 19.10.2020, Absätze 1–4",
+      "uncertainty": "Herstellerangabe von 2020; Serienstatus 2026 nicht separat belegt.",
+      "event_date": "2020-10-19",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzendes Hintergrunddetail"
+    },
+    {
+      "id": "M-PEER-COYOTE-01",
+      "statement": "Janes (21. Juli 2026) beschreibt Coyote Block 2 als kinetischen Einweg-Abfangflugkörper gegen UAV der Gruppen 1–3 und Block 3NK als wiederverwendbare Variante mit Hochleistungsmikrowelle; RTX berichte internationales Interesse. Laut Bildunterschrift hat Raytheon Emirates mit den VAE eine lokale Coyote-Produktions- und Montageanlage im Tawazun Industrial Park in Abu Dhabi vereinbart.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-b6faabdb5b5fbeb3"
+      ],
+      "evidence": "Paraphrase: Coyote Block 2 kinetic expendable interceptor gegen Group 1-3 UAVs; Block 3NK HPM; Bildunterschrift: \"Raytheon Emirates has partnered with UAE on a local production and assembly facility\" (Tawazun Industrial Park)",
+      "location": "Artikeltext (Nicholas Fiorenza) und Bildunterschrift",
+      "uncertainty": "Lokale Fertigung nur in Bildunterschrift belegt; Umfang/Status offen.",
+      "event_date": "2026-07-21",
+      "proposed_depth": "A",
+      "depth_reason": "Lokale Fertigung Wettbewerber in VAE"
+    },
+    {
+      "id": "M-PEER-COYOTE-02",
+      "statement": "Laut The War Zone (1. November 2024) nannte eine Vertreterin des US-Army-Programmbüros 170 erfolgreiche Abschüsse durch Coyote-Abfangflugkörper in den Kommandobereichen CENTCOM, AFRICOM und EUCOM; Block 2 wird im Nahen Osten an vorgeschobenen Standorten eingesetzt.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-32a1f2cd50c3b5ae"
+      ],
+      "evidence": "Auszug: \"we're at 170 successful kills in all those regions\" (Maj. Alyssa Tallmadge); Regionen CENTCOM, AFRICOM, EUCOM",
+      "location": "Artikeltext, Absätze 1–4",
+      "uncertainty": "Keine Aufteilung nach Region; Einsatz durch US-Streitkräfte, nicht durch GCC-Kunden.",
+      "event_date": "2024-11-01",
+      "event_status": "Einsatz berichtet",
+      "proposed_depth": "A",
+      "depth_reason": "Drohnenabwehr-Evidenz Wettbewerber"
+    },
+    {
+      "id": "M-DEU-EXPORT-01",
+      "statement": "Das BAFA meldet, dass die befristete Allgemeine Genehmigung Nr. 48 zum 20. März 2026 in Kraft trat: Sie erlaubt die Ausfuhr bestimmter Rüstungsgüter der Luft- und Seeverteidigung zu Verteidigungszwecken nach Bahrain, Katar, Kuwait, Oman, Saudi-Arabien, die VAE und die Ukraine ohne Einzelantrag; erforderlich sind eine Registrierung (bis 30 Tage nach erster Ausfuhr) und monatliche Meldungen; befristet bis 15. September 2026.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-02f2d309d4be9a72"
+      ],
+      "evidence": "Auszug: \"Die AGG ist zeitlich befristet bis zum 15. September 2026.\"; Länder Bahrain, Katar, Kuwait, Oman, Saudi-Arabien, VAE, Ukraine; Registrierung bis 30 Tage nach erster Ausfuhr; monatliche Meldepflichten",
+      "location": "BAFA-Kurzmeldung vom 20.03.2026",
+      "uncertainty": "Detailbedingungen in der AGG selbst (nicht geöffnet).",
+      "event_date": "2026-03-20",
+      "event_status": "in Kraft",
+      "proposed_depth": "A",
+      "depth_reason": "Exportkontrollrahmen Deutschland zum Stichtag"
+    },
+    {
+      "id": "M-DEU-EXPORT-02",
+      "statement": "Laut AWA Außenwirtschafts-Akademie (18. September 2026, unter Verweis auf den BAFA-Newsletter September 2026) wurde die AGG Nr. 48 verlängert und gilt nun bis zum 15. September 2027.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-7e9c5adc66d1d3eb"
+      ],
+      "evidence": "Auszug: \"Die Allgemeine Genehmigung (AGG) Nr. 48 wurde verlängert und gilt nun bis zum 15. September 2027.\"",
+      "location": "Artikeltext, Abschnitt AGG Nr. 48",
+      "uncertainty": "Sekundärquelle; BAFA-Bekanntmachung der Verlängerung nicht direkt geöffnet; inhaltliche Änderungen nicht beschrieben.",
+      "event_status": "in Kraft (berichtet)",
+      "proposed_depth": "A",
+      "depth_reason": "Aktueller Exportrahmen zum Stichtag"
+    },
+    {
+      "id": "M-CHE-EXPORT-01",
+      "statement": "Der Schweizer Bundesrat hielt am 20. März 2026 fest, dass Kriegsmaterialexporte an Länder, die in den internationalen bewaffneten Konflikt mit Iran verwickelt sind, für die Dauer des Konflikts nicht bewilligt werden können; seit 28. Februar 2026 wurden keine neuen Bewilligungen für die USA erteilt, bestehende Bewilligungen ohne aktuelle Kriegsrelevanz bleiben nutzbar. Golfstaaten werden in der Mitteilung nicht genannt.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-bd063e8375865fb5"
+      ],
+      "evidence": "Paraphrase: Ausfuhr an verwickelte Länder kann während der Konfliktdauer \"nicht bewilligt werden\"; USA ausdrücklich; bestehende Bewilligungen ohne Kriegsrelevanz weiter nutzbar; interdepartementale Expertengruppe; Golfstaaten nicht erwähnt",
+      "location": "Medienmitteilung vom 20.03.2026",
+      "uncertainty": "Ob und welche Golfstaaten als konfliktverwickelt eingestuft werden, ist öffentlich nicht belegt.",
+      "event_date": "2026-03-20",
+      "event_status": "in Kraft",
+      "proposed_depth": "A",
+      "depth_reason": "Exportkontrolle Schweiz (Rheinmetall Air Defence Zürich)"
+    },
+    {
+      "id": "M-CHE-EXPORT-02",
+      "statement": "Laut SECO wird am 29. November 2026 über die vom Parlament am 19. Dezember 2025 beschlossene Änderung des Kriegsmaterialgesetzes abgestimmt: Lieferungen an Partnerstaaten aus Anhang 2 der Kriegsmaterialverordnung (seit 1. Juli 36 Länder, u. a. EU/EFTA und USA) wären auch bei Konfliktbeteiligung möglich, sofern neutralitätskonform; der Bundesrat erhielte eine Abweichungskompetenz bei außerordentlichen Umständen. Anhang 2 enthält keinen Golfstaat.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-d1be5243ec1023a0"
+      ],
+      "evidence": "Paraphrase: Abstimmung 29. November 2026; Anhang-2-Partnerstaaten (36 Länder inkl. EU/EFTA, USA); Abweichungskompetenz Bundesrat; Referendum",
+      "location": "SECO-Seite 'Abstimmung KMG', Abschnitte Inhalt und Status",
+      "uncertainty": "Aussage 'kein Golfstaat in Anhang 2' aus Auswertung der Seite; Anhang-2-Liste nicht separat geöffnet.",
+      "event_date": "2026-11-29",
+      "event_status": "geplant",
+      "proposed_depth": "A",
+      "depth_reason": "Regulatorische Änderung mit Golfbezug"
+    }
+  ],
+  "source_proposals": [
+    {
+      "id": "S-d246fbdc9c4c6b97",
+      "name": "Al Jazeera",
+      "title": "'Reprehensible': New wave of Iranian missiles, drones target Gulf nations",
+      "url": "https://www.aljazeera.com/news/2026/3/9/reprehensible-new-wave-of-iranian-missiles-drones-target-gulf-nations",
+      "published_date": "2026-03-09",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Nachrichtenmedium; gibt amtliche Angaben wieder)"
+    },
+    {
+      "id": "S-2e4f786c41d7b2ee",
+      "name": "Gulf News",
+      "title": "UAE air defense intercepted 18 ballistic missiles, 4 cruise missiles and 47 drones from Iran on April 3, 2026",
+      "url": "https://gulfnews.com/amp/story/uae%2Fgovernment%2Fuae-air-defense-intercepted-18-ballistic-missiles-4-cruise-missiles-and-47-drones-from-iran-on-april-3-2026-1.500495387",
+      "published_date": "2026-04-03",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Regionalmedium; gibt Angaben des VAE-Verteidigungsministeriums wieder)"
+    },
+    {
+      "id": "S-4abfdb5bf72ddb30",
+      "name": "Al Jazeera",
+      "title": "Iran launches missiles and drones at Gulf states after US strikes",
+      "url": "https://www.aljazeera.com/news/2026/7/12/missiles-and-drones-fired-at-gulf-states-after-night-of-us-strikes-on-iran",
+      "published_date": "2026-07-12",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Nachrichtenmedium)"
+    },
+    {
+      "id": "S-00b3bb9075c00199",
+      "name": "Asharq Al-Awsat",
+      "title": "Iran Attacks on Gulf States Surpass 7,000",
+      "url": "https://english.aawsat.com/gulf/5280204-iran-attacks-gulf-states-surpass-7000",
+      "published_date": "2026-06-03",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Regionalmedium; eigene Zählung aus amtlichen Angaben)"
+    },
+    {
+      "id": "S-3570dec2635e340e",
+      "name": "Gulf News",
+      "title": "US-Iran standoff: What UAE residents need to know today (Oct. 8, 2026)",
+      "url": "https://gulfnews.com/uae/us-iran-standoff-what-uae-residents-need-to-know-today-oct-8-2026-1.500702714",
+      "published_date": "2026-10-08",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Regionalmedium)"
+    },
+    {
+      "id": "S-eec5e9e91d4acc36",
+      "name": "Business AM",
+      "title": "Le PDG de Rheinmetall : « Le conflit en Iran entraîne une forte hausse de la demande en systèmes de défense aérienne »",
+      "url": "https://fr.businessam.be/?p=245146",
+      "published_date": "2026-05-10",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Wirtschaftsmedium; Wiedergabe eines Bloomberg-Berichts vom 2026-05-08 mit CEO-Aussagen)"
+    },
+    {
+      "id": "S-3cb9686bfe911020",
+      "name": "Gabelli Funds",
+      "title": "Middle East Defense: Initial Takeaways",
+      "url": "https://gabelli.com/research/middle-east-defense-initial-takeaways/",
+      "published_date": "2026-03-27",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Analystennotiz; paraphrasiert Rheinmetall-Telefonkonferenz vom 2026-03-11)"
+    },
+    {
+      "id": "S-6cd5701123f00a73",
+      "name": "Janes",
+      "title": "Qatar unveils Skynex air defence",
+      "url": "https://www.janes.com/osint-insights/defence-news/weapons/qatar-unveils-skynex-air-defence",
+      "published_date": "2022-10-14",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium)"
+    },
+    {
+      "id": "S-3b004b2cc914ddc4",
+      "name": "Janes",
+      "title": "Rheinmetall to supply Ukraine with Skynex after confirming Qatar delivery",
+      "url": "https://www.janes.com/osint-insights/defence-news/weapons/rheinmetall-to-supply-ukraine-with-skynex-after-confirming-qatar-delivery",
+      "published_date": "2022-12-15",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; Unternehmensauskunft gegenüber Janes)"
+    },
+    {
+      "id": "S-2de1e709dd2666d5",
+      "name": "Breaking Defense",
+      "title": "From unmanned to space tech, Qatar's Barzan eyes new investments, 'strengthening' what its got",
+      "url": "https://breakingdefense.com/2024/03/from-unmanned-to-space-tech-qatars-barzan-eyes-new-investments-strengthening-what-its-got/",
+      "published_date": "2024-03-06",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; Interview Barzan)"
+    },
+    {
+      "id": "S-3c0b72dcdb4a669f",
+      "name": "Army Recognition",
+      "title": "Qatar Deploys Skynex 35mm Air Defense at DIMDEX 2026 to Counter Growing Drone Threats",
+      "url": "https://www.armyrecognition.com/archives/archives-defense-exhibitions/2026-archives-news-defense-exhibitions/dimdex-2026/qatar-deploys-skynex-35mm-air-defense-at-dimdex-2026-to-counter-growing-drone-threats",
+      "published_date": "2026-01-20",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; Messebericht)"
+    },
+    {
+      "id": "S-48538d413f65c35e",
+      "name": "Gulf Times",
+      "title": "Barzan Holdings signs agreements at Dimdex (Rheinmetall Barzan Advanced Technologies JV)",
+      "url": "https://www.gulf-times.com/story/585029",
+      "published_date": "2018-03-14",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Regionalmedium)"
+    },
+    {
+      "id": "S-d401a7e147a6b2d4",
+      "name": "Argaam",
+      "title": "Switzerland set to transfer military resources, skills to Saudi Arabia in coming months",
+      "url": "https://www.argaam.com/en/article/articledetail/id/1540950",
+      "published_date": "2022-03-07",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Wirtschaftsmedium; Unternehmensaussagen)"
+    },
+    {
+      "id": "S-d5c3acd69d302e6f",
+      "name": "Janes",
+      "title": "Saudi Skyguard 3 acquisition confirmed",
+      "url": "https://janes.com/osint-insights/defence-news/saudi-skyguard-3-acquisition-confirmed",
+      "published_date": "2020-02-26",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; OSINT/Behördenfoto SPA)"
+    },
+    {
+      "id": "S-02f2d309d4be9a72",
+      "name": "BAFA",
+      "title": "Ausfuhrkontrolle: Bundesregierung vereinfacht Ausfuhr von bestimmten Rüstungsgütern an die Golfstaaten und die Ukraine",
+      "url": "https://www.bafa.de/SharedDocs/Kurzmeldungen/DE/Aussenwirtschaft/Ausfuhrkontrolle/20260320_neubekanntgabe_agg48.html",
+      "published_date": "2026-03-20",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Behördenquelle"
+    },
+    {
+      "id": "S-7e9c5adc66d1d3eb",
+      "name": "AWA Außenwirtschafts-Akademie",
+      "title": "Dual-Use-Liste wird aktualisiert und AGG Nr. 48 verlängert",
+      "url": "https://www.awa-seminare.com/artikel/dual-use-liste-wird-aktualisiert-und-agg-nr-48-verlaengert",
+      "published_date": "2026-09-18",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachdienst Exportkontrolle; verweist auf BAFA-Newsletter September 2026)"
+    },
+    {
+      "id": "S-bd063e8375865fb5",
+      "name": "Eidgenössisches Departement für Wirtschaft, Bildung und Forschung (WBF)",
+      "title": "Iran-Konflikt: Auswirkungen auf kriegsrelevante Exporte",
+      "url": "https://www.wbf.admin.ch/de/newnsb/eLmLXeiHSswJO0UIAyqb8",
+      "published_date": "2026-03-20",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Behördenquelle"
+    },
+    {
+      "id": "S-d1be5243ec1023a0",
+      "name": "Staatssekretariat für Wirtschaft (SECO)",
+      "title": "Abstimmung über die Änderung des Kriegsmaterialgesetzes",
+      "url": "https://www.seco.admin.ch/de/abstimmung-kmg",
+      "published_date": null,
+      "accessed_date": "2026-10-10",
+      "source_kind": "Behördenquelle"
+    },
+    {
+      "id": "S-c07effa3f3662a94",
+      "name": "SIPRI",
+      "title": "Trends in World Military Expenditure, 2025 (SIPRI Fact Sheet)",
+      "url": "https://www.sipri.org/sites/default/files/2026-04/2604_milex_2025.pdf",
+      "published_date": null,
+      "accessed_date": "2026-10-10",
+      "source_kind": "Forschungsinstitut (Primärdatenbank)",
+      "report_year": 2025
+    },
+    {
+      "id": "S-13ac2bcc7a8d3bc1",
+      "name": "Argaam",
+      "title": "Saudi budget Q1 2026: Revenues at SAR 261B, expenditures at SAR 387B",
+      "url": "https://www.argaam.com/en/article/articledetail/id/1902512",
+      "published_date": "2026-05-05",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Wirtschaftsmedium; gibt Daten des saudischen Finanzministeriums wieder)"
+    },
+    {
+      "id": "S-591cad6afbdb6208",
+      "name": "Arab News",
+      "title": "Saudi Arabia reaches 25% localization of military spending, on track for 2030 goal",
+      "url": "https://www.arabnews.com/node/2622075",
+      "published_date": "2025-11-10",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Regionalmedium; gibt GAMI-Angaben wieder)"
+    },
+    {
+      "id": "S-ee64de417a6b1930",
+      "name": "U.S. International Trade Administration",
+      "title": "United Arab Emirates – Country Commercial Guide: Defense",
+      "url": "https://www.trade.gov/country-commercial-guides/united-arab-emirates-defense",
+      "published_date": "2025-08-25",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Behördenquelle (US-Regierung)"
+    },
+    {
+      "id": "S-4c4af0e05b9558f2",
+      "name": "Defense News",
+      "title": "US moves to approve more than $16 billion in air defense sales to Middle East",
+      "url": "https://www.defensenews.com/global/mideast-africa/2026/03/19/us-moves-to-approve-more-than-16-billion-in-air-defense-sales-to-middle-east/",
+      "published_date": "2026-03-19",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; gibt US-Notifizierungen wieder)"
+    },
+    {
+      "id": "S-d7c95ccbcee5e1ba",
+      "name": "Unmanned Airspace",
+      "title": "USA to supply extensive C-UAS systems to UAE following Iranian drone strikes on energy facilities",
+      "url": "https://www.unmannedairspace.info/counter-uas-systems-and-policies/usa-to-supply-extensive-c-uas-systems-to-uae-following-iranian-drone-strikes-on-energy-facilities/",
+      "published_date": "2026-03-19",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; zitiert US-State-Department)"
+    },
+    {
+      "id": "S-a23dcdde6a28b4bb",
+      "name": "GovCon Wire",
+      "title": "State Department OKs Potential $1B Sale of Integrated Small UAS Defeat System to Qatar",
+      "url": "https://www.govconwire.com/articles/state-department-clears-potential-1b-fs-lids-sale-to-qatar",
+      "published_date": "2022-11-30",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; gibt DSCA-Notifizierung wieder)"
+    },
+    {
+      "id": "S-b6faabdb5b5fbeb3",
+      "name": "Janes",
+      "title": "Farnborough 2026: RTX's Raytheon Coyote C-UAS marketed internationally",
+      "url": "https://www.janes.com/defence-intelligence-insights/defence-news/air/farnborough-2026-rtxs-raytheon-coyote-c-uas-marketed-internationally",
+      "published_date": "2026-07-21",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium)"
+    },
+    {
+      "id": "S-32a1f2cd50c3b5ae",
+      "name": "The War Zone",
+      "title": "Army Coyote Drone-Hunting Drones Have Scored 170 Combat Kills",
+      "url": "https://www.twz.com/news-features/army-coyote-drone-hunting-drones-have-scored-170-combat-kills",
+      "published_date": "2024-11-01",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; Aussage US Army)"
+    },
+    {
+      "id": "S-7a89b412faeaf6ce",
+      "name": "Breaking Defense",
+      "title": "US approves $2B sale of Anduril counter-drone systems to Kuwait",
+      "url": "https://breakingdefense.com/2026/06/us-approves-2b-sale-of-anduril-counter-drone-systems-to-kuwait/",
+      "published_date": "2026-06-08",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium)"
+    },
+    {
+      "id": "S-346bbac409450892",
+      "name": "Kongsberg (Börsenmitteilung via Inderes)",
+      "title": "KONGSBERG to deliver NASAMS to Kuwait via US Foreign Military Sales programme",
+      "url": "https://www.inderes.fi/en/releases/kog-kongsberg-to-deliver-nasams-to-kuwait-via-us-foreign-military-sales-programme",
+      "published_date": "2026-06-30",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe (Börsenmitteilung, syndiziert)"
+    },
+    {
+      "id": "S-1e47bb01c749039c",
+      "name": "Teknisk Ukeblad",
+      "title": "Kongsbergs største enkeltavtale noen gang: Luftvern til Qatar for 5,6 milliarder kroner",
+      "url": "https://www.tu.no/artikler/kongsbergs-storste-enkeltavtale-noen-gang-luftvern-til-qatar-for-5-6-milliarder-kroner/469622",
+      "published_date": "2019-07-11",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; Unternehmensaussagen)"
+    },
+    {
+      "id": "S-3d92fa89ab4d601e",
+      "name": "Defence Industry Europe",
+      "title": "NASAMS air defence system proves highly effective in Ukraine, Norwegian official confirms",
+      "url": "https://defence-industry.eu/nasams-air-defence-system-proves-highly-effective-in-ukraine-norwegian-official-confirms/",
+      "published_date": "2025-02-25",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; zitiert norwegischen Offizier via Aftenposten)"
+    },
+    {
+      "id": "S-873f7366346b9261",
+      "name": "Army Recognition",
+      "title": "VL MICA on Soframe 4x4 Serves as Air Defense System of Saudi National Guard",
+      "url": "https://www.armyrecognition.com/archives/archives-defense-exhibitions/2026-archives-news-defense-exhibitions/world-defense-show-2026/saudi-arabia-unveils-new-truck-mounted-vlumica-air-defense-system-to-counter-drone-threats",
+      "published_date": "2026-02-11",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; Messebericht)"
+    },
+    {
+      "id": "S-06318d4e0dd58da5",
+      "name": "MBDA",
+      "title": "MBDA launches the new VL MICA NG air defence system",
+      "url": "https://www.mbda-systems.com/mbda-launches-new-vl-mica-ng-air-defence-system",
+      "published_date": "2020-10-19",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-21860c781614d433",
+      "name": "Middle East Eye",
+      "title": "Gulf turns to Turkey for air defence systems amid Iran threats",
+      "url": "https://www.middleeasteye.net/news/gulf-turn-turkey-air-defense-systems-iran-threats",
+      "published_date": "2026-05-11",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Nachrichtenmedium; anonyme Branchenquellen)"
+    },
+    {
+      "id": "S-c44a53b9b7fed3f5",
+      "name": "Quwa",
+      "title": "ASELSAN Korkut 35 mm air defence and Pakistan",
+      "url": "https://quwa.org/pakistan/air-defence-pk/aselsan-korkut-35-mm-air-defence-and-pakistan/",
+      "published_date": "2026-09-16",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; wertet ASELSAN-Broschüren/-Geschäftsberichte aus)"
+    },
+    {
+      "id": "S-0ee334ddc9eec2c2",
+      "name": "Electro Optic Systems (ASX-Mitteilung)",
+      "title": "New Counter Drone Order (US$124m) and Middle East JV for Laser Weapons and Remote Weapon Systems",
+      "url": "https://announcements.asx.com.au/asxpdf/20260619/pdf/070sv4dp9my1gg.pdf",
+      "published_date": "2026-06-19",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe (Börsenmitteilung)"
+    },
+    {
+      "id": "S-16987d30779651f5",
+      "name": "Defence Industry Europe",
+      "title": "EOS signs conditional £370 million contract for nationwide counter-drone defence system in an unnamed Gulf state",
+      "url": "https://defence-industry.eu/eos-signs-conditional-370-million-contract-for-nationwide-counter-drone-defence-system-in-an-unnamed-gulf-state/",
+      "published_date": "2026-10-09",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; gibt EOS-Mitteilung wieder)"
+    },
+    {
+      "id": "S-0e7ad928d9638007",
+      "name": "The Defense Post",
+      "title": "Australia's 'drone killer' Slinger heads to Ukraine",
+      "url": "https://www.thedefensepost.com/2023/10/06/australia-drone-killer-ukraine",
+      "published_date": "2023-10-06",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium)"
+    },
+    {
+      "id": "S-829071fd179d4705",
+      "name": "EDR Magazine",
+      "title": "Halcon and Rheinmetall Air Defence team up for the Skynex",
+      "url": "https://www.edrmagazine.eu/halcon-and-rheinmetall-air-defence-team-up-for-the-skynex",
+      "published_date": "2021-03-08",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; Herstellerangaben Halcon)"
+    },
+    {
+      "id": "S-ef86c664e3ccb75b",
+      "name": "Janes",
+      "title": "IDEX 2025: Skyknight air defence system undergoes testing",
+      "url": "https://www.janes.com/defence-intelligence-insights/defence-news/defence/idex-2025-skyknight-air-defence-system-undergoes-testing",
+      "published_date": "2025-02-24",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; Herstellerauskunft EDGE)"
+    },
+    {
+      "id": "S-7a92bf0944771ac1",
+      "name": "Breaking Defense",
+      "title": "EDGE CEO talks company's role in Iran conflict, plus future partnerships",
+      "url": "https://breakingdefense.com/2026/05/edge-ceo-talks-companys-role-in-iran-conflict-plus-future-partnerships/",
+      "published_date": "2026-05-11",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; Interview EDGE-CEO)"
+    },
+    {
+      "id": "S-4691f9471b203297",
+      "name": "Congressional Research Service",
+      "title": "Bahrain: Issues for U.S. Policy (RS95-1013, updated September 23, 2026)",
+      "url": "https://www.congress.gov/crs_external_products/RS/PDF/95-1013/95-1013.191.pdf",
+      "published_date": "2026-09-23",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Behördenquelle (Parlamentarischer Dienst USA)"
+    },
+    {
+      "id": "S-37ccf8b458258ca3",
+      "name": "Middle East Eye",
+      "title": "Turkey to deploy troops and air defence systems to Saudi Arabia amid Houthi attacks",
+      "url": "https://www.middleeasteye.net/news/turkey-to-deploy-troops-and-air-defence-systems-saudi-arabia",
+      "published_date": "2026-10-06",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Nachrichtenmedium; überwiegend anonyme Regierungsquellen)"
+    },
+    {
+      "id": "S-1bc2890891ce328b",
+      "name": "The Korea Times",
+      "title": "LIG Nex1 bags $3.2 bil. missile interceptor deal with Saudi Arabia",
+      "url": "https://www.koreatimes.co.kr/amp/southkorea/defense/20240206/lig-nex1-bags-32-bil-missile-interceptor-deal-with-saudi-arabia",
+      "published_date": "2024-02-06",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Nachrichtenmedium; gibt koreanisches Verteidigungsministerium wieder)"
+    },
+    {
+      "id": "S-68cd066e40b60677",
+      "name": "The National",
+      "title": "Gulf states turn to machinegun fire to tackle Iranian drones over cities",
+      "url": "https://www.thenationalnews.com/news/gulf/2026/03/17/gulf-states-turn-to-machinegun-fire-to-tackle-iranian-drones-over-cities/",
+      "published_date": "2026-03-17",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Regionalmedium)"
+    },
+    {
+      "id": "S-ef46277a93dc371d",
+      "name": "Militarnyi",
+      "title": "Skynex Anti-Aircraft Systems Were Used to Shoot Down Shaheds",
+      "url": "https://militarnyi.com/en/news/skynex-anti-aircraft-systems-were-used-to-shoot-down-shaheds/",
+      "published_date": "2025-07-12",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; Video der ukrainischen Luftwaffe)"
+    },
+    {
+      "id": "S-aaaf59c399a65ff2",
+      "name": "Euronews",
+      "title": "Rheinmetall chief Papperger: \"Robots are coming\"",
+      "url": "https://www.euronews.com/business/2026/09/17/rheinmetall-chief-papperger-robots-are-coming",
+      "published_date": "2026-09-17",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Nachrichtenmedium; Interview CEO)"
+    },
+    {
+      "id": "S-4ea803eb7cb384c9",
+      "name": "Europäische Sicherheit & Technik",
+      "title": "Rheinmetall liefert vier Skynex-Systeme an einen internationalen Kunden",
+      "url": "https://esut.de/2026/07/meldungen/72480/rheinmetall-liefert-vier-skynex-systeme-an-einen-internationalen-kunden/",
+      "published_date": "2026-07-03",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle (Fachmedium; gibt Rheinmetall-Mitteilung wieder)"
+    }
+  ],
+  "peers": [
+    {
+      "id": "rheinmetall_skynex_skyranger",
+      "label": "Rheinmetall (Rheinmetall Air Defence) – Skynex/Skyranger/Skyguard (Oerlikon-35-mm-Kanonensysteme)",
+      "peer_group": "gun_cuas",
+      "role": "Zielunternehmen; kanonenbasierte Nah-/Nächstbereichsflugabwehr inkl. C-UAS",
+      "claim_ids": [
+        "M-QAT-RHM-01",
+        "M-QAT-RHM-03",
+        "M-RHM-GULF-01"
+      ]
+    },
+    {
+      "id": "aselsan_korkut",
+      "label": "ASELSAN – Korkut (35 mm, Variante 100/25)",
+      "peer_group": "gun_cuas",
+      "role": "Kanonenbasierte Flugabwehr mit berichtetem (anonym belegtem) Golf-Vertragsbezug",
+      "claim_ids": [
+        "M-PEER-KOR-01",
+        "M-GCC-TUR-01"
+      ]
+    },
+    {
+      "id": "eos_slinger",
+      "label": "Electro Optic Systems (EOS) – Slinger (30-mm-C-UAS-Waffenstation)",
+      "peer_group": "gun_cuas",
+      "role": "Kanonenbasiertes Drohnenabwehrsystem mit belegtem VAE-Auftrag und lokaler Fertigung",
+      "claim_ids": [
+        "M-PEER-EOS-01",
+        "M-PEER-EOS-03"
+      ]
+    },
+    {
+      "id": "kongsberg_rtx_nasams",
+      "label": "Kongsberg/Raytheon – NASAMS",
+      "peer_group": "missile_shorad",
+      "role": "Lenkflugkörper-Flugabwehr kurzer bis mittlerer Reichweite mit GCC-Kunden (Kuwait, Katar, Oman)",
+      "claim_ids": [
+        "M-KWT-PROG-02",
+        "M-QAT-PROG-02"
+      ]
+    },
+    {
+      "id": "mbda_vl_mica",
+      "label": "MBDA – VL MICA / VL MICA NG",
+      "peer_group": "missile_shorad",
+      "role": "Lenkflugkörper-Kurzstreckenflugabwehr mit berichteter Präsenz in Saudi-Arabien",
+      "claim_ids": [
+        "M-PEER-MICA-01",
+        "M-SAU-PROG-02"
+      ]
+    },
+    {
+      "id": "rtx_coyote_fslids",
+      "label": "RTX (Raytheon) – Coyote Block 2 / FS-LIDS",
+      "peer_group": "missile_shorad",
+      "role": "Abfangflugkörper-basierte C-UAS-Schicht; über US-FMS in VAE und Katar angefragt; Gruppenzuordnung als lenkflugkörperbasierte Nächstbereichs-/C-UAS-Lösung",
+      "claim_ids": [
+        "M-PEER-COYOTE-01",
+        "M-UAE-PROG-01"
+      ]
+    },
+    {
+      "id": "edge_skyknight_skyshield",
+      "label": "EDGE Group (VAE) – SKYKNIGHT (Halcon) / SKYSHIELD",
+      "peer_group": "regional_industry",
+      "role": "Regionale Industrie mit eigenem Flugkörper-/Soft-Kill-Angebot; Skyknight mit Rheinmetall Air Defence für Skynex entwickelt",
+      "claim_ids": [
+        "M-UAE-EDGE-01",
+        "M-UAE-EDGE-02",
+        "M-UAE-EDGE-03"
+      ]
+    },
+    {
+      "id": "barzan_holdings",
+      "label": "Barzan Holdings (Katar) – C-UAS-System; JV RBAT mit Rheinmetall",
+      "peer_group": "regional_industry",
+      "role": "Regionale Industrie mit eigenem C-UAS-Vertrag in Katar; zugleich JV-Partner von Rheinmetall",
+      "claim_ids": [
+        "M-QAT-BARZAN-01",
+        "M-QAT-RHM-04"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "peer_id": "rheinmetall_skynex_skyranger",
+      "criterion_id": "system_profile",
+      "claim_ids": [
+        "M-QAT-RHM-03"
+      ],
+      "factual_description": "Skynex-Konfiguration (QEADF, DIMDEX 2026): 35-mm-Revolver Gun Mk3, AHEAD, X-TAR3D, Skymaster; Werte laut Messe-/Herstellerangabe. Weitere Produktfakten im Portfolio-Modul."
+    },
+    {
+      "peer_id": "rheinmetall_skynex_skyranger",
+      "criterion_id": "cuas_evidence",
+      "claim_ids": [
+        "M-RHM-CUAS-01"
+      ],
+      "factual_description": "Ukrainische Luftwaffe veröffentlichte Video zu Skynex gegen Shahed-Drohnen (Einsatz außerhalb GCC)."
+    },
+    {
+      "peer_id": "rheinmetall_skynex_skyranger",
+      "criterion_id": "cuas_evidence",
+      "claim_ids": [
+        "M-RHM-GULF-01"
+      ],
+      "factual_description": "CEO-Aussage: nahezu alle angegriffenen Länder im Nahen Osten nutzten Rheinmetalls Kanonenflugabwehr; kein öffentlicher Einzelnachweis eines Golf-Einsatzes 2026 gefunden."
+    },
+    {
+      "peer_id": "rheinmetall_skynex_skyranger",
+      "criterion_id": "procurement_status",
+      "claim_ids": [
+        "M-QAT-RHM-01",
+        "M-QAT-RHM-02",
+        "M-SAU-RHM-02"
+      ],
+      "factual_description": "Skynex bei Katar in Betrieb (MoD-Video 2022; Lieferung laut Rheinmetall bestätigt); Skyguard 3 in Saudi-Arabien (SPA-Foto, Janes 2020)."
+    },
+    {
+      "peer_id": "rheinmetall_skynex_skyranger",
+      "criterion_id": "gulf_access",
+      "claim_ids": [
+        "M-QAT-RHM-01",
+        "M-QAT-RHM-02",
+        "M-SAU-RHM-02",
+        "M-RHM-GULF-02"
+      ],
+      "factual_description": "Betrieb in Katar und Saudi-Arabien öffentlich belegt; laut CEO (via Bloomberg/Business AM) ca. 150 Skyranger/Skynex in der Region; Kundenländer darüber hinaus nicht benannt."
+    },
+    {
+      "peer_id": "rheinmetall_skynex_skyranger",
+      "criterion_id": "gulf_access",
+      "claim_ids": [
+        "M-UAE-EDGE-01",
+        "M-UAE-EDGE-02"
+      ],
+      "factual_description": "Kooperation mit EDGE/Halcon zur Integration des Skyknight in Skynex (Entwicklung/Erprobung, kein VAE-Kundenvertrag belegt)."
+    },
+    {
+      "peer_id": "rheinmetall_skynex_skyranger",
+      "criterion_id": "local_industry",
+      "claim_ids": [
+        "M-QAT-RHM-04",
+        "M-SAU-RHM-01"
+      ],
+      "factual_description": "JV RBAT mit Barzan (Katar, 2018) und RAD Arabia mit MAZ Group (Saudi-Arabien, 2022, Luftverteidigungs-MRO/Lokalisierung, Fabrik Dschidda angekündigt)."
+    },
+    {
+      "peer_id": "rheinmetall_skynex_skyranger",
+      "criterion_id": "production_capacity",
+      "claim_ids": [
+        "M-RHM-GULF-02",
+        "M-RHM-CAP-01"
+      ],
+      "factual_description": "CEO: 2026 nur ca. zehn Kanonen für Golfstaaten ohne Verzögerung europäischer Kunden lieferbar; Skyranger-Kapazitätsziel bis 400/Jahr ab Ende 2027 (Herstellerangaben)."
+    },
+    {
+      "peer_id": "aselsan_korkut",
+      "criterion_id": "system_profile",
+      "claim_ids": [
+        "M-PEER-KOR-01"
+      ],
+      "factual_description": "Zwei 35-mm-Kanonen, ATOM-Airburst, 1.100 Schuss/min, 4 km effektiv (ASELSAN-Broschüren via Quwa); Variante 100/25 mit 25-mm-Munition gegen FPV-/kabelgebundene Drohnen (MEE)."
+    },
+    {
+      "peer_id": "aselsan_korkut",
+      "criterion_id": "system_profile",
+      "claim_ids": [
+        "M-GCC-TUR-01"
+      ],
+      "factual_description": "Korkut 100/25: 25-mm-'smart ammunition' gegen FPV- und kabelgebundene Drohnen (MEE-Beschreibung)."
+    },
+    {
+      "peer_id": "aselsan_korkut",
+      "criterion_id": "cuas_evidence",
+      "claim_ids": [
+        "M-PEER-KOR-01"
+      ],
+      "factual_description": "UAV als vorgesehene Ziele laut Herstellerunterlagen; kein öffentlich dokumentierter Test-/Einsatzbericht gegen UAS gefunden."
+    },
+    {
+      "peer_id": "aselsan_korkut",
+      "criterion_id": "procurement_status",
+      "claim_ids": [
+        "M-PEER-KOR-01"
+      ],
+      "factual_description": "Erste Auslandslieferung 150/35 laut ASELSAN-Geschäftsbericht 2025 (Kunde ungenannt); Korkut bei pakistanischer Luftwaffe gezeigt (September 2026)."
+    },
+    {
+      "peer_id": "aselsan_korkut",
+      "criterion_id": "gulf_access",
+      "claim_ids": [
+        "M-GCC-TUR-01"
+      ],
+      "factual_description": "Verträge Saudi-Arabien und Katar über Korkut 100/25 nur durch zwei anonyme Branchenquellen berichtet; Kuwait-Regierungsprotokoll und Oman-Interesse berichtet."
+    },
+    {
+      "peer_id": "eos_slinger",
+      "criterion_id": "system_profile",
+      "claim_ids": [
+        "M-PEER-EOS-03",
+        "M-PEER-EOS-01"
+      ],
+      "factual_description": "Fahrzeugmontierbare 30-mm-Waffenstation (M230LF) mit Zielverfolgungsradar; vom Hersteller als kanonenbasiertes C-UAS-System bezeichnet."
+    },
+    {
+      "peer_id": "eos_slinger",
+      "criterion_id": "cuas_evidence",
+      "claim_ids": [
+        "M-PEER-EOS-03"
+      ],
+      "factual_description": "Lieferung an Ukraine angekündigt (2023); kein öffentlicher Test-/Einsatzbericht in den geöffneten Quellen."
+    },
+    {
+      "peer_id": "eos_slinger",
+      "criterion_id": "cuas_evidence",
+      "claim_ids": [
+        "M-PEER-EOS-01"
+      ],
+      "factual_description": "VAE-Auftrag ausdrücklich für Drohnenabwehr-Waffenstation (Hersteller-Mitteilung)."
+    },
+    {
+      "peer_id": "eos_slinger",
+      "criterion_id": "procurement_status",
+      "claim_ids": [
+        "M-PEER-EOS-01",
+        "M-PEER-EOS-03"
+      ],
+      "factual_description": "Auftrag über Gen5 (VAE) 124 Mio. USD, Lieferung 2027–2028 vorbehaltlich Exportgenehmigung; Ukraine-Lieferung 2023 angekündigt."
+    },
+    {
+      "peer_id": "eos_slinger",
+      "criterion_id": "gulf_access",
+      "claim_ids": [
+        "M-PEER-EOS-01",
+        "M-PEER-EOS-02"
+      ],
+      "factual_description": "Auftrag VAE (Gen5) sowie bedingter 370-Mio.-GBP-Vertrag (NiDAR-C2) mit ungenanntem GCC-Staat."
+    },
+    {
+      "peer_id": "eos_slinger",
+      "criterion_id": "local_industry",
+      "claim_ids": [
+        "M-PEER-EOS-01"
+      ],
+      "factual_description": "Bedingtes 50/50-JV mit Gen5 in Abu Dhabi (Laser, Waffenstationen R400/R500/R800); Slinger-Fertigung teils in den VAE."
+    },
+    {
+      "peer_id": "eos_slinger",
+      "criterion_id": "production_capacity",
+      "claim_ids": [
+        "M-PEER-EOS-01"
+      ],
+      "factual_description": "Fertigung in Australien und den VAE angekündigt."
+    },
+    {
+      "peer_id": "kongsberg_rtx_nasams",
+      "criterion_id": "system_profile",
+      "claim_ids": [
+        "M-KWT-PROG-02"
+      ],
+      "factual_description": "Lenkflugkörpersystem kurzer bis mittlerer Reichweite aus Raytheon- und Kongsberg-Elementen (Herstellerangabe)."
+    },
+    {
+      "peer_id": "kongsberg_rtx_nasams",
+      "criterion_id": "cuas_evidence",
+      "claim_ids": [
+        "M-PEER-NASAMS-01"
+      ],
+      "factual_description": "Norwegischer Offizier: ca. 900 Abfänge in der Ukraine, rund 40 % Drohnen (überwiegend Shahed), Trefferquote 94 % berichtet."
+    },
+    {
+      "peer_id": "kongsberg_rtx_nasams",
+      "criterion_id": "procurement_status",
+      "claim_ids": [
+        "M-KWT-PROG-02",
+        "M-QAT-PROG-02"
+      ],
+      "factual_description": "Verträge Kuwait (2026, via FMS/Raytheon) und Katar (2019); elf Länder mit kompletten Systemen (Stand 2019)."
+    },
+    {
+      "peer_id": "kongsberg_rtx_nasams",
+      "criterion_id": "gulf_access",
+      "claim_ids": [
+        "M-KWT-PROG-02",
+        "M-QAT-PROG-02"
+      ],
+      "factual_description": "Vertrag Kuwait 2026; Vertrag Katar 2019; Oman als NASAMS-Land genannt (2019)."
+    },
+    {
+      "peer_id": "mbda_vl_mica",
+      "criterion_id": "system_profile",
+      "claim_ids": [
+        "M-SAU-PROG-02",
+        "M-PEER-MICA-01"
+      ],
+      "factual_description": "Vertikal startender Kurzstreckenflugkörper, LKW-montiert (VLU MICA), beworben bis 20 km; MICA NG über 40 km (Herstellerangaben)."
+    },
+    {
+      "peer_id": "mbda_vl_mica",
+      "criterion_id": "cuas_evidence",
+      "claim_ids": [
+        "M-PEER-MICA-01"
+      ],
+      "factual_description": "Nur allgemeine Herstellerangabe zu verbesserter UAV-Bekämpfung (NG)."
+    },
+    {
+      "peer_id": "mbda_vl_mica",
+      "criterion_id": "procurement_status",
+      "claim_ids": [
+        "M-PEER-MICA-01"
+      ],
+      "factual_description": "VL-MICA-Familie laut MBDA von 15 Streitkräften eingeführt (2020)."
+    },
+    {
+      "peer_id": "mbda_vl_mica",
+      "criterion_id": "gulf_access",
+      "claim_ids": [
+        "M-SAU-PROG-02"
+      ],
+      "factual_description": "Auf WDS 2026 gezeigt; Bilder bestätigten laut Army Recognition VL MICA im Bestand der saudischen Nationalgarde; kein Vertrag öffentlich."
+    },
+    {
+      "peer_id": "rtx_coyote_fslids",
+      "criterion_id": "system_profile",
+      "claim_ids": [
+        "M-PEER-COYOTE-01",
+        "M-UAE-PROG-01"
+      ],
+      "factual_description": "Kinetischer Einweg-Abfangflugkörper Coyote Block 2 gegen UAV Gruppe 1–3; FS-LIDS als ortsfester Systemverbund mit Ku-Band-Radar, EO/IR, 4-Pack-Startern."
+    },
+    {
+      "peer_id": "rtx_coyote_fslids",
+      "criterion_id": "cuas_evidence",
+      "claim_ids": [
+        "M-PEER-COYOTE-02"
+      ],
+      "factual_description": "US Army: 170 erfolgreiche Abschüsse in CENTCOM/AFRICOM/EUCOM (Stand 2024)."
+    },
+    {
+      "peer_id": "rtx_coyote_fslids",
+      "criterion_id": "procurement_status",
+      "claim_ids": [
+        "M-PEER-COYOTE-02"
+      ],
+      "factual_description": "Einsatz durch US-Streitkräfte an vorgeschobenen Standorten im Nahen Osten berichtet."
+    },
+    {
+      "peer_id": "rtx_coyote_fslids",
+      "criterion_id": "gulf_access",
+      "claim_ids": [
+        "M-UAE-PROG-01",
+        "M-QAT-PROG-01"
+      ],
+      "factual_description": "US-Genehmigungen möglicher FMS-Verkäufe an VAE (2026, 10 FS-LIDS, 240 Coyote) und Katar (2022, 10 FS-LIDS, 200 Coyote); Vertragsstatus nicht belegt."
+    },
+    {
+      "peer_id": "rtx_coyote_fslids",
+      "criterion_id": "local_industry",
+      "claim_ids": [
+        "M-PEER-COYOTE-01"
+      ],
+      "factual_description": "Raytheon Emirates: lokale Coyote-Produktions-/Montageanlage im Tawazun Industrial Park (laut Janes-Bildunterschrift)."
+    },
+    {
+      "peer_id": "rtx_coyote_fslids",
+      "criterion_id": "production_capacity",
+      "claim_ids": [
+        "M-PEER-COYOTE-01"
+      ],
+      "factual_description": "Lokale Montage in Abu Dhabi vereinbart; keine Stückzahlen veröffentlicht."
+    },
+    {
+      "peer_id": "edge_skyknight_skyshield",
+      "criterion_id": "system_profile",
+      "claim_ids": [
+        "M-UAE-EDGE-01",
+        "M-UAE-EDGE-02"
+      ],
+      "factual_description": "SKYKNIGHT: Flugabwehrflugkörper bis 10 km (Herstellerangabe), Containerstarter, für Skynex-Batterie entwickelt; SKYSHIELD als Soft-Kill-C-UAS."
+    },
+    {
+      "peer_id": "edge_skyknight_skyshield",
+      "criterion_id": "cuas_evidence",
+      "claim_ids": [
+        "M-UAE-EDGE-03"
+      ],
+      "factual_description": "CEO: VAE nutzten EDGE-Störsender/Spoofer im Iran-Konflikt (nicht unabhängig verifiziert); Skyknight noch nicht im Dienst."
+    },
+    {
+      "peer_id": "edge_skyknight_skyshield",
+      "criterion_id": "procurement_status",
+      "claim_ids": [
+        "M-UAE-EDGE-02",
+        "M-UAE-EDGE-03"
+      ],
+      "factual_description": "Skyknight: Testschüsse seit 2025, Qualifikation bis Ende 2026 erwartet, laut CEO 'going into production'."
+    },
+    {
+      "peer_id": "edge_skyknight_skyshield",
+      "criterion_id": "gulf_access",
+      "claim_ids": [
+        "M-UAE-EDGE-03"
+      ],
+      "factual_description": "Soft-Kill-Systeme laut CEO bei VAE im Einsatz; Integration von EDGE-Sensoren in katarische Systeme angegeben."
+    },
+    {
+      "peer_id": "edge_skyknight_skyshield",
+      "criterion_id": "local_industry",
+      "claim_ids": [
+        "M-UAE-EDGE-01",
+        "M-UAE-EDGE-03"
+      ],
+      "factual_description": "Eigene VAE-Industrie; Entwicklungskooperation mit Rheinmetall Air Defence (Skyknight/Skynex); Partnerschaft mit Barzan (Katar)."
+    },
+    {
+      "peer_id": "barzan_holdings",
+      "criterion_id": "system_profile",
+      "claim_ids": [
+        "M-QAT-BARZAN-01"
+      ],
+      "factual_description": "C-UAS-System mit Soft- und Hard-Kill-Fähigkeiten (Unternehmensangabe), Details nicht veröffentlicht."
+    },
+    {
+      "peer_id": "barzan_holdings",
+      "criterion_id": "procurement_status",
+      "claim_ids": [
+        "M-QAT-BARZAN-01"
+      ],
+      "factual_description": "Vertrag mit Katars Luftverteidigungskräften 2023, operative Erprobung (Unternehmensangabe 2024)."
+    },
+    {
+      "peer_id": "barzan_holdings",
+      "criterion_id": "gulf_access",
+      "claim_ids": [
+        "M-QAT-BARZAN-01"
+      ],
+      "factual_description": "Staatlicher Kunde in Katar (Unternehmensangabe)."
+    },
+    {
+      "peer_id": "barzan_holdings",
+      "criterion_id": "local_industry",
+      "claim_ids": [
+        "M-QAT-RHM-04",
+        "M-QAT-BARZAN-01"
+      ],
+      "factual_description": "Katarisches Staatsunternehmen; JV RBAT mit Rheinmetall (2018); vier C-UAS-Systeme in Katar produziert (Angabe 2024)."
+    },
+    {
+      "peer_id": "barzan_holdings",
+      "criterion_id": "production_capacity",
+      "claim_ids": [
+        "M-QAT-BARZAN-01"
+      ],
+      "factual_description": "Vier Systeme vollständig in Katar produziert (Unternehmensangabe 2024)."
+    }
+  ],
+  "regions": [
+    {
+      "id": "gcc",
+      "label": "Golfstaaten (GCC) – Flugabwehrmarkt und Marktzugang",
+      "claim_ids": [
+        "M-GCC-THREAT-01",
+        "M-GCC-THREAT-02",
+        "M-GCC-THREAT-04",
+        "M-GCC-PROG-01",
+        "M-GCC-TUR-01",
+        "M-RHM-GULF-01",
+        "M-RHM-GULF-02"
+      ],
+      "sections": [
+        {
+          "label": "Region übergreifend: Bedrohungslage 2026",
+          "claim_ids": [
+            "M-GCC-THREAT-01",
+            "M-GCC-THREAT-02",
+            "M-GCC-THREAT-03",
+            "M-GCC-THREAT-04",
+            "M-GCC-THREAT-05"
+          ]
+        },
+        {
+          "label": "Saudi-Arabien",
+          "claim_ids": [
+            "M-SAU-BUDGET-01",
+            "M-SAU-BUDGET-02",
+            "M-SAU-LOCAL-01",
+            "M-SAU-PROG-01",
+            "M-SAU-PROG-02",
+            "M-SAU-THREAT-01",
+            "M-SAU-RHM-01",
+            "M-SAU-RHM-02",
+            "M-GCC-TUR-01"
+          ]
+        },
+        {
+          "label": "Vereinigte Arabische Emirate",
+          "claim_ids": [
+            "M-UAE-THREAT-01",
+            "M-UAE-BUDGET-01",
+            "M-UAE-ACCESS-01",
+            "M-GCC-PROG-01",
+            "M-UAE-PROG-01",
+            "M-UAE-EDGE-01",
+            "M-UAE-EDGE-02",
+            "M-UAE-EDGE-03",
+            "M-PEER-EOS-01",
+            "M-PEER-COYOTE-01"
+          ]
+        },
+        {
+          "label": "Katar",
+          "claim_ids": [
+            "M-QAT-RHM-01",
+            "M-QAT-RHM-02",
+            "M-QAT-RHM-03",
+            "M-QAT-RHM-04",
+            "M-QAT-BARZAN-01",
+            "M-QAT-PROG-01",
+            "M-QAT-PROG-02",
+            "M-GCC-TUR-01"
+          ]
+        },
+        {
+          "label": "Kuwait",
+          "claim_ids": [
+            "M-KWT-THREAT-01",
+            "M-KWT-BUDGET-01",
+            "M-GCC-PROG-01",
+            "M-KWT-PROG-01",
+            "M-KWT-PROG-02"
+          ]
+        },
+        {
+          "label": "Bahrain",
+          "claim_ids": [
+            "M-BHR-THREAT-01",
+            "M-BHR-PROG-01"
+          ]
+        },
+        {
+          "label": "Oman",
+          "claim_ids": [
+            "M-OMN-BUDGET-01",
+            "M-QAT-PROG-02",
+            "M-GCC-THREAT-03"
+          ]
+        },
+        {
+          "label": "Exportkontrolle Deutschland und Schweiz",
+          "claim_ids": [
+            "M-DEU-EXPORT-01",
+            "M-DEU-EXPORT-02",
+            "M-CHE-EXPORT-01",
+            "M-CHE-EXPORT-02"
+          ]
+        },
+        {
+          "label": "Rheinmetall-Präsenz und Lieferfähigkeit Golf (Herstellerangaben gekennzeichnet)",
+          "claim_ids": [
+            "M-RHM-GULF-01",
+            "M-RHM-GULF-02",
+            "M-RHM-CAP-01",
+            "M-RHM-ORDER-01",
+            "M-QAT-RHM-01",
+            "M-SAU-RHM-02"
+          ]
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "flugabwehr",
+      "label": "Flugabwehr – Wettbewerbs- und Nachfragefakten (Markt)",
+      "claim_ids": [
+        "M-RHM-CUAS-01",
+        "M-PEER-KOR-01",
+        "M-PEER-EOS-01",
+        "M-PEER-NASAMS-01",
+        "M-PEER-COYOTE-02",
+        "M-UAE-EDGE-02",
+        "M-GCC-THREAT-05"
+      ]
+    },
+    {
+      "id": "golfstaaten",
+      "label": "Markt und Marktzugang in den Golfstaaten",
+      "claim_ids": [
+        "M-GCC-THREAT-02",
+        "M-SAU-LOCAL-01",
+        "M-UAE-ACCESS-01",
+        "M-GCC-PROG-01",
+        "M-DEU-EXPORT-02",
+        "M-CHE-EXPORT-01",
+        "M-RHM-GULF-02",
+        "M-QAT-RHM-04",
+        "M-SAU-RHM-01"
+      ]
+    }
+  ],
+  "gaps": [
+    {
+      "topic": "Rheinmetall Golf-Kunden 2026",
+      "description": "Kein öffentlicher Beleg für einen 2026 namentlich einem GCC-Staat zugeordneten Rheinmetall-Flugabwehrauftrag gefunden; Skynex-Auftrag Juli 2026 ohne Kundennennung (M-RHM-ORDER-01). CEO-Angaben (ca. 150 Systeme in der Region, Lieferungen ab August) nicht unabhängig bestätigt.",
+      "status": "öffentliche Datenlücke"
+    },
+    {
+      "topic": "Bloomberg-Originale",
+      "description": "Bloomberg-Artikel vom 2026-05-08 und 2026-09-16 (Golf-C-UAS-Ausgaben >5 Mrd. USD inkl. Rheinmetall) nicht zugänglich (HTTP 403); nur Sekundärwiedergabe genutzt bzw. nicht als Beleg verwendet.",
+      "status": "nicht zugänglich"
+    },
+    {
+      "topic": "Zuordnung 210-Mio.-EUR-Auftrag (2019)",
+      "description": "Janes verknüpft den 2019 gemeldeten Skynex-Auftrag eines ungenannten Kunden mit Katar; Rheinmetall hat den Kunden nicht genannt. Nicht als Fakt übernommen.",
+      "status": "offen"
+    },
+    {
+      "topic": "Einsatz Rheinmetall-Systeme in GCC 2026",
+      "description": "Keine öffentlich dokumentierten Einsätze von Skynex/Skyguard/Skyranger gegen iranische Drohnen 2026 in GCC-Staaten gefunden; Fehlen ist keine Aussage zur Wirksamkeit.",
+      "status": "öffentliche Datenlücke"
+    },
+    {
+      "topic": "Schweizer Exportpraxis Golfstaaten",
+      "description": "Ob der Bundesrat/SECO Golfstaaten als in den Iran-Konflikt verwickelt einstuft und ob Bewilligungen (z. B. für Rheinmetall Air Defence AG, Zürich) erteilt, sistiert oder abgelehnt wurden, ist öffentlich nicht belegt.",
+      "status": "öffentliche Datenlücke"
+    },
+    {
+      "topic": "AGG 48 Verlängerung",
+      "description": "Verlängerung bis 2027-09-15 nur über Fachdienst (AWA) mit Verweis auf BAFA-Newsletter belegt; BAFA-Bekanntmachung selbst nicht geöffnet.",
+      "status": "Zweitbeleg offen"
+    },
+    {
+      "topic": "SAMI als regionaler Peer",
+      "description": "Keine geöffnete Quelle belegt ein eigenes oder lizenziertes SAMI-Flugabwehrprodukt; SAMI-Post (X) zu Kooperationsabkommen mit Rheinmetall Italia (WDS 2026) nicht zugänglich (HTTP 402); Tactical-Report-Meldungen zu SAMI–Rheinmetall-C-UAS-Gesprächen und EDGE–Rheinmetall-Skyranger-30-Gesprächen hinter Paywall. SAMI daher nicht als Peer vorgeschlagen.",
+      "status": "nicht zugänglich / offen"
+    },
+    {
+      "topic": "Budgets VAE, Katar, Bahrain, Oman",
+      "description": "Keine belastbaren öffentlichen Verteidigungsbudgetzahlen 2025/2026 für VAE, Katar und Bahrain gefunden (SIPRI ohne VAE; Katar/Bahrain nicht in Top-40); Oman nur Militärlastquote.",
+      "status": "öffentliche Datenlücke"
+    },
+    {
+      "topic": "Korkut-Golfverträge",
+      "description": "Verträge Saudi-Arabien/Katar nur durch anonyme Quellen (MEE) berichtet; keine Bestätigung durch ASELSAN oder Behörden gefunden; ASELSAN-Produktseite nicht erreichbar (404).",
+      "status": "Zweitbeleg offen"
+    },
+    {
+      "topic": "Wettbewerber ohne Golfbeleg",
+      "description": "Diehl IRIS-T SLM/SLS: keine öffentliche Golf-Beschaffung gefunden, daher nicht als Peer vorgeschlagen. LIG Nex1 KM-SAM II (VAE, Saudi-Arabien) ist Mittelstrecke und nur als Programmkontext (M-SAU-PROG-01) erfasst. Anduril (Kuwait) und MBDA Sky Warden (ungenannter Nahost-Kunde) nicht als Peers ausgearbeitet.",
+      "status": "nicht geprüft mit Grund (Scope)"
+    },
+    {
+      "topic": "Rheinmetall-Produktfakten",
+      "description": "Systemdaten Skynex/Skyranger und Lieferaufträge außerhalb GCC liegen beim Portfolio-Modul (parallel). M-RHM-CUAS-01, M-RHM-CAP-01 und M-RHM-ORDER-01 ggf. mit P-Claims abgleichen und per reuse statt Doppelung führen.",
+      "status": "Abgleich durch Hauptagent"
+    },
+    {
+      "topic": "Konfliktstatus zum Stichtag",
+      "description": "Formaler Status der US-Iran-Waffenruhe zum 2026-10-10 nicht durch Primärquelle geklärt; letzte Lageberichte (M-GCC-THREAT-04) zeigen Huthi-Angriffe auf Saudi-Arabien und Tankerangriffe.",
+      "status": "offen"
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Bedrohungslage GCC 2026",
+      "search_terms": [
+        "Iran missile drone attacks Gulf states 2026",
+        "Gulf states Iran attacks October 2026",
+        "ceasefire status"
+      ],
+      "source_ids": [
+        "S-d246fbdc9c4c6b97",
+        "S-2e4f786c41d7b2ee",
+        "S-4abfdb5bf72ddb30",
+        "S-00b3bb9075c00199",
+        "S-3570dec2635e340e",
+        "S-4691f9471b203297",
+        "S-68cd066e40b60677"
+      ],
+      "finding": "Angriffe auf alle sechs GCC-Staaten belegt; Zählungen amtlich/medial.",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Budgets/Lokalisierung",
+      "search_terms": [
+        "SIPRI military expenditure 2025",
+        "Saudi budget Q1 2026 military",
+        "GAMI localization rate",
+        "Tawazun offset"
+      ],
+      "source_ids": [
+        "S-c07effa3f3662a94",
+        "S-13ac2bcc7a8d3bc1",
+        "S-591cad6afbdb6208",
+        "S-ee64de417a6b1930"
+      ],
+      "finding": "Saudi-Arabien, Kuwait, Oman (Quote) belegt; VAE/Katar/Bahrain Lücke.",
+      "status": "geprüft mit Beleg (teilweise Lücke)"
+    },
+    {
+      "topic": "Programme/Beschaffungswege",
+      "search_terms": [
+        "DSCA Gulf 2026 counter-drone",
+        "NASAMS Kuwait",
+        "FS-LIDS UAE Qatar",
+        "Korkut Gulf",
+        "VL MICA Saudi"
+      ],
+      "source_ids": [
+        "S-4c4af0e05b9558f2",
+        "S-d7c95ccbcee5e1ba",
+        "S-a23dcdde6a28b4bb",
+        "S-7a89b412faeaf6ce",
+        "S-346bbac409450892",
+        "S-1e47bb01c749039c",
+        "S-21860c781614d433",
+        "S-873f7366346b9261",
+        "S-1bc2890891ce328b"
+      ],
+      "finding": "US-FMS dominiert öffentlich sichtbare Beschaffung; türkische und australische Anbieter mit Golfaufträgen.",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Rheinmetall in GCC",
+      "search_terms": [
+        "Rheinmetall Saudi Arabia 2026",
+        "Rheinmetall UAE EDGE Skyranger",
+        "Qatar Skynex",
+        "Rheinmetall Barzan",
+        "Rheinmetall MAZ Skyguard",
+        "Papperger Middle East demand"
+      ],
+      "source_ids": [
+        "S-6cd5701123f00a73",
+        "S-3b004b2cc914ddc4",
+        "S-3c0b72dcdb4a669f",
+        "S-48538d413f65c35e",
+        "S-2de1e709dd2666d5",
+        "S-d401a7e147a6b2d4",
+        "S-d5c3acd69d302e6f",
+        "S-3cb9686bfe911020",
+        "S-eec5e9e91d4acc36",
+        "S-aaaf59c399a65ff2",
+        "S-4ea803eb7cb384c9"
+      ],
+      "finding": "Katar/Saudi-Arabien belegt; VAE nur Kooperation EDGE; 2026er Golfaufträge nicht namentlich belegt.",
+      "status": "geprüft mit Beleg (Lücken dokumentiert)"
+    },
+    {
+      "topic": "Exportkontrolle DE/CH",
+      "search_terms": [
+        "AGG 48 Golfstaaten",
+        "AGG 48 Verlängerung",
+        "Schweiz Kriegsmaterial Iran-Konflikt",
+        "Abstimmung KMG 2026"
+      ],
+      "source_ids": [
+        "S-02f2d309d4be9a72",
+        "S-7e9c5adc66d1d3eb",
+        "S-bd063e8375865fb5",
+        "S-d1be5243ec1023a0"
+      ],
+      "finding": "DE: Erleichterung per AGG 48 belegt; CH: Konfliktklausel, Golfstaaten-Einstufung offen.",
+      "status": "geprüft mit Beleg (CH-Golf Lücke)"
+    },
+    {
+      "topic": "Wettbewerber Technologie/Evidenz",
+      "search_terms": [
+        "Korkut specifications",
+        "Slinger Ukraine",
+        "NASAMS Ukraine drones",
+        "Coyote combat kills",
+        "VL MICA NG UAV",
+        "Skyknight testing"
+      ],
+      "source_ids": [
+        "S-c44a53b9b7fed3f5",
+        "S-0ee334ddc9eec2c2",
+        "S-16987d30779651f5",
+        "S-0e7ad928d9638007",
+        "S-3d92fa89ab4d601e",
+        "S-06318d4e0dd58da5",
+        "S-b6faabdb5b5fbeb3",
+        "S-32a1f2cd50c3b5ae",
+        "S-829071fd179d4705",
+        "S-ef86c664e3ccb75b",
+        "S-7a92bf0944771ac1",
+        "S-ef46277a93dc371d"
+      ],
+      "finding": "Profile und Evidenz je Peer erfasst; viele technische Werte sind Herstellerangaben.",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Nicht zugängliche Quellen",
+      "search_terms": [
+        "Bloomberg Rheinmetall Mideast demand",
+        "IISS Defending the skies of the Arab Gulf states",
+        "AGBI Gulf spending",
+        "Kongsberg press releases",
+        "SAMI X post",
+        "Tactical Report"
+      ],
+      "source_ids": [],
+      "finding": "HTTP 403/402/Paywall bzw. JavaScript-Schutz; nicht als Beleg verwendet.",
+      "status": "nicht zugänglich"
+    }
+  ]
+}
