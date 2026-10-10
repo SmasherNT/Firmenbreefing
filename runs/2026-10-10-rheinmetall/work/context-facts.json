@@ -1,0 +1,1203 @@
+{
+  "schema_version": 1,
+  "mode": "facts-v2",
+  "role": "context",
+  "run_id": "2026-10-10-rheinmetall",
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-10",
+  "scope": "Firmenbasis Rheinmetall-Konzern (inkl. Rheinmetall Air Defence AG, Zürich), Segmentrolle Flugabwehr, Timeline 1.1.2026-10.10.2026 mit Bezug Flugabwehr/Golfstaaten, berufliches Profil des aktuellen Hauptverantwortlichen für das Flugabwehrgeschäft",
+  "status": "teilweise",
+  "document_scope": "Unternehmensgrenze: Rheinmetall AG, Düsseldorf, Konzern inkl. Rheinmetall Air Defence AG (Zürich). Stichtag 10.10.2026; alle Quellen am 10.10.2026 abgerufen. Timeline-Zeitraum: Geschäftsjahr 2026 bis Stichtag (1.1.2026-10.10.2026), ältere Daten nur für Werdegang/Registerhistorie. Kennzahlen: jüngste Veröffentlichung ist der Halbjahresfinanzbericht 2026 (6.8.2026); Q3-Mitteilung lag zum Stichtag nicht vor. Produkte, Netzwerkbeziehungen und Golf-Marktdaten sind den Rollen portfolio, cluster und market zugeordnet.",
+  "shared_limitations": [
+    "Unternehmensangaben (Pressemitteilungen, Berichte, Präsentationen) sind Eigenangaben der Rheinmetall AG; Prognosen und Ziele sind keine realisierten Werte.",
+    "Mediale Wiedergaben von CEO-Aussagen bestätigen den Inhalt der Aussage, nicht unabhängig die beschriebenen Einsätze oder Lieferungen.",
+    "Keine privaten Personendaten erfasst; Wohnorte aus Registerpublikationen und gesundheitliche/familiäre Angaben aus Interviews bewusst nicht übernommen."
+  ],
+  "claims": [
+    {
+      "id": "T-CTX-01",
+      "statement": "Laut Rheinmetall-Pressemitteilung zum Geschäftsbericht 2025 erzielte der Konzern (fortgeführte Aktivitäten) 2025 einen Umsatz von 9.935 Mio. EUR (+29 %), ein operatives Ergebnis von 1.841 Mio. EUR (Marge 18,5 %) und einen Rheinmetall Backlog von 63,8 Mrd. EUR; das zivile Automotive-Geschäft wird als aufgegebener Geschäftsbereich zum Verkauf geführt.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-9610b6cf1ddab64f"
+      ],
+      "evidence": "Auszug: Consolidated sales up significantly by 29% to €9,935 million ... Operating result improves by 33% to €1,841 million ... Rheinmetall Backlog at a new record level of €63.8 billion",
+      "location": "S. 1, Abschnitt 'Fiscal year 2025' und Hinweis zu discontinued operations",
+      "uncertainty": "Konzernangaben; Vorjahreswerte nach IFRS 5 angepasst.",
+      "proposed_depth": "A",
+      "depth_reason": "Kennzahl der Firmenbasis"
+    },
+    {
+      "id": "T-CTX-02",
+      "statement": "Laut Halbjahres-Pressemitteilung vom 6.8.2026 stieg der Konzernumsatz im 1. Halbjahr 2026 um 39 % auf 5.227 Mio. EUR, das operative Ergebnis auf 786 Mio. EUR (Marge 15,0 %); Rheinmetall Nomination 16,2 Mrd. EUR, Rheinmetall Backlog 80,5 Mrd. EUR zum 30.6.2026; der Auslandsanteil am Umsatz betrug 62 %.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-1131fc174fb33fc5"
+      ],
+      "evidence": "Auszug: consolidated sales climbed by €1,477 million or 39% year on year to €5,227 million ... the international share amounts to 62% ... Rheinmetall Backlog increased significantly to €80.5 billion",
+      "location": "S. 1-2, Abschnitte 'Key facts' und 'Rheinmetall Group: sales growth of 39%'",
+      "uncertainty": "Ungeprüfter Halbjahresabschluss; Q3-2026-Zahlen zum Stichtag noch nicht veröffentlicht.",
+      "proposed_depth": "A",
+      "depth_reason": "Aktuellste Konzernkennzahl",
+      "event_date": "2026-08-06"
+    },
+    {
+      "id": "T-CTX-03",
+      "statement": "Rheinmetall hat am 6.8.2026 die Jahresprognose 2026 wegen des Abbruchs des Fregattenprogramms F126 auf 13,7-14,2 Mrd. EUR Umsatz gesenkt (zuvor 14,0-14,5 Mrd. EUR; minus 300 Mio. EUR im Marinegeschäft) und erwartet weiterhin eine operative Marge von rund 19 %.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-1131fc174fb33fc5"
+      ],
+      "evidence": "Auszug: The Group now expects sales for the 2026 fiscal year to be in the range of €13.7 billion to €14.2 billion ... operating result margin is expected to be around 19%",
+      "location": "S. 1 und S. 4, Abschnitt 'Outlook: annual sales guidance adjusted slightly'",
+      "uncertainty": "Prognose, keine realisierten Werte.",
+      "proposed_depth": "B",
+      "depth_reason": "Prognose-Hintergrund",
+      "event_date": "2026-08-06",
+      "event_status": "angekündigt"
+    },
+    {
+      "id": "T-CTX-04",
+      "statement": "Mit Wirkung zum 1.1.2026 wurde die Division Electronic Solutions in die Divisionen Air Defence und Digital Systems aufgeteilt; Rheinmetall berichtet 2026 in fünf Segmenten: Vehicle Systems, Weapon and Ammunition, Air Defence, Digital Systems und Naval Systems (Naval Systems nach Übernahme von NVL, Closing 27.2.2026).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a57c168b042d9b28",
+        "S-9610b6cf1ddab64f",
+        "S-5a9f539c26c5885f"
+      ],
+      "evidence": "Auszug (Rheinmetall AG (Halbjahresfinanzbericht)): Effective 1 January 2026, the Electronic Solutions division was split into the Air Defence and Digital Systems divisions ... The Air Defence division focusses on bundling and further developing capabilities in the field of air defence.; Auszug (Rheinmetall AG (Pressemitteilung)): By January 1, 2026 the group structure has been redesigned. In addition to Vehicle Systems and Weapon and Ammunition, the new segments Air Defence, Digital Systems and Naval Systems have been established.; Paraphrase (Europäische Sicherheit & Technik (esut.de)): Der operative Bereich umfasst seit Jahresbeginn fünf Divisionen; Air Defence umfasst den stark wachsenden Bereich Luftverteidigung u. a. mit Skyranger und Skynex.",
+      "location": "Rheinmetall AG (Halbjahresfinanzbericht): PDF-S. 8, Abschnitt 'Changes to the structure of the Group'; Rheinmetall AG (Pressemitteilung): S. 4, Abschnitt 'Rheinmetall Group guidance for 2026' mit Fußnote 1; Europäische Sicherheit & Technik (esut.de): Artikeltext, Absätze 1 und 'Air Defence'",
+      "evidence_items": [
+        {
+          "source_id": "S-a57c168b042d9b28",
+          "text": "Effective 1 January 2026, the Electronic Solutions division was split into the Air Defence and Digital Systems divisions ... The Air Defence division focusses on bundling and further developing capabilities in the field of air defence.",
+          "mode": "Auszug",
+          "location": "PDF-S. 8, Abschnitt 'Changes to the structure of the Group'"
+        },
+        {
+          "source_id": "S-9610b6cf1ddab64f",
+          "text": "By January 1, 2026 the group structure has been redesigned. In addition to Vehicle Systems and Weapon and Ammunition, the new segments Air Defence, Digital Systems and Naval Systems have been established.",
+          "mode": "Auszug",
+          "location": "S. 4, Abschnitt 'Rheinmetall Group guidance for 2026' mit Fußnote 1"
+        },
+        {
+          "source_id": "S-5a9f539c26c5885f",
+          "text": "Der operative Bereich umfasst seit Jahresbeginn fünf Divisionen; Air Defence umfasst den stark wachsenden Bereich Luftverteidigung u. a. mit Skyranger und Skynex.",
+          "mode": "Paraphrase",
+          "location": "Artikeltext, Absätze 1 und 'Air Defence'"
+        }
+      ],
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Trägt Rolle der Flugabwehr in der Segmentstruktur",
+      "event_date": "2026-01-01"
+    },
+    {
+      "id": "T-CTX-05",
+      "statement": "Laut Halbjahresfinanzbericht umfasst die Organisationsstruktur zum 30.6.2026 sieben Divisionen, die direkt vom Vorstand der Rheinmetall AG geführt werden (Vehicle Systems Europe, Vehicle Systems International und U.S. America bilden zusammen ein Segment); die neuen Divisionen haben jeweils eine eigene Divisionsleitung unterhalb des Vorstands.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a57c168b042d9b28"
+      ],
+      "evidence": "Auszug: Rheinmetall's organisational structure comprises seven divisions managed directly by the Executive Board of Rheinmetall AG ... The new divisions have each their own divisional management below the Executive Board.",
+      "location": "PDF-S. 38 (Anhang, Segmentberichterstattung) und PDF-S. 8",
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Abgrenzung Divisionsleitung vs. Vorstand"
+    },
+    {
+      "id": "T-CTX-06",
+      "statement": "Der Vorstand der Rheinmetall AG besteht laut Unternehmenswebsite (Abruf 10.10.2026) aus Armin Papperger (Vorsitzender), Klaus Neumann (CFO), Dr. Vera Saal (CHRO/Arbeitsdirektorin) und René Gansauge (COO); ein eigenes Vorstandsressort für Air Defence ist dort nicht ausgewiesen.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a8887f614647359f"
+      ],
+      "evidence": "Paraphrase: Vorstandsübersicht nennt Papperger (Vorsitzender des Vorstands), Neumann (CFO, Finanzbereich), Dr. Saal (CHRO und Arbeitsdirektorin, Ressort Personal), Gansauge (COO).",
+      "location": "Seite 'Der Vorstand der Rheinmetall AG', Personenabschnitte",
+      "uncertainty": "Webseite ohne Stand-Datum.",
+      "proposed_depth": "A",
+      "depth_reason": "Personenidentität/aktuelle Rolle"
+    },
+    {
+      "id": "T-CTX-07",
+      "statement": "Laut Rheinmetall bündelt die Division Air Defence die bodengebundene Luftverteidigung von Entwicklung und Produktion bis Simulation, Training und Service; sie ist in die Business Units Systems and Effectors sowie Systems and Sensors gegliedert und hat zentrale Standorte in Zürich (Competence Center Air Defence), Rom (Competence Center Radar) und Neuss (Production Site).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3ef169e9e35e0c9a"
+      ],
+      "evidence": "Auszug: Die Division Air Defence verfügt über zentrale Standorte in Zürich (Competence Center Air Defence), Rom (Competence Center Radar) und Neuss (Production Site).",
+      "location": "Divisionsseite Air Defence, Abschnitte Einleitung und 'Standorte'",
+      "uncertainty": "Webseite ohne Stand-Datum; Produktzuordnung liegt bei portfolio.",
+      "proposed_depth": "B",
+      "depth_reason": "Strukturhintergrund"
+    },
+    {
+      "id": "T-CTX-08",
+      "statement": "Das Segment Air Defence erzielte im 1. Halbjahr 2026 einen Umsatz von 478 Mio. EUR (Vorjahr 295 Mio. EUR, +62 %), ein operatives Ergebnis von 76 Mio. EUR (Marge 16,0 %), eine Rheinmetall Nomination von 1.534 Mio. EUR und einen Rheinmetall Backlog von 4.218 Mio. EUR zum 30.6.2026; größere Einzelaufträge betrafen weitere Skyranger- und Skynex-Systeme für einen europäischen und einen internationalen Kunden.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-1131fc174fb33fc5",
+        "S-a57c168b042d9b28"
+      ],
+      "evidence": "Auszug (Rheinmetall AG (Pressemitteilung)): Air Defence ... increased its sales by €183 million to €478 million ... Rheinmetall Nomination increased ... to €1,534 million. Major individual orders related to the delivery of further Skyranger and Skynex air defence systems to one European and one international customer. Rheinmetall Backlog amounted to €4,218 million; Paraphrase (Rheinmetall AG (Halbjahresfinanzbericht)): Kennzahlentabelle Air Defence: Umsatz H1 2026 478 (H1 2025 295) Mio. EUR, Nomination 1.534 (249) Mio. EUR.",
+      "location": "Rheinmetall AG (Pressemitteilung): S. 3, Abschnitt 'Air Defence: Rheinmetall Nomination increases sixfold'; Rheinmetall AG (Halbjahresfinanzbericht): PDF-S. 17, Tabelle 'Key figures Air Defence'",
+      "evidence_items": [
+        {
+          "source_id": "S-1131fc174fb33fc5",
+          "text": "Air Defence ... increased its sales by €183 million to €478 million ... Rheinmetall Nomination increased ... to €1,534 million. Major individual orders related to the delivery of further Skyranger and Skynex air defence systems to one European and one international customer. Rheinmetall Backlog amounted to €4,218 million",
+          "mode": "Auszug",
+          "location": "S. 3, Abschnitt 'Air Defence: Rheinmetall Nomination increases sixfold'"
+        },
+        {
+          "source_id": "S-a57c168b042d9b28",
+          "text": "Kennzahlentabelle Air Defence: Umsatz H1 2026 478 (H1 2025 295) Mio. EUR, Nomination 1.534 (249) Mio. EUR.",
+          "mode": "Paraphrase",
+          "location": "PDF-S. 17, Tabelle 'Key figures Air Defence'"
+        }
+      ],
+      "uncertainty": "Vorjahreswerte als vergleichbare Segmentwerte nach neuer Struktur; Kunden nicht namentlich genannt.",
+      "proposed_depth": "A",
+      "depth_reason": "Zentrale Kennzahl Flugabwehr",
+      "event_date": "2026-08-06"
+    },
+    {
+      "id": "T-CTX-09",
+      "statement": "Zum 30.6.2026 beschäftigte das Segment Air Defence 1.780 Mitarbeitende (FTE; Vorjahr 1.368), der Konzern (fortgeführte Aktivitäten) 29.636 FTE.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a57c168b042d9b28"
+      ],
+      "evidence": "Paraphrase: Segmenttabelle, Zeile 'Employees 30/6 (FTE)': Air Defence 1,780 (Vorjahr 1,368); Rheinmetall Group 29,636 (23,892).",
+      "location": "PDF-S. 30, Segmentbericht, Zeile 'Employees 30/6 (FTE)'",
+      "uncertainty": "Spaltenzuordnung aus Tabellenextraktion; Vorjahreswerte nach neuer Segmentstruktur.",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzende Größenangabe"
+    },
+    {
+      "id": "T-CTX-10",
+      "statement": "Für 2026 prognostiziert Rheinmetall für Air Defence einen Umsatz von 0,9-1,0 Mrd. EUR und eine operative Marge von rund 19 % (Vergleichswert 2025: 769 Mio. EUR Umsatz, 17,4 % Marge).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a57c168b042d9b28"
+      ],
+      "evidence": "Paraphrase: Prognosetabelle: Air Defence Sales EUR 0.9 billion to EUR 1.0 billion (2025: EUR 769 million); Operating result margin around 19% (2025: 17.4%).",
+      "location": "PDF-S. 22, Abschnitt 'Current annual guidance', Tabelle",
+      "uncertainty": "Prognose; 2025er Wert ist rückwirkend der neuen Segmentabgrenzung zugeordnet.",
+      "proposed_depth": "A",
+      "depth_reason": "Trägt Größenordnung des Flugabwehrgeschäfts"
+    },
+    {
+      "id": "T-CTX-11",
+      "statement": "In der Investorenpräsentation (September 2026) nennt Rheinmetall für Air Defence ein Umsatzpotenzial von 3-4 Mrd. EUR für 2030, zählt 'Large replacement projects in MENA region' zu den Top-Projekten (neben ESSI/Skyranger, NNbS und Ukraine) und gibt für die kanonenbasierte Flugabwehr 'Superior cost efficiency proven in Ukraine and Gulf states' an.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-1f77cb6f898210ce"
+      ],
+      "evidence": "Auszug: 2030 Sales potential €3-4bn ... TOP PROJECTS ... Large replacement projects in MENA region ... Superior cost efficiency proven in Ukraine and Gulf states",
+      "location": "PDF-S. 38, 39 und 42, Abschnitt 'Five segments: Air Defence'",
+      "uncertainty": "Unternehmensziel/Eigendarstellung; MENA-Projekte nicht einzeln benannt.",
+      "proposed_depth": "A",
+      "depth_reason": "Golfstaaten-Bezug in Primärquelle"
+    },
+    {
+      "id": "T-CTX-12",
+      "statement": "Flugabwehrbezogenes Geschäft liegt nicht ausschließlich im Segment Air Defence: Laut Halbjahres-Pressemitteilung beruhte das Umsatzwachstum von Digital Systems im 1. Halbjahr 2026 unter anderem auf dem Hochlauf der Projekte für Nah- und Nächstbereichsschutz (short- and very short-range air defence).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-1131fc174fb33fc5"
+      ],
+      "evidence": "Auszug: The sales growth is essentially to the TaWAN and D-LBO digitalisation projects and to the ramp-up of the short- and very short-range air defence projects.",
+      "location": "S. 3, Abschnitt 'Digital Systems: significant improvement in Rheinmetall Backlog'",
+      "uncertainty": "Konkrete Projekte und Umsatzanteil nicht genannt.",
+      "proposed_depth": "A",
+      "depth_reason": "Abgrenzung Verantwortungsbereich Flugabwehr"
+    },
+    {
+      "id": "T-CTX-13",
+      "statement": "Bis Ende 2025 war Flugabwehr Teil der Division Electronic Solutions (2025: Umsatz 2.504 Mio. EUR); Rheinmetall nennt für 2025 Umsatzbeiträge aus der Lieferung weiterer Skyranger- und Skynex-Systeme an europäische Kunden.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-9610b6cf1ddab64f"
+      ],
+      "evidence": "Auszug: Electronic Solutions, with products in the digitalisation sector of the armed forces, infantry equipment, air defence and simulation, increased its sales in the 2025 fiscal year to €2,504 million",
+      "location": "S. 3, Abschnitt 'Electronic Solutions: Further increase in sales'",
+      "uncertainty": "",
+      "proposed_depth": "B",
+      "depth_reason": "Historischer Strukturhintergrund"
+    },
+    {
+      "id": "T-CTX-14",
+      "statement": "Die Rheinmetall Air Defence AG ist laut Schweizer Handelsregister eine Aktiengesellschaft mit Sitz in Zürich (UID CHE-101.403.861, Status existierend); Zweck u. a. Forschung, Entwicklung, Herstellung und Vertrieb militärischer und sicherheitstechnischer Systemlösungen und Produkte.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-7a58ddb6fbab572c"
+      ],
+      "evidence": "Auszug: Die Gesellschaft bezweckt die Forschung und Entwicklung, die Herstellung und den Vertrieb von militärischen und sicherheitstechnischen Systemlösungen und Produkten",
+      "location": "Zefix-Datensatz, Felder name/uid/legalSeat/status/purpose",
+      "uncertainty": "",
+      "proposed_depth": "B",
+      "depth_reason": "Identität Tochtergesellschaft"
+    },
+    {
+      "id": "T-CTX-20",
+      "statement": "Laut Rheinmetall-Halbjahresfinanzbericht belastet seit dem ersten Angriff der USA und Israels auf Iran am 28.2.2026 der Krieg im Nahen Osten die Weltwirtschaft; Lieferausfälle von Gas und Öl aus den Golfstaaten infolge iranischer Raketenangriffe auf Energieanlagen werden genannt.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a57c168b042d9b28"
+      ],
+      "evidence": "Auszug: Since the first attack by the USA and Israel on Iran on 28 February 2026, the global economy has been negatively impacted by the acts of war in the Middle East ... lack of deliveries from the Gulf states as a result of damage to energy facilities in the wake of Iranian missile attacks.",
+      "location": "PDF-S. 7, Abschnitt 'Global economy with weak momentum'",
+      "uncertainty": "Darstellung des Unternehmens; keine unabhängige Lagequelle in diesem Modul geöffnet (Marktrolle).",
+      "proposed_depth": "B",
+      "depth_reason": "Kontext Golfregion",
+      "event_date": "2026-02-28"
+    },
+    {
+      "id": "T-CTX-21",
+      "statement": "Bei der Bilanzpressekonferenz am 11.3.2026 sagte CEO Armin Papperger laut defence-network, Rheinmetall-Flugabwehrsysteme (u. a. 35-mm-Zwillingskanone, Millennium Gun, 30-mm-Revolverkanone) seien im Nahen Osten gegen iranische Drohnen im Einsatz und hätten über ein Wochenende weit über 100 Drohnen abgeschossen; die Länder dürfe er nicht nennen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-d6967131447345e6"
+      ],
+      "evidence": "Auszug: es sind weit über 100 Drohnen mit unserem System abgeschossen worden, nur über das Wochenende in Middle East ... wir dürfen die Länder nicht nennen",
+      "location": "Artikel vom 11.3.2026, Absätze 1 und 'Bedarf zur Drohnenabwehr im Nahen Osten'",
+      "uncertainty": "CEO-Aussage, unabhängig nicht bestätigt; Länder/Betreiber nicht genannt.",
+      "proposed_depth": "A",
+      "depth_reason": "Golfstaaten-Einsatzbehauptung",
+      "event_date": "2026-03-11"
+    },
+    {
+      "id": "T-CTX-22",
+      "statement": "Papperger sagte im NZZ-Interview (11.3.2026), mehrere Golfstaaten hätten Rheinmetall-Flugabwehrsysteme, die auch in der Schweiz gebaut werden, im Einsatz, allerdings 'viel zu wenige'; laut ARIVA.DE bestätigte Rheinmetall verstärkte Anfragen aus der Golfregion nach Flugabwehrsystemen und Mittelkalibermunition.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-549a5efe1b3c131f",
+        "S-1fc7c3c60663e6b3"
+      ],
+      "evidence": "Auszug (Neue Zürcher Zeitung): Mehrere Golfstaaten haben unsere Flugabwehrsysteme, die auch in der Schweiz gebaut werden, sehr erfolgreich im Einsatz. Allerdings haben sie viel zu wenige.; Paraphrase (ARIVA.DE): Rheinmetall bestätigte laut Artikel eine zunehmende Nachfrage aus der Golfregion mit verstärkten Anfragen nach Flugabwehrsystemen und Mittelkalibermunition.",
+      "location": "Neue Zürcher Zeitung: Interview, Frage 'Wie gut sind die Golfstaaten mit Drohnen- und Raketenabwehr ausgestattet?'; ARIVA.DE: Abschnitt 'Rheinmetall-Systeme im Einsatz: Europäische Anbieter rücken in den Fokus'",
+      "evidence_items": [
+        {
+          "source_id": "S-549a5efe1b3c131f",
+          "text": "Mehrere Golfstaaten haben unsere Flugabwehrsysteme, die auch in der Schweiz gebaut werden, sehr erfolgreich im Einsatz. Allerdings haben sie viel zu wenige.",
+          "mode": "Auszug",
+          "location": "Interview, Frage 'Wie gut sind die Golfstaaten mit Drohnen- und Raketenabwehr ausgestattet?'"
+        },
+        {
+          "source_id": "S-1fc7c3c60663e6b3",
+          "text": "Rheinmetall bestätigte laut Artikel eine zunehmende Nachfrage aus der Golfregion mit verstärkten Anfragen nach Flugabwehrsystemen und Mittelkalibermunition.",
+          "mode": "Paraphrase",
+          "location": "Abschnitt 'Rheinmetall-Systeme im Einsatz: Europäische Anbieter rücken in den Fokus'"
+        }
+      ],
+      "uncertainty": "Unternehmensaussagen in Medien; welche Golfstaaten und welche Systeme nicht genannt; ARIVA nennt keine Originalquelle.",
+      "proposed_depth": "A",
+      "depth_reason": "Golfstaaten-Präsenzaussage",
+      "event_date": "2026-03-11"
+    },
+    {
+      "id": "T-CTX-23",
+      "statement": "Am 15.6.2026 gaben Rheinmetall und LIG Defense & Aerospace (Südkorea) eine strategische Partnerschaft bekannt, um LIGs Mittel- und Langstrecken-Flugabwehrsysteme in Europa zu lokalisieren, weiterzuentwickeln und gemeinsam mit Rheinmetalls VSHORAD zu vermarkten sowie SHORAD-Flugkörper gemeinsam zu entwickeln.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-2eda3f58ea36842d"
+      ],
+      "evidence": "Auszug: Rheinmetall and LIG D&A will localize, further develop and market LIG D&A's medium- and long-range air defence (MRAD / LRAD) missile systems in Europe in close conjunction with Rheinmetall's very short-range air defence (VSHORAD).",
+      "location": "Pressemitteilung vom 15.6.2026, Key facts und Absatz 1",
+      "uncertainty": "Absichts-/Partnerschaftserklärung; Detailbeziehung bei cluster.",
+      "proposed_depth": "B",
+      "depth_reason": "Ereignis-Hintergrund; Kante ggf. im Cluster",
+      "event_date": "2026-06-15",
+      "event_status": "angekündigt"
+    },
+    {
+      "id": "T-CTX-24",
+      "statement": "Am 2.7.2026 meldete Rheinmetall einen im 2. Quartal 2026 gebuchten Auftrag über vier Skynex-Systeme im Wert von mehreren hundert Millionen Euro von einem namentlich nicht genannten internationalen Erstkunden; Generalunternehmer ist Rheinmetall Italia.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-b003618b3ae9eba2"
+      ],
+      "evidence": "Auszug: The overall scope of the contract encompasses the delivery of four complete Skynex systems, with a total execution timeline of 39 months ... Rheinmetall Italia is acting as the prime contractor",
+      "location": "Pressemitteilung vom 2.7.2026, Key facts und Absätze 1-3",
+      "uncertainty": "Kunde/Land nicht genannt; Golfstaaten-Bezug nicht belegt.",
+      "proposed_depth": "A",
+      "depth_reason": "Wesentlicher Kundenauftrag Flugabwehr",
+      "event_date": "2026-07-02",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "T-CTX-25",
+      "statement": "Rheinmetall Electronics GmbH erwarb Anfang Juli 2026 weitere 60 % an der Rheinmetall Arabia Simulation and Training LLC (RAST), Riad, Saudi-Arabien, hält damit 100 % und konsolidiert RAST ab Juli 2026 voll im Segment Digital Systems (Kaufpreiszahlung 81 Mio. EUR).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a57c168b042d9b28"
+      ],
+      "evidence": "Auszug: Rheinmetall Electronics GmbH, based in Bremen, acquired a further 60% of the shares in its former at-equity-accounted investment, Rheinmetall Arabia Simulation and Training LLC (RAST), Riyadh, Saudi Arabia, at the beginning of July 2026.",
+      "location": "PDF-S. 43, Anhang, 'Rheinmetall Electronics acquires further shares in Rheinmetall Arabia Simulation and Training'",
+      "uncertainty": "Ereignis nach Bilanzstichtag; genaues Datum nur 'Anfang Juli 2026'. Eigentumskante gehört zum Cluster.",
+      "proposed_depth": "A",
+      "depth_reason": "Eigentum/Kontrolle Golfstaat",
+      "event_status": "Vollzug laut Unternehmen berichtet"
+    },
+    {
+      "id": "T-CTX-26",
+      "statement": "Am 10.7.2026 meldete Rheinmetall den ersten Auftrag Kuwaits für das Schiffsschutz-/Täuschkörpersystem MASS (acht Schiffe; Gesamtwert im mittleren zweistelligen Mio.-EUR-Bereich inkl. Omnitrap-Munition; gebucht im 2. Quartal 2026; Lieferung 2026-2029).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a831015ab01561c0"
+      ],
+      "evidence": "Auszug: Rheinmetall is supplying the Kuwaiti Naval Forces with Multi Ammunition Softkill Systems (MASS). This is the first delivery of the decoy launcher to Kuwait. A total of eight vessels will be equipped",
+      "location": "Pressemitteilung vom 10.7.2026, Key facts und Absatz 1",
+      "uncertainty": "Marine-Selbstschutz, nicht Segment Air Defence; Segmentzuordnung nicht angegeben.",
+      "proposed_depth": "B",
+      "depth_reason": "Golfstaaten-Auftrag als Ereignis",
+      "event_date": "2026-07-10",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "H-KOE-01",
+      "statement": "Laut esut.de (4.9.2026, unter Berufung auf unternehmensinterne Informationen) wird Roman Köhne zum 1.10.2026 CEO der Rheinmetall-Division Air Defence und folgt auf Oliver Dürr; Inside Paradeplatz berichtete bereits am 26.8.2026 ohne Namensnennung, dass am 1. Oktober ein Vertreter der Konzernzentrale die Führung von Rheinmetall Air Defence übernehme.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-5a9d049f8f71abd3",
+        "S-f31ef17ae4326f52"
+      ],
+      "evidence": "Auszug (Europäische Sicherheit & Technik (esut.de)): Nach unternehmensinternen Informationen wird Roman Köhne zum 1. Oktober CEO der Rheinmetall-Division Air Defence. Er folgt Oliver Dürr; Auszug (Inside Paradeplatz): Schon am 1. Oktober übernimmt ein Gesandter der Rheinmetall-Zentrale das Kommando.",
+      "location": "Europäische Sicherheit & Technik (esut.de): Artikel vom 4.9.2026, Absatz 1; Inside Paradeplatz: Artikel vom 26.8.2026, Einleitung",
+      "evidence_items": [
+        {
+          "source_id": "S-5a9d049f8f71abd3",
+          "text": "Nach unternehmensinternen Informationen wird Roman Köhne zum 1. Oktober CEO der Rheinmetall-Division Air Defence. Er folgt Oliver Dürr",
+          "mode": "Auszug",
+          "location": "Artikel vom 4.9.2026, Absatz 1"
+        },
+        {
+          "source_id": "S-f31ef17ae4326f52",
+          "text": "Schon am 1. Oktober übernimmt ein Gesandter der Rheinmetall-Zentrale das Kommando.",
+          "mode": "Auszug",
+          "location": "Artikel vom 26.8.2026, Einleitung"
+        }
+      ],
+      "uncertainty": "Nur sekundär belegt; keine Rheinmetall-Pressemitteilung und kein Handelsregistereintrag zu Köhne gefunden; Amtsantritt am 1.10.2026 nicht durch Primärquelle bestätigt.",
+      "proposed_depth": "A",
+      "depth_reason": "Personenidentität/aktuelle Rolle, nur sekundär belegt",
+      "event_date": "2026-10-01",
+      "event_status": "angekündigt"
+    },
+    {
+      "id": "H-KOE-02",
+      "statement": "Vor dem Wechsel führte Roman Köhne die Division Weapon and Ammunition: Rheinmetall-Pressemitteilungen bezeichnen ihn am 5.1.2026 als 'Head of Rheinmetall's Weapons and Munitions division', am 17.6.2026 als 'Head of Division Weapon and Ammunition' und am 18.6.2026 als 'CEO of Rheinmetall's Weapon and Ammunition Division'; laut esut übernahm er diese Funktion 2025.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-faa22e3546ff37b9",
+        "S-63879230d36c7828",
+        "S-d33dad308bfc2b33",
+        "S-5a9d049f8f71abd3"
+      ],
+      "evidence": "Auszug (Rheinmetall AG (Pressemitteilung)): said Roman Köhne, Head of Rheinmetall's Weapons and Munitions division.; Auszug (Rheinmetall AG (Pressemitteilung)): says Roman Köhne, Head of Division Weapon and Ammunition, Rheinmetall.; Auszug (Rheinmetall AG (Pressemitteilung)): The MoU, signed by GA-EMS President Scott Forney and the CEO of Rheinmetall's Weapon and Ammunition Division, Roman Köhne; Auszug (Europäische Sicherheit & Technik (esut.de)): 2025 übernahm er die Führung der Division Weapon and Ammunition.",
+      "location": "Rheinmetall AG (Pressemitteilung): Pressemitteilung vom 5.1.2026, Zitatabsatz; Rheinmetall AG (Pressemitteilung): Pressemitteilung vom 17.6.2026, Zitatabsatz; Rheinmetall AG (Pressemitteilung): PDF S. 1, Absatz zur MoU-Unterzeichnung; Europäische Sicherheit & Technik (esut.de): Artikel vom 4.9.2026, Absatz 2",
+      "evidence_items": [
+        {
+          "source_id": "S-faa22e3546ff37b9",
+          "text": "said Roman Köhne, Head of Rheinmetall's Weapons and Munitions division.",
+          "mode": "Auszug",
+          "location": "Pressemitteilung vom 5.1.2026, Zitatabsatz"
+        },
+        {
+          "source_id": "S-63879230d36c7828",
+          "text": "says Roman Köhne, Head of Division Weapon and Ammunition, Rheinmetall.",
+          "mode": "Auszug",
+          "location": "Pressemitteilung vom 17.6.2026, Zitatabsatz"
+        },
+        {
+          "source_id": "S-d33dad308bfc2b33",
+          "text": "The MoU, signed by GA-EMS President Scott Forney and the CEO of Rheinmetall's Weapon and Ammunition Division, Roman Köhne",
+          "mode": "Auszug",
+          "location": "PDF S. 1, Absatz zur MoU-Unterzeichnung"
+        },
+        {
+          "source_id": "S-5a9d049f8f71abd3",
+          "text": "2025 übernahm er die Führung der Division Weapon and Ammunition.",
+          "mode": "Auszug",
+          "location": "Artikel vom 4.9.2026, Absatz 2"
+        }
+      ],
+      "uncertainty": "Genaues Antrittsdatum 2025 nicht in Primärquelle belegt; Nachfolge in Weapon and Ammunition nicht öffentlich gefunden.",
+      "proposed_depth": "A",
+      "depth_reason": "Beruflicher Werdegang, aktuelle Vorfunktion"
+    },
+    {
+      "id": "H-KOE-03",
+      "statement": "Laut esut war Köhne nach seinem Eintritt bei Rheinmetall mit Führungsaufgaben in der Konzernzentrale in Düsseldorf betraut, wechselte dann zu Rheinmetall Denel Munition (Südafrika), übernahm anschließend die Geschäftsführung der Rheinmetall Waffe Munition GmbH und leitete die Business Unit Indirect Fires mit Verantwortung für internationale Munitionsprojekte wie den Werksaufbau in Litauen.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-5a9d049f8f71abd3"
+      ],
+      "evidence": "Auszug: Er wechselte intern nach Südafrika zu Rheinmetall Denel Munition. Danach wurde ihm die Geschäftsführung der Rheinmetall Waffe Munition GmbH übertragen. Er übernahm die Leitung der Business Unit Indirect Fires",
+      "location": "Artikel vom 4.9.2026, Absatz 2",
+      "uncertainty": "Zeitangaben zu den Stationen nicht genannt; Eintrittsjahr bei Rheinmetall nicht belegt.",
+      "proposed_depth": "A",
+      "depth_reason": "Beruflicher Werdegang"
+    },
+    {
+      "id": "H-KOE-04",
+      "statement": "Als Geschäftsführer der Rheinmetall Waffe Munition GmbH unterzeichnete Roman Köhne am 30.7.2020 mit der niederländischen Beschaffungsbehörde DMO einen erneuerten Munitions-Rahmenvertrag (potenzielles Gesamtvolumen 500 Mio. EUR).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a9b0fc98036cb816"
+      ],
+      "evidence": "Auszug: Major General Ivo de Jong, Deputy Director of the DMO, and Roman Köhne, Managing Director of Rheinmetall Waffe Munition GmbH, signed the contract on 30 July 2020.",
+      "location": "Pressemitteilung vom 24.9.2020, Absatz 3",
+      "uncertainty": "",
+      "proposed_depth": "B",
+      "depth_reason": "Belegte frühere Funktion",
+      "event_date": "2020-07-30"
+    },
+    {
+      "id": "H-KOE-05",
+      "statement": "Soldier Systems Daily nannte Köhne im Mai 2023 als CEO von Rheinmetall Waffe Munition und Chairman der Rheinmetall NIOA Munitions (Australien) anlässlich eines Besuchs im Werk Maryborough.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-65fc5577a5b55116"
+      ],
+      "evidence": "Auszug: Rheinmetall Waffe Munitions CEO and Rheinmetall NIOA Munitions Chairman Roman Koehne",
+      "location": "Artikel vom 3.5.2023, Bildunterschrift und Absatz 1",
+      "uncertainty": "Sekundärquelle (vermutlich auf Unternehmensmitteilung basierend); aktueller Status des Mandats nicht geprüft.",
+      "proposed_depth": "B",
+      "depth_reason": "Früheres Mandat, ergänzend"
+    },
+    {
+      "id": "H-KOE-06",
+      "statement": "In beruflicher Funktion äußerte sich Köhne 2026 öffentlich zu Rheinmetalls Effektor-/Munitionsprogrammen: zum Laser-Joint-Venture mit MBDA (industrielle Kooperation in Deutschland), zur NATO-Qualifizierung des Marschflugkörpers Ruta Block 3 im JV Rheinmetall Destinus Strike Systems sowie zur Vektrex-Absichtserklärung mit General Atomics (Langstreckenwirkung, multinationale Industrienetzwerke).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-faa22e3546ff37b9",
+        "S-63879230d36c7828",
+        "S-d33dad308bfc2b33"
+      ],
+      "evidence": "Auszug (Rheinmetall AG (Pressemitteilung)): This step demonstrates the potential of determined industrial and technological cooperation in Germany in order to produce cutting-edge technology; Auszug (Rheinmetall AG (Pressemitteilung)): Together we are advancing NATO qualification on an accelerated path, embedded in existing programmes for European defense ministries.; Auszug (Rheinmetall AG (Pressemitteilung)): European and allied armed forces require long-range strike capabilities that integrate rapidly, scale efficiently, and remain sustainable through resilient multinational industrial networks",
+      "location": "Rheinmetall AG (Pressemitteilung): Pressemitteilung vom 5.1.2026, Zitat Köhne; Rheinmetall AG (Pressemitteilung): Pressemitteilung vom 17.6.2026, Zitat Köhne; Rheinmetall AG (Pressemitteilung): PDF S. 1, Zitat Köhne",
+      "evidence_items": [
+        {
+          "source_id": "S-faa22e3546ff37b9",
+          "text": "This step demonstrates the potential of determined industrial and technological cooperation in Germany in order to produce cutting-edge technology",
+          "mode": "Auszug",
+          "location": "Pressemitteilung vom 5.1.2026, Zitat Köhne"
+        },
+        {
+          "source_id": "S-63879230d36c7828",
+          "text": "Together we are advancing NATO qualification on an accelerated path, embedded in existing programmes for European defense ministries.",
+          "mode": "Auszug",
+          "location": "Pressemitteilung vom 17.6.2026, Zitat Köhne"
+        },
+        {
+          "source_id": "S-d33dad308bfc2b33",
+          "text": "European and allied armed forces require long-range strike capabilities that integrate rapidly, scale efficiently, and remain sustainable through resilient multinational industrial networks",
+          "mode": "Auszug",
+          "location": "PDF S. 1, Zitat Köhne"
+        }
+      ],
+      "uncertainty": "Aussagen beziehen sich auf frühere Division; keine öffentliche Aussage Köhnes zu Flugabwehr oder Golfstaaten gefunden.",
+      "proposed_depth": "B",
+      "depth_reason": "Öffentliche berufliche Aussagen"
+    },
+    {
+      "id": "H-KOE-07",
+      "statement": "In einem Shephard-Videointerview (Eurosatory 2026, veröffentlicht 5.8.2026) sprach Köhne als CEO der Division Weapon and Ammunition über das Munitionsportfolio, das JV Rheinmetall Destinus Strike Systems und die vertikale Integration der Fertigung als Wettbewerbsvorteil.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-b9c5d3865d4b34f0"
+      ],
+      "evidence": "Paraphrase: Köhne, CEO of Rheinmetall's Weapon and Ammunition Division, discusses Eurosatory 2026 announcements; highlights ammunition range, Rheinmetall Destinus Strike Systems JV and vertically integrated manufacturing.",
+      "location": "Videobeschreibung/Artikeltext, Absätze 1-5",
+      "uncertainty": "Video selbst nicht ausgewertet, nur begleitender Text.",
+      "proposed_depth": "B",
+      "depth_reason": "Öffentliche Aussage, ergänzend"
+    },
+    {
+      "id": "H-DUE-01",
+      "statement": "Oliver Dürr wurde in einer Rheinmetall-Pressemitteilung vom 15.6.2026 als 'CEO Rheinmetall Division Air Defence' zitiert.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-2eda3f58ea36842d"
+      ],
+      "evidence": "Auszug: Oliver Dürr, CEO Rheinmetall Division Air Defence said",
+      "location": "Pressemitteilung vom 15.6.2026, Zitatabsatz",
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Belegt Rolleninhaber vor Wechsel"
+    },
+    {
+      "id": "H-DUE-02",
+      "statement": "Laut SHAB-Publikation vom 14.10.2021 wurde Oliver Dürr als Delegierter des Verwaltungsrates, Direktor und Vorsitzender der Geschäftsleitung der Rheinmetall Air Defence AG eingetragen (Nachfolge Fabian Ochsner); in den bei Zefix gelisteten Publikationen bis zur jüngsten vom 7.7.2026 ist keine Löschung Dürrs und kein Eintrag Köhnes enthalten.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-7a58ddb6fbab572c"
+      ],
+      "evidence": "Paraphrase: SHAB-Publikation 14.10.2021: Ausgeschieden Ochsner, Fabian (Delegierter des VR, Vorsitzender der GL); eingetragen Dürr, Oliver, Delegierter des Verwaltungsrates, Direktor, Vorsitzender der Geschäftsleitung. Jüngste Publikation (shabDate) 2026-07-07 betrifft VR-Mutationen ohne Dürr/Köhne.",
+      "location": "Zefix-Datensatz, Feld shabPub (Einträge 2021-10-14 und 2026-07-07)",
+      "uncertainty": "Register kann Personalwechsel verzögert abbilden; Stand der Registerabfrage 10.10.2026.",
+      "proposed_depth": "A",
+      "depth_reason": "Amtlicher Rollenbeleg/Registerstand"
+    },
+    {
+      "id": "H-DUE-03",
+      "statement": "Laut esut verlässt Dürr Rheinmetall auf eigenen Wunsch nach drei Jahren als Divisionsleiter und fünf Jahren im Konzern; im NZZ-Interview vom 10.10.2026 bestätigte Dürr den Abgang nach fünf Jahren an der Spitze der Rheinmetall Air Defence AG (knapp drei Jahre davon für die gesamte Air-Defence-Sparte) und erklärte, er habe seine Kündigung selbst bei Konzernchef Papperger eingereicht.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-5a9d049f8f71abd3",
+        "S-d1bc68764e220fd4"
+      ],
+      "evidence": "Auszug (Europäische Sicherheit & Technik (esut.de)): Er folgt Oliver Dürr, der nach drei Jahren in dieser Funktion und fünf Jahren bei Rheinmetall das Unternehmen auf eigenen Wunsch verlässt.; Auszug (Neue Zürcher Zeitung): Ich bin zum Konzernchef Armin Papperger gegangen und habe ihm meine Kündigung übergeben",
+      "location": "Europäische Sicherheit & Technik (esut.de): Artikel vom 4.9.2026, Absatz 1; Neue Zürcher Zeitung: Interview vom 10.10.2026, Antwort auf Frage zu 'Inside Paradeplatz'",
+      "evidence_items": [
+        {
+          "source_id": "S-5a9d049f8f71abd3",
+          "text": "Er folgt Oliver Dürr, der nach drei Jahren in dieser Funktion und fünf Jahren bei Rheinmetall das Unternehmen auf eigenen Wunsch verlässt.",
+          "mode": "Auszug",
+          "location": "Artikel vom 4.9.2026, Absatz 1"
+        },
+        {
+          "source_id": "S-d1bc68764e220fd4",
+          "text": "Ich bin zum Konzernchef Armin Papperger gegangen und habe ihm meine Kündigung übergeben",
+          "mode": "Auszug",
+          "location": "Interview vom 10.10.2026, Antwort auf Frage zu 'Inside Paradeplatz'"
+        }
+      ],
+      "uncertainty": "Selbstdarstellung des Betroffenen; abweichende Darstellung siehe H-DUE-04.",
+      "proposed_depth": "A",
+      "depth_reason": "Strittige Angabe zum Personalwechsel",
+      "event_date": "2026-10-01"
+    },
+    {
+      "id": "H-DUE-04",
+      "statement": "Inside Paradeplatz stellte den Abgang am 26.8.2026 abweichend als Absetzung Dürrs als Chef der Division Air Defence dar und berief sich auf mehrere nicht namentlich genannte Quellen; der Bericht nennt die Verabschiedung durch die Konzernzentrale am 25.8.2026.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-f31ef17ae4326f52"
+      ],
+      "evidence": "Auszug: Oliver Dürr als Chef der Division Air Defence in Oerlikon abgesetzt ... Gestern hat die Zentrale den CEO der Rheinmetall Air Defence, den Schweizer Oliver Dürr, verabschiedet.",
+      "location": "Artikel vom 26.8.2026, Unterzeile und Absatz 4",
+      "uncertainty": "Anonyme Quellen; von Dürr bestritten (H-DUE-03); keine Unternehmensstellungnahme gefunden.",
+      "proposed_depth": "A",
+      "depth_reason": "Widersprüchliche Angabe"
+    },
+    {
+      "id": "H-PAP-01",
+      "statement": "Armin Papperger ist laut Rheinmetall seit 1.1.2013 Vorsitzender des Vorstands (Mitglied seit 1.1.2012, bestellt bis 31.12.2029); er begann 1990 in der Defence-Sparte und leitete ab 2007 den Geschäftsbereich Waffe und Munition.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a8887f614647359f"
+      ],
+      "evidence": "Auszug: Vorsitzender des Vorstands seit 1. Januar 2013 Mitglied des Vorstands seit 1. Januar 2012 Bestellt bis 31. Dezember 2029",
+      "location": "Vorstandsseite, Abschnitt Armin Papperger",
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Aktuelle Rolle Vorstand"
+    },
+    {
+      "id": "H-PAP-02",
+      "statement": "Papperger ist Präsident des Verwaltungsrats der Rheinmetall Air Defence AG: Die Rheinmetall-Vorstandsseite führt dieses Mandat, und laut SHAB-Publikation vom 18.7.2024 wurde er als Präsident des Verwaltungsrates eingetragen (Nachfolge Dr. Alexander Sagel).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a8887f614647359f",
+        "S-7a58ddb6fbab572c"
+      ],
+      "evidence": "Auszug (Rheinmetall AG (Website)): Rheinmetall Air Defence AG (Präsident des Verwaltungsrats); Paraphrase (Zefix - Zentraler Firmenindex (Schweiz)): SHAB-Publikation 18.07.2024: Ausgeschieden Sagel, Dr. Alexander, Präsident des VR; eingetragen Papperger, Armin, Präsident des Verwaltungsrates, mit Kollektivunterschrift zu zweien.",
+      "location": "Rheinmetall AG (Website): Vorstandsseite, Abschnitt 'Mandate', Armin Papperger; Zefix - Zentraler Firmenindex (Schweiz): Zefix-Datensatz, Feld shabPub, Eintrag 2024-07-18",
+      "evidence_items": [
+        {
+          "source_id": "S-a8887f614647359f",
+          "text": "Rheinmetall Air Defence AG (Präsident des Verwaltungsrats)",
+          "mode": "Auszug",
+          "location": "Vorstandsseite, Abschnitt 'Mandate', Armin Papperger"
+        },
+        {
+          "source_id": "S-7a58ddb6fbab572c",
+          "text": "SHAB-Publikation 18.07.2024: Ausgeschieden Sagel, Dr. Alexander, Präsident des VR; eingetragen Papperger, Armin, Präsident des Verwaltungsrates, mit Kollektivunterschrift zu zweien.",
+          "mode": "Paraphrase",
+          "location": "Zefix-Datensatz, Feld shabPub, Eintrag 2024-07-18"
+        }
+      ],
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Governance-Kontrolle Flugabwehrtochter"
+    },
+    {
+      "id": "H-GAN-01",
+      "statement": "COO René Gansauge ist laut SHAB-Publikation vom 7.7.2026 Vizepräsident des Verwaltungsrates der Rheinmetall Air Defence AG (zuvor seit Publikation vom 12.1.2026 Mitglied des VR); Gansauge war von April 2023 bis Ende 2024 CEO der Division Weapon and Ammunition.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-7a58ddb6fbab572c",
+        "S-a8887f614647359f"
+      ],
+      "evidence": "Paraphrase (Zefix - Zentraler Firmenindex (Schweiz)): SHAB-Publikation 07.07.2026: Gansauge, Rene Christian, Vizepräsident des Verwaltungsrates [bisher: Mitglied des Verwaltungsrates]; ausgeschieden u. a. Krüger, Andreas (Vizepräsident).; Auszug (Rheinmetall AG (Website)): Vom April 2023 bis Ende Dezember 2024 war Gansauge CEO der Division Weapon and Ammunition bei der Rheinmetall AG.",
+      "location": "Zefix - Zentraler Firmenindex (Schweiz): Zefix-Datensatz, Feld shabPub, Einträge 2026-01-12 und 2026-07-07; Rheinmetall AG (Website): Vorstandsseite, Abschnitt René Gansauge",
+      "evidence_items": [
+        {
+          "source_id": "S-7a58ddb6fbab572c",
+          "text": "SHAB-Publikation 07.07.2026: Gansauge, Rene Christian, Vizepräsident des Verwaltungsrates [bisher: Mitglied des Verwaltungsrates]; ausgeschieden u. a. Krüger, Andreas (Vizepräsident).",
+          "mode": "Paraphrase",
+          "location": "Zefix-Datensatz, Feld shabPub, Einträge 2026-01-12 und 2026-07-07"
+        },
+        {
+          "source_id": "S-a8887f614647359f",
+          "text": "Vom April 2023 bis Ende Dezember 2024 war Gansauge CEO der Division Weapon and Ammunition bei der Rheinmetall AG.",
+          "mode": "Auszug",
+          "location": "Vorstandsseite, Abschnitt René Gansauge"
+        }
+      ],
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Governance Flugabwehrtochter"
+    }
+  ],
+  "source_proposals": [
+    {
+      "id": "S-1131fc174fb33fc5",
+      "name": "Rheinmetall AG (Pressemitteilung)",
+      "title": "Rheinmetall's H1: Strong sales growth and record profitability",
+      "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/08/2026-08-06-Rheinmetall-News-Half-Yearly-Financial-Report-H1.pdf",
+      "published_date": "2026-08-06",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe",
+      "report_year": 2026
+    },
+    {
+      "id": "S-a57c168b042d9b28",
+      "name": "Rheinmetall AG (Halbjahresfinanzbericht)",
+      "title": "Half-Yearly Financial Report 2026, 1/1-30/6/2026",
+      "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q2/Rheinmetall-Half-Yearly-Financial-Report-2026.pdf",
+      "published_date": "2026-08-06",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe",
+      "report_year": 2026
+    },
+    {
+      "id": "S-9610b6cf1ddab64f",
+      "name": "Rheinmetall AG (Pressemitteilung)",
+      "title": "Financial figures: Rheinmetall drives expansion forward and stays on course for success (Annual Report 2025)",
+      "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/03/2026-03-11-Rheinmetall-presents-Annual-Report-for-2025.pdf",
+      "published_date": "2026-03-11",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe",
+      "report_year": 2025
+    },
+    {
+      "id": "S-1f77cb6f898210ce",
+      "name": "Rheinmetall AG (Investor Relations)",
+      "title": "Closing Gaps - Investor Presentation September 2026",
+      "url": "https://ir.rheinmetall.com/media/document/4ce7ca35-7088-4365-88d6-b43a0aa5cde6/assets/Rheinmetall_AG_2026_Investor_Presentation_September.pdf",
+      "published_date": null,
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-a8887f614647359f",
+      "name": "Rheinmetall AG (Website)",
+      "title": "Der Vorstand der Rheinmetall AG",
+      "url": "https://www.rheinmetall.com/de/unternehmen/gremien/vorstand/vorstand-uebersicht",
+      "published_date": null,
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-3ef169e9e35e0c9a",
+      "name": "Rheinmetall AG (Website)",
+      "title": "Division Air Defence",
+      "url": "https://www.rheinmetall.com/de/unternehmen/divisionen/air-defence",
+      "published_date": null,
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-7a58ddb6fbab572c",
+      "name": "Zefix - Zentraler Firmenindex (Schweiz)",
+      "title": "Rheinmetall Air Defence AG, CHE-101.403.861 - Firmendaten und SHAB-Publikationen",
+      "url": "https://www.zefix.ch/ZefixREST/api/v1/firm/468202.json",
+      "published_date": null,
+      "accessed_date": "2026-10-10",
+      "source_kind": "amtlicher Datensatz"
+    },
+    {
+      "id": "S-5a9f539c26c5885f",
+      "name": "Europäische Sicherheit & Technik (esut.de)",
+      "title": "Rheinmetall mit fünf Divisionen",
+      "url": "https://esut.de/2026/03/meldungen/68969/rheinmetall-mit-fuenf-divisionen/",
+      "published_date": "2026-03-13",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-5a9d049f8f71abd3",
+      "name": "Europäische Sicherheit & Technik (esut.de)",
+      "title": "Roman Köhne wird CEO von Rheinmetall Air Defence",
+      "url": "https://esut.de/2026/09/meldungen/74575/roman-koehne-ceo-rheinmetall-air/",
+      "published_date": "2026-09-04",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-f31ef17ae4326f52",
+      "name": "Inside Paradeplatz",
+      "title": "Rheinmetall-Boss Schweiz gefeuert",
+      "url": "https://insideparadeplatz.ch/2026/08/26/rheinmetall-boss-schweiz-gefeuert/",
+      "published_date": "2026-08-26",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-d1bc68764e220fd4",
+      "name": "Neue Zürcher Zeitung",
+      "title": "Der Schweizer Rheinmetall-Chef tritt ab - und will die Politik wachrütteln (Interview mit Oliver Dürr)",
+      "url": "https://www.nzz.ch/schweiz/sicherheitspolitik/der-schweizer-rheinmetall-boss-tritt-ab-und-kritisiert-die-wohlstandsverwahrloste-politik-ich-sage-es-jetzt-bewusst-drastisch-womoeglich-braucht-es-eine-fremde-drohne-auf-dem-bundesplatzschweizer-rheinmetall-boss-oliver-duerr-womoeglich-braucht-es-eine-fremde-drohne-auf-dem-bundesplatz-ld.10025911",
+      "published_date": "2026-10-10",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-2eda3f58ea36842d",
+      "name": "Rheinmetall AG (Pressemitteilung)",
+      "title": "Rheinmetall and LIG Defense&Aerospace join forces to address European and NATO customers",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-15-rheinmetall-and-lig-defense-aerospace-establish-strategic-partnership",
+      "published_date": "2026-06-15",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-63879230d36c7828",
+      "name": "Rheinmetall AG (Pressemitteilung)",
+      "title": "Eurosatory 2026: Rheinmetall Destinus Strike Systems sets out its programme priorities",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-17-rheinmetall-at-eurosatory-destinus-strike-systems-sets-out-its-program-priorities",
+      "published_date": "2026-06-17",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-faa22e3546ff37b9",
+      "name": "Rheinmetall AG (Pressemitteilung)",
+      "title": "Rheinmetall and MBDA: Joint venture will efficiently combine development and production of state-of-the-art laser weapon systems",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/01/2026-01-05-rheinmetall-and-mbda-establish-laser-joint-venture",
+      "published_date": "2026-01-05",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-d33dad308bfc2b33",
+      "name": "Rheinmetall AG (Pressemitteilung)",
+      "title": "Rheinmetall and General Atomics explore co-production of Vektrex for artillery modernisation",
+      "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/06/2026-06-18-Rheinmetall-and-General-Atomics-explore-co-production-of-Vektrex-for-artillery-modernisation.pdf",
+      "published_date": "2026-06-18",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-a9b0fc98036cb816",
+      "name": "Rheinmetall AG (Pressemitteilung)",
+      "title": "The Dutch armed forces and Rheinmetall renew long-term framework agreement for ammunition",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2020/2020-09-24_the-dutch-armed-forces-and-rheinmetall-renew-long-term-framework-agreement-for-ammunition",
+      "published_date": "2020-09-24",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-65fc5577a5b55116",
+      "name": "Soldier Systems Daily",
+      "title": "Rheinmetall NIOA Munitions Ramps Ups As First Exports Roll Out",
+      "url": "https://soldiersystems.net/2023/05/03/rheinmetall-nioa-munitions-ramps-ups-as-first-exports-roll-out/",
+      "published_date": "2023-05-03",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-b9c5d3865d4b34f0",
+      "name": "Shephard Media",
+      "title": "How joint ventures are expanding Rheinmetall's munitions portfolio (video)",
+      "url": "https://shephardmedia.com/news/landwarfareintl/video-how-joint-ventures-are-expanding-rheinmetalls-munitions-portfolio-video/",
+      "published_date": "2026-08-05",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-b003618b3ae9eba2",
+      "name": "Rheinmetall AG (Pressemitteilung)",
+      "title": "Contract worth several hundred million euros: Rheinmetall is supplying four Skynex systems to an international customer",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/07/2026-07-02-rheinmetall-is-supplying-four-skynex-systems-to-an-international-customer",
+      "published_date": "2026-07-02",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-a831015ab01561c0",
+      "name": "Rheinmetall AG (Pressemitteilung)",
+      "title": "Major order: Kuwait procures Rheinmetall's MASS decoy launchers for the first time",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/07/2026-07-10-kuwait-commissions-rheinmetall-mass-ship-protection-systems",
+      "published_date": "2026-07-10",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-549a5efe1b3c131f",
+      "name": "Neue Zürcher Zeitung",
+      "title": "Rheinmetall-Chef Papperger zu Golfkrieg, Putins Plänen und deutschem Starlink (Interview)",
+      "url": "https://www.nzz.ch/wirtschaft/sollte-deutschland-angegriffen-werden-wuerden-wir-wohl-aus-der-schweiz-nicht-mehr-beliefert-sagt-rheinmetall-chef-papperger-ld.1928547",
+      "published_date": "2026-03-11",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-d6967131447345e6",
+      "name": "defence-network.com",
+      "title": "100 Abschüsse: Rheinmetalls Luftverteidigung im Iran-Krieg",
+      "url": "https://defence-network.com/100-abschuesse-rheinmetall-drohnen-iran/",
+      "published_date": "2026-03-11",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-1fc7c3c60663e6b3",
+      "name": "ARIVA.DE",
+      "title": "Krieg im Nahen Osten treibt Rüstungsboom: Neuer Milliardenmarkt durch Aufrüstung der Golfstaaten",
+      "url": "https://www.ariva.de/aktien/rheinmetall-aktie/news/krieg-im-nahen-osten-treibt-ruestungsboom-neuer-rsf-11936033",
+      "published_date": "2026-03-11",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Sekundärquelle"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "GAP-CTX-01",
+      "topic": "Personalwechsel Air Defence",
+      "description": "Keine offizielle Rheinmetall-Pressemitteilung oder Website-Angabe gefunden, die Roman Köhne als Leiter der Division Air Defence bzw. CEO der Rheinmetall Air Defence AG ab 1.10.2026 bestätigt; Beleg nur über esut.de (unternehmensinterne Informationen) und indirekt Inside Paradeplatz/NZZ.",
+      "impact": "Aktuelle Rolle Köhnes zum Stichtag nur sekundär belegt (H-KOE-01)."
+    },
+    {
+      "id": "GAP-CTX-02",
+      "topic": "Handelsregister Rheinmetall Air Defence AG",
+      "description": "Jüngste Zefix-/SHAB-Publikation datiert 7.7.2026; Austragung Dürrs bzw. Eintragung Köhnes (Geschäftsleitung/Verwaltungsrat) noch nicht publiziert. Kantonaler Registerauszug (zh.chregister.ch) lieferte keinen auswertbaren Inhalt.",
+      "impact": "Formale Organstellung Köhnes in der Schweizer Gesellschaft offen."
+    },
+    {
+      "id": "GAP-CTX-03",
+      "topic": "Nutzerangabe Gesprächspartner",
+      "description": "Nutzerangabe 'aktueller Hauptverantwortlicher für Rheinmetalls Flugabwehrgeschäft' bleibt Nutzerangabe. Öffentlich belegt: operative Divisionsleitung (Köhne ab 1.10.2026 laut Medien), Divisionen direkt vom Vorstand geführt (CEO Papperger), Papperger zugleich VR-Präsident der Rheinmetall Air Defence AG. Ein eigenes Vorstandsressort Air Defence ist nicht ausgewiesen.",
+      "impact": "Welche Person als 'Hauptverantwortlicher' gilt, hängt von der Lesart ab (operativ vs. Vorstand)."
+    },
+    {
+      "id": "GAP-CTX-04",
+      "topic": "Nachfolge Division Weapon and Ammunition",
+      "description": "Keine öffentliche Angabe zur Nachfolge Köhnes in der Division Weapon and Ammunition gefunden.",
+      "impact": "Gering für Themen; nur Werdegangskontext."
+    },
+    {
+      "id": "GAP-CTX-05",
+      "topic": "Golfstaaten-Aufträge Flugabwehr 2026",
+      "description": "Kein öffentlich namentlich einem GCC-Staat zugeordneter Flugabwehrauftrag 2026 gefunden; Skynex-Auftrag vom 2.7.2026 und der 'internationale Kunde' im H1-Bericht ohne Länderangabe. Bloomberg-Bericht (8.5.2026) zu Nahost-Nachfrage nicht zugänglich (Bot-Sperre), daher nicht verwendet.",
+      "impact": "Golf-Präsenz im Kontextmodul nur über Unternehmensaussagen belegt; Vertiefung bei market/cluster."
+    },
+    {
+      "id": "GAP-CTX-06",
+      "topic": "Geschäftsbericht 2025 Volltext",
+      "description": "Vollständiger Geschäftsbericht 2025 (PDF) nicht über IR-Seite auffindbar (JavaScript-Seite); verwendet wurden Bilanz-Pressemitteilung 11.3.2026 und Halbjahresfinanzbericht 2026.",
+      "impact": "Divisionsleitungen 2025 und detaillierte Segmentangaben 2025 nicht aus dem Bericht selbst geprüft."
+    },
+    {
+      "id": "GAP-CTX-07",
+      "topic": "militaeraktuell.at",
+      "description": "Artikel 'Führungswechsel bei Rheinmetall Air Defence' (DE/EN) per Abruf gesperrt (403/Cloudflare); nur Suchsnippet bekannt, daher nicht als Beleg verwendet.",
+      "impact": "Kein zusätzlicher unabhängiger Beleg für Amtsantritt Köhnes."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Kennzahlen/Segmentstruktur",
+      "search_terms": [
+        "Rheinmetall Halbjahresbericht 2026 Air Defence",
+        "Rheinmetall Annual Report 2025",
+        "Rheinmetall Investor Presentation September 2026"
+      ],
+      "opened_source_ids": [
+        "S-1131fc174fb33fc5",
+        "S-a57c168b042d9b28",
+        "S-9610b6cf1ddab64f",
+        "S-1f77cb6f898210ce",
+        "S-5a9f539c26c5885f",
+        "S-3ef169e9e35e0c9a"
+      ],
+      "finding": "Fünf Segmente seit 1.1.2026; Air Defence eigenes Segment; Kennzahlen H1 2026 und Prognose belegt.",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Hauptverantwortlicher Flugabwehr / Personalwechsel 2024-2026",
+      "search_terms": [
+        "Rheinmetall Air Defence Division Leitung 2026",
+        "Roman Köhne Rheinmetall",
+        "Oliver Dürr Rheinmetall Air Defence 2026",
+        "Köhne site:rheinmetall.com",
+        "Rheinmetall Köhne Air Defence Oktober 2026"
+      ],
+      "opened_source_ids": [
+        "S-5a9d049f8f71abd3",
+        "S-f31ef17ae4326f52",
+        "S-d1bc68764e220fd4",
+        "S-2eda3f58ea36842d",
+        "S-63879230d36c7828",
+        "S-faa22e3546ff37b9",
+        "S-d33dad308bfc2b33",
+        "S-a9b0fc98036cb816",
+        "S-65fc5577a5b55116",
+        "S-b9c5d3865d4b34f0"
+      ],
+      "finding": "Wechsel Dürr -> Köhne zum 1.10.2026 sekundär belegt; Dürr bis Juni 2026 in Rheinmetall-PM als CEO Division Air Defence; keine Primärbestätigung für Köhne.",
+      "status": "geprüft mit Beleg (sekundär)"
+    },
+    {
+      "topic": "Vorstand und Governance Rheinmetall Air Defence AG",
+      "search_terms": [
+        "Rheinmetall Vorstand 2026",
+        "Zefix Rheinmetall Air Defence AG"
+      ],
+      "opened_source_ids": [
+        "S-a8887f614647359f",
+        "S-7a58ddb6fbab572c",
+        "S-a57c168b042d9b28"
+      ],
+      "finding": "Kein Vorstandsressort Air Defence; Divisionen direkt vom Vorstand geführt; Papperger VR-Präsident, Gansauge VR-Vizepräsident der RAD AG.",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Timeline Golfstaaten 2026",
+      "search_terms": [
+        "Rheinmetall Saudi-Arabien OR Katar OR Emirate Flugabwehr 2026",
+        "Rheinmetall Kuwait MASS 2026",
+        "Papperger Golfstaaten Flugabwehr Nachfrage",
+        "Rheinmetall World Defense Show 2026",
+        "Rheinmetall Golfstaaten Flugabwehr Auftrag Juli August September 2026"
+      ],
+      "opened_source_ids": [
+        "S-a57c168b042d9b28",
+        "S-d6967131447345e6",
+        "S-549a5efe1b3c131f",
+        "S-1fc7c3c60663e6b3",
+        "S-b003618b3ae9eba2",
+        "S-a831015ab01561c0"
+      ],
+      "finding": "Unternehmensaussagen zu Einsatz/Nachfrage in Golfstaaten (März 2026), RAST-Vollübernahme (Juli 2026), Kuwait-MASS-Auftrag; kein namentlich zugeordneter GCC-Flugabwehrauftrag 2026.",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Bloomberg 8.5.2026 (Nahost-Nachfrage)",
+      "search_terms": [
+        "Rheinmetall CEO Sees High Mideast Demand for Air Defense Systems"
+      ],
+      "opened_source_ids": [],
+      "finding": "Abruf blockiert; nicht verwendet.",
+      "status": "nicht zugänglich"
+    },
+    {
+      "topic": "militaeraktuell.at Führungswechsel",
+      "search_terms": [
+        "Führungswechsel bei Rheinmetall Air Defence"
+      ],
+      "opened_source_ids": [],
+      "finding": "403/Cloudflare; nicht verwendet.",
+      "status": "nicht zugänglich"
+    },
+    {
+      "topic": "Italienische Skynex-Batterie in den VAE / Task Force Arabia; Argotec-Satellit; World Defense Show 2026",
+      "search_terms": [
+        "Italienische Luftwaffe Nahen Osten Skynex",
+        "Rheinmetall Argotec satellite"
+      ],
+      "opened_source_ids": [],
+      "finding": "Hinweise gesichtet (suv.report 5.8.2026; Rheinmetall-PM 2.10.2026), fachlich market/portfolio zugeordnet; nicht als Kontext-Claim übernommen.",
+      "status": "nicht geprüft (Zuständigkeit anderer Rollen)"
+    }
+  ],
+  "company_facts": [
+    {
+      "id": "cf-umsatz-2025",
+      "label": "Geschäftsjahr 2025: Umsatz, operatives Ergebnis, Backlog",
+      "claim_ids": [
+        "T-CTX-01"
+      ]
+    },
+    {
+      "id": "cf-h1-2026",
+      "label": "1. Halbjahr 2026: Konzernkennzahlen",
+      "claim_ids": [
+        "T-CTX-02"
+      ]
+    },
+    {
+      "id": "cf-prognose-2026",
+      "label": "Prognose 2026 (angepasst)",
+      "claim_ids": [
+        "T-CTX-03"
+      ]
+    },
+    {
+      "id": "cf-segmente",
+      "label": "Fünf Segmente seit 1.1.2026, Air Defence eigenständig",
+      "claim_ids": [
+        "T-CTX-04",
+        "T-CTX-13"
+      ]
+    },
+    {
+      "id": "cf-fuehrung",
+      "label": "Divisionen direkt vom Vorstand geführt; Vorstandsbesetzung",
+      "claim_ids": [
+        "T-CTX-05",
+        "T-CTX-06"
+      ]
+    },
+    {
+      "id": "cf-air-defence",
+      "label": "Segment Air Defence: Kennzahlen, Personal, Prognose",
+      "claim_ids": [
+        "T-CTX-08",
+        "T-CTX-09",
+        "T-CTX-10"
+      ]
+    },
+    {
+      "id": "cf-rad-ag",
+      "label": "Rheinmetall Air Defence AG, Zürich",
+      "claim_ids": [
+        "T-CTX-14",
+        "T-CTX-07"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "ev-segmente",
+      "label": "Aufteilung Electronic Solutions in Air Defence und Digital Systems",
+      "date": "2026-01-01",
+      "claim_ids": [
+        "T-CTX-04"
+      ]
+    },
+    {
+      "id": "ev-iran-krieg",
+      "label": "Beginn Krieg USA/Israel-Iran laut Rheinmetall-Bericht; Angriffe auf Golfstaaten",
+      "date": "2026-02-28",
+      "claim_ids": [
+        "T-CTX-20"
+      ]
+    },
+    {
+      "id": "ev-bilanz-golf",
+      "label": "CEO-Aussagen zu Einsatz und Nachfrage in Golfstaaten",
+      "date": "2026-03-11",
+      "claim_ids": [
+        "T-CTX-21",
+        "T-CTX-22"
+      ]
+    },
+    {
+      "id": "ev-lig",
+      "label": "Partnerschaft mit LIG Defense & Aerospace angekündigt",
+      "date": "2026-06-15",
+      "claim_ids": [
+        "T-CTX-23",
+        "H-DUE-01"
+      ]
+    },
+    {
+      "id": "ev-skynex",
+      "label": "Skynex-Auftrag (vier Systeme) von internationalem Erstkunden",
+      "date": "2026-07-02",
+      "claim_ids": [
+        "T-CTX-24"
+      ]
+    },
+    {
+      "id": "ev-rast",
+      "label": "Vollübernahme RAST, Riad (Anfang Juli 2026)",
+      "date": null,
+      "claim_ids": [
+        "T-CTX-25"
+      ]
+    },
+    {
+      "id": "ev-kuwait",
+      "label": "Erster MASS-Auftrag Kuwaits gemeldet",
+      "date": "2026-07-10",
+      "claim_ids": [
+        "T-CTX-26"
+      ]
+    },
+    {
+      "id": "ev-h1",
+      "label": "Halbjahreszahlen und Prognoseanpassung",
+      "date": "2026-08-06",
+      "claim_ids": [
+        "T-CTX-02",
+        "T-CTX-03",
+        "T-CTX-08"
+      ]
+    },
+    {
+      "id": "ev-abgang-bericht",
+      "label": "Medienbericht über Abgang Dürrs (abweichende Darstellung)",
+      "date": "2026-08-26",
+      "claim_ids": [
+        "H-DUE-04"
+      ]
+    },
+    {
+      "id": "ev-fuehrungswechsel",
+      "label": "Führungswechsel Division Air Defence: Köhne folgt Dürr (laut Medien)",
+      "date": "2026-10-01",
+      "claim_ids": [
+        "H-KOE-01",
+        "H-DUE-03"
+      ]
+    }
+  ],
+  "profile": {
+    "name": "Roman Köhne",
+    "claim_ids": [
+      "H-KOE-01",
+      "H-KOE-02",
+      "H-KOE-03",
+      "H-KOE-04",
+      "H-KOE-05",
+      "H-KOE-06",
+      "H-KOE-07"
+    ]
+  },
+  "topics": [
+    {
+      "id": "flugabwehr",
+      "label": "Flugabwehr: Segmentrolle, Kennzahlen, Verantwortung",
+      "claim_ids": [
+        "T-CTX-04",
+        "T-CTX-05",
+        "T-CTX-07",
+        "T-CTX-08",
+        "T-CTX-10",
+        "T-CTX-11",
+        "T-CTX-12",
+        "H-KOE-01",
+        "H-DUE-01",
+        "H-PAP-02",
+        "H-GAN-01"
+      ]
+    },
+    {
+      "id": "golfstaaten",
+      "label": "Golfstaaten: Ereignisse und Unternehmensaussagen 2026",
+      "claim_ids": [
+        "T-CTX-11",
+        "T-CTX-20",
+        "T-CTX-21",
+        "T-CTX-22",
+        "T-CTX-25",
+        "T-CTX-26"
+      ]
+    }
+  ]
+}
