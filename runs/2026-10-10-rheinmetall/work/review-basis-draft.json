@@ -1,0 +1,1364 @@
+{
+ "schema_version": 1,
+ "run_id": "2026-10-10-rheinmetall",
+ "company": "Rheinmetall AG",
+ "as_of": "2026-10-10",
+ "phase": "basis",
+ "status": "teilweise",
+ "status_begruendung": "169 von 170 Claims inhaltlich im geöffneten Beleg geprüft (A und B), davon 9 A-Claims mit Korrekturbedarf und 1 A-Claim offen. 6 wesentliche Fehler (Netzwerkkanten-Status, Aussageursprung, Widerspruch zur Primärquelle) sowie Korrekturen an module_views verhindern die Freigabe. Interpretation erst nach Korrektur und gezielter Nachprüfung der genannten IDs.",
+ "reviewer": "source-reviewer (Phase basis, mode=facts-v2)",
+ "pruefumfang": {
+  "eingaben": [
+   "runs/2026-10-10-rheinmetall/input/auftrag.md",
+   "runs/2026-10-10-rheinmetall/input/facts-run.json",
+   "work/review-packet.json (170 Claims, 139 Quellen, network 37 Knoten/46 Kanten, module_views)",
+   "work/facts-validation.json (required_full_review_ids: 31)",
+   "work/comparison-plan.json",
+   "Abdeckung/gaps/report_log gezielt aus work/cluster-facts.json"
+  ],
+  "formale_kontrolle": "python3 scripts/check-review-data.py work/review-packet.json -> Exit 0, errors [], 170 Fingerprints (nur formal; kein Inhaltsurteil).",
+  "inhaltspruefung": "Alle 31 Netzwerk-Pflicht-Claims (required_full_review_ids) sowie alle 46 Kanten (Identität, Richtung, Typ, Status/Zeitraum, Produktbezug, Quote/Kontrolle) gegen Originalbelege geprüft. Alle A-Claims (130 nach Hochstufung) im geöffneten Originaldokument bzw. redaktionellen Artikel geprüft; PDFs (GB 2025/2024, H1-Bericht/-PM, FY-PM, Transkripte FY2025/Q1-2026, Präsentationen, Diehl-/HENSOLDT-GB, CRS, SIPRI, SECO, EOS-ASX, Revolver-Gun-Broschüre) lokal heruntergeladen und per Textextraktion an den angegebenen Seiten geprüft.",
+  "hochstufungen_nach_A": "C-STR-02, C-STR-08 (Netzwerkkanten); M-QAT-RHM-03, M-SAU-RHM-02, M-RHM-CAP-01, M-PEER-EOS-02, M-PEER-EOS-03, M-PEER-MICA-01, M-QAT-PROG-01 (tragen Marktbeobachtungen); T-CTX-03, T-CTX-09 (Kennzahlen laut Auftrag); T-CTX-26, C-GCC-04, C-GCC-09, C-GCC-12, C-EX-03, P-SKX-04 (Golf-Schwerpunkt).",
+  "nicht_einzeln_gepruefte_claims": [],
+  "zugriffsgrenzen": [
+   "Army Technology (S-c6b8e3a389de878f): HTTP 403 – P-SKN-01 über inhaltsgleiche Quellen geprüft",
+   "Teknisk Ukeblad (S-1e47bb01c749039c): nur frei sichtbarer Teil – AMRAAM-ER-Detail in M-QAT-PROG-02 offen",
+   "Stern-Original (P-SKX-08) und Bloomberg 08.05.2026 (M-RHM-GULF-02) wie von den Analysten angegeben nicht geöffnet",
+   "militaeraktuell.at (zusätzlicher Sekundärbericht zum Führungswechsel, nicht im Paket): HTTP 403"
+  ]
+ },
+ "material_errors": [
+  {
+   "id": "ME-1",
+   "claim_ids": [
+    "C-STR-08"
+   ],
+   "network": [
+    "E19"
+   ],
+   "module_view": "cluster.topics golfstaaten",
+   "severity": "wesentlich",
+   "owner": "cluster",
+   "reason": "Eigentum/Kontrolle RAST zum Stichtag falsch als aktiv 40 % indirekt/JV dargestellt. Laut Halbjahresfinanzbericht 2026 (S-a57c168b042d9b28, PDF-S. 43; bereits als T-CTX-25 im Paket) hält Rheinmetall Electronics seit Anfang Juli 2026 100 % Kapital und Stimmrechte; Vollkonsolidierung in Digital Systems.",
+   "action": "C-STR-08 als Stand 31.12.2025 kennzeichnen und um Vollerwerb Juli 2026 ergänzen (T-CTX-25 per reuse_claim_ids/Quelle einbinden); E19 auf 100 % (Kapital/Stimmrechte), Vollkonsolidierung, as_of 2026-07 aktualisieren bzw. 40-%-Stand als historisch markieren; ggf. Kante von rh_electronics statt rheinmetall."
+  },
+  {
+   "id": "ME-2",
+   "claim_ids": [
+    "C-GCC-07"
+   ],
+   "network": [
+    "E46",
+    "E45"
+   ],
+   "severity": "wesentlich",
+   "owner": "cluster (EOS-Querbezug zusätzlich market informieren)",
+   "reason": "Kante E46 'Schwer CEO SAMI (Stand 2019)' ist nicht als historisch markiert, obwohl Schwer im April 2020 abgelöst wurde (Asharq Al-Awsat 25.04.2020, https://english.aawsat.com/node/2252001). Seit 08/2022 ist Dr. Andreas Schwer MD/CEO der Electro Optic Systems (EOS) – Unterzeichner der im Paket enthaltenen EOS-ASX-Mitteilung S-0ee334ddc9eec2c2 (S. 3), laut ASX-Mitteilung 24.08.2026 weiterhin CEO. EOS ist Wettbewerber mit VAE-Auftrag (M-PEER-EOS-01/02). Recherchegrenze 'aktuelle Funktion nicht geprüft' bei offen auffindbarer Information.",
+   "action": "E46 auf historisch (01/2018-04/2020) setzen; C-GCC-07 um Ablösung 2020 ergänzen (neue Quelle registrieren). Berufliche Querverbindung Ex-Rheinmetall-Manager → CEO EOS als neuen, einzeln belegten Claim/Knoten prüfen und anschließend erneut vorlegen; keine bilaterale Kooperation Rheinmetall–EOS ableiten."
+  },
+  {
+   "id": "ME-3",
+   "claim_ids": [
+    "M-RHM-GULF-02"
+   ],
+   "module_view": "market.observations rheinmetall_skynex_skyranger gulf_access + production_capacity",
+   "severity": "wesentlich",
+   "owner": "market",
+   "reason": "Sekundärparaphrase (Business AM nach Bloomberg) '150 Skyranger und Skynex' widerspricht dem Primärtranskript Q1-2026 (P-GCC-03: 'about 150 systems in the whole Gulf region, gun-based air defense systems'; 'more than 10' bzw. Folie 'up to 10 systems'). Skyranger im GCC öffentlich nicht belegt. Marktbeobachtungen geben '150 Skyranger/Skynex' und 'nur ca. zehn Kanonen' als CEO-Aussage aus.",
+   "action": "M-RHM-GULF-02 mit Widerspruchshinweis versehen oder durch P-GCC-03 (reuse) ersetzen; Beobachtungen gulf_access/production_capacity auf Primärwortlaut umstellen ('ca. 150 kanonenbasierte Flugabwehrsysteme in der Golfregion laut CEO; 2026 mehr als bzw. bis zu 10 Systeme angestrebt') ohne Skyranger-Zuordnung."
+  },
+  {
+   "id": "ME-4",
+   "claim_ids": [
+    "P-SKX-06"
+   ],
+   "severity": "wesentlich",
+   "owner": "portfolio",
+   "reason": "Aussageursprung vertauscht: Papperger nannte laut GAU (und Shephard 20.11.2025) vier Skynex-Systeme im Einsatz in der Ukraine; 'alle von der Bundesregierung finanzierten Systeme geliefert' ist Schlussfolgerung von GAU. Claim schreibt die Lieferaussage dem CEO zu und bezeichnet die Zahl vier als Portal-Ableitung.",
+   "action": "Statement/uncertainty korrigieren: 'Laut GAU sagte Papperger, vier Skynex-Systeme seien in der Ukraine im Einsatz; GAU folgert daraus, dass alle von Deutschland finanzierten Systeme geliefert seien.' Lieferstatus als Portal-Schluss kennzeichnen."
+  },
+  {
+   "id": "ME-5",
+   "claim_ids": [
+    "C-STR-05"
+   ],
+   "module_view": "cluster.report_log (GB 2024)",
+   "severity": "wesentlich (Beleg eines Netzwerk-Pflicht-Claims)",
+   "owner": "cluster",
+   "reason": "Vorjahresbefund falsch: Rheinmetall Projects Development Consultancy LLC, Abu Dhabi, steht im GB 2024 (S-b159a0c9329835a7, PDF-S. 254) mit Fußnote (2), 49 % direkt. Evidenz, uncertainty und report_log behaupten 'nicht gefunden'. Kante E08 selbst ist korrekt.",
+   "action": "Paraphrase/uncertainty in C-STR-05 und report_log-Befund korrigieren; keine Aussage 'neu 2025' ableiten."
+  },
+  {
+   "id": "ME-6",
+   "claim_ids": [
+    "T-CTX-21"
+   ],
+   "severity": "wesentlich (Golf-Präsenzaussage)",
+   "owner": "context",
+   "reason": "Claim übernimmt aus defence-network die Systemliste inkl. '30-mm-Revolverkanone' (dort als Skyranger-Effektor beschrieben). Primärtranskript FY2025 nennt 'Oerlikon Revolver Gun', Präsentation Folie 5 'Gun MK3' (35 mm). Ein 30-mm-/Skyranger-Einsatz im Golf ist primär nicht gestützt.",
+   "action": "Systemliste als Wiedergabe von defence-network kennzeichnen oder auf Primärwortlaut (P-GCC-01) umstellen; '30-mm' streichen bzw. als abweichende Medienangabe markieren."
+  }
+ ],
+ "weitere_korrekturen_nicht_wesentlich": [
+  {
+   "claim_ids": [
+    "C-EX-01"
+   ],
+   "owner": "cluster",
+   "reason": "Scheinwiderspruch: '9. September 2026' auf der BAFA-Übersicht bezeichnet die Gültigkeit einer archivierten Genehmigungsliste, nicht das Laufzeitende der AGG 48; ursprüngliches Ende 15.09.2026 ist durch BAFA-Kurzmeldung (M-DEU-EXPORT-01) und Handelsblatt bestätigt.",
+   "action": "Widerspruchshinweis aus uncertainty entfernen."
+  },
+  {
+   "claim_ids": [
+    "M-UAE-ACCESS-01"
+   ],
+   "owner": "market",
+   "reason": "'Raketenabwehr Top-Priorität' überzeichnet; Quelle listet missile defense als erste von mehreren procurement priorities.",
+   "action": "Formulierung anpassen."
+  },
+  {
+   "claim_ids": [
+    "M-QAT-BARZAN-01"
+   ],
+   "owner": "market",
+   "reason": "uncertainty 'Liefertermin unklar' widerspricht Beleg ('expecting to deliver within 2027').",
+   "action": "Liefererwartung 2027 (Unternehmensangabe) ergänzen."
+  },
+  {
+   "claim_ids": [
+    "M-QAT-PROG-02"
+   ],
+   "owner": "market",
+   "status": "offen",
+   "reason": "Detail 'Katar Erstnutzer des AMRAAM-ER' im zugänglichen Artikeltext nicht auffindbar.",
+   "action": "Detail streichen oder mit zugänglicher Belegstelle nachweisen."
+  }
+ ],
+ "konsistenzpruefung_schwerpunkte": {
+  "H-KOE_Koehne": "Identität konsistent (Rheinmetall-PMs 05.01./17.06./18.06.2026 als Leiter/CEO Weapon and Ammunition; RWM-Geschäftsführer 2020). Neue Rolle CEO Division Air Defence ab 01.10.2026 nur sekundär (esut 04.09.2026 'nach unternehmensinternen Informationen'; Inside Paradeplatz ohne Namen; zusätzlich militaeraktuell.at, nicht zugänglich). Keine Rheinmetall-Primärquelle und kein Zefix-Eintrag gefunden (Divisions-/Tochterseiten nennen keine Leitung). Zeitlich konsistent: PM 15.06.2026 'CEO Rheinmetall Division Air Defence' Dürr, PM 24.06.2026 'Head of Rheinmetall's Air Defence Division' Dürr – beide vor dem 01.10.2026; NZZ 10.10.2026 bestätigt Dürrs Abgang. H-KOE-01 geprüft als 'angekündigt laut Fachmedium'; im Briefing zwingend als nicht primär bestätigt kennzeichnen (offene Datenlücke, kein Fehler).",
+  "H-DUE_H-PAP_H-GAN": "Zefix/SHAB und Vorstandsseite bestätigen Dürr (RAD AG seit 2021), Papperger (Präsident VR seit SHAB 18.07.2024), Gansauge (VR 01/2026, Vizepräsident 07/2026). Dürr-Abgang strittig dargestellt (H-DUE-03 Selbstdarstellung vs. H-DUE-04 anonyme Quellen) – beide korrekt attribuiert.",
+  "Kennzahlen_T-CTX": "T-CTX-01..03 und 08..11 in FY-PM, H1-PM, H1-Bericht (S. 8, 17, 22, 30, 38) und Sept.-Präsentation bestätigt.",
+  "P-SKX-07_vs_P-SKX-08": "Kein Fehler: Herstellerangabe (Bewährung in Ukraine) und berichtete interne ukrainische Bewertung (via Stern/Defense Express) sind getrennt attribuiert. Nicht auflösen; Matrix/SWOT dürfen keinen der beiden als gesicherte Leistungsaussage nutzen.",
+  "AGG_48": "Kein Widerspruch: Erstfassung bis 15.09.2026 (BAFA-Kurzmeldung, Handelsblatt), Verlängerung per Bekanntgabe 10.09.2026 bis 15.09.2027 (BAFA-Übersicht primär, AWA sekundär). Siehe Korrektur C-EX-01; M-DEU-EXPORT-02 sollte BAFA-Übersicht als Primärbeleg aufnehmen.",
+  "RADARABIA_Flaeche": "Echter Quellenwiderspruch: 25.000 m² (Aviation Week mit RADARABIA-Chairman-Zitat; Argaam) vs. 25,000 sq ft (Janes). In C-GCC-02 korrekt offen; M-SAU-RHM-01 nennt nur 25.000 m² und sollte auf den Widerspruch verweisen (Hinweis an market, nicht blockierend).",
+  "M-GCC-TUR-01": "Korrekt als nur durch zwei anonyme türkische Branchenquellen berichtet gekennzeichnet; Kuwait-Protokoll als berichtete Ministerunterzeichnung. Darf nicht als belegter Korkut-Vertrag in Matrix/SWOT verwendet werden; Marktbeobachtung formuliert das korrekt.",
+  "Ueberschneidung_M-RHM_P": "M-RHM-CUAS-01 konsistent mit P-SKX-07 (Gegenbefund P-SKX-08 separat). M-RHM-CAP-01 und P-SR30-08 sind dasselbe Euronews-Interview unter zwei Quellen-IDs (S-aaaf59c399a65ff2/S-5201e1820b86a0c3) – kein Zweitbeleg; Kapazitätsangaben konsistent mit P-CAP-01. M-RHM-ORDER-01 ist Wiedergabe der PM 02.07.2026 (P-SKX-11/C-GCC-13/T-CTX-24), konsistent.",
+  "Quellen-Duplikate": "Gleiche Dokumente unter mehreren Quellen-IDs (keine unabhängigen Zweitbelege): Janes 14.10.2022 (S-6cd5701123f00a73/S-18fa7e4158bdc58b), Janes 15.12.2022 (S-3b004b2cc914ddc4/S-f71c0348db6067c4), Janes 01.11.2019 (S-e1e08a6e0206896f/S-eb780da12d4e3349), Gulf News 23.02.2021 (S-9d63edda09166afa/S-e59dc842147cf65f), Army Recognition 17.11.2025 (S-0bc97ad481ad67e4/S-f06315f4acc363fb), Euronews 17.09.2026 (S-aaaf59c399a65ff2/S-5201e1820b86a0c3). Registry bereinigen (Hauptagent/zuständige Rollen).",
+  "SkyKnight_Status": "Janes 02/2025 'Qualifikation Ende 2026' (C-TI-05, M-UAE-EDGE-02) ist durch HALCON 11/2025 'late 2027' (P-SKN-03) und EDGE-CEO 05/2026 'not in service, going into production' (M-UAE-EDGE-03) überholt; Claims korrekt datiert, aber Beobachtung/Kante müssen den neueren Stand zeigen."
+ },
+ "netzwerk_pruefung": {
+  "metadaten": "company 'Rheinmetall AG', as_of 2026-10-10, target_id 'rheinmetall' passen zum Auftrag; kein alter Firmendatensatz erkennbar (alle Quellen am 10.10.2026 abgerufen, Kanten-IDs/Claims laufbezogen).",
+  "kanten_geprueft": 46,
+  "kanten_mit_fehler": [
+   "E19 (RAST-Quote/Kontrolle überholt, ME-1)",
+   "E46 (Status nicht historisch, ME-2)"
+  ],
+  "hinweise_nicht_blockierend": [
+   "E27 HALCON→RAD: Status um 'Qualifikation laut HALCON late 2027 erwartet (11/2025)' ergänzen (P-SKN-03).",
+   "E34 Rheinmetall→Österreich (Skyranger 30): Vertragsweg läuft über GDELS (Unterauftrag); Kante als indirekt/Endkunde kennzeichnen oder direkte Österreich-Beziehung über P-SG-01 (Skyguard NG, direkter Vertrag mit Verteidigungsministerium) belegen.",
+   "E14 Rheinmetall→RSADF: Kundenbeziehung beruht auf allgemeiner Herstelleraussage 'Kingdom' plus Janes-Betreiberhinweis; Unsicherheit korrekt angegeben.",
+   "E11 RAD→RADARABIA: Gründung durch RAD laut Aviation Week; über welche Gesellschaft die 20 % (indirekt) gehalten werden, ist im GB nicht ausgewiesen – keine Kapitalquote an E11 hängen (derzeit korrekt)."
+  ],
+  "richtung_identitaet": "Alle übrigen Kanten: Akteursidentitäten, Richtung (Lieferant→Kunde, Eigentümer→Beteiligung), Kapitalanteil vs. Stimmrechte (E08: 49 % Kapital, Vollkonsolidierung wegen Stimmrechtsmehrheit; E10/E15 at-equity ohne JV-Fußnote), Historienflags (E29, E30, E43, E44, E45) und Produktzuordnungen (skynex, skyranger30/35, skyguard, skyknight, spexer, sadm, mass, millennium) gegen Belege bestätigt. Überschneidung E41 korrekt als overlap ohne bilateralen Vertrag."
+ },
+ "module_views_pruefung": {
+  "context": "Labels/Ereignisdaten korrekt (ev-segmente 2026-01-01, ev-iran-krieg 2026-02-28, ev-bilanz-golf 2026-03-11, ev-lig 2026-06-15, ev-skynex 2026-07-02, ev-kuwait 2026-07-10, ev-h1 2026-08-06, ev-abgang-bericht 2026-08-26, ev-fuehrungswechsel 2026-10-01 'laut Medien'). Abhängig von ME-6 (T-CTX-21 in ev-bilanz-golf/golfstaaten).",
+  "portfolio": "Korrektur nötig (owner portfolio): Region 'Golfstaaten > Katar' führt P-SKX-02 (Auftrag 2019, Kunde/Region offiziell nicht genannt) – Länderzuordnung unbelegt; in eigene Rubrik 'Zuordnung unbestätigt' verschieben oder Label ergänzen. P-CUAS-01 unter Saudi-Arabien ist Demonstration, kein Kunde – Label ok, sofern als Erprobung angezeigt. P-RG-02 fehlt in europa.claim_ids, steht aber in Sektion Deutschland (redaktionell).",
+  "cluster": "Korrektur nötig (owner cluster): report_log GB 2024 'Rheinmetall Projects Development Consultancy LLC nicht gefunden' falsch (ME-5); golfstaaten-Sektion zeigt RAST 40 % (ME-1). Coverage: Suchwege inkl. Fach-/Nachrichtenmedien (Janes, Breaking Defense, Gulf News, Argaam, Army Recognition, Defense News) dokumentiert, keine reine PM-Suche; es fehlt jedoch eine explizite Fundliste/Hinweisverfolgung, und der Hinweis 'aktuelle Funktion Schwer nicht geprüft' wurde trotz leichter Auffindbarkeit nicht verfolgt (ME-2).",
+  "market": "Korrektur nötig (owner market): Beobachtungen rheinmetall_skynex_skyranger/gulf_access und /production_capacity (ME-3); edge_skyknight_skyshield/procurement_status 'Qualifikation bis Ende 2026 erwartet' veraltet – neueren Stand late 2027 (P-SKN-03, per reuse) bzw. 'going into production' (M-UAE-EDGE-03) zeigen. Übrige Peer-/Kriterienzuordnungen gemäß comparison-plan.json plausibel; Beobachtungen bleiben reine Faktenbeschreibungen; M-GCC-TUR-01 korrekt als anonym berichtet."
+ },
+ "stichproben_B": {
+  "methode": "Gruppen nach Modul × Quelle × Aussageart gebildet; da die Quellen für A-Claims ohnehin geöffnet wurden, wurde die Stichprobe in allen Gruppen auf Vollprüfung ausgeweitet. Kein inhaltlicher Fehler in B-Claims gefunden; keine B-Claims als 'nicht einzeln geprüft' verblieben.",
+  "gruppen": [
+   {
+    "gruppe": "context|Rheinmetall-Website/PM/Bericht|Struktur-/Ereignis-Hintergrund",
+    "ids": [
+     "T-CTX-07",
+     "T-CTX-13",
+     "T-CTX-20",
+     "T-CTX-23"
+    ],
+    "geprueft": "alle"
+   },
+   {
+    "gruppe": "context|Zefix|Registerdaten",
+    "ids": [
+     "T-CTX-14"
+    ],
+    "geprueft": "alle"
+   },
+   {
+    "gruppe": "context|Rheinmetall-PM/Fachmedien|frühere Funktionen Köhne",
+    "ids": [
+     "H-KOE-04",
+     "H-KOE-05",
+     "H-KOE-06",
+     "H-KOE-07"
+    ],
+    "geprueft": "alle"
+   },
+   {
+    "gruppe": "portfolio|Produktseiten/Broschüre|technische Herstellerangaben",
+    "ids": [
+     "P-SKX-01",
+     "P-SKN-02",
+     "P-RG-01",
+     "P-MIL-01",
+     "P-SR30-01"
+    ],
+    "geprueft": "alle (inkl. Zahlenangaben 25/35/50 km, 4.000 m, 252 Schuss, 1.000 Schuss/min, 3.000 m)"
+   },
+   {
+    "gruppe": "portfolio|Rheinmetall-PM|ältere Aufträge ohne Kundennennung",
+    "ids": [
+     "P-SR30-07",
+     "P-SG-02",
+     "P-SG-03"
+    ],
+    "geprueft": "alle"
+   },
+   {
+    "gruppe": "portfolio|Fachmedien/Interview|Hintergrund",
+    "ids": [
+     "P-RG-02",
+     "P-SG-04",
+     "P-SR30-08"
+    ],
+    "geprueft": "alle"
+   },
+   {
+    "gruppe": "portfolio|Transkript Q1-2026|Ankündigungen",
+    "ids": [
+     "P-CUAS-02",
+     "P-AMMO-01"
+    ],
+    "geprueft": "alle"
+   },
+   {
+    "gruppe": "market|Lagemedien|Bedrohungshintergrund",
+    "ids": [
+     "M-GCC-THREAT-03",
+     "M-KWT-THREAT-01",
+     "M-SAU-THREAT-01",
+     "M-GCC-THREAT-05"
+    ],
+    "geprueft": "alle"
+   },
+   {
+    "gruppe": "market|SIPRI/Argaam|Budgetkennzahlen",
+    "ids": [
+     "M-KWT-BUDGET-01",
+     "M-OMN-BUDGET-01",
+     "M-UAE-BUDGET-01",
+     "M-SAU-BUDGET-02"
+    ],
+    "geprueft": "alle"
+   },
+   {
+    "gruppe": "market|Fachmedien/CRS|Programme Dritter",
+    "ids": [
+     "M-KWT-PROG-01",
+     "M-SAU-PROG-01",
+     "M-BHR-PROG-01",
+     "M-RHM-ORDER-01"
+    ],
+    "geprueft": "alle"
+   }
+  ]
+ },
+ "quellenabrufgruppen": [
+  "Rheinmetall-Geschäftsberichte 2025/2024 (Download, pdftotext; S. 15, 39, 65, 234, 240, 265, 268-271 bzw. 252-256): C-STR-01/03/04/05/06/07/08/09, C-TI-01/07, C-KD-04",
+  "Rheinmetall H1-PM, H1-Bericht, FY2025-PM, Sept.-Präsentation: T-CTX-01..05/08..13/20/25",
+  "Transkripte/Präsentationen FY2025 & Q1-2026: P-GCC-01..03, P-CAP-01, P-CUAS-02, P-AMMO-01, Abgleich M-RHM-GULF-01/02, T-CTX-21",
+  "Rheinmetall-PMs/Produktseiten (19 Dokumente): P-*, C-KD-01..03, C-TI-09, C-GCC-11/13, H-KOE-02/04/06, H-DUE-01, T-CTX-23/24/26",
+  "Zefix-JSON + Vorstandsseite: T-CTX-06/14, H-DUE-02, H-PAP-01/02, H-GAN-01",
+  "Personen-Medien (esut, Inside Paradeplatz, NZZ 11.03./20.03./10.10.2026 per Direktabruf) + Primärquellensuche Köhne: H-KOE-01/03, H-DUE-03/04, T-CTX-22, C-KD-05, C-GCC-12",
+  "Golf-Cluster-Medien (Janes ×5, Aviation Week, Argaam, Gulf Times ×2, Qatar Tribune, Defense News, PMG, Gulf News ×2, Arab News, SRF, Breaking Defense, EDR ×3): C-GCC-*, C-TI-05/06, M-QAT-RHM-*, M-SAU-RHM-*, M-UAE-EDGE-01/02, P-SKN-*",
+  "Zusatzrecherche nur zur Klärung wesentlicher Punkte: Asharq Al-Awsat 25.04.2020 (SAMI-CEO-Wechsel), EOS-ASX 24.08.2026 (Schwer CEO), Websuche Köhne-Primärquelle",
+  "Partner/Technologie: HENSOLDT-PM und -GB 2025, Diehl-GB 2025, Rheinmetall-PM NNbS, EDR ILA 2024, Defense Post: C-TI-01..04/07/08",
+  "Exportrahmen: BAFA-Kurzmeldung + Übersicht, AWA, Handelsblatt, WBF, SECO-Seite + Statistik 2025, SRF: C-EX-*, M-DEU-EXPORT-*, M-CHE-EXPORT-*, C-GCC-10",
+  "Markt/Peers (Al Jazeera ×2, Gulf News ×2, Asharq, CRS, SIPRI, Arab News, trade.gov, Defense News, Unmanned Airspace, inderes/Kongsberg, TU, Army Recognition ×3, Breaking Defense ×3, Quwa, EOS-ASX, DIE ×2, Janes, TWZ, MBDA, GovCon Wire, Korea Times, Argaam, MEE ×2, The National, Militarnyi, Defense Post, Gabelli, Business AM, Euronews): M-*"
+ ],
+ "wiederverwendete_pruefergebnisse": "Keine – erstes Basis-Review dieses Laufes/Stichtags.",
+ "offene_datenluecken_transparent": [
+  "Köhne-Amtsantritt 01.10.2026 nicht primär bestätigt (nur Fachmedien).",
+  "Kunden der Skynex-Aufträge 2019 und Q2-2026 offiziell unbenannt; Golf-Zuordnung unbestätigt.",
+  "Betriebsstatus RADARABIA- und RBAT-Werke nach Gründung nicht belegt; RADARABIA-Fläche widersprüchlich.",
+  "Einstufung von GCC-Staaten als konfliktbeteiligt durch die Schweiz nicht öffentlich festgelegt.",
+  "Rheinmetall-Aussagen zu Golf-Einsätzen (P-GCC-01/03, T-CTX-21/22) sind Herstelleraussagen ohne Länder-/Systemzuordnung; kein unabhängiger Einsatznachweis 2026."
+ ],
+ "ausgabereife": "Nicht freigegeben für Interpretation/SWOT. Nach Korrektur von ME-1..ME-6 und der module_views-Punkte durch cluster/market/portfolio/context gezielte Nachprüfung nur der geänderten Claims (C-STR-08, C-GCC-07 + neue Schwer/EOS-Claims, M-RHM-GULF-02, P-SKX-06, C-STR-05, T-CTX-21, C-EX-01, M-UAE-ACCESS-01, M-QAT-BARZAN-01, M-QAT-PROG-02), der Kanten E19/E46 und der betroffenen Beobachtungen; übrige 160 geprüfte Claims können bei unverändertem Fingerprint übernommen werden.",
+ "claims": [
+  {
+   "id": "T-CTX-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-9610b6cf1ddab64f); Belegstelle \"S. 1, Abschnitt 'Fiscal year 2025' und Hinweis zu discontinued operations\" inhaltlich bestätigt."
+  },
+  {
+   "id": "T-CTX-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-1131fc174fb33fc5); Belegstelle \"S. 1-2, Abschnitte 'Key facts' und 'Rheinmetall Group: sales growth of 39%'\" inhaltlich bestätigt."
+  },
+  {
+   "id": "T-CTX-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-1131fc174fb33fc5); Belegstelle \"S. 1 und S. 4, Abschnitt 'Outlook: annual sales guidance adjusted slightly'\" inhaltlich bestätigt.",
+   "hochstufung": "Kennzahl Management-Zusammenfassung (Auftrag T-CTX-01..03)"
+  },
+  {
+   "id": "T-CTX-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a57c168b042d9b28, S-9610b6cf1ddab64f, S-5a9f539c26c5885f); Belegstelle \"Rheinmetall AG (Halbjahresfinanzbericht): PDF-S. 8, Abschnitt 'Changes to the structure of the Group'; Rheinmetall AG (Pressemitteilung): S. 4, Abschnitt 'Rhein\" inhaltlich bestätigt."
+  },
+  {
+   "id": "T-CTX-05",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a57c168b042d9b28); Belegstelle \"PDF-S. 38 (Anhang, Segmentberichterstattung) und PDF-S. 8\" inhaltlich bestätigt."
+  },
+  {
+   "id": "T-CTX-06",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a8887f614647359f); Belegstelle \"Seite 'Der Vorstand der Rheinmetall AG', Personenabschnitte\" inhaltlich bestätigt."
+  },
+  {
+   "id": "T-CTX-07",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-3ef169e9e35e0c9a); Belegstelle \"Divisionsseite Air Defence, Abschnitte Einleitung und 'Standorte'\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "T-CTX-08",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-1131fc174fb33fc5, S-a57c168b042d9b28); Belegstelle \"Rheinmetall AG (Pressemitteilung): S. 3, Abschnitt 'Air Defence: Rheinmetall Nomination increases sixfold'; Rheinmetall AG (Halbjahresfinanzbericht): PDF-S. 17,\" inhaltlich bestätigt."
+  },
+  {
+   "id": "T-CTX-09",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a57c168b042d9b28); Belegstelle \"PDF-S. 30, Segmentbericht, Zeile 'Employees 30/6 (FTE)'\" inhaltlich bestätigt.",
+   "hochstufung": "Kennzahl Air Defence (Auftrag T-CTX-08..11)"
+  },
+  {
+   "id": "T-CTX-10",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a57c168b042d9b28); Belegstelle \"PDF-S. 22, Abschnitt 'Current annual guidance', Tabelle\" inhaltlich bestätigt."
+  },
+  {
+   "id": "T-CTX-11",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "September-Präsentation PDF-S. 38 (2030 Sales potential €3-4bn), S. 39 (Top Projects inkl. \"Large replacement projects in MENA region\"), S. 42 (\"Superior cost efficiency proven in Ukraine and Gulf states\") bestätigt."
+  },
+  {
+   "id": "T-CTX-12",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "H1-PM S. 3 \"ramp-up of the short- and very short-range air defence projects\" bestätigt."
+  },
+  {
+   "id": "T-CTX-13",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-9610b6cf1ddab64f); Belegstelle \"S. 3, Abschnitt 'Electronic Solutions: Further increase in sales'\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "T-CTX-14",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-7a58ddb6fbab572c); Belegstelle \"Zefix-Datensatz, Felder name/uid/legalSeat/status/purpose\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "T-CTX-20",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a57c168b042d9b28); Belegstelle \"PDF-S. 7, Abschnitt 'Global economy with weak momentum'\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "T-CTX-21",
+   "depth": "A",
+   "status": "Korrektur",
+   "pruefnotiz": "defence-network 11.03.2026 bestätigt Zitat (\"weit über 100 Drohnen ... nur über das Wochenende in Middle East\", Länder nicht nennbar). Abweichung: Artikel nennt \"Oerlikon 30mm Revolverkanone (Skyranger-Effektor)\"; Primärtranskript FY2025 (S-9c6ec027d4d1de66, PDF-S. 3) nennt \"Oerlikon Revolver Gun\", Präsentation Folie 5 \"Gun MK3\" (35 mm). 30-mm/Skyranger-Bezug im Golf primär nicht gestützt; Systemliste nicht als Rheinmetall-Aussage übernehmen."
+  },
+  {
+   "id": "T-CTX-22",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "NZZ 11.03.2026 (datePublished 2026-03-11) per Direktabruf geöffnet: Frage/Antwort Golfstaaten wortgleich; ARIVA 11.03.2026 bestätigt Paraphrase. Inhalt konsistent mit Primärtranskript P-GCC-01."
+  },
+  {
+   "id": "T-CTX-23",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-2eda3f58ea36842d); Belegstelle \"Pressemitteilung vom 15.6.2026, Key facts und Absatz 1\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "T-CTX-24",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-b003618b3ae9eba2); Belegstelle \"Pressemitteilung vom 2.7.2026, Key facts und Absätze 1-3\" inhaltlich bestätigt."
+  },
+  {
+   "id": "T-CTX-25",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a57c168b042d9b28); Belegstelle \"PDF-S. 43, Anhang, 'Rheinmetall Electronics acquires further shares in Rheinmetall Arabia Simulation and Training'\" inhaltlich bestätigt."
+  },
+  {
+   "id": "T-CTX-26",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a831015ab01561c0); Belegstelle \"Pressemitteilung vom 10.7.2026, Key facts und Absatz 1\" inhaltlich bestätigt.",
+   "hochstufung": "Golf-Auftrag, gleiche Quelle wie Netzwerkkante C-GCC-11"
+  },
+  {
+   "id": "H-KOE-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "esut 04.09.2026 Abs. 1 und Inside Paradeplatz 26.08.2026 geöffnet, Wortlaut bestätigt (esut: \"nach unternehmensinternen Informationen\"; IP ohne Namen). Gezielte Suche nach Rheinmetall-Primärquelle (Newsroom, Divisions-/Tochterseiten, Zefix) ohne Treffer: Divisionsseite Air Defence und Rheinmetall-Air-Defence-Seite nennen keine Leitung; Zefix (letzte SHAB-Publikation 07.07.2026) ohne Köhne. Weitere Sekundärquelle militaeraktuell.at (über Suche gefunden, 403) berichtet gleichlautend. Konsistenz: Rheinmetall-PM 24.06.2026 nennt Dürr \"Head of Rheinmetall's Air Defence Division\", PM 15.06.2026 \"CEO Rheinmetall Division Air Defence\" – zeitlich konsistent mit Wechsel zum 01.10.2026; NZZ 10.10.2026 bestätigt Dürrs Abgang. Aktuelle Rolle Köhnes zum Stichtag nur sekundär berichtet (angekündigt), nicht primär bestätigt – sichtbar als Unsicherheit führen."
+  },
+  {
+   "id": "H-KOE-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "PM 05.01.2026 (\"Head of Rheinmetall's Weapons and Munitions division\"), PM 17.06.2026 (\"Head of Division Weapon and Ammunition\") und PDF-PM 18.06.2026 (\"CEO of Rheinmetall's Weapon and Ammunition Division\") geöffnet; esut Abs. 2 \"2025 übernahm er die Führung\" bestätigt."
+  },
+  {
+   "id": "H-KOE-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-5a9d049f8f71abd3); Belegstelle \"Artikel vom 4.9.2026, Absatz 2\" inhaltlich bestätigt."
+  },
+  {
+   "id": "H-KOE-04",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a9b0fc98036cb816); Belegstelle \"Pressemitteilung vom 24.9.2020, Absatz 3\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "H-KOE-05",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-65fc5577a5b55116); Belegstelle \"Artikel vom 3.5.2023, Bildunterschrift und Absatz 1\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "H-KOE-06",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-faa22e3546ff37b9, S-63879230d36c7828, S-d33dad308bfc2b33); Belegstelle \"Rheinmetall AG (Pressemitteilung): Pressemitteilung vom 5.1.2026, Zitat Köhne; Rheinmetall AG (Pressemitteilung): Pressemitteilung vom 17.6.2026, Zitat Köhne; R\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "H-KOE-07",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-b9c5d3865d4b34f0); Belegstelle \"Videobeschreibung/Artikeltext, Absätze 1-5\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "H-DUE-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-2eda3f58ea36842d); Belegstelle \"Pressemitteilung vom 15.6.2026, Zitatabsatz\" inhaltlich bestätigt."
+  },
+  {
+   "id": "H-DUE-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Zefix-JSON (CHE-101.403.861) abgerufen: SHAB 2021-10-14 Eintrag Dürr (Delegierter VR, Direktor, Vorsitzender GL), Ochsner ausgeschieden; jüngste Publikation 2026-07-07 ohne Dürr/Köhne."
+  },
+  {
+   "id": "H-DUE-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "esut 04.09.2026 Abs. 1 und NZZ-Interview 10.10.2026 (datePublished 2026-10-10) geöffnet; Kündigung bei Papperger, fünf Jahre RAD AG, knapp drei Jahre Sparte bestätigt."
+  },
+  {
+   "id": "H-DUE-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Inside Paradeplatz 26.08.2026 geöffnet: Unterzeile \"abgesetzt\", \"Gestern hat die Zentrale ... verabschiedet\", mehrere anonyme Quellen bestätigt."
+  },
+  {
+   "id": "H-PAP-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a8887f614647359f); Belegstelle \"Vorstandsseite, Abschnitt Armin Papperger\" inhaltlich bestätigt."
+  },
+  {
+   "id": "H-PAP-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Vorstandsseite (Mandat \"Präsident des Verwaltungsrats\" RAD AG) und Zefix SHAB 2024-07-18 (Sagel aus, Papperger Präsident VR) bestätigt."
+  },
+  {
+   "id": "H-GAN-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Zefix SHAB 2026-01-12 (Gansauge Mitglied VR) und 2026-07-07 (Vizepräsident VR, Krüger ausgeschieden) sowie Vorstandsseite (CEO W&A 04/2023-12/2024) bestätigt."
+  },
+  {
+   "id": "P-SKX-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-69738b1972b9a1ed); Belegstelle \"Produktseite Skynex, Abschnitte Skymaster, X-TAR3D, Revolver Gun Mk3, TREO, Effektoren\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-RG-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-4f3b5ef3636a54d6); Belegstelle \"Broschüre D712e0222, S. 1 (Main Features) und Tabelle Technical Characteristics\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-RG-02",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-e1e08a6e0206896f); Belegstelle \"Janes, 01.11.2019, Artikeltext\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-SKX-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "PM 30.10.2019 (Kunde/Region nicht genannt, ~210 Mio. EUR, Lieferung bis 2022) und Janes 01.11.2019 (\"unable to identify the customer or its region\", Bezug Angriff 14.09.) bestätigt."
+  },
+  {
+   "id": "P-SKX-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Janes 14.10.2022 (MoD-Video 13.10., \"Shield 6 (Skynex)\", acht Revolver Gun Mk3, ein X-TAR3D) und Janes 15.12.2022 (\"first Skynex systems it supplied were for Qatar\") bestätigt. Hinweis: S-6cd5701123f00a73/S-18fa7e4158bdc58b sowie S-3b004b2cc914ddc4/S-f71c0348db6067c4 sind jeweils derselbe Janes-Artikel unter zwei URLs – kein unabhängiger Zweitbeleg."
+  },
+  {
+   "id": "P-SKX-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-3c0b72dcdb4a669f); Belegstelle \"Army Recognition, 20.01.2026, Artikeltext\" inhaltlich bestätigt.",
+   "hochstufung": "Katar-Bezug (Schwerpunkt Golf)"
+  },
+  {
+   "id": "P-SKX-05",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-3b004b2cc914ddc4); Belegstelle \"Janes, 15.12.2022, Absätze 2–5\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SKX-06",
+   "depth": "A",
+   "status": "Korrektur",
+   "pruefnotiz": "GAU 18.11.2025 geöffnet. Fehler in Aussageursprung: Laut Artikel gab Papperger beim Kapitalmarkttag an, dass vier Skynex-Systeme in der Ukraine im Einsatz sind; die Folgerung \"all systems financed and pledged by the German government have been delivered\" ist GAU-Schluss (\"This means that\"). Claim und uncertainty vertauschen Zitat und Ableitung. Shephard 20.11.2025 (S-1363f14540d03428) bestätigt ebenfalls Papperger-Aussage zu vier Skynex."
+  },
+  {
+   "id": "P-SKX-07",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "PM 15.01.2025 letzter Absatz bestätigt. Gegensatz zu P-SKX-08 ist korrekt als Herstellerangabe vs. berichtete interne Bewertung getrennt; beide attribuiert lassen, nicht auflösen."
+  },
+  {
+   "id": "P-SKX-08",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Defense Express 03.07.2026 geöffnet: Stern-Bezug, 01.04.2026, zwei Batterien/acht Geschützmodule, drei ausgefallen, Rheinmetall-Stellungnahme, Regierungsvertreter \"too few\" bestätigt. Stern-Original nicht geöffnet (wie angegeben)."
+  },
+  {
+   "id": "P-SKX-09",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-2da1e8991e862e88); Belegstelle \"Pressemitteilung 15.01.2025, Absätze 1–3\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SKX-10",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-fa8494e2dc43316e); Belegstelle \"Joint Forces News, 23.12.2025 (Dateline 'Press Release, Düsseldorf')\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SKX-11",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-b003618b3ae9eba2); Belegstelle \"Pressemitteilung 02.07.2026, Absätze 1–4\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-RO-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-6bdb338d23c29e11); Belegstelle \"Pressemitteilung 24.06.2026, Absätze 1–3\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SKN-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Gulf News 23.02.2021 (Al-Bannai-Zitat, HALCON Einheit von EDGE) bestätigt. Army Technology für Prüfer nicht zugänglich (HTTP 403); Integrationsaussage, 60 Flugkörper/Starter und 10 km inhaltsgleich durch EDR 08.03.2021 (S-829071fd179d4705) und Rheinmetall-Produktseite (S-69738b1972b9a1ed) bestätigt – Quellenergänzung empfohlen."
+  },
+  {
+   "id": "P-SKN-02",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-69738b1972b9a1ed); Belegstelle \"Produktseite Skynex, Abschnitt SkyKnight\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-SKN-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "EDR 20.11.2025 bestätigt Zitate Al Shamsi (Qualifikation \"late 2027\", Radar/Kanonen von Rheinmetall Italia, \"joint development\"). \"nähert sich dem Ende der Entwicklung\" ist Autorformulierung. Neuerer Stand als Janes 02/2025 (Ende 2026) – maßgeblich für Status."
+  },
+  {
+   "id": "P-SR30-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-c0d13e5db6387716, S-d2d239c37b99eddf); Belegstelle \"Pressemitteilung 10.06.2026, Absätze 2–4 | Pressemitteilung 15.06.2026, Absatz 3\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-SR30-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-9df26a722e63e113); Belegstelle \"ESuT, 27.02.2024, Absätze 1–4\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SR30-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-d2d239c37b99eddf); Belegstelle \"Pressemitteilung 15.06.2026, Abschnitt Kunden\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SR30-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-562f0f3f359a746b); Belegstelle \"Pressemitteilung 23.02.2024, Absätze 1–3\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SR30-05",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-d1aafc1c9b0f1a75); Belegstelle \"Pressemitteilung 30.09.2024, Absätze 1–3\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SR30-06",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-60677f3d57da054d); Belegstelle \"Pressemitteilung 12.12.2025, Absätze 1–4\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SR30-07",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-d2ef86f50f08a3d3); Belegstelle \"Pressemitteilung 20.12.2023, Absätze 1–3\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-SR30-08",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-5201e1820b86a0c3); Belegstelle \"Euronews, 17.09.2026, Interviewabschnitt Skyranger\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-SR30-09",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-0bc97ad481ad67e4); Belegstelle \"Army Recognition, 17.11.2025, Absätze 1–4\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SR30-10",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-30ec1ea5187557fe); Belegstelle \"Tactical Report, 26.12.2025, frei sichtbarer Teaser\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SR35-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-eadffcced857ac38); Belegstelle \"Pressemitteilung 10.10.2025, Absätze 1–4\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SR35-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-1363f14540d03428, S-d4ee756cc068980b); Belegstelle \"Shephard, 20.11.2025, Absätze 1–2 | Army Recognition, 03.09.2026, Absätze 1–3\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SG-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-ef6817f0a0493313); Belegstelle \"Pressemitteilung 12.12.2023, Absätze 1–4\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-SG-02",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a04eb741cdb51fb3); Belegstelle \"Pressemitteilung 05.07.2022, Absätze 1–2\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-SG-03",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-f7338d89b12509f0); Belegstelle \"Pressemitteilung 10.01.2023, Absätze 1–2\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-SG-04",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-96f74711ef265339); Belegstelle \"Shephard, 04.03.2014, Absätze 1–2\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-GCC-KW-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-72a1f85efa81bc7e); Belegstelle \"Army Recognition, 21.01.2013, Abschnitt Kuwait\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-GCC-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Transkript FY2025 PDF-S. 3 und Präsentation 11.03.2026 Folie 5 (\"Rheinmetall products in use\", \"used to fight incoming Iranian threats\") bestätigt."
+  },
+  {
+   "id": "P-GCC-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Transkript FY2025 PDF-S. 9-10 bestätigt (negotiations, deliver in August, \"you need the contract and not the negotiations\")."
+  },
+  {
+   "id": "P-GCC-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Transkript Q1-2026 PDF-S. 5 (\"about 150 systems in the whole Gulf region, gun-based\", \"more than 10 systems in 2026\") und Folie 10 (\"up to 10 systems for delivery in 2026\") bestätigt; Abweichung korrekt in uncertainty. Maßgebliche Primärquelle gegenüber M-RHM-GULF-02."
+  },
+  {
+   "id": "P-CUAS-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-5e9132be8a87d292); Belegstelle \"Pressemitteilung 18.12.2024, Absätze 1–3\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-CUAS-02",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-1587b1c751c31b9a); Belegstelle \"Transkript Q1-2026-Call, PDF-S. 23\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-CAP-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-d2d239c37b99eddf, S-9c6ec027d4d1de66); Belegstelle \"Pressemitteilung 15.06.2026, Schlussabsatz | Transkript FY2025-Call, PDF-S. 4\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-AMMO-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-1587b1c751c31b9a); Belegstelle \"Transkript Q1-2026-Call, PDF-S. 22\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "P-HEL-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-3373659fa8b66b85); Belegstelle \"Pressemitteilung 09.07.2026, Absätze 1–4\" inhaltlich bestätigt."
+  },
+  {
+   "id": "P-MIL-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-c7786baa0a315e17); Belegstelle \"Produktseite Naval air defence, Abschnitt Millennium Gun\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "C-STR-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "GB 2025 PDF-S. 268 (RAD AG 100 direkt, EK 386.181, Erg. 117.135 TEUR) und GB 2024 PDF-S. 254 (EK 373.980) per Download/Textextraktion bestätigt."
+  },
+  {
+   "id": "C-STR-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Unternehmensseite RAD \"Über uns\" bestätigt (Bündelung sämtlicher Flugabwehraktivitäten, Umfirmierung 1.1.2009, Produktlinien, >40 Länder). Hochgestuft A (trägt Kante E01).",
+   "hochstufung": "Netzwerkkante (required_full_review_ids)"
+  },
+  {
+   "id": "C-STR-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "GB 2025 S. 265 bestätigt."
+  },
+  {
+   "id": "C-STR-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "GB 2025 S. 268 (RDM 51 indirekt, EK 228.146) und S. 240 (Fremdanteil 49 %) sowie RDM-Unternehmensseite (RWM 51 %, Denel 49 %, gegründet 1.9.2008) bestätigt."
+  },
+  {
+   "id": "C-STR-05",
+   "depth": "A",
+   "status": "Korrektur",
+   "pruefnotiz": "GB 2025 S. 269/271 bestätigt alle vier Gesellschaften, Quoten und Fußnote (2) \"Vollkonsolidierung aufgrund der Mehrheit der Stimmrechte\". Fehler im Vorjahresbeleg: Rheinmetall Projects Development Consultancy LLC, Abu Dhabi, ist im GB 2024 (S-b159a0c9329835a7, PDF-S. 254) mit Fußnote (2), 49 % direkt, EK 1.114 TEUR enthalten; Evidenz/uncertainty \"nicht gefunden\" ist falsch (gleicher Fehler im report_log)."
+  },
+  {
+   "id": "C-STR-06",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "GB 2025 S. 270 At-Equity-Abschnitt (20 %, −4.392/−4.159) und GB 2024 S. 256 (Fußnote 6, −459/−933) bestätigt; ohne JV-Fußnote, daher assoziiert."
+  },
+  {
+   "id": "C-STR-07",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "GB 2025 S. 271 (49 %, 14.545/1.553, ohne Fußnote 5) und GB 2024 S. 256 (49, 14.799, −2.839) bestätigt."
+  },
+  {
+   "id": "C-STR-08",
+   "depth": "A",
+   "status": "Korrektur",
+   "pruefnotiz": "Beleg GB 2025 S. 271 bestätigt 40 % indirekt, Fußnote (5) JV, EK 13.625/Erg. 3.187 TEUR (Stand 31.12.2025). Fehler: Zum Stichtag 10.10.2026 überholt – laut Halbjahresfinanzbericht 2026 (S-a57c168b042d9b28, Anhang PDF-S. 43; T-CTX-25) hält Rheinmetall Electronics seit Anfang Juli 2026 100 % Kapital und 100 % Stimmrechte, Vollkonsolidierung in Digital Systems. Netzwerkkante E19 zeigt 40 %/JV als aktiv.",
+   "hochstufung": "Netzwerkkante (required_full_review_ids)"
+  },
+  {
+   "id": "C-STR-09",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "GB 2025 S. 268 (Electronics (1) 100 direkt) und S. 269 (Italia 100 indirekt) bestätigt."
+  },
+  {
+   "id": "C-TI-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "PM 25.01.2024 (Partner, 1,2 Mrd. brutto, 607/339/284, IRIS-T SLM/Skyranger 30, Vertragspartner ARGE), GB 2025 S. 271 (Joint Operations ARGE NNbS 33) und HENSOLDT-GB 2025 S. 32 bestätigt."
+  },
+  {
+   "id": "C-TI-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "HENSOLDT-PM 12.12.2025 bestätigt."
+  },
+  {
+   "id": "C-TI-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "EDR 05.06.2024 per Direktabruf bestätigt (LOI ILA 2024, SADM in Skyranger 30, Werferentwicklung/-fertigung)."
+  },
+  {
+   "id": "C-TI-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "The Defense Post 13.11.2025 bestätigt (\"reportedly\" Werfer; DefendAir = SADM laut Artikel)."
+  },
+  {
+   "id": "C-TI-05",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Gulf News 23.02.2021, Breaking Defense 24.02.2021 (Rheinmetall \"responsible for the integration\", VAE erster Kunde) und Janes 24.02.2025 bestätigt. Konsistenzhinweis: Qualifikationserwartung \"Ende 2026\" (Janes 02/2025) durch HALCON 11/2025 auf \"late 2027\" verschoben (P-SKN-03); EDGE-CEO 05/2026 \"not in service, going into production\" (M-UAE-EDGE-03). Kantenstatus E27 entsprechend aktualisieren (nicht blockierend)."
+  },
+  {
+   "id": "C-TI-06",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "EDR 08.03.2021 Abs. 2 bestätigt; nur eine Sekundärquelle, historisch."
+  },
+  {
+   "id": "C-TI-07",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "GB 2025 S. 15 (AR-Zustimmung Anfang 11/2025), S. 234 (Gewinn 46 Mio. EUR), GB 2024 (AIM 50 %) und Diehl-GB 2025 PDF-S. 23 bestätigt."
+  },
+  {
+   "id": "C-TI-08",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Diehl-GB 2025 PDF-S. 22 bestätigt; Gegenstand nicht genannt, kein Rheinmetall-Bezug – Kante E32 korrekt als Diehl–EDGE ohne Overlap-Kooperation."
+  },
+  {
+   "id": "C-TI-09",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "PM 23.02.2024 bestätigt."
+  },
+  {
+   "id": "C-GCC-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Qatar Tribune 14.03.2018 und Gulf Times 15.03.2018 (Notice to Proceed Munitionswerk, Vereinbarung QENF) bestätigt."
+  },
+  {
+   "id": "C-GCC-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Aviation Week 07.03.2022 (25.000 m², Fertigung/MRO/Ersatzteile/Ausbildung), Janes 07.03.2022 (25,000 sq ft Dschidda, Skyguard-MRO RSADF, 60 % Lokalisierung \"according to the two companies\") und Argaam 07.03.2022 (25.000 m²) bestätigt. RADARABIA-Flächenwiderspruch korrekt offen ausgewiesen; zwei Quellen (inkl. Zitat RADARABIA-Chairman) nennen m², Janes sq ft – in Ausgabe als Widerspruch führen, keine Fläche als gesichert darstellen."
+  },
+  {
+   "id": "C-GCC-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Argaam 07.03.2022 Abs. 1-3 und Janes 07.03.2022 bestätigt; \"company executive\" bezieht sich im Kontext auf Zino Hart (Bildunterschrift: board member RAD Arabia; Text: board member Rheinmetall Defense). Argaam weist auf KI-Übersetzung hin."
+  },
+  {
+   "id": "C-GCC-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-f06315f4acc363fb); Belegstelle \"Artikel vom 17.11.2025, Absätze 2 und letzter Absatz\" inhaltlich bestätigt.",
+   "hochstufung": "Golf-Marktzugang Saudi-Arabien (Schwerpunkt C-GCC-*)"
+  },
+  {
+   "id": "C-GCC-05",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Defense News 06.04.2016 (SPA-Bezug, Al-Kharj, RDM/SAMIC) und PMG-Antwort NW1259 (Frage 20.05.2016; kein JV, schlüsselfertig, Lieferanten-Kunden-Beziehung) bestätigt. Kante E43 als Lieferbeziehung korrekt."
+  },
+  {
+   "id": "C-GCC-06",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Gulf News/Reuters 08.11.2018 bestätigt (1 Mrd. USD, Denels 49 % an RDM, \"a source familiar\", Schwer: \"discussions are not finalised\"). Teilkante E44 historisch korrekt; Fortbestand Denel 49 % über C-STR-04 belegt."
+  },
+  {
+   "id": "C-GCC-07",
+   "depth": "A",
+   "status": "Korrektur",
+   "pruefnotiz": "Arab News 25.02.2019 bestätigt Wortlaut (SAMI-CEO seit 01/2018; Rheinmetall Defence 2012-2015 inkl. CEO Combat Systems; Rheinmetall International AG 2016-2017). Fehler: Kante E46 \"CEO (Stand 2019)\" ohne historical-Flag; Schwer wurde im April 2020 von Walid Abukhaled abgelöst (Asharq Al-Awsat 25.04.2020, english.aawsat.com/node/2252001) und ist seit 08/2022 MD/CEO der Electro Optic Systems (EOS) – unterzeichnet die im Paket enthaltene EOS-ASX-Mitteilung S-0ee334ddc9eec2c2 (S. 3) und laut ASX-Mitteilung 24.08.2026 weiterhin CEO. EOS ist Markt-Peer mit VAE-Auftrag (M-PEER-EOS-01/02)."
+  },
+  {
+   "id": "C-GCC-08",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Janes 14.10.2022 und 15.12.2022 bestätigt (siehe Duplikat-Hinweis P-SKX-03)."
+  },
+  {
+   "id": "C-GCC-09",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-eb780da12d4e3349, S-18fa7e4158bdc58b); Belegstelle \"Artikel vom 01.11.2019, Absätze 1 und 3 | Artikel vom 14.10.2022, letzter Absatz\" inhaltlich bestätigt.",
+   "hochstufung": "Golf-Kundenzuordnung (Schwerpunkt C-GCC-*)"
+  },
+  {
+   "id": "C-GCC-10",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "SRF 12.07.2022 bestätigt (SECO-Angaben Katar, acht Kanonen, Garantien; Saudi-Arabien Ersatzteile/Munition). Kein Hersteller genannt – korrekt keine Kante."
+  },
+  {
+   "id": "C-GCC-11",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "PM 10.07.2026 bestätigt (Kuwaiti Naval Forces, acht Al-Dorra-Boote, Wert \"low double-digit\" + \"high single-digit\", Key facts \"mid double-digit\", Q2 2026, Lieferung bis Q2 2029, ADSB baut für EDGE als Prime). Vertragsrichtung offen korrekt ausgewiesen."
+  },
+  {
+   "id": "C-GCC-12",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "NZZ 20.03.2026 bestätigt Wortlaut. Hinweis: NZZ verdichtet Pappergers Interviewaussage (\"unsere Flugabwehrsysteme\", S-549a5efe1b3c131f) zu \"Skynex\"; Skynex-spezifische Golf-Präsenz damit nicht primär belegt.",
+   "hochstufung": "Golf-Präsenzaussage (Schwerpunkt C-GCC-*)"
+  },
+  {
+   "id": "C-GCC-13",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "PM (DE) 02.07.2026 bestätigt; Kunde/Region nicht genannt."
+  },
+  {
+   "id": "C-KD-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "PM 27.02.2024 bestätigt."
+  },
+  {
+   "id": "C-KD-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "PM 12.12.2025 bestätigt."
+  },
+  {
+   "id": "C-KD-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "PM 24.06.2026 bestätigt (verweist auf PM 02.06.2026; zitiert Dürr als Head of Air Defence Division)."
+  },
+  {
+   "id": "C-KD-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "GB 2025 S. 39 (Italien Skynex eingeführt) und S. 65 (Lieferungen an europäische Kunden; Backlog NNbS/Skyranger 30) bestätigt."
+  },
+  {
+   "id": "C-KD-05",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "NZZ 20.03.2026 (32 Systeme, 800 Mio. CHF, keine verbindliche Offerte, freihändige Vergabe, ab 2028) per Direktabruf bestätigt."
+  },
+  {
+   "id": "C-EX-01",
+   "depth": "A",
+   "status": "Korrektur",
+   "pruefnotiz": "Handelsblatt 20.03.2026 und BAFA-Übersicht geöffnet; Inhalt bestätigt (Länder, Registrierungs-/Meldepflicht, Verlängerung per Bekanntgabe 10.09.2026 bis 15.09.2027, Abschnitt II Punkt 6.6 neu). Fehler in uncertainty: Es gibt keinen Widerspruch zum ursprünglichen Laufzeitende – \"gültig bis 9. September 2026\" auf der BAFA-Übersicht bezeichnet die archivierte Liste der Allgemeinen Genehmigungen, nicht die AGG 48; BAFA-Kurzmeldung (S-02f2d309d4be9a72) bestätigt 15.09.2026."
+  },
+  {
+   "id": "C-EX-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "WBF-Medienmitteilung 20.03.2026 bestätigt; Golfstaaten nicht genannt."
+  },
+  {
+   "id": "C-EX-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-954b1ad2b853fa8f); Belegstelle \"Tabelle 'Ausfuhr von Kriegsmaterial: 1.1.–31.12.2025; Endempfängerstaaten', S. 1\" inhaltlich bestätigt.",
+   "hochstufung": "Exportkontext (Schwerpunkt C-EX-*)"
+  },
+  {
+   "id": "M-GCC-THREAT-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-d246fbdc9c4c6b97); Belegstelle \"Artikeltext, Abschnitte zu Saudi-Arabien, VAE, Bahrain und Kriegskontext\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-UAE-THREAT-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-2e4f786c41d7b2ee); Belegstelle \"Artikeltext, Absatz mit kumulierten Zahlen des Verteidigungsministeriums (Stand 3. April 2026)\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-GCC-THREAT-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-00b3bb9075c00199); Belegstelle \"Artikeltext, Tally-Absatz\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-GCC-THREAT-03",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-4abfdb5bf72ddb30); Belegstelle \"Artikeltext, Länderabschnitte und Kontext zur Waffenruhe\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-KWT-THREAT-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-7a89b412faeaf6ce); Belegstelle \"Artikeltext, Kontextabsatz zum Angriff\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-GCC-THREAT-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Gulf News 08.10.2026 bestätigt Huthi-Anspruch Riad (nicht verifiziert), 3 Tote/36 Verletzte, Tanker 51 sm vor Katar (UKMTO), VAE-Flughäfen in Betrieb. Formulierungshinweis: Artikel erwähnt keine direkten iranischen Angriffe auf die VAE an diesem Tag; eine ausdrückliche Feststellung \"keine Angriffe\" enthält er nicht."
+  },
+  {
+   "id": "M-SAU-THREAT-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-37ccf8b458258ca3); Belegstelle \"Artikeltext, Absätze zu Entsendung, gemeinsamer Erklärung und Quellen\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-BHR-THREAT-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-4691f9471b203297); Belegstelle \"S. 1 (Issues for Congress) und S. 3–4 (NSA Bahrain)\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-GCC-THREAT-05",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-68cd066e40b60677); Belegstelle \"Artikeltext, Absätze zu Videos, Kosten und Shahed-Drohnen\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-SAU-BUDGET-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-c07effa3f3662a94); Belegstelle \"Fact Sheet April 2026, Tabelle 1 (S. 2) und Abschnitt 'The Middle East' (S. 7, 11); Tabelle 2 Fußnote g\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-KWT-BUDGET-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-c07effa3f3662a94); Belegstelle \"Fact Sheet April 2026, Tabelle 1 (S. 2)\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-OMN-BUDGET-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-c07effa3f3662a94); Belegstelle \"Fact Sheet April 2026, Abbildung 3 (Militärlast nach Ländern)\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-UAE-BUDGET-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-c07effa3f3662a94); Belegstelle \"Fact Sheet April 2026, Tabelle 2, Fußnote g; Tabelle 1\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-SAU-BUDGET-02",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-13ac2bcc7a8d3bc1); Belegstelle \"Artikeltext, Absatz zu Sektorausgaben Q1 2026\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-SAU-LOCAL-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-591cad6afbdb6208); Belegstelle \"Artikeltext, Einleitung (GAMI, erstes jährliches Sektortreffen Riad)\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-UAE-ACCESS-01",
+   "depth": "A",
+   "status": "Korrektur",
+   "pruefnotiz": "trade.gov CCG (Last published 2025-08-25) bestätigt Tawazun Council seit 02/2021, Offset-Schwelle >10 Mio. USD, AFAD \"lion's share\". Formulierung \"Raketenabwehr sei Top-Priorität\" überzeichnet: Quelle nennt missile defense als erste von mehreren \"procurement priorities\"."
+  },
+  {
+   "id": "M-GCC-PROG-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-4c4af0e05b9558f2); Belegstelle \"Artikeltext, Auflistung der Notifizierungen\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-UAE-PROG-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-d7c95ccbcee5e1ba); Belegstelle \"Artikeltext, zitierte State-Department-Mitteilung\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-QAT-PROG-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-a23dcdde6a28b4bb); Belegstelle \"Artikeltext, Absätze 1–3\" inhaltlich bestätigt.",
+   "hochstufung": "trägt Marktbeobachtung"
+  },
+  {
+   "id": "M-KWT-PROG-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-7a89b412faeaf6ce); Belegstelle \"Artikeltext, Absätze 1–3\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-KWT-PROG-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-346bbac409450892); Belegstelle \"Börsenmitteilung 30.06.2026, Absätze 1–2\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-QAT-PROG-02",
+   "depth": "A",
+   "status": "offen",
+   "pruefnotiz": "Teknisk Ukeblad 11.07.2019 bestätigt Vertrag Kongsberg-Raytheon (Raytheon \"hovedleverandør\" für Katar), 5,6 Mrd. NOK, 11 NASAMS-Länder inkl. Katar und Oman. Detail \"Katar Erstnutzer des AMRAAM-ER\" im für den Prüfer zugänglichen Text nicht gefunden (Artikel teils Abo); streichen oder belegen."
+  },
+  {
+   "id": "M-SAU-PROG-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-1bc2890891ce328b); Belegstelle \"Artikeltext, Absätze 1–3\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-BHR-PROG-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-4691f9471b203297); Belegstelle \"S. 6, Tabelle 1 'Recent U.S. Foreign Military Sales to Bahrain Notified to Congress'\" inhaltlich bestätigt.",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-GCC-TUR-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "MEE 11.05.2026 bestätigt: Korkut-100/25-Verträge Saudi-Arabien/Katar nur nach \"two Turkish defence industry insiders\"; Kuwait-G2G-Protokoll vom Verteidigungsminister unterzeichnet berichtet; Oman-Interesse und US-Lieferrückstände bestätigt. Anonymität korrekt ausgewiesen; nicht als bestätigter Vertrag verwenden."
+  },
+  {
+   "id": "M-SAU-PROG-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-873f7366346b9261); Belegstelle \"Artikeltext, Absätze 1–3\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-QAT-RHM-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-6cd5701123f00a73); Belegstelle \"Artikeltext (Jeremy Binnie), Absätze 1–3\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-QAT-RHM-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-3b004b2cc914ddc4); Belegstelle \"Artikeltext, Absatz zu Katar\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-QAT-RHM-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Army Recognition DIMDEX 2026 bestätigt (QEADF-Stand, X-TAR3D 50 km, Mk3 1.000 Schuss/min, 4.000 m, 252 Schuss). Hochgestuft A (trägt Marktbeobachtung).",
+   "hochstufung": "trägt Marktbeobachtung"
+  },
+  {
+   "id": "M-QAT-RHM-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-48538d413f65c35e); Belegstelle \"Artikeltext, Absatz zu Rheinmetall\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-QAT-BARZAN-01",
+   "depth": "A",
+   "status": "Korrektur",
+   "pruefnotiz": "Breaking Defense 06.03.2024 bestätigt Vertrag 2023, Soft/Hard Kill, operative Erprobung, vier in Katar produzierte Systeme, C-UAS am RBAT-Stand. uncertainty \"Liefertermin unklar\" falsch: Al Marri erwartet Lieferung \"within 2027\"."
+  },
+  {
+   "id": "M-SAU-RHM-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-d401a7e147a6b2d4); Belegstelle \"Artikeltext, Absätze zu RAD Arabia und Aussagen Zino Hart/Ibrahim Al-Zeer\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-SAU-RHM-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Janes 26.02.2020 bestätigt (SPA-Foto King Abdulaziz Naval Base, Satellitenbilder Juni-Juli 2019, zwei 35-mm-GDF + Feuerleitgerät). Hochgestuft A (trägt Marktbeobachtung).",
+   "hochstufung": "trägt Marktbeobachtung"
+  },
+  {
+   "id": "M-RHM-GULF-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Gabelli 27.03.2026 bestätigt Wortlaut; gegen Primärtranskript FY2025 abgeglichen (nearly all countries have Rheinmetall Air Defence systems; deliver in August; \"Air Defence, a growth rate of 25%\"). Gabelli formuliert \"would use\"; Primärtranskript als Beleg vorziehen."
+  },
+  {
+   "id": "M-RHM-GULF-02",
+   "depth": "A",
+   "status": "Korrektur",
+   "pruefnotiz": "Business AM 10.05.2026 bestätigt Wortlaut (\"environ 150 Skyranger et Skynex\", \"une dizaine\", Bloomberg 08.05.2026). Fehler/Widerspruch: Primärtranskript Q1-2026 (S-1587b1c751c31b9a, PDF-S. 5) nennt \"about 150 systems in the whole Gulf region, gun-based air defense systems\" ohne Skyranger/Skynex-Zuordnung und \"more than 10 systems in 2026\"; Folie 10 (S-c58e8ff13e28aa83) \"up to 10 systems for delivery in 2026\". Skyranger im GCC öffentlich nicht belegt. Claim und darauf gestützte Marktbeobachtungen geben die Sekundärparaphrase als CEO-Aussage aus."
+  },
+  {
+   "id": "M-RHM-CAP-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Euronews 17.09.2026 bestätigt (400/Jahr ab Ende kommenden Jahres; Mittelkaliber <1 Mio. → 4 Mio. Schuss). Gleiches Dokument wie P-SR30-08 unter zweiter Quellen-ID (S-5201e1820b86a0c3) – zusammenführen, kein Zweitbeleg. Konsistent mit P-CAP-01 (PM 15.06.2026 \"70 to 100 turrets → up to 400\").",
+   "hochstufung": "trägt Marktbeobachtung"
+  },
+  {
+   "id": "M-RHM-ORDER-01",
+   "depth": "B",
+   "status": "geprüft",
+   "pruefnotiz": "esut 03.07.2026 bestätigt; Wiedergabe der PM 02.07.2026 (P-SKX-11, C-GCC-13, T-CTX-24) – kein unabhängiger Beleg, inhaltlich konsistent (39 Monate ≈ Lieferung bis 2029).",
+   "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)"
+  },
+  {
+   "id": "M-RHM-CUAS-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Militarnyi 12.07.2025 bestätigt (Video ukrainische Luftwaffe, Zitat \"flawless results\", AHEAD laut Videoauswertung). Konsistent mit P-SKX-07; Gegenbefund P-SKX-08 separat attribuiert."
+  },
+  {
+   "id": "M-UAE-EDGE-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-829071fd179d4705); Belegstelle \"Artikeltext (Paolo Valpolini), Absätze 1–5\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-UAE-EDGE-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Janes 24.02.2025 bestätigt. Inhalt korrekt als Stand 02/2025; neuere Partnerangabe \"late 2027\" (P-SKN-03) in der Marktbeobachtung berücksichtigen."
+  },
+  {
+   "id": "M-UAE-EDGE-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-7a92bf0944771ac1); Belegstelle \"Interviewtext (SAHA 2026), Abschnitte Iran-Konflikt und Partnerschaften\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-PEER-KOR-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-c44a53b9b7fed3f5); Belegstelle \"Artikeltext, Abschnitte Konfiguration, Betreiber, Lieferungen\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-PEER-EOS-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-0ee334ddc9eec2c2); Belegstelle \"ASX-Mitteilung S. 1–2\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-PEER-EOS-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-16987d30779651f5); Belegstelle \"Artikeltext (Martin Chomsky), Abschnitte Vertrag/Bedingungen/Systeme\" inhaltlich bestätigt.",
+   "hochstufung": "trägt Marktbeobachtung"
+  },
+  {
+   "id": "M-PEER-EOS-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-0e7ad928d9638007); Belegstelle \"Artikeltext (Joe Saballa), Absätze 1–5\" inhaltlich bestätigt.",
+   "hochstufung": "trägt Marktbeobachtung"
+  },
+  {
+   "id": "M-PEER-NASAMS-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-3d92fa89ab4d601e); Belegstelle \"Artikeltext, Absätze 1–3 (Quelle Aftenposten)\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-PEER-MICA-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-06318d4e0dd58da5); Belegstelle \"Pressemitteilung 19.10.2020, Absätze 1–4\" inhaltlich bestätigt.",
+   "hochstufung": "trägt Marktbeobachtung"
+  },
+  {
+   "id": "M-PEER-COYOTE-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-b6faabdb5b5fbeb3); Belegstelle \"Artikeltext (Nicholas Fiorenza) und Bildunterschrift\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-PEER-COYOTE-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Beleg geöffnet (Abruf 10.10.2026, S-32a1f2cd50c3b5ae); Belegstelle \"Artikeltext, Absätze 1–4\" inhaltlich bestätigt."
+  },
+  {
+   "id": "M-DEU-EXPORT-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "BAFA-Kurzmeldung 20.03.2026 bestätigt (befristet bis 15.09.2026, Registrierung bis 30 Tage, monatliche Meldepflichten, Länderliste)."
+  },
+  {
+   "id": "M-DEU-EXPORT-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "AWA 18.09.2026 bestätigt; zusätzlich primär bestätigt durch BAFA-Übersicht (S-c99327dbed7f6de5): \"Mit Bekanntgabe vom 10. September 2026 ... bis zum 15. September 2027\". Primärquelle ergänzen empfohlen."
+  },
+  {
+   "id": "M-CHE-EXPORT-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "WBF-Medienmitteilung 20.03.2026 bestätigt inkl. \"bestehende Bewilligungen ... keine Kriegsrelevanz ... weiterhin genutzt\"."
+  },
+  {
+   "id": "M-CHE-EXPORT-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "SECO-Seite bestätigt (Abstimmung 29.11.2026, Parlamentsbeschluss 19.12.2025, Anhang 2 seit 1. Juli 36 Länder – Liste geprüft, kein GCC-Staat, Abweichungskompetenz)."
+  }
+ ]
+}
