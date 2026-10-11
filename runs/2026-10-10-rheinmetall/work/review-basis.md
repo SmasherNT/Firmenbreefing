@@ -80,7 +80,8 @@
     "runde_4": {
       "vergleich": "facts-validation.json vs. facts-validation-r3.json: 5 geänderte, 0 neue Claims, errors []",
       "neue_quelle_geoeffnet": "S-e356487969d3aa9d"
-    }
+    },
+    "b_hochstufung_r5": "Alle 34 bisherigen B-Claims nach Vollprüfung (R1-Abrufe plus gezielte Nachprüfung H-KOE-06, M-GCC-THREAT-03, M-KWT-PROG-01, M-KWT-THREAT-01, M-UAE-BUDGET-01, P-RG-01, P-SR30-01, T-CTX-07) auf A/geprüft gesetzt; keine B-Claims verbleibend."
   },
   "material_errors": [],
   "weitere_korrekturen_nicht_wesentlich": [],
@@ -281,10 +282,10 @@
     },
     {
       "id": "T-CTX-07",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-3ef169e9e35e0c9a); Belegstelle \"Divisionsseite Air Defence, Abschnitte Einleitung und 'Standorte'\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Divisionsseite Air Defence: Bündelung Entwicklung bis Simulation/Training/Service, BUs Systems and Effectors/Systems and Sensors, Standorte Zürich/Rom/Neuss bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "fe7d6df40d07e4d0cfc9039911c2b8588af1debc4ef696d990b3df55ff3f9162"
     },
     {
@@ -325,26 +326,26 @@
     },
     {
       "id": "T-CTX-13",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-9610b6cf1ddab64f); Belegstelle \"S. 3, Abschnitt 'Electronic Solutions: Further increase in sales'\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "FY2025-PM S. 3: Electronic Solutions 2.504 Mio. EUR inkl. Flugabwehr; Skyranger-/Skynex-Lieferungen an europäische Kunden bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "0139994d40b3c94e1d504ce8adf89763cc7b2bc54ad2c241eb21232340d6c176"
     },
     {
       "id": "T-CTX-14",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-7a58ddb6fbab572c); Belegstelle \"Zefix-Datensatz, Felder name/uid/legalSeat/status/purpose\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Zefix-JSON: Rheinmetall Air Defence AG, Zürich, CHE-101.403.861, existierend, Zweck bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "ef78da06dc4290387672a0f7e0cbd7bbee912d9be4d4d636a2f481d9716887ac"
     },
     {
       "id": "T-CTX-20",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-a57c168b042d9b28); Belegstelle \"PDF-S. 7, Abschnitt 'Global economy with weak momentum'\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "H1-Bericht PDF-S. 7: Angriff USA/Israel auf Iran 28.02.2026, Lieferausfälle aus Golfstaaten nach iranischen Raketenangriffen bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "e40a29a8e3b8da907ff163f35f87f582ac58c49973559f9b24d256f192cba5f2"
     },
     {
@@ -364,10 +365,10 @@
     },
     {
       "id": "T-CTX-23",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-2eda3f58ea36842d); Belegstelle \"Pressemitteilung vom 15.6.2026, Key facts und Absatz 1\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "PM 15.06.2026: Lokalisierung/Weiterentwicklung/Vermarktung LIG MRAD/LRAD in Europa mit Rheinmetall-VSHORAD, gemeinsame SHORAD-Flugkörper bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "3b4c635bb3318fdd9f72881f75653621221199f53c0566c2f684042784be4a9b"
     },
     {
@@ -416,34 +417,34 @@
     },
     {
       "id": "H-KOE-04",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-a9b0fc98036cb816); Belegstelle \"Pressemitteilung vom 24.9.2020, Absatz 3\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "PM 24.09.2020 Abs. 3: Unterzeichnung 30.07.2020 durch Köhne (Managing Director RWM) und DMO, potenzielles Volumen 500 Mio. EUR.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "288d029edbca1a9682ba4edfc1faf13e99c0dc653e03c4413b3558885bc27852"
     },
     {
       "id": "H-KOE-05",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-65fc5577a5b55116); Belegstelle \"Artikel vom 3.5.2023, Bildunterschrift und Absatz 1\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Soldier Systems Daily 03.05.2023: \"Rheinmetall Waffe Munitions CEO and Rheinmetall NIOA Munitions Chairman Roman Koehne\", Besuch Maryborough.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "f8eabd95e619e6e421da3a05f1deefbd2285ffe747c351a3a06e39329724c887"
     },
     {
       "id": "H-KOE-06",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-faa22e3546ff37b9, S-63879230d36c7828, S-d33dad308bfc2b33); Belegstelle \"Rheinmetall AG (Pressemitteilung): Pressemitteilung vom 5.1.2026, Zitat Köhne; Rheinmetall AG (Pressemitteilung): Pressemitteilung vom 17.6.2026, Zitat Köhne; R\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "PM 05.01.2026 (Laser-JV MBDA, Zitat), PM 17.06.2026 (Ruta Block 3, NATO-Qualifizierung, Zitat \"Head of Division Weapon and Ammunition\"), PDF-PM 18.06.2026 (Vektrex/GA-EMS, Zitat) – Wortlaut und Zuordnung bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "af1fa2bcbe25bc04891e0350eafefd5d9b0264cea17a0372b39fd7fe03bf8f01"
     },
     {
       "id": "H-KOE-07",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-b9c5d3865d4b34f0); Belegstelle \"Videobeschreibung/Artikeltext, Absätze 1-5\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Shephard 05.08.2026: Begleittext (CEO W&A, Eurosatory, Destinus-JV, vertikale Integration) bestätigt; Video wie angegeben nicht ausgewertet.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "72c6c161637503917f1d876e669ed8a209193301433a4b5cf5aeb4feec80d2f5"
     },
     {
@@ -505,26 +506,27 @@
     },
     {
       "id": "P-SKX-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-69738b1972b9a1ed); Belegstelle \"Produktseite Skynex, Abschnitte Skymaster, X-TAR3D, Revolver Gun Mk3, TREO, Effektoren\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Produktseite Skynex: Skymaster als Steuerknoten, X-TAR3D 25/35/50 km, MSU, Revolver Gun Mk3, GDF009 TREO, Flugkörper/EW/künftige HEL integrierbar bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "d570ea9d04c397464148ec68f5822f106f2b580b153d34225033bdcf1979544b"
     },
     {
       "id": "P-RG-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-4f3b5ef3636a54d6); Belegstelle \"Broschüre D712e0222, S. 1 (Main Features) und Tabelle Technical Characteristics\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Broschüre D712e0222: 35 x 228 mm, X-/Ku-Band-Feuerleitradar, EO, 1.000 Schuss/min, bis 4.000 m, 252 Schuss, Ahead (KETF), HEI/HEI-T/FAP/TP-T, bis 8 Geschütze je Konsole bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "95fada33f8c0b3239347858cb4560e2a0bb69f60485f99ba676a29c50a8fcdc5"
     },
     {
       "id": "P-RG-02",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert seit R2; Befund R2: R2: nur Quellen-ID-Vereinheitlichung (S-eb780da12d4e3349); \"first export contract ... MANTIS\" R1-geprüft.",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Janes 01.11.2019 (S-eb780da12d4e3349, inhaltsgleich geöffnet): \"first export contract for a weapon that is already in service with the Bundeswehr as part of its MANTIS system\" bestätigt.",
       "runde": 2,
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "ba1321d7af0362e5f8c8a0d97dbec7d487cd0a1aae4478af98f37bc4448d05e8"
     },
     {
@@ -617,10 +619,10 @@
     },
     {
       "id": "P-SKN-02",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-69738b1972b9a1ed); Belegstelle \"Produktseite Skynex, Abschnitt SkyKnight\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Produktseite Skynex: SkyKnight C-RAM/C-PGM, für Skynex-Integration, max. 10 km, bis 60 Flugkörper je Starter bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "36d373d011e86f7777a111a81ae47287638c9f69afad935a8c3b905a95c8787b"
     },
     {
@@ -632,10 +634,10 @@
     },
     {
       "id": "P-SR30-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-c0d13e5db6387716, S-d2d239c37b99eddf); Belegstelle \"Pressemitteilung 10.06.2026, Absätze 2–4 | Pressemitteilung 15.06.2026, Absatz 3\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "PM 10.06.2026 (30 x 173 KCE, 3.000 m, Ahead, DefendAir, Boxer, Lynx/Lkw) und PM 15.06.2026 (Suchradar/EO 360°, SHORAD-Aufnahme) bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "442cb928b2f500f26ab7ed590b850827bc68ff8bbb3577ccdf882ec49d20ab3d"
     },
     {
@@ -675,18 +677,19 @@
     },
     {
       "id": "P-SR30-07",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-d2ef86f50f08a3d3); Belegstelle \"Pressemitteilung 20.12.2023, Absätze 1–3\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "PM 20.12.2023: knapp 30 Mio. EUR, Unterzeichnung 15.12.2023 Budapest, Lynx KF41, ESSI, Mistral/Stinger/Chiron bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "eb2edad86dc59a6dbe74a2215d884e2872d81a4a37805623d9d2d348de25f8e3"
     },
     {
       "id": "P-SR30-08",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert seit R2; Befund R2: R2: Quellen-ID vereinheitlicht (Euronews S-aaaf59c399a65ff2, R1-geprüft; Zitate bestätigt).",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Euronews 17.09.2026: Zitate Serienlieferung 2027 und bis 400/Jahr bestätigt.",
       "runde": 2,
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "f7f70f49e069eed628d5ffd382d8f3eaa94076246d60256559cb9dbed47814cf"
     },
     {
@@ -727,26 +730,26 @@
     },
     {
       "id": "P-SG-02",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-a04eb741cdb51fb3); Belegstelle \"Pressemitteilung 05.07.2022, Absätze 1–2\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "PM 05.07.2022: Skyguard 3, GDF009, AHEAD, ca. 65 Mio. EUR, Lieferabschluss 2024, Kunde ungenannt bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "c58e44e5ba7690f3b08fa52dd3fc2b7997e1b75423f51104d5d1b7cf0c008100"
     },
     {
       "id": "P-SG-03",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-f7338d89b12509f0); Belegstelle \"Pressemitteilung 10.01.2023, Absätze 1–2\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "PM 10.01.2023: niedriger dreistelliger Mio.-Bereich, GDF009-Standard, AHEAD, Rheinmetall Italia, Beginn 2023, Kunde ungenannt bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "cb9d3e99e03dc9cc64a5de973c5ae8e62d6f81e8181389d51749c05f6c6142d7"
     },
     {
       "id": "P-SG-04",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-96f74711ef265339); Belegstelle \"Shephard, 04.03.2014, Absätze 1–2\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Shephard 04.03.2014: 83 Mio. EUR, MENA-Staat, bestehender Skyguard-Kunde, Folgeauftrag Feuereinheiten bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "1859d6529fdef244956a6484b139d7720bd7de203c8fe232990898f82c0e5368"
     },
     {
@@ -786,10 +789,10 @@
     },
     {
       "id": "P-CUAS-02",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-1587b1c751c31b9a); Belegstelle \"Transkript Q1-2026-Call, PDF-S. 23\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Transkript Q1-2026 PDF-S. 23: 25 mm/.50, akustische Sensoren, automatischer Kampf, Demo für Bundesregierung bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "bfe70be64a4fc0974a61b5dea1b1c9beab52c93a3bcaf1a69fc7c7a8ea4d5087"
     },
     {
@@ -801,10 +804,10 @@
     },
     {
       "id": "P-AMMO-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-1587b1c751c31b9a); Belegstelle \"Transkript Q1-2026-Call, PDF-S. 22\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Transkript Q1-2026 PDF-S. 22: \"nearly 1 million rounds of air defense rounds\" bestätigt; Bezugsgröße offen wie angegeben.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "5bed8899961fc945ae2d011a18d328d30b5c01ae9520505a812722af01dcca2c"
     },
     {
@@ -816,10 +819,10 @@
     },
     {
       "id": "P-MIL-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-c7786baa0a315e17); Belegstelle \"Produktseite Naval air defence, Abschnitt Millennium Gun\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Produktseite Naval air defence: 1.000 Schuss/min (Burst), 252 Schuss, Ahead, UAV/Seeziel/C-RAM bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "a872ecece1db12c9d446fe4d53f8d9e9fd544544a7c70d2ad69fa086374e13d8"
     },
     {
@@ -1137,18 +1140,18 @@
     },
     {
       "id": "M-GCC-THREAT-03",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-4abfdb5bf72ddb30); Belegstelle \"Artikeltext, Länderabschnitte und Kontext zur Waffenruhe\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Al Jazeera 12.07.2026: Angriffe VAE/Katar/Kuwait/Oman/Bahrain, drei Verletzte Katar, Kuwait Grenzposten + Offshore-Plattform, Oman Musandam/Al Wusta, fragile truce, US-Iran-MoU Mitte Juni bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "2bdf6db936468cef8cbb18a51ba8c5b430a670eb57ac840aa8bbc40d5b043785"
     },
     {
       "id": "M-KWT-THREAT-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-7a89b412faeaf6ce); Belegstelle \"Artikeltext, Kontextabsatz zum Angriff\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Breaking Defense 08.06.2026: Angriff 3. Juni auf Flughafen Kuwait, ein Toter, Schäden, Flugbetrieb unterbrochen; Zitat Al Ajami (Expertenmeinung) bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "23063d46216f94fa584529cc531f431e1bac94269e5f04b332734bcd775b88b5"
     },
     {
@@ -1160,10 +1163,10 @@
     },
     {
       "id": "M-SAU-THREAT-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-37ccf8b458258ca3); Belegstelle \"Artikeltext, Absätze zu Entsendung, gemeinsamer Erklärung und Quellen\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "MEE 06.10.2026: türkische Luftverteidigungs-/EloKa-Ausrüstung seit Vorjahr, geplante Zusatzentsendung, Makkah Alliance for Defence, überwiegend anonyme türkische Offizielle bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "5a14a1b63fd7d3c453c6ba8203ddd023d2e749d671e31ae99610e9b912f6bb11"
     },
     {
@@ -1175,10 +1178,10 @@
     },
     {
       "id": "M-GCC-THREAT-05",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-68cd066e40b60677); Belegstelle \"Artikeltext, Absätze zu Videos, Kosten und Shahed-Drohnen\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "The National 17.03.2026: Minigun-Videos, Analystenempfehlung, THAAD ca. 12 Mio./Patriot ca. 1 Mio./APKWS II ca. 20.000 USD, >1.500 Drohnen gegen VAE, ca. 90 % abgeschossen/ins Meer bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "3fed5ba265e2b5f09e5dfd620f5a157214a7204d9144513ca1334e8f15da901a"
     },
     {
@@ -1190,34 +1193,34 @@
     },
     {
       "id": "M-KWT-BUDGET-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-c07effa3f3662a94); Belegstelle \"Fact Sheet April 2026, Tabelle 1 (S. 2)\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "SIPRI Fact Sheet 04/2026 Tabelle 1: Rang 35, 8,1 Mrd. USD, 4,7 % BIP bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "a3da5e2e364d62e30b7e7f1164b21329333e5a3148585a11670511301eaf0ad0"
     },
     {
       "id": "M-OMN-BUDGET-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-c07effa3f3662a94); Belegstelle \"Fact Sheet April 2026, Abbildung 3 (Militärlast nach Ländern)\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "SIPRI Abbildung 3 \"8. Oman 5.7%\"; Oman nicht in Top-40-Tabelle (Textsuche) bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "314d8d387d314074261bc82fd930af4a695517f63a993812734306a02e864cb9"
     },
     {
       "id": "M-UAE-BUDGET-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-c07effa3f3662a94); Belegstelle \"Fact Sheet April 2026, Tabelle 2, Fußnote g; Tabelle 1\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "SIPRI Tabelle 2 Fußnote g (ohne Syrien, VAE, Jemen); VAE/Katar/Bahrain nicht in Tabelle 1 (Textsuche) bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "07d4d22b2072b25264a1a3b2fe01e36030f3e23d14357dff3a10ce8152072f2a"
     },
     {
       "id": "M-SAU-BUDGET-02",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-13ac2bcc7a8d3bc1); Belegstelle \"Artikeltext, Absatz zu Sektorausgaben Q1 2026\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Argaam 05.05.2026: Militärsektor 64,71 Mrd. SAR, Gesamtausgaben 387 Mrd. SAR (+20 %) bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "537add5dc8a2ce0e0bb045007762f24b9f861cbc5d348e3ad527be194f0bcb98"
     },
     {
@@ -1259,10 +1262,10 @@
     },
     {
       "id": "M-KWT-PROG-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-7a89b412faeaf6ce); Belegstelle \"Artikeltext, Absätze 1–3\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Breaking Defense 08.06.2026: State-Department-Erklärung vom 5. Juni, 1,98 Mrd. USD, Roadrunner, Anvil, Lattice, Sentry Towers, Pulsar bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "d2d12e10f42a54cb371e5eb9bae4442a59299a613f126d5a865c9944deb0e863"
     },
     {
@@ -1282,18 +1285,18 @@
     },
     {
       "id": "M-SAU-PROG-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-1bc2890891ce328b); Belegstelle \"Artikeltext, Absätze 1–3\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "Korea Times 06.02.2024: 3,2 Mrd. USD, Vertrag mit saudischem Verteidigungsministerium (November), zweiter Export nach VAE (Januar 2022) bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "0fc30738bbbce906eb73bf191b7620fbf62efe4bf236d5916cd85d625c1d55bb"
     },
     {
       "id": "M-BHR-PROG-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: Beleg geöffnet (Abruf 10.10.2026, S-4691f9471b203297); Belegstelle \"S. 6, Tabelle 1 'Recent U.S. Foreign Military Sales to Bahrain Notified to Congress'\" inhaltlich bestätigt.",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "CRS (Stand 23.09.2026) S. 6 Tabelle 1: Patriot 1,62 Mrd., APKWS-II 253 Mio., AH-1Z 950 Mio. USD (2026) bestätigt.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "9c56662694ee9ad3e26c3f59eb468c867f44f6b989827fd3c9ad9f56ec067eaa"
     },
     {
@@ -1388,10 +1391,10 @@
     },
     {
       "id": "M-RHM-ORDER-01",
-      "depth": "B",
-      "status": "übernommen",
-      "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: esut 03.07.2026 bestätigt; Wiedergabe der PM 02.07.2026 (P-SKX-11, C-GCC-13, T-CTX-24) – kein unabhängiger Beleg, inhaltlich konsistent (39 Monate ≈ Lieferung bis 2029).",
-      "stichprobe": "einzeln geprüft (Stichprobe auf Vollprüfung ausgeweitet, gebündelter Quellenabruf)",
+      "depth": "A",
+      "status": "geprüft",
+      "pruefnotiz": "esut 03.07.2026 Abs. 1-4 bestätigt (ungenannter internationaler Kunde, mehrere hundert Mio. EUR, Lieferung bis 2029, Prime Rheinmetall Italia mit RAD u. a.; keine Region). Aussageursprung: Fachmedien-Wiedergabe der Rheinmetall-PM 02.07.2026 (P-SKX-11/C-GCC-13) – sachlich korrekt als Bericht über eine Herstellermeldung, kein unabhängiger Beleg; Claim enthält keine Wertung.",
+      "hochstufung": "B→A auf Anforderung Renderer (Kernansicht): Vollprüfung im geöffneten Beleg (Aussage, Zahlen/Daten, Status, Aussageursprung).",
       "fingerprint": "8dab1d9aab977e067b8f745225087619fadddbeeddce7305b2e964b297f80f25"
     },
     {
