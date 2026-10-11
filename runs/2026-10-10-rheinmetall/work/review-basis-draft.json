@@ -5,7 +5,7 @@
  "as_of": "2026-10-10",
  "phase": "basis",
  "status": "freigegeben",
- "status_begruendung": "Runde 2: Alle 6 wesentlichen Fehler aus R1 (ME-1 bis ME-6) und die nicht wesentlichen Korrekturen sind behoben; alle 20 geänderten und 2 neuen Claims sowie die geänderten Kanten (E18, E19, E34, E46, E47) und module_views gezielt geprüft. Alle 172 Claims geprüft bzw. unverändert übernommen; keine offenen A-Claims. Verbleibende Punkte sind nicht blockierende Hinweise und transparente Datenlücken.",
+ "status_begruendung": "Runde 3: vier neue Markt-Claims M-PEER-EOS-04..07 (A) und geänderte Beobachtung eos_slinger/procurement_status im Beleg geprüft; keine Fehler. Übrige 172 Claims unverändert (keine Fingerprint-Änderung ggü. facts-validation-r2.json) und übernommen. Keine wesentlichen Fehler, keine offenen A-Claims.",
  "reviewer": "source-reviewer (Phase basis, mode=facts-v2)",
  "pruefumfang": {
   "eingaben": [
@@ -56,6 +56,23 @@
    ],
    "methode": "Fingerprint-Diff R1/R2; nur geänderte/neue Claims, deren neue Quellen (S-05ec117bf73653de, S-09155eae505dd047, S-51a58a4ed460b294 geöffnet) sowie betroffene Kanten und Views geprüft; unveränderte Claims mit identischem Fingerprint als \"übernommen\" (gleicher Auftrag/Stichtag).",
    "formale_kontrolle": "facts-validation.json errors [] (vom Hauptagenten erzeugt); kein Inhaltsurteil."
+  },
+  "runde_3": {
+   "eingaben": "work/review-packet.json (176 Claims), work/facts-validation.json vs. facts-validation-r2.json (keine Fingerprint-Änderung, 4 neue Claims)",
+   "geprueft": [
+    "M-PEER-EOS-04",
+    "M-PEER-EOS-05",
+    "M-PEER-EOS-06",
+    "M-PEER-EOS-07",
+    "module_views market observation eos_slinger/procurement_status"
+   ],
+   "quellen_geoeffnet": [
+    "S-0ee334ddc9eec2c2",
+    "S-fd5a10d74a5ca9e2",
+    "S-bfb5a4373eee4a08",
+    "S-916d44f2e2bf648f",
+    "S-657ea472bd973581"
+   ]
   }
  },
  "material_errors": [],
@@ -88,7 +105,7 @@
   "context": "ev-bilanz-golf neu gelabelt (\"CEO-Aussagen (Earnings Call) ...\", 2026-03-11, T-CTX-21/22) – korrekt.",
   "portfolio": "Golfstaaten-Sections korrigiert: P-SKX-02 unter \"GCC übergreifend (... Auftrag 2019 mit ungenanntem Kunden)\", Katar-Section \"Zuordnung laut Janes bzw. Messebericht\" – Länderabgrenzung jetzt belegt. Übrige Views unverändert.",
   "cluster": "report_log GB 2024 korrigiert; Golf-Sektion \"Historische Bezüge und personelle Querverbindungen\" mit C-GCC-07/C-GCC-14 korrekt; RAST in Gesellschaftssektion mit aktuellem Status.",
-  "market": "gulf_access und production_capacity (rheinmetall) auf Primärwortlaut umgestellt, Skyranger im GCC als nicht belegt; edge procurement_status zeigt late 2027 (HALCON) und \"going into production\" (CEO 05/2026) – korrekt. Hinweis claim_ids siehe hinweise_nicht_blockierend."
+  "market": "gulf_access und production_capacity (rheinmetall) auf Primärwortlaut umgestellt, Skyranger im GCC als nicht belegt; edge procurement_status zeigt late 2027 (HALCON) und \"going into production\" (CEO 05/2026) – korrekt. Hinweis claim_ids siehe hinweise_nicht_blockierend. R3: Beobachtung eos_slinger/procurement_status (claim_ids M-PEER-EOS-01/04/05/06/07) korrekt: Gen5 als 100 % VAE-eigenes Unternehmen ohne belegte staatliche Kontrolle, Ukraine-Bestellungen über Northrop Grumman bzw. widersprüchlich berichtet, keine bestätigte Lieferung an staatlichen Kunden, europäischer Marineauftrag über Integrator – entspricht den Belegen."
  },
  "stichproben_B": {
   "methode": "Gruppen nach Modul × Quelle × Aussageart gebildet; da die Quellen für A-Claims ohnehin geöffnet wurden, wurde die Stichprobe in allen Gruppen auf Vollprüfung ausgeweitet. Kein inhaltlicher Fehler in B-Claims gefunden; keine B-Claims als 'nicht einzeln geprüft' verblieben.",
@@ -202,7 +219,7 @@
   "Exportrahmen: BAFA-Kurzmeldung + Übersicht, AWA, Handelsblatt, WBF, SECO-Seite + Statistik 2025, SRF: C-EX-*, M-DEU-EXPORT-*, M-CHE-EXPORT-*, C-GCC-10",
   "Markt/Peers (Al Jazeera ×2, Gulf News ×2, Asharq, CRS, SIPRI, Arab News, trade.gov, Defense News, Unmanned Airspace, inderes/Kongsberg, TU, Army Recognition ×3, Breaking Defense ×3, Quwa, EOS-ASX, DIE ×2, Janes, TWZ, MBDA, GovCon Wire, Korea Times, Argaam, MEE ×2, The National, Militarnyi, Defense Post, Gabelli, Business AM, Euronews): M-*"
  ],
- "wiederverwendete_pruefergebnisse": "150 unveränderte Claims aus R1 (identischer Fingerprint, gleicher Auftrag/Stichtag) als \"übernommen\".",
+ "wiederverwendete_pruefergebnisse": "172 Claims unverändert aus R1/R2 übernommen.",
  "offene_datenluecken_transparent": [
   "Köhne-Amtsantritt 01.10.2026 nicht primär bestätigt (nur Fachmedien).",
   "Kunden der Skynex-Aufträge 2019 und Q2-2026 offiziell unbenannt; Golf-Zuordnung unbestätigt.",
@@ -311,8 +328,8 @@
   {
    "id": "T-CTX-21",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: Statement stützt sich jetzt auf Primärtranskript FY2025 (PDF-S. 3, Zitat wortgleich bestätigt) und führt defence-network ausdrücklich als abweichende Sekundärwiedergabe (30 mm/Skyranger, >100 Drohnen nur sekundär). ME-6 behoben.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: Statement stützt sich jetzt auf Primärtranskript FY2025 (PDF-S. 3, Zitat wortgleich bestätigt) und führt defence-network ausdrücklich als abweichende Sekundärwiedergabe (30 mm/Skyranger, >100 Drohnen nur sekundär). ME-6 behoben.",
    "runde": 2
   },
   {
@@ -350,8 +367,8 @@
   {
    "id": "H-KOE-01",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: Belege unverändert (esut 04.09.2026 Abs. 1; Inside Paradeplatz 26.08.2026), Kennzeichnung \"angekündigt; nicht primär bestätigt\" und Verweis auf H-DUE-01/H-DUE-05 korrekt. Formulierungshinweis (nicht blockierend): esut berichtete am 4.9. im Futur (\"wird ... zum 1. Oktober\"); im Briefing \"sollte laut esut zum 1.10.2026 ... übernehmen\" statt \"ist seit\" verwenden. Keine Rheinmetall-Primärbestätigung (Datenlücke bleibt sichtbar).",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: Belege unverändert (esut 04.09.2026 Abs. 1; Inside Paradeplatz 26.08.2026), Kennzeichnung \"angekündigt; nicht primär bestätigt\" und Verweis auf H-DUE-01/H-DUE-05 korrekt. Formulierungshinweis (nicht blockierend): esut berichtete am 4.9. im Futur (\"wird ... zum 1. Oktober\"); im Briefing \"sollte laut esut zum 1.10.2026 ... übernehmen\" statt \"ist seit\" verwenden. Keine Rheinmetall-Primärbestätigung (Datenlücke bleibt sichtbar).",
    "runde": 2
   },
   {
@@ -439,8 +456,8 @@
   {
    "id": "H-DUE-05",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu: PM 24.06.2026 (S-6bdb338d23c29e11) geöffnet, Zitat \"Oliver Dürr, Head of Rheinmetall's Air Defence Division\" bestätigt; Schluss \"primär bis mindestens Ende Juni 2026\" zulässig.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu: PM 24.06.2026 (S-6bdb338d23c29e11) geöffnet, Zitat \"Oliver Dürr, Head of Rheinmetall's Air Defence Division\" bestätigt; Schluss \"primär bis mindestens Ende Juni 2026\" zulässig.",
    "runde": 2
   },
   {
@@ -460,15 +477,15 @@
   {
    "id": "P-RG-02",
    "depth": "B",
-   "status": "geprüft",
-   "pruefnotiz": "R2: nur Quellen-ID-Vereinheitlichung (S-eb780da12d4e3349); \"first export contract ... MANTIS\" R1-geprüft.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2: nur Quellen-ID-Vereinheitlichung (S-eb780da12d4e3349); \"first export contract ... MANTIS\" R1-geprüft.",
    "runde": 2
   },
   {
    "id": "P-SKX-02",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2: nur Quellen-ID-Vereinheitlichung (Janes 01.11.2019 unter S-eb780da12d4e3349); PM 30.10.2019 und Janes-Zitat R1-geprüft. Portfolio-Section jetzt \"GCC übergreifend ... ungenannter Kunde\" – Länderzuordnung korrigiert.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2: nur Quellen-ID-Vereinheitlichung (Janes 01.11.2019 unter S-eb780da12d4e3349); PM 30.10.2019 und Janes-Zitat R1-geprüft. Portfolio-Section jetzt \"GCC übergreifend ... ungenannter Kunde\" – Länderzuordnung korrigiert.",
    "runde": 2
   },
   {
@@ -493,8 +510,8 @@
   {
    "id": "P-SKX-06",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: Aussageursprung jetzt korrekt (Papperger: vier Skynex im Einsatz, Westukraine/Kraftwerke; Vollständigkeit der Lieferung als GAU-Schluss). ME-4 behoben.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: Aussageursprung jetzt korrekt (Papperger: vier Skynex im Einsatz, Westukraine/Kraftwerke; Vollständigkeit der Lieferung als GAU-Schluss). ME-4 behoben.",
    "runde": 2
   },
   {
@@ -536,8 +553,8 @@
   {
    "id": "P-SKN-01",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2: Quellen-ID vereinheitlicht (Gulf News S-e59dc842147cf65f, R1-geprüft). Army-Technology-Teil weiterhin für Prüfer nicht zugänglich (403), inhaltsgleich durch EDR 08.03.2021 und Rheinmetall-Produktseite bestätigt.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2: Quellen-ID vereinheitlicht (Gulf News S-e59dc842147cf65f, R1-geprüft). Army-Technology-Teil weiterhin für Prüfer nicht zugänglich (403), inhaltsgleich durch EDR 08.03.2021 und Rheinmetall-Produktseite bestätigt.",
    "runde": 2
   },
   {
@@ -600,15 +617,15 @@
   {
    "id": "P-SR30-08",
    "depth": "B",
-   "status": "geprüft",
-   "pruefnotiz": "R2: Quellen-ID vereinheitlicht (Euronews S-aaaf59c399a65ff2, R1-geprüft; Zitate bestätigt).",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2: Quellen-ID vereinheitlicht (Euronews S-aaaf59c399a65ff2, R1-geprüft; Zitate bestätigt).",
    "runde": 2
   },
   {
    "id": "P-SR30-09",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2: Quellen-ID vereinheitlicht (Army Recognition S-f06315f4acc363fb, R1-geprüft: \"not yet signed\", SAMI-Delegation Kassel, Tactical Report 12.11.2025).",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2: Quellen-ID vereinheitlicht (Army Recognition S-f06315f4acc363fb, R1-geprüft: \"not yet signed\", SAMI-Delegation Kassel, Tactical Report 12.11.2025).",
    "runde": 2
   },
   {
@@ -747,8 +764,8 @@
   {
    "id": "C-STR-05",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: Vorjahresparaphrase jetzt korrekt (RPDC im GB 2024 S. 254, Fußnote 2, 49 % direkt); report_log korrigiert. ME-5 behoben.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: Vorjahresparaphrase jetzt korrekt (RPDC im GB 2024 S. 254, Fußnote 2, 49 % direkt); report_log korrigiert. ME-5 behoben.",
    "runde": 2
   },
   {
@@ -766,8 +783,8 @@
   {
    "id": "C-STR-08",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: H1-Bericht PDF-S. 43 (100 % Anteile und Stimmrechte, Vollkonsolidierung Digital Systems ab Juli 2026) und GB 2025 S. 271 (40 %, Fußnote 5, historisch) bestätigt; Kante E19 rh_electronics→rast korrekt (100 %, Stimmrechte 100 %, as_of 2026-07). ME-1 behoben.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: H1-Bericht PDF-S. 43 (100 % Anteile und Stimmrechte, Vollkonsolidierung Digital Systems ab Juli 2026) und GB 2025 S. 271 (40 %, Fußnote 5, historisch) bestätigt; Kante E19 rh_electronics→rast korrekt (100 %, Stimmrechte 100 %, as_of 2026-07). ME-1 behoben.",
    "runde": 2
   },
   {
@@ -870,22 +887,22 @@
   {
    "id": "C-GCC-07",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: Arab News 25.02.2019 und Asharq Al-Awsat 25.04.2020 (S-05ec117bf73653de: \"Abukhaled will be taking over from Dr. Andreas Schwer who has served ... since January 1, 2018\") bestätigt; Kante E46 jetzt historisch (2018 bis 04/2020). ME-2 (Teil SAMI) behoben.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: Arab News 25.02.2019 und Asharq Al-Awsat 25.04.2020 (S-05ec117bf73653de: \"Abukhaled will be taking over from Dr. Andreas Schwer who has served ... since January 1, 2018\") bestätigt; Kante E46 jetzt historisch (2018 bis 04/2020). ME-2 (Teil SAMI) behoben.",
    "runde": 2
   },
   {
    "id": "C-GCC-08",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2: nur Quellen-ID-Vereinheitlichung (S-6cd5701123f00a73, S-3b004b2cc914ddc4 = dieselben Janes-Artikel wie R1); Inhalt R1-geprüft, Kante E18 Quellen konsistent.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2: nur Quellen-ID-Vereinheitlichung (S-6cd5701123f00a73, S-3b004b2cc914ddc4 = dieselben Janes-Artikel wie R1); Inhalt R1-geprüft, Kante E18 Quellen konsistent.",
    "runde": 2
   },
   {
    "id": "C-GCC-09",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2: nur Quellen-ID-Vereinheitlichung (S-eb780da12d4e3349 = Janes 01.11.2019, inhaltsgleich mit R1-geprüftem Artikel; S-6cd5701123f00a73 = Janes 14.10.2022, letzter Absatz bestätigt).",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2: nur Quellen-ID-Vereinheitlichung (S-eb780da12d4e3349 = Janes 01.11.2019, inhaltsgleich mit R1-geprüftem Artikel; S-6cd5701123f00a73 = Janes 14.10.2022, letzter Absatz bestätigt).",
    "runde": 2
   },
   {
@@ -916,8 +933,8 @@
   {
    "id": "C-GCC-14",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu: ASX 12.12.2023 (CEO seit 01.08.2022, MD seit 11.12.2023), ASX 19.06.2026 (Gen5-Auftrag, Unterzeichner Schwer als MD/CEO) und Webull-Kopie ASX 24.08.2026 (als Drittanbieter-Kopie gekennzeichnet) bestätigt. Kante E47 schwer→eos (overlap, keine Rheinmetall-EOS-Kooperation behauptet) korrekt. Hinweis: Die ASX-Belege nennen die Rheinmetall-/SAMI-Vorgeschichte nicht; Personenidentität über Namen/Titel plus EOS-Mitteilung 2022 (eos-aus.com/?p=835: frühere Positionen u. a. \"Rheinmetall AG\", \"public sector defence industry\", wirksam 1. August 2022) gestützt – diese Quelle als Identitätsanker ergänzen empfohlen (nicht blockierend). ME-2 behoben.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu: ASX 12.12.2023 (CEO seit 01.08.2022, MD seit 11.12.2023), ASX 19.06.2026 (Gen5-Auftrag, Unterzeichner Schwer als MD/CEO) und Webull-Kopie ASX 24.08.2026 (als Drittanbieter-Kopie gekennzeichnet) bestätigt. Kante E47 schwer→eos (overlap, keine Rheinmetall-EOS-Kooperation behauptet) korrekt. Hinweis: Die ASX-Belege nennen die Rheinmetall-/SAMI-Vorgeschichte nicht; Personenidentität über Namen/Titel plus EOS-Mitteilung 2022 (eos-aus.com/?p=835: frühere Positionen u. a. \"Rheinmetall AG\", \"public sector defence industry\", wirksam 1. August 2022) gestützt – diese Quelle als Identitätsanker ergänzen empfohlen (nicht blockierend). ME-2 behoben.",
    "runde": 2
   },
   {
@@ -953,8 +970,8 @@
   {
    "id": "C-EX-01",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: Scheinwiderspruch entfernt; Handelsblatt 20.03.2026 und BAFA-Übersicht (Bekanntgabe 10.09.2026, bis 15.09.2027, II.6.6 neu) bestätigt.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: Scheinwiderspruch entfernt; Handelsblatt 20.03.2026 und BAFA-Übersicht (Bekanntgabe 10.09.2026, bis 15.09.2027, II.6.6 neu) bestätigt.",
    "runde": 2
   },
   {
@@ -1071,8 +1088,8 @@
   {
    "id": "M-UAE-ACCESS-01",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: \"Raketenabwehr als erste von mehreren Beschaffungsprioritäten\" entspricht trade.gov-Wortlaut.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: \"Raketenabwehr als erste von mehreren Beschaffungsprioritäten\" entspricht trade.gov-Wortlaut.",
    "runde": 2
   },
   {
@@ -1110,8 +1127,8 @@
   {
    "id": "M-QAT-PROG-02",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: AMRAAM-ER-Detail entfernt; verbleibende Aussagen (Raytheon Hauptlieferant, 5,6 Mrd. NOK, 11 Länder inkl. Katar/Oman) bestätigt.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: AMRAAM-ER-Detail entfernt; verbleibende Aussagen (Raytheon Hauptlieferant, 5,6 Mrd. NOK, 11 Länder inkl. Katar/Oman) bestätigt.",
    "runde": 2
   },
   {
@@ -1168,8 +1185,8 @@
   {
    "id": "M-QAT-BARZAN-01",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: Liefererwartung \"within 2027\" ergänzt und als Ankündigung gekennzeichnet; bestätigt.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: Liefererwartung \"within 2027\" ergänzt und als Ankündigung gekennzeichnet; bestätigt.",
    "runde": 2
   },
   {
@@ -1194,8 +1211,8 @@
   {
    "id": "M-RHM-GULF-02",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: Business AM 10.05.2026 bestätigt Auszug (\"presque doubler le déploiement ... au Moyen-Orient d'ici fin 2027\"); abweichende Zahlen nicht mehr übernommen, Primärwortlaut P-GCC-03 maßgeblich. ME-3 behoben.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: Business AM 10.05.2026 bestätigt Auszug (\"presque doubler le déploiement ... au Moyen-Orient d'ici fin 2027\"); abweichende Zahlen nicht mehr übernommen, Primärwortlaut P-GCC-03 maßgeblich. ME-3 behoben.",
    "runde": 2
   },
   {
@@ -1227,8 +1244,8 @@
   {
    "id": "M-UAE-EDGE-02",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: Janes 24.02.2025 bestätigt; uncertainty weist jetzt auf überholte Zeitangabe (HALCON 11/2025: Ende 2027, P-SKN-03) hin.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: Janes 24.02.2025 bestätigt; uncertainty weist jetzt auf überholte Zeitangabe (HALCON 11/2025: Ende 2027, P-SKN-03) hin.",
    "runde": 2
   },
   {
@@ -1297,8 +1314,8 @@
   {
    "id": "M-DEU-EXPORT-02",
    "depth": "A",
-   "status": "geprüft",
-   "pruefnotiz": "R2 neu geprüft: Primärbeleg BAFA-Übersicht ergänzt; Wortlaut (\"Mit Bekanntgabe vom 10. September 2026 ... bis zum 15. September 2027\", II.6.6) und AWA bestätigt. Hinweis (nicht blockierend): uncertainty nennt eine \"ungeklärte Abweichung\" 9./15.09.2026 – die Archivangabe bezieht sich auf die durch die Bekanntgabe vom 10.09.2026 abgelöste Fassung bzw. Genehmigungsliste, nicht auf das ursprüngliche Laufzeitende; Satz kann entfallen. Aussage selbst korrekt.",
+   "status": "übernommen",
+   "pruefnotiz": "Unverändert seit R2; Befund R2: R2 neu geprüft: Primärbeleg BAFA-Übersicht ergänzt; Wortlaut (\"Mit Bekanntgabe vom 10. September 2026 ... bis zum 15. September 2027\", II.6.6) und AWA bestätigt. Hinweis (nicht blockierend): uncertainty nennt eine \"ungeklärte Abweichung\" 9./15.09.2026 – die Archivangabe bezieht sich auf die durch die Bekanntgabe vom 10.09.2026 abgelöste Fassung bzw. Genehmigungsliste, nicht auf das ursprüngliche Laufzeitende; Satz kann entfallen. Aussage selbst korrekt.",
    "runde": 2
   },
   {
@@ -1312,9 +1329,37 @@
    "depth": "A",
    "status": "übernommen",
    "pruefnotiz": "Unverändert (Fingerprint identisch mit R1); Befund R1: SECO-Seite bestätigt (Abstimmung 29.11.2026, Parlamentsbeschluss 19.12.2025, Anhang 2 seit 1. Juli 36 Länder – Liste geprüft, kein GCC-Staat, Abweichungskompetenz)."
+  },
+  {
+   "id": "M-PEER-EOS-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "R3 neu (A, trägt Matrixzelle): EOS-ASX 19.06.2026 S. 1 (\"100% United Arab Emirates owned provider ... headquartered in Abu Dhabi\") und EDR 04.05.2026 (Gen5 \"a UAE-based defence and technology company\", Chairman Tareq Abdul Rahim Al Hosani, Tawazun-Generalsekretär anwesend) bestätigt. Einschränkung \"staatliche Kontrolle/Endnutzer nicht belegt\" korrekt.",
+   "runde": 3
+  },
+  {
+   "id": "M-PEER-EOS-05",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "R3 neu (A): Seite eos-aus.com 15.08.2023 ist Wiedergabe eines Defence-Connect-Artikels vom 03.08.2023; EVP Matthew Jones: \"The Slingers have been contracted by Northrop Grumman, we received a purchase order for three systems\"; US-Sicherheitshilfepaket, \"30mm gun trucks\", \"several months\" bestätigt. Hinweis (nicht blockierend): Aussageursprung präziser als \"laut Defence Connect (auf EOS-Website wiedergegeben) sagte EOS-EVP Jones\" statt \"EOS meldete\" formulieren.",
+   "runde": 3
+  },
+  {
+   "id": "M-PEER-EOS-06",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "R3 neu (A): Militarnyi 01.09.2023 bestätigt (Jones-Zitat \"two contracts for Ukraine for 110 systems ... M113\", \"Practika\" 50, ca. 170 Mio. USD, Erprobungsberichte an ukrainische Regierung). Widersprüchlichkeit korrekt ausgewiesen; nicht als belegter Staatsauftrag/Lieferung verwenden.",
+   "runde": 3
+  },
+  {
+   "id": "M-PEER-EOS-07",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "R3 neu (A): EOS-News 19.05.2025 bestätigt (A$53 Mio., \"turnkey naval shipyard related systems integrated company\", \"funded by a Western European government\", Marinekonfiguration, Lieferung 2025/2026 erwartet).",
+   "runde": 3
   }
  ],
- "runde": 2,
+ "runde": 3,
  "material_errors_r1_erledigt": [
   {
    "id": "ME-1",
@@ -1403,6 +1448,13 @@
     "M-SAU-RHM-01"
    ],
    "hinweis": "25.000 m² mit Verweis auf den Flächenwiderspruch (Janes: sq ft, C-GCC-02) versehen."
+  },
+  {
+   "owner": "market",
+   "ids": [
+    "M-PEER-EOS-05"
+   ],
+   "hinweis": "Aussageursprung: Defence-Connect-Artikel (03.08.2023) auf EOS-Website, Zitat EVP Jones – nicht als formelle EOS-Meldung bezeichnen."
   }
  ]
 }
