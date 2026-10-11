@@ -1,0 +1,278 @@
+{
+  "schema_version": 1,
+  "mode": "interpret-v2",
+  "role": "swot",
+  "run_id": "2026-10-10-rheinmetall",
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-10",
+  "scope": "SWOT Rheinmetall-Flugabwehrgeschäft mit Fokus Markt und Marktzugang Golfstaaten (GCC), Stichtag 10.10.2026",
+  "status": "vollständig",
+  "input_fingerprint": "cf37b2c85b9bddc561d42e6d3b2a90a99dd5ff9e953aae555fbd9362607c63e9",
+  "interpretations": [
+    {
+      "id": "S-STR-01",
+      "category": "Strengths",
+      "section": "swot",
+      "statement": "Rheinmetall verfügt im GCC über einen belegten Bestand an 35-mm-Kanonenflugabwehr (Skynex in Katar, Skyguard in Saudi-Arabien; in Kuwait laut Herstellerangabe Skyguard), der Anschluss-, Ersatz- und Servicegeschäft ermöglicht.",
+      "depends_on": [
+        "I-ES-03",
+        "I-MX-04",
+        "M-QAT-RHM-01",
+        "M-QAT-RHM-02",
+        "M-SAU-RHM-02",
+        "P-GCC-KW-01"
+      ],
+      "reasoning": "Betrieb in Katar ist durch das katarische Verteidigungsministerium und eine Rheinmetall-Bestätigung, in Saudi-Arabien durch ein Foto der Saudi Press Agency belegt. Ein vorhandener Bestand senkt Einführungs-, Ausbildungs- und Logistikhürden bei Erweiterungen gegenüber Neueinsteigern.",
+      "method": "Ableitung aus belegtem Kundenbestand (Installed-Base-Argument)",
+      "uncertainty": "Kuwait-Bestand nur Herstellerangabe von 2013; die vom CEO genannten rund 150 Systeme in der Golfregion sind nicht aufgeschlüsselt."
+    },
+    {
+      "id": "S-STR-02",
+      "category": "Strengths",
+      "section": "swot",
+      "statement": "Rheinmetall hat in Katar, Saudi-Arabien und den VAE Beteiligungs-, Tochter- und Kooperationsstrukturen, die zu den Lokalisierungsanforderungen der Region passen.",
+      "depends_on": [
+        "I-MX-05",
+        "I-GS-02",
+        "C-STR-05",
+        "C-STR-06",
+        "C-STR-07",
+        "C-STR-08",
+        "M-SAU-LOCAL-01",
+        "M-UAE-ACCESS-01"
+      ],
+      "reasoning": "Saudi-Arabien strebt mehr als 50 % lokalisierte Militärausgaben bis 2030 an, die VAE knüpfen Verträge über 10 Mio. US-Dollar an Offset-Pflichten. Mit RBAT (49 %), RADARABIA (20 %, Flugabwehr-MRO), RAST (100 %) und Töchtern in Riad, Abu Dhabi und Schardscha bestehen dafür bereits rechtliche Vehikel.",
+      "method": "Abgleich Zugangsbedingungen mit belegten Gesellschaftsstrukturen",
+      "uncertainty": "Operativer Betrieb der Werke RADARABIA (Dschidda) und RBAT (Katar) sowie der Geschäftszweck der Töchter sind öffentlich nicht belegt; die Stärke betrifft die Struktur, nicht nachgewiesene Wertschöpfung."
+    },
+    {
+      "id": "S-STR-03",
+      "category": "Strengths",
+      "section": "swot",
+      "statement": "Rheinmetall bietet kanonenbasierte Drohnenabwehr mit berichteter Einsatzerfahrung und einem Mehrländer-Fertigungsnetz (Deutschland, Schweiz, Italien) in einem stark wachsenden Segment.",
+      "depends_on": [
+        "I-FA-02",
+        "I-MX-02",
+        "I-FA-03",
+        "I-MX-06",
+        "T-CTX-08",
+        "T-CTX-11"
+      ],
+      "reasoning": "Skynex-Einsätze gegen Shahed-Drohnen in der Ukraine sind durch Nutzerangaben berichtet; Rheinmetall reklamiert Kosteneffizienz gegenüber Flugkörperlösungen. Segmentumsatz (+62 % im H1 2026) und Backlog (4,2 Mrd. EUR) zeigen Lieferfähigkeit über mehrere Standorte, was bei akuter Golfnachfrage ein Vorteil gegenüber kleineren Anbietern sein kann.",
+      "method": "Ableitung aus Einsatzberichten, Segmentkennzahlen und Fertigungsprofil",
+      "uncertainty": "Kosteneffizienz und Golf-Einsatzerfolg sind Herstellerangaben; ein ukrainischer Einzelfall (April 2026) ist umstritten; der Ausbau auf bis zu 400 Skyranger/Jahr ist ein Ziel, kein Ist-Wert."
+    },
+    {
+      "id": "S-WEA-01",
+      "category": "Weaknesses",
+      "section": "swot",
+      "statement": "Die Lenkflugkörperschicht der Rheinmetall-Systeme hängt von Partnern ab; der für den Golf relevante SkyKnight-Effektor von HALCON ist noch nicht voll qualifiziert.",
+      "depends_on": [
+        "I-FA-01",
+        "I-TE-01",
+        "P-SKN-03",
+        "M-UAE-EDGE-02",
+        "M-UAE-EDGE-03"
+      ],
+      "reasoning": "Rheinmetall integriert Flugkörper von MBDA bzw. HALCON, statt eigene zu führen. Die volle Systemqualifikation von SkyKnight/Skynex wurde laut HALCON von Ende 2026 auf Ende 2027 verschoben, und SkyKnight war laut EDGE-CEO im Iran-Konflikt nicht im Dienst; ein kombiniertes Kanone-Flugkörper-Angebot ist damit zeitlich und inhaltlich partnerabhängig.",
+      "method": "Portfolioabgleich Kanonenbasis vs. Effektorenzugang über Partner",
+      "uncertainty": "Qualifikationsstand zum Stichtag nur über HALCON-/EDGE-Aussagen in Fachmedien bekannt."
+    },
+    {
+      "id": "S-WEA-02",
+      "category": "Weaknesses",
+      "section": "swot",
+      "statement": "Das saudische Flugabwehr-Lokalisierungsvehikel RADARABIA ist eine Minderheitsbeteiligung (20 %) mit negativem Eigenkapital und gestiegenem Verlust.",
+      "depends_on": [
+        "C-STR-06",
+        "C-GCC-02",
+        "I-GS-02"
+      ],
+      "reasoning": "Laut Anteilsbesitzliste sank das Eigenkapital von −459 auf −4.392 TEUR, der Jahresverlust stieg von 933 auf 4.159 TEUR. Bei 20 % Anteil ist Rheinmetalls Steuerung des für Saudi-Arabien angekündigten Lokalisierungspfads (60 % Lokalisierung laut Unternehmen) begrenzt, und eine tragfähige Ertragsbasis ist nicht erkennbar.",
+      "method": "Auswertung Beteiligungsdaten im Verhältnis zur Lokalisierungsrolle",
+      "uncertainty": "Ursachen der Verluste (z. B. Anlaufphase) und übrige Gesellschafteranteile sind nicht berichtet."
+    },
+    {
+      "id": "S-WEA-03",
+      "category": "Weaknesses",
+      "section": "swot",
+      "statement": "Die operative Führung der Division Air Defence wechselt mitten in der Golf-Nachfragespitze: Dürrs Abgang ist bestätigt, Roman Köhne als Nachfolger seit 1.10.2026 nur angekündigt und fachmedial berichtet.",
+      "depends_on": [
+        "I-ES-06",
+        "H-DUE-03",
+        "H-KOE-01",
+        "H-KOE-02",
+        "H-KOE-03",
+        "I-FA-04"
+      ],
+      "reasoning": "Köhnes belegter Werdegang liegt in Munition (Weapon and Ammunition, Rheinmetall Waffe Munition, Denel Munition), nicht in der Flugabwehr. Ein Übergang kann laufende Golfverhandlungen verzögern; die konzernzentrale Steuerung über Papperger als VR-Präsident der Rheinmetall Air Defence AG dämpft dieses Risiko.",
+      "method": "Ableitung aus Personal- und Governancefakten",
+      "uncertainty": "Kein Primärbeleg für Köhnes Amtsantritt; Auswirkungen auf Verhandlungen sind nicht belegt, sondern abgeleitet."
+    },
+    {
+      "id": "S-OPP-01",
+      "category": "Opportunities",
+      "section": "swot",
+      "statement": "Die iranischen Raketen- und Drohnenangriffe auf alle GCC-Staaten seit Februar 2026 schaffen akuten Bedarf an Nah- und Drohnenabwehr, den Rheinmetall laut eigener Angabe in verstärkten Anfragen spürt.",
+      "depends_on": [
+        "I-ES-04",
+        "M-GCC-THREAT-02",
+        "M-UAE-THREAT-01",
+        "T-CTX-22",
+        "P-GCC-01",
+        "P-GCC-02"
+      ],
+      "reasoning": "Die Medienzählung nennt rund 7.000 Angriffe, überwiegend Drohnen; die VAE meldeten allein 2.085 bekämpfte Drohnen. Massenhafte Drohnenangriffe begünstigen günstige Wirkmittel pro Abfang, worauf Rheinmetall mit kanonenbasierten Systemen zielt; Lieferungen in den Nahen Osten ab August 2026 sind angekündigt, aber nicht vertraglich belegt.",
+      "method": "Nachfragetreiber-Analyse aus Lage- und Unternehmensangaben",
+      "uncertainty": "Konfliktstatus und Dauer der Bedrohung zum Stichtag offen; Lagezahlen nicht unabhängig verifiziert."
+    },
+    {
+      "id": "S-OPP-02",
+      "category": "Opportunities",
+      "section": "swot",
+      "statement": "Erneuerung und Kampfwertsteigerung der vorhandenen 35-mm-Bestände im Golf bieten einen naheliegenden Einstiegspfad, den Rheinmetall selbst als Top-Projekt (MENA-Ersatzprojekte) führt.",
+      "depends_on": [
+        "I-GS-05",
+        "T-CTX-11",
+        "P-GCC-03",
+        "P-SG-01",
+        "M-SAU-RHM-02",
+        "C-GCC-03"
+      ],
+      "reasoning": "Rheinmetall nennt große MENA-Ersatzprojekte unter den Top-Projekten bis 2030 und zählte rund 150 Kanonensysteme in der Golfregion. Mit Skyguard Next Generation in Österreich (inkl. Modernisierung von 28 vorhandenen Geschützen) besteht ein übertragbares Modernisierungsmuster; diese Übertragbarkeit ist eine Interpretation.",
+      "method": "Ableitung Ersatzpotenzial aus Bestand und Unternehmenszielen",
+      "uncertainty": "Weder MENA-Projekte noch Kunden sind benannt; kein GCC-Modernisierungsauftrag 2026 belegt."
+    },
+    {
+      "id": "S-OPP-03",
+      "category": "Opportunities",
+      "section": "swot",
+      "statement": "Die deutsche Allgemeine Genehmigung Nr. 48 erleichtert bis 15.09.2027 Ausfuhren bestimmter Luftverteidigungsgüter in alle sechs GCC-Staaten und begünstigt Lieferungen aus deutscher Fertigung.",
+      "depends_on": [
+        "I-ES-05",
+        "M-DEU-EXPORT-01",
+        "M-DEU-EXPORT-02",
+        "I-MX-06"
+      ],
+      "reasoning": "Die AGG ersetzt Einzelanträge durch Registrierung und Meldungen und wurde im September 2026 um ein Jahr verlängert. Da Rheinmetall auch in Neuss und Italien fertigt, kann ein Teil der Golfnachfrage über weniger restriktive Exportpfade bedient werden als über den Schweizer Standort.",
+      "method": "Ableitung aus Exportrahmen und Fertigungsprofil",
+      "uncertainty": "Welche konkreten Rheinmetall-Güter unter die AGG fallen, ist nicht belegt (Detailbedingungen nicht geöffnet); befristete Regelung."
+    },
+    {
+      "id": "S-THR-01",
+      "category": "Threats",
+      "section": "swot",
+      "statement": "Im Golf konkurrieren US-FMS-Pakete, neue kanonenbasierte Anbieter mit Lokalisierungsangeboten und regionale Industrie um dasselbe Nah- und C-UAS-Budget.",
+      "depends_on": [
+        "I-GS-03",
+        "I-ES-04",
+        "M-UAE-PROG-01",
+        "M-QAT-PROG-01",
+        "M-PEER-COYOTE-01",
+        "M-PEER-EOS-01",
+        "M-PEER-EOS-02",
+        "M-QAT-BARZAN-01"
+      ],
+      "reasoning": "Die USA genehmigten den VAE ein FS-LIDS/Coyote-Paket über 2,1 Mrd. US-Dollar, Raytheon plant laut Janes Coyote-Fertigung in Abu Dhabi. EOS gewann 2026 einen kanonenbasierten Slinger-Auftrag in den VAE mit JV-Option und einen bedingten GCC-Drohnenabwehrvertrag; Barzan liefert eigene C-UAS in Katar.",
+      "method": "Wettbewerbsfeldanalyse aus Markt-A-Fakten",
+      "uncertainty": "FMS-Genehmigungen und EOS-Verträge sind teils nur mögliche bzw. bedingte Geschäfte."
+    },
+    {
+      "id": "S-THR-02",
+      "category": "Threats",
+      "section": "swot",
+      "statement": "Die offene Schweizer Bewilligungslage für Länder im Iran-Konflikt kann Golflieferungen aus dem Zürcher Flugabwehrkern blockieren oder verzögern.",
+      "depends_on": [
+        "I-GS-06",
+        "I-ES-05",
+        "M-CHE-EXPORT-01",
+        "M-CHE-EXPORT-02",
+        "C-STR-02",
+        "C-GCC-12"
+      ],
+      "reasoning": "Die Rheinmetall Air Defence AG in Zürich bündelt sämtliche Flugabwehraktivitäten, während der Bundesrat Ausfuhren an konfliktverwickelte Länder ausschließt. Die KMG-Änderung (Abstimmung 29.11.2026) würde nur Anhang-2-Partnerstaaten erfassen, darunter keinen Golfstaat; der CEO kritisierte die Schweizer Exportgesetzgebung öffentlich.",
+      "method": "Regulierungsrisiko-Ableitung aus Exportrahmen und Konzernstruktur",
+      "uncertainty": "Ob Golfstaaten als konfliktverwickelt eingestuft sind, ist nicht festgelegt; Schweizer Wertschöpfungsanteil je Golf-System nicht belegt."
+    },
+    {
+      "id": "S-THR-03",
+      "category": "Threats",
+      "section": "swot",
+      "statement": "Der VAE-Zugang über EDGE/HALCON birgt eine Partnerabhängigkeit, da EDGE eigene Abwehrsysteme und Partnerschaften mit Barzan, Diehl und Wettbewerbsumfeldern ausbaut.",
+      "depends_on": [
+        "I-GS-04",
+        "M-UAE-EDGE-03",
+        "C-TI-08",
+        "P-SKN-03",
+        "P-SR30-10"
+      ],
+      "reasoning": "Für die VAE ist außer der SkyKnight-Kooperation keine eigene Rheinmetall-Flugabwehrbeziehung belegt. EDGE setzte im Iran-Konflikt eigene Soft-Kill-Systeme ein, integriert Sensoren in katarische Systeme und schloss Vereinbarungen mit Diehl; damit kann der Partner Beschaffungsentscheidungen zugunsten eigener oder anderer Lösungen lenken.",
+      "method": "Partnerrisiko-Ableitung aus Netzwerk- und Marktfakten",
+      "uncertainty": "Skyranger-Gespräche mit EDGE nur aus einem kostenpflichtigen Teaser bekannt; Vertragsform der Kooperation nicht öffentlich."
+    }
+  ],
+  "research_requests": [
+    {
+      "id": "RR-S-01",
+      "target_role": "portfolio",
+      "question": "Sind der Kunde des Q2-2026-Skynex-Auftrags oder die angekündigten Nahost-Lieferungen ab August 2026 inzwischen vertraglich und einem GCC-Staat zugeordnet belegt?",
+      "related_claim_ids": [
+        "P-SKX-11",
+        "C-GCC-13",
+        "P-GCC-02",
+        "P-GCC-03"
+      ],
+      "blocking": false
+    },
+    {
+      "id": "RR-S-02",
+      "target_role": "cluster",
+      "question": "Hat Bundesrat/SECO GCC-Staaten als konfliktverwickelt eingestuft bzw. Bewilligungen der Rheinmetall Air Defence AG für GCC-Staaten sistiert oder erteilt?",
+      "related_claim_ids": [
+        "M-CHE-EXPORT-01",
+        "C-EX-02"
+      ],
+      "blocking": false
+    },
+    {
+      "id": "RR-S-03",
+      "target_role": "cluster",
+      "question": "Sind Betrieb und Leistungsumfang des RADARABIA-Werks in Dschidda und des RBAT-Munitionswerks öffentlich belegt, und welche Ursachen nennen Berichte für die RADARABIA-Verluste?",
+      "related_claim_ids": [
+        "C-STR-06",
+        "C-GCC-02",
+        "C-STR-07",
+        "C-GCC-01"
+      ],
+      "blocking": false
+    },
+    {
+      "id": "RR-S-04",
+      "target_role": "market",
+      "question": "Welche Güterkategorien deckt die AGG Nr. 48 ab, und fallen Rheinmetall-Flugabwehrsysteme/-munition darunter?",
+      "related_claim_ids": [
+        "M-DEU-EXPORT-01",
+        "M-DEU-EXPORT-02"
+      ],
+      "blocking": false
+    },
+    {
+      "id": "RR-S-05",
+      "target_role": "context",
+      "question": "Gibt es eine Primärbestätigung (Rheinmetall-Mitteilung/Website, SHAB/Zefix) für Roman Köhne als Leiter der Division Air Defence seit 01.10.2026?",
+      "related_claim_ids": [
+        "H-KOE-01",
+        "H-DUE-02"
+      ],
+      "blocking": false
+    }
+  ],
+  "shared_limitations": [
+    "Ausschließlich geprüfte A-Fakten und aktuelle I-Interpretationen des delegierten Kontexts (Stichtag 10.10.2026); keine eigene Recherche.",
+    "Herstellerangaben (Pressemitteilungen, Telefonkonferenzen, CEO-Interviews) belegen die Aussage des Unternehmens, nicht unabhängig Einsatz, Wirksamkeit, Kapazität oder Vollzug.",
+    "Öffentlich nicht belegte Sachverhalte (z. B. ungenannte Golfkunden, Werksbetrieb) sind Datenlücken, keine Schwächen.",
+    "Roman Köhne als Leiter der Division Air Defence ist nur angekündigt bzw. fachmedial berichtet, nicht primär bestätigt.",
+    "Berichtete Korkut-Verträge (ASELSAN) in Golfstaaten sind nur anonym berichtet und nicht als SWOT-Basis verwendet.",
+    "Lagezahlen zum Iran-Konflikt sind amtliche oder mediale Angaben ohne unabhängige Verifikation; Konfliktstatus zum Stichtag offen."
+  ]
+}
