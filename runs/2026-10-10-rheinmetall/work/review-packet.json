@@ -3127,6 +3127,81 @@
       "event_status": "geplant",
       "proposed_depth": "A",
       "depth_reason": "Regulatorische Änderung mit Golfbezug"
+    },
+    {
+      "id": "M-PEER-EOS-04",
+      "statement": "Der Auftraggeber der VAE-Slinger-Bestellung, Generation 5 Holding (Gen5), wird von EOS als zu 100 % VAE-eigener Anbieter von Verteidigungsausrüstung, -technologie und -dienstleistungen mit Sitz in Abu Dhabi beschrieben; eine Embraer-Meldung (Mai 2026) bezeichnet Gen5 als in den VAE ansässiges Verteidigungs- und Technologieunternehmen (Chairman Tareq Abdul Rahim Al Hosani). Weder EOS noch die geöffneten Meldungen nennen Gen5 als Streitkraft oder Behörde, benennen staatliche Anteilseigner oder einen staatlichen Endnutzer.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-0ee334ddc9eec2c2",
+        "S-fd5a10d74a5ca9e2"
+      ],
+      "evidence": "Auszug: \"Gen5 is a 100% United Arab Emirates (\"UAE\") owned provider of defence equipment, technology and services headquartered in Abu Dhabi\"; Systeme \"intended to strengthen defence systems in light of ongoing regional tensions\" | Paraphrase: Gen5 \"a UAE-based defence and technology company\"; Chairman H.E. Tareq Abdul Rahim Al Hosani; Generalsekretär des Tawazun Council bei der Unterzeichnung anwesend; Eigentümerstruktur nicht genannt",
+      "location": "ASX-Mitteilung 19.06.2026, S. 1, Abschnitt 'United Arab Emirates Slinger Order' | EDR-Artikel 04.05.2026, Absätze 1–3",
+      "uncertainty": "Staatliche Kontrolle oder Endnutzer öffentlich nicht belegt; 'UAE-owned' ist nicht gleichbedeutend mit staatseigen; Anwesenheit des Tawazun-Generalsekretärs ist kein Eigentumsbeleg.",
+      "event_date": "2026-05-04",
+      "event_status": null,
+      "proposed_depth": "A",
+      "depth_reason": "Klärt Kundentyp für procurement_status eos_slinger",
+      "evidence_items": [
+        {
+          "source_id": "S-0ee334ddc9eec2c2",
+          "mode": "Auszug",
+          "text": "\"Gen5 is a 100% United Arab Emirates (\"UAE\") owned provider of defence equipment, technology and services headquartered in Abu Dhabi\"; Systeme \"intended to strengthen defence systems in light of ongoing regional tensions\"",
+          "location": "ASX-Mitteilung 19.06.2026, S. 1, Abschnitt 'United Arab Emirates Slinger Order'"
+        },
+        {
+          "source_id": "S-fd5a10d74a5ca9e2",
+          "mode": "Paraphrase",
+          "text": "Gen5 \"a UAE-based defence and technology company\"; Chairman H.E. Tareq Abdul Rahim Al Hosani; Generalsekretär des Tawazun Council bei der Unterzeichnung anwesend; Eigentümerstruktur nicht genannt",
+          "location": "EDR-Artikel 04.05.2026, Absätze 1–3"
+        }
+      ]
+    },
+    {
+      "id": "M-PEER-EOS-05",
+      "statement": "EOS meldete im August 2023 eine Bestellung von zunächst drei Slinger-Systemen durch Northrop Grumman für die vom US-Verteidigungsministerium angekündigten '30mm gun trucks' für die Ukraine im Rahmen eines US-Sicherheitshilfepakets; eine Auslieferung wird in der Meldung nicht bestätigt.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-bfb5a4373eee4a08"
+      ],
+      "evidence": "Paraphrase: Purchase order for \"three systems\" über Northrop Grumman (M-ACE) für die Ukraine-Version der '30mm gun trucks'; Teil eines US-Sicherheitshilfepakets; Lieferung Canberra – USA – Ukraine geplant; US-Vertreter: Bereitstellung dauere mehrere Monate",
+      "location": "EOS-News 15.08.2023, Absätze 1–5",
+      "uncertainty": "Vertragspartner ist Northrop Grumman (US-finanziert), nicht die Ukraine direkt; Lieferung/Einführung nicht belegt.",
+      "event_date": "2023-08-03",
+      "event_status": "beauftragt",
+      "proposed_depth": "A",
+      "depth_reason": "Klärt Beschaffungsstatus eos_slinger"
+    },
+    {
+      "id": "M-PEER-EOS-06",
+      "statement": "Militarnyi berichtete am 1. September 2023 unter Berufung auf EOS (EVP Matt Jones), es seien zwei Verträge für die Ukraine über 110 Slinger-Systeme für M113-Schützenpanzer unterzeichnet, weitere 50 Systeme habe das Privatunternehmen Practika bestellt (insgesamt ca. 170 Mio. US-Dollar); Lieferdaten werden nicht genannt, zugleich heißt es, Erprobungsberichte gingen zur Entscheidung an die ukrainische Regierung.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-916d44f2e2bf648f"
+      ],
+      "evidence": "Auszug: \"We have already signed two contracts for Ukraine for 110 systems\"; \"the Ukrainian authorities ordered 110 of these systems\"; 50 Systeme durch \"Practika\"",
+      "location": "Artikeltext 01.09.2023, Absätze 1–4",
+      "uncertainty": "Ukrainischer Auftraggeber nicht benannt; Aussagen zu unterzeichneten Verträgen und ausstehender Regierungsentscheidung widersprüchlich; Lieferung nicht belegt; Militarnyi (25.05.2025) behauptet Einsatz in der Ukraine ohne Quellenangabe (nur Coverage).",
+      "event_date": "2023-09-01",
+      "event_status": "beauftragt (berichtet, widersprüchlich)",
+      "proposed_depth": "A",
+      "depth_reason": "Klärt Beschaffungsstatus eos_slinger"
+    },
+    {
+      "id": "M-PEER-EOS-07",
+      "statement": "EOS meldete am 19. Mai 2025 einen Slinger-Auftrag über 53 Mio. AUD in Marinekonfiguration von einem Systemintegrator für Marineplattformen, finanziert von einer westeuropäischen Regierung; Lieferung 2025 und 2026 erwartet. Der Endnutzer wird nicht genannt.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-657ea472bd973581"
+      ],
+      "evidence": "Auszug: order from \"a turnkey naval shipyard related systems integrated company, and is funded by a Western European government\"; \"delivery is expected to occur during 2025 and 2026\"",
+      "location": "EOS-News 19.05.2025, Absätze 1–2",
+      "uncertainty": "Staatliche Finanzierung, aber Vertragspartner ist ein Integrator; Endnutzer und Lieferung nicht belegt.",
+      "event_date": "2025-05-19",
+      "event_status": "beauftragt",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzender Beschaffungskontext"
     }
   ],
   "sources": [
@@ -3283,6 +3358,15 @@
       "published_date": "2024-02-06",
       "accessed_date": "2026-10-10",
       "source_kind": "Sekundärquelle (Nachrichtenmedium; gibt koreanisches Verteidigungsministerium wieder)"
+    },
+    {
+      "id": "S-1c60583b00848dc8",
+      "name": "The Defense Post",
+      "title": "EOS Snags Deal for Cannon-Based Counter-Drone System",
+      "url": "https://thedefensepost.com/2026/03/17/eos-counter-drone-system/",
+      "published_date": "2026-03-17",
+      "accessed_date": "2026-10-11",
+      "source_kind": "Sekundärquelle (Fachmedium; gibt EOS-Mitteilung wieder)"
     },
     {
       "id": "S-1e47bb01c749039c",
@@ -3529,6 +3613,15 @@
       "source_kind": "Sekundärquelle"
     },
     {
+      "id": "S-4450100cba3c1aca",
+      "name": "Militarnyi",
+      "title": "Unnamed European Country Orders EOS Combat Modules for Naval Platforms",
+      "url": "https://militarnyi.com/en/news/unnamed-european-country-orders-eos-combat-modules-for-naval-platforms/",
+      "published_date": "2025-05-25",
+      "accessed_date": "2026-10-11",
+      "source_kind": "Sekundärquelle (Fachmedium)"
+    },
+    {
       "id": "S-458cf180e9a20818",
       "name": "Janes",
       "title": "WDS 2022: Rheinmetall, MAZ Group launch joint venture",
@@ -3709,6 +3802,15 @@
       "source_kind": "Herstellerangabe"
     },
     {
+      "id": "S-657ea472bd973581",
+      "name": "Electro Optic Systems",
+      "title": "New Slinger counter-drone order for Europe",
+      "url": "https://eos-aus.com/news/new-slinger-counter-drone-order-for-europe/",
+      "published_date": "2025-05-19",
+      "accessed_date": "2026-10-11",
+      "source_kind": "Herstellerangabe"
+    },
+    {
       "id": "S-65fc5577a5b55116",
       "name": "Soldier Systems Daily",
       "title": "Rheinmetall NIOA Munitions Ramps Ups As First Exports Roll Out",
@@ -3834,6 +3936,15 @@
       "published_date": "2026-02-11",
       "accessed_date": "2026-10-10",
       "source_kind": "Sekundärquelle (Fachmedium; Messebericht)"
+    },
+    {
+      "id": "S-916d44f2e2bf648f",
+      "name": "Militarnyi",
+      "title": "Australian EOS to supply 160 SLINGER counter-UAV systems to Ukraine",
+      "url": "https://militarnyi.com/en/news/australian-eos-to-supply-160-slinger-counter-uav-systems-to-ukraine/",
+      "published_date": "2023-09-01",
+      "accessed_date": "2026-10-11",
+      "source_kind": "Sekundärquelle (Fachmedium; gibt EOS-Angaben wieder)"
     },
     {
       "id": "S-954b1ad2b853fa8f",
@@ -4009,6 +4120,15 @@
       "published_date": "2026-03-20",
       "accessed_date": "2026-10-10",
       "source_kind": "Behördenquelle"
+    },
+    {
+      "id": "S-bfb5a4373eee4a08",
+      "name": "Electro Optic Systems",
+      "title": "EOS Confirms First Slinger Exports to Ukraine",
+      "url": "https://eos-aus.com/news/eos-confirms-first-slinger-exports-to-ukraine/",
+      "published_date": "2023-08-15",
+      "accessed_date": "2026-10-11",
+      "source_kind": "Herstellerangabe (Unternehmens-News, Übernahme aus Defence Connect vom 2023-08-03)"
     },
     {
       "id": "S-c07effa3f3662a94",
@@ -4362,6 +4482,15 @@
       "published_date": "2021-02-24",
       "accessed_date": "2026-10-10",
       "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-fd5a10d74a5ca9e2",
+      "name": "EDR Magazine",
+      "title": "Embraer and Generation 5 Holding sign exclusive strategic partnership agreement for the C-390 Millennium program in the UAE",
+      "url": "https://www.edrmagazine.eu/%E2%96%BA-embraer-and-generation-5-holding-sign-exclusive-strategic-partnership-agreement-for-the-c-390-millennium-program-in-the-uae",
+      "published_date": "2026-05-04",
+      "accessed_date": "2026-10-11",
+      "source_kind": "Sekundärquelle (Fachmedium; gibt Embraer-Mitteilung wieder)"
     }
   ],
   "module_views": [
@@ -6085,9 +6214,12 @@
           "criterion_id": "procurement_status",
           "claim_ids": [
             "M-PEER-EOS-01",
-            "M-PEER-EOS-03"
+            "M-PEER-EOS-04",
+            "M-PEER-EOS-05",
+            "M-PEER-EOS-06",
+            "M-PEER-EOS-07"
           ],
-          "factual_description": "Auftrag über Gen5 (VAE) 124 Mio. USD, Lieferung 2027–2028 vorbehaltlich Exportgenehmigung; Ukraine-Lieferung 2023 angekündigt."
+          "factual_description": "VAE: Auftrag 124 Mio. USD über Gen5 (laut EOS 100 % VAE-eigenes Unternehmen; staatliche Kontrolle/Endnutzer öffentlich nicht belegt), Lieferung 2027–2028 vorbehaltlich Exportgenehmigung. Ukraine: drei Systeme über Northrop Grumman im US-Sicherheitshilfepaket bestellt (2023, Herstellerangabe); laut EOS-Manager zwei Verträge über 110 Systeme (2023, widersprüchlich berichtet); Lieferung/Einführung bei einem staatlichen Kunden in den geöffneten Quellen nicht bestätigt. Europa: staatlich finanzierter Marineauftrag über Integrator (2025)."
         },
         {
           "peer_id": "eos_slinger",
@@ -6376,6 +6508,11 @@
           "topic": "Konfliktstatus zum Stichtag",
           "description": "Formaler Status der US-Iran-Waffenruhe zum 2026-10-10 nicht durch Primärquelle geklärt; letzte Lageberichte (M-GCC-THREAT-04) zeigen Huthi-Angriffe auf Saudi-Arabien und Tankerangriffe.",
           "status": "offen"
+        },
+        {
+          "topic": "Slinger: Kundentyp Gen5 und Lieferstatus",
+          "description": "Öffentlich nicht belegt ist, ob Gen5 staatlich kontrolliert ist oder für welche staatliche Stelle die VAE-Slinger bestimmt sind (EOS nennt nur '100% UAE owned'; die Angabe aus einer Analyse, Gen5 sei mit Calidus verbunden, ist nicht geprüft). Eine Lieferung bzw. Einführung von Slinger bei einem staatlichen Kunden (Ukraine oder andere) ist in Primärquellen nicht bestätigt; Militarnyi (25.05.2025) behauptet ohne Quelle einen Einsatz in der Ukraine; die Zahl von 160 gelieferten Systemen stammt nur aus einem Investorenforum. Auftrag über 42 Mio. USD aus dem Nahen Osten (März 2026) läuft über einen ungenannten Rüstungs-Prime, nicht nachweislich staatlich.",
+          "status": "öffentliche Datenlücke"
         }
       ],
       "coverage": [
@@ -6522,6 +6659,25 @@
           "source_ids": [],
           "finding": "HTTP 403/402/Paywall bzw. JavaScript-Schutz; nicht als Beleg verwendet.",
           "status": "nicht zugänglich"
+        },
+        {
+          "topic": "RR-02 Slinger Kundentyp/Lieferstatus",
+          "search_terms": [
+            "\"Generation 5 Holding\" Abu Dhabi ownership",
+            "EOS Slinger Ukraine delivered",
+            "EOS Slinger orders 2025 2026"
+          ],
+          "source_ids": [
+            "S-fd5a10d74a5ca9e2",
+            "S-bfb5a4373eee4a08",
+            "S-916d44f2e2bf648f",
+            "S-657ea472bd973581",
+            "S-4450100cba3c1aca",
+            "S-1c60583b00848dc8",
+            "S-0ee334ddc9eec2c2"
+          ],
+          "finding": "Gen5 nur als VAE-eigenes Unternehmen belegt, staatliche Kontrolle offen; Ukraine-Bestellungen (über Northrop Grumman; 110 Systeme laut EOS-Manager) berichtet, Lieferung nicht primär bestätigt; Militarnyi 2025 (unbelegte Einsatzbehauptung) und Defense Post 2026 (Prime-Kunde ohne Staatsnachweis) nicht als Claim übernommen.",
+          "status": "geprüft, teilweise ohne Beleg"
         }
       ]
     }
