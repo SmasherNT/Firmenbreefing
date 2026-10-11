@@ -1,0 +1,734 @@
+{
+  "run_id": "2026-10-10-rheinmetall",
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-10",
+  "phase": "final",
+  "errors": [],
+  "fingerprints": {
+    "I-ES-01": "eac0dacaae35a39f9b3b99f060d9947de3968b5ec200a505fba636a9a723f622",
+    "I-ES-02": "0ab380981e3bf433b8235cb0a438068b9fde22924efc0b1ce0648c638ea99c17",
+    "I-ES-03": "c2309665b565c88cd179e252abd449737903898ca8b6406e0fbc5c9afcef3575",
+    "I-ES-04": "57d64da74c85afb00efdd6a58c5d24e52401cf0a396de92d51395740789ca5a2",
+    "I-ES-05": "207d094e0314335370bf817755cbb7551df7c726cbe1235052e69e99c9aa7c64",
+    "I-ES-06": "f3790cd73e03602bb0576c6474d3420bfec6b6f5ce6647e8cf50ba82f3f1dcdf",
+    "I-FA-01": "2f5d56f8def12e15f4a5c416ce8a819b702b72459f8da8e2dfab6c038251203c",
+    "I-FA-02": "4e2791bf3c493553608c5711cd166b3ef5c67294ae752e5925528cb41fbc21a4",
+    "I-FA-03": "65804fc759a0b98526263706ae449f2c5444909718233bda66126ed96fa85066",
+    "I-FA-04": "e2de897fa88adc7c147c930621964cef48785bcf1e3e3beec1739a141c2d30ef",
+    "I-GS-01": "37f9b194a7098da66d5f88231ae3431d0a3de88dc6564fd68de856ab6d67dd41",
+    "I-GS-02": "cf40853dda00b2fd7f3051d20c3fb1538e488ac575347770226c0696d2c735e6",
+    "I-GS-03": "799e3424965608f6849394222ec50d814f75232c3f8a907e4cfa4e70208dc48e",
+    "I-GS-04": "23d87de473846696d69fb33195f2b225544bd3d15cb4c204e3070d840193ff02",
+    "I-GS-05": "2a6efb297f169890fd2a43abe0a401ef2223de0678958eaa1d57b88f570f01f7",
+    "I-GS-06": "5442dffa45df5fb3622a7b8178cd1786ced57895584f00aff1cf8cf159dece0b",
+    "I-PF-01": "a061f3ad736577b4d301bf67e1aba3e3735f4aff7477d74df19528e28eb66811",
+    "I-TE-01": "7fa6afb2e025c6d29e73e927be40e521f55a75f35570a49e341a0e82524d04c5",
+    "I-NW-01": "fd622aa4f8e10f7d34dbc00d51d4cf3b4b2b72dcef4873011812048d7e4c8b89",
+    "I-RG-01": "fbe9e9b405370b73d82e4fe9ebc385cd0adf037769f29881e2379b28b24d9a94",
+    "I-MX-01": "cdac7a3a5b8b2270d2621bce9dc8aea6621535138fad9aa3b46453c67d339a70",
+    "I-MX-02": "692e2401c1df21ca7935910a4fb8c9938c829a1aee120de3b4b4c35241dd3234",
+    "I-MX-03": "bf2643642f45f1fa9e864f979e10802213b65011bc096154a1aa8ae11172c96d",
+    "I-MX-04": "a89adfd08f9f56b50fe8aba5faaf71ed1efdfa1fe7ac65e567e54bb9368a3ba7",
+    "I-MX-05": "dfcfc58f083dcfc7607e9674d3b55b7a311244ae4be177791939bed12c09065d",
+    "I-MX-06": "d2f624b88d828407bf396a45217149784865bf05c70564a729b4c2adba044a79",
+    "I-MX-07": "ea830a9eab432d919defd7e10b1357df4bdcdbd9db211377a14923381b22d133",
+    "I-MX-08": "77c3d0d623444ec207f7e2d2b486e391d92e220e7b2685f48d77aa51d24d7078",
+    "I-MX-09": "0a5eaaabb0f9c81354280b73a7ddaee7e236eea3541322cf34c7482db37b8cac",
+    "I-MX-10": "c6f82534dda8c4a175a43d018de501bc087c4ffb5761693da2e52843c20ee2dc",
+    "I-MX-11": "12cf9b9e96e4adb2a84bf5c20dadb5a17a85ea649112c4020a0a6212242ecd8f",
+    "I-MX-12": "844be1ee1c8f44d2a296693b1fbe4ec26a9f068bb9f469f61a843aafa2ca6b2b",
+    "I-MX-13": "bdb8bbfe0b0c24e00d073ba011a510719ed2ce2d5ad0733731c0b90d88d6d82b",
+    "I-MX-14": "6485914c3b99f7957b684494823904c43a6eda4b4d3d3a50e679a28cf035cb5b",
+    "I-MX-15": "8a47cf6aaf91481b035d005c60a6dcfd4ab04ad932684804b67348c2bbf9a7d8",
+    "I-MX-16": "d4507ce6d23aa83c0f67ffc8b0a4dbb0102b495896f172e66aa36da0aaa089d9",
+    "I-MX-17": "79f0f609c4f36615e32943c7487ae1619b937d65bff5d04b003fdecc57a387ba",
+    "I-MX-18": "22f394bf98853b1d9db1b43a0968fbe613049fbd4d5918de5f23284d6ca704fc",
+    "I-MX-19": "c95c29b25cc7ae0f4cc113468d97b012e851164f110f4b3b1ea12d3818c0287c",
+    "I-MX-20": "9c04509ea1ff560023a469a6a94ed7adac4e27cdc67d99d02090a087e25d6203",
+    "I-MX-21": "db5c5c612b144c1efe825122f2908164459b62e2f3a86c39a214c45e891479af",
+    "I-MX-22": "8a6db9ccfeae4e11423a4fc3a5aa1d188e5a83832661a1965fc0993b8a1daa0e",
+    "I-MX-23": "24d099a43944d660a5e29f54e5162113bb31a40aebcdf073f23009883f2b5d1e",
+    "I-MX-24": "644a6e8a8e932392d454df67972255582536ce94e31ed36b6975f64c8ec9edc2",
+    "I-MX-25": "602ed26baf0bbca39a0c6ee5630fd1fe6b1543f2fcbb095cf877d06454f2d510",
+    "I-MX-26": "8844ffdbbaacaf6c6c60a3d220d7689c8438ea00f304d5408ce7ac7ae73cb401",
+    "I-MX-27": "32c9fca072595225a0ca50ba0a7792e21964b7624e096b6372702a00145a850f",
+    "I-MX-28": "900a314e4fe571723eac58ad6274fcdda0247af4b6c3402d28a58177ea54148e",
+    "I-MX-29": "beff0ffe3b6f8e640b7c0ce5fef2e2f6f0561d9d789e4dac3126f5376b18709c",
+    "I-MX-30": "3a19d4694e39e4c7fb97e5940513e94423d47f91102cdf8c226b734b52a9a4a4",
+    "I-MX-31": "321a79533ec1022128e7eb465ad30665522457df642e72ab93e01372cc956348",
+    "I-MX-32": "df9b4f6c283b02d884d73d1ebb8d4f98c1dbacf72d09a573b49e0467ae025d45",
+    "I-MX-33": "bc09cdf749db7cb0f0630ec67e02ce16ec93a8897836a39f0a2f9d9c1022ad72",
+    "I-MX-34": "d5a2a0544dd154c1e4b836c4e7707903ed20b7011478844a34cd4111dc427ed1",
+    "I-MX-35": "6f9bce1f72c1da148e3080ea76dde9611abeb41c696e0dbbd6b731d04090c62e",
+    "I-MX-36": "9743cb5a11160a36656687b92f12ca30ce9ab5b0dc31e96490788f09b6ddb6f2",
+    "I-MX-37": "b5cd1ee018b9c50735229d7f9c50d3dbd8bc7b99a4b30bed9b093ca25951fc79",
+    "I-MX-38": "2d5aa174fcfd818dcc2cf2098d62339c842cee7b6f67f08714e64f941aa7208e",
+    "I-MX-39": "f773b3067e5a787fc1eb7344f85bcdf95a6a77fb848601673aee4ae0e5bcf422",
+    "I-MX-40": "6cf12991d63db92bb12d7b305b251776e3ff39ccc2db09d0c30e8eae755f132c",
+    "I-MX-41": "b7dbae20b34d42569f46441dcee42dd14712951f8f30b477340ca12256abaab6",
+    "I-MX-42": "2c46f70c69e117ddca9f83f63146b342e20d762a9366f058ae3c29bd8c29213d",
+    "I-MX-43": "14be277bb3d8cf5b4a7e1929dfeb23b2cfdb5b1fa92716248f75e5bb6a4eaa4a",
+    "I-MX-44": "20a16c3cb1445d396831954eb2d5fd0daca6dac045caf0a67fd140ecf03c802b",
+    "I-MX-45": "82fd8d72d768c029fa6b5a7d7404fa2294fa96c0ff9c69163f76ea8027372628",
+    "I-MX-46": "4dec32dd16f97363696f3c218c89d5e951d7661008d945ae68968ae23ba7f7da",
+    "I-MX-47": "34756dc998f0cf3e9c607b7868918c10ab6e81adfeeee51e28f0e3cb7ad818cc",
+    "I-MX-48": "c04001ad0cae50e4124b1190aedf4a912549afc98c6cf3b22b64dccf56b164a8",
+    "S-STR-01": "57ca498f36a625eab6cb6dc884828133cdbeba6a2923dc118ae493dcfd289481",
+    "S-STR-02": "2bf43fec6157e461f7450829977ceb3d86f8198b5bf72bc638bf4bd87e8c583f",
+    "S-STR-03": "22b1328beb8174c4f71e71c0b3fabc89770d484fbeb1c643a8aa0b37ac30c42e",
+    "S-WEA-01": "9e4440a86c9a8d1bcf84857425de073ffdf51bdd4a6299e12971793fde16b53f",
+    "S-WEA-02": "54c3738c06cabce1e634d672f0cacd1cfc65e9c9345b95e504cfbaeed9c507d1",
+    "S-WEA-03": "30c70734ac573a285dd7a67733962c26a2ad38408737a214ab445b869369528d",
+    "S-OPP-01": "9e22f6c2b513efc0f78d1df9e60d2ba83720312963090950e3b256ce9ed9e552",
+    "S-OPP-02": "47a6ee76c9ee399b3d1d27cc1127d39fa56352fc07bbe62d64d8764274304c16",
+    "S-OPP-03": "63d0caf39aee473487a9302427d6a744e2406d9f875a0332c847d9506da56fcc",
+    "S-THR-01": "578e602438004c37fde7908ef0d1d7b510fb46e3a794c3715cd5314d2ad3ebc1",
+    "S-THR-02": "26048b9959b6aaae71f73f9ab7a51fc05b24695ded9dccf3770ef45a6da496ac",
+    "S-THR-03": "0adc8746ce752c94bb6af3fc9ea0956aed6adf223c69d99d6d5c0bda433a3a30"
+  },
+  "fact_dependencies": {
+    "I-ES-01": [
+      "C-STR-03",
+      "T-CTX-02",
+      "T-CTX-04",
+      "T-CTX-08",
+      "T-CTX-10",
+      "T-CTX-11"
+    ],
+    "I-ES-02": [
+      "C-GCC-13",
+      "C-KD-01",
+      "C-KD-02",
+      "C-KD-03",
+      "C-KD-04",
+      "C-TI-09",
+      "P-SKX-09",
+      "P-SR30-05",
+      "T-CTX-08"
+    ],
+    "I-ES-03": [
+      "C-STR-05",
+      "C-STR-06",
+      "C-STR-07",
+      "M-QAT-RHM-01",
+      "M-QAT-RHM-02",
+      "M-SAU-RHM-02",
+      "P-GCC-02",
+      "P-GCC-03",
+      "P-GCC-KW-01"
+    ],
+    "I-ES-04": [
+      "M-GCC-PROG-01",
+      "M-GCC-THREAT-01",
+      "M-GCC-THREAT-02",
+      "M-KWT-PROG-02",
+      "M-PEER-EOS-01",
+      "M-PEER-EOS-02",
+      "M-QAT-BARZAN-01",
+      "M-UAE-EDGE-03",
+      "M-UAE-PROG-01",
+      "M-UAE-THREAT-01",
+      "T-CTX-22"
+    ],
+    "I-ES-05": [
+      "C-GCC-12",
+      "C-STR-01",
+      "C-STR-02",
+      "M-CHE-EXPORT-01",
+      "M-CHE-EXPORT-02",
+      "M-DEU-EXPORT-01",
+      "M-DEU-EXPORT-02",
+      "P-GCC-03",
+      "P-SKX-11"
+    ],
+    "I-ES-06": [
+      "H-DUE-02",
+      "H-DUE-03",
+      "H-DUE-05",
+      "H-KOE-01",
+      "H-KOE-02",
+      "H-KOE-03",
+      "H-PAP-01",
+      "H-PAP-02"
+    ],
+    "I-FA-01": [
+      "C-KD-01",
+      "C-STR-02",
+      "C-TI-03",
+      "C-TI-04",
+      "C-TI-05",
+      "C-TI-09",
+      "M-QAT-RHM-03",
+      "P-SKN-03",
+      "P-SR35-01"
+    ],
+    "I-FA-02": [
+      "M-RHM-CUAS-01",
+      "P-GCC-01",
+      "P-SKX-06",
+      "P-SKX-07",
+      "P-SKX-08",
+      "T-CTX-11",
+      "T-CTX-21"
+    ],
+    "I-FA-03": [
+      "M-RHM-CAP-01",
+      "P-CAP-01",
+      "P-GCC-02",
+      "P-SG-01",
+      "P-SKX-11",
+      "P-SR35-01",
+      "T-CTX-09"
+    ],
+    "I-FA-04": [
+      "C-STR-01",
+      "C-STR-03",
+      "H-GAN-01",
+      "H-PAP-02",
+      "T-CTX-05",
+      "T-CTX-06"
+    ],
+    "I-GS-01": [
+      "C-GCC-01",
+      "C-GCC-02",
+      "C-GCC-04",
+      "C-GCC-11",
+      "C-STR-05",
+      "C-STR-06",
+      "C-STR-07",
+      "C-TI-05",
+      "M-QAT-RHM-01",
+      "M-SAU-RHM-02",
+      "P-GCC-KW-01",
+      "P-SR30-10"
+    ],
+    "I-GS-02": [
+      "C-GCC-01",
+      "C-GCC-02",
+      "C-STR-06",
+      "C-STR-07",
+      "C-STR-08",
+      "M-SAU-LOCAL-01",
+      "M-UAE-ACCESS-01",
+      "T-CTX-25"
+    ],
+    "I-GS-03": [
+      "M-KWT-PROG-02",
+      "M-PEER-COYOTE-01",
+      "M-PEER-EOS-01",
+      "M-PEER-EOS-02",
+      "M-QAT-BARZAN-01",
+      "M-QAT-PROG-01",
+      "M-QAT-PROG-02",
+      "M-SAU-PROG-02",
+      "M-UAE-EDGE-03",
+      "M-UAE-PROG-01"
+    ],
+    "I-GS-04": [
+      "C-GCC-11",
+      "C-TI-05",
+      "C-TI-08",
+      "M-UAE-EDGE-02",
+      "M-UAE-EDGE-03",
+      "P-SKN-01",
+      "P-SKN-03"
+    ],
+    "I-GS-05": [
+      "C-GCC-03",
+      "M-RHM-GULF-01",
+      "M-SAU-RHM-02",
+      "M-UAE-ACCESS-01",
+      "P-GCC-01",
+      "P-GCC-02",
+      "P-GCC-KW-01",
+      "T-CTX-11"
+    ],
+    "I-GS-06": [
+      "C-EX-02",
+      "C-EX-03",
+      "C-GCC-10",
+      "C-GCC-12",
+      "M-CHE-EXPORT-01",
+      "M-CHE-EXPORT-02",
+      "P-SKX-11"
+    ],
+    "I-PF-01": [
+      "C-GCC-04",
+      "C-KD-01",
+      "C-KD-02",
+      "C-KD-03",
+      "C-TI-09",
+      "M-QAT-RHM-01",
+      "M-SAU-RHM-02",
+      "P-GCC-03",
+      "P-SR30-05"
+    ],
+    "I-TE-01": [
+      "C-GCC-01",
+      "C-TI-03",
+      "C-TI-04",
+      "C-TI-05",
+      "P-HEL-01"
+    ],
+    "I-NW-01": [
+      "C-GCC-01",
+      "C-GCC-02",
+      "C-GCC-07",
+      "C-GCC-14",
+      "C-TI-01",
+      "C-TI-02",
+      "C-TI-05"
+    ],
+    "I-RG-01": [
+      "C-KD-04",
+      "M-SAU-BUDGET-01",
+      "P-GCC-03",
+      "T-CTX-02",
+      "T-CTX-08",
+      "T-CTX-11"
+    ],
+    "I-MX-01": [
+      "C-KD-01",
+      "C-TI-09",
+      "M-QAT-RHM-03",
+      "M-UAE-EDGE-01",
+      "P-SKX-11",
+      "P-SR35-01"
+    ],
+    "I-MX-02": [
+      "M-RHM-CUAS-01",
+      "M-RHM-GULF-01",
+      "P-SKX-06",
+      "P-SKX-08"
+    ],
+    "I-MX-03": [
+      "C-KD-04",
+      "M-QAT-RHM-01",
+      "M-QAT-RHM-02",
+      "M-SAU-RHM-02",
+      "P-SKX-10"
+    ],
+    "I-MX-04": [
+      "M-QAT-RHM-01",
+      "M-QAT-RHM-02",
+      "M-SAU-RHM-02",
+      "P-GCC-03",
+      "P-GCC-KW-01"
+    ],
+    "I-MX-05": [
+      "C-GCC-01",
+      "C-GCC-02",
+      "C-STR-05",
+      "C-STR-06",
+      "C-STR-07",
+      "C-STR-08",
+      "C-TI-05"
+    ],
+    "I-MX-06": [
+      "M-RHM-CAP-01",
+      "P-CAP-01",
+      "P-GCC-02",
+      "P-GCC-03",
+      "P-SG-01",
+      "P-SKX-11",
+      "P-SR35-01"
+    ],
+    "I-MX-07": [
+      "M-GCC-TUR-01",
+      "M-PEER-KOR-01"
+    ],
+    "I-MX-08": [
+      "M-PEER-KOR-01"
+    ],
+    "I-MX-09": [
+      "M-PEER-KOR-01"
+    ],
+    "I-MX-10": [
+      "M-GCC-TUR-01"
+    ],
+    "I-MX-11": [],
+    "I-MX-12": [],
+    "I-MX-13": [
+      "M-PEER-EOS-01",
+      "M-PEER-EOS-02",
+      "M-PEER-EOS-03"
+    ],
+    "I-MX-14": [
+      "M-PEER-EOS-01",
+      "M-PEER-EOS-03",
+      "M-PEER-EOS-04"
+    ],
+    "I-MX-15": [
+      "M-PEER-EOS-01",
+      "M-PEER-EOS-04",
+      "M-PEER-EOS-05",
+      "M-PEER-EOS-06",
+      "M-PEER-EOS-07"
+    ],
+    "I-MX-16": [
+      "M-PEER-EOS-01",
+      "M-PEER-EOS-02",
+      "M-PEER-EOS-04"
+    ],
+    "I-MX-17": [
+      "M-PEER-EOS-01"
+    ],
+    "I-MX-18": [
+      "M-PEER-EOS-01"
+    ],
+    "I-MX-19": [
+      "M-KWT-PROG-02",
+      "M-QAT-PROG-02"
+    ],
+    "I-MX-20": [
+      "M-PEER-NASAMS-01"
+    ],
+    "I-MX-21": [
+      "M-KWT-PROG-02",
+      "M-PEER-NASAMS-01",
+      "M-QAT-PROG-02"
+    ],
+    "I-MX-22": [
+      "M-KWT-PROG-02",
+      "M-QAT-PROG-02"
+    ],
+    "I-MX-23": [],
+    "I-MX-24": [],
+    "I-MX-25": [
+      "M-PEER-MICA-01",
+      "M-SAU-PROG-02"
+    ],
+    "I-MX-26": [
+      "M-PEER-MICA-01"
+    ],
+    "I-MX-27": [
+      "M-PEER-MICA-01",
+      "M-SAU-PROG-02"
+    ],
+    "I-MX-28": [
+      "M-SAU-PROG-02"
+    ],
+    "I-MX-29": [],
+    "I-MX-30": [],
+    "I-MX-31": [
+      "M-PEER-COYOTE-01",
+      "M-UAE-PROG-01"
+    ],
+    "I-MX-32": [
+      "M-PEER-COYOTE-02"
+    ],
+    "I-MX-33": [
+      "M-PEER-COYOTE-02",
+      "M-QAT-PROG-01",
+      "M-UAE-PROG-01"
+    ],
+    "I-MX-34": [
+      "M-PEER-COYOTE-01",
+      "M-QAT-PROG-01",
+      "M-UAE-PROG-01"
+    ],
+    "I-MX-35": [
+      "M-PEER-COYOTE-01"
+    ],
+    "I-MX-36": [
+      "M-PEER-COYOTE-01"
+    ],
+    "I-MX-37": [
+      "M-UAE-EDGE-01",
+      "M-UAE-EDGE-02",
+      "M-UAE-EDGE-03",
+      "P-SKN-01"
+    ],
+    "I-MX-38": [
+      "M-UAE-EDGE-03"
+    ],
+    "I-MX-39": [
+      "M-UAE-EDGE-02",
+      "M-UAE-EDGE-03",
+      "P-SKN-03"
+    ],
+    "I-MX-40": [
+      "M-UAE-EDGE-03"
+    ],
+    "I-MX-41": [
+      "C-GCC-11",
+      "C-TI-05",
+      "C-TI-08",
+      "M-UAE-EDGE-01",
+      "M-UAE-EDGE-03"
+    ],
+    "I-MX-42": [
+      "M-UAE-EDGE-03"
+    ],
+    "I-MX-43": [
+      "M-QAT-BARZAN-01"
+    ],
+    "I-MX-44": [
+      "M-QAT-BARZAN-01"
+    ],
+    "I-MX-45": [
+      "M-QAT-BARZAN-01"
+    ],
+    "I-MX-46": [
+      "M-QAT-BARZAN-01"
+    ],
+    "I-MX-47": [
+      "C-STR-07",
+      "M-QAT-BARZAN-01",
+      "M-QAT-RHM-04",
+      "M-UAE-EDGE-03"
+    ],
+    "I-MX-48": [
+      "C-GCC-01",
+      "M-QAT-BARZAN-01"
+    ],
+    "S-STR-01": [
+      "C-STR-05",
+      "C-STR-06",
+      "C-STR-07",
+      "M-QAT-RHM-01",
+      "M-QAT-RHM-02",
+      "M-SAU-RHM-02",
+      "P-GCC-02",
+      "P-GCC-03",
+      "P-GCC-KW-01"
+    ],
+    "S-STR-02": [
+      "C-GCC-01",
+      "C-GCC-02",
+      "C-STR-05",
+      "C-STR-06",
+      "C-STR-07",
+      "C-STR-08",
+      "C-TI-05",
+      "M-SAU-LOCAL-01",
+      "M-UAE-ACCESS-01",
+      "T-CTX-25"
+    ],
+    "S-STR-03": [
+      "M-RHM-CAP-01",
+      "M-RHM-CUAS-01",
+      "M-RHM-GULF-01",
+      "P-CAP-01",
+      "P-GCC-01",
+      "P-GCC-02",
+      "P-GCC-03",
+      "P-SG-01",
+      "P-SKX-06",
+      "P-SKX-07",
+      "P-SKX-08",
+      "P-SKX-11",
+      "P-SR35-01",
+      "T-CTX-08",
+      "T-CTX-09",
+      "T-CTX-11",
+      "T-CTX-21"
+    ],
+    "S-WEA-01": [
+      "C-GCC-01",
+      "C-KD-01",
+      "C-STR-02",
+      "C-TI-03",
+      "C-TI-04",
+      "C-TI-05",
+      "C-TI-09",
+      "M-QAT-RHM-03",
+      "M-UAE-EDGE-02",
+      "M-UAE-EDGE-03",
+      "P-HEL-01",
+      "P-SKN-03",
+      "P-SR35-01"
+    ],
+    "S-WEA-02": [
+      "C-GCC-01",
+      "C-GCC-02",
+      "C-STR-06",
+      "C-STR-07",
+      "C-STR-08",
+      "M-SAU-LOCAL-01",
+      "M-UAE-ACCESS-01",
+      "T-CTX-25"
+    ],
+    "S-WEA-03": [
+      "C-STR-01",
+      "C-STR-03",
+      "H-DUE-02",
+      "H-DUE-03",
+      "H-DUE-05",
+      "H-GAN-01",
+      "H-KOE-01",
+      "H-KOE-02",
+      "H-KOE-03",
+      "H-PAP-01",
+      "H-PAP-02",
+      "T-CTX-05",
+      "T-CTX-06"
+    ],
+    "S-OPP-01": [
+      "M-GCC-PROG-01",
+      "M-GCC-THREAT-01",
+      "M-GCC-THREAT-02",
+      "M-KWT-PROG-02",
+      "M-PEER-EOS-01",
+      "M-PEER-EOS-02",
+      "M-QAT-BARZAN-01",
+      "M-UAE-EDGE-03",
+      "M-UAE-PROG-01",
+      "M-UAE-THREAT-01",
+      "P-GCC-01",
+      "P-GCC-02",
+      "T-CTX-22"
+    ],
+    "S-OPP-02": [
+      "C-GCC-03",
+      "M-RHM-GULF-01",
+      "M-SAU-RHM-02",
+      "M-UAE-ACCESS-01",
+      "P-GCC-01",
+      "P-GCC-02",
+      "P-GCC-03",
+      "P-GCC-KW-01",
+      "P-SG-01",
+      "T-CTX-11"
+    ],
+    "S-OPP-03": [
+      "C-GCC-12",
+      "C-STR-01",
+      "C-STR-02",
+      "M-CHE-EXPORT-01",
+      "M-CHE-EXPORT-02",
+      "M-DEU-EXPORT-01",
+      "M-DEU-EXPORT-02",
+      "M-RHM-CAP-01",
+      "P-CAP-01",
+      "P-GCC-02",
+      "P-GCC-03",
+      "P-SG-01",
+      "P-SKX-11",
+      "P-SR35-01"
+    ],
+    "S-THR-01": [
+      "M-GCC-PROG-01",
+      "M-GCC-THREAT-01",
+      "M-GCC-THREAT-02",
+      "M-KWT-PROG-02",
+      "M-PEER-COYOTE-01",
+      "M-PEER-EOS-01",
+      "M-PEER-EOS-02",
+      "M-QAT-BARZAN-01",
+      "M-QAT-PROG-01",
+      "M-QAT-PROG-02",
+      "M-SAU-PROG-02",
+      "M-UAE-EDGE-03",
+      "M-UAE-PROG-01",
+      "M-UAE-THREAT-01",
+      "T-CTX-22"
+    ],
+    "S-THR-02": [
+      "C-EX-02",
+      "C-EX-03",
+      "C-GCC-10",
+      "C-GCC-12",
+      "C-STR-01",
+      "C-STR-02",
+      "M-CHE-EXPORT-01",
+      "M-CHE-EXPORT-02",
+      "M-DEU-EXPORT-01",
+      "M-DEU-EXPORT-02",
+      "P-GCC-03",
+      "P-SKX-11"
+    ],
+    "S-THR-03": [
+      "C-GCC-11",
+      "C-TI-05",
+      "C-TI-08",
+      "M-UAE-EDGE-02",
+      "M-UAE-EDGE-03",
+      "P-SKN-01",
+      "P-SKN-03",
+      "P-SR30-10"
+    ]
+  },
+  "required_full_review_ids": [
+    "I-ES-01",
+    "I-ES-02",
+    "I-ES-03",
+    "I-ES-04",
+    "I-ES-05",
+    "I-ES-06",
+    "I-FA-01",
+    "I-FA-02",
+    "I-FA-03",
+    "I-FA-04",
+    "I-GS-01",
+    "I-GS-02",
+    "I-GS-03",
+    "I-GS-04",
+    "I-GS-05",
+    "I-GS-06",
+    "I-MX-01",
+    "I-MX-02",
+    "I-MX-03",
+    "I-MX-04",
+    "I-MX-05",
+    "I-MX-06",
+    "I-MX-07",
+    "I-MX-08",
+    "I-MX-09",
+    "I-MX-10",
+    "I-MX-11",
+    "I-MX-12",
+    "I-MX-13",
+    "I-MX-14",
+    "I-MX-15",
+    "I-MX-16",
+    "I-MX-17",
+    "I-MX-18",
+    "I-MX-19",
+    "I-MX-20",
+    "I-MX-21",
+    "I-MX-22",
+    "I-MX-23",
+    "I-MX-24",
+    "I-MX-25",
+    "I-MX-26",
+    "I-MX-27",
+    "I-MX-28",
+    "I-MX-29",
+    "I-MX-30",
+    "I-MX-31",
+    "I-MX-32",
+    "I-MX-33",
+    "I-MX-34",
+    "I-MX-35",
+    "I-MX-36",
+    "I-MX-37",
+    "I-MX-38",
+    "I-MX-39",
+    "I-MX-40",
+    "I-MX-41",
+    "I-MX-42",
+    "I-MX-43",
+    "I-MX-44",
+    "I-MX-45",
+    "I-MX-46",
+    "I-MX-47",
+    "I-MX-48",
+    "I-NW-01",
+    "I-PF-01",
+    "I-RG-01",
+    "I-TE-01",
+    "S-OPP-01",
+    "S-OPP-02",
+    "S-OPP-03",
+    "S-STR-01",
+    "S-STR-02",
+    "S-STR-03",
+    "S-THR-01",
+    "S-THR-02",
+    "S-THR-03",
+    "S-WEA-01",
+    "S-WEA-02",
+    "S-WEA-03"
+  ]
+}

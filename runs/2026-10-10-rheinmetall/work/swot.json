@@ -7,7 +7,7 @@
   "as_of": "2026-10-10",
   "scope": "SWOT Rheinmetall-Flugabwehrgeschäft mit Fokus Markt und Marktzugang Golfstaaten (GCC), Stichtag 10.10.2026",
   "status": "vollständig",
-  "input_fingerprint": "cf37b2c85b9bddc561d42e6d3b2a90a99dd5ff9e953aae555fbd9362607c63e9",
+  "input_fingerprint": "70d5a8c5e0da68221200336a5beabeffed85f009065f27a30647f7660a29dac1",
   "interpretations": [
     {
       "id": "S-STR-01",
@@ -49,7 +49,7 @@
       "id": "S-STR-03",
       "category": "Strengths",
       "section": "swot",
-      "statement": "Rheinmetall bietet kanonenbasierte Drohnenabwehr mit berichteter Einsatzerfahrung und einem Mehrländer-Fertigungsnetz (Deutschland, Schweiz, Italien) in einem stark wachsenden Segment.",
+      "statement": "Rheinmetall bietet kanonenbasierte Drohnenabwehr mit berichteter Einsatzerfahrung, belegten Fertigungs-/Generalunternehmerrollen in der Schweiz und Italien und einem stark wachsenden Segment.",
       "depends_on": [
         "I-FA-02",
         "I-MX-02",
@@ -58,9 +58,9 @@
         "T-CTX-08",
         "T-CTX-11"
       ],
-      "reasoning": "Skynex-Einsätze gegen Shahed-Drohnen in der Ukraine sind durch Nutzerangaben berichtet; Rheinmetall reklamiert Kosteneffizienz gegenüber Flugkörperlösungen. Segmentumsatz (+62 % im H1 2026) und Backlog (4,2 Mrd. EUR) zeigen Lieferfähigkeit über mehrere Standorte, was bei akuter Golfnachfrage ein Vorteil gegenüber kleineren Anbietern sein kann.",
+      "reasoning": "Skynex-Einsätze gegen Shahed-Drohnen in der Ukraine sind durch Nutzerangaben berichtet; Rheinmetall reklamiert Kosteneffizienz gegenüber Flugkörperlösungen. Segmentumsatz (+62 % im H1 2026) und Backlog (4,2 Mrd. EUR) bei Fertigung in Zürich und Rom zeigen Lieferfähigkeit, was bei akuter Golfnachfrage ein Vorteil gegenüber kleineren Anbietern sein kann.",
       "method": "Ableitung aus Einsatzberichten, Segmentkennzahlen und Fertigungsprofil",
-      "uncertainty": "Kosteneffizienz und Golf-Einsatzerfolg sind Herstellerangaben; ein ukrainischer Einzelfall (April 2026) ist umstritten; der Ausbau auf bis zu 400 Skyranger/Jahr ist ein Ziel, kein Ist-Wert."
+      "uncertainty": "Kosteneffizienz und Golf-Einsatzerfolg sind Herstellerangaben; ein ukrainischer Einzelfall (April 2026) ist umstritten; der Ausbau auf bis zu 400 Skyranger/Jahr unter Einbezug von Neuss ist ein Plan, kein Ist-Wert."
     },
     {
       "id": "S-WEA-01",
@@ -74,7 +74,7 @@
         "M-UAE-EDGE-02",
         "M-UAE-EDGE-03"
       ],
-      "reasoning": "Rheinmetall integriert Flugkörper von MBDA bzw. HALCON, statt eigene zu führen. Die volle Systemqualifikation von SkyKnight/Skynex wurde laut HALCON von Ende 2026 auf Ende 2027 verschoben, und SkyKnight war laut EDGE-CEO im Iran-Konflikt nicht im Dienst; ein kombiniertes Kanone-Flugkörper-Angebot ist damit zeitlich und inhaltlich partnerabhängig.",
+      "reasoning": "Rheinmetall integriert Flugkörper von MBDA bzw. HALCON, statt eigene zu führen. Ein EDGE-Vertreter erwartete im Februar 2025 die volle Qualifikation von SkyKnight bis Ende 2026, eine spätere HALCON-Angabe (November 2025) nennt Ende 2027, und laut EDGE-CEO war SkyKnight im Iran-Konflikt nicht im Dienst; ein kombiniertes Kanone-Flugkörper-Angebot ist damit zeitlich und inhaltlich partnerabhängig.",
       "method": "Portfolioabgleich Kanonenbasis vs. Effektorenzugang über Partner",
       "uncertainty": "Qualifikationsstand zum Stichtag nur über HALCON-/EDGE-Aussagen in Fachmedien bekannt."
     },
@@ -82,32 +82,15 @@
       "id": "S-WEA-02",
       "category": "Weaknesses",
       "section": "swot",
-      "statement": "Das saudische Flugabwehr-Lokalisierungsvehikel RADARABIA ist eine Minderheitsbeteiligung (20 %) mit negativem Eigenkapital und gestiegenem Verlust.",
+      "statement": "Das saudische Flugabwehr-Lokalisierungsvehikel RADARABIA ist eine Minderheitsbeteiligung (20 %) mit negativem Eigenkapital und Verlust.",
       "depends_on": [
         "C-STR-06",
         "C-GCC-02",
         "I-GS-02"
       ],
-      "reasoning": "Laut Anteilsbesitzliste sank das Eigenkapital von −459 auf −4.392 TEUR, der Jahresverlust stieg von 933 auf 4.159 TEUR. Bei 20 % Anteil ist Rheinmetalls Steuerung des für Saudi-Arabien angekündigten Lokalisierungspfads (60 % Lokalisierung laut Unternehmen) begrenzt, und eine tragfähige Ertragsbasis ist nicht erkennbar.",
+      "reasoning": "Die Anteilsbesitzliste 2025 weist für RADARABIA ein Eigenkapital von −4.392 TEUR und ein Ergebnis von −4.159 TEUR aus; die Liste 2024 nannte −459 bzw. −933 TEUR, wobei die Berichtsperioden dieser Werte nicht eindeutig sind. Bei 20 % Anteil ist Rheinmetalls Steuerung des für Saudi-Arabien angekündigten Lokalisierungspfads (60 % Lokalisierung laut Unternehmen) begrenzt, und eine tragfähige Ertragsbasis ist nicht erkennbar.",
       "method": "Auswertung Beteiligungsdaten im Verhältnis zur Lokalisierungsrolle",
-      "uncertainty": "Ursachen der Verluste (z. B. Anlaufphase) und übrige Gesellschafteranteile sind nicht berichtet."
-    },
-    {
-      "id": "S-WEA-03",
-      "category": "Weaknesses",
-      "section": "swot",
-      "statement": "Die operative Führung der Division Air Defence wechselt mitten in der Golf-Nachfragespitze: Dürrs Abgang ist bestätigt, Roman Köhne als Nachfolger seit 1.10.2026 nur angekündigt und fachmedial berichtet.",
-      "depends_on": [
-        "I-ES-06",
-        "H-DUE-03",
-        "H-KOE-01",
-        "H-KOE-02",
-        "H-KOE-03",
-        "I-FA-04"
-      ],
-      "reasoning": "Köhnes belegter Werdegang liegt in Munition (Weapon and Ammunition, Rheinmetall Waffe Munition, Denel Munition), nicht in der Flugabwehr. Ein Übergang kann laufende Golfverhandlungen verzögern; die konzernzentrale Steuerung über Papperger als VR-Präsident der Rheinmetall Air Defence AG dämpft dieses Risiko.",
-      "method": "Ableitung aus Personal- und Governancefakten",
-      "uncertainty": "Kein Primärbeleg für Köhnes Amtsantritt; Auswirkungen auf Verhandlungen sind nicht belegt, sondern abgeleitet."
+      "uncertainty": "Werte der Anteilsbesitzlisten können sich auf frühere Geschäftsjahre beziehen, daher keine Jahresreihe ableitbar; Verlustursachen (z. B. Anlaufphase) und übrige Gesellschafteranteile nicht berichtet."
     },
     {
       "id": "S-OPP-01",
@@ -147,16 +130,15 @@
       "id": "S-OPP-03",
       "category": "Opportunities",
       "section": "swot",
-      "statement": "Die deutsche Allgemeine Genehmigung Nr. 48 erleichtert bis 15.09.2027 Ausfuhren bestimmter Luftverteidigungsgüter in alle sechs GCC-Staaten und begünstigt Lieferungen aus deutscher Fertigung.",
+      "statement": "Die deutsche Allgemeine Genehmigung Nr. 48 erleichtert bis 15.09.2027 die Ausfuhr bestimmter Güter der Luft- und Seeverteidigung in alle sechs GCC-Staaten; ob Rheinmetall-Flugabwehrgüter darunterfallen, ist offen (RR-S-04).",
       "depends_on": [
         "I-ES-05",
         "M-DEU-EXPORT-01",
-        "M-DEU-EXPORT-02",
-        "I-MX-06"
+        "M-DEU-EXPORT-02"
       ],
-      "reasoning": "Die AGG ersetzt Einzelanträge durch Registrierung und Meldungen und wurde im September 2026 um ein Jahr verlängert. Da Rheinmetall auch in Neuss und Italien fertigt, kann ein Teil der Golfnachfrage über weniger restriktive Exportpfade bedient werden als über den Schweizer Standort.",
-      "method": "Ableitung aus Exportrahmen und Fertigungsprofil",
-      "uncertainty": "Welche konkreten Rheinmetall-Güter unter die AGG fallen, ist nicht belegt (Detailbedingungen nicht geöffnet); befristete Regelung."
+      "reasoning": "Die AGG ersetzt für erfasste Güter Einzelanträge durch Registrierung und monatliche Meldungen und wurde im September 2026 um ein Jahr verlängert. Falls Rheinmetall-Flugabwehrgüter erfasst sind, könnten Lieferungen aus deutscher Fertigung in die Golfstaaten schneller genehmigungsfähig sein.",
+      "method": "Ableitung aus Exportrahmen (bedingte Chance)",
+      "uncertainty": "Güterumfang der AGG und Rheinmetall-spezifische Nutzung nicht belegt; befristete Regelung."
     },
     {
       "id": "S-THR-01",
@@ -173,7 +155,7 @@
         "M-PEER-EOS-02",
         "M-QAT-BARZAN-01"
       ],
-      "reasoning": "Die USA genehmigten den VAE ein FS-LIDS/Coyote-Paket über 2,1 Mrd. US-Dollar, Raytheon plant laut Janes Coyote-Fertigung in Abu Dhabi. EOS gewann 2026 einen kanonenbasierten Slinger-Auftrag in den VAE mit JV-Option und einen bedingten GCC-Drohnenabwehrvertrag; Barzan liefert eigene C-UAS in Katar.",
+      "reasoning": "Die USA genehmigten den VAE ein FS-LIDS/Coyote-Paket über 2,1 Mrd. US-Dollar, Raytheon Emirates plant laut Janes lokale Coyote-Fertigung in Abu Dhabi. EOS meldete 2026 einen kanonenbasierten Slinger-Auftrag in den VAE mit bedingter JV-Option und einen bedingten GCC-Drohnenabwehrvertrag; Barzan schloss 2023 einen C-UAS-Vertrag mit Katars Luftverteidigung, dessen Auslieferung für 2027 erwartet wird.",
       "method": "Wettbewerbsfeldanalyse aus Markt-A-Fakten",
       "uncertainty": "FMS-Genehmigungen und EOS-Verträge sind teils nur mögliche bzw. bedingte Geschäfte."
     },
@@ -255,23 +237,12 @@
         "M-DEU-EXPORT-02"
       ],
       "blocking": false
-    },
-    {
-      "id": "RR-S-05",
-      "target_role": "context",
-      "question": "Gibt es eine Primärbestätigung (Rheinmetall-Mitteilung/Website, SHAB/Zefix) für Roman Köhne als Leiter der Division Air Defence seit 01.10.2026?",
-      "related_claim_ids": [
-        "H-KOE-01",
-        "H-DUE-02"
-      ],
-      "blocking": false
     }
   ],
   "shared_limitations": [
     "Ausschließlich geprüfte A-Fakten und aktuelle I-Interpretationen des delegierten Kontexts (Stichtag 10.10.2026); keine eigene Recherche.",
     "Herstellerangaben (Pressemitteilungen, Telefonkonferenzen, CEO-Interviews) belegen die Aussage des Unternehmens, nicht unabhängig Einsatz, Wirksamkeit, Kapazität oder Vollzug.",
     "Öffentlich nicht belegte Sachverhalte (z. B. ungenannte Golfkunden, Werksbetrieb) sind Datenlücken, keine Schwächen.",
-    "Roman Köhne als Leiter der Division Air Defence ist nur angekündigt bzw. fachmedial berichtet, nicht primär bestätigt.",
     "Berichtete Korkut-Verträge (ASELSAN) in Golfstaaten sind nur anonym berichtet und nicht als SWOT-Basis verwendet.",
     "Lagezahlen zum Iran-Konflikt sind amtliche oder mediale Angaben ohne unabhängige Verifikation; Konfliktstatus zum Stichtag offen."
   ]
