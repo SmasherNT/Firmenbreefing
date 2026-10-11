@@ -13,6 +13,8 @@ ACCEPTED = {"geprüft", "übernommen"}
 CELL_STATUS = {"bewertet", "nicht öffentlich belegt", "nicht anwendbar",
                "weitere Faktenprüfung nötig"}
 ROLES = {"context", "portfolio", "cluster", "market", "source-reviewer"}
+SUMMARY_SECTION = "executive_summary"
+HIGHLIGHT_SECTION = "executive_highlights"
 
 def digest(obj):
     return hashlib.sha256(json.dumps(obj, sort_keys=True, ensure_ascii=False,
@@ -301,6 +303,7 @@ def validate_output(manifest, facts, review, context, output,
         return found
 
     categories = {"Strengths": 0, "Weaknesses": 0, "Opportunities": 0, "Threats": 0}
+    summary_groups = {SUMMARY_SECTION: [], HIGHLIGHT_SECTION: []}
     for cid, row in rows.items():
         if not re.fullmatch(prefix + r"[A-Za-z0-9_-]+", cid):
             errors.append(cid + ": invalid claim prefix")
@@ -309,6 +312,31 @@ def validate_output(manifest, facts, review, context, output,
                 errors.append(cid + ": missing " + field)
         if not isinstance(row.get("uncertainty"), str):
             errors.append(cid + ": uncertainty must be a string")
+        section = row.get("section") if text(row.get("section")) else None
+        if section in summary_groups:
+            summary_groups[section].append(row)
+            if output.get("role") != "positioning":
+                errors.append(cid + ": executive content belongs to positioning")
+            order = row.get("display_order")
+            if not isinstance(order, int) or isinstance(order, bool) or order < 1:
+                errors.append(cid + ": display_order must be a positive integer")
+            limits = {"headline": 72, "preview": 160} if section == SUMMARY_SECTION else {
+                "label": 60, "value": 40, "scope_label": 80, "period": 60}
+            for field, limit in limits.items():
+                if not text(row.get(field)) or len(row[field]) > limit:
+                    errors.append(cid + ": " + field + " required, at most " + str(limit) + " characters")
+            if section == HIGHLIGHT_SECTION:
+                if row.get("type") != "summary_highlight" or row.get("highlight_kind") not in {"metric", "status"}:
+                    errors.append(cid + ": highlight needs summary_highlight type and metric/status kind")
+                if row.get("highlight_kind") == "metric" and (not text(row.get("value")) or not re.search(r"\d", row["value"])):
+                    errors.append(cid + ": metric highlight needs a numeric display value including its unit")
+                deps = row.get("depends_on")
+                if not isinstance(deps, list) or not deps or any(not isinstance(d, str) or d not in claims for d in deps):
+                    errors.append(cid + ": highlight must reference checked facts directly")
+            elif row.get("type") in {"summary_highlight", "matrix_cell"}:
+                errors.append(cid + ": main statement cannot be a highlight or matrix cell")
+        elif row.get("type") == "summary_highlight":
+            errors.append(cid + ": summary_highlight requires executive_highlights section")
         found = dependencies(cid)
         is_cell = row.get("type") == "matrix_cell"
         if is_cell:
@@ -357,6 +385,16 @@ def validate_output(manifest, facts, review, context, output,
                 errors.append(cid + ": invalid SWOT category")
             else:
                 categories[row["category"]] += 1
+    for section, group in summary_groups.items():
+        orders = [r.get("display_order") for r in group]
+        if any(not isinstance(n, int) or isinstance(n, bool) for n in orders) or set(orders) != set(range(1, len(group) + 1)):
+            errors.append(section + ": display_order must be unique and contiguous from 1")
+        if len(group) > (6 if section == SUMMARY_SECTION else 3):
+            errors.append(section + ": too many entries")
+    highlights = summary_groups[HIGHLIGHT_SECTION]
+    labels = [tuple(str(r.get(k)) for k in ("label", "scope_label", "period")) for r in highlights]
+    if len(set(labels)) != len(labels):
+        errors.append("executive_highlights: duplicate metric/status label, scope and period")
     if matrix is not None and output.get("role") == "positioning":
         expected = {(p, c) for p in peers for c in criteria}
         if pairs != expected:

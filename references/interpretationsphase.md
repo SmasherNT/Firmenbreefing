@@ -40,6 +40,9 @@ kein erneutes Ausschreiben der referenzierten Fakten oder globaler Disclaimer
 je Punkt/Zelle. Bei komplexer Ableitung fachlich nötige Erklärung erhalten.
 
 ## Positionierung und Matrix
+Bei Executive Summary references/executive-summary.md lesen: drei auftragsbezogene
+Highlights und 4–6 Kernaussagen des Vollbriefings als geprüfte I-Claims mit kurzen
+Darstellungsfeldern liefern. Auswahl im bestehenden Schritt; keine Zusatzrecherche.
 Qualitative Produkt-/Technologie-/Industrieposition, regionale Präsenz und
 Netzwerkbedeutung nur soweit beauftragt aus geprüften Fakten ableiten.
 Je Matrixzelle eine I-Interpretation mit type="matrix_cell", peer_id,

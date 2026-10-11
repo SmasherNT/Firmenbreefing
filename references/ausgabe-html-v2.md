@@ -34,6 +34,8 @@ Quellen tatsächlich öffnen; Nachrichtensnippet allein ist keine Tatsachenevide
 
 ## Interpretation und Darstellung
 positioning: section=executive_summary für 4–6 Hauptaussagen des Vollbriefings;
+headline/preview/display_order und drei section=executive_highlights-I-Claims
+nach executive-summary.md liefern. Keine fest vorgegebenen Finanzkennzahlen.
 section=topic:<id> für Themen, weitere sections z. B. portfolio/regions/technology.
 Typisierte matrix_cell-I-Claims und aktueller Plan erzeugen die Matrix:
 Spalten aus Prüfauftrag, Zellen mit Methode, Begründung, Grenzen und A-Fakten.
@@ -45,7 +47,8 @@ Keine neue Interpretation beim Rendern erzeugen.
 Kompakte Hauptseite: Summary, Themen, Entwicklungen, Vier-Cluster-Netz, Portfolio,
 Matrix, SWOT. Optionale Seiten für Person und Regionen/Märkte. Details & Quellen
 immer vorhanden. Unternehmenspräsenz vom allgemeinen Markt getrennt beschriften.
-Karten und Matrixzellen öffnen Begründung und Originalbelege. Native details,
+Summary: feste Highlight-Reihe und kompakte Karten; vertiefbare Dialoge mit
+nativen details als Fallback. Karten und Matrixzellen öffnen Begründung und Originalbelege. Native details,
 mobile Karten, horizontale Matrix und ausgeklappte Druckansicht.
 Alle Beziehungen in statischer zugänglicher Tabelle auch ohne JavaScript.
 Keine externen Assets/Bibliotheken oder Laufzeit-Netzabfragen.

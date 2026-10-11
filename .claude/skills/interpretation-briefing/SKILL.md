@@ -9,6 +9,8 @@ identifizieren; ohne diesen keinen unabhängigen neuen Interpretationslauf erfin
    Nur beauftragte Interpretationsrollen ausführen; SWOT allein ist möglich.
 2. Relevante Fakten-IDs für Positionierung wählen; bei Matrix Plan/Marktmodul
    bereitstellen. Selektiven Kontext per check-interpretation.py --prepare erzeugen.
+   Bei Summary auch relevante geprüfte Kennzahl-/Statuskandidaten aufnehmen;
+   Darstellungsvertrag references/executive-summary.md an Positionierung geben.
 3. positioning-analyst mit mode=interpret-v2, Auftrag, Kontext und Zielpfad
    delegieren. Ausgabe lokal mechanisch prüfen, keine Inhaltsfreigabe erfinden.
 4. Für SWOT passenden Kontext mit ausgewählten A-Fakten und ggf. relevanten

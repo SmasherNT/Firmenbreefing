@@ -94,6 +94,9 @@ nennt Auftrag, I-/S-Ausgaben, jeweilige selektive Kontexte, Basis-Review,
 aktuelles Faktenpaket und interpretation-validation.json desselben Laufes.
 Ableitung, passendes Kriterium/Skalenanker, Aussageursprung, Messbedingungen,
 Anwendbarkeit, Unsicherheit und vollständig geprüfte Abhängigkeiten prüfen.
+Bei Executive Summary executive-summary.md lesen: Highlights sowie kurze Titel
+und Vorschausätze mitprüfen, insbesondere Einheit, Bezugsobjekt, Zeitraum,
+Herstellerziel versus Ist-Wert. Keine separate Summary-Prüfschleife.
 Matrix-Lücke ist kein tatsächliches Leistungsdefizit; SWOT-interne/externe
 Zuordnung fachlich prüfen. Unbewertete Zellen tragen keine SWOT-Ableitungen.
 Keine unveränderten A-Fakten pauschal neu recherchieren. Prüfbefund im selben

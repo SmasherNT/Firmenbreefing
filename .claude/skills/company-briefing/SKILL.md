@@ -20,6 +20,8 @@ nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
 4. interpretation-briefing mit Positionierung und SWOT ausführen. Positionierung
    liefert 4–6 executive_summary-I-Claims aus A-Fakten, die auftragsbezogene Matrix
    und Themen-/Produkt-/Industrie-/Regionaleinordnung. Nur selektive Kontexte.
+   Drei auftragsbezogene Highlights und kurze Summary-Karten nach
+   references/executive-summary.md; relevante bestehende A-Kandidaten mitgeben.
    SWOT danach; ein gemeinsames Schluss-Review für beide Ableitungen.
 5. briefing-output im selben Lauf mit --full ausführen. Hauptagent koordiniert
    und rendert; keine eigenen Fakten-/Interpretations-JSONs oder LLM-HTML.

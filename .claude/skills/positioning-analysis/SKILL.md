@@ -24,4 +24,7 @@ Quellen-/Scope-Grenzen nicht je Zelle erneut ausschreiben.
 
 Bei vollständigem HTML-Auftrag 4–6 I-Claims mit section=executive_summary
 und Themen mit section=topic:<id> liefern; weitere Einordnungen z. B. portfolio/regions/technology.
+Für die Summary references/executive-summary.md lesen: kurze headline/preview,
+Reihenfolge und drei auftragsbezogene Highlights aus den vorhandenen A-Fakten
+liefern. Auswahl in diesem Schritt, keine feste Kennzahlenliste oder Zusatzrecherche.
 Ausgabevertrag in references/ausgabe-html-v2.md; keine neue Faktenrecherche.

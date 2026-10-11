@@ -91,10 +91,11 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
                 raise ValueError("final full review missing/stale: " + cid)
     elif final is not None:
         raise ValueError("final review supplied without interpretations")
-    summary_rows = [r for r in interpreted.values() if r["section"] == "executive_summary"]
+    summary_rows = sorted((r for r in interpreted.values() if r["section"] == CHECK.SUMMARY_SECTION), key=lambda r: r["display_order"])
+    highlight_rows = sorted((r for r in interpreted.values() if r["section"] == CHECK.HIGHLIGHT_SECTION), key=lambda r: r["display_order"])
     if full and (set(selected) != {"context", "portfolio", "cluster", "market"} or
-                 positioning is None or swot is None or not 4 <= len(summary_rows) <= 6):
-        raise ValueError("full briefing requires four facts roles, positioning, SWOT and 4–6 summary claims")
+                 positioning is None or swot is None or not 4 <= len(summary_rows) <= 6 or len(highlight_rows) != 3):
+        raise ValueError("full briefing requires four facts roles, positioning, SWOT, 4–6 summary claims and three reviewed highlights")
 
     def require(ids, trail=()):
         if not isinstance(ids, list) or not ids:
@@ -212,6 +213,32 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     def interp_card(row):
         return '<details class="card"><summary>' + esc(row["statement"]) + '</summary><p class="meta">Analysteninterpretation</p>' + paragraphs([row["reasoning"], row["uncertainty"]]) + links([row["id"]]) + '</details>'
 
+    def executive_detail(row):
+        body = '<p class="es-statement">' + esc(row["statement"]) + '</p>'
+        body += '<h4>Einordnung</h4>' + paragraphs([row["reasoning"]])
+        if row["uncertainty"]:
+            body += '<h4>Grenzen der Aussage</h4>' + paragraphs([row["uncertainty"]])
+        body += links([row["id"]]) + '<h4>Faktenbasis &amp; Originalquellen</h4>'
+        fact_ids = sorted({cid for report in validations for cid in report["fact_dependencies"].get(row["id"], [])})
+        for cid in fact_ids:
+            fact = claims[cid]
+            body += '<details class="es-fact"><summary>' + esc(fact["statement"]) + '</summary>'
+            body += '<p class="meta">' + esc(fact["kind"]) + '</p>' + paragraphs([fact["uncertainty"]]) + evidence(fact) + links([cid]) + '</details>'
+        return '<div class="es-detail">' + body + '</div>'
+
+    def executive_card(row):
+        return '<details class="es-card es-entry" data-es-title="' + esc(row["headline"]) + '"><summary>' + \
+            '<span class="es-kicker">' + str(row["display_order"]).zfill(2) + ' · Kernaussage</span>' + \
+            '<span class="es-headline">' + esc(row["headline"]) + '</span><span class="es-preview">' + \
+            esc(row["preview"]) + '</span><span class="es-arrow" aria-hidden="true">↗</span></summary>' + executive_detail(row) + '</details>'
+
+    def highlight_card(row):
+        return '<details class="es-highlight es-entry" data-es-title="' + esc(row["label"]) + '"><summary>' + \
+            '<span class="es-value' + (' es-status' if row["highlight_kind"] == 'status' else '') + '">' + \
+            esc(row["value"]) + '</span><span class="es-label">' + esc(row["label"]) + '</span>' + \
+            '<span class="es-meta">' + esc(row["scope_label"]) + ' · ' + esc(row["period"]) + '</span>' + \
+            '<span class="es-arrow" aria-hidden="true">↗</span></summary>' + executive_detail(row) + '</details>'
+
     def section(title, body, ident=None):
         return '<section class="module"' + (' id="' + esc(ident) + '"' if ident else '') + '><h2>' + esc(title) + '</h2>' + body + '</section>' if body else ''
 
@@ -235,7 +262,10 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         return "".join(out)
 
     fictional = any(s.get("fictional") for s in sources.values())
-    main = section("Executive Summary", grid([interp_card(r) for r in summary_rows]))
+    executive = '<div class="es-highlights">' + ''.join(highlight_card(r) for r in highlight_rows) + '</div>' if highlight_rows else ''
+    if summary_rows:
+        executive += '<div class="es-cards" data-count="' + str(len(summary_rows)) + '">' + ''.join(executive_card(r) for r in summary_rows) + '</div>'
+    main = section("Executive Summary", executive, 'executive-summary')
     if not summary_rows:
         main += section("Unternehmen im Überblick", grid([view_card(r) for v in views.values() for r in v.get("company_facts", [])]))
     for index, topic in enumerate(topics):
@@ -286,7 +316,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         rubric = ''.join('<h4>' + esc(c['label']) + '</h4>' + paragraphs([c['question'], c['evidence_required'], c.get('conditions')]) + (note_rows(c.get('anchors', {}).values()) if c.get('anchors') else '') for c in criteria)
         title = 'Capability Matrix · fiktiver Beispieldatensatz' if fictional else 'Capability Matrix · öffentlich belegte Reife'
         main += section(title, '<p>Zellen öffnen Begründung, Evidenz und Grenzen. Stufen gelten je Kriterium; kein Gesamt-Ranking.</p><div class="table-wrap"><table>' + head + ''.join(rows) + '</table></div><details><summary>Kriterien und Skalen</summary>' + rubric + '</details>')
-    extra = [r for r in interpreted.values() if r['id'].startswith('I') and r['section'] != 'executive_summary' and not r['section'].startswith('topic:') and r.get('type') != 'matrix_cell']
+    extra = [r for r in interpreted.values() if r['id'].startswith('I') and r['section'] not in {CHECK.SUMMARY_SECTION, CHECK.HIGHLIGHT_SECTION} and not r['section'].startswith('topic:') and r.get('type') != 'matrix_cell']
     scored = []
     for r in extra:
         if 'score' in r:

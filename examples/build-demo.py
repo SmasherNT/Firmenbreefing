@@ -40,12 +40,14 @@ def generate(destination):
         ('H1', 'Alex Example verantwortet laut fiktivem Profil die industrielle Integration.', 0),
         ('P1', 'Das fiktive Inspection Kit wird als Softwaremodul angeboten.', 0),
         ('P2', 'Example Inspection ist laut Testdatensatz in Europa über einen Integrationspartner vertreten.', 1),
+        ('P3', 'Der fiktive Hersteller nennt für 2026 eine Kapazität von 240 Inspection Kits pro Jahr; dies ist keine belegte Auslieferungsmenge.', 0),
         ('M1', 'Das Zielsystem wird laut fiktivem Produktdokument über eine API integriert.', 0),
         ('M2', 'Für das Zielsystem ist im Testdatensatz ein Labortest dokumentiert.', 0),
         ('M3', 'Für das Zielsystem ist im Testdatensatz ein Pilot vorgesehen; seine Umsetzung ist nicht belegt.', 0),
         ('M4', 'Der fiktive Wettbewerber TestPeer dokumentiert einen benannten Kundenpiloten.', 2),
         ('M5', 'Ein fiktives europäisches Programm unterstützt Inspektionspiloten bei Industriekunden.', 2),
         ('M6', 'TestPeer integriert laut Testdatensatz ein eigenes Komplettsystem.', 2),
+        ('M7', 'Im fiktiven Marktbericht sind für Example Inspection 2026 zwei Kundenländer dokumentiert.', 2),
         ('C1', 'Test Capital hält laut fiktiver Quelle 40 Prozent Kapitalanteile am Zielunternehmen.', 1),
         ('C2', 'Example Inspection und Example JV sind laut Testdatensatz über ein Joint Venture verbunden.', 1),
         ('C3', 'Test Sensor liefert laut Testdatensatz ein Sensormodul für die industrielle Integration.', 1),
@@ -124,7 +126,7 @@ def generate(destination):
         review_scope='SIMULIERT: bereitgestellte fiktive Daten; keine öffentliche Quellenprüfung',
         claims=[dict(id=cid, depth='A', status='geprüft', evidence_review='SIMULIERTE Offline-Entscheidung') for cid in by])
     basis = STAMP.stamp(review_base, validation)
-    pos_context = CHECK.prepare(manifest, facts, basis, ['P1', 'P2', 'C3', 'M5'], plan, market)
+    pos_context = CHECK.prepare(manifest, facts, basis, ['P1', 'P2', 'P3', 'C3', 'M5', 'M7'], plan, market)
     interpretations = []
     for n, (p, c, ids, value) in enumerate([('target', 'integration', ['M1'], 'API-Integration'),
         ('target', 'validation', ['M2', 'M3'], 2), ('peer', 'integration', ['M6'], 'Komplettsystem'),
@@ -134,13 +136,28 @@ def generate(destination):
             method='Fixierter Vergleichsplan', uncertainty='Synthetischer Test', type='matrix_cell',
             peer_id=p, criterion_id=c, cell_status='bewertet', value=value,
             next_stage_limit='Nächsthöhere Stufe nicht im Datensatz belegt' if value != 3 else 'Höchster definierter Skalenanker'))
-    for n, cid, statement in [(10, 'M1', 'API-Integration bildet den technischen Ansatz des fiktiven Angebots.'),
-        (11, 'P1', 'Das Inspection Kit ist im Testdatensatz als Softwaremodul dokumentiert.'),
-        (12, 'C3', 'Der fiktive Sensorpartner ist für die industrielle Integration relevant.'),
-        (13, 'M5', 'Europäische Pilotprogramme bieten im Beispieldatensatz einen möglichen Marktzugang.')]:
+    for order, (n, cid, statement, headline, preview) in enumerate([
+        (10, 'M1', 'API-Integration bildet den technischen Ansatz des fiktiven Angebots.',
+         'Integration über eine API', 'Die dokumentierte Schnittstelle prägt das technische Integrationsmodell.'),
+        (11, 'P1', 'Das Inspection Kit ist im Testdatensatz als Softwaremodul dokumentiert.',
+         'Softwaremodul als Angebot', 'Das Angebot ist dokumentiert; daraus folgt noch kein Nachweis breiter Nutzung.'),
+        (12, 'C3', 'Der fiktive Sensorpartner ist für die industrielle Integration relevant.',
+         'Sensorpartner im Netzwerk', 'Die belegte Zulieferbeziehung unterstützt die industrielle Einbindung.'),
+        (13, 'M5', 'Europäische Pilotprogramme bieten im Beispieldatensatz einen möglichen Marktzugang.',
+         'Pilotprogramme als Zugang', 'Ein externes Programm schafft eine mögliche Anknüpfung; Teilnahme bleibt offen.')], 1):
         interpretations.append(dict(id='I' + str(n), statement=statement, section='executive_summary',
+            display_order=order, headline=headline, preview=preview,
             depends_on=[cid], reasoning='Qualitative Einordnung des genannten fiktiven Befunds.',
             method='Auftragsbezogene Synthese', uncertainty='Keine reale Unternehmensbewertung'))
+    for order, cid, label, value, scope_label, kind in [
+        (1, 'P3', 'Kapazität laut Hersteller', '240 Kits/Jahr', 'Inspection Kit', 'metric'),
+        (2, 'M7', 'Dokumentierte Kundenländer', '2 Länder', 'Example Inspection', 'metric'),
+        (3, 'M2', 'Öffentlich belegte Erprobung', 'Labortest', 'Inspection Kit', 'status')]:
+        interpretations.append(dict(id='I-H' + str(order), section='executive_highlights', type='summary_highlight',
+            highlight_kind=kind, display_order=order, label=label, value=value, scope_label=scope_label,
+            period='2026' if kind == 'metric' else 'Stand 09.10.2026', statement=by[cid]['statement'],
+            depends_on=[cid], reasoning='Der Befund ist für Größenordnung, Marktzugang oder Erprobung im Prüfauftrag relevant.',
+            method='Auftragsbezogene Auswahl', uncertainty='Synthetischer Test; keine reale Unternehmensbewertung'))
     for n, kind, method, subject, score, ids, section in [(20, 'product_maturity', 'maturity', 'Inspection Kit', 2, ['M2', 'P1'], 'portfolio'),
         (21, 'regional_presence', 'presence', 'Europa', 1, ['P2'], 'regions')]:
         interpretations.append(dict(id='I' + str(n), type=kind, method_id=method, subject=subject, score=score,
