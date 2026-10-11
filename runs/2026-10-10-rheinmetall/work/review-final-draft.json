@@ -1,0 +1,593 @@
+{
+ "schema_version": 1,
+ "run_id": "2026-10-10-rheinmetall",
+ "company": "Rheinmetall AG",
+ "as_of": "2026-10-10",
+ "phase": "final",
+ "status": "teilweise",
+ "status_begruendung": "Alle 80 Interpretationen (68 I, 12 S) inhaltlich gegen ihre A-Abhängigkeiten geprüft; 73 ohne Fehler, 7 mit Korrekturbedarf, davon 3 wesentlich (Matrix-Konsistenz cuas_evidence; zwei SWOT-Punkte mit überzogener bzw. unbelegter Ableitung). Keine Freigabe bis zur Korrektur und gezielten Nachprüfung.",
+ "pruefumfang": {
+  "eingaben": [
+   "work/positioning.json (68 I)",
+   "work/positioning-context.json",
+   "work/swot.json (12 S)",
+   "work/swot-context.json",
+   "work/review-basis.md (freigegeben, 176 Claims)",
+   "work/review-packet.json",
+   "work/comparison-plan.json",
+   "work/interpretation-validation.json (errors [], 80 Fingerprints)"
+  ],
+  "methode": "Jede depends_on-Kette gegen das Basis-Review abgeglichen (alle Fakt-Abhängigkeiten depth=A, geprüft/übernommen – lokal kontrolliert); Ableitung, Anker/Skala, Aussageursprung, höchste belegte Stufe und Begründung der nächsthöheren, Unsicherheit und SWOT-intern/extern geprüft. Keine Neurecherche unveränderter A-Fakten.",
+  "mechanisch": "interpretation-validation.json: mechanischer Pass, keine Inhaltsfreigabe."
+ },
+ "material_errors": [
+  {
+   "id": "MF-1",
+   "claim_ids": [
+    "I-MX-14",
+    "I-MX-38",
+    "I-MX-44",
+    "I-MX-15"
+   ],
+   "owner": "positioning",
+   "reason": "cuas_evidence Anker 4 uneinheitlich angewandt: Barzan erhält Stufe 4 auf Unternehmensangabe, EDGE (SKYSHIELD im VAE-Bestand/Einsatz laut CEO) und EOS (Slinger für US-DoD-C-UAS-Programm bzw. staatlich finanzierten Auftrag, in I-MX-15 als staatliche Beschaffung gewertet) bleiben ohne Prüfung von Anker 4 bei Stufe 1.",
+   "action": "Einheitliche Regel (Herstellerangabe/Unterauftrag zulässig?) für procurement_status und cuas_evidence festlegen, auf alle Peers anwenden, I-MX-14/-38 neu begründen (ggf. I-MX-44 anpassen), Regel in shared_limitations nennen; bei Bedarf Research Request an market zum C-UAS-Zweck des DoD-Programms."
+  },
+  {
+   "id": "MF-2",
+   "claim_ids": [
+    "S-WEA-03"
+   ],
+   "owner": "swot",
+   "reason": "Führungswechsel als Schwäche beruht auf Datenlücke (Amtsantritt nicht primär bestätigt), Abwesenheitsschluss (keine Flugabwehrerfahrung) und unbelegter Folgewirkung.",
+   "action": "Streichen oder als nicht eingestufter Kontext/Übergangsrisiko (Interpretation) führen."
+  },
+  {
+   "id": "MF-3",
+   "claim_ids": [
+    "S-OPP-03"
+   ],
+   "owner": "swot",
+   "reason": "Unbelegte Prämissen: Erfassung von Rheinmetall-Gütern durch AGG 48; Italien als „weniger restriktiver Exportpfad“ (kein Fakt zum italienischen Rahmen); Neuss-Fertigung nur geplant.",
+   "action": "Auf belegten Kern abschwächen, Italien-Satz streichen, offene Erfassung (RR-S-04) im Statement nennen."
+  }
+ ],
+ "weitere_korrekturen_nicht_wesentlich": [
+  {
+   "id": "S-WEA-02",
+   "owner": "swot",
+   "reason": "Zeitbezug der RADARABIA-Zahlen: Die im GB 2024 genannten Werte (−459/−933 TEUR) tragen Fußnote 6 „Eigenkapital und Ergebnis aus Vorjahren“ (C-STR-06), sind also nicht sicher die Vorjahreswerte; „sank von … auf“ / „stieg von … auf“ unterstellt eine Jahresreihe.",
+   "action": "Formulieren: „GB 2025: Eigenkapital −4.392 TEUR, Ergebnis −4.159 TEUR; GB 2024 nannte −459/−933 TEUR (Werte aus Vorjahren)“; Verschlechterung nur mit diesem Vorbehalt."
+  },
+  {
+   "id": "S-THR-01",
+   "owner": "swot",
+   "reason": "„Barzan liefert eigene C-UAS in Katar“ überschreitet M-QAT-BARZAN-01: Vertrag 2023, vier Systeme produziert, Auslieferung erst innerhalb 2027 erwartet, operative Erprobung.",
+   "action": "„Barzan hat einen C-UAS-Vertrag mit Katars Luftverteidigung (Auslieferung laut Unternehmen 2027 erwartet)“."
+  },
+  {
+   "id": "I-RG-01",
+   "owner": "positioning",
+   "reason": "„Regional verlagert sich der Absatzschwerpunkt“ behauptet einen Trend, den die Fakten nicht zeigen (benannte Aufträge europäisch; Golf nur als Unternehmenspotenzial).",
+   "action": "Statement auf „Absatzschwerpunkt liegt belegbar in Europa; Nahost/Golf ist laut Unternehmen großes Potenzial“ ändern."
+  }
+ ],
+ "hinweise_nicht_blockierend": [
+  "I-GS-03 „dominiert“ abschwächen",
+  "I-GS-06 „dennoch“ streichen (Zeitfolge)",
+  "I-GS-05 Kuwait als Herstellerangabe 2013 kennzeichnen",
+  "I-NW-01 depends_on um M-PEER-EOS-01/-02 ergänzen",
+  "I-FA-03/I-MX-06/S-STR-03: Neuss als bestehender Standort nur in B-Claim T-CTX-07 – nach A hochstufen lassen oder als Plan formulieren",
+  "S-WEA-01 „verschoben“ → „spätere Angabe“",
+  "I-ES-05 „bestimmte“ Güter im Statement",
+  "I-MX-46 / Vergleichsplan: nicht-kumulativer Anker 5 gulf_access im HTML erläutern (Hauptagent)",
+  "I-MX-15: Auslegung Unterauftrag = staatliche Beschaffung sichtbar machen"
+ ],
+ "besondere_pruefpunkte": {
+  "I-MX-15": "Stufe 3 vertretbar, Auslegung konsistent mit NASAMS-Kuwait (Raytheon/FMS) und Rheinmetall-GDELS; aber dieselbe Auslegung muss für cuas_evidence (I-MX-14) gelten – dort inkonsistent (MF-1).",
+  "I-MX-02/03/04": "Stufe 5 jeweils durch Kunden-/Behördenmaterial getragen (ukrainische Luftwaffe; katarisches MoD-Video, SPA-Foto); Herstellerangaben nur ergänzend.",
+  "I-MX-46 Barzan": "Formal ankerkonform über lokale Fertigung mit Kundenbezug (Unternehmensangabe), Vorbehalt dokumentiert; Skalenhinweis an Hauptagent.",
+  "I-ES-05": "Lieferroute Italien in uncertainty als Schlussfolgerung gekennzeichnet – in Ordnung.",
+  "I-ES-06/S-WEA-03": "I-ES-06 sachgerecht; S-WEA-03 überzogen (MF-2).",
+  "S-OPP-03": "Abschwächung nötig (MF-3); Faktenbasis belegt nur „bestimmte Güter der Luft- und Seeverteidigung“.",
+  "S-STR-02/S-WEA-02": "S-STR-02 korrekt begrenzt; S-WEA-02 Zeitbezug der Vorjahreswerte (Fußnote 6) korrigieren.",
+  "SWOT_intern_extern": "S/W intern, O/T extern korrekt zugeordnet; S-THR-03 (Partnerverhalten EDGE) als extern vertretbar."
+ },
+ "nachpruefung": "Nach Korrektur nur die geänderten I-/S-Claims und davon abhängige SWOT-Punkte (S-STR-03 bei Änderung I-MX-Regel nicht betroffen) gezielt prüfen; unveränderte 73 Urteile übernehmen.",
+ "claims": [
+  {
+   "id": "I-ES-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-ES-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-ES-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-ES-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-ES-05",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: Lieferroute über Italien/Deutschland in uncertainty ausdrücklich als Schlussfolgerung gekennzeichnet; Italien-Bezug durch P-GCC-03 (italienische Unterstützung) und P-SKX-11 (Rheinmetall Italia Generalunternehmer) gedeckt. Formulierungshinweis: im Statement „bestimmte Luft-/Seeverteidigungsgüter“ statt allgemein „Luftverteidigungsexporte“."
+  },
+  {
+   "id": "I-ES-06",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: Köhne korrekt als nur fachmedial berichtet, Dürr-Abgang bestätigt (H-DUE-03), Register ohne Wechsel (H-DUE-02, Stand SHAB 07.07.2026), Bewertung als „plausibel, nicht primär bestätigt“ sachgerecht. Keine Schwächezuschreibung – passend."
+  },
+  {
+   "id": "I-FA-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-FA-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-FA-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft; Hinweis: deutsche Flugabwehrfertigung (Neuss) ist in A-Fakten nur als geplantes Zusatzwerk (P-CAP-01) belegt; T-CTX-07 („Neuss Production Site“) ist B – vor Verwendung als bestehender Standort nach A hochstufen lassen oder als Plan formulieren (gilt auch I-MX-06, S-STR-03)."
+  },
+  {
+   "id": "I-FA-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-GS-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-GS-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-GS-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft; Formulierungshinweis: „US-FMS dominiert die lenkflugkörperbasierte Schicht“ ist ohne Marktanteilsdaten überzeichnet (in depends auch MBDA VL MICA bei der Nationalgarde) – „ist stark vertreten“."
+  },
+  {
+   "id": "I-GS-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-GS-05",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft; Hinweis: Kuwait-Skyguard-Betrieb nur Herstellerangabe von 2013 – im Satz kennzeichnen."
+  },
+  {
+   "id": "I-GS-06",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft; Formulierungshinweis: „2025 gingen dennoch … Exporte an fünf GCC-Staaten“ – die SECO-Zahlen 2025 liegen vor dem Bundesratsentscheid 03/2026; „dennoch“ streichen."
+  },
+  {
+   "id": "I-PF-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-TE-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-NW-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft; Hinweis: Golfkonkurrenz von EOS (Slinger/NiDAR) stützt sich auf M-PEER-EOS-01/-02, die in depends_on fehlen – ergänzen."
+  },
+  {
+   "id": "I-RG-01",
+   "depth": "A",
+   "status": "Korrektur",
+   "reason": "„Regional verlagert sich der Absatzschwerpunkt“ behauptet einen Trend, den die Fakten nicht zeigen (benannte Aufträge europäisch; Golf nur als Unternehmenspotenzial).",
+   "action": "Statement auf „Absatzschwerpunkt liegt belegbar in Europa; Nahost/Golf ist laut Unternehmen großes Potenzial“ ändern.",
+   "owner": "positioning"
+  },
+  {
+   "id": "I-MX-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: Stufe 5 trägt allein Kunden-/Behördenmaterial (Video der ukrainischen Luftwaffe, M-RHM-CUAS-01); P-SKX-06/-08 und M-RHM-GULF-01 nur als Kontext/Gegenbefund. Oberste Stufe, Einsatz statt Wirksamkeit korrekt abgegrenzt."
+  },
+  {
+   "id": "I-MX-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: Stufe 5 trägt Katar (MoD-Video, Rheinmetall-Bestätigung via Janes) und Saudi-Arabien (SPA-Foto via Janes) als mehrere staatliche Kunden; Italien/Europa ergänzend als Herstellerangaben. Peer-Zeile bündelt Skynex/Skyranger/Skyguard – Skyguard-3 zählt laut Peer-Label."
+  },
+  {
+   "id": "I-MX-04",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: Stufe 5 über Betrieb in zwei GCC-Staaten (Katar, Saudi-Arabien) aus Behörden-/Kundenmaterial; Kuwait und 150 Systeme korrekt nur als Herstellerangabe; Hinweis auf Altbestände sachgerecht."
+  },
+  {
+   "id": "I-MX-05",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-06",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft; Hinweis wie I-FA-03 zu Neuss (bestehender Standort nur in B-Claim T-CTX-07)."
+  },
+  {
+   "id": "I-MX-07",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-08",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-09",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-10",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-11",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-12",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-13",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-14",
+   "depth": "A",
+   "status": "Korrektur",
+   "reason": "Inkonsistente Anker-Anwendung cuas_evidence: Stufe 1 ignoriert M-PEER-EOS-05/-07. Nach der in I-MX-15 gewählten Auslegung (Auftrag innerhalb staatlicher Beschaffung zählt) ist Slinger als Counter-Drone-RWS für das US-DoD-Programm „30mm gun trucks“ (Ukraine) bzw. für einen staatlich finanzierten Marineauftrag beschafft; analog Barzan I-MX-44 (Stufe 4 auf Unternehmensangabe) wäre Anker 4 zu prüfen.",
+   "action": "Einheitliche Regel für Anker 4 (Beschaffung durch Streitkräfte explizit für C-UAS; Herstellerangabe zulässig ja/nein; Unterauftrag zulässig ja/nein) festlegen und auf EOS, EDGE, Barzan gleich anwenden; M-PEER-EOS-05/-07 in depends_on prüfen. Falls die C-UAS-Zweckbestimmung des DoD-Programms als Faktum benötigt wird: Research Request an market (Claim M-PEER-EOS-05 nennt den C-UAS-Zweck derzeit nicht ausdrücklich).",
+   "owner": "positioning"
+  },
+  {
+   "id": "I-MX-15",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: Stufe 3 vertretbar, weil Northrop-Bestellung für das US-DoD-Programm (M-PEER-EOS-05, Zitat EVP Jones) und der von einer westeuropäischen Regierung finanzierte Integratorauftrag (M-PEER-EOS-07) Aufträge innerhalb staatlicher Beschaffung sind; Gen5 korrekt nicht gewertet, 110-System-Angabe korrekt ausgeschlossen. Auslegung (Unterauftrag/Programmauftrag = staatlicher Kunde) ist über die Peers konsistent anzuwenden: NASAMS-Kuwait über Raytheon/FMS (I-MX-22) und Rheinmetall-GDELS sind gleichartig; Auslegung in shared_limitations bzw. Zell-Deep-Dive sichtbar machen. „Serienvertrag“ nur mit Vorbehalt (Erstbestellung drei Systeme). Abhängig von Korrektur I-MX-14 (gleiche Regel für cuas_evidence)."
+  },
+  {
+   "id": "I-MX-16",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-17",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-18",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-19",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-20",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-21",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-22",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-23",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-24",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-25",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-26",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-27",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-28",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-29",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-30",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-31",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-32",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-33",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-34",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-35",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-36",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-37",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-38",
+   "depth": "A",
+   "status": "Korrektur",
+   "reason": "Inkonsistent zu I-MX-44/I-MX-39: Laut EDGE-CEO (M-UAE-EDGE-03) setzten die VAE SKYSHIELD (Soft-Kill-C-UAS, Teil des VAE-Bestands) im Konflikt ein; I-MX-39 wertet dies als Einführung (Stufe 4), Barzan erhält auf reine Unternehmensangabe Anker 4. Die Begründung „höhere Stufen nicht belegt“ prüft Anker 4 nicht.",
+   "action": "Anker 4 nach derselben Regel wie Barzan prüfen und begründen (Herstellerangabe kennzeichnen) oder Barzan entsprechend absenken; Konsistenz dokumentieren.",
+   "owner": "positioning"
+  },
+  {
+   "id": "I-MX-39",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-40",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-41",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-42",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-43",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-44",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: Stufe 4 auf Unternehmensangabe (Vertrag 2023 mit Katars Luftverteidigung für C-UAS) zulässig, Herstellerangabe gekennzeichnet; dient als Referenz für die einheitliche Anker-4-Regel (siehe I-MX-14/I-MX-38)."
+  },
+  {
+   "id": "I-MX-45",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-46",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft mit Hinweis: Stufe 5 formal über zweiten Ankerpfad „lokale Fertigung mit Kundenbezug“ (vier in Katar produzierte Systeme für Katars Luftverteidigung, Unternehmensangabe), obwohl Stufe 4 (Lieferung) nicht erfüllt ist; Vorbehalt in reasoning/uncertainty korrekt. Nicht-kumulativer Anker 5 im Vergleichsplan ist ein Skalenproblem (Hauptagent): im HTML Begründung zwingend anzeigen."
+  },
+  {
+   "id": "I-MX-47",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "I-MX-48",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Ableitung gegen depends_on (A, geprüft/übernommen im Basis-Review) geprüft: Aussage, Aussageursprung, Kriterium/Anker bzw. Profil, Unsicherheit und Status sachgerecht."
+  },
+  {
+   "id": "S-STR-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: Bestand Katar/Saudi aus Behörden-/Kundenmaterial, Kuwait als Herstellerangabe; Ableitung Anschlussgeschäft als Interpretation erkennbar."
+  },
+  {
+   "id": "S-STR-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: Strukturen (RBAT 49 %, RADARABIA 20 %, RAST 100 %, Töchter) korrekt; Stärke ausdrücklich auf Struktur, nicht nachgewiesene Wertschöpfung begrenzt. Hinweis: RAST ohne belegten Flugabwehrbezug – nur als allgemeines Lokalisierungsvehikel nennen."
+  },
+  {
+   "id": "S-STR-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft; Hinweis: Backlog belegt Auftragsbestand, nicht Lieferfähigkeit; Neuss siehe I-FA-03. Interner Vorteil plausibel und als Interpretation erkennbar."
+  },
+  {
+   "id": "S-WEA-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: interne Grenze (Flugkörper über Partner) sachgerecht, Belege P-SKN-03/M-UAE-EDGE-02/-03. Hinweis: „verschoben“ verbindet Angaben verschiedener Sprecher (EDGE 02/2025, HALCON 11/2025) – „spätere Angabe nennt Ende 2027“."
+  },
+  {
+   "id": "S-WEA-02",
+   "depth": "A",
+   "status": "Korrektur",
+   "reason": "Zeitbezug der RADARABIA-Zahlen: Die im GB 2024 genannten Werte (−459/−933 TEUR) tragen Fußnote 6 „Eigenkapital und Ergebnis aus Vorjahren“ (C-STR-06), sind also nicht sicher die Vorjahreswerte; „sank von … auf“ / „stieg von … auf“ unterstellt eine Jahresreihe.",
+   "action": "Formulieren: „GB 2025: Eigenkapital −4.392 TEUR, Ergebnis −4.159 TEUR; GB 2024 nannte −459/−933 TEUR (Werte aus Vorjahren)“; Verschlechterung nur mit diesem Vorbehalt.",
+   "owner": "swot"
+  },
+  {
+   "id": "S-WEA-03",
+   "depth": "A",
+   "status": "Korrektur",
+   "reason": "Überzogen: Die Schwäche stützt sich auf eine Datenlücke (Köhnes Amtsantritt nur angekündigt) und auf einen aus Abwesenheit abgeleiteten Schluss („Werdegang nicht in der Flugabwehr“ – H-KOE-02/03 beschreiben nur belegte Stationen) sowie eine unbelegte Folgewirkung (Verzögerung von Golfverhandlungen). Ein Führungswechsel ist für sich keine belegte betriebliche Schwäche.",
+   "action": "Punkt streichen oder als Kontext/Übergangsrisiko ohne Weakness-Einstufung in I-ES-06 belassen; falls behalten, nur belegte Tatsachen (Wechsel, Primärbestätigung fehlt als Datenlücke) und ausdrücklich interpretatives Risiko formulieren.",
+   "owner": "swot"
+  },
+  {
+   "id": "S-OPP-01",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: extern korrekt; Zahlen (≈7.000 Angriffe, 2.085 Drohnen VAE) und angekündigte Lieferungen ab August 2026 korrekt mit Status."
+  },
+  {
+   "id": "S-OPP-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: externe Chance; Übertragbarkeit Skyguard-NG-Modell ausdrücklich als Interpretation."
+  },
+  {
+   "id": "S-OPP-03",
+   "depth": "A",
+   "status": "Korrektur",
+   "reason": "Unbelegte Prämissen: (1) dass Rheinmetall-Flugabwehrsysteme/-munition unter AGG Nr. 48 fallen (M-DEU-EXPORT-01/02: nur „bestimmte Güter der Luft- und Seeverteidigung“, Detailbedingungen nicht geöffnet); (2) italienische Fertigung als „weniger restriktiver Exportpfad“ – zum italienischen Exportrahmen gibt es keinen geprüften Fakt, AGG 48 gilt nur für deutsche Ausfuhren; (3) „Fertigung in Neuss“ ist in A-Fakten nur als geplantes Zusatzwerk (P-CAP-01) belegt.",
+   "action": "Abschwächen: „AGG 48 kann Ausfuhren bestimmter Luft-/Seeverteidigungsgüter aus Deutschland in die GCC-Staaten bis 15.09.2027 erleichtern; ob Rheinmetall-Flugabwehrgüter erfasst sind, ist offen (RR-S-04).“ Italien-Satz streichen oder als Hypothese ohne Wertung.",
+   "owner": "swot"
+  },
+  {
+   "id": "S-THR-01",
+   "depth": "A",
+   "status": "Korrektur",
+   "reason": "„Barzan liefert eigene C-UAS in Katar“ überschreitet M-QAT-BARZAN-01: Vertrag 2023, vier Systeme produziert, Auslieferung erst innerhalb 2027 erwartet, operative Erprobung.",
+   "action": "„Barzan hat einen C-UAS-Vertrag mit Katars Luftverteidigung (Auslieferung laut Unternehmen 2027 erwartet)“.",
+   "owner": "swot"
+  },
+  {
+   "id": "S-THR-02",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: extern; offene Einstufung korrekt als Unsicherheit."
+  },
+  {
+   "id": "S-THR-03",
+   "depth": "A",
+   "status": "geprüft",
+   "pruefnotiz": "Geprüft: extern (Partnerverhalten); Belege M-UAE-EDGE-03, C-TI-08, P-SR30-10 korrekt eingeordnet."
+  }
+ ]
+}
