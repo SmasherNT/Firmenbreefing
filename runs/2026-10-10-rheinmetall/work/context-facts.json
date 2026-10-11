@@ -254,17 +254,32 @@
     },
     {
       "id": "T-CTX-21",
-      "statement": "Bei der Bilanzpressekonferenz am 11.3.2026 sagte CEO Armin Papperger laut defence-network, Rheinmetall-Flugabwehrsysteme (u. a. 35-mm-Zwillingskanone, Millennium Gun, 30-mm-Revolverkanone) seien im Nahen Osten gegen iranische Drohnen im Einsatz und hätten über ein Wochenende weit über 100 Drohnen abgeschossen; die Länder dürfe er nicht nennen.",
+      "statement": "In der Telefonkonferenz zum Geschäftsjahr 2025 am 11.3.2026 sagte CEO Armin Papperger laut Rheinmetall-Transkript, die iranischen Angriffe beträfen viele Länder im Nahen Osten, von denen alle oder nahezu alle Rheinmetall-Flugabwehrsysteme besäßen; 'The Oerlikon twin gun, the Millennium Gun, and the Oerlikon Revolver Gun' seien in all diesen Ländern vorhanden und bekämpften Drohnen sehr erfolgreich; Länder nannte er nicht. defence-network gibt dieselbe Pressekonferenz abweichend mit '30-mm-Revolverkanone (Wirkmittel des deutschen Skyranger)' und 'weit über 100' abgeschossenen Drohnen wieder; ein 30-mm-/Skyranger-Einsatz im Golf ist primär nicht belegt.",
       "kind": "Herstellerangabe",
       "source_ids": [
+        "S-9c6ec027d4d1de66",
         "S-d6967131447345e6"
       ],
-      "evidence": "Auszug: es sind weit über 100 Drohnen mit unserem System abgeschossen worden, nur über das Wochenende in Middle East ... wir dürfen die Länder nicht nennen",
-      "location": "Artikel vom 11.3.2026, Absätze 1 und 'Bedarf zur Drohnenabwehr im Nahen Osten'",
-      "uncertainty": "CEO-Aussage, unabhängig nicht bestätigt; Länder/Betreiber nicht genannt.",
+      "evidence": "Auszug: all or nearly all that countries have Rheinmetall Air Defence systems. So they are very successful, and they fight very successful against drones. The Oerlikon twin gun, the Millennium Gun, and the Oerlikon Revolver Gun is in all that countries.; Paraphrase: Sekundäre, abweichende Wiedergabe: nennt Oerlikon 35-mm-Zwillingskanone, Millennium Gun und Oerlikon 30-mm-Revolverkanone (Wirkmittel des deutschen Skyranger) als im Nahen Osten gegen iranische Drohnen eingesetzt; zitiert 'weit über 100 Drohnen ... über das Wochenende in Middle East'.",
+      "location": "PDF-S. 3, Eingangsstatement Papperger zu 'slide number 5'; Artikel vom 11.3.2026, Absatz 1 und Abschnitt 'Bedarf zur Drohnenabwehr im Nahen Osten'",
+      "uncertainty": "CEO-Aussage, unabhängig nicht bestätigt; Länder/Betreiber nicht genannt. Transkript nennt 'Oerlikon Revolver Gun' ohne Kaliber; die 30-mm-/Skyranger-Zuordnung stammt nur aus defence-network und ist primär nicht belegt; die Zahl '>100 Drohnen' ist nur sekundär belegt.",
       "proposed_depth": "A",
       "depth_reason": "Golfstaaten-Einsatzbehauptung",
-      "event_date": "2026-03-11"
+      "event_date": "2026-03-11",
+      "evidence_items": [
+        {
+          "source_id": "S-9c6ec027d4d1de66",
+          "mode": "Auszug",
+          "text": "all or nearly all that countries have Rheinmetall Air Defence systems. So they are very successful, and they fight very successful against drones. The Oerlikon twin gun, the Millennium Gun, and the Oerlikon Revolver Gun is in all that countries.",
+          "location": "PDF-S. 3, Eingangsstatement Papperger zu 'slide number 5'"
+        },
+        {
+          "source_id": "S-d6967131447345e6",
+          "mode": "Paraphrase",
+          "text": "Sekundäre, abweichende Wiedergabe: nennt Oerlikon 35-mm-Zwillingskanone, Millennium Gun und Oerlikon 30-mm-Revolverkanone (Wirkmittel des deutschen Skyranger) als im Nahen Osten gegen iranische Drohnen eingesetzt; zitiert 'weit über 100 Drohnen ... über das Wochenende in Middle East'.",
+          "location": "Artikel vom 11.3.2026, Absatz 1 und Abschnitt 'Bedarf zur Drohnenabwehr im Nahen Osten'"
+        }
+      ]
     },
     {
       "id": "T-CTX-22",
@@ -356,7 +371,7 @@
     },
     {
       "id": "H-KOE-01",
-      "statement": "Laut esut.de (4.9.2026, unter Berufung auf unternehmensinterne Informationen) wird Roman Köhne zum 1.10.2026 CEO der Rheinmetall-Division Air Defence und folgt auf Oliver Dürr; Inside Paradeplatz berichtete bereits am 26.8.2026 ohne Namensnennung, dass am 1. Oktober ein Vertreter der Konzernzentrale die Führung von Rheinmetall Air Defence übernehme.",
+      "statement": "Laut Fachmedium esut.de (4.9.2026, unter Berufung auf unternehmensinterne Informationen) ist Roman Köhne seit 1.10.2026 CEO der Rheinmetall-Division Air Defence als Nachfolger von Oliver Dürr (angekündigt; nicht primär bestätigt). Inside Paradeplatz berichtete am 26.8.2026 ohne Namensnennung, dass am 1. Oktober ein Vertreter der Konzernzentrale die Führung übernehme; Dürrs Abgang bestätigt die NZZ am 10.10.2026 (H-DUE-03).",
       "kind": "Fakt",
       "source_ids": [
         "S-5a9d049f8f71abd3",
@@ -378,7 +393,7 @@
           "location": "Artikel vom 26.8.2026, Einleitung"
         }
       ],
-      "uncertainty": "Nur sekundär belegt; keine Rheinmetall-Pressemitteilung und kein Handelsregistereintrag zu Köhne gefunden; Amtsantritt am 1.10.2026 nicht durch Primärquelle bestätigt.",
+      "uncertainty": "Nicht primär bestätigt: keine Rheinmetall-Pressemitteilung, Website-Angabe oder Handelsregistereintrag zu Köhne als Leiter Air Defence gefunden; Rheinmetall-PMs vom 15.6. und 24.6.2026 nennen noch Dürr als Leiter (H-DUE-01, H-DUE-05). Amtsantritt am 1.10.2026 nur laut Fachmedium.",
       "proposed_depth": "A",
       "depth_reason": "Personenidentität/aktuelle Rolle, nur sekundär belegt",
       "event_date": "2026-10-01",
@@ -650,6 +665,19 @@
       "uncertainty": "",
       "proposed_depth": "A",
       "depth_reason": "Governance Flugabwehrtochter"
+    },
+    {
+      "id": "H-DUE-05",
+      "statement": "In der Rheinmetall-Pressemitteilung vom 24.6.2026 (Skyranger-35-Auftrag Rumänien) wird Oliver Dürr als 'Head of Rheinmetall's Air Defence Division' zitiert; damit ist seine Rolle als Leiter der Division primär bis mindestens Ende Juni 2026 belegt.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-6bdb338d23c29e11"
+      ],
+      "evidence": "Auszug: Oliver Dürr, Head of Rheinmetall's Air Defence Division, emphasises the project's strategic importance",
+      "location": "Pressemitteilung vom 24.6.2026, Zitatabsatz",
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Primärbeleg Rolleninhaber vor Wechsel"
     }
   ],
   "source_proposals": [
@@ -862,6 +890,24 @@
       "published_date": "2026-03-11",
       "accessed_date": "2026-10-10",
       "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-9c6ec027d4d1de66",
+      "name": "Rheinmetall AG / LSEG StreetEvents",
+      "title": "Full Year 2025 Rheinmetall AG Earnings Call – Edited Transcript (Call vom 11.03.2026)",
+      "url": "https://ir.rheinmetall.com/media/document/ae9d612c-1c6a-419e-aefb-45a0f993c9a6/assets/Rheinmetall-Transcript-Conference-Call-2025-Q4.pdf",
+      "published_date": null,
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-6bdb338d23c29e11",
+      "name": "Rheinmetall AG",
+      "title": "Romania orders Skyranger 35 air defence systems from Rheinmetall (Pressemitteilung)",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-24-romania-orders-skyranger-35-air-defence-systems-from-rheinmetall",
+      "published_date": "2026-06-24",
+      "accessed_date": "2026-10-10",
+      "source_kind": "Herstellerangabe"
     }
   ],
   "gaps": [
@@ -946,7 +992,8 @@
         "S-d33dad308bfc2b33",
         "S-a9b0fc98036cb816",
         "S-65fc5577a5b55116",
-        "S-b9c5d3865d4b34f0"
+        "S-b9c5d3865d4b34f0",
+        "S-6bdb338d23c29e11"
       ],
       "finding": "Wechsel Dürr -> Köhne zum 1.10.2026 sekundär belegt; Dürr bis Juni 2026 in Rheinmetall-PM als CEO Division Air Defence; keine Primärbestätigung für Köhne.",
       "status": "geprüft mit Beleg (sekundär)"
@@ -980,7 +1027,8 @@
         "S-549a5efe1b3c131f",
         "S-1fc7c3c60663e6b3",
         "S-b003618b3ae9eba2",
-        "S-a831015ab01561c0"
+        "S-a831015ab01561c0",
+        "S-9c6ec027d4d1de66"
       ],
       "finding": "Unternehmensaussagen zu Einsatz/Nachfrage in Golfstaaten (März 2026), RAST-Vollübernahme (Juli 2026), Kuwait-MASS-Auftrag; kein namentlich zugeordneter GCC-Flugabwehrauftrag 2026.",
       "status": "geprüft mit Beleg"
@@ -1089,7 +1137,7 @@
     },
     {
       "id": "ev-bilanz-golf",
-      "label": "CEO-Aussagen zu Einsatz und Nachfrage in Golfstaaten",
+      "label": "CEO-Aussagen (Earnings Call) zu Einsatz und Nachfrage in Golfstaaten",
       "date": "2026-03-11",
       "claim_ids": [
         "T-CTX-21",
@@ -1184,7 +1232,8 @@
         "H-KOE-01",
         "H-DUE-01",
         "H-PAP-02",
-        "H-GAN-01"
+        "H-GAN-01",
+        "H-DUE-05"
       ]
     },
     {
