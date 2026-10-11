@@ -245,17 +245,32 @@
     },
     {
       "id": "T-CTX-21",
-      "statement": "Bei der Bilanzpressekonferenz am 11.3.2026 sagte CEO Armin Papperger laut defence-network, Rheinmetall-Flugabwehrsysteme (u. a. 35-mm-Zwillingskanone, Millennium Gun, 30-mm-Revolverkanone) seien im Nahen Osten gegen iranische Drohnen im Einsatz und hätten über ein Wochenende weit über 100 Drohnen abgeschossen; die Länder dürfe er nicht nennen.",
+      "statement": "In der Telefonkonferenz zum Geschäftsjahr 2025 am 11.3.2026 sagte CEO Armin Papperger laut Rheinmetall-Transkript, die iranischen Angriffe beträfen viele Länder im Nahen Osten, von denen alle oder nahezu alle Rheinmetall-Flugabwehrsysteme besäßen; 'The Oerlikon twin gun, the Millennium Gun, and the Oerlikon Revolver Gun' seien in all diesen Ländern vorhanden und bekämpften Drohnen sehr erfolgreich; Länder nannte er nicht. defence-network gibt dieselbe Pressekonferenz abweichend mit '30-mm-Revolverkanone (Wirkmittel des deutschen Skyranger)' und 'weit über 100' abgeschossenen Drohnen wieder; ein 30-mm-/Skyranger-Einsatz im Golf ist primär nicht belegt.",
       "kind": "Herstellerangabe",
       "source_ids": [
+        "S-9c6ec027d4d1de66",
         "S-d6967131447345e6"
       ],
-      "evidence": "Auszug: es sind weit über 100 Drohnen mit unserem System abgeschossen worden, nur über das Wochenende in Middle East ... wir dürfen die Länder nicht nennen",
-      "location": "Artikel vom 11.3.2026, Absätze 1 und 'Bedarf zur Drohnenabwehr im Nahen Osten'",
-      "uncertainty": "CEO-Aussage, unabhängig nicht bestätigt; Länder/Betreiber nicht genannt.",
+      "evidence": "Auszug: all or nearly all that countries have Rheinmetall Air Defence systems. So they are very successful, and they fight very successful against drones. The Oerlikon twin gun, the Millennium Gun, and the Oerlikon Revolver Gun is in all that countries.; Paraphrase: Sekundäre, abweichende Wiedergabe: nennt Oerlikon 35-mm-Zwillingskanone, Millennium Gun und Oerlikon 30-mm-Revolverkanone (Wirkmittel des deutschen Skyranger) als im Nahen Osten gegen iranische Drohnen eingesetzt; zitiert 'weit über 100 Drohnen ... über das Wochenende in Middle East'.",
+      "location": "PDF-S. 3, Eingangsstatement Papperger zu 'slide number 5'; Artikel vom 11.3.2026, Absatz 1 und Abschnitt 'Bedarf zur Drohnenabwehr im Nahen Osten'",
+      "uncertainty": "CEO-Aussage, unabhängig nicht bestätigt; Länder/Betreiber nicht genannt. Transkript nennt 'Oerlikon Revolver Gun' ohne Kaliber; die 30-mm-/Skyranger-Zuordnung stammt nur aus defence-network und ist primär nicht belegt; die Zahl '>100 Drohnen' ist nur sekundär belegt.",
       "proposed_depth": "A",
       "depth_reason": "Golfstaaten-Einsatzbehauptung",
-      "event_date": "2026-03-11"
+      "event_date": "2026-03-11",
+      "evidence_items": [
+        {
+          "source_id": "S-9c6ec027d4d1de66",
+          "mode": "Auszug",
+          "text": "all or nearly all that countries have Rheinmetall Air Defence systems. So they are very successful, and they fight very successful against drones. The Oerlikon twin gun, the Millennium Gun, and the Oerlikon Revolver Gun is in all that countries.",
+          "location": "PDF-S. 3, Eingangsstatement Papperger zu 'slide number 5'"
+        },
+        {
+          "source_id": "S-d6967131447345e6",
+          "mode": "Paraphrase",
+          "text": "Sekundäre, abweichende Wiedergabe: nennt Oerlikon 35-mm-Zwillingskanone, Millennium Gun und Oerlikon 30-mm-Revolverkanone (Wirkmittel des deutschen Skyranger) als im Nahen Osten gegen iranische Drohnen eingesetzt; zitiert 'weit über 100 Drohnen ... über das Wochenende in Middle East'.",
+          "location": "Artikel vom 11.3.2026, Absatz 1 und Abschnitt 'Bedarf zur Drohnenabwehr im Nahen Osten'"
+        }
+      ]
     },
     {
       "id": "T-CTX-22",
@@ -347,7 +362,7 @@
     },
     {
       "id": "H-KOE-01",
-      "statement": "Laut esut.de (4.9.2026, unter Berufung auf unternehmensinterne Informationen) wird Roman Köhne zum 1.10.2026 CEO der Rheinmetall-Division Air Defence und folgt auf Oliver Dürr; Inside Paradeplatz berichtete bereits am 26.8.2026 ohne Namensnennung, dass am 1. Oktober ein Vertreter der Konzernzentrale die Führung von Rheinmetall Air Defence übernehme.",
+      "statement": "Laut Fachmedium esut.de (4.9.2026, unter Berufung auf unternehmensinterne Informationen) ist Roman Köhne seit 1.10.2026 CEO der Rheinmetall-Division Air Defence als Nachfolger von Oliver Dürr (angekündigt; nicht primär bestätigt). Inside Paradeplatz berichtete am 26.8.2026 ohne Namensnennung, dass am 1. Oktober ein Vertreter der Konzernzentrale die Führung übernehme; Dürrs Abgang bestätigt die NZZ am 10.10.2026 (H-DUE-03).",
       "kind": "Fakt",
       "source_ids": [
         "S-5a9d049f8f71abd3",
@@ -369,7 +384,7 @@
           "location": "Artikel vom 26.8.2026, Einleitung"
         }
       ],
-      "uncertainty": "Nur sekundär belegt; keine Rheinmetall-Pressemitteilung und kein Handelsregistereintrag zu Köhne gefunden; Amtsantritt am 1.10.2026 nicht durch Primärquelle bestätigt.",
+      "uncertainty": "Nicht primär bestätigt: keine Rheinmetall-Pressemitteilung, Website-Angabe oder Handelsregistereintrag zu Köhne als Leiter Air Defence gefunden; Rheinmetall-PMs vom 15.6. und 24.6.2026 nennen noch Dürr als Leiter (H-DUE-01, H-DUE-05). Amtsantritt am 1.10.2026 nur laut Fachmedium.",
       "proposed_depth": "A",
       "depth_reason": "Personenidentität/aktuelle Rolle, nur sekundär belegt",
       "event_date": "2026-10-01",
@@ -643,6 +658,19 @@
       "depth_reason": "Governance Flugabwehrtochter"
     },
     {
+      "id": "H-DUE-05",
+      "statement": "In der Rheinmetall-Pressemitteilung vom 24.6.2026 (Skyranger-35-Auftrag Rumänien) wird Oliver Dürr als 'Head of Rheinmetall's Air Defence Division' zitiert; damit ist seine Rolle als Leiter der Division primär bis mindestens Ende Juni 2026 belegt.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-6bdb338d23c29e11"
+      ],
+      "evidence": "Auszug: Oliver Dürr, Head of Rheinmetall's Air Defence Division, emphasises the project's strategic importance",
+      "location": "Pressemitteilung vom 24.6.2026, Zitatabsatz",
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Primärbeleg Rolleninhaber vor Wechsel"
+    },
+    {
       "id": "P-SKX-01",
       "statement": "Laut Rheinmetall-Produktseite besteht Skynex aus dem Gefechtsführungssystem Oerlikon Skymaster als Steuerknoten, dem X-Band-Suchradar X-TAR3D (instrumentierte Reichweite je nach Variante 25/35/50 km), optional der Multi Sensor Unit, der 35-mm-Revolver Gun Mk3 und der Zwillingskanone GDF009 TREO; Lenkflugkörper (SkyKnight), aktive/passive elektronische Kampfführung und künftige Hochenergielaser sind laut Hersteller integrierbar.",
       "kind": "Herstellerangabe",
@@ -673,7 +701,7 @@
       "statement": "Janes berichtete im November 2019, der Auftrag vom Oktober 2019 sei der erste Exportauftrag für die Revolver Gun Mk3, eine Waffe, die bei der Bundeswehr bereits als Teil des Systems MANTIS im Dienst sei.",
       "kind": "Fakt",
       "source_ids": [
-        "S-e1e08a6e0206896f"
+        "S-eb780da12d4e3349"
       ],
       "evidence": "Paraphrase: Revolver Gun described as \"the first export contract for a weapon that is already in service with the Bundeswehr\" as part of the MANTIS system.",
       "location": "Janes, 01.11.2019, Artikeltext",
@@ -687,7 +715,7 @@
       "kind": "Herstellerangabe",
       "source_ids": [
         "S-dfcb101880f585b3",
-        "S-e1e08a6e0206896f"
+        "S-eb780da12d4e3349"
       ],
       "evidence": "Auszug: \"The contract, which is now official, is worth a total of around €210 million.\" Order encompasses \"Skymaster command and control systems, X-TAR 3D radars, Oerlikon Revolver Gun MK3\" and airburst-capable AHEAD rounds; \"Delivery is to be complete by 2022.\" | Auszug: Rheinmetall \"was unable to identify the customer or its region\" but suggested the contract was related to \"the 14 September cruise missile and unmanned aerial vehicle (UAV) attack on Saudi oil facilities\".",
       "location": "Pressemitteilung 30.10.2019, Absätze 1–2 | Janes, 01.11.2019, Artikeltext",
@@ -702,7 +730,7 @@
           "location": "Pressemitteilung 30.10.2019, Absätze 1–2"
         },
         {
-          "source_id": "S-e1e08a6e0206896f",
+          "source_id": "S-eb780da12d4e3349",
           "text": "Rheinmetall \"was unable to identify the customer or its region\" but suggested the contract was related to \"the 14 September cruise missile and unmanned aerial vehicle (UAV) attack on Saudi oil facilities\".",
           "mode": "Auszug",
           "location": "Janes, 01.11.2019, Artikeltext"
@@ -771,18 +799,18 @@
     },
     {
       "id": "P-SKX-06",
-      "statement": "Laut einem Bericht von GAU (deaidua.org) erklärte Rheinmetall-CEO Papperger am 18.11.2025 beim Kapitalmarkttag, alle von der Bundesregierung finanzierten und zugesagten Skynex-Systeme seien an die Ukraine geliefert; der Bericht nennt vier Systeme im Einsatz zum Schutz von Kraftwerken in der Westukraine.",
+      "statement": "Laut einem Bericht von GAU (deaidua.org) vom 18.11.2025 nannte Rheinmetall-CEO Papperger beim Kapitalmarkttag vier Skynex-Systeme im Einsatz in der Ukraine, die in der Westukraine Kraftwerke schützten; GAU folgerte daraus selbst, dass damit alle von der Bundesregierung finanzierten und zugesagten Skynex-Systeme geliefert seien.",
       "kind": "Fakt",
       "source_ids": [
         "S-320a516f7de1e6c0"
       ],
-      "evidence": "Auszug: \"all systems financed and pledged by the German government have been delivered to Ukraine\"; \"four Skynex systems are currently in use in Ukraine\"; used \"in western Ukraine to protect Ukrainian power plants\".",
-      "location": "GAU, 18.11.2025, Absätze 1–3",
-      "uncertainty": "Sekundärquelle (OSINT-Portal) gibt CEO-Aussage wieder; Anzahl vier ist Ableitung des Portals aus zwei Aufträgen, nicht Rheinmetall-Zitat; Lieferung laut Hersteller berichtet.",
+      "evidence": "Auszug: Papperger zugeschrieben: \"four Skynex systems are currently in use in Ukraine\"; \"According to Papperger, the Skynex systems are being used in western Ukraine to protect Ukrainian power plants.\" Schlussfolgerung des GAU-Autors: \"This means that all systems financed and pledged by the German government have been delivered to Ukraine.\"",
+      "location": "GAU, 18.11.2025, Einleitung und Absätze 1–3",
+      "uncertainty": "Sekundärquelle (OSINT-Portal) gibt CEO-Präsentation ohne Transkript wieder; die Vollständigkeit der deutschen Zusagen ist Schlussfolgerung von GAU, keine Rheinmetall-Aussage; Einsatz laut Hersteller berichtet.",
       "proposed_depth": "A",
       "depth_reason": "Zentraler Kundenauftrag/Einsatzstatus für Produktdarstellung",
       "event_date": "2025-11-18",
-      "event_status": "Lieferung laut Hersteller berichtet"
+      "event_status": "Einsatz laut Hersteller berichtet; vollständige Lieferung nur von GAU gefolgert"
     },
     {
       "id": "P-SKX-07",
@@ -877,7 +905,7 @@
       "statement": "Die zum emiratischen EDGE-Konzern gehörende HALCON stellte auf der IDEX 2021 in Abu Dhabi den Flugkörper SkyKnight vor; EDGE-CEO Faisal Al Bannai erklärte, man freue sich über die Zusammenarbeit mit Rheinmetall. Laut Army Technology hat Rheinmetall Air Defence mit HALCON SkyKnight in Skynex integriert; Skynex mit vier Startern zu je 60 Flugkörpern, Reichweite bis 10 km.",
       "kind": "Partnerangabe",
       "source_ids": [
-        "S-9d63edda09166afa",
+        "S-e59dc842147cf65f",
         "S-c6b8e3a389de878f"
       ],
       "evidence": "Auszug: Faisal Al Bannai: \"We are pleased to team up with Rheinmetall, a leading player in the defence industry\"; SkyKnight is the UAE's first air defence missile. | Auszug: \"Rheinmetall Air Defence collaborated with Halcon to integrate the SkyKnight C-RAM into the Skynex air defence system\"; \"four SkyKnight missile launcher units (MLU), with 60 missile rounds per launcher unit\"; range up to 10 km.",
@@ -887,7 +915,7 @@
       "depth_reason": "Trägt Golfstaaten-Marktzugang/Kundenbeziehung (Themenschwerpunkt)",
       "evidence_items": [
         {
-          "source_id": "S-9d63edda09166afa",
+          "source_id": "S-e59dc842147cf65f",
           "text": "Faisal Al Bannai: \"We are pleased to team up with Rheinmetall, a leading player in the defence industry\"; SkyKnight is the UAE's first air defence missile.",
           "mode": "Auszug",
           "location": "Gulf News, 23.02.2021, Zitatabsatz"
@@ -1052,7 +1080,7 @@
       "statement": "Laut Euronews (17.09.2026) sagte Papperger, vertraglich müssten Skyranger-Serienlieferungen 2027 beginnen, und ab Ende des Folgejahres könne Rheinmetall bis zu 400 Systeme pro Jahr bauen.",
       "kind": "Fakt",
       "source_ids": [
-        "S-5201e1820b86a0c3"
+        "S-aaaf59c399a65ff2"
       ],
       "evidence": "Auszug: \"Under the contract, we have to start series deliveries of the Skyranger in 2027.\" \"From the end of next year we will build, or be able to build, up to 400 a year.\"",
       "location": "Euronews, 17.09.2026, Interviewabschnitt Skyranger",
@@ -1065,7 +1093,7 @@
       "statement": "Army Recognition berichtete am 17.11.2025 unter Berufung auf Tactical Report, Saudi-Arabien prüfe Skyranger 30, habe aber noch keinen Vertrag unterzeichnet; eine Delegation der Landsysteme-Sparte von SAMI habe Rheinmetall in Kassel besucht.",
       "kind": "Fakt",
       "source_ids": [
-        "S-0bc97ad481ad67e4"
+        "S-f06315f4acc363fb"
       ],
       "evidence": "Paraphrase: Saudi Arabia reviewing Skyranger 30; has not yet signed a contract; delegation from SAMI's Land Systems division visited Rheinmetall's Kassel facility; based on Tactical Report.",
       "location": "Army Recognition, 17.11.2025, Absätze 1–4",
@@ -1482,9 +1510,9 @@
         "S-f4730b21412bb02a",
         "S-b159a0c9329835a7"
       ],
-      "evidence": "Auszug: Rheinmetall International Defence and Security Ltd., Riyadh/Saudi-Arabien – 100 (indirekt); Rheinmetall International Services Limited, Abu Dhabi – 100 (indirekt); Rheinmetall Projects Development Consultancy LLC, Abu Dhabi (2) 49 (direkt); Rheinmetall Protection Systems Gulf (FZE), Schardscha – 100 (indirekt); Fußnote 2: Vollkonsolidierung aufgrund der Mehrheit der Stimmrechte | Paraphrase: Vorjahresliste enthält Rheinmetall International Services Limited, Abu Dhabi (100 % indirekt) und Rheinmetall Protection Systems Gulf (FZE), Schardscha; Rheinmetall Projects Development Consultancy LLC nicht gefunden",
-      "location": "S. 269 (Gesellschaften) und S. 271 (Fußnoten), Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste | Geschäftsbericht 2024, Anteilsbesitzliste 2024, S. 252 und 254",
-      "uncertainty": "Geschäftszweck der Gesellschaften im Bericht nicht beschrieben; Abwesenheit von Rheinmetall Projects Development Consultancy in der Vorjahresliste nur per Textsuche geprüft.",
+      "evidence": "Auszug: Rheinmetall International Defence and Security Ltd., Riyadh/Saudi-Arabien – 100 (indirekt); Rheinmetall International Services Limited, Abu Dhabi – 100 (indirekt); Rheinmetall Projects Development Consultancy LLC, Abu Dhabi (2) 49 (direkt); Rheinmetall Protection Systems Gulf (FZE), Schardscha – 100 (indirekt); Fußnote 2: Vollkonsolidierung aufgrund der Mehrheit der Stimmrechte | Paraphrase: Vorjahresliste enthält Rheinmetall International Services Limited, Abu Dhabi (100 % indirekt), Rheinmetall Projects Development Consultancy LLC, Abu Dhabi (2) 49 % direkt, und Rheinmetall Protection Systems Gulf (FZE), Schardscha",
+      "location": "S. 269 (Gesellschaften) und S. 271 (Fußnoten), Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste | Geschäftsbericht 2024, Anteilsbesitzliste 2024, S. 252 und 254 (Druck- = PDF-Seite)",
+      "uncertainty": "Geschäftszweck der Gesellschaften im Bericht nicht beschrieben.",
       "proposed_depth": "A",
       "depth_reason": "Netzwerkkante / wesentliche Beziehung",
       "evidence_items": [
@@ -1496,9 +1524,9 @@
         },
         {
           "source_id": "S-b159a0c9329835a7",
-          "text": "Vorjahresliste enthält Rheinmetall International Services Limited, Abu Dhabi (100 % indirekt) und Rheinmetall Protection Systems Gulf (FZE), Schardscha; Rheinmetall Projects Development Consultancy LLC nicht gefunden",
+          "text": "Vorjahresliste enthält Rheinmetall International Services Limited, Abu Dhabi (100 % indirekt), Rheinmetall Projects Development Consultancy LLC, Abu Dhabi (2) 49 % direkt, und Rheinmetall Protection Systems Gulf (FZE), Schardscha",
           "mode": "Paraphrase",
-          "location": "Geschäftsbericht 2024, Anteilsbesitzliste 2024, S. 252 und 254"
+          "location": "Geschäftsbericht 2024, Anteilsbesitzliste 2024, S. 252 und 254 (Druck- = PDF-Seite)"
         }
       ],
       "event_date": "2025-12-31",
@@ -1566,18 +1594,33 @@
     },
     {
       "id": "C-STR-08",
-      "statement": "Laut Anteilsbesitzliste 2025 hält Rheinmetall indirekt 40 % an der Rheinmetall Arabia Simulation and Training LLC, Riad, die als Joint Venture gekennzeichnet ist (Fußnote 5).",
+      "statement": "Rheinmetall Electronics GmbH erwarb Anfang Juli 2026 weitere 60 % an der Rheinmetall Arabia Simulation and Training LLC (RAST), Riad, und hält seitdem laut Halbjahresfinanzbericht 2026 100 % der Anteile und Stimmrechte; RAST wird ab Juli 2026 als vollkonsolidierte Tochter (Division Digital Systems) geführt. Historischer Stand: Zum 31.12.2025 war RAST als 40-%-Joint-Venture (at-equity) ausgewiesen.",
       "kind": "Fakt",
       "source_ids": [
+        "S-a57c168b042d9b28",
         "S-f4730b21412bb02a"
       ],
-      "evidence": "Auszug: Rheinmetall Arabia Simulation and Training LLC, Riyadh/Saudi-Arabien (5) – 40, Eigenkapital 13.625, Jahresergebnis 3.187 (TEUR); Fußnote 5: Joint Ventures",
-      "location": "S. 271, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste",
-      "uncertainty": "JV-Partner öffentlich nicht identifiziert; kein belegter Flugabwehrbezug.",
-      "proposed_depth": "B",
-      "depth_reason": "Struktur-Hintergrund ohne Netzwerk-Partner",
-      "event_date": "2025-12-31",
-      "event_status": "Stand Abschlussstichtag"
+      "evidence": "Auszug: Rheinmetall Electronics GmbH ... acquired a further 60% of the shares in its former at-equity-accounted investment, Rheinmetall Arabia Simulation and Training LLC (RAST), Riyadh ... at the beginning of July 2026. Rheinmetall Electronics GmbH now holds 100% of the shares and 100% of the voting rights in RAST ... fully consolidated subsidiary of Digital Systems from July 2026 | Auszug: Rheinmetall Arabia Simulation and Training LLC, Riyadh/Saudi-Arabien (5) – 40, Eigenkapital 13.625, Jahresergebnis 3.187 (TEUR); Fußnote 5: Joint Ventures",
+      "location": "Halbjahresfinanzbericht H1 2026, Notes, PDF-S. 43 (Druckseite 43), Abschnitt Simulation and Training | S. 271, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste",
+      "uncertainty": "Name des früheren Mitgesellschafters nicht genannt; kein belegter Flugabwehrbezug von RAST.",
+      "proposed_depth": "A",
+      "depth_reason": "Netzwerkkante / Eigentum und Kontrolle",
+      "event_date": "2026-07",
+      "event_status": "Erwerb vollzogen (Anfang Juli 2026); 40 %-JV-Status historisch",
+      "evidence_items": [
+        {
+          "source_id": "S-a57c168b042d9b28",
+          "text": "Rheinmetall Electronics GmbH ... acquired a further 60% of the shares in its former at-equity-accounted investment, Rheinmetall Arabia Simulation and Training LLC (RAST), Riyadh ... at the beginning of July 2026. Rheinmetall Electronics GmbH now holds 100% of the shares and 100% of the voting rights in RAST ... fully consolidated subsidiary of Digital Systems from July 2026",
+          "mode": "Auszug",
+          "location": "Halbjahresfinanzbericht H1 2026, Notes, PDF-S. 43 (Druckseite 43), Abschnitt Simulation and Training"
+        },
+        {
+          "source_id": "S-f4730b21412bb02a",
+          "text": "Rheinmetall Arabia Simulation and Training LLC, Riyadh/Saudi-Arabien (5) – 40, Eigenkapital 13.625, Jahresergebnis 3.187 (TEUR); Fußnote 5: Joint Ventures",
+          "mode": "Auszug",
+          "location": "S. 271, Geschäftsbericht 2025, Konzernanhang (42) Anteilsbesitzliste"
+        }
+      ]
     },
     {
       "id": "C-STR-09",
@@ -1964,26 +2007,41 @@
     },
     {
       "id": "C-GCC-07",
-      "statement": "Laut Arab News (25.02.2019) ist Andreas Schwer seit Januar 2018 CEO der Saudi Arabian Military Industries (SAMI); zuvor war er 2012–2015 Mitglied der Geschäftsleitung von Rheinmetall Defence (CEO der Division Combat Systems) und 2016–2017 Chairman und President der Rheinmetall International AG, zuständig u. a. für Gesellschaften und Joint Ventures in Exportmärkten wie dem Nahen Osten.",
+      "statement": "Laut Arab News (25.02.2019) war Andreas Schwer ab Januar 2018 CEO der Saudi Arabian Military Industries (SAMI); zuvor war er 2012–2015 Mitglied der Geschäftsleitung von Rheinmetall Defence (CEO der Division Combat Systems) und 2016–2017 Chairman und President der Rheinmetall International AG, zuständig u. a. für Gesellschaften und Joint Ventures in Exportmärkten wie dem Nahen Osten. Laut Asharq Al-Awsat (25.04.2020) ernannte der SAMI-Verwaltungsrat Walid Abukhaled zum kommissarischen CEO als Nachfolger Schwers; Schwers SAMI-Funktion ist damit historisch.",
       "kind": "Fakt",
       "source_ids": [
-        "S-5ac272b822ef96f9"
+        "S-5ac272b822ef96f9",
+        "S-05ec117bf73653de"
       ],
-      "evidence": "Auszug: Schwer has been working as the chief executive officer of the Saudi Arabian Military Industries (SAMI) since January 2018 ... member of the executive management board of Rheinmetall Defense ... between 2012 and 2015 ... chairman and president of Rheinmetall International AG for two years between 2016 and 2017",
-      "location": "Profil vom 25.02.2019, Absätze 1 und 4–5",
-      "uncertainty": "Aktuelle Funktion von Schwer zum Stichtag nicht geprüft; nur öffentliche berufliche Angaben.",
+      "evidence": "Auszug: Schwer has been working as the chief executive officer of the Saudi Arabian Military Industries (SAMI) since January 2018 ... member of the executive management board of Rheinmetall Defense ... between 2012 and 2015 ... chairman and president of Rheinmetall International AG for two years between 2016 and 2017 | Auszug: The Board of Directors of Saudi Arabian Military Industries (SAMI) announced the appointment of Eng. Walid Abukhaled as acting CEO ... Abukhaled will be taking over from Dr. Andreas Schwer who has served as the company's chief executive since January 1, 2018",
+      "location": "Profil vom 25.02.2019, Absätze 1 und 4–5 | Artikel vom 25.04.2020, Vorspann",
+      "uncertainty": "Exaktes Austrittsdatum bei SAMI nicht angegeben.",
       "proposed_depth": "A",
       "depth_reason": "Netzwerkkante / wesentliche Beziehung",
       "event_date": "2019-02-25",
-      "event_status": "Stand Februar 2019; aktuelle Funktion nicht geprüft"
+      "event_status": "historisch (SAMI-CEO 2018 bis April 2020)",
+      "evidence_items": [
+        {
+          "source_id": "S-5ac272b822ef96f9",
+          "text": "Schwer has been working as the chief executive officer of the Saudi Arabian Military Industries (SAMI) since January 2018 ... member of the executive management board of Rheinmetall Defense ... between 2012 and 2015 ... chairman and president of Rheinmetall International AG for two years between 2016 and 2017",
+          "mode": "Auszug",
+          "location": "Profil vom 25.02.2019, Absätze 1 und 4–5"
+        },
+        {
+          "source_id": "S-05ec117bf73653de",
+          "text": "The Board of Directors of Saudi Arabian Military Industries (SAMI) announced the appointment of Eng. Walid Abukhaled as acting CEO ... Abukhaled will be taking over from Dr. Andreas Schwer who has served as the company's chief executive since January 1, 2018",
+          "mode": "Auszug",
+          "location": "Artikel vom 25.04.2020, Vorspann"
+        }
+      ]
     },
     {
       "id": "C-GCC-08",
       "statement": "Laut Janes (14.10.2022) verfügen die Qatar Emiri Air Defence Forces über Rheinmetalls Skynex, wie ein am 13.10.2022 veröffentlichtes Video des katarischen Verteidigungsministeriums (Übung 'Shield 6 (Skynex)') zeigte; laut Janes (15.12.2022) bestätigte Rheinmetall gegenüber Janes, dass die ersten gelieferten Skynex-Systeme für Katar bestimmt waren.",
       "kind": "Fakt",
       "source_ids": [
-        "S-18fa7e4158bdc58b",
-        "S-f71c0348db6067c4"
+        "S-6cd5701123f00a73",
+        "S-3b004b2cc914ddc4"
       ],
       "evidence": "Auszug: The Qatar Emiri Air Defence Forces (QEADF) now has the Rheinmetall Skynex short-range air-defence system, the Qatari Ministry of Defence (MoD) revealed on 13 October when it released a video | Auszug: Rheinmetall has confirmed that the first Skynex systems it supplied were for Qatar",
       "location": "Artikel vom 14.10.2022, Absatz 1 | Artikel vom 15.12.2022, letzter frei lesbarer Absatz",
@@ -1992,13 +2050,13 @@
       "depth_reason": "Netzwerkkante / wesentliche Beziehung",
       "evidence_items": [
         {
-          "source_id": "S-18fa7e4158bdc58b",
+          "source_id": "S-6cd5701123f00a73",
           "text": "The Qatar Emiri Air Defence Forces (QEADF) now has the Rheinmetall Skynex short-range air-defence system, the Qatari Ministry of Defence (MoD) revealed on 13 October when it released a video",
           "mode": "Auszug",
           "location": "Artikel vom 14.10.2022, Absatz 1"
         },
         {
-          "source_id": "S-f71c0348db6067c4",
+          "source_id": "S-3b004b2cc914ddc4",
           "text": "Rheinmetall has confirmed that the first Skynex systems it supplied were for Qatar",
           "mode": "Auszug",
           "location": "Artikel vom 15.12.2022, letzter frei lesbarer Absatz"
@@ -2013,7 +2071,7 @@
       "kind": "Fakt",
       "source_ids": [
         "S-eb780da12d4e3349",
-        "S-18fa7e4158bdc58b"
+        "S-6cd5701123f00a73"
       ],
       "evidence": "Auszug: Rheinmetall announced on 30 October that it had been awarded a EUR210 million ... contract to supply its latest short-range air defence systems to an international customer ... unable to identify the customer or its region but suggested the contract was related to the 14 September ... attack on Saudi oil facilities | Auszug: While Rheinmetall has not announced its Qatari contract, it said in October 2019 that an international customer ... had placed a contract worth around EUR210 million",
       "location": "Artikel vom 01.11.2019, Absätze 1 und 3 | Artikel vom 14.10.2022, letzter Absatz",
@@ -2028,7 +2086,7 @@
           "location": "Artikel vom 01.11.2019, Absätze 1 und 3"
         },
         {
-          "source_id": "S-18fa7e4158bdc58b",
+          "source_id": "S-6cd5701123f00a73",
           "text": "While Rheinmetall has not announced its Qatari contract, it said in October 2019 that an international customer ... had placed a contract worth around EUR210 million",
           "mode": "Auszug",
           "location": "Artikel vom 14.10.2022, letzter Absatz"
@@ -2096,6 +2154,43 @@
       "depth_reason": "Netzwerkkante / wesentliche Beziehung",
       "event_date": "2026-07-02",
       "event_status": "beauftragt (Kunde nicht genannt)"
+    },
+    {
+      "id": "C-GCC-14",
+      "statement": "Laut ASX-Mitteilungen von Electro Optic Systems Holdings (EOS) ist der frühere Rheinmetall- und SAMI-Manager Andreas Schwer seit 01.08.2022 CEO und seit Dezember 2023 Managing Director von EOS; in den Mitteilungen vom 19.06.2026 und 24.08.2026 wird er weiterhin als Managing Director und CEO genannt. Die EOS-Mitteilung vom 19.06.2026 meldet einen Auftrag des VAE-Unternehmens Generation 5 Holding (Abu Dhabi). Dies ist eine personelle Querverbindung; eine Kooperation zwischen Rheinmetall und EOS ist daraus nicht belegt.",
+      "kind": "Fakt",
+      "evidence_items": [
+        {
+          "source_id": "S-09155eae505dd047",
+          "text": "Dr Andreas Schwer has yesterday been appointed as a Director of the Company. Dr Schwer was previously appointed as Chief Executive Officer (CEO) on 01 August 2022 and will now hold the position of Managing Director and CEO",
+          "mode": "Auszug",
+          "location": "ASX-Mitteilung 12.12.2023, Absätze 1–2"
+        },
+        {
+          "source_id": "S-0ee334ddc9eec2c2",
+          "text": "to be supplied to Generation 5 Holding L.L.C (\"Gen5\"). Gen5 is a 100% United Arab Emirates (\"UAE\") owned provider ... headquartered in Abu Dhabi; Unterzeichner: DR. ANDREAS SCHWER, Managing Director and Chief Executive Officer",
+          "mode": "Auszug",
+          "location": "ASX-Mitteilung 19.06.2026, S. 1 und Kontaktblock"
+        },
+        {
+          "source_id": "S-51a58a4ed460b294",
+          "text": "Dr. Andreas Schwer (Managing Director and Chief Executive Officer) ... will present the Company's results on an investor webinar",
+          "mode": "Auszug",
+          "location": "ASX-Mitteilung 24.08.2026, Absatz 2 (Kopie auf Webull)"
+        }
+      ],
+      "uncertainty": "Mitteilung vom 24.08.2026 als Drittanbieter-Kopie gelesen; Stand nach August 2026 nicht geprüft. EOS-Wettbewerbsdaten liegen im Markt-Modul.",
+      "proposed_depth": "A",
+      "depth_reason": "Netzwerkkante / berufliches Mandat",
+      "event_date": "2026-08-24",
+      "event_status": "aktiv laut letzter geöffneter Mitteilung",
+      "source_ids": [
+        "S-09155eae505dd047",
+        "S-0ee334ddc9eec2c2",
+        "S-51a58a4ed460b294"
+      ],
+      "evidence": "Auszug: Dr Andreas Schwer has yesterday been appointed as a Director of the Company. Dr Schwer was previously appointed as Chief Executive Officer (CEO) on 01 August 2022 and will now hold the position of Managing Director and CEO | Auszug: to be supplied to Generation 5 Holding L.L.C (\"Gen5\"). Gen5 is a 100% United Arab Emirates (\"UAE\") owned provider ... headquartered in Abu Dhabi; Unterzeichner: DR. ANDREAS SCHWER, Managing Director and Chief Executive Officer | Auszug: Dr. Andreas Schwer (Managing Director and Chief Executive Officer) ... will present the Company's results on an investor webinar",
+      "location": "ASX-Mitteilung 12.12.2023, Absätze 1–2 | ASX-Mitteilung 19.06.2026, S. 1 und Kontaktblock | ASX-Mitteilung 24.08.2026, Absatz 2 (Kopie auf Webull)"
     },
     {
       "id": "C-KD-01",
@@ -2197,7 +2292,7 @@
       ],
       "evidence": "Auszug: Die Bundesregierung vereinfacht die Ausfuhr von bestimmten Rüstungsgütern zur Luft- und Seeverteidigung an die Golfstaaten und die Ukraine ... Saudi-Arabien, ... Vereinigten Arabischen Emirate, ... Katar, Kuwait, Bahrain, Oman ... ohne zuvor einen einzelnen Antrag ... bis zum 15. September 2026 befristet | Paraphrase: AGG Nr. 48 (Ausfuhr ... von Rüstungsgütern in bestimmte Länder zu Verteidigungszwecken): Bahrain, Katar, Kuwait, Oman, Saudi-Arabien, VAE, Ukraine; Güter der Luft- und Marineverteidigung; verlängert bis 15.09.2027, Bekanntgabe 10.09.2026; Abschnitt II Punkt 6.6 neu",
       "location": "Artikel vom 20.03.2026, Absätze 1–3 | Übersichtsseite Allgemeine Genehmigungen, Abschnitt AGG Nr. 48 (per Abrufwerkzeug zusammengefasst gelesen)",
-      "uncertainty": "Ursprüngliches Laufzeitende abweichend angegeben (15.09.2026 laut Handelsblatt vs. 09.09.2026 laut BAFA-Übersicht); Volltext der AGG und BMWE-Mitteilung nicht geöffnet (Zugriffssperre); keine Rheinmetall-spezifische Nutzung belegt.",
+      "uncertainty": "AGG-Volltext und BMWE-Mitteilung nicht geöffnet (Zugriffssperre); BAFA-Übersicht über Abrufwerkzeug gelesen; keine Rheinmetall-spezifische Nutzung belegt.",
       "proposed_depth": "A",
       "depth_reason": "Netzwerkkante / wesentliche Beziehung",
       "evidence_items": [
@@ -2215,7 +2310,7 @@
         }
       ],
       "event_date": "2026-03-20",
-      "event_status": "in Kraft; verlängert (Stand BAFA-Seite)"
+      "event_status": "Erstfassung gültig bis 15.09.2026; per Bekanntgabe vom 10.09.2026 bis 15.09.2027 verlängert"
     },
     {
       "id": "C-EX-02",
@@ -2461,7 +2556,7 @@
     },
     {
       "id": "M-UAE-ACCESS-01",
-      "statement": "Laut US-Handelsministerium (Country Commercial Guide, Stand 25. August 2025) verwaltet der Tawazun Council seit Februar 2021 alle Beschaffungen für die VAE-Streitkräfte und die Abu Dhabi Police und beaufsichtigt das Offset-Programm 'Tawazun Economic Program'; Offset-Pflichten greifen bei Verträgen über 10 Mio. US-Dollar. Die Luftverteidigung (AFAD) erhalte traditionell den größten Anteil des Beschaffungsbudgets; Raketenabwehr sei Top-Priorität.",
+      "statement": "Laut US-Handelsministerium (Country Commercial Guide, Stand 25. August 2025) verwaltet der Tawazun Council seit Februar 2021 alle Beschaffungen für die VAE-Streitkräfte und die Abu Dhabi Police und beaufsichtigt das Offset-Programm 'Tawazun Economic Program'; Offset-Pflichten greifen bei Verträgen über 10 Mio. US-Dollar. Die Luftverteidigung (AFAD) erhalte traditionell den größten Anteil des Beschaffungsbudgets; der Leitfaden führt Raketenabwehr als erste von mehreren Beschaffungsprioritäten auf.",
       "kind": "Fakt",
       "source_ids": [
         "S-ee64de417a6b1930"
@@ -2549,12 +2644,12 @@
     },
     {
       "id": "M-QAT-PROG-02",
-      "statement": "Laut Teknisk Ukeblad (11. Juli 2019) schloss Kongsberg mit Raytheon als Hauptauftragnehmer für Katars Luftverteidigung einen NASAMS-Vertrag über 5,6 Mrd. NOK; Katar wird Erstnutzer des AMRAAM-ER; Kongsberg und Raytheon zählten damit elf NASAMS-Länder mit kompletten Systemen, darunter Katar und Oman.",
+      "statement": "Laut Teknisk Ukeblad (11. Juli 2019) schloss Kongsberg mit Raytheon als Hauptauftragnehmer für Katars Luftverteidigung einen NASAMS-Vertrag über 5,6 Mrd. NOK; Kongsberg und Raytheon zählten damit elf NASAMS-Länder mit kompletten Systemen, darunter Katar und Oman.",
       "kind": "Fakt",
       "source_ids": [
         "S-1e47bb01c749039c"
       ],
-      "evidence": "Paraphrase: Vertrag mit Raytheon, \"prime contractor\" für Katars Luftverteidigung; 5,6 Mrd. NOK; Qualifizierung AMRAAM-ER mit Katar als erstem Nutzer; 11 NASAMS-Länder inkl. Katar und Oman",
+      "evidence": "Paraphrase: Vertrag mit Raytheon als \"prime contractor\" für Katars Luftverteidigung; 5,6 Mrd. NOK; 11 NASAMS-Länder inkl. Katar und Oman",
       "location": "Artikeltext, Überschrift und Absätze zu Umfang/Installed Base",
       "uncertainty": "Aktueller Liefer-/Betriebsstatus in Katar und Oman nicht gesondert belegt.",
       "event_date": "2019-07-11",
@@ -2679,14 +2774,14 @@
     },
     {
       "id": "M-QAT-BARZAN-01",
-      "statement": "Laut Breaking Defense (6. März 2024) sagte Barzans stellvertretender CEO Mohammad Al Marri, Barzan habe 2023 einen Vertrag mit Katars Luftverteidigungskräften über ein C-UAS-System mit Soft- und Hard-Kill-Fähigkeiten geschlossen, das in operativer Erprobung sei; vier Systeme seien vollständig in Katar produziert worden. Am Stand von RBAT wurden auf der DIMDEX 2024 C-UAS, UGV, Radare und Störsender gezeigt.",
+      "statement": "Laut Breaking Defense (6. März 2024) sagte Barzans stellvertretender CEO Mohammad Al Marri, Barzan habe 2023 einen Vertrag mit Katars Luftverteidigungskräften über ein C-UAS-System mit Soft- und Hard-Kill-Fähigkeiten geschlossen, das in operativer Erprobung sei; vier Systeme seien vollständig in Katar produziert worden, ihre Auslieferung werde laut Artikel innerhalb von 2027 erwartet. Am Stand von RBAT wurden auf der DIMDEX 2024 C-UAS, UGV, Radare und Störsender gezeigt.",
       "kind": "Partnerangabe",
       "source_ids": [
         "S-2de1e709dd2666d5"
       ],
-      "evidence": "Paraphrase: Barzan signed a contract with Qatar's air defense forces \"last year\" for the cUAS system; soft kill/hard kill; operational trials; \"We are in an advanced phase of the production process\"; vier Systeme in Katar produziert; RBAT-Stand mit C-UAS",
+      "evidence": "Paraphrase: Barzan signed a contract with Qatar's air defense forces \"last year\" for the cUAS system; soft kill/hard kill; operational trials; \"We are in an advanced phase of the production process\"; vier Systeme in Katar produziert, \"expected for delivery within 2027\"; RBAT-Stand mit C-UAS",
       "location": "Artikeltext (Agnes Helou), Abschnitte Barzan/RBAT",
-      "uncertainty": "Unternehmensaussage; Rolle von Rheinmetall/RBAT im C-UAS-Vertrag im Artikel nicht ausdrücklich zugeordnet; Liefertermin unklar.",
+      "uncertainty": "Unternehmensaussage; Rolle von Rheinmetall/RBAT im C-UAS-Vertrag im Artikel nicht ausdrücklich zugeordnet; Liefererwartung 2027 ist Ankündigung, kein Vollzug.",
       "event_date": "2024-03-06",
       "event_status": "beauftragt",
       "proposed_depth": "A",
@@ -2738,18 +2833,18 @@
     },
     {
       "id": "M-RHM-GULF-02",
-      "statement": "Business AM (10. Mai 2026) gibt einen Bloomberg-Bericht vom 8. Mai 2026 wieder: Laut CEO Papperger seien in der Region rund 150 Skyranger- und Skynex-Systeme im Einsatz; ohne Verzögerungen für europäische Kunden könne Rheinmetall 2026 nur etwa zehn Skyranger-/Skynex-Kanonen an Golfstaaten liefern; bis Ende 2027 solle die Zahl in der Region nahezu verdoppelt werden.",
+      "statement": "Business AM (10. Mai 2026) gibt einen Bloomberg-Bericht vom 8. Mai 2026 wieder, wonach CEO Papperger plane, die Zahl der Rheinmetall-Flugabwehrsysteme im Nahen Osten bis Ende 2027 nahezu zu verdoppeln. Bestand und Lieferzahl werden hier nicht aus dieser Sekundärquelle übernommen; maßgeblich ist der Primärwortlaut des Q1-2026-Calls (P-GCC-03): rund 150 kanonenbasierte Flugabwehrsysteme in der Golfregion, 2026 'more than 10' Systeme (Transkript) bzw. Verhandlungen über 'up to 10' Systeme (Folie).",
       "kind": "Herstellerangabe",
       "source_ids": [
         "S-eec5e9e91d4acc36"
       ],
-      "evidence": "Auszug: \"environ 150 Skyranger et Skynex sont opérationnels dans la région\"; \"ne peut livrer qu'une dizaine de canons Skyranger et Skynex aux pays du Golfe cette année\"; \"presque doubler ... d'ici fin 2027\"",
-      "location": "Artikeltext, Absätze 1–3",
-      "uncertainty": "Sekundäre Wiedergabe; Bloomberg-Original (403) nicht geöffnet; Länder nicht genannt; 'Region' nicht exakt abgegrenzt.",
+      "evidence": "Auszug: le PDG prévoit de « presque doubler le déploiement de ses systèmes de défense aérienne au Moyen-Orient d'ici fin 2027 »",
+      "location": "Artikeltext, Absatz zum Ausbauziel",
+      "uncertainty": "Sekundäre Wiedergabe; Bloomberg-Original (403) nicht geöffnet. Die Angaben der Wiedergabe 'ca. 150 Skyranger und Skynex' und 'etwa zehn Kanonen' weichen vom Primärwortlaut ab (P-GCC-03); ein Skyranger-Bestand im GCC ist nicht belegt.",
       "event_date": "2026-05-08",
       "event_status": "angekündigt",
       "proposed_depth": "A",
-      "depth_reason": "Herstellerangabe zu Lieferfähigkeit Golf"
+      "depth_reason": "Herstellerziel Golfausbau; Bestands-/Lieferzahlen über P-GCC-03"
     },
     {
       "id": "M-RHM-CAP-01",
@@ -2820,7 +2915,7 @@
       ],
       "evidence": "Paraphrase: \"test-firing has already commenced for the missile\"; volle Qualifikation bis Ende 2026 erwartet; developed in cooperation with Rheinmetall Air Defence; integrates with Skynex",
       "location": "Artikeltext (Christopher Petrov), Absätze 1–4",
-      "uncertainty": "Qualifikationsstatus zum Stichtag nicht belegt.",
+      "uncertainty": "Zeitangabe überholt: HALCON nannte im November 2025 die volle Systemqualifikation für Ende 2027 (P-SKN-03).",
       "event_date": "2025-02-24",
       "event_status": "Erprobung",
       "proposed_depth": "A",
@@ -2975,17 +3070,33 @@
     },
     {
       "id": "M-DEU-EXPORT-02",
-      "statement": "Laut AWA Außenwirtschafts-Akademie (18. September 2026, unter Verweis auf den BAFA-Newsletter September 2026) wurde die AGG Nr. 48 verlängert und gilt nun bis zum 15. September 2027.",
+      "statement": "Laut BAFA wurde die AGG Nr. 48 (Erstfassung in Kraft seit 20. März 2026, zunächst befristet bis 15. September 2026) mit Bekanntgabe vom 10. September 2026 verlängert und gilt nun bis zum 15. September 2027; neu eingefügt wurde Abschnitt II Punkt 6.6, sonst keine inhaltlichen Änderungen. Der Fachdienst AWA berichtet die Verlängerung übereinstimmend.",
       "kind": "Fakt",
       "source_ids": [
+        "S-c99327dbed7f6de5",
         "S-7e9c5adc66d1d3eb"
       ],
-      "evidence": "Auszug: \"Die Allgemeine Genehmigung (AGG) Nr. 48 wurde verlängert und gilt nun bis zum 15. September 2027.\"",
-      "location": "Artikeltext, Abschnitt AGG Nr. 48",
-      "uncertainty": "Sekundärquelle; BAFA-Bekanntmachung der Verlängerung nicht direkt geöffnet; inhaltliche Änderungen nicht beschrieben.",
-      "event_status": "in Kraft (berichtet)",
+      "evidence": "Auszug: \"Mit Bekanntgabe vom 10. September 2026 wird die AGG Nr. 48 verlängert.\"; \"zeitlich befristet bis zum 15. September 2027 gültig\"; Abschnitt II Punkt 6.6 neu eingefügt | Auszug: \"Die Allgemeine Genehmigung (AGG) Nr. 48 wurde verlängert und gilt nun bis zum 15. September 2027.\"",
+      "location": "BAFA-Übersichtsseite Allgemeine Genehmigungen, Abschnitt 'Verlängerung der Allgemeinen Genehmigung Nr. 48' | Artikeltext, Abschnitt AGG Nr. 48",
+      "uncertainty": "Archivangabe der BAFA-Seite nennt für die bisherige Fassung eine Gültigkeit bis 9. September 2026, die Kurzmeldung vom 20.03.2026 den 15. September 2026; Abweichung ungeklärt, berührt die Verlängerung nicht.",
+      "event_status": "in Kraft",
       "proposed_depth": "A",
-      "depth_reason": "Aktueller Exportrahmen zum Stichtag"
+      "depth_reason": "Aktueller Exportrahmen zum Stichtag (primär belegt)",
+      "evidence_items": [
+        {
+          "source_id": "S-c99327dbed7f6de5",
+          "mode": "Auszug",
+          "text": "\"Mit Bekanntgabe vom 10. September 2026 wird die AGG Nr. 48 verlängert.\"; \"zeitlich befristet bis zum 15. September 2027 gültig\"; Abschnitt II Punkt 6.6 neu eingefügt",
+          "location": "BAFA-Übersichtsseite Allgemeine Genehmigungen, Abschnitt 'Verlängerung der Allgemeinen Genehmigung Nr. 48'"
+        },
+        {
+          "source_id": "S-7e9c5adc66d1d3eb",
+          "mode": "Auszug",
+          "text": "\"Die Allgemeine Genehmigung (AGG) Nr. 48 wurde verlängert und gilt nun bis zum 15. September 2027.\"",
+          "location": "Artikeltext, Abschnitt AGG Nr. 48"
+        }
+      ],
+      "event_date": "2026-09-10"
     },
     {
       "id": "M-CHE-EXPORT-01",
@@ -3065,6 +3176,15 @@
       "source_kind": "Sekundärquelle"
     },
     {
+      "id": "S-05ec117bf73653de",
+      "name": "Asharq Al-Awsat",
+      "title": "SAMI Appoints Walid Abukhaled as Acting CEO",
+      "url": "https://english.aawsat.com/home/article/2252001/sami-appoints-walid-abukhaled-acting-ceo",
+      "published_date": "2020-04-25",
+      "accessed_date": "2026-10-11",
+      "source_kind": "Sekundärquelle"
+    },
+    {
       "id": "S-06318d4e0dd58da5",
       "name": "MBDA",
       "title": "MBDA launches the new VL MICA NG air defence system",
@@ -3074,13 +3194,13 @@
       "source_kind": "Herstellerangabe"
     },
     {
-      "id": "S-0bc97ad481ad67e4",
-      "name": "Army Recognition",
-      "title": "Saudi Arabia eyes Rheinmetall's Skyranger 30 air defense system to stop growing drone threats",
-      "url": "https://armyrecognition.com/news/army-news/2025/saudi-arabia-eyes-rheinmetalls-skyranger-30-air-defense-system-to-stop-growing-drone-threats",
-      "published_date": "2025-11-17",
-      "accessed_date": "2026-10-10",
-      "source_kind": "Sekundärquelle"
+      "id": "S-09155eae505dd047",
+      "name": "Electro Optic Systems Holdings Ltd (ASX-Mitteilung)",
+      "title": "Appointment of Managing Director",
+      "url": "https://announcements.asx.com.au/asxpdf/20231212/pdf/05yg7wfnvj9d8q.pdf",
+      "published_date": "2023-12-12",
+      "accessed_date": "2026-10-11",
+      "source_kind": "Herstellerangabe (Börsenmitteilung)"
     },
     {
       "id": "S-0e7ad928d9638007",
@@ -3154,15 +3274,6 @@
       "published_date": null,
       "accessed_date": "2026-10-10",
       "source_kind": "Herstellerangabe"
-    },
-    {
-      "id": "S-18fa7e4158bdc58b",
-      "name": "Janes",
-      "title": "Qatar unveils Skynex air defence",
-      "url": "https://www.janes.com/defence-intelligence-insights/defence-news/weapons/qatar-unveils-skynex-air-defence",
-      "published_date": "2022-10-14",
-      "accessed_date": "2026-10-10",
-      "source_kind": "Sekundärquelle"
     },
     {
       "id": "S-1bc2890891ce328b",
@@ -3490,13 +3601,13 @@
       "source_kind": "Herstellerangabe"
     },
     {
-      "id": "S-5201e1820b86a0c3",
-      "name": "Euronews",
-      "title": "Germany's missile stockpiles 'worryingly low', Rheinmetall CEO tells Euronews",
-      "url": "https://www.euronews.com/2026/09/17/rheinmetall-ceo-papperger-robots-are-coming",
-      "published_date": "2026-09-17",
-      "accessed_date": "2026-10-10",
-      "source_kind": "Sekundärquelle"
+      "id": "S-51a58a4ed460b294",
+      "name": "Electro Optic Systems Holdings Ltd (ASX-Mitteilung, Kopie Webull)",
+      "title": "1H 2026 Reporting Date & Investor Call",
+      "url": "https://bulletin.webull.com/qbd/announcement/20260824/499501757/8673f7f71ace29876ce365e1afa3367b.pdf",
+      "published_date": "2026-08-24",
+      "accessed_date": "2026-10-11",
+      "source_kind": "Drittanbieter-Kopie (Börsenmitteilung EOS)"
     },
     {
       "id": "S-549848d0df9ec6ae",
@@ -3770,15 +3881,6 @@
       "published_date": null,
       "accessed_date": "2026-10-10",
       "source_kind": "Herstellerangabe"
-    },
-    {
-      "id": "S-9d63edda09166afa",
-      "name": "Gulf News",
-      "title": "IDEX 2021: First UAE-made rocket and artillery interceptor missile 'SkyKnight' takes wings",
-      "url": "https://gulfnews.com/business/markets/idex-2021-first-uae-made-rocket-and-artillery-interceptor-missile-skynight-takes-wings-1.1614071964600",
-      "published_date": "2021-02-23",
-      "accessed_date": "2026-10-10",
-      "source_kind": "Sekundärquelle"
     },
     {
       "id": "S-9df26a722e63e113",
@@ -4099,15 +4201,6 @@
       "source_kind": "Herstellerangabe"
     },
     {
-      "id": "S-e1e08a6e0206896f",
-      "name": "Janes",
-      "title": "Rheinmetall announces large air defence contract",
-      "url": "https://janes.com/osint-insights/defence-news/rheinmetall-announces-large-air-defence-contract",
-      "published_date": "2019-11-01",
-      "accessed_date": "2026-10-10",
-      "source_kind": "Sekundärquelle"
-    },
-    {
       "id": "S-e59dc842147cf65f",
       "name": "Gulf News",
       "title": "IDEX 2021: First UAE-made rocket and artillery interceptor missile 'SkyKnight' takes wings",
@@ -4224,15 +4317,6 @@
       "published_date": "2024-01-25",
       "accessed_date": "2026-10-10",
       "source_kind": "Herstellerangabe"
-    },
-    {
-      "id": "S-f71c0348db6067c4",
-      "name": "Janes",
-      "title": "Rheinmetall to supply Ukraine with Skynex after confirming Qatar delivery",
-      "url": "https://www.janes.com/defence-intelligence-insights/defence-news/weapons/rheinmetall-to-supply-ukraine-with-skynex-after-confirming-qatar-delivery",
-      "published_date": "2022-12-15",
-      "accessed_date": "2026-10-10",
-      "source_kind": "Sekundärquelle"
     },
     {
       "id": "S-f7338d89b12509f0",
@@ -4358,7 +4442,7 @@
         },
         {
           "id": "ev-bilanz-golf",
-          "label": "CEO-Aussagen zu Einsatz und Nachfrage in Golfstaaten",
+          "label": "CEO-Aussagen (Earnings Call) zu Einsatz und Nachfrage in Golfstaaten",
           "date": "2026-03-11",
           "claim_ids": [
             "T-CTX-21",
@@ -4453,7 +4537,8 @@
             "H-KOE-01",
             "H-DUE-01",
             "H-PAP-02",
-            "H-GAN-01"
+            "H-GAN-01",
+            "H-DUE-05"
           ]
         },
         {
@@ -4551,7 +4636,8 @@
             "S-d33dad308bfc2b33",
             "S-a9b0fc98036cb816",
             "S-65fc5577a5b55116",
-            "S-b9c5d3865d4b34f0"
+            "S-b9c5d3865d4b34f0",
+            "S-6bdb338d23c29e11"
           ],
           "finding": "Wechsel Dürr -> Köhne zum 1.10.2026 sekundär belegt; Dürr bis Juni 2026 in Rheinmetall-PM als CEO Division Air Defence; keine Primärbestätigung für Köhne.",
           "status": "geprüft mit Beleg (sekundär)"
@@ -4585,7 +4671,8 @@
             "S-549a5efe1b3c131f",
             "S-1fc7c3c60663e6b3",
             "S-b003618b3ae9eba2",
-            "S-a831015ab01561c0"
+            "S-a831015ab01561c0",
+            "S-9c6ec027d4d1de66"
           ],
           "finding": "Unternehmensaussagen zu Einsatz/Nachfrage in Golfstaaten (März 2026), RAST-Vollübernahme (Juli 2026), Kuwait-MASS-Auftrag; kein namentlich zugeordneter GCC-Flugabwehrauftrag 2026.",
           "status": "geprüft mit Beleg"
@@ -4748,17 +4835,17 @@
           ],
           "sections": [
             {
-              "label": "GCC übergreifend (Unternehmensangaben 2026)",
+              "label": "GCC übergreifend (Unternehmensangaben; Auftrag 2019 mit ungenanntem Kunden)",
               "claim_ids": [
                 "P-GCC-01",
                 "P-GCC-02",
-                "P-GCC-03"
+                "P-GCC-03",
+                "P-SKX-02"
               ]
             },
             {
-              "label": "Katar",
+              "label": "Katar (Zuordnung laut Janes bzw. Messebericht)",
               "claim_ids": [
-                "P-SKX-02",
                 "P-SKX-03",
                 "P-SKX-04"
               ]
@@ -4922,7 +5009,7 @@
           "opened_source_ids": [
             "S-69738b1972b9a1ed",
             "S-dfcb101880f585b3",
-            "S-e1e08a6e0206896f",
+            "S-eb780da12d4e3349",
             "S-6cd5701123f00a73",
             "S-3b004b2cc914ddc4",
             "S-2da1e8991e862e88",
@@ -4946,7 +5033,7 @@
             "S-d1aafc1c9b0f1a75",
             "S-60677f3d57da054d",
             "S-d2ef86f50f08a3d3",
-            "S-5201e1820b86a0c3"
+            "S-aaaf59c399a65ff2"
           ],
           "finding": "Aufträge DE (19), AT (36), DK (16), NL (zweistellig), HU (Entwicklung) belegt; Großauftrag Bundeswehr (500–600 Systeme) bis Stichtag nicht als unterzeichnet gefunden.",
           "status": "geprüft mit Beleg"
@@ -4981,7 +5068,7 @@
           "topic": "SkyKnight / EDGE-HALCON (VAE)",
           "search_terms": "HALCON SkyKnight Rheinmetall Skynex IDEX 2021; Dubai Airshow 2025 SkyKnight",
           "opened_source_ids": [
-            "S-9d63edda09166afa",
+            "S-e59dc842147cf65f",
             "S-c6b8e3a389de878f",
             "S-30ebb15cc23cedf6",
             "S-69738b1972b9a1ed"
@@ -5005,9 +5092,9 @@
           "topic": "Golfstaaten – Saudi-Arabien",
           "search_terms": "Rheinmetall Saudi Arabia Skyranger; Red Sands III; Skyguard Saudi; SECO Export",
           "opened_source_ids": [
-            "S-0bc97ad481ad67e4",
+            "S-f06315f4acc363fb",
             "S-5e9132be8a87d292",
-            "S-e1e08a6e0206896f"
+            "S-eb780da12d4e3349"
           ],
           "finding": "Interesse an Skyranger 30 (Sekundärquelle), C-UAS-Demonstration Red Sands III; historischer Skyguard-Bestand nur über Wikipedia (nicht verwendet).",
           "status": "geprüft mit Beleg"
@@ -5017,7 +5104,7 @@
           "search_terms": "EDGE Rheinmetall Skyranger 30 talks; UAE Skynex/Skyguard order",
           "opened_source_ids": [
             "S-30ec1ea5187557fe",
-            "S-9d63edda09166afa",
+            "S-e59dc842147cf65f",
             "S-30ebb15cc23cedf6"
           ],
           "finding": "Gespräche über Skyranger 30 (Teaser), SkyKnight-Kooperation; kein Rheinmetall-Flugabwehrvertrag mit VAE gefunden.",
@@ -5166,12 +5253,13 @@
               ]
             },
             {
-              "label": "Historische Bezüge (RDM/Saudi-Arabien, Personal)",
+              "label": "Historische Bezüge und personelle Querverbindungen",
               "claim_ids": [
                 "C-STR-04",
                 "C-GCC-05",
                 "C-GCC-06",
-                "C-GCC-07"
+                "C-GCC-07",
+                "C-GCC-14"
               ]
             },
             {
@@ -5193,7 +5281,7 @@
         },
         {
           "topic": "golfstaaten",
-          "gap": "Partner und Geschäftszweck der Rheinmetall Arabia Simulation and Training LLC (40 % JV) sowie der Rheinmetall Projects Development Consultancy LLC öffentlich nicht identifiziert."
+          "gap": "Geschäftszweck der Rheinmetall Projects Development Consultancy LLC und Name des früheren RAST-Mitgesellschafters öffentlich nicht identifiziert."
         },
         {
           "topic": "golfstaaten",
@@ -5241,7 +5329,8 @@
           "search": "Anteilsbesitzliste; 'Rheinmetall Arabia Simulation and Training'; 'Rheinmetall International Defence and Security'",
           "opened": [
             "S-f4730b21412bb02a",
-            "S-b159a0c9329835a7"
+            "S-b159a0c9329835a7",
+            "S-a57c168b042d9b28"
           ],
           "claim_ids": [
             "C-STR-05",
@@ -5250,7 +5339,7 @@
             "C-STR-08"
           ],
           "status": "geprüft mit Befund",
-          "gaps": "Geschäftszweck und Partner von RAST, RPDC, RIDS öffentlich nicht gefunden"
+          "gaps": "Geschäftszweck/Partner von RPDC und RIDS öffentlich nicht gefunden"
         },
         {
           "cluster": "Konzern/JV",
@@ -5363,8 +5452,8 @@
           "subject": "Katar (Skynex, Exporte)",
           "search": "Rheinmetall Skynex Qatar; Qatar unveils Skynex; SECO Katar Flugabwehr WM",
           "opened": [
-            "S-18fa7e4158bdc58b",
-            "S-f71c0348db6067c4",
+            "S-6cd5701123f00a73",
+            "S-3b004b2cc914ddc4",
             "S-eb780da12d4e3349",
             "S-2110be9897c66baf"
           ],
@@ -5471,13 +5560,18 @@
           "subject": "Andreas Schwer (Rheinmetall → SAMI)",
           "search": "Andreas Schwer SAMI Rheinmetall",
           "opened": [
-            "S-5ac272b822ef96f9"
+            "S-5ac272b822ef96f9",
+            "S-05ec117bf73653de",
+            "S-09155eae505dd047",
+            "S-0ee334ddc9eec2c2",
+            "S-51a58a4ed460b294"
           ],
           "claim_ids": [
-            "C-GCC-07"
+            "C-GCC-07",
+            "C-GCC-14"
           ],
           "status": "geprüft mit Befund",
-          "gaps": "Aktuelle Funktion nicht geprüft; Leitung der Division Air Defence (Personenprofil) ist Aufgabe der Kontextrolle"
+          "gaps": "Stand nach 24.08.2026 nicht geprüft; Leitung der Division Air Defence ist Aufgabe der Kontextrolle"
         }
       ],
       "report_log": [
@@ -5511,7 +5605,7 @@
           "published": "nicht separat datiert",
           "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2025/GB/Rheinmetall-Geschaeftsbericht-2024.pdf",
           "sections": "Anteilsbesitzliste 2024, S. 252–256",
-          "findings": "RADARABIA 20 %, RBAT 49 %, RAST 40 %, AIM 50 % bereits 2024 gelistet; Rheinmetall Projects Development Consultancy LLC nicht gefunden",
+          "findings": "RADARABIA 20 %, RBAT 49 %, RAST 40 %, AIM 50 % und Rheinmetall Projects Development Consultancy LLC (49 % direkt, Fußnote 2, S. 254) bereits 2024 gelistet",
           "claim_ids": [
             "C-STR-01",
             "C-STR-05",
@@ -5526,11 +5620,13 @@
           "report": "Halbjahresfinanzbericht H1 2026",
           "fiscal_year": "2026 (H1)",
           "published": "2026-08-06 (laut Suchtreffer)",
-          "url": "",
-          "sections": "–",
-          "findings": "Nur Suchtreffer zur Pressemitteilung (Air-Defence-Umsatz/Aufträge); Finanzkennzahlen gehören zur Kontextrolle",
-          "claim_ids": [],
-          "status": "nicht geprüft (Grund: Kennzahlen außerhalb Cluster-Auftrag; Bericht nicht geöffnet)"
+          "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q2/Rheinmetall-Half-Yearly-Financial-Report-2026.pdf",
+          "sections": "PDF-S. 43 (Notes, Erwerb RAST)",
+          "findings": "RAST seit Juli 2026 100 % Tochter der Rheinmetall Electronics GmbH",
+          "claim_ids": [
+            "C-STR-08"
+          ],
+          "status": "nur teilweise gelesen (gezielte Seite zu RAST)"
         },
         {
           "actor": "HENSOLDT AG",
@@ -5890,7 +5986,7 @@
             "M-SAU-RHM-02",
             "M-RHM-GULF-02"
           ],
-          "factual_description": "Betrieb in Katar und Saudi-Arabien öffentlich belegt; laut CEO (via Bloomberg/Business AM) ca. 150 Skyranger/Skynex in der Region; Kundenländer darüber hinaus nicht benannt."
+          "factual_description": "Betrieb in Katar (Skynex) und Saudi-Arabien (Skyguard 3) öffentlich belegt; laut Primärwortlaut Q1-2026-Call (P-GCC-03) rund 150 kanonenbasierte Rheinmetall-Flugabwehrsysteme in der Golfregion (ohne Länder-/Typaufschlüsselung); Skyranger im GCC nicht belegt."
         },
         {
           "peer_id": "rheinmetall_skynex_skyranger",
@@ -5917,7 +6013,7 @@
             "M-RHM-GULF-02",
             "M-RHM-CAP-01"
           ],
-          "factual_description": "CEO: 2026 nur ca. zehn Kanonen für Golfstaaten ohne Verzögerung europäischer Kunden lieferbar; Skyranger-Kapazitätsziel bis 400/Jahr ab Ende 2027 (Herstellerangaben)."
+          "factual_description": "Primärwortlaut Q1-2026 (P-GCC-03): 2026 'more than 10' Systeme für die Golfregion (Transkript) bzw. Verhandlungen über 'up to 10' (Folie); Ausbauziel bis Ende 2027 (Bloomberg via Business AM); Skyranger-Kapazitätsziel bis 400/Jahr (Herstellerangaben)."
         },
         {
           "peer_id": "aselsan_korkut",
@@ -6159,7 +6255,7 @@
             "M-UAE-EDGE-02",
             "M-UAE-EDGE-03"
           ],
-          "factual_description": "Skyknight: Testschüsse seit 2025, Qualifikation bis Ende 2026 erwartet, laut CEO 'going into production'."
+          "factual_description": "Skyknight: Testschüsse seit Februar 2025 berichtet; volle Systemqualifikation laut HALCON (Nov. 2025, P-SKN-03) Ende 2027 erwartet; laut CEO (Mai 2026) 'going into production', noch nicht im Dienst."
         },
         {
           "peer_id": "edge_skyknight_skyshield",
@@ -6223,7 +6319,7 @@
       "gaps": [
         {
           "topic": "Rheinmetall Golf-Kunden 2026",
-          "description": "Kein öffentlicher Beleg für einen 2026 namentlich einem GCC-Staat zugeordneten Rheinmetall-Flugabwehrauftrag gefunden; Skynex-Auftrag Juli 2026 ohne Kundennennung (M-RHM-ORDER-01). CEO-Angaben (ca. 150 Systeme in der Region, Lieferungen ab August) nicht unabhängig bestätigt.",
+          "description": "Kein öffentlicher Beleg für einen 2026 namentlich einem GCC-Staat zugeordneten Rheinmetall-Flugabwehrauftrag; Skynex-Auftrag Juli 2026 ohne Kundennennung (M-RHM-ORDER-01). CEO-Angaben (P-GCC-03: rund 150 kanonenbasierte Systeme, 2026 >10 bzw. bis 10 Systeme; M-RHM-GULF-01: Lieferungen ab August) nicht unabhängig bestätigt; Business-AM-Fassung ('Skyranger und Skynex', 'etwa zehn') weicht ab.",
           "status": "öffentliche Datenlücke"
         },
         {
@@ -6248,8 +6344,8 @@
         },
         {
           "topic": "AGG 48 Verlängerung",
-          "description": "Verlängerung bis 2027-09-15 nur über Fachdienst (AWA) mit Verweis auf BAFA-Newsletter belegt; BAFA-Bekanntmachung selbst nicht geöffnet.",
-          "status": "Zweitbeleg offen"
+          "description": "Verlängerung bis 2027-09-15 nun primär über BAFA-Übersichtsseite belegt (M-DEU-EXPORT-02); Abweichung zum Enddatum der Erstfassung (9. vs. 15. September 2026) ungeklärt.",
+          "status": "weitgehend geschlossen"
         },
         {
           "topic": "SAMI als regionaler Peer",
@@ -6380,7 +6476,8 @@
             "S-02f2d309d4be9a72",
             "S-7e9c5adc66d1d3eb",
             "S-bd063e8375865fb5",
-            "S-d1be5243ec1023a0"
+            "S-d1be5243ec1023a0",
+            "S-c99327dbed7f6de5"
           ],
           "finding": "DE: Erleichterung per AGG 48 belegt; CH: Konfliktklausel, Golfstaaten-Einstufung offen.",
           "status": "geprüft mit Beleg (CH-Golf Lücke)"
@@ -6574,7 +6671,7 @@
       {
         "id": "rast",
         "label": "Rh. Arabia Simulation & Training",
-        "kind": "jv",
+        "kind": "subsidiary",
         "legal_name": "Rheinmetall Arabia Simulation and Training LLC, Riad",
         "cluster": "structure",
         "focus": false
@@ -6776,6 +6873,14 @@
         "label": "Schweiz (VBS)",
         "kind": "customer",
         "legal_name": "Eidgenössisches Departement für Verteidigung, Bevölkerungsschutz und Sport",
+        "cluster": "market",
+        "focus": false
+      },
+      {
+        "id": "eos",
+        "label": "EOS (Electro Optic Systems)",
+        "kind": "other",
+        "legal_name": "Electro Optic Systems Holdings Ltd, Canberra",
         "cluster": "market",
         "focus": false
       }
@@ -7171,8 +7276,8 @@
           "skynex"
         ],
         "source_ids": [
-          "S-18fa7e4158bdc58b",
-          "S-f71c0348db6067c4"
+          "S-6cd5701123f00a73",
+          "S-3b004b2cc914ddc4"
         ],
         "claim_ids": [
           "C-GCC-08"
@@ -7183,24 +7288,26 @@
       },
       {
         "id": "E19",
-        "from": "rheinmetall",
+        "from": "rh_electronics",
         "to": "rast",
-        "type": "Beteiligung (Joint Venture)",
-        "summary": "Rheinmetall hält indirekt 40 % an der Rheinmetall Arabia Simulation and Training LLC, Riad (JV; Partner nicht identifiziert).",
+        "type": "Beteiligung (Tochter, seit 07/2026)",
+        "summary": "Rheinmetall Electronics hält seit Anfang Juli 2026 100 % der Anteile und Stimmrechte an RAST (vollkonsolidiert, Digital Systems); bis dahin 40-%-Joint-Venture (at-equity, historisch).",
         "categories": [
-          "jv"
+          "subsidiary"
         ],
         "product_ids": [],
         "source_ids": [
+          "S-a57c168b042d9b28",
           "S-f4730b21412bb02a"
         ],
         "claim_ids": [
           "C-STR-08"
         ],
-        "status": "aktiv (Stand 31.12.2025)",
-        "as_of": "2025-12-31",
-        "capital_share": "40 % indirekt",
-        "control": "gemeinschaftlich (JV)"
+        "status": "aktiv seit 07/2026 (40 %-JV bis 06/2026 historisch)",
+        "as_of": "2026-07",
+        "capital_share": "100 % (vorher 40 % indirekt)",
+        "control": "vollkonsolidiert ab Juli 2026",
+        "voting_share": "100 %"
       },
       {
         "id": "E20",
@@ -7509,10 +7616,10 @@
       },
       {
         "id": "E34",
-        "from": "rheinmetall",
+        "from": "gdels",
         "to": "austria",
-        "type": "Flugabwehrprojekt Österreich",
-        "summary": "Österreich beschafft 36 Skyranger 30 auf Pandur EVO; Rheinmetall als Unterauftragnehmer von GDELS.",
+        "type": "Generalunternehmer Pandur-Modernisierung (Skyranger-Fahrzeuge)",
+        "summary": "GDELS ist laut Rheinmetall der mit der Modernisierung der österreichischen Pandur-Flotte beauftragte Fahrzeughersteller; 36 Pandur EVO erhalten Skyranger 30. Rheinmetall liefert als Unterauftragnehmer von GDELS (siehe E33); keine direkte Vertragsbeziehung Rheinmetall–Österreich belegt.",
         "categories": [
           "customer"
         ],
@@ -7766,21 +7873,44 @@
         "id": "E46",
         "from": "schwer",
         "to": "sami",
-        "type": "CEO (Stand 2019)",
-        "summary": "Andreas Schwer war laut Arab News seit Januar 2018 CEO von SAMI (Stand Februar 2019).",
+        "type": "CEO (historisch)",
+        "summary": "Andreas Schwer war ab Januar 2018 CEO von SAMI; im April 2020 übernahm Walid Abukhaled kommissarisch.",
         "categories": [
           "other"
         ],
         "product_ids": [],
         "source_ids": [
-          "S-5ac272b822ef96f9"
+          "S-5ac272b822ef96f9",
+          "S-05ec117bf73653de"
         ],
         "claim_ids": [
           "C-GCC-07"
         ],
-        "status": "Stand 02/2019; aktueller Status nicht geprüft",
-        "as_of": "2019-02-25",
-        "uncertainty": "aktuelle Funktion nicht geprüft"
+        "status": "historisch (2018 bis April 2020)",
+        "as_of": "2020-04-25",
+        "historical": true
+      },
+      {
+        "id": "E47",
+        "from": "schwer",
+        "to": "eos",
+        "type": "CEO / Managing Director",
+        "summary": "Andreas Schwer ist seit 01.08.2022 CEO und seit 12/2023 Managing Director von EOS (Stand 24.08.2026). Personelle Querverbindung; keine Rheinmetall–EOS-Kooperation belegt.",
+        "categories": [
+          "other"
+        ],
+        "product_ids": [],
+        "source_ids": [
+          "S-09155eae505dd047",
+          "S-0ee334ddc9eec2c2",
+          "S-51a58a4ed460b294"
+        ],
+        "claim_ids": [
+          "C-GCC-14"
+        ],
+        "status": "aktiv (Stand 24.08.2026)",
+        "as_of": "2026-08-24",
+        "overlap": true
       }
     ],
     "products": [
@@ -7841,6 +7971,33 @@
         "source_kind": "Sekundärquelle"
       },
       {
+        "id": "S-05ec117bf73653de",
+        "name": "Asharq Al-Awsat",
+        "title": "SAMI Appoints Walid Abukhaled as Acting CEO",
+        "url": "https://english.aawsat.com/home/article/2252001/sami-appoints-walid-abukhaled-acting-ceo",
+        "published_date": "2020-04-25",
+        "accessed_date": "2026-10-11",
+        "source_kind": "Sekundärquelle"
+      },
+      {
+        "id": "S-09155eae505dd047",
+        "name": "Electro Optic Systems Holdings Ltd (ASX-Mitteilung)",
+        "title": "Appointment of Managing Director",
+        "url": "https://announcements.asx.com.au/asxpdf/20231212/pdf/05yg7wfnvj9d8q.pdf",
+        "published_date": "2023-12-12",
+        "accessed_date": "2026-10-11",
+        "source_kind": "Herstellerangabe (Börsenmitteilung)"
+      },
+      {
+        "id": "S-0ee334ddc9eec2c2",
+        "name": "Electro Optic Systems (ASX-Mitteilung)",
+        "title": "New Counter Drone Order (US$124m) and Middle East JV for Laser Weapons and Remote Weapon Systems",
+        "url": "https://announcements.asx.com.au/asxpdf/20260619/pdf/070sv4dp9my1gg.pdf",
+        "published_date": "2026-06-19",
+        "accessed_date": "2026-10-10",
+        "source_kind": "Herstellerangabe (Börsenmitteilung)"
+      },
+      {
         "id": "S-18ce19a1fbbec148",
         "name": "Rheinmetall AG",
         "title": "Rheinmetall Air Defence – Über uns",
@@ -7848,15 +8005,6 @@
         "published_date": null,
         "accessed_date": "2026-10-10",
         "source_kind": "Herstellerangabe"
-      },
-      {
-        "id": "S-18fa7e4158bdc58b",
-        "name": "Janes",
-        "title": "Qatar unveils Skynex air defence",
-        "url": "https://www.janes.com/defence-intelligence-insights/defence-news/weapons/qatar-unveils-skynex-air-defence",
-        "published_date": "2022-10-14",
-        "accessed_date": "2026-10-10",
-        "source_kind": "Sekundärquelle"
       },
       {
         "id": "S-1f76748059d5008c",
@@ -7887,6 +8035,15 @@
         "report_year": 2025
       },
       {
+        "id": "S-3b004b2cc914ddc4",
+        "name": "Janes",
+        "title": "Rheinmetall to supply Ukraine with Skynex after confirming Qatar delivery",
+        "url": "https://www.janes.com/osint-insights/defence-news/weapons/rheinmetall-to-supply-ukraine-with-skynex-after-confirming-qatar-delivery",
+        "published_date": "2022-12-15",
+        "accessed_date": "2026-10-10",
+        "source_kind": "Sekundärquelle (Fachmedium; Unternehmensauskunft gegenüber Janes)"
+      },
+      {
         "id": "S-4423d24b37b6b642",
         "name": "Gulf Times",
         "title": "Barzan signs seven agreements at Dimdex",
@@ -7903,6 +8060,15 @@
         "published_date": "2022-03-07",
         "accessed_date": "2026-10-10",
         "source_kind": "Sekundärquelle"
+      },
+      {
+        "id": "S-51a58a4ed460b294",
+        "name": "Electro Optic Systems Holdings Ltd (ASX-Mitteilung, Kopie Webull)",
+        "title": "1H 2026 Reporting Date & Investor Call",
+        "url": "https://bulletin.webull.com/qbd/announcement/20260824/499501757/8673f7f71ace29876ce365e1afa3367b.pdf",
+        "published_date": "2026-08-24",
+        "accessed_date": "2026-10-11",
+        "source_kind": "Drittanbieter-Kopie (Börsenmitteilung EOS)"
       },
       {
         "id": "S-549848d0df9ec6ae",
@@ -7959,6 +8125,15 @@
         "source_kind": "Herstellerangabe"
       },
       {
+        "id": "S-6cd5701123f00a73",
+        "name": "Janes",
+        "title": "Qatar unveils Skynex air defence",
+        "url": "https://www.janes.com/osint-insights/defence-news/weapons/qatar-unveils-skynex-air-defence",
+        "published_date": "2022-10-14",
+        "accessed_date": "2026-10-10",
+        "source_kind": "Sekundärquelle (Fachmedium)"
+      },
+      {
         "id": "S-7066a889ca7eaad4",
         "name": "HENSOLDT AG",
         "title": "Geschäftsbericht der HENSOLDT AG 2025",
@@ -7994,6 +8169,16 @@
         "published_date": "2025-12-12",
         "accessed_date": "2026-10-10",
         "source_kind": "Partnerangabe"
+      },
+      {
+        "id": "S-a57c168b042d9b28",
+        "name": "Rheinmetall AG (Halbjahresfinanzbericht)",
+        "title": "Half-Yearly Financial Report 2026, 1/1-30/6/2026",
+        "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q2/Rheinmetall-Half-Yearly-Financial-Report-2026.pdf",
+        "published_date": "2026-08-06",
+        "accessed_date": "2026-10-10",
+        "source_kind": "Herstellerangabe",
+        "report_year": 2026
       },
       {
         "id": "S-a831015ab01561c0",
@@ -8086,15 +8271,6 @@
         "published_date": "2024-01-25",
         "accessed_date": "2026-10-10",
         "source_kind": "Herstellerangabe"
-      },
-      {
-        "id": "S-f71c0348db6067c4",
-        "name": "Janes",
-        "title": "Rheinmetall to supply Ukraine with Skynex after confirming Qatar delivery",
-        "url": "https://www.janes.com/defence-intelligence-insights/defence-news/weapons/rheinmetall-to-supply-ukraine-with-skynex-after-confirming-qatar-delivery",
-        "published_date": "2022-12-15",
-        "accessed_date": "2026-10-10",
-        "source_kind": "Sekundärquelle"
       },
       {
         "id": "S-f9b9880f37c53f47",
