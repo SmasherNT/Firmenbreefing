@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SPEC = importlib.util.spec_from_file_location("interpretation", Path(__file__).with_name("check-interpretation.py"))
 CHECK = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(CHECK)
+PORTFOLIO = CHECK.helper("portfolio_html", "portfolio-html.py")
 
 KINDS = {"target", "partner", "customer", "jv", "owner", "supplier", "subsidiary",
          "project", "person", "institution", "other"}
@@ -96,6 +97,11 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     if full and (set(selected) != {"context", "portfolio", "cluster", "market"} or
                  positioning is None or swot is None or not 4 <= len(summary_rows) <= 6 or len(highlight_rows) != 3):
         raise ValueError("full briefing requires four facts roles, positioning, SWOT, 4–6 summary claims and three reviewed highlights")
+    inventory = CHECK.portfolio_context(facts)
+    product_assessments = {r['product_id']: r for r in interpreted.values() if CHECK.product_assessment(r)}
+    if full and (positioning_context.get('portfolio') != inventory or
+                 set(product_assessments) != {p['id'] for p in inventory['products']}):
+        raise ValueError('full briefing requires current portfolio context and one reviewed assessment per product')
 
     def require(ids, trail=()):
         if not isinstance(ids, list) or not ids:
@@ -114,8 +120,10 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     if not isinstance(topics, list):
         raise ValueError("topics must be ordered id/label rows")
     topic_index = CHECK.index(topics, "topics")
-    if any(not CHECK.text(t.get("label")) for t in topics):
+    if any(not CHECK.text(t.get("label")) or t.get("page", "main") not in {"main", "market"} for t in topics):
         raise ValueError("topic label required")
+    if manifest.get('market_title') is not None and not CHECK.text(manifest['market_title']):
+        raise ValueError('market_title must be text')
     for row in interpreted.values():
         if row['section'].startswith('topic:') and row['section'][6:] not in topic_index:
             raise ValueError('interpretation references unknown requested topic')
@@ -201,17 +209,17 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         return '<ul class="evidence">' + "".join(parts) + '</ul>'
 
     def fact_card(row, title=None):
-        return '<details class="card"><summary>' + esc(title or row["statement"]) + '</summary><p>' + esc(row["statement"]) + '</p>' + links([row["id"]]) + '</details>'
+        return '<details class="card" data-es-title="' + esc(title or row["statement"]) + '"><summary>' + esc(title or row["statement"]) + '</summary><div class="es-detail"><p>' + esc(row["statement"]) + '</p>' + paragraphs([row['uncertainty']]) + evidence(row) + links([row["id"]]) + '</div></details>'
 
     def view_card(row):
-        body = "".join('<p>' + esc(claims[c]["statement"]) + '</p>' for c in row["claim_ids"])
+        body = "".join('<p>' + esc(claims[c]["statement"]) + '</p>' + evidence(claims[c]) for c in row["claim_ids"])
         body += links(row["claim_ids"])
         for section in row.get("sections", []):
-            body += '<h4>' + esc(section["label"]) + '</h4>' + "".join('<p>' + esc(claims[c]["statement"]) + '</p>' for c in section["claim_ids"]) + links(section["claim_ids"])
-        return '<details class="card"><summary>' + esc(row["label"]) + '</summary>' + body + '</details>'
+            body += '<h4>' + esc(section["label"]) + '</h4>' + "".join('<p>' + esc(claims[c]["statement"]) + '</p>' + evidence(claims[c]) for c in section["claim_ids"]) + links(section["claim_ids"])
+        return '<details class="card" data-es-title="' + esc(row["label"]) + '"><summary>' + esc(row["label"]) + '</summary><div class="es-detail">' + body + '</div></details>'
 
     def interp_card(row):
-        return '<details class="card"><summary>' + esc(row["statement"]) + '</summary><p class="meta">Analysteninterpretation</p>' + paragraphs([row["reasoning"], row["uncertainty"]]) + links([row["id"]]) + '</details>'
+        return '<details class="card" data-es-title="' + esc(row["statement"]) + '"><summary>' + esc(row["statement"]) + '</summary>' + executive_detail(row) + '</details>'
 
     def event_card(row):
         when = row.get("date") or 'Datum öffentlich nicht belegt'
@@ -285,10 +293,11 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     main = section("Executive Summary", executive, 'executive-summary')
     if not summary_rows:
         main += section("Unternehmen im Überblick", grid([view_card(r) for v in views.values() for r in v.get("company_facts", [])]))
+    topic_pages = {'main': '', 'market': ''}
     for index, topic in enumerate(topics):
         cards = [view_card(r) for v in views.values() for r in v.get("topics", []) if r["id"] == topic["id"]]
         cards += [interp_card(r) for r in interpreted.values() if r["section"] == "topic:" + topic["id"]]
-        main += section(topic["label"], grid(cards) or '<p>Keine freigegebenen Befunde für dieses Thema.</p>', 'topic-' + str(index))
+        topic_pages[topic.get('page', 'main')] += section(topic["label"], grid(cards) or '<p>Keine freigegebenen Befunde für dieses Thema.</p>', 'topic-' + str(index))
     events = [r for v in views.values() for r in v.get("events", [])]
     events.sort(key=lambda r: (r.get("date") is None, r.get("date") or ''))
     timeline = ''
@@ -296,6 +305,10 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         dated = ' datetime="' + esc(row["date"]) + '"' if row.get("date") else ''
         timeline += '<div class="event"><time' + dated + '>' + esc(row.get("date") or 'Datum öffentlich nicht belegt') + '</time>' + event_card(row) + '</div>'
     main += section("Aktuelle Entwicklungen", '<div class="timeline">' + timeline + '</div>' if timeline else '', 'current-developments')
+    portfolio_html = PORTFOLIO.render(inventory, product_assessments, claims, evidence, links, CHECK.PORTFOLIO_STAGES)
+    if portfolio_html:
+        main += '<section class="module" id="portfolio">' + portfolio_html + '</section>'
+    main += topic_pages['main']
     if network:
         nodes = CHECK.index(network["nodes"], "nodes")
         products = CHECK.index(network["products"], "products")
@@ -311,10 +324,10 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         fragment = (ROOT / 'references/templates/cluster-network.html').read_text(encoding='utf-8')
         fragment = fragment.replace('__CLUSTER_NETWORK_JSON__', safe_json(network))
         fragment = fragment.replace('<tbody></tbody>', '<tbody>' + ''.join(rows) + '</tbody>', 1)
-        fragment = fragment.replace("const tableBody=root.querySelector('tbody');", "const tableBody=root.querySelector('tbody');tableBody.replaceChildren();", 1)
+        if 'tableBody.replaceChildren();' not in fragment:
+            fragment = fragment.replace("const tableBody=root.querySelector('tbody');", "const tableBody=root.querySelector('tbody');tableBody.replaceChildren();", 1)
         fragment = fragment.replace("window.addEventListener('beforeprint',()=>{root.querySelector('.cn-table').open=true;});", "", 1)
         main += section("Cluster · Technologie, Industrie & Marktzugang", fragment)
-    main += section("Portfolio & Produktreife", grid([view_card(r) for v in views.values() for r in v.get("products", [])]))
     if positioning_context and positioning_context.get("matrix"):
         criteria = plan["criteria"]
         cells = {(r["peer_id"], r["criterion_id"]): r for r in positioning["interpretations"] if r.get("type") == "matrix_cell"}
@@ -333,12 +346,12 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
                     bar = '<span class="steps" aria-hidden="true">' + ''.join('<i class="' + ('on' if n <= anchors.index(key) else '') + '"></i>' for n in range(len(anchors))) + '</span>'
                 if r['cell_status'] == 'bewertet' and c['display_type'] == 'Kennzahl':
                     value = str(value) + ' ' + c['unit']
-                line += '<td><a class="cell" href="#' + esc(r['id']) + '">' + esc(value) + bar + '</a></td>'
+                line += '<td><a class="cell" data-es-title="' + esc(peer['label'] + ' · ' + c['label']) + '" href="#' + esc(r['id']) + '"><span class="cell-value">' + esc(value) + '</span>' + bar + '<span class="cell-open">Begründung ↗</span></a><template class="cell-detail">' + executive_detail(r) + '</template></td>'
             rows.append('<tr>' + line + '</tr>')
         rubric = ''.join('<h4>' + esc(c['label']) + '</h4>' + paragraphs([c['question'], c['evidence_required'], c.get('conditions')]) + (note_rows(c.get('anchors', {}).values()) if c.get('anchors') else '') for c in criteria)
         title = 'Capability Matrix · fiktiver Beispieldatensatz' if fictional else 'Capability Matrix · öffentlich belegte Reife'
-        main += section(title, '<p>Zellen öffnen Begründung, Evidenz und Grenzen. Stufen gelten je Kriterium; kein Gesamt-Ranking.</p><div class="table-wrap"><table>' + head + ''.join(rows) + '</table></div><details><summary>Kriterien und Skalen</summary>' + rubric + '</details>')
-    extra = [r for r in interpreted.values() if r['id'].startswith('I') and r['section'] not in {CHECK.SUMMARY_SECTION, CHECK.HIGHLIGHT_SECTION} and not r['section'].startswith('topic:') and r.get('type') != 'matrix_cell']
+        main += section(title, '<p>Zellen öffnen Begründung, Evidenz und Grenzen. Kriterien folgen dem Prüfauftrag; kein Gesamt-Ranking.</p><div class="table-wrap capability-wrap"><table>' + head + ''.join(rows) + '</table></div><details><summary>Kriterien und Skalen</summary>' + rubric + '</details>', 'capability-matrix')
+    extra = [r for r in interpreted.values() if r['id'].startswith('I') and r['section'] not in {CHECK.SUMMARY_SECTION, CHECK.HIGHLIGHT_SECTION, 'regions'} and not r['section'].startswith('topic:') and r.get('type') != 'matrix_cell' and not CHECK.product_assessment(r)]
     scored = []
     for r in extra:
         if 'score' in r:
@@ -361,7 +374,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         if o:
             limits += paragraphs(o.get('shared_limitations', [])) + note_rows(o.get('research_requests', []))
     main += section('Datenlücken & offene Fragen', limits)
-    pages = [('page-main', 'Überblick', main)]
+    profile_body = '<p>Kein Gesprächspartner im Auftrag angegeben.</p>'
     if manifest.get('person'):
         profile = views.get('context', {}).get('profile')
         person = manifest['person']
@@ -379,14 +392,18 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             body += grid([fact_card(claims[c]) for c in profile['claim_ids']])
         else:
             body += '<p>Berufliches Profil öffentlich nicht verifiziert.</p>'
-        pages.append(('page-profile', 'Gesprächspartner', section('Beruflicher Gesprächspartner-Kontext', body)))
-    regions = []
+        profile_body = body
+    regions = [topic_pages['market']]
     for role, v in views.items():
         if v.get('regions'):
             regions.append(section('Unternehmenspräsenz' if role == 'portfolio' else 'Markt & Industrie', grid([view_card(r) for r in v['regions']])))
-    if regions:
-        pages.append(('page-regions', 'Regionen & Märkte', ''.join(regions)))
-    register = ''
+    region_interpretations = [interp_card(r) for r in interpreted.values() if r.get('section') == 'regions']
+    if region_interpretations:
+        regions.append(section('Einordnung · Marktzugang', grid(region_interpretations)))
+    market_label = 'Markt-Deep-Dive' + (' · ' + manifest['market_title'] if manifest.get('market_title') else '')
+    pages = [('page-main', 'Überblick', main), ('page-profile', 'Gesprächspartner', section('Beruflicher Gesprächspartner-Kontext', profile_body)),
+             ('page-regions', market_label, ''.join(regions) or section(market_label, '<p>Keine freigegebenen regionalen Befunde für diesen Auftrag.</p>'))]
+    register = '<label class="source-search">Quellen und Aussagen durchsuchen<input id="source-search-input" type="search" placeholder="Stichwort, Claim oder Quelle"></label>'
     for cid, row in claims.items():
         status = reviews.get(cid, {}).get('status', 'nicht einzeln geprüft')
         depth = reviews.get(cid, {}).get('depth', 'nicht geprüft')
@@ -396,9 +413,9 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     for cid, row in interpreted.items():
         register += '<details class="claim-detail" id="' + esc(cid) + '"><summary>' + esc(cid + ' · ' + row['statement']) + '</summary><p class="meta">Analysteninterpretation · vollständig geprüft im Schluss-Review</p>' + paragraphs([row['reasoning'], row['method'], row['uncertainty'], row.get('next_stage_limit'), row.get('coverage_note')]) + links(row['depends_on']) + '</details>'
     register += '<h3>Dokumente</h3>' + ''.join('<p>' + source_html(s) + '</p>' for s in sources.values())
-    pages.append(('page-sources', 'Details & Quellen', section('Aussagen, Belegstellen & Originalquellen', register)))
-    tabs = ''.join('<button type="button" data-page="' + ident + '" aria-controls="' + ident + '">' + label + '</button>' for ident, label, _ in pages)
-    content = ''.join('<div class="page" id="' + ident + '">' + body + '</div>' for ident, _, body in pages)
+    pages.append(('page-sources', 'Quellen', section('Aussagen, Belegstellen & Originalquellen', register)))
+    tabs = ''.join('<button type="button" role="tab" id="tab-' + ident + '" data-page="' + ident + '" aria-controls="' + ident + '">' + str(i) + ' · ' + esc(label) + '</button>' for i, (ident, label, _) in enumerate(pages, 1))
+    content = ''.join('<div class="page" role="tabpanel" aria-labelledby="tab-' + ident + '" id="' + ident + '"><p class="page-kicker">' + str(i).zfill(2) + ' / 04 · ' + esc(label) + '</p>' + body + '</div>' for i, (ident, label, body) in enumerate(pages, 1))
     template = (ROOT / 'references/templates/briefing.html').read_text(encoding='utf-8')
     values = {'TITLE': esc(manifest['company']), 'DATE': esc(manifest['as_of']), 'SCOPE': esc(manifest.get('scope', '')),
               'BADGE': 'Fiktive Testdaten · keine reale Firmenanalyse' if fictional else 'Geprüfte Fakten & Analysteninterpretation',

@@ -29,6 +29,7 @@ Kurzes sachliches label, gegebenenfalls mit „angekündigt“/„laut Herstelle
 rechts; Datum unbekannt ausdrücklich zeigen und diese Einträge zuletzt führen.
 Details enthalten vollständige A-Fakten, Aussageursprung, Unsicherheit und direkte
 Originalquellen/Belegstellen. Kein neuer Agent oder zusätzlicher Interpretationstext.
+products: domain und optional short_label nach portfolio-darstellung.md.
 profile: {name,claim_ids}, nur berufliche H-Claims und nur bei benannter Person.
 regions: optional sections:[{label,claim_ids}] für Unterthemen.
 topics: gleiche id wie manifest.topics[].id; Reihenfolge aus Manifest.
@@ -45,20 +46,33 @@ section=topic:<id> für Themen, weitere sections z. B. portfolio/regions/technol
 Typisierte matrix_cell-I-Claims und aktueller Plan erzeugen die Matrix:
 Spalten aus Prüfauftrag, Zellen mit Methode, Begründung, Grenzen und A-Fakten.
 Evidenzstufen sind ordinale Skalenanker; kein gemitteltes Gesamt-Ranking.
+Portfolio-Reife nach portfolio-darstellung.md im bestehenden Positionierungsschritt.
 Weitere Scores nur mit vorher definierten assessment_methods; null bei Datenlücke.
 SWOT maximal drei Punkte je Quadrant; Datenlücke ist keine tatsächliche Schwäche.
 Keine neue Interpretation beim Rendern erzeugen.
 
-Kompakte Hauptseite: Summary, Themen, Entwicklungen, Vier-Cluster-Netz, Portfolio,
-Matrix, SWOT. Optionale Seiten für Person und Regionen/Märkte. Details & Quellen
-immer vorhanden. Unternehmenspräsenz vom allgemeinen Markt getrennt beschriften.
-Summary: feste Highlight-Reihe und kompakte Karten; vertiefbare Dialoge mit
-nativen details als Fallback. Karten und Matrixzellen öffnen Begründung und Originalbelege. Native details,
-Desktop-Karten, horizontale Matrix und ausgeklappte Druckansicht.
-Alle Beziehungen in statischer zugänglicher Tabelle auch ohne JavaScript.
-Keine externen Assets/Bibliotheken oder Laufzeit-Netzabfragen.
-Spezielle regionale Zeitreihen/Landkarten/frei entworfene Grafiken sind noch
-kein generischer Bestandteil; entsprechende Anforderungen gesondert umsetzen.
+Feste vier Desktop-Seiten, auch wenn ein optionaler Auftragsteil leer ist:
+1. Überblick: Summary, Entwicklungen, Portfolio, allgemeine Themen, Cluster,
+   Capability Matrix, Einordnung, SWOT und offene Fragen. Module untereinander.
+2. Beruflicher Gesprächspartner-Kontext.
+3. Markt-Deep-Dive: regionale Themen, Länder/Marktzugang und regionale Einordnung.
+4. Aussagen, Belegstellen und Originalquellen mit Suche.
+
+Manifest topics=[{id,label,page}], page=main/market (Standard main);
+market_title optional aus dem Auftrag, z. B. Golfstaaten. Reihenfolge je Seite
+entspricht dem Auftrag. Unternehmenspräsenz vom allgemeinen Markt getrennt zeigen.
+Portfolio nach portfolio-darstellung.md: sechs Stufen, farbige Produktgruppen,
+Filter/Tabelle und ein vollständig geschlossener Detailblock. Produktklick öffnet
+Block und Profil; keine firmenspezifischen Bewertungen in der Vorlage.
+Cluster: Ziel in der Mitte, vier Gruppen einzeln klickbarer Akteure, kompakte
+Auswahl, Filter/Querverbindungen und Detaildialog. Matrixspalten folgen dem Auftrag;
+kompakte Zellen, lokaler Scroll, feststehende Akteursspalte. Karten/Zellen öffnen
+Begründung und direkte Quellen im gemeinsamen Dialog. Native details als Fallback.
+Statische zugängliche Netzwerktabelle auch ohne JavaScript. Druck öffnet Details
+und stellt anschließend die vorherige Ansicht wieder her.
+Keine externen Assets, Laufzeit-Netzabfragen oder zusätzliche LLM-Designrunde.
+Keine gesonderte Mobilansicht/-abnahme. Spezielle Landkarten/Zeitreihen sind kein
+Pflichtbestandteil der generischen Darstellung.
 
 ## Prüfbarrieren
 Basis-Review input_fingerprint aus facts-validation.packet_fingerprint bindet

@@ -13,6 +13,13 @@ FACTS = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(FACTS)
 
 class FactsTests(unittest.TestCase):
+    def test_product_maturity_cannot_leak_into_facts_view(self):
+        for key in ('score', 'grade', 'assessment_status', 'method_id'):
+            self.setUp()
+            self.module['products'] = [dict(id='kit', label='Kit', claim_ids=['P001'], **{key: 3})]
+            result, _ = FACTS.build(self.manifest, [self.module])
+            self.assertTrue(any('product view' in e for e in result['errors']), key)
+
     def setUp(self):
         self.source = {"id": FACTS.source_id("https://example.org/product"),
                        "url": "https://example.org/product", "name": "Example",

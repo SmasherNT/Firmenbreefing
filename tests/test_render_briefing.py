@@ -210,7 +210,7 @@ class RenderTests(unittest.TestCase):
 
     def test_profile_is_optional_and_requires_h_facts(self):
         b = facts_only(self.b)
-        self.assertNotIn('page-profile', RENDER.build(**b))
+        self.assertIn('Kein Gesprächspartner im Auftrag angegeben', RENDER.build(**b))
         b['manifest']['person'] = 'Alex Example'
         self.assertIn('öffentlich nicht verifiziert', RENDER.build(**b))
         b['manifest']['person'] = dict(name='Alex Example', position='Integration Lead')

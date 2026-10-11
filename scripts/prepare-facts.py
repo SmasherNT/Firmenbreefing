@@ -130,6 +130,10 @@ def build(manifest, modules, plan=None):
         for field in INTERPRETATION_FIELDS:
             if field in data:
                 errors.append(role + ": interpretation field prohibited: " + field)
+        for product in data.get("products", []) if isinstance(data.get("products", []), list) else []:
+            if isinstance(product, dict) and any(k in product for k in INTERPRETATION_FIELDS | {
+                    "score", "grade", "maturity", "assessment_status", "method_id", "interpretation"}):
+                errors.append(role + ": product view must contain facts/mappings, not maturity assessments")
         for src in data.get("source_proposals", []) if isinstance(data.get("source_proposals"), list) else []:
             if not isinstance(src, dict):
                 errors.append(role + ": source must be an object")

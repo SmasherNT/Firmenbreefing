@@ -107,3 +107,7 @@ keine Analystenausgaben korrigieren. Gesamtausgabe erst nach Inhaltsfreigabe.
 Bei v2-Basis-Review module_views semantisch prüfen: Labels, Akteurs-/Produkt-/
 Themen-/Länderzuordnung, Ereignisdatum und A-Claims. Paket-Snapshot per
 stamp-review ergänzen; Hash ist kein Inhaltsurteil. Änderungen gezielt prüfen.
+Bei Portfolio references/portfolio-darstellung.md nutzen: Basis prüft Gruppen/
+Produktvarianten, final die sechs Reifemeilensteine und konkrete höhere Evidenzgrenze.
+Kapazitätsziele sind keine Serienlieferung; Beleglücken keine tatsächliche Unreife.
+In die bestehende Prüfrunde integrieren, keine zusätzlichen Quellenprüfer starten.

@@ -26,7 +26,9 @@ def generate(destination):
         company='Example Inspection', as_of='2026-10-09',
         scope='Fiktiver Offline-Test · Industrieinspektion, keine reale Firmenanalyse',
         selected_roles=['context', 'portfolio', 'cluster', 'market'],
-        topics=[dict(id='industry', label='Technologie & industrielle Integration')],
+        topics=[dict(id='industry', label='Technologie & industrielle Integration'),
+                dict(id='market', label='Europäischer Inspektionsmarkt', page='market')],
+        market_title='Europa',
         person='Alex Example · Integration Lead (fiktiv)')
     sources = [dict(id=FACTS.source_id('https://example.org/' + p),
         name='Fiktive Testquelle', title=t, url='https://example.org/' + p,
@@ -48,6 +50,8 @@ def generate(destination):
         ('P1', 'Das fiktive Inspection Kit wird als Softwaremodul angeboten.', 0),
         ('P2', 'Example Inspection ist laut Testdatensatz in Europa über einen Integrationspartner vertreten.', 1),
         ('P3', 'Der fiktive Hersteller nennt für 2026 eine Kapazität von 240 Inspection Kits pro Jahr; dies ist keine belegte Auslieferungsmenge.', 0),
+        ('P4', 'Im fiktiven Datensatz liefert Example Inspection das Sensor Kit seit 2025 wiederholt in Serie aus.', 1),
+        ('P5', 'Das fiktive Dokument nennt einen Service namens Data Assist, ohne dessen Entwicklungs- oder Nutzungsstatus zu beschreiben.', 0),
         ('M1', 'Das Zielsystem wird laut fiktivem Produktdokument über eine API integriert.', 0),
         ('M2', 'Für das Zielsystem ist im Testdatensatz ein Labortest dokumentiert.', 0),
         ('M3', 'Für das Zielsystem ist im Testdatensatz ein Pilot vorgesehen; seine Umsetzung ist nicht belegt.', 0),
@@ -83,7 +87,9 @@ def generate(destination):
             dict(id='launch', label='Integrationsschnittstelle vorgestellt', date='2026-08-01', claim_ids=['T2']),
             dict(id='pilot-update', label='Vorbereitung eines Kundenpiloten angekündigt', date='2026-09-02', claim_ids=['T3'])],
         profile=dict(name='Alex Example', claim_ids=['H1']))
-    portfolio.update(products=[dict(id='kit', label='Inspection Kit', claim_ids=['P1'])],
+    portfolio.update(products=[dict(id='kit', label='Inspection Kit', domain='Inspektionssoftware', claim_ids=['P1', 'M2']),
+            dict(id='sensor-kit', label='Sensor Kit', domain='Sensorik', claim_ids=['P4']),
+            dict(id='data-assist', label='Data Assist', domain='Dienstleistungen', claim_ids=['P5'])],
         regions=[dict(id='europe', label='Europa · Partnerpräsenz', claim_ids=['P2'])],
         topics=[dict(id='industry', label='Produktintegration', claim_ids=['P1'])])
     cluster.update(topics=[dict(id='industry', label='Industrie- und Integrationspartner', claim_ids=['C3', 'C6'])],
@@ -118,15 +124,14 @@ def generate(destination):
             display_type='Evidenzstufe', question='Welche Erprobung ist belegt?', evidence_required='Test-/Pilotbeleg',
             applicability='Inspektionssysteme', rationale='Angebot von Umsetzung unterscheiden',
             anchors={'1': 'Angebot dokumentiert', '2': 'Labortest dokumentiert', '3': 'Benannter Kundenpilot dokumentiert'})],
-        assessment_methods=[dict(id='maturity', assessment_type='product_maturity', applicability='Inspection Kit',
-            anchors={'1': 'Angeboten', '2': 'Im Labor erprobt', '3': 'Benannter Kundenpilot'}),
-            dict(id='presence', assessment_type='regional_presence', applicability='Europäische Präsenz',
+        assessment_methods=[dict(id='presence', assessment_type='regional_presence', applicability='Europäische Präsenz',
             anchors={'1': 'Partnerpräsenz', '2': 'Kundenpilot', '3': 'Fertigungsstandort'})])
     market.update(comparison_plan_version=1, peers=[dict(id='target', label='Example Inspection'),
         dict(id='peer', label='TestPeer')], observations=[dict(peer_id=p, criterion_id=c, claim_ids=ids)
         for p, c, ids in [('target', 'integration', ['M1']), ('target', 'validation', ['M2', 'M3']),
                          ('peer', 'integration', ['M6']), ('peer', 'validation', ['M4'])]],
-        regions=[dict(id='europe', label='Europa · Industrie- und Pilotprogramme', claim_ids=['M5'])])
+        regions=[dict(id='europe', label='Europa · Industrie- und Pilotprogramme', claim_ids=['M5'])],
+        topics=[dict(id='market', label='Programme für Inspektionspiloten', claim_ids=['M5'])])
     validation, facts = FACTS.build(manifest, modules, plan)
     if validation['errors']:
         raise ValueError(validation['errors'])
@@ -135,7 +140,7 @@ def generate(destination):
         review_scope='SIMULIERT: bereitgestellte fiktive Daten; keine öffentliche Quellenprüfung',
         claims=[dict(id=cid, depth='A', status='geprüft', evidence_review='SIMULIERTE Offline-Entscheidung') for cid in by])
     basis = STAMP.stamp(review_base, validation)
-    pos_context = CHECK.prepare(manifest, facts, basis, ['P1', 'P2', 'P3', 'C3', 'M5', 'M7'], plan, market)
+    pos_context = CHECK.prepare(manifest, facts, basis, ['P1', 'P2', 'P3', 'C3', 'M5', 'M7'], plan, market, include_portfolio=True)
     interpretations = []
     for n, (p, c, ids, value) in enumerate([('target', 'integration', ['M1'], 'API-Integration'),
         ('target', 'validation', ['M2', 'M3'], 2), ('peer', 'integration', ['M6'], 'Komplettsystem'),
@@ -167,12 +172,21 @@ def generate(destination):
             period='2026' if kind == 'metric' else 'Stand 09.10.2026', statement=by[cid]['statement'],
             depends_on=[cid], reasoning='Der Befund ist für Größenordnung, Marktzugang oder Erprobung im Prüfauftrag relevant.',
             method='Auftragsbezogene Auswahl', uncertainty='Synthetischer Test; keine reale Unternehmensbewertung'))
-    for n, kind, method, subject, score, ids, section in [(20, 'product_maturity', 'maturity', 'Inspection Kit', 2, ['M2', 'P1'], 'portfolio'),
-        (21, 'regional_presence', 'presence', 'Europa', 1, ['P2'], 'regions')]:
+    for n, kind, method, subject, score, ids, section in [(21, 'regional_presence', 'presence', 'Europa', 1, ['P2'], 'regions')]:
         interpretations.append(dict(id='I' + str(n), type=kind, method_id=method, subject=subject, score=score,
             statement='Belegte Stufe für ' + subject + ' im fiktiven Datensatz', section=section,
             depends_on=ids, reasoning='Die genannte Stufe folgt aus den bereitgestellten fiktiven Belegen.',
             method='Vorab definierte Skalenanker', uncertainty='Kein realer Reife-/Präsenznachweis'))
+    for ident, pid, grade, ids, reason in [('I20', 'kit', 3, ['P1', 'M2'], 'Ein durchgeführter Labortest ist dokumentiert; ein geplanter Pilot ist noch kein Kundenprogramm.'),
+            ('I22', 'sensor-kit', 6, ['P4'], 'Wiederholte Serienauslieferung ist im fiktiven Datensatz ausdrücklich dokumentiert.'),
+            ('I23', 'data-assist', None, ['P5'], 'Das Dokument nennt den Service, aber keinen konkreten Reifemeilenstein.')]:
+        interpretations.append(dict(id=ident, type='product_maturity', product_id=pid,
+            method_id=CHECK.PORTFOLIO_METHOD, section='portfolio', score=grade,
+            assessment_status='bewertet' if grade else 'nicht eindeutig bestimmbar',
+            statement='Öffentlich belegte Reife im fiktiven Datensatz: ' + (str(grade) if grade else 'nicht bestimmbar'),
+            depends_on=ids, reasoning=reason, method='Höchster konkret belegter Meilenstein', uncertainty='Synthetischer Offline-Test',
+            next_stage_limit='Kein konkretes Kundenprogramm belegt.' if grade == 3 else 'Höchster Skalenanker; keine Aussage zur technischen Überlegenheit.' if grade == 6 else '',
+            coverage_note='Keine ausreichende Statusinformation im bereitgestellten Datensatz.' if grade is None else ''))
     positioning = dict(schema_version=1, mode='interpret-v2', role='positioning', run_id=manifest['run_id'],
         company=manifest['company'], as_of=manifest['as_of'], scope=manifest['scope'], status='vollständig',
         input_fingerprint=pos_context['fingerprint'], plan_fingerprint=pos_context['plan_fingerprint'],

@@ -24,3 +24,5 @@ ausgewählten Umfang bearbeiten (references/modultest.md).
 
 Bei facts-v2 für HTML die kompakten Tabellen/Claim-Zuordnungen nach
 references/ausgabe-html-v2.md liefern. Keine parallelen Langberichte erstellen.
+Für products auch references/portfolio-darstellung.md lesen: stabile Produkt-ID,
+sachliche domain und kompakte A-Claim-Zuordnung. Reife erst durch Positionierung.

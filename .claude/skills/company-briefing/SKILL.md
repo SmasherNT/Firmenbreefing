@@ -10,7 +10,9 @@ nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
    Nachricht übernehmen; Defaults ergänzen, kein Formular verlangen.
    Nur blockierende Mehrdeutigkeit klären. Unter runs/<neue_run_id>/input/
    Originalauftrag und facts-run.json erstellen. Alte Läufe erhalten.
-   topics=[{id,label}], person als Nutzerangabe. Einrichtung ist kein Auftrag.
+   topics=[{id,label,page}], page=main oder market (Standard main).
+   Beauftragten regionalen Markt-Deep-Dive auf market routen; market_title aus
+   dem Auftrag, z. B. Golfstaaten. person als Nutzerangabe. Einrichtung ist kein Auftrag.
 2. facts-briefing im delegierten Lauf mit context/portfolio/cluster/market
    ausführen. Alle vier Faktenagenten delegieren; Vergleichsplan vor
    Wettbewerbsrecherche aus Auftrag festlegen. Delegation nennt Identität,
@@ -23,8 +25,11 @@ nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
    Drei auftragsbezogene Highlights und kurze Summary-Karten nach
    references/executive-summary.md; relevante bestehende A-Kandidaten mitgeben.
    SWOT danach; ein gemeinsames Schluss-Review für beide Ableitungen.
+   Portfolio-Reife nach references/portfolio-darstellung.md im bestehenden
+   Positionierungsschritt; selektiven Kontext mit --portfolio erzeugen.
 5. briefing-output im selben Lauf mit --full ausführen. Hauptagent koordiniert
    und rendert; keine eigenen Fakten-/Interpretations-JSONs oder LLM-HTML.
+   Vier Seiten: allgemeine Module untereinander, Person, Markt-Deep-Dive, Quellen.
 6. output/abnahme.md mit tatsächlichen Agenten/Reviews/Prüfungen aktualisieren.
    Dateien im Arbeitsbranch committen/pushen; keine öffentliche Veröffentlichung.
 

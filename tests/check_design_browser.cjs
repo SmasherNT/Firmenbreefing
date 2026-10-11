@@ -1,0 +1,43 @@
+// Desktop/offline QA with synthetic data. Requires playwright-core and Chromium.
+const assert=require('node:assert/strict'),path=require('node:path');
+const {pathToFileURL}=require('node:url'),{chromium}=require('playwright-core');
+(async()=>{
+ assert(process.argv[2]&&process.env.BRIEFING_CHROMIUM_PATH,'Pass HTML and set BRIEFING_CHROMIUM_PATH');
+ const browser=await chromium.launch({executablePath:process.env.BRIEFING_CHROMIUM_PATH,headless:true,args:['--no-sandbox','--disable-dev-shm-usage']});const errors=[];
+ try{
+  const context=await browser.newContext({offline:true,viewport:{width:1440,height:1000}});
+  const page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
+  await page.goto(pathToFileURL(path.resolve(process.argv[2])).href);await page.addStyleTag({content:'html{scroll-behavior:auto!important}'});
+  assert.deepEqual(await page.locator('.page').evaluateAll(n=>n.map(p=>p.id)),['page-main','page-profile','page-regions','page-sources']);
+  for(const width of [1440,1280,1024]){
+   await page.setViewportSize({width,height:1000});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Only local scrolling');
+   const boxes=await page.locator('#page-main>.module').evaluateAll(ns=>ns.map(n=>{const r=n.getBoundingClientRect();return {left:r.left,top:r.top,bottom:r.bottom};}));
+   assert(boxes.every((b,i)=>i===0||b.top>=boxes[i-1].bottom),'Modules vertically stacked');assert(boxes.every(b=>Math.abs(b.left-boxes[0].left)<1),'Full-width alignment');
+   assert.equal(await page.locator('#portfolio-profiles').evaluate(n=>n.open),false);assert.equal(await page.locator('.pf-profile-content:visible').count(),0);
+  }
+  await page.setViewportSize({width:1440,height:1000});assert.equal(await page.locator('.pf-maturity-map thead th').count(),7);assert.equal(await page.locator('.pf-maturity-map .pf-map-item').count(),2);assert.equal(await page.locator('.pf-unknown .pf-map-item').count(),1);
+  await page.locator('[data-pf-filter=query]').fill('sensor');assert.equal(await page.locator('.pf-map-item:visible').count(),1);await page.locator('.pf-reset').click();
+  await page.locator('[data-pf-filter=grade]').selectOption('unknown');assert.equal(await page.locator('.pf-map-item:visible').count(),1);assert(await page.locator('.pf-unknown').isVisible());await page.locator('.pf-reset').click();
+  await page.locator('[data-pf-filter=origin]').selectOption('Partnerangabe');assert.equal(await page.locator('.pf-map-item:visible').count(),1);await page.locator('.pf-reset').click();
+  await page.locator('[data-pf-view=table]').click();assert.equal(await page.locator('[data-pf-result]:visible').count(),3);await page.locator('[data-pf-view=map]').click();
+  await page.locator('.pf-map-item[href="#product-kit"]').click();await page.waitForFunction(()=>document.getElementById('product-kit').open);assert(await page.locator('#portfolio-profiles').evaluate(n=>n.open));assert((await page.locator('#product-kit .evidence a').first().getAttribute('href')).startsWith('https://'));
+  await page.locator('#portfolio-profiles>.pf-head').click();await page.locator('.pf-map-item[href="#product-kit"]').click();await page.waitForFunction(()=>document.getElementById('portfolio-profiles').open);
+  await page.locator('.pf-expand').click();assert(await page.locator('.pf-profile').evaluateAll(ns=>ns.every(n=>n.open)));await page.locator('.pf-expand').click();await page.locator('#portfolio-profiles>.pf-head').click();
+  const network=page.locator('#briefing-company-network');await network.locator('.cn-expand').click();const expected=await network.locator('.cn-data').evaluate(n=>JSON.parse(n.textContent));
+  assert.equal(await network.locator('.cn-node').count(),expected.nodes.length);assert.equal(await network.locator('.cn-hit').count(),expected.edges.length);assert.equal(await network.locator('tbody tr').count(),expected.edges.length);
+  await network.locator('.cn-node').first().focus();await page.keyboard.press('Enter');assert(await page.locator('#network-reading-dialog').evaluate(n=>n.open));await page.locator('#network-reading-dialog .cn-relation').first().click();assert((await page.locator('#network-reading-dialog .cn-detail-content a[href^="https:"]').first().getAttribute('href')).startsWith('https://'));await page.keyboard.press('Escape');
+  await network.locator('.cn-search').fill('no such actor');assert.equal(await network.locator('.cn-hit').count(),0);await network.locator('.cn-reset').click();
+  await page.locator('a.cell').first().click();assert(await page.locator('#es-dialog').evaluate(n=>n.open));await page.locator('#es-dialog .es-fact>summary').first().click();assert(await page.locator('#es-dialog .evidence a').first().isVisible());await page.keyboard.press('Escape');assert(await page.locator('#page-main').isVisible());
+  await page.locator('[data-page=page-regions]').click();assert(await page.locator('#page-regions #topic-1').isVisible());assert.equal(await page.locator('#page-main #topic-1').count(),0);
+  await page.locator('[data-page=page-sources]').click();await page.locator('#source-search-input').fill('no such evidence');assert.equal(await page.locator('#page-sources .claim-detail:visible').count(),0);
+  await page.locator('[data-page=page-main]').click();await page.locator('.es-card>summary').first().click();const id=(await page.locator('#es-dialog a.claim').first().getAttribute('href')).slice(1);await page.locator('#es-dialog a.claim').first().click();assert.equal(await page.locator('#source-search-input').inputValue(),'');assert(await page.locator('#'+id).isVisible());
+  await page.locator('[data-page=page-main]').click();await page.locator('[data-pf-filter=query]').fill('sensor');await page.locator('[data-pf-view=table]').click();const before=await page.locator('details').evaluateAll(ns=>ns.map(n=>n.open));
+  await page.evaluate(()=>window.dispatchEvent(new Event('beforeprint')));assert(await page.locator('details').evaluateAll(ns=>ns.every(n=>n.open)));assert(await page.locator('.pf-map-view').isVisible());assert.equal(await page.locator('.pf-map-item:visible').count(),3);
+  await page.evaluate(()=>window.dispatchEvent(new Event('afterprint')));assert.deepEqual(await page.locator('details').evaluateAll(ns=>ns.map(n=>n.open)),before);assert(await page.locator('.pf-result-view').isVisible());assert.equal(await page.locator('[data-pf-result]:visible').count(),1);
+  await page.locator('.pf-reset').click();await page.locator('[data-pf-view=map]').click();await page.locator('[data-page=page-main]').focus();await page.keyboard.press('End');assert.equal(await page.locator('[aria-selected=true]').getAttribute('data-page'),'page-sources');
+  if(process.env.BRIEFING_QA_DIR){await page.locator('[data-page=page-main]').click();await page.locator('#portfolio').screenshot({path:path.join(process.env.BRIEFING_QA_DIR,'portfolio.png')});await network.screenshot({path:path.join(process.env.BRIEFING_QA_DIR,'network.png')});}
+  await context.close();const fallback=await browser.newContext({offline:true,javaScriptEnabled:false,viewport:{width:1280,height:1000}});const fp=await fallback.newPage();await fp.goto(pathToFileURL(path.resolve(process.argv[2])).href);assert.equal(await fp.locator('.page:visible').count(),4);
+  await fp.locator('#portfolio-profiles>.pf-head').click();await fp.locator('#product-kit>summary').click();assert(await fp.locator('#product-kit .pf-profile-content').isVisible());await fp.locator('.cn-table>summary').click();assert.equal(await fp.locator('.cn-table tbody tr').count(),expected.edges.length);await fallback.close();assert.deepEqual(errors,[]);
+  console.log(JSON.stringify({pages:4,widths:[1440,1280,1024],portfolio:'passed',network:'passed',matrix:'passed',routing:'passed',print:'passed',noJavaScript:'passed',errors}));
+ }finally{await browser.close();}
+})().catch(e=>{console.error(e);process.exitCode=1;});

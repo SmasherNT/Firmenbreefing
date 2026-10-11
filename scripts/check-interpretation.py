@@ -15,6 +15,38 @@ CELL_STATUS = {"bewertet", "nicht öffentlich belegt", "nicht anwendbar",
 ROLES = {"context", "portfolio", "cluster", "market", "source-reviewer"}
 SUMMARY_SECTION = "executive_summary"
 HIGHLIGHT_SECTION = "executive_highlights"
+PORTFOLIO_METHOD = "portfolio-maturity-v1"
+PORTFOLIO_STAGES = {str(i): label for i, label in enumerate(
+    ("Angekündigt", "Prototyp", "Test / Demo", "Kundenprogramm", "Im Betrieb", "Serie / Skala"), 1)}
+
+def portfolio_context(facts):
+    """Compact reviewed inventory; maturity remains exclusively interpretation data."""
+    products = []
+    for view in facts.get("module_views", []):
+        if view.get("role") != "portfolio":
+            continue
+        for row in view.get("products", []):
+            if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_-]*", str(row.get("id", ""))):
+                raise ValueError("portfolio product needs a safe, stable id")
+            if not text(row.get("label")) or not isinstance(row.get("claim_ids"), list) or not row["claim_ids"]:
+                raise ValueError("portfolio product needs label and claim_ids")
+            domain = row.get("domain", "Produkte / Lösungen")
+            short = row.get("short_label", row["label"])
+            if not text(domain) or not text(short):
+                raise ValueError("portfolio domain/short_label must be text")
+            products.append({"id": row["id"], "label": row["label"], "short_label": short,
+                             "domain": domain, "claim_ids": row["claim_ids"]})
+            if row.get('sections'):
+                products[-1]['sections'] = copy.deepcopy(row['sections'])
+    index(products, "portfolio products")
+    return {"method_id": PORTFOLIO_METHOD, "stages": PORTFOLIO_STAGES, "products": products}
+
+def product_assessment(row):
+    return row.get("type") == "product_maturity" and "product_id" in row
+
+def unassessed(row):
+    return (row.get("type") == "matrix_cell" and row.get("cell_status") != "bewertet") or (
+        product_assessment(row) and row.get("assessment_status") != "bewertet")
 
 def digest(obj):
     return hashlib.sha256(json.dumps(obj, sort_keys=True, ensure_ascii=False,
@@ -113,9 +145,15 @@ def plan_check(plan, manifest):
         raise ValueError("; ".join(errors))
 
 def prepare(manifest, facts, review, claim_ids, plan=None, market=None,
-            positioning=None, positioning_context=None, interpretation_ids=None):
+            positioning=None, positioning_context=None, interpretation_ids=None,
+            include_portfolio=False):
     claims, reviews, fingerprints = env(manifest, facts, review)
     selected = set(claim_ids or [])
+    inventory = portfolio_context(facts) if include_portfolio else None
+    if include_portfolio and positioning is not None:
+        raise ValueError("portfolio inventory belongs to positioning, not SWOT context")
+    if inventory:
+        selected.update(c for p in inventory["products"] for c in p["claim_ids"])
     selected_interpretations = {}
     interpretation_fingerprints = {}
     upstream_plan_fingerprints = {}
@@ -135,8 +173,8 @@ def prepare(manifest, facts, review, claim_ids, plan=None, market=None,
             if cid in selected_interpretations:
                 continue
             row = known[cid]
-            if row.get("type") == "matrix_cell" and row.get("cell_status") != "bewertet":
-                raise ValueError("unrated matrix cell is not a SWOT basis")
+            if unassessed(row):
+                raise ValueError("unrated matrix cell or product is not a SWOT basis")
             selected_interpretations[cid] = row
             interpretation_fingerprints[cid] = check["fingerprints"][cid]
             upstream_plan_fingerprints[cid] = positioning_context.get("plan_fingerprint")
@@ -188,6 +226,8 @@ def prepare(manifest, facts, review, claim_ids, plan=None, market=None,
         body["plan_fingerprint"] = digest(plan)
     if matrix is not None:
         body["matrix"] = matrix
+    if inventory is not None:
+        body["portfolio"] = inventory
     return copy.deepcopy({**body, "fingerprint": digest(body)})
 
 def validate_output(manifest, facts, review, context, output,
@@ -239,6 +279,13 @@ def validate_output(manifest, facts, review, context, output,
         if context.get("plan_fingerprint") != digest(plan) or output.get("plan_fingerprint") != digest(plan):
             errors.append("plan fingerprint mismatch")
     matrix = context.get("matrix")
+    inventory = context.get("portfolio")
+    product_ids = set()
+    if inventory is not None:
+        if inventory != portfolio_context(facts):
+            errors.append("portfolio inventory changed")
+        product_ids = {p["id"] for p in inventory.get("products", [])}
+    assessed_products = set()
     if matrix is not None:
         peers = index(matrix["peers"], "peers")
     pairs, visiting = set(), set()
@@ -285,8 +332,8 @@ def validate_output(manifest, facts, review, context, output,
                 parent_hashes.update({f: current_fingerprints[f] for f in basis})
             elif dep in rows or dep in upstream:
                 parent = rows.get(dep) or upstream[dep]
-                if parent.get("type") == "matrix_cell" and parent.get("cell_status") != "bewertet":
-                    errors.append(cid + ": unassessed matrix cell cannot support a conclusion")
+                if unassessed(parent):
+                    errors.append(cid + ": unassessed matrix cell or product cannot support a conclusion")
                 if dep in rows and output.get("role") == "swot":
                     errors.append(cid + ": SWOT claims cannot support other SWOT claims")
                 found.update(dependencies(dep))
@@ -373,9 +420,34 @@ def validate_output(manifest, facts, review, context, output,
                     errors.append(cid + ": unrated cell needs coverage_note")
                 if state == "nicht anwendbar" and not found:
                     errors.append(cid + ": inapplicability needs checked fact basis")
+        elif product_assessment(row):
+            pid = row.get("product_id")
+            if output.get("role") != "positioning" or inventory is None or pid not in product_ids:
+                errors.append(cid + ": product assessment needs delegated portfolio product")
+            if pid in assessed_products:
+                errors.append(cid + ": duplicate product assessment")
+            assessed_products.add(pid)
+            if row.get("method_id") != PORTFOLIO_METHOD or row.get("section") != "portfolio":
+                errors.append(cid + ": product assessment needs canonical portfolio method/section")
+            if any(d not in claims for d in row.get("depends_on", [])):
+                errors.append(cid + ": product maturity must reference checked facts directly")
+            score, state = row.get("score"), row.get("assessment_status")
+            if state == "bewertet":
+                if not isinstance(score, int) or isinstance(score, bool) or str(score) not in PORTFOLIO_STAGES:
+                    errors.append(cid + ": product maturity must be an integer from 1 to 6")
+                if not found or not text(row.get("next_stage_limit")):
+                    errors.append(cid + ": rated product needs fact basis and next-stage limit")
+                product = next((p for p in inventory.get('products', []) if p['id'] == pid), None) if inventory else None
+                if product and not set(row.get('depends_on', [])) & set(product['claim_ids']):
+                    errors.append(cid + ": rated product must reference its own product facts")
+            elif state == "nicht eindeutig bestimmbar":
+                if score is not None or not text(row.get("coverage_note")):
+                    errors.append(cid + ": unassessed product needs null score and coverage_note")
+            else:
+                errors.append(cid + ": invalid product assessment_status")
         elif not found:
             errors.append(cid + ": interpretation has no checked fact basis")
-        if "score" in row:
+        if "score" in row and not product_assessment(row):
             method = methods.get(row.get("method_id"))
             key = str(row["score"])
             if method is None or key not in method["anchors"] or row.get("type") != method["assessment_type"] or not text(row.get("subject")):
@@ -399,6 +471,8 @@ def validate_output(manifest, facts, review, context, output,
         expected = {(p, c) for p in peers for c in criteria}
         if pairs != expected:
             errors.append("matrix must cover each peer/criterion exactly once")
+    if inventory is not None and output.get("role") == "positioning" and assessed_products != product_ids:
+        errors.append("portfolio must cover each product exactly once")
     if any(n > 3 for n in categories.values()):
         errors.append("SWOT permits at most three points per quadrant")
     requests = output.get("research_requests")
@@ -439,6 +513,7 @@ def merge_reports(reports):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--prepare", action="store_true")
+    parser.add_argument("--portfolio", action="store_true", help="Include compact product inventory in positioning context")
     parser.add_argument("--merge-validation", nargs="+")
     for name in ("manifest", "facts", "review", "context", "output", "plan", "market",
                  "positioning", "positioning-context", "out"):
@@ -460,7 +535,7 @@ def main():
                              read(args.market) if args.market else None,
                              read(args.positioning) if args.positioning else None,
                              read(args.positioning_context) if args.positioning_context else None,
-                             args.interpretation_ids)
+                             args.interpretation_ids, include_portfolio=args.portfolio)
             summary = {"prepared_claims": len(result["facts"]),
                        "prepared_interpretations": len(result["interpretations"]),
                        "pending_checks": result["pending_checks"]}

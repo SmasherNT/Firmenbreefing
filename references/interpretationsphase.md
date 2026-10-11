@@ -60,7 +60,9 @@ Jeder Peer/Kriterium-Paarung genau eine Zelle zuordnen, kein Auslassen schwacher
 oder fehlender Evidenz. peer_ids, criteria und plan_fingerprint bleiben fest.
 Höchste vollständig belegte Stufe begründen; auch erklären, warum die nächsthöhere
 nicht belegt ist. Ordinale Scores nicht zu Gesamt-Ranglisten mitteln/addieren.
-Andere numerische Bewertungen (Produktreife/regionale Präsenz) nur bei vorab
+Portfolio-Reife im Vollbriefing nach portfolio-darstellung.md: feste Methode
+portfolio-maturity-v1, genau eine Einordnung pro delegiertem Produkt.
+Andere numerische Bewertungen (z. B. regionale Präsenz) nur bei vorab
 definierter assessment_methods im Vergleichsplan mit id, assessment_type,
 anchors und applicability. Methode method_id und bewertetes subject nennen.
 Ohne passende Methode qualitative Einordnung liefern, keinen Score erfinden.
@@ -110,7 +112,7 @@ Datei, damit Änderungen gegenüber dem delegierten Snapshot erkannt werden.
 
 ```bash
 python3 scripts/stamp-review.py --draft <review-basis-draft.json> --validation <facts-validation.json> --out <review-basis.md>
-python3 scripts/check-interpretation.py --prepare --manifest <facts-run.json> --facts <review-packet.json> --review <review-basis.md> --plan <comparison-plan.json> --market <market-facts.json> --out <positioning-context.json>
+python3 scripts/check-interpretation.py --prepare --portfolio --manifest <facts-run.json> --facts <review-packet.json> --review <review-basis.md> --plan <comparison-plan.json> --market <market-facts.json> --out <positioning-context.json>
 python3 scripts/check-interpretation.py --manifest <facts-run.json> --facts <review-packet.json> --review <review-basis.md> --context <positioning-context.json> --output <positioning.json> --plan <comparison-plan.json> --out <positioning-validation.json>
 python3 scripts/check-interpretation.py --prepare --manifest <facts-run.json> --facts <review-packet.json> --review <review-basis.md> --positioning <positioning.json> --positioning-context <positioning-context.json> --plan <comparison-plan.json> --interpretation-ids <relevante I-IDs...> --claim-ids <weitere relevante Fakten-IDs...> --out <swot-context.json>
 python3 scripts/check-interpretation.py --manifest <facts-run.json> --facts <review-packet.json> --review <review-basis.md> --context <swot-context.json> --output <swot.json> --positioning <positioning.json> --positioning-context <positioning-context.json> --plan <comparison-plan.json> --out <swot-validation.json>

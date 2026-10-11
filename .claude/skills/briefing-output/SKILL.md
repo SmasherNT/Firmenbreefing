@@ -9,6 +9,8 @@ Explizite Markdown-Modultests nach references/legacy-html-output.md durchführen
 1. V2-Dateien desselben Laufs an scripts/render-briefing.py übergeben.
    Vollständiges Firmenbriefing: --full. Aufruf in der Referenz.
    Vorlage und JavaScript nicht als Standard in den Modellkontext laden.
+   Feste vier Seiten und Portfolio nach references/portfolio-darstellung.md;
+   Profile standardmäßig vollständig eingeklappt. Keine firmenspezifische Vorlage.
 2. Fehler gezielt an zuständige Fakten-/Interpretations-/Prüfrolle geben;
    keine fremden Dateien korrigieren oder Prüfbarrieren umgehen.
    Keine finale HTML bei Materialfehlern, veralteten Reviews, blockierenden Fragen.
