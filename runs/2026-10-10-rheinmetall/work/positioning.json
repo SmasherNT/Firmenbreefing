@@ -6,8 +6,8 @@
  "company": "Rheinmetall AG",
  "as_of": "2026-10-10",
  "scope": "Positionierung Rheinmetall Flugabwehr und Marktzugang Golfstaaten (GCC) auf Basis der geprüften A-Fakten; Capability Matrix nach Vergleichsplan v1 (8 Peers x 6 Kriterien)",
- "status": "teilweise",
- "input_fingerprint": "168913c7c58b760efc6969fcc7938f371c3b088acd1276e9a55d6077752a98a6",
+ "status": "vollständig",
+ "input_fingerprint": "de73d4a54f1ec2bf0eb6a054e19169b8d47cf4e5e8abfee2ef0c4f20b53236e3",
  "interpretations": [
   {
    "id": "I-ES-01",
@@ -623,7 +623,8 @@
    "section": "matrix",
    "depends_on": [
     "M-PEER-EOS-01",
-    "M-PEER-EOS-03"
+    "M-PEER-EOS-03",
+    "M-PEER-EOS-04"
    ],
    "reasoning": "Stufe 1: EOS bezeichnet Slinger als Drohnenabwehr-Waffensystem. Stufe 2 nicht belegt, da kein Test-/Demonstrationsbericht in den geprüften Fakten; der VAE-Auftrag geht an Gen5 Holding und nicht ausdrücklich an Streitkräfte (Stufe 4).",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1)",
@@ -635,18 +636,21 @@
    "type": "matrix_cell",
    "peer_id": "eos_slinger",
    "criterion_id": "procurement_status",
-   "cell_status": "weitere Faktenprüfung nötig",
-   "value": null,
-   "statement": "Der Beschaffungsstatus von Slinger bei staatlichen Kunden ist ohne Klärung des Kundenstatus nicht einstufbar.",
+   "cell_status": "bewertet",
+   "value": "3",
+   "statement": "Für Slinger sind Aufträge in staatlich beschafften bzw. finanzierten Programmen berichtet, aber keine Lieferung an einen staatlichen Kunden.",
    "section": "matrix",
    "depends_on": [
+    "M-PEER-EOS-05",
+    "M-PEER-EOS-07",
+    "M-PEER-EOS-06",
     "M-PEER-EOS-01",
-    "M-PEER-EOS-03"
+    "M-PEER-EOS-04"
    ],
-   "reasoning": "Ein Vertrag (124 Mio. USD) besteht mit Gen5 Holding, deren Einstufung als staatlicher Kunde nicht belegt ist; die Ukraine-Lieferung 2023 ist nur angekündigt. Stufe 3 (staatlicher Kunde) und 4 (berichtete Lieferung) sind daher offen, Stufe 1 (ohne Kundenvertrag) unzutreffend.",
+   "reasoning": "Stufe 3: Northrop Grumman bestellte laut EOS-Zitat zunächst drei Slinger für das US-DoD-Programm 30mm gun trucks (US-Sicherheitshilfe Ukraine); zudem ein von einer westeuropäischen Regierung finanzierter Marineauftrag über einen Integrator. Beide sind Unterauftragsketten staatlicher Beschaffung (vergleichbar mit Unterauftragnehmerrollen anderer Peers); der VAE-Auftrag über Gen5 trägt die Stufe nicht, weil deren staatlicher Status unbelegt ist.",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1)",
-   "uncertainty": "Siehe research_request RR-02.",
-   "coverage_note": "Vertrag mit Gen5 Holding belegt, Einstufung als staatlicher Kunde offen; Ukraine-Lieferung 2023 nur angekündigt. Klärung über RR-02."
+   "uncertainty": "Kein direkter Staatsvertrag; Bestellungen nur laut Hersteller/Herstellerzitat; Angaben zu 110 Ukraine-Systemen widersprüchlich und nicht verwendet.",
+   "next_stage_limit": "Stufe 4 nicht belegt: Weder für die Ukraine-Bestellungen noch für den Marineauftrag oder die VAE-Bestellung ist eine Lieferung/Einführung in den geprüften Fakten bestätigt (VAE-Lieferung erst 2027–2028)."
   },
   {
    "id": "I-MX-16",
@@ -659,11 +663,12 @@
    "section": "matrix",
    "depends_on": [
     "M-PEER-EOS-01",
-    "M-PEER-EOS-02"
+    "M-PEER-EOS-02",
+    "M-PEER-EOS-04"
    ],
    "reasoning": "Stufe 3: Auftrag der VAE-Gen5 Holding über Slinger, dazu ein bedingter 370-Mio.-GBP-Vertrag mit einem ungenannten GCC-Staat. Stufe 4/5 nicht belegt: Lieferung erst 2027–2028 und JV/VAE-Fertigung nur bedingt vereinbart.",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1)",
-   "uncertainty": "Exportgenehmigungen und Vertragsbedingungen offen.",
+   "uncertainty": "Exportgenehmigungen und Vertragsbedingungen offen; Gen5 ist laut EOS VAE-eigenes Unternehmen, staatlicher Endnutzer unbelegt.",
    "next_stage_limit": "Stufe 4 nicht belegt: Lieferung erst 2027–2028 geplant; Stufe 5 nicht belegt, da JV/VAE-Fertigung nur bedingt vereinbart."
   },
   {
@@ -1227,16 +1232,6 @@
    "blocking": false
   },
   {
-   "id": "RR-02",
-   "target_role": "market",
-   "question": "Ist Generation 5 Holding (Abu Dhabi) staatlicher Kunde oder handelt sie für VAE-Streitkräfte, und ist die Lieferung von zehn Slinger an die Ukraine (2023) bestätigt? Benötigt für Matrixzelle eos_slinger/procurement_status (derzeit weitere Faktenprüfung nötig).",
-   "related_claim_ids": [
-    "M-PEER-EOS-01",
-    "M-PEER-EOS-03"
-   ],
-   "blocking": false
-  },
-  {
    "id": "RR-03",
    "target_role": "market",
    "question": "Gibt es eine Bestätigung durch ASELSAN, Saudi-Arabien, Katar oder Kuwait zu den berichteten Korkut-Verträgen bzw. dem Regierungsprotokoll?",
@@ -1296,7 +1291,7 @@
   "Nicht öffentlich belegt bedeutet Datenlücke, keine fehlende Fähigkeit oder Schwäche.",
   "Viele Golfaufträge werden ohne Kundennennung gemeldet; Länderzuordnungen aus Fachmedien sind entsprechend gekennzeichnet.",
   "Lagezahlen zum Iran-Konflikt sind amtliche oder mediale Angaben ohne unabhängige Verifikation; Konfliktstatus zum Stichtag offen.",
-  "Status teilweise: eine Matrixzelle (eos_slinger/procurement_status) benötigt weitere Faktenprüfung; Köhnes Funktion nicht primär bestätigt."
+  "Offene, nicht blockierende Prüffragen (research_requests) betreffen u. a. Köhnes nicht primär bestätigte Funktion, ungenannte Golfkunden und den Werksbetrieb RADARABIA/RBAT."
  ],
  "plan_fingerprint": "fd6190aa4fb41f10fd21c1ddf814814785d979d6dec9bd4184e173056c3a1373"
 }
