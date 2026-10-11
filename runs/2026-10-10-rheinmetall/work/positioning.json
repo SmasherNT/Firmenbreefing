@@ -80,13 +80,13 @@
     "M-QAT-BARZAN-01",
     "T-CTX-22"
    ],
-   "reasoning": "Medien-/Amtszählungen nennen bis Juni 2026 rund 7.000 Angriffe, überwiegend mit Drohnen, mit Schwerpunkt VAE. Sichtbare Beschaffung läuft über US-FMS (Coyote/FS-LIDS, NASAMS), EOS meldet VAE- und GCC-Aufträge, EDGE und Barzan bieten eigene C-UAS-Lösungen; Rheinmetall bestätigte verstärkte Anfragen.",
+   "reasoning": "Medien-/Amtszählungen nennen bis Juni 2026 rund 7.000 Angriffe, überwiegend mit Drohnen, mit Schwerpunkt VAE. Sichtbare Beschaffung läuft über US-FMS (Coyote/FS-LIDS, NASAMS), EOS meldet VAE- und GCC-Aufträge, EDGE bietet eigene Soft-Kill-Systeme (laut CEO in den VAE eingesetzt) und Barzan ein eigenes C-UAS-System; Rheinmetall bestätigte verstärkte Anfragen.",
    "method": "Ableitung Nachfragetreiber und Wettbewerbsfeld aus Markt-A-Fakten",
    "uncertainty": "Lagezahlen amtlich/medial, nicht unabhängig verifiziert; Konfliktstatus zum Stichtag nicht abschließend belegt. Korkut-Golfverträge nur anonym berichtet und daher hier nicht als Beleg verwendet."
   },
   {
    "id": "I-ES-05",
-   "statement": "Für Golflieferungen ist der Exportrahmen ein Kernfaktor: Deutschland hat Luftverteidigungsexporte in die GCC-Staaten befristet bis 15.09.2027 erleichtert, während der Schweizer Rahmen für den Zürcher Flugabwehrstandort offen ist.",
+   "statement": "Für Golflieferungen ist der Exportrahmen ein Kernfaktor: Deutschland hat die Ausfuhr bestimmter Güter der Luft- und Seeverteidigung in die GCC-Staaten befristet bis 15.09.2027 erleichtert, während der Schweizer Rahmen für den Zürcher Flugabwehrstandort offen ist.",
    "section": "executive_summary",
    "depends_on": [
     "M-DEU-EXPORT-01",
@@ -159,7 +159,7 @@
   },
   {
    "id": "I-FA-03",
-   "statement": "Industrielle Skalierung ist ein zentrales Verkaufsargument, beruht aber überwiegend auf Ausbauzielen; belegt sind ein verteiltes Fertigungsnetz (Deutschland, Schweiz, Italien) und ein wachsender Personalstamm.",
+   "statement": "Industrielle Skalierung ist ein zentrales Verkaufsargument, beruht aber überwiegend auf Ausbauzielen; belegt sind Fertigungs-/Generalunternehmerrollen in der Schweiz und Italien und ein wachsender Personalstamm.",
    "section": "topic:flugabwehr",
    "depends_on": [
     "P-CAP-01",
@@ -170,7 +170,7 @@
     "T-CTX-09",
     "P-GCC-02"
    ],
-   "reasoning": "Rheinmetall nennt 70–100 Skyranger-Türme pro Jahr heute und bis zu 400 als Ziel, verteilt auf Neuss, Schweiz und Italien; Zürich führt Skyguard NG aus, Rheinmetall Italia ist Generalunternehmer bei Skynex/Skyranger 35. Das Segment wuchs auf 1.780 FTE; laut CEO wird für den Nahen Osten bereits ohne Vertrag produziert.",
+   "reasoning": "Rheinmetall nennt 70–100 Skyranger-Türme pro Jahr heute und bis zu 400 als Ziel, im Plan verteilt auf Neuss, Schweiz und Italien; Zürich führt Skyguard NG aus, Rheinmetall Italia ist Generalunternehmer bei Skynex/Skyranger 35. Das Segment wuchs auf 1.780 FTE; laut CEO wird für den Nahen Osten bereits ohne Vertrag produziert.",
    "method": "Qualitative Kapazitätseinordnung Ist vs. Plan",
    "uncertainty": "Kapazitätswerte sind Herstellerziele ohne unabhängigen Ist-Nachweis."
   },
@@ -232,7 +232,7 @@
   },
   {
    "id": "I-GS-03",
-   "statement": "Im kanonen- und C-UAS-Segment wächst der Wettbewerb durch Anbieter mit expliziten Lokalisierungsangeboten, während US-FMS die lenkflugkörperbasierte Schicht dominiert.",
+   "statement": "Im kanonen- und C-UAS-Segment wächst der Wettbewerb durch Anbieter mit expliziten Lokalisierungsangeboten, während US-FMS-Lösungen in der öffentlich sichtbaren lenkflugkörperbasierten Beschaffung stark vertreten sind.",
    "section": "topic:golfstaaten",
    "depends_on": [
     "M-PEER-EOS-01",
@@ -246,9 +246,9 @@
     "M-UAE-EDGE-03",
     "M-QAT-BARZAN-01"
    ],
-   "reasoning": "EOS kombiniert den VAE-Slinger-Auftrag mit Fertigung in den VAE und einem bedingten 50/50-JV; Raytheon Emirates plant lokale Coyote-Montage; EDGE und Barzan bieten eigene C-UAS-Systeme. NASAMS-Verträge mit Kuwait und Katar sowie FS-LIDS-Genehmigungen zeigen die starke Stellung der US-Lieferkette.",
+   "reasoning": "EOS kombiniert den VAE-Slinger-Auftrag mit Fertigung in den VAE und einem bedingten 50/50-JV; Raytheon Emirates plant lokale Coyote-Montage; EDGE bietet eigene Soft-Kill-Systeme und Barzan ein eigenes C-UAS-System. NASAMS-Verträge mit Kuwait und Katar sowie FS-LIDS-Genehmigungen zeigen die starke Stellung der US-Lieferkette.",
    "method": "Wettbewerbsfeld nach Peer-Gruppen gemäß Vergleichsplan",
-   "uncertainty": "Viele Wettbewerbsangaben sind Hersteller- bzw. Genehmigungsdaten ohne Vertrags-/Lieferbeleg; ASELSAN-Golfverträge nur anonym berichtet und daher nicht berücksichtigt."
+   "uncertainty": "Viele Wettbewerbsangaben sind Hersteller- bzw. Genehmigungsdaten ohne Vertrags-/Lieferbeleg; ASELSAN-Golfverträge nur anonym berichtet und daher nicht berücksichtigt. Marktanteile sind nicht öffentlich belegt."
   },
   {
    "id": "I-GS-04",
@@ -281,9 +281,9 @@
     "M-RHM-GULF-01",
     "M-UAE-ACCESS-01"
    ],
-   "reasoning": "Rheinmetall nennt Large replacement projects in MENA unter den Top-Projekten und verhandelt laut CEO über erste Lieferungen; Saudi-Arabien und Kuwait betreiben Skyguard-Systeme, und in den VAE erhält die Luftverteidigung traditionell den größten Beschaffungsanteil. Diese Kombination spricht für Nachrüst- und Erweiterungsgeschäft auf Basis der installierten Oerlikon-Basis.",
+   "reasoning": "Rheinmetall nennt Large replacement projects in MENA unter den Top-Projekten und verhandelt laut CEO über erste Lieferungen; Saudi-Arabien betreibt Skyguard 3 (SPA-Foto), für Kuwait liegt nur eine Herstellermeldung von 2013 zu Skyguard-Betrieb vor, und in den VAE erhält die Luftverteidigung traditionell den größten Beschaffungsanteil. Diese Kombination spricht für Nachrüst- und Erweiterungsgeschäft auf Basis der installierten Oerlikon-Basis.",
    "method": "Interpretation aus Bestandsdaten und Unternehmensplanung",
-   "uncertainty": "MENA-Projekte nicht einzeln benannt; Lieferungen ab August 2026 sind Ankündigung ohne öffentlichen Vollzugsnachweis."
+   "uncertainty": "MENA-Projekte nicht einzeln benannt; Kuwait-Bestand nur Herstellerangabe 2013, aktueller Stand unbelegt; Lieferungen ab August 2026 sind Ankündigung ohne Vollzugsnachweis."
   },
   {
    "id": "I-GS-06",
@@ -298,7 +298,7 @@
     "C-GCC-12",
     "P-SKX-11"
    ],
-   "reasoning": "Der Bundesrat lässt bestehende Bewilligungen prüfen und erteilt keine neuen an konfliktbeteiligte Länder; 2025 gingen dennoch Schweizer Kriegsmaterialexporte an fünf GCC-Staaten (ohne VAE). Rheinmetall Waffe Munition (Schweiz) ist am Q2-2026-Skynex-Auftrag beteiligt, Papperger kritisiert die Schweizer Exportgesetzgebung.",
+   "reasoning": "Der Bundesrat lässt seit März 2026 bestehende Bewilligungen prüfen und erteilt keine neuen an konfliktbeteiligte Länder; die SECO-Statistik 2025 (vor diesem Entscheid) weist Kriegsmaterialexporte an fünf GCC-Staaten (ohne VAE) aus. Rheinmetall Waffe Munition (Schweiz) ist am Q2-2026-Skynex-Auftrag beteiligt, Papperger kritisiert die Schweizer Exportgesetzgebung.",
    "method": "Regulatorische Risikoeinordnung",
    "uncertainty": "SECO-Statistik ohne Hersteller-/Güterzuordnung; Einstufung der Golfstaaten nicht öffentlich."
   },
@@ -347,7 +347,9 @@
     "C-GCC-02",
     "C-GCC-01",
     "C-GCC-07",
-    "C-GCC-14"
+    "C-GCC-14",
+    "M-PEER-EOS-01",
+    "M-PEER-EOS-02"
    ],
    "reasoning": "In Deutschland arbeitet Rheinmetall in der ARGE NNbS mit Diehl und Hensoldt und bezieht SPEXER-Radare von Hensoldt; im Golf mit EDGE/HALCON, MAZ (RADARABIA) und Barzan (RBAT). Andreas Schwer, früher Rheinmetall International und SAMI, führt heute EOS, das mit Slinger und NiDAR im Golf konkurriert.",
    "method": "Netzwerkanalyse (Eigentum, Projekte, Personen getrennt)",
@@ -355,7 +357,7 @@
   },
   {
    "id": "I-RG-01",
-   "statement": "Regional verlagert sich der Absatzschwerpunkt Flugabwehr: Europa trägt die benannten Aufträge, Nahost/Golf ist laut Unternehmen ein großes Ersatz- und Erweiterungspotenzial mit eigenen Zugangsbedingungen.",
+   "statement": "Regional ist Europa der öffentlich belegte Auftragsschwerpunkt des Flugabwehrgeschäfts; Nahost/Golf nennt das Unternehmen als großes Ersatz- und Erweiterungspotenzial mit eigenen Zugangsbedingungen.",
    "section": "regions",
    "depends_on": [
     "C-KD-04",
@@ -365,9 +367,9 @@
     "M-SAU-BUDGET-01",
     "T-CTX-02"
    ],
-   "reasoning": "Der Auslandsanteil des Konzernumsatzes liegt bei 62 %; Air-Defence-Aufträge 2026 betrafen einen europäischen und einen internationalen Kunden. Saudi-Arabien ist mit geschätzt 83,2 Mrd. USD Militärausgaben 2025 größter Nahost-Ausgeber.",
+   "reasoning": "Benannte Air-Defence-Aufträge und Lieferungen 2025/2026 betreffen europäische Kunden, hinzu kommt ein ungenannter internationaler Kunde; MENA-Ersatzprojekte führt Rheinmetall als Top-Projekt, ohne Einzelbenennung. Saudi-Arabien ist mit geschätzt 83,2 Mrd. USD Militärausgaben 2025 größter Nahost-Ausgeber; der Konzern-Auslandsanteil liegt bei 62 %.",
    "method": "Regionale Einordnung",
-   "uncertainty": "Budgets VAE/Katar/Bahrain nicht belastbar öffentlich."
+   "uncertainty": "Kein belegter Trend einer Schwerpunktverlagerung; Budgets VAE/Katar/Bahrain nicht belastbar öffentlich."
   },
   {
    "id": "I-MX-01",
@@ -480,8 +482,8 @@
    "peer_id": "rheinmetall_skynex_skyranger",
    "criterion_id": "production_capacity",
    "cell_status": "bewertet",
-   "value": "Fertigung in Deutschland (Neuss), Schweiz (Zürich) und Italien (Rheinmetall Italia, Rom); Skyranger-Kapazität heute 70–100 Türme/Jahr mit Ziel bis 400; Mittelkalibermunition laut CEO auf vier Mio. Schuss gesteigert; Nahost-Systeme laut CEO bereits ohne Vertrag in Produktion",
-   "statement": "Rheinmetall verfügt über ein Mehrländer-Fertigungsnetz mit erklärtem Kapazitätsausbau.",
+   "value": "Belegte Fertigungs-/Generalunternehmerstandorte Zürich (Rheinmetall Air Defence AG) und Rom (Rheinmetall Italia); Skyranger-Kapazität heute 70–100 Türme/Jahr, Ausbauplan bis 400 verteilt auf Neuss (100), Schweiz (150) und Italien (150) laut CEO; Mittelkalibermunition laut CEO auf vier Mio. Schuss gesteigert; Nahost-Systeme laut CEO bereits ohne Vertrag in Produktion",
+   "statement": "Rheinmetall stützt die Lieferfähigkeit auf Standorte in der Schweiz und Italien und einen geplanten Kapazitätsausbau unter Einbezug von Neuss.",
    "section": "matrix",
    "depends_on": [
     "P-CAP-01",
@@ -624,12 +626,14 @@
    "depends_on": [
     "M-PEER-EOS-01",
     "M-PEER-EOS-03",
-    "M-PEER-EOS-04"
+    "M-PEER-EOS-04",
+    "M-PEER-EOS-05",
+    "M-PEER-EOS-06"
    ],
-   "reasoning": "Stufe 1: EOS bezeichnet Slinger als Drohnenabwehr-Waffensystem. Stufe 2 nicht belegt, da kein Test-/Demonstrationsbericht in den geprüften Fakten; der VAE-Auftrag geht an Gen5 Holding und nicht ausdrücklich an Streitkräfte (Stufe 4).",
+   "reasoning": "Stufe 1 nach Regel (b)/(c): EOS bezeichnet Slinger als Counter-Drone-Waffensystem (VAE-Auftrag). Stufe 4 nicht erreicht: Der Gen5-Auftrag ist keine belegte Streitkräftebeschaffung (staatlicher Status unbelegt), und die über Northrop Grumman beschafften Ukraine-Systeme werden im A-Fakt nicht ausdrücklich für C-UAS beschafft; die Bestellung zählt daher nur bei procurement_status (Regel a).",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1)",
-   "uncertainty": "Ukraine-Lieferung 2023 nur angekündigt, kein Einsatzbericht.",
-   "next_stage_limit": "Stufe 2 nicht belegt: kein dokumentierter Hersteller-Test; Stufe 4 offen, da der VAE-Auftrag an Gen5 Holding und nicht ausdrücklich an Streitkräfte geht."
+   "uncertainty": "Ukraine-Lieferungen nur angekündigt bzw. unbestätigt, kein Einsatzbericht.",
+   "next_stage_limit": "Stufe 2 nicht belegt: kein dokumentierter Hersteller-Test; Stufe 3 nicht belegt, da die berichteten ukrainischen Erprobungsberichte (M-PEER-EOS-06) widersprüchlich und ohne ausdrücklichen C-UAS-Bezug sind."
   },
   {
    "id": "I-MX-15",
@@ -647,7 +651,7 @@
     "M-PEER-EOS-01",
     "M-PEER-EOS-04"
    ],
-   "reasoning": "Stufe 3: Northrop Grumman bestellte laut EOS-Zitat zunächst drei Slinger für das US-DoD-Programm 30mm gun trucks (US-Sicherheitshilfe Ukraine); zudem ein von einer westeuropäischen Regierung finanzierter Marineauftrag über einen Integrator. Beide sind Unterauftragsketten staatlicher Beschaffung (vergleichbar mit Unterauftragnehmerrollen anderer Peers); der VAE-Auftrag über Gen5 trägt die Stufe nicht, weil deren staatlicher Status unbelegt ist.",
+   "reasoning": "Stufe 3 nach Regel (a): Northrop Grumman bestellte laut EOS-Zitat zunächst drei Slinger für das US-DoD-Programm 30mm gun trucks (US-Sicherheitshilfe Ukraine), zudem ein von einer westeuropäischen Regierung finanzierter Marineauftrag über einen Integrator; beide sind als Herstellerangaben gekennzeichnet (Regel b). Der Gen5-Auftrag trägt die Stufe nicht, da dessen staatlicher Status unbelegt ist.",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1)",
    "uncertainty": "Kein direkter Staatsvertrag; Bestellungen nur laut Hersteller/Herstellerzitat; Angaben zu 110 Ukraine-Systemen widersprüchlich und nicht verwendet.",
    "next_stage_limit": "Stufe 4 nicht belegt: Weder für die Ukraine-Bestellungen noch für den Marineauftrag oder die VAE-Bestellung ist eine Lieferung/Einführung in den geprüften Fakten bestätigt (VAE-Lieferung erst 2027–2028)."
@@ -1013,14 +1017,15 @@
    "peer_id": "edge_skyknight_skyshield",
    "criterion_id": "system_profile",
    "cell_status": "bewertet",
-   "value": "SKYKNIGHT (HALCON): Flugabwehrflugkörper bis 10 km laut Hersteller, Containerstarter mit 60 Flugkörpern, für Skynex-Batterie entwickelt; SKYSHIELD: Soft-Kill-C-UAS (Störsender/Spoofer)",
-   "statement": "EDGE kombiniert einen für Skynex entwickelten Flugkörper mit eigener elektronischer Drohnenabwehr.",
+   "value": "SKYKNIGHT (HALCON): Flugabwehr-/C-RAM-Flugkörper bis 10 km laut Hersteller, Containerstarter mit 60 Flugkörpern, für Skynex-Batterie entwickelt; SKYSHIELD: Soft-Kill-System (Störsender/Spoofer) laut EDGE-CEO, Zielspektrum in den geprüften Fakten nicht ausdrücklich genannt",
+   "statement": "EDGE kombiniert einen für Skynex entwickelten Flugkörper mit eigener elektronischer Soft-Kill-Abwehr.",
    "section": "matrix",
    "depends_on": [
     "M-UAE-EDGE-01",
     "M-UAE-EDGE-02",
     "M-UAE-EDGE-03",
-    "P-SKN-01"
+    "P-SKN-01",
+    "C-TI-05"
    ],
    "reasoning": "Profil aus EDR, Janes und Breaking Defense.",
    "method": "Profil, qualitative Beschreibung ohne Rangfolge",
@@ -1031,17 +1036,18 @@
    "type": "matrix_cell",
    "peer_id": "edge_skyknight_skyshield",
    "criterion_id": "cuas_evidence",
-   "cell_status": "bewertet",
-   "value": "1",
-   "statement": "Für EDGE-C-UAS liegt öffentlich nur eine Herstelleraussage vor.",
+   "cell_status": "nicht öffentlich belegt",
+   "value": null,
+   "statement": "Eine ausdrückliche C-UAS-Evidenz für EDGE-Systeme ist in den geprüften Fakten nicht belegt.",
    "section": "matrix",
    "depends_on": [
-    "M-UAE-EDGE-03"
+    "M-UAE-EDGE-03",
+    "P-SKN-01"
    ],
-   "reasoning": "Stufe 1: Der EDGE-CEO beschreibt SKYSHIELD als im Konflikt eingesetzte Soft-Kill-Drohnenabwehr. Höhere Stufen nicht belegt, da weder ein dokumentierter Test noch ein Kunden-/Behörden- oder unabhängiger Einsatzbericht vorliegt; SkyKnight-Testschüsse betreffen keine dokumentierte UAS-Bekämpfung.",
+   "reasoning": "Nach Regel (b)/(c) zählt die CEO-Aussage zum Soft-Kill-Einsatz (Störsender/Spoofer) der VAE bei procurement_status/gulf_access als Einführung laut Hersteller, nennt aber keinen ausdrücklichen Drohnenabwehrzweck; SKYKNIGHT ist als C-RAM-Flugkörper beschrieben und noch nicht im Dienst. Damit ist keine Stufe ab 1 durch einen A-Fakt mit ausdrücklicher C-UAS-Angabe gedeckt; keine Aussage über fehlende Fähigkeit.",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1)",
-   "uncertainty": "CEO-Aussage nicht unabhängig verifiziert.",
-   "next_stage_limit": "Stufe 2 nicht belegt: kein dokumentierter C-UAS-Test; Einsatzaussage stammt nur vom Hersteller, Stufe 5 verlangt Kunde/Behörde oder unabhängige Quelle."
+   "uncertainty": "Datenlücke im Wortlaut der Belege, kein Nachweis fehlender C-UAS-Fähigkeit.",
+   "coverage_note": "Geprüfte Fakten nennen Soft-Kill-Einsatz in den VAE nur laut EDGE-CEO ohne ausdrückliches Zielspektrum; kein A-Fakt mit C-UAS-Angabe zu SKYSHIELD (Klärung RR-08)."
   },
   {
    "id": "I-MX-39",
@@ -1057,7 +1063,7 @@
     "M-UAE-EDGE-02",
     "P-SKN-03"
    ],
-   "reasoning": "Stufe 4: Laut EDGE-CEO setzten die VAE SKYSHIELD ein. Stufe 5 nicht belegt (nur ein Kunde); SKYKNIGHT allein läge nur bei Herstellertests ohne Kundenvertrag (Qualifikation Ende 2027 erwartet).",
+   "reasoning": "Stufe 4 nach Regel (b): Laut EDGE-CEO setzten die VAE EDGE-Soft-Kill-Systeme (u. a. SKYSHIELD) im Konflikt ein; als Herstelleraussage gekennzeichnet, gleiche Wertung wie bei anderen Peers. SKYKNIGHT allein läge nur bei Herstellertests ohne Kundenvertrag (Qualifikation Ende 2027 erwartet).",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1)",
    "uncertainty": "Stufe beruht ausschließlich auf CEO-Aussage; Peer bündelt zwei Produkte.",
    "next_stage_limit": "Stufe 5 nicht belegt: Einführung nur bei einem Kunden (VAE) laut Hersteller; SKYKNIGHT noch in Qualifikation."
@@ -1074,7 +1080,7 @@
    "depends_on": [
     "M-UAE-EDGE-03"
    ],
-   "reasoning": "Stufe 4: Betrieb von SKYSHIELD in den VAE laut EDGE-CEO. Stufe 5 nicht vollständig belegt: Integration von EDGE-Sensoren in katarische Systeme ist angegeben, aber kein Betrieb; die lokale Fertigung der konkreten Systeme ist in den geprüften Fakten nicht ausdrücklich beschrieben.",
+   "reasoning": "Stufe 4 nach Regel (b): Betrieb von EDGE-Soft-Kill-Systemen in den VAE laut EDGE-CEO, als Herstelleraussage gekennzeichnet. Lokale Fertigung der konkreten Systeme und Betrieb in Katar sind in den geprüften Fakten nicht ausdrücklich belegt.",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1)",
    "uncertainty": "Herstelleraussage ohne unabhängigen Nachweis.",
    "next_stage_limit": "Stufe 5 nicht belegt: Katar nur Sensorintegration angegeben, kein Betrieb; lokale Fertigung der konkreten Systeme nicht ausdrücklich belegt."
@@ -1144,9 +1150,9 @@
    "depends_on": [
     "M-QAT-BARZAN-01"
    ],
-   "reasoning": "Stufe 4: Vertrag 2023 mit Katars Luftverteidigungskräften über ein C-UAS-System (Unternehmensangabe). Stufe 5 nicht belegt, da kein Einsatzbericht gegen reale UAS vorliegt.",
+   "reasoning": "Stufe 4 nach Regel (b)/(c): Laut Barzans stellvertretendem CEO schloss Barzan 2023 einen Vertrag mit Katars Luftverteidigungskräften ausdrücklich über ein C-UAS-System; die Stufe beruht allein auf dieser Unternehmensangabe und ist entsprechend gekennzeichnet. Stufe 5 erfordert Kunde/Behörde oder unabhängige Quelle und einen Einsatzbericht, beides fehlt.",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1)",
-   "uncertainty": "Nur Unternehmensaussage, keine Bestätigung durch den Kunden.",
+   "uncertainty": "Nur Unternehmensangabe, keine Bestätigung durch Katars Streitkräfte; Rolle von RBAT/Rheinmetall nicht zugeordnet.",
    "next_stage_limit": "Stufe 5 nicht belegt: kein Einsatzbericht gegen reale UAS."
   },
   {
@@ -1161,7 +1167,7 @@
    "depends_on": [
     "M-QAT-BARZAN-01"
    ],
-   "reasoning": "Stufe 3: Vertrag mit Katars Luftverteidigungskräften (2023). Stufe 4 nicht belegt: System in operativer Erprobung, Auslieferung der vier Systeme erst innerhalb 2027 erwartet.",
+   "reasoning": "Stufe 3: Vertrag mit Katars Luftverteidigungskräften (2023) laut Unternehmensangabe (Regel b). Stufe 4 nicht belegt: System in operativer Erprobung, Auslieferung der vier Systeme erst innerhalb 2027 erwartet.",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1)",
    "uncertainty": "Unternehmensangabe von 2024; aktueller Stand nicht geprüft.",
    "next_stage_limit": "Stufe 4 nicht belegt: System in operativer Erprobung, Auslieferung erst innerhalb 2027 erwartet."
@@ -1178,7 +1184,7 @@
    "depends_on": [
     "M-QAT-BARZAN-01"
    ],
-   "reasoning": "Stufe 5 über die zweite Ankerbedingung: vier Systeme vollständig in Katar produziert für den Vertrag mit Katars Luftverteidigung. Stufe 4 (Lieferung) ist noch nicht belegt; die Stufe spiegelt die Heimatmarktrolle eines regionalen Anbieters, nicht Breite im GCC.",
+   "reasoning": "Stufe 5 wird über den zweiten Pfad des Ankers erreicht (lokale Fertigung mit Kundenbezug): Laut Unternehmensangabe (Regel b) wurden vier Systeme für den Vertrag mit Katars Luftverteidigung vollständig in Katar produziert. Die Lieferstufe 4 ist dabei nicht belegt (Auslieferung innerhalb 2027 erwartet); Anker 5 setzt sie für diesen Pfad nicht voraus, die Stufe spiegelt daher die Heimatmarktrolle, nicht Mehrstaatenbetrieb.",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1)",
    "uncertainty": "Unternehmensangabe; Anker 5 kombiniert zwei Pfade, daher nicht als breiterer Marktzugang als bei Anbietern mit Mehrstaatenbetrieb lesen.",
    "next_stage_limit": "Höchste Ankerstufe 5 erreicht; keine höhere Stufe definiert. Erreicht über lokale Fertigung mit Kundenbezug; Lieferung (Stufe 4) und Mehrstaatenbetrieb nicht belegt."
@@ -1282,12 +1288,22 @@
     "M-QAT-PROG-02"
    ],
    "blocking": false
+  },
+  {
+   "id": "RR-08",
+   "target_role": "market",
+   "question": "Belegt eine geprüfte Quelle ausdrücklich die Drohnenabwehrrolle (Zielspektrum) von EDGE SKYSHIELD bzw. der im Iran-Konflikt in den VAE eingesetzten EDGE-Soft-Kill-Systeme? Relevant für Matrixzelle edge_skyknight_skyshield/cuas_evidence (derzeit nicht öffentlich belegt).",
+   "related_claim_ids": [
+    "M-UAE-EDGE-03"
+   ],
+   "blocking": false
   }
  ],
  "shared_limitations": [
   "Alle Aussagen beruhen ausschließlich auf den geprüften A-Fakten des delegierten Kontexts (Stichtag 10.10.2026); keine eigene Recherche.",
   "Herstellerangaben (Pressemitteilungen, Telefonkonferenzen, CEO-Interviews, Broschüren) belegen die Aussage des Herstellers, nicht unabhängig Vollzug, Einsatz oder Wirksamkeit.",
   "Evidenzstufen zeigen öffentliche Evidenzreife je Kriterium, keine gemessene technische Überlegenheit; sie werden nicht zu einer Gesamt-Rangliste gemittelt oder addiert.",
+  "Einheitliche Bewertungsregel (Matrix): (a) Aufträge innerhalb staatlicher Beschaffung über Haupt- oder Integratorunternehmen (z. B. NASAMS Kuwait über Raytheon/FMS, Rheinmetall Skyranger Österreich über GDELS, EOS Slinger über Northrop Grumman bzw. Marineintegrator) zählen als staatliche Beschaffung; (b) Hersteller-/Unternehmensangaben dürfen Anker tragen, deren Wortlaut keine bestimmte Quellenart verlangt (Vertrag, Beschaffung, berichtete Lieferung/Einführung), werden dann als laut Hersteller gekennzeichnet und für alle Peers und Zellen gleich gewertet; sie tragen nie cuas_evidence-Stufe 5, die Kunde/Behörde oder unabhängige Quelle verlangt; (c) cuas_evidence-Stufe 4 setzt voraus, dass Beschaffung durch Streitkräfte (auch über Haupt-/Integrator) und der C-UAS-Zweck ausdrücklich in einem A-Fakt stehen; jede Stufe ab 1 setzt eine ausdrückliche C-UAS-Angabe im A-Fakt voraus.",
   "Nicht öffentlich belegt bedeutet Datenlücke, keine fehlende Fähigkeit oder Schwäche.",
   "Viele Golfaufträge werden ohne Kundennennung gemeldet; Länderzuordnungen aus Fachmedien sind entsprechend gekennzeichnet.",
   "Lagezahlen zum Iran-Konflikt sind amtliche oder mediale Angaben ohne unabhängige Verifikation; Konfliktstatus zum Stichtag offen.",
