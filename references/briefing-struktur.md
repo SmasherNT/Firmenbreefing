@@ -25,7 +25,7 @@ Wesentliche Widersprüche und öffentliche Lücken auch in Kurzfassung sichtbar.
 Tatsächlich aufgerufene Agenten und deren Dateien benennen.
 Auftragsnormalisierung, Themenabdeckung, Personenstatus, Delegation,
 Reihenfolge, Reviews, geschlossene Fehler, Quellenlinks, interne HTML-Links,
-Mobil-/Druckansicht und Dateisicherung: bestanden/offen/nicht geprüft.
+Desktop-Webansicht/Druckansicht und Dateisicherung: bestanden/offen/nicht geprüft.
 Konfigurationstest allein ist kein durchgeführter Agentenlauf.
 Keine Prüfung als bestanden melden, die nicht tatsächlich durchgeführt wurde.
 

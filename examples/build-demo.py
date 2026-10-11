@@ -34,9 +34,16 @@ def generate(destination):
         source_kind='Herstellerangabe' if p == 'company' else 'Partnerangabe', fictional=True)
         for p, t in [('company', 'Fiktives Produktdokument'),
                      ('partner', 'Fiktive Partneraktivitäten'), ('market', 'Fiktiver Marktvergleich')]]
+    for slug, title, published in [('pilot-update', 'Fiktive Pilotankündigung', '2026-09-02'),
+            ('api-update', 'Fiktive Integrationsdokumentation', '2026-10-05')]:
+        url = 'https://example.org/' + slug
+        sources.append({**sources[0], 'id': FACTS.source_id(url), 'url': url,
+                        'title': title, 'published_date': published})
     rows = [
         ('T1', 'Example Inspection bietet im Testdatensatz industrielle Inspektionssoftware an.', 0),
         ('T2', 'Eine neue Integrationsschnittstelle wurde im Testdatensatz am 01.08.2026 vorgestellt.', 0),
+        ('T3', 'Am 02.09.2026 kündigt der fiktive Hersteller die Vorbereitung eines Kundenpiloten an; eine Umsetzung ist damit nicht belegt.', 3),
+        ('T4', 'Am 05.10.2026 veröffentlicht der fiktive Hersteller eine neue API-Integrationsdokumentation für das Inspection Kit.', 4),
         ('H1', 'Alex Example verantwortet laut fiktivem Profil die industrielle Integration.', 0),
         ('P1', 'Das fiktive Inspection Kit wird als Softwaremodul angeboten.', 0),
         ('P2', 'Example Inspection ist laut Testdatensatz in Europa über einen Integrationspartner vertreten.', 1),
@@ -55,7 +62,7 @@ def generate(destination):
         ('C5', 'Example JV und Test Sensor dokumentieren im Testdatensatz eine Integrationskooperation.', 1),
         ('C6', 'Für das fiktive Joint Venture wird im Testdatensatz industrielle Integration als Gegenstand genannt.', 1)]
     claims = [dict(id=cid, statement=statement,
-        kind='Herstellerangabe' if n == 0 else 'Partnerangabe', source_ids=[sources[n]['id']],
+        kind=sources[n]['source_kind'], source_ids=[sources[n]['id']],
         evidence='Paraphrase: ' + statement, location='Fiktiver Abschnitt ' + cid,
         uncertainty='Synthetischer Test; keine öffentlich recherchierte Aussage') for cid, statement, n in rows]
     by = {r['id']: r for r in claims}
@@ -72,7 +79,9 @@ def generate(destination):
         modules.append(module)
     context, portfolio, cluster, market = modules
     context.update(company_facts=[dict(id='business', label='Industrielle Inspektionssoftware', claim_ids=['T1'])],
-        events=[dict(id='launch', label='Integrationsschnittstelle vorgestellt', date='2026-08-01', claim_ids=['T2'])],
+        events=[dict(id='api-update', label='Neue API-Dokumentation laut Hersteller veröffentlicht', date='2026-10-05', claim_ids=['T4']),
+            dict(id='launch', label='Integrationsschnittstelle vorgestellt', date='2026-08-01', claim_ids=['T2']),
+            dict(id='pilot-update', label='Vorbereitung eines Kundenpiloten angekündigt', date='2026-09-02', claim_ids=['T3'])],
         profile=dict(name='Alex Example', claim_ids=['H1']))
     portfolio.update(products=[dict(id='kit', label='Inspection Kit', claim_ids=['P1'])],
         regions=[dict(id='europe', label='Europa · Partnerpräsenz', claim_ids=['P2'])],

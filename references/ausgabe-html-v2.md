@@ -24,6 +24,11 @@ Keine kopierten Fakten-/Belegtexte pro Zeile.
 | market | regions, topics, peers, observations gemäß Vergleichsvertrag |
 
 events: zusätzlich date (YYYY-MM-DD oder null), kein Abrufdatum als Ereignisdatum.
+Kurzes sachliches label, gegebenenfalls mit „angekündigt“/„laut Hersteller“/
+„laut Medien“. Chronologische Zeitachse mit Datum links und klickbarer Karte
+rechts; Datum unbekannt ausdrücklich zeigen und diese Einträge zuletzt führen.
+Details enthalten vollständige A-Fakten, Aussageursprung, Unsicherheit und direkte
+Originalquellen/Belegstellen. Kein neuer Agent oder zusätzlicher Interpretationstext.
 profile: {name,claim_ids}, nur berufliche H-Claims und nur bei benannter Person.
 regions: optional sections:[{label,claim_ids}] für Unterthemen.
 topics: gleiche id wie manifest.topics[].id; Reihenfolge aus Manifest.
@@ -49,7 +54,7 @@ Matrix, SWOT. Optionale Seiten für Person und Regionen/Märkte. Details & Quell
 immer vorhanden. Unternehmenspräsenz vom allgemeinen Markt getrennt beschriften.
 Summary: feste Highlight-Reihe und kompakte Karten; vertiefbare Dialoge mit
 nativen details als Fallback. Karten und Matrixzellen öffnen Begründung und Originalbelege. Native details,
-mobile Karten, horizontale Matrix und ausgeklappte Druckansicht.
+Desktop-Karten, horizontale Matrix und ausgeklappte Druckansicht.
 Alle Beziehungen in statischer zugänglicher Tabelle auch ohne JavaScript.
 Keine externen Assets/Bibliotheken oder Laufzeit-Netzabfragen.
 Spezielle regionale Zeitreihen/Landkarten/frei entworfene Grafiken sind noch
@@ -78,7 +83,7 @@ Ohne Vergleich --plan weglassen. Explizite reine Fakten-HTML: Interpretationsarg
 und --full weglassen; Basis-Review bleibt erforderlich.
 Ältere Reviews ohne Paket-Snapshot vor Ausgabe um Zuordnungsprüfung ergänzen.
 stamp-review erteilt keine Freigabe.
-Abnahme: Agentenprotokoll/Review, Mechanik, Links/JS und Browser/Mobil/Druck/Filter
+Abnahme: Agentenprotokoll/Review, Mechanik, Links/JS und Desktop-Browser/Druck/Filter
 getrennt prüfen. Fehlende Werkzeuge als nicht geprüft benennen.
 Testbeispiele sind keine öffentliche Unternehmensrecherche.
 

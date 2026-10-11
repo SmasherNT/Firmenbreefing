@@ -57,3 +57,23 @@ Alle Beispielinhalte und Review-Urteile bleiben simuliert; keine echten
 Unternehmensquellen geprüft und kein Token-/Kostenbenchmark durchgeführt.
 Die neue Browserabnahme betrifft die Executive Summary, nicht ein vollständiges
 Redesign oder eine erneute visuelle Abnahme sämtlicher übriger Module.
+
+## Ergänzung 11.10.2026: Aktuelle Entwicklungen
+Kompakte vertikale Zeitachse mit Datum links, kurzer klickbarer Ereigniskarte
+rechts und gemeinsamem Detailfenster. Vollständige A-Fakten, Aussageursprung,
+Unsicherheiten, direkte Originalquellen und Belegstellen bleiben erhalten.
+Bekannte Ereignisse chronologisch, unbekannte Datumsangaben sichtbar zuletzt;
+keine neuen Interpretationen oder zusätzliche Modellrunde. Bestehender events-
+Vertrag bleibt nutzbar. Aktuelle Abnahme und künftige Ausgabeprüfungen richten
+sich auf die Desktop-Webansicht.
+
+- 63 unittest-Tests bestanden, einschließlich Ereignisreihenfolge, offenen Daten,
+  Mehrfachbelegen/Unterabschnitten, Mapping-Review, Escaping und leerer Timeline.
+- Desktop-Chromium bei 1440/1280/1024 Pixeln: Datum/Karte, kompakte Zeilen,
+  Öffnen per Tastatur, vollständige Aussagen, direkte Quellen und Claim-Navigation.
+  Summary mit 4/5/6 Karten, Schließen/Escape/Hintergrund, Druckzustand sowie native
+  Details ohne JavaScript weiterhin gültig; keine Browser-JavaScript-Fehler.
+- Ereignismodul visuell am Desktop kontrolliert; DOM-Laufzeittest, Python-Syntax
+  und quick_validate der beiden geänderten Skills bestanden.
+- Reproduzierbares Beispiel: 21 synthetische Fakten, 15 Interpretationen,
+  drei Ereignisse. Keine echten Quellen geöffnet oder Inhaltsfreigabe behauptet.

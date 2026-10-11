@@ -145,6 +145,53 @@ class RenderTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             RENDER.build(**b)
 
+    def test_events_are_compact_chronological_and_keep_unknown_dates(self):
+        b = facts_only(self.b)
+        b['facts']['module_views'][0]['events'] = [
+            dict(id='later', label='Later announcement', date='2026-10-01', claim_ids=['M1']),
+            dict(id='unknown', label='Date not confirmed', date=None, claim_ids=['M2']),
+            dict(id='earlier', label='Earlier manufacturer report', date='2026-08-01', claim_ids=['M1'])]
+        refresh_basis(b)
+        body = RENDER.build(**b)
+        timeline = body.split('id="current-developments">', 1)[1].split('</section>', 1)[0]
+        self.assertEqual(timeline.count('class="card event-card"'), 3)
+        self.assertLess(timeline.index('Earlier manufacturer report'), timeline.index('Later announcement'))
+        self.assertLess(timeline.index('Later announcement'), timeline.index('Date not confirmed'))
+        self.assertIn('<time datetime="2026-08-01">2026-08-01</time>', timeline)
+        self.assertIn('<time>Datum öffentlich nicht belegt</time>', timeline)
+        self.assertIn('Herstellerangabe', timeline)
+        self.assertIn('Manufacturer reports test 1', timeline)
+        self.assertIn('Manufacturer report', timeline)
+        self.assertIn('https://example.org/1', timeline)
+        self.assertIn('Tests section', timeline)
+        links = Links(); links.feed(body)
+        self.assertEqual(len(links.ids), len(set(links.ids)))
+        self.assertTrue(set(links.anchors) <= set(links.ids))
+
+    def test_event_detail_preserves_multiple_facts_and_subsections(self):
+        b = facts_only(self.b)
+        b['facts']['module_views'][0]['events'] = [dict(id='event', label='Combined evidence',
+            date='2026-08-01', claim_ids=['M1'], sections=[dict(label='Related evidence', claim_ids=['M2'])])]
+        refresh_basis(b)
+        timeline = RENDER.build(**b).split('id="current-developments">', 1)[1].split('</section>', 1)[0]
+        for text in ('Manufacturer reports test 1', 'Manufacturer reports test 2', 'Related evidence',
+                     'https://example.org/1', 'https://example.org/2', 'Originalquellen &amp; Belegstellen'):
+            self.assertIn(text, timeline)
+
+    def test_event_labels_are_escaped_and_mapping_changes_need_review(self):
+        b = facts_only(self.b)
+        b['facts']['module_views'][0]['events'] = [dict(id='event', label='<script>attack()</script>',
+            date='2026-08-01', claim_ids=['M1'])]
+        with self.assertRaisesRegex(ValueError, 'snapshot'):
+            RENDER.build(**b)
+        refresh_basis(b)
+        body = RENDER.build(**b)
+        self.assertNotIn('<script>attack()</script>', body)
+        self.assertIn('&lt;script&gt;attack()&lt;/script&gt;', body)
+
+    def test_empty_events_do_not_create_an_empty_module(self):
+        self.assertNotIn('id="current-developments"', RENDER.build(**facts_only(self.b)))
+
     def test_network_static_fallback_preserves_optional_details(self):
         b = facts_only(self.b); add_network(b)
         body = RENDER.build(**b)

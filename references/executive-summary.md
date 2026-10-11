@@ -55,7 +55,7 @@ Alle Darstellungsfelder und display_order sind Teil des jeweiligen I-Fingerprint
 
 Der lokale Renderer zeigt drei Highlight-Karten und 4–6 Kernaussagen:
 vier als 2×2, sechs als 3×2, fünf als drei plus zwei gleichmäßig breite Karten.
-Mobil untereinander. Klick bzw. Tastatur öffnet Details mit vollständiger Aussage,
+Gestaltung und Abnahme für die Desktop-Webansicht. Klick bzw. Tastatur öffnet Details mit vollständiger Aussage,
 Einordnung, Grenzen, Faktenbasis und direkten Originalquellen. Ohne JavaScript
 bleiben native details bedienbar; Druck zeigt die Inhalte ausgeklappt.
 Der Renderer wählt keine Zahlen aus und erzeugt keine neuen Aussagen.

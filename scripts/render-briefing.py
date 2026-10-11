@@ -213,6 +213,23 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     def interp_card(row):
         return '<details class="card"><summary>' + esc(row["statement"]) + '</summary><p class="meta">Analysteninterpretation</p>' + paragraphs([row["reasoning"], row["uncertainty"]]) + links([row["id"]]) + '</details>'
 
+    def event_card(row):
+        when = row.get("date") or 'Datum öffentlich nicht belegt'
+        body = '<div class="es-detail"><p class="meta">Aktuelle Entwicklungen · ' + esc(when) + '</p>'
+        groups = [{"claim_ids": row["claim_ids"]}, *row.get("sections", [])]
+        for group in groups:
+            if group.get("label"):
+                body += '<h4>' + esc(group["label"]) + '</h4>'
+            for cid in group["claim_ids"]:
+                fact = claims[cid]
+                body += '<p class="es-statement">' + esc(fact["statement"]) + '</p>'
+                body += '<p class="meta">' + esc(fact["kind"]) + '</p>'
+                body += paragraphs([fact["uncertainty"]]) + links([cid])
+                body += '<h4>Originalquellen &amp; Belegstellen</h4>' + evidence(fact)
+        body += '</div>'
+        return '<details class="card event-card" data-es-title="' + esc(row["label"]) + '"><summary>' + \
+            '<span class="event-title">' + esc(row["label"]) + '</span><span class="event-arrow" aria-hidden="true">↗</span></summary>' + body + '</details>'
+
     def executive_detail(row):
         body = '<p class="es-statement">' + esc(row["statement"]) + '</p>'
         body += '<h4>Einordnung</h4>' + paragraphs([row["reasoning"]])
@@ -273,7 +290,12 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         cards += [interp_card(r) for r in interpreted.values() if r["section"] == "topic:" + topic["id"]]
         main += section(topic["label"], grid(cards) or '<p>Keine freigegebenen Befunde für dieses Thema.</p>', 'topic-' + str(index))
     events = [r for v in views.values() for r in v.get("events", [])]
-    main += section("Aktuelle Entwicklungen", '<div class="timeline">' + "".join('<div class="event"><time>' + esc(r.get("date") or 'Datum öffentlich nicht belegt') + '</time>' + view_card(r) + '</div>' for r in events) + '</div>' if events else '')
+    events.sort(key=lambda r: (r.get("date") is None, r.get("date") or ''))
+    timeline = ''
+    for row in events:
+        dated = ' datetime="' + esc(row["date"]) + '"' if row.get("date") else ''
+        timeline += '<div class="event"><time' + dated + '>' + esc(row.get("date") or 'Datum öffentlich nicht belegt') + '</time>' + event_card(row) + '</div>'
+    main += section("Aktuelle Entwicklungen", '<div class="timeline">' + timeline + '</div>' if timeline else '', 'current-developments')
     if network:
         nodes = CHECK.index(network["nodes"], "nodes")
         products = CHECK.index(network["products"], "products")

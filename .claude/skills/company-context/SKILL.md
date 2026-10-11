@@ -8,6 +8,8 @@ Lies delegierten Auftrag/Manifest und references/faktenphase.md.
    Basiskennzahlen erfassen; Claim-Zuschreibungen erhalten.
 2. Timeline-Zeitraum aus Auftrag, sonst letzte vier Monate zum Stichtag wählen.
    Veröffentlichungs-/Ereignisdatum trennen; angekündigte Ereignisse so benennen.
+   events mit kurzen sachlichen labels und Faktenverweisen liefern; Unsicherheit
+   schon im Titel erhalten. Kein zusätzliches Summary oder HTML für die Zeitachse.
 3. Berufliches Profil nur bei genannter Person: Identität, aktuelle Rolle,
    belegter Werdegang/Zuständigkeit. Keine private Recherche oder erfundene
    regionale Beziehungen. Nutzerrolle als zunächst ungeprüfte Angabe führen.

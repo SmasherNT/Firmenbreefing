@@ -13,7 +13,7 @@ Explizite Markdown-Modultests nach references/legacy-html-output.md durchführen
    keine fremden Dateien korrigieren oder Prüfbarrieren umgehen.
    Keine finale HTML bei Materialfehlern, veralteten Reviews, blockierenden Fragen.
    Ältere Erfolgsdatei nach Fehlern nicht als aktuellen Erfolg ausgeben.
-3. HTML prüfen: interne/Quellenlinks, Netzwerk/Filter/Details, Mobil und Druck.
+3. Desktop-Webansicht prüfen: interne/Quellenlinks, Netzwerk/Filter/Details und Druck.
    Nicht ausführbare Prüfung als offen nennen. Keine neue Behauptung beim Rendern.
 4. output/abnahme.md: tatsächliche Agenten/Dateien/Reviews, formale Prüfungen,
    Inhaltsreview, Abdeckung, visuelle Kontrollen und offene Punkte unterscheiden.

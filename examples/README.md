@@ -1,10 +1,12 @@
 # Fiktives HTML-Beispiel
 
 briefing-demo.html zeigt die feste Ausgabe mit synthetischen Daten für
-Example Inspection. 19 Fakten, 15 Interpretationen, fünf Netzwerkkanten,
+Example Inspection. 21 Fakten, 15 Interpretationen, fünf Netzwerkkanten,
 vier auftragsbezogene Matrixzellen, Profil und Regionalansicht. Die Executive
 Summary zeigt drei auftragsbezogene Highlights (Kapazität, Kundenländer,
 Erprobungsstatus) und vier vertiefbare Kernaussagen; keine feste Finanzkennzahlenliste.
+Aktuelle Entwicklungen erscheinen als chronologische kompakte Ereigniskarten mit
+Datum links und vollständigen Fakten/Originalquellen im gemeinsamen Detailfenster.
 Alle Inhalte und Review-Entscheidungen sind erfunden; keine URL wurde geöffnet.
 Die Beispiele sind keine Recherchevorlage für echte Firmen.
 
@@ -19,7 +21,7 @@ Der Generator erzeugt Fakten-/Interpretationspakete und ausdrücklich simulierte
 Reviews nur für den Offline-Test. Nicht als tatsächliche Inhaltsfreigabe verwenden.
 Die DOM-Laufzeitprüfung prüft JavaScript-Verhalten ohne CSS-Rendering.
 Zusätzlich wurde die Executive Summary im echten Browser mit vier, fünf und
-sechs Karten bei 1440, 1024 und 390 Pixeln geprüft, einschließlich Dialogen,
+sechs Karten bei 1440, 1280 und 1024 Pixeln geprüft, einschließlich Ereigniskarten, Dialogen,
 Quellenlinks, Druckzustand und Fallback ohne JavaScript. Das ersetzt keine
 erneute Inhaltsprüfung oder Abnahme der übrigen Module nach späteren Änderungen.
 Optional reproduzieren: playwright-core installieren und BRIEFING_CHROMIUM_PATH
