@@ -1,0 +1,2167 @@
+{
+  "schema_version": 1,
+  "mode": "facts-v2",
+  "role": "portfolio",
+  "run_id": "2026-10-12-rheinmetall",
+  "company": "Rheinmetall",
+  "as_of": "2026-10-12",
+  "scope": "Rheinmetall-Konzern · Flugabwehr (global) und Markt/Marktzugang Golfstaaten (GCC) · berufliches Profil des Hauptverantwortlichen Flugabwehr",
+  "document_scope": "Portfolio-Fakten Flugabwehr (Rheinmetall-Konzern inkl. Rheinmetall Air Defence AG, Zürich, Rheinmetall Italia, Rheinmetall Electronics, Rheinmetall Waffe Munition): Eigenschaften und öffentlich belegter Status (angeboten, erprobt, beauftragt, geliefert, im Einsatz berichtet) mit Kundenbezug sowie produktbezogene Golfbezüge. Keine Reifegrad-, Wettbewerbs- oder Strategiebewertung.",
+  "status": "vollständig",
+  "shared_limitations": [
+    "Produkt- und Leistungsangaben stammen überwiegend aus Rheinmetall-Produktseiten (undatiert, Abruf 12.10.2026) und Pressemitteilungen; sie sind als Herstellerangaben gekennzeichnet und keine unabhängige Bestätigung.",
+    "Viele Aufträge nennen den Kunden nicht; Zuordnungen zu Staaten erfolgen nur, wenn eine Quelle sie ausdrücklich trifft.",
+    "Geplante Lieferungen, Kapazitätsziele und Optionen sind keine erreichten Meilensteine.",
+    "Partner-, JV- und Konsortialbeziehungen werden hier nur als Produktkontext genannt; Beziehungsfakten gehören zum Cluster-Modul, Wettbewerbervergleich zum Markt-Modul."
+  ],
+  "claims": [
+    {
+      "id": "P-AD-01",
+      "statement": "Laut Rheinmetall bündelt die Division Air Defence die bodengebundene Flugabwehr mit Standorten Zürich (Kompetenzzentrum Air Defence), Rom (Kompetenzzentrum Radar) und Neuss (Produktion); Geschäftsbereiche 'Systems and Effectors' und 'Systems and Sensors' führen u. a. Skymaster/CN0/CN1, Revolver Gun Mk3, Revolver Gun 30, GDF009 TREO, X-TAR3D, MSU, Skyspotter C-UAS, Skyranger 35/30/7.62 sowie Millennium Gun und Searanger 20.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-001a4ac74ab4feec"
+      ],
+      "evidence": "Paraphrase: Abschnitte 'Locations' und 'Business units' nennen die drei Standorte sowie je Geschäftsbereich Command & Control, Effectors, Sensors, Mobile Air Defence und Naval Systems mit den genannten Produkten.",
+      "location": "Divisionsseite, Abschnitte 'Locations' und 'Business units'",
+      "uncertainty": "Seite ohne Datum; Produktliste ist Selbstdarstellung, kein Lieferstatus.",
+      "proposed_depth": "A",
+      "depth_reason": "Produktinventar und Organisationsgrenze der Portfoliotabelle"
+    },
+    {
+      "id": "P-AD-02",
+      "statement": "Rheinmetall Air Defence AG (Zürich) entstand 2009 durch Umbenennung der Oerlikon Contraves AG; die Marke Oerlikon wird weitergeführt. Nach eigener Angabe nutzen Streitkräfte von mehr als 40 Nationen ihre Flugabwehrlösungen; Munition und Systeme werden auf dem Testgelände Ochsenboden (Schweiz) erprobt.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-928f8de516fc152d"
+      ],
+      "evidence": "Paraphrase: 'History' – 2009 Namensänderung von Oerlikon Contraves AG zu Rheinmetall Air Defence AG, Marke Oerlikon fortgeführt; 'Our Systems & Products' – 'armed forces of more than 40 nations'; Testing at Ochsenboden.",
+      "location": "Seite 'About us', Abschnitte 'History' und 'Our Systems & Products'",
+      "uncertainty": "Kundenzahl ist Herstellerangabe ohne Länderliste.",
+      "proposed_depth": "A",
+      "depth_reason": "Identität der Zielgesellschaft und Marke"
+    },
+    {
+      "id": "P-AD-03",
+      "statement": "Im Halbjahresbericht H1 2026 meldet Rheinmetall für das Segment Air Defence einen Umsatz von 478 Mio. EUR (Vorjahr 295 Mio. EUR), begründet mit Fortschritten bei der Fertigung von Skynex- und Skyranger-Projekten für europäische Kunden; die Rheinmetall Nomination betrug 1.534 Mio. EUR (u. a. weitere Skyranger und Skynex für einen europäischen und einen internationalen Kunden), der Rheinmetall Backlog 4.218 Mio. EUR zum 30.06.2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-c6f02c948a96ecdf"
+      ],
+      "evidence": "Auszug: 'The considerable sales growth is essentially due to progress on projects relating to the manufacture of Skynex and Skyranger air defence systems projects for European customers.'",
+      "location": "Pressemitteilung H1 2026, Abschnitt 'Air Defence: Rheinmetall Nomination increases sixfold'",
+      "uncertainty": "Ungeprüfte Halbjahreszahlen aus Pressemitteilung; Kunden nicht benannt; 'Nomination/Backlog' sind unternehmenseigene Kennzahlen inkl. Rahmenverträge.",
+      "proposed_depth": "A",
+      "depth_reason": "Fertigungs-/Auftragsstand der Kernprodukte",
+      "event_date": "2026-06-30"
+    },
+    {
+      "id": "P-SR-01",
+      "statement": "Rheinmetall beschreibt die Oerlikon-Skyranger-Familie als mobiles GBAD-System mit 35-mm-KDG- oder 30-mm-KCE-Revolverkanone und Airburst-Munition; 35 mm mit C-RAM-Fähigkeit und bis 4.000 m Wirkreichweite, 30 mm bis 3.000 m und mit Turm für Kurzstrecken-Lenkflugkörper; die Integration eines Hochenergielasers oder vertikal gestarteter C-PGM-Flugkörper wird laut Seite 'exploriert'.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-caf1328d1364fda8"
+      ],
+      "evidence": "Auszug: 'The 35mm calibre offers C-RAM capability and an effective range of up to 4,000m. The 30 mm calibre has an effective range of up to 3,000m ...' und 'Integration of a high-energy laser or vertically launched C-PGM missiles is being explored.'",
+      "location": "Produktseite Skyranger, Einleitungsabsätze",
+      "uncertainty": "Leistungswerte sind Herstellerangaben.",
+      "proposed_depth": "A",
+      "depth_reason": "Produktdefinition und Varianten"
+    },
+    {
+      "id": "P-SR30-01",
+      "statement": "Laut Rheinmetall beauftragte die Bundeswehr im Februar 2024 Skyranger 30 auf Boxer für 595 Mio. EUR (inkl. MwSt.): ein Prototyp und 18 Serienfahrzeuge, Option auf 30 weitere; die deutschen Systeme werden mit Stinger-Lenkflugkörpern ausgestattet; Skyranger 30 soll Bestandteil des NNbS werden.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-b8a3496f93a22c8c"
+      ],
+      "evidence": "Auszug: 'Worth €595 million (including value added tax), the contract encompasses delivery of a prototype and another 18 series production vehicles. In addition, an option exists for a further 30 systems.'",
+      "location": "Pressemitteilung 27.02.2024, Key facts und Absätze 1–5",
+      "uncertainty": "Option nicht als ausgeübt belegt.",
+      "proposed_depth": "A",
+      "depth_reason": "Kundenauftrag mit benanntem Staatskunden",
+      "event_date": "2024-02",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SR30-02",
+      "statement": "Rheinmetall meldet die Übergabe des ersten Boxer Skyranger 30 (Nachweismuster) an die Bundeswehr Ende Januar 2025; Zulassungserprobung ab Frühjahr 2025, Serienlieferung überwiegend 2027 und Anfang 2028 geplant. Zunächst Stinger, später laut Mitteilung Umrüstung auf einen neu entwickelten Drohnenabwehr-Flugkörper vorgesehen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-09c52404c1b93824"
+      ],
+      "evidence": "Auszug: 'As scheduled, Rheinmetall delivered the first Boxer Skyranger 30 cannon-based air defence vehicle to the Bundeswehr at the end of January 2025. This system is the so-called verification model ...'",
+      "location": "Pressemitteilung 05.02.2025, Absätze 1–3",
+      "uncertainty": "Serienlieferung ist Plan; Abschluss der Zulassung nicht geprüft.",
+      "proposed_depth": "A",
+      "depth_reason": "Lieferstatus Prototyp",
+      "event_date": "2025-01",
+      "event_status": "Nachweismuster geliefert"
+    },
+    {
+      "id": "P-SR30-03",
+      "statement": "Österreich beschafft laut Rheinmetall 36 Skyranger 30 auf GDELS Pandur EVO 6x6 mit Mistral-Lenkflugkörpern (Auftragswert im mittleren dreistelligen Mio.-EUR-Bereich); Rheinmetall ist Unterauftragnehmer von GDELS; Lieferbeginn 2026; Rheinmetall bezeichnet dies als ersten Serienauftrag.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-562f0f3f359a746b"
+      ],
+      "evidence": "Auszug: 'Austria procuring 36 Skyranger 30 air defence systems on Pandur EVO 6x6 vehicles from GDELS' und 'Rheinmetall is serving as a subcontractor of GDELS'.",
+      "location": "Pressemitteilung 23.02.2024, Key facts und Absätze 1–3",
+      "uncertainty": "Tatsächlicher Lieferbeginn 2026 in geöffneten Quellen nicht bestätigt.",
+      "proposed_depth": "A",
+      "depth_reason": "Serienkundenauftrag",
+      "event_date": "2024-02",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SR30-04",
+      "statement": "Dänemark beauftragte laut Rheinmetall Rheinmetall Air Defence mit 16 Skyranger-30-Türmen inkl. Integration in ein 8x8-Radfahrzeug (niedriger dreistelliger Mio.-EUR-Bereich) sowie Munition; Prototyp Ende 2026, Serientürme 2027–2028 geplant.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-d1aafc1c9b0f1a75"
+      ],
+      "evidence": "Auszug: 'Denmark commissions Rheinmetall to supply 16 Skyranger 30 turrets and integrate them into tactical 8x8 vehicles' ... 'a prototype is expected to be delivered in late 2026'.",
+      "location": "Pressemitteilung 30.09.2024, Key facts und Absatz 1",
+      "uncertainty": "Lieferungen sind geplant.",
+      "proposed_depth": "A",
+      "depth_reason": "Kundenauftrag",
+      "event_date": "2024-09",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SR30-05",
+      "statement": "Das niederländische Verteidigungsministerium beauftragte laut Rheinmetall im Dezember 2025 eine zweistellige Zahl Skyranger-Waffenplattformen (Skyranger-30-Turm mit Unterbau für mobilen oder bodengestützten Einsatz) samt Führungsknoten, Hakenlift-Plattformen, Integration in die niederländische Flugabwehrarchitektur und Logistik; Auftragswert hoher dreistelliger Mio.-EUR-Bereich, Lieferungen Ende 2028 bis Ende 2029. Eine frühere Rheinmetall-Mitteilung nannte die Ankündigung von 22 Systemen (Januar 2025).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-60677f3d57da054d",
+        "S-09c52404c1b93824"
+      ],
+      "evidence": "Paraphrase aus zwei Rheinmetall-Mitteilungen; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Endgültige Stückzahl im Vertrag nur als 'zweistellig' angegeben; 22 Systeme beziehen sich auf die Ankündigung.",
+      "evidence_items": [
+        {
+          "source_id": "S-60677f3d57da054d",
+          "text": "Auszug: 'The Dutch Ministry of Defence has commissioned Rheinmetall Air Defence to supply a two-digit number of Skyranger air defence systems ...'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 12.12.2025, Absätze 1–2"
+        },
+        {
+          "source_id": "S-09c52404c1b93824",
+          "text": "Auszug: 'End of January 2025, the Dutch Ministry of Defence announced that the Netherlands will also procure 22 Skyranger 30 systems.'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 05.02.2025, letzter Absatz"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Kundenauftrag",
+      "event_date": "2025-12",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SR30-06",
+      "statement": "Ungarn erteilte Rheinmetall am 15.12.2023 einen Entwicklungsauftrag (knapp 30 Mio. EUR) für einen Skyranger-30-Turm für die künftige Flugabwehrvariante des Lynx KF41; Rheinmetall nennt Kompatibilität u. a. mit Mistral, Stinger und Chiron.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-d2ef86f50f08a3d3"
+      ],
+      "evidence": "Auszug: 'Hungary ... has awarded Rhein­metall a contract for the conceptual development of the Skyranger 30 turret for the future Lynx KF41 Mobile Air Defence Vehicle. The contract has been signed on 15th December 2023 in Budapest.'",
+      "location": "Pressemitteilung 20.12.2023, Key facts und Absätze 1–2",
+      "uncertainty": "Ein späterer ungarischer Serienauftrag wurde in den geöffneten Quellen nicht gefunden.",
+      "proposed_depth": "A",
+      "depth_reason": "Entwicklungsauftrag",
+      "event_date": "2023-12-15",
+      "event_status": "Entwicklungsauftrag"
+    },
+    {
+      "id": "P-SR30-07",
+      "statement": "Laut Rheinmetall absolvierte die Skyranger-30-A1-Testplattform im Dezember 2023 Erprobungen mit Live-Schießen auf dem Testgelände Ochsenboden (stationär und in Bewegung); die Gesamtsystemqualifikation der Konfiguration A3 war für Mitte 2024 geplant.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-afe1512f0f6979bd"
+      ],
+      "evidence": "Auszug: 'In December 2023, the A1 configuration of the Skyranger 30 underwent a successful testing and live-fire campaign at the Group's Ochsenboden proving ground ...' / 'total system qualification of the Skyranger 30 A3 in mid-2024'.",
+      "location": "Pressemitteilung 11.01.2024, Key facts und Absätze 1–2",
+      "uncertainty": "Abschluss der A3-Qualifikation nicht belegt; Testergebnis nur Herstellerangabe.",
+      "proposed_depth": "A",
+      "depth_reason": "Test-/Erprobungsstatus",
+      "event_date": "2023-12",
+      "event_status": "erprobt (Hersteller)"
+    },
+    {
+      "id": "P-SR30-08",
+      "statement": "Auf der ILA 2026 zeigte Rheinmetall Skyranger 30 auf Boxer mit MBDA-Lenkflugkörper DefendAir und auf der Eurosatory 2026 auf Lynx KF41; Rheinmetall nennt eine aktuelle Fertigungskapazität von rund 70 bis 100 Türmen pro Jahr mit Ausbauziel bis zu 400 Einheiten jährlich und listet für Deutschland 19 beauftragte Skyranger-30-Fahrzeuge.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-c0d13e5db6387716",
+        "S-d2d239c37b99eddf"
+      ],
+      "evidence": "Paraphrase aus zwei Rheinmetall-Messemitteilungen; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Kapazitätsausbau ist Ziel, nicht erreichter Zustand; Messeexponat ist kein Auftrag.",
+      "evidence_items": [
+        {
+          "source_id": "S-c0d13e5db6387716",
+          "text": "Auszug: 'At ILA 2026, Rheinmetall showcases the Skyranger 30 turret mounted on the Boxer 8x8 armored wheeled vehicle, equipped with MBDA's DefendAir guided missile.' / 'Annual production capacity will be gradually expanded from the current level of around 70 to 100 turrets to up to 400 units per year'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 10.06.2026, Absatz 2 und Abschnitt 'Capacity Expansion'"
+        },
+        {
+          "source_id": "S-d2d239c37b99eddf",
+          "text": "Auszug: 'Rheinmetall will present the Skyranger 30 mobile air defence system, based on the Lynx KF41 combat vehicle.'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 15.06.2026, Absatz 1"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Integration Lenkflugkörper / Kapazität",
+      "event_date": "2026-06",
+      "event_status": "präsentiert"
+    },
+    {
+      "id": "P-SR30-09",
+      "statement": "Rheinmetall Electronics und MBDA Deutschland unterzeichneten auf der ILA 2024 eine Absichtserklärung (LOI) zur Integration des Small Anti Drone Missile (SADM) in Skyranger 30 und weitere Rheinmetall-Fahrzeuge.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-6282cce4ae4b577f"
+      ],
+      "evidence": "Auszug: 'Rheinmetall Electronics and MBDA Deutschland signed a corresponding Letter of Intent (LOI) at ILA 2024. The companies intend to integrate MBDA's Small Anti Drone Missile (SADM) into the Skyranger 30 ...'",
+      "location": "Pressemitteilung 05.06.2024, Absatz 1",
+      "uncertainty": "LOI ist keine vertragliche Integration; Verhältnis SADM zu 'DefendAir' (ILA 2026) in Quellen nicht ausdrücklich erklärt.",
+      "proposed_depth": "B",
+      "depth_reason": "Absichtserklärung, Beziehung an Cluster",
+      "event_date": "2024-06",
+      "event_status": "LOI"
+    },
+    {
+      "id": "P-SR30HEL-01",
+      "statement": "Rheinmetall stellte im Februar 2022 den Skyranger 30 HEL als Hybridkonzept aus 30-mm-Kanone, Lenkflugkörpern und Hochenergielaser vor; laut Mitteilung erreichten Technologiemuster in Live-Versuchen 20 kW, für eine erste Realisierungsphase sind 20–50 kW geplant; Ende 2021 erstmals öffentlich bei einer armasuisse-Drohnenabwehrveranstaltung in Bure gezeigt.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-724f79dd7eacb957"
+      ],
+      "evidence": "Auszug: 'In live trials, current technology sample systems for laser weapon systems have successfully achieved laser outputs of 20kW.' / 'Laser outputs of up 20-50 kW are planned for the first realization phase.'",
+      "location": "Pressemitteilung 04.02.2022, Absätze 4–5",
+      "uncertainty": "Kein Kundenauftrag für Skyranger 30 HEL gefunden; 20 kW bezieht sich auf Technologiemuster, nicht auf ein integriertes Serienprodukt.",
+      "proposed_depth": "A",
+      "depth_reason": "Demonstrator separat von Skyranger 30",
+      "event_date": "2022-02",
+      "event_status": "Konzept/Demonstrator vorgestellt"
+    },
+    {
+      "id": "P-SR35-01",
+      "statement": "Laut Rheinmetall verfügt Skyranger 35 über die KDG-35/1000-Revolverkanone (35 x 228 mm, 1.000 Schuss/min, bis 4.000 m), hohe Gleichteiligkeit mit der Oerlikon Revolver Gun Mk3 und AHEAD-Airburst-Fähigkeit; der Lynx KF41 Skyranger 35 wurde auf der DSEI 2025 erstmals gezeigt.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-ccfa2e88d8a2c995"
+      ],
+      "evidence": "Auszug: 'The Skyranger 35 is equipped with a KDG 35/1000 revolver cannon in 35 mm x 228 calibre with a firing rate of 1,000 rounds per minute. It has an effective range of up to 4,000 metres ...'",
+      "location": "Pressemitteilung 09.09.2025, Absätze 1–2",
+      "uncertainty": "Leistungswerte Herstellerangabe.",
+      "proposed_depth": "A",
+      "depth_reason": "Variantendefinition",
+      "event_date": "2025-09",
+      "event_status": "präsentiert"
+    },
+    {
+      "id": "P-SR35-02",
+      "statement": "Rheinmetall meldete im Oktober 2025 einen Auftrag über weitere Skyranger 35 auf Leopard-1-Fahrgestell für die Ukraine (dreistelliger Mio.-EUR-Bereich), finanziert durch ein EU-Land aus Erlösen eingefrorener russischer Vermögenswerte; Produktion und Integration bei Rheinmetall Italia S.p.A. in Rom.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-eadffcced857ac38"
+      ],
+      "evidence": "Auszug: 'Rheinmetall is supplying Ukraine with further Skyranger 35 air defence systems based on the Leopard 1. ... The production and integration of the systems will be carried out by Rheinmetall Italia SpA at its headquarters in Rome.'",
+      "location": "Pressemitteilung 10.10.2025, Key facts und Absatz 1",
+      "uncertainty": "Stückzahl, Erstauftrag und tatsächliche Lieferungen/Einsatz in der Ukraine nicht aus geöffneten Primärquellen belegt; Sekundärmeldungen zu Lieferungen nicht geöffnet bzw. nicht zugänglich.",
+      "proposed_depth": "A",
+      "depth_reason": "Kundenauftrag Kriegsgebiet",
+      "event_date": "2025-10",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SR35-03",
+      "statement": "Rumänien vergab am 29.05.2026 im Rahmen des EU-Programms SAFE ein Vertragspaket über 5,7 Mrd. EUR an Rheinmetall; der Flugabwehranteil umfasst laut Rheinmetall 24 Skyranger 35 auf Lynx KF41, sieben Skynex-Systeme und zwei Millennium Guns; Lieferungen des Gesamtpakets 2028–2030; bis zur Einführung hält Rheinmetall die Gepard-Fahrzeuge einsatzbereit.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-6bdb338d23c29e11",
+        "S-cede873d57924937"
+      ],
+      "evidence": "Paraphrase aus zwei Rheinmetall-Mitteilungen; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Wertanteil der Flugabwehr am Paket nicht ausgewiesen; Lieferfenster bezieht sich auf das Gesamtpaket.",
+      "evidence_items": [
+        {
+          "source_id": "S-6bdb338d23c29e11",
+          "text": "Auszug: '... includes not only 24 Skyranger 35 systems, but also seven Skynex systems and two Millennium Guns for maritime air defence solutions.'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 24.06.2026, Absatz 1"
+        },
+        {
+          "source_id": "S-cede873d57924937",
+          "text": "Paraphrase: Vergabe am 29.05.2026 durch die Generaldirektion Rüstung unter SAFE, Gesamtwert 5,7 Mrd. EUR, Lieferungen ab 2028 bis 2030; Skyranger auf Lynx-Basis; Gepard bleibt bis zur Einführung einsatzbereit.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 02.06.2026, Absätze 2–4 und Aufzählung"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Großauftrag benannter Staatskunde",
+      "event_date": "2026-05-29",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SR762-01",
+      "statement": "Auf der DSEI 2025 präsentierte Rheinmetall die Oerlikon Skyranger 762 (fernbediente Waffenstation mit M134D-Gatling 7,62 x 51 mm für U-SHORAD/C-UAS) auf dem unbemannten Mission Master CXT2; per Skymaster-C2 soll die Anbindung an Skyranger, Skynex oder Skyspotter möglich sein.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-24a17414294b663e"
+      ],
+      "evidence": "Auszug: 'The Oerlikon Skyranger 762 is a remote-controlled weapon station for Ultra-Short Range Air Defence (U-SHORAD).' / 'uses the widely used and proven M134D Gatling machine guns in 7.62 mm x 51 calibre'.",
+      "location": "Pressemitteilung 09.09.2025, Absätze 3–4",
+      "uncertainty": "Kein Kundenauftrag gefunden; Messepräsentation.",
+      "proposed_depth": "B",
+      "depth_reason": "Messeexponat",
+      "event_date": "2025-09",
+      "event_status": "präsentiert"
+    },
+    {
+      "id": "P-SNX-01",
+      "statement": "Rheinmetall beschreibt Skynex als offene, modulare Kurzstrecken-Flugabwehrarchitektur mit Oerlikon Skymaster als Führungsknoten, Radaren wie X-TAR3D und Effektoren wie Revolver Gun Mk3, Twin Gun GDF009 TREO, Boden-Luft-Flugkörpern, Mitteln der elektronischen Kampfführung und künftig Hochenergielasern; Sensoren anderer Hersteller und bestehende Skyguard-/Skyshield-Feuereinheiten sollen integrierbar sein.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-69738b1972b9a1ed"
+      ],
+      "evidence": "Auszug: 'The Oerlikon Skymaster® battle management system is the control node and centrepiece of the system.' / 'Skynex allows integrating sensors from different manufacturers.'",
+      "location": "Produktseite Skynex, Einleitung und 'Key features'",
+      "uncertainty": "Integrationsfähigkeit ist Herstellerangabe; konkrete Fremdsensor-Integration siehe P-SNX-07.",
+      "proposed_depth": "A",
+      "depth_reason": "Produktdefinition"
+    },
+    {
+      "id": "P-SNX-02",
+      "statement": "Rheinmetall meldete im Dezember 2022 die Lieferung von zwei Skynex-Systemen an einen nicht genannten internationalen Kunden (rund 182 Mio. EUR, Lieferung Anfang 2024) sowie eine Absichtserklärung über HX-Lkw (rund 12 Mio. EUR).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-17c0358578e526e5"
+      ],
+      "evidence": "Auszug: 'Rheinmetall is supplying an international customer with two Skynex air defence systems. ... Worth around €182 million, the system is to be delivered in the beginning of 2024.'",
+      "location": "Pressemitteilung 09.12.2022, Absatz 1",
+      "uncertainty": "Kunde von Rheinmetall nicht genannt.",
+      "proposed_depth": "A",
+      "depth_reason": "Kundenauftrag",
+      "event_date": "2022-12",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SNX-03",
+      "statement": "Defense News berichtete im Januar 2024 unter Berufung auf Rheinmetall-Italia-Chef Alessandro Ercolani, dass eine in Italien gebaute Skynex-Batterie am 31.12.2023 an die Ukraine geliefert wurde und eine zweite für März 2024 vorgesehen war (Vertrag laut Artikel rund 160 Mio. EUR, Dezember 2022); Rheinmetall selbst erklärt, Skynex-Systeme bewährten sich bei den ukrainischen Streitkräften und Rheinmetall habe die Ukraine mit Skynex beliefert.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-957ebff673ab8d20",
+        "S-3b27cf3712ca73d2",
+        "S-081455a6101c816e"
+      ],
+      "evidence": "Unternehmensaussagen in Sekundär- und Primärquelle; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Leistungs-/Einsatzaussagen stammen ausschließlich vom Hersteller (keine unabhängige Bestätigung); Vertragswert 160 Mio. EUR (Defense News) weicht von 182 Mio. EUR der Dezember-2022-Mitteilung ab; Zuordnung beider Meldungen nicht belegt.",
+      "evidence_items": [
+        {
+          "source_id": "S-957ebff673ab8d20",
+          "text": "Paraphrase: Laut Ercolani wurde eine in Italien gebaute Skynex-Batterie am 31.12.2023 an die Ukraine geliefert, eine zweite war für März 2024 fällig; Vertrag rund 160 Mio. EUR vom Dezember 2022; 'We have been told Skynex is working well in Ukraine'.",
+          "mode": "Paraphrase",
+          "location": "Defense News 26.01.2024, Absätze zu Ukraine-Lieferung"
+        },
+        {
+          "source_id": "S-3b27cf3712ca73d2",
+          "text": "Auszug: 'Skynex air defence systems are already proving their quality to the Ukrainian armed forces in the harsh conditions of war ...'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 23.12.2025, Absatz 3"
+        },
+        {
+          "source_id": "S-081455a6101c816e",
+          "text": "Auszug: 'Rheinmetall has also supplied the attacked country with various state-of-the-art air defense systems such as Skynex ...'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 06.01.2025, letzter Absatz"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Einsatzaussage; Herkunft offenlegen",
+      "event_date": "2023-12-31",
+      "event_status": "Lieferung/Einsatz berichtet (Herstellerangabe)"
+    },
+    {
+      "id": "P-SNX-04",
+      "statement": "Rheinmetall meldete im März 2024 einen weiteren Skynex-Auftrag eines nicht genannten europäischen Kunden im unteren dreistelligen Mio.-EUR-Bereich mit Lieferung 2025 inklusive HX-Lkw.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3e41dec11fd4d5d0"
+      ],
+      "evidence": "Auszug: 'Rheinmetall has been awarded a further contract to supply Skynex air defence systems to a European customer. ... The deliveries will take place over the course of 2025 ...'",
+      "location": "Pressemitteilung 01.03.2024, Absatz 1",
+      "uncertainty": "Kunde nicht genannt; Lieferung 2025 nicht bestätigt.",
+      "proposed_depth": "B",
+      "depth_reason": "unbenannter Kunde",
+      "event_date": "2024-03",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SNX-05",
+      "statement": "Italien erteilte Rheinmetall Italia im Januar 2025 einen Auftrag über ein erstes Skynex-System (73 Mio. EUR) mit Option auf drei weitere (204 Mio. EUR); am 18.12.2025 wurde die erste Skynex-Batterie in der Konfiguration mit X-TAR3D an das italienische Heer in Sabaudia übergeben.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3b27cf3712ca73d2"
+      ],
+      "evidence": "Auszug: 'On 18 December 2025, the first Skynex battery was handed over to the Italian Army at the Comando Artiglieria Controaeri (Air Defence Artillery Command) in Sabaudia.'",
+      "location": "Pressemitteilung 23.12.2025, Key facts und Absätze 1–2, 'Italy has opted for the configuration with the XTAR 3D radar'",
+      "uncertainty": "Ausübung der Option nicht belegt.",
+      "proposed_depth": "A",
+      "depth_reason": "Lieferung an benannten Kunden",
+      "event_date": "2025-12-18",
+      "event_status": "geliefert"
+    },
+    {
+      "id": "P-SNX-06",
+      "statement": "Rheinmetall meldete im Juli 2026 einen im Q2 2026 gebuchten Erstauftrag eines nicht genannten internationalen Kunden über vier komplette Skynex-Systeme (mehrere hundert Mio. EUR) einschließlich Lkw, Munition und ILS; Laufzeit 39 Monate, erste Batterie 21 Monate nach Unterzeichnung; Generalunternehmer ist Rheinmetall Italia, beteiligt sind Rheinmetall Air Defence, Rheinmetall MAN Military Vehicles und Rheinmetall Waffe Munition (Schweiz).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-b003618b3ae9eba2"
+      ],
+      "evidence": "Auszug: 'The overall scope of the contract encompasses the delivery of four complete Skynex systems, with a total execution timeline of 39 months.' / 'Rheinmetall Italia is acting as the prime contractor for this project.'",
+      "location": "Pressemitteilung 02.07.2026, Absätze 2–5",
+      "uncertainty": "Kunde und Region nicht genannt; keine Zuordnung zu einem GCC-Staat belegt.",
+      "proposed_depth": "A",
+      "depth_reason": "aktueller Großauftrag",
+      "event_date": "2026-Q2",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SNX-07",
+      "statement": "Laut Rheinmetall wurde bei der Luftwaffenübung Timber Express 2026 in Manching das Luftlagebild des Hensoldt-Passivradars Twinvis in Rheinmetalls Skymaster integriert, das eine eingesetzte Skynex-Batterie führte; die Fusion erfolgte im NATO-Link-16-Netz.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-6c44e0c111e6d686"
+      ],
+      "evidence": "Auszug: '... the air picture generated by Hensoldt's Twinvis passive radar was successfully integrated into Rheinmetall's Skymaster command and weapon engagement system, which was directing the Skynex Air Defence battery deployed in the scenario.'",
+      "location": "Pressemitteilung 19.08.2026, Absätze 1–2",
+      "uncertainty": "Übungsdemonstration; keine Beschaffung.",
+      "proposed_depth": "A",
+      "depth_reason": "belegte Fremdsensor-Integration",
+      "event_date": "2026-08",
+      "event_status": "demonstriert"
+    },
+    {
+      "id": "P-SNX-08",
+      "statement": "Die Skynex-Produktseite führt eine 'Skynex – SkyKnight Missile Launcher Unit' für den HALCON-SkyKnight-Flugkörper (C-RAM/C-PGM, bis 10 km, bis 60 Flugkörper je Werfer), der in Skynex integriert werden soll; EDR Magazine berichtete im März 2021 nach der IDEX, dass Halcon (EDGE-Gruppe, VAE) den SkyKnight entwickelt und Rheinmetall Air Defence ihn in Skynex integriert.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-69738b1972b9a1ed",
+        "S-829071fd179d4705"
+      ],
+      "evidence": "Herstellerseite und Fachmedium; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Abschluss der Integration, Tests und Kundenaufträge für SkyKnight-Skynex in geöffneten Quellen nicht belegt; EDR-Angaben beruhen auf Messeauskünften.",
+      "evidence_items": [
+        {
+          "source_id": "S-69738b1972b9a1ed",
+          "text": "Auszug: 'The new HALCON SkyKnight C-RAM / C-PGM missile is designed to be integrated into the Skynex air defence system.' / 'Up to 60 missiles per launcher'",
+          "mode": "Auszug",
+          "location": "Produktseite Skynex, Abschnitt 'Oerlikon Skynex – SkyKnight Missile Launcher Unit'"
+        },
+        {
+          "source_id": "S-829071fd179d4705",
+          "text": "Paraphrase: Halcon (EDGE-Gruppe) habe SkyKnight entwickelt; Rheinmetall Air Defence arbeite an der Integration in Skynex (Skymaster-C2); 20-Fuß-Container mit 60 Flugkörpern; Denel-Cheetah-Programm eingestellt.",
+          "mode": "Paraphrase",
+          "location": "EDR Magazine 08.03.2021, Haupttext"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Golfbezug Lenkflugkörper-Integration; Partnerbeziehung an Cluster",
+      "event_date": "2021-02",
+      "event_status": "Integration angekündigt"
+    },
+    {
+      "id": "P-SNX-09",
+      "statement": "Janes berichtete am 14.10.2022, dass die Qatar Emiri Air Defence Forces das Skynex-System besitzen; ein Video des katarischen Verteidigungsministeriums vom 13.10.2022 zeigte acht 35-mm-Revolver-Gun-Mk3 und ein X-TAR3D-Radar bei der Übung 'Shield 6 (Skynex)'. Laut Janes hat Rheinmetall keinen Katar-Vertrag bekanntgegeben; Janes verweist auf den Oktober-2019-Auftrag eines ungenannten Kunden über rund 210 Mio. EUR.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-6cd5701123f00a73"
+      ],
+      "evidence": "Paraphrase: Qatar MoD-Video vom 13.10.2022 zeigt acht Revolver Gun Mk3 und ein X-TAR3D in Übung 'Shield 6 (Skynex)' auf dem Al-Qalayel-Schießplatz; Rheinmetall hat keine katarische Bestellung angekündigt; Verweis auf Oktober-2019-Vertrag über rund 210 Mio. EUR.",
+      "location": "Janes 14.10.2022, Haupttext",
+      "uncertainty": "Sekundärquelle (redaktionell, auf Basis eines Behördenvideos); Zuordnung zum 2019er Auftrag ist Janes-Hinweis, nicht von Rheinmetall bestätigt; Video selbst nicht geöffnet.",
+      "proposed_depth": "A",
+      "depth_reason": "zentraler GCC-Kundenbeleg",
+      "event_date": "2022-10-13",
+      "event_status": "beim Kunden im Bestand berichtet"
+    },
+    {
+      "id": "P-SNX-10",
+      "statement": "Army Recognition berichtete am 20.01.2026, dass die Qatar Emiri Air Defence Forces auf der DIMDEX 2026 in Doha eine Skynex-Konfiguration mit 35-mm-Geschütz, Skymaster-Führungsknoten und X-TAR3D-Radar am eigenen Stand zeigten.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-3c0b72dcdb4a669f"
+      ],
+      "evidence": "Auszug: 'a Rheinmetall Oerlikon Skynex configuration centered on the 35 mm gun effector' am Stand der Qatar Emiri Air Defence Forces.",
+      "location": "Army Recognition 20.01.2026, Haupttext",
+      "uncertainty": "Sekundärquelle; Bericht enthält zudem analytische Einschätzungen, die hier nicht übernommen werden; keine Angaben zu Vertrag oder Einsatz.",
+      "proposed_depth": "B",
+      "depth_reason": "ergänzender GCC-Beleg",
+      "event_date": "2026-01",
+      "event_status": "vom Kunden ausgestellt"
+    },
+    {
+      "id": "P-SNX-11",
+      "statement": "Rheinmetall meldete im Oktober 2019 einen Auftrag eines nicht genannten internationalen Kunden über rund 210 Mio. EUR für Skymaster-Führungssysteme, X-TAR3D-Radare, Revolver-Gun-Mk3-Geschütze und AHEAD-Munition mit Lieferabschluss bis 2022.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-dfcb101880f585b3"
+      ],
+      "evidence": "Auszug: 'Among other items, the order encompasses Skymaster command and control systems, X-TAR 3D radars, Oerlikon Revolver Gun MK3-automatic cannon as well as an ammunition package that includes airburst-capable AHEAD rounds.'",
+      "location": "Pressemitteilung 30.10.2019, Absätze 1–2",
+      "uncertainty": "Kunde nicht genannt; Lieferabschluss nicht bestätigt.",
+      "proposed_depth": "A",
+      "depth_reason": "möglicher GCC-Bezug nur über Sekundärquelle",
+      "event_date": "2019-10",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SG-01",
+      "statement": "Rheinmetall beschreibt Oerlikon Skyguard 3 als Feuerleitsystem für den Objektschutz mit Anbindung von bis zu vier Effektoren (Twin Gun GDF007, VSHORAD-Werfer, Revolver Gun Mk2 Towed) und AHEAD sowie Oerlikon Skyshield als Allwetter-Kurzstreckensystem mit unbemannter Sensor- und Geschützeinheit.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-11300cfdaf427560"
+      ],
+      "evidence": "Paraphrase: Abschnitte 'Oerlikon Skyguard 3 – Air Defence System' und 'Oerlikon Skyshield – Air Defence System' listen Fähigkeiten und Effektoren.",
+      "location": "Produktseite Stationary air defence",
+      "uncertainty": "",
+      "proposed_depth": "B",
+      "depth_reason": "Produktdefinition"
+    },
+    {
+      "id": "P-SG-02",
+      "statement": "Österreich beauftragte im Dezember 2023 die Modernisierung seiner Skyguard-Systeme zu 'Skyguard Next Generation' (532 Mio. EUR ohne MwSt., 48 Monate ab Februar 2024): sieben taktische Einheiten mit je vier 35-mm-Geschützen, Sensoreinheit und Gefechtsstand; 28 Bestandsgeschütze werden modernisiert und an Skymaster angebunden; inklusive 35-mm-AHEAD-Munition; Ausführung im Werk Zürich.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-ef6817f0a0493313"
+      ],
+      "evidence": "Auszug: 'The order package for Austria comprises a total of seven tactical units, each consisting of four 35mm guns, a sensor unit for monitoring airspace and a command post.'",
+      "location": "Pressemitteilung 12.12.2023, Key facts und Absätze 1–5",
+      "uncertainty": "Projektfortschritt nicht geprüft.",
+      "proposed_depth": "A",
+      "depth_reason": "Kundenauftrag",
+      "event_date": "2023-12",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SG-03",
+      "statement": "Rumänien beauftragte im Dezember 2023 die Modernisierung seiner Oerlikon-GDF-103-Systeme (rund 328 Mio. EUR, vier Systeme); jedes System umfasst Skymaster-TLCN-Feuerleitung, X-TAR3D, sechs 35-mm-GDF009-TREO-Zwillingsgeschütze und zwei Lkw.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a03195f784728b13"
+      ],
+      "evidence": "Auszug: 'Each of the systems ordered consists of an Oerlikon Skymaster TLCN fire control system; an X-Band Tactical Acquisition Radar 3D, or X-TAR3D; six 35mm GDF009 TREO Oerlikon Twin Guns ...'",
+      "location": "Pressemitteilung 22.12.2023, Absätze 1 und 3",
+      "uncertainty": "Lieferstatus nicht geprüft.",
+      "proposed_depth": "A",
+      "depth_reason": "Kundenauftrag",
+      "event_date": "2023-12",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SG-04",
+      "statement": "Rheinmetall meldete im Dezember 2019 einen Auftrag eines nicht genannten internationalen Kunden über rund 120 Mio. EUR zur Modernisierung bestehender Skyguard-Systeme (u. a. verbesserte Drohnenabwehr), Lieferbeginn Q3 2020.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-b935cdad4fdfc9f0"
+      ],
+      "evidence": "Auszug: 'The modernization measures will enhance the combat effectiveness of existing Skyguard air defence systems. Among other things, the upgraded systems will have an improved capability against drones.'",
+      "location": "Pressemitteilung 09.12.2019, Absätze 1–2",
+      "uncertainty": "Kunde nicht genannt.",
+      "proposed_depth": "B",
+      "depth_reason": "unbenannter Kunde",
+      "event_date": "2019-12",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SG-05",
+      "statement": "Janes berichtete im Februar 2020, ein Foto der Saudi Press Agency belege eine Skyguard-3-Feuerleiteinheit auf der King Abdulaziz Naval Base (Al-Jubail), laut Satellitenbildern dort seit Juni/Juli 2019 mit zwei 35-mm-GDF-Geschützen; zudem sei 2019 ein Skyguard 3 auf einem Foto der Bahrain Defence Force (Übung Peninsula Shield 10) zu sehen gewesen, Eigentümer unklar; ältere Skyguard-Betreiber in der Übung waren Bahrain, Kuwait und die VAE.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-d5c3acd69d302e6f"
+      ],
+      "evidence": "Paraphrase: SPA-Foto zeigt Skyguard-Feuerleiteinheit an der King Abdulaziz Naval Base; Satellitenbilder deuten auf Aufstellung Juni–Juli 2019 mit Standardkonfiguration zwei 35-mm-GDF-Geschütze und Feuerleiteinheit; Skyguard 3 auf BDF-Foto März 2019, Eigentümer unklar.",
+      "location": "Janes 26.02.2020, Haupttext",
+      "uncertainty": "Sekundärquelle (Bild-/Satellitenauswertung); kein Vertrag, Wert oder Lieferweg belegt; SPA-Foto nicht selbst geöffnet.",
+      "proposed_depth": "A",
+      "depth_reason": "GCC-Kundenbezug",
+      "event_date": "2019-07",
+      "event_status": "beim Kunden aufgestellt berichtet"
+    },
+    {
+      "id": "P-SG-06",
+      "statement": "Janes berichtete am 07.03.2022, dass Rheinmetall und die saudische MAZ Group auf der World Defense Show in Riad das Joint Venture Radarabia gestartet haben, das in Jeddah eine Fabrik für Wartung, Instandsetzung und Upgrades von Skyguard-Flugabwehrgeschützen der Royal Saudi Air Defense Forces errichten soll; laut den Unternehmen soll Technologie der Schweizer Oerlikon-Tochter für 60 % Lokalisierung übertragen werden.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a51eb8534c24e129"
+      ],
+      "evidence": "Paraphrase: Start von Radarabia am 06.03.2022 auf der WDS; 25.000-sq-ft-Fabrik in Jeddah für MRO von Skyguard-Geschützen der RSADF sowie Upgrades/F&E; Technologietransfer von Oerlikon für 60 % Lokalisierung.",
+      "location": "Janes 07.03.2022, Haupttext",
+      "uncertainty": "Sekundärquelle mit Unternehmensangaben; aktueller Status der Fabrik und Gesellschafterstruktur nicht geprüft (Beziehungsfakten an Cluster).",
+      "proposed_depth": "A",
+      "depth_reason": "GCC-Service-/Lokalisierungsbezug des Produkts",
+      "event_date": "2022-03-06",
+      "event_status": "JV angekündigt"
+    },
+    {
+      "id": "P-SS-01",
+      "statement": "Rheinmetall Air Defence gewann laut Rheinmetall im April 2018 in einem Wettbewerb einen Auftrag eines asiatischen Staates über mehr als 100 Mio. EUR für Skyshield-Systeme der neuesten Generation (Sensoren, 35-mm-Feuereinheiten, Führung, Logistik/Ausbildung).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-f3ed5e1e0c0ea213"
+      ],
+      "evidence": "Auszug: 'In a competitive bidding process, Rheinmetall Air Defence won the order to supply the customer with the latest generation of its Skyshield systems.'",
+      "location": "Pressemitteilung 23.04.2018, Absätze 1–2",
+      "uncertainty": "Kunde nicht genannt.",
+      "proposed_depth": "B",
+      "depth_reason": "Hintergrund",
+      "event_date": "2018-04",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-RG-01",
+      "statement": "Rheinmetall beschreibt die Oerlikon Revolver Gun Mk3 als 35-mm-Flugabwehrgeschütz mit integriertem X-Band-Folgeradar und EO-Sensor, autonom einsetzbar, auf 6x6-Lkw montierbar, mit C-RAM-Fähigkeit und AHEAD; die zugrunde liegende KDG-Revolverkanone ist laut Rheinmetall nach STANAG 4516 qualifiziert und u. a. in MANTIS, Revolver Gun Mk2/Mk3, Skyranger und Millennium Gun verbaut.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-69738b1972b9a1ed",
+        "S-0775fadde4aeaf05"
+      ],
+      "evidence": "Herstellerseiten; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "",
+      "evidence_items": [
+        {
+          "source_id": "S-69738b1972b9a1ed",
+          "text": "Paraphrase: Abschnitt 'Oerlikon Revolver Gun Mk3' – 35-mm-Geschütz mit integriertem Radar-Tracker und EO-Sensoreinheit, auf jedem geeigneten 6x6-Lkw installierbar, C-RAM, AHEAD.",
+          "mode": "Paraphrase",
+          "location": "Produktseite Skynex, Abschnitt 'Oerlikon Revolver Gun Mk3'"
+        },
+        {
+          "source_id": "S-0775fadde4aeaf05",
+          "text": "Auszug: 'It is fully qualified according to STANAG 4516 ...' Typical installation: MANTIS C-RAM system, Oerlikon Revolver Gun MK2 and MK3, Oerlikon Skyranger, Oerlikon Millennium naval gun.",
+          "mode": "Auszug",
+          "location": "Produktseite Medium calibre weapons, Abschnitt '35 mm x 228 – KDG'"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Effektor-Produktdefinition"
+    },
+    {
+      "id": "P-XTAR-01",
+      "statement": "Rheinmetall beschreibt Oerlikon X-TAR3D als dreidimensionales X-Band-Erfassungsradar (Phased-Array-Puls-Doppler) für boden- und schiffsgestützte Anwendungen gegen Luftziele bis hin zu UAV, Marschflugkörpern und C-RAM-Zielen; die instrumentierte Reichweite wird auf der Skynex-Seite mit 25/35/50 km, auf der Seite 'Stationary air defence' mit 25/35/55 km angegeben.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-69738b1972b9a1ed",
+        "S-11300cfdaf427560"
+      ],
+      "evidence": "Herstellerseiten mit abweichenden Reichweitenangaben; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Widersprüchliche Reichweitenangabe (50 vs. 55 km) auf zwei Herstellerseiten; Italien-Mitteilung nennt 'bis zu 50 km'.",
+      "evidence_items": [
+        {
+          "source_id": "S-69738b1972b9a1ed",
+          "text": "Auszug: '25, 35 and 50 km instrumented range'",
+          "mode": "Auszug",
+          "location": "Produktseite Skynex, Abschnitt 'Oerlikon X-TAR3D Tactical Acquisition Radar'"
+        },
+        {
+          "source_id": "S-11300cfdaf427560",
+          "text": "Auszug: '25, 35 and 55 km instrumented range'",
+          "mode": "Auszug",
+          "location": "Produktseite Stationary air defence, Abschnitt 'Oerlikon X-TAR3D – Search Radar family'"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Sensorprodukt; Widerspruch offenlegen"
+    },
+    {
+      "id": "P-MSU-01",
+      "statement": "Rheinmetall beschreibt die Oerlikon Multi Sensor Unit (MSU) als fernbedienbare Sensoreinheit mit nicht rotierenden 3D-AESA-Suchradaren (360°), Detektionsreichweite bis 30 km (1 m² RCS), panoramischen EO-Sensoren und Standardschnittstelle zu Skymaster.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-69738b1972b9a1ed"
+      ],
+      "evidence": "Auszug: 'Detection range up to 30 km (1 m2 RCS target)' / 'Standard interface to Skymaster / C2 system'",
+      "location": "Produktseite Skynex, Abschnitt 'Oerlikon Multi Sensor Unit – MSU'",
+      "uncertainty": "",
+      "proposed_depth": "B",
+      "depth_reason": "Subsystem"
+    },
+    {
+      "id": "P-SM-01",
+      "statement": "Rheinmetall beschreibt Oerlikon Skymaster als Führungs- und Waffeneinsatzsystem für taktische und operative Flugabwehrnetze mit Multi-Spektrum-Sensorvernetzung; in der Drohnenabwehr-Toolbox fusioniert und klassifiziert Skymaster Signale verschiedener Sensoren zu einem Luftlagebild.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-b4a0be56edf21cf2",
+        "S-81ee1216c407e8d6"
+      ],
+      "evidence": "Herstellerseiten; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "",
+      "evidence_items": [
+        {
+          "source_id": "S-b4a0be56edf21cf2",
+          "text": "Auszug: 'Tactical and operational air defence networks' / 'Multi-spectrum sensor netting solutions'",
+          "mode": "Auszug",
+          "location": "Produktseite Skymaster, Aufzählung"
+        },
+        {
+          "source_id": "S-81ee1216c407e8d6",
+          "text": "Auszug: 'The generated signals are processed, fused, and classified by our in-house command and control system \"Skymaster\" ...'",
+          "mode": "Auszug",
+          "location": "Produktseite Drone defence toolbox, Absatz 3"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "C2-Kernprodukt"
+    },
+    {
+      "id": "P-SSP-01",
+      "statement": "Rheinmetall präsentierte auf der Eurosatory 2026 das Drohnendetektionssystem Skyspotter als Multisensor-Frühwarnsystem zur Erkennung, Identifikation und Verfolgung, u. a. für den Schutz von Flughäfen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3997375c416bfffe"
+      ],
+      "evidence": "Auszug: 'The Skyspotter was developed as a multi-sensor early warning system. Its primary task is to detect potential airborne threats well in advance, identify them precisely and track them seamlessly.'",
+      "location": "Pressemitteilung 15.06.2026, Absätze 1–3",
+      "uncertainty": "Kein Kundenauftrag gefunden.",
+      "proposed_depth": "B",
+      "depth_reason": "Messepräsentation",
+      "event_date": "2026-06",
+      "event_status": "präsentiert"
+    },
+    {
+      "id": "P-SSP-02",
+      "statement": "Bei den GBAD Demo Days 2025 in Lohtaja (Finnland) demonstrierte Rheinmetall Air Defence auf Einladung des finnischen Flugabwehrinspekteurs Skyspotter (auch auf HX-Lkw) mit abgesetzten Passive-Emitter-Locator-Sensoren und C2-Shelter; eine 30-mm-Revolverkanone mit KETF-Munition als Effektoroption befindet sich laut Mitteilung in der Konzeptphase.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-6ceae77f0e11c121"
+      ],
+      "evidence": "Auszug: '... the highly flexible 30 mm revolver gun, which is currently in the conceptional phase.'",
+      "location": "Pressemitteilung 16.12.2025, Absätze 1–4",
+      "uncertainty": "Demonstration, kein Auftrag; Ergebnisbewertung nur Herstellerangabe.",
+      "proposed_depth": "B",
+      "depth_reason": "Demonstration",
+      "event_date": "2025",
+      "event_status": "demonstriert"
+    },
+    {
+      "id": "P-AH-01",
+      "statement": "Rheinmetall beschreibt das 35-mm-AHEAD-System aus Mess- und Programmiereinheit, Steuerelektronik und programmierbarer Munition mit je 152 Wolfram-Subprojektilen; Airburst-Munition (ABM) ist laut Rheinmetall in 30 x 173 mm und 35 x 228 mm verfügbar.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-37f835c7c1c07fd6"
+      ],
+      "evidence": "Auszug: 'Each Ahead round contains 152 tungsten sub-projectiles ...' / 'The ABM round is available in calibre 30 mm x 173 and 35 mm x 228.'",
+      "location": "Produktseite Medium calibre ammunition, Abschnitte 'Ahead Ammunition' und 'Air Burst Ammunition'",
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Munitionsprodukt"
+    },
+    {
+      "id": "P-AH-02",
+      "statement": "Ein nicht genanntes europäisches Kundenland beauftragte Rheinmetall im Mai 2024 mit 35-mm-AHEAD-Munition für Skynex im niedrigen dreistelligen Mio.-EUR-Bereich (sechsstellige Patronenzahl).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-7f40b1791bf978ab"
+      ],
+      "evidence": "Auszug: 'A European customer country has commissioned Rheinmetall to supply 35mm AHEAD ammunition for the Skynex air defence system.' / 'A six-digit number of cartridges will be manufactured.'",
+      "location": "Pressemitteilung 28.05.2024, Key facts und Absatz 1",
+      "uncertainty": "Kunde nicht genannt.",
+      "proposed_depth": "A",
+      "depth_reason": "Munitionsauftrag",
+      "event_date": "2024-05",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-GP-01",
+      "statement": "Für den Flugabwehrkanonenpanzer Gepard erhielt Rheinmetall im Februar 2023 einen Auftrag über 300.000 Schuss 35-mm-Munition für die Ukraine, schuf dafür eine Fertigung in Unterlüß und lieferte laut Mitteilung im September 2023 eine erste Charge; im Dezember 2024 folgte ein Auftrag über weitere 180.000 Schuss HEI-T (hoher zweistelliger Mio.-EUR-Bereich, finanziert durch Deutschland, Lieferbeginn 2026).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-c5774e615432a4d1",
+        "S-081455a6101c816e"
+      ],
+      "evidence": "Zwei Rheinmetall-Mitteilungen; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Lieferbeginn 2026 für die zweite Tranche ist Plan.",
+      "evidence_items": [
+        {
+          "source_id": "S-c5774e615432a4d1",
+          "text": "Paraphrase: Erste Lieferung neuer 35-mm-Gepard-Munition an die Ukraine unterwegs; 300.000 Schuss bestellt; Produktion nach Deutschland (Unterlüß) verlagert; 40.000 Schuss bis Jahresende 2023.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 05.09.2023, Key facts und Absätze 1–4"
+        },
+        {
+          "source_id": "S-081455a6101c816e",
+          "text": "Auszug: 'The new order comprises 180,000 rounds of HEI-T ammunition ... and was booked in December of 2024.'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 06.01.2025, Absatz 1"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Munitionsfertigung/Lieferung",
+      "event_date": "2023-09",
+      "event_status": "geliefert (erste Charge) / beauftragt"
+    },
+    {
+      "id": "P-HEL-01",
+      "statement": "Der Laserwaffendemonstrator der ARGE aus MBDA Deutschland und Rheinmetall Waffe Munition wurde laut Rheinmetall am 30.08.2022 erstmals von der Fregatte Sachsen gegen Drohnen eingesetzt; Rheinmetall verantwortet u. a. Richtsystem, Strahlführung, Container, Integration an Deck und die Hochenergie-Laserquelle, MBDA Zielerfassung/-verfolgung, Bedienkonsole und C2-Anbindung.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-06ea7a8a3f2ad0cd"
+      ],
+      "evidence": "Auszug: 'On August 30th 2022, the German frigate Sachsen successfully engaged drones at short and very short range in the Baltic Sea near Putlos Major Training Area.'",
+      "location": "Pressemitteilung 27.10.2022, Absatz 1 und letzter Absatz",
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Test eines HEL-Demonstrators",
+      "event_date": "2022-08-30",
+      "event_status": "erprobt"
+    },
+    {
+      "id": "P-HEL-02",
+      "statement": "Die Seeerprobung des Laserwaffendemonstrators auf der Sachsen wurde laut Rheinmetall im September 2023 nach sechs Kampagnen mit mehr als 100 Testschüssen abgeschlossen; im Oktober 2025 wurde der Demonstrator am Laserkompetenzzentrum der WTD 91 in Meppen für weitere landgestützte Drohnenabwehrtests in Betrieb genommen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-16115aa2a8137b37",
+        "S-3e6da2e4a874f72c"
+      ],
+      "evidence": "Zwei Rheinmetall-Mitteilungen; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "",
+      "evidence_items": [
+        {
+          "source_id": "S-16115aa2a8137b37",
+          "text": "Auszug: 'The LWD has performed more than a hundred test firings onboard the Sachsen ...'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 22.09.2023, Absätze 1–3"
+        },
+        {
+          "source_id": "S-3e6da2e4a874f72c",
+          "text": "Auszug: '... the laser container has now been put into operation for further land-based drone defence testing.'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 28.10.2025, Absätze 1–4"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Testhistorie",
+      "event_date": "2023-09",
+      "event_status": "erprobt"
+    },
+    {
+      "id": "P-HEL-03",
+      "statement": "Am 09.07.2026 schloss das BAAINBw mit der ARGE HEL (MBDA Deutschland, Rheinmetall Waffe Munition) einen Vertrag über die Entwicklung eines Hochenergie-Laserwaffensystems für die Deutsche Marine im mittleren dreistelligen Mio.-EUR-Bereich; Einsatzbereitschaft wird bis 2029 erwartet; die Partner bilden dafür ein Gemeinschaftsunternehmen (im Januar 2026 für Q1 2026 angekündigt).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3373659fa8b66b85",
+        "S-faa22e3546ff37b9"
+      ],
+      "evidence": "Zwei Rheinmetall-Mitteilungen; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Gründung/Vollzug des JV in geöffneten Quellen nicht bestätigt ('currently forming', Stand Juli 2026); Einsatzbereitschaft 2029 ist Ziel.",
+      "evidence_items": [
+        {
+          "source_id": "S-3373659fa8b66b85",
+          "text": "Auszug: 'On 9 July 2026, the Federal Office of Bundeswehr Equipment ... signed a contract with the High-Energy Laser Naval Demonstrator Working Group (ARGE HEL) for the development of a high-energy laser weapon system for the German Navy.'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 09.07.2026, Absatz 1"
+        },
+        {
+          "source_id": "S-faa22e3546ff37b9",
+          "text": "Paraphrase: Rheinmetall und MBDA Deutschland planen die Gründung eines Gemeinschaftsunternehmens (GmbH) für Marine-Laseraktivitäten im ersten Quartal 2026.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 05.01.2026, Key facts und Absatz 1"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Entwicklungsauftrag benannter Staatskunde",
+      "event_date": "2026-07-09",
+      "event_status": "Entwicklung beauftragt"
+    },
+    {
+      "id": "P-CUAS-01",
+      "statement": "Die Drohnenabwehr-Toolbox (Kontakt Rheinmetall Electronics, Bremen) kombiniert laut Rheinmetall X- und S-Band-Radare, Passive Emitter Locator, ADS-B, 360°-Kameras und IR/TV-Kameras mit Skymaster; ein gerichteter C-UAS-Jammer ist verfügbar, Fangdrohnen und Flugabwehrkanonen mit AHEAD sollen künftig integrierbar sein.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-81ee1216c407e8d6"
+      ],
+      "evidence": "Auszug: 'The Rheinmetall C-UAS jammer with its directed jamming signal is readily available for interventions. In the near future, autonomous catcher drones can be integrated ...'",
+      "location": "Produktseite Drone defence toolbox, Absätze 2–4",
+      "uncertainty": "",
+      "proposed_depth": "B",
+      "depth_reason": "Produktbeschreibung"
+    },
+    {
+      "id": "P-CUAS-02",
+      "statement": "Rheinmetall bietet die fernbediente Waffenstation RCWS320C-UAS (NGVA-konform, Hard- und Softkill-Effektoren, SEOSS-320-Visier, Dillon Aero M134D) für Rad-/Kettenfahrzeuge, UGV und stationäre Anlagen sowie als Containerlösung an; vorgestellt auf der Enforce Tac 2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3b238e0c480e757b",
+        "S-50513344d04758cf"
+      ],
+      "evidence": "Herstellerseite und Messemitteilung; siehe evidence_items.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Kein Kundenauftrag gefunden.",
+      "evidence_items": [
+        {
+          "source_id": "S-3b238e0c480e757b",
+          "text": "Paraphrase: Effektor für C-UAS auf Ketten-/Radfahrzeugen, UGV und festen Anlagen; NGVA-konform; Hard-/Softkill; containerisierte CRCWS 320 C-UAS.",
+          "mode": "Paraphrase",
+          "location": "Produktseite RCWS320C-UAS, Absätze 1–4 und Abschnitt 'Protecting the mission'"
+        },
+        {
+          "source_id": "S-50513344d04758cf",
+          "text": "Auszug: 'The weapon is a Dillon Aero M134D – the proven, electrically driven minigun ...'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung 23.02.2026, Absatz 3"
+        }
+      ],
+      "proposed_depth": "B",
+      "depth_reason": "Angebot",
+      "event_date": "2026-02",
+      "event_status": "präsentiert"
+    },
+    {
+      "id": "P-CUAS-03",
+      "statement": "Auf der Eurosatory 2026 zeigte Rheinmetall den Hermelin C-UAS, eine hybride 6x6-Plattform mit/ohne Besatzung mit Rheinmetall Path-Kit für autonome Mobilität und FN-Herstal-Waffenstation DeFNder Medium mit 12,7-mm-M3M.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-aa06566f7d1b93c7"
+      ],
+      "evidence": "Auszug: '... the Hermelin will be equipped with the FN DeFNder Medium remote-controlled weapon station featuring the proven 12.7mm x 99 M3M machine gun, both from FN Herstal.'",
+      "location": "Pressemitteilung 15.06.2026, Key facts und Absatz 4",
+      "uncertainty": "Messeexponat.",
+      "proposed_depth": "B",
+      "depth_reason": "Messeexponat",
+      "event_date": "2026-06",
+      "event_status": "präsentiert"
+    },
+    {
+      "id": "P-CUAS-04",
+      "statement": "Rheinmetall Defence Australia und Praetorian Aeronautics stellten im Oktober 2026 den containerisierten C-UAS-Werfer AERIE vor (20-Fuß-ISO-Container, mehr als 20 Abfangflugkörper, Demonstrator mit Praetorian 'Arrow Interceptor' und 'Hadrian C2'); ein Prototyp entstand laut Mitteilung binnen zwölf Monaten, Full-Operator-Demonstrationen sind für Q4 2026 geplant.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-ed85256fd87c2a74"
+      ],
+      "evidence": "Auszug: 'Der Demonstrator verfügt über den „Arrow Interceptor“ und das „Hadrian Command and Control (C2)“-System von Praetorian Aeronautics' / 'Das AERIE-System soll im vierten Quartal 2026 in die Phase der Full-Operator-Demonstrations übergehen.'",
+      "location": "Pressemitteilung 07.10.2026 (deutsch), Keyfacts und Absätze 1–4",
+      "uncertainty": "Titel spricht von 'liefern'; Inhalt belegt Prototyp/Demonstrator, keinen Kundenauftrag.",
+      "proposed_depth": "A",
+      "depth_reason": "neuestes C-UAS-Produkt; Titel/Inhalt-Abweichung",
+      "event_date": "2026-10-07",
+      "event_status": "Prototyp/Demonstrator"
+    },
+    {
+      "id": "P-CUAS-05",
+      "statement": "Rheinmetall und die Deutsche Telekom kündigten im Mai 2026 an, gemeinsam einen Abwehrschirm gegen Drohnen und Sabotage für Städte und kritische Infrastruktur in Deutschland entwickeln zu wollen; Details sollten später folgen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3094767eb36c7a05"
+      ],
+      "evidence": "Auszug: 'Rheinmetall and Telekom plan to jointly develop a defence shield against drones and acts of sabotage.'",
+      "location": "Gemeinsame Pressemitteilung 11.05.2026, Absatz 1",
+      "uncertainty": "Absichtserklärung; Beziehung an Cluster.",
+      "proposed_depth": "B",
+      "depth_reason": "Ankündigung",
+      "event_date": "2026-05",
+      "event_status": "angekündigt"
+    },
+    {
+      "id": "P-NNBS-01",
+      "statement": "Das BAAINBw vergab am 25.01.2024 den Entwicklungsvertrag für das Luftverteidigungssystem Nah- und Nächstbereichsschutz (LVS NNbS) an die ARGE NNbS (Rheinmetall Electronics, Diehl Defence, Hensoldt Sensors) über rund 1,2 Mrd. EUR inkl. MwSt., davon 607 Mio. EUR Rheinmetall; vorgesehen ist u. a. die Vernetzung mit IRIS-T SLM und Skyranger 30.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-8be20dfde7cdb9e0"
+      ],
+      "evidence": "Auszug: 'The contract is worth around €1.2 billion (including VAT), with Rheinmetall accounting for €607 million, Diehl for €339 million, and Hensoldt for €284 million ...'",
+      "location": "Pressemitteilung 25.01.2024, Absätze 1 und 5",
+      "uncertainty": "Konsortialbeziehung an Cluster.",
+      "proposed_depth": "A",
+      "depth_reason": "Entwicklungsprogramm benannter Staatskunde",
+      "event_date": "2024-01-25",
+      "event_status": "Entwicklung beauftragt"
+    },
+    {
+      "id": "P-MG-01",
+      "statement": "Rheinmetall beschreibt die Oerlikon Millennium Gun als 35-mm-Marinegeschütz gegen Seeziele und Luftbedrohungen (Seezielflugkörper, Flugzeuge, Hubschrauber, UAV) mit AHEAD, 252 feuerbereiten Schuss und 1.000 Schuss/min; sie sei auch landgestützt für C-RAM eingesetzt worden; die Seite nennt 'TRL 9'. Daneben werden Searanger 20 und Seaguard Biax angeboten.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-c7786baa0a315e17"
+      ],
+      "evidence": "Auszug: 'The Millennium Gun, with its programmable Oerlikon Ahead ammunition, has also been deployed to provide counter rocket, artillery and mortar (C-RAM) defence for land-based applications.' / '252 rounds ready to fire ammunition'",
+      "location": "Produktseite Naval air defence, Abschnitt 'Oerlikon Millennium Gun'",
+      "uncertainty": "TRL-Angabe ist Herstellerangabe, keine Reifeeinordnung dieses Moduls; Land-C-RAM-Einsatz ohne Kunden/Ort.",
+      "proposed_depth": "A",
+      "depth_reason": "Naval-Air-Defence-Produkt"
+    },
+    {
+      "id": "P-MG-02",
+      "statement": "European Security & Defence berichtete im Oktober 2023, die Millennium Gun sei u. a. auf dänischen Fregatten der Iver-Huitfeldt- und Absalon-Klasse, indonesischen OPV, den Al-Jubail-Korvetten der Royal Saudi Navy, Schiffen Venezuelas und neuen kolumbianischen SIGMA-10514-Fregatten eingerüstet.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-c7e039b1d7fdfd1f"
+      ],
+      "evidence": "Auszug: 'is also mounted on board the Royal Saudi Navy's Al Jubail class corvettes'",
+      "location": "ESD 16.10.2023, Abschnitt zu Oerlikon Millennium",
+      "uncertainty": "Sekundärquelle ohne benannte Quelle für die Kundenliste; keine Primärbestätigung geöffnet.",
+      "proposed_depth": "A",
+      "depth_reason": "GCC-Kundenbezug Marine",
+      "event_date": "2023-10",
+      "event_status": "eingerüstet berichtet"
+    },
+    {
+      "id": "P-MASS-01",
+      "statement": "Kuwait beauftragte Rheinmetall laut Mitteilung vom Juli 2026 erstmals mit dem Täuschkörper-Selbstschutzsystem MASS für acht Flugkörperschnellboote der Al-Dorra-Klasse (gebaut von Abu Dhabi Shipbuilding für den Generalunternehmer EDGE Group) samt Omnitrap-ER-Munition; Lieferung Q2 2026 bis Q2 2029.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a831015ab01561c0"
+      ],
+      "evidence": "Auszug: 'Rheinmetall is to supply MASS for Al Dorra-class guided-missile boats ... They are being built by Abu Dhabi Shipbuilding on behalf of the United Arab Emirates-based EDGE Group, which is acting as the prime contractor.'",
+      "location": "Pressemitteilung 10.07.2026, Key facts und Absätze 1–2",
+      "uncertainty": "Wertangaben in Key facts (mittlerer zweistelliger Mio.-Bereich gesamt) und Text (niedriger zweistelliger Mio.-Bereich für Werfer plus hoher einstelliger für Munition) – Gesamt nicht eindeutig; MASS ist Softkill-Schiffsschutz (Abwehr von Seezielflugkörpern), kein Flugabwehrgeschütz.",
+      "proposed_depth": "A",
+      "depth_reason": "GCC-Staatskundenauftrag",
+      "event_date": "2026-Q2",
+      "event_status": "beauftragt"
+    },
+    {
+      "id": "P-GULF-01",
+      "statement": "In einer gemeinsamen Mitteilung mit der Telekom (Mai 2026) erklärt Rheinmetall, Effektoren des Konzerns seien derzeit in der Ukraine und im Nahen Osten im Einsatz.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3094767eb36c7a05"
+      ],
+      "evidence": "Auszug: 'Effectors from the Düsseldorf-based technology group are currently in use in Ukraine and the Middle East.'",
+      "location": "Pressemitteilung 11.05.2026, Abschnitt 'Rheinmetall: Specialist in drone defence and autonomous systems'",
+      "uncertainty": "Keine Angabe zu Ländern, Produkten oder Art des Einsatzes.",
+      "proposed_depth": "A",
+      "depth_reason": "Einsatzaussage Region",
+      "event_date": "2026-05",
+      "event_status": "Einsatz berichtet (Herstellerangabe)"
+    },
+    {
+      "id": "P-GULF-02",
+      "statement": "Auf der IDEX 2019 in Abu Dhabi zeigte Rheinmetall laut einer auf Soldier Systems Daily wiedergegebenen Unternehmensmitteilung eine Skynex-Konfiguration mit Revolver Gun Mk3 auf HX77-Lkw, X-TAR3D-Suchradar, Cheetah-Lenkflugkörper und Hochenergielaser-Effektor.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-0111976d9a6dd789"
+      ],
+      "evidence": "Paraphrase: Die Skynex-Konfiguration am Stand in Abu Dhabi umfasse die fernbediente, netzwerkfähige Revolver Gun Mk3 auf HX77, ein X-TAR3D, einen Cheetah-Flugkörper und einen HEL-Effektor.",
+      "location": "Soldier Systems Daily 15.02.2019 (Rubrik Advertiser/Press Release), Haupttext",
+      "uncertainty": "Drittanbieter-Kopie; Originalmitteilung auf rheinmetall.com nicht geöffnet; Messeauftritt belegt keinen Auftrag.",
+      "proposed_depth": "B",
+      "depth_reason": "GCC-Messepräsenz",
+      "event_date": "2019-02",
+      "event_status": "präsentiert"
+    }
+  ],
+  "source_proposals": [
+    {
+      "id": "S-001a4ac74ab4feec",
+      "name": "Rheinmetall AG",
+      "title": "Division Air Defence",
+      "url": "https://www.rheinmetall.com/en/company/divisions/air-defence",
+      "published_date": null,
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Produktseite)"
+    },
+    {
+      "id": "S-0111976d9a6dd789",
+      "name": "Soldier Systems Daily",
+      "title": "Force Protection is our Mission: Rheinmetall at IDEX 2019",
+      "url": "https://soldiersystems.net/2019/02/15/force-protection-is-our-mission-rheinmetall-at-idex-2019/",
+      "published_date": "2019-02-15",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Drittanbieter-Kopie einer Herstellermitteilung (Rubrik Advertiser/Press Release)"
+    },
+    {
+      "id": "S-06ea7a8a3f2ad0cd",
+      "name": "Rheinmetall AG",
+      "title": "German Armed Forces conduct first operational tests of high-energy laser weapon against drones",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2022/2022-10-27_german-armed-forces-conduct-first-operational-tests-of-high-energy-laser-weapon-against-drones",
+      "published_date": "2022-10-27",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-0775fadde4aeaf05",
+      "name": "Rheinmetall AG",
+      "title": "Medium calibre weapons – automatic cannons 20–35mm",
+      "url": "https://www.rheinmetall.com/en/products/weapons-and-ammunition/medium-calibre-canonns",
+      "published_date": null,
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Produktseite)"
+    },
+    {
+      "id": "S-081455a6101c816e",
+      "name": "Rheinmetall AG",
+      "title": "Replenishment for air defence: Rheinmetall delivers 35mm-ammunition for anti-aircraft gun Gepard to Ukraine",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/01/2025-01-06-35mm-gepardmunition-fuer-ukr",
+      "published_date": "2025-01-06",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-09c52404c1b93824",
+      "name": "Rheinmetall AG",
+      "title": "Mobile air defence: Rheinmetall hands over verification model of Skyranger 30 to the Bundeswehr",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/02/2025-02-05-rheinmetall-hands-over-verification-model-of-skyranger-30-to-the-bundeswehr",
+      "published_date": "2025-02-05",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-11300cfdaf427560",
+      "name": "Rheinmetall AG",
+      "title": "Stationary air defence – Critical asset protection",
+      "url": "https://www.rheinmetall.com/en/products/air-defence-systems/stationary-air-defence",
+      "published_date": null,
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Produktseite)"
+    },
+    {
+      "id": "S-16115aa2a8137b37",
+      "name": "Rheinmetall AG",
+      "title": "Bundeswehr successfully concludes laser weapon trials at sea",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2023/9/2023-09-22-laser-weapon-trials-at-sea",
+      "published_date": "2023-09-22",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-17c0358578e526e5",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall supplying international customer with Skynex air defence system",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2022/2022-12-09_rheinmetall-supplying-international-customer-with-skynex-air-defence-system",
+      "published_date": "2022-12-09",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-24a17414294b663e",
+      "name": "Rheinmetall AG",
+      "title": "DSEI 2025: Rheinmetall Mission Master CXT2 with Oerlikon Skyranger 762 – the robotic combat force multiplier for Ultra-Short Range Air Defence",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/09/2025-09-09-rheinmetall-mission-master-cxt2-with-oerlikon-skyranger-762-at-dsei",
+      "published_date": "2025-09-09",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-3094767eb36c7a05",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall and Telekom plan to develop a drone defence shield",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/05/2026-05-11-rheinmetall-and-telekom-are-collaborating-on-drone-defence-in-the-civilian-sector",
+      "published_date": "2026-05-11",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-3373659fa8b66b85",
+      "name": "Rheinmetall AG",
+      "title": "BAAINBw commissions Rheinmetall and MBDA to develop a laser weapon system for the German Navy",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/07/2026-07-09-baainbw-commissions-rheinmetall-and-mbda-to-develop-a-laser-weapon-system-for-the-german-navy",
+      "published_date": "2026-07-09",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-37f835c7c1c07fd6",
+      "name": "Rheinmetall AG",
+      "title": "Medium calibre ammunition",
+      "url": "https://www.rheinmetall.com/en/products/weapons-and-ammunition/medium-calibre-ammunition",
+      "published_date": null,
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Produktseite)"
+    },
+    {
+      "id": "S-3997375c416bfffe",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall presents its innovative Skyspotter drone detection system at Eurosatory 2026",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-15-rheinmetall-at-eurosatory-presents-its-innovative-skyspotter-drone-detection-system",
+      "published_date": "2026-06-15",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-3b238e0c480e757b",
+      "name": "Rheinmetall AG",
+      "title": "Effector RCWS320C-UAS",
+      "url": "https://www.rheinmetall.com/en/products/weapon-stations/rcws-320-c-uas",
+      "published_date": null,
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Produktseite)"
+    },
+    {
+      "id": "S-3b27cf3712ca73d2",
+      "name": "Rheinmetall AG",
+      "title": "Cutting-edge drone defence technology: Italy receives its first Skynex air defence system from Rheinmetall",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-23-rheinmetall-hands-over-first-skynex-system-to-italy",
+      "published_date": "2025-12-23",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-3c0b72dcdb4a669f",
+      "name": "Army Recognition (Evan Lerouvillois)",
+      "title": "Qatar deploys Skynex 35mm air defense at DIMDEX 2026 to counter growing drone threats",
+      "url": "https://www.armyrecognition.com/archives/archives-defense-exhibitions/2026-archives-news-defense-exhibitions/dimdex-2026/qatar-deploys-skynex-35mm-air-defense-at-dimdex-2026-to-counter-growing-drone-threats",
+      "published_date": "2026-01-20",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-3e41dec11fd4d5d0",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall supplying European customer with further Skynex air defence systems",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/03/2024-03-01-rheinmetall-supplying-further-skynex-air-defence-systems",
+      "published_date": "2024-03-01",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-3e6da2e4a874f72c",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall and MBDA: German laser weapon system close to market readiness",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/10/2025-10-28-rheinmetall-and-mbda-german-laser-weapon-system-close-to-market-readiness",
+      "published_date": "2025-10-28",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-50513344d04758cf",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall at Enforce Tac 2026: RCWS320-UAS – a modern effector for countering drones",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/02/2026-02-23-rheinmetall-enforce-tac-rcws320-c-uas-effector",
+      "published_date": "2026-02-23",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-562f0f3f359a746b",
+      "name": "Rheinmetall AG",
+      "title": "Market breakthrough in Austria: Rheinmetall supplying Skyranger air defence system on Pandur wheeled armoured vehicle",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/02/2024-02-23-rheinmetall-supplies-skyranger-30-to-austria",
+      "published_date": "2024-02-23",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-60677f3d57da054d",
+      "name": "Rheinmetall AG",
+      "title": "Major order from the Netherlands: Rheinmetall to supply Skyranger 30 for mobile air defence",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-12-rheinmetall-to-supply-skyranger-30-for-the-dutch-armed-forces",
+      "published_date": "2025-12-12",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-6282cce4ae4b577f",
+      "name": "Rheinmetall AG",
+      "title": "ILA 2024: Rheinmetall and MBDA sign agreement to integrate the Small Anti Drone Missile into the Skyranger 30 and other military platforms",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/06/2024-06-05-rheinmetall-mbda-small-anti-drone-missile",
+      "published_date": "2024-06-05",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-69738b1972b9a1ed",
+      "name": "Rheinmetall AG",
+      "title": "Networked air defence – Oerlikon Skynex air defence system",
+      "url": "https://www.rheinmetall.com/en/products/air-defence-systems/networked-air-defence-skynex",
+      "published_date": null,
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Produktseite)"
+    },
+    {
+      "id": "S-6bdb338d23c29e11",
+      "name": "Rheinmetall AG",
+      "title": "Strengthening NATO's eastern flank: Romania orders Skyranger 35 air defence systems from Rheinmetall",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-24-romania-orders-skyranger-35-air-defence-systems-from-rheinmetall",
+      "published_date": "2026-06-24",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-6c44e0c111e6d686",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall and Hensoldt demonstrate successful integration of passive sensor technology into a modern air defence system",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/08/2026-08-19-rheinmetall-and-hensoldt-demonstrate-the-successful-integration-of-passive-sensor-technology",
+      "published_date": "2026-08-19",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-6cd5701123f00a73",
+      "name": "Janes (Jeremy Binnie)",
+      "title": "Qatar unveils Skynex air defence",
+      "url": "https://www.janes.com/osint-insights/defence-news/weapons/qatar-unveils-skynex-air-defence",
+      "published_date": "2022-10-14",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-6ceae77f0e11c121",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall successfully demonstrates drone defence capabilities in Finland",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-16-rheinmetall-demonstrates-drone-defence-capabilities-in-finland",
+      "published_date": "2025-12-16",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-724f79dd7eacb957",
+      "name": "Rheinmetall AG",
+      "title": "The Skyranger 30 HEL – Hybrid solution for modern air defence",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2022/2022-02-04_the-skyranger-30-hel",
+      "published_date": "2022-02-04",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-7f40b1791bf978ab",
+      "name": "Rheinmetall AG",
+      "title": "Major order for air defence ammunition: Rheinmetall supplies 35mm AHEAD ammunition worth a low triple-digit million euro amount to European customer country",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/05/2024-05-28-35mm-ahead-for-european-customer-country",
+      "published_date": "2024-05-28",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-81ee1216c407e8d6",
+      "name": "Rheinmetall AG",
+      "title": "Drone defence toolbox",
+      "url": "https://www.rheinmetall.com/en/products/air-defence-systems/drone-defence-toolbox",
+      "published_date": null,
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Produktseite)"
+    },
+    {
+      "id": "S-829071fd179d4705",
+      "name": "EDR Magazine (Paolo Valpolini)",
+      "title": "Halcon and Rheinmetall Air Defence team up for the Skynex",
+      "url": "https://www.edrmagazine.eu/halcon-and-rheinmetall-air-defence-team-up-for-the-skynex",
+      "published_date": "2021-03-08",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-8be20dfde7cdb9e0",
+      "name": "Rheinmetall AG",
+      "title": "Starting gun sounds for Germany's advanced short- and very short-range air defence system – development contract awarded",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/01/2024-01-25-starting-gun-for-air-defence-system-nnbs",
+      "published_date": "2024-01-25",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-928f8de516fc152d",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall Air Defence AG – About us",
+      "url": "https://www.rheinmetall.com/en/company/subsidiaries/rheinmetall-air-defence/about-us",
+      "published_date": null,
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Produktseite)"
+    },
+    {
+      "id": "S-957ebff673ab8d20",
+      "name": "Defense News (Tom Kington)",
+      "title": "Rheinmetall Italia touts Ukraine deployment of Skynex air defense gun",
+      "url": "https://www.defensenews.com/global/europe/2024/01/26/rheinmetall-italia-touts-ukraine-deployment-of-skynex-air-defense-gun/",
+      "published_date": "2024-01-26",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-a03195f784728b13",
+      "name": "Rheinmetall AG",
+      "title": "€328 million order in Romania: Rheinmetall to modernize NATO partner's air defence systems",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2023/12/2023-12-22-order-air-defence-from-romania",
+      "published_date": "2023-12-22",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-a51eb8534c24e129",
+      "name": "Janes (Charles Forrester)",
+      "title": "WDS 2022: Rheinmetall, MAZ Group launch joint venture",
+      "url": "https://www.janes.com/osint-insights/defence-news/wds-2022-rheinmetall-maz-group-launch-joint-venture",
+      "published_date": "2022-03-07",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-a831015ab01561c0",
+      "name": "Rheinmetall AG",
+      "title": "Major order: Kuwait procures Rheinmetall's MASS decoy launchers for the first time",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/07/2026-07-10-kuwait-commissions-rheinmetall-mass-ship-protection-systems",
+      "published_date": "2026-07-10",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-aa06566f7d1b93c7",
+      "name": "Rheinmetall AG",
+      "title": "Eurosatory 2026: Hermelin C-UAS – Autonomous mobility and effective drone defence for the battlefield of the future",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-15-rheinmetall-at-eurosatory-hermelin-c-uas-ermine-c-uas",
+      "published_date": "2026-06-15",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-afe1512f0f6979bd",
+      "name": "Rheinmetall AG",
+      "title": "Effective protection against threats from above: Skyranger 30 passes an important milestone",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/01/2024-01-11-skyranger-30-passes-an-important-milestone",
+      "published_date": "2024-01-11",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-b003618b3ae9eba2",
+      "name": "Rheinmetall AG",
+      "title": "Contract worth several hundred million euros: Rheinmetall is supplying four Skynex systems to an international customer",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/07/2026-07-02-rheinmetall-is-supplying-four-skynex-systems-to-an-international-customer",
+      "published_date": "2026-07-02",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-b4a0be56edf21cf2",
+      "name": "Rheinmetall AG",
+      "title": "Command & control system for air defence – Oerlikon Skymaster",
+      "url": "https://www.rheinmetall.com/en/products/air-defence-systems/command-and-control-system-skymaster",
+      "published_date": null,
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Produktseite)"
+    },
+    {
+      "id": "S-b8a3496f93a22c8c",
+      "name": "Rheinmetall AG",
+      "title": "Mobile air defence: Rheinmetall to supply the Bundeswehr with Skyranger 30 on Boxer platform – order worth almost €600 million",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/02/2024-02-27-bundeswehr-ordered-skyranger-30-mobile-air-defence-system",
+      "published_date": "2024-02-27",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-b935cdad4fdfc9f0",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall to modernize international client's air defence systems in multimillion-euro project",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2019/2019-12-09_rheinmetall-to-modernize-international-client-s-air-defence-systems-in-multimillion-euro-project",
+      "published_date": "2019-12-09",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-c0d13e5db6387716",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall showcases its cutting-edge Skyranger air defence system at ILA 2026",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-10-rheinmetall-showcases-its-cutting-edge-skyranger-air-defence-system-at-ila-2026",
+      "published_date": "2026-06-10",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-c5774e615432a4d1",
+      "name": "Rheinmetall AG",
+      "title": "Made in Germany – first shipment of new Gepard ammunition now on its way to Ukraine",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2023/9/2023-09-05-rheinmetall-supplies-35mm-gepard-ammunition-to-ukraine",
+      "published_date": "2023-09-05",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-c6f02c948a96ecdf",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall's H1: Strong sales growth and record profitability",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/08/2026-08-06-rheinmetall-news-half-yearly-financial-report-h1",
+      "published_date": "2026-08-06",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-c7786baa0a315e17",
+      "name": "Rheinmetall AG",
+      "title": "Naval air defence – Oerlikon Millennium Gun, Searanger and Seaguard",
+      "url": "https://www.rheinmetall.com/en/products/air-defence-systems/naval-air-defence",
+      "published_date": null,
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Produktseite)"
+    },
+    {
+      "id": "S-c7e039b1d7fdfd1f",
+      "name": "European Security & Defence (Luca Peruzzi)",
+      "title": "New Guns, Missiles and Laser Systems for Naval Inner Layer Defence",
+      "url": "https://euro-sd.com/2023/10/articles/34026/new-guns-missiles-and-laser-systems-for-naval-inner-layer-defence/",
+      "published_date": "2023-10-16",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-caf1328d1364fda8",
+      "name": "Rheinmetall AG",
+      "title": "Skyranger – Mobile air defence (Oerlikon Skyranger family)",
+      "url": "https://www.rheinmetall.com/en/products/air-defence-systems/mobile-air-defence-skyranger",
+      "published_date": null,
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Produktseite)"
+    },
+    {
+      "id": "S-ccfa2e88d8a2c995",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall presents the Lynx Skyranger 35 at DSEI 2025 – highly mobile anti-aircraft defence on tracks",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/09/2025-09-09-lynx-skyranger-35-at-dsei-2025",
+      "published_date": "2025-09-09",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-cede873d57924937",
+      "name": "Rheinmetall AG",
+      "title": "Major historic international contract for Rheinmetall: Romania orders Lynx combat vehicles, vessels and air defence systems worth a total of €5.7 billion",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-02-major-historic-contract-in-romania-worth-5-7-billion",
+      "published_date": "2026-06-02",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-d1aafc1c9b0f1a75",
+      "name": "Rheinmetall AG",
+      "title": "Major order from Denmark: Rheinmetall to supply Skyranger 30 for mobile air defence",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/09/2024-09-30-rheinmetall-supplies-skyranger-30-for-denmark-s-mobile-air-defense-system",
+      "published_date": "2024-09-30",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-d2d239c37b99eddf",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall to showcase its cutting-edge Skyranger air defence system at Eurosatory 2026",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-15-rheinmetall-at-eurosatory-to-showcase-its-cutting-edge-skyranger-air-defence-system",
+      "published_date": "2026-06-15",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-d2ef86f50f08a3d3",
+      "name": "Rheinmetall AG",
+      "title": "Breakthrough for Skyranger 30 air defence system: Rheinmetall awarded development contract for Skyranger variant of Lynx in Hungary",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2023/12/2023-12-20-lynx-with-skyranger-30-for-hungary",
+      "published_date": "2023-12-20",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-d5c3acd69d302e6f",
+      "name": "Janes (Jeremy Binnie)",
+      "title": "Saudi Skyguard 3 acquisition confirmed",
+      "url": "https://janes.com/osint-insights/defence-news/saudi-skyguard-3-acquisition-confirmed",
+      "published_date": "2020-02-26",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-dfcb101880f585b3",
+      "name": "Rheinmetall AG",
+      "title": "Multimillion-euro contract: International customer orders air defence systems from Rheinmetall",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2019/2019-10-30_multimillion-euro-contract-international-customer-orders-air-defence-systems-from-rheinmetall",
+      "published_date": "2019-10-30",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-eadffcced857ac38",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall to supply Leopard 1 Skyranger 35 to Ukraine – order value in the three-digit million Euro range",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/10/2025-10-10-rheinmetall-skyranger-35-ukraine",
+      "published_date": "2025-10-10",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-ed85256fd87c2a74",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall und Praetorian Aeronautics liefern das containerisierte AERIE-System zur Abwehr unbemannter Fluggeräte",
+      "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/10/2026-10-07-rheinmetall-und-praetorian-aeronautics-liefern-containerisiertes-drohnenabwehrsystem-aerie",
+      "published_date": "2026-10-07",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-ef6817f0a0493313",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall wins major contract: Austria orders state-of-the-art air defence system for €532 million",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2023/12/2023-12-12-rheinmetall-successful-with-air-defense-in-austria",
+      "published_date": "2023-12-12",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-f3ed5e1e0c0ea213",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall to supply Asian customer with Skyshield air defence systems",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2018/2018-04-23_rheinmetall-to-supply-asian-customer-with-skyshield-air-defence-systems",
+      "published_date": "2018-04-23",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
+      "id": "S-faa22e3546ff37b9",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall and MBDA: Joint venture will efficiently combine development and production of state-of-the-art laser weapon systems",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/01/2026-01-05-rheinmetall-and-mbda-establish-laser-joint-venture",
+      "published_date": "2026-01-05",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    }
+  ],
+  "gaps": [
+    "Möglicher großer Bundeswehr-Folgeauftrag Skyranger (Medien berichteten 2025 über erwartete 6–8 Mrd. EUR / 500–600 Systeme): in geöffneten Primärquellen bis 12.10.2026 nicht als Vertrag belegt; Rheinmetall-Mitteilungen Juni 2026 nennen 19 beauftragte Fahrzeuge. Nicht als Fakt übernommen.",
+    "Tatsächliche Lieferung/Einsatz von Skyranger 35 (Leopard 1) in der Ukraine: nur Sekundärhinweise (u. a. militaeraktuell.at, HTTP 403) gefunden, nicht gelesen; Erstauftrag vor Oktober 2025 nicht geprüft.",
+    "Lieferbeginn Skyranger 30 an Österreich (geplant 2026) und Abschluss der Skyranger-30-A3-Qualifikation (geplant Mitte 2024) in geöffneten Quellen nicht bestätigt.",
+    "Kunden der Rheinmetall-Mitteilungen 2019 (rund 210 Mio. EUR), 2022 (zwei Skynex), 2024 (europäischer Skynex-Kunde, AHEAD) und Juli 2026 (vier Skynex) nicht benannt; Zuordnung zu Katar (2019) nur als Janes-Hinweis; keine Zuordnung des Juli-2026-Auftrags zu einem GCC-Staat belegt.",
+    "Keine Skyranger-Kundenaufträge aus GCC-Staaten in geöffneten Quellen gefunden; Skyranger-Präsentationen auf IDEX/WDS/DIMDEX nicht belegt (nur IDEX 2019 Skynex über Drittanbieter-Kopie).",
+    "Vollzug des MBDA-Rheinmetall-Laser-JV nicht belegt (Stand 09.07.2026: 'currently forming'); Verhältnis von SADM (LOI 2024) zu 'DefendAir' (ILA 2026) nicht ausdrücklich belegt.",
+    "Status SkyKnight-Integration in Skynex nach 2021 (Tests, Kunden) nicht belegt; Radarabia-Fabrik Jeddah aktueller Status nicht geprüft (Beziehungsfakten Cluster).",
+    "Herstellerseiten sind undatiert; X-TAR3D-Reichweite auf zwei Herstellerseiten widersprüchlich (50 vs. 55 km).",
+    "Revolver Gun Mk2, Twin Gun GDF009 TREO, Searanger 20, Seaguard Biax, Revolver Gun 30, AMMR-Radar und MANTIS nur über Produktlisten erfasst bzw. nicht vertieft; keine eigenen Status-Claims.",
+    "Nutzerangaben: keine produktbezogenen Nutzerangaben vorhanden."
+  ],
+  "coverage": [
+    {
+      "topic": "Produktinventar Air Defence (Herstellerseiten)",
+      "search_terms": "rheinmetall.com Sitemap: air-defence, skyranger, skynex, skyguard, millennium, skymaster, x-tar, ahead, c-uas",
+      "opened_source_ids": [
+        "S-001a4ac74ab4feec",
+        "S-928f8de516fc152d",
+        "S-caf1328d1364fda8",
+        "S-69738b1972b9a1ed",
+        "S-11300cfdaf427560",
+        "S-c7786baa0a315e17",
+        "S-b4a0be56edf21cf2",
+        "S-81ee1216c407e8d6",
+        "S-3b238e0c480e757b",
+        "S-37f835c7c1c07fd6",
+        "S-0775fadde4aeaf05"
+      ],
+      "finding": "Produktfamilien und Eigenschaften als Herstellerangaben erfasst",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Skyranger 30/35/762/HEL Aufträge, Tests, Präsentationen",
+      "search_terms": "Rheinmetall Newsroom 2022–2026; WebSearch 'Bundeswehr Skyranger 30 Großauftrag 2026', 'Skyranger order September 2026', 'Skyranger 35 Leopard 1 Ukraine delivered', 'Skyranger 30 Pandur Übergabe 2026'",
+      "opened_source_ids": [
+        "S-b8a3496f93a22c8c",
+        "S-09c52404c1b93824",
+        "S-562f0f3f359a746b",
+        "S-d1aafc1c9b0f1a75",
+        "S-60677f3d57da054d",
+        "S-d2ef86f50f08a3d3",
+        "S-afe1512f0f6979bd",
+        "S-c0d13e5db6387716",
+        "S-d2d239c37b99eddf",
+        "S-ccfa2e88d8a2c995",
+        "S-eadffcced857ac38",
+        "S-cede873d57924937",
+        "S-6bdb338d23c29e11",
+        "S-24a17414294b663e",
+        "S-724f79dd7eacb957",
+        "S-6282cce4ae4b577f"
+      ],
+      "finding": "Aufträge DE/AT/DK/NL/HU/UA/RO und Präsentationen belegt; Großauftrag DE und Lieferungen UA/AT offen",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Skynex/Skyguard/Skyshield Aufträge und Einsatz",
+      "search_terms": "Rheinmetall Newsroom 2018–2026; WebSearch 'Skynex Qatar', 'Skynex Ukraine', 'Skyguard Saudi'",
+      "opened_source_ids": [
+        "S-17c0358578e526e5",
+        "S-3e41dec11fd4d5d0",
+        "S-3b27cf3712ca73d2",
+        "S-b003618b3ae9eba2",
+        "S-dfcb101880f585b3",
+        "S-b935cdad4fdfc9f0",
+        "S-f3ed5e1e0c0ea213",
+        "S-ef6817f0a0493313",
+        "S-a03195f784728b13",
+        "S-6c44e0c111e6d686",
+        "S-957ebff673ab8d20",
+        "S-6cd5701123f00a73",
+        "S-3c0b72dcdb4a669f",
+        "S-d5c3acd69d302e6f"
+      ],
+      "finding": "Aufträge, Lieferung Italien, Ukraine-Einsatz (Herstellerangabe), Katar/Saudi-Bezug (Sekundär) belegt",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Munition AHEAD/35 mm",
+      "search_terms": "Sitemap ahead/35mm; Newsroom",
+      "opened_source_ids": [
+        "S-37f835c7c1c07fd6",
+        "S-7f40b1791bf978ab",
+        "S-c5774e615432a4d1",
+        "S-081455a6101c816e"
+      ],
+      "finding": "Produkt- und Auftragsbelege",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Laser/HEL",
+      "search_terms": "Newsroom laser 2019–2026",
+      "opened_source_ids": [
+        "S-06ea7a8a3f2ad0cd",
+        "S-16115aa2a8137b37",
+        "S-3e6da2e4a874f72c",
+        "S-faa22e3546ff37b9",
+        "S-3373659fa8b66b85",
+        "S-724f79dd7eacb957"
+      ],
+      "finding": "Demonstrator-Tests und Entwicklungsauftrag Marine belegt; kein Landsystem-Auftrag",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "C-UAS (Skyspotter, Toolbox, RCWS320, Hermelin, AERIE, Telekom)",
+      "search_terms": "Newsroom drone/c-uas 2025–2026",
+      "opened_source_ids": [
+        "S-3997375c416bfffe",
+        "S-6ceae77f0e11c121",
+        "S-81ee1216c407e8d6",
+        "S-3b238e0c480e757b",
+        "S-50513344d04758cf",
+        "S-aa06566f7d1b93c7",
+        "S-ed85256fd87c2a74",
+        "S-3094767eb36c7a05"
+      ],
+      "finding": "Angebote/Demonstrationen belegt; keine Kundenaufträge gefunden",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Lenkflugkörper-Integration (Stinger, Mistral, DefendAir/SADM, SkyKnight)",
+      "search_terms": "Newsroom; WebSearch 'Halcon SkyKnight Skynex Rheinmetall'",
+      "opened_source_ids": [
+        "S-b8a3496f93a22c8c",
+        "S-562f0f3f359a746b",
+        "S-c0d13e5db6387716",
+        "S-6282cce4ae4b577f",
+        "S-69738b1972b9a1ed",
+        "S-829071fd179d4705"
+      ],
+      "finding": "Integrationsbelege bzw. Ankündigungen erfasst",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Naval Air Defence (Millennium) und Marine-Selbstschutz Golf",
+      "search_terms": "WebSearch 'Oerlikon Millennium Gun customers'; Newsroom Kuwait",
+      "opened_source_ids": [
+        "S-c7786baa0a315e17",
+        "S-c7e039b1d7fdfd1f",
+        "S-a831015ab01561c0",
+        "S-6bdb338d23c29e11"
+      ],
+      "finding": "Produkt, Saudi-Korvetten (Sekundär), Kuwait MASS, Rumänien belegt",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Golfbezug Produkte (Messen IDEX/WDS/DIMDEX, Kunden GCC)",
+      "search_terms": "'Rheinmetall Skynex Skyranger Qatar OR Saudi OR UAE OR Kuwait', 'Rheinmetall IDEX 2025 Skynex Skyranger', 'Rheinmetall Saudi Arabia air defence Skyguard', 'WDS 2022 Rheinmetall MAZ'",
+      "opened_source_ids": [
+        "S-6cd5701123f00a73",
+        "S-3c0b72dcdb4a669f",
+        "S-d5c3acd69d302e6f",
+        "S-a51eb8534c24e129",
+        "S-0111976d9a6dd789",
+        "S-3094767eb36c7a05",
+        "S-a831015ab01561c0",
+        "S-829071fd179d4705"
+      ],
+      "finding": "Katar (Skynex), Saudi-Arabien (Skyguard, Millennium, Radarabia-MRO), Kuwait (MASS), VAE (SkyKnight/EDGE, IDEX 2019) belegt; keine Skyranger-GCC-Belege; IDEX 2023/2025, WDS 2024/2026 nicht belegt",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Segmentkennzahlen Air Defence",
+      "search_terms": "Newsroom H1 2026",
+      "opened_source_ids": [
+        "S-c6f02c948a96ecdf"
+      ],
+      "finding": "Umsatz/Nomination/Backlog H1 2026 (Herstellerangabe); Geschäftsbericht 2025 nicht in diesem Modul ausgewertet (Kontext/Cluster)",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Weitere Sekundärmeldungen (militaeraktuell.at Ukraine-Lieferung, Janes WDS-Original-URL, Breaking Defense SkyKnight)",
+      "search_terms": "WebFetch",
+      "opened_source_ids": [],
+      "finding": "HTTP 403/404, nicht gelesen",
+      "status": "nicht zugänglich"
+    }
+  ],
+  "products": [
+    {
+      "id": "skyranger_30",
+      "label": "Oerlikon Skyranger 30",
+      "domain": "Mobile Flugabwehr",
+      "claim_ids": [
+        "P-SR-01",
+        "P-SR30-01",
+        "P-SR30-02",
+        "P-SR30-03",
+        "P-SR30-04",
+        "P-SR30-05"
+      ],
+      "short_label": "Skyranger 30",
+      "sections": [
+        {
+          "label": "Entwicklung/Test",
+          "claim_ids": [
+            "P-SR30-06",
+            "P-SR30-07"
+          ]
+        },
+        {
+          "label": "Lenkflugkörper/Kapazität",
+          "claim_ids": [
+            "P-SR30-08",
+            "P-SR30-09"
+          ]
+        },
+        {
+          "label": "Programmeinbindung",
+          "claim_ids": [
+            "P-NNBS-01"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skyranger_35",
+      "label": "Oerlikon Skyranger 35",
+      "domain": "Mobile Flugabwehr",
+      "claim_ids": [
+        "P-SR-01",
+        "P-SR35-01",
+        "P-SR35-02",
+        "P-SR35-03"
+      ],
+      "short_label": "Skyranger 35"
+    },
+    {
+      "id": "skyranger_762",
+      "label": "Oerlikon Skyranger 762 (auf Mission Master CXT2)",
+      "domain": "Mobile Flugabwehr",
+      "claim_ids": [
+        "P-SR762-01"
+      ],
+      "short_label": "Skyranger 762"
+    },
+    {
+      "id": "skyranger_30_hel",
+      "label": "Skyranger 30 HEL (Hybrid-Demonstrator)",
+      "domain": "Laser / HEL",
+      "claim_ids": [
+        "P-SR30HEL-01"
+      ],
+      "short_label": "Skyranger 30 HEL"
+    },
+    {
+      "id": "skynex",
+      "label": "Oerlikon Skynex",
+      "domain": "Vernetzte & stationäre Flugabwehr",
+      "claim_ids": [
+        "P-SNX-01",
+        "P-SNX-02",
+        "P-SNX-03",
+        "P-SNX-05",
+        "P-SNX-06",
+        "P-SNX-09"
+      ],
+      "short_label": "Skynex",
+      "sections": [
+        {
+          "label": "Weitere Aufträge",
+          "claim_ids": [
+            "P-SNX-04",
+            "P-SNX-11",
+            "P-SR35-03",
+            "P-AD-03"
+          ]
+        },
+        {
+          "label": "Integration/Demonstration",
+          "claim_ids": [
+            "P-SNX-07",
+            "P-SNX-10",
+            "P-GULF-02"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skynex_skyknight",
+      "label": "SkyKnight-Integration in Skynex (HALCON)",
+      "domain": "Lenkflugkörper-Integration",
+      "claim_ids": [
+        "P-SNX-08"
+      ],
+      "short_label": "SkyKnight/Skynex"
+    },
+    {
+      "id": "skyguard",
+      "label": "Oerlikon Skyguard (Skyguard 3 / Next Generation, GDF-Modernisierung)",
+      "domain": "Vernetzte & stationäre Flugabwehr",
+      "claim_ids": [
+        "P-SG-01",
+        "P-SG-02",
+        "P-SG-03",
+        "P-SG-05"
+      ],
+      "short_label": "Skyguard",
+      "sections": [
+        {
+          "label": "Modernisierung/Service",
+          "claim_ids": [
+            "P-SG-04",
+            "P-SG-06"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "skyshield",
+      "label": "Oerlikon Skyshield",
+      "domain": "Vernetzte & stationäre Flugabwehr",
+      "claim_ids": [
+        "P-SG-01",
+        "P-SS-01"
+      ],
+      "short_label": "Skyshield"
+    },
+    {
+      "id": "revolver_gun_mk3",
+      "label": "Oerlikon Revolver Gun Mk3 (KDG 35 mm)",
+      "domain": "Effektoren & Munition",
+      "claim_ids": [
+        "P-RG-01",
+        "P-SNX-11",
+        "P-SNX-09"
+      ],
+      "short_label": "Revolver Gun Mk3"
+    },
+    {
+      "id": "ahead_35",
+      "label": "35-mm-AHEAD-/30-mm-ABM-Munition",
+      "domain": "Effektoren & Munition",
+      "claim_ids": [
+        "P-AH-01",
+        "P-AH-02"
+      ],
+      "short_label": "AHEAD"
+    },
+    {
+      "id": "gepard_ammo_35",
+      "label": "35-mm-Munition für Gepard",
+      "domain": "Effektoren & Munition",
+      "claim_ids": [
+        "P-GP-01"
+      ],
+      "short_label": "Gepard-Munition"
+    },
+    {
+      "id": "skymaster",
+      "label": "Oerlikon Skymaster (C2/Battle Management)",
+      "domain": "Sensoren & Führung",
+      "claim_ids": [
+        "P-SM-01",
+        "P-SNX-07"
+      ],
+      "short_label": "Skymaster"
+    },
+    {
+      "id": "x_tar3d",
+      "label": "Oerlikon X-TAR3D",
+      "domain": "Sensoren & Führung",
+      "claim_ids": [
+        "P-XTAR-01",
+        "P-SNX-05",
+        "P-SG-03"
+      ],
+      "short_label": "X-TAR3D"
+    },
+    {
+      "id": "msu",
+      "label": "Oerlikon Multi Sensor Unit (MSU)",
+      "domain": "Sensoren & Führung",
+      "claim_ids": [
+        "P-MSU-01"
+      ],
+      "short_label": "MSU"
+    },
+    {
+      "id": "skyspotter",
+      "label": "Skyspotter (C-UAS-Frühwarnung)",
+      "domain": "Drohnenabwehr (C-UAS)",
+      "claim_ids": [
+        "P-SSP-01",
+        "P-SSP-02"
+      ],
+      "short_label": "Skyspotter"
+    },
+    {
+      "id": "drone_defence_toolbox",
+      "label": "Drohnenabwehr-Toolbox",
+      "domain": "Drohnenabwehr (C-UAS)",
+      "claim_ids": [
+        "P-CUAS-01",
+        "P-CUAS-05"
+      ],
+      "short_label": "C-UAS Toolbox"
+    },
+    {
+      "id": "rcws320_cuas",
+      "label": "RCWS320C-UAS",
+      "domain": "Drohnenabwehr (C-UAS)",
+      "claim_ids": [
+        "P-CUAS-02"
+      ],
+      "short_label": "RCWS320C-UAS"
+    },
+    {
+      "id": "hermelin_cuas",
+      "label": "Hermelin C-UAS",
+      "domain": "Drohnenabwehr (C-UAS)",
+      "claim_ids": [
+        "P-CUAS-03"
+      ],
+      "short_label": "Hermelin C-UAS"
+    },
+    {
+      "id": "aerie",
+      "label": "AERIE (mit Praetorian Aeronautics)",
+      "domain": "Drohnenabwehr (C-UAS)",
+      "claim_ids": [
+        "P-CUAS-04"
+      ],
+      "short_label": "AERIE"
+    },
+    {
+      "id": "hel_naval",
+      "label": "Hochenergie-Laserwaffe Marine (ARGE HEL mit MBDA)",
+      "domain": "Laser / HEL",
+      "claim_ids": [
+        "P-HEL-01",
+        "P-HEL-02",
+        "P-HEL-03"
+      ],
+      "short_label": "Marine-Laser"
+    },
+    {
+      "id": "millennium_gun",
+      "label": "Oerlikon Millennium Gun",
+      "domain": "Marine-Flugabwehr",
+      "claim_ids": [
+        "P-MG-01",
+        "P-MG-02",
+        "P-SR35-03"
+      ],
+      "short_label": "Millennium"
+    },
+    {
+      "id": "mass",
+      "label": "MASS (Multi Ammunition Softkill System)",
+      "domain": "Marine-Selbstschutz (Softkill)",
+      "claim_ids": [
+        "P-MASS-01"
+      ],
+      "short_label": "MASS"
+    }
+  ],
+  "regions": [
+    {
+      "id": "gcc",
+      "label": "Golfstaaten (GCC)",
+      "claim_ids": [
+        "P-SNX-09",
+        "P-SG-05",
+        "P-MASS-01"
+      ],
+      "sections": [
+        {
+          "label": "Katar",
+          "claim_ids": [
+            "P-SNX-09",
+            "P-SNX-10"
+          ]
+        },
+        {
+          "label": "Saudi-Arabien",
+          "claim_ids": [
+            "P-SG-05",
+            "P-SG-06",
+            "P-MG-02"
+          ]
+        },
+        {
+          "label": "Kuwait",
+          "claim_ids": [
+            "P-MASS-01"
+          ]
+        },
+        {
+          "label": "VAE (Industrie-/Messebezug)",
+          "claim_ids": [
+            "P-SNX-08",
+            "P-GULF-02",
+            "P-MASS-01"
+          ]
+        },
+        {
+          "label": "Region allgemein",
+          "claim_ids": [
+            "P-GULF-01"
+          ]
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "air_defence",
+      "label": "Flugabwehr",
+      "claim_ids": [
+        "P-AD-01",
+        "P-AD-02",
+        "P-AD-03",
+        "P-SR-01",
+        "P-SR30-01",
+        "P-SR35-03",
+        "P-SNX-01",
+        "P-SNX-06",
+        "P-HEL-03",
+        "P-NNBS-01",
+        "P-SR30-08"
+      ]
+    },
+    {
+      "id": "gulf_market",
+      "label": "Markt und Marktzugang in den Golfstaaten",
+      "claim_ids": [
+        "P-SNX-09",
+        "P-SNX-10",
+        "P-SG-05",
+        "P-SG-06",
+        "P-MG-02",
+        "P-MASS-01",
+        "P-SNX-08",
+        "P-GULF-01",
+        "P-GULF-02"
+      ]
+    }
+  ],
+  "reuse_claim_ids": []
+}
