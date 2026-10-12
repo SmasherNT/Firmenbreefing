@@ -1,0 +1,702 @@
+{
+  "run_id": "2026-10-12-rheinmetall",
+  "company": "Rheinmetall",
+  "as_of": "2026-10-12",
+  "phase": "final",
+  "required_full_review_ids": [
+    "I-AD-01",
+    "I-AD-02",
+    "I-AD-03",
+    "I-AD-04",
+    "I-AD-05",
+    "I-ES-01",
+    "I-ES-02",
+    "I-ES-03",
+    "I-ES-04",
+    "I-ES-05",
+    "I-ES-06",
+    "I-GM-01",
+    "I-GM-02",
+    "I-GM-03",
+    "I-GM-04",
+    "I-GM-05",
+    "I-GM-06",
+    "I-HL-01",
+    "I-HL-02",
+    "I-HL-03",
+    "I-MX-diehl-customer_status",
+    "I-MX-diehl-effector_mix",
+    "I-MX-diehl-gulf_access",
+    "I-MX-diehl-industrial_capacity",
+    "I-MX-diehl-integration",
+    "I-MX-edge-customer_status",
+    "I-MX-edge-effector_mix",
+    "I-MX-edge-gulf_access",
+    "I-MX-edge-industrial_capacity",
+    "I-MX-edge-integration",
+    "I-MX-kongsberg_rtx-customer_status",
+    "I-MX-kongsberg_rtx-effector_mix",
+    "I-MX-kongsberg_rtx-gulf_access",
+    "I-MX-kongsberg_rtx-industrial_capacity",
+    "I-MX-kongsberg_rtx-integration",
+    "I-MX-mbda-customer_status",
+    "I-MX-mbda-effector_mix",
+    "I-MX-mbda-gulf_access",
+    "I-MX-mbda-industrial_capacity",
+    "I-MX-mbda-integration",
+    "I-MX-rheinmetall-customer_status",
+    "I-MX-rheinmetall-effector_mix",
+    "I-MX-rheinmetall-gulf_access",
+    "I-MX-rheinmetall-industrial_capacity",
+    "I-MX-rheinmetall-integration",
+    "I-MX-saab-customer_status",
+    "I-MX-saab-effector_mix",
+    "I-MX-saab-gulf_access",
+    "I-MX-saab-industrial_capacity",
+    "I-MX-saab-integration",
+    "I-MX-thales-customer_status",
+    "I-MX-thales-effector_mix",
+    "I-MX-thales-gulf_access",
+    "I-MX-thales-industrial_capacity",
+    "I-MX-thales-integration",
+    "I-PM-aerie",
+    "I-PM-ahead_35",
+    "I-PM-drone_defence_toolbox",
+    "I-PM-gepard_ammo_35",
+    "I-PM-hel_naval",
+    "I-PM-hermelin_cuas",
+    "I-PM-mass",
+    "I-PM-millennium_gun",
+    "I-PM-msu",
+    "I-PM-rcws320_cuas",
+    "I-PM-revolver_gun_mk3",
+    "I-PM-skyguard",
+    "I-PM-skymaster",
+    "I-PM-skynex",
+    "I-PM-skynex_skyknight",
+    "I-PM-skyranger_30",
+    "I-PM-skyranger_30_hel",
+    "I-PM-skyranger_35",
+    "I-PM-skyranger_762",
+    "I-PM-skyshield",
+    "I-PM-skyspotter",
+    "I-PM-x_tar3d",
+    "I-RG-AE",
+    "I-RG-BH",
+    "I-RG-KW",
+    "I-RG-OM",
+    "I-RG-QA",
+    "I-RG-SA"
+  ],
+  "errors": [],
+  "fingerprints": {
+    "I-MX-rheinmetall-effector_mix": "4d64cb83345ba28f08e870a383115f8182209c0a7f5c2b118a94204731d46aad",
+    "I-MX-rheinmetall-integration": "2ff16039dc421298cb702df4c3b8a4ae1af9e0c3eaf3779f55b4deadc5aa3f85",
+    "I-MX-rheinmetall-customer_status": "62243e28b61cf90ab595ba2db31e6c5b62a32e09cbd8de79e2ac7502a683dff8",
+    "I-MX-rheinmetall-industrial_capacity": "cad515fb0051d1734f2856e0f2e42033396b7d04eed7b3d2d11d91581adb420f",
+    "I-MX-rheinmetall-gulf_access": "d9c332a2a9401011a9f6f0a7c88bcb2f65465af3b4f54c8ef47bf45a65c89f28",
+    "I-MX-saab-effector_mix": "7b2d921636b12537fb75708506908110cc776a35768b9f5d8d86becd9343516c",
+    "I-MX-saab-integration": "673c3d2a5da80122951d299969e12310c0ab413a201a7020b63f49b7e2bf647a",
+    "I-MX-saab-customer_status": "cec4eac7e11bb5d8a0cfd16247aeb0bb14b99980e5a620056e1ed98100245d65",
+    "I-MX-saab-industrial_capacity": "33ab94d19242a0531feeff56ac10432ce686fab9a20c40e79e3e63bba0062a30",
+    "I-MX-saab-gulf_access": "e5ea0ca44a7fb0dffbdd86b19c4e3e44426c42ca437c4e7ea8f0908115e81a83",
+    "I-MX-diehl-effector_mix": "b4f8e83f7aba6702f19cc0ff31ccb57b71574b2dec86dcda5c0915995cf347f1",
+    "I-MX-diehl-integration": "1e46d1bb69e89193fb34ff1dd88e72fc74c21d90df717f1cd67e1715466d9ecd",
+    "I-MX-diehl-customer_status": "221dc8c616a1c5517aa50949477c4eea97c18588ab3f67265a1e66771c1e6a29",
+    "I-MX-diehl-industrial_capacity": "de09e6657d50c8bd102d95a7fd20a335246756b6c1a047310420e6d4725933dd",
+    "I-MX-diehl-gulf_access": "1a1855f30f2268b457f270bf53ec6496a53748b10b2c545698b32b3ada03dd6b",
+    "I-MX-kongsberg_rtx-effector_mix": "6597faecc074b09c855c6d60b458408629c5f40f4a5e030d2b4b2d8cb6a62df4",
+    "I-MX-kongsberg_rtx-integration": "c425c2f4710c6bdf43983800584b1ea05f092e0a0aeee1b69c0cb009f2ef8620",
+    "I-MX-kongsberg_rtx-customer_status": "5da43ede0b572afa4d22b4f723ae910ce64ebcd8dfdd64d7906717738cfc7301",
+    "I-MX-kongsberg_rtx-industrial_capacity": "66ad230a4d0a0ea32b09618d988c98f044e3a4a039548628d5ac9063576bed38",
+    "I-MX-kongsberg_rtx-gulf_access": "bbc0fa1f873976ae2df8ab0c6fcec67b84341f0bf60b65a936214396c897d08f",
+    "I-MX-mbda-effector_mix": "fc98411956ff47957cb2060adf1cf31017a0d6a86856d36f9190e861142efbab",
+    "I-MX-mbda-integration": "1004d8d590645de532029cbe96f4745ee9b691bd6b5fc472d57f84c23a263e0d",
+    "I-MX-mbda-customer_status": "5387b560063d0d765c966553056a9182c51dcc9db92a6dc56fc377aaa4b3f266",
+    "I-MX-mbda-industrial_capacity": "ea8a6e090781f88df6693df7e3e889a5f0681cc6b7d7caef890f2bde5b1b065b",
+    "I-MX-mbda-gulf_access": "90bf7014b86aed038b6afdb072fc62c904fb648f721f678af3e1409881720258",
+    "I-MX-thales-effector_mix": "ddfdd6627cea3456119cd480313b2545f46cc4af9aab3a438c0f014ed0b05e79",
+    "I-MX-thales-integration": "8004857b9a6eedf401d4a6c182dbd3f2c8ef2dc6fe83b65b0461fc4b8a39b280",
+    "I-MX-thales-customer_status": "ac21b250245be1612b3dc2c7555a6a258c4c9220199aaf6b0d9f0e9f7ef5bd57",
+    "I-MX-thales-industrial_capacity": "4966a9c66d113f236e52ad0b37876589fdb4734b7d4286591c39cf998b8484cc",
+    "I-MX-thales-gulf_access": "4b0eb1ed90195f0d9d92da97fcc648514bf78605f52217e492d90da49cd0cf60",
+    "I-MX-edge-effector_mix": "37eb7187ef9a55253e43197448c77a0bc215ab47062a8c6fbebbf57639ff8afd",
+    "I-MX-edge-integration": "98239688448ceef4686e45f1514c059ba435c0f755839e19c49804262ae9cb29",
+    "I-MX-edge-customer_status": "37d9c81364ff7d89d761df21b830cac943d98a864ec293b8175224f7dbd8d554",
+    "I-MX-edge-industrial_capacity": "b71d34eb213cc4bbf33e5f64bdf8cad4cce5cb90056929b2ebd5cde9a9971dd0",
+    "I-MX-edge-gulf_access": "86708458a84380860d43e233622b57a498cb252de3a1fdbdec0c6d1e826520c1",
+    "I-PM-skyranger_30": "af0287231a02169103f9442be23144748826fe83e80caee603f87cb97ef9c2e3",
+    "I-PM-skyranger_35": "b2081fa3841ee67282c385cb6f38a63d9ecb459cc8507c4a24d85e3d315357ce",
+    "I-PM-skyranger_762": "3694dc25a913dd90c36394a3af2ca9e3f1e05c1160315cba168342564485eb2a",
+    "I-PM-skyranger_30_hel": "f2f6fbbc0fa7863c76c1c8bca331d5f6e7b8efa0e267fa551292cf3dac48b31a",
+    "I-PM-skynex": "d169fb9253f7ee9fb5e6d74e53b480d89e5bb9e544c55848cb85899073f9d3db",
+    "I-PM-skynex_skyknight": "44f45014757e0c0a82567fe912dcafeb5299beafd08d41a350119bcd638a7717",
+    "I-PM-skyguard": "4c0eaf73ef3e8cafbc836cf9f0a67669aace660a5d527ef0c12eb14d935472e9",
+    "I-PM-skyshield": "7f7312e82417801c75c7c0cfc41efbff0e630e6e7d7d588dcecb4f453bdeeedb",
+    "I-PM-revolver_gun_mk3": "b00dc7dc61190a0e044c36ad7504033d10f1d32e18cc706ef0abaf42b854a40c",
+    "I-PM-ahead_35": "e5d5509d03eba2b856574981d071ec001121d525eb2b3367aa2d532a4523c44f",
+    "I-PM-gepard_ammo_35": "4520445a099bd7a569c69fe5a18e4612025914d4a06b3a8f2b50b75871431656",
+    "I-PM-skymaster": "0c6ccf36916a08e36ec8db9ba4507ce01607cb7d48d8a47d1e560687b1aafd86",
+    "I-PM-x_tar3d": "6c23cb0c22d700105ba73db463a7aca500717a8bbed38068649662486ae8d148",
+    "I-PM-msu": "6387551fd308b0602a9d0250f1b578eea919e0d81c3a137c2f702bc98772df44",
+    "I-PM-skyspotter": "2ae09b24c04693d9738e08a02fe5a679abc330eab41a06f05abbd3239c813cf2",
+    "I-PM-drone_defence_toolbox": "09225c3bc78eb0505ab49a8160d7afc412b062ce6d01820e9151256915c7d87b",
+    "I-PM-rcws320_cuas": "509a6ecb8a9c5a4e46b9e735c231931e1285804d790c2d48db0bf4be5fbb3941",
+    "I-PM-hermelin_cuas": "af36da9873be96bfc9762104fd5089002c4d19366c1f834219834a97bf123cb6",
+    "I-PM-aerie": "7505e89ee6283ecfefbc33412a2981ed073c33c077b448f1a8a0b56129b4edce",
+    "I-PM-hel_naval": "83106441828424851913e725b84868d0f2d7b03025b51cefbe0f4d6abbc295b8",
+    "I-PM-millennium_gun": "dc947ed2b70e7e7ec900afdffb972085321aa9abe8f6ab462548209f23d6b7db",
+    "I-PM-mass": "cb2acc3af9f48b5ce3dc5e2458f1f16709e85a74c1961596b39f5176cef80546",
+    "I-ES-01": "e5dd76af3f440851d2cc330fd9e6ee3d3ed44bdc4c3f4d02826104ce4179b36d",
+    "I-ES-02": "451342cc1d2feb96afb570f4194c9f3820410754b8a84f77e2ea7b3dfff8786f",
+    "I-ES-03": "1cadcb73322dc58401441043ffe766a03621a1cbf5b7106931d44c8fb697fee5",
+    "I-ES-04": "86ac810006bc1ae8d35ce94132116959a83d9b5c702c13b2664bfa4145f566a6",
+    "I-ES-05": "948d599a3063c7c348b06efd3a0a5eb2ae5f5086b1c08712a87f7829aeeb4515",
+    "I-ES-06": "c1ae94c76dd2cf1516317efaba347adbfb828ad02078bc7c9b0d7a840a7cc7be",
+    "I-HL-01": "fd607aedf34265b26f2cf13ad46e706457ed6753843ec65832b1e5412cc8fb81",
+    "I-HL-02": "6e8a2ddd9103213588b807319970a8f3c7ced9486c58ca5a54bd43de2d101cfd",
+    "I-HL-03": "25cf30f61c7cb35ced4ddde91c48e7d5168c136045383b069a1e542f35ac19ce",
+    "I-AD-01": "a7424f61706930c2ab6edd39e26df81af727eac746baae9a8191b4ae159dcfbd",
+    "I-AD-02": "191b5b9fef1df9dda362862aba78726c17763a69510a2c8fa92030b8a556dded",
+    "I-AD-03": "3bde417b30fdcce59d4b4845e153de4c8269ab80cd7d1c0842832f115b7bca8b",
+    "I-AD-04": "cfb1d57b6683f85445b1a5b51f0face65009bbc362c66bd08ff6dc33be262b15",
+    "I-AD-05": "6b2218e114104ebaec44f771c5aba0e3bbdf16bc6963d41ddd6b62c9e0ca3b65",
+    "I-GM-01": "ce9f354ec2d1d2e28d7517681a99537adc03f7b03c38a2fef2751526c04c2a33",
+    "I-GM-02": "e2069feec38a1d02bbd2370ea161e5c89968f7a3fb6f7a6ae9a2da99399a66fa",
+    "I-GM-03": "ca24124c30e261923aaa26d02b4d0e47d3b574750b6c80cd22169bb50caaf278",
+    "I-GM-04": "6997aaaaf877dee5523fb7ac2e4d02bdefdbaf0befd2781b23e4602ed237f8f3",
+    "I-GM-05": "5cd9f8641ec2db3677acfa8dbf014235206b6e93070ac3b16eab7a9969c3724d",
+    "I-GM-06": "129d3f99d14c05139960c7f4862d68b37b5416610c63c84674529ac7ace6eb51",
+    "I-RG-QA": "2aaef2f2cb011b374db82310a9177c53ec01e6fb13f4b7a261591598eb3d8938",
+    "I-RG-SA": "e2569bba7e9b7e1741f8f5bfac1861fbe4bff8d4c9423051a3107653ee60750f",
+    "I-RG-AE": "43fba82d033a4b89e88ff146f60c18d02522739094b506f41155c6fe9dcccb10",
+    "I-RG-KW": "dc3e25329081c768c414f5986387945c566a47f58a920262b66a90863d233c51",
+    "I-RG-BH": "d86f426c82b08cc1bb723dc3c139879cd5c2126b1c0695cb141eec50c5460ab2",
+    "I-RG-OM": "83371803153150331d4f6532068c771dfbed6f26447c102ea79b341b1c6fd014"
+  },
+  "fact_dependencies": {
+    "I-MX-rheinmetall-effector_mix": [
+      "M-RHM-002",
+      "M-RHM-003",
+      "P-HEL-03",
+      "P-SNX-08",
+      "P-SR-01",
+      "P-SR30-01",
+      "P-SR30-03",
+      "P-SR30-08",
+      "P-SR30HEL-01"
+    ],
+    "I-MX-rheinmetall-integration": [
+      "M-RHM-002",
+      "P-NNBS-01",
+      "P-SNX-01",
+      "P-SNX-07",
+      "P-SR30-01",
+      "P-SR30-03",
+      "P-SR35-03"
+    ],
+    "I-MX-rheinmetall-customer_status": [
+      "M-QA-005",
+      "M-RHM-004",
+      "P-SNX-03",
+      "P-SNX-05"
+    ],
+    "I-MX-rheinmetall-industrial_capacity": [
+      "C-032",
+      "M-EXP-006",
+      "M-RHM-005",
+      "P-AD-01",
+      "P-GP-01",
+      "P-SNX-06",
+      "P-SR30-08"
+    ],
+    "I-MX-rheinmetall-gulf_access": [
+      "C-006",
+      "C-007",
+      "C-009",
+      "C-010",
+      "C-015",
+      "C-020",
+      "M-QA-005",
+      "P-SG-06",
+      "P-SNX-09"
+    ],
+    "I-MX-saab-effector_mix": [
+      "M-SAAB-001",
+      "M-SAAB-002"
+    ],
+    "I-MX-saab-integration": [
+      "M-SAAB-001",
+      "M-SAAB-002"
+    ],
+    "I-MX-saab-customer_status": [
+      "M-SAAB-001",
+      "M-SAAB-002"
+    ],
+    "I-MX-saab-industrial_capacity": [],
+    "I-MX-saab-gulf_access": [
+      "M-SAAB-003",
+      "M-SAAB-004"
+    ],
+    "I-MX-diehl-effector_mix": [
+      "M-DIE-001"
+    ],
+    "I-MX-diehl-integration": [
+      "C-027",
+      "M-DIE-001"
+    ],
+    "I-MX-diehl-customer_status": [
+      "M-DIE-001"
+    ],
+    "I-MX-diehl-industrial_capacity": [
+      "M-DIE-002"
+    ],
+    "I-MX-diehl-gulf_access": [
+      "C-022",
+      "M-DIE-003"
+    ],
+    "I-MX-kongsberg_rtx-effector_mix": [
+      "M-NAS-001"
+    ],
+    "I-MX-kongsberg_rtx-integration": [
+      "M-KW-001",
+      "M-NAS-001"
+    ],
+    "I-MX-kongsberg_rtx-customer_status": [
+      "M-NAS-002",
+      "M-OM-001",
+      "M-QA-001"
+    ],
+    "I-MX-kongsberg_rtx-industrial_capacity": [],
+    "I-MX-kongsberg_rtx-gulf_access": [
+      "M-GCC-005",
+      "M-KW-001",
+      "M-OM-001",
+      "M-QA-001"
+    ],
+    "I-MX-mbda-effector_mix": [
+      "C-029",
+      "M-MBDA-001",
+      "M-MBDA-002",
+      "P-SR30-03"
+    ],
+    "I-MX-mbda-integration": [
+      "M-MBDA-001"
+    ],
+    "I-MX-mbda-customer_status": [
+      "M-MBDA-002",
+      "P-SR30-03"
+    ],
+    "I-MX-mbda-industrial_capacity": [
+      "M-MBDA-003"
+    ],
+    "I-MX-mbda-gulf_access": [
+      "M-MBDA-002"
+    ],
+    "I-MX-thales-effector_mix": [
+      "M-THA-001",
+      "M-THA-002"
+    ],
+    "I-MX-thales-integration": [
+      "M-THA-001"
+    ],
+    "I-MX-thales-customer_status": [
+      "M-THA-001",
+      "M-THA-002"
+    ],
+    "I-MX-thales-industrial_capacity": [
+      "M-THA-002"
+    ],
+    "I-MX-thales-gulf_access": [
+      "M-QA-003"
+    ],
+    "I-MX-edge-effector_mix": [
+      "M-AE-004",
+      "M-RHM-003",
+      "P-SNX-08"
+    ],
+    "I-MX-edge-integration": [
+      "M-AE-003",
+      "M-QA-004",
+      "M-RHM-003"
+    ],
+    "I-MX-edge-customer_status": [
+      "M-AE-004"
+    ],
+    "I-MX-edge-industrial_capacity": [
+      "M-AE-002",
+      "M-RHM-003"
+    ],
+    "I-MX-edge-gulf_access": [
+      "C-020",
+      "M-AE-002",
+      "M-AE-004",
+      "M-QA-004"
+    ],
+    "I-PM-skyranger_30": [
+      "P-SR30-01",
+      "P-SR30-02",
+      "P-SR30-03",
+      "P-SR30-04",
+      "P-SR30-05",
+      "P-SR30-07",
+      "P-SR30-08"
+    ],
+    "I-PM-skyranger_35": [
+      "P-SR35-01",
+      "P-SR35-02",
+      "P-SR35-03"
+    ],
+    "I-PM-skyranger_762": [
+      "P-SR762-01"
+    ],
+    "I-PM-skyranger_30_hel": [
+      "P-SR30HEL-01"
+    ],
+    "I-PM-skynex": [
+      "M-QA-005",
+      "M-RHM-004",
+      "P-SNX-03",
+      "P-SNX-05",
+      "P-SNX-06",
+      "P-SNX-09",
+      "P-SR35-03"
+    ],
+    "I-PM-skynex_skyknight": [
+      "C-021",
+      "M-RHM-003",
+      "P-SNX-08"
+    ],
+    "I-PM-skyguard": [
+      "C-019",
+      "P-SG-01",
+      "P-SG-02",
+      "P-SG-03",
+      "P-SG-05"
+    ],
+    "I-PM-skyshield": [
+      "P-SG-01",
+      "P-SS-01"
+    ],
+    "I-PM-revolver_gun_mk3": [
+      "M-RHM-002",
+      "P-RG-01",
+      "P-SNX-05",
+      "P-SNX-09",
+      "P-SNX-11"
+    ],
+    "I-PM-ahead_35": [
+      "P-AH-01",
+      "P-AH-02",
+      "P-SG-02"
+    ],
+    "I-PM-gepard_ammo_35": [
+      "P-GP-01"
+    ],
+    "I-PM-skymaster": [
+      "M-RHM-002",
+      "P-SG-02",
+      "P-SG-03",
+      "P-SM-01",
+      "P-SNX-07",
+      "P-SNX-11"
+    ],
+    "I-PM-x_tar3d": [
+      "M-RHM-002",
+      "P-SG-03",
+      "P-SNX-05",
+      "P-SNX-09",
+      "P-XTAR-01"
+    ],
+    "I-PM-msu": [
+      "P-MSU-01"
+    ],
+    "I-PM-skyspotter": [
+      "P-SSP-01",
+      "P-SSP-02"
+    ],
+    "I-PM-drone_defence_toolbox": [
+      "P-CUAS-01"
+    ],
+    "I-PM-rcws320_cuas": [
+      "P-CUAS-02"
+    ],
+    "I-PM-hermelin_cuas": [
+      "P-CUAS-03"
+    ],
+    "I-PM-aerie": [
+      "P-CUAS-04"
+    ],
+    "I-PM-hel_naval": [
+      "P-HEL-01",
+      "P-HEL-02",
+      "P-HEL-03"
+    ],
+    "I-PM-millennium_gun": [
+      "P-MG-01",
+      "P-MG-02",
+      "P-SR35-03"
+    ],
+    "I-PM-mass": [
+      "C-020",
+      "P-MASS-01"
+    ],
+    "I-ES-01": [
+      "C-001",
+      "T-02",
+      "T-09",
+      "T-13"
+    ],
+    "I-ES-02": [
+      "M-QA-005",
+      "M-RHM-004",
+      "P-SNX-03",
+      "P-SNX-05",
+      "P-SNX-06",
+      "P-SNX-09",
+      "P-SR30-01",
+      "P-SR30-02",
+      "P-SR30-03",
+      "P-SR30-04",
+      "P-SR30-05",
+      "P-SR30-07",
+      "P-SR30-08",
+      "P-SR35-01",
+      "P-SR35-02",
+      "P-SR35-03"
+    ],
+    "I-ES-03": [
+      "C-006",
+      "C-007",
+      "C-009",
+      "C-010",
+      "C-015",
+      "C-020",
+      "M-QA-005",
+      "P-SG-06",
+      "P-SNX-06",
+      "P-SNX-09",
+      "T-25"
+    ],
+    "I-ES-04": [
+      "M-AE-005",
+      "M-GCC-001",
+      "M-GCC-002",
+      "M-GCC-003",
+      "M-GCC-004",
+      "M-GCC-006",
+      "M-GCC-007",
+      "M-KW-001",
+      "M-KW-002"
+    ],
+    "I-ES-05": [
+      "C-017",
+      "C-024",
+      "M-EXP-001",
+      "M-EXP-002",
+      "M-EXP-004",
+      "M-EXP-005",
+      "P-AD-01"
+    ],
+    "I-ES-06": [
+      "C-020",
+      "M-AE-001",
+      "M-AE-002",
+      "M-AE-004",
+      "M-GCC-005",
+      "M-QA-002",
+      "M-QA-004",
+      "M-RHM-003",
+      "M-SA-001",
+      "M-SA-002"
+    ],
+    "I-HL-01": [
+      "P-AD-03",
+      "T-09"
+    ],
+    "I-HL-02": [
+      "C-007"
+    ],
+    "I-HL-03": [
+      "M-EXP-001",
+      "M-EXP-002"
+    ],
+    "I-AD-01": [
+      "C-029",
+      "C-043",
+      "M-RHM-002",
+      "M-RHM-003",
+      "P-AD-01",
+      "P-HEL-03",
+      "P-SNX-08",
+      "P-SR-01",
+      "P-SR30-01",
+      "P-SR30-03",
+      "P-SR30-08",
+      "P-SR30HEL-01",
+      "T-26"
+    ],
+    "I-AD-02": [
+      "M-RHM-005",
+      "P-SNX-05",
+      "P-SR30-01",
+      "P-SR30-02",
+      "P-SR30-03",
+      "P-SR30-04",
+      "P-SR30-05",
+      "P-SR30-07",
+      "P-SR30-08",
+      "P-SR35-03"
+    ],
+    "I-AD-03": [
+      "M-AE-004",
+      "M-DIE-001",
+      "M-MBDA-002",
+      "M-NAS-002",
+      "M-OM-001",
+      "M-QA-001",
+      "M-QA-005",
+      "M-RHM-004",
+      "M-SAAB-001",
+      "M-SAAB-002",
+      "M-THA-001",
+      "M-THA-002",
+      "P-SNX-03",
+      "P-SNX-05",
+      "P-SR30-03"
+    ],
+    "I-AD-04": [
+      "C-027",
+      "C-038",
+      "C-039",
+      "C-041",
+      "C-042",
+      "M-DIE-001",
+      "M-MBDA-001",
+      "T-26"
+    ],
+    "I-AD-05": [
+      "T-11",
+      "T-12"
+    ],
+    "I-GM-01": [
+      "M-BH-001",
+      "M-GCC-001",
+      "M-GCC-002",
+      "M-GCC-003",
+      "M-GCC-004"
+    ],
+    "I-GM-02": [
+      "M-AE-004",
+      "M-AE-005",
+      "M-GCC-005",
+      "M-GCC-006",
+      "M-GCC-007",
+      "M-KW-001",
+      "M-KW-002",
+      "M-OM-001",
+      "M-QA-001",
+      "M-SA-003"
+    ],
+    "I-GM-03": [
+      "C-006",
+      "C-007",
+      "C-009",
+      "C-010",
+      "C-011",
+      "C-012",
+      "C-015",
+      "C-018",
+      "C-019",
+      "C-020",
+      "M-QA-005",
+      "P-GULF-01",
+      "P-SG-06",
+      "P-SNX-06",
+      "P-SNX-09",
+      "P-SNX-10",
+      "T-23",
+      "T-25"
+    ],
+    "I-GM-04": [
+      "C-017",
+      "C-024",
+      "C-025",
+      "M-EXP-001",
+      "M-EXP-002",
+      "M-EXP-003",
+      "M-EXP-004",
+      "M-EXP-005",
+      "M-EXP-006"
+    ],
+    "I-GM-05": [
+      "C-009",
+      "M-AE-001",
+      "M-AE-003",
+      "M-QA-002",
+      "M-SA-001",
+      "M-SA-002",
+      "M-SAAB-003",
+      "M-SAAB-004"
+    ],
+    "I-GM-06": [
+      "C-020",
+      "C-021",
+      "M-AE-003",
+      "M-AE-004",
+      "M-DIE-003",
+      "M-QA-004",
+      "M-RHM-003"
+    ],
+    "I-RG-QA": [
+      "C-007",
+      "M-QA-001",
+      "M-QA-003",
+      "M-QA-005",
+      "M-QA-006",
+      "P-SNX-09",
+      "P-SNX-10"
+    ],
+    "I-RG-SA": [
+      "C-007",
+      "C-008",
+      "C-010",
+      "C-011",
+      "C-012",
+      "M-EXP-003",
+      "M-GCC-008",
+      "M-SA-001",
+      "M-SA-003",
+      "P-MG-02"
+    ],
+    "I-RG-AE": [
+      "C-006",
+      "C-021",
+      "C-023",
+      "M-AE-001",
+      "M-AE-002",
+      "M-AE-004",
+      "M-AE-005",
+      "M-RHM-003",
+      "M-SAAB-003"
+    ],
+    "I-RG-KW": [
+      "C-019",
+      "C-020",
+      "M-GCC-009",
+      "M-KW-001",
+      "M-KW-002"
+    ],
+    "I-RG-BH": [
+      "M-BH-001",
+      "M-GCC-005",
+      "P-SG-05"
+    ],
+    "I-RG-OM": [
+      "M-GCC-004",
+      "M-GCC-009",
+      "M-OM-001"
+    ]
+  },
+  "notice": "Mechanical references/snapshots only; interpretation correctness requires final source review."
+}
