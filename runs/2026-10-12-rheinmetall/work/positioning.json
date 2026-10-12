@@ -7,7 +7,7 @@
  "as_of": "2026-10-12",
  "scope": "Rheinmetall-Konzern · Flugabwehr (global) und Markt/Marktzugang Golfstaaten (GCC) · berufliches Profil des Hauptverantwortlichen Flugabwehr",
  "status": "vollständig",
- "input_fingerprint": "c4ee84b05f6970aa249b3c2e77948d22a5ef4a22873d33566eb39d409535c16a",
+ "input_fingerprint": "8f888cc4399a75ce40ecb4eb10640ee0aa8594972981a51105722175fd086b16",
  "plan_fingerprint": "23d3050702b754375a8d6f32e2fe5bb0d89276aca40bf89bcc71bc5589b7d8f4",
  "interpretations": [
   {
@@ -17,7 +17,7 @@
    "peer_id": "rheinmetall",
    "criterion_id": "effector_mix",
    "cell_status": "bewertet",
-   "value": "35-mm-Rohrwaffen mit AHEAD (Nächstbereich bis ca. 4 km, Herstellerangabe) als Kern; Lenkflugkörper über Partner (Stinger, Mistral, MBDA DefendAir; SkyKnight in Erprobung); HEL nur als Demonstrator/Entwicklung",
+   "value": "Kern: 35/30-mm-Rohrwaffen mit AHEAD im Nächstbereich; Lenkflugkörper über Partner; HEL nur Demonstrator/Entwicklung",
    "statement": "Rheinmetalls Vergleichsangebot deckt rohrbasiert den Nächstbereich ab und ergänzt Lenkflugkörper überwiegend über Partnereffektoren.",
    "depends_on": [
     "M-RHM-002",
@@ -30,7 +30,7 @@
     "P-SR30HEL-01",
     "P-HEL-03"
    ],
-   "reasoning": "Rohreffektoren (Revolver Gun Mk3, KDG/KCE-Kanonen) und AHEAD-Munition sind eigene Produkte; Lenkflugkörper auf Skyranger stammen von Dritten (Stinger, Mistral, DefendAir), SkyKnight ist ein EDGE-Flugkörper in Erprobung. Laserwaffen liegen als Demonstrator bzw. Entwicklungsvertrag (Marine) vor, nicht als integrierter Landeffektor.",
+   "reasoning": "Rohreffektoren (Revolver Gun Mk3, KDG/KCE-Kanonen) und AHEAD-Munition sind eigene Produkte; Lenkflugkörper auf Skyranger stammen von Dritten (Stinger, Mistral, DefendAir), SkyKnight ist ein EDGE-Flugkörper in Erprobung. Laserwaffen liegen als Demonstrator bzw. Entwicklungsvertrag (Marine) vor, nicht als integrierter Landeffektor; die 35-mm-Wirkreichweite gibt der Hersteller mit bis ca. 4 km an.",
    "method": "Qualitatives Profil nach Plan v1, kein Score",
    "uncertainty": "Reichweiten sind Herstellerangaben; Abschluss der SkyKnight-Qualifikation (geplant Ende 2026) nicht belegt."
   },
@@ -41,7 +41,7 @@
    "peer_id": "rheinmetall",
    "criterion_id": "integration",
    "cell_status": "bewertet",
-   "value": "Eigene Kette aus Sensor (X-TAR3D/MSU), C2 Skymaster und Effektoren; laut Hersteller offene Architektur; Turmintegration auf mehreren Fremdplattformen (Boxer, Pandur EVO, Lynx); Fremdsensor-Fusion in Übung über Link 16",
+   "value": "Eigene Kette Sensor–Skymaster–Effektor, laut Hersteller offen; Türme auf mehreren Fahrzeugplattformen integriert",
    "statement": "Rheinmetall integriert eigene Sensor-, C2- und Effektorkomponenten und montiert Skyranger-Türme auf verschiedene Fahrzeugplattformen.",
    "depends_on": [
     "M-RHM-002",
@@ -52,7 +52,7 @@
     "P-SR35-03",
     "P-NNBS-01"
    ],
-   "reasoning": "Die Italien-Batterie belegt die eigene Kette X-TAR3D–Skymaster–Revolver Gun; Skyranger-Aufträge zeigen Plattformintegration auf Boxer, Pandur EVO und Lynx. Die Anbindung fremder Sensoren ist für Twinvis nur als Übungsdemonstration belegt; NNbS sieht Vernetzung mit IRIS-T SLM vor.",
+   "reasoning": "Die Italien-Batterie belegt die eigene Kette X-TAR3D–Skymaster–Revolver Gun; Skyranger-Aufträge zeigen Plattformintegration auf Boxer, Pandur EVO und Lynx. Die Anbindung fremder Sensoren ist für Twinvis nur als Übungsdemonstration (Link 16) belegt; NNbS sieht Vernetzung mit IRIS-T SLM vor.",
    "method": "Qualitatives Profil nach Plan v1, kein Score",
    "uncertainty": "Offenheit der Architektur ist Herstellerangabe; Twinvis-Integration war Übung ohne Beschaffung."
   },
@@ -83,7 +83,7 @@
    "peer_id": "rheinmetall",
    "criterion_id": "industrial_capacity",
    "cell_status": "bewertet",
-   "value": "Laut Hersteller rund 70–100 Skyranger-Türme/Jahr; Ausbauziel bis zu 400/Jahr ab Ende 2027 (Herstellerziel); verteilte Fertigung Zürich, Rom, Neuss, Ede; 35-mm-Munitionsfertigung Unterlüß",
+   "value": "Laut Hersteller 70–100 Skyranger-Türme/Jahr, Ziel bis 400/Jahr ab Ende 2027; Fertigung an mehreren EU-Standorten",
    "statement": "Rheinmetall nennt eine laufende Turmkapazität und ein deutliches Ausbauziel und verteilt die Flugabwehrfertigung auf mehrere europäische Standorte.",
    "depends_on": [
     "P-SR30-08",
@@ -94,7 +94,7 @@
     "P-GP-01",
     "M-EXP-006"
    ],
-   "reasoning": "Die Kapazitätswerte sind Unternehmensangaben, das 400er-Ziel ist ausdrücklich ein künftiges Ziel. Der Skynex-Großauftrag 2026 verteilt Arbeit auf Rheinmetall Italia (GU) und Schweizer/Deutsche Gesellschaften; SECO-Bewilligungen von über 1,6 Mrd. CHF für die Rheinmetall Air Defence AG (laut WOZ) zeigen das Exportvolumen des Schweizer Standorts.",
+   "reasoning": "Die Kapazitätswerte sind Unternehmensangaben, das 400er-Ziel ist ausdrücklich ein künftiges Ziel; Fertigung ist auf Zürich, Rom, Neuss und Ede verteilt, 35-mm-Munition entsteht in Unterlüß. Der Skynex-Großauftrag 2026 verteilt Arbeit auf Rheinmetall Italia (GU) und Schweizer/Deutsche Gesellschaften; SECO-Bewilligungen von über 1,6 Mrd. CHF für die Rheinmetall Air Defence AG (laut WOZ) zeigen das Exportvolumen des Schweizer Standorts.",
    "method": "Qualitatives Profil nach Plan v1, kein Score",
    "uncertainty": "Keine belegte Ist-Produktion oder Auslieferungszahl pro Jahr; Bewilligungen sind keine tatsächlichen Ausfuhren."
   },
@@ -1300,14 +1300,19 @@
   {
    "id": "I-AD-05",
    "section": "topic:air_defence",
-   "statement": "Die operative Leitung der Flugabwehr liegt bei Oliver Dürr (Rheinmetall Air Defence AG / Division Air Defence), dessen Ausscheiden ein Fachmedium meldet; ein Nachfolger ist nicht registriert.",
+   "statement": "Roman Köhne ist laut Rheinmetall seit Oktober 2026 CEO der Division Air Defence (Nachfolge Oliver Dürr) und bringt Führungserfahrung aus dem Munitionsgeschäft mit; als Schwerpunkte nennt Rheinmetall Kapazitätsausbau und die strategische Weiterentwicklung der bodengebundenen Luftverteidigung.",
    "depends_on": [
+    "H-01",
+    "H-02",
+    "H-03",
+    "H-04",
+    "H-05",
     "T-12",
     "T-11"
    ],
-   "reasoning": "Dürr ist als Vorsitzender der Geschäftsleitung eingetragen und wurde im Juni 2026 als Head of Air Defence Division bezeichnet; CEO und COO halten Verwaltungsratsmandate. Die Ansprechpartnerrolle ist damit zum Stichtag im Übergang.",
-   "method": "Einordnung beruflicher Verantwortung aus Register-/Unternehmensangaben",
-   "uncertainty": "Ausscheidensdatum nur laut Fachmedium; Registerstand 07.07.2026."
+   "reasoning": "Köhne leitete zuvor die Division Weapon and Ammunition und war u. a. Geschäftsführer der Rheinmetall Waffe Munition GmbH; der genannte Fokus auf Kapazitätsausbau passt zur Lieferfähigkeitsfrage der Skyranger-Serien (I-AD-02). Dürr war bis dahin Vorsitzender der Geschäftsleitung der Rheinmetall Air Defence AG; CEO Papperger und COO Gansauge halten dort Verwaltungsratsmandate.",
+   "method": "Einordnung beruflicher Verantwortung aus Unternehmens-, Fachmedien- und Registerangaben",
+   "uncertainty": "Übernahmedatum 01.10.2026 nur laut Fachmedium (ES&T) und Karriereseite ohne Datum; im Handelsregister der Rheinmetall Air Defence AG (letzte SHAB-Publikation 07.07.2026) ist Dürr noch eingetragen und keine Organfunktion Köhnes belegt."
   },
   {
    "id": "I-GM-01",
@@ -1539,15 +1544,6 @@
     "M-EXP-002",
     "M-EXP-004",
     "M-EXP-006"
-   ],
-   "blocking": false
-  },
-  {
-   "id": "RR-03",
-   "target_role": "context",
-   "question": "Wann scheidet Oliver Dürr aus, und ist ein Nachfolger als Leiter der Division Air Defence / Rheinmetall Air Defence AG öffentlich benannt oder registriert?",
-   "related_claim_ids": [
-    "T-12"
    ],
    "blocking": false
   },
