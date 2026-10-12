@@ -4,7 +4,7 @@
  "company": "Rheinmetall",
  "as_of": "2026-10-12",
  "phase": "basis",
- "status": "teilweise",
+ "status": "freigegeben",
  "material_errors": [],
  "review_scope": {
   "method": "references/quellenpruefung.md (verbindlich), cluster-recherche.md, cluster-quellenkatalog.md, netzwerk-html.md, gespraechspartner.md, ausgabe-html-v2.md, faktenphase.md",
@@ -489,7 +489,7 @@
    "text": "Datierung saudischer KM-SAM-Deal: AGSI '2024' vs. MoD 'Nov 2023 (Offenlegung Feb 2024)'."
   }
  ],
- "release_readiness": "181 A-Claims; 180 geprüft, 1 Korrektur (P-SNX-10, nicht wesentlich: Exponatdetail am DIMDEX-Stand). Keine material_errors. Status teilweise bis P-SNX-10 korrigiert oder aus Kernansicht/Produktzeile skynex und Region Katar entfernt; alle übrigen A-Fakten für Interpretation nutzbar.",
+ "release_readiness": "181 A-Claims, alle geprüft; keine material_errors, keine offenen Korrekturen. Faktenbasis freigegeben; nicht blockierende Hinweise (Skynex 160/182 Mio., X-TAR3D 50/55 km, E37/E34-Einschränkungen, Quellen-Duplikate nicht als Zweitbeleg) bei Bewertung beachten.",
  "claims": [
   {
    "id": "T-01",
@@ -824,11 +824,8 @@
   {
    "id": "P-SNX-10",
    "depth": "A",
-   "status": "Korrektur",
-   "evidence_review": "Hochstufung A: Army Recognition 20.01.2026 vollständig geprüft. QEADF-Stand DIMDEX 2026 mit Skynex-Konfiguration „centered on the 35 mm gun effector“ bestätigt; Skymaster nur in Bildunterschrift zur Systemabbildung, X-TAR3D nur in allgemeiner Architekturbeschreibung („instrumented 50 km“), nicht als Standexponat belegt.",
-   "owner": "portfolio",
-   "reason": "Claim nennt Skymaster-Führungsknoten und X-TAR3D-Radar als am QEADF-Stand gezeigt; die Quelle belegt am Stand nur die Skynex-Konfiguration mit 35-mm-Geschütz (Skymaster in Bildunterschrift, X-TAR3D nur generisch beschrieben).",
-   "action": "Statement auf „Skynex-Konfiguration mit 35-mm-Geschütz am QEADF-Stand (Bildunterschrift nennt Skymaster C2)“ begrenzen, X-TAR3D-Standaussage streichen; danach gezielte Nachprüfung. C-018 (gleiche Quelle) ist korrekt."
+   "status": "geprüft",
+   "evidence_review": "Gezielte Nachprüfung: Army Recognition 20.01.2026 – „At the Qatar Emiri Air Defence Forces booth … a Rheinmetall Oerlikon Skynex configuration centered on the 35 mm gun effector“ wörtlich bestätigt; Skymaster/X-TAR3D-Standaussage entfernt, Unsicherheit zutreffend. Korrektur behoben."
   },
   {
    "id": "P-SNX-11",
@@ -1613,13 +1610,8 @@
  },
  "upgrade_round": {
   "upgraded_to_A": 36,
-  "exceptions": [
-   {
-    "id": "P-SNX-10",
-    "status": "Korrektur",
-    "owner": "portfolio"
-   }
-  ],
-  "note": "37 vormalige B-Claims auf Wunsch des Hauptagenten (Verwendung in module_views/Kernansicht) vollständig nach A geprüft; Belege aus demselben Lauf, gezielte Nachlesen der noch nicht ausdrücklich kontrollierten Teilaussagen. Paket unverändert."
+  "exceptions": [],
+  "note": "37 vormalige B-Claims auf Wunsch des Hauptagenten (Verwendung in module_views/Kernansicht) vollständig nach A geprüft; Belege aus demselben Lauf, gezielte Nachlesen der noch nicht ausdrücklich kontrollierten Teilaussagen. Paket unverändert.",
+  "p_snx_10": "Korrigiert und nachgeprüft (Paket neu, nur P-SNX-10-Fingerprint geändert)."
  }
 }
