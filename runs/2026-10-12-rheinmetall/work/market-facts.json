@@ -717,14 +717,14 @@
     },
     {
       "id": "M-SAAB-001",
-      "statement": "Saab beschreibt RBS 70 NG als lasergelenktes (Leitstrahl) Flugabwehrsystem mit über 9.000 m Reichweite und 0–5.000 m Höhenabdeckung, fahrzeugintegrierbar und vernetzt/fernbedienbar; als Nutzer nennt die Seite das brasilianische Heer seit 2014.",
+      "statement": "Saab beschreibt RBS 70 NG als lasergelenktes (Leitstrahl) Flugabwehrsystem mit über 9.000 m Reichweite und 0–5.000 m Höhenabdeckung, fahrzeugintegrierbar und vernetzt/fernbedienbar; laut Seite nutzt das brasilianische Heer RBS 70 seit 2014, erste RBS-70-NG-Schießen fanden dort 2019 statt.",
       "kind": "Herstellerangabe",
       "source_ids": [
         "S-126278ae64b82aa8"
       ],
-      "evidence": "Paraphrase: \"Unjammable laser guidance\"; Reichweite \"> 9000 m\", Höhe 0–5.000 m; Montage auf Fahrzeugen, vernetzter und ferngesteuerter Betrieb; brasilianisches Heer seit 2014.",
-      "location": "Produktseite RBS 70 NG, Abschnitte Key features und Specifications",
-      "uncertainty": "Produktseite ohne Datum.",
+      "evidence": "Paraphrase: \"Unjammable laser guidance\"; Reichweite \"> 9000 m\", Höhe 0–5.000 m; Montage auf Fahrzeugen, vernetzter und ferngesteuerter Betrieb; brasilianisches Heer nutzt RBS 70 seit 2014 (Schutz Olympische Spiele 2016), RBS-70-NG-Schießen 2019.",
+      "location": "Produktseite RBS 70 NG, Abschnitte Key features, Specifications und Nutzerbeispiel Brasilien",
+      "uncertainty": "Produktseite ohne Datum; Vertrags-/Lieferzeitpunkt der NG-Version für Brasilien nicht genannt.",
       "proposed_depth": "A",
       "depth_reason": "Grundlage einer Matrixbeobachtung"
     },
@@ -844,14 +844,14 @@
     },
     {
       "id": "M-MBDA-003",
-      "statement": "MBDA plant laut Breaking Defense 5 Mrd. EUR Investitionen über fünf Jahre und 2.800 Einstellungen; die Mistral-Produktionsfähigkeit liege beim Vierfachen von 2022, die Gesamtproduktion solle 2026 um 40 % steigen, und Nachfrage aus dem Nahen Osten treibe den MICA-Bedarf.",
+      "statement": "MBDA plant laut Breaking Defense 5 Mrd. EUR Investitionen über fünf Jahre und 2.800 Einstellungen; die Mistral-Produktionsfähigkeit liege beim Vierfachen von 2022, die Gesamtproduktion solle 2026 um 40 % steigen, und Nachfrage aus dem Nahen Osten treibe den Bedarf an MICA, dem Luft-Luft-Mehrzweckflugkörper (nicht das bodengestützte VL MICA).",
       "kind": "Fakt",
       "source_ids": [
         "S-ffd46967200270d4"
       ],
-      "evidence": "Paraphrase: 5 Mrd. EUR über fünf Jahre, 2.800 Einstellungen; Mistral-Kapazität 4-fach gegenüber 2022; Output 2026 +40 %; MICA-Nachfrage aus dem Nahen Osten.",
+      "evidence": "Paraphrase: 5 Mrd. EUR über fünf Jahre, 2.800 Einstellungen; Mistral-Kapazität 4-fach gegenüber 2022; Output 2026 +40 %; Nahost-Nachfrage nach dem Luft-Luft-Flugkörper MICA.",
       "location": "Artikel vom 27.3.2026, Absätze 1–6",
-      "uncertainty": "Unternehmensangaben in Medienwiedergabe; keine absoluten Stückzahlen.",
+      "uncertainty": "Unternehmensangaben in Medienwiedergabe; keine absoluten Stückzahlen; Nahost-Nachfrage bezieht sich auf MICA Luft-Luft, nicht auf VL MICA.",
       "proposed_depth": "A",
       "depth_reason": "Grundlage einer Matrixbeobachtung",
       "event_date": "2026-03-27",
@@ -1795,7 +1795,7 @@
         "M-SAAB-001",
         "M-SAAB-002"
       ],
-      "factual_description": "RBS 70 NG beim brasilianischen Heer seit 2014 (Herstellerangabe); Loke mit schwedischer Luftwaffe entwickelt und erprobt."
+      "factual_description": "Brasilianisches Heer nutzt RBS 70 seit 2014, erste RBS-70-NG-Schießen 2019 (Herstellerangabe); Loke mit schwedischer Luftwaffe entwickelt und erprobt."
     },
     {
       "peer_id": "saab",
@@ -1921,10 +1921,9 @@
       "peer_id": "mbda",
       "criterion_id": "gulf_access",
       "claim_ids": [
-        "M-MBDA-002",
-        "M-MBDA-003"
+        "M-MBDA-002"
       ],
-      "factual_description": "Saudi-Arabien (SANG) als Nutzer von VL MICA berichtet; MICA-Nachfrage aus dem Nahen Osten laut MBDA."
+      "factual_description": "Saudi-Arabien (SANG) als Nutzer von VL MICA berichtet (Kundenfoto, ohne Bestätigung durch MBDA/Frankreich)."
     },
     {
       "peer_id": "thales",
