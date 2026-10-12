@@ -4,7 +4,7 @@
  "company": "Rheinmetall",
  "as_of": "2026-10-12",
  "phase": "final",
- "status": "teilweise",
+ "status": "freigegeben",
  "material_errors": [],
  "review_scope": {
   "method": "references/quellenpruefung.md, interpretationsphase.md, executive-summary.md, portfolio-darstellung.md, capability-matrix.md",
@@ -25,8 +25,9 @@
   "non_blocking_hints": [
    "S-W1: Basis-Hinweis Skyranger-Verzögerungsberichte (03/2026) nicht im Paket; optional an portfolio (vgl. RR-04)."
   ],
-  "release_readiness": "Keine wesentlichen Fehler offen. Eine nicht wesentliche Korrektur offen (I-PM-skyguard, statement-Zeitbezug); nach Anpassung nur diesen Claim gezielt nachprüfen, dann Freigabe möglich.",
-  "correction_round_1": "22 IDs mit geändertem Fingerprint gezielt gegen neuen Wortlaut und depends_on geprüft (abgleich alter Probe-Fingerprints: genau diese 22 geändert; Validierung errors=[]). 21 freigegeben, MEF-1 behoben; I-PM-skyguard statement nicht korrigiert → bleibt Korrektur. 72 übrige Urteile unverändert übernommen."
+  "release_readiness": "Alle 94 I-/S-Claims A geprüft; keine offenen Korrekturen oder wesentlichen Fehler. Inhaltlich freigegeben; Fingerprints per stamp-review durch den Hauptagenten ergänzen.",
+  "correction_round_1": "22 IDs mit geändertem Fingerprint gezielt gegen neuen Wortlaut und depends_on geprüft (abgleich alter Probe-Fingerprints: genau diese 22 geändert; Validierung errors=[]). 21 freigegeben, MEF-1 behoben; I-PM-skyguard statement nicht korrigiert → bleibt Korrektur. 72 übrige Urteile unverändert übernommen.",
+  "correction_round_2": "Nur I-PM-skyguard geändert (Fingerprint-Abgleich gegen Probe der Runde 1 bestätigt; Validierung errors=[]); gegen depends_on geprüft und freigegeben. 93 übrige Urteile übernommen."
  },
  "claims": [
   {
@@ -428,12 +429,8 @@
   {
    "id": "I-PM-skyguard",
    "depth": "A",
-   "status": "Korrektur",
-   "evidence_review": "Korrekturrunde 1 (neuer Fingerprint) gezielt geprüft: reasoning/uncertainty nun mit Zeitbezug (2013/2019) und Variantenabgrenzung; Stufe 5 vertretbar.",
-   "reason": "Sichtbares statement unverändert 'Skyguard 3 ist bei Kunden installiert und genutzt' (Präsens, Plural) – widerspricht der eigenen uncertainty 'aktuelle Nutzung nicht belegt'; Skyguard-3-Beleg nur für einen Kunden (Al-Jubail 2019), Kuwait betrifft Skyguard allgemein.",
-   "action": "Statement anpassen, z. B. 'Skyguard 3 ist laut Bildauswertung seit 2019 in Saudi-Arabien installiert berichtet; Kuwait nutzte Skyguard laut Meldung 2013; Skyguard NG ist laufendes Kundenprogramm.' Score unverändert.",
-   "owner": "positioning",
-   "material": false
+   "status": "geprüft",
+   "evidence_review": "Korrekturrunde 2 (neuer Fingerprint) gezielt geprüft: statement nun mit Zeitbezug und Herkunft – Al-Jubail seit Juni/Juli 2019 laut Medien-/Bildauswertung (P-SG-05), Kuwait laut Bericht 2013, Variante nicht genannt (C-019), Skyguard NG seit 12/2023 beauftragt (P-SG-02); Stufe 5 vertretbar, Grenze zu 6 korrekt."
   },
   {
    "id": "I-PM-skymaster",
