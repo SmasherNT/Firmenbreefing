@@ -1,0 +1,655 @@
+{
+ "schema_version": 1,
+ "run_id": "2026-10-12-rheinmetall",
+ "company": "Rheinmetall",
+ "as_of": "2026-10-12",
+ "phase": "final",
+ "status": "teilweise",
+ "material_errors": [
+  {
+   "id": "MEF-1",
+   "claim_ids": [
+    "I-ES-02"
+   ],
+   "owner": "positioning",
+   "reason": "Sichtbare Executive-Summary-Headline stellt Skyranger-Serienlieferungen als laufenden Lieferhochlauf und Skynex-Einsatz als 'belegt' dar; Basis zeigt nur geplante Serienlieferungen und einen nicht unabhängig verifizierten Einsatzbericht.",
+   "action": "Headline korrigieren, Validierung neu erzeugen, gezielte Nachprüfung von I-ES-02 (nur dieser Claim)."
+  }
+ ],
+ "review_scope": {
+  "method": "references/quellenpruefung.md, interpretationsphase.md, executive-summary.md, portfolio-darstellung.md, capability-matrix.md",
+  "inputs": [
+   "input/auftrag.md",
+   "work/positioning.json (83 I-Claims)",
+   "work/swot.json (11 S-Claims)",
+   "work/interpretation-validation.json (94 required_full_review_ids, errors=[])",
+   "work/review-basis.md (freigegeben, 181 A geprüft)",
+   "work/comparison-plan.json v1",
+   "work/review-packet.json (nur depends_on-Fakten gelesen)",
+   "work/positioning-context.json (nur Portfolio-Produktzuordnung)"
+  ],
+  "actually_checked": "Alle 94 I-/S-Ableitungen inhaltlich (A) gegen ihre depends_on-Fakten bzw. I-Claims geprüft: Anker-/Stufenanwendung inkl. Grenze zur nächsten Stufe (35 Matrixzellen), portfolio-maturity-v1 (22 Produkte, Varianten/Demonstrator, Herstellerangabe, Plan ≠ Stufe), Highlights/Headlines/Previews (Einheit, Zeitraum, Bezugsobjekt, Herkunft, Ziel/Ist), SWOT (intern/extern, Datenlücke ≠ Schwäche, Zeitbezug). Keine neuen Webabrufe.",
+  "reused": "Unveränderte A-Fakten aus review-basis.md desselben Laufes/Stichtags übernommen, nicht erneut recherchiert. Basis-Hinweise geprüft: Skynex 160/182 Mio. und X-TAR3D 50/55 km nirgends als Wert verwendet; E37 (SADM/MBDA) → Korrektur I-MX-mbda-effector_mix; E34 (NNbS–Skyranger nur Vernetzung) in I-MX-diehl-integration/I-MX-rheinmetall-integration korrekt; Quellen-Duplikate nicht als Zweitbeleg herangezogen.",
+  "positioner_questions": "revolver_gun_mk3/x_tar3d Stufe 6: zulässig (Auslieferung an zwei benannte Kunden = wiederholte Auslieferung), x_tar3d-reasoning korrigieren. millennium_gun Stufe 6: zulässig mit sichtbarer Sekundärherkunft. hel_naval Stufe 4: zulässig (Entwicklungsvertrag = Kundenauftrag, Demonstrator getrennt). EDGE/Diehl Stufe 5: zulässig, Anker 'berichtet', Herkunft sichtbar.",
+  "formal_check": "scripts/stamp-review.py nur als Probe ins Scratchpad; mechanischer Pass ist keine Inhaltsfreigabe.",
+  "non_blocking_hints": [
+   "I-ES-04/I-GM-01/S-O1: Angriffe laut M-GCC-001/-002 ab Ende Februar/Anfang März 2026; 'seit März' präzisierbar.",
+   "I-ES-05: Headline 'Deutschland öffnet' → 'erleichtert'.",
+   "I-AD-03: Rheinmetall-Stufe 5 bezieht sich auf Skynex.",
+   "I-RG-AE: KM-SAM-Verweis ohne M-GCC-006 in depends_on.",
+   "I-PM-revolver_gun_mk3: M-QA-005 ergänzbar.",
+   "S-W1: Basis-Hinweis Skyranger-Verzögerungsberichte (03/2026) nicht im Paket; optional an portfolio (vgl. RR-04)."
+  ],
+  "release_readiness": "Nicht ausgabereif: 1 offener wesentlicher Fehler (I-ES-02) und 10 nicht wesentliche Korrekturen. Nach Korrektur durch positioning/swot: Validierung neu, gezielte Nachprüfung nur der 11 geänderten Claims und betroffener Abhängigkeiten (S-T1 von I-GM-02); übrige 83 Urteile übernehmbar, sofern Fingerprints unverändert."
+ },
+ "claims": [
+  {
+   "id": "I-AD-01",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (P-AD-01, C-043, P-SR30-01/-03, C-029, M-RHM-003, T-26); LIG nur vereinbart, Partnerplan ohne benannte Partner offengelegt."
+  },
+  {
+   "id": "I-AD-02",
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "Statement gedeckt (P-SR30-01/-03/-04/-05, P-SR35-03, P-SR30-08, M-RHM-005, I-PM-skyranger_30).",
+   "reason": "reasoning nennt Aufträge aus Ungarn und für die Ukraine mit Lieferfenstern 2026–2029 ohne depends_on (P-SR30-06/C-033, P-SR35-02 fehlen); Ungarn ist nur Entwicklungsauftrag, Ukraine-Lieferfenster nicht belegt.",
+   "action": "P-SR30-06 und P-SR35-02 ergänzen und als Entwicklungsauftrag bzw. Lieferstand offen qualifizieren, oder aus der Aufzählung streichen.",
+   "owner": "positioning",
+   "material": false
+  },
+  {
+   "id": "I-AD-03",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Matrixvergleich korrekt wiedergegeben (5× Stufe 5, Saab/MBDA Stufe 4), kein Ranking, Teil-Effektor-Bezug Thales/EDGE offengelegt. Hinweis: Rheinmetall-Stufe gilt für Skynex."
+  },
+  {
+   "id": "I-AD-04",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (C-027, C-038, C-039, C-041, T-26, C-042); Vertrag vs. MoU korrekt getrennt."
+  },
+  {
+   "id": "I-AD-05",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Personenidentität/aktuelle Rolle gedeckt: Köhne laut Rheinmetall-Karriereseite seit Oktober 2026 CEO Division Air Defence (H-01, Basis A geprüft); Vorrollen H-02/H-03, Schwerpunkte H-05 als Unternehmensdarstellung; Eintrittsdatum 01.10. nur laut ES&T und fehlende RAD-AG-Organfunktion offengelegt; Medienankündigung nicht als alleiniger Beleg verwendet."
+  },
+  {
+   "id": "I-ES-01",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Headline/Preview/Statement gedeckt (C-001, T-02, T-09, T-13); 4,2 Mrd. = 4.218 Mio. gerundet; Backlog inkl. Rahmenverträgen und Prognose (Stand März 2026) gekennzeichnet."
+  },
+  {
+   "id": "I-ES-02",
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "Statement und Preview gedeckt (I-PM-skynex, I-PM-skyranger_30/_35, I-MX-rheinmetall-customer_status); Headline nicht.",
+   "reason": "Headline 'Skynex ist belegt im Einsatz, Skyranger im Lieferhochlauf' verschleiert Ziel-/Ist-Unterschied und Herkunft: Skyranger-Serienlieferungen sind laut eigener Basis (I-PM-skyranger_30 Stufe 4, P-SR30-02/-03/-04/-05) nur geplant, kein Lieferhochlauf belegt; Skynex-Einsatz beruht auf ukrainischem Staatsmedium (M-RHM-004), nicht unabhängig belegt (executive-summary.md: Verkürzung darf Ziel/Ist und Aussageursprung nicht verschleiern).",
+   "action": "Headline z. B. 'Skynex mehrfach geliefert und laut Ukraine im Einsatz, Skyranger vor Serienlieferung' (max. 72 Zeichen); Preview unverändert zulässig. Danach Validierung neu und gezielte Nachprüfung.",
+   "owner": "positioning",
+   "material": true
+  },
+  {
+   "id": "I-ES-03",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (I-MX-rheinmetall-gulf_access, C-006, C-007, P-SNX-06); CEO-Aussagen T-25 nur als Medienwiedergabe; fehlender Auftragsbeleg als Datenlücke formuliert."
+  },
+  {
+   "id": "I-ES-04",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (M-GCC-001…007, M-KW-001/-002, M-AE-005); Anduril nur Billigung, Engpass anonym, offengelegt. Hinweis: Angriffe laut M-GCC-001/-002 bereits ab Ende Februar/Anfang März 2026 – 'seit März' nicht sinnverändernd."
+  },
+  {
+   "id": "I-ES-05",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (M-EXP-001/-002/-004/-005, C-024, C-017, P-AD-01); Schweizer Anwendung korrekt als offen. Hinweis (nicht blockierend): Headline 'Deutschland öffnet' wäre mit 'erleichtert' präziser."
+  },
+  {
+   "id": "I-ES-06",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (M-GCC-005, M-SA-001/-002, M-AE-001, M-QA-002, M-RHM-003); Regierungsziel vs. Ist-Wert getrennt; fehlende Quoten KW/BH/OM in uncertainty."
+  },
+  {
+   "id": "I-GM-01",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (M-GCC-001/-002/-004, M-BH-001, M-GCC-003); alle sechs GCC-Staaten über die Zeit betroffen; Regierungs-/anonyme Quellen offengelegt."
+  },
+  {
+   "id": "I-GM-02",
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "US-Prägung oberer Schichten (M-GCC-005), NASAMS/Anduril/EOS/Skyhammer/EDGE gedeckt.",
+   "reason": "Statement ordnet Anbieter 'aus Korea' der Diversifizierung 'im Nächstbereich' zu; KM-SAM/M-SAM II ist laut M-SA-003 Mittelstrecke und nicht Teil der Vergleichseinheit (ebenso NASAMS an der Obergrenze).",
+   "action": "Korea/KM-SAM als Mittelstrecken-Diversifizierung getrennt nennen; Nächstbereich auf Anduril, EOS Slinger, Skyhammer, EDGE beschränken.",
+   "owner": "positioning",
+   "material": false
+  },
+  {
+   "id": "I-GM-03",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (C-010, C-011, C-012, C-018, C-019, P-SNX-10, P-SNX-06, T-23, T-25, P-GULF-01); CEO-Aussagen ohne Länderangabe korrekt nicht als Länderbeleg; RAST Digital Systems korrekt."
+  },
+  {
+   "id": "I-GM-04",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (M-EXP-001…006, C-024, C-025, C-017); Anwendung Schweiz als Datenlücke."
+  },
+  {
+   "id": "I-GM-05",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (M-SA-001/-002, M-AE-001, M-QA-002, C-009, M-SAAB-003, M-AE-003); Umsetzung RADARABIA/RBAT als nicht belegt."
+  },
+  {
+   "id": "I-GM-06",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (M-RHM-003, C-021, C-020, M-AE-004, M-QA-004, M-DIE-003, M-AE-003)."
+  },
+  {
+   "id": "I-HL-01",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Zahl, Einheit, Bezugsobjekt (Segment Air Defence), Zeitraum H1 2026 und Pro-forma-Vorjahr korrekt aus T-09/P-AD-03; Herkunft 'laut Rheinmetall', ungeprüfte Halbjahreszahlen offengelegt."
+  },
+  {
+   "id": "I-HL-02",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Werte 49 %/20 %, 'indirekt', at equity und Stichtag 31.12.2025 korrekt aus C-007; Kapitalanteil ≠ Kontrolle offengelegt."
+  },
+  {
+   "id": "I-HL-03",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Status, Datum 10.09.2026, Geltung bis 15.09.2027 und Länderkreis korrekt aus M-EXP-001/-002 (BAFA)."
+  },
+  {
+   "id": "I-MX-diehl-customer_status",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 durch Lieferung an Ukraine (M-DIE-001), Stufe 5 durch vom Hersteller weitergegebene Kundenangabe zu Gefechtseinsatz; Herkunft sichtbar, Trefferquote nicht als Leistungsbeleg genutzt. Offene Frage Positionierer: Stufe 5 zulässig (Anker 'berichtet'), Herkunftskennzeichnung ausreichend."
+  },
+  {
+   "id": "I-MX-diehl-effector_mix",
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "IRIS-T SLM mit eigenem Flugkörper/Startgerät gedeckt (M-DIE-001).",
+   "reason": "reasoning 'nach Plan liegt das System im Kurz- bis Mittelstreckenbereich' – comparison-plan.json enthält keine solche Zuordnung, kein Fakt beziffert die Schicht; Statement 'oberhalb des rohrbasierten Nächstbereichs' damit ohne depends_on-Deckung.",
+   "action": "Schichtzuordnung als nicht im Kontext belegt kennzeichnen oder entfernen (Statement z. B. 'deckt mit IRIS-T SLM die Lenkflugkörperschicht ab; Reichweitenschicht nicht beziffert').",
+   "owner": "positioning",
+   "material": false
+  },
+  {
+   "id": "I-MX-diehl-gulf_access",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 2 korrekt (MoU EDGE, M-DIE-003/C-022); Grenze zu 3 als Datenlücke formuliert."
+  },
+  {
+   "id": "I-MX-diehl-industrial_capacity",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt durch M-DIE-002; Konzernbezug der 1,5 Mrd. EUR offengelegt."
+  },
+  {
+   "id": "I-MX-diehl-integration",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt: GU/Systemintegrator mit Hensoldt-Radar/Airbus-FC (M-DIE-001), NNbS-Vernetzung 'vorgesehen' (C-027)."
+  },
+  {
+   "id": "I-MX-edge-customer_status",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 5 nach Anker 'Einsatz berichtet' durch M-AE-004 getragen; ausschließlich Unternehmensangabe sichtbar in statement/uncertainty; Abgrenzung SkyKnight korrekt. Offene Frage Positionierer: zulässig, da Anker 'berichtet' verlangt, Herkunft offen."
+  },
+  {
+   "id": "I-MX-edge-effector_mix",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt durch M-AE-004 (Soft-Kill, CEO-Angabe) und M-RHM-003/P-SNX-08 (SkyKnight in Erprobung); Herkunft Unternehmensangabe sichtbar."
+  },
+  {
+   "id": "I-MX-edge-gulf_access",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 5 gedeckt: nationale Industriebasis (M-AE-002, M-AE-004 'national gebaut'), Kunden VAE (M-AE-004) und Kuwait-Programm als GU (C-020); Einschränkung maritim/Inländerstatus offengelegt."
+  },
+  {
+   "id": "I-MX-edge-industrial_capacity",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt: ITA-Schätzungen (M-AE-002) als Schätzung, SkyKnight-Produktionsanlauf als CEO-Aussage (M-RHM-003)."
+  },
+  {
+   "id": "I-MX-edge-integration",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt: SkyKnight-Skynex gemeinsame Entwicklung (M-RHM-003), Barzan-Vereinbarung nur EDGE-Darstellung (M-QA-004), Hanwha-Term-Sheet unverbindlich (M-AE-003)."
+  },
+  {
+   "id": "I-MX-kongsberg_rtx-customer_status",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 5 gedeckt durch M-NAS-002 (Einsatz Ukraine, Unterstützerangabe), Verträge Oman/Katar (M-OM-001, M-QA-001)."
+  },
+  {
+   "id": "I-MX-kongsberg_rtx-effector_mix",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt durch M-NAS-001; Schichtzuordnung durch Fakt-Unsicherheit ('Mittelstrecke an der Obergrenze') gestützt (Formulierung 'laut Plan' unpräzise, nicht sinnverändernd)."
+  },
+  {
+   "id": "I-MX-kongsberg_rtx-gulf_access",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 3 gedeckt (Oman 2014, Katar 2019 DCS; Kuwait 2026 über Raytheon/FMS, offengelegt); Grenze zu 4 als Datenlücke."
+  },
+  {
+   "id": "I-MX-kongsberg_rtx-industrial_capacity",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "'nicht öffentlich belegt' korrekt mit coverage_note (Kongsberg-Seite 403); keine Schwächeaussage."
+  },
+  {
+   "id": "I-MX-kongsberg_rtx-integration",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt durch M-NAS-001 und M-KW-001; Herstellerangaben gekennzeichnet."
+  },
+  {
+   "id": "I-MX-mbda-customer_status",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 gedeckt durch M-MBDA-002 (Kundenfoto SANG, keine MBDA-Bestätigung offengelegt); Mistral-Österreich korrekt nur 'vorgesehen'."
+  },
+  {
+   "id": "I-MX-mbda-effector_mix",
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "VL MICA/Mistral gedeckt (M-MBDA-001/-002); Bezug Skyranger über P-SR30-03 und C-029.",
+   "reason": "value 'MBDA liefert zudem Flugkörper für Rheinmetall-Skyranger (Mistral, DefendAir)' stellt Lieferung als Ist dar; C-029 ist nur gebilligte Finanzierung ohne benannten Auftragnehmer (Basis-Hinweis E37), Mistral für Österreich mit unbestätigtem Lieferbeginn (P-SR30-03).",
+   "action": "'liefert' durch 'ist als Flugkörperlieferant vorgesehen (Mistral Österreich; DefendAir/SADM Finanzierung gebilligt)' ersetzen.",
+   "owner": "positioning",
+   "material": false
+  },
+  {
+   "id": "I-MX-mbda-gulf_access",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 3 vertretbar (berichteter Erwerb durch SANG, M-MBDA-002); kein offizieller Vertrag offengelegt; Grenze zu 4 korrekt."
+  },
+  {
+   "id": "I-MX-mbda-industrial_capacity",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt durch M-MBDA-003; Plan/Medienwiedergabe und MICA-Luft-Luft-Abgrenzung (Basis-Korrektur) übernommen."
+  },
+  {
+   "id": "I-MX-mbda-integration",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt durch M-MBDA-001; Herstellerangabe gekennzeichnet."
+  },
+  {
+   "id": "I-MX-rheinmetall-customer_status",
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "Stufe 5 nach Anker korrekt (M-RHM-004 Einsatz berichtet; Stufe 4 durch P-SNX-05, M-QA-005).",
+   "reason": "Statement 'Lieferungen an benannte Kunden (Italien, Katar, Ukraine) sind belegt' – Ukraine-Lieferung ist ausschließlich Herstellerangabe (P-SNX-03), Katar über Rheinmetall-Bestätigung ggü. Janes; Anker verlangt 'berichtet', Herkunft muss sichtbar bleiben (quellenpruefung.md: 'Lieferung laut Hersteller berichtet').",
+   "action": "'belegt' durch 'berichtet (Ukraine laut Hersteller)' ersetzen; Score unverändert.",
+   "owner": "positioning",
+   "material": false
+  },
+  {
+   "id": "I-MX-rheinmetall-effector_mix",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Profil gedeckt: eigene Rohreffektoren/AHEAD (P-SR-01, M-RHM-002), Partner-Flugkörper Stinger/Mistral/DefendAir (P-SR30-01/-03/-08), SkyKnight in Erprobung (M-RHM-003), HEL nur Demonstrator/Entwicklung (P-SR30HEL-01, P-HEL-03); Reichweiten als Herstellerangabe gekennzeichnet; X-TAR3D-Reichweite nicht verwendet."
+  },
+  {
+   "id": "I-MX-rheinmetall-gulf_access",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 korrekt: 100-%-Golf-Töchter (C-006) und at-equity RBAT 49 %/RADARABIA 20 % (C-007) erfüllen Anker 4; Stufe 3 über Katar-Lieferung (M-QA-005) und Kuwait-MASS (C-020, außerhalb Vergleichseinheit offengelegt). Grenze zu 5 korrekt: lokale Fertigung nur angekündigt (C-009, C-015)."
+  },
+  {
+   "id": "I-MX-rheinmetall-industrial_capacity",
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "Kapazitätswerte und Ziel korrekt als Herstellerangabe/Ziel (P-SR30-08, M-RHM-005); Standorte aus P-AD-01, C-032, P-GP-01.",
+   "reason": "value 'Fertigung an mehreren EU-Standorten' falsch: Zürich (Schweiz) ist kein EU-Standort – für den Schweizer Exportrahmen (S-T2, I-GM-04) entscheidungsrelevant. reasoning 'SECO-Bewilligungen … zeigen das Exportvolumen' vermischt Bewilligung und Ausfuhr (M-EXP-006).",
+   "action": "value: 'europäischen Standorten (CH, IT, DE, NL)'; reasoning: 'bewilligtes Exportvolumen'.",
+   "owner": "positioning",
+   "material": false
+  },
+  {
+   "id": "I-MX-rheinmetall-integration",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Profil gedeckt: Kette X-TAR3D–Skymaster–Revolver Gun (M-RHM-002), Plattformen Boxer/Pandur/Lynx (P-SR30-01/-03, P-SR35-03); Twinvis nur Übung (P-SNX-07), NNbS nur 'vorgesehen' (E34-Hinweis beachtet); Offenheit als Herstellerangabe."
+  },
+  {
+   "id": "I-MX-saab-customer_status",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 vertretbar: Nutzung RBS 70 durch brasilianisches Heer und NG-Schießen 2019 laut Saab (M-SAAB-001); Herkunft und fehlender NG-Lieferzeitpunkt offengelegt; ME-2-Korrektur der Basis berücksichtigt."
+  },
+  {
+   "id": "I-MX-saab-effector_mix",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt durch M-SAAB-001/-002; Herstellerwerte gekennzeichnet."
+  },
+  {
+   "id": "I-MX-saab-gulf_access",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 gedeckt: GlobalEye-Verträge VAE (M-SAAB-004, Stufe 3), Saab Ltd/JV laut Saab (M-SAAB-003, Stufe 4); kein SHORAD-Bezug offengelegt; Grenze zu 5 korrekt."
+  },
+  {
+   "id": "I-MX-saab-industrial_capacity",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Zelle 'nicht öffentlich belegt' korrekt: value=null, coverage_note vorhanden, keine Aussage über tatsächliche Lieferfähigkeit."
+  },
+  {
+   "id": "I-MX-saab-integration",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt durch M-SAAB-001/-002; Grenze (übergeordnete Führung nicht beschrieben) korrekt."
+  },
+  {
+   "id": "I-MX-thales-customer_status",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 5 gedeckt durch M-THA-002 (LMM-Einsatz Ukraine, Fachmedium); Beschränkung auf Effektor LMM korrekt ausgewiesen."
+  },
+  {
+   "id": "I-MX-thales-effector_mix",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt durch M-THA-001/-002."
+  },
+  {
+   "id": "I-MX-thales-gulf_access",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 3 gedeckt durch M-QA-003 (Radarauftrag QEAF laut Thales); lokale Vorarbeiten korrekt nicht als Stufe 4 gewertet."
+  },
+  {
+   "id": "I-MX-thales-industrial_capacity",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt durch M-THA-002; LMM-Bezug und Stand März 2025 offengelegt."
+  },
+  {
+   "id": "I-MX-thales-integration",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt durch M-THA-001."
+  },
+  {
+   "id": "I-PM-aerie",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 2 korrekt: Prototyp laut Mitteilung, Demonstrationen erst geplant; Titel-Überzeichnung ('liefern') offengelegt (P-CUAS-04)."
+  },
+  {
+   "id": "I-PM-ahead_35",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 korrekt und konservativ (P-AH-02, P-SG-02); Beleglücke zu Lieferung nicht als Unreife formuliert."
+  },
+  {
+   "id": "I-PM-drone_defence_toolbox",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 1 korrekt; Produktzuordnung nur P-CUAS-01 (Basis-Korrektur umgesetzt)."
+  },
+  {
+   "id": "I-PM-gepard_ammo_35",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 korrekt (P-GP-01; erste Charge laut Hersteller, keine wiederholte Auslieferung belegt)."
+  },
+  {
+   "id": "I-PM-hel_naval",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 vertretbar: Demonstrator (Stufe 3, P-HEL-01/-02) und künftiges Marinesystem (Entwicklungsvertrag BAAINBw, P-HEL-03 = konkreter Kundenauftrag) im statement getrennt; Einsatzbereitschaft 2029 als Ziel, JV nicht bestätigt. Offene Frage Positionierer: Stufe 4 zulässig, kein Übertrag auf Stufe 5."
+  },
+  {
+   "id": "I-PM-hermelin_cuas",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 1 korrekt (Messeexponat, P-CUAS-03)."
+  },
+  {
+   "id": "I-PM-mass",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 korrekt (P-MASS-01/C-020); Softkill-Abgrenzung und Wertunschärfe offengelegt."
+  },
+  {
+   "id": "I-PM-millennium_gun",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 6 vertretbar: eigenständiger Fachmedienbericht (ESD, P-MG-02, Basis A geprüft) nennt fünf Marinen; Sekundärherkunft im statement ('laut Fachmedium') und uncertainty sichtbar. Offene Frage Positionierer: zulässig mit sichtbarer Einschränkung."
+  },
+  {
+   "id": "I-PM-msu",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 1 korrekt (P-MSU-01)."
+  },
+  {
+   "id": "I-PM-rcws320_cuas",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 1 korrekt (P-CUAS-02)."
+  },
+  {
+   "id": "I-PM-revolver_gun_mk3",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 6 vertretbar: Auslieferungen an zwei benannte Kunden (Katar: Behördenvideo via Janes, P-SNX-09; Italien: vier Geschütze, M-RHM-002/P-SNX-05) erfüllen 'wiederholte Auslieferung'. Herkunft Katar-Beleg in uncertainty sichtbar. Empfehlung (nicht blockierend): M-QA-005 als Rheinmetall-Lieferbestätigung zusätzlich referenzieren."
+  },
+  {
+   "id": "I-PM-skyguard",
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "Stufe 5 vertretbar: Installation Al-Jubail per Bild-/Satellitenauswertung (P-SG-05), Kuwait-Nutzung laut Rheinmetall-Meldung 2013 (C-019).",
+   "reason": "Statement 'Skyguard 3 ist bei Kunden installiert und genutzt' – Präsens ohne Zeitbezug (Belege 2013/2019) und Kuwait-Beleg betrifft 35-mm-Skyguard allgemein, nicht ausdrücklich Skyguard 3.",
+   "action": "Zeitbezug und Variante ergänzen, z. B. 'Skyguard 3 laut Bildauswertung 2019 in Saudi-Arabien installiert; Kuwait nutzte Skyguard-Systeme laut Meldung von 2013'.",
+   "owner": "positioning",
+   "material": false
+  },
+  {
+   "id": "I-PM-skymaster",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 korrekt: Italien-Batterie/Kundenprogramme; Plattformreife Skynex nicht übertragen."
+  },
+  {
+   "id": "I-PM-skynex",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 6 gedeckt: Auslieferungen Katar (M-QA-005 Rheinmetall-Bestätigung, P-SNX-09), Italien (P-SNX-05, M-RHM-002) und Ukraine (P-SNX-03, Herstellerangabe) = wiederholte Auslieferung; Einsatzbericht M-RHM-004 mit Herkunft; 160/182-Mio.-Widerspruch nicht verwendet."
+  },
+  {
+   "id": "I-PM-skynex_skyknight",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 3 korrekt (Testschüsse laut Janes, M-RHM-003); Grenze zu 4 korrekt (kein Auftrag; VAE-Erstkunde 2021 nur vorgesehen, C-021)."
+  },
+  {
+   "id": "I-PM-skyranger_30",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 korrekt: Aufträge DE/AT/DK/NL (P-SR30-01/-03/-04/-05), Nachweismuster-Übergabe; Serienlieferungen und Kapazitätsziel korrekt nicht als Stufe gewertet."
+  },
+  {
+   "id": "I-PM-skyranger_30_hel",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 1 korrekt: Komponenten-/Technologiemustertests nicht auf Hybridkonfiguration übertragen (P-SR30HEL-01)."
+  },
+  {
+   "id": "I-PM-skyranger_35",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 korrekt (P-SR35-02/-03); Lieferung/Einsatz Ukraine nicht belegt, Rumänien 2028+ Plan."
+  },
+  {
+   "id": "I-PM-skyranger_762",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 1 korrekt: Messeexponat reicht nicht für Stufe 2 (P-SR762-01)."
+  },
+  {
+   "id": "I-PM-skyshield",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 4 korrekt (P-SS-01, Kunde ungenannt offengelegt)."
+  },
+  {
+   "id": "I-PM-skyspotter",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Stufe 3 korrekt (Demonstration GBAD Demo Days, P-SSP-02; Herstellerangabe)."
+  },
+  {
+   "id": "I-PM-x_tar3d",
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "Stufe 6 vertretbar über Auslieferungen an zwei benannte Kunden (Katar-Video P-SNX-09; Italien P-SNX-05/M-RHM-002).",
+   "reason": "reasoning führt Rumänien-Auftrag (P-SG-03) und 'Auftrag von 2019' als Stütze für Stufe 6 an – Aufträge sind keine Auslieferung (portfolio-darstellung.md); P-SNX-11 (Auftrag 2019) steht zudem nicht in depends_on.",
+   "action": "Aufträge im reasoning als Fortsetzung, nicht als Stufe-6-Beleg kennzeichnen; P-SNX-11 ergänzen oder Verweis entfernen; optional M-QA-005 als Lieferbestätigung Katar ergänzen.",
+   "owner": "positioning",
+   "material": false
+  },
+  {
+   "id": "I-RG-AE",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt: drei VAE-Gesellschaften (C-006: Abu Dhabi ×2, Sharjah), SkyKnight-Partnerschaft, kein Flugabwehrauftrag; C-023 ohne Flugabwehrbezug. Hinweis: KM-SAM im reasoning stützt sich auf M-GCC-006 (nicht in depends_on)."
+  },
+  {
+   "id": "I-RG-BH",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (M-BH-001, M-GCC-005, P-SG-05); Eigentümer Skyguard-Foto unklar, Datenlücke korrekt."
+  },
+  {
+   "id": "I-RG-KW",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (C-019 historisch, C-020 MASS als Softkill, M-KW-001/-002)."
+  },
+  {
+   "id": "I-RG-OM",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (M-OM-001, M-GCC-009, M-GCC-004); fehlender Rheinmetall-Bezug als Datenlücke."
+  },
+  {
+   "id": "I-RG-QA",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Gedeckt (M-QA-005, P-SNX-09/-10, C-007, M-QA-006, M-QA-001, M-QA-003); 'stärkste belegte Position' als belegbezogene Einordnung vertretbar; RBAT-Status offen."
+  },
+  {
+   "id": "I-RG-SA",
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "Skyguard-Bestand (C-010), Millennium Gun (P-MG-02), RADARABIA/RAST (C-007, C-008, C-012), Lokalisierung (M-SA-001) gedeckt.",
+   "reason": "'Markt mit größtem SIPRI-Budget im GCC' nicht tragfähig: SIPRI-Fact-Sheet enthält keine Werte für VAE, Katar, Bahrain (M-GCC-009, ausdrücklich Datenlücke). reasoning nennt MBDA (VL MICA) als belegten Wettbewerber ohne M-MBDA-002 in depends_on.",
+   "action": "Formulieren als 'höchste im SIPRI-Fact-Sheet ausgewiesene GCC-Militärausgaben (VAE/Katar/Bahrain dort ohne Wert)', M-GCC-009 und M-MBDA-002 ergänzen.",
+   "owner": "positioning",
+   "material": false
+  },
+  {
+   "id": "S-O1",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Extern korrekt; I-GM-01, I-ES-04, M-GCC-002/-003; Unsicherheiten sichtbar (Hinweis 'seit März' wie I-ES-04)."
+  },
+  {
+   "id": "S-O2",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Extern korrekt; M-EXP-001/-002, C-024; Befristung und unbelegte Nutzung durch Rheinmetall offengelegt."
+  },
+  {
+   "id": "S-O3",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Extern korrekt; M-SA-001/-002, M-QA-002, C-007; JV-Umsetzung als 'bei Umsetzung' bedingt formuliert."
+  },
+  {
+   "id": "S-S1",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Intern korrekt; trägt auf I-PM-skynex (Stufe 6), I-MX-rheinmetall-customer_status/-integration, I-AD-01, M-RHM-002; Vorteil über Liefer-/Einsatzhistorie begründet, nicht nur Produktmerkmal; Einsatzherkunft sichtbar."
+  },
+  {
+   "id": "S-S2",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Intern korrekt; C-006 (vier Golf-Gesellschaften), C-007, P-SNX-10, I-MX-rheinmetall-gulf_access; Umsetzung lokaler Fertigung als Datenlücke, nicht als Stärke behauptet."
+  },
+  {
+   "id": "S-S3",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Intern korrekt; Kennzahlen und Zeitpunkt aus T-09/C-001 korrekt; Backlog inkl. Rahmenverträge offengelegt."
+  },
+  {
+   "id": "S-T1",
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "Extern korrekt eingeordnet; EOS Slinger (M-AE-005), Anduril-Billigung (M-KW-002), Skyhammer (M-GCC-007) gedeckt.",
+   "reason": "Wie I-GM-02: KM-SAM (Mittelstrecke, M-SA-003) und NASAMS werden als neue Anbieter 'im Nächstbereich' geführt; abhängige Aussage von I-GM-02.",
+   "action": "Nach Korrektur von I-GM-02 Schichtzuordnung anpassen (KM-SAM/NASAMS als Diversifizierung oberhalb des Nächstbereichs); Validierung neu.",
+   "owner": "swot",
+   "material": false
+  },
+  {
+   "id": "S-T2",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Extern korrekt; M-EXP-004/-005, C-017, P-AD-01; Anwendung auf Golfstaaten als Datenlücke, nicht als Verweigerung."
+  },
+  {
+   "id": "S-T3",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Extern korrekt; I-GM-06, I-MX-edge-gulf_access (Stufe 5), M-AE-001/-003/-004; EDGE-Angaben und Term-Sheet-Unverbindlichkeit offengelegt."
+  },
+  {
+   "id": "S-W1",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Intern korrekt: Kapazität 70–100 Türme (P-SR30-08), Ziel 400 als Ziel (M-RHM-005), Golf-Liefermenge sichtbar als Medienwiedergabe einer CEO-Aussage (T-25). Abhängigkeit I-AD-02: dortige Korrektur betrifft nur reasoning, nicht diese Aussage. Hinweis: Basis-Hinweis zu Medienberichten über Skyranger-Verzögerung (03/2026) nicht im Paket – würde Aussage nur verstärken, nicht blockierend."
+  },
+  {
+   "id": "S-W2",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Intern korrekt: Partnerabhängigkeit bei Flugkörpern belegt (I-AD-01, I-MX-rheinmetall-effector_mix, C-043, I-PM-skynex_skyknight); keine Datenlücke als Schwäche umgedeutet."
+  }
+ ]
+}
