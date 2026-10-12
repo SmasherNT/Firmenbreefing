@@ -4,7 +4,7 @@
  "company": "Rheinmetall",
  "as_of": "2026-10-12",
  "phase": "basis",
- "status": "freigegeben",
+ "status": "teilweise",
  "material_errors": [],
  "review_scope": {
   "method": "references/quellenpruefung.md (verbindlich), cluster-recherche.md, cluster-quellenkatalog.md, netzwerk-html.md, gespraechspartner.md, ausgabe-html-v2.md, faktenphase.md",
@@ -17,7 +17,7 @@
    "work/comparison-plan.json"
   ],
   "actually_checked": "Alle 162 Quellen im aktuellen Lauf geöffnet (159 per curl/Textextraktion, 3 per WebFetch nach HTTP 403/406: S-34516b5032f5dad2, S-95cc0ee12b8ad9b8, S-b798e8edef2944e7); 8 PDFs lokal mit pdftotext seitengenau ausgewertet (GB 2025, GB 2024, H1-Bericht 2026, Jahresabschluss 2025, SIPRI, Diehl-GB 2025, Hensoldt-AR-Kopie, EOS-ASX). Jeder Claim gegen die Belegstelle im Original abgeglichen; alle 37 required_full_review_ids und alle 54 Netzwerkkanten mit A geprüft. Auch die 37 B-Claims wurden im gemeinsamen Quellenabruf vollständig gegengelesen (keine nur nicht-einzeln-geprüften Restclaims).",
-  "depth_decisions": "Vorschläge der Rollen übernommen; hochgestuft auf A: C-013, C-014, C-018, C-022, C-040 (Netzwerkkanten/required) und M-EXP-006 (trägt Matrix-Beobachtung rheinmetall/industrial_capacity). Ergebnis: 143 A, 37 B. Korrekturrunde 1: T-13 neu (A) → 144 A, 37 B.",
+  "depth_decisions": "Vorschläge der Rollen übernommen; hochgestuft auf A: C-013, C-014, C-018, C-022, C-040 (Netzwerkkanten/required) und M-EXP-006 (trägt Matrix-Beobachtung rheinmetall/industrial_capacity). Ergebnis: 143 A, 37 B. Korrekturrunde 1: T-13 neu (A) → 144 A, 37 B. Hochstufungsrunde: alle 37 B → A (181 A, 0 B).",
   "targeted_additional_checks": [
    "Personen-Aktualität: WebSearch 'Roman Köhne Rheinmetall Air Defence CEO Oktober 2026' – keine widersprechenden Meldungen; WOZ 01.10.2026 nennt Dürr 'scheidender CEO' (konsistent).",
    "Bundeswehr-Skyranger-Zahlen: WebSearch nach abgeschlossenem Großauftrag 2026 – kein unterzeichneter Folgevertrag gefunden; Bundeswehr-Zahlen in Claims konsistent (1 Prototyp + 18 Serie = 19)."
@@ -489,13 +489,13 @@
    "text": "Datierung saudischer KM-SAM-Deal: AGSI '2024' vs. MoD 'Nov 2023 (Offenlegung Feb 2024)'."
   }
  ],
- "release_readiness": "Alle 144 A-Claims inhaltlich geprüft (inkl. 37 Netzwerk-Pflichtclaims), keine offenen wesentlichen Fehler, keine Korrektur-Claims. Freigabe der Faktenbasis für Interpretation; die nicht blockierenden Hinweise (Skynex 160/182 Mio., X-TAR3D 50/55 km, E37/E34-Einschränkungen, Quellen-Duplikate nicht als Zweitbeleg) bleiben bei der Bewertung zu beachten.",
+ "release_readiness": "181 A-Claims; 180 geprüft, 1 Korrektur (P-SNX-10, nicht wesentlich: Exponatdetail am DIMDEX-Stand). Keine material_errors. Status teilweise bis P-SNX-10 korrigiert oder aus Kernansicht/Produktzeile skynex und Region Katar entfernt; alle übrigen A-Fakten für Interpretation nutzbar.",
  "claims": [
   {
    "id": "T-01",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Management-Seite + Jahresabschluss 2025 PDF S.30 geöffnet: Vorstand, Bestellungen bis 31.12.2029/2027, Saal ab 1.9.2025 bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Management-Seite + Jahresabschluss 2025 PDF S.30 geöffnet: Vorstand, Bestellungen bis 31.12.2029/2027, Saal ab 1.9.2025 bestätigt."
   },
   {
    "id": "T-02",
@@ -571,21 +571,21 @@
   },
   {
    "id": "T-20",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "DE-PM 27.02.2024 Keyfacts: 595 Mio. brutto, 1+18, Option 30, NNbS-Komponente bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): DE-PM 27.02.2024 Keyfacts: 595 Mio. brutto, 1+18, Option 30, NNbS-Komponente bestätigt."
   },
   {
    "id": "T-21",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "DE-PM 30.09.2024 Keyfacts: 16 Türme, niedriger dreistelliger Mio.-Bereich, 2027/2028 bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): DE-PM 30.09.2024 Keyfacts: 16 Türme, niedriger dreistelliger Mio.-Bereich, 2027/2028 bestätigt."
   },
   {
    "id": "T-22",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 05.01.2026: geplantes JV (GmbH dt. Rechts) für Q1 2026, maritime Laser, Weiterentwicklung landgestützt bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 05.01.2026: geplantes JV (GmbH dt. Rechts) für Q1 2026, maritime Laser, Weiterentwicklung landgestützt bestätigt."
   },
   {
    "id": "T-23",
@@ -595,9 +595,9 @@
   },
   {
    "id": "T-24",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Eurasia Review (EurActiv-Republikation, 21.03.2026) geöffnet: Zitat „empty or nearly empty“ bestätigt; CNBC-Original nicht geöffnet (im Claim offengelegt)."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Eurasia Review (EurActiv-Republikation, 21.03.2026) geöffnet: Zitat „empty or nearly empty“ bestätigt; CNBC-Original nicht geöffnet (im Claim offengelegt)."
   },
   {
    "id": "T-25",
@@ -607,27 +607,27 @@
   },
   {
    "id": "T-26",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Korea Times 16.06.2026 (Article-Body im Quelltext) geöffnet: Partnerschaft, JV-Gespräche, gemeinsame Entwicklung eines neuen Kurzstrecken-FK, Dürr als CEO RAD, Sonntag/Montag-Widerspruch bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Korea Times 16.06.2026 (Article-Body im Quelltext) geöffnet: Partnerschaft, JV-Gespräche, gemeinsame Entwicklung eines neuen Kurzstrecken-FK, Dürr als CEO RAD, Sonntag/Montag-Widerspruch bestätigt."
   },
   {
    "id": "T-27",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Korrekturrunde 1: PM 24.06.2026 (Umfang) und H1-Bericht PDF S.10 (Vergabe 29.05.2026, SAFE) geprüft; event_date 2026-05-29 korrekt; Fehler behoben."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Korrekturrunde 1: PM 24.06.2026 (Umfang) und H1-Bericht PDF S.10 (Vergabe 29.05.2026, SAFE) geprüft; event_date 2026-05-29 korrekt; Fehler behoben."
   },
   {
    "id": "T-28",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 02.07.2026: vier Skynex, mehrere hundert Mio., Q2 2026, Erstkunde, Rheinmetall Italia GU bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 02.07.2026: vier Skynex, mehrere hundert Mio., Q2 2026, Erstkunde, Rheinmetall Italia GU bestätigt."
   },
   {
    "id": "T-29",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 07.10.2026 (EN/DE): Prototyp in 12 Monaten, Demonstrator, Arrow/Hadrian bestätigt; kein Kundenauftrag."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 07.10.2026 (EN/DE): Prototyp in 12 Monaten, Demonstrator, Arrow/Hadrian bestätigt; kein Kundenauftrag."
   },
   {
    "id": "H-01",
@@ -649,9 +649,9 @@
   },
   {
    "id": "H-04",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Karriereseite: „track record of success in Germany, South Africa, and Spain“ bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Karriereseite: „track record of success in Germany, South Africa, and Spain“ bestätigt."
   },
   {
    "id": "H-05",
@@ -733,9 +733,9 @@
   },
   {
    "id": "P-SR30-09",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 05.06.2024: LOI Rheinmetall Electronics/MBDA Deutschland zu SADM bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 05.06.2024: LOI Rheinmetall Electronics/MBDA Deutschland zu SADM bestätigt."
   },
   {
    "id": "P-SR30HEL-01",
@@ -763,9 +763,9 @@
   },
   {
    "id": "P-SR762-01",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 09.09.2025: U-SHORAD-RWS, M134D 7,62x51, Skymaster-Anbindung bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 09.09.2025: U-SHORAD-RWS, M134D 7,62x51, Skymaster-Anbindung bestätigt."
   },
   {
    "id": "P-SNX-01",
@@ -787,9 +787,9 @@
   },
   {
    "id": "P-SNX-04",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 01.03.2024: europäischer Kunde, unterer dreistelliger Mio.-Bereich, Lieferung 2025 bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 01.03.2024: europäischer Kunde, unterer dreistelliger Mio.-Bereich, Lieferung 2025 bestätigt. Zusätzlich: Lieferung 2025 inkl. HX-Lkw bestätigt."
   },
   {
    "id": "P-SNX-05",
@@ -823,9 +823,12 @@
   },
   {
    "id": "P-SNX-10",
-   "depth": "B",
-   "status": "geprüft",
-   "evidence_review": "Army Recognition 20.01.2026: QEADF-Stand DIMDEX, Skynex mit 35 mm bestätigt."
+   "depth": "A",
+   "status": "Korrektur",
+   "evidence_review": "Hochstufung A: Army Recognition 20.01.2026 vollständig geprüft. QEADF-Stand DIMDEX 2026 mit Skynex-Konfiguration „centered on the 35 mm gun effector“ bestätigt; Skymaster nur in Bildunterschrift zur Systemabbildung, X-TAR3D nur in allgemeiner Architekturbeschreibung („instrumented 50 km“), nicht als Standexponat belegt.",
+   "owner": "portfolio",
+   "reason": "Claim nennt Skymaster-Führungsknoten und X-TAR3D-Radar als am QEADF-Stand gezeigt; die Quelle belegt am Stand nur die Skynex-Konfiguration mit 35-mm-Geschütz (Skymaster in Bildunterschrift, X-TAR3D nur generisch beschrieben).",
+   "action": "Statement auf „Skynex-Konfiguration mit 35-mm-Geschütz am QEADF-Stand (Bildunterschrift nennt Skymaster C2)“ begrenzen, X-TAR3D-Standaussage streichen; danach gezielte Nachprüfung. C-018 (gleiche Quelle) ist korrekt."
   },
   {
    "id": "P-SNX-11",
@@ -835,9 +838,9 @@
   },
   {
    "id": "P-SG-01",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Produktseite Stationary air defence: Skyguard 3 bis 4 Effektoren, Skyshield bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Produktseite Stationary air defence: Skyguard 3 bis 4 Effektoren, Skyshield bestätigt."
   },
   {
    "id": "P-SG-02",
@@ -853,9 +856,9 @@
   },
   {
    "id": "P-SG-04",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 09.12.2019: ~120 Mio., Drohnenabwehr, Lieferbeginn Q3 2020 bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 09.12.2019: ~120 Mio., Drohnenabwehr, Lieferbeginn Q3 2020 bestätigt."
   },
   {
    "id": "P-SG-05",
@@ -871,9 +874,9 @@
   },
   {
    "id": "P-SS-01",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 23.04.2018: asiatischer Kunde, >100 Mio., Wettbewerb bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 23.04.2018: asiatischer Kunde, >100 Mio., Wettbewerb bestätigt. Zusätzlich: Sensoren, 35-mm-Feuereinheiten, Führung, Logistik/Ausbildung bestätigt."
   },
   {
    "id": "P-RG-01",
@@ -889,9 +892,9 @@
   },
   {
    "id": "P-MSU-01",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Skynex-Seite: 30 km (1 m² RCS), Schnittstelle Skymaster bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Skynex-Seite: 30 km (1 m² RCS), Schnittstelle Skymaster bestätigt. Zusätzlich: nicht rotierende 3D-AESA 360°, panoramische EO-Sensoren bestätigt."
   },
   {
    "id": "P-SM-01",
@@ -901,15 +904,15 @@
   },
   {
    "id": "P-SSP-01",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 15.06.2026: Multisensor-Frühwarnsystem, Flughäfen bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 15.06.2026: Multisensor-Frühwarnsystem, Flughäfen bestätigt. Zusätzlich: Erkennung, Identifikation, Verfolgung wörtlich bestätigt."
   },
   {
    "id": "P-SSP-02",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 16.12.2025: Lohtaja, HX-Variante, PEL, C2-Shelter, 30 mm in Konzeptphase bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 16.12.2025: Lohtaja, HX-Variante, PEL, C2-Shelter, 30 mm in Konzeptphase bestätigt. Zusätzlich: Einladung durch finnischen Flugabwehrinspekteur, KETF-Munition bestätigt."
   },
   {
    "id": "P-AH-01",
@@ -949,21 +952,21 @@
   },
   {
    "id": "P-CUAS-01",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Toolbox-Seite: Sensoren, Skymaster, Jammer verfügbar, Fangdrohnen künftig bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Toolbox-Seite: Sensoren, Skymaster, Jammer verfügbar, Fangdrohnen künftig bestätigt."
   },
   {
    "id": "P-CUAS-02",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Produktseite RCWS320C-UAS (NGVA, SEOSS, UGV, Container) und PM 23.02.2026 (Dillon Aero M134D, Enforce Tac) bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Produktseite RCWS320C-UAS (NGVA, SEOSS, UGV, Container) und PM 23.02.2026 (Dillon Aero M134D, Enforce Tac) bestätigt."
   },
   {
    "id": "P-CUAS-03",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 15.06.2026: Hermelin, Path-Kit, FN DeFNder Medium M3M bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 15.06.2026: Hermelin, Path-Kit, FN DeFNder Medium M3M bestätigt. Zusätzlich: 6x6, mit/ohne Besatzung bestätigt."
   },
   {
    "id": "P-CUAS-04",
@@ -973,9 +976,9 @@
   },
   {
    "id": "P-CUAS-05",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Gemeinsame PM 11.05.2026: Absicht gemeinsamer Abwehrschirm, Details später bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Gemeinsame PM 11.05.2026: Absicht gemeinsamer Abwehrschirm, Details später bestätigt."
   },
   {
    "id": "P-NNBS-01",
@@ -1009,9 +1012,9 @@
   },
   {
    "id": "P-GULF-02",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Soldier Systems Daily 15.02.2019 (Drittanbieter-Kopie, Rubrik Press Release): Skynex mit Mk3 auf HX77, X-TAR3D, Cheetah, HEL bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Soldier Systems Daily 15.02.2019 (Drittanbieter-Kopie, Rubrik Press Release): Skynex mit Mk3 auf HX77, X-TAR3D, Cheetah, HEL bestätigt."
   },
   {
    "id": "C-001",
@@ -1147,9 +1150,9 @@
   },
   {
    "id": "C-023",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Arab News 21.02.2023: 15,5-Mio.-USD-Vertrag mit Rheinmetall (Gefechtssimulation) bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Arab News 21.02.2023: 15,5-Mio.-USD-Vertrag mit Rheinmetall (Gefechtssimulation) bestätigt."
   },
   {
    "id": "C-024",
@@ -1159,15 +1162,15 @@
   },
   {
    "id": "C-025",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "GB 2025 PDF S.27: Endverbleib, Reexportvorbehalt, Post-Shipment-Controls bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): GB 2025 PDF S.27: Endverbleib, Reexportvorbehalt, Post-Shipment-Controls bestätigt."
   },
   {
    "id": "C-026",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "PM 02.07.2026 und H1-Bericht S.17 bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): PM 02.07.2026 und H1-Bericht S.17 bestätigt."
   },
   {
    "id": "C-027",
@@ -1267,9 +1270,9 @@
   },
   {
    "id": "C-043",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "GB 2025 S.38 wörtlich bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): GB 2025 S.38 wörtlich bestätigt."
   },
   {
    "id": "M-GCC-001",
@@ -1303,15 +1306,15 @@
   },
   {
    "id": "M-GCC-006",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "AGSI 28.04.2026: KM-SAM VAE (IISS), Saudi-Beschleunigung, ukrainische Abfangdrohnen bestätigt. Hinweis: AGSI datiert den saudischen KM-SAM-Deal auf 2024, M-SA-003 auf Nov 2023 (Offenlegung Feb 2024)."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): AGSI 28.04.2026: KM-SAM VAE (IISS), Saudi-Beschleunigung, ukrainische Abfangdrohnen bestätigt. Hinweis: AGSI datiert den saudischen KM-SAM-Deal auf 2024, M-SA-003 auf Nov 2023 (Offenlegung Feb 2024). Zusätzlich: Sky Sabre Anfang April in Saudi-Arabien (laut Berichten) bestätigt."
   },
   {
    "id": "M-GCC-007",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "GOV.UK 10.04.2026: Skyhammer, 30 km, 700 km/h, Gulf partners, subject to contract, erste Lieferung Mai bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): GOV.UK 10.04.2026: Skyhammer, 30 km, 700 km/h, Gulf partners, subject to contract, erste Lieferung Mai bestätigt."
   },
   {
    "id": "M-GCC-008",
@@ -1339,9 +1342,9 @@
   },
   {
    "id": "M-SA-003",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Korea Times 06.02.2024: 3,2 Mrd. USD M-SAM II laut Verteidigungsministerium bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Korea Times 06.02.2024: 3,2 Mrd. USD M-SAM II laut Verteidigungsministerium bestätigt. Zusätzlich: Vertrag November (2023), DAPA–MoD-MoU zu gemeinsamer F&E bestätigt."
   },
   {
    "id": "M-AE-001",
@@ -1351,9 +1354,9 @@
   },
   {
    "id": "M-AE-002",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "ITA: EDGE 2019, >25 Einheiten, ~5 Mrd. USD, ~8.000 Beschäftigte bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): ITA: EDGE 2019, >25 Einheiten, ~5 Mrd. USD, ~8.000 Beschäftigte bestätigt."
   },
   {
    "id": "M-AE-003",
@@ -1369,9 +1372,9 @@
   },
   {
    "id": "M-AE-005",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "EOS ASX-Mitteilung 19.06.2026 PDF: 124 Mio. USD, Gen5, Fertigung AUS/VAE, 2027–2028, Exportgenehmigungen bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): EOS ASX-Mitteilung 19.06.2026 PDF: 124 Mio. USD, Gen5, Fertigung AUS/VAE, 2027–2028, Exportgenehmigungen bestätigt. Zusätzlich: bedingte JV-Vereinbarung mit Gen5 für HEL/RWS im ASX-PDF bestätigt."
   },
   {
    "id": "M-QA-001",
@@ -1393,9 +1396,9 @@
   },
   {
    "id": "M-QA-004",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Breaking Defense 11.05.2026: Barzan-Vereinbarung DIMDEX, kombinierter Katalog, EDGE-Sensoren bestätigt (Monatsangabe „February“ im Interview)."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Breaking Defense 11.05.2026: Barzan-Vereinbarung DIMDEX, kombinierter Katalog, EDGE-Sensoren bestätigt (Monatsangabe „February“ im Interview)."
   },
   {
    "id": "M-QA-005",
@@ -1423,9 +1426,9 @@
   },
   {
    "id": "M-BH-001",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Al-Monitor (Reuters-Exklusiv) 21.03.2026 und Aletihad 21.07.2026 (BNA) bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Al-Monitor (Reuters-Exklusiv) 21.03.2026 und Aletihad 21.07.2026 (BNA) bestätigt. Zusätzlich: Sitra, 9. März, 32 Verletzte, Erklärung vom 21.03. (Reuters via Al-Monitor) bestätigt."
   },
   {
    "id": "M-OM-001",
@@ -1531,9 +1534,9 @@
   },
   {
    "id": "M-SAAB-004",
-   "depth": "B",
+   "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Defense News 04.01.2021 und Saab-PM 27.07.2026 (zwei GlobalEye, 10,1 Mrd. SEK, 2030, Nahost-Land) bestätigt."
+   "evidence_review": "Hochstufung A (Vollprüfung im Originalbeleg): Defense News 04.01.2021 und Saab-PM 27.07.2026 (zwei GlobalEye, 10,1 Mrd. SEK, 2030, Nahost-Land) bestätigt. Zusätzlich: Erweiterung des 2015er Vertrags über drei Flugzeuge bestätigt."
   },
   {
    "id": "M-NAS-001",
@@ -1607,5 +1610,16 @@
   ],
   "reused": "Alle übrigen 174 Claims unverändert (Stichprobe Fingerprints T-01, C-002, M-GCC-001 identisch); Urteile aus Basis-Review desselben Laufes/Stichtags übernommen. Netzwerk unverändert, Kantenprüfung übernommen.",
   "formal_check": "check-review-data.py auf neuem Paket Exit 0; facts-validation errors=[]; 181 Claims."
+ },
+ "upgrade_round": {
+  "upgraded_to_A": 36,
+  "exceptions": [
+   {
+    "id": "P-SNX-10",
+    "status": "Korrektur",
+    "owner": "portfolio"
+   }
+  ],
+  "note": "37 vormalige B-Claims auf Wunsch des Hauptagenten (Verwendung in module_views/Kernansicht) vollständig nach A geprüft; Belege aus demselben Lauf, gezielte Nachlesen der noch nicht ausdrücklich kontrollierten Teilaussagen. Paket unverändert."
  }
 }
