@@ -32,3 +32,7 @@ Kein erfolgreicher Vorgänger oder Gesprächsverlauf allein aus „auch“ ablei
 Pfade runs/<neue_run_id>/input/, work/, output/; frühere Läufe erhalten.
 Ausgabe nach ausgabe-html-v2.md. Root-/Archivregeln oben nur für ausdrücklich
 bestehende Legacy-Markdown-Läufe. Einrichtung erzeugt keinen Firmenauftrag.
+
+## Portfolio und Themenumfang
+Vollbriefing: unternehmensweites Portfolio als Standard, Fach-/Industrie- und
+Markt-Deep-Dives auftragsbezogen. Details nach themen-darstellung.md.

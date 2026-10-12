@@ -84,3 +84,7 @@ sich auf die Desktop-Webansicht.
 - Profile zeigen Snapshot, chronologische Stationen, Fachprofil, Verantwortung und
   belegten regionalen Kontext; leere Felder erhalten eine neutrale Lückenanzeige.
 - Öffentliche Rollen-/Datumsunsicherheiten und direkte Quellen bleiben sichtbar.
+
+Themenkarten: Kurz­titel und Vorschau, vollständige Inhalte/Originalquellen per Klick,
+keine neuen Behauptungen in Vorschauen. SWOT: Kategorienamen und vier unterscheidbare
+Farben prüfen (Stärken grün, Schwächen rot, Chancen blau, Risiken orange).

@@ -151,3 +151,6 @@ noch offen. Bestehende Legacy-Markdown-Läufe bleiben getrennt.
 ## Personenansicht
 Die context.profile-Struktur folgt gespraechspartner.md. Alle Kurztexte und
 H-Claim-Zuordnungen gehören zum geprüften Paket-Snapshot; keine freie HTML.
+
+Auftragsbezogene Themenkarten mit headline/preview sowie unternehmensweite
+Portfolioabdeckung folgen themen-darstellung.md. SWOT-Kategorien farbig darstellen.

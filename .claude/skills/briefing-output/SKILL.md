@@ -26,3 +26,6 @@ Explizite Markdown-Modultests nach references/legacy-html-output.md durchführen
 Neue Firma/Lauf bedeutet neue Daten. Nur Code/Layout wiederverwenden. Keine
 Langberichte oder Quellenvolltexte als Standard-Ausgabeprüfkontext, keine weitere
 LLM-Runde für HTML/Quellenformatierung. Rückgabe mit Pfad und Status.
+
+Themenkarten und SWOT-Farben nach references/themen-darstellung.md lokal rendern.
+Keine LLM-Runde für Farben, Raster oder lokale Kurztext-Fallbacks.

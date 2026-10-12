@@ -37,3 +37,7 @@ Keine Horváth-Kapitel oder separaten Unternehmens-Deep-Dives; JV-Fakten bleiben
 im Cluster. Neue Faktenfragen gezielt delegieren, erneut durch Basis-Review,
 abhängige Interpretationen aktualisieren. Keine fremden Dateien umschreiben.
 Nach zwei erfolglosen Korrekturrunden Materialfehler blockieren. Rückgabe kurz.
+
+Unternehmensweite Portfolioabdeckung und auftragsbezogene Fach-/Markt-Deep-Dives
+nach references/themen-darstellung.md delegieren. Portfolio nicht auf den
+fachlichen Schwerpunkt der Nutzerfrage verengen; Geschäftsfelder in coverage prüfen.

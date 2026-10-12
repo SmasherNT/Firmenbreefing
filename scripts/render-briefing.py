@@ -136,6 +136,10 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
                 if not CHECK.text(row.get("label")):
                     raise ValueError("view label required")
                 require(row.get("claim_ids"))
+                if field == "topics":
+                    for key, limit in (("headline", 72), ("preview", 160)):
+                        if key in row and (not CHECK.text(row[key]) or len(row[key]) > limit):
+                            raise ValueError("topic " + key + " invalid")
                 if field == "topics" and row["id"] not in topic_index:
                     raise ValueError("unknown requested topic")
                 if field == "events" and row.get("date") is not None:
@@ -217,6 +221,25 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             body += '<h4>' + esc(section["label"]) + '</h4>' + "".join('<p>' + esc(claims[c]["statement"]) + '</p>' + evidence(claims[c]) for c in section["claim_ids"]) + links(section["claim_ids"])
         return '<details class="card" data-es-title="' + esc(row["label"]) + '"><summary>' + esc(row["label"]) + '</summary><div class="es-detail">' + body + '</div></details>'
 
+    def short_text(value, limit=160):
+        value = " ".join(value.split())
+        return value if len(value) <= limit else value[:limit-1].rsplit(" ", 1)[0] + "…"
+
+    def compact_card(title, preview, detail, kind):
+        return '<details class="es-entry topic-card" data-es-title="' + esc(title) + '"><summary>' + \
+            '<span class="es-kicker">' + esc(kind) + '</span><span class="es-headline">' + esc(title) + \
+            '</span><span class="es-preview">' + esc(preview) + \
+            '</span><span class="es-arrow" aria-hidden="true">↗</span></summary>' + detail + '</details>'
+
+    def topic_card(row, role, topic):
+        labels = {"context": "Geschäftsfeld & Entwicklung", "portfolio": "Systeme & industrielle Basis",
+                  "cluster": "Industrie & Partnerschaften", "market": "Markt & Anforderungen"}
+        title = row.get("headline") or (labels[role] if row["label"] == topic["label"] else short_text(row["label"], 72))
+        preview = row.get("preview") or short_text(claims[row["claim_ids"][0]]["statement"])
+        full = view_card(row)
+        detail = full[full.index('<div class="es-detail">'):full.rindex('</details>')]
+        return compact_card(title, preview, detail, "Faktenbasis")
+
     def interp_card(row):
         return '<details class="card" data-es-title="' + esc(row["statement"]) + '"><summary>' + esc(row["statement"]) + '</summary>' + executive_detail(row) + '</details>'
 
@@ -294,9 +317,11 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         main += section("Unternehmen im Überblick", grid([view_card(r) for v in views.values() for r in v.get("company_facts", [])]))
     topic_pages = {'main': '', 'market': ''}
     for index, topic in enumerate(topics):
-        cards = [view_card(r) for v in views.values() for r in v.get("topics", []) if r["id"] == topic["id"]]
-        cards += [interp_card(r) for r in interpreted.values() if r["section"] == "topic:" + topic["id"]]
-        topic_pages[topic.get('page', 'main')] += section(topic["label"], grid(cards) or '<p>Keine freigegebenen Befunde für dieses Thema.</p>', 'topic-' + str(index))
+        cards = [topic_card(r, role, topic) for role, v in views.items() for r in v.get("topics", []) if r["id"] == topic["id"]]
+        for number, row in enumerate((r for r in interpreted.values() if r["section"] == "topic:" + topic["id"]), 1):
+            cards.append(compact_card(row.get("headline") or "Einordnung " + str(number).zfill(2),
+                row.get("preview") or short_text(row["statement"]), executive_detail(row), "Analysteneinordnung"))
+        topic_pages[topic.get('page', 'main')] += section(topic["label"], '<div class="topic-grid">' + ''.join(cards) + '</div>' if cards else '<p>Keine freigegebenen Befunde für dieses Thema.</p>', 'topic-' + str(index))
     events = [r for v in views.values() for r in v.get("events", [])]
     events.sort(key=lambda r: (r.get("date") is None, r.get("date") or ''))
     timeline = ''
@@ -365,7 +390,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         quadrants = []
         for key, title in (('Strengths', 'Stärken'), ('Weaknesses', 'Schwächen'), ('Opportunities', 'Chancen'), ('Threats', 'Risiken')):
             cards = [interp_card(r) for r in swot['interpretations'] if r['category'] == key]
-            quadrants.append('<div class="quadrant"><h3>' + title + '</h3>' + (''.join(cards) or '<p class="meta">Keine freigegebene Aussage in dieser Kategorie.</p>') + '</div>')
+            quadrants.append('<div class="quadrant" data-swot="' + key + '"><h3>' + title + '</h3>' + (''.join(cards) or '<p class="meta">Keine freigegebene Aussage in dieser Kategorie.</p>') + '</div>')
         main += section('SWOT · Analysteninterpretation', '<div class="swot">' + ''.join(quadrants) + '</div>')
     limits = ''.join('<details><summary>' + esc(v['role']) + ' · Rechercheabdeckung und offene Punkte</summary>' + note_rows(v.get('gaps', [])) + note_rows(v.get('coverage', [])) + note_rows(v.get('report_log', [])) + '</details>' for v in views.values())
     limits += ''.join(paragraphs(c.get('shared_limitations', [])) + paragraphs([c.get('document_scope')]) for c in contexts)

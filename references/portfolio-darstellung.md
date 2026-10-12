@@ -78,3 +78,6 @@ Produkt. Reine Fakten-HTML zeigt Produkte ohne interpretierte Reifestufe.
 Details enthalten Fakten, Einordnung, Grenzen und direkte Originalbelege.
 Aussageursprungsfilter nutzt vorhandene Claim-Arten; „Fakt“ behauptet keine
 unabhängige Bestätigung. Keine Quellenklassifikation allein aus dem Publishernamen.
+
+Auftragsbezogene Themenkarten mit headline/preview sowie unternehmensweite
+Portfolioabdeckung folgen themen-darstellung.md. SWOT-Kategorien farbig darstellen.

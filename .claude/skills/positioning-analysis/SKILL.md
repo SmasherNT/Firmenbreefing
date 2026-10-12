@@ -32,3 +32,6 @@ Für die Summary references/executive-summary.md lesen: kurze headline/preview,
 Reihenfolge und drei auftragsbezogene Highlights aus den vorhandenen A-Fakten
 liefern. Auswahl in diesem Schritt, keine feste Kennzahlenliste oder Zusatzrecherche.
 Ausgabevertrag in references/ausgabe-html-v2.md; keine neue Faktenrecherche.
+
+Für section=topic:<id> kompakte headline/preview nach
+references/themen-darstellung.md liefern; Faktenbezug und Einschränkungen erhalten.

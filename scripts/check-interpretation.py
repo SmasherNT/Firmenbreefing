@@ -384,6 +384,10 @@ def validate_output(manifest, facts, review, context, output,
                 errors.append(cid + ": main statement cannot be a highlight or matrix cell")
         elif row.get("type") == "summary_highlight":
             errors.append(cid + ": summary_highlight requires executive_highlights section")
+        if section.startswith("topic:"):
+            for field, limit in (("headline", 72), ("preview", 160)):
+                if field in row and (not text(row[field]) or len(row[field]) > limit):
+                    errors.append(cid + ": compact " + field + " invalid")
         found = dependencies(cid)
         is_cell = row.get("type") == "matrix_cell"
         if is_cell:

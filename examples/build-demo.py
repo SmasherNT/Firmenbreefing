@@ -95,7 +95,8 @@ def generate(destination):
             dict(id='sensor-kit', label='Sensor Kit', domain='Sensorik', claim_ids=['P4']),
             dict(id='data-assist', label='Data Assist', domain='Dienstleistungen', claim_ids=['P5'])],
         regions=[dict(id='europe', label='Europa · Partnerpräsenz', claim_ids=['P2'])],
-        topics=[dict(id='industry', label='Produktintegration', claim_ids=['P1'])])
+        topics=[dict(id='industry', label='Produktintegration', headline='Integration als Softwaremodul',
+            preview='Das Inspection Kit wird laut fiktivem Produktdokument als Softwaremodul angeboten.', claim_ids=['P1'])])
     cluster.update(topics=[dict(id='industry', label='Industrie- und Integrationspartner', claim_ids=['C3', 'C6'])],
         report_log=[dict(actor='Example Inspection', status='synthetischer Offline-Test',
                         finding='Keine echten Geschäftsberichte gesucht oder geöffnet')])

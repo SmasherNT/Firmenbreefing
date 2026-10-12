@@ -134,6 +134,11 @@ def build(manifest, modules, plan=None):
             if isinstance(product, dict) and any(k in product for k in INTERPRETATION_FIELDS | {
                     "score", "grade", "maturity", "assessment_status", "method_id", "interpretation"}):
                 errors.append(role + ": product view must contain facts/mappings, not maturity assessments")
+        for topic in data.get("topics", []) if isinstance(data.get("topics", []), list) else []:
+            if isinstance(topic, dict):
+                for key, limit in (("headline", 72), ("preview", 160)):
+                    if key in topic and (not nonempty(topic[key]) or len(topic[key]) > limit):
+                        errors.append(role + ": compact topic " + key + " invalid")
         for src in data.get("source_proposals", []) if isinstance(data.get("source_proposals"), list) else []:
             if not isinstance(src, dict):
                 errors.append(role + ": source must be an object")

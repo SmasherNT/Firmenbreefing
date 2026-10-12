@@ -115,3 +115,7 @@ In die bestehende Prüfrunde integrieren, keine zusätzlichen Quellenprüfer sta
 Personenprofil nach references/gespraechspartner.md im Basis-Review mitprüfen:
 Kurztexte, Personenzuordnung, Chronologie, aktuelle/historische Verantwortung
 und regionalen Personenbezug; Medienankündigung nicht als bestätigten Amtsantritt ausgeben.
+
+references/themen-darstellung.md: Themen-Kurztitel/Vorschauen semantisch prüfen.
+Im Vollbriefing Portfolioabdeckung über alle wesentlichen Geschäftsfelder prüfen;
+fachlicher Deep-Dive und regionaler Marktauftrag dürfen die Portfolio-Breite nicht verengen.

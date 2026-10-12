@@ -31,3 +31,7 @@ Einrichtung/Systemfragen sind keine Rechercheaufträge.
    Keine Bewertung/HTML implizit starten; Interpretation ist separat beauftragbar.
 Vorhandene Läufe nicht überschreiben; neuer Lauf hat neue ID. Rückgabe kurz.
 Bei Änderungen Manifest/Plan beibehalten oder versionieren; keine Mischstände.
+
+Für vollständige Briefings das unternehmensweite Portfolio und die spezifischen
+Fach-/Markt-Deep-Dives nach references/themen-darstellung.md getrennt beauftragen.
+Faktenrollen liefern topics.headline/preview als geprüfte Kurztexte.

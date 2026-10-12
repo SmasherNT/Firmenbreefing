@@ -4,7 +4,12 @@ description: Recherchiere Produkte, Anwendungen, Eigenschaften und belegten Stat
 ---
 
 Lies tatsächlichen Auftrag; ohne ihn keine Recherche.
-1. Produkte, Software, Dienstleistungen und Ankündigungen unterscheiden.
+1. Im vollständigen Firmenbriefing das gesamte Zielunternehmen mit allen
+   wesentlichen Geschäftsfeldern und Produktfamilien untersuchen, auch außerhalb
+   des beauftragten Fach-Deep-Dives. Umfang und Abdeckung nach
+   references/themen-darstellung.md dokumentieren. Explizite isolierte Modultests
+   behalten ihren beauftragten Umfang. Produkte, Software, Dienstleistungen und
+   Ankündigungen unterscheiden.
 2. Eigenschaften/Subsysteme, Anwendungen, belegte Integration und gemeldete
    Tests/Aufträge/Lieferungen erfassen, Quellenart und Aussageursprung nennen.
 3. Technologie & Industrie der Zielprodukte erfassen; Partnerbeziehungen an

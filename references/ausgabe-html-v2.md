@@ -104,3 +104,6 @@ Abnahme: Agentenprotokoll/Review, Mechanik, Links/JS und Desktop-Browser/Druck/F
 getrennt prüfen. Fehlende Werkzeuge als nicht geprüft benennen.
 Testbeispiele sind keine öffentliche Unternehmensrecherche.
 
+
+Auftragsbezogene Themenkarten mit headline/preview sowie unternehmensweite
+Portfolioabdeckung folgen themen-darstellung.md. SWOT-Kategorien farbig darstellen.
