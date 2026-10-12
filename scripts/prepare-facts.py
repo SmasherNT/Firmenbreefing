@@ -250,12 +250,27 @@ def build(manifest, modules, plan=None):
                 profile_helper.validate(data["profile"], profile_refs)
             except ValueError as error:
                 errors.append(str(error))
+    spec = importlib.util.spec_from_file_location("market_html", Path(__file__).with_name("market-html.py"))
+    market_helper = importlib.util.module_from_spec(spec); spec.loader.exec_module(market_helper)
+    market_refs = set()
+    def dashboard_refs(refs):
+        if not isinstance(refs, list) or not refs or any(not isinstance(c, str) or c not in ids for c in refs):
+            raise ValueError('market_dashboard requires known claim_ids')
+        market_refs.update(refs)
+    for data in modules:
+        if isinstance(data, dict) and data.get('market_dashboard') is not None:
+            try:
+                if data.get('role') != 'market':
+                    raise ValueError('market_dashboard belongs to market role')
+                market_helper.validate(data['market_dashboard'], dashboard_refs, manifest.get('as_of'))
+            except ValueError as error:
+                errors.append(str(error))
     packet = {"schema_version": 1, "mode": "facts-v2", "run_id": manifest.get("run_id"),
               "company": manifest.get("company"), "as_of": manifest.get("as_of"),
               "claims": claims, "sources": sorted(sources.values(), key=lambda s: s["id"]),
               "module_views": [{"role": d.get("role"), **{k: d[k] for k in
                                   ("company_facts", "events", "profile", "products", "regions",
-                                   "topics", "peers", "observations", "gaps", "coverage", "report_log")
+                                   "topics", "peers", "observations", "market_dashboard", "gaps", "coverage", "report_log")
                                   if k in d}} for d in modules if isinstance(d, dict)],
               "module_context": [{"role": d.get("role"), "scope": d.get("scope"),
                                   "status": d.get("status"),
@@ -266,13 +281,18 @@ def build(manifest, modules, plan=None):
         packet["network"] = networks[0]
     check = review_validator()(packet)
     errors.extend(check["errors"])
-    required = sorted({c for n in networks for e in n.get("edges", []) if isinstance(e, dict)
+    required = sorted(market_refs | {c for n in networks for e in n.get("edges", []) if isinstance(e, dict)
                        for c in e.get("claim_ids", []) if isinstance(c, str)})
+    try:
+        packet_fingerprint = hashlib.sha256(json.dumps(packet, sort_keys=True,
+            ensure_ascii=False, separators=(",", ":"), allow_nan=False).encode()).hexdigest()
+    except (TypeError, ValueError):
+        errors.append("packet must contain finite JSON-compatible values")
+        packet_fingerprint = None
     return {"run_id": manifest.get("run_id"), "company": manifest.get("company"),
             "as_of": manifest.get("as_of"), "phase": "basis",
             "required_full_review_ids": required,
-            "packet_fingerprint": hashlib.sha256(json.dumps(packet, sort_keys=True,
-                 ensure_ascii=False, separators=(",", ":"), allow_nan=False).encode()).hexdigest(),
+            "packet_fingerprint": packet_fingerprint,
             "errors": errors, "fingerprints": check.get("fingerprints", {}),
             "module_status": {d.get("role"): d.get("status") for d in modules if isinstance(d, dict) and isinstance(d.get("role"), str)},
             "notice": "Formal validation only; factual accuracy, coverage and source independence not verified."}, packet

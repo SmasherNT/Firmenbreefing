@@ -35,4 +35,5 @@ bestehende Legacy-Markdown-Läufe. Einrichtung erzeugt keinen Firmenauftrag.
 
 ## Portfolio und Themenumfang
 Vollbriefing: unternehmensweites Portfolio als Standard, Fach-/Industrie- und
-Markt-Deep-Dives auftragsbezogen. Details nach themen-darstellung.md.
+Markt-Deep-Dives auftragsbezogen. Themenkarten nach themen-darstellung.md;
+regionale Vergleichsgrafiken und Länderdetails nach markt-deepdive.md.

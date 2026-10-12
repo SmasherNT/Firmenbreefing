@@ -49,6 +49,10 @@ Optional depends_on, proposed_depth=A/B, depth_reason, event_date, event_status.
 Keine I-/S-Claims, Bewertungsfelder, Rankings oder SWOT in Faktenmodulen.
 Produkt-/Akteurs-/Länder-/Ereignistabellen dürfen bestehende Claim-IDs referenzieren.
 reuse_claim_ids benennt Fakten anderer ausgewählter Module; nicht deren Text duplizieren.
+Bei regionalem Markt-Deep-Dive liefert market zusätzlich market_dashboard gemäß
+markt-deepdive.md: vergleichbare Kennzahlen, Programme, lokale Rollen und Zugang.
+Nur diese Rolle besitzt das Dashboard; Faktenreferenzen und gesamte Zuordnung
+werden validiert und im Paket-Snapshot gebunden. Keine Beispielwerte übernehmen.
 Ein Link/Snippet allein ist keine Evidenz. Lieferstatus einmal beim Lesen erfassen;
 Prüftiefe nach quellenpruefung.md, keine routinemäßige eigene Liefer-Prüfschleife.
 
@@ -96,7 +100,8 @@ source-reviewer Phase basis erhält Auftrag, Paket und nur nötige Abdeckung/Net
 Interpretation darf erst nach tatsächlicher Freigabe starten.
 Für anschließende interpret-v2-Läufe maschinenlesbares Basis-Review nach
 quellenpruefung.md schreiben. facts-validation.json enthält Laufidentität,
-phase=basis und required_full_review_ids für eingezeichnete Netzwerkkanten.
+phase=basis und required_full_review_ids für eingezeichnete Netzwerkkanten und
+sämtliche referenzierten Markt-Dashboard-Fakten.
 Reviewer entscheidet inhaltlich; stamp-review.py übernimmt nur Fingerprints.
 Nach zwei erfolglosen Korrekturrunden wesentlicher Fehler blockieren.
 Abnahme unterscheidet formale Prüfung, Inhaltsprüfung, Abdeckung und nicht geprüft.

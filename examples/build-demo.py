@@ -20,6 +20,75 @@ STAMP = load('stamp', 'stamp-review.py')
 RENDER = load('render', 'render-briefing.py')
 
 
+def market_example():
+    """Synthetic markets only. Each concrete record gets a separate test claim."""
+    records = []
+    def claim(cid, statement):
+        records.append((cid, 'Fiktiver Offline-Test: ' + statement, 2))
+        return [cid]
+    metric = dict(id='investment', label='Gesamte industrielle Investitionen',
+        purpose='context', unit='Mrd.', currency='EUR', price_basis='Konstante Preise 2025',
+        definition='Gesamte industrielle Investitionen im Testland, nicht nur Inspektionssoftware.',
+        claim_ids=claim('M-D-definition', 'Die Testzeitreihe misst industrielle Gesamtinvestitionen in Mrd. EUR zu konstanten Preisen 2025.'))
+    functions = [dict(id=k, label=v) for k, v in [('sensors','Sensorik'), ('integration','Systemintegration'), ('maintenance','Instandhaltung')]]
+    countries = []
+    for key, label, values in [('north','Testland Nord',[20,22,24,27,30]),
+            ('south','Testland Süd',[15,14,13,12,10]), ('east','Testland Ost',[None]*5)]:
+        series = []
+        for year, value in zip(range(2021,2026), values):
+            row = dict(year=year, value=value)
+            if value is None:
+                row.update(missing_reason='Im fiktiven Datensatz nicht belegt', claim_ids=[])
+            else:
+                row.update(status='actual', comparable=True,
+                    claim_ids=claim('M-D-'+key+'-'+str(year), label+' berichtet '+str(value)+' Mrd. EUR industrielle Gesamtinvestitionen für '+str(year)+' zu konstanten Preisen 2025.'))
+            series.append(row)
+        programmes = []
+        stages = ['planning','announced','contracted','delivery'] if key=='north' else ['announced','contracted'] if key=='south' else []
+        labels = {'planning':'Inspektionspilot', 'announced':'Sensorbeschaffung', 'contracted':'Integrationsprogramm', 'delivery':'Serviceausbau'}
+        for index, stage in enumerate(stages):
+            name=labels[stage]+' '+label
+            refs=claim('M-D-'+key+'-p'+str(index), name+' ist am 01.09.2026 im Status '+RENDER.MARKET.STAGES[stage]+' dokumentiert. Auftraggeber: Testbehörde; Anbieter: Example Systems; lokaler Partner: Test Integration.')
+            programme=dict(id=key+'-'+stage, label=name, status=stage, status_date='2026-09-01',
+                customer='Testbehörde (fiktiv)', provider='Example Systems (fiktiv)',
+                local_role='Test Integration übernimmt die lokale Integration (fiktiv)',
+                next_step='Im Testdokument ist kein weiterer Meilenstein belegt.', claim_ids=refs)
+            programme['window']=dict(start=2026+index%2, end=2028+index%2,
+                label='Geplantes Umsetzungsfenster (fiktiv)',
+                claim_ids=claim('M-D-'+key+'-w'+str(index), name+' nennt ein geplantes Umsetzungsfenster '+str(2026+index%2)+'–'+str(2028+index%2)+'.'))
+            if stage in {'announced','contracted'}:
+                programme['value']=dict(amount=0.4 if stage=='contracted' else 0.6, unit='Mrd.', currency='EUR',
+                    type='contract' if stage=='contracted' else 'ceiling', period='2026–2029 · mehrjährig',
+                    price_basis='Nominal im Testdokument', claim_ids=claim('M-D-'+key+'-v'+str(index),
+                    name+' nennt '+('einen Vertragswert von 0,4' if stage=='contracted' else 'eine Genehmigungsobergrenze von 0,6')+' Mrd. EUR nominal für 2026–2029.'))
+            programmes.append(programme)
+        roles={}
+        for function in functions:
+            fid=function['id']
+            kinds={'sensors':['dev'] if key=='north' else ['license'] if key=='south' else [],
+                'integration':['license','integration'] if key=='north' else ['integration'],
+                'maintenance':['service']}[fid]
+            entries=[]
+            for kind in kinds:
+                actor='Test '+function['label']+' '+label
+                entries.append(dict(role=kind, actor=actor, location='Teststandort '+label,
+                    activity='Im fiktiven Segment dokumentiert: '+RENDER.MARKET.ROLES[kind], status_date='2026-09-01',
+                    claim_ids=claim('M-D-'+key+'-'+fid+'-'+kind, actor+' übernimmt '+RENDER.MARKET.ROLES[kind]+' am Teststandort '+label+' im Inspektionssegment, Stand 01.09.2026.')))
+            roles[fid]=dict(entries=entries)
+            if not entries:roles[fid]['gap_reason']='Keine freigegebenen Akteure für diese Funktion im Testpaket.'
+        countries.append(dict(id=key, label=label, series={'investment':series}, programmes=programmes,
+            roles=roles, coverage_note='Ausschließlich fiktive Testunterlagen; keine vollständige Marktaufnahme, keine realen Quellen geöffnet.',
+            access=[dict(label='Vergabe & Registrierung', text='Die fiktive Testbehörde verlangt eine Anbieterregistrierung; ein lokaler Partner ist im Testdokument benannt.',
+                claim_ids=claim('M-D-'+key+'-access', 'Die Testbehörde in '+label+' verlangt eine Anbieterregistrierung und nennt einen lokalen Integrationspartner.'))],
+            factors=[dict(kind='driver', label='Pilotförderung', text='Das fiktive Programm unterstützt industrielle Inspektionspiloten.',
+                claim_ids=claim('M-D-'+key+'-driver', 'Ein fiktives Förderprogramm in '+label+' unterstützt industrielle Inspektionspiloten.'))]))
+    return dict(schema_version=1, title='Europa · Industrielle Inspektion',
+        scope='Drei fiktive Testmärkte · keine reale Länderanalyse', years=list(range(2021,2026)),
+        timeline_years=list(range(2026,2031)), metrics=[metric], functions=functions, countries=countries,
+        programme_scope='Industrielle Inspektionsprogramme (fiktiv)',
+        programme_method='Ein stabiler Programmeintrag wird einmal nach seinem aktuell belegten Status gezählt; frühere Stufen werden nicht addiert.'), records
+
+
 def generate(destination):
     root = Path(destination); root.mkdir(parents=True, exist_ok=True)
     manifest = dict(schema_version=1, mode='facts-v2', run_id='synthetic-inspection',
@@ -65,6 +134,8 @@ def generate(destination):
         ('C4', 'Test Customer führt laut Testdatensatz einen angekündigten Inspektionspiloten durch.', 1),
         ('C5', 'Example JV und Test Sensor dokumentieren im Testdatensatz eine Integrationskooperation.', 1),
         ('C6', 'Für das fiktive Joint Venture wird im Testdatensatz industrielle Integration als Gegenstand genannt.', 1)]
+    dashboard, dashboard_rows = market_example()
+    rows.extend(dashboard_rows)
     claims = [dict(id=cid, statement=statement,
         kind=sources[n]['source_kind'], source_ids=[sources[n]['id']],
         evidence='Paraphrase: ' + statement, location='Fiktiver Abschnitt ' + cid,
@@ -82,6 +153,7 @@ def generate(destination):
             document_scope='Fiktiver Testdatensatz; keine reale Recherche oder Quellenfreigabe')
         modules.append(module)
     context, portfolio, cluster, market = modules
+    market['market_dashboard'] = dashboard
     context.update(company_facts=[dict(id='business', label='Industrielle Inspektionssoftware', claim_ids=['T1'])],
         events=[dict(id='api-update', label='Neue API-Dokumentation laut Hersteller veröffentlicht', date='2026-10-05', claim_ids=['T4']),
             dict(id='launch', label='Integrationsschnittstelle vorgestellt', date='2026-08-01', claim_ids=['T2']),

@@ -20,6 +20,8 @@ headline/preview mit denselben Grenzen. Schluss-Review bindet diese Felder über
 das vollständige Interpretationsobjekt. Kein zusätzlicher Designagent nötig.
 Ältere Pakete bleiben nutzbar: sachliche Rollenüberschrift und sichtbarer Auszug
 mit Auslassungszeichen als lokaler Fallback; keine neue LLM-Zusammenfassung.
+Regionale Markt-Deep-Dives beginnen zusätzlich mit Vergleichsgrafiken und
+Länderdetails nach markt-deepdive.md. Die bisherigen Themenkarten folgen darunter.
 
 ## Portfolio und Vertiefung
 

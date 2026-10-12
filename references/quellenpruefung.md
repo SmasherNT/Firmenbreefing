@@ -20,6 +20,11 @@ Alle eingezeichneten Netzwerkkanten: Identitäten, Richtung, Beziehungstyp,
 Status/Zeitraum, Produktbezug sowie dargestellte Quoten/Kontrolle im Beleg prüfen.
 Indirekte Pfade: jede Teilkante. Mehrere Claims derselben Quelle gebündelt prüfen.
 Ein relevanter Quellenbeleg genügt nicht automatisch für alle Claims derselben Quelle.
+Alle Markt-Dashboard-Fakten nach markt-deepdive.md ebenfalls vollständig prüfen:
+Zeitreihenwerte, Definition/Einheit/Währung/Preisbasis und Vergleichbarkeit,
+Programmstatus/Deduplikation/Wertart/Zeitfenster, konkrete industrielle Rollen,
+Marktzugang sowie die semantische Zuordnung der Darstellung. Sie stehen in
+facts-validation.required_full_review_ids; im bestehenden Quellenabruf bündeln.
 
 B: Stichprobe nur für nicht entscheidungstragende ergänzende Hintergrunddetails.
 Gruppen nach Modul UND Quelle UND Aussageart bilden; unsichere Aussagen nach A.

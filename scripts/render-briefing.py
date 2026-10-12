@@ -17,6 +17,7 @@ SPEC.loader.exec_module(CHECK)
 PORTFOLIO = CHECK.helper("portfolio_html", "portfolio-html.py")
 PROFILE = CHECK.helper("profile_html", "profile-html.py")
 CAPABILITY = CHECK.helper("capability_html", "capability-html.py")
+MARKET = CHECK.helper("market_html", "market-html.py")
 
 KINDS = {"target", "partner", "customer", "jv", "owner", "supplier", "subsidiary",
          "project", "person", "institution", "other"}
@@ -159,6 +160,10 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             if role != "context" or not manifest.get("person") or not CHECK.text(profile.get("name")):
                 raise ValueError("profile needs named person and context role")
             PROFILE.validate(profile, require)
+        if view.get('market_dashboard') is not None:
+            if role != 'market':
+                raise ValueError('market_dashboard belongs to market role')
+            MARKET.validate(view['market_dashboard'], require, manifest['as_of'])
 
     network = facts.get("network")
     if "cluster" in selected and not isinstance(network, dict):
@@ -421,7 +426,12 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         else:
             body += '<p>Berufliches Profil öffentlich nicht verifiziert.</p>'
         profile_body = body
-    regions = [topic_pages['market']]
+    def market_facts(ids):
+        return ''.join('<details class="mk-fact"><summary>Beleg · ' + esc(cid) + '</summary><p>' + esc(claims[cid]['statement']) + '</p><p class="meta">' + esc(claims[cid]['kind']) + '</p>' + paragraphs([claims[cid]['uncertainty']]) + evidence(claims[cid]) + links([cid]) + '</details>' for cid in dict.fromkeys(ids))
+
+    dashboard = views.get('market', {}).get('market_dashboard')
+    regions = [section(dashboard['title'], MARKET.render(dashboard, market_facts))] if dashboard else []
+    regions.append(topic_pages['market'])
     for role, v in views.items():
         if v.get('regions'):
             regions.append(section('Unternehmenspräsenz' if role == 'portfolio' else 'Markt & Industrie', grid([view_card(r) for r in v['regions']])))

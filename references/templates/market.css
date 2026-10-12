@@ -1,0 +1,140 @@
+#briefing-market{color-scheme:light;--mk-paper:#fff;--mk-bg:#f3f7f9;--mk-ink:#193445;--mk-muted:#526a79;--mk-line:#dce5ea;--mk-brand:#154c61;--mk-accent:#a37330;--mk-track:#eaf0f3;--mk-planning:#b8c5cf;--mk-announced:#bb9055;--mk-contracted:#387d9c;--mk-delivery:#187b71;--mk-dev:#e0f1eb;--mk-dev-text:#1b6d5e;--mk-license:#f7eddb;--mk-license-text:#835b1b;--mk-integration:#e4eff5;--mk-integration-text:#275d79;--mk-service:#eee9f5;--mk-service-text:#72528b;font-family:Arial,Helvetica,sans-serif;color:var(--mk-ink);font-size:14px;line-height:1.5;width:100%;box-sizing:border-box}
+    #briefing-market *{box-sizing:border-box}
+    #briefing-market [hidden]{display:none!important}
+    #briefing-market button{font:inherit;color:inherit;max-width:100%}
+    #briefing-market button:focus-visible,#briefing-market summary:focus-visible{outline:3px solid var(--mk-accent);outline-offset:3px}
+    #briefing-market h2{font-size:24px;line-height:1.25;letter-spacing:-.3px;margin:0}
+    #briefing-market .mk-panels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    #briefing-market .mk-panel{background:var(--mk-paper);border:1px solid var(--mk-line);border-radius:9px;padding:18px;min-width:0}
+    #briefing-market .mk-panel-wide{grid-column:1/-1}
+    #briefing-market h3{font-size:17px;line-height:1.3;margin:0;color:var(--mk-ink)}
+    #briefing-market .mk-caption{font-size:11px;color:var(--mk-muted);display:block;margin-top:5px}
+    #briefing-market .mk-chart{margin-top:15px}
+    #briefing-market .mk-axis{display:grid;grid-template-columns:108px minmax(0,1fr) 46px;gap:9px;color:var(--mk-muted);font-size:11px;margin-bottom:6px}
+    #briefing-market .mk-ticks{display:flex;justify-content:space-between}
+    #briefing-market .mk-ticks-positioned{position:relative;height:17px;display:block}
+    #briefing-market .mk-ticks-positioned>span{position:absolute;white-space:nowrap}
+    #briefing-market .mk-bar-row{display:grid;grid-template-columns:108px minmax(0,1fr) 46px;gap:9px;align-items:center;width:100%;min-height:39px;border:0;border-radius:4px;background:transparent;text-align:left;padding:5px 0}
+    #briefing-market .mk-bar-row:hover,#briefing-market .mk-bar-row[aria-pressed=true]{background:var(--mk-bg)}
+    #briefing-market .mk-country{font-size:12px;font-weight:700;line-height:1.35}
+    #briefing-market .mk-bar-space{height:20px;position:relative;display:block;background:var(--mk-track);border-radius:3px}
+    #briefing-market .mk-bar{position:absolute;top:0;height:20px;background:var(--mk-brand);border-radius:3px}
+    #briefing-market .mk-growth{background:var(--mk-delivery)}
+    #briefing-market .mk-growth-negative{background:var(--mk-announced)}
+    #briefing-market .mk-zero{position:absolute;top:-3px;bottom:-3px;width:1px;background:var(--mk-muted);opacity:.5}
+    #briefing-market .mk-value{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap}
+    #briefing-market .mk-missing{font-size:11px;color:var(--mk-muted);display:block;white-space:nowrap;background:var(--mk-paper);height:100%;position:relative}
+    #briefing-market .mk-pipeline .mk-bar-row,#briefing-market .mk-pipeline .mk-axis{grid-template-columns:108px minmax(0,1fr) 46px}
+    #briefing-market .mk-stack{display:flex;height:20px;position:relative;width:100%;border-radius:3px;overflow:hidden}
+    #briefing-market .mk-segment{display:flex;align-items:center;justify-content:center;height:20px;flex:none;font-size:11px;font-weight:700;color:#fff;font-variant-numeric:tabular-nums}
+    #briefing-market .mk-segment[data-stage=planning]{background:var(--mk-planning);color:var(--mk-ink)}
+    #briefing-market .mk-segment[data-stage=announced]{background:var(--mk-announced)}
+    #briefing-market .mk-segment[data-stage=contracted]{background:var(--mk-contracted)}
+    #briefing-market .mk-segment[data-stage=delivery]{background:var(--mk-delivery)}
+    #briefing-market .mk-legend{display:flex;gap:8px 16px;align-items:center;flex-wrap:wrap;font-size:11px;color:var(--mk-muted);margin-top:13px}
+    #briefing-market .mk-legend>span{display:inline-flex;gap:6px;align-items:center}
+    #briefing-market .mk-swatch{display:inline-block;width:12px;height:12px;border-radius:2px;background:var(--mk-track);flex:none}
+    #briefing-market .mk-swatch[data-stage=planning]{background:var(--mk-planning)}
+    #briefing-market .mk-swatch[data-stage=announced]{background:var(--mk-announced)}
+    #briefing-market .mk-swatch[data-stage=contracted]{background:var(--mk-contracted)}
+    #briefing-market .mk-swatch[data-stage=delivery]{background:var(--mk-delivery)}
+    #briefing-market .mk-industry{width:100%;border-collapse:separate;border-spacing:4px;table-layout:fixed;margin-top:13px}
+    #briefing-market .mk-industry th{font-size:12px;text-align:left;padding:6px 3px;color:var(--mk-muted);line-height:1.4;overflow-wrap:anywhere}
+    #briefing-market .mk-industry th:first-child{width:140px}
+    #briefing-market .mk-industry td{padding:0}
+    #briefing-market .mk-industry tbody th{color:var(--mk-ink);font-weight:700}
+    #briefing-market .mk-role{display:flex;width:100%;height:48px;align-items:center;justify-content:center;text-align:center;font-size:12px;font-weight:700;border:0;border-radius:5px;padding:7px 5px;background:var(--mk-track);color:var(--mk-muted);line-height:1.4;overflow-wrap:anywhere}
+    #briefing-market .mk-role:hover,#briefing-market .mk-role[aria-pressed=true]{outline:2px solid var(--mk-accent);outline-offset:0}
+    #briefing-market .mk-role[data-role=dev]{background:var(--mk-dev);color:var(--mk-dev-text)}
+    #briefing-market .mk-role[data-role=license]{background:var(--mk-license);color:var(--mk-license-text)}
+    #briefing-market .mk-role[data-role=integration]{background:var(--mk-integration);color:var(--mk-integration-text)}
+    #briefing-market .mk-role[data-role=service]{background:var(--mk-service);color:var(--mk-service-text)}
+    #briefing-market .mk-detail{margin-top:18px;border-top:3px solid var(--mk-brand);scroll-margin-top:20px}
+    #briefing-market .mk-detail-header{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;align-items:flex-start}
+    #briefing-market .mk-detail-header h3{font-size:21px}
+    #briefing-market .mk-detail-header .mk-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--mk-muted);display:block;margin-bottom:5px}
+    #briefing-market .mk-country-nav{display:flex;gap:5px;flex-wrap:wrap;margin:15px 0 12px}
+    #briefing-market .mk-country-button,#briefing-market .mk-tab{border:1px solid var(--mk-line);border-radius:5px;padding:7px 10px;background:var(--mk-paper);font-size:12px}
+    #briefing-market .mk-country-button[aria-pressed=true],#briefing-market .mk-tab[aria-selected=true]{background:var(--mk-brand);color:#fff;border-color:transparent}
+    #briefing-market .mk-tabs{display:flex;gap:5px;flex-wrap:wrap;border-bottom:1px solid var(--mk-line);padding-bottom:11px;margin-bottom:17px}
+    #briefing-market .mk-detail-body{font-size:13px;line-height:1.6}
+    #briefing-market .mk-programs{display:grid;gap:11px}
+    #briefing-market .mk-program{border-bottom:1px solid var(--mk-line);padding-bottom:12px}
+    #briefing-market .mk-program summary{font-weight:700;font-size:13px}
+    #briefing-market .mk-stage{font-size:11px;display:inline-block;white-space:nowrap;color:var(--mk-muted)}
+    #briefing-market .mk-program dl,#briefing-market .mk-data-dl{display:grid;grid-template-columns:155px minmax(0,1fr);gap:7px 15px;margin:12px 0;font-size:12px}
+    #briefing-market dt{color:var(--mk-muted);font-weight:700}
+    #briefing-market dd{margin:0;overflow-wrap:anywhere}
+    #briefing-market .mk-timeline{margin-bottom:18px}
+    #briefing-market .mk-window-row{display:grid;grid-template-columns:135px minmax(0,1fr);gap:10px;align-items:center;margin:9px 0}
+    #briefing-market .mk-window-label{font-size:11px;line-height:1.35}
+    #briefing-market .mk-window{height:19px;position:relative;background:var(--mk-track);border-radius:3px}
+    #briefing-market .mk-window-bar{height:19px;position:absolute;background:var(--mk-contracted);opacity:.85;border-radius:3px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff}
+    #briefing-market .mk-window-axis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));text-align:center;margin-left:145px;font-size:11px;color:var(--mk-muted)}
+    #briefing-market .mk-detail-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:23px}
+    #briefing-market .mk-detail-grid h4,#briefing-market .mk-detail-body h4{font-size:14px;color:var(--mk-brand);margin:0 0 10px}
+    #briefing-market .mk-role-list{display:grid;gap:8px}
+    #briefing-market .mk-definition{font-size:12px;color:var(--mk-muted);margin:14px 0 0}
+    #briefing-market .mk-data-table{border-collapse:collapse;width:100%;font-size:13px}
+    #briefing-market .mk-data-table th,#briefing-market .mk-data-table td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--mk-line)}
+    #briefing-market .mk-data-table th{background:var(--mk-bg)}
+    #briefing-market .mk-data-table td:nth-child(2){font-variant-numeric:tabular-nums}
+
+#briefing-market .mk-scope{color:var(--mk-muted);margin:0 0 18px}
+#briefing-market a.mk-pick{color:inherit;text-decoration:none;cursor:pointer}
+#briefing-market .mk-axis,#briefing-market .mk-bar-row,#briefing-market .mk-pipeline .mk-axis,#briefing-market .mk-pipeline .mk-bar-row{grid-template-columns:120px minmax(0,1fr) 80px}
+#briefing-market .mk-missing{white-space:normal;height:auto;min-height:20px;line-height:1.2}
+#briefing-market .mk-bar-space:has(.mk-missing){height:auto;min-height:20px}
+#briefing-market .mk-value small{font-size:10px;font-weight:400}
+#briefing-market .mk-role{height:auto;min-height:62px;flex-wrap:wrap;gap:4px}
+#briefing-market .mk-role-chip{display:inline-block;border-radius:4px;padding:5px 8px;font-size:11px;font-weight:700;background:var(--mk-track);color:var(--mk-muted)}
+#briefing-market .mk-role-chip[data-role=dev]{background:var(--mk-dev);color:var(--mk-dev-text)}
+#briefing-market .mk-role-chip[data-role=license]{background:var(--mk-license);color:var(--mk-license-text)}
+#briefing-market .mk-role-chip[data-role=integration]{background:var(--mk-integration);color:var(--mk-integration-text)}
+#briefing-market .mk-role-chip[data-role=service]{background:var(--mk-service);color:var(--mk-service-text)}
+#briefing-market .mk-scroll{overflow-x:auto;max-width:100%}
+#briefing-market .mk-industry{min-width:700px}
+#briefing-market .mk-industry th,#briefing-market .mk-industry td{min-width:0;border:0}
+#briefing-market .mk-industry th{background:transparent}
+#briefing-market .mk-detail{padding:20px 0 0;scroll-margin-top:85px}
+#briefing-market .mk-country-record{border-top:1px solid var(--mk-line);padding:20px 0;scroll-margin-top:85px}
+#briefing-market.mk-enhanced .mk-fallback{display:none}
+#briefing-market .mk-tabs{overflow:visible}
+#briefing-market .mk-detail h3{margin:0}
+#briefing-market .mk-coverage{padding:12px 15px;background:var(--mk-bg);border-left:3px solid var(--mk-accent);color:var(--mk-muted);font-size:12px;margin:12px 0 18px}
+#briefing-market .mk-function,#briefing-market .mk-access{border-bottom:1px solid var(--mk-line);padding:10px 0 18px;margin:0 0 10px}
+#briefing-market .mk-function.mk-selected{border-left:3px solid var(--mk-accent);padding-left:14px;background:#faf5ec}
+#briefing-market .mk-empty{font-size:12px;color:var(--mk-muted);background:var(--mk-bg);padding:12px}
+#briefing-market .mk-program>summary{display:flex;gap:15px;justify-content:space-between;padding:11px 0;align-items:center}
+#briefing-market .mk-program>summary::after{content:'⌄';color:var(--mk-brand);font-size:16px}
+#briefing-market .mk-program>summary>span:first-child{flex:1}
+#briefing-market .mk-stage{padding:4px 8px;border-radius:4px;background:var(--mk-bg);white-space:normal;flex:none;max-width:180px}
+#briefing-market .mk-stage[data-stage=contracted]{background:#e4eff5;color:#275d79}
+#briefing-market .mk-stage[data-stage=delivery]{background:#e0f1eb;color:#1b6d5e}
+#briefing-market .mk-stage[data-stage=announced]{background:#f7eddb;color:#835b1b}
+#briefing-market .mk-window-axis{grid-template-columns:repeat(var(--mk-years),minmax(0,1fr))}
+#briefing-market .mk-window-row{min-height:38px}
+#briefing-market .mk-window-label small{font-size:10px}
+#briefing-market .mk-window-bar{white-space:nowrap;min-width:0;font-size:10px}
+#briefing-market .mk-fact{border-top:1px solid var(--mk-line);padding:9px 0;font-size:12px}
+#briefing-market .mk-fact>summary{line-height:1.45;font-weight:600;color:var(--mk-brand)}
+#briefing-market .mk-fact .evidence{margin:8px 0;padding-left:18px}
+#briefing-market .mk-fact .evidence li{background:var(--mk-bg);padding:10px 12px;margin:8px 0}
+#briefing-market .mk-data-table{min-width:600px}
+#briefing-market .mk-data-table th,#briefing-market .mk-data-table td{min-width:0;vertical-align:top}
+#briefing-market .mk-data-table th:nth-child(1){width:9%}
+#briefing-market .mk-data-table th:nth-child(2){width:20%}
+#briefing-market .mk-data-table th:nth-child(3){width:24%}
+#briefing-market .mk-data-table th:nth-child(4){width:47%}
+#briefing-market .mk-data-table .mk-fact{border-top:0;padding:0}
+@media print{
+ #briefing-market .mk-detail{display:none!important}
+ #briefing-market.mk-enhanced .mk-fallback{display:block!important}
+ #briefing-market .mk-panels{display:block}
+ #briefing-market .mk-panel{margin-bottom:12px;break-inside:avoid;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+ #briefing-market .mk-scroll{overflow:visible}
+ #briefing-market .mk-industry,#briefing-market .mk-data-table{min-width:0;table-layout:auto}
+ #briefing-market .mk-role{min-height:0}
+ #briefing-market .mk-detail-grid{display:block}
+ #briefing-market .mk-program,#briefing-market .mk-function,#briefing-market .mk-access{break-inside:avoid}
+}

@@ -108,6 +108,10 @@ interpretation-briefing -> briefing-output. Vier Faktenrollen, zwei Interpretati
 ein Basis- und ein gemeinsames Schluss-Review. Bestehende Markdown-Modultests
 bleiben Legacy; keine JSON/Markdown-Mischläufe.
 Keine Horváth-Angebotskapitel oder separaten Firmen-Deep-Dives im v2-Zielprodukt.
+Regionale Markt-Deep-Dives folgen references/markt-deepdive.md: market-facts liefert
+vergleichbare Kennzahlen, Programme, industrielle Rollen und Marktzugang als
+market_dashboard; Quellenprüfung und fester Renderer übernehmen die Darstellung.
+Keine firmenspezifischen Musterwerte in künftige Briefings übernehmen.
 
 ## Interpretation auf geprüften Fakten
 Positionierungs-Agent mit positioning-analysis bewertet nach fixiertem Plan;

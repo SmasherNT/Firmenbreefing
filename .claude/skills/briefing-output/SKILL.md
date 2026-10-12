@@ -18,6 +18,9 @@ Explizite Markdown-Modultests nach references/legacy-html-output.md durchführen
    Capability Matrix nach references/capability-matrix.md: gleich hohe Kurztextzellen,
    tatsächliche Evidenzskalen, Einzelbewertung darunter und alle Peers per Spaltenkopf
    vergleichen. Vollständige Fakten/Quellen auch im Druck und ohne JavaScript.
+   Markt-Deep-Dive nach references/markt-deepdive.md: Kennzahlen/CAGR, Programme
+   und industrielle Rollen mit Länderdetails darunter. Nur aktuelles freigegebenes
+   market_dashboard verwenden; fehlende Daten offen lassen, keine Musterwerte.
 2. Fehler gezielt an zuständige Fakten-/Interpretations-/Prüfrolle geben;
    keine fremden Dateien korrigieren oder Prüfbarrieren umgehen.
    Keine finale HTML bei Materialfehlern, veralteten Reviews, blockierenden Fragen.

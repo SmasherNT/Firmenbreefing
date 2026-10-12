@@ -32,8 +32,9 @@ visuelle Browser-, Mobil- oder Drucklayout-Abnahme; kleine DOM-Prüfung ersetzt
 keine echte Browser-/Touch-/CSS-Prüfung. Quellen-URLs des Beispiels nicht geöffnet.
 Alle Beispieldaten und Reviewer-Urteile simuliert. Keine tatsächliche Firmen-
 recherche oder Inhaltsfreigabe behaupten. Kein realer Token-/Kostenbenchmark.
-Spezielle regionale Zeitreihen, Landkarten und frei entworfene Marktgrafiken sind
-noch kein generischer Rendererbestandteil. Gemeinsamer Dokumentcache folgt.
+Zum damaligen Stand waren spezielle regionale Zeitreihen, Landkarten und frei
+entworfene Marktgrafiken noch kein generischer Rendererbestandteil; aktuelle
+Markt-Zeitreihen siehe Ergänzung vom 12.10.2026 unten. Dokumentcache folgt.
 
 ## Ergänzung 11.10.2026: Executive Summary
 Der Positionierungsagent wählt drei Highlights aus der vorhandenen A-Faktenbasis;
@@ -119,3 +120,37 @@ bleiben erhalten. headline/preview sind Teil des geprüften I-Claims/Fingerprint
 - Bereits vorhandene Rheinmetall-Inhalte zusätzlich als Darstellungsprüfung:
   sieben Angebote, 35 Bewertungen, 90 Faktenblöcke und fünf Kriterienvergleiche
   vollständig erreichbar. Keine neue Recherche oder Inhaltsfreigabe behauptet.
+
+## Markt-Deep-Dive 12.10.2026
+Generische Vergleichsoberfläche nach markt-deepdive.md: Kontext-/Segmentkennzahl
+und Wachstum, deduplizierte Programme nach Status, industrielle Rollen je Funktion
+und Länderdetails mit Programmfenstern, Marktzugang, Zeitreihen/Methode/Quellen.
+Gemeinsame Achsen, negative Entwicklung links der Null, keine erfundenen Werte.
+Plan/Prognose und inkompatible Daten bleiben außerhalb des Ist-Vergleichs.
+Alle Dashboard-Zuordnungen sind an den Paket-Snapshot und aktuelle A-Reviews
+gebunden; required_full_review_ids umfasst sämtliche verwendeten Fakten.
+
+- 98 Unit-Tests bestanden: Jahre/Einheiten/IDs/Referenzen, endliche Werte,
+  Nullwert vs. Datenlücke, CAGR/negative Entwicklung, Plan/Prognose, Deduplikation,
+  Status-/Zeitfensterdaten, Mehrfachrollen, optionale Segmentkennzahl, Escaping,
+  vollständige statische Inhalte und Review-/Zuordnungsbarrieren.
+- Offline-Desktop-Chromium bei 1440/1280/1024 Pixeln: nebeneinanderliegende
+  Größen-/Wachstumscharts, vollständige Rollentexte, Balken-/Zellklick,
+  Länderauswahl, drei Detailreiter, Tastatur, Programmfenster, direkte Quellen,
+  Claim-Seitenwechsel, alle Länder im Druck und wiederhergestellter Zustand,
+  vollständiger Fallback ohne JavaScript. Keine JavaScript-Fehler.
+- Bestehende Desktopprüfung für Portfolio, Cluster, Capability Matrix, Profile,
+  Seitenwechsel und Druck weiterhin bestanden. Marktübersicht und Programm-
+  Vertiefung visuell kontrolliert; Python-Syntax und zwei geänderte Skills gültig.
+- Reproduzierbares Beispiel: 65 synthetische Fakten, 17 Interpretationen,
+  drei Testländer, sechs Programme und drei Industriefunktionen. Zahlen und
+  Reviewer-Urteile ausschließlich simuliert, keine echten Quellen geöffnet.
+- Unabhängiger market-facts-Lauf aus anderen fiktiven Dokumenten: 13 M-Claims,
+  zwei Länder/zwei Programme, formal gültiges Dashboard. Historische Genehmigung
+  von aktuellem Vertrag getrennt, keine doppelte Programmzählung, geplante
+  Auslieferung nicht als begonnen gewertet; fehlende Werte/Rollen/Zugangsregeln
+  offengehalten. Kein reales Inhaltsreview oder Quellenfreigabe behauptet.
+
+Künftige regionale Aufträge verwenden recherchierte Daten ihres aktuellen Laufs;
+keine firmenspezifischen Testwerte oder festen Länder/Funktionen im Renderer.
+Alte Faktenpakete ohne Dashboard bleiben mit Themen-/Regionenkarten nutzbar.

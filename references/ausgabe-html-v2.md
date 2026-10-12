@@ -21,7 +21,7 @@ Keine kopierten Fakten-/Belegtexte pro Zeile.
 | context | company_facts, events, profile, topics |
 | portfolio | products, regions, topics |
 | cluster | topics, report_log; network bleibt eigenes Paketfeld |
-| market | regions, topics, peers, observations gemäß Vergleichsvertrag |
+| market | regions, topics, peers, observations gemäß Vergleichsvertrag; market_dashboard nach markt-deepdive.md |
 
 events: zusätzlich date (YYYY-MM-DD oder null), kein Abrufdatum als Ereignisdatum.
 Kurzes sachliches label, gegebenenfalls mit „angekündigt“/„laut Hersteller“/
@@ -56,7 +56,9 @@ Feste vier Desktop-Seiten, auch wenn ein optionaler Auftragsteil leer ist:
 1. Überblick: Summary, Entwicklungen, Portfolio, allgemeine Themen, Cluster,
    Capability Matrix, Einordnung, SWOT und offene Fragen. Module untereinander.
 2. Beruflicher Gesprächspartner-Kontext.
-3. Markt-Deep-Dive: regionale Themen, Länder/Marktzugang und regionale Einordnung.
+3. Markt-Deep-Dive: vergleichbare Kennzahlen/CAGR, Programme und industrielle Rollen
+   mit vertiefbaren Länderdetails nach markt-deepdive.md; anschließend regionale
+   Themen, Unternehmenspräsenz und regionale Einordnung.
 4. Aussagen, Belegstellen und Originalquellen mit Suche.
 
 Manifest topics=[{id,label,page}], page=main/market (Standard main);
@@ -81,8 +83,8 @@ ohne JavaScript und im Druck. Andere Karten öffnen den gemeinsamen Dialog.
 Statische zugängliche Netzwerktabelle auch ohne JavaScript. Druck öffnet Details
 und stellt anschließend die vorherige Ansicht wieder her.
 Keine externen Assets, Laufzeit-Netzabfragen oder zusätzliche LLM-Designrunde.
-Keine gesonderte Mobilansicht/-abnahme. Spezielle Landkarten/Zeitreihen sind kein
-Pflichtbestandteil der generischen Darstellung.
+Keine gesonderte Mobilansicht/-abnahme. Regionale Zeitreihen aus market_dashboard
+werden generisch gerendert; spezielle Landkarten sind kein Pflichtbestandteil.
 
 ## Prüfbarrieren
 Basis-Review input_fingerprint aus facts-validation.packet_fingerprint bindet
