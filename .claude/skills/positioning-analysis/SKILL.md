@@ -12,6 +12,8 @@ Unbestimmbare Einträge mit null, niemals aus einer Datenlücke einen Score able
 1. Eingabeidentität/Prüfstand beachten; pending_checks nicht als sichere Basis nutzen.
 2. Je Peer/Kriterium genau eine Zelle liefern. Profil, Kennzahl und Evidenzstufe
    unterscheiden; veröffentlichte Herstellerangabe ist kein unabhängiger Benchmark.
+   Kurze headline/preview in derselben I-Bewertung nach capability-matrix.md
+   liefern; vorhandene Aussagen und Einschränkungen verdichten, keine neuen Claims.
 3. Aussage, depends_on, Begründung/Methode und konkrete Unsicherheit angeben.
    Scores ausschließlich nach fixierten anchors, keine Gesamt-Rangliste.
 4. Bei unbelegter höherer Stufe diese Grenze erklären. Nicht öffentlich belegt

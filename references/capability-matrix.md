@@ -48,6 +48,38 @@ Positionierung liefert diese Bewertungen und Zellbegründungen nach
 interpretationsphase.md; Markt-Fakten allein sind noch keine bewertete Matrix.
 Der HTML-Anschluss der Zell-Deep-Dives folgt im Ausgabeschritt.
 
+## Verbindliche Darstellung (bestätigter Quantum-Systems-Stil)
+Gleichmäßiges Raster: Unternehmen/konkretes Angebot in Zeilen, auftragsbezogene
+Kriterien in Spalten. Referenzunternehmen sichtbar hervorheben; Reihenfolge aus
+dem geprüften Vergleichsplan erhalten. Keine firmenspezifischen Inhalte in der Vorlage.
+Alle Zellen gleich hoch, lesbare Schrift und kurze Kernaussagen. Zellhöhe lokal
+an vollständige Kurztexte anpassen, keine abgeschnittenen Texte oder Schriftverkleinerung.
+Breite Matrizen nur innerhalb der Tabelle horizontal scrollen; Akteursspalte bleibt stehen.
+
+Große Evidenzstufe mit tatsächlichem Skalenmaximum des Kriteriums darstellen,
+z. B. 2/3 oder 4/5; keine pauschale Fünferskala. Türkisabstufung nach der Position
+im vorab festgelegten Kriterienmaßstab. Profile und Kennzahlen neutral, ohne
+künstlichen Evidenzscore. „Nicht öffentlich belegt“ und „nicht anwendbar“ getrennt
+und ohne Nullwertung anzeigen. Quellenanzahl aus tatsächlich referenzierten
+Original-URLs zählen; Zahl bedeutet keine unabhängige Bestätigung.
+
+Positionierung liefert je Matrixzelle zusätzlich kurze headline (Richtwert 40,
+maximal 48 Zeichen) und preview (Richtwert 60, maximal 80 Zeichen) im bestehenden
+Bewertungsschritt. Diese Felder verdichten nur die geprüfte Bewertung; Status,
+Hersteller-/Medienangaben und wichtige Beleggrenzen erhalten. Beide sind Teil
+derselben I-Interpretation und des Schluss-Review-Fingerprints. Ältere Datensätze
+ohne Kurzfelder bleiben renderbar: rein lokale Kürzung des vorhandenen Werts,
+vollständige Aussage im zugänglichen Detail. Keine zusätzliche Modell-/Recherche-Runde.
+
+Zellklick zeigt unter der Matrix die vollständige Einzelbewertung mit Einordnung,
+Grenzen, nächster Evidenzstufe bzw. coverage_note sowie A-Fakten und direkten
+Originalquellen. Spaltenkopfklick öffnet alle Wettbewerber für dasselbe Kriterium
+nebeneinander in einer Vergleichstabelle mit identischer Gliederung; jede
+Einzelbewertung bleibt erreichbar. Kein Dialog, keine Gesamt-Rangliste.
+Alle Inhalte statisch als native Details erhalten: ohne JavaScript erreichbar,
+beim Drucken vollständig geöffnet, vorheriger Bildschirmzustand danach wiederhergestellt.
+Renderer: scripts/capability-html.py und references/templates/capability.css/.js.
+
 Andere beauftragte Scores nur mit zusätzlicher assessment_methods-Liste im Plan:
 je Methode id, assessment_type, applicability und anchors mit erklärten Stufen.
 Positionierung nennt method_id, subject und score; ohne Methode qualitative

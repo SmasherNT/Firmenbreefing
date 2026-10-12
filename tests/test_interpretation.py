@@ -200,6 +200,19 @@ class InterpretationTests(unittest.TestCase):
         out['interpretations'][0]['score'] = 4
         self.assertTrue(self.check(ctx, out)['errors'])
 
+    def test_matrix_short_fields_are_validated_and_bound_to_review(self):
+        ctx = self.context(True)
+        out = self.output(ctx, True)
+        before = self.check(ctx, out, latest_plan=self.plan)['fingerprints']['I1']
+        row = out['interpretations'][0]
+        row.update(headline='Reported test', preview='Manufacturer report; independent validation open')
+        result = self.check(ctx, out, latest_plan=self.plan)
+        self.assertEqual(result['errors'], [])
+        self.assertNotEqual(before, result['fingerprints']['I1'])
+        row['headline'] = 'x' * 49
+        self.assertTrue(self.check(ctx, out, latest_plan=self.plan)['errors'])
+        row.update(headline='Reported test', preview='x' * 81)
+        self.assertTrue(self.check(ctx, out, latest_plan=self.plan)['errors'])
     def test_typed_additional_score_matches_method(self):
         self.plan['assessment_methods'] = [dict(id='maturity', assessment_type='product_maturity',
             applicability='Inspection', anchors={'1': 'offered', '2': 'test reported'})]

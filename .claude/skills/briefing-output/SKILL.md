@@ -15,6 +15,9 @@ Explizite Markdown-Modultests nach references/legacy-html-output.md durchführen
    gleich große Knoten, Farbe/Form je Kategorie, Namen darunter, keine Score-Badges;
    gebogene Linien mit Pfeilen ohne Endpunktkreise, Details rechts, Seite scrollbar.
    Gesprächspartner offen nach references/gespraechspartner.md auf Seite 2.
+   Capability Matrix nach references/capability-matrix.md: gleich hohe Kurztextzellen,
+   tatsächliche Evidenzskalen, Einzelbewertung darunter und alle Peers per Spaltenkopf
+   vergleichen. Vollständige Fakten/Quellen auch im Druck und ohne JavaScript.
 2. Fehler gezielt an zuständige Fakten-/Interpretations-/Prüfrolle geben;
    keine fremden Dateien korrigieren oder Prüfbarrieren umgehen.
    Keine finale HTML bei Materialfehlern, veralteten Reviews, blockierenden Fragen.

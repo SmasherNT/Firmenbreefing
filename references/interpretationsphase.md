@@ -47,6 +47,10 @@ Qualitative Produkt-/Technologie-/Industrieposition, regionale Präsenz und
 Netzwerkbedeutung nur soweit beauftragt aus geprüften Fakten ableiten.
 Je Matrixzelle eine I-Interpretation mit type="matrix_cell", peer_id,
 criterion_id, cell_status und value; kein zweiter identischer Claim in einer Tabelle.
+Kurze headline (max. 48 Zeichen) und preview (max. 80 Zeichen) nach
+capability-matrix.md in derselben Bewertung liefern. Nur vorhandene Aussagen
+verdichten; Einschränkungen und Aussageursprung erhalten. Schluss-Review prüft
+auch diese Kurzfelder; keine zusätzliche Runde für Darstellungstexte.
 cell_status: bewertet / nicht öffentlich belegt / nicht anwendbar /
 weitere Faktenprüfung nötig.
 bewertet: depends_on nicht leer. Profil -> beschreibender String ohne Score;

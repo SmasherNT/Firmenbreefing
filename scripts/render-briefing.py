@@ -16,6 +16,7 @@ CHECK = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(CHECK)
 PORTFOLIO = CHECK.helper("portfolio_html", "portfolio-html.py")
 PROFILE = CHECK.helper("profile_html", "profile-html.py")
+CAPABILITY = CHECK.helper("capability_html", "capability-html.py")
 
 KINDS = {"target", "partner", "customer", "jv", "owner", "supplier", "subsidiary",
          "project", "person", "institution", "other"}
@@ -357,26 +358,27 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     if positioning_context and positioning_context.get("matrix"):
         criteria = plan["criteria"]
         cells = {(r["peer_id"], r["criterion_id"]): r for r in positioning["interpretations"] if r.get("type") == "matrix_cell"}
-        head = '<tr><th>Akteur</th>' + ''.join('<th>' + esc(c['label']) + '<small>' + esc(c['display_type']) + '</small></th>' for c in criteria) + '</tr>'
-        rows = []
-        for peer in positioning_context['matrix']['peers']:
-            line = '<th scope="row">' + esc(peer['label']) + '</th>'
-            for c in criteria:
-                r = cells[peer['id'], c['id']]
-                value = r['value'] if r['cell_status'] == 'bewertet' else r['cell_status']
-                bar = ''
-                if r['cell_status'] == 'bewertet' and c['display_type'] == 'Evidenzstufe':
-                    anchors = sorted(c['anchors'], key=lambda k: float(k))
-                    key = str(int(r['value'])) if isinstance(r['value'], float) and r['value'].is_integer() else str(r['value'])
-                    value = c['anchors'][key]
-                    bar = '<span class="steps" aria-hidden="true">' + ''.join('<i class="' + ('on' if n <= anchors.index(key) else '') + '"></i>' for n in range(len(anchors))) + '</span>'
-                if r['cell_status'] == 'bewertet' and c['display_type'] == 'Kennzahl':
-                    value = str(value) + ' ' + c['unit']
-                line += '<td><a class="cell" data-es-title="' + esc(peer['label'] + ' · ' + c['label']) + '" href="#' + esc(r['id']) + '"><span class="cell-value">' + esc(value) + '</span>' + bar + '<span class="cell-open">Begründung ↗</span></a><template class="cell-detail">' + executive_detail(r) + '</template></td>'
-            rows.append('<tr>' + line + '</tr>')
-        rubric = ''.join('<h4>' + esc(c['label']) + '</h4>' + paragraphs([c['question'], c['evidence_required'], c.get('conditions')]) + (note_rows(c.get('anchors', {}).values()) if c.get('anchors') else '') for c in criteria)
+
+        def matrix_detail(row):
+            body = '<div class="cm-detail-grid"><div class="cm-discussion"><p class="cm-statement">' + esc(row['statement']) + '</p><h4>Einordnung</h4>' + paragraphs([row['reasoning']]) + links([row['id']]) + '</div>'
+            limits = [(label, row.get(key)) for key, label in (
+                ('uncertainty', 'Grenzen der Aussage'), ('next_stage_limit', 'Nächste Evidenzstufe'),
+                ('coverage_note', 'Recherche- und Beleggrenze')) if row.get(key)]
+            if limits:
+                body += '<aside class="cm-limits">' + ''.join('<h4>' + label + '</h4>' + paragraphs([value]) for label, value in limits) + '</aside>'
+            body += '</div><div class="cm-facts"><h4>Faktenbasis &amp; Originalquellen</h4>'
+            fact_ids = sorted({cid for report in validations for cid in report['fact_dependencies'].get(row['id'], [])})
+            for cid in fact_ids:
+                fact = claims[cid]
+                body += '<details class="cm-fact"><summary>' + esc(fact['statement']) + '</summary><p class="meta">' + esc(fact['kind']) + '</p>' + paragraphs([fact['uncertainty']]) + evidence(fact) + links([cid]) + '</details>'
+            return body + '</div>'
+
+        counts = {r['id']: len({sources[s]['url'] for report in validations
+            for cid in report['fact_dependencies'].get(r['id'], []) for s in claims[cid]['source_ids']}) for r in cells.values()}
+        matrix = CAPABILITY.render(criteria, positioning_context['matrix']['peers'], cells,
+            manifest['company'], matrix_detail, counts, network['target_id'] if network else None)
         title = 'Capability Matrix · fiktiver Beispieldatensatz' if fictional else 'Capability Matrix · öffentlich belegte Reife'
-        main += section(title, '<p>Zellen öffnen Begründung, Evidenz und Grenzen. Kriterien folgen dem Prüfauftrag; kein Gesamt-Ranking.</p><div class="table-wrap capability-wrap"><table>' + head + ''.join(rows) + '</table></div><details><summary>Kriterien und Skalen</summary>' + rubric + '</details>', 'capability-matrix')
+        main += section(title, matrix, 'capability-matrix')
     extra = [r for r in interpreted.values() if r['id'].startswith('I') and r['section'] not in {CHECK.SUMMARY_SECTION, CHECK.HIGHLIGHT_SECTION, 'regions'} and not r['section'].startswith('topic:') and r.get('type') != 'matrix_cell' and not CHECK.product_assessment(r)]
     scored = []
     for r in extra:

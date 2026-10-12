@@ -155,6 +155,12 @@ def generate(destination):
             section='competition', depends_on=ids, reasoning='Ableitung ausschließlich aus den genannten fiktiven Belegen.',
             method='Fixierter Vergleichsplan', uncertainty='Synthetischer Test', type='matrix_cell',
             peer_id=p, criterion_id=c, cell_status='bewertet', value=value,
+            headline={'API-Integration': 'API-Integration', 'Komplettsystem': 'Komplettsystem',
+                      2: 'Labortest dokumentiert', 3: 'Kundenpilot dokumentiert'}[value],
+            preview={'API-Integration': 'Dokumentierte industrielle Schnittstelle',
+                     'Komplettsystem': 'Eigenes integriertes Angebot',
+                     2: 'Pilot vorgesehen; Umsetzung nicht belegt',
+                     3: 'Benannter Pilot im fiktiven Datensatz'}[value],
             next_stage_limit='Nächsthöhere Stufe nicht im Datensatz belegt' if value != 3 else 'Höchster definierter Skalenanker'))
     for order, (n, cid, statement, headline, preview) in enumerate([
         (10, 'M1', 'API-Integration bildet den technischen Ansatz des fiktiven Angebots.',

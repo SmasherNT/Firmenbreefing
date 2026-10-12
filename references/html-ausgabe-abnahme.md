@@ -101,3 +101,21 @@ Filter, Quellen, Druckzustand und Fallback ohne JavaScript. Zusätzlich das bere
 vorhandene Rheinmetall-Netz mit 43 Knoten und 54 Beziehungen visuell geprüft:
 alle Akteure erreichbar, keine Symbolüberlappung, Bereichshöhen wachsen je Zeile.
 Das ist eine Darstellungsprüfung vorhandener Daten, keine neue Inhaltsfreigabe.
+
+## Capability Matrix 12.10.2026
+Bestätigter Quantum-Systems-Stil: gleich hohe Kurztextzellen, große Evidenzstufen
+mit tatsächlichem Kriterienmaximum, sichtbare Referenz und neutrale Profile/
+Kennzahlen. Einzelbewertung unter der Matrix; Spaltenkopf öffnet alle Wettbewerber
+nach identischem Kriterium. Alle Einordnungen, Beleggrenzen, A-Fakten und Quellen
+bleiben erhalten. headline/preview sind Teil des geprüften I-Claims/Fingerprints.
+
+- 86 Unit-Tests bestanden: u. a. freie Skalenanker, Profil/Kennzahl ohne
+  künstlichen Evidenzscore, fehlende Evidenz vs. Nichtanwendbarkeit, vollständige
+  statische Inhalte, HTML-Escaping und Review-Bindung der Kurztexte.
+- Desktop-Browser bei 1440/1280/1024 Pixeln: gleich hohe Zellen ohne Textverlust,
+  Auswahl mit Maus/Enter/Leertaste, Kriterienvergleich, direkte Originalquellen,
+  Quellen-Seitenwechsel, Druck mit allen Bewertungen und wiederhergestellter
+  Ansicht, native Details ohne JavaScript; keine JavaScript-Fehler.
+- Bereits vorhandene Rheinmetall-Inhalte zusätzlich als Darstellungsprüfung:
+  sieben Angebote, 35 Bewertungen, 90 Faktenblöcke und fünf Kriterienvergleiche
+  vollständig erreichbar. Keine neue Recherche oder Inhaltsfreigabe behauptet.

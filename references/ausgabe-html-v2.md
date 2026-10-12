@@ -72,9 +72,12 @@ der Anzahl. Einheitliche Knotengröße, Form und Farbe je Akteurskategorie, Name
 unter den Formen und keine Zahlen-/Score-Badges. Gebogene Linien mit Pfeilen,
 ohne Endpunktkreise; normales Seitenscrollen. Details in netzwerk-html.md.
 Mehrere Vorgänge je Akteurspaar über eine gemeinsame Linie
-auswählen; sämtliche Einzelbelege erhalten. Matrixspalten folgen dem Auftrag;
-kompakte Zellen, lokaler Scroll, feststehende Akteursspalte. Karten/Zellen öffnen
-Begründung und direkte Quellen im gemeinsamen Dialog. Native details als Fallback.
+auswählen; sämtliche Einzelbelege erhalten. Matrix nach capability-matrix.md:
+Spalten folgen dem Auftrag, einheitlich hohe Kurztextzellen, große Evidenzstufen
+mit tatsächlichem Skalenmaximum, lokale Scrollfläche und feste Akteursspalte.
+Zellklick zeigt vollständige Bewertung unter der Matrix; Spaltenkopfklick vergleicht
+alle Wettbewerber im selben Kriterium. Native Details bewahren sämtliche Quellen
+ohne JavaScript und im Druck. Andere Karten öffnen den gemeinsamen Dialog.
 Statische zugängliche Netzwerktabelle auch ohne JavaScript. Druck öffnet Details
 und stellt anschließend die vorherige Ansicht wieder her.
 Keine externen Assets, Laufzeit-Netzabfragen oder zusätzliche LLM-Designrunde.

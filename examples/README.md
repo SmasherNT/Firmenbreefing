@@ -19,6 +19,11 @@ Bereichsfelder sind je Zeile gleich hoch und wachsen mit der Anzahl der Akteure;
 die Seite bleibt scrollbar. Quellen stehen in einer festen rechten Detailspalte.
 Das offene Personenprofil zeigt den Snapshot
 und sichtbare Evidenz; unbelegte Werdegangsfelder bleiben als Datenlücke erkennbar.
+Capability Matrix: gleich große Kurztextzellen, Referenzunternehmen markiert und
+Evidenzstufen auf der tatsächlichen Beispielskala 1–3. Zellklick öffnet die
+vollständige Bewertung unter der Matrix, Spaltenkopf vergleicht alle Peers im
+gleichen Kriterium. Alle Bewertungen/Fakten/Quellen bleiben ohne JavaScript
+und im Druck erhalten; Kurzfelder werden mit der Interpretation geprüft.
 
 Reproduzieren (aus Repositorywurzel):
 
@@ -42,6 +47,6 @@ Optional reproduzieren: playwright-core installieren und BRIEFING_CHROMIUM_PATH
 auf ein Chromium-Executable setzen; dann tests/check_executive_browser.cjs mit
 einem oder mehreren erzeugten HTML-Pfaden ausführen.
 check_design_browser.cjs prüft zusätzlich Portfoliofilter, geschlossene Profile,
-wiederholte Produktlinks, Netzwerkknoten/Kanten, Matrixdialoge, Seitenzuordnung,
+wiederholte Produktlinks, Netzwerkknoten/Kanten, Matrixdetails/Kriterienvergleich, Seitenzuordnung,
 Quellensuche, Tastaturnavigation, Druckzustand und native Fallbacks.
 Alle Browserkontexte sind offline; nur Desktopbreiten werden geprüft.

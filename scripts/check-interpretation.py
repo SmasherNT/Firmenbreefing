@@ -391,6 +391,9 @@ def validate_output(manifest, facts, review, context, output,
         found = dependencies(cid)
         is_cell = row.get("type") == "matrix_cell"
         if is_cell:
+            for field, limit in (("headline", 48), ("preview", 80)):
+                if field in row and (not text(row[field]) or len(row[field]) > limit):
+                    errors.append(cid + ": matrix " + field + " invalid")
             if output.get("role") != "positioning" or row.get("peer_id") not in peers or row.get("criterion_id") not in criteria:
                 errors.append(cid + ": invalid matrix peer/criterion")
                 continue
