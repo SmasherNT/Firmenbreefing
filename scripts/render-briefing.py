@@ -280,10 +280,12 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             esc(row["preview"]) + '</span><span class="es-arrow" aria-hidden="true">↗</span></summary>' + executive_detail(row) + '</details>'
 
     def highlight_card(row):
+        value_class = ' es-status' if row['highlight_kind'] == 'status' else ' es-value-compact' if len(row['value']) > 28 else ' es-value-medium' if len(row['value']) > 18 else ''
         return '<details class="es-highlight es-entry" data-es-title="' + esc(row["label"]) + '"><summary>' + \
-            '<span class="es-value' + (' es-status' if row["highlight_kind"] == 'status' else '') + '">' + \
-            esc(row["value"]) + '</span><span class="es-label">' + esc(row["label"]) + '</span>' + \
-            '<span class="es-meta">' + esc(row["scope_label"]) + ' · ' + esc(row["period"]) + '</span>' + \
+            '<span class="es-label">' + esc(row["label"]) + '</span>' + \
+            '<span class="es-value' + value_class + '">' + esc(row["value"]) + '</span>' + \
+            '<span class="es-scope">' + esc(row["scope_label"]) + '</span>' + \
+            '<span class="es-period">' + esc(row["period"]) + '</span>' + \
             '<span class="es-arrow" aria-hidden="true">↗</span></summary>' + executive_detail(row) + '</details>'
 
     def section(title, body, ident=None):

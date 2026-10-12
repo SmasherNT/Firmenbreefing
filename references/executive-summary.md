@@ -63,3 +63,8 @@ Der Renderer wählt keine Zahlen aus und erzeugt keine neuen Aussagen.
 Bestehende Läufe mit altem Summary-Format benötigen neue Darstellungsfelder und
 Highlights aus ihrer geprüften Basis sowie ein gezieltes Schluss-Review. Fakten
 nicht allein wegen der Layoutumstellung neu recherchieren.
+
+## Highlight-Zeile
+Drei gleich hohe Karten: Bezeichnung oben, Wert/Status im gemeinsamen Wertebereich,
+Bezugsbereich darunter, Zeitraum in einer abgesetzten unteren Zeile. Lange Werte
+erhalten lokal passende Schriftgrößen. Inhalte und Review-Bindung bleiben unverändert.

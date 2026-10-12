@@ -22,6 +22,7 @@ const {chromium} = require('playwright-core');
     await page.setViewportSize({width,height:1000});
     const boxes=await page.locator('.es-card').evaluateAll(nodes=>nodes.map(n=>{const r=n.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,right:r.right};}));
     assert(boxes.every(r=>r.x>=0&&r.right<=width+1),'Summary card outside viewport');
+    const highlights=await page.locator('.es-highlight').evaluateAll(ns=>ns.map(n=>{const r=n.getBoundingClientRect(),date=n.querySelector('.es-period').getBoundingClientRect();return {y:r.y,height:r.height,dateY:date.y};}));assert(highlights.every(r=>Math.abs(r.height-highlights[0].height)<1&&Math.abs(r.dateY-highlights[0].dateY)<1),'Aligned highlight cards and periods');
     if(width===1440){
      const first=boxes.filter(b=>Math.abs(b.y-boxes[0].y)<1).length;
      assert.equal(first,count===4?2:3,'Desktop row distribution');
