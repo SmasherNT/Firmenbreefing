@@ -4,29 +4,8 @@
  "company": "Rheinmetall",
  "as_of": "2026-10-12",
  "phase": "basis",
- "status": "teilweise",
- "material_errors": [
-  {
-   "id": "ME-1",
-   "claim_ids": [
-    "C-024",
-    "M-EXP-001",
-    "M-EXP-002"
-   ],
-   "owner": "cluster",
-   "reason": "Widerspruch zum Exportrahmen Golfstaaten: C-024 (inkl. event_status, Unsicherheit, gap G04) stellt AGG Nr. 48 als bis 15.09.2026 befristet und zum Stichtag nicht als gültig bestätigt dar; amtliche BAFA-Seite (M-EXP-002, geprüft) belegt Verlängerung per Bekanntgabe 10.09.2026 bis 15.09.2027.",
-   "action": "C-024/G04/Coverage auf Stand 15.09.2027 bringen und M-EXP-002 referenzieren; danach gezielte Nachprüfung nur dieser Einträge. Bis dahin für Interpretation ausschließlich M-EXP-002 als Gültigkeitsstand verwenden."
-  },
-  {
-   "id": "ME-2",
-   "claim_ids": [
-    "M-SAAB-001"
-   ],
-   "owner": "market",
-   "reason": "Fehlerhafte Peer-Beobachtung für die Capability Matrix: RBS 70 (nicht RBS 70 NG) seit 2014 beim brasilianischen Heer; erste RBS-70-NG-Schießen 2019 (Saab-Produktseite). Betrifft Beobachtung saab/customer_status.",
-   "action": "Claim und Beobachtung korrigieren; Zelle saab/customer_status erst nach Nachprüfung bewerten."
-  }
- ],
+ "status": "freigegeben",
+ "material_errors": [],
  "review_scope": {
   "method": "references/quellenpruefung.md (verbindlich), cluster-recherche.md, cluster-quellenkatalog.md, netzwerk-html.md, gespraechspartner.md, ausgabe-html-v2.md, faktenphase.md",
   "formal_check": "python3 scripts/check-review-data.py runs/2026-10-12-rheinmetall/work/review-packet.json → Exit 0, errors=[] (nur formal; keine Inhaltsprüfung). scripts/__pycache__ entfernt.",
@@ -38,7 +17,7 @@
    "work/comparison-plan.json"
   ],
   "actually_checked": "Alle 162 Quellen im aktuellen Lauf geöffnet (159 per curl/Textextraktion, 3 per WebFetch nach HTTP 403/406: S-34516b5032f5dad2, S-95cc0ee12b8ad9b8, S-b798e8edef2944e7); 8 PDFs lokal mit pdftotext seitengenau ausgewertet (GB 2025, GB 2024, H1-Bericht 2026, Jahresabschluss 2025, SIPRI, Diehl-GB 2025, Hensoldt-AR-Kopie, EOS-ASX). Jeder Claim gegen die Belegstelle im Original abgeglichen; alle 37 required_full_review_ids und alle 54 Netzwerkkanten mit A geprüft. Auch die 37 B-Claims wurden im gemeinsamen Quellenabruf vollständig gegengelesen (keine nur nicht-einzeln-geprüften Restclaims).",
-  "depth_decisions": "Vorschläge der Rollen übernommen; hochgestuft auf A: C-013, C-014, C-018, C-022, C-040 (Netzwerkkanten/required) und M-EXP-006 (trägt Matrix-Beobachtung rheinmetall/industrial_capacity). Ergebnis: 143 A, 37 B.",
+  "depth_decisions": "Vorschläge der Rollen übernommen; hochgestuft auf A: C-013, C-014, C-018, C-022, C-040 (Netzwerkkanten/required) und M-EXP-006 (trägt Matrix-Beobachtung rheinmetall/industrial_capacity). Ergebnis: 143 A, 37 B. Korrekturrunde 1: T-13 neu (A) → 144 A, 37 B.",
   "targeted_additional_checks": [
    "Personen-Aktualität: WebSearch 'Roman Köhne Rheinmetall Air Defence CEO Oktober 2026' – keine widersprechenden Meldungen; WOZ 01.10.2026 nennt Dürr 'scheidender CEO' (konsistent).",
    "Bundeswehr-Skyranger-Zahlen: WebSearch nach abgeschlossenem Großauftrag 2026 – kein unterzeichneter Folgevertrag gefunden; Bundeswehr-Zahlen in Claims konsistent (1 Prototyp + 18 Serie = 19)."
@@ -474,13 +453,6 @@
  },
  "non_blocking_hints": [
   {
-   "owner": "context",
-   "claim_ids": [
-    "T-07"
-   ],
-   "text": "GB 2025 S.91 nennt Air-Defence-Pro-forma-Umsatz 2025 = 769 Mio. EUR (Marge 17,4 %) und Prognose 2026 0,9–1,0 Mrd. EUR; Unsicherheit von T-07 und gap_annual_report ('GB nicht geöffnet', 'kein separater Wert') sind durch das im Lauf geöffnete Cluster-Dokument überholt. Bei Bedarf als neuer Claim (dann Basis-Review)."
-  },
-  {
    "owner": "cluster",
    "claim_ids": [
     "C-017"
@@ -517,7 +489,7 @@
    "text": "Datierung saudischer KM-SAM-Deal: AGSI '2024' vs. MoD 'Nov 2023 (Offenlegung Feb 2024)'."
   }
  ],
- "release_readiness": "Kernbasis tragfähig: alle 143 A-Claims (inkl. 37 Netzwerk-Pflichtclaims, Personenidentität/aktuelle Rolle H-01–H-05, Kennzahlen T-08/T-09/P-AD-03, Golf-Präsenz/Beteiligungen, Golfmarkt-Kernfakten) inhaltlich geprüft; 4 Claims Korrektur (T-05, T-27, C-024, M-SAAB-001) sowie 5 module_views-Korrekturen. Status 'teilweise': Interpretation darf geprüfte unveränderte A-Fakten nutzen, aber nicht C-024/G04, M-SAAB-001 (Matrixzelle saab/customer_status), T-05-Ertragsaussage und das Rumänien-Eventdatum, bis korrigiert und gezielt nachgeprüft. Keine finale Ausgabe vor Behebung von ME-1/ME-2.",
+ "release_readiness": "Alle 144 A-Claims inhaltlich geprüft (inkl. 37 Netzwerk-Pflichtclaims), keine offenen wesentlichen Fehler, keine Korrektur-Claims. Freigabe der Faktenbasis für Interpretation; die nicht blockierenden Hinweise (Skynex 160/182 Mio., X-TAR3D 50/55 km, E37/E34-Einschränkungen, Quellen-Duplikate nicht als Zweitbeleg) bleiben bei der Bewertung zu beachten.",
  "claims": [
   {
    "id": "T-01",
@@ -546,11 +518,8 @@
   {
    "id": "T-05",
    "depth": "A",
-   "status": "Korrektur",
-   "evidence_review": "Jahresabschluss 2025 PDF S.26 und S.9 geöffnet; Anteil/EK/Ergebnis korrekt, Beteiligungsertrags-Aussage fehlerhaft.",
-   "reason": "Jahresabschluss 2025 PDF S.9: „Die Erträge aus Beteiligungen betreffen im Wesentlichen mit 107.439 TEUR … die Rheinmetall Air Defence AG, mit 100.000 TEUR … die Rheinmetall Expal Munitions S.A.U. sowie mit 34.986 TEUR … die Rheinmetall MAN Military Vehicles GmbH.“ Die Aussage, die Beteiligungserträge stammten „im Wesentlichen von dieser Gesellschaft“, ist unzutreffend; RAD AG ist nur der größte von drei genannten Einzelposten. Anteil 100 %, EK 386.181 und Ergebnis 117.135 TEUR (S.26) sind korrekt.",
-   "action": "Satzteil ersetzen: „107.439 TEUR der Beteiligungserträge 2025 entfielen auf die RAD AG (größter Einzelposten; daneben Expal 100.000 TEUR, RMMV 34.986 TEUR).“ Paket neu erzeugen; cf_rad_ag-Zuordnung bleibt.",
-   "owner": "context"
+   "status": "geprüft",
+   "evidence_review": "Korrekturrunde 1: neuer Wortlaut gegen JA 2025 PDF S.9/S.26 geprüft – 107.439 TEUR RAD AG, 100.000 TEUR Expal, 34.986 TEUR RMMV wörtlich bestätigt; Fehler behoben."
   },
   {
    "id": "T-06",
@@ -562,7 +531,13 @@
    "id": "T-07",
    "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Bilanz-PM: ES 2.504 Mio. (+45 %), Nomination 14.235 Mio., OE 366 Mio., Skyranger/Skynex-Beiträge bestätigt. Hinweis: GB 2025 S.91 nennt Air-Defence-Pro-forma-Umsatz 2025 = 769 Mio. EUR; Unsicherheitstext „kein separater Wert gefunden“ veraltet (nicht blockierend)."
+   "evidence_review": "Korrekturrunde 1: nur Unsicherheitstext geändert (Verweis T-13); Inhalt unverändert bestätigt (Bilanz-PM 11.03.2026)."
+  },
+  {
+   "id": "T-13",
+   "depth": "A",
+   "status": "geprüft",
+   "evidence_review": "Neu (Korrekturrunde 1): GB 2025 EN PDF S.91 (Report on expected developments) wörtlich bestätigt – Pro-forma-Umsatz Air Defence 2025 769 Mio. EUR, Marge 17,4 %, Prognose 2026 0,9–1,0 Mrd. EUR, ~19 %. Unsicherheit (Stand März 2026, Pro forma) zutreffend."
   },
   {
    "id": "T-08",
@@ -639,11 +614,8 @@
   {
    "id": "T-27",
    "depth": "B",
-   "status": "Korrektur",
-   "evidence_review": "PM 24.06.2026 geöffnet; Inhalt korrekt, Ereignisdatum fehlerhaft.",
-   "reason": "Inhalt (24 Skyranger 35, 7 Skynex, 2 Millennium Guns, 5,7 Mrd.) im PM 24.06.2026 bestätigt. event_date 2026-06-24 und Timeline-Event ev_2026_romania (Datum 2026-06-24, Label „Rumänien bestellt“) verwenden das Veröffentlichungsdatum der Detail-PM; die Vergabe erfolgte laut H1-Bericht S.10 und PM 02.06.2026 am 29.05.2026.",
-   "action": "event_date auf 2026-05-29 setzen (Quelle S-cede873d57924937/H1-Bericht ergänzen) oder Event als „Meldung 24.06.2026“ kennzeichnen; ev_2026_romania entsprechend anpassen.",
-   "owner": "context"
+   "status": "geprüft",
+   "evidence_review": "Korrekturrunde 1: PM 24.06.2026 (Umfang) und H1-Bericht PDF S.10 (Vergabe 29.05.2026, SAFE) geprüft; event_date 2026-05-29 korrekt; Fehler behoben."
   },
   {
    "id": "T-28",
@@ -1182,11 +1154,8 @@
   {
    "id": "C-024",
    "depth": "A",
-   "status": "Korrektur",
-   "evidence_review": "hib 491/2026, Heuking 26.03.2026, BAFA-Seite AGG 48 geöffnet; Ursprungsangaben korrekt, Status zum Stichtag überholt.",
-   "reason": "hib 491/2026 und Heuking-Beitrag bestätigen Inkrafttreten 20.03.2026, Länder, Teil I Abschnitt A, keine Meldungen März/April. Die BAFA-Seite (S-c99327dbed7f6de5, M-EXP-002) belegt jedoch die Verlängerung per Bekanntgabe vom 10.09.2026 bis 15.09.2027. Claim-Status „befristet in Kraft (bis 15.09.2026)“, Unsicherheit „Status nach 15.09.2026 nicht belegt“ sowie Lücke G04 („Exporterleichterung zum Stichtag nicht als gültig bestätigt“) und Coverage-Eintrag widersprechen damit dem geprüften Marktfakt zum Stichtag.",
-   "action": "event_status auf „in Kraft; verlängert bis 15.09.2027 (Bekanntgabe 10.09.2026)“ ändern, M-EXP-002 per reuse_claim_ids/depends_on referenzieren (BAFA-Quelle ergänzen), Unsicherheit und gap G04/Coverage aktualisieren; Nutzung durch Rheinmetall bleibt offene Lücke.",
-   "owner": "cluster"
+   "status": "geprüft",
+   "evidence_review": "Korrekturrunde 1: hib 491/2026, Heuking 26.03.2026 und BAFA-Seite AGG 48 (Bekanntgabe 10.09.2026, gültig bis 15.09.2027) geprüft; event_status/Unsicherheit, depends_on M-EXP-002, G04 und Coverage konsistent; Widerspruch behoben."
   },
   {
    "id": "C-025",
@@ -1545,11 +1514,8 @@
   {
    "id": "M-SAAB-001",
    "depth": "A",
-   "status": "Korrektur",
-   "evidence_review": "Saab-Produktseite RBS 70 NG geöffnet; Nutzerangabe fehlerhaft zugeordnet.",
-   "reason": "Saab-Produktseite RBS 70 NG: „During 2019, the Brazilian Army conducted their first ever RBS 70 NG firings. The RBS 70 has been in service with the Brazilian Army since 2014.“ Der Claim und die Matrix-Beobachtung saab/customer_status („RBS 70 NG beim brasilianischen Heer seit 2014“) verwechseln RBS 70 und RBS 70 NG. Reichweite >9.000 m, Höhe 0–5.000 m, Laserleitstrahl, Fahrzeug-/Netzwerkfähigkeit sind korrekt.",
-   "action": "Claim-Text korrigieren: „Saab nennt das brasilianische Heer als RBS-70-Nutzer seit 2014; erste RBS-70-NG-Schießen 2019“; Beobachtung saab/customer_status entsprechend anpassen.",
-   "owner": "market"
+   "status": "geprüft",
+   "evidence_review": "Korrekturrunde 1: Saab-Produktseite geprüft – RBS 70 seit 2014 beim brasilianischen Heer, erste RBS-70-NG-Schießen 2019; Claim und Beobachtung saab/customer_status korrekt; Fehler behoben."
   },
   {
    "id": "M-SAAB-002",
@@ -1597,7 +1563,7 @@
    "id": "M-MBDA-003",
    "depth": "A",
    "status": "geprüft",
-   "evidence_review": "Breaking Defense 27.03.2026: 5 Mrd. EUR/5 Jahre, 2.800 Einstellungen, Mistral 4-fach ggü. 2022, +40 % 2026, Nahost-Nachfrage nach MICA bestätigt. Hinweis: Quelle bezeichnet MICA hier als „multi-mission air-to-air missile system“ – nicht als VL-MICA-Bodenflugabwehrbeleg verwenden."
+   "evidence_review": "Korrekturrunde 1: Breaking Defense 27.03.2026 geprüft; MICA als „multi-mission air-to-air missile system“ korrekt präzisiert; Claim aus mbda/gulf_access entfernt (dort nur M-MBDA-002), industrial_capacity unverändert zutreffend."
   },
   {
    "id": "M-THA-001",
@@ -1611,5 +1577,35 @@
    "status": "geprüft",
    "evidence_review": "Airforce Technology 03.03.2025 (per WebFetch; curl 403): >5.000 LMM, 1,16 Mrd. GBP + bis 500 Mio., Verdreifachung Belfast, 200 Stellen, LMM in UA-Luftverteidigung bestätigt."
   }
- ]
+ ],
+ "correction_round_1": {
+  "changed_checked": [
+   "T-05",
+   "T-07",
+   "T-13",
+   "T-27",
+   "C-024",
+   "M-SAAB-001",
+   "M-MBDA-003"
+  ],
+  "module_views_checked": [
+   "context.company_facts.cf_ad2025_proforma (T-13) gedeckt",
+   "context.events.ev_2026_romania Datum 2026-05-29, Label „vergibt Auftrag (laut Hersteller)“ gedeckt",
+   "portfolio.products.drone_defence_toolbox nur P-CUAS-01; P-CUAS-05 im Topic air_defence – korrekt",
+   "cluster.topics Sektion „Nicht benannte Kunden“ mit C-026 – korrekt",
+   "cluster.gaps.G04 und Coverage Exportrahmen – konsistent mit M-EXP-002",
+   "market.observations saab/customer_status korrigiert; mbda/gulf_access nur M-MBDA-002 – korrekt"
+  ],
+  "resolved": [
+   "ME-1",
+   "ME-2",
+   "T-05",
+   "T-27",
+   "Produktzuordnung P-CUAS-05",
+   "Sektion C-026",
+   "Beobachtung mbda/gulf_access"
+  ],
+  "reused": "Alle übrigen 174 Claims unverändert (Stichprobe Fingerprints T-01, C-002, M-GCC-001 identisch); Urteile aus Basis-Review desselben Laufes/Stichtags übernommen. Netzwerk unverändert, Kantenprüfung übernommen.",
+  "formal_check": "check-review-data.py auf neuem Paket Exit 0; facts-validation errors=[]; 181 Claims."
+ }
 }
