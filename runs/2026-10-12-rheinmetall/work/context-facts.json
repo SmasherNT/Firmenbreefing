@@ -106,12 +106,12 @@
   },
   {
    "id": "T-05",
-   "statement": "Laut Anteilsbesitzliste im Jahresabschluss 2025 hält die Rheinmetall AG direkt 100 % an der Rheinmetall Air Defence AG, Zürich (Eigenkapital 386.181 TEUR, Jahresergebnis 117.135 TEUR); die Beteiligungserträge der Rheinmetall AG 2025 stammen mit 107.439 TEUR im Wesentlichen von dieser Gesellschaft.",
+   "statement": "Laut Anteilsbesitzliste im Jahresabschluss 2025 hält die Rheinmetall AG direkt 100 % an der Rheinmetall Air Defence AG, Zürich (Eigenkapital 386.181 TEUR, Jahresergebnis 117.135 TEUR); unter den Beteiligungserträgen der Rheinmetall AG 2025 entfallen 107.439 TEUR auf diese Gesellschaft, daneben u. a. 100.000 TEUR auf Rheinmetall Expal Munitions und 34.986 TEUR auf Rheinmetall MAN Military Vehicles.",
    "kind": "Fakt",
    "source_ids": [
     "S-3ace92799f3780ea"
    ],
-   "evidence": "Paraphrase: Anteilsbesitzliste 2025: Rheinmetall Air Defence AG, Zürich/Schweiz – direkter Anteil 100 %, Eigenkapital 386.181 TEUR, Jahresergebnis 117.135 TEUR. Erträge aus Beteiligungen betreffen im Wesentlichen mit 107.439 TEUR (Vorjahr 153.616 TEUR) die Rheinmetall Air Defence AG.",
+   "evidence": "Paraphrase: Anteilsbesitzliste 2025: Rheinmetall Air Defence AG, Zürich/Schweiz – direkter Anteil 100 %, Eigenkapital 386.181 TEUR, Jahresergebnis 117.135 TEUR. Erträge aus Beteiligungen betreffen im Wesentlichen mit 107.439 TEUR (Vorjahr 153.616 TEUR) die Rheinmetall Air Defence AG, mit 100.000 TEUR (Vorjahr 0) die Rheinmetall Expal Munitions S.A.U. sowie mit 34.986 TEUR (Vorjahr 20.910 TEUR) die Rheinmetall MAN Military Vehicles GmbH.",
    "location": "PDF S. 26 (Anhang, Sonstige Angaben, Anteilsbesitzliste 2025) und PDF S. 9 (Erläuterungen zur GuV, Beteiligungserträge)",
    "uncertainty": "Einzelabschluss-/Landeswährungswerte der Tochter laut Anteilsbesitzliste; Bewertungsgrundlage nicht gesondert geprüft.",
    "proposed_depth": "A",
@@ -139,9 +139,22 @@
    ],
    "evidence": "Paraphrase: Electronic Solutions, mit Produkten u. a. „der Flugabwehr“, steigerte den Umsatz 2025 auf 2.504 MioEUR (+45 %); Nomination 14.235 MioEUR; operatives Ergebnis 366 MioEUR; Umsatzbeiträge u. a. aus Lieferung weiterer Skyranger- und Skynex-Systeme an europäische Kunden.",
    "location": "Abschnitt Electronic Solutions",
-   "uncertainty": "Für 2025 kein separat veröffentlichter Air-Defence-Segmentwert gefunden; Wert umfasst auch Digitalisierung/Soldatensysteme.",
+   "uncertainty": "Wert umfasst auch Digitalisierung/Soldatensysteme; Air-Defence-Pro-forma-Wert 2025 siehe T-13.",
    "proposed_depth": "A",
    "depth_reason": "Historische Kennzahl des Flugabwehrgeschäfts"
+  },
+  {
+   "id": "T-13",
+   "statement": "Laut Geschäftsbericht 2025 betrug der Pro-forma-Umsatz des Segments Air Defence 2025 769 Mio. EUR (Pro-forma-Marge 17,4 %); für 2026 erwartete Rheinmetall dort einen Umsatz von 0,9 bis 1,0 Mrd. EUR bei einer operativen Marge von rund 19 %.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-a3c9838c6400c810"
+   ],
+   "evidence": "Auszug: „a significant increase in sales to a range of €0.9 billion to €1.0 billion in fiscal 2026 (pro forma sales Air Defence previous year: €769 million). The operating result margin is expected at around 19% (pro forma operating result margin segment previous year: 17.4%).“",
+   "location": "S. 91, Combined Management Report › Report on expected developments",
+   "uncertainty": "Pro-forma-Wert der neuen Segmentstruktur; Prognose mit Stand März 2026 (vor Anpassung der Konzernprognose im August 2026).",
+   "proposed_depth": "A",
+   "depth_reason": "Kernkennzahl Flugabwehr 2025/Prognose 2026"
   },
   {
    "id": "T-08",
@@ -366,17 +379,32 @@
   },
   {
    "id": "T-27",
-   "statement": "Laut Rheinmetall hat Rumänien 24 Skyranger-35-Systeme (auf Lynx KF41) bestellt, als Teil eines Großauftrags über 5,7 Mrd. EUR, der zudem sieben Skynex-Systeme und zwei Millennium Guns umfasst.",
+   "statement": "Laut Rheinmetall hat Rumänien 24 Skyranger-35-Systeme (auf Lynx KF41) bestellt, als Teil eines am 29.05.2026 vergebenen Großauftrags über 5,7 Mrd. EUR (EU-Programm SAFE), der zudem sieben Skynex-Systeme und zwei Millennium Guns umfasst.",
    "kind": "Herstellerangabe",
    "source_ids": [
-    "S-6bdb338d23c29e11"
+    "S-6bdb338d23c29e11",
+    "S-a57c168b042d9b28"
    ],
-   "evidence": "Auszug: „This contract is part of a historic major order worth €5.7 billion … and includes not only 24 Skyranger 35 systems, but also seven Skynex systems and two Millennium Guns“.",
-   "location": "Erster Absatz",
-   "uncertainty": "Vertragsdatum nicht genannt; Gesamtauftrag bereits am 02.06.2026 gemeldet.",
+   "evidence": "Auszug (S-6bdb338d23c29e11): „This contract is part of a historic major order worth €5.7 billion … and includes not only 24 Skyranger 35 systems, but also seven Skynex systems and two Millennium Guns“. | Auszug (S-a57c168b042d9b28): „The contract package was awarded on 29 May 2026 by the Directorate General for Armaments and falls under the European Union’s Security Action for Europe (SAFE) programme.“",
+   "location": "S-6bdb338d23c29e11: Erster Absatz | S-a57c168b042d9b28: S. 10, Abschnitt Lynx combat vehicles, vessels and air defence systems",
+   "evidence_items": [
+    {
+     "source_id": "S-6bdb338d23c29e11",
+     "mode": "Auszug",
+     "text": "„This contract is part of a historic major order worth €5.7 billion … and includes not only 24 Skyranger 35 systems, but also seven Skynex systems and two Millennium Guns“.",
+     "location": "Erster Absatz"
+    },
+    {
+     "source_id": "S-a57c168b042d9b28",
+     "mode": "Auszug",
+     "text": "„The contract package was awarded on 29 May 2026 by the Directorate General for Armaments and falls under the European Union’s Security Action for Europe (SAFE) programme.“",
+     "location": "S. 10, Abschnitt Lynx combat vehicles, vessels and air defence systems"
+    }
+   ],
+   "uncertainty": "Ereignisdatum = Vergabe 29.05.2026 laut Halbjahresbericht; Pressemitteilung zum Flugabwehranteil vom 24.06.2026.",
    "proposed_depth": "B",
    "depth_reason": "Auftragsereignis",
-   "event_date": "2026-06-24",
+   "event_date": "2026-05-29",
    "event_status": "beauftragt (laut Hersteller)"
   },
   {
@@ -705,6 +733,30 @@
    "published_date": "2026-03-21",
    "accessed_date": "2026-10-12",
    "source_kind": "Sekundärquelle (Republikation eines Euractiv-Artikels; Wiedergabe eines CNBC-Interviews)"
+  },
+  {
+   "id": "S-a3c9838c6400c810",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall AG – Annual Report 2025 (englische, unverbindliche Übersetzung; Datei EQ-E-01)",
+   "url": "https://irpages2.eqs.com/download/companies/rheinmetall/Annual%20Reports/DE0007030009-JA-2025-EQ-E-01.pdf",
+   "published_date": "2026-03-11",
+   "accessed_date": "2026-10-12",
+   "source_kind": "Originalbericht",
+   "report_year": 2025,
+   "section": "u. a. Strategie, Segmente, Prognose, Anhang (40)–(42) Anteilsbesitz",
+   "page": "PDF-Seite = gedruckte Seite (geprüft S. 15, 24, 27, 31, 38–39, 50, 65, 91, 259, 262–266)"
+  },
+  {
+   "id": "S-a57c168b042d9b28",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Half-Yearly Financial Report 2026 (30. Juni 2026)",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q2/Rheinmetall-Half-Yearly-Financial-Report-2026.pdf",
+   "published_date": "2026-08-06",
+   "accessed_date": "2026-10-12",
+   "source_kind": "Originalbericht",
+   "report_year": 2026,
+   "section": "Zwischenlagebericht und Anhang (Segmente, Ereignisse nach Stichtag)",
+   "page": "PDF-Seite = gedruckte Seite (geprüft S. 7, 9, 10, 17, 38, 43)"
   }
  ],
  "gaps": [
@@ -736,7 +788,7 @@
   {
    "id": "gap_annual_report",
    "topic": "Firmenbasis",
-   "text": "Konzern-Geschäftsbericht 2025 (PDF) nicht direkt geöffnet (IR-Seite per JavaScript); genutzt wurden Bilanzpressemitteilung vom 11.03.2026 und Einzelabschluss der Rheinmetall AG 2025. Separater Air-Defence-Wert für Gesamtjahr 2025 nicht gefunden; Mitarbeiterzahl der Division nicht ermittelt."
+   "text": "Konzern-Geschäftsbericht 2025 (EN-Fassung) nach Hinweis aus dem Basis-Review geöffnet und für den Air-Defence-Pro-forma-Wert genutzt (S. 91, T-13); daneben Bilanzpressemitteilung vom 11.03.2026 und Einzelabschluss der Rheinmetall AG 2025. Mitarbeiterzahl der Division nicht ermittelt."
   },
   {
    "id": "gap_gulf_primary",
@@ -805,6 +857,8 @@
     "S-170bd0a173a148bf",
     "S-c6f02c948a96ecdf",
     "S-3ace92799f3780ea",
+    "S-a3c9838c6400c810",
+    "S-a57c168b042d9b28",
     "S-e687ba029a397767",
     "S-001a4ac74ab4feec",
     "S-18ce19a1fbbec148",
@@ -817,9 +871,11 @@
   {
    "topic": "Firmenbasis: Konzern-Geschäftsbericht 2025 PDF",
    "search_terms": "Rheinmetall Annual Report 2025 pdf; ir.rheinmetall.com financial reports",
-   "opened_source_ids": [],
-   "finding": "IR-Seite JavaScript-basiert, PDF-Link nicht ermittelt.",
-   "status": "nicht zugänglich"
+   "opened_source_ids": [
+    "S-a3c9838c6400c810"
+   ],
+   "finding": "IR-Seite JavaScript-basiert; EN-PDF später über EQS-Downloadlink geöffnet (S-a3c9838c6400c810).",
+   "status": "geprüft mit Beleg"
   },
   {
    "topic": "Events Flugabwehr 2024–2026",
@@ -908,6 +964,13 @@
    ]
   },
   {
+   "id": "cf_ad2025_proforma",
+   "label": "Air Defence 2025 pro forma 769 Mio. EUR Umsatz; Prognose 2026 0,9–1,0 Mrd. EUR",
+   "claim_ids": [
+    "T-13"
+   ]
+  },
+  {
    "id": "cf_h1_2026",
    "label": "1. Halbjahr 2026: Konzernumsatz 5.227 Mio. EUR, Backlog 80,5 Mrd. EUR, Prognose angepasst",
    "claim_ids": [
@@ -980,8 +1043,8 @@
   },
   {
    "id": "ev_2026_romania",
-   "date": "2026-06-24",
-   "label": "Rumänien bestellt 24 Skyranger 35, 7 Skynex, 2 Millennium Guns (laut Hersteller)",
+   "date": "2026-05-29",
+   "label": "Rumänien vergibt Auftrag: 24 Skyranger 35, 7 Skynex, 2 Millennium Guns (laut Hersteller)",
    "claim_ids": [
     "T-27"
    ]
@@ -1198,6 +1261,7 @@
     "T-03",
     "T-04",
     "T-07",
+    "T-13",
     "T-09",
     "T-10"
    ]

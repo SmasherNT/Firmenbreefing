@@ -96,12 +96,12 @@
     },
     {
       "id": "T-05",
-      "statement": "Laut Anteilsbesitzliste im Jahresabschluss 2025 hält die Rheinmetall AG direkt 100 % an der Rheinmetall Air Defence AG, Zürich (Eigenkapital 386.181 TEUR, Jahresergebnis 117.135 TEUR); die Beteiligungserträge der Rheinmetall AG 2025 stammen mit 107.439 TEUR im Wesentlichen von dieser Gesellschaft.",
+      "statement": "Laut Anteilsbesitzliste im Jahresabschluss 2025 hält die Rheinmetall AG direkt 100 % an der Rheinmetall Air Defence AG, Zürich (Eigenkapital 386.181 TEUR, Jahresergebnis 117.135 TEUR); unter den Beteiligungserträgen der Rheinmetall AG 2025 entfallen 107.439 TEUR auf diese Gesellschaft, daneben u. a. 100.000 TEUR auf Rheinmetall Expal Munitions und 34.986 TEUR auf Rheinmetall MAN Military Vehicles.",
       "kind": "Fakt",
       "source_ids": [
         "S-3ace92799f3780ea"
       ],
-      "evidence": "Paraphrase: Anteilsbesitzliste 2025: Rheinmetall Air Defence AG, Zürich/Schweiz – direkter Anteil 100 %, Eigenkapital 386.181 TEUR, Jahresergebnis 117.135 TEUR. Erträge aus Beteiligungen betreffen im Wesentlichen mit 107.439 TEUR (Vorjahr 153.616 TEUR) die Rheinmetall Air Defence AG.",
+      "evidence": "Paraphrase: Anteilsbesitzliste 2025: Rheinmetall Air Defence AG, Zürich/Schweiz – direkter Anteil 100 %, Eigenkapital 386.181 TEUR, Jahresergebnis 117.135 TEUR. Erträge aus Beteiligungen betreffen im Wesentlichen mit 107.439 TEUR (Vorjahr 153.616 TEUR) die Rheinmetall Air Defence AG, mit 100.000 TEUR (Vorjahr 0) die Rheinmetall Expal Munitions S.A.U. sowie mit 34.986 TEUR (Vorjahr 20.910 TEUR) die Rheinmetall MAN Military Vehicles GmbH.",
       "location": "PDF S. 26 (Anhang, Sonstige Angaben, Anteilsbesitzliste 2025) und PDF S. 9 (Erläuterungen zur GuV, Beteiligungserträge)",
       "uncertainty": "Einzelabschluss-/Landeswährungswerte der Tochter laut Anteilsbesitzliste; Bewertungsgrundlage nicht gesondert geprüft.",
       "proposed_depth": "A",
@@ -129,9 +129,22 @@
       ],
       "evidence": "Paraphrase: Electronic Solutions, mit Produkten u. a. „der Flugabwehr“, steigerte den Umsatz 2025 auf 2.504 MioEUR (+45 %); Nomination 14.235 MioEUR; operatives Ergebnis 366 MioEUR; Umsatzbeiträge u. a. aus Lieferung weiterer Skyranger- und Skynex-Systeme an europäische Kunden.",
       "location": "Abschnitt Electronic Solutions",
-      "uncertainty": "Für 2025 kein separat veröffentlichter Air-Defence-Segmentwert gefunden; Wert umfasst auch Digitalisierung/Soldatensysteme.",
+      "uncertainty": "Wert umfasst auch Digitalisierung/Soldatensysteme; Air-Defence-Pro-forma-Wert 2025 siehe T-13.",
       "proposed_depth": "A",
       "depth_reason": "Historische Kennzahl des Flugabwehrgeschäfts"
+    },
+    {
+      "id": "T-13",
+      "statement": "Laut Geschäftsbericht 2025 betrug der Pro-forma-Umsatz des Segments Air Defence 2025 769 Mio. EUR (Pro-forma-Marge 17,4 %); für 2026 erwartete Rheinmetall dort einen Umsatz von 0,9 bis 1,0 Mrd. EUR bei einer operativen Marge von rund 19 %.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a3c9838c6400c810"
+      ],
+      "evidence": "Auszug: „a significant increase in sales to a range of €0.9 billion to €1.0 billion in fiscal 2026 (pro forma sales Air Defence previous year: €769 million). The operating result margin is expected at around 19% (pro forma operating result margin segment previous year: 17.4%).“",
+      "location": "S. 91, Combined Management Report › Report on expected developments",
+      "uncertainty": "Pro-forma-Wert der neuen Segmentstruktur; Prognose mit Stand März 2026 (vor Anpassung der Konzernprognose im August 2026).",
+      "proposed_depth": "A",
+      "depth_reason": "Kernkennzahl Flugabwehr 2025/Prognose 2026"
     },
     {
       "id": "T-08",
@@ -356,17 +369,32 @@
     },
     {
       "id": "T-27",
-      "statement": "Laut Rheinmetall hat Rumänien 24 Skyranger-35-Systeme (auf Lynx KF41) bestellt, als Teil eines Großauftrags über 5,7 Mrd. EUR, der zudem sieben Skynex-Systeme und zwei Millennium Guns umfasst.",
+      "statement": "Laut Rheinmetall hat Rumänien 24 Skyranger-35-Systeme (auf Lynx KF41) bestellt, als Teil eines am 29.05.2026 vergebenen Großauftrags über 5,7 Mrd. EUR (EU-Programm SAFE), der zudem sieben Skynex-Systeme und zwei Millennium Guns umfasst.",
       "kind": "Herstellerangabe",
       "source_ids": [
-        "S-6bdb338d23c29e11"
+        "S-6bdb338d23c29e11",
+        "S-a57c168b042d9b28"
       ],
-      "evidence": "Auszug: „This contract is part of a historic major order worth €5.7 billion … and includes not only 24 Skyranger 35 systems, but also seven Skynex systems and two Millennium Guns“.",
-      "location": "Erster Absatz",
-      "uncertainty": "Vertragsdatum nicht genannt; Gesamtauftrag bereits am 02.06.2026 gemeldet.",
+      "evidence": "Auszug (S-6bdb338d23c29e11): „This contract is part of a historic major order worth €5.7 billion … and includes not only 24 Skyranger 35 systems, but also seven Skynex systems and two Millennium Guns“. | Auszug (S-a57c168b042d9b28): „The contract package was awarded on 29 May 2026 by the Directorate General for Armaments and falls under the European Union’s Security Action for Europe (SAFE) programme.“",
+      "location": "S-6bdb338d23c29e11: Erster Absatz | S-a57c168b042d9b28: S. 10, Abschnitt Lynx combat vehicles, vessels and air defence systems",
+      "evidence_items": [
+        {
+          "source_id": "S-6bdb338d23c29e11",
+          "mode": "Auszug",
+          "text": "„This contract is part of a historic major order worth €5.7 billion … and includes not only 24 Skyranger 35 systems, but also seven Skynex systems and two Millennium Guns“.",
+          "location": "Erster Absatz"
+        },
+        {
+          "source_id": "S-a57c168b042d9b28",
+          "mode": "Auszug",
+          "text": "„The contract package was awarded on 29 May 2026 by the Directorate General for Armaments and falls under the European Union’s Security Action for Europe (SAFE) programme.“",
+          "location": "S. 10, Abschnitt Lynx combat vehicles, vessels and air defence systems"
+        }
+      ],
+      "uncertainty": "Ereignisdatum = Vergabe 29.05.2026 laut Halbjahresbericht; Pressemitteilung zum Flugabwehranteil vom 24.06.2026.",
       "proposed_depth": "B",
       "depth_reason": "Auftragsereignis",
-      "event_date": "2026-06-24",
+      "event_date": "2026-05-29",
       "event_status": "beauftragt (laut Hersteller)"
     },
     {
@@ -2020,15 +2048,16 @@
     },
     {
       "id": "C-024",
-      "statement": "Laut Bundestag (hib) und einem Kanzlei-Fachbeitrag trat die Allgemeine Genehmigung Nr. 48 (AGG 48) am 20. März 2026 in Kraft (Neubekanntgabe mit Wirkung zum 1. April 2026); sie erleichtert Ausfuhren von Rüstungsgütern (Teil I Abschnitt A der Ausfuhrliste) zur Luft- und maritimen Verteidigung nach Bahrain, Katar, Kuwait, Oman, Saudi-Arabien, in die VAE und die Ukraine, war bis 15. September 2026 befristet; für März und April 2026 lagen laut Bundesregierung keine Nutzungsmeldungen vor.",
+      "statement": "Laut Bundestag (hib) und einem Kanzlei-Fachbeitrag trat die Allgemeine Genehmigung Nr. 48 (AGG 48) am 20. März 2026 in Kraft (Neubekanntgabe mit Wirkung zum 1. April 2026); sie erleichtert Ausfuhren von Rüstungsgütern (Teil I Abschnitt A der Ausfuhrliste) zur Luft- und maritimen Verteidigung nach Bahrain, Katar, Kuwait, Oman, Saudi-Arabien, in die VAE und die Ukraine; ursprünglich bis 15. September 2026 befristet, wurde sie laut BAFA mit Bekanntgabe vom 10. September 2026 bis 15. September 2027 verlängert (vgl. M-EXP-002); für März und April 2026 lagen laut Bundesregierung keine Nutzungsmeldungen vor.",
       "kind": "Fakt",
       "source_ids": [
         "S-20d85ac40b61c709",
-        "S-f0cdb46723f6b4ca"
+        "S-f0cdb46723f6b4ca",
+        "S-c99327dbed7f6de5"
       ],
-      "evidence": "Paraphrase: AGG Nr. 48 trat am 20. März 2026 in Kraft und wurde mit Wirkung zum 1. April 2026 neu bekannt gegeben; Länder Bahrain, Katar, Kuwait, Oman, Saudi-Arabien, VAE, Ukraine; für März/April 2026 bisher keine Meldungen über Ausfuhren; Meldewerte bilden Genehmigungsgeschehen nicht vollständig ab. | Paraphrase: AGG 48 seit 20. März 2026 in Kraft, für sechs Monate bis 15. September 2026; Güter aus Teil I Abschnitt A der Ausfuhrliste zur Verwendung für Luft- und maritime Verteidigung; Empfänger Streitkräfte; Registrierung/monatliche Meldung über ELAN-K2; Kriegswaffen ohne KWKG-Genehmigung ausgeschlossen.",
-      "location": "hib 491/2026 vom 16.06.2026 (Antwort 21/6308 auf Kleine Anfrage 21/5907) | Fachbeitrag vom 26.03.2026",
-      "uncertainty": "Status nach dem 15.09.2026 (Verlängerung/Auslaufen) nicht belegt; keine Angabe, ob Rheinmetall die AGG nutzt; BMWE-Pressemitteilung nicht zugänglich (Browserprüfung).",
+      "evidence": "Paraphrase: AGG Nr. 48 trat am 20. März 2026 in Kraft und wurde mit Wirkung zum 1. April 2026 neu bekannt gegeben; Länder Bahrain, Katar, Kuwait, Oman, Saudi-Arabien, VAE, Ukraine; für März/April 2026 bisher keine Meldungen über Ausfuhren; Meldewerte bilden Genehmigungsgeschehen nicht vollständig ab. | Paraphrase: AGG 48 seit 20. März 2026 in Kraft, für sechs Monate bis 15. September 2026; Güter aus Teil I Abschnitt A der Ausfuhrliste zur Verwendung für Luft- und maritime Verteidigung; Empfänger Streitkräfte; Registrierung/monatliche Meldung über ELAN-K2; Kriegswaffen ohne KWKG-Genehmigung ausgeschlossen. | Auszug: Mit Bekanntgabe vom 10. September 2026 wird die AGG Nr. 48 verlängert. Sie ist nunmehr zeitlich befristet bis zum 15. September 2027 gültig.",
+      "location": "hib 491/2026 vom 16.06.2026 (Antwort 21/6308 auf Kleine Anfrage 21/5907) | Fachbeitrag vom 26.03.2026 | BAFA-Seite Allgemeine Genehmigungen, Eintrag AGG Nr. 48",
+      "uncertainty": "Inhalt des neu eingefügten Punkts 6.6 (Abschnitt II) nicht geprüft; keine Angabe, ob Rheinmetall die AGG nutzt; Nutzungsmeldungen nach April 2026 nicht geprüft; BMWE-Pressemitteilung nicht zugänglich (Browserprüfung).",
       "proposed_depth": "A",
       "depth_reason": "Netzwerkkante/wesentliche Strukturaussage",
       "evidence_items": [
@@ -2043,10 +2072,19 @@
           "mode": "Paraphrase",
           "text": "AGG 48 seit 20. März 2026 in Kraft, für sechs Monate bis 15. September 2026; Güter aus Teil I Abschnitt A der Ausfuhrliste zur Verwendung für Luft- und maritime Verteidigung; Empfänger Streitkräfte; Registrierung/monatliche Meldung über ELAN-K2; Kriegswaffen ohne KWKG-Genehmigung ausgeschlossen.",
           "location": "Fachbeitrag vom 26.03.2026"
+        },
+        {
+          "source_id": "S-c99327dbed7f6de5",
+          "mode": "Auszug",
+          "text": "Mit Bekanntgabe vom 10. September 2026 wird die AGG Nr. 48 verlängert. Sie ist nunmehr zeitlich befristet bis zum 15. September 2027 gültig.",
+          "location": "BAFA-Seite Allgemeine Genehmigungen, Eintrag AGG Nr. 48"
         }
       ],
-      "event_date": "2026-03-20",
-      "event_status": "befristet in Kraft (bis 15.09.2026)"
+      "event_date": "2026-09-10",
+      "event_status": "in Kraft, verlängert bis 15.09.2027",
+      "depends_on": [
+        "M-EXP-002"
+      ]
     },
     {
       "id": "C-025",
@@ -3222,14 +3260,14 @@
     },
     {
       "id": "M-SAAB-001",
-      "statement": "Saab beschreibt RBS 70 NG als lasergelenktes (Leitstrahl) Flugabwehrsystem mit über 9.000 m Reichweite und 0–5.000 m Höhenabdeckung, fahrzeugintegrierbar und vernetzt/fernbedienbar; als Nutzer nennt die Seite das brasilianische Heer seit 2014.",
+      "statement": "Saab beschreibt RBS 70 NG als lasergelenktes (Leitstrahl) Flugabwehrsystem mit über 9.000 m Reichweite und 0–5.000 m Höhenabdeckung, fahrzeugintegrierbar und vernetzt/fernbedienbar; laut Seite nutzt das brasilianische Heer RBS 70 seit 2014, erste RBS-70-NG-Schießen fanden dort 2019 statt.",
       "kind": "Herstellerangabe",
       "source_ids": [
         "S-126278ae64b82aa8"
       ],
-      "evidence": "Paraphrase: \"Unjammable laser guidance\"; Reichweite \"> 9000 m\", Höhe 0–5.000 m; Montage auf Fahrzeugen, vernetzter und ferngesteuerter Betrieb; brasilianisches Heer seit 2014.",
-      "location": "Produktseite RBS 70 NG, Abschnitte Key features und Specifications",
-      "uncertainty": "Produktseite ohne Datum.",
+      "evidence": "Paraphrase: \"Unjammable laser guidance\"; Reichweite \"> 9000 m\", Höhe 0–5.000 m; Montage auf Fahrzeugen, vernetzter und ferngesteuerter Betrieb; brasilianisches Heer nutzt RBS 70 seit 2014 (Schutz Olympische Spiele 2016), RBS-70-NG-Schießen 2019.",
+      "location": "Produktseite RBS 70 NG, Abschnitte Key features, Specifications und Nutzerbeispiel Brasilien",
+      "uncertainty": "Produktseite ohne Datum; Vertrags-/Lieferzeitpunkt der NG-Version für Brasilien nicht genannt.",
       "proposed_depth": "A",
       "depth_reason": "Grundlage einer Matrixbeobachtung"
     },
@@ -3349,14 +3387,14 @@
     },
     {
       "id": "M-MBDA-003",
-      "statement": "MBDA plant laut Breaking Defense 5 Mrd. EUR Investitionen über fünf Jahre und 2.800 Einstellungen; die Mistral-Produktionsfähigkeit liege beim Vierfachen von 2022, die Gesamtproduktion solle 2026 um 40 % steigen, und Nachfrage aus dem Nahen Osten treibe den MICA-Bedarf.",
+      "statement": "MBDA plant laut Breaking Defense 5 Mrd. EUR Investitionen über fünf Jahre und 2.800 Einstellungen; die Mistral-Produktionsfähigkeit liege beim Vierfachen von 2022, die Gesamtproduktion solle 2026 um 40 % steigen, und Nachfrage aus dem Nahen Osten treibe den Bedarf an MICA, dem Luft-Luft-Mehrzweckflugkörper (nicht das bodengestützte VL MICA).",
       "kind": "Fakt",
       "source_ids": [
         "S-ffd46967200270d4"
       ],
-      "evidence": "Paraphrase: 5 Mrd. EUR über fünf Jahre, 2.800 Einstellungen; Mistral-Kapazität 4-fach gegenüber 2022; Output 2026 +40 %; MICA-Nachfrage aus dem Nahen Osten.",
+      "evidence": "Paraphrase: 5 Mrd. EUR über fünf Jahre, 2.800 Einstellungen; Mistral-Kapazität 4-fach gegenüber 2022; Output 2026 +40 %; Nahost-Nachfrage nach dem Luft-Luft-Flugkörper MICA.",
       "location": "Artikel vom 27.3.2026, Absätze 1–6",
-      "uncertainty": "Unternehmensangaben in Medienwiedergabe; keine absoluten Stückzahlen.",
+      "uncertainty": "Unternehmensangaben in Medienwiedergabe; keine absoluten Stückzahlen; Nahost-Nachfrage bezieht sich auf MICA Luft-Luft, nicht auf VL MICA.",
       "proposed_depth": "A",
       "depth_reason": "Grundlage einer Matrixbeobachtung",
       "event_date": "2026-03-27",
@@ -4928,6 +4966,13 @@
           ]
         },
         {
+          "id": "cf_ad2025_proforma",
+          "label": "Air Defence 2025 pro forma 769 Mio. EUR Umsatz; Prognose 2026 0,9–1,0 Mrd. EUR",
+          "claim_ids": [
+            "T-13"
+          ]
+        },
+        {
           "id": "cf_h1_2026",
           "label": "1. Halbjahr 2026: Konzernumsatz 5.227 Mio. EUR, Backlog 80,5 Mrd. EUR, Prognose angepasst",
           "claim_ids": [
@@ -5000,8 +5045,8 @@
         },
         {
           "id": "ev_2026_romania",
-          "date": "2026-06-24",
-          "label": "Rumänien bestellt 24 Skyranger 35, 7 Skynex, 2 Millennium Guns (laut Hersteller)",
+          "date": "2026-05-29",
+          "label": "Rumänien vergibt Auftrag: 24 Skyranger 35, 7 Skynex, 2 Millennium Guns (laut Hersteller)",
           "claim_ids": [
             "T-27"
           ]
@@ -5218,6 +5263,7 @@
             "T-03",
             "T-04",
             "T-07",
+            "T-13",
             "T-09",
             "T-10"
           ]
@@ -5261,7 +5307,7 @@
         {
           "id": "gap_annual_report",
           "topic": "Firmenbasis",
-          "text": "Konzern-Geschäftsbericht 2025 (PDF) nicht direkt geöffnet (IR-Seite per JavaScript); genutzt wurden Bilanzpressemitteilung vom 11.03.2026 und Einzelabschluss der Rheinmetall AG 2025. Separater Air-Defence-Wert für Gesamtjahr 2025 nicht gefunden; Mitarbeiterzahl der Division nicht ermittelt."
+          "text": "Konzern-Geschäftsbericht 2025 (EN-Fassung) nach Hinweis aus dem Basis-Review geöffnet und für den Air-Defence-Pro-forma-Wert genutzt (S. 91, T-13); daneben Bilanzpressemitteilung vom 11.03.2026 und Einzelabschluss der Rheinmetall AG 2025. Mitarbeiterzahl der Division nicht ermittelt."
         },
         {
           "id": "gap_gulf_primary",
@@ -5330,6 +5376,8 @@
             "S-170bd0a173a148bf",
             "S-c6f02c948a96ecdf",
             "S-3ace92799f3780ea",
+            "S-a3c9838c6400c810",
+            "S-a57c168b042d9b28",
             "S-e687ba029a397767",
             "S-001a4ac74ab4feec",
             "S-18ce19a1fbbec148",
@@ -5342,9 +5390,11 @@
         {
           "topic": "Firmenbasis: Konzern-Geschäftsbericht 2025 PDF",
           "search_terms": "Rheinmetall Annual Report 2025 pdf; ir.rheinmetall.com financial reports",
-          "opened_source_ids": [],
-          "finding": "IR-Seite JavaScript-basiert, PDF-Link nicht ermittelt.",
-          "status": "nicht zugänglich"
+          "opened_source_ids": [
+            "S-a3c9838c6400c810"
+          ],
+          "finding": "IR-Seite JavaScript-basiert; EN-PDF später über EQS-Downloadlink geöffnet (S-a3c9838c6400c810).",
+          "status": "geprüft mit Beleg"
         },
         {
           "topic": "Events Flugabwehr 2024–2026",
@@ -5598,8 +5648,7 @@
           "label": "Drohnenabwehr-Toolbox",
           "domain": "Drohnenabwehr (C-UAS)",
           "claim_ids": [
-            "P-CUAS-01",
-            "P-CUAS-05"
+            "P-CUAS-01"
           ],
           "short_label": "C-UAS Toolbox"
         },
@@ -5725,7 +5774,8 @@
             "P-SNX-06",
             "P-HEL-03",
             "P-NNBS-01",
-            "P-SR30-08"
+            "P-SR30-08",
+            "P-CUAS-05"
           ]
         },
         {
@@ -5967,7 +6017,12 @@
                 "C-034",
                 "C-035",
                 "C-036",
-                "C-037",
+                "C-037"
+              ]
+            },
+            {
+              "label": "Nicht benannte Kunden",
+              "claim_ids": [
                 "C-026"
               ]
             }
@@ -6049,8 +6104,8 @@
         {
           "id": "G04",
           "topic": "gulf_market",
-          "description": "Status der AGG 48 nach Fristende 15.09.2026 offen; Nutzung durch Rheinmetall nicht belegt.",
-          "impact": "Exporterleichterung zum Stichtag nicht als gültig bestätigt."
+          "description": "AGG 48 laut BAFA bis 15.09.2027 verlängert (C-024, vgl. M-EXP-002); Inhalt des neuen Punkts 6.6 und Nutzung durch Rheinmetall nicht belegt.",
+          "impact": "Exporterleichterung zum Stichtag gültig; Bedeutung für Rheinmetall-Lieferungen nicht belegt."
         },
         {
           "id": "G05",
@@ -6213,6 +6268,7 @@
           "sources": [
             "S-20d85ac40b61c709",
             "S-f0cdb46723f6b4ca",
+            "S-c99327dbed7f6de5",
             "S-a3c9838c6400c810",
             "S-4adb7d30df595768"
           ],
@@ -6222,7 +6278,7 @@
             "C-017"
           ],
           "status": "geprüft mit Befund",
-          "gaps": "Status AGG 48 nach 15.09.2026 offen; BMWE-PM nicht zugänglich (Browserprüfung); SECO-Statistik 2025 gelesen, aber ohne Rheinmetall-Zuordnung nicht übernommen (ggf. Marktrolle); deutsche Einzelgenehmigungen nach GCC nicht als Claim geprüft."
+          "gaps": "AGG 48 laut BAFA bis 15.09.2027 verlängert (C-024, M-EXP-002); Inhalt Punkt 6.6 und Nutzung durch Rheinmetall offen; BMWE-PM nicht zugänglich (Browserprüfung); SECO-Statistik 2025 gelesen, aber ohne Rheinmetall-Zuordnung nicht übernommen (ggf. Marktrolle); deutsche Einzelgenehmigungen nach GCC nicht als Claim geprüft."
         },
         {
           "cluster": "Technologie & Industrie",
@@ -6891,7 +6947,7 @@
             "M-SAAB-001",
             "M-SAAB-002"
           ],
-          "factual_description": "RBS 70 NG beim brasilianischen Heer seit 2014 (Herstellerangabe); Loke mit schwedischer Luftwaffe entwickelt und erprobt."
+          "factual_description": "Brasilianisches Heer nutzt RBS 70 seit 2014, erste RBS-70-NG-Schießen 2019 (Herstellerangabe); Loke mit schwedischer Luftwaffe entwickelt und erprobt."
         },
         {
           "peer_id": "saab",
@@ -7017,10 +7073,9 @@
           "peer_id": "mbda",
           "criterion_id": "gulf_access",
           "claim_ids": [
-            "M-MBDA-002",
-            "M-MBDA-003"
+            "M-MBDA-002"
           ],
-          "factual_description": "Saudi-Arabien (SANG) als Nutzer von VL MICA berichtet; MICA-Nachfrage aus dem Nahen Osten laut MBDA."
+          "factual_description": "Saudi-Arabien (SANG) als Nutzer von VL MICA berichtet (Kundenfoto, ohne Bestätigung durch MBDA/Frankreich)."
         },
         {
           "peer_id": "thales",
