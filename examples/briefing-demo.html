@@ -36,7 +36,7 @@ body{background:#f3f6f8;color:#173345}.page-kicker{color:#a16e28;font-size:11px;
   <label class="cn-product-label">Produktbezug <select class="cn-product"><option value="all">Alle Produkte</option></select></label>
   <div class="cn-toolbar"><label>Suche <input type="search" class="cn-search" placeholder="Akteur oder Beziehung"></label><label>Status <select class="cn-status"><option value="all">Alle Status</option></select></label><label><input type="checkbox" class="cn-cross"> Querverbindungen</label><button type="button" class="cn-expand">Alle Cluster aufklappen</button><button type="button" class="cn-reset">Zurücksetzen</button></div>
   <div class="cn-grid"><div class="cn-board"><div class="cn-clusters"></div><div class="cn-plot"><svg class="cn-svg" role="img" aria-label="Unternehmensnetzwerk mit dem Zielunternehmen im Zentrum"></svg></div>
-  <div class="cn-legend" aria-label="Knotenfarben"></div>
+  <div class="cn-legend" aria-label="Farben und Formen der Akteurstypen"></div>
   <div class="cn-count" aria-live="polite"></div>
   <details class="cn-access"><summary>Verbindungen per Tastatur auswählen</summary><div class="cn-keyboard"></div></details></div><aside class="cn-sidebar" aria-labelledby="network-panel-title"><div class="cn-details" aria-live="polite"><div class="cn-detail-head"><h4 id="network-panel-title"></h4><button type="button" class="cn-close">Zurücksetzen</button></div><div class="cn-detail-content"></div></div></aside></div>
   <p class="cn-error" hidden role="alert"></p>
@@ -105,6 +105,8 @@ body{background:#f3f6f8;color:#173345}.page-kicker{color:#a16e28;font-size:11px;
 #briefing-company-network .cn-line-cross{stroke:#176274;opacity:.8;stroke-width:1.7}
 #briefing-company-network .cn-line-selected{stroke:#c3872d;opacity:1;stroke-width:2.4}
 @media print{#briefing-company-network .cn-grid{display:block}#briefing-company-network .cn-sidebar{display:none}}
+
+#briefing-company-network .cn-svg{touch-action:auto}#briefing-company-network .cn-plot{overflow:auto;overscroll-behavior:auto}#briefing-company-network .cn-kind-icon{flex:none;overflow:visible}#briefing-company-network .cn-node-label{paint-order:stroke;stroke:white;stroke-width:3px;pointer-events:none}#briefing-company-network .cn-target-label{pointer-events:none}#briefing-company-network .cn-node:hover .cn-symbol,#briefing-company-network .cn-node:focus-visible .cn-symbol{stroke:#c3872d;stroke-width:4}#briefing-company-network .cn-svg .cn-cluster-title{font-size:14px}#briefing-company-network .cn-svg.has-selection .cn-line:not(.cn-line-selected){opacity:.2}#briefing-company-network .cn-line{stroke:var(--cn-edge-color,#466372);opacity:.4;stroke-width:1.4}#briefing-company-network .cn-line-cross{opacity:.55}#briefing-company-network .cn-line-selected{stroke:#c3872d;opacity:1;stroke-width:2.7}
 </style>
 <script>
 (()=>{
@@ -118,6 +120,12 @@ body{background:#f3f6f8;color:#173345}.page-kicker{color:#a16e28;font-size:11px;
  function mark(tag,attrs,parent){const e=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,String(v)));parent.appendChild(e);return e;}
  function safeURL(value){const u=new URL(value);if(!['http:','https:'].includes(u.protocol))throw Error('Unzulässiger Quellenlink');return u.href;}
  function color(kind){return kinds[kind][1];}
+
+ const nodeRadius=32;
+ const shapes={target:'circle',partner:'circle',subsidiary:'square',jv:'hexagon',owner:'octagon',supplier:'diamond',customer:'triangle',project:'pentagon',institution:'capsule',person:'star',other:'ellipse'};
+ function polygon(kind,r){const shape=shapes[kind];if(shape==='square'||shape==='capsule')return [[-r,-r],[r,-r],[r,r],[-r,r]];if(shape==='diamond')return [[0,-r],[r,0],[0,r],[-r,0]];if(shape==='triangle')return [[0,-r],[r,r],[-r,r]];if(shape==='hexagon')return [[-r/2,-r],[r/2,-r],[r,0],[r/2,r],[-r/2,r],[-r,0]];if(['octagon','pentagon','star'].includes(shape)){const count=shape==='octagon'?8:shape==='pentagon'?5:10;return Array.from({length:count},(_,i)=>{const radius=shape==='star'&&i%2?r*.5:r,angle=-Math.PI/2+i*2*Math.PI/count;return [radius*Math.cos(angle),radius*Math.sin(angle)]});}return null;}
+ function symbol(kind,r,parent,active=false){const shape=shapes[kind],attrs={class:'cn-symbol',fill:kind==='target'?'#163047':color(kind),stroke:active?'#c3872d':'white','stroke-width':active?4:2.5};if(shape==='square'||shape==='capsule')return mark('rect',{...attrs,x:-r,y:-r,width:2*r,height:2*r,rx:shape==='capsule'?r*.65:6},parent);if(shape==='ellipse')return mark('ellipse',{...attrs,cx:0,cy:0,rx:r,ry:r*.75},parent);const points=polygon(kind,r);if(points)return mark('polygon',{...attrs,points:points.map(p=>p.join(',')).join(' ')},parent);return mark('circle',{...attrs,cx:0,cy:0,r},parent);}
+ function anchor(p,q,extra=0){const dx=q.x-p.x,dy=q.y-p.y,r=nodeRadius,points=polygon(p.kind,r);let t;if(points){t=Infinity;for(let i=0;i<points.length;i++){const [ax,ay]=points[i],[bx,by]=points[(i+1)%points.length],ex=bx-ax,ey=by-ay,den=dx*ey-dy*ex;if(Math.abs(den)<1e-9)continue;const k=(ax*ey-ay*ex)/den,u=(ax*dy-ay*dx)/den;if(k>=0&&u>=0&&u<=1)t=Math.min(t,k);}}else{const ry=shapes[p.kind]==='ellipse'?r*.75:r;t=1/Math.sqrt(dx*dx/(r*r)+dy*dy/(ry*ry));}const length=Math.hypot(dx,dy)||1;return {x:p.x+dx*t+dx/length*extra,y:p.y+dy*t+dy/length*extra};}
  function validDate(v,month=false){if(typeof v!=='string'||!(month?/^\d{4}-\d{2}(?:-\d{2})?$/:/^\d{4}-\d{2}-\d{2}$/).test(v))return false;const a=v.split('-').map(Number);return a[1]>=1&&a[1]<=12&&(a.length===2||a[2]>=1&&a[2]<=new Date(Date.UTC(a[0],a[1],0)).getUTCDate());}
  try{
   const data=JSON.parse(root.querySelector('.cn-data').textContent);
@@ -135,7 +143,7 @@ body{background:#f3f6f8;color:#173345}.page-kicker{color:#a16e28;font-size:11px;
   available.forEach(c=>{const label=dom('label',root.querySelector('.cn-filters'));const input=dom('input',label);input.type='checkbox';input.value=c;input.checked=true;dom('span',label,categories[c]);input.addEventListener('change',()=>{clear();draw();});});
   data.products.forEach(p=>{const option=dom('option',root.querySelector('.cn-product'),p.label);option.value=p.id;});
   root.querySelector('.cn-product-label').hidden=!data.products.length;
-  [...new Set(data.nodes.map(n=>n.kind))].forEach(k=>{const label=dom('span',root.querySelector('.cn-legend'));const dot=dom('i',label);dot.className='cn-dot';dot.style.background=color(k);dom('span',label,kinds[k][0]);});
+  [...new Set(data.nodes.map(n=>n.kind))].forEach(k=>{const label=dom('span',root.querySelector('.cn-legend'));const icon=document.createElementNS(ns,'svg');icon.setAttribute('width','20');icon.setAttribute('height','20');icon.setAttribute('viewBox','-10 -10 20 20');icon.setAttribute('aria-hidden','true');icon.classList.add('cn-kind-icon');label.appendChild(icon);symbol(k,8,icon);dom('span',label,kinds[k][0]);});
   function sourceList(ids,parent){ids.forEach(id=>{const s=sources.get(id);const p=dom('p',parent);const a=dom('a',p,s.name+' · '+s.title);a.href=safeURL(s.url);a.target='_blank';a.rel='noopener noreferrer';dom('span',p,' · '+(s.published_date||'o. D.')+(s.source_kind?' · '+s.source_kind:'')+(s.report_year?' · Geschäftsjahr '+s.report_year:'')+(s.page?' · Seite '+s.page:'')+(s.section?' · '+s.section:'')+(s.accessed_date?' · Abruf '+s.accessed_date:''));});}
   function selectEdge(id){selected=id;const e=edgeIndex.get(id);detail.hidden=false;detail.querySelector('h4').textContent=nodes.get(e.from).label+' → '+nodes.get(e.to).label;const body=detail.querySelector('.cn-detail-content');body.replaceChildren();dom('p',body,e.type+' · '+e.status+' · Stand '+e.as_of);dom('p',body,e.summary);if(e.interpretation)dom('p',body,'Analysteninterpretation: '+e.interpretation);if(e.capital_share!==undefined&&e.capital_share!==null)dom('p',body,'Kapitalanteil: '+e.capital_share);if(e.voting_share!==undefined&&e.voting_share!==null)dom('p',body,'Stimmrechte: '+e.voting_share);if(e.control)dom('p',body,'Kontrolle: '+e.control);if(e.product_ids.length)dom('p',body,'Produktbezug: '+e.product_ids.map(p=>products.get(p).label).join(', '));if(e.uncertainty)dom('p',body,'Unsicherheit: '+e.uncertainty);const cp=dom('p',body,'Belegdetails: ');claimLinks(e.claim_ids,cp);sourceList(e.source_ids,body);draw();openNetwork();}
   function claimLinks(ids,parent){ids.forEach((id,i)=>{if(i)dom('span',parent,', ');const a=dom('a',parent,id);a.href='#'+encodeURIComponent(id);});}
@@ -145,7 +153,7 @@ body{background:#f3f6f8;color:#173345}.page-kicker{color:#a16e28;font-size:11px;
   let expanded=new Set(),activeNode=null;root.querySelector('.cn-cross').checked=true;
   function group(n){return n.cluster||({owner:'capital',subsidiary:'structure',jv:'structure',customer:'market',institution:'market'}[n.kind]||'technology');}
   const grouped=new Map(clusterDefs.map(([id])=>[id,data.nodes.filter(n=>n.id!==data.target_id&&group(n)===id)]));
-  const first=new Set();grouped.forEach(list=>[...list.filter(n=>n.focus===true),...list.filter(n=>n.focus!==true)].slice(0,3).forEach(n=>first.add(n.id)));
+  const first=new Set();grouped.forEach(list=>[...list.filter(n=>n.focus===true),...list.filter(n=>n.focus!==true)].slice(0,6).forEach(n=>first.add(n.id)));
   clusterDefs.forEach(([id,label])=>{const b=dom('button',root.querySelector('.cn-clusters'),label+' +');b.type='button';b.dataset.cluster=id;b.setAttribute('aria-pressed','false');b.addEventListener('click',()=>{expanded.has(id)?expanded.delete(id):expanded.add(id);draw();});});
   [...new Set(data.edges.map(e=>e.status))].forEach(s=>{const o=dom('option',root.querySelector('.cn-status'),s);o.value=s;});
   function clear(){selected=null;activeNode=null;detail.hidden=false;detail.querySelector('h4').textContent='Beziehungen & Quellen';const body=detail.querySelector('.cn-detail-content');body.replaceChildren();dom('p',body,'Wähle einen Akteur oder eine Verbindung im Netzwerk. Hier erscheinen die zugehörigen Inhalte und Originalquellen.');}
@@ -164,41 +172,50 @@ body{background:#f3f6f8;color:#173345}.page-kicker{color:#a16e28;font-size:11px;
    const cross=root.querySelector('.cn-cross').checked;
    const visible=eligible.filter(e=>names.has(e.from)&&names.has(e.to)&&(cross||e.from===data.target_id||e.to===data.target_id||nodes.get(e.from).kind==='subsidiary'||nodes.get(e.to).kind==='subsidiary'||e.categories.includes('jv')||e.id===selected||activeNode&&(e.from===activeNode||e.to===activeNode)));
    const connected=new Set([data.target_id,...visible.flatMap(e=>[e.from,e.to])]);for(const id of names)if(!connected.has(id))names.delete(id);
-   const w=Math.max(760,plot.clientWidth||1000),pad=20,panelW=Math.min(290,(w-280)/2),nodeW=panelW-28,nodeH=44;
+
+   const w=Math.max(760,plot.clientWidth||1000),pad=24,gutter=44,panelW=(w-2*pad-gutter)/2,columns=Math.max(2,Math.min(5,Math.floor((panelW-32)/125))),cellW=(panelW-32)/columns,rowStep=132;
    const groups=clusterDefs.map(([id])=>({id,all:grouped.get(id),shown:grouped.get(id).filter(n=>names.has(n.id))}));
-   const get=id=>groups.find(g=>g.id===id),panelH=id=>64+Math.max(1,get(id).shown.length)*52;
-   const leftHeight=panelH('structure')+panelH('capital')+24,rightHeight=panelH('technology')+panelH('market')+24,h=Math.max(leftHeight,rightHeight)+2*pad;
-   const cx=w/2,cy=h/2,positions=new Map([[data.target_id,{x:cx,y:cy,side:0}]]);
-   svg.setAttribute('viewBox','0 0 '+w+' '+h);svg.style.minWidth='760px';svg.style.height='auto';svg.replaceChildren();keyboard.replaceChildren();svg.classList.toggle('has-selection',Boolean(selected||activeNode));
-   mark('title',{},svg).textContent=data.company+' im Mittelpunkt. Vier Themenbereiche mit einzelnen Akteuren; Knoten und Verbindungen öffnen Belege.';
-   const placements=[['structure',pad,pad,-1],['capital',pad,pad+panelH('structure')+24,-1],['technology',w-pad-panelW,pad,1],['market',w-pad-panelW,pad+panelH('technology')+24,1]];
-   placements.forEach(([id,x,y,side])=>{
-    const g=get(id),ph=panelH(id),label=clusterDefs.find(d=>d[0]===id)[1];
-    mark('rect',{x,y,width:panelW,height:ph,rx:10,fill:'#f8fafb',stroke:'#e0e8ed'},svg);
-    mark('text',{x:x+14,y:y+23,class:'cn-cluster-title'},svg).textContent=label;
-    mark('text',{x:x+14,y:y+42,style:'fill:#7a919d;font-size:9px'},svg).textContent=g.shown.length+' von '+g.all.length+' Akteuren';
-    if(!g.shown.length)mark('text',{x:x+14,y:y+80,style:'fill:#7a919d;font-size:10px'},svg).textContent='Keine Verbindung in dieser Auswahl';
-    g.shown.forEach((n,i)=>positions.set(n.id,{x:x+panelW/2,y:y+69+i*52,side}));
+   const get=id=>groups.find(g=>g.id===id),needed=id=>74+Math.max(1,Math.ceil(get(id).shown.length/columns))*rowStep;
+   const topH=Math.max(needed('capital'),needed('structure')),bottomH=Math.max(needed('technology'),needed('market')),centerGap=94,h=2*pad+topH+centerGap+bottomH;
+   const panelH=id=>['capital','structure'].includes(id)?topH:bottomH,areaColors={capital:'#285e7b',structure:'#ac7734',technology:'#287b70',market:'#68648e'};
+   const cx=w/2,cy=pad+topH+centerGap/2,positions=new Map([[data.target_id,{x:cx,y:cy,kind:'target'}]]);
+   svg.setAttribute('viewBox','0 0 '+w+' '+h);svg.style.minWidth=w+'px';svg.style.height='auto';svg.replaceChildren();keyboard.replaceChildren();svg.classList.toggle('has-selection',Boolean(selected||activeNode));
+   mark('title',{},svg).textContent=data.company+' im Mittelpunkt. Gleich große Knoten, Formen und Farben je Akteurstyp, Namen darunter; Quellen rechts.';
+   const placements=[['capital',pad,pad],['structure',pad+panelW+gutter,pad],['technology',pad,pad+topH+centerGap],['market',pad+panelW+gutter,pad+topH+centerGap]];
+   placements.forEach(([id,x,y])=>{
+    const g=get(id),label=clusterDefs.find(d=>d[0]===id)[1],area=areaColors[id];
+    mark('rect',{x,y,width:panelW,height:panelH(id),rx:14,fill:area,'fill-opacity':.035,stroke:area,'stroke-opacity':.22,class:'cn-area','data-cluster-area':id},svg);
+    mark('text',{x:x+18,y:y+27,class:'cn-cluster-title'},svg).textContent=label;
+    mark('text',{x:x+18,y:y+46,style:'fill:#7a919d;font-size:10px'},svg).textContent=g.shown.length+' von '+g.all.length+' Akteuren';
+    if(!g.shown.length)mark('text',{x:x+18,y:y+86,style:'fill:#7a919d;font-size:11px'},svg).textContent='Keine Verbindung in dieser Auswahl';
+    g.shown.forEach((n,i)=>positions.set(n.id,{x:x+16+(i%columns+.5)*cellW,y:y+106+Math.floor(i/columns)*rowStep,kind:n.kind}));
     const b=root.querySelector('[data-cluster="'+id+'"]');b.textContent=label+(expanded.has(id)?' −':' +');b.setAttribute('aria-pressed',String(expanded.has(id)));
    });
+   const defs=mark('defs',{},svg),marker=mark('marker',{id:'cn-arrow',viewBox:'0 0 10 10',refX:9,refY:5,markerWidth:5,markerHeight:5,orient:'auto-start-reverse'},defs);mark('path',{d:'M 0 0 L 10 5 L 0 10 Z',fill:'#466372'},marker);
    const lines=mark('g',{},svg),hits=mark('g',{},svg),nlayer=mark('g',{},svg);
    const pairs=new Map();visible.forEach(e=>{const key=[e.from,e.to].sort().join('|');if(!pairs.has(key))pairs.set(key,[]);pairs.get(key).push(e);});
+
+   let pairNumber=0;
    pairs.forEach(relations=>{
     const e=relations[0],a=positions.get(e.from),b=positions.get(e.to);if(!a||!b)return;
-    function anchor(p,q){const dx=q.x-p.x,dy=q.y-p.y,hw=p.side?nodeW/2:88,hh=p.side?nodeH/2:34;const t=1/Math.max(Math.abs(dx)/hw,Math.abs(dy)/hh);return {x:p.x+dx*t,y:p.y+dy*t};}
-    const aa=anchor(a,b),bb=anchor(b,a),d='M '+aa.x+' '+aa.y+' L '+bb.x+' '+bb.y;
-    const active=relations.some(r=>r.id===selected||activeNode&&(r.from===activeNode||r.to===activeNode)),cross=e.from!==data.target_id&&e.to!==data.target_id;
-    mark('path',{d,class:'cn-line'+(cross?' cn-line-cross':'')+(active?' cn-line-selected':''),'data-edge':e.id,'data-relations':relations.map(r=>r.id).join(','),'stroke-dasharray':relations.every(r=>r.historical)?'5 4':'none'},lines);
-
+    const aa=anchor(a,b,3),bb=anchor(b,a,7),dx=bb.x-aa.x,dy=bb.y-aa.y,length=Math.hypot(dx,dy)||1,cross=e.from!==data.target_id&&e.to!==data.target_id;
+    const bend=cross?Math.min(52,length*.1):((pairNumber++%3)-1)*12,mx=(aa.x+bb.x)/2-dy/length*bend,my=(aa.y+bb.y)/2+dx/length*bend;
+    const d='M '+aa.x+' '+aa.y+' Q '+mx+' '+my+' '+bb.x+' '+bb.y;
+    const active=relations.some(r=>r.id===selected||activeNode&&(r.from===activeNode||r.to===activeNode)),reverse=relations.some(r=>r.from===e.to&&r.to===e.from);
+    const dash=relations.every(r=>r.historical||/historisch/i.test(r.status))?'2 5':relations.every(r=>/angekündigt|geplant|announced/i.test(r.status))?'7 5':'none';
+    const attrs={d,class:'cn-line'+(cross?' cn-line-cross':'')+(active?' cn-line-selected':''),'data-edge':e.id,'data-relations':relations.map(r=>r.id).join(','),'stroke-dasharray':dash,style:'--cn-edge-color:'+(cross?'#24485d':areaColors[group(nodes.get(e.to))]||'#466372'),'marker-end':'url(#cn-arrow)'};if(reverse)attrs['marker-start']='url(#cn-arrow)';mark('path',attrs,lines);
     const hit=mark('path',{d,class:'cn-hit','aria-hidden':'true','data-edge':e.id},hits);hit.addEventListener('click',()=>selectBundle(relations.map(r=>r.id)));
     const button=dom('button',keyboard,nodes.get(e.from).label+' ↔ '+nodes.get(e.to).label+(relations.length>1?' · '+relations.length+' Beziehungen':' · '+e.type));button.type='button';button.className='cn-edge-button';button.addEventListener('click',()=>selectBundle(relations.map(r=>r.id)));
    });
-   function wrap(label,max=32){const words=label.split(/\s+/),out=[];let line='';words.forEach(word=>{if((line+' '+word).trim().length>max&&line){out.push(line);line=word;}else line=(line+' '+word).trim();});if(line)out.push(line);return out;}
+   function wrap(label,max=32){const words=label.split(/\s+/).flatMap(word=>Array.from({length:Math.ceil(word.length/max)},(_,i)=>word.slice(i*max,(i+1)*max))),out=[];let line='';words.forEach(word=>{if((line+' '+word).trim().length>max&&line){out.push(line);line=word;}else line=(line+' '+word).trim();});if(line)out.push(line);return out;}
+
    data.nodes.filter(n=>positions.has(n.id)).forEach(n=>{
-    const p=positions.get(n.id),target=n.id===data.target_id,width=target?176:nodeW,height=target?68:nodeH,fill=target?'#154c61':'#fff',g=mark('g',{transform:'translate('+p.x+' '+p.y+')',class:'cn-node',role:'button',tabindex:0,'aria-label':n.label,'data-node':n.id},nlayer);
-    mark('rect',{x:-width/2,y:-height/2,width,height,rx:target?12:7,fill,stroke:activeNode===n.id?'#c3872d':target?'#154c61':'#d6e2e9','stroke-width':activeNode===n.id?2:1},g);
-    if(target){mark('text',{y:-22,'text-anchor':'middle',style:'fill:#b9d3e0;font-size:8px;letter-spacing:1px'},g).textContent='ZIELUNTERNEHMEN';const label=wrap(n.label,20),shown=label.slice(0,3),start=shown.length===1?12:shown.length===2?2:-4;shown.forEach((line,i)=>mark('text',{y:start+i*14,'text-anchor':'middle',style:'fill:white;font-size:14px;font-weight:700'},g).textContent=line);mark('title',{},g).textContent=n.label;}
-    else{mark('circle',{cx:-width/2+14,cy:0,r:4,fill:color(n.kind)},g);const label=wrap(n.label,Math.floor((width-47)/6)),start=label.length>1?-3:4;label.slice(0,2).forEach((line,i)=>mark('text',{x:-width/2+26,y:start+i*14,class:'cn-node-label',style:'font-size:11px'},g).textContent=line);if(label.length>2)mark('title',{},g).textContent=n.label;}
+    const p=positions.get(n.id),target=n.id===data.target_id,g=mark('g',{transform:'translate('+p.x+' '+p.y+')',class:'cn-node',role:'button',tabindex:0,'aria-label':n.legal_name||n.label,'data-node':n.id,'data-kind':n.kind,'data-radius':nodeRadius},nlayer);
+    symbol(n.kind,nodeRadius,g,activeNode===n.id);
+    const label=wrap(n.label,target?12:Math.max(15,Math.floor((cellW-12)/6))),shown=label.slice(0,3);if(label.length>3)shown[2]=shown[2].slice(0,-1)+'…';
+    const start=target?-(shown.length-1)*6+4:nodeRadius+17;
+    shown.forEach((line,i)=>mark('text',{x:0,y:start+i*(target?12:14),'text-anchor':'middle',class:target?'cn-target-label':'cn-node-label',style:'fill:'+(target?'white':'#193445')+';font-size:'+(target?'10px':'11px')+';font-weight:'+(target?'700':'600')},g).textContent=line);
+    mark('title',{},g).textContent=(n.legal_name||n.label)+' · '+kinds[n.kind][0];
     g.addEventListener('click',()=>selectNode(n.id));g.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();selectNode(n.id);}});
    });
    root.querySelector('.cn-count').textContent=(positions.size-1)+' / '+(data.nodes.length-1)+' Akteure · '+visible.length+' / '+data.edges.length+' Beziehungen · '+(cross?'Querverbindungen eingeblendet':'Weitere Querverbindungen per Filter oder Auswahl');root.querySelector('.cn-expand').textContent=expanded.size===4?'Kompakte Auswahl':'Alle Akteure zeigen';

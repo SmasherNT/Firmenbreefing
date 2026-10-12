@@ -11,7 +11,9 @@ Explizite Markdown-Modultests nach references/legacy-html-output.md durchführen
    Vorlage und JavaScript nicht als Standard in den Modellkontext laden.
    Feste vier Seiten und Portfolio nach references/portfolio-darstellung.md;
    Portfolio-Detailprofile standardmäßig vollständig eingeklappt. Keine firmenspezifische Vorlage.
-   Cluster: gerade Linien ohne Endpunkte, Details rechts neben dem Netz.
+   Cluster nach references/netzwerk-html.md: vier Bereichsfelder im 2×2-Raster,
+   gleich große Knoten, Farbe/Form je Kategorie, Namen darunter, keine Score-Badges;
+   gebogene Linien mit Pfeilen ohne Endpunktkreise, Details rechts, Seite scrollbar.
    Gesprächspartner offen nach references/gespraechspartner.md auf Seite 2.
 2. Fehler gezielt an zuständige Fakten-/Interpretations-/Prüfrolle geben;
    keine fremden Dateien korrigieren oder Prüfbarrieren umgehen.

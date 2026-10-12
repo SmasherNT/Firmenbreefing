@@ -79,7 +79,12 @@ sich auf die Desktop-Webansicht.
   drei Ereignisse. Keine echten Quellen geöffnet oder Inhaltsfreigabe behauptet.
 
 ## Cluster und Gesprächspartner
-- Gerade Kanten ohne Endpunktkreise; Mehrfachbeziehungen bleiben einzeln erreichbar.
+- Vier Bereichsfelder in fester 2×2-Reihenfolge; gleiche Höhen innerhalb einer Zeile,
+  dynamische Höhe bei mehr Akteuren. Namen unter den Formen, keine Score-Badges.
+- Alle Kreise gleich groß, feste Größenbasis und passende Farbe/Form je Knotenart.
+- Gebogene Kanten mit Richtungspfeilen ohne Endpunktkreise; Mehrfachbeziehungen
+  bleiben einzeln erreichbar, gegenläufige Beziehungen haben beide Pfeile.
+- Normales vertikales Seitenscrollen, nur lokales horizontales Scrollen der Grafik.
 - Auswahl aktualisiert die feste rechte Spalte ohne Dialog, Filter löschen veraltete Details.
 - Profile zeigen Snapshot, chronologische Stationen, Fachprofil, Verantwortung und
   belegten regionalen Kontext; leere Felder erhalten eine neutrale Lückenanzeige.
@@ -88,3 +93,11 @@ sich auf die Desktop-Webansicht.
 Themenkarten: Kurz­titel und Vorschau, vollständige Inhalte/Originalquellen per Klick,
 keine neuen Behauptungen in Vorschauen. SWOT: Kategorienamen und vier unterscheidbare
 Farben prüfen (Stärken grün, Schwächen rot, Chancen blau, Risiken orange).
+
+Clusterstandard 2026-10-12: Template und Ausgabevorgaben auf den bestätigten
+Originalstil umgestellt. 81 Unit-Tests und Desktop-Browserprüfung bei 1440, 1280
+und 1024 Pixeln bestanden, einschließlich Seitenscrollen, rechter Detailspalte,
+Filter, Quellen, Druckzustand und Fallback ohne JavaScript. Zusätzlich das bereits
+vorhandene Rheinmetall-Netz mit 43 Knoten und 54 Beziehungen visuell geprüft:
+alle Akteure erreichbar, keine Symbolüberlappung, Bereichshöhen wachsen je Zeile.
+Das ist eine Darstellungsprüfung vorhandener Daten, keine neue Inhaltsfreigabe.

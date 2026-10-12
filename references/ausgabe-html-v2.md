@@ -66,8 +66,12 @@ Portfolio nach portfolio-darstellung.md: sechs Stufen, farbige Produktgruppen,
 Filter/Tabelle und ein vollständig geschlossener Detailblock. Produktklick öffnet
 Block und Profil; keine firmenspezifischen Bewertungen in der Vorlage.
 Cluster: Ziel in der Mitte, vier Gruppen einzeln klickbarer Akteure, kompakte
-Auswahl, Filter/Querverbindungen und feste rechte Detailspalte. Gerade Linien ohne
-Punkte an den Enden. Mehrere Vorgänge je Akteurspaar über eine gemeinsame Linie
+Auswahl, Filter/Querverbindungen und feste rechte Detailspalte. Vier Bereiche im
+2×2-Raster in der bestehenden Reihenfolge; gleiche Höhe pro Zeile, abhängig von
+der Anzahl. Einheitliche Knotengröße, Form und Farbe je Akteurskategorie, Namen
+unter den Formen und keine Zahlen-/Score-Badges. Gebogene Linien mit Pfeilen,
+ohne Endpunktkreise; normales Seitenscrollen. Details in netzwerk-html.md.
+Mehrere Vorgänge je Akteurspaar über eine gemeinsame Linie
 auswählen; sämtliche Einzelbelege erhalten. Matrixspalten folgen dem Auftrag;
 kompakte Zellen, lokaler Scroll, feststehende Akteursspalte. Karten/Zellen öffnen
 Begründung und direkte Quellen im gemeinsamen Dialog. Native details als Fallback.

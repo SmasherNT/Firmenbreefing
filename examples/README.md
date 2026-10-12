@@ -13,8 +13,11 @@ Portfolio: farbige Gruppen und sechs Reifestufen, zwei eingeordnete Produkte
 und ein unbestimmbarer Service, Such-/Gruppen-/Stufen-/Ursprungsfilter und Tabelle.
 Der gesamte Detailprofilbereich ist zunächst geschlossen. Produktklick öffnet
 Block und Profil. Person, Markt-Deep-Dive Europa und Quellen stehen auf Seite 2–4.
-Das Netzwerk zeigt vier Akteursgruppen, gerade Linien ohne Endpunkte und Quellen
-in einer festen rechten Detailspalte. Das offene Personenprofil zeigt den Snapshot
+Das Netzwerk zeigt vier Akteursgruppen im 2×2-Raster, gleich große Symbole mit
+Farbe/Form je Kategorie, Namen darunter und gebogene Linien mit Richtungspfeilen.
+Bereichsfelder sind je Zeile gleich hoch und wachsen mit der Anzahl der Akteure;
+die Seite bleibt scrollbar. Quellen stehen in einer festen rechten Detailspalte.
+Das offene Personenprofil zeigt den Snapshot
 und sichtbare Evidenz; unbelegte Werdegangsfelder bleiben als Datenlücke erkennbar.
 
 Reproduzieren (aus Repositorywurzel):

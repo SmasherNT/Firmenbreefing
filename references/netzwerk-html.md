@@ -13,11 +13,14 @@ Der Cluster-Agent erstellt keine eigene finale HTML und überspringt keine Revie
 ## Verbindliches Erscheinungsbild
 - Das Zielunternehmen bleibt zentral. Die übrigen Akteure bilden ein Netz
   darum herum; Querverbindungen verbinden auch umliegende Akteure miteinander.
-- Knoten zeigen kurze Unternehmensnamen. Jede Knotenart hat eine eigene,
-  konsistente Farbe und erscheint in der Farblegende.
+- Alle Kreise haben denselben Radius; andere Formen verwenden dieselbe feste
+  Größenbasis. Keine Größenstaffelung oder Zahlen-/Score-Badges in den Formen.
+  Kurze Unternehmensnamen stehen unter den Formen, der Zielname im Zentrum.
+  Jede Knotenart hat eine konsistente Farbe und Form samt gemeinsamer Legende.
 - Linien zeigen anfangs keine Beschriftung, Quote, Quellen oder Hover-Details.
-  Alle Verbindungen sind gerade Strecken zwischen den Knotenrändern, ohne
-  Endpunkt-Markierungen. Klick oder Tastaturauswahl zeigt Inhalte in der festen
+  Verbindungen folgen dem bestätigten ursprünglichen Stil: leicht gebogene
+  Linien mit Richtungspfeilen zwischen den Knotenrändern, ohne Endpunktkreise.
+  Klick oder Tastaturauswahl zeigt Inhalte in der festen
   rechten Detailspalte, ohne Dialog oder Aufklappen. Nur Desktop-Darstellung.
   Mehrere Beziehungen desselben Paars teilen eine Linie; rechts bleiben alle
   Vorgänge einzeln auswählbar, einschließlich ihrer Richtung und Originalquellen.
@@ -34,7 +37,7 @@ Produktbezug zusätzlich UND. Verbundene Akteure bleiben als Kontext sichtbar,
 auch wenn ihre primäre Knotenart eine andere Kategorie hat.
 Beispiel: JV-Filter zeigt auch seine Mitgesellschafter und alle passenden Kanten.
 Eine Firma mit mehreren Rollen bleibt ein Knoten. Ihre primäre Knotenart bestimmt
-die Farbe; Beziehungen können mehrere Filterkategorien tragen.
+Farbe und Form; Beziehungen können mehrere Filterkategorien tragen.
 Das Zielunternehmen bleibt immer sichtbar. Knoten bleiben im zugewiesenen Cluster; bei Filtern darf das Layout kompakt
 neu angeordnet werden, ohne die Clusterzuordnung zu verändern. Leere Ergebnisse verständlich anzeigen.
 Unzugeordnete Produktbeziehungen nur unter "Alle Produkte", nicht künstlich
@@ -127,8 +130,10 @@ Der Renderer ist eine Vorlage, keine Garantie für jede Netzgröße.
 Bei vielen Akteuren oder langen Namen Layout anpassen, ohne Daten/Belege zu
 ändern: aufklappbare Cluster, Teilnetze oder bewusste Begrenzung der
 Erstansicht mit sichtbarer Erweiterungsmöglichkeit. Keine unsichtbare Datenkürzung.
-Knoten dürfen sich nicht überlappen; mobil bleibt die Mindestbreite horizontal
-verschiebbar erhalten; Farben zusätzlich durch Legende
+Knoten dürfen sich nicht überlappen; bei schmalen Desktopfenstern bleibt die
+Mindestbreite lokal horizontal verschiebbar. Die Seite muss normal vertikal
+scrollen können; kein globales overflow:hidden und kein Scroll-Lock.
+Farben und Formen zusätzlich durch Legende
 und die im Detail erklärte Rolle erschließen. Keine Beschriftungen auf Linien
 hinzufügen, um Platzprobleme zu umgehen.
 Kein starres Bild, keine reine Mermaid-Grafik und keine externe Live-Datenquelle
@@ -140,7 +145,7 @@ ist keine akzeptierte finale Ausgabe. Modultest ohne Review bleibt ungeprüft.
 Tatsächlich prüfen: Ziel zentral, Knotenfarben/Legende, jede Linie auswählbar,
 Details erst nach Auswahl, Originalquellenlinks, Kategorie-/Produktfilter,
 Kontextknoten bei JV, Mehrfachrollen ohne doppelte Firmen, Querverbindungen,
-keine veralteten Details nach Filterwechsel, Tastatur/Touch sowie Mobil/Druck.
+keine veralteten Details nach Filterwechsel, Tastatur, Seitenscrollen und Druck.
 Technische Datenvalidierung ersetzt keinen inhaltlichen Quellencheck.
 Nicht ausführbare Browserprüfungen als nicht geprüft melden.
 Die installierte Vorlage wurde syntaktisch geprüft; ein tatsächlicher
@@ -148,19 +153,29 @@ Claude-Recherche- und Browserlauf mit echten Daten bleibt nachzuweisen.
 
 
 ## Vier-Cluster-Layout (verbindliche neue Standarddarstellung)
-Zielunternehmen zentral zwischen vier festen Bereichen: Kapital & Investoren,
-Konzern & Joint Ventures, Technologie & Industrie, Kunden & Marktzugang.
-Je Knoten eine Farbe nach Knotenart, eine eindeutige Identität, kein Relevanzscore.
-Erstansicht maximal vier Akteure je Bereich; focus priorisiert die Auswahl,
-begründet in der Cluster-Datei. Andere Akteure per Cluster aufklappen erreichbar.
-Querverbindungen zunächst ausgeblendet, zuschaltbar und nach Knotenauswahl
-im betreffenden Teilnetz sichtbar. Auswahl listet alle Rollen eines Akteurs;
+Zielunternehmen zentral zwischen vier rechteckigen Bereichen im 2×2-Raster:
+Kapital & Investoren oben links, Konzern & Joint Ventures oben rechts,
+Technologie & Industrie unten links, Kunden & Marktzugang unten rechts.
+Je Zeile sind die beiden Bereiche gleich hoch; die Höhe folgt der Zahl der
+sichtbaren Akteure. Innerhalb eines Bereichs stehen Knoten neben- und untereinander.
+Die vorhandene Bereichszuordnung und Reihenfolge der Akteure bleiben erhalten.
+Je Knoten eine Farbe und Form nach belegter Knotenart, eine eindeutige Identität,
+kein Relevanzscore. Formen: Partner Kreis, Tochtergesellschaft Quadrat, JV Sechseck,
+Eigentümer Achteck, Zulieferer Raute, Kunde Dreieck, Projekt Fünfeck,
+Institution abgerundetes Quadrat, Person Stern, Sonstige Ellipse; Ziel Kreis.
+Erstansicht bis zu sechs Akteure je Bereich; focus priorisiert die Auswahl,
+begründet in der Cluster-Datei. Zusätzliche JV-/Tochter-Kontextknoten bleiben
+sichtbar; andere Akteure sind per Cluster aufklappen erreichbar.
+Querverbindungen zunächst eingeblendet und per Filter umschaltbar.
+Auswahl listet alle Rollen eines Akteurs;
 Linien bleiben unbeschriftet, Quellen und Unsicherheiten nur im Klickdetail.
 Suche, Status-, Kategorie- und belegte Produktfilter verwenden.
-Linien der gleichen Akteurspaarung getrennt führen. Reduzierte Erstansicht
+Beziehungen der gleichen Akteurspaarung bündeln; jede bleibt rechts einzeln
+auswählbar. Bei beiden Richtungen Pfeile an beiden Enden zeigen. Reduzierte Erstansicht
 mit sichtbarem Gesamtzähler; die vollständige Tabelle enthält alle Beziehungen.
-Auf kleinen Bildschirmen Grafik horizontal verschiebbar mit lesbarer Mindestbreite
-640px, Detailfeld darunter und Tastatur-Beziehungsauswahl als Alternative.
+Im Desktopfenster Grafik lokal horizontal verschiebbar mit lesbarer Mindestbreite
+760px, feste rechte Detailspalte und Tastatur-Beziehungsauswahl als Alternative.
+Keine gesonderte Mobilansicht oder Mobilabnahme.
 Keine Pflicht, leere Bereiche mit ungeprüften Akteuren zu füllen.
 Lange Prüfhinweise, Abdeckungsmatrix und Register aufklappbar; wesentliche
 Unsicherheiten trotzdem am betroffenen Claim/Verbindungsdetail sichtbar halten.
