@@ -1,0 +1,37 @@
+{
+  "run_id": "2026-10-12-rheinmetall",
+  "company": "Rheinmetall",
+  "as_of": "2026-10-12",
+  "version": 1,
+  "comparison_unit": "Boden- und fahrzeuggestützte Flugabwehrsysteme im Nah- und Nächstbereich bis Kurzstrecke (SHORAD/VSHORAD/C-UAS) einschließlich Feuerleitung, Effektoren und Systemintegration",
+  "purpose": "Rheinmetalls Flugabwehrangebot mit vergleichbaren Anbietern hinsichtlich Integrationsmodell, belegtem Einsatz-/Kundenstatus, industrieller Lieferfähigkeit und Marktzugang in den Golfstaaten vergleichen",
+  "peer_groups": [
+    "Rohr-/Hybrid-Flugabwehr und C-UAS im Nächstbereich",
+    "Lenkflugkörperbasierte Kurzstrecken-Flugabwehr",
+    "Regionale Golf-Anbieter und Integratoren"
+  ],
+  "criteria": [
+    {"id": "effector_mix", "label": "Effektoren & Schichtabdeckung", "display_type": "Profil",
+     "question": "Welche Effektoren (Rohr, Lenkflugkörper, Laser/HEL, Elektronik) und welche Reichweitenschicht deckt das Angebot ab?",
+     "evidence_required": "Hersteller-/Kundendokumentation zu Effektoren und Einsatzspektrum",
+     "applicability": "alle Peers", "rationale": "Nutzerthema Flugabwehr; Vergleichbarkeit der Systemklasse"},
+    {"id": "integration", "label": "Integrationsmodell", "display_type": "Profil",
+     "question": "Wie werden Sensoren, Feuerleitung und Effektoren integriert (Plattformen, offene Architektur, Anbindung an übergeordnete Führung)?",
+     "evidence_required": "Dokumentierte Plattform-/Schnittstellen-/Integrationsbelege",
+     "applicability": "alle Peers", "rationale": "Systemintegration ist zentral für Flugabwehrnetzwerke"},
+    {"id": "customer_status", "label": "Belegter Kunden-/Einsatzstatus", "display_type": "Evidenzstufe",
+     "question": "Welcher höchste Kunden-/Einsatzstatus ist öffentlich belegt?",
+     "evidence_required": "Vertrag, Lieferung oder Einsatz mit benanntem staatlichen Kunden",
+     "applicability": "alle Peers", "rationale": "Angebot von belegter Umsetzung unterscheiden",
+     "anchors": {"1": "Angebot/Prototyp dokumentiert", "2": "Erprobung/Demonstration mit Streitkräften dokumentiert", "3": "Vertrag mit benanntem staatlichen Kunden", "4": "Lieferung an benannten Kunden berichtet", "5": "Einsatz in realer Bedrohungslage berichtet"}},
+    {"id": "industrial_capacity", "label": "Industrielle Lieferfähigkeit", "display_type": "Profil",
+     "question": "Welche Fertigungsstandorte, Kapazitätsausbauten oder Munitions-/Flugkörperproduktion sind belegt?",
+     "evidence_required": "Standort-/Kapazitäts-/Produktionsbelege",
+     "applicability": "alle Peers", "rationale": "Lieferfähigkeit bei hoher Nachfrage"},
+    {"id": "gulf_access", "label": "Marktzugang Golfstaaten", "display_type": "Evidenzstufe",
+     "question": "Welcher höchste Grad an Präsenz/Marktzugang in GCC-Staaten ist öffentlich belegt?",
+     "evidence_required": "Kundenverträge, lokale Gesellschaften/JV, Offset-/Lokalisierungsvereinbarungen, Messeauftritte in GCC",
+     "applicability": "alle Peers", "rationale": "Nutzerthema Marktzugang Golfstaaten",
+     "anchors": {"1": "Vermarktung/Messepräsenz in GCC belegt", "2": "Partner-/Kooperationsvereinbarung in GCC belegt", "3": "Vertrag mit GCC-Staatskunden belegt", "4": "Lokale Gesellschaft/JV oder Fertigung in GCC belegt", "5": "Mehrere GCC-Kunden und lokale Fertigung/Industrialisierung belegt"}}
+  ]
+}
