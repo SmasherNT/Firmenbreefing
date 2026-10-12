@@ -1129,6 +1129,21 @@
       "depth_reason": "Grundlage einer Matrixbeobachtung"
     },
     {
+      "id": "M-MBDA-002",
+      "statement": "Die Saudi Arabian National Guard bestätigte laut Janes im November 2021 per Foto den Erwerb von VL MICA (Starter in Riad, zudem MPCV mit Mistral); MBDA und Frankreich bestätigten den Verkauf nicht.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-dd897c36830d9e37"
+      ],
+      "evidence": "Paraphrase: SANG veröffentlichte am 9.11.2021 Foto eines VL-MICA-Starters in Riad; MPCV mit Mistral sichtbar; weder französische Regierung noch MBDA bestätigten; 2013 berichtete La Tribune 150 Mio. EUR.",
+      "location": "Artikel vom 11.11.2021, Absätze 1–5",
+      "uncertainty": "Indirekte Bestätigung über Kundenfoto; kein Vertragswert offiziell.",
+      "proposed_depth": "A",
+      "depth_reason": "Grundlage einer Matrixbeobachtung",
+      "event_date": "2021-11-09",
+      "event_status": "Lieferung berichtet"
+    },
+    {
       "id": "M-OM-001",
       "statement": "Oman wählte 2014 laut Shephard NASAMS über einen Direct-Commercial-Sales-Vertrag mit Raytheon über 1,28 Mrd. USD; Oman war damit siebter NASAMS-Kunde und erster am Golf, Kongsberg Partner und Unterauftragnehmer.",
       "kind": "Fakt",
@@ -1836,6 +1851,21 @@
       "depth_reason": "Kundenauftrag",
       "event_date": "2025-12",
       "event_status": "beauftragt"
+    },
+    {
+      "id": "P-SR30-06",
+      "statement": "Ungarn erteilte Rheinmetall am 15.12.2023 einen Entwicklungsauftrag (knapp 30 Mio. EUR) für einen Skyranger-30-Turm für die künftige Flugabwehrvariante des Lynx KF41; Rheinmetall nennt Kompatibilität u. a. mit Mistral, Stinger und Chiron.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-d2ef86f50f08a3d3"
+      ],
+      "evidence": "Auszug: 'Hungary ... has awarded Rhein­metall a contract for the conceptual development of the Skyranger 30 turret for the future Lynx KF41 Mobile Air Defence Vehicle. The contract has been signed on 15th December 2023 in Budapest.'",
+      "location": "Pressemitteilung 20.12.2023, Key facts und Absätze 1–2",
+      "uncertainty": "Ein späterer ungarischer Serienauftrag wurde in den geöffneten Quellen nicht gefunden.",
+      "proposed_depth": "A",
+      "depth_reason": "Entwicklungsauftrag",
+      "event_date": "2023-12-15",
+      "event_status": "Entwicklungsauftrag"
     },
     {
       "id": "P-SR30-07",
@@ -3051,6 +3081,15 @@
       "source_kind": "Herstellerangabe (Pressemitteilung)"
     },
     {
+      "id": "S-d2ef86f50f08a3d3",
+      "name": "Rheinmetall AG",
+      "title": "Breakthrough for Skyranger 30 air defence system: Rheinmetall awarded development contract for Skyranger variant of Lynx in Hungary",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2023/12/2023-12-20-lynx-with-skyranger-30-for-hungary",
+      "published_date": "2023-12-20",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Herstellerangabe (Pressemitteilung)"
+    },
+    {
       "id": "S-d401a7e147a6b2d4",
       "name": "Argaam",
       "title": "Switzerland set to transfer military resources, skills to Saudi Arabia in coming months",
@@ -3076,6 +3115,15 @@
       "published_date": "2026-03-11",
       "accessed_date": "2026-10-12",
       "source_kind": "Sekundärquelle (Fachmedium; Wiedergabe von Aussagen der Bilanzpressekonferenz)"
+    },
+    {
+      "id": "S-dd897c36830d9e37",
+      "name": "Janes",
+      "title": "SANG confirms VL MICA acquisition",
+      "url": "https://janes.com/osint-insights/defence-news/defence/sang-confirms-vl-mica-acquisition",
+      "published_date": "2021-11-11",
+      "accessed_date": "2026-10-12",
+      "source_kind": "Sekundärquelle (Fachmedium)"
     },
     {
       "id": "S-e07bb2a244b7af05",
@@ -3317,6 +3365,7 @@
     "M-KW-001": "5fb5183d9af15eee80a74677f11a746586aaac35f3fd2f2eb0cbd5cf1b404885",
     "M-KW-002": "7e97ece4f38db167d73a738e5d4fd1eb3b73aa6e26412cadffd8ec88be63745a",
     "M-MBDA-001": "b1fff26e038160a3c6c1a9223265c6da76bfbe865e616f2d48ed5eb147513f93",
+    "M-MBDA-002": "20db6e6e071444b01b6ee49d3b314ee9aaee468761ffab2ccda4bc77c24935c3",
     "M-OM-001": "d69d2db8a0e81558fa889403519ff27e6038af162abec16c3829a9e8456addce",
     "M-QA-001": "1d46da12270141667420071cc97918178dfb301b435b34139d0a90a6b8d08dab",
     "M-QA-002": "5f345e6a38bb08aaf2626c337beaa46212981ef47fb3a6ba3a723f3cb9796980",
@@ -3356,6 +3405,7 @@
     "P-SR30-03": "0e7d915880d71f6ce59ae5deba4378f41790bfb68dc0258ea5b1e4ceff67bed4",
     "P-SR30-04": "760cb8906a11fc78001b88257213c434922705546e912f9d6f08cf1a7a0b23ca",
     "P-SR30-05": "cab52b2a7ab70e00aa03d3391a07fdd4279246f00f19136003f0c16fd2834650",
+    "P-SR30-06": "398af4be4822688a549a48a6cd7a12020bf65879aadd41e00623be56547bd918",
     "P-SR30-07": "f4ee9b909f60495bc426eee68e7d98bde5d0fd7ad9bc3fab8c8e3903d5126866",
     "P-SR30-08": "4120a69cc0bbf7fd529c33753e2d9783ab8c0e951bae980a215abdd36cd3c293",
     "P-SR30HEL-01": "e934e76af9126716412915778b261649dfba0736f7d4838f16f3b1c019e7f01a",
@@ -3406,7 +3456,8 @@
         "M-AE-002",
         "M-AE-004",
         "M-AE-005",
-        "M-SAAB-003"
+        "M-SAAB-003",
+        "M-GCC-006"
       ],
       "reasoning": "Belegt sind Golf-Tochtergesellschaften in Abu Dhabi/Sharjah und ein Simulationsvertrag ohne Flugabwehrbezug. EDGE, Saab, EOS und KM-SAM prägen das Umfeld.",
       "method": "Qualitative Länder-Einordnung, kein Präsenzscore",
@@ -3432,7 +3483,7 @@
     {
       "id": "I-RG-SA",
       "section": "regions",
-      "statement": "Saudi-Arabien: Rheinmetall-Bezug über Skyguard-Bestand, Millennium Gun auf Korvetten, RADARABIA (20 %) und RAST; Markt mit größtem SIPRI-Budget im GCC und hohen Lokalisierungszielen.",
+      "statement": "Saudi-Arabien: Rheinmetall-Bezug über Skyguard-Bestand, Millennium Gun auf Korvetten, RADARABIA (20 %) und RAST; Markt mit hohem SIPRI-Ausgabenschätzwert und ambitionierten Lokalisierungszielen.",
       "depends_on": [
         "C-010",
         "P-MG-02",
@@ -3441,11 +3492,13 @@
         "C-012",
         "C-011",
         "M-GCC-008",
+        "M-GCC-009",
         "M-SA-001",
         "M-SA-003",
+        "M-MBDA-002",
         "M-EXP-003"
       ],
-      "reasoning": "SIPRI schätzt 83,2 Mrd. USD Militärausgaben 2025; LIG Nex1 (M-SAM II) und MBDA (VL MICA) sind als Wettbewerber belegt. Rheinmetalls Belege sind überwiegend Medien-/Bildauswertungen und Beteiligungsangaben.",
+      "reasoning": "SIPRI schätzt 83,2 Mrd. USD Militärausgaben 2025 (Rang 8 weltweit; ein GCC-Vergleich ist mangels SIPRI-Werten für VAE, Katar und Bahrain nicht möglich); LIG Nex1 (M-SAM II) und MBDA (VL MICA) sind als Wettbewerber belegt. Rheinmetalls Belege sind überwiegend Medien-/Bildauswertungen und Beteiligungsangaben.",
       "method": "Qualitative Länder-Einordnung, kein Präsenzscore",
       "uncertainty": "Werkstatus RADARABIA und Skyguard-Vertrag nicht belegt."
     },
@@ -3589,7 +3642,7 @@
     {
       "id": "I-GM-02",
       "section": "topic:gulf_market",
-      "statement": "Das Wettbewerbsumfeld ist im oberen Abwehrbereich von US-Systemen geprägt und diversifiziert sich im Nächstbereich mit neuen Anbietern aus Korea, den USA, Großbritannien, Australien und den VAE.",
+      "statement": "Das Wettbewerbsumfeld ist im oberen Abwehrbereich von US-Systemen geprägt und diversifiziert sich mit weiteren Anbietern: in der Mittelstrecke (u. a. KM-SAM, NASAMS) sowie bei Drohnenabwehr mit Anbietern aus den USA, Großbritannien, Australien und den VAE.",
       "depends_on": [
         "M-GCC-005",
         "M-GCC-006",
@@ -3601,7 +3654,7 @@
         "M-GCC-007",
         "I-MX-kongsberg_rtx-gulf_access"
       ],
-      "reasoning": "Patriot ist Hauptschicht in fünf GCC-Staaten, NASAMS ist in Oman, Katar und Kuwait vertraglich belegt; KM-SAM, Anduril (Kuwait, nur FMS-Billigung), EOS Slinger (VAE) und Skyhammer treten hinzu. Lokale EDGE-Soft-Kill-Lösungen prägen laut EDGE die VAE-Drohnenabwehr.",
+      "reasoning": "Patriot ist Hauptschicht in fünf GCC-Staaten, NASAMS ist in Oman, Katar und Kuwait vertraglich belegt; die Mittelstrecken-KM-SAM sowie im C-UAS-Bereich Anduril (Kuwait, nur FMS-Billigung), EOS Slinger (VAE) und Skyhammer treten hinzu. Lokale EDGE-Soft-Kill-Lösungen prägen laut EDGE die VAE-Drohnenabwehr.",
       "method": "Qualitative Einordnung aus geprüften Fakten",
       "uncertainty": "Mehrere Angaben aus Think-Tank-Zusammenstellung bzw. Unternehmensaussagen; Endnutzer Slinger nicht genannt."
     },
@@ -3628,7 +3681,7 @@
     {
       "id": "I-GM-01",
       "section": "topic:gulf_market",
-      "statement": "Die Golfstaaten stehen seit März 2026 unter wiederholten iranischen Raketen- und Drohnenangriffen, wodurch Nächstbereichs- und Drohnenabwehr akut nachgefragt ist.",
+      "statement": "Die Golfstaaten stehen seit Ende Februar/Anfang März 2026 unter wiederholten iranischen Raketen- und Drohnenangriffen, wodurch Nächstbereichs- und Drohnenabwehr akut nachgefragt ist.",
       "depends_on": [
         "M-GCC-001",
         "M-GCC-002",
@@ -3667,13 +3720,15 @@
         "P-SR30-03",
         "P-SR30-04",
         "P-SR30-05",
+        "P-SR30-06",
+        "P-SR35-02",
         "P-SR35-03",
         "P-SNX-05",
         "P-SR30-08",
         "M-RHM-005",
         "I-PM-skyranger_30"
       ],
-      "reasoning": "Aufträge aus Deutschland, Österreich, Dänemark, Niederlande, Ungarn, Italien, Rumänien und für die Ukraine haben Lieferfenster vor allem 2026–2029. Rheinmetall nennt 70–100 Türme/Jahr und als Ziel bis zu 400 ab Ende 2027; die Einhaltung ist damit zentrale Umsetzungsfrage.",
+      "reasoning": "Aufträge aus Deutschland, Österreich, Dänemark, Niederlande, Italien und Rumänien haben Lieferfenster vor allem 2026–2029; hinzu kommen ein Entwicklungsauftrag Ungarns und ein Skyranger-35-Auftrag für die Ukraine ohne belegtes Lieferfenster. Rheinmetall nennt 70–100 Türme/Jahr und als Ziel bis zu 400 ab Ende 2027; die Einhaltung ist damit zentrale Umsetzungsfrage.",
       "method": "Qualitative Einordnung aus geprüften Fakten",
       "uncertainty": "Kapazität und Ausbau sind Herstellerangaben/-ziele; tatsächliche Serienlieferungen nicht belegt."
     },
@@ -3786,7 +3841,7 @@
       "id": "I-ES-05",
       "section": "executive_summary",
       "display_order": 5,
-      "headline": "Exportrahmen: Deutschland öffnet, Schweiz bleibt unklar",
+      "headline": "Exportrahmen: Deutschland erleichtert, Schweiz bleibt unklar",
       "preview": "AGG 48 erleichtert Luftverteidigungsexporte in alle GCC-Staaten bis 15.09.2027; Schweizer Praxis für Golfstaaten nicht belegt.",
       "statement": "Deutschland erleichtert mit der bis 15.09.2027 verlängerten AGG 48 Luft- und maritime Verteidigungsexporte in alle sechs GCC-Staaten, während für Lieferungen aus der Schweiz (Rheinmetall Air Defence AG) offen ist, wie der Bundesratsentscheid vom 20.03.2026 auf Golfstaaten angewandt wird.",
       "depends_on": [
@@ -3807,8 +3862,8 @@
       "section": "executive_summary",
       "display_order": 4,
       "headline": "Iran-Krieg erhöht Abwehrdruck und Diversifizierung am Golf",
-      "preview": "Seit März 2026 wiederholte Raketen- und Drohnenangriffe auf GCC-Staaten; Golfstaaten beschaffen zusätzlich bei mehreren Anbietern.",
-      "statement": "Die iranischen Angriffe auf Golfstaaten seit März 2026 und berichtete Engpässe bei Abfangflugkörpern gehen mit einer Diversifizierung der GCC-Beschaffung einher (u. a. KM-SAM, NASAMS Kuwait, Anduril-FMS-Billigung Kuwait, EOS Slinger VAE, Skyhammer).",
+      "preview": "Seit Ende Februar/Anfang März 2026 wiederholte Raketen- und Drohnenangriffe auf GCC-Staaten; Golfstaaten beschaffen zusätzlich bei mehreren Anbietern.",
+      "statement": "Die iranischen Angriffe auf Golfstaaten seit Ende Februar/Anfang März 2026 und berichtete Engpässe bei Abfangflugkörpern gehen mit einer Diversifizierung der GCC-Beschaffung einher (u. a. KM-SAM, NASAMS Kuwait, Anduril-FMS-Billigung Kuwait, EOS Slinger VAE, Skyhammer).",
       "depends_on": [
         "M-GCC-001",
         "M-GCC-002",
@@ -3846,7 +3901,7 @@
       "id": "I-ES-02",
       "section": "executive_summary",
       "display_order": 2,
-      "headline": "Skynex ist belegt im Einsatz, Skyranger im Lieferhochlauf",
+      "headline": "Skynex geliefert, laut Ukraine im Einsatz; Skyranger vor Serienlieferung",
       "preview": "Skynex mehrfach geliefert (Katar, Ukraine, Italien); Skyranger 30/35 vor allem beauftragt, Serienlieferungen 2026–2029 geplant.",
       "statement": "Rheinmetalls Flugabwehrportfolio hat mit Skynex ein mehrfach ausgeliefertes und laut ukrainischem Luftkommando eingesetztes System, während die Skyranger-Familie vor allem aus zahlreichen europäischen Aufträgen mit überwiegend geplanten Serienlieferungen besteht.",
       "depends_on": [
@@ -3867,14 +3922,14 @@
       "criterion_id": "customer_status",
       "cell_status": "bewertet",
       "value": 5,
-      "statement": "Für Skynex ist ein Einsatz in realer Bedrohungslage berichtet (Ukraine), Lieferungen an benannte Kunden (Italien, Katar, Ukraine) sind belegt.",
+      "statement": "Für Skynex ist ein Einsatz in realer Bedrohungslage berichtet (Ukraine), Lieferungen an benannte Kunden (Italien, Katar, Ukraine) sind berichtet; die Ukraine-Lieferung beruht auf Herstellerangaben.",
       "depends_on": [
         "M-RHM-004",
         "P-SNX-03",
         "P-SNX-05",
         "M-QA-005"
       ],
-      "reasoning": "Stufe 4 ist durch die Übergabe an das italienische Heer und die von Rheinmetall gegenüber Janes bestätigte Katar-Lieferung belegt; Stufe 5 stützt sich auf die vom ukrainischen Luftkommando veröffentlichte Aufnahme eines Kh-101-Abschusses durch Skynex. Allgemeine CEO-Aussagen zu Einsätzen im Nahen Osten wurden mangels benannter Länder nicht herangezogen.",
+      "reasoning": "Stufe 4 ist durch die Übergabe an das italienische Heer und die von Rheinmetall gegenüber Janes bestätigte Katar-Lieferung berichtet, die Ukraine-Lieferung nur über Herstellerangaben (P-SNX-03); Stufe 5 stützt sich auf die vom ukrainischen Luftkommando veröffentlichte Aufnahme eines Kh-101-Abschusses durch Skynex. Allgemeine CEO-Aussagen zu Einsätzen im Nahen Osten wurden mangels benannter Länder nicht herangezogen.",
       "method": "Evidenzstufe nach fixierten anchors (Plan v1), höchste belegte Stufe",
       "uncertainty": "Einsatzbericht stammt aus ukrainischem Staatsmedium, nicht unabhängig verifiziert; Ukraine-Vertragswert (160 vs. 182 Mio. EUR) uneinheitlich und hier nicht verwendet.",
       "next_stage_limit": "Höchste Ankerstufe; eine unabhängige Bestätigung des Einsatzergebnisses oder ein benannter Einsatz in einem GCC-Staat ist nicht belegt."
@@ -3986,7 +4041,7 @@
       "peer_id": "rheinmetall",
       "criterion_id": "industrial_capacity",
       "cell_status": "bewertet",
-      "value": "Laut Hersteller 70–100 Skyranger-Türme/Jahr, Ziel bis 400/Jahr ab Ende 2027; Fertigung an mehreren EU-Standorten",
+      "value": "Laut Hersteller 70–100 Skyranger-Türme/Jahr, Ziel bis 400/Jahr ab Ende 2027; Fertigung in CH, DE, IT und NL",
       "statement": "Rheinmetall nennt eine laufende Turmkapazität und ein deutliches Ausbauziel und verteilt die Flugabwehrfertigung auf mehrere europäische Standorte.",
       "depends_on": [
         "P-SR30-08",
@@ -3997,16 +4052,16 @@
         "P-GP-01",
         "M-EXP-006"
       ],
-      "reasoning": "Die Kapazitätswerte sind Unternehmensangaben, das 400er-Ziel ist ausdrücklich ein künftiges Ziel; Fertigung ist auf Zürich, Rom, Neuss und Ede verteilt, 35-mm-Munition entsteht in Unterlüß. Der Skynex-Großauftrag 2026 verteilt Arbeit auf Rheinmetall Italia (GU) und Schweizer/Deutsche Gesellschaften; SECO-Bewilligungen von über 1,6 Mrd. CHF für die Rheinmetall Air Defence AG (laut WOZ) zeigen das Exportvolumen des Schweizer Standorts.",
+      "reasoning": "Die Kapazitätswerte sind Unternehmensangaben, das 400er-Ziel ist ausdrücklich ein künftiges Ziel; Fertigung ist auf Zürich, Rom, Neuss und Ede verteilt, 35-mm-Munition entsteht in Unterlüß. Der Skynex-Großauftrag 2026 verteilt Arbeit auf Rheinmetall Italia (GU) und Schweizer/Deutsche Gesellschaften; SECO-Bewilligungen von über 1,6 Mrd. CHF für die Rheinmetall Air Defence AG (laut WOZ) zeigen das bewilligte Exportvolumen des Schweizer Standorts.",
       "method": "Qualitatives Profil nach Plan v1, kein Score",
       "uncertainty": "Keine belegte Ist-Produktion oder Auslieferungszahl pro Jahr; Bewilligungen sind keine tatsächlichen Ausfuhren."
     }
   ],
   "interpretation_fingerprints": {
     "I-RG-KW": "dc3e25329081c768c414f5986387945c566a47f58a920262b66a90863d233c51",
-    "I-RG-AE": "43fba82d033a4b89e88ff146f60c18d02522739094b506f41155c6fe9dcccb10",
+    "I-RG-AE": "026b5e0f857be0dff619eea071fe71f33f16a9aa727f2569d9be3bad83195dbc",
     "I-RG-QA": "2aaef2f2cb011b374db82310a9177c53ec01e6fb13f4b7a261591598eb3d8938",
-    "I-RG-SA": "e2569bba7e9b7e1741f8f5bfac1861fbe4bff8d4c9423051a3107653ee60750f",
+    "I-RG-SA": "2a76f025be2074081724a1ad4863d117fae9c1aca40d0b6fe63ebe23558f0841",
     "I-GM-06": "129d3f99d14c05139960c7f4862d68b37b5416610c63c84674529ac7ace6eb51",
     "I-MX-edge-integration": "98239688448ceef4686e45f1514c059ba435c0f755839e19c49804262ae9cb29",
     "I-GM-05": "5cd9f8641ec2db3677acfa8dbf014235206b6e93070ac3b16eab7a9969c3724d",
@@ -4014,27 +4069,27 @@
     "I-GM-04": "6997aaaaf877dee5523fb7ac2e4d02bdefdbaf0befd2781b23e4602ed237f8f3",
     "I-GM-03": "ca24124c30e261923aaa26d02b4d0e47d3b574750b6c80cd22169bb50caaf278",
     "I-MX-rheinmetall-gulf_access": "d9c332a2a9401011a9f6f0a7c88bcb2f65465af3b4f54c8ef47bf45a65c89f28",
-    "I-GM-02": "e2069feec38a1d02bbd2370ea161e5c89968f7a3fb6f7a6ae9a2da99399a66fa",
+    "I-GM-02": "a40409e77842bdc97fa0dbed3c4bd7db0af1e56149fb24afbfdc0ef5293abee5",
     "I-MX-kongsberg_rtx-gulf_access": "bbc0fa1f873976ae2df8ab0c6fcec67b84341f0bf60b65a936214396c897d08f",
-    "I-GM-01": "ce9f354ec2d1d2e28d7517681a99537adc03f7b03c38a2fef2751526c04c2a33",
+    "I-GM-01": "206f0ce6b316d7d98f83ee75994f3a343c62357756b4bfd8dcd1dda4223bde25",
     "I-AD-04": "cfb1d57b6683f85445b1a5b51f0face65009bbc362c66bd08ff6dc33be262b15",
-    "I-AD-02": "191b5b9fef1df9dda362862aba78726c17763a69510a2c8fa92030b8a556dded",
+    "I-AD-02": "639eab9208cd93f6191a14c63308843d1fd238f13ea4d489d496793f9a965603",
     "I-PM-skyranger_30": "af0287231a02169103f9442be23144748826fe83e80caee603f87cb97ef9c2e3",
     "I-AD-01": "868223f364ee74f458e52aefbe83b8439965acaca7b487852431ece5ac69fbb4",
     "I-MX-rheinmetall-effector_mix": "44bc3ab6885a164e8a3f78334a72d51efbf888f4024fd6085f3b1165def3b0ae",
     "I-ES-06": "c1ae94c76dd2cf1516317efaba347adbfb828ad02078bc7c9b0d7a840a7cc7be",
     "I-MX-edge-gulf_access": "86708458a84380860d43e233622b57a498cb252de3a1fdbdec0c6d1e826520c1",
-    "I-ES-05": "948d599a3063c7c348b06efd3a0a5eb2ae5f5086b1c08712a87f7829aeeb4515",
-    "I-ES-04": "86ac810006bc1ae8d35ce94132116959a83d9b5c702c13b2664bfa4145f566a6",
+    "I-ES-05": "c88d1ef59cd3d4421212973509e9b997ec0f2275ed4e46ea099632c2bc773134",
+    "I-ES-04": "0fb89c0aa67d6397c38d17502c506294be72cf46adf8c7d602bb685961eddb5f",
     "I-ES-03": "1cadcb73322dc58401441043ffe766a03621a1cbf5b7106931d44c8fb697fee5",
-    "I-ES-02": "451342cc1d2feb96afb570f4194c9f3820410754b8a84f77e2ea7b3dfff8786f",
-    "I-MX-rheinmetall-customer_status": "62243e28b61cf90ab595ba2db31e6c5b62a32e09cbd8de79e2ac7502a683dff8",
+    "I-ES-02": "9a5623481f73fdf4fdcb8509966a3c42bbfe54f0617b45f654fb99027a86ac5f",
+    "I-MX-rheinmetall-customer_status": "f8698b6121f54a25b92589235861fbaedf5b3e2105fed6b47e2e4b294a27bc4d",
     "I-PM-skyranger_35": "b2081fa3841ee67282c385cb6f38a63d9ecb459cc8507c4a24d85e3d315357ce",
     "I-PM-skynex": "d169fb9253f7ee9fb5e6d74e53b480d89e5bb9e544c55848cb85899073f9d3db",
     "I-ES-01": "e5dd76af3f440851d2cc330fd9e6ee3d3ed44bdc4c3f4d02826104ce4179b36d",
     "I-PM-skynex_skyknight": "44f45014757e0c0a82567fe912dcafeb5299beafd08d41a350119bcd638a7717",
     "I-MX-rheinmetall-integration": "db23f0f7c99c702e7c0e1c14f98291f8ac080f1b19142be490b4b494a23eb354",
-    "I-MX-rheinmetall-industrial_capacity": "c66702b786f279c948ac541dd667d9cbfeef03a4e1bc985b981d86cf0aba0aba"
+    "I-MX-rheinmetall-industrial_capacity": "24b42a3cef704473ec6f6071b6825de4551922b061b180225964b1f748f105ac"
   },
   "upstream_plan_fingerprints": {
     "I-RG-KW": "23d3050702b754375a8d6f32e2fe5bb0d89276aca40bf89bcc71bc5589b7d8f4",
@@ -4120,5 +4175,5 @@
       "document_scope": "Öffentliche Quellen, abgerufen am 2026-10-12. Kennzahlen gelten nur in der jeweils genannten Methode/Einheit/Zeitraum. Rheinmetall-Präsenz ist getrennt vom allgemeinen Markt in eigenen Abschnitten ausgewiesen; ausführliche Rheinmetall-Produkt-/Beteiligungsfakten verantworten Portfolio und Cluster."
     }
   ],
-  "fingerprint": "dbae13da74981ca84014db4a0556b9afe1dec5ffbadaa114eb72f74f60d0a936"
+  "fingerprint": "8ffff312242b5da66dbb03ed21b00b220652bc1573ef5de6e4e2154fcdc8424f"
 }

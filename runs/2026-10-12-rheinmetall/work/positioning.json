@@ -64,14 +64,14 @@
    "criterion_id": "customer_status",
    "cell_status": "bewertet",
    "value": 5,
-   "statement": "Für Skynex ist ein Einsatz in realer Bedrohungslage berichtet (Ukraine), Lieferungen an benannte Kunden (Italien, Katar, Ukraine) sind belegt.",
+   "statement": "Für Skynex ist ein Einsatz in realer Bedrohungslage berichtet (Ukraine), Lieferungen an benannte Kunden (Italien, Katar, Ukraine) sind berichtet; die Ukraine-Lieferung beruht auf Herstellerangaben.",
    "depends_on": [
     "M-RHM-004",
     "P-SNX-03",
     "P-SNX-05",
     "M-QA-005"
    ],
-   "reasoning": "Stufe 4 ist durch die Übergabe an das italienische Heer und die von Rheinmetall gegenüber Janes bestätigte Katar-Lieferung belegt; Stufe 5 stützt sich auf die vom ukrainischen Luftkommando veröffentlichte Aufnahme eines Kh-101-Abschusses durch Skynex. Allgemeine CEO-Aussagen zu Einsätzen im Nahen Osten wurden mangels benannter Länder nicht herangezogen.",
+   "reasoning": "Stufe 4 ist durch die Übergabe an das italienische Heer und die von Rheinmetall gegenüber Janes bestätigte Katar-Lieferung berichtet, die Ukraine-Lieferung nur über Herstellerangaben (P-SNX-03); Stufe 5 stützt sich auf die vom ukrainischen Luftkommando veröffentlichte Aufnahme eines Kh-101-Abschusses durch Skynex. Allgemeine CEO-Aussagen zu Einsätzen im Nahen Osten wurden mangels benannter Länder nicht herangezogen.",
    "method": "Evidenzstufe nach fixierten anchors (Plan v1), höchste belegte Stufe",
    "uncertainty": "Einsatzbericht stammt aus ukrainischem Staatsmedium, nicht unabhängig verifiziert; Ukraine-Vertragswert (160 vs. 182 Mio. EUR) uneinheitlich und hier nicht verwendet.",
    "next_stage_limit": "Höchste Ankerstufe; eine unabhängige Bestätigung des Einsatzergebnisses oder ein benannter Einsatz in einem GCC-Staat ist nicht belegt."
@@ -83,7 +83,7 @@
    "peer_id": "rheinmetall",
    "criterion_id": "industrial_capacity",
    "cell_status": "bewertet",
-   "value": "Laut Hersteller 70–100 Skyranger-Türme/Jahr, Ziel bis 400/Jahr ab Ende 2027; Fertigung an mehreren EU-Standorten",
+   "value": "Laut Hersteller 70–100 Skyranger-Türme/Jahr, Ziel bis 400/Jahr ab Ende 2027; Fertigung in CH, DE, IT und NL",
    "statement": "Rheinmetall nennt eine laufende Turmkapazität und ein deutliches Ausbauziel und verteilt die Flugabwehrfertigung auf mehrere europäische Standorte.",
    "depends_on": [
     "P-SR30-08",
@@ -94,7 +94,7 @@
     "P-GP-01",
     "M-EXP-006"
    ],
-   "reasoning": "Die Kapazitätswerte sind Unternehmensangaben, das 400er-Ziel ist ausdrücklich ein künftiges Ziel; Fertigung ist auf Zürich, Rom, Neuss und Ede verteilt, 35-mm-Munition entsteht in Unterlüß. Der Skynex-Großauftrag 2026 verteilt Arbeit auf Rheinmetall Italia (GU) und Schweizer/Deutsche Gesellschaften; SECO-Bewilligungen von über 1,6 Mrd. CHF für die Rheinmetall Air Defence AG (laut WOZ) zeigen das Exportvolumen des Schweizer Standorts.",
+   "reasoning": "Die Kapazitätswerte sind Unternehmensangaben, das 400er-Ziel ist ausdrücklich ein künftiges Ziel; Fertigung ist auf Zürich, Rom, Neuss und Ede verteilt, 35-mm-Munition entsteht in Unterlüß. Der Skynex-Großauftrag 2026 verteilt Arbeit auf Rheinmetall Italia (GU) und Schweizer/Deutsche Gesellschaften; SECO-Bewilligungen von über 1,6 Mrd. CHF für die Rheinmetall Air Defence AG (laut WOZ) zeigen das bewilligte Exportvolumen des Schweizer Standorts.",
    "method": "Qualitatives Profil nach Plan v1, kein Score",
    "uncertainty": "Keine belegte Ist-Produktion oder Auslieferungszahl pro Jahr; Bewilligungen sind keine tatsächlichen Ausfuhren."
   },
@@ -216,11 +216,11 @@
    "criterion_id": "effector_mix",
    "cell_status": "bewertet",
    "value": "Bodengestützte Lenkflugkörper-Flugabwehr IRIS-T SLM (Startgerät und Flugkörper von Diehl); keine Rohr- oder Lasereffektoren im Peer-Angebot belegt",
-   "statement": "Diehl deckt mit IRIS-T SLM die Lenkflugkörperschicht oberhalb des rohrbasierten Nächstbereichs ab.",
+   "statement": "Diehl deckt mit IRIS-T SLM die bodengestützte Lenkflugkörper-Flugabwehr ab.",
    "depends_on": [
     "M-DIE-001"
    ],
-   "reasoning": "Belegt ist IRIS-T SLM mit eigenem Flugkörper und Startgerät. Die genaue Reichweitenschicht ist im Kontext nicht beziffert; nach Plan liegt das System im Kurz- bis Mittelstreckenbereich.",
+   "reasoning": "Belegt ist IRIS-T SLM mit eigenem Flugkörper und Startgerät. Reichweite und Abdeckungsschicht sind im Kontext nicht beziffert.",
    "method": "Qualitatives Profil nach Plan v1, kein Score",
    "uncertainty": "Reichweitenwerte nicht im Kontext belegt."
   },
@@ -386,15 +386,15 @@
    "peer_id": "mbda",
    "criterion_id": "effector_mix",
    "cell_status": "bewertet",
-   "value": "Kurzstrecken-Lenkflugkörper VL MICA (MICA RF/IR) und Mistral; MBDA liefert zudem Flugkörper für Rheinmetall-Skyranger (Mistral, DefendAir)",
-   "statement": "MBDA ist reiner Lenkflugkörperanbieter und zugleich Effektorlieferant für Rheinmetalls Skyranger.",
+   "value": "Kurzstrecken-Lenkflugkörper VL MICA (MICA RF/IR) und Mistral; zudem für Rheinmetall-Skyranger vorgesehen (Mistral, DefendAir)",
+   "statement": "MBDA ist reiner Lenkflugkörperanbieter; seine Flugkörper sind zudem als Effektoren für Rheinmetalls Skyranger vorgesehen.",
    "depends_on": [
     "M-MBDA-001",
     "M-MBDA-002",
     "P-SR30-03",
     "C-029"
    ],
-   "reasoning": "VL MICA und Mistral decken die Kurzstrecken- bzw. VSHORAD-Flugkörperschicht ab. Mistral auf Skyranger 30 (Österreich) und DefendAir für Skyranger 30 machen MBDA zum komplementären Partner Rheinmetalls.",
+   "reasoning": "VL MICA und Mistral decken die Kurzstrecken- bzw. VSHORAD-Flugkörperschicht ab. Mistral ist für die österreichischen Skyranger 30 vorgesehen (Lieferbeginn unbestätigt), DefendAir für Skyranger 30 (gebilligte Finanzierung ohne benannten Auftragnehmer); MBDA ist damit vorgesehener komplementärer Partner Rheinmetalls.",
    "method": "Qualitatives Profil nach Plan v1, kein Score",
    "uncertainty": "Reichweiten nicht im Kontext beziffert; Auftragnehmer der SADM-Rahmenvereinbarung vom BMVg nicht benannt."
   },
@@ -773,9 +773,9 @@
     "P-SG-01",
     "C-019"
    ],
-   "reasoning": "Die per Bild-/Satellitenauswertung berichtete Skyguard-3-Installation auf der saudischen Marinebasis Al-Jubail und der langjährige Skyguard-Einsatz in Kuwait zum Infrastrukturschutz tragen Stufe 5. Skyguard Next Generation (Österreich) und die GDF-Modernisierung (Rumänien) sind getrennt als Stufe-4-Kundenprogramme einzuordnen.",
+   "reasoning": "Die per Bild-/Satellitenauswertung berichtete Skyguard-3-Installation auf der saudischen Marinebasis Al-Jubail (seit Juni/Juli 2019) trägt Stufe 5; der Bericht von 2013 über langjährigen Skyguard-Einsatz in Kuwait zum Infrastrukturschutz betrifft Skyguard allgemein, nicht ausdrücklich Skyguard 3. Skyguard Next Generation (Österreich) und die GDF-Modernisierung (Rumänien) sind getrennt als Stufe-4-Kundenprogramme einzuordnen.",
    "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
-   "uncertainty": "Saudi-Beleg ist Medienauswertung ohne Vertrag; Kuwait-Nutzung nur bis 2013 belegt.",
+   "uncertainty": "Belege stammen von 2013 (Kuwait) und 2019 (Saudi-Arabien); Saudi-Beleg ist Medienauswertung ohne Vertrag, aktuelle Nutzung nicht belegt.",
    "next_stage_limit": "Laufende Serienfertigung oder wiederholte Auslieferung der aktuellen Konfiguration ist nicht belegt."
   },
   {
@@ -810,7 +810,8 @@
     "P-SNX-09",
     "P-SNX-11",
     "M-RHM-002",
-    "P-SNX-05"
+    "P-SNX-05",
+    "M-QA-005"
    ],
    "reasoning": "Das katarische Video zeigt acht Revolver Gun Mk3, die Italien-Batterie umfasst vier Geschütze; damit sind Auslieferungen an mindestens zwei benannte Kunden belegt (Stufe 6).",
    "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
@@ -889,9 +890,10 @@
     "P-SNX-09",
     "P-SNX-05",
     "M-RHM-002",
-    "P-SG-03"
+    "P-SG-03",
+    "P-SNX-11"
    ],
-   "reasoning": "Das katarische Video zeigt ein X-TAR3D, die Italien-Batterie wurde in X-TAR3D-Konfiguration übergeben; dazu kommen der Rumänien-Auftrag und der Auftrag von 2019 (Stufe 6 durch wiederholte Auslieferung).",
+   "reasoning": "Das katarische Video zeigt ein X-TAR3D, die Italien-Batterie wurde in X-TAR3D-Konfiguration übergeben; diese beiden Auslieferungen tragen Stufe 6 (wiederholte Auslieferung). Der Rumänien-Auftrag und der Auftrag von 2019 sind Kundenprogramme und kein Stufe-6-Beleg.",
    "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
    "uncertainty": "Reichweitenangaben 50 vs. 55 km auf Herstellerseiten uneinheitlich (nicht verwendet).",
    "next_stage_limit": "Höchste Stufe; Jahresliefermengen nicht veröffentlicht."
@@ -1076,7 +1078,7 @@
    "id": "I-ES-02",
    "section": "executive_summary",
    "display_order": 2,
-   "headline": "Skynex ist belegt im Einsatz, Skyranger im Lieferhochlauf",
+   "headline": "Skynex geliefert, laut Ukraine im Einsatz; Skyranger vor Serienlieferung",
    "preview": "Skynex mehrfach geliefert (Katar, Ukraine, Italien); Skyranger 30/35 vor allem beauftragt, Serienlieferungen 2026–2029 geplant.",
    "statement": "Rheinmetalls Flugabwehrportfolio hat mit Skynex ein mehrfach ausgeliefertes und laut ukrainischem Luftkommando eingesetztes System, während die Skyranger-Familie vor allem aus zahlreichen europäischen Aufträgen mit überwiegend geplanten Serienlieferungen besteht.",
    "depends_on": [
@@ -1112,8 +1114,8 @@
    "section": "executive_summary",
    "display_order": 4,
    "headline": "Iran-Krieg erhöht Abwehrdruck und Diversifizierung am Golf",
-   "preview": "Seit März 2026 wiederholte Raketen- und Drohnenangriffe auf GCC-Staaten; Golfstaaten beschaffen zusätzlich bei mehreren Anbietern.",
-   "statement": "Die iranischen Angriffe auf Golfstaaten seit März 2026 und berichtete Engpässe bei Abfangflugkörpern gehen mit einer Diversifizierung der GCC-Beschaffung einher (u. a. KM-SAM, NASAMS Kuwait, Anduril-FMS-Billigung Kuwait, EOS Slinger VAE, Skyhammer).",
+   "preview": "Seit Ende Februar/Anfang März 2026 wiederholte Raketen- und Drohnenangriffe auf GCC-Staaten; Golfstaaten beschaffen zusätzlich bei mehreren Anbietern.",
+   "statement": "Die iranischen Angriffe auf Golfstaaten seit Ende Februar/Anfang März 2026 und berichtete Engpässe bei Abfangflugkörpern gehen mit einer Diversifizierung der GCC-Beschaffung einher (u. a. KM-SAM, NASAMS Kuwait, Anduril-FMS-Billigung Kuwait, EOS Slinger VAE, Skyhammer).",
    "depends_on": [
     "M-GCC-001",
     "M-GCC-002",
@@ -1133,7 +1135,7 @@
    "id": "I-ES-05",
    "section": "executive_summary",
    "display_order": 5,
-   "headline": "Exportrahmen: Deutschland öffnet, Schweiz bleibt unklar",
+   "headline": "Exportrahmen: Deutschland erleichtert, Schweiz bleibt unklar",
    "preview": "AGG 48 erleichtert Luftverteidigungsexporte in alle GCC-Staaten bis 15.09.2027; Schweizer Praxis für Golfstaaten nicht belegt.",
    "statement": "Deutschland erleichtert mit der bis 15.09.2027 verlängerten AGG 48 Luft- und maritime Verteidigungsexporte in alle sechs GCC-Staaten, während für Lieferungen aus der Schweiz (Rheinmetall Air Defence AG) offen ist, wie der Bundesratsentscheid vom 20.03.2026 auf Golfstaaten angewandt wird.",
    "depends_on": [
@@ -1252,20 +1254,22 @@
     "P-SR30-03",
     "P-SR30-04",
     "P-SR30-05",
+    "P-SR30-06",
+    "P-SR35-02",
     "P-SR35-03",
     "P-SNX-05",
     "P-SR30-08",
     "M-RHM-005",
     "I-PM-skyranger_30"
    ],
-   "reasoning": "Aufträge aus Deutschland, Österreich, Dänemark, Niederlande, Ungarn, Italien, Rumänien und für die Ukraine haben Lieferfenster vor allem 2026–2029. Rheinmetall nennt 70–100 Türme/Jahr und als Ziel bis zu 400 ab Ende 2027; die Einhaltung ist damit zentrale Umsetzungsfrage.",
+   "reasoning": "Aufträge aus Deutschland, Österreich, Dänemark, Niederlande, Italien und Rumänien haben Lieferfenster vor allem 2026–2029; hinzu kommen ein Entwicklungsauftrag Ungarns und ein Skyranger-35-Auftrag für die Ukraine ohne belegtes Lieferfenster. Rheinmetall nennt 70–100 Türme/Jahr und als Ziel bis zu 400 ab Ende 2027; die Einhaltung ist damit zentrale Umsetzungsfrage.",
    "method": "Qualitative Einordnung aus geprüften Fakten",
    "uncertainty": "Kapazität und Ausbau sind Herstellerangaben/-ziele; tatsächliche Serienlieferungen nicht belegt."
   },
   {
    "id": "I-AD-03",
    "section": "topic:air_defence",
-   "statement": "Im Vergleich nimmt Rheinmetall beim belegten Einsatzstatus wie NASAMS, IRIS-T SLM, Thales-LMM und EDGE-Soft-Kill die höchste Stufe ein; das Unterscheidungsmerkmal ist der rohrbasierte Nächstbereich, nicht ein Rangplatz.",
+   "statement": "Im Vergleich nimmt Rheinmetall (bezogen auf Skynex) beim belegten Einsatzstatus wie NASAMS, IRIS-T SLM, Thales-LMM und EDGE-Soft-Kill die höchste Stufe ein; das Unterscheidungsmerkmal ist der rohrbasierte Nächstbereich, nicht ein Rangplatz.",
    "depends_on": [
     "I-MX-rheinmetall-customer_status",
     "I-MX-kongsberg_rtx-customer_status",
@@ -1275,7 +1279,7 @@
     "I-MX-saab-customer_status",
     "I-MX-mbda-customer_status"
    ],
-   "reasoning": "Fünf von sieben Peers erreichen Evidenzstufe 5, Saab und MBDA Stufe 4 mangels berichteten Einsatzes; die Stufen sind ordinale Evidenzreife, keine Leistungsmessung. Die Peers decken überwiegend Lenkflugkörperschichten ab und sind daher teils komplementär zu Rheinmetall.",
+   "reasoning": "Fünf von sieben Peers erreichen Evidenzstufe 5, bei Rheinmetall gestützt auf den berichteten Skynex-Einsatz; Saab und MBDA Stufe 4 mangels berichteten Einsatzes; die Stufen sind ordinale Evidenzreife, keine Leistungsmessung. Die Peers decken überwiegend Lenkflugkörperschichten ab und sind daher teils komplementär zu Rheinmetall.",
    "method": "Vergleich der Evidenzstufen ohne Gesamt-Ranking",
    "uncertainty": "Einsatzberichte überwiegend Regierungs-/Herstellerangaben; Thales- und EDGE-Stufe gelten nur für Teil-Effektoren."
   },
@@ -1317,7 +1321,7 @@
   {
    "id": "I-GM-01",
    "section": "topic:gulf_market",
-   "statement": "Die Golfstaaten stehen seit März 2026 unter wiederholten iranischen Raketen- und Drohnenangriffen, wodurch Nächstbereichs- und Drohnenabwehr akut nachgefragt ist.",
+   "statement": "Die Golfstaaten stehen seit Ende Februar/Anfang März 2026 unter wiederholten iranischen Raketen- und Drohnenangriffen, wodurch Nächstbereichs- und Drohnenabwehr akut nachgefragt ist.",
    "depends_on": [
     "M-GCC-001",
     "M-GCC-002",
@@ -1332,7 +1336,7 @@
   {
    "id": "I-GM-02",
    "section": "topic:gulf_market",
-   "statement": "Das Wettbewerbsumfeld ist im oberen Abwehrbereich von US-Systemen geprägt und diversifiziert sich im Nächstbereich mit neuen Anbietern aus Korea, den USA, Großbritannien, Australien und den VAE.",
+   "statement": "Das Wettbewerbsumfeld ist im oberen Abwehrbereich von US-Systemen geprägt und diversifiziert sich mit weiteren Anbietern: in der Mittelstrecke (u. a. KM-SAM, NASAMS) sowie bei Drohnenabwehr mit Anbietern aus den USA, Großbritannien, Australien und den VAE.",
    "depends_on": [
     "M-GCC-005",
     "M-GCC-006",
@@ -1344,7 +1348,7 @@
     "M-GCC-007",
     "I-MX-kongsberg_rtx-gulf_access"
    ],
-   "reasoning": "Patriot ist Hauptschicht in fünf GCC-Staaten, NASAMS ist in Oman, Katar und Kuwait vertraglich belegt; KM-SAM, Anduril (Kuwait, nur FMS-Billigung), EOS Slinger (VAE) und Skyhammer treten hinzu. Lokale EDGE-Soft-Kill-Lösungen prägen laut EDGE die VAE-Drohnenabwehr.",
+   "reasoning": "Patriot ist Hauptschicht in fünf GCC-Staaten, NASAMS ist in Oman, Katar und Kuwait vertraglich belegt; die Mittelstrecken-KM-SAM sowie im C-UAS-Bereich Anduril (Kuwait, nur FMS-Billigung), EOS Slinger (VAE) und Skyhammer treten hinzu. Lokale EDGE-Soft-Kill-Lösungen prägen laut EDGE die VAE-Drohnenabwehr.",
    "method": "Qualitative Einordnung aus geprüften Fakten",
    "uncertainty": "Mehrere Angaben aus Think-Tank-Zusammenstellung bzw. Unternehmensaussagen; Endnutzer Slinger nicht genannt."
   },
@@ -1444,7 +1448,7 @@
   {
    "id": "I-RG-SA",
    "section": "regions",
-   "statement": "Saudi-Arabien: Rheinmetall-Bezug über Skyguard-Bestand, Millennium Gun auf Korvetten, RADARABIA (20 %) und RAST; Markt mit größtem SIPRI-Budget im GCC und hohen Lokalisierungszielen.",
+   "statement": "Saudi-Arabien: Rheinmetall-Bezug über Skyguard-Bestand, Millennium Gun auf Korvetten, RADARABIA (20 %) und RAST; Markt mit hohem SIPRI-Ausgabenschätzwert und ambitionierten Lokalisierungszielen.",
    "depends_on": [
     "C-010",
     "P-MG-02",
@@ -1453,11 +1457,13 @@
     "C-012",
     "C-011",
     "M-GCC-008",
+    "M-GCC-009",
     "M-SA-001",
     "M-SA-003",
+    "M-MBDA-002",
     "M-EXP-003"
    ],
-   "reasoning": "SIPRI schätzt 83,2 Mrd. USD Militärausgaben 2025; LIG Nex1 (M-SAM II) und MBDA (VL MICA) sind als Wettbewerber belegt. Rheinmetalls Belege sind überwiegend Medien-/Bildauswertungen und Beteiligungsangaben.",
+   "reasoning": "SIPRI schätzt 83,2 Mrd. USD Militärausgaben 2025 (Rang 8 weltweit; ein GCC-Vergleich ist mangels SIPRI-Werten für VAE, Katar und Bahrain nicht möglich); LIG Nex1 (M-SAM II) und MBDA (VL MICA) sind als Wettbewerber belegt. Rheinmetalls Belege sind überwiegend Medien-/Bildauswertungen und Beteiligungsangaben.",
    "method": "Qualitative Länder-Einordnung, kein Präsenzscore",
    "uncertainty": "Werkstatus RADARABIA und Skyguard-Vertrag nicht belegt."
   },
@@ -1474,7 +1480,8 @@
     "M-AE-002",
     "M-AE-004",
     "M-AE-005",
-    "M-SAAB-003"
+    "M-SAAB-003",
+    "M-GCC-006"
    ],
    "reasoning": "Belegt sind Golf-Tochtergesellschaften in Abu Dhabi/Sharjah und ein Simulationsvertrag ohne Flugabwehrbezug. EDGE, Saab, EOS und KM-SAM prägen das Umfeld.",
    "method": "Qualitative Länder-Einordnung, kein Präsenzscore",
