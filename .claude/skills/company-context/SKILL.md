@@ -13,6 +13,9 @@ Lies delegierten Auftrag/Manifest und references/faktenphase.md.
 3. Berufliches Profil nur bei genannter Person: Identität, aktuelle Rolle,
    belegter Werdegang/Zuständigkeit. Keine private Recherche oder erfundene
    regionale Beziehungen. Nutzerrolle als zunächst ungeprüfte Angabe führen.
+   Profilstruktur nach references/gespraechspartner.md liefern: intro, snapshot,
+   career, expertise, responsibilities und optional regional_context, jeweils mit
+   H-Claim-Verweisen. Unbekannte Daten offen lassen, Rollenwechsel qualifizieren.
 4. Offene Nachrichten/Fachmedien- und Gegenrecherche einbeziehen; Quellen
    tatsächlich lesen. Quellenkatalog nach benötigtem Bereich nutzen.
 5. T-/H-Claims, events/profile/company_facts, Abdeckung und Quellenvorschläge

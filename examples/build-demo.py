@@ -86,7 +86,11 @@ def generate(destination):
         events=[dict(id='api-update', label='Neue API-Dokumentation laut Hersteller veröffentlicht', date='2026-10-05', claim_ids=['T4']),
             dict(id='launch', label='Integrationsschnittstelle vorgestellt', date='2026-08-01', claim_ids=['T2']),
             dict(id='pilot-update', label='Vorbereitung eines Kundenpiloten angekündigt', date='2026-09-02', claim_ids=['T3'])],
-        profile=dict(name='Alex Example', claim_ids=['H1']))
+        profile=dict(name='Alex Example', claim_ids=['H1'],
+            intro=dict(text='Alex Example verantwortet laut fiktivem Profil die industrielle Integration.', claim_ids=['H1']),
+            snapshot=[dict(label='Verantwortung', value='Industrielle Integration (fiktiv)', claim_ids=['H1'])],
+            career=[], expertise=[],
+            responsibilities=[dict(label='Integration', text='Verantwortung laut fiktivem Profil.', claim_ids=['H1'])]))
     portfolio.update(products=[dict(id='kit', label='Inspection Kit', domain='Inspektionssoftware', claim_ids=['P1', 'M2']),
             dict(id='sensor-kit', label='Sensor Kit', domain='Sensorik', claim_ids=['P4']),
             dict(id='data-assist', label='Data Assist', domain='Dienstleistungen', claim_ids=['P5'])],
@@ -105,7 +109,8 @@ def generate(destination):
     for cid, a, b, category, description in [('C1', 'owner', 'target', 'owner', 'Kapitalbeteiligung'),
             ('C2', 'target', 'jv', 'jv', 'Joint Venture'), ('C3', 'sensor', 'target', 'supplier', 'Sensormodul'),
             ('C4', 'target', 'customer', 'customer', 'Angekündigter Kundenpilot'),
-            ('C5', 'jv', 'sensor', 'partner', 'Integrationskooperation')]:
+            ('C5', 'jv', 'sensor', 'partner', 'Integrationskooperation'),
+            ('C6', 'target', 'jv', 'partner', 'Integrationsgegenstand')]:
         edge = dict(id='e' + cid, **{'from': a, 'to': b}, type=description, summary=by[cid]['statement'],
             categories=[category], product_ids=['kit'] if cid in {'C3', 'C4', 'C5'} else [],
             source_ids=[sources[1]['id']], claim_ids=[cid], status='im Testdatensatz berichtet',

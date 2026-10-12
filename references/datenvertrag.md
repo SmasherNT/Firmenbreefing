@@ -147,3 +147,7 @@ Claim-/Quellenintegrität und tatsächliche Token-/Aufwandsmessung berücksichti
 Fakten- und Interpretationsphase für neue vollständige HTML-Briefings über
 ausgabe-html-v2.md angeschlossen. Dokumentcache und reale Token-/Kostenmessung
 noch offen. Bestehende Legacy-Markdown-Läufe bleiben getrennt.
+
+## Personenansicht
+Die context.profile-Struktur folgt gespraechspartner.md. Alle Kurztexte und
+H-Claim-Zuordnungen gehören zum geprüften Paket-Snapshot; keine freie HTML.

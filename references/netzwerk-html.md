@@ -16,7 +16,11 @@ Der Cluster-Agent erstellt keine eigene finale HTML und überspringt keine Revie
 - Knoten zeigen kurze Unternehmensnamen. Jede Knotenart hat eine eigene,
   konsistente Farbe und erscheint in der Farblegende.
 - Linien zeigen anfangs keine Beschriftung, Quote, Quellen oder Hover-Details.
-  Klick, Touch oder Tastaturauswahl öffnet ein Detailfeld rechts neben der Grafik (mobil darunter).
+  Alle Verbindungen sind gerade Strecken zwischen den Knotenrändern, ohne
+  Endpunkt-Markierungen. Klick oder Tastaturauswahl zeigt Inhalte in der festen
+  rechten Detailspalte, ohne Dialog oder Aufklappen. Nur Desktop-Darstellung.
+  Mehrere Beziehungen desselben Paars teilen eine Linie; rechts bleiben alle
+  Vorgänge einzeln auswählbar, einschließlich ihrer Richtung und Originalquellen.
 - Details zeigen Von/Zu, Beziehungstyp, Gegenstand, Status, Datum, Quotenarten,
   Produktbezug, Unsicherheit und Claim-IDs sowie klickbare Originalquellen.
 - Filter für Partner, Kunden, Joint Ventures, Eigentum, Zulieferer,

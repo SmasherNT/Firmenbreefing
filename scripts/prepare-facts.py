@@ -232,6 +232,19 @@ def build(manifest, modules, plan=None):
                 refs = row.get("claim_ids")
                 if not isinstance(refs, list) or not refs or any(not isinstance(c, str) or c not in ids for c in refs):
                     errors.append("market: observation requires known claim_ids")
+    spec = importlib.util.spec_from_file_location("profile_html", Path(__file__).with_name("profile-html.py"))
+    profile_helper = importlib.util.module_from_spec(spec); spec.loader.exec_module(profile_helper)
+    def profile_refs(refs):
+        if not isinstance(refs, list) or not refs or any(not isinstance(c, str) or c not in ids for c in refs):
+            raise ValueError("profile requires known claim_ids")
+    for data in modules:
+        if isinstance(data, dict) and data.get("profile") is not None:
+            try:
+                if data.get("role") != "context" or not manifest.get("person"):
+                    raise ValueError("profile requires context and person in manifest")
+                profile_helper.validate(data["profile"], profile_refs)
+            except ValueError as error:
+                errors.append(str(error))
     packet = {"schema_version": 1, "mode": "facts-v2", "run_id": manifest.get("run_id"),
               "company": manifest.get("company"), "as_of": manifest.get("as_of"),
               "claims": claims, "sources": sorted(sources.values(), key=lambda s: s["id"]),

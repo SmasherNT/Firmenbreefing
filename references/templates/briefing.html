@@ -33,7 +33,7 @@ body{background:#f3f6f8;color:#173345}.page-kicker{color:#a16e28;font-size:11px;
   const summary=e.target.closest('.es-entry>summary,.card>summary');
   if(summary&&!summary.closest('dialog')){e.preventDefault();const entry=summary.parentElement;title.textContent=entry.dataset.esTitle;body.replaceChildren(entry.querySelector('.es-detail').cloneNode(true));dialog.showModal();return;}
   const cell=e.target.closest('a.cell');if(cell&&!cell.closest('dialog')){e.preventDefault();e.stopPropagation();title.textContent=cell.dataset.esTitle;body.replaceChildren(cell.nextElementSibling.content.cloneNode(true));dialog.showModal();return;}
-  if(e.target.closest('a[href^="#"]')){if(dialog.open)dialog.close();const network=document.getElementById('network-reading-dialog');if(network?.open)network.close();}
+  if(e.target.closest('a[href^="#"]')){if(dialog.open)dialog.close();}
  },true);
  dialog.querySelector('.es-dialog-close').addEventListener('click',()=>dialog.close());
  dialog.addEventListener('click',e=>{if(e.target!==dialog)return;const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();});

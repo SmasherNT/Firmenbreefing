@@ -15,6 +15,7 @@ SPEC = importlib.util.spec_from_file_location("interpretation", Path(__file__).w
 CHECK = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(CHECK)
 PORTFOLIO = CHECK.helper("portfolio_html", "portfolio-html.py")
+PROFILE = CHECK.helper("profile_html", "profile-html.py")
 
 KINDS = {"target", "partner", "customer", "jv", "owner", "supplier", "subsidiary",
          "project", "person", "institution", "other"}
@@ -152,9 +153,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         if profile is not None:
             if role != "context" or not manifest.get("person") or not CHECK.text(profile.get("name")):
                 raise ValueError("profile needs named person and context role")
-            require(profile.get("claim_ids"))
-            if any(not cid.startswith("H") for cid in profile["claim_ids"]):
-                raise ValueError("profile uses non-professional-person claims")
+            PROFILE.validate(profile, require)
 
     network = facts.get("network")
     if "cluster" in selected and not isinstance(network, dict):
@@ -389,7 +388,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             raise ValueError('person must be text or name/role object')
         body = '<p class="meta">Gesprächspartner aus dem Auftrag (Nutzerangabe): ' + esc(person) + '</p>'
         if profile:
-            body += grid([fact_card(claims[c]) for c in profile['claim_ids']])
+            body = PROFILE.render(profile, claims, sources, manifest['company'], manifest['as_of'])
         else:
             body += '<p>Berufliches Profil öffentlich nicht verifiziert.</p>'
         profile_body = body
@@ -401,7 +400,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     if region_interpretations:
         regions.append(section('Einordnung · Marktzugang', grid(region_interpretations)))
     market_label = 'Markt-Deep-Dive' + (' · ' + manifest['market_title'] if manifest.get('market_title') else '')
-    pages = [('page-main', 'Überblick', main), ('page-profile', 'Gesprächspartner', section('Beruflicher Gesprächspartner-Kontext', profile_body)),
+    pages = [('page-main', 'Überblick', main), ('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body)),
              ('page-regions', market_label, ''.join(regions) or section(market_label, '<p>Keine freigegebenen regionalen Befunde für diesen Auftrag.</p>'))]
     register = '<label class="source-search">Quellen und Aussagen durchsuchen<input id="source-search-input" type="search" placeholder="Stichwort, Claim oder Quelle"></label>'
     for cid, row in claims.items():

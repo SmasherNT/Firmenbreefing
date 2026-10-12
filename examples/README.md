@@ -1,7 +1,7 @@
 # Fiktives HTML-Beispiel
 
 briefing-demo.html zeigt die feste Ausgabe mit synthetischen Daten für
-Example Inspection. 23 Fakten, 17 Interpretationen, fünf Netzwerkkanten,
+Example Inspection. 23 Fakten, 17 Interpretationen, sechs Netzwerkkanten (fünf Akteurspaare),
 vier auftragsbezogene Matrixzellen und feste vier Seiten. Die Executive
 Summary zeigt drei auftragsbezogene Highlights (Kapazität, Kundenländer,
 Erprobungsstatus) und vier vertiefbare Kernaussagen; keine feste Finanzkennzahlenliste.
@@ -13,7 +13,9 @@ Portfolio: farbige Gruppen und sechs Reifestufen, zwei eingeordnete Produkte
 und ein unbestimmbarer Service, Such-/Gruppen-/Stufen-/Ursprungsfilter und Tabelle.
 Der gesamte Detailprofilbereich ist zunächst geschlossen. Produktklick öffnet
 Block und Profil. Person, Markt-Deep-Dive Europa und Quellen stehen auf Seite 2–4.
-Das Netzwerk zeigt vier Akteursgruppen um das Ziel und öffnet Quellen im Dialog.
+Das Netzwerk zeigt vier Akteursgruppen, gerade Linien ohne Endpunkte und Quellen
+in einer festen rechten Detailspalte. Das offene Personenprofil zeigt den Snapshot
+und sichtbare Evidenz; unbelegte Werdegangsfelder bleiben als Datenlücke erkennbar.
 
 Reproduzieren (aus Repositorywurzel):
 

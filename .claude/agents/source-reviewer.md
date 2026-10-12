@@ -111,3 +111,7 @@ Bei Portfolio references/portfolio-darstellung.md nutzen: Basis prüft Gruppen/
 Produktvarianten, final die sechs Reifemeilensteine und konkrete höhere Evidenzgrenze.
 Kapazitätsziele sind keine Serienlieferung; Beleglücken keine tatsächliche Unreife.
 In die bestehende Prüfrunde integrieren, keine zusätzlichen Quellenprüfer starten.
+
+Personenprofil nach references/gespraechspartner.md im Basis-Review mitprüfen:
+Kurztexte, Personenzuordnung, Chronologie, aktuelle/historische Verantwortung
+und regionalen Personenbezug; Medienankündigung nicht als bestätigten Amtsantritt ausgeben.

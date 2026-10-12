@@ -77,3 +77,10 @@ sich auf die Desktop-Webansicht.
   und quick_validate der beiden geänderten Skills bestanden.
 - Reproduzierbares Beispiel: 21 synthetische Fakten, 15 Interpretationen,
   drei Ereignisse. Keine echten Quellen geöffnet oder Inhaltsfreigabe behauptet.
+
+## Cluster und Gesprächspartner
+- Gerade Kanten ohne Endpunktkreise; Mehrfachbeziehungen bleiben einzeln erreichbar.
+- Auswahl aktualisiert die feste rechte Spalte ohne Dialog, Filter löschen veraltete Details.
+- Profile zeigen Snapshot, chronologische Stationen, Fachprofil, Verantwortung und
+  belegten regionalen Kontext; leere Felder erhalten eine neutrale Lückenanzeige.
+- Öffentliche Rollen-/Datumsunsicherheiten und direkte Quellen bleiben sichtbar.
