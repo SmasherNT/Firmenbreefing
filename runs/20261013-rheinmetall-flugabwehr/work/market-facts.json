@@ -468,14 +468,15 @@
   },
   {
    "id": "M-EU-EDIP-01",
-   "statement": "Laut EU-Mitteilung (EEAS) hat der Rat das Europäische Verteidigungsindustrieprogramm EDIP formell angenommen: 1,5 Mrd. EUR Zuschüsse für 2025–2027, davon 300 Mio. EUR für ein Ukraine-Unterstützungsinstrument; gefördert werden u. a. gemeinsame Beschaffungen von mindestens drei Staaten (davon mindestens zwei Mitgliedstaaten) und Produktionshochläufe; Komponenten von außerhalb EU/EWR dürfen 35 % der Komponentenkosten des Endprodukts nicht übersteigen.",
+   "statement": "Laut EU-Mitteilung (EEAS, Seitendatum 9. Dezember 2025) hat der Rat das Europäische Verteidigungsindustrieprogramm EDIP formell angenommen: 1,5 Mrd. EUR Zuschüsse für 2025–2027, davon 300 Mio. EUR für ein Ukraine-Unterstützungsinstrument; gefördert werden u. a. gemeinsame Beschaffungen von mindestens drei Staaten (davon mindestens zwei Mitgliedstaaten) und Produktionshochläufe; Komponenten von außerhalb EU/EWR dürfen 35 % der Komponentenkosten des Endprodukts nicht übersteigen.",
    "kind": "Fakt",
    "source_ids": [
     "S-829c43465e63a592"
    ],
    "evidence": "Auszug: Today the Council has formally adopted the European Defence Industry Programme (EDIP) … €1.5 billion in grants for the period 2025-2027. Out of this amount, €300 million are earmarked for a dedicated Ukraine Support Instrument … common procurement actions carried out by at least three countries (of which at least two must be member states) … industrial reinforcement actions … components originating outside the EU and associated countries (EEA states) … should not exceed 35% of total component costs",
    "location": "EEAS-Mitteilung „European Defence Industry Programme: Council gives final approval“, Absätze 1–4",
-   "uncertainty": "Datum der Ratsannahme auf der geöffneten Seite nicht ausgewiesen (Medien: 8.12.2025).",
+   "uncertainty": "Seitendatum 09.12.2025 („Today the Council has formally adopted…“); einzelne Medien nennen den 08.12.2025 als Ratsdatum – Abweichung nicht aufgelöst.",
+   "event_date": "2025-12-09",
    "proposed_depth": "A",
    "event_status": "angenommen"
   },
@@ -667,6 +668,20 @@
    "event_status": "beauftragt"
   },
   {
+   "id": "M-DE-ARM-01",
+   "statement": "Laut Rheinmetall-Recap-Dokument für Analysten und Investoren vom 5. Oktober 2026 liegt das Programm „Arminius“ voll im Plan; ein Festvertrag werde trotz geringfügiger Umfangsänderungen weiterhin bis Jahresende erwartet, mit einer möglichen Anzahlung von bis zu 30 % bei Unterzeichnung; der Haushaltsausschuss solle den Vorschlag Anfang Dezember prüfen. Inhalt, Auftraggeber und Produkt des Programms nennt das Dokument nicht.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4a13b2786b5cc66a"
+   ],
+   "evidence": "Auszug: Update Arminius – The Arminius program remains fully on track, with a fixed contract still anticipated by year-end despite minor scope changes, and a potential down payment of up to 30% upon signing. Commercial discussions are on track, setting up the budget committee to review the proposal in early December.",
+   "location": "Recap-Dokument 05.10.2026, PDF-Seite 1, Abschnitt „Update Arminius“",
+   "uncertainty": "Zuordnung von „Arminius“ zu einem konkreten Produkt (z. B. Skyranger) ist im Dokument nicht belegt und wird hier nicht vorgenommen; Erwartung, kein Vertrag.",
+   "proposed_depth": "A",
+   "event_date": "2026-10-05",
+   "event_status": "erwartet laut Unternehmen"
+  },
+  {
    "id": "M-SKR30-ARCH-01",
    "statement": "Laut Sicherheit & Verteidigung (Januar 2026) wiegt der Skyranger-30-Turm rund drei Tonnen und kombiniert die 30-mm-Revolverkanone Oerlikon KCE-ABM (bis 1.250 Schuss/min, bis 300 Schuss, programmierbare Airburst-Munition) mit zwei bis vier Kurzstrecken-Flugkörpern (u. a. Stinger, Mistral, SADM; von SADM bis zu neun); die Sensorik basiert laut Medium auf dem AESA-Radar Spexer 2000 von Hensoldt (instrumentierte Reichweite rund 35 km) sowie einer stabilisierten EO-Einheit mit zwei Laserentfernungsmessern; mit Skymaster kann das System ein eigenes Luftlagebild erzeugen und externe Zieldaten verarbeiten.",
    "kind": "Fakt",
@@ -765,6 +780,16 @@
    "published_date": "2025-12-11",
    "accessed_date": "2026-10-13",
    "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-4a13b2786b5cc66a",
+   "name": "Rheinmetall AG",
+   "title": "Q3 Analyst and Investor Recap Document (5. Oktober 2026)",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q3/2026-10-05-Rheinmetall-Q3-Analyst-and-Investor-Recap-Document.pdf",
+   "published_date": "2026-10-05",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe",
+   "page": "PDF-Seite 1"
   },
   {
    "id": "S-4e85b953fe46a8de",
@@ -1347,7 +1372,7 @@
     "T-EV-05",
     "T-EV-07"
    ],
-   "factual_description": "Belegte Verträge/Lieferungen: Ukraine, Italien, Rumänien (3 Staaten); weiterer internationaler Kunde nicht benannt."
+   "factual_description": "Belegte Verträge/Lieferungen: Ukraine, Italien, Rumänien (3 Staaten); Österreich (sieben Batterien) nur als CEO-Angabe von Rheinmetall Italia laut Defense News 2024, Abgrenzung zu Skyguard NG unklar, daher nicht mitgezählt; weiterer internationaler Kunde nicht benannt."
   },
   {
    "id": "OBS-rhm_skynex-local_industry",
@@ -1734,6 +1759,7 @@
     {
      "label": "Offene Punkte Bundeswehr und Kundenländer",
      "claim_ids": [
+      "M-DE-ARM-01",
       "M-DE-NNBS-01",
       "M-DE-SKR-01",
       "M-DE-SKR-02",
@@ -1907,7 +1933,7 @@
       "id": "de_nnbs",
       "label": "LVS Nah- und Nächstbereichsschutz (NNbS)",
       "status": "contracted",
-      "status_date": "2026-09-23",
+      "status_date": "2024-01-25",
       "customer": "BAAINBw",
       "provider": "ARGE NNbS (Rheinmetall Electronics, Diehl Defence, Hensoldt Sensors)",
       "local_role": "Entwicklung und Integration durch deutsche ARGE",
@@ -1936,7 +1962,7 @@
       "customer": "BAAINBw / Bundeswehr",
       "provider": "Rheinmetall",
       "local_role": "Systemlieferant Rheinmetall",
-      "next_step": "Serienauslieferung laut Rheinmetall ab Q4 2027, laut Medien/BAAINBw-Unterlagen später; Option 30 Systeme",
+      "next_step": "Lieferbeginn strittig: laut S&V (Juni 2026) Serienbeginn Q4 2027, Rheinmetall nennt ca. sechs bzw. fünf Monate Verzug; BAAINBw-Unterlagen laut Capital/dpa-AFX ab Mitte 2027; S&V (Jan. 2026) ab 2028; Option 30 Systeme",
       "claim_ids": [
        "C-014",
        "C-015",
@@ -2082,10 +2108,11 @@
         "role": "integration",
         "actor": "Rheinmetall",
         "location": "Neuss",
-        "activity": "Geplante Skyranger-Fertigung/-Ausbau für deutsche Systeme (Medien und Unternehmensangabe)",
+        "activity": "Künftige Skyranger-Fertigung für deutsche Systeme laut Fachmedium; Rheinmetall führt Neuss als Production Site der Division Air Defence",
         "status_date": "2026-06-10",
         "claim_ids": [
-         "C-053"
+         "C-053",
+         "P-AD-01"
         ]
        }
       ]
@@ -2277,18 +2304,8 @@
     ],
     "roles": {
      "missiles": {
-      "entries": [
-       {
-        "role": "license",
-        "actor": "PGZ",
-        "location": "Polen (Standort nicht genannt)",
-        "activity": "Narew: Zusammenarbeit mit MBDA (UK) bei CAMM-ER/iLauncher mit Technologieteilung (Umfang lokaler Fertigung nicht beziffert)",
-        "status_date": "2023-11-07",
-        "claim_ids": [
-         "M-PL-NAREW-01"
-        ]
-       }
-      ]
+      "entries": [],
+      "gap_reason": "In den geöffneten Quellen keine konkrete Tätigkeit eines Akteurs in diesem Land für diese Funktion belegt; keine Ableitung aus Firmennamen."
      },
      "guns": {
       "entries": [],
@@ -3038,7 +3055,7 @@
       "customer": "Österreichisches Bundesheer",
       "provider": "Rheinmetall",
       "local_role": "nicht belegt",
-      "next_step": "Vertrags- und Lieferstatus nicht aus geöffneter Quelle belegt",
+      "next_step": "Statusdatum = Mitteilungsdatum 23.02.2024; Beschluss laut Rheinmetall im Dezember 2023; Vertrags- und Lieferstatus nicht aus geöffneter Quelle belegt",
       "claim_ids": [
        "M-AT-SKR-02"
       ]
@@ -3468,7 +3485,7 @@
   {
    "topic": "Bundeswehr-Skyranger-Großauftrag",
    "gap": "Bis 13.10.2026 keine Vergabe, kein unterzeichneter Vertrag und keine 25-Mio-Vorlage für weitere Skyranger in geöffneten Quellen; am 23.9.2026 nur NNbS-Änderungsvertrag (Fahrmodul B0, Simulator) gebilligt (M-DE-NNBS-01). Fehlender Fund ist kein Beleg einer Nichtvergabe.",
-   "next_step": "Haushaltsausschuss-Tagesordnungen Oktober–Dezember 2026, Rheinmetall Q3-Bericht 5.11.2026."
+   "next_step": "Haushaltsausschuss-Tagesordnungen Oktober–Dezember 2026, Rheinmetall Q3-Bericht 5.11.2026; Rheinmetall erwartet für das nicht näher beschriebene Programm „Arminius“ einen Festvertrag bis Jahresende und Ausschussprüfung Anfang Dezember (M-DE-ARM-01), Produktzuordnung unbelegt."
   },
   {
    "topic": "Capital-Original / BAAINBw-Unterlagen zum Skyranger-Verzug",
