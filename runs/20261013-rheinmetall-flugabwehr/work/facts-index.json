@@ -7,11 +7,10 @@
   "available_roles": [
     "cluster",
     "context",
+    "market",
     "portfolio"
   ],
-  "missing_roles": [
-    "market"
-  ],
+  "missing_roles": [],
   "inputs": [
     {
       "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/context-facts.json",
@@ -24,9 +23,22 @@
     {
       "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/cluster-facts.json",
       "sha256": "87e78407d7dbc70add7eb96926cc26241d6ec959ff0169b70b7ffc76ee5f60cb"
+    },
+    {
+      "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/market-facts.json",
+      "sha256": "d690aaa3ef26b72c523a86fd1d24e50f3999d8caa647b06656238cb96566c90b"
     }
   ],
   "sources": [
+    {
+      "id": "S-00676d9d1d5efc0a",
+      "name": "ESUT – Europäische Sicherheit & Technik",
+      "title": "12 Beschaffungsvorlagen für Munition, Waffensysteme und Dienstleistungen gebilligt",
+      "url": "https://esut.de/2026/09/fachbeitraege/streitkraefte-fachbeitraege/75313/beschaffungsvorlagen/",
+      "published_date": "2026-09-28",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
     {
       "id": "S-01c26a442587afa5",
       "name": "Rheinmetall AG",
@@ -58,6 +70,15 @@
       "source_kind": "Herstellerangabe"
     },
     {
+      "id": "S-057484ce43bd0f28",
+      "name": "OSW Centre for Eastern Studies",
+      "title": "Imperfect balance: the EU’s defence loan mechanism SAFE",
+      "url": "https://www.osw.waw.pl/en/publikacje/analyses/2025-05-28/imperfect-balance-eus-defence-loan-mechanism-safe",
+      "published_date": "2025-05-28",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Analyse/Think Tank"
+    },
+    {
       "id": "S-081455a6101c816e",
       "name": "Rheinmetall AG",
       "title": "Replenishment for air defence: Rheinmetall delivers 35mm-ammunition for anti-aircraft gun Gepard to Ukraine",
@@ -85,6 +106,15 @@
       "source_kind": "Herstellerangabe"
     },
     {
+      "id": "S-0d1aacb2a960fe0b",
+      "name": "Defence24",
+      "title": "Denmark breaks with America: SAMP/T NG instead of Patriot",
+      "url": "https://defence24.com/industry/denmark-breaks-with-america-sampt-ng-instead-of-patriot",
+      "published_date": "2026-05-01",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
       "id": "S-10079a15b0d54839",
       "name": "Leonardo S.p.A.",
       "title": "Leonardo and Rheinmetall: first contract to supply armoured vehicles for the Italian Army",
@@ -92,6 +122,24 @@
       "published_date": "2025-11-05",
       "accessed_date": "2026-10-13",
       "source_kind": "Partnerangabe"
+    },
+    {
+      "id": "S-12a6733e8d06cf75",
+      "name": "ESUT – Europäische Sicherheit & Technik",
+      "title": "Bundeswehr bestellt IRIS-T-Flugkörper für Luft-Luft- und Boden-Luft-Anwendungen",
+      "url": "https://esut.de/2026/02/meldungen/67674/bundeswehr-bestellt-iris-t-flugkoerper-fuer-luft-luft-und-boden-luft-anwendungen/",
+      "published_date": "2026-02-08",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
+      "id": "S-12e946370fcf4e20",
+      "name": "Defence Industry Europe",
+      "title": "Czech Republic orders Saab’s MSHORAD system with RBS 70 NG in €155 million deal",
+      "url": "https://defence-industry.eu/czech-republic-orders-saabs-mshorad-system-with-rbs-70-ng-in-e155-million-deal/",
+      "published_date": "2025-07-23",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
     },
     {
       "id": "S-168108fb27118dde",
@@ -128,6 +176,15 @@
       "published_date": null,
       "accessed_date": "2026-10-13",
       "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-1ee3bed35c316be7",
+      "name": "ESUT – Europäische Sicherheit & Technik",
+      "title": "Beschaffung von sechs Luftverteidigungssystemen IRIS-T SLM unter Vertrag",
+      "url": "https://esut.de/2023/06/meldungen/42792/beschaffung-von-sechs-luftverteidigungssystemen-iris-t-slm-unter-vertrag/",
+      "published_date": "2023-06-23",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
     },
     {
       "id": "S-1f76748059d5008c",
@@ -211,6 +268,15 @@
       "source_kind": "Sekundärquelle"
     },
     {
+      "id": "S-397e8414020bdb92",
+      "name": "Sicherheit & Verteidigung (suv.report)",
+      "title": "Skyranger 30 – Technische Daten, Bestellungen und Interessenten",
+      "url": "https://suv.report/skyranger-30-technische-daten-bestellungen-und-interessenten/",
+      "published_date": "2026-01-21",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
       "id": "S-3b27cf3712ca73d2",
       "name": "Rheinmetall AG",
       "title": "Italy receives its first Skynex air defence system from Rheinmetall",
@@ -267,6 +333,15 @@
       "published_date": null,
       "accessed_date": "2026-10-13",
       "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-3d1ac94ea50adfec",
+      "name": "European Security & Defence",
+      "title": "Sweden orders more IRIS-T SLS launchers from Diehl Defence",
+      "url": "https://euro-sd.com/2025/12/major-news/48184/sweden-orders-more-iris-t-sls/",
+      "published_date": "2025-12-11",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
     },
     {
       "id": "S-3dad8b811c925694",
@@ -345,6 +420,15 @@
       "source_kind": "Herstellerangabe"
     },
     {
+      "id": "S-4e85b953fe46a8de",
+      "name": "Militarnyi",
+      "title": "Poland Receives First Short-Range Air Defense System Under PILICA+ Program",
+      "url": "https://militarnyi.com/en/news/poland-receives-first-short-range-air-defense-system-under-pilica-program/",
+      "published_date": "2025-11-23",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
       "id": "S-4f9807383dbfe574",
       "name": "Rheinmetall AG",
       "title": "Rheinmetall Canada – Über uns",
@@ -372,6 +456,15 @@
       "source_kind": "Herstellerangabe"
     },
     {
+      "id": "S-504b2773565ae51b",
+      "name": "European Security & Defence",
+      "title": "New Diehl production site",
+      "url": "https://euro-sd.com/2026/01/major-news/48772/new-diehl-production-site/",
+      "published_date": "2026-01-23",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
       "id": "S-513daa2ae2be3e14",
       "name": "Rheinmetall AG",
       "title": "Rheinmetall – ein starker Partner an der Seite der Ukraine (Story)",
@@ -380,6 +473,15 @@
       "accessed_date": "2026-10-13",
       "source_kind": "Herstellerangabe",
       "section": "Story 2026; Tagesdatum nicht angegeben"
+    },
+    {
+      "id": "S-51d8de61559f69f0",
+      "name": "Defence Leaders",
+      "title": "UK–EU defence fund talks collapse",
+      "url": "https://defenceleaders.com/news/uk-eu-defence-fund-talks-collapse/",
+      "published_date": "2025-12-01",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
     },
     {
       "id": "S-5366eb8816ff2cea",
@@ -416,6 +518,15 @@
       "published_date": null,
       "accessed_date": "2026-10-13",
       "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-5ba566671c688dae",
+      "name": "The Defense Post",
+      "title": "Denmark Revives Ground-Based Air Defense With VL MICA Procurement",
+      "url": "https://thedefensepost.com/2025/07/28/denmark-vl-mica-procurement/",
+      "published_date": "2025-07-28",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
     },
     {
       "id": "S-5bb9a49af968005c",
@@ -464,6 +575,15 @@
       "source_kind": "Herstellerangabe"
     },
     {
+      "id": "S-63ef3755ffe55169",
+      "name": "SIPRI",
+      "title": "SIPRI Military Expenditure Database (Seite)",
+      "url": "https://www.sipri.org/databases/milex",
+      "published_date": null,
+      "accessed_date": "2026-10-13",
+      "source_kind": "Statistik/Datenbank"
+    },
+    {
       "id": "S-6410acb24c745d46",
       "name": "Sicherheit & Verteidigung (suv.report)",
       "title": "Skyranger 30: Auslieferung ab Q4 2027",
@@ -471,6 +591,15 @@
       "published_date": "2026-06-15",
       "accessed_date": "2026-10-13",
       "source_kind": "Sekundärquelle (Fachmedium)"
+    },
+    {
+      "id": "S-6a3c2e1e456f2080",
+      "name": "A&O Shearman",
+      "title": "Security Action for Europe (SAFE) update—financial assistance tentative allocation",
+      "url": "https://www.aoshearman.com/en/insights/safe-update-financial-assistance-tentative-allocation",
+      "published_date": null,
+      "accessed_date": "2026-10-13",
+      "source_kind": "Rechtsanalyse (Kanzlei)"
     },
     {
       "id": "S-6af38e87216bc1d2",
@@ -530,6 +659,15 @@
       "source_kind": "Herstellerangabe"
     },
     {
+      "id": "S-764b0868c9a4f470",
+      "name": "Army Technology",
+      "title": "Denmark signs SAMP/T NG defence contract",
+      "url": "https://www.army-technology.com/news/denmark-samp-t-ng-defence-contract/",
+      "published_date": "2026-04-21",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
       "id": "S-76d1cd6d4bfaa83c",
       "name": "Rheinmetall AG",
       "title": "Closing Gaps – Our Vision 2030, Capital Markets Day 18. November 2025 (Präsentation)",
@@ -539,6 +677,24 @@
       "source_kind": "Herstellerangabe"
     },
     {
+      "id": "S-77116a48034eea1f",
+      "name": "ESUT – Europäische Sicherheit & Technik",
+      "title": "Ergänzung zur dänischen Bestellung von Skyranger 30",
+      "url": "https://esut.de/2024/09/meldungen/53536/ergaenzung-zur-daenischen-bestellung-von-skyranger-30/",
+      "published_date": "2024-09-30",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
+      "id": "S-7730735b980263ed",
+      "name": "SIPRI",
+      "title": "SIPRI Military Expenditure Database 1949–2025 (Excel, v1.2)",
+      "url": "https://www.sipri.org/sites/default/files/SIPRI-Milex-data-1949-2025_v1.2.xlsx",
+      "published_date": "2026-04-27",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Statistik/Datenbank"
+    },
+    {
       "id": "S-7b3ad8192958d374",
       "name": "ICEYE Oy",
       "title": "ICEYE and Rheinmetall win major contract worth billions for space reconnaissance",
@@ -546,6 +702,15 @@
       "published_date": "2025-12-18",
       "accessed_date": "2026-10-13",
       "source_kind": "Partnerangabe"
+    },
+    {
+      "id": "S-7c3ae12304f6c154",
+      "name": "Rheinmetall AG",
+      "title": "Marktdurchbruch in Österreich: Rheinmetall liefert Skyranger-Flugabwehrsysteme auf Radpanzer Pandur",
+      "url": "https://www.rheinmetall.com/de/media/news-watch/news/2024/02/2024-02-23-rheinmetall-liefert-skyranger-30-an-oesterreich",
+      "published_date": "2024-02-23",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Herstellerangabe"
     },
     {
       "id": "S-7d3cceefdfc28f58",
@@ -585,6 +750,24 @@
       "report_year": 2025
     },
     {
+      "id": "S-829c43465e63a592",
+      "name": "European External Action Service (EU-Delegation Ukraine)",
+      "title": "European Defence Industry Programme: Council gives final approval",
+      "url": "https://www.eeas.europa.eu/delegations/ukraine/european-defence-industry-programme-council-gives-final-approval_en",
+      "published_date": null,
+      "accessed_date": "2026-10-13",
+      "source_kind": "Behörde/EU-Institution"
+    },
+    {
+      "id": "S-84a5e99e7ff45dc4",
+      "name": "Militär Aktuell",
+      "title": "Pandur Evolution with Skyranger for the anti-aircraft batteries",
+      "url": "https://militaeraktuell.at/en/pandur-evolution-with-skyranger-for-the-anti-aircraft-batteries/",
+      "published_date": "2026-01-17",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
       "id": "S-860fb5a5ec516912",
       "name": "Rheinmetall AG",
       "title": "Drohnenabwehr Toolbox",
@@ -592,6 +775,15 @@
       "published_date": null,
       "accessed_date": "2026-10-13",
       "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-879737fc228c4bec",
+      "name": "ESUT – Europäische Sicherheit & Technik",
+      "title": "Bundeswehr-Beschaffung: Zwölf 25-Mio-Vorlagen im Haushaltsausschuss",
+      "url": "https://esut.de/2026/09/meldungen/streitkraefte/75038/zwoelf-25-mio-bundeswehr/",
+      "published_date": "2026-09-18",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
     },
     {
       "id": "S-92d7be3f0dda7317",
@@ -639,6 +831,15 @@
       "source_kind": "Wiedergabe"
     },
     {
+      "id": "S-9bba6057c1bcc3e4",
+      "name": "EDR Magazine",
+      "title": "Thales strengthens Portugal’s very short-range air defence capabilities with ForceShield system",
+      "url": "https://www.edrmagazine.eu/thales-strengthens-portugals-very-short-range-air-defence-capabilities-with-forceshield-system",
+      "published_date": "2024-11-18",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
       "id": "S-9d01bc5d2a34d23a",
       "name": "The Defense Post",
       "title": "Lockheed Martin, Rheinmetall to Co-Produce ATACMS in Europe",
@@ -655,6 +856,15 @@
       "published_date": "2026-09-23",
       "accessed_date": "2026-10-13",
       "source_kind": "Sekundärquelle"
+    },
+    {
+      "id": "S-a21018e8e5b5c677",
+      "name": "Defense News",
+      "title": "Denmark picks French-Italian SAMP/T air defense system over Patriot",
+      "url": "https://defensenews.com/global/europe/2025/09/12/denmark-picks-french-italian-sampt-air-defense-system-over-patriot",
+      "published_date": "2025-09-12",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
     },
     {
       "id": "S-a4d54f5d3aa32d9d",
@@ -708,6 +918,15 @@
       "section": "Vorstand; Mandate"
     },
     {
+      "id": "S-aa0faa4814b4b297",
+      "name": "Diehl Defence",
+      "title": "Sweden procures further IRIS-T SLS systems",
+      "url": "https://new.diehl.com/defence/en/press-media/news/sweden-procures-further-iris-t-sls-systems",
+      "published_date": "2025-12-11",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Herstellerangabe"
+    },
+    {
       "id": "S-ace6606b74478d86",
       "name": "hartpunkt",
       "title": "Flugabwehrkanonenpanzer Skyranger – Rheinmetall erwartet noch dieses Jahr Milliardenauftrag von der Bundeswehr",
@@ -742,6 +961,24 @@
       "published_date": "2024-02-27",
       "accessed_date": "2026-10-13",
       "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-b99b85b72dbd1baf",
+      "name": "hartpunkt",
+      "title": "Lieferverzögerung von Skyranger-Flakpanzern für die Bundeswehr erwartet",
+      "url": "https://www.hartpunkt.de/lieferverzoegerung-von-skyranger-flakpanzern-fuer-die-bundeswehr-erwartet/",
+      "published_date": "2024-11-06",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
+      "id": "S-bf3aaa0b85ea54a2",
+      "name": "EDR Magazine",
+      "title": "Saab Bolide 2, more punch for the RBS 70 NG",
+      "url": "https://www.edrmagazine.eu/saab-bolide-2-more-punch-for-the-rbs-70-ng",
+      "published_date": "2026-05-19",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
     },
     {
       "id": "S-c0d13e5db6387716",
@@ -872,6 +1109,24 @@
       "source_kind": "Herstellerangabe"
     },
     {
+      "id": "S-ddd98359e4352c31",
+      "name": "Militär Aktuell",
+      "title": "BAE Systems: Sweden buys Tridon Mk2 air defense system",
+      "url": "https://militaeraktuell.at/en/bae-systems-sweden-buys-tridon-mk2-air-defense-system/",
+      "published_date": "2026-04-16",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
+      "id": "S-dffd12785279e32f",
+      "name": "European Security & Defence",
+      "title": "Lithuanian MoD places MSHORAD order with Saab",
+      "url": "https://euro-sd.com/2024/07/major-news/39225/lithuanian-mshorad-order/",
+      "published_date": "2024-07-09",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
       "id": "S-e4c101cb061aafcf",
       "name": "Rheinmetall AG",
       "title": "Stimmrechtsmitteilungen (IR-Seite)",
@@ -879,6 +1134,15 @@
       "published_date": null,
       "accessed_date": "2026-10-13",
       "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-e6e94711a0973745",
+      "name": "Defence24",
+      "title": "Poland Concludes a Massive SHORAD Contracts with CAMM Missiles",
+      "url": "https://defence24.com/armed-forces/poland-concludes-a-massive-shorad-contracts-with-camm-missiles",
+      "published_date": "2023-05-02",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
     },
     {
       "id": "S-e6f358904e19e4e8",
@@ -909,6 +1173,15 @@
       "source_kind": "Herstellerangabe"
     },
     {
+      "id": "S-eb7f63760aba3e64",
+      "name": "European Security & Defence",
+      "title": "Over 5,000 LMM for Ukraine",
+      "url": "https://euro-sd.com/2025/03/major-news/42935/over-5000-lmm-for-ukraine/",
+      "published_date": "2025-03-05",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
       "id": "S-ed85256fd87c2a74",
       "name": "Rheinmetall AG",
       "title": "Rheinmetall und Praetorian Aeronautics liefern das containerisierte AERIE-System zur Abwehr unbemannter Fluggeräte",
@@ -916,6 +1189,33 @@
       "published_date": "2026-10-07",
       "accessed_date": "2026-10-13",
       "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-eddf31ac6c75fbe9",
+      "name": "The Defense Post",
+      "title": "Sweden Moves to Boost Air, Drone Defense With BAE, Saab Deals",
+      "url": "https://thedefensepost.com/2026/04/06/sweden-bae-saab-deals/",
+      "published_date": "2026-04-06",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
+      "id": "S-f129b4e8889709a9",
+      "name": "Calibre Defence",
+      "title": "UK SHORAD progresses with Thales contract",
+      "url": "https://www.calibredefence.co.uk/?p=6167",
+      "published_date": "2026-03-17",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
+    },
+    {
+      "id": "S-f3c15f4b90f4bfc8",
+      "name": "Militär Aktuell",
+      "title": "Österreich ist der Sky Shield Initiative beigetreten",
+      "url": "https://militaeraktuell.at/oesterreich-ist-der-sky-shield-initiative-beigetreten/",
+      "published_date": "2024-05-28",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Fachmedium"
     },
     {
       "id": "S-f4643db24ca2fc22",
@@ -962,6 +1262,24 @@
       "title": "Rheinmetall Italia S.p.A.",
       "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-italia",
       "published_date": null,
+      "accessed_date": "2026-10-13",
+      "source_kind": "Herstellerangabe"
+    },
+    {
+      "id": "S-faeb7be1bb92f0b5",
+      "name": "UK Government (gov.uk)",
+      "title": "£4 billion UK-Poland air defence deal strengthens European security",
+      "url": "https://www.gov.uk/government/news/4-billion-uk-poland-air-defence-deal-strengthens-european-security",
+      "published_date": "2023-11-07",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Behörde/Regierung"
+    },
+    {
+      "id": "S-fce8c647daaea30b",
+      "name": "Saab AB",
+      "title": "Saab receives order for ground-based air defence from Sweden",
+      "url": "https://www.saab.com/newsroom/press-releases/2025/saab-receives-order-for-ground-based-air-defence-from-sweden",
+      "published_date": "2025-07-01",
       "accessed_date": "2026-10-13",
       "source_kind": "Herstellerangabe"
     }
@@ -4893,6 +5211,854 @@
         "event_status": "angekündigt"
       },
       "fingerprint": "65d53cea440129e8cac705e43884c8f774cecd5e8d754792bbbf9348213d72e8"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DE-NNBS-01",
+        "statement": "Laut ESUT billigte der Haushaltsausschuss des Bundestages am 23. September 2026 zwölf 25-Mio-Euro-Vorlagen, darunter einen Änderungsvertrag zum Luftverteidigungssystem Nah- und Nächstbereichsschutz (LVS NNbS): Eingeführt werden soll das neue querschnittliche Fahrmodul B0 des Boxers, zudem soll ein Container-Ausbildungssimulator für den Flugabwehrraketenpanzer auf Boxer entwickelt werden; als Komponenten des Systemmixes nennt ESUT u. a. IRIS-T-Lenkflugkörper, Skyranger-Flugabwehrkanonensysteme und den GTK Boxer. Eine Großbestellung weiterer Skyranger enthält die Aufstellung nicht.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-00676d9d1d5efc0a",
+          "S-879737fc228c4bec"
+        ],
+        "evidence": "Auszug: Der Haushaltsausschuss des Deutschen Bundestages hat am 23. September zwölf 25-Millionen-Euro-Vorlagen … gebilligt … Hierzu gehören unter anderem Lenkflugkörper IRIS-T, Flugabwehrkanonensysteme Skyranger als Effektoren und das GTK Boxer … Jetzt soll über einen Änderungsvertrag das neue querschnittliche Fahrmodul B0 des Boxers eingeführt werden. Zudem soll für den Flugabwehrraketenpanzer – ebenfalls auf Boxer – ein Simulator für die Ausbildung als Containerlösung entwickelt werden. | Auszug: Systeme Land: Änderungsvertrag Nah- und Nächstbereichsschutz *) … Für die aufgeführten Vorhaben liegen endverhandelte Beschaffungs-/Dienstleistungsverträge vor, die unmittelbar nach der Billigung durch den Haushaltsausschuss von den Vertragspartnern unterzeichnet werden können.",
+        "location": "ESUT, 28.09.2026, Abschnitt „Luftverteidigungssystem Nah- und Nächstbereichsschutz“ | ESUT, 18.09.2026, Liste der Tagesordnungspunkte, Rubrik „Systeme Land“ und Schlussabsatz",
+        "evidence_items": [
+          {
+            "source_id": "S-00676d9d1d5efc0a",
+            "mode": "Auszug",
+            "text": "Der Haushaltsausschuss des Deutschen Bundestages hat am 23. September zwölf 25-Millionen-Euro-Vorlagen … gebilligt … Hierzu gehören unter anderem Lenkflugkörper IRIS-T, Flugabwehrkanonensysteme Skyranger als Effektoren und das GTK Boxer … Jetzt soll über einen Änderungsvertrag das neue querschnittliche Fahrmodul B0 des Boxers eingeführt werden. Zudem soll für den Flugabwehrraketenpanzer – ebenfalls auf Boxer – ein Simulator für die Ausbildung als Containerlösung entwickelt werden.",
+            "location": "ESUT, 28.09.2026, Abschnitt „Luftverteidigungssystem Nah- und Nächstbereichsschutz“"
+          },
+          {
+            "source_id": "S-879737fc228c4bec",
+            "mode": "Auszug",
+            "text": "Systeme Land: Änderungsvertrag Nah- und Nächstbereichsschutz *) … Für die aufgeführten Vorhaben liegen endverhandelte Beschaffungs-/Dienstleistungsverträge vor, die unmittelbar nach der Billigung durch den Haushaltsausschuss von den Vertragspartnern unterzeichnet werden können.",
+            "location": "ESUT, 18.09.2026, Liste der Tagesordnungspunkte, Rubrik „Systeme Land“ und Schlussabsatz"
+          }
+        ],
+        "uncertainty": "Unterzeichnung des Änderungsvertrags nach der Billigung nicht gesondert belegt; Vertragspartner und Wert nicht genannt.",
+        "proposed_depth": "A",
+        "event_date": "2026-09-23",
+        "event_status": "Änderungsvertrag parlamentarisch gebilligt"
+      },
+      "fingerprint": "6b1c0380dd53633d2f57d5a6014cc0e54f4b92015bf5b76c0c2c1bbd91ddf981"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DE-SKR-01",
+        "statement": "Laut hartpunkt (6. November 2024) bestätigte ein Sprecher des Verteidigungsministeriums, dass Rheinmetall eine mögliche Lieferverzögerung beim Skyranger 30 auf Boxer angezeigt habe; laut Vorlage für den Bundestag sollten die Serienfahrzeuge mit Masse 2027 und das letzte Exemplar 2028 ausgeliefert werden. Als Hintergrund nennt das Medium Fahrmodule in einer Konfiguration für Australien.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-b99b85b72dbd1baf"
+        ],
+        "evidence": "Auszug: Ein Sprecher des Ministeriums bestätigte, dass das beauftragte Unternehmen eine mögliche Verzögerung der Lieferung angezeigt habe … Die Serienfahrzeuge sollten gemäß der Vorlage für den Bundestag mit Masse 2027 an die Bundeswehr ausgeliefert werden, mit einem letzten Exemplar 2028.",
+        "location": "hartpunkt, 06.11.2024, Absätze 2 und 8",
+        "uncertainty": "Ursache beruht auf Angaben „gut informierter Kreise“; Rheinmetall nahm laut Bericht nicht Stellung.",
+        "proposed_depth": "B",
+        "event_date": "2024-11-06",
+        "event_status": "Verzögerung angezeigt laut BMVg-Sprecher"
+      },
+      "fingerprint": "2c80e285582399a55599c2ea7ca7905be31f5684686461aaeb0364723b59d3d6"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DE-SKR-02",
+        "statement": "Laut Sicherheit & Verteidigung (Januar 2026) umfasst der Bundeswehr-Vertrag vom 27. Februar 2024 neben Nachweismuster und 18 Serienfahrzeugen acht Nachladefahrzeuge, acht Werkstattausstattungen und 18 On-Board-Simulatoren; als Sekundärbewaffnung entschied sich die Bundeswehr für die SADM von MBDA. Das Medium berichtet eine Verzögerung der Serienauslieferung um rund 18 Monate wegen Engpässen bei Fahrmodulen und Turmintegration (Zulauf ab 2028) und nennt unter Berufung auf informierte Kreise einen Bedarf von rund 500 bis 600 Skyranger 30 (geschätzt sechs bis neun Mrd. EUR); bis dahin seien 93 Skyranger 30 von vier Staaten fest bestellt.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-397e8414020bdb92"
+        ],
+        "evidence": "Auszug: Darüber hinaus besteht eine Option auf 30 weitere Systeme … beinhaltet der Vertrag auch acht Nachladefahrzeuge …, acht Werkstattausstattungen … sowie 18 On-Board-Simulatoren … verzögert sich die Auslieferung der Serienfahrzeuge jedoch um rund 18 Monate. Aktuell ist davon auszugehen, dass die Truppe erst ab 2028 … rechnen kann … Bedarf von rund 500 bis 600 Skyranger 30 … etwa sechs bis neun Milliarden Euro … Insgesamt wurden bislang 93 Systeme fest bestellt.",
+        "location": "S&V, 21.01.2026, Abschnitte „Deutschland“ und Fazit",
+        "uncertainty": "Verzugsangabe (18 Monate, ab 2028) widerspricht Rheinmetall-Angaben (P-SKR-03: Serienbeginn Q4 2027, ca. sechs Monate später); Bedarfszahl nicht amtlich.",
+        "proposed_depth": "A",
+        "event_status": "beauftragt (19); Großbedarf nicht beauftragt"
+      },
+      "fingerprint": "76f5e999ff3f8b0aeb2165baef7741f628de2d6da858fd35e039b61253f4cd7c"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-NL-SKR-01",
+        "statement": "Laut Sicherheit & Verteidigung (Januar 2026) kündigten die Niederlande im Januar 2025 die Beschaffung von 22 Skyranger 30 an und lösten am 11. Dezember 2025 die formelle Bestellung aus; Trägerplattform ist das ACSV G5 von FFG; als Übergangslösung sollen Stinger integriert werden. Die ersten drei Prototypen werden laut Medium in der Schweiz gefertigt, die übrigen Systeme in den Niederlanden; die Auslieferung ist für Ende 2028 bis Ende 2029 geplant.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-397e8414020bdb92"
+        ],
+        "evidence": "Auszug: Die Niederlande kündigten bereits im Januar 2025 die Beschaffung von 22 Skyranger 30 an, bevor am 11. Dezember 2025 die formelle Bestellung ausgelöst wurde … Armoured Combat Support Vehicle (ACSV) G5 … Die ersten drei Prototypen werden in der Schweiz gefertigt … Die Fertigung der restlichen Systeme soll anschließend in den Niederlanden erfolgen … Auslieferung … zwischen Ende 2028 und Ende 2029 geplant.",
+        "location": "S&V, 21.01.2026, Abschnitt „Niederlande“",
+        "uncertainty": "Rheinmetall nennt nur eine „zweistellige Zahl“ (T-EV-04); Stückzahl 22 und Fertigungsort Niederlande nur medial belegt, niederländischer Fertigungspartner nicht benannt.",
+        "proposed_depth": "A",
+        "event_date": "2025-12-11",
+        "event_status": "beauftragt; lokale Fertigung geplant laut Medium"
+      },
+      "fingerprint": "fde8e052b40a24e71490baa835579529aafdd4928a7f76447224382d87438f42"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DK-SKR-01",
+        "statement": "Laut ESUT (30. September 2024) bestätigte Rheinmetall für die dänischen Skyranger-30-Türme die Liefertermine 2026 für den Prototyp und 2027/2028 für die Serientürme; die Türme sollen auf Piranha V integriert werden. Laut Sicherheit & Verteidigung (Januar 2026) sollen vier Prototypen bis Ende 2026 ausgeliefert werden, die übrigen zwölf 2027 und 2028; als Zweitbewaffnung nennt das Medium Mistral 3.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-77116a48034eea1f",
+          "S-397e8414020bdb92"
+        ],
+        "evidence": "Auszug: Die genannten Liefertermine – 2026 für den Prototypen und 2027/2028 für die Serientürme – wurden bestätigt … Piranha V mit Skyranger 30 … Vierfach-Werfer (für Mistral 3 ?) | Auszug: Vier Prototypen sollen bis Ende 2026 ausgeliefert werden … Die restlichen zwölf Systeme folgen in den Jahren 2027 und 2028 … Piranha V 8×8 von GDELS … setzen die dänischen Streitkräfte … auf den französischen Boden-Luft-Flugkörper Mistral 3",
+        "location": "ESUT, 30.09.2024, Absatz 1 und Bildunterschrift | S&V, 21.01.2026, Abschnitt „Dänemark“",
+        "evidence_items": [
+          {
+            "source_id": "S-77116a48034eea1f",
+            "mode": "Auszug",
+            "text": "Die genannten Liefertermine – 2026 für den Prototypen und 2027/2028 für die Serientürme – wurden bestätigt … Piranha V mit Skyranger 30 … Vierfach-Werfer (für Mistral 3 ?)",
+            "location": "ESUT, 30.09.2024, Absatz 1 und Bildunterschrift"
+          },
+          {
+            "source_id": "S-397e8414020bdb92",
+            "mode": "Auszug",
+            "text": "Vier Prototypen sollen bis Ende 2026 ausgeliefert werden … Die restlichen zwölf Systeme folgen in den Jahren 2027 und 2028 … Piranha V 8×8 von GDELS … setzen die dänischen Streitkräfte … auf den französischen Boden-Luft-Flugkörper Mistral 3",
+            "location": "S&V, 21.01.2026, Abschnitt „Dänemark“"
+          }
+        ],
+        "uncertainty": "Tatsächliche Prototypauslieferung bis Stichtag nicht belegt; Lenkflugkörperwahl bei ESUT 2024 noch offen.",
+        "proposed_depth": "A",
+        "event_status": "beauftragt; Auslieferung geplant ab Ende 2026"
+      },
+      "fingerprint": "7811d962e34cf7693eed0a02dcde826d0bf8e220e8fb2ce742de48675d16f37b"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-AT-SKR-01",
+        "statement": "Laut Militär Aktuell (17. Januar 2026) beschafft das Bundesheer insgesamt 225 Pandur Evolution von GDELS-Steyr in zwölf Konfigurationen, davon 36 mit Skyranger-Turm; die Auslieferung der Fahrzeuge ist ab 2027 geplant. Laut Bundesheer-Sprecher werden je neun Pandur Evolution mit Skyranger den ersten Kompanien der Jägerbataillone 1, 6, 7 und 15 zugeteilt, die zu Fliegerabwehrbatterien umgegliedert werden.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-84a5e99e7ff45dc4"
+        ],
+        "evidence": "Auszug: The Austrian Armed Forces is procuring a total of 225 Pandur Evolution from … General Dynamics European Land Systems-Steyr in twelve different configurations. 36 Pandur Evolution will be equipped with the Skyranger anti-aircraft turret … with delivery of the vehicles planned from 2027 … nine Pandur Evolution with Skyranger will be assigned to each of the 1st companies of fighter battalions 1, 6, 7 and 15.",
+        "location": "Militär Aktuell, 17.01.2026, Absätze 2–3",
+        "uncertainty": "Rheinmetall nannte 2024 eine Auslieferung „ab 2026“ (M-AT-SKR-02); Lieferung bis Stichtag nicht belegt.",
+        "proposed_depth": "A",
+        "event_date": "2026-01-17",
+        "event_status": "beauftragt; Auslieferung ab 2027 geplant"
+      },
+      "fingerprint": "8dd0444aeed53b191155f4ad14c9f38e5b22da014daa502b77d3d438361ac0a1"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-AT-SKR-02",
+        "statement": "Laut Rheinmetall-Mitteilung vom 23. Februar 2024 ist Rheinmetall beim österreichischen Skyranger-Vorhaben (36 Skyranger 30 auf Pandur EVO, mittlerer dreistelliger Mio.-EUR-Betrag, Auslieferung ab 2026) Unterauftragnehmer des Fahrzeugherstellers GDELS; als Lenkflugkörper nennt Rheinmetall Mistral; eine leichte Turmvariante sei mit dem Bundesheer für die Pandur-Integration entworfen worden. Zuvor (Dezember 2023) beschloss Österreich die Modernisierung seiner stationären 35-mm-Systeme zu Skyguard NG.",
+        "kind": "Herstellerangabe",
+        "source_ids": [
+          "S-7c3ae12304f6c154"
+        ],
+        "evidence": "Auszug: Rheinmetall ist bei dem Vorhaben Unterauftragnehmer des Fahrzeugherstellers GDELS … Die Auslieferung wird ab 2026 erfolgen … Lenkflugkörper, in diesem Fall Mistral … Die im Dezember 2023 beschlossene Modernisierung und Aufrüstung der bestehenden stationären 35mm-Systeme zu Skyguard Next Generation (NG) bildet hierfür den ersten Schritt … eine besonders leichte Variante des Skyranger 30 entworfen",
+        "location": "Rheinmetall-Pressemitteilung 23.02.2024, Keyfacts und Absätze 2–3, 6, 9",
+        "uncertainty": "",
+        "proposed_depth": "A",
+        "event_date": "2024-02-23",
+        "event_status": "beauftragt laut Hersteller"
+      },
+      "fingerprint": "99fa6e35b6545f356ba070cc68a08f4345688fec14a28621490074402d85c0ae"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-AT-ESSI-01",
+        "statement": "Laut Militär Aktuell (28. Mai 2024) unterzeichnete Österreichs Verteidigungsministerin in Brüssel gemeinsam mit Deutschland die Beitrittserklärung zur European Sky Shield Initiative; damit nehmen laut Bundesheer 21 europäische Länder teil, elf Staaten hätten die Beitrittserklärung zum MoU unterzeichnet; Österreich und die Schweiz hielten neutralitätsrechtliche Vorbehalte in einer Zusatzerklärung fest.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-f3c15f4b90f4bfc8"
+        ],
+        "evidence": "Auszug: unterzeichnete Verteidigungsministerin Klaudia Tanner heute in Brüssel gemeinsam mit Deutschland eine Beitrittserklärung … Mit Österreich nehmen aktuell 21 europäische Länder an der Initiative teil … Mittlerweile haben elf Staaten die Beitrittserklärung zum MoU unterzeichnet … neutralitätsrechtlichen Vorbehalte in einer Zusatzerklärung",
+        "location": "Militär Aktuell, 28.05.2024, Absätze 1–3",
+        "uncertainty": "Teilnehmerzahl Stand Mai 2024; aktuelle Teilnehmerliste nicht amtlich geöffnet.",
+        "proposed_depth": "A",
+        "event_date": "2024-05-28",
+        "event_status": "Beitritt erklärt"
+      },
+      "fingerprint": "f96ee5c27ee8ed8e78569be546dc35d9b7b3418491dfc1264016a6e4fa548f3b"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DK-VLM-01",
+        "statement": "Laut The Defense Post (28. Juli 2025) beauftragte Dänemark MBDA France mit zwei VL-MICA-Systemen zum Wiederaufbau der bodengebundenen Luftverteidigung; zusätzlich kaufe Kopenhagen IRIS-T SLM und lease NASAMS. VL MICA besteht laut Bericht aus einem fahrzeuggestützten Gefechtsstand, einem 3D-Radar auf separatem Fahrzeug und drei bis sechs Vertikalstartern; der Flugkörper (Abfangreichweite 20 km) ist mit Infrarot- oder Radarsuchkopf erhältlich.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-5ba566671c688dae"
+        ],
+        "evidence": "Auszug: Denmark has contracted MBDA France to supply a pair of VL (vertically launched) MICA air defense systems … Copenhagen is buying the German IRIS-T SLM and leasing the Norwegian NASAMS … vehicle-mounted tactical operations center … tri-dimensional radar mounted on a separate vehicle and three to six vertical launchers … interception range is 20 kilometers … passive imaging infrared or an active radio frequency seeker.",
+        "location": "The Defense Post, 28.07.2025, Absätze 1–3, 6–9",
+        "uncertainty": "Vertragswert nicht veröffentlicht; Lieferstatus (geplant Mitte 2026) bis Stichtag nicht belegt.",
+        "proposed_depth": "A",
+        "event_status": "beauftragt"
+      },
+      "fingerprint": "8bf61462d780618aece24688a6d14d36311b18cab095fc455d59ea37b2cd607e"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DK-GBAD-01",
+        "statement": "Laut Defense News (12. September 2025) will Dänemark rund 58 Mrd. DKK für Beschaffung und Betrieb von acht Mittel- und Langstrecken-Luftverteidigungssystemen investieren und wählte SAMP/T für die Langstrecke; die Mittelstrecke stützt sich zunächst auf ein NASAMS-, zwei VL-MICA- und ein IRIS-T-System, weitere Komponenten sollen aus Angeboten von Kongsberg, MBDA und Diehl gewählt werden. Laut Industrieministerium verlangt Dänemark Offset-Vereinbarungen von mehr als 10 Mrd. DKK für die dänische Verteidigungsindustrie; mehrere Lieferanten sollen kürzere Lieferzeiten ermöglichen.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-a21018e8e5b5c677"
+        ],
+        "evidence": "Auszug: invest around 58 billion kroner … to buy and operate eight medium- and long-range air defense systems … a Kongsberg NASAMS system, two MBDA VL MICA systems and an IRIS-T system … The decision to go with more than one or two suppliers enables shorter delivery times … Denmark is demanding offset agreements worth more than 10 billion kroner for the Danish defense industry",
+        "location": "Defense News, 12.09.2025, Absätze 2, 5–7, letzter Absatz",
+        "uncertainty": "",
+        "proposed_depth": "A",
+        "event_date": "2025-09-12",
+        "event_status": "angekündigt (Regierungsentscheidung)"
+      },
+      "fingerprint": "0b657e535e24119840a11ad437cc6f88d1a05308ebb635f0539c16d1e70c0bc5"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DK-SAMPT-01",
+        "statement": "Dänemark unterzeichnete laut Army Technology (unter Verweis auf eine Thales-Mitteilung vom 21. April 2026) den ersten Exportvertrag für SAMP/T NG; Programmverwaltung durch OCCAR, Hauptauftragnehmer ist eurosam (JV von Thales und MBDA); die dänische Konfiguration nutzt das Radar Ground Fire 300, Thales integriert die Feuerleitung mit dem gemeinsam mit MBDA entwickelten Modul ME-NG; Lieferungen sollen 2028 beginnen. Defence24 nennt den 21. April 2026 als Unterzeichnungsdatum.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-764b0868c9a4f470",
+          "S-0d1aacb2a960fe0b"
+        ],
+        "evidence": "Auszug: Denmark has signed the first export contract for the European SAMP/T NG … announced by Thales on 21 April 2026 … Ground Fire 300 radar … Thales will serve as the system integrator for the fire control system … ME-NG … developed in cooperation with MBDA … managed by … OCCAR. The prime contractor … is eurosam, a joint venture comprising Thales and MBDA … Deliveries to Denmark are scheduled to commence in 2028. | Auszug: On April 21, 2026, Copenhagen officially signed a contract for the European SAMP/T NG air and missile defence system",
+        "location": "Army Technology, 21.04.2026, Absätze 1, 5, 7–8, 11 | Defence24, 01.05.2026, Absatz 1",
+        "evidence_items": [
+          {
+            "source_id": "S-764b0868c9a4f470",
+            "mode": "Auszug",
+            "text": "Denmark has signed the first export contract for the European SAMP/T NG … announced by Thales on 21 April 2026 … Ground Fire 300 radar … Thales will serve as the system integrator for the fire control system … ME-NG … developed in cooperation with MBDA … managed by … OCCAR. The prime contractor … is eurosam, a joint venture comprising Thales and MBDA … Deliveries to Denmark are scheduled to commence in 2028.",
+            "location": "Army Technology, 21.04.2026, Absätze 1, 5, 7–8, 11"
+          },
+          {
+            "source_id": "S-0d1aacb2a960fe0b",
+            "mode": "Auszug",
+            "text": "On April 21, 2026, Copenhagen officially signed a contract for the European SAMP/T NG air and missile defence system",
+            "location": "Defence24, 01.05.2026, Absatz 1"
+          }
+        ],
+        "uncertainty": "Vertragswert und Stückzahl in den geöffneten Texten nicht belastbar angegeben (Defence24 zitiert nur dänische Medienschätzungen).",
+        "proposed_depth": "A",
+        "event_date": "2026-04-21",
+        "event_status": "beauftragt"
+      },
+      "fingerprint": "469c82f68be002509d9baecd61c1b63ea40a8db44deb0c80b7d299ded2a66579"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DK-IRIS-01",
+        "statement": "Laut European Security & Defence bestellte Dänemark am 9. Dezember 2025 weitere IRIS-T-SLM-Feuereinheiten zusätzlich zu einer ersten IRIS-T-SLM-Beschaffung vom Juli 2025.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-3d1ac94ea50adfec"
+        ],
+        "evidence": "Auszug: Most recently, on 9 December 2025, Denmark ordered additional IRIS-T SLM fire units to add to an initial IRIS-T SLM acquisition made in July 2025.",
+        "location": "ESD, 11.12.2025, letzter Absatz",
+        "uncertainty": "Anzahl und Wert nicht genannt.",
+        "proposed_depth": "B",
+        "event_date": "2025-12-09",
+        "event_status": "beauftragt"
+      },
+      "fingerprint": "985b51347132f6cf9a78273c57190f3306bdce973f321d452e334405831b6654"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-SE-IRIS-01",
+        "statement": "Laut Diehl Defence (11. Dezember 2025) bestellte die schwedische FMV weitere Starter für das bodengebundene Kurzstreckensystem IRIS-T SLS samt Logistikpaket mit Ersatzteilen; Schweden betreibt IRIS-T SLS bereits und beschloss im Juni 2025 die Beschaffung von sieben IRIS-T-SLM-Einheiten. IRIS-T SLS nutzt laut Diehl den Standard-Luft-Luft-Flugkörper IRIS-T unverändert und deckt den SHORAD-Bereich mit 360°-Schutz ab.",
+        "kind": "Herstellerangabe",
+        "source_ids": [
+          "S-aa0faa4814b4b297",
+          "S-3d1ac94ea50adfec"
+        ],
+        "evidence": "Auszug: Diehl Defence has received an order from the Swedish Defence Materiel Administration (FMV) for launchers for the IRIS-T SLS … the contract also covers a comprehensive logistics package, including spare parts … Sweden fields the short-range ground-based system IRIS-T SLS and decided in June 2025 to procure seven units of … IRIS-T SLM … The system uses the standard IRIS-T air-to-air missile in an unchanged way … real 360° protection | Paraphrase: ESD bestätigt die FMV-Bestellung weiterer IRIS-T-SLS-Starter (Ankündigung 11.12.2025) und die Nutzung des Standard-Flugkörpers mit Infrarotsuchkopf.",
+        "location": "Diehl-Pressemitteilung 11.12.2025, Absätze 1–3 | ESD, 11.12.2025, Absätze 1–3",
+        "evidence_items": [
+          {
+            "source_id": "S-aa0faa4814b4b297",
+            "mode": "Auszug",
+            "text": "Diehl Defence has received an order from the Swedish Defence Materiel Administration (FMV) for launchers for the IRIS-T SLS … the contract also covers a comprehensive logistics package, including spare parts … Sweden fields the short-range ground-based system IRIS-T SLS and decided in June 2025 to procure seven units of … IRIS-T SLM … The system uses the standard IRIS-T air-to-air missile in an unchanged way … real 360° protection",
+            "location": "Diehl-Pressemitteilung 11.12.2025, Absätze 1–3"
+          },
+          {
+            "source_id": "S-3d1ac94ea50adfec",
+            "mode": "Paraphrase",
+            "text": "ESD bestätigt die FMV-Bestellung weiterer IRIS-T-SLS-Starter (Ankündigung 11.12.2025) und die Nutzung des Standard-Flugkörpers mit Infrarotsuchkopf.",
+            "location": "ESD, 11.12.2025, Absätze 1–3"
+          }
+        ],
+        "uncertainty": "Stückzahl und Wert nicht veröffentlicht.",
+        "proposed_depth": "A",
+        "event_date": "2025-12-11",
+        "event_status": "beauftragt laut Hersteller"
+      },
+      "fingerprint": "15c1b174f0077d9391629910af8a428205aa0c0ee74427456cdaac603c0551fc"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DIEHL-01",
+        "statement": "Laut European Security & Defence eröffnete Diehl Defence am 23. Januar 2026 in Nonnweiler (Saarland) ein Flugkörper-Integrationszentrum mit 3.400 m² neuer Produktionsfläche, das zunächst die Integrationskapazität für Varianten der IRIS-T-Familie erweitern soll; am Standort seien mehr als 20 weitere Bauprojekte geplant, die Investitionen betragen unternehmensweit rund 1,5 Mrd. EUR.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-504b2773565ae51b"
+        ],
+        "evidence": "Auszug: opened a new missile integration centre at its Nonnweiler location … announced on 23 January 2026 … 3,400 m2 of new production space, will primarily serve to expand Diehl Defences capacity for missile integration, initially for the variants of the IRIS-T family … more than 20 other construction projects … around EUR 1.5 billion company-wide",
+        "location": "ESD, 23.01.2026, Absätze 1–5",
+        "uncertainty": "Keine Stückzahl-/Ratenangabe in der geöffneten Quelle.",
+        "proposed_depth": "A",
+        "event_date": "2026-01-23",
+        "event_status": "Ausbau umgesetzt (Gebäude eröffnet)"
+      },
+      "fingerprint": "2c048502b17962c7a3a09ed4cfc6f30ad596087bda9e8e2961bc0cf236d2710d"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-SE-RBS-01",
+        "statement": "Laut Saab (1. Juli 2025) bestellte die schwedische FMV das mobile Kurzstreckensystem RBS 70 NG mit Flugkörpern für rund 1,5 Mrd. SEK (Lieferungen 2027–2028, gebucht Q2 2025), einschließlich Ausrüstung für eine spätere Integration in eine MSHORAD-Lösung; Saabs MSHORAD mit RBS 70 NG verfügt laut Saab über automatische Zielverfolgung, integriertes Nachtsichtgerät und eine Bekämpfungsdistanz bis neun Kilometer.",
+        "kind": "Herstellerangabe",
+        "source_ids": [
+          "S-fce8c647daaea30b"
+        ],
+        "evidence": "Auszug: order … for the mobile short-range air defence solution RBS 70 NG with missiles. The order value is approximately SEK 1.5 billion and deliveries are scheduled 2027-2028 … equipment which will enable the Swedish Armed Forces to integrate the system on a Mobile Short-Range Air Defence (MSHORAD) solution in the future … automatic target tracker and a built-in night sight … up to nine kilometers.",
+        "location": "Saab-Pressemitteilung 01.07.2025, Absätze 1–2, 4",
+        "uncertainty": "",
+        "proposed_depth": "A",
+        "event_date": "2025-07-01",
+        "event_status": "beauftragt laut Hersteller"
+      },
+      "fingerprint": "ad1cc94f584d9ab65ec17083e2903dcfd14a657b75757381c4423c8b582e1f26"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-SAAB-01",
+        "statement": "Laut EDR Magazine (Mai 2026) ist RBS 70 ein lasergestütztes Leitstrahl-Flugkörpersystem; die NG-Version hat seit 2011 automatische Zielverfolgung; der neue Flugkörper Bolide 2 behält Reichweite (9 km) und Höhe (5.000 m) bei; Saab stellte im Mai 2022 MSHORAD als ferngesteuerten Turm auf leichtem Panzerfahrzeug vor. RBS 70 sei bei 20 Kunden im Dienst, MSHORAD von zwei Staaten (Schweden, Tschechien) bestellt; das neue Kohlefaser-Startrohr erlaube laut Saab eine stärker automatisierte Fertigung.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-bf3aaa0b85ea54a2"
+        ],
+        "evidence": "Auszug: A laser beam-riding missile system … since that date the RBS 70 NG … featured an automatic target tracker … range and altitude coverage remained the same, respectively 9 km and 5,000 metres … In May 2022 Saab unveiled its MSHORAD solution … remotely controlled turret installed on a light armoured vehicle … the RBS 70 is in service with 20 customers … the MSHORAD has been ordered by two nations, Sweden and the Czech Republic … carbon fibre. “This allowed us to automate production a lot more",
+        "location": "EDR, 19.05.2026, Absätze 2–3 und 7",
+        "uncertainty": "Angabe „zwei Staaten“ widerspricht der berichteten litauischen MSHORAD-Bestellung 2024 (M-LT-MSH-01); keine Rate/Standortangabe für die Flugkörperfertigung.",
+        "proposed_depth": "A",
+        "event_date": "2026-05-19",
+        "event_status": "berichtet"
+      },
+      "fingerprint": "e68dc45ccfbcfbf2981a4e02443b3cbb3a6ad9951fd16f1c17d34f516fef0fbf"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-CZ-MSH-01",
+        "statement": "Laut Defence Industry Europe (23. Juli 2025) erhielt Saab vom tschechischen Verteidigungsministerium einen Auftrag über 1,8 Mrd. SEK für MSHORAD (Lieferungen 2028–2030): Feuereinheiten auf Basis RBS 70 NG mit Bolide-Flugkörpern auf dem Fahrzeug MARS S-330 des tschechischen Herstellers SVOS, eine gemeinsam mit einem tschechischen Unternehmen entwickelte Führungskomponente und ein bereits eingeführtes Radar eines Drittanbieters.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-12e946370fcf4e20"
+        ],
+        "evidence": "Auszug: order worth SEK 1.8 billion from the Ministry of Defence … of the Czech Republic for its Mobile Short Range Air Defence (MSHORAD) system. Deliveries are scheduled … between 2028 and 2030 … integrated onto the MARS S-330 vehicle, which is produced by the Czech manufacturer SVOS … command-and-control component developed in partnership between Saab and a Czech company … third-party radar solution already in service",
+        "location": "Defence Industry Europe, 23.07.2025, Absätze 1–3",
+        "uncertainty": "Name des tschechischen C2-Partners nicht genannt.",
+        "proposed_depth": "A",
+        "event_date": "2025-07-23",
+        "event_status": "beauftragt"
+      },
+      "fingerprint": "356510e9545151bd9027551757a28d8e90bd66c36df411bc2e8df1a96920068a"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-LT-MSH-01",
+        "statement": "Laut European Security & Defence (9. Juli 2024) bestellte das litauische Verteidigungsministerium Saab MSHORAD für rund 1,3 Mrd. SEK (Lieferungen 2025–2027) unter einem Rahmenvertrag zwischen Saab, FMV und Litauen; die Lösung besteht aus Radar Giraffe 1X, Feuereinheit mit Waffenstation und RBS 70 NG sowie Saab-GBAD-C2; Saab integriert die Systeme auf Oshkosh-JLTV-Fahrzeuge.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-dffd12785279e32f"
+        ],
+        "evidence": "Auszug: order … for … Mobile Short-Range Air Defence (MSHORAD) … worth around SEK 1.3 billion … deliveries scheduled … 2025-2027 … Giraffe 1X radar and a mobile firing unit featuring a remote weapon station armed with RBS 70 NG … Saab’s GBAD command-and-control (C2) system … framework agreement between Saab, the Swedish Defence Materiel Administration (FMV) and the Lithuanian MoD … Saab will integrate the MSHORAD systems into Joint Light Tactical Vehicles manufactured by … Oshkosh",
+        "location": "ESD, 09.07.2024, Absätze 1–5",
+        "uncertainty": "Lieferstatus bis Stichtag nicht belegt.",
+        "proposed_depth": "A",
+        "event_date": "2024-07-09",
+        "event_status": "beauftragt"
+      },
+      "fingerprint": "8481c3a02e66d2764bfbd1f78a938084c96116d9944c51e20e9efbb89009719c"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-SE-TRI-01",
+        "statement": "Laut The Defense Post (6. April 2026) vergab Schweden an BAE Systems Bofors einen Auftrag über rund 180 Mio. USD für das Flugabwehrsystem Tridon Mk2, ein lkw-gestütztes 40-mm-System mit Mehrzielfähigkeit gegen Drohnen, Marschflugkörper und Flugzeuge sowie gepanzerte Bodenziele; separat erhielt Saab 2,6 Mrd. SEK für ein mobiles modulares C-UAS-System. Laut Militär Aktuell (16. April 2026; Auftragswert 153 Mio. EUR) hatte die FMV bereits im Februar 2026 Tridon-Mk2-Systeme im Namen Schwedens und Dänemarks beschafft, die an die Ukraine gespendet wurden.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-eddf31ac6c75fbe9",
+          "S-ddd98359e4352c31"
+        ],
+        "evidence": "Auszug: a $180-million contract has been awarded for the procurement of the Tridon Mk2 … truck-mounted 40mm system … it can counter drones, cruise missiles, and aircraft, while also engaging ground threats such as armored vehicles … Saab secured a 2.6-billion Swedish krona ($274 million) contract to deliver a mobile, modular counter-unmanned aerial system. | Auszug: BAE Systems has received an order worth 153 million euros from the Swedish Defense Materiel Administration (FMV) for the Tridon Mk2 … In February, the FMV procured on behalf of Sweden and Denmark Tridon Mk2 systems … donated to Ukraine",
+        "location": "The Defense Post, 06.04.2026, Absätze 1–5 | Militär Aktuell, 16.04.2026, Absatz 1",
+        "evidence_items": [
+          {
+            "source_id": "S-eddf31ac6c75fbe9",
+            "mode": "Auszug",
+            "text": "a $180-million contract has been awarded for the procurement of the Tridon Mk2 … truck-mounted 40mm system … it can counter drones, cruise missiles, and aircraft, while also engaging ground threats such as armored vehicles … Saab secured a 2.6-billion Swedish krona ($274 million) contract to deliver a mobile, modular counter-unmanned aerial system.",
+            "location": "The Defense Post, 06.04.2026, Absätze 1–5"
+          },
+          {
+            "source_id": "S-ddd98359e4352c31",
+            "mode": "Auszug",
+            "text": "BAE Systems has received an order worth 153 million euros from the Swedish Defense Materiel Administration (FMV) for the Tridon Mk2 … In February, the FMV procured on behalf of Sweden and Denmark Tridon Mk2 systems … donated to Ukraine",
+            "location": "Militär Aktuell, 16.04.2026, Absatz 1"
+          }
+        ],
+        "uncertainty": "Stückzahl, Liefertermine und Fertigungsstandort nicht genannt; Wertangaben in USD/EUR aus Medienumrechnung.",
+        "proposed_depth": "A",
+        "event_date": "2026-04-02",
+        "event_status": "beauftragt"
+      },
+      "fingerprint": "353cc67f8c3b7d87893c4aff1f0047c444007b83ae7dce1bd0b4363f46e12e24"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-PL-PIL-01",
+        "statement": "Laut Defence24 (2. Mai 2023) schloss die polnische Agencja Uzbrojenia zwei Verträge im Gesamtwert von 13 Mrd. PLN: mit MBDA UK über 44 iLauncher und mehrere hundert CAMM (1,9 Mrd. GBP, Lieferungen 2025–2029) sowie mit dem Konsortium PGZ-Pilica (u. a. PGZ, Zakłady Mechaniczne Tarnów, PIT-RADWAR, PCO, Jelcz, MESKO, WZU, WZE) über 16 neue Pilica+-Systeme und die Modernisierung von sechs bestehenden (Budget 3 Mrd. PLN brutto, 2025–2029); zuvor wurden 22 Bystra-Radare bestellt. Ein Pilica+-System umfasst laut Bericht zwei CAMM-Starter, sechs kombinierte Kanonen-/Flugkörpermodule mit 23-mm-Kanonen und Grom/Piorun, Optronik, Bystra-Radar, Kurzstreckenradar und C2.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-e6e94711a0973745"
+        ],
+        "evidence": "Auszug: In total, the value of contracts is PLN 13 bn … MBDA UK … 44 iLauncher systems, and several hundred CAMM missiles … GBP 1.9 bn … finalized between 2025 and 2029 … PGZ-Pilica consortium … Polska Grupa Zbrojeniowa S.A., Zakłady Mechaniczne Tarnów S.A., PIT-RADWAR S.A., PCO S.A., Jelcz … MESKO … Wojskowe Zakłady Uzbrojenia … acquisition of 16 Pilica+ systems and the upgrade of the six existing systems … PLN 3 bn. budget (gross) … 22 Bystra radars … two launchers with CAMM effectors, six combined AAA/SAM systems with 23 mm cannons, Grom/Piorun launchers",
+        "location": "Defence24, 02.05.2023, Absätze 1, 3–5",
+        "uncertainty": "Rollenverteilung der einzelnen Konsortialmitglieder nicht im Detail genannt.",
+        "proposed_depth": "A",
+        "event_date": "2023-05-02",
+        "event_status": "beauftragt"
+      },
+      "fingerprint": "a22e4678ecfe33a603c859508db9aec82cdcbec294b529d027851b50da60cca5"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-PL-PIL-02",
+        "statement": "Laut Militarnyi (23. November 2025) erhielt Polen das erste serielle Pilica+-System (erstes von 16 neuen) im Rahmen des Vertrags mit dem Konsortium PGZ–PILICA+; die Übergabe erfolgte bei der 34. Flugabwehrraketendivision in Bytom. Jedes Kampfmodul basiert auf dem ZUR-23-2SP Jodek mit zwei Piorun-Startern auf Jelcz-Fahrgestell; mit CAMM erreicht das System laut Bericht bis 25 km.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-4e85b953fe46a8de"
+        ],
+        "evidence": "Auszug: Poland has received the first serial Pilica … under the PILICA+ program … first of 16 serial units … ceremony at the 34th Anti-Aircraft Missile Division in Bytom … ZUR-23-2SP Jodek … integrated with two Piorun missile launchers … Jelcz 442.32 4×4 chassis … with the upgrade, it can engage targets up to 25 km away.",
+        "location": "Militarnyi, 23.11.2025, Absätze 1–6, 9",
+        "uncertainty": "",
+        "proposed_depth": "A",
+        "event_date": "2025-11-23",
+        "event_status": "in Auslieferung"
+      },
+      "fingerprint": "f498906f684e2ca883b4269afefda3d1cac4431dc3fd45305090d8c99466b613"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-THA-01",
+        "statement": "Laut Thales-Mitteilung (wiedergegeben von EDR, 18. November 2024) unterzeichnete Thales mit der NSPA einen Vertrag über ein ForceShield-System für das portugiesische Heer, den ersten ForceShield-Vertrag mit einem europäischen Land; er umfasst ForceShield Compact mit Radar Ground Master 200, Funkkommunikation, Führungszentrum ControlView mit Waffenzuweisungsterminals sowie RapidRanger-Fahrzeuge mit StarStreak- und LMM-Flugkörpern.",
+        "kind": "Herstellerangabe",
+        "source_ids": [
+          "S-9bba6057c1bcc3e4"
+        ],
+        "evidence": "Auszug: signing of a contract with NSPA, for the acquisition of a ForceShield system by the Portuguese Army … the first ForceShield contract that Thales has signed with a European country … Ground Master 200 air surveillance radar, a radio communications system, Air Defence command-and-control centre ControlView … RapidRanger vehicles with StarStreak … and Lightweight Multirole Missile (LMM)",
+        "location": "EDR (Thales-Mitteilung), 18.11.2024, Absätze 1–3",
+        "uncertainty": "Wert und Stückzahl nicht genannt.",
+        "proposed_depth": "A",
+        "event_date": "2024-11-18",
+        "event_status": "beauftragt laut Hersteller"
+      },
+      "fingerprint": "35175efd16ccda666155364433bde58f767946dc0b81fee2050706af3bdf462b"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-THA-02",
+        "statement": "Laut European Security & Defence (5. März 2025) platzierte DE&S im Namen der ukrainischen Regierung einen Vertrag über 1,6 Mrd. GBP mit Thales für mehr als 5.000 Lightweight Multirole Missiles (LMM); die LMM-Produktion in Belfast soll sich verdreifachen (200 neue Arbeitsplätze); ein vorheriger Vertrag (September 2024) umfasste 650 Flugkörper, deren Lieferung im Dezember 2024 begann; die Ukraine setzt LMM laut Bericht bereits in der Luftverteidigung ein; DE&S beschreibt den Vertrag als Zusammenführung britischer und ukrainischer Verteidigungsindustrie im Rahmen der Task Force HIRST.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-eb7f63760aba3e64"
+        ],
+        "evidence": "Auszug: DE&S … has placed a GBP 1.6 billion (EUR 1.9 billion) contract with Thales for more than 5,000 Lightweight Multirole Missiles (LMMs) for Ukraine … placed the contract on behalf of the Ukrainian government … will see production of LMMs treble … Thales in Belfast … GBP 162 million contract … signed in September 2024, for 650 missiles … deliveries of which started in December 2024 … bringing together the best of UK and Ukrainian defence industry",
+        "location": "ESD, 05.03.2025, Absätze 1–3, 5–6",
+        "uncertainty": "Einsatzwirkung nur als Bericht („reported“) wiedergegeben.",
+        "proposed_depth": "A",
+        "event_date": "2025-03-03",
+        "event_status": "beauftragt; Vorgängerlos in Auslieferung"
+      },
+      "fingerprint": "b82633af397157721e74a8fbee5c33e44cb6cec4a38fcc6b987d83b1a107d214"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-UK-SHORAD-01",
+        "statement": "Laut Calibre Defence (17. März 2026) erhielt Thales von DE&S einen Auftrag (Pressemitteilung vom 11. März), der die nächste Entwicklungsphase künftiger britischer Mounted-SHORAD-Fähigkeiten mit Starstreak und LMM unterstützt; die Stormer-Flotte soll bis Ende 2028 ersetzt werden; 2024 sei als Interimslösung eine Beschaffung von VAMTAC-4x4 mit RapidRanger-Turm erfolgt.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-f129b4e8889709a9"
+        ],
+        "evidence": "Auszug: Thales has received a contract to enhance work already under way within the Mounted SHORAD programme. According to a March 11 press release, the contract “supports the next phase of development for future MSHORAD capabilities.” … the Stormer fleet is scheduled to be replaced by the end of 2028 … supporting the development of Starstreak and LMM … An interim purchase of VAMTAC 4x4s with the Thales RapidRanger turret is understood to have been made in 2024.",
+        "location": "Calibre Defence, 17.03.2026, Absätze 1–4",
+        "uncertainty": "Vertragswert und Trägerfahrzeug offen; Interimskauf nur als „understood“ berichtet.",
+        "proposed_depth": "B",
+        "event_date": "2026-03-11",
+        "event_status": "Entwicklungsauftrag"
+      },
+      "fingerprint": "5cd6f2e747356589d8fdce630313a7663eda589642e309cc0d6b1f3ddcf13aa1"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-EU-SAFE-01",
+        "statement": "Laut OSW verabschiedete der Rat der EU am 27. Mai 2025 das Darlehensinstrument SAFE für gemeinsame Rüstungsbeschaffung mit bis zu 150 Mrd. EUR und Laufzeiten bis 45 Jahre; Komponenten mit Ursprung außerhalb von EU, EWR/EFTA und Ukraine dürfen höchstens 35 % der geschätzten Komponentenkosten des Endprodukts ausmachen (mit Ausnahmen); bis 30. Mai 2026 geschlossene Verträge dürfen von einem einzelnen Mitgliedstaat stammen; Drittstaaten benötigen für größere Anteile ein bilaterales Abkommen mit der EU.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-057484ce43bd0f28"
+        ],
+        "evidence": "Auszug: At its meeting on 27 May, the Council of the European Union adopted a regulation establishing an instrument for low-interest loans … The maximum ceiling … €150 billion, with repayment periods of up to 45 years … such components must not exceed 35% of the estimated cost of the relevant parts of the final product … Contracts signed up to 30 May 2026 may involve a single member state … only after the conclusion of a separate bilateral agreement between that country and the EU",
+        "location": "OSW, 28.05.2025, Absätze 1, 4–6",
+        "uncertainty": "Verordnungstext (EUR-Lex) im Werkzeug nicht lesbar; Wiedergabe durch Think Tank.",
+        "proposed_depth": "A",
+        "event_date": "2025-05-27",
+        "event_status": "in Kraft (verabschiedet)"
+      },
+      "fingerprint": "068d269ece228361992285b8ab0edc0573ed18b5d2f9142ad88256e0d8562eef"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-EU-SAFE-02",
+        "statement": "Laut A&O Shearman beschloss die EU-Kommission am 9. September 2025 die vorläufige Aufteilung der SAFE-Darlehen auf 19 Antragsteller, u. a. Polen 43,73 Mrd. EUR, Rumänien 16,68 Mrd. EUR, Italien 14,9 Mrd. EUR und Dänemark 46,8 Mio. EUR; Österreich, Deutschland, die Niederlande und Schweden (sowie Irland, Luxemburg, Malta, Slowenien) stellten keinen Antrag, wollen laut Kommission aber an SAFE-finanzierten gemeinsamen Beschaffungen teilnehmen.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-6a3c2e1e456f2080"
+        ],
+        "evidence": "Auszug: On September 9, 2025 the European Commission (EC) adopted the tentative allocation … 19 requests. Notably, Austria, Germany, Ireland, Luxembourg, Malta, Netherlands, Slovenia, and Sweden did not submit proposals; though the EC confirms their intention to participate in joint procurement … Poland EUR43,734,100,805 Romania EUR16,680,055,394 … Italy EUR14,900,000,000 … Denmark EUR46,796,822",
+        "location": "A&O Shearman, Abschnitte „SAFE update“ und Tabelle „Tentative allocation per member state“",
+        "uncertainty": "Vorläufige Allokation; spätere Darlehensverträge je Land nicht amtlich geprüft.",
+        "proposed_depth": "A",
+        "event_date": "2025-09-09",
+        "event_status": "vorläufig zugeteilt"
+      },
+      "fingerprint": "0b4dee56da302265ffee51536194aac20bc59dc75db30f94aa5da2551dd48104"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-EU-SAFE-UK-01",
+        "statement": "Laut Defence Leaders (1. Dezember 2025, unter Berufung auf BBC) scheiterten die Verhandlungen über eine erweiterte britische Teilnahme an SAFE an der Höhe des Eintrittsbeitrags; ohne Zusatzabkommen bleiben britische Unternehmen auf höchstens 35 % des Werts eines SAFE-finanzierten Systems beschränkt.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-51d8de61559f69f0"
+        ],
+        "evidence": "Auszug: Talks between London and Brussels over the UK’s participation in … (SAFE) programme … have collapsed … failed to agree on the cost for UK companies to access an expanded share … British defence firms will remain restricted to contributing no more than 35% of the value of any system funded by the scheme",
+        "location": "Defence Leaders, 01.12.2025, Absätze 1–3",
+        "uncertainty": "Sekundäre Wiedergabe; spätere Entwicklungen nach Dezember 2025 nicht geprüft.",
+        "proposed_depth": "A",
+        "event_date": "2025-11-28",
+        "event_status": "Verhandlungen gescheitert (Stand Dez. 2025)"
+      },
+      "fingerprint": "91281ca1829f3f213b3842a89d17173c030f865f5d0487a3dbac2d9e493f4fd0"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-EU-EDIP-01",
+        "statement": "Laut EU-Mitteilung (EEAS) hat der Rat das Europäische Verteidigungsindustrieprogramm EDIP formell angenommen: 1,5 Mrd. EUR Zuschüsse für 2025–2027, davon 300 Mio. EUR für ein Ukraine-Unterstützungsinstrument; gefördert werden u. a. gemeinsame Beschaffungen von mindestens drei Staaten (davon mindestens zwei Mitgliedstaaten) und Produktionshochläufe; Komponenten von außerhalb EU/EWR dürfen 35 % der Komponentenkosten des Endprodukts nicht übersteigen.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-829c43465e63a592"
+        ],
+        "evidence": "Auszug: Today the Council has formally adopted the European Defence Industry Programme (EDIP) … €1.5 billion in grants for the period 2025-2027. Out of this amount, €300 million are earmarked for a dedicated Ukraine Support Instrument … common procurement actions carried out by at least three countries (of which at least two must be member states) … industrial reinforcement actions … components originating outside the EU and associated countries (EEA states) … should not exceed 35% of total component costs",
+        "location": "EEAS-Mitteilung „European Defence Industry Programme: Council gives final approval“, Absätze 1–4",
+        "uncertainty": "Datum der Ratsannahme auf der geöffneten Seite nicht ausgewiesen (Medien: 8.12.2025).",
+        "proposed_depth": "A",
+        "event_status": "angenommen"
+      },
+      "fingerprint": "f0ff016dc4272dcc8aca7e871d9ac8072333ec73d6804a47251da32efb71785a"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-MKT-SIPRI-00",
+        "statement": "Die SIPRI Military Expenditure Database (Stand 27. April 2026, Version 1.2) enthält Militärausgaben 1949–2025 nach Kalenderjahr, u. a. in Mio. US-Dollar zu konstanten Preisen und Wechselkursen von 2024; blau markierte Werte sind SIPRI-Schätzungen. Länderanmerkungen: Polen ohne einige Verteidigungsausgaben anderer Ministerien bzw. Zusatzfonds (2023 inkl. Armed Forces Support Fund), Italien inkl. Carabinieri, Rumänien ohne paramilitärische Kräfte, Vereinigtes Königreich auf Basis „Net Cash Requirement“.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-63ef3755ffe55169",
+          "S-7730735b980263ed"
+        ],
+        "evidence": "Auszug: consistent time series on the military spending of countries for the period 1949–2025 … Figures in constant (2024) and current US dollars, as a share of gross domestic product (GDP) … are presented according to calendar year … This file was revised on 27 April 2026 | Auszug: Military expenditure by country, in constant (2024) US$ m., 1949–2025 … Figures in blue are SIPRI estimates … 78 Poland: The figures for Poland exclude some defence spending in other ministries … 87 Italy: Figures include spending on paramilitary forces (i.e. Carabinieri) … ¶ … do not include spending on paramilitary forces … 91 UK … based on the \"Net Cash Requirement\"",
+        "location": "SIPRI Milex-Seite, Absätze 1–2, Downloadhinweis | Excel, Blatt „Constant (2024) US$“ Kopfzeilen 1–3; Blatt „Footnotes“ Anm. ¶, 78, 87, 91",
+        "evidence_items": [
+          {
+            "source_id": "S-63ef3755ffe55169",
+            "mode": "Auszug",
+            "text": "consistent time series on the military spending of countries for the period 1949–2025 … Figures in constant (2024) and current US dollars, as a share of gross domestic product (GDP) … are presented according to calendar year … This file was revised on 27 April 2026",
+            "location": "SIPRI Milex-Seite, Absätze 1–2, Downloadhinweis"
+          },
+          {
+            "source_id": "S-7730735b980263ed",
+            "mode": "Auszug",
+            "text": "Military expenditure by country, in constant (2024) US$ m., 1949–2025 … Figures in blue are SIPRI estimates … 78 Poland: The figures for Poland exclude some defence spending in other ministries … 87 Italy: Figures include spending on paramilitary forces (i.e. Carabinieri) … ¶ … do not include spending on paramilitary forces … 91 UK … based on the \"Net Cash Requirement\"",
+            "location": "Excel, Blatt „Constant (2024) US$“ Kopfzeilen 1–3; Blatt „Footnotes“ Anm. ¶, 78, 87, 91"
+          }
+        ],
+        "uncertainty": "",
+        "proposed_depth": "A",
+        "event_status": "Datenstand 27.04.2026"
+      },
+      "fingerprint": "7ad9b826bf23aa31ea7c0692a06158aebcb1c6e4c02284a6bc10cbb21999bb60"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-MKT-SIPRI-DE",
+        "statement": "Laut SIPRI-Datenbank (Stand 27.04.2026) betrugen die Militärausgaben für Deutschland in Mio. US-Dollar zu konstanten Preisen und Wechselkursen 2024 (gerundet auf eine Nachkommastelle): 2021: 59887,7; 2022: 62499,5; 2023: 70204,6; 2024: 86148,3; 2025: 106727,2; die Werte sind nicht als SIPRI-Schätzung markiert.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-7730735b980263ed"
+        ],
+        "evidence": "Auszug: Deutschland (Zeile 168), Spalten 2021–2025: 59887.7, 62499.5, 70204.6, 86148.3, 106727.2",
+        "location": "Excel, Blatt „Constant (2024) US$“, Zeile 168, Spalten 2021–2025",
+        "uncertainty": "Kalenderjahreswerte; Rundung lokal auf eine Nachkommastelle; kein Segmentvolumen Flugabwehr.",
+        "proposed_depth": "A",
+        "event_status": "Ist-Werte laut SIPRI"
+      },
+      "fingerprint": "20796278a30401d07ec778e9eb91cf6e5c45f81c4cdc32d8974482352b0aa5ca"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-MKT-SIPRI-PL",
+        "statement": "Laut SIPRI-Datenbank (Stand 27.04.2026) betrugen die Militärausgaben für Polen in Mio. US-Dollar zu konstanten Preisen und Wechselkursen 2024 (gerundet auf eine Nachkommastelle): 2021: 19634,3; 2022: 19877,4; 2023: 28998,1; 2024: 34459,5; 2025: 42528,1; die Werte sind nicht als SIPRI-Schätzung markiert. Länderanmerkung SIPRI: Anm. 78.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-7730735b980263ed"
+        ],
+        "evidence": "Auszug: Polen (Zeile 146), Spalten 2021–2025: 19634.3, 19877.4, 28998.1, 34459.5, 42528.1",
+        "location": "Excel, Blatt „Constant (2024) US$“, Zeile 146, Spalten 2021–2025",
+        "uncertainty": "Kalenderjahreswerte; Rundung lokal auf eine Nachkommastelle; kein Segmentvolumen Flugabwehr.",
+        "proposed_depth": "A",
+        "event_status": "Ist-Werte laut SIPRI"
+      },
+      "fingerprint": "ed31338551d3f3d17bdfb187d017e971fded8e677880ab702a9517f6501ba014"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-MKT-SIPRI-NL",
+        "statement": "Laut SIPRI-Datenbank (Stand 27.04.2026) betrugen die Militärausgaben für Niederlande in Mio. US-Dollar zu konstanten Preisen und Wechselkursen 2024 (gerundet auf eine Nachkommastelle): 2021: 15553,7; 2022: 15055,3; 2023: 17213,8; 2024: 23577,5; 2025: 26995,3; die Werte sind nicht als SIPRI-Schätzung markiert.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-7730735b980263ed"
+        ],
+        "evidence": "Auszug: Niederlande (Zeile 175), Spalten 2021–2025: 15553.7, 15055.3, 17213.8, 23577.5, 26995.3",
+        "location": "Excel, Blatt „Constant (2024) US$“, Zeile 175, Spalten 2021–2025",
+        "uncertainty": "Kalenderjahreswerte; Rundung lokal auf eine Nachkommastelle; kein Segmentvolumen Flugabwehr.",
+        "proposed_depth": "A",
+        "event_status": "Ist-Werte laut SIPRI"
+      },
+      "fingerprint": "34c04d837a63163ab3cac1009748c61685655463a69ff2638208c4754e837aea"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-MKT-SIPRI-DK",
+        "statement": "Laut SIPRI-Datenbank (Stand 27.04.2026) betrugen die Militärausgaben für Dänemark in Mio. US-Dollar zu konstanten Preisen und Wechselkursen 2024 (gerundet auf eine Nachkommastelle): 2021: 5428,1; 2022: 5886,1; 2023: 8254,0; 2024: 9637,2; 2025: 14083,0; die Werte sind nicht als SIPRI-Schätzung markiert.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-7730735b980263ed"
+        ],
+        "evidence": "Auszug: Dänemark (Zeile 165), Spalten 2021–2025: 5428.1, 5886.1, 8254.0, 9637.2, 14083.0",
+        "location": "Excel, Blatt „Constant (2024) US$“, Zeile 165, Spalten 2021–2025",
+        "uncertainty": "Kalenderjahreswerte; Rundung lokal auf eine Nachkommastelle; kein Segmentvolumen Flugabwehr.",
+        "proposed_depth": "A",
+        "event_status": "Ist-Werte laut SIPRI"
+      },
+      "fingerprint": "964141de9d449cfadab6f2b34e40ea7b1abdbd46f2548b67e4fb3df49c97ff5d"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-MKT-SIPRI-RO",
+        "statement": "Laut SIPRI-Datenbank (Stand 27.04.2026) betrugen die Militärausgaben für Rumänien in Mio. US-Dollar zu konstanten Preisen und Wechselkursen 2024 (gerundet auf eine Nachkommastelle): 2021: 6362,6; 2022: 6172,0; 2023: 5915,7; 2024: 8315,4; 2025: 8805,8; die Werte sind nicht als SIPRI-Schätzung markiert. Länderanmerkung SIPRI: Anm. ¶‖.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-7730735b980263ed"
+        ],
+        "evidence": "Auszug: Rumänien (Zeile 147), Spalten 2021–2025: 6362.6, 6172.0, 5915.7, 8315.4, 8805.8",
+        "location": "Excel, Blatt „Constant (2024) US$“, Zeile 147, Spalten 2021–2025",
+        "uncertainty": "Kalenderjahreswerte; Rundung lokal auf eine Nachkommastelle; kein Segmentvolumen Flugabwehr.",
+        "proposed_depth": "A",
+        "event_status": "Ist-Werte laut SIPRI"
+      },
+      "fingerprint": "56402cc836ea93a4a0c54e84e913341aba080fa0bb13a382517bdf79d26b48cc"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-MKT-SIPRI-IT",
+        "statement": "Laut SIPRI-Datenbank (Stand 27.04.2026) betrugen die Militärausgaben für Italien in Mio. US-Dollar zu konstanten Preisen und Wechselkursen 2024 (gerundet auf eine Nachkommastelle): 2021: 37010,4; 2022: 36951,2; 2023: 35923,5; 2024: 37849,5; 2025: 45440,2; die Werte sind nicht als SIPRI-Schätzung markiert. Länderanmerkung SIPRI: Anm. 87.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-7730735b980263ed"
+        ],
+        "evidence": "Auszug: Italien (Zeile 172), Spalten 2021–2025: 37010.4, 36951.2, 35923.5, 37849.5, 45440.2",
+        "location": "Excel, Blatt „Constant (2024) US$“, Zeile 172, Spalten 2021–2025",
+        "uncertainty": "Kalenderjahreswerte; Rundung lokal auf eine Nachkommastelle; kein Segmentvolumen Flugabwehr.",
+        "proposed_depth": "A",
+        "event_status": "Ist-Werte laut SIPRI"
+      },
+      "fingerprint": "a376851a3a4248e20c2f15578ee4d6c952b2036479af454393236d07f86fe1a3"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-MKT-SIPRI-AT",
+        "statement": "Laut SIPRI-Datenbank (Stand 27.04.2026) betrugen die Militärausgaben für Österreich in Mio. US-Dollar zu konstanten Preisen und Wechselkursen 2024 (gerundet auf eine Nachkommastelle): 2021: 4624,5; 2022: 4124,0; 2023: 4589,1; 2024: 5294,4; 2025: 5883,2; die Werte sind nicht als SIPRI-Schätzung markiert.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-7730735b980263ed"
+        ],
+        "evidence": "Auszug: Österreich (Zeile 162), Spalten 2021–2025: 4624.5, 4124.0, 4589.1, 5294.4, 5883.2",
+        "location": "Excel, Blatt „Constant (2024) US$“, Zeile 162, Spalten 2021–2025",
+        "uncertainty": "Kalenderjahreswerte; Rundung lokal auf eine Nachkommastelle; kein Segmentvolumen Flugabwehr.",
+        "proposed_depth": "A",
+        "event_status": "Ist-Werte laut SIPRI"
+      },
+      "fingerprint": "34d66cc747879d5dba01caf99ddaa6d9c36f9de2b2fd280a56e1945f8a2d0676"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-MKT-SIPRI-UK",
+        "statement": "Laut SIPRI-Datenbank (Stand 27.04.2026) betrugen die Militärausgaben für Vereinigtes Königreich in Mio. US-Dollar zu konstanten Preisen und Wechselkursen 2024 (gerundet auf eine Nachkommastelle): 2021: 72051,0; 2022: 73189,3; 2023: 78166,9; 2024: 89814,6; 2025: 87984,6; die Werte sind nicht als SIPRI-Schätzung markiert. Länderanmerkung SIPRI: Anm. 91.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-7730735b980263ed"
+        ],
+        "evidence": "Auszug: Vereinigtes Königreich (Zeile 181), Spalten 2021–2025: 72051.0, 73189.3, 78166.9, 89814.6, 87984.6",
+        "location": "Excel, Blatt „Constant (2024) US$“, Zeile 181, Spalten 2021–2025",
+        "uncertainty": "Kalenderjahreswerte; Rundung lokal auf eine Nachkommastelle; kein Segmentvolumen Flugabwehr.",
+        "proposed_depth": "A",
+        "event_status": "Ist-Werte laut SIPRI"
+      },
+      "fingerprint": "ed66f1e814433d8c9fa27420e8dd0a4e40c084a49833caff8bbfe4a02ba1268c"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-MKT-SIPRI-SE",
+        "statement": "Laut SIPRI-Datenbank (Stand 27.04.2026) betrugen die Militärausgaben für Schweden in Mio. US-Dollar zu konstanten Preisen und Wechselkursen 2024 (gerundet auf eine Nachkommastelle): 2021: 7443,8; 2022: 8249,1; 2023: 9070,9; 2024: 12047,0; 2025: 14954,1; die Werte sind nicht als SIPRI-Schätzung markiert.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-7730735b980263ed"
+        ],
+        "evidence": "Auszug: Schweden (Zeile 179), Spalten 2021–2025: 7443.8, 8249.1, 9070.9, 12047.0, 14954.1",
+        "location": "Excel, Blatt „Constant (2024) US$“, Zeile 179, Spalten 2021–2025",
+        "uncertainty": "Kalenderjahreswerte; Rundung lokal auf eine Nachkommastelle; kein Segmentvolumen Flugabwehr.",
+        "proposed_depth": "A",
+        "event_status": "Ist-Werte laut SIPRI"
+      },
+      "fingerprint": "a1b8d38dc36f03ee5a5a4c92eb2a9c5d074bcb7d76d9e84212d72dab7282a2f3"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-PL-NAREW-01",
+        "statement": "Laut britischer Regierung (7. November 2023) unterzeichnete MBDA (UK) einen Unterauftrag über mehr als 4 Mrd. GBP mit der polnischen PGZ für die nächste Phase des Luftverteidigungsprogramms Narew; vorgesehen sind mehr als 1.000 CAMM-ER (Reichweite über 40 km) und über 100 iLauncher; britische Ingenieure aus Bolton, Bristol und Stevenage sollen mit polnischen Partnern zusammenarbeiten und Schlüsseltechnologien teilen (Laufzeit über 15 Jahre).",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-faeb7be1bb92f0b5"
+        ],
+        "evidence": "Auszug: worth over £4 billion, to continue the next phase of Poland’s future air defence programme, Narew. UK firm MBDA has signed the sub-contract with Polish defence company PGZ … more than 40 kilometres. It will create more than 1,000 … (CAMM-ER) and over 100 iLaunchers … British engineers from Bolton, Bristol and Stevenage working with their Polish counterparts, sharing key technologies … for more than 15 years.",
+        "location": "gov.uk-Pressemitteilung 07.11.2023, Absätze 1–3, 6",
+        "uncertainty": "Umfang der polnischen Lokalfertigung im geöffneten Text nur als Technologieteilung beschrieben; Lieferstand nicht geprüft.",
+        "proposed_depth": "A",
+        "event_date": "2023-11-07",
+        "event_status": "Unterauftrag unterzeichnet"
+      },
+      "fingerprint": "f30ddad37bbc0480a52341a7b92dee4b4d1c07abe4ce23aa5b675ad8387331fb"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DE-IRIS-01",
+        "statement": "Laut ESUT (23. Juni 2023) unterzeichnete das BAAINBw am 22. Juni 2023 den Liefervertrag mit Diehl Defence für sechs IRIS-T-SLM-Feuereinheiten (Haushaltsfreigabe 950 Mio. EUR am 14. Juni) mit 216 Lenkflugkörpern; Unterauftragnehmer sind Hensoldt (Radar TRML-4D), Airbus Defence and Space (Führungs- und Feuerleitsoftware Fortion IMBS-FC), Rheinmetall MAN Military Vehicles (HX-Trägerfahrzeuge) und Rohde & Schwarz (Kommunikation); Serienauslieferung ab Ende 2025 bis 2027 geplant.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-1ee3bed35c316be7"
+        ],
+        "evidence": "Auszug: hat am 22. Juni den Liefervertrag mit Diehl Defence für sechs Feuereinheiten … IRIS-T SLM unterzeichnet … am 14. Juni … ein Finanzvolumen von 950 Millionen Euro … Als Unterauftragnehmer sind Hensoldt (Radargerät), Airbus Defence and Space (Führungs- und Waffeneinsatzsystem), Rheinmetall MAN Military Vehicles (Trägerfahrzeuge) und Rhode & Schwarz (drahtlose Kommunikation) beteiligt … TRML-4D … Fortion IMBS-FC … 216 Lenkflugkörpern … Die Serienauslieferung ist ab Ende 2025 geplant und soll 2027 abgeschlossen sein.",
+        "location": "ESUT, 23.06.2023, Absätze 1–2, 4–5, 7",
+        "uncertainty": "Auslieferungsstand der Serie bis Stichtag nicht geprüft.",
+        "proposed_depth": "A",
+        "event_date": "2023-06-22",
+        "event_status": "beauftragt"
+      },
+      "fingerprint": "780c3ac7a7b0fa23b667c9c3288e33cdd33b30b6d1361d6412aa6ee9a4789142"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DE-IRIS-02",
+        "statement": "Laut ESUT (8. Februar 2026, nach Diehl-Mitteilung vom 7. Februar) schloss das BAAINBw nach Mittelbereitstellung durch den Haushaltsausschuss am 18. Dezember 2025 noch 2025 mehrere Verträge mit Diehl Defence über IRIS-T-Flugkörper für Luft-Luft-Einsatz sowie für die bodengebundenen Systeme IRIS-T SLS und IRIS-T SLM; die IRIS-T-Familie hat laut Diehl 21 Nutzerländer.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-12a6733e8d06cf75"
+        ],
+        "evidence": "Auszug: Nach der Bereitstellung der Finanzmittel durch den Haushaltsausschuss … am 18. Dezember 2025 hat das Bundesamt … mit Diehl Defence noch im vergangenen Jahr mehrere Verträge … abgeschlossen … sowohl für die Luft-Luft-Anwendung (IRIS-T) als auch für die bodengebundene Luftverteidigung (IRIS-T SLS, IRIS-T SLM) … Die IRIS-T-Familie umfasst Diehl zufolge mittlerweile 21 Nutzerländer.",
+        "location": "ESUT, 08.02.2026, Absätze 1–2, 5",
+        "uncertainty": "Mengen und Werte nicht veröffentlicht; Nutzerländerzahl bezieht sich auf die gesamte IRIS-T-Familie.",
+        "proposed_depth": "A",
+        "event_date": "2025-12-31",
+        "event_status": "beauftragt"
+      },
+      "fingerprint": "4e43dba38bd8b59530d474487cc3b0231e28d7633761cdbb785a9b9cbef985d9"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-SKR30-ARCH-01",
+        "statement": "Laut Sicherheit & Verteidigung (Januar 2026) wiegt der Skyranger-30-Turm rund drei Tonnen und kombiniert die 30-mm-Revolverkanone Oerlikon KCE-ABM (bis 1.250 Schuss/min, bis 300 Schuss, programmierbare Airburst-Munition) mit zwei bis vier Kurzstrecken-Flugkörpern (u. a. Stinger, Mistral, SADM; von SADM bis zu neun); die Sensorik basiert laut Medium auf dem AESA-Radar Spexer 2000 von Hensoldt (instrumentierte Reichweite rund 35 km) sowie einer stabilisierten EO-Einheit mit zwei Laserentfernungsmessern; mit Skymaster kann das System ein eigenes Luftlagebild erzeugen und externe Zieldaten verarbeiten.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-397e8414020bdb92"
+        ],
+        "evidence": "Auszug: Der Skyranger-30-Turm wiegt rund drei Tonnen … 30-mm-Revolverkanone vom Typ Oerlikon KCE-ABM sowie Flugabwehrraketen kurzer Reichweite … bis zu 1.250 Schuss pro Minute, der Munitionsvorrat beträgt bis zu 300 Schuss … zwei bis vier Lenkflugkörper … Stinger, Mistral sowie die Small Anti Drone Missile (SADM) … bis zu neun Stück … Spexer-2000-Radar von Hensoldt … instrumentierten Reichweite von rund 35 Kilometern … In Verbindung mit dem Skymaster-Führungssystem",
+        "location": "S&V, 21.01.2026, Abschnitte „Technik“ (Absätze 2–7)",
+        "uncertainty": "Radarlieferant und Leistungsdaten nur medial (unter Berufung auf Entwickler) belegt; Herstellerdatenblatt nicht geöffnet.",
+        "proposed_depth": "A",
+        "event_status": "Systembeschreibung"
+      },
+      "fingerprint": "f6a736d6fd6ea93a4d703fbf2f772c1b2d69601abf8c3ff9c98f3dbba700e55e"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-IT-A2CS-01",
+        "statement": "Laut Sicherheit & Verteidigung (Januar 2026) plant Italien im Vorhaben Army Armoured Combat System (A2CS) bis zu 1.050 Lynx KF41 in 16 Varianten, darunter eine Flugabwehrvariante mit Skyranger-30-Turm; die Zahl der Skyranger sei nicht bekannt, das Gesamtvorhaben werde auf bis zu 16 Mrd. EUR geschätzt.",
+        "kind": "Fakt",
+        "source_ids": [
+          "S-397e8414020bdb92"
+        ],
+        "evidence": "Auszug: Italien plant im Rahmen des Vorhabens „Army Armoured Combat System“, kurz A2CS, die Beschaffung von bis zu 1.050 Lynx KF41 in 16 verschiedenen Varianten. Darunter befindet sich auch eine Flugabwehrvariante mit Skyranger-30-Turm. Wie viele Skyranger 30 Italien beschaffen will, ist bislang nicht bekannt. Das Kostenvolumen des Gesamtvorhabens wird auf bis zu 16 Milliarden Euro geschätzt.",
+        "location": "S&V, 21.01.2026, Abschnitt „Interessenten“, Italien",
+        "uncertainty": "Schätzung für das gesamte Fahrzeugvorhaben, kein Flugabwehrwert.",
+        "proposed_depth": "B",
+        "event_status": "Planung"
+      },
+      "fingerprint": "8bb6a42f1dce39af556f1821191da8cd4175ef3b6f033d44e6712c32a1ff4c3d"
     }
   ],
   "duplicate_candidates": [],
