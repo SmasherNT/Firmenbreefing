@@ -59,6 +59,7 @@ Zuständige Rolle liest die benötigten Referenzen; konkrete Regeln nur dort pfl
 | Bereich | Referenzen unter references/ |
 |---|---|
 | Recherche, Dateien und Wiederverwendung | faktenphase.md; recherche-wiederverwendung.md |
+| Unterbrochene v2-Läufe und überprüfte Checkpoints | lauf-wiederaufnahme.md |
 | Cluster, Berichtsanalyse, offene Entdeckung und Querverbindungen über JV hinaus | cluster-recherche.md; cluster-quellenkatalog.md; netzwerk-html.md |
 | Vergleichsplan vor Wettbewerbsrecherche | capability-matrix.md |
 | Geprüfte Ableitungen, Abhängigkeiten und Schluss-Review | interpretationsphase.md; quellenpruefung.md |

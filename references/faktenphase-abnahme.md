@@ -78,3 +78,40 @@ unveränderte Aussage, Original, Zuordnung und Abhängigkeiten im selben Lauf/St
 Keine echte Unternehmensquelle geöffnet oder freigegeben. Integrationsergebnisse
 und Reviews simuliert; kein gemessener Modelltoken-/Kostenbenchmark. Die vorherige
 Stichproben-/Fehlereskalationsmethode, Recherchebreite und Agentenkontexte bleiben.
+
+## Ergänzung 13.10.2026: sichere Wiederaufnahme unterbrochener Läufe
+
+resume-run.py speichert nur ausdrücklich abgeschlossene und erneut formal geprüfte
+Schritte. Originalauftrag, vollständiges Manifest, Eingaben/Ausgaben, Original-/
+Text-Snapshots, aktuelle Verträge und Abhängigkeiten bleiben gebunden. Reviews
+müssen weiterhin mit explizitem Entwurf, Arbeitsblatt und aktueller Validierung
+übereinstimmen; der Helfer erzeugt keine Freigabe. Dateiexistenz ist kein Abschluss.
+Änderungen sperren betroffene Schritte/Folgeschritte, unabhängige Teile bleiben
+verwendbar. Neue Firma, Scope oder Stichtag wird kein Fortsetzungslauf.
+
+- 187 Unit-Tests bestanden, darunter 27 neue Wiederaufnahmetests: Unterbrechung,
+  fehlende/partielle Dateien, veränderter Auftrag/Stichtag, Originaländerung/-verlust,
+  beschädigter Zustand, alte oder fehlgeschlagene Quellenkontrolle, explizite
+  Freigabebindung, Kontextänderung, veraltete HTML, Pflichtplan, unabhängige Zweige,
+  Abhängigkeitszyklen, spätere Revalidierung bei früheren Modulverweisen, parallele
+  Dateiveränderung, atomarer Schreibabbruch und beendeter Prozesslock.
+- Vollständiger synthetischer Lauf mit 71 Fakten, fünf Originalen, 29 Ableitungen
+  und elf Checkpoints erfolgreich wiederaufgenommen und nach Helferänderung erneut
+  validiert. Positionierungs-/SWOT-Kontexte und HTML bytegleich zum vorherigen Stand.
+  Alle Rollendefinitionen, Selektions-/Kontextlogik und HTML/CSS/JS unverändert;
+  bestehende Inhalts-/Quellenreviews und Browser-/Druckabnahme bleiben Pflicht.
+- Unabhängiger delegierter Offline-Fortsetzungslauf: verändertes Original sperrt
+  alten Portfolio-/Paketstand. Faktenrolle korrigiert vergebenen Auftrag auf keinen
+  Auftrag und geplanten Pilot, entfernt unbelegte Produktzuordnung/Publikationsdatum.
+  Quellenprüfer prüft alle drei Aussagen vollständig A und gesamte Modulabdeckung;
+  Basis ausdrücklich freigegeben. Auftrag/Manifest erhalten, frühere Artefakte
+  gesichert. Zwischenzeitliche Vertragsänderung sperrt alte Checkpoints ebenfalls;
+  unveränderte Dateien anschließend gezielt revalidiert.
+- Quellenaufnahmen älter als 24 Stunden benötigen tatsächlichen Refresh/Neueröffnung.
+  HTTP-Abruf wird vor Netzoperation als laufend markiert; Abbruch/Fehler lässt die
+  Sperre stehen, Cache-Hit löscht sie nicht. Unveränderter erfolgreicher Abruf/304
+  bewahrt Datenbindung. Syntax, vier Skills und Diff-Whitespace geprüft.
+
+Alle Quellen/Prüfentscheidungen dieser Tests fiktiv bzw. simuliert; keine reale
+Firmenrecherche oder gemessene Token-/Kostenersparnis. Checkpoints führen keine
+Agenten aus, kürzen keine Kontexte und ersetzen keine inhaltliche/visuelle Prüfung.

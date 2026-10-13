@@ -9,6 +9,9 @@ Einrichtung/Systemfragen sind keine Rechercheaufträge.
    anlegen. Firmenidentität/Stichtag normalisieren; nur beauftragte Rollen wählen.
    Dokumentcache nach references/recherche-wiederverwendung.md mit source-cache.py
    initialisieren; denselben laufbezogenen Pfad an Faktenrollen und Reviewer geben.
+   Fehlenden Zustand nach references/lauf-wiederaufnahme.md initialisieren (isoliert
+   --target facts); vorhandenen Zustand zuerst per resume prüfen. Nach fertigen Rollen,
+   Plan, Paket und freigegebenem Basisreview lokale Checkpoints speichern.
 2. Kontext, Portfolio und Cluster soweit ausgewählt delegieren, ggf. parallel.
    Eingaben, mode=facts-v2 und genau einen Ausgabeweg je Rolle nennen.
 3. Vor Markt-/Wettbewerbsrecherche aus Auftrag und nötigen Identitäts-/Produktfakten

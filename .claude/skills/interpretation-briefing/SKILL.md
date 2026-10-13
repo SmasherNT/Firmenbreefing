@@ -5,6 +5,9 @@ description: Steuere ausdrücklich beauftragte Interpretation einer vorhandenen 
 
 Lies references/interpretationsphase.md an der Repositorywurzel. Auftrag und vorhandenen Faktenlauf
 identifizieren; ohne diesen keinen unabhängigen neuen Interpretationslauf erfinden.
+Bei vorhandenen Lauf-Checkpoints references/lauf-wiederaufnahme.md anwenden:
+vor Delegation resume, nur reusable übernehmen; Positionierung, SWOT und
+freigegebenes Schlussreview nach tatsächlichem Abschluss lokal speichern.
 1. Manifest, Faktenpaket und freigegebenes Basis-Review desselben Laufs prüfen.
    Nur beauftragte Interpretationsrollen ausführen; SWOT allein ist möglich.
 2. Relevante Fakten-IDs für Positionierung wählen; bei Matrix Plan/Marktmodul

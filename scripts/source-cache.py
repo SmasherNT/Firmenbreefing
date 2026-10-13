@@ -241,6 +241,9 @@ class Cache:
             if previous and previous.get('capture_kind') == 'http-original':
                 if previous.get('etag'): headers['If-None-Match'] = previous['etag']
                 if previous.get('last_modified'): headers['If-Modified-Since'] = previous['last_modified']
+            # Persist before network I/O: failed/interrupted refresh is not proof of freshness.
+            pending = directory/'revalidation.json'
+            write_json(pending, {'status': 'pending', 'started_at': now(), 'url': url})
             try:
                 with urlopen(Request(url, headers=headers), timeout=timeout) as response:
                     body = response.read(MAX_BYTES + 1)
@@ -253,6 +256,7 @@ class Cache:
                 write_json(directory/'current.json', {**previous, 'checked_at': now(),
                            'revalidations': previous['revalidations'] + 1})
                 result = self.load(sid)
+            pending.unlink(missing_ok=True)
             return {**result, 'cache_hit': False,
                     'content_changed': bool(previous and previous['content_sha256'] != result['content_sha256'])}
 
@@ -262,8 +266,10 @@ class Cache:
         sid = source_id(url); directory = self._directory(sid)
         with lock(directory/'.fetch-lock'):
             old = self.load(sid) if (directory/'current.json').exists() else None
-            return self._save(url, Path(path).read_bytes(), content_type, capture_kind,
-                              old, capture_note=capture_note)
+            result = self._save(url, Path(path).read_bytes(), content_type, capture_kind,
+                                old, capture_note=capture_note)
+            (directory/'revalidation.json').unlink(missing_ok=True)
+            return result
 
     def listing(self):
         return [self.load(p.parent.name) for p in sorted((self.root/'documents').glob('S-*/current.json'))]

@@ -6,6 +6,9 @@ description: Erzeuge aus freigegebenen facts-v2/interpret-v2-Dateien eine kompak
 Lies Auftrag und references/ausgabe-html-v2.md. Delegation nennt Lauf, Manifest,
 Paket, Reviews, vorhandene Interpretationen samt Kontexten und aktuellem Plan.
 Explizite Markdown-Modultests nach references/legacy-html-output.md durchführen.
+Bei vorhandenen Lauf-Checkpoints nach references/lauf-wiederaufnahme.md resume
+ausführen und aktuelle HTML lokal checkpointen. Wiederverwendbare HTML ersetzt
+keine Browser-/Druckprüfung und keine Abnahme.
 1. V2-Dateien desselben Laufs an scripts/render-briefing.py übergeben.
    Vollständiges Firmenbriefing: --full. Aufruf in der Referenz.
    Vorlage und JavaScript nicht als Standard in den Modellkontext laden.

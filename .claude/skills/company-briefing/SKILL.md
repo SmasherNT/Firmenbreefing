@@ -4,6 +4,9 @@ description: Erstelle aus einer kurzen Anfrage ein vollständiges HTML-Firmenbri
 ---
 
 Lies CLAUDE.md, references/defaults.md und references/ausgabe-html-v2.md.
+Unterbrochenen v2-Lauf nach references/lauf-wiederaufnahme.md fortsetzen: vor
+erneuter Delegation resume ausführen und nur reusable-Schritte übernehmen.
+Neue Aufträge bleiben neue Läufe; Agentenkontexte und Pflichtreviews unverändert.
 Einzelne Phasen/Modultests haben Vorrang. Bestehende Markdown-Läufe nur explizit
 nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
 1. Firma, Themen in Nutzerreihenfolge, optionale berufliche Person/Rolle aus
@@ -13,8 +16,11 @@ nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
    topics=[{id,label,page}], page=main oder market (Standard main).
    Beauftragten regionalen Markt-Deep-Dive auf market routen; market_title aus
    dem Auftrag, z. B. Golfstaaten. person als Nutzerangabe. Einrichtung ist kein Auftrag.
+   Lauf-Checkpoints einmal mit --full initialisieren; tatsächlich abgeschlossene
+   Schritte nach der Referenz lokal speichern. Kein Dateiexistenz-Fallback.
 2. facts-briefing im delegierten Lauf mit context/portfolio/cluster/market
-   ausführen. Alle vier Faktenagenten delegieren; Vergleichsplan vor
+   ausführen. Alle vier Faktenrollen abdecken; nur offene Rollen delegieren,
+   gültige reusable-Abschlüsse übernehmen. Vergleichsplan vor
    Wettbewerbsrecherche aus Auftrag festlegen. Delegation nennt Identität,
    mode=facts-v2, Eingaben, Tabellenvertrag und exakten Zielpfad.
 3. Paket lokal zusammenführen. source-reviewer prüft wesentliche Claims
