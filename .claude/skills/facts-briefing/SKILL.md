@@ -7,6 +7,8 @@ Lies references/faktenphase.md, defaults.md und bei Wettbewerb capability-matrix
 Einrichtung/Systemfragen sind keine Rechercheaufträge.
 1. Delegierten Lauf verwenden; sonst isolierten Test tests/<run_id>/ mit Originalauftrag, Manifest und work/output
    anlegen. Firmenidentität/Stichtag normalisieren; nur beauftragte Rollen wählen.
+   Dokumentcache nach references/recherche-wiederverwendung.md mit source-cache.py
+   initialisieren; denselben laufbezogenen Pfad an Faktenrollen und Reviewer geben.
 2. Kontext, Portfolio und Cluster soweit ausgewählt delegieren, ggf. parallel.
    Eingaben, mode=facts-v2 und genau einen Ausgabeweg je Rolle nennen.
 3. Vor Markt-/Wettbewerbsrecherche aus Auftrag und nötigen Identitäts-/Produktfakten
@@ -14,6 +16,9 @@ Einrichtung/Systemfragen sind keine Rechercheaufträge.
    keine festen Beispielspalten. Bei reinem Marktauftrag ohne Vergleich entfällt der Plan.
 4. Markt-Agent mit Plan und nur relevanten vorhandenen Claim-Auszügen delegieren.
    Kontext/Portfolio/Cluster sind keine Pflicht für isolierten Marktauftrag.
+   Nach fertigen Modulen und vor abhängigen Übergaben facts-index.json per
+   fact-index.py bauen/erneuern; Rollen können vorhandene Claims über IDs nutzen.
+   Bestehende Fakten-/Positionierungs-/SWOT-Kontexte unverändert übergeben.
 5. sources/review-Paket lokal erzeugen:
    python3 scripts/prepare-facts.py --manifest <facts-run.json>
    --modules <ausgewählte Module...> --out <Lauf>/work

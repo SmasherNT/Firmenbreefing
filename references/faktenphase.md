@@ -19,6 +19,12 @@ Optional Person, Themen, Regionen und comparison_plan_path.
 Ohne Firmen-/Teilauftrag keine Recherche beginnen. Nur ausgewählte Rollen starten.
 Delegation nennt Auftrag, Manifest, erlaubte Eingaben und genau einen Zielpfad.
 Nur eigenes Modul schreiben; gemeinsamen Quellenbestand nicht parallel ändern.
+Dokumentcache nach recherche-wiederverwendung.md verwenden. Hauptagent initialisiert
+<Lauf>/work/document-cache und nennt ihn in allen Fakten-/Review-Delegationen;
+source-cache.py sperrt einzelne Dokumente, source_proposals bleiben rolleneigene Daten.
+Vorhandene Fakten über den durch Hauptagent erzeugten facts-index.json finden;
+Claims vollständig erhalten und über vorhandene IDs wiederverwenden, nie automatisch
+zusammenführen. Die bisherigen Agentenkontexte bleiben unverändert.
 
 | Rolle | Agent / Skill | Ziel unter <Lauf>/work/ | Claim-Präfix |
 |---|---|---|---|
@@ -97,8 +103,10 @@ Formale Fehler an verantwortliche Rolle zurückgeben; keine fremden Dateien umsc
 Nach fehlerfreiem Lauf: sources.json (gemeinsame Metadaten), review-packet.json
 (temporäre Prüfeingabe) und facts-validation.json (mechanische Befunde).
 Ein Paket enthält nur die ausgewählten Module dieses Laufes; kein Fremdfirmen-Reuse.
-Es ersetzt weder Inhaltsprüfung noch Cache. Vorhandene Quellen/Belegstellen
-gezielt wiederverwenden; vollständiger Dokumentcache folgt später.
+Es ersetzt keine Inhaltsprüfung. Vorhandene Quellen/Belegstellen und Originalcache
+nach recherche-wiederverwendung.md verwenden. prepare-facts.py erzeugt zusätzlich
+facts-index.json als lokale Suchhilfe; Review-Paket und Interpretationskontexte
+behalten ihre bisherigen vollständigen Felder und Freigaberegeln.
 source-reviewer Phase basis erhält Auftrag, Paket und nur nötige Abdeckung/Netzwerk.
 Interpretation darf erst nach tatsächlicher Freigabe starten.
 Für anschließende interpret-v2-Läufe maschinenlesbares Basis-Review nach

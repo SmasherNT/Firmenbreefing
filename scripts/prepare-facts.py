@@ -328,7 +328,8 @@ def main():
             parser.error("--manifest and --modules are required")
         def read(path):
             return json.loads(Path(path).read_text(encoding="utf-8"))
-        result, packet = build(read(args.manifest), [read(p) for p in args.modules],
+        manifest, modules = read(args.manifest), [read(p) for p in args.modules]
+        result, packet = build(manifest, modules,
                                read(args.plan) if args.plan else None)
         summary = {"errors": result["errors"],
                    "claims": len(packet["claims"]) if packet else 0,
@@ -341,13 +342,17 @@ def main():
         if args.out:
             output = Path(args.out)
             input_paths = {Path(p).resolve() for p in [args.manifest, *args.modules, *([args.plan] if args.plan else [])]}
-            targets = [output / n for n in ("sources.json", "review-packet.json", "facts-validation.json")]
+            targets = [output / n for n in ("sources.json", "review-packet.json", "facts-validation.json", "facts-index.json")]
             if any(t.resolve() in input_paths for t in targets):
                 raise ValueError("output must not overwrite an input file")
+            spec = importlib.util.spec_from_file_location('fact_index', Path(__file__).with_name('fact-index.py'))
+            index_helper = importlib.util.module_from_spec(spec); spec.loader.exec_module(index_helper)
+            fact_index = index_helper.build_index(manifest, modules, args.modules)
             output.mkdir(parents=True, exist_ok=True)
-            for name, obj in (("sources.json", {"run_id": read(args.manifest)["run_id"], "company": packet["company"], "as_of": packet["as_of"], "sources": packet["sources"]}),
+            for name, obj in (("sources.json", {"run_id": manifest["run_id"], "company": packet["company"], "as_of": packet["as_of"], "sources": packet["sources"]}),
                               ("review-packet.json", packet), ("facts-validation.json", result)):
                 (output / name).write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            index_helper.CACHE.write_json(output / 'facts-index.json', fact_index)
         return 0
     except (OSError, ValueError, TypeError) as exc:
         print(json.dumps({"errors": [str(exc)]}, ensure_ascii=False))

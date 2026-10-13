@@ -79,6 +79,11 @@ Temporäres Paket im vorhandenen work-/Modultest-Verzeichnis, keine neue Pflicht
 Ergebnisdatei; Analysten schreiben weiterhin nur zugewiesene Moduldateien.
 
 ## Quellen einmal lesen, Befunde mehrfach verwenden
+Laufbezogenen Dokumentcache nach recherche-wiederverwendung.md nutzen;
+Originalbytes/Tool-Aufnahme und Abruf-/Inhaltshash nachvollziehen. Vollständige
+Belegstelle unabhängig lesen, keine Analystenzusammenfassung als Original behandeln.
+Cache-Snapshot/Abrufzustand im vorhandenen Review festhalten; Änderungshinweise
+gezielt revalidieren und betroffene Claims prüfen. Cache ist keine Quellenfreigabe.
 Claims nach Quellen-ID gruppieren. Benötigte Abschnitte in einem Quellenabruf
 prüfen; für jeden Claim dennoch eindeutige Belegstelle und Ergebnis speichern.
 Vorhandene Auszüge und im aktuellen Lauf geöffnete Dokumente nutzen.
