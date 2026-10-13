@@ -1,0 +1,3951 @@
+{
+ "schema_version": 1,
+ "mode": "facts-v2",
+ "role": "portfolio",
+ "run_id": "20261013-rheinmetall-flugabwehr",
+ "company": "Rheinmetall AG",
+ "as_of": "2026-10-13",
+ "scope": "Unternehmensweites Portfolio des Rheinmetall-Konzerns (fünf fortgeführte Divisionen plus nicht fortgeführte Power Systems) mit Produktfamilien, Software und Dienstleistungen; Flugabwehr-Deep-Dive (topic air_defence: Systeme, Eigenschaften, Kundenprogramme, Liefer-/Entwicklungsstatus, Fertigung); globale regionale Präsenz mit Europa-Fokus.",
+ "status": "vollständig",
+ "document_scope": "Gelesen: Rheinmetall-Divisions-, Produkt- und Tochterseiten (Abruf 2026-10-13, undatiert), Geschäftsbericht 2025, Halbjahresfinanzbericht 2026, Pressemitteilungen, Investor-Foliensatz September 2026, Q3-Recap 5. Oktober 2026 sowie Fach-/Nachrichtenmedien (S&V, ESUT, Defense News, Berliner Zeitung, Defence Network) und Invest Lithuania.",
+ "shared_limitations": "Produkteigenschaften, Kapazitäten und Einsatzwirkungen sind überwiegend Herstellerangaben; Kapazitätsziele und Bestellungen sind keine erreichte Serienlieferung. Unternehmensseiten sind undatiert (Stand Abruf). Anteilsbesitzliste Stand 31. Dezember 2025; Tabellen wurden aus zweispaltiger PDF-Extraktion gelesen. Keine Reifegrad- oder Präsenzbewertung in dieser Phase.",
+ "claims": [
+  {
+   "id": "P-STR-01",
+   "statement": "Die Rheinmetall-Website führt im Oktober 2026 sechs Divisionen: Air Defence, Digital Systems, Naval Systems, Vehicle Systems, Weapon and Ammunition sowie Power Systems, letztere ausdrücklich als nicht fortgeführte Geschäftsaktivität gekennzeichnet; die Seite „Über Rheinmetall“ nennt die fünf Divisionen ohne Power Systems.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-a4d54f5d3aa32d9d",
+    "S-4d0e53f502fb320c"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Seite „Unsere Divisionen im Überblick“, Divisionskacheln und Fußnote; Seite „Über Rheinmetall“, Abschnitt „Fünf Divisionen – ein Ziel“",
+   "evidence_items": [
+    {
+     "source_id": "S-a4d54f5d3aa32d9d",
+     "text": "Air Defence … Digital Systems … Naval Systems … Vehicle Systems … Weapon and Ammunition … Power Systems* … * nicht fortgeführte Geschäftsaktivitäten",
+     "mode": "Auszug",
+     "location": "Seite „Unsere Divisionen im Überblick“, Divisionskacheln und Fußnote"
+    },
+    {
+     "source_id": "S-4d0e53f502fb320c",
+     "text": "Die Konzernstruktur umfasst die fünf Divisionen Air Defence, Digital Systems, Naval Systems, Vehicle Systems und Weapon and Ammunition.",
+     "mode": "Auszug",
+     "location": "Seite „Über Rheinmetall“, Abschnitt „Fünf Divisionen – ein Ziel“"
+    }
+   ],
+   "uncertainty": "Die Seite „Über Rheinmetall“ enthält im Abschnitt „Unser Fokus“ zugleich ältere Divisionsbezeichnungen (Vehicle Systems Europe/International, Electronic Solutions); maßgeblich für den Stand 2026 sind die Divisionsseiten und Berichte.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-STR-02",
+   "statement": "Laut Halbjahresfinanzbericht 2026 ist das US-Geschäft der bisherigen Division Vehicle Systems International mit Wirkung zum 1. Januar 2026 in eine neue Division „U.S. America“ übergegangen; die Märkte Australien und Großbritannien werden weiter durch die Division Vehicle Systems betreut. Die externe Segmentberichterstattung umfasst fünf Segmente.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-3dad8b811c925694"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Halbjahresfinanzbericht 2026, PDF-S. 8, „Wesentliche Ereignisse bis zum 30. Juni 2026“; Halbjahresfinanzbericht 2026, PDF-S. 35, Anhang Ziffer (1)",
+   "evidence_items": [
+    {
+     "source_id": "S-3dad8b811c925694",
+     "text": "Ebenfalls mit Wirkung zum 1. Januar 2026 ist das US-Geschäft der Division Vehicle Systems International in die neue Division U.S. America übergegangen. … Die Märkte in Australien und Großbritannien werden weiterhin durch die Division Vehicle …",
+     "mode": "Auszug",
+     "location": "Halbjahresfinanzbericht 2026, PDF-S. 8, „Wesentliche Ereignisse bis zum 30. Juni 2026“"
+    },
+    {
+     "source_id": "S-3dad8b811c925694",
+     "text": "Auf der externen Berichtsebene gl[iedert sich der Konzern in] … Systems, Weapon and Ammunition, Air Defence, Digital Systems und Naval Systems.",
+     "mode": "Auszug",
+     "location": "Halbjahresfinanzbericht 2026, PDF-S. 35, Anhang Ziffer (1)"
+    }
+   ],
+   "uncertainty": "Die Divisionsübersicht der Website nennt keine Division U.S. America; deren Verhältnis zur Segmentberichterstattung ist im gelesenen Text nicht weiter erläutert.",
+   "proposed_depth": "A",
+   "event_date": "2026-01-01",
+   "event_status": "umgesetzt laut Unternehmensbericht"
+  },
+  {
+   "id": "P-STR-03",
+   "statement": "Laut Halbjahresfinanzbericht 2026 hat Rheinmetall Anfang Juni 2026 mit der AEQH40 GmbH, München (Tochter der AEQUITA SE & Co. KGaA), einen Vertrag über den Verkauf der zivilen Aktivitäten (Division Power Systems und verbundene Gesellschaften) unterzeichnet; vorläufiger Kaufpreis 350 Mio. EUR, Closing im vierten Quartal 2026 angestrebt, vorbehaltlich behördlicher Freigaben.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-3dad8b811c925694"
+   ],
+   "evidence": "Auszug: Anfang Juni 2026 haben Rheinmetall und die AEQH40 GmbH, München – ein Tochterunternehmen der AEQUITA SE & Co. KGaA, München – eine vertragliche Vereinbarung zum Verkauf der zivilen Aktivitäten … unterzeichnet. Die Transaktion, für die ein Abschluss im vierten Quartal 2026 angestrebt wird, steht unter dem Vorbehalt der Freigabe … Der vorläufige Kaufpreis für 100% der Anteile beträgt 350 MioEUR",
+   "location": "Halbjahresfinanzbericht 2026, PDF-S. 9, „Rheinmetall unterzeichnet Verkaufsvertrag für das zivile Geschäft“",
+   "uncertainty": "Vollzug zum Stichtag 2026-10-13 nicht belegt; die Q3-Mitteilung (5. November 2026) lag zum Stichtag noch nicht vor.",
+   "proposed_depth": "A",
+   "event_status": "unterzeichnet (Anfang Juni 2026), Vollzug ausstehend"
+  },
+  {
+   "id": "P-PS-01",
+   "statement": "Die Division Power Systems (nicht fortgeführt) umfasst laut Rheinmetall die Business Units Air Management, Bearings, Castings (u. a. KS AluTech, HASCO KPSNC in China), Electrification and Digitalization, Thermal Management und Trade (Motorservice-Gruppe mit Marken wie Kolbenschmidt, Pierburg, TRW Engine Components) sowie die Business Areas Hydrogen und Invent.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-747870b3bc879dff"
+   ],
+   "evidence": "Paraphrase: Business Units Air Management, Bearings, Castings (KS AluTech in Deutschland, HASCO KPSNC in China), Electrification and Digitalization, Thermal Management, Trade (Motorservice-Gruppe; Kolbenschmidt, Pierburg, TRW Engine Components, BF, Turbo by Intec); Business Areas Hydrogen und Invent.",
+   "location": "Divisionsseite Power Systems, Abschnitte „Business Units“ und „Business Areas“",
+   "uncertainty": "Portfolio zum Abrufzeitpunkt; nach Vollzug des Verkaufs nicht mehr Teil des Konzerns.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-VS-01",
+   "statement": "Die Division Vehicle Systems bietet laut Rheinmetall Gefechts-, Unterstützungs-, Logistik- und Spezialfahrzeuge auf Rad und Kette: HX- und TG-MIL-Logistikfahrzeuge (RMMV; mehr als 16.000 HX verkauft), Lynx KF41, Marder, Kodiak, Bergepanzer 3 Büffel, Puma (in industrieller Kooperation), Fuchs, Boxer (in industrieller Kooperation), Turmlösungen wie Lance, CBRN-Speziallabore sowie In-Service-Support.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-cc9cf45c8609a0d1"
+   ],
+   "evidence": "Paraphrase: HX-Fahrzeugfamilie der RMMV, „Weit mehr als 16.000 HX-LKW wurden in den letzten Jahren verkauft“; TG-MIL; Lynx KF41, Marder, Kodiak, Bergepanzer 3 Büffel, Puma (industrielle Kooperation); Fuchs, Boxer 8x8 (industrielle Kooperation); Lance; CBRN-Speziallabore; In-Service Support.",
+   "location": "Divisionsseite Vehicle Systems, Abschnitte Logistic Vehicles, Tactical Vehicles, In-Service Support",
+   "uncertainty": "Die Seite nennt widersprüchlich zwei bzw. vier Business Units (Logistic/Tactical vs. Logistic, Tracked, Combat Systems, Wheeled).",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-VS-02",
+   "statement": "Rheinmetall zeigt im Investor-Foliensatz September 2026 als ausgewählte Vehicle-Systems-Produkte u. a. Panther KF51, Leopard 2 (gemeinsames Programm), Challenger 3, Lynx, Puma (gemeinsam), Marder, XM30, Boxer (gemeinsam), Fuchs, Panzerhaubitze 2000 (gemeinsam), RCH155 (gemeinsam), Radhaubitze, HX/TG-MIL sowie 4x4-Fahrzeuge Survivor R, Caracal und Shadow Wolf.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e6f358904e19e4e8"
+   ],
+   "evidence": "Paraphrase: „Selected product overview“: Heavy weight tracked (Panther KF51, Leopard 2*, Challenger 3), Medium weight tracked (Lynx, Puma*, Marder*, XM30), Medium weight wheeled (Boxer*, Fuchs), Artillery systems (Panzerhaubitze 2000*, Wheeled Howitzer, RCH155*), Logistic vehicles (TG-MIL, HX …), 4x4 (Survivor R, Caracal, Shadow Wolf); *joint program.",
+   "location": "Investor Presentation September 2026, Folie 25",
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-VS-03",
+   "statement": "Laut Halbjahresmitteilung 2026 stieg der Rheinmetall Nomination von Vehicle Systems im ersten Halbjahr 2026 auf 6.691 Mio. EUR, wesentlich durch ein zweites Puma-Los über 200 Schützenpanzer für Deutschland und die Bestellung von 298 Lynx für Rumänien (finanziert über SAFE); der Segment-Backlog lag am 30. Juni 2026 bei 28.829 Mio. EUR.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5f102cfea2da2738"
+   ],
+   "evidence": "Auszug: Die Erweiterung des deutschen Kundenauftrags für den Schützenpanzer Puma, von dem Anfang 2026 in einem zweiten Los 200 Exemplare nachbestellt wurden, sowie die Bestellung von 298 Lynx Schützenpanzern für Rumänien – finanziert durch das europäische SAFE-Programm – haben hierzu wesentlich beigetragen. Der Rheinmetall Backlog des Segments lag mit einem Wert von 28.829 MioEUR",
+   "location": "Pressemitteilung 6. August 2026, PDF-S. 2, Abschnitt Vehicle Systems",
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-VS-04",
+   "statement": "Laut Rheinmetall wurden erste Lynx-XM30-Prototypen zu Test- und Evaluierungszwecken an die U.S. Army übergeben (laut Q3-Recap im September 2026); eine erste Programmentscheidung erwartet Rheinmetall Anfang 2027.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-47771a7dd8c927d5",
+    "S-4a13b2786b5cc66a"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "AUSA-Pressemitteilung 12. Oktober 2026, Abschnitt „Schützenpanzer Lynx XM30“; Q3 Recap Document 5. Oktober 2026, S. 1, „Update XM30“",
+   "evidence_items": [
+    {
+     "source_id": "S-47771a7dd8c927d5",
+     "text": "Erste Prototypen wurden bereits zu Test- und Evaluierungszwecken an die U.S. Army übergeben.",
+     "mode": "Auszug",
+     "location": "AUSA-Pressemitteilung 12. Oktober 2026, Abschnitt „Schützenpanzer Lynx XM30“"
+    },
+    {
+     "source_id": "S-4a13b2786b5cc66a",
+     "text": "The XM30 program represents a major strategic opportunity following the hand-over of the first prototypes in September. … First indication expected in early 2027.",
+     "mode": "Auszug",
+     "location": "Q3 Recap Document 5. Oktober 2026, S. 1, „Update XM30“"
+    }
+   ],
+   "uncertainty": "Wettbewerbsstatus und Auswahlentscheidung der U.S. Army nicht Gegenstand der gelesenen Quellen.",
+   "proposed_depth": "A",
+   "event_status": "Prototypen übergeben (September 2026 laut Rheinmetall)"
+  },
+  {
+   "id": "P-VS-05",
+   "statement": "American Rheinmetall präsentierte auf der AUSA 2026 unbemannte Bodensysteme: Ox (modular, nimmt laut Rheinmetall am GOAT-Programm der U.S. Army teil), MUSKOX (für das Project Sustainment Program vorausgewählt), Mission Master SP (für Last Tactical Mile vorausgewählt) und Wild Goose (150 kg Nutzlast, bis 25 km Reichweite).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-47771a7dd8c927d5"
+   ],
+   "evidence": "Auszug: Ox: Eine modulare, autonomiebereite Plattform … Das System nimmt aktuell am GOAT-Programm der U.S. Army teil. MUSKOX: … wurde für das Project Sustainment Program der U.S. Army vorausgewählt. Mission Master SP: Der für das Last Tactical Mile-Programm vorausgewählte „Silent Partner“ … Wild Goose: … 150 kg (330 lbs) Nutzlastkapazität und bis zu 25 km Reichweite",
+   "location": "AUSA-Pressemitteilung 12. Oktober 2026, Abschnitt Autonome Systeme",
+   "uncertainty": "Vorauswahl/Teilnahme ist kein Serienauftrag.",
+   "proposed_depth": "A",
+   "event_date": "2026-10-12",
+   "event_status": "Messepräsentation; Programmteilnahme laut Hersteller"
+  },
+  {
+   "id": "P-WA-01",
+   "statement": "Die Division Weapon and Ammunition umfasst laut Rheinmetall die Business Units Direct Fire, Indirect Fire, Energetic Materials, Projects and Services und Protection Systems: Maschinenkanonen für Land-, Luft- und Seefahrzeuge, Glattrohr-Kampfpanzerkanonen, Artillerie- und Mörsersysteme, Waffenstationen, intelligente Geschosse, Hochenergielaser und loiterfähige Präzisionsmunition; Treibladungen und zivile chemische Zwischenprodukte; Einsatzunterstützung, Shelter und Munitionsentsorgung; passive, aktive und hybride Schutzsysteme.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2b24723c99b5458a"
+   ],
+   "evidence": "Paraphrase: Direct Fire und Indirect Fire (Maschinenkanonen, Glattrohrtechnologie, Artillerie- und Mörsersysteme, Waffenstationen, intelligente Geschosse, Hochenergielaser, loiterfähige Präzisionsmunition); Energetic Materials (Treibladungen, Airbag-Treibladungen, chemische Zwischenprodukte); Project and Services (Einsatzunterstützung, Feldlager, Shelter, Munitionsentsorgung); Protection Systems (passive, aktive, hybride Schutzlösungen).",
+   "location": "Divisionsseite Weapon and Ammunition, Abschnitte Business Units",
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-WA-02",
+   "statement": "Rheinmetall nennt im Investor-Foliensatz September 2026 als Kapazitätsziele u. a. rund 1,1 Mio. (2027) bzw. rund 1,5 Mio. (2030) 155-mm-Artilleriegeschosse p. a., über 3,4 Mio. (2027) bzw. rund 4 Mio. (2030) Schuss Mittelkaliber 20–35 mm p. a. sowie eine Raketenmotorenfertigung mit bis zu 3.500 t Treibstoff p. a., produktionsbereit im ersten Quartal 2027.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e6f358904e19e4e8"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Investor Presentation September 2026, Folie 34; Investor Presentation September 2026, Folie 35",
+   "evidence_items": [
+    {
+     "source_id": "S-e6f358904e19e4e8",
+     "text": "Capacity p.a.: ARTILLERY 155mm 2022 70,000 / 2027 ~1,100,000 / 2030 ~1,500,000; MED-CAL 20-35mm 2022 1,000,000 / 2027 >3,400,000 / 2030 ~4,000,000.",
+     "mode": "Paraphrase",
+     "location": "Investor Presentation September 2026, Folie 34"
+    },
+    {
+     "source_id": "S-e6f358904e19e4e8",
+     "text": "Total production capacity of up to 3,500 t rocket motor propellants p.a. … Production ready in Q1 2027",
+     "mode": "Auszug",
+     "location": "Investor Presentation September 2026, Folie 35"
+    }
+   ],
+   "uncertainty": "Kapazitätsziele bzw. Planwerte, keine erreichte Ausbringung.",
+   "proposed_depth": "A",
+   "event_status": "Kapazitätsziel"
+  },
+  {
+   "id": "P-WA-03",
+   "statement": "Laut Geschäftsbericht 2025 hat Rheinmetall im August 2025 am Standort Unterlüß das neue Munitionswerk „Niedersachsen“ in Betrieb genommen; auf rund 30.000 m² sollen künftig jährlich bis zu 350.000 Artilleriegeschosse entstehen, am selben Standort soll zusätzlich eine Raketenmotorenfertigung aufgebaut werden.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Auszug: Rheinmetall hat in Niedersachsen im August 2025 ein neues Munitionswerk in Betrieb genommen … Künftig sollen im neuen Werk „Niedersachsen“ auf einer Fläche von rund 30.000 m2 jährlich bis zu 350.000 Artilleriegeschosse entstehen. Zusätzlich … soll am selben Standort auch eine Produktion von Raketenmotoren aufgebaut werden.",
+   "location": "Geschäftsbericht 2025, PDF-S. 51, „Rheinmetall nimmt neues Munitionswerk am Standort Unterlüß in Betrieb“",
+   "uncertainty": "350.000 Geschosse sind Zielkapazität.",
+   "proposed_depth": "A",
+   "event_date": "2025-08-27",
+   "event_status": "in Betrieb (Monat laut GB; Tag laut T-EV-01)"
+  },
+  {
+   "id": "P-DS-01",
+   "statement": "Die Division Digital Systems gliedert sich laut Rheinmetall in die Business Units Air Unmanned Space (u. a. F-35-Rumpfmittelteile in Weeze in Kooperation mit Lockheed Martin und Northrop Grumman, SAR-Satellitenfertigung im JV mit ICEYE in Neuss, Loitering Munition FV-014, Arbeiten zur Integration der MQ-28 Ghost Bat mit Boeing Australia), Defence Electronics (Waffenstationen, Sensorik, Elektrooptik, Simulation und Ausbildung), Digital Solutions (D-LBO, TaWAN LBO als Generalunternehmer, Soldatensystem IdZ-ES/Gladius 2.0, „Battlesuite“) und Global Business.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-8004062626d5c0ad"
+   ],
+   "evidence": "Paraphrase: Air Unmanned Space: F-35A-Rumpfmittelteile Weeze (strategische Kooperation mit Lockheed Martin und Northrop Grumman), JV mit ICEYE in Neuss für Radarsatelliten, Loitering Munition FV-014, MQ-28 Ghost Bat mit Boeing Australia; Defence Electronics: RCWS-Familie, Sensorlösungen, Training/Simulation; Digital Solutions: D-LBO (über 17.000 Fahrzeuge und Plattformen), TaWAN LBO als Generalunternehmer, IdZ-ES, Battlesuite, Gladius 2.0; Global Business.",
+   "location": "Divisionsseite Digital Systems, Abschnitte Business Units",
+   "uncertainty": "Partner- und JV-Beziehungen (Lockheed Martin, Northrop Grumman, ICEYE, Boeing Australia) sind Unternehmensangaben; Strukturfakten dazu liegen beim Cluster.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-DS-02",
+   "statement": "Laut Geschäftsbericht 2025 erhielt Rheinmetall im Februar 2025 als Generalunternehmer den Rahmenvertrag für das Kommunikationssystem TaWAN der Bundeswehr (7,5 Mrd. EUR, Laufzeit zehn Jahre, erster Abruf 1,6 Mrd. EUR im ersten Quartal 2025, Auslieferung Ende 2026 bis Ende 2029 geplant) .",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Auszug: Der Rahmenvertrag … hat ein Volumen von 7,5 MrdEUR und eine Laufzeit von zehn Jahren. Ein erster Abruf in Höhe von 1,6 MrdEUR wurde bereits im ersten Quartal 2025 verbucht. Die Auslieferung des Kommunikationssystems ist für den Zeitraum von Ende 2026 bis Ende 2029 geplant.",
+   "location": "Geschäftsbericht 2025, PDF-S. 52, „Großauftrag: Rheinmetall erfolgreich mit TaWAN für die Bundeswehr“",
+   "uncertainty": "Genaue Tagesdaten nicht angegeben.",
+   "proposed_depth": "A",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-DS-03",
+   "statement": "Laut Halbjahresfinanzbericht 2026 unterzeichneten Bundeswehr und Rheinmetall Ende April 2026 einen Rahmenvertrag über Loitering Munition des Typs FV-014 im niedrigen einstelligen Milliardenbereich; der erste Abruf über 250 Mio. EUR (netto) wurde im April 2026 verbucht.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-3dad8b811c925694"
+   ],
+   "evidence": "Auszug: Ende April 2026 haben die Bundeswehr und Rheinmetall einen neuen Rahmenvertrag über die Lieferung von Loitering Munition des Typs FV-014 unterzeichnet … Der Rahmenvertrag hat einen Wert im niedrigen einstelligen Milliardenbereich, der erste Abruf lag bei 250 MioEUR (netto)",
+   "location": "Halbjahresfinanzbericht 2026, PDF-S. 10, „Rahmenvertrag über Loitering Munition für Bundeswehr“",
+   "uncertainty": "Tagesdatum nicht angegeben (Ende April 2026).",
+   "proposed_depth": "A",
+   "event_status": "Rahmenvertrag unterzeichnet, erster Abruf"
+  },
+  {
+   "id": "P-DS-04",
+   "statement": "Laut Geschäftsbericht 2025 ist die Fertigung von F-35-Rumpfmittelteilen im neuen Werk Weeze im Juli 2025 angelaufen, die Produktion war noch nicht vollständig aufgebaut und die erste Auslieferung von Rumpfmittelteilen soll ab 2027 erfolgen; Rheinmetall nennt im Foliensatz September 2026 mindestens 400 in Weeze zu fertigende Rumpfmittelteile.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a",
+    "S-e6f358904e19e4e8"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Geschäftsbericht 2025, PDF-S. 51, „Bau des neuen Werks in Weeze abgeschlossen“; Investor Presentation September 2026, Folie 50",
+   "evidence_items": [
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "Die Fertigung von Rumpfmittelteilen für das Kampfflugzeug F-35 Lightning II ist im Juli 2025 im Werk Weeze angelaufen. Die Produktion ist allerdings noch nicht vollständig aufgebaut, und die erste Auslieferung von Rumpfmittelteilen soll ab dem Jahr 2027 erfolgen.",
+     "mode": "Auszug",
+     "location": "Geschäftsbericht 2025, PDF-S. 51, „Bau des neuen Werks in Weeze abgeschlossen“"
+    },
+    {
+     "source_id": "S-e6f358904e19e4e8",
+     "text": "At least 400 center fuselages to be produced in Weeze, Germany",
+     "mode": "Auszug",
+     "location": "Investor Presentation September 2026, Folie 50"
+    }
+   ],
+   "uncertainty": "Der Foliensatz nennt zugleich „First F-35 center fuselages entering sales in 2026“ (Folie 48); Umsatzrealisierung und Auslieferung sind getrennte Sachverhalte.",
+   "proposed_depth": "A",
+   "event_status": "Fertigungsanlauf Juli 2025; Auslieferung geplant"
+  },
+  {
+   "id": "P-DS-05",
+   "statement": "Rheinmetall nennt im Foliensatz September 2026 eine Drohnen-/Loitering-Munition-Produktionslinie in Italien mit Kapazitäten von 15 (Hero 30), 15 (Hero 120) und 8 (Hero 400) Einheiten pro Tag.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e6f358904e19e4e8"
+   ],
+   "evidence": "Auszug: Ramping up our drone production in Italy … Production line in Italy to tackle large demand … CAPACITY HERO 30 15 per day, HERO 120 15 per day, HERO 400 8 per day",
+   "location": "Investor Presentation September 2026, Folie 53",
+   "uncertainty": "Kapazitätsangabe ohne Angabe tatsächlicher Ausbringung; Produktherkunft und Lizenzverhältnis der Hero-Familie sind auf der Folie nicht erläutert (Cluster).",
+   "proposed_depth": "A",
+   "event_status": "Kapazitätsangabe"
+  },
+  {
+   "id": "P-NS-01",
+   "statement": "Die Division Naval Systems (geführt durch die NVL B.V. & Co. KG) umfasst laut Rheinmetall vier Werften in Norddeutschland (Blohm+Voss und Norderwerft in Hamburg, Peene-Werft in Wolgast, Neue Jadewerft in Wilhelmshaven), Konstruktionsbüros und Niederlassungen in Ägypten, Brunei, Bulgarien, Kroatien und Singapur, die federführende Abwicklung von fünf Korvetten sowie zwei Marinebetriebsstoffversorger und drei Flottendienstboote für die Deutsche Marine, Lebenszyklus-Service sowie autonome Überwassersysteme (Hybrid Fleet/MUM-T); Business Units Autonomous Maritime Technology, Service and Repair, Shipbuilding Germany und Shipbuilding International.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-93a2ee05910f4b53"
+   ],
+   "evidence": "Paraphrase: Vier Werften: Blohm+Voss und Norderwerft (Hamburg), Peene-Werft (Wolgast), Neue Jadewerft (Wilhelmshaven); Konstruktionsbüros und Niederlassungen in Ägypten, Brunei, Bulgarien, Kroatien und Singapur; Beschaffungsprogramme fünf Korvetten (federführend), zwei Marinebetriebsstoffversorger, drei Flottendienstboote; Instandhaltung; autonome maritime Überwassersysteme, Hybrid Fleet (MUM-T); vier Business Units.",
+   "location": "Divisionsseite Naval Systems, Abschnitt „Über uns“",
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-NS-02",
+   "statement": "Laut Halbjahresfinanzbericht 2026 erwarb die Rheinmetall Naval Systems GmbH am 27. Februar 2026 100 % der Anteile und Stimmrechte an der NVL B.V. & Co. KG, Bremen; die Division Naval Systems wurde ab März 2026 in die Konzernstruktur aufgenommen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-3dad8b811c925694"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Halbjahresfinanzbericht 2026, PDF-S. 9, „Erwerb Naval Vessels Lürssen“; Halbjahresfinanzbericht 2026, PDF-S. 8",
+   "evidence_items": [
+    {
+     "source_id": "S-3dad8b811c925694",
+     "text": "Am 27. Februar 2026 hat die Rheinmetall Naval Systems GmbH 100% der Anteile und damit 100% der Stimmrechte an der NVL erworben.",
+     "mode": "Auszug",
+     "location": "Halbjahresfinanzbericht 2026, PDF-S. 9, „Erwerb Naval Vessels Lürssen“"
+    },
+    {
+     "source_id": "S-3dad8b811c925694",
+     "text": "Nach dem am 27. Februar 2026 vollzogenen Erwerb … wurde die neue Division Naval Systems ab März 2026 in die Konzernstruktur aufgenommen.",
+     "mode": "Auszug",
+     "location": "Halbjahresfinanzbericht 2026, PDF-S. 8"
+    }
+   ],
+   "uncertainty": "Context-Claim T-EV-03 nennt laut Rheinmetall-Mitteilung den 1. März 2026 als Vollzugsdatum; Abweichung zum Berichtsdatum 27. Februar 2026 offen.",
+   "proposed_depth": "A",
+   "event_date": "2026-02-27",
+   "event_status": "vollzogen"
+  },
+  {
+   "id": "P-NS-03",
+   "statement": "Laut Halbjahresmitteilung 2026 erzielte Naval Systems in den vier Monaten nach der Übernahme 334 Mio. EUR Umsatz, im Wesentlichen aus den Neubauprogrammen FDB424, K130, MBV707 und dem bulgarischen MMPV90-Programm; der größte Auftragseingang war ein über SAFE finanzierter rumänischer Auftrag über vier Marineschiffe (920 Mio. EUR); Backlog 6.255 Mio. EUR zum 30. Juni 2026.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5f102cfea2da2738"
+   ],
+   "evidence": "Auszug: Naval Systems erzielte im Zeitraum der ersten vier Monate nach der Übernahme Ende Februar 2026 einen Umsatz von 334 MioEUR. … Flottendienstbooten (FDB424), Korvetten der Braunschweig-Klasse (K130), Marinebetriebsstoffversorgern (MBV707) sowie aus dem bulgarischen Multi-Purpose Modular Patrol Vessel-Programm (MMPV90). … Auftrag der rumänischen Regierung über den Bau von vier Marineschiffen im Wert von 920 MioEUR … Backlog zum 30. Juni 2026 lag bei 6.255 MioEUR.",
+   "location": "Pressemitteilung 6. August 2026, PDF-S. 4, Abschnitt Naval Systems",
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-AD-01",
+   "statement": "Die Division Air Defence bündelt laut Rheinmetall die bodengebundene Luftverteidigung von Entwicklung und Produktion bis Simulation, Training und Service; sie ist in die Business Units Systems and Effectors sowie Systems and Sensors gegliedert und hat zentrale Standorte in Zürich (Competence Center Air Defence), Rom (Competence Center Radar) und Neuss (Production Site).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-3ef169e9e35e0c9a"
+   ],
+   "evidence": "Auszug: Die Division ist in die folgenden Business Units gegliedert: Systems and Effectors und Systems and Sensors. … Die Division Air Defence verfügt über zentrale Standorte in Zürich (Competence Center Air Defence), Rom (Competence Center Radar) und Neuss (Production Site).",
+   "location": "Divisionsseite Air Defence, Einleitung und Abschnitt „Standorte“",
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-AD-02",
+   "statement": "Laut Divisionsseite deckt Air Defence Hochleistungskanonen und Effektoren, Sensor- und Feuerleitsysteme, integrierte Führungs- und Einsatzsysteme, mobile und stationäre Luftverteidigung, Drohnenabwehr sowie Munition und Systemkomponenten ab und bietet Instandhaltung, Reparatur, Flottenmanagement, Ausbildung, 24/7-Support sowie Upgrades an.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-3ef169e9e35e0c9a"
+   ],
+   "evidence": "Paraphrase: Wirkungskette: Hochleistungskanonen und Effektoren; Sensor- und Feuerleitsysteme; Integrierte Führungs- und Einsatzsysteme; Mobile und stationäre Luftverteidigung; Drohnenabwehrlösungen; Munition und Systemkomponenten. Dienstleistungen: Instandhaltung, Reparaturen und Flottenmanagement; Ausbildung und taktisches Training; Technische Unterstützung und 24/7-Service; Upgrades und Modernisierungen.",
+   "location": "Divisionsseite Air Defence, Abschnitte „Wirkungskette“ und „Dienstleistungen“",
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-AD-03",
+   "statement": "Die Divisionsseite ordnet den Business Units folgende Produkte zu: Command & Control CN0, CN1 und Skymaster; Effektoren Revolver Gun Mk3, Revolver Gun 30, Twin Gun GDF009 inkl. TREO und KBA; Sensoren Multi Sensor Unit (MSU), Skyspotter C-UAS, X-TAR3D, AN/MR, Ku-TRG und X-BTR; mobile Flugabwehr Skyranger 35, 30 und 7.62; Marine Millennium Gun, Searanger 20 und BIAX.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-3ef169e9e35e0c9a"
+   ],
+   "evidence": "Paraphrase: Systems and Effectors: CN0, CN1, Skymaster; Revolver Gun MK3, Revolver Gun 30, Twin Gun GDF009 inkl. TREO; MSU, Skyspotter C-UAS; Skyranger 35, Skyranger 30, Skyranger 7.62; Millennium Gun, Searanger 20 Gun Station, BIAX. Systems and Sensors: CN0, CN1, Skymaster; Revolver Gun MK3, Twin Gun GDF009 inkl. TREO, KBA; X-TAR3D, AN/MR, Ku-TRG, X-BTR; Skyranger 35.",
+   "location": "Divisionsseite Air Defence, Abschnitt „Business Units“",
+   "uncertainty": "Produktliste ohne Status-, Liefer- oder Stückzahlangaben; einzelne Produkte (CN0, KBA, AN/MR, Ku-TRG, X-BTR, Skyranger 7.62) sind in den gelesenen Quellen nicht näher beschrieben.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-AD-04",
+   "statement": "Laut Geschäftsbericht 2025 umfasst das Flug- und Drohnenabwehrportfolio die gesamte Sensor-to-Effektor-Kette von Detektion und Identifikation bis zur Bekämpfung durch Jammer, Counter-Drohnen, kanonenbasierte Luftverteidigung (Skyranger) und Hochenergielaser; der Fokus liegt auf dem massiven Kapazitätsausbau für Systeme sehr kurzer bis kurzer Reichweite (V-SHORAD), weitere Effektoren und Reichweiten sollen kurz- bis mittelfristig mit Kooperationspartnern ergänzt werden.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Auszug: Im Bereich der Flug- und Drohnenabwehr verfügt Rheinmetall über ein Portfolio, das die gesamte Sensor-to-Effektor-Kette umfasst, von der Detektion und Identifikation bis hin zur Bekämpfung durch Störsender (sogenannte Jammer), Counter-Drohnen, kanonenbasierte Luftverteidigung (Skyranger) und Hochenergielaser. Der Fokus … liegt auf dem massiven Ausbau der Kapazitäten der Systeme für sehr kurze bis kurze Abwehrreichweite (V-SHORAD). Darüber hinaus plant Rheinmetall kurz-/mittelfristig das Portfolio an Flugabwehr um weitere Effektoren und Reichweiten in Zusammenarbeit mit Kooperationspartnern zu erweitern.",
+   "location": "Geschäftsbericht 2025, PDF-S. 38, Abschnitt Strategie",
+   "uncertainty": "Unternehmensdarstellung im Lagebericht; Umfang einzelner Effektortypen nicht quantifiziert.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-AD-05",
+   "statement": "Laut Geschäftsbericht 2025 konzentrierte sich die F&E im Cluster Air Defence 2025 darauf, Fähigkeiten von Skyranger, Skynex und Skyspotter gegen schnellere und intelligentere Drohnen- und Schwarmangriffe auszubauen, insbesondere durch neue Effektortypen wie Abfangdrohnen und KI sowie Radarsysteme der nächsten Generation; Weapon and Ammunition entwickelte Hochenergielaser zur Drohnenabwehr auf Schiffen und in Liegenschaften.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Auszug: … konzentrierte sich Electronic Solutions im Cluster Air Defence darauf, Fähigkeiten der bewährten Produkte Oerlikon Skyranger, Skynex und Skyspotter auszubauen, um auf die immer schnelleren und intelligenteren Angriffe von Drohnen und Drohnenschwärmen reagieren zu können, insbesondere durch neuartige Effektor-Typen wie Abfangdrohnen und KI. … Radarsysteme der nächsten Generation … Die Entwicklung von Hochenergielasern zur Drohnenabwehr auf Schiffen und in Liegenschaften …",
+   "location": "Geschäftsbericht 2025, PDF-S. 31, Forschung und Entwicklung",
+   "uncertainty": "Entwicklungsschwerpunkte, keine Produkt- oder Serienreifeaussage.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-AD-06",
+   "statement": "Air Defence erwartete laut Geschäftsbericht 2025 für 2026 einen Umsatz von 0,9 bis 1,0 Mrd. EUR (Pro-forma-Umsatz 2025: 769 Mio. EUR) und eine operative Marge von rund 19 % (pro forma 2025: 17,4 %); gestützt auf Zulieferungen für große Systemprojekte von Vehicle Systems sowie das Geschäft mit internationalen Kunden.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Auszug: Für Air Defence wird im Geschäftsjahr 2026 – gestützt auf Zulieferungen für die großen Systemprojekte von Vehicle Systems und auf das Geschäft mit internationalen Kunden im Bereich Flugabwehrsysteme und damit verbundenen Anschlusslieferungen von Komponenten – mit einem deutlichen Umsatzwachstum auf 0,9 MrdEUR bis 1,0 MrdEUR (Pro Forma-Umsatz Air Defence Geschäftsjahr 2025: 769 MioEUR) gerechnet. … rund 19% … (Pro Forma operative Ergebnismarge … 2025: 17,4%).",
+   "location": "Geschäftsbericht 2025, PDF-S. 92, Prognosebericht",
+   "uncertainty": "Prognose; Ist-Halbjahreszahlen siehe T-AD-01.",
+   "proposed_depth": "A",
+   "event_status": "Prognose"
+  },
+  {
+   "id": "P-AD-07",
+   "statement": "Im ersten Halbjahr 2026 stieg der Rheinmetall Nomination von Air Defence um 517 % auf 1.534 Mio. EUR (größere Einzelaufträge: weitere Skyranger- und Skynex-Systeme für einen europäischen und einen internationalen Kunden); der Backlog lag am 30. Juni 2026 bei 4.218 Mio. EUR, das operative Ergebnis bei 76 Mio. EUR (Marge 16,0 %); die Investitionen von 24 Mio. EUR betrafen u. a. die Umgestaltung des Areals am Standort Zürich.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5f102cfea2da2738",
+    "S-3dad8b811c925694"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Pressemitteilung 6. August 2026, PDF-S. 3, Abschnitt Air Defence; Halbjahresfinanzbericht 2026, PDF-S. 17, Segment Air Defence",
+   "evidence_items": [
+    {
+     "source_id": "S-5f102cfea2da2738",
+     "text": "Der Rheinmetall Nomination konnte … um 1.285 MioEUR oder 517% auf 1.534 MioEUR gesteigert werden. Größere Einzelaufträge bezogen sich auf die Lieferung weiterer Skyranger- und Skynex Flugabwehrsysteme für einen europäischen und einen internationalen Kunden. Der Rheinmetall Backlog lag am 30. Juni 2026 bei 4.218 MioEUR … Das operative Ergebnis verbesserte sich … auf 76 MioEUR … operative Ergebnismarge auf 16,0%",
+     "mode": "Auszug",
+     "location": "Pressemitteilung 6. August 2026, PDF-S. 3, Abschnitt Air Defence"
+    },
+    {
+     "source_id": "S-3dad8b811c925694",
+     "text": "In den ersten sechs Monaten des Geschäftsjahres 2026 sind die Investitionen gegenüber dem Vorjahreszeitraum um 7 MioEUR auf 24 MioEUR gestiegen. Der Anstieg ist im Wesentlichen auf die Umgestaltung des Areals am Standort Zürich sowie die Modernisierung und Erweiterung von Maschinenparks an mehreren Standorten zurückzuführen.",
+     "mode": "Auszug",
+     "location": "Halbjahresfinanzbericht 2026, PDF-S. 17, Segment Air Defence"
+    }
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-AD-08",
+   "statement": "Rheinmetall gibt im Foliensatz September 2026 für Air Defence 190 Systeme im Backlog sowie im Aufbau befindliche Kapazitäten von rund 140 p. a. in der Schweiz (Serienstart Q1/2026), rund 140 p. a. in Italien (Q2/2026) und rund 100 p. a. in Deutschland (Q3/2026) an, insgesamt rund 400 p. a. bis 2027; laut ILA-Mitteilung (Juni 2026) soll die Jahreskapazität von derzeit rund 70 bis 100 Türmen schrittweise auf bis zu 400 Einheiten ausgebaut werden.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e6f358904e19e4e8",
+    "S-c0d13e5db6387716"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Investor Presentation September 2026, Folien 40–41; ILA-Mitteilung 10. Juni 2026, letzter Absatz",
+   "evidence_items": [
+    {
+     "source_id": "S-e6f358904e19e4e8",
+     "text": "190 systems in the backlog today … SUI capacity of ~140 p.a. under installment with SOP in Q1/26; ITA capacity of ~140 p.a. under installment with SOP in Q2/26; DE capacity of ~100 p.a. under installment with SOP in Q3/26; TOTAL CAPACITY by 2027 ~400 p.a. – 8 per week",
+     "mode": "Auszug",
+     "location": "Investor Presentation September 2026, Folien 40–41"
+    },
+    {
+     "source_id": "S-c0d13e5db6387716",
+     "text": "Annual production capacity will be gradually expanded from the current level of around 70 to 100 turrets to up to 400 units per year to ensure the upcoming series production ramp-up.",
+     "mode": "Auszug",
+     "location": "ILA-Mitteilung 10. Juni 2026, letzter Absatz"
+    }
+   ],
+   "uncertainty": "Kapazitätsziele; ob die Serienstarts erfolgt sind, belegen die Quellen nicht (Folie spricht im September 2026 weiter von „under installment“). Die Einheit „Systeme“ bzw. „Türme“ ist nicht näher definiert. Ergänzt T-AD-03 (CMD 2025).",
+   "proposed_depth": "A",
+   "event_status": "Kapazitätsziel"
+  },
+  {
+   "id": "P-AD-09",
+   "statement": "Rheinmetall nennt im Foliensatz September 2026 als Top-Projekte von Air Defence die European Sky Shield Initiative/Skyranger, NNbS in Deutschland, Ukraine Defence Solutions (Skyranger 35/Skynex) und große Ersatzprojekte in der MENA-Region, die über 80 % des Wachstums bis 2027 tragen sollen; Umsatzpotenzial 2030: 3–4 Mrd. EUR.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e6f358904e19e4e8"
+   ],
+   "evidence": "Auszug: TOP PROJECTS ▪ European Sky Shield Initiative / Skyranger ▪ NNbS (Nah- und Nächstbereichsschutz / Short-Range Air defence in Germany) ▪ Ukraine Defence Solutions (Skyranger-35/Skynex) ▪ Large replacement projects in MENA region ▪ Above projects underpin >80% of growth until 2027 … 2030 Sales potential €3-4bn",
+   "location": "Investor Presentation September 2026, Folien 38–39",
+   "uncertainty": "Unternehmensplanung; die Wettbewerberliste derselben Folie ist Gegenstand der Marktrolle.",
+   "proposed_depth": "A",
+   "event_status": "Planung/Ziel"
+  },
+  {
+   "id": "P-SKR-01",
+   "statement": "Die Oerlikon-Skyranger-Familie ist laut Rheinmetall ein hochmobiles Flugabwehrsystem zum Schutz mechanisierter Verbände und Konvois, wahlweise mit 35-mm-x-228-KDG-Revolverkanone (effektive Reichweite bis 4.000 m, C-RAM-Fähigkeit) oder 30-mm-x-173-KCE-Revolverkanone (bis 3.000 m; Turm für Kurzstrecken-Flugabwehrraketen ausgelegt), mit Airburst-Munition, modular wählbaren AESA-Radaren, passiven Panoramasystemen und Optronik, Sensordatenfusion, Skymaster-Anbindung, IFF und Datenlink; Hochenergielaser und vertikal startende C-PGM-Raketen werden laut Rheinmetall „derzeit erforscht“.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-5ae98f51c19ce9e2"
+   ],
+   "evidence": "Auszug: Je nach den taktischen Erfordernissen … kann der Skyranger mit einer 35 mm x 228 KDG Revolverkanone oder einer 30 mm x 173 KCE Revolverkanone ausgerüstet werden. … Das 35-mm-Kaliber bietet C-RAM-Fähigkeit und eine effektive Reichweite von bis zu 4.000 m. Das 30 mm Kaliber hat eine effektive Reichweite von bis zu 3.000 m, und der Geschützturm ist so konzipiert, dass er auch Flugabwehrraketen mit kurzer Reichweite aufnehmen kann. … AESA-Radare, passive Panoramasysteme und Optronikpakete … Die Integration eines Hochenergielasers oder vertikal abgefeuerter C-PGM-Raketen wird derzeit erforscht.",
+   "location": "Produktseite Skyranger, Abschnitt „Oerlikon Skyranger® Mobiles Flugabwehrsystem“",
+   "uncertainty": "Leistungsangaben des Herstellers ohne unabhängige Prüfung.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-SKR-02",
+   "statement": "Laut Rheinmetall-Mitteilung vom 27. Februar 2024 beauftragte die Bundeswehr die Lieferung eines Prototyps und 18 Serienfahrzeuge Skyranger 30 auf Boxer (595 Mio. EUR inkl. MwSt.) mit Option auf 30 weitere Systeme; der Turm kombiniert die 30-mm-x-173-KCE-Revolverkanone, Boden-Luft-Flugkörper und Sensorik. Laut ILA-Mitteilung (Juni 2026) wurde ein erster Prototyp termingerecht geliefert.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-b8a3496f93a22c8c",
+    "S-c0d13e5db6387716"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Rheinmetall-Mitteilung 27. Februar 2024, Absätze 1 und 4; ILA-Mitteilung 10. Juni 2026",
+   "evidence_items": [
+    {
+     "source_id": "S-b8a3496f93a22c8c",
+     "text": "Worth €595 million (including value added tax), the contract encompasses delivery of a prototype and another 18 series production vehicles. In addition, an option exists for a further 30 systems. … the system’s turret combines the highly effective 30mm x 173 KCE revolver gun, surface-to-air missiles and the necessary sensor suite",
+     "mode": "Auszug",
+     "location": "Rheinmetall-Mitteilung 27. Februar 2024, Absätze 1 und 4"
+    },
+    {
+     "source_id": "S-c0d13e5db6387716",
+     "text": "The Bundeswehr has commissioned Rheinmetall to deliver 19 Skyranger 30 air defence vehicles based on the Boxer platform. A first prototype was already delivered on schedule.",
+     "mode": "Auszug",
+     "location": "ILA-Mitteilung 10. Juni 2026"
+    }
+   ],
+   "uncertainty": "Serienauslieferungen sind zum Stichtag nicht belegt; zum Zeitplan siehe P-SKR-03 und T-AD-06.",
+   "proposed_depth": "A",
+   "event_date": "2024-02-27",
+   "event_status": "beauftragt; Prototyp übergeben"
+  },
+  {
+   "id": "P-SKR-03",
+   "statement": "Laut Sicherheit & Verteidigung (Eurosatory, Juni 2026) soll die Serienauslieferung des Skyranger 30 an die Bundeswehr im vierten Quartal 2027 beginnen, laut Rheinmetall rund sechs Monate später als ursprünglich geplant; als Gründe nennt der Bericht unter Berufung auf Rheinmetall den Wechsel auf das Future Common Drive Module, DefendAir (MBDA, verfügbar ab 2029) statt Stinger als Sekundärbewaffnung, das größere Radar SPEXER 2000 L sowie ein Zielverfolgungsradar statt optronischer Zielverfolgung; die Bundeswehr plane eine Zwischenlösung.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-6410acb24c745d46"
+   ],
+   "evidence": "Auszug: … soll die Serienauslieferung des Skyranger 30 an die Bundeswehr im Q4 2027 beginnen. Damit ist das Beschaffungsvorhaben laut Rheinmetall im Vergleich zur ursprünglichen Planung um rund sechs Monate verzögert. … Erstens den Wechsel des Fahrmoduls zum Future Common Drive Module. Zweitens den Wechsel der Sekundärbewaffnung. Statt der Stinger soll nun … DefendAir von MBDA … ab 2029 … Drittens den Wechsel des Radars … SPEXER 2000 … L-Version … Viertens … Zielverfolgungsradar … Aufgrund der Verzögerungen plant die Bundeswehr die Beschaffung einer Zwischenlösung",
+   "location": "suv.report, 15. Juni 2026, Absätze 1 und 3–4",
+   "uncertainty": "Medienbericht mit Rheinmetall-Angaben; BAAINBw nennt laut Capital/dpa (T-AD-06) Lieferbeginn ab Mitte 2027 statt Mitte 2026 – Zeitangaben weichen voneinander ab.",
+   "proposed_depth": "A",
+   "event_date": "2026-06-15",
+   "event_status": "Lieferbeginn geplant"
+  },
+  {
+   "id": "P-SKR-04",
+   "statement": "Laut Sicherheit & Verteidigung (Juni 2026, unter Berufung auf POLITICO) plant die Bundeswehr die Beschaffung von insgesamt 561 Skyranger 30 für rund 9 Mrd. EUR; Rheinmetall rechne mit einer Bestellung Ende 2026. Ein entsprechender Vertragsschluss ist in den gelesenen Quellen bis zum Stichtag nicht belegt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-6410acb24c745d46"
+   ],
+   "evidence": "Auszug: Laut POLITICO plant die Bundeswehr die Beschaffung von insgesamt 561 Skyranger 30. Die Kosten dürften sich auf rund 9 Milliarden Euro belaufen. Die Beschaffung soll im Rahmen des Projekts Arminius erfolgen. Mit einer Bestellung rechnet Rheinmetall Ende des Jahres.",
+   "location": "suv.report, 15. Juni 2026, Absatz 2",
+   "uncertainty": "Planungszahlen aus Medien; keine Bestätigung durch BAAINBw oder Rheinmetall-Vertragsmitteilung in den gelesenen Quellen. Die Zuordnung zum Projekt Arminius ist eine Medienangabe. Ergänzt T-AD-07 (Erwartung 6–8 Mrd. EUR, August 2025).",
+   "proposed_depth": "A",
+   "event_status": "erwartet, nicht vergeben"
+  },
+  {
+   "id": "P-SKR-05",
+   "statement": "Laut Rheinmetall-Mitteilung vom 30. September 2024 beauftragte Dänemark Rheinmetall Air Defence mit 16 Skyranger-30-Türmen samt Fahrzeugausstattung für eine 8x8-Radplattform (niedriger dreistelliger Mio.-EUR-Betrag) und Munition (niedriger zweistelliger Mio.-EUR-Betrag).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-d1aafc1c9b0f1a75"
+   ],
+   "evidence": "Auszug: The Kingdom of Denmark has contracted with Rheinmetall Air Defence to supply sixteen Skyranger 30 air defence turrets and additional vehicle equipment for an 8x8 wheeled platform … The order is worth a figure in the low three-digit million euro range. In addition, the customer has ordered ammunition in the low double-digit million eu[ro range]",
+   "location": "Rheinmetall-Mitteilung 30. September 2024, Absatz 1",
+   "uncertainty": "Die ILA-Mitteilung 2026 formuliert für Dänemark „plans to procure“; Lieferstatus nicht belegt.",
+   "proposed_depth": "A",
+   "event_date": "2024-09-30",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SKR-06",
+   "statement": "Laut Rheinmetall-Mitteilung vom 10. Oktober 2025 liefert Rheinmetall der Ukraine weitere Skyranger 35 auf Leopard-1-Fahrgestell (dreistelliger Mio.-EUR-Auftrag, finanziert von einem EU-Staat aus Erlösen eingefrorener russischer Vermögenswerte); Fertigung und Integration erfolgen bei Rheinmetall Italia in Rom; das System nutzt die KDG-35/1000-Revolverkanone (1.000 Schuss/min, bis 4.000 m) mit AHEAD-Airburst-Technologie. Eine Rheinmetall-Story 2026 gibt an, der Skyranger 35 auf Leopard 1 sei an die Ukraine geliefert worden.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-eadffcced857ac38",
+    "S-513daa2ae2be3e14"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Rheinmetall-Mitteilung 10. Oktober 2025, Absätze 1 und 3; Rheinmetall-Story 2026 „Ein starker Partner an der Seite der Ukraine“, Abschnitt Luftverteidigung",
+   "evidence_items": [
+    {
+     "source_id": "S-eadffcced857ac38",
+     "text": "Rheinmetall is supplying Ukraine with further Skyranger 35 air defence systems based on the Leopard 1. The order is worth a three-digit million Euro figure. The systems are being financed by an EU country through the proceeds from frozen Russian assets. The production and integration of the systems will be carried out by Rheinmetall Italia SpA at its headquarters in Rome. … KDG 35/1000 revolver cannon … 1,000 rounds per minute … effective range of up to 4,000 metres",
+     "mode": "Auszug",
+     "location": "Rheinmetall-Mitteilung 10. Oktober 2025, Absätze 1 und 3"
+    },
+    {
+     "source_id": "S-513daa2ae2be3e14",
+     "text": "Zudem wurde der Skyranger 35 auf Leopard-1-Fahrgestell von Rheinmetall an die Ukraine geliefert.",
+     "mode": "Auszug",
+     "location": "Rheinmetall-Story 2026 „Ein starker Partner an der Seite der Ukraine“, Abschnitt Luftverteidigung"
+    }
+   ],
+   "uncertainty": "Stückzahlen nicht genannt; Lieferung nur als Unternehmensangabe ohne Datum und Menge belegt.",
+   "proposed_depth": "A",
+   "event_date": "2025-10-10",
+   "event_status": "beauftragt; Lieferung laut Hersteller erfolgt"
+  },
+  {
+   "id": "P-SKR-07",
+   "statement": "Laut ILA-Mitteilung (Juni 2026) zeigte Rheinmetall den Skyranger-30-Turm auf Boxer mit dem Flugkörper DefendAir von MBDA; Rheinmetall bezeichnet den Skyranger als zentralen Bestandteil der European Sky Shield Initiative und integriert den Turm neben Boxer auch auf Lynx KF41 und Lkw-Fahrgestellen; auf der Eurosatory 2026 präsentierte Rheinmetall den Skyranger 30 auf Lynx KF41.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-c0d13e5db6387716"
+   ],
+   "evidence": "Auszug: At ILA 2026, Rheinmetall showcases the Skyranger 30 turret mounted on the Boxer 8x8 armored wheeled vehicle, equipped with MBDA’s DefendAir guided missile. … The Skyranger is increasingly establishing itself as the European standard and is a central component of the European Sky Shield Initiative (ESSI). … In addition to the Boxer wheeled armored vehicle, Rheinmetall is also showcasing the system internationally on tracked vehicles such as the Lynx KF41 or on truck chassis",
+   "location": "ILA-Mitteilung 10. Juni 2026, Absätze 2, 5 und 8",
+   "uncertainty": "„European standard“ ist eine Selbstbeschreibung; Integration DefendAir laut S&V erst ab 2029 verfügbar (P-SKR-03).",
+   "proposed_depth": "A",
+   "event_date": "2026-06-10",
+   "event_status": "Messepräsentation"
+  },
+  {
+   "id": "P-SKX-01",
+   "statement": "Skynex ist laut Rheinmetall ein offenes, modulares Nahbereichs-Luftverteidigungssystem, das Luftraumüberwachung und Effektoren trennt: Das Skymaster Battle Management System ist Kontrollknoten; Mittelstreckenradare wie X-TAR3D liefern das Luftbild; als Effektoren sind Revolver Gun Mk3, Twin Gun GDF009 TREO, Boden-Luft-Raketen, Mittel der elektronischen Kampfführung und künftig Hochenergielaser integrierbar, ebenso Radare anderer Hersteller und bestehende Skyguard-/Skyshield-Feuereinheiten.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-31c2ac5b48b0cde3"
+   ],
+   "evidence": "Auszug: Das Oerlikon Skymaster® Battle Management System ist der Kontrollknoten und das Herzstück des Systems. … Ein oder mehrere Mittelstreckenradare, wie das Oerlikon X-TAR3D … Neben der leistungsstarken Oerlikon Revolver Gun® Mk3 können auch die Oerlikon Twin Gun® GDF009 TREO, Boden-Luft-Raketen, Mittel zur aktiven und passiven elektronischen Kampfführung sowie zukünftige Hochenergielaser integriert werden. … Skynex lässt die Integration von Radaranlagen verschiedener Hersteller zu. … bestehende Flugabwehrsysteme wie die Skyshield und Skyguard Familien als Feuereinheiten",
+   "location": "Produktseite Skynex, Einleitung und Abschnitt „Oerlikon Skynex® Air Defence System“",
+   "uncertainty": "Integrationsfähigkeit ist Herstellerangabe; konkrete Fremdintegrationen nur, soweit gesondert belegt (z. B. C-029).",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-SKX-02",
+   "statement": "Laut Defense News (Januar 2024) erhielt die Ukraine am 31. Dezember 2023 eine von Rheinmetall Italia gebaute Skynex-Batterie, die laut Rheinmetall-Italia-CEO Alessandro Ercolani einsatzbereit sei; eine zweite Batterie sollte im März 2024 folgen (Vertrag ca. 160 Mio. EUR, Dezember 2022). Laut demselben Bericht wurde Skynex zuvor an Katar verkauft; im Dezember 2023 bestellten Rumänien zwei und Österreich sieben Batterien (Angaben des CEO).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-957ebff673ab8d20"
+   ],
+   "evidence": "Auszug: Ukraine on Dec. 31 received a Skynex battery built in Italy by the firm’s subsidiary Rheinmetall Italia and is now operational, according to the division’s chief executive, Alessandro Ercolani. Ukraine is to receive another battery in March, under a contract worth about €160 million … signed in December 2022. … Skynex has previously been sold to Qatar, while last December Romania ordered two batteries and Austria bought seven.",
+   "location": "Defense News, 26. Januar 2024, Absätze 2–4",
+   "uncertainty": "Angaben des Herstellers in einem Medienbericht; keine unabhängige Bestätigung der Kundenaufträge Rumänien/Österreich/Katar in diesem Beleg.",
+   "proposed_depth": "A",
+   "event_date": "2023-12-31",
+   "event_status": "geliefert laut Hersteller"
+  },
+  {
+   "id": "P-SKX-03",
+   "statement": "Die Berliner Zeitung berichtete im November 2025, CEO Armin Papperger habe erklärt, Skynex-Systeme hätten in der Ukraine russische Drohnen und Marschflugkörper (Kh-101, Kalibr) abgeschossen; die Beobachterplattform German Aid to Ukraine habe dafür keine visuelle Bestätigung gesehen, veröffentlichte Videos zeigten Abschüsse von Kamikaze-Drohnen. Offiziell habe Deutschland zwei Skynex geliefert und zwei weitere bis Ende 2025 zugesagt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-d7c2de50db0d079d"
+   ],
+   "evidence": "Auszug: In einer Konferenz erklärte Papperger, die von Deutschland gelieferten Systeme hätten in der Ukraine erfolgreich russische Drohnen und Marschflugkörper abgeschossen. … „Wir haben noch keine visuelle Bestätigung gesehen“, so die Aussage der Beobachterplattform German Aid to Ukraine. Videoaufnahmen ukrainischer Skynex-Einsätze zeigen bislang ausschließlich den Abschuss russischer Kamikaze-Drohnen … Offiziell hat Deutschland bislang zwei Skynex-Systeme an die Ukraine geliefert und zwei weitere zugesagt. Diese sollen bis Ende 2025 eintreffen.",
+   "location": "Berliner Zeitung, 9. November 2025, Absätze 2–3 und 5",
+   "uncertainty": "Gegenrecherche: Medienbericht mit Drittplattform-Aussage; spätere Lieferungen nach November 2025 nicht geprüft.",
+   "proposed_depth": "A",
+   "event_date": "2025-11-09",
+   "event_status": "Einsatzbehauptung des Herstellers, unabhängig nur teilweise belegt"
+  },
+  {
+   "id": "P-SKX-04",
+   "statement": "In einer Rheinmetall-Story 2026 gibt Rheinmetall an, Skynex wehre in der Ukraine erfolgreich Marschflugkörper des Typs Kh-101 sowie Drohnen ab; Rheinmetall liefere Mittelkalibermunition für Skynex und Skyranger und habe der Ukraine hunderttausende Schuss 35-mm-Munition für den Gepard bereitgestellt; HX-Lkw dienen u. a. als Transportfahrzeuge für Skynex.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-513daa2ae2be3e14"
+   ],
+   "evidence": "Auszug: … das moderne Flugabwehrsystem Skynex, das in der Ukraine erfolgreich komplexe Bedrohungen wie Marschflugkörper des Typs Kh-101 sowie Drohnen abwehrt. … Für die modernen Flugabwehrsysteme Skynex und Skyranger liefert das Unternehmen zudem Mittelkalibermunition. … hunderttausende Schuss 35-mm-Munition für den Flugabwehrkanonenpanzer „Gepard” … Als Transportfahrzeuge für Skynex dienen unter anderem HX-Lkw von Rheinmetall.",
+   "location": "Rheinmetall-Story 2026 „Ein starker Partner an der Seite der Ukraine“, Abschnitte Munition und Luftverteidigung",
+   "uncertainty": "Einsatzwirkung ist Herstellerangabe; siehe Gegenrecherche P-SKX-03.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-SKX-05",
+   "statement": "Rheinmetall beziffert im Foliensatz September 2026 beispielhafte C-UAS-Optionen zum Schutz einer Einrichtung: Skynex (~60 Mio. EUR; 4 Revolver Gun Mk3, 1 MSU, 1 CN1, Abfangdrohnen), Skyranger (~60 Mio. EUR; 4 Skyranger 35 auf Lynx, Abfangdrohnen) und Skyspotter (~7 Mio. EUR; Passive Emitter Locator, 1 MSU).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e6f358904e19e4e8"
+   ],
+   "evidence": "Auszug: Skynex (~€60m) 4xRGMK3, 1xMSU, 1xCN1, Interceptor Drones; Skyranger (~€60m) 4x SR35 on Lynx, Interceptor Drones; Skyspotter (~€7m) Passive Emitter Locator, 1xMSU … Rheinmetall’s proven C-UAS options for securing one facility",
+   "location": "Investor Presentation September 2026, Folie 44",
+   "uncertainty": "Illustrative Unternehmenskalkulation, keine Angebots- oder Vertragspreise.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-RGM-01",
+   "statement": "Die Oerlikon Revolver Gun Mk3 ist laut Rheinmetall ein 35-mm-Flugabwehrgeschütz mit integriertem X-Band-Trackingradar, elektrooptischer Sensoreinheit und Feuerleitrechner, das Zieldaten von 2D-/3D-Suchradaren verarbeitet, autonom oder abgesetzt geführt wird, C-RAM-fähig ist, AHEAD-Munition verschießt und auf geeignete 6x6-Lkw montiert werden kann.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-31c2ac5b48b0cde3"
+   ],
+   "evidence": "Paraphrase: Hochmobiles 35-mm-Flugabwehrgeschütz mit integriertem Radargerät und elektrooptischer Sensoreinheit, auf jeden 6x6-LKW mit ausreichender Nutzlast montierbar; empfängt Daten von 3D- und 2D-Suchradaren; integriertes X-Band-Trackingradar, Feuerleitcomputer; C-RAM-Fähigkeit, AHEAD-Technologie, ferngesteuertes Laden, ISO-1D-Lafette, allwettertauglich.",
+   "location": "Produktseite Skynex, Abschnitt „Oerlikon Revolver Gun® Mk3“",
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-AHD-01",
+   "statement": "Die programmierbare 35-mm-Airburst-Munition AHEAD erzeugt laut Rheinmetall am berechneten Zielpunkt eine Wolke von Subprojektilen; elektronische Gegenmaßnahmen können die Flugbahn nach dem Abschuss nicht beeinflussen, und Rheinmetall nennt niedrigere Kosten pro Bekämpfung als bei vielen lenkwaffenbasierten Lösungen. Laut Defense News wird die Geschossgeschwindigkeit beim Rohraustritt gemessen und die Zerlegungszeit im Rohr programmiert.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-513daa2ae2be3e14",
+    "S-957ebff673ab8d20"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Rheinmetall-Story 2026 „Ein starker Partner an der Seite der Ukraine“, Abschnitt Luftverteidigung; Defense News, 26. Januar 2024, Absätze 9–10",
+   "evidence_items": [
+    {
+     "source_id": "S-513daa2ae2be3e14",
+     "text": "Bei Skynex und Skyranger 35 kommt die programmierbare 35-mm-Air-Burst-Munition AHEAD zum Einsatz. Sie erzeugt am berechneten Zielpunkt eine Wolke von Subprojektilen … Im Vergleich zu vielen lenkwaffenbasierten Lösungen bietet die kanonenbasierte Flugabwehr insbesondere den Vorteil niedrigerer Kosten pro Bekämpfung. Elektronische Gegenmaßnahmen können die Flugbahn von AHEAD-Geschossen nach dem Abschuss nicht nachträglich beeinflussen.",
+     "mode": "Auszug",
+     "location": "Rheinmetall-Story 2026 „Ein starker Partner an der Seite der Ukraine“, Abschnitt Luftverteidigung"
+    },
+    {
+     "source_id": "S-957ebff673ab8d20",
+     "text": "When they approach their target, the system’s 35mm shells open, disbursing hundreds of small tungsten cylinders … their speed is checked by a sensor as they leave the gun’s barrel, with electronics in the barrel programming the opening time of the shell accordingly.",
+     "mode": "Auszug",
+     "location": "Defense News, 26. Januar 2024, Absätze 9–10"
+    }
+   ],
+   "uncertainty": "Kostenvorteil ist eine nicht quantifizierte Herstellerangabe.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-SNS-01",
+   "statement": "Das taktische 3D-Such- und Erfassungsradar X-TAR3D von Rheinmetall (Rheinmetall Italia) ist laut Hersteller ein voll kohärentes 3D-Puls-Doppler-Radar mit 16 übereinander angeordneten Empfangselementen, automatischer Aufbereitung von bis zu 50 Flugzielspuren, Entdeckung bis 70° Höhenwinkel, integriertem IFF und instrumentierten Reichweiten von 25, 35 und 55 km, für boden- und marinegestützte Anwendungen.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-31c2ac5b48b0cde3",
+    "S-f927b29c83eb84ce"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Produktseite Skynex, Abschnitt „Oerlikon X-TAR3D® Such- und Erfassungsradar“; Seite Rheinmetall Italia S.p.A., Absatz 3",
+   "evidence_items": [
+    {
+     "source_id": "S-31c2ac5b48b0cde3",
+     "text": "Voll kohärenter 3D Puls Doppler Radar (X-Band); 16 simultan empfangende, übereinander angeordnete Antennenelemente; automatische Aufbereitung von bis zu 50 Flugzielspuren; hohe Entdeckungswahrscheinlichkeit bis zu einem Höhenwinkel von 70°; instrumentierte Reichweiten von 25, 35 und 55 km; integriertes IFF; boden- und marinegestützt.",
+     "mode": "Paraphrase",
+     "location": "Produktseite Skynex, Abschnitt „Oerlikon X-TAR3D® Such- und Erfassungsradar“"
+    },
+    {
+     "source_id": "S-f927b29c83eb84ce",
+     "text": "Rheinmetall Italia's taktischer 3D-Such- und Erfassungsradar X-TAR3D entdeckt, erfasst und verfolgt kleine, schnell und steil angreifende Ziele.",
+     "mode": "Auszug",
+     "location": "Seite Rheinmetall Italia S.p.A., Absatz 3"
+    }
+   ],
+   "uncertainty": "Die Seite „Stationäre Flugabwehr“ nennt abweichend „I-Band“ statt „X-Band“; Bandangabe daher nicht eindeutig.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-SNS-02",
+   "statement": "Die Oerlikon Multi Sensor Unit (MSU) ist laut Rheinmetall eine fernbediente, schnell verlegbare Sensoreinheit mit 3D-AESA-Suchradarpaneelen für rotationsfreie 360°-Abdeckung (Erfassungsdistanz über 20 km bei 1 m² RQS), Panorama-EO-Sensor, automatischer Sensordatenfusion und Zielklassifikation sowie optional IFF, Zenitradar und ELINT-Sensoren; die Spuren werden automatisch dem geeignetsten Geschütz oder Lenkwaffenwerfer übergeben.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-31c2ac5b48b0cde3"
+   ],
+   "evidence": "Paraphrase: Fernoperierte Multi Sensor Einheit; 3D AESA Suchradarpanele, rotationsfreie 360° Abdeckung; Erfassungsdistanz von mehr als 20km (bei einem RQS von 1 m2); Panorama EO Sensor; automatische Sensordatenfusion (SDF) und Trackgenerierung; Optional: IFF, Zenith Radar, ELINT Sensoren; Übergabe der Tracks an das geeignetste Geschütz oder den Lenkwaffenwerfer.",
+   "location": "Produktseite Skynex, Abschnitt „Oerlikon Multi Sensor Unit – MSU“",
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-SKN-01",
+   "statement": "Laut Rheinmetall kann die SkyKnight-C-RAM/C-PGM-Lenkwaffe in bestehende Flugabwehrsysteme integriert werden; der Werfer fasst bis zu 60 Lenkwaffen, und durch Einschlagpunktberechnung sollen nur Ziele bekämpft werden, die in zu schützende Bereiche einschlagen würden.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-31c2ac5b48b0cde3"
+   ],
+   "evidence": "Auszug: Die neue SkyKnight C-RAM / C-PGM Lenkwaffe kann in bestehende Flugabwehrsysteme integriert werden. … nur Ziele angegriffen, welche in zu schützende Bereiche einschlagen würden. … Bis zu 60 Lenkwaffen pro Werfer gegen Sättigungsangriffe",
+   "location": "Produktseite Skynex, Abschnitt „Oerlikon Skynex® – SkyKnight Missile Launcher Unit“",
+   "uncertainty": "Kein Kunden-, Test- oder Lieferbeleg in den gelesenen Quellen; Herkunft der Lenkwaffe nicht genannt.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-SKM-01",
+   "statement": "Oerlikon Skymaster ist laut Rheinmetall ein kundenspezifisches Führungs- und Waffeneinsatzsystem für die taktische und operative Flugabwehr-Führungsebene mit multispektraler Sensordatenfusion; in der Drohnenabwehr-Toolbox fusioniert und klassifiziert Skymaster Radar-, Passiv-, ADS-B- und Kamerasignale zu einem Luftlagebild.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4faa3a733781f031",
+    "S-860fb5a5ec516912"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Produktseite Skymaster, Einleitung; Produktseite Drohnenabwehr Toolbox, Absatz 3",
+   "evidence_items": [
+    {
+     "source_id": "S-4faa3a733781f031",
+     "text": "Rheinmetall bietet kundenspezifische Lösungen für taktische sowie operative Flugabwehrführungssysteme mit multispektraler Sensordatenfusion.",
+     "mode": "Auszug",
+     "location": "Produktseite Skymaster, Einleitung"
+    },
+    {
+     "source_id": "S-860fb5a5ec516912",
+     "text": "Die daraus gewonnenen Signale werden im hauseigenen Kommandosystem \"Skymaster\" fusioniert, klassifiziert und in einem einheitlichen, einfach verständlichen Luftlagebild dargestellt.",
+     "mode": "Auszug",
+     "location": "Produktseite Drohnenabwehr Toolbox, Absatz 3"
+    }
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-CUAS-01",
+   "statement": "Die Drohnenabwehr-Toolbox kombiniert laut Rheinmetall X- und S-Band-Radare, passive Lokalisierungsantennen, ADS-B-Identifikation und 360°-Kameras mit Laserentfernungsmessern (IR/TV) mit Skymaster; zur Intervention steht ein C-UAS-Jammer mit gerichtetem Störsignal zur Verfügung, autonome Abfangdrohnen und Flugabwehrkanonen mit AHEAD-Munition sollen „in naher Zukunft“ hinzukommen; Rheinmetall Electronics (Bremen) bietet zudem die Systemlösung „Qualifizierte Fliegerabwehr“ und ein mobiles C-UAS-System u. a. für Flughäfen und Großanlässe an.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-860fb5a5ec516912"
+   ],
+   "evidence": "Paraphrase: Kombination aus Radaren im X- sowie S-Band, passiven Lokalisierungsantennen, ADS-B und 360° Kameras mit Laserentfernungsmessern sowie Infrarot und TV; Fusion in Skymaster; für eine Intervention C-UAS Jammer mit gerichtetem Störsignal; in naher Zukunft autonome Abfangdrohnen und diverse Flugabwehrkanonen mit Ahead Munition; Qualifizierte Fliegerabwehr (Rheinmetall Electronics GmbH); Mobiles C-UAS System für Flughäfen und Großanlässe.",
+   "location": "Produktseite Drohnenabwehr Toolbox, Absätze 2–5 und Abschnitt „Systeme zur Abwehr von Drohnen“",
+   "uncertainty": "Seitenstand undatiert; „in naher Zukunft“ ohne Datum.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-CUAS-02",
+   "statement": "Laut Rheinmetall-Mitteilung (Dezember 2025) demonstrierte Rheinmetall Air Defence bei den GBAD Demo Days im finnischen Lohtaja c-sUAS-Fähigkeiten mit Skyspotter (multisensorisches Frühwarn- und Aufklärungssystem), mehreren abgesetzten Passive-Emitter-Locator-Sensoren und einem C2-Shelter; als Effektoren nennt Rheinmetall Jammer, Abfangdrohne und eine 30-mm-Revolverkanone mit KETF-Munition, die sich in der Konzeptphase befinde.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-6ceae77f0e11c121"
+   ],
+   "evidence": "Auszug: At the core of the presentation was Skyspotter, Rheinmetall’s multi-sensory early warning and reconnaissance system for detecting, classifying and tracking airborne threats. … an integrated overall system consisting of the Skyspotter, several dislocated Passive Emitter Locator sensors and a rapidly deployable, specialised C2 shelter. … a jammer, an interceptor drone or, in extreme cases, the highly flexible 30 mm revolver gun, which is currently in the conceptional phase.",
+   "location": "Rheinmetall-Mitteilung 16. Dezember 2025, Absätze 1, 3–4",
+   "uncertainty": "Demonstration auf Einladung der finnischen Streitkräfte; kein finnischer Auftrag belegt.",
+   "proposed_depth": "A",
+   "event_date": "2025-12-16",
+   "event_status": "Demonstration"
+  },
+  {
+   "id": "P-CUAS-03",
+   "statement": "Laut Rheinmetall-Mitteilung vom 7. Oktober 2026 haben Rheinmetall Defence Australia und Praetorian Aeronautics den AERIE-Werfer entwickelt, einen containerisierten (20-Fuß-ISO), interceptor-unabhängigen C-UAS-Werfer für mehr als 20 Abfangflugkörper; der Demonstrator nutzt Arrow Interceptor und Hadrian C2 von Praetorian; ein Prototyp entstand innerhalb von zwölf Monaten, Full-Operator-Demonstrationen sind für das vierte Quartal 2026 geplant.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-ed85256fd87c2a74"
+   ],
+   "evidence": "Auszug: Die containerisierte Luftverteidigungslösung AERIE ist ein Interceptor-unabhängiger, autarker, containerisierter und einsatzfähiger C-UAS-Werfer. Er bietet Platz für mehr als 20 Abfangflugkörper … 20-Fuß-ISO-Seecontainer … Der Demonstrator verfügt über den „Arrow Interceptor“ und das „Hadrian Command and Control (C2)“-System von Praetorian Aeronautics … innerhalb von zwölf Monaten einen Prototyp … Das AERIE-System soll im vierten Quartal 2026 in die Phase der Full-Operator-Demonstrations übergehen.",
+   "location": "Rheinmetall-Mitteilung 7. Oktober 2026, Absätze 2–4 und 10",
+   "uncertainty": "Titel spricht von „liefern“, der Text belegt Prototyp/Demonstrator; kein Kundenvertrag genannt. Partnerbeziehung liegt beim Cluster.",
+   "proposed_depth": "A",
+   "event_date": "2026-10-07",
+   "event_status": "Prototyp; Demonstration geplant"
+  },
+  {
+   "id": "P-STAT-01",
+   "statement": "Für die stationäre Flugabwehr nennt Rheinmetall Oerlikon Skyguard 3 (Feuerleitgerät für bis zu vier Effektoren: Zwillingsgeschütz GDF007, VSHORAD-Lenkwaffenwerfer, Revolvergeschütz Mk2 gezogen), Oerlikon Skyshield (unbemannte Sensoreinheit, Befehlsstand, unbemannte Geschütze, VSHORAD-Integration, AHEAD), ein MANPAD-Steuersystem und das Digitale Optische Zielsuchgerät; Rheinmetall Air Defence gibt Streitkräfte in mehr als 40 Ländern als Nutzer ihrer Flugabwehrlösungen an.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-d5ab9c70470a478d",
+    "S-18ce19a1fbbec148"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Produktseite Stationäre Flugabwehr; Seite Rheinmetall Air Defence AG – Über uns, Absatz 6",
+   "evidence_items": [
+    {
+     "source_id": "S-d5ab9c70470a478d",
+     "text": "Oerlikon Skyguard 3 – Einsatz mit bis zu 4 Effektoren (Zwillingsgeschütz GDF007, VSHORAD-Lenkwaffenwerfer, Revolvergeschütz Mk 2 gezogen), Ahead; Oerlikon Skyshield – unbemannte Erfassungs- und Verfolgungssensoreinheit, Befehlsstand, unbemannte Geschütze, VSHORAD, Ahead; MANPAD-Steuersystem; Digitales Optisches Zielsuchgerät.",
+     "mode": "Paraphrase",
+     "location": "Produktseite Stationäre Flugabwehr"
+    },
+    {
+     "source_id": "S-18ce19a1fbbec148",
+     "text": "Streitkräfte in mehr als 40 Ländern weltweit vertrauen auf hoch komplexe, leistungsstarke und automatisierte Flugabwehrlösungen von Rheinmetall Air Defence.",
+     "mode": "Auszug",
+     "location": "Seite Rheinmetall Air Defence AG – Über uns, Absatz 6"
+    }
+   ],
+   "uncertainty": "Länderzahl ist nicht aufgeschlüsselte Herstellerangabe.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-NAV-01",
+   "statement": "Für die marinegestützte Flugabwehr nennt Rheinmetall die Millennium Gun (35 mm, 252 Schuss Magazin, 1.000 Schuss/min; bodengestützte Variante mit AHEAD laut Hersteller bereits zur C-RAM-Abwehr eingesetzt), die 20-mm-Waffenstation Searanger 20 (Wirkdistanz bis 2.000 m) und das 2-Achsen-Feuerleitradar Seaguard Biax (X- oder Ku-Band-Radar, TV/IR, optional Laserentfernungsmesser); für alle drei gibt Rheinmetall „TRL 9“ an.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-310ddb82949667f5"
+   ],
+   "evidence": "Paraphrase: Millennium Gun: 252 Schuss Magazinkapazität, nominale Schussrate 1.000 Schuss/min; „Die Millennium Gun mit der programmierbaren Oerlikon Ahead Munition wird in einer bodengestützten Variante ebenfalls bereits zur Abwehr von Raketen, Artillerie- und Mörsergranaten eingesetzt“; TRL 9. Searanger 20: 20 mm Oerlikon Cannon KAE, effektive Wirkdistanz bis zu 2.000 m; TRL 9. Seaguard Biax: 2-achsige Folgesensoreinheit mit X- oder Ku-Band Radar, TV und Infrarot Kamera, Laserentfernungsmesser optional; TRL 9.",
+   "location": "Produktseite Marinegestützte Flugabwehr",
+   "uncertainty": "TRL-Angaben sind Herstellerangaben ohne Prüfnachweis; Kaliber der Millennium Gun aus Rheinmetall-Kontext (35 mm) auf der Seite nicht ausdrücklich genannt.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-HEL-01",
+   "statement": "Laut ESUT unterzeichnete das BAAINBw am 9. Juli 2026 einen Vertrag mit einer Arbeitsgemeinschaft aus MBDA Deutschland und Rheinmetall Waffe Munition über Entwicklung und Realisierung eines Hochenergie-Laserwaffensystems für die Deutsche Marine, das bis 2029 einsatzfähig sein soll (Haushaltsausschuss-Freigabe am 8. Juli 2026); ein Joint Venture ist in Gründung. Grundlage ist ein Demonstrator, der laut den Unternehmen an Bord der Fregatte SACHSEN rund 28.000 Seemeilen zurücklegte und in Folgeuntersuchungen über 1.000 erfolgreiche Schüsse abgab.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-92d7be3f0dda7317"
+   ],
+   "evidence": "Auszug: Das Bundesamt für Ausrüstung, Informationstechnik und Nutzung der Bundeswehr (BAAINBw) hat am 9. Juli einen Vertrag mit einer Arbeitsgemeinschaft aus der MBDA Deutschland GmbH und der Rheinmetall Waffe Munition GmbH unterzeichnet. … Entwicklung und Realisierung eines Hochenergie-Laserwaffensystems für die Deutsche Marine, das bis zum Jahr 2029 einsatzfähig sein soll. Der Haushaltsausschuss … hatte am 8. Juli die Finanzmittel … freigegeben. … ein Joint Venture der beiden Rüstungsunternehmen in der Gründung … rund 28.000 Seemeilen … über 1.000 erfolgreiche Schüsse",
+   "location": "ESUT, 10. Juli 2026, Absätze 1–2 und 4–5",
+   "uncertainty": "Vertragswert in den gelesenen Quellen nicht eindeutig; Test- und Wirkungsangaben stammen von den Unternehmen. JV-Struktur liegt beim Cluster.",
+   "proposed_depth": "A",
+   "event_date": "2026-07-09",
+   "event_status": "Entwicklungs-/Realisierungsvertrag unterzeichnet"
+  },
+  {
+   "id": "P-SVC-01",
+   "statement": "Rheinmetall Air Defence bietet laut Unternehmen Beratung, Einführung, Schulung, Logistik, Unterhalt und kampfwertsteigernde Maßnahmen (z. B. Nachrüstung mit AHEAD-Technologie) an; Munition, Einzelwaffen und Gesamtsysteme werden im Schweizer Erprobungszentrum Ochsenboden getestet.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-5b8b39f37cd6b51d"
+   ],
+   "evidence": "Auszug: Rheinmetall berät und unterstützt Kunden bei der Einführung, Schulung und im Unterhalt bestehender oder neuer Flugabwehrsysteme. … lassen sich z.B. seit Jahren im Einsatz stehende Systeme mit Ahead-Technologie nachrüsten. Munition, Einzelwaffen und Gesamtsysteme werden im Schweizer Erprobungszentrum Ochsenboden getestet.",
+   "location": "Produktübersicht Flugabwehrsysteme, Absatz „Optimaler Schutz …“",
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-EU-01",
+   "statement": "Rheinmetall stellt im Foliensatz September 2026 eine Europakarte mit aktiven Standorten (einschließlich im Bau befindlicher Standorte) dar: Großbritannien (Fahrzeuge, „Gun hall“), Niederlande (Fahrzeuge), Schweiz (Munition, Flugabwehr), Spanien (Munition), Italien (Fahrzeuge, Munition, Flugabwehr, Radar), Lettland und Litauen (Munition), Ungarn (Fahrzeuge, Munition), Ukraine (Fahrzeuge, Munition), Österreich (Fahrzeuge, Munition), Rumänien (Fahrzeuge, Artillerie, Pulver, Schiffbau), Bulgarien (Munition, Pulver, Schiffbau) und Kroatien (Schiffbau, DOK-ING); Polen (Fahrzeuge) ist als potenzieller neuer Standort markiert.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e6f358904e19e4e8"
+   ],
+   "evidence": "Paraphrase: Karte „Rheinmetall as European player and consolidator“ mit Legende „Active locations“ (dunkelblau) / „Potential new locations“ (hellblau); Länderbeschriftungen GB Vehicles, “Gun hall”; Netherlands Vehicles; Switzerland Ammunition, Air Defence; Spain Ammunition; Italy Vehicles, Ammunition, Air Defence, Radar; Latvia Ammunition; Lithuania Ammunition; Hungary Vehicles, Ammunition; Ukraine Vehicles, Ammunition; Austria Vehicles, Ammunition; Romania Vehicles, Artillery, Powder, Shipbuilding; Bulgaria Ammunition, Powder, Shipbuilding; Croatia Shipbuilding, DOK-ING; Polen hellblau eingefärbt; „Note: including sites under construction“.",
+   "location": "Investor Presentation September 2026, Folie 8 (Karte, visuell geprüft)",
+   "uncertainty": "Die Karte unterscheidet nicht zwischen operativen und im Bau befindlichen Standorten sowie nicht zwischen eigenen und JV-Standorten; Farbunterscheidung nur visuell abgelesen.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-DE-01",
+   "statement": "Laut Foliensatz September 2026 sind die größten deutschen Standorte Unterlüß (Fahrzeuge, Munition), Kassel (Fahrzeuge), Kiel (Fahrzeuge, Elektronik), Bremen (Soldatensysteme, Elektronik, Flugabwehr, Schiffbau), München (Fahrzeuge), Weeze (Luftfahrt/F-35) und Neuss (Drohnen, Flugabwehr, Satelliten); Konzernsitz ist Düsseldorf.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e6f358904e19e4e8",
+    "S-4d0e53f502fb320c"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Investor Presentation September 2026, Folie 8, Kasten „Germany (largest locations)“; Seite „Über Rheinmetall“, Abschnitt „Die Managementholding“",
+   "evidence_items": [
+    {
+     "source_id": "S-e6f358904e19e4e8",
+     "text": "Germany (largest locations) ▪ Unterlüss: Vehicles, Ammunition ▪ Kassel: Vehicles ▪ Kiel: Vehicles, Electronics ▪ Bremen: Soldier Systems, Electronics, Air Defence, Shipbuilding ▪ Munich: Vehicles ▪ Weeze: Air (F-35) ▪ Neuss: Drones, Air Defence, Satellites",
+     "mode": "Auszug",
+     "location": "Investor Presentation September 2026, Folie 8, Kasten „Germany (largest locations)“"
+    },
+    {
+     "source_id": "S-4d0e53f502fb320c",
+     "text": "Die Rheinmetall AG ist das Mutterunternehmen des Rheinmetall-Konzerns und hat ihren Sitz am Standort der Konzernzentrale in Düsseldorf, Deutschland.",
+     "mode": "Auszug",
+     "location": "Seite „Über Rheinmetall“, Abschnitt „Die Managementholding“"
+    }
+   ],
+   "uncertainty": "Funktionsangaben je Standort ohne Rechtsträgerzuordnung; Bremen „Shipbuilding“ bezieht sich vermutlich auf NVL (Sitz Bremen), nicht näher erläutert.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-OWN-01",
+   "statement": "Laut Anteilsbesitzliste 2025 hält Rheinmetall u. a. 100 % an Rheinmetall Air Defence AG (Zürich, direkt), Rheinmetall Air Defence Germany GmbH (Neuss), Rheinmetall Italia S.p.A. (Rom), RWM Italia S.p.A. (Ghedi), RWM Schweiz AG (Zürich), Rheinmetall Electronics GmbH (Bremen), Rheinmetall Waffe Munition GmbH (Südheide), Rheinmetall Expal Munitions S.A.U. (Madrid), Rheinmetall Defence Nederland B.V. (Ede), Rheinmetall Defence UK Ltd (Bristol), Rheinmetall Nordic AS (Duken/Norwegen), Rheinmetall Polska Sp. z o.o. (Warschau), Rheinmetall Canada Inc. (Saint-Jean-sur-Richelieu), Rheinmetall Defence Australia Pty Ltd (Redbank), American Rheinmetall Defense, Inc. (Reston, VA), Expal USA Inc. (Hooks, TX), Rheinmetall Electronics Singapore Pte. Ltd. und Rheinmetall Singapore Pte. Ltd. (Singapur).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Paraphrase: Zeilen mit direktem bzw. indirektem Anteil 100: Rheinmetall Air Defence AG, Zürich (100 direkt); Rheinmetall Air Defence Germany GmbH, Neuss; Rheinmetall Italia S.p.A., Rom; RWM Italia S.p.A., Ghedi; RWM Schweiz AG, Zürich; Rheinmetall Electronics GmbH, Bremen; Rheinmetall Waffe Munition GmbH, Südheide; Rheinmetall Expal Munitions S.A.U., Madrid; Rheinmetall Defence Nederland B.V., Ede; Rheinmetall Defence UK Ltd, Bristol; Rheinmetall Nordic AS, Duken/Norwegen; Rheinmetall Polska Sp. z o.o., Warschau; Rheinmetall Canada Inc., Saint-Jean-sur-Richelieu; Rheinmetall Defence Australia Pty Ltd, Redbank; American Rheinmetall Defense, Inc., Reston, VA; Expal USA Inc., Hooks, TX; Rheinmetall Electronics Singapore Pte. Ltd.; Rheinmetall Singapore Pte. Ltd.",
+   "location": "Geschäftsbericht 2025, Anhang Ziffer (42) Anteilsbesitzliste 2025, PDF-S. 267–270",
+   "uncertainty": "Stand 31. Dezember 2025; die Liste nennt Sitz, nicht jeden Betriebsstandort. Tabellenextraktion zweispaltig, Zeilenzuordnung im Original geprüft wo möglich.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-JV-01",
+   "statement": "Laut Anteilsbesitzliste 2025 hält Rheinmetall Mehrheits- bzw. Gemeinschaftsbeteiligungen u. a. an Rheinmetall BAE Systems Land Ltd (Telford, 55 %), Rheinmetall MAN Military Vehicles GmbH (München, 51 %) und Rheinmetall MAN Military Vehicles Österreich GesmbH (Wien, 51 %), Rheinmetall Hungary Zrt. (Zalaegerszeg, 51 %), Rheinmetall Defence Lietuva UAB (Ruklos/Litauen, 51 %), Rheinmetall – Ukrainian Defense Industry LLC (Kiew, 51 %), Rheinmetall Denel Munition (Pty) Ltd. (Somerset West, 51 %), Rheinmetall Automecanica SRL (Medias/Rumänien, 73 %), UAB Lithuania Defense Services (Ruklos, 50 %), Rheinmetall Barzan Advanced Technologies QSTP LLC (Doha/Katar, 49 %), Rheinmetall Arabia Simulation and Training LLC (Riyadh, 40 %) und RADARABIA for Industry LLC (Riyadh, 20 %).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Paraphrase: Rheinmetall BAE Systems Land Ltd, Telford/Vereinigtes Königreich – 55; Rheinmetall MAN Military Vehicles GmbH, München – 51 (direkt); Rheinmetall MAN Military Vehicles Österreich GesmbH, Wien – 51; Rheinmetall Hungary Zrt., Zalaegerszeg – 51; Rheinmetall Defence Lietuva, UAB, Ruklos – 51; Rheinmetall – Ukrainian Defense Industry LLC, Kiew – 51; Rheinmetall Denel Munition (Pty) Ltd., Somerset West – 51; Rheinmetall Automecanica SRL, Medias – 73; UAB Lithuania Defense Services, Ruklos – 50; Rheinmetall Barzan Advanced Technologies QSTP, LLC, Doha/Katar – 49; Rheinmetall Arabia Simulation and Training LLC, Riyadh – 40; RADARABIA for Industry LLC, Riyadh – 20.",
+   "location": "Geschäftsbericht 2025, Anhang Ziffer (42) Anteilsbesitzliste 2025, PDF-S. 268–271",
+   "uncertainty": "Stand 31. Dezember 2025; Partner und Kontrollrechte sind in der Liste nicht genannt (Cluster). Laut Halbjahresfinanzbericht 2026 (PDF-S. 12) wurde zu Beginn des dritten Quartals 2026 eine Verpflichtung zum Auskaufen des Mehrheitsgesellschafters von Rheinmetall Arabia Simulation and Training beglichen; der aktuelle Anteil ist nicht belegt.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-CH-01",
+   "statement": "Laut Rheinmetall ist das Kompetenz- und Fertigungszentrum Zürich Bestandteil der Rheinmetall Air Defence AG, unter deren Dach sämtliche Flugabwehraktivitäten des Konzerns gebündelt sind (vormals Oerlikon Contraves AG); Tests erfolgen im Erprobungszentrum Ochsenboden (Schweiz).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-18ce19a1fbbec148"
+   ],
+   "evidence": "Auszug: Das Kompetenz- und Fertigungszentrum Zürich ist ebenfalls Bestandteil der Rheinmetall Air Defence und Partner der Industrie für Mechatronik-Fertigung, Lasersysteme und Engineering. Unter dem Dach der Rheinmetall Air Defence AG werden sämtliche Flugabwehr-Aktivitäten des Rheinmetall-Konzerns gebündelt. … Munition, Einzelwaffen und Gesamtsysteme werden im Schweizer Erprobungszentrum Ochsenboden getestet und erprobt.",
+   "location": "Seite Rheinmetall Air Defence AG – Über uns, Absätze 4–5 und 8",
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-IT-01",
+   "statement": "Rheinmetall Italia S.p.A. (Rom), vormals Oerlikon Contraves S.p.A., ist laut Rheinmetall das „Radarhaus“ des Konzerns mit Konstruktion, Entwicklung und Fertigung von Luftüberwachungs- und Verfolgungsradaren (L- bis W-Band) sowie Fertigung von Flugabwehrsystemen und logistischer Unterstützung; sie war Generalunternehmer für den Skynex-Auftrag eines internationalen Kunden (2026) und fertigt die Skyranger 35 für die Ukraine.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-f927b29c83eb84ce",
+    "S-b003618b3ae9eba2"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Seite Rheinmetall Italia S.p.A., Absätze 1–2; Rheinmetall-Mitteilung 2. Juli 2026, Absatz 4",
+   "evidence_items": [
+    {
+     "source_id": "S-f927b29c83eb84ce",
+     "text": "Rheinmetall Italia S.p.A. mit Sitz in Rom, vormals bekannt als Oerlikon Contraves S.p.A., … ist das \"Radarhaus\" von Rheinmetall. … Das Kerngeschäft von Rheinmetall Italia ist die Fertigung von Flugabwehrsystemen, die Konstruktion, Entwicklung und Fertigung von Radarsystemen … sowie die logistische Unterstützung der vertriebenen Systeme.",
+     "mode": "Auszug",
+     "location": "Seite Rheinmetall Italia S.p.A., Absätze 1–2"
+    },
+    {
+     "source_id": "S-b003618b3ae9eba2",
+     "text": "Rheinmetall Italia is acting as the prime contractor for this project. Several key subsidiaries within the Rheinmetall Group are actively involved to deliver the systems: Rheinmetall Air Defence, Rheinmetall MAN Military Vehicles, Rheinmetall Weapon and Munitions (Switzerland).",
+     "mode": "Auszug",
+     "location": "Rheinmetall-Mitteilung 2. Juli 2026, Absatz 4"
+    }
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-UK-01",
+   "statement": "Rheinmetall BAE Systems Land (RBSL), seit Juli 2019 Joint Venture von BAE Systems und Rheinmetall, beschäftigt laut Rheinmetall mehr als 700 Mitarbeitende in Telford, Dorset, Bristol und Newcastle, liefert 148 Challenger 3 und fertigt in Telford etwa die Hälfte der 500 Boxer für die britische Armee; laut Halbjahresmitteilung 2026 investiert Weapon and Ammunition in die Kapazitätserweiterung der Rohrfertigung in Großbritannien.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-cf7e773278387ae1",
+    "S-5f102cfea2da2738"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Seite Rheinmetall BAE Systems Land Limited, Absätze 1–5; Pressemitteilung 6. August 2026, PDF-S. 3, Abschnitt Weapon and Ammunition",
+   "evidence_items": [
+    {
+     "source_id": "S-cf7e773278387ae1",
+     "text": "RBSL wurde im Juli 2019 als neues, in Großbritannien ansässiges Joint Venture zwischen BAE Systems und Rheinmetall gegründet. … an seinen britischen Standorten in Telford, Dorset, Bristol und Newcastle mehr als 700 qualifizierte Mitarbeiter … RBSL liefert den Challenger 3 –148 moderne Panzer … in ihren jeweiligen Werken in Telford und Stockport … etwa die Hälfte der 500 Boxer 8x8-Radfahrzeuge",
+     "mode": "Auszug",
+     "location": "Seite Rheinmetall BAE Systems Land Limited, Absätze 1–5"
+    },
+    {
+     "source_id": "S-5f102cfea2da2738",
+     "text": "Dazu zählen im Wesentlichen die Kapazitätserweiterung für die Rohrfertigung in Großbritannien, der Aufbau eines neuen Werks in Litauen und der Ausbau der Pulverfertigung bei der Nitrochemie Aschau.",
+     "mode": "Auszug",
+     "location": "Pressemitteilung 6. August 2026, PDF-S. 3, Abschnitt Weapon and Ammunition"
+    }
+   ],
+   "uncertainty": "Standort der Rohrfertigung in Großbritannien nicht genannt.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-ES-01",
+   "statement": "Rheinmetall Expal Munitions S.A.U. (Madrid), seit 1. August 2023 100-%-Tochter, ist laut Rheinmetall auf Artilleriemunition, Mörsergranaten, Mittelkalibermunition, Zünder und Raketenantriebssysteme spezialisiert und verfügt über insgesamt sieben operative Standorte in Spanien und den USA.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-7d3cceefdfc28f58"
+   ],
+   "evidence": "Auszug: Rheinmetall Expal Munitions, S.A.U., mit Sitz in Madrid, … spezialisiert auf Artillerie­munition, Mörsergranaten, Mittel­kalibermunition sowie Zünder und Raketenantriebssysteme. … Die seit 1. August 2023 100%-ige Tochtergesellschaft von Rheinmetall verfügt mit ihren insgesamt 7 operativen Standorten in Spanien und den U.S.A. über ein hochmodernes Produktionsnetzwerk",
+   "location": "Seite Rheinmetall Expal Munitions, Absatz 1",
+   "uncertainty": "Aufteilung der sieben Standorte auf Spanien und USA nicht angegeben.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-NO-01",
+   "statement": "Laut Rheinmetall-Mitteilung eröffnete die 100-%-Tochter Rheinmetall Nordic AS am 1. Oktober 2026 einen neuen Standort in Skoppum (Norwegen) für Entwicklung, Produktion, Systemintegration, Logistik und Kundenbetreuung (4.579 m², 100 Mitarbeitende zur Eröffnung); Schwerpunkte sind elektrooptische Systeme, Feuerleitsysteme, Lageerfassung und Waffenzubehör.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-ddb1d21cd09da6cf"
+   ],
+   "evidence": "Auszug: So hat die Tochtergesellschaft Rheinmetall Nordic AS am 1. Oktober 2026 ihren neuen Standort in Skoppum offiziell eröffnet. Damit erweitert das Unternehmen seine Kapazitäten in den Bereichen Entwicklung, Produktion, Systemintegration, Logistik und Kundenbetreuung. … 4.579 Quadratmetern … 100 Mitarbeitende … elektrooptische Systeme, Feuerleitsysteme, Lösungen zur Lageerfassung, Waffenzubehör … Als hundertprozentige Tochtergesellschaft der Rheinmetall AG",
+   "location": "Rheinmetall-Mitteilung 1. Oktober 2026, Absätze 1–3 und 6",
+   "uncertainty": "Mietobjekt (15-jähriger Mietvertrag) – Eigentum am Gebäude nicht beansprucht.",
+   "proposed_depth": "A",
+   "event_date": "2026-10-01",
+   "event_status": "eröffnet"
+  },
+  {
+   "id": "P-REG-NORD-01",
+   "statement": "Laut Bilanzvorlage 2025 waren Beauftragungen aus Dänemark, Finnland, Norwegen und Schweden wesentliche Treiber des auf 6.736 Mio. EUR gestiegenen Auftragseingangs von Weapon and Ammunition im Geschäftsjahr 2025.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-827c64d441de8f6e"
+   ],
+   "evidence": "Auszug: Die wesentlichen Treiber für den gestiegenen Auftragseingang, der sich auf 6.736 MioEUR (2024: 6.237 MioEUR) erhöhte, waren Beauftragungen der nordischen Länder Dänemark, Finnland, Norwegen und Schweden.",
+   "location": "Bilanzvorlage 11. März 2026, PDF-S. 3, Abschnitt Weapon and Ammunition",
+   "uncertainty": "Produkte und Auftragswerte je Land nicht genannt.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-HU-01",
+   "statement": "Rheinmetall Hungary Zrt. (Zalaegerszeg) entwickelt und fertigt laut Rheinmetall Ketten- und Radfahrzeuge für die ungarischen Streitkräfte, insbesondere den Lynx; in der neuen Fabrik in Zalaegerszeg wird der Lynx produziert, der Vertrag umfasst 209 Lynx KF41, eine zweite Phase von 172 Lynx soll in einem Joint Venture in Ungarn produziert werden.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-479bad9fdf088fc9"
+   ],
+   "evidence": "Auszug: Der Schwerpunkt von Rheinmetall Hungary Zrt., mit Sitz in Zalaegerszeg, liegt auf der Entwicklung und Herstellung modernster Ketten- und Radfahrzeuge … Die vertragliche Vereinbarung umfasst 209 Lynx KF41 … In einer zweiten Phase sollen dann in Ungarn in einem Joint Venture 172 weitere Lynx … In der neuen Fabrik in Zalaegerszeg produziert Rheinmetall Hungary den Schützenpanzer Lynx",
+   "location": "Seite Rheinmetall Hungary Zrt., Absätze 1, 4–5 und 7",
+   "uncertainty": "Seite undatiert; aktuelle Ausbringung nicht angegeben.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-LT-01",
+   "statement": "Laut Invest Lithuania erfolgte am 4. November 2025 der Spatenstich für ein 155-mm-Artilleriemunitionswerk in Baisogala, betrieben vom Joint Venture Rheinmetall Defence Lietuva (Partner EPSO-G); die Inbetriebnahme ist frühestens 2026 geplant, mit Linienqualifikation zunächst bis Ende 2026. Das JV Lithuania Defence Services in Jonava wartet Gefechtsfahrzeuge u. a. der deutschen Panzerbrigade 45, anderer NATO-Armeen und der Ukraine.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5dad3a27cd832a61"
+   ],
+   "evidence": "Auszug: A new plant for the production of 155 mm artillery ammunition is being built in the Lithuanian municipality of Baisogala. It will be operated by the joint venture Rheinmetall Defence Lietuva. … broke ground on 4 November 2025. … The Lithuanian plant is scheduled to go into operation as early as 2026. Line qualification will initially take plac[e] … The Lithuania Defence Services joint venture in Jonava maintains combat vehicles for the German 45th Tank Brigade, other NATO armies and Ukraine.",
+   "location": "Invest Lithuania, 4. November 2025, Absätze 1–3 und 6",
+   "uncertainty": "Inbetriebnahmestatus zum Stichtag nicht belegt; laut Halbjahresmitteilung 2026 ist der Werksaufbau in Litauen noch Investitionsschwerpunkt (P-REG-UK-01, h1pm S. 3).",
+   "proposed_depth": "A",
+   "event_date": "2025-11-04",
+   "event_status": "im Bau"
+  },
+  {
+   "id": "P-REG-SEE-01",
+   "statement": "Laut Geschäftsbericht 2025 unterzeichnete Rheinmetall Ende Oktober 2025 einen JV-Vertrag mit VMZ (Bulgarien, Rheinmetall 51 %) für Artilleriegeschosse und energetische Materialien (Geschosshüllen ab 2027, energetische Materialien ab 2028 geplant), Anfang November 2025 einen JV-Vertrag mit Pirochim Victoria (Rumänien, 51 %) für Treibladungspulver und modulare Treibladungen (Produktionsstart 2028 geplant) und Ende September 2025 ein MoU mit der lettischen State Defence Corporation über eine 155-mm-Munitionsfabrik, die von einem noch zu gründenden JV betrieben werden soll.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "Geschäftsbericht 2025, PDF-S. 51; Geschäftsbericht 2025, PDF-S. 52",
+   "evidence_items": [
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "Rheinmetall und VMZ … haben Ende Oktober 2025 einen Joint Venture-Vertrag … unterzeichnet. Rheinmetall wird 51% und VMZ 49% … Fertigung der Geschosshüllen im Jahr 2027 … Energetische Materialien sollen ab 2028 … Rheinmetall und … Pirochim Victoria S.A. … Anfang November 2025 einen Joint Venture-Vertrag … Rheinmetall wird 51% … Der Start der Produktion … ist für das Jahr 2028 geplant.",
+     "mode": "Auszug",
+     "location": "Geschäftsbericht 2025, PDF-S. 51"
+    },
+    {
+     "source_id": "S-f4730b21412bb02a",
+     "text": "Ende September 2025 haben Rheinmetall und die lettische State Defence Corporation, LLC, ein Memorandum of Understanding über den Bau einer Produktionsanlage in Lettland für Artilleriemunition des Kalibers 155mm unterzeichnet. … von einem noch zu gründenden Joint Venture betrieben werden",
+     "mode": "Auszug",
+     "location": "Geschäftsbericht 2025, PDF-S. 52"
+    }
+   ],
+   "uncertainty": "Geplante Vorhaben; JV-Strukturen liegen beim Cluster.",
+   "proposed_depth": "A",
+   "event_status": "angekündigt/vertraglich vereinbart"
+  },
+  {
+   "id": "P-REG-RO-01",
+   "statement": "Laut Rheinmetall ist Rumänien bereits einer der Heimatmärkte, die Tochter Rheinmetall Automecanica (Medias) ist dort seit vielen Jahren aktiv; zur Umsetzung des 5,7-Mrd.-EUR-Pakets (Mai 2026) will Rheinmetall mehrere hundert Mio. EUR investieren und die Kapazitäten in Rumänien deutlich ausweiten, ein Großteil der Wertschöpfung soll lokal erfolgen.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-3dad8b811c925694"
+   ],
+   "evidence": "Auszug: Rheinmetall wird zur Realisierung der Aufträge seine bereits seit vielen Jahren in Rumänien vorhandenen Kapazitäten deutlich ausweiten und auch einen Technologietransfer gewährleisten. Ein Großteil der Wertschöpfung erfolgt lokal.",
+   "location": "Halbjahresfinanzbericht 2026, PDF-S. 10, „Lynx-Gefechtsfahrzeuge, Schiffe und Flugabwehr für Rumänien“",
+   "uncertainty": "Konkrete neue Standorte in Rumänien in den gelesenen Quellen nicht benannt.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-HR-01",
+   "statement": "Laut Halbjahresfinanzbericht 2026 hat Rheinmetall Ende Juni 2026 eine Mehrheitsbeteiligung von 51 % an DOK-ING d.o.o., Zagreb (Kroatien), erworben (Gründer Vjekoslav Majetić 49 %); das Unternehmen wird als Tochterunternehmen einbezogen und Vehicle Systems zugeordnet, Basis ist u. a. die schwere Hybrid-Plattform Komodo für unbemannte Bodensysteme.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-3dad8b811c925694"
+   ],
+   "evidence": "Auszug: Ende Juni 2026 hat Rheinmetall die Mehrheitsbeteiligung an DOK-ING d.o.o., Zagreb, Kroatien, erworben … Rheinmetall hält 51% des Unternehmens, der Gründer und bisherige Alleineigentümer des Unternehmens, Vjekoslav Majetić, 49% der Anteile. … Tochterunternehmen in den Rheinmetall-Konzern einbezogen und Vehicle Systems zugeordnet. … Hybrid-Plattform Komodo",
+   "location": "Halbjahresfinanzbericht 2026, PDF-S. 9, „Rheinmetall erwirbt Mehrheitsbeteiligung an DOK-ING“",
+   "uncertainty": "Tagesdatum nicht angegeben (Ende Juni 2026).",
+   "proposed_depth": "A",
+   "event_status": "erworben"
+  },
+  {
+   "id": "P-REG-PL-01",
+   "statement": "Laut Geschäftsbericht 2025 unterzeichneten PGZ und Rheinmetall im Oktober 2025 eine Absichtserklärung zur Gründung eines Joint Ventures für Unterstützungsfahrzeuge (Bergepanzer, Pionier- und Brückenlegefahrzeuge) für die polnischen Streitkräfte.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Auszug: Polska Grupa Zbrojeniowa S.A. (PGZ) und Rheinmetall haben im Oktober 2025 eine Absichtserklärung über eine strategische Zusammenarbeit im Bereich Unterstützungsfahrzeuge für die polnischen Streitkräfte unterzeichnet. Die Absichtserklärung zielt auf die Gründung eines Joint Ventures …",
+   "location": "Geschäftsbericht 2025, PDF-S. 51",
+   "uncertainty": "Absichtserklärung, kein operatives JV belegt.",
+   "proposed_depth": "A",
+   "event_status": "Absichtserklärung (Oktober 2025)"
+  },
+  {
+   "id": "P-REG-UA-01",
+   "statement": "Das Joint Venture Rheinmetall Ukrainian Defense Industry LLC (Kiew; Rheinmetall Landsysteme 51 %, UDI 49 %) ist laut Rheinmetall seit 18. Oktober 2023 operativ und setzt seit Juni 2024 in der Westukraine Gefechtsfahrzeuge instand; die Kooperation soll auf die gemeinsame Herstellung ausgewählter Rheinmetall-Produkte ausgeweitet werden.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2f18768b2b3d8649"
+   ],
+   "evidence": "Auszug: Die Rheinmetall Ukrainian Defense Industry LLC wurde als Joint Venture von dem ukrainischen Staatskonzern Ukrainian Defense Industry JSC … und Rheinmetall in Kiew gegründet und ist seit dem 18. Oktober 2023 operativ tätig. An dem Gemeinschaftsunternehmen hält die Rheinmetall Landsysteme GmbH 51% der Anteile, UDI ist mit 49% beteiligt. … Seit Juni 2024 werden unter dem Dach des Joint Ventures in der Westukraine Gefechtsfahrzeuge instandgesetzt und gewartet. … soll auch auf die gemeinsame Herstellung ausgewählter Rheinmetall-Produkte in der Ukraine ausgeweitet werden.",
+   "location": "Seite Rheinmetall Ukrainian Defense Industry LLC, Absätze 1, 3 und 5",
+   "uncertainty": "Konkreter Standort in der Westukraine nicht genannt; Produktionsaufnahme nicht belegt.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-US-01",
+   "statement": "Laut Rheinmetall beschäftigt American Rheinmetall mehr als 1.500 Mitarbeitende in Arkansas, Maine, Michigan, Ohio, Texas und Virginia; zur US-Unternehmensgruppe gehören American Rheinmetall in Auburn Hills, MI (Hauptsitz), Biddeford, ME, Lansing, Lapeer und Plymouth (MI), St. Marys (OH) und Vienna (VA) sowie American Rheinmetall Munitions in Camden (AR), Texarkana (TX, Expal USA), Vienna (VA, Hauptsitz) und Windham (ME). Im Werk Maine fertigt American Rheinmetall 3.104 MK93-Lafetten für die U.S. Army (Lieferungen 2026 bis Oktober 2027).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-47771a7dd8c927d5",
+    "S-d776dc827ba55608"
+   ],
+   "evidence": "Mehrere Belege, siehe evidence_items.",
+   "location": "AUSA-Pressemitteilung 12. Oktober 2026, Absatz 2; Rheinmetall-Mitteilung 30. September 2026, Absätze 1 und letzter Absatz",
+   "evidence_items": [
+    {
+     "source_id": "S-47771a7dd8c927d5",
+     "text": "Mit einer starken industriellen Basis in den Bundesstaaten Arkansas, Maine, Michigan, Ohio, Texas und Virginia sowie mehr als 1.500 US-Mitarbeitenden …",
+     "mode": "Auszug",
+     "location": "AUSA-Pressemitteilung 12. Oktober 2026, Absatz 2"
+    },
+    {
+     "source_id": "S-d776dc827ba55608",
+     "text": "American Rheinmetall wird in seinem Werk in Maine mehrere tausend verbesserte MK93-Softmount-Lafetten herstellen … Die Auslieferungen sollen 2026 beginnen und bis Oktober 2027 andauern. … Zur Rheinmetall-Unternehmensgruppe in den USA gehören American Rheinmetall in Auburn Hills, MI (Hauptsitz), Biddeford, ME, Lansing (MI), Lapeer (MI), Plymouth (MI) und St. Marys (OH) sowie Vienna (VA) und American Rheinmetall Munitions in Camden (AR), Texarkana (TX) (Expal USA), Vienna (VA) (Hauptsitz) und Windham (ME).",
+     "mode": "Auszug",
+     "location": "Rheinmetall-Mitteilung 30. September 2026, Absätze 1 und letzter Absatz"
+    }
+   ],
+   "uncertainty": "Funktionen je US-Standort nicht einzeln angegeben; Flugabwehr in den USA nur als AUSA-Exponat (Skyranger 30 auf Boxer) belegt.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-CA-01",
+   "statement": "Rheinmetall Canada (seit 1986, vormals Oerlikon Aerospace) beschäftigt laut Rheinmetall rund 400 Mitarbeitende in Saint-Jean-sur-Richelieu, Ottawa und Edmonton und bietet u. a. Fahrzeugsysteme und -integration, Waffen- und Flugabwehrsysteme, Führungs-, Soldaten- und autonome Systeme (Provectus Robotics Solutions) sowie In-Service-Support an.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4f9807383dbfe574"
+   ],
+   "evidence": "Auszug: Mit einer Belegschaft von rund 400 Mitarbeitern an den Standorten in Saint-Jean-sur-Richelieu bei Montréal, in Ottawa und Edmonton … Rheinmetall Canada bietet innovative Lösungen für Fahrzeugsysteme und -integration, Waffen- und Flugabwehrsysteme, Führungs-, Kommunikations-, Soldaten- und autonome Systeme sowie Bodenunterstützungsgeräte an.",
+   "location": "Seite Rheinmetall Canada – Über uns, Absätze 1–2",
+   "uncertainty": "Fertigungsumfang an den kanadischen Standorten nicht angegeben.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-AU-01",
+   "statement": "Rheinmetall Defence Australia (Hauptsitz Redbank, Queensland) betreibt laut Rheinmetall seit 2020 das Military Vehicle Centre of Excellence (MILVEHCOE) zur Entwicklung, Fertigung und Wartung militärischer Fahrzeuge, Plattformen und Türme, liefert von dort Boxer CRV (Land 400 Phase 2) und Logistik-Lkw (Land 121) an die ADF, fertigt Marineausrüstung (MASS) und ist zudem in Adelaide, Canberra, Melbourne, Townsville und Wellington (Neuseeland) ansässig; das JV Rheinmetall NIOA Munitions produziert in Maryborough Munition.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-3cb560602baefeec"
+   ],
+   "evidence": "Auszug: Im Jahr 2020 eröffnete Rheinmetall das Military Vehicle Centre of Excellence (MILVEHCOE) in Redbank, Queensland. … eine eigenständige nationale Kapazität zur Entwicklung, Fertigung und Wartung militärischer Fahrzeuge, Plattformen und Türme … Boxer 8x8 Combat Reconnaissance Vehicle (CRV) im Rahmen des Milliardenvorhabens Land 400 Phase 2 sowie hochmobile Logistikfahrzeuge … Land 121 Phase 3B/5B … MASS Multi-Ammunition Soft-Kill-System … Rheinmetall Defence Australia ist derzeit u.a. in Adelaide, Canberra, Melbourne, Townsville sowie Wellington in Neuseeland ansässig … Rheinmetall NIOA Munitions Pty Ltd, unser Standort in Maryborough, Queensland, ist Teil des Joint Ventures von Rheinmetall mit NIOA.",
+   "location": "Seite Rheinmetall Defence Australia, Absätze 2–7",
+   "uncertainty": "Laut Medienbericht (finanzen.net/Capital, August 2026; T-AD-06-Kontext) gab es Qualitätsprobleme und Verzug beim Radpanzerprogramm aus Australien; hier nicht vertieft.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-ZA-01",
+   "statement": "Rheinmetall Denel Munition (Pty) Ltd. ist laut Rheinmetall eine Tochter der Rheinmetall Waffe Munition GmbH (51 %) und der südafrikanischen Denel (49 %), spezialisiert auf Groß- und Mittelkalibermunition, Artillerie-, Mörser- und Infanteriesysteme sowie Anlagenbau, mit den Einheiten Somchem (Somerset West, Wellington), Swartklip, Naschem (Boskop bei Potchefstroom) und Boksburg (geschmiedete Geschosskörper); Absatzschwerpunkte neben Südafrika sind Asien, der Mittlere Osten und Südamerika.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-1f76748059d5008c"
+   ],
+   "evidence": "Auszug: Rheinmetall Denel Munition (Pty) Ltd. ist eine Tochtergesellschaft der Rheinmetall Waffe Munition GmbH (51 %) und der südafrikanischen Denel (Pty) Ltd., Pretoria. … Entwicklung, Konstruktion und Fertigung von Munitionsfamilien im Groß- und Mittelkaliber … engagiert sich … vor allem – neben Südafrika – in Asien, im Mittleren Osten und in Südamerika. … Somchem (Standorte Somerset West und Wellington), Swartklip, Boksburg und Naschem … Boskop in der Nähe von Potchefstroom … In Boksburg werden geschmiedete Geschosskörper und Metallkomponenten … hergestellt.",
+   "location": "Seite Rheinmetall Denel Munition, Absätze 1–3 und 6–7",
+   "uncertainty": "Standort Swartklip ohne Ortsangabe; aktuelle Auslastung nicht angegeben.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-ME-01",
+   "statement": "Laut Divisionsseite Digital Systems ist die Business Unit Global Business u. a. in Kanada, Norwegen, dem Vereinigten Königreich, Australien, Singapur, den Vereinigten Arabischen Emiraten und Saudi-Arabien aktiv.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-8004062626d5c0ad"
+   ],
+   "evidence": "Auszug: Sie ist in strategischen Märkten wie Kanada, Norwegen, dem Vereinigten Königreich, Australien, Singapur, den Vereinigten Arabischen Emiraten und Saudi-Arabien aktiv.",
+   "location": "Divisionsseite Digital Systems, Abschnitt „Global Business“",
+   "uncertainty": "Art der lokalen Präsenz (Büro, Partner, Kunde) in VAE und Saudi-Arabien nicht angegeben.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-SG-01",
+   "statement": "Rheinmetall Electronics Singapore Pte. Ltd. ist laut Rheinmetall eine 100-%-Tochter der Rheinmetall Electronics GmbH und Teil des Geschäftsbereichs Integrated Electronic Systems (Satellitenüberwachung, Simulation und Training, Missions-, Vision- und Feuerleitsysteme, C4I).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-19e53c95b8305269"
+   ],
+   "evidence": "Auszug: Rheinmetall Electronics Singapore Pte. Ltd. (RESG) ist eine 100%-Tochtergesellschaft der Rheinmetall Electronics GmbH in Deutschland und Teil des Geschäftsbereichs Integrated Electronics System (IES).",
+   "location": "Seite Rheinmetall Electronics Singapore, Absatz 1",
+   "uncertainty": "Lokale Fertigung nicht belegt.",
+   "proposed_depth": "A"
+  },
+  {
+   "id": "P-REG-IN-01",
+   "statement": "Laut Geschäftsbericht 2025 vereinbarten Rheinmetall und Reliance Defence Ltd. im Mai 2025 ein MoU für eine Munitionspartnerschaft, wonach Reliance Sprengstoffe und Treibmittel an Rheinmetall liefern und eine neue Produktionsstätte errichten soll.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "evidence": "Auszug: Rheinmetall und das indische Verteidigungsunternehmen Reliance Defence Ltd. haben im Mai 2025 ein Memorandum of Understanding für eine strategische Partnerschaft im Munitionsbereich vereinbart. … umfasst die Lieferung von Sprengstoffen und Treibmitteln … durch Reliance an Rheinmetall. … soll eine neue Produktionsstätte von Reliance Defence errichtet werden",
+   "location": "Geschäftsbericht 2025, PDF-S. 50",
+   "uncertainty": "MoU; Umsetzung nicht belegt.",
+   "proposed_depth": "A",
+   "event_status": "MoU (Mai 2025)"
+  }
+ ],
+ "source_proposals": [
+  {
+   "id": "S-a4d54f5d3aa32d9d",
+   "name": "Rheinmetall AG",
+   "title": "Unsere Divisionen im Überblick",
+   "url": "https://www.rheinmetall.com/de/unternehmen/divisionen",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-3ef169e9e35e0c9a",
+   "name": "Rheinmetall AG",
+   "title": "Division Air Defence",
+   "url": "https://www.rheinmetall.com/de/unternehmen/divisionen/air-defence",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-8004062626d5c0ad",
+   "name": "Rheinmetall AG",
+   "title": "Division Digital Systems",
+   "url": "https://www.rheinmetall.com/de/unternehmen/divisionen/digital-systems",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-93a2ee05910f4b53",
+   "name": "Rheinmetall AG",
+   "title": "Division Naval Systems",
+   "url": "https://www.rheinmetall.com/de/unternehmen/divisionen/naval-systems",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-747870b3bc879dff",
+   "name": "Rheinmetall AG",
+   "title": "Division Power Systems (nicht fortgeführte Geschäftsaktivitäten)",
+   "url": "https://www.rheinmetall.com/de/unternehmen/divisionen/power-systems",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-cc9cf45c8609a0d1",
+   "name": "Rheinmetall AG",
+   "title": "Division Vehicle Systems",
+   "url": "https://www.rheinmetall.com/de/unternehmen/divisionen/vehicle-systems",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-2b24723c99b5458a",
+   "name": "Rheinmetall AG",
+   "title": "Division Weapon and Ammunition",
+   "url": "https://www.rheinmetall.com/de/unternehmen/divisionen/weapon-and-ammunition",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-4d0e53f502fb320c",
+   "name": "Rheinmetall AG",
+   "title": "Über Rheinmetall – Internationaler Technologiekonzern und Systemhaus",
+   "url": "https://www.rheinmetall.com/de/unternehmen",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-5b8b39f37cd6b51d",
+   "name": "Rheinmetall AG",
+   "title": "Flugabwehrsysteme (Produktübersicht)",
+   "url": "https://www.rheinmetall.com/de/produkte/flugabwehrsysteme",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-5ae98f51c19ce9e2",
+   "name": "Rheinmetall AG",
+   "title": "Skyranger – Mobile Flugabwehr",
+   "url": "https://www.rheinmetall.com/de/produkte/flugabwehrsysteme/mobile-flugabwehr-skyranger",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-31c2ac5b48b0cde3",
+   "name": "Rheinmetall AG",
+   "title": "Skynex – Vernetzte Flugabwehr",
+   "url": "https://www.rheinmetall.com/de/produkte/flugabwehrsysteme/vernetzte-flugabwehr-skynex",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-4faa3a733781f031",
+   "name": "Rheinmetall AG",
+   "title": "Skymaster – Führungssystem für die Flugabwehr",
+   "url": "https://www.rheinmetall.com/de/produkte/flugabwehrsysteme/fuehrungssysteme-skymaster",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-860fb5a5ec516912",
+   "name": "Rheinmetall AG",
+   "title": "Drohnenabwehr Toolbox",
+   "url": "https://www.rheinmetall.com/de/produkte/flugabwehrsysteme/drohnenabwehr-toolbox",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-d5ab9c70470a478d",
+   "name": "Rheinmetall AG",
+   "title": "Stationäre Flugabwehr – Skyguard, Skyshield, X-TAR3D",
+   "url": "https://www.rheinmetall.com/de/produkte/flugabwehrsysteme/stationaere-flugabwehr",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-310ddb82949667f5",
+   "name": "Rheinmetall AG",
+   "title": "Marinegestützte Flugabwehr",
+   "url": "https://www.rheinmetall.com/de/produkte/flugabwehrsysteme/marinegestuetzte-flugabwehr",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-18ce19a1fbbec148",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Air Defence AG – Über uns",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-air-defence/ueber-uns",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-f927b29c83eb84ce",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Italia S.p.A.",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-italia",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-3cb560602baefeec",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Defence Australia Pty Ltd",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-defence-australia",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-cf7e773278387ae1",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall BAE Systems Land Limited",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-bae-systems-land-limited",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-1f76748059d5008c",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Denel Munition (Pty) Ltd.",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-denel-munition",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-4f9807383dbfe574",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Canada – Über uns",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-canada/ueber-uns",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-479bad9fdf088fc9",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Hungary Zrt.",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-hungary-zrt",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-2f18768b2b3d8649",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Ukrainian Defense Industry LLC",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-ukrainian-defense-industry",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-7d3cceefdfc28f58",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Expal Munitions S.A.U.",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-expal-munitions",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-19e53c95b8305269",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall Electronics Singapore Pte. Ltd.",
+   "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-electronics-singapore",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-f4730b21412bb02a",
+   "name": "Rheinmetall AG",
+   "title": "Geschäftsbericht 2025",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/GB/Rheinmetall-Geschaeftsbericht-2025.pdf",
+   "published_date": "2026-03-11",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Originalbericht",
+   "report_year": 2025,
+   "page": "PDF-Seiten = gedruckte Seiten (Stichprobe S. 24, 31, 38–40, 49–53, 64–65, 92, 264–271 geprüft)",
+   "section": "Zusammengefasster Lagebericht; Konzernanhang (39)–(42) inkl. Anteilsbesitzliste"
+  },
+  {
+   "id": "S-3dad8b811c925694",
+   "name": "Rheinmetall AG",
+   "title": "Halbjahresfinanzbericht H1 2026",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q2/Rheinmetall-Halbjahresfinanzbericht-2026.pdf",
+   "published_date": "2026-08-06",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Originalbericht",
+   "report_year": 2026,
+   "page": "PDF-Seiten = gedruckte Seiten (S. 8–10, 17, 20, 42, 46 geprüft)",
+   "section": "Zwischenlagebericht: Wesentliche Ereignisse bis 30.06.2026; Segment Air Defence; Anhang (13)"
+  },
+  {
+   "id": "S-5f102cfea2da2738",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall im ersten Halbjahr: Starkes Umsatzwachstum und Profitabilität auf Rekordniveau",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/08/2026-08-06-Rheinmetall-Pressemitteilung-Halbjahresfinanzbericht-H1.pdf",
+   "published_date": "2026-08-06",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe",
+   "report_year": 2026
+  },
+  {
+   "id": "S-827c64d441de8f6e",
+   "name": "Rheinmetall AG",
+   "title": "Bilanzvorlage: Rheinmetall treibt Expansion voran und bleibt auf Erfolgskurs",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/03/2026-03-11-Rheinmetall-Bilanzvorlage-Geschaeftsjahr-2025.pdf",
+   "published_date": "2026-03-11",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe",
+   "report_year": 2025
+  },
+  {
+   "id": "S-e6f358904e19e4e8",
+   "name": "Rheinmetall AG",
+   "title": "Investor Presentation September 2026",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q2/Rheinmetall-Investor-Presentation-2026-September.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe",
+   "section": "Foliensatz „© Rheinmetall AG I September 2026“; Veröffentlichungstag nicht angegeben"
+  },
+  {
+   "id": "S-4a13b2786b5cc66a",
+   "name": "Rheinmetall AG",
+   "title": "Q3 Analyst and Investor Recap Document (5. Oktober 2026)",
+   "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q3/2026-10-05-Rheinmetall-Q3-Analyst-and-Investor-Recap-Document.pdf",
+   "published_date": "2026-10-05",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe",
+   "page": "PDF-Seite 1"
+  },
+  {
+   "id": "S-eadffcced857ac38",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall to supply Leopard 1 Skyranger 35 to Ukraine",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/10/2025-10-10-rheinmetall-skyranger-35-ukraine",
+   "published_date": "2025-10-10",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-b003618b3ae9eba2",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall is supplying four Skynex systems to an international customer",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/07/2026-07-02-rheinmetall-is-supplying-four-skynex-systems-to-an-international-customer",
+   "published_date": "2026-07-02",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-c0d13e5db6387716",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall showcases its cutting-edge Skyranger air defence system at ILA 2026",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-10-rheinmetall-showcases-its-cutting-edge-skyranger-air-defence-system-at-ila-2026",
+   "published_date": "2026-06-10",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-b8a3496f93a22c8c",
+   "name": "Rheinmetall AG",
+   "title": "Mobile air defence: Rheinmetall to supply the Bundeswehr with Skyranger 30 on Boxer platform",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/02/2024-02-27-bundeswehr-ordered-skyranger-30-mobile-air-defence-system",
+   "published_date": "2024-02-27",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-d1aafc1c9b0f1a75",
+   "name": "Rheinmetall AG",
+   "title": "Major order from Denmark: Rheinmetall to supply Skyranger 30 for mobile air defence",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/09/2024-09-30-rheinmetall-supplies-skyranger-30-for-denmark-s-mobile-air-defense-system",
+   "published_date": "2024-09-30",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-ed85256fd87c2a74",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall und Praetorian Aeronautics liefern das containerisierte AERIE-System zur Abwehr unbemannter Fluggeräte",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/10/2026-10-07-rheinmetall-und-praetorian-aeronautics-liefern-containerisiertes-drohnenabwehrsystem-aerie",
+   "published_date": "2026-10-07",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-ddb1d21cd09da6cf",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall eröffnet neuen Standort in Skoppum – Ausbau der Entwicklungs- und Produktionskapazitäten in Norwegen",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/10/2026-10-01-rheinmetall-nordic-eroeffnet-neuen-standort",
+   "published_date": "2026-10-01",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-47771a7dd8c927d5",
+   "name": "Rheinmetall AG",
+   "title": "AUSA 2026: American Rheinmetall präsentiert zukunftsweisende, moderne Technologien für die künftigen Einsätze der U.S. Army",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/10/2026-10-12-american-rheinmetall-auf-der-ausa-2026",
+   "published_date": "2026-10-12",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-d776dc827ba55608",
+   "name": "Rheinmetall AG",
+   "title": "American Rheinmetall liefert verbesserte MK93-Softmount-Lafetten an die U.S. Army",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/09/2026-09-30-american-rheinmetall-liefert-mk93-lafetten-an-die-us-army",
+   "published_date": "2026-09-30",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-513daa2ae2be3e14",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall – ein starker Partner an der Seite der Ukraine (Story)",
+   "url": "https://www.rheinmetall.com/de/media/stories/2026/rheinmetall-ein-starker-partner-an-der-seite-der-ukraine",
+   "published_date": null,
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe",
+   "section": "Story 2026; Tagesdatum nicht angegeben"
+  },
+  {
+   "id": "S-2185a7a52eb76e0d",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall und Hensoldt demonstrieren erfolgreiche Integration passiver Sensortechnologie in modernes Luftverteidigungssystem",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/08/2026-08-19-rheinmetall-und-hensoldt-demonstrieren-erfolgreiche-integration-passiver-sensortechnologie",
+   "published_date": "2026-08-19",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-6ceae77f0e11c121",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall successfully demonstrates drone defence capabilities in Finland",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-16-rheinmetall-demonstrates-drone-defence-capabilities-in-finland",
+   "published_date": "2025-12-16",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-f562ccee195198fd",
+   "name": "Rheinmetall AG / Diehl Defence / Hensoldt",
+   "title": "Startschuss für das hochmoderne Luftverteidigungssystem Nah- und Nächstbereichsschutz erfolgt – Entwicklungsauftrag erteilt",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2024/01/2024-01-25-startschuss-fuer-luftverteidigungssystem-nnbs",
+   "published_date": "2024-01-25",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-6410acb24c745d46",
+   "name": "Sicherheit & Verteidigung (suv.report)",
+   "title": "Skyranger 30: Auslieferung ab Q4 2027",
+   "url": "https://suv.report/skyranger-30-auslieferung-ab-q4-2027/",
+   "published_date": "2026-06-15",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Sekundärquelle (Fachmedium)"
+  },
+  {
+   "id": "S-92d7be3f0dda7317",
+   "name": "ESUT – Europäische Sicherheit & Technik",
+   "title": "Rheinmetall und MBDA realisieren das Laserwaffensystem für die Deutsche Marine",
+   "url": "https://esut.de/2026/07/meldungen/72696/rheinmetall-und-mbda-realisieren-das-laserwaffensystem-fuer-die-deutsche-marine/",
+   "published_date": "2026-07-10",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Sekundärquelle (Fachmedium)"
+  },
+  {
+   "id": "S-957ebff673ab8d20",
+   "name": "Defense News",
+   "title": "Rheinmetall Italia touts Ukraine deployment of Skynex air defense gun",
+   "url": "https://www.defensenews.com/global/europe/2024/01/26/rheinmetall-italia-touts-ukraine-deployment-of-skynex-air-defense-gun/",
+   "published_date": "2024-01-26",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Sekundärquelle (Fachmedium)"
+  },
+  {
+   "id": "S-d7c2de50db0d079d",
+   "name": "Berliner Zeitung",
+   "title": "Rheinmetall-Chef: Flugabwehrsystem erfolgreich im Ukraine-Krieg – doch handfeste Belege fehlen",
+   "url": "https://www.berliner-zeitung.de/article/rheinmetall-chef-flugabwehrsystem-erfolgreich-im-ukraine-krieg-doch-handfeste-belege-fehlen-10004755",
+   "published_date": "2025-11-09",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Sekundärquelle (Nachrichtenmedium)"
+  },
+  {
+   "id": "S-168108fb27118dde",
+   "name": "Defence Network",
+   "title": "Deutsche Skyranger-Produktion kommt nach Neuss",
+   "url": "https://defence-network.com/deutsche-skyranger-produktion-kommt-nach-neuss/",
+   "published_date": "2025-11-27",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-5dad3a27cd832a61",
+   "name": "Invest Lithuania",
+   "title": "Groundbreaking ceremony in Baisogala: Rheinmetall and Lithuania build artillery ammunition plant on NATO's eastern flank",
+   "url": "https://investlithuania.com/news/groundbreaking-ceremony-in-baisogala-rheinmetall-and-lithuania-build-artillery-ammunition-plant-on-natos-eastern-flank/",
+   "published_date": "2025-11-04",
+   "accessed_date": "2026-10-13",
+   "source_kind": "Behörden-/Investitionsagenturangabe"
+  }
+ ],
+ "reuse_claim_ids": [
+  "T-SEG-01",
+  "T-SEG-02",
+  "T-EV-08",
+  "T-FIN-09",
+  "T-ID-03",
+  "T-AD-01",
+  "T-AD-03",
+  "T-AD-05",
+  "T-AD-06",
+  "T-AD-07",
+  "T-EV-01",
+  "T-EV-04",
+  "T-EV-05",
+  "T-EV-06",
+  "T-EV-07",
+  "T-EV-10",
+  "T-EV-03",
+  "T-FIN-04",
+  "T-EV-09",
+  "C-005",
+  "C-007",
+  "C-009",
+  "C-018",
+  "C-028",
+  "C-029",
+  "C-037",
+  "C-042",
+  "C-053"
+ ],
+ "products": [
+  {
+   "id": "skyranger30",
+   "label": "Skyranger 30 (u. a. auf Boxer, Pandur EVO, Piranha/8x8, Lynx; Turm-/Plattformvarianten)",
+   "short_label": "Skyranger 30",
+   "domain": "Flugabwehr – Systeme",
+   "claim_ids": [
+    "P-SKR-02",
+    "P-SKR-03",
+    "P-SKR-05",
+    "T-AD-05"
+   ],
+   "sections": [
+    {
+     "label": "Systemmerkmale (Herstellerangabe)",
+     "claim_ids": [
+      "P-SKR-01",
+      "P-SKR-07"
+     ]
+    },
+    {
+     "label": "Weitere Kundenprogramme und Ausblick",
+     "claim_ids": [
+      "T-EV-04",
+      "P-SKR-04",
+      "T-AD-07",
+      "T-AD-06"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "skyranger35",
+   "label": "Skyranger 35 (auf Leopard 1 für die Ukraine; auf Lynx KF41 für Rumänien)",
+   "short_label": "Skyranger 35",
+   "domain": "Flugabwehr – Systeme",
+   "claim_ids": [
+    "P-SKR-06",
+    "T-EV-07"
+   ],
+   "sections": [
+    {
+     "label": "Systemmerkmale (Herstellerangabe)",
+     "claim_ids": [
+      "P-SKR-01"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "skynex",
+   "label": "Oerlikon Skynex (vernetztes Nahbereichs-Flugabwehrsystem)",
+   "short_label": "Skynex",
+   "domain": "Flugabwehr – Systeme",
+   "claim_ids": [
+    "P-SKX-02",
+    "T-EV-05",
+    "T-EV-10"
+   ],
+   "sections": [
+    {
+     "label": "Architektur (Herstellerangabe)",
+     "claim_ids": [
+      "P-SKX-01",
+      "P-SKX-05"
+     ]
+    },
+    {
+     "label": "Einsatz Ukraine: Herstellerangaben und Gegenrecherche",
+     "claim_ids": [
+      "P-SKX-04",
+      "P-SKX-03"
+     ]
+    },
+    {
+     "label": "Weitere Kundenprogramme",
+     "claim_ids": [
+      "T-EV-07"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "skyguard_skyshield",
+   "label": "Stationäre Flugabwehr Skyguard 3 / Skyshield",
+   "short_label": "Skyguard/Skyshield",
+   "domain": "Flugabwehr – Systeme",
+   "claim_ids": [
+    "P-STAT-01"
+   ]
+  },
+  {
+   "id": "cuas_toolbox",
+   "label": "Drohnenabwehr-Toolbox inkl. Skyspotter, Jammer und qualifizierte Fliegerabwehr",
+   "short_label": "C-UAS/Skyspotter",
+   "domain": "Flugabwehr – Systeme",
+   "claim_ids": [
+    "P-CUAS-01",
+    "P-CUAS-02",
+    "C-028"
+   ],
+   "sections": [
+    {
+     "label": "Kostenbeispiel (Herstellerangabe)",
+     "claim_ids": [
+      "P-SKX-05"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "aerie",
+   "label": "AERIE – containerisierter C-UAS-Werfer (mit Praetorian Aeronautics, Australien)",
+   "short_label": "AERIE",
+   "domain": "Flugabwehr – Systeme",
+   "claim_ids": [
+    "P-CUAS-03"
+   ]
+  },
+  {
+   "id": "nnbs",
+   "label": "LVS Nah- und Nächstbereichsschutz (NNbS, ARGE-Entwicklung für die Bundeswehr)",
+   "short_label": "NNbS",
+   "domain": "Flugabwehr – Systeme",
+   "claim_ids": [
+    "C-009",
+    "C-018"
+   ]
+  },
+  {
+   "id": "revolver_gun_mk3",
+   "label": "Oerlikon Revolver Gun Mk3 (35 mm)",
+   "short_label": "Revolver Gun Mk3",
+   "domain": "Flugabwehr – Sensoren, Effektoren & C2",
+   "claim_ids": [
+    "P-RGM-01"
+   ]
+  },
+  {
+   "id": "ahead",
+   "label": "AHEAD-/Airburst-Munition (35 mm, 30 mm)",
+   "short_label": "AHEAD-Munition",
+   "domain": "Flugabwehr – Sensoren, Effektoren & C2",
+   "claim_ids": [
+    "P-AHD-01",
+    "P-SKR-01"
+   ],
+   "sections": [
+    {
+     "label": "Lieferungen Mittelkalibermunition Ukraine (Herstellerangabe)",
+     "claim_ids": [
+      "P-SKX-04"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "xtar3d",
+   "label": "Oerlikon X-TAR3D Such- und Erfassungsradar",
+   "short_label": "X-TAR3D",
+   "domain": "Flugabwehr – Sensoren, Effektoren & C2",
+   "claim_ids": [
+    "P-SNS-01"
+   ]
+  },
+  {
+   "id": "msu",
+   "label": "Oerlikon Multi Sensor Unit (MSU)",
+   "short_label": "MSU",
+   "domain": "Flugabwehr – Sensoren, Effektoren & C2",
+   "claim_ids": [
+    "P-SNS-02"
+   ]
+  },
+  {
+   "id": "skymaster",
+   "label": "Oerlikon Skymaster Führungs- und Waffeneinsatzsystem (C2)",
+   "short_label": "Skymaster C2",
+   "domain": "Flugabwehr – Sensoren, Effektoren & C2",
+   "claim_ids": [
+    "P-SKM-01",
+    "C-029"
+   ]
+  },
+  {
+   "id": "skyknight",
+   "label": "SkyKnight C-RAM/C-PGM-Lenkwaffe und Werfer",
+   "short_label": "SkyKnight",
+   "domain": "Flugabwehr – Sensoren, Effektoren & C2",
+   "claim_ids": [
+    "P-SKN-01"
+   ]
+  },
+  {
+   "id": "naval_ad",
+   "label": "Marine-Flugabwehr: Millennium Gun, Searanger 20, Seaguard Biax",
+   "short_label": "Marine-Flugabwehr",
+   "domain": "Flugabwehr – Sensoren, Effektoren & C2",
+   "claim_ids": [
+    "P-NAV-01"
+   ]
+  },
+  {
+   "id": "hel_naval",
+   "label": "Hochenergie-Laserwaffensystem Marine (mit MBDA)",
+   "short_label": "HEL Marine",
+   "domain": "Flugabwehr – Sensoren, Effektoren & C2",
+   "claim_ids": [
+    "P-HEL-01"
+   ],
+   "sections": [
+    {
+     "label": "Laser im Konzernportfolio",
+     "claim_ids": [
+      "P-AD-04",
+      "P-AD-05"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tracked_ifv",
+   "label": "Kettenfahrzeuge: Lynx KF41, Puma, Marder, XM30, Panther KF51",
+   "short_label": "Lynx/Puma/Panther",
+   "domain": "Fahrzeugsysteme",
+   "claim_ids": [
+    "P-VS-01",
+    "P-VS-02",
+    "P-VS-03"
+   ],
+   "sections": [
+    {
+     "label": "USA: XM30",
+     "claim_ids": [
+      "P-VS-04"
+     ]
+    },
+    {
+     "label": "Fertigung Ungarn",
+     "claim_ids": [
+      "P-REG-HU-01"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wheeled",
+   "label": "Radfahrzeuge: Boxer, Fuchs, 4x4 (Caracal, Survivor R, Shadow Wolf)",
+   "short_label": "Boxer/Fuchs/4x4",
+   "domain": "Fahrzeugsysteme",
+   "claim_ids": [
+    "P-VS-01",
+    "P-VS-02"
+   ],
+   "sections": [
+    {
+     "label": "Boxer und Challenger 3 in Großbritannien (RBSL)",
+     "claim_ids": [
+      "P-REG-UK-01"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "logistic",
+   "label": "Logistikfahrzeuge HX und TG-MIL (RMMV)",
+   "short_label": "HX/TG-MIL",
+   "domain": "Fahrzeugsysteme",
+   "claim_ids": [
+    "P-VS-01",
+    "P-VS-02"
+   ]
+  },
+  {
+   "id": "ugv",
+   "label": "Unbemannte Bodensysteme (Mission Master, Ox, MUSKOX, DOK-ING Komodo u. a.)",
+   "short_label": "UGV",
+   "domain": "Fahrzeugsysteme",
+   "claim_ids": [
+    "P-VS-05",
+    "P-REG-HR-01"
+   ]
+  },
+  {
+   "id": "artillery_ammo",
+   "label": "Artillerie-, Panzer- und Mittelkalibermunition inkl. Treibladungen",
+   "short_label": "Munition",
+   "domain": "Waffe, Munition & Schutz",
+   "claim_ids": [
+    "P-WA-01",
+    "P-WA-02",
+    "P-WA-03"
+   ],
+   "sections": [
+    {
+     "label": "Internationale Munitionsstandorte",
+     "claim_ids": [
+      "P-REG-ES-01",
+      "P-REG-ZA-01",
+      "P-REG-SEE-01",
+      "P-REG-LT-01"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "weapons",
+   "label": "Waffenanlagen: Maschinenkanonen, Glattrohr, Artillerie-/Mörsersysteme",
+   "short_label": "Waffenanlagen",
+   "domain": "Waffe, Munition & Schutz",
+   "claim_ids": [
+    "P-WA-01"
+   ]
+  },
+  {
+   "id": "protection",
+   "label": "Schutzsysteme (passiv, aktiv, hybrid) und Projects & Services",
+   "short_label": "Schutz/Services",
+   "domain": "Waffe, Munition & Schutz",
+   "claim_ids": [
+    "P-WA-01"
+   ]
+  },
+  {
+   "id": "digitalization",
+   "label": "Digitalisierung: TaWAN, D-LBO, IdZ-ES/Gladius, Battlesuite",
+   "short_label": "TaWAN/D-LBO/IdZ",
+   "domain": "Digitalisierung, Luft & Weltraum",
+   "claim_ids": [
+    "P-DS-01",
+    "P-DS-02"
+   ]
+  },
+  {
+   "id": "loitering",
+   "label": "Loitering Munition FV-014 und Drohnenfertigung (Hero-Linie Italien)",
+   "short_label": "FV-014/Drohnen",
+   "domain": "Digitalisierung, Luft & Weltraum",
+   "claim_ids": [
+    "P-DS-03",
+    "P-DS-05"
+   ]
+  },
+  {
+   "id": "f35_fuselage",
+   "label": "F-35-Rumpfmittelteile (Werk Weeze)",
+   "short_label": "F-35-Rumpf",
+   "domain": "Digitalisierung, Luft & Weltraum",
+   "claim_ids": [
+    "P-DS-04"
+   ]
+  },
+  {
+   "id": "space_sar",
+   "label": "SAR-Satelliten und Aufklärungsdaten (Rheinmetall ICEYE Space Solutions)",
+   "short_label": "SAR-Satelliten",
+   "domain": "Digitalisierung, Luft & Weltraum",
+   "claim_ids": [
+    "P-DS-01",
+    "C-042"
+   ]
+  },
+  {
+   "id": "defence_electronics",
+   "label": "Defence Electronics: Waffenstationen, Sensorik, Elektrooptik, Simulation",
+   "short_label": "Defence Electronics",
+   "domain": "Digitalisierung, Luft & Weltraum",
+   "claim_ids": [
+    "P-DS-01"
+   ],
+   "sections": [
+    {
+     "label": "Norwegen (Rheinmetall Nordic)",
+     "claim_ids": [
+      "P-REG-NO-01"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "naval_ships",
+   "label": "Marineschiffbau und Service (K130, F126-Beteiligung beendet, FDB424, MBV707, MMPV90)",
+   "short_label": "Marineschiffe",
+   "domain": "Marine / Schiffbau",
+   "claim_ids": [
+    "P-NS-01",
+    "P-NS-02",
+    "P-NS-03",
+    "T-EV-09"
+   ]
+  },
+  {
+   "id": "power_systems",
+   "label": "Power Systems (Automotive-/Industriekomponenten; Verkauf an AEQUITA vereinbart)",
+   "short_label": "Power Systems",
+   "domain": "Zivil (nicht fortgeführt)",
+   "claim_ids": [
+    "P-PS-01",
+    "P-STR-03"
+   ]
+  }
+ ],
+ "topics": [
+  {
+   "id": "air_defence",
+   "label": "Flugabwehr: Technologien, industrielle Anforderungen und Wettbewerbsposition",
+   "headline": "Systeme, Kundenprogramme und Fertigungsausbau der Flugabwehr",
+   "preview": "Kanonenbasierte V-SHORAD (Skyranger, Skynex) mit Sensoren, C2, AHEAD; ~400 Systeme p. a. bis 2027 als Ziel; Bundeswehr-Serie laut S&V ab Q4 2027.",
+   "claim_ids": [
+    "P-AD-01",
+    "P-AD-04",
+    "P-AD-07",
+    "P-AD-08",
+    "P-SKR-03"
+   ],
+   "sections": [
+    {
+     "label": "Produktfamilien und Systemarchitektur (Herstellerangaben)",
+     "claim_ids": [
+      "P-AD-03",
+      "P-SKR-01",
+      "P-SKX-01",
+      "P-SKM-01",
+      "P-SNS-01",
+      "P-SNS-02",
+      "P-RGM-01",
+      "P-AHD-01"
+     ]
+    },
+    {
+     "label": "Kundenprogramme und Lieferstatus",
+     "claim_ids": [
+      "P-SKR-02",
+      "P-SKR-05",
+      "P-SKR-06",
+      "P-SKX-02",
+      "P-SKR-04",
+      "T-AD-05",
+      "T-EV-04",
+      "T-EV-05",
+      "T-EV-07",
+      "T-EV-10"
+     ]
+    },
+    {
+     "label": "Drohnenabwehr, Laser und Vernetzung",
+     "claim_ids": [
+      "P-CUAS-01",
+      "P-CUAS-02",
+      "P-CUAS-03",
+      "P-HEL-01",
+      "C-029",
+      "C-009",
+      "P-AD-05"
+     ]
+    },
+    {
+     "label": "Industrielle Basis und Standorte",
+     "claim_ids": [
+      "P-REG-CH-01",
+      "P-REG-IT-01",
+      "C-053",
+      "P-AD-09",
+      "P-AD-06"
+     ]
+    },
+    {
+     "label": "Gegenrecherche und Zeitplanabweichungen",
+     "claim_ids": [
+      "P-SKX-03",
+      "T-AD-06"
+     ]
+    }
+   ]
+  }
+ ],
+ "regional_presence": [
+  {
+   "id": "R-DE",
+   "label": "Deutschland",
+   "countries": [
+    "Deutschland"
+   ],
+   "presence_type": "Konzernsitz, Produktion (u. a. Flugabwehr Neuss), Werften, Entwicklung",
+   "geographic_scope": "Deutschland; größte Standorte laut Rheinmetall, nicht vollständige Standortliste.",
+   "product_scope": "Alle fünf fortgeführten Divisionen; Flugabwehr-Produktion Neuss, Flugabwehr/Elektronik Bremen.",
+   "focus": true,
+   "claim_ids": [
+    "P-REG-DE-01",
+    "P-AD-01",
+    "P-REG-OWN-01",
+    "P-AD-08",
+    "P-WA-03",
+    "T-EV-01",
+    "C-009",
+    "P-DS-04",
+    "P-REG-JV-01",
+    "P-VS-01",
+    "P-NS-01",
+    "P-NS-02",
+    "T-FIN-04"
+   ],
+   "activities": [
+    {
+     "id": "A-DE-DUS",
+     "actor": "Rheinmetall AG",
+     "country": "Deutschland",
+     "location": "Düsseldorf",
+     "product_scope": "Konzernsteuerung (Managementholding)",
+     "description": "Konzernzentrale und Sitz der Managementholding.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-DE-01"
+     ],
+     "site_id": "S-DE-DUS",
+     "ownership_note": "Sitz der Muttergesellschaft Rheinmetall AG laut Rheinmetall."
+    },
+    {
+     "id": "A-DE-NEU",
+     "actor": "Rheinmetall Air Defence Germany GmbH / Rheinmetall-Konzern",
+     "country": "Deutschland",
+     "location": "Neuss",
+     "product_scope": "Flugabwehr, Drohnen, Satelliten",
+     "description": "Von Rheinmetall als Production Site der Division Air Defence sowie als Standort für Drohnen und Satelliten genannt; deutsche Skyranger-Kapazität ~100 p. a. mit SOP Q3/2026 als Ziel.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-AD-01",
+      "P-REG-DE-01",
+      "P-REG-OWN-01",
+      "P-AD-08"
+     ],
+     "site_id": "S-DE-NEU",
+     "ownership_note": "Rheinmetall Air Defence Germany GmbH, Neuss: 100 % (indirekt) laut Anteilsbesitzliste 2025; Flugabwehr-Serienfertigung in Neuss nur als Kapazitätsziel belegt."
+    },
+    {
+     "id": "A-DE-UNT",
+     "actor": "Rheinmetall Waffe Munition GmbH",
+     "country": "Deutschland",
+     "location": "Unterlüß",
+     "product_scope": "Munition (155 mm), Fahrzeuge; Raketenmotoren geplant",
+     "description": "Munitionswerk „Niedersachsen“ seit August 2025 in Betrieb; Fahrzeug- und Munitionsstandort laut Rheinmetall.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2025-08-27",
+     "claim_ids": [
+      "P-WA-03",
+      "P-REG-DE-01",
+      "P-REG-OWN-01",
+      "T-EV-01"
+     ],
+     "site_id": "S-DE-UNT",
+     "ownership_note": "Rheinmetall Waffe Munition GmbH (Sitz Südheide): 100 % laut Anteilsbesitzliste 2025."
+    },
+    {
+     "id": "A-DE-BRE",
+     "actor": "Rheinmetall Electronics GmbH / Rheinmetall-Konzern",
+     "country": "Deutschland",
+     "location": "Bremen",
+     "product_scope": "Soldatensysteme, Elektronik, Flugabwehr, Schiffbau",
+     "description": "Von Rheinmetall als einer der größten deutschen Standorte genannt; Rheinmetall Electronics (Bremen) ist Mitglied der ARGE NNbS.",
+     "kind": "development",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-DE-01",
+      "P-REG-OWN-01",
+      "C-009"
+     ],
+     "site_id": "S-DE-BRE",
+     "ownership_note": "Rheinmetall Electronics GmbH, Bremen: 100 % laut Anteilsbesitzliste 2025; Funktionsmix laut Investor-Folie."
+    },
+    {
+     "id": "A-DE-WEE",
+     "actor": "Rheinmetall Aviation Services GmbH",
+     "country": "Deutschland",
+     "location": "Weeze",
+     "product_scope": "F-35-Rumpfmittelteile",
+     "description": "Werk Weeze; Fertigung von F-35-Rumpfmittelteilen seit Juli 2025 angelaufen, erste Auslieferung ab 2027 geplant.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-DS-04",
+      "P-REG-DE-01"
+     ],
+     "site_id": "S-DE-WEE",
+     "ownership_note": "Laut Geschäftsbericht 2025 Werk der Rheinmetall Aviation Services GmbH; Beteiligungsquote in den gelesenen Auszügen nicht geprüft."
+    },
+    {
+     "id": "A-DE-KAS",
+     "actor": "Rheinmetall-Konzern",
+     "country": "Deutschland",
+     "location": "Kassel",
+     "product_scope": "Fahrzeuge",
+     "description": "Von Rheinmetall als großer Fahrzeugstandort genannt.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-DE-01"
+     ],
+     "site_id": "S-DE-KAS",
+     "ownership_note": "Konzernstandort laut Investor-Folie; Rechtsträger am Standort nicht einzeln belegt."
+    },
+    {
+     "id": "A-DE-KIE",
+     "actor": "Rheinmetall-Konzern",
+     "country": "Deutschland",
+     "location": "Kiel",
+     "product_scope": "Fahrzeuge, Elektronik",
+     "description": "Von Rheinmetall als großer Standort für Fahrzeuge und Elektronik genannt.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-DE-01"
+     ],
+     "site_id": "S-DE-KIE",
+     "ownership_note": "Konzernstandort laut Investor-Folie; Rechtsträger am Standort nicht einzeln belegt."
+    },
+    {
+     "id": "A-DE-MUC",
+     "actor": "Rheinmetall MAN Military Vehicles GmbH",
+     "country": "Deutschland",
+     "location": "München",
+     "product_scope": "Logistik-/Militärfahrzeuge (HX, TG-MIL)",
+     "description": "Von Rheinmetall als Fahrzeugstandort genannt; RMMV ist Träger der HX-/TG-MIL-Familie.",
+     "kind": "production",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-DE-01",
+      "P-REG-JV-01",
+      "P-VS-01"
+     ],
+     "ownership_note": "Rheinmetall MAN Military Vehicles GmbH, München: 51 % (direkt) laut Anteilsbesitzliste 2025; Partner/Kontrollrechte beim Cluster."
+    },
+    {
+     "id": "A-DE-HH-BV",
+     "actor": "NVL B.V. & Co. KG (Blohm+Voss)",
+     "country": "Deutschland",
+     "location": "Hamburg (Blohm+Voss)",
+     "product_scope": "Marineschiffbau und Reparatur",
+     "description": "Werft der Division Naval Systems.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-02-27",
+     "claim_ids": [
+      "P-NS-01",
+      "P-NS-02"
+     ],
+     "site_id": "S-DE-HH-BV",
+     "ownership_note": "NVL zu 100 % von Rheinmetall Naval Systems GmbH erworben (27. Februar 2026)."
+    },
+    {
+     "id": "A-DE-HH-NW",
+     "actor": "NVL B.V. & Co. KG (Norderwerft)",
+     "country": "Deutschland",
+     "location": "Hamburg (Norderwerft)",
+     "product_scope": "Marineschiffbau und Reparatur",
+     "description": "Werft der Division Naval Systems.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-02-27",
+     "claim_ids": [
+      "P-NS-01",
+      "P-NS-02"
+     ],
+     "site_id": "S-DE-HH-NW",
+     "ownership_note": "NVL zu 100 % erworben (27. Februar 2026)."
+    },
+    {
+     "id": "A-DE-WOL",
+     "actor": "NVL B.V. & Co. KG (Peene-Werft)",
+     "country": "Deutschland",
+     "location": "Wolgast",
+     "product_scope": "Marineschiffbau",
+     "description": "Werft der Division Naval Systems.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-02-27",
+     "claim_ids": [
+      "P-NS-01",
+      "P-NS-02"
+     ],
+     "site_id": "S-DE-WOL",
+     "ownership_note": "NVL zu 100 % erworben (27. Februar 2026)."
+    },
+    {
+     "id": "A-DE-WHV",
+     "actor": "NVL B.V. & Co. KG (Neue Jadewerft)",
+     "country": "Deutschland",
+     "location": "Wilhelmshaven",
+     "product_scope": "Marineschiffbau und Service",
+     "description": "Werft der Division Naval Systems.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-02-27",
+     "claim_ids": [
+      "P-NS-01",
+      "P-NS-02"
+     ],
+     "site_id": "S-DE-WHV",
+     "ownership_note": "NVL zu 100 % erworben (27. Februar 2026)."
+    }
+   ],
+   "coverage_note": "Nur größte Standorte laut Rheinmetall erfasst; weitere deutsche Standorte (z. B. Berlin, Aschau, Stockach) nicht systematisch geprüft. Bundeswehr ist Hauptkunde (Kundenaktivitäten siehe Portfolio)."
+  },
+  {
+   "id": "R-CH",
+   "label": "Schweiz",
+   "countries": [
+    "Schweiz"
+   ],
+   "presence_type": "Kompetenz- und Fertigungszentrum Flugabwehr Zürich, Erprobungszentrum Ochsenboden",
+   "geographic_scope": "Schweiz; Zürich und Erprobungszentrum Ochsenboden.",
+   "product_scope": "Flugabwehr (Rheinmetall Air Defence AG), Munition (RWM Schweiz).",
+   "focus": true,
+   "claim_ids": [
+    "P-AD-01",
+    "P-REG-CH-01",
+    "P-REG-OWN-01",
+    "P-AD-08",
+    "P-AD-07",
+    "P-SVC-01"
+   ],
+   "activities": [
+    {
+     "id": "A-CH-ZRH",
+     "actor": "Rheinmetall Air Defence AG",
+     "country": "Schweiz",
+     "location": "Zürich",
+     "product_scope": "Flugabwehrsysteme (Skyranger, Skynex, Geschütze, Feuerleitung, AHEAD)",
+     "description": "Competence Center Air Defence mit Kompetenz- und Fertigungszentrum; Bündelung aller Flugabwehraktivitäten; Skyranger-Kapazität ~140 p. a. (SOP Q1/2026) als Ziel.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-AD-01",
+      "P-REG-CH-01",
+      "P-REG-OWN-01",
+      "P-AD-08",
+      "P-AD-07"
+     ],
+     "site_id": "S-CH-ZRH",
+     "ownership_note": "Rheinmetall Air Defence AG, Zürich: 100 % (direkt) laut Anteilsbesitzliste 2025."
+    },
+    {
+     "id": "A-CH-OCH",
+     "actor": "Rheinmetall Air Defence AG",
+     "country": "Schweiz",
+     "location": "Ochsenboden (Erprobungszentrum)",
+     "product_scope": "Flugabwehr: Erprobung von Munition, Waffen und Gesamtsystemen",
+     "description": "Erprobungszentrum für Munition, Einzelwaffen und Gesamtsysteme; Skyranger-30-Demonstrator dort Ende 2023 getestet.",
+     "kind": "development",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-CH-01",
+      "P-SVC-01"
+     ],
+     "site_id": "S-CH-OCH",
+     "ownership_note": "Laut Rheinmetall Erprobungszentrum der Rheinmetall Air Defence; Eigentumsverhältnis am Gelände nicht belegt."
+    }
+   ],
+   "coverage_note": "RWM Schweiz (Munition) und weitere Schweizer Gesellschaften nur über Anteilsbesitzliste erfasst; konkrete Werksstandorte außerhalb Zürichs nicht geprüft."
+  },
+  {
+   "id": "R-IT",
+   "label": "Italien",
+   "countries": [
+    "Italien"
+   ],
+   "presence_type": "Radar- und Flugabwehrfertigung Rom, Munition Ghedi, Drohnenlinie",
+   "geographic_scope": "Italien; Rom (Rheinmetall Italia), Ghedi (RWM Italia).",
+   "product_scope": "Flugabwehr/Radar, Munition, Fahrzeuge (JV mit Leonardo), Drohnenfertigung.",
+   "focus": true,
+   "claim_ids": [
+    "P-REG-IT-01",
+    "P-AD-01",
+    "P-REG-OWN-01",
+    "P-SKR-06",
+    "P-AD-08",
+    "P-REG-EU-01",
+    "P-DS-05",
+    "T-EV-05"
+   ],
+   "activities": [
+    {
+     "id": "A-IT-ROM",
+     "actor": "Rheinmetall Italia S.p.A.",
+     "country": "Italien",
+     "location": "Rom",
+     "product_scope": "Radare (X-TAR3D u. a.), Skynex, Skyranger 35",
+     "description": "Competence Center Radar der Division Air Defence; Fertigung von Flugabwehr- und Radarsystemen; Generalunternehmer Skynex-Auftrag 2026; Skyranger-35-Fertigung für die Ukraine; Kapazität ~140 p. a. (SOP Q2/2026) als Ziel.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-07-02",
+     "claim_ids": [
+      "P-REG-IT-01",
+      "P-AD-01",
+      "P-REG-OWN-01",
+      "P-SKR-06",
+      "P-AD-08"
+     ],
+     "site_id": "S-IT-ROM",
+     "ownership_note": "Rheinmetall Italia S.p.A., Rom: 100 % (indirekt) laut Anteilsbesitzliste 2025."
+    },
+    {
+     "id": "A-IT-GHE",
+     "actor": "RWM Italia S.p.A.",
+     "country": "Italien",
+     "location": "Ghedi",
+     "product_scope": "Munition",
+     "description": "Italienische Munitionsgesellschaft; Italien laut Rheinmetall Munitionsstandort.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-OWN-01",
+      "P-REG-EU-01"
+     ],
+     "site_id": "S-IT-GHE",
+     "ownership_note": "RWM Italia S.p.A., Ghedi: 100 % (indirekt) laut Anteilsbesitzliste 2025; Fertigungsfunktion nur über Investor-Karte (Italy Ammunition) belegt."
+    },
+    {
+     "id": "A-IT-DRN",
+     "actor": "Rheinmetall-Konzern",
+     "country": "Italien",
+     "location": "Italien (Standort nicht genannt)",
+     "product_scope": "Drohnen/Loitering Munition (Hero)",
+     "description": "Laut Rheinmetall Produktionslinie in Italien mit Tageskapazitäten für Hero 30/120/400.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-DS-05"
+     ],
+     "site_id": "S-IT-DRN",
+     "ownership_note": "Laut Rheinmetall eigene Produktionslinie; Rechtsträger und Ort nicht genannt."
+    },
+    {
+     "id": "A-IT-CUS",
+     "actor": "Italienisches Heer",
+     "country": "Italien",
+     "location": "Sabaudia",
+     "product_scope": "Skynex",
+     "description": "Erste Skynex-Batterie am 18. Dezember 2025 übergeben.",
+     "kind": "customer_activity",
+     "operator": "customer",
+     "status": "operational",
+     "status_date": "2025-12-18",
+     "claim_ids": [
+      "T-EV-05"
+     ]
+    }
+   ],
+   "coverage_note": "JV Leonardo Rheinmetall Military Vehicles (Rom/La Spezia) liegt beim Cluster; Ort der Drohnenlinie offen."
+  },
+  {
+   "id": "R-UK",
+   "label": "Vereinigtes Königreich",
+   "countries": [
+    "Vereinigtes Königreich"
+   ],
+   "presence_type": "JV-Fahrzeugfertigung (RBSL Telford), eigene Gesellschaften, Rohrfertigung im Ausbau",
+   "geographic_scope": "Vereinigtes Königreich; Telford, Bristol, Newport u. a.",
+   "product_scope": "Kampf- und Radfahrzeuge (Challenger 3, Boxer), Waffen/Rohre, Elektronik.",
+   "focus": true,
+   "claim_ids": [
+    "P-REG-UK-01",
+    "P-REG-JV-01",
+    "P-REG-OWN-01",
+    "P-REG-EU-01"
+   ],
+   "activities": [
+    {
+     "id": "A-UK-TEL",
+     "actor": "Rheinmetall BAE Systems Land Ltd",
+     "country": "Vereinigtes Königreich",
+     "location": "Telford",
+     "product_scope": "Challenger 3, Boxer",
+     "description": "JV von BAE Systems und Rheinmetall; Fertigung von Challenger 3 und rund der Hälfte der 500 britischen Boxer.",
+     "kind": "production",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-UK-01",
+      "P-REG-JV-01"
+     ],
+     "ownership_note": "RBSL, Telford: 55 % laut Anteilsbesitzliste 2025; JV mit BAE Systems."
+    },
+    {
+     "id": "A-UK-BRS",
+     "actor": "Rheinmetall Defence UK Ltd",
+     "country": "Vereinigtes Königreich",
+     "location": "Bristol",
+     "product_scope": "Verteidigungsgeschäft Großbritannien",
+     "description": "Eigene Landesgesellschaft mit Sitz in Bristol.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2025-12-31",
+     "claim_ids": [
+      "P-REG-OWN-01"
+     ],
+     "site_id": "S-UK-BRS",
+     "ownership_note": "Rheinmetall Defence UK Ltd, Bristol: 100 % (direkt) laut Anteilsbesitzliste 2025."
+    },
+    {
+     "id": "A-UK-GUN",
+     "actor": "Rheinmetall Weapon and Ammunition (UK)",
+     "country": "Vereinigtes Königreich",
+     "location": "Großbritannien (Standort nicht genannt)",
+     "product_scope": "Rohrfertigung („Gun hall“)",
+     "description": "Kapazitätserweiterung der Rohrfertigung als Investitionsschwerpunkt 2026.",
+     "kind": "production",
+     "operator": "own",
+     "status": "announced",
+     "status_date": "2026-08-06",
+     "claim_ids": [
+      "P-REG-UK-01",
+      "P-REG-EU-01"
+     ],
+     "site_id": "S-UK-GUN",
+     "ownership_note": "Investitionsprojekt der Division Weapon and Ammunition laut Rheinmetall; Rechtsträger nicht genannt."
+    }
+   ],
+   "coverage_note": "Weitere britische Gesellschaften (Rheinmetall Electronics UK, Newport; RMMV UK) nur über Anteilsbesitzliste bekannt, Funktionen nicht geprüft."
+  },
+  {
+   "id": "R-WEU",
+   "label": "Übriges West- und Südeuropa (Österreich, Niederlande, Spanien)",
+   "countries": [
+    "Österreich",
+    "Niederlande",
+    "Spanien"
+   ],
+   "presence_type": "Munitionswerke Spanien, Fahrzeug-JV Wien, Landesgesellschaft Niederlande; Flugabwehrkunden",
+   "geographic_scope": "Österreich, Niederlande, Spanien; Frankreich, Belgien u. a. nicht separat geprüft.",
+   "product_scope": "Munition (Spanien), Fahrzeuge (Österreich, Niederlande), Skyranger-Kunden Österreich und Niederlande.",
+   "focus": true,
+   "claim_ids": [
+    "P-REG-ES-01",
+    "P-REG-OWN-01",
+    "P-REG-JV-01",
+    "P-REG-EU-01",
+    "T-AD-05",
+    "T-EV-04"
+   ],
+   "activities": [
+    {
+     "id": "A-ES-MAD",
+     "actor": "Rheinmetall Expal Munitions S.A.U.",
+     "country": "Spanien",
+     "location": "Madrid und weitere spanische Standorte",
+     "product_scope": "Artillerie-, Mörser-, Mittelkalibermunition, Zünder, Raketenantriebe",
+     "description": "Munitionshersteller mit insgesamt sieben operativen Standorten in Spanien und den USA.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-ES-01",
+      "P-REG-OWN-01"
+     ],
+     "site_id": "S-ES-MAD",
+     "ownership_note": "Rheinmetall Expal Munitions S.A.U., Madrid: 100 % (direkt) laut Anteilsbesitzliste 2025, Tochter seit 1. August 2023."
+    },
+    {
+     "id": "A-AT-WIE",
+     "actor": "Rheinmetall MAN Military Vehicles Österreich GesmbH",
+     "country": "Österreich",
+     "location": "Wien",
+     "product_scope": "Militärfahrzeuge",
+     "description": "Österreichische RMMV-Gesellschaft; Österreich laut Rheinmetall aktiver Fahrzeug- und Munitionsstandort.",
+     "kind": "production",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-JV-01",
+      "P-REG-EU-01"
+     ],
+     "ownership_note": "RMMV Österreich GesmbH, Wien: 51 % laut Anteilsbesitzliste 2025; Fertigungsfunktion nur über Investor-Karte belegt."
+    },
+    {
+     "id": "A-NL-EDE",
+     "actor": "Rheinmetall Defence Nederland B.V.",
+     "country": "Niederlande",
+     "location": "Ede",
+     "product_scope": "Fahrzeuge",
+     "description": "Niederländische Landesgesellschaft; Niederlande laut Rheinmetall aktiver Fahrzeugstandort.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2025-12-31",
+     "claim_ids": [
+      "P-REG-OWN-01",
+      "P-REG-EU-01"
+     ],
+     "site_id": "S-NL-EDE",
+     "ownership_note": "Rheinmetall Defence Nederland B.V., Ede: 100 % (indirekt) laut Anteilsbesitzliste 2025."
+    },
+    {
+     "id": "A-AT-CUS",
+     "actor": "Österreichisches Bundesheer",
+     "country": "Österreich",
+     "location": "Österreich",
+     "product_scope": "Skyranger 30 auf Pandur EVO",
+     "description": "36 Skyranger 30 bestellt (Launch-Kunde in Europa laut Rheinmetall).",
+     "kind": "customer_activity",
+     "operator": "customer",
+     "status": "operational",
+     "status_date": "2026-06-10",
+     "claim_ids": [
+      "T-AD-05"
+     ]
+    },
+    {
+     "id": "A-NL-CUS",
+     "actor": "Niederländisches Verteidigungsministerium",
+     "country": "Niederlande",
+     "location": "Niederlande",
+     "product_scope": "Skyranger 30 (mobil und abgesetzt)",
+     "description": "Großauftrag Dezember 2025, erste Lieferung Ende 2028 geplant.",
+     "kind": "customer_activity",
+     "operator": "customer",
+     "status": "operational",
+     "status_date": "2025-12-12",
+     "claim_ids": [
+      "T-EV-04"
+     ]
+    }
+   ],
+   "coverage_note": "Kundenaktivitäten erhöhen keine Infrastrukturstufe; weitere westeuropäische Länder nicht geprüft."
+  },
+  {
+   "id": "R-NORD",
+   "label": "Nordeuropa (Norwegen, Dänemark, Finnland, Schweden)",
+   "countries": [
+    "Norwegen",
+    "Dänemark",
+    "Finnland",
+    "Schweden"
+   ],
+   "presence_type": "Eigener Entwicklungs-/Produktionsstandort Norwegen; Kundenaufträge und Demonstrationen",
+   "geographic_scope": "Norwegen (eigener Standort), Dänemark, Finnland, Schweden (Kunden/Demonstration).",
+   "product_scope": "Elektrooptik/Feuerleitung (Norwegen), Skyranger 30 (Dänemark), C-UAS-Demonstration (Finnland), Munition (nordische Aufträge).",
+   "focus": true,
+   "claim_ids": [
+    "P-REG-NO-01",
+    "P-REG-OWN-01",
+    "P-SKR-05",
+    "P-CUAS-02",
+    "P-REG-NORD-01"
+   ],
+   "activities": [
+    {
+     "id": "A-NO-SKO",
+     "actor": "Rheinmetall Nordic AS",
+     "country": "Norwegen",
+     "location": "Skoppum",
+     "product_scope": "Elektrooptik, Feuerleitsysteme, Lageerfassung, Waffenzubehör",
+     "description": "Neuer Standort für Entwicklung, Produktion, Systemintegration und Support, eröffnet am 1. Oktober 2026.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-10-01",
+     "claim_ids": [
+      "P-REG-NO-01",
+      "P-REG-OWN-01"
+     ],
+     "site_id": "S-NO-SKO",
+     "ownership_note": "Rheinmetall Nordic AS: 100 % laut Mitteilung und Anteilsbesitzliste 2025; Gebäude gemietet."
+    },
+    {
+     "id": "A-DK-CUS",
+     "actor": "Dänische Streitkräfte (FMI)",
+     "country": "Dänemark",
+     "location": "Dänemark",
+     "product_scope": "Skyranger 30 (16 Türme)",
+     "description": "Auftrag über 16 Skyranger-30-Türme für 8x8-Plattform (September 2024).",
+     "kind": "customer_activity",
+     "operator": "customer",
+     "status": "operational",
+     "status_date": "2024-09-30",
+     "claim_ids": [
+      "P-SKR-05"
+     ]
+    },
+    {
+     "id": "A-FI-DEM",
+     "actor": "Finnische Streitkräfte",
+     "country": "Finnland",
+     "location": "Lohtaja",
+     "product_scope": "C-sUAS (Skyspotter)",
+     "description": "Demonstration bei GBAD Demo Days auf Einladung der finnischen Streitkräfte.",
+     "kind": "customer_activity",
+     "operator": "customer",
+     "status": "operational",
+     "status_date": "2025-12-16",
+     "claim_ids": [
+      "P-CUAS-02"
+     ]
+    },
+    {
+     "id": "A-NORD-WA",
+     "actor": "Nordische Streitkräfte",
+     "country": "Schweden",
+     "location": "Dänemark, Finnland, Norwegen, Schweden",
+     "product_scope": "Waffen/Munition (nicht spezifiziert)",
+     "description": "Beauftragungen der nordischen Länder als Treiber des WA-Auftragseingangs 2025.",
+     "kind": "customer_activity",
+     "operator": "customer",
+     "status": "operational",
+     "status_date": "2026-03-11",
+     "claim_ids": [
+      "P-REG-NORD-01"
+     ]
+    }
+   ],
+   "coverage_note": "Lokale Rheinmetall-Infrastruktur in Dänemark, Finnland und Schweden nicht geprüft; Kundenaktivität ist keine Infrastruktur."
+  },
+  {
+   "id": "R-CEE",
+   "label": "Mittel- und Osteuropa (Ungarn, Polen, Baltikum, Rumänien, Bulgarien, Kroatien)",
+   "countries": [
+    "Ungarn",
+    "Polen",
+    "Litauen",
+    "Lettland",
+    "Rumänien",
+    "Bulgarien",
+    "Kroatien"
+   ],
+   "presence_type": "Fahrzeugwerk Ungarn (JV), Munitionswerke im Aufbau, Akquisition Kroatien, Großaufträge Rumänien",
+   "geographic_scope": "Ostflanke ohne Ukraine (separat geführt); Tschechien/Slowakei nicht geprüft.",
+   "product_scope": "Fahrzeuge (Lynx), Munition/Pulver, Schiffbau, UGV; Flugabwehr als Kundenprogramm Rumänien.",
+   "focus": true,
+   "claim_ids": [
+    "P-REG-HU-01",
+    "P-REG-JV-01",
+    "C-005",
+    "P-REG-LT-01",
+    "P-REG-SEE-01",
+    "P-REG-RO-01",
+    "T-EV-06",
+    "T-EV-07",
+    "P-NS-01",
+    "P-NS-02",
+    "P-REG-HR-01",
+    "P-REG-OWN-01",
+    "P-REG-EU-01",
+    "P-REG-PL-01"
+   ],
+   "activities": [
+    {
+     "id": "A-HU-ZAL",
+     "actor": "Rheinmetall Hungary Zrt.",
+     "country": "Ungarn",
+     "location": "Zalaegerszeg",
+     "product_scope": "Lynx KF41, Panther-Entwicklung",
+     "description": "Entwicklungs- und Fertigungsstandort; Lynx-Produktion in der neuen Fabrik.",
+     "kind": "production",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-HU-01",
+      "P-REG-JV-01",
+      "C-005"
+     ],
+     "ownership_note": "Rheinmetall Hungary Zrt.: 51 % (indirekt) laut Anteilsbesitzliste 2025; Mitgesellschafter beim Cluster."
+    },
+    {
+     "id": "A-LT-BAI",
+     "actor": "Rheinmetall Defence Lietuva UAB",
+     "country": "Litauen",
+     "location": "Baisogala",
+     "product_scope": "155-mm-Artilleriemunition",
+     "description": "Munitionswerk im Bau (Spatenstich 4. November 2025), Inbetriebnahme frühestens 2026 geplant.",
+     "kind": "production",
+     "operator": "jv",
+     "status": "announced",
+     "status_date": "2025-11-04",
+     "claim_ids": [
+      "P-REG-LT-01",
+      "P-REG-JV-01"
+     ],
+     "ownership_note": "Rheinmetall Defence Lietuva: 51 % laut Anteilsbesitzliste 2025; JV-Partner EPSO-G laut Invest Lithuania."
+    },
+    {
+     "id": "A-LT-JON",
+     "actor": "UAB Lithuania Defense Services",
+     "country": "Litauen",
+     "location": "Jonava",
+     "product_scope": "Instandsetzung Gefechtsfahrzeuge",
+     "description": "Wartung von Gefechtsfahrzeugen der Panzerbrigade 45, anderer NATO-Armeen und der Ukraine.",
+     "kind": "service",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": "2025-11-04",
+     "claim_ids": [
+      "P-REG-LT-01",
+      "P-REG-JV-01"
+     ],
+     "ownership_note": "UAB Lithuania Defense Services: 50 % laut Anteilsbesitzliste 2025 (Sitz Ruklos); laut Rheinmetall-Story gemeinsam mit KNDS."
+    },
+    {
+     "id": "A-LV-PLAN",
+     "actor": "Rheinmetall Waffe Munition / State Defence Corporation",
+     "country": "Lettland",
+     "location": "Lettland (Standort nicht genannt)",
+     "product_scope": "155-mm-Artilleriemunition",
+     "description": "MoU (September 2025) über eine Munitionsfabrik, Betrieb durch noch zu gründendes JV.",
+     "kind": "production",
+     "operator": "jv",
+     "status": "announced",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-SEE-01"
+     ],
+     "ownership_note": "JV noch nicht gegründet laut Geschäftsbericht 2025."
+    },
+    {
+     "id": "A-RO-MED",
+     "actor": "Rheinmetall Automecanica SRL",
+     "country": "Rumänien",
+     "location": "Medias",
+     "product_scope": "Verteidigungsgeschäft Rumänien",
+     "description": "Seit vielen Jahren in Rumänien aktive Tochter; Kapazitätsausweitung für das 5,7-Mrd.-EUR-Paket angekündigt.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-05-29",
+     "claim_ids": [
+      "P-REG-RO-01",
+      "P-REG-JV-01"
+     ],
+     "site_id": "S-RO-MED",
+     "ownership_note": "Rheinmetall Automecanica SRL, Medias: 73 % (indirekt) laut Anteilsbesitzliste 2025 (Mehrheit)."
+    },
+    {
+     "id": "A-RO-VIC",
+     "actor": "Rheinmetall Victoria S.A. (geplant)",
+     "country": "Rumänien",
+     "location": "Rumänien (Victoria)",
+     "product_scope": "Treibladungspulver, modulare Treibladungen",
+     "description": "JV-Vertrag November 2025, Produktionsstart 2028 geplant.",
+     "kind": "production",
+     "operator": "jv",
+     "status": "announced",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-SEE-01"
+     ],
+     "ownership_note": "Rheinmetall 51 %, Pirochim Victoria 49 % laut Geschäftsbericht 2025."
+    },
+    {
+     "id": "A-RO-CUS",
+     "actor": "Rumänische Generaldirektion für Rüstung",
+     "country": "Rumänien",
+     "location": "Rumänien",
+     "product_scope": "Skyranger 35 auf Lynx, Skynex, Millennium Gun, Lynx, Schiffe, Munition",
+     "description": "SAFE-finanziertes Paket über 5,7 Mrd. EUR (Mai 2026), u. a. 24 Skyranger 35, sieben Skynex.",
+     "kind": "customer_activity",
+     "operator": "customer",
+     "status": "operational",
+     "status_date": "2026-05-29",
+     "claim_ids": [
+      "T-EV-06",
+      "T-EV-07"
+     ]
+    },
+    {
+     "id": "A-BG-VMZ",
+     "actor": "JV Rheinmetall/VMZ (geplant)",
+     "country": "Bulgarien",
+     "location": "Bulgarien (Sopot-Region nicht bestätigt)",
+     "product_scope": "Artilleriegeschosse, energetische Materialien",
+     "description": "JV-Vertrag Oktober 2025; Geschosshüllen ab 2027, energetische Materialien ab 2028 geplant.",
+     "kind": "production",
+     "operator": "jv",
+     "status": "announced",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-SEE-01"
+     ],
+     "ownership_note": "Rheinmetall 51 %, VMZ 49 % laut Geschäftsbericht 2025."
+    },
+    {
+     "id": "A-BG-NVL",
+     "actor": "NVL / Naval Systems",
+     "country": "Bulgarien",
+     "location": "Bulgarien (Ort nicht genannt)",
+     "product_scope": "Marineschiffbau (MMPV90)",
+     "description": "Konstruktionsbüro/Niederlassung der Division Naval Systems.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-02-27",
+     "claim_ids": [
+      "P-NS-01",
+      "P-NS-02"
+     ],
+     "site_id": "S-BG-NVL",
+     "ownership_note": "Teil der zu 100 % erworbenen NVL-Gruppe."
+    },
+    {
+     "id": "A-HR-ZAG",
+     "actor": "DOK-ING d.o.o.",
+     "country": "Kroatien",
+     "location": "Zagreb",
+     "product_scope": "Unbemannte Bodensysteme (Komodo)",
+     "description": "Mehrheitsbeteiligung Ende Juni 2026 erworben, Vehicle Systems zugeordnet.",
+     "kind": "development",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-08-06",
+     "claim_ids": [
+      "P-REG-HR-01"
+     ],
+     "site_id": "S-HR-ZAG",
+     "ownership_note": "51 % Rheinmetall, als Tochterunternehmen einbezogen laut Halbjahresfinanzbericht 2026."
+    },
+    {
+     "id": "A-HR-NVL",
+     "actor": "NVL / Naval Systems",
+     "country": "Kroatien",
+     "location": "Kroatien (Ort nicht genannt)",
+     "product_scope": "Marineschiffbau",
+     "description": "Konstruktionsbüro/Niederlassung der Division Naval Systems.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-02-27",
+     "claim_ids": [
+      "P-NS-01",
+      "P-NS-02"
+     ],
+     "site_id": "S-HR-NVL",
+     "ownership_note": "Teil der zu 100 % erworbenen NVL-Gruppe."
+    },
+    {
+     "id": "A-PL-WAW",
+     "actor": "Rheinmetall Polska Sp. z o.o.",
+     "country": "Polen",
+     "location": "Warschau",
+     "product_scope": "Fahrzeuge (geplantes JV mit PGZ)",
+     "description": "Eigene Landesgesellschaft; Polen auf der Investor-Karte als potenzieller neuer Standort markiert; Absichtserklärung mit PGZ zu Unterstützungsfahrzeugen.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2025-12-31",
+     "claim_ids": [
+      "P-REG-OWN-01",
+      "P-REG-EU-01",
+      "P-REG-PL-01"
+     ],
+     "site_id": "S-PL-WAW",
+     "ownership_note": "Rheinmetall Polska Sp. z o.o., Warschau: 100 % (indirekt) laut Anteilsbesitzliste 2025; operative Tätigkeit nicht weiter belegt."
+    }
+   ],
+   "coverage_note": "Standorte im Bau sind als announced geführt; operative Lynx-Ausbringung in Ungarn nicht quantifiziert; Skyranger-Fertigung in Ungarn nur laut Medienbericht geplant."
+  },
+  {
+   "id": "R-UA",
+   "label": "Ukraine",
+   "countries": [
+    "Ukraine"
+   ],
+   "presence_type": "JV-Instandsetzung in der Westukraine; Lieferungen Flugabwehr und Munition",
+   "geographic_scope": "Ukraine separat geführt; übriges Osteuropa siehe R-CEE.",
+   "product_scope": "Fahrzeuginstandsetzung (JV), Skynex, Skyranger 35, Mittelkaliber-/35-mm-Munition als Lieferungen.",
+   "focus": true,
+   "claim_ids": [
+    "P-REG-UA-01",
+    "P-REG-JV-01",
+    "C-007",
+    "P-SKX-02",
+    "P-SKR-06",
+    "P-SKX-04",
+    "P-SKX-03"
+   ],
+   "activities": [
+    {
+     "id": "A-UA-SVC",
+     "actor": "Rheinmetall Ukrainian Defense Industry LLC",
+     "country": "Ukraine",
+     "location": "Westukraine (Ort nicht genannt)",
+     "product_scope": "Instandsetzung und Wartung von Gefechtsfahrzeugen",
+     "description": "JV seit Oktober 2023 operativ; Instandsetzung seit Juni 2024.",
+     "kind": "service",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-UA-01",
+      "P-REG-JV-01",
+      "C-007"
+     ],
+     "ownership_note": "Rheinmetall Landsysteme 51 %, UDI 49 % laut Rheinmetall und Anteilsbesitzliste 2025."
+    },
+    {
+     "id": "A-UA-CUS",
+     "actor": "Ukrainische Streitkräfte",
+     "country": "Ukraine",
+     "location": "Ukraine",
+     "product_scope": "Skynex, Skyranger 35, 35-mm-/Mittelkalibermunition",
+     "description": "Skynex-Batterien seit Ende 2023 (laut Hersteller), Skyranger 35 auf Leopard 1 laut Hersteller geliefert.",
+     "kind": "customer_activity",
+     "operator": "customer",
+     "status": "operational",
+     "status_date": "2025-10-10",
+     "claim_ids": [
+      "P-SKX-02",
+      "P-SKR-06",
+      "P-SKX-04"
+     ]
+    }
+   ],
+   "coverage_note": "Lokale Produktion in der Ukraine (laut Investor-Karte Fahrzeuge, Munition inkl. Bau) nicht durch Einzelquelle belegt."
+  },
+  {
+   "id": "R-US",
+   "label": "USA",
+   "countries": [
+    "USA"
+   ],
+   "presence_type": "Eigene US-Gesellschaften mit Werken in sechs Bundesstaaten",
+   "geographic_scope": "Nur USA; keine Aussage zu Mexiko oder Kanada (separat).",
+   "product_scope": "Fahrzeuge (XM30, HX), Munition (American Rheinmetall Munitions, Expal USA), Komponenten; Flugabwehr nur als Messeexponat.",
+   "focus": false,
+   "claim_ids": [
+    "P-REG-US-01",
+    "P-REG-OWN-01",
+    "P-REG-ES-01",
+    "P-VS-04"
+   ],
+   "activities": [
+    {
+     "id": "A-US-AUB",
+     "actor": "American Rheinmetall",
+     "country": "USA",
+     "location": "Auburn Hills, MI",
+     "product_scope": "Fahrzeuge/Systeme (US-Hauptsitz American Rheinmetall)",
+     "description": "Hauptsitz der American Rheinmetall laut Rheinmetall.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-09-30",
+     "claim_ids": [
+      "P-REG-US-01",
+      "P-REG-OWN-01"
+     ],
+     "site_id": "S-US-AUB",
+     "ownership_note": "American Rheinmetall Defense, Inc.: 100 % (direkt) laut Anteilsbesitzliste 2025; Zuordnung des Standorts laut Mitteilung."
+    },
+    {
+     "id": "A-US-BID",
+     "actor": "American Rheinmetall",
+     "country": "USA",
+     "location": "Biddeford, ME",
+     "product_scope": "Waffenlafetten (MK93) und Komponenten",
+     "description": "Werk in Maine fertigt 3.104 MK93-Lafetten für die U.S. Army.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-09-30",
+     "claim_ids": [
+      "P-REG-US-01"
+     ],
+     "site_id": "S-US-BID",
+     "ownership_note": "Teil der US-Unternehmensgruppe von Rheinmetall laut Mitteilung."
+    },
+    {
+     "id": "A-US-TXK",
+     "actor": "American Rheinmetall Munitions (Expal USA)",
+     "country": "USA",
+     "location": "Texarkana, TX",
+     "product_scope": "Munition",
+     "description": "Munitionsstandort der US-Gruppe.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-09-30",
+     "claim_ids": [
+      "P-REG-US-01",
+      "P-REG-ES-01"
+     ],
+     "site_id": "S-US-TXK",
+     "ownership_note": "Expal USA Inc.: 100 % (indirekt) laut Anteilsbesitzliste 2025 (Sitz Hooks, TX)."
+    },
+    {
+     "id": "A-US-CUS",
+     "actor": "U.S. Army",
+     "country": "USA",
+     "location": "USA",
+     "product_scope": "Lynx XM30 (Prototypen)",
+     "description": "Erste XM30-Prototypen zur Erprobung an die U.S. Army übergeben.",
+     "kind": "customer_activity",
+     "operator": "customer",
+     "status": "operational",
+     "status_date": "2026-10-05",
+     "claim_ids": [
+      "P-VS-04"
+     ]
+    }
+   ],
+   "coverage_note": "Funktionen weiterer US-Standorte (Lansing, Lapeer, Plymouth, St. Marys, Camden, Windham, Vienna) nicht einzeln geprüft."
+  },
+  {
+   "id": "R-CA",
+   "label": "Kanada",
+   "countries": [
+    "Kanada"
+   ],
+   "presence_type": "Eigene Landesgesellschaft mit drei Standorten",
+   "geographic_scope": "Nur Kanada.",
+   "product_scope": "Fahrzeugintegration, Waffen- und Flugabwehrsysteme, autonome Systeme, In-Service-Support.",
+   "focus": false,
+   "claim_ids": [
+    "P-REG-CA-01",
+    "P-REG-OWN-01"
+   ],
+   "activities": [
+    {
+     "id": "A-CA-SJR",
+     "actor": "Rheinmetall Canada Inc.",
+     "country": "Kanada",
+     "location": "Saint-Jean-sur-Richelieu",
+     "product_scope": "Fahrzeug-, Waffen-, Flugabwehr- und autonome Systeme",
+     "description": "Hauptstandort von Rheinmetall Canada (rund 400 Mitarbeitende an drei Standorten).",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-CA-01",
+      "P-REG-OWN-01"
+     ],
+     "site_id": "S-CA-SJR",
+     "ownership_note": "Rheinmetall Canada Inc.: 100 % (direkt) laut Anteilsbesitzliste 2025."
+    }
+   ],
+   "coverage_note": "Fertigung in Kanada nicht belegt; Standorte Ottawa und Edmonton ohne Funktionsangabe."
+  },
+  {
+   "id": "R-AU",
+   "label": "Australien und Neuseeland",
+   "countries": [
+    "Australien",
+    "Neuseeland"
+   ],
+   "presence_type": "Fahrzeug-Kompetenzzentrum mit Fertigung (Redbank), Büros, Munitions-JV",
+   "geographic_scope": "Australien und Neuseeland (Wellington).",
+   "product_scope": "Fahrzeuge (Boxer CRV, Lkw), Marineausrüstung, Munition (JV), C-UAS-Entwicklung (AERIE).",
+   "focus": false,
+   "claim_ids": [
+    "P-REG-AU-01",
+    "P-REG-OWN-01",
+    "P-CUAS-03"
+   ],
+   "activities": [
+    {
+     "id": "A-AU-RED",
+     "actor": "Rheinmetall Defence Australia Pty Ltd",
+     "country": "Australien",
+     "location": "Redbank, Queensland",
+     "product_scope": "Boxer CRV, Logistik-Lkw, Türme, Marineausrüstung",
+     "description": "MILVEHCOE seit 2020: Entwicklung, Fertigung und Wartung militärischer Fahrzeuge, Plattformen und Türme.",
+     "kind": "production",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-AU-01",
+      "P-REG-OWN-01"
+     ],
+     "site_id": "S-AU-RED",
+     "ownership_note": "Rheinmetall Defence Australia Pty Ltd, Redbank: 100 % (direkt) laut Anteilsbesitzliste 2025."
+    },
+    {
+     "id": "A-AU-MAR",
+     "actor": "Rheinmetall NIOA Munitions Pty Ltd",
+     "country": "Australien",
+     "location": "Maryborough, Queensland",
+     "product_scope": "Munition",
+     "description": "JV mit NIOA produziert Munition u. a. für den Boxer CRV.",
+     "kind": "production",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-AU-01"
+     ],
+     "ownership_note": "JV mit NIOA laut Rheinmetall; Beteiligungsquote nicht geprüft."
+    },
+    {
+     "id": "A-AU-AER",
+     "actor": "Rheinmetall Defence Australia / Praetorian Aeronautics",
+     "country": "Australien",
+     "location": "Australien",
+     "product_scope": "C-UAS (AERIE)",
+     "description": "Gemeinsame F&E-Partnerschaft, Prototyp AERIE.",
+     "kind": "partner",
+     "operator": "partner",
+     "status": "operational",
+     "status_date": "2026-10-07",
+     "claim_ids": [
+      "P-CUAS-03"
+     ]
+    },
+    {
+     "id": "A-NZ-WLG",
+     "actor": "Rheinmetall Defence Australia",
+     "country": "Neuseeland",
+     "location": "Wellington",
+     "product_scope": "Verteidigungsgeschäft Neuseeland",
+     "description": "Laut Rheinmetall Ansässigkeit in Wellington.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-AU-01"
+     ],
+     "site_id": "S-NZ-WLG",
+     "ownership_note": "Standort der Rheinmetall Defence Australia laut Unternehmensseite."
+    }
+   ],
+   "coverage_note": "Büros Adelaide, Canberra, Melbourne, Townsville ohne Einzelaktivität erfasst; Programmverzug laut Medien nicht vertieft."
+  },
+  {
+   "id": "R-ZA",
+   "label": "Südafrika",
+   "countries": [
+    "Südafrika"
+   ],
+   "presence_type": "Munitions-JV mit mehreren Werken",
+   "geographic_scope": "Nur Südafrika; Absatz von dort u. a. nach Asien, Mittlerer Osten, Südamerika.",
+   "product_scope": "Groß- und Mittelkalibermunition, Treibmittel, Anlagenbau.",
+   "focus": false,
+   "claim_ids": [
+    "P-REG-ZA-01",
+    "P-REG-JV-01"
+   ],
+   "activities": [
+    {
+     "id": "A-ZA-SOM",
+     "actor": "Rheinmetall Denel Munition (Pty) Ltd.",
+     "country": "Südafrika",
+     "location": "Somerset West",
+     "product_scope": "Munition, Treibmittel, Anlagenbau",
+     "description": "Hauptstandort der RDM (Somchem).",
+     "kind": "production",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-ZA-01",
+      "P-REG-JV-01"
+     ],
+     "ownership_note": "RDM: 51 % Rheinmetall Waffe Munition, 49 % Denel laut Rheinmetall und Anteilsbesitzliste 2025."
+    },
+    {
+     "id": "A-ZA-BOK",
+     "actor": "Rheinmetall Denel Munition (Pty) Ltd.",
+     "country": "Südafrika",
+     "location": "Boksburg",
+     "product_scope": "Geschmiedete Geschosskörper und Metallkomponenten",
+     "description": "Werk für geschmiedete Geschosskörper.",
+     "kind": "production",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-ZA-01"
+     ],
+     "ownership_note": "RDM-Werk; 51 % Rheinmetall."
+    },
+    {
+     "id": "A-ZA-BOS",
+     "actor": "Rheinmetall Denel Munition (Pty) Ltd. (Naschem)",
+     "country": "Südafrika",
+     "location": "Boskop bei Potchefstroom",
+     "product_scope": "Munition",
+     "description": "Naschem-Standort der RDM.",
+     "kind": "production",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-ZA-01"
+     ],
+     "ownership_note": "RDM-Werk; 51 % Rheinmetall."
+    }
+   ],
+   "coverage_note": "Weitere südafrikanische Gesellschaften (Rheinmetall Resonant, RWM South Africa, Nitrochemie SA) nicht als Aktivität erfasst."
+  },
+  {
+   "id": "R-ME",
+   "label": "Naher Osten und Nordafrika (Katar, Saudi-Arabien, VAE, Ägypten)",
+   "countries": [
+    "Katar",
+    "Saudi-Arabien",
+    "Vereinigte Arabische Emirate",
+    "Ägypten"
+   ],
+   "presence_type": "Beteiligungen (Katar, Saudi-Arabien), Marinebüro Ägypten, Flugabwehrkunde Katar",
+   "geographic_scope": "Genannte Golfstaaten und Ägypten; keine Aussage zu übrigen MENA-Ländern.",
+   "product_scope": "Flugabwehr (Skynex Katar), Simulation/Training, Radar, Marine (Ägypten), Digital Systems.",
+   "focus": false,
+   "claim_ids": [
+    "P-REG-JV-01",
+    "C-037",
+    "P-SKX-02",
+    "P-REG-ME-01",
+    "P-NS-01",
+    "P-NS-02",
+    "P-AD-09"
+   ],
+   "activities": [
+    {
+     "id": "A-QA-BAR",
+     "actor": "Rheinmetall Barzan Advanced Technologies QSTP LLC",
+     "country": "Katar",
+     "location": "Doha",
+     "product_scope": "nicht spezifiziert",
+     "description": "Beteiligung in Doha laut Anteilsbesitzliste.",
+     "kind": "partner",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": "2025-12-31",
+     "claim_ids": [
+      "P-REG-JV-01",
+      "C-037"
+     ],
+     "ownership_note": "49 % laut Anteilsbesitzliste 2025; Funktion nicht geprüft (Cluster)."
+    },
+    {
+     "id": "A-QA-CUS",
+     "actor": "Katar (Streitkräfte)",
+     "country": "Katar",
+     "location": "Katar",
+     "product_scope": "Skynex",
+     "description": "Skynex laut Rheinmetall-Italia-CEO zuvor an Katar verkauft (Stand Januar 2024).",
+     "kind": "customer_activity",
+     "operator": "customer",
+     "status": "operational",
+     "status_date": "2024-01-26",
+     "claim_ids": [
+      "P-SKX-02"
+     ]
+    },
+    {
+     "id": "A-SA-RAST",
+     "actor": "Rheinmetall Arabia Simulation and Training LLC",
+     "country": "Saudi-Arabien",
+     "location": "Riyadh",
+     "product_scope": "Simulation und Training",
+     "description": "Beteiligung in Riyadh; Auskauf des Mehrheitsgesellschafters Anfang Q3 2026 beglichen.",
+     "kind": "partner",
+     "operator": "jv",
+     "status": "operational",
+     "status_date": "2025-12-31",
+     "claim_ids": [
+      "P-REG-JV-01"
+     ],
+     "ownership_note": "40 % (at-equity) Ende 2025 laut Anteilsbesitzliste; aktueller Anteil nach Auskauf nicht belegt."
+    },
+    {
+     "id": "A-ME-GB",
+     "actor": "Rheinmetall Digital Systems (Global Business)",
+     "country": "Vereinigte Arabische Emirate",
+     "location": "VAE und Saudi-Arabien",
+     "product_scope": "Digital Systems",
+     "description": "Global Business laut Rheinmetall in diesen Märkten aktiv; lokale Infrastruktur nicht belegt.",
+     "kind": "foreign_support",
+     "operator": "foreign",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-ME-01"
+     ]
+    },
+    {
+     "id": "A-EG-NVL",
+     "actor": "NVL / Naval Systems",
+     "country": "Ägypten",
+     "location": "Ägypten (Ort nicht genannt)",
+     "product_scope": "Marineschiffbau",
+     "description": "Konstruktionsbüro/Niederlassung der Division Naval Systems.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-02-27",
+     "claim_ids": [
+      "P-NS-01",
+      "P-NS-02"
+     ],
+     "site_id": "S-EG-NVL",
+     "ownership_note": "Teil der zu 100 % erworbenen NVL-Gruppe."
+    }
+   ],
+   "coverage_note": "Gesellschaften in Abu Dhabi/Schardscha nur in der Anteilsbesitzliste erkennbar (Namen in der Extraktion teils abgeschnitten), nicht als Aktivität geführt; „MENA replacement projects“ sind Planungsangabe."
+  },
+  {
+   "id": "R-ASIA",
+   "label": "Asien (Singapur, Brunei, Indien)",
+   "countries": [
+    "Singapur",
+    "Brunei",
+    "Indien"
+   ],
+   "presence_type": "Eigene Gesellschaften Singapur, Marinebüros Singapur/Brunei, Partnerschaft Indien (MoU)",
+   "geographic_scope": "Singapur, Brunei, Indien; China betrifft vorwiegend zivile Aktivitäten (nicht erfasst).",
+   "product_scope": "Elektronik/Simulation (Singapur), Marine (Singapur, Brunei), Munitionsvorprodukte (Indien, MoU).",
+   "focus": false,
+   "claim_ids": [
+    "P-REG-SG-01",
+    "P-REG-OWN-01",
+    "P-NS-01",
+    "P-NS-02",
+    "P-REG-IN-01"
+   ],
+   "activities": [
+    {
+     "id": "A-SG-RESG",
+     "actor": "Rheinmetall Electronics Singapore Pte. Ltd.",
+     "country": "Singapur",
+     "location": "Singapur",
+     "product_scope": "Integrated Electronic Systems (Simulation, Missions-/Feuerleitsysteme, C4I)",
+     "description": "Eigene Tochter der Rheinmetall Electronics GmbH.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-SG-01",
+      "P-REG-OWN-01"
+     ],
+     "site_id": "S-SG-RESG",
+     "ownership_note": "100 % Tochter laut Rheinmetall und Anteilsbesitzliste 2025."
+    },
+    {
+     "id": "A-SG-NVL",
+     "actor": "NVL / Naval Systems",
+     "country": "Singapur",
+     "location": "Singapur (NVL-Büro)",
+     "product_scope": "Marineschiffbau",
+     "description": "Konstruktionsbüro/Niederlassung der Division Naval Systems.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-02-27",
+     "claim_ids": [
+      "P-NS-01",
+      "P-NS-02"
+     ],
+     "site_id": "S-SG-NVL",
+     "ownership_note": "Teil der zu 100 % erworbenen NVL-Gruppe; Adresse nicht genannt."
+    },
+    {
+     "id": "A-BN-NVL",
+     "actor": "NVL / Naval Systems",
+     "country": "Brunei",
+     "location": "Brunei (Ort nicht genannt)",
+     "product_scope": "Marineschiffbau",
+     "description": "Konstruktionsbüro/Niederlassung der Division Naval Systems.",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": "2026-02-27",
+     "claim_ids": [
+      "P-NS-01",
+      "P-NS-02"
+     ],
+     "site_id": "S-BN-NVL",
+     "ownership_note": "Teil der zu 100 % erworbenen NVL-Gruppe."
+    },
+    {
+     "id": "A-IN-REL",
+     "actor": "Reliance Defence Ltd.",
+     "country": "Indien",
+     "location": "Indien",
+     "product_scope": "Sprengstoffe, Treibmittel",
+     "description": "MoU (Mai 2025) über Lieferung von Sprengstoffen/Treibmitteln an Rheinmetall.",
+     "kind": "partner",
+     "operator": "partner",
+     "status": "announced",
+     "status_date": null,
+     "claim_ids": [
+      "P-REG-IN-01"
+     ]
+    }
+   ],
+   "coverage_note": "Asien außerhalb der genannten Länder nicht geprüft; partner/announced ist eine Absichtserklärung."
+  }
+ ],
+ "gaps": [
+  "Status des erwarteten Bundeswehr-Großauftrags für Skyranger 30 (Medien: ~561 Systeme, ~9 Mrd. EUR) bis Stichtag 2026-10-13 nicht als vergeben belegt; Q3-Bericht erscheint erst am 5. November 2026.",
+  "Tatsächliche Skyranger-Ausbringung und Erreichen der Serienstarts (SOP Schweiz Q1/26, Italien Q2/26, Deutschland Q3/26) nicht belegt; nur Kapazitätsziele.",
+  "Unabhängige Belege zu Einsatzergebnissen von Skynex/Skyranger 35 in der Ukraine fehlen; Herstelleraussagen und Gegenrecherche getrennt erfasst.",
+  "Lieferstatus Dänemark (16 Türme) und Österreich (36 Systeme) zum Stichtag nicht belegt.",
+  "Abweichung NVL-Vollzugsdatum: Halbjahresfinanzbericht 27. Februar 2026 (P-NS-02) vs. Rheinmetall-Mitteilung 1. März 2026 (T-EV-03).",
+  "Funktionen einzelner Konzernstandorte (Kassel, Kiel, Ghedi, Wien, Ede) nur über Investor-Karte bzw. Anteilsbesitzliste belegt; JV-Partner und Kontrollrechte beim Cluster.",
+  "Produkte CN0, KBA, AN/MR, Ku-TRG, X-BTR, Skyranger 7.62 nur namentlich gelistet.",
+  "Vollzug des Power-Systems-Verkaufs an AEQUITA (angestrebt Q4 2026) offen."
+ ],
+ "coverage": [
+  {
+   "topic": "Konzernstruktur und Geschäftsfelder 2026",
+   "search_terms": [
+    "Rheinmetall Divisionen",
+    "Geschäftsbericht 2025",
+    "Halbjahresfinanzbericht 2026",
+    "Power Systems Verkauf"
+   ],
+   "opened_source_ids": [
+    "S-a4d54f5d3aa32d9d",
+    "S-4d0e53f502fb320c",
+    "S-f4730b21412bb02a",
+    "S-3dad8b811c925694",
+    "S-827c64d441de8f6e",
+    "S-5f102cfea2da2738"
+   ],
+   "finding": "Fünf fortgeführte Divisionen/Segmente plus nicht fortgeführte Power Systems; US-Division U.S. America laut HJ-Bericht.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Vehicle Systems (Produktfamilien)",
+   "search_terms": [
+    "Vehicle Systems Lynx Boxer HX",
+    "Investor Presentation September 2026"
+   ],
+   "opened_source_ids": [
+    "S-cc9cf45c8609a0d1",
+    "S-e6f358904e19e4e8",
+    "S-5f102cfea2da2738",
+    "S-47771a7dd8c927d5",
+    "S-4a13b2786b5cc66a"
+   ],
+   "finding": "Produktfamilien und H1-Aufträge belegt; Stückzahl-Lieferstatus je Programm nicht systematisch geprüft.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Weapon and Ammunition (Produktfamilien, Kapazitäten)",
+   "search_terms": [
+    "Weapon and Ammunition Rheinmetall",
+    "Unterlüß Munitionswerk",
+    "Kapazität 155mm"
+   ],
+   "opened_source_ids": [
+    "S-2b24723c99b5458a",
+    "S-e6f358904e19e4e8",
+    "S-f4730b21412bb02a",
+    "S-5f102cfea2da2738"
+   ],
+   "finding": "Portfolio, Kapazitätsziele und Werk Unterlüß belegt.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Digital Systems (Digitalisierung, Drohnen, Weltraum, F-35)",
+   "search_terms": [
+    "Digital Systems Rheinmetall",
+    "TaWAN",
+    "FV-014",
+    "Weeze F-35"
+   ],
+   "opened_source_ids": [
+    "S-8004062626d5c0ad",
+    "S-f4730b21412bb02a",
+    "S-3dad8b811c925694",
+    "S-e6f358904e19e4e8"
+   ],
+   "finding": "BU-Struktur, Großaufträge und Werkstatus belegt.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Naval Systems",
+   "search_terms": [
+    "Naval Systems NVL",
+    "F126 Stornierung"
+   ],
+   "opened_source_ids": [
+    "S-93a2ee05910f4b53",
+    "S-3dad8b811c925694",
+    "S-5f102cfea2da2738"
+   ],
+   "finding": "Werften, Programme, Erwerb und H1-Kennzahlen belegt; F126-Ereignis beim Kontext (T-EV-09).",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Power Systems (zivil, nicht fortgeführt)",
+   "search_terms": [
+    "Power Systems Rheinmetall",
+    "AEQUITA Rheinmetall"
+   ],
+   "opened_source_ids": [
+    "S-747870b3bc879dff",
+    "S-3dad8b811c925694"
+   ],
+   "finding": "Portfolio und unterzeichneter Verkauf belegt; Closing offen.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Flugabwehr: Produktfamilien und Eigenschaften",
+   "search_terms": [
+    "Skyranger",
+    "Skynex",
+    "Skymaster",
+    "X-TAR3D",
+    "MSU",
+    "Revolver Gun Mk3",
+    "AHEAD",
+    "Drohnenabwehr Toolbox",
+    "Millennium Gun"
+   ],
+   "opened_source_ids": [
+    "S-3ef169e9e35e0c9a",
+    "S-5b8b39f37cd6b51d",
+    "S-5ae98f51c19ce9e2",
+    "S-31c2ac5b48b0cde3",
+    "S-4faa3a733781f031",
+    "S-860fb5a5ec516912",
+    "S-d5ab9c70470a478d",
+    "S-310ddb82949667f5",
+    "S-18ce19a1fbbec148",
+    "S-f927b29c83eb84ce"
+   ],
+   "finding": "Produkt- und Leistungsangaben ausschließlich Herstellerangaben; teils widersprüchliche Bandangabe X-TAR3D.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Flugabwehr: Kundenprogramme, Lieferstatus, Gegenrecherche",
+   "search_terms": [
+    "Skyranger 30 Bundeswehr Auslieferung",
+    "Skyranger Großauftrag Bundeswehr 2026",
+    "Skynex Ukraine Belege",
+    "Skyranger 35 Ukraine",
+    "Skyranger Dänemark"
+   ],
+   "opened_source_ids": [
+    "S-b8a3496f93a22c8c",
+    "S-c0d13e5db6387716",
+    "S-6410acb24c745d46",
+    "S-d1aafc1c9b0f1a75",
+    "S-eadffcced857ac38",
+    "S-957ebff673ab8d20",
+    "S-d7c2de50db0d079d",
+    "S-513daa2ae2be3e14",
+    "S-b003618b3ae9eba2",
+    "S-168108fb27118dde"
+   ],
+   "finding": "Aufträge belegt; Bundeswehr-Serienlieferung verzögert (Q4 2027 laut S&V); Großauftrag (~561 Systeme) bis Stichtag nicht als vergeben belegt; Ukraine-Wirkungsangaben nur teilweise unabhängig.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Flugabwehr: Laser, NNbS, Vernetzung, C-UAS-Neuentwicklungen",
+   "search_terms": [
+    "Laserwaffe Marine MBDA Rheinmetall 2026",
+    "NNbS Entwicklungsvertrag",
+    "Skymaster Twinvis",
+    "AERIE Praetorian",
+    "Skyspotter Finnland"
+   ],
+   "opened_source_ids": [
+    "S-92d7be3f0dda7317",
+    "S-f562ccee195198fd",
+    "S-2185a7a52eb76e0d",
+    "S-ed85256fd87c2a74",
+    "S-6ceae77f0e11c121",
+    "S-f4730b21412bb02a"
+   ],
+   "finding": "Verträge, Demonstrationen und Prototypen belegt.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Flugabwehr: industrielle Kapazität und Fertigungsstandorte",
+   "search_terms": [
+    "Skyranger Produktion Neuss",
+    "Skyranger Kapazität 400",
+    "Air Defence Standorte Zürich Rom Neuss"
+   ],
+   "opened_source_ids": [
+    "S-e6f358904e19e4e8",
+    "S-c0d13e5db6387716",
+    "S-3ef169e9e35e0c9a",
+    "S-168108fb27118dde",
+    "S-3dad8b811c925694"
+   ],
+   "finding": "Kapazitätsziele und Standortrollen belegt; tatsächliche Ausbringung und SOP-Erreichung nicht belegt.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Regionale Präsenz Europa",
+   "search_terms": [
+    "Rheinmetall Standorte Europa",
+    "Anteilsbesitzliste 2025",
+    "Rheinmetall Hungary",
+    "Baisogala",
+    "Rheinmetall Nordic Skoppum",
+    "RBSL",
+    "Expal"
+   ],
+   "opened_source_ids": [
+    "S-e6f358904e19e4e8",
+    "S-f4730b21412bb02a",
+    "S-479bad9fdf088fc9",
+    "S-5dad3a27cd832a61",
+    "S-ddb1d21cd09da6cf",
+    "S-cf7e773278387ae1",
+    "S-7d3cceefdfc28f58",
+    "S-2f18768b2b3d8649",
+    "S-3dad8b811c925694"
+   ],
+   "finding": "Länder- und Standortrollen belegt; Karte schließt Baustellen ein; mehrere Standortfunktionen nur über Investor-Karte.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Regionale Präsenz außerhalb Europas",
+   "search_terms": [
+    "American Rheinmetall Standorte",
+    "Rheinmetall Canada",
+    "Rheinmetall Defence Australia Redbank",
+    "Rheinmetall Denel Munition",
+    "Rheinmetall Singapore",
+    "Rheinmetall Saudi-Arabien VAE Katar"
+   ],
+   "opened_source_ids": [
+    "S-47771a7dd8c927d5",
+    "S-d776dc827ba55608",
+    "S-4f9807383dbfe574",
+    "S-3cb560602baefeec",
+    "S-1f76748059d5008c",
+    "S-19e53c95b8305269",
+    "S-8004062626d5c0ad",
+    "S-f4730b21412bb02a"
+   ],
+   "finding": "USA, Kanada, Australien, Südafrika, Singapur belegt; Golfstaaten überwiegend über Beteiligungen und Kundenhinweise, lokale Funktionen offen.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Lateinamerika und China",
+   "search_terms": [
+    "Rheinmetall Mexiko Simulation",
+    "Rheinmetall Brasilien",
+    "Rheinmetall China"
+   ],
+   "opened_source_ids": [
+    "S-f4730b21412bb02a"
+   ],
+   "finding": "In der Anteilsbesitzliste u. a. RH Mexico Simulation and Training (Querétaro) und zivile Gesellschaften in Brasilien/China/Mexiko sichtbar; Funktionen nicht geprüft, daher keine Präsenzzeile.",
+   "status": "nicht geprüft mit Grund: nur Beteiligungslisteneintrag, kein gelesener Funktionsbeleg; Priorität Auftragsfokus Europa"
+  }
+ ]
+}
