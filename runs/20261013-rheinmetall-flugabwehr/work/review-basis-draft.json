@@ -4,153 +4,22 @@
  "company": "Rheinmetall AG",
  "as_of": "2026-10-13",
  "phase": "basis",
- "status": "teilweise",
- "review_work_fingerprint": "9de60a60919f1eae1b905d0b664ac8e16b7886c5010aa1da9ba12b4d830eb39a",
- "material_errors": [
-  "T-EV-03 (+ events ev-nvl-closing): NVL-Vollzug 1.3.2026 widerspricht Closing 27.02.2026 laut GB 2025/HJFB 2026 – context.",
-  "C-019 / Netz e29/e30: Österreich-Vertragsstruktur falsch (Rheinmetall laut eigener PM Unterauftragnehmer von GDELS) – cluster.",
-  "C-050 / T-AD-04: Medienankündigung als vollzogener CEO-Wechsel bzw. Dürr ohne Zeitgrenze als aktuelle Leitung dargestellt – cluster/context.",
-  "P-SKR-07: Eurosatory-Präsentation nicht durch zitierte Quelle belegt (nur Ankündigung in nicht registrierter Cachequelle) – portfolio.",
-  "P-REG-RO-01: zentrale Teilaussagen ohne zitierten Beleg (richtige Quelle S-cede873d57924937 nicht referenziert) – portfolio.",
-  "Dashboard de_skr30.next_step: Serienbeginn Q4 2027 fälschlich Rheinmetall zugeschrieben – market."
- ],
+ "status": "freigegeben",
+ "review_work_fingerprint": "1929162068b0eb81c08c8552ecf192cdcf65bf33f24ec4fcbb39c77024453c78",
+ "material_errors": [],
  "scope_and_mappings_checked": true,
  "review_scope": {
-  "summary": "Alle 223 Claims (inkl. 139 required_full_review_ids und alle 51 Netzkanten) gegen die Original-Snapshots im Laufcache geprüft; 22 vorgeschlagene B-Claims vollständig statt per Stichprobe geprüft und wegen Darstellung in module_views als A geführt. module_views (Kontext-Fakten/Ereignisse/Profil/Topics, Portfolio-Produkte/Topics/regional_presence, Cluster-Topics/Netz, Markt-Peers/Observations/Dashboard/Topics) semantisch geprüft. 13 Korrekturgruppen (14 Claims) und 15 Darstellungs-/Zuordnungskorrekturen (module_view_corrections).",
-  "cache_state": "136 registrierte Quellen, alle im Laufcache (135 http-original, 1 local-original ohne Claimzuordnung); Abrufe 2026-10-13; kein Refresh nötig (kein Änderungshinweis); Snapshot-Hashes je Quelle in source_checks. Zusätzlich gelesen: Cache-Dokument S-d2d239c37b99eddf (nicht im Register). Zwei gezielte Websuchen (Bundeswehr-Skyranger-Großauftrag; Köhne/Air-Defence-Leitung) ohne neue Quellen in den Faktenbestand; Ergebnis: kein unterzeichneter Großauftrag gefunden; Köhne-Wechsel nur sekundär (esut, militaeraktuell).",
-  "formal_checks": "scripts/check-review-data.py review-packet.json: Exit 0, keine Fehler; facts-validation errors=[]. Formaler Pass ist keine Inhaltsfreigabe.",
-  "priority_findings": {
-   "nvl_date": "Kein echter Widerspruch der Quellen: Closing/Erwerb 27.02.2026 (GB/HJFB), Übergangsstichtag 1.3.2026 (PM). T-EV-03 und Ereignisdatum korrigieren; P-NS-02/C-043 korrekt.",
-   "skyranger_delay": "T-AD-06, C-015, C-016, P-SKR-03, M-DE-SKR-01/02 korrekt zugeschrieben; Angaben widersprechen sich (BAAINBw: ab Mitte 2027; S&V: Q4 2027; Stern: ≥16 Monate; Rheinmetall: 5–6 Monate, Serie 2027/2028). Nur Sekundärquellen, Capital/Stern/BAAINBw-Originale nicht geöffnet – Darstellung nur als strittig. Korrekturbedarf nur in Dashboard-next_step und Portfolio-Preview.",
-   "bundeswehr_large_order": "P-SKR-04, M-DE-NNBS-01, T-AD-07 korrekt („nicht belegt“ statt „nicht vergeben“). Zusätzlicher Unternehmensbeleg: Q3-Recap 05.10.2026 erwartet Arminius-Festvertrag bis Jahresende (Haushaltsausschuss Anfang Dezember) – Aufnahme als Stützbeleg empfohlen (optional).",
-   "nl_mshorad_lockheed_ukraine": "NL: 22 (S&V) vs. „zweistellig“ (Rheinmetall) korrekt getrennt. MSHORAD: EDR „zwei Staaten“ vs. Litauen-Auftrag 2024 korrekt als Widerspruch geführt. Lockheed C-033/034/035: MoU/geplantes JV, PAC-3 nur sekundär, keine Kante – korrekt. Ukraine P-SKX-03/04: Einsatzwirkung als Herstellerangabe mit Gegenrecherche – korrekt.",
-   "cluster_partial": "Status „teilweise“ ist ehrlich und für die Darstellung tragfähig, sofern Lücken (Stern-Original, Partnerberichte, Golf-Beteiligungen, Skyranger-Lieferkette) sichtbar bleiben; Netzkanten nach Korrektur e29/e30/e02/e04/e47 darstellbar. Medienrecherche (Fachmedien/Nachrichten, Gegenrecherche) ist in coverage dokumentiert.",
-   "private_data": "Profil enthält nur berufliche Angaben; Jahrgang/Nationalität (Vorstandsseite, HGB-Abschluss) und Vergütungs-/Sicherheitsangaben bewusst nicht übernommen; keine E-Mail-Adressen o. ä. in Claims."
-  },
-  "coverage_checked": "Auftragsabdeckung: Flugabwehr-Technologien/industrielle Anforderungen/Wettbewerb (Portfolio, Cluster, Markt-Peers nach comparison-plan v1), Markt-Deep-Dive Europa (9 Länder, SIPRI-Kontext, Programme, Rollen, Zugang), Gesprächspartner Papperger (Rolle öffentlich belegt; Nutzerangabe nicht als Beleg). Unternehmensweites Portfolio deckt alle fünf fortgeführten Divisionen, U.S.-Geschäft und nicht fortgeführte Power Systems ab; Deep-Dive verengt die Portfolio-Breite nicht."
+  "summary": "Runde 2: 11 geänderte und 1 neuer Claim (M-DE-ARM-01) gezielt am Original neu geprüft, neue Quelle S-d2d239c37b99eddf gelesen; alle geänderten module_views (events, topics, products, regional_presence, observations, market_dashboard) und Netzkanten e02/e04/e29/e30/e47 semantisch geprüft; 209 unveränderte Claims mit unverändertem Snapshot ausdrücklich aus Runde-1-Befund bestätigt. Alle Runde-1-Korrekturen und material_errors sind behoben.",
+  "cache_state": "137 Registerquellen im Laufcache; kein Snapshot gegenüber r1 geändert; neue Registerquelle S-d2d239c37b99eddf entspricht dem in Runde 1 gelesenen Snapshot (c718b1a9…). Keine neuen Webabrufe.",
+  "formal_checks": "check-review-data.py review-packet.json: Exit 0; facts-validation errors=[]. Formal ist keine Inhaltsfreigabe.",
+  "remaining_nonblocking": [
+   "A-CH-OCH.description endet mit „;“ (kosmetisch, portfolio).",
+   "Portfolio-Preview „BAAINBw Mitte 2027“ ohne Zusatz „laut Capital/dpa“ – im Detail T-AD-06 korrekt zugeschrieben (optional, portfolio).",
+   "e30-Zusammenfassung nennt 225 Pandur EVO aus Kantenquelle ORF, nicht aus C-019-Text (optional, cluster).",
+   "Cluster-Modulstatus „teilweise“: Lücken (Stern-Original, Partnerberichte, Golf-Beteiligungen, Lieferkette) sichtbar führen; kein Hinderungsgrund."
+  ],
+  "open_limits": "Capital/Stern/BAAINBw-Originale nicht geöffnet (Verzug strittig dargestellt); Köhne-Wechsel nur als Ankündigung; Bundeswehr-Großauftrag nicht belegt (kein Negativbeweis); Lieferstände teils nur laut Hersteller."
  },
- "module_view_corrections": [
-  {
-   "module": "context",
-   "view": "events",
-   "item": "ev-nvl-closing",
-   "owner": "context",
-   "reason": "Datum 2026-03-01 widerspricht Closing 27.02.2026 laut GB/HJFB.",
-   "action": "Auf 2026-02-27 setzen, Übergangsstichtag 1.3.2026 im Label nennen (mit T-EV-03)."
-  },
-  {
-   "module": "context",
-   "view": "topics.air_defence.sections[Führung und Gremien]",
-   "item": "T-AD-04",
-   "owner": "context",
-   "reason": "Dürr als aktuelle Leitung dargestellt; laut Fachmedium Wechsel zum 1.10.2026 angekündigt.",
-   "action": "Historisch kennzeichnen, C-050 (Ankündigung) referenzieren."
-  },
-  {
-   "module": "portfolio",
-   "view": "regional_presence R-CH/A-CH-OCH",
-   "item": "description",
-   "owner": "portfolio",
-   "reason": "„Skyranger-30-Demonstrator dort Ende 2023 getestet“ ist durch P-REG-CH-01/P-SVC-01 nicht belegt.",
-   "action": "Satz streichen oder belegenden Claim ergänzen."
-  },
-  {
-   "module": "portfolio",
-   "view": "regional_presence R-CEE/A-LT-JON, A-LT-BAI",
-   "item": "ownership_note/description",
-   "owner": "portfolio",
-   "reason": "KNDS-Mitgesellschaft nicht durch referenzierte Claims belegt; „frühestens 2026“ statt „bereits 2026“.",
-   "action": "Mit P-REG-LT-01-Korrektur anpassen; KNDS-Angabe belegen oder entfernen."
-  },
-  {
-   "module": "portfolio",
-   "view": "products.skyranger30.label",
-   "item": "„Piranha/8x8“",
-   "owner": "portfolio",
-   "reason": "Piranha V nur sekundär (C-021/M-DK-SKR-01) und nicht in den Produkt-claim_ids.",
-   "action": "C-021/M-DK-SKR-01 referenzieren oder Label „8x8 (Dänemark)“."
-  },
-  {
-   "module": "portfolio",
-   "view": "topics.air_defence.preview",
-   "item": "„Bundeswehr-Serie laut S&V ab Q4 2027“",
-   "owner": "portfolio",
-   "reason": "Strittige Zeitangabe einseitig; BAAINBw nennt laut Capital/dpa „ab Mitte 2027“, Rheinmetall gegenüber dpa „2027/2028, fünf Monate später abgeschlossen“.",
-   "action": "Preview als „Serienbeginn Bundeswehr strittig (S&V: Q4 2027; BAAINBw laut Capital: ab Mitte 2027)“ formulieren."
-  },
-  {
-   "module": "market",
-   "view": "market_dashboard.de.programmes.de_skr30.next_step",
-   "item": "„laut Rheinmetall ab Q4 2027“",
-   "owner": "market",
-   "reason": "Q4 2027 ist S&V-Recherche; Rheinmetall nennt ~6 Monate (S&V) bzw. 5 Monate/2027–2028 (dpa). Überzuschreibung.",
-   "action": "„laut S&V ab Q4 2027 (Rheinmetall: ca. sechs bzw. fünf Monate Verzug); BAAINBw laut Capital: ab Mitte 2027“."
-  },
-  {
-   "module": "market",
-   "view": "market_dashboard.de.programmes.de_nnbs.status_date",
-   "item": "2026-09-23",
-   "owner": "market",
-   "reason": "status=contracted, aber Datum ist die Billigung eines Änderungsvertrags (Unterzeichnung nicht belegt); Entwicklungsvertrag wurde am 2024-01-25 unterzeichnet.",
-   "action": "status_date 2024-01-25; Änderungsvertrag nur in next_step."
-  },
-  {
-   "module": "market",
-   "view": "market_dashboard.pl.roles.missiles",
-   "item": "PGZ role=license",
-   "owner": "market",
-   "reason": "Narew-Quelle belegt Unterauftrag/Technologieteilung, keine Lizenzfertigung; markt-deepdive.md verbietet Rollenableitung aus Partnerschaft.",
-   "action": "Eintrag entfernen (gap_reason) oder als integration nur mit Beleg der Systemintegrator-Rolle."
-  },
-  {
-   "module": "market",
-   "view": "market_dashboard.de.roles.guns",
-   "item": "Rheinmetall Neuss „Medien und Unternehmensangabe“",
-   "owner": "market",
-   "reason": "Referenzierter C-053 belegt Neuss nur medial; Unternehmensangabe (Neuss Production Site) steht in P-AD-01.",
-   "action": "P-AD-01 referenzieren oder Text auf „laut Fachmedium“ begrenzen."
-  },
-  {
-   "module": "market",
-   "view": "observations.OBS-rhm_skynex-eu_customers",
-   "item": "3 Staaten",
-   "owner": "market",
-   "reason": "P-SKX-02 (referenziert) nennt laut Rheinmetall-Italia-CEO auch Österreich (sieben Batterien, Abgrenzung zu Skyguard NG unklar); Auslassung ohne Begründung.",
-   "action": "Österreich als unklare CEO-Angabe ausweisen oder Ausschluss begründen."
-  },
-  {
-   "module": "market",
-   "view": "market_dashboard.at.programmes.at_skyguard_ng.status_date",
-   "item": "2024-02-23",
-   "owner": "market",
-   "reason": "Beschluss laut Quelle Dezember 2023; 2024-02-23 ist das Mitteilungsdatum (geringfügig).",
-   "action": "Als Mitteilungsdatum kennzeichnen oder Beschlussmonat nennen."
-  },
-  {
-   "module": "cluster",
-   "view": "network e29/e30",
-   "item": "Österreich-Vertragsstruktur",
-   "owner": "cluster",
-   "reason": "siehe C-019",
-   "action": "siehe C-019"
-  },
-  {
-   "module": "cluster",
-   "view": "network e02/e04",
-   "item": "product_ids",
-   "owner": "cluster",
-   "reason": "siehe C-001/C-004",
-   "action": "siehe C-001/C-004"
-  },
-  {
-   "module": "cluster",
-   "view": "network e47",
-   "item": "summary",
-   "owner": "cluster",
-   "reason": "siehe C-032",
-   "action": "siehe C-032"
-  }
- ],
  "source_checks": [
   {
    "source_id": "S-00676d9d1d5efc0a",
@@ -159,7 +28,7 @@
    ],
    "content_sha256": "e7dcae6a0fd1c869f3e35d1c45595d0840e7eeb37c2b1e28d5fe64aca7fe20fe",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt e7dcae6a0fd1); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt e7dcae6a0fd1); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-01c26a442587afa5",
@@ -170,7 +39,7 @@
    ],
    "content_sha256": "9e66083297ceb9d0b276aa8b3ae49f41142e0dd59d0950f08d5e6bdb03371710",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 9e66083297ce); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 9e66083297ce); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-042b26990fdc2a9d",
@@ -179,7 +48,7 @@
    ],
    "content_sha256": "5c6775c76e8ce02c7a95fadbce270372929e9b1d6f96db4be5ac474ec9893611",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 5c6775c76e8c); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 5c6775c76e8c); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-04cc080af88f833d",
@@ -188,7 +57,7 @@
    ],
    "content_sha256": "0cb20930a867136f90fc70ad5e0e860cb32bfec16b7bc3c746bf5a162503dbc6",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 0cb20930a867); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 0cb20930a867); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-057484ce43bd0f28",
@@ -197,7 +66,7 @@
    ],
    "content_sha256": "9ef48da0000d3c08f8700e9c22d3a50cf70aa2b991d750c3af59c2359e1130dc",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 9ef48da0000d); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 9ef48da0000d); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-081455a6101c816e",
@@ -206,7 +75,7 @@
    ],
    "content_sha256": "ac9fd7aa4dfc3c9a59eb293063d026112c6d20217d3ad791a9ce1681fb1d7937",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt ac9fd7aa4dfc); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt ac9fd7aa4dfc); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-09c52404c1b93824",
@@ -215,7 +84,7 @@
    ],
    "content_sha256": "0c6382753b8c40aa9a34035d3ffba584ed87c5c4501b7ef2d220a18692e960de",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 0c6382753b8c); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 0c6382753b8c); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-0b3ae3c34f44afc0",
@@ -224,7 +93,7 @@
    ],
    "content_sha256": "a845e5b798a1a2b245750a46a6703a09c5e73bf8e3785f23d038e591f38df2bc",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt a845e5b798a1); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt a845e5b798a1); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-0d1aacb2a960fe0b",
@@ -233,7 +102,7 @@
    ],
    "content_sha256": "92c8dd0ca921d34f3422c85662aa51734cdbcb049268d814b1a09e1e87f93a65",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 92c8dd0ca921); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 92c8dd0ca921); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-10079a15b0d54839",
@@ -242,7 +111,7 @@
    ],
    "content_sha256": "27e36f8dbedd27c146c5e394a32ca2c15973ef7ec7d1018a6a65d705bd7b3dbd",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 27e36f8dbedd); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 27e36f8dbedd); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-12a6733e8d06cf75",
@@ -251,7 +120,7 @@
    ],
    "content_sha256": "a3b300c6ccd38e74fea7fb7fce04b66bbdc68accc6919525a0308e85d4944c16",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt a3b300c6ccd3); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt a3b300c6ccd3); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-12e946370fcf4e20",
@@ -260,7 +129,7 @@
    ],
    "content_sha256": "a5a073334c2865bfebad08eac3903df4c7c00b415bdf86893033726c8cb24597",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt a5a073334c28); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt a5a073334c28); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-168108fb27118dde",
@@ -269,7 +138,7 @@
    ],
    "content_sha256": "c465304cc0c0e99d7ff586364461c2de53b20c0baf4345dd0eb99c863cd239d6",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt c465304cc0c0); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt c465304cc0c0); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-16d1e80677f1a6b8",
@@ -278,7 +147,7 @@
    ],
    "content_sha256": "65813cd8e4095e9c4f16b288d605edb2cada9c002a8ca6f4c3af69c2523bf95e",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 65813cd8e409); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 65813cd8e409); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-18ce19a1fbbec148",
@@ -288,7 +157,7 @@
    ],
    "content_sha256": "2f906ae59a3a1cf38a73cd1fe15081b43928ee1c191ac267523516f2f07823fa",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 2f906ae59a3a); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 2f906ae59a3a); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-19e53c95b8305269",
@@ -297,7 +166,7 @@
    ],
    "content_sha256": "a3611b312a1d937db4fc4e8c3ee7fa9a2b406cf495407763b6f96fbcd7a4b0fe",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt a3611b312a1d); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt a3611b312a1d); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-1ee3bed35c316be7",
@@ -306,7 +175,7 @@
    ],
    "content_sha256": "30f738322b6da7a3dd7e10ca9eeb6121c3ade62018cb38b9f64a23d4fd4701d7",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 30f738322b6d); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 30f738322b6d); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-1f76748059d5008c",
@@ -315,7 +184,7 @@
    ],
    "content_sha256": "bcb93cee876ab196daa76d4d1a85c9fe330d71c45ccd02790009e45c8743e01f",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt bcb93cee876a); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt bcb93cee876a); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-2185a7a52eb76e0d",
@@ -324,7 +193,7 @@
    ],
    "content_sha256": "70de1e9d55e2401b18dc30fb5e32645669792920e848807c8bdc425c0fad79c1",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 70de1e9d55e2); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 70de1e9d55e2); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-29616d5aef4d2b76",
@@ -333,7 +202,7 @@
    ],
    "content_sha256": "1ac21497b758330a1e05e9e0a04fe8ffe56e782e4c7c51d39c49f41da8c47b9f",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 1ac21497b758); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 1ac21497b758); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-2b24723c99b5458a",
@@ -342,7 +211,7 @@
    ],
    "content_sha256": "2b01db7ec69d5df0e3f515fbe3901a317c9dd7d87ae63a974bba92f28fef2817",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 2b01db7ec69d); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 2b01db7ec69d); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-2d3cddf7945e1791",
@@ -351,7 +220,7 @@
    ],
    "content_sha256": "34e5e6ef8d958b7ae64cf942b9af2324c13aa903fd94793f0ce1a9956ebad395",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 34e5e6ef8d95); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 34e5e6ef8d95); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-2f18768b2b3d8649",
@@ -360,7 +229,7 @@
    ],
    "content_sha256": "fcbe2971cae7bdb08a47c62c9c2e5e467cd5914d6350010604ec6a942a085a4b",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt fcbe2971cae7); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt fcbe2971cae7); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-310ddb82949667f5",
@@ -369,7 +238,7 @@
    ],
    "content_sha256": "ceff33aee9d03660f1fd8501e126d5feff013596f0c75441a32a67f8b38782dd",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt ceff33aee9d0); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt ceff33aee9d0); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-31c2ac5b48b0cde3",
@@ -382,7 +251,7 @@
    ],
    "content_sha256": "040b1332986379c86ebba6a68c76630e6cce3e34cd664b4ed384a7dafe621cad",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 040b13329863); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 040b13329863); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-39222fba59e057e4",
@@ -391,7 +260,7 @@
    ],
    "content_sha256": "f35f392c6fd1a8e50be14e968d9c95a84551ccc23e2e40ee61af7704366507e3",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt f35f392c6fd1); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt f35f392c6fd1); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-397e8414020bdb92",
@@ -404,7 +273,7 @@
    ],
    "content_sha256": "30f7d4fb7b61fb9c18d9b3979bd65565ce664806abde674764da4b7f241d0ddc",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 30f7d4fb7b61); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 30f7d4fb7b61); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-3b27cf3712ca73d2",
@@ -414,7 +283,7 @@
    ],
    "content_sha256": "821dd1bce62ab04d8157be99c29450da5556efcc67fc7b38407839e821c3f0ca",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 821dd1bce62a); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 821dd1bce62a); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-3b33c5118cdc79d2",
@@ -423,7 +292,7 @@
    ],
    "content_sha256": "c6d13e5f66762ec7446f9af512c82714dd3b81e3f5df0dcd8d40d187dc6a0e59",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt c6d13e5f6676); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt c6d13e5f6676); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-3ba304da81a26074",
@@ -432,7 +301,7 @@
    ],
    "content_sha256": "79103aee21cd71e01a3ab7052b868fcba5b18d067aacda35929cbc374bfe1ee0",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 79103aee21cd); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 79103aee21cd); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-3c0148ccd2c8eee9",
@@ -441,7 +310,7 @@
    ],
    "content_sha256": "a38fae985fd6e10cc0a4d7a001a3cc6acc07b39c2d4138bcd702bc28c7d27623",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt a38fae985fd6); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt a38fae985fd6); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-3c3ad4b4354adf5e",
@@ -450,7 +319,7 @@
    ],
    "content_sha256": "b76cd63e3f826ac2f387b8fd227cfb3de495e20e5e7b3c412a8946e1c9b86dc3",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt b76cd63e3f82); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt b76cd63e3f82); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-3cb560602baefeec",
@@ -459,7 +328,7 @@
    ],
    "content_sha256": "36ac5a680eba2d8faf1ddbe6118a69c5fe9cf7730cac9fbe7a84df0b58d15331",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 36ac5a680eba); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 36ac5a680eba); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-3d1ac94ea50adfec",
@@ -469,7 +338,7 @@
    ],
    "content_sha256": "b9d93b1676f97ccd53128fa79788cf48972764e6c6b7e3a97d6234e2f4600cc9",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt b9d93b1676f9); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt b9d93b1676f9); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-3dad8b811c925694",
@@ -487,11 +356,12 @@
     "P-REG-RO-01",
     "P-STR-02",
     "P-STR-03",
-    "T-EMP-02"
+    "T-EMP-02",
+    "T-EV-03"
    ],
    "content_sha256": "214decfe1cd910eedff5de83482a93f410fb63d3e92a852c34d543790d07098c",
    "capture_kind": "http-original",
-   "note": "Halbjahresfinanzbericht 2026 (PDF) gelesen: Kennzahlenübersicht Personal S. 2, Wesentliche Ereignisse S. 8–11 (NVL-Erwerb 27.02.2026, Zivilverkauf AEQH40, DOK-ING, Kraken, FV-014, Puma, Rumänien), Segment Air Defence S. 17."
+   "note": "Halbjahresfinanzbericht 2026 (PDF) gelesen: Kennzahlenübersicht Personal S. 2, Wesentliche Ereignisse S. 8–11 (NVL-Erwerb 27.02.2026, Zivilverkauf AEQH40, DOK-ING, Kraken, FV-014, Puma, Rumänien), Segment Air Defence S. 17. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-3ef169e9e35e0c9a",
@@ -502,7 +372,7 @@
    ],
    "content_sha256": "4afebd8d605d7dddf8a91ce5c4d77c879d33fc533d4bc91208e62498ee36fa99",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 4afebd8d605d); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 4afebd8d605d); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-3f67bc2e13a1b02e",
@@ -513,7 +383,7 @@
    ],
    "content_sha256": "04017585d62b62721a4c169ad3f827deab78403327cb45e8b6b7feb0164c4894",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 04017585d62b); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 04017585d62b); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-47771a7dd8c927d5",
@@ -524,7 +394,7 @@
    ],
    "content_sha256": "b913794ff36558b9b142e371b234b86dc393c9a53b345d13e9f69f5cbab00d86",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt b913794ff365); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt b913794ff365); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-4789a4ac6acb59aa",
@@ -534,7 +404,7 @@
    ],
    "content_sha256": "69985ee16ab480477ab94ad0f7bf1d2a0291b44639496c2beaac645481be03dc",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 69985ee16ab4); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 69985ee16ab4); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-479bad9fdf088fc9",
@@ -543,17 +413,18 @@
    ],
    "content_sha256": "80da10dcc2ec390fff9eacb003c122b68b8dc8648ab6bc576632e5a493403f77",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 80da10dcc2ec); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 80da10dcc2ec); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-4a13b2786b5cc66a",
    "claim_ids": [
     "C-054",
+    "M-DE-ARM-01",
     "P-VS-04"
    ],
    "content_sha256": "3d373c4b9a1cf63deb198ce8b1ca271b99a8cfb187c10744ac4ba53b9df1a301",
    "capture_kind": "http-original",
-   "note": "Q3-Recap 05.10.2026 gelesen: XM30-Prototypen September, Arminius-Festvertrag bis Jahresende erwartet, Q3-Termin 05.11.2026, Investitionsschwerpunkte."
+   "note": "Q3-Recap 05.10.2026 gelesen: XM30-Prototypen September, Arminius-Festvertrag bis Jahresende erwartet, Q3-Termin 05.11.2026, Investitionsschwerpunkte. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-4d0e53f502fb320c",
@@ -563,7 +434,7 @@
    ],
    "content_sha256": "6d21580346dad51ccc38482d41f787c9e90783704c776018d63b2b0d0eca5923",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 6d21580346da); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 6d21580346da); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-4e85b953fe46a8de",
@@ -572,7 +443,7 @@
    ],
    "content_sha256": "dd5daa36815d203d68b6bae088d924d18cb91d8a5104be978506967a926002db",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt dd5daa36815d); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt dd5daa36815d); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-4f9807383dbfe574",
@@ -581,7 +452,7 @@
    ],
    "content_sha256": "e7da0e621a8a87cfafe80f56f8a81ec418ec8cc10938bb8c4152402714bc8ac9",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt e7da0e621a8a); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt e7da0e621a8a); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-4faa3a733781f031",
@@ -590,7 +461,7 @@
    ],
    "content_sha256": "b1f44c4b967d5ebb494ad76ed8a125a0671f964dd3b1f183bf5743cc06bde661",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt b1f44c4b967d); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt b1f44c4b967d); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-502271d8acddfb1e",
@@ -599,7 +470,7 @@
    ],
    "content_sha256": "ced56c7b4fc2e29998f97d7cbc28cc99410794c08a6de22f818a14b90db9f2f4",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt ced56c7b4fc2); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt ced56c7b4fc2); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-504b2773565ae51b",
@@ -608,7 +479,7 @@
    ],
    "content_sha256": "51ab350e5085c623f4fa7ed5f77eb571c779a8b738ae8164524ae819a833607c",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 51ab350e5085); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 51ab350e5085); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-513daa2ae2be3e14",
@@ -619,7 +490,7 @@
    ],
    "content_sha256": "a67590ae0f4f8979eefb6d93b145a2440c14e0d24cc971d8201444bbfa96a4bf",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt a67590ae0f4f); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt a67590ae0f4f); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-51d8de61559f69f0",
@@ -628,7 +499,7 @@
    ],
    "content_sha256": "0993d44f976cda3ff3852b093b0e68ad9f05e3dd93b0323fe54faa1348a3d91c",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 0993d44f976c); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 0993d44f976c); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-5366eb8816ff2cea",
@@ -637,7 +508,7 @@
    ],
    "content_sha256": "75cf397990ec8ca99b2381b5c09f6238019ce78b3b1f7a628308c8a29003328c",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 75cf397990ec); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 75cf397990ec); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-5a9d049f8f71abd3",
@@ -646,7 +517,7 @@
    ],
    "content_sha256": "46169a0ab9c3e0d3c5986cccf5395588ac96fc50cfbf191d4eb29a7531f36f9a",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 46169a0ab9c3); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 46169a0ab9c3); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-5ae98f51c19ce9e2",
@@ -655,7 +526,7 @@
    ],
    "content_sha256": "518dfd21f82f3eba8bdf70ef8834f87a13cbfc29dbe330d42443fa5514c51f03",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 518dfd21f82f); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 518dfd21f82f); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-5b8b39f37cd6b51d",
@@ -664,7 +535,7 @@
    ],
    "content_sha256": "cd16054e8bfec77b10ee93b6b7c014530ce55382065ba4770326c0b067c3a07e",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt cd16054e8bfe); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt cd16054e8bfe); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-5ba566671c688dae",
@@ -673,7 +544,7 @@
    ],
    "content_sha256": "efcfae13d46ac47938affea6458afe357293c79d82c07be76dd0fee76b39e8f9",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt efcfae13d46a); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt efcfae13d46a); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-5bb9a49af968005c",
@@ -682,7 +553,7 @@
    ],
    "content_sha256": "5e564f3c06bae5e913389f3df705505950ade6c96a7b7b89a4af6841ee6a65af",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 5e564f3c06ba); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 5e564f3c06ba); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-5dad3a27cd832a61",
@@ -691,7 +562,7 @@
    ],
    "content_sha256": "52992260fe4717756ef8269eefc7d84fe293002a425b9fee2ad1c7d1fea23e36",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 52992260fe47); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 52992260fe47); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-5f102cfea2da2738",
@@ -714,7 +585,7 @@
    ],
    "content_sha256": "70b17f8f578df934e3a6d2bf8631acf980f14b940352268a45f613d3e8ca2113",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 70b17f8f578d); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 70b17f8f578d); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-60677f3d57da054d",
@@ -723,7 +594,7 @@
    ],
    "content_sha256": "f75985927db8167f44b7231cc35b89d0a5844ea7535d7d9eabafc36c2dc18e66",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt f75985927db8); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt f75985927db8); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-6282cce4ae4b577f",
@@ -732,7 +603,7 @@
    ],
    "content_sha256": "00421d7b86b7f0166d9ff9dff27d5f69492417cd49d4ab64fbf34c4677c02463",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 00421d7b86b7); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 00421d7b86b7); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-63ef3755ffe55169",
@@ -741,7 +612,7 @@
    ],
    "content_sha256": "ad34fa9059b3e22ed4d2a9f1a53b23b2defe4d4e5ac7536b683c8aa868e51cb4",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt ad34fa9059b3); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt ad34fa9059b3); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-6410acb24c745d46",
@@ -751,7 +622,7 @@
    ],
    "content_sha256": "8524f2971bcdf584338fb4bed72387433033effc99ee88385eeef9c9c536054e",
    "capture_kind": "http-original",
-   "note": "S&V 15.06.2026 vollständig gelesen (Beschaffung im Detail, Gründe der Verzögerung, Zwischenlösung)."
+   "note": "S&V 15.06.2026 vollständig gelesen (Beschaffung im Detail, Gründe der Verzögerung, Zwischenlösung). Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-6a3c2e1e456f2080",
@@ -760,7 +631,7 @@
    ],
    "content_sha256": "600bbe33f593976e06df929b670a5597fcc64c47e0bced6edfc504fb89633ab2",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 600bbe33f593); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 600bbe33f593); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-6af38e87216bc1d2",
@@ -769,7 +640,7 @@
    ],
    "content_sha256": "f6b4c9243cf766edb3cb6eb5793f430934d6752cf346c2d77e468e142a26f35a",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt f6b4c9243cf7); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt f6b4c9243cf7); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-6bdb338d23c29e11",
@@ -780,7 +651,7 @@
    ],
    "content_sha256": "a1f7e7677f9f28ad89c100b24bf6841d199f090f7eaac446a154c9573551adc1",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt a1f7e7677f9f); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt a1f7e7677f9f); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-6ceae77f0e11c121",
@@ -790,7 +661,7 @@
    ],
    "content_sha256": "23ace4714ef858ecd6f2245de5d8f35bfc8599d111a647b70d28cb8183f3c1c5",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 23ace4714ef8); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 23ace4714ef8); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-6d57eca962a765ae",
@@ -799,7 +670,7 @@
    ],
    "content_sha256": "950bc29ce9003aff894195078cfd3b58338fe701861df7d7acd8f011431c5a2d",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 950bc29ce900); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 950bc29ce900); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-7066a889ca7eaad4",
@@ -808,7 +679,7 @@
    ],
    "content_sha256": "865da018ab2643a8718341a6ffaafc3f596c01fcdb128098a6e537c6bd4b425f",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 865da018ab26); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 865da018ab26); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-747870b3bc879dff",
@@ -817,7 +688,7 @@
    ],
    "content_sha256": "cb1d3a52c7834601cc165cde1d07b47535aabc57a5dcadc93315b6ca182b483f",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt cb1d3a52c783); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt cb1d3a52c783); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-764b0868c9a4f470",
@@ -826,7 +697,7 @@
    ],
    "content_sha256": "3438ab3e7e4770d93ab45fa13feeb18a2d2e0ae01e8725457c4ce27609bf60be",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 3438ab3e7e47); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 3438ab3e7e47); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-76d1cd6d4bfaa83c",
@@ -838,7 +709,7 @@
    ],
    "content_sha256": "c7e6d1442db883fc57fd0376aa962d8ebe202cbe0cb04844ba59f57eee1a1420",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt c7e6d1442db8); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt c7e6d1442db8); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-77116a48034eea1f",
@@ -847,7 +718,7 @@
    ],
    "content_sha256": "4f36a1499507aad5e7d66b6ca8986eb0df0895a1fa50b3e6c0f1d57c97dd2050",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 4f36a1499507); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 4f36a1499507); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-7730735b980263ed",
@@ -865,7 +736,7 @@
    ],
    "content_sha256": "6cc3a30b1064f9f02e60236667eef82e08cad42910ce630909d004ad2c398a9d",
    "capture_kind": "http-original",
-   "note": "SIPRI-XLSX v1.2 als Original mit openpyxl ausgewertet (Werte, Schriftfarbe, Fußnotenblatt)."
+   "note": "SIPRI-XLSX v1.2 als Original mit openpyxl ausgewertet (Werte, Schriftfarbe, Fußnotenblatt). Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-7b3ad8192958d374",
@@ -875,16 +746,17 @@
    ],
    "content_sha256": "cc39e0e7a65a5f8c0b064c80b1d0eb6408c78fe62c7379e3b65ffd591dca1880",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt cc39e0e7a65a); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt cc39e0e7a65a); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-7c3ae12304f6c154",
    "claim_ids": [
+    "C-019",
     "M-AT-SKR-02"
    ],
    "content_sha256": "6443f41f5ba7379ab67d969c4e37510b4e73fd74ce27848a1ad199d959f20abd",
    "capture_kind": "http-original",
-   "note": "PM 23.02.2024 gelesen: Rheinmetall Unterauftragnehmer von GDELS, 36 Systeme, Mistral, Skyguard NG (Dez. 2023) – relevant auch für C-019/Netz."
+   "note": "PM 23.02.2024 gelesen: Rheinmetall Unterauftragnehmer von GDELS, 36 Systeme, Mistral, Skyguard NG (Dez. 2023) – relevant auch für C-019/Netz. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-7d3cceefdfc28f58",
@@ -893,7 +765,7 @@
    ],
    "content_sha256": "96e9e274cf308f658e4fa7daf41fe7c3f844cd09920101e0dcdaa0ff8726fc89",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 96e9e274cf30); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 96e9e274cf30); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-8004062626d5c0ad",
@@ -903,7 +775,7 @@
    ],
    "content_sha256": "22d7a94163c36b61f25ff63ecec507bb565c42590eb88b4306dbcc5cab3f07c6",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 22d7a94163c3); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 22d7a94163c3); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-8119028d88f698cb",
@@ -912,7 +784,7 @@
    ],
    "content_sha256": "149e01c8c15c7a371a996f4a3e72c0aa5dfdcabb9983cf10a8b878f6cac4acc0",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 149e01c8c15c); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 149e01c8c15c); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-827c64d441de8f6e",
@@ -927,7 +799,7 @@
    ],
    "content_sha256": "4b2645d68352518aed6f3f683e7b87dc3c4493ebc65153223fd9c45d20939f49",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 4b2645d68352); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 4b2645d68352); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-829c43465e63a592",
@@ -936,7 +808,7 @@
    ],
    "content_sha256": "6007e13e6c0b195a6887afb6d331c9fbed95aa13402cfea0d2f9e663f3b9c68b",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 6007e13e6c0b); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 6007e13e6c0b); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-84a5e99e7ff45dc4",
@@ -945,7 +817,7 @@
    ],
    "content_sha256": "95b4201e2875233806879c80d56b7a627429a641d9a24143911ba5c8f4fb9dde",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 95b4201e2875); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 95b4201e2875); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-860fb5a5ec516912",
@@ -955,7 +827,7 @@
    ],
    "content_sha256": "68e577e87fa19b4c6098d406ddbc9297ea2d3a3cb5466b1f8825d63c07a98176",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 68e577e87fa1); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 68e577e87fa1); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-879737fc228c4bec",
@@ -964,7 +836,7 @@
    ],
    "content_sha256": "043d07181531c75b46c0feae11587e3f3294067886fdca2cf4cc33cc403ab7cf",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 043d07181531); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 043d07181531); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-92d7be3f0dda7317",
@@ -973,7 +845,7 @@
    ],
    "content_sha256": "21c3a52cb14e3496586952b615ab0616922480ec6cc37cca903bee9796ccdb84",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 21c3a52cb14e); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 21c3a52cb14e); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-931d769d72f5fc8d",
@@ -982,7 +854,7 @@
    ],
    "content_sha256": "037c66f74678ae8d4339ec137141cb37aefa5487868f1127457d26f9f4100a47",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 037c66f74678); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 037c66f74678); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-93a2ee05910f4b53",
@@ -991,7 +863,7 @@
    ],
    "content_sha256": "86904b8007dd17cd63afd9a77b63208003920601188250edb982e26e00a61593",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 86904b8007dd); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 86904b8007dd); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-957ebff673ab8d20",
@@ -1001,7 +873,7 @@
    ],
    "content_sha256": "65297495bd253d1cc33bf462991791e37d5de03a7f4d0ed3196ecbf11224109b",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 65297495bd25); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 65297495bd25); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-96bd500dc205c229",
@@ -1010,7 +882,7 @@
    ],
    "content_sha256": "4b74fd9eeb5484c4a2359f96202b36658cffa396ab72a53a770e2ce1df82ab1f",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 4b74fd9eeb54); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 4b74fd9eeb54); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-9bba6057c1bcc3e4",
@@ -1019,7 +891,7 @@
    ],
    "content_sha256": "aa7cec407ca948528252296abf599ad09d6e535f6482fb945cf8290d9f2c5522",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt aa7cec407ca9); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt aa7cec407ca9); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-9d01bc5d2a34d23a",
@@ -1028,7 +900,7 @@
    ],
    "content_sha256": "e17901caa037648d7c6e79a7be8f1f979589df1383d6b0f6eafaab7f97400ab4",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt e17901caa037); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt e17901caa037); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-9dd1c8db93851703",
@@ -1037,7 +909,7 @@
    ],
    "content_sha256": "c1313f0eaecd0c6b3cea453c7f326429fae36b88d971c5ae4c92e953a1772919",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt c1313f0eaecd); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt c1313f0eaecd); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-a21018e8e5b5c677",
@@ -1046,7 +918,7 @@
    ],
    "content_sha256": "aef1ebaddc20d23b3696e1a97f538ffc72b5d86ed6370292de0f88a4d239f408",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt aef1ebaddc20); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt aef1ebaddc20); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-a4d54f5d3aa32d9d",
@@ -1055,7 +927,7 @@
    ],
    "content_sha256": "67ed8d1b7033734487634c56d70951c5cc7ae821afa6a2499f570f6a81eb1572",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 67ed8d1b7033); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 67ed8d1b7033); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-a71e6718503ae138",
@@ -1064,7 +936,7 @@
    ],
    "content_sha256": "ccf6c43401d26e732c3cbae83a89d17eb412ca9f312028ca628d157b26496b76",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt ccf6c43401d2); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt ccf6c43401d2); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-a8887f614647359f",
@@ -1078,7 +950,7 @@
    ],
    "content_sha256": "090df9ef146d917fb9a3e89bd0b925cc23ef56cd9ab926bf8be38b9b27b7f129",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 090df9ef146d); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 090df9ef146d); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-aa0faa4814b4b297",
@@ -1087,7 +959,7 @@
    ],
    "content_sha256": "3c35204db80b4f868de7336fa95c8141f13da430a51457d0e3b77cb292a4a062",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 3c35204db80b); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 3c35204db80b); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-ace6606b74478d86",
@@ -1096,7 +968,7 @@
    ],
    "content_sha256": "97c73797c1e25207985ce518b50c3719c552e2bda9c7a02bfe4b471a4318b1b1",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 97c73797c1e2); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 97c73797c1e2); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-b003618b3ae9eba2",
@@ -1106,7 +978,7 @@
    ],
    "content_sha256": "480efd8f260c11c26beb0fd4ce50a972a2843eda3dfe6383ce8782644c5e1a59",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 480efd8f260c); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 480efd8f260c); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-b77a4ef54de1562f",
@@ -1115,7 +987,7 @@
    ],
    "content_sha256": "474596ab2d7cf1d0e717a4417d17392f9352d64420b2e90a8e6819fcaac430eb",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 474596ab2d7c); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 474596ab2d7c); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-b8a3496f93a22c8c",
@@ -1125,7 +997,7 @@
    ],
    "content_sha256": "fe23763867f99983d10e21c20d235bfa1f025d0e4d5e49cab3037405ed14a0e4",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt fe23763867f9); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt fe23763867f9); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-b99b85b72dbd1baf",
@@ -1134,7 +1006,7 @@
    ],
    "content_sha256": "b5b3ba7b89a38476485a0b66a259eeceef88b6a3491d3d65d65756f60e0d492e",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt b5b3ba7b89a3); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt b5b3ba7b89a3); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-bf3aaa0b85ea54a2",
@@ -1143,7 +1015,7 @@
    ],
    "content_sha256": "befdd4071f9a36dbda8d6aea0115ad742db2d857ecbd5919c987ccc5e814693f",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt befdd4071f9a); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt befdd4071f9a); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-c0d13e5db6387716",
@@ -1160,7 +1032,7 @@
    ],
    "content_sha256": "bda9e63c53b386b913ed880b221234fcf804221975e133e669d5acc95c373689",
    "capture_kind": "http-original",
-   "note": "ILA-PM 10.06.2026 vollständig gelesen (Nutzerbasis-Abschnitt, Kapazitätsabsatz); enthält keinen Eurosatory-Hinweis."
+   "note": "ILA-PM 10.06.2026 vollständig gelesen (Nutzerbasis-Abschnitt, Kapazitätsabsatz); enthält keinen Eurosatory-Hinweis. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-c1dbe305c223e7e4",
@@ -1169,7 +1041,7 @@
    ],
    "content_sha256": "52e2fbbf1dd9fe9b342124674b6dd402b7f2e5c62efa3b39b0ebe5b3baea48d7",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 52e2fbbf1dd9); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 52e2fbbf1dd9); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-cbdf02d668299f56",
@@ -1178,7 +1050,7 @@
    ],
    "content_sha256": "3993c83f361db3ee56d0522dbaa00546fb745c094df850b9a5b4f2b51e968ed3",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 3993c83f361d); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 3993c83f361d); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-cc9cf45c8609a0d1",
@@ -1187,7 +1059,7 @@
    ],
    "content_sha256": "1803ae733594933a314c35f38817cf2f01ca14acff2b7d3c69f52b37fdb3c4b5",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 1803ae733594); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 1803ae733594); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-cd51559c12c6bc2e",
@@ -1197,16 +1069,17 @@
    ],
    "content_sha256": "2ba36ea5ff5f726309e8be23ba56a71f164ce7332ac9101fd6659d9048d58b18",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 2ba36ea5ff5f); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 2ba36ea5ff5f); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-cede873d57924937",
    "claim_ids": [
+    "P-REG-RO-01",
     "T-EV-06"
    ],
    "content_sha256": "b04dced028a2813443dea3659eb30d36a0354477ba11fb49bcecfb3ee5eb9bdf",
    "capture_kind": "http-original",
-   "note": "PM 02.06.2026 gelesen: Vergabe 29.05.2026, SAFE, 5,7 Mrd. EUR, Verträge unterzeichnet, Lieferung 2028–2030; enthält zudem die in P-REG-RO-01 fehlend belegten Aussagen (Heimatmarkt, Automecanica, mehrere hundert Mio. EUR)."
+   "note": "PM 02.06.2026 gelesen: Vergabe 29.05.2026, SAFE, 5,7 Mrd. EUR, Verträge unterzeichnet, Lieferung 2028–2030; enthält zudem die in P-REG-RO-01 fehlend belegten Aussagen (Heimatmarkt, Automecanica, mehrere hundert Mio. EUR). Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-cf7e773278387ae1",
@@ -1215,7 +1088,7 @@
    ],
    "content_sha256": "93f2dfaef8e04d966822fa20a11a5cc3b695fa97376f24bc87f151dc55eb8205",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 93f2dfaef8e0); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 93f2dfaef8e0); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-d1aafc1c9b0f1a75",
@@ -1225,7 +1098,16 @@
    ],
    "content_sha256": "67976f09be6a7b09df5e57a9ad59f693e4f082547346efce05584553d8be1316",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 67976f09be6a); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 67976f09be6a); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
+  },
+  {
+   "source_id": "S-d2d239c37b99eddf",
+   "claim_ids": [
+    "P-SKR-07"
+   ],
+   "content_sha256": "c718b1a995e3dfb1796880be8be7e9e985608fbb1610d568ed8cf17414fa97b2",
+   "capture_kind": "http-original",
+   "note": "PM 15.06.2026 (Eurosatory-Ankündigung) gelesen, Absatz 1: Skyranger 30 auf Lynx KF41 „will present“ – nur Ankündigung."
   },
   {
    "source_id": "S-d2ef86f50f08a3d3",
@@ -1234,7 +1116,7 @@
    ],
    "content_sha256": "31a26606d4f29e2a0907edd63cb46d92117d4a0aeab593f2b365e1c1ecd525d4",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 31a26606d4f2); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 31a26606d4f2); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-d32c73540389046f",
@@ -1243,7 +1125,7 @@
    ],
    "content_sha256": "49b8163f8936c624cc40957aa436cdceb8fdd755b2c12e63b93a38fe7f320abc",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 49b8163f8936); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 49b8163f8936); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-d5ab9c70470a478d",
@@ -1252,7 +1134,7 @@
    ],
    "content_sha256": "204133353423418055f7c7194310e77bc2cd103a5cfef182f51fe314ae9d789b",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 204133353423); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 204133353423); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-d776dc827ba55608",
@@ -1261,7 +1143,7 @@
    ],
    "content_sha256": "fe864fda4016aabd62860dfd9a5cad123d8e8fea4755018c2383424a04ff49b0",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt fe864fda4016); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt fe864fda4016); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-d7c2de50db0d079d",
@@ -1270,7 +1152,7 @@
    ],
    "content_sha256": "ba29fab0c319373f2d87deafd67ecd4ff488df94d785f40ee7f9aa7ddcf9ec99",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt ba29fab0c319); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt ba29fab0c319); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-ddb1d21cd09da6cf",
@@ -1279,7 +1161,7 @@
    ],
    "content_sha256": "f7573d469364a165b4bfe0063195a23cfa0a5e5db233e2827f5bd0eeea9a66e7",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt f7573d469364); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt f7573d469364); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-ddd98359e4352c31",
@@ -1288,7 +1170,7 @@
    ],
    "content_sha256": "e74527e72bf464862f8862cff203776a496d9dc925ce984517c6a97a054d313e",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt e74527e72bf4); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt e74527e72bf4); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-dffd12785279e32f",
@@ -1297,7 +1179,7 @@
    ],
    "content_sha256": "fbbd972c7db89024c9cabf21688bcf118bd716d637c92c053b1c4691c49033de",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt fbbd972c7db8); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt fbbd972c7db8); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-e4c101cb061aafcf",
@@ -1306,7 +1188,7 @@
    ],
    "content_sha256": "304ecfd117af28d304e67b7d9da8228a487c685d9c20a4403ae88d55d8fbbb67",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 304ecfd117af); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 304ecfd117af); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-e6e94711a0973745",
@@ -1315,7 +1197,7 @@
    ],
    "content_sha256": "fedb124de4ba003c0da0ba6c8bdbf12639ad9ec24aebd7d4b60207b0c35ac9a1",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt fedb124de4ba); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt fedb124de4ba); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-e6f358904e19e4e8",
@@ -1332,7 +1214,7 @@
    ],
    "content_sha256": "24eb1efde161bb5cdaa637eb444a3bb9dae4c14e94535b0a4b40281b8ff76202",
    "capture_kind": "http-original",
-   "note": "Investor-Foliensatz Sept. 2026 (PDF) gelesen: Folien 8 (Europakarte zusätzlich als Bild gerendert, Poland hellblau = potential), 25, 34–35, 38–41, 48–53; Kapazitätsfolie weiterhin „under installment“."
+   "note": "Investor-Foliensatz Sept. 2026 (PDF) gelesen: Folien 8 (Europakarte zusätzlich als Bild gerendert, Poland hellblau = potential), 25, 34–35, 38–41, 48–53; Kapazitätsfolie weiterhin „under installment“. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-ea6a47ff86b90b1c",
@@ -1342,7 +1224,7 @@
    ],
    "content_sha256": "adfeab575b4d591f9e689a4acd81165e6aca68b35b9e419c0e17e74569f69c0a",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt adfeab575b4d); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt adfeab575b4d); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-eadffcced857ac38",
@@ -1352,7 +1234,7 @@
    ],
    "content_sha256": "cf19f41aafe536ddd72727f1fa865b17b127b472270358e70d9ac712712151a8",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt cf19f41aafe5); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt cf19f41aafe5); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-eb7f63760aba3e64",
@@ -1361,7 +1243,7 @@
    ],
    "content_sha256": "de77500835c0dc3b70addc4c8bcd59b9389560bc0f0b6c18a1b013e19a5296fd",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt de77500835c0); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt de77500835c0); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-ed85256fd87c2a74",
@@ -1370,7 +1252,7 @@
    ],
    "content_sha256": "957f427d0f9852e64f2ecfed7312d6b008621595e4cadcb9829cc5962b077c38",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 957f427d0f98); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 957f427d0f98); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-eddf31ac6c75fbe9",
@@ -1379,7 +1261,7 @@
    ],
    "content_sha256": "9a2205d18f53d07ee49b89641ac9fe19704874602b3e692291cf44db93b43cff",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 9a2205d18f53); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 9a2205d18f53); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-f129b4e8889709a9",
@@ -1388,7 +1270,7 @@
    ],
    "content_sha256": "e78f5f76c76e94dc40b670dab2707c09dd407ad05b97cd0aa60694cf1b979010",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt e78f5f76c76e); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt e78f5f76c76e); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-f3c15f4b90f4bfc8",
@@ -1397,7 +1279,7 @@
    ],
    "content_sha256": "ba13e17ae5d425181670f8564fe61a939c910f5aa224e453ac2567fc2306053c",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt ba13e17ae5d4); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt ba13e17ae5d4); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-f4643db24ca2fc22",
@@ -1406,7 +1288,7 @@
    ],
    "content_sha256": "f574d9d92e7c0ea71ebebbe7cec6632da80c5a28d1964538b674e2b5522e7210",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt f574d9d92e7c); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt f574d9d92e7c); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-f4730b21412bb02a",
@@ -1446,6 +1328,7 @@
     "P-REG-SEE-01",
     "P-WA-03",
     "T-EMP-01",
+    "T-EV-03",
     "T-ID-02",
     "T-ID-03",
     "T-ID-04",
@@ -1453,7 +1336,7 @@
    ],
    "content_sha256": "138727c9936e18cce3a3e85772863f35c22cc8d842ec9baee46b5cbf5035bd6d",
    "capture_kind": "http-original",
-   "note": "Geschäftsbericht 2025 (PDF, pdftotext zweispaltig) gezielt je Belegstelle gelesen: Struktur S. 22, Strategie S. 34/39, F&E S. 31, Wesentliche Ereignisse S. 49–53, Prognose, Personal S. 56, Anhang (39) Befreiung S. 264, Nachtragsbericht, Anteilsbesitzliste S. 267–271 (Zeilenzuordnung bei zweispaltiger Extraktion je Gesellschaft einzeln geprüft)."
+   "note": "Geschäftsbericht 2025 (PDF, pdftotext zweispaltig) gezielt je Belegstelle gelesen: Struktur S. 22, Strategie S. 34/39, F&E S. 31, Wesentliche Ereignisse S. 49–53, Prognose, Personal S. 56, Anhang (39) Befreiung S. 264, Nachtragsbericht, Anteilsbesitzliste S. 267–271 (Zeilenzuordnung bei zweispaltiger Extraktion je Gesellschaft einzeln geprüft). Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-f562ccee195198fd",
@@ -1462,7 +1345,7 @@
    ],
    "content_sha256": "b68ad3b7aa9771506aecf95699b8fdfaf23b937fc479c0edb6a47ba6ec2f691d",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt b68ad3b7aa97); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt b68ad3b7aa97); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-f8577da3c9c0698e",
@@ -1471,7 +1354,7 @@
    ],
    "content_sha256": "7bdbe7b4f4086d2ecd8621ecec9ee09fca31cc14a034429a2814fd4b9e4a1cf8",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 7bdbe7b4f408); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 7bdbe7b4f408); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-f927b29c83eb84ce",
@@ -1481,7 +1364,7 @@
    ],
    "content_sha256": "3c2724dffafcf9adbc54e8bc0fe9b3120d80a5476131aef61d591e4a26c784e5",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 3c2724dffafc); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 3c2724dffafc); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-faeb7be1bb92f0b5",
@@ -1490,7 +1373,7 @@
    ],
    "content_sha256": "70f80f31097ad14d884f5a4058d6e64da4a069b555801dd1d941a7efe86dbf4e",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt 70f80f31097a); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt 70f80f31097a); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   },
   {
    "source_id": "S-fce8c647daaea30b",
@@ -1499,377 +1382,129 @@
    ],
    "content_sha256": "fb2741c9a4ca492c8ab8e868d526534a40cbf13d8ed5ae6bb071bf0c4fa4b988",
    "capture_kind": "http-original",
-   "note": "Original über source-cache gelesen (http-original, Inhalt fb2741c9a4ca); Belegstellen der zugeordneten Claims einzeln abgeglichen."
+   "note": "Original über source-cache gelesen (http-original, Inhalt fb2741c9a4ca); Belegstellen der zugeordneten Claims einzeln abgeglichen. Snapshot gegenüber Runde 1 unverändert; Befund bestätigt."
   }
  ],
  "review_groups": [
   {
    "claim_ids": [
-    "T-EV-03"
-   ],
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "PM 02.03.2026 (Absatz 1) nennt „transition was concluded on 1 March 2026“; Q1- und H1-Mitteilung gelesen.",
-   "reason": "Vollzugsdatum widerspricht den Finanzberichten: GB 2025 (Nachtragsbericht, Erwerb NVL) und HJFB 2026 (Wesentliche Ereignisse) nennen Erwerb/Closing am 27.02.2026 (Rheinmetall Naval Systems GmbH, 100 % Anteile und Stimmrechte); die PM nennt nur den Übergangsstichtag 1.3.2026.",
-   "action": "Aussage harmonisieren: „Closing/Erwerb am 27.02.2026 laut GB 2025/HJFB 2026; Übergang laut Pressemitteilung zum 1.3.2026“; event_date und module_views.events ev-nvl-closing auf 2026-02-27 (Label mit Übergangsstichtag) setzen; Bezug in T-ID-03-Unsicherheit anpassen. P-NS-02/C-043 bleiben inhaltlich korrekt, Unsicherheitstext nach Harmonisierung aktualisieren.",
-   "owner": "context"
-  },
-  {
-   "claim_ids": [
     "T-ID-03"
    ],
    "depth": "A",
-   "status": "Korrektur",
-   "note": "Zahlen 231/217 Gesellschaften und 188/176 Tochtergesellschaften sowie Wirtschaftsräume im GB 2025 (Struktur des Konzerns, PDF-S. 22) bestätigt.",
-   "reason": "Unsicherheitstext nennt „NVL-Vollzug am 1. März 2026“; laut GB/HJFB erfolgte das Closing am 27.02.2026.",
-   "action": "Unsicherheit auf „vor NVL-Closing am 27.02.2026“ korrigieren (Folgekorrektur zu T-EV-03).",
-   "owner": "context"
+   "status": "geprüft",
+   "note": "Unsicherheit korrigiert („vor NVL-Closing am 27.02.2026“); Zahlen im GB 2025 S. 22 unverändert bestätigt."
   },
   {
    "claim_ids": [
     "T-AD-04"
    ],
    "depth": "A",
-   "status": "Korrektur",
-   "note": "Beide Zitatabsätze (PM 12.12.2025, PM 24.06.2026) bestätigen die damaligen Funktionsbezeichnungen.",
-   "reason": "Im Topic-Abschnitt „Führung und Gremien“ wird Dürr ohne Zeitgrenze als Leitung geführt; laut esut (04.09.2026, C-050) verlässt Dürr das Unternehmen und Roman Köhne soll zum 1.10.2026 übernehmen. Zum Stichtag ist die Aussage nur historisch (Stand Juni 2026) belegt.",
-   "action": "Als historische Rolle kennzeichnen („Stand Juni 2026“) und auf angekündigten Wechsel (C-050, Ankündigung laut Fachmedium) verweisen; keine aktuelle Leitungsangabe ohne Originalbeleg.",
-   "owner": "context"
+   "status": "geprüft",
+   "note": "Neu formuliert als historische Angabe (Stand Juni 2026) mit Verweis auf angekündigten Wechsel (C-050); beide Zitatabsätze erneut bestätigt. Topic-Abschnitt trägt Zeitgrenze im Label."
   },
   {
    "claim_ids": [
-    "C-050"
+    "T-EV-03"
    ],
    "depth": "A",
-   "status": "Korrektur",
-   "note": "esut 04.09.2026 gelesen: „Nach unternehmensinternen Informationen wird Roman Köhne zum 1. Oktober CEO …“.",
-   "reason": "Statement formuliert „wurde zum 1. Oktober 2026 CEO“; die Quelle (vor dem Datum) belegt nur eine Ankündigung. Medienankündigung darf nicht als bestätigter Amtsantritt ausgegeben werden; event_status „angekündigt/vollzogen“ vermischt beides.",
-   "action": "Auf „soll laut esut (04.09.2026, unternehmensinterne Informationen) zum 1.10.2026 … werden“ umformulieren, event_status „angekündigt (Fachmedium)“; optional Rheinmetall-Original (Management-/Divisionsseite oder PM) öffnen und erst dann Vollzug angeben.",
-   "owner": "cluster"
-  },
-  {
-   "claim_ids": [
-    "C-009"
-   ],
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "Gemeinsame PM 25.01.2024 gelesen: Datum, ARGE-Mitglieder, 1,2 Mrd. EUR brutto, IRIS-T-SLM-/Skyranger-30-Anbindung und Rollen bestätigt; Hensoldt-GB 2025 nennt NNbS-Aufträge im Vorjahr. Kanten e13–e16 (Richtung/Typ/Status) belegt.",
-   "reason": "Unsicherheit behauptet, die Beträge je Partner seien in der geöffneten Quelle nicht beziffert; die PM nennt ausdrücklich Rheinmetall 607 Mio. EUR, Diehl 339 Mio. EUR, Hensoldt 284 Mio. EUR.",
-   "action": "Unsicherheit korrigieren; Partneranteile optional als Herstellerangabe aufnehmen.",
-   "owner": "cluster"
-  },
-  {
-   "claim_ids": [
-    "C-019"
-   ],
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "ORF 23.02.2024, esut 03.09.2024 und ILA-PM 10.06.2026 gelesen: 36 Türme, Pandur Evolution, Mistral 3, mittlerer dreistelliger Mio.-Betrag bestätigt.",
-   "reason": "Unsicherheit/Netz behaupten, ein Vertragsverhältnis Rheinmetall–GDELS sei nicht belegt. Die Rheinmetall-PM 23.02.2024 (S-7c3ae12304f6c154, bereits Beleg von M-AT-SKR-02) sagt ausdrücklich: „Rheinmetall ist bei dem Vorhaben Unterauftragnehmer des Fahrzeugherstellers GDELS“. Kante e29 (rhm→at als direkter Liefervertrag) und Kante e30 („kein Vertrag GDELS–Rheinmetall belegt“) geben die Vertragsstruktur falsch wieder.",
-   "action": "C-019 um Herstellerangabe Unterauftrag ergänzen (S-7c3ae12304f6c154 als Quelle), Unsicherheit korrigieren; Netz: Kante rhm→gdels (Unterauftrag Skyranger-30-Türme, Herstellerangabe, 2024-02-23) und gdels→at (Generalunternehmer Pandur Evolution) abbilden, e29 nicht als direkter Kundenvertrag führen, e30-Zusammenfassung korrigieren.",
-   "owner": "cluster"
-  },
-  {
-   "claim_ids": [
-    "C-001",
-    "C-004"
-   ],
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "Anteilsbesitzliste GB 2025 (zweispaltige Extraktion, Zeilen einzeln zugeordnet) bzw. HGB-Abschluss: RAD AG 100 % direkt, Rheinmetall Italia 100 % indirekt bestätigt.",
-   "reason": "Kapitalanteile korrekt, aber die Netzkanten e02 (rhm→rad: p_sr30, p_sr35, p_skynex, p_skymaster) und e04 (rhm→rit: p_skynex, p_sr35) tragen Produktzuordnungen, die C-001/C-004 (reine Beteiligungsclaims) nicht belegen; Produktbezug darf nicht allein aus Firmenname/Portfolio abgeleitet werden.",
-   "action": "Produktbezüge mit belegenden Claims verknüpfen (z. B. P-REG-CH-01/P-AD-01 bzw. C-020/C-022 für RAD; C-025/C-026/T-EV-10/P-REG-IT-01 für Rheinmetall Italia) oder product_ids dieser Beteiligungskanten leeren.",
-   "owner": "cluster"
-  },
-  {
-   "claim_ids": [
-    "C-032"
-   ],
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "GB 2025, Strategie S. 39: Team Lynx (Rheinmetall, Textron, RTX, L3Harris, Allison, Anduril) als einer von zwei Wettbewerbern mit Phasen 3/4 beauftragt; ca. 650 Mio. EUR bestätigt.",
-   "reason": "Kantenzusammenfassung e47 „American Rheinmetall führt Team Lynx“ ist durch C-032/GB nicht belegt (Führungsrolle nicht genannt).",
-   "action": "e47-Zusammenfassung auf „American Rheinmetall mit Team Lynx in XM30 Phasen 3/4 beauftragt“ ändern.",
-   "owner": "cluster"
-  },
-  {
-   "claim_ids": [
-    "P-SKR-07"
-   ],
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "ILA-PM 10.06.2026 gelesen: Boxer mit DefendAir, ESSI-Selbstbeschreibung, Integration auf Lynx KF41/Lkw bestätigt.",
-   "reason": "Der Satzteil „auf der Eurosatory 2026 präsentierte Rheinmetall den Skyranger 30 auf Lynx KF41“ steht nicht in der zitierten Quelle. Im Laufcache liegt S-d2d239c37b99eddf (nicht im Quellenregister), die nur ankündigt, Rheinmetall „will present“ den Skyranger 30 auf Lynx KF41 auf der Eurosatory 2026.",
-   "action": "Satzteil streichen oder Quelle S-d2d239c37b99eddf per source_proposal ergänzen und als Ankündigung („wollte … zeigen“) formulieren; tatsächliche Präsentation nur mit Beleg.",
-   "owner": "portfolio"
-  },
-  {
-   "claim_ids": [
-    "P-REG-RO-01"
-   ],
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "HJFB 2026 (Wesentliche Ereignisse, S. 10–11) bestätigt Kapazitätsausweitung, Technologietransfer und lokale Wertschöpfung.",
-   "reason": "„Rumänien bereits einer der Heimatmärkte“, „Rheinmetall Automecanica (Medias) seit vielen Jahren aktiv“ und „mehrere hundert Mio. EUR investieren“ stehen nicht im zitierten HJFB, sondern in der PM 02.06.2026 (S-cede873d57924937, im Register).",
-   "action": "S-cede873d57924937 als zusätzliche Quelle/evidence_item mit Belegstelle (Absatz „Romania is already one of Rheinmetall’s home markets…“ / „invest several hundred million euros“) ergänzen.",
-   "owner": "portfolio"
-  },
-  {
-   "claim_ids": [
-    "P-REG-LT-01"
-   ],
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "Invest Lithuania 04.11.2025 gelesen: Spatenstich 4.11.2025, JV Rheinmetall Defence Lietuva mit EPSO-G, Linienqualifikation bis Ende 2026, JV Lithuania Defence Services Jonava bestätigt.",
-   "reason": "Quelle: „scheduled to go into operation as early as 2026“ (= bereits 2026 geplant); Claim und Präsenzaktivität A-LT-BAI geben „frühestens 2026“ wieder – Bedeutungsumkehr der Zeitgrenze.",
-   "action": "In Claim und A-LT-BAI „Inbetriebnahme bereits 2026 geplant (Linienqualifikation bis Ende 2026, Hochlauf ab 2027 je nach Auftragslage)“ formulieren. Zusätzlich ownership_note von A-LT-JON („laut Rheinmetall-Story gemeinsam mit KNDS“) mit einem Claim belegen oder entfernen.",
-   "owner": "portfolio"
+   "status": "geprüft",
+   "note": "Neu gegen GB 2025 (Anhang (41)/Nachtragsbericht: Erwerb 27.02.2026), HJFB 2026 (Wesentliche Ereignisse), PM 02.03.2026 (Übergang 1.3.2026), Q1-PM (5,5 Mrd. EUR) und H1-PM geprüft; Closing- vs. Übergangsdatum korrekt getrennt; event_date und Ereignis ev-nvl-closing (2026-02-27) stimmig."
   },
   {
    "claim_ids": [
     "P-VS-02"
    ],
    "depth": "A",
-   "status": "Korrektur",
-   "note": "Investor-Foliensatz Sept. 2026, Folie 25 „Selected product overview“ gelesen.",
-   "reason": "Auf der Folie ist auch „Marder*“ als joint program markiert; der Claim führt Marder ohne Kennzeichnung (geringfügig).",
-   "action": "Marder ebenfalls als „(gemeinsam)“ kennzeichnen.",
-   "owner": "portfolio"
+   "status": "geprüft",
+   "note": "Marder jetzt als gemeinsames Programm gekennzeichnet; entspricht Folie 25 (Bild/Text) des Investor-Foliensatzes."
+  },
+  {
+   "claim_ids": [
+    "P-SKR-07"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "ILA-Teil unverändert belegt; Eurosatory jetzt korrekt als Ankündigung aus S-d2d239c37b99eddf (PM 15.06.2026, Absatz 1: „will present … based on the Lynx KF41“) gelesen und bestätigt."
+  },
+  {
+   "claim_ids": [
+    "P-REG-LT-01"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "„bereits für 2026 geplant“, Linienqualifikation bis Ende 2026, Hochlauf ab 2027 entspricht Invest Lithuania; Präsenzaktivität A-LT-BAI angepasst, A-LT-JON ohne unbelegte KNDS-Angabe."
+  },
+  {
+   "claim_ids": [
+    "P-REG-RO-01"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Zusätzlicher Beleg S-cede873d57924937 (Heimatmarkt, Automecanica Medias, mehrere hundert Mio. EUR) wörtlich bestätigt; HJFB-Teil unverändert."
+  },
+  {
+   "claim_ids": [
+    "C-009"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Partneranteile 607/339/284 Mio. EUR wörtlich in PM 25.01.2024 bestätigt; Unsicherheit jetzt korrekt; Kanten e13–e16 unverändert belegt."
+  },
+  {
+   "claim_ids": [
+    "C-019"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Unterauftrag Rheinmetall→GDELS aus PM 23.02.2024 wörtlich bestätigt und als Herstellerangabe gekennzeichnet; Kanten e29 (rhm→gdels, Unterauftrag) und e30 (gdels→at, Generalunternehmer) jetzt richtungs- und typgerecht. Die 225 Pandur EVO in e30 stehen in der Kantenquelle ORF (23.02.2024), nicht im C-019-Text (unkritisch)."
+  },
+  {
+   "claim_ids": [
+    "C-050"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Jetzt als Ankündigung laut esut (04.09.2026) mit ausdrücklich fehlender Originalbestätigung formuliert; event_status „angekündigt (Fachmedium)“ korrekt."
   },
   {
    "claim_ids": [
     "M-EU-EDIP-01"
    ],
    "depth": "A",
-   "status": "Korrektur",
-   "note": "EEAS-Seite gelesen: 1,5 Mrd. EUR 2025–2027, 300 Mio. EUR Ukraine-Instrument, ≥3 Staaten (≥2 MS), 35-%-Komponentenregel bestätigt.",
-   "reason": "Unsicherheit sagt, das Datum sei auf der Seite nicht ausgewiesen; die Seite trägt das Datum 09.12.2025 („Today the Council has formally adopted…“).",
-   "action": "Unsicherheit korrigieren (Seitendatum 09.12.2025; Ratsdatum laut Medien 08.12.2025 ggf. als abweichend kennzeichnen).",
-   "owner": "market"
+   "status": "geprüft",
+   "note": "Seitendatum 09.12.2025 und Inhalte auf der EEAS-Seite bestätigt; Abweichung zum Mediendatum 08.12.2025 korrekt offen gekennzeichnet."
   },
   {
    "claim_ids": [
-    "T-AD-06"
+    "M-DE-ARM-01"
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "Börse Online/dpa-AFX 20.08.2026 und finanzen.net 21.08.2026 gelesen: BAAINBw-Angabe „ab Mitte 2027 statt Mitte 2026“, „Performance … stark verbesserungswürdig“, Rheinmetall-Widerspruch (fünf Monate, Boxer-Fahrmodul, 2027/2028) wörtlich bestätigt; Zuschreibung korrekt, beide Quellen derselbe Ursprung (kein Zweitbeleg) – korrekt vermerkt."
+   "note": "Neu: Q3-Recap 05.10.2026, Abschnitt „Update Arminius“ wörtlich bestätigt (Festvertrag bis Jahresende erwartet, Anzahlung bis 30 %, Haushaltsausschuss Anfang Dezember). Dokument nennt kein Produkt; Claim ordnet zu Recht nicht Skyranger zu; Herstellerangabe/Erwartung korrekt."
   },
   {
    "claim_ids": [
-    "T-AD-07"
+    "C-001"
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "hartpunkt 08.08.2025 gelesen; Erwartung 6–8 Mrd. EUR, keine Stückzahlen bestätigt; korrekt als Erwartung, kein Auftrag."
+   "note": "Kapitalanteil unverändert bestätigt; Runde-1-Korrektur erledigt: Kante e02 ohne unbelegte Produktzuordnung."
   },
   {
    "claim_ids": [
-    "T-EV-04"
+    "C-004"
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "PM 12.12.2025: „zweistellige Zahl“, hoher dreistelliger Mio.-Betrag, Lieferung Ende 2028–Ende 2029, lokale Wertschöpfung bestätigt."
+   "note": "Kapitalanteil unverändert bestätigt; Runde-1-Korrektur erledigt: Kante e04 ohne unbelegte Produktzuordnung."
   },
   {
    "claim_ids": [
-    "P-NS-02"
+    "C-032"
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "HJFB 2026: Erwerb am 27.02.2026 durch Rheinmetall Naval Systems GmbH, 100 % Anteile/Stimmrechte, Division ab März 2026 bestätigt. Unsicherheitsvermerk nach Korrektur T-EV-03 als aufgelöst aktualisieren."
-  },
-  {
-   "claim_ids": [
-    "P-SKR-03"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "S&V 15.06.2026 vollständig gelesen: Serienbeginn Q4 2027 (S&V-Recherche), „laut Rheinmetall rund sechs Monate“, vier Gründe und Zwischenlösung bestätigt. Abweichung zu T-AD-06/C-016/M-DE-SKR-02 korrekt als widersprüchlich vermerkt."
-  },
-  {
-   "claim_ids": [
-    "P-SKR-04"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "S&V 15.06.2026: POLITICO-Angabe 561 Systeme/~9 Mrd. EUR, Arminius, Bestellerwartung Ende des Jahres bestätigt. Gegenprüfung: Q3-Recap 05.10.2026 (S-4a13b2786b5cc66a) nennt Arminius-Festvertrag „still anticipated by year-end“, Haushaltsausschuss Anfang Dezember; zwei gezielte Websuchen ohne Beleg eines unterzeichneten Großauftrags. „Nicht vergeben“ bleibt Beleggrenze, kein Negativbeweis."
-  },
-  {
-   "claim_ids": [
-    "P-SKX-03"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Berliner Zeitung 09.11.2025 gelesen: Papperger-Aussage (Kh-101/Kalibr), German Aid to Ukraine ohne visuelle Bestätigung, Videos nur Kamikaze-Drohnen, 2 geliefert/2 zugesagt bestätigt; Zuschreibung und Gegenrecherche korrekt."
-  },
-  {
-   "claim_ids": [
-    "C-015"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "PM 05.02.2025 und ILA-PM gelesen; Verifikationsmuster Ende Januar 2025, Serie überwiegend 2027/Anfang 2028, 19 Fahrzeuge bestätigt."
-  },
-  {
-   "claim_ids": [
-    "C-016"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Defence Network 07.04.2026 und Großwald gelesen; Stern-Wiedergabe (16 Monate, ggf. 18; Lkw-Zwischenlösung nach Schießtest abgelehnt) und Kundenänderungen bestätigt; ausschließlich Sekundärquellen, korrekt als umstritten gekennzeichnet."
-  },
-  {
-   "claim_ids": [
-    "C-033"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "GB 2025 und Lockheed/Rheinmetall-PM 30.04.2025 gelesen; Beginn der Partnerschaft (2023 vs. MoU Juni 2024) widersprüchlich, korrekt vermerkt; MoU, kein JV."
-  },
-  {
-   "claim_ids": [
-    "C-034"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Lockheed-PM 07.07.2026 gelesen: MoU als nächster Schritt zu einem JV, ATACMS in Unterlüß, Raketenmotoren/Komponenten ab 2027; JV nicht gegründet, Quote nicht belegt – korrekt."
-  },
-  {
-   "claim_ids": [
-    "C-035"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "The Defense Post 09.07.2026 und Defense News 23.09.2026 gelesen; PAC-3 nur sekundär/politischer Wunsch, nicht als Kante gezeichnet – korrekt."
-  },
-  {
-   "claim_ids": [
-    "C-043"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "GB 2025 Nachtragsbericht und HJFB 2026: Closing 27.02.2026, Kaufvertrag Oktober 2025, vorläufiger Kaufpreis 1.515 Mio. EUR (Zahlung Feb. 2026) bestätigt; Kante e12 korrekt."
-  },
-  {
-   "claim_ids": [
-    "M-DE-NNBS-01"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "esut 28.09.2026 und 18.09.2026 gelesen: Billigung 23.09.2026, Änderungsvertrag NNbS (Fahrmodul B0, Simulator), Liste der zwölf Vorlagen ohne Skyranger-Großbestellung bestätigt."
-  },
-  {
-   "claim_ids": [
-    "M-DE-SKR-01"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "hartpunkt 06.11.2024 gelesen: BMVg-Sprecher bestätigt angezeigte Verzögerung, Vorlage „mit Masse 2027, letztes Exemplar 2028“, Fahrmodul-Hintergrund aus Insiderkreisen bestätigt."
-  },
-  {
-   "claim_ids": [
-    "M-DE-SKR-02"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "S&V 21.01.2026 gelesen: Vertragsumfang (8 Nachladefahrzeuge, 8 Werkstattausstattungen, 18 Simulatoren), SADM, 18 Monate/ab 2028, Bedarf 500–600, 93 bestellte Systeme bestätigt."
-  },
-  {
-   "claim_ids": [
-    "M-NL-SKR-01"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "S&V 21.01.2026: 22 Systeme angekündigt (Jan. 2025), Bestellung 11.12.2025, ACSV G5, drei Prototypen Schweiz, Rest NL bestätigt; Abweichung zur Rheinmetall-Angabe „zweistellig“ korrekt zugeschrieben."
-  },
-  {
-   "claim_ids": [
-    "M-SAAB-01"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "EDR 19.05.2026 gelesen: 20 Kunden RBS 70, MSHORAD „ordered by two nations, Sweden and the Czech Republic“, Bolide 2 9 km/5.000 m, Kohlefaserrohr bestätigt; Widerspruch zu M-LT-MSH-01 korrekt vermerkt."
-  },
-  {
-   "claim_ids": [
-    "M-MKT-SIPRI-00"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "SIPRI-Seite und Original-XLSX v1.2 (Blatt „Constant (2024) US$“, Fußnoten) direkt gelesen; Revisionsdatum 27.04.2026 auf der Seite, Länderanmerkungen Polen/Italien/UK wörtlich, Rumänien über Sammelanmerkung bestätigt."
-  },
-  {
-   "claim_ids": [
-    "M-MKT-SIPRI-DE"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original-XLSX (Blatt „Constant (2024) US$“) mit openpyxl gelesen: alle fünf Jahreswerte zeilengenau bestätigt, keine blaue (Schätz-)Markierung; Dashboard-Reihe identisch."
-  },
-  {
-   "claim_ids": [
-    "M-MKT-SIPRI-PL"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original-XLSX (Blatt „Constant (2024) US$“) mit openpyxl gelesen: alle fünf Jahreswerte zeilengenau bestätigt, keine blaue (Schätz-)Markierung; Dashboard-Reihe identisch."
-  },
-  {
-   "claim_ids": [
-    "M-MKT-SIPRI-NL"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original-XLSX (Blatt „Constant (2024) US$“) mit openpyxl gelesen: alle fünf Jahreswerte zeilengenau bestätigt, keine blaue (Schätz-)Markierung; Dashboard-Reihe identisch."
-  },
-  {
-   "claim_ids": [
-    "M-MKT-SIPRI-DK"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original-XLSX (Blatt „Constant (2024) US$“) mit openpyxl gelesen: alle fünf Jahreswerte zeilengenau bestätigt, keine blaue (Schätz-)Markierung; Dashboard-Reihe identisch."
-  },
-  {
-   "claim_ids": [
-    "M-MKT-SIPRI-RO"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original-XLSX (Blatt „Constant (2024) US$“) mit openpyxl gelesen: alle fünf Jahreswerte zeilengenau bestätigt, keine blaue (Schätz-)Markierung; Dashboard-Reihe identisch."
-  },
-  {
-   "claim_ids": [
-    "M-MKT-SIPRI-IT"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original-XLSX (Blatt „Constant (2024) US$“) mit openpyxl gelesen: alle fünf Jahreswerte zeilengenau bestätigt, keine blaue (Schätz-)Markierung; Dashboard-Reihe identisch."
-  },
-  {
-   "claim_ids": [
-    "M-MKT-SIPRI-AT"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original-XLSX (Blatt „Constant (2024) US$“) mit openpyxl gelesen: alle fünf Jahreswerte zeilengenau bestätigt, keine blaue (Schätz-)Markierung; Dashboard-Reihe identisch."
-  },
-  {
-   "claim_ids": [
-    "M-MKT-SIPRI-UK"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original-XLSX (Blatt „Constant (2024) US$“) mit openpyxl gelesen: alle fünf Jahreswerte zeilengenau bestätigt, keine blaue (Schätz-)Markierung; Dashboard-Reihe identisch."
-  },
-  {
-   "claim_ids": [
-    "M-MKT-SIPRI-SE"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original-XLSX (Blatt „Constant (2024) US$“) mit openpyxl gelesen: alle fünf Jahreswerte zeilengenau bestätigt, keine blaue (Schätz-)Markierung; Dashboard-Reihe identisch."
+   "note": "Claim unverändert bestätigt; Runde-1-Korrektur erledigt: Kante e47 ohne unbelegte Führungsrolle."
   },
   {
    "claim_ids": [
@@ -1898,21 +1533,17 @@
     "T-AD-02",
     "T-AD-03",
     "T-AD-05",
+    "T-AD-06",
+    "T-AD-07",
     "T-EV-01",
     "T-EV-02",
+    "T-EV-04",
     "T-EV-05",
     "T-EV-06",
     "T-EV-07",
     "T-EV-09",
     "T-EV-10",
-    "T-EV-11"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original gelesen; Zahlen, Daten, Kennzahldefinitionen (Nomination/Backlog/operatives Ergebnis als Unternehmenskennzahlen) und Zuschreibung (Herstellerangabe/Medium) je Claim einzeln abgeglichen. Vorgeschlagene B-Hintergrunddetails wurden ebenfalls vollständig (100 %, keine Stichprobe) geprüft und wegen Darstellung in module_views als A geführt."
-  },
-  {
-   "claim_ids": [
+    "T-EV-11",
     "H-PP-01",
     "H-PP-02",
     "H-PP-03",
@@ -1921,14 +1552,7 @@
     "H-PP-06",
     "H-PP-07",
     "H-PP-08",
-    "H-PP-09"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Rheinmetall-Vorstandsseite, PM 06.11.2024, BDSV-Vorstandsseite, CMD-Titelfolie bzw. H1-PM gelesen; Rolle, Amtszeit, Chronologie, Mandate und BDSV-Präsidentschaft einzeln bestätigt; nur berufliche Angaben (Jahrgang/Nationalität der Quellseite bewusst nicht übernommen). Vorgeschlagene B-Hintergrunddetails wurden ebenfalls vollständig (100 %, keine Stichprobe) geprüft und wegen Darstellung in module_views als A geführt."
-  },
-  {
-   "claim_ids": [
+    "H-PP-09",
     "P-STR-01",
     "P-STR-02",
     "P-STR-03",
@@ -1946,6 +1570,7 @@
     "P-DS-04",
     "P-DS-05",
     "P-NS-01",
+    "P-NS-02",
     "P-NS-03",
     "P-AD-01",
     "P-AD-02",
@@ -1958,10 +1583,13 @@
     "P-AD-09",
     "P-SKR-01",
     "P-SKR-02",
+    "P-SKR-03",
+    "P-SKR-04",
     "P-SKR-05",
     "P-SKR-06",
     "P-SKX-01",
     "P-SKX-02",
+    "P-SKX-03",
     "P-SKX-04",
     "P-SKX-05",
     "P-RGM-01",
@@ -1998,14 +1626,7 @@
     "P-REG-ZA-01",
     "P-REG-ME-01",
     "P-REG-SG-01",
-    "P-REG-IN-01"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original gelesen; Produktmerkmale als Herstellerangaben, Status (beauftragt/übergeben/Kapazitätsziel/Ankündigung) und Zahlen je Claim einzeln abgeglichen. Vorgeschlagene B-Hintergrunddetails wurden ebenfalls vollständig (100 %, keine Stichprobe) geprüft und wegen Darstellung in module_views als A geführt."
-  },
-  {
-   "claim_ids": [
+    "P-REG-IN-01",
     "C-002",
     "C-003",
     "C-005",
@@ -2017,6 +1638,8 @@
     "C-012",
     "C-013",
     "C-014",
+    "C-015",
+    "C-016",
     "C-017",
     "C-018",
     "C-020",
@@ -2031,6 +1654,9 @@
     "C-029",
     "C-030",
     "C-031",
+    "C-033",
+    "C-034",
+    "C-035",
     "C-036",
     "C-037",
     "C-038",
@@ -2038,6 +1664,7 @@
     "C-040",
     "C-041",
     "C-042",
+    "C-043",
     "C-044",
     "C-045",
     "C-046",
@@ -2047,14 +1674,11 @@
     "C-051",
     "C-052",
     "C-053",
-    "C-054"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Original gelesen; Akteursidentität, Richtung, Beziehungstyp, Kapital- vs. Stimmrechtsanteil, Status/Zeitpunkt und Zuschreibung je Claim und zugehöriger Netzkante abgeglichen. Vorgeschlagene B-Hintergrunddetails wurden ebenfalls vollständig (100 %, keine Stichprobe) geprüft und wegen Darstellung in module_views als A geführt."
-  },
-  {
-   "claim_ids": [
+    "C-054",
+    "M-DE-NNBS-01",
+    "M-DE-SKR-01",
+    "M-DE-SKR-02",
+    "M-NL-SKR-01",
     "M-DK-SKR-01",
     "M-AT-SKR-01",
     "M-AT-SKR-02",
@@ -2066,6 +1690,7 @@
     "M-SE-IRIS-01",
     "M-DIEHL-01",
     "M-SE-RBS-01",
+    "M-SAAB-01",
     "M-CZ-MSH-01",
     "M-LT-MSH-01",
     "M-SE-TRI-01",
@@ -2077,6 +1702,16 @@
     "M-EU-SAFE-01",
     "M-EU-SAFE-02",
     "M-EU-SAFE-UK-01",
+    "M-MKT-SIPRI-00",
+    "M-MKT-SIPRI-DE",
+    "M-MKT-SIPRI-PL",
+    "M-MKT-SIPRI-NL",
+    "M-MKT-SIPRI-DK",
+    "M-MKT-SIPRI-RO",
+    "M-MKT-SIPRI-IT",
+    "M-MKT-SIPRI-AT",
+    "M-MKT-SIPRI-UK",
+    "M-MKT-SIPRI-SE",
     "M-PL-NAREW-01",
     "M-DE-IRIS-01",
     "M-DE-IRIS-02",
@@ -2085,7 +1720,7 @@
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "Original gelesen; Zahlen/Einheiten/Währung, Programmstatus, Zeitfenster und Zuschreibung (Hersteller/Medium/Behörde) je Claim einzeln abgeglichen. Vorgeschlagene B-Hintergrunddetails wurden ebenfalls vollständig (100 %, keine Stichprobe) geprüft und wegen Darstellung in module_views als A geführt."
+   "note": "Runde-1-Inhaltsbefund ausdrücklich bestätigt: Aussage, Quellenmetadaten und Original-Snapshot (content_sha256) gegenüber r1 unverändert; Einzelbefunde siehe review-basis-draft-r1.json. Nur die Paket-Zuordnungs-Fingerprints änderten sich durch die geprüften module_views-Korrekturen; die neuen Zuordnungen wurden semantisch kontrolliert."
   }
  ]
 }
