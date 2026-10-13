@@ -31,12 +31,17 @@
   "checkpoints": {
     "context": {
       "stage": "context",
-      "checkpoint_id": "216a3957af8c4a62ae1f2b0096e304e3",
-      "inputs": {},
+      "checkpoint_id": "8dad099d95934b12bff43cdc5b5574c6",
+      "inputs": {
+        "cluster": {
+          "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/cluster-facts.json",
+          "sha256": "8acbeb6ec26f1de4d707d6886152b4fbd1fb44efad58427ea38138cbc0d6a1f3"
+        }
+      },
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/context-facts.json",
-          "sha256": "20d3cab5c8d14da60901c5a2a4f4d23f189f6683128c4998baed25e65c48f0d6"
+          "sha256": "c4836639b698ba5345f9db8533f8ce25be4eac1c6c1ae3f75b451f19b4de0e7e"
         }
       },
       "code": {
@@ -75,11 +80,47 @@
         "scripts/source-cache.py": "267092e431187b7a6cdd5f4bb051ad8b84fa2a07bf479a441738b5c623bb7eb4"
       },
       "sources": {
+        "S-01c26a442587afa5": {
+          "source_id": "S-01c26a442587afa5",
+          "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/GB/Rheinmetall-AG-Jahresabschluss-2025.pdf",
+          "content_sha256": "9e66083297ceb9d0b276aa8b3ae49f41142e0dd59d0950f08d5e6bdb03371710",
+          "text_sha256": "fe5cb7c726414657e2af21db2dc407b8d2217f3723fe1104f66e4f078ca1cf15",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
         "S-042b26990fdc2a9d": {
           "source_id": "S-042b26990fdc2a9d",
           "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/03/2026-03-02-rheinmetall-takes-over-nvl",
           "content_sha256": "5c6775c76e8ce02c7a95fadbce270372929e9b1d6f96db4be5ac474ec9893611",
           "text_sha256": "c797a52e2a6b5fc6c0a9f722be4359e14aa8c9b7e6a8f62cb0d3cfb2f6a45cea",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-04cc080af88f833d": {
+          "source_id": "S-04cc080af88f833d",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-06-rheinmetall-iceye-space-solutions-provides-the-bundeswehr-with-access-to-sar-satellites",
+          "content_sha256": "0cb20930a867136f90fc70ad5e0e860cb32bfec16b7bc3c746bf5a162503dbc6",
+          "text_sha256": "31c5c6079dd2352625c4eda1d55fbb088a1072b8876e6a6c6df0a1944fb0535d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-081455a6101c816e": {
+          "source_id": "S-081455a6101c816e",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/01/2025-01-06-35mm-gepardmunition-fuer-ukr",
+          "content_sha256": "ac9fd7aa4dfc3c9a59eb293063d026112c6d20217d3ad791a9ce1681fb1d7937",
+          "text_sha256": "caa6e31215c8b9061f1d5b053ae7ef69ddb0da41ad2b484827b3b9f967efd531",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-09c52404c1b93824": {
+          "source_id": "S-09c52404c1b93824",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/02/2025-02-05-rheinmetall-hands-over-verification-model-of-skyranger-30-to-the-bundeswehr",
+          "content_sha256": "0c6382753b8c40aa9a34035d3ffba584ed87c5c4501b7ef2d220a18692e960de",
+          "text_sha256": "91f319850e78f11511c3025b7bf0acddf8f98939a8265498ca13b56bba2e465d",
           "capture_kind": "http-original",
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
@@ -93,11 +134,65 @@
           "capture_note": null,
           "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
         },
+        "S-10079a15b0d54839": {
+          "source_id": "S-10079a15b0d54839",
+          "url": "https://www.leonardo.com/en/press-release-detail/-/detail/05-11-2025-leonardo-and-rheinmetall-first-contract-to-supply-armoured-vehicles-for-the-italian-army",
+          "content_sha256": "27e36f8dbedd27c146c5e394a32ca2c15973ef7ec7d1018a6a65d705bd7b3dbd",
+          "text_sha256": "883fb9f1d80f0868c1013b479d10c426c7a954f0c1a58c3110d0879413fff223",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-168108fb27118dde": {
+          "source_id": "S-168108fb27118dde",
+          "url": "https://defence-network.com/deutsche-skyranger-produktion-kommt-nach-neuss/",
+          "content_sha256": "c465304cc0c0e99d7ff586364461c2de53b20c0baf4345dd0eb99c863cd239d6",
+          "text_sha256": "a030005c94e6f995448aaf9d93540517a2ea9c0f46cd829391f8ee51921c5427",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-16d1e80677f1a6b8": {
           "source_id": "S-16d1e80677f1a6b8",
           "url": "https://www.finanzen.net/nachricht/aktien/in-der-kritik-rheinmetall-aktie-in-rot-bundeswehr-ruegt-verzoegerungen-so-reagieren-renk-hensoldt-und-tkms-00-15892493",
           "content_sha256": "65813cd8e4095e9c4f16b288d605edb2cada9c002a8ca6f4c3af69c2523bf95e",
           "text_sha256": "27e79e18072b43db3787422fa076815375a29aee425640759fd511ad1756626f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2185a7a52eb76e0d": {
+          "source_id": "S-2185a7a52eb76e0d",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/08/2026-08-19-rheinmetall-und-hensoldt-demonstrieren-erfolgreiche-integration-passiver-sensortechnologie",
+          "content_sha256": "70de1e9d55e2401b18dc30fb5e32645669792920e848807c8bdc425c0fad79c1",
+          "text_sha256": "329f7fc8839ac0289de9d772d76deaf4da0672244c38ce52e6455acd67f6aa05",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-29616d5aef4d2b76": {
+          "source_id": "S-29616d5aef4d2b76",
+          "url": "https://esut.de/2024/09/meldungen/52961/pandur-evo-mit-skyranger-30-erstmals-oeffentlich-vorgestellt/",
+          "content_sha256": "1ac21497b758330a1e05e9e0a04fe8ffe56e782e4c7c51d39c49f41da8c47b9f",
+          "text_sha256": "dd9165bf63a6ab83c3f1e5dd8372094712b38e63f4a0819298d1efa8e2dfb3a5",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2d3cddf7945e1791": {
+          "source_id": "S-2d3cddf7945e1791",
+          "url": "https://euro-sd.com/2024/09/major-news/40568/denmark-orders-16-skyranger-30",
+          "content_sha256": "34e5e6ef8d958b7ae64cf942b9af2324c13aa903fd94793f0ce1a9956ebad395",
+          "text_sha256": "d7d5fc70b7b8c9af3f932aab988c84c172172617fc5326093af57485f5440e5e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-39222fba59e057e4": {
+          "source_id": "S-39222fba59e057e4",
+          "url": "https://defence-network.com/der-skyranger-kommt-nur-nicht-in-deutschland/",
+          "content_sha256": "f35f392c6fd1a8e50be14e968d9c95a84551ccc23e2e40ee61af7704366507e3",
+          "text_sha256": "02ff770ae24c054480fe78ac085009cf8a634cd98be5e5a12ea4187135dd8c32",
           "capture_kind": "http-original",
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
@@ -129,6 +224,24 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-3c0148ccd2c8eee9": {
+          "source_id": "S-3c0148ccd2c8eee9",
+          "url": "https://www.leonardo.com/documents/15646808/30043445/Integrated+Report+2025.pdf/fcf56c7d-8f61-780c-5fb8-b130d6aeacf8?t=1773421399076",
+          "content_sha256": "a38fae985fd6e10cc0a4d7a001a3cc6acc07b39c2d4138bcd702bc28c7d27623",
+          "text_sha256": "f8a51240f805329dde4d9cc99b75362c906cbcdc6fce7c713819afb869a7fba6",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-3c3ad4b4354adf5e": {
+          "source_id": "S-3c3ad4b4354adf5e",
+          "url": "https://orf.at/stories/3349582/",
+          "content_sha256": "b76cd63e3f826ac2f387b8fd227cfb3de495e20e5e7b3c412a8946e1c9b86dc3",
+          "text_sha256": "f4240b2ddd221e5b249efbc0c131e4af6a362fd55d9df39f83a2378ac460a1cf",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-3dad8b811c925694": {
           "source_id": "S-3dad8b811c925694",
           "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q2/Rheinmetall-Halbjahresfinanzbericht-2026.pdf",
@@ -138,11 +251,56 @@
           "capture_note": null,
           "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
         },
+        "S-3f67bc2e13a1b02e": {
+          "source_id": "S-3f67bc2e13a1b02e",
+          "url": "https://www.rheinmetall.com/en/media/stories/2026/rheinmetall-a-powerful-partner-at-ukraine-side",
+          "content_sha256": "04017585d62b62721a4c169ad3f827deab78403327cb45e8b6b7feb0164c4894",
+          "text_sha256": "ef98bb3e368dda0afa8b2ef50087d18c607c2a2fbe58b52141569000a9d1afc8",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-4789a4ac6acb59aa": {
           "source_id": "S-4789a4ac6acb59aa",
           "url": "https://www.rheinmetall.com/de/media/news-watch/news/2025/12/2025-12-12-rheinmetall-liefert-skyranger-30-fuer-die-niederlaendischen-streitkraefte",
           "content_sha256": "69985ee16ab480477ab94ad0f7bf1d2a0291b44639496c2beaac645481be03dc",
           "text_sha256": "e1b32dadc21850aff57693081213be2e3491384c6a876aa17bdb8d8df1eb6503",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-4a13b2786b5cc66a": {
+          "source_id": "S-4a13b2786b5cc66a",
+          "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q3/2026-10-05-Rheinmetall-Q3-Analyst-and-Investor-Recap-Document.pdf",
+          "content_sha256": "3d373c4b9a1cf63deb198ce8b1ca271b99a8cfb187c10744ac4ba53b9df1a301",
+          "text_sha256": "a47a318dc251a31720857c2324d943f22df48bda2dad6bb72a100bedd44311a3",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-502271d8acddfb1e": {
+          "source_id": "S-502271d8acddfb1e",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/06/2024-06-19-rad-and-anduril-industries-sign-mou",
+          "content_sha256": "ced56c7b4fc2e29998f97d7cbc28cc99410794c08a6de22f818a14b90db9f2f4",
+          "text_sha256": "90af2ee4b5445ea0d061b3e52d71b109fc7d341d83098240394e12d4b63ae55b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-5366eb8816ff2cea": {
+          "source_id": "S-5366eb8816ff2cea",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/06/2025-06-18-strategic-partnership",
+          "content_sha256": "75cf397990ec8ca99b2381b5c09f6238019ce78b3b1f7a628308c8a29003328c",
+          "text_sha256": "2c2f35931551109dfe04dcb9a3e7202be60568a0dded652ed6e91f837ee00a76",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-5a9d049f8f71abd3": {
+          "source_id": "S-5a9d049f8f71abd3",
+          "url": "https://esut.de/2026/09/meldungen/74575/roman-koehne-ceo-rheinmetall-air/",
+          "content_sha256": "46169a0ab9c3e0d3c5986cccf5395588ac96fc50cfbf191d4eb29a7531f36f9a",
+          "text_sha256": "32e3643ab7c41c4581d5de07f61b38ed4deb734c47a6e568351d229abdcfde66",
           "capture_kind": "http-original",
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
@@ -165,6 +323,33 @@
           "capture_note": null,
           "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
         },
+        "S-60677f3d57da054d": {
+          "source_id": "S-60677f3d57da054d",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-12-rheinmetall-to-supply-skyranger-30-for-the-dutch-armed-forces",
+          "content_sha256": "f75985927db8167f44b7231cc35b89d0a5844ea7535d7d9eabafc36c2dc18e66",
+          "text_sha256": "3cf6f93016c17d8c81bf364fab7ed21f1d7fee1ebf3bce32ae9137bdd6c67098",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6282cce4ae4b577f": {
+          "source_id": "S-6282cce4ae4b577f",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/06/2024-06-05-rheinmetall-mbda-small-anti-drone-missile",
+          "content_sha256": "00421d7b86b7f0166d9ff9dff27d5f69492417cd49d4ab64fbf34c4677c02463",
+          "text_sha256": "01dda3028f6509e01338118e4968d8ecda394419c22eb3bc4c7fe28656b8d2e3",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6af38e87216bc1d2": {
+          "source_id": "S-6af38e87216bc1d2",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/04/lockheed-martin-and-rheinmetall-to-join-forces-on-centre-of-excellence-for-european-security",
+          "content_sha256": "f6b4c9243cf766edb3cb6eb5793f430934d6752cf346c2d77e468e142a26f35a",
+          "text_sha256": "f526b4ef05b1cff84c3c10ed164fdaec7814016759a1bab30c11c1b7d28cfc48",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-6bdb338d23c29e11": {
           "source_id": "S-6bdb338d23c29e11",
           "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-24-romania-orders-skyranger-35-air-defence-systems-from-rheinmetall",
@@ -174,6 +359,33 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-6ceae77f0e11c121": {
+          "source_id": "S-6ceae77f0e11c121",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-16-rheinmetall-demonstrates-drone-defence-capabilities-in-finland",
+          "content_sha256": "23ace4714ef858ecd6f2245de5d8f35bfc8599d111a647b70d28cb8183f3c1c5",
+          "text_sha256": "a63616902cef972feae74feb4343115bd094e9e9c8b21a0af903b6a2dc15ab51",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6d57eca962a765ae": {
+          "source_id": "S-6d57eca962a765ae",
+          "url": "https://news.lockheedmartin.com/2026-07-07-Lockheed-Martin-and-Rheinmetall-Move-Forward-with-ATACMS-Co-Production-in-Europe",
+          "content_sha256": "950bc29ce9003aff894195078cfd3b58338fe701861df7d7acd8f011431c5a2d",
+          "text_sha256": "c379f7233aa5f4aa30bd83809009c8fdfe9b195231431267237a6ce3b8228d53",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-7066a889ca7eaad4": {
+          "source_id": "S-7066a889ca7eaad4",
+          "url": "https://investors.hensoldt.net/media/document/1e6664b4-3343-4297-837a-3924a62fd59c/assets/DE000HAG0005-JA-2025-EQ-D-00.pdf",
+          "content_sha256": "865da018ab2643a8718341a6ffaafc3f596c01fcdb128098a6e537c6bd4b425f",
+          "text_sha256": "6148364d536233399972c4f78098268bd2f66bb4067622367bbd5b265b26e52b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
         "S-76d1cd6d4bfaa83c": {
           "source_id": "S-76d1cd6d4bfaa83c",
           "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Termine/Capital%20Markets%20Day/2025/Rheinmetall-CMD-2025-Presentation.pdf",
@@ -182,6 +394,33 @@
           "capture_kind": "http-original",
           "capture_note": null,
           "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-7b3ad8192958d374": {
+          "source_id": "S-7b3ad8192958d374",
+          "url": "https://www.iceye.com/newsroom/press-releases/iceye-and-rheinmetall-win-major-contract-worth-billions-for-space-reconnaissance",
+          "content_sha256": "cc39e0e7a65a5f8c0b064c80b1d0eb6408c78fe62c7379e3b65ffd591dca1880",
+          "text_sha256": "a05f94a884eeb8a3b5bbd960c17b40f0580a62c0b0f7ae274ade1d9b7850b6a7",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-7c3ae12304f6c154": {
+          "source_id": "S-7c3ae12304f6c154",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2024/02/2024-02-23-rheinmetall-liefert-skyranger-30-an-oesterreich",
+          "content_sha256": "6443f41f5ba7379ab67d969c4e37510b4e73fd74ce27848a1ad199d959f20abd",
+          "text_sha256": "5cfabee3c90a70c1e7ea8405ab570b7ed08525a5306e1ce50d6342d83c116e37",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-8119028d88f698cb": {
+          "source_id": "S-8119028d88f698cb",
+          "url": "https://esut.de/2025/11/meldungen/65265/neue-distanzwirkung-im-nahbereich-defendair-kommt/",
+          "content_sha256": "149e01c8c15c7a371a996f4a3e72c0aa5dfdcabb9983cf10a8b878f6cac4acc0",
+          "text_sha256": "2b63a20d9bef16bfc2fadac0d627b8b8953dcae0af09c5f3d92b186aa833aae3",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
         "S-827c64d441de8f6e": {
           "source_id": "S-827c64d441de8f6e",
@@ -199,6 +438,60 @@
           "text_sha256": "3008590aa48add899a86781e48b48bf61d5a79ee15756e028c7f5fa5852fd086",
           "capture_kind": "http-original",
           "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-96bd500dc205c229": {
+          "source_id": "S-96bd500dc205c229",
+          "url": "https://www.grosswald.org/skyranger-30-programme-slips-16-months-bundeswehr-rejects-rheinmetalls-bridge-solution/",
+          "content_sha256": "4b74fd9eeb5484c4a2359f96202b36658cffa396ab72a53a770e2ce1df82ab1f",
+          "text_sha256": "7ac25f867acef5822c04dce01b19b5a5b66811b3b657af42dd8540439e3f0a21",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-9d01bc5d2a34d23a": {
+          "source_id": "S-9d01bc5d2a34d23a",
+          "url": "https://thedefensepost.com/2026/07/09/lockheed-rheinmetall-atacms-europe/",
+          "content_sha256": "e17901caa037648d7c6e79a7be8f1f979589df1383d6b0f6eafaab7f97400ab4",
+          "text_sha256": "a9d5d8d1ac7cec70957fcb2f7b2a1293241aa3b3fc97787f57e57e6939eac2e4",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-9dd1c8db93851703": {
+          "source_id": "S-9dd1c8db93851703",
+          "url": "https://www.defensenews.com/global/europe/2026/09/23/germany-wants-to-manufacture-american-pac-3-interceptors-to-help-meet-global-demand/",
+          "content_sha256": "c1313f0eaecd0c6b3cea453c7f326429fae36b88d971c5ae4c92e953a1772919",
+          "text_sha256": "48a7c6d2472050a91b67735c1dff456f32da37ec103d7db537094b46b793662b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a71e6718503ae138": {
+          "source_id": "S-a71e6718503ae138",
+          "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q1/Rheinmetall-Quartalsmitteilung-2026-Q1.pdf",
+          "content_sha256": "ccf6c43401d26e732c3cbae83a89d17eb412ca9f312028ca628d157b26496b76",
+          "text_sha256": "062375f509c3f6e06c8e31ac8221c6cc30a26a18bb0c5cbae1f1a296b6c21372",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-a7eee3939e338df2": {
+          "source_id": "S-a7eee3939e338df2",
+          "url": "https://www.rheinmetall.com/en/investor-relations/publications/financial-publications-and-presentations",
+          "content_sha256": "b6b3d51b28f576958249825754ae3de8191932ab8ba4a33c4236fd49cbd85daa",
+          "text_sha256": "41364a6603779f92b96a18e4d7f91c5fa3d3941d300fd6b457520162839e19a6",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a8108ef9881c7ab8": {
+          "source_id": "S-a8108ef9881c7ab8",
+          "url": "https://www.sec.gov/Archives/edgar/data/936468/000162828026004195/lmt-20251231.htm",
+          "content_sha256": "9c2c4dcf4b0fce4bf859e7644ef9d374dc7b35bcd0b92f0de925f8bf9d0470c2",
+          "text_sha256": "071fdef42d4974b6e3af436ee78450126b956458f44f86185495a1e674b105a3",
+          "capture_kind": "local-original",
+          "capture_note": "curl mit User-Agent-Header, 2026-10-13; vollständiges SEC-HTML (2,9 MB)",
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
         "S-a8887f614647359f": {
@@ -233,6 +526,15 @@
           "url": "https://www.bdsv.eu/%C3%BCber-uns/vorstand.html",
           "content_sha256": "474596ab2d7cf1d0e717a4417d17392f9352d64420b2e90a8e6819fcaac430eb",
           "text_sha256": "90101ac17bc25c847425266d9cf983287ae37a925f1513cbe92e557895431815",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b8a3496f93a22c8c": {
+          "source_id": "S-b8a3496f93a22c8c",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/02/2024-02-27-bundeswehr-ordered-skyranger-30-mobile-air-defence-system",
+          "content_sha256": "fe23763867f99983d10e21c20d235bfa1f025d0e4d5e49cab3037405ed14a0e4",
+          "text_sha256": "fb065892a93e71c95e0ab5e0deb9755a9013c66efcd5cea9c9df94d6f7126962",
           "capture_kind": "http-original",
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
@@ -282,6 +584,24 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-d1aafc1c9b0f1a75": {
+          "source_id": "S-d1aafc1c9b0f1a75",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/09/2024-09-30-rheinmetall-supplies-skyranger-30-for-denmark-s-mobile-air-defense-system",
+          "content_sha256": "67976f09be6a7b09df5e57a9ad59f693e4f082547346efce05584553d8be1316",
+          "text_sha256": "ec7bfcdb1ecaa72c3058897b13e6cbe842080be9b68b81ad30f3cb33809eab4f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-d2ef86f50f08a3d3": {
+          "source_id": "S-d2ef86f50f08a3d3",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2023/12/2023-12-20-lynx-with-skyranger-30-for-hungary",
+          "content_sha256": "31a26606d4f29e2a0907edd63cb46d92117d4a0aeab593f2b365e1c1ecd525d4",
+          "text_sha256": "8e959ccb73675b2d2d638b5ca4f1b33bf7dde93138d610309e615637fa10d72b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-d32c73540389046f": {
           "source_id": "S-d32c73540389046f",
           "url": "https://www.boerse-online.de/dpa-afx/capital-ausruestung-fuer-das-heer-kommt-spaeter-546388.html",
@@ -291,11 +611,29 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-e4c101cb061aafcf": {
+          "source_id": "S-e4c101cb061aafcf",
+          "url": "https://www.rheinmetall.com/de/investor-relations/veroeffentlichungen/stimmrechtsmitteilungen",
+          "content_sha256": "304ecfd117af28d304e67b7d9da8228a487c685d9c20a4403ae88d55d8fbbb67",
+          "text_sha256": "aa7f9a40b777bf10b0a92b2224147705ceb00cf4929e5b230f1f1ec39ff17c50",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-ea6a47ff86b90b1c": {
           "source_id": "S-ea6a47ff86b90b1c",
           "url": "https://www.rheinmetall.com/de/investor-relations/aktie/aktionaersstruktur",
           "content_sha256": "adfeab575b4d591f9e689a4acd81165e6aca68b35b9e419c0e17e74569f69c0a",
           "text_sha256": "d28003bbf79cafe0a90da2020ad86903f533ffc23a2b1474c293d13eca067a60",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-eadffcced857ac38": {
+          "source_id": "S-eadffcced857ac38",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/10/2025-10-10-rheinmetall-skyranger-35-ukraine",
+          "content_sha256": "cf19f41aafe536ddd72727f1fa865b17b127b472270358e70d9ac712712151a8",
+          "text_sha256": "915d90a2f14c5f408279c874e9a5c6b4e2601b66d097224f05ab9d7d6753db8f",
           "capture_kind": "http-original",
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
@@ -317,20 +655,40 @@
           "capture_kind": "http-original",
           "capture_note": null,
           "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-f562ccee195198fd": {
+          "source_id": "S-f562ccee195198fd",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2024/01/2024-01-25-startschuss-fuer-luftverteidigungssystem-nnbs",
+          "content_sha256": "b68ad3b7aa9771506aecf95699b8fdfaf23b937fc479c0edb6a47ba6ec2f691d",
+          "text_sha256": "8e7115dff4f070bd084343925dda04b427dda7bab4539001e10f7cec8aeb91a3",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-f8577da3c9c0698e": {
+          "source_id": "S-f8577da3c9c0698e",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2025/01/2025-01-15-italien-beschafft-skynex-flugabwehrsystem",
+          "content_sha256": "7bdbe7b4f4086d2ecd8621ecec9ee09fca31cc14a034429a2814fd4b9e4a1cf8",
+          "text_sha256": "e258b830ce18a8f37af797c3bf8a0e0fd28963fa8fa65fc41048496348a740c9",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         }
       },
-      "dependencies": {},
-      "checked_at": "2026-10-13T12:33:44+00:00",
-      "fingerprint": "bb0b010488ee5b7d789f64510774eda95e303d72e759bcce3a09900635ccd158"
+      "dependencies": {
+        "cluster": "c4cf4aa2cf03742c7d3fd95cfdc9d33dba5741ec6bbd4de803fa2b587c03a200"
+      },
+      "checked_at": "2026-10-13T15:37:30+00:00",
+      "fingerprint": "4b6e8cf4c9318945a5b15dee2cb02bda67e49c2ff6b28e6508c0c9694a188ab5"
     },
     "cluster": {
       "stage": "cluster",
-      "checkpoint_id": "65240af92eb14b618174fdcb4c97332a",
+      "checkpoint_id": "80d3c7feffc24fdb99ce451979f260f0",
       "inputs": {},
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/cluster-facts.json",
-          "sha256": "87e78407d7dbc70add7eb96926cc26241d6ec959ff0169b70b7ffc76ee5f60cb"
+          "sha256": "8acbeb6ec26f1de4d707d6886152b4fbd1fb44efad58427ea38138cbc0d6a1f3"
         }
       },
       "code": {
@@ -612,6 +970,15 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-7c3ae12304f6c154": {
+          "source_id": "S-7c3ae12304f6c154",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2024/02/2024-02-23-rheinmetall-liefert-skyranger-30-an-oesterreich",
+          "content_sha256": "6443f41f5ba7379ab67d969c4e37510b4e73fd74ce27848a1ad199d959f20abd",
+          "text_sha256": "5cfabee3c90a70c1e7ea8405ab570b7ed08525a5306e1ce50d6342d83c116e37",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-8119028d88f698cb": {
           "source_id": "S-8119028d88f698cb",
           "url": "https://esut.de/2025/11/meldungen/65265/neue-distanzwirkung-im-nahbereich-defendair-kommt/",
@@ -767,26 +1134,26 @@
         }
       },
       "dependencies": {},
-      "checked_at": "2026-10-13T12:32:54+00:00",
-      "fingerprint": "63c9a8358465a51447a0e3b3077c167a9376ea65acb9d9b8fef0eb4a7f54fbe6"
+      "checked_at": "2026-10-13T15:37:28+00:00",
+      "fingerprint": "c4cf4aa2cf03742c7d3fd95cfdc9d33dba5741ec6bbd4de803fa2b587c03a200"
     },
     "portfolio": {
       "stage": "portfolio",
-      "checkpoint_id": "9e9645b39b974821bfd5d9e9b441b4bd",
+      "checkpoint_id": "38dc20437d884c9fa8327611002b04c5",
       "inputs": {
         "context": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/context-facts.json",
-          "sha256": "20d3cab5c8d14da60901c5a2a4f4d23f189f6683128c4998baed25e65c48f0d6"
+          "sha256": "c4836639b698ba5345f9db8533f8ce25be4eac1c6c1ae3f75b451f19b4de0e7e"
         },
         "cluster": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/cluster-facts.json",
-          "sha256": "87e78407d7dbc70add7eb96926cc26241d6ec959ff0169b70b7ffc76ee5f60cb"
+          "sha256": "8acbeb6ec26f1de4d707d6886152b4fbd1fb44efad58427ea38138cbc0d6a1f3"
         }
       },
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/portfolio-facts.json",
-          "sha256": "625fd91888b76021db48ecb96f0d374450290d42f256517f4ed14934fcd3a7f0"
+          "sha256": "2b0c1804f28af1a59cb781e709b8c0adb6a18b09ce6ca81675867fb09bc85326"
         }
       },
       "code": {
@@ -1329,6 +1696,15 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-7c3ae12304f6c154": {
+          "source_id": "S-7c3ae12304f6c154",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2024/02/2024-02-23-rheinmetall-liefert-skyranger-30-an-oesterreich",
+          "content_sha256": "6443f41f5ba7379ab67d969c4e37510b4e73fd74ce27848a1ad199d959f20abd",
+          "text_sha256": "5cfabee3c90a70c1e7ea8405ab570b7ed08525a5306e1ce50d6342d83c116e37",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-7d3cceefdfc28f58": {
           "source_id": "S-7d3cceefdfc28f58",
           "url": "https://www.rheinmetall.com/de/unternehmen/tochtergesellschaften/rheinmetall-expal-munitions",
@@ -1590,6 +1966,15 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-d2d239c37b99eddf": {
+          "source_id": "S-d2d239c37b99eddf",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-15-rheinmetall-at-eurosatory-to-showcase-its-cutting-edge-skyranger-air-defence-system",
+          "content_sha256": "c718b1a995e3dfb1796880be8be7e9e985608fbb1610d568ed8cf17414fa97b2",
+          "text_sha256": "00ba7b809e96383cd29c1068b200c1ab879637bc82fac19c669b0160a02c0843",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-d2ef86f50f08a3d3": {
           "source_id": "S-d2ef86f50f08a3d3",
           "url": "https://www.rheinmetall.com/en/media/news-watch/news/2023/12/2023-12-20-lynx-with-skyranger-30-for-hungary",
@@ -1736,27 +2121,27 @@
         }
       },
       "dependencies": {
-        "cluster": "63c9a8358465a51447a0e3b3077c167a9376ea65acb9d9b8fef0eb4a7f54fbe6",
-        "context": "bb0b010488ee5b7d789f64510774eda95e303d72e759bcce3a09900635ccd158"
+        "cluster": "c4cf4aa2cf03742c7d3fd95cfdc9d33dba5741ec6bbd4de803fa2b587c03a200",
+        "context": "4b6e8cf4c9318945a5b15dee2cb02bda67e49c2ff6b28e6508c0c9694a188ab5"
       },
-      "checked_at": "2026-10-13T12:38:31+00:00",
-      "fingerprint": "54412a0cad1079e5670528c9017c02d73af8df8c0cc55b8c91ae39731428cfdd"
+      "checked_at": "2026-10-13T15:37:33+00:00",
+      "fingerprint": "9df8d5c7b0a9de3e3fdb4e0d9b061cc7fa0ddc304397ab5b26c4ee25930da216"
     },
     "plan": {
       "stage": "plan",
-      "checkpoint_id": "27a5c69f0d5f4e9a9de1341f6b97050f",
+      "checkpoint_id": "459b3d5d140a4029953ea85af2370be3",
       "inputs": {
         "context": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/context-facts.json",
-          "sha256": "20d3cab5c8d14da60901c5a2a4f4d23f189f6683128c4998baed25e65c48f0d6"
+          "sha256": "c4836639b698ba5345f9db8533f8ce25be4eac1c6c1ae3f75b451f19b4de0e7e"
         },
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/portfolio-facts.json",
-          "sha256": "625fd91888b76021db48ecb96f0d374450290d42f256517f4ed14934fcd3a7f0"
+          "sha256": "2b0c1804f28af1a59cb781e709b8c0adb6a18b09ce6ca81675867fb09bc85326"
         },
         "cluster": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/cluster-facts.json",
-          "sha256": "87e78407d7dbc70add7eb96926cc26241d6ec959ff0169b70b7ffc76ee5f60cb"
+          "sha256": "8acbeb6ec26f1de4d707d6886152b4fbd1fb44efad58427ea38138cbc0d6a1f3"
         }
       },
       "outputs": {
@@ -1801,16 +2186,16 @@
       },
       "sources": {},
       "dependencies": {
-        "cluster": "63c9a8358465a51447a0e3b3077c167a9376ea65acb9d9b8fef0eb4a7f54fbe6",
-        "context": "bb0b010488ee5b7d789f64510774eda95e303d72e759bcce3a09900635ccd158",
-        "portfolio": "54412a0cad1079e5670528c9017c02d73af8df8c0cc55b8c91ae39731428cfdd"
+        "cluster": "c4cf4aa2cf03742c7d3fd95cfdc9d33dba5741ec6bbd4de803fa2b587c03a200",
+        "context": "4b6e8cf4c9318945a5b15dee2cb02bda67e49c2ff6b28e6508c0c9694a188ab5",
+        "portfolio": "9df8d5c7b0a9de3e3fdb4e0d9b061cc7fa0ddc304397ab5b26c4ee25930da216"
       },
-      "checked_at": "2026-10-13T12:38:39+00:00",
-      "fingerprint": "0ae9f4dcf2ae423b5375081783fb9ad325e5ff08e4e3f6e089ed8e2fee196e43"
+      "checked_at": "2026-10-13T15:37:53+00:00",
+      "fingerprint": "3f4589730358a77e002a7e8a8a6e066a0056647fbf3c16c2683f497bedf29b61"
     },
     "market": {
       "stage": "market",
-      "checkpoint_id": "380419c5a5ab4488b4959525ddfadc30",
+      "checkpoint_id": "4680861ba8fc4ecfa90bf3c42bbbc4b1",
       "inputs": {
         "plan": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/comparison-plan.json",
@@ -1818,21 +2203,21 @@
         },
         "context": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/context-facts.json",
-          "sha256": "20d3cab5c8d14da60901c5a2a4f4d23f189f6683128c4998baed25e65c48f0d6"
+          "sha256": "c4836639b698ba5345f9db8533f8ce25be4eac1c6c1ae3f75b451f19b4de0e7e"
         },
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/portfolio-facts.json",
-          "sha256": "625fd91888b76021db48ecb96f0d374450290d42f256517f4ed14934fcd3a7f0"
+          "sha256": "2b0c1804f28af1a59cb781e709b8c0adb6a18b09ce6ca81675867fb09bc85326"
         },
         "cluster": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/cluster-facts.json",
-          "sha256": "87e78407d7dbc70add7eb96926cc26241d6ec959ff0169b70b7ffc76ee5f60cb"
+          "sha256": "8acbeb6ec26f1de4d707d6886152b4fbd1fb44efad58427ea38138cbc0d6a1f3"
         }
       },
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/market-facts.json",
-          "sha256": "d690aaa3ef26b72c523a86fd1d24e50f3999d8caa647b06656238cb96566c90b"
+          "sha256": "720cf703241886a4c5fa36a22d0dbe8f5c21c43b4055ea30a89a28f63a597547"
         }
       },
       "code": {
@@ -2870,6 +3255,15 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-d2d239c37b99eddf": {
+          "source_id": "S-d2d239c37b99eddf",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-15-rheinmetall-at-eurosatory-to-showcase-its-cutting-edge-skyranger-air-defence-system",
+          "content_sha256": "c718b1a995e3dfb1796880be8be7e9e985608fbb1610d568ed8cf17414fa97b2",
+          "text_sha256": "00ba7b809e96383cd29c1068b200c1ab879637bc82fac19c669b0160a02c0843",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-d2ef86f50f08a3d3": {
           "source_id": "S-d2ef86f50f08a3d3",
           "url": "https://www.rheinmetall.com/en/media/news-watch/news/2023/12/2023-12-20-lynx-with-skyranger-30-for-hungary",
@@ -3097,33 +3491,33 @@
         }
       },
       "dependencies": {
-        "cluster": "63c9a8358465a51447a0e3b3077c167a9376ea65acb9d9b8fef0eb4a7f54fbe6",
-        "context": "bb0b010488ee5b7d789f64510774eda95e303d72e759bcce3a09900635ccd158",
-        "plan": "0ae9f4dcf2ae423b5375081783fb9ad325e5ff08e4e3f6e089ed8e2fee196e43",
-        "portfolio": "54412a0cad1079e5670528c9017c02d73af8df8c0cc55b8c91ae39731428cfdd"
+        "cluster": "c4cf4aa2cf03742c7d3fd95cfdc9d33dba5741ec6bbd4de803fa2b587c03a200",
+        "context": "4b6e8cf4c9318945a5b15dee2cb02bda67e49c2ff6b28e6508c0c9694a188ab5",
+        "plan": "3f4589730358a77e002a7e8a8a6e066a0056647fbf3c16c2683f497bedf29b61",
+        "portfolio": "9df8d5c7b0a9de3e3fdb4e0d9b061cc7fa0ddc304397ab5b26c4ee25930da216"
       },
-      "checked_at": "2026-10-13T15:13:51+00:00",
-      "fingerprint": "a3e03a5121e7597b30d3ad97ff8fa780bd8c0bf13404e5408cc516fa61cc2e3b"
+      "checked_at": "2026-10-13T15:37:57+00:00",
+      "fingerprint": "bbb2f38e2466b860c10a92a0a7fab32280705f9f174ee340515be8440165797f"
     },
     "facts": {
       "stage": "facts",
-      "checkpoint_id": "51203b3ef36d483c9e770b94d2bc5f17",
+      "checkpoint_id": "3d879a09aeda453380ccbe9fd75e57fc",
       "inputs": {
         "context": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/context-facts.json",
-          "sha256": "20d3cab5c8d14da60901c5a2a4f4d23f189f6683128c4998baed25e65c48f0d6"
+          "sha256": "c4836639b698ba5345f9db8533f8ce25be4eac1c6c1ae3f75b451f19b4de0e7e"
         },
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/portfolio-facts.json",
-          "sha256": "625fd91888b76021db48ecb96f0d374450290d42f256517f4ed14934fcd3a7f0"
+          "sha256": "2b0c1804f28af1a59cb781e709b8c0adb6a18b09ce6ca81675867fb09bc85326"
         },
         "cluster": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/cluster-facts.json",
-          "sha256": "87e78407d7dbc70add7eb96926cc26241d6ec959ff0169b70b7ffc76ee5f60cb"
+          "sha256": "8acbeb6ec26f1de4d707d6886152b4fbd1fb44efad58427ea38138cbc0d6a1f3"
         },
         "market": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/market-facts.json",
-          "sha256": "d690aaa3ef26b72c523a86fd1d24e50f3999d8caa647b06656238cb96566c90b"
+          "sha256": "720cf703241886a4c5fa36a22d0dbe8f5c21c43b4055ea30a89a28f63a597547"
         },
         "plan": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/comparison-plan.json",
@@ -3133,11 +3527,11 @@
       "outputs": {
         "facts": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/review-packet.json",
-          "sha256": "d7923b1f0775d6cada557567ac69b4578b3e9f2d70e92cbb8cd9a0acdaad2575"
+          "sha256": "fe23ec0bb3929706320626a668c3a388cff4775e8e48e2e72df8674384be2291"
         },
         "validation": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/facts-validation.json",
-          "sha256": "c77939636893929e3119620d4324a319a929d3c649629c49293d5ad39d93b2d4"
+          "sha256": "fae9b66dc81517e700c40f78aee6323caf17582905a0d8add33f53ea3d61c596"
         }
       },
       "code": {
@@ -4174,6 +4568,15 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-d2d239c37b99eddf": {
+          "source_id": "S-d2d239c37b99eddf",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-15-rheinmetall-at-eurosatory-to-showcase-its-cutting-edge-skyranger-air-defence-system",
+          "content_sha256": "c718b1a995e3dfb1796880be8be7e9e985608fbb1610d568ed8cf17414fa97b2",
+          "text_sha256": "00ba7b809e96383cd29c1068b200c1ab879637bc82fac19c669b0160a02c0843",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-d2ef86f50f08a3d3": {
           "source_id": "S-d2ef86f50f08a3d3",
           "url": "https://www.rheinmetall.com/en/media/news-watch/news/2023/12/2023-12-20-lynx-with-skyranger-30-for-hungary",
@@ -4401,17 +4804,17 @@
         }
       },
       "dependencies": {
-        "cluster": "63c9a8358465a51447a0e3b3077c167a9376ea65acb9d9b8fef0eb4a7f54fbe6",
-        "context": "bb0b010488ee5b7d789f64510774eda95e303d72e759bcce3a09900635ccd158",
-        "market": "a3e03a5121e7597b30d3ad97ff8fa780bd8c0bf13404e5408cc516fa61cc2e3b",
-        "plan": "0ae9f4dcf2ae423b5375081783fb9ad325e5ff08e4e3f6e089ed8e2fee196e43",
-        "portfolio": "54412a0cad1079e5670528c9017c02d73af8df8c0cc55b8c91ae39731428cfdd"
+        "cluster": "c4cf4aa2cf03742c7d3fd95cfdc9d33dba5741ec6bbd4de803fa2b587c03a200",
+        "context": "4b6e8cf4c9318945a5b15dee2cb02bda67e49c2ff6b28e6508c0c9694a188ab5",
+        "market": "bbb2f38e2466b860c10a92a0a7fab32280705f9f174ee340515be8440165797f",
+        "plan": "3f4589730358a77e002a7e8a8a6e066a0056647fbf3c16c2683f497bedf29b61",
+        "portfolio": "9df8d5c7b0a9de3e3fdb4e0d9b061cc7fa0ddc304397ab5b26c4ee25930da216"
       },
-      "checked_at": "2026-10-13T15:14:02+00:00",
-      "fingerprint": "ba658e2e1c47131b93891ae5eb05d83044ae300aac9b02af0e8c51205e054e0c"
+      "checked_at": "2026-10-13T15:38:04+00:00",
+      "fingerprint": "35f20c6c8ffceca310ce1b8441aad1e0b4289041a9b24097390538577a6b3c7f"
     }
   },
   "created_at": "2026-10-13T12:00:37+00:00",
   "notice": "Local completion records only; content approval and visual QA remain separate.",
-  "fingerprint": "c56d8613e144bb6fef50aadc2a1907d98dccce8e75f7350b0d054f3b8207de74"
+  "fingerprint": "387937177708c3be39c951199596b6da4794d7e9cbeeb88d29b740ad08cedd71"
 }

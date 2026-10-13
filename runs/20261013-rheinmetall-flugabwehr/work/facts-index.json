@@ -14,19 +14,19 @@
   "inputs": [
     {
       "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/context-facts.json",
-      "sha256": "20d3cab5c8d14da60901c5a2a4f4d23f189f6683128c4998baed25e65c48f0d6"
+      "sha256": "c4836639b698ba5345f9db8533f8ce25be4eac1c6c1ae3f75b451f19b4de0e7e"
     },
     {
       "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/portfolio-facts.json",
-      "sha256": "625fd91888b76021db48ecb96f0d374450290d42f256517f4ed14934fcd3a7f0"
+      "sha256": "2b0c1804f28af1a59cb781e709b8c0adb6a18b09ce6ca81675867fb09bc85326"
     },
     {
       "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/cluster-facts.json",
-      "sha256": "87e78407d7dbc70add7eb96926cc26241d6ec959ff0169b70b7ffc76ee5f60cb"
+      "sha256": "8acbeb6ec26f1de4d707d6886152b4fbd1fb44efad58427ea38138cbc0d6a1f3"
     },
     {
       "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/market-facts.json",
-      "sha256": "d690aaa3ef26b72c523a86fd1d24e50f3999d8caa647b06656238cb96566c90b"
+      "sha256": "720cf703241886a4c5fa36a22d0dbe8f5c21c43b4055ea30a89a28f63a597547"
     }
   ],
   "sources": [
@@ -1055,6 +1055,15 @@
       "source_kind": "Herstellerangabe"
     },
     {
+      "id": "S-d2d239c37b99eddf",
+      "name": "Rheinmetall AG",
+      "title": "Eurosatory 2026: Rheinmetall to showcase its cutting-edge Skyranger air defence system",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/06/2026-06-15-rheinmetall-at-eurosatory-to-showcase-its-cutting-edge-skyranger-air-defence-system",
+      "published_date": "2026-06-15",
+      "accessed_date": "2026-10-13",
+      "source_kind": "Herstellerangabe"
+    },
+    {
       "id": "S-d2ef86f50f08a3d3",
       "name": "Rheinmetall AG",
       "title": "Breakthrough for Skyranger 30 air defence system: development contract for Skyranger variant of Lynx in Hungary",
@@ -1330,11 +1339,11 @@
         ],
         "evidence": "Auszug: Die Rheinmetall AG ist direkt oder indirekt an 231 in- und ausländischen Gesellschaften beteiligt (Vorjahr: 217) ... Der Konsolidierungskreis umfasst 188 Tochtergesellschaften (Vorjahr: 176). ... Die Aktivitäten sind konsequent auf die Wirtschaftsräume Europa, Amerika, Asien und Australien ausgerichtet.",
         "location": "Geschäftsbericht 2025, Struktur des Rheinmetall-Konzerns, rechte Spalte (PDF-Seite 22)",
-        "uncertainty": "Stand Geschäftsbericht 2025 (vor NVL-Vollzug am 1. März 2026); spätere Veränderungen des Beteiligungskreises nicht erfasst.",
+        "uncertainty": "Stand Geschäftsbericht 2025 (Bilanzstichtag 31.12.2025, vor NVL-Closing am 27.02.2026); spätere Veränderungen des Beteiligungskreises nicht erfasst.",
         "proposed_depth": "B",
         "depth_reason": "ergänzende Strukturangabe"
       },
-      "fingerprint": "43daa40469a3ec931a7f52daa74074db7b33115180c19a8b2ad7200e0c51d49a"
+      "fingerprint": "64d2ef894b30be1839f5a64f9d0cd7f5d80e160cf7167ad17674b34c34ac2f95"
     },
     {
       "role": "context",
@@ -1787,7 +1796,7 @@
       "role": "context",
       "claim": {
         "id": "T-AD-04",
-        "statement": "Oliver Dürr wird in Rheinmetall-Mitteilungen als Geschäftsführer der Rheinmetall Air Defence (Dezember 2025) bzw. Leiter der Rheinmetall-Division Air Defence (Juni 2026) genannt.",
+        "statement": "Oliver Dürr wurde in Rheinmetall-Mitteilungen als Geschäftsführer der Rheinmetall Air Defence (Dezember 2025) bzw. Leiter der Rheinmetall-Division Air Defence (Juni 2026) genannt; die Angabe ist historisch (Stand Juni 2026).",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-4789a4ac6acb59aa",
@@ -1809,11 +1818,14 @@
             "location": "Pressemitteilung 24.6.2026, Zitatabsatz"
           }
         ],
-        "uncertainty": "Keine zusätzliche konkrete Unsicherheit über den Aussageursprung hinaus.",
+        "uncertainty": "Keine aktuelle Leitungsangabe zum Stichtag: Laut Fachmedium (Cluster-Claim C-050, Ankündigung) soll Roman Köhne die Division zum 1.10.2026 übernehmen; Rheinmetall-Originalmitteilung dazu nicht geöffnet.",
         "proposed_depth": "B",
-        "depth_reason": "Organisationsangabe, nicht entscheidungstragend"
+        "depth_reason": "Organisationsangabe, nicht entscheidungstragend",
+        "depends_on": [
+          "C-050"
+        ]
       },
-      "fingerprint": "01fed906d6822a75892c3557ffde59c6e4ce50e67e9bd5a51b25b225568d85e8"
+      "fingerprint": "85741148a829ca2adf94bb005b6d0fe8268e959ecde5d072e3c90ab0355903f0"
     },
     {
       "role": "context",
@@ -1928,16 +1940,30 @@
       "role": "context",
       "claim": {
         "id": "T-EV-03",
-        "statement": "Laut Rheinmetall wurde die Übernahme von NVL nach Unterzeichnung des Kaufvertrags im Oktober 2025 und Vorliegen aller kartellrechtlichen Freigaben zum 1. März 2026 vollzogen; mit dem neuen Segment Naval Systems wurden laut Q1-Mitteilung Bestandsprojekte im Wert von rund 5,5 Mrd. EUR übernommen.",
+        "statement": "Laut Geschäftsbericht 2025 und Halbjahresfinanzbericht 2026 erwarb die Rheinmetall Naval Systems GmbH am 27. Februar 2026 (Closing) 100 % der Anteile und Stimmrechte an der NVL B.V. & Co. KG; die Rheinmetall-Pressemitteilung vom 2. März 2026 nennt nach Unterzeichnung des Kaufvertrags im Oktober 2025 und Vorliegen aller kartellrechtlichen Freigaben den 1. März 2026 als Übergangsstichtag. Mit dem neuen Segment Naval Systems wurden laut Q1-Mitteilung Bestandsprojekte im Wert von rund 5,5 Mrd. EUR übernommen.",
         "kind": "Herstellerangabe",
         "source_ids": [
+          "S-f4730b21412bb02a",
+          "S-3dad8b811c925694",
           "S-042b26990fdc2a9d",
           "S-cbdf02d668299f56",
           "S-5f102cfea2da2738"
         ],
-        "evidence": "Auszug: Following the announcement in September 2025 and the signing of the purchase contract in October 2025, Rheinmetall has now been given all antitrust approvals ... The transition was concluded on 1 March 2026. | Auszug: Mit der Eingliederung des neuen Naval Systems Segments wurden Bestandsprojekte mit einem Wert von 5,5 MrdEUR übernommen | Auszug: Naval Systems erzielte im Zeitraum der ersten vier Monate nach der Übernahme Ende Februar 2026 einen Umsatz von 334 MioEUR.",
-        "location": "Pressemitteilung 02.03.2026, Absatz 1; Pressemitteilung Q1 2026 (PDF-Seite 1); Pressemitteilung H1 2026, Abschnitt Naval Systems (PDF-Seite 4)",
+        "evidence": "Auszug: Am 27. Februar 2026 hat die Rheinmetall Naval Systems GmbH 100% der Anteile und damit 100% der Stimmrechte an der Naval Vessels Lürssen B.V. & Co. KG, Bremen, Deutschland erworben. | Auszug: Am 27. Februar 2026 hat die Rheinmetall Naval Systems GmbH 100% der Anteile und damit 100% der Stimmrechte an der NVL erworben. | Auszug: Following the announcement in September 2025 and the signing of the purchase contract in October 2025, Rheinmetall has now been given all antitrust approvals ... The transition was concluded on 1 March 2026. | Auszug: Mit der Eingliederung des neuen Naval Systems Segments wurden Bestandsprojekte mit einem Wert von 5,5 MrdEUR übernommen | Auszug: Naval Systems erzielte im Zeitraum der ersten vier Monate nach der Übernahme Ende Februar 2026 einen Umsatz von 334 MioEUR.",
+        "location": "Geschäftsbericht 2025, Konzernanhang (41) Ereignisse nach dem Bilanzstichtag (PDF-Seite 265); Halbjahresfinanzbericht 2026, Zwischenlagebericht – Wesentliche Ereignisse (PDF-Seite 9); Pressemitteilung 02.03.2026, Absatz 1; Pressemitteilung Q1 2026 (PDF-Seite 1); Pressemitteilung H1 2026, Abschnitt Naval Systems (PDF-Seite 4)",
         "evidence_items": [
+          {
+            "source_id": "S-f4730b21412bb02a",
+            "mode": "Auszug",
+            "text": "Am 27. Februar 2026 hat die Rheinmetall Naval Systems GmbH 100% der Anteile und damit 100% der Stimmrechte an der Naval Vessels Lürssen B.V. & Co. KG, Bremen, Deutschland erworben.",
+            "location": "Geschäftsbericht 2025, Konzernanhang (41) Ereignisse nach dem Bilanzstichtag (PDF-Seite 265)"
+          },
+          {
+            "source_id": "S-3dad8b811c925694",
+            "mode": "Auszug",
+            "text": "Am 27. Februar 2026 hat die Rheinmetall Naval Systems GmbH 100% der Anteile und damit 100% der Stimmrechte an der NVL erworben.",
+            "location": "Halbjahresfinanzbericht 2026, Zwischenlagebericht – Wesentliche Ereignisse (PDF-Seite 9)"
+          },
           {
             "source_id": "S-042b26990fdc2a9d",
             "text": "Following the announcement in September 2025 and the signing of the purchase contract in October 2025, Rheinmetall has now been given all antitrust approvals ... The transition was concluded on 1 March 2026.",
@@ -1957,13 +1983,13 @@
             "location": "Pressemitteilung H1 2026, Abschnitt Naval Systems (PDF-Seite 4)"
           }
         ],
-        "uncertainty": "Rheinmetall-Quellen nennen den Übergang „zum 1. März 2026“ bzw. die „Übernahme Ende Februar 2026“ (Stichtagsformulierung).",
+        "uncertainty": "Closing-/Erwerbsdatum 27.02.2026 laut Finanzberichten; 1.3.2026 ist laut Pressemitteilung der Übergangsstichtag (kein Widerspruch in der Sache, unterschiedliche Bezugspunkte).",
         "depth_reason": "Vollzug wesentlicher Akquisition",
-        "event_date": "2026-03-01",
+        "event_date": "2026-02-27",
         "event_status": "vollzogen laut Unternehmen",
         "proposed_depth": "A"
       },
-      "fingerprint": "8e53ec1fb7fb149758d1b6474ca011016773cca64529c898d7c9bfcfe79de632"
+      "fingerprint": "0c6a147fdfe4c6fd602f415db36115b35d8ccd41f13aacd298ac24ac7e003aa3"
     },
     {
       "role": "context",
@@ -2397,7 +2423,7 @@
       "role": "portfolio",
       "claim": {
         "id": "P-VS-02",
-        "statement": "Rheinmetall zeigt im Investor-Foliensatz September 2026 als ausgewählte Vehicle-Systems-Produkte u. a. Panther KF51, Leopard 2 (gemeinsames Programm), Challenger 3, Lynx, Puma (gemeinsam), Marder, XM30, Boxer (gemeinsam), Fuchs, Panzerhaubitze 2000 (gemeinsam), RCH155 (gemeinsam), Radhaubitze, HX/TG-MIL sowie 4x4-Fahrzeuge Survivor R, Caracal und Shadow Wolf.",
+        "statement": "Rheinmetall zeigt im Investor-Foliensatz September 2026 als ausgewählte Vehicle-Systems-Produkte u. a. Panther KF51, Leopard 2 (gemeinsames Programm), Challenger 3, Lynx, Puma (gemeinsam), Marder (gemeinsam), XM30, Boxer (gemeinsam), Fuchs, Panzerhaubitze 2000 (gemeinsam), RCH155 (gemeinsam), Radhaubitze, HX/TG-MIL sowie 4x4-Fahrzeuge Survivor R, Caracal und Shadow Wolf.",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-e6f358904e19e4e8"
@@ -2407,7 +2433,7 @@
         "uncertainty": "",
         "proposed_depth": "A"
       },
-      "fingerprint": "90417c9e606dce353fd98c407f4e4128d344913c8543f5885193a1a8b6fb933f"
+      "fingerprint": "9f864e5611bfff50507d0b9c801e0078cdd9ac7e7d225e88d5220b8fa403d15e"
     },
     {
       "role": "portfolio",
@@ -3019,19 +3045,34 @@
       "role": "portfolio",
       "claim": {
         "id": "P-SKR-07",
-        "statement": "Laut ILA-Mitteilung (Juni 2026) zeigte Rheinmetall den Skyranger-30-Turm auf Boxer mit dem Flugkörper DefendAir von MBDA; Rheinmetall bezeichnet den Skyranger als zentralen Bestandteil der European Sky Shield Initiative und integriert den Turm neben Boxer auch auf Lynx KF41 und Lkw-Fahrgestellen; auf der Eurosatory 2026 präsentierte Rheinmetall den Skyranger 30 auf Lynx KF41.",
+        "statement": "Laut ILA-Mitteilung (Juni 2026) zeigte Rheinmetall den Skyranger-30-Turm auf Boxer mit dem Flugkörper DefendAir von MBDA; Rheinmetall bezeichnet den Skyranger als zentralen Bestandteil der European Sky Shield Initiative und integriert den Turm neben Boxer auch auf Lynx KF41 und Lkw-Fahrgestellen. Für die Eurosatory 2026 (15.–19. Juni 2026) kündigte Rheinmetall an, den Skyranger 30 auf Lynx KF41 zu zeigen.",
         "kind": "Herstellerangabe",
         "source_ids": [
-          "S-c0d13e5db6387716"
+          "S-c0d13e5db6387716",
+          "S-d2d239c37b99eddf"
         ],
-        "evidence": "Auszug: At ILA 2026, Rheinmetall showcases the Skyranger 30 turret mounted on the Boxer 8x8 armored wheeled vehicle, equipped with MBDA’s DefendAir guided missile. … The Skyranger is increasingly establishing itself as the European standard and is a central component of the European Sky Shield Initiative (ESSI). … In addition to the Boxer wheeled armored vehicle, Rheinmetall is also showcasing the system internationally on tracked vehicles such as the Lynx KF41 or on truck chassis",
-        "location": "ILA-Mitteilung 10. Juni 2026, Absätze 2, 5 und 8",
-        "uncertainty": "„European standard“ ist eine Selbstbeschreibung; Integration DefendAir laut S&V erst ab 2029 verfügbar (P-SKR-03).",
+        "evidence": "Mehrere Belege, siehe evidence_items.",
+        "location": "ILA-Mitteilung 10. Juni 2026, Absätze 2, 5 und 8; Eurosatory-Mitteilung 15. Juni 2026, Absatz 1",
+        "evidence_items": [
+          {
+            "source_id": "S-c0d13e5db6387716",
+            "text": "At ILA 2026, Rheinmetall showcases the Skyranger 30 turret mounted on the Boxer 8x8 armored wheeled vehicle, equipped with MBDA’s DefendAir guided missile. … The Skyranger is increasingly establishing itself as the European standard and is a central component of the European Sky Shield Initiative (ESSI). … In addition to the Boxer wheeled armored vehicle, Rheinmetall is also showcasing the system internationally on tracked vehicles such as the Lynx KF41 or on truck chassis",
+            "mode": "Auszug",
+            "location": "ILA-Mitteilung 10. Juni 2026, Absätze 2, 5 und 8"
+          },
+          {
+            "source_id": "S-d2d239c37b99eddf",
+            "text": "At this year’s Eurosatory 2026 in Paris (15 to 19 June 2026), Rheinmetall will present the Skyranger 30 mobile air defence system, based on the Lynx KF41 combat vehicle.",
+            "mode": "Auszug",
+            "location": "Eurosatory-Mitteilung 15. Juni 2026, Absatz 1"
+          }
+        ],
+        "uncertainty": "Eurosatory-Präsentation nur als Ankündigung belegt. „European standard“ ist eine Selbstbeschreibung; Integration DefendAir laut S&V erst ab 2029 verfügbar (P-SKR-03).",
         "proposed_depth": "A",
         "event_date": "2026-06-10",
         "event_status": "Messepräsentation"
       },
-      "fingerprint": "c1a3fefc3e933a08ef880ae22b45f6e8c839095b3496ed7da0856ac70f1bd813"
+      "fingerprint": "be1a030b8de9cb2bdd819d5dd889d151183f4df776d6e505fb15760f325b5d90"
     },
     {
       "role": "portfolio",
@@ -3618,19 +3659,19 @@
       "role": "portfolio",
       "claim": {
         "id": "P-REG-LT-01",
-        "statement": "Laut Invest Lithuania erfolgte am 4. November 2025 der Spatenstich für ein 155-mm-Artilleriemunitionswerk in Baisogala, betrieben vom Joint Venture Rheinmetall Defence Lietuva (Partner EPSO-G); die Inbetriebnahme ist frühestens 2026 geplant, mit Linienqualifikation zunächst bis Ende 2026. Das JV Lithuania Defence Services in Jonava wartet Gefechtsfahrzeuge u. a. der deutschen Panzerbrigade 45, anderer NATO-Armeen und der Ukraine.",
+        "statement": "Laut Invest Lithuania erfolgte am 4. November 2025 der Spatenstich für ein 155-mm-Artilleriemunitionswerk in Baisogala, betrieben vom Joint Venture Rheinmetall Defence Lietuva (Partner EPSO-G); die Inbetriebnahme ist bereits für 2026 geplant, mit Linienqualifikation bis Ende 2026 und – je nach Auftragslage – schrittweisem Hochlauf ab 2027. Das JV Lithuania Defence Services in Jonava wartet Gefechtsfahrzeuge u. a. der deutschen Panzerbrigade 45, anderer NATO-Armeen und der Ukraine.",
         "kind": "Fakt",
         "source_ids": [
           "S-5dad3a27cd832a61"
         ],
-        "evidence": "Auszug: A new plant for the production of 155 mm artillery ammunition is being built in the Lithuanian municipality of Baisogala. It will be operated by the joint venture Rheinmetall Defence Lietuva. … broke ground on 4 November 2025. … The Lithuanian plant is scheduled to go into operation as early as 2026. Line qualification will initially take plac[e] … The Lithuania Defence Services joint venture in Jonava maintains combat vehicles for the German 45th Tank Brigade, other NATO armies and Ukraine.",
+        "evidence": "Auszug: A new plant for the production of 155 mm artillery ammunition is being built in the Lithuanian municipality of Baisogala. It will be operated by the joint venture Rheinmetall Defence Lietuva. … broke ground on 4 November 2025. … The Lithuanian plant is scheduled to go into operation as early as 2026. Line qualification will initially take place until the end of 2026. Then, depending on the order situation, a gradual ramp-up will begin in 2027. … The Lithuania Defence Services joint venture in Jonava maintains combat vehicles for the German 45th Tank Brigade, other NATO armies and Ukraine.",
         "location": "Invest Lithuania, 4. November 2025, Absätze 1–3 und 6",
         "uncertainty": "Inbetriebnahmestatus zum Stichtag nicht belegt; laut Halbjahresmitteilung 2026 ist der Werksaufbau in Litauen noch Investitionsschwerpunkt (P-REG-UK-01, h1pm S. 3).",
         "proposed_depth": "A",
         "event_date": "2025-11-04",
         "event_status": "im Bau"
       },
-      "fingerprint": "88c88136311edc9c9170ea3be2dbf7b32b21cf4305d964d40eb9f006ce1b4f96"
+      "fingerprint": "995ac2925d2461aaa20e2631472874b61f8f99f65c5d898dc636747edda1b986"
     },
     {
       "role": "portfolio",
@@ -3670,14 +3711,29 @@
         "statement": "Laut Rheinmetall ist Rumänien bereits einer der Heimatmärkte, die Tochter Rheinmetall Automecanica (Medias) ist dort seit vielen Jahren aktiv; zur Umsetzung des 5,7-Mrd.-EUR-Pakets (Mai 2026) will Rheinmetall mehrere hundert Mio. EUR investieren und die Kapazitäten in Rumänien deutlich ausweiten, ein Großteil der Wertschöpfung soll lokal erfolgen.",
         "kind": "Herstellerangabe",
         "source_ids": [
-          "S-3dad8b811c925694"
+          "S-3dad8b811c925694",
+          "S-cede873d57924937"
         ],
-        "evidence": "Auszug: Rheinmetall wird zur Realisierung der Aufträge seine bereits seit vielen Jahren in Rumänien vorhandenen Kapazitäten deutlich ausweiten und auch einen Technologietransfer gewährleisten. Ein Großteil der Wertschöpfung erfolgt lokal.",
-        "location": "Halbjahresfinanzbericht 2026, PDF-S. 10, „Lynx-Gefechtsfahrzeuge, Schiffe und Flugabwehr für Rumänien“",
+        "evidence": "Mehrere Belege, siehe evidence_items.",
+        "location": "Halbjahresfinanzbericht 2026, PDF-S. 10, „Lynx-Gefechtsfahrzeuge, Schiffe und Flugabwehr für Rumänien“; Rheinmetall-Mitteilung 2. Juni 2026, Absätze nach der Auftragsliste („Rheinmetall is set to invest …“, „Romania is already one of Rheinmetall’s home markets …“)",
+        "evidence_items": [
+          {
+            "source_id": "S-3dad8b811c925694",
+            "text": "Rheinmetall wird zur Realisierung der Aufträge seine bereits seit vielen Jahren in Rumänien vorhandenen Kapazitäten deutlich ausweiten und auch einen Technologietransfer gewährleisten. Ein Großteil der Wertschöpfung erfolgt lokal.",
+            "mode": "Auszug",
+            "location": "Halbjahresfinanzbericht 2026, PDF-S. 10, „Lynx-Gefechtsfahrzeuge, Schiffe und Flugabwehr für Rumänien“"
+          },
+          {
+            "source_id": "S-cede873d57924937",
+            "text": "Rheinmetall is set to invest several hundred million euros in Romania, with a significant proportion of the value added being generated in this NATO and EU member state … Romania is already one of Rheinmetall’s home markets. Its subsidiary Rheinmetall Automecanica, based in Medias, has been active there for many years.",
+            "mode": "Auszug",
+            "location": "Rheinmetall-Mitteilung 2. Juni 2026, Absätze nach der Auftragsliste („Rheinmetall is set to invest …“, „Romania is already one of Rheinmetall’s home markets …“)"
+          }
+        ],
         "uncertainty": "Konkrete neue Standorte in Rumänien in den gelesenen Quellen nicht benannt.",
         "proposed_depth": "A"
       },
-      "fingerprint": "e6c650709df3185c4ee945cb883a22c0080e835247a696bfc91ba0144564e936"
+      "fingerprint": "1f289af9ab6526ccd6c80e284c8f88093218d2138390f0977832b1785850132e"
     },
     {
       "role": "portfolio",
@@ -4058,18 +4114,18 @@
       "role": "cluster",
       "claim": {
         "id": "C-009",
-        "statement": "Am 25. Januar 2024 unterzeichneten BAAINBw und die 2021 gegründete ARGE NNbS (Rheinmetall Electronics GmbH, Diehl Defence GmbH & Co. KG, Hensoldt Sensors GmbH) den Entwicklungsvertrag für das Luftverteidigungssystem Nah- und Nächstbereichsschutz (LVS NNbS) mit rund 1,2 Mrd. EUR brutto; Ziel ist u. a. die Anbindung von IRIS-T SLM und Skyranger 30. Laut gemeinsamer Mitteilung bringt Rheinmetall Fahrzeuge, Kommunikation und Integration ein, Diehl Defence ist Systemhaus für Luftverteidigung, Hensoldt liefert u. a. Radare. Hensoldt weist für das Vorjahr 2024 Auftragseingänge im Projekt LVS NNbS aus.",
+        "statement": "Am 25. Januar 2024 unterzeichneten BAAINBw und die 2021 gegründete ARGE NNbS (Rheinmetall Electronics GmbH, Diehl Defence GmbH & Co. KG, Hensoldt Sensors GmbH) den Entwicklungsvertrag für das Luftverteidigungssystem Nah- und Nächstbereichsschutz (LVS NNbS) mit rund 1,2 Mrd. EUR brutto (laut Mitteilung nach Leistungsanteilen: Rheinmetall 607 Mio. EUR, Diehl 339 Mio. EUR, Hensoldt 284 Mio. EUR); Ziel ist u. a. die Anbindung von IRIS-T SLM und Skyranger 30. Laut gemeinsamer Mitteilung bringt Rheinmetall Fahrzeuge, Kommunikation und Integration ein, Diehl Defence ist Systemhaus für Luftverteidigung, Hensoldt liefert u. a. Radare. Hensoldt weist für das Vorjahr 2024 Auftragseingänge im Projekt LVS NNbS aus.",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-f562ccee195198fd",
           "S-7066a889ca7eaad4"
         ],
-        "evidence": "Auszug (Rheinmetall AG / Diehl Defence / Hensoldt): Der 2021 gegründeten ARGE NNbS gehören die Unternehmen Rheinmetall Electronics GmbH (Bremen), Diehl Defence GmbH & Co. KG (Überlingen) und Hensoldt Sensors GmbH (Taufkirchen) an. Der Auftrag hat ein Volumen von rund 1,2 MrdEUR brutto ... Anbindung der bereits in Beschaffung befindlichen Feuereinheiten IRIS T-SLM sowie des zukünftig zu beschaffenden Flugabwehrkanonenpanzers Skyranger 30 ... Vertragspartner des Bundes ist die ARGE NNbS. | Auszug (HENSOLDT AG): Der Vorjahreszeitraum beinhaltete insbesondere Aufträge für das Luftverteidigungssystem Nah- und Nächstbereichsschutz (LVS NNbS) ... Das Vorjahr enthielt unter anderem ... einen Auftrag im Rahmen des Projekts LVS NNbS.",
+        "evidence": "Auszug (Rheinmetall AG / Diehl Defence / Hensoldt): Der 2021 gegründeten ARGE NNbS gehören die Unternehmen Rheinmetall Electronics GmbH (Bremen), Diehl Defence GmbH & Co. KG (Überlingen) und Hensoldt Sensors GmbH (Taufkirchen) an. Der Auftrag hat ein Volumen von rund 1,2 MrdEUR brutto, das sich auf die Partnerunternehmen nach ihren Leistungsanteilen wie folgt aufschlüsselt: Rheinmetall 607 MioEUR, Diehl 339 MioEUR und Hensoldt 284 MioEUR ... Anbindung der bereits in Beschaffung befindlichen Feuereinheiten IRIS T-SLM sowie des zukünftig zu beschaffenden Flugabwehrkanonenpanzers Skyranger 30 ... Vertragspartner des Bundes ist die ARGE NNbS. | Auszug (HENSOLDT AG): Der Vorjahreszeitraum beinhaltete insbesondere Aufträge für das Luftverteidigungssystem Nah- und Nächstbereichsschutz (LVS NNbS) ... Das Vorjahr enthielt unter anderem ... einen Auftrag im Rahmen des Projekts LVS NNbS.",
         "location": "Rheinmetall AG / Diehl Defence / Hensoldt: Pressemitteilung vom 25.01.2024, Absätze 1, 4, 5, 8–10 | HENSOLDT AG: Hensoldt Geschäftsbericht 2025, Zusammengefasster Lagebericht, Auftragseingang Sensors/Optronics, S. 32–33",
         "evidence_items": [
           {
             "source_id": "S-f562ccee195198fd",
-            "text": "Der 2021 gegründeten ARGE NNbS gehören die Unternehmen Rheinmetall Electronics GmbH (Bremen), Diehl Defence GmbH & Co. KG (Überlingen) und Hensoldt Sensors GmbH (Taufkirchen) an. Der Auftrag hat ein Volumen von rund 1,2 MrdEUR brutto ... Anbindung der bereits in Beschaffung befindlichen Feuereinheiten IRIS T-SLM sowie des zukünftig zu beschaffenden Flugabwehrkanonenpanzers Skyranger 30 ... Vertragspartner des Bundes ist die ARGE NNbS.",
+            "text": "Der 2021 gegründeten ARGE NNbS gehören die Unternehmen Rheinmetall Electronics GmbH (Bremen), Diehl Defence GmbH & Co. KG (Überlingen) und Hensoldt Sensors GmbH (Taufkirchen) an. Der Auftrag hat ein Volumen von rund 1,2 MrdEUR brutto, das sich auf die Partnerunternehmen nach ihren Leistungsanteilen wie folgt aufschlüsselt: Rheinmetall 607 MioEUR, Diehl 339 MioEUR und Hensoldt 284 MioEUR ... Anbindung der bereits in Beschaffung befindlichen Feuereinheiten IRIS T-SLM sowie des zukünftig zu beschaffenden Flugabwehrkanonenpanzers Skyranger 30 ... Vertragspartner des Bundes ist die ARGE NNbS.",
             "mode": "Auszug",
             "location": "Pressemitteilung vom 25.01.2024, Absätze 1, 4, 5, 8–10"
           },
@@ -4080,13 +4136,13 @@
             "location": "Hensoldt Geschäftsbericht 2025, Zusammengefasster Lagebericht, Auftragseingang Sensors/Optronics, S. 32–33"
           }
         ],
-        "uncertainty": "Gemeinsame Pressemitteilung aller drei Partner (keine unabhängige Behördenquelle geöffnet); Aufteilung des Volumens auf die Partner nur 'nach Leistungsanteilen', Beträge in der geöffneten Quelle nicht beziffert.",
+        "uncertainty": "Gemeinsame Pressemitteilung aller drei Partner (Herstellerangabe; keine unabhängige Behördenquelle geöffnet); Partneranteile sind Bruttoangaben laut Mitteilung, keine Umsatzrealisierung.",
         "proposed_depth": "A",
         "depth_reason": "Netzwerkkanten und Kern des Flugabwehr-Konsortiums.",
         "event_date": "2024-01-25",
         "event_status": "Entwicklungsvertrag unterzeichnet"
       },
-      "fingerprint": "969f71374354e5a8649acfc5a94755a80ff45ad6c23fb971e2d33a6d556e5171"
+      "fingerprint": "d507b169d1af3e607216d515bd3d1683f4f1b13133f78cc2c009a889d5e4db2f"
     },
     {
       "role": "cluster",
@@ -4308,15 +4364,16 @@
       "role": "cluster",
       "claim": {
         "id": "C-019",
-        "statement": "Österreich ist laut Verteidigungsministerium (via ORF) erster Vertragskunde des Skyranger 30 und beschafft 36 Skyranger-30-Türme für Radpanzer Pandur Evolution; die Mistral 3 kann laut Aussendung auf dem Turm montiert werden. GDELS-Steyr präsentierte den Pandur 6x6 EVO mit Skyranger-30-Turm und Startern für zwei Mistral-Flugkörper; Rheinmetall nennt für Österreich ein Volumen im mittleren dreistelligen Millionenbereich auf der GDELS-Plattform Pandur EVO.",
+        "statement": "Österreich ist laut Verteidigungsministerium (via ORF) erster Vertragskunde des Skyranger 30 und beschafft 36 Skyranger-30-Türme für Radpanzer Pandur Evolution; die Mistral 3 kann laut Aussendung auf dem Turm montiert werden. GDELS-Steyr präsentierte den Pandur 6x6 EVO mit Skyranger-30-Turm und Startern für zwei Mistral-Flugkörper; Rheinmetall nennt für Österreich ein Volumen im mittleren dreistelligen Millionenbereich auf der GDELS-Plattform Pandur EVO und ist laut eigener Mitteilung vom 23.02.2024 bei dem Vorhaben Unterauftragnehmer des Fahrzeugherstellers GDELS, der mit der Erneuerung der Pandur-Flotte beauftragt wurde.",
         "kind": "Fakt",
         "source_ids": [
           "S-3c3ad4b4354adf5e",
           "S-29616d5aef4d2b76",
-          "S-c0d13e5db6387716"
+          "S-c0d13e5db6387716",
+          "S-7c3ae12304f6c154"
         ],
-        "evidence": "Auszug (ORF (news.ORF.at)): Es würden 36 Stück des Fliegerabwehrturms Skyranger 30 angeschafft ... Der Skyranger-Turm wird auf Pandur-Panzer montiert ... Österreich als erstes Land einen entsprechenden Vertrag ... So könne etwa die Fliegerabwehrlenkwaffe Mistral 3 auf dem Turm montiert werden. | Auszug (Europäische Sicherheit & Technik (esut.de)): General Dynamics European Land Systems–Steyr (GDELS–Steyr) ... neue Variante des Radpanzers Pandur 6×6 EVO ... mit einem unbemannten Skyranger-30-Turm ausgestattet ... Zusätzlich sind Starter für zwei Mistral-Lenkflugkörper an Bord. | Auszug (Rheinmetall AG): The Austrian Armed Forces (Bundesheer) have ordered a total of 36 Skyranger 30 systems under a major contract worth a mid-triple-digit million euro amount, which will be integrated into the national GDELS Pandur EVO wheeled armored vehicle platform.",
-        "location": "ORF (news.ORF.at): Artikel vom 23.02.2024, Absätze 1–4 | Europäische Sicherheit & Technik (esut.de): Artikel vom 03.09.2024, Absätze 1–2 | Rheinmetall AG: Pressemitteilung vom 10.06.2026, Abschnitt Austria",
+        "evidence": "Auszug (ORF (news.ORF.at)): Es würden 36 Stück des Fliegerabwehrturms Skyranger 30 angeschafft ... Der Skyranger-Turm wird auf Pandur-Panzer montiert ... Österreich als erstes Land einen entsprechenden Vertrag ... So könne etwa die Fliegerabwehrlenkwaffe Mistral 3 auf dem Turm montiert werden. | Auszug (Europäische Sicherheit & Technik (esut.de)): General Dynamics European Land Systems–Steyr (GDELS–Steyr) ... neue Variante des Radpanzers Pandur 6×6 EVO ... mit einem unbemannten Skyranger-30-Turm ausgestattet ... Zusätzlich sind Starter für zwei Mistral-Lenkflugkörper an Bord. | Auszug (Rheinmetall AG): The Austrian Armed Forces (Bundesheer) have ordered a total of 36 Skyranger 30 systems under a major contract worth a mid-triple-digit million euro amount, which will be integrated into the national GDELS Pandur EVO wheeled armored vehicle platform. | Auszug (Rheinmetall AG, PM 23.02.2024): Rheinmetall ist bei dem Vorhaben Unterauftragnehmer des Fahrzeugherstellers GDELS, der seinerseits als Teil der Mobilitätsoffensive der Streitkräfte mit der Erneuerung der österreichischen Flotte an Pandur-Fahrzeugen beauftragt wurde ... Ein Teil der österreichischen Pandur-Flotte – 36 Fahrzeuge – wird mit dem Skyranger-Turm ausgerüstet ... Lenkflugkörper, in diesem Fall Mistral.",
+        "location": "ORF (news.ORF.at): Artikel vom 23.02.2024, Absätze 1–4 | Europäische Sicherheit & Technik (esut.de): Artikel vom 03.09.2024, Absätze 1–2 | Rheinmetall AG: Pressemitteilung vom 10.06.2026, Abschnitt Austria | Rheinmetall AG: Pressemitteilung vom 23.02.2024, Keyfacts und Absätze 1–2",
         "evidence_items": [
           {
             "source_id": "S-3c3ad4b4354adf5e",
@@ -4335,15 +4392,21 @@
             "text": "The Austrian Armed Forces (Bundesheer) have ordered a total of 36 Skyranger 30 systems under a major contract worth a mid-triple-digit million euro amount, which will be integrated into the national GDELS Pandur EVO wheeled armored vehicle platform.",
             "mode": "Auszug",
             "location": "Pressemitteilung vom 10.06.2026, Abschnitt Austria"
+          },
+          {
+            "source_id": "S-7c3ae12304f6c154",
+            "text": "Rheinmetall ist bei dem Vorhaben Unterauftragnehmer des Fahrzeugherstellers GDELS, der seinerseits als Teil der Mobilitätsoffensive der Streitkräfte mit der Erneuerung der österreichischen Flotte an Pandur-Fahrzeugen beauftragt wurde ... Ein Teil der österreichischen Pandur-Flotte – 36 Fahrzeuge – wird mit dem Skyranger-Turm ausgerüstet ... Lenkflugkörper, in diesem Fall Mistral.",
+            "mode": "Auszug",
+            "location": "Pressemitteilung vom 23.02.2024, Keyfacts und Absätze 1–2"
           }
         ],
-        "uncertainty": "Vertragliches Verhältnis zwischen Rheinmetall und GDELS (z. B. Unterauftrag) im geprüften Umfang nicht belegt; beide liefern an denselben Kunden. Lieferstand Österreich 2026 nicht aus Originalquelle bestätigt (Fundhinweis news.at/vol.at nicht abrufbar).",
+        "uncertainty": "Unterauftragsverhältnis Rheinmetall–GDELS ist Herstellerangabe von Rheinmetall; GDELS-Gegenbeleg nicht geöffnet; Wert nur als Größenordnung angegeben. Lieferstand Österreich 2026 nicht aus Originalquelle bestätigt (Fundhinweis news.at/vol.at nicht abrufbar).",
         "proposed_depth": "A",
-        "depth_reason": "Netzwerkkanten Kunde Österreich und Plattformlieferant (Überschneidung).",
+        "depth_reason": "Netzwerkkanten Unterauftrag Rheinmetall→GDELS und Generalunternehmer GDELS→Österreich.",
         "event_date": "2024-02-23",
         "event_status": "Auftrag erteilt"
       },
-      "fingerprint": "1b831ab622185d68062481094d63a7551ed2632d9ab9b46e065028dbf3c044bd"
+      "fingerprint": "277794f5f511651bbf260b75dfc90240a83cfea5716b14cac632040311ccc7fb"
     },
     {
       "role": "cluster",
@@ -5106,20 +5169,20 @@
       "role": "cluster",
       "claim": {
         "id": "C-050",
-        "statement": "Laut esut (nach unternehmensinternen Informationen) wurde Roman Köhne, zuvor Leiter der Division Weapon and Ammunition, zum 1. Oktober 2026 CEO der Division Air Defence als Nachfolger von Oliver Dürr, der das Unternehmen auf eigenen Wunsch verlässt.",
+        "statement": "Laut esut-Meldung vom 04.09.2026 (nach unternehmensinternen Informationen) soll Roman Köhne, zuvor Leiter der Division Weapon and Ammunition, zum 1. Oktober 2026 CEO der Division Air Defence werden und Oliver Dürr nachfolgen, der das Unternehmen auf eigenen Wunsch verlässt; ein tatsächlicher Amtsantritt ist im geprüften Umfang nicht durch eine Rheinmetall-Originalquelle bestätigt.",
         "kind": "Fakt",
         "source_ids": [
           "S-5a9d049f8f71abd3"
         ],
         "evidence": "Auszug: Nach unternehmensinternen Informationen wird Roman Köhne zum 1. Oktober CEO der Rheinmetall-Division Air Defence. Er folgt Oliver Dürr, der nach drei Jahren in dieser Funktion und fünf Jahren bei Rheinmetall das Unternehmen auf eigenen Wunsch verlässt ... 2025 übernahm er die Führung der Division Weapon and Ammunition.",
         "location": "Meldung vom 04.09.2026, Absätze 1–2",
-        "uncertainty": "Sekundärquelle; Rheinmetall-Originalmitteilung nicht geöffnet.",
+        "uncertainty": "Sekundärquelle mit Ankündigungscharakter (vor dem Datum veröffentlicht); Rheinmetall-Originalmitteilung nicht geöffnet.",
         "proposed_depth": "B",
         "depth_reason": "Führungswechsel Air Defence (Kontextrolle zuständig für Timeline).",
         "event_date": "2026-10-01",
-        "event_status": "angekündigt/vollzogen laut Medium"
+        "event_status": "angekündigt (Fachmedium)"
       },
-      "fingerprint": "f335c6527b50f24d0be510e473b528ef9d120ca0e09e4a3f8e0fe21f110cecfe"
+      "fingerprint": "425d2adf02c0ad2b8d9fb07ab6ce40e4c9ab3f7b5cfd6329d2fe572c52fd0ced"
     },
     {
       "role": "cluster",
@@ -5774,18 +5837,19 @@
       "role": "market",
       "claim": {
         "id": "M-EU-EDIP-01",
-        "statement": "Laut EU-Mitteilung (EEAS) hat der Rat das Europäische Verteidigungsindustrieprogramm EDIP formell angenommen: 1,5 Mrd. EUR Zuschüsse für 2025–2027, davon 300 Mio. EUR für ein Ukraine-Unterstützungsinstrument; gefördert werden u. a. gemeinsame Beschaffungen von mindestens drei Staaten (davon mindestens zwei Mitgliedstaaten) und Produktionshochläufe; Komponenten von außerhalb EU/EWR dürfen 35 % der Komponentenkosten des Endprodukts nicht übersteigen.",
+        "statement": "Laut EU-Mitteilung (EEAS, Seitendatum 9. Dezember 2025) hat der Rat das Europäische Verteidigungsindustrieprogramm EDIP formell angenommen: 1,5 Mrd. EUR Zuschüsse für 2025–2027, davon 300 Mio. EUR für ein Ukraine-Unterstützungsinstrument; gefördert werden u. a. gemeinsame Beschaffungen von mindestens drei Staaten (davon mindestens zwei Mitgliedstaaten) und Produktionshochläufe; Komponenten von außerhalb EU/EWR dürfen 35 % der Komponentenkosten des Endprodukts nicht übersteigen.",
         "kind": "Fakt",
         "source_ids": [
           "S-829c43465e63a592"
         ],
         "evidence": "Auszug: Today the Council has formally adopted the European Defence Industry Programme (EDIP) … €1.5 billion in grants for the period 2025-2027. Out of this amount, €300 million are earmarked for a dedicated Ukraine Support Instrument … common procurement actions carried out by at least three countries (of which at least two must be member states) … industrial reinforcement actions … components originating outside the EU and associated countries (EEA states) … should not exceed 35% of total component costs",
         "location": "EEAS-Mitteilung „European Defence Industry Programme: Council gives final approval“, Absätze 1–4",
-        "uncertainty": "Datum der Ratsannahme auf der geöffneten Seite nicht ausgewiesen (Medien: 8.12.2025).",
+        "uncertainty": "Seitendatum 09.12.2025 („Today the Council has formally adopted…“); einzelne Medien nennen den 08.12.2025 als Ratsdatum – Abweichung nicht aufgelöst.",
+        "event_date": "2025-12-09",
         "proposed_depth": "A",
         "event_status": "angenommen"
       },
-      "fingerprint": "f0ff016dc4272dcc8aca7e871d9ac8072333ec73d6804a47251da32efb71785a"
+      "fingerprint": "d2ac312fdb21466623ca262cf20f0a67107590fc96e4908016c93fbdb8b671d8"
     },
     {
       "role": "market",
@@ -6025,6 +6089,24 @@
         "event_status": "beauftragt"
       },
       "fingerprint": "4e43dba38bd8b59530d474487cc3b0231e28d7633761cdbb785a9b9cbef985d9"
+    },
+    {
+      "role": "market",
+      "claim": {
+        "id": "M-DE-ARM-01",
+        "statement": "Laut Rheinmetall-Recap-Dokument für Analysten und Investoren vom 5. Oktober 2026 liegt das Programm „Arminius“ voll im Plan; ein Festvertrag werde trotz geringfügiger Umfangsänderungen weiterhin bis Jahresende erwartet, mit einer möglichen Anzahlung von bis zu 30 % bei Unterzeichnung; der Haushaltsausschuss solle den Vorschlag Anfang Dezember prüfen. Inhalt, Auftraggeber und Produkt des Programms nennt das Dokument nicht.",
+        "kind": "Herstellerangabe",
+        "source_ids": [
+          "S-4a13b2786b5cc66a"
+        ],
+        "evidence": "Auszug: Update Arminius – The Arminius program remains fully on track, with a fixed contract still anticipated by year-end despite minor scope changes, and a potential down payment of up to 30% upon signing. Commercial discussions are on track, setting up the budget committee to review the proposal in early December.",
+        "location": "Recap-Dokument 05.10.2026, PDF-Seite 1, Abschnitt „Update Arminius“",
+        "uncertainty": "Zuordnung von „Arminius“ zu einem konkreten Produkt (z. B. Skyranger) ist im Dokument nicht belegt und wird hier nicht vorgenommen; Erwartung, kein Vertrag.",
+        "proposed_depth": "A",
+        "event_date": "2026-10-05",
+        "event_status": "erwartet laut Unternehmen"
+      },
+      "fingerprint": "77fbf74c16a188b60f5734c24739ff84f5cad2ec811347eb1750935c40b5c3ad"
     },
     {
       "role": "market",
