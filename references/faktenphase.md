@@ -115,6 +115,8 @@ phase=basis und required_full_review_ids für eingezeichnete Netzwerkkanten und
 sämtliche referenzierten Markt-Dashboard-Fakten.
 Auch sämtliche referenzierten Präsenzfakten sind als required_full_review_ids enthalten.
 Reviewer entscheidet inhaltlich; stamp-review.py übernimmt nur Fingerprints.
+Prüfaufträge nach pruefauftraege.md je Dokument/Änderung vorbereiten. Kompakte
+explizite Befunde mit stamp-review.py --work in vollständige Einzelreviews expandieren.
 Nach zwei erfolglosen Korrekturrunden wesentlicher Fehler blockieren.
 Abnahme unterscheidet formale Prüfung, Inhaltsprüfung, Abdeckung und nicht geprüft.
 

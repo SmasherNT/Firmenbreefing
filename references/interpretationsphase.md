@@ -9,6 +9,9 @@ bestehende Legacy-Markdown-Läufe bleiben getrennt.
 Keine Horváth-Angebotskapitel, keine separaten Firmen-Deep-Dives.
 
 ## Geprüfte Grundlage und kompakte Eingabe
+Die beiden Prüfrunden nach pruefauftraege.md lokal vorbereiten: Dokumentbündel,
+gebundene Änderungsübersicht und explizite kompakte Befunde. Agentenkontexte und
+Auswahlregeln dieser Referenz bleiben unverändert; neue Reviews mit --work expandieren.
 Basis-Review muss für diesen Lauf freigegeben sein; Materialfehler blockieren.
 Jede verwendete wesentliche Faktenaussage: depth=A, status=geprüft/übernommen
 und Fingerprint identisch zum aktuellen Faktenpaket. B-Hintergrunddetails sind

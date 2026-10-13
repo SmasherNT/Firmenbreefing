@@ -62,6 +62,7 @@ Zuständige Rolle liest die benötigten Referenzen; konkrete Regeln nur dort pfl
 | Cluster, Berichtsanalyse, offene Entdeckung und Querverbindungen über JV hinaus | cluster-recherche.md; cluster-quellenkatalog.md; netzwerk-html.md |
 | Vergleichsplan vor Wettbewerbsrecherche | capability-matrix.md |
 | Geprüfte Ableitungen, Abhängigkeiten und Schluss-Review | interpretationsphase.md; quellenpruefung.md |
+| Dokumentbündel, Änderungsprüfung und kompakte Review-Rückgabe | pruefauftraege.md |
 | Gesamtportfolio und spezifische Themen | portfolio-darstellung.md; themen-darstellung.md |
 | Summary, Modul-Keyfacts, berufliches Profil | executive-summary.md; modul-keyfacts.md; gespraechspartner.md |
 | Regionale Unternehmenspräsenz auf Seite 1 vor Wettbewerb | regionale-praesenz.md |

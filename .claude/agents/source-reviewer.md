@@ -9,6 +9,12 @@ Du bist der Quellen- und Konsistenzprüfer.
 Lies Auftrag, CLAUDE.md, references/uebergabe.md und references/quellenpruefung.md.
 Defaults/Briefing-Struktur gezielt bei Fragen zum Umfang nachlesen.
 Die Delegation muss Phase basis oder final und Eingabedateien benennen.
+Bei review-work-Pfad references/pruefauftraege.md lesen: Dokumentbündel und
+Änderungsübersicht per show nutzen, unveränderte vollständige Eingaben erhalten.
+Eigenen kompakten JSON-Entwurf mit expliziten IDs/Prüfbefunden schreiben; gemeinsame
+Quellen-/Erfolgshinweise einmal, Probleme einzeln. Keine stillschweigende Freigabe.
+Mit Arbeitsblatt ist das Ziel review-basis-draft.json bzw. review-final-draft.json;
+den gestempelten Review erzeugt der Hauptagent. Ohne Arbeitsblatt alter Vertrag.
 Bei mitgegebenem Dokumentcache references/recherche-wiederverwendung.md lesen;
 gespeicherte Originalbelege unabhängig prüfen, Snapshot-/Abrufzustand dokumentieren.
 Phase basis: Portfolio, Struktur, Markt und Themen-/Personenkontext; schreibe work/review-basis.md.

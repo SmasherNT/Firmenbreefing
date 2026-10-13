@@ -26,10 +26,14 @@ Einrichtung/Systemfragen sind keine Rechercheaufträge.
    Formale Fehler an zuständige Rollen; keine fremden Moduldateien umschreiben.
 6. source-reviewer Phase basis mit Auftrag, review-packet.json, Abdeckung
    und ggf. Netzwerk delegieren. quellenpruefung.md beachten.
-   mode=facts-v2 und Ziel <Lauf>/work/review-basis.md explizit nennen.
+   Vorher review-work.py prepare nach references/pruefauftraege.md ausführen;
+   Dokumentbündel/Änderungsübersicht zusätzlich übergeben, bisherige Kontexte erhalten.
+   mode=facts-v2 und Entwurfsziel <Lauf>/work/review-basis-draft.json explizit nennen;
+   Hauptagent erzeugt danach review-basis.md mit stamp-review.py --work.
    Bei v2 maschinenlesbaren Reviewer-Entwurf nach quellenpruefung.md verlangen;
    Fingerprints mit stamp-review.py --draft <review-basis-draft.json>
-   --validation <facts-validation.json> --out <review-basis.md> lokal ergänzen.
+   --validation <facts-validation.json> --work <review-work-basis.json>
+   --out <review-basis.md> lokal ergänzen; Prüfer liefert explizite kompakte Gruppen.
    Wesentliche Korrekturen gezielt zurückgeben und betroffene Claims erneut prüfen.
 7. Abnahme unter <Lauf>/output/abnahme.md: aufgerufene Rollen, Faktenabdeckung,
    Mechanik, Inhalt, offene Lücken und nicht geprüfte Punkte nennen.

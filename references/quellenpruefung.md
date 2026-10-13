@@ -118,6 +118,9 @@ Datenlücken und nicht geprüfte Hintergrunddetails sind keine bestätigten Fakt
 Keine finale Freigabe mit offenen wesentlichen Fehlern oder ungeprüften A-Claims.
 
 ## Maschinenlesbares Review im v2-Lauf
+Neue Prüfaufträge nach pruefauftraege.md lokal nach Dokument/Änderung vorbereiten.
+Explizite kompakte Gruppen des Prüfers per stamp-review.py --work expandieren;
+alle folgenden Einzelclaim-/Freigaberegeln gelten weiterhin. Keine Kontextkürzung.
 facts-v2/interpret-v2 verwenden einen kompakten JSON-Review-Entwurf mit
 schema_version=1, run_id, company, as_of, phase=basis/final,
 status=freigegeben/teilweise/blockiert, material_errors (Liste), claims (Liste).

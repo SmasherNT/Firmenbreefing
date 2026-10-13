@@ -2,9 +2,15 @@
 """Attach mechanical fingerprints to explicit reviewer decisions; never grants approval."""
 import argparse
 import json
+import importlib.util
 from pathlib import Path
 
-def stamp(draft, validation):
+def stamp(draft, validation, work=None):
+    if work is not None:
+        spec = importlib.util.spec_from_file_location('review_work', Path(__file__).with_name('review-work.py'))
+        module = importlib.util.module_from_spec(spec); spec.loader.exec_module(module)
+        draft = module.expand(draft, validation, work)
+        validation = {**validation, 'required_full_review_ids': sorted(set(validation.get('required_full_review_ids', [])) | set(work['required_full_review_ids']))}
     if draft.get("phase") not in {"basis", "final"} or draft.get("status") not in {"freigegeben", "teilweise", "blockiert"}:
         raise ValueError("explicit phase/status required")
     if draft.get("schema_version") != 1 or any(not draft.get(k) for k in ("run_id", "company", "as_of")):
@@ -45,10 +51,12 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--draft", required=True)
     parser.add_argument("--validation", required=True)
+    parser.add_argument('--work', help='Expand explicit compact decisions against a current review-work snapshot')
     parser.add_argument("--out", required=True)
     args = parser.parse_args()
     try:
         inputs = [Path(args.draft), Path(args.validation)]
+        if args.work: inputs.append(Path(args.work))
         output = Path(args.out)
         if output.resolve() in {p.resolve() for p in inputs}:
             raise ValueError("cannot overwrite inputs")

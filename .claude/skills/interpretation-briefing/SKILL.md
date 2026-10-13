@@ -28,9 +28,12 @@ identifizieren; ohne diesen keinen unabhängigen neuen Interpretationslauf erfin
    Beide Validierungen per --merge-validation zusammenführen; Aufrufe in Referenz.
 6. source-reviewer Phase final mit mode=interpret-v2, kompakten I-/S-Claims,
    Abhängigkeiten, Basis-Review und interpretation-validation.json delegieren.
-   Ziel <Lauf>/work/review-final.md; JSON-Review nach Interpretationsvertrag.
+   review-work.py prepare nach references/pruefauftraege.md: Originalbindung,
+   Dokumentbündel und neue/geänderte Ableitungen vorbereiten; Kontexte nicht kürzen.
+   Entwurfsziel <Lauf>/work/review-final-draft.json; Hauptagent erzeugt review-final.md.
    Unveränderte A-Fakten übernehmen, Ableitungen und Änderungen gezielt prüfen.
-   Expliziten Reviewer-Entwurf per stamp-review.py mit lokalen Fingerprints ergänzen.
+   Expliziten kompakten Reviewer-Entwurf per stamp-review.py --work mit lokalen
+   Einzelzeilen/Fingerprints ergänzen; fehlende Entscheidungen bleiben offen.
 7. Fragen/Korrekturen nur zuständiger Rolle zuweisen; neue Fakten benötigen
    Basis-Review. Selektiven Kontext und betroffene Bewertungen erneuern.
    Nach zwei erfolglosen Korrekturrunden Materialfehler blockieren.

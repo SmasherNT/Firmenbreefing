@@ -48,3 +48,33 @@ bleiben erhalten. prepare-facts.py schreibt den Index als zusätzliche Suchhilfe
 Cache-Zähler messen Dokumentoperationen, keine Modelltoken. Kein tatsächlicher
 Token-/Kostenbenchmark oder Qualitätsvergleich realer Firmenrecherchen durchgeführt.
 Alle Beispiel-/Forward-Quellen und Reviewer-Urteile bleiben fiktiv/simuliert.
+
+## Ergänzung 13.10.2026: Dokumentbündel und kompakte Quellenprüfung
+
+review-work.py bereitet zusätzlich zu unveränderten Fakten-/Bewertungskontexten
+Dokumentbündel, aktuelle Originalbindungen und konservative Änderungsübersichten
+vor. stamp-review.py --work expandiert ausschließlich explizite Gruppenentscheidungen
+des Prüfers in vollständige Einzelreviews. Fehlende Befunde bleiben offen.
+Basis prüft weiterhin Auftragsabdeckung/module_views und sämtliche erforderlichen
+A-Fakten; Schlussreview prüft alle neuen Ableitungen. Übernahme verlangt geprüfte
+unveränderte Aussage, Original, Zuordnung und Abhängigkeiten im selben Lauf/Stichtag.
+
+- 160 Unit-Tests bestanden: Dokumentbündel/Mehrfachbelege, explizite Entscheidungen,
+  fehlende erforderliche Befunde, unbekannte/doppelte IDs, B-/Teilfreigabegrenzen,
+  Originaländerungen bei gleichem Claim-Hash, Produkt-/Regions-/Peerzuordnungen,
+  Elternfakten, aktuelle Dateien/Arbeitsblätter/Validierungen, vollständige I-/S-
+  und Faktenentscheidungen, falsche erklärte Snapshots sowie Legacy-Kompatibilität.
+- Vollständiger synthetischer CLI-Lauf mit 71 Fakten, fünf Dokumentbündeln und
+  29 Interpretationen: 20 benötigte A-Grundlagen aus gebundenem Basisreview im
+  Schlussreview ausdrücklich übernommen, alle 29 Ableitungen geprüft. Beide
+  Agentenkontexte nach neuer Basisfreigabe identisch und HTML bytegleich zum
+  vorigen Stand. Keine HTML-/CSS-/JS-Änderung; keine erneute Browserabnahme.
+- Unabhängiger source-reviewer-Lauf aus anderem fiktiven Offline-Original:
+  vollständiges Dokument gemeinsam gelesen, zwei Aussagen und Produktzuordnung
+  bestätigt, falschen Auftragsstatus als Korrektur erkannt. Kompakter Entwurf
+  erfolgreich expandiert, Gesamtstatus blockiert; keine blanket Freigabe.
+- Python-Syntax und zwei geänderte Skills per quick_validate bestanden.
+
+Keine echte Unternehmensquelle geöffnet oder freigegeben. Integrationsergebnisse
+und Reviews simuliert; kein gemessener Modelltoken-/Kostenbenchmark. Die vorherige
+Stichproben-/Fehlereskalationsmethode, Recherchebreite und Agentenkontexte bleiben.
