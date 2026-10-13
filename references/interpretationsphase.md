@@ -30,6 +30,8 @@ input_fingerprint unverändert aus der delegierten context.json kopieren.
 Bei Vollbriefings context.module_insights mit --module-insights beauftragen;
 modulspezifische I-Karten und explizite Auswahl-/Beleg-Gaps nach modul-keyfacts.md.
 Selektive A-Auszüge aller beauftragten Module mitgeben, keine neue Analyse-/Designrolle.
+Zusätzlich --presence für regionale Unternehmenspräsenz nach regionale-praesenz.md;
+feste 1–5-Skala, aktuelle regionale Belegzuordnungen und genau eine I-Stufe je Region.
 Je Interpretation: id (I- bzw. S-), statement, section, depends_on (Claim-IDs),
 reasoning, method, uncertainty. Zahlen/Fakten nicht ohne Basis-IDs neu einführen.
 Bei SWOT category=Strengths/Weaknesses/Opportunities/Threats.
@@ -119,7 +121,7 @@ Datei, damit Änderungen gegenüber dem delegierten Snapshot erkannt werden.
 
 ```bash
 python3 scripts/stamp-review.py --draft <review-basis-draft.json> --validation <facts-validation.json> --out <review-basis.md>
-python3 scripts/check-interpretation.py --prepare --portfolio --module-insights --manifest <facts-run.json> --facts <review-packet.json> --review <review-basis.md> --plan <comparison-plan.json> --market <market-facts.json> --claim-ids <relevante A-IDs je Modul...> --out <positioning-context.json>
+python3 scripts/check-interpretation.py --prepare --portfolio --module-insights --presence --manifest <facts-run.json> --facts <review-packet.json> --review <review-basis.md> --plan <comparison-plan.json> --market <market-facts.json> --claim-ids <relevante A-IDs je Modul...> --out <positioning-context.json>
 python3 scripts/check-interpretation.py --manifest <facts-run.json> --facts <review-packet.json> --review <review-basis.md> --context <positioning-context.json> --output <positioning.json> --plan <comparison-plan.json> --out <positioning-validation.json>
 python3 scripts/check-interpretation.py --prepare --manifest <facts-run.json> --facts <review-packet.json> --review <review-basis.md> --positioning <positioning.json> --positioning-context <positioning-context.json> --plan <comparison-plan.json> --interpretation-ids <relevante I-IDs...> --claim-ids <weitere relevante Fakten-IDs...> --out <swot-context.json>
 python3 scripts/check-interpretation.py --manifest <facts-run.json> --facts <review-packet.json> --review <review-basis.md> --context <swot-context.json> --output <swot.json> --positioning <positioning.json> --positioning-context <positioning-context.json> --plan <comparison-plan.json> --out <swot-validation.json>

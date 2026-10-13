@@ -116,6 +116,10 @@ Auf Seite 1 unter Portfolio, Cluster und Markt/Capability Matrix je 1–3 kompak
 Fakt/Insight-Karten nach references/modul-keyfacts.md. Der bestehende Positionierungs-
 schritt wählt sie aus A-Fakten und dokumentiert Lücken; der Schluss-Reviewer prüft
 Titel, Fakt, Insight, Herleitung und Zuordnung. Keine zusätzliche Agenten-/Designrunde.
+Regionale Unternehmenspräsenz nach references/regionale-praesenz.md: Portfolio
+liefert Fakten, Positionierung fixe Präsenzstufen 1–5 im Kontext --presence,
+bestehende Reviews prüfen Quellen/Scope und Ableitung. Auf Seite 1 vor Wettbewerb;
+der regionale Markt-Deep-Dive auf Seite 3 bleibt unabhängig vom Zielunternehmen.
 
 ## Interpretation auf geprüften Fakten
 Positionierungs-Agent mit positioning-analysis bewertet nach fixiertem Plan;

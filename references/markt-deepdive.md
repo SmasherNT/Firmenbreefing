@@ -6,7 +6,7 @@ Bei einem beauftragten regionalen Markt-Deep-Dive liefert market-facts zusätzli
 `market_dashboard` nach Schema 1. Region, Länder und Funktionen kommen aus dem
 aktuellen Auftrag. Keine festen Golfstaaten-, Flugabwehr- oder Beispielwerte
 übernehmen. Der Markt wird unabhängig von der Zielgesellschaft untersucht;
-deren Präsenz bleibt im separaten Unternehmenspräsenz-Abschnitt. Der industrielle
+deren Präsenz steht auf Seite 1 nach references/regionale-praesenz.md. Der industrielle
 Deep-Dive bleibt auf dem beauftragten Segment, das Portfolio deckt die Firma ab.
 Ohne Regionenauftrag keine zusätzliche umfangreiche Länderanalyse.
 

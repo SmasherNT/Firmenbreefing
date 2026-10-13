@@ -89,6 +89,43 @@ def market_example():
         programme_method='Ein stabiler Programmeintrag wird einmal nach seinem aktuell belegten Status gezählt; frühere Stufen werden nicht addiert.'), records
 
 
+def presence_example():
+    records, regions = [], []
+    for key, label, kinds, score in [
+        ('north','Testregion Nord',['production','development'],5),
+        ('west','Testregion West',['production'],4),
+        ('central','Testregion Zentral',['office'],3),
+        ('south','Testregion Süd',['partner'],2),
+        ('far','Testregion Fern',['foreign_support'],1),
+        ('east','Testregion Ost',[],None)]:
+        country='Testland '+label.split()[-1]
+        activities=[]
+        for kind in kinds:
+            cid='P-R-'+key+'-'+kind
+            operator='partner' if kind=='partner' else 'foreign' if kind=='foreign_support' else 'own'
+            location='Teststandort '+key
+            activity_country='Testland Zentral' if kind=='foreign_support' else country
+            description={'production':'Eigene laufende Sensor-Kit-Produktion am Teststandort.',
+                'development':'Eigene lokale Entwicklung des Sensor Kit am selben Teststandort.',
+                'office':'Eigenes lokales Büro für das Sensor-Kit-Portfolio.',
+                'partner':'Test Dealer ist lokaler Vertriebspartner für das Sensor Kit.',
+                'foreign_support':'Example Inspection betreut diesen Testmarkt aus dem Büro in Testland Zentral.'}[kind]
+            statement='Laut fiktivem Testdokument für '+label+': '+description+' Standort: '+activity_country+' · '+location+'; operativ dokumentiert am 01.09.2026.'
+            records.append((cid,statement,1))
+            activity=dict(id=key+'-'+kind,kind=kind,operator=operator,status='operational',
+                actor='Test Dealer (fiktiv)' if kind=='partner' else 'Example Inspection (fiktiv)',
+                country=activity_country,location=location,product_scope='Sensor Kit (fiktiv)',
+                description=description,status_date='2026-09-01',claim_ids=[cid])
+            if operator=='own':activity.update(site_id='site-'+key,ownership_note='Im fiktiven Dokument als eigener Standort des Zielunternehmens bezeichnet.')
+            activities.append(activity)
+        regions.append(dict(id=key,label=label,countries=[country],focus=key=='south',
+            presence_type={5:'Eigene Produktion & Entwicklung',4:'Eigene lokale Produktion',3:'Eigenes Büro',2:'Lokaler Vertriebspartner',1:'Betreuung aus dem Ausland',None:''}[score],
+            geographic_scope='Bewertung des fiktiven Testmarkts '+country+'; keine flächendeckende Regionalabdeckung.',
+            product_scope='Sensor-Kit-Portfolio (fiktiv)',coverage_note='Synthetische Testunterlagen; keine reale Unternehmenspräsenz oder vollständige Marktaufnahme.' if score else 'Keine konkreten Präsenzbelege für diesen Testmarkt im fiktiven Paket.',
+            claim_ids=[c for a in activities for c in a['claim_ids']],activities=activities))
+    return regions,records
+
+
 def generate(destination):
     root = Path(destination); root.mkdir(parents=True, exist_ok=True)
     manifest = dict(schema_version=1, mode='facts-v2', run_id='synthetic-inspection',
@@ -136,6 +173,8 @@ def generate(destination):
         ('C6', 'Für das fiktive Joint Venture wird im Testdatensatz industrielle Integration als Gegenstand genannt.', 1)]
     dashboard, dashboard_rows = market_example()
     rows.extend(dashboard_rows)
+    presence_regions, presence_rows = presence_example()
+    rows.extend(presence_rows)
     claims = [dict(id=cid, statement=statement,
         kind=sources[n]['source_kind'], source_ids=[sources[n]['id']],
         evidence='Paraphrase: ' + statement, location='Fiktiver Abschnitt ' + cid,
@@ -154,6 +193,7 @@ def generate(destination):
         modules.append(module)
     context, portfolio, cluster, market = modules
     market['market_dashboard'] = dashboard
+    portfolio['regional_presence'] = presence_regions
     context.update(company_facts=[dict(id='business', label='Industrielle Inspektionssoftware', claim_ids=['T1'])],
         events=[dict(id='api-update', label='Neue API-Dokumentation laut Hersteller veröffentlicht', date='2026-10-05', claim_ids=['T4']),
             dict(id='launch', label='Integrationsschnittstelle vorgestellt', date='2026-08-01', claim_ids=['T2']),
@@ -201,9 +241,7 @@ def generate(destination):
             rationale='Nutzerthema Industrieintegration'), dict(id='validation', label='Belegte Erprobung',
             display_type='Evidenzstufe', question='Welche Erprobung ist belegt?', evidence_required='Test-/Pilotbeleg',
             applicability='Inspektionssysteme', rationale='Angebot von Umsetzung unterscheiden',
-            anchors={'1': 'Angebot dokumentiert', '2': 'Labortest dokumentiert', '3': 'Benannter Kundenpilot dokumentiert'})],
-        assessment_methods=[dict(id='presence', assessment_type='regional_presence', applicability='Europäische Präsenz',
-            anchors={'1': 'Partnerpräsenz', '2': 'Kundenpilot', '3': 'Fertigungsstandort'})])
+            anchors={'1': 'Angebot dokumentiert', '2': 'Labortest dokumentiert', '3': 'Benannter Kundenpilot dokumentiert'})])
     market.update(comparison_plan_version=1, peers=[dict(id='target', label='Example Inspection'),
         dict(id='peer', label='TestPeer')], observations=[dict(peer_id=p, criterion_id=c, claim_ids=ids)
         for p, c, ids in [('target', 'integration', ['M1']), ('target', 'validation', ['M2', 'M3']),
@@ -218,7 +256,7 @@ def generate(destination):
         review_scope='SIMULIERT: bereitgestellte fiktive Daten; keine öffentliche Quellenprüfung',
         claims=[dict(id=cid, depth='A', status='geprüft', evidence_review='SIMULIERTE Offline-Entscheidung') for cid in by])
     basis = STAMP.stamp(review_base, validation)
-    pos_context = CHECK.prepare(manifest, facts, basis, ['P1', 'P2', 'P3', 'C1', 'C2', 'C3', 'C5', 'M5', 'M7'], plan, market, include_portfolio=True, include_module_insights=True)
+    pos_context = CHECK.prepare(manifest, facts, basis, ['P1', 'P2', 'P3', 'C1', 'C2', 'C3', 'C5', 'M5', 'M7'], plan, market, include_portfolio=True, include_module_insights=True, include_presence=True)
     interpretations = []
     for n, (p, c, ids, value) in enumerate([('target', 'integration', ['M1'], 'API-Integration'),
         ('target', 'validation', ['M2', 'M3'], 2), ('peer', 'integration', ['M6'], 'Komplettsystem'),
@@ -256,11 +294,16 @@ def generate(destination):
             period='2026' if kind == 'metric' else 'Stand 09.10.2026', statement=by[cid]['statement'],
             depends_on=[cid], reasoning='Der Befund ist für Größenordnung, Marktzugang oder Erprobung im Prüfauftrag relevant.',
             method='Auftragsbezogene Auswahl', uncertainty='Synthetischer Test; keine reale Unternehmensbewertung'))
-    for n, kind, method, subject, score, ids, section in [(21, 'regional_presence', 'presence', 'Europa', 1, ['P2'], 'regions')]:
-        interpretations.append(dict(id='I' + str(n), type=kind, method_id=method, subject=subject, score=score,
-            statement='Belegte Stufe für ' + subject + ' im fiktiven Datensatz', section=section,
-            depends_on=ids, reasoning='Die genannte Stufe folgt aus den bereitgestellten fiktiven Belegen.',
-            method='Vorab definierte Skalenanker', uncertainty='Kein realer Reife-/Präsenznachweis'))
+    for region in presence_regions:
+        score=CHECK.PRESENCE.eligible_stage(region)
+        interpretations.append(dict(id='I-RP-'+region['id'],type='regional_presence',
+            region_id=region['id'],method_id=CHECK.PRESENCE.METHOD,section=CHECK.PRESENCE.SECTION,
+            assessment_status='bewertet' if score else 'nicht eindeutig bestimmbar',score=score,
+            statement='Belegte Präsenz im fiktiven Datensatz: '+(CHECK.PRESENCE.STAGES[str(score)] if score else 'nicht eindeutig bestimmbar'),
+            depends_on=region['claim_ids'],reasoning='Höchste konkret dokumentierte eigene Infrastruktur oder Partnerrolle; Produkt- und Länderumfang bleiben begrenzt.',
+            method='Feste ordinale Präsenzskala 1–5',uncertainty='Synthetischer Offline-Test; keine reale Unternehmenspräsenz bewertet.',
+            next_stage_limit='Keine höhere Infrastrukturstufe in den bereitgestellten Dokumenten belegt.' if score and score<5 else 'Höchster Skalenanker; keine Umsatz-/Marktanteilsaussage.' if score else '',
+            coverage_note='Keine konkreten Präsenzbelege im bereitgestellten Testpaket.' if score is None else ''))
     for ident, pid, grade, ids, reason in [('I20', 'kit', 3, ['P1', 'M2'], 'Ein durchgeführter Labortest ist dokumentiert; ein geplanter Pilot ist noch kein Kundenprogramm.'),
             ('I22', 'sensor-kit', 6, ['P4'], 'Wiederholte Serienauslieferung ist im fiktiven Datensatz ausdrücklich dokumentiert.'),
             ('I23', 'data-assist', None, ['P5'], 'Das Dokument nennt den Service, aber keinen konkreten Reifemeilenstein.')]:

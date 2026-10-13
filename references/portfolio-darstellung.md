@@ -7,6 +7,10 @@ Nur „03 / DETAILPROFILE & EVIDENZ“ und „Von der Position zur Begründung.�
 zunächst sichtbar. Produktklick öffnet beide Disclosure-Ebenen; Druck alle Profile.
 CSS/JS bleiben lokal. Keine neue Grafik-, Recherche- oder Bewertungsrolle.
 
+Die unternehmensweite geografische Aufstellung wird im Portfolio recherchiert und
+als eigener Abschnitt vor Wettbewerb/Capability Matrix auf Seite 1 dargestellt;
+Faktenvertrag und feste Präsenzskala siehe references/regionale-praesenz.md.
+
 ## Faktenrolle
 portfolio-facts.json.products: id (stabil, Buchstaben/Ziffern/_/-), label,
 short_label (optional), domain (sachliche Produktgruppe), claim_ids.

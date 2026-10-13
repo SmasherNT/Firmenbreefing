@@ -25,6 +25,10 @@ Zeitreihenwerte, Definition/Einheit/Währung/Preisbasis und Vergleichbarkeit,
 Programmstatus/Deduplikation/Wertart/Zeitfenster, konkrete industrielle Rollen,
 Marktzugang sowie die semantische Zuordnung der Darstellung. Sie stehen in
 facts-validation.required_full_review_ids; im bestehenden Quellenabruf bündeln.
+Regionale Präsenz nach regionale-praesenz.md ebenfalls vollständig: Rechtsträger,
+Eigen-/Partner-/JV-/Kundenrolle, laufender vs. angekündigter Status, konkrete eigene
+Standorte, Länder-/Produktumfang und semantische Zuordnung. Im Schluss-Review
+höchste 1–5-Stufe, Standortzählung und Beleggrenzen als reguläre I-Claims prüfen.
 
 B: Stichprobe nur für nicht entscheidungstragende ergänzende Hintergrunddetails.
 Gruppen nach Modul UND Quelle UND Aussageart bilden; unsichere Aussagen nach A.

@@ -31,3 +31,8 @@ Bei facts-v2 für HTML die kompakten Tabellen/Claim-Zuordnungen nach
 references/ausgabe-html-v2.md liefern. Keine parallelen Langberichte erstellen.
 Für products auch references/portfolio-darstellung.md lesen: stabile Produkt-ID,
 sachliche domain und kompakte A-Claim-Zuordnung. Reife erst durch Positionierung.
+Im vollständigen Briefing auch die unternehmensweite regionale Präsenz nach
+references/regionale-praesenz.md recherchieren und regional_presence liefern.
+Eigene Standorte, Partner/JVs, Kunden und angekündigte Aktivitäten getrennt;
+Länder-/Produktumfang erhalten, vorhandene Cluster-Fakten über IDs wiederverwenden.
+Keine Präsenzstufen in Faktenphase; fehlende Belege als offene Abdeckung führen.

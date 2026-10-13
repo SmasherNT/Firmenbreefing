@@ -46,7 +46,7 @@ def product_assessment(row):
 
 def unassessed(row):
     return (row.get("type") == "matrix_cell" and row.get("cell_status") != "bewertet") or (
-        product_assessment(row) and row.get("assessment_status") != "bewertet")
+        (product_assessment(row) or PRESENCE.is_assessment(row)) and row.get("assessment_status") != "bewertet")
 
 def digest(obj):
     return hashlib.sha256(json.dumps(obj, sort_keys=True, ensure_ascii=False,
@@ -82,6 +82,7 @@ def helper(name, file):
     return module
 
 MODULE_INSIGHTS = helper('module_insights', 'module-insights-html.py')
+PRESENCE = helper('presence_html', 'presence-html.py')
 
 def env(manifest, facts, review):
     if manifest.get("schema_version") != 1 or manifest.get("mode") != "facts-v2":
@@ -148,7 +149,7 @@ def plan_check(plan, manifest):
 
 def prepare(manifest, facts, review, claim_ids, plan=None, market=None,
             positioning=None, positioning_context=None, interpretation_ids=None,
-            include_portfolio=False, include_module_insights=False):
+            include_portfolio=False, include_module_insights=False, include_presence=False):
     claims, reviews, fingerprints = env(manifest, facts, review)
     selected = set(claim_ids or [])
     inventory = portfolio_context(facts) if include_portfolio else None
@@ -156,11 +157,21 @@ def prepare(manifest, facts, review, claim_ids, plan=None, market=None,
         raise ValueError("portfolio inventory belongs to positioning, not SWOT context")
     if include_module_insights and positioning is not None:
         raise ValueError('module insights belong to positioning, not SWOT context')
+    if include_presence and (positioning is not None or 'portfolio' not in manifest.get('selected_roles', [])):
+        raise ValueError('regional presence requires portfolio positioning, not SWOT context')
     if inventory:
         selected.update(c for p in inventory["products"] for c in p["claim_ids"])
+    presence = None
+    if include_presence:
+        def presence_refs(ids):
+            if any(cid not in claims for cid in ids):
+                raise ValueError('presence references unknown fact')
+            selected.update(ids)
+        presence = PRESENCE.context(facts, presence_refs, manifest['as_of'])
     selected_interpretations = {}
     interpretation_fingerprints = {}
     upstream_plan_fingerprints = {}
+    upstream_presence_contexts = {}
     if positioning is not None:
         if positioning_context is None:
             raise ValueError("positioning context required")
@@ -182,6 +193,8 @@ def prepare(manifest, facts, review, claim_ids, plan=None, market=None,
             selected_interpretations[cid] = row
             interpretation_fingerprints[cid] = check["fingerprints"][cid]
             upstream_plan_fingerprints[cid] = positioning_context.get("plan_fingerprint")
+            if PRESENCE.is_assessment(row):
+                upstream_presence_contexts[cid] = PRESENCE.binding(positioning_context, row)
             selected.update(check["fact_dependencies"][cid])
             needed.extend(d for d in row["depends_on"] if d in known)
     matrix = None
@@ -234,6 +247,10 @@ def prepare(manifest, facts, review, claim_ids, plan=None, market=None,
         body["portfolio"] = inventory
     if include_module_insights:
         body['module_insights'] = MODULE_INSIGHTS.request(manifest)
+    if presence is not None:
+        body['regional_presence'] = presence
+    if upstream_presence_contexts:
+        body['upstream_presence_contexts'] = upstream_presence_contexts
     return copy.deepcopy({**body, "fingerprint": digest(body)})
 
 def validate_output(manifest, facts, review, context, output,
@@ -296,6 +313,16 @@ def validate_output(manifest, facts, review, context, output,
             errors.append("portfolio inventory changed")
         product_ids = {p["id"] for p in inventory.get("products", [])}
     assessed_products = set()
+    presence_context = context.get('regional_presence')
+    presence_regions = []
+    if presence_context is not None:
+        current_presence = PRESENCE.context(facts, lambda ids: None, manifest['as_of'])
+        if presence_context != current_presence:
+            raise ValueError('regional presence inventory/method changed')
+        if output.get('role') != 'positioning' or 'portfolio' not in manifest.get('selected_roles', []):
+            errors.append('regional presence belongs to portfolio positioning')
+        presence_regions = presence_context.get('regions', [])
+    assessed_regions = set()
     if matrix is not None:
         peers = index(matrix["peers"], "peers")
     pairs, visiting = set(), set()
@@ -353,9 +380,12 @@ def validate_output(manifest, facts, review, context, output,
             else:
                 errors.append(cid + ": unknown dependency: " + dep)
         fact_dependencies[cid] = found
-        output_fingerprints[cid] = digest({"claim": row, "dependencies": parent_hashes,
+        fingerprint_body = {"claim": row, "dependencies": parent_hashes,
                                           "plan": context.get("upstream_plan_fingerprints", {}).get(cid)
-                                          if cid in upstream else context.get("plan_fingerprint")})
+                                          if cid in upstream else context.get("plan_fingerprint")}
+        if PRESENCE.is_assessment(row):
+            fingerprint_body['regional_presence'] = PRESENCE.binding(context, row)
+        output_fingerprints[cid] = digest(fingerprint_body)
         visiting.discard(cid)
         return found
 
@@ -399,6 +429,8 @@ def validate_output(manifest, facts, review, context, output,
                 if field in row and (not text(row[field]) or len(row[field]) > limit):
                     errors.append(cid + ": compact " + field + " invalid")
         found = dependencies(cid)
+        if not PRESENCE.is_assessment(row) and (section == PRESENCE.SECTION or row.get('method_id') == PRESENCE.METHOD):
+            errors.append(cid + ': regional presence requires type and region_id')
         is_cell = row.get("type") == "matrix_cell"
         if is_cell:
             for field, limit in (("headline", 48), ("preview", 80)):
@@ -437,6 +469,17 @@ def validate_output(manifest, facts, review, context, output,
                     errors.append(cid + ": unrated cell needs coverage_note")
                 if state == "nicht anwendbar" and not found:
                     errors.append(cid + ": inapplicability needs checked fact basis")
+        elif PRESENCE.is_assessment(row):
+            rid = row.get('region_id')
+            if output.get('role') != 'positioning' or presence_context is None:
+                errors.append(cid + ': presence requires delegated positioning context')
+            if isinstance(rid, str):
+                if rid in assessed_regions:
+                    errors.append(cid + ': duplicate regional presence assessment')
+                assessed_regions.add(rid)
+            else:
+                errors.append(cid + ': invalid presence region_id')
+            errors.extend(PRESENCE.assessment_errors(row, presence_regions))
         elif product_assessment(row):
             pid = row.get("product_id")
             if output.get("role") != "positioning" or inventory is None or pid not in product_ids:
@@ -464,7 +507,7 @@ def validate_output(manifest, facts, review, context, output,
                 errors.append(cid + ": invalid product assessment_status")
         elif not found:
             errors.append(cid + ": interpretation has no checked fact basis")
-        if "score" in row and not product_assessment(row):
+        if "score" in row and not product_assessment(row) and not PRESENCE.is_assessment(row):
             method = methods.get(row.get("method_id"))
             key = str(row["score"])
             if method is None or key not in method["anchors"] or row.get("type") != method["assessment_type"] or not text(row.get("subject")):
@@ -490,6 +533,8 @@ def validate_output(manifest, facts, review, context, output,
             errors.append("matrix must cover each peer/criterion exactly once")
     if inventory is not None and output.get("role") == "positioning" and assessed_products != product_ids:
         errors.append("portfolio must cover each product exactly once")
+    if presence_context is not None and assessed_regions != {r['id'] for r in presence_regions}:
+        errors.append('regional presence must cover each region exactly once')
     if any(n > 3 for n in categories.values()):
         errors.append("SWOT permits at most three points per quadrant")
     requests = output.get("research_requests")
@@ -532,6 +577,7 @@ def main():
     parser.add_argument("--prepare", action="store_true")
     parser.add_argument("--portfolio", action="store_true", help="Include compact product inventory in positioning context")
     parser.add_argument("--module-insights", action="store_true", help="Request 1–3 fact/insight cards per selected portfolio/cluster/market module")
+    parser.add_argument('--presence', action='store_true', help='Include regional evidence and fixed 1–5 presence rubric in positioning context')
     parser.add_argument("--merge-validation", nargs="+")
     for name in ("manifest", "facts", "review", "context", "output", "plan", "market",
                  "positioning", "positioning-context", "out"):
@@ -554,7 +600,7 @@ def main():
                              read(args.positioning) if args.positioning else None,
                              read(args.positioning_context) if args.positioning_context else None,
                              args.interpretation_ids, include_portfolio=args.portfolio,
-                             include_module_insights=args.module_insights)
+                             include_module_insights=args.module_insights, include_presence=args.presence)
             summary = {"prepared_claims": len(result["facts"]),
                        "prepared_interpretations": len(result["interpretations"]),
                        "pending_checks": result["pending_checks"]}

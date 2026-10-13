@@ -24,6 +24,9 @@ Explizite Markdown-Modultests nach references/legacy-html-output.md durchführen
    Unter Portfolio, Cluster und Markt/Matrix auf Seite 1 kompakte Keyfacts/Insights
    nach references/modul-keyfacts.md aus geprüften module_insight-I-Claims zeigen.
    Fakt/Insight trennen, Herleitung und Quellen per Klick; keine Texte selbst erzeugen.
+   Regionale Präsenz nach references/regionale-praesenz.md auf Seite 1 unmittelbar
+   vor Markt/Capability Matrix: Regionszeilen, fünf Kreise/n/5, Fokus gold,
+   native Regionsprofile mit Scope/Methodik/Quellen. Nur freigegebene I-Stufen.
 2. Fehler gezielt an zuständige Fakten-/Interpretations-/Prüfrolle geben;
    keine fremden Dateien korrigieren oder Prüfbarrieren umgehen.
    Keine finale HTML bei Materialfehlern, veralteten Reviews, blockierenden Fragen.

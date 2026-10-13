@@ -16,6 +16,8 @@ identifizieren; ohne diesen keinen unabhängigen neuen Interpretationslauf erfin
    Zusätzlich --module-insights und references/modul-keyfacts.md mitgeben:
    passende vorhandene A-Auszüge aus Portfolio, Cluster und Markt selektiv wählen;
    Positionierung liefert je Modul 1–3 Fakt/Insight-Karten oder einen begründeten Gap.
+   Im Vollbriefing zusätzlich --presence und references/regionale-praesenz.md;
+   eigener kompakter Präsenzkontext mit fixer Skala 1–5, keine weitere Analyse-/Designrolle.
 3. positioning-analyst mit mode=interpret-v2, Auftrag, Kontext und Zielpfad
    delegieren. Ausgabe lokal mechanisch prüfen, keine Inhaltsfreigabe erfinden.
 4. Für SWOT passenden Kontext mit ausgewählten A-Fakten und ggf. relevanten

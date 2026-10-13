@@ -39,3 +39,5 @@ Markt-Deep-Dives auftragsbezogen. Themenkarten nach themen-darstellung.md;
 regionale Vergleichsgrafiken und Länderdetails nach markt-deepdive.md.
 Unter Portfolio, Cluster und Markt/Wettbewerb auf Seite 1 je 1–3 geprüfte
 Fakt/Insight-Karten nach modul-keyfacts.md; Auswahl in bestehender Positionierung.
+Regionale Unternehmenspräsenz nach regionale-praesenz.md im Vollbriefing auf
+Seite 1 vor Wettbewerb; Firmen-/Regionsdaten neu recherchieren, fixe Skala 1–5.

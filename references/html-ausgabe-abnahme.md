@@ -187,3 +187,39 @@ Kontexte ohne module_insights bleiben kompatibel. Neue Vollbriefings beauftragen
 --module-insights mit selektiven A-Auszügen und folgen references/modul-keyfacts.md.
 Explizite Gaps zeigen nur eine neutrale Systemmeldung, keine freie ungeprüfte
 Unternehmensbehauptung. Der regionale Markt-Deep-Dive auf Seite 3 bleibt separat.
+
+## Regionale Präsenz 13.10.2026
+Bestätigter Stil der gelieferten Quantum-Systems-HTML: Regionszeilen unmittelbar
+vor Wettbewerb/Capability Matrix auf Seite 1, fünf gleich große Kreise und n/5,
+Fokusregion gold, konkrete Präsenzart und Produktumfang. Klick öffnet darunter das
+Regionsprofil mit Aktivitäten, Stufenbegründung, Reichweite, Originalquellen und
+Belegstellen. Unternehmensweite Recherche im bestehenden Portfolio-Schritt;
+Positionierung und beide Reviews prüfen die feste Skala regional-presence-v1.
+Alle Zuordnungen, Status-/Kontrollbelege, Stufen und Kurztexte sind snapshotgebunden.
+
+- 126 Unit-Tests bestanden: fünf Stufen und null, operative vs. angekündigte
+  Aktivitäten, eigene/Partner-/JV-/Kundenrollen, Standort-Deduplikation,
+  Produktionsanker für Stufe 5, direkte Abhängigkeiten, Quellen-/Review-Bindung,
+  aktuelle Zuordnung/Methodik, SWOT-Grenzen, alte Kontexte und sichere Ausgabe.
+- Offline-Desktop-Chromium bei 1440/1280/1024 Pixeln: korrekte Modulposition,
+  vollständige Zeilen ohne Überlauf, identische Kreise, Fokusfarbe, Regionsauswahl
+  per Maus/Enter, Begründung/Methodik, direkte Quellen und Claim-Navigation.
+  Druck mit allen Profilen/Quellen und wiederhergestellter Ansicht, vollständiger
+  Fallback ohne JavaScript; keine Browser-JavaScript-Fehler.
+- Bestehende Desktopprüfung für Portfolio, Cluster, Capability Matrix, Profile,
+  Seitenwechsel und Druck weiterhin bestanden. Übersicht und Regionsprofil
+  visuell kontrolliert; Python-Syntax und fünf geänderte Skills gültig.
+- Beispiel jetzt 71 synthetische Fakten und 29 Interpretationen; sechs Testregionen
+  zeigen 5/4/3/2/1/null. Alte zusätzliche Portfolio-Regionsbelege bleiben auf Seite 1
+  erhalten, ohne vollständig abgedeckte Inhalte doppelt darzustellen.
+- Unabhängiger Portfolio- und anschließender Positionierungs-Forward-Lauf aus
+  anderen fiktiven Dokumenten: fünf P-Fakten und vier Regionen formal gültig;
+  Produktion/Entwicklung am selben Standort korrekt als ein Standort, geplantes
+  Werk nicht operativ, ziviler Vertriebspartner ohne Defence-Ausweitung,
+  Kundenverkauf ohne Infrastrukturstufe, unbelegte Region offen. Positionierung
+  liefert vier formal gültige Einordnungen mit 5/2/null/null und passenden Grenzen.
+
+Sämtliche Testquellen und Reviewer-Urteile sind fiktiv/simuliert. Keine echten
+Unternehmensquellen geöffnet und keine tatsächliche Inhaltsfreigabe behauptet.
+Künftige Vollbriefings recherchieren die aktuellen Firmen-/Regionsdaten neu und
+beauftragen --presence; der allgemeine Markt-/Industrie-Deep-Dive bleibt auf Seite 3.

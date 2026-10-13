@@ -19,6 +19,7 @@ PROFILE = CHECK.helper("profile_html", "profile-html.py")
 CAPABILITY = CHECK.helper("capability_html", "capability-html.py")
 MARKET = CHECK.helper("market_html", "market-html.py")
 MODULE_INSIGHTS = CHECK.MODULE_INSIGHTS
+PRESENCE = CHECK.PRESENCE
 
 KINDS = {"target", "partner", "customer", "jv", "owner", "supplier", "subsidiary",
          "project", "person", "institution", "other"}
@@ -106,6 +107,10 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     if full and (positioning_context.get('portfolio') != inventory or
                  set(product_assessments) != {p['id'] for p in inventory['products']}):
         raise ValueError('full briefing requires current portfolio context and one reviewed assessment per product')
+    presence_rows = views.get('portfolio', {}).get('regional_presence')
+    presence_assessments = {r['region_id']: r for r in interpreted.values() if PRESENCE.is_assessment(r)}
+    if full and presence_rows is not None and positioning_context.get('regional_presence') is None:
+        raise ValueError('full briefing requires current reviewed regional presence context')
 
     def require(ids, trail=()):
         if not isinstance(ids, list) or not ids:
@@ -165,6 +170,10 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             if role != 'market':
                 raise ValueError('market_dashboard belongs to market role')
             MARKET.validate(view['market_dashboard'], require, manifest['as_of'])
+        if view.get('regional_presence') is not None:
+            if role != 'portfolio':
+                raise ValueError('regional_presence belongs to portfolio role')
+            PRESENCE.validate(view['regional_presence'], require, manifest['as_of'])
 
     network = facts.get("network")
     if "cluster" in selected and not isinstance(network, dict):
@@ -379,6 +388,31 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             fragment = fragment.replace("const tableBody=root.querySelector('tbody');", "const tableBody=root.querySelector('tbody');tableBody.replaceChildren();", 1)
         fragment = fragment.replace("window.addEventListener('beforeprint',()=>{root.querySelector('.cn-table').open=true;});", "", 1)
         main += section("Cluster · Technologie, Industrie & Marktzugang", fragment + module_insights('cluster'), 'cluster-analysis')
+    if presence_rows is not None:
+        def presence_detail(region, row):
+            out = '<h4>Wie vertreten?</h4>'
+            for activity in region['activities']:
+                state = 'angekündigt' if activity['status'] == 'announced' else 'operativ dokumentiert'
+                out += '<div class="rp-activity"><strong>' + esc(activity['actor']) + '</strong><p>' + esc(activity['description']) + '</p><p class="meta">' + esc(activity['country'] + ' · ' + activity['location'] + ' · ' + activity['product_scope'] + ' · ' + state + ' · ' + (activity.get('status_date') or 'Statusdatum nicht belegt')) + '</p>' + paragraphs([activity.get('ownership_note')]) + links(activity['claim_ids']) + '</div>'
+            if not region['activities']:
+                out += '<p class="rp-empty">Keine freigegebenen konkreten Präsenzaktivitäten im Paket.</p>'
+            if row:
+                title = 'Warum Stufe ' + str(row['score']) + '?' if row['score'] is not None else 'Warum nicht eindeutig bestimmbar?'
+                out += '<h4>' + esc(title) + '</h4>' + paragraphs([row['statement'], row['reasoning'], row['method'], row.get('next_stage_limit'), row.get('coverage_note')]) + links([row['id']])
+            else:
+                out += '<p class="rp-empty">Faktenansicht: keine freigegebene Präsenzbewertung.</p>'
+            out += '<h4>Reichweite des Nachweises</h4>' + paragraphs([region['geographic_scope'], region['product_scope'], region['coverage_note'], row.get('uncertainty') if row else None])
+            out += '<h4>Originalquellen &amp; Belegstellen</h4>'
+            for cid in region['claim_ids']:
+                fact = claims[cid]
+                out += '<details class="rp-source-fact"><summary>' + esc(cid + ' · ' + fact['kind']) + '</summary><p>' + esc(fact['statement']) + '</p>' + paragraphs([fact['uncertainty']]) + evidence(fact) + links([cid]) + '</details>'
+            return out
+        presence_body = PRESENCE.render(presence_rows, presence_assessments, presence_detail, manifest['as_of'])
+        covered = {cid for region in presence_rows for cid in region['claim_ids']}
+        supplementary = [r for r in views.get('portfolio', {}).get('regions', []) if not {cid for ids in [r['claim_ids']] + [s['claim_ids'] for s in r.get('sections', [])] for cid in ids} <= covered]
+        if supplementary:
+            presence_body += '<h3>Weitere belegte regionale Aktivitäten</h3>' + grid([view_card(r) for r in supplementary])
+        main += section('Regionale Präsenz auf einen Blick.', presence_body, 'regional-presence')
     market_cards = module_insights('market')
     if positioning_context and positioning_context.get("matrix"):
         criteria = plan["criteria"]
@@ -406,7 +440,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         main += section(title, matrix + market_cards, 'capability-matrix')
     elif market_cards:
         main += section('Markt & Wettbewerb', market_cards, 'market-overview')
-    extra = [r for r in interpreted.values() if r['id'].startswith('I') and r['section'] not in {CHECK.SUMMARY_SECTION, CHECK.HIGHLIGHT_SECTION, MODULE_INSIGHTS.SECTION, 'regions'} and not r['section'].startswith('topic:') and r.get('type') != 'matrix_cell' and not CHECK.product_assessment(r)]
+    extra = [r for r in interpreted.values() if r['id'].startswith('I') and r['section'] not in {CHECK.SUMMARY_SECTION, CHECK.HIGHLIGHT_SECTION, MODULE_INSIGHTS.SECTION, 'regions'} and not r['section'].startswith('topic:') and r.get('type') != 'matrix_cell' and not CHECK.product_assessment(r) and not PRESENCE.is_assessment(r)]
     scored = []
     for r in extra:
         if 'score' in r:
@@ -456,6 +490,8 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     regions.append(topic_pages['market'])
     for role, v in views.items():
         if v.get('regions'):
+            if role == 'portfolio' and presence_rows is not None:
+                continue
             regions.append(section('Unternehmenspräsenz' if role == 'portfolio' else 'Markt & Industrie', grid([view_card(r) for r in v['regions']])))
     region_interpretations = [interp_card(r) for r in interpreted.values() if r.get('section') == 'regions']
     if region_interpretations:

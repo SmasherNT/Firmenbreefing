@@ -30,6 +30,9 @@ nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
    Auch --module-insights nach references/modul-keyfacts.md: je 1–3 modulspezifische
    Fakt/Insight-Karten unter Portfolio, Cluster und Markt/Wettbewerb auf Seite 1.
    Auswahl und Prüfung in denselben Positionierungs-/Schluss-Review-Schritten.
+   Regionale Unternehmenspräsenz nach references/regionale-praesenz.md im Portfolio
+   recherchieren, Kontext mit --presence ergänzen und feste 1–5-I-Stufen prüfen.
+   Regionsgrafik auf Seite 1 direkt vor der Wettbewerbsanalyse, Marktthemen auf Seite 3.
 5. briefing-output im selben Lauf mit --full ausführen. Hauptagent koordiniert
    und rendert; keine eigenen Fakten-/Interpretations-JSONs oder LLM-HTML.
    Vier Seiten: allgemeine Module untereinander, Person, Markt-Deep-Dive, Quellen.

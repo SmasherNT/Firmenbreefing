@@ -53,6 +53,9 @@ Bei regionalem Markt-Deep-Dive liefert market zusätzlich market_dashboard gemä
 markt-deepdive.md: vergleichbare Kennzahlen, Programme, lokale Rollen und Zugang.
 Nur diese Rolle besitzt das Dashboard; Faktenreferenzen und gesamte Zuordnung
 werden validiert und im Paket-Snapshot gebunden. Keine Beispielwerte übernehmen.
+Portfolio liefert zusätzlich regional_presence nach regionale-praesenz.md:
+geografische Aufstellung des Gesamtunternehmens mit konkreten Rollen, Standorten,
+Status und Produktumfang. Keine Stufen in Faktenphase; Cluster-Belege wiederverwenden.
 Ein Link/Snippet allein ist keine Evidenz. Lieferstatus einmal beim Lesen erfassen;
 Prüftiefe nach quellenpruefung.md, keine routinemäßige eigene Liefer-Prüfschleife.
 
@@ -102,6 +105,7 @@ Für anschließende interpret-v2-Läufe maschinenlesbares Basis-Review nach
 quellenpruefung.md schreiben. facts-validation.json enthält Laufidentität,
 phase=basis und required_full_review_ids für eingezeichnete Netzwerkkanten und
 sämtliche referenzierten Markt-Dashboard-Fakten.
+Auch sämtliche referenzierten Präsenzfakten sind als required_full_review_ids enthalten.
 Reviewer entscheidet inhaltlich; stamp-review.py übernimmt nur Fingerprints.
 Nach zwei erfolglosen Korrekturrunden wesentlicher Fehler blockieren.
 Abnahme unterscheidet formale Prüfung, Inhaltsprüfung, Abdeckung und nicht geprüft.

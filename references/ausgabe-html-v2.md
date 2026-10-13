@@ -19,7 +19,7 @@ Keine kopierten Fakten-/Belegtexte pro Zeile.
 | Rolle | Optionale Tabellen |
 |---|---|
 | context | company_facts, events, profile, topics |
-| portfolio | products, regions, topics |
+| portfolio | products, regions, topics, regional_presence nach regionale-praesenz.md |
 | cluster | topics, report_log; network bleibt eigenes Paketfeld |
 | market | regions, topics, peers, observations gemäß Vergleichsvertrag; market_dashboard nach markt-deepdive.md |
 
@@ -59,10 +59,13 @@ Feste vier Desktop-Seiten, auch wenn ein optionaler Auftragsteil leer ist:
 1. Überblick: Summary, Entwicklungen, Portfolio, allgemeine Themen, Cluster,
    Capability Matrix, Einordnung, SWOT und offene Fragen. Module untereinander.
    Keyfacts & Insights direkt unter Portfolio, Cluster und Markt-/Wettbewerbsdarstellung.
+   Regionale Unternehmenspräsenz nach Cluster direkt vor Capability Matrix/Wettbewerb:
+   fixe Skala 1–5, klickbare Regionszeilen und vollständig belegte Profile darunter.
 2. Beruflicher Gesprächspartner-Kontext.
 3. Markt-Deep-Dive: vergleichbare Kennzahlen/CAGR, Programme und industrielle Rollen
    mit vertiefbaren Länderdetails nach markt-deepdive.md; anschließend regionale
-   Themen, Unternehmenspräsenz und regionale Einordnung.
+   Themen und regionale Markteinordnung; Unternehmenspräsenz auf Seite 1, sofern
+   das aktuelle Paket regional_presence enthält (ältere Pakete bleiben kompatibel).
 4. Aussagen, Belegstellen und Originalquellen mit Suche.
 
 Manifest topics=[{id,label,page}], page=main/market (Standard main);

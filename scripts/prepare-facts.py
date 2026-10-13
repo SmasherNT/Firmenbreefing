@@ -250,6 +250,21 @@ def build(manifest, modules, plan=None):
                 profile_helper.validate(data["profile"], profile_refs)
             except ValueError as error:
                 errors.append(str(error))
+    spec = importlib.util.spec_from_file_location('presence_html', Path(__file__).with_name('presence-html.py'))
+    presence_helper = importlib.util.module_from_spec(spec); spec.loader.exec_module(presence_helper)
+    presence_refs = set()
+    def regional_refs(refs):
+        if not isinstance(refs, list) or not refs or any(not isinstance(c, str) or c not in ids for c in refs):
+            raise ValueError('regional_presence requires known claim_ids')
+        presence_refs.update(refs)
+    for data in modules:
+        if isinstance(data, dict) and data.get('regional_presence') is not None:
+            try:
+                if data.get('role') != 'portfolio':
+                    raise ValueError('regional_presence belongs to portfolio role')
+                presence_helper.validate(data['regional_presence'], regional_refs, manifest.get('as_of'))
+            except ValueError as error:
+                errors.append(str(error))
     spec = importlib.util.spec_from_file_location("market_html", Path(__file__).with_name("market-html.py"))
     market_helper = importlib.util.module_from_spec(spec); spec.loader.exec_module(market_helper)
     market_refs = set()
@@ -270,7 +285,7 @@ def build(manifest, modules, plan=None):
               "claims": claims, "sources": sorted(sources.values(), key=lambda s: s["id"]),
               "module_views": [{"role": d.get("role"), **{k: d[k] for k in
                                   ("company_facts", "events", "profile", "products", "regions",
-                                   "topics", "peers", "observations", "market_dashboard", "gaps", "coverage", "report_log")
+                                   "topics", "peers", "observations", "market_dashboard", "regional_presence", "gaps", "coverage", "report_log")
                                   if k in d}} for d in modules if isinstance(d, dict)],
               "module_context": [{"role": d.get("role"), "scope": d.get("scope"),
                                   "status": d.get("status"),
@@ -281,7 +296,7 @@ def build(manifest, modules, plan=None):
         packet["network"] = networks[0]
     check = review_validator()(packet)
     errors.extend(check["errors"])
-    required = sorted(market_refs | {c for n in networks for e in n.get("edges", []) if isinstance(e, dict)
+    required = sorted(market_refs | presence_refs | {c for n in networks for e in n.get("edges", []) if isinstance(e, dict)
                        for c in e.get("claim_ids", []) if isinstance(c, str)})
     try:
         packet_fingerprint = hashlib.sha256(json.dumps(packet, sort_keys=True,
