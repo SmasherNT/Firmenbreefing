@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "format": "run-checkpoints-v1",
+  "run_id": "20261013-rheinmetall-flugabwehr",
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-13",
+  "manifest": {
+    "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/input/facts-run.json",
+    "sha256": "ed151655755c1acd62c0fe028687a69aaeb6a6ba0d2ac8d51a572fa990288188"
+  },
+  "request": {
+    "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/input/auftrag.md",
+    "sha256": "8ad9913cdfea248bf456e103d501770a5725abfebd50b5af1f730b6c74e774c1"
+  },
+  "cache_path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/document-cache",
+  "target": "html",
+  "full": true,
+  "stages": [
+    "context",
+    "portfolio",
+    "cluster",
+    "plan",
+    "market",
+    "facts",
+    "basis-review",
+    "positioning",
+    "swot",
+    "final-review",
+    "html"
+  ],
+  "checkpoints": {},
+  "created_at": "2026-10-13T12:00:37+00:00",
+  "notice": "Local completion records only; content approval and visual QA remain separate.",
+  "fingerprint": "b53b726c860cdd51876700baa7406efc7c3b2db4adad7f3d8493a247d686ff0d"
+}
