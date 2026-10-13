@@ -1,7 +1,7 @@
 # Fiktives HTML-Beispiel
 
 briefing-demo.html zeigt die feste Ausgabe mit synthetischen Daten für
-Example Inspection. 65 Fakten, 17 Interpretationen, sechs Netzwerkkanten (fünf Akteurspaare),
+Example Inspection. 65 Fakten, 24 Interpretationen, sechs Netzwerkkanten (fünf Akteurspaare),
 vier auftragsbezogene Matrixzellen und feste vier Seiten. Die Executive
 Summary zeigt drei auftragsbezogene Highlights (Kapazität, Kundenländer,
 Erprobungsstatus) und vier vertiefbare Kernaussagen; keine feste Finanzkennzahlenliste.
@@ -29,6 +29,10 @@ negativem und fehlendem Wachstum, sechs Programme in vier Statuskategorien und
 drei Industriefunktionen. Mehrere Rollen pro Zelle, Programmwerte als Vertragswert
 oder Genehmigungsobergrenze, geplante Zeitfenster und drei Detailreiter mit Quellen.
 Die Kontextgröße ist kein Segmentvolumen; Testland Ost enthält offene Daten.
+Seite 1 enthält unter Portfolio drei und unter Cluster/Markt je zwei kompakte
+Keyfacts/Insight-Karten. Belegter Fakt und Analysteninterpretation getrennt,
+vollständige Herleitung/Quellen in nativen Details. Alle sieben Karten sind
+synthetische, fingerprintgebundene I-Claims innerhalb derselben Positionierung.
 
 Reproduzieren (aus Repositorywurzel):
 
@@ -39,6 +43,7 @@ python3 -m unittest discover -s tests -q
 node tests/check_design_browser.cjs /tmp/briefing-demo-run/briefing-demo.html
 node tests/check_executive_browser.cjs /tmp/briefing-demo-run/briefing-demo.html
 node tests/check_market_browser.cjs /tmp/briefing-demo-run/briefing-demo.html
+node tests/check_module_insights_browser.cjs /tmp/briefing-demo-run/briefing-demo.html
 ```
 
 Der Generator erzeugt Fakten-/Interpretationspakete und ausdrücklich simulierte

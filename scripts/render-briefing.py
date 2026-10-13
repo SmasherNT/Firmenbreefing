@@ -18,6 +18,7 @@ PORTFOLIO = CHECK.helper("portfolio_html", "portfolio-html.py")
 PROFILE = CHECK.helper("profile_html", "profile-html.py")
 CAPABILITY = CHECK.helper("capability_html", "capability-html.py")
 MARKET = CHECK.helper("market_html", "market-html.py")
+MODULE_INSIGHTS = CHECK.MODULE_INSIGHTS
 
 KINDS = {"target", "partner", "customer", "jv", "owner", "supplier", "subsidiary",
          "project", "person", "institution", "other"}
@@ -227,6 +228,23 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             body += '<h4>' + esc(section["label"]) + '</h4>' + "".join('<p>' + esc(claims[c]["statement"]) + '</p>' + evidence(claims[c]) for c in section["claim_ids"]) + links(section["claim_ids"])
         return '<details class="card" data-es-title="' + esc(row["label"]) + '"><summary>' + esc(row["label"]) + '</summary><div class="es-detail">' + body + '</div></details>'
 
+    def module_insights(module):
+        requested = positioning_context.get('module_insights') if positioning_context else None
+        rows = positioning.get('interpretations', []) if positioning else []
+
+        def detail(row):
+            out = '<h5>Herleitung · Analysteninterpretation</h5>' + paragraphs([row['reasoning'], row['method']]) + links([row['id']])
+            if row['uncertainty']:
+                out += '<h5>Grenzen der Aussage</h5>' + paragraphs([row['uncertainty']])
+            fact_ids = list(dict.fromkeys(row['fact_claim_ids'] + sorted({cid for report in validations for cid in report['fact_dependencies'].get(row['id'], [])})))
+            out += '<h5>Faktenbasis &amp; Originalquellen</h5>'
+            for cid in fact_ids:
+                fact = claims[cid]
+                out += '<details class="mi-source-fact"><summary>' + esc(cid + ' · ' + ('Faktgrundlage' if cid in row['fact_claim_ids'] else 'Weitere Grundlage der Einordnung')) + '</summary><p>' + esc(fact['statement']) + '</p><p class="meta">' + esc(fact['kind']) + '</p>' + paragraphs([fact['uncertainty']]) + evidence(fact) + links([cid]) + '</details>'
+            return out
+
+        return MODULE_INSIGHTS.render(module, rows, requested, detail)
+
     def short_text(value, limit=160):
         value = " ".join(value.split())
         return value if len(value) <= limit else value[:limit-1].rsplit(" ", 1)[0] + "…"
@@ -338,8 +356,9 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         timeline += '<div class="event"><time' + dated + '>' + esc(row.get("date") or 'Datum öffentlich nicht belegt') + '</time>' + event_card(row) + '</div>'
     main += section("Aktuelle Entwicklungen", '<div class="timeline">' + timeline + '</div>' if timeline else '', 'current-developments')
     portfolio_html = PORTFOLIO.render(inventory, product_assessments, claims, evidence, links, CHECK.PORTFOLIO_STAGES)
-    if portfolio_html:
-        main += '<section class="module" id="portfolio">' + portfolio_html + '</section>'
+    portfolio_cards = module_insights('portfolio')
+    if portfolio_html or portfolio_cards:
+        main += '<section class="module" id="portfolio">' + (portfolio_html or '<h2>Portfolio</h2>') + portfolio_cards + '</section>'
     main += topic_pages['main']
     if network:
         nodes = CHECK.index(network["nodes"], "nodes")
@@ -359,7 +378,8 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         if 'tableBody.replaceChildren();' not in fragment:
             fragment = fragment.replace("const tableBody=root.querySelector('tbody');", "const tableBody=root.querySelector('tbody');tableBody.replaceChildren();", 1)
         fragment = fragment.replace("window.addEventListener('beforeprint',()=>{root.querySelector('.cn-table').open=true;});", "", 1)
-        main += section("Cluster · Technologie, Industrie & Marktzugang", fragment)
+        main += section("Cluster · Technologie, Industrie & Marktzugang", fragment + module_insights('cluster'), 'cluster-analysis')
+    market_cards = module_insights('market')
     if positioning_context and positioning_context.get("matrix"):
         criteria = plan["criteria"]
         cells = {(r["peer_id"], r["criterion_id"]): r for r in positioning["interpretations"] if r.get("type") == "matrix_cell"}
@@ -383,8 +403,10 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         matrix = CAPABILITY.render(criteria, positioning_context['matrix']['peers'], cells,
             manifest['company'], matrix_detail, counts, network['target_id'] if network else None)
         title = 'Capability Matrix · fiktiver Beispieldatensatz' if fictional else 'Capability Matrix · öffentlich belegte Reife'
-        main += section(title, matrix, 'capability-matrix')
-    extra = [r for r in interpreted.values() if r['id'].startswith('I') and r['section'] not in {CHECK.SUMMARY_SECTION, CHECK.HIGHLIGHT_SECTION, 'regions'} and not r['section'].startswith('topic:') and r.get('type') != 'matrix_cell' and not CHECK.product_assessment(r)]
+        main += section(title, matrix + market_cards, 'capability-matrix')
+    elif market_cards:
+        main += section('Markt & Wettbewerb', market_cards, 'market-overview')
+    extra = [r for r in interpreted.values() if r['id'].startswith('I') and r['section'] not in {CHECK.SUMMARY_SECTION, CHECK.HIGHLIGHT_SECTION, MODULE_INSIGHTS.SECTION, 'regions'} and not r['section'].startswith('topic:') and r.get('type') != 'matrix_cell' and not CHECK.product_assessment(r)]
     scored = []
     for r in extra:
         if 'score' in r:
@@ -454,6 +476,8 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     pages.append(('page-sources', 'Quellen', section('Aussagen, Belegstellen & Originalquellen', register)))
     tabs = ''.join('<button type="button" role="tab" id="tab-' + ident + '" data-page="' + ident + '" aria-controls="' + ident + '">' + str(i) + ' · ' + esc(label) + '</button>' for i, (ident, label, _) in enumerate(pages, 1))
     content = ''.join('<div class="page" role="tabpanel" aria-labelledby="tab-' + ident + '" id="' + ident + '"><p class="page-kicker">' + str(i).zfill(2) + ' / 04 · ' + esc(label) + '</p>' + body + '</div>' for i, (ident, label, body) in enumerate(pages, 1))
+    if positioning_context and positioning_context.get('module_insights'):
+        content = MODULE_INSIGHTS.css() + content
     template = (ROOT / 'references/templates/briefing.html').read_text(encoding='utf-8')
     values = {'TITLE': esc(manifest['company']), 'DATE': esc(manifest['as_of']), 'SCOPE': esc(manifest.get('scope', '')),
               'BADGE': 'Fiktive Testdaten · keine reale Firmenanalyse' if fictional else 'Geprüfte Fakten & Analysteninterpretation',

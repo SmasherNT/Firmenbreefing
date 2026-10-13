@@ -1,0 +1,28 @@
+.module-insights{margin-top:24px;border-top:1px solid #dce5ea;padding-top:20px;color:#193445;min-width:0}
+.module-insights>h3{font-size:17px;margin:0 0 14px!important}
+.module-insights .mi-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:stretch}
+.module-insights .mi-grid[data-count="1"]{grid-template-columns:minmax(0,1fr)}
+.module-insights .mi-grid[data-count="2"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+.module-insights .mi-grid:has(.mi-detail[open]){align-items:start}
+.module-insights .mi-card{border:1px solid #dce5ea;border-top:3px solid #154c61;border-radius:8px;background:#f3f7f9;padding:16px;min-width:0;display:grid;grid-template-rows:auto auto 1fr auto;gap:12px;align-content:start;overflow-wrap:anywhere}
+.module-insights .mi-card>h4{font-size:15px;line-height:1.35;margin:0;color:#193445}
+.module-insights .mi-label{display:block;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#526a79;margin-bottom:4px}
+.module-insights .mi-card p{font-size:13px;line-height:1.55;margin:0}
+.module-insights .mi-insight{border-top:1px solid #dce5ea;padding-top:11px}
+.module-insights .mi-insight>.mi-label{color:#956621}
+.module-insights .mi-detail{font-size:12px;min-width:0}
+.module-insights .mi-detail>summary{color:#154c61;font-size:12px;font-weight:600;line-height:1.5}
+.module-insights .mi-detail-body{margin-top:13px;padding-top:12px;border-top:1px solid #dce5ea}
+.module-insights .mi-detail-body h5{font-size:13px;color:#154c61;margin:14px 0 7px}
+.module-insights .mi-detail-body p{margin:7px 0 12px;font-size:12px}
+.module-insights .mi-source-fact{padding:10px 0;border-top:1px solid #dce5ea}
+.module-insights .mi-source-fact>summary{font-size:12px;font-weight:600;line-height:1.5;color:#154c61}
+.module-insights .mi-source-fact .evidence{padding-left:18px;margin:10px 0}
+.module-insights .mi-source-fact .evidence li{font-size:12px;padding:8px 10px;margin:8px 0;background:white;border-left:2px solid #dce5ea}
+.module-insights .mi-source-fact .evidence a{font-size:12px;font-weight:600;overflow-wrap:anywhere}
+.module-insights .mi-empty{font-size:12px;color:#526a79;margin:0;background:#f3f7f9;padding:12px 15px;border-radius:5px}
+@media print{
+ .module-insights .mi-grid{display:block}
+ .module-insights .mi-card{display:block;margin:12px 0;break-inside:avoid;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+ .module-insights .mi-card>div,.module-insights .mi-card>details{margin-top:12px}
+}

@@ -37,6 +37,11 @@ und Prüfung abhängiger Aussagen. Nicht geprüfte Claims ausdrücklich als
 Aussagen, die später eine Schlussfolgerung tragen, vor Freigabe nach A hochstufen.
 Reine Interpretationen auf belegte Fakten und nachvollziehbare Ableitung prüfen;
 kein Originalbeleg kann die Analysteninterpretation selbst als Fakt bestätigen.
+Modulspezifische Keyfacts/Insights nach modul-keyfacts.md im gleichen I-Review
+prüfen: Titel, fact_text/fact_claim_ids, statement als Insight, Modulzuordnung,
+Reihenfolge und Herleitung. Faktenverdichtung darf keine neue Aussage einführen;
+Interpretation, Zuschreibung und Statusgrenzen erhalten. Explizite Auswahl-/Beleg-
+Gaps beurteilen, ohne fehlende Evidenz zur Unternehmensschwäche umzudeuten.
 
 ## Lieferstatus ohne separate Prüfschleife
 Recherche-Rolle erfasst beim ersten Lesen den ausdrücklich genannten Status

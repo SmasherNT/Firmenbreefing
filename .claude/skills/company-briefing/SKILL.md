@@ -27,6 +27,9 @@ nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
    SWOT danach; ein gemeinsames Schluss-Review für beide Ableitungen.
    Portfolio-Reife nach references/portfolio-darstellung.md im bestehenden
    Positionierungsschritt; selektiven Kontext mit --portfolio erzeugen.
+   Auch --module-insights nach references/modul-keyfacts.md: je 1–3 modulspezifische
+   Fakt/Insight-Karten unter Portfolio, Cluster und Markt/Wettbewerb auf Seite 1.
+   Auswahl und Prüfung in denselben Positionierungs-/Schluss-Review-Schritten.
 5. briefing-output im selben Lauf mit --full ausführen. Hauptagent koordiniert
    und rendert; keine eigenen Fakten-/Interpretations-JSONs oder LLM-HTML.
    Vier Seiten: allgemeine Module untereinander, Person, Markt-Deep-Dive, Quellen.

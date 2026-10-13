@@ -81,6 +81,8 @@ def helper(name, file):
     spec.loader.exec_module(module)
     return module
 
+MODULE_INSIGHTS = helper('module_insights', 'module-insights-html.py')
+
 def env(manifest, facts, review):
     if manifest.get("schema_version") != 1 or manifest.get("mode") != "facts-v2":
         raise ValueError("manifest must be facts-v2 schema_version=1")
@@ -146,12 +148,14 @@ def plan_check(plan, manifest):
 
 def prepare(manifest, facts, review, claim_ids, plan=None, market=None,
             positioning=None, positioning_context=None, interpretation_ids=None,
-            include_portfolio=False):
+            include_portfolio=False, include_module_insights=False):
     claims, reviews, fingerprints = env(manifest, facts, review)
     selected = set(claim_ids or [])
     inventory = portfolio_context(facts) if include_portfolio else None
     if include_portfolio and positioning is not None:
         raise ValueError("portfolio inventory belongs to positioning, not SWOT context")
+    if include_module_insights and positioning is not None:
+        raise ValueError('module insights belong to positioning, not SWOT context')
     if inventory:
         selected.update(c for p in inventory["products"] for c in p["claim_ids"])
     selected_interpretations = {}
@@ -228,6 +232,8 @@ def prepare(manifest, facts, review, claim_ids, plan=None, market=None,
         body["matrix"] = matrix
     if inventory is not None:
         body["portfolio"] = inventory
+    if include_module_insights:
+        body['module_insights'] = MODULE_INSIGHTS.request(manifest)
     return copy.deepcopy({**body, "fingerprint": digest(body)})
 
 def validate_output(manifest, facts, review, context, output,
@@ -253,6 +259,10 @@ def validate_output(manifest, facts, review, context, output,
         if field in output:
             errors.append("prohibited output field: " + field)
     rows = index(output.get("interpretations"), "interpretations")
+    delegated_insights = context.get('module_insights')
+    if output.get('role') != 'positioning' and (delegated_insights is not None or output.get('module_insight_gaps') or any(r.get('type') == 'module_insight' or r.get('section') == MODULE_INSIGHTS.SECTION for r in rows.values())):
+        errors.append('module insights belong to positioning')
+    errors.extend(MODULE_INSIGHTS.validate(list(rows.values()), output.get('module_insight_gaps', []), delegated_insights, manifest, claims))
     upstream = index(context.get("interpretations", []), "context interpretations")
     if upstream:
         if latest_positioning is None or latest_positioning_context is None:
@@ -384,7 +394,7 @@ def validate_output(manifest, facts, review, context, output,
                 errors.append(cid + ": main statement cannot be a highlight or matrix cell")
         elif row.get("type") == "summary_highlight":
             errors.append(cid + ": summary_highlight requires executive_highlights section")
-        if section.startswith("topic:"):
+        if section and section.startswith("topic:"):
             for field, limit in (("headline", 72), ("preview", 160)):
                 if field in row and (not text(row[field]) or len(row[field]) > limit):
                     errors.append(cid + ": compact " + field + " invalid")
@@ -521,6 +531,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--prepare", action="store_true")
     parser.add_argument("--portfolio", action="store_true", help="Include compact product inventory in positioning context")
+    parser.add_argument("--module-insights", action="store_true", help="Request 1–3 fact/insight cards per selected portfolio/cluster/market module")
     parser.add_argument("--merge-validation", nargs="+")
     for name in ("manifest", "facts", "review", "context", "output", "plan", "market",
                  "positioning", "positioning-context", "out"):
@@ -542,7 +553,8 @@ def main():
                              read(args.market) if args.market else None,
                              read(args.positioning) if args.positioning else None,
                              read(args.positioning_context) if args.positioning_context else None,
-                             args.interpretation_ids, include_portfolio=args.portfolio)
+                             args.interpretation_ids, include_portfolio=args.portfolio,
+                             include_module_insights=args.module_insights)
             summary = {"prepared_claims": len(result["facts"]),
                        "prepared_interpretations": len(result["interpretations"]),
                        "pending_checks": result["pending_checks"]}

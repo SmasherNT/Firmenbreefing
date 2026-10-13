@@ -21,6 +21,9 @@ Explizite Markdown-Modultests nach references/legacy-html-output.md durchführen
    Markt-Deep-Dive nach references/markt-deepdive.md: Kennzahlen/CAGR, Programme
    und industrielle Rollen mit Länderdetails darunter. Nur aktuelles freigegebenes
    market_dashboard verwenden; fehlende Daten offen lassen, keine Musterwerte.
+   Unter Portfolio, Cluster und Markt/Matrix auf Seite 1 kompakte Keyfacts/Insights
+   nach references/modul-keyfacts.md aus geprüften module_insight-I-Claims zeigen.
+   Fakt/Insight trennen, Herleitung und Quellen per Klick; keine Texte selbst erzeugen.
 2. Fehler gezielt an zuständige Fakten-/Interpretations-/Prüfrolle geben;
    keine fremden Dateien korrigieren oder Prüfbarrieren umgehen.
    Keine finale HTML bei Materialfehlern, veralteten Reviews, blockierenden Fragen.

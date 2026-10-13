@@ -37,3 +37,10 @@ Ausgabevertrag in references/ausgabe-html-v2.md; keine neue Faktenrecherche.
 
 Für section=topic:<id> kompakte headline/preview nach
 references/themen-darstellung.md liefern; Faktenbezug und Einschränkungen erhalten.
+
+Bei context.module_insights references/modul-keyfacts.md lesen. Für jedes
+beauftragte Portfolio-/Cluster-/Marktmodul 1–3 module_insight-I-Claims mit kurzem
+Titel, fact_text/fact_claim_ids und statement als Insight liefern. Modulbezug und
+Quellengrenzen erhalten; keine Wiederholung der Summary oder Rasterfüllung.
+Ohne zusätzlichen belastbaren Punkt module_insight_gaps mit Begründung für den
+Reviewer dokumentieren. Keine neue Recherche oder eigene Design-/Agentenrunde.

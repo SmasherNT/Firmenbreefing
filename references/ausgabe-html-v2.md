@@ -51,10 +51,14 @@ Portfolio-Reife nach portfolio-darstellung.md im bestehenden Positionierungsschr
 Weitere Scores nur mit vorher definierten assessment_methods; null bei Datenlücke.
 SWOT maximal drei Punkte je Quadrant; Datenlücke ist keine tatsächliche Schwäche.
 Keine neue Interpretation beim Rendern erzeugen.
+Positionierung liefert außerdem je 1–3 modulspezifische Fakt/Insight-Karten nach
+modul-keyfacts.md im Kontextauftrag --module-insights. Alle Kartenfelder und
+Zuordnungen gehören zum geprüften I-Claim, fehlende Auswahl explizit dokumentieren.
 
 Feste vier Desktop-Seiten, auch wenn ein optionaler Auftragsteil leer ist:
 1. Überblick: Summary, Entwicklungen, Portfolio, allgemeine Themen, Cluster,
    Capability Matrix, Einordnung, SWOT und offene Fragen. Module untereinander.
+   Keyfacts & Insights direkt unter Portfolio, Cluster und Markt-/Wettbewerbsdarstellung.
 2. Beruflicher Gesprächspartner-Kontext.
 3. Markt-Deep-Dive: vergleichbare Kennzahlen/CAGR, Programme und industrielle Rollen
    mit vertiefbaren Länderdetails nach markt-deepdive.md; anschließend regionale

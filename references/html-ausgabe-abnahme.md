@@ -154,3 +154,36 @@ gebunden; required_full_review_ids umfasst sämtliche verwendeten Fakten.
 Künftige regionale Aufträge verwenden recherchierte Daten ihres aktuellen Laufs;
 keine firmenspezifischen Testwerte oder festen Länder/Funktionen im Renderer.
 Alte Faktenpakete ohne Dashboard bleiben mit Themen-/Regionenkarten nutzbar.
+
+## Modulspezifische Keyfacts & Insights 13.10.2026
+Bestätigte kompakte Karten direkt unter Portfolio, Cluster und Markt-/Wettbewerbs-
+darstellung auf Seite 1. Je Modul 1–3 Punkte mit Titel, belegtem fact_text und
+statement als Insight. Herleitung, Unsicherheit, vollständige A-Fakten, direkte
+Originalquellen und Belegstellen in nativen Details. Auswahl im bestehenden
+Positionierungsschritt, alle sichtbaren Felder/Zuordnungen im I-Fingerprint;
+keine zusätzliche Recherche-/Agenten-/Designrunde für reale Briefings.
+
+- 112 Unit-Tests bestanden, einschließlich 1/2/3 Karten ohne Auffüllen,
+  Obergrenze/Reihenfolge, direkte eindeutige Faktenreferenzen, A-/Quellenbindung,
+  Änderungen von Titel/Fakt/Insight/Modul/Referenzen, explizite Gaps, sichere
+  Ausgabe, keine doppelten Einordnungskarten, alte Kontexte und Markt ohne Matrix.
+- Offline-Desktop-Chromium bei 1440/1280/1024 Pixeln: richtige Modul-/Seitenposition,
+  gleich hohe Karten ohne Textverlust, geschlossene Details, Öffnen per Tastatur,
+  Herleitung/Unsicherheit/Originalquellen, Claim-Navigation, Druck mit allen Karten
+  und Fakten sowie wiederhergestellter Zustand, vollständig ohne JavaScript.
+- Bestehende Desktopprüfung für Portfolio, Cluster, Capability Matrix, Profile,
+  Seitenwechsel und Druck weiterhin bestanden; keine JavaScript-Fehler.
+- Karten aller drei Module visuell kontrolliert, Python-Syntax gültig und vier
+  geänderte Skills per quick_validate bestanden.
+- Beispiel jetzt 65 synthetische Fakten und 24 Interpretationen, darunter sieben
+  modulspezifische Karten (Portfolio 3, Cluster 2, Markt 2). Alle Daten/Reviews
+  bleiben erfunden; keine echten Unternehmensquellen geöffnet oder freigegeben.
+- Unabhängiger positioning-analysis-Lauf aus anderen bereitgestellten fiktiven
+  A-Fakten: fünf formal gültige Karten (1/2/2), passende Produkt-/Partner-/Markt-
+  Bezüge, Zuschreibungen und Grenzen erhalten, keine künstlichen Scores, keine
+  Rasterfüllung. Dies ist eine Workflowprüfung, kein reales Inhaltsreview.
+
+Kontexte ohne module_insights bleiben kompatibel. Neue Vollbriefings beauftragen
+--module-insights mit selektiven A-Auszügen und folgen references/modul-keyfacts.md.
+Explizite Gaps zeigen nur eine neutrale Systemmeldung, keine freie ungeprüfte
+Unternehmensbehauptung. Der regionale Markt-Deep-Dive auf Seite 3 bleibt separat.

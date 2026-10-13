@@ -218,7 +218,7 @@ def generate(destination):
         review_scope='SIMULIERT: bereitgestellte fiktive Daten; keine öffentliche Quellenprüfung',
         claims=[dict(id=cid, depth='A', status='geprüft', evidence_review='SIMULIERTE Offline-Entscheidung') for cid in by])
     basis = STAMP.stamp(review_base, validation)
-    pos_context = CHECK.prepare(manifest, facts, basis, ['P1', 'P2', 'P3', 'C3', 'M5', 'M7'], plan, market, include_portfolio=True)
+    pos_context = CHECK.prepare(manifest, facts, basis, ['P1', 'P2', 'P3', 'C1', 'C2', 'C3', 'C5', 'M5', 'M7'], plan, market, include_portfolio=True, include_module_insights=True)
     interpretations = []
     for n, (p, c, ids, value) in enumerate([('target', 'integration', ['M1'], 'API-Integration'),
         ('target', 'validation', ['M2', 'M3'], 2), ('peer', 'integration', ['M6'], 'Komplettsystem'),
@@ -271,6 +271,27 @@ def generate(destination):
             depends_on=ids, reasoning=reason, method='Höchster konkret belegter Meilenstein', uncertainty='Synthetischer Offline-Test',
             next_stage_limit='Kein konkretes Kundenprogramm belegt.' if grade == 3 else 'Höchster Skalenanker; keine Aussage zur technischen Überlegenheit.' if grade == 6 else '',
             coverage_note='Keine ausreichende Statusinformation im bereitgestellten Datensatz.' if grade is None else ''))
+    for module, items in [
+        ('portfolio', [('Serie je Produktfamilie', 'Das Sensor Kit wird im fiktiven Datensatz seit 2025 wiederholt in Serie ausgeliefert.',
+            'Der Seriennachweis gilt für diese Produktfamilie, nicht pauschal für das Gesamtportfolio.', ['P4']),
+            ('Kundenpilot bleibt offen', 'Für das Inspection Kit ist ein Labortest belegt; ein Kundenpilot ist bislang nur vorgesehen.',
+            'Ein durchgeführter Kundenpilot wäre der nächste öffentlich zu belegende Meilenstein.', ['P1','M2','M3']),
+            ('Servicestatus unbelegt', 'Data Assist wird als Service genannt; ein konkreter Nutzungsstatus ist nicht beschrieben.',
+            'Für die Reifeeinordnung fehlt ein Nutzungs- oder Auslieferungsbeleg; das belegt keine tatsächliche Produktschwäche.', ['P5'])]),
+        ('cluster', [('Integration über mehrere Akteure', 'Test Sensor liefert ein Sensormodul; Example JV und Test Sensor dokumentieren eine Integrationskooperation.',
+            'Industrielle Integration ist im Beispiel als Zusammenspiel mehrerer Akteure zu betrachten.', ['C3','C5']),
+            ('Kapital ist keine Kontrolle', 'Test Capital hält laut fiktiver Quelle 40 Prozent Kapitalanteile am Zielunternehmen.',
+            'Die Quote allein belegt keine Kontrolle; dafür wären zusätzliche Stimmrechts- oder Governance-Belege nötig.', ['C1'])]),
+        ('market', [('Unterschied im Pilotnachweis', 'Für Example Inspection ist ein Labortest belegt, für TestPeer ein benannter Kundenpilot.',
+            'TestPeer ist im Erprobungskriterium eine Evidenzstufe weiter; daraus folgt kein Gesamtvorsprung.', ['M2','M3','M4']),
+            ('Programme als Anknüpfung', 'Ein fiktives europäisches Programm unterstützt Inspektionspiloten bei Industriekunden.',
+            'Das Programm bietet eine mögliche Anknüpfung; Teilnahme und Erfolg des Zielunternehmens sind nicht belegt.', ['M5'])])]:
+        for order, (headline, fact_text, insight, ids) in enumerate(items, 1):
+            interpretations.append(dict(id='I-MI-'+module+'-'+str(order), type='module_insight',
+                section='module_insights', module=module, display_order=order, headline=headline,
+                fact_text=fact_text, fact_claim_ids=ids, statement=insight, depends_on=ids,
+                reasoning='Qualitative Einordnung ausschließlich aus den referenzierten fiktiven Belegen; Produkt-, Status- und Kriteriengrenzen bleiben erhalten.',
+                method='Modulspezifische Verdichtung der vorhandenen A-Fakten', uncertainty='Synthetischer Offline-Test; keine reale Unternehmensbewertung'))
     positioning = dict(schema_version=1, mode='interpret-v2', role='positioning', run_id=manifest['run_id'],
         company=manifest['company'], as_of=manifest['as_of'], scope=manifest['scope'], status='vollständig',
         input_fingerprint=pos_context['fingerprint'], plan_fingerprint=pos_context['plan_fingerprint'],
