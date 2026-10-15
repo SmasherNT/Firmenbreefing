@@ -7,7 +7,7 @@
   "as_of": "2026-10-13",
   "scope": "SWOT Rheinmetall-Konzern mit Fokus Flugabwehr im europäischen Markt (S/W intern, O/T extern), Stichtag 2026-10-13",
   "status": "vollständig",
-  "input_fingerprint": "38fbc2f80e2c8eff12ae48963f4b98f222a5c2ada6ab297bd977818fcc27b1ce",
+  "input_fingerprint": "5e234d24432c18b41db568486cdfcfdc1e1c5365551dd4a30c2686b4fc3280dc",
   "interpretations": [
     {
       "id": "S-ST-01",
@@ -62,17 +62,18 @@
       "id": "S-WE-01",
       "category": "Weaknesses",
       "section": "swot",
-      "statement": "Bei Flugkörpern ist Rheinmetall auf Partner angewiesen (MBDA DefendAir, Stinger, Mistral); die eigene Flugkörperfertigung mit Lockheed Martin ist erst MoU-/JV-Planung.",
+      "statement": "Die für Skyranger belegten Flugkörper-Konfigurationen stützen sich auf Partnerprodukte (MBDA DefendAir, Stinger, Mistral); die eigene SkyKnight-Lenkwaffe steht ohne Herkunfts- und Lieferbeleg im Katalog.",
       "depends_on": [
+        "I-ES-05",
         "I-MI-CLU-01",
         "C-018",
         "C-019",
         "C-014",
-        "C-034"
+        "P-SKN-01"
       ],
-      "reasoning": "Die Effektorbreite der Skyranger-Systeme jenseits der Kanonenreichweite hängt an Fremdprodukten und deren Lieferfähigkeit; den deutschen DefendAir-Vertrag hält MBDA, nicht Rheinmetall. Wettbewerber mit eigenen Flugkörpern (z. B. Diehl IRIS-T) haben hier einen Wertschöpfungsanteil, den Rheinmetall nicht abdeckt.",
-      "method": "Ableitung Wertschöpfungslücke aus Cluster-/Portfolio-Fakten",
-      "uncertainty": "Lockheed-Vorhaben unter Regierungsvorbehalt; kein SHORAD-Flugkörper als JV-Gegenstand benannt."
+      "reasoning": "Die Effektorbreite jenseits der Kanonenreichweite hängt in den belegten Konfigurationen an Fremdprodukten und deren Lieferfähigkeit; den deutschen DefendAir-Vertrag hält MBDA, nicht Rheinmetall. Der Wechsel zu DefendAir wird laut Rheinmetall zudem als Verzugsgrund genannt, die Partnerabhängigkeit wirkt also auch auf Zeitpläne.",
+      "method": "Ableitung Wertschöpfungsgrenze aus belegten Skyranger-Konfigurationen",
+      "uncertainty": "Aussage auf belegte Skyranger-Konfigurationen begrenzt; die Lockheed-Kooperation betrifft Raketen/ATACMS und ist keine SHORAD-Flugkörperlösung."
     },
     {
       "id": "S-WE-02",
@@ -90,21 +91,6 @@
       "reasoning": "Das größte Auftragsvolumen liegt bei Skyranger 30, Umsatzrealisierung und Referenzwirkung hängen daher am Hochlauf. Als Ursachen werden auch Kundenänderungen (Fahrmodul, Flugkörperwechsel) genannt, sodass der Verzug nicht allein Rheinmetall zuzurechnen ist.",
       "method": "Abgleich Auftrags- und Lieferstatus; strittige Angaben getrennt",
       "uncertainty": "Verzugsdauer widersprüchlich; Capital-Original und BAAINBw-Unterlagen nicht zugänglich."
-    },
-    {
-      "id": "S-WE-03",
-      "category": "Weaknesses",
-      "section": "swot",
-      "statement": "In mehreren Programmen ist Rheinmetall Turm- bzw. Teillieferant statt Generalunternehmer: in Österreich unter GDELS, im deutschen NNbS als ARGE-Partner neben dem Wettbewerber Diehl.",
-      "depends_on": [
-        "I-MI-CLU-03",
-        "I-MI-CLU-02",
-        "M-AT-SKR-02",
-        "C-009"
-      ],
-      "reasoning": "Marktzugang und Kundenschnittstelle hängen damit teils an Plattform- und Konsortialpartnern. Das begrenzt Steuerung der Gesamtlösung und die Wertschöpfung je Vorhaben.",
-      "method": "Rollenanalyse aus Cluster-Fakten",
-      "uncertainty": "Integrationsrolle in Dänemark laut Bericht unklar; Leistungsanteile NNbS laut gemeinsamer Mitteilung."
     },
     {
       "id": "S-OP-01",
@@ -142,11 +128,13 @@
       "depends_on": [
         "P-SKR-04",
         "T-AD-07",
-        "I-ES-03"
+        "I-ES-03",
+        "M-DE-NNBS-01",
+        "M-DE-ARM-01"
       ],
-      "reasoning": "Rheinmetall erwartete den Auftrag bereits 2025 und nun Ende 2026; belegt ist bis 13.10.2026 nur ein NNbS-Änderungsvertrag. Die Chance ist daher eine Erwartung mit offenem Zeitpunkt und Umfang.",
+      "reasoning": "Rheinmetall erwartete den Auftrag bereits 2025 und nun Ende 2026; belegt ist bis 13.10.2026 nur die Billigung eines NNbS-Änderungsvertrags durch den Haushaltsausschuss (23.09.2026), dessen Unterzeichnung nicht belegt ist. Zusätzlich erwartet Rheinmetall bis Jahresende einen Festvertrag im Programm „Arminius“, dessen Produkt nicht benannt ist und das hier keinem Skyranger-Auftrag zugeordnet wird.",
       "method": "Status-Abgleich Erwartung vs. Vertrag",
-      "uncertainty": "Planungszahlen nur medial; fehlender Fund ist kein Beleg einer Nichtvergabe."
+      "uncertainty": "Planungszahlen nur medial; fehlender Fund ist kein Beleg einer Nichtvergabe; Arminius-Zuordnung offen."
     },
     {
       "id": "S-TH-01",
@@ -165,15 +153,16 @@
       "id": "S-TH-02",
       "category": "Threats",
       "section": "swot",
-      "statement": "Nationale Industrieanforderungen beschränken den Zugang: Polen, größter SAFE-Empfänger, setzt auf das nationale Konsortium PGZ-Pilica, andere Kunden verlangen große lokale Wertschöpfungsanteile.",
+      "statement": "Lokale Wertschöpfung prägt den Marktzugang: Dänemark verlangt Offsets von über 10 Mrd. DKK, Polen beschafft Nahbereichsflugabwehr (Pilica+) über ein nationales Konsortium.",
       "depends_on": [
         "I-TEU-04",
         "I-MI-MKT-02",
-        "I-TEU-02"
+        "M-DK-GBAD-01",
+        "M-PL-PIL-01"
       ],
-      "reasoning": "Lokalisierungspflichten können Margen und Exportwertschöpfung schmälern oder Märkte verschließen. Rheinmetall reagiert mit Zusagen (NL, RO), deren Umsetzung überwiegend nicht belegt ist.",
-      "method": "Marktzugangsableitung",
-      "uncertainty": "Offset-Pflichten paketbezogen; Wirkung auf Margen nicht belegt."
+      "reasoning": "Offset-Pflichten können Wertschöpfung ins Kundenland verlagern, und nationale Konsortien können Programme für ausländische Systemanbieter verschließen. In den Niederlanden und Rumänien sieht Rheinmetall selbst große lokale Anteile vor; das ist eine Herstellerangabe, keine belegte Kundenforderung.",
+      "method": "Marktzugangsableitung aus Beschaffungsfakten",
+      "uncertainty": "Offset-Pflicht paketbezogen; Wirkung auf Rheinmetall-Margen und Umsetzung der Lokalanteile nicht belegt."
     },
     {
       "id": "S-TH-03",
