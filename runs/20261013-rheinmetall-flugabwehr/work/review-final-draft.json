@@ -4,23 +4,17 @@
  "company": "Rheinmetall AG",
  "as_of": "2026-10-13",
  "phase": "final",
- "status": "teilweise",
- "review_work_fingerprint": "f7922ed3a920ce188709c5b1d2f44721003654c8f50b558dd6e395e5c1e67666",
- "material_errors": [
-  "I-MI-CLU-01: überholte Faktverdichtung (Bundeswehr „zunächst Stinger“) – positioning.",
-  "I-RP-R-NORD: Stufe 4 statt höchster belegter Stufe 5 (Entwicklung+Produktion Skoppum laut P-REG-NO-01) – portfolio/positioning.",
-  "I-TEU-04 / I-MI-MKT-02 / S-TH-02: Herstellerzusagen zu Lokalanteilen als Kundenforderung bzw. Vergabevoraussetzung dargestellt – positioning/swot.",
-  "I-TAD-02: strittige Verzugsursachen als belegte Tatsachen ohne Zuschreibung – positioning.",
-  "S-WE-03: Schwäche nicht ausgewogen bzw. Folgerung unbelegt – swot."
- ],
+ "status": "freigegeben",
+ "review_work_fingerprint": "81896b15ee8d34cf8349dae32063ab1e28707493e25aa5554105cffa24daac64",
+ "material_errors": [],
  "review_scope": {
-  "summary": "Alle 137 neuen Ableitungen (125 I-Claims, 12 S-Claims) vollständig gegen depends_on, Planankers/Methoden, Zuschreibung und Kurzfelder geprüft. Keine neue Faktenprüfung nötig (facts_to_verify leer); alle 147 verwendeten Fakten sind unverändert A-geprüft im freigegebenen Basis-Review Runde 2 und werden ausdrücklich übernommen. Keine Webabrufe.",
+  "summary": "Runde 2: Alle 136 Ableitungen ausdrücklich entschieden. 13 geänderte I-/S-Claims vollständig neu geprüft, S-WE-03 gestrichen (Weaknesses jetzt 2 Punkte, zulässig). Die übrigen 123 per Feldvergleich mit positioning-r1/swot-r1 als inhaltlich unverändert bestätigt und mit dem r1-Ableitungsbefund übernommen. Alle Korrekturen und material_errors aus r1 sind behoben. 147 Fakten explizit aus Basis-Review r3 (freigegeben) übernommen; keine Neuprüfung von Fakten, keine Webabrufe.",
   "nonblocking_notes": [
-   "I-MI-MKT-01 und I-ES-02 nennen beim Lieferstand nur Skynex und Pilica+ vor Skyranger 30; Skyranger 35 und IRIS-T SLS liegen ebenfalls auf Stufe 4 (Ergänzung optional).",
-   "I-PM-skynex: die Italien-Übergabe im statement mit „laut Hersteller“ kennzeichnen (optional, steht in uncertainty).",
-   "Saab: M-CZ-MSH-01 zitiert in der Quelle die Nutzung von RBS 70 NG in tragbarer Form durch Tschechien; die Aussage ist nicht im A-Claim-Text enthalten und daher korrekt nicht bewertet (optionaler Faktenzusatz für market)."
+   "I-ES-05/S-WE-01: Die Formulierung „eigene SkyKnight-Lenkwaffe“ wäre als „im Rheinmetall-Katalog angebotene SkyKnight-Lenkwaffe (Herkunft nicht belegt)“ präziser.",
+   "I-TAD-01: allgemeines „Flugkörper von Partnern“ optional auf Skyranger-Konfigurationen eingrenzen (Konsistenz mit I-ES-05).",
+   "A-NORD-WA (Fakten, portfolio): country „Schweden“ für eine Mehrländeraktivität ist kosmetisch."
   ],
-  "dependency_note": "Nach den Korrekturen nur die betroffenen I-/S-Claims und deren abhängige Claims (S-WE-01 von I-ES-05/I-MI-CLU-01; S-TH-02 von I-TEU-04/I-MI-MKT-02) neu validieren und gezielt erneut prüfen; I-RP-R-NORD erst nach einem gezielten Basis-Review der Portfolio-Ergänzung neu einordnen."
+  "open_limits": "Strittiger Skyranger-Verzug und nicht belegter Bundeswehr-Großauftrag sind durchgängig als strittig bzw. als Beleggrenze dargestellt; Ukraine-Einsatzwirkung bleibt Herstellerangabe mit Gegenrecherche."
  },
  "reuse_fact_ids": [
   "C-003",
@@ -176,136 +170,115 @@
  "review_groups": [
   {
    "claim_ids": [
-    "I-TAD-02"
+    "I-ES-02"
    ],
-   "owner": "positioning",
-   "reason": "Verzugsursachen (Future Common Drive Module, DefendAir statt Stinger, größeres Radar) werden als „belegte“ Ursachen und im statement als Tatsache („Kundenänderungen und Fahrmodule … verzögert haben“) dargestellt; sie sind Rheinmetall-Angaben laut S&V/dpa (P-SKR-03, T-AD-06), BAAINBw-Unterlagen kritisieren laut Capital die Auftragnehmerleistung. Neuss als Skyranger-Standort beruht teils auf Fachmedium (C-053), die DE-Kapazität ist Herstellerziel.",
-   "action": "statement/reasoning zuschreiben: „laut Rheinmetall (via S&V/dpa) durch Kundenänderungen …; BAAINBw-Unterlagen laut Capital kritisieren die Auftragnehmerleistung“; Standorte als „laut Rheinmetall bzw. Fachmedium (Neuss)“ kennzeichnen.",
    "depth": "A",
-   "status": "Korrektur",
-   "note": "Herleitung gegen depends_on und Basis-Review geprüft; Fehler siehe reason."
-  },
-  {
-   "claim_ids": [
-    "I-MI-CLU-01"
-   ],
-   "owner": "positioning",
-   "reason": "fact_text „die Bundeswehr zunächst Stinger“ ist überholt: C-014 gibt nur die Planung der Mitteilung vom Februar 2024 wieder (Unsicherheit: durch Kundenwechsel zu DefendAir überholt); laut P-SKR-03 soll von Beginn an DefendAir genutzt werden, die ersten Systeme ggf. ohne Flugkörper.",
-   "action": "fact_text auf „Bundeswehr: ursprünglich Stinger vorgesehen, inzwischen DefendAir (MBDA, verfügbar ab 2029 laut S&V)“ ändern; P-SKR-03 in fact_claim_ids/depends_on aufnehmen.",
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "Herleitung gegen depends_on und Basis-Review geprüft; Fehler siehe reason."
-  },
-  {
-   "claim_ids": [
-    "I-TEU-04"
-   ],
-   "owner": "positioning",
-   "reason": "„die Niederlande und Rumänien verlangen bei Rheinmetall-Aufträgen große lokale Wertschöpfungsanteile“: belegt ist nur die Herstellerangabe, dass ein großer Teil der Wertschöpfung lokal erfolgen soll (T-EV-04, P-REG-RO-01, M-NL-SKR-01); eine Kundenforderung ist nur für Dänemark (Offsets) belegt, für Polen nur die Wahl eines nationalen Konsortiums.",
-   "action": "Formulierung auf „bei Rheinmetall-Aufträgen in NL und RO ist laut Hersteller ein großer lokaler Wertschöpfungsanteil vorgesehen; Dänemark verlangt Offsets“ korrigieren.",
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "Herleitung gegen depends_on und Basis-Review geprüft; Fehler siehe reason."
-  },
-  {
-   "claim_ids": [
-    "I-MI-MKT-02"
-   ],
-   "owner": "positioning",
-   "reason": "„Nationale Industriebeteiligung ist in mehreren Märkten Vergabevoraussetzung“ und „Rheinmetall reagiert mit Lokalisierungszusagen“ gehen über die Fakten hinaus: Vergabevoraussetzung nur für Dänemark (Offsets) belegt; ein Kausalzusammenhang der NL/RO-Zusagen ist nicht belegt.",
-   "action": "Auf „In Dänemark ist Offset Pflicht, Polen beschafft über ein nationales Konsortium; Rheinmetall sieht in NL/RO große lokale Anteile vor (Herstellerangabe)“ begrenzen.",
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "Herleitung gegen depends_on und Basis-Review geprüft; Fehler siehe reason."
-  },
-  {
-   "claim_ids": [
-    "S-TH-02"
-   ],
-   "owner": "swot",
-   "reason": "Gleiche Überdehnung wie I-TEU-04: „andere Kunden verlangen große lokale Wertschöpfungsanteile“ ist außer Dänemark (Offsets) nicht als Kundenforderung belegt; Polen wählte ein nationales Konsortium, eine Zugangsbeschränkung für Rheinmetall ist nicht belegt.",
-   "action": "Nach Korrektur von I-TEU-04/I-MI-MKT-02 neu formulieren (Dänemark-Offsets, polnisches Konsortium als Wettbewerbs-/Zugangsbedingung) und Abhängigkeiten aktualisieren.",
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "Herleitung gegen depends_on und Basis-Review geprüft; Fehler siehe reason."
+   "status": "geprüft",
+   "note": "Begründung jetzt vollständig: Skynex 5, Skyranger 35 (laut Hersteller), Pilica+ und IRIS-T SLS je 4 vor Skyranger 30 (3); deckt sich mit den Matrixzellen in depends_on."
   },
   {
    "claim_ids": [
     "I-ES-05"
    ],
-   "owner": "positioning",
-   "reason": "Die Verallgemeinerung „bei Flugkörpern auf Partner angewiesen“ trägt nur für die belegten Skyranger-Konfigurationen. Rheinmetall bietet laut P-SKN-01 auch die SkyKnight-C-RAM/C-PGM-Lenkwaffe an (Herkunft, Kunden und Lieferstatus nicht belegt). Außerdem zielt die Lockheed-Kooperation auf ATACMS/Raketen, nicht auf SHORAD-Flugkörper.",
-   "action": "Auf „Für Skyranger belegte Flugkörper stammen von Partnern (MBDA, Stinger, Mistral); SkyKnight im Katalog ohne Herkunfts-/Lieferbeleg“ präzisieren; Lockheed-Bezug als Raketen/ATACMS ohne SHORAD-Flugkörper kennzeichnen.",
    "depth": "A",
-   "status": "Korrektur",
-   "note": "Herleitung gegen depends_on und Basis-Review geprüft; Fehler siehe reason."
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: auf belegte Skyranger-Konfigurationen begrenzt, SkyKnight-Beleggrenze (P-SKN-01) genannt, Lockheed-Kooperation als Raketen/ATACMS ohne SHORAD-Bezug. Hinweis: „eigene SkyKnight-Lenkwaffe“ heißt hier „im Rheinmetall-Katalog“; die Herkunft bleibt laut P-SKN-01 offen (nicht blockierend)."
   },
   {
    "claim_ids": [
-    "S-WE-01"
+    "I-TAD-02"
    ],
-   "owner": "swot",
-   "reason": "Schwäche „auf Partner angewiesen“ ist für Skyranger belegt, ohne Einschränkung aber überdehnt (SkyKnight, P-SKN-01: Herkunft offen). Zusätzlich ist die Lockheed-Planung kein SHORAD-Flugkörper.",
-   "action": "Nach Korrektur I-ES-05 auf Skyranger-Konfigurationen eingrenzen und SkyKnight-Beleggrenze nennen.",
    "depth": "A",
-   "status": "Korrektur",
-   "note": "Herleitung gegen depends_on und Basis-Review geprüft; Fehler siehe reason."
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: Kapazität als Herstellerziel, Neuss als Fachmedium-Angabe; Verzugsursachen Rheinmetall (via S&V/dpa) zugeschrieben, BAAINBw-Kritik via Capital/dpa-AFX und S&V-Engpässe (M-DE-SKR-02) getrennt; als strittig gekennzeichnet."
   },
   {
    "claim_ids": [
-    "I-RP-R-NORD"
+    "I-TEU-04"
    ],
-   "owner": "portfolio",
-   "reason": "Die Methode verlangt die höchste durch A-Fakten erfüllte Stufe. P-REG-NO-01 (A, geprüft) belegt für den eigenen Standort Skoppum Entwicklung und Produktion, und A-NO-SKO beschreibt beides. Laut regionale-praesenz.md reichen Produktion und Entwicklung am selben Standort für Stufe 5; Stufe 4 unterschreitet den Beleg.",
-   "action": "portfolio: eine development-Aktivität für dieselbe site_id S-NO-SKO aufnehmen (RR-01); danach die Stufe neu einordnen (5) und next_stage_limit anpassen (positioning).",
    "depth": "A",
-   "status": "Korrektur",
-   "note": "Herleitung gegen depends_on und Basis-Review geprüft; Fehler siehe reason."
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: als Kundenforderung nur die dänischen Offsets, Polen als Konsortialmodell, NL/RO als Herstellerangabe; keine Kausalbehauptung."
+  },
+  {
+   "claim_ids": [
+    "I-PM-skynex"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Italien-Übergabe im statement jetzt als Herstellerangabe gekennzeichnet; Stufe 6 unverändert tragfähig."
   },
   {
    "claim_ids": [
     "I-PM-nnbs"
    ],
-   "owner": "positioning",
-   "reason": "„Änderungsvertrag (September 2026)“ suggeriert einen geschlossenen Vertrag; laut M-DE-NNBS-01 wurde er am 23.09.2026 nur vom Haushaltsausschuss gebilligt, die Unterzeichnung ist nicht belegt.",
-   "action": "„Änderungsvertrag am 23.09.2026 parlamentarisch gebilligt (Unterzeichnung nicht belegt)“; Stufe 4 bleibt durch den Entwicklungsvertrag 2024 getragen.",
    "depth": "A",
-   "status": "Korrektur",
-   "note": "Herleitung gegen depends_on und Basis-Review geprüft; Fehler siehe reason."
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: Änderungsvertrag nur parlamentarisch gebilligt, Unterzeichnung nicht belegt; Stufe 4 durch Entwicklungsvertrag 2024 getragen."
+  },
+  {
+   "claim_ids": [
+    "I-MI-CLU-01"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: Stinger nur ursprünglich vorgesehen, jetzt DefendAir (ab 2029 laut S&V); P-SKR-03 in fact_claim_ids/depends_on; Insight korrekt zugeschrieben."
+  },
+  {
+   "claim_ids": [
+    "I-MI-MKT-01"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Lieferstand-Vergleich jetzt vollständig und durch die zusätzlich referenzierten Matrixzellen gedeckt; Vorsprung ausdrücklich auf ein Kriterium begrenzt."
+  },
+  {
+   "claim_ids": [
+    "I-MI-MKT-02"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: DK-Pflicht, PL-Konsortium und NL/RO-Herstellerangabe getrennt; kein Kausalzusammenhang."
+  },
+  {
+   "claim_ids": [
+    "I-RP-R-NORD"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Nach Basis-Review r3 (A-NO-SKO-DEV, gleiche site_id) erfüllen eigene Produktion und Entwicklung am selben Standort Skoppum Stufe 5 nach regional-presence-v1; Kundenaktivitäten heben die Stufe korrekt nicht an; Unsicherheit nennt Herstellerangabe und Elektrooptik-Schwerpunkt."
+  },
+  {
+   "claim_ids": [
+    "S-WE-01"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: Schwäche auf belegte Skyranger-Konfigurationen begrenzt, SkyKnight-Beleggrenze und Lockheed-Abgrenzung genannt; die Wirkung auf Zeitpläne ist korrekt Rheinmetall zugeschrieben (P-SKR-03); interne Einordnung vertretbar."
   },
   {
    "claim_ids": [
     "S-OP-03"
    ],
-   "owner": "swot",
-   "reason": "Die Begründung „belegt ist … nur ein NNbS-Änderungsvertrag“ übernimmt dieselbe Ungenauigkeit (nur Billigung belegt); die Unternehmenserwartung zu „Arminius“ (M-DE-ARM-01) wird nicht genannt, obwohl sie keinem Produkt zugeordnet ist.",
-   "action": "„gebilligt“ statt „Vertrag“; optional M-DE-ARM-01 als produktneutralen Status ergänzen, ohne Skyranger-Zuordnung.",
    "depth": "A",
-   "status": "Korrektur",
-   "note": "Herleitung gegen depends_on und Basis-Review geprüft; Fehler siehe reason."
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: nur Billigung des Änderungsvertrags belegt; Arminius als Unternehmenserwartung ohne Produktzuordnung; externe Chance mit offenem Zeitpunkt."
   },
   {
    "claim_ids": [
-    "S-WE-03"
-   ],
-   "owner": "swot",
-   "reason": "Nicht ausgewogen: Belegt sind zwei Programme mit Teillieferantenrolle (AT unter GDELS; NNbS mit Diehl als Systemhaus). In den übrigen belegten Skyranger-/Skynex-Programmen (DE Skyranger 30, DK, NL, RO, IT, UA) ist Rheinmetall direkter Auftragnehmer, im NNbS hält Rheinmetall den größten Leistungsanteil (607 von rund 1.230 Mio. EUR). Die Folgerung „begrenzt Steuerung und Wertschöpfung je Vorhaben“ ist nicht belegt. Eine Rollenwahl ist ohne Beleg eines Nachteils keine interne Schwäche.",
-   "action": "Streichen oder neu fassen, z. B. „In Österreich und im NNbS liegt die Gesamtsystemverantwortung bei Partnern (GDELS bzw. Diehl); in den übrigen Programmen ist Rheinmetall direkter Auftragnehmer“; die Margenfolge nur als Unsicherheit nennen. Alternativ als externes Zugangsrisiko unter Threats führen.",
-   "depth": "A",
-   "status": "Korrektur",
-   "note": "Herleitung gegen depends_on und Basis-Review geprüft; Fehler siehe reason."
-  },
-  {
-   "claim_ids": [
-    "I-ES-01",
-    "I-ES-02",
-    "I-ES-03",
-    "I-ES-04",
-    "I-ES-06"
+    "S-TH-02"
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "Kernaussagen gegen depends_on geprüft; Zahlen/Einheiten/Zeitraum (H1 2026, Stichtag), Zuschreibung (Hersteller/Medien/BAAINBw) und strittige Punkte (Verzug, nicht belegter Großauftrag) korrekt; headline/preview ohne neue Aussagen."
+   "note": "r1-Korrektur umgesetzt: externe Bedrohung auf belegte Beschaffungsfakten (DK-Offsets, PL-Konsortium) gestützt; NL/RO als Herstellerangabe abgegrenzt; Margenwirkung als unbelegt gekennzeichnet."
+  },
+  {
+   "claim_ids": [
+    "I-TAD-01"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber r1 unverändert, gegen depends_on erneut geprüft. „Flugkörper von Partnern“ ist für die belegten Skyranger-Konfigurationen korrekt; Laser/C-PGM als Forschung bzw. Entwicklung gekennzeichnet. Für volle Konsistenz mit I-ES-05 wäre „für Skyranger belegte Flugkörper von Partnern; SkyKnight ohne Lieferbeleg“ präziser (optional, nicht blockierend)."
   },
   {
    "claim_ids": [
@@ -315,29 +288,31 @@
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "Highlights direkt auf A-Fakten; Wert, Einheit, Bezugsobjekt (Segment/Produkt), Zeitraum und Ziel-/Medienkennzeichnung korrekt (Backlog 30.06.2026; 93 Systeme laut S&V Jan. 2026; 400 p. a. als Herstellerziel)."
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Highlights direkt auf A-Fakten; Wert, Einheit, Bezugsobjekt (Segment/Produkt), Zeitraum und Ziel-/Medienkennzeichnung korrekt (Backlog 30.06.2026; 93 Systeme laut S&V Jan. 2026; 400 p. a. als Herstellerziel)."
   },
   {
    "claim_ids": [
-    "I-TAD-01",
-    "I-TAD-03",
-    "I-TAD-04"
+    "I-ES-01",
+    "I-ES-03",
+    "I-ES-04",
+    "I-ES-06"
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "Themenkarten gegen Fakten geprüft; Herstellerangaben und Gegenrecherche (Ukraine) korrekt getrennt; kein Gesamtranking."
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Kernaussagen gegen depends_on geprüft; Zahlen/Einheiten/Zeitraum (H1 2026, Stichtag), Zuschreibung (Hersteller/Medien/BAAINBw) und strittige Punkte (Verzug, nicht belegter Großauftrag) korrekt; headline/preview ohne neue Aussagen."
   },
   {
    "claim_ids": [
-    "I-TEU-01",
-    "I-TEU-02",
-    "I-TEU-03",
-    "I-TEU-05",
-    "I-TEU-06"
+    "I-MI-CLU-02",
+    "I-MI-CLU-03",
+    "I-MI-MKT-03",
+    "I-MI-POR-01",
+    "I-MI-POR-02",
+    "I-MI-POR-03"
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "Marktthemen gegen M-Fakten geprüft; SIPRI als Budgetkontext ohne Segmentvolumen, SAFE/EDIP-Regeln und Zuteilungen korrekt."
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Modul-Keyfact gegen fact_claim_ids und depends_on geprüft; Faktverdichtung ohne neue Aussage, Insight als Interpretation erkennbar, Modulzuordnung und Reihenfolge korrekt."
   },
   {
    "claim_ids": [
@@ -398,7 +373,7 @@
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "Matrixzelle gegen Planankers (comparison-plan v1) und depends_on geprüft: höchste vollständig belegte Stufe, Begründung der nächsthöheren Stufe, Zählregel und Kurztexte (headline/preview) ohne neue Aussagen; Lücken als „nicht öffentlich belegt“ ohne Schwächenaussage. Abwägungen geprüft: Skyranger 30 procurement=3 (Verifikationsmuster als Prototyp, methodisch begründet und dokumentiert); Thales/Saab konsistent auf Systemebene (Familie/Komponente nicht übertragen); Tridon eu_customers=1 mit dokumentierter Alternativauslegung."
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Matrixzelle gegen Planankers (comparison-plan v1) und depends_on geprüft: höchste vollständig belegte Stufe, Begründung der nächsthöheren Stufe, Zählregel und Kurztexte (headline/preview) ohne neue Aussagen; Lücken als „nicht öffentlich belegt“ ohne Schwächenaussage. Abwägungen geprüft: Skyranger 30 procurement=3 (Verifikationsmuster als Prototyp, methodisch begründet und dokumentiert); Thales/Saab konsistent auf Systemebene (Familie/Komponente nicht übertragen); Tridon eu_customers=1 mit dokumentierter Alternativauslegung."
   },
   {
    "claim_ids": [
@@ -421,7 +396,6 @@
     "I-PM-skyguard_skyshield",
     "I-PM-skyknight",
     "I-PM-skymaster",
-    "I-PM-skynex",
     "I-PM-skyranger30",
     "I-PM-skyranger35",
     "I-PM-space_sar",
@@ -433,21 +407,7 @@
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "Reifeeinordnung nach portfolio-maturity-v1 geprüft: höchster konkret belegter Meilenstein, nächsthöhere Stufe begründet, Herstellerangaben gekennzeichnet; unbestimmbare Produkte ohne Unreifeaussage. Skynex 6: Anker „wiederholte Auslieferung“ formal erfüllt (UA offiziell zwei, IT eine Batterie), kleine Stückzahl und Herstellerangaben in uncertainty transparent. UGV 4: GOAT-Teilnahme/Vorauswahl als Pilot/Validierung laut Hersteller gekennzeichnet, kein Serienauftrag."
-  },
-  {
-   "claim_ids": [
-    "I-MI-CLU-02",
-    "I-MI-CLU-03",
-    "I-MI-MKT-01",
-    "I-MI-MKT-03",
-    "I-MI-POR-01",
-    "I-MI-POR-02",
-    "I-MI-POR-03"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Modul-Keyfact gegen fact_claim_ids und depends_on geprüft; Faktverdichtung ohne neue Aussage, Insight als Interpretation erkennbar, Modulzuordnung und Reihenfolge korrekt."
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Reifeeinordnung nach portfolio-maturity-v1 geprüft: höchster konkret belegter Meilenstein, nächsthöhere Stufe begründet, Herstellerangaben gekennzeichnet; unbestimmbare Produkte ohne Unreifeaussage. Skynex 6: Anker „wiederholte Auslieferung“ formal erfüllt (UA offiziell zwei, IT eine Batterie), kleine Stückzahl und Herstellerangaben in uncertainty transparent. UGV 4: GOAT-Teilnahme/Vorauswahl als Pilot/Validierung laut Hersteller gekennzeichnet, kein Serienauftrag."
   },
   {
    "claim_ids": [
@@ -467,7 +427,28 @@
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "Präsenzstufe nach regional-presence-v1 geprüft: Eigen-/JV-/Kundenrolle, Status und Standortzählung; JV-Werke nicht als own, Kundenaktivität hebt Stufe nicht; höchste erfüllte Stufe korrekt."
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Präsenzstufe nach regional-presence-v1 geprüft: Eigen-/JV-/Kundenrolle, Status und Standortzählung; JV-Werke nicht als own, Kundenaktivität hebt Stufe nicht; höchste erfüllte Stufe korrekt."
+  },
+  {
+   "claim_ids": [
+    "I-TAD-03",
+    "I-TAD-04"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Themenkarten gegen Fakten geprüft; Herstellerangaben und Gegenrecherche (Ukraine) korrekt getrennt; kein Gesamtranking."
+  },
+  {
+   "claim_ids": [
+    "I-TEU-01",
+    "I-TEU-02",
+    "I-TEU-03",
+    "I-TEU-05",
+    "I-TEU-06"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Marktthemen gegen M-Fakten geprüft; SIPRI als Budgetkontext ohne Segmentvolumen, SAFE/EDIP-Regeln und Zuteilungen korrekt."
   },
   {
    "claim_ids": [
@@ -482,7 +463,7 @@
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "SWOT-Punkt gegen I-/A-Abhängigkeiten geprüft; Zuordnung intern/extern korrekt, keine Datenlücke als Schwäche, Status und Zeitbezug erhalten. S-ST-02 bleibt auf Einzelkriterien begrenzt (uncertainty: kein Gesamtvorsprung) und ist so ausgewogen."
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: SWOT-Punkt gegen I-/A-Abhängigkeiten geprüft; Zuordnung intern/extern korrekt, keine Datenlücke als Schwäche, Status und Zeitbezug erhalten. S-ST-02 bleibt auf Einzelkriterien begrenzt (uncertainty: kein Gesamtvorsprung) und ist so ausgewogen."
   }
  ]
 }
