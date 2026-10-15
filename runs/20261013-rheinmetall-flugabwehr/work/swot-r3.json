@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "mode": "interpret-v2",
+  "role": "swot",
+  "run_id": "20261013-rheinmetall-flugabwehr",
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-13",
+  "scope": "SWOT Rheinmetall-Konzern mit Fokus Flugabwehr im europäischen Markt (S/W intern, O/T extern), Stichtag 2026-10-13",
+  "status": "vollständig",
+  "input_fingerprint": "5e234d24432c18b41db568486cdfcfdc1e1c5365551dd4a30c2686b4fc3280dc",
+  "interpretations": [
+    {
+      "id": "S-ST-01",
+      "category": "Strengths",
+      "section": "swot",
+      "statement": "Rheinmetall deckt in der Nahbereichsflugabwehr Kanone, programmierbare Airburst-Munition, Radar/Sensorik und Skymaster-C2 mit eigenen Konzerngesellschaften ab.",
+      "depends_on": [
+        "P-SKR-01",
+        "P-SKX-01",
+        "P-AHD-01",
+        "P-SNS-01",
+        "P-SKM-01",
+        "P-REG-IT-01",
+        "P-REG-CH-01",
+        "P-SKX-04"
+      ],
+      "reasoning": "Die eigene Abdeckung zentraler Kettenglieder (Zürich, Rom) erlaubt Systemangebote aus einer Hand und ein Munitions-Folgegeschäft (Mittelkaliber für Skynex/Skyranger). Der Vorteil liegt in Wertschöpfungstiefe und Systemverantwortung, nicht in belegter technischer Überlegenheit.",
+      "method": "Ableitung Wertschöpfungstiefe aus Portfolio-Fakten",
+      "uncertainty": "Leistungs- und Kostenvorteile (z. B. AHEAD) sind Herstellerangaben ohne unabhängigen Benchmark."
+    },
+    {
+      "id": "S-ST-02",
+      "category": "Strengths",
+      "section": "swot",
+      "statement": "Im geprüften Vergleichsfeld hat Rheinmetall mit Skyranger 30 die breiteste europäische Vertragsbasis (DE, AT, DK, NL) und mit Skynex den höchsten belegten Lieferstand; der Air-Defence-Backlog stieg auf 4.218 Mio. EUR.",
+      "depends_on": [
+        "I-ES-02",
+        "I-MX-rhm_skyranger30-eu_customers",
+        "I-MX-rhm_skynex-procurement_status",
+        "I-ES-01"
+      ],
+      "reasoning": "Mehrere staatliche Erstkunden und wiederholte Skynex-Lieferungen (Ukraine, Italien) sind Referenzen für weitere Vergaben. Der gestiegene Backlog sichert Auslastung für den Kapazitätsausbau.",
+      "method": "Verdichtung geprüfter Positionierungs-Claims (Matrix, Kennzahlen)",
+      "uncertainty": "Kriteriumsvorsprung ist kein Gesamtvorsprung; Backlog ist eine unternehmensdefinierte Kennzahl."
+    },
+    {
+      "id": "S-ST-03",
+      "category": "Strengths",
+      "section": "swot",
+      "statement": "Eigene Fahrzeug- und Munitionsgeschäfte ermöglichen Paketangebote aus Plattform und Flugabwehr, wie im rumänischen SAFE-Paket (Lynx plus 24 Skyranger 35 und sieben Skynex).",
+      "depends_on": [
+        "I-MI-POR-03",
+        "C-024",
+        "T-EV-07",
+        "P-SKR-07"
+      ],
+      "reasoning": "Kunden, die Plattformen und Flugabwehr gemeinsam beschaffen, können von Rheinmetall ein integriertes Paket erhalten; Rumänien belegt dies als tatsächlichen Auftrag. Der Skyranger-Turm ist zudem auf Lynx, Boxer und Lkw integrierbar.",
+      "method": "Ableitung aus Portfolio-/Auftragsfakten",
+      "uncertainty": "Synergie- oder Kostenwirkung ist nicht belegt; Stückzahlen Rumänien nur laut Hersteller."
+    },
+    {
+      "id": "S-WE-01",
+      "category": "Weaknesses",
+      "section": "swot",
+      "statement": "Die für Skyranger belegten Flugkörper-Konfigurationen stützen sich auf Partnerprodukte (MBDA DefendAir, Stinger, Mistral); die eigene SkyKnight-Lenkwaffe steht ohne Herkunfts- und Lieferbeleg im Katalog.",
+      "depends_on": [
+        "I-ES-05",
+        "I-MI-CLU-01",
+        "C-018",
+        "C-019",
+        "C-014",
+        "P-SKN-01"
+      ],
+      "reasoning": "Die Effektorbreite jenseits der Kanonenreichweite hängt in den belegten Konfigurationen an Fremdprodukten und deren Lieferfähigkeit; den deutschen DefendAir-Vertrag hält MBDA, nicht Rheinmetall. Der Wechsel zu DefendAir wird laut Rheinmetall zudem als Verzugsgrund genannt, die Partnerabhängigkeit wirkt also auch auf Zeitpläne.",
+      "method": "Ableitung Wertschöpfungsgrenze aus belegten Skyranger-Konfigurationen",
+      "uncertainty": "Aussage auf belegte Skyranger-Konfigurationen begrenzt; die Lockheed-Kooperation betrifft Raketen/ATACMS und ist keine SHORAD-Flugkörperlösung."
+    },
+    {
+      "id": "S-WE-02",
+      "category": "Weaknesses",
+      "section": "swot",
+      "statement": "Der Skyranger-30-Serienhochlauf ist bis zum Stichtag nicht nachgewiesen: Die Bundeswehr-Serie ist verzögert (strittig: laut Rheinmetall rund sechs Monate, laut Medien/BAAINBw-Unterlagen bis zu 18 Monate), und die Fertigung ist nur als Kapazitätsziel belegt.",
+      "depends_on": [
+        "I-MI-POR-02",
+        "I-MX-rhm_skyranger30-procurement_status",
+        "I-MX-rhm_skyranger30-production",
+        "P-SKR-03",
+        "T-AD-06",
+        "C-016"
+      ],
+      "reasoning": "Das größte Auftragsvolumen liegt bei Skyranger 30, Umsatzrealisierung und Referenzwirkung hängen daher am Hochlauf. Als Ursachen werden auch Kundenänderungen (Fahrmodul, Flugkörperwechsel) genannt, sodass der Verzug nicht allein Rheinmetall zuzurechnen ist.",
+      "method": "Abgleich Auftrags- und Lieferstatus; strittige Angaben getrennt",
+      "uncertainty": "Verzugsdauer widersprüchlich; Capital-Original und BAAINBw-Unterlagen nicht zugänglich."
+    },
+    {
+      "id": "S-OP-01",
+      "category": "Opportunities",
+      "section": "swot",
+      "statement": "Stark steigende Militärausgaben in Fokusmärkten und die European Sky Shield Initiative (21 Länder) schaffen Nachfrage, in der Rheinmetall Skyranger als zentralen ESSI-Bestandteil positioniert.",
+      "depends_on": [
+        "I-TEU-06",
+        "I-TEU-05",
+        "T-AD-02"
+      ],
+      "reasoning": "Rheinmetall selbst beziffert das Air-Defence-Umsatzpotenzial 2030 auf 3–4 Mrd. EUR und nennt ESSI/Skyranger als Wachstumstreiber. Ein Segmentvolumen ist aus den Militärausgaben nicht ableitbar, die Chance ist daher qualitativ.",
+      "method": "Marktumfeld-Ableitung; Unternehmensziel gekennzeichnet",
+      "uncertainty": "ESSI-Teilnehmerzahl Stand Mai 2024; Umsatzpotenzial ist Unternehmensziel."
+    },
+    {
+      "id": "S-OP-02",
+      "category": "Opportunities",
+      "section": "swot",
+      "statement": "SAFE und EDIP begünstigen europäische Wertschöpfung (max. 35 % Drittstaatenkomponenten) und konzentrieren Mittel auf Ost- und Südeuropa, wo Rheinmetall mit Rumänien bereits einen SAFE-Auftrag hält.",
+      "depends_on": [
+        "I-TEU-01",
+        "I-TEU-02",
+        "I-ES-06"
+      ],
+      "reasoning": "Europäische Herstellung in Deutschland, Schweiz und Italien kann gegenüber außereuropäischen Anbietern im SAFE-Rahmen vorteilhaft sein. Der rumänische Auftrag zeigt, dass diese Finanzierung bereits in Vergaben mündet.",
+      "method": "Regulierungs-/Finanzierungsableitung",
+      "uncertainty": "Zuteilung vorläufig; Flugabwehranteil je Land nicht aufgeschlüsselt; Behandlung schweizerischer Wertschöpfung im SAFE-Rahmen nicht geprüft."
+    },
+    {
+      "id": "S-OP-03",
+      "category": "Opportunities",
+      "section": "swot",
+      "statement": "Ein möglicher Bundeswehr-Großauftrag für Skyranger 30 (laut Medien 561 Systeme, rund 9 Mrd. EUR) würde die Serienbasis stark erweitern, ist bis zum Stichtag aber nicht vergeben.",
+      "depends_on": [
+        "P-SKR-04",
+        "T-AD-07",
+        "I-ES-03",
+        "M-DE-NNBS-01",
+        "M-DE-ARM-01"
+      ],
+      "reasoning": "Rheinmetall erwartete den Auftrag bereits 2025 und nun Ende 2026; belegt ist bis 13.10.2026 nur die Billigung eines NNbS-Änderungsvertrags durch den Haushaltsausschuss (23.09.2026), dessen Unterzeichnung nicht belegt ist. Zusätzlich erwartet Rheinmetall bis Jahresende einen Festvertrag im Programm „Arminius“, dessen Produkt nicht benannt ist und das hier keinem Skyranger-Auftrag zugeordnet wird.",
+      "method": "Status-Abgleich Erwartung vs. Vertrag",
+      "uncertainty": "Planungszahlen nur medial; fehlender Fund ist kein Beleg einer Nichtvergabe; Arminius-Zuordnung offen."
+    },
+    {
+      "id": "S-TH-01",
+      "category": "Threats",
+      "section": "swot",
+      "statement": "Europäische Kunden vergeben Nah-/Kurzstreckenflugabwehr parallel an mehrere Anbieter (u. a. Saab RBS 70 NG/MSHORAD, Diehl IRIS-T SLS, BAE Tridon Mk2, MBDA VL MICA), sodass Rheinmetall keine Exklusivposition hat.",
+      "depends_on": [
+        "I-MI-MKT-03",
+        "I-TEU-03"
+      ],
+      "reasoning": "Schweden, Tschechien, Litauen und Dänemark zeigen Mehrhersteller-Beschaffungen auch ohne oder neben Skyranger. Wettbewerber können so Anteile in denselben Budgets gewinnen.",
+      "method": "Wettbewerbsableitung aus Marktfakten",
+      "uncertainty": "Peerauswahl begrenzt; NASAMS, ASELSAN, Hanwha u. a. nicht verglichen."
+    },
+    {
+      "id": "S-TH-02",
+      "category": "Threats",
+      "section": "swot",
+      "statement": "Lokale Wertschöpfung prägt den Marktzugang: Dänemark verlangt Offsets von über 10 Mrd. DKK, Polen beschafft Nahbereichsflugabwehr (Pilica+) über ein nationales Konsortium.",
+      "depends_on": [
+        "I-TEU-04",
+        "I-MI-MKT-02",
+        "M-DK-GBAD-01",
+        "M-PL-PIL-01"
+      ],
+      "reasoning": "Offset-Pflichten können Wertschöpfung ins Kundenland verlagern, und nationale Konsortien können Programme für ausländische Systemanbieter verschließen. In den Niederlanden und Rumänien sieht Rheinmetall selbst große lokale Anteile vor; das ist eine Herstellerangabe, keine belegte Kundenforderung.",
+      "method": "Marktzugangsableitung aus Beschaffungsfakten",
+      "uncertainty": "Offset-Pflicht paketbezogen; Wirkung auf Rheinmetall-Margen und Umsetzung der Lokalanteile nicht belegt."
+    },
+    {
+      "id": "S-TH-03",
+      "category": "Threats",
+      "section": "swot",
+      "statement": "Zeitpunkt und Umfang zentraler Aufträge hängen an staatlichen Beschaffungs- und Haushaltsentscheidungen; der deutsche Skyranger-Großauftrag ist trotz Ankündigung nicht vergeben, die Bundeswehr änderte zudem Anforderungen im laufenden Vertrag.",
+      "depends_on": [
+        "I-ES-03",
+        "M-DE-NNBS-01",
+        "T-AD-06",
+        "P-SKR-03"
+      ],
+      "reasoning": "Verschiebungen verlagern erwartete Umsätze und belasten die Auslastung der im Aufbau befindlichen Kapazitäten. Kundenänderungen (Fahrmodul B0, Flugkörperwechsel) können Lieferpläne weiter verschieben.",
+      "method": "Ableitung Auftraggeberrisiko aus Status-Fakten",
+      "uncertainty": "Haushaltsausschuss-Termine nach Stichtag offen."
+    }
+  ],
+  "research_requests": [
+    {
+      "id": "RR-SWOT-01",
+      "target_role": "context",
+      "question": "Gibt es eine Originalquelle (BAAINBw/BMVg oder Rheinmetall) zur Dauer des Serienverzugs Skyranger 30 Bundeswehr, die den Widerspruch 6 vs. bis zu 18 Monate auflöst?",
+      "related_claim_ids": [
+        "P-SKR-03",
+        "T-AD-06",
+        "C-016",
+        "M-DE-SKR-02"
+      ],
+      "blocking": false
+    },
+    {
+      "id": "RR-SWOT-02",
+      "target_role": "market",
+      "question": "Werden in der Schweiz gefertigte Komponenten im SAFE-Rahmen als EU/EWR/EFTA-Ursprung gezählt (Relevanz für Rheinmetall Air Defence AG Zürich)?",
+      "related_claim_ids": [
+        "M-EU-SAFE-01",
+        "P-REG-CH-01"
+      ],
+      "blocking": false
+    }
+  ],
+  "shared_limitations": [
+    "Produkt-, Leistungs-, Kapazitäts- und Lieferangaben sind überwiegend Herstellerangaben; Kapazitätsziele und Bestellungen sind keine erreichte Serienlieferung.",
+    "Vergleiche gelten nur für das im Vergleichsplan erfasste Peerfeld und einzelne Kriterien; kein Gesamtranking.",
+    "Datenlücken sind nicht als Schwächen gewertet; Militärausgaben sind kein Segmentvolumen Flugabwehr.",
+    "Berichtsstand H1 2026; Q3 2026 erscheint nach dem Stichtag."
+  ]
+}

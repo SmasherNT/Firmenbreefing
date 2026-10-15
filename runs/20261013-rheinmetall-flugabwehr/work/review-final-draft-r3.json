@@ -1,0 +1,469 @@
+{
+ "schema_version": 1,
+ "run_id": "20261013-rheinmetall-flugabwehr",
+ "company": "Rheinmetall AG",
+ "as_of": "2026-10-13",
+ "phase": "final",
+ "status": "freigegeben",
+ "review_work_fingerprint": "81896b15ee8d34cf8349dae32063ab1e28707493e25aa5554105cffa24daac64",
+ "material_errors": [],
+ "review_scope": {
+  "summary": "Runde 2: Alle 136 Ableitungen ausdrücklich entschieden. 13 geänderte I-/S-Claims vollständig neu geprüft, S-WE-03 gestrichen (Weaknesses jetzt 2 Punkte, zulässig). Die übrigen 123 per Feldvergleich mit positioning-r1/swot-r1 als inhaltlich unverändert bestätigt und mit dem r1-Ableitungsbefund übernommen. Alle Korrekturen und material_errors aus r1 sind behoben. 147 Fakten explizit aus Basis-Review r3 (freigegeben) übernommen; keine Neuprüfung von Fakten, keine Webabrufe.",
+  "nonblocking_notes": [
+   "I-ES-05/S-WE-01: Die Formulierung „eigene SkyKnight-Lenkwaffe“ wäre als „im Rheinmetall-Katalog angebotene SkyKnight-Lenkwaffe (Herkunft nicht belegt)“ präziser.",
+   "I-TAD-01: allgemeines „Flugkörper von Partnern“ optional auf Skyranger-Konfigurationen eingrenzen (Konsistenz mit I-ES-05).",
+   "A-NORD-WA (Fakten, portfolio): country „Schweden“ für eine Mehrländeraktivität ist kosmetisch."
+  ],
+  "open_limits": "Strittiger Skyranger-Verzug und nicht belegter Bundeswehr-Großauftrag sind durchgängig als strittig bzw. als Beleggrenze dargestellt; Ukraine-Einsatzwirkung bleibt Herstellerangabe mit Gegenrecherche."
+ },
+ "reuse_fact_ids": [
+  "C-003",
+  "C-004",
+  "C-005",
+  "C-007",
+  "C-008",
+  "C-009",
+  "C-010",
+  "C-011",
+  "C-013",
+  "C-014",
+  "C-015",
+  "C-016",
+  "C-017",
+  "C-018",
+  "C-019",
+  "C-020",
+  "C-021",
+  "C-022",
+  "C-023",
+  "C-024",
+  "C-025",
+  "C-026",
+  "C-027",
+  "C-028",
+  "C-029",
+  "C-033",
+  "C-034",
+  "C-037",
+  "C-042",
+  "C-053",
+  "M-AT-ESSI-01",
+  "M-AT-SKR-01",
+  "M-AT-SKR-02",
+  "M-CZ-MSH-01",
+  "M-DE-ARM-01",
+  "M-DE-IRIS-01",
+  "M-DE-IRIS-02",
+  "M-DE-NNBS-01",
+  "M-DE-SKR-01",
+  "M-DE-SKR-02",
+  "M-DIEHL-01",
+  "M-DK-GBAD-01",
+  "M-DK-IRIS-01",
+  "M-DK-SAMPT-01",
+  "M-DK-VLM-01",
+  "M-EU-EDIP-01",
+  "M-EU-SAFE-01",
+  "M-EU-SAFE-02",
+  "M-EU-SAFE-UK-01",
+  "M-IT-A2CS-01",
+  "M-LT-MSH-01",
+  "M-MKT-SIPRI-00",
+  "M-MKT-SIPRI-DE",
+  "M-MKT-SIPRI-DK",
+  "M-MKT-SIPRI-PL",
+  "M-NL-SKR-01",
+  "M-PL-NAREW-01",
+  "M-PL-PIL-01",
+  "M-PL-PIL-02",
+  "M-SAAB-01",
+  "M-SE-IRIS-01",
+  "M-SE-RBS-01",
+  "M-SE-TRI-01",
+  "M-SKR30-ARCH-01",
+  "M-THA-01",
+  "M-THA-02",
+  "M-UK-SHORAD-01",
+  "P-AD-01",
+  "P-AD-07",
+  "P-AD-08",
+  "P-AD-09",
+  "P-AHD-01",
+  "P-CUAS-01",
+  "P-CUAS-02",
+  "P-CUAS-03",
+  "P-DS-01",
+  "P-DS-02",
+  "P-DS-03",
+  "P-DS-04",
+  "P-DS-05",
+  "P-HEL-01",
+  "P-NAV-01",
+  "P-NS-01",
+  "P-NS-02",
+  "P-NS-03",
+  "P-PS-01",
+  "P-REG-AU-01",
+  "P-REG-CA-01",
+  "P-REG-CH-01",
+  "P-REG-DE-01",
+  "P-REG-ES-01",
+  "P-REG-EU-01",
+  "P-REG-HR-01",
+  "P-REG-HU-01",
+  "P-REG-IT-01",
+  "P-REG-JV-01",
+  "P-REG-NO-01",
+  "P-REG-OWN-01",
+  "P-REG-PL-01",
+  "P-REG-RO-01",
+  "P-REG-SG-01",
+  "P-REG-UA-01",
+  "P-REG-UK-01",
+  "P-REG-US-01",
+  "P-REG-ZA-01",
+  "P-RGM-01",
+  "P-SKM-01",
+  "P-SKN-01",
+  "P-SKR-01",
+  "P-SKR-02",
+  "P-SKR-03",
+  "P-SKR-04",
+  "P-SKR-05",
+  "P-SKR-06",
+  "P-SKR-07",
+  "P-SKX-01",
+  "P-SKX-02",
+  "P-SKX-03",
+  "P-SKX-04",
+  "P-SNS-01",
+  "P-SNS-02",
+  "P-STAT-01",
+  "P-STR-03",
+  "P-SVC-01",
+  "P-VS-01",
+  "P-VS-03",
+  "P-VS-04",
+  "P-VS-05",
+  "P-WA-01",
+  "P-WA-02",
+  "P-WA-03",
+  "T-AD-01",
+  "T-AD-02",
+  "T-AD-03",
+  "T-AD-05",
+  "T-AD-06",
+  "T-AD-07",
+  "T-EV-01",
+  "T-EV-04",
+  "T-EV-05",
+  "T-EV-06",
+  "T-EV-07",
+  "T-EV-08",
+  "T-EV-09",
+  "T-EV-10",
+  "T-FIN-05",
+  "T-FIN-09"
+ ],
+ "fact_groups": [],
+ "source_checks": [],
+ "review_groups": [
+  {
+   "claim_ids": [
+    "I-ES-02"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Begründung jetzt vollständig: Skynex 5, Skyranger 35 (laut Hersteller), Pilica+ und IRIS-T SLS je 4 vor Skyranger 30 (3); deckt sich mit den Matrixzellen in depends_on."
+  },
+  {
+   "claim_ids": [
+    "I-ES-05"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: auf belegte Skyranger-Konfigurationen begrenzt, SkyKnight-Beleggrenze (P-SKN-01) genannt, Lockheed-Kooperation als Raketen/ATACMS ohne SHORAD-Bezug. Hinweis: „eigene SkyKnight-Lenkwaffe“ heißt hier „im Rheinmetall-Katalog“; die Herkunft bleibt laut P-SKN-01 offen (nicht blockierend)."
+  },
+  {
+   "claim_ids": [
+    "I-TAD-02"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: Kapazität als Herstellerziel, Neuss als Fachmedium-Angabe; Verzugsursachen Rheinmetall (via S&V/dpa) zugeschrieben, BAAINBw-Kritik via Capital/dpa-AFX und S&V-Engpässe (M-DE-SKR-02) getrennt; als strittig gekennzeichnet."
+  },
+  {
+   "claim_ids": [
+    "I-TEU-04"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: als Kundenforderung nur die dänischen Offsets, Polen als Konsortialmodell, NL/RO als Herstellerangabe; keine Kausalbehauptung."
+  },
+  {
+   "claim_ids": [
+    "I-PM-skynex"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Italien-Übergabe im statement jetzt als Herstellerangabe gekennzeichnet; Stufe 6 unverändert tragfähig."
+  },
+  {
+   "claim_ids": [
+    "I-PM-nnbs"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: Änderungsvertrag nur parlamentarisch gebilligt, Unterzeichnung nicht belegt; Stufe 4 durch Entwicklungsvertrag 2024 getragen."
+  },
+  {
+   "claim_ids": [
+    "I-MI-CLU-01"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: Stinger nur ursprünglich vorgesehen, jetzt DefendAir (ab 2029 laut S&V); P-SKR-03 in fact_claim_ids/depends_on; Insight korrekt zugeschrieben."
+  },
+  {
+   "claim_ids": [
+    "I-MI-MKT-01"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Lieferstand-Vergleich jetzt vollständig und durch die zusätzlich referenzierten Matrixzellen gedeckt; Vorsprung ausdrücklich auf ein Kriterium begrenzt."
+  },
+  {
+   "claim_ids": [
+    "I-MI-MKT-02"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: DK-Pflicht, PL-Konsortium und NL/RO-Herstellerangabe getrennt; kein Kausalzusammenhang."
+  },
+  {
+   "claim_ids": [
+    "I-RP-R-NORD"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Nach Basis-Review r3 (A-NO-SKO-DEV, gleiche site_id) erfüllen eigene Produktion und Entwicklung am selben Standort Skoppum Stufe 5 nach regional-presence-v1; Kundenaktivitäten heben die Stufe korrekt nicht an; Unsicherheit nennt Herstellerangabe und Elektrooptik-Schwerpunkt."
+  },
+  {
+   "claim_ids": [
+    "S-WE-01"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: Schwäche auf belegte Skyranger-Konfigurationen begrenzt, SkyKnight-Beleggrenze und Lockheed-Abgrenzung genannt; die Wirkung auf Zeitpläne ist korrekt Rheinmetall zugeschrieben (P-SKR-03); interne Einordnung vertretbar."
+  },
+  {
+   "claim_ids": [
+    "S-OP-03"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: nur Billigung des Änderungsvertrags belegt; Arminius als Unternehmenserwartung ohne Produktzuordnung; externe Chance mit offenem Zeitpunkt."
+  },
+  {
+   "claim_ids": [
+    "S-TH-02"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "r1-Korrektur umgesetzt: externe Bedrohung auf belegte Beschaffungsfakten (DK-Offsets, PL-Konsortium) gestützt; NL/RO als Herstellerangabe abgegrenzt; Margenwirkung als unbelegt gekennzeichnet."
+  },
+  {
+   "claim_ids": [
+    "I-TAD-01"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber r1 unverändert, gegen depends_on erneut geprüft. „Flugkörper von Partnern“ ist für die belegten Skyranger-Konfigurationen korrekt; Laser/C-PGM als Forschung bzw. Entwicklung gekennzeichnet. Für volle Konsistenz mit I-ES-05 wäre „für Skyranger belegte Flugkörper von Partnern; SkyKnight ohne Lieferbeleg“ präziser (optional, nicht blockierend)."
+  },
+  {
+   "claim_ids": [
+    "I-EH-01",
+    "I-EH-02",
+    "I-EH-03"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Highlights direkt auf A-Fakten; Wert, Einheit, Bezugsobjekt (Segment/Produkt), Zeitraum und Ziel-/Medienkennzeichnung korrekt (Backlog 30.06.2026; 93 Systeme laut S&V Jan. 2026; 400 p. a. als Herstellerziel)."
+  },
+  {
+   "claim_ids": [
+    "I-ES-01",
+    "I-ES-03",
+    "I-ES-04",
+    "I-ES-06"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Kernaussagen gegen depends_on geprüft; Zahlen/Einheiten/Zeitraum (H1 2026, Stichtag), Zuschreibung (Hersteller/Medien/BAAINBw) und strittige Punkte (Verzug, nicht belegter Großauftrag) korrekt; headline/preview ohne neue Aussagen."
+  },
+  {
+   "claim_ids": [
+    "I-MI-CLU-02",
+    "I-MI-CLU-03",
+    "I-MI-MKT-03",
+    "I-MI-POR-01",
+    "I-MI-POR-02",
+    "I-MI-POR-03"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Modul-Keyfact gegen fact_claim_ids und depends_on geprüft; Faktverdichtung ohne neue Aussage, Insight als Interpretation erkennbar, Modulzuordnung und Reihenfolge korrekt."
+  },
+  {
+   "claim_ids": [
+    "I-MX-bae_tridon-architecture",
+    "I-MX-bae_tridon-eu_customers",
+    "I-MX-bae_tridon-integration",
+    "I-MX-bae_tridon-local_industry",
+    "I-MX-bae_tridon-procurement_status",
+    "I-MX-bae_tridon-production",
+    "I-MX-diehl_irist_sls-architecture",
+    "I-MX-diehl_irist_sls-eu_customers",
+    "I-MX-diehl_irist_sls-integration",
+    "I-MX-diehl_irist_sls-local_industry",
+    "I-MX-diehl_irist_sls-procurement_status",
+    "I-MX-diehl_irist_sls-production",
+    "I-MX-mbda_vlmica-architecture",
+    "I-MX-mbda_vlmica-eu_customers",
+    "I-MX-mbda_vlmica-integration",
+    "I-MX-mbda_vlmica-local_industry",
+    "I-MX-mbda_vlmica-procurement_status",
+    "I-MX-mbda_vlmica-production",
+    "I-MX-pgz_pilica-architecture",
+    "I-MX-pgz_pilica-eu_customers",
+    "I-MX-pgz_pilica-integration",
+    "I-MX-pgz_pilica-local_industry",
+    "I-MX-pgz_pilica-procurement_status",
+    "I-MX-pgz_pilica-production",
+    "I-MX-rhm_skynex-architecture",
+    "I-MX-rhm_skynex-eu_customers",
+    "I-MX-rhm_skynex-integration",
+    "I-MX-rhm_skynex-local_industry",
+    "I-MX-rhm_skynex-procurement_status",
+    "I-MX-rhm_skynex-production",
+    "I-MX-rhm_skyranger30-architecture",
+    "I-MX-rhm_skyranger30-eu_customers",
+    "I-MX-rhm_skyranger30-integration",
+    "I-MX-rhm_skyranger30-local_industry",
+    "I-MX-rhm_skyranger30-procurement_status",
+    "I-MX-rhm_skyranger30-production",
+    "I-MX-rhm_skyranger35-architecture",
+    "I-MX-rhm_skyranger35-eu_customers",
+    "I-MX-rhm_skyranger35-integration",
+    "I-MX-rhm_skyranger35-local_industry",
+    "I-MX-rhm_skyranger35-procurement_status",
+    "I-MX-rhm_skyranger35-production",
+    "I-MX-saab_rbs70_mshorad-architecture",
+    "I-MX-saab_rbs70_mshorad-eu_customers",
+    "I-MX-saab_rbs70_mshorad-integration",
+    "I-MX-saab_rbs70_mshorad-local_industry",
+    "I-MX-saab_rbs70_mshorad-procurement_status",
+    "I-MX-saab_rbs70_mshorad-production",
+    "I-MX-thales_forceshield-architecture",
+    "I-MX-thales_forceshield-eu_customers",
+    "I-MX-thales_forceshield-integration",
+    "I-MX-thales_forceshield-local_industry",
+    "I-MX-thales_forceshield-procurement_status",
+    "I-MX-thales_forceshield-production"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Matrixzelle gegen Planankers (comparison-plan v1) und depends_on geprüft: höchste vollständig belegte Stufe, Begründung der nächsthöheren Stufe, Zählregel und Kurztexte (headline/preview) ohne neue Aussagen; Lücken als „nicht öffentlich belegt“ ohne Schwächenaussage. Abwägungen geprüft: Skyranger 30 procurement=3 (Verifikationsmuster als Prototyp, methodisch begründet und dokumentiert); Thales/Saab konsistent auf Systemebene (Familie/Komponente nicht übertragen); Tridon eu_customers=1 mit dokumentierter Alternativauslegung."
+  },
+  {
+   "claim_ids": [
+    "I-PM-aerie",
+    "I-PM-ahead",
+    "I-PM-artillery_ammo",
+    "I-PM-cuas_toolbox",
+    "I-PM-defence_electronics",
+    "I-PM-digitalization",
+    "I-PM-f35_fuselage",
+    "I-PM-hel_naval",
+    "I-PM-logistic",
+    "I-PM-loitering",
+    "I-PM-msu",
+    "I-PM-naval_ad",
+    "I-PM-naval_ships",
+    "I-PM-power_systems",
+    "I-PM-protection",
+    "I-PM-revolver_gun_mk3",
+    "I-PM-skyguard_skyshield",
+    "I-PM-skyknight",
+    "I-PM-skymaster",
+    "I-PM-skyranger30",
+    "I-PM-skyranger35",
+    "I-PM-space_sar",
+    "I-PM-tracked_ifv",
+    "I-PM-ugv",
+    "I-PM-weapons",
+    "I-PM-wheeled",
+    "I-PM-xtar3d"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Reifeeinordnung nach portfolio-maturity-v1 geprüft: höchster konkret belegter Meilenstein, nächsthöhere Stufe begründet, Herstellerangaben gekennzeichnet; unbestimmbare Produkte ohne Unreifeaussage. Skynex 6: Anker „wiederholte Auslieferung“ formal erfüllt (UA offiziell zwei, IT eine Batterie), kleine Stückzahl und Herstellerangaben in uncertainty transparent. UGV 4: GOAT-Teilnahme/Vorauswahl als Pilot/Validierung laut Hersteller gekennzeichnet, kein Serienauftrag."
+  },
+  {
+   "claim_ids": [
+    "I-RP-R-ASIA",
+    "I-RP-R-AU",
+    "I-RP-R-CA",
+    "I-RP-R-CEE",
+    "I-RP-R-CH",
+    "I-RP-R-DE",
+    "I-RP-R-IT",
+    "I-RP-R-ME",
+    "I-RP-R-UA",
+    "I-RP-R-UK",
+    "I-RP-R-US",
+    "I-RP-R-WEU",
+    "I-RP-R-ZA"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Präsenzstufe nach regional-presence-v1 geprüft: Eigen-/JV-/Kundenrolle, Status und Standortzählung; JV-Werke nicht als own, Kundenaktivität hebt Stufe nicht; höchste erfüllte Stufe korrekt."
+  },
+  {
+   "claim_ids": [
+    "I-TAD-03",
+    "I-TAD-04"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Themenkarten gegen Fakten geprüft; Herstellerangaben und Gegenrecherche (Ukraine) korrekt getrennt; kein Gesamtranking."
+  },
+  {
+   "claim_ids": [
+    "I-TEU-01",
+    "I-TEU-02",
+    "I-TEU-03",
+    "I-TEU-05",
+    "I-TEU-06"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: Marktthemen gegen M-Fakten geprüft; SIPRI als Budgetkontext ohne Segmentvolumen, SAFE/EDIP-Regeln und Zuteilungen korrekt."
+  },
+  {
+   "claim_ids": [
+    "S-OP-01",
+    "S-OP-02",
+    "S-ST-01",
+    "S-ST-02",
+    "S-ST-03",
+    "S-TH-01",
+    "S-TH-03",
+    "S-WE-02"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Gegenüber positioning-r1/swot-r1 inhaltlich unverändert (Feldvergleich); Abhängigkeiten im neuen Kontext unverändert A-geprüft (Basis-Review r3). r1-Befund ausdrücklich bestätigt: SWOT-Punkt gegen I-/A-Abhängigkeiten geprüft; Zuordnung intern/extern korrekt, keine Datenlücke als Schwäche, Status und Zeitbezug erhalten. S-ST-02 bleibt auf Einzelkriterien begrenzt (uncertainty: kein Gesamtvorsprung) und ist so ausgewogen."
+  }
+ ]
+}
