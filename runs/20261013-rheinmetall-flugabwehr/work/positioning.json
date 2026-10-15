@@ -7,7 +7,7 @@
  "as_of": "2026-10-13",
  "scope": "Positionierung Rheinmetall-Konzern: Executive Summary, Flugabwehr-Deep-Dive (Technologien, industrielle Anforderungen, Wettbewerbsposition), Markt-Deep-Dive europäische Flugabwehrindustrie, Capability Matrix (Vergleichsplan v1), Portfolio-Reife, Modul-Keyfacts und regionale Präsenz",
  "status": "vollständig",
- "input_fingerprint": "f15285e6bdaa0f843f70f67bab0b160f6b850b8ee5a0fa35a1502a0cfb97f9d2",
+ "input_fingerprint": "7a0ea8adb759989c4c73a791f8ff514258ef5ae6c41c04bc0ed3b53155f4591b",
  "plan_fingerprint": "0b9ab5617c7fb1caab7a269edd5d24d6044d27220a06997da79d94ff1430812c",
  "interpretations": [
   {
@@ -40,9 +40,13 @@
     "P-SKR-03",
     "T-AD-06",
     "I-MX-rhm_skyranger30-eu_customers",
-    "I-MX-rhm_skyranger30-procurement_status"
+    "I-MX-rhm_skyranger30-procurement_status",
+    "I-MX-rhm_skynex-procurement_status",
+    "I-MX-rhm_skyranger35-procurement_status",
+    "I-MX-pgz_pilica-procurement_status",
+    "I-MX-diehl_irist_sls-procurement_status"
    ],
-   "reasoning": "Im Kriterium europäische Vertragsstaaten erreicht kein anderes Vergleichsangebot vier Staaten. Beim Umsetzungsstand liegt Skyranger 30 mit Stufe 3 dagegen hinter Skynex und Pilica+, die Auslieferungen belegen.",
+   "reasoning": "Im Kriterium europäische Vertragsstaaten erreicht kein anderes Vergleichsangebot vier Staaten. Beim Umsetzungsstand liegt Skyranger 30 mit Stufe 3 dagegen hinter Skynex (Stufe 5) sowie Skyranger 35 (laut Hersteller), Pilica+ und IRIS-T SLS (je Stufe 4).",
    "method": "Ableitung aus Capability-Matrix-Zellen",
    "uncertainty": "Kriteriumsvorsprung ist kein Gesamtvorsprung; Peerumfang auf neun Angebote begrenzt.",
    "headline": "Skyranger 30: viele Verträge, Serie noch nicht geliefert",
@@ -87,7 +91,7 @@
   },
   {
    "id": "I-ES-05",
-   "statement": "Rheinmetall deckt Kanone, Airburst-Munition, Sensorik und C2 selbst ab, ist bei Flugkörpern aber auf Partner angewiesen (MBDA DefendAir, Stinger, Mistral) und will dies über eine geplante Flugkörperfertigung mit Lockheed Martin ergänzen.",
+   "statement": "Rheinmetall deckt Kanone, Airburst-Munition, Sensorik und C2 selbst ab; die für Skyranger belegten Flugkörper stammen von Partnern (MBDA DefendAir, Stinger, Mistral). Die eigene SkyKnight-Lenkwaffe steht im Katalog ohne Herkunfts- und Lieferbeleg.",
    "section": "executive_summary",
    "depends_on": [
     "P-SKR-01",
@@ -96,15 +100,16 @@
     "C-018",
     "C-014",
     "C-019",
+    "P-SKR-03",
+    "P-SKN-01",
     "C-033",
-    "C-034",
-    "C-013"
+    "C-034"
    ],
-   "reasoning": "Die belegten Skyranger-Konfigurationen nutzen ausschließlich Flugkörper anderer Hersteller; das NNbS bündelt Rheinmetall mit Diehl und Hensoldt. Die Lockheed-Kooperation zielt auf ein Kompetenzzentrum für Raketen/ATACMS, eine SHORAD-Flugkörperfertigung ist nicht belegt.",
+   "reasoning": "Alle belegten Skyranger-Konfigurationen nutzen Flugkörper anderer Hersteller; für SkyKnight (C-RAM/C-PGM) sind Herkunft, Kunden und Lieferstatus nicht belegt. Die Kooperation mit Lockheed Martin zielt auf Raketen/ATACMS in Unterlüß und betrifft keinen SHORAD-Flugkörper.",
    "method": "Wertschöpfungsanalyse entlang der Sensor-to-Effektor-Kette",
-   "uncertainty": "Lockheed-Projekt ist MoU-/JV-Planung unter Regierungsvorbehalt.",
-   "headline": "Eigene Kanonen-/Sensorkette, Flugkörper von Partnern",
-   "preview": "Kanone, AHEAD, Radar und Skymaster aus eigener Hand; Flugkörper von MBDA, Stinger, Mistral – eigene Flugkörperfertigung nur geplant.",
+   "uncertainty": "Aussage auf belegte Skyranger-Konfigurationen begrenzt; Lockheed-Vorhaben ist MoU-/JV-Planung unter Regierungsvorbehalt.",
+   "headline": "Eigene Kanonen-/Sensorkette, Skyranger-Flugkörper von Partnern",
+   "preview": "Kanone, AHEAD, Radar und Skymaster aus eigener Hand; Skyranger-Flugkörper von MBDA, Stinger, Mistral; SkyKnight ohne Lieferbeleg.",
    "display_order": 5
   },
   {
@@ -204,7 +209,7 @@
   },
   {
    "id": "I-TAD-02",
-   "statement": "Die industrielle Anforderung liegt im Serienhochlauf: Rheinmetall baut Kapazitäten in Zürich, Rom und Neuss auf ein Ziel von bis zu 400 Systemen p. a. aus, während Kundenänderungen und Fahrmodule die Bundeswehr-Serie verzögert haben.",
+   "statement": "Die industrielle Anforderung liegt im Serienhochlauf: Rheinmetall plant den Ausbau auf bis zu 400 Systeme p. a. (Standorte laut Rheinmetall Zürich, Rom, Neuss; Neuss als Skyranger-Werk laut Fachmedium), während die Bundeswehr-Serie verzögert ist – laut Rheinmetall durch Kundenänderungen, laut BAAINBw-Unterlagen (via Capital/dpa) mit Kritik an der Auftragnehmerleistung.",
    "section": "topic:air_defence",
    "depends_on": [
     "P-AD-08",
@@ -217,11 +222,11 @@
     "M-DE-SKR-01",
     "M-DE-SKR-02"
    ],
-   "reasoning": "Die belegten Verzugsursachen (Future Common Drive Module, DefendAir statt Stinger, größeres Radar) zeigen Abhängigkeiten von Plattform- und Flugkörperzulieferern. Medien zitieren zusätzlich Kritik an der Auftragnehmerleistung; Rheinmetall bestreitet den Umfang.",
-   "method": "Gegenüberstellung Kapazitätsziel, Verzugsursachen und Quellenlage",
-   "uncertainty": "Verzugsdauer je Quelle 5–18 Monate; Capital-Original nicht zugänglich.",
+   "reasoning": "Rheinmetall nennt laut S&V bzw. dpa als Verzugsursachen den Wechsel auf das Future Common Drive Module, DefendAir statt Stinger und ein größeres Radar bzw. eine vom Kunden gewünschte Fahrmodulanpassung. Capital zitiert laut dpa-AFX BAAINBw-Unterlagen, die die Auftragnehmerleistung als stark verbesserungswürdig bezeichnen; S&V nennt Engpässe bei Fahrmodulen und Turmintegration. Ursachen und Umfang sind damit strittig.",
+   "method": "Gegenüberstellung Kapazitätsziel und zugeschriebener Verzugsangaben",
+   "uncertainty": "Verzugsdauer je Quelle 5–18 Monate; Capital-Original nicht zugänglich; Kapazität ist Herstellerziel.",
    "headline": "Industrielle Anforderungen: Hochlauf vs. Serienverzug",
-   "preview": "Kapazitätsziel bis 400 Systeme p. a. (Herstellerangabe); Bundeswehr-Serie wegen Fahrmodul-, Flugkörper- und Radarwechsel verzögert, Umfang strittig."
+   "preview": "Ziel bis 400 Systeme p. a. (Herstellerangabe); Bundeswehr-Serie verzögert – laut Rheinmetall Kundenänderungen, BAAINBw-Kritik laut Capital."
   },
   {
    "id": "I-TAD-03",
@@ -310,7 +315,7 @@
   },
   {
    "id": "I-TEU-04",
-   "statement": "Lokale Industrie ist in Europa eine zentrale Zugangsbedingung: Polen setzt mit PGZ-Pilica auf ein nationales Konsortium und Narew-Technologieteilung mit MBDA UK, die Niederlande und Rumänien verlangen bei Rheinmetall-Aufträgen große lokale Wertschöpfungsanteile.",
+   "statement": "Lokale Wertschöpfung prägt den Marktzugang unterschiedlich: Dänemark verlangt Offsets von über 10 Mrd. DKK, Polen beschafft Pilica+ über ein nationales Konsortium (Narew mit Technologieteilung durch MBDA UK); bei Rheinmetall-Aufträgen in den Niederlanden und Rumänien ist laut Hersteller ein großer lokaler Wertschöpfungsanteil vorgesehen.",
    "section": "topic:eu_air_defence_market",
    "depends_on": [
     "M-PL-PIL-01",
@@ -320,11 +325,11 @@
     "P-REG-RO-01",
     "M-DK-GBAD-01"
    ],
-   "reasoning": "Wettbewerber und Rheinmetall reagieren mit Lokalisierungszusagen; ein großer Teil davon ist noch Planung. Dies erhöht die Anforderungen an Partnernetz und Standortpräsenz in Kundenländern.",
-   "method": "Vergleich belegter Lokalisierungsmodelle",
-   "uncertainty": "Umsetzung der Lokalanteile überwiegend nicht belegt.",
-   "headline": "Lokale Wertschöpfung als Marktzugangsbedingung",
-   "preview": "Polen: nationales Konsortium und Narew-Technologieteilung; Niederlande und Rumänien: große lokale Anteile bei Rheinmetall-Aufträgen (geplant)."
+   "reasoning": "Als Kundenforderung belegt ist nur die dänische Offset-Pflicht; Polen zeigt eine nationale Konsortiallösung. Die NL-/RO-Lokalanteile sind Herstellerangaben, eine Forderung der Kunden ist dafür nicht belegt.",
+   "method": "Vergleich belegter Lokalisierungsmodelle mit Zuschreibung",
+   "uncertainty": "Umsetzung der Lokalanteile überwiegend nicht belegt; Offset-Pflicht paketbezogen.",
+   "headline": "Lokale Wertschöpfung: Offsets, Konsortien, Herstellerzusagen",
+   "preview": "Dänemark verlangt Offsets >10 Mrd. DKK, Polen nutzt nationales Konsortium; NL/RO: großer lokaler Anteil laut Rheinmetall vorgesehen."
   },
   {
    "id": "I-TEU-05",
@@ -1471,7 +1476,7 @@
    "method_id": "portfolio-maturity-v1",
    "assessment_status": "bewertet",
    "score": 6,
-   "statement": "Skynex steht auf Stufe 6: wiederholte Auslieferungen an die Ukraine (ab Ende 2023) und Italien (Dezember 2025) bei weiteren Aufträgen aus Rumänien und einem internationalen Kunden.",
+   "statement": "Skynex steht auf Stufe 6: wiederholte Auslieferungen an die Ukraine (ab Ende 2023) und Italien (Dezember 2025, laut Hersteller) bei weiteren Aufträgen aus Rumänien und einem internationalen Kunden.",
    "depends_on": [
     "P-SKX-02",
     "T-EV-05",
@@ -1546,13 +1551,13 @@
    "method_id": "portfolio-maturity-v1",
    "assessment_status": "bewertet",
    "score": 4,
-   "statement": "Das LVS NNbS steht auf Stufe 4: Entwicklungsvertrag mit der ARGE (Januar 2024, ca. 1,2 Mrd. EUR), DefendAir-Vertrag (November 2025) und Änderungsvertrag (September 2026).",
+   "statement": "Das LVS NNbS steht auf Stufe 4: Entwicklungsvertrag mit der ARGE (Januar 2024, ca. 1,2 Mrd. EUR) und DefendAir-Vertrag (November 2025); ein Änderungsvertrag wurde am 23.09.2026 parlamentarisch gebilligt, seine Unterzeichnung ist nicht belegt.",
    "depends_on": [
     "C-009",
     "C-018",
     "M-DE-NNBS-01"
    ],
-   "reasoning": "Ein beauftragtes Entwicklungsprogramm des Kunden ist belegt. Betrieb des Gesamtsystems ist nicht belegt.",
+   "reasoning": "Stufe 4 wird durch den Entwicklungsvertrag 2024 getragen; die Billigung des Änderungsvertrags ändert die Stufe nicht. Betrieb des Gesamtsystems ist nicht belegt.",
    "method": "Höchster konkret belegter Meilenstein",
    "uncertainty": "",
    "next_stage_limit": "Stufe 5 erfordert Einsatz des Gesamtsystems; DefendAir ist laut S&V erst ab 2029 verfügbar."
@@ -2035,17 +2040,19 @@
    "module": "cluster",
    "display_order": 1,
    "headline": "Flugkörper kommen von Partnern",
-   "fact_text": "DefendAir von MBDA ist für Skyranger 30 im NNbS beauftragt; Österreich nutzt Mistral, die Bundeswehr zunächst Stinger.",
+   "fact_text": "Bundeswehr: ursprünglich Stinger vorgesehen, inzwischen DefendAir (MBDA, verfügbar ab 2029 laut S&V) im NNbS beauftragt; Österreich: Mistral.",
    "fact_claim_ids": [
     "C-018",
     "C-019",
-    "C-014"
+    "C-014",
+    "P-SKR-03"
    ],
-   "statement": "Die Effektorbreite des Skyranger hängt an Fremd-Flugkörpern; die Lockheed-Kooperation zielt auf eigene Flugkörperfertigung, ist aber noch MoU-/JV-Planung.",
+   "statement": "Skyranger-Flugkörper stammen belegt von Partnern; der DefendAir-Wechsel ist laut Rheinmetall ein Verzugsgrund. Lockheed-Kooperation betrifft Raketen/ATACMS, nicht SHORAD.",
    "depends_on": [
     "C-018",
     "C-019",
     "C-014",
+    "P-SKR-03",
     "C-033",
     "C-034"
    ],
@@ -2113,7 +2120,7 @@
     "M-CZ-MSH-01",
     "M-LT-MSH-01"
    ],
-   "statement": "Der Vorsprung gilt nur für dieses Kriterium; beim Lieferstand liegen Skynex und Pilica+ vor Skyranger 30.",
+   "statement": "Vorsprung nur in diesem Kriterium; beim Lieferstand liegen Skynex, Skyranger 35 (laut Hersteller), Pilica+ und IRIS-T SLS vor Skyranger 30.",
    "depends_on": [
     "C-014",
     "C-019",
@@ -2124,7 +2131,10 @@
     "M-LT-MSH-01",
     "I-MX-rhm_skyranger30-eu_customers",
     "I-MX-saab_rbs70_mshorad-eu_customers",
-    "I-MX-pgz_pilica-procurement_status"
+    "I-MX-pgz_pilica-procurement_status",
+    "I-MX-rhm_skynex-procurement_status",
+    "I-MX-rhm_skyranger35-procurement_status",
+    "I-MX-diehl_irist_sls-procurement_status"
    ],
    "reasoning": "Verdichtung aus Capability-Matrix-Zellen.",
    "method": "Kriterienvergleich",
@@ -2137,21 +2147,21 @@
    "module": "market",
    "display_order": 2,
    "headline": "Lokale Konsortien als Zugangsbedingung",
-   "fact_text": "Polen beschafft Pilica+ über das nationale Konsortium PGZ-Pilica; Dänemark verlangt Offsets über 10 Mrd. DKK.",
+   "fact_text": "Dänemark verlangt Offsets über 10 Mrd. DKK; Polen beschafft Pilica+ über das nationale Konsortium PGZ-Pilica.",
    "fact_claim_ids": [
     "M-PL-PIL-01",
     "M-DK-GBAD-01"
    ],
-   "statement": "Nationale Industriebeteiligung ist in mehreren Märkten Vergabevoraussetzung; Rheinmetall reagiert mit Lokalisierungszusagen (NL, RO).",
+   "statement": "Lokale Industriebeteiligung ist in DK Pflicht und in PL über das Konsortium angelegt; Rheinmetall sieht in NL/RO große lokale Anteile vor (Herstellerangabe).",
    "depends_on": [
     "M-PL-PIL-01",
     "M-DK-GBAD-01",
     "T-EV-04",
     "P-REG-RO-01"
    ],
-   "reasoning": "Beschaffungsbedingungen und Herstellerzusagen gegenübergestellt.",
+   "reasoning": "Belegte Kundenforderung (DK), Beschaffungsmodell (PL) und Herstellerangaben (NL/RO) getrennt gegenübergestellt; kein Kausalzusammenhang unterstellt.",
    "method": "Zugangsbedingungsanalyse",
-   "uncertainty": "Offset-Pflicht paketbezogen; Rheinmetall-Zusagen überwiegend Planung."
+   "uncertainty": "Offset-Pflicht paketbezogen; NL/RO-Lokalanteile sind Herstellerangaben ohne belegte Kundenforderung."
   },
   {
    "id": "I-MI-MKT-03",
@@ -2288,16 +2298,16 @@
    "region_id": "R-NORD",
    "method_id": "regional-presence-v1",
    "assessment_status": "bewertet",
-   "score": 4,
-   "statement": "Nordeuropa: Stufe 4 – eigener Standort Skoppum (Norwegen) für Produktion und Systemintegration; Dänemark und Finnland nur als Kunden- bzw. Demonstrationsaktivität.",
+   "score": 5,
+   "statement": "Nordeuropa: Stufe 5 – eigener Standort Skoppum (Norwegen) mit Entwicklung und Produktion; Dänemark und Finnland nur als Kunden- bzw. Demonstrationsaktivität.",
    "depends_on": [
     "P-REG-NO-01",
     "P-REG-OWN-01"
    ],
-   "reasoning": "Eigene operative Produktion in Skoppum erfüllt Stufe 4. Die Quelle nennt für Skoppum auch Entwicklung, die Aktivität ist im Faktenpaket aber nur als Produktion erfasst.",
+   "reasoning": "Eigene operative Produktion und Entwicklung am selben eigenen Standort Skoppum (Rheinmetall Nordic, 100 %) erfüllen Stufe 5 nach regional-presence-v1. Kundenaktivitäten in Dänemark und Finnland heben die Stufe nicht an.",
    "method": "Höchste erfüllte Stufe regional-presence-v1",
-   "uncertainty": "Standort erst seit 1.10.2026 eröffnet; Schwerpunkt Elektrooptik, nicht Flugabwehrsysteme.",
-   "next_stage_limit": "Stufe 5 erfordert eigene Produktion plus lokale Entwicklung oder einen zweiten eigenen Standort; die in P-REG-NO-01 genannte Entwicklung ist nicht als Aktivität erfasst (Rückfrage an portfolio)."
+   "uncertainty": "Standort erst seit 1.10.2026 eröffnet (Herstellerangabe); Schwerpunkt Elektrooptik/Feuerleitung, nicht Flugabwehrsysteme; Infrastruktur in DK, FI, SE nicht geprüft.",
+   "next_stage_limit": "Höchste Skalenstufe erreicht."
   },
   {
    "id": "I-RP-R-CEE",
@@ -2462,15 +2472,6 @@
  "module_insight_gaps": [],
  "research_requests": [
   {
-   "id": "RR-01",
-   "target_role": "portfolio",
-   "question": "Soll für Skoppum (Norwegen) zusätzlich eine development-Aktivität (gleiche site_id S-NO-SKO) erfasst werden? P-REG-NO-01 nennt Entwicklung; mit Aktivität wäre R-NORD Stufe 5 statt 4.",
-   "related_claim_ids": [
-    "P-REG-NO-01"
-   ],
-   "blocking": false
-  },
-  {
    "id": "RR-02",
    "target_role": "context",
    "question": "Liegt nach dem Stichtag eine Haushaltsausschussvorlage/Vergabe für weitere Bundeswehr-Skyranger vor, und welchem Produkt ist das Programm „Arminius“ zuzuordnen?",
@@ -2510,7 +2511,7 @@
   {
    "id": "RR-05",
    "target_role": "portfolio",
-   "question": "Produktspezifische Status-/Lieferbelege für Skyguard 3/Skyshield, Revolver Gun Mk3, X-TAR3D, MSU und SkyKnight; im Portfolio referenzierte P-SKR-04, P-AD-04, P-AD-05 sind nicht im delegierten A-Kontext.",
+   "question": "Produktspezifische Status-/Lieferbelege sowie Herkunft für Skyguard 3/Skyshield, Revolver Gun Mk3, X-TAR3D, MSU und SkyKnight.",
    "related_claim_ids": [
     "P-STAT-01",
     "P-RGM-01",
@@ -2536,7 +2537,6 @@
   "Datenlücken (nicht öffentlich belegt, nicht eindeutig bestimmbar) beschreiben Rechercheabdeckung, keine tatsächliche Schwäche oder Unreife.",
   "Aktuellster Berichtsstand H1 2026 (6.8.2026); Q3 2026 erscheint nach dem Stichtag 13.10.2026.",
   "Peerumfang auf neun Angebote nach Vergleichsplan v1 begrenzt; NASAMS, ASELSAN, Hanwha, Leonardo, KNDS, Elbit u. a. nicht verglichen.",
-  "Militärausgaben sind Budgetkontext, kein Segmentvolumen der Flugabwehr.",
-  "Im Portfolio referenzierte Claims P-SKR-04, P-AD-04 und P-AD-05 lagen nicht im delegierten A-Kontext und wurden nicht verwendet."
+  "Militärausgaben sind Budgetkontext, kein Segmentvolumen der Flugabwehr."
  ]
 }
