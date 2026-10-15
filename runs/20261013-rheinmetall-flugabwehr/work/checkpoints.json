@@ -4770,23 +4770,23 @@
     },
     "basis-review": {
       "stage": "basis-review",
-      "checkpoint_id": "d6ea7f9a53b9492f9a8e47afe38e39d1",
+      "checkpoint_id": "284fb7b7f6c84086acd8e4c60c4f7b0e",
       "inputs": {
         "facts": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/review-packet.json",
-          "sha256": "f94ebced73e4e0761a3c88cce7289c52e476450d0d78cbbda7b6b767be0b8eb8"
+          "sha256": "bc79d009f69ab537060bed417e735fdff65ecea5e5e93a61577a2511d3e12de2"
         },
         "validation": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/facts-validation.json",
-          "sha256": "0636312744d1961f7cbbb635f0c8327e0fa9f69f264c236126a7f6e43b5d0037"
+          "sha256": "425b756c809b0e0472c9660efd012b9268e24d958b7551831c10196575ff9d92"
         },
         "work": {
-          "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/review-work-basis-r3.json",
-          "sha256": "6e074404d2387440e3cfba755d9c88eff3f3ee059212b2333d602d7236d241b4"
+          "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/review-work-basis-r4.json",
+          "sha256": "9a93acdbec2621c0f1b02a2c3d426d474f1d7ad098e55b3282547667a74d31a5"
         },
         "draft": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/review-basis-draft.json",
-          "sha256": "ee0b292e00ea46ef90195a0378ceb5e442346d1a4056956ff44ec2f7caf61b01"
+          "sha256": "53d82f74e8c054dc0e00a9bde173d407ccd734175a69a7818e8551f2e5652429"
         },
         "plan": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/comparison-plan.json",
@@ -4796,7 +4796,7 @@
       "outputs": {
         "review": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/review-basis.md",
-          "sha256": "d55fdfa943c80feb413e3084f5038df2e97b8bd6944fb02c7957b7ebe672a8c0"
+          "sha256": "cb41a31581648d68817a900d6a666f672e20db78680a78c96a00ccb9b8a5a215"
         }
       },
       "code": {
@@ -6071,23 +6071,23 @@
         }
       },
       "dependencies": {
-        "facts": "c23e066f6ddc72429064924e4952526680294cf1efbfca0244f1bfb9a2dd3776",
-        "plan": "8111db8622e765e03d308912c59d559aac069ffc4340ea20e7cb5196e7a48a14"
+        "facts": "17c166c3da68c1a6b52929776d34489236c38668d7e68cfc03f346e07c5007af",
+        "plan": "a828d2ed739507080a112a6f1f24adb84bcd68e760c7cd1209ebebb3777d36cc"
       },
-      "checked_at": "2026-10-15T17:46:43+00:00",
-      "fingerprint": "3c2e85ea9f33d7610d374346f14b7ee1491cadbde1f9961d816069882c7c347c"
+      "checked_at": "2026-10-15T17:53:11+00:00",
+      "fingerprint": "95892c8513fbebc2d7467c0c89011e066bbe49e252a79fec4236fa6ebc450309"
     },
     "positioning": {
       "stage": "positioning",
-      "checkpoint_id": "1cf149303dab4a3d86acf44d99d22894",
+      "checkpoint_id": "d5fd2bacba75430daf47e507e632f89f",
       "inputs": {
         "facts": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/review-packet.json",
-          "sha256": "f94ebced73e4e0761a3c88cce7289c52e476450d0d78cbbda7b6b767be0b8eb8"
+          "sha256": "bc79d009f69ab537060bed417e735fdff65ecea5e5e93a61577a2511d3e12de2"
         },
         "basis-review": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/review-basis.md",
-          "sha256": "d55fdfa943c80feb413e3084f5038df2e97b8bd6944fb02c7957b7ebe672a8c0"
+          "sha256": "cb41a31581648d68817a900d6a666f672e20db78680a78c96a00ccb9b8a5a215"
         },
         "plan": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/comparison-plan.json",
@@ -7385,25 +7385,25 @@
         }
       },
       "dependencies": {
-        "basis-review": "3c2e85ea9f33d7610d374346f14b7ee1491cadbde1f9961d816069882c7c347c",
-        "facts": "c23e066f6ddc72429064924e4952526680294cf1efbfca0244f1bfb9a2dd3776",
-        "market": "857119c8f7beb902d3c246a8ac4ae72b1dc6b0385919194d077be910956fb063",
-        "plan": "8111db8622e765e03d308912c59d559aac069ffc4340ea20e7cb5196e7a48a14"
+        "basis-review": "95892c8513fbebc2d7467c0c89011e066bbe49e252a79fec4236fa6ebc450309",
+        "facts": "17c166c3da68c1a6b52929776d34489236c38668d7e68cfc03f346e07c5007af",
+        "market": "124439d6ffe14f5cf59b1b8bcb6b6add4218e8a57f2c3f47bc676a7a1fad3aff",
+        "plan": "a828d2ed739507080a112a6f1f24adb84bcd68e760c7cd1209ebebb3777d36cc"
       },
-      "checked_at": "2026-10-15T17:48:35+00:00",
-      "fingerprint": "f42cb5a26536cb93f4f4974672d231a0310d4f627c3a4d19ccfe578ebd53b8c8"
+      "checked_at": "2026-10-15T17:53:31+00:00",
+      "fingerprint": "f000fd42b3d4a823f650d7ea0cd29fd15816077ae64b1bf1688d44a3ec751ca9"
     },
     "swot": {
       "stage": "swot",
-      "checkpoint_id": "bc66690dea6a473bb162ab23e894bdee",
+      "checkpoint_id": "d98fd7875b884811a7b887e136c15a4c",
       "inputs": {
         "facts": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/review-packet.json",
-          "sha256": "f94ebced73e4e0761a3c88cce7289c52e476450d0d78cbbda7b6b767be0b8eb8"
+          "sha256": "bc79d009f69ab537060bed417e735fdff65ecea5e5e93a61577a2511d3e12de2"
         },
         "basis-review": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/review-basis.md",
-          "sha256": "d55fdfa943c80feb413e3084f5038df2e97b8bd6944fb02c7957b7ebe672a8c0"
+          "sha256": "cb41a31581648d68817a900d6a666f672e20db78680a78c96a00ccb9b8a5a215"
         },
         "positioning": {
           "path": "/home/user/Firmenbreefing/runs/20261013-rheinmetall-flugabwehr/work/positioning.json",
@@ -8705,13 +8705,13 @@
         }
       },
       "dependencies": {
-        "basis-review": "3c2e85ea9f33d7610d374346f14b7ee1491cadbde1f9961d816069882c7c347c",
-        "facts": "c23e066f6ddc72429064924e4952526680294cf1efbfca0244f1bfb9a2dd3776",
-        "plan": "8111db8622e765e03d308912c59d559aac069ffc4340ea20e7cb5196e7a48a14",
-        "positioning": "f42cb5a26536cb93f4f4974672d231a0310d4f627c3a4d19ccfe578ebd53b8c8"
+        "basis-review": "95892c8513fbebc2d7467c0c89011e066bbe49e252a79fec4236fa6ebc450309",
+        "facts": "17c166c3da68c1a6b52929776d34489236c38668d7e68cfc03f346e07c5007af",
+        "plan": "a828d2ed739507080a112a6f1f24adb84bcd68e760c7cd1209ebebb3777d36cc",
+        "positioning": "f000fd42b3d4a823f650d7ea0cd29fd15816077ae64b1bf1688d44a3ec751ca9"
       },
-      "checked_at": "2026-10-15T17:49:40+00:00",
-      "fingerprint": "a32aa85316a6418751efed42051f0520a46a6b967b5ae10fc1f33e911062ab59"
+      "checked_at": "2026-10-15T17:53:36+00:00",
+      "fingerprint": "15cd8545996e144a02db71af257bed4bc16c814b47e5d824f86d7c672f905cb2"
     },
     "final-review": {
       "stage": "final-review",
@@ -10052,5 +10052,5 @@
   },
   "created_at": "2026-10-13T12:00:37+00:00",
   "notice": "Local completion records only; content approval and visual QA remain separate.",
-  "fingerprint": "fe969d2a721c88296c137cb6a342472cdd4ed06edadc7cf44c22005802247f90"
+  "fingerprint": "1effedbeeb788a7ea01c42ee4c1cd81a38b6c88f416ffe6fe4a616f4063e6314"
 }

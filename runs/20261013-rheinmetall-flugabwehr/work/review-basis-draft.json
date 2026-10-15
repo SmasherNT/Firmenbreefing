@@ -5,1166 +5,47 @@
  "as_of": "2026-10-13",
  "phase": "basis",
  "status": "freigegeben",
- "review_work_fingerprint": "b27ac6a1642d22f083c59309891803b9d585d691a37f300d98b34e1eab9ee06b",
+ "review_work_fingerprint": "a7cb153b1a35f00af1e0a1dc62551f0285690fa216eb973750eda371896c7ad2",
  "material_errors": [],
  "scope_and_mappings_checked": true,
  "review_scope": {
-  "summary": "Runde 3: 120 Claims mit geändertem Snapshot bzw. geänderter Zuordnung gezielt geprüft (je Beleg alter vs. neuer Originaltext; große Diffs wörtlich gelesen), 104 Übernahmekandidaten ausdrücklich übernommen. Neue Präsenzaktivität A-NO-SKO-DEV und geänderte Cluster-coverage/report_log (SEC-10-K nur noch Suchweg) semantisch geprüft. Keine Webabrufe durch den Prüfer.",
-  "refresh_state": "Refresh-Protokoll gesichtet: 78 Textänderungen überwiegend Datumsformat/Seitenrauschen. Die Incapsula-Sperrseiten (S-23f40ac8c2701e11, S-280bd40a5e5bf16d, S-71d29e036dae7d32) und S-55faca3b1d80c836 stützen keinen Claim und liegen nicht im Quellenregister des Pakets. Kurze bzw. textlose Snapshots wie in Runde 2: S-3ba304da81a26074 (T-ID-05) und SIPRI-XLSX S-7730735b980263ed (Snapshot unverändert, Werte per openpyxl belegt). Kein Rückgriff auf ältere Snapshots nötig.",
-  "nonblocking_notes": [
-   "A-NORD-WA führt country=\"Schweden\" für eine Aktivität über vier nordische Länder (aus früheren Runden unverändert; kosmetisch, portfolio).",
-   "Das Positionierungs-/Schluss-Review muss wegen der geänderten Präsenzzuordnung R-NORD (I-RP-R-NORD) und der neuen Paket-Fingerprints neu vorbereitet werden."
-  ]
+  "summary": "Runde 4 gezielt: nur C-032 und die Kanten e47/e48 sowie die zugehörigen relationships geändert (Paketvergleich mit review-packet-r3.json: keine weiteren Claim-, Quellen-, module_views- oder Netzänderungen). GB-2025-Snapshot unverändert. 223 Übernahmekandidaten ausdrücklich übernommen. Keine Webabrufe."
  },
  "source_checks": [
   {
-   "source_id": "S-00676d9d1d5efc0a",
-   "claim_ids": [
-    "M-DE-NNBS-01"
-   ],
-   "content_sha256": "5c6903465df1ef51fe4840b889767a278548f73d0ae4f153beff38b709da6521",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 5c6903465df1 (vorher e7dcae6a0fd1) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-042b26990fdc2a9d",
-   "claim_ids": [
-    "T-EV-03"
-   ],
-   "content_sha256": "a6d89615b127601e09c6f56b95a8ae404ae05db4420338fa6e1521cbc32ea7d4",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot a6d89615b127 (vorher 5c6775c76e8c) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-04cc080af88f833d",
-   "claim_ids": [
-    "C-042"
-   ],
-   "content_sha256": "44a4d1667244d7139c098d837eadf20b21a15e2910ea88f4b1b2f2844ffeb2a4",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 44a4d1667244 (vorher 0cb20930a867) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-057484ce43bd0f28",
-   "claim_ids": [
-    "M-EU-SAFE-01"
-   ],
-   "content_sha256": "6545caca63cb7406170cbac7d7aecdba711d973714046d131f041b25898173ae",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 6545caca63cb (vorher 9ef48da0000d) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-081455a6101c816e",
-   "claim_ids": [
-    "C-027"
-   ],
-   "content_sha256": "8bf96eaef7705073acc2d7c376363c688b44de0251960da97d4d23b2197a9097",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 8bf96eaef770 (vorher ac9fd7aa4dfc) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-09c52404c1b93824",
-   "claim_ids": [
-    "C-015"
-   ],
-   "content_sha256": "0c6382753b8c40aa9a34035d3ffba584ed87c5c4501b7ef2d220a18692e960de",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-0d1aacb2a960fe0b",
-   "claim_ids": [
-    "M-DK-SAMPT-01"
-   ],
-   "content_sha256": "ce2944a09e26731bfe014edaea13a6c6901ff8afc965ba9f8a85b6cd97f4c8b7",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot ce2944a09e26 (vorher 92c8dd0ca921) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-10079a15b0d54839",
-   "claim_ids": [
-    "C-040"
-   ],
-   "content_sha256": "170e35d743d513d9b555273c96b5083b543ebd567c114a4bd96f1f90d9ee5f00",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 170e35d743d5 (vorher 27e36f8dbedd) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-12a6733e8d06cf75",
-   "claim_ids": [
-    "M-DE-IRIS-02"
-   ],
-   "content_sha256": "1cb0a770b67d1b10f1f926931100938675f977d33ea69c1074f31bc874db370f",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 1cb0a770b67d (vorher a3b300c6ccd3) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-12e946370fcf4e20",
-   "claim_ids": [
-    "M-CZ-MSH-01"
-   ],
-   "content_sha256": "7c3ca0ac467db232125458712d84fd09357de0449f647ad6e2886f24eae6c0da",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 7c3ca0ac467d (vorher a5a073334c28) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-168108fb27118dde",
-   "claim_ids": [
-    "C-053"
-   ],
-   "content_sha256": "a9a987664d4e3ae457dd83dac36e468aedc07ddfe7b477e78f0911aead91eead",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot a9a987664d4e (vorher c465304cc0c0) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-16d1e80677f1a6b8",
-   "claim_ids": [
-    "T-AD-06"
-   ],
-   "content_sha256": "d1cfd9b57f8af43d49e2429fb3b0868f109dece5a95acea51938e28076df6b0c",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot d1cfd9b57f8a (vorher 65813cd8e409) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-18ce19a1fbbec148",
-   "claim_ids": [
-    "P-REG-CH-01",
-    "P-STAT-01"
-   ],
-   "content_sha256": "b321bda1f699af159d0d984f15f4b373f6f69fd489974c276339f32c15f0e8ac",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot b321bda1f699 (vorher 2f906ae59a3a) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-1ee3bed35c316be7",
-   "claim_ids": [
-    "M-DE-IRIS-01"
-   ],
-   "content_sha256": "04a558b8f37635e13079960e22dc3c5ef61c059d075d9528e29c359a5fd03cab",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 04a558b8f376 (vorher 30f738322b6d) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-2185a7a52eb76e0d",
-   "claim_ids": [
-    "C-029"
-   ],
-   "content_sha256": "a47cbe6f53b952baceab38a5682fcad9a51d29a9635c91b3462825bfd5799bab",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot a47cbe6f53b9 (vorher 70de1e9d55e2) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-29616d5aef4d2b76",
-   "claim_ids": [
-    "C-019"
-   ],
-   "content_sha256": "2ec43d5810ff2accf90dab6f9c0d077f5651ab1434869d2e26a68568e744da73",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 2ec43d5810ff (vorher 1ac21497b758) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-2b24723c99b5458a",
-   "claim_ids": [
-    "P-WA-01"
-   ],
-   "content_sha256": "f83efb24743995ef933621f43f1d478e62f39ab4b8d0b2219b8a4c3601ca56d2",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot f83efb247439 (vorher 2b01db7ec69d) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-2d3cddf7945e1791",
-   "claim_ids": [
-    "C-021"
-   ],
-   "content_sha256": "dff1dc374f685817a985f0df1b8ea39ddea8857aed845859ee49472d7540bd4c",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot dff1dc374f68 (vorher 34e5e6ef8d95) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-310ddb82949667f5",
-   "claim_ids": [
-    "P-NAV-01"
-   ],
-   "content_sha256": "e505b2f7d7dcb691e6f202d0deedada6f593aba3fc95b6e80c357f74a4fffb3a",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot e505b2f7d7dc (vorher ceff33aee9d0) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-31c2ac5b48b0cde3",
-   "claim_ids": [
-    "P-RGM-01",
-    "P-SKN-01",
-    "P-SKX-01",
-    "P-SNS-01",
-    "P-SNS-02"
-   ],
-   "content_sha256": "dffb5636890a0a8b420c4530f268b212a762507dbdcaa50312aa669d14bc6053",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot dffb5636890a (vorher 040b13329863) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-39222fba59e057e4",
-   "claim_ids": [
-    "C-016"
-   ],
-   "content_sha256": "eb97330e3c8ea57b9f9740f416eb8a081ce1e310dbf9e6d04742e8f75d44321a",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot eb97330e3c8e (vorher f35f392c6fd1) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-397e8414020bdb92",
-   "claim_ids": [
-    "M-DE-SKR-02",
-    "M-DK-SKR-01",
-    "M-IT-A2CS-01",
-    "M-NL-SKR-01",
-    "M-SKR30-ARCH-01"
-   ],
-   "content_sha256": "fd13218365ff0a5265528723ee9f655218b681ebba1ee941def6114f370e24c1",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot fd13218365ff (vorher 30f7d4fb7b61) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-3b27cf3712ca73d2",
-   "claim_ids": [
-    "C-025"
-   ],
-   "content_sha256": "821dd1bce62ab04d8157be99c29450da5556efcc67fc7b38407839e821c3f0ca",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-3c3ad4b4354adf5e",
-   "claim_ids": [
-    "C-019"
-   ],
-   "content_sha256": "e1b31846edb395a4cc573986dc72d00827dcc2f4c1bc6abd33afc397f78fdfb8",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot e1b31846edb3 (vorher b76cd63e3f82) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-3cb560602baefeec",
-   "claim_ids": [
-    "P-REG-AU-01"
-   ],
-   "content_sha256": "54c6af7ca0efd769b10eec3cfeab582c85cde12b9b7d04d7f47b2a1c619a5680",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 54c6af7ca0ef (vorher 36ac5a680eba) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-3d1ac94ea50adfec",
-   "claim_ids": [
-    "M-DK-IRIS-01",
-    "M-SE-IRIS-01"
-   ],
-   "content_sha256": "a1bfa09115d6895e8938d244edabe28f932831f5bd85b8aed861df186d4920e1",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot a1bfa09115d6 (vorher b9d93b1676f9) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-3dad8b811c925694",
-   "claim_ids": [
-    "C-024",
-    "P-REG-RO-01",
-    "T-EV-03"
-   ],
-   "content_sha256": "214decfe1cd910eedff5de83482a93f410fb63d3e92a852c34d543790d07098c",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-3f67bc2e13a1b02e",
-   "claim_ids": [
-    "C-007",
-    "C-026",
-    "C-027"
-   ],
-   "content_sha256": "c11beae5fad77f523517e80ce37652a372d2cfaa8ca144cc2213913108aae7d7",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot c11beae5fad7 (vorher 04017585d62b) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-47771a7dd8c927d5",
-   "claim_ids": [
-    "P-REG-US-01",
-    "P-VS-04",
-    "P-VS-05"
-   ],
-   "content_sha256": "129834744f9e172d6feae5497bad9dd8d8692f9d8bf38018432b3efdcaad0aee",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 129834744f9e (vorher b913794ff365) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-4789a4ac6acb59aa",
-   "claim_ids": [
-    "T-AD-04",
-    "T-EV-04"
-   ],
-   "content_sha256": "0757328e55970f7f5670dbe1de819a490098ae4cfa62c52df9467c1bf2c444bd",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 0757328e5597 (vorher 69985ee16ab4) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-4a13b2786b5cc66a",
-   "claim_ids": [
-    "P-VS-04"
-   ],
-   "content_sha256": "3d373c4b9a1cf63deb198ce8b1ca271b99a8cfb187c10744ac4ba53b9df1a301",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-4d0e53f502fb320c",
-   "claim_ids": [
-    "P-REG-DE-01",
-    "P-STR-01"
-   ],
-   "content_sha256": "8713939cb3a19571200fdf9ea2df86f75e608d6137396740db8e594b0c0475d7",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 8713939cb3a1 (vorher 6d21580346da) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-4e85b953fe46a8de",
-   "claim_ids": [
-    "M-PL-PIL-02"
-   ],
-   "content_sha256": "ebbc5bc07b79426abce867690ecb23e38483c789e89d9ede85f0fd23be69c4c8",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot ebbc5bc07b79 (vorher dd5daa36815d) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-4f9807383dbfe574",
-   "claim_ids": [
-    "P-REG-CA-01"
-   ],
-   "content_sha256": "f0b28b2a0225fbe556f00bdf3b075a2c49402447a1beca70fcc1ae52abf9fcd9",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot f0b28b2a0225 (vorher e7da0e621a8a) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-4faa3a733781f031",
-   "claim_ids": [
-    "P-SKM-01"
-   ],
-   "content_sha256": "b1f44c4b967d5ebb494ad76ed8a125a0671f964dd3b1f183bf5743cc06bde661",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-502271d8acddfb1e",
-   "claim_ids": [
-    "C-030"
-   ],
-   "content_sha256": "62b47d1e358336f6bbbacf799f3a6bad351659299f4fdd33815f93502b4b9a56",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 62b47d1e3583 (vorher ced56c7b4fc2) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-504b2773565ae51b",
-   "claim_ids": [
-    "M-DIEHL-01"
-   ],
-   "content_sha256": "48d82976e885c0c3162c983b9e5f5bae441e6758aa0de9e125a32f5adeb02435",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 48d82976e885 (vorher 51ab350e5085) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-513daa2ae2be3e14",
-   "claim_ids": [
-    "P-AHD-01",
-    "P-SKR-06",
-    "P-SKX-04"
-   ],
-   "content_sha256": "854c32c953a40724545adaf89efb43e50f9059019aecc42775bb1d8423f167fb",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 854c32c953a4 (vorher a67590ae0f4f) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-51d8de61559f69f0",
-   "claim_ids": [
-    "M-EU-SAFE-UK-01"
-   ],
-   "content_sha256": "87f17fabed589a3dcec5fa287c6486b63f5a639994b5616f5ac331a5cf401854",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 87f17fabed58 (vorher 0993d44f976c) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-5366eb8816ff2cea",
-   "claim_ids": [
-    "C-031"
-   ],
-   "content_sha256": "5c6bc2c92ecc6ff78d7115dfc1601e704c0a7de5db67e9872dadebd835a20fa7",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 5c6bc2c92ecc (vorher 75cf397990ec) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-5a9d049f8f71abd3",
-   "claim_ids": [
-    "C-050"
-   ],
-   "content_sha256": "ac7a0daaa3be2417a688adc85de93e94df564bc8aa1231d3397ec01676069795",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot ac7a0daaa3be (vorher 46169a0ab9c3) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-5b8b39f37cd6b51d",
-   "claim_ids": [
-    "P-SVC-01"
-   ],
-   "content_sha256": "52f183e6413e66ac53e0f672309263822fcce79f3499fafdeffbe5062292f0ce",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 52f183e6413e (vorher cd16054e8bfe) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-5ba566671c688dae",
-   "claim_ids": [
-    "M-DK-VLM-01"
-   ],
-   "content_sha256": "53d7e8bdf34c61d6e6963c0af9211cd67b2eb50f4a426a8dab62f1c0ae08fd48",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 53d7e8bdf34c (vorher efcfae13d46a) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-5bb9a49af968005c",
-   "claim_ids": [
-    "H-PP-06"
-   ],
-   "content_sha256": "1136b2ddeaac3550055310f89fa40db509500f3c7435c1f4785ef2f8fdb1014f",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 1136b2ddeaac (vorher 5e564f3c06ba) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-5dad3a27cd832a61",
-   "claim_ids": [
-    "P-REG-LT-01"
-   ],
-   "content_sha256": "ef7b35c2a8b33c8d99f16836dc0859fa0fb4bc7841ae679e7a5da5fed7313217",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot ef7b35c2a8b3 (vorher 52992260fe47) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-5f102cfea2da2738",
-   "claim_ids": [
-    "T-EV-03",
-    "T-EV-09"
-   ],
-   "content_sha256": "70b17f8f578df934e3a6d2bf8631acf980f14b940352268a45f613d3e8ca2113",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-6282cce4ae4b577f",
-   "claim_ids": [
-    "C-017"
-   ],
-   "content_sha256": "00421d7b86b7f0166d9ff9dff27d5f69492417cd49d4ab64fbf34c4677c02463",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-63ef3755ffe55169",
-   "claim_ids": [
-    "M-MKT-SIPRI-00"
-   ],
-   "content_sha256": "7809766cb866cc92a8079817306b31e976b6b4af5fc5c3f2a1ac7568aef4435d",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 7809766cb866 (vorher ad34fa9059b3) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-6410acb24c745d46",
-   "claim_ids": [
-    "P-SKR-03",
-    "P-SKR-04"
-   ],
-   "content_sha256": "8aff1dac23e1acf83cafd48e6fe2015588d6efb53727c67ee0d6989db4ae8d58",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 8aff1dac23e1 (vorher 8524f2971bcd) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-6a3c2e1e456f2080",
-   "claim_ids": [
-    "M-EU-SAFE-02"
-   ],
-   "content_sha256": "958feaff71fa70ff87190bd89df11dedcba8263c04256b8f46d45f015e4cddd2",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 958feaff71fa (vorher 600bbe33f593) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-6af38e87216bc1d2",
-   "claim_ids": [
-    "C-033"
-   ],
-   "content_sha256": "f6b4c9243cf766edb3cb6eb5793f430934d6752cf346c2d77e468e142a26f35a",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-6bdb338d23c29e11",
-   "claim_ids": [
-    "C-024",
-    "T-AD-04",
-    "T-EV-07"
-   ],
-   "content_sha256": "dc046ada7de1b74a83d324e30825f6b19098181974570f7f4666315717fdaa7f",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot dc046ada7de1 (vorher a1f7e7677f9f) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-6ceae77f0e11c121",
-   "claim_ids": [
-    "C-028",
-    "P-CUAS-02"
-   ],
-   "content_sha256": "cc4edb4b83eeed7034abcf730db6e75c5e1ba649ff07098f996b9d6bfddc07a0",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot cc4edb4b83ee (vorher 23ace4714ef8) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-6d57eca962a765ae",
-   "claim_ids": [
-    "C-034"
-   ],
-   "content_sha256": "e3a8a1e4c3e588617222d5cab22930e44d0f7a82534c20561cb06ec01f569016",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot e3a8a1e4c3e5 (vorher 950bc29ce900) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-7066a889ca7eaad4",
-   "claim_ids": [
-    "C-009"
-   ],
-   "content_sha256": "865da018ab2643a8718341a6ffaafc3f596c01fcdb128098a6e537c6bd4b425f",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-747870b3bc879dff",
-   "claim_ids": [
-    "P-PS-01"
-   ],
-   "content_sha256": "bd2789ca676e5a95ddd1b9bb976cb8b42281758a8dac8ceff46dec28e212bc9a",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot bd2789ca676e (vorher cb1d3a52c783) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-764b0868c9a4f470",
-   "claim_ids": [
-    "M-DK-SAMPT-01"
-   ],
-   "content_sha256": "b4be96a2281c4c928fd55c2322251b2ef29a225f98e024f8b9ea32ebec834d9d",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot b4be96a2281c (vorher 3438ab3e7e47) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-76d1cd6d4bfaa83c",
-   "claim_ids": [
-    "T-AD-03"
-   ],
-   "content_sha256": "c7e6d1442db883fc57fd0376aa962d8ebe202cbe0cb04844ba59f57eee1a1420",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-77116a48034eea1f",
-   "claim_ids": [
-    "M-DK-SKR-01"
-   ],
-   "content_sha256": "7dfb80098d90e047a23449ac46dc40260d202843363a3ab2b9dffa437e49bd88",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 7dfb80098d90 (vorher 4f36a1499507) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-7730735b980263ed",
-   "claim_ids": [
-    "M-MKT-SIPRI-00"
-   ],
-   "content_sha256": "6cc3a30b1064f9f02e60236667eef82e08cad42910ce630909d004ad2c398a9d",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-7b3ad8192958d374",
-   "claim_ids": [
-    "C-041",
-    "C-042"
-   ],
-   "content_sha256": "e27a0830059503756c7a962f0244e55ea54fe1770c3483354d81cfdc6b70245f",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot e27a08300595 (vorher cc39e0e7a65a) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-7c3ae12304f6c154",
-   "claim_ids": [
-    "C-019",
-    "M-AT-SKR-02"
-   ],
-   "content_sha256": "fbc747acb29f614fbd00aa84a5b0b53930a46eb5644e2866c8f44bc39aa31270",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot fbc747acb29f (vorher 6443f41f5ba7) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-7d3cceefdfc28f58",
-   "claim_ids": [
-    "P-REG-ES-01"
-   ],
-   "content_sha256": "43fa21c9efbee9aa8180218374cecfdb64729ce336978b4f443f6e86dafc0512",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 43fa21c9efbe (vorher 96e9e274cf30) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-8119028d88f698cb",
-   "claim_ids": [
-    "C-018"
-   ],
-   "content_sha256": "122f26e11cb9b766937970f952e822c0a56cfdefe7839fa597ca7e1a71fa09c9",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 122f26e11cb9 (vorher 149e01c8c15c) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-827c64d441de8f6e",
-   "claim_ids": [
-    "P-REG-NORD-01"
-   ],
-   "content_sha256": "4b2645d68352518aed6f3f683e7b87dc3c4493ebc65153223fd9c45d20939f49",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-84a5e99e7ff45dc4",
-   "claim_ids": [
-    "M-AT-SKR-01"
-   ],
-   "content_sha256": "350e9304c263f7df6cc9330ecb9e800bb7c3ab4b13aa26ff8dd26ed340c319aa",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 350e9304c263 (vorher 95b4201e2875) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-860fb5a5ec516912",
-   "claim_ids": [
-    "P-CUAS-01",
-    "P-SKM-01"
-   ],
-   "content_sha256": "7d69bd453b61989a46ce1ee3f13619235323a2d781bb1f8ebbfe4fcfdd453aae",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 7d69bd453b61 (vorher 68e577e87fa1) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-879737fc228c4bec",
-   "claim_ids": [
-    "M-DE-NNBS-01"
-   ],
-   "content_sha256": "c9ad5950b3906c9261c0b1c4a092fd5bacd8fc3352e082adcc3c8b0feff66880",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot c9ad5950b390 (vorher 043d07181531) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-92d7be3f0dda7317",
-   "claim_ids": [
-    "P-HEL-01"
-   ],
-   "content_sha256": "f0d7344c838c2842c8e71099e286d62ede05a2195e41275ec1cc522e91ec9c16",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot f0d7344c838c (vorher 21c3a52cb14e) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-931d769d72f5fc8d",
-   "claim_ids": [
-    "T-EV-09"
-   ],
-   "content_sha256": "d7a899e51a5ed4fcc6dac923bfedecef955fba24bceda99b96613d96c37162ba",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot d7a899e51a5e (vorher 037c66f74678) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-957ebff673ab8d20",
-   "claim_ids": [
-    "P-AHD-01",
-    "P-SKX-02"
-   ],
-   "content_sha256": "db07f482444ef2d8c307e3d05467883320819b8d41e5047cca5f14a056f08952",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot db07f482444e (vorher 65297495bd25) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-96bd500dc205c229",
-   "claim_ids": [
-    "C-016"
-   ],
-   "content_sha256": "2ad1b583f0ef795057c24b9f20a8dfed6491aa5f982b3f2816b942fd698f35e2",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 2ad1b583f0ef (vorher 4b74fd9eeb54) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-9bba6057c1bcc3e4",
-   "claim_ids": [
-    "M-THA-01"
-   ],
-   "content_sha256": "f1c6b0022367a5c3cf6ba8e5c0559c537667b55c2bcb0b5434117ae72c1f2816",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot f1c6b0022367 (vorher aa7cec407ca9) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-9d01bc5d2a34d23a",
-   "claim_ids": [
-    "C-035"
-   ],
-   "content_sha256": "42fdacb7591b73bfbf6fcf9f1c59eb3989529186e0b2c1ad561a09b82fbfc758",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 42fdacb7591b (vorher e17901caa037) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-9dd1c8db93851703",
-   "claim_ids": [
-    "C-035"
-   ],
-   "content_sha256": "ee9bd8cb1555457baa0716619011060aabfb7a55f964754bee144c171afefe84",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot ee9bd8cb1555 (vorher c1313f0eaecd) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-a21018e8e5b5c677",
-   "claim_ids": [
-    "M-DK-GBAD-01"
-   ],
-   "content_sha256": "d24115c1d3224b8e5183d7fd36b9c747d778f209764d83cf756be25eec39e37f",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot d24115c1d322 (vorher aef1ebaddc20) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-a4d54f5d3aa32d9d",
-   "claim_ids": [
-    "P-STR-01"
-   ],
-   "content_sha256": "67ed8d1b7033734487634c56d70951c5cc7ae821afa6a2499f570f6a81eb1572",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-aa0faa4814b4b297",
-   "claim_ids": [
-    "M-SE-IRIS-01"
-   ],
-   "content_sha256": "1531bd8a709c0df487735068c27af17a767ec70517065bcfab1ccefb579c7246",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 1531bd8a709c (vorher 3c35204db80b) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-ace6606b74478d86",
-   "claim_ids": [
-    "T-AD-07"
-   ],
-   "content_sha256": "ce1d0fb4e59a317e9492c3949a793475424e6043ec7198523bc05f6fa3aaa44a",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot ce1d0fb4e59a (vorher 97c73797c1e2) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-b003618b3ae9eba2",
-   "claim_ids": [
-    "P-REG-IT-01",
-    "T-EV-10"
-   ],
-   "content_sha256": "8426ce56780d9b2738c85f652359b2cd1e7b6c18627db12ca9dae7b328c9777c",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 8426ce56780d (vorher 480efd8f260c) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-b8a3496f93a22c8c",
-   "claim_ids": [
-    "C-014",
-    "P-SKR-02"
-   ],
-   "content_sha256": "cb97ed7e37f54970c4c4e587be60d6f8f8398aa96463ba69a435c56ed07e2f79",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot cb97ed7e37f5 (vorher fe23763867f9) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-b99b85b72dbd1baf",
-   "claim_ids": [
-    "M-DE-SKR-01"
-   ],
-   "content_sha256": "00b1abbde1e0bcc936e004c83527690f5e960f59e24e6bdf344cd3d2a0fbbb15",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 00b1abbde1e0 (vorher b5b3ba7b89a3) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-bf3aaa0b85ea54a2",
-   "claim_ids": [
-    "M-SAAB-01"
-   ],
-   "content_sha256": "91d1c11792d4e62a8b1890f9b31b0b71ebc881ded7a24c98485aa349a40874df",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 91d1c11792d4 (vorher befdd4071f9a) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-c0d13e5db6387716",
-   "claim_ids": [
-    "C-015",
-    "C-017",
-    "C-019",
-    "C-053",
-    "P-AD-08",
-    "P-SKR-02",
-    "P-SKR-07",
-    "T-AD-03",
-    "T-AD-05"
-   ],
-   "content_sha256": "e07b66462d69233cdae27f8c621b4ead9e5846296436838ca23399c5c3abaab9",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot e07b66462d69 (vorher bda9e63c53b3) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-cbdf02d668299f56",
-   "claim_ids": [
-    "T-EV-03"
-   ],
-   "content_sha256": "3993c83f361db3ee56d0522dbaa00546fb745c094df850b9a5b4f2b51e968ed3",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-cd51559c12c6bc2e",
-   "claim_ids": [
-    "T-EMP-03",
-    "T-ID-01"
-   ],
-   "content_sha256": "1371db1ac5fc2cc0d53cac75d5795acb1f277d43ecefc2e378d33f2cd0b44fea",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 1371db1ac5fc (vorher 2ba36ea5ff5f) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-cede873d57924937",
-   "claim_ids": [
-    "P-REG-RO-01",
-    "T-EV-06"
-   ],
-   "content_sha256": "7ed5454c04d604e788730a03b1ce57762cc64ab338cf30dfb7ff7c3c54a3381e",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 7ed5454c04d6 (vorher b04dced028a2) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-d1aafc1c9b0f1a75",
-   "claim_ids": [
-    "C-020",
-    "P-SKR-05"
-   ],
-   "content_sha256": "c96e0f91fc53c42d0d2d32b02b3d1c2f7434967d7f256419e4db0412b1fd6bc5",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot c96e0f91fc53 (vorher 67976f09be6a) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-d2d239c37b99eddf",
-   "claim_ids": [
-    "P-SKR-07"
-   ],
-   "content_sha256": "2582e9fc165d464df0ad0affc6ed2e3be1fe66ec7d98c1afd4a4b9b58d76f94b",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 2582e9fc165d (vorher c718b1a995e3) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-d2ef86f50f08a3d3",
-   "claim_ids": [
-    "C-023"
-   ],
-   "content_sha256": "d076d2512e8653dbbe0e13160a892709d9d3681212c67b99be8d9bb1aa47a4bd",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot d076d2512e86 (vorher 31a26606d4f2) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-d32c73540389046f",
-   "claim_ids": [
-    "T-AD-06"
-   ],
-   "content_sha256": "d51e0e80538d0df8ad56557f480b63ea673216c327ed164b5622f5eae546f05b",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot d51e0e80538d (vorher 49b8163f8936) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-d5ab9c70470a478d",
-   "claim_ids": [
-    "P-STAT-01"
-   ],
-   "content_sha256": "4f0345d698a62d6a1dd8b803d6128313309801350d380c4141fc635fa5002a86",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 4f0345d698a6 (vorher 204133353423) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-d776dc827ba55608",
-   "claim_ids": [
-    "P-REG-US-01"
-   ],
-   "content_sha256": "fe864fda4016aabd62860dfd9a5cad123d8e8fea4755018c2383424a04ff49b0",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-d7c2de50db0d079d",
-   "claim_ids": [
-    "P-SKX-03"
-   ],
-   "content_sha256": "f190a19ec8c03470d43433c9c9db8af636e9eefc6de5f72eb6d0c1a9ed0d8b08",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot f190a19ec8c0 (vorher ba29fab0c319) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-ddb1d21cd09da6cf",
-   "claim_ids": [
-    "P-REG-NO-01"
-   ],
-   "content_sha256": "6fc31d20b8a16c3dfb7fd172c3040031f5b9712ac9eba869c037db37fc271354",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 6fc31d20b8a1 (vorher f7573d469364) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-ddd98359e4352c31",
-   "claim_ids": [
-    "M-SE-TRI-01"
-   ],
-   "content_sha256": "a7f3eeaa3d7c14a540a5c61df358bf7710c7efb8e0b463a71fcaacf595789935",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot a7f3eeaa3d7c (vorher e74527e72bf4) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-dffd12785279e32f",
-   "claim_ids": [
-    "M-LT-MSH-01"
-   ],
-   "content_sha256": "5bc95757cd3ed9c2470aa341d92be01be4fd22f1c1afb95f02abf65b37058507",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 5bc95757cd3e (vorher fbbd972c7db8) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-e4c101cb061aafcf",
-   "claim_ids": [
-    "C-051"
-   ],
-   "content_sha256": "6240476cd4af036d4587b70a0d5677f576723da74bcf93b51a26b115138c6a97",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 6240476cd4af (vorher 304ecfd117af) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-e6e94711a0973745",
-   "claim_ids": [
-    "M-PL-PIL-01"
-   ],
-   "content_sha256": "45f9adab83562b80329fb1583d74c9a42e564d6bb89d38d3a5dc455fe9a9c193",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 45f9adab8356 (vorher fedb124de4ba) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-e6f358904e19e4e8",
-   "claim_ids": [
-    "P-AD-08",
-    "P-REG-DE-01"
-   ],
-   "content_sha256": "24eb1efde161bb5cdaa637eb444a3bb9dae4c14e94535b0a4b40281b8ff76202",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-ea6a47ff86b90b1c",
-   "claim_ids": [
-    "C-052",
-    "T-ID-06"
-   ],
-   "content_sha256": "22a4582ac1775ee3e3e7ecd534b11cbd6855bd98aba9ccda34146472a762d8e4",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 22a4582ac177 (vorher adfeab575b4d) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-eadffcced857ac38",
-   "claim_ids": [
-    "C-026",
-    "P-SKR-06"
-   ],
-   "content_sha256": "f95b77552ce8b42b06530e58cff44b11ece99dacd84ebaa17dbbded837cf7bc9",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot f95b77552ce8 (vorher cf19f41aafe5) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-eb7f63760aba3e64",
-   "claim_ids": [
-    "M-THA-02"
-   ],
-   "content_sha256": "940f6446ef9560cfeb8d7f213c7131fe3bb82f48ae10e22980fb71cabb4cbc0b",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 940f6446ef95 (vorher de77500835c0) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-ed85256fd87c2a74",
-   "claim_ids": [
-    "P-CUAS-03"
-   ],
-   "content_sha256": "e3c271f9d6b045b386aea15948d75061086843d6d0d9de8b511005c88a576193",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot e3c271f9d6b0 (vorher 957f427d0f98) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-eddf31ac6c75fbe9",
-   "claim_ids": [
-    "M-SE-TRI-01"
-   ],
-   "content_sha256": "6e642a1b5085dbaabd9db4e06e778069b763781583254f5192051936a9198161",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 6e642a1b5085 (vorher 9a2205d18f53) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-f129b4e8889709a9",
-   "claim_ids": [
-    "M-UK-SHORAD-01"
-   ],
-   "content_sha256": "1a37c9ee18af8613b2615404df0aa5135b1bdbad6bbc364de68b9ab82592ee42",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 1a37c9ee18af (vorher e78f5f76c76e) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-f3c15f4b90f4bfc8",
-   "claim_ids": [
-    "M-AT-ESSI-01"
-   ],
-   "content_sha256": "95be688d5c402eb106b8e05b5b0b275706140d45f4ddfa25baf28f275abcd821",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 95be688d5c40 (vorher ba13e17ae5d4) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-f4643db24ca2fc22",
-   "claim_ids": [
-    "T-EV-01"
-   ],
-   "content_sha256": "a34e8b679a34a63f2af4e1b2a374ff1af7f71e1a4682ade899c97efb79f51219",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot a34e8b679a34 (vorher f574d9d92e7c) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
    "source_id": "S-f4730b21412bb02a",
    "claim_ids": [
-    "C-007",
-    "C-033",
-    "C-036",
-    "C-041",
-    "C-042",
-    "P-REG-OWN-01",
-    "T-EV-03"
+    "C-032"
    ],
    "content_sha256": "138727c9936e18cce3a3e85772863f35c22cc8d842ec9baee46b5cbf5035bd6d",
    "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-f562ccee195198fd",
-   "claim_ids": [
-    "C-009"
-   ],
-   "content_sha256": "e17070b19ca32d9e5a320d3780ddf93e7418970962404d8bfd3964a8facec880",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot e17070b19ca3 (vorher b68ad3b7aa97) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-f8577da3c9c0698e",
-   "claim_ids": [
-    "C-025"
-   ],
-   "content_sha256": "5d4a47f165fca11c9fabbbe8f26e59e954ef148b03bd73135c020ca7ec36409e",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 5d4a47f165fc (vorher 7bdbe7b4f408) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-f927b29c83eb84ce",
-   "claim_ids": [
-    "P-REG-IT-01",
-    "P-SNS-01"
-   ],
-   "content_sha256": "3c2724dffafcf9adbc54e8bc0fe9b3120d80a5476131aef61d591e4a26c784e5",
-   "capture_kind": "http-original",
-   "note": "Snapshot unverändert; Belegstellen aus Runde 2 bestätigt."
-  },
-  {
-   "source_id": "S-faeb7be1bb92f0b5",
-   "claim_ids": [
-    "M-PL-NAREW-01"
-   ],
-   "content_sha256": "4c4ab1e0c51d85dcdb3bd5b56a720af4040e85cf94873789c3879f6e295b56f6",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot 4c4ab1e0c51d (vorher 70f80f31097a) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
-  },
-  {
-   "source_id": "S-fce8c647daaea30b",
-   "claim_ids": [
-    "M-SE-RBS-01"
-   ],
-   "content_sha256": "e58817482e151a429a366f8daf8567ec830454e53ec89dd93b81e3a7da549db8",
-   "capture_kind": "http-original",
-   "note": "Neuer Snapshot e58817482e15 (vorher fb2741c9a4ca) gelesen; Belegstellen der zugeordneten Claims unverändert vorhanden."
+   "note": "GB 2025, Strategie S. 39 (PDF-Seite 39) erneut gelesen: Team Lynx mit den Phasen 3/4 des XM30 beauftragt, Mitglieder und rund 650 Mio. EUR bestätigt; im Abschnitt nur „Im Jahr 2025“, kein Vergabemonat."
   }
  ],
  "review_groups": [
   {
    "claim_ids": [
-    "C-033"
+    "C-032"
    ],
    "depth": "A",
    "status": "geprüft",
-   "note": "Nur Zuordnung geändert (Cluster-coverage/report_log ohne SEC-Quelle); Claim und Belege (GB 2025, PM 30.04.2025) unverändert, Runde-2-Befund bestätigt."
+   "note": "Aussage unverändert und belegt. Ein Ereignisdatum fehlt zu Recht; event_status „beauftragt laut GB 2025, Stand 31.12.2025 (Vergabedatum nicht angegeben)“ und die ergänzte Unsicherheit sind korrekt. Kanten e47 (ard→teamlynx) und e48 (anduril→teamlynx): Richtung, Typ Projektteilnahme, Status „beauftragt (Stand GB 2025)“ und as_of/known_as_of 2025-12-31 als Bezugsstand des Berichts (kein Ereignisdatum) semantisch korrekt; keine bilaterale Beziehung unterstellt."
   },
   {
    "claim_ids": [
-    "C-036"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Nur Zuordnung geändert (coverage-Eintrag Lockheed ohne SEC-Quelle); Claim und GB-Beleg unverändert, Runde-2-Befund bestätigt."
-  },
-  {
-   "claim_ids": [
-    "C-051"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Neuer Snapshot der Stimmrechts-Seite: nur Datumsformat geändert (04/03/2026 → 04.03.2026 usw.); alle Meldungen und Quoten (BlackRock 7,33 %, Goldman 4,06 %, Morgan Stanley 4,37 %, BofA 4,64 %, UBS 3,83 %, FMR 2,78 % am 25.09.2026) unverändert bestätigt."
-  },
-  {
-   "claim_ids": [
-    "M-DE-SKR-02"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Neuer S&V-Snapshot (21.01.2026): 93 Systeme von vier Staaten, 18 Monate/ab 2028, Vertragsumfang unverändert vorhanden."
-  },
-  {
-   "claim_ids": [
-    "P-REG-NO-01"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Neuer Snapshot der PM 01.10.2026: Eröffnung 1.10.2026, Entwicklung/Produktion/Systemintegration/Logistik/Kundenbetreuung, 4.579 m², 100 Mitarbeitende unverändert. Neue Präsenzaktivität A-NO-SKO-DEV (development, own, operational, gleiche site_id S-NO-SKO, Ownership 100 %) ist durch diesen Claim semantisch gedeckt; keine Doppelzählung des Standorts."
-  },
-  {
-   "claim_ids": [
-    "P-REG-NORD-01"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Nur Zuordnung der Region R-NORD geändert; Claim/Quelle/Snapshot unverändert, Runde-2-Befund bestätigt."
-  },
-  {
-   "claim_ids": [
-    "P-REG-OWN-01"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Nur Zuordnung geändert (neue Aktivität A-NO-SKO-DEV referenziert den Claim); Claim/Quelle/Snapshot unverändert, Runde-2-Befund bestätigt."
-  },
-  {
-   "claim_ids": [
-    "T-AD-06"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Neue Snapshots Börse Online/dpa-AFX und finanzen.net: Zitate BAAINBw („ab Mitte 2027 … Mitte 2026“), „Performance … stark verbesserungswürdig“ und Rheinmetall-Gegenangabe (fünf Monate, 2027/2028) unverändert vorhanden; Änderungen nur Kurs-/Werbeblöcke."
-  },
-  {
-   "claim_ids": [
+    "C-001",
+    "C-002",
+    "C-003",
+    "C-004",
+    "C-005",
+    "C-006",
     "C-007",
+    "C-008",
     "C-009",
+    "C-010",
+    "C-011",
+    "C-012",
+    "C-013",
     "C-014",
     "C-015",
     "C-016",
@@ -1173,6 +54,7 @@
     "C-019",
     "C-020",
     "C-021",
+    "C-022",
     "C-023",
     "C-024",
     "C-025",
@@ -1182,35 +64,69 @@
     "C-029",
     "C-030",
     "C-031",
+    "C-033",
     "C-034",
     "C-035",
+    "C-036",
+    "C-037",
+    "C-038",
+    "C-039",
     "C-040",
     "C-041",
     "C-042",
+    "C-043",
+    "C-044",
+    "C-045",
+    "C-046",
+    "C-047",
+    "C-048",
+    "C-049",
     "C-050",
+    "C-051",
     "C-052",
     "C-053",
+    "C-054",
+    "H-PP-01",
+    "H-PP-02",
+    "H-PP-03",
+    "H-PP-04",
+    "H-PP-05",
     "H-PP-06",
+    "H-PP-07",
+    "H-PP-08",
+    "H-PP-09",
     "M-AT-ESSI-01",
     "M-AT-SKR-01",
     "M-AT-SKR-02",
     "M-CZ-MSH-01",
+    "M-DE-ARM-01",
     "M-DE-IRIS-01",
     "M-DE-IRIS-02",
     "M-DE-NNBS-01",
     "M-DE-SKR-01",
+    "M-DE-SKR-02",
     "M-DIEHL-01",
     "M-DK-GBAD-01",
     "M-DK-IRIS-01",
     "M-DK-SAMPT-01",
     "M-DK-SKR-01",
     "M-DK-VLM-01",
+    "M-EU-EDIP-01",
     "M-EU-SAFE-01",
     "M-EU-SAFE-02",
     "M-EU-SAFE-UK-01",
     "M-IT-A2CS-01",
     "M-LT-MSH-01",
     "M-MKT-SIPRI-00",
+    "M-MKT-SIPRI-AT",
+    "M-MKT-SIPRI-DE",
+    "M-MKT-SIPRI-DK",
+    "M-MKT-SIPRI-IT",
+    "M-MKT-SIPRI-NL",
+    "M-MKT-SIPRI-PL",
+    "M-MKT-SIPRI-RO",
+    "M-MKT-SIPRI-SE",
+    "M-MKT-SIPRI-UK",
     "M-NL-SKR-01",
     "M-PL-NAREW-01",
     "M-PL-PIL-01",
@@ -1223,26 +139,58 @@
     "M-THA-01",
     "M-THA-02",
     "M-UK-SHORAD-01",
+    "P-AD-01",
+    "P-AD-02",
+    "P-AD-03",
+    "P-AD-04",
+    "P-AD-05",
+    "P-AD-06",
+    "P-AD-07",
     "P-AD-08",
+    "P-AD-09",
     "P-AHD-01",
     "P-CUAS-01",
     "P-CUAS-02",
     "P-CUAS-03",
+    "P-DS-01",
+    "P-DS-02",
+    "P-DS-03",
+    "P-DS-04",
+    "P-DS-05",
     "P-HEL-01",
     "P-NAV-01",
+    "P-NS-01",
+    "P-NS-02",
+    "P-NS-03",
     "P-PS-01",
     "P-REG-AU-01",
     "P-REG-CA-01",
     "P-REG-CH-01",
     "P-REG-DE-01",
     "P-REG-ES-01",
+    "P-REG-EU-01",
+    "P-REG-HR-01",
+    "P-REG-HU-01",
+    "P-REG-IN-01",
     "P-REG-IT-01",
+    "P-REG-JV-01",
     "P-REG-LT-01",
+    "P-REG-ME-01",
+    "P-REG-NO-01",
+    "P-REG-NORD-01",
+    "P-REG-OWN-01",
+    "P-REG-PL-01",
     "P-REG-RO-01",
+    "P-REG-SEE-01",
+    "P-REG-SG-01",
+    "P-REG-UA-01",
+    "P-REG-UK-01",
     "P-REG-US-01",
+    "P-REG-ZA-01",
     "P-RGM-01",
     "P-SKM-01",
     "P-SKN-01",
+    "P-SKR-01",
     "P-SKR-02",
     "P-SKR-03",
     "P-SKR-04",
@@ -1253,122 +201,42 @@
     "P-SKX-02",
     "P-SKX-03",
     "P-SKX-04",
+    "P-SKX-05",
     "P-SNS-01",
     "P-SNS-02",
     "P-STAT-01",
     "P-STR-01",
-    "P-SVC-01",
-    "P-VS-04",
-    "P-VS-05",
-    "P-WA-01",
-    "T-AD-03",
-    "T-AD-04",
-    "T-AD-05",
-    "T-AD-07",
-    "T-EMP-03",
-    "T-EV-01",
-    "T-EV-03",
-    "T-EV-04",
-    "T-EV-06",
-    "T-EV-07",
-    "T-EV-09",
-    "T-EV-10",
-    "T-ID-01",
-    "T-ID-06"
-   ],
-   "depth": "A",
-   "status": "geprüft",
-   "note": "Geänderter Original-Snapshot nach Refresh im neuen Original gelesen: Belegstellen und alle Zahlen/Daten der Aussage unverändert vorhanden; Änderungen betreffen nur Datumsformat, Seitenrauschen oder Navigation (Abgleich alter/neuer Text pro Beleg, ausgewählte Passagen wörtlich gelesen). Runde-2-Inhaltsbefund trägt unverändert."
-  },
-  {
-   "claim_ids": [
-    "C-001",
-    "C-002",
-    "C-003",
-    "C-004",
-    "C-005",
-    "C-006",
-    "C-008",
-    "C-010",
-    "C-011",
-    "C-012",
-    "C-013",
-    "C-022",
-    "C-032",
-    "C-037",
-    "C-038",
-    "C-039",
-    "C-043",
-    "C-044",
-    "C-045",
-    "C-046",
-    "C-047",
-    "C-048",
-    "C-049",
-    "C-054",
-    "H-PP-01",
-    "H-PP-02",
-    "H-PP-03",
-    "H-PP-04",
-    "H-PP-05",
-    "H-PP-07",
-    "H-PP-08",
-    "H-PP-09",
-    "M-DE-ARM-01",
-    "M-EU-EDIP-01",
-    "M-MKT-SIPRI-AT",
-    "M-MKT-SIPRI-DE",
-    "M-MKT-SIPRI-DK",
-    "M-MKT-SIPRI-IT",
-    "M-MKT-SIPRI-NL",
-    "M-MKT-SIPRI-PL",
-    "M-MKT-SIPRI-RO",
-    "M-MKT-SIPRI-SE",
-    "M-MKT-SIPRI-UK",
-    "P-AD-01",
-    "P-AD-02",
-    "P-AD-03",
-    "P-AD-04",
-    "P-AD-05",
-    "P-AD-06",
-    "P-AD-07",
-    "P-AD-09",
-    "P-DS-01",
-    "P-DS-02",
-    "P-DS-03",
-    "P-DS-04",
-    "P-DS-05",
-    "P-NS-01",
-    "P-NS-02",
-    "P-NS-03",
-    "P-REG-EU-01",
-    "P-REG-HR-01",
-    "P-REG-HU-01",
-    "P-REG-IN-01",
-    "P-REG-JV-01",
-    "P-REG-ME-01",
-    "P-REG-PL-01",
-    "P-REG-SEE-01",
-    "P-REG-SG-01",
-    "P-REG-UA-01",
-    "P-REG-UK-01",
-    "P-REG-ZA-01",
-    "P-SKR-01",
-    "P-SKX-05",
     "P-STR-02",
     "P-STR-03",
+    "P-SVC-01",
     "P-VS-01",
     "P-VS-02",
     "P-VS-03",
+    "P-VS-04",
+    "P-VS-05",
+    "P-WA-01",
     "P-WA-02",
     "P-WA-03",
     "T-AD-01",
     "T-AD-02",
+    "T-AD-03",
+    "T-AD-04",
+    "T-AD-05",
+    "T-AD-06",
+    "T-AD-07",
     "T-EMP-01",
     "T-EMP-02",
+    "T-EMP-03",
+    "T-EV-01",
     "T-EV-02",
+    "T-EV-03",
+    "T-EV-04",
     "T-EV-05",
+    "T-EV-06",
+    "T-EV-07",
     "T-EV-08",
+    "T-EV-09",
+    "T-EV-10",
     "T-EV-11",
     "T-FIN-01",
     "T-FIN-02",
@@ -1379,17 +247,19 @@
     "T-FIN-07",
     "T-FIN-08",
     "T-FIN-09",
+    "T-ID-01",
     "T-ID-02",
     "T-ID-03",
     "T-ID-04",
     "T-ID-05",
+    "T-ID-06",
     "T-SEG-01",
     "T-SEG-02",
     "T-STR-01"
    ],
    "depth": "A",
    "status": "übernommen",
-   "note": "Ausdrücklich übernommen: Aussage, Quellenmetadaten, Original-Snapshot und Zuordnung unverändert gegenüber freigegebenem review-basis-r2.md; dortiger A-Befund gilt."
+   "note": "Ausdrücklich übernommen: Aussage, Quellenmetadaten, Snapshot und Zuordnung unverändert gegenüber dem freigegebenen Basis-Review r3; dortiger A-Befund gilt."
   }
  ]
 }
