@@ -223,3 +223,28 @@ Sämtliche Testquellen und Reviewer-Urteile sind fiktiv/simuliert. Keine echten
 Unternehmensquellen geöffnet und keine tatsächliche Inhaltsfreigabe behauptet.
 Künftige Vollbriefings recherchieren die aktuellen Firmen-/Regionsdaten neu und
 beauftragen --presence; der allgemeine Markt-/Industrie-Deep-Dive bleibt auf Seite 3.
+
+## Cluster und technischer Vergleich 16.10.2026
+Die bereitgestellte Rheinmetall-HTML wurde ausschließlich aus ihrem vorhandenen
+Inhalt neu dargestellt; ihr fachlicher Stichtag bleibt 13.10.2026. Keine neue
+Recherche oder Quellenfreigabe. Generische Vorgaben stehen in
+`netzwerk-html.md` und `capability-matrix.md`, nicht in Agentenkontexten.
+
+- Cluster: Radius 22, fünf Akteure je voller Bereichsreihe, vier Kategorien im
+  bisherigen 2×2-Raster mit gleicher Höhe je Bereichsreihe. 39 Knoten und 51
+  Kanten unverändert; Formen, Farben, Filter und rechte Detailansicht erhalten.
+- Vergleich: fünf technische Kriterien mit 45 Faktenprofilen für neun Angebote;
+  18 bisherige Beschaffungs-/Industriebewertungen unverändert. 36 zusätzliche
+  Markt-/Integrationsprofile bleiben separat zugänglich. Technische Angaben
+  bekommen keinen künstlichen Leistungsscore. Fehlende Angaben beziehen sich
+  ausdrücklich auf die vorliegende HTML, nicht auf die gesamte öffentliche Lage.
+- Alle 360 Quellenregister-Claims sowie übrige Module unverändert; keine
+  doppelten IDs oder ungültigen internen Links. JavaScript-Syntax geprüft.
+- Offline-Chromium mit der überarbeiteten HTML bei 1440/1280/1024 Pixeln:
+  fünf Symbole je voller Reihe, alle Knoten/Kanten und Details bedienbar, keine
+  globale horizontale Überbreite. Matrix mit sieben Spalten, technischem
+  Erstprofil, vollständigen Zell-/Spaltendetails und sichtbaren Datenlücken.
+  Druck und Fallback ohne JavaScript vollständig; keine JavaScript-Fehler.
+  Netzwerk und Matrix zusätzlich visuell kontrolliert.
+- Alle 187 Python-Tests bestanden. Dies prüft Darstellung und Bestandserhalt,
+  ersetzt keine erneute fachliche Prüfung der ursprünglichen Recherche.

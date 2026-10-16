@@ -17,6 +17,11 @@ Der Cluster-Agent erstellt keine eigene finale HTML und überspringt keine Revie
   Größenbasis. Keine Größenstaffelung oder Zahlen-/Score-Badges in den Formen.
   Kurze Unternehmensnamen stehen unter den Formen, der Zielname im Zentrum.
   Jede Knotenart hat eine konsistente Farbe und Form samt gemeinsamer Legende.
+  Größenbasis: Radius 22 SVG-Einheiten (Durchmesser 44), auch für das Ziel.
+  Je Bereich fünf Akteure pro Reihe; Namen umbrechen statt Spaltenzahl reduzieren.
+  Bei schmaler Fläche nur das Netz lokal horizontal scrollen. Die vier Bereiche
+  bleiben im 2×2-Raster: gleiche Höhe je Bereichsreihe, Höhe nach benötigten
+  Akteursreihen. Filter, Reihenfolge, Formen und rechte Detailspalte erhalten.
 - Linien zeigen anfangs keine Beschriftung, Quote, Quellen oder Hover-Details.
   Verbindungen folgen dem bestätigten ursprünglichen Stil: leicht gebogene
   Linien mit Richtungspfeilen zwischen den Knotenrändern, ohne Endpunktkreise.

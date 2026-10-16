@@ -3,6 +3,52 @@ Darstellung wie Referenz-HTML: Unternehmen/konkretes Angebot in Zeilen, Kriterie
 in Spalten, jede Zelle mit späterem Deep Dive zu Begründung, Evidenz und Quellen.
 Scores zeigen öffentliche Evidenzreife, keine gemessene technische Überlegenheit.
 
+## Technische Systemvergleiche priorisieren
+Bei Produkt-/Systemvergleichen überwiegend technische Kriterien wählen. Als
+Richtwert drei bis fünf technische Dimensionen plus die ergänzenden Kriterien
+„Belegter Beschaffungs- und Einsatzstand“ und „Industrielle Fertigungs- und
+Lieferfähigkeit“. Für andere Aufgaben fachlich begründet anpassen; keine festen
+Flugabwehrspalten in branchenfremde Aufträge übernehmen. Kundenzahl, lokale
+Wertschöpfung und Partnerschaften ergänzen die Details, ersetzen keine Technik.
+
+Für Flugabwehr bietet sich an: Wirkmittel/Kaliber, Bekämpfungsentfernung/-höhe,
+Sensorik/Zielverfolgung, Führung/Vernetzung, Mobilität/Systemarchitektur. Wo
+belastbar verfügbar, technische Details wie Kadenz, Bereitschaftsmunition,
+Bekämpfungskanäle, Reaktionszeit, Ziel-/Störbedingungen und Schnittstellen aufnehmen.
+Fehlende Daten nicht durch Beschaffungsvolumen oder einen Reifegrad ersetzen.
+Technische Daten als Profil oder Kennzahl, Beschaffung/Industrie mit eigenen
+Evidenzmaßstäben. Ein hoher Reifegrad bedeutet keine höhere technische Leistung.
+
+Vorgehen im bestehenden Ablauf, ohne zusätzliche Agenten-/Prüfrunde:
+1. Vergleichseinheiten und Rüststände vor Recherche festlegen; Turm, Batterie,
+   Flugkörpervariante und Gesamtverbund unterscheiden. Nach vergleichbarer Rolle
+   gruppieren, alle ursprünglich relevanten Angebote sichtbar halten.
+2. Auftragsspezifische technische Kriterien im comparison-plan definieren; je
+   Messwert Einheit, Definition und Bedingungen festhalten. „Bis zu“/instrumentierte
+   Reichweite, Herstellerangabe, Medienangabe, Test oder Einsatznachweis trennen.
+3. Marktrolle erfasst pro System/Kriterium Fakten mit direkten Belegen und IDs;
+   vorhandene Portfolio-/Cluster-Claims wiederverwenden. Angaben anderer Varianten
+   nicht übertragen: z. B. SLM-Radar nicht für SLS, Skyranger-35-Reichweite nicht
+   für Skynex. Radarreichweite ist keine Bekämpfungsentfernung. Geplante Integration
+   nicht als verfügbaren Serienstand ausgeben.
+4. Quellenreview prüft technische Messwerte, Variante, Rahmenbedingungen und
+   Vergleichbarkeit vollständig A. Positionierung verdichtet erst danach; keine
+   Sieger-/Summenscores über Kanonen-, Hybrid- und Flugkörpersysteme bilden.
+5. Renderer zeigt technische Spalten zuerst, Beschaffung/Industrie anschließend.
+   Die anfängliche Detailansicht folgt dem ersten Kriterium des Vergleichsplans,
+   statt automatisch eine Evidenzstufe vorzuziehen.
+   Zellen und Spaltenköpfe öffnen weiterhin vollständige Fakten/Quellen und den
+   Kriterienvergleich. Markt-/Industrieprofile als ergänzende Details erhalten.
+   Fehlende öffentliche Daten und nicht anwendbare Kriterien weiterhin trennen.
+
+Bestehenden Vergleichsplan bei dieser Umstellung neu versionieren und alle
+betroffenen Beobachtungen/Interpretationen neu prüfen; alte I-Scores nicht in
+technische Leistungswerte umbenennen. Bei einer ausdrücklich nur aus bestehender
+HTML beauftragten Neudarstellung sind neue Technikprofile quellengebundene Auszüge,
+keine neue Freigabe: Stichtag erhalten, „im vorliegenden Briefing nicht angegeben“
+von allgemein fehlender öffentlicher Evidenz unterscheiden, originale Bewertungen
+und Quellen unverändert zugänglich halten. Keine neuen Leistungsdaten ergänzen.
+
 ## Vor der Wettbewerbsrecherche
 Hauptagent erstellt comparison-plan.json mit company, as_of, run_id,
 comparison_unit, purpose, peer_groups, criteria und version.

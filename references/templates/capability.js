@@ -42,7 +42,7 @@
  root.addEventListener('keydown',event=>{const cell=event.target.closest('.cm-cell');if(cell&&event.key===' '){event.preventDefault();pick(cell);}});
  columns.forEach((b,i)=>{b.disabled=false;b.addEventListener('click',()=>pick(cells.find(c=>c.dataset.cmCol===String(i)&&c.dataset.cmRow===active.dataset.cmRow),true));});
  root.style.setProperty('--cm-table-width',Math.max(760,172+columns.length*155)+'px');
- const reference=cells.filter(c=>c.closest('.cm-reference')),initial=reference.find(c=>c.dataset.cmKind==='evidence')||reference[0]||cells.find(c=>c.dataset.cmKind==='evidence')||cells[0];
+ const reference=cells.filter(c=>c.closest('.cm-reference')),initial=reference[0]||cells[0];
  pick(initial);root.classList.add('cm-enhanced');
  // Measure complete text at the available column width; never clamp the summaries.
  let lastWidth=0;
