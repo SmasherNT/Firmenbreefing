@@ -77,3 +77,8 @@ und kompakte Executive Summary. Dies ist ein reales, datiertes Briefing; es
 ist vom synthetischen briefing-demo.html getrennt. Inhalte und Quellenstand
 wurden bei der Layoutänderung nicht neu recherchiert oder erneut freigegeben.
 Neue Firmenläufe verwenden nur die generischen Vorlagen, keine Rheinmetall-Daten.
+
+Gesprächspartner-Ergänzung vom 17.10.2026: sechs recherchierte Meldungen zu
+Papperger als aufklappbare Timeline, Zugriffslücken gekennzeichnet. Quellen und
+Evidenz ausschließlich auf Seite 4; kein regionaler Personenabschnitt. Die datierte
+HTML enthält diese Ergänzung separat vom übrigen Quellenstand.

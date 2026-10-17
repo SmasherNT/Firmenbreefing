@@ -42,3 +42,38 @@ class ProfileTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'requires period'):RENDER.build(**self.b)
 
 if __name__=='__main__':unittest.main()
+
+class PersonMediaTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        ProfileTests.setUpClass()
+        cls.original = ProfileTests.original
+    def setUp(self):
+        ProfileTests.setUp(self)
+        self.profile['media']=[dict(id='sample', published_date=self.b['manifest']['as_of'],
+            category='own', format='Synthetisches Interview', title='Test <Titel>',
+            preview='Fiktive Vorschau', claim_ids=['H1'], access_note='Nur synthetischer Test')]
+        refresh_basis(self.b)
+    def test_source_page_and_no_region(self):
+        body=RENDER.build(**self.b)
+        profile=body.split('id="page-profile"',1)[1].split('id="page-regions"',1)[0]
+        sources=body.split('id="page-sources"',1)[1]
+        self.assertIn('Aktuelle Äußerungen &amp; Medienpräsenz der letzten vier Monate',profile)
+        self.assertIn('Test &lt;Titel&gt;',profile)
+        self.assertIn('pm-source-refs',profile)
+        self.assertNotIn('<div class="pp-sources">',profile)
+        self.assertNotIn('Regionaler Bezug',profile)
+        self.assertIn('person-source-1',sources)
+        self.assertIn('pp-evidence',sources)
+    def test_old_or_future_publication_rejected(self):
+        for published in ['2020-01-01','2099-01-01','2026-02-30']:
+            self.profile['media'][0]['published_date']=published
+            refresh_basis(self.b)
+            with self.assertRaises(ValueError):RENDER.build(**self.b)
+    def test_media_mapping_needs_current_review(self):
+        self.profile['media'][0]['title']='Geändert'
+        with self.assertRaisesRegex(ValueError,'snapshot missing/stale'):RENDER.build(**self.b)
+    def test_quote_source_must_be_evidence(self):
+        self.profile['media'][0].update(quote='Testzitat',quote_source_id='unknown',quote_location='Seite 1')
+        refresh_basis(self.b)
+        with self.assertRaisesRegex(ValueError,'quote source'):RENDER.build(**self.b)

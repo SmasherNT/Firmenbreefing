@@ -1,12 +1,14 @@
 """Source-linked professional profile. No inferred career or hard-coded person."""
 from html import escape
 from pathlib import Path
+from datetime import date
+import calendar
 
 ESC = lambda value: escape(str(value), quote=True)
 FIELDS = ('snapshot', 'career', 'expertise', 'responsibilities')
 
 
-def validate(profile, require):
+def validate(profile, require, as_of=None, claims=None):
     if not isinstance(profile, dict) or not isinstance(profile.get('name'), str) or not profile['name'].strip():
         raise ValueError('profile needs a name')
     refs = profile.get('claim_ids')
@@ -37,6 +39,32 @@ def validate(profile, require):
         for item in rows:
             row(item, required[field])
 
+    media = profile.get('media', [])
+    if not isinstance(media, list):
+        raise ValueError('profile media must be a list')
+    seen = set()
+    for entry in media:
+        row(entry, ('id','published_date','category','format','title','preview','access_note'))
+        if entry['id'] in seen or entry['category'] not in MEDIA_CATEGORIES:
+            raise ValueError('duplicate media id or invalid category')
+        seen.add(entry['id'])
+        try:
+            published = date.fromisoformat(entry['published_date'])
+            event = date.fromisoformat(entry['event_date']) if entry.get('event_date') else None
+        except (ValueError, TypeError):
+            raise ValueError('invalid media date')
+        if as_of and not media_window(as_of)[0] <= published <= date.fromisoformat(as_of):
+            raise ValueError('media publication outside four-month window')
+        if event and event > published:
+            raise ValueError('media event later than publication')
+        if entry.get('quote'):
+            if not isinstance(entry['quote'], str) or len(entry['quote'].split()) > 25:
+                raise ValueError('media quote must be short')
+            if not entry.get('quote_source_id') or not entry.get('quote_location'):
+                raise ValueError('media quote requires source and location')
+            if claims and entry['quote_source_id'] not in {sid for cid in entry['claim_ids'] for sid in claims[cid]['source_ids']}:
+                raise ValueError('media quote source outside referenced claims')
+
 
 def render(profile, claims, sources, company, as_of):
     """Caller validates review status and profile mappings before rendering."""
@@ -66,14 +94,19 @@ def render(profile, claims, sources, company, as_of):
         content='<ul>'+''.join('<li><strong>'+ESC(r['label'])+':</strong> '+ESC(r['text'])+refs(r['claim_ids'])+'</li>' for r in rows)+'</ul>' if rows else missing()
         body+=block(title,content,number)
     body+='</div>'
-    region=profile.get('regional_context')
-    if region:
-        body+='<aside class="pp-note"><strong>'+ESC(region['label'])+'</strong><p>'+ESC(region['text'])+refs(region['claim_ids'])+'</p></aside>'
-    else:
-        body+='<aside class="pp-note"><strong>Regionaler Bezug</strong><p>Kein freigegebener regionaler Personenbezug im Recherchepaket. Unternehmenspräsenz allein belegt keine persönliche Zuständigkeit.</p></aside>'
+    used.update(cid for entry in profile.get('media', []) for cid in entry['claim_ids'])
     remaining=[c for c in profile['claim_ids'] if c not in used]
     if remaining:
         body+=block('Weitere belegte Profilangaben',''.join('<p>'+ESC(claims[c]['statement'])+refs([c])+'</p>' for c in remaining),'05')
+    css=(Path(__file__).resolve().parents[1]/'references/templates/profile.css').read_text()
+    return '<style>'+css+'</style><article class="person-profile">'+body+'</article>'
+
+
+def render_sources(profile, claims, sources):
+    """Full evidence is rendered on the sources page only."""
+    source_order = list(dict.fromkeys(s for cid in profile['claim_ids'] for s in claims[cid]['source_ids']))
+    source_numbers = {sid:i+1 for i,sid in enumerate(source_order)}
+    body = ''
     body+='<div class="pp-sources"><h3>Quellen &amp; Evidenz</h3>'
     for sid in source_order:
         s=sources[sid];n=source_numbers[sid]
@@ -86,5 +119,39 @@ def render(profile, claims, sources, company, as_of):
         if c.get('uncertainty'):body+=' <em>Grenze: '+ESC(c['uncertainty'])+'</em>'
         body+='</p>'
     body+='</div></div>'
-    css=(Path(__file__).resolve().parents[1]/'references/templates/profile.css').read_text()
-    return '<style>'+css+'</style><article class="person-profile">'+body+'</article>'
+    return '<div class="person-profile">'+body+'</div>'
+
+
+MEDIA_CATEGORIES = {'own':'Eigene Äußerungen', 'official':'Offizielle Verlautbarungen', 'media':'Artikel über die Person'}
+
+def media_window(as_of):
+    end = date.fromisoformat(as_of)
+    month = end.year * 12 + end.month - 1 - 4
+    year, zero_month = divmod(month, 12)
+    start = date(year, zero_month+1, min(end.day, calendar.monthrange(year, zero_month+1)[1]))
+    return start, end
+
+def render_media(profile, claims, as_of, sources=None):
+    entries = sorted(profile.get('media', []), key=lambda x:x['published_date'], reverse=True)
+    start, end = media_window(as_of)
+    labels = {**MEDIA_CATEGORIES, 'media':'Artikel über '+profile['name']}
+    out = ['<section class="module" id="person-media"><h2>Aktuelle Äußerungen &amp; Medienpräsenz der letzten vier Monate</h2>',
+        '<div class="pm-head"><p class="pm-window">'+start.strftime('%d.%m.%Y')+'–'+end.strftime('%d.%m.%Y')+' · Nach Veröffentlichung sortiert</p><div class="pm-legend" aria-label="Kategorien">']
+    out += ['<span class="pm-tag pm-'+key+'">'+ESC(label)+'</span>' for key,label in labels.items()]
+    out += ['</div></div><div class="timeline pm-timeline">']
+    for index, entry in enumerate(entries, 1):
+        publishers = list(dict.fromkeys(sources[sid]['name'] for cid in entry['claim_ids'] for sid in claims[cid]['source_ids'])) if sources else []
+        publisher = '<span class="pm-publisher">'+ESC(' · '.join(publishers))+'</span>' if publishers else ''
+        published = date.fromisoformat(entry['published_date'])
+        out += ['<div class="event pm-event"><time datetime="'+entry['published_date']+'">'+published.strftime('%d.%m.%Y')+'</time><details class="pm-entry pm-'+entry['category']+'" id="person-media-'+str(index)+'"><summary><span class="pm-kicker">'+ESC(labels[entry['category']]+' · '+entry['format'])+'</span><span class="pm-title">'+ESC(entry['title'])+'</span><span class="pm-preview">'+ESC(entry['preview'])+'</span>'+publisher+'<span class="pm-arrow" aria-hidden="true">⌄</span></summary><div class="pm-body">']
+        out += ['<p>'+ESC(claims[cid]['statement'])+'</p>' for cid in entry['claim_ids']]
+        if entry.get('quote'):
+            out += ['<blockquote>„'+ESC(entry['quote'])+'“</blockquote>']
+        if entry.get('event_date'):
+            out += ['<p class="meta">Ereignisdatum: '+ESC(entry['event_date'])+' · Veröffentlichung: '+ESC(entry['published_date'])+'</p>']
+        out += ['<p class="pm-limit"><strong>Einordnung &amp; Prüfgrenze:</strong> '+ESC(entry['access_note'])+'</p>']
+        out += ['<p class="pm-source-refs">Quellen und Evidenz: '+', '.join('<a href="#'+ESC(cid)+'">'+ESC(cid)+'</a>' for cid in entry['claim_ids'])+'</p></div></details></div>']
+    if not entries:
+        out += ['<p class="meta">Keine freigegebenen Beiträge im Viermonatsfenster vorhanden. Daraus folgt nicht, dass keine veröffentlicht wurden.</p>']
+    out += ['</div><p class="pm-note">Auswahl beruflich relevanter Beiträge; keine vollständige Medienauswertung. Gleichlautende Beiträge zum selben Ereignis zusammenfassen.</p></section>']
+    return ''.join(out)

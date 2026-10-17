@@ -4,7 +4,9 @@ Der bestehende company-context-Faktenagent liefert `profile` im context-facts.js
 Kein zusätzlicher Agent, keine HTML und keine strategische Personenbewertung.
 Darstellung wie die freigegebene Profilvorlage: Name/Einleitung, Snapshot (bis zu
 sechs Felder, drei Spalten), Werdegangstabelle, Fachprofil und Verantwortung
-nebeneinander, regionaler Bezug, Quellen. Inhalte stehen offen auf Seite 2.
+nebeneinander. Danach folgt die Medien-Timeline. Quellen und Evidenz stehen
+ausschließlich auf Seite 4, erreichbar über Verweise auf der Profilseite.
+Keinen Abschnitt „Regionaler Bezug“ darstellen.
 
 ## Datenvertrag
 
@@ -25,9 +27,9 @@ Neue Läufe liefern folgende Strukturen; leere Listen bei fehlender Evidenz:
 - `expertise`, `responsibilities`: jeweils `{label, text, claim_ids}`.
   Frühere Tätigkeiten nicht als aktuelle Verantwortung darstellen.
 - `regional_context`: optional `{label, text, claim_ids}`. Nur den belegten
-  persönlichen Bezug zum beauftragten Markt darstellen. Unternehmenspräsenz
-  allein genügt nicht. Ohne Beleg dieses Feld weglassen und Suche in gaps/coverage
-  dokumentieren; der Renderer zeigt eine neutrale Lücke des Recherchepakets.
+  persönlichen Bezug aus älteren Datenverträgen erhalten. Dieses Feld wird auf
+  der Gesprächspartnerseite nicht als eigener Abschnitt dargestellt. Neue Läufe
+  benötigen hierfür keine gesonderte Recherche.
 
 Alle claim_ids müssen in profile.claim_ids stehen. Der Renderer verlangt aktuelle
 A-Prüfungen; prepare-facts prüft Struktur und Verweise vor dem Basis-Review.
@@ -40,5 +42,43 @@ Nicht einsortierte H-Claims bleiben unter „Weitere belegte Profilangaben“ er
 
 Die lokale Komponente scripts/profile-html.py und profile.css erzeugt das Profil.
 Nummerierte Belege springen zu direkten Originalquellen; vollständige Aussagen,
-Unsicherheiten und Links ins gemeinsame Claimregister bleiben am Profilende sichtbar.
+Unsicherheiten und Links ins gemeinsame Claimregister stehen auf Seite 4.
+Der Profilteil enthält nur nummerierte Quellenverweise dorthin.
 Nur Code und Layout wiederverwenden, nie Personendaten des vorigen Unternehmens.
+
+
+## Aktuelle Äußerungen & Medienpräsenz der letzten vier Monate
+Bei genannter Person zusätzlich im bestehenden context-Faktenauftrag recherchieren.
+Das Viermonatsfenster endet am Auftragsstichtag, nicht an einem späteren Renderdatum.
+Öffentliche Interviews, Reden/Stellungnahmen, offizielle Mitteilungen mit persönlichem
+Zitat sowie relevante Artikel mit Namen der Person suchen; Gegenrecherche einschließen.
+Keine privaten Inhalte. Alle verwendeten Quellen öffnen und lesen. Bezahlschranken
+und verfügbare Auszüge ausdrücklich kennzeichnen; daraus keine Volltextthesen ableiten.
+Gleiche Meldung, Übersetzung und Video desselben Interviews zu einem Eintrag bündeln.
+
+`profile.media`: Liste von Einträgen mit folgenden Feldern:
+- `id`: eindeutige interne ID; `published_date`: YYYY-MM-DD innerhalb des Fensters.
+- `event_date`: optionales gesondertes Ereignisdatum, nicht nach Veröffentlichung.
+- `category`: `own` (eigene Äußerung), `official` (offizielle Verlautbarung) oder
+  `media` (Artikel über die Person). Medienkritik nicht als persönliche Aussage ausgeben.
+- `format`, `title`, `preview`: kurze quellengedeckte Texte für die geschlossene Zeile.
+- `claim_ids`: nichtleere Liste geprüfter beruflicher H-Claims aus profile.claim_ids.
+  Deren Aussagen liefern die Zusammenfassung im Klickdetail. Vollständige Quellen,
+  Abrufdaten, Ursprung und konkrete Belegstellen stehen im normalen Faktenvertrag.
+- `access_note`: konkrete Zugriffslage und Aussagegrenze; Pläne als Erwartungen benennen.
+- optional `quote`, `quote_source_id`, `quote_location`: kurzes exaktes belegtes Zitat.
+  Quelle muss in den referenzierten Claims vorkommen. Urheberrechtliche Grenzen
+  über alle Zitate und Paraphrasen derselben Quelle gemeinsam einhalten.
+
+Alle Medienzuordnungen unterliegen demselben semantischen Basis-Review und dessen
+Fingerprint; keine automatische Inhaltsfreigabe durch ein technisch gültiges Datum.
+Auch Titel/Preview auf korrekte Zuschreibung prüfen. Fehlende öffentliche Treffer oder
+Zugriffe in gaps/coverage dokumentieren; `media=[]` bleibt möglich und wird als
+fehlende freigegebene Abdeckung angezeigt, nicht als Beweis fehlender Medienpräsenz.
+Alte Profile ohne media bleiben technisch lesbar; neue Aufträge recherchieren den Block.
+
+Darstellung: exakte Überschrift oben, kompakte chronologische Zeilen (neueste zuerst),
+Datum links, drei farbige Kategorien samt Legende. Klick oder Tastatur öffnet
+Zusammenfassung, optional Zitat, Kontext und Zugriffshinweis. Auf Seite 2 nur interne
+Quellen-/Evidenzverweise; volle Belege auf Seite 4. Native details funktionieren auch
+ohne JavaScript. Keine Personendaten vom vorigen Unternehmen übernehmen.

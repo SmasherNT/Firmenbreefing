@@ -14,8 +14,12 @@ Lies delegierten Auftrag/Manifest und references/faktenphase.md.
    belegter Werdegang/Zuständigkeit. Keine private Recherche oder erfundene
    regionale Beziehungen. Nutzerrolle als zunächst ungeprüfte Angabe führen.
    Profilstruktur nach references/gespraechspartner.md liefern: intro, snapshot,
-   career, expertise, responsibilities und optional regional_context, jeweils mit
-   H-Claim-Verweisen. Unbekannte Daten offen lassen, Rollenwechsel qualifizieren.
+   career, expertise, responsibilities sowie media für Äußerungen und Artikel
+   der letzten vier Monate, jeweils mit
+   H-Claim-Verweisen. Drei Medienkategorien, Veröffentlichungs-/Ereignisdatum,
+   Quellenzugriff und konkrete Belegstellen nach gespraechspartner.md prüfen.
+   Kein separater regionaler Personenabschnitt. Unbekannte Daten offen lassen,
+   Rollenwechsel qualifizieren.
 4. Offene Nachrichten/Fachmedien- und Gegenrecherche einbeziehen; Quellen
    tatsächlich lesen. Quellenkatalog nach benötigtem Bereich nutzen.
 5. T-/H-Claims, events/profile/company_facts, Abdeckung und Quellenvorschläge

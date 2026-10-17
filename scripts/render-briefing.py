@@ -166,7 +166,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         if profile is not None:
             if role != "context" or not manifest.get("person") or not CHECK.text(profile.get("name")):
                 raise ValueError("profile needs named person and context role")
-            PROFILE.validate(profile, require)
+            PROFILE.validate(profile, require, manifest["as_of"], claims)
         if view.get('market_dashboard') is not None:
             if role != 'market':
                 raise ValueError('market_dashboard belongs to market role')
@@ -466,6 +466,8 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             limits += paragraphs(o.get('shared_limitations', [])) + note_rows(o.get('research_requests', []))
     main += '<section class="module"><details class="data-gaps"><summary style="cursor:pointer"><h2 style="display:inline;margin:0">Datenlücken &amp; offene Fragen</h2></summary><div style="margin-top:18px">' + limits + '</div></details></section>'
     profile_body = '<p>Kein Gesprächspartner im Auftrag angegeben.</p>'
+    person_sources = ''
+    person_media = ''
     if manifest.get('person'):
         profile = views.get('context', {}).get('profile')
         person = manifest['person']
@@ -481,6 +483,8 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         body = '<p class="meta">Gesprächspartner aus dem Auftrag (Nutzerangabe): ' + esc(person) + '</p>'
         if profile:
             body = PROFILE.render(profile, claims, sources, manifest['company'], manifest['as_of'])
+            person_sources = section('Gesprächspartner · Quellen & Evidenz', PROFILE.render_sources(profile, claims, sources), 'person-profile-sources')
+            person_media = PROFILE.render_media(profile, claims, manifest['as_of'], sources)
         else:
             body += '<p>Berufliches Profil öffentlich nicht verifiziert.</p>'
         profile_body = body
@@ -499,7 +503,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     if region_interpretations:
         regions.append(section('Einordnung · Marktzugang', grid(region_interpretations)))
     market_label = 'Markt-Deep-Dive' + (' · ' + manifest['market_title'] if manifest.get('market_title') else '')
-    pages = [('page-main', 'Überblick', main), ('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body)),
+    pages = [('page-main', 'Überblick', main), ('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media),
              ('page-regions', market_label, ''.join(regions) or section(market_label, '<p>Keine freigegebenen regionalen Befunde für diesen Auftrag.</p>'))]
     register = '<label class="source-search">Quellen und Aussagen durchsuchen<input id="source-search-input" type="search" placeholder="Stichwort, Claim oder Quelle"></label>'
     for cid, row in claims.items():
@@ -511,7 +515,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     for cid, row in interpreted.items():
         register += '<details class="claim-detail" id="' + esc(cid) + '"><summary>' + esc(cid + ' · ' + row['statement']) + '</summary><p class="meta">Analysteninterpretation · vollständig geprüft im Schluss-Review</p>' + paragraphs([row['reasoning'], row['method'], row['uncertainty'], row.get('next_stage_limit'), row.get('coverage_note')]) + links(row['depends_on']) + '</details>'
     register += '<h3>Dokumente</h3>' + ''.join('<p>' + source_html(s) + '</p>' for s in sources.values())
-    pages.append(('page-sources', 'Quellen', section('Aussagen, Belegstellen & Originalquellen', register)))
+    pages.append(('page-sources', 'Quellen', section('Aussagen, Belegstellen & Originalquellen', register) + person_sources))
     tabs = ''.join('<button type="button" role="tab" id="tab-' + ident + '" data-page="' + ident + '" aria-controls="' + ident + '">' + str(i) + ' · ' + esc(label) + '</button>' for i, (ident, label, _) in enumerate(pages, 1))
     content = ''.join('<div class="page" role="tabpanel" aria-labelledby="tab-' + ident + '" id="' + ident + '"><p class="page-kicker">' + str(i).zfill(2) + ' / 04 · ' + esc(label) + '</p>' + body + '</div>' for i, (ident, label, body) in enumerate(pages, 1))
     if positioning_context and positioning_context.get('module_insights'):

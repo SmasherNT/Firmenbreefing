@@ -132,3 +132,8 @@ Grafik mit fünf Symbolen pro voller Reihe je Cluster. Executive Summary gemäß
 executive-summary.md kompakt ohne Inhaltsverlust. Den gesamten abschließenden
 Block „Datenlücken & offene Fragen“ in einem standardmäßig geschlossenen nativen
 details-Element darstellen; Überschrift öffnet ihn. Alle Inhalte erhalten.
+
+Gesprächspartnerseite ab 17.10.2026: Nach dem Profil die Timeline
+„Aktuelle Äußerungen & Medienpräsenz der letzten vier Monate“ gemäß
+gespraechspartner.md. Kein Abschnitt „Regionaler Bezug“. Quellen und Evidenz
+ausschließlich auf Seite 4, auf Seite 2 nur anklickbare interne Verweise.

@@ -247,7 +247,7 @@ def build(manifest, modules, plan=None):
             try:
                 if data.get("role") != "context" or not manifest.get("person"):
                     raise ValueError("profile requires context and person in manifest")
-                profile_helper.validate(data["profile"], profile_refs)
+                profile_helper.validate(data["profile"], profile_refs, manifest["as_of"], {c["id"]:c for c in claims})
             except ValueError as error:
                 errors.append(str(error))
     spec = importlib.util.spec_from_file_location('presence_html', Path(__file__).with_name('presence-html.py'))
