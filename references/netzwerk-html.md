@@ -15,7 +15,7 @@ Der Cluster-Agent erstellt keine eigene finale HTML und überspringt keine Revie
   darum herum; Querverbindungen verbinden auch umliegende Akteure miteinander.
 - Alle Kreise haben denselben Radius; andere Formen verwenden dieselbe feste
   Größenbasis. Keine Größenstaffelung oder Zahlen-/Score-Badges in den Formen.
-  Kurze Unternehmensnamen stehen unter den Formen, der Zielname im Zentrum.
+  Kurze Unternehmensnamen stehen unter den Formen, auch der Name des zentralen Zielknotens.
   Jede Knotenart hat eine konsistente Farbe und Form samt gemeinsamer Legende.
   Größenbasis: Radius 22 SVG-Einheiten (Durchmesser 44), auch für das Ziel.
   Je Bereich fünf Akteure pro Reihe; Namen umbrechen statt Spaltenzahl reduzieren.
@@ -26,7 +26,7 @@ Der Cluster-Agent erstellt keine eigene finale HTML und überspringt keine Revie
   Verbindungen folgen dem bestätigten ursprünglichen Stil: leicht gebogene
   Linien mit Richtungspfeilen zwischen den Knotenrändern, ohne Endpunktkreise.
   Klick oder Tastaturauswahl zeigt Inhalte in der festen
-  rechten Detailspalte, ohne Dialog oder Aufklappen. Nur Desktop-Darstellung.
+  Detailanzeige, ohne Dialog: auf breiten Desktops rechts, sonst unter der Grafik.
   Mehrere Beziehungen desselben Paars teilen eine Linie; rechts bleiben alle
   Vorgänge einzeln auswählbar, einschließlich ihrer Richtung und Originalquellen.
 - Details zeigen Von/Zu, Beziehungstyp, Gegenstand, Status, Datum, Quotenarten,
@@ -168,18 +168,18 @@ Je Knoten eine Farbe und Form nach belegter Knotenart, eine eindeutige Identitä
 kein Relevanzscore. Formen: Partner Kreis, Tochtergesellschaft Quadrat, JV Sechseck,
 Eigentümer Achteck, Zulieferer Raute, Kunde Dreieck, Projekt Fünfeck,
 Institution abgerundetes Quadrat, Person Stern, Sonstige Ellipse; Ziel Kreis.
-Erstansicht bis zu sechs Akteure je Bereich; focus priorisiert die Auswahl,
-begründet in der Cluster-Datei. Zusätzliche JV-/Tochter-Kontextknoten bleiben
-sichtbar; andere Akteure sind per Cluster aufklappen erreichbar.
+Grafik zunächst mit allen Akteuren. Pro Cluster stehen fünf Symbole je voller
+Zeile; Restzeilen enthalten entsprechend weniger. Radius 22px bei allen Formen.
+Die kompakte Auswahl bleibt über die vorhandenen Clustersteuerungen erreichbar.
 Querverbindungen zunächst eingeblendet und per Filter umschaltbar.
 Auswahl listet alle Rollen eines Akteurs;
 Linien bleiben unbeschriftet, Quellen und Unsicherheiten nur im Klickdetail.
 Suche, Status-, Kategorie- und belegte Produktfilter verwenden.
 Beziehungen der gleichen Akteurspaarung bündeln; jede bleibt rechts einzeln
 auswählbar. Bei beiden Richtungen Pfeile an beiden Enden zeigen. Reduzierte Erstansicht
-mit sichtbarem Gesamtzähler; die vollständige Tabelle enthält alle Beziehungen.
+mit sichtbarem Gesamtzähler als optionale Ansicht; die vollständige Beziehungstabelle bleibt im Grafikreiter erhalten.
 Im Desktopfenster Grafik lokal horizontal verschiebbar mit lesbarer Mindestbreite
-760px, feste rechte Detailspalte und Tastatur-Beziehungsauswahl als Alternative.
+1240px, Detailanzeige rechts auf sehr breiten Desktops, sonst darunter und Tastatur-Beziehungsauswahl als Alternative.
 Keine gesonderte Mobilansicht oder Mobilabnahme.
 Keine Pflicht, leere Bereiche mit ungeprüften Akteuren zu füllen.
 Lange Prüfhinweise, Abdeckungsmatrix und Register aufklappbar; wesentliche
@@ -194,3 +194,24 @@ Interpretationen und Unsicherheiten; Claim-IDs sind interne Sprunglinks.
 Datumspräzision beibehalten: Kanten as_of YYYY-MM oder YYYY-MM-DD,
 Top-Level-Stichtag und Quellendaten YYYY-MM-DD; unbekannte Veröffentlichung
 explizit null. Pflichtmetadaten nicht mit fehlenden Feldern verwechseln.
+
+
+## Zwei Ansichten und Akteurstabellen (Standard ab 17.10.2026)
+Oben lokale Reiter „Tabellen“ (Standard) und „Grafik“, mit Tastaturbedienung.
+Die erste Ansicht listet ausschließlich einzelne Akteure ohne Zielknoten in vier
+Tabellen nebeneinander, entsprechend den vier Clustern. Keine Von/Zu-Paare,
+Verbindungslinien oder Beziehungsliste in dieser Ansicht. Jeder Akteur erscheint
+genau einmal. Auf kleineren Bildschirmen zwei bzw. eine Tabellenspalte.
+Zeilen zeigen nur Name und farbigen Punkt des primären Akteurstyps; Klick
+öffnet vollständigen Namen, Rolle, vorhandenen Produktbezug und Originalquellen.
+Keine neuen Rollen aus dem Layout ableiten. Neben dem Akteurszähler steht die
+Legende der tatsächlich vorkommenden Akteursfarben. Suche und Akteurstypfilter
+wirken auf diese Tabellen; Graphfilter bleiben davon unabhängig.
+Die zweite Ansicht bewahrt das vollständige interaktive Netzwerk einschließlich
+aller direkten und indirekten Beziehungen, Details und Quellen. Fünf Symbole
+pro voller Reihe je Cluster mit lesbaren Namen und lokalem horizontalem Scrollen.
+Nach Reiterwechsel Grafik neu vermessen. Ohne JavaScript bleiben Akteurdetails
+und vollständige Beziehungstabelle erreichbar. Im Druck vollständige Beziehungen
+einschließlich Quellen zeigen, unabhängig vom aktiven Reiter.
+Abnahme: Reiter, Zähler, Legende/Farben, jede Akteur-ID genau einmal, Filter/Reset,
+Klickdetails, fünf Spalten, alle Graphkanten und Quellen, Druck/No-JS-Fallback.

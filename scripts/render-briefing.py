@@ -20,6 +20,7 @@ CAPABILITY = CHECK.helper("capability_html", "capability-html.py")
 MARKET = CHECK.helper("market_html", "market-html.py")
 MODULE_INSIGHTS = CHECK.MODULE_INSIGHTS
 PRESENCE = CHECK.PRESENCE
+CLUSTER = CHECK.helper("cluster_html", "cluster-html.py")
 
 KINDS = {"target", "partner", "customer", "jv", "owner", "supplier", "subsidiary",
          "project", "person", "institution", "other"}
@@ -384,6 +385,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         fragment = (ROOT / 'references/templates/cluster-network.html').read_text(encoding='utf-8')
         fragment = fragment.replace('__CLUSTER_NETWORK_JSON__', safe_json(network))
         fragment = fragment.replace('<tbody></tbody>', '<tbody>' + ''.join(rows) + '</tbody>', 1)
+        fragment = fragment.replace('__CLUSTER_ACTOR_TABLES__', CLUSTER.actor_tables(network), 1)
         if 'tableBody.replaceChildren();' not in fragment:
             fragment = fragment.replace("const tableBody=root.querySelector('tbody');", "const tableBody=root.querySelector('tbody');tableBody.replaceChildren();", 1)
         fragment = fragment.replace("window.addEventListener('beforeprint',()=>{root.querySelector('.cn-table').open=true;});", "", 1)
@@ -462,7 +464,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     for o in (positioning, swot):
         if o:
             limits += paragraphs(o.get('shared_limitations', [])) + note_rows(o.get('research_requests', []))
-    main += section('Datenlücken & offene Fragen', limits)
+    main += '<section class="module"><details class="data-gaps"><summary style="cursor:pointer"><h2 style="display:inline;margin:0">Datenlücken &amp; offene Fragen</h2></summary><div style="margin-top:18px">' + limits + '</div></details></section>'
     profile_body = '<p>Kein Gesprächspartner im Auftrag angegeben.</p>'
     if manifest.get('person'):
         profile = views.get('context', {}).get('profile')

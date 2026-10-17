@@ -16,6 +16,26 @@ body{background:#f3f6f8;color:#173345}.page-kicker{color:#a16e28;font-size:11px;
 
 /* Shared highlight hierarchy: label, value, scope and period. */
 .es-highlights{gap:14px;align-items:stretch}.es-highlight{background:#f2f7f9;border-top:3px solid #176274}.es-highlight>summary{display:grid;grid-template-rows:38px 76px minmax(36px,1fr) 32px;gap:8px;padding:17px 20px 15px;min-height:242px;height:100%}.es-highlight .es-label{margin:0;padding-right:22px;font-size:13px;line-height:18px;font-weight:700;color:#365562}.es-highlight .es-value{font-size:34px;line-height:1.12;letter-spacing:-.7px;align-self:center;text-wrap:balance;overflow-wrap:normal;word-break:normal}.es-highlight .es-value-medium{font-size:27px;letter-spacing:-.4px}.es-highlight .es-value-compact{font-size:23px;letter-spacing:-.25px}.es-highlight .es-status{font-size:24px;letter-spacing:-.25px}.es-highlight .es-scope{font-size:12px;line-height:17px;color:#607887;align-self:start}.es-highlight .es-period{align-self:end;border-top:1px solid #d5e2e8;padding-top:8px;font-size:11px;line-height:15px;font-weight:600;color:#365562}.es-highlight .es-arrow{top:16px;right:16px;font-size:15px}.es-highlight[open]>summary{height:auto}.es-highlight:focus-within{border-color:#176274}
+/* Executive Summary: gleiche Informationen, kompaktere Karten. */
+#executive-summary{padding:16px 20px}
+#executive-summary>h2{font-size:21px;margin-bottom:11px;padding-bottom:7px}
+#executive-summary .es-highlights{gap:10px;margin-bottom:10px}
+#executive-summary .es-highlight>summary{grid-template-rows:auto auto 1fr auto;gap:5px;min-height:0;padding:11px 15px 10px}
+#executive-summary .es-highlight .es-label{font-size:12px;line-height:1.35;padding-right:18px}
+#executive-summary .es-highlight .es-value{font-size:28px;line-height:1.15;letter-spacing:-.4px;align-self:start}
+#executive-summary .es-highlight .es-value-medium{font-size:23px}
+#executive-summary .es-highlight .es-status{font-size:21px}
+#executive-summary .es-highlight .es-scope{font-size:11px;line-height:1.4}
+#executive-summary .es-highlight .es-period{font-size:10px;line-height:1.35;padding-top:5px;margin-top:2px}
+#executive-summary .es-highlight .es-arrow{top:10px;right:11px;font-size:13px}
+#executive-summary .es-cards{gap:10px;align-items:stretch}
+#executive-summary .es-card>summary{min-height:0;padding:11px 28px 12px 13px}
+#executive-summary .es-kicker{font-size:9px;margin-bottom:4px;letter-spacing:.04em}
+#executive-summary .es-headline{font-size:15px;line-height:1.3}
+#executive-summary .es-preview{font-size:12px;line-height:1.4;margin-top:5px}
+#executive-summary .es-card .es-arrow{top:10px;right:10px;font-size:14px}
+@media(max-width:760px){#executive-summary .es-highlights{grid-template-columns:1fr}#executive-summary .es-cards{grid-template-columns:1fr}#executive-summary .es-cards>.es-card{grid-column:1/-1}}
+
 </style></head><body><header class="mast"><div><div class="badge">__BADGE__</div><h1>__TITLE__</h1><p>__SCOPE__</p><p>Stand __DATE__</p></div></header><nav class="tabs" aria-label="Briefing-Seiten" role="tablist">__TABS__</nav><main>__CONTENT__</main><footer>Fakten und Analysteninterpretation getrennt · Details und Belegstellen per Klick · Quellenstand des jeweiligen Laufs</footer>
 <dialog class="es-dialog" id="es-dialog" aria-labelledby="es-dialog-title"><div class="es-dialog-head"><h3 id="es-dialog-title"></h3><button type="button" class="es-dialog-close" aria-label="Details schließen">×</button></div><div class="es-dialog-body"></div></dialog>
 <script>

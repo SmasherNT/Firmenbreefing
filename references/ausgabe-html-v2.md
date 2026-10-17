@@ -123,3 +123,12 @@ Testbeispiele sind keine öffentliche Unternehmensrecherche.
 
 Auftragsbezogene Themenkarten mit headline/preview sowie unternehmensweite
 Portfolioabdeckung folgen themen-darstellung.md. SWOT-Kategorien farbig darstellen.
+
+
+## Darstellungsvorgaben vom 17.10.2026
+Cluster: lokale Reiter Tabellen/Grafik gemäß netzwerk-html.md, Einzelakteure in
+vier nebeneinander angeordneten Tabellen und Farblegende direkt beim Zähler;
+Grafik mit fünf Symbolen pro voller Reihe je Cluster. Executive Summary gemäß
+executive-summary.md kompakt ohne Inhaltsverlust. Den gesamten abschließenden
+Block „Datenlücken & offene Fragen“ in einem standardmäßig geschlossenen nativen
+details-Element darstellen; Überschrift öffnet ihn. Alle Inhalte erhalten.

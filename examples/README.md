@@ -1,4 +1,4 @@
-# Fiktives HTML-Beispiel
+# HTML-Beispiele
 
 briefing-demo.html zeigt die feste Ausgabe mit synthetischen Daten für
 Example Inspection. 71 Fakten, 29 Interpretationen, sechs Netzwerkkanten (fünf Akteurspaare),
@@ -16,7 +16,8 @@ Block und Profil. Person, Markt-Deep-Dive Europa und Quellen stehen auf Seite 2�
 Das Netzwerk zeigt vier Akteursgruppen im 2×2-Raster, gleich große Symbole mit
 Farbe/Form je Kategorie, Namen darunter und gebogene Linien mit Richtungspfeilen.
 Bereichsfelder sind je Zeile gleich hoch und wachsen mit der Anzahl der Akteure;
-die Seite bleibt scrollbar. Quellen stehen in einer festen rechten Detailspalte.
+die Seite bleibt scrollbar. Quellen stehen im Grafikreiter rechts oder unterhalb des Netzes.
+Die erste Clusteransicht zeigt Einzelakteure in parallelen Tabellen mit Legende.
 Das offene Personenprofil zeigt den Snapshot
 und sichtbare Evidenz; unbelegte Werdegangsfelder bleiben als Datenlücke erkennbar.
 Capability Matrix: gleich große Kurztextzellen, Referenzunternehmen markiert und
@@ -66,3 +67,13 @@ check_design_browser.cjs prüft zusätzlich Portfoliofilter, geschlossene Profil
 wiederholte Produktlinks, Netzwerkknoten/Kanten, Matrixdetails/Kriterienvergleich, Seitenzuordnung,
 Quellensuche, Tastaturnavigation, Druckzustand und native Fallbacks.
 Alle Browserkontexte sind offline; nur Desktopbreiten werden geprüft.
+
+
+## Rheinmetall – bestätigter Darstellungsstand
+Rheinmetall_Flugabwehr_Europa_Briefing_2026-10-15.html enthält den vom Nutzer
+am 17.10.2026 bestätigten Darstellungsstand: Akteurstabellen mit Farblegende,
+Grafik mit fünf Symbolen pro Reihe und 22px Radius, geschlossene Datenlücken
+und kompakte Executive Summary. Dies ist ein reales, datiertes Briefing; es
+ist vom synthetischen briefing-demo.html getrennt. Inhalte und Quellenstand
+wurden bei der Layoutänderung nicht neu recherchiert oder erneut freigegeben.
+Neue Firmenläufe verwenden nur die generischen Vorlagen, keine Rheinmetall-Daten.

@@ -68,3 +68,11 @@ nicht allein wegen der Layoutumstellung neu recherchieren.
 Drei gleich hohe Karten: Bezeichnung oben, Wert/Status im gemeinsamen Wertebereich,
 Bezugsbereich darunter, Zeitraum in einer abgesetzten unteren Zeile. Lange Werte
 erhalten lokal passende Schriftgrößen. Inhalte und Review-Bindung bleiben unverändert.
+
+
+## Kompakte Darstellung (17.10.2026)
+Keine festen hohen Leerbereiche in Highlights: Bezeichnung, Wert, Bezugsbereich
+und Zeitraum erhalten, aber Höhe durch Inhalt bestimmen. Engere Kartenabstände
+und Innenabstände, kompaktere gut lesbare Typografie. Kernaussagen und Highlights
+inhaltlich vollständig erhalten; Details und Quellen weiterhin per Klick.
+Keine zusätzlichen Kürzungen oder Auslassungen allein zur Höhenreduktion.
