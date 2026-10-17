@@ -10,7 +10,7 @@ Bei context.portfolio references/portfolio-darstellung.md lesen; genau eine
 product_maturity-I-Interpretation pro Produkt nach portfolio-maturity-v1 liefern.
 Unbestimmbare Einträge mit null, niemals aus einer Datenlücke einen Score ableiten.
 Bei context.regional_presence references/regionale-praesenz.md lesen; genau eine
-regional_presence-I-Einordnung je Region nach regional-presence-v1 (1–5) liefern.
+regional_presence-I-Einordnung je Region nach regional-presence-v2 (1–5) liefern.
 Nur belegte eigene/Partner-Infrastruktur einstufen; angekündigte Standorte und
 Kundenprogramme nicht als operativen Eigenstandort werten. Beleglücke bleibt null.
 1. Eingabeidentität/Prüfstand beachten; pending_checks nicht als sichere Basis nutzen.

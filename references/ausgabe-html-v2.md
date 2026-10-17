@@ -140,3 +140,8 @@ Gesprächspartnerseite ab 17.10.2026: Nach dem Profil die Timeline
 „Aktuelle Äußerungen & Medienpräsenz der letzten vier Monate“ gemäß
 gespraechspartner.md. Kein Abschnitt „Regionaler Bezug“. Quellen und Evidenz
 ausschließlich auf Seite 4, auf Seite 2 nur anklickbare interne Verweise.
+
+Regionale Präsenz: Methodik regional-presence-v2 gemäß regionale-praesenz.md.
+Eigene und belegte gemeinsam/allein kontrollierte JV-Strukturen nach tatsächlichen
+Funktionen bewerten; JV-Kontrollart sichtbar erhalten. Ankündigungen separat
+„Geplant“, ohne operative Stufe. Vollständige Skalen-/JV-Erklärung aufklappbar.

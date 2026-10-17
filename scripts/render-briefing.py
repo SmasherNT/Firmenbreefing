@@ -395,11 +395,11 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             out = '<h4>Wie vertreten?</h4>'
             for activity in region['activities']:
                 state = 'angekündigt' if activity['status'] == 'announced' else 'operativ dokumentiert'
-                out += '<div class="rp-activity"><strong>' + esc(activity['actor']) + '</strong><p>' + esc(activity['description']) + '</p><p class="meta">' + esc(activity['country'] + ' · ' + activity['location'] + ' · ' + activity['product_scope'] + ' · ' + state + ' · ' + (activity.get('status_date') or 'Statusdatum nicht belegt')) + '</p>' + paragraphs([activity.get('ownership_note')]) + links(activity['claim_ids']) + '</div>'
+                out += '<div class="rp-activity"><strong>' + esc(activity['actor']) + '</strong><p>' + esc(activity['description']) + '</p><p class="meta">' + esc(PRESENCE.operator_label(activity) + ' · ' + activity['country'] + ' · ' + activity['location'] + ' · ' + activity['product_scope'] + ' · ' + state + ' · ' + (activity.get('status_date') or 'Statusdatum nicht belegt')) + '</p>' + paragraphs([activity.get('ownership_note'), activity.get('control_note')]) + links(activity['claim_ids']) + '</div>'
             if not region['activities']:
                 out += '<p class="rp-empty">Keine freigegebenen konkreten Präsenzaktivitäten im Paket.</p>'
             if row:
-                title = 'Warum Stufe ' + str(row['score']) + '?' if row['score'] is not None else 'Warum nicht eindeutig bestimmbar?'
+                title = 'Warum Stufe ' + str(row['score']) + '?' if row['score'] is not None else 'Warum derzeit nur geplant?' if row.get('assessment_status') == 'geplant' else 'Warum nicht eindeutig bestimmbar?'
                 out += '<h4>' + esc(title) + '</h4>' + paragraphs([row['statement'], row['reasoning'], row['method'], row.get('next_stage_limit'), row.get('coverage_note')]) + links([row['id']])
             else:
                 out += '<p class="rp-empty">Faktenansicht: keine freigegebene Präsenzbewertung.</p>'

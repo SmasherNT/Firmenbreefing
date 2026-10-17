@@ -5,16 +5,45 @@ import re
 from datetime import date
 from pathlib import Path
 
-METHOD = 'regional-presence-v1'
+METHOD = 'regional-presence-v2'
 SECTION = 'regional_presence'
-STAGES = {'1': 'Angekündigter Zugang / Betreuung aus dem Ausland',
-          '2': 'Lokaler Vertriebs- / Servicepartner', '3': 'Eigene Gesellschaft / eigenes Büro',
-          '4': 'Eigene Produktion / operative Serviceinfrastruktur',
-          '5': 'Eigene Produktion plus Entwicklung / mehrere eigene Standorte'}
-KINDS = {'access', 'foreign_support', 'partner', 'office', 'production', 'service', 'development', 'customer_activity'}
+STAGES = {'1': 'Marktaktivität aus dem Ausland',
+          '2': 'Lokaler Partner- oder JV-Zugang',
+          '3': 'Eigene oder kontrollierte lokale Vertretung',
+          '4': 'Eigene oder kontrollierte operative Wertschöpfung',
+          '5': 'Breit verankerte operative Wertschöpfung'}
+KINDS = {'access', 'foreign_support', 'partner', 'office', 'production', 'integration', 'service', 'development', 'customer_activity'}
 OPERATORS = {'own', 'partner', 'jv', 'customer', 'foreign'}
-LOCAL = {'partner', 'office', 'production', 'service', 'development', 'customer_activity'}
-OWN_SITE = {'office', 'production', 'service', 'development'}
+LOCAL = {'partner', 'office', 'production', 'integration', 'service', 'development', 'customer_activity'}
+OWN_SITE = {'office', 'production', 'integration', 'service', 'development'}
+CONTROL = {'sole', 'joint', 'none', 'unknown'}
+CORE_FUNCTION = {'development':'development', 'production':'manufacturing',
+                 'integration':'manufacturing', 'service':'service'}
+OPERATOR_LABELS = {'own':'Eigene Infrastruktur', 'partner':'Partner',
+                  'customer':'Kundenaktivität', 'foreign':'Betreuung aus dem Ausland'}
+CONTROL_LABELS = {'sole':'Beherrschtes JV', 'joint':'Gemeinsam kontrolliertes JV',
+                  'none':'JV ohne eigene Kontrolle', 'unknown':'JV · Kontrolle nicht belegt'}
+EXPLANATION = (
+    'Stufe 1: belegte Belieferung, Projekte oder Betreuung aus dem Ausland ohne lokale Struktur. '
+    'Stufe 2: operativer lokaler Partner oder JV-Zugang ohne belegte eigene oder gemeinsame Kontrolle. '
+    'Stufe 3: operative eigene oder kontrollierte Gesellschaft bzw. Büro mit Vertrieb, Kundenbetreuung oder Projektsteuerung. '
+    'Stufe 4: lokale operative Entwicklung, Produktion, technische Integration oder Service-/Wartungsinfrastruktur. '
+    'Stufe 5: mindestens zwei eigenständige operative Kernfunktionen, etwa Entwicklung und Produktion oder Integration und Wartung. '
+    'Produktion und Integration desselben Fertigungsprozesses zählen gemeinsam als eine Kernfunktion; mehrere Büros und Standorte allein erhöhen die Stufe nicht. '
+    'Die höchste konkret belegte Stufe zählt. Nur angekündigte Aktivitäten erhalten „Geplant“ ohne operative Stufe; fehlen Belege, lautet der Status „Nicht eindeutig bestimmbar“. '
+    'JV-Kontrolle wird getrennt ausgewiesen: eigene Beherrschung oder vertraglich belegte gemeinsame Kontrolle erlaubt die Einstufung nach operativen Funktionen (3–5). '
+    'Ohne diesen Kontrollnachweis bleibt operativer JV-Zugang Stufe 2. Eine Beteiligungsquote – auch 50 Prozent – ist allein kein Kontrollnachweis. '
+    'Angekündigte JV erhalten keine operative Stufe. Kundenaktivität allein belegt keine lokale Infrastruktur. '
+    'Die Skala misst organisatorische Verankerung, keinen Umsatz, Marktanteil oder technischen Leistungsstand. Fehlende Evidenz beweist keine fehlende Aktivität.')
+
+def controlled(activity):
+    return activity['operator'] == 'own' or (activity['operator'] == 'jv' and
+        activity.get('control', 'unknown') in {'sole', 'joint'} and bool(activity.get('control_claim_ids')))
+
+def operator_label(activity):
+    if activity['operator'] == 'jv':
+        return CONTROL_LABELS[activity.get('control', 'unknown')]
+    return OPERATOR_LABELS[activity['operator']]
 
 
 def esc(value):
@@ -79,7 +108,19 @@ def validate(rows, require, as_of):
                 fail('activity kind/operator/status mismatch')
             if kind in LOCAL and activity['country'] not in countries:
                 fail('local activity outside evaluation countries')
-            if operator == 'own' and kind in OWN_SITE:
+            refs(activity.get('claim_ids'))
+            if operator == 'jv':
+                control = activity.get('control', 'unknown')
+                if not isinstance(control, str) or control not in CONTROL:
+                    fail('invalid JV control classification')
+                if control in {'sole','joint'}:
+                    text(activity, 'control_note')
+                    refs(activity.get('control_claim_ids'))
+                    if not set(activity['control_claim_ids']) <= set(activity.get('claim_ids', [])):
+                        fail('JV control claims must be included in activity evidence')
+            elif any(key in activity for key in ('control','control_claim_ids','control_note')):
+                fail('JV control fields require operator jv')
+            if controlled(activity) and kind in OWN_SITE:
                 text(activity, 'site_id'); text(activity, 'ownership_note')
                 if not re.fullmatch(r'[A-Za-z][A-Za-z0-9_-]*', activity['site_id']):
                     fail('site_id must be stable and safe')
@@ -106,20 +147,23 @@ def eligible_stage(region, dependencies=None):
     """Only the verified subset used by an I-claim can satisfy the rubric."""
     allowed = set(region['claim_ids'] if dependencies is None else dependencies)
     activities = [a for a in region['activities'] if set(a['claim_ids']) <= allowed]
-    own = [a for a in activities if a['operator'] == 'own' and a['status'] == 'operational' and a['kind'] in OWN_SITE]
-    kinds = {a['kind'] for a in own}
-    sites = {a['site_id'] for a in own}
-    if 'production' in kinds and ('development' in kinds or len(sites) >= 2):
+    local = [a for a in activities if controlled(a) and a['status'] == 'operational' and a['kind'] in OWN_SITE]
+    functions = {CORE_FUNCTION[a['kind']] for a in local if a['kind'] in CORE_FUNCTION}
+    if len(functions) >= 2:
         return 5
-    if kinds & {'production', 'service'}:
+    if functions:
         return 4
-    if kinds & {'office', 'development'}:
+    if any(a['kind'] == 'office' for a in local):
         return 3
     if any(a['operator'] in {'partner','jv'} and a['status'] == 'operational' and a['kind'] in LOCAL - {'customer_activity'} for a in activities):
         return 2
-    if any(a['kind'] != 'customer_activity' and (a['status'] == 'announced' or a['kind'] == 'foreign_support') for a in activities):
+    if any(a['status'] == 'operational' and a['kind'] in {'foreign_support','customer_activity'} for a in activities):
         return 1
     return None
+
+
+def planned_only(region):
+    return eligible_stage(region) is None and any(a['status'] == 'announced' for a in region['activities'])
 
 
 def is_assessment(row):
@@ -147,8 +191,10 @@ def assessment_errors(row, regions):
     expected = eligible_stage(region)
     score, state = row.get('score'), row.get('assessment_status')
     if expected is None:
-        if score is not None or state != 'nicht eindeutig bestimmbar' or not isinstance(row.get('coverage_note'), str) or not row['coverage_note'].strip():
-            errors.append(cid + ': presence gap needs null score, unassessed status and coverage_note')
+        if score is not None or state != ('geplant' if planned_only(region) else 'nicht eindeutig bestimmbar') or not isinstance(row.get('coverage_note'), str) or not row['coverage_note'].strip():
+            errors.append(cid + ': presence gap/planned entry needs null score, matching status and coverage_note')
+        if planned_only(region) and not any(a['status'] == 'announced' and set(a['claim_ids']) <= set(deps) for a in region['activities']):
+            errors.append(cid + ': planned status needs announcement dependencies')
     else:
         if state != 'bewertet' or type(score) is not int or score != expected:
             errors.append(cid + ': presence score must match highest supported stage ' + str(expected))
@@ -171,11 +217,11 @@ def binding(context, row):
 def render(regions, assessments, detail, as_of):
     if not regions:
         return '<p class="rp-empty">Keine freigegebenen regionalen Präsenzbefunde für diesen Auftrag.</p>'
-    out = '<div id="briefing-regional-presence" class="rp-root"><p class="rp-intro">Öffentlich belegte Infrastruktur und Vertriebszugang · feste Präsenzskala 1–5</p><div class="rp-chart" role="group" aria-label="Regionale Unternehmenspräsenz">'
+    out = '<div id="briefing-regional-presence" class="rp-root"><p class="rp-intro">Operative regionale Verankerung · Präsenzskala 1–5 · Methodik v2</p><div class="rp-chart" role="group" aria-label="Regionale Unternehmenspräsenz">'
     for region in regions:
         row = assessments.get(region['id'])
         score = row['score'] if row else None
-        state = str(score) + '/5' if score is not None else '—'
+        state = str(score) + '/5' if score is not None else 'Geplant' if row and row.get('assessment_status') == 'geplant' else '—'
         desc = region.get('presence_type') or 'Öffentlich nicht eindeutig bestimmbar'
         if row is None:
             state = 'Unbewertet'
@@ -185,11 +231,11 @@ def render(regions, assessments, detail, as_of):
     out += '</div><p class="rp-caption">Region anklicken → Begründung, Details und Quellen. Keine Messung von Umsatz oder Marktanteil. Regionale Aggregate zeigen den belegten Schwerpunkt. Stand: ' + esc(as_of) + '.</p><details class="rp-method"><summary>Wie die Skala 1–5 definiert ist</summary><ol>'
     for score, label in STAGES.items():
         out += '<li><strong>Stufe ' + score + '</strong> — ' + esc(label) + '</li>'
-    out += '</ol><p>Die höchste konkret belegte Stufe zählt. Geplante Standorte sind kein laufender Betrieb; Partner/JV-Infrastruktur ist ohne belegte eigene Kontrolle kein eigener Standort. Die Stufen sind ordinal und unabhängig von der Produktreife 1–6. Fehlende Evidenz ist kein Beweis fehlender Aktivität.</p></details><div class="rp-profiles"><h3>Regionale Deep Dives</h3>'
+    out += '</ol><p>' + esc(EXPLANATION) + '</p></details><div class="rp-profiles"><h3>Regionale Deep Dives</h3>'
     for region in regions:
         row = assessments.get(region['id'])
         score = row['score'] if row else None
-        state = str(score) + '/5' if score is not None else 'Nicht eindeutig bestimmbar' if row else 'Noch nicht bewertet'
+        state = str(score) + '/5' if score is not None else 'Geplant' if row and row.get('assessment_status') == 'geplant' else 'Nicht eindeutig bestimmbar' if row else 'Noch nicht bewertet'
         out += '<details class="rp-profile" id="presence-region-' + esc(region['id']) + '"><summary><strong>' + esc(region['label']) + '</strong><span>' + esc(state) + ' · Deep Dive</span></summary><div class="rp-profile-body">' + detail(region, row) + '</div></details>'
     out += '</div></div>'
     assets = Path(__file__).resolve().parents[1]/'references/templates'

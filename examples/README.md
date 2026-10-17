@@ -82,3 +82,8 @@ Gesprächspartner-Ergänzung vom 17.10.2026: sechs recherchierte Meldungen zu
 Papperger als aufklappbare Timeline, Zugriffslücken gekennzeichnet. Quellen und
 Evidenz ausschließlich auf Seite 4; kein regionaler Personenabschnitt. Die datierte
 HTML enthält diese Ergänzung separat vom übrigen Quellenstand.
+
+Präsenzmethodik regional-presence-v2: Das synthetische Beispiel verwendet die
+neue Funktions- und JV-Kontrollskala einschließlich „Geplant“ ohne operative Stufe.
+Historische reale HTML-Snapshots behalten ihre damaligen Bewertungen; deren
+Umstellung benötigt einen neuen Positionierungskontext und gezieltes Review.

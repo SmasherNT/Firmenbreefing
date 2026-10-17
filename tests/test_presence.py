@@ -42,19 +42,20 @@ class PresenceTests(unittest.TestCase):
         development['kind']='office'
         self.assertEqual(PRESENCE.eligible_stage(region),4,'Same site is not two sites')
         development['site_id']='site-second';development['location']='Second own office'
-        self.assertEqual(PRESENCE.eligible_stage(region),5)
+        self.assertEqual(PRESENCE.eligible_stage(region),4, 'Another office does not add an operative function')
         production['kind']='office'
         self.assertEqual(PRESENCE.eligible_stage(region),3,'Multiple offices alone do not qualify for 5')
 
     def test_announcements_partners_jvs_customers_and_foreign_coverage(self):
         region=copy.deepcopy(self.regions[1]);activity=region['activities'][0]
         activity['status']='announced'
-        self.assertEqual(PRESENCE.eligible_stage(region),1)
+        self.assertIsNone(PRESENCE.eligible_stage(region))
+        self.assertTrue(PRESENCE.planned_only(region))
         for operator in ('partner','jv'):
             activity.update(status='operational',operator=operator)
             self.assertEqual(PRESENCE.eligible_stage(region),2)
         activity.update(kind='customer_activity',operator='customer')
-        self.assertIsNone(PRESENCE.eligible_stage(region))
+        self.assertEqual(PRESENCE.eligible_stage(region),1)
         self.assertEqual(PRESENCE.eligible_stage(self.regions[4]),1)
 
     def test_unfinished_development_does_not_upgrade_production(self):
@@ -153,6 +154,49 @@ class PresenceTests(unittest.TestCase):
         refresh_basis(self.b);body=RENDER.build(**facts_only(self.b))
         self.assertNotIn('<img src=x>',body);self.assertNotIn('<script>alert(1)</script>',body)
         self.assertIn('&lt;img src=x&gt;',body);self.assertIn('&lt;script&gt;alert(1)&lt;/script&gt;',body)
+
+    def test_development_service_and_integration_are_core_functions(self):
+        region=copy.deepcopy(self.regions[0])
+        region['activities'][0]['kind']='service'
+        self.assertEqual(PRESENCE.eligible_stage(region),5, 'Development and service need no factory')
+        region['activities']=region['activities'][1:]
+        self.assertEqual(PRESENCE.eligible_stage(region),4, 'Own development is operative value creation')
+        region=copy.deepcopy(self.regions[0]);region['activities'][1]['kind']='integration'
+        self.assertEqual(PRESENCE.eligible_stage(region),4, 'Production plus integration is one function group')
+        self.validate([region])
+
+    def test_joint_and_sole_control_require_explicit_evidence(self):
+        region=copy.deepcopy(self.regions[0])
+        for activity in region['activities']:
+            activity.update(operator='jv',control='unknown')
+        self.assertEqual(PRESENCE.eligible_stage(region),2)
+        for control in ('joint','sole'):
+            for activity in region['activities']:
+                activity.update(control=control,control_note='Synthetic contractual control rights',control_claim_ids=activity['claim_ids'])
+            self.validate([region])
+            self.assertEqual(PRESENCE.eligible_stage(region),5)
+            self.assertIn('JV',PRESENCE.operator_label(region['activities'][0]))
+        region['activities'][0]['control_claim_ids']=[]
+        with self.assertRaises(ValueError):self.validate([region])
+        region['activities'][0]['control_claim_ids']=['UNKNOWN']
+        with self.assertRaises(ValueError):self.validate([region])
+
+    def test_planned_only_has_no_operational_score(self):
+        region=copy.deepcopy(self.regions[1]);region['activities'][0]['status']='announced'
+        row=dict(id='I-planned',type='regional_presence',region_id=region['id'],section=PRESENCE.SECTION,
+            method_id=PRESENCE.METHOD,depends_on=region['claim_ids'],score=None,assessment_status='geplant',coverage_note='Operational start not evidenced')
+        self.assertEqual(PRESENCE.assessment_errors(row,[region]),[])
+        row['score']=1
+        self.assertTrue(PRESENCE.assessment_errors(row,[region]))
+        row['score']=None;row['method_id']='regional-presence-v1'
+        self.assertTrue(PRESENCE.assessment_errors(row,[region]))
+
+    def test_method_explanation_includes_jv_and_planning(self):
+        body=RENDER.build(**self.b,full=True)
+        self.assertIn('Methodik v2',body)
+        self.assertIn('vertraglich belegte gemeinsame Kontrolle',body)
+        self.assertIn('50 Prozent',body)
+        self.assertIn('Produktion und Integration',body)
 
 
 if __name__=='__main__':unittest.main()
