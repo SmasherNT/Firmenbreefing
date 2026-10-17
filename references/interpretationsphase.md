@@ -80,7 +80,11 @@ anchors und applicability. Methode method_id und bewertetes subject nennen.
 Ohne passende Methode qualitative Einordnung liefern, keinen Score erfinden.
 
 ## SWOT
-Maximal drei konkrete Punkte je Quadrant, weniger bei begrenzter Evidenz.
+Standardmäßig drei eigenständige, belegte Punkte je Quadrant. Weniger nur,
+wenn die geprüfte Faktenbasis keinen sinnvollen dritten Punkt trägt; die konkrete
+Evidenzgrenze knapp in shared_limitations dokumentieren. Maximal drei Punkte.
+Keine künstlichen Füllpunkte oder Aufteilung derselben Aussage zur Mengenerfüllung.
+Das bestehende Schluss-Review prüft auch die begründete Auswahl und Abdeckung.
 S/W: bestehende interne Fähigkeiten/Grenzen, O/T: externe Chancen/Risiken.
 Datenlücke ist keine betriebliche Schwäche. Herstellerproduktmerkmal ist ohne
 begründeten Vorteil keine Stärke. Status, Konzern/Produkt und Zeitbezug erhalten.

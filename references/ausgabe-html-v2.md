@@ -49,7 +49,10 @@ Spalten aus Prüfauftrag, Zellen mit Methode, Begründung, Grenzen und A-Fakten.
 Evidenzstufen sind ordinale Skalenanker; kein gemitteltes Gesamt-Ranking.
 Portfolio-Reife nach portfolio-darstellung.md im bestehenden Positionierungsschritt.
 Weitere Scores nur mit vorher definierten assessment_methods; null bei Datenlücke.
-SWOT maximal drei Punkte je Quadrant; Datenlücke ist keine tatsächliche Schwäche.
+SWOT standardmäßig drei eigenständige, belegte Punkte je Quadrant, maximal drei.
+Weniger nur, wenn die geprüfte Faktenbasis keinen sinnvollen dritten Punkt trägt;
+Evidenzgrenze knapp dokumentieren, keine künstlichen Füllpunkte.
+Datenlücke ist keine tatsächliche Schwäche.
 Keine neue Interpretation beim Rendern erzeugen.
 Positionierung liefert außerdem je 1–3 modulspezifische Fakt/Insight-Karten nach
 modul-keyfacts.md im Kontextauftrag --module-insights. Alle Kartenfelder und

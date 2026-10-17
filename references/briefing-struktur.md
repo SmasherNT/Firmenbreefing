@@ -9,7 +9,9 @@
    Zuständigkeit und öffentlich dokumentierter beruflicher Hintergrund.
    Nutzerangabe und verifizierte Information sichtbar unterscheiden.
 5. Kompakte Firmenbasis: Portfolio, Struktur/Partnerschaften, Markt/Wettbewerb.
-6. Themenbezogene SWOT, bis 3 Punkte je Quadrant; keine unbelegten Füllpunkte.
+6. Themenbezogene SWOT, standardmäßig drei eigenständige, belegte Punkte je Quadrant.
+   Weniger nur ohne sinnvollen belegten dritten Punkt; Evidenzgrenze knapp benennen.
+   Maximal drei Punkte, keine künstlichen Füllpunkte.
 7. Offene Punkte und Gesprächsfragen (Vorschläge, keine Firmenbehauptungen).
 8. Quellenregister mit Claim-Zuordnung, Titel, Datum, Direktlink, Abrufdatum.
 

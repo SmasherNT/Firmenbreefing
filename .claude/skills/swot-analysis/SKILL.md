@@ -4,7 +4,10 @@ description: Leite eine konkrete SWOT aus geprüften Unternehmens-/Marktfakten u
 ---
 
 Strengths/Weaknesses als bestehende interne Vorteile/Grenzen behandeln;
-Opportunities/Threats als externe Chancen/Risiken. Maximal drei Punkte je Quadrant.
+Opportunities/Threats als externe Chancen/Risiken. Standardmäßig drei eigenständige,
+belegte Punkte je Quadrant liefern. Weniger nur, wenn die geprüfte Faktenbasis
+keinen sinnvollen dritten Punkt trägt; die konkrete Evidenzgrenze knapp in
+shared_limitations nennen. Maximal drei Punkte; keine künstlichen Füllpunkte.
 Keine Datenlücke als Schwäche; kein Produktmerkmal ohne begründeten Vorteil als Stärke.
 Je S-Claim konkrete Aussage, Abhängigkeiten, nachvollziehbare Ableitung und Unsicherheit.
 Keine generischen Füllpunkte, erfundenen Marktgrößen oder neuen Fakten.
