@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "format": "run-checkpoints-v1",
+  "run_id": "rheinmetall-2026-10-19",
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-19",
+  "manifest": {
+    "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/input/facts-run.json",
+    "sha256": "d14de8c7377e7f62f1e22aeb792aacf835c6f1d278c61b0c4ea6ea3f87d8e1f1"
+  },
+  "request": {
+    "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/input/auftrag.md",
+    "sha256": "35bae3d1330f333c5e24684551d1793eee7dfb8f06d0b087c07706794d9dbaaf"
+  },
+  "cache_path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/document-cache",
+  "target": "html",
+  "full": true,
+  "stages": [
+    "context",
+    "portfolio",
+    "cluster",
+    "plan",
+    "market",
+    "facts",
+    "basis-review",
+    "positioning",
+    "swot",
+    "final-review",
+    "html"
+  ],
+  "checkpoints": {},
+  "created_at": "2026-10-19T08:47:09+00:00",
+  "notice": "Local completion records only; content approval and visual QA remain separate.",
+  "fingerprint": "77a71b12c112a508789f9f0a3e74995595d68b357ddf988557dcedfc5a0dba29"
+}
