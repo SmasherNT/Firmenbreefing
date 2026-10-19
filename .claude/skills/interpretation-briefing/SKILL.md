@@ -30,7 +30,7 @@ freigegebenes Schlussreview nach tatsächlichem Abschluss lokal speichern.
    Bei I-Basis aktuelle Positionierung samt Kontext und Plan an den Check geben.
    Beide Validierungen per --merge-validation zusammenführen; Aufrufe in Referenz.
 6. Phase final: review-work.py prepare und nach parallele-quellenpruefung.md
-   nur facts_to_verify auf Dokumentjobs desselben Modells verteilen. Danach
+   nur facts_to_verify auf Dokumentjobs auf Sonnet 5.5 Medium verteilen. Danach
    source-reviewer als Leitprüfer mit mode=interpret-v2, Quellenbefunden, kompakten I-/S-Claims,
    Abhängigkeiten, Basis-Review und interpretation-validation.json delegieren.
    review-work.py prepare nach references/pruefauftraege.md: Originalbindung,
@@ -52,6 +52,6 @@ nicht weiter als freigegeben behandeln. Nur kompakte Statusrückgabe.
 
 
 Quellenprüfung verbindlich nach references/parallele-quellenpruefung.md:
-Dokumentjobs (bis zu drei, gleiches Modell) → collect → Leitprüfung → merge →
-bestehendes stamp-review.py --work. Keine reduzierte Prüftiefe oder Modellwechsel.
+Dokumentjobs (bis zu drei, Sonnet 5.5 Medium) → collect → Leitprüfung → merge →
+bestehendes stamp-review.py --work. Keine reduzierte Prüftiefe; Modellzuordnung nach references/modellaufteilung.md.
 In final nur neu zu prüfende Faktenquellen verteilen, sonst ausschließlich Leitprüfung.

@@ -2,7 +2,8 @@
 name: swot-analyst
 description: Leitet konkrete SWOT erst aus geprüfter Faktenbasis und optional aktueller Positionierung ab.
 tools: Read, Write, Bash
-model: inherit
+model: claude-sonnet-5-5
+effort: medium
 skills:
   - swot-analysis
 ---

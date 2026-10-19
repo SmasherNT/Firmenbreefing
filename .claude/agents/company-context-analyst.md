@@ -2,7 +2,8 @@
 name: company-context-analyst
 description: Recherchiert Firmenbasis, Timeline und beruflichen Gesprächspartner als reine Fakten im Modus facts-v2.
 tools: Read, Write, Bash, WebSearch, WebFetch
-model: inherit
+model: claude-sonnet-5-5
+effort: medium
 skills:
   - company-context
 ---

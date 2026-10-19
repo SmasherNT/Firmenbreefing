@@ -30,9 +30,9 @@ Einrichtung/Systemfragen sind keine Rechercheaufträge.
 6. review-work.py prepare nach references/pruefauftraege.md ausführen.
    Quellenprüfung Phase basis nach references/parallele-quellenpruefung.md:
    review-shards.py split, Dokumentjobs parallel an source-document-reviewer
-   mit model: inherit und getrennten Zielpfaden delegieren. Pro Job nur show-Ausgabe
+   mit Sonnet 5.5 Medium und getrennten Zielpfaden delegieren. Pro Job nur show-Ausgabe
    als Standardkontext; Auftrag und Originale bleiben erreichbar. Danach collect.
-   source-reviewer desselben Modellstands als Leitprüfer mit Befunden, Abdeckung,
+   source-reviewer auf Sonnet 5.5 Medium als Leitprüfer mit Befunden, Abdeckung,
    gesamter module_views-/Netzwerkprüfung und exaktem Leitentwurfsziel delegieren.
    review-shards.py merge prüft Teilbefunde/Leitentscheidungen; Hauptagent erzeugt
    review-basis.md mit stamp-review.py --work aus dem zusammengeführten Entwurf.
@@ -50,6 +50,6 @@ Faktenrollen liefern topics.headline/preview als geprüfte Kurztexte.
 
 
 Quellenprüfung verbindlich nach references/parallele-quellenpruefung.md:
-Dokumentjobs (bis zu drei, gleiches Modell) → collect → Leitprüfung → merge →
-bestehendes stamp-review.py --work. Keine reduzierte Prüftiefe oder Modellwechsel.
+Dokumentjobs (bis zu drei, Sonnet 5.5 Medium) → collect → Leitprüfung → merge →
+bestehendes stamp-review.py --work. Keine reduzierte Prüftiefe; Modellzuordnung nach references/modellaufteilung.md.
 In final nur neu zu prüfende Faktenquellen verteilen, sonst ausschließlich Leitprüfung.

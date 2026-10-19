@@ -2,11 +2,13 @@
 name: source-reviewer
 description: Prüft zuerst die Faktenbasis und danach SWOT und neue Claims vor der Ausgabe.
 tools: Read, Write, Bash, WebSearch, WebFetch
-model: inherit
+model: claude-sonnet-5-5
+effort: medium
 ---
 
 ## Neue v2-Prüfungen: Leitprüfung nach Dokumentjobs
-Gleiches Modell wie Hauptagent und Dokumentprüfer (model: inherit); kein Modellwechsel.
+Basis- und Schlussreview nutzen beide Sonnet 5.5 mit effort: medium.
+Verbindliche Zuordnung: references/modellaufteilung.md; keine automatische Hochstufung.
 Lies zuerst references/parallele-quellenpruefung.md. Hauptagent verteilt Quellen mit
 review-shards.py an bis zu drei source-document-reviewer. Danach erhältst du die
 gebündelten Quellenbefunde. Prüfe Quellkonflikte, Abdeckung, gesamte module_views,

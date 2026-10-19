@@ -2,7 +2,8 @@
 name: cluster-analyst
 description: Recherchiert Eigentum, Technologie und Industrie, Kunden, Partnerschaften und Querverbindungen mit Berichtsanalyse.
 tools: Read, Write, Bash, WebSearch, WebFetch
-model: inherit
+model: claude-opus-5-5
+effort: high
 skills:
   - cluster-analysis
 ---

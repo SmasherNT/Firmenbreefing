@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "main": {
+    "model": "claude-opus-5-5",
+    "effort": "medium"
+  },
+  "agents": {
+    "portfolio-analyst": {
+      "model": "claude-sonnet-5-5",
+      "effort": "medium"
+    },
+    "cluster-analyst": {
+      "model": "claude-opus-5-5",
+      "effort": "high"
+    },
+    "source-document-reviewer": {
+      "model": "claude-sonnet-5-5",
+      "effort": "medium"
+    },
+    "module-contractor": {
+      "model": "claude-sonnet-5-5",
+      "effort": "medium"
+    },
+    "company-context-analyst": {
+      "model": "claude-sonnet-5-5",
+      "effort": "medium"
+    },
+    "source-reviewer": {
+      "model": "claude-sonnet-5-5",
+      "effort": "medium"
+    },
+    "positioning-analyst": {
+      "model": "claude-opus-5-5",
+      "effort": "high"
+    },
+    "market-facts-analyst": {
+      "model": "claude-opus-5-5",
+      "effort": "high"
+    },
+    "swot-analyst": {
+      "model": "claude-sonnet-5-5",
+      "effort": "medium"
+    }
+  }
+}

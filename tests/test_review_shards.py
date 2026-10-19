@@ -29,11 +29,12 @@ class ReviewShardTests(unittest.TestCase):
         draft=self.fixture.draft(work=work);draft.pop('source_checks')
         draft.update(plan_fingerprint=plan['fingerprint'],source_collection_fingerprint=report['fingerprint'])
         return draft
-    def test_document_owner_unique_and_same_model(self):
+    def test_document_owner_unique_and_configured_model(self):
         self.assertEqual(len(self.plan['jobs']),2)
         owned=[sid for j in self.plan['jobs'] for sid in j['source_ids']]
         self.assertEqual(len(owned),len(set(owned)));self.assertEqual(len(owned),2)
-        self.assertTrue(all(j['model']=='inherit' for j in self.plan['jobs']))
+        self.assertTrue(all(j['model']=='claude-sonnet-5-5' and j['effort']=='medium' for j in self.plan['jobs']))
+        self.assertEqual(self.plan['model_policy']['source-reviewer'], dict(model='claude-sonnet-5-5', effort='medium'))
         self.assertEqual(self.plan,SHARDS.split(self.work,self.facts))
         for n in (0,4,True):
             with self.assertRaises(ValueError):SHARDS.split(self.work,self.facts,n)
@@ -44,6 +45,7 @@ class ReviewShardTests(unittest.TestCase):
             self.assertEqual({c['id'] for c in view['facts']},expected)
             self.assertEqual(len(view['facts']),len(expected))
             self.assertNotIn('module_views',view)
+            self.assertEqual((view['model'], view['effort']), ('claude-sonnet-5-5', 'medium'))
     def test_success_preserves_explicit_lead_and_existing_stamp(self):
         parts=self.parts();lead=self.lead(parts=parts)
         merged=SHARDS.merge(self.plan,self.work,self.facts,parts,lead,self.fixture.report)

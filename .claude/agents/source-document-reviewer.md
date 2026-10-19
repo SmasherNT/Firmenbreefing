@@ -2,10 +2,11 @@
 name: source-document-reviewer
 description: Prüft ein eindeutig zugewiesenes Dokumentbündel gegen seine Claims, ohne Gesamtfreigabe.
 tools: Read, Write, Bash, WebSearch, WebFetch
-model: inherit
+model: claude-sonnet-5-5
+effort: medium
 ---
 
-Nutze exakt dasselbe Modell wie der Hauptagent und alle übrigen Prüfer.
+Nutze Sonnet 5.5 mit effort: medium gemäß references/modellaufteilung.md.
 Lies references/parallele-quellenpruefung.md und references/quellenpruefung.md.
 Delegation muss Auftrag/Phase, review-work, review-split, Paket-/Cachepfad, Job-ID
 und eigenen Zielpfad nennen. Nutze review-shards.py show für deinen Job.

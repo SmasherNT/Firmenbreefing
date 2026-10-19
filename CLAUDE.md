@@ -76,9 +76,12 @@ Fehlende Fakten gezielt an zuständige Rolle, neue Basis erneut prüfen und betr
 Ableitungen aktualisieren. Abnahme nennt tatsächliche Prüfungen und offene Grenzen.
 
 
-## Quellenprüfung: gleiche Modelle, getrennte Dokumentbündel
+## Modellaufteilung und Quellenprüfung
+Verbindliche Rollen-/Effort-Zuordnung: references/modellaufteilung.md und
+modellaufteilung.json. Projektstandard ist Opus 5.5 Medium; Agenten verwenden ihre
+expliziten model-/effort-Felder, nicht den geerbten Hauptagentenstandard.
 Neue v2-Reviews nach references/parallele-quellenpruefung.md: bis zu drei
-source-document-reviewer mit model: inherit, je Quelle genau ein Job; anschließend
-source-reviewer desselben Modellstands als Leitprüfung. review-shards.py übernimmt
-Aufteilung, fokussierte Übergaben und geprüfte Zusammenführung. Kein geringerer
-Prüfumfang, kein Modellwechsel, keine automatische Freigabe.
+source-document-reviewer auf Sonnet 5.5 Medium, je Quelle genau ein Job; anschließend
+source-reviewer auf Sonnet 5.5 Medium für Basis- und Schlussreview.
+review-shards.py übernimmt Aufteilung, fokussierte Übergaben und geprüfte
+Zusammenführung. Keine reduzierte Prüftiefe oder automatische Freigabe.

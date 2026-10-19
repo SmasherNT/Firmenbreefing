@@ -25,13 +25,19 @@ def current(work, facts):
         raise ValueError('facts changed; rebuild work and split plan')
 
 
+def review_models():
+    policy = CHECK.read(Path(__file__).resolve().parents[1] / 'references' / 'modellaufteilung.json')
+    return {role: copy.deepcopy(policy['agents'][role])
+            for role in ('source-document-reviewer', 'source-reviewer')}
+
+
 def split(work, facts, workers=3):
     current(work, facts)
     if type(workers) is not int or not 1 <= workers <= 3:
         raise ValueError('workers must be 1, 2 or 3; default is 3')
     rows = CHECK.index(facts['claims'], 'facts')
     batches = [b for b in work['source_batches'] if b['review_fact_ids']]
-    jobs = [dict(id='sources-'+str(i+1), source_ids=[], load_chars=0, model='inherit')
+    jobs = [dict(id='sources-'+str(i+1), source_ids=[], load_chars=0, **review_models()['source-document-reviewer'])
             for i in range(min(workers, len(batches)))]
     def weight(batch):
         # A deterministic load proxy, never a measured token estimate.
@@ -44,7 +50,7 @@ def split(work, facts, workers=3):
         job['source_ids'].sort()
     result = dict(schema_version=1, format='review-split-v1',
         **{k:work[k] for k in ('run_id','company','as_of')}, phase=work['phase'], review_work_fingerprint=work['fingerprint'],
-        workers_requested=workers, model_policy='same-as-parent', jobs=jobs,
+        workers_requested=workers, model_policy=review_models(), jobs=jobs,
         notice='Original-source checks only. Lead reviewer retains claim, scope and release decisions.')
     result['fingerprint'] = digest_record(result)
     return result
@@ -71,7 +77,7 @@ def show(plan, work, facts, job_id):
         claim_ids.update(ids)
         documents.append(dict(source=sources[sid], snapshot=work['source_snapshots'][sid], review_fact_ids=ids))
     return dict(schema_version=1, **{k:work[k] for k in ('run_id','company','as_of')}, phase=work['phase'],
-        job_id=job_id, model='inherit', review_work_fingerprint=work['fingerprint'],
+        job_id=job_id, model=job['model'], effort=job['effort'], review_work_fingerprint=work['fingerprint'],
         plan_fingerprint=plan['fingerprint'], cache_path=work.get('cache_path'), documents=documents,
         facts=[rows[c] for c in sorted(claim_ids)],
         required_A_ids=sorted(claim_ids & set(work['required_full_review_ids'])) if work['phase']=='basis' else sorted(claim_ids),
@@ -170,7 +176,7 @@ def merge(plan, work, facts, parts, lead, validation):
     result['source_checks'] = report['source_checks']
     result['parallel_review'] = dict(plan_fingerprint=plan['fingerprint'],
         source_collection_fingerprint=report['fingerprint'], part_fingerprints=report['part_fingerprints'],
-        model_policy='same-as-parent')
+        model_policy=copy.deepcopy(plan['model_policy']))
     # Existing gates still enforce all required A-claims, I/S decisions, original
     # snapshots, explicit reuse and the global scope/mapping decision.
     WORK.expand(result, validation, work)

@@ -2,7 +2,8 @@
 name: positioning-analyst
 description: Ordnet geprüfte Fakten in auftragsbezogene Capability Matrix, Produkt-/Industrieposition und regionale Präsenz ein.
 tools: Read, Write, Bash
-model: inherit
+model: claude-opus-5-5
+effort: high
 skills:
   - positioning-analysis
 ---

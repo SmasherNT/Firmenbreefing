@@ -9,7 +9,7 @@ Das Arbeitsblatt ist zusätzliche lokale Steuerung, keine gekürzte Faktenbasis.
 ## Dokumentjobs als Standard
 Neue v2-Läufe verteilen die vorhandenen source_batches nach
 [parallele-quellenpruefung.md](parallele-quellenpruefung.md) auf bis zu drei
-Dokumentprüfer desselben Modells. Der bestehende Quellenprüfer konsolidiert als
+Dokumentprüfer auf Sonnet 5.5 Medium. Der bestehende Quellenprüfer konsolidiert als
 Leitprüfer. read/show-Kontexte der Dokumentprüfer sind auf eigene Quellen und
 Claims begrenzt; volle Eingaben bleiben beim Leitprüfer erreichbar. Vor stamp-review
 führt review-shards.py die expliziten Teilbefunde und Leitentscheidungen zusammen.

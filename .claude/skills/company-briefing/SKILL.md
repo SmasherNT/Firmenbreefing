@@ -23,7 +23,7 @@ nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
    gültige reusable-Abschlüsse übernehmen. Vergleichsplan vor
    Wettbewerbsrecherche aus Auftrag festlegen. Delegation nennt Identität,
    mode=facts-v2, Eingaben, Tabellenvertrag und exakten Zielpfad.
-3. Paket lokal zusammenführen. Dokumentprüfer desselben Modells prüfen
+3. Paket lokal zusammenführen. Dokumentprüfer auf Sonnet 5.5 Medium prüfen
    getrennte Quellenbündel; source-reviewer als Leitprüfer bewertet sämtliche
    Claims/module_views nach parallele-quellenpruefung.md. Zusammengeführte
    explizite Reviewer-Entscheidungen per stamp-review ergänzen.
@@ -58,6 +58,6 @@ fachlichen Schwerpunkt der Nutzerfrage verengen; Geschäftsfelder in coverage pr
 
 
 Quellenprüfung verbindlich nach references/parallele-quellenpruefung.md:
-Dokumentjobs (bis zu drei, gleiches Modell) → collect → Leitprüfung → merge →
-bestehendes stamp-review.py --work. Keine reduzierte Prüftiefe oder Modellwechsel.
+Dokumentjobs (bis zu drei, Sonnet 5.5 Medium) → collect → Leitprüfung → merge →
+bestehendes stamp-review.py --work. Keine reduzierte Prüftiefe; Modellzuordnung nach references/modellaufteilung.md.
 In final nur neu zu prüfende Faktenquellen verteilen, sonst ausschließlich Leitprüfung.

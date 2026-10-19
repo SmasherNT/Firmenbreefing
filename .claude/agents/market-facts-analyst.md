@@ -2,7 +2,8 @@
 name: market-facts-analyst
 description: Recherchiert Länder, Markt, Technologie, Industrie und Wettbewerberdaten nach auftragsbezogenem Vergleichsplan in facts-v2.
 tools: Read, Write, Bash, WebSearch, WebFetch
-model: inherit
+model: claude-opus-5-5
+effort: high
 skills:
   - market-facts
 ---

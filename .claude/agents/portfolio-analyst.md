@@ -2,7 +2,8 @@
 name: portfolio-analyst
 description: Recherchiert Produktangebot, Eigenschaften und belegten Einsatzstatus ohne analytische Reifegradbewertung.
 tools: Read, Write, Bash, WebSearch, WebFetch
-model: inherit
+model: claude-sonnet-5-5
+effort: medium
 skills:
   - portfolio-analysis
 ---

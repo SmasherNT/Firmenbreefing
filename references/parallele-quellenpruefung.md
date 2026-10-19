@@ -1,9 +1,10 @@
-# Quellenprüfung in Dokumentbündeln – gleiches Modell
+# Quellenprüfung in Dokumentbündeln – Sonnet Medium
 
 Standard für neue v2-Prüfungen ab 19.10.2026. Keine Änderung an Rechercheumfang,
 A/B-Prüftiefe, Fakten-/Interpretationskontexten oder Freigabebarrieren.
-Alle Dokumentprüfer und der Leitprüfer nutzen dasselbe Modell wie der Hauptagent:
-`model: inherit`, kein günstigeres Ersatzmodell und kein automatischer Modellwechsel.
+Dokumentprüfer und Leitprüfer nutzen `claude-sonnet-5-5` mit `effort: medium`,
+ausdrücklich für Phase basis und final. Der Hauptagent nutzt Opus Medium.
+Verbindliche Zuordnung: modellaufteilung.md; keine automatische Hochstufung.
 
 ## Zuständigkeit
 
@@ -36,7 +37,7 @@ python3 scripts/review-shards.py show --plan <review-split.json> --work <review-
 
 Alle Jobs aus jobs[] delegieren, nicht pauschal drei leere Agenten starten.
 Delegation nennt konkreten Auftrag/Phase, Plan-/Arbeitsblatt-/Paketpfade, Job-ID,
-Cachepfad, denselben Modellstand und genau einen eigenen Ausgabepfad.
+Cachepfad, model/effort aus dem Splitplan und genau einen eigenen Ausgabepfad.
 Dokumentprüfer lesen standardmäßig die Ausgabe von show, nicht das volle Paket.
 Show enthält die eigenen Quellen, vollständige relevante Claims jeweils einmal,
 A-Pflichten, passende Netzwerkkanten und Snapshotbindung. Andere Quellen eines
@@ -122,8 +123,10 @@ Quellenjobs prüft nur der Leitprüfer Ableitungen und Reuse. Kein zweiter volls
 Basislauf. Neue Fakten weiter an die zuständige Rolle, Basisprüfung und betroffene
 Ableitungen erneuern. Bestehende Zwei-Korrekturrunden-Regel bleibt erhalten.
 Alte monolithische Reviews bleiben lesbar; neue Läufe nutzen diese Aufteilung.
-Geänderte Arbeitsblätter verlangen neue Splitpläne und zugehörige Befunde.
+Geänderte Arbeitsblätter oder Modellzuordnungen verlangen neue Splitpläne und
+zugehörige Befunde. Der Plan bindet die konfigurierte Dokument- und Leitprüferrolle.
+Diese Konfiguration ist kein Nachweis des tatsächlich ausgeführten Modells.
 
 Dies begrenzt Kontext pro Dokumentprüfer und erlaubt Parallelität. Eine geringere
 Gesamttokenmenge oder Laufzeit ist ohne Messlauf nicht zugesichert. Abnahme nennt
-Jobs, dasselbe Modell, echte Quellensichtungen, Leitprüfung und offene Grenzen.
+Jobs, konfigurierte und soweit sichtbar tatsächlich ausgeführte Modelle/Efforts, echte Quellensichtungen, Leitprüfung und offene Grenzen.

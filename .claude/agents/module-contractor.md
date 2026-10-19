@@ -2,7 +2,8 @@
 name: module-contractor
 description: Auftragnehmer für einzelne Modultests; wählt 2a, 2b und/oder 3 sowie optional 4 und 7 statt des vollständigen Briefing-Ablaufs.
 tools: Read, Write
-model: inherit
+model: claude-sonnet-5-5
+effort: medium
 ---
 
 Du bist der Auftragnehmer und Ablaufplaner für gezielte Modultests.
