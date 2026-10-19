@@ -1,0 +1,2562 @@
+{
+ "schema_version": 1,
+ "mode": "facts-v2",
+ "role": "market",
+ "run_id": "rheinmetall-2026-10-19",
+ "company": "Rheinmetall AG",
+ "as_of": "2026-10-19",
+ "scope": "Markt-/Wettbewerbsfakten zur Vergleichseinheit 155-mm-Artilleriemunition (Vergleichsplan Version 1): Peers je Peer-Gruppe, Beobachtungen je Peer und Kriterium (spectrum, range, integration, capacity, procurement, industrial) sowie knappe Marktfakten zu Nachfrage, EU-Programmen (ASAP, EDIP), Kapazitätsangaben und Pulver-/Sprengstoffengpässen. Ohne regionalen Markt-Deep-Dive, market_dashboard, regions oder Marktthemen (Seite 3 entfällt laut Nutzer).",
+ "status": "vollständig",
+ "comparison_plan_version": 1,
+ "shared_limitations": [
+  "Produkt-, Reichweiten- und Kapazitätsangaben stammen überwiegend von Herstellern oder aus Fach-/Nachrichtenmedien; Ursprung steht im jeweiligen Claim. Datenblatt-, Test- und Medienwerte sind getrennt und nicht zwischen Varianten übertragen.",
+  "Kapazitätsangaben sind Ziel-, Werks- oder Medienwerte mit unterschiedlichen Einheiten (Geschosse, Geschosskörper, Treibladungsmodule); keine Umrechnung durch die Marktrolle.",
+  "Undatierte Produktseiten/Kataloge beschreiben den Zustand zum Abruf 2026-10-19 (published_date null).",
+  "Keine Scores, Rangfolgen oder Positionierung; 'nicht öffentlich belegt' bedeutet fehlende öffentliche Evidenz in den geöffneten Quellen, keine fehlende Fähigkeit."
+ ],
+ "document_scope": "Geöffnet und gelesen über scripts/source-cache.py: Hersteller-Produktseiten, Kataloge und Broschüren (Nammo, KNDS, BAE Systems, GD-OTS), Unternehmensmitteilungen (Rheinmetall, Nammo, KNDS, GD-OTS), Behörden-/EU-Seiten (EU-Kommission, CCC) sowie Fach- und Nachrichtenmedien zur Gegenrecherche (EDR, ESuT, ESD, Defence Blog, Defense News, UKDJ, Calibre Defence, Breaking Defense, Task & Purpose, Army Technology, Defense Post, Korea JoongAng Daily, Korea Times, Euronews, RFE/RL, Interfax-Ukraine, Polskie Radio, Bankier/PAP). Die BAE-Broschüre wurde über WebFetch als Original-PDF heruntergeladen und im Cache gespeichert.",
+ "claims": [
+  {
+   "id": "M-RHM-01",
+   "statement": "Laut Rheinmetall (19.12.2022) erhielt die Tochter Rheinmetall Denel Munition von einem langjährigen NATO-Kunden einen fünfjährigen Rahmenvertrag (Auftragswert im mittleren dreistelligen Mio-EUR-Bereich) über 155-mm-Munition der Assegai-Linie: M2005-V-LAP-Geschosse (Splitterwirkung, Reichweitensteigerung durch Raketen- und Base-Bleed-Technik), modulare M92-Treibladungen und verschiedene Zünder; die Munition sei nach JBMoU ausgelegt, nach STANAG qualifiziert und bereits in mehreren NATO-Ländern eingeführt.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-35e0db80122396e5"
+   ],
+   "evidence": "Paraphrase: Rahmenvertrag über fünf Jahre; Lieferung von M2005 V-LAP, M92 modular charges und Zündern; JBMoU/STANAG; 'already deployed in several NATO countries'.",
+   "location": "Absätze 2-4 (Pressemitteilung 19/12/2022)",
+   "uncertainty": "Kunde nicht genannt; Einführungsangabe ist Herstellerangabe.",
+   "evidence_items": [
+    {
+     "source_id": "S-35e0db80122396e5",
+     "text": "Paraphrase: Rahmenvertrag über fünf Jahre; Lieferung von M2005 V-LAP, M92 modular charges und Zündern; JBMoU/STANAG; 'already deployed in several NATO countries'.",
+     "mode": "Paraphrase",
+     "location": "Absätze 2-4 (Pressemitteilung 19/12/2022)"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Spektrum/Beschaffung 155 mm",
+   "event_date": "2022-12-19",
+   "event_status": "Vertrag geschlossen"
+  },
+  {
+   "id": "M-RHM-02",
+   "statement": "Rheinmetall meldet für ein Testschießen am 06.11.2019 auf der Alkantpan Test Range (Südafrika) drei Reichweitenrekorde ('maximum effective range'): 67 km aus dem 52-Kaliber-Rohr der Panzerhaubitze 2000, 76 km aus einer G6-Haubitze mit 52-Kaliber-Rohr (laut Rheinmetall nicht JBMoU-konformes Geschütz) und 54 km aus einer Feldhaubitze mit 39-Kaliber-Rohr; gezeigt wurden u. a. Assegai-V-LAP-Geschosse mit Technologien von Rheinmetall Waffe Munition und Nitrochemie.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-544652c53afaff87"
+   ],
+   "evidence": "Paraphrase: Testevent 6. November, Alkantpan; G6 L52 76 km, PzH 2000 L52 67 km, 39-Kaliber-Feldhaubitze 54 km; 76 km mit nicht JBMoU-konformem Geschütz; Assegai V-LAP.",
+   "location": "Absätze 1, 3 und 4 (Pressemitteilung 27/11/2019)",
+   "uncertainty": "Test-/Demonstrationswerte unter Testbedingungen, keine Datenblatt- oder Einsatzreichweite; Ladungskonfiguration nicht vollständig angegeben; Zuordnung der Geschossvariante zu jedem Einzelschuss im Text nicht vollständig spezifiziert.",
+   "evidence_items": [
+    {
+     "source_id": "S-544652c53afaff87",
+     "text": "Paraphrase: Testevent 6. November, Alkantpan; G6 L52 76 km, PzH 2000 L52 67 km, 39-Kaliber-Feldhaubitze 54 km; 76 km mit nicht JBMoU-konformem Geschütz; Assegai V-LAP.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1, 3 und 4 (Pressemitteilung 27/11/2019)"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Reichweite (Testwert)",
+   "event_date": "2019-11-06",
+   "event_status": "Test durchgeführt"
+  },
+  {
+   "id": "M-RHM-03",
+   "statement": "Beim Spatenstich am 12.02.2024 kündigte Rheinmetall für das 'Werk Niedersachsen' in Unterlüß die Fertigung von rund 200.000 Artilleriegeschossen pro Jahr, bis zu 1.900 t RDX-Sprengstoff sowie Komponenten für Raketenartillerie an; die komplette Wertschöpfungskette für den 'Full Shot' (Geschoss, Zünder, Sprengladung, Treibladung) solle vor Ort entstehen.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2572b016501230b4"
+   ],
+   "evidence": "Paraphrase: Keyfacts: 200.000 Schuss p.a., 1.900 Tonnen Sprengstoff; Absatz 2: bis zu 1.900 Tonnen RDX; Absatz 5: komplette Wertschöpfungskette 'Full Shot' in Unterlüß.",
+   "location": "Keyfacts sowie Absätze 2 und 5 (Pressemitteilung 12/02/2024)",
+   "uncertainty": "Planangabe von 2024; die Eröffnungsmitteilung vom 05.09.2025 nennt Geschosse und Raketentriebwerke, aber keine RDX-Fertigung; ein operativer Status der Sprengstofffertigung in Unterlüß ist in den geöffneten Quellen nicht belegt.",
+   "evidence_items": [
+    {
+     "source_id": "S-2572b016501230b4",
+     "text": "Paraphrase: Keyfacts: 200.000 Schuss p.a., 1.900 Tonnen Sprengstoff; Absatz 2: bis zu 1.900 Tonnen RDX; Absatz 5: komplette Wertschöpfungskette 'Full Shot' in Unterlüß.",
+     "mode": "Paraphrase",
+     "location": "Keyfacts sowie Absätze 2 und 5 (Pressemitteilung 12/02/2024)"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Vertikalintegration (Plan)",
+   "event_date": "2024-02-12",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "M-RHM-04",
+   "statement": "Rheinmetall und Pirochim Victoria (Romarm-Tochter) gründeten laut Rheinmetall (03.11.2025) das JV Rheinmetall Victoria SA (51/49) für Treibladungspulver und modulare Treibladungen in Victoria (Kreis Brașov): Investition über 500 Mio EUR, erwartete Jahreskapazität rund 300.000 modulare Treibladungen (rund 750 t Pulver) plus 200 t Pulver für lokalen Bedarf, lokale Nitrozellulose-Fertigung, Produktionsbeginn 2028 geplant; CEO Papperger bezeichnet Treibladungspulver als 'strategic bottleneck' und nennt als Ziel 20.000 t Pulverkapazität pro Jahr bis 2030.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-71e68b86d52a8a03"
+   ],
+   "evidence": "Paraphrase: JV-Gründung, Investition > €500 Mio., 300.000 modulare Ladungen/~750 t Pulver + 200 t, Nitrozellulose lokal, Produktionsstart 2028; Zitat Papperger zu Engpass und Ziel 20.000 t bis 2030.",
+   "location": "Key Facts und Absätze 1-5 (Pressemitteilung 03/11/2025)",
+   "uncertainty": "Kapazitäts- und Zeitangaben sind Planwerte; Werk zum Stichtag nicht in Betrieb.",
+   "evidence_items": [
+    {
+     "source_id": "S-71e68b86d52a8a03",
+     "text": "Paraphrase: JV-Gründung, Investition > €500 Mio., 300.000 modulare Ladungen/~750 t Pulver + 200 t, Nitrozellulose lokal, Produktionsstart 2028; Zitat Papperger zu Engpass und Ziel 20.000 t bis 2030.",
+     "mode": "Paraphrase",
+     "location": "Key Facts und Absätze 1-5 (Pressemitteilung 03/11/2025)"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Pulver/Vertikalintegration (Ziel)",
+   "event_date": "2025-11-03",
+   "event_status": "JV gegründet; Werk geplant",
+   "depends_on": [
+    "C-STR-34"
+   ]
+  },
+  {
+   "id": "M-RHM-05",
+   "statement": "Laut einer im Fachmedium EDR wiedergegebenen Rheinmetall-Mitteilung (04.01.2023) baut der ungarische Staat in Várpalota eine RDX-Sprengstofffabrik, für die Rheinmetall Denel Munition die Anlagentechnik liefert; die Anlage soll von einem JV aus Rheinmetall und der staatlichen N7 Holding errichtet und betrieben werden, die Produktion bis 2027 beginnen, und Rheinmetall soll Hauptabnehmer des Sprengstoffs werden.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-0720809d463a2525"
+   ],
+   "evidence": "Paraphrase: Vertrag vom 15.12.2022; RDM liefert Anlagentechnik; JV Rheinmetall/N7 Holding; Produktionsbeginn bis 2027; Rheinmetall primary customer.",
+   "location": "Absätze 1-4 (EDR, 04/01/2023)",
+   "uncertainty": "Stand 2023; aktueller Bau-/Betriebsstatus in den geöffneten Quellen nicht belegt.",
+   "evidence_items": [
+    {
+     "source_id": "S-0720809d463a2525",
+     "text": "Paraphrase: Vertrag vom 15.12.2022; RDM liefert Anlagentechnik; JV Rheinmetall/N7 Holding; Produktionsbeginn bis 2027; Rheinmetall primary customer.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-4 (EDR, 04/01/2023)"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Sprengstoff (Plan)",
+   "event_date": "2022-12-15",
+   "event_status": "Vertrag; Produktion geplant ab 2027"
+  },
+  {
+   "id": "M-RHM-06",
+   "statement": "Die Ukraine beauftragte Rheinmetall laut Mitteilung vom 30.06.2026 mit 155-mm-Artilleriegeschossen (ER02A1-B/B) und M203-Treibladungen im niedrigen fünfstelligen Stückzahlbereich (Auftragswert hoher zweistelliger Mio-EUR-Bereich); gefertigt wird bei Rheinmetall Expal Munitions in Spanien, die Produktion hat begonnen und soll im ersten Quartal 2027 abgeschlossen sein.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-9ae1f8e16f1f1d76"
+   ],
+   "evidence": "Paraphrase: Keyfacts und Absätze 1-2: Geschosse und Treibladungen im niedrigen fünfstelligen Bereich; Herstellung bei Rheinmetall Expal Munitions in Spanien; ER02A1-B/B und M203.",
+   "location": "Keyfacts, Absätze 1-3 (Pressemitteilung 30/06/2026)",
+   "uncertainty": "Reichweite der ER02A1-B/B wird in der Quelle nicht beziffert.",
+   "evidence_items": [
+    {
+     "source_id": "S-9ae1f8e16f1f1d76",
+     "text": "Paraphrase: Keyfacts und Absätze 1-2: Geschosse und Treibladungen im niedrigen fünfstelligen Bereich; Herstellung bei Rheinmetall Expal Munitions in Spanien; ER02A1-B/B und M203.",
+     "mode": "Paraphrase",
+     "location": "Keyfacts, Absätze 1-3 (Pressemitteilung 30/06/2026)"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Beschaffung/Fertigung Spanien",
+   "event_date": "2026-06-30",
+   "event_status": "Auftrag erteilt; Produktion begonnen"
+  },
+  {
+   "id": "M-RHM-07",
+   "statement": "Laut Calibre Defence (04.08.2026) liegt das litauische 155-mm-Werk wegen eines harten Winters hinter dem Zeitplan, und die lettische Fabrik scheint ebenfalls verzögert (Standort gewählt, aber trotz angestrebtem Baubeginn im Frühjahr 2026 kein Spatenstich).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-22b4e8c338d5fc31"
+   ],
+   "evidence": "Paraphrase: 'Lithuania’s 155 mm plant is already behind as a result of a harsh winter, and it seems that the Latvia factory is also delayed'.",
+   "location": "Absatz 3 (Artikel vom 04.08.2026)",
+   "uncertainty": "Medienangabe ohne Nennung einer Primärquelle; Betreiber der Werke wird im Satz nicht genannt (laut Portfolio-/Cluster-Fakten Rheinmetall-JVs).",
+   "evidence_items": [
+    {
+     "source_id": "S-22b4e8c338d5fc31",
+     "text": "Paraphrase: 'Lithuania’s 155 mm plant is already behind as a result of a harsh winter, and it seems that the Latvia factory is also delayed'.",
+     "mode": "Paraphrase",
+     "location": "Absatz 3 (Artikel vom 04.08.2026)"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Gegenrecherche Werksaufbau",
+   "event_date": "2026-08-04",
+   "event_status": "verzögert (Medienangabe)",
+   "depends_on": [
+    "P-R90",
+    "P-R95"
+   ]
+  },
+  {
+   "id": "M-NAM-01",
+   "statement": "Nammo führt in seiner 155-mm-Serie die Geschosse 155 mm High Explosive (Zünder nach STANAG 2916, auch inert), 155 mm HE Extended Range, 155 mm IM HE Extended Range (wechselbarer Base Bleed oder Hollow Base) und 155 mm Target Practice Extended Range; die Übersichtsseite erwähnt zudem raketenunterstützte und Ramjet-angetriebene 155-mm-Geschosse.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-6dec578278539c53"
+   ],
+   "evidence": "Paraphrase: Produktliste 155 mm HE, HE-ER, IM HE-ER, TP-ER; Einleitung: 'rocket-assisted artillery ups the ante, and our Ramjet-powered shells can reach farther than any other 155mm product'.",
+   "location": "Seite 155 mm-series, Einleitung und Produktliste",
+   "uncertainty": "Status der raketenunterstützten/Ramjet-Geschosse auf der Seite nicht angegeben; nicht als Serienprodukt zu werten.",
+   "evidence_items": [
+    {
+     "source_id": "S-6dec578278539c53",
+     "text": "Paraphrase: Produktliste 155 mm HE, HE-ER, IM HE-ER, TP-ER; Einleitung: 'rocket-assisted artillery ups the ante, and our Ramjet-powered shells can reach farther than any other 155mm product'.",
+     "mode": "Paraphrase",
+     "location": "Seite 155 mm-series, Einleitung und Produktliste"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Spektrum"
+  },
+  {
+   "id": "M-NAM-02",
+   "statement": "Laut Nammo-Datenblatt erreicht das 155 mm IM HE-ER mit Base Bleed eine maximale Reichweite von 41 km aus L52- und 30 km aus L39-Rohren (mit Hollow Base 32 km bzw. 24 km); Mündungsgeschwindigkeit 935 m/s mit 6 DM72 in L/52; Nammo spricht von einer 'verified range of more than 40 km' aus einem modernen L52-System; Status 'Qualified'.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-0aa94a6db6481400"
+   ],
+   "evidence": "Auszug: 'Max. range with base bleed L52 gun: 41 km/L39 gun: 30 km'; 'Max. range with hollow base L52 gun: 32 km/L39 gun: 24 km'; 'Status Qualified.'",
+   "location": "Product specifications",
+   "uncertainty": "Datenblattwert des Herstellers; Messbedingungen über Ladung DM72 hinaus nicht spezifiziert.",
+   "evidence_items": [
+    {
+     "source_id": "S-0aa94a6db6481400",
+     "text": "Auszug: 'Max. range with base bleed L52 gun: 41 km/L39 gun: 30 km'; 'Max. range with hollow base L52 gun: 32 km/L39 gun: 24 km'; 'Status Qualified.'",
+     "mode": "Auszug",
+     "location": "Product specifications"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Reichweite"
+  },
+  {
+   "id": "M-NAM-03",
+   "statement": "Nammo meldet einen der größten Verträge für Raufoss (Juli 2023) über eine 'significant quantity' 155 mm IM HE-ER (rund 40 km) für Norwegen; bis November 2023 seien Aufträge über 1,9 Mrd NOK der norwegischen Artilleriebestellung von 4,3 Mrd NOK unterzeichnet worden; am 08.12.2023 folgte u. a. ein Vertrag über weitere NM28/M107-155-mm-HE-Munition für Spenden an die Ukraine.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-a54a5988eef2046e"
+   ],
+   "evidence": "Paraphrase: Vertrag über IM HE-ER; Update November 2023: NOK 1,9 Mrd. von NOK 4,3 Mrd.; Update Dezember 2023: Vertrag NM28/M107 155mm HE für Spenden an die Ukraine.",
+   "location": "Haupttext und Abschnitte 'Update as of November 2023' / 'Update, December 2023'",
+   "uncertainty": "Mengen nicht beziffert.",
+   "evidence_items": [
+    {
+     "source_id": "S-a54a5988eef2046e",
+     "text": "Paraphrase: Vertrag über IM HE-ER; Update November 2023: NOK 1,9 Mrd. von NOK 4,3 Mrd.; Update Dezember 2023: Vertrag NM28/M107 155mm HE für Spenden an die Ukraine.",
+     "mode": "Paraphrase",
+     "location": "Haupttext und Abschnitte 'Update as of November 2023' / 'Update, December 2023'"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Beschaffung",
+   "event_date": "2023-07-07",
+   "event_status": "Verträge unterzeichnet"
+  },
+  {
+   "id": "M-NAM-04",
+   "statement": "Laut Militarnyi (04.12.2024, unter Berufung auf die norwegische Regierung) begann Nammo am 02.12.2024 in Raufoss den Bau einer neuen Produktionsanlage; ein 15-jähriger Vertrag über 1,083 Mrd NOK sichert erhöhte Produktionsbereitschaft; geplant sei, die Geschossproduktion zu verzehnfachen und andere Geschosse sowie Raketentriebwerke zu verdoppeln.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f550c79e68fc9c76"
+   ],
+   "evidence": "Paraphrase: Baubeginn 2. Dezember; Vertrag NOK 1,083 Mrd. über 15 Jahre; 'production of shells can be increased tenfold, and other shells and rocket engines can be doubled'.",
+   "location": "Absätze 1-4 und 7",
+   "uncertainty": "Keine absolute Stückzahl; Primärquelle regjeringen.no war per Abruf nicht zugänglich (HTTP 403).",
+   "evidence_items": [
+    {
+     "source_id": "S-f550c79e68fc9c76",
+     "text": "Paraphrase: Baubeginn 2. Dezember; Vertrag NOK 1,083 Mrd. über 15 Jahre; 'production of shells can be increased tenfold, and other shells and rocket engines can be doubled'.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-4 und 7"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Kapazität (Ziel)/Werksaufbau",
+   "event_date": "2024-12-02",
+   "event_status": "Baubeginn"
+  },
+  {
+   "id": "M-NAM-05",
+   "statement": "Laut Defence Industry Europe (16.12.2023) plant Finnland, seine Artilleriemunitionsproduktion mit rund 130 Mio EUR zu verdoppeln, einschließlich Kapazitäten für Sprengstoffe, Treibmittel, Geschosshüllen und Füllung; die finnische Nammo-Sparte bleibe Hauptproduzent; unter Berufung auf die New York Times plane der Nammo-Konzern, die 155-mm-Produktion bis 2028 auf 200.000 Schuss pro Jahr zu steigern.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-a7836c43ad7f552f"
+   ],
+   "evidence": "Paraphrase: EUR 130 Mio.; Ausbau u. a. explosive materials, propellants, shell casings, loading; finnische Nammo-Sparte Hauptproduzent; NYT: 200.000 Schuss/Jahr bis 2028.",
+   "location": "Absätze 1-4",
+   "uncertainty": "200.000 ist eine zitierte Medienangabe (Zielwert), keine bestätigte Ist-Kapazität; Stand Dezember 2023.",
+   "evidence_items": [
+    {
+     "source_id": "S-a7836c43ad7f552f",
+     "text": "Paraphrase: EUR 130 Mio.; Ausbau u. a. explosive materials, propellants, shell casings, loading; finnische Nammo-Sparte Hauptproduzent; NYT: 200.000 Schuss/Jahr bis 2028.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-4"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Kapazität (Ziel)",
+   "event_date": "2023-12-16",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "M-NAM-06",
+   "statement": "Laut Defence Industry Europe (29.10.2024) eröffneten US Army und Nammo in Perry (Florida) eine Anlage für über 33.000 M119A2-Treibladungen pro Monat; es sei der vierte US-Standort für 155-mm-Komponenten; laut Army stieg die monatliche 155-mm-Produktion von 14.000 (2022) auf 40.000 Schuss.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-2e979d6255b023ee"
+   ],
+   "evidence": "Paraphrase: 'designed to manufacture over 33,000 M119A2 propelling charges monthly'; vierter US-Standort; 40.000 shots per month from 14.000 in 2022.",
+   "location": "Absätze 1-2 und 5",
+   "uncertainty": "Die 40.000 betreffen die gesamte US-Produktion, nicht Nammo.",
+   "evidence_items": [
+    {
+     "source_id": "S-2e979d6255b023ee",
+     "text": "Paraphrase: 'designed to manufacture over 33,000 M119A2 propelling charges monthly'; vierter US-Standort; 40.000 shots per month from 14.000 in 2022.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-2 und 5"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "US-Fertigung Ladungen",
+   "event_date": "2024-10-29",
+   "event_status": "in Betrieb"
+  },
+  {
+   "id": "M-NAM-07",
+   "statement": "Nammo bezeichnet Vihtavuori (Finnland) als Pulverfabrik (gegründet 1922 für Treibmittel und Sprengstoffe; derzeit Bau einer Zündhütchenfabrik für 33 Mio EUR); am US-Standort Mesa (Arizona) fertige Nammo u. a. Treibladungspulver; Nammo beschreibt den Konzern als Verbund von Unternehmen in Munition, Raketenmotoren, Sprengstoffen und Pyrotechnik.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-c3ea3c18a3447ce4",
+    "S-052e7d1e29545a63",
+    "S-97aa5b20a4a51ea0"
+   ],
+   "evidence": "Paraphrase: 'The Vihtavuori powder factory'; 1922 gegründet für 'propellants and explosive materials'; neue Zündhütchenfabrik EUR 33 Mio.",
+   "location": "Standortseite Vihtavuori, Absätze 1-3",
+   "uncertainty": "Welche Pulver/Sprengstoffe konkret für 155-mm-Munition hergestellt werden, ist nicht angegeben.",
+   "evidence_items": [
+    {
+     "source_id": "S-c3ea3c18a3447ce4",
+     "text": "Paraphrase: 'The Vihtavuori powder factory'; 1922 gegründet für 'propellants and explosive materials'; neue Zündhütchenfabrik EUR 33 Mio.",
+     "mode": "Paraphrase",
+     "location": "Standortseite Vihtavuori, Absätze 1-3"
+    },
+    {
+     "source_id": "S-052e7d1e29545a63",
+     "text": "Paraphrase: 'the Mesa location manufactures commercial ammunition and propellant powder'.",
+     "mode": "Paraphrase",
+     "location": "Standortseite Mesa, Absatz 2"
+    },
+    {
+     "source_id": "S-97aa5b20a4a51ea0",
+     "text": "Paraphrase: 'conglomeration of expert companies and facilities within ammunition, rocket motors, explosives and pyrotechnics'.",
+     "mode": "Paraphrase",
+     "location": "Locations, Einleitung"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Vertikalintegration"
+  },
+  {
+   "id": "M-NAM-08",
+   "statement": "Laut Nammo (Jahresbericht-Meldung 2025, veröffentlicht 30.04.2026) baute der Konzern 2025 Kapazitäten in Norwegen, Schweden, Finnland, Dänemark und den USA aus, schloss Rahmenverträge u. a. für Artilleriemunition und Treibmittel, lieferte weiter an NATO- und Partnerstaaten, erreichte 86,6 % Termintreue und hatte 4.200 Beschäftigte an 27 Standorten in 12 Ländern; Raufoss ist laut Standortseite der größte Entwicklungs- und Fertigungsstandort (mittel- und großkalibrige Munition, Raketenmotoren).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-ae6533fe6378a611",
+    "S-8b46f20a7a35fb19"
+   ],
+   "evidence": "Paraphrase: Ausbau in Norwegen, Schweden, Finnland, Dänemark, USA; 'framework agreements for artillery ammunition and propellants'; 86,6 %; 4200 Beschäftigte, 27 Standorte, 12 Länder.",
+   "location": "Absätze 1-5",
+   "uncertainty": "Kunden und Volumen der Rahmenverträge nicht genannt.",
+   "evidence_items": [
+    {
+     "source_id": "S-ae6533fe6378a611",
+     "text": "Paraphrase: Ausbau in Norwegen, Schweden, Finnland, Dänemark, USA; 'framework agreements for artillery ammunition and propellants'; 86,6 %; 4200 Beschäftigte, 27 Standorte, 12 Länder.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-5"
+    },
+    {
+     "source_id": "S-8b46f20a7a35fb19",
+     "text": "Paraphrase: Raufoss: größter Entwicklungs- und Fertigungshub; 'manufacturing medium and large caliber ammunition, as well as rocket motors'.",
+     "mode": "Paraphrase",
+     "location": "Standortseite Raufoss, Absätze 1-2"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Beschaffung/Industrie"
+  },
+  {
+   "id": "M-KND-01",
+   "statement": "Der KNDS-Munitionskatalog 2026-2027 (KNDS Belgium, KNDS Ammo France, KNDS Ammo Italy) führt im Kaliber 155 mm u. a. BONUS MKII (Top-Attack, zwei Submunitionen), KATANA (gelenkt, GNSS/IMU), LU 220 (Extended Range, auch IM), LU 211 (HE, Hollow Base/Base Bleed, auch IM), L15A1/A2, LU 217 (Multispektral-Nebel), LU 215/LU 216 (Leucht-/IR-Leucht), LU 107 und HE IM170 (M107) sowie modulare Treibladungen (MCS); die Produktseite nennt Qualifikation auf CAESAR und Kompatibilität mit PzH 2000, K9 und Archer.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2a19a44bae9c9218",
+    "S-aadcb3da199c3d17"
+   ],
+   "evidence": "Paraphrase: Artillery Ammunition > 155MM: BONUS MKII, KATANA, LU 220, LU 211, L15A1/A2, LU 217, LU 215, LU 216, LU 107, HE IM170 (M107), Modular Charges (MCS).",
+   "location": "PDF-Seiten 2 und 8-16",
+   "uncertainty": "Katalog weist darauf hin, dass Angaben zu Produkten in Entwicklung sich ändern können.",
+   "evidence_items": [
+    {
+     "source_id": "S-2a19a44bae9c9218",
+     "text": "Paraphrase: Artillery Ammunition > 155MM: BONUS MKII, KATANA, LU 220, LU 211, L15A1/A2, LU 217, LU 215, LU 216, LU 107, HE IM170 (M107), Modular Charges (MCS).",
+     "mode": "Paraphrase",
+     "location": "PDF-Seiten 2 und 8-16"
+    },
+    {
+     "source_id": "S-aadcb3da199c3d17",
+     "text": "Paraphrase: 'Qualified on CAESAr'; 'Compatible with PZH2000, K9, Archer'; modulare Ladungen; BONUS und KATANA.",
+     "mode": "Paraphrase",
+     "location": "Produktseite 155mm Ammunition, Abschnitte Einleitung und ADVANTAGES"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Spektrum"
+  },
+  {
+   "id": "M-KND-02",
+   "statement": "KNDS gibt für das LU 211 mit Base Bleed bis zu 40 km aus 155/52-Rohren und bis zu 30 km aus 155/39-Rohren an (MSPO 2026); der Katalog 2026-2027 nennt für LU 220 eine maximale Reichweite von ~43 km, für das gelenkte KATANA >45 km (CEP <10 m) und für BONUS MKII 35 km (52 Kal.) bzw. 27 km (39 Kal.).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-d803328fd1670795",
+    "S-2a19a44bae9c9218"
+   ],
+   "evidence": "Auszug: 'fired from a 155/39 caliber up to 30km of range with base bleed and up to 40km with 155/52 caliber gun JB MoU compatible'.",
+   "location": "Abschnitt 'LU211' (Pressemitteilung 08.09.2026)",
+   "uncertainty": "Für LU 220 und KATANA nennt der Katalog keine Rohrlänge/Ladung; Herstellerangaben, kein Testnachweis geöffnet.",
+   "evidence_items": [
+    {
+     "source_id": "S-d803328fd1670795",
+     "text": "Auszug: 'fired from a 155/39 caliber up to 30km of range with base bleed and up to 40km with 155/52 caliber gun JB MoU compatible'.",
+     "mode": "Auszug",
+     "location": "Abschnitt 'LU211' (Pressemitteilung 08.09.2026)"
+    },
+    {
+     "source_id": "S-2a19a44bae9c9218",
+     "text": "Paraphrase: LU 220 MAXIMUM RANGE ~43km; KATANA MAXIMUM RANGE >45km, ACCURACY CEP<10m; BONUS MKII 39.cal 27km / 52.cal 35km.",
+     "mode": "Paraphrase",
+     "location": "PDF-Seiten 9-11"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Reichweite"
+  },
+  {
+   "id": "M-KND-03",
+   "statement": "Die NSPA vergab am 23.01.2024 zwei multinationale Rahmenverträge über 1,1 Mrd EUR an Nexter Munitions (KNDS) und Junghans Microtec für 155-mm-Munition für CAESAR und PzH 2000 (initiiert von drei NATO-Staaten); laut ESuT bezifferte NATO-Generalsekretär Stoltenberg die Menge auf rund 220.000 Geschosse, Nexter liefere Geschosse und Treibladungen, Junghans die Zünder, Lieferungen ab 2025; zudem lasse die Bundeswehr 68.000 komplette Geschosse von Nexter (278 Mio EUR) an die Ukraine liefern.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-a6bde625685f0047",
+    "S-3828eee11ecc6273"
+   ],
+   "evidence": "Paraphrase: 'two new multinational framework contracts valued at 1.1 BEUR to Nexter Munitions (KNDS) and JUNGHANS Microtec GmbH for 155mm ammunition serving CAESAR and PZH-2000'; Anfrage durch drei Alliierte.",
+   "location": "Absätze 3-4 (NSPA-Mitteilung 23.01.2024)",
+   "uncertainty": "Aufteilung des Volumens zwischen Nexter und Junghans nicht angegeben; Lieferstand nicht belegt.",
+   "evidence_items": [
+    {
+     "source_id": "S-a6bde625685f0047",
+     "text": "Paraphrase: 'two new multinational framework contracts valued at 1.1 BEUR to Nexter Munitions (KNDS) and JUNGHANS Microtec GmbH for 155mm ammunition serving CAESAR and PZH-2000'; Anfrage durch drei Alliierte.",
+     "mode": "Paraphrase",
+     "location": "Absätze 3-4 (NSPA-Mitteilung 23.01.2024)"
+    },
+    {
+     "source_id": "S-3828eee11ecc6273",
+     "text": "Paraphrase: rund 220.000 Stück; Nexter liefert Geschosse und Treibladungen, Junghans Zünder; Lieferungen ab 2025; Bundeswehr: 68.000 komplette Geschosse von Nexter, 278 Mio. EUR, an die Ukraine.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1 und 4 (24.01.2024)"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Beschaffung",
+   "event_date": "2024-01-23",
+   "event_status": "Rahmenverträge unterzeichnet"
+  },
+  {
+   "id": "M-KND-04",
+   "statement": "KNDS France gibt an, seine Großkaliber-Munitionskapazität in drei Jahren verdreifacht zu haben, und bot Polen (vorgestellt am 01.09.2025 laut ESD) einen Weg zu bis zu 200.000 155-mm-Geschossen pro Jahr gemeinsam mit PGZ an; das LU211 sei seit April 2022 auf CAESAR in der Ukraine im Einsatz (mehrere tausend Schuss je Geschütz), habe in der Operation Chammal über 15.000 Schuss verschossen und sei auf K9 und Krab qualifiziert.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-a5a55ae4e279062f",
+    "S-2dacbdde62e913a1"
+   ],
+   "evidence": "Paraphrase: 'tripling its large-calibre munition production capacity'; Angebot 200.000 Geschosse/Jahr mit PGZ; LU211 seit April 2022 auf CAESAR in der Ukraine; >15.000 Schuss Operation Chammal; qualifiziert auf K9 und KRAB.",
+   "location": "Absätze 1-4 und Abschnitt 'The LU211'",
+   "uncertainty": "Kapazitätsverdreifachung ohne Basiswert; Angebot, kein Vertrag; Einsatzangaben sind Herstellerangaben.",
+   "evidence_items": [
+    {
+     "source_id": "S-a5a55ae4e279062f",
+     "text": "Paraphrase: 'tripling its large-calibre munition production capacity'; Angebot 200.000 Geschosse/Jahr mit PGZ; LU211 seit April 2022 auf CAESAR in der Ukraine; >15.000 Schuss Operation Chammal; qualifiziert auf K9 und KRAB.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-4 und Abschnitt 'The LU211'"
+    },
+    {
+     "source_id": "S-2dacbdde62e913a1",
+     "text": "Paraphrase: Datierung: 'On 1 September 2025 ... KNDS France outlined its proposal'.",
+     "mode": "Paraphrase",
+     "location": "Absatz 1 (ESD, 01.09.2025)"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Beschaffung/Einsatz; Kapazität",
+   "event_date": "2025-09-01",
+   "event_status": "Angebot"
+  },
+  {
+   "id": "M-KND-05",
+   "statement": "Laut PAP Biznes (Bankier.pl, 18.06.2026) schlossen Niewiadów PGM und KNDS Ammo France eine einjährige Vereinbarung über strategische Zusammenarbeit zu 155-mm-Munition (u. a. LU211P-Geschosse und MCS-Treibladungen, Qualifikation auf KRAB und K9); geplant sei die Produktion kompletter 155-mm-Sätze in Polen von zielweise 180.000 Stück pro Jahr, ein Rahmenvertrag werde bis Ende 2026 angestrebt; Niewiadów stelle Infrastruktur, KNDS Lizenzen und Technologie.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-9dbd280720401c1f"
+   ],
+   "evidence": "Paraphrase: Umowa o strategicznej współpracy; LU211P und MCS; 'docelowo 180.000 szt. amunicji rocznie'; Laufzeit 1 Jahr, Rahmenvertrag bis Ende 2026 angestrebt.",
+   "location": "Absätze 1-4",
+   "uncertainty": "Zielkapazität eines Partnerwerks in Polen, keine KNDS-Ist-Kapazität.",
+   "evidence_items": [
+    {
+     "source_id": "S-9dbd280720401c1f",
+     "text": "Paraphrase: Umowa o strategicznej współpracy; LU211P und MCS; 'docelowo 180.000 szt. amunicji rocznie'; Laufzeit 1 Jahr, Rahmenvertrag bis Ende 2026 angestrebt.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-4"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Kapazität (Ziel)/Industrie",
+   "event_date": "2026-06-18",
+   "event_status": "Kooperationsvereinbarung"
+  },
+  {
+   "id": "M-KND-06",
+   "statement": "Laut Le Monde (wiedergegeben von Euromaidan Press, 22.04.2025) hat KNDS die 155-mm-Geschossproduktion am Standort La Chapelle-Saint-Ursin verdoppelt und strebt 100.000 Stück pro Jahr an.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-ba345071cf3244b4"
+   ],
+   "evidence": "Auszug: 'KNDS has doubled production of 155 mm artillery shells at its La Chapelle-Saint-Ursin facility, targeting 100,000 units per year.'",
+   "location": "Absatz 4",
+   "uncertainty": "Sekundärwiedergabe; Zielwert ohne Jahr; Originalartikel Le Monde nicht geöffnet.",
+   "evidence_items": [
+    {
+     "source_id": "S-ba345071cf3244b4",
+     "text": "Auszug: 'KNDS has doubled production of 155 mm artillery shells at its La Chapelle-Saint-Ursin facility, targeting 100,000 units per year.'",
+     "mode": "Auszug",
+     "location": "Absatz 4"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Kapazität",
+   "event_date": "2025-04-22",
+   "event_status": "Ziel"
+  },
+  {
+   "id": "M-KND-07",
+   "statement": "Laut Defence Blog (23.12.2025, unter Berufung auf eine KNDS-France-Mitteilung) schloss KNDS France mit Les Forges de Tarbes ein dreijähriges, verlängerbares Long Term Agreement über 60.000 bis 150.000 155-mm-Geschosshüllen (Hohlkörper) für 2026-2028, die KNDS France zu fertiger Munition integriert; der Lieferant habe zugesagt, die zugeteilte Kapazität auf Anforderung zu verdoppeln.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-c4cf8d872c93d230"
+   ],
+   "evidence": "Paraphrase: LTA drei Jahre; 60.000-150.000 hollow shell bodies 2026-2028; Integration bei KNDS France; Verdopplungszusage.",
+   "location": "Absätze 1-5",
+   "uncertainty": "Hüllen eines Zulieferers, keine Fertigmunitionskapazität.",
+   "evidence_items": [
+    {
+     "source_id": "S-c4cf8d872c93d230",
+     "text": "Paraphrase: LTA drei Jahre; 60.000-150.000 hollow shell bodies 2026-2028; Integration bei KNDS France; Verdopplungszusage.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-5"
+    }
+   ],
+   "proposed_depth": "B",
+   "depth_reason": "Lieferkette Geschosskörper",
+   "event_date": "2025-12-23",
+   "event_status": "Vertrag geschlossen"
+  },
+  {
+   "id": "M-KND-08",
+   "statement": "Laut EDR (04.11.2025) eröffnete der belgische Verteidigungsminister bei KNDS Belgium in Petit-Roeulx-lez-Nivelles eine neue Einheit für Großkaliber-Bearbeitung und Führungsband-Montage mit automatisierter 155-mm-Geschosslinie, zusätzlich zu bereits zwei Produktionslinien; 2026 seien knapp sechs Monate Produktion für die belgische Verteidigung vorgesehen; KNDS Belgium hat 350 Beschäftigte.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-6c84242ff77b4c1c"
+   ],
+   "evidence": "Paraphrase: Neue UCGC mit automatisierter 155-mm-Linie, 'already included two production lines'; 2026 'nearly six months of production will be dedicated to shells for the Belgian Defence'; 350 Beschäftigte.",
+   "location": "Absätze 1-4",
+   "uncertainty": "Stückzahlen nicht angegeben.",
+   "evidence_items": [
+    {
+     "source_id": "S-6c84242ff77b4c1c",
+     "text": "Paraphrase: Neue UCGC mit automatisierter 155-mm-Linie, 'already included two production lines'; 2026 'nearly six months of production will be dedicated to shells for the Belgian Defence'; 350 Beschäftigte.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-4"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Industrie/Beschaffung",
+   "event_date": "2025-11-04",
+   "event_status": "in Betrieb genommen"
+  },
+  {
+   "id": "M-KND-09",
+   "statement": "Laut Euronews (13.08.2026) ereignete sich in der Munitionsfabrik von KNDS Ammo Italy (früher Simmel Difesa) in Colleferro eine Explosion in einer Sprengstoff-Abteilung bzw. nach ersten Angaben im Bereich der 'Pulverpressen'; dort werde Munition mittleren und großen Kalibers sowie Treibstoff für die Raumfahrt produziert; laut lokalen Komitees erhalte KNDS 40 Mio EUR aus dem EU-Programm ASAP.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-aa0ff06d95479d16"
+   ],
+   "evidence": "Paraphrase: Explosion in einer Sprengstoff-Abteilung; Bereich 'Pulverpressen'; Produktion Mittel-/Großkaliber und Raumfahrttreibstoff; ASAP-Mittel laut lokalen Komitees.",
+   "location": "Absätze 1-3 und 6",
+   "uncertainty": "ASAP-Betrag nur laut lokalen Komitees; ob am Standort Pulver/Sprengstoff hergestellt oder nur verarbeitet wird, geht aus der Quelle nicht hervor; Folgen für die Produktion nicht belegt.",
+   "evidence_items": [
+    {
+     "source_id": "S-aa0ff06d95479d16",
+     "text": "Paraphrase: Explosion in einer Sprengstoff-Abteilung; Bereich 'Pulverpressen'; Produktion Mittel-/Großkaliber und Raumfahrttreibstoff; ASAP-Mittel laut lokalen Komitees.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-3 und 6"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Gegenrecherche/Integration",
+   "event_date": "2026-08-13",
+   "event_status": "Ereignis"
+  },
+  {
+   "id": "M-BAE-01",
+   "statement": "Die BAE-Systems-Broschüre '155mm Artillery Ammunition' (Februar 2026) führt die Geschosse L15 HE, XL12E1 HE Extended Range (aus L15 abgeleitet, mit aufschraubbarer Base-Bleed-Einheit), L21 HE (ballistisch M107-gleich) und L17 Inert, die Treibladungen L8, L10 und L18 (Triple-Base-Treibmittel) sowie den Zünder L174; Füllungen RDX/HMX/TNT bzw. TNT; L15 und L21 seien bei der britischen MOD in 39- und 52-Kaliber-Plattformen im Dienst.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-213a79eb466923da"
+   ],
+   "evidence": "Paraphrase: Our 155mm Artillery Shell: L15 HE, XL12E1 HE ER, L21 HE, L17 Inert; Our 155mm Propelling Charges: L8, L10, L18 (Triple Base); L174 Fuze; Qualifikationsstatus je Produkt.",
+   "location": "PDF-Seiten 3-4",
+   "uncertainty": "Gelenkte/Sensorzünder-Munition (z. B. BAE-Bofors-Produkte) wurde nicht geprüft (Produktseiten nicht abrufbar).",
+   "evidence_items": [
+    {
+     "source_id": "S-213a79eb466923da",
+     "text": "Paraphrase: Our 155mm Artillery Shell: L15 HE, XL12E1 HE ER, L21 HE, L17 Inert; Our 155mm Propelling Charges: L8, L10, L18 (Triple Base); L174 Fuze; Qualifikationsstatus je Produkt.",
+     "mode": "Paraphrase",
+     "location": "PDF-Seiten 3-4"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Spektrum"
+  },
+  {
+   "id": "M-BAE-02",
+   "statement": "Laut BAE-Broschüre (Februar 2026) erreicht das L15 HE maximal 24,7 km (JBMoU L/39) bzw. 32 km (L/52, im Dienst), das XL12E1 HE ER >30 km (L/39) bzw. 40 km (L/52), wobei 'Greater than 40km achieved through trials' als Qualifikationsstatus angegeben ist; L21 HE typischerweise 17,8 km aus 39-Kaliber-Waffen.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-213a79eb466923da"
+   ],
+   "evidence": "Auszug: XL12E1: 'Max range JBMoU L/39: > 30km', 'JBMoU L/52: 40km', 'Qualification status Greater than 40km achieved through trials'; L15: 'JBMoU L/39: 24.7km', 'JBMoU L/52: 32km'.",
+   "location": "PDF-Seite 3, Datentabellen",
+   "uncertainty": "XL12E1 ist laut Broschüre nicht als im Dienst befindlich ausgewiesen; Trial-Bedingungen nicht beschrieben.",
+   "evidence_items": [
+    {
+     "source_id": "S-213a79eb466923da",
+     "text": "Auszug: XL12E1: 'Max range JBMoU L/39: > 30km', 'JBMoU L/52: 40km', 'Qualification status Greater than 40km achieved through trials'; L15: 'JBMoU L/39: 24.7km', 'JBMoU L/52: 32km'.",
+     "mode": "Auszug",
+     "location": "PDF-Seite 3, Datentabellen"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Reichweite"
+  },
+  {
+   "id": "M-BAE-03",
+   "statement": "Das britische Verteidigungsministerium vergab laut Defense News (11.07.2023) an BAE Systems einen Auftrag über 280 Mio GBP (Optionen auf über 400 Mio GBP) für 155-mm-Granaten, 30-mm- und 5,56-mm-Munition im Rahmen des 15-jährigen, 2,4 Mrd GBP umfassenden Next Generation Munitions Solution; laut UKDJ umfasst die Investition eine zusätzliche 155-mm-Bearbeitungslinie in Washington (Tyne & Wear) und eine neue Füllanlage in Glascoed (Südwales).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-6c35892360c66d5a",
+    "S-1e501c0b6e3d8fb8"
+   ],
+   "evidence": "Paraphrase: £280 Mio., Optionen > £400 Mio.; 155mm, 30mm, 5.56mm; Next Generation Munitions Solution, 15 Jahre, £2,4 Mrd.",
+   "location": "Absätze 1-3 und 7",
+   "uncertainty": "",
+   "evidence_items": [
+    {
+     "source_id": "S-6c35892360c66d5a",
+     "text": "Paraphrase: £280 Mio., Optionen > £400 Mio.; 155mm, 30mm, 5.56mm; Next Generation Munitions Solution, 15 Jahre, £2,4 Mrd.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-3 und 7"
+    },
+    {
+     "source_id": "S-1e501c0b6e3d8fb8",
+     "text": "Paraphrase: 'an additional 155mm machining line in Washington, Tyne & Wear, a new explosive filling facility in Glascoed, South Wales'.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-3"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Beschaffung/Industrie",
+   "event_date": "2023-07-11",
+   "event_status": "Auftrag erteilt"
+  },
+  {
+   "id": "M-BAE-04",
+   "statement": "Laut UKDJ (21.04.2025, Zitat einer BAE-Mitteilung) sollen über 150 Mio GBP Investitionen seit 2022 eine sechzehnfache Steigerung der 155-mm-Produktionskapazität bewirken, sobald die neue Füllanlage in Glascoed 'this summer' (2025) in Betrieb gehe; zudem habe BAE kontinuierliche Verfahren für Sprengstoffe/Treibmittel entwickelt, mit industrieller Kapazität bis Ende 2026.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-11a2bf8c21d08244"
+   ],
+   "evidence": "Auszug: 'deliver a sixteen-fold increase in production capacity of 155mm artillery shells' when ... Glascoed ... becomes operational this summer; industrial-scale capacity expected by the end of 2026.",
+   "location": "Absätze 1-3",
+   "uncertainty": "Basiswert der Sechzehnfach-Steigerung nicht genannt; Original-Mitteilung auf baesystems.com war nicht abrufbar (HTTP 403); Zeitplan inzwischen verzögert (siehe M-BAE-05).",
+   "evidence_items": [
+    {
+     "source_id": "S-11a2bf8c21d08244",
+     "text": "Auszug: 'deliver a sixteen-fold increase in production capacity of 155mm artillery shells' when ... Glascoed ... becomes operational this summer; industrial-scale capacity expected by the end of 2026.",
+     "mode": "Auszug",
+     "location": "Absätze 1-3"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Kapazität (Ziel)",
+   "event_date": "2025-04-21",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "M-BAE-05",
+   "statement": "Laut Calibre Defence (04.08.2026) liegt der Ausbau des BAE-Standorts Glascoed (Laden/Füllen von Geschossen) hinter dem Zeitplan; geplant war die Eröffnung im Sommer 2025, das Datum sei nun unklar, BAE begründe dies mit der Verdopplung der Produktionskapazität; das Vereinigte Königreich produziere keine Sprengstoffe und sei für Energetik und Treibmittel fast vollständig auf Importe angewiesen, BAE habe dazu einen großen Vertrag mit Hanwha über Treibmittel geschlossen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-22b4e8c338d5fc31"
+   ],
+   "evidence": "Paraphrase: 'the UK does not produce any. It is almost completely reliant upon imports for its energetics and propellant; BAE has signed a large contract with Hanwha'; Glascoed 'due to open in Summer 2025, but the opening date is now unclear'.",
+   "location": "Abschnitt 'The challenge of producing explosives in the UK', Absätze 1-3",
+   "uncertainty": "Medienangabe; BAE-Stellungnahme nur indirekt wiedergegeben.",
+   "evidence_items": [
+    {
+     "source_id": "S-22b4e8c338d5fc31",
+     "text": "Paraphrase: 'the UK does not produce any. It is almost completely reliant upon imports for its energetics and propellant; BAE has signed a large contract with Hanwha'; Glascoed 'due to open in Summer 2025, but the opening date is now unclear'.",
+     "mode": "Paraphrase",
+     "location": "Abschnitt 'The challenge of producing explosives in the UK', Absätze 1-3"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Gegenrecherche Integration/Kapazität",
+   "event_date": "2026-08-04",
+   "event_status": "verzögert"
+  },
+  {
+   "id": "M-BAE-06",
+   "statement": "Laut EDR (18.07.2024, Interview) ist BAE Systems Ordnance Systems Inc. Betreiber (operating contractor) der staatlichen Holston Army Ammunition Plant (RDX, HMX, NTO, TATB) und der Radford Army Ammunition Plant (militärische Nitrozellulose, Single- und Multi-Base-Treibmittel; neue Anlage 2024); BAE OSI habe die Lieferungen im Vorjahr verdoppelt und für Holston einen weiteren 10-Jahres-Vertrag erhalten.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-2706942fb5928fec"
+   ],
+   "evidence": "Paraphrase: OSI 'is the operating contractor for the Holston Army Ammunition Plant ... and for the Radford Army Ammunition Plant'; 'At Holston we manufacture RDX and HMX'; Radford 'military grade nitrocellulose'; Lieferungen verdoppelt.",
+   "location": "Absätze 1-3, 5-6",
+   "uncertainty": "Werke sind US-Army-eigen (Betreibermodell); Angaben aus Interview mit BAE-Vertretern.",
+   "evidence_items": [
+    {
+     "source_id": "S-2706942fb5928fec",
+     "text": "Paraphrase: OSI 'is the operating contractor for the Holston Army Ammunition Plant ... and for the Radford Army Ammunition Plant'; 'At Holston we manufacture RDX and HMX'; Radford 'military grade nitrocellulose'; Lieferungen verdoppelt.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-3, 5-6"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Vertikalintegration (US)",
+   "event_date": "2024-07-18",
+   "event_status": "in Betrieb"
+  },
+  {
+   "id": "M-GDO-01",
+   "statement": "GD-OTS führt im 155-mm-Bereich das ERA-HE (Extended Range HE, 'Launching in 2026'), das M1128-I (Base Bleed), die 52-Kaliber-Zusatzladung SuperShot, das M795 HE (TNT oder IMX-101), das XM1113 (raketenunterstützt), das Übungsgeschoss MR103, SMArt 155 und SMArtER155 (C-DAEM) sowie Treibladungen M119A2 und MACS M231/M232A1 (GD-OTS als Hersteller für US Army und Marine Corps) und UBX-Ladungen; die Scranton Operations fertigen seit 1963 Artilleriegeschosse.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-89c6e4ce6f0b8dab",
+    "S-182f1bf64398f3d4"
+   ],
+   "evidence": "Paraphrase: Artillery-Menü und Produktbeschreibungen (ERA-HE, M1128-I, SUPERSHOT, M795 HE, XM1113, MR103, SMArt 155, SMArtER155); Scranton seit 1963.",
+   "location": "Seite Artillery, Menü und Abschnitte 'MANUFACTURING EXCELLENCE' bis 'PROJECTILE METAL PARTS'",
+   "uncertainty": "Ob GD-OTS SMArt 155/SMArtER155 selbst fertigt oder nur anbietet, geht aus der Seite nicht hervor; ERA-HE ist als 'Launching in 2026' gekennzeichnet.",
+   "evidence_items": [
+    {
+     "source_id": "S-89c6e4ce6f0b8dab",
+     "text": "Paraphrase: Artillery-Menü und Produktbeschreibungen (ERA-HE, M1128-I, SUPERSHOT, M795 HE, XM1113, MR103, SMArt 155, SMArtER155); Scranton seit 1963.",
+     "mode": "Paraphrase",
+     "location": "Seite Artillery, Menü und Abschnitte 'MANUFACTURING EXCELLENCE' bis 'PROJECTILE METAL PARTS'"
+    },
+    {
+     "source_id": "S-182f1bf64398f3d4",
+     "text": "Paraphrase: M119A2; MACS M231/M232A1 'General Dynamics ... is the manufacturer'; UBX.",
+     "mode": "Paraphrase",
+     "location": "Seite Howitzer Propelling Charges, Abschnitte UBX, M119A2, MACS"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Spektrum"
+  },
+  {
+   "id": "M-GDO-02",
+   "statement": "Laut GD-OTS-Broschüren (Juni 2026) erreicht das M1128-I eine maximale Reichweite von 40 km und das ERA-HE (Hollow Base) von 30 km, jeweils mit MCS Zone 6H aus 52-Kaliber-Rohren; die Werte beruhen laut GD-OTS auf einer Kombination aus ballistischen Schießdaten und Ingenieursimulation.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-66c989d68bed493a",
+    "S-486bb87d545a7e5d"
+   ],
+   "evidence": "Auszug: 'Max Range 40km, Zone 6H'; '52cal Range Tables'; 'Data shown is based on a combination of ballistic firing data and engineering simulation.'",
+   "location": "PDF-Seite 2, TECHNICAL DATA und Fußnote",
+   "uncertainty": "Teilweise simulationsgestützte Herstellerwerte.",
+   "evidence_items": [
+    {
+     "source_id": "S-66c989d68bed493a",
+     "text": "Auszug: 'Max Range 40km, Zone 6H'; '52cal Range Tables'; 'Data shown is based on a combination of ballistic firing data and engineering simulation.'",
+     "mode": "Auszug",
+     "location": "PDF-Seite 2, TECHNICAL DATA und Fußnote"
+    },
+    {
+     "source_id": "S-486bb87d545a7e5d",
+     "text": "Auszug: 'Max Range 30km, Zone 6H'; 'Optimized for 52cal Cannons'.",
+     "mode": "Auszug",
+     "location": "PDF-Seiten 1-2"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Reichweite"
+  },
+  {
+   "id": "M-GDO-03",
+   "statement": "GD-OTS erhielt laut Mitteilung vom 27.04.2023 einen Task Order über 217 Mio USD unter einem modifizierten Army-Vertrag über 1,48 Mrd USD zur Modernisierung und Erweiterung der 155-mm-Geschosskörperfertigung (metal parts) an der Scranton Army Ammunition Plant und im GD-Werk Wilkes-Barre (Hochlauf bis Ende Fiskaljahr 2025).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-eeb74caefc3275d0"
+   ],
+   "evidence": "Paraphrase: $217M task order; modifizierter $1,48 Mrd. Army-Vertrag; Scranton AAP und Wilkes-Barre; ramp-up bis Ende FY2025.",
+   "location": "Absatz 1",
+   "uncertainty": "Erreichter Hochlauf nicht belegt.",
+   "evidence_items": [
+    {
+     "source_id": "S-eeb74caefc3275d0",
+     "text": "Paraphrase: $217M task order; modifizierter $1,48 Mrd. Army-Vertrag; Scranton AAP und Wilkes-Barre; ramp-up bis Ende FY2025.",
+     "mode": "Paraphrase",
+     "location": "Absatz 1"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Beschaffung/Industrie",
+   "event_date": "2023-04-27",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "M-GDO-04",
+   "statement": "GD-OTS und das JPEO A&A eröffneten am 29.05.2024 in Mesquite (Texas) eine automatisierte Fertigung für 155-mm-Geschosskörper (Universal Artillery Projectile Lines, flexibel für 60 bis 155 mm).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4c4ea5a84abeab0f"
+   ],
+   "evidence": "Paraphrase: Eröffnung 29. Mai; UAPL; 155mm metal parts; 60mm bis 155mm.",
+   "location": "Absätze 1-2",
+   "uncertainty": "Spätere Produktionsprobleme siehe M-GDO-05.",
+   "evidence_items": [
+    {
+     "source_id": "S-4c4ea5a84abeab0f",
+     "text": "Paraphrase: Eröffnung 29. Mai; UAPL; 155mm metal parts; 60mm bis 155mm.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-2"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Werksaufbau",
+   "event_date": "2024-05-29",
+   "event_status": "eröffnet"
+  },
+  {
+   "id": "M-GDO-05",
+   "statement": "Laut Task & Purpose (14.07.2026) zu einem DoD-Inspector-General-Bericht sollte die Anlage in Mesquite bis Oktober 2025 30.000 155-mm-Geschosse (M795-Metallteile) pro Monat liefern, hatte bis März 2026 aber keine geliefert (Kosten 469 Mio USD; Arbeitsstopp ab August 2025 bis mindestens April 2026); der Bericht nennt keinen Auftragnehmer, die Beschreibung passe aber zu GD-OTS; im März 2026 lieferten zwei andere Fabriken Teile für 46.000 Schuss pro Monat.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5590349d6f29de4e"
+   ],
+   "evidence": "Paraphrase: 30.000 pro Monat bis Oktober 2025 geplant, bis März keine Lieferung; $469 Mio.; Stop-Work August 2025; Zuordnung zu GD-OTS durch das Medium; 46.000 rounds per month aus zwei anderen Fabriken.",
+   "location": "Absätze 1-5, 9-11",
+   "uncertainty": "Zuordnung zu GD-OTS beruht auf Medienabgleich; IG-Bericht selbst nicht geöffnet.",
+   "evidence_items": [
+    {
+     "source_id": "S-5590349d6f29de4e",
+     "text": "Paraphrase: 30.000 pro Monat bis Oktober 2025 geplant, bis März keine Lieferung; $469 Mio.; Stop-Work August 2025; Zuordnung zu GD-OTS durch das Medium; 46.000 rounds per month aus zwei anderen Fabriken.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-5, 9-11"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Gegenrecherche Kapazität/Industrie",
+   "event_date": "2026-07-14",
+   "event_status": "Produktionsstopp (Medienangabe)",
+   "depends_on": [
+    "M-GDO-04"
+   ]
+  },
+  {
+   "id": "M-GDO-06",
+   "statement": "GD-OTS Canada (Valleyfield) fertigt laut Unternehmensseite Single-, Double- und Triple-Base-Treibmittel sowie u. a. Sprengstofffüllungen und nennt Expertise in Sprengstoffen und Nitrozellulose; die Canadian Commercial Corporation und die US Army schlossen am 25.03.2024 eine Undefinitized Contract Action zur Erweiterung der Artillerietreibmittelkapazität von GD-OTS Canada, deren Werk Valleyfield auf Artillerietreibmittel einschließlich M31A2 spezialisiert ist.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-1eae2dae5ac99788",
+    "S-ae7a06352c503d15"
+   ],
+   "evidence": "Paraphrase: 'manufactures a complete line of single, double and triple base propellants ... as well as ... high explosives fills'; 'expertise in explosives and nitrocellulose'.",
+   "location": "Seite Energetic Materials, Absätze 1-4",
+   "uncertainty": "Eigene Sprengstoff-Herstellung (Synthese) vs. Füllung nicht eindeutig.",
+   "evidence_items": [
+    {
+     "source_id": "S-1eae2dae5ac99788",
+     "text": "Paraphrase: 'manufactures a complete line of single, double and triple base propellants ... as well as ... high explosives fills'; 'expertise in explosives and nitrocellulose'.",
+     "mode": "Paraphrase",
+     "location": "Seite Energetic Materials, Absätze 1-4"
+    },
+    {
+     "source_id": "S-ae7a06352c503d15",
+     "text": "Paraphrase: UCA zur Artillery Propellant Capacity Expansion; Valleyfield 'specializes in the production of artillery propellants – including M31A2'.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-3 (25.03.2024)"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Vertikalintegration",
+   "event_date": "2024-03-25",
+   "event_status": "Vertrag (UCA)"
+  },
+  {
+   "id": "M-HAN-01",
+   "statement": "Laut Breaking Defense (11.12.2025, Angaben von Hanwha-Vertretern bei einer von Hanwha finanzierten Pressereise) produziert Hanwhas Werk Yeosu 1,2 Mio Treibladungsmodule (MCS) pro Jahr mit Plan auf 1,6 Mio 2028; ein zweites Werk in Boeun soll 2027 ähnliche Kapazität erreichen; Hanwha plane ein US-Werk (1 Mrd USD) mit Herstellung von Nitrozellulose und Nitroglycerin und Verarbeitung von Nitroguanidin zu Triple-Base-Treibmitteln (Produktion bis 2030) und sei an über 90 % des südkoreanischen Markts für Gefechtsköpfe und Antriebe beteiligt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-69f3ca71ad940e6e"
+   ],
+   "evidence": "Paraphrase: 'The plant in Yeosu currently produces 1.2 million modules per year with plans to scale up to 1.6 million in 2028'; Boeun 2027; US-Werk mit NC/NG/NQ; 'over 90 percent of South Korea’s warhead and propulsion-system market'.",
+   "location": "Absätze 1-4, 8-9, 12",
+   "uncertainty": "Herstellerangaben über Medium; Reise von Hanwha bezahlt; Einheit Module, nicht Geschosse.",
+   "evidence_items": [
+    {
+     "source_id": "S-69f3ca71ad940e6e",
+     "text": "Paraphrase: 'The plant in Yeosu currently produces 1.2 million modules per year with plans to scale up to 1.6 million in 2028'; Boeun 2027; US-Werk mit NC/NG/NQ; 'over 90 percent of South Korea’s warhead and propulsion-system market'.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-4, 8-9, 12"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Kapazität/Integration"
+  },
+  {
+   "id": "M-HAN-02",
+   "statement": "Laut Korea JoongAng Daily (23.11.2023) schloss Hanwha Aerospace mit BAE Systems einen Liefervertrag über modulare Treibladungssysteme (MCS) im Wert von 130 Mio USD, nach Hanwha-Angaben der erste Export NATO-Standard-Treibladungen für 155-mm-Munition; die Entwicklung sei 2023 abgeschlossen worden.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-25aa458cd8d5079c"
+   ],
+   "evidence": "Paraphrase: $130-million MCS supply deal with BAE Systems; 'first export contract to supply NATO-standard artillery propellant for 155-millimeter ammunition'; Entwicklung seit 2019, 2023 abgeschlossen.",
+   "location": "Absätze 1-3",
+   "uncertainty": "",
+   "evidence_items": [
+    {
+     "source_id": "S-25aa458cd8d5079c",
+     "text": "Paraphrase: $130-million MCS supply deal with BAE Systems; 'first export contract to supply NATO-standard artillery propellant for 155-millimeter ammunition'; Entwicklung seit 2019, 2023 abgeschlossen.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-3"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Beschaffung",
+   "event_date": "2023-11-23",
+   "event_status": "Vertrag unterzeichnet"
+  },
+  {
+   "id": "M-HAN-03",
+   "statement": "Laut The Korea Times (15.10.2025) unterzeichnete Hanwha Aerospace mit der schwedischen Beschaffungsbehörde FMV einen dreijährigen Rahmenvertrag über MCS-Treibladungen (150 Mrd KRW, rund 110 Mio USD) im Anschluss an einen ähnlichen Vertrag von 2024; Lieferungen sollen 2026 beginnen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5d054e98a93f597d"
+   ],
+   "evidence": "Paraphrase: 150 billion won ($110 million); 'three-year framework deal follows a similar contract signed last year'; Lieferbeginn nächstes Jahr.",
+   "location": "Absätze 1-3",
+   "uncertainty": "",
+   "evidence_items": [
+    {
+     "source_id": "S-5d054e98a93f597d",
+     "text": "Paraphrase: 150 billion won ($110 million); 'three-year framework deal follows a similar contract signed last year'; Lieferbeginn nächstes Jahr.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-3"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Beschaffung",
+   "event_date": "2025-10-14",
+   "event_status": "Rahmenvertrag unterzeichnet"
+  },
+  {
+   "id": "M-HAN-04",
+   "statement": "Laut Army Technology (14.10.2025, AUSA 2025) will Hanwha 155-mm-Geschosse mit Base-Bleed-Einheiten produzieren und eine vollautomatisierte Modular-Charge-Fabrik errichten; die erste solche Anlage soll 2027 in Südkorea öffnen und bei voller Kapazität 300.000 Schuss pro Jahr erreichen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-4990a0c7872510f8"
+   ],
+   "evidence": "Paraphrase: 'it intends to produce 155mm artillery rounds with base bleed units'; erste Fully Automated Modular Charge Facility 2027 in Südkorea; 'production of 300,000 rounds per year'.",
+   "location": "Absätze 2, 6-8",
+   "uncertainty": "Ob sich '300.000 rounds' auf Ladungssätze oder komplette Geschosse bezieht, bleibt offen.",
+   "evidence_items": [
+    {
+     "source_id": "S-4990a0c7872510f8",
+     "text": "Paraphrase: 'it intends to produce 155mm artillery rounds with base bleed units'; erste Fully Automated Modular Charge Facility 2027 in Südkorea; 'production of 300,000 rounds per year'.",
+     "mode": "Paraphrase",
+     "location": "Absätze 2, 6-8"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Kapazität (Ziel)",
+   "event_date": "2025-10-14",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "M-HAN-05",
+   "statement": "Laut Manufacturing Digital (24.09.2026) eröffnete Hanwha Defence USA ein Verwaltungsgebäude im Pine Bluff Arsenal (Arkansas) als ersten Schritt zu einem geplanten Campus für rund 2,2 Mrd USD zur Fertigung von 155-mm-Treibladungen und Base-Bleed-Einheiten (Lease-Vergabe Januar 2026, rund 400 Arbeitsplätze in sieben Jahren); es wäre Hanwhas erste Munitionsfertigung in den USA.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-1fcfbe98a40fffd8"
+   ],
+   "evidence": "Paraphrase: Verwaltungs-HQ Pine Bluff; $2,2 Mrd. Advanced Manufacturing Campus; '155mm propellant charges and base bleed units'; Lease Januar 2026; ~400 Jobs.",
+   "location": "Absätze 1-4, Key Facts, Abschnitt 'Why Hanwha has invested'",
+   "uncertainty": "Fertigung zum Stichtag nicht begonnen; Investitionsbetrag ist Unternehmensangabe.",
+   "evidence_items": [
+    {
+     "source_id": "S-1fcfbe98a40fffd8",
+     "text": "Paraphrase: Verwaltungs-HQ Pine Bluff; $2,2 Mrd. Advanced Manufacturing Campus; '155mm propellant charges and base bleed units'; Lease Januar 2026; ~400 Jobs.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-4, Key Facts, Abschnitt 'Why Hanwha has invested'"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Werksaufbau USA",
+   "event_date": "2026-09-24",
+   "event_status": "geplant"
+  },
+  {
+   "id": "M-HAN-06",
+   "statement": "Laut GBP Aerospace & Defence (26.01.2026) bestätigte Hanwha Aerospace am 14.01.2026 den Beginn der vollen Serienproduktion eigener 155-mm-Extended-Range-Artilleriegeschosse, um einen Rückstand internationaler Bestellungen abzubauen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-11207e9f835a9f20"
+   ],
+   "evidence": "Paraphrase: 'Hanwha Aerospace has confirmed the commencement of full-scale mass production for its indigenously developed 155mm extended-range artillery shells ... announced on 14 January 2026'.",
+   "location": "Teaser-Absatz (übriger Text hinter Bezahlschranke)",
+   "uncertainty": "Nur Anrisstext zugänglich; Reichweite, Werk und Entwicklerrolle (frühere Berichte nennen Poongsan als Entwickler eines ER-Geschosses) nicht geprüft.",
+   "evidence_items": [
+    {
+     "source_id": "S-11207e9f835a9f20",
+     "text": "Paraphrase: 'Hanwha Aerospace has confirmed the commencement of full-scale mass production for its indigenously developed 155mm extended-range artillery shells ... announced on 14 January 2026'.",
+     "mode": "Paraphrase",
+     "location": "Teaser-Absatz (übriger Text hinter Bezahlschranke)"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Spektrum",
+   "event_date": "2026-01-14",
+   "event_status": "Serienproduktion begonnen (Medienangabe)"
+  },
+  {
+   "id": "M-HAN-07",
+   "statement": "Laut The Defense Post (01.02.2026, Werksbesuch) mischen in Hanwhas koreanischen Werken Robotersysteme Nitrozellulose und Nitroglycerin für Treibladungen; die 1,2 Mio MCS-Einheiten entsprächen etwa 200.000 bis 250.000 155-mm-Schuss; der Leiter des Werks Daejeon erklärte, Hanwha könne 'energetic materials all the way to system integration' herstellen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-cf746dc76f173082"
+   ],
+   "evidence": "Paraphrase: '1.2 million units of modular charge systems (MCS) — a volume sufficient to support approximately 200 to 250,000 rounds'; Mischung von Nitrozellulose und Nitroglycerin; Zitat Jae Woong Ga.",
+   "location": "Absätze 1-3, 18-19",
+   "uncertainty": "Umrechnung Module/Schuss ist Medienangabe.",
+   "evidence_items": [
+    {
+     "source_id": "S-cf746dc76f173082",
+     "text": "Paraphrase: '1.2 million units of modular charge systems (MCS) — a volume sufficient to support approximately 200 to 250,000 rounds'; Mischung von Nitrozellulose und Nitroglycerin; Zitat Jae Woong Ga.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-3, 18-19"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Integration/Kapazität"
+  },
+  {
+   "id": "M-MKT-01",
+   "statement": "Die Europäische Kommission nennt für ASAP (Act in Support of Ammunition Production) ausgewählte Projekte mit über 500 Mio EUR, davon rund 124 Mio EUR für Sprengstoffe, rund 248 Mio EUR für Pulver, rund 90 Mio EUR für Geschosse, rund 50 Mio EUR für Flugkörper und rund 2 Mio EUR für Test/Rekonditionierung; 31 Projekte wurden ausgewählt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-a4432a86aaf146f5"
+   ],
+   "evidence": "Paraphrase: Explosives ~€124 Mio.; Powder ~€248 Mio.; Shells ~€90 Mio.; Missiles ~€50 Mio.; Testing ~€2 Mio.; 31 Projekte.",
+   "location": "Abschnitt 'ASAP | Boosting defence production' und 'ASAP in detail'",
+   "uncertainty": "",
+   "evidence_items": [
+    {
+     "source_id": "S-a4432a86aaf146f5",
+     "text": "Paraphrase: Explosives ~€124 Mio.; Powder ~€248 Mio.; Shells ~€90 Mio.; Missiles ~€50 Mio.; Testing ~€2 Mio.; 31 Projekte.",
+     "mode": "Paraphrase",
+     "location": "Abschnitt 'ASAP | Boosting defence production' und 'ASAP in detail'"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "EU-Programm",
+   "event_status": "Förderentscheidungen getroffen"
+  },
+  {
+   "id": "M-MKT-02",
+   "statement": "Laut European Pravda (15.03.2024) erklärte die Kommission, ASAP ermögliche eine europäische Munitionskapazität von 2 Mio Geschossen pro Jahr bis Ende 2025; 513 Mio EUR aus EU- und norwegischen Mitteln sollten insgesamt rund 1,4 Mrd EUR Investitionen auslösen; die 155-mm-Kapazität habe im Januar 2024 laut Kommission 1 Mio pro Jahr erreicht.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-84620b98214b90e5"
+   ],
+   "evidence": "Auszug: 'ramp up its ammunition production capacity to 2 million shells per year by the end of 2025'; '€513 million'; 'approximately €1.4 billion'; '155-mm projectiles had reached 1 million per year in January 2024'.",
+   "location": "Absätze 1-5",
+   "uncertainty": "Zielwert und Kapazitätsangabe der Kommission; siehe Gegenbefund M-MKT-03.",
+   "evidence_items": [
+    {
+     "source_id": "S-84620b98214b90e5",
+     "text": "Auszug: 'ramp up its ammunition production capacity to 2 million shells per year by the end of 2025'; '€513 million'; 'approximately €1.4 billion'; '155-mm projectiles had reached 1 million per year in January 2024'.",
+     "mode": "Auszug",
+     "location": "Absätze 1-5"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Nachfrage/Kapazität EU",
+   "event_date": "2024-03-15",
+   "event_status": "Ziel"
+  },
+  {
+   "id": "M-MKT-03",
+   "statement": "Laut einer Recherche von RFE/RL-Schemes und Partnern (08.07.2024) könnte die EU-155-mm-Kapazität weniger als halb so groß sein wie offizielle Schätzungen: Eine Industriequelle nannte rund 580.000 Geschosse pro Jahr, ein estnischer Ministeriumsbericht (Dezember 2023) rund 600.000, ein internes Rheinmetall-Dokument (Januar 2024) rund 550.000 für alle westeuropäischen Hersteller; Hersteller nannten einen globalen Mangel an Pulver und Sprengstoffen sowie fehlende langfristige Verträge als Ursachen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-ea5f61dc37c5379a"
+   ],
+   "evidence": "Paraphrase: 'current total capacity reaching about 580,000 shells per year'; Estonian Defense Ministry ~600.000; Rheinmetall internal ~550.000; 'global shortage of gunpowder and explosives'.",
+   "location": "Absätze 1, 6-8, 11",
+   "uncertainty": "Stand Mitte 2024; anonyme Industriequellen.",
+   "evidence_items": [
+    {
+     "source_id": "S-ea5f61dc37c5379a",
+     "text": "Paraphrase: 'current total capacity reaching about 580,000 shells per year'; Estonian Defense Ministry ~600.000; Rheinmetall internal ~550.000; 'global shortage of gunpowder and explosives'.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1, 6-8, 11"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Gegenrecherche Kapazität/Engpass",
+   "event_date": "2024-07-08",
+   "event_status": "Recherchebericht"
+  },
+  {
+   "id": "M-MKT-04",
+   "statement": "EU-Verteidigungskommissar Kubilius sagte laut Interfax-Ukraine (26.02.2026), die EU produziere inzwischen mehr als zwei Millionen 155-mm-Geschosse pro Jahr; Extended-Range-Munition sei eine spezifischere Aufgabe.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-05d2ba4a7ea0433c"
+   ],
+   "evidence": "Auszug: 'Now we produce more than two million shells a year. Extended-range ammunition is a more specific task'.",
+   "location": "Absätze 1-2",
+   "uncertainty": "Politikeraussage ohne Methodik; keine unabhängige Bestätigung geöffnet.",
+   "evidence_items": [
+    {
+     "source_id": "S-05d2ba4a7ea0433c",
+     "text": "Auszug: 'Now we produce more than two million shells a year. Extended-range ammunition is a more specific task'.",
+     "mode": "Auszug",
+     "location": "Absätze 1-2"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Kapazität EU",
+   "event_date": "2026-02-26",
+   "event_status": "Aussage"
+  },
+  {
+   "id": "M-MKT-05",
+   "statement": "Laut Polskie Radio (10.11.2025, Wiedergabe Rzeczpospolita) könnte Europa 2027 rund 2 Mio 155-mm-Geschosse pro Jahr produzieren; zusammen mit Kapazitäten in der Ukraine und den USA drohe dem Westen ohne größeren neuen Konflikt binnen weniger Jahre ein Angebotsüberschuss.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-e8d99b5c0a3aebdf"
+   ],
+   "evidence": "Paraphrase: 'could reach 2 million 155mm shells a year by 2027, with supply likely to outstrip demand in the early 2030s'; möglicher Überschuss.",
+   "location": "Absätze 1 und 5",
+   "uncertainty": "Medienprognose.",
+   "evidence_items": [
+    {
+     "source_id": "S-e8d99b5c0a3aebdf",
+     "text": "Paraphrase: 'could reach 2 million 155mm shells a year by 2027, with supply likely to outstrip demand in the early 2030s'; möglicher Überschuss.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1 und 5"
+    }
+   ],
+   "proposed_depth": "B",
+   "depth_reason": "Nachfrageausblick",
+   "event_date": "2025-11-10",
+   "event_status": "Prognose"
+  },
+  {
+   "id": "M-MKT-06",
+   "statement": "Der Rat der EU nahm laut EU NEIGHBOURS east (09.12.2025, Wiedergabe der Ratsmitteilung) am 08.12.2025 das European Defence Industry Programme (EDIP) an: 1,5 Mrd EUR Zuschüsse für 2025-2027, davon 300 Mio EUR für ein Ukraine Support Instrument; Komponenten aus Drittstaaten dürfen 35 % der Komponentenkosten nicht überschreiten.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-0f3e4291120ca045"
+   ],
+   "evidence": "Paraphrase: Annahme am 8. Dezember; €1,5 Mrd. 2025-2027; €300 Mio. Ukraine Support Instrument; 35-%-Klausel.",
+   "location": "Absätze 1-4",
+   "uncertainty": "Ratsmitteilung selbst nicht abrufbar (HTTP 403).",
+   "evidence_items": [
+    {
+     "source_id": "S-0f3e4291120ca045",
+     "text": "Paraphrase: Annahme am 8. Dezember; €1,5 Mrd. 2025-2027; €300 Mio. Ukraine Support Instrument; 35-%-Klausel.",
+     "mode": "Paraphrase",
+     "location": "Absätze 1-4"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "EU-Programm",
+   "event_date": "2025-12-08",
+   "event_status": "angenommen"
+  },
+  {
+   "id": "M-MKT-07",
+   "statement": "Laut Manufacturing Digital (24.09.2026, unter Berufung auf US-Army-Angaben) produzierten die USA vor 2022 14.000 bis 14.400 155-mm-Geschosse pro Monat, verfehlten das Ziel von 100.000 pro Monat bis Oktober 2025 und erreichten im März 2026 36.000 pro Monat; Army Technology berichtet unter Berufung auf einen GAO-Bericht (Juli 2025) von einer geplanten Steigerung von 168.000 auf 1,2 Mio Schuss pro Jahr.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-1fcfbe98a40fffd8",
+    "S-4990a0c7872510f8"
+   ],
+   "evidence": "Paraphrase: 14.000-14.400 pro Monat vor 2022; Ziel 100.000 bis Oktober 2025 verfehlt; März 2026: 36.000 pro Monat.",
+   "location": "Abschnitt nach Key Facts, Absätze 'Hanwha's investment aims ...'",
+   "uncertainty": "Abweichende Zählweisen (Geschosse vs. Metallteile); Task & Purpose nennt für März 2026 Teile für 46.000 Schuss/Monat (M-GDO-05).",
+   "evidence_items": [
+    {
+     "source_id": "S-1fcfbe98a40fffd8",
+     "text": "Paraphrase: 14.000-14.400 pro Monat vor 2022; Ziel 100.000 bis Oktober 2025 verfehlt; März 2026: 36.000 pro Monat.",
+     "mode": "Paraphrase",
+     "location": "Abschnitt nach Key Facts, Absätze 'Hanwha's investment aims ...'"
+    },
+    {
+     "source_id": "S-4990a0c7872510f8",
+     "text": "Paraphrase: 'increasing production from 168,000 to 1.2m rounds per year, according to a Government Accountability Office report from July 2025'.",
+     "mode": "Paraphrase",
+     "location": "Absatz 5"
+    }
+   ],
+   "proposed_depth": "A",
+   "depth_reason": "Nachfrage/Kapazität USA",
+   "event_status": "Ist-Stand März 2026 (Medienangabe)"
+  }
+ ],
+ "source_proposals": [
+  {
+   "id": "S-052e7d1e29545a63",
+   "name": "Nammo AS",
+   "title": "Mesa, Arizona",
+   "url": "https://www.nammo.com/locations/mesa-arizona/",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmensseite (Standort)"
+  },
+  {
+   "id": "S-05d2ba4a7ea0433c",
+   "name": "Interfax-Ukraine",
+   "title": "Europe actively scales up 155mm shell production, continues supplies to Ukraine – EU Commissioner Kubilius",
+   "url": "https://en.interfax.com.ua/news/general/1147530.html",
+   "published_date": "2026-02-26",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Nachrichtenagentur"
+  },
+  {
+   "id": "S-0720809d463a2525",
+   "name": "EDR Magazine",
+   "title": "Rheinmetall wins triple-digit million-euro contract for explosives factory in Várpalota, Hungary",
+   "url": "https://www.edrmagazine.eu/rheinmetall-wins-triple-digit-million-euro-contract-for-explosives-factory-in-varpalota-hungary",
+   "published_date": "2023-01-04",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium (Wiedergabe Unternehmensmitteilung)"
+  },
+  {
+   "id": "S-0aa94a6db6481400",
+   "name": "Nammo AS",
+   "title": "155 mm IM High Explosive Extended Range",
+   "url": "https://www.nammo.com/products/ammunition/large-caliber-ammunition/155-mm-series/155-mm-im-high-explosive-extended-range/",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Hersteller-Produktseite"
+  },
+  {
+   "id": "S-0f3e4291120ca045",
+   "name": "EU NEIGHBOURS east",
+   "title": "European Defence Industry Programme: EU gives final approval",
+   "url": "https://euneighbourseast.eu/news/latest-news/european-defence-industry-programme-eu-gives-final-approval/",
+   "published_date": "2025-12-09",
+   "accessed_date": "2026-10-19",
+   "source_kind": "EU-Informationsportal (Wiedergabe Ratsmitteilung)"
+  },
+  {
+   "id": "S-11207e9f835a9f20",
+   "name": "GBP Aerospace & Defence",
+   "title": "Hanwha Ramps Up Extended-Range Shell Production for Global Markets",
+   "url": "https://gbp.com.sg/stories/hanwha-ramps-up-extended-range-shell-production-for-global-markets/",
+   "published_date": "2026-01-26",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium (teilweise Bezahlschranke)"
+  },
+  {
+   "id": "S-11a2bf8c21d08244",
+   "name": "UK Defence Journal",
+   "title": "BAE unveils new tech to boost UK ammo output sixteen-fold",
+   "url": "https://ukdefencejournal.org.uk/bae-unveils-new-tech-to-boost-uk-ammo-output-sixteen-fold/",
+   "published_date": "2025-04-21",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-182f1bf64398f3d4",
+   "name": "General Dynamics Ordnance and Tactical Systems",
+   "title": "Advanced Artillery Propellant for the 155MM Howitzer",
+   "url": "https://www.gdots.com/propellant-and-propulsion/howitzer-propelling-charges/",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Hersteller-Produktseite"
+  },
+  {
+   "id": "S-1e501c0b6e3d8fb8",
+   "name": "UK Defence Journal",
+   "title": "UK places £280m order for frontline battlefield munitions",
+   "url": "https://ukdefencejournal.org.uk/uk-places-280m-order-for-frontline-battlefield-munitions/",
+   "published_date": "2023-07-15",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-1eae2dae5ac99788",
+   "name": "General Dynamics Ordnance and Tactical Systems – Canada",
+   "title": "Energetic Materials (Valleyfield)",
+   "url": "https://www.gdotscanada.com/product/energetic-materials/",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Hersteller-Produktseite"
+  },
+  {
+   "id": "S-1fcfbe98a40fffd8",
+   "name": "Manufacturing Digital",
+   "title": "How Hanwha's $2.2bn Arkansas Campus Boosts US Artillery",
+   "url": "https://manufacturingdigital.com/news/how-hanwhas-2-2bn-arkansas-campus-boosts-us-artillery",
+   "published_date": "2026-09-24",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-213a79eb466923da",
+   "name": "BAE Systems plc",
+   "title": "155mm Artillery Ammunition – Proven reliability with superior performance (Brochure February 2026)",
+   "url": "https://www.baesystems.com/dam/jcr:2b61caee-8578-43ab-9899-33e6312a642f/155mm_brochure_February_2026.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Herstellerbroschüre (PDF)"
+  },
+  {
+   "id": "S-22b4e8c338d5fc31",
+   "name": "Calibre Defence",
+   "title": "MOD Funds 22 Firms to Scout UK Munitions Factory Sites",
+   "url": "https://www.calibredefence.co.uk/mod-funds-22-firms-uk-munitions-factory-sites/",
+   "published_date": "2026-08-04",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-2572b016501230b4",
+   "name": "Rheinmetall AG",
+   "title": "Nationale Sicherheitsvorsorge: Rheinmetall baut neue Munitionsfabrik – Symbolischer Spatenstich mit dem Bundeskanzler und der Ministerpräsidentin Dänemarks",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2024/02/2024-02-12-rheinmetall-baut-neue-munitionsfabrik-in-unterluess-spatenstich-mit-bundeskanzler-scholz",
+   "published_date": "2024-02-12",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmenspressemitteilung"
+  },
+  {
+   "id": "S-25aa458cd8d5079c",
+   "name": "Korea JoongAng Daily",
+   "title": "Hanwha Aerospace, BAE Systems ink $130M artillery propellant deal",
+   "url": "https://www.koreajoongangdaily.com/business/hanwha-aerospace-bae-systems-ink-130m-artillery-propellant-deal/10918959",
+   "published_date": "2023-11-23",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Wirtschaftsmedium"
+  },
+  {
+   "id": "S-2706942fb5928fec",
+   "name": "EDR Magazine",
+   "title": "BAE Systems Ordnance Systems Inc.; more and improved ammunition and energetics for the US and its allies",
+   "url": "https://www.edrmagazine.eu/bae-systems-ordnance-systems-inc-more-and-improved-ammunition-and-energetics-for-the-us-and-its-allies",
+   "published_date": "2024-07-18",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium (Interview)"
+  },
+  {
+   "id": "S-2a19a44bae9c9218",
+   "name": "KNDS",
+   "title": "Ammunition Catalogue 2026-2027",
+   "url": "https://knds.com/media/knds_ammunition_2026_2027_a5b0dd631b.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Herstellerkatalog (PDF)"
+  },
+  {
+   "id": "S-2dacbdde62e913a1",
+   "name": "European Security & Defence",
+   "title": "MSPO 2025: KNDS France outlines plan to fulfil Poland’s artillery shell production goal",
+   "url": "https://euro-sd.com/2025/09/major-news/46244/knds-france-polish-shell-plan/",
+   "published_date": "2025-09-01",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-2e979d6255b023ee",
+   "name": "Defence Industry Europe",
+   "title": "Nammo opens new U.S. facility for 155mm artillery components production",
+   "url": "https://defence-industry.eu/nammo-opens-new-u-s-facility-for-155mm-artillery-components-production/",
+   "published_date": "2024-10-29",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-35e0db80122396e5",
+   "name": "Rheinmetall AG",
+   "title": "Major order from a NATO customer",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2022/2022-12-19_major-order-from-a-nato-customer",
+   "published_date": "2022-12-19",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmenspressemitteilung"
+  },
+  {
+   "id": "S-3828eee11ecc6273",
+   "name": "Europäische Sicherheit & Technik",
+   "title": "NSPA beschafft 155mm-Artilleriemunition für 1,1 Milliarden Euro",
+   "url": "https://esut.de/2024/01/meldungen/47024/nspa-beschafft-155mm-artilleriemunition-fuer-11-milliarden-euro/",
+   "published_date": "2024-01-24",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-486bb87d545a7e5d",
+   "name": "General Dynamics Ordnance and Tactical Systems",
+   "title": "155MM ERA-HE Extended Range High Explosive Projectile (Brochure 2026.06)",
+   "url": "https://www.gdots.com/wp-content/uploads/2026/06/400007037-155ERA-HE-Brochure-2026-06-2.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Herstellerbroschüre (PDF)"
+  },
+  {
+   "id": "S-4990a0c7872510f8",
+   "name": "Army Technology",
+   "title": "AUSA 2025: Hanwha try to revive munitions production across the West",
+   "url": "https://www.army-technology.com/news/ausa-2025-hanwha-try-to-revive-munitions-production-across-the-west/",
+   "published_date": "2025-10-14",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-4c4ea5a84abeab0f",
+   "name": "General Dynamics Ordnance and Tactical Systems",
+   "title": "General Dynamics Ordnance and Tactical Systems Hosts Opening Ceremony for New Artillery Projectile Metal Parts Facility in Mesquite, TX",
+   "url": "https://www.gdots.com/new-artillery-projectile-metal-parts-facility-in-mesquite/",
+   "published_date": "2024-05-29",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmenspressemitteilung"
+  },
+  {
+   "id": "S-544652c53afaff87",
+   "name": "Rheinmetall AG",
+   "title": "Rheinmetall sets three new distance records for indirect fire in South Africa",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2019/2019-11-27_rheinmetall-sets-three-new-distance-records-for-indirect-fire-in-south-africa",
+   "published_date": "2019-11-27",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmenspressemitteilung"
+  },
+  {
+   "id": "S-5590349d6f29de4e",
+   "name": "Task & Purpose",
+   "title": "A Texas factory cost nearly $500 million but has produced zero artillery shells",
+   "url": "https://taskandpurpose.com/news/texas-ammo-factory-zero-shells/",
+   "published_date": "2026-07-14",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-5d054e98a93f597d",
+   "name": "The Korea Times",
+   "title": "Hanwha Aerospace signs $110 mil. deal with Sweden to supply modular charge system",
+   "url": "https://www.koreatimes.co.kr/business/companies/20251015/hanwha-aerospace-signs-110-mil-deal-with-sweden-to-supply-modular-charge-system",
+   "published_date": "2025-10-15",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Wirtschaftsmedium"
+  },
+  {
+   "id": "S-66c989d68bed493a",
+   "name": "General Dynamics Ordnance and Tactical Systems",
+   "title": "155MM M1128-I Next Generation Base Bleed Projectile (Brochure 2026.06)",
+   "url": "https://www.gdots.com/wp-content/uploads/2026/06/400007048-M1128-I-Product-Brochure-2026-06.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Herstellerbroschüre (PDF)"
+  },
+  {
+   "id": "S-69f3ca71ad940e6e",
+   "name": "Breaking Defense",
+   "title": "Hanwha plans to build US facility to manufacture modular 155mm howitzer charges",
+   "url": "https://breakingdefense.com/2025/12/hanwha-plans-to-build-us-facility-to-manufacture-modular-155mm-howitzer-charges/",
+   "published_date": "2025-12-11",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-6c35892360c66d5a",
+   "name": "Defense News",
+   "title": "BAE Systems wins order for munitions as UK rebuilds stocks",
+   "url": "https://www.defensenews.com/industry/2023/07/11/bae-systems-wins-order-for-munitions-as-uk-rebuilds-stocks/",
+   "published_date": "2023-07-11",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-6c84242ff77b4c1c",
+   "name": "EDR Magazine",
+   "title": "Inauguration of a new 155 mm artillery-shell production unit at KNDS Belgium: A major strengthening of Belgian and European industrial capacity",
+   "url": "https://www.edrmagazine.eu/inauguration-of-a-new-155-mm-artillery-shell-production-unit-at-knds-belgium-a-major-strengthening-of-belgian-and-european-industrial-capacity",
+   "published_date": "2025-11-04",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium (Wiedergabe Unternehmensmitteilung)"
+  },
+  {
+   "id": "S-6dec578278539c53",
+   "name": "Nammo AS",
+   "title": "155 mm-series",
+   "url": "https://www.nammo.com/products/ammunition/large-caliber-ammunition/155-mm-series/",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Hersteller-Produktseite"
+  },
+  {
+   "id": "S-71e68b86d52a8a03",
+   "name": "Rheinmetall AG",
+   "title": "Important progress on strategic bottleneck: Rheinmetall and Romania jointly produce propellant powder",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/11/2025-11-03-rheinmetall-and-romania-jointly-produce-propellant-powder",
+   "published_date": "2025-11-03",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmenspressemitteilung"
+  },
+  {
+   "id": "S-84620b98214b90e5",
+   "name": "European Pravda",
+   "title": "European Commission allocates €500 million for companies to increase ammunition production",
+   "url": "https://www.eurointegration.com.ua/eng/news/2024/03/15/7181800/",
+   "published_date": "2024-03-15",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Nachrichtenmedium (Wiedergabe Kommissionsmitteilung)"
+  },
+  {
+   "id": "S-89c6e4ce6f0b8dab",
+   "name": "General Dynamics Ordnance and Tactical Systems",
+   "title": "Artillery – 105mm to 155mm Ammunition and Metal Parts",
+   "url": "https://www.gdots.com/munitions/artillery/",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Hersteller-Produktseite"
+  },
+  {
+   "id": "S-8b46f20a7a35fb19",
+   "name": "Nammo AS",
+   "title": "Raufoss",
+   "url": "https://www.nammo.com/locations/raufoss/",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmensseite (Standort)"
+  },
+  {
+   "id": "S-97aa5b20a4a51ea0",
+   "name": "Nammo AS",
+   "title": "How to Find Us (Locations)",
+   "url": "https://www.nammo.com/about-us/locations/",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmensseite (Standorte)"
+  },
+  {
+   "id": "S-9ae1f8e16f1f1d76",
+   "name": "Rheinmetall AG",
+   "title": "Großauftrag aus der Ukraine: Rheinmetall liefert Artilleriemunition – Auftragswert im hohen zweistelligen Millionenbereich in Euro",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/06/2026-06-30-grossauftrag-rheinmetall-liefert-artilleriemunition-an-ukraine",
+   "published_date": "2026-06-30",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmenspressemitteilung"
+  },
+  {
+   "id": "S-9dbd280720401c1f",
+   "name": "Bankier.pl (PAP Biznes)",
+   "title": "Niewiadów - PGM ma umowę o strategicznej współpracy z KNDS",
+   "url": "https://www.bankier.pl/wiadomosc/Niewiadow-PGM-ma-umowe-o-strategicznej-wspolpracy-z-KNDS-9153641.html",
+   "published_date": "2026-06-18",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Wirtschaftsmedium (Agenturmeldung)"
+  },
+  {
+   "id": "S-a4432a86aaf146f5",
+   "name": "Europäische Kommission (GD DEFIS)",
+   "title": "Act in Support of Ammunition Production (ASAP) – Boosting defence production",
+   "url": "https://defence-industry-space.ec.europa.eu/eu-defence-industry/asap-boosting-defence-production_en",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Behördenseite"
+  },
+  {
+   "id": "S-a54a5988eef2046e",
+   "name": "Nammo AS",
+   "title": "Norwegian artillery contract signed",
+   "url": "https://www.nammo.com/norwegian-artillery-contract-signed/",
+   "published_date": "2023-07-07",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmensmitteilung"
+  },
+  {
+   "id": "S-a5a55ae4e279062f",
+   "name": "KNDS France",
+   "title": "Up to 200,000 shells per year: A new ambition for the Polish defence industry",
+   "url": "https://knds.com/en/press-releases/up-to-200-000-shells-per-year-a-new-ambition-for-the-polish-defence-industry",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmenspressemitteilung"
+  },
+  {
+   "id": "S-a6bde625685f0047",
+   "name": "EDR Magazine",
+   "title": "NSPA supports a coalition of NATO nations with 1.1 BEUR multinational contracts for 155mm ammunition",
+   "url": "https://www.edrmagazine.eu/nspa-supports-a-coalition-of-nato-nations-with-1-1-beur-multinational-contracts-for-155mm-ammunition",
+   "published_date": "2024-01-23",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium (Wiedergabe NSPA-Mitteilung)"
+  },
+  {
+   "id": "S-a7836c43ad7f552f",
+   "name": "Defence Industry Europe",
+   "title": "Finland to double artillery ammunition production amid growing demand",
+   "url": "https://defence-industry.eu/finland-to-double-artillery-ammunition-production-amid-growing-demand/",
+   "published_date": "2023-12-16",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-aa0ff06d95479d16",
+   "name": "Euronews",
+   "title": "Riesige Explosion in Munitionsfabrik in Colleferro bei Rom",
+   "url": "https://de.euronews.com/2026/08/13/riesige-explosion-munitionsfabrik-colleferro-italien-rom",
+   "published_date": "2026-08-13",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Nachrichtenmedium"
+  },
+  {
+   "id": "S-aadcb3da199c3d17",
+   "name": "KNDS",
+   "title": "155mm Ammunition",
+   "url": "https://knds.com/en/products/ammunition/155mm-ammunition",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Hersteller-Produktseite"
+  },
+  {
+   "id": "S-ae6533fe6378a611",
+   "name": "Nammo AS",
+   "title": "Nammo delivers profitable growth to support continued expansion and technology leadership",
+   "url": "https://www.nammo.com/annual-report-2025/",
+   "published_date": "2026-04-30",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmensmitteilung (Jahresbericht 2025)"
+  },
+  {
+   "id": "S-ae7a06352c503d15",
+   "name": "Canadian Commercial Corporation",
+   "title": "CCC, U.S. Army sign agreement for ramp-up in ammunition production",
+   "url": "https://www.ccc.ca/en/announcements/ccc-u-s-army-sign-agreement-for-ramp-up-in-ammunition-production/",
+   "published_date": "2024-03-25",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Behördenmitteilung"
+  },
+  {
+   "id": "S-ba345071cf3244b4",
+   "name": "Euromaidan Press",
+   "title": "Le Monde: 90% of Caesar cannon barrels produced by KNDS are being sent to Ukraine",
+   "url": "https://euromaidanpress.com/2025/04/22/le-monde-90-of-caesar-cannon-barrels-produced-by-knds-are-being-sent-to-ukraine/",
+   "published_date": "2025-04-22",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Nachrichtenmedium (Wiedergabe Le Monde)"
+  },
+  {
+   "id": "S-c3ea3c18a3447ce4",
+   "name": "Nammo AS",
+   "title": "Vihtavuori",
+   "url": "https://www.nammo.com/locations/vihtavuori/",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmensseite (Standort)"
+  },
+  {
+   "id": "S-c4cf8d872c93d230",
+   "name": "Defence Blog",
+   "title": "KNDS France signs multi-year shell supply deal",
+   "url": "https://defence-blog.com/knds-france-signs-multi-year-shell-supply-deal/",
+   "published_date": "2025-12-23",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-cf746dc76f173082",
+   "name": "The Defense Post",
+   "title": "Hanwha’s American Gambit: Korean Artillery Ammunition, Made in USA",
+   "url": "https://thedefensepost.com/2026/02/01/hanwha-artillery-ammunition-us/",
+   "published_date": "2026-02-01",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-d803328fd1670795",
+   "name": "KNDS",
+   "title": "KNDS at MSPO 2026: showcasing comprehensive mission solutions for regional defense sovereignty",
+   "url": "https://knds.com/en/press-releases/knds-at-mspo-2026-showcasing-comprehensive-mission-solutions-for-regional-defense-sovereignty-1",
+   "published_date": "2026-09-08",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmenspressemitteilung"
+  },
+  {
+   "id": "S-e8d99b5c0a3aebdf",
+   "name": "Polskie Radio (English Section)",
+   "title": "Europe’s 155mm shell output seen hitting 2 million in 2027, supply may top demand—daily",
+   "url": "https://www.polskieradio.pl/395/7786/Artykul/3605551",
+   "published_date": "2025-11-10",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Nachrichtenmedium (Wiedergabe Rzeczpospolita)"
+  },
+  {
+   "id": "S-ea5f61dc37c5379a",
+   "name": "Radio Free Europe/Radio Liberty",
+   "title": "EU Shell-Production Capacity, Supplies To Ukraine Fall Far Short Of Promises",
+   "url": "https://www.rferl.org/a/33025300.html",
+   "published_date": "2024-07-08",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Nachrichtenmedium (Recherche)"
+  },
+  {
+   "id": "S-eeb74caefc3275d0",
+   "name": "General Dynamics Ordnance and Tactical Systems",
+   "title": "General Dynamics Ordnance and Tactical Systems receives $217M task order to increase 155mm artillery shell body capacity",
+   "url": "https://www.gdots.com/gd-ots-recieves-217m-task-order-to-increase-155mm-artillery/",
+   "published_date": "2023-04-27",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmenspressemitteilung"
+  },
+  {
+   "id": "S-f550c79e68fc9c76",
+   "name": "Militarnyi",
+   "title": "Construction of a new ammunition plant begins in Norway",
+   "url": "https://militarnyi.com/en/news/construction-of-a-new-ammunition-plant-begins-in-norway/",
+   "published_date": "2024-12-04",
+   "accessed_date": "2026-10-19",
+   "source_kind": "Fachmedium"
+  }
+ ],
+ "reuse_claim_ids": [
+  "C-MKT-12",
+  "C-STR-25",
+  "C-STR-27",
+  "C-STR-34",
+  "C-TEC-05",
+  "P-R120",
+  "P-R140",
+  "P-R40",
+  "P-R90",
+  "P-R95",
+  "P-W02",
+  "P-W10",
+  "P-W11",
+  "P-W12",
+  "P-W13",
+  "P-W30",
+  "P-W40"
+ ],
+ "peers": [
+  {
+   "id": "rheinmetall",
+   "label": "Rheinmetall · 155-mm-Artilleriemunition (Weapon and Ammunition inkl. Rheinmetall Expal Munitions, Rheinmetall Denel Munition, Nitrochemie)",
+   "reference": true,
+   "peer_group": "Europäische 155-mm-Munitionshersteller mit eigener Geschoss- und Ladungsfertigung",
+   "role": "Referenzunternehmen; Geschoss-, Ladungs- und Zünderangebot sowie Pulverfertigung im Konzern",
+   "claim_ids": [
+    "P-W10",
+    "P-W13",
+    "M-RHM-01"
+   ]
+  },
+  {
+   "id": "nammo",
+   "label": "Nammo · 155-mm-Serie (HE, HE-ER, IM HE-ER) und US-Treibladungsfertigung",
+   "reference": false,
+   "peer_group": "Europäische 155-mm-Munitionshersteller mit eigener Geschoss- und Ladungsfertigung",
+   "role": "Norwegisch-finnischer Munitionskonzern mit 155-mm-Geschossen (Raufoss), Pulverwerk Vihtavuori und Ladungsfertigung in den USA",
+   "claim_ids": [
+    "M-NAM-01",
+    "M-NAM-07"
+   ]
+  },
+  {
+   "id": "knds",
+   "label": "KNDS · 155-mm-Munition (KNDS Ammo France, KNDS Belgium, KNDS Ammo Italy)",
+   "reference": false,
+   "peer_group": "Europäische 155-mm-Munitionshersteller mit eigener Geschoss- und Ladungsfertigung",
+   "role": "Deutsch-französischer Landsystemkonzern mit LU-211-Familie, BONUS, KATANA und modularen Ladungen; Fertigung in Frankreich, Belgien und Italien",
+   "claim_ids": [
+    "M-KND-01"
+   ]
+  },
+  {
+   "id": "bae",
+   "label": "BAE Systems · 155-mm-Munition UK (L15/XL12E1, L8/L10) und US-Energetik (BAE Systems OSI)",
+   "reference": false,
+   "peer_group": "Europäische 155-mm-Munitionshersteller mit eigener Geschoss- und Ladungsfertigung",
+   "role": "Hauptmunitionslieferant des britischen MOD (Geschosse/Ladungen) und Betreiber der US-Army-Energetikwerke Holston und Radford",
+   "claim_ids": [
+    "M-BAE-01",
+    "M-BAE-06"
+   ]
+  },
+  {
+   "id": "gdots",
+   "label": "General Dynamics OTS · 155-mm-Geschosskörper, Geschosse und MACS-Ladungen (USA, Kanada)",
+   "reference": false,
+   "peer_group": "Außereuropäische 155-mm-Munitionshersteller mit Exportrolle",
+   "role": "US-Hauptlieferant für 155-mm-Geschosskörper (Scranton) und MACS-Treibladungen; Treibmittel über GD-OTS Canada",
+   "claim_ids": [
+    "M-GDO-01",
+    "M-GDO-06"
+   ]
+  },
+  {
+   "id": "hanwha",
+   "label": "Hanwha Aerospace · 155-mm-Treibladungen (MCS) und Extended-Range-Geschosse",
+   "reference": false,
+   "peer_group": "Außereuropäische 155-mm-Munitionshersteller mit Exportrolle",
+   "role": "Südkoreanischer Hersteller mit Schwerpunkt modulare Treibladungen (Export an BAE und Schweden) und angekündigter ER-Geschossproduktion; US-Campus geplant",
+   "claim_ids": [
+    "M-HAN-01",
+    "M-HAN-02"
+   ]
+  }
+ ],
+ "observations": [
+  {
+   "id": "O-rheinmetall-spectrum",
+   "peer_id": "rheinmetall",
+   "criterion_id": "spectrum",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Öffentlich belegt sind die Assegai-Linie von Rheinmetall Denel Munition mit M2005-V-LAP-Geschoss (Raketen- und Base-Bleed-Reichweitensteigerung), modularen M92-Treibladungen und Zündern, die bei Rheinmetall Expal gefertigten ER02A1-B/B-Geschosse mit M203-Treibladungen sowie SMArt 155 aus Unterlüß (Herstellerangaben). Ein gelenktes 155-mm-Geschoss ist in den geöffneten Quellen nicht belegt.",
+   "claim_ids": [
+    "M-RHM-01",
+    "M-RHM-06",
+    "P-W30"
+   ]
+  },
+  {
+   "id": "O-rheinmetall-range",
+   "peer_id": "rheinmetall",
+   "criterion_id": "range",
+   "evidence_status": "teilweise öffentlich belegt",
+   "factual_description": "Rheinmetall meldet Testwerte vom 06.11.2019 (Alkantpan): 67 km aus PzH 2000 (L52), 76 km aus G6 L52 (nicht JBMoU-konform) und 54 km aus L39; gezeigt wurden u. a. Assegai-V-LAP-Geschosse. Eine Datenblatt-Maximalreichweite je Variante mit Rohr/Ladung wurde in den geöffneten Quellen nicht gefunden; Testwerte sind nicht als Seriendatenblatt zu lesen.",
+   "claim_ids": [
+    "M-RHM-02"
+   ],
+   "reported_values": [
+    {
+     "value": 67,
+     "unit": "km",
+     "condition": "Test 2019, PzH 2000 L52, Herstellerangabe"
+    },
+    {
+     "value": 76,
+     "unit": "km",
+     "condition": "Test 2019, G6 L52 nicht JBMoU-konform, Herstellerangabe"
+    },
+    {
+     "value": 54,
+     "unit": "km",
+     "condition": "Test 2019, L39-Feldhaubitze, Herstellerangabe"
+    }
+   ]
+  },
+  {
+   "id": "O-rheinmetall-integration",
+   "peer_id": "rheinmetall",
+   "criterion_id": "integration",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Operative Pulverfertigung ist belegt: Nitrochemie Aschau produziert laut Rheinmetall rund 1.700 t Pulver und 300.000 Treibladungsmodule pro Jahr (Ausbau ab 2027); Nitrochemie Aschau und Wimmis sind Mehrheitsbeteiligungen, Hagedorn-NC (Nitrozellulose) wurde 2025 erworben; Rheinmetall Denel Munition führt Treib- und Rohstoffe im Portfolio. Eigene Sprengstoff-Fertigung ist angekündigt, aber nicht operativ belegt: RDX-Plan für Unterlüß (bis 1.900 t, Ankündigung 2024) und RDX-Werk Várpalota (JV, Produktion ab 2027 geplant); Pulverwerk Victoria (Rumänien) ab 2028 geplant; MoU mit Reliance über Sprengstoff-/Treibmittellieferungen.",
+   "claim_ids": [
+    "P-W40",
+    "C-STR-25",
+    "C-STR-27",
+    "P-R140",
+    "M-RHM-03",
+    "M-RHM-05",
+    "M-RHM-04",
+    "C-TEC-05"
+   ]
+  },
+  {
+   "id": "O-rheinmetall-capacity",
+   "peer_id": "rheinmetall",
+   "criterion_id": "capacity",
+   "evidence_status": "teilweise öffentlich belegt",
+   "factual_description": "Ziel: rund 1,5 Mio 155-mm-Geschosse pro Jahr konzernweit bis spätestens 2030 (Projekt Firepower). Werk Unterlüß: bis zu 350.000 pro Jahr ab 2027, 140.000 Lieferungen für 2026 geplant (Planwerte); Maryborough (Australien) M795-Schmiede anfänglich 15.000 Geschosse pro Jahr. Eine konzernweite Ist-Jahreskapazität zum Stichtag ist öffentlich nicht angegeben.",
+   "claim_ids": [
+    "P-W13",
+    "P-W10",
+    "C-MKT-12",
+    "M-RHM-06"
+   ],
+   "reported_values": [
+    {
+     "value": 1500000,
+     "unit": "Geschosse pro Jahr",
+     "condition": "Ziel konzernweit bis spätestens 2030"
+    },
+    {
+     "value": 350000,
+     "unit": "Geschosse pro Jahr",
+     "condition": "Ziel Werk Unterlüß, volle Kapazität 2027"
+    }
+   ]
+  },
+  {
+   "id": "O-rheinmetall-procurement",
+   "peer_id": "rheinmetall",
+   "criterion_id": "procurement",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Belegt sind ein Bundeswehr-Rahmenvertrag über 155-mm-Munition bis 8,5 Mrd EUR brutto (2024; Empfänger u. a. Ukraine, Niederlande, Estland, Dänemark), ein fünfjähriger Rahmenvertrag eines NATO-Kunden mit Rheinmetall Denel Munition (2022), ein ukrainischer Auftrag über Geschosse und Treibladungen (Juni 2026) sowie laut Rheinmetall Lieferungen von hunderttausenden 155-mm-Geschossen in die Ukraine (Herstellerangaben).",
+   "claim_ids": [
+    "P-W11",
+    "M-RHM-01",
+    "M-RHM-06",
+    "P-W12",
+    "P-W02"
+   ]
+  },
+  {
+   "id": "O-rheinmetall-industrial",
+   "peer_id": "rheinmetall",
+   "criterion_id": "industrial",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Operative 155-mm-Fertigung bzw. Kernkomponenten belegt in Deutschland (Unterlüß, seit 2025), Spanien (Rheinmetall Expal; Ukraine-Auftrag 2026), Südafrika (Rheinmetall Denel Munition) und Australien (Rheinmetall NIOA Munitions, Maryborough). Neue Werke: Baisogala (Litauen) im Bau, Lettland per MoU; laut Calibre Defence (08/2026) sind beide verzögert.",
+   "claim_ids": [
+    "P-W10",
+    "P-R40",
+    "M-RHM-06",
+    "P-R140",
+    "P-R120",
+    "C-MKT-12",
+    "P-R90",
+    "P-R95",
+    "M-RHM-07"
+   ]
+  },
+  {
+   "id": "O-nammo-spectrum",
+   "peer_id": "nammo",
+   "criterion_id": "spectrum",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Nammo bietet laut Produktseiten 155 mm HE, HE-ER, IM HE-ER (Base Bleed oder Hollow Base) und TP-ER an; raketenunterstützte und Ramjet-Geschosse werden erwähnt, ohne Serienstatus. Ein gelenktes Geschoss und eigene 155-mm-Treibladungsprodukte sind auf den geöffneten Seiten nicht gelistet; in den USA fertigt Nammo M119A2-Treibladungen (Perry).",
+   "claim_ids": [
+    "M-NAM-01",
+    "M-NAM-06"
+   ]
+  },
+  {
+   "id": "O-nammo-range",
+   "peer_id": "nammo",
+   "criterion_id": "range",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Datenblatt IM HE-ER: max. 41 km (L52) bzw. 30 km (L39) mit Base Bleed, 32 km/24 km mit Hollow Base; Status 'Qualified' (Herstellerangabe).",
+   "claim_ids": [
+    "M-NAM-02"
+   ],
+   "reported_values": [
+    {
+     "value": 41,
+     "unit": "km",
+     "condition": "IM HE-ER mit Base Bleed, L52, Datenblatt"
+    },
+    {
+     "value": 30,
+     "unit": "km",
+     "condition": "IM HE-ER mit Base Bleed, L39, Datenblatt"
+    }
+   ]
+  },
+  {
+   "id": "O-nammo-integration",
+   "peer_id": "nammo",
+   "criterion_id": "integration",
+   "evidence_status": "teilweise öffentlich belegt",
+   "factual_description": "Nammo betreibt laut Unternehmensseiten die Pulverfabrik Vihtavuori (Finnland) und fertigt in Mesa (USA) Treibladungspulver; Nammo nennt Sprengstoffe als Konzerngebiet. Eine operative Sprengstofffertigung für 155-mm-Füllungen ist in den geöffneten Quellen nicht konkret belegt; Finnland plant den Ausbau u. a. von Sprengstoff- und Treibmittelkapazitäten.",
+   "claim_ids": [
+    "M-NAM-07",
+    "M-NAM-05"
+   ]
+  },
+  {
+   "id": "O-nammo-capacity",
+   "peer_id": "nammo",
+   "criterion_id": "capacity",
+   "evidence_status": "teilweise öffentlich belegt",
+   "factual_description": "Keine absolute Ist-Kapazität öffentlich angegeben. Norwegen: neue Linie in Raufoss (Bau seit 12/2024) soll die Produktion der modernsten Artilleriegeschosse verzehnfachen; laut NYT-Zitat (12/2023) plant der Konzern 200.000 155-mm-Schuss pro Jahr bis 2028 (Ziel, Medienangabe). Perry (USA): über 33.000 M119A2-Ladungen pro Monat (Ladungen, keine Geschosse).",
+   "claim_ids": [
+    "M-NAM-04",
+    "M-NAM-05",
+    "M-NAM-06"
+   ],
+   "reported_values": [
+    {
+     "value": 200000,
+     "unit": "Geschosse pro Jahr",
+     "condition": "Ziel Konzern bis 2028, Medienangabe"
+    }
+   ]
+  },
+  {
+   "id": "O-nammo-procurement",
+   "peer_id": "nammo",
+   "criterion_id": "procurement",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Belegt sind norwegische Verträge über IM HE-ER (2023; 1,9 Mrd NOK von 4,3 Mrd NOK bis 11/2023 kontrahiert), ein Vertrag über NM28/M107-155-mm-HE für Spenden an die Ukraine (12/2023), ein 15-jähriger Bereitschaftsvertrag (1,083 Mrd NOK) sowie Rahmenverträge für Artilleriemunition und Treibmittel 2025 (Kunden nicht genannt).",
+   "claim_ids": [
+    "M-NAM-03",
+    "M-NAM-04",
+    "M-NAM-08"
+   ]
+  },
+  {
+   "id": "O-nammo-industrial",
+   "peer_id": "nammo",
+   "criterion_id": "industrial",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Fertigung in Norwegen (Raufoss, mittel-/großkalibrige Munition), Finnland (Hauptproduzent finnischer Artilleriemunition, Pulverwerk Vihtavuori) und USA (Perry: M119A2-Ladungen; Mesa: Treibladungspulver); Nammo nennt Fertigung in neun Ländern. Neuer Werksbau in Raufoss seit 12/2024.",
+   "claim_ids": [
+    "M-NAM-08",
+    "M-NAM-05",
+    "M-NAM-07",
+    "M-NAM-06",
+    "M-NAM-04"
+   ]
+  },
+  {
+   "id": "O-knds-spectrum",
+   "peer_id": "knds",
+   "criterion_id": "spectrum",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "KNDS-Katalog 2026-2027: HE (LU 211 HB/BB, IM; LU 220 ER, IM; L15A1/A2; LU 107; M107/IM170), Nebel/Leucht (LU 217, LU 215, LU 216), Sensorzünder-Munition BONUS MKII, gelenktes KATANA (GNSS/IMU) und modulare Treibladungen MCS (Herstellerangaben).",
+   "claim_ids": [
+    "M-KND-01"
+   ]
+  },
+  {
+   "id": "O-knds-range",
+   "peer_id": "knds",
+   "criterion_id": "range",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Herstellerangaben: LU 211 BB bis 40 km (155/52) bzw. 30 km (155/39); LU 220 ~43 km und KATANA >45 km (Rohr/Ladung im Katalog nicht angegeben); BONUS MKII 35 km (52 Kal.)/27 km (39 Kal.).",
+   "claim_ids": [
+    "M-KND-02"
+   ],
+   "reported_values": [
+    {
+     "value": 40,
+     "unit": "km",
+     "condition": "LU 211 BB, 155/52, Herstellerangabe"
+    },
+    {
+     "value": 43,
+     "unit": "km",
+     "condition": "LU 220, ~43 km, Rohr nicht angegeben, Katalog"
+    },
+    {
+     "value": 45,
+     "unit": "km",
+     "condition": "KATANA gelenkt, >45 km, Rohr nicht angegeben, Katalog"
+    }
+   ]
+  },
+  {
+   "id": "O-knds-integration",
+   "peer_id": "knds",
+   "criterion_id": "integration",
+   "evidence_status": "nicht öffentlich belegt",
+   "factual_description": "Eine eigene Pulver- oder Sprengstoffherstellung von KNDS ist in den geöffneten Quellen nicht belegt; KNDS bietet modulare Treibladungen (MCS) an, deren Pulverherkunft nicht angegeben ist. Bei KNDS Ammo Italy (Colleferro) betraf eine Explosion im August 2026 laut Euronews eine Sprengstoff-Abteilung bzw. 'Pulverpressen'; ob dort Pulver hergestellt oder nur verarbeitet wird, ist offen.",
+   "claim_ids": [
+    "M-KND-01",
+    "M-KND-09"
+   ]
+  },
+  {
+   "id": "O-knds-capacity",
+   "peer_id": "knds",
+   "criterion_id": "capacity",
+   "evidence_status": "teilweise öffentlich belegt",
+   "factual_description": "Keine bestätigte konzernweite Ist-Kapazität. Laut Le Monde (04/2025) Verdopplung in La Chapelle-Saint-Ursin mit Ziel 100.000 pro Jahr; KNDS France nennt eine Verdreifachung der Großkaliberkapazität seit 2022 (ohne Basiswert); Partnerziel Polen 180.000 komplette Sätze pro Jahr (Niewiadów, Vereinbarung 06/2026); Hüllenzulieferung Tarbes 60.000-150.000 für 2026-2028.",
+   "claim_ids": [
+    "M-KND-06",
+    "M-KND-04",
+    "M-KND-05",
+    "M-KND-07"
+   ],
+   "reported_values": [
+    {
+     "value": 100000,
+     "unit": "Geschosse pro Jahr",
+     "condition": "Ziel Werk La Chapelle-Saint-Ursin, Medienangabe 04/2025"
+    }
+   ]
+  },
+  {
+   "id": "O-knds-procurement",
+   "peer_id": "knds",
+   "criterion_id": "procurement",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Belegt sind die NSPA-Rahmenverträge (01/2024, 1,1 Mrd EUR mit Nexter Munitions und Junghans; rund 220.000 Geschosse laut Stoltenberg), eine Bundeswehr-Bestellung von 68.000 Nexter-Geschossen für die Ukraine (278 Mio EUR), Produktion für die belgische Verteidigung 2026 sowie laut KNDS der Einsatz von LU211 in der Ukraine seit April 2022 und in der Operation Chammal.",
+   "claim_ids": [
+    "M-KND-03",
+    "M-KND-04",
+    "M-KND-08"
+   ]
+  },
+  {
+   "id": "O-knds-industrial",
+   "peer_id": "knds",
+   "criterion_id": "industrial",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Fertigung in Frankreich (La Chapelle-Saint-Ursin), Belgien (KNDS Belgium, neue automatisierte 155-mm-Linie 11/2025 zusätzlich zu zwei Linien) und Italien (KNDS Ammo Italy, Colleferro); in Polen ist Lizenzfertigung mit Niewiadów vereinbart, aber noch nicht operativ belegt.",
+   "claim_ids": [
+    "M-KND-06",
+    "M-KND-08",
+    "M-KND-09",
+    "M-KND-05",
+    "M-KND-01"
+   ]
+  },
+  {
+   "id": "O-bae-spectrum",
+   "peer_id": "bae",
+   "criterion_id": "spectrum",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "BAE-Broschüre (02/2026): L15 HE, XL12E1 HE Extended Range (Base Bleed), L21 HE, L17 Inert; Treibladungen L8, L10, L18 (Triple Base); Zünder L174. Gelenkte bzw. BAE-Bofors-Produkte wurden mangels Zugriff auf die Produktseiten nicht geprüft.",
+   "claim_ids": [
+    "M-BAE-01"
+   ]
+  },
+  {
+   "id": "O-bae-range",
+   "peer_id": "bae",
+   "criterion_id": "range",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "L15 HE: 24,7 km (L/39), 32 km (L/52), im Dienst; XL12E1 HE ER: >30 km (L/39), 40 km (L/52), '>40 km achieved through trials', nicht als im Dienst ausgewiesen (Herstellerangaben).",
+   "claim_ids": [
+    "M-BAE-02"
+   ],
+   "reported_values": [
+    {
+     "value": 40,
+     "unit": "km",
+     "condition": "XL12E1 HE ER, JBMoU L/52, Broschüre; >40 km in Trials"
+    },
+    {
+     "value": 32,
+     "unit": "km",
+     "condition": "L15 HE, JBMoU L/52, im Dienst"
+    }
+   ]
+  },
+  {
+   "id": "O-bae-integration",
+   "peer_id": "bae",
+   "criterion_id": "integration",
+   "evidence_status": "teilweise öffentlich belegt",
+   "factual_description": "In den USA betreibt BAE Systems OSI als Auftragnehmer die Army-eigenen Werke Holston (RDX, HMX u. a.) und Radford (Nitrozellulose, Treibmittel). Für das britische 155-mm-Geschäft berichtet Calibre Defence (08/2026), dass Großbritannien keine Sprengstoffe produziere und für Energetik/Treibmittel auf Importe angewiesen sei; BAE bezieht MCS-Treibladungen von Hanwha; neue britische Verfahren für Sprengstoff/Treibmittel sind angekündigt (industrielle Kapazität bis Ende 2026).",
+   "claim_ids": [
+    "M-BAE-06",
+    "M-BAE-05",
+    "M-HAN-02",
+    "M-BAE-04"
+   ]
+  },
+  {
+   "id": "O-bae-capacity",
+   "peer_id": "bae",
+   "criterion_id": "capacity",
+   "evidence_status": "nicht öffentlich belegt",
+   "factual_description": "Keine absolute Kapazität öffentlich angegeben. BAE kündigte eine sechzehnfache Steigerung der 155-mm-Kapazität mit der Füllanlage Glascoed an (geplant Sommer 2025); laut Calibre Defence (08/2026) ist die Eröffnung verzögert und das Datum unklar.",
+   "claim_ids": [
+    "M-BAE-04",
+    "M-BAE-05"
+   ]
+  },
+  {
+   "id": "O-bae-procurement",
+   "peer_id": "bae",
+   "criterion_id": "procurement",
+   "evidence_status": "teilweise öffentlich belegt",
+   "factual_description": "Belegt ist der MOD-Auftrag über 280 Mio GBP (Optionen über 400 Mio GBP) für u. a. 155-mm-Granaten im 15-jährigen Next Generation Munitions Solution (2,4 Mrd GBP); L15/L21 sind laut BAE beim britischen MOD im Dienst. Exportverträge oder Lieferungen von BAE-155-mm-Geschossen an weitere Staaten bzw. die Ukraine sind in den geöffneten Quellen nicht belegt.",
+   "claim_ids": [
+    "M-BAE-03",
+    "M-BAE-01"
+   ]
+  },
+  {
+   "id": "O-bae-industrial",
+   "peer_id": "bae",
+   "criterion_id": "industrial",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Fertigung in Großbritannien (Geschosskörperbearbeitung Washington, Füllung Glascoed; Ausbau verzögert) und als Betreiber der US-Energetikwerke Holston und Radford (Army-eigen); BAE OSI meldet verdoppelte Lieferungen.",
+   "claim_ids": [
+    "M-BAE-03",
+    "M-BAE-05",
+    "M-BAE-06"
+   ]
+  },
+  {
+   "id": "O-gdots-spectrum",
+   "peer_id": "gdots",
+   "criterion_id": "spectrum",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "GD-OTS bietet laut Produktseiten M795 HE, M1128-I (Base Bleed), ERA-HE ('Launching in 2026'), XM1113 (raketenunterstützt), MR103 (Übung), SMArt 155 und SMArtER155 sowie die Treibladungen M119A2, MACS M231/M232A1 (GD-OTS als Hersteller) und UBX an.",
+   "claim_ids": [
+    "M-GDO-01"
+   ]
+  },
+  {
+   "id": "O-gdots-range",
+   "peer_id": "gdots",
+   "criterion_id": "range",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "M1128-I: max. 40 km mit MCS Zone 6H aus 52-Kaliber-Rohr; ERA-HE (Hollow Base): 30 km, Zone 6H; Werte laut GD-OTS aus Schießdaten und Ingenieursimulation (Herstellerangaben).",
+   "claim_ids": [
+    "M-GDO-02"
+   ],
+   "reported_values": [
+    {
+     "value": 40,
+     "unit": "km",
+     "condition": "M1128-I, 52 Kal., MCS Zone 6H, teils simulationsgestützt"
+    }
+   ]
+  },
+  {
+   "id": "O-gdots-integration",
+   "peer_id": "gdots",
+   "criterion_id": "integration",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "GD-OTS Canada (Valleyfield) fertigt laut Unternehmensseite Single-, Double- und Triple-Base-Treibmittel und Sprengstofffüllungen und ist auf M31A2-Artillerietreibmittel spezialisiert (US-Army-Ausbauvertrag via CCC 03/2024). Eine eigene Sprengstoffsynthese (z. B. TNT/RDX) ist nicht belegt.",
+   "claim_ids": [
+    "M-GDO-06"
+   ]
+  },
+  {
+   "id": "O-gdots-capacity",
+   "peer_id": "gdots",
+   "criterion_id": "capacity",
+   "evidence_status": "nicht öffentlich belegt",
+   "factual_description": "Keine GD-OTS-spezifische Ist-Kapazität öffentlich angegeben. Das Werk Mesquite sollte 30.000 Geschosskörper pro Monat bis 10/2025 liefern, lieferte laut DoD-IG-Bericht (via Task & Purpose) bis 03/2026 keine; Scranton/Wilkes-Barre wurden mit einem 217-Mio-USD-Task-Order ausgebaut (Hochlauf bis Ende FY2025).",
+   "claim_ids": [
+    "M-GDO-05",
+    "M-GDO-03"
+   ]
+  },
+  {
+   "id": "O-gdots-procurement",
+   "peer_id": "gdots",
+   "criterion_id": "procurement",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Belegt sind ein 217-Mio-USD-Task-Order unter einem 1,48-Mrd-USD-Army-Vertrag (2023), die MACS-Fertigung unter Army-Vertrag sowie die CCC/US-Army-UCA zur Treibmittelerweiterung in Valleyfield mit Bezug auf Zusagen an die Ukraine (2024). Ein belegter Einsatz konkret von GD-OTS-Geschossen in der Ukraine ist in den geöffneten Quellen nicht ausgewiesen.",
+   "claim_ids": [
+    "M-GDO-03",
+    "M-GDO-01",
+    "M-GDO-06"
+   ]
+  },
+  {
+   "id": "O-gdots-industrial",
+   "peer_id": "gdots",
+   "criterion_id": "industrial",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Operative Fertigung in den USA (Scranton Army Ammunition Plant als Betreiber, Wilkes-Barre) und Kanada (Valleyfield, Treibmittel); das neue Werk Mesquite (eröffnet 05/2024) produziert laut IG-Bericht keine abnahmefähigen M795-Teile, Arbeitsstopp seit 08/2025.",
+   "claim_ids": [
+    "M-GDO-01",
+    "M-GDO-03",
+    "M-GDO-06",
+    "M-GDO-04",
+    "M-GDO-05"
+   ]
+  },
+  {
+   "id": "O-hanwha-spectrum",
+   "peer_id": "hanwha",
+   "criterion_id": "spectrum",
+   "evidence_status": "teilweise öffentlich belegt",
+   "factual_description": "Belegt sind modulare Treibladungen (MCS; Export an BAE und Schweden) sowie laut GBP (Anrisstext) der Beginn der Serienproduktion eigener 155-mm-Extended-Range-Geschosse am 14.01.2026; Hanwha plant Geschosse mit Base-Bleed-Einheiten. Eine vollständige Hanwha-Produktliste für 155-mm-Geschosse wurde nicht gefunden.",
+   "claim_ids": [
+    "M-HAN-06",
+    "M-HAN-04",
+    "M-HAN-02",
+    "M-HAN-03"
+   ]
+  },
+  {
+   "id": "O-hanwha-range",
+   "peer_id": "hanwha",
+   "criterion_id": "range",
+   "evidence_status": "nicht öffentlich belegt",
+   "factual_description": "Eine Hanwha-Reichweitenangabe mit Rohr/Ladung wurde in den geöffneten Quellen nicht gefunden; der zugängliche Teil des GBP-Berichts zur ER-Serienproduktion nennt keine Reichweite.",
+   "claim_ids": [
+    "M-HAN-06"
+   ]
+  },
+  {
+   "id": "O-hanwha-integration",
+   "peer_id": "hanwha",
+   "criterion_id": "integration",
+   "evidence_status": "teilweise öffentlich belegt",
+   "factual_description": "Laut Medienberichten nach Werksbesuchen verarbeiten Hanwhas koreanische Werke Nitrozellulose und Nitroglycerin zu Treibladungen (Yeosu 1,2 Mio Module/Jahr), Hanwha sei an über 90 % des koreanischen Gefechtskopf- und Antriebsmarkts beteiligt und könne 'energetic materials all the way to system integration' herstellen; eine eigene Sprengstoff- bzw. Nitrozellulosesynthese ist nicht durch Unternehmens- oder Behördenquelle belegt.",
+   "claim_ids": [
+    "M-HAN-01",
+    "M-HAN-07"
+   ]
+  },
+  {
+   "id": "O-hanwha-capacity",
+   "peer_id": "hanwha",
+   "criterion_id": "capacity",
+   "evidence_status": "teilweise öffentlich belegt",
+   "factual_description": "Angaben in Treibladungsmodulen statt Geschossen: Yeosu 1,2 Mio Module/Jahr (Plan 1,6 Mio 2028), Boeun ähnliche Kapazität 2027; laut Defense Post entspricht 1,2 Mio Module etwa 200.000-250.000 Schuss; Army Technology nennt 300.000 'rounds' pro Jahr für die 2027 geplante automatisierte Fabrik. Keine Geschoss-Jahreskapazität öffentlich angegeben.",
+   "claim_ids": [
+    "M-HAN-01",
+    "M-HAN-07",
+    "M-HAN-04"
+   ],
+   "reported_values": [
+    {
+     "value": 1200000,
+     "unit": "Treibladungsmodule pro Jahr",
+     "condition": "Werk Yeosu, Ist laut Breaking Defense 12/2025; nicht in Geschosse umgerechnet"
+    }
+   ]
+  },
+  {
+   "id": "O-hanwha-procurement",
+   "peer_id": "hanwha",
+   "criterion_id": "procurement",
+   "evidence_status": "öffentlich belegt",
+   "factual_description": "Belegt sind ein MCS-Liefervertrag mit BAE Systems (130 Mio USD, 2023) und Verträge mit der schwedischen FMV (2024 sowie dreijähriger Rahmenvertrag 10/2025, rund 110 Mio USD); in den USA erhielt Hanwha Defense USA 01/2026 einen Lease im Pine Bluff Arsenal. Lieferungen von Hanwha-155-mm-Geschossen an Drittstaaten bzw. die Ukraine sind nicht belegt.",
+   "claim_ids": [
+    "M-HAN-02",
+    "M-HAN-03",
+    "M-HAN-05"
+   ]
+  },
+  {
+   "id": "O-hanwha-industrial",
+   "peer_id": "hanwha",
+   "criterion_id": "industrial",
+   "evidence_status": "teilweise öffentlich belegt",
+   "factual_description": "Fertigung in Südkorea (Yeosu, Daejeon; Boeun im Aufbau) belegt; ein US-Campus in Pine Bluff (2,2 Mrd USD, Treibladungen und Base-Bleed-Einheiten) ist geplant, zum Stichtag nur Verwaltungsbüro eröffnet. Operative Fertigung außerhalb Koreas ist nicht belegt.",
+   "claim_ids": [
+    "M-HAN-01",
+    "M-HAN-05"
+   ]
+  }
+ ],
+ "gaps": [
+  {
+   "id": "G-M01",
+   "topic": "Rheinmetall Datenblatt-Reichweite",
+   "description": "Keine Rheinmetall-Produktseite/Datenblatt mit maximaler Reichweite je 155-mm-Variante (Rohr/Ladung) gefunden; nur Testwerte 2019.",
+   "impact": "range-Zelle Rheinmetall nur mit Testwerten"
+  },
+  {
+   "id": "G-M02",
+   "topic": "Rheinmetall RDX-Status",
+   "description": "Operativer Status der 2024 angekündigten RDX-Fertigung in Unterlüß und des Werks Várpalota (Plan 2027) nicht öffentlich belegt.",
+   "impact": "integration-Zelle Rheinmetall: Sprengstoff nur angekündigt"
+  },
+  {
+   "id": "G-M03",
+   "topic": "Ist-Kapazitäten",
+   "description": "Für keinen Peer ist eine konzernweite Ist-Jahreskapazität in Geschossen zum Stichtag öffentlich angegeben; vorhandene Werte sind Ziele, Werkswerte oder Medienangaben (Hanwha nur in Treibladungsmodulen).",
+   "impact": "capacity-Kennzahl nur eingeschränkt vergleichbar"
+  },
+  {
+   "id": "G-M04",
+   "topic": "BAE-Primärquellen",
+   "description": "baesystems.com-Mitteilungen und Produktseiten (u. a. BONUS, Excalibur) waren per Abruf gesperrt (HTTP 403); Broschüre 02/2026 als Original-PDF gesichert, Sechzehnfach-Angabe nur über UKDJ-Wiedergabe.",
+   "impact": "BAE-Spektrum ohne gelenkte/Bofors-Produkte"
+  },
+  {
+   "id": "G-M05",
+   "topic": "Hanwha Reichweite/Produktidentität",
+   "description": "Hanwha-Produktseiten nicht gefunden; GBP-Bericht zur ER-Serienproduktion nur als Anrisstext zugänglich; frühere Medienberichte schreiben ein koreanisches ER-Geschoss Poongsan zu; Poongsan als möglicher weiterer Peer nicht recherchiert.",
+   "impact": "range-Zelle Hanwha nicht belegt; Peer-Abgrenzung Korea offen"
+  },
+  {
+   "id": "G-M06",
+   "topic": "KNDS Pulver/Sprengstoff",
+   "description": "Keine Quelle zu eigener Pulver- oder Sprengstoffherstellung bei KNDS gefunden; Bezugsquellen (z. B. Eurenco) nicht geprüft.",
+   "impact": "integration-Zelle KNDS ohne Beleg (keine Schwäche abzuleiten)"
+  },
+  {
+   "id": "G-M07",
+   "topic": "Nicht zugängliche Primärquellen",
+   "description": "regjeringen.no (Nammo-Abkommen), Ratsmitteilung EDIP, army.mil (Vertragsmitteilung 2024) und Le-Monde-Original nicht abrufbar; Sekundärwiedergaben verwendet.",
+   "impact": "einzelne Claims über Medien statt Primärquelle"
+  },
+  {
+   "id": "G-M08",
+   "topic": "EU-Kapazitätszahlen",
+   "description": "Widersprüchliche Angaben (Kommission/Kubilius >2 Mio pro Jahr 2026 vs. RFE/RL-Recherche 2024 ~550.000-600.000; Prognose 2 Mio erst 2027); keine unabhängige aktuelle Zählung gefunden.",
+   "impact": "Marktfakten als Angaben mit Ursprung, nicht als gesicherte Kapazität"
+  }
+ ],
+ "coverage": [
+  {
+   "topic": "Rheinmetall 155-mm-Spektrum/Reichweite/Integration",
+   "search_terms": "Rheinmetall Assegai V-LAP range L52; Alkantpan record; Unterlüß Spatenstich RDX; Várpalota RDX; Romania Victoria powder; Ukraine order 2026",
+   "source_ids": [
+    "S-35e0db80122396e5",
+    "S-544652c53afaff87",
+    "S-2572b016501230b4",
+    "S-0720809d463a2525",
+    "S-71e68b86d52a8a03",
+    "S-9ae1f8e16f1f1d76"
+   ],
+   "finding": "Herstellerangaben gelesen; Portfolio-/Cluster-Claims (P-W10-13, P-W40, P-R40/90/95/120/140, C-STR-25/27/34, C-MKT-12, C-TEC-05) wiederverwendet, nicht dupliziert.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Gegenrecherche Rheinmetall-Werksaufbau",
+   "search_terms": "Lithuania 155 plant delay; Latvia factory; Calibre Defence",
+   "source_ids": [
+    "S-22b4e8c338d5fc31"
+   ],
+   "finding": "Verzögerungen Litauen/Lettland laut Fachmedium.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Nammo",
+   "search_terms": "Nammo 155mm IM HE-ER range; Raufoss tenfold; Perry M119A2; Vihtavuori propellant; annual report 2025; Finland double production",
+   "source_ids": [
+    "S-6dec578278539c53",
+    "S-0aa94a6db6481400",
+    "S-a54a5988eef2046e",
+    "S-f550c79e68fc9c76",
+    "S-2e979d6255b023ee",
+    "S-a7836c43ad7f552f",
+    "S-ae6533fe6378a611",
+    "S-c3ea3c18a3447ce4",
+    "S-8b46f20a7a35fb19",
+    "S-052e7d1e29545a63",
+    "S-97aa5b20a4a51ea0"
+   ],
+   "finding": "Spektrum, Datenblattreichweite, Verträge, Werke belegt; regjeringen.no HTTP 403.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "KNDS",
+   "search_terms": "KNDS 155mm LU211 range; catalogue 2026-2027; NSPA Nexter contract; La Chapelle-Saint-Ursin; KNDS Belgium line; Niewiadów; Forges de Tarbes; Colleferro explosion",
+   "source_ids": [
+    "S-aadcb3da199c3d17",
+    "S-2a19a44bae9c9218",
+    "S-d803328fd1670795",
+    "S-a5a55ae4e279062f",
+    "S-2dacbdde62e913a1",
+    "S-9dbd280720401c1f",
+    "S-c4cf8d872c93d230",
+    "S-ba345071cf3244b4",
+    "S-6c84242ff77b4c1c",
+    "S-aa0ff06d95479d16",
+    "S-a6bde625685f0047",
+    "S-3828eee11ecc6273"
+   ],
+   "finding": "Spektrum/Reichweite/Beschaffung/Werke belegt; eigene Pulver-/Sprengstofffertigung nicht gefunden.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "BAE Systems",
+   "search_terms": "BAE 155mm brochure; sixteen-fold Glascoed; £280m MOD order; BAE OSI Holston Radford; Glascoed delay",
+   "source_ids": [
+    "S-213a79eb466923da",
+    "S-11a2bf8c21d08244",
+    "S-1e501c0b6e3d8fb8",
+    "S-6c35892360c66d5a",
+    "S-2706942fb5928fec",
+    "S-22b4e8c338d5fc31"
+   ],
+   "finding": "Broschüre als Original-PDF gesichert; baesystems.com-Seiten HTTP 403 (Mitteilung 04/2025, BONUS-Seite); Guardian-Bericht zur Verzögerung nicht geöffnet, Verzögerung über Calibre Defence belegt.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "General Dynamics OTS",
+   "search_terms": "GD-OTS artillery products; M1128-I ERA-HE brochure; Mesquite opening; DoD IG Mesquite; $217M task order; GD-OTS Canada Valleyfield; CCC UCA",
+   "source_ids": [
+    "S-89c6e4ce6f0b8dab",
+    "S-182f1bf64398f3d4",
+    "S-66c989d68bed493a",
+    "S-486bb87d545a7e5d",
+    "S-4c4ea5a84abeab0f",
+    "S-5590349d6f29de4e",
+    "S-eeb74caefc3275d0",
+    "S-1eae2dae5ac99788",
+    "S-ae7a06352c503d15"
+   ],
+   "finding": "Belegt; army.mil-Vertragsmitteilung 2024 HTTP 403; IG-Bericht selbst nicht geöffnet.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Hanwha Aerospace",
+   "search_terms": "Hanwha MCS Yeosu capacity; BAE MCS deal; Sweden FMV MCS; Pine Bluff campus; ER shell mass production; AUSA 2025 modular charge facility",
+   "source_ids": [
+    "S-69f3ca71ad940e6e",
+    "S-25aa458cd8d5079c",
+    "S-5d054e98a93f597d",
+    "S-1fcfbe98a40fffd8",
+    "S-11207e9f835a9f20",
+    "S-4990a0c7872510f8",
+    "S-cf746dc76f173082"
+   ],
+   "finding": "Treibladungen/Verträge/US-Pläne belegt; Reichweite und Geschossspektrum nicht belegt; GBP nur Anrisstext.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Markt: EU-Programme und Kapazität",
+   "search_terms": "ASAP 500 million powder explosives; 2 million shells end 2025; EDIP final adoption; Kubilius 2 million 2026; RFE/RL capacity investigation; Europe 2 million 2027 surplus",
+   "source_ids": [
+    "S-a4432a86aaf146f5",
+    "S-84620b98214b90e5",
+    "S-0f3e4291120ca045",
+    "S-05d2ba4a7ea0433c",
+    "S-ea5f61dc37c5379a",
+    "S-e8d99b5c0a3aebdf"
+   ],
+   "finding": "Programme und widersprüchliche Kapazitätsangaben mit Ursprung erfasst; Ratsmitteilung EDIP HTTP 403; SAFE nicht separat erfasst (Bezug über Portfolio P-V30).",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Markt: US-Produktion und Pulverengpass",
+   "search_terms": "US 155mm production per month 2026; 100,000 goal missed; GAO 1.2m; propellant powder bottleneck",
+   "source_ids": [
+    "S-1fcfbe98a40fffd8",
+    "S-4990a0c7872510f8",
+    "S-5590349d6f29de4e",
+    "S-71e68b86d52a8a03",
+    "S-ea5f61dc37c5379a",
+    "S-22b4e8c338d5fc31"
+   ],
+   "finding": "US-Ist/Ziel und Engpassaussagen (Rheinmetall, Industriequellen, UK-Importabhängigkeit) belegt.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Weitere Peer-Kandidaten",
+   "search_terms": "Colt CZ/MSM 155mm; Poongsan 155mm; Ukrainian/Polish producers",
+   "source_ids": [],
+   "finding": "Nicht als Peer aufgenommen (Begrenzung auf 6 Peers); Poongsan als koreanischer Geschosshersteller nur in Suchtreffern sichtbar, nicht geöffnet.",
+   "status": "nicht geprüft mit Grund"
+  }
+ ]
+}
