@@ -71,6 +71,9 @@ Feste vier Desktop-Seiten, auch wenn ein optionaler Auftragsteil leer ist:
    das aktuelle Paket regional_presence enthält (ältere Pakete bleiben kompatibel).
 4. Aussagen, Belegstellen und Originalquellen mit Suche.
 
+Ausnahme nur auf ausdrücklichen Nutzerwunsch: Manifest omit_pages=["market"]
+entfernt Seite 3 samt Reiter; Seitenzähler folgt der tatsächlichen Seitenzahl.
+Renderer bricht ab, falls dadurch Marktthemen/Dashboard/Regionsinhalte verloren gingen.
 Manifest topics=[{id,label,page}], page=main/market (Standard main);
 market_title optional aus dem Auftrag, z. B. Golfstaaten. Reihenfolge je Seite
 entspricht dem Auftrag. Unternehmenspräsenz vom allgemeinen Markt getrennt zeigen.

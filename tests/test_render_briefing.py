@@ -189,6 +189,29 @@ class RenderTests(unittest.TestCase):
         self.assertNotIn('<script>attack()</script>', body)
         self.assertIn('&lt;script&gt;attack()&lt;/script&gt;', body)
 
+    def test_market_page_and_tab_can_be_omitted_on_request(self):
+        body = RENDER.build(**self.b)
+        self.assertIn('id="page-regions"', body)
+        self.assertIn('02 / 04', body)
+        self.b['manifest']['omit_pages'] = ['market']
+        body = RENDER.build(**self.b)
+        self.assertNotIn('page-regions', body)
+        self.assertNotIn('Markt-Deep-Dive', body)
+        self.assertIn('03 / 03 · Quellen', body)
+        self.assertEqual(body.count('role="tab"'), 3)
+        links = Links(); links.feed(body)
+        self.assertTrue(set(links.anchors) <= set(links.ids))
+
+    def test_market_page_omission_never_drops_content(self):
+        for bad in (['market', 'market'], ['profile'], 'market'):
+            b = copy.deepcopy(self.b); b['manifest']['omit_pages'] = bad
+            with self.assertRaisesRegex(ValueError, 'omit_pages'):
+                RENDER.build(**b)
+        b = copy.deepcopy(self.b); b['manifest']['omit_pages'] = ['market']
+        b['manifest']['topics'] = [dict(id='region', label='Region', page='market')]
+        with self.assertRaisesRegex(ValueError, 'omitted market page'):
+            RENDER.build(**b)
+
     def test_empty_events_do_not_create_an_empty_module(self):
         self.assertNotIn('id="current-developments"', RENDER.build(**facts_only(self.b)))
 

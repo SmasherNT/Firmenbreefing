@@ -134,6 +134,12 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         raise ValueError("topic label required")
     if manifest.get('market_title') is not None and not CHECK.text(manifest['market_title']):
         raise ValueError('market_title must be text')
+    # Optional user choice: drop the separate market deep-dive page and its tab.
+    omit_pages = manifest.get('omit_pages', [])
+    if not isinstance(omit_pages, list) or len(set(omit_pages)) != len(omit_pages) or not set(omit_pages) <= {'market'}:
+        raise ValueError('omit_pages must be a list containing only "market"')
+    if 'market' in omit_pages and any(t.get('page', 'main') == 'market' for t in topics):
+        raise ValueError('omitted market page cannot hold requested topics')
     for row in interpreted.values():
         if row['section'].startswith('topic:') and row['section'][6:] not in topic_index:
             raise ValueError('interpretation references unknown requested topic')
@@ -503,8 +509,12 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     if region_interpretations:
         regions.append(section('Einordnung · Marktzugang', grid(region_interpretations)))
     market_label = 'Markt-Deep-Dive' + (' · ' + manifest['market_title'] if manifest.get('market_title') else '')
-    pages = [('page-main', 'Überblick', main), ('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media),
-             ('page-regions', market_label, ''.join(regions) or section(market_label, '<p>Keine freigegebenen regionalen Befunde für diesen Auftrag.</p>'))]
+    pages = [('page-main', 'Überblick', main), ('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media)]
+    if 'market' in omit_pages:
+        if ''.join(regions):
+            raise ValueError('omitted market page would drop reviewed content')
+    else:
+        pages.append(('page-regions', market_label, ''.join(regions) or section(market_label, '<p>Keine freigegebenen regionalen Befunde für diesen Auftrag.</p>')))
     register = '<label class="source-search">Quellen und Aussagen durchsuchen<input id="source-search-input" type="search" placeholder="Stichwort, Claim oder Quelle"></label>'
     for cid, row in claims.items():
         status = reviews.get(cid, {}).get('status', 'nicht einzeln geprüft')
@@ -517,7 +527,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     register += '<h3>Dokumente</h3>' + ''.join('<p>' + source_html(s) + '</p>' for s in sources.values())
     pages.append(('page-sources', 'Quellen', section('Aussagen, Belegstellen & Originalquellen', register) + person_sources))
     tabs = ''.join('<button type="button" role="tab" id="tab-' + ident + '" data-page="' + ident + '" aria-controls="' + ident + '">' + str(i) + ' · ' + esc(label) + '</button>' for i, (ident, label, _) in enumerate(pages, 1))
-    content = ''.join('<div class="page" role="tabpanel" aria-labelledby="tab-' + ident + '" id="' + ident + '"><p class="page-kicker">' + str(i).zfill(2) + ' / 04 · ' + esc(label) + '</p>' + body + '</div>' for i, (ident, label, body) in enumerate(pages, 1))
+    content = ''.join('<div class="page" role="tabpanel" aria-labelledby="tab-' + ident + '" id="' + ident + '"><p class="page-kicker">' + str(i).zfill(2) + ' / ' + str(len(pages)).zfill(2) + ' · ' + esc(label) + '</p>' + body + '</div>' for i, (ident, label, body) in enumerate(pages, 1))
     if positioning_context and positioning_context.get('module_insights'):
         content = MODULE_INSIGHTS.css() + content
     template = (ROOT / 'references/templates/briefing.html').read_text(encoding='utf-8')
