@@ -31,12 +31,12 @@
   "checkpoints": {
     "context": {
       "stage": "context",
-      "checkpoint_id": "fee2ebcca0ec4e8fb101713f3e46260d",
+      "checkpoint_id": "d3315b8fd27a42f3b86e327ef61de000",
       "inputs": {},
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/context-facts.json",
-          "sha256": "50bd1aed0f6c8f298f7494c4f63e45044288bd55ca185ae9fdc13740416ea803"
+          "sha256": "b811ebc6dc1deac359ba264e96ad0bceb5d1b094e4263a80140e2f08a07cb08b"
         }
       },
       "code": {
@@ -208,6 +208,15 @@
           "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/06/2026-06-03-verkauf-besiegelt-rheinmetall-trennt-sich-von-ziviler-sparte.pdf",
           "content_sha256": "c6d13e5f66762ec7446f9af512c82714dd3b81e3f5df0dcd8d40d187dc6a0e59",
           "text_sha256": "8ef6c0720864df93e9b4956fe205ff15cc9867e4fadcc4efab385cd6637c5c51",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-3dad8b811c925694": {
+          "source_id": "S-3dad8b811c925694",
+          "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q2/Rheinmetall-Halbjahresfinanzbericht-2026.pdf",
+          "content_sha256": "214decfe1cd910eedff5de83482a93f410fb63d3e92a852c34d543790d07098c",
+          "text_sha256": "81050c484e68e1792956cbb723d122779ed58e1fd2c8970251c3d66ccd41854a",
           "capture_kind": "http-original",
           "capture_note": null,
           "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
@@ -448,8 +457,8 @@
         }
       },
       "dependencies": {},
-      "checked_at": "2026-10-19T09:13:39+00:00",
-      "fingerprint": "0a9f2fe012cf8162bc9c22f4d3c9ad44aa65cdc2da40bdb59a95c855dfe0d87b"
+      "checked_at": "2026-10-19T22:00:10+00:00",
+      "fingerprint": "41776a7bb2f4ada82ee1a19084123f505b26c20d1eb7e235fe8d096f6f77708d"
     },
     "portfolio": {
       "stage": "portfolio",
@@ -5882,5 +5891,5 @@
   },
   "created_at": "2026-10-19T08:47:09+00:00",
   "notice": "Local completion records only; content approval and visual QA remain separate.",
-  "fingerprint": "a4aab1db81b3aa07f042ac49318aefa31ddf2391161a34c94f1a0c755af55d22"
+  "fingerprint": "3ac2f624e5d9e30899b68b97cd6ea952aae30de5e7c9df8280c33bf844acfffe"
 }

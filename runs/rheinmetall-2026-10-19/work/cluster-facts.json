@@ -441,18 +441,33 @@
     },
     {
       "id": "C-STR-15",
-      "statement": "Laut Lider Media bestätigte die Lürssen-Gruppe (Eigentümer Peter Lürssen) den Verkauf der NVL an Rheinmetall; Lürssen wolle sich auf zivile Megayachten konzentrieren.",
+      "statement": "Laut Lider Media bestätigte die Lürssen-Gruppe (Eigentümer Peter Lürssen) im September 2025 den Verkauf der NVL an Rheinmetall; Lürssen wolle sich auf zivile Megayachten konzentrieren. Laut Rheinmetall-Pressemitteilung vom 02.03.2026 ist die Übernahme der NVL, des militärischen Bereichs der Lürssen-Gruppe, abgeschlossen.",
       "kind": "Partnerangabe",
       "source_ids": [
-        "S-86b532adf4a3d541"
+        "S-86b532adf4a3d541",
+        "S-042b26990fdc2a9d"
       ],
-      "evidence": "Paraphrase: Lürssen-Gruppe bestätigt, dass NVL Teil von Rheinmetall wird; Integration erfolge schrittweise, Lürssen fokussiere sich auf den Bau ziviler Megayachten.",
-      "location": "Artikeltext, 1. und 4. Absatz",
-      "uncertainty": "Nur Sekundärwiedergabe einer Lürssen-Aussage; keine Lürssen-Originalmitteilung geöffnet; Artikel von Sept. 2025 (vor Vollzug).",
+      "evidence": "Paraphrase (Lider Media): Lürssen-Gruppe bestätigt, dass NVL Teil von Rheinmetall wird; Integration erfolge schrittweise, Lürssen fokussiere sich auf den Bau ziviler Megayachten. | Auszug (Rheinmetall AG): „Düsseldorf-based technology group Rheinmetall has completed the company take-over of NVL, the military part of the Lürssen Group.“",
+      "evidence_items": [
+        {
+          "source_id": "S-86b532adf4a3d541",
+          "mode": "Paraphrase",
+          "text": "Lürssen-Gruppe bestätigt, dass NVL Teil von Rheinmetall wird; Integration erfolge schrittweise, Lürssen fokussiere sich auf den Bau ziviler Megayachten.",
+          "location": "Artikeltext, 1. und 4. Absatz"
+        },
+        {
+          "source_id": "S-042b26990fdc2a9d",
+          "mode": "Auszug",
+          "text": "„Düsseldorf-based technology group Rheinmetall has completed the company take-over of NVL, the military part of the Lürssen Group.“",
+          "location": "Pressemitteilung vom 02.03.2026, 1. Absatz"
+        }
+      ],
+      "location": "Lider Media: Artikeltext, 1. und 4. Absatz; Rheinmetall AG: Pressemitteilung vom 02.03.2026, 1. Absatz",
+      "uncertainty": "Lürssen-Aussage nur als Sekundärwiedergabe vor Vollzug (Sept. 2025); Vollzug nur durch Rheinmetall-Mitteilung (Käuferseite) belegt, keine Lürssen-Originalmitteilung zum Vollzug geöffnet.",
       "proposed_depth": "A",
       "depth_reason": "Gegenpartei der Transaktion",
-      "event_date": "2025-09-18",
-      "event_status": "Verkauf angekündigt (später vollzogen, vgl. C-STR-14)",
+      "event_date": "2026-03-02",
+      "event_status": "Verkauf angekündigt 09/2025; Vollzug laut Rheinmetall 03/2026",
       "depends_on": [
         "C-STR-14"
       ]
@@ -571,13 +586,13 @@
     },
     {
       "id": "C-STR-20",
-      "statement": "Rheinmetall hält laut Anteilsbesitzliste 2025 indirekt 51% an der Rheinmetall – Ukrainian Defense Industry LLC, Kiew (vollkonsolidiert); laut Geschäftsbericht 2024 wurde das Gemeinschaftsunternehmen 2023 mit der Ukrainian Defense Industry (UDI) gegründet und erbringt zunächst Service und Wartung.",
+      "statement": "Rheinmetall hält laut Anteilsbesitzliste 2025 indirekt 51% an der Rheinmetall – Ukrainian Defense Industry LLC, Kiew (vollkonsolidiert); laut Geschäftsbericht 2024 wurde das Gemeinschaftsunternehmen 2023 mit der Ukrainian Defense Industry (UDI) gegründet, die dort als ukrainischer Staatskonzern bezeichnet wird, und erbringt zunächst Service und Wartung.",
       "kind": "Fakt",
       "source_ids": [
         "S-f4730b21412bb02a",
         "S-b159a0c9329835a7"
       ],
-      "evidence": "Auszug (Rheinmetall AG): „Rheinmetall – Ukrainian Defense Industry LLC, Kiew/Ukraine – 51 750 379“ | Auszug (Rheinmetall AG): „In Kiew wurde im Jahr 2023 ein Gemeinschaftsunternehmen mit der Ukrainian Defense Industry (UDI) gegründet. Im ersten Schritt wird es Service- und Wartungsdienstleistungen für die Ukraine erbringen …“",
+      "evidence": "Auszug (Rheinmetall AG): „Rheinmetall – Ukrainian Defense Industry LLC, Kiew/Ukraine – 51 750 379“ | Auszug (Rheinmetall AG): „In Kiew wurde im Jahr 2023 ein Gemeinschaftsunternehmen mit der Ukrainian Defense Industry (UDI) gegründet. Im ersten Schritt wird es Service- und Wartungsdienstleistungen für die Ukraine erbringen …“; „… der Rheinmetall Landsysteme GmbH und dem ukrainischen Staatskonzern Ukrainian Defence Industry …“",
       "evidence_items": [
         {
           "source_id": "S-f4730b21412bb02a",
@@ -588,11 +603,11 @@
         {
           "source_id": "S-b159a0c9329835a7",
           "mode": "Auszug",
-          "text": "„In Kiew wurde im Jahr 2023 ein Gemeinschaftsunternehmen mit der Ukrainian Defense Industry (UDI) gegründet. Im ersten Schritt wird es Service- und Wartungsdienstleistungen für die Ukraine erbringen …“",
-          "location": "Geschäftsbericht 2024 (GJ 2024), An unsere Aktionäre/Strategie, PDF-S. 21 (PDF-Seite = gedruckte Seitenzahl)"
+          "text": "„In Kiew wurde im Jahr 2023 ein Gemeinschaftsunternehmen mit der Ukrainian Defense Industry (UDI) gegründet. Im ersten Schritt wird es Service- und Wartungsdienstleistungen für die Ukraine erbringen …“; „… der Rheinmetall Landsysteme GmbH und dem ukrainischen Staatskonzern Ukrainian Defence Industry …“",
+          "location": "Geschäftsbericht 2024 (GJ 2024), An unsere Aktionäre/Strategie, PDF-S. 21 und Strategie „Strategische Wachstumsmärkte Ukraine und USA“, PDF-S. 31 (PDF-Seite = gedruckte Seitenzahl)"
         }
       ],
-      "location": "Rheinmetall AG: Ziffer (42) Anteilsbesitzliste, Vollkonsolidierte Tochterunternehmen, PDF-S. 268 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Geschäftsbericht 2024 (GJ 2024), An unsere Aktionäre/Strategie, PDF-S. 21 (PDF-Seite = gedruckte Seitenzahl)",
+      "location": "Rheinmetall AG: Ziffer (42) Anteilsbesitzliste, Vollkonsolidierte Tochterunternehmen, PDF-S. 268 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Geschäftsbericht 2024 (GJ 2024), An unsere Aktionäre/Strategie, PDF-S. 21 und Strategie „Strategische Wachstumsmärkte Ukraine und USA“, PDF-S. 31 (PDF-Seite = gedruckte Seitenzahl)",
       "uncertainty": "Quote des UDI-Anteils nicht ausdrücklich genannt (49% nur rechnerisch, nicht belegt); kein ukrainischer Originalbeleg geöffnet.",
       "proposed_depth": "A",
       "depth_reason": "JV-Kontrollart, Netzwerkkante",
@@ -601,7 +616,7 @@
     },
     {
       "id": "C-STR-21",
-      "statement": "Die Rheinmetall Defence Lietuva, UAB, Ruklos, an der Rheinmetall indirekt 51% hält, soll laut Rheinmetall das 155-mm-Munitionswerk in Baisogala betreiben (Spatenstich 04.11.2025, Investition bis zu 300 MioEUR); JV-Partner ist die staatliche litauische EPSO-G.",
+      "statement": "Die Rheinmetall Defence Lietuva, UAB, Ruklos, an der Rheinmetall indirekt 51% hält, soll laut Rheinmetall das 155-mm-Munitionswerk in Baisogala betreiben (Spatenstich 04.11.2025, Investition bis zu 300 MioEUR); JV-Partner ist laut Rheinmetall die litauische EPSO-G.",
       "kind": "Fakt",
       "source_ids": [
         "S-f4730b21412bb02a",
@@ -623,7 +638,7 @@
         }
       ],
       "location": "Rheinmetall AG: Ziffer (42) Anteilsbesitzliste, Vollkonsolidierte Tochterunternehmen, PDF-S. 268 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Pressemitteilung vom 04.11.2025, 1.–3. Absatz",
-      "uncertainty": "EPSO-G-Quote nicht in geöffneten Quellen genannt; Produktionsbeginn zum Stichtag nicht belegt.",
+      "uncertainty": "EPSO-G-Quote und Eigentümer der EPSO-G nicht in geöffneten Quellen genannt; Produktionsbeginn zum Stichtag nicht belegt.",
       "proposed_depth": "A",
       "depth_reason": "JV-Kontrollart, Netzwerkkante",
       "event_date": "2025-11-04",
@@ -775,18 +790,18 @@
     },
     {
       "id": "C-STR-29",
-      "statement": "An der Rheinmetall 4iG Digital Services Kft., Budapest, hält Rheinmetall laut Anteilsbesitzliste 2025 direkt 49% (Joint Venture, at-equity); ein 2022 gemeldeter Vorvertrag sah dagegen 51% Rheinmetall, 39% 4iG und 10% HM EI Zrt. vor.",
+      "statement": "An der Rheinmetall 4iG Digital Services Kft., Budapest, weist die Anteilsbesitzliste 2025 einen direkten Anteil von 49% und einen indirekten Anteil von 13% aus (Joint Venture, at-equity); eine Gesamtquote wird nicht angegeben. Ein 2022 gemeldeter Vorvertrag nannte eine andere Gesellschafterstruktur (Rheinmetall AG 51%, 4iG 39%, HM EI Zrt. 10%); ob und wie diese umgesetzt bzw. geändert wurde, ist nicht belegt.",
       "kind": "Fakt",
       "source_ids": [
         "S-f4730b21412bb02a",
         "S-e48eee025a306fad"
       ],
-      "evidence": "Auszug (Rheinmetall AG): „Rheinmetall 4iG Digital Services Kft., Budapest/Ungarn (5) 49 13 3.393 956“ | Auszug (EDR Magazine): „Rheinmetall AG (51%), 4iG Plc (39%) and the HM Electronics, Logistics and Property Management PCLS (HM EI Zrt.) (10%) have signed a preliminary agreement to establish a joint venture …“",
+      "evidence": "Auszug (Rheinmetall AG): „Rheinmetall 4iG Digital Services Kft., Budapest/Ungarn (5) 49 13 3.393 956“ (Spalten: direkter Anteil 49, indirekter Anteil 13, Eigenkapital, Jahresergebnis in TEUR) | Auszug (EDR Magazine): „Rheinmetall AG (51%), 4iG Plc (39%) and the HM Electronics, Logistics and Property Management PCLS (HM EI Zrt.) (10%) have signed a preliminary agreement to establish a joint venture …“",
       "evidence_items": [
         {
           "source_id": "S-f4730b21412bb02a",
           "mode": "Auszug",
-          "text": "„Rheinmetall 4iG Digital Services Kft., Budapest/Ungarn (5) 49 13 3.393 956“",
+          "text": "„Rheinmetall 4iG Digital Services Kft., Budapest/Ungarn (5) 49 13 3.393 956“ (Spalten: direkter Anteil 49, indirekter Anteil 13, Eigenkapital, Jahresergebnis in TEUR)",
           "location": "Ziffer (42) Anteilsbesitzliste, At-Equity-bewertete Beteiligungen, PDF-S. 270 (PDF-Seite = gedruckte Seitenzahl)"
         },
         {
@@ -797,7 +812,7 @@
         }
       ],
       "location": "Rheinmetall AG: Ziffer (42) Anteilsbesitzliste, At-Equity-bewertete Beteiligungen, PDF-S. 270 (PDF-Seite = gedruckte Seitenzahl); EDR Magazine: Artikel vom 16.05.2022, 1. Absatz",
-      "uncertainty": "Widerspruch zwischen Vorvertrag 2022 (51%) und Anteilsbesitzliste 2025 (49%); aktuelle Mitgesellschafterquoten nicht belegt.",
+      "uncertainty": "Struktur laut Vorvertrag 2022 weicht von der Anteilsbesitzliste 2025 ab; Summe direkt+indirekt nicht als Gesamtquote angegeben (Mehrfachzurechnung über Beteiligungsketten möglich); aktuelle Quoten von 4iG und HM EI nicht belegt.",
       "proposed_depth": "A",
       "depth_reason": "JV-Quote mit dokumentiertem Widerspruch"
     },
@@ -926,7 +941,7 @@
       "proposed_depth": "A",
       "depth_reason": "Gegenrecherche mit Statuskonflikt",
       "event_date": "2026-07",
-      "event_status": "umstritten / nicht gegründet"
+      "event_status": "umstritten"
     },
     {
       "id": "C-STR-34",
@@ -1095,12 +1110,12 @@
     },
     {
       "id": "C-TEC-03",
-      "statement": "Rheinmetall und Anduril Industries kündigten am 18.06.2025 laut Rheinmetall eine strategische Partnerschaft an: europäische Varianten von Anduril-Barracuda (Integration in Rheinmetall-Systeme) und Fury sowie Feststoff-Raketenmotoren, gemeinsam zu entwickeln und zu produzieren.",
+      "statement": "Rheinmetall und Anduril Industries kündigten am 18.06.2025 laut Rheinmetall eine strategische Partnerschaft an: europäische Varianten von Anduril-Barracuda (Integration in Rheinmetall-Systeme) und Fury sollen gemeinsam entwickelt und produziert werden; bei Feststoff-Raketenmotoren ist lediglich eine Sondierung von Möglichkeiten vorgesehen.",
       "kind": "Herstellerangabe",
       "source_ids": [
         "S-2002ef0c3dd21d04"
       ],
-      "evidence": "Auszug: „Rheinmetall and Anduril Industries announced a strategic partnership …“; „The integration of a European variant of Anduril´s Barracuda …“; „The inclusion of a European variant of Anduril´s Fury …“; „These systems will be jointly developed and produced by the two companies …“",
+      "evidence": "Auszug: „Rheinmetall and Anduril Industries announced a strategic partnership …“; „The integration of a European variant of Anduril´s Barracuda …“; „The inclusion of a European variant of Anduril´s Fury …“; „The exploration of opportunities for solid rocket motors for European …“; „These systems will be jointly developed and produced by the two companies …“",
       "location": "Pressemitteilung vom 18.06.2025, S. 1",
       "uncertainty": "Angekündigte Partnerschaft; konkrete Aufträge, Lizenz- oder Fertigungsverträge nicht belegt; Anduril-eigene Quelle nicht geöffnet.",
       "proposed_depth": "A",
@@ -1249,7 +1264,7 @@
         }
       ],
       "location": "Rheinmetall AG: Konzernanhang Ziffer (41), PDF-S. 265 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Zwischenlagebericht, Wesentliche Großaufträge, PDF-S. 10 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Pressemitteilung vom 19.12.2025, 1.–2. Absatz",
-      "uncertainty": "Rheinmetall-Anteil uneinheitlich: Hälfte von 3,5 MrdEUR netto (GB 2025) vs. 2 MrdEUR netto (H1 2026) vs. 2,1 MrdEUR brutto (PM).",
+      "uncertainty": "Rheinmetall-Anteil uneinheitlich: 1,75 MrdEUR netto (Hälfte von 3,5 MrdEUR, GB 2025) vs. 2,0 MrdEUR netto (H1 2026) vs. 2,1 MrdEUR brutto (PM).",
       "proposed_depth": "A",
       "depth_reason": "Wesentlicher Kundenauftrag über JV",
       "event_date": "2026-01",
@@ -1257,13 +1272,14 @@
     },
     {
       "id": "C-MKT-02",
-      "statement": "OCCAR beauftragte im Oktober 2025 die ARTEC GmbH mit 222 Radschützenpanzern Schakal für Deutschland (150) und die Niederlande (72); laut Geschäftsbericht entfallen 2,9 MrdEUR netto auf Rheinmetall, zusätzlich besteht eine Option über bis zu 248 weitere Fahrzeuge (laut ESD: 3,41 MrdEUR brutto gesamt).",
+      "statement": "OCCAR beauftragte im Oktober 2025 die ARTEC GmbH mit 222 Radschützenpanzern Schakal für Deutschland (150) und die Niederlande (72); laut Rheinmetall-Pressemitteilung beträgt der Gesamtwert 4,7 MrdEUR brutto (Rheinmetall-Anteil knapp 3,4 MrdEUR), laut Geschäftsbericht entfallen 2,9 MrdEUR netto auf Rheinmetall; zusätzlich besteht eine Option über bis zu 248 weitere Fahrzeuge. European Security & Defence nennt dagegen 3,41 MrdEUR brutto als Gesamtwert (Quellkonflikt).",
       "kind": "Fakt",
       "source_ids": [
         "S-f4730b21412bb02a",
-        "S-ed8c444ff9f73ed3"
+        "S-ed8c444ff9f73ed3",
+        "S-7a7a5f5d433c1776"
       ],
-      "evidence": "Auszug (Rheinmetall AG): „Die europäische Rüstungsorganisation OCCAR … hat im Oktober 2025 die ARTEC GmbH … damit beauftragt, insgesamt 222 Radschützenpanzer Schakal an die Streitkräfte Deutschlands und der Niederlande zu liefern … Der auf Rheinmetall entfallende Anteil am Auftragswert liegt bei 2,9 MrdEUR (netto) … Option für einen Abruf von bis zu 248 weiteren Fahrzeugen.“ | Auszug (European Security & Defence): „Under the OCCAR contract 150 Schakal vehicles will be delivered to the Bundeswehr, with the remaining 72 bound for the Royal Netherlands Army.“; „… worth EUR 3.41 billion gross, with Rheinmetall’s share amounting to almost EUR 3 billion …“",
+      "evidence": "Auszug (Rheinmetall AG): „Die europäische Rüstungsorganisation OCCAR … hat im Oktober 2025 die ARTEC GmbH … damit beauftragt, insgesamt 222 Radschützenpanzer Schakal an die Streitkräfte Deutschlands und der Niederlande zu liefern … Der auf Rheinmetall entfallende Anteil am Auftragswert liegt bei 2,9 MrdEUR (netto) … Option für einen Abruf von bis zu 248 weiteren Fahrzeugen.“ | Auszug (European Security & Defence): „Under the OCCAR contract 150 Schakal vehicles will be delivered to the Bundeswehr, with the remaining 72 bound for the Royal Netherlands Army.“; „… worth EUR 3.41 billion gross, with Rheinmetall’s share amounting to almost EUR 3 billion …“ | Auszug (Rheinmetall AG): „The total order for the German and Dutch armies is worth €4.7 billion gross, with Rheinmetall's share amounting to almost €3.4 billion.“",
       "evidence_items": [
         {
           "source_id": "S-f4730b21412bb02a",
@@ -1276,10 +1292,16 @@
           "mode": "Auszug",
           "text": "„Under the OCCAR contract 150 Schakal vehicles will be delivered to the Bundeswehr, with the remaining 72 bound for the Royal Netherlands Army.“; „… worth EUR 3.41 billion gross, with Rheinmetall’s share amounting to almost EUR 3 billion …“",
           "location": "Artikel vom 20.10.2025, 3.–4. Absatz"
+        },
+        {
+          "source_id": "S-7a7a5f5d433c1776",
+          "mode": "Auszug",
+          "text": "„The total order for the German and Dutch armies is worth €4.7 billion gross, with Rheinmetall's share amounting to almost €3.4 billion.“",
+          "location": "Pressemitteilung vom 20.10.2025, Key facts und 1. Absatz"
         }
       ],
-      "location": "Rheinmetall AG: Lagebericht, Wesentliche Großaufträge, PDF-S. 53 (PDF-Seite = gedruckte Seitenzahl); European Security & Defence: Artikel vom 20.10.2025, 3.–4. Absatz",
-      "uncertainty": "Abweichende Wertangaben in Medien (brutto/netto); Vertragspartner ist OCCAR, Endnutzer DE/NL.",
+      "location": "Rheinmetall AG: Lagebericht, Wesentliche Großaufträge, PDF-S. 53 (PDF-Seite = gedruckte Seitenzahl); European Security & Defence: Artikel vom 20.10.2025, 3.–4. Absatz; Rheinmetall AG: Pressemitteilung vom 20.10.2025, Key facts und 1. Absatz",
+      "uncertainty": "Offener Quellkonflikt: ESD-Gesamtwert 3,41 MrdEUR brutto widerspricht dem Rheinmetall-Gesamtwert 4,7 MrdEUR brutto (vgl. Portfolio-Claim P-V10); 3,41 MrdEUR entspricht vermutlich dem Rheinmetall-Bruttoanteil (Annahme, nicht belegt). Vertragspartner ist OCCAR, Endnutzer DE/NL.",
       "proposed_depth": "A",
       "depth_reason": "Wesentlicher Kundenauftrag über JV",
       "event_date": "2025-10",
@@ -1287,14 +1309,29 @@
     },
     {
       "id": "C-MKT-03",
-      "statement": "Laut Geschäftsbericht 2025 erhielt Rheinmetall im Februar 2025 als Generalunternehmer den Zuschlag für TaWAN (taktisches Weitverkehrsnetz) der Bundeswehr: Rahmenvertrag 7,5 MrdEUR, zehn Jahre Laufzeit, erster Abruf 1,6 MrdEUR, Auslieferung Ende 2026 bis Ende 2029; am 06.02.2025 schloss das BAAINBw zudem einen Rahmenvertrag über IdZ-ES-Soldatensysteme (max. 1,7 MrdEUR bis 2030).",
+      "statement": "Laut Geschäftsbericht 2025 erhielt Rheinmetall im Februar 2025 als Generalunternehmer den Zuschlag für TaWAN (taktisches Weitverkehrsnetz) der Bundeswehr: Rahmenvertrag 7,5 MrdEUR, zehn Jahre Laufzeit, erster Abruf 1,6 MrdEUR, Auslieferung Ende 2026 bis Ende 2029; am 06.02.2025 schloss das BAAINBw zudem einen Rahmenvertrag über IdZ-ES-Soldatensysteme bis 2030, dessen Höchstvolumen im Geschäftsbericht mit 1,7 MrdEUR, in der Rheinmetall-Pressemitteilung vom 27.04.2026 dagegen mit bis zu 3,1 MrdEUR brutto angegeben wird (Quellkonflikt).",
       "kind": "Herstellerangabe",
       "source_ids": [
-        "S-f4730b21412bb02a"
+        "S-f4730b21412bb02a",
+        "S-8570241741649c2a"
       ],
-      "evidence": "Auszug: „Als Generalunternehmer wird Rheinmetall ein Kommunikationssystem namens Tactical Wide Area Network (TaWAN) aufbauen … Der Rahmenvertrag … hat ein Volumen von 7,5 MrdEUR und eine Laufzeit von zehn Jahren. Ein erster Abruf in Höhe von 1,6 MrdEUR …“; „Am 6. Februar 2025 haben das … (BAAINBw) und Rheinmetall einen Rahmenvertrag zur Nachbeschaffung von Soldatensystemen … (IdZ-ES) abgeschlossen … maximales Volumen von 1,7 MrdEUR …“",
-      "location": "Lagebericht, Wesentliche Großaufträge, PDF-S. 52 (PDF-Seite = gedruckte Seitenzahl)",
-      "uncertainty": "Rahmenvolumen ist kein garantierter Umsatz; keine Behördenquelle geöffnet.",
+      "evidence": "Auszug (Rheinmetall AG): „Als Generalunternehmer wird Rheinmetall ein Kommunikationssystem namens Tactical Wide Area Network (TaWAN) aufbauen … Der Rahmenvertrag … hat ein Volumen von 7,5 MrdEUR und eine Laufzeit von zehn Jahren. Ein erster Abruf in Höhe von 1,6 MrdEUR …“; „Am 6. Februar 2025 haben das … (BAAINBw) und Rheinmetall einen Rahmenvertrag zur Nachbeschaffung von Soldatensystemen … (IdZ-ES) abgeschlossen … maximales Volumen von 1,7 MrdEUR …“ | Auszug (Rheinmetall AG): „In February of 2025, the BAAINBw signed a framework contract with Rheinmetall for the procurement of additional IdZ-ES systems, with a maximum value of €3.1bn gross. The contract runs until the end of 2030 …“",
+      "evidence_items": [
+        {
+          "source_id": "S-f4730b21412bb02a",
+          "mode": "Auszug",
+          "text": "„Als Generalunternehmer wird Rheinmetall ein Kommunikationssystem namens Tactical Wide Area Network (TaWAN) aufbauen … Der Rahmenvertrag … hat ein Volumen von 7,5 MrdEUR und eine Laufzeit von zehn Jahren. Ein erster Abruf in Höhe von 1,6 MrdEUR …“; „Am 6. Februar 2025 haben das … (BAAINBw) und Rheinmetall einen Rahmenvertrag zur Nachbeschaffung von Soldatensystemen … (IdZ-ES) abgeschlossen … maximales Volumen von 1,7 MrdEUR …“",
+          "location": "Lagebericht, Wesentliche Großaufträge, PDF-S. 52 (PDF-Seite = gedruckte Seitenzahl)"
+        },
+        {
+          "source_id": "S-8570241741649c2a",
+          "mode": "Auszug",
+          "text": "„In February of 2025, the BAAINBw signed a framework contract with Rheinmetall for the procurement of additional IdZ-ES systems, with a maximum value of €3.1bn gross. The contract runs until the end of 2030 …“",
+          "location": "Pressemitteilung vom 27.04.2026, 3. Absatz"
+        }
+      ],
+      "location": "Rheinmetall AG: Lagebericht, Wesentliche Großaufträge, PDF-S. 52 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Pressemitteilung vom 27.04.2026, 3. Absatz",
+      "uncertainty": "Quellkonflikt IdZ-ES-Höchstvolumen: 1,7 MrdEUR (GB 2025, ohne Netto/Brutto-Angabe) vs. bis zu 3,1 MrdEUR brutto (PM 27.04.2026); Ursache (z. B. Netto/Brutto oder Vertragsänderung) nicht belegt; vgl. Portfolio-Claim P-D11 (Abruf 27.04.2026). Rahmenvolumen ist kein garantierter Umsatz; keine Behördenquelle geöffnet.",
       "proposed_depth": "A",
       "depth_reason": "Rahmenverträge Kunde Bundeswehr",
       "event_date": "2025-02",
@@ -1526,18 +1563,18 @@
     },
     {
       "id": "C-MKT-12",
-      "statement": "Laut Australian Defence Magazine schloss die australische Regierung einen Vertrag über 72 Mio. AUD mit Rheinmetall NIOA Munitions für eine 155-mm-M795-Schmiede in Maryborough (Betrieb bis Ende 2028, anfänglich 15.000 Geschosse pro Jahr).",
+      "statement": "Laut Australian Defence Magazine schloss die australische Regierung einen Vertrag über 72 Mio. (im Original „$72 million“, Währung nicht spezifiziert) mit Rheinmetall NIOA Munitions für eine 155-mm-M795-Schmiede in Maryborough; die Schmiede soll bis Ende 2028 den Betrieb aufnehmen und anfänglich 15.000 Geschosse pro Jahr fertigen.",
       "kind": "Fakt",
       "source_ids": [
         "S-ae3e82623d92513c"
       ],
       "evidence": "Auszug: „The government has signed a $72 million deal with Rheinmetall Nioa Munitions to stand up a new capability for forging 155mm shells at its plant in Maryborough, Queensland.“; „It will begin operating by the end of 2028 and is expected to produce an initial 15,000 rounds a year …“",
       "location": "Artikel vom 09.06.2026, 1. und 6. Absatz",
-      "uncertainty": "Keine Regierungsquelle geöffnet.",
+      "uncertainty": "Währung im Original nur als „$“ angegeben (AUD naheliegend, nicht belegt); Betriebsaufnahme erst bis Ende 2028 geplant; keine Regierungsquelle geöffnet.",
       "proposed_depth": "A",
       "depth_reason": "Kunde Australien über JV",
       "event_date": "2026-06-09",
-      "event_status": "beauftragt"
+      "event_status": "beauftragt; Betrieb bis Ende 2028 geplant"
     },
     {
       "id": "C-MKT-13",
@@ -1969,6 +2006,24 @@
       "source_kind": "Unternehmenspressemitteilung"
     },
     {
+      "id": "S-7a7a5f5d433c1776",
+      "name": "Rheinmetall AG",
+      "title": "222 Schakal infantry fighting vehicles for Germany and the Netherlands",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/10/2025-10-20-infantry-fighting-vehicle-222-jackals-schakal-for-germany-and-the-netherlands",
+      "published_date": "2025-10-20",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Unternehmenspressemitteilung"
+    },
+    {
+      "id": "S-8570241741649c2a",
+      "name": "Rheinmetall AG",
+      "title": "Bundeswehr orders IdZ-ES soldier systems from Rheinmetall",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/04/2026-04-27-bundeswehr-orders-idz-es-soldier-systems-from-rheinmetall",
+      "published_date": "2026-04-27",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Unternehmenspressemitteilung"
+    },
+    {
       "id": "S-823a7eb256c6141a",
       "name": "Europäische Sicherheit & Technik (ESUT)",
       "title": "Luftverteidigungssystem Nah- und Nächstbereichsschutz wird entwickelt",
@@ -2011,6 +2066,40 @@
     }
   ],
   "coverage": [
+    {
+      "cluster": "alle",
+      "topic": "Breite Entdeckung Web/Nachrichten/Fachmedien",
+      "search_terms": "Websuchen DE/EN u. a.: Rheinmetall Geschäftsbericht 2025; Halbjahresfinanzbericht 2026; RMMV TRATON 49; RBSL BAE 55 45; PSM KNDS Puma; ARTEC Schakal OCCAR; Leonardo LRMV A2CS; ICEYE SPOCK; OHB SATCOMBw; Kraken K3; Lockheed GMARS; Anduril; AEQUITA Power Systems; NVL Lürssen; Mangalia MSC; F126 Damen; XM30; Skyranger Bundeswehr; VMZ Bulgaria; 4iG; Denel; NIOA; Reliance; F-35 Weeze; NNbS; Staatsbeteiligung",
+      "opened_source_ids": [
+        "S-ed8c444ff9f73ed3",
+        "S-e1f0237821c9aae3",
+        "S-202cf065062fc9bb",
+        "S-4c90fb7e038d3c0e",
+        "S-2ca5b026170c9735",
+        "S-86b532adf4a3d541",
+        "S-2706c2d0310324c4",
+        "S-0bf21d6b5d52b9d5",
+        "S-358fde57439e652d",
+        "S-a6d23e590b4f0f19",
+        "S-30ebc6ec93f292af",
+        "S-d15683e7fcc1068b",
+        "S-e48eee025a306fad",
+        "S-8d249b1db35129b2",
+        "S-75731f2457a30bcf",
+        "S-ae3e82623d92513c",
+        "S-823a7eb256c6141a",
+        "S-265b6ce2d616b964"
+      ],
+      "finding": "Fachmedien lieferten zusätzliche Akteure/Hinweise (Destinus, MSC, Bulgarien-Statuskonflikt, XM30-Prototyp, F126-Folgen); Suchtreffer/Snippets nur zum Finden genutzt; Skyranger-Bundeswehr-Hinweise (Verzögerung) nicht übernommen, da nur Aggregator-/Sekundärhinweise; Pravda, capital.bg, romania-insider, eimin.lrv.lt, theweek.in nicht zugänglich (HTTP 403/429).",
+      "claim_ids": [
+        "C-STR-33",
+        "C-STR-36",
+        "C-STR-37",
+        "C-MKT-09",
+        "C-STR-38"
+      ],
+      "status": "geprüft mit Befund"
+    },
     {
       "cluster": "capital",
       "topic": "Aktionärsstruktur und Stimmrechtsmitteilungen",
@@ -2705,7 +2794,7 @@
     {
       "id": "udi",
       "label": "Ukrainian Defense Industry",
-      "legal_name": "Ukrainian Defense Industry (UDI), staatlich",
+      "legal_name": "Ukrainian Defense Industry (UDI), lt. GB 2024 ukrainischer Staatskonzern",
       "kind": "partner",
       "cluster": "structure",
       "level": 2,
@@ -2727,7 +2816,7 @@
     {
       "id": "epsog",
       "label": "EPSO-G",
-      "legal_name": "EPSO-G (staatlich, Litauen)",
+      "legal_name": "EPSO-G (Litauen)",
       "kind": "partner",
       "cluster": "structure",
       "level": 2,
@@ -3429,8 +3518,8 @@
       "capital_share": "n. a.",
       "voting_share": "n. a.",
       "control": "n. a.",
-      "status": "veräußert",
-      "as_of": "2026-02",
+      "status": "veräußert (Vollzug laut Käufermitteilung)",
+      "as_of": "2026-03-02",
       "claim_ids": [
         "C-STR-15",
         "C-STR-14"
@@ -4008,7 +4097,7 @@
         "jv"
       ],
       "directness": "direkt",
-      "capital_share": "49%",
+      "capital_share": "49% direkt; 13% indirekt (keine Gesamtquote angegeben)",
       "voting_share": "n. a.",
       "control": "gemeinschaftliche Führung (JV)",
       "status": "bestehend",
@@ -4022,15 +4111,15 @@
       "id": "E45",
       "from": "fourig",
       "to": "r4ig",
-      "type": "Joint-Venture-Partner",
+      "type": "Joint-Venture-Partner (laut Vorvertrag 2022)",
       "categories": [
         "jv"
       ],
       "directness": "indirekt/Ebene 2",
-      "capital_share": "39% (Vorvertrag)",
+      "capital_share": "39% (Vorvertrag 2022)",
       "voting_share": "n. a.",
       "control": "n. a.",
-      "status": "Vorvertrag 2022",
+      "status": "Vorvertrag 2022; aktueller Stand nicht belegt",
       "as_of": "2022-05",
       "claim_ids": [
         "C-STR-29"
@@ -4049,7 +4138,7 @@
       "capital_share": "n. a.",
       "voting_share": "n. a.",
       "control": "n. a.",
-      "status": "umstritten / nicht gegründet",
+      "status": "umstritten",
       "as_of": "2026-07",
       "claim_ids": [
         "C-STR-33"
@@ -4521,9 +4610,9 @@
     },
     {
       "id": "E71",
-      "from": "psm",
-      "to": "rhm",
-      "type": "Unterauftrag Puma",
+      "from": "rhm",
+      "to": "psm",
+      "type": "Unterauftrag Puma (Lieferung an PSM)",
       "categories": [
         "supplier"
       ],
@@ -4540,9 +4629,9 @@
     },
     {
       "id": "E72",
-      "from": "psm",
-      "to": "knds",
-      "type": "Unterauftrag Puma",
+      "from": "knds",
+      "to": "psm",
+      "type": "Unterauftrag Puma (Lieferung an PSM)",
       "categories": [
         "supplier"
       ],
@@ -4760,7 +4849,7 @@
       "capital_share": "n. a.",
       "voting_share": "n. a.",
       "control": "n. a.",
-      "status": "beauftragt",
+      "status": "beauftragt; Betrieb bis Ende 2028 geplant",
       "as_of": "2026-06-09",
       "claim_ids": [
         "C-MKT-12"
@@ -4978,7 +5067,7 @@
         "label": "Ukrainian Defense Industry",
         "kind": "partner",
         "cluster": "structure",
-        "legal_name": "Ukrainian Defense Industry (UDI), staatlich"
+        "legal_name": "Ukrainian Defense Industry (UDI), lt. GB 2024 ukrainischer Staatskonzern"
       },
       {
         "id": "lietuva",
@@ -4992,7 +5081,7 @@
         "label": "EPSO-G",
         "kind": "partner",
         "cluster": "structure",
-        "legal_name": "EPSO-G (staatlich, Litauen)"
+        "legal_name": "EPSO-G (Litauen)"
       },
       {
         "id": "rdm",
@@ -5539,20 +5628,22 @@
         "from": "luerssen",
         "to": "nvl",
         "type": "Frühere Eigentümerin (Verkauf)",
-        "summary": "Lürssen-Gruppe verkaufte NVL (militärischer Bereich) an Rheinmetall.",
+        "summary": "Lürssen-Gruppe verkaufte NVL (militärischer Bereich) an Rheinmetall; Ankündigung 09/2025, Vollzug laut Rheinmetall-PM 03/2026.",
         "categories": [
           "owner"
         ],
         "product_ids": [],
         "source_ids": [
-          "S-86b532adf4a3d541"
+          "S-86b532adf4a3d541",
+          "S-042b26990fdc2a9d"
         ],
         "claim_ids": [
           "C-STR-15",
           "C-STR-14"
         ],
-        "status": "veräußert",
-        "as_of": "2026-02",
+        "status": "veräußert (Vollzug laut Käufermitteilung)",
+        "as_of": "2026-03-02",
+        "uncertainty": "Vollzug nur durch Rheinmetall-Mitteilung belegt.",
         "historical": true
       },
       {
@@ -6201,7 +6292,7 @@
         "from": "rhm",
         "to": "r4ig",
         "type": "Joint-Venture-Beteiligung",
-        "summary": "49% direkt, JV at-equity.",
+        "summary": "49% direkt und 13% indirekt laut Anteilsbesitzliste, JV at-equity; keine Gesamtquote angegeben.",
         "categories": [
           "jv"
         ],
@@ -6214,16 +6305,16 @@
         ],
         "status": "bestehend",
         "as_of": "2025-12-31",
-        "capital_share": "49%",
+        "capital_share": "49% direkt; 13% indirekt (keine Gesamtquote angegeben)",
         "control": "gemeinschaftliche Führung (JV)",
-        "uncertainty": "Vorvertrag 2022 sah 51% Rheinmetall vor."
+        "uncertainty": "Vorvertrag 2022 nannte eine abweichende Struktur (Rheinmetall AG 51%, 4iG 39%, HM EI 10%)."
       },
       {
         "id": "E45",
         "from": "fourig",
         "to": "r4ig",
-        "type": "Joint-Venture-Partner",
-        "summary": "4iG laut Vorvertrag 2022 mit 39% vorgesehen.",
+        "type": "Joint-Venture-Partner (laut Vorvertrag 2022)",
+        "summary": "Vorvertrag 2022: 4iG 39% neben Rheinmetall AG 51% und HM EI 10%; aktuelle 4iG-Quote nicht belegt.",
         "categories": [
           "jv"
         ],
@@ -6234,10 +6325,10 @@
         "claim_ids": [
           "C-STR-29"
         ],
-        "status": "Vorvertrag 2022",
+        "status": "Vorvertrag 2022; aktueller Stand nicht belegt",
         "as_of": "2022-05",
-        "capital_share": "39% (Vorvertrag)",
-        "uncertainty": "Aktuelle Quote nicht belegt."
+        "capital_share": "39% (Vorvertrag 2022)",
+        "uncertainty": "Abweichung zur Anteilsbesitzliste 2025 (Rheinmetall 49% direkt/13% indirekt)."
       },
       {
         "id": "E46",
@@ -6258,7 +6349,7 @@
         "claim_ids": [
           "C-STR-33"
         ],
-        "status": "umstritten / nicht gegründet",
+        "status": "umstritten",
         "as_of": "2026-07",
         "uncertainty": "Statuskonflikt dokumentiert."
       },
@@ -6524,7 +6615,7 @@
         "from": "rhm",
         "to": "anduril",
         "type": "Strategische Partnerschaft",
-        "summary": "Europäische Varianten Barracuda/Fury, Feststoff-Raketenmotoren.",
+        "summary": "Europäische Varianten Barracuda/Fury (gemeinsame Entwicklung/Produktion); Feststoff-Raketenmotoren nur Sondierung.",
         "categories": [
           "partner"
         ],
@@ -6777,10 +6868,10 @@
       },
       {
         "id": "E71",
-        "from": "psm",
-        "to": "rhm",
-        "type": "Unterauftrag Puma",
-        "summary": "Rheinmetall Landsysteme setzt als Unterauftragnehmer um (Anteil 2 MrdEUR netto lt. H1).",
+        "from": "rhm",
+        "to": "psm",
+        "type": "Unterauftrag Puma (Lieferung an PSM)",
+        "summary": "Rheinmetall Landsysteme setzt als Unterauftragnehmer der PSM um.",
         "categories": [
           "supplier"
         ],
@@ -6788,6 +6879,7 @@
           "prod-puma"
         ],
         "source_ids": [
+          "S-f4730b21412bb02a",
           "S-3dad8b811c925694",
           "S-f55f74045ea5d4f3"
         ],
@@ -6796,14 +6888,14 @@
         ],
         "status": "beauftragt",
         "as_of": "2026-01",
-        "uncertainty": "Anteil je Quelle abweichend."
+        "uncertainty": "Rheinmetall-Anteil je Quelle abweichend: 1,75 MrdEUR netto (Hälfte von 3,5 MrdEUR, GB 2025) / 2,0 MrdEUR netto (H1 2026) / 2,1 MrdEUR brutto (PM 19.12.2025)."
       },
       {
         "id": "E72",
-        "from": "psm",
-        "to": "knds",
-        "type": "Unterauftrag Puma",
-        "summary": "KNDS setzt als Unterauftragnehmer um.",
+        "from": "knds",
+        "to": "psm",
+        "type": "Unterauftrag Puma (Lieferung an PSM)",
+        "summary": "KNDS setzt als Unterauftragnehmer der PSM um.",
         "categories": [
           "supplier"
         ],
@@ -6811,20 +6903,22 @@
           "prod-puma"
         ],
         "source_ids": [
+          "S-f4730b21412bb02a",
           "S-f55f74045ea5d4f3"
         ],
         "claim_ids": [
           "C-MKT-01"
         ],
         "status": "beauftragt",
-        "as_of": "2026-01"
+        "as_of": "2026-01",
+        "uncertainty": "KNDS-Anteil je Quelle: 1,75 MrdEUR netto (Hälfte, GB 2025) / 2,1 MrdEUR brutto (PM)."
       },
       {
         "id": "E73",
         "from": "occar",
         "to": "artec",
         "type": "Auftrag 222 Schakal",
-        "summary": "OCCAR-Auftrag für DE (150) und NL (72), Option 248 weitere.",
+        "summary": "OCCAR-Auftrag für DE (150) und NL (72), Gesamtwert 4,7 MrdEUR brutto lt. Rheinmetall, Option 248 weitere.",
         "categories": [
           "customer"
         ],
@@ -6833,7 +6927,8 @@
         ],
         "source_ids": [
           "S-f4730b21412bb02a",
-          "S-ed8c444ff9f73ed3"
+          "S-ed8c444ff9f73ed3",
+          "S-7a7a5f5d433c1776"
         ],
         "claim_ids": [
           "C-MKT-02"
@@ -7045,7 +7140,7 @@
         "from": "australia",
         "to": "rnm",
         "type": "Vertrag M795-Schmiede",
-        "summary": "72 Mio. AUD für 155-mm-Schmiede Maryborough.",
+        "summary": "72 Mio. („$“ im Original, Währung nicht spezifiziert) für 155-mm-Schmiede Maryborough; Betrieb bis Ende 2028 geplant.",
         "categories": [
           "customer"
         ],
@@ -7058,7 +7153,7 @@
         "claim_ids": [
           "C-MKT-12"
         ],
-        "status": "beauftragt",
+        "status": "beauftragt; Betrieb bis Ende 2028 geplant",
         "as_of": "2026-06-09"
       }
     ],
@@ -7311,6 +7406,15 @@
         "published_date": "2026-06-04",
         "accessed_date": "2026-10-19",
         "source_kind": "Wiedergabe"
+      },
+      {
+        "id": "S-7a7a5f5d433c1776",
+        "name": "Rheinmetall AG",
+        "title": "222 Schakal infantry fighting vehicles for Germany and the Netherlands",
+        "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/10/2025-10-20-infantry-fighting-vehicle-222-jackals-schakal-for-germany-and-the-netherlands",
+        "published_date": "2025-10-20",
+        "accessed_date": "2026-10-19",
+        "source_kind": "Unternehmenspressemitteilung"
       },
       {
         "id": "S-823a7eb256c6141a",
