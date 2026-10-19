@@ -55,15 +55,16 @@
     },
     {
       "id": "T-04",
-      "statement": "Seit 1. Januar 2026 berichtet Rheinmetall in fünf Segmenten: Vehicle Systems, Weapon and Ammunition, Air Defence, Digital Systems und Naval Systems. Air Defence und Digital Systems entstanden zu Jahresbeginn 2026 aus der Aufspaltung des früheren Segments Electronic Solutions; Naval Systems wurde nach der Übernahme von NVL Ende Februar/März 2026 erstmals zum Ende des ersten Quartals 2026 als eigenes Segment einbezogen.",
+      "statement": "Rheinmetall berichtet 2026 in fünf Segmenten: Vehicle Systems, Weapon and Ammunition, Air Defence, Digital Systems und Naval Systems. Air Defence und Digital Systems entstanden zu Jahresbeginn 2026 aus der Aufspaltung des früheren Segments Electronic Solutions. Naval Systems wurde nach dem Erwerb von NVL am 27.02.2026 laut Halbjahresbericht erst ab März 2026 in die Konzernstruktur aufgenommen und im Q1-Bericht erstmals als Segment berichtet.",
       "kind": "Herstellerangabe",
       "source_ids": [
         "S-559e0ac19cabd1d0",
-        "S-5b640196f4e87dad"
+        "S-5b640196f4e87dad",
+        "S-3dad8b811c925694"
       ],
       "evidence": "Aus Pressemitteilungen vom 11.03.2026 und 06.08.2026: neue Segmentstruktur zum 01.01.2026; Naval Systems seit Ende Q1 2026 eigenständig berichtet.",
       "location": "Siehe evidence_items",
-      "uncertainty": "Selbstbeschreibung der Berichtsstruktur; Naval Systems wird erst nach dem Stichtag 1. Quartal ganz in der Konzernrechnung abgebildet (Übernahme zum 01.03.2026).",
+      "uncertainty": "Quellenabweichung: Die Pressemitteilung vom 11.03.2026 nennt alle fünf Segmente als zum 01.01.2026 eingerichtet; laut Halbjahresbericht ist Naval Systems erst ab März 2026 Teil der Konzernstruktur (Erwerb 27.02.2026). Naval-Zahlen umfassen nur die Zeit seit März 2026.",
       "evidence_items": [
         {
           "source_id": "S-559e0ac19cabd1d0",
@@ -76,6 +77,12 @@
           "text": "Auszug: 'Naval Systems ... wurde zum Ende des ersten Quartals 2026 erstmals als eigenständiges Segment in die Berichterstattung einbezogen.'",
           "mode": "Auszug",
           "location": "Abschnitt 'Naval Systems', Absatz 1"
+        },
+        {
+          "source_id": "S-3dad8b811c925694",
+          "text": "Auszug: 'Nach dem am 27. Februar 2026 vollzogenen Erwerb von Naval Vessels Lürssen ... wurde die neue Division Naval Systems ab März 2026 in die Konzernstruktur aufgenommen.'",
+          "mode": "Auszug",
+          "location": "Zwischenlagebericht, Abschnitt zur Konzernstruktur (PDF-Seite 8)"
         }
       ],
       "proposed_depth": "A",
@@ -300,7 +307,7 @@
     },
     {
       "id": "T-20",
-      "statement": "Termine nach dem Stichtag laut Rheinmetall-IR: Veröffentlichung der Q3-2026-Zahlen am 05.11.2026; Capital Markets Day 2026 bei Blohm+Voss (Naval Systems) in Hamburg, im Finanzkalender mit 25.–27.11.2026, auf der CMD-Seite mit 26.–27.11.2026 angegeben.",
+      "statement": "Termine nach dem Stichtag laut Rheinmetall-IR: Veröffentlichung der Q3-2026-Zahlen am 05.11.2026; Capital Markets Day 2026 in Hamburg (laut Finanzkalender bei Blohm+Voss, einem Standort der Division Naval Systems), im Finanzkalender mit 25.–27.11.2026, auf der CMD-Seite mit 26.–27.11.2026 angegeben.",
       "kind": "Herstellerangabe",
       "source_ids": [
         "S-0bd71507c5c59e04",
@@ -431,18 +438,33 @@
     },
     {
       "id": "T-E07",
-      "statement": "Rheinmetall meldete am 02.03.2026 den Vollzug der Übernahme von NVL (Naval Vessels Lürssen, Bremen-Vegesack) einschließlich aller Tochtergesellschaften zum 01.03.2026 nach Erhalt aller kartellrechtlichen Freigaben; der Kaufpreis bleibt vertraulich. Mit NVL entsteht die Division Naval Systems.",
+      "statement": "Die Rheinmetall Naval Systems GmbH erwarb laut Halbjahresfinanzbericht am 27.02.2026 100 % der Anteile und Stimmrechte an der NVL (Naval Vessels Lürssen, Bremen-Vegesack); Rheinmetall meldete den Vollzug am 02.03.2026 nach Erhalt aller kartellrechtlichen Freigaben mit Übergang zum 01.03.2026. Der Kaufpreis bleibt vertraulich.",
       "kind": "Herstellerangabe",
       "source_ids": [
-        "S-042b26990fdc2a9d"
+        "S-042b26990fdc2a9d",
+        "S-3dad8b811c925694"
       ],
-      "evidence": "Auszug: 'Rheinmetall has now been given all antitrust approvals for the acquisition of Naval Vessels Lürssen ... The transition was concluded on 1 March 2026. Both parties have agreed on keeping the purchasing price concealed.'",
-      "location": "Pressemitteilung, Key Facts und Absatz 1",
-      "uncertainty": "Kaufpreis nicht veröffentlicht; Medienangaben zum Preis wurden nicht übernommen.",
+      "evidence": "Pressemitteilung vom 02.03.2026 und Halbjahresfinanzbericht 2026.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Ereignisdatum = Erwerb/Closing 27.02.2026; Übergang 01.03.2026; Meldedatum der Pressemitteilung 02.03.2026. Kaufpreis nicht veröffentlicht; Medienangaben nicht übernommen.",
       "proposed_depth": "A",
       "depth_reason": "Übernahme/Marine",
       "event_status": "vollzogen",
-      "event_date": "2026-03-02"
+      "event_date": "2026-02-27",
+      "evidence_items": [
+        {
+          "source_id": "S-042b26990fdc2a9d",
+          "text": "Auszug: 'Rheinmetall has now been given all antitrust approvals for the acquisition of Naval Vessels Lürssen ... The transition was concluded on 1 March 2026. Both parties have agreed on keeping the purchasing price concealed.'",
+          "mode": "Auszug",
+          "location": "Pressemitteilung, Key Facts und Absatz 1"
+        },
+        {
+          "source_id": "S-3dad8b811c925694",
+          "text": "Auszug: 'Am 27. Februar 2026 hat die Rheinmetall Naval Systems GmbH 100% der Anteile und damit 100% der Stimmrechte an der NVL erworben.'",
+          "mode": "Auszug",
+          "location": "Zwischenlagebericht, Abschnitt 'Erwerb Naval Vessels Lürssen' (PDF-Seite 8)"
+        }
+      ]
     },
     {
       "id": "T-E08",
@@ -558,11 +580,11 @@
       ],
       "evidence": "Auszug/Paraphrase: 'The contract package was awarded on 29 May 2026 by the Directorate General for Armaments and falls under the European Union’s Security Action for Europe (SAFE) programme ... total value of €5.7 billion. The relevant contracts have now been signed ... Deliveries are scheduled to begin 2028 and be completed by 2030.'",
       "location": "Pressemitteilung, Absätze 1–4",
-      "uncertainty": "Es wurde keine unabhängige Zweitquelle (z. B. rumänisches Ministerium) geöffnet; die Aufteilung auf Segmente ergibt sich aus dem Halbjahresbericht (T-05, T-06, T-09).",
+      "uncertainty": "Es wurde keine unabhängige Zweitquelle (z. B. rumänisches Ministerium) geöffnet; die Aufteilung auf Segmente ergibt sich aus dem Halbjahresbericht (T-05, T-06, T-09). Ereignisdatum = Vergabe 29.05.2026; Meldung/Unterzeichnungsmitteilung am 02.06.2026.",
       "proposed_depth": "A",
       "depth_reason": "Größtes internationales Auftragspaket",
       "event_status": "beauftragt (Verträge laut Unternehmen unterzeichnet)",
-      "event_date": "2026-06-02"
+      "event_date": "2026-05-29"
     },
     {
       "id": "T-E16",
@@ -618,14 +640,14 @@
     },
     {
       "id": "T-E18",
-      "statement": "Rheinmetall meldete am 01.07.2026 den Vollzug der Übernahme der Mehrheitsbeteiligung an DOK-ING (Kroatien; unbemannte Fahrzeuge, Minenräumung); das Unternehmen firmiert künftig als 'Rheinmetall Unmanned Vehicles d.o.o.' (Vertragsunterzeichnung im März 2026 in Zagreb); Basis ist die hybride Komodo-Plattform (Nutzlast über 8,5 t); DOK-ING hat laut Unternehmen rund 500 Plattformen an Kunden in über 40 Staaten geliefert.",
+      "statement": "Rheinmetall meldete am 01.07.2026 den Vollzug der Übernahme der Mehrheitsbeteiligung (51 %) an DOK-ING (Kroatien; unbemannte Fahrzeuge, Minenräumung); das Unternehmen firmiert künftig als 'Rheinmetall Unmanned Vehicles d.o.o.' (Vertragsunterzeichnung im März 2026 in Zagreb); Basis ist die hybride Komodo-Plattform (Nutzlast über 8,5 t); DOK-ING hat laut Unternehmen rund 500 Plattformen an Kunden in über 40 Staaten geliefert.",
       "kind": "Herstellerangabe",
       "source_ids": [
         "S-749ebb1bb3cf3947"
       ],
-      "evidence": "Auszug/Paraphrase: 'Closing erfolgt: Rheinmetall übernimmt Mehrheitsbeteiligung an DOK-ING ... firmiert von nun an unter dem Namen „Rheinmetall Unmanned Vehicles d.o.o.“ ... Komodo ... Nutzlast von über 8,5 Tonnen ... rund 500 Plattformen an Kunden in über 40 Staaten ausgeliefert.'",
+      "evidence": "Auszug/Paraphrase: 'Closing erfolgt: Rheinmetall übernimmt Mehrheitsbeteiligung an DOK-ING ... firmiert von nun an unter dem Namen „Rheinmetall Unmanned Vehicles d.o.o.“ ... Komodo ... Nutzlast von über 8,5 Tonnen ... rund 500 Plattformen an Kunden in über 40 Staaten ausgeliefert.' Ergänzung: 'Rheinmetall erwurb 51% des Unterne[hmens]' (Abschnitt 'Über uns').",
       "location": "Pressemitteilung, Keyfacts und Absätze 1–4",
-      "uncertainty": "Genauer Anteil und Kaufpreis in diesem Dokument nicht genannt; die Beschäftigten-/Standortangaben der Unternehmensbeschreibung dieser Mitteilung sind veraltet (siehe T-02).",
+      "uncertainty": "Kaufpreis nicht genannt; die Beschäftigten-/Standortangaben der Unternehmensbeschreibung dieser Mitteilung sind veraltet (siehe T-02).",
       "proposed_depth": "B",
       "depth_reason": "Akquisition unbemannte Systeme",
       "event_status": "vollzogen (laut Unternehmen)",
@@ -640,7 +662,7 @@
       ],
       "evidence": "Auszug: 'Rheinmetall today unveiled the GMF 140, a next-generation 140-metre, 6,000+ tonne guided missile frigate ... Rheinmetall is targeting international markets'.",
       "location": "Pressemitteilung, Absatz 1",
-      "uncertainty": "Designvorstellung ohne belegten Kunden/Auftrag; Hinweis auf einen nordamerikanischen Zielmarkt stammt aus Zweitberichten.",
+      "uncertainty": "Designvorstellung ohne belegten Kunden oder Auftrag; Rheinmetall nennt im Original selbst ein Beschaffungsprojekt in Nordamerika als zunächst angestrebten Markt (Angebotsabsicht, kein Vertrag).",
       "proposed_depth": "B",
       "depth_reason": "Neues Marineprodukt",
       "event_status": "vorgestellt (Entwurf; kein Kunde benannt)",
@@ -708,14 +730,14 @@
     },
     {
       "id": "T-E24",
-      "statement": "Rheinmetall ICEYE Space Solutions gab am 06.10.2026 bekannt, dass die Bundeswehr im Programm SPOCK 1 direkten Zugriff auf mehrere dedizierte SAR-Aufklärungssatelliten erhalten hat und die Serienfertigung der Satelliten am Standort Neuss begonnen hat.",
+      "statement": "Rheinmetall ICEYE Space Solutions gab am 06.10.2026 bekannt, dass die Bundeswehr im Programm SPOCK 1 direkten Zugriff auf mehrere dedizierte SAR-Aufklärungssatelliten erhalten hat und die Fertigung (Produktionsbeginn) der SAR-Satelliten am Standort Neuss begonnen hat.",
       "kind": "Herstellerangabe",
       "source_ids": [
         "S-04cc080af88f833d"
       ],
       "evidence": "Auszug: 'The German armed forces now have direct access to several Synthetic Aperture Radar (SAR) reconnaissance satellites dedicated exclusively to this purpose ... production of SAR satellites has successfully commenced at the Neuss site.'",
       "location": "Pressemitteilung, Key Facts und Absatz 1–2",
-      "uncertainty": "Herstellerangabe; Zahl der Satelliten und Einsatzbereitschaft nicht genannt.",
+      "uncertainty": "Herstellerangabe; 'production has commenced' – Stückzahl, Serienreife und Zahl der verfügbaren Satelliten nicht genannt.",
       "proposed_depth": "B",
       "depth_reason": "Raumfahrt",
       "event_status": "Meilenstein erreicht (laut Unternehmen)",
@@ -783,7 +805,7 @@
     },
     {
       "id": "T-E29",
-      "statement": "Rheinmetall plant laut IR-Seiten den Capital Markets Day 2026 in Hamburg bei Blohm+Voss (Naval Systems); Datum im Finanzkalender 25.–27.11.2026, auf der CMD-Seite 26.–27.11.2026.",
+      "statement": "Rheinmetall plant laut IR-Seiten den Capital Markets Day 2026 in Hamburg (laut Finanzkalender bei Blohm+Voss, einem Standort der Division Naval Systems); Datum im Finanzkalender 25.–27.11.2026, auf der CMD-Seite 26.–27.11.2026.",
       "kind": "Herstellerangabe",
       "source_ids": [
         "S-0bd71507c5c59e04",
@@ -1444,6 +1466,16 @@
       "published_date": "2026-06-26",
       "accessed_date": "2026-10-19",
       "source_kind": "Finanzportal (Zweitbericht)"
+    },
+    {
+      "id": "S-3dad8b811c925694",
+      "name": "Rheinmetall AG",
+      "title": "Halbjahresfinanzbericht 2026 (1.1.–30.6.2026)",
+      "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q2/Rheinmetall-Halbjahresfinanzbericht-2026.pdf",
+      "published_date": "2026-08-06",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Originalbericht",
+      "report_year": 2026
     }
   ],
   "gaps": [
@@ -1460,7 +1492,7 @@
     {
       "id": "G-03",
       "topic": "Quellenzugriff",
-      "description": "Die Bundeswehr-Meldung zur Beendigung von F126 war als komprimierte Antwort nicht lesbar; Geschäftsbericht 2025 (PDF) lieferte HTTP 403. F126 ist daher über Reuters (gCaptain), Breaking Defense und den Rheinmetall-Halbjahresbericht belegt. Auch die Originalmeldung von The Atlantic (CEO-Interview März 2026) sowie die Financial Times wurden nicht geöffnet; Pravda.com.ua lieferte HTTP 403."
+      "description": "Die Bundeswehr-Meldung zur Beendigung von F126 war als komprimierte Antwort nicht lesbar und wurde nicht verwendet; F126 ist über Reuters (gCaptain), Breaking Defense und den Rheinmetall-Halbjahresbericht belegt. Der Geschäftsbericht 2025 lieferte beim eigenen Direktabruf HTTP 403; er liegt im Cache (Abruf durch Cluster) und wurde nur per Stichwortsuche gelesen (Closing NVL 27.02.2026), nicht vollständig. The Atlantic (CEO-Interview März 2026) und Financial Times wurden nicht geöffnet; Pravda.com.ua lieferte HTTP 403."
     },
     {
       "id": "G-04",
@@ -1470,7 +1502,7 @@
     {
       "id": "G-05",
       "topic": "Kennzahlen Stichtag",
-      "description": "Quartalszahlen Q3 2026 liegen nach dem Stichtag (05.11.2026). Letzter Bericht vor Stichtag ist der Halbjahresfinanzbericht 2026 (06.08.2026, Pressemitteilung gelesen; vollständiger PDF-Halbjahresbericht und Geschäftsbericht 2025 nicht geöffnet). Anzahl Beschäftigte: Startseite/CEO nennen rund 34.000 (fortgeführte Aktivitäten); Boilerplate älterer Pressemitteilungen (44.000/180 Standorte) ist veraltet."
+      "description": "Q3-2026-Zahlen liegen nach dem Stichtag (05.11.2026). Letzter Bericht vor Stichtag ist der Halbjahresfinanzbericht 2026 (06.08.2026): Pressemitteilung vollständig gelesen; das Halbjahresfinanzbericht-PDF (im Cache) wurde nur gezielt zu Erwerb NVL und Konzernstruktur gelesen, Kennzahlen-Claims stützen sich auf die Pressemitteilung. Geschäftsbericht 2025 nur Stichwortsuche; Kennzahlen aus der Pressemitteilung vom 11.03.2026. Beschäftigte: Startseite/CEO rund 34.000 (fortgeführte Aktivitäten); Boilerplate älterer Pressemitteilungen (44.000/180 Standorte) veraltet."
     },
     {
       "id": "G-06",
@@ -1499,10 +1531,11 @@
       "search_terms": "Rheinmetall Bilanzvorlage 2025, Geschäftsbericht 2025, Prognose 2026",
       "source_ids": [
         "S-559e0ac19cabd1d0",
-        "S-98082c5c6a5443c4"
+        "S-98082c5c6a5443c4",
+        "S-3dad8b811c925694"
       ],
-      "finding": "GJ 2025 Umsatz 9.935 Mio. EUR, op. Ergebnis 1.841 Mio. EUR, Backlog 63,8 Mrd. EUR; Geschäftsbericht-PDF nicht abrufbar (403), Pressemitteilung gelesen",
-      "status": "geprüft mit Beleg"
+      "finding": "GJ 2025 Umsatz 9.935 Mio. EUR, op. Ergebnis 1.841 Mio. EUR, Backlog 63,8 Mrd. EUR aus Pressemitteilung gelesen; Geschäftsbericht-PDF (Cache, Cluster-Abruf) nur per Stichwortsuche zum NVL-Closing gelesen, nicht vollständig",
+      "status": "geprüft mit Beleg (Pressemitteilung); Berichts-PDFs nur gezielt gelesen"
     },
     {
       "topic": "Letzter Quartals-/Halbjahresbericht vor Stichtag",
@@ -1510,9 +1543,10 @@
       "source_ids": [
         "S-5b640196f4e87dad",
         "S-be9afa65076fd992",
-        "S-0bf21d6b5d52b9d5"
+        "S-0bf21d6b5d52b9d5",
+        "S-3dad8b811c925694"
       ],
-      "finding": "H1 2026 vollständig gelesen (Pressemitteilung); F126-bedingte Prognoseanpassung durch Breaking Defense bestätigt",
+      "finding": "H1 2026 vollständig gelesen (Pressemitteilung); F126-bedingte Prognoseanpassung durch Breaking Defense bestätigt; Halbjahresfinanzbericht-PDF nur gezielt gelesen (Erwerb NVL, Konzernstruktur)",
       "status": "geprüft mit Beleg"
     },
     {
@@ -1618,7 +1652,7 @@
     },
     {
       "id": "cf-segments",
-      "label": "Berichtssegmente seit 01.01.2026",
+      "label": "Berichtssegmente 2026 (Naval Systems ab März 2026)",
       "claim_ids": [
         "T-04"
       ]
@@ -1770,8 +1804,8 @@
     },
     {
       "id": "ev-nvl_close",
-      "label": "NVL-Übernahme vollzogen (Division Naval Systems)",
-      "date": "2026-03-02",
+      "label": "NVL-Übernahme vollzogen (Erwerb 27.02., Übergang 01.03.2026)",
+      "date": "2026-02-27",
       "claim_ids": [
         "T-E07"
       ]
@@ -1836,8 +1870,8 @@
     },
     {
       "id": "ev-romania",
-      "label": "Rumänien-Paket über 5,7 Mrd. EUR (laut Unternehmen)",
-      "date": "2026-06-02",
+      "label": "Rumänien-Paket über 5,7 Mrd. EUR vergeben 29.05., gemeldet 02.06. (laut Unternehmen)",
+      "date": "2026-05-29",
       "claim_ids": [
         "T-E15"
       ]
@@ -1911,7 +1945,7 @@
     },
     {
       "id": "ev-spock",
-      "label": "SPOCK 1: Zugriff auf SAR-Satelliten, Fertigungsstart Neuss (laut Unternehmen)",
+      "label": "SPOCK 1: Zugriff auf SAR-Satelliten, Fertigungsbeginn Neuss (laut Unternehmen)",
       "date": "2026-10-06",
       "claim_ids": [
         "T-E24"

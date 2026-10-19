@@ -71,7 +71,7 @@
    ],
    "evidence": "Paraphrase: Keyfacts: 200.000 Schuss p.a., 1.900 Tonnen Sprengstoff; Absatz 2: bis zu 1.900 Tonnen RDX; Absatz 5: komplette Wertschöpfungskette 'Full Shot' in Unterlüß.",
    "location": "Keyfacts sowie Absätze 2 und 5 (Pressemitteilung 12/02/2024)",
-   "uncertainty": "Planangabe von 2024; die Eröffnungsmitteilung vom 05.09.2025 nennt Geschosse und Raketentriebwerke, aber keine RDX-Fertigung; ein operativer Status der Sprengstofffertigung in Unterlüß ist in den geöffneten Quellen nicht belegt.",
+   "uncertainty": "Planangabe von 2024; die Eröffnungsmitteilung vom 05.09.2025 nennt Geschosse und Raketentriebwerke, aber keine RDX-Fertigung; ein operativer Status der Sprengstofffertigung in Unterlüß ist in den geöffneten Quellen nicht belegt. Die Geschossangabe (200.000/Jahr) ist durch den neueren Planstand von bis zu 350.000/Jahr ab 2027 überholt (P-W10).",
    "evidence_items": [
     {
      "source_id": "S-2572b016501230b4",
@@ -83,22 +83,25 @@
    "proposed_depth": "A",
    "depth_reason": "Vertikalintegration (Plan)",
    "event_date": "2024-02-12",
-   "event_status": "angekündigt"
+   "event_status": "angekündigt",
+   "depends_on": [
+    "P-W10"
+   ]
   },
   {
    "id": "M-RHM-04",
-   "statement": "Rheinmetall und Pirochim Victoria (Romarm-Tochter) gründeten laut Rheinmetall (03.11.2025) das JV Rheinmetall Victoria SA (51/49) für Treibladungspulver und modulare Treibladungen in Victoria (Kreis Brașov): Investition über 500 Mio EUR, erwartete Jahreskapazität rund 300.000 modulare Treibladungen (rund 750 t Pulver) plus 200 t Pulver für lokalen Bedarf, lokale Nitrozellulose-Fertigung, Produktionsbeginn 2028 geplant; CEO Papperger bezeichnet Treibladungspulver als 'strategic bottleneck' und nennt als Ziel 20.000 t Pulverkapazität pro Jahr bis 2030.",
+   "statement": "Rheinmetall und Pirochim Victoria (Romarm-Tochter) unterzeichneten laut Rheinmetall am 03.11.2025 in Bukarest den JV-Vertrag für die im Aufbau befindliche Rheinmetall Victoria SA (51/49; „are establishing“) für Treibladungspulver und modulare Treibladungen in Victoria (Kreis Brașov): Investition über 500 Mio EUR, erwartete Jahreskapazität rund 300.000 modulare Treibladungen (rund 750 t Pulver) plus 200 t Pulver für lokalen Bedarf, lokale Nitrozellulose-Fertigung, Produktionsbeginn 2028 geplant; CEO Papperger bezeichnet Treibladungspulver als 'strategic bottleneck' und nennt als Ziel 20.000 t Pulverkapazität pro Jahr bis 2030.",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-71e68b86d52a8a03"
    ],
-   "evidence": "Paraphrase: JV-Gründung, Investition > €500 Mio., 300.000 modulare Ladungen/~750 t Pulver + 200 t, Nitrozellulose lokal, Produktionsstart 2028; Zitat Papperger zu Engpass und Ziel 20.000 t bis 2030.",
+   "evidence": "Paraphrase: 'are establishing the joint venture Rheinmetall Victoria SA'; 'The joint venture agreement was signed today'; Investition > €500 Mio., 300.000 modulare Ladungen/~750 t Pulver + 200 t, Nitrozellulose lokal, Produktionsstart 2028; Zitat Papperger zu Engpass und Ziel 20.000 t bis 2030.",
    "location": "Key Facts und Absätze 1-5 (Pressemitteilung 03/11/2025)",
-   "uncertainty": "Kapazitäts- und Zeitangaben sind Planwerte; Werk zum Stichtag nicht in Betrieb.",
+   "uncertainty": "Kapazitäts- und Zeitangaben sind Planwerte; Werk zum Stichtag nicht in Betrieb; Gründungs-/Eintragungsstatus des JV nicht geprüft.",
    "evidence_items": [
     {
      "source_id": "S-71e68b86d52a8a03",
-     "text": "Paraphrase: JV-Gründung, Investition > €500 Mio., 300.000 modulare Ladungen/~750 t Pulver + 200 t, Nitrozellulose lokal, Produktionsstart 2028; Zitat Papperger zu Engpass und Ziel 20.000 t bis 2030.",
+     "text": "Paraphrase: 'are establishing the joint venture Rheinmetall Victoria SA'; 'The joint venture agreement was signed today'; Investition > €500 Mio., 300.000 modulare Ladungen/~750 t Pulver + 200 t, Nitrozellulose lokal, Produktionsstart 2028; Zitat Papperger zu Engpass und Ziel 20.000 t bis 2030.",
      "mode": "Paraphrase",
      "location": "Key Facts und Absätze 1-5 (Pressemitteilung 03/11/2025)"
     }
@@ -106,7 +109,7 @@
    "proposed_depth": "A",
    "depth_reason": "Pulver/Vertikalintegration (Ziel)",
    "event_date": "2025-11-03",
-   "event_status": "JV gegründet; Werk geplant",
+   "event_status": "JV-Vertrag unterzeichnet; Werk geplant",
    "depends_on": [
     "C-STR-34"
    ]
@@ -355,15 +358,16 @@
   },
   {
    "id": "M-NAM-08",
-   "statement": "Laut Nammo (Jahresbericht-Meldung 2025, veröffentlicht 30.04.2026) baute der Konzern 2025 Kapazitäten in Norwegen, Schweden, Finnland, Dänemark und den USA aus, schloss Rahmenverträge u. a. für Artilleriemunition und Treibmittel, lieferte weiter an NATO- und Partnerstaaten, erreichte 86,6 % Termintreue und hatte 4.200 Beschäftigte an 27 Standorten in 12 Ländern; Raufoss ist laut Standortseite der größte Entwicklungs- und Fertigungsstandort (mittel- und großkalibrige Munition, Raketenmotoren).",
+   "statement": "Laut Nammo (Jahresbericht-Meldung 2025, veröffentlicht 30.04.2026) baute der Konzern 2025 Kapazitäten in Norwegen, Schweden, Finnland, Dänemark und den USA aus, schloss Rahmenverträge u. a. für Artilleriemunition und Treibmittel, lieferte weiter an NATO- und Partnerstaaten, erreichte 86,6 % Termintreue und hatte 4.200 Beschäftigte an 27 Standorten in 12 Ländern; laut Standortübersicht hat Nammo Fertigungsbetriebe in neun Ländern und Vertriebsbüros in zwei weiteren; Raufoss ist laut Standortseite der größte Entwicklungs- und Fertigungsstandort (mittel- und großkalibrige Munition, Raketenmotoren).",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-ae6533fe6378a611",
-    "S-8b46f20a7a35fb19"
+    "S-8b46f20a7a35fb19",
+    "S-97aa5b20a4a51ea0"
    ],
    "evidence": "Paraphrase: Ausbau in Norwegen, Schweden, Finnland, Dänemark, USA; 'framework agreements for artillery ammunition and propellants'; 86,6 %; 4200 Beschäftigte, 27 Standorte, 12 Länder.",
    "location": "Absätze 1-5",
-   "uncertainty": "Kunden und Volumen der Rahmenverträge nicht genannt.",
+   "uncertainty": "Kunden und Volumen der Rahmenverträge nicht genannt; welche der neun Länder 155-mm-Komponenten fertigen, ist nicht angegeben.",
    "evidence_items": [
     {
      "source_id": "S-ae6533fe6378a611",
@@ -376,6 +380,12 @@
      "text": "Paraphrase: Raufoss: größter Entwicklungs- und Fertigungshub; 'manufacturing medium and large caliber ammunition, as well as rocket motors'.",
      "mode": "Paraphrase",
      "location": "Standortseite Raufoss, Absätze 1-2"
+    },
+    {
+     "source_id": "S-97aa5b20a4a51ea0",
+     "text": "Auszug: 'Nammo today has manufacturing operations in nine countries, and sales offices in a further two.'",
+     "mode": "Auszug",
+     "location": "Locations, Einleitung Absatz 3"
     }
    ],
    "proposed_depth": "A",
@@ -1899,7 +1909,7 @@
    "peer_id": "rheinmetall",
    "criterion_id": "capacity",
    "evidence_status": "teilweise öffentlich belegt",
-   "factual_description": "Ziel: rund 1,5 Mio 155-mm-Geschosse pro Jahr konzernweit bis spätestens 2030 (Projekt Firepower). Werk Unterlüß: bis zu 350.000 pro Jahr ab 2027, 140.000 Lieferungen für 2026 geplant (Planwerte); Maryborough (Australien) M795-Schmiede anfänglich 15.000 Geschosse pro Jahr. Eine konzernweite Ist-Jahreskapazität zum Stichtag ist öffentlich nicht angegeben.",
+   "factual_description": "Ziel: rund 1,5 Mio 155-mm-Geschosse pro Jahr konzernweit bis spätestens 2030 (Projekt Firepower). Werk Unterlüß: bis zu 350.000 pro Jahr ab 2027, 140.000 Lieferungen für 2026 geplant (Planwerte); Maryborough (Australien): beauftragte M795-Schmiede mit anfänglich 15.000 Geschossen pro Jahr (Medienangabe, nicht in Betrieb belegt). Eine konzernweite Ist-Jahreskapazität zum Stichtag ist öffentlich nicht angegeben.",
    "claim_ids": [
     "P-W13",
     "P-W10",
@@ -1938,7 +1948,7 @@
    "peer_id": "rheinmetall",
    "criterion_id": "industrial",
    "evidence_status": "öffentlich belegt",
-   "factual_description": "Operative 155-mm-Fertigung bzw. Kernkomponenten belegt in Deutschland (Unterlüß, seit 2025), Spanien (Rheinmetall Expal; Ukraine-Auftrag 2026), Südafrika (Rheinmetall Denel Munition) und Australien (Rheinmetall NIOA Munitions, Maryborough). Neue Werke: Baisogala (Litauen) im Bau, Lettland per MoU; laut Calibre Defence (08/2026) sind beide verzögert.",
+   "factual_description": "Operative 155-mm-Fertigung bzw. Kernkomponenten belegt in Deutschland (Unterlüß, seit 2025), Spanien (Rheinmetall Expal; Ukraine-Auftrag 2026) und Südafrika (Rheinmetall Denel Munition). Australien: Rheinmetall NIOA Munitions betreibt laut Unternehmensseite in Maryborough eine Munitionsfertigung ohne Angabe des Produktumfangs; eine 155-mm-M795-Schmiede dort ist laut Australian Defence Magazine beauftragt (Status beauftragt, kein operativer 155-mm-Betrieb belegt). Neue Werke: Baisogala (Litauen) im Bau, Lettland per MoU; laut Calibre Defence (08/2026) sind beide verzögert.",
    "claim_ids": [
     "P-W10",
     "P-R40",
@@ -2255,7 +2265,7 @@
    "peer_id": "gdots",
    "criterion_id": "capacity",
    "evidence_status": "nicht öffentlich belegt",
-   "factual_description": "Keine GD-OTS-spezifische Ist-Kapazität öffentlich angegeben. Das Werk Mesquite sollte 30.000 Geschosskörper pro Monat bis 10/2025 liefern, lieferte laut DoD-IG-Bericht (via Task & Purpose) bis 03/2026 keine; Scranton/Wilkes-Barre wurden mit einem 217-Mio-USD-Task-Order ausgebaut (Hochlauf bis Ende FY2025).",
+   "factual_description": "Keine GD-OTS-spezifische Ist-Kapazität öffentlich angegeben. Mesquite (von GD-OTS 05/2024 eröffnet): Laut Task & Purpose sollte eine Anlage, deren Beschreibung im DoD-IG-Bericht das Medium GD-OTS zuordnet (der Bericht nennt keinen Auftragnehmer), bis 10/2025 30.000 Geschosskörper pro Monat liefern und lieferte bis 03/2026 keine; die Zuordnung ist ein Medienabgleich, keine GD-OTS- oder Behördenangabe. Scranton/Wilkes-Barre wurden mit einem 217-Mio-USD-Task-Order ausgebaut (Hochlauf bis Ende FY2025).",
    "claim_ids": [
     "M-GDO-05",
     "M-GDO-03"
@@ -2278,7 +2288,7 @@
    "peer_id": "gdots",
    "criterion_id": "industrial",
    "evidence_status": "öffentlich belegt",
-   "factual_description": "Operative Fertigung in den USA (Scranton Army Ammunition Plant als Betreiber, Wilkes-Barre) und Kanada (Valleyfield, Treibmittel); das neue Werk Mesquite (eröffnet 05/2024) produziert laut IG-Bericht keine abnahmefähigen M795-Teile, Arbeitsstopp seit 08/2025.",
+   "factual_description": "Operative Fertigung in den USA (Scranton Army Ammunition Plant als Betreiber, Wilkes-Barre) und Kanada (Valleyfield, Treibmittel); das Werk Mesquite wurde laut GD-OTS im Mai 2024 eröffnet; zu Produktionsproblemen und Arbeitsstopp ab 08/2025 liegt nur ein Medienbericht vor, der einen IG-Bericht ohne Auftragnehmernennung GD-OTS zuordnet (Unsicherheit).",
    "claim_ids": [
     "M-GDO-01",
     "M-GDO-03",

@@ -11,27 +11,34 @@
   "Die meisten Angaben stammen aus Rheinmetall-Pressemitteilungen, Divisions-/Gesellschaftsseiten und der Investorenpräsentation (September 2026) und sind Herstellerangaben; unabhängige Bestätigung liegt nur dort vor, wo Medien- oder Behördenquellen ausdrücklich genannt sind.",
   "Auftrags-, Test-, Liefer- und Betriebsstatus sind als getrennte Tatsachen mit Datum angegeben; Kapazitäts- und Lieferziele sind keine erreichten Meilensteine.",
   "Undatierte Gesellschaftsseiten beschreiben den Zustand zum Abruf (2026-10-19); published_date ist dort null.",
-  "Beteiligungsquoten allein belegen keine Kontrolle bei Joint Ventures; JV-Kontrolle ist daher durchgehend 'unknown'.",
+  "Beteiligungsquoten allein belegen keine Kontrolle bei Joint Ventures; JV-Kontrolle ist nur dort 'sole', wo Vollkonsolidierung im Konzernabschluss durch Cluster-Claims belegt ist (RBSL, Rheinmetall ICEYE, Rheinmetall Hungary, Ukraine-JV, Rheinmetall Denel Munition), sonst 'unknown'.",
   "Keine Reifegrad-, Stärken-/Schwächen- oder Wettbewerbsbewertung; Beleglücken beschreiben Rechercheabdeckung, nicht fehlende Leistungsfähigkeit."
  ],
  "document_scope": "Geöffnet und gelesen wurden Rheinmetall-Pressemitteilungen und Divisions-/Gesellschaftsseiten sowie die Investorenpräsentation; Gegenrecherche über dpa-AFX/Capital (Börse Online), Defence Blog, Breaking Defense, Militarnyi und CRS. Rheinmetall-Seiten wurden über scripts/source-cache.py in den Dokumentcache übernommen. Seite 3 (Markt-Deep-Dive) entfällt laut Nutzer; keine regions- oder topics-Tabellen.",
  "claims": [
   {
    "id": "P-S01",
-   "statement": "Seit dem 1. Januar 2026 berichtet Rheinmetall in den Segmenten Vehicle Systems, Weapon and Ammunition, Air Defence, Digital Systems und Naval Systems; Air Defence und Digital Systems entstanden zu Beginn des Geschäftsjahres 2026 aus der Aufteilung des früheren Segments Electronic Solutions (laut Rheinmetall).",
+   "statement": "Rheinmetall berichtet 2026 in den Segmenten Vehicle Systems, Weapon and Ammunition, Air Defence, Digital Systems und Naval Systems; Air Defence und Digital Systems entstanden zu Beginn des Geschäftsjahres 2026 aus der Aufteilung des früheren Segments Electronic Solutions. Naval Systems nennt die Mitteilung vom 11.03.2026 unter den zum 1.1.2026 neu gebildeten Segmenten, der Halbjahresbericht führt es jedoch erst seit Ende des ersten Quartals 2026 (nach der NVL-Übernahme Ende Februar/März 2026) als eigenständiges Segment in der Berichterstattung (laut Rheinmetall).",
    "kind": "Fakt",
    "source_ids": [
-    "S-559e0ac19cabd1d0"
+    "S-559e0ac19cabd1d0",
+    "S-5f102cfea2da2738"
    ],
-   "evidence": "Paraphrase: Gruppenstruktur zum 1.1.2026 neu aufgestellt; neben Vehicle Systems und Weapon and Ammunition neue Segmente Air Defence, Digital Systems, Naval Systems; Fußnote: Digital Systems und Air Defence aus Aufspaltung der früheren Division Electronic Solutions.",
-   "location": "Abschnitt 'Rheinmetall Group guidance for 2026' inkl. Fußnote [1]",
-   "uncertainty": "",
+   "evidence": "Paraphrase: Gruppenstruktur zum 1.1.2026 neu aufgestellt; neben Vehicle Systems und Weapon and Ammunition neue Segmente Air Defence, Digital Systems, Naval Systems; Fußnote: Digital Systems und Air Defence aus Aufspaltung der früheren Division Electronic Solutions. | Paraphrase: Naval Systems wurde zum Ende des ersten Quartals 2026 erstmals als eigenständiges Segment in die Berichterstattung einbezogen; Umsatz seit der Übernahme Ende Februar 2026.",
+   "location": "Abschnitt 'Rheinmetall Group guidance for 2026' inkl. Fußnote [1] | Seite 4, Abschnitt 'Naval Systems'",
+   "uncertainty": "Quellkonflikt zum Beginn von Naval Systems als Segment: Mitteilung vom 11.03.2026 (Segmente zum 1.1.2026 neu aufgestellt) vs. Halbjahresbericht (erstmals Ende Q1 2026, nach Übernahme).",
    "evidence_items": [
     {
      "source_id": "S-559e0ac19cabd1d0",
      "text": "Paraphrase: Gruppenstruktur zum 1.1.2026 neu aufgestellt; neben Vehicle Systems und Weapon and Ammunition neue Segmente Air Defence, Digital Systems, Naval Systems; Fußnote: Digital Systems und Air Defence aus Aufspaltung der früheren Division Electronic Solutions.",
      "mode": "Paraphrase",
      "location": "Abschnitt 'Rheinmetall Group guidance for 2026' inkl. Fußnote [1]"
+    },
+    {
+     "source_id": "S-5f102cfea2da2738",
+     "text": "Paraphrase: Naval Systems wurde zum Ende des ersten Quartals 2026 erstmals als eigenständiges Segment in die Berichterstattung einbezogen; Umsatz seit der Übernahme Ende Februar 2026.",
+     "mode": "Paraphrase",
+     "location": "Seite 4, Abschnitt 'Naval Systems'"
     }
    ],
    "proposed_depth": "A",
@@ -440,7 +447,7 @@
    ],
    "evidence": "Paraphrase: Übergabe der ersten vier Lynx KF-41 in Montelibretti; Erstvertrag über 21 A2CS-Combat-Fahrzeuge; Lance-Turm zunächst, später Hitfist.",
    "location": "Absätze 1 und 5-6",
-   "uncertainty": "",
+   "uncertainty": "Quelle nennt 21 Fahrzeuge im Erstvertrag, aber nur 4 + 16 = 20 Fahrzeuge mit zugeordneter Turmkonfiguration; Differenz nicht erklärt.",
    "evidence_items": [
     {
      "source_id": "S-d5770c619bc98981",
@@ -727,18 +734,18 @@
   },
   {
    "id": "P-V71",
-   "statement": "Rheinmetall Canada zeigte zur CANSEC 2026 (27.-28.05.2026) die Mission-Master-Familie, darunter erstmals in Kanada das amphibische Modell SP2 und die Arctic-Edition XT2; die PATH-Autonomie wurde laut Rheinmetall in Kanada entwickelt.",
+   "statement": "Rheinmetall Canada zeigte zur CANSEC 2026 (27.-28.05.2026) die Mission-Master-Familie, darunter erstmals in Kanada das amphibische Modell SP2 und die Arctic-Edition XT2; Rheinmetall beschreibt die Mission-Master-Familie als Teil kanadisch entwickelter Lösungen, deren Export sie vorangetrieben habe; die Navigation steuert die Software PATH.",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-81a27e8c4bbffb44"
    ],
-   "evidence": "Paraphrase: Mission Master SP2 mit amphibischen Fähigkeiten und XT2 Arctic Edition erstmals in Kanada ausgestellt; PATH steuert die Mission-Master-Fahrzeuge.",
+   "evidence": "Paraphrase: Mission Master SP2 mit amphibischen Fähigkeiten und XT2 Arctic Edition erstmals in Kanada ausgestellt; Rheinmetall PATH steuert die Mission-Master-Fahrzeuge; Familie als Treiber von Exporten kanadisch entwickelter Lösungen beschrieben.",
    "location": "Seite 1, Absätze 1-3",
    "uncertainty": "Messeankündigung ohne Beschaffungsangabe.",
    "evidence_items": [
     {
      "source_id": "S-81a27e8c4bbffb44",
-     "text": "Paraphrase: Mission Master SP2 mit amphibischen Fähigkeiten und XT2 Arctic Edition erstmals in Kanada ausgestellt; PATH steuert die Mission-Master-Fahrzeuge.",
+     "text": "Paraphrase: Mission Master SP2 mit amphibischen Fähigkeiten und XT2 Arctic Edition erstmals in Kanada ausgestellt; Rheinmetall PATH steuert die Mission-Master-Fahrzeuge; Familie als Treiber von Exporten kanadisch entwickelter Lösungen beschrieben.",
      "mode": "Paraphrase",
      "location": "Seite 1, Absätze 1-3"
     }
@@ -1591,7 +1598,7 @@
    "proposed_depth": "A",
    "depth_reason": "SPOCK 1 Betriebsstatus",
    "event_date": "2026-10-06",
-   "event_status": "im Betrieb (Zugriff) / Serienproduktion begonnen"
+   "event_status": "im Betrieb (Zugriff) / Produktion begonnen"
   },
   {
    "id": "P-D31",
@@ -1900,7 +1907,7 @@
    ],
    "evidence": "Paraphrase: Serienproduktion des K3 Scout bei Blohm+Voss gestartet; JV Rheinmetall Kraken GmbH; Kapazität zunächst rund 200/Jahr, bis zu 1.000 skalierbar.",
    "location": "Key Facts und Absätze 1-3",
-   "uncertainty": "Kundenaufträge in der geöffneten Mitteilung nicht genannt.",
+   "uncertainty": "Kundenaufträge in der geöffneten Mitteilung nicht genannt; Gründungs-/Vertragsdatum des JV laut Cluster-Claim C-STR-13 widersprüchlich (JV-Vertrag März 2026 laut Halbjahresbericht vs. Gründung 2025 laut Naval News).",
    "evidence_items": [
     {
      "source_id": "S-2c823bb34ce62b61",
@@ -2354,7 +2361,7 @@
    ],
    "evidence": "Paraphrase: Vereinbarung über JV-Gründung; Anteile 51/49; ca. 1 Mrd EUR; Standort im Raum Sopot; Produktionsbeginn Geschosshüllen 2027, energetische Materialien ab 2028.",
    "location": "Keyfacts und Absätze 1-3",
-   "uncertainty": "Zum Stichtag nicht bestätigt, ob das JV gegründet wurde; berichtete Überprüfung durch die bulgarische Regierung (Juli 2026) konnte nicht aus geöffneter Quelle belegt werden.",
+   "uncertainty": "Status umstritten: Laut Cluster-Claim C-STR-33 (bne IntelliNews) erklärte der bulgarische Wirtschaftsminister im Juli 2026, es gebe keinen Gründungsvertrag und kein JV, die Regierung wolle neu verhandeln; Gründung der Gesellschaft nicht belegt.",
    "evidence_items": [
     {
      "source_id": "S-b51615fe3bffe105",
@@ -2366,7 +2373,7 @@
    "proposed_depth": "A",
    "depth_reason": "Bulgarien JV-Plan",
    "event_date": "2025-10-28",
-   "event_status": "angekündigt"
+   "event_status": "angekündigt (Status umstritten)"
   },
   {
    "id": "P-R90",
@@ -2479,31 +2486,38 @@
   },
   {
    "id": "P-R100",
-   "statement": "American Rheinmetall (Hauptsitz Auburn Hills, Michigan) betreibt laut Unternehmensseite Standorte in Michigan (u. a. Lansing, Lapeer, Plymouth), Ohio (St. Marys) und Maine (Biddeford); das Unternehmen übernahm Ende 2024 Loc Performance Products (Ketten-/Mechaniksysteme, Fertigungsstrukturen) und beschäftigt laut Rheinmetall (AUSA 2026) über 1.500 Mitarbeitende in Arkansas, Maine, Michigan, Ohio, Texas und Virginia.",
+   "statement": "In den USA tritt Rheinmetall mit zwei Gesellschaften auf: American Rheinmetall Defense, Inc. ist laut Konzernliste (International Subsidiaries – Hubs) der US-Hub, mit Sitz in Vienna (Virginia) laut Hinweiskarte der AUSA-Mitteilung; American Rheinmetall (American Rheinmetall Vehicles LLC, dba) hat laut eigener Unternehmensseite den Hauptsitz in Auburn Hills (Michigan) und nennt Kontaktstandorte in Biddeford (Maine), Lansing, Lapeer und Plymouth (Michigan) sowie St. Marys (Ohio); Loc Performance Products (Michigan/Ohio) wurde Ende 2024 übernommen. Rheinmetall gibt zum AUSA 2026 an, in den USA über 1.500 Mitarbeitende in Arkansas, Maine, Michigan, Ohio, Texas und Virginia zu beschäftigen.",
    "kind": "Fakt",
    "source_ids": [
     "S-495b6b686aece696",
-    "S-6797a3b3e68d3be1"
+    "S-6797a3b3e68d3be1",
+    "S-d195b923c24e0507"
    ],
-   "evidence": "Paraphrase: Headquarters Auburn Hills; Kontaktstandorte Biddeford, Lansing, Lapeer, Plymouth, St. Marys; Übernahme Loc Performance Products Ende 2024; Tier-1-/OEM-Rolle. | Paraphrase: Domestic footprint spanning Arkansas, Maine, Michigan, Ohio, Texas and Virginia; workforce of over 1,500.",
-   "location": "Kontaktangaben und Abschnitt 'Strategic U.S. Growth' | Key Facts und Absatz 2",
-   "uncertainty": "Funktionen der einzelnen Michigan-/Ohio-Standorte nicht aufgeschlüsselt.",
+   "evidence": "Paraphrase: Headquarters Auburn Hills; Kontaktstandorte Biddeford, Lansing, Lapeer, Plymouth, St. Marys; DBA-Fußnote zu American Rheinmetall Vehicles LLC; Übernahme Loc Performance Products Ende 2024. | Paraphrase: Domestic footprint spanning Arkansas, Maine, Michigan, Ohio, Texas and Virginia; workforce of over 1,500 U.S. employees; Hinweiskarte: American Rheinmetall Defense, Inc., headquartered in Vienna, Virginia, is the U.S. hub. | Paraphrase: American Rheinmetall Defense, Inc. unter 'International Subsidiaries – Hubs'; American Rheinmetall und American Rheinmetall Vehicles unter Subsidiaries of the Vehicle Systems Division.",
+   "location": "Kontaktangaben, Abschnitte 'About us' und 'Strategic U.S. Growth' | Key Facts, Absatz 2 und Karte 'American Rheinmetall Defense, Inc.' | Abschnitte 'Subsidiaries of the Vehicle Systems Division' und 'International Subsidiaries – Hubs'",
+   "uncertainty": "Die Beschäftigtenzahl und die sechs Bundesstaaten gelten für 'American Rheinmetall' insgesamt, nicht je Gesellschaft; Funktionen der Michigan-/Ohio-Standorte nicht aufgeschlüsselt.",
    "evidence_items": [
     {
      "source_id": "S-495b6b686aece696",
-     "text": "Paraphrase: Headquarters Auburn Hills; Kontaktstandorte Biddeford, Lansing, Lapeer, Plymouth, St. Marys; Übernahme Loc Performance Products Ende 2024; Tier-1-/OEM-Rolle.",
+     "text": "Paraphrase: Headquarters Auburn Hills; Kontaktstandorte Biddeford, Lansing, Lapeer, Plymouth, St. Marys; DBA-Fußnote zu American Rheinmetall Vehicles LLC; Übernahme Loc Performance Products Ende 2024.",
      "mode": "Paraphrase",
-     "location": "Kontaktangaben und Abschnitt 'Strategic U.S. Growth'"
+     "location": "Kontaktangaben, Abschnitte 'About us' und 'Strategic U.S. Growth'"
     },
     {
      "source_id": "S-6797a3b3e68d3be1",
-     "text": "Paraphrase: Domestic footprint spanning Arkansas, Maine, Michigan, Ohio, Texas and Virginia; workforce of over 1,500.",
+     "text": "Paraphrase: Domestic footprint spanning Arkansas, Maine, Michigan, Ohio, Texas and Virginia; workforce of over 1,500 U.S. employees; Hinweiskarte: American Rheinmetall Defense, Inc., headquartered in Vienna, Virginia, is the U.S. hub.",
      "mode": "Paraphrase",
-     "location": "Key Facts und Absatz 2"
+     "location": "Key Facts, Absatz 2 und Karte 'American Rheinmetall Defense, Inc.'"
+    },
+    {
+     "source_id": "S-d195b923c24e0507",
+     "text": "Paraphrase: American Rheinmetall Defense, Inc. unter 'International Subsidiaries – Hubs'; American Rheinmetall und American Rheinmetall Vehicles unter Subsidiaries of the Vehicle Systems Division.",
+     "mode": "Paraphrase",
+     "location": "Abschnitte 'Subsidiaries of the Vehicle Systems Division' und 'International Subsidiaries – Hubs'"
     }
    ],
    "proposed_depth": "A",
-   "depth_reason": "USA Standorte"
+   "depth_reason": "USA Standorte und Rechtsträger"
   },
   {
    "id": "P-R110",
@@ -3296,6 +3310,15 @@
    "source_kind": "Unternehmenspressemitteilung"
   },
   {
+   "id": "S-d195b923c24e0507",
+   "name": "Rheinmetall AG",
+   "title": "Subsidiaries & JVs",
+   "url": "https://www.rheinmetall.com/en/company/subsidiaries",
+   "published_date": null,
+   "accessed_date": "2026-10-19",
+   "source_kind": "Unternehmensseite"
+  },
+  {
    "id": "S-d32c73540389046f",
    "name": "BÖRSE ONLINE (dpa-AFX)",
    "title": "'Capital': Ausrüstung für das Heer kommt später",
@@ -3387,7 +3410,7 @@
   {
    "id": "G-P02",
    "topic": "Bulgarien VMZ-JV",
-   "description": "Berichtete Überprüfung der Vereinbarung durch die bulgarische Regierung (Juli 2026) nicht lesbar; aktueller Status des JV unbekannt.",
+   "description": "Status umstritten: Rheinmetall meldete am 28.10.2025 die Vertragsunterzeichnung; laut Cluster-Claim C-STR-33 (bne IntelliNews) bestreitet der bulgarische Wirtschaftsminister im Juli 2026 einen Gründungsvertrag. Die Capital.bg-Quelle war nicht abrufbar (HTTP 403).",
    "impact": "regionale Abdeckung Bulgarien"
   },
   {
@@ -3399,7 +3422,7 @@
   {
    "id": "G-P04",
    "topic": "Kontrollnachweise JV",
-   "description": "Für LRMV (Italien), RBSL (UK), Rheinmetall Hungary Zrt., Rheinmetall Denel Munition, Rheinmetall Ukrainian Defense Industry, Rheinmetall NIOA Munitions, Rheinmetall Defence Lietuva und Rheinmetall ICEYE Space Solutions wurden keine Steuerungs-/Entscheidungsrechte belegt; Cluster-Fakten sind bei Bedarf zu ergänzen.",
+   "description": "Als beherrscht (sole) eingestuft über Vollkonsolidierung (Cluster-Claims C-STR-06, -11, -19, -20, -22): RBSL, Rheinmetall ICEYE Space Solutions, Rheinmetall Hungary, Ukraine-JV, Rheinmetall Denel Munition. Ohne Kontrollaussage (unknown): LRMV (at-equity 50:50), Rheinmetall NIOA Munitions, Rheinmetall Defence Lietuva, Rheinmetall Kraken, Mangalia-Erwerb, geplante JV in Bulgarien und Lettland. Steuerungs-/Entscheidungsrechte sind in keinem Fall ausdrücklich belegt.",
    "impact": "Einstufung der JV-Aktivitäten"
   },
   {
@@ -3614,7 +3637,7 @@
     "S-cd90025f003c456d",
     "S-7f0bea0216cf289e"
    ],
-   "finding": "Konzerngesellschaften, Werke und JV mit Datum/Status belegt; Kontrollnachweise für JV (LRMV, RBSL, Rheinmetall Hungary, Baisogala) fehlen; Várpalota (Rheinmetall Hungary Munitions), Österreich (RMMV Österreich), Kassel/Kiel/Bremen/München nur Gesellschaftsliste/Investorenkarte.",
+   "finding": "Konzerngesellschaften, Werke und JV mit Datum/Status belegt; Kontrollaussagen (nicht nur Quoten) fehlen für LRMV und Baisogala, für RBSL/Hungary nur über Vollkonsolidierung (Cluster-Claims); Várpalota (Rheinmetall Hungary Munitions), Österreich (RMMV Österreich), Kassel/Kiel/Bremen/München nur Gesellschaftsliste/Investorenkarte.",
    "status": "geprüft mit Beleg (teilweise Beleglücken)"
   },
   {
@@ -3650,8 +3673,8 @@
    "source_ids": [
     "S-b51615fe3bffe105"
    ],
-   "finding": "Ankündigung vom 28.10.2025 gelesen; Suchtreffer zu einer Überprüfung der Vereinbarung durch die bulgarische Regierung (Capital.bg, 17.07.2026) war nicht abrufbar (HTTP 403).",
-   "status": "nicht zugänglich"
+   "finding": "Ankündigung vom 28.10.2025 gelesen; die Capital.bg-Meldung vom 17.07.2026 war nicht abrufbar (HTTP 403); der widersprüchliche Status (bne IntelliNews) liegt nur über Cluster-Claim C-STR-33 vor.",
+   "status": "geprüft mit Beleg (Gegenstatus nur über Cluster-Claim)"
   },
   {
    "topic": "Nachrichten- und Fachmedien-Gegenrecherche",
@@ -3886,7 +3909,7 @@
    "id": "cuas",
    "label": "Counter-UAS-Konzepte (AERIE, containerisiert)",
    "short_label": "C-UAS",
-   "domain": "Luftverteidigung (Air Defence)",
+   "domain": "Luftverteidigung (segmentübergreifend)",
    "claim_ids": [
     "P-A50"
    ]
@@ -3909,7 +3932,8 @@
    "domain": "Digital, Drohnen & Raumfahrt (Digital Systems)",
    "claim_ids": [
     "P-D11",
-    "P-D12"
+    "P-D12",
+    "P-D13"
    ]
   },
   {
@@ -3965,7 +3989,7 @@
    "id": "airsat",
    "label": "Satelliten zur Luftraumüberwachung (Rheinmetall Italia / Argotec)",
    "short_label": "Luftraum-Satellit",
-   "domain": "Digital, Drohnen & Raumfahrt (Digital Systems)",
+   "domain": "Raumfahrt (segmentübergreifend)",
    "claim_ids": [
     "P-D31"
    ]
@@ -4390,7 +4414,7 @@
      "ownership_note": "Mitteilung nennt 'Rheinmetall's new gun production facility in Telford' ohne Rechtsträger; Betriebsstatus 'schrittweise Inbetriebnahme' daher konservativ als geplant geführt."
     }
    ],
-   "coverage_note": "Beteiligungs-/Kontrollverhältnis im RBSL-JV in geöffneten Quellen nicht belegt; weitere UK-Gesellschaften (Rheinmetall Defence UK Ltd, Rheinmetall Electronics UK Ltd, Rheinmetall Weapon Munitions UK) wurden nur über die Gesellschaftsliste gefunden; Seite von Rheinmetall Defence UK war nicht abrufbar."
+   "coverage_note": "RBSL: 55 % Rheinmetall, vollkonsolidiert (Cluster-Claim C-STR-06), daher als beherrscht (sole) eingestuft; weitere UK-Gesellschaften (Rheinmetall Defence UK Ltd, Rheinmetall Electronics UK Ltd, Rheinmetall Weapon Munitions UK) wurden nur über die Gesellschaftsliste gefunden; Seite von Rheinmetall Defence UK war nicht abrufbar."
   },
   {
    "id": "nl",
@@ -4751,7 +4775,7 @@
      "ownership_note": "Beherrschtes JV (51/49 mit ungarischer Regierung, vollkonsolidiert)."
     }
    ],
-   "coverage_note": "Hälftige Kontrolle nicht belegt (51/49 Beteiligung genannt); Munitionswerk Várpalota nur als Gesellschaftsname/Investorenfolie, nicht mit eigener Quelle belegt."
+   "coverage_note": "Rheinmetall Hungary Zrt.: 51 %, vollkonsolidiert (Cluster-Claim C-STR-19), daher als beherrscht (sole) eingestuft; Munitionswerk Várpalota nur als Gesellschaftsname/Investorenfolie, nicht mit eigener Quelle belegt."
   },
   {
    "id": "ro",
@@ -4826,20 +4850,19 @@
     },
     {
      "id": "ro-mangalia",
-     "actor": "Rheinmetall und MSC (Werft Mangalia)",
+     "actor": "Rheinmetall (gemeinsam mit MSC, Werft Mangalia)",
      "country": "Rumänien",
      "location": "Mangalia",
      "product_scope": "Marineschiffbau (vier rumänische Schiffe), Dual-Use",
-     "description": "Angekündigte Übernahme der Werft Mangalia (rund 138 Mio EUR, Abschluss in wenigen Wochen erwartet)",
-     "kind": "production",
-     "operator": "jv",
+     "description": "Angekündigter gemeinsamer Erwerb der Werft Mangalia (rund 138 Mio EUR, Abschluss in wenigen Wochen erwartet); noch keine operative Einstufung",
+     "kind": "access",
+     "operator": "own",
      "status": "announced",
      "status_date": "2026-10-19",
      "claim_ids": [
       "P-N31",
       "C-STR-37"
-     ],
-     "control": "unknown"
+     ]
     },
     {
      "id": "ro-safe",
@@ -4915,7 +4938,7 @@
      "control": "unknown"
     }
    ],
-   "coverage_note": "Berichtete Überprüfung des VMZ-Vorhabens durch die bulgarische Regierung (Juli 2026) konnte nicht aus einer geöffneten Quelle belegt werden (Zugriff auf Capital.bg gesperrt); Status des JV zum Stichtag offen."
+   "coverage_note": "VMZ-JV umstritten: Rheinmetall meldete 28.10.2025 die Vertragsunterzeichnung, laut Cluster-Claim C-STR-33 (bne IntelliNews) bestreitet der bulgarische Wirtschaftsminister im Juli 2026 einen Gründungsvertrag; keine Gesellschaft in der Anteilsbesitzliste belegt. Naval Technology Bulgaria ist als Tochter belegt."
   },
   {
    "id": "lt",
@@ -5184,7 +5207,7 @@
      ]
     }
    ],
-   "coverage_note": "JV-Produktion und -Entwicklung in der Ukraine nur als Planung beschrieben; Kontrollrechte im JV nicht belegt."
+   "coverage_note": "JV-Produktion und -Entwicklung in der Ukraine nur als Planung beschrieben; JV 51 % vollkonsolidiert (Cluster-Claim C-STR-20), daher Wartung als beherrscht (sole) eingestuft."
   },
   {
    "id": "us",
@@ -5208,11 +5231,11 @@
    "activities": [
     {
      "id": "us-hq",
-     "actor": "American Rheinmetall",
+     "actor": "American Rheinmetall (American Rheinmetall Vehicles LLC, dba)",
      "country": "USA",
      "location": "Auburn Hills, Michigan",
      "product_scope": "US-Landsysteme",
-     "description": "Hauptsitz von American Rheinmetall",
+     "description": "Hauptsitz von American Rheinmetall laut Unternehmensseite",
      "kind": "office",
      "operator": "own",
      "status": "operational",
@@ -5221,7 +5244,24 @@
       "P-R100"
      ],
      "site_id": "us-auburn-hills",
-     "ownership_note": "American Rheinmetall (American Rheinmetall Vehicles LLC, DBA) ist laut Konzernliste Tochter der Division Vehicle Systems."
+     "ownership_note": "Unternehmensseite: American Rheinmetall* mit Hauptsitz Auburn Hills; Fußnote: American Rheinmetall Vehicles LLC ist als DBA registriert; Gesellschaft steht in der Konzernliste der Division Vehicle Systems."
+    },
+    {
+     "id": "us-hub",
+     "actor": "American Rheinmetall Defense, Inc.",
+     "country": "USA",
+     "location": "Vienna, Virginia",
+     "product_scope": "US-Hub des Konzerns",
+     "description": "US-Hub mit Sitz in Vienna, Virginia",
+     "kind": "office",
+     "operator": "own",
+     "status": "operational",
+     "status_date": null,
+     "claim_ids": [
+      "P-R100"
+     ],
+     "site_id": "us-vienna",
+     "ownership_note": "American Rheinmetall Defense, Inc. steht in der Konzernliste unter International Subsidiaries – Hubs; Sitz laut Hinweiskarte in der AUSA-Mitteilung."
     },
     {
      "id": "us-xm30",
@@ -5264,7 +5304,7 @@
      "id": "us-loc",
      "actor": "American Rheinmetall (ehem. Loc Performance Products)",
      "country": "USA",
-     "location": "Michigan/Ohio (Lansing, Lapeer, Plymouth, St. Marys; Einzelfunktionen nicht aufgeschlüsselt)",
+     "location": "Michigan/Ohio (Einzelstandorte nicht benannt)",
      "product_scope": "Kettensysteme, Mechaniksysteme, Fertigungsstrukturen",
      "description": "Fertigung von Ketten- und Mechaniksystemen und Strukturen für Verteidigung und Industrie",
      "kind": "production",
@@ -5607,7 +5647,7 @@
      "ownership_note": "Beherrschtes JV (vollkonsolidiert, 51/49 mit Denel)."
     }
    ],
-   "coverage_note": "Rheinmetall hält 51 %; Kontrollrechte nicht belegt. Rheinmetall Laingsdale (Pty) Ltd und Rheinmetall Resonant South Africa nur als Gesellschaftsnamen gelistet."
+   "coverage_note": "Rheinmetall hält 51 %, vollkonsolidiert (Cluster-Claim C-STR-22), daher als beherrscht (sole) eingestuft. Rheinmetall Laingsdale (Pty) Ltd und Rheinmetall Resonant South Africa nur als Gesellschaftsnamen gelistet."
   },
   {
    "id": "naval-intl",
