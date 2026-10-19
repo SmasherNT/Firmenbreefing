@@ -1,0 +1,1188 @@
+{
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-19",
+  "input_fingerprint": "f46c48a08f11da41df8046fcc66c9b0d0a75ec5718d5af71cfb85662da91c77d",
+  "role": "positioning",
+  "method_id": "portfolio-maturity-v1",
+  "shared_limitations": [
+    "Alle Einordnungen beruhen ausschließlich auf den übergebenen Herstellerangaben; eine unabhängige Bestätigung liegt nicht vor.",
+    "Die Skala beschreibt öffentlich belegte Meilensteine, keine Leistungsfähigkeit, Qualität oder Wettbewerbsrangfolge. Es werden weder Gesamtrangliste noch Durchschnitt berechnet.",
+    "Familiennachweise gelten nur für die ausdrücklich abgegrenzte bestehende Familie. Historische Meilensteine bestätigen keine aktuelle Lieferkapazität oder Reife neuer Varianten.",
+    "Offene Statusprüfung und fehlende Meilensteine beschreiben die Rechercheabdeckung, nicht tatsächliche technische Unreife. Dienstleistungen und Fertigungsangebote werden sinngemäß anhand tatsächlicher Erbringung eingeordnet."
+  ],
+  "interpretations": [
+    {
+      "id": "I-PM-P005",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P005",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P005"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Konkretes offiziell vorgestelltes Konzept; Funktionsprototyp nicht allein aus Bildern oder Gegenwartsformulierungen ableiten.",
+      "score": 1,
+      "assessment_status": "bewertet",
+      "statement": "Offiziell vorgestelltes Kampfpanzerkonzept.",
+      "reasoning": "Die ausdrückliche Vorstellung eines konkreten Konzepts trägt Stufe 1. Ein funktionsfähiger Prototyp wird durch den Statusbeleg nicht bestätigt.",
+      "next_stage_limit": "Funktionsfähiger Prototyp oder tatsächliche Erprobung nicht konkret belegt."
+    },
+    {
+      "id": "I-PM-P006-c2",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P006-c2",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P006-c2"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Höchster hier konkret belegter Sachverhalt; keine vollständige aktuelle Programmhistorie. Keine Übertragung auf neue Varianten.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Eingeführter Kampfpanzer mit benannten Einsätzen.",
+      "reasoning": "Aktuelle Nutzung durch britische und omanische Streitkräfte sowie benannte Einsätze tragen den Betriebsmeilenstein.",
+      "next_stage_limit": "Laufende Serie oder wiederholte Lieferungen sind in diesem Beleg nicht konkret dokumentiert."
+    },
+    {
+      "id": "I-PM-P006-c3",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P006-c3",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P006-c3"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Höchster hier konkret belegter Sachverhalt; keine vollständige aktuelle Programmhistorie. Keine Übertragung auf neue Varianten.",
+      "score": 4,
+      "assessment_status": "bewertet",
+      "statement": "Beauftragtes Modernisierungsprogramm mit abgeschlossener Schießerprobung.",
+      "reasoning": "Der Auftrag über 148 Modernisierungen trägt Stufe 4; die abgeschlossene Schießerprobung stützt zusätzlich den Testmeilenstein.",
+      "next_stage_limit": "Kein tatsächlicher Kundenbetrieb der Challenger-3-Konfiguration belegt."
+    },
+    {
+      "id": "I-PM-P007",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P007",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P007"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Gilt für KF41-Schützenpanzer im ungarischen Programm; nicht XM30, italienische Türme oder neue Flugabwehrvarianten.",
+      "score": 6,
+      "assessment_status": "bewertet",
+      "statement": "Lynx KF41 im ungarischen Programm in Serienfertigung.",
+      "reasoning": "Übergebene Serienfahrzeuge und der berichtete Produktionsbeginn der übrigen Fahrzeuge tragen den Serienmeilenstein.",
+      "next_stage_limit": "Bewertung bleibt auf den ungarischen KF41-Schützenpanzer beschränkt."
+    },
+    {
+      "id": "I-PM-P008",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P008",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P008"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Bestehende Puma-Flotte belegt; kein Betriebsnachweis sämtlicher S1/S2-Nachrüstungen oder der erst 2028 vorgesehenen Fahrzeuge.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Bestehende Puma-Flotte im Bundeswehrbetrieb.",
+      "reasoning": "Die Rolle als Hauptwaffensystem der Panzergrenadiertruppe trägt den Betriebsnachweis für die vorhandene Flotte. Die neu bestellten Fahrzeuge und künftigen Lieferungen erhöhen diesen Nachweis nicht.",
+      "next_stage_limit": "Aktuelle Serienproduktion wird im Statusbeleg nicht ausdrücklich bestätigt; Nachrüststände nicht pauschal erfasst."
+    },
+    {
+      "id": "I-PM-P009",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P009",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P009"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Höchster hier konkret belegter Sachverhalt; keine vollständige aktuelle Programmhistorie. Keine Übertragung auf neue Varianten.",
+      "score": 6,
+      "assessment_status": "bewertet",
+      "statement": "Marder mit wiederholten Auslieferungen in belegter Stückzahl.",
+      "reasoning": "Die berichteten dreistelligen Marder-1A3-Lieferungen tragen tatsächlich gelieferte Skalierung; die bestehende Nutzung ist zusätzlich benannt.",
+      "next_stage_limit": "Stufe 6 beschreibt Lieferumfang, nicht eine neu laufende Fahrzeugproduktion oder jede Modernisierung."
+    },
+    {
+      "id": "I-PM-P010",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P010",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P010"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Basisfamilie; keine pauschale Gleichsetzung mit Skyranger-, RCT30- oder neuen Missionsmodulen. Unklare Gesamtmenge nicht übernommen.",
+      "score": 6,
+      "assessment_status": "bewertet",
+      "statement": "Boxer-Basisfamilie in laufender multinationaler Produktion.",
+      "reasoning": "Die ausdrücklich laufende Produktion unter ARTEC trägt Stufe 6. Der genannte Einsatz bei mehreren Nutzerstaaten ergänzt den Betriebsnachweis.",
+      "next_stage_limit": "Neue Missionsmodule und Spezialvarianten bleiben außerhalb dieser Einordnung."
+    },
+    {
+      "id": "I-PM-P011",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P011",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P011"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Gilt für gelieferten 4×4-Caracal, nicht automatisch die angekündigte 6×6- oder gesamte Variantenfamilie.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Caracal 4×4 in der Ukraine für Kundenaufgaben im Einsatz.",
+      "reasoning": "Die Übergabe von 20 Fahrzeugen ist mit tatsächlichem Einsatz für Luftlande- und Spezialeinsätze verbunden und trägt damit Stufe 5.",
+      "next_stage_limit": "Ein einzelner genannter Übergabeumfang belegt keine wiederholten Lieferlose oder laufende Serie; 6×6 nicht erfasst."
+    },
+    {
+      "id": "I-PM-P012",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P012",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P012"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Survivor R – Basisfahrzeug aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P013",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P013",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P013"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Höchster hier konkret belegter Sachverhalt; keine vollständige aktuelle Programmhistorie. Keine Übertragung auf neue Varianten.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Kodiak bei Kunden im Einsatz.",
+      "reasoning": "Die ausdrücklich genannte Nutzung und der Einsatz durch Kunden tragen Stufe 5.",
+      "next_stage_limit": "Keine konkret dokumentierte laufende Serie oder wiederholte Auslieferung im übergebenen Beleg."
+    },
+    {
+      "id": "I-PM-P014-hx2",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P014-hx2",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P014-hx2"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Höchster hier konkret belegter Sachverhalt; keine vollständige aktuelle Programmhistorie. Keine Übertragung auf neue Varianten.",
+      "score": 6,
+      "assessment_status": "bewertet",
+      "statement": "Eingeführte HX-Familie mit tatsächlich gelieferter Skalierung.",
+      "reasoning": "Das aktuelle Produktionsprogramm und mehrere hundert eingesetzte Lkw tragen den Serien-/Skalierungsmeilenstein für die eingeführte Familie.",
+      "next_stage_limit": "Der Nachweis gilt nicht für HX3 oder neu angekündigte Konfigurationen."
+    },
+    {
+      "id": "I-PM-P014-hx3",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P014-hx3",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P014-hx3"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "16.000 HX im Einsatz beziehen sich auf Vorgängerfamilie; keine Übertragung auf HX3. Digitalarchitektur und Produktbilder sind kein Meilensteinnachweis.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für HX3 aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "16.000 HX im Einsatz beziehen sich auf Vorgängerfamilie; keine Übertragung auf HX3. Digitalarchitektur und Produktbilder sind kein Meilensteinnachweis."
+    },
+    {
+      "id": "I-PM-P015-120",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P015-120",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P015-120"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Höchster hier konkret belegter Sachverhalt; keine vollständige aktuelle Programmhistorie. Keine Übertragung auf neue Varianten.",
+      "score": 6,
+      "assessment_status": "bewertet",
+      "statement": "120-mm-Waffen mit serienmäßiger Integration und Lizenzfertigung.",
+      "reasoning": "Die ausdrücklich serienmäßige Integration sowie US-Lizenzfertigung tragen Stufe 6 für die benannten 120-mm-Waffen.",
+      "next_stage_limit": "Keine Reifeübertragung auf 130 mm oder sämtliche neuen Konfigurationen."
+    },
+    {
+      "id": "I-PM-P015-130",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P015-130",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P015-130"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Kein konkreter Schießtest oder Kundenauftrag für diese Waffenanlage im geprüften Beleg; 120-mm-Erfahrung nicht übertragen.",
+      "score": 1,
+      "assessment_status": "bewertet",
+      "statement": "130-mm-Waffenanlage als konkretes Entwicklungsprogramm vorgestellt.",
+      "reasoning": "Die offizielle Beschreibung der Entwicklung einer konkreten 130-mm-Waffenanlage trägt den Ankündigungsmeilenstein.",
+      "next_stage_limit": "Funktionsfähiger Prototyp, durchgeführter Schießtest oder Kundenauftrag nicht konkret belegt."
+    },
+    {
+      "id": "I-PM-P016-waffen",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P016-waffen",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P016-waffen"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur benannte etablierte Kanonen; nicht sämtliche neuen KAE/KCE/BK27-Konfigurationen oder Munitionsvarianten.",
+      "score": 6,
+      "assessment_status": "bewertet",
+      "statement": "KBA und KDC in tatsächlich ausgelieferter Größenordnung.",
+      "reasoning": "Mehr als 5.000 ausgelieferte KBA und über 4.000 KDC tragen tatsächlich gelieferte Skalierung.",
+      "next_stage_limit": "Die Stufe gilt nur für diese etablierten Kanonen, nicht alle Mittelkaliberkonfigurationen."
+    },
+    {
+      "id": "I-PM-P016-munition",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P016-munition",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P016-munition"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Bestehende Lieferfamilie; kein Nachweis jeder APFSDS/FAP/AHEAD-Variante und Qualifizierung.",
+      "score": 6,
+      "assessment_status": "bewertet",
+      "statement": "Bestehende Mittelkalibermunition in großem Umfang geliefert.",
+      "reasoning": "Die bereitgestellten hunderttausenden Schuss Gepard-Munition und weitere Lieferungen tragen den Skalierungsmeilenstein.",
+      "next_stage_limit": "Keine Einzelqualifizierung aller APFSDS-, FAP- oder AHEAD-Varianten aus diesem Familiennachweis."
+    },
+    {
+      "id": "I-PM-P017",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P017",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P017"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für MWS120 Ragnarok / MWS81 aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P018",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P018",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P018"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für StrikeShield aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P019-30",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P019-30",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P019-30"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Kundenauftrag und Prototypenübergabe; Kapazitätsziel bis 400 Türme/Jahr ist keine erreichte Serienlieferung.",
+      "score": 4,
+      "assessment_status": "bewertet",
+      "statement": "Skyranger 30 auf Boxer im konkreten Bundeswehrprogramm.",
+      "reasoning": "Der Auftrag über 19 Fahrzeuge trägt Stufe 4; ein gelieferter Prototyp bestätigt noch keinen tatsächlichen Kundenbetrieb.",
+      "next_stage_limit": "Serienlieferung und operative Nutzung dieser Konfiguration nicht belegt; Produktionsziel ist kein erreichten Meilenstein."
+    },
+    {
+      "id": "I-PM-P019-35",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P019-35",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P019-35"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Lieferung belegt; kein klarer Betriebsnachweis für dieses konkrete System im Absatz. Nicht auf Lynx-Skyranger35 übertragen.",
+      "score": 4,
+      "assessment_status": "bewertet",
+      "statement": "Skyranger 35 auf Leopard 1 an die Ukraine geliefert.",
+      "reasoning": "Die erfolgte Lieferung verankert die konkrete Konfiguration in einem Kundenprogramm. Ohne bestätigte tatsächliche Nutzung ist Stufe 5 nicht erreicht belegbar.",
+      "next_stage_limit": "Konkreter Betriebsnachweis fehlt; kein Übertrag auf Lynx-Skyranger 35."
+    },
+    {
+      "id": "I-PM-P020",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P020",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P020"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Betriebsnachweis Herstellerangabe; neuer Vier-Systeme-Auftrag noch kein Liefernachweis dieser Lose.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Skynex in tatsächlicher Flugabwehraufgabe eingesetzt.",
+      "reasoning": "Die berichtete Abwehr von Marschflugkörpern und Drohnen trägt den Betriebsmeilenstein. Der weitere Auftrag mit künftiger Auslieferung bestätigt keine zusätzliche gelieferte Skala.",
+      "next_stage_limit": "Keine laufende Serie oder wiederholte tatsächlich ausgelieferte Lose aus den übergebenen Statusangaben ableitbar."
+    },
+    {
+      "id": "I-PM-P021",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P021",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P021"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Skyguard / Skyshield / X-TAR3D aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P022",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P022",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P022"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Drohnenabwehr-Toolbox aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P023-luna",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P023-luna",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P023-luna"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Höchster hier konkret belegter Sachverhalt; keine vollständige aktuelle Programmhistorie. Keine Übertragung auf neue Varianten.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "LUNA UAS als eingeführtes System im Einsatz.",
+      "reasoning": "Der ausdrücklich berichtete weltweite Einsatz trägt Stufe 5 für das bestehende LUNA UAS.",
+      "next_stage_limit": "Laufende Serie oder wiederholte Auslieferung nicht konkret belegt; LUNA NG bleibt getrennt."
+    },
+    {
+      "id": "I-PM-P023-ng",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P023-ng",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P023-ng"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Allgemein als einsatzbereit und Bedienung als erprobt beschrieben; kein konkret dokumentierter Kunden-/Testmeilenstein für LUNA NG. Einsatznachweis LUNA UAS nicht übertragen.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für LUNA NG aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Allgemein als einsatzbereit und Bedienung als erprobt beschrieben; kein konkret dokumentierter Kunden-/Testmeilenstein für LUNA NG. Einsatznachweis LUNA UAS nicht übertragen."
+    },
+    {
+      "id": "I-PM-P024",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P024",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P024"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Hochlauf im industriellen Maßstab ist im April 2026 als Zukunft angekündigt; kein Serieliefernachweis aus Formulierung wird produziert ableiten.",
+      "score": 4,
+      "assessment_status": "bewertet",
+      "statement": "FV-014 mit Bundeswehrauftrag und abgeschlossenen Demonstrationen.",
+      "reasoning": "Großauftrag und Erstabruf tragen Stufe 4; simulierte Angriffsflüge nach Lkw-Starts bestätigen zusätzlich tatsächliche Tests.",
+      "next_stage_limit": "Industrieller Hochlauf war angekündigt; tatsächliche Serienlieferung oder Kundenbetrieb nicht belegt."
+    },
+    {
+      "id": "I-PM-P025",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P025",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P025"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Familienweite Nutzungsaussage ohne Aufschlüsselung jedes HERO-Typs; keine Übertragung auf neue Luft-/Trägerintegrationen.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Bestehende HERO-Familie mit berichteter Streitkräftenutzung.",
+      "reasoning": "Die explizite Nutzung und Einsatzbewährung tragen Stufe 5 auf Ebene der abgegrenzten bestehenden Familie.",
+      "next_stage_limit": "Keine einheitliche Bewertung jedes HERO-Typs und neuer Trägerintegration; Serienumfang nicht aufgeschlüsselt."
+    },
+    {
+      "id": "I-PM-P026-bk27",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P026-bk27",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P026-bk27"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Plattformintegration konkret; keine pauschale Aussage über neue navalisierten Varianten.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "BK27 als etablierte Bordkanone integrierter Flugzeugplattformen.",
+      "reasoning": "Die benannten Integrationen und die ausdrückliche Beschreibung als bewährte Bordkanone tragen den Betriebsmeilenstein für die bestehende Luftanwendung.",
+      "next_stage_limit": "Kein aktueller Serienumfang belegt; neue navalisierten Stationen bleiben unbewertet."
+    },
+    {
+      "id": "I-PM-P026-f35",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P026-f35",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P026-f35"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Veraltete Zukunftsformulierung belegt keinen erreichten Produktionsstart zum 19.10.2026. Nur bestehende Programmbeteiligung eindeutig, keine tatsächliche Serie.",
+      "score": 1,
+      "assessment_status": "bewertet",
+      "statement": "F-35A-Rumpfmittelteile in Weeze als konkretes Fertigungsprogramm angekündigt.",
+      "reasoning": "Die benannte Beteiligung mit Northrop Grumman und Lockheed Martin sowie die angekündigte Fertigung in Weeze tragen den offiziellen Ankündigungsmeilenstein. Die Programmbeteiligung bestätigt ohne konkreten Auftrags-, Pilot- oder Validierungsbeleg keine Stufe 4.",
+      "next_stage_limit": "Ein funktionsfähiger Prototyp, tatsächlich gestartete Fertigung oder konkrete ausgelieferte Rumpfmittelteile sind im vorliegenden Beleg nicht bestätigt; die Zukunftsangabe ab 2025 wird nicht als erreicht gewertet."
+    },
+    {
+      "id": "I-PM-P027-fregatten",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P027-fregatten",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P027-fregatten"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Gilt für bestehende Fregattenreferenzen. Kein Betrieb neuer GMF140 und keine Fortschreibung des F126-Vertragsstatus.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Bestehende Fregattenreferenzen im Marineeinsatz.",
+      "reasoning": "Der ausdrücklich bewährte Einsatz bei der Deutschen Marine trägt Stufe 5 für die bestehenden Referenzen einschließlich F125.",
+      "next_stage_limit": "Keine laufende Serie oder wiederholte Lieferungen aus diesem Beleg; neue Entwürfe und F126-Vertragsfortschreibung nicht erfasst."
+    },
+    {
+      "id": "I-PM-P027-korvetten",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P027-korvetten",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P027-korvetten"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Familienreferenz, keine Gleichsetzung mit jedem angebotenen Entwurf.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Bestehende Korvettenreferenzen im Marineeinsatz.",
+      "reasoning": "Der ausdrücklich berichtete Einsatz bei der Deutschen Marine trägt den Betriebsmeilenstein für die bestehenden Referenzen.",
+      "next_stage_limit": "Keine einheitliche Reife aller angebotenen Entwürfe oder konkrete aktuelle Serienlieferung belegt."
+    },
+    {
+      "id": "I-PM-P028-opv",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P028-opv",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P028-opv"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Höchster hier konkret belegter Sachverhalt; keine vollständige aktuelle Programmhistorie. Keine Übertragung auf neue Varianten.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "OPV für tatsächliche Überwachungs- und Rettungsaufgaben im Einsatz.",
+      "reasoning": "Die genannten Kundenaufgaben sind mit explizitem Kundeneinsatz verknüpft und tragen Stufe 5.",
+      "next_stage_limit": "Laufende Serie und wiederholte Auslieferung nicht konkret dokumentiert."
+    },
+    {
+      "id": "I-PM-P028-kuestenwache",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P028-kuestenwache",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P028-kuestenwache"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Höchster hier konkret belegter Sachverhalt; keine vollständige aktuelle Programmhistorie. Keine Übertragung auf neue Varianten.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Küstenwachboote bei verschiedenen Sicherheitsbehörden im Einsatz.",
+      "reasoning": "Die ausdrücklich genannte Nutzung durch Küstenwachen, Wasserschutzpolizeien und Grenzschutzkräfte trägt Stufe 5.",
+      "next_stage_limit": "Keine konkrete aktuelle Serie oder abgegrenzte wiederholte Lieferlose dokumentiert."
+    },
+    {
+      "id": "I-PM-P029",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P029",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P029"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Offiziell beschriebenes Design; Renderings/ausgestattete Darstellung bestätigen weder Bau noch Funktionsprototyp oder Kundenauftrag.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für NTV 130 aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Offiziell beschriebenes Design; Renderings/ausgestattete Darstellung bestätigen weder Bau noch Funktionsprototyp oder Kundenauftrag."
+    },
+    {
+      "id": "I-PM-P030",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P030",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P030"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Offizielle Designreferenzen FDB424/UB13 nicht mit konkreter Lieferung oder Kundennutzung verbunden. Keine einheitliche Familienreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Spezialschiffe / Plattformdesigns aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Offizielle Designreferenzen FDB424/UB13 nicht mit konkreter Lieferung oder Kundennutzung verbunden. Keine einheitliche Familienreife."
+    },
+    {
+      "id": "I-PM-P031-millennium",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P031-millennium",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P031-millennium"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Millennium aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P031-seasnake",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P031-seasnake",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P031-seasnake"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Neu konzipierte Waffenstationen; BK27-/KAE-Kanonenerfahrung nicht auf gesamte SeaSnake-Station übertragen.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für SeaSnake 20/27/30 aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Neu konzipierte Waffenstationen; BK27-/KAE-Kanonenerfahrung nicht auf gesamte SeaSnake-Station übertragen."
+    },
+    {
+      "id": "I-PM-P032-mass",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P032-mass",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P032-mass"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Konkrete Kundenauswahl; Originalseite nennt hier weder erfolgte Serienlieferung noch Inbetriebnahme. Alt-MASS-Erfahrung bleibt getrennt von nova.",
+      "score": 4,
+      "assessment_status": "bewertet",
+      "statement": "MASS_DUERAS für die Royal Canadian Navy ausgewählt.",
+      "reasoning": "Die konkrete Kundenauswahl trägt Stufe 4 für diese Version. Ein erfolgter Liefer- oder Betriebsmeilenstein wird nicht genannt.",
+      "next_stage_limit": "Keine tatsächliche Inbetriebnahme oder Serienlieferung von MASS_DUERAS belegt."
+    },
+    {
+      "id": "I-PM-P032-nova",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P032-nova",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P032-nova"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Kein konkreter Test, Auftrag oder Lieferung der neuen Generation im geprüften Original; über 25 Jahre Erfahrung betrifft Vorgängersysteme.",
+      "score": 1,
+      "assessment_status": "bewertet",
+      "statement": "MASS nova und 3DDS als neue Generation offiziell vorgestellt.",
+      "reasoning": "Die ausdrückliche Vorstellung der neuen Generation und ihrer Wirkmittelkomponente trägt Stufe 1.",
+      "next_stage_limit": "Kein funktionsfähiger Prototyp oder konkreter Test für die neue Generation belegt; Vorgängererfahrung nicht übertragen."
+    },
+    {
+      "id": "I-PM-P033",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P033",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P033"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Produktion und MANTA-Nutzung belegt; nicht jeder neue Minen-/Räum-/Ladungstyp einzeln geprüft.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "MANTA als bestehende Unterwasserproduktreferenz bei Marinen im Einsatz.",
+      "reasoning": "Die ausdrückliche Nutzung von MANTA bei mehr als 20 Marinen trägt den Betriebsnachweis. Die generische Aussage zur Produktion der Unterwasserfamilie belegt nicht eindeutig laufende MANTA-Serie oder konkrete wiederholte Lieferlose.",
+      "next_stage_limit": "Keine einheitliche Serienreife aller Unterwasserprodukte aus dem Familienbeleg ableitbar."
+    },
+    {
+      "id": "I-PM-P034",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P034",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P034"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für C4I – Systemintegration aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P035",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P035",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P035"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Bestehende Softwareintegration; keine einheitliche Reife aller zukünftigen D-LBO-Funktionen.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "TacNet mit tatsächlicher Streitkräftenutzung.",
+      "reasoning": "Die Integration in IdZ-ES und Puma sowie expliziter Einsatz bei verbündeten europäischen Staaten tragen Stufe 5.",
+      "next_stage_limit": "Kein einheitlicher Status aller künftigen D-LBO-Funktionen oder konkreter Serienumfang belegt."
+    },
+    {
+      "id": "I-PM-P036-idz",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P036-idz",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P036-idz"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Abnahme/Integration der VJTF2023-Konfiguration belegt; nicht identisch mit allen Gladius2.0-Light/Flex-Varianten.",
+      "score": 4,
+      "assessment_status": "bewertet",
+      "statement": "IdZ-ES VJTF 2023 mit bestätigter Abnahme und Integration.",
+      "reasoning": "Die Bewertung als kriegstauglich durch das Deutsche Heer und Bundeswehrintegration tragen das konkrete Kundenprogramm. Ein tatsächlicher Einsatz in einer Kundenaufgabe ist im übergebenen Status nicht ausdrücklich beschrieben.",
+      "next_stage_limit": "Konkreter Betriebsnachweis dieser Konfiguration fehlt; Gladius-Varianten bleiben getrennt."
+    },
+    {
+      "id": "I-PM-P036-gladius",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P036-gladius",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P036-gladius"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Angebot mehrerer Konfigurationen; kein einzeln aufgeschlüsselter Kunden-/Lieferstatus sämtlicher Varianten. IdZ-ES-Befund nicht pauschal übertragen.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Gladius 2.0 – Light / Flex / Multi-Role aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Angebot mehrerer Konfigurationen; kein einzeln aufgeschlüsselter Kunden-/Lieferstatus sämtlicher Varianten. IdZ-ES-Befund nicht pauschal übertragen."
+    },
+    {
+      "id": "I-PM-P037-sp2",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P037-sp2",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P037-sp2"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Durchgeführte Tests Herstellerangabe, ohne Daten/Kundenliste. Nicht auf CXT2/XT2, Bewaffnung oder Path-A-Kit separat übertragen.",
+      "score": 3,
+      "assessment_status": "bewertet",
+      "statement": "Mission Master SP2 tatsächlich international getestet.",
+      "reasoning": "Die ausdrücklich berichteten zahlreichen internationalen Tests tragen Stufe 3.",
+      "next_stage_limit": "Kein konkreter Kundenauftrag oder Pilot im Beleg; keine Übertragung auf Path-A-Kit und andere Plattformvarianten."
+    },
+    {
+      "id": "I-PM-P037-path",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P037-path",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P037-path"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Als bewährte Autonomielösung beschrieben; unspezifisches bewährt allein kein konkret nachgewiesener Kundenbetrieb des Kits.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Path-A-Kit aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Als bewährte Autonomielösung beschrieben; unspezifisches bewährt allein kein konkret nachgewiesener Kundenbetrieb des Kits."
+    },
+    {
+      "id": "I-PM-P038",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P038",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P038"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Skymaster aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P039",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P039",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P039"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Historischer Familienmeilenstein, kein Seriennachweis jeder neuen Pumpe oder industriellen Adaption.",
+      "score": 6,
+      "assessment_status": "bewertet",
+      "statement": "Bestehende elektrische Kühlmittelpumpenfamilie mit Serienmeilenstein.",
+      "reasoning": "Der ausdrückliche Bericht über den Eintritt einer elektrischen Hauptkühlmittelpumpe in Serienproduktion trägt den historischen Serienmeilenstein.",
+      "next_stage_limit": "Historischer Familiennachweis ohne aktuellen Varianten-/Serienumfang; keine Übertragung auf Industrieadaptionen."
+    },
+    {
+      "id": "I-PM-P040-thermomodul",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P040-thermomodul",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P040-thermomodul"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Thermomodul aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P040-kompressor",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P040-kompressor",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P040-kompressor"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Herstellerangabe zur Anwendung ohne benannten Fahrzeugkunden und Variantenstückzahlen.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Elektrischer Klimakompressor in Fahrzeuganwendungen genutzt.",
+      "reasoning": "Die berichtete Verwendung in New Energy Vehicles verschiedener Klassen trägt die Anwendung im Kundenkontext auf Familienebene.",
+      "next_stage_limit": "Fahrzeugkunden und Variantenstückzahlen fehlen; eine laufende Serie ist nicht ausdrücklich konkretisiert."
+    },
+    {
+      "id": "I-PM-P041",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P041",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P041"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für E-Power / Powermodule / NanoLam aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P042",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P042",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P042"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Wasserstoff Balance-of-Plant / HRB1800 aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P043",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P043",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P043"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für In-Cabin-Sensing aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P044",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P044",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P044"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Öffentliche Pilotanwendung belegt; kein Nachweis großflächig laufender Serienlieferung.",
+      "score": 4,
+      "assessment_status": "bewertet",
+      "statement": "Ladebordstein in laufenden öffentlichen Piloten.",
+      "reasoning": "Die ausdrücklich laufenden öffentlichen Piloten tragen den Pilotmeilenstein Stufe 4. Nutzerstudien allein bestätigen keinen regulären Kundenbetrieb außerhalb des Piloten.",
+      "next_stage_limit": "Regulärer Betrieb außerhalb der Pilotphase und Serienlieferungen nicht belegt."
+    },
+    {
+      "id": "I-PM-P045",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P045",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P045"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Fertigungsleistung und Kundenproduktion, kein Status jeder Material-/Produktneuentwicklung. KS Huayu AluTech ist laut Q09 Verkaufsausnahme.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Aluminiumguss als bestehende Kundenfertigungsleistung.",
+      "reasoning": "Die beschriebene Produktion von Komponenten für globale OEM-Kunden trägt die tatsächliche Erbringung der abgegrenzten Fertigungsleistung. Ein konkreter laufender Serienumfang wird nicht benannt.",
+      "next_stage_limit": "Kein pauschaler Serienstatus jeder Neuentwicklung; Bewertung einer Fertigungsleistung sinngemäß zur Hardware-Skala."
+    },
+    {
+      "id": "I-PM-P046",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P046",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P046"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Elektromotoren – DC / EC / Servo aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Nur Angebotsbeschreibung geprüft. Ein fehlender Meilenstein in diesen Belegen ist kein Nachweis tatsächlicher Unreife."
+    },
+    {
+      "id": "I-PM-P047",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P047",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P047"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Transferpotenzial bestehender Automobilmodule beschrieben; Serienmeilenstein der automobilen Pumpe nicht auf konkrete Industrieadaption übertragen.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Industrielles Wärmemanagement aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Transferpotenzial bestehender Automobilmodule beschrieben; Serienmeilenstein der automobilen Pumpe nicht auf konkrete Industrieadaption übertragen."
+    },
+    {
+      "id": "I-PM-P048",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P048",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P048"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Tatsächliche Fertigung als Herstellerangabe; keine Stückzahl-/Serienlaufangabe je Geometrie.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Metallische Gleitlager als kundenspezifische Fertigungsleistung.",
+      "reasoning": "Die ausdrückliche Auslegung und Fertigung nach Kundenvorgaben trägt tatsächliche Erbringung der abgegrenzten Leistung. Sie bestätigt keine laufende Serie für jede Geometrie.",
+      "next_stage_limit": "Stückzahlen, Lieferlose und konkrete Serienläufe fehlen; Leistungsskala sinngemäß angewandt."
+    },
+    {
+      "id": "I-PM-P049",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P049",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P049"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Eigene Montage, serienreife Systeme und Serienfertigungskapazität sind beschrieben; diese Begriffe bestätigen für sich keine laufende Serienfertigung oder Kundenlieferung.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für MEGC – Wasserstoffcontainer aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Eigene Montage, serienreife Systeme und Serienfertigungskapazität sind beschrieben; diese Begriffe bestätigen für sich keine laufende Serienfertigung oder Kundenlieferung."
+    },
+    {
+      "id": "I-PM-P050",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P050",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P050"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Offizielle Vision ist konkret; ready to scale/replicate ist kein Nachweis realisierten Anlagenverbunds.",
+      "score": 1,
+      "assessment_status": "bewertet",
+      "statement": "Giga PtX als konkrete Projektvision offiziell beschrieben.",
+      "reasoning": "Die offizielle Beschreibung eines dezentralen Anlagenverbunds trägt den Ankündigungsmeilenstein auf Projektebene.",
+      "next_stage_limit": "Kein realisierter Anlagenverbund oder funktionsfähiger Prototyp des Gesamtprojekts belegt."
+    },
+    {
+      "id": "I-PM-P051",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P051",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P051"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Bestehende Erbringungsstruktur und Produktion belegt; keine Reife einzelner neu beauftragter Systeme.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Fertigungsleistungen mit bestehendem Standort und Kundenproduktion.",
+      "reasoning": "Bestehende Herstellung für zivile und öffentliche Auftraggeber trägt den Erbringungsnachweis. Ein Angebot von Serien- und Kleinserienfertigung bestätigt allein keinen konkret laufenden Serienauftrag.",
+      "next_stage_limit": "Kein Serienstatus jedes Produkts oder neuen Auftrags; Hardware-Skala für Fertigungsleistung sinngemäß angewandt."
+    },
+    {
+      "id": "I-PM-P052",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P052",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P052"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Militärische Ausbildung ist die relevante Kundenaufgabe; kein Gefechtseinsatz des simulierten Waffensystems.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "LEGATUS MLS in konkreter militärischer Ausbildungsaufgabe eingesetzt.",
+      "reasoning": "Der tatsächliche Einsatz bei Freedom Shield einschließlich integrierter Drohnen trägt Stufe 5 für die mobile Ausbildungsvariante.",
+      "next_stage_limit": "Keine konkrete laufende Serienproduktion oder wiederholte Lieferung belegt; Ausbildungsbetrieb ist die relevante Aufgabe."
+    },
+    {
+      "id": "I-PM-P053",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P053",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P053"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Entwickelte Plattformlösungen werden konkret genannt; Liste allein belegt weder ausgelieferte Konfiguration noch Betrieb jedes Trainers.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Flugausbildung / Plattformtrainer aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Entwickelte Plattformlösungen werden konkret genannt; Liste allein belegt weder ausgelieferte Konfiguration noch Betrieb jedes Trainers."
+    },
+    {
+      "id": "I-PM-P054",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P054",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P054"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Launch belegt offizielle Einführung des Angebots; kein konkreter Kunde oder Kundenbetrieb in geprüfter Quelle.",
+      "score": 1,
+      "assessment_status": "bewertet",
+      "statement": "ASTERION als Softwareproduktlinie offiziell gestartet.",
+      "reasoning": "Der ausdrücklich auf 2020 datierte Launch trägt die offizielle Einführung des konkreten Angebots. Ohne Funktions- oder Kundenbeleg folgt daraus keine höhere Stufe.",
+      "next_stage_limit": "Funktionsfähige Demonstration, konkreter Auftrag und tatsächlicher Kundenbetrieb nicht belegt."
+    },
+    {
+      "id": "I-PM-P055",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P055",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P055"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Langjährige Portfolioerfahrung und allgemeine Zertifizierungsbehauptung ersetzen keinen objektspezifischen Betriebs-/Liefernachweis.",
+      "score": null,
+      "assessment_status": "nicht eindeutig bestimmbar",
+      "statement": "Reifestufe für Maritime Ausbildung aus den vorliegenden Belegen nicht eindeutig bestimmbar.",
+      "reasoning": "Die geprüfte Angebotsbeschreibung bestätigt Produktidentität und Merkmale; die Statusprüfung bleibt offen. Daraus lässt sich kein konkreter erreichter Reifemeilenstein ableiten.",
+      "coverage_note": "Langjährige Portfolioerfahrung und allgemeine Zertifizierungsbehauptung ersetzen keinen objektspezifischen Betriebs-/Liefernachweis."
+    },
+    {
+      "id": "I-PM-P056",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P056",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P056"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Tatsächliche Dienstleistungserbringung; Reifeskala von Hardware ist auf Service nur sinngemäß anwendbar.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Fahrzeugservice in operativen Servicezentren erbracht.",
+      "reasoning": "Die laufende Wartung und Instandsetzung in Ukraine und Litauen tragen tatsächlichen Kundenbetrieb der Dienstleistung.",
+      "next_stage_limit": "Keine Hardware-Serienreife daraus ableitbar; Servicebetrieb wird sinngemäß eingeordnet."
+    },
+    {
+      "id": "I-PM-P057-ch53",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P057-ch53",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P057-ch53"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Bestehende Dienstleistungserbringung; kein Status F-35-Fertigung daraus.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "CH-53G-Wartung im täglichen Flugbetrieb erbracht.",
+      "reasoning": "Die Inspektions-, Wartungs- und Überholungsleistungen an drei Standorten sowie tägliche Unterstützung tragen die operative Dienstleistungserbringung.",
+      "next_stage_limit": "Kein Status anderer Luftfahrtprogramme; Hardware-Skala für Service sinngemäß angewandt."
+    },
+    {
+      "id": "I-PM-P057-documentation",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P057-documentation",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P057-documentation"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Bestehende Dienstleistung als Herstellerangabe; keine Aufschlüsselung jedes Kundenvertrags.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Dokumentations- und Logistics-Engineering-Leistungen tatsächlich geliefert.",
+      "reasoning": "Die ausdrücklich tatsächliche Lieferung komplexer Leistungen für das Airbus-Programm trägt die Erbringung in einer relevanten Kundenaufgabe.",
+      "next_stage_limit": "Keine Aufschlüsselung einzelner Verträge oder wiederholter Lieferlose; Service-Skala sinngemäß angewandt."
+    },
+    {
+      "id": "I-PM-P058",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "P058",
+      "method_id": "portfolio-maturity-v1",
+      "depends_on": [
+        "P-RV-P058"
+      ],
+      "method": "Höchster konkret belegter Meilenstein",
+      "uncertainty": "Betrieb einer Prüfleistung, nicht Reife-/Zulassungsnachweis aller dort erprobten Produkte.",
+      "score": 5,
+      "assessment_status": "bewertet",
+      "statement": "Erprobungszentrum erbringt tatsächliche Kundenprüfungen.",
+      "reasoning": "Die ausdrücklich berichtete System- und Komponentenerprobung für externe Kunden trägt den operativen Betrieb der Prüfleistung.",
+      "next_stage_limit": "Keine Reife oder Zulassung aller dort geprüften Produkte; Leistungsskala sinngemäß angewandt."
+    }
+  ]
+}
