@@ -1,0 +1,550 @@
+{
+ "schema_version": 1,
+ "run_id": "rheinmetall-2026-10-19",
+ "company": "Rheinmetall AG",
+ "as_of": "2026-10-19",
+ "phase": "basis",
+ "status": "teilweise",
+ "material_errors": [
+  "P-R51 (+ Region it, Aktivität it-lrmv): Wannenfertigung/weitere Varianten sind Rheinmetall-Teilbeitrag, nicht JV-Tätigkeit; operative Einstufung von it-lrmv ohne Beleg - owner portfolio.",
+  "P-R100 (+ Region us): Evidenzzeile 3 falsch (Konzernliste führt keine Einheit \"American Rheinmetall Vehicles\"; ARD Inc. steht unter Vehicle Systems und unter Hubs) - owner portfolio.",
+  "M-KND-01: \"Hollow Base\" beim LU 211 in keiner zugeordneten Quelle - owner market.",
+  "P-R60: Testzentrum/Schießtunnel als 2023 eröffnet dargestellt, Quelle: im Bau - owner portfolio."
+ ],
+ "review_scope": "Leitprüfung Basis Runde 2 (nach Korrekturrunde 1): 297 Claims auf Grundlage der neu gesammelten Dokumentbefunde (3 Jobs; 4 Korrektur-Befunde P-R51, P-R100, M-KND-01, P-R60), Diff Paket Runde 1/2 (28 geänderte Claims, module_views, Netzwerk, coverage/gaps, shared_limitations) und Gegenlektüre der Originale im Cache (Albacete/Konzernliste/Katalog/Produktseite/GB 2024 S. 31). Gesamte module_views und Abdeckung erneut semantisch geprüft; alle 297 Claims explizit entschieden. Freigabe nicht erteilt wegen der 4 offenen Korrekturen.",
+ "open_limits": [
+  "Ungelöste, ausgewiesene Quellkonflikte: IdZ-ES (1,7 vs. 3,1 Mrd.), Schakal (ESD vs. Rheinmetall-PM), Puma-Anteil, VMZ (unterzeichnet vs. kein JV), Kraken-JV-Datum, NVL-Datum, CMD-Datum.",
+  "Bezahlschranken: H-M01, H-M08, M-HAN-06 nur im Teaserumfang.",
+  "Überwiegend Herstellerangaben; keine Behörden-/Vergabedaten; Cluster: Software/KI-Partner und Vergabeportale nicht geprüft; JV-Quoten der Partnerseite nicht belegt.",
+  "Portfolio: Kassel/Kiel/Bremen/München, Hochenergielaser/Aktivschutz, Battlesuite/Gladius/MQ-28 ohne Status-/Kundenbeleg (Beleglücke); Golfstaaten ohne belegte Präsenz.",
+  "Dokumentjobs und Leitprüfung konfiguriert als claude-sonnet-5-5/medium; kein Nachweis des tatsächlich ausgeführten Modells."
+ ],
+ "non_blocking": [
+  "C-STR-21: \"die litauische EPSO-G\" nicht der Rheinmetall-Zuschreibung zuordnen (PM nennt Herkunft nicht).",
+  "C-CAP-04: als Auszug kennzeichnen (BlackRock 5,09 %/2022 und FMR siehe C-CAP-02/-03; BlackRock-Eintrag der GB-Tabelle ist durch die Meldung 04.03.2026 überholt).",
+  "P-D11: Querverweis auf C-MKT-03 (1,7 vs. 3,1 Mrd. EUR).",
+  "T-E07: Unsicherheit \"Kaufpreis nicht veröffentlicht\" mit dem vorläufigen Kaufpreis im Halbjahresbericht (C-STR-14) abgleichen.",
+  "P-R90: \"ab 2026\" = frühestens 2026; P-N10: Taufe durch Taufpatin; T-E09/T-E13: Datumsbasis im Label; C-STR-35: Lettland-MoU 25.09.2025 und PGZ-Absichtserklärung Oktober 2025 unter einem event_date.",
+  "Region us: geographic_scope/coverage_note nennen Virginia nur als Gesamtangabe, obwohl der Hub Vienna VA als Aktivität geführt wird.",
+  "M-MKT-01..07 sind in keiner module_view referenziert (nur Faktenregister)."
+ ],
+ "non_blocking_notes": [
+  "C-STR-21: \"die litauische EPSO-G\" nicht der Rheinmetall-Zuschreibung zuordnen (PM nennt Herkunft nicht).",
+  "C-CAP-04: als Auszug kennzeichnen (BlackRock 5,09 %/2022 und FMR siehe C-CAP-02/-03; BlackRock-Eintrag der GB-Tabelle ist durch die Meldung 04.03.2026 überholt).",
+  "P-D11: Querverweis auf C-MKT-03 (1,7 vs. 3,1 Mrd. EUR).",
+  "T-E07: Unsicherheit \"Kaufpreis nicht veröffentlicht\" mit dem vorläufigen Kaufpreis im Halbjahresbericht (C-STR-14) abgleichen.",
+  "P-R90: \"ab 2026\" = frühestens 2026; P-N10: Taufe durch Taufpatin; T-E09/T-E13: Datumsbasis im Label; C-STR-35: Lettland-MoU 25.09.2025 und PGZ-Absichtserklärung Oktober 2025 unter einem event_date.",
+  "Region us: geographic_scope/coverage_note nennen Virginia nur als Gesamtangabe, obwohl der Hub Vienna VA als Aktivität geführt wird.",
+  "M-MKT-01..07 sind in keiner module_view referenziert (nur Faktenregister)."
+ ],
+ "view_findings": {
+  "context": "Alle Korrekturen aus Runde 1 in Events (ev-spock, ev-nvl_close 2026-02-27, ev-romania 2026-05-29), cf-segments, Gaps G-03/G-05 und coverage (Cache-Nutzung ehrlich beschrieben) sachgerecht umgesetzt. Profil/Medien-Timeline unverändert korrekt.",
+  "portfolio": "Runde-1-Korrekturen umgesetzt: airsat/cuas \"segmentübergreifend\", idz mit P-D13, ro-mangalia kind access/announced, G-P04/shared_limitations/coverage_notes (gb, hu, za, ua, bg) mit Kontrollangaben und C-STR-33 abgestimmt, us-hub ergänzt. Offen: it-lrmv (P-R51), us-Evidenz (P-R100), P-R60/hu-zala-dev.",
+  "cluster": "Knoten udi/epsog, Kanten E14, E44, E45, E46, E59, E71/E72 (Richtung jetzt Lieferant -> PSM, supplier-Konvention), E73, E83 und neue Abdeckungszeile \"Breite Entdeckung\" sachgerecht; 68 Knoten/83 Kanten referenziell konsistent.",
+  "market": "36 Beobachtungen gegen Vergleichsplan v1 geprüft; O-rheinmetall-industrial (Australien nicht operativ), O-rheinmetall-capacity, O-gdots-capacity/-industrial (Medienabgleich Mesquite) und O-nammo-industrial (M-NAM-08) korrigiert; offen nur M-KND-01 (Hollow Base)."
+ },
+ "review_work_fingerprint": "21336c434f75524e7778a9b5c35e0c798d6e1ca2bd5024cbcd61aea6a3e70bb2",
+ "plan_fingerprint": "bef6420ecfb310b0ac6a90e181647adeb7db203c8224827674253cdf2d92163f",
+ "source_collection_fingerprint": "1624f4cae96c6cf75dcad8a325da0ce002139ffe8928e4cc371a31dcb6a004fd",
+ "scope_and_mappings_checked": true,
+ "review_groups": [
+  {
+   "claim_ids": [
+    "P-R51"
+   ],
+   "depth": "A",
+   "status": "Korrektur",
+   "note": "Rheinmetall-Seite S-b04118fa6c556f66 (Original-HTML) gelesen: \"Production of vehicle hulls and supply of other variants, including air defence\" steht auf der Folie mit Rheinmetall-Logo, \"Development and production of mission systems and electronic suites ... propulsion\" auf der Leonardo-Folie (\"European synergy\"). Dokumentbefund Korrektur bestätigt. Gleichanteil 50/50 und Programme NMBT/A2CS (16 Varianten) belegt.",
+   "reason": "Statement schreibt dem JV \"produziert Fahrzeugwannen sowie weitere Varianten\" zu; die Seite weist Wannenfertigung/Lieferung weiterer Varianten als Rheinmetall-Teilbeitrag innerhalb der Programme aus, nicht als JV-Tätigkeit. Folge: Aktivität it-lrmv (kind integration, status operational, Endmontage/Zulassungstests/Auslieferung/Logistik) stützt sich dann nur auf P-R50 (Plan: Aktivitäten \"sollen\" in Italien stattfinden) und die Übergabe der ersten vier Lynx (P-V31).",
+   "action": "(1) P-R51: Statement ändern in \"führt die Programme NMBT und A2CS (16 Varianten); Rheinmetall-Teilbeitrag laut Seite: Wannenfertigung und Lieferung weiterer Varianten (inkl. Flugabwehr), Leonardo-Teilbeitrag: Missionssysteme, Elektronik, Antrieb\"; kein \"JV produziert\". (2) Region it, Aktivität it-lrmv: description auf belegte Auslieferung (\"erste vier Lynx am 27.01.2026 in Montelibretti übergeben\", P-V31) begrenzen und Endmontage/Zulassungstests/Logistik als Planangabe (P-R50) kennzeichnen oder die Aktivität auf status announced setzen; claim_ids ggf. um nicht mehr tragende P-R51 bereinigen.",
+   "owner": "portfolio"
+  },
+  {
+   "claim_ids": [
+    "P-R100"
+   ],
+   "depth": "A",
+   "status": "Korrektur",
+   "note": "Konzernliste S-d195b923c24e0507 gelesen: Unter \"Subsidiaries of the Vehicle Systems Division\" stehen \"American Rheinmetall\" und \"American Rheinmetall Defense, Inc.\", unter \"International Subsidiaries - Hubs\" ebenfalls \"American Rheinmetall Defense, Inc.\", unter Weapon and Ammunition \"American Rheinmetall Munitions, Inc.\"; eine Einheit \"American Rheinmetall Vehicles\" steht dort nicht. DBA-Fußnote (S-495b6b686aece696) und Vienna VA (AUSA-PM) belegt; das Statement ist inhaltlich jetzt tragfähig.",
+   "reason": "Evidenzzeile 3 behauptet \"American Rheinmetall und American Rheinmetall Vehicles unter Subsidiaries of the Vehicle Systems Division\" (falsch: dort stehen American Rheinmetall und American Rheinmetall Defense, Inc.); ownership_note us-hub nennt nur die Hub-Rubrik, obwohl ARD Inc. in der Liste auch unter Vehicle Systems geführt wird; \"zwei Gesellschaften\" dadurch relativiert.",
+   "action": "P-R100 evidence/Paraphrase Nr. 3 korrigieren (\"American Rheinmetall\" und \"American Rheinmetall Defense, Inc.\" unter Vehicle Systems Division; ARD Inc. zusätzlich unter International Subsidiaries - Hubs; American Rheinmetall Munitions, Inc. unter Weapon and Ammunition; ARV LLC nur laut Anteilsbesitzliste C-STR-24 und DBA-Fußnote); ownership_note von us-hub und us-hq daran angleichen; Statement \"zwei Gesellschaften\" durch \"American Rheinmetall (dba ARV LLC) und American Rheinmetall Defense, Inc. (US-Hub; in der Konzernliste auch unter Vehicle Systems)\" ersetzen.",
+   "owner": "portfolio"
+  },
+  {
+   "claim_ids": [
+    "M-KND-01"
+   ],
+   "depth": "A",
+   "status": "Korrektur",
+   "note": "KNDS-Katalog S-2a19a44bae9c9218 und Produktseite S-aadcb3da199c3d17 gelesen: Produktseite nennt Kompatibilität PZH2000, K9, Archer (Archer damit gedeckt, Claim-Text schreibt es richtig der Produktseite zu), Katalog LU 211 \"Base Bleed, IM\", kompatibel K9/M109. \"Hollow Base\" beim LU 211 steht in keiner der beiden Quellen.",
+   "reason": "Teilaussage \"LU 211 (HE, Hollow Base/Base Bleed, auch IM)\" nicht durch die zugeordneten Quellen gedeckt.",
+   "action": "M-KND-01: \"Hollow Base/\" streichen (LU 211: HE, Base Bleed, auch IM); Archer-Teil unverändert lassen (Produktseite).",
+   "owner": "market"
+  },
+  {
+   "claim_ids": [
+    "P-R60"
+   ],
+   "depth": "A",
+   "status": "Korrektur",
+   "note": "PM 18.08.2023 (S-c36a781afbd14e05) gelesen: offizielle Eröffnung der Lynx-Fabrik 18.08.2023, Rheinmetall Hungary Zrt. mit Sitz dort; Entwicklungs-, Produktions- und Testzentrum auf 33 ha einschließlich Schießtunnel wird als \"is now being built\" beschrieben. PM 2024 (S-df4cbdd63bde02d6, P-R61) nennt den Testbereich als vorhanden.",
+   "reason": "Statement stellt das Testzentrum samt Schießtunnel als mit dem Werk am 18.08.2023 eröffnet dar; die Quelle des Claims beschreibt es als im Bau.",
+   "action": "P-R60 auf Werkseröffnung 18.08.2023 und Sitz/Entwicklung/Fertigung beschränken; Testzentrum mit Schießtunnel nur mit späterer Quelle (PM 07/2024, S-df4cbdd63bde02d6) und Datum aufnehmen (Quelle zu P-R60 ergänzen oder auf P-R61 verweisen); hu-zala-dev-Beschreibung (Region hu, status_date 2023-08-18) entsprechend anpassen.",
+   "owner": "portfolio"
+  },
+  {
+   "claim_ids": [
+    "T-E24",
+    "T-E19",
+    "T-E07",
+    "T-04",
+    "T-E15",
+    "T-E18",
+    "P-S01",
+    "P-D30",
+    "P-V71",
+    "P-V31",
+    "P-R80",
+    "C-TEC-03",
+    "C-STR-29",
+    "C-MKT-03",
+    "C-MKT-02",
+    "C-MKT-01",
+    "C-STR-20",
+    "C-STR-33",
+    "C-STR-15",
+    "C-MKT-12",
+    "M-RHM-04"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Korrektur aus Runde 1 sachgerecht umgesetzt und gegen das Original erneut geprüft (Statement/Unsicherheit/event_date bzw. Status, zugehörige module_views und Kanten): Produktions- statt Serienbegriff (T-E24, P-D30, ev-spock); Nordamerika-Unsicherheit (T-E19); NVL Erwerb 27.02./Übergang 01.03./Meldung 02.03. einheitlich, ev-nvl_close 2026-02-27 (T-E07); Naval Systems erst ab März 2026, cf-segments neu beschriftet (T-04, P-S01); Vergabe 29.05.2026, ev-romania 2026-05-29 (T-E15); 51/49 DOK-ING (T-E18); PATH-Formulierung abgeschwächt (P-V71); 4+16=20 gekennzeichnet (P-V31); VMZ-Status \"umstritten\" mit Verweis auf C-STR-33 in P-R80, E46, Region bg, G-P02 (P-R80, C-STR-33); Anduril: Raketenmotoren nur Sondierung, E59 (C-TEC-03); 49 % direkt/13 % indirekt, E44/E45 (C-STR-29); IdZ-ES-Quellkonflikt 1,7 vs. 3,1 Mrd. im Claim mit Quelle S-8570241741649c2a (C-MKT-03); Schakal 4,7/3,4/2,9 und ESD-Konflikt, E73 (C-MKT-02); E71/E72 jetzt Lieferant -> PSM, Anteile je Quelle (C-MKT-01); UDI als \"ukrainischer Staatskonzern\" laut GB 2024 S. 31 belegt, Knoten udi (C-STR-20); E14 mit Vollzugsquelle PM 02.03.2026 und Unsicherheit (C-STR-15); \"$72 Mio.\" ohne AUD, Betrieb bis Ende 2028, E83 (C-MKT-12); JV-Vertrag statt Gründung, event_status (M-RHM-04). Hinweis (nicht blockierend) T-E07: Unsicherheit \"Kaufpreis nicht veröffentlicht\" mit dem Halbjahresbericht-Preis (C-STR-14) abgleichen."
+  },
+  {
+   "claim_ids": [
+    "C-STR-21"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Teilbeiträge Anteilsbesitzliste (51 % indirekt) und PM 04.11.2025 (Betreiber, 300 Mio. EUR, JV-Partner EPSO-G) geprüft; \"staatlich\" entfernt, Knoten epsog \"EPSO-G (Litauen)\". Nicht blockierend: Das Statement führt \"die litauische EPSO-G\" als \"laut Rheinmetall\", die PM nennt die Herkunft nicht; \"litauische\" aus der Rheinmetall-Zuschreibung lösen."
+  },
+  {
+   "claim_ids": [
+    "P-N50"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "PM 20.04.2026 gelesen; Unsicherheit zum JV-Datum (März 2026 vs. \"last year\") jetzt ergänzt (Verweis C-STR-13). Konflikt bleibt offen und ist ausgewiesen."
+  },
+  {
+   "claim_ids": [
+    "C-STR-13"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Halbjahresbericht S. 9, Naval News und PM 20.04.2026 als Teilbeiträge A geprüft; Datumskonflikt ungelöst, in Unsicherheit dokumentiert."
+  },
+  {
+   "claim_ids": [
+    "M-RHM-03"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "PM Spatenstich 12.02.2024 gelesen; Verweis auf überholte Kapazität (350.000, P-W10) und depends_on ergänzt; als Ankündigung 2024 korrekt datiert."
+  },
+  {
+   "claim_ids": [
+    "M-NAM-08"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Teilbeiträge Jahresbericht-Meldung 2025, Standortseite Raufoss und Nammo-Seite (Fertigung in neun Ländern, zwei Vertriebsbüros) A geprüft; O-nammo-industrial nun gedeckt."
+  },
+  {
+   "claim_ids": [
+    "T-20",
+    "T-E29"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Finanzkalender (Q3 05.11.2026; CMD 25.-27.11., Blohm+Voss) und CMD-Seite (26.-27.11.) als Teilbeiträge geprüft; Ortsangabe jetzt dem Finanzkalender zugeschrieben, Datumsabweichung ausgewiesen."
+  },
+  {
+   "claim_ids": [
+    "C-STR-14"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "GB 2025 S. 265 (27.02.2026, 100 %, vorläufiger Kaufpreis 1.515 Mio. EUR gezahlt; Kaufpreisbandbreite 1.515-1.650), Halbjahresbericht, PM 02.03.2026 (Übergang 01.03., Preis vertraulich) und defence-network als Teilbeiträge A geprüft; Datums-/Preisabweichung ausgewiesen."
+  },
+  {
+   "claim_ids": [
+    "C-STR-03"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "GB S. 265 und Halbjahresbericht S. 8 als Teilbeiträge geprüft; trennt 01.01.2026 und März 2026 korrekt."
+  },
+  {
+   "claim_ids": [
+    "C-CAP-04"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "GB 2025 S. 263 gelesen; GS/MS/BoA/UBS wörtlich. BlackRock 5,09 % (03.03.2022) und FMR stehen in derselben Tabelle, sind aber durch neuere Meldungen in C-CAP-02/-03 abgedeckt; kein Vollständigkeitsanspruch im Claim. Nicht blockierend: als Auszug kennzeichnen (BlackRock/FMR siehe C-CAP-02/-03)."
+  },
+  {
+   "claim_ids": [
+    "M-KND-03"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "EDR- und ESuT-Teilbeiträge A geprüft; gemeinsam tragen sie das Statement (ESuT \"ein Vertrag\"/\"Junghans Defence\" ist Medienabweichung, EDR maßgeblich)."
+  },
+  {
+   "claim_ids": [
+    "P-V12"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "dpa-AFX/Capital und Defence Blog als Teilbeiträge geprüft; Rheinmetall-Aussage nur über dpa-AFX, als Medienbericht gekennzeichnet."
+  },
+  {
+   "claim_ids": [
+    "P-R30",
+    "P-V50",
+    "P-V72",
+    "P-R150",
+    "C-MKT-06",
+    "P-A14",
+    "P-A10",
+    "H-02"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Teilbeiträge der zugeordneten Quellen jeweils A geprüft; gemeinsam tragen sie die Statements; Herstellerangaben und Begriffs-/Zeitgrenzen sind in den Claims gekennzeichnet."
+  },
+  {
+   "claim_ids": [
+    "P-D11"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "PM 27.04.2026 wörtlich belegt (bis 3,1 Mrd. brutto); Quellkonflikt in C-MKT-03 jetzt ausgewiesen. Nicht blockierend: Querverweis auf C-MKT-03 in der Unsicherheit."
+  },
+  {
+   "claim_ids": [
+    "P-V10"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "PM 20.10.2025 wörtlich belegt (4,7 Mrd. brutto, Anteil knapp 3,4 Mrd.); Konflikt in C-MKT-02 ausgewiesen."
+  },
+  {
+   "claim_ids": [
+    "H-M01",
+    "H-M08"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Handelsblatt-Seiten: Bezahlschranke, nur Anreißer/Bildunterschrift/Eingangsfrage; Aussagen auf Teaser begrenzt, Medienzeilen pm-01/pm-08 kennzeichnen die Grenze."
+  },
+  {
+   "claim_ids": [
+    "M-HAN-06"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "GBP: nur Teaser; Freigabe nur im Teaserumfang (Unsicherheit im Claim, Beobachtung \"teilweise\")."
+  },
+  {
+   "claim_ids": [
+    "C-STR-31"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Konzernanhang Ziffer (36), Governance S. 171 und Halbjahresbericht Ziffer 12 als Teilbeiträge geprüft. Personenbezug: Related-Party-Offenlegung des Unternehmens mit direktem Geschäftsbezug, beruflich/geschäftlich zulässig, keine privaten Personendaten; Darstellung nur als \"nahestehendes Unternehmen laut Konzernanhang\" mit den Rheinmetall-Aussagen (marktüblich, Aufsichtsrat genehmigt), ohne Wertung; Kanten E07-E09 gedeckt."
+  },
+  {
+   "claim_ids": [
+    "P-N02"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "PM 02.03.2026: Übergang 01.03.; Datumsabweichung 27.02./01.03. in Unsicherheit."
+  },
+  {
+   "claim_ids": [
+    "P-R90"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "PM 04.11.2025 gelesen; \"as early as 2026\". Nicht blockierend: \"ab 2026\" als \"frühestens 2026\" formulieren; M-RHM-07 Verzögerung."
+  },
+  {
+   "claim_ids": [
+    "P-N10",
+    "T-E09",
+    "T-E13"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Quellen gelesen. Nicht blockierend: P-N10 \"Rheinmetall taufte\" verkürzt (Taufpatin), T-E09 Datum = Artikeldatum, T-E13 Label zeigt Abwicklungsdatum 28.05. (Platzierung 21.05.)."
+  },
+  {
+   "claim_ids": [
+    "C-CAP-01",
+    "C-CAP-02",
+    "C-CAP-03",
+    "C-MKT-04",
+    "C-MKT-05",
+    "C-MKT-07",
+    "C-MKT-08",
+    "C-MKT-09",
+    "C-MKT-10",
+    "C-MKT-11",
+    "C-MKT-13",
+    "C-MKT-15",
+    "C-STR-01",
+    "C-STR-02",
+    "C-STR-04",
+    "C-STR-05",
+    "C-STR-06",
+    "C-STR-07",
+    "C-STR-08",
+    "C-STR-09",
+    "C-STR-10",
+    "C-STR-11",
+    "C-STR-12",
+    "C-STR-16",
+    "C-STR-17",
+    "C-STR-18",
+    "C-STR-19",
+    "C-STR-22",
+    "C-STR-23",
+    "C-STR-24",
+    "C-STR-25",
+    "C-STR-26",
+    "C-STR-27",
+    "C-STR-28",
+    "C-STR-30",
+    "C-STR-34",
+    "C-STR-35",
+    "C-STR-36",
+    "C-STR-37",
+    "C-STR-38",
+    "C-TEC-01",
+    "C-TEC-02",
+    "C-TEC-04",
+    "C-TEC-05",
+    "C-TEC-06",
+    "C-TEC-07",
+    "C-TEC-08",
+    "C-TEC-09",
+    "H-01",
+    "H-03",
+    "H-04",
+    "H-05",
+    "H-06",
+    "H-07",
+    "H-08",
+    "H-09",
+    "H-M02",
+    "H-M03",
+    "H-M04",
+    "H-M05",
+    "H-M06",
+    "H-M07",
+    "H-M09",
+    "M-BAE-01",
+    "M-BAE-02",
+    "M-BAE-03",
+    "M-BAE-04",
+    "M-BAE-05",
+    "M-BAE-06",
+    "M-GDO-01",
+    "M-GDO-02",
+    "M-GDO-03",
+    "M-GDO-04",
+    "M-GDO-05",
+    "M-GDO-06",
+    "M-HAN-01",
+    "M-HAN-02",
+    "M-HAN-03",
+    "M-HAN-04",
+    "M-HAN-05",
+    "M-HAN-07",
+    "M-KND-02",
+    "M-KND-04",
+    "M-KND-05",
+    "M-KND-06",
+    "M-KND-07",
+    "M-KND-08",
+    "M-KND-09",
+    "M-MKT-01",
+    "M-MKT-02",
+    "M-MKT-03",
+    "M-MKT-04",
+    "M-MKT-05",
+    "M-MKT-06",
+    "M-MKT-07",
+    "M-NAM-01",
+    "M-NAM-02",
+    "M-NAM-03",
+    "M-NAM-04",
+    "M-NAM-05",
+    "M-NAM-06",
+    "M-NAM-07",
+    "M-RHM-01",
+    "M-RHM-02",
+    "M-RHM-05",
+    "M-RHM-06",
+    "M-RHM-07",
+    "P-A01",
+    "P-A02",
+    "P-A11",
+    "P-A12",
+    "P-A13",
+    "P-A30",
+    "P-A40",
+    "P-A50",
+    "P-C01",
+    "P-C02",
+    "P-C03",
+    "P-D01",
+    "P-D02",
+    "P-D10",
+    "P-D12",
+    "P-D13",
+    "P-D14",
+    "P-D20",
+    "P-D31",
+    "P-D40",
+    "P-D50",
+    "P-D60",
+    "P-N01",
+    "P-N03",
+    "P-N20",
+    "P-N30",
+    "P-N31",
+    "P-N40",
+    "P-N60",
+    "P-N61",
+    "P-R01",
+    "P-R02",
+    "P-R03",
+    "P-R10",
+    "P-R110",
+    "P-R120",
+    "P-R130",
+    "P-R140",
+    "P-R160",
+    "P-R20",
+    "P-R40",
+    "P-R50",
+    "P-R61",
+    "P-R70",
+    "P-R72",
+    "P-R95",
+    "P-R96",
+    "P-R97",
+    "P-R98",
+    "P-S02",
+    "P-S04",
+    "P-S05",
+    "P-V01",
+    "P-V02",
+    "P-V11",
+    "P-V13",
+    "P-V14",
+    "P-V15",
+    "P-V16",
+    "P-V17",
+    "P-V20",
+    "P-V21",
+    "P-V30",
+    "P-V32",
+    "P-V33",
+    "P-V34",
+    "P-V35",
+    "P-V40",
+    "P-V41",
+    "P-V51",
+    "P-V52",
+    "P-V60",
+    "P-V70",
+    "P-W01",
+    "P-W02",
+    "P-W10",
+    "P-W11",
+    "P-W12",
+    "P-W13",
+    "P-W20",
+    "P-W21",
+    "P-W30",
+    "P-W31",
+    "P-W33",
+    "P-W40",
+    "P-W41",
+    "P-W50",
+    "P-W51",
+    "P-W60",
+    "T-01",
+    "T-02",
+    "T-03",
+    "T-05",
+    "T-06",
+    "T-07",
+    "T-08",
+    "T-09",
+    "T-10",
+    "T-11",
+    "T-12",
+    "T-13",
+    "T-14",
+    "T-15",
+    "T-16",
+    "T-17",
+    "T-18",
+    "T-19",
+    "T-21",
+    "T-E01",
+    "T-E02",
+    "T-E03",
+    "T-E04",
+    "T-E05",
+    "T-E06",
+    "T-E08",
+    "T-E10",
+    "T-E11",
+    "T-E12",
+    "T-E14",
+    "T-E16",
+    "T-E17",
+    "T-E20",
+    "T-E21",
+    "T-E22",
+    "T-E23",
+    "T-E25",
+    "T-E26",
+    "T-E27",
+    "T-E28",
+    "T-E30"
+   ],
+   "depth": "A",
+   "status": "geprüft",
+   "note": "Aussage, Zeitbezug, Aussageursprung und Status gegen die zugeordneten Originalquellen durch den Dokumentjob geprüft (Originalbelegstelle gelesen, kein Quellenproblem gemeldet); Leitprüfung: alle Quellenbefunde des Claims vorhanden und geprüft, Teilbeiträge tragen das Statement gemeinsam, keine Überdehnung oder unaufgelöster Quellkonflikt erkannt, Hersteller-/Medienangaben und Planwerte bleiben gekennzeichnet, Zuordnung in module_views geprüft."
+  },
+  {
+   "claim_ids": [
+    "C-CAP-05",
+    "C-MKT-14",
+    "C-STR-32",
+    "P-S03"
+   ],
+   "depth": "B",
+   "status": "geprüft",
+   "note": "Aussage, Zeitbezug, Aussageursprung und Status gegen die zugeordneten Originalquellen durch den Dokumentjob geprüft (Originalbelegstelle gelesen, kein Quellenproblem gemeldet); Leitprüfung: alle Quellenbefunde des Claims vorhanden und geprüft, Teilbeiträge tragen das Statement gemeinsam, keine Überdehnung oder unaufgelöster Quellkonflikt erkannt, Hersteller-/Medienangaben und Planwerte bleiben gekennzeichnet, Zuordnung in module_views geprüft."
+  }
+ ]
+}
