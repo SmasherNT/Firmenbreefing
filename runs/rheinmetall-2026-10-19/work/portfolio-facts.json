@@ -4098,7 +4098,11 @@
     "P-N20",
     "P-N40",
     "P-N50",
-    "P-R03"
+    "P-R03",
+    "C-STR-11",
+    "C-STR-13",
+    "C-STR-14",
+    "C-STR-25"
    ],
    "activities": [
     {
@@ -4148,7 +4152,8 @@
      "status": "operational",
      "status_date": "2026-07-23",
      "claim_ids": [
-      "P-W40"
+      "P-W40",
+      "C-STR-25"
      ],
      "site_id": "de-aschau",
      "ownership_note": "Nitrochemie Aschau wird in der Rheinmetall-Mitteilung als 'Rheinmetall subsidiary' bezeichnet."
@@ -4191,7 +4196,7 @@
      "id": "de-neuss-sat",
      "actor": "Rheinmetall ICEYE Space Solutions GmbH",
      "country": "Deutschland",
-     "location": "Neuss",
+     "location": "Neuss (ICEYE-JV-Fertigung)",
      "product_scope": "SAR-Aufklärungssatelliten (SPOCK 1)",
      "description": "Satellitenproduktion, Integration, Test und Qualitätssicherung in Neuss gestartet",
      "kind": "production",
@@ -4199,9 +4204,16 @@
      "status": "operational",
      "status_date": "2026-10-06",
      "claim_ids": [
-      "P-D30"
+      "P-D30",
+      "C-STR-11"
      ],
-     "control": "unknown"
+     "control": "sole",
+     "control_note": "Rheinmetall hält 60 %, ICEYE Oy 40 %; Gesellschaft ist in der Anteilsbesitzliste vollkonsolidiert (Beherrschung aus Konzernabschluss abgeleitet).",
+     "control_claim_ids": [
+      "C-STR-11"
+     ],
+     "site_id": "de-neuss-iceye",
+     "ownership_note": "Beherrschtes JV (vollkonsolidiert)."
     },
     {
      "id": "de-weeze",
@@ -4234,7 +4246,8 @@
      "claim_ids": [
       "P-N01",
       "P-N10",
-      "P-R02"
+      "P-R02",
+      "C-STR-14"
      ],
      "site_id": "de-hamburg-bv",
      "ownership_note": "Werft gehört laut Rheinmetall-Mitteilung seit dem 1.3.2026 zur Division Naval Systems (NVL-Übernahme vollzogen)."
@@ -4306,7 +4319,8 @@
      "status": "operational",
      "status_date": "2026-04-20",
      "claim_ids": [
-      "P-N50"
+      "P-N50",
+      "C-STR-13"
      ],
      "control": "unknown"
     }
@@ -4328,7 +4342,8 @@
     "P-V13",
     "P-V14",
     "P-V40",
-    "P-W02"
+    "P-W02",
+    "C-STR-06"
    ],
    "activities": [
     {
@@ -4345,9 +4360,16 @@
      "claim_ids": [
       "P-R10",
       "P-V13",
-      "P-V40"
+      "P-V40",
+      "C-STR-06"
      ],
-     "control": "unknown"
+     "control": "sole",
+     "control_note": "Rheinmetall hält indirekt 55 % an RBSL; die Gesellschaft steht laut Anteilsbesitzliste unter den vollkonsolidierten Tochterunternehmen (Beherrschung aus Konzernabschluss abgeleitet).",
+     "control_claim_ids": [
+      "C-STR-06"
+     ],
+     "site_id": "gb-telford-rbsl",
+     "ownership_note": "Beherrschtes JV (vollkonsolidiert, 55/45 BAE Systems laut Gründungsbericht 2019)."
     },
     {
      "id": "gb-gun",
@@ -4508,7 +4530,8 @@
    "claim_ids": [
     "P-R40",
     "P-W20",
-    "P-C01"
+    "P-C01",
+    "C-STR-24"
    ],
    "activities": [
     {
@@ -4523,7 +4546,8 @@
      "status": "operational",
      "status_date": null,
      "claim_ids": [
-      "P-R40"
+      "P-R40",
+      "C-STR-24"
      ],
      "site_id": "es-madrid",
      "ownership_note": "Seit 1.8.2023 hundertprozentige Tochter laut Unternehmensseite."
@@ -4598,7 +4622,8 @@
     "P-R51",
     "P-V31",
     "P-A14",
-    "P-D31"
+    "P-D31",
+    "C-STR-09"
    ],
    "activities": [
     {
@@ -4650,7 +4675,8 @@
      "claim_ids": [
       "P-R50",
       "P-R51",
-      "P-V31"
+      "P-V31",
+      "C-STR-09"
      ],
      "control": "unknown"
     }
@@ -4671,7 +4697,8 @@
     "P-R60",
     "P-R61",
     "P-V32",
-    "P-R03"
+    "P-R03",
+    "C-STR-19"
    ],
    "activities": [
     {
@@ -4687,9 +4714,16 @@
      "status_date": "2023-08-18",
      "claim_ids": [
       "P-R60",
-      "P-R61"
+      "P-R61",
+      "C-STR-19"
      ],
-     "control": "unknown"
+     "control": "sole",
+     "control_note": "Rheinmetall hält indirekt 51 %, die Gesellschaft ist laut Anteilsbesitzliste vollkonsolidiert (Beherrschung aus Konzernabschluss abgeleitet).",
+     "control_claim_ids": [
+      "C-STR-19"
+     ],
+     "site_id": "hu-zalaegerszeg",
+     "ownership_note": "Beherrschtes JV (51/49 mit ungarischer Regierung, vollkonsolidiert)."
     },
     {
      "id": "hu-zala-prod",
@@ -4705,9 +4739,16 @@
      "claim_ids": [
       "P-R60",
       "P-R61",
-      "P-V32"
+      "P-V32",
+      "C-STR-19"
      ],
-     "control": "unknown"
+     "control": "sole",
+     "control_note": "Rheinmetall hält indirekt 51 %, die Gesellschaft ist laut Anteilsbesitzliste vollkonsolidiert (Beherrschung aus Konzernabschluss abgeleitet).",
+     "control_claim_ids": [
+      "C-STR-19"
+     ],
+     "site_id": "hu-zalaegerszeg",
+     "ownership_note": "Beherrschtes JV (51/49 mit ungarischer Regierung, vollkonsolidiert)."
     }
    ],
    "coverage_note": "Hälftige Kontrolle nicht belegt (51/49 Beteiligung genannt); Munitionswerk Várpalota nur als Gesellschaftsname/Investorenfolie, nicht mit eigener Quelle belegt."
@@ -4726,7 +4767,9 @@
     "P-R70",
     "P-R72",
     "P-N31",
-    "P-V30"
+    "P-V30",
+    "C-STR-37",
+    "C-STR-25"
    ],
    "activities": [
     {
@@ -4741,7 +4784,8 @@
      "status": "operational",
      "status_date": null,
      "claim_ids": [
-      "P-R70"
+      "P-R70",
+      "C-STR-25"
      ],
      "site_id": "ro-medias",
      "ownership_note": "Rheinmetall hält 72,5 % über Rheinmetall Landsysteme; Gesellschaft wird in der Konzernliste der Division Vehicle Systems geführt."
@@ -4792,7 +4836,8 @@
      "status": "announced",
      "status_date": "2026-10-19",
      "claim_ids": [
-      "P-N31"
+      "P-N31",
+      "C-STR-37"
      ],
      "control": "unknown"
     },
@@ -4830,7 +4875,8 @@
    "claim_ids": [
     "P-N30",
     "P-R80",
-    "P-R150"
+    "P-R150",
+    "C-STR-33"
    ],
    "activities": [
     {
@@ -4863,7 +4909,8 @@
      "status": "announced",
      "status_date": "2025-10-28",
      "claim_ids": [
-      "P-R80"
+      "P-R80",
+      "C-STR-33"
      ],
      "control": "unknown"
     }
@@ -4882,7 +4929,8 @@
    "focus": false,
    "claim_ids": [
     "P-R90",
-    "P-W13"
+    "P-W13",
+    "C-STR-21"
    ],
    "activities": [
     {
@@ -4897,7 +4945,8 @@
      "status": "announced",
      "status_date": "2025-11-04",
      "claim_ids": [
-      "P-R90"
+      "P-R90",
+      "C-STR-21"
      ],
      "control": "unknown"
     }
@@ -4915,7 +4964,8 @@
    "product_scope": "155-mm-Artilleriemunition",
    "focus": false,
    "claim_ids": [
-    "P-R95"
+    "P-R95",
+    "C-STR-35"
    ],
    "activities": [
     {
@@ -4930,7 +4980,8 @@
      "status": "announced",
      "status_date": "2025-09-25",
      "claim_ids": [
-      "P-R95"
+      "P-R95",
+      "C-STR-35"
      ],
      "control": "unknown"
     }
@@ -5090,7 +5141,8 @@
     "P-R98",
     "P-V72",
     "P-W12",
-    "P-V33"
+    "P-V33",
+    "C-STR-20"
    ],
    "activities": [
     {
@@ -5105,9 +5157,16 @@
      "status": "operational",
      "status_date": null,
      "claim_ids": [
-      "P-R98"
+      "P-R98",
+      "C-STR-20"
      ],
-     "control": "unknown"
+     "control": "sole",
+     "control_note": "Rheinmetall hält indirekt 51 %, die Gesellschaft ist laut Anteilsbesitzliste vollkonsolidiert (Beherrschung aus Konzernabschluss abgeleitet).",
+     "control_claim_ids": [
+      "C-STR-20"
+     ],
+     "site_id": "ua-west",
+     "ownership_note": "Beherrschtes JV (vollkonsolidiert)."
     },
     {
      "id": "ua-customer",
@@ -5143,7 +5202,8 @@
     "P-V34",
     "P-V35",
     "P-V70",
-    "P-R40"
+    "P-R40",
+    "C-STR-24"
    ],
    "activities": [
     {
@@ -5176,7 +5236,8 @@
      "status_date": "2026-10-12",
      "claim_ids": [
       "P-V34",
-      "P-V35"
+      "P-V35",
+      "C-STR-24"
      ],
      "site_id": "us-sterling-heights",
      "ownership_note": "CRS nennt American Rheinmetall Vehicles LLC (Sterling Heights, Michigan) als Auftragnehmer; Gesellschaft unter dem Namen American Rheinmetall geführt."
@@ -5304,7 +5365,8 @@
     "P-R120",
     "P-V11",
     "P-V15",
-    "P-A50"
+    "P-A50",
+    "C-STR-23"
    ],
    "activities": [
     {
@@ -5423,7 +5485,8 @@
      "status": "operational",
      "status_date": null,
      "claim_ids": [
-      "P-R120"
+      "P-R120",
+      "C-STR-23"
      ],
      "control": "unknown"
     }
@@ -5493,7 +5556,8 @@
    "product_scope": "Artillerie-, Mörser- und Infanteriemunition, Treibstoffe",
    "focus": false,
    "claim_ids": [
-    "P-R140"
+    "P-R140",
+    "C-STR-22"
    ],
    "activities": [
     {
@@ -5508,9 +5572,16 @@
      "status": "operational",
      "status_date": null,
      "claim_ids": [
-      "P-R140"
+      "P-R140",
+      "C-STR-22"
      ],
-     "control": "unknown"
+     "control": "sole",
+     "control_note": "Rheinmetall Waffe Munition hält 51 %; Anteilsbesitzliste 2025 bestätigt Vollkonsolidierung (Beherrschung aus Konzernabschluss abgeleitet).",
+     "control_claim_ids": [
+      "C-STR-22"
+     ],
+     "site_id": "za-somerset-west",
+     "ownership_note": "Beherrschtes JV (vollkonsolidiert, 51/49 mit Denel)."
     },
     {
      "id": "za-rdm-prod",
@@ -5524,9 +5595,16 @@
      "status": "operational",
      "status_date": null,
      "claim_ids": [
-      "P-R140"
+      "P-R140",
+      "C-STR-22"
      ],
-     "control": "unknown"
+     "control": "sole",
+     "control_note": "Rheinmetall Waffe Munition hält 51 %; Anteilsbesitzliste 2025 bestätigt Vollkonsolidierung (Beherrschung aus Konzernabschluss abgeleitet).",
+     "control_claim_ids": [
+      "C-STR-22"
+     ],
+     "site_id": "za-somerset-west",
+     "ownership_note": "Beherrschtes JV (vollkonsolidiert, 51/49 mit Denel)."
     }
    ],
    "coverage_note": "Rheinmetall hält 51 %; Kontrollrechte nicht belegt. Rheinmetall Laingsdale (Pty) Ltd und Rheinmetall Resonant South Africa nur als Gesellschaftsnamen gelistet."
@@ -5618,5 +5696,22 @@
    "activities": [],
    "coverage_note": "Offene Abdeckung: weder Büros, Partner noch Lieferungen in den beiden Ländern wurden aus geöffneten Quellen belegt; das beweist keine fehlende Aktivität."
   }
+ ],
+ "reuse_claim_ids": [
+  "C-STR-06",
+  "C-STR-09",
+  "C-STR-11",
+  "C-STR-13",
+  "C-STR-14",
+  "C-STR-19",
+  "C-STR-20",
+  "C-STR-21",
+  "C-STR-22",
+  "C-STR-23",
+  "C-STR-24",
+  "C-STR-25",
+  "C-STR-33",
+  "C-STR-35",
+  "C-STR-37"
  ]
 }
