@@ -1,0 +1,1361 @@
+{
+ "schema_version": 1,
+ "format": "review-source-part-v1",
+ "run_id": "rheinmetall-2026-10-19",
+ "company": "Rheinmetall AG",
+ "as_of": "2026-10-19",
+ "phase": "basis",
+ "job_id": "sources-3",
+ "review_work_fingerprint": "f19636ccbe61c0623f347471bdbe6bbd5d3c5fe906c0831ad7e2995be9d540b1",
+ "plan_fingerprint": "fb3d5282ed4b6696eefa661c2acfc992ca596b316df13c25fb3f976030e713b4",
+ "documents": [
+  {
+   "source_id": "S-04cc080af88f833d",
+   "original_read": true,
+   "note": "Gespeichertes Original (Rheinmetall-Pressemitteilung 06.10.2026) vollständig gelesen: Key Facts, Absätze 1-5 inkl. CEO-Zitate Papperger/Modrzewski. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-TEC-04",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Original bestätigt: Bundeswehr hat direkten Zugriff auf mehrere ausschließlich dafür vorgesehene SAR-Satelliten, Rheinmetall ICEYE Space Solutions betreibt sie, Produktion in Neuss begonnen, Modrzewski verweist auf ICEYE-Betriebserfahrung. Satellitenzahl nicht genannt, Herstellerangabe (Pressemitteilung 06.10.2026). Für Kante E75 trägt diese Quelle nur den Programm-/Umsetzungsstatus (SPOCK 1, Bundeswehr als Kunde), nicht Auftragswert/Laufzeit."
+    },
+    {
+     "claim_id": "H-M06",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Papperger-Zitat im Original wörtlich vorhanden (Z. 20): weniger als ein Jahr nach Vertragsunterzeichnung direkter Zugriff, Produktionsstart Neuss belegt industrielle Skalierung in Deutschland. Herstellerzitat."
+    },
+    {
+     "claim_id": "P-D30",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: mehrere dedizierte SAR-Satelliten, selbst beauftragbar, Betrieb durch RISS GmbH, Fertigung Neuss begonnen, Ziel mehrere Dutzend Satelliten pro Jahr. Hinweis: das Feld event_status nennt Serienproduktion, die Quelle sagt nur Produktion/industrielle Umsetzung begonnen; Aussagetext selbst ist korrekt."
+    },
+    {
+     "claim_id": "T-E24",
+     "depth": "A",
+     "status": "Korrektur",
+     "note": "Zugriff auf mehrere dedizierte SAR-Satelliten und Produktionsstart in Neuss bestätigt (06.10.2026). Die Quelle sagt jedoch nur, die Satellitenproduktion habe begonnen (Übergang von Planung/Entwicklung zur industriellen Umsetzung, Ziel mehrere Dutzend pro Jahr), nicht Serienfertigung.",
+     "reason": "Formulierung Serienfertigung geht über den Beleg hinaus (Reifegradangabe nicht getragen).",
+     "action": "Aussage auf Produktions-/Fertigungsbeginn in Neuss begrenzen; Statusfeld analog (auch bei P-D30 event_status).",
+     "owner": "Faktenrolle technology (T)"
+    }
+   ]
+  },
+  {
+   "source_id": "S-052e7d1e29545a63",
+   "original_read": true,
+   "note": "Nammo-Standortseite Mesa (Arizona) gelesen, Absatz zu Standort/Produkten (Z. 24-29). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-NAM-07",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Mesa: Seite sagt, der Standort Mesa fertige kommerzielle Munition und Treibladungspulver (Propellant powder). Vihtavuori-Angaben (1922, 33 Mio EUR) und Konzernbeschreibung stehen nicht auf dieser Seite und gehören zu anderen Quellen des Claims."
+    }
+   ]
+  },
+  {
+   "source_id": "S-078c6e124a0a035b",
+   "original_read": true,
+   "note": "Rheinmetall-Meldung 03.08.2026 (PDF, Zweispaltenlayout) Z. 7-29 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "T-E19",
+     "depth": "A",
+     "status": "Korrektur",
+     "note": "Daten im Original bestätigt: 03.08.2026, 140 m, über 6.000 t, Lenkwaffenfregatte, Luft-/Raketenabwehr, U-Boot-Jagd, Langstreckenwirkung, Zielmarkt international. Kein Kunde benannt. Unsicherheitsfeld ist jedoch falsch: Das Original selbst sagt, Rheinmetall wolle die Fregatte zunächst im Rahmen eines Beschaffungsprojekts in Nordamerika anbieten (Z. 21), nicht erst Zweitberichte.",
+     "reason": "Unsicherheitstext behauptet, der nordamerikanische Zielmarkt stamme nur aus Zweitberichten; er steht im Original.",
+     "action": "Unsicherheit korrigieren: Nordamerika als vom Hersteller genannter Erstmarkt, weiterhin kein Kunde/Auftrag.",
+     "owner": "Faktenrolle technology (T)"
+    }
+   ]
+  },
+  {
+   "source_id": "S-088d08dcf25c1d20",
+   "original_read": true,
+   "note": "Pressemitteilung 22.04.2026 (EN) vollständig gelesen (Key Facts, Absätze 1-3). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-D20",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Alle Angaben im Original: Rahmenvertrag Bundeswehr in Koblenz unterzeichnet (22.04.2026), Wert Milliarden, erster Abruf ca. 300 Mio EUR brutto, fünfstellige optionale Stückzahl, Qualifikation ab Q2 2026, Lieferbeginn H1 2027, Reichweite bis 100 km, ca. 4 kg Gefechtskopf, bis 70 Min Flugzeit. Abweichende 6-kg-Nutzlast der Investorenpräsentation hier nicht geprüft (andere Quelle)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-0bd71507c5c59e04",
+   "original_read": true,
+   "note": "IR-Finanzkalender: Einträge 12/05/2026 (HV), 05/11/2026 (Q3), 25-27/11/2026 (CMD) und Dividendensuche im Gesamttext gelesen; kein Dividendenbetrag auf der Seite. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "T-11",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle: Finanzkalender bestätigt HV am 12.05.2026 virtuell (Eintrag 12/05/2026). Dividendenbetrag 11,50 EUR, Vorjahr 8,10 EUR, Quote 45,5 % und Vorschlag stehen NICHT in dieser Quelle und müssen über die übrigen Quellen des Claims bestätigt werden."
+    },
+    {
+     "claim_id": "T-20",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Q3-Zahlen 05.11.2026 und CMD 25.-27.11.2026 in Hamburg bei Blohm+Voss (Naval Systems) im Finanzkalender bestätigt. Abweichendes CMD-Datum (26.-27.11.) steht auf der anderen IR-Seite, hier nicht geprüft."
+    },
+    {
+     "claim_id": "T-E28",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Eintrag 05/11/2026 Publication of quarterly results Q3 2026 im Original bestätigt (angekündigter Termin)."
+    },
+    {
+     "claim_id": "T-E29",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Finanzkalender: 25/11-27/11/2026 Capital Markets Day 2026, Hamburg, bei Blohm+Voss B.V. & Co. KG (Naval Systems) bestätigt; abweichende Daten der CMD-Seite nicht Gegenstand dieser Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-0bf21d6b5d52b9d5",
+   "original_read": true,
+   "note": "Breaking-Defense-Artikel 06.08.2026 Z. 40-72 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-STR-38",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Breaking Defense: Deutschland stellte F126 (sechs Schiffe) im Juni 2026 ein, ursprünglich DSNS beauftragt, stattdessen acht TKMS-MEKO-Fregatten, abhängig vom Haushaltsausschuss. Ausbuchung 2.153 MioEUR und Auflösung des B+V-Unterauftrags Mitte Juli stehen nicht in dieser Quelle (Halbjahresbericht/Anteilsbesitz anderer Quellen). Ortsangabe 6. Absatz im Claim: Stelle ist Z. 59 (5. Textabsatz), unerheblich."
+    },
+    {
+     "claim_id": "P-N60",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: Breaking Defense bestätigt Streichung im Juni, Plan für acht TKMS-MEKO-Fregatten mit Haushaltsausschuss-Vorbehalt und dass NVL-Übernahme des Programms erwogen wurde. Modellbezeichnung A-200 und Backlog 2,1 Mrd stehen nicht in dieser Quelle."
+    },
+    {
+     "claim_id": "P-S05",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Artikel bestätigt: F126-Streichung zwingt Rheinmetall zur Senkung der Naval-/Jahresumsatzprognose um 300 Mio EUR; Konzernumsatz 2026 erwartet 13,7-14,2 Mrd EUR (Halbjahresbericht, 06.08.2026). Quelle sagt 300 Mio (nicht bis zu)."
+    },
+    {
+     "claim_id": "T-E17",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: Breaking Defense bestätigt Juni-Streichung, Kostenprüfung über 18 Mrd EUR bei NVL-Übernahme, acht MEKO von TKMS, Budget-Ausschuss-Vorbehalt und Senkung um 300 Mio EUR. Datum 24.06.2026, Kursverlust 16,7 % und Ministeriumsbegründung stehen in der Reuters-Quelle (anderer Beleg)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-182f1bf64398f3d4",
+   "original_read": true,
+   "note": "GD-OTS-Seite Artillery Propelling Charges (UBX, M119A2, MACS) vollständig gelesen; die Seite enthält keine Geschoss-/Zünderprodukte. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-GDO-01",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Propelling-Charges-Seite: M119A2 (single-base M6, Rayon), MACS M231/M232A1 mit GD-OTS als Hersteller für US Army und Marine Corps, UBX-Ladungen bestätigt. Geschosse (ERA-HE, M1128-I, SuperShot, M795, XM1113, MR103, SMArt), Scranton seit 1963 nicht in dieser Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-19990f4210d9f4d3",
+   "original_read": true,
+   "note": "Pressemitteilung 05.09.2025 Z. 9-35 (Key Facts, Absätze 1-8, Standortbox) gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-W10",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Werk Niedersachsen in Betrieb genommen (05.09.2025), Investition knapp 500 Mio EUR, bis 350.000 Geschosse/Jahr, 25.000 bis Ende 2025, 140.000 in 2026, Volllast 2027, Raketentriebwerke 2026 geplant. Hochlaufwerte sind Planangaben."
+    }
+   ]
+  },
+  {
+   "source_id": "S-1db9c54bc6663d61",
+   "original_read": true,
+   "note": "PDF-Pressemitteilung Muni Berka (10.12.2025) Seiten 1-2 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "T-E03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Übernahme vertraglich vereinbart, Muni Berka (Dietersdorf, Ochtrup), Delaborierung/Lagerung, Kaufpreis vertraulich, behördlicher Vorbehalt, Lagerkapazität über 1 Mio 155-mm-Projektile oder 500.000 Full Shot; Datum 10.12.2025. Vollzug nicht belegt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-1e501c0b6e3d8fb8",
+   "original_read": true,
+   "note": "UKDJ-Artikel Z. 48-68 gelesen (Kommentarbereich nicht als Beleg genutzt). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-BAE-03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag UKDJ bestätigt: 280 Mio GBP, Optionen über 400 Mio GBP, 15-jährige 2,4-Mrd-GBP-Vereinbarung, zusätzliche 155-mm-Bearbeitungslinie in Washington und neue Füllanlage Glascoed. Name Next Generation Munitions Solution und 11.07.2023 stehen in der Defense-News-Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-1f76748059d5008c",
+   "original_read": true,
+   "note": "Unternehmensseite RDM Abschnitte Über uns, Historie, Produkte (Z. 10-30) gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-STR-22",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Tochter der Rheinmetall Waffe Munition GmbH (51 %) und Denel (Pty) Ltd (49 %), gegründet 01.09.2008, Rheinmetall Mehrheitsgesellschafter. Trägt Kante E36 (Quote 51 % über RWM) und E37 (Denel 49 %). Vollkonsolidierung steht nicht auf dieser Seite."
+    }
+   ]
+  },
+  {
+   "source_id": "S-2002ef0c3dd21d04",
+   "original_read": true,
+   "note": "PDF-Pressemitteilung Rheinmetall/Anduril 18.06.2025 Z. 1-40 gelesen; Web-Fassung S-5366... parallel eingesehen (identischer Inhalt). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-TEC-03",
+     "depth": "A",
+     "status": "Korrektur",
+     "note": "Partnerschaft 18.06.2025 bestätigt (Barracuda und Fury europäische Varianten, Integration in Battlesuite). Jedoch nennt die Quelle Festtreibstoff-Raketenmotoren nur als Prüfung von Möglichkeiten (exploration of opportunities); die Aussage, Raketenmotoren würden gemeinsam entwickelt und produziert, ist überzogen (gleicher Wortlaut in Kante E59).",
+     "reason": "Feststoff-Raketenmotoren sind im Beleg nur Sondierung, nicht beschlossene gemeinsame Entwicklung/Produktion.",
+     "action": "Aussage und Kantentext E59 auf Exploration der Raketenmotoren begrenzen; P-D14 formuliert bereits korrekt.",
+     "owner": "Faktenrolle technology (T) / Cluster (C)"
+    }
+   ]
+  },
+  {
+   "source_id": "S-22b4e8c338d5fc31",
+   "original_read": true,
+   "note": "Calibre-Defence-Artikel 04.08.2026 Z. 35-52 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-BAE-05",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Glascoed (Laden/Füllen) hinter Zeitplan, geplant Sommer 2025, Datum unklar, BAE nennt Verdopplung der Kapazität; UK produziert keine Sprengstoffe und ist bei Energetik/Treibmitteln fast vollständig importabhängig; BAE hat großen Hanwha-Treibmittelvertrag (Calibre Defence 04.08.2026, Medienangabe)."
+    },
+    {
+     "claim_id": "M-RHM-07",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: litauisches 155-mm-Werk wegen harten Winters verzögert, lettische Fabrik scheint verzögert, Standort gewählt, kein Spatenstich trotz Baubeginn-Ziel Frühjahr 2026. Betreiber im Satz nicht genannt (wie vermerkt)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-25aa458cd8d5079c",
+   "original_read": true,
+   "note": "Korea-JoongAng-Daily-Artikel Z. 124-140 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-HAN-02",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: 130-Mio-USD-MCS-Liefervertrag mit BAE Systems, erster Exportvertrag NATO-Standard-Treibladungen für 155 mm; Entwicklung seit 2019, 2023 abgeschlossen (Artikel 23.11.2023)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-2706c2d0310324c4",
+   "original_read": true,
+   "note": "Maritime-Executive-Artikel 09.10.2026 Z. 50-70 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-STR-37",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Maritime Executive (09.10.2026): Liquidator bestätigte Verkauf, Rheinmetall will Werft für 138 Mio EUR erwerben (für vier Marineschiffe Rumäniens), Damen 49 % und Staat 51 % am Werft-JV. Zuschlag am 19.10.2026 gemeinsam mit MSC und Abschluss in einigen Wochen stehen nicht hier (MSC dort nur geprüfte Option). Trägt Kante E47 nur für Preis und Erwerbsabsicht."
+    }
+   ]
+  },
+  {
+   "source_id": "S-287cebfc8cf393ef",
+   "original_read": true,
+   "note": "RBSL-Startseite (undatiert) Z. 10-40 gelesen: Newsbereich und Core Capabilities. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-MKT-08",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag RBSL-Startseite: Newsmeldungen zu erstem bemannten Challenger-3-Scharfschuss und 100. Boxer (Team Boxer UK) vorhanden, undatiert. 148 Panzer/800 Mio GBP/Mai 2021 stehen nicht hier; Kante E79 daher hier nur für Programmaktivität, nicht Vertragswert belegt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-2dacbdde62e913a1",
+   "original_read": true,
+   "note": "ESD-Artikel 01.09.2025 Z. 95-110 gelesen (Absätze zu KNDS-Angebot, LU211). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-KND-04",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (ESD 01.09.2025): KNDS France Angebot an Polen für bis zu 200.000 155-mm-Geschosse/Jahr mit PGZ, Kapazität großkalibriger Munition in drei Jahren verdreifacht, LU211 seit April 2022 auf CAESAR in der Ukraine (mehrere tausend Schuss je Geschütz), über 15.000 Schuss in Operation Chammal, Qualifikation K9 und Krab. Herstellerangaben, Angebot kein Vertrag."
+    }
+   ]
+  },
+  {
+   "source_id": "S-314418b5ddde95dc",
+   "original_read": true,
+   "note": "Militarnyi-Artikel 25.09.2026 Z. 37-47 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-V21",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: erster Puma aus zweitem Los (S1) am 28.08.2026 übergeben, PSM (JV KNDS/Rheinmetall) meldet; Abnahme der ersten zwei Fahrzeuge am 27.08. und 03.09. Los bezieht sich laut Artikel auf die 50er-Bestellung von Mai 2023."
+    }
+   ]
+  },
+  {
+   "source_id": "S-36991926ddfe11a9",
+   "original_read": true,
+   "note": "Unternehmensseite Rheinmetall Polska Z. 8-50 gelesen (About us, Locations, Kontakt). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-R96",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: 2016 gegründet, Hub in Polen, Hauptsitz Warschau, Verbindungsbüro Warschau, zweiter Standort Gliwice zur Unterstützung von ZMBL bei der Leopard-2-Modernisierung. Undatierte Seite."
+    }
+   ]
+  },
+  {
+   "source_id": "S-3cbff65e7dd3e5a1",
+   "original_read": true,
+   "note": "Pressemitteilung 14.09.2026 Z. 9-23 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-N20",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Kiellegung drittes Flottendienstboot 14.09.2026 in Wolgast, zweites Boot parallel im Bau, Pistorius leitet Beschaffung vierten Bootes ein, Indienststellung ab 2029 schrittweise, rund 130 m. Vertrag für viertes Boot nicht belegt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-3ffdec73e87f03c2",
+   "original_read": true,
+   "note": "Unternehmensseite RBSL (About us, Systems & Products) Z. 8-45 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-R10",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: RBSL JV BAE Systems/Rheinmetall seit Juli 2019, über 700 Beschäftigte, Telford, Dorset, Bristol, Newcastle, Challenger 3 (148), Boxer-Fertigung in Telford (und KNDS UK Stockport). Beteiligungsverhältnis nicht auf der Seite."
+    },
+    {
+     "claim_id": "P-V40",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: Seite bestätigt, dass RBSL Challenger 3 liefert (148 in Großbritannien entwickelt/gefertigt). Schießversuche 20.01.2026 und 120-mm-Kanone belegt die Pressemitteilung (S-a8a9...)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-438937e9317397d7",
+   "original_read": true,
+   "note": "Pressemitteilung 22.04.2026 (DE) Z. 9-21 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "T-E11",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Rahmenvertrag im Milliardenbereich, am 22.04.2026 in Koblenz unterzeichnet, Erstabruf rund 300 MioEUR brutto, Lieferbeginn H1 2027, Qualifizierung ab Q2 2026, vollständig in der EU entwickelt/produziert (Herstellerangabe)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-4990a0c7872510f8",
+   "original_read": true,
+   "note": "Army-Technology-Artikel AUSA 2025 Z. 149-175 gelesen (Hanwha-Abschnitte, GAO-Absatz). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-HAN-04",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Hanwha will 155-mm-Geschosse mit Base-Bleed produzieren, erste Fully Automated Modular Charge Facility 2027 in Südkorea, 300.000 Schuss/Jahr bei Volllast; Bezug der Einheit (Rounds) bleibt wie vermerkt offen."
+    },
+    {
+     "claim_id": "M-MKT-07",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Army Technology bestätigt: Steigerung von 168.000 auf 1,2 Mio Schuss/Jahr laut GAO-Bericht Juli 2025 (Z. 168). Manufacturing-Digital-Zahlen (14.000-14.400, 36.000 März 2026) stehen in der anderen Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-5366eb8816ff2cea",
+   "original_read": true,
+   "note": "Web-Fassung Pressemitteilung Rheinmetall/Anduril 18.06.2025 Z. 9-32 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-D14",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: strategische Partnerschaft 18.06.2025, europäische Barracuda- und Fury-Varianten (Battlesuite-Integration), Raketenmotoren nur als Exploration; Aussage korrekt als Ankündigung eingeordnet."
+    }
+   ]
+  },
+  {
+   "source_id": "S-5590349d6f29de4e",
+   "original_read": true,
+   "note": "Task-&-Purpose-Artikel 14.07.2026 Z. 45-75 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-GDO-05",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Mesquite sollte bis Oktober 2025 30.000 155-mm-Geschosse (M795-Metallteile) pro Monat liefern, bis März 2026 keine, 469 Mio USD, Stop-Work August 2025 bis mindestens April 2026, IG-Bericht nennt keinen Auftragnehmer, Beschreibung passt laut Medium zu GD-OTS; zwei andere Fabriken lieferten Teile für 46.000 Schuss/Monat."
+    }
+   ]
+  },
+  {
+   "source_id": "S-5b640196f4e87dad",
+   "original_read": true,
+   "note": "Rheinmetall-Pressemitteilung Halbjahresfinanzbericht 06.08.2026 (HTML) Z. 8-70 vollständig gelesen: Keyfacts, Konzern, alle fünf Segmente, Ausblick. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-MKT-06",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Halbjahres-PM: 298 Lynx für Rumänien (SAFE) und rumänischer SAFE-Auftrag über vier Marineschiffe im Wert von 920 MioEUR sowie Mittelkalibermunition aus Rumänien (SAFE) bestätigt. 5,7 Mrd, 29.05.2026, Flugabwehr und lokale Wertschöpfung stehen in S-cede873... (anderer Beleg); Kante E77 hier nur für Lynx/Schiffe/Munition belegt."
+    },
+    {
+     "claim_id": "C-MKT-10",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: Munitionspaket für Ungarn als wesentlicher Umsatztreiber von Weapon and Ammunition H1 2026 bestätigt (Z. 46). Ungarn-Auftrag 2020 (209 Lynx, über 2 Mrd) nicht in dieser Quelle."
+    },
+    {
+     "claim_id": "C-MKT-11",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: Artillerie- und Mittelkalibermunition für die Ukraine als wesentlicher Umsatztreiber bestätigt (Auftraggeber/Finanzierer nicht genannt, wie vermerkt). Umsatz 2024 steht im Geschäftsbericht 2024."
+    },
+    {
+     "claim_id": "C-MKT-15",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (Z. 61, 47): Naval-Umsatz im Wesentlichen aus FDB424, K130, MBV707 und MMPV90; W&A mit Panzermunitionsaufträgen für Polen."
+    },
+    {
+     "claim_id": "H-M05",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Alle drei Zitate wörtlich bestätigt (Rekordwachstum, Q2-Marge 17,1 % Höchstwert, Book-to-Bill größer 3, Marinebereich); Marinebezug ohne F126-Bezug."
+    },
+    {
+     "claim_id": "T-04",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: fünf Segmente (Vehicle Systems, W&A, Air Defence, Digital Systems, Naval Systems) im Bericht, Naval Systems zum Ende des ersten Quartals 2026 erstmals eigenständiges Segment, Übernahme Ende Februar 2026. Aufspaltung von Electronic Solutions und Berichtsbeginn 1. Januar 2026 stehen nicht in dieser Quelle."
+    },
+    {
+     "claim_id": "T-05",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Alle Werte bestätigt: Umsatz 2.431 (+533, +28 %), Nomination 6.691, Backlog 28.829 (30.06.2026), operatives Ergebnis 275 (179), Marge 11,3 %."
+    },
+    {
+     "claim_id": "T-06",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Alle Werte bestätigt: Umsatz 1.757 (+33 %), Nomination 3.097, Backlog 25.274, operatives Ergebnis 417, Marge 23,7 %, Umsatztreiber Ungarn-Munitionspaket und Ukraine-Munition."
+    },
+    {
+     "claim_id": "T-07",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Alle Werte bestätigt: Umsatz 478 (+62 %), Nomination 1.534, Backlog 4.218, operatives Ergebnis 76, Marge 16,0 %, Treiber Skynex/Skyranger für europäische Kunden."
+    },
+    {
+     "claim_id": "T-08",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Alle Werte bestätigt: Umsatz 820 (+23 %), Nomination 4.702 (-52 %, Vorjahr TaWAN/IdZ-ES), Backlog 20.646, operatives Ergebnis 63, Marge 7,7 %."
+    },
+    {
+     "claim_id": "T-09",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Alle Werte bestätigt: 334 Mio in vier Monaten nach Übernahme Ende Februar 2026, Service 39, operatives Ergebnis 33 (9,8 %), Nomination 1.004 (größter Beitrag rumänischer Auftrag 920 Mio), Backlog 6.255."
+    },
+    {
+     "claim_id": "T-13",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Alle Werte bestätigt: Umsatz 5.227 (+39 %, Vorjahr 3.749), Inland 38 %/Ausland 62 %, operatives Ergebnis 786 (+74 %, 453), Marge 15,0 % (12,1 %), Q2-Ergebnis 562 (262), Q2-Marge 17,1 % aus CEO-Zitat, EPS 8,43 (4,69)."
+    },
+    {
+     "claim_id": "T-14",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Alle Werte bestätigt: Nomination 16,2 Mrd (+28 %), Backlog 80,5 Mrd (56,0), operativer Free Cashflow -1.616 (-631) mit Begründung Anzahlungen/Vorräte/Investitionen; Definitionen von Nomination und Backlog (inkl. Rahmenverträge) im Text."
+    },
+    {
+     "claim_id": "T-16",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Umsatzerwartung um 300 Mio gesenkt (Ausblick: bis zu 300 Mio), 13,7-14,2 Mrd, organisches Wachstum 28-31 %, Marge rund 19 %, Vorjahresumsatz 9.935, Marge 2025 18,5 %."
+    },
+    {
+     "claim_id": "T-E17",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Unternehmen: Halbjahresbericht nennt Stornierung Ende Juni 2026 und negative Umsatzauswirkungen bis zu 300 MioEUR (Ausblick Z. 65). Reuters-Angaben (24.06., 18 Mrd, Kurs -16,7 %) stehen in anderen Quellen."
+    },
+    {
+     "claim_id": "T-E20",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Halbjahresbericht 06.08.2026 mit Umsatz 5,2 Mrd (+39 %), operativem Ergebnis 786, Backlog 80,5 Mrd und Prognoseanpassung 13,7-14,2 Mrd wegen F126."
+    }
+   ]
+  },
+  {
+   "source_id": "S-5d054e98a93f597d",
+   "original_read": true,
+   "note": "Korea-Times/Yonhap-Artikel 15.10.2025 vollständig gelesen (21 Zeilen). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-HAN-03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Hanwha/FMV-Rahmenvertrag 150 Mrd KRW (rund 110 Mio USD) über MCS, dreijährig, folgt ähnlichem Vertrag des Vorjahres, Lieferbeginn nächstes Jahr (Artikel 15.10.2025)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-5f102cfea2da2738",
+   "original_read": true,
+   "note": "PDF-Fassung der Halbjahres-Pressemitteilung 06.08.2026: Seite 1 und Segmentabschnitte (Seiten 2-5) gelesen; Zahlen gegen Zeilenstellen abgeglichen; Inhalt deckt sich mit HTML-Fassung. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-A02",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (PDF S. 3): Air Defence Umsatz 478, Backlog 4.218, Treiber Skynex/Skyranger-Fertigung, größere Einzelaufträge weitere Skyranger/Skynex für einen europäischen und internationalen Kunden."
+    },
+    {
+     "claim_id": "P-D02",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (PDF S. 4): Digital Systems Umsatz 820, Backlog 20.646, Treiber TaWAN, D-LBO, Nah-/Nächstbereichsschutz; FV-014-Rahmenvertrag und Spähfahrzeug-Anteile für die Bundeswehr, UK-Konsortialauftrag Gefechtsausbildung."
+    },
+    {
+     "claim_id": "P-N02",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: Übernahme Ende Februar 2026 abgeschlossen, Naval Systems seit Ende Q1 2026 eigenes Segment. Mitteilung vom 02.03.2026 und Übergang 1. März stehen in der anderen Quelle."
+    },
+    {
+     "claim_id": "P-N03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (PDF S. 4): Naval-Umsatz 334, Quellen FDB424, K130, MBV707, MMPV90, Service 39 (Rheinland-Pfalz), Nomination 1.004 inkl. rumänischer SAFE-Auftrag 920, Backlog 6.255."
+    },
+    {
+     "claim_id": "P-N60",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: Halbjahresmitteilung nennt Ende Juni 2026 verkündete Stornierung des F126-Programms und Prognoseanpassung (Seiten 1 und 5)."
+    },
+    {
+     "claim_id": "P-S04",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Alle Werte bestätigt: Konzernumsatz 5.227, Backlog 80,5 Mrd, Segmentumsätze 2.431/1.757/478/820/334 (Naval vier Monate)."
+    },
+    {
+     "claim_id": "P-S05",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Umsatzerwartung von Marinebereich und Konzern um 300 Mio EUR reduziert (Keyfacts), Spanne 13,7-14,2 Mrd, Marge rund 19 %."
+    },
+    {
+     "claim_id": "P-V02",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (PDF S. 2): Vehicle-Systems-Backlog 28.829, Treiber taktische Fahrzeuge, Radpanzer, Logistik; Nomination getragen von 200 nachbestellten Puma (zweites Los, Anfang 2026) und 298 Lynx Rumänien (SAFE)."
+    },
+    {
+     "claim_id": "P-W02",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (PDF S. 3): W&A Umsatz 1.757, Backlog 25.274, Aufträge Rumänien-Mittelkaliber (SAFE), Panzermunition Polen, Artilleriegeschosse/-waffenanlagen für Deutschland und osteuropäische Länder; Investitionen Rohrfertigung GB, Werk Litauen, Nitrochemie Aschau."
+    }
+   ]
+  },
+  {
+   "source_id": "S-64b8fa1a98bafd6e",
+   "original_read": true,
+   "note": "4iG-Pressemitteilung Budapest 25.11.2021 Z. 143-216 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-STR-28",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: Meldung vom 25.11.2021 bestätigt die unverbindliche Vorvereinbarung, nach der Rheinmetall 25,1 % an 4iG über Aktienkauf und Kapitalerhöhung erwerben können soll (Vorbehalt Prüfung/Genehmigung). Die aktuelle 25-%-Beteiligung zum 31.12.2025 (at-equity) belegt diese Quelle nicht und trägt Kante E43 nur für die historische Ankündigung."
+    }
+   ]
+  },
+  {
+   "source_id": "S-6724ed6c8698ea5b",
+   "original_read": true,
+   "note": "Investorenpräsentation September 2026 (PDF): Folien 8, 23, 27, 30, 35-36, 39, 41-42, 47-50, 57-58 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-A13",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (Folie 41): SUI ~140 p.a. SOP Q1/26, ITA ~140 SOP Q2/26, DE ~100 SOP Q3/26, gesamt ~400 p.a. bis 2027 (under installment, Planwerte)."
+    },
+    {
+     "claim_id": "P-D40",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: mindestens 400 F-35-Mittelrümpfe in Weeze (Folie 50), erste Mittelrümpfe 2026 umsatzwirksam (Folie 48). Aussage zu nur zwei Werken weltweit steht in anderer Quelle."
+    },
+    {
+     "claim_id": "P-N60",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: Fußnote Folie 58, der Rheinmetall-Backlog Juni 2026 enthalte noch 2,1 Mrd EUR F126-Backlog."
+    },
+    {
+     "claim_id": "P-N61",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (Folien 57-58): Top Projects Fregatten F127 (pre contract design study), F125 upgrade, Korvetten K130/MMPV90, PV43M (Ägypten), FDB 424, MBV 707, Services MRO/ISR; Auftragseingangspotenzial 2026 getrieben von F125-Upgrade und Internationalisierung Rumänien. Folie 58 führt in einer Tabelle zusätzlich einen F123-Upgrade auf."
+    },
+    {
+     "claim_id": "P-R03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (Folie 8): Standortkarte mit Legende Active/Potential new locations und Hinweis including sites under construction; Deutschland-Standorte (Unterlüss, Kassel, Kiel, Bremen, München, Weeze, Neuss mit Funktionen) und alle genannten Länder inkl. Lettland/Litauen enthalten. Bremen-Zuordnung Shipbuilding ergibt sich aus Layout. Aktiv/potenziell je Standort nicht unterscheidbar (wie vermerkt)."
+    },
+    {
+     "claim_id": "P-R160",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Folie 39 Large replacement projects in MENA region, Folie 42 Superior cost efficiency proven in Ukraine and Gulf states. Strategische Märkte der Division Digital Systems stehen in der anderen Quelle. Kein Standort oder Vertrag in Golfstaaten."
+    },
+    {
+     "claim_id": "P-V17",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (Folie 27 und Top-Projects Folie 23): Entscheidung des Haushaltsausschusses am 9. Dezember 2026 erwartet; 12,4 Mrd EUR fester Auftrag, Optionen 14 und 12 Mrd EUR, Zahlen 100 % Rheinmetall-Anteil. Kein bestehender Auftrag."
+    },
+    {
+     "claim_id": "P-V41",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: Folie 23 nennt Panther KF51 Hungary & Italy unter Top-Projects von Vehicle Systems. Kein Auftrag. NMBT/LRMV-Basis steht in der anderen Quelle."
+    },
+    {
+     "claim_id": "P-W31",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (Folie 30): 130-mm-Glattrohr-Kanone Tests und Munitionsentwicklung, 155-mm-Haubitze L60 Entwicklung und Tests, Raketentriebwerke als Top-Projekte; keine Termine."
+    },
+    {
+     "claim_id": "P-W60",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Folie 36 JV Rheinmetall Destinus Strike Systems in H2 2026 angestrebt, Rheinmetall 51 %, Marschflugkörper und ballistische Raketenartillerie, Produktionsstart Q4 2026/Q1 2027; Folie 35 Raketentriebwerke bis 3.500 t p.a., produktionsbereit Q1 2027. Planangaben."
+    }
+   ]
+  },
+  {
+   "source_id": "S-6797a3b3e68d3be1",
+   "original_read": true,
+   "note": "Pressemitteilung American Rheinmetall AUSA 2026 (12.10.2026) Z. 9-52 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-R100",
+     "depth": "A",
+     "status": "offen",
+     "note": "Teilbeitrag bestätigt: über 1.500 Beschäftigte in Arkansas, Maine, Michigan, Ohio, Texas und Virginia (AUSA 2026). Nicht in dieser Quelle: Standorte Lansing, Lapeer, Plymouth, St. Marys, Biddeford und Loc Performance Products. Die Seite nennt American Rheinmetall Defense, Inc. als US-Hub mit Hauptsitz Vienna, Virginia, der Claim nennt Auburn Hills, Michigan; ob verschiedene Gesellschaften gemeint sind, ist nicht erkennbar.",
+     "reason": "Hauptsitzangabe (Auburn Hills, Michigan) vs. Vienna, Virginia für American Rheinmetall Defense, Inc. in der zugewiesenen Quelle; Entitätszuordnung unklar.",
+     "action": "Rechtsträger (American Rheinmetall Defense vs. Fahrzeug-/Vehicles-Gesellschaft) und Hauptsitz je Quelle klarstellen; Claim-Text auf die tatsächlich belegte Gesellschaft beziehen.",
+     "owner": "Portfolio-Faktenrolle (P); Leitprüfer vergleicht mit der zweiten Quelle"
+    },
+    {
+     "claim_id": "P-V35",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Wörtlich bestätigt: American Rheinmetall liefert derzeit Prototypfahrzeuge des Lynx XM30 an die Army zur Erprobung (Herstellerangabe, 12.10.2026)."
+    },
+    {
+     "claim_id": "P-V50",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: über 20.000 HX-Fahrzeuge weltweit fielded, Autonomie auf 24 Chassistypen in 19 Ländern, CAML-Demonstration Redstone Arsenal Juni 2026 bestätigt; die 16.000 verkauften Fahrzeuge (Divisionsseite) stehen in anderer Quelle."
+    },
+    {
+     "claim_id": "P-V70",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Ox (Wettbewerb GOAT), MUSKOX (Project Sustainment Program down-selected), Mission Master SP (Last Tactical Mile down-selected), Wild Goose (fully fielded, 330 lb); Herstellerangaben."
+    }
+   ]
+  },
+  {
+   "source_id": "S-6c35892360c66d5a",
+   "original_read": true,
+   "note": "Defense-News-Artikel 11.07.2023 Z. 50-72 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-BAE-03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Defense News bestätigt: 280 Mio GBP, Optionen über 400 Mio GBP (MoD, 11.07.2023), 155-mm, 30-mm, 5,56-mm, 15 Jahre/2,4 Mrd GBP Next Generation Munitions Solution, neue Bearbeitungslinie 155 mm und Füllanlage (Standorte im Norden Englands/Südwales)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-6c84242ff77b4c1c",
+   "original_read": true,
+   "note": "EDR-Artikel 04.11.2025 Z. 41-46 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-KND-08",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Eröffnung am 04.11.2025 durch Minister Francken, automatisierte 155-mm-Linie, zusätzlich zu bereits zwei Produktionslinien, 2026 knapp sechs Monate Produktion für belgische Verteidigung, 350 Beschäftigte."
+    }
+   ]
+  },
+  {
+   "source_id": "S-6d2c1c75db9e7ad4",
+   "original_read": true,
+   "note": "Unternehmensseite Rheinmetall Singapore Z. 8-45 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-C03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Singapur: Smart-Airport-Lösungen und KI-Bildverarbeitung für Verteidigung und zivile Anwendungen bestätigt. Italia, Automecanica und Norderwerft stehen in anderen Quellen."
+    },
+    {
+     "claim_id": "P-R130",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Tuas, Hauptdrehscheibe für logistische und taktische Fahrzeuge in Südostasien, technisches Service- und Engineering-Zentrum, MRO, KI-Vision-Systeme (undatierte Seite)."
+    },
+    {
+     "claim_id": "P-V72",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Singapur: MRO für Lkw und Panzerfahrzeuge in Tuas bestätigt (Lifecycle Support & Sustainment). Ukraine- und Divisionsteil in anderen Quellen."
+    }
+   ]
+  },
+  {
+   "source_id": "S-71883fd06cc70f3c",
+   "original_read": true,
+   "note": "PDF-Pressemitteilung Power-Systems-Verkauf (03.06.2026) Z. 6-100 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-C01",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (03.06.2026): Kaufvertrag mit AEQUITA, vorläufiger Kaufpreis 350 Mio EUR für 100 %, Umsatz 2025 rund 2 Mrd, rund 6.250 Beschäftigte, Vollzug Q4 2026 unter behördlichem Vorbehalt, ausgenommen KS Huayu AluTech, Dermalog SensorTec (W&A, Neuss) und Werk Abadiano (Hybrid), discontinued operation seit Q4 2025."
+    }
+   ]
+  },
+  {
+   "source_id": "S-7211720721aa7d4b",
+   "original_read": true,
+   "note": "Pressemitteilung Aschau 23.07.2026 Z. 9-30 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-W40",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (23.07.2026): Grundsteinlegung Pulverfabrik Aschau, heute rund 1.700 t Pulver und 300.000 Treibladungsmodule p.a., zusätzlich 2.500 t Pulver und über 1 Mio modulare Treibladungen, Produktion schrittweise ab 2027, Maximum 2028."
+    }
+   ]
+  },
+  {
+   "source_id": "S-726b04b00a65e55c",
+   "original_read": true,
+   "note": "TRATON-Geschäftsbericht 2025 (im Lobbyregister hinterlegte Kopie): Abschnitt zu RMMV (Z. 9355-9380) und Definition assoziierte Unternehmen (Z. 7484) gelesen; Kopie, nicht IR-Original. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-STR-05",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: RMMV assoziiertes Unternehmen (München), Entwicklung/Herstellung/Vertrieb logistischer Radfahrzeuge, Kapitalanteil TRATON 49 %, Segment MAN Truck & Bus, Equity-Methode. Einzige Quelle der Kante E16; Datei ist eine im Lobbyregister hinterlegte Kopie des TRATON-Berichts (Titel/Inhalt passend), nicht die IR-Datei."
+    }
+   ]
+  },
+  {
+   "source_id": "S-73cf7c9497cad059",
+   "original_read": true,
+   "note": "Unternehmensseite RWM (About us, Prüfgelände) Z. 65-70 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-W30",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: RWM Unterlüß, Großkaliber-Waffensysteme (Leopard-2-Hauptbewaffnung, SMArt 155), Kompetenzzentrum Mittelkaliber mit RWM Schweiz, Schutzsysteme und Pyrotechnik, Prüfgelände Unterlüß und Ochsenboden."
+    }
+   ]
+  },
+  {
+   "source_id": "S-818ac8c5a1a773b5",
+   "original_read": true,
+   "note": "Pressemitteilung 23.09.2026 Z. 9-23 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-N40",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (23.09.2026): mehrjähriger Rahmenvertrag der Bundeszollverwaltung für Wartung/Reparatur/Notfalleinsätze an vier LNG-Zollbooten (ein 67 m, drei 55 m), Liegeplätze Lubmin, Neustadt i. H., Wilhelmshaven, Emden, drei Boote bei der Peene-Werft gebaut; Wert nicht genannt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-84620b98214b90e5",
+   "original_read": true,
+   "note": "European-Pravda-Artikel 15.03.2024 Z. 34-46 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-MKT-02",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: 500 Mio EUR ASAP-Zuteilung, Kapazität 2 Mio Geschosse/Jahr bis Ende 2025, 513 Mio EUR aus EU und Norwegen, insgesamt rund 1,4 Mrd EUR Investitionen, 155-mm-Kapazität 1 Mio/Jahr im Januar 2024 (Artikel 15.03.2024)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-8f63be7e3308f827",
+   "original_read": true,
+   "note": "Pressemitteilung 28.05.2026 Z. 9-21 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "T-E14",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (28.05.2026): Abruf mehr als 2.000 UTF (4x4, 6x6, 8x8), 1,015 Mrd EUR brutto, aus Rahmenvertrag 2024 (bis zu 6.500), Buchung Q2 2026, Auslieferung durch RMMV ab H1 2026."
+    }
+   ]
+  },
+  {
+   "source_id": "S-943f5a439ab01032",
+   "original_read": true,
+   "note": "Pressemitteilung 31.07.2026 Z. 9-23 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-V14",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (31.07.2026): UK-Bestellung von 72 RCH 155 im Mai 2026, ARTEC-Produkt auf Boxer-Fahrmodul, Rheinmetall liefert 72 Waffensysteme 155 mm L/52 RC (niedriger dreistelliger Mio-Wert), Lieferung 05/2028-06/2031, Fertigung im neuen Telford-Werk (schrittweise in Betrieb)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-9779449a4b003eae",
+   "original_read": true,
+   "note": "Divisionsseite Weapon and Ammunition Z. 8-48 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-W01",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Business Units Direct Fire, Indirect Fire, Energetic Materials, Projects and Services, Protection Systems; genannte Produkte (Maschinenkanonen, Glattrohr, Artillerie/Mörser, Waffenstationen, intelligente Geschosse, Hochenergielaser, Loitering Munition) enthalten."
+    },
+    {
+     "claim_id": "P-W41",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Energetic Materials mit Treibmitteln, zivilen Airbag-Treibstofflösungen sowie Silanen, Säurechloriden, Epoxiden, Peroxiden und Zwischenprodukten für Chemie/Pharma."
+    },
+    {
+     "claim_id": "P-W50",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Protection Systems (passiv, aktiv, hybrid, Softkill, Nebel, Stand-off-Aktivschutz) und Projects and Services (Einsatzunterstützung, Feldlager, Logistik, Munitionsentsorgung, Shelter)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-97aa5b20a4a51ea0",
+   "original_read": true,
+   "note": "Nammo-Seite Locations Einleitung (Z. 27) gelesen; Standortliste enthält nur Namen, keine Beschreibungen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-NAM-07",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Locations-Seite: Nammo Group als conglomeration of expert companies and facilities within ammunition, rocket motors, explosives and pyrotechnics bestätigt. Vihtavuori-Beschreibung und Mesa-Fertigung stehen nicht auf dieser Seite (nur Standortnamen)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-98082c5c6a5443c4",
+   "original_read": true,
+   "note": "Rheinmetall-Startseite: sichtbarer Text vollständig gelesen; da Kennzahlen als animierte Zähler verzerrt sind (z. B. 7122535), eingebetteten Seitendatensatz im Original-HTML (source.bin) gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "T-01",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Sitz Rheinmetall Platz 1, 40476 Düsseldorf; Selbstbeschreibung als integrierter Technologiekonzern und domänenübergreifendes Systemhaus für Land, Wasser, Luft und Weltraum."
+    },
+    {
+     "claim_id": "T-03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Werte im Original-HTML-Datensatz bestätigt: Auftragsbestand 63,8 Mrd, Umsatz 9,9, operatives Ergebnis 1,8, Marge 18,5 %, Free Cashflow 1,2, Dividende 11,50 EUR, Beschäftigte rund 34.000, Standorte 161; Fußnoten Stand 31.12.2025 bzw. Juli 2026 (fortgeführte Aktivitäten). Die sichtbare Textfassung zeigt nur verzerrte Zähler. Die Dividende trägt auf der Seite keinen Sternverweis, die Zuordnung zum Stand 31.12.2025 ist daher interpretierend."
+    }
+   ]
+  },
+  {
+   "source_id": "S-9dbd280720401c1f",
+   "original_read": true,
+   "note": "Bankier.pl/PAP-Meldung 18.06.2026 Z. 177-187 vollständig gelesen (Polnisch). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-KND-05",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (18.06.2026): Niewiadów PGM und KNDS Ammo France, Zusammenarbeit zu 155-mm (LU211P, MCS), Qualifikation auf KRAB und K9, Ziel 180.000 Stück/Jahr, Laufzeit 1 Jahr mit Verlängerungsoption, Rahmenvertrag bis Ende 2026 angestrebt, Niewiadów Infrastruktur, KNDS Lizenzen/Technologie."
+    }
+   ]
+  },
+  {
+   "source_id": "S-a0a52d4597ffc995",
+   "original_read": true,
+   "note": "Unternehmensseite Rheinmetall Ukrainian Defense Industry Z. 8-33 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-R98",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: JV in Kiew, Rheinmetall Landsysteme 51 %, UDI 49 %, seit 18.10.2023 tätig, seit Juni 2024 Reparatur/Wartung in der Westukraine, Tätigkeitsfelder Service, Montage, Produktion, Entwicklung; Produktion als Plan formuliert."
+    },
+    {
+     "claim_id": "P-V72",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Ukraine: Reparatur und Wartung von Kampffahrzeugen in der Westukraine seit Juni 2024 unter dem Dach des JV bestätigt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-a4432a86aaf146f5",
+   "original_read": true,
+   "note": "EU-Kommission ASAP-Seite Z. 88-108 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-MKT-01",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: über 500 Mio EUR; Sprengstoffe ~124, Pulver ~248, Geschosse ~90, Flugkörper ~50, Test/Rekonditionierung ~2 Mio EUR; 31 ausgewählte Projekte; Grant Agreements für Mai 2024 erwartet."
+    }
+   ]
+  },
+  {
+   "source_id": "S-a54a5988eef2046e",
+   "original_read": true,
+   "note": "Nammo-Meldung Z. 24-35 gelesen; Veröffentlichungsdatum 07.07.2023 aus Metadaten im Original-HTML. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-NAM-03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Vertrag über erhebliche Menge 155 mm IM HE-ER (rund 40 km), einer der größten für Raufoss (Meldung 07.07.2023); Update November 2023 NOK 1,9 Mrd von 4,3 Mrd (inkl. MwSt); 08.12.2023 Vertrag über NM28/M107 155-mm-HE für Spenden an die Ukraine."
+    }
+   ]
+  },
+  {
+   "source_id": "S-a6bde625685f0047",
+   "original_read": true,
+   "note": "EDR-Artikel 23.01.2024 Z. 38-47 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-KND-03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag EDR: NSPA-Rahmenverträge 1,1 Mrd EUR an Nexter Munitions (KNDS) und Junghans Microtec für 155-mm-Munition für CAESAR und PzH 2000, initiiert von drei NATO-Staaten, 23.01.2024. Mengenangabe 220.000, Lieferbeginn 2025, Aufteilung Geschosse/Zünder und 68.000 Geschosse für die Ukraine stehen nicht in dieser Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-a6f316c0deb5a97a",
+   "original_read": true,
+   "note": "Pressemitteilung 02.10.2026 Z. 9-29 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-D31",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Start am 01.10.2026 mit SpaceX Falcon 9 von Vandenberg, erster gemeinsamer Satellit Rheinmetall Italia/Argotec für Luftraumüberwachung/Frühwarnung, Mission validiert Technik, Ausbau zur Konstellation geplant. Betriebsstatus nicht belegt."
+    },
+    {
+     "claim_id": "T-E22",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Start am 01.10.2026 in die Umlaufbahn mit Falcon 9 von Vandenberg, Teil einer satellitengestützten Fähigkeit zur Luftraumüberwachung und Lagebilderstellung (Herstellerangabe)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-a8887f614647359f",
+   "original_read": true,
+   "note": "Seite Vorstand der Rheinmetall AG vollständig gelesen (Z. 9-86, inkl. Mandate). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "H-01",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Armin Papperger, Diplom-Ingenieur, Jahrgang 1963, Nationalität deutsch."
+    },
+    {
+     "claim_id": "H-02",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Vorstandsseite: Vorsitzender des Vorstands seit 1. Januar 2013, Mitglied seit 1. Januar 2012, bestellt bis 31. Dezember 2029. Medienbezeichnungen als CEO über Euronews-Beleg."
+    },
+    {
+     "claim_id": "H-03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Wörtlich bestätigt: nach dem Studium 1990 Beginn im Qualitätsmanagement der Defence-Sparte; Bei Rheinmetall seit 1990."
+    },
+    {
+     "claim_id": "H-04",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: nach weiterführenden Stationen ab 2001 Geschäftsführer verschiedener Tochtergesellschaften des Unternehmensbereichs Defence."
+    },
+    {
+     "claim_id": "H-05",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Juli 2007 Geschäftsbereichsleiter Waffe und Munition."
+    },
+    {
+     "claim_id": "H-06",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Anfang 2010 Verantwortung für Fahrzeugsysteme sowie Waffe und Munition im Bereichsvorstand Defence."
+    },
+    {
+     "claim_id": "H-07",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Vorstand seit 1. Januar 2012, Vorsitz seit 1. Januar 2013."
+    },
+    {
+     "claim_id": "H-08",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Vorsitz Rheinmetall Automotive AG, Landsysteme, RMMV, Denel Munition, Waffe Munition; Mitglied Rheinmetall Expal Munitions S.A.U.; Präsident des Verwaltungsrats Rheinmetall Air Defence AG. Hinweis: Air Defence AG trägt in der Quelle keinen Sternverweis für Konzerninterne Mandate; die Einordnung als Konzerngesellschaft ergibt sich aus dem Gesellschaftsnamen, nicht der Seitenmarkierung."
+    },
+    {
+     "claim_id": "T-21",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Vorstand Papperger (Vorsitzender), Neumann (CFO, seit 01.01.2025, bis 31.12.2027), Dr. Saal (CHRO/Arbeitsdirektorin, seit 01.09.2025, bis 31.08.2028), Gansauge (COO, seit 01.01.2025, bis 31.12.2027)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-a8a9832464019483",
+   "original_read": true,
+   "note": "Pressemitteilung 20.01.2026 Z. 9-30 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-V40",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (20.01.2026): RBSL schloss erste Schießerprobungen mit Besatzung ab (120-mm-Glattrohrkanone L55A1); 148 Panzer, Auftrag über 800 Mio GBP; Erprobung, keine Auslieferung."
+    }
+   ]
+  },
+  {
+   "source_id": "S-aa782bd6fedfefb7",
+   "original_read": true,
+   "note": "Pressemitteilung 18.12.2025 Z. 9-24 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-MKT-04",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag bestätigt (18.12.2025): BAAINBw beauftragte Rheinmetall ICEYE Space Solutions mit SAR-Aufklärungsdaten über exklusive Konstellation (SPOCK 1), Wert ca. 1,7 Mrd EUR brutto, Laufzeit Ende 2025 bis Ende 2030 mit Verlängerungsoptionen, Konstellation bleibt Eigentum des JV. Netto-Wert 1,4 Mrd steht im Geschäftsbericht (anderer Beleg)."
+    },
+    {
+     "claim_id": "T-E04",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: BAAINBw beauftragte laut Rheinmetall das JV Rheinmetall ICEYE Space Solutions (Neuss), SPOCK 1, rund 1,7 Mrd EUR brutto, Laufzeit Ende 2025 bis Ende 2030 mit Verlängerungsoption (Herstellerangabe)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-aaaf59c399a65ff2",
+   "original_read": true,
+   "note": "Euronews-Interview 17.09.2026 Z. 266-325 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "H-02",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Euronews 17.09.2026: Papperger als Rheinmetall CEO (Bildunterschrift, Anreißer, Interview)."
+    },
+    {
+     "claim_id": "H-M02",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Raketenbestände weiterhin niedrig (Papperger: noch der Fall), Skyranger Serienlieferung laut Vertrag 2027, minimale Verzögerungen, Kapazität ab Ende nächsten Jahres bis zu 400, JV Destinus/Lockheed Martin kurz vor Unterzeichnung, erster Marschflugkörper-Auftrag Ende 2026/Anfang 2027 erwartet, rund 34.000 Beschäftigte ohne zivilen Bereich, netto +10.000/Jahr, 70.000 bis 2030, Forschungszentrum Bremen für humanoide Roboter ohne Serienprodukte, starke Raumfahrtinvestitionen; Interview am Rande der Kiellegung in Wolgast."
+    }
+   ]
+  },
+  {
+   "source_id": "S-ae3e82623d92513c",
+   "original_read": true,
+   "note": "ADM-Artikel 09.06.2026 Z. 38-70 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-MKT-12",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (09.06.2026): Regierung unterzeichnete 72-Mio-Dollar-Vertrag mit Rheinmetall Nioa Munitions für 155-mm-M795-Schmiede in Maryborough, Betriebsbeginn bis Ende 2028, anfangs 15.000 Geschosse/Jahr. Währung AUD im Artikel nicht ausdrücklich genannt (australische Quelle/Regierung, Auslegung als AUD naheliegend). Trägt Kante E83."
+    },
+    {
+     "claim_id": "C-STR-23",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: NIOA-CEO bezeichnet die Schmiede in Maryborough als Joint Venture von Nioa und Rheinmetall (Z. 54, 59). Die 51-%-Quote (Anteilsbesitzliste) steht nicht in dieser Quelle; Kante E39 (JV-Partner) ist durch diese Aussage getragen."
+    }
+   ]
+  },
+  {
+   "source_id": "S-ae6533fe6378a611",
+   "original_read": true,
+   "note": "Nammo-Meldung 30.04.2026 Z. 24-34 gelesen; Datum aus Metadaten im Original-HTML. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-NAM-08",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag bestätigt (30.04.2026): Kapazitätsausbau 2025 in Norwegen, Schweden, Finnland, Dänemark, USA; Rahmenverträge für Artilleriemunition und Treibmittel; Lieferungen an NATO/Partner; Termintreue 86,6 %; 4.200 Beschäftigte, 27 Standorte, 12 Länder. Aussage zu Raufoss als größtem Standort steht nicht in dieser Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-b003618b3ae9eba2",
+   "original_read": true,
+   "note": "Pressemitteilung 02.07.2026 Z. 9-26 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-A14",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag bestätigt (02.07.2026): erstmals bestellender internationaler Kunde, vier Skynex-Systeme, mehrere hundert Mio EUR, gebucht Q2 2026, erste Batterie 21 Monate nach Vertragsunterzeichnung, 39 Monate gesamt, Rheinmetall Italia Prime Contractor. Italien-Teil (erste Batterie 18.12.2025, 73 Mio, Option 204 Mio) steht nicht in dieser Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-b159a0c9329835a7",
+   "original_read": true,
+   "note": "Geschäftsbericht 2024 (PDF-Text): Abschnitte PDF-S. 21 (Z. 805-810), PDF-S. 31 (Z. 1229-1233) und Mandatsübersicht PDF-S. 158 (Z. 7417-7448) gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-MKT-11",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag bestätigt: Umsatz mit der Ukraine 2024 auf 1.262 MioEUR (Vorjahr 594 MioEUR) laut Geschäftsbericht 2024. Halbjahres-Umsatztreiber in anderer Quelle."
+    },
+    {
+     "claim_id": "C-STR-20",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag bestätigt: In Kiew 2023 Gemeinschaftsunternehmen mit Ukrainian Defense Industry gegründet, zunächst Service/Wartung, später Produktion und Entwicklung; Juni 2024 Eröffnung des Instandsetzungsstützpunkts. Quote 51 % (Anteilsbesitzliste) und 49 % hier nicht genannt; trägt Kante E33 für die JV-Gründung."
+    },
+    {
+     "claim_id": "C-STR-30",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag GB 2024 (Mandatsübersicht PDF-S. 158): Dagmar Steinert, Finanzvorstand, Bestellung 01.12.2022 bis 31.12.2024, Mitgliedschaft in Aufsichtsgremien u. a. 4iG Nyrt. (konzernextern); Enddatum des Mandats wird nicht gesondert genannt, es ist aus dem Ende der Bestellung abgeleitet. Neumann-Teil (GB 2025) nicht in dieser Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-be6a33c1caf2a631",
+   "original_read": true,
+   "note": "Pressemitteilung 08.10.2026 Z. 16-26 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "T-E25",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (08.10.2026): vorzeitige Erneuerung und Verdopplung der syndizierten Kreditlinie von 750 Mio auf 1,5 Mrd EUR, Kernbankenkreis neu ausgerichtet und um internationale Partner erweitert; Verwendung als zusätzlicher finanzieller Spielraum beschrieben (Herstellerangabe)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-c0d13e5db6387716",
+   "original_read": true,
+   "note": "Pressemitteilung ILA 2026 (10.06.2026) Z. 9-40 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-A10",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag bestätigt (ILA, 10.06.2026): Bundeswehr 19 Skyranger 30 auf Boxer beauftragt, erster Prototyp termingerecht geliefert; Österreich 36 Skyranger 30 (Pandur EVO); Niederlande Dezember 2025 Auftrag im Bereich mehrerer hundert Mio EUR. Die Zahl zweistellig für die Niederlande steht nicht in dieser Quelle."
+    },
+    {
+     "claim_id": "P-A13",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag: Produktionskapazität wird von aktuell rund 70-100 Türmen auf bis zu 400 pro Jahr ausgebaut (Abschnitt Capacity Expansion). Standortkapazitäten stehen in der Investorenpräsentation."
+    }
+   ]
+  },
+  {
+   "source_id": "S-c85fbd35697b1263",
+   "original_read": true,
+   "note": "gCaptain/Reuters-Meldung 24.06.2026 Z. 31-48 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "T-E17",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Reuters (24.06.2026) bestätigt: Streichung F126 (sechs Schiffe), Verteidigungsministerium: Kosten würden über 18 Mrd EUR steigen, erhebliche Verzögerungen, Kostensteigerungen und unvorhersehbare Risiken; stattdessen acht MEKO A-200 von TKMS; Rheinmetall-Aktie bis -16,7 %; Rheinmetall erwog NVL-Übernahme (kein formaler Vertrag). Halbjahresbericht-Teil in anderer Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-cd90025f003c456d",
+   "original_read": true,
+   "note": "Unternehmensseite Rheinmetall Nordic Z. 8-100 gelesen; Meldung zur Standorteröffnung 01.10.2026 steht nicht auf dieser Seite. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-D50",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag Unternehmensseite: 81-mm-Mörsersystem bei den norwegischen Streitkräften im Einsatz, 120-mm entwickelt/getestet, Elektrooptik/Feuerleitsysteme/Waffenzubehör im Portfolio. Standorteröffnung Skoppum am 01.10.2026 (4.579 m², 127/100 Mitarbeitende) steht nicht auf dieser Seite und ist über die zweite Quelle zu prüfen."
+    },
+    {
+     "claim_id": "P-R97",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Teil von Global Business in Digital Systems, Hauptsitz Skoppum bei Horten/Tønsberg, Büros Oslo und Stockholm (Branch Sweden), Advanced Land Autonomy Centre of Excellence. Undatiert."
+    }
+   ]
+  },
+  {
+   "source_id": "S-cede873d57924937",
+   "original_read": true,
+   "note": "Pressemitteilung 02.06.2026 Z. 16-38 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-R72",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (02.06.2026): Ausbau bestehender Kapazitäten in Rumänien, Investition mehrerer hundert Mio EUR, Technologietransfer, Abwicklung auch an weiteren Standorten; Rheinmetall Automecanica (Medias) bereits aktiv; konkrete Standorte/Rechtsträger nicht genannt."
+    },
+    {
+     "claim_id": "P-V30",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: Vergabe am 29.05.2026 durch Directorate General for Armaments unter SAFE, 5,7 Mrd EUR, 298 Lynx (überwiegend Schützenpanzer, Mörserträger-, Führungs-, Sanitätsvarianten), Skyranger auf Lynx, Mittelkalibermunition, zwei Offshore-Patrouillenboote, zwei Taucherunterstützungsschiffe, Lieferung 2028-2030, Verträge unterzeichnet."
+    }
+   ]
+  },
+  {
+   "source_id": "S-cf746dc76f173082",
+   "original_read": true,
+   "note": "Defense-Post-Artikel 01.02.2026 Z. 35-67 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-HAN-07",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (01.02.2026): Roboter mischen Nitrozellulose und Nitroglycerin; 1,2 Mio MCS-Einheiten entsprechen etwa 200.000-250.000 155-mm-Schuss (Medienumrechnung); Werksleiter Daejeon Jae Woong Ga: capable of producing energetic materials all the way to system integration (Kontext: Raketensystemintegration)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-d32c73540389046f",
+   "original_read": true,
+   "note": "dpa-AFX-Meldung 20.08.2026 Z. 55-69 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "P-A11",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dpa-AFX/Capital (20.08.2026): Beschaffungsamt: Skyranger 30 voraussichtlich ab Mitte 2027 statt Mitte 2026; Rheinmetall: Serienauslieferung insgesamt nur fünf Monate später abgeschlossen, Vollauslieferung planmäßig 2027 und 2028. Qualifikationsfahrzeuge im Dezember, erstes Serienfahrzeug August 2027, 19 Fahrzeuge bis Februar 2028 stehen nicht in diesem Artikel."
+    },
+    {
+     "claim_id": "P-V12",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dpa-AFX/Capital: Beginn der Serienauslieferung war 2025 geplant, Akten: Verzug von mindestens 11 Monaten gemäß Vertrag (ungenügende Reife und Qualität); Rheinmetall: erstes Serienfahrzeug 2025 übergeben, 24 weitere bis Ende 2026 geplant, 11 Monate nicht bestätigt. Drittes Quartal 2026 als Auftragnehmerplanung steht nicht in diesem Artikel."
+    }
+   ]
+  },
+  {
+   "source_id": "S-d803328fd1670795",
+   "original_read": true,
+   "note": "KNDS-Pressemitteilung MSPO 2026 gelesen; LU211-Abschnitt (Z. 23) enthält Reichweiten, Katalogwerte LU220/KATANA/BONUS-Reichweite fehlen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-KND-02",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag KNDS MSPO 2026 (08.09.2026): LU211 mit Base Bleed bis 30 km aus 155/39, bis 40 km aus 155/52 bestätigt. LU220 (~43 km), KATANA (>45 km, CEP <10 m) und BONUS-MKII-Reichweiten stehen nicht in dieser Quelle (Katalog = anderer Beleg)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-e1f0237821c9aae3",
+   "original_read": true,
+   "note": "EDR-Artikel 28.01.2026 Z. 42-47 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "C-MKT-07",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt: LRMV unterzeichnete im November 2025 den ersten Vertrag mit TERRARM/DNA über 21 A2CS Combat as-is Fahrzeuge; am 27.01.2026 wurden die ersten vier Lynx KF41 übergeben. Vertragswert nicht genannt; trägt Kante E78."
+    }
+   ]
+  },
+  {
+   "source_id": "S-eeb74caefc3275d0",
+   "original_read": true,
+   "note": "GD-OTS-Meldung 27.04.2023 Z. 49-50 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-GDO-03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (27.04.2023): Task Order über 217 Mio USD unter modifiziertem Army-Vertrag über 1,48 Mrd USD, Modernisierung/Erweiterung der 155-mm-Metallteilefertigung in Scranton AAP und Wilkes-Barre, Hochlauf bis Ende Fiskaljahr 2025; erreichter Hochlauf nicht belegt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-f550c79e68fc9c76",
+   "original_read": true,
+   "note": "Militarnyi-Artikel 04.12.2024 Z. 39-48 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML).",
+   "findings": [
+    {
+     "claim_id": "M-NAM-04",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Bestätigt (04.12.2024): Baubeginn am Montag 2. Dezember in Raufoss, norwegischer Vertrag über 1,083 Mrd NOK für erhöhte Produktionsbereitschaft über 15 Jahre, Geschossproduktion verzehnfachbar, andere Geschosse und Raketentriebwerke verdoppelbar; Primärquelle regjeringen.no nicht geöffnet."
+    }
+   ]
+  }
+ ]
+}
