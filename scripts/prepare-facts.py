@@ -11,7 +11,7 @@ from pathlib import Path
 from urllib.parse import urlsplit, urlunsplit
 
 ROLES = {"context": ("T", "H"), "portfolio": ("P",),
-         "cluster": ("C",), "market": ("M",)}
+         "cluster": ("C",), "market": ("M",), "focus": ("F",)}
 KINDS = {"Fakt", "Herstellerangabe", "Partnerangabe", "Nutzerangabe"}
 STATUS = {"vollständig", "teilweise", "blockiert"}
 INTERPRETATION_FIELDS = {"interpretations", "swot", "scores", "rankings", "ratings"}
@@ -83,9 +83,23 @@ def review_validator():
     spec.loader.exec_module(module)
     return module.validate
 
+def focus_requests(manifest):
+    spec = importlib.util.spec_from_file_location('focus_requests', Path(__file__).with_name('focus-html.py'))
+    helper = importlib.util.module_from_spec(spec); spec.loader.exec_module(helper)
+    requests = helper.rows(manifest.get('focus_pages', []), 'manifest focus_pages')
+    if any(not nonempty(r.get('label')) for r in requests):
+        raise ValueError('focus: requested label missing')
+    return requests
+
+
+def module_key(module):
+    return 'focus:' + str(module.get('focus_id')) if module.get('role') == 'focus' else module.get('role')
+
+
 def build(manifest, modules, plan=None):
     errors = []
     claims, sources, networks, roles = [], {}, [], set()
+    focus_seen = set()
     if not isinstance(manifest, dict):
         return {"errors": ["manifest must be an object"]}, None
     if manifest.get("schema_version") != 1 or manifest.get("mode") != "facts-v2":
@@ -95,8 +109,14 @@ def build(manifest, modules, plan=None):
             errors.append("manifest missing " + key)
     if not day(manifest.get("as_of")):
         errors.append("manifest invalid as_of")
+    try:
+        requested_focus = focus_requests(manifest)
+    except ValueError as error:
+        errors.append(str(error))
+        requested_focus = []
+    focus_ids = {r['id'] for r in requested_focus}
     selected = manifest.get("selected_roles")
-    if not isinstance(selected, list) or not selected or any(not isinstance(r, str) or r not in ROLES for r in selected):
+    if not isinstance(selected, list) or (not selected and not focus_ids) or any(not isinstance(r, str) or r not in ROLES or r == "focus" for r in selected):
         errors.append("manifest invalid selected_roles")
         selected = []
     elif len(set(selected)) != len(selected):
@@ -114,9 +134,21 @@ def build(manifest, modules, plan=None):
         if not isinstance(role, str) or role not in ROLES:
             errors.append("module invalid role")
             continue
-        if role in roles or role not in selected:
-            errors.append("module role duplicate/unselected: " + role)
-        roles.add(role)
+        if role == 'focus':
+            fid = data.get('focus_id')
+            if not isinstance(fid, str) or fid not in focus_ids or fid in focus_seen:
+                errors.append('focus module duplicate/unrequested focus_id')
+            else:
+                focus_seen.add(fid)
+            page_rows = data.get('focus_pages')
+            if not isinstance(page_rows, list) or len(page_rows) != 1 or not isinstance(page_rows[0], dict) or page_rows[0].get('id') != fid:
+                errors.append('focus module must contain exactly its own page')
+            if set(data) & {'profile', 'topics', 'events', 'company_facts', 'products', 'regions', 'market_dashboard', 'regional_presence', 'peers', 'observations', 'network'}:
+                errors.append('focus module may only supply its own focus page')
+        else:
+            if role in roles or role not in selected:
+                errors.append("module role duplicate/unselected: " + role)
+            roles.add(role)
         if data.get("schema_version") != 1 or data.get("mode") != "facts-v2":
             errors.append(role + ": wrong schema/mode")
         for key in ("run_id", "company", "as_of"):
@@ -165,6 +197,8 @@ def build(manifest, modules, plan=None):
             cid = row.get("id")
             if not nonempty(cid) or not re.fullmatch(r"(" + "|".join(ROLES[role]) + r")[A-Za-z0-9_-]+", cid):
                 errors.append(role + ": invalid claim id prefix")
+            if role == 'focus' and (not isinstance(cid, str) or not cid.startswith('F_' + str(data.get('focus_id')) + '_')):
+                errors.append('focus claim needs F_<focus_id>_ namespace')
             if row.get("kind") not in KINDS:
                 errors.append(str(cid) + ": invalid factual kind")
             if row.get("kind") == "Nutzerangabe":
@@ -223,6 +257,8 @@ def build(manifest, modules, plan=None):
                         errors.append("market: observation references unknown peer/criterion")
                     if any(f in row for f in INTERPRETATION_FIELDS | {"score", "rating", "interpretation"}):
                         errors.append("market: observation must not contain scores")
+    if focus_seen != focus_ids:
+        errors.append("missing requested focus modules")
     if set(selected) != roles:
         errors.append("missing selected modules: " + ", ".join(sorted(set(selected) - roles)))
     ids = {c.get("id") for c in claims if isinstance(c.get("id"), str)}
@@ -280,14 +316,35 @@ def build(manifest, modules, plan=None):
                 market_helper.validate(data['market_dashboard'], dashboard_refs, manifest.get('as_of'))
             except ValueError as error:
                 errors.append(str(error))
+    spec = importlib.util.spec_from_file_location('focus_html', Path(__file__).with_name('focus-html.py'))
+    focus_helper = importlib.util.module_from_spec(spec); spec.loader.exec_module(focus_helper)
+    focus_refs = set()
+    def check_focus_refs(refs):
+        if not isinstance(refs, list) or not refs or any(not isinstance(c, str) or c not in ids for c in refs):
+            raise ValueError('focus requires known claim_ids')
+        focus_refs.update(refs)
+    focus_modules = [d for d in modules if isinstance(d, dict) and 'focus_pages' in d]
+    try:
+        if any(d.get('role') != 'focus' for d in focus_modules):
+            raise ValueError('focus_pages belongs to separate focus-analyst jobs')
+        if focus_modules and 'focus_pages' not in manifest:
+            raise ValueError('focus_pages requires explicit manifest request')
+        if 'focus_pages' in manifest:
+            by_id = {d.get('focus_id'): d for d in focus_modules}
+            pages = [p for r in requested_focus if r['id'] in by_id for p in by_id[r['id']]['focus_pages']]
+            focus_helper.validate(manifest['focus_pages'], pages, check_focus_refs, manifest.get('as_of'))
+            if any(d.get('market_dashboard') is not None for d in modules if isinstance(d, dict)) or any(t.get('page') == 'market' for t in manifest.get('topics', [])):
+                raise ValueError('new focus layout replaces market_dashboard / page=market; use focus_pages')
+    except (ValueError, TypeError) as error:
+        errors.append(str(error))
     packet = {"schema_version": 1, "mode": "facts-v2", "run_id": manifest.get("run_id"),
               "company": manifest.get("company"), "as_of": manifest.get("as_of"),
               "claims": claims, "sources": sorted(sources.values(), key=lambda s: s["id"]),
-              "module_views": [{"role": d.get("role"), **{k: d[k] for k in
+              "module_views": [{"role": module_key(d), **{k: d[k] for k in
                                   ("company_facts", "events", "profile", "products", "regions",
-                                   "topics", "peers", "observations", "market_dashboard", "regional_presence", "gaps", "coverage", "report_log")
+                                   "topics", "peers", "observations", "market_dashboard", "focus_pages", "regional_presence", "gaps", "coverage", "report_log")
                                   if k in d}} for d in modules if isinstance(d, dict)],
-              "module_context": [{"role": d.get("role"), "scope": d.get("scope"),
+              "module_context": [{"role": module_key(d), "scope": d.get("scope"),
                                   "status": d.get("status"),
                                   "shared_limitations": d.get("shared_limitations", []),
                                   "document_scope": d.get("document_scope", "")}
@@ -296,7 +353,7 @@ def build(manifest, modules, plan=None):
         packet["network"] = networks[0]
     check = review_validator()(packet)
     errors.extend(check["errors"])
-    required = sorted(market_refs | presence_refs | {c for n in networks for e in n.get("edges", []) if isinstance(e, dict)
+    required = sorted(market_refs | presence_refs | focus_refs | {c for n in networks for e in n.get("edges", []) if isinstance(e, dict)
                        for c in e.get("claim_ids", []) if isinstance(c, str)})
     try:
         packet_fingerprint = hashlib.sha256(json.dumps(packet, sort_keys=True,
@@ -309,7 +366,7 @@ def build(manifest, modules, plan=None):
             "required_full_review_ids": required,
             "packet_fingerprint": packet_fingerprint,
             "errors": errors, "fingerprints": check.get("fingerprints", {}),
-            "module_status": {d.get("role"): d.get("status") for d in modules if isinstance(d, dict) and isinstance(d.get("role"), str)},
+            "module_status": {module_key(d): d.get("status") for d in modules if isinstance(d, dict) and isinstance(d.get("role"), str)},
             "notice": "Formal validation only; factual accuracy, coverage and source independence not verified."}, packet
 
 def main():

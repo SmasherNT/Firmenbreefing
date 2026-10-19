@@ -21,7 +21,8 @@ Keine kopierten Fakten-/Belegtexte pro Zeile.
 | context | company_facts, events, profile, topics |
 | portfolio | products, regions, topics, regional_presence nach regionale-praesenz.md |
 | cluster | topics, report_log; network bleibt eigenes Paketfeld |
-| market | regions, topics, peers, observations gemäß Vergleichsvertrag; market_dashboard nach markt-deepdive.md |
+| market | regions, topics, peers, observations gemäß Vergleichsvertrag; historische market_dashboard-Daten nur im alten Layout |
+| focus:<id> | eine focus_pages-Seite je eigenständigem focus-analyst-Aufruf, nach fokusseiten.md |
 
 events: zusätzlich date (YYYY-MM-DD oder null), kein Abrufdatum als Ereignisdatum.
 Kurzes sachliches label, gegebenenfalls mit „angekündigt“/„laut Hersteller“/
@@ -58,22 +59,23 @@ Positionierung liefert außerdem je 1–3 modulspezifische Fakt/Insight-Karten n
 modul-keyfacts.md im Kontextauftrag --module-insights. Alle Kartenfelder und
 Zuordnungen gehören zum geprüften I-Claim, fehlende Auswahl explizit dokumentieren.
 
-Feste vier Desktop-Seiten, auch wenn ein optionaler Auftragsteil leer ist:
-1. Überblick: Summary, Entwicklungen, Portfolio, allgemeine Themen, Cluster,
-   Capability Matrix, Einordnung, SWOT und offene Fragen. Module untereinander.
-   Keyfacts & Insights direkt unter Portfolio, Cluster und Markt-/Wettbewerbsdarstellung.
-   Regionale Unternehmenspräsenz nach Cluster direkt vor Capability Matrix/Wettbewerb:
-   fixe Skala 1–5, klickbare Regionszeilen und vollständig belegte Profile darunter.
-2. Beruflicher Gesprächspartner-Kontext.
-3. Markt-Deep-Dive: vergleichbare Kennzahlen/CAGR, Programme und industrielle Rollen
-   mit vertiefbaren Länderdetails nach markt-deepdive.md; anschließend regionale
-   Themen und regionale Markteinordnung; Unternehmenspräsenz auf Seite 1, sofern
-   das aktuelle Paket regional_presence enthält (ältere Pakete bleiben kompatibel).
-4. Aussagen, Belegstellen und Originalquellen mit Suche.
+Dynamische Desktop-Seiten für neue Manifestdateien mit focus_pages:
+1. Überblick: Summary, Entwicklungen, Gesamtportfolio, allgemeine Themen, Cluster,
+   regionale Unternehmenspräsenz, Capability Matrix, Einordnung, SWOT und offene
+   Fragen. Module untereinander; Keyfacts/Insights bleiben unter ihren Modulen.
+2. Beruflicher Gesprächspartner-Kontext, nur wenn beauftragt.
+3. Danach genau eine Seite je focus_pages-Thema in Prompt-Reihenfolge:
+   Kernaussagen, passende Grafiken und Sechsmonats-Timeline nach fokusseiten.md.
+   Keine feste Markt-Deep-Dive-Seite, keine Grenze für Timeline-/Grafikanzahl.
+4. Quellen immer als letzter Reiter; Nummerierung folgt der tatsächlichen Anzahl.
 
-Manifest topics=[{id,label,page}], page=main/market (Standard main);
-market_title optional aus dem Auftrag, z. B. Golfstaaten. Reihenfolge je Seite
-entspricht dem Auftrag. Unternehmenspräsenz vom allgemeinen Markt getrennt zeigen.
+Neue Manifestdateien immer mit focus_pages=[{id,label}] oder [].
+Allgemeine Unternehmensthemen bleiben topics=[{id,label,page:"main"}].
+Historische Läufe ohne focus_pages behalten ihren alten Vierseitenpfad zur
+Wiederholbarkeit. page=market/market_dashboard nicht in neue Fokusläufe übernehmen.
+Fokusdaten sind Bestandteil der vorhandenen Basisprüfung und vollständig A-geprüft;
+kein Fokus-Positionierungs-/SWOT-Kontext und keine zusätzliche Opus-Runde.
+
 Portfolio nach portfolio-darstellung.md: sechs Stufen, farbige Produktgruppen,
 Filter/Tabelle und ein vollständig geschlossener Detailblock. Produktklick öffnet
 Block und Profil; keine firmenspezifischen Bewertungen in der Vorlage.
@@ -139,7 +141,7 @@ details-Element darstellen; Überschrift öffnet ihn. Alle Inhalte erhalten.
 Gesprächspartnerseite ab 17.10.2026: Nach dem Profil die Timeline
 „Aktuelle Äußerungen & Medienpräsenz der letzten vier Monate“ gemäß
 gespraechspartner.md. Kein Abschnitt „Regionaler Bezug“. Quellen und Evidenz
-ausschließlich auf Seite 4, auf Seite 2 nur anklickbare interne Verweise.
+ausschließlich im letzten Quellenreiter, auf der Personenseite nur anklickbare interne Verweise.
 
 Regionale Präsenz: Methodik regional-presence-v2 gemäß regionale-praesenz.md.
 Eigene und belegte gemeinsam/allein kontrollierte JV-Strukturen nach tatsächlichen

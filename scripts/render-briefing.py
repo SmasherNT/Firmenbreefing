@@ -18,6 +18,7 @@ PORTFOLIO = CHECK.helper("portfolio_html", "portfolio-html.py")
 PROFILE = CHECK.helper("profile_html", "profile-html.py")
 CAPABILITY = CHECK.helper("capability_html", "capability-html.py")
 MARKET = CHECK.helper("market_html", "market-html.py")
+FOCUS = CHECK.helper("focus_html", "focus-html.py")
 MODULE_INSIGHTS = CHECK.MODULE_INSIGHTS
 PRESENCE = CHECK.PRESENCE
 CLUSTER = CHECK.helper("cluster_html", "cluster-html.py")
@@ -53,7 +54,8 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     if not isinstance(selected, list) or not selected or len(set(selected)) != len(selected):
         raise ValueError("manifest selected_roles invalid")
     views = CHECK.index([dict(id=v.get("role"), **v) for v in facts.get("module_views", [])], "module_views")
-    if set(views) != set(selected) or not set(views) <= {"context", "portfolio", "cluster", "market"}:
+    expected_views = set(selected) | {"focus:" + str(r.get("id")) for r in manifest.get("focus_pages", [])}
+    if set(views) != expected_views or not set(selected) <= {"context", "portfolio", "cluster", "market"}:
         raise ValueError("module_views must match selected_roles")
     contexts = facts.get("module_context", [])
     if any(c.get("status") == "blockiert" for c in contexts):
@@ -126,6 +128,16 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             if parents:
                 require(parents, (*trail, cid))
 
+    focus_layout = 'focus_pages' in manifest
+    focus_pages = [page for r in manifest.get('focus_pages', []) for page in views.get('focus:' + r['id'], {}).get('focus_pages', [])]
+    if any('focus_pages' in v and not role.startswith('focus:') for role, v in views.items()):
+        raise ValueError('focus_pages belongs to separate focus-analyst jobs')
+    if not focus_layout and focus_pages:
+        raise ValueError('focus pages require explicit manifest request')
+    if focus_layout:
+        FOCUS.validate(manifest['focus_pages'], focus_pages, require, manifest['as_of'])
+        if views.get('market', {}).get('market_dashboard') is not None or any(t.get('page') == 'market' for t in manifest.get('topics', [])):
+            raise ValueError('new focus layout replaces market_dashboard / page=market')
     topics = manifest.get("topics", [])
     if not isinstance(topics, list):
         raise ValueError("topics must be ordered id/label rows")
@@ -502,9 +514,27 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     region_interpretations = [interp_card(r) for r in interpreted.values() if r.get('section') == 'regions']
     if region_interpretations:
         regions.append(section('Einordnung · Marktzugang', grid(region_interpretations)))
-    market_label = 'Markt-Deep-Dive' + (' · ' + manifest['market_title'] if manifest.get('market_title') else '')
-    pages = [('page-main', 'Überblick', main), ('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media),
-             ('page-regions', market_label, ''.join(regions) or section(market_label, '<p>Keine freigegebenen regionalen Befunde für diesen Auftrag.</p>'))]
+    if focus_layout:
+        # General company/market regional facts stay in the company overview.
+        regional = []
+        for role, view in views.items():
+            if view.get('regions') and not (role == 'portfolio' and presence_rows is not None):
+                regional.append(section('Unternehmenspräsenz' if role == 'portfolio' else 'Markt & Industrie', grid([view_card(r) for r in view['regions']])))
+        if region_interpretations:
+            regional.append(section('Einordnung · Marktzugang', grid(region_interpretations)))
+        main += ''.join(regional)
+        pages = [('page-main', 'Überblick', main)]
+        if manifest.get('person'):
+            pages.append(('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media))
+        def focus_details(ids):
+            return '<div class="focus-evidence">' + ''.join('<p>' + esc(claims[c]['statement']) + '</p>' + paragraphs([claims[c].get('uncertainty')]) for c in dict.fromkeys(ids)) + links(ids) + '</div>'
+        for page in focus_pages:
+            pages.append(('page-focus-' + page['id'], page['label'], FOCUS.render(page, focus_details, manifest['as_of'])))
+    else:
+        # Explicit compatibility for reviewed historical runs only.
+        market_label = 'Markt-Deep-Dive' + (' · ' + manifest['market_title'] if manifest.get('market_title') else '')
+        pages = [('page-main', 'Überblick', main), ('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media),
+                 ('page-regions', market_label, ''.join(regions) or section(market_label, '<p>Keine freigegebenen regionalen Befunde für diesen Auftrag.</p>'))]
     register = '<label class="source-search">Quellen und Aussagen durchsuchen<input id="source-search-input" type="search" placeholder="Stichwort, Claim oder Quelle"></label>'
     for cid, row in claims.items():
         status = reviews.get(cid, {}).get('status', 'nicht einzeln geprüft')
@@ -517,7 +547,9 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     register += '<h3>Dokumente</h3>' + ''.join('<p>' + source_html(s) + '</p>' for s in sources.values())
     pages.append(('page-sources', 'Quellen', section('Aussagen, Belegstellen & Originalquellen', register) + person_sources))
     tabs = ''.join('<button type="button" role="tab" id="tab-' + ident + '" data-page="' + ident + '" aria-controls="' + ident + '">' + str(i) + ' · ' + esc(label) + '</button>' for i, (ident, label, _) in enumerate(pages, 1))
-    content = ''.join('<div class="page" role="tabpanel" aria-labelledby="tab-' + ident + '" id="' + ident + '"><p class="page-kicker">' + str(i).zfill(2) + ' / 04 · ' + esc(label) + '</p>' + body + '</div>' for i, (ident, label, body) in enumerate(pages, 1))
+    content = ''.join('<div class="page" role="tabpanel" aria-labelledby="tab-' + ident + '" id="' + ident + '"><p class="page-kicker">' + str(i).zfill(2) + ' / ' + str(len(pages)).zfill(2) + ' · ' + esc(label) + '</p>' + body + '</div>' for i, (ident, label, body) in enumerate(pages, 1))
+    if focus_pages:
+        content = FOCUS.css() + content
     if positioning_context and positioning_context.get('module_insights'):
         content = MODULE_INSIGHTS.css() + content
     template = (ROOT / 'references/templates/briefing.html').read_text(encoding='utf-8')

@@ -101,7 +101,7 @@ def env(manifest, facts, review):
     if result["errors"]:
         raise ValueError("invalid facts: " + "; ".join(result["errors"]))
     for row in facts["claims"]:
-        if row.get("kind") not in {"Fakt", "Herstellerangabe", "Partnerangabe"} or not re.fullmatch(r"[PCMTH][A-Za-z0-9_-]+", row["id"]):
+        if row.get("kind") not in {"Fakt", "Herstellerangabe", "Partnerangabe"} or not re.fullmatch(r"[PCMTHF][A-Za-z0-9_-]+", row["id"]):
             raise ValueError("interpretations require factual claims, not user input/ratings")
     return index(facts["claims"], "facts"), index(review.get("claims"), "review"), result["fingerprints"]
 
@@ -224,6 +224,8 @@ def prepare(manifest, facts, review, claim_ids, plan=None, market=None,
             if parent not in selected:
                 selected.add(parent)
                 todo.append(parent)
+    if any(cid.startswith('F_') for cid in selected):
+        raise ValueError('focus facts stay outside positioning/SWOT contexts')
     if not selected and matrix is None:
         raise ValueError("select relevant fact or interpretation ids")
     selected_sources = {sid for cid in selected for sid in claims[cid]["source_ids"]}
@@ -328,6 +330,8 @@ def validate_output(manifest, facts, review, context, output,
     pairs, visiting = set(), set()
 
     def checked_facts(cid, trail=None):
+        if cid.startswith('F_'):
+            errors.append('focus facts stay outside positioning/SWOT: ' + cid)
         trail = set() if trail is None else trail
         if cid in trail:
             errors.append("cyclic fact dependency: " + cid)

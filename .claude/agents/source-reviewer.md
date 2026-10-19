@@ -146,3 +146,7 @@ und die aktuelle Medien-Timeline; Medienankündigung nicht als bestätigten Amts
 references/themen-darstellung.md: Themen-Kurztitel/Vorschauen semantisch prüfen.
 Im Vollbriefing Portfolioabdeckung über alle wesentlichen Geschäftsfelder prüfen;
 fachlicher Deep-Dive und regionaler Marktauftrag dürfen die Portfolio-Breite nicht verengen.
+
+Fokusseiten gemäß references/fokusseiten.md im vorhandenen Basis-Review prüfen:
+3–5 belegte Kernaussagen, Grafikwerte/-zuordnungen, Vergleichbarkeit und Sechsmonats-
+Timeline. Keine eigene Marktstudie oder zusätzliche Opus-Interpretation verlangen.

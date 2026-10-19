@@ -15,7 +15,10 @@ isolierter Fakten-Test tests/<run_id>/) unter input/ den Originalauftrag und
 facts-run.json. Kein input/auftrag.md des alten Ablaufs überschreiben.
 Manifest: schema_version=1, mode="facts-v2", run_id, company, as_of (YYYY-MM-DD),
 scope (nicht leer), selected_roles (nicht leere Liste aus context/portfolio/cluster/market).
-Optional Person, Themen, Regionen und comparison_plan_path.
+Optional Person, Themen, Regionen und comparison_plan_path. Neue HTML-Läufe
+immer mit focus_pages nach fokusseiten.md (sonst []). Je Fokus eigener
+focus-analyst-Aufruf/Datei, role=focus, focus_id und F_<focus_id>_-Claims;
+selected_roles bleibt die Kernrollenauswahl. Alle Fokusmodule mitkonsolidieren.
 Ohne Firmen-/Teilauftrag keine Recherche beginnen. Nur ausgewählte Rollen starten.
 Delegation nennt Auftrag, Manifest, erlaubte Eingaben und genau einen Zielpfad.
 Nur eigenes Modul schreiben; gemeinsamen Quellenbestand nicht parallel ändern.
@@ -32,6 +35,7 @@ zusammenführen. Die bisherigen Agentenkontexte bleiben unverändert.
 | portfolio | portfolio-analyst / portfolio-analysis | portfolio-facts.json | P- |
 | cluster | cluster-analyst / cluster-analysis | cluster-facts.json | C- |
 | market | market-facts-analyst / market-facts | market-facts.json | M- |
+| focus:<id> (zusätzlich je Thema) | eigener focus-analyst-Aufruf / fokusseiten.md | focus-<id>-facts.json | F_<id>_ |
 
 ## JSON-Modul (verbindlich)
 schema_version=1, mode="facts-v2", role, run_id, company, as_of, scope, status,
@@ -55,10 +59,10 @@ Optional depends_on, proposed_depth=A/B, depth_reason, event_date, event_status.
 Keine I-/S-Claims, Bewertungsfelder, Rankings oder SWOT in Faktenmodulen.
 Produkt-/Akteurs-/Länder-/Ereignistabellen dürfen bestehende Claim-IDs referenzieren.
 reuse_claim_ids benennt Fakten anderer ausgewählter Module; nicht deren Text duplizieren.
-Bei regionalem Markt-Deep-Dive liefert market zusätzlich market_dashboard gemäß
-markt-deepdive.md: vergleichbare Kennzahlen, Programme, lokale Rollen und Zugang.
-Nur diese Rolle besitzt das Dashboard; Faktenreferenzen und gesamte Zuordnung
-werden validiert und im Paket-Snapshot gebunden. Keine Beispielwerte übernehmen.
+Neue separate Fokusseiten liefert ausschließlich focus-analyst nach fokusseiten.md,
+mit je einer Instanz/Datei pro Thema auf Sonnet Medium. Historisches market_dashboard
+nach markt-deepdive.md nur für vorhandene Manifestdateien ohne focus_pages erhalten.
+Keine neue Fokusrecherche an den Opus-Marktanalysten delegieren.
 Portfolio liefert zusätzlich regional_presence nach regionale-praesenz.md:
 geografische Aufstellung des Gesamtunternehmens mit konkreten Rollen, Standorten,
 Status und Produktumfang. Keine Stufen in Faktenphase; Cluster-Belege wiederverwenden.

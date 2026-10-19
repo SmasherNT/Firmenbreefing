@@ -92,6 +92,8 @@ def init(manifest_path, request_path, cache_path, state_path, target='html',
     CACHE.Cache(cache_path, manifest)
     stages = [r for r in ROLES if r in selected]
     if full or with_plan or manifest.get('comparison_plan_path'): stages.insert(stages.index('market') if 'market' in stages else len(stages), 'plan')
+    focus = FACTS.focus_requests(manifest)
+    stages += ['focus:' + r['id'] for r in focus]
     stages += ['facts', 'basis-review']
     if target != 'facts': stages += [r for r in ('positioning', 'swot') if r in interpretation_roles] + ['final-review']
     if target == 'html': stages += ['html']
@@ -122,6 +124,8 @@ def code_files(stage):
     """Separate presentation changes from research; bind actual policies and validators."""
     files = [ROOT/'CLAUDE.md', ROOT/'scripts/resume-run.py', ROOT/'scripts/source-cache.py']
     files += [p for p in (ROOT/'references').glob('*.md') if not p.name.endswith('-abnahme.md')]
+    if stage.startswith('focus:'):
+        files += [ROOT/'.claude/agents/focus-analyst.md', ROOT/'scripts/focus-html.py', ROOT/'scripts/prepare-facts.py']
     if stage in AGENTS:
         files += [ROOT/'.claude/agents'/(AGENTS[stage]+'.md')]
     if stage in ROLES or stage in {'facts', 'plan'}:
@@ -154,11 +158,13 @@ def expected_link(state, supplied, name, stage, output):
 def dependencies(state, stage, inputs):
     deps = set()
     def link(name, parent, output): deps.add(expected_link(state, inputs, name, parent, output))
-    if stage in ROLES:
+    if stage in ROLES or stage.startswith('focus:'):
         if stage == 'market' and 'plan' in state['stages']: link('plan', 'plan', 'plan')
     elif stage == 'facts':
         for role in ROLES:
             if role in state['stages']: link(role, role, 'module')
+        for focus_stage in state['stages']:
+            if focus_stage.startswith('focus:'): link(focus_stage, focus_stage, 'module')
         if 'plan' in state['stages']: link('plan', 'plan', 'plan')
     elif stage != 'plan':
         link('facts', 'facts', 'facts')
@@ -198,17 +204,19 @@ def validate_stage(state, manifest, cache, stage, inputs, outputs):
         return CHECK.read(source[name])
     plan = read('plan') if 'plan' in inputs else None
     source_ids = set()
-    if stage in ROLES:
+    if stage in ROLES or stage.startswith('focus:'):
         require(set(outputs) == {'module'}, 'fact role output must be module')
         module = read('module', True)
-        require(module.get('role') == stage and module.get('status') in {'vollständig', 'teilweise'}, 'wrong/blocked fact role')
+        require(FACTS.module_key(module) == stage and module.get('status') in {'vollständig', 'teilweise'}, 'wrong/blocked fact role')
         # Referenced sibling modules must be explicit inputs; never ignore dangling IDs.
         modules = [module]
         for role in ROLES:
             if role in inputs:
                 require(role != stage and read(role).get('role') == role, 'wrong sibling module input')
                 modules.append(read(role))
-        partial_manifest = {**manifest, 'selected_roles': [m['role'] for m in modules]}
+        partial_manifest = {**manifest, 'selected_roles': [m['role'] for m in modules if m['role'] != 'focus']}
+        if 'focus_pages' in manifest:
+            partial_manifest['focus_pages'] = [r for r in manifest['focus_pages'] if stage == 'focus:' + r['id']]
         if 'market' not in partial_manifest['selected_roles']: partial_manifest.pop('comparison_plan_path', None)
         report, packet = FACTS.build(partial_manifest, modules, plan)
         checked_report(report)
@@ -220,7 +228,7 @@ def validate_stage(state, manifest, cache, stage, inputs, outputs):
         require(not FACTS.validate_plan(read('plan', True), manifest), 'invalid comparison plan')
     elif stage == 'facts':
         require(set(outputs) == {'facts', 'validation'}, 'facts/validation outputs required')
-        report, packet = FACTS.build(manifest, [read(r) for r in ROLES if r in manifest['selected_roles']], plan)
+        report, packet = FACTS.build(manifest, [read(r) for r in ROLES if r in manifest['selected_roles']] + [read(s) for s in state['stages'] if s.startswith('focus:')], plan)
         checked_report(report)
         require(read('facts', True) == packet and read('validation', True) == report, 'packet/validation differs from current modules')
         source_ids = {s['id'] for s in packet['sources']}

@@ -34,9 +34,10 @@ Ausgabe nach ausgabe-html-v2.md. Root-/Archivregeln oben nur für ausdrücklich
 bestehende Legacy-Markdown-Läufe. Einrichtung erzeugt keinen Firmenauftrag.
 
 ## Portfolio und Themenumfang
-Vollbriefing: unternehmensweites Portfolio als Standard, Fach-/Industrie- und
-Markt-Deep-Dives auftragsbezogen. Themenkarten nach themen-darstellung.md;
-regionale Vergleichsgrafiken und Länderdetails nach markt-deepdive.md.
+Vollbriefing: unternehmensweites Portfolio als Standard. Allgemeine
+Unternehmensthemen nach themen-darstellung.md. Separate Themen-/Markt-/Länder-
+überblicke nach fokusseiten.md: ein Reiter und eigener focus-analyst-Aufruf je
+Fokusthema, Sonnet 5.5 Medium. Neue Manifestdateien immer mit focus_pages (sonst []).
 Unter Portfolio, Cluster und Markt/Wettbewerb auf Seite 1 je 1–3 geprüfte
 Fakt/Insight-Karten nach modul-keyfacts.md; Auswahl in bestehender Positionierung.
 Regionale Unternehmenspräsenz nach regionale-praesenz.md im Vollbriefing auf

@@ -23,14 +23,18 @@ nach Modultest-/Faktenvertrag; Legacy/v2 nie mischen.
 ## Zuständigkeit und Umfang
 Hauptagent koordiniert, konsolidiert und rendert lokal; keine eigenen Analysten-
 JSONs, Portfolio-/Cluster-/Markt-/Personenfakten oder LLM-HTML erzeugen.
-Fakten: context (T/H), portfolio (P), cluster (C), market (M).
+Fakten: context (T/H), portfolio (P), cluster (C), market (M),
+optional je Fokusthema focus:<id> (F_<id>_) nach fokusseiten.md.
 Interpretation: positioning (I), danach swot (S); keine Webrecherche dieser Rollen.
 Jede Rolle schreibt nur ihre delegierten Dateien. Gemeinsamen Cache ausschließlich
 über source-cache.py bearbeiten; Faktenindex durch Hauptagent lokal erzeugen.
 
-Vollbriefing: vier Faktenrollen, zwei Interpretationsrollen, Basis- und gemeinsames
-Schluss-Review. Portfolio deckt alle wesentlichen Geschäftsfelder ab; Fach-/Industrie-
-und Markt-Deep-Dives folgen dem Auftrag. Keine Horváth-Angebotskapitel oder separaten
+Vollbriefing: vier Kern-Faktenrollen, je beauftragtem Fokus ein separater
+focus-analyst (Sonnet 5.5 Medium), zwei Interpretationsrollen, Basis- und gemeinsames
+Schluss-Review. Portfolio deckt alle wesentlichen Geschäftsfelder ab; allgemeine
+Unternehmensthemen folgen dem Auftrag. Separate Themen-/Länder-/Marktüberblicke
+als Fokusseiten nach fokusseiten.md, ohne eigene SWOT/Positionierung.
+Keine Horváth-Angebotskapitel oder separaten
 Firmen-Deep-Dives; JV-/Tochterfakten bleiben im Cluster. Themen in Nutzerreihenfolge.
 Keine privaten Personendaten oder erfundenen Personen-/Regionalbeziehungen.
 
@@ -67,8 +71,8 @@ Zuständige Rolle liest die benötigten Referenzen; konkrete Regeln nur dort pfl
 | Gesamtportfolio und spezifische Themen | portfolio-darstellung.md; themen-darstellung.md |
 | Summary, Modul-Keyfacts, berufliches Profil | executive-summary.md; modul-keyfacts.md; gespraechspartner.md |
 | Regionale Unternehmenspräsenz auf Seite 1 vor Wettbewerb | regionale-praesenz.md |
-| Allgemeiner regionaler Markt-/Industrie-Deep-Dive auf Seite 3 | markt-deepdive.md |
-| Feste vier Seiten, Quellen, Druck und HTML-Ausgabe | ausgabe-html-v2.md; briefing-output-Skill |
+| Flexible Fokusseiten nach der Person: ein Sonnet-Agentenaufruf je Thema | fokusseiten.md |
+| Dynamische Seitenfolge, Quellen, Druck und HTML-Ausgabe | ausgabe-html-v2.md; briefing-output-Skill |
 
 Bestehende Positionierungs-/SWOT-Kontexte und ihre vollständigen Pflichtfelder
 bleiben unverändert. Keine neue Recherche-/Prüf-/Designrolle für Darstellung.

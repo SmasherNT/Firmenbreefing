@@ -4,8 +4,9 @@ description: Recherchiere im Modus facts-v2 Länder, Nachfrage, Programme sowie 
 ---
 
 Lies Auftrag/Manifest, references/faktenphase.md, references/capability-matrix.md
-und bei regionalem Markt-Deep-Dive references/markt-deepdive.md
-und den delegierten comparison-plan.json. Nur benötigte Portfolio-/Cluster-
+und den delegierten comparison-plan.json. Neue separate Fokusüberblicke
+nach references/fokusseiten.md ausschließlich an focus-analyst (Sonnet Medium);
+diese Rolle recherchiert weiterhin den allgemeinen Unternehmensmarkt/Wettbewerb. Nur benötigte Portfolio-/Cluster-
 Claim-Auszüge laden. Ohne beauftragten Wettbewerbsvergleich ist kein Matrixplan Pflicht.
 1. Beauftragte Länder/Regionen, Nachfrage, Programme, Beschaffung, Regulierung,
    lokale industrielle Rollen und Zugangspartner faktisch erfassen.
@@ -29,7 +30,5 @@ zusätzliche umfangreiche Länderanalyse. Nur delegiertes market-facts.json schr
 
 Bei facts-v2 für HTML die kompakten Tabellen/Claim-Zuordnungen nach
 references/ausgabe-html-v2.md liefern. Keine parallelen Langberichte erstellen.
-Bei regionalem Markt-Deep-Dive zusätzlich market_dashboard nach markt-deepdive.md:
-fünfjährige vergleichbare Kennzahlen, deduplizierte Programme/Status/Werte/Fenster,
-konkrete industrielle Rollen und belegte Zugangsvoraussetzungen. Öffentliche Lücken
-sichtbar halten; keine Beispielzahlen, Scores oder Militärausgaben als Segmentvolumen.
+Historisches market_dashboard nach markt-deepdive.md nur bei bestehenden Läufen
+ohne manifest.focus_pages. Neue Läufe verwenden separate Sonnet-Fokusjobs.

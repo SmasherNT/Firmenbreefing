@@ -5,7 +5,7 @@ Kein zusätzlicher Agent, keine HTML und keine strategische Personenbewertung.
 Darstellung wie die freigegebene Profilvorlage: Name/Einleitung, Snapshot (bis zu
 sechs Felder, drei Spalten), Werdegangstabelle, Fachprofil und Verantwortung
 nebeneinander. Danach folgt die Medien-Timeline. Quellen und Evidenz stehen
-ausschließlich auf Seite 4, erreichbar über Verweise auf der Profilseite.
+ausschließlich im letzten Quellenreiter, erreichbar über Verweise auf der Profilseite.
 Keinen Abschnitt „Regionaler Bezug“ darstellen.
 
 ## Datenvertrag
@@ -42,7 +42,7 @@ Nicht einsortierte H-Claims bleiben unter „Weitere belegte Profilangaben“ er
 
 Die lokale Komponente scripts/profile-html.py und profile.css erzeugt das Profil.
 Nummerierte Belege springen zu direkten Originalquellen; vollständige Aussagen,
-Unsicherheiten und Links ins gemeinsame Claimregister stehen auf Seite 4.
+Unsicherheiten und Links ins gemeinsame Claimregister stehen im letzten Quellenreiter.
 Der Profilteil enthält nur nummerierte Quellenverweise dorthin.
 Nur Code und Layout wiederverwenden, nie Personendaten des vorigen Unternehmens.
 
@@ -80,5 +80,5 @@ Alte Profile ohne media bleiben technisch lesbar; neue Aufträge recherchieren d
 Darstellung: exakte Überschrift oben, kompakte chronologische Zeilen (neueste zuerst),
 Datum links, drei farbige Kategorien samt Legende. Klick oder Tastatur öffnet
 Zusammenfassung, optional Zitat, Kontext und Zugriffshinweis. Auf Seite 2 nur interne
-Quellen-/Evidenzverweise; volle Belege auf Seite 4. Native details funktionieren auch
+Quellen-/Evidenzverweise; volle Belege im letzten Quellenreiter. Native details funktionieren auch
 ohne JavaScript. Keine Personendaten vom vorigen Unternehmen übernehmen.

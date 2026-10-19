@@ -12,7 +12,7 @@ keine Browser-/Druckprüfung und keine Abnahme.
 1. V2-Dateien desselben Laufs an scripts/render-briefing.py übergeben.
    Vollständiges Firmenbriefing: --full. Aufruf in der Referenz.
    Vorlage und JavaScript nicht als Standard in den Modellkontext laden.
-   Feste vier Seiten und Portfolio nach references/portfolio-darstellung.md;
+   Dynamische Seitenfolge nach references/fokusseiten.md und Portfolio nach references/portfolio-darstellung.md;
    Portfolio-Detailprofile standardmäßig vollständig eingeklappt. Keine firmenspezifische Vorlage.
    Cluster nach references/netzwerk-html.md: vier Bereichsfelder im 2×2-Raster,
    gleich große Knoten, Farbe/Form je Kategorie, Namen darunter, keine Score-Badges;
@@ -21,9 +21,10 @@ keine Browser-/Druckprüfung und keine Abnahme.
    Capability Matrix nach references/capability-matrix.md: gleich hohe Kurztextzellen,
    tatsächliche Evidenzskalen, Einzelbewertung darunter und alle Peers per Spaltenkopf
    vergleichen. Vollständige Fakten/Quellen auch im Druck und ohne JavaScript.
-   Markt-Deep-Dive nach references/markt-deepdive.md: Kennzahlen/CAGR, Programme
-   und industrielle Rollen mit Länderdetails darunter. Nur aktuelles freigegebenes
-   market_dashboard verwenden; fehlende Daten offen lassen, keine Musterwerte.
+   Je beauftragtem Fokus genau einen Reiter nach der optionalen Person, in
+   Prompt-Reihenfolge. Grafiken und Sechsmonats-Timeline nach fokusseiten.md lokal
+   aus geprüften Fokusdaten rendern; Quellen zuletzt. Ohne Fokus keine Ersatzseite.
+   Historische Manifestdateien ohne focus_pages behalten ihren alten Rendererpfad.
    Unter Portfolio, Cluster und Markt/Matrix auf Seite 1 kompakte Keyfacts/Insights
    nach references/modul-keyfacts.md aus geprüften module_insight-I-Claims zeigen.
    Fakt/Insight trennen, Herleitung und Quellen per Klick; keine Texte selbst erzeugen.

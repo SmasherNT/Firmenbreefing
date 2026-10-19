@@ -58,7 +58,8 @@ Planinputs nennen die tatsächlichen Identitäts-/Produktfakten, auf denen er be
 | context, portfolio, cluster | Alle tatsächlich verwendeten Zusatz-/Schwestermodule | module=Faktenmodul |
 | plan | Tatsächliche Planbasis | plan=Vergleichsplan |
 | market | plan bei Vergleich, weitere verwendete Module | module=Marktmodul |
-| facts | context/portfolio/cluster/market jeweils soweit ausgewählt; plan bei Vergleich | facts=review-packet.json validation=facts-validation.json |
+| focus:<id> | Tatsächlich verwendete Zusatz-/Kernmodule; eigener Sonnet-Medium-Aufruf je Thema nach fokusseiten.md | module=focus-<id>-facts.json |
+| facts | context/portfolio/cluster/market jeweils soweit ausgewählt; jeder focus:<id>=Datei aus dem eigenen Checkpoint; plan bei Vergleich | facts=review-packet.json validation=facts-validation.json |
 | basis-review | facts, validation, work=review-work-basis.json, draft=review-basis-draft.json; plan bei Vergleich | review=review-basis.md |
 | positioning | facts, basis-review; plan bei Vergleich; weitere verwendete Eingaben | output=positioning.json context=positioning-context.json validation=positioning-validation.json |
 | swot | facts, basis-review; positioning und positioning-context soweit beauftragt; plan bei Vergleich | output=swot.json context=swot-context.json validation=swot-validation.json |

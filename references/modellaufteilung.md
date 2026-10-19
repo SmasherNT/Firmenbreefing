@@ -11,6 +11,7 @@ Stand: 19.10.2026. Diese Zuordnung ersetzt die frühere Gleichmodell-Regel.
 | Cluster: cluster-analyst | claude-opus-5-5 | high |
 | Markt: market-facts-analyst | claude-opus-5-5 | high |
 | Positionierung / Matrix / Reife / Präsenz: positioning-analyst | claude-opus-5-5 | high |
+| Je Fokusthema separat: focus-analyst | claude-sonnet-5-5 | medium |
 | SWOT: swot-analyst | claude-sonnet-5-5 | medium |
 | Dokumentprüfung: source-document-reviewer, bis zu drei Jobs | claude-sonnet-5-5 | medium |
 | Leitprüfung Basis: source-reviewer, phase=basis | claude-sonnet-5-5 | medium |
@@ -49,3 +50,7 @@ Offizielle Konfigurationsreferenzen:
 - https://code.claude.com/docs/en/model-config
 - https://code.claude.com/docs/en/sub-agents
 - https://code.claude.com/docs/en/settings
+
+Fokusseiten nach fokusseiten.md: je Thema ein eigener focus-analyst-Aufruf mit
+eigener Datei und eigenem Kontext. Forschung, Faktenverdichtung und Grafikinhalte
+auf Sonnet 5.5 Medium; Prüfung ebenso. Kein Opus-/Positionierungs-/SWOT-Auftrag.

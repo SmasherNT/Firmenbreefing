@@ -1,3 +1,9 @@
+# Historischer Vertrag: durch Fokusseiten ersetzt
+
+Für neue vollständige Briefings ausschließlich fokusseiten.md verwenden.
+Diese Referenz bleibt nur zur Wiederholbarkeit vorhandener Läufe ohne focus_pages.
+Keine neue Markt-Deep-Dive-Seite und keine Opus-Fokusrecherche daraus ableiten.
+
 # Markt-Deep-Dive: Vergleich und Vertiefung
 
 Inhalt: Recherche und Aussagegrenzen · JSON-Vertrag · Prüfung und Darstellung.

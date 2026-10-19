@@ -24,14 +24,16 @@ CACHE = helper('index_cache', 'source-cache.py')
 def build_index(manifest, modules, module_paths=None):
     ident = CACHE.identity(manifest)
     selected = manifest.get('selected_roles', [])
-    if not isinstance(selected, list) or not selected or any(r not in FACTS.ROLES for r in selected):
+    focus_requests = FACTS.focus_requests(manifest)
+    if not isinstance(selected, list) or (not selected and not focus_requests) or any(r not in FACTS.ROLES or r == 'focus' for r in selected):
         raise ValueError('selected_roles required')
+    expected = set(selected) | {'focus:' + r['id'] for r in focus_requests}
     sources, rows, owners, roles = {}, [], {}, set()
     for i, module in enumerate(modules):
         if not isinstance(module, dict) or CACHE.identity(module) != ident:
             raise ValueError('module run/company/as_of mismatch')
-        role = module.get('role')
-        if role not in selected or role in roles:
+        role = FACTS.module_key(module)
+        if role not in expected or role in roles:
             raise ValueError('unselected or duplicate module role')
         roles.add(role)
         if module.get('status') not in FACTS.STATUS:
@@ -49,8 +51,10 @@ def build_index(manifest, modules, module_paths=None):
             if not isinstance(claim, dict) or not isinstance(claim.get('id'), str):
                 raise ValueError('claim id required')
             cid = claim['id']
-            if not re.fullmatch('(' + '|'.join(FACTS.ROLES[role]) + ')[A-Za-z0-9_-]+', cid):
+            if not re.fullmatch('(' + '|'.join(FACTS.ROLES[module['role']]) + ')[A-Za-z0-9_-]+', cid):
                 raise ValueError('claim id does not belong to role')
+            if module['role'] == 'focus' and not cid.startswith('F_' + str(module.get('focus_id')) + '_'):
+                raise ValueError('claim id does not belong to focus job')
             if cid in owners:
                 raise ValueError('duplicate claim id: ' + cid)
             if claim.get('kind') not in FACTS.KINDS - {'Nutzerangabe'} or set(claim) & (FACTS.INTERPRETATION_FIELDS | {'score', 'interpretation'}):
@@ -79,7 +83,7 @@ def build_index(manifest, modules, module_paths=None):
                 raise ValueError('module changed during index build; retry: ' + str(target))
             inputs.append({'path': str(target), 'sha256': hashlib.sha256(body).hexdigest()})
     result = {'schema_version': 1, **ident, 'status': 'unreviewed-index',
-              'available_roles': sorted(roles), 'missing_roles': sorted(set(selected) - roles),
+              'available_roles': sorted(roles), 'missing_roles': sorted(expected - roles),
               'inputs': inputs, 'sources': sorted(sources.values(), key=lambda s: s['id']),
               'entries': [{'role': owners[c['id']], 'claim': copy.deepcopy(c),
                            'fingerprint': checked['fingerprints'][c['id']]} for c in rows],

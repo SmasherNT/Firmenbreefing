@@ -13,9 +13,10 @@ nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
    Nachricht übernehmen; Defaults ergänzen, kein Formular verlangen.
    Nur blockierende Mehrdeutigkeit klären. Unter runs/<neue_run_id>/input/
    Originalauftrag und facts-run.json erstellen. Alte Läufe erhalten.
-   topics=[{id,label,page}], page=main oder market (Standard main).
-   Beauftragten regionalen Markt-Deep-Dive auf market routen; market_title aus
-   dem Auftrag, z. B. Golfstaaten. person als Nutzerangabe. Einrichtung ist kein Auftrag.
+   topics=[{id,label,page:"main"}] für allgemeine Unternehmensthemen.
+   focus_pages=[{id,label}] in Prompt-Reihenfolge, immer mindestens [] anlegen.
+   Separate Themen-/Länder-/Marktüberblicke nach references/fokusseiten.md routen;
+   keine feste Marktseite. person als Nutzerangabe. Einrichtung ist kein Auftrag.
    Lauf-Checkpoints einmal mit --full initialisieren; tatsächlich abgeschlossene
    Schritte nach der Referenz lokal speichern. Kein Dateiexistenz-Fallback.
 2. facts-briefing im delegierten Lauf mit context/portfolio/cluster/market
@@ -23,7 +24,12 @@ nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
    gültige reusable-Abschlüsse übernehmen. Vergleichsplan vor
    Wettbewerbsrecherche aus Auftrag festlegen. Delegation nennt Identität,
    mode=facts-v2, Eingaben, Tabellenvertrag und exakten Zielpfad.
-3. Paket lokal zusammenführen. Dokumentprüfer auf Sonnet 5.5 Medium prüfen
+   Zusätzlich je focus_pages-Eintrag einen eigenen focus-analyst auf Sonnet 5.5
+   Medium mit genau einem Thema, eigenem Kontext und work/focus-<id>-facts.json
+   delegieren. Separaten focus:<id>-Checkpoint verwenden. Nicht an context/market
+   oder positioning verteilen. Kein Fokus-Sammelaufruf für mehrere Themen.
+3. Paket lokal zusammenführen, alle separaten Fokusmodule an prepare-facts geben.
+   Dokumentprüfer auf Sonnet 5.5 Medium prüfen
    getrennte Quellenbündel; source-reviewer als Leitprüfer bewertet sämtliche
    Claims/module_views nach parallele-quellenpruefung.md. Zusammengeführte
    explizite Reviewer-Entscheidungen per stamp-review ergänzen.
@@ -40,10 +46,11 @@ nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
    Auswahl und Prüfung in denselben Positionierungs-/Schluss-Review-Schritten.
    Regionale Unternehmenspräsenz nach references/regionale-praesenz.md im Portfolio
    recherchieren, Kontext mit --presence ergänzen und feste 1–5-I-Stufen prüfen.
-   Regionsgrafik auf Seite 1 direkt vor der Wettbewerbsanalyse, Marktthemen auf Seite 3.
+   Regionsgrafik auf Seite 1 direkt vor der Wettbewerbsanalyse. Fokusseiten bleiben
+   faktenbasiert außerhalb der Opus-Positionierung und SWOT.
 5. briefing-output im selben Lauf mit --full ausführen. Hauptagent koordiniert
    und rendert; keine eigenen Fakten-/Interpretations-JSONs oder LLM-HTML.
-   Vier Seiten: allgemeine Module untereinander, Person, Markt-Deep-Dive, Quellen.
+   Dynamische Seiten: Überblick, optionale Person, eine Seite je Fokus, Quellen.
 6. output/abnahme.md mit tatsächlichen Agenten/Reviews/Prüfungen aktualisieren.
    Dateien im Arbeitsbranch committen/pushen; keine öffentliche Veröffentlichung.
 
@@ -52,7 +59,7 @@ im Cluster. Neue Faktenfragen gezielt delegieren, erneut durch Basis-Review,
 abhängige Interpretationen aktualisieren. Keine fremden Dateien umschreiben.
 Nach zwei erfolglosen Korrekturrunden Materialfehler blockieren. Rückgabe kurz.
 
-Unternehmensweite Portfolioabdeckung und auftragsbezogene Fach-/Markt-Deep-Dives
+Unternehmensweite Portfolioabdeckung und auftragsbezogene Unternehmensthemen
 nach references/themen-darstellung.md delegieren. Portfolio nicht auf den
 fachlichen Schwerpunkt der Nutzerfrage verengen; Geschäftsfelder in coverage prüfen.
 

@@ -1,6 +1,6 @@
 # Auftragsbezogene Deep-Dives: kompakte Karten
 
-Allgemeine Themen auf Seite 1 und Marktthemen auf Seite 3 zeigen dieselbe klare
+Allgemeine Unternehmensthemen auf Seite 1 zeigen dieselbe klare
 Kartenhierarchie wie die Executive Summary: kurzer Titel, ein Vorschausatz und
 Klick zur vollständigen Aussage, Einordnung, Einschränkungen und Originalquellen.
 Drei Spalten am Desktop; die Zahl der Karten folgt der Faktenlage. Die Vorgabe
@@ -20,8 +20,9 @@ headline/preview mit denselben Grenzen. Schluss-Review bindet diese Felder über
 das vollständige Interpretationsobjekt. Kein zusätzlicher Designagent nötig.
 Ältere Pakete bleiben nutzbar: sachliche Rollenüberschrift und sichtbarer Auszug
 mit Auslassungszeichen als lokaler Fallback; keine neue LLM-Zusammenfassung.
-Regionale Markt-Deep-Dives beginnen zusätzlich mit Vergleichsgrafiken und
-Länderdetails nach markt-deepdive.md. Die bisherigen Themenkarten folgen darunter.
+Separate Themen-/Länder-/Marktüberblicke folgen ausschließlich fokusseiten.md:
+eigener Sonnet-Medium-Agentenaufruf und Reiter je Fokus, ohne I-/SWOT-Analyse.
+Der historische Markt-Deep-Dive-Vertrag gilt nur für alte Läufe ohne focus_pages.
 
 ## Portfolio und Vertiefung
 

@@ -55,3 +55,7 @@ Quellenprüfung verbindlich nach references/parallele-quellenpruefung.md:
 Dokumentjobs (bis zu drei, Sonnet 5.5 Medium) → collect → Leitprüfung → merge →
 bestehendes stamp-review.py --work. Keine reduzierte Prüftiefe; Modellzuordnung nach references/modellaufteilung.md.
 In final nur neu zu prüfende Faktenquellen verteilen, sonst ausschließlich Leitprüfung.
+
+Fokusseiten nach references/fokusseiten.md bleiben geprüfte Faktenüberblicke.
+Keine Fokus-Claims nur wegen der Fokusseite an Positionierung/SWOT delegieren und
+keine zusätzliche Opus-Analyse dafür starten.
