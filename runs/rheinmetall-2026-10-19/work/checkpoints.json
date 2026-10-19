@@ -462,7 +462,7 @@
     },
     "portfolio": {
       "stage": "portfolio",
-      "checkpoint_id": "2d73a616bd9542b98dcb33c50d091f5f",
+      "checkpoint_id": "2ef3098fbe554b8a8ebc3a7471a63ab5",
       "inputs": {
         "cluster": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/cluster-facts.json",
@@ -472,7 +472,7 @@
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/portfolio-facts.json",
-          "sha256": "887f1f68466b9d252c272a104bbcfcb72559ec0ad2130df4f93114b654575aa6"
+          "sha256": "d45423898ed2c5a583c3db6c9f0dba43e9f6d4103c14235c18a3e4888ca0f162"
         }
       },
       "code": {
@@ -1579,12 +1579,12 @@
       "dependencies": {
         "cluster": "b186e3230cf7ed5a6aa12cb412856235da97b783354c181a067ff70b99cc3865"
       },
-      "checked_at": "2026-10-19T22:00:57+00:00",
-      "fingerprint": "dd92ee05a88cacd50f24d7b817caea0c30fa7157cb63d9c777795da614bda6c7"
+      "checked_at": "2026-10-19T22:13:44+00:00",
+      "fingerprint": "2e44dfa540c894c76e82710dc2d8dd00b0926f7e93b23e907deecf7607361c3c"
     },
     "plan": {
       "stage": "plan",
-      "checkpoint_id": "89a6803aa3754da7bf173c13a511a014",
+      "checkpoint_id": "35fcb92b48a84268b34243b5882af8a0",
       "inputs": {
         "context": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/context-facts.json",
@@ -1592,7 +1592,7 @@
         },
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/portfolio-facts.json",
-          "sha256": "887f1f68466b9d252c272a104bbcfcb72559ec0ad2130df4f93114b654575aa6"
+          "sha256": "d45423898ed2c5a583c3db6c9f0dba43e9f6d4103c14235c18a3e4888ca0f162"
         }
       },
       "outputs": {
@@ -1640,10 +1640,10 @@
       "sources": {},
       "dependencies": {
         "context": "41776a7bb2f4ada82ee1a19084123f505b26c20d1eb7e235fe8d096f6f77708d",
-        "portfolio": "dd92ee05a88cacd50f24d7b817caea0c30fa7157cb63d9c777795da614bda6c7"
+        "portfolio": "2e44dfa540c894c76e82710dc2d8dd00b0926f7e93b23e907deecf7607361c3c"
       },
-      "checked_at": "2026-10-19T22:00:58+00:00",
-      "fingerprint": "4c7f51e44d935ae252202c16c174789a2a5681128fc4378b0ecd74d18daecbcf"
+      "checked_at": "2026-10-19T22:13:45+00:00",
+      "fingerprint": "933395383542445eee770d654a4ac6685dbec92bf4eab4617bebc979a4d97db7"
     },
     "cluster": {
       "stage": "cluster",
@@ -2105,7 +2105,7 @@
     },
     "market": {
       "stage": "market",
-      "checkpoint_id": "16e468aacb744b11a4aace457411b330",
+      "checkpoint_id": "d6be9ff0b5be4be1855795518a8226db",
       "inputs": {
         "plan": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/comparison-plan.json",
@@ -2117,7 +2117,7 @@
         },
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/portfolio-facts.json",
-          "sha256": "887f1f68466b9d252c272a104bbcfcb72559ec0ad2130df4f93114b654575aa6"
+          "sha256": "d45423898ed2c5a583c3db6c9f0dba43e9f6d4103c14235c18a3e4888ca0f162"
         },
         "cluster": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/cluster-facts.json",
@@ -2127,7 +2127,7 @@
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/market-facts.json",
-          "sha256": "ee39de970ad5c72ae119e51d014e2bafd8f522042810a299427c794100b2e7c9"
+          "sha256": "6d35b955c3e56c3078cfd65d5f508f79166ba4b47c5db84eda7185ea3f249eb1"
         }
       },
       "code": {
@@ -4008,15 +4008,15 @@
       "dependencies": {
         "cluster": "b186e3230cf7ed5a6aa12cb412856235da97b783354c181a067ff70b99cc3865",
         "context": "41776a7bb2f4ada82ee1a19084123f505b26c20d1eb7e235fe8d096f6f77708d",
-        "plan": "4c7f51e44d935ae252202c16c174789a2a5681128fc4378b0ecd74d18daecbcf",
-        "portfolio": "dd92ee05a88cacd50f24d7b817caea0c30fa7157cb63d9c777795da614bda6c7"
+        "plan": "933395383542445eee770d654a4ac6685dbec92bf4eab4617bebc979a4d97db7",
+        "portfolio": "2e44dfa540c894c76e82710dc2d8dd00b0926f7e93b23e907deecf7607361c3c"
       },
-      "checked_at": "2026-10-19T22:00:59+00:00",
-      "fingerprint": "15fe375529aa35b011c4cf12058ebb3ec15b789d8c7ea7fb234b4bbc01631383"
+      "checked_at": "2026-10-19T22:13:46+00:00",
+      "fingerprint": "f8f59cd14781b074794dddd9beac1d98c728b17f90d553f04195b3a91339f7e3"
     },
     "facts": {
       "stage": "facts",
-      "checkpoint_id": "c62e2810f7e14d3686bc2dfe36b1936c",
+      "checkpoint_id": "9b1cf46e6b4e424299078a67ae3ad98e",
       "inputs": {
         "context": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/context-facts.json",
@@ -4024,7 +4024,7 @@
         },
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/portfolio-facts.json",
-          "sha256": "887f1f68466b9d252c272a104bbcfcb72559ec0ad2130df4f93114b654575aa6"
+          "sha256": "d45423898ed2c5a583c3db6c9f0dba43e9f6d4103c14235c18a3e4888ca0f162"
         },
         "cluster": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/cluster-facts.json",
@@ -4032,7 +4032,7 @@
         },
         "market": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/market-facts.json",
-          "sha256": "ee39de970ad5c72ae119e51d014e2bafd8f522042810a299427c794100b2e7c9"
+          "sha256": "6d35b955c3e56c3078cfd65d5f508f79166ba4b47c5db84eda7185ea3f249eb1"
         },
         "plan": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/comparison-plan.json",
@@ -4042,11 +4042,11 @@
       "outputs": {
         "facts": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/review-packet.json",
-          "sha256": "43330cdcb3c5a160310dfed7f2ddbbbd8dc7103c0ae4fe29f9be3992aebd9741"
+          "sha256": "650219e1abc0f2cb1dd83cce8b9ad4130d0e8488d4bebea47ace473b4cbf5c25"
         },
         "validation": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/facts-validation.json",
-          "sha256": "25feb7533d7c13ca67a6078d3d2f5fabdc1d42e12030ca12412afb899a85cb43"
+          "sha256": "4d2d63f7f7d0c07d4c11592de10d65d342179861f45e045f60e4910989a64132"
         }
       },
       "code": {
@@ -5926,15 +5926,15 @@
       "dependencies": {
         "cluster": "b186e3230cf7ed5a6aa12cb412856235da97b783354c181a067ff70b99cc3865",
         "context": "41776a7bb2f4ada82ee1a19084123f505b26c20d1eb7e235fe8d096f6f77708d",
-        "market": "15fe375529aa35b011c4cf12058ebb3ec15b789d8c7ea7fb234b4bbc01631383",
-        "plan": "4c7f51e44d935ae252202c16c174789a2a5681128fc4378b0ecd74d18daecbcf",
-        "portfolio": "dd92ee05a88cacd50f24d7b817caea0c30fa7157cb63d9c777795da614bda6c7"
+        "market": "f8f59cd14781b074794dddd9beac1d98c728b17f90d553f04195b3a91339f7e3",
+        "plan": "933395383542445eee770d654a4ac6685dbec92bf4eab4617bebc979a4d97db7",
+        "portfolio": "2e44dfa540c894c76e82710dc2d8dd00b0926f7e93b23e907deecf7607361c3c"
       },
-      "checked_at": "2026-10-19T22:01:01+00:00",
-      "fingerprint": "040c4525845ed6f6f1c587185b21d3b358e569678c9c4148511471e90bf0c81f"
+      "checked_at": "2026-10-19T22:13:48+00:00",
+      "fingerprint": "b673786e9426d40f3980eff25144eb203622a56e228fdf8f783307772fc960c5"
     }
   },
   "created_at": "2026-10-19T08:47:09+00:00",
   "notice": "Local completion records only; content approval and visual QA remain separate.",
-  "fingerprint": "b84a615e8add6e32d2f3bbb8ab4106fdbb915ee6eca9eb45159c7b85308fcceb"
+  "fingerprint": "6d8cc286e09377d18ce029b7d8ec5a70d851b8dbb61c6da81881d5ea26661a45"
 }
