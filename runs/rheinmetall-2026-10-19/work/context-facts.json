@@ -1,0 +1,2281 @@
+{
+  "schema_version": 1,
+  "mode": "facts-v2",
+  "role": "context",
+  "run_id": "rheinmetall-2026-10-19",
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-19",
+  "scope": "Rheinmetall-Konzern (global, inkl. öffentlich belegter Töchter/JV): Firmenbasis, aktuelle Kennzahlen, Ereignisse Sept. 2025 bis Okt. 2026 sowie berufliches Profil und Medienpräsenz von Armin Papperger (19.06.–19.10.2026). Keine Nutzerthemen; Produkt-/Netzwerk-/Marktfakten bei den zuständigen Rollen.",
+  "status": "teilweise",
+  "shared_limitations": [
+    "Überwiegend Herstellerquellen (Rheinmetall-Pressemitteilungen); unabhängige Zweitquellen nur für F126, Kassel/Alstom, CEO-Äußerungen und Teile des Kapitalmarktkontexts geöffnet.",
+    "Bezahl- und Zugriffsgrenzen bei Handelsblatt, SCMP; Geschäftsbericht 2025 und Bundeswehr-Meldung zu F126 nicht lesbar.",
+    "Zahlen sind Unternehmensangaben (fortgeführte Aktivitäten, Naval Systems erst ab 01.03.2026 konsolidiert); keine Bewertung."
+  ],
+  "document_scope": "Dokumentcache runs/rheinmetall-2026-10-19/work/document-cache; Abrufdatum aller Quellen 2026-10-19. Webseiteninhalte als Daten gelesen; Quellenstatus: Herstellerangabe, wo das Unternehmen Aussageursprung ist.",
+  "claims": [
+    {
+      "id": "T-01",
+      "statement": "Die Rheinmetall AG hat ihren Sitz in Düsseldorf (Rheinmetall Platz 1, 40476 Düsseldorf) und beschreibt sich auf der offiziellen Website www.rheinmetall.com selbst als integrierten Technologiekonzern und domänenübergreifendes Systemhaus der Sicherheits- und Verteidigungsindustrie für den Einsatz zu Lande, zu Wasser, in der Luft und im Weltraum.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-98082c5c6a5443c4"
+      ],
+      "evidence": "Paraphrase: Startseitentext 'Die Rheinmetall AG steht als integrierter Technologiekonzern ... domänenübergreifendes Systemhaus der Sicherheits- und Verteidigungsindustrie ... zu Lande, zu Wasser, in der Luft und im Weltraum'; Fußbereich: Rheinmetall AG, Rheinmetall Platz 1, 40476 Düsseldorf.",
+      "location": "Startseite, Einleitungsabsatz und Fußbereich (Adresse)",
+      "uncertainty": "Selbstbeschreibung des Unternehmens.",
+      "proposed_depth": "A",
+      "depth_reason": "Identität/Website der Unternehmensgrenze"
+    },
+    {
+      "id": "T-02",
+      "statement": "Rheinmetall gibt in einer Pressemitteilung vom 03.06.2026 an, das Unternehmen sei 1889 gegründet worden, seit März 2023 im DAX40 notiert und beschäftige aktuell rund 34.000 Personen an rund 160 Standorten weltweit; mit militärischen Aktivitäten sei 2025 ein Umsatz von 9,9 Mrd. EUR erzielt worden.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3b33c5118cdc79d2"
+      ],
+      "evidence": "Paraphrase: Abschnitt 'RHEINMETALL' der Pressemitteilung: 'Das 1889 gegründete Unternehmen ... seit März 2023 im DAX40 notiert ... aktuell rund 34.000 Beschäftigten an rund 160 Standorten ... Geschäftsjahr 2025 einen Umsatz von 9,9 Milliarden Euro'.",
+      "location": "PDF-Seite 2, Abschnitt 'RHEINMETALL' (Unternehmensbeschreibung am Ende)",
+      "uncertainty": "Pressemitteilung-Boilerplate; die Zahl bezieht sich laut Kontext auf fortgeführte (militärische) Aktivitäten. Andere Pressemitteilungen (z. B. 01.07.2026) enthalten abweichende Altangaben (rund 44.000 Beschäftigte, rund 180 Standorte, Umsatz 2024).",
+      "proposed_depth": "B",
+      "depth_reason": "Hintergrund; Beschäftigtenzahl in T-03 gesondert belegt"
+    },
+    {
+      "id": "T-03",
+      "statement": "Die Startseite weist (Stand Juli 2026, fortgeführte Aktivitäten) rund 34.000 Beschäftigte und 161 Standorte aus; die dort genannten Finanzkennzahlen beziehen sich auf den Stand 31.12.2025: Auftragsbestand 63,8 Mrd. EUR, Umsatz 9,9 Mrd. EUR, operatives Ergebnis 1,8 Mrd. EUR, operative Marge 18,5 %, operativer Free Cashflow 1,2 Mrd. EUR, Dividende 11,50 EUR.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-98082c5c6a5443c4"
+      ],
+      "evidence": "Paraphrase: Kennzahlenleiste der Startseite (Fußnoten '* Stand: 31.12.2025 (Fortgeführte Aktivitäten)', '** Stand: Juli 2026'); Werte 63,8 / 9,9 / 1,8 / 18,5 % / 1,2 / 11,50 / ~34.000 / 161 stammen aus dem in die Seite eingebetteten Datensatz, die sichtbare Textfassung zeigt animierte Zähler.",
+      "location": "Startseite, Kennzahlenleiste",
+      "uncertainty": "Die Kennzahlen sind als animierte Zähler umgesetzt; Werte wurden dem eingebetteten Seitendatensatz entnommen. Zeitbezug je Kennzahl laut Fußnote.",
+      "proposed_depth": "A",
+      "depth_reason": "Beschäftigte/Basiskennzahlen"
+    },
+    {
+      "id": "T-04",
+      "statement": "Seit 1. Januar 2026 berichtet Rheinmetall in fünf Segmenten: Vehicle Systems, Weapon and Ammunition, Air Defence, Digital Systems und Naval Systems. Air Defence und Digital Systems entstanden zu Jahresbeginn 2026 aus der Aufspaltung des früheren Segments Electronic Solutions; Naval Systems wurde nach der Übernahme von NVL Ende Februar/März 2026 erstmals zum Ende des ersten Quartals 2026 als eigenes Segment einbezogen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-559e0ac19cabd1d0",
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Aus Pressemitteilungen vom 11.03.2026 und 06.08.2026: neue Segmentstruktur zum 01.01.2026; Naval Systems seit Ende Q1 2026 eigenständig berichtet.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Selbstbeschreibung der Berichtsstruktur; Naval Systems wird erst nach dem Stichtag 1. Quartal ganz in der Konzernrechnung abgebildet (Übernahme zum 01.03.2026).",
+      "evidence_items": [
+        {
+          "source_id": "S-559e0ac19cabd1d0",
+          "text": "Auszug: 'By January 1, 2026 the group structure has been redesigned. In addition to Vehicle Systems and Weapon and Ammunition, the new segments Air Defence, Digital Systems and Naval Systems have been established.' Fußnote: Digital Systems und Air Defence wurden zu Beginn 2026 aus Electronic Solutions gebildet.",
+          "mode": "Auszug",
+          "location": "Abschnitt 'Rheinmetall Group guidance for 2026', Absatz 1 und Fußnote [1]"
+        },
+        {
+          "source_id": "S-5b640196f4e87dad",
+          "text": "Auszug: 'Naval Systems ... wurde zum Ende des ersten Quartals 2026 erstmals als eigenständiges Segment in die Berichterstattung einbezogen.'",
+          "mode": "Auszug",
+          "location": "Abschnitt 'Naval Systems', Absatz 1"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Segmentabgrenzung der Berichterstattung"
+    },
+    {
+      "id": "T-05",
+      "statement": "Segment Vehicle Systems (taktische Rad- und Kettenfahrzeuge, logistische Fahrzeuge) laut Halbjahresbericht 2026: Umsatz 2.431 Mio. EUR (+28 %), operatives Ergebnis 275 Mio. EUR (Marge 11,3 %), Rheinmetall Nomination 6.691 Mio. EUR, Rheinmetall Backlog 28.829 Mio. EUR zum 30.06.2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Paraphrase: Abschnitt 'Vehicle Systems' der Pressemitteilung vom 06.08.2026 (Umsatz 2.431 MioEUR, +533 MioEUR/28 %; Nomination 6.691; Backlog 28.829; operatives Ergebnis 275 gegenüber 179; Marge 11,3 %).",
+      "location": "Abschnitt 'Vehicle Systems: Rheinmetall Nomination erhöht sich deutlich gegenüber dem Vorjahr', Absätze 1–4",
+      "uncertainty": "Unternehmenseigene Kennzahlen; Backlog enthält erwartete Abrufe aus Rahmenverträgen (Definition laut Bericht).",
+      "proposed_depth": "A",
+      "depth_reason": "Segmentkennzahlen"
+    },
+    {
+      "id": "T-06",
+      "statement": "Segment Weapon and Ammunition (Waffensysteme, Munition, Schutzsysteme) laut Halbjahresbericht 2026: Umsatz 1.757 Mio. EUR (+33 %), operatives Ergebnis 417 Mio. EUR (Marge 23,7 %), Rheinmetall Nomination 3.097 Mio. EUR, Rheinmetall Backlog 25.274 Mio. EUR zum 30.06.2026; Umsatztreiber waren ein Munitionspaket für Ungarn sowie Artillerie- und Mittelkalibermunition für die Ukraine.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Paraphrase: Abschnitt 'Weapon and Ammunition' der Pressemitteilung vom 06.08.2026.",
+      "location": "Abschnitt 'Weapon and Ammunition: Kapazitätserweiterungen werden weiter vorangetrieben', Absätze 1–4",
+      "uncertainty": "Unternehmenseigene Kennzahlen.",
+      "proposed_depth": "A",
+      "depth_reason": "Segmentkennzahlen"
+    },
+    {
+      "id": "T-07",
+      "statement": "Segment Air Defence (bodengebundene Luftverteidigung, Drohnenabwehr) laut Halbjahresbericht 2026: Umsatz 478 Mio. EUR (+62 %), operatives Ergebnis 76 Mio. EUR (Marge 16,0 %), Rheinmetall Nomination 1.534 Mio. EUR, Rheinmetall Backlog 4.218 Mio. EUR zum 30.06.2026; Umsatzzuwachs wesentlich durch Skynex- und Skyranger-Systeme für europäische Kunden.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Paraphrase: Abschnitt 'Air Defence' der Pressemitteilung vom 06.08.2026.",
+      "location": "Abschnitt 'Air Defence: Rheinmetall Nomination steigt um das Sechsfache', Absätze 1–3",
+      "uncertainty": "Unternehmenseigene Kennzahlen.",
+      "proposed_depth": "A",
+      "depth_reason": "Segmentkennzahlen"
+    },
+    {
+      "id": "T-08",
+      "statement": "Segment Digital Systems (Digitalisierung der Streitkräfte, Satellitentechnologie, bemannte und unbemannte Flugsysteme, Simulation) laut Halbjahresbericht 2026: Umsatz 820 Mio. EUR (+23 %), operatives Ergebnis 63 Mio. EUR (Marge 7,7 %), Rheinmetall Nomination 4.702 Mio. EUR (−52 % gegenüber einem von TaWAN/IdZ-ES geprägten Vorjahr), Rheinmetall Backlog 20.646 Mio. EUR zum 30.06.2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Paraphrase: Abschnitt 'Digital Systems' der Pressemitteilung vom 06.08.2026.",
+      "location": "Abschnitt 'Digital Systems: Deutliche Verbesserung beim Rheinmetall Backlog', Absätze 1–3",
+      "uncertainty": "Unternehmenseigene Kennzahlen; Rückgang der Nomination ist laut Bericht durch Großaufträge im Vorjahreszeitraum erklärt.",
+      "proposed_depth": "A",
+      "depth_reason": "Segmentkennzahlen"
+    },
+    {
+      "id": "T-09",
+      "statement": "Segment Naval Systems (bemannter und unbemannter Überwasserschiffbau) laut Halbjahresbericht 2026: Umsatz 334 Mio. EUR in den ersten vier Monaten nach der Übernahme Ende Februar 2026 (zusätzlich Serviceumsätze von 39 Mio. EUR), operatives Ergebnis 33 Mio. EUR (Marge 9,8 %), Rheinmetall Nomination 1.004 Mio. EUR (größter Beitrag: rumänischer, SAFE-finanzierter Auftrag über vier Marineschiffe, 920 Mio. EUR), Rheinmetall Backlog 6.255 Mio. EUR zum 30.06.2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Paraphrase: Abschnitt 'Naval Systems' der Pressemitteilung vom 06.08.2026.",
+      "location": "Abschnitt 'Naval Systems: Rheinmetall Nomination steigt', Absätze 1–4",
+      "uncertainty": "Unternehmenseigene Kennzahlen; Zeitraum nur vier Monate, daher nicht mit anderen Segmenten (sechs Monate) vergleichbar.",
+      "proposed_depth": "A",
+      "depth_reason": "Segmentkennzahlen"
+    },
+    {
+      "id": "T-10",
+      "statement": "Geschäftsjahr 2025 (fortgeführte Aktivitäten) laut Rheinmetall: Konzernumsatz 9.935 Mio. EUR (+29 %, Vorjahr 7.715), operatives Ergebnis 1.841 Mio. EUR (+33 %), operative Marge 18,5 %, EBIT 1.684 Mio. EUR, Ergebnis nach Steuern 835 Mio. EUR (davon 696 Mio. EUR auf Aktionäre der Rheinmetall AG), Ergebnis je Aktie aus fortgeführten Aktivitäten 22,73 EUR, operativer Free Cashflow 1.218 Mio. EUR, Rheinmetall Backlog 63,8 Mrd. EUR (Vorjahr 46,9 Mrd. EUR); Auslandsanteil des Umsatzes 62 %. Das zivile Geschäft (Power Systems) wird nach IFRS 5 als nicht fortgeführte Aktivität geführt.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-559e0ac19cabd1d0"
+      ],
+      "evidence": "Paraphrase: Pressemitteilung vom 11.03.2026, Key facts sowie Abschnitte 'Fiscal year 2025' und 'Group reports significant jump in profits amid rising sales'; Hinweis zu IFRS 5.",
+      "location": "Key facts; Abschnitt 'Fiscal year 2025'; Absätze zu Gewinn, Free Cashflow und Backlog",
+      "uncertainty": "Unternehmenseigene, vor Vorlage des Geschäftsberichts veröffentlichte Pressemitteilung; Vorjahreswerte nach IFRS 5 angepasst.",
+      "proposed_depth": "A",
+      "depth_reason": "Kennzahl Geschäftsjahr"
+    },
+    {
+      "id": "T-11",
+      "statement": "Rheinmetall schlug der Hauptversammlung am 12.05.2026 eine Dividende von 11,50 EUR je Aktie für 2025 vor (Vorjahr 8,10 EUR; Ausschüttungsquote 45,5 %). Die Hauptversammlung fand laut Finanzkalender am 12.05.2026 virtuell statt; die IR-Dividendenseite führt für 2025 eine Dividende von 11,50 EUR.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-559e0ac19cabd1d0",
+        "S-0bd71507c5c59e04",
+        "S-c72d2f16b02e496c"
+      ],
+      "evidence": "Dividendenvorschlag laut Pressemitteilung 11.03.2026; HV-Termin laut IR-Finanzkalender.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Der Beschluss der Hauptversammlung wurde nicht in einem separaten Beschlussdokument gelesen; die IR-Seite zur Dividende formuliert die Ausschüttung uneinheitlich ('im Geschäftsjahr 2026').",
+      "evidence_items": [
+        {
+          "source_id": "S-559e0ac19cabd1d0",
+          "text": "Auszug: 'a proposal will be made to the Annual General Meeting on May 12, 2026 to pay a dividend of €11.50 per share for the 2025 fiscal year, up from €8.10 ... payout ratio of 45.5%'",
+          "mode": "Auszug",
+          "location": "Abschnitt 'Group reports significant jump in profits amid rising sales', Absatz 4"
+        },
+        {
+          "source_id": "S-0bd71507c5c59e04",
+          "text": "Auszug: 'The Annual General Meeting of Rheinmetall AG took place on May 12, 2026, at 10:00 a.m. (CEST), in the form of a virtual Annual General Meeting.'",
+          "mode": "Auszug",
+          "location": "Eintrag '12/05 – 12/05/2026 Annual General Meeting'"
+        },
+        {
+          "source_id": "S-c72d2f16b02e496c",
+          "text": "Paraphrase: Dividendentabelle nennt für das Geschäftsjahr 2025 eine Dividende von 11,50 EUR (Vorjahr 8,10 EUR); Fließtext: 'In the 2026 fiscal year, Rheinmetall AG distributed a dividend of EUR 11.50 per share'.",
+          "mode": "Paraphrase",
+          "location": "Seite 'Dividend', Fließtext und Tabelle"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Kennzahl Dividende"
+    },
+    {
+      "id": "T-12",
+      "statement": "1. Quartal 2026 laut Rheinmetall: Konzernumsatz 1.938 Mio. EUR (+8 %), operatives Ergebnis 224 Mio. EUR (+17 %, Marge 11,6 %), Rheinmetall Nomination 4,9 Mrd. EUR (Vorjahr 10,7 Mrd. EUR), Rheinmetall Backlog 73 Mrd. EUR zum 31.03.2026 (erstmals inklusive Naval Systems mit 5,5 Mrd. EUR), operativer Free Cashflow −285 Mio. EUR; Jahresprognose bekräftigt.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-be9afa65076fd992"
+      ],
+      "evidence": "Paraphrase: Pressemitteilung vom 07.05.2026, Key facts und Abschnitt 'Rheinmetall Group: sales growth of 8%'.",
+      "location": "Key facts; Abschnitt 'Guidance for 2026 reaffirmed'; Absätze zu Umsatz, Ergebnis, Nomination, Backlog, Free Cashflow",
+      "uncertainty": "Unternehmenseigene Zahlen; die damalige Prognosebestätigung wurde mit dem Halbjahresbericht angepasst (T-17).",
+      "proposed_depth": "A",
+      "depth_reason": "Letzte Quartalszahl vor Halbjahr"
+    },
+    {
+      "id": "T-13",
+      "statement": "Halbjahr 2026 (Q1–Q2) laut Rheinmetall: Konzernumsatz 5.227 Mio. EUR (+39 %, Vorjahr 3.749 Mio. EUR; Inlandsanteil 38 %, Auslandsanteil 62 %), operatives Ergebnis 786 Mio. EUR (+74 %; Vorjahr 453 Mio. EUR), operative Marge 15,0 % (Vorjahr 12,1 %); allein im 2. Quartal operatives Ergebnis 562 Mio. EUR (Vorjahr 262 Mio. EUR) und nach Aussage des CEO eine operative Marge von 17,1 %; Ergebnis je Aktie aus fortgeführten Aktivitäten 8,43 EUR (Vorjahr 4,69 EUR).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Paraphrase: Pressemitteilung vom 06.08.2026, Keyfacts und Abschnitt 'Rheinmetall-Konzern: Umsatzwachstum von 39% – Operatives Konzern-Ergebnis steigt um 74%'; Marge Q2 17,1 % aus Papperger-Zitat.",
+      "location": "Keyfacts; Abschnitt 'Rheinmetall-Konzern: Umsatzwachstum von 39%', Absätze 1–3; CEO-Zitat 2",
+      "uncertainty": "Unternehmenseigene Zahlen (Halbjahresfinanzbericht, nicht gesondert geprüft); die Q2-Marge 17,1 % ist eine CEO-Aussage in der Pressemitteilung.",
+      "proposed_depth": "A",
+      "depth_reason": "Letzter Halbjahresbericht vor Stichtag"
+    },
+    {
+      "id": "T-14",
+      "statement": "Auftragslage und Cashflow zum 30.06.2026 laut Rheinmetall: Rheinmetall Nomination (klassischer Auftragseingang plus neue Rahmenverträge) im Halbjahr 16,2 Mrd. EUR (+28 %), Rheinmetall Backlog (Auftragsbestand plus erwartete Rahmenvertragsabrufe) 80,5 Mrd. EUR (Vorjahr 56,0 Mrd. EUR), operativer Free Cashflow −1.616 Mio. EUR (Vorjahr −631 Mio. EUR), laut Unternehmen bedingt durch verschobene Anzahlungen, Vorratsaufbau und hohe Investitionen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Paraphrase: Pressemitteilung vom 06.08.2026, Abschnitt 'Rheinmetall-Konzern' Absätze 4–6.",
+      "location": "Abschnitt 'Rheinmetall-Konzern: Umsatzwachstum von 39%', Absätze zu Free Cashflow, Nomination und Backlog",
+      "uncertainty": "Unternehmenseigene Kennzahlendefinitionen (Backlog enthält Rahmenvertragsvolumen, nicht nur feste Aufträge).",
+      "proposed_depth": "A",
+      "depth_reason": "Auftragsbestand/Cashflow"
+    },
+    {
+      "id": "T-15",
+      "statement": "Prognose 2026 laut Geschäftsbericht-Pressemitteilung vom 11.03.2026 (ursprünglich): Konzernumsatz +40 % bis 45 % auf 14,0 bis 14,5 Mrd. EUR bei einer operativen Marge von rund 19 %.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-559e0ac19cabd1d0"
+      ],
+      "evidence": "Auszug: 'Group sales are expected to grow by 40% - 45% to €14.0 billion to €14.5 billion ... operating result margin of around 19%'.",
+      "location": "Abschnitt 'Rheinmetall Group guidance for 2026', Absätze 2–3",
+      "uncertainty": "Durch T-16 angepasst; hier nur als frühere Prognose geführt.",
+      "proposed_depth": "B",
+      "depth_reason": "Frühere Prognose zur Einordnung der Anpassung"
+    },
+    {
+      "id": "T-16",
+      "statement": "Angepasste Prognose 2026 laut Halbjahresbericht vom 06.08.2026: Wegen der Stornierung des Fregattenprogramms F126 reduziert sich die Umsatzerwartung um 300 Mio. EUR; Rheinmetall erwartet nun einen Konzernumsatz von 13,7 bis 14,2 Mrd. EUR (Vorjahr 9.935 Mio. EUR), unverändert ein organisches Umsatzwachstum von 28 % bis 31 % und eine operative Ergebnismarge von rund 19 % (inkl. Akquisitionen und Holding-Kosten; 2025: 18,5 %).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Auszug/Paraphrase: 'Der Konzern rechnet nun für das Geschäftsjahr 2026 mit einem Umsatz in der Spanne von 13,7 MrdEUR bis 14,2 MrdEUR und unverändert mit einem organischen Umsatzwachstum von 28% bis 31%. Die operative Ergebnismarge im Konzern wird bei rund 19% erwartet.'",
+      "location": "Keyfacts sowie Absatz 4 und Abschnitt 'Ausblick: Jahresumsatzprognose wird leicht adjustiert'",
+      "uncertainty": "Unternehmensprognose, keine Tatsache; Analysten-/Medienreaktionen nicht übernommen. Nächste Berichtstermin: Q3 am 05.11.2026 (nach Stichtag).",
+      "proposed_depth": "A",
+      "depth_reason": "Prognose"
+    },
+    {
+      "id": "T-17",
+      "statement": "Die Aktie der Rheinmetall AG (ISIN DE0007030009, WKN 703000) wird laut Rheinmetall-IR-Seite an Xetra und allen deutschen Börsen im Prime Standard/Regulierten Markt gehandelt (Sektor Industriegüter); als Indizes werden DAX und EURO STOXX 50 genannt. Börsennotierung seit 14.11.1894; Designated Sponsor ist ICF Bank AG.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-f67a3aa803cc0e9f"
+      ],
+      "evidence": "Paraphrase: Tabelle 'Basisdaten' (Börsenplatz Xetra und alle deutschen Börsen; Zulassungssegment Prime Standard / Regulierter Markt; Sektor Industriegüter; Indizes DAX, EURO STOXX 50; Beginn der Börsennotierung 14. November 1894).",
+      "location": "Seite 'Basisdaten der Rheinmetall-Aktie', Tabelle",
+      "uncertainty": "Indexzugehörigkeit ohne separaten Abgleich mit dem Indexanbieter; Aussage zum DAX-Eintritt März 2023 stammt aus T-02.",
+      "proposed_depth": "A",
+      "depth_reason": "Börsennotierung/Indizes"
+    },
+    {
+      "id": "T-18",
+      "statement": "Auf dem Kapitalmarkttag am 18.11.2025 in Unterlüß nannte Vorstandschef Papperger laut Börsen-Zeitung als Ziele bis 2030 einen Konzernumsatz von rund 50 Mrd. EUR (Verfünffachung), eine operative Marge von über 20 % und eine Cash-Conversion-Rate von über 50 %.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-2a52354ff7d7f7f4"
+      ],
+      "evidence": "Auszug/Paraphrase: 'Das Dax-Unternehmen ... strebt nun bis 2030 eine Verfünffachung des Jahresumsatzes auf rund 50 Mrd. Euro an. Man wolle zudem die operative Marge ... auf mehr als 20% steigern und eine Cash-Conversion-Rate von über 50% erreichen. Das kündigte Vorstandschef Armin Papperger am Dienstag in einer Telefonkonferenz an.'",
+      "location": "Artikel vom 18.11.2025, Absatz 1",
+      "uncertainty": "Unternehmensziel/Erwartung, nicht erreicht; Berichtsstand Nov 2025 (spätere Prognoseanpassung 2026 siehe T-16). Die Börsen-Zeitung nennt Aussagen aus einer Telefonkonferenz, die Primärunterlage (CMD-Präsentation) wurde nicht gelesen.",
+      "proposed_depth": "A",
+      "depth_reason": "Zielsetzung 2030"
+    },
+    {
+      "id": "T-19",
+      "statement": "Laut Investorenpräsentation (September 2026) beschäftigte Rheinmetall in den fortgeführten Aktivitäten 2025 rund 34.000 Personen (2024: 24.000) und plant für 2030 rund 60.000 bis 70.000; der Rheinmetall Backlog soll 2026 über 100 Mrd. EUR liegen (2025: 63,8 Mrd. EUR); 2030-Umsatzpotenzial der Segmente laut Präsentation u. a. Vehicle Systems 13–15 Mrd. EUR, Weapon and Ammunition 14–16 Mrd. EUR, Air Defence 3–4 Mrd. EUR.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-1f77cb6f898210ce"
+      ],
+      "evidence": "Paraphrase: Folie 5 (Backlog 2026e >100,0 Mrd. EUR; Umsatz 2026e 13,7–14,2; Marge ~19,0), Folie 10 (Beschäftigte in Tsd.: 24 / 34 / ~60–70 für 2024 / 2025 / 2030e), Folien 22, 29, 38 (2030 Sales potential).",
+      "location": "Folien 5, 10, 22, 29, 38",
+      "uncertainty": "Planwerte (e = erwartet) des Unternehmens; Diagrammwerte aus extrahiertem PDF-Text, Zuordnung der Zahlen zu Jahren aus der Folienstruktur abgeleitet. Veröffentlichungsdatum der Präsentation nur als 'September 2026' angegeben.",
+      "proposed_depth": "B",
+      "depth_reason": "Planwerte als Hintergrund"
+    },
+    {
+      "id": "T-20",
+      "statement": "Termine nach dem Stichtag laut Rheinmetall-IR: Veröffentlichung der Q3-2026-Zahlen am 05.11.2026; Capital Markets Day 2026 bei Blohm+Voss (Naval Systems) in Hamburg, im Finanzkalender mit 25.–27.11.2026, auf der CMD-Seite mit 26.–27.11.2026 angegeben.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-0bd71507c5c59e04",
+        "S-a6309db699669326"
+      ],
+      "evidence": "Ankündigungen laut IR-Finanzkalender und CMD-Seite.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Termine angekündigt; Abweichung beim CMD-Datum (25. vs. 26. November) zwischen den beiden IR-Seiten ungeklärt.",
+      "evidence_items": [
+        {
+          "source_id": "S-0bd71507c5c59e04",
+          "text": "Auszug: '05/11 – 05/11/2026 Publication of quarterly results Q3 2026' sowie '25/11 – 27/11/2026 Rheinmetall Capital Markets Day 2026 ... Hamburg'.",
+          "mode": "Auszug",
+          "location": "Finanzkalender 2026, Einträge November"
+        },
+        {
+          "source_id": "S-a6309db699669326",
+          "text": "Auszug: 'Capital Markets Day in Hamburg, 26 – 27 November 2026'.",
+          "mode": "Auszug",
+          "location": "Abschnitt oben, Eintrag 2026"
+        }
+      ],
+      "proposed_depth": "B",
+      "depth_reason": "Folgetermine"
+    },
+    {
+      "id": "T-21",
+      "statement": "Der Vorstand der Rheinmetall AG besteht laut Unternehmenswebsite aus Armin Papperger (Vorsitzender), Klaus Neumann (CFO, Mitglied seit 01.01.2025, bestellt bis 31.12.2027), Dr. Vera Saal (CHRO/Arbeitsdirektorin, seit 01.09.2025, bestellt bis 31.08.2028) und René Gansauge (COO, seit 01.01.2025, bestellt bis 31.12.2027).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a8887f614647359f"
+      ],
+      "evidence": "Paraphrase: Übersicht 'Der Vorstand der Rheinmetall AG'.",
+      "location": "Seite 'Der Vorstand der Rheinmetall AG', Einträge je Vorstandsmitglied",
+      "uncertainty": "Stand der Webseite zum Abrufdatum; Änderungen nach Abruf nicht geprüft.",
+      "proposed_depth": "A",
+      "depth_reason": "Management der Unternehmensgrenze"
+    },
+    {
+      "id": "T-E01",
+      "statement": "Rheinmetall eröffnete am 05.09.2025 nach eigener Darstellung in Unterlüß (Landkreis Celle) das 'Werk Niedersachsen' (Investition fast 500 Mio. EUR, Bauzeit 15 Monate); geplant sind bis zu 350.000 Artilleriegeschosse jährlich bei voller Kapazität 2027 (2026: Auslieferung von 140.000 Schuss vorgesehen) sowie bis zu 500 Arbeitsplätze; im Produktionsnetz will Rheinmetall ab 2027 rund 1,5 Mio. Artilleriegranaten jährlich herstellen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3ab860d4e2d076b2"
+      ],
+      "evidence": "Paraphrase: Pressemitteilung 05.09.2025 ('größtes Munitionswerk Europas in Betrieb genommen ... fast 500 MioEUR ... 15 Monaten ... bis zu 350.000 Artilleriegeschosse ... 2027 volle Kapazität ... rund 1,5 Millionen Schuss ... ab 2027').",
+      "location": "Fließtext Absätze 1–6",
+      "uncertainty": "Kapazitäts- und Hochlaufangaben sind Planwerte des Unternehmens; die Bezeichnung 'größtes Munitionswerk Europas' ist eine Selbstaussage (bei Vollauslastung).",
+      "proposed_depth": "B",
+      "depth_reason": "Werkseröffnung",
+      "event_status": "eröffnet (laut Unternehmen)",
+      "event_date": "2025-09-05"
+    },
+    {
+      "id": "T-E02",
+      "statement": "Rheinmetall und die Lürssen Group vereinbarten am 15.09.2025 Eckpunkte für die Übernahme von Naval Vessels Lürssen (NVL, Bremen-Vegesack, militärischer Teil der Lürssen-Gruppe); Abschluss war für Anfang 2026 unter Vorbehalt kartellrechtlicher Freigaben angestrebt, der Kaufpreis wurde nicht veröffentlicht.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-0b6a8c7f7a47ed28"
+      ],
+      "evidence": "Paraphrase: 'agreed with the Lürssen Group on the key terms of an acquisition of Naval Vessels Lürssen ... aiming to complete the acquisition in early 2026 ... Both parties have agreed not to disclose the purchase price.'",
+      "location": "Pressemitteilung, Absatz 1",
+      "uncertainty": "Zum Stichtag bereits vollzogen (T-E08).",
+      "proposed_depth": "A",
+      "depth_reason": "Übernahme/Marine",
+      "event_status": "angekündigt (Eckpunkte vereinbart)",
+      "event_date": "2025-09-15"
+    },
+    {
+      "id": "T-E03",
+      "statement": "Rheinmetall gab am 10.12.2025 die vertraglich vereinbarte Übernahme der Muni Berka GmbH (Dietersdorf/Sachsen-Anhalt; weiterer Standort Ochtrup/NRW; Munitionsdelaborierung und -lagerung) bekannt; Ziel ist mehr Lagerkapazität (mehr als 1 Mio. 155-mm-Projektile oder 500.000 'Full Shot'); Kaufpreis vertraulich, behördliche Genehmigungen standen noch aus.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-1db9c54bc6663d61"
+      ],
+      "evidence": "Paraphrase: Pressemitteilung 10.12.2025 ('Übernahme der Muni Berka GmbH ... Stillschweigen ... unter dem Vorbehalt der üblichen behördlichen Genehmigungen').",
+      "location": "PDF-Seite 1",
+      "uncertainty": "Vollzug nicht geprüft.",
+      "proposed_depth": "B",
+      "depth_reason": "Kleinere Akquisition",
+      "event_status": "vertraglich vereinbart (unter behördlichem Vorbehalt)",
+      "event_date": "2025-12-10"
+    },
+    {
+      "id": "T-E04",
+      "statement": "Das Bundesamt für Ausrüstung (BAAINBw) beauftragte laut Rheinmetall am 18.12.2025 das Joint Venture Rheinmetall ICEYE Space Solutions (Neuss) mit der Lieferung weltraumgestützter Aufklärungsdaten über eine exklusive SAR-Satellitenkonstellation (Programm SPOCK 1); Auftragswert rund 1,7 Mrd. EUR brutto, Laufzeit Ende 2025 bis Ende 2030 mit Verlängerungsoption.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-aa782bd6fedfefb7"
+      ],
+      "evidence": "Auszug/Paraphrase: 'Rheinmetall ICEYE Space Solutions has received a major order worth €1.7 billion ... The contract runs from the end of 2025 to the end of 2030 with options to extend.'",
+      "location": "Pressemitteilung, Key facts und Absätze 1–4",
+      "uncertainty": "Wert und Vertragsumfang sind Herstellerangaben; Vertrag des Auftraggebers nicht gelesen.",
+      "proposed_depth": "A",
+      "depth_reason": "Großauftrag/Weltraum",
+      "event_status": "beauftragt (laut Unternehmen)",
+      "event_date": "2025-12-18"
+    },
+    {
+      "id": "T-E05",
+      "statement": "Das Beschaffungsamt der Bundeswehr beauftragte laut Rheinmetall am 19.12.2025 das Gemeinschaftsunternehmen PSM (Rheinmetall/KNDS Deutschland) mit 200 weiteren Schützenpanzern Puma; Gesamtvolumen 4,2 Mrd. EUR brutto, davon je 2,1 Mrd. EUR für KNDS und für Rheinmetall Landsysteme; Vertragswirksamkeit Januar 2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-110cc749cec119a4"
+      ],
+      "evidence": "Auszug: 'The total gross volume of the procurement is €4,2 billion gross of which KNDS will receive €2.1 billion and €2.1 billion will go to the Rheinmetall subsidiary Rheinmetall Landsysteme GmbH.'",
+      "location": "Pressemitteilung, Absatz 2",
+      "uncertainty": "Herstellerangabe; Auslieferung laut anderen Quellen ab 2028 (nicht in diesem Dokument gelesen).",
+      "proposed_depth": "A",
+      "depth_reason": "Großauftrag Landsysteme",
+      "event_status": "beauftragt, wirksam ab Januar 2026 (laut Unternehmen)",
+      "event_date": "2025-12-19"
+    },
+    {
+      "id": "T-E06",
+      "statement": "Die Bundeswehr erweiterte laut Rheinmetall (05.01.2026) den Rahmenvertrag von Dezember 2022 für 30-mm-Munition des Schützenpanzers Puma (bis 2029; mehrere hunderttausend Patronen im Wert von rund 1 Mrd. EUR) und rief gleichzeitig Munition mit Auftragseingang von mehreren hundert Mio. EUR ab.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-553789c22ec26699"
+      ],
+      "evidence": "Paraphrase: 'framework contract ... has now been extended in terms of delivery quantity and order volume. It provides for the delivery of several hundred thousand cartridges worth around €1 billion ... order intake amounts to several hundred million euros.'",
+      "location": "Pressemitteilung, Key facts und Absätze 1–2",
+      "uncertainty": "Herstellerangabe; exakte Abrufmenge nicht angegeben.",
+      "proposed_depth": "B",
+      "depth_reason": "Munitionsauftrag",
+      "event_status": "beauftragt (laut Unternehmen)",
+      "event_date": "2026-01-05"
+    },
+    {
+      "id": "T-E07",
+      "statement": "Rheinmetall meldete am 02.03.2026 den Vollzug der Übernahme von NVL (Naval Vessels Lürssen, Bremen-Vegesack) einschließlich aller Tochtergesellschaften zum 01.03.2026 nach Erhalt aller kartellrechtlichen Freigaben; der Kaufpreis bleibt vertraulich. Mit NVL entsteht die Division Naval Systems.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-042b26990fdc2a9d"
+      ],
+      "evidence": "Auszug: 'Rheinmetall has now been given all antitrust approvals for the acquisition of Naval Vessels Lürssen ... The transition was concluded on 1 March 2026. Both parties have agreed on keeping the purchasing price concealed.'",
+      "location": "Pressemitteilung, Key Facts und Absatz 1",
+      "uncertainty": "Kaufpreis nicht veröffentlicht; Medienangaben zum Preis wurden nicht übernommen.",
+      "proposed_depth": "A",
+      "depth_reason": "Übernahme/Marine",
+      "event_status": "vollzogen",
+      "event_date": "2026-03-02"
+    },
+    {
+      "id": "T-E08",
+      "statement": "Rheinmetall veröffentlichte am 11.03.2026 die Zahlen für das Geschäftsjahr 2025 (Umsatz 9.935 Mio. EUR, operatives Ergebnis 1.841 Mio. EUR, Dividendenvorschlag 11,50 EUR) und die ursprüngliche Prognose 2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-559e0ac19cabd1d0"
+      ],
+      "evidence": "Paraphrase: Key facts der Pressemitteilung vom 11.03.2026 (Details in T-10 und T-15).",
+      "location": "Pressemitteilung, Key facts",
+      "uncertainty": "Details der Kennzahlen siehe T-10; die damals genannte Prognose wurde am 06.08.2026 angepasst (T-16).",
+      "proposed_depth": "A",
+      "depth_reason": "Geschäftszahlen",
+      "event_status": "veröffentlicht",
+      "event_date": "2026-03-11"
+    },
+    {
+      "id": "T-E09",
+      "statement": "Laut dem Fachmedium Militarnyi entschuldigte sich Rheinmetall am 29.03.2026 für Äußerungen von Vorstandschef Papperger, der in einem Gespräch mit einem Journalisten von The Atlantic ukrainische Drohnenhersteller als 'Hausfrauen mit 3D-Druckern' bezeichnet und den Drohnen mangelnde Innovation unterstellt haben soll; das Unternehmen betonte Respekt vor den Anstrengungen der Ukraine.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-04b4522db1cf4f65"
+      ],
+      "evidence": "Paraphrase: 'Rheinmetall has apologized for comments by its CEO, Armin Papperger, who described Ukrainian drone manufacturers as “housewives with 3D printers.” ... “The innovative strength and the fighting spirit of the Ukrainian people are an inspiration to us. We are grateful to be able to support with the resources at our disposal,” the post reads.'",
+      "location": "Artikel vom 29.03.2026, Absätze 1–6",
+      "uncertainty": "Zuschreibung der Äußerung stammt aus Zweitberichterstattung (Original: The Atlantic, nicht geöffnet); die Wortlaut-Echtheit wurde in Medien teilweise kontrovers diskutiert.",
+      "proposed_depth": "B",
+      "depth_reason": "Reputationsereignis zum CEO",
+      "event_status": "laut Medien; Entschuldigung des Unternehmens",
+      "event_date": "2026-03-29"
+    },
+    {
+      "id": "T-E10",
+      "statement": "Rheinmetall und Destinus (Niederlande) vereinbarten am 13.04.2026 die Gründung des Joint Ventures 'Rheinmetall Destinus Strike Systems' (Marschflugkörper, ballistische Raketenartillerie; Sitz Unterlüß; Rheinmetall 51 %, Destinus 49 %); Gründung in der zweiten Jahreshälfte 2026 geplant, unter Vorbehalt behördlicher Genehmigungen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a3892fe72afc70a4"
+      ],
+      "evidence": "Auszug: 'Ziel der beiden Partner ist es, das Joint Venture „Rheinmetall Destinus Strike Systems“ in der zweiten Jahreshälfte 2026 zu gründen ... Rheinmetall wird 51 Prozent der Anteile halten, Destinus 49 Prozent. Die Transaktion steht unter dem Vorbehalt der behördlichen Genehmigungen.'",
+      "location": "Pressemitteilung, Absatz 1",
+      "uncertainty": "Zum Stichtag keine Gründungsmeldung gelesen; CEO nennt Unterzeichnung als 'kurz bevorstehend' (siehe H-Medienprofil).",
+      "proposed_depth": "A",
+      "depth_reason": "JV Raketen",
+      "event_status": "angekündigt (Gründung H2 2026 geplant)",
+      "event_date": "2026-04-13"
+    },
+    {
+      "id": "T-E11",
+      "statement": "Die Bundeswehr schloss laut Rheinmetall am 22.04.2026 in Koblenz einen Rahmenvertrag im Milliardenbereich über Loitering-Munition-Systeme FV-014 (erster Abruf rund 300 Mio. EUR brutto; Auslieferung ab erster Jahreshälfte 2027, Qualifizierung ab Q2 2026; Entwicklung und Produktion laut Unternehmen vollständig in der EU).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-438937e9317397d7"
+      ],
+      "evidence": "Paraphrase: 'Rahmenvertrag im Milliardenbereich, Erstabruf über rund 300 MioEUR ... Auslieferung ... in der ersten Jahreshälfte 2027 beginnen, die Qualifizierung ab dem zweiten Quartal 2026.'",
+      "location": "Pressemitteilung, Keyfacts und Absatz 1",
+      "uncertainty": "Rahmenvertragsvolumen nur als 'Milliardenbereich' angegeben; Abrufe über den Erstabruf hinaus nicht belegt.",
+      "proposed_depth": "A",
+      "depth_reason": "Großauftrag Drohnen",
+      "event_status": "beauftragt (Rahmenvertrag; laut Unternehmen)",
+      "event_date": "2026-04-22"
+    },
+    {
+      "id": "T-E12",
+      "statement": "Rheinmetall legte am 07.05.2026 die Quartalszahlen Q1 2026 vor (Umsatz 1,9 Mrd. EUR, +8 %; operatives Ergebnis 224 Mio. EUR; Backlog 73 Mrd. EUR).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-be9afa65076fd992"
+      ],
+      "evidence": "Paraphrase: Key facts der Pressemitteilung 07.05.2026 (Details in T-12).",
+      "location": "Pressemitteilung, Key facts",
+      "uncertainty": "Details siehe T-12.",
+      "proposed_depth": "A",
+      "depth_reason": "Quartalszahlen",
+      "event_status": "veröffentlicht",
+      "event_date": "2026-05-07"
+    },
+    {
+      "id": "T-E13",
+      "statement": "Rheinmetall platzierte am 21.05.2026 eine Anleihe über 500 Mio. EUR (Laufzeit bis Mai 2031, Kupon 3,375 %; Abwicklung 28.05.2026); laut Unternehmen die erste Anleiheemission seit 2010, Orderbuch 7,8-fach überzeichnet.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-56fc0186af26e860"
+      ],
+      "evidence": "Auszug: 'On 21 May 2026, Rheinmetall AG successfully placed a €500 million bond ... maturing in May 2031 with a coupon of 3.375% ... first bond issuance since 2010 ... order book ... oversubscribed by 7.8 times'.",
+      "location": "Pressemitteilung, Key facts und Absätze 1–2",
+      "uncertainty": "Herstellerangabe.",
+      "proposed_depth": "A",
+      "depth_reason": "Kapitalmarkt",
+      "event_status": "platziert/abgewickelt",
+      "event_date": "2026-05-28"
+    },
+    {
+      "id": "T-E14",
+      "statement": "Die Bundeswehr rief laut Rheinmetall (28.05.2026) mehr als 2.000 ungeschützte Transportfahrzeuge (UTF; 4x4, 6x6, 8x8) im Wert von 1,015 Mrd. EUR brutto aus dem Rahmenvertrag von 2024 (bis zu 6.500 Fahrzeuge) ab; Verbuchung im 2. Quartal 2026, Auslieferung durch Rheinmetall MAN Military Vehicles ab erstem Halbjahr 2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-8f63be7e3308f827"
+      ],
+      "evidence": "Auszug: 'Der Auftragswert beläuft sich auf 1,015 MrdEUR brutto. Der Großauftrag erfolgt aus dem im Jahr 2024 geschlossenen Rahmenvertrag über insgesamt bis zu 6.500 Fahrzeuge und wird im zweiten Quartal 2026 eingebucht.'",
+      "location": "Pressemitteilung, Absatz 1",
+      "uncertainty": "Herstellerangabe.",
+      "proposed_depth": "A",
+      "depth_reason": "Großauftrag Logistikfahrzeuge",
+      "event_status": "beauftragt (Abruf aus Rahmenvertrag; laut Unternehmen)",
+      "event_date": "2026-05-28"
+    },
+    {
+      "id": "T-E15",
+      "statement": "Rheinmetall meldete am 02.06.2026 einen Auftragspaket-Wert von insgesamt 5,7 Mrd. EUR aus Rumänien (vergeben am 29.05.2026 durch die Rüstungsdirektion im Rahmen des EU-Programms SAFE): 298 Lynx-Kampffahrzeuge, Skyranger-Flugabwehrsysteme auf Lynx-Basis, Mittelkalibermunition, zwei Offshore-Patrouillenschiffe und zwei Taucherunterstützungsschiffe; Auslieferung 2028 bis 2030; Rheinmetall will mehrere hundert Mio. EUR in Rumänien investieren.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-7c51e921c055e64c"
+      ],
+      "evidence": "Auszug/Paraphrase: 'The contract package was awarded on 29 May 2026 by the Directorate General for Armaments and falls under the European Union’s Security Action for Europe (SAFE) programme ... total value of €5.7 billion. The relevant contracts have now been signed ... Deliveries are scheduled to begin 2028 and be completed by 2030.'",
+      "location": "Pressemitteilung, Absätze 1–4",
+      "uncertainty": "Es wurde keine unabhängige Zweitquelle (z. B. rumänisches Ministerium) geöffnet; die Aufteilung auf Segmente ergibt sich aus dem Halbjahresbericht (T-05, T-06, T-09).",
+      "proposed_depth": "A",
+      "depth_reason": "Größtes internationales Auftragspaket",
+      "event_status": "beauftragt (Verträge laut Unternehmen unterzeichnet)",
+      "event_date": "2026-06-02"
+    },
+    {
+      "id": "T-E16",
+      "statement": "Rheinmetall unterzeichnete am 03.06.2026 mit der Münchner Industriegruppe AEQUITA einen Kaufvertrag über die zivile Division Power Systems (vorläufiger Kaufpreis für 100 % der Anteile 350 Mio. EUR; rund 6.250 Beschäftigte; Umsatz 2025 rund 2 Mrd. EUR); Closing im 4. Quartal 2026 unter Vorbehalt aufsichtsrechtlicher Freigaben angestrebt; die drei deutschen Standorte der KS Huayu AluTech (JV), die Beteiligung Dermalog SensorTec und das spanische Werk Abadiano sind vom Verkauf ausgenommen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-3b33c5118cdc79d2"
+      ],
+      "evidence": "Auszug/Paraphrase: 'Der vorläufige Kaufpreis für 100% der Anteile beträgt 350 MioEUR ... Abschluss im vierten Quartal 2026 ... Power Systems, die 2025 einen Umsatz rund 2 MrdEUR erwirtschaftete ... als „nicht fortgeführte Aktivität“ ... KS Huayu AluTech, Dermalog SensorTec und spanisches Werk Abadiano vom Verkauf ausgenommen.'",
+      "location": "Pressemitteilung, Keyfacts und Absätze 1–6",
+      "uncertainty": "Vollzug noch nicht belegt (Stand Stichtag); Kaufpreis unterliegt Anpassungen bis zum Closing.",
+      "proposed_depth": "A",
+      "depth_reason": "Portfoliobereinigung",
+      "event_status": "Kaufvertrag unterzeichnet; Vollzug für Q4 2026 angestrebt",
+      "event_date": "2026-06-03"
+    },
+    {
+      "id": "T-E17",
+      "statement": "Das Bundesverteidigungsministerium beendete laut Reuters am 24.06.2026 das Fregattenprojekt F126 (sechs Schiffe; Begründung: erhebliche Verzögerungen, Kostensteigerungen auf mehr als 18 Mrd. EUR, unkalkulierbare Risiken) und plant stattdessen acht MEKO-A-200-Fregatten von TKMS; die Rheinmetall-Aktie fiel nach Reuters zeitweise um bis zu 16,7 %. Rheinmetall bezifferte im Halbjahresbericht die Umsatzwirkung für 2026 auf bis zu 300 Mio. EUR.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-c85fbd35697b1263",
+        "S-0bf21d6b5d52b9d5",
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Reuters (via gCaptain, 24.06.2026), Breaking Defense (06.08.2026) und Rheinmetall-Halbjahresbericht (06.08.2026).",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Kosten-, Preis- und Kursangaben stammen aus der Reuters-Meldung (Ministerium/Intraday-Kurs); ein formaler F126-Vertrag mit Rheinmetall bestand laut Medien nicht, Rheinmetall hatte die Übernahme des Projekts durch NVL geprüft. Die Bundeswehr-Originalmeldung konnte nicht lesbar abgerufen werden.",
+      "evidence_items": [
+        {
+          "source_id": "S-c85fbd35697b1263",
+          "text": "Auszug: 'Germany’s defense ministry said it would terminate the program, saying continuing it would have pushed the bill for six ships to more than €18 billion ... Shares in Rheinmetall ... fell as much as 16.7% ... eight Meko A-200 frigates from Thyssenkrupp’s TKAG.DE marine division TKMS.'",
+          "mode": "Auszug",
+          "location": "Absätze 1–6 der Reuters-Meldung (24. Juni)"
+        },
+        {
+          "source_id": "S-0bf21d6b5d52b9d5",
+          "text": "Auszug: 'Germany’s decision to cancel its planned F126 frigate has forced Rheinmetall to reduce an annual naval business sales forecast by €300 million ($346 million), the company said today.' / 'in June Germany formally scrapped the six-ship project and moved immediately to a new plan to acquire eight ThyssenKrupp Marine Systems (TKMS)-produced MEKO frigates'.",
+          "mode": "Auszug",
+          "location": "Artikel vom 06.08.2026, Absätze 1 und 5"
+        },
+        {
+          "source_id": "S-5b640196f4e87dad",
+          "text": "Auszug: 'Die Bewertung der Auswirkungen, die sich aus der Ende Juni 2026 verkündeten Stornierung des Programms für die Fregatte F126 ergeben, führte zu einer Anpassung der Jahresprognose ... negative Umsatzauswirkungen in Höhe von bis zu 300 MioEUR'.",
+          "mode": "Auszug",
+          "location": "Abschnitt 'Ausblick: Jahresumsatzprognose wird leicht adjustiert', Absatz 1"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Wesentliche negative Entwicklung; wirkt auf Prognose",
+      "event_status": "beschlossen (Bund); Folgen laut Unternehmen",
+      "event_date": "2026-06-24"
+    },
+    {
+      "id": "T-E18",
+      "statement": "Rheinmetall meldete am 01.07.2026 den Vollzug der Übernahme der Mehrheitsbeteiligung an DOK-ING (Kroatien; unbemannte Fahrzeuge, Minenräumung); das Unternehmen firmiert künftig als 'Rheinmetall Unmanned Vehicles d.o.o.' (Vertragsunterzeichnung im März 2026 in Zagreb); Basis ist die hybride Komodo-Plattform (Nutzlast über 8,5 t); DOK-ING hat laut Unternehmen rund 500 Plattformen an Kunden in über 40 Staaten geliefert.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-749ebb1bb3cf3947"
+      ],
+      "evidence": "Auszug/Paraphrase: 'Closing erfolgt: Rheinmetall übernimmt Mehrheitsbeteiligung an DOK-ING ... firmiert von nun an unter dem Namen „Rheinmetall Unmanned Vehicles d.o.o.“ ... Komodo ... Nutzlast von über 8,5 Tonnen ... rund 500 Plattformen an Kunden in über 40 Staaten ausgeliefert.'",
+      "location": "Pressemitteilung, Keyfacts und Absätze 1–4",
+      "uncertainty": "Genauer Anteil und Kaufpreis in diesem Dokument nicht genannt; die Beschäftigten-/Standortangaben der Unternehmensbeschreibung dieser Mitteilung sind veraltet (siehe T-02).",
+      "proposed_depth": "B",
+      "depth_reason": "Akquisition unbemannte Systeme",
+      "event_status": "vollzogen (laut Unternehmen)",
+      "event_date": "2026-07-01"
+    },
+    {
+      "id": "T-E19",
+      "statement": "Rheinmetall stellte am 03.08.2026 die Fregatte GMF 140 vor (rund 140 m, über 6.000 t, Lenkwaffenfregatte für NATO- und alliierte Marinen; Luft- und Raketenabwehr, U-Boot-Jagd, Langstreckenwirkung); Rheinmetall will internationale Märkte adressieren.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-078c6e124a0a035b"
+      ],
+      "evidence": "Auszug: 'Rheinmetall today unveiled the GMF 140, a next-generation 140-metre, 6,000+ tonne guided missile frigate ... Rheinmetall is targeting international markets'.",
+      "location": "Pressemitteilung, Absatz 1",
+      "uncertainty": "Designvorstellung ohne belegten Kunden/Auftrag; Hinweis auf einen nordamerikanischen Zielmarkt stammt aus Zweitberichten.",
+      "proposed_depth": "B",
+      "depth_reason": "Neues Marineprodukt",
+      "event_status": "vorgestellt (Entwurf; kein Kunde benannt)",
+      "event_date": "2026-08-03"
+    },
+    {
+      "id": "T-E20",
+      "statement": "Rheinmetall legte am 06.08.2026 den Halbjahresfinanzbericht 2026 vor (Umsatz 5,2 Mrd. EUR, +39 %; operatives Ergebnis 786 Mio. EUR; Backlog 80,5 Mrd. EUR) und passte die Jahresumsatzprognose wegen der F126-Stornierung auf 13,7 bis 14,2 Mrd. EUR an.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Paraphrase: Keyfacts der Pressemitteilung vom 06.08.2026 (Details in T-13, T-14, T-16).",
+      "location": "Pressemitteilung, Keyfacts",
+      "uncertainty": "Kennzahlen siehe T-13/T-14/T-16.",
+      "proposed_depth": "A",
+      "depth_reason": "Halbjahreszahlen und Prognose",
+      "event_status": "veröffentlicht",
+      "event_date": "2026-08-06"
+    },
+    {
+      "id": "T-E21",
+      "statement": "Laut Börsen-Zeitung kündigte Konzernchef Papperger am 27.08.2026 in Kassel Investitionen von rund 270 Mio. EUR in Nordhessen an (Ausbau der Panzerfertigung zum 'größten Panzerwerk Europas', Logistikzentrum von mehr als 30.000 m² mit geplanter Inbetriebnahme Ende 2027, Drohnen-Testzentrum); das Land Hessen steuere rund 25 Mio. EUR bei; die Beschäftigtenzahl am Standort solle von rund 2.200 auf rund 3.500 wachsen.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-fa3be73251a7e9c6"
+      ],
+      "evidence": "Auszug/Paraphrase: 'Der Rüstungskonzern wolle dazu rund 270 Mill. Euro investieren, sagte Konzernchef Armin Papperger am Donnerstag in Kassel. Das Land Hessen werde rund 25 Mill. Euro beisteuern ... „Kassel wird das größte Panzerwerk Europas“ ... von aktuell rund 2200 auf rund 3500'.",
+      "location": "Artikel vom 27.08.2026, Absätze 1–5",
+      "uncertainty": "Ankündigung/Plan, kein Vollzug; Aussageursprung: Papperger bzw. MP Rhein laut Börsen-Zeitung. Ein Rheinmetall-Primärdokument wurde nicht gelesen; andere Medien nennen leicht abweichende Beträge (260–270 Mio. EUR).",
+      "proposed_depth": "A",
+      "depth_reason": "Standortinvestition",
+      "event_status": "angekündigt (Investitionsplan)",
+      "event_date": "2026-08-27"
+    },
+    {
+      "id": "T-E22",
+      "statement": "Rheinmetall Italia und Argotec brachten laut Rheinmetall am 01.10.2026 den ersten gemeinsam entwickelten Satelliten mit einer SpaceX-Falcon-9-Rakete von der Vandenberg Space Force Base in die Umlaufbahn; er soll Teil einer satellitengestützten Fähigkeit zur Luftraumüberwachung und Lagebilderstellung werden.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a6f316c0deb5a97a"
+      ],
+      "evidence": "Auszug: 'On October 1, 2026, the first satellite developed within this collaboration was successfully launched into orbit aboard a SpaceX Falcon 9 launch vehicle from Vandenberg Space Force Base'.",
+      "location": "Pressemitteilung vom 02.10.2026, Absatz 1",
+      "uncertainty": "Herstellerangabe; Betriebs- und Kundenstatus der Fähigkeit nicht belegt.",
+      "proposed_depth": "B",
+      "depth_reason": "Raumfahrt",
+      "event_status": "durchgeführt (laut Unternehmen)",
+      "event_date": "2026-10-01"
+    },
+    {
+      "id": "T-E23",
+      "statement": "Laut hessenschau.de (06.10.2026) bestätigten Alstom und Rheinmetall eine grundsätzliche Einigung über die Zukunft des Alstom-Standorts Kassel (Lokomotivwerk, rund 750 Beschäftigte laut hr); Rheinmetall will Hallen und Gelände übernehmen, weitere Details sind noch zu verhandeln und vertraglich zu fixieren.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-7f6de13c77cb340f"
+      ],
+      "evidence": "Auszug/Paraphrase: 'Alstom teilte der hessenschau am Dienstag mit, dass „eine grundsätzliche Einigung mit Rheinmetall über die Zukunft des Standorts Kassel erzielt wurde“. Auch ein Rheinmetall-Sprecher bestätigte die „grundsätzliche Einigung zu den wesentlichen Eckpfeilern“ ... Weitere Details werden derzeit noch verhandelt'.",
+      "location": "Artikel vom 06.10.2026, Absätze 1–6",
+      "uncertainty": "Noch kein unterzeichneter Vertrag; Preis, Beschäftigtenübernahme und Zukunft des Lokbaus offen (Berichte uneinheitlich).",
+      "proposed_depth": "A",
+      "depth_reason": "Standortübernahme",
+      "event_status": "Grundsatzeinigung; Vertrag steht aus",
+      "event_date": "2026-10-06"
+    },
+    {
+      "id": "T-E24",
+      "statement": "Rheinmetall ICEYE Space Solutions gab am 06.10.2026 bekannt, dass die Bundeswehr im Programm SPOCK 1 direkten Zugriff auf mehrere dedizierte SAR-Aufklärungssatelliten erhalten hat und die Serienfertigung der Satelliten am Standort Neuss begonnen hat.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-04cc080af88f833d"
+      ],
+      "evidence": "Auszug: 'The German armed forces now have direct access to several Synthetic Aperture Radar (SAR) reconnaissance satellites dedicated exclusively to this purpose ... production of SAR satellites has successfully commenced at the Neuss site.'",
+      "location": "Pressemitteilung, Key Facts und Absatz 1–2",
+      "uncertainty": "Herstellerangabe; Zahl der Satelliten und Einsatzbereitschaft nicht genannt.",
+      "proposed_depth": "B",
+      "depth_reason": "Raumfahrt",
+      "event_status": "Meilenstein erreicht (laut Unternehmen)",
+      "event_date": "2026-10-06"
+    },
+    {
+      "id": "T-E25",
+      "statement": "Rheinmetall erneuerte laut eigener Mitteilung am 08.10.2026 vorzeitig die syndizierte Kreditlinie und verdoppelte sie von 750 Mio. EUR auf 1,5 Mrd. EUR (zur allgemeinen Unternehmensfinanzierung); der Kreis der Kernbanken wurde um internationale Partner erweitert.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-be6a33c1caf2a631"
+      ],
+      "evidence": "Auszug: 'Rheinmetall has renewed its existing syndicated credit line ahead of schedule and doubled its volume from €750 million to €1.5 billion.'",
+      "location": "Pressemitteilung, Key facts und Absatz 1",
+      "uncertainty": "Herstellerangabe; Konditionen nicht genannt.",
+      "proposed_depth": "A",
+      "depth_reason": "Kapitalmarkt/Finanzierung",
+      "event_status": "vereinbart (laut Unternehmen)",
+      "event_date": "2026-10-08"
+    },
+    {
+      "id": "T-E26",
+      "statement": "Rheinmetall nahm laut eigener Mitteilung am 16.10.2026 über die Tochter Rheinmetall Expal Munitions in Albacete (Spanien) eine neue Mittelkaliber-Fertigung in Betrieb (Kapazität rund 3 Mio. Munitionskomponenten jährlich; Investition rund 20 Mio. EUR; Belegschaft von rund 210 auf rund 300), Teil des Projekts 'Firepower'.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-65384ba645706eba"
+      ],
+      "evidence": "Auszug/Paraphrase: 'In October 2026, its subsidiary Rheinmetall Expal Munitions will commission its new modern medium-calibre production facility at the Albacete site ... around 1.2 million projectiles and approximately 1.8 million cartridge cases ... around 20 million euros ... from around 210 employees ... to around 300.'",
+      "location": "Pressemitteilung, Key Facts und Absätze 1–4",
+      "uncertainty": "Herstellerangabe; der Text formuliert die Inbetriebnahme teils im Futur ('will commission').",
+      "proposed_depth": "B",
+      "depth_reason": "Werkseröffnung",
+      "event_status": "in Betrieb genommen (laut Unternehmen)",
+      "event_date": "2026-10-16"
+    },
+    {
+      "id": "T-E27",
+      "statement": "Rheinmetall und die Schweizer Reederei MSC erhielten laut Rheinmetall (19.10.2026) den Zuschlag in einer Auktion für die rumänische Werft Mangalia (Kaufpreis rund 138 Mio. EUR, gemeinsam getragen); Rheinmetall Naval Systems will dort u. a. die vier für Rumänien bestellten Marineschiffe bauen und den Standort als Dual-Use-Werft entwickeln; Abschluss in wenigen Wochen erwartet.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-91be1f9c04508de5"
+      ],
+      "evidence": "Auszug: 'They have now been awarded the bid following an auction ... The acquisition, which is expected to be finalised in a few weeks, involves a purchase price of around €138 million, to be paid jointly by the two partners.'",
+      "location": "Pressemitteilung, Key Facts und Absatz 1–2",
+      "uncertainty": "Noch nicht vollzogen; Anteilsverteilung zwischen Rheinmetall und MSC nicht genannt.",
+      "proposed_depth": "A",
+      "depth_reason": "Übernahme Werft",
+      "event_status": "Zuschlag in Auktion; Vollzug in einigen Wochen erwartet",
+      "event_date": "2026-10-19"
+    },
+    {
+      "id": "T-E28",
+      "statement": "Rheinmetall veröffentlicht laut IR-Finanzkalender am 05.11.2026 die Zahlen zum 3. Quartal 2026 (Termin nach dem Stichtag).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-0bd71507c5c59e04"
+      ],
+      "evidence": "Auszug: '05/11 – 05/11/2026 | Event | Publication of quarterly results Q3 2026'.",
+      "location": "Finanzkalender 2026",
+      "uncertainty": "Angekündigter Termin; Inhalte noch nicht verfügbar.",
+      "proposed_depth": "B",
+      "depth_reason": "Termin",
+      "event_status": "angekündigt",
+      "event_date": "2026-11-05"
+    },
+    {
+      "id": "T-E29",
+      "statement": "Rheinmetall plant laut IR-Seiten den Capital Markets Day 2026 in Hamburg bei Blohm+Voss (Naval Systems); Datum im Finanzkalender 25.–27.11.2026, auf der CMD-Seite 26.–27.11.2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-0bd71507c5c59e04",
+        "S-a6309db699669326"
+      ],
+      "evidence": "Ankündigungen laut IR-Finanzkalender und CMD-Seite.",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Angekündigt; Datumsabweichung zwischen den IR-Seiten.",
+      "evidence_items": [
+        {
+          "source_id": "S-0bd71507c5c59e04",
+          "text": "Auszug: '25/11 – 27/11/2026 Rheinmetall Capital Markets Day 2026 ... Hamburg'.",
+          "mode": "Auszug",
+          "location": "Finanzkalender 2026"
+        },
+        {
+          "source_id": "S-a6309db699669326",
+          "text": "Auszug: 'Capital Markets Day in Hamburg, 26 – 27 November 2026'.",
+          "mode": "Auszug",
+          "location": "CMD-Seite, Eintrag 2026"
+        }
+      ],
+      "proposed_depth": "B",
+      "depth_reason": "Termin",
+      "event_status": "angekündigt (Termin 25.–27. bzw. 26.–27.11.)",
+      "event_date": "2026-11-25"
+    },
+    {
+      "id": "T-E30",
+      "statement": "Laut Börsen-Zeitung (27.08.2026) setzt Papperger auf einen baldigen milliardenschweren Bundesauftrag für den Radpanzer Boxer ('Arminius'; Bestellung verschiedener Boxer-Varianten, produziert von Rheinmetall und KNDS); ein erster Auftrag könne für Rheinmetall rund 12,4 Mrd. EUR umfassen. Ein Vertrag wurde bis zum Stichtag nicht gelesen.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-fa3be73251a7e9c6"
+      ],
+      "evidence": "Auszug/Paraphrase: 'In dem „Arminius“ genannten Projekt plant die Bundeswehr eine umfassende Bestellung von Radpanzern des Typs Boxer ... Ein erster Auftrag der Bundeswehr könne für Rheinmetall ein Volumen von rund 12,4 Mrd. Euro haben, hatte Papperger angekündigt.'",
+      "location": "Artikel vom 27.08.2026, Abschnitt 'Verheißungsvoller Bundeswehrauftrag'",
+      "uncertainty": "Erwartung des CEO, kein Vertrag; Zeitpunkt nicht belegt (Datum offen).",
+      "proposed_depth": "A",
+      "depth_reason": "Mögliches Großvorhaben",
+      "event_status": "erwartet (Herstellererwartung, nicht beauftragt)"
+    },
+    {
+      "id": "H-01",
+      "statement": "Armin Papperger ist laut Rheinmetall-Website Diplom-Ingenieur (Jahrgang 1963, deutsche Staatsangehörigkeit).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a8887f614647359f"
+      ],
+      "evidence": "Paraphrase: Vorstandsübersicht: 'Armin Papperger – Diplom-Ingenieur – Jahrgang: 1963 – Nationalität: deutsch'.",
+      "location": "Seite 'Der Vorstand der Rheinmetall AG', erster Eintrag",
+      "uncertainty": "Studienfach/Hochschule sind auf der Seite nicht genannt.",
+      "proposed_depth": "B",
+      "depth_reason": "Hintergrund"
+    },
+    {
+      "id": "H-02",
+      "statement": "Armin Papperger ist Vorsitzender des Vorstands (CEO) der Rheinmetall AG seit 1. Januar 2013 und Mitglied des Vorstands seit 1. Januar 2012; seine Bestellung läuft laut Unternehmenswebsite bis 31. Dezember 2029. Medien bezeichnen ihn im Zeitraum Juni bis Oktober 2026 durchgehend als Rheinmetall-CEO bzw. -Chef.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a8887f614647359f",
+        "S-aaaf59c399a65ff2"
+      ],
+      "evidence": "Rolle laut Unternehmenswebsite sowie Bezeichnung in Euronews-Interview (17.09.2026).",
+      "location": "Siehe evidence_items",
+      "uncertainty": "Bestellungsdauer stammt von der Unternehmensseite (Abrufstand 19.10.2026); die Nutzerangabe ohne Rolle wurde damit öffentlich verifiziert.",
+      "evidence_items": [
+        {
+          "source_id": "S-a8887f614647359f",
+          "text": "Auszug: 'Vorsitzender des Vorstands seit 1. Januar 2013 – Mitglied des Vorstands seit 1. Januar 2012 – Bestellt bis 31. Dezember 2029 – Bei Rheinmetall seit 1990'.",
+          "mode": "Auszug",
+          "location": "Seite 'Der Vorstand der Rheinmetall AG', Eintrag Armin Papperger"
+        },
+        {
+          "source_id": "S-aaaf59c399a65ff2",
+          "text": "Auszug: 'Armin Papperger, chief executive of the arms manufacturer Rheinmetall' / 'Rheinmetall CEO Armin Papperger'.",
+          "mode": "Auszug",
+          "location": "Artikel vom 17.09.2026, Bildunterschrift und Anreißer"
+        }
+      ],
+      "proposed_depth": "A",
+      "depth_reason": "Personenidentität und aktuelle Rolle"
+    },
+    {
+      "id": "H-03",
+      "statement": "Papperger ist laut Unternehmensprofil seit 1990 bei Rheinmetall und begann nach dem Studium seine berufliche Laufbahn im Qualitätsmanagement der Defence-Sparte des Konzerns.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a8887f614647359f"
+      ],
+      "evidence": "Auszug: 'Nach dem Studium begann der diplomierte Ingenieur 1990 seinen beruflichen Werdegang im Qualitätsmanagement der Defence-Sparte des Rheinmetall-Konzerns.'",
+      "location": "Eintrag Armin Papperger, Absatz 1",
+      "uncertainty": "Selbstdarstellung des Unternehmens.",
+      "proposed_depth": "A",
+      "depth_reason": "Werdegang"
+    },
+    {
+      "id": "H-04",
+      "statement": "Nach weiteren Stationen im Qualitätsmanagement war Papperger laut Unternehmensprofil ab 2001 Geschäftsführer verschiedener Tochtergesellschaften des Unternehmensbereichs Defence.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a8887f614647359f"
+      ],
+      "evidence": "Auszug: 'Nach einigen weiterführenden Stationen in diesem Bereich war er von 2001 an Geschäftsführer verschiedener Tochtergesellschaften des Unternehmensbereichs Defence.'",
+      "location": "Eintrag Armin Papperger, Absatz 1",
+      "uncertainty": "Einzelne Gesellschaften nicht genannt.",
+      "proposed_depth": "B",
+      "depth_reason": "Werdegang"
+    },
+    {
+      "id": "H-05",
+      "statement": "Im Juli 2007 wurde Papperger laut Unternehmensprofil zum Geschäftsbereichsleiter Waffe und Munition ernannt.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a8887f614647359f"
+      ],
+      "evidence": "Auszug: 'Im Juli 2007 wurde er zum Geschäftsbereichsleiter Waffe und Munition ernannt.'",
+      "location": "Eintrag Armin Papperger, Absatz 1",
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Werdegang"
+    },
+    {
+      "id": "H-06",
+      "statement": "Anfang 2010 übernahm Papperger laut Unternehmensprofil die Verantwortung für die Geschäftsbereiche Fahrzeugsysteme sowie Waffe und Munition im Bereichsvorstand Defence.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a8887f614647359f"
+      ],
+      "evidence": "Auszug: 'Anfang 2010 übernahm Papperger die Verantwortung für die Geschäftsbereiche Fahrzeugsysteme sowie Waffe und Munition im Bereichsvorstand Defence.'",
+      "location": "Eintrag Armin Papperger, Absatz 1",
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Werdegang"
+    },
+    {
+      "id": "H-07",
+      "statement": "Seit 1. Januar 2012 gehört Papperger dem Vorstand der Rheinmetall AG an; ein Jahr später (1. Januar 2013) übernahm er laut Unternehmensprofil den Vorstandsvorsitz.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a8887f614647359f"
+      ],
+      "evidence": "Paraphrase: 'Seit 1. Januar 2012 ist Armin Papperger Mitglied des Vorstands der Rheinmetall AG' sowie 'Vorsitzender des Vorstands seit 1. Januar 2013'.",
+      "location": "Eintrag Armin Papperger, Absatz 1 und Kopfdaten",
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Werdegang"
+    },
+    {
+      "id": "H-08",
+      "statement": "Papperger übt laut Unternehmenswebsite Aufsichtsgremien-Mandate in Konzerngesellschaften aus: Vorsitz bei Rheinmetall Automotive AG, Rheinmetall Landsysteme GmbH, Rheinmetall MAN Military Vehicles GmbH, Rheinmetall Denel Munition (Pty) Ltd. und Rheinmetall Waffe Munition GmbH; Mitglied bei Rheinmetall Expal Munitions S.A.U.; Präsident des Verwaltungsrats der Rheinmetall Air Defence AG.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a8887f614647359f"
+      ],
+      "evidence": "Paraphrase: Abschnitt 'Mandate – Mitgliedschaft in Aufsichtsgremien', Eintrag Armin Papperger.",
+      "location": "Seite 'Der Vorstand der Rheinmetall AG', Abschnitt 'Mandate'",
+      "uncertainty": "Die Rheinmetall Automotive AG gehört zum zum Verkauf stehenden zivilen Geschäft (Kaufvertrag 03.06.2026, Vollzug noch offen); Mandatsstand nach Closing nicht geprüft.",
+      "proposed_depth": "A",
+      "depth_reason": "Verantwortung/Mandate"
+    },
+    {
+      "id": "H-09",
+      "statement": "Papperger beschrieb bei Ankündigung der NVL-Übernahme (15.09.2025) die Zielrichtung: Rheinmetall werde künftig ein relevanter Akteur zu Lande, zu Wasser, in der Luft und im Weltraum und damit 'ein domänenübergreifendes Systemhaus'.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-0b6a8c7f7a47ed28"
+      ],
+      "evidence": "Auszug: 'Armin Papperger, CEO of Rheinmetall AG: “In future, we will be a relevant player on land, on water, in the air and in space. Rheinmetall is thus developing into a cross-domain system house”.'",
+      "location": "Pressemitteilung vom 15.09.2025, Zitat im Text",
+      "uncertainty": "Zitat des CEO in einer Unternehmensmitteilung, Aussageursprung: Papperger/Unternehmen.",
+      "proposed_depth": "A",
+      "depth_reason": "Strategische Linie laut CEO"
+    },
+    {
+      "id": "H-M01",
+      "statement": "Das Handelsblatt veröffentlichte am 22.09.2026 ein Interview mit Armin Papperger (Autorin Kirsten Ludowig, Titel 'Schlafen Sie eigentlich noch, Herr Papperger?'); laut Anreißer erklärt er, warum ihn ein negativer Cashflow nicht beunruhigt, und weist Kritik zurück, der Konzern sei zu stark auf ihn zugeschnitten; die Eingangsfrage nennt (Redaktionsformulierung) das Ziel, den Umsatz bis 2030 auf 50 Mrd. Euro zu verfünffachen.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-1e5add6204530ccc"
+      ],
+      "evidence": "Auszug: 'Im Interview erklärt der Chef von Rheinmetall, warum ihn ein negativer Cashflow nicht beunruhigt. Kritik, wonach der Rüstungskonzern zu stark auf ihn zugeschnitten sei, weist er zurück.' (22.09.2026, 14:36 Uhr) sowie Bildunterschrift mit Kurzzitat.",
+      "location": "Artikelkopf (Anreißer), Bildunterschrift und Eingangsfrage",
+      "uncertainty": "Bezahlinhalt: nur Anreißer, Bildunterschrift und Eingangsfrage waren frei lesbar; der Rest des Interviews wurde nicht gelesen. Keine Aussagen über den Teaser hinaus.",
+      "proposed_depth": "A",
+      "depth_reason": "Medienpräsenz (Interview)"
+    },
+    {
+      "id": "H-M02",
+      "statement": "Im Euronews-Interview (veröffentlicht 17.09.2026, laut Euronews am Rande des Kiellegens des dritten Flottendienstboots Typ 424 in Wolgast) sagte Papperger: Die Raketenbestände in Deutschland seien weiterhin niedrig; Skyranger-Serienlieferungen müssten laut Vertrag 2027 beginnen, es gebe nur minimale Verzögerungen, die Kapazität solle ab Ende 2027 bis zu 400 Systeme pro Jahr betragen; die Joint Ventures mit Destinus (Marschflugkörper) und mit Lockheed Martin (Artillerieraketen) stünden kurz vor der Unterzeichnung, ein erster Marschflugkörper-Auftrag werde Ende 2026/Anfang 2027 erwartet; Rheinmetall beschäftige ohne den zivilen Bereich rund 34.000 Personen, wachse netto um rund 10.000 pro Jahr und wolle bis 2030 70.000 erreichen; das Unternehmen betreibe in Bremen ein Forschungszentrum für humanoide Roboter (noch keine Serienprodukte) und investiere stark in Raumfahrt.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-aaaf59c399a65ff2"
+      ],
+      "evidence": "Paraphrase (Interviewantworten im Wortlaut englischer Übersetzung): 'These two joint ventures are in the absolute final stage before signature, and we expect to receive the first order for cruise missiles at the end of this year or the beginning of next year.' / 'excluding the civil sector, around 34,000 people work at Rheinmetall ... goal is to reach 70,000 by 2030' / 'Robots will come, that is absolutely clear. We have a research centre in Bremen for humanoid robots'.",
+      "location": "Interview, Fragen zu Raketenbeständen, Skyranger, Joint Ventures, Beschäftigung, Robotik",
+      "uncertainty": "Aussagen sind Papperger-Erwartungen und Pläne, keine bestätigten Verträge; Übersetzung/Redaktion durch Euronews. Kapazitätsangabe 'from the end of next year' bezieht sich auf das Veröffentlichungsjahr 2026.",
+      "proposed_depth": "A",
+      "depth_reason": "Medienpräsenz (Interview)"
+    },
+    {
+      "id": "H-M03",
+      "statement": "Die Börsen-Zeitung berichtete am 27.08.2026, Papperger habe in Kassel angekündigt, rund 270 Mio. EUR in Nordhessen zu investieren; 'Kassel wird das größte Panzerwerk Europas' (Beschäftigte von rund 2.200 auf rund 3.500), die Belegschaft des Konzerns solle bis 2030 auf rund 70.000 wachsen, und er setze bald auf einen milliardenschweren Bundesauftrag für den Radpanzer Boxer (Projekt Arminius; erster Auftrag für Rheinmetall laut Papperger rund 12,4 Mrd. EUR).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-fa3be73251a7e9c6"
+      ],
+      "evidence": "Auszug/Paraphrase: '„Kassel wird das größte Panzerwerk Europas“, kündigte Papperger an. Die Zahl der Beschäftigten solle von aktuell rund 2200 auf rund 3500 Menschen wachsen ... Insgesamt wolle Rheinmetall die Belegschaft bis zum Jahr 2030 auf rund 70.000 Menschen ausbauen.'",
+      "location": "Artikel vom 27.08.2026, Absätze 2–4",
+      "uncertainty": "Berichterstattung über eine öffentliche Ankündigung; Planwerte, keine Vollzugsmeldung.",
+      "proposed_depth": "A",
+      "depth_reason": "Medienpräsenz (öffentliche Äußerung)"
+    },
+    {
+      "id": "H-M04",
+      "statement": "Laut dpa-Meldung (SCMP, 09.08.2026) sagte Papperger am Sonntag (09.08.2026), 'Kneifen' sei in seinem Bereich keine Option: 'These jobs must be done and anyone that can’t take the pressure doesn’t belong in this job'; der Konzernchef lasse sich nach den Angaben der Meldung trotz einer Vielzahl von Drohungen nicht einschüchtern.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-cba7c69a4b9f251e"
+      ],
+      "evidence": "Auszug: '“These jobs must be done and anyone that can’t take the pressure doesn’t belong in this job,” Papperger said.' / 'The head of German arms giant Rheinmetall is refusing to be intimidated despite round-the-clock security due to a litany of threats to his safety.'",
+      "location": "Artikelkopf (Untertitel) und Einleitung",
+      "uncertainty": "Von dem 2-Minuten-Artikel war nur Titel, Untertitel und Einleitung abrufbar; Kontext (Medium, Anlass der Äußerung) nicht gelesen. Bezug auf mutmaßliche russische Drohungen laut Titel nicht weiter belegt.",
+      "proposed_depth": "B",
+      "depth_reason": "Medienpräsenz (Aussage)"
+    },
+    {
+      "id": "H-M05",
+      "statement": "In der Rheinmetall-Pressemitteilung zum Halbjahresbericht (06.08.2026) wird Papperger zitiert: Der Konzern habe Rekordwachstum und sei auf bestem Wege, die Jahresziele zu erreichen; die operative Marge im zweiten Quartal sei mit 17,1 % ein neuer Höchstwert; die Book-to-Bill-Ratio liege über 3; im Marinebereich arbeite man daran, vorhandene Aufträge zu erfüllen und international neue Bestellungen zu gewinnen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-5b640196f4e87dad"
+      ],
+      "evidence": "Auszug: '„Wir haben ein Rekordwachstum und sind auf bestem Wege, unsere nach wie vor sehr ehrgeizigen Jahresziele zu erreichen.“ ... „Im zweiten Quartal konnten wir die operative Ergebnismarge sogar auf 17,1% steigern – ein neuer Höchstwert.“ ... „Unsere Book-to-Bill-Ratio ist mit einem Wert größer 3 bemerkenswert hoch“'.",
+      "location": "Pressemitteilung, Zitate Armin Papperger (Absätze 5–7)",
+      "uncertainty": "Unternehmensmitteilung mit CEO-Zitat; Aussagen sind Herstellerangaben, Marinebezug ohne Bezug auf F126 im Zitat.",
+      "proposed_depth": "A",
+      "depth_reason": "Offizielle Verlautbarung"
+    },
+    {
+      "id": "H-M06",
+      "statement": "In der Rheinmetall-Pressemitteilung vom 06.10.2026 zum SAR-Satellitenprogramm SPOCK 1 wird Papperger zitiert: Weniger als ein Jahr nach Vertragsunterzeichnung erhalte die Bundeswehr Zugriff auf eine dedizierte SAR-Aufklärungsfähigkeit; der Produktionsstart in Neuss zeige, dass Rheinmetall Raumfahrttechnik in Deutschland industriell skalieren könne.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-04cc080af88f833d"
+      ],
+      "evidence": "Paraphrase des CEO-Zitats: 'Less than a year after the contract was signed, the German Armed Forces are gaining direct access to a dedicated SAR reconnaissance capability. The successful start of production in Neuss demonstrates that we not only provide innovative space technology, but can also scale it up industrially in Germany'.",
+      "location": "Pressemitteilung vom 06.10.2026, Zitat Armin Papperger (Absatz 3)",
+      "uncertainty": "Herstellerzitat; Zahl der verfügbaren Satelliten nicht genannt.",
+      "proposed_depth": "A",
+      "depth_reason": "Offizielle Verlautbarung"
+    },
+    {
+      "id": "H-M07",
+      "statement": "In der Rheinmetall-Pressemitteilung vom 16.10.2026 zur neuen Mittelkaliber-Fertigung in Albacete (Spanien) wird Papperger zitiert: Albacete sei eines der zentralen Kompetenzzentren für Munitionskomponenten und Waffensystemfertigung; man bringe eine neue Fähigkeit an den Standort, um die Mittelkaliber-Produktion deutlich zu erhöhen (Teil des Projekts 'Firepower').",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-65384ba645706eba"
+      ],
+      "evidence": "Auszug: 'Armin Papperger, Chief Executive of Rheinmetall AG: “Albacete is one of our key centres of expertise in the field of ammunition components and weapon systems manufacturing. ...” '",
+      "location": "Pressemitteilung vom 16.10.2026, Zitat Armin Papperger (Absatz 3)",
+      "uncertainty": "Herstellerzitat; Eröffnungsveranstaltung laut Text mit hochrangigen Gästen, Datum des Festakts nicht separat genannt.",
+      "proposed_depth": "A",
+      "depth_reason": "Offizielle Verlautbarung"
+    },
+    {
+      "id": "H-M08",
+      "statement": "Das Handelsblatt (Roman Tyborski, Markus Fasse) veröffentlichte am 04.09.2026 die Analyse 'Wie Armin Papperger bei Rheinmetall an seine Grenzen stößt'; laut Anreißer bekomme die Wachstumsgeschichte von Rheinmetall 'Kratzer', im Mittelpunkt der Kritik stehe der Konzernchef, und die Redaktion fragt, ob er sich überschätzt habe.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-c2d3f808da3970cb"
+      ],
+      "evidence": "Auszug: 'Risse im Rüstungswunder von Düsseldorf: Die Wachstumsgeschichte von Rheinmetall bekommt Kratzer. Im Mittelpunkt der Kritik steht Konzernchef Armin Papperger. Hat er sich überschätzt?'",
+      "location": "Artikelkopf (Anreißer)",
+      "uncertainty": "Redaktionelle Einordnung/Kritik des Handelsblatt, keine Aussage Pappergers. Bezahlinhalt: nur Anreißer und Eingang gelesen; Belege der Kritik im Volltext nicht geprüft.",
+      "proposed_depth": "A",
+      "depth_reason": "Medienpräsenz (Artikel über die Person)"
+    },
+    {
+      "id": "H-M09",
+      "statement": "Das Finanzportal stock3 berichtete am 26.06.2026, Papperger habe auf das Durchsickern der F126-Entscheidung des Bundes laut Financial Times 'erstaunt' reagiert (Beschreibung einer mit ihm vertrauten Person); ein Rheinmetall-Manager habe von einem 'Desaster' gesprochen.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-250325098e8c729a"
+      ],
+      "evidence": "Auszug: 'Als in Berlin durchsickerte, dass das Verteidigungsministerium das milliardenschwere F126-Fregattenprogramm stoppen würde, soll der Konzernchef fassungslos reagiert haben. Eine mit ihm vertraute Person beschrieb ihn laut der Financial Times als „erstaunt“, ein Rheinmetall-Manager sprach von einem „Desaster“'.",
+      "location": "Artikel vom 26.06.2026, Absatz 'Als in Berlin durchsickerte ...'",
+      "uncertainty": "Zweitbericht: stock3 zitiert die Financial Times (FT-Artikel nicht geöffnet); anonyme Quellen, keine Äußerung Pappergers im Wortlaut. Das Finanzportal weist auf mögliche Interessenkonflikte hin.",
+      "proposed_depth": "B",
+      "depth_reason": "Medienpräsenz (Artikel über die Person)"
+    }
+  ],
+  "source_proposals": [
+    {
+      "id": "S-98082c5c6a5443c4",
+      "name": "Rheinmetall AG (Website)",
+      "title": "Startseite: Der Technologiekonzern für Sicherheit und Verteidigung",
+      "url": "https://www.rheinmetall.com",
+      "published_date": null,
+      "accessed_date": "2026-10-19",
+      "source_kind": "Unternehmenswebsite"
+    },
+    {
+      "id": "S-559e0ac19cabd1d0",
+      "name": "Rheinmetall AG",
+      "title": "Financial report: Figures FY 2025 – Rheinmetall on course for success",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/03/2026-03-11-rheinmetall-presents-annual-report-for-2025",
+      "published_date": "2026-03-11",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-be9afa65076fd992",
+      "name": "Rheinmetall AG",
+      "title": "Financial report for Q1 2026 – Profitable growth and full order books",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/05/2026-05-07-rheinmetall-news-quarterly-statement-q1",
+      "published_date": "2026-05-07",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-5b640196f4e87dad",
+      "name": "Rheinmetall AG",
+      "title": "Finanzbericht zum 1. Halbjahr 2026 – Starkes Umsatzwachstum und Profitabilität auf Rekordniveau",
+      "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/08/2026-08-06-rheinmetall-pressemitteilung-halbjahresfinanzbericht-h1",
+      "published_date": "2026-08-06",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-f67a3aa803cc0e9f",
+      "name": "Rheinmetall AG, Investor Relations",
+      "title": "Basisdaten der Rheinmetall-Aktie",
+      "url": "https://www.rheinmetall.com/de/investor-relations/aktie/basisdaten",
+      "published_date": null,
+      "accessed_date": "2026-10-19",
+      "source_kind": "Investor-Relations-Seite"
+    },
+    {
+      "id": "S-0bd71507c5c59e04",
+      "name": "Rheinmetall AG, Investor Relations",
+      "title": "Financial calendar",
+      "url": "https://www.rheinmetall.com/en/investor-relations/calendar-and-events/financial-calendar",
+      "published_date": null,
+      "accessed_date": "2026-10-19",
+      "source_kind": "Investor-Relations-Seite"
+    },
+    {
+      "id": "S-a6309db699669326",
+      "name": "Rheinmetall AG, Investor Relations",
+      "title": "Capital Markets Days",
+      "url": "https://www.rheinmetall.com/en/investor-relations/calendar-and-events/capital-markets-day",
+      "published_date": null,
+      "accessed_date": "2026-10-19",
+      "source_kind": "Investor-Relations-Seite"
+    },
+    {
+      "id": "S-c72d2f16b02e496c",
+      "name": "Rheinmetall AG, Investor Relations",
+      "title": "Dividend",
+      "url": "https://www.rheinmetall.com/en/investor-relations/share/dividend",
+      "published_date": null,
+      "accessed_date": "2026-10-19",
+      "source_kind": "Investor-Relations-Seite"
+    },
+    {
+      "id": "S-a8887f614647359f",
+      "name": "Rheinmetall AG",
+      "title": "Der Vorstand der Rheinmetall AG",
+      "url": "https://www.rheinmetall.com/de/unternehmen/gremien/vorstand/vorstand-uebersicht",
+      "published_date": null,
+      "accessed_date": "2026-10-19",
+      "source_kind": "Unternehmenswebsite"
+    },
+    {
+      "id": "S-1f77cb6f898210ce",
+      "name": "Rheinmetall AG, Investor Relations",
+      "title": "Closing Gaps – Investor Presentation September 2026",
+      "url": "https://ir.rheinmetall.com/media/document/4ce7ca35-7088-4365-88d6-b43a0aa5cde6/assets/Rheinmetall_AG_2026_Investor_Presentation_September.pdf",
+      "published_date": null,
+      "accessed_date": "2026-10-19",
+      "source_kind": "Investorenpräsentation (Unternehmen)"
+    },
+    {
+      "id": "S-3b33c5118cdc79d2",
+      "name": "Rheinmetall AG",
+      "title": "Verkauf besiegelt: Rheinmetall trennt sich von ziviler Sparte und konzentriert sich auf das Defence-Geschäft",
+      "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/06/2026-06-03-verkauf-besiegelt-rheinmetall-trennt-sich-von-ziviler-sparte.pdf",
+      "published_date": "2026-06-03",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-0b6a8c7f7a47ed28",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall reaches agreement with Lürssen Group on acquisition of NVL",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/09/2025-09-15-rheinmetall-reaches-agreement-with-luerssen-on-acquisition-of-naval-vessels-luerssen-nvl",
+      "published_date": "2025-09-15",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-042b26990fdc2a9d",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall takes over NVL – Closing completed",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/03/2026-03-02-rheinmetall-takes-over-nvl",
+      "published_date": "2026-03-02",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-3ab860d4e2d076b2",
+      "name": "Rheinmetall AG (Weapon and Ammunition)",
+      "title": "Feierliche Eröffnung des neuen Munitionswerks in Unterlüß",
+      "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2025/09/2025-09-05-werkseroeffnung-in-unterluess.pdf",
+      "published_date": "2025-09-05",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-1db9c54bc6663d61",
+      "name": "Rheinmetall AG (Weapon and Ammunition)",
+      "title": "Rheinmetall erwirbt Munitionsspezialisten Muni Berka GmbH",
+      "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2025/12/2025-12-10_rheinmetall-erwirbt-muni-berka.pdf",
+      "published_date": "2025-12-10",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-aa782bd6fedfefb7",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall and ICEYE win billion-euro contract for space reconnaissance",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-18-rheinmetall-and-iceye-win-billion-euro-contract-for-space-reconnaissance",
+      "published_date": "2025-12-18",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-110cc749cec119a4",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall and KNDS to supply 200 armoured fighting vehicles",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-19-rheinmetall-and-knds-to-supply-200-armoured-fighting-vehicles",
+      "published_date": "2025-12-19",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-553789c22ec26699",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall receives major order from the Bundeswehr for Puma ammunition",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/01/2026-01-05-rheinmetall-receives-major-order-from-the-bundeswehr-for-puma-ammunition",
+      "published_date": "2026-01-05",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-a3892fe72afc70a4",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall und Destinus gründen Joint Venture für Raketensysteme",
+      "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/04/2026-04-13-rheinmetall-und-destinus-gruenden-joint-venture-fuer-raketensysteme",
+      "published_date": "2026-04-13",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-438937e9317397d7",
+      "name": "Rheinmetall AG",
+      "title": "Großauftrag im Milliardenbereich: Rheinmetall liefert der Bundeswehr Loitering Munition FV-014",
+      "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/04/2026-04-22-rheinmetall-gewinnt-grossauftrag-im-drohnenbereich",
+      "published_date": "2026-04-22",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-56fc0186af26e860",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall issues a €500 million bond",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/05/2026-05-28-rheinmetall-issues-a-500-million-bond",
+      "published_date": "2026-05-28",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-8f63be7e3308f827",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall liefert mehr als 2.000 UTF-LKW an die Bundeswehr",
+      "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/05/2026-05-28-rheinmetall-liefert-mehr-als-2-000-utf-lkw-an-die-bundeswehr",
+      "published_date": "2026-05-28",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-7c51e921c055e64c",
+      "name": "Rheinmetall AG",
+      "title": "Major historic international contract for Rheinmetall: Romania orders Lynx combat vehicles, vessels and air defence systems worth a total of €5.7 billion",
+      "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/06/2026-06-02-major-historic-contract-in-romania-worth-5-7-billion.pdf",
+      "published_date": "2026-06-02",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-749ebb1bb3cf3947",
+      "name": "Rheinmetall AG",
+      "title": "Closing erfolgt: Rheinmetall übernimmt Mehrheitsbeteiligung an DOK-ING",
+      "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/07/2026-07-01-rheinmetall-uebernimmt-mehrheitsbeteiligung-an-dok-ing",
+      "published_date": "2026-07-01",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-078c6e124a0a035b",
+      "name": "Rheinmetall AG (Naval Systems)",
+      "title": "Rheinmetall Unveils GMF 140: The Next Generation of Multi-Mission Naval Combat Power",
+      "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/08/2026-08-03-rheinmetall-presents-the-gmf140-the-next-generation-frigate.pdf",
+      "published_date": "2026-08-03",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-a6f316c0deb5a97a",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall and Argotec launch their first satellite into space with SpaceX",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-02-rheinmetall-and-argotec-launch-their-first-satellite-into-space-with-spacex",
+      "published_date": "2026-10-02",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-04cc080af88f833d",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall provides the Bundeswehr with access to SAR satellites",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-06-rheinmetall-iceye-space-solutions-provides-the-bundeswehr-with-access-to-sar-satellites",
+      "published_date": "2026-10-06",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-be6a33c1caf2a631",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall doubles its syndicated credit facility",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-08-rheinmetall-doubles-its-syndicated-credit-facility",
+      "published_date": "2026-10-08",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-65384ba645706eba",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall opens modern medium-calibre production facility in Albacete",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-16-rheinmetall-opens-modern-medium-calibre-production-facility-in-albacete",
+      "published_date": "2026-10-16",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-91be1f9c04508de5",
+      "name": "Rheinmetall AG",
+      "title": "Rheinmetall to take over the Mangalia shipyard in Romania",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-19-rheinmetall-acquires-the-mangalia-shipyard-in-romania",
+      "published_date": "2026-10-19",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Pressemitteilung (Unternehmen)"
+    },
+    {
+      "id": "S-2a52354ff7d7f7f4",
+      "name": "Börsen-Zeitung",
+      "title": "Rheinmetall strebt Position als Rundumanbieter mit 50 Mrd. Euro Umsatz an",
+      "url": "https://www.boersen-zeitung.de/unternehmen-branchen/rheinmetall-strebt-position-als-rundumanbieter-mit-50-mrd-euro-umsatz-an",
+      "published_date": "2025-11-18",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Wirtschaftsmedium"
+    },
+    {
+      "id": "S-fa3be73251a7e9c6",
+      "name": "Börsen-Zeitung",
+      "title": "Rheinmetall will Kassel zum „größten Panzerwerk Europas“ ausbauen",
+      "url": "https://www.boersen-zeitung.de/unternehmen-branchen/rheinmetall-will-kassel-zum-groessten-panzerwerk-europas-ausbauen",
+      "published_date": "2026-08-27",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Wirtschaftsmedium"
+    },
+    {
+      "id": "S-c85fbd35697b1263",
+      "name": "gCaptain (Reuters-Meldung)",
+      "title": "Germany Ditches Delayed Frigate Program in Major Blow to Rheinmetall",
+      "url": "https://gcaptain.com/germany-ditches-delayed-frigate-program-in-major-blow-to-rheinmetall/",
+      "published_date": "2026-06-24",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Nachrichtenagentur (Reuters via Fachmedium)"
+    },
+    {
+      "id": "S-0bf21d6b5d52b9d5",
+      "name": "Breaking Defense",
+      "title": "Rheinmetall projects $346 million naval loss after F126 frigate cancellation",
+      "url": "https://breakingdefense.com/2026/08/rheinmetall-projects-346-million-naval-loss-after-f126-frigate-cancellation/",
+      "published_date": "2026-08-06",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Fachmedium"
+    },
+    {
+      "id": "S-7f6de13c77cb340f",
+      "name": "hessenschau.de (hr)",
+      "title": "Rheinmetall übernimmt Lok-Werk von Alstom in Kassel",
+      "url": "https://www.hessenschau.de/wirtschaft/rheinmetall-uebernimmt-lok-werk-von-alstom-in-kassel-v1,alstom-rheinmetall-100.html",
+      "published_date": "2026-10-06",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Regionalmedium (öffentlich-rechtlich)"
+    },
+    {
+      "id": "S-04b4522db1cf4f65",
+      "name": "Militarnyi",
+      "title": "Rheinmetall Apologizes for CEO’s Comments About “Ukrainian Housewives With 3D Printers”",
+      "url": "https://militarnyi.com/en/news/rheinmetall-apologizes-for-ceo-s-comments-about-ukrainian-housewives-with-3d-printers/",
+      "published_date": "2026-03-29",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Fachmedium"
+    },
+    {
+      "id": "S-aaaf59c399a65ff2",
+      "name": "Euronews",
+      "title": "Germany's missile stockpiles 'worryingly low', Rheinmetall CEO tells Euronews",
+      "url": "https://www.euronews.com/business/2026/09/17/rheinmetall-chief-papperger-robots-are-coming",
+      "published_date": "2026-09-17",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Nachrichtenmedium"
+    },
+    {
+      "id": "S-1e5add6204530ccc",
+      "name": "Handelsblatt",
+      "title": "Rüstung: Rheinmetall wächst – Schlafen Sie eigentlich noch, Herr Papperger?",
+      "url": "https://www.handelsblatt.com/unternehmen/industrie/ruestung-rheinmetall-waechst-schlafen-sie-noch-herr-papperger/100252952.html",
+      "published_date": "2026-09-22",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Wirtschaftsmedium (Bezahlinhalt)"
+    },
+    {
+      "id": "S-c2d3f808da3970cb",
+      "name": "Handelsblatt",
+      "title": "Rüstung: Wie Armin Papperger bei Rheinmetall an seine Grenzen stößt",
+      "url": "https://www.handelsblatt.com/unternehmen/industrie/ruestung-wie-armin-papperger-bei-rheinmetall-an-seine-grenzen-stoesst/100251097.html",
+      "published_date": "2026-09-04",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Wirtschaftsmedium (Bezahlinhalt)"
+    },
+    {
+      "id": "S-cba7c69a4b9f251e",
+      "name": "South China Morning Post (dpa)",
+      "title": "German arms giant boss says no ‘chickening out’ amid alleged Russian threats",
+      "url": "https://www.scmp.com/news/world/europe/article/3363426/german-arms-giant-boss-says-no-chickening-out-amid-alleged-russian-threats",
+      "published_date": "2026-08-09",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Nachrichtenmedium (dpa-Übernahme)"
+    },
+    {
+      "id": "S-250325098e8c729a",
+      "name": "stock3",
+      "title": "RHEINMETALL – Entscheidung aus Berlin machte Papperger fassungslos",
+      "url": "https://stock3.com/news/rheinmetall-entscheidung-aus-berlin-machte-papperger-fassungslos-17134598",
+      "published_date": "2026-06-26",
+      "accessed_date": "2026-10-19",
+      "source_kind": "Finanzportal (Zweitbericht)"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G-01",
+      "topic": "Gesprächspartner-Rolle",
+      "description": "Die Nutzerangabe nannte keine Position; Rolle und Amtszeit (CEO seit 2013, bestellt bis 31.12.2029) sind über die Rheinmetall-Website und Medienberichte verifiziert (H-02). Studienfach/Hochschule sind auf der Unternehmensseite nicht genannt und wurden nicht übernommen."
+    },
+    {
+      "id": "G-02",
+      "topic": "Medienpräsenz Juni–Oktober 2026",
+      "description": "Mehrere Treffer sind Bezahlinhalte (Handelsblatt-Interview 22.09.2026, Handelsblatt-Analyse 04.09.2026) oder nur teilweise abrufbar (SCMP/dpa 09.08.2026); dort wurden nur frei lesbare Teile verwendet. Die Handelsblatt-Meldung zum Personenschutz (um 09.08.2026) lieferte nach Abruf keinen lesbaren Text und wurde nicht verwendet. Das Transkript der Q2-Analystenkonferenz (06.08.2026) war nicht auffindbar; Medienzitate der Telefonkonferenz wurden nicht übernommen. Directors'-Dealings-Meldungen wurden bewusst nicht aufgenommen (persönliche Vermögensdisposition). Die Auswahl ist beruflich relevant, keine vollständige Medienauswertung."
+    },
+    {
+      "id": "G-03",
+      "topic": "Quellenzugriff",
+      "description": "Die Bundeswehr-Meldung zur Beendigung von F126 war als komprimierte Antwort nicht lesbar; Geschäftsbericht 2025 (PDF) lieferte HTTP 403. F126 ist daher über Reuters (gCaptain), Breaking Defense und den Rheinmetall-Halbjahresbericht belegt. Auch die Originalmeldung von The Atlantic (CEO-Interview März 2026) sowie die Financial Times wurden nicht geöffnet; Pravda.com.ua lieferte HTTP 403."
+    },
+    {
+      "id": "G-04",
+      "topic": "Zweitquellen",
+      "description": "Rumänien-Paket (5,7 Mrd. EUR), SPOCK 1, FV-014, Puma, Albacete, Mangalia und Kreditlinie beruhen auf Rheinmetall-Pressemitteilungen (Herstellerangaben) ohne geöffnete unabhängige Zweitquelle; Kunden- oder Behördendokumente wurden nicht gelesen."
+    },
+    {
+      "id": "G-05",
+      "topic": "Kennzahlen Stichtag",
+      "description": "Quartalszahlen Q3 2026 liegen nach dem Stichtag (05.11.2026). Letzter Bericht vor Stichtag ist der Halbjahresfinanzbericht 2026 (06.08.2026, Pressemitteilung gelesen; vollständiger PDF-Halbjahresbericht und Geschäftsbericht 2025 nicht geöffnet). Anzahl Beschäftigte: Startseite/CEO nennen rund 34.000 (fortgeführte Aktivitäten); Boilerplate älterer Pressemitteilungen (44.000/180 Standorte) ist veraltet."
+    },
+    {
+      "id": "G-06",
+      "topic": "Nicht geprüfte Hinweise",
+      "description": "Aus Suchzusammenfassungen bekannte, aber nicht geöffnete Hinweise (z. B. Ad-hoc-Meldung 04.05.2026, XM30-Entscheidung 2027, Skyranger-Lieferverzögerung laut Stern, Nov-2025-Rumänien-Lynx-Erwähnung der Börsen-Zeitung, Kaufpreis NVL laut Medien) wurden nicht als Fakten übernommen."
+    },
+    {
+      "id": "G-07",
+      "topic": "Abgrenzung",
+      "description": "Portfolio-, Cluster- und Marktfakten (z. B. Produkte, JV-Beteiligungen, Wettbewerber) liegen bei den zuständigen Rollen; die hier genannten Ereignisse und Segmentkennzahlen sind Basisfakten. Keine Themen laut Manifest (topics=[]); Seite-3-Marktthemen entfallen."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Firmenbasis (Website, Sitz, Selbstbeschreibung)",
+      "search_terms": "rheinmetall.com Startseite; Vorstandsseite",
+      "source_ids": [
+        "S-98082c5c6a5443c4",
+        "S-a8887f614647359f"
+      ],
+      "finding": "Sitz Düsseldorf, Website bestätigt, Selbstbeschreibung als integrierter Technologiekonzern/Systemhaus",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Finanzkennzahlen letztes Geschäftsjahr und Prognose",
+      "search_terms": "Rheinmetall Bilanzvorlage 2025, Geschäftsbericht 2025, Prognose 2026",
+      "source_ids": [
+        "S-559e0ac19cabd1d0",
+        "S-98082c5c6a5443c4"
+      ],
+      "finding": "GJ 2025 Umsatz 9.935 Mio. EUR, op. Ergebnis 1.841 Mio. EUR, Backlog 63,8 Mrd. EUR; Geschäftsbericht-PDF nicht abrufbar (403), Pressemitteilung gelesen",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Letzter Quartals-/Halbjahresbericht vor Stichtag",
+      "search_terms": "Rheinmetall Halbjahresfinanzbericht H1 2026; Q1 2026; Q2 vorläufig",
+      "source_ids": [
+        "S-5b640196f4e87dad",
+        "S-be9afa65076fd992",
+        "S-0bf21d6b5d52b9d5"
+      ],
+      "finding": "H1 2026 vollständig gelesen (Pressemitteilung); F126-bedingte Prognoseanpassung durch Breaking Defense bestätigt",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Börse, Indizes",
+      "search_terms": "Rheinmetall Aktie Basisdaten DAX EURO STOXX 50",
+      "source_ids": [
+        "S-f67a3aa803cc0e9f",
+        "S-3b33c5118cdc79d2"
+      ],
+      "finding": "DAX und EURO STOXX 50 laut IR; DAX seit März 2023 laut Unternehmensangabe",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Ereignisse Sept. 2025–Okt. 2026",
+      "search_terms": "Rheinmetall Übernahme 2026; Großauftrag Bundeswehr 2026; Rheinmetall Newsroom; Werk Eröffnung; Anleihe; Kreditlinie",
+      "source_ids": [
+        "S-3ab860d4e2d076b2",
+        "S-0b6a8c7f7a47ed28",
+        "S-042b26990fdc2a9d",
+        "S-aa782bd6fedfefb7",
+        "S-110cc749cec119a4",
+        "S-7c51e921c055e64c",
+        "S-3b33c5118cdc79d2",
+        "S-749ebb1bb3cf3947",
+        "S-078c6e124a0a035b",
+        "S-91be1f9c04508de5",
+        "S-65384ba645706eba",
+        "S-04cc080af88f833d",
+        "S-be6a33c1caf2a631"
+      ],
+      "finding": "Chronologie aus Rheinmetall-Newsroom und Pressemitteilungen mit medialer Gegenrecherche zu F126, Kassel/Alstom und CEO-Äußerungen",
+      "status": "geprüft mit Beleg (überwiegend Herstellerquellen)"
+    },
+    {
+      "topic": "Gegenrecherche (negative/kritische Entwicklungen)",
+      "search_terms": "F126 Stornierung Rheinmetall Aktie; Papperger Kritik; Atlantic Drohnen",
+      "source_ids": [
+        "S-c85fbd35697b1263",
+        "S-0bf21d6b5d52b9d5",
+        "S-c2d3f808da3970cb",
+        "S-04b4522db1cf4f65",
+        "S-250325098e8c729a"
+      ],
+      "finding": "F126-Aus, Prognoseanpassung und Kursreaktion belegt; CEO-Äußerung/Entschuldigung März 2026; Handelsblatt-Kritik (Teaser)",
+      "status": "geprüft mit Beleg (Bezahlinhalte nur teilweise)"
+    },
+    {
+      "topic": "Gesprächspartnerprofil Armin Papperger",
+      "search_terms": "Rheinmetall Vorstand Papperger Werdegang",
+      "source_ids": [
+        "S-a8887f614647359f",
+        "S-aaaf59c399a65ff2"
+      ],
+      "finding": "Rolle, Werdegang, Mandate belegt; Studienfach nicht auf Unternehmensseite",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Medienpräsenz Papperger 2026-06-19 bis 2026-10-19",
+      "search_terms": "Papperger Interview September/August 2026; Papperger Handelsblatt; Euronews; Kassel; dpa",
+      "source_ids": [
+        "S-aaaf59c399a65ff2",
+        "S-1e5add6204530ccc",
+        "S-fa3be73251a7e9c6",
+        "S-cba7c69a4b9f251e",
+        "S-5b640196f4e87dad",
+        "S-04cc080af88f833d",
+        "S-65384ba645706eba",
+        "S-c2d3f808da3970cb",
+        "S-250325098e8c729a"
+      ],
+      "finding": "Neun Einträge (4 eigene Äußerungen, 3 offizielle Verlautbarungen, 2 Artikel über die Person); Bezahlinhalte nur teilweise gelesen",
+      "status": "geprüft mit Beleg (teilweise Bezahl-/Zugriffsgrenzen)"
+    },
+    {
+      "topic": "Nicht geöffnet / nicht verwendet",
+      "search_terms": "Bundeswehr F126 Meldung; Geschäftsbericht 2025; Q2-Call-Transkript; Handelsblatt Personenschutz; Pravda",
+      "source_ids": [],
+      "finding": "Quellen nicht lesbar oder nicht gefunden (siehe gaps G-02, G-03)",
+      "status": "nicht zugänglich"
+    }
+  ],
+  "company_facts": [
+    {
+      "id": "cf-identity",
+      "label": "Sitz, Website und Selbstbeschreibung",
+      "claim_ids": [
+        "T-01"
+      ]
+    },
+    {
+      "id": "cf-history",
+      "label": "Gründung und DAX-Zugehörigkeit (Unternehmensangabe)",
+      "claim_ids": [
+        "T-02"
+      ]
+    },
+    {
+      "id": "cf-staff",
+      "label": "Beschäftigte und Standorte (Stand Juli 2026)",
+      "claim_ids": [
+        "T-03"
+      ]
+    },
+    {
+      "id": "cf-segments",
+      "label": "Berichtssegmente seit 01.01.2026",
+      "claim_ids": [
+        "T-04"
+      ]
+    },
+    {
+      "id": "cf-vs",
+      "label": "Vehicle Systems (Halbjahr 2026)",
+      "claim_ids": [
+        "T-05"
+      ]
+    },
+    {
+      "id": "cf-wa",
+      "label": "Weapon and Ammunition (Halbjahr 2026)",
+      "claim_ids": [
+        "T-06"
+      ]
+    },
+    {
+      "id": "cf-ad",
+      "label": "Air Defence (Halbjahr 2026)",
+      "claim_ids": [
+        "T-07"
+      ]
+    },
+    {
+      "id": "cf-ds",
+      "label": "Digital Systems (Halbjahr 2026)",
+      "claim_ids": [
+        "T-08"
+      ]
+    },
+    {
+      "id": "cf-ns",
+      "label": "Naval Systems (vier Monate bis 30.06.2026)",
+      "claim_ids": [
+        "T-09"
+      ]
+    },
+    {
+      "id": "cf-fy25",
+      "label": "Geschäftsjahr 2025: Kennzahlen und Dividendenvorschlag",
+      "claim_ids": [
+        "T-10",
+        "T-11"
+      ]
+    },
+    {
+      "id": "cf-q1",
+      "label": "1. Quartal 2026",
+      "claim_ids": [
+        "T-12"
+      ]
+    },
+    {
+      "id": "cf-h1",
+      "label": "Halbjahr 2026: Umsatz, Ergebnis, Aufträge, Cashflow",
+      "claim_ids": [
+        "T-13",
+        "T-14"
+      ]
+    },
+    {
+      "id": "cf-guidance",
+      "label": "Prognose 2026 (angepasst am 06.08.2026; frühere Prognose zum Vergleich)",
+      "claim_ids": [
+        "T-16",
+        "T-15"
+      ]
+    },
+    {
+      "id": "cf-listing",
+      "label": "Börsenplatz und Indizes",
+      "claim_ids": [
+        "T-17"
+      ]
+    },
+    {
+      "id": "cf-targets",
+      "label": "Mittelfristziele und Planwerte (Unternehmensangaben)",
+      "claim_ids": [
+        "T-18",
+        "T-19"
+      ]
+    },
+    {
+      "id": "cf-board",
+      "label": "Vorstand der Rheinmetall AG",
+      "claim_ids": [
+        "T-21"
+      ]
+    },
+    {
+      "id": "cf-dates",
+      "label": "Angekündigte Termine nach dem Stichtag",
+      "claim_ids": [
+        "T-20"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "ev-unter",
+      "label": "Werk Unterlüß eröffnet (laut Unternehmen: Munitionswerk)",
+      "date": "2025-09-05",
+      "claim_ids": [
+        "T-E01"
+      ]
+    },
+    {
+      "id": "ev-nvl_ann",
+      "label": "NVL-Übernahme angekündigt (Eckpunkte vereinbart)",
+      "date": "2025-09-15",
+      "claim_ids": [
+        "T-E02"
+      ]
+    },
+    {
+      "id": "ev-berka",
+      "label": "Übernahme Muni Berka vertraglich vereinbart",
+      "date": "2025-12-10",
+      "claim_ids": [
+        "T-E03"
+      ]
+    },
+    {
+      "id": "ev-iceye",
+      "label": "SPOCK-1-Auftrag über rund 1,7 Mrd. EUR (laut Unternehmen)",
+      "date": "2025-12-18",
+      "claim_ids": [
+        "T-E04"
+      ]
+    },
+    {
+      "id": "ev-puma",
+      "label": "200 weitere Puma über PSM beauftragt (laut Unternehmen)",
+      "date": "2025-12-19",
+      "claim_ids": [
+        "T-E05"
+      ]
+    },
+    {
+      "id": "ev-pumaammo",
+      "label": "Puma-Munition: Rahmenvertrag erweitert (laut Unternehmen)",
+      "date": "2026-01-05",
+      "claim_ids": [
+        "T-E06"
+      ]
+    },
+    {
+      "id": "ev-nvl_close",
+      "label": "NVL-Übernahme vollzogen (Division Naval Systems)",
+      "date": "2026-03-02",
+      "claim_ids": [
+        "T-E07"
+      ]
+    },
+    {
+      "id": "ev-fy25",
+      "label": "Zahlen Geschäftsjahr 2025 veröffentlicht",
+      "date": "2026-03-11",
+      "claim_ids": [
+        "T-E08",
+        "T-10"
+      ]
+    },
+    {
+      "id": "ev-atlantic",
+      "label": "Entschuldigung nach CEO-Äußerung zu ukrainischen Drohnenherstellern (laut Medien)",
+      "date": "2026-03-29",
+      "claim_ids": [
+        "T-E09"
+      ]
+    },
+    {
+      "id": "ev-destinus",
+      "label": "JV mit Destinus für Raketensysteme angekündigt",
+      "date": "2026-04-13",
+      "claim_ids": [
+        "T-E10"
+      ]
+    },
+    {
+      "id": "ev-fv014",
+      "label": "Bundeswehr-Rahmenvertrag Loitering Munition FV-014 (laut Unternehmen)",
+      "date": "2026-04-22",
+      "claim_ids": [
+        "T-E11"
+      ]
+    },
+    {
+      "id": "ev-q1",
+      "label": "Quartalszahlen Q1 2026 veröffentlicht",
+      "date": "2026-05-07",
+      "claim_ids": [
+        "T-E12",
+        "T-12"
+      ]
+    },
+    {
+      "id": "ev-bond",
+      "label": "Anleihe über 500 Mio. EUR platziert",
+      "date": "2026-05-28",
+      "claim_ids": [
+        "T-E13"
+      ]
+    },
+    {
+      "id": "ev-trucks",
+      "label": "Bundeswehr ruft über 2.000 Lkw ab (laut Unternehmen)",
+      "date": "2026-05-28",
+      "claim_ids": [
+        "T-E14"
+      ]
+    },
+    {
+      "id": "ev-romania",
+      "label": "Rumänien-Paket über 5,7 Mrd. EUR (laut Unternehmen)",
+      "date": "2026-06-02",
+      "claim_ids": [
+        "T-E15"
+      ]
+    },
+    {
+      "id": "ev-aeq",
+      "label": "Verkauf von Power Systems an AEQUITA unterzeichnet (Vollzug geplant)",
+      "date": "2026-06-03",
+      "claim_ids": [
+        "T-E16"
+      ]
+    },
+    {
+      "id": "ev-f126",
+      "label": "Bund beendet Fregattenprojekt F126; Aktie fällt (laut Reuters)",
+      "date": "2026-06-24",
+      "claim_ids": [
+        "T-E17"
+      ]
+    },
+    {
+      "id": "ev-doking",
+      "label": "DOK-ING-Mehrheitsbeteiligung vollzogen (laut Unternehmen)",
+      "date": "2026-07-01",
+      "claim_ids": [
+        "T-E18"
+      ]
+    },
+    {
+      "id": "ev-gmf",
+      "label": "Fregatte GMF 140 vorgestellt (kein Kunde benannt)",
+      "date": "2026-08-03",
+      "claim_ids": [
+        "T-E19"
+      ]
+    },
+    {
+      "id": "ev-h1",
+      "label": "Halbjahreszahlen 2026 und angepasste Prognose",
+      "date": "2026-08-06",
+      "claim_ids": [
+        "T-E20",
+        "T-13",
+        "T-14",
+        "T-16"
+      ]
+    },
+    {
+      "id": "ev-kassel",
+      "label": "Kassel: Investitionsplan über rund 270 Mio. EUR angekündigt (laut Börsen-Zeitung)",
+      "date": "2026-08-27",
+      "claim_ids": [
+        "T-E21"
+      ]
+    },
+    {
+      "id": "ev-argotec",
+      "label": "Erster Satellit mit Argotec gestartet (laut Unternehmen)",
+      "date": "2026-10-01",
+      "claim_ids": [
+        "T-E22"
+      ]
+    },
+    {
+      "id": "ev-hessen",
+      "label": "Alstom Kassel: Grundsatzeinigung, Vertrag offen (laut hessenschau)",
+      "date": "2026-10-06",
+      "claim_ids": [
+        "T-E23"
+      ]
+    },
+    {
+      "id": "ev-spock",
+      "label": "SPOCK 1: Zugriff auf SAR-Satelliten, Fertigungsstart Neuss (laut Unternehmen)",
+      "date": "2026-10-06",
+      "claim_ids": [
+        "T-E24"
+      ]
+    },
+    {
+      "id": "ev-credit",
+      "label": "Syndizierte Kreditlinie auf 1,5 Mrd. EUR verdoppelt (laut Unternehmen)",
+      "date": "2026-10-08",
+      "claim_ids": [
+        "T-E25"
+      ]
+    },
+    {
+      "id": "ev-albacete",
+      "label": "Mittelkaliber-Fertigung Albacete in Betrieb (laut Unternehmen)",
+      "date": "2026-10-16",
+      "claim_ids": [
+        "T-E26"
+      ]
+    },
+    {
+      "id": "ev-mangalia",
+      "label": "Zuschlag für Werft Mangalia; Vollzug erwartet",
+      "date": "2026-10-19",
+      "claim_ids": [
+        "T-E27"
+      ]
+    },
+    {
+      "id": "ev-q3",
+      "label": "Q3-Zahlen angekündigt für 05.11.2026",
+      "date": "2026-11-05",
+      "claim_ids": [
+        "T-E28"
+      ]
+    },
+    {
+      "id": "ev-cmd",
+      "label": "Capital Markets Day Hamburg angekündigt (Ende Nov. 2026)",
+      "date": "2026-11-25",
+      "claim_ids": [
+        "T-E29"
+      ]
+    },
+    {
+      "id": "ev-arminius",
+      "label": "Boxer-Auftrag Arminius erwartet (Herstellererwartung)",
+      "date": null,
+      "claim_ids": [
+        "T-E30"
+      ]
+    }
+  ],
+  "profile": {
+    "name": "Armin Papperger",
+    "claim_ids": [
+      "H-01",
+      "H-02",
+      "H-03",
+      "H-04",
+      "H-05",
+      "H-06",
+      "H-07",
+      "H-08",
+      "H-09",
+      "H-M01",
+      "H-M02",
+      "H-M03",
+      "H-M04",
+      "H-M05",
+      "H-M06",
+      "H-M07",
+      "H-M08",
+      "H-M09"
+    ],
+    "intro": {
+      "text": "Armin Papperger ist Diplom-Ingenieur und seit 1990 bei Rheinmetall; er führt den Konzern seit 1. Januar 2013 als Vorstandsvorsitzender (Bestellung laut Unternehmenswebsite bis 31.12.2029). Die Rolle wurde öffentlich verifiziert; die Nutzerangabe nannte keine Position.",
+      "claim_ids": [
+        "H-02",
+        "H-03",
+        "H-01"
+      ]
+    },
+    "snapshot": [
+      {
+        "label": "Aktuelle Rolle",
+        "value": "Vorsitzender des Vorstands (CEO) der Rheinmetall AG seit 01.01.2013",
+        "claim_ids": [
+          "H-02"
+        ]
+      },
+      {
+        "label": "Bestellung",
+        "value": "laut Unternehmenswebsite bis 31.12.2029",
+        "claim_ids": [
+          "H-02"
+        ]
+      },
+      {
+        "label": "Bei Rheinmetall seit",
+        "value": "1990 (Einstieg im Qualitätsmanagement der Defence-Sparte)",
+        "claim_ids": [
+          "H-03"
+        ]
+      },
+      {
+        "label": "Ausbildung",
+        "value": "Diplom-Ingenieur (laut Unternehmensprofil)",
+        "claim_ids": [
+          "H-01"
+        ]
+      },
+      {
+        "label": "Gremienmandate",
+        "value": "Vorsitz u. a. bei Landsysteme, MAN Military Vehicles, Waffe Munition, Denel Munition; Verwaltungsratspräsident Air Defence AG",
+        "claim_ids": [
+          "H-08"
+        ]
+      },
+      {
+        "label": "Strategische Linie laut CEO",
+        "value": "domänenübergreifendes Systemhaus (Land, See, Luft, Weltraum)",
+        "claim_ids": [
+          "H-09"
+        ]
+      }
+    ],
+    "career": [
+      {
+        "period": "ab 1990",
+        "organization": "Rheinmetall-Konzern, Sparte Defence",
+        "role": "Einstieg im Qualitätsmanagement",
+        "context": "Beginn nach dem Studium; weitere Stationen im selben Bereich laut Unternehmensprofil nicht einzeln benannt.",
+        "claim_ids": [
+          "H-03"
+        ]
+      },
+      {
+        "period": "ab 2001",
+        "organization": "Tochtergesellschaften des Unternehmensbereichs Defence",
+        "role": "Geschäftsführer verschiedener Gesellschaften",
+        "context": "Einzelne Gesellschaften nicht genannt.",
+        "claim_ids": [
+          "H-04"
+        ]
+      },
+      {
+        "period": "ab Juli 2007",
+        "organization": "Rheinmetall Defence",
+        "role": "Geschäftsbereichsleiter Waffe und Munition",
+        "context": "Ernennung laut Unternehmensprofil.",
+        "claim_ids": [
+          "H-05"
+        ]
+      },
+      {
+        "period": "ab Anfang 2010",
+        "organization": "Bereichsvorstand Defence",
+        "role": "Verantwortung für Fahrzeugsysteme sowie Waffe und Munition",
+        "context": "Zuständigkeit für zwei Geschäftsbereiche im Bereichsvorstand.",
+        "claim_ids": [
+          "H-06"
+        ]
+      },
+      {
+        "period": "ab 01.01.2012",
+        "organization": "Rheinmetall AG",
+        "role": "Mitglied des Vorstands",
+        "context": "Konzernvorstand.",
+        "claim_ids": [
+          "H-07"
+        ]
+      },
+      {
+        "period": "seit 01.01.2013",
+        "organization": "Rheinmetall AG",
+        "role": "Vorsitzender des Vorstands (CEO)",
+        "context": "Aktuelle Rolle; Bestellung laut Website bis 31.12.2029.",
+        "claim_ids": [
+          "H-02",
+          "H-07"
+        ]
+      }
+    ],
+    "expertise": [
+      {
+        "label": "Waffen und Munition",
+        "text": "Leitete ab Juli 2007 den Geschäftsbereich Waffe und Munition; äußert sich als CEO zum Kapazitätsausbau bei Munition (Projekt 'Firepower' laut Unternehmen).",
+        "claim_ids": [
+          "H-05",
+          "H-M07"
+        ]
+      },
+      {
+        "label": "Fahrzeugsysteme",
+        "text": "Trug ab Anfang 2010 Verantwortung für Fahrzeugsysteme im Bereichsvorstand Defence; äußerte sich im August 2026 zum Standort Kassel (Radpanzer Boxer).",
+        "claim_ids": [
+          "H-06",
+          "H-M03"
+        ]
+      },
+      {
+        "label": "Domänenübergreifendes Systemhaus",
+        "text": "Beschreibt die Strategie als Ausbau zu einem Systemhaus für Land, See, Luft und Weltraum (NVL-Übernahme, Raumfahrt-Programm SPOCK 1).",
+        "claim_ids": [
+          "H-09",
+          "H-M06"
+        ]
+      }
+    ],
+    "responsibilities": [
+      {
+        "label": "Konzernleitung",
+        "text": "Vorsitzender des Vorstands der Rheinmetall AG; im Halbjahresbericht 2026 kommentiert er Wachstum, Marge und Auftragslage als CEO.",
+        "claim_ids": [
+          "H-02",
+          "H-M05"
+        ]
+      },
+      {
+        "label": "Gremienmandate in Konzerngesellschaften",
+        "text": "Vorsitz bzw. Mitgliedschaft in Aufsichtsgremien mehrerer Konzerngesellschaften; Mandat bei Rheinmetall Automotive AG im Kontext des Verkaufs des zivilen Geschäfts zu beobachten.",
+        "claim_ids": [
+          "H-08"
+        ]
+      },
+      {
+        "label": "Öffentliche Außendarstellung",
+        "text": "Tritt in Interviews, Pressemitteilungen und Standortankündigungen als Sprecher des Konzerns auf (z. B. Euronews 17.09.2026, Handelsblatt 22.09.2026).",
+        "claim_ids": [
+          "H-M01",
+          "H-M02",
+          "H-M03"
+        ]
+      }
+    ],
+    "media": [
+      {
+        "id": "pm-01",
+        "published_date": "2026-09-22",
+        "category": "own",
+        "format": "Interview (Handelsblatt, Bezahlinhalt)",
+        "title": "„Schlafen Sie eigentlich noch, Herr Papperger?“",
+        "preview": "Papperger zu negativem Cashflow und Kritik, der Konzern sei zu sehr auf ihn zugeschnitten (laut Anreißer).",
+        "claim_ids": [
+          "H-M01"
+        ],
+        "access_note": "Bezahlschranke: nur Anreißer, Bildunterschrift und Eingangsfrage gelesen; keine Aussagen über den Teaser hinaus.",
+        "quote": "Einer muss der Kopf sein, und das bin im Augenblick ich.",
+        "quote_source_id": "S-1e5add6204530ccc",
+        "quote_location": "Bildunterschrift zum Foto"
+      },
+      {
+        "id": "pm-02",
+        "published_date": "2026-09-17",
+        "category": "own",
+        "format": "Interview (Euronews, Text und Video)",
+        "title": "Raketenbestände, Skyranger, Joint Ventures und Robotik",
+        "preview": "Zu Raketenbeständen, Skyranger-Lieferung 2027, Marschflugkörper-JV, Personalaufbau und humanoiden Robotern.",
+        "claim_ids": [
+          "H-M02"
+        ],
+        "access_note": "Interviewtext vollständig gelesen; Pläne und Erwartungen des CEO, keine bestätigten Verträge; Video nicht separat gesichtet.",
+        "quote": "Robots will come, that is absolutely clear.",
+        "quote_source_id": "S-aaaf59c399a65ff2",
+        "quote_location": "Antwort auf die Frage nach dem nächsten Schwerpunkt"
+      },
+      {
+        "id": "pm-03",
+        "published_date": "2026-08-27",
+        "category": "own",
+        "format": "Pressetermin (Börsen-Zeitung)",
+        "title": "Kassel soll größtes Panzerwerk Europas werden",
+        "preview": "Investitionsplan über rund 270 Mio. EUR; Hinweis auf erwarteten Boxer-Auftrag (Arminius).",
+        "claim_ids": [
+          "H-M03"
+        ],
+        "access_note": "Artikel frei lesbar; Aussagen sind Ankündigungen und Erwartungen, keine Verträge.",
+        "quote": "Kassel wird das größte Panzerwerk Europas",
+        "quote_source_id": "S-fa3be73251a7e9c6",
+        "quote_location": "Artikel, Absatz 3"
+      },
+      {
+        "id": "pm-04",
+        "published_date": "2026-08-09",
+        "category": "own",
+        "format": "Agenturmeldung (dpa über SCMP)",
+        "title": "„Kneifen“ sei im Beruf keine Option",
+        "preview": "Papperger zum Umgang mit Drohungen und Druck in seiner Position.",
+        "claim_ids": [
+          "H-M04"
+        ],
+        "access_note": "Nur Titel, Untertitel und Einleitung abrufbar; Kontext der Äußerung nicht gelesen.",
+        "quote": "These jobs must be done and anyone that can’t take the pressure doesn’t belong in this job",
+        "quote_source_id": "S-cba7c69a4b9f251e",
+        "quote_location": "Untertitel / Einleitung"
+      },
+      {
+        "id": "pm-05",
+        "published_date": "2026-08-06",
+        "category": "official",
+        "format": "Pressemitteilung (Halbjahresbericht)",
+        "title": "Halbjahresbericht 2026 mit CEO-Zitaten",
+        "preview": "Papperger zu Rekordwachstum, Q2-Marge von 17,1 % und Book-to-Bill über 3.",
+        "claim_ids": [
+          "H-M05"
+        ],
+        "access_note": "Unternehmensmitteilung vollständig gelesen; Aussagen sind Herstellerangaben.",
+        "quote": "Wir haben ein Rekordwachstum und sind auf bestem Wege, unsere nach wie vor sehr ehrgeizigen Jahresziele zu erreichen",
+        "quote_source_id": "S-5b640196f4e87dad",
+        "quote_location": "Zitat 1 von Armin Papperger"
+      },
+      {
+        "id": "pm-06",
+        "published_date": "2026-10-06",
+        "category": "official",
+        "format": "Pressemitteilung (SPOCK 1)",
+        "title": "SAR-Satelliten für die Bundeswehr",
+        "preview": "CEO-Zitat zu Zugriff auf SAR-Aufklärung und Produktionsstart in Neuss.",
+        "claim_ids": [
+          "H-M06"
+        ],
+        "access_note": "Unternehmensmitteilung vollständig gelesen; Herstellerzitat."
+      },
+      {
+        "id": "pm-07",
+        "published_date": "2026-10-16",
+        "category": "official",
+        "format": "Pressemitteilung (Albacete)",
+        "title": "Neue Mittelkaliber-Fertigung in Albacete",
+        "preview": "CEO-Zitat zu Albacete als Kompetenzzentrum und zum Projekt 'Firepower'.",
+        "claim_ids": [
+          "H-M07"
+        ],
+        "access_note": "Unternehmensmitteilung vollständig gelesen; Herstellerzitat.",
+        "quote": "Albacete is one of our key centres of expertise in the field of ammunition components and weapon systems manufacturing.",
+        "quote_source_id": "S-65384ba645706eba",
+        "quote_location": "Zitat Armin Papperger, Absatz 3"
+      },
+      {
+        "id": "pm-08",
+        "published_date": "2026-09-04",
+        "category": "media",
+        "format": "Analyse (Handelsblatt, Bezahlinhalt)",
+        "title": "„Wie Armin Papperger bei Rheinmetall an seine Grenzen stößt“",
+        "preview": "Handelsblatt-Analyse zur Kritik am Konzernchef (laut Anreißer).",
+        "claim_ids": [
+          "H-M08"
+        ],
+        "access_note": "Bezahlschranke: nur Anreißer und Eingang gelesen; redaktionelle Einordnung, keine Aussage Pappergers."
+      },
+      {
+        "id": "pm-09",
+        "published_date": "2026-06-26",
+        "category": "media",
+        "format": "Artikel (stock3, Zweitbericht zur FT)",
+        "title": "Reaktion auf das F126-Aus",
+        "preview": "Papperger laut Financial Times (über stock3) 'erstaunt' über die Streichung des Fregattenprogramms.",
+        "claim_ids": [
+          "H-M09"
+        ],
+        "access_note": "Zweitbericht mit anonymen Quellen; FT-Originalartikel nicht geöffnet; kein Wortlaut Pappergers."
+      }
+    ]
+  }
+}

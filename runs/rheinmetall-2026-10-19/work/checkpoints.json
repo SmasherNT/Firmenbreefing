@@ -28,8 +28,431 @@
     "final-review",
     "html"
   ],
-  "checkpoints": {},
+  "checkpoints": {
+    "context": {
+      "stage": "context",
+      "checkpoint_id": "446ed231f0ac467d86a20e23dbdc6d1a",
+      "inputs": {},
+      "outputs": {
+        "module": {
+          "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/context-facts.json",
+          "sha256": "223548e4a88cb1decdffc26b78b46572f1c7b52b1936b51d40eac9f37537927a"
+        }
+      },
+      "code": {
+        ".claude/agents/company-context-analyst.md": "46e429b5e4db8a954d63d1731c7e16925f3972db1580b2e5d6a88ceee7c15bc0",
+        ".claude/skills/facts-briefing/SKILL.md": "630e1ae58f6b1306908ac9dac4f482389ab0ede543676db62f6a069b26185826",
+        "CLAUDE.md": "b3b209befc760e7ace283ff67d4c9d9c0bb78e9247e99733069fa2cc122de9a5",
+        "references/ausgabe-html-v2.md": "d80d1ba2f83b7c9b6b00897bb5e956f46b5f31ee1338eb262d0d9efe77993df2",
+        "references/briefing-struktur.md": "6dfd7d0b6d9bfa3dcc68101e311ff93386cd03792356c90de6bb49597b9a6167",
+        "references/capability-matrix.md": "fa260d63c8c6d01bfe3b42477f483487eb340753232bbdfe3e667ea09e6e5915",
+        "references/cluster-quellenkatalog.md": "52d1c09bd8ce07524065aaa38a45f673eb68feb6fd8e9e6c6fae2e27fc53a1ea",
+        "references/cluster-recherche.md": "91af7a5e12dd6ceda4eebc8a84e226e809eaf963db83892795d4f738c6ec68ca",
+        "references/datenvertrag.md": "a1ba9d4bbe54a46e72934cb541a4c30462342d4c3f094d10735acd161c0478a0",
+        "references/defaults.md": "05344a0dc98acc84de5361f76d5453347b5cc7af1c8e2aff0d4d29fe1c2b4130",
+        "references/executive-summary.md": "370b09867b079fd4d2f85336d6026f61f6c9c547a5bfba7b5f17efc9275171a3",
+        "references/faktenphase.md": "f5089c3e8d72020b6c3c4b3a72cecbd8488934746180bac1d8ed30f6ca6edf6a",
+        "references/gespraechspartner.md": "25963c912980164e5d18f344bba45c26cdf9c7f9748c634e2c606bed90564e14",
+        "references/interpretationsphase.md": "c9fd9b97090863df4140564015176ab68da79db1e8ade049fe279d7c030733a9",
+        "references/lauf-wiederaufnahme.md": "6d77815384aea2fb890068b5979f8f2356b261123eed05235b768bc3b1bb93b3",
+        "references/legacy-company-briefing.md": "115653dff47e664cf2c1610ab8f04d7c986babf77d2e15cb81f4ffcbb0debd37",
+        "references/legacy-html-output.md": "8c73f16f146c1c6dc806a61929bf2d55ab833759bff5da38ce9f35ffe6a886b3",
+        "references/markt-deepdive.md": "38647eebb36d6d104000b111db6f6a5575cd9580d1d05bb08f67011a474a2b3e",
+        "references/modellaufteilung.md": "42901e7b0ea74f63afc7a24b76d1bf5bc83f21e82da2cd29932919c96c0ce806",
+        "references/modul-keyfacts.md": "d9f0e3acee641e3736e6fe9861df336b9378c73dd59d3bfc1d9993e39e76f788",
+        "references/modultest.md": "c10cf29675dac6d0b363d2ddddd42bb72dee33afb05bfa1df96dc71bcb88939e",
+        "references/netzwerk-html.md": "3d0951b9f0a45a701817d35bfe9851b473c7eb2c37ff671db51de72c84869e92",
+        "references/parallele-quellenpruefung.md": "9b186934d97dd3152c9bee751ce164ff9b20bd4cd111a0aff06ea10409c887b8",
+        "references/portfolio-darstellung.md": "35ec6335707a1d672b2ecbd1599ba33d46f077e2e81e4121122481554fc5ff3e",
+        "references/pruefauftraege.md": "c6d9233b5717c3414135c23d0ec49ea471b66ac642d29675ca7f786b819d9196",
+        "references/quellenpruefung.md": "28c57fd0bbb1ef809f1cb3850b4063b5c1a3595938c8ab5ea9dcfbcbf142bfaf",
+        "references/recherche-wiederverwendung.md": "ff24537378b235bada15e0b81d8c18af0ba51462419d70af59d1087643f376c1",
+        "references/regionale-praesenz.md": "e672c4a9b450c1cd68c673492a085eaf75e52e38835707307a9339b764c3bb16",
+        "references/setup-check.md": "45f3f1f90384833d0a4eed5ed59204e666ea90573950684fea91e562fa7f4e93",
+        "references/themen-darstellung.md": "972979c6e2d1802ad33a6f15b408636599267e55ba82a8e6c7c9fbbf78a21412",
+        "references/uebergabe.md": "c202b3f442f8c5481d022d25a6222e1e30d4c5ccbabe1dc65e03f3e421536430",
+        "scripts/check-review-data.py": "7483c14d9b7c122dbbdaf2c25b5d7e2aa90f42f3df4af2829c59d1f5e77d0052",
+        "scripts/prepare-facts.py": "4bf7c30b71b5bfa150b1a364e9d46da3ac0e3958faa10a369963b5b78a2b3963",
+        "scripts/resume-run.py": "30ca37c5314b3b112220b1b494bf20fe47d39b4b2ce0f8a4ed31ffa46f192c8b",
+        "scripts/source-cache.py": "267092e431187b7a6cdd5f4bb051ad8b84fa2a07bf479a441738b5c623bb7eb4"
+      },
+      "sources": {
+        "S-042b26990fdc2a9d": {
+          "source_id": "S-042b26990fdc2a9d",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/03/2026-03-02-rheinmetall-takes-over-nvl",
+          "content_sha256": "48ccff518a15a6fdd3e21462b4c643552cbc03bf4f35394e40d75fbd46a9fc70",
+          "text_sha256": "24749e80c36c79f614050d1019e086f13e06f3d9450681cfa9defacf217e4290",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-04b4522db1cf4f65": {
+          "source_id": "S-04b4522db1cf4f65",
+          "url": "https://militarnyi.com/en/news/rheinmetall-apologizes-for-ceo-s-comments-about-ukrainian-housewives-with-3d-printers/",
+          "content_sha256": "0e960196b5fcbc97429b7bdbaeb2550c9c231a552a1177cf43aba33d642cb94a",
+          "text_sha256": "0797263644c493417d19e03e65f237ca967e8a5205d689373637cb51bad8a873",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-04cc080af88f833d": {
+          "source_id": "S-04cc080af88f833d",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-06-rheinmetall-iceye-space-solutions-provides-the-bundeswehr-with-access-to-sar-satellites",
+          "content_sha256": "be998ef3f2f260fc290f20565c2e9f22f67e28306832fccf8e97dd7f6bd33b72",
+          "text_sha256": "442b06303382b93c7fafdadc0ed3428b8eb3921d2c4ba73d49f4d3e80b67ed3f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-078c6e124a0a035b": {
+          "source_id": "S-078c6e124a0a035b",
+          "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/08/2026-08-03-rheinmetall-presents-the-gmf140-the-next-generation-frigate.pdf",
+          "content_sha256": "628cb8c7dafffbb276bcc43eb712c0f2f0dc3141b324a25d1bbc5385867e1636",
+          "text_sha256": "a70332694e724b8d18958832c71cf9aad2d4464325191298f5bf95714ffcc41b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-0b6a8c7f7a47ed28": {
+          "source_id": "S-0b6a8c7f7a47ed28",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/09/2025-09-15-rheinmetall-reaches-agreement-with-luerssen-on-acquisition-of-naval-vessels-luerssen-nvl",
+          "content_sha256": "8fdb7b926db37c0bc136216bd79db2ae36ba1134628f9e61c9698b79ed98a56d",
+          "text_sha256": "e5fe2be60d46b80f055f71d9ce8a00e2072bd322d0674159ea803668e7481d7b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-0bd71507c5c59e04": {
+          "source_id": "S-0bd71507c5c59e04",
+          "url": "https://www.rheinmetall.com/en/investor-relations/calendar-and-events/financial-calendar",
+          "content_sha256": "e2acb4ed216c7fe25c6636f1c59c8573abf4cfa201cbb270b9e359c24e5cc05c",
+          "text_sha256": "d21a0d0b7a9a52fd43c58b85174cb3008d38ca3cceeec3eb3af90809e0e13be3",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-0bf21d6b5d52b9d5": {
+          "source_id": "S-0bf21d6b5d52b9d5",
+          "url": "https://breakingdefense.com/2026/08/rheinmetall-projects-346-million-naval-loss-after-f126-frigate-cancellation/",
+          "content_sha256": "05dbf5852d794d697bfe6442f3102b6d92a48294d25bf07994ada37d17d9c41b",
+          "text_sha256": "44c3720f5ec604a381ee69b87ac500467c54681d729b1cf436c8ddac8a4c792f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-110cc749cec119a4": {
+          "source_id": "S-110cc749cec119a4",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-19-rheinmetall-and-knds-to-supply-200-armoured-fighting-vehicles",
+          "content_sha256": "d49f08c843010f768eeb0f71755bac7c77b18c30a5872042e308f6375dd792be",
+          "text_sha256": "6a9c68cde70198858e4b5bb12539f3c58a7419d7523382b279cecd58470d55f7",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-1db9c54bc6663d61": {
+          "source_id": "S-1db9c54bc6663d61",
+          "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2025/12/2025-12-10_rheinmetall-erwirbt-muni-berka.pdf",
+          "content_sha256": "373cf3cbe60c7b6f43be010adae7ef79be8d51d945a0377d67d67463327c76c3",
+          "text_sha256": "cd3168704af750cdaba7774ca7c78989bf9d22ed6b91d415db9b6669fd9a4507",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-1e5add6204530ccc": {
+          "source_id": "S-1e5add6204530ccc",
+          "url": "https://www.handelsblatt.com/unternehmen/industrie/ruestung-rheinmetall-waechst-schlafen-sie-noch-herr-papperger/100252952.html",
+          "content_sha256": "1d9d70fd06962416f60ec6f798d81d1cff245371e16147d0bff0e68c6c5658cc",
+          "text_sha256": "94fbc5973606218e1b4aa51ec7b0665d9f26bc27e77dd8ab059127b0d106a29c",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-1f77cb6f898210ce": {
+          "source_id": "S-1f77cb6f898210ce",
+          "url": "https://ir.rheinmetall.com/media/document/4ce7ca35-7088-4365-88d6-b43a0aa5cde6/assets/Rheinmetall_AG_2026_Investor_Presentation_September.pdf",
+          "content_sha256": "24eb1efde161bb5cdaa637eb444a3bb9dae4c14e94535b0a4b40281b8ff76202",
+          "text_sha256": "0c1fb589050b8edc19765a2565579fa99fec495fbc7ddde3267df72e8f2844a2",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-250325098e8c729a": {
+          "source_id": "S-250325098e8c729a",
+          "url": "https://stock3.com/news/rheinmetall-entscheidung-aus-berlin-machte-papperger-fassungslos-17134598",
+          "content_sha256": "417dc8990a85b4347f2b44e43de6cea193eb7be25dc460fa9d70ffb03166ba92",
+          "text_sha256": "88a22e77fd1e4f9da43780078d79b288a74c75eea25820e992dc8ea8725b3d3d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2a52354ff7d7f7f4": {
+          "source_id": "S-2a52354ff7d7f7f4",
+          "url": "https://www.boersen-zeitung.de/unternehmen-branchen/rheinmetall-strebt-position-als-rundumanbieter-mit-50-mrd-euro-umsatz-an",
+          "content_sha256": "2f6627099eb570beeec912cd1a246adc3900909c224dd08a922e64a80fd36633",
+          "text_sha256": "63a05c101218d34cb54e48a5ccb2d65f016ff8b50ea938b9a4e132d008757f3d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-3ab860d4e2d076b2": {
+          "source_id": "S-3ab860d4e2d076b2",
+          "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2025/09/2025-09-05-werkseroeffnung-in-unterluess.pdf",
+          "content_sha256": "e0166a4660ffa8e646d5958c2e400d31d7b1a27dafa10f42e24fd6d6e7c0de53",
+          "text_sha256": "f754cfb5a317d7d940d267dc1dc3f13f09dfb9f49a84a5df3ea98d4f6f191725",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-3b33c5118cdc79d2": {
+          "source_id": "S-3b33c5118cdc79d2",
+          "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/06/2026-06-03-verkauf-besiegelt-rheinmetall-trennt-sich-von-ziviler-sparte.pdf",
+          "content_sha256": "c6d13e5f66762ec7446f9af512c82714dd3b81e3f5df0dcd8d40d187dc6a0e59",
+          "text_sha256": "8ef6c0720864df93e9b4956fe205ff15cc9867e4fadcc4efab385cd6637c5c51",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-438937e9317397d7": {
+          "source_id": "S-438937e9317397d7",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/04/2026-04-22-rheinmetall-gewinnt-grossauftrag-im-drohnenbereich",
+          "content_sha256": "b19facb724249b0e85d7bf3bd3a34cc2b8941987a3a9ae3ec250c25bc5f1ba63",
+          "text_sha256": "bd72e5f0c01eb0249348acf14b9743b35132e965ca7af77b3a9645923a913ddb",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-553789c22ec26699": {
+          "source_id": "S-553789c22ec26699",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/01/2026-01-05-rheinmetall-receives-major-order-from-the-bundeswehr-for-puma-ammunition",
+          "content_sha256": "8892c74c14a6ed54776aa7cbf8240a13677be0d1f1a453e9d0730a03b69e844b",
+          "text_sha256": "34a6b7e58be6c67668b2d9985fbc07a58825511d798a7a9475139823727a2855",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-559e0ac19cabd1d0": {
+          "source_id": "S-559e0ac19cabd1d0",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/03/2026-03-11-rheinmetall-presents-annual-report-for-2025",
+          "content_sha256": "7e3db873b5df5a92827fec19729e7d2b5b0ac6eaec22c17ed9f20b8d73a96cef",
+          "text_sha256": "0ec37d2f55de8a9c547cf2dbfe1bb4a5b1290a5df49008ff8ba84dc96ea5114f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-56fc0186af26e860": {
+          "source_id": "S-56fc0186af26e860",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/05/2026-05-28-rheinmetall-issues-a-500-million-bond",
+          "content_sha256": "06e96c9385f55b4e9a0229ec8b1ae99c24ccd4ab60e33369301259a8a6c65d50",
+          "text_sha256": "7558cc81b8a004c5bfc0565fb9cf2e3b1ab114d3a7cacf5eb1f140ac15cdc73e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-5b640196f4e87dad": {
+          "source_id": "S-5b640196f4e87dad",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/08/2026-08-06-rheinmetall-pressemitteilung-halbjahresfinanzbericht-h1",
+          "content_sha256": "cf8878be08ef2530410ffc52aed9b3ae41a31f8b487ab9dee22eb4652d56eab7",
+          "text_sha256": "9129f4bb5b65c304529a6064915b400b92c78372f8e3e4e97ec81141f1719ad5",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-65384ba645706eba": {
+          "source_id": "S-65384ba645706eba",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-16-rheinmetall-opens-modern-medium-calibre-production-facility-in-albacete",
+          "content_sha256": "f11973824a31b4e37429ffc9a4988019dd6a43f8cbd812df502f03b7bd664bc9",
+          "text_sha256": "0bb784453190868474056de68147d56f669bda048e2b4af64e6b21fdbada8dd2",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-749ebb1bb3cf3947": {
+          "source_id": "S-749ebb1bb3cf3947",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/07/2026-07-01-rheinmetall-uebernimmt-mehrheitsbeteiligung-an-dok-ing",
+          "content_sha256": "21ba33ff8836401b85ff15dab979302522ef9bbc3edd890604cd1d99bbd9c263",
+          "text_sha256": "2490e2e5390d0e01ffc37f5470744fa33abdfeb040a28e3e16131026fa2baefc",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-7c51e921c055e64c": {
+          "source_id": "S-7c51e921c055e64c",
+          "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/06/2026-06-02-major-historic-contract-in-romania-worth-5-7-billion.pdf",
+          "content_sha256": "b0c2d8a8d402b8eef3d210ed419fa3ec8d46484889ac5b4736b1f2299f49caa1",
+          "text_sha256": "4c06d68fa186c6616f4c811222103ce752aa18695bc0a8c92a07c5b6ad5b171a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-7f6de13c77cb340f": {
+          "source_id": "S-7f6de13c77cb340f",
+          "url": "https://www.hessenschau.de/wirtschaft/rheinmetall-uebernimmt-lok-werk-von-alstom-in-kassel-v1,alstom-rheinmetall-100.html",
+          "content_sha256": "e32e32f6337a183d53a526cc2d6476dd27c594833704aac399179f6e4978acca",
+          "text_sha256": "bf60cffaa94afbd5be0f6548d6ef3a15dba7d21ad249c8230c28373658ff88fd",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-8f63be7e3308f827": {
+          "source_id": "S-8f63be7e3308f827",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/05/2026-05-28-rheinmetall-liefert-mehr-als-2-000-utf-lkw-an-die-bundeswehr",
+          "content_sha256": "32077c14b93a7ff8e5a196e9481de088aac245ae9880248e495fdf02428bb456",
+          "text_sha256": "7123f2cefbd8ac392188c79b9523e6955f728d5729870ec9050edc5ba4d48440",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-91be1f9c04508de5": {
+          "source_id": "S-91be1f9c04508de5",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-19-rheinmetall-acquires-the-mangalia-shipyard-in-romania",
+          "content_sha256": "bc8a5ae658973e3e9f34944603ab4d874adb61bb3dff00fb1c1297e67207623d",
+          "text_sha256": "7d91070071c0e8757694c37e4a8f59a21bd594ea4fd86f584ed048606398f169",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-98082c5c6a5443c4": {
+          "source_id": "S-98082c5c6a5443c4",
+          "url": "https://www.rheinmetall.com",
+          "content_sha256": "fdcc11200a1b74249427219fb0f718524801927d7bd26d46c623a3440f880ee4",
+          "text_sha256": "c34340b18d439f875bd3736348fdaf005efcaa63d8fb2e302c2a593f841a4f57",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a3892fe72afc70a4": {
+          "source_id": "S-a3892fe72afc70a4",
+          "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/04/2026-04-13-rheinmetall-und-destinus-gruenden-joint-venture-fuer-raketensysteme",
+          "content_sha256": "70badfa2231cef6e2004de66ccc343ffa193d3266a0d140adf97234f8fd34c7c",
+          "text_sha256": "6dbba273e41132b208afd719147486eda8764f9729c84da2fb9547c705ce8cdf",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a6309db699669326": {
+          "source_id": "S-a6309db699669326",
+          "url": "https://www.rheinmetall.com/en/investor-relations/calendar-and-events/capital-markets-day",
+          "content_sha256": "87997daa2ae1523a98b291dc8afd9b27e23e6f8742471377e7ee0db9b1def6cf",
+          "text_sha256": "9f2c121de9813a1d008e9557f3c493f99000e2c394e28c79046708397042a019",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a6f316c0deb5a97a": {
+          "source_id": "S-a6f316c0deb5a97a",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-02-rheinmetall-and-argotec-launch-their-first-satellite-into-space-with-spacex",
+          "content_sha256": "dd8508cbc783629e851f11fa129d6400c59d21bae2268e0aff020430b58d5900",
+          "text_sha256": "5e88d12e0c58fb568fd1fd2444ec77ee4abfc41f41e883be3f690a2d92a3cd33",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a8887f614647359f": {
+          "source_id": "S-a8887f614647359f",
+          "url": "https://www.rheinmetall.com/de/unternehmen/gremien/vorstand/vorstand-uebersicht",
+          "content_sha256": "e1f0fee6a052ccaba93ad0fc37eb511d62ada5df82bce7a1daf8ddf4dd98b2b8",
+          "text_sha256": "f96421969ed3507fe0fdfd22cdd718e73be32f310011efc45f3954d681128986",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-aa782bd6fedfefb7": {
+          "source_id": "S-aa782bd6fedfefb7",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-18-rheinmetall-and-iceye-win-billion-euro-contract-for-space-reconnaissance",
+          "content_sha256": "ee898c3afdf9fc6fd171d8f54ed53744150e9399cf2c5a6050cfd81abb3a723d",
+          "text_sha256": "11495193d48839922eca7d5a6f516bc5c081d91d779c63e1e09224947245661f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-aaaf59c399a65ff2": {
+          "source_id": "S-aaaf59c399a65ff2",
+          "url": "https://www.euronews.com/business/2026/09/17/rheinmetall-chief-papperger-robots-are-coming",
+          "content_sha256": "5264396b9aa09ce5aedfa57ca4b1a55dee1bb315ea73416788ba3c8e60c4303b",
+          "text_sha256": "c2c0a5d992938608e677431ff6bf6da7d442c8c159744cda74b5ac3f43c46577",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-be6a33c1caf2a631": {
+          "source_id": "S-be6a33c1caf2a631",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-08-rheinmetall-doubles-its-syndicated-credit-facility",
+          "content_sha256": "10e625bf4e3f23222ac547cd27f022390eb8de5fa327d1ee91895d4b5b131c60",
+          "text_sha256": "9ae1f06604a14bdc46a80bd65f03b3ff709117a54d67f911b56953587da63daf",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-be9afa65076fd992": {
+          "source_id": "S-be9afa65076fd992",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/05/2026-05-07-rheinmetall-news-quarterly-statement-q1",
+          "content_sha256": "1ee00d8af1b623deefd0eab95632d89b3d67b735e09fedba3ec9c3875b4f5a2e",
+          "text_sha256": "9fb33f9a9e7c07253b8d834ad0242686caea34aa670beaba02bf279fb87187d0",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-c2d3f808da3970cb": {
+          "source_id": "S-c2d3f808da3970cb",
+          "url": "https://www.handelsblatt.com/unternehmen/industrie/ruestung-wie-armin-papperger-bei-rheinmetall-an-seine-grenzen-stoesst/100251097.html",
+          "content_sha256": "fce5739bd4b41accf1c468c451b398433cd58c3a17c1c3703c1e217f4607db78",
+          "text_sha256": "7be8bce561c97cf1052639e16187af5b05fb5752f85293c5bc8893e8e55e8a43",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-c72d2f16b02e496c": {
+          "source_id": "S-c72d2f16b02e496c",
+          "url": "https://www.rheinmetall.com/en/investor-relations/share/dividend",
+          "content_sha256": "b3777b18fe7a91c4d700e43db651ea0df1e48280fb1bf3a73477e9c60d3daa2c",
+          "text_sha256": "3137b95a92bf9d90831def8286c09638f47a29a0b2a7d847beaa1b0346b9cc13",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-c85fbd35697b1263": {
+          "source_id": "S-c85fbd35697b1263",
+          "url": "https://gcaptain.com/germany-ditches-delayed-frigate-program-in-major-blow-to-rheinmetall/",
+          "content_sha256": "2b1ed7f6ed6129f312b508b6cc15dfb73b18b919ab66d80e4d39553ae4deeca8",
+          "text_sha256": "dcfb7d1e7b2efb94d272c9afa1d73bdca3025f31c6568a0077770dd56980c9c5",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-cba7c69a4b9f251e": {
+          "source_id": "S-cba7c69a4b9f251e",
+          "url": "https://www.scmp.com/news/world/europe/article/3363426/german-arms-giant-boss-says-no-chickening-out-amid-alleged-russian-threats",
+          "content_sha256": "74f8dfb2442738230d6119c1920bb75a4ba2ff797c7b61a420ce79ebdfd4e2ae",
+          "text_sha256": "fe3ae90d7be121c3d3f8c4ffd8230473b7eea32b2fe966c41f426619af75ca13",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-f67a3aa803cc0e9f": {
+          "source_id": "S-f67a3aa803cc0e9f",
+          "url": "https://www.rheinmetall.com/de/investor-relations/aktie/basisdaten",
+          "content_sha256": "913908bad120ea43f33044f5b84e5ee3712c6672a86d0df160d79b41a6f387e1",
+          "text_sha256": "4130c5264d734743841a7c294e489ce4ce2e5224c53219209d47b9e570509dc9",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-fa3be73251a7e9c6": {
+          "source_id": "S-fa3be73251a7e9c6",
+          "url": "https://www.boersen-zeitung.de/unternehmen-branchen/rheinmetall-will-kassel-zum-groessten-panzerwerk-europas-ausbauen",
+          "content_sha256": "89a50cd8fb909875082586a7b81438bcf25272e808da6680540bdbe1b36d54ae",
+          "text_sha256": "5dc2f7daa6c72510935936b44f655959a1802496c523c00e51ab37e7cc4c29f4",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        }
+      },
+      "dependencies": {},
+      "checked_at": "2026-10-19T09:04:19+00:00",
+      "fingerprint": "a8d3d38da2e325f91ad0310d433eff0d1e042ddb0b596b13e5c2541637fe9268"
+    }
+  },
   "created_at": "2026-10-19T08:47:09+00:00",
   "notice": "Local completion records only; content approval and visual QA remain separate.",
-  "fingerprint": "77a71b12c112a508789f9f0a3e74995595d68b357ddf988557dcedfc5a0dba29"
+  "fingerprint": "2f93e7ac5948574ca7b723064e13076546ff5416c2bedb5ae334569c7bd4e2f7"
 }
