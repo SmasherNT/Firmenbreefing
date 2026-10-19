@@ -1,0 +1,43 @@
+{
+  "run_id": "rheinmetall-2026-10-19",
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-19",
+  "version": 1,
+  "comparison_unit": "Großkalibrige Artilleriemunition 155 mm (Geschosse, Treibladungen/Pulver, Zünder) als Kerngeschäftseinheit im Segment Waffe & Munition",
+  "purpose": "Allgemeines Firmenbriefing ohne Nutzerthema: Vergleich der größten und am stärksten wachsenden Kerngeschäftseinheit mit Anbietern vergleichbarer Rolle hinsichtlich Produktspektrum, Reichweitenangaben, Vertikalintegration, Fertigungskapazität, Beschaffungsstand und Fertigungs-/Lieferfähigkeit. Scores zeigen öffentliche Evidenzreife, keine technische Überlegenheit.",
+  "peer_groups": [
+    "Europäische 155-mm-Munitionshersteller mit eigener Geschoss- und Ladungsfertigung",
+    "Außereuropäische 155-mm-Munitionshersteller mit Exportrolle"
+  ],
+  "criteria": [
+    {"id": "spectrum", "label": "155-mm-Produktspektrum", "display_type": "Profil",
+     "question": "Welche 155-mm-Geschosstypen (Spreng, Basebleed, Reichweitensteigerung, Präzision/gelenkt) und Ladungssysteme bietet der Anbieter öffentlich belegt an?",
+     "evidence_required": "Hersteller-Produktseiten/Datenblätter, Beschaffungsmeldungen; Varianten getrennt",
+     "applicability": "Alle Peers mit 155-mm-Angebot", "rationale": "Spektrum bestimmt adressierbare Bedarfe der Streitkräfte"},
+    {"id": "range", "label": "Angegebene maximale Reichweite", "display_type": "Kennzahl", "unit": "km",
+     "conditions": "Herstellerangabe je Geschossvariante und Rohrlänge (L52/L39) sowie Ladung; Test- vs. Datenblattwert getrennt; keine Übertragung zwischen Varianten",
+     "question": "Welche maximale Reichweite wird für die weitreichendste angebotene 155-mm-Variante angegeben, unter welchen Bedingungen?",
+     "evidence_required": "Datenblatt oder dokumentierter Test mit Rohr/Ladung", "applicability": "Peers mit veröffentlichten Reichweitenangaben",
+     "rationale": "Zentrale technische Leistungsgröße von Artilleriemunition"},
+    {"id": "integration", "label": "Vertikalintegration Pulver/Sprengstoff", "display_type": "Evidenzstufe",
+     "anchors": {"1": "Keine eigene Pulver-/Sprengstofffertigung öffentlich belegt", "2": "Eigene Ladungs-/Pulverfertigung angekündigt oder im Aufbau", "3": "Eigene Fertigung von Pulver oder Sprengstoff operativ belegt", "4": "Eigene operative Fertigung von Treibladungspulver und Sprengstoff belegt"},
+     "question": "Welche vorgelagerten energetischen Materialien (Nitrozellulose, Treibladungspulver, Sprengstoff) fertigt der Anbieter selbst?",
+     "evidence_required": "Unternehmens-/Werksangaben, Behörden- oder Medienberichte zu konkreten Werken", "applicability": "Alle Peers",
+     "rationale": "Pulver/Sprengstoff gelten als Engpass der Munitionsskalierung"},
+    {"id": "capacity", "label": "Angegebene 155-mm-Jahreskapazität", "display_type": "Kennzahl", "unit": "Geschosse pro Jahr",
+     "conditions": "Öffentlich angegebene Jahreskapazität bzw. Zielkapazität mit Zieljahr; Ist und Plan getrennt; Konzernweit vs. Werk kennzeichnen",
+     "question": "Welche jährliche 155-mm-Fertigungskapazität (Ist bzw. Ziel mit Jahr) ist öffentlich angegeben?",
+     "evidence_required": "Unternehmensangabe oder Behörden-/Medienbericht mit Datum", "applicability": "Alle Peers",
+     "rationale": "Skalierung ist der zentrale Wettbewerbsfaktor im aktuellen Munitionsmarkt"},
+    {"id": "procurement", "label": "Belegter Beschaffungs- und Einsatzstand", "display_type": "Evidenzstufe",
+     "anchors": {"1": "Angebot ohne belegten Auftrag", "2": "Einzelaufträge belegt", "3": "Mehrjähriger Rahmenvertrag mit mindestens einem Staat belegt", "4": "Rahmenverträge/Lieferungen an mehrere Staaten und belegter Einsatz (z. B. Ukraine)"},
+     "question": "Welche Beschaffungsverträge und Lieferungen von 155-mm-Munition sind öffentlich belegt?",
+     "evidence_required": "Vertragsmeldungen von Kunde/Hersteller, Behördenquellen", "applicability": "Alle Peers",
+     "rationale": "Ergänzendes Pflichtkriterium Beschaffung"},
+    {"id": "industrial", "label": "Industrielle Fertigungs- und Lieferfähigkeit", "display_type": "Evidenzstufe",
+     "anchors": {"1": "Fertigung an einem Standort/Land belegt", "2": "Fertigung in mehreren Werken eines Landes belegt", "3": "Operative Fertigung in mindestens zwei Ländern belegt", "4": "Operative Fertigung in mindestens drei Ländern plus belegter neuer Werksaufbau"},
+     "question": "Wo fertigt der Anbieter 155-mm-Munition bzw. Kernkomponenten operativ, und welche neuen Werke sind belegt?",
+     "evidence_required": "Werksangaben, Eröffnungsmeldungen, Behördenquellen; Ankündigungen getrennt", "applicability": "Alle Peers",
+     "rationale": "Ergänzendes Pflichtkriterium Fertigung/Lieferfähigkeit"}
+  ]
+}
