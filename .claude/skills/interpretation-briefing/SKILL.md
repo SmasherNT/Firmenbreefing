@@ -29,13 +29,16 @@ freigegebenes Schlussreview nach tatsächlichem Abschluss lokal speichern.
 5. swot-analyst mit mode=interpret-v2, Kontext und Ziel delegieren; Schema prüfen.
    Bei I-Basis aktuelle Positionierung samt Kontext und Plan an den Check geben.
    Beide Validierungen per --merge-validation zusammenführen; Aufrufe in Referenz.
-6. source-reviewer Phase final mit mode=interpret-v2, kompakten I-/S-Claims,
+6. Phase final: review-work.py prepare und nach parallele-quellenpruefung.md
+   nur facts_to_verify auf Dokumentjobs desselben Modells verteilen. Danach
+   source-reviewer als Leitprüfer mit mode=interpret-v2, Quellenbefunden, kompakten I-/S-Claims,
    Abhängigkeiten, Basis-Review und interpretation-validation.json delegieren.
    review-work.py prepare nach references/pruefauftraege.md: Originalbindung,
    Dokumentbündel und neue/geänderte Ableitungen vorbereiten; Kontexte nicht kürzen.
    Entwurfsziel <Lauf>/work/review-final-draft.json; Hauptagent erzeugt review-final.md.
    Unveränderte A-Fakten übernehmen, Ableitungen und Änderungen gezielt prüfen.
-   Expliziten kompakten Reviewer-Entwurf per stamp-review.py --work mit lokalen
+   Dokumentbefunde und Leitentwurf zuerst per review-shards.py merge abgleichen;
+   den zusammengeführten Entwurf per stamp-review.py --work mit lokalen
    Einzelzeilen/Fingerprints ergänzen; fehlende Entscheidungen bleiben offen.
 7. Fragen/Korrekturen nur zuständiger Rolle zuweisen; neue Fakten benötigen
    Basis-Review. Selektiven Kontext und betroffene Bewertungen erneuern.
@@ -46,3 +49,9 @@ freigegebenes Schlussreview nach tatsächlichem Abschluss lokal speichern.
 Aufrufhilfe: python3 scripts/check-interpretation.py --help.
 Vorgegebene Laufdateien erhalten; Korrekturen versionieren und überholte Reviews
 nicht weiter als freigegeben behandeln. Nur kompakte Statusrückgabe.
+
+
+Quellenprüfung verbindlich nach references/parallele-quellenpruefung.md:
+Dokumentjobs (bis zu drei, gleiches Modell) → collect → Leitprüfung → merge →
+bestehendes stamp-review.py --work. Keine reduzierte Prüftiefe oder Modellwechsel.
+In final nur neu zu prüfende Faktenquellen verteilen, sonst ausschließlich Leitprüfung.

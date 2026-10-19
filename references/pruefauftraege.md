@@ -6,6 +6,15 @@ Bestehende vollständige Review-Entwürfe bleiben kompatibel. Fakten-/Positionie
 und SWOT-Kontexte sowie Rechercheumfang, A/B-Regeln und zwei Prüfrunden unverändert.
 Das Arbeitsblatt ist zusätzliche lokale Steuerung, keine gekürzte Faktenbasis.
 
+## Dokumentjobs als Standard
+Neue v2-Läufe verteilen die vorhandenen source_batches nach
+[parallele-quellenpruefung.md](parallele-quellenpruefung.md) auf bis zu drei
+Dokumentprüfer desselben Modells. Der bestehende Quellenprüfer konsolidiert als
+Leitprüfer. read/show-Kontexte der Dokumentprüfer sind auf eigene Quellen und
+Claims begrenzt; volle Eingaben bleiben beim Leitprüfer erreichbar. Vor stamp-review
+führt review-shards.py die expliziten Teilbefunde und Leitentscheidungen zusammen.
+Alle unten beschriebenen Inhalts-, Reuse- und Freigaberegeln bleiben erhalten.
+
 ## Hauptagent: Prüfauftrag lokal vorbereiten
 
 Nach erfolgreicher mechanischer Faktenvalidierung:
@@ -29,6 +38,9 @@ Originalcache vor Vorbereitung vollständig verfügbar machen; bei späterer Än
 oder neuer Textaufnahme Arbeitsblatt neu bauen. Keine alten Freigaben umstempeln.
 
 ## Quellenprüfer: einmal je Dokument, Entscheidung je Aussage
+
+Die folgenden vollständigen Eingaben gelten für den Leitprüfer. Dokumentjobs
+erhalten die begrenzte Jobansicht nach parallele-quellenpruefung.md.
 
 Alle bisherigen Auftrag-/Paket-/Kontext-/Abdeckungsdateien mitgeben. Zusätzlich
 Arbeitsblattpfad; den Maschinen-Snapshot nicht als langen Hash-Bericht lesen:

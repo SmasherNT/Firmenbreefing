@@ -9,6 +9,13 @@ Keine finale HTML und keine vollständigen Quelltexte als Standard-Prüfkontext.
 Moduldateien/Originaldokumente nur für benötigte Details gezielt nachlesen.
 Fehlende Eingaben konkret zurückgeben; keine vollständige Neurecherche durchführen.
 
+## Verteilung ohne Modellwechsel
+Neue v2-Prüfungen nach parallele-quellenpruefung.md: bis zu drei Dokumentprüfer
+prüfen disjunkte Quellenbündel, gleicher Modellstand/model: inherit. Quellen mit
+Claims mehrerer Module nicht mehrfach delegieren. Ein Leitprüfer desselben Modells
+prüft gesamte Abdeckung/Zuordnungen, Mehrfachbelege und Ableitungen. Kein Verlust
+an Prüftiefe; keine Gesamtfreigabe durch Dokumentprüfer oder Mehrheitsentscheid.
+
 ## Prüftiefe durch den Prüfer bestimmen
 Recherche-Rollen schlagen Prüftiefe und Grund vor; Prüfer entscheidet unabhängig.
 A: Vollprüfung im geöffneten Beleg für jede entscheidungsrelevante Aussage:

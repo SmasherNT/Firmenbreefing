@@ -27,17 +27,17 @@ Einrichtung/Systemfragen sind keine Rechercheaufträge.
    --modules <ausgewählte Module...> --out <Lauf>/work
    Bei Vergleich zusätzlich --plan <comparison-plan.json> übergeben.
    Formale Fehler an zuständige Rollen; keine fremden Moduldateien umschreiben.
-6. source-reviewer Phase basis mit Auftrag, review-packet.json, Abdeckung
-   und ggf. Netzwerk delegieren. quellenpruefung.md beachten.
-   Vorher review-work.py prepare nach references/pruefauftraege.md ausführen;
-   Dokumentbündel/Änderungsübersicht zusätzlich übergeben, bisherige Kontexte erhalten.
-   mode=facts-v2 und Entwurfsziel <Lauf>/work/review-basis-draft.json explizit nennen;
-   Hauptagent erzeugt danach review-basis.md mit stamp-review.py --work.
-   Bei v2 maschinenlesbaren Reviewer-Entwurf nach quellenpruefung.md verlangen;
-   Fingerprints mit stamp-review.py --draft <review-basis-draft.json>
-   --validation <facts-validation.json> --work <review-work-basis.json>
-   --out <review-basis.md> lokal ergänzen; Prüfer liefert explizite kompakte Gruppen.
-   Wesentliche Korrekturen gezielt zurückgeben und betroffene Claims erneut prüfen.
+6. review-work.py prepare nach references/pruefauftraege.md ausführen.
+   Quellenprüfung Phase basis nach references/parallele-quellenpruefung.md:
+   review-shards.py split, Dokumentjobs parallel an source-document-reviewer
+   mit model: inherit und getrennten Zielpfaden delegieren. Pro Job nur show-Ausgabe
+   als Standardkontext; Auftrag und Originale bleiben erreichbar. Danach collect.
+   source-reviewer desselben Modellstands als Leitprüfer mit Befunden, Abdeckung,
+   gesamter module_views-/Netzwerkprüfung und exaktem Leitentwurfsziel delegieren.
+   review-shards.py merge prüft Teilbefunde/Leitentscheidungen; Hauptagent erzeugt
+   review-basis.md mit stamp-review.py --work aus dem zusammengeführten Entwurf.
+   Keine eigene Gesamtfreigabe aus Dokumentbefunden ableiten. Wesentliche
+   Korrekturen gezielt zurückgeben und betroffene Claims erneut prüfen.
 7. Abnahme unter <Lauf>/output/abnahme.md: aufgerufene Rollen, Faktenabdeckung,
    Mechanik, Inhalt, offene Lücken und nicht geprüfte Punkte nennen.
    Keine Bewertung/HTML implizit starten; Interpretation ist separat beauftragbar.
@@ -47,3 +47,9 @@ Bei Änderungen Manifest/Plan beibehalten oder versionieren; keine Mischstände.
 Für vollständige Briefings das unternehmensweite Portfolio und die spezifischen
 Fach-/Markt-Deep-Dives nach references/themen-darstellung.md getrennt beauftragen.
 Faktenrollen liefern topics.headline/preview als geprüfte Kurztexte.
+
+
+Quellenprüfung verbindlich nach references/parallele-quellenpruefung.md:
+Dokumentjobs (bis zu drei, gleiches Modell) → collect → Leitprüfung → merge →
+bestehendes stamp-review.py --work. Keine reduzierte Prüftiefe oder Modellwechsel.
+In final nur neu zu prüfende Faktenquellen verteilen, sonst ausschließlich Leitprüfung.

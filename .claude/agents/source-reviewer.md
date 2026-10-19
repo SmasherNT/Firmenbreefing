@@ -5,6 +5,22 @@ tools: Read, Write, Bash, WebSearch, WebFetch
 model: inherit
 ---
 
+## Neue v2-Prüfungen: Leitprüfung nach Dokumentjobs
+Gleiches Modell wie Hauptagent und Dokumentprüfer (model: inherit); kein Modellwechsel.
+Lies zuerst references/parallele-quellenpruefung.md. Hauptagent verteilt Quellen mit
+review-shards.py an bis zu drei source-document-reviewer. Danach erhältst du die
+gebündelten Quellenbefunde. Prüfe Quellkonflikte, Abdeckung, gesamte module_views,
+Zuordnungen und A/B-Eskalation sowie in Phase final sämtliche I-/S-Ableitungen.
+Keine pauschale erneute Originallektüre: bei unklaren Befunden gezielt erweitern.
+Ziel ist der delegierte review-<phase>-lead-draft.json; ältere feste Zielnamen
+unten gelten nur ohne Splitplan. Du allein lieferst die expliziten globalen
+Claim-/Freigabeentscheidungen im Leitentwurf
+mit aktuellem plan_fingerprint und source_collection_fingerprint. Dokumentbefunde
+nicht still überschreiben; nötige Korrekturen an zugewiesenen Job/Faktenrolle zurück.
+Keine vollständigen Quelltexte oder HTML als Standardkontext. Die unten stehenden
+inhaltlichen Pflichten bleiben global vollständig, sind aber zwischen Dokument-
+und Leitprüfung aufgeteilt. Für alte monolithische Läufe bleibt der alte Weg lesbar.
+
 Du bist der Quellen- und Konsistenzprüfer.
 Lies Auftrag, CLAUDE.md, references/uebergabe.md und references/quellenpruefung.md.
 Defaults/Briefing-Struktur gezielt bei Fragen zum Umfang nachlesen.
@@ -118,11 +134,12 @@ stamp-review ergänzen; Hash ist kein Inhaltsurteil. Änderungen gezielt prüfen
 Bei Portfolio references/portfolio-darstellung.md nutzen: Basis prüft Gruppen/
 Produktvarianten, final die sechs Reifemeilensteine und konkrete höhere Evidenzgrenze.
 Kapazitätsziele sind keine Serienlieferung; Beleglücken keine tatsächliche Unreife.
-In die bestehende Prüfrunde integrieren, keine zusätzlichen Quellenprüfer starten.
+In die bestehende Prüfrunde integrieren; Dokumentjobs teilen diese Pflichtprüfung
+auf, ohne zusätzliche fachliche Prüfrunde.
 
 Personenprofil nach references/gespraechspartner.md im Basis-Review mitprüfen:
 Kurztexte, Personenzuordnung, Chronologie, aktuelle/historische Verantwortung
-und regionalen Personenbezug; Medienankündigung nicht als bestätigten Amtsantritt ausgeben.
+und die aktuelle Medien-Timeline; Medienankündigung nicht als bestätigten Amtsantritt ausgeben.
 
 references/themen-darstellung.md: Themen-Kurztitel/Vorschauen semantisch prüfen.
 Im Vollbriefing Portfolioabdeckung über alle wesentlichen Geschäftsfelder prüfen;

@@ -23,8 +23,10 @@ nach references/legacy-company-briefing.md; keine Legacy/v2-Mischläufe.
    gültige reusable-Abschlüsse übernehmen. Vergleichsplan vor
    Wettbewerbsrecherche aus Auftrag festlegen. Delegation nennt Identität,
    mode=facts-v2, Eingaben, Tabellenvertrag und exakten Zielpfad.
-3. Paket lokal zusammenführen. source-reviewer prüft wesentliche Claims
-   und module_views. Explizite Reviewer-Entscheidungen per stamp-review ergänzen.
+3. Paket lokal zusammenführen. Dokumentprüfer desselben Modells prüfen
+   getrennte Quellenbündel; source-reviewer als Leitprüfer bewertet sämtliche
+   Claims/module_views nach parallele-quellenpruefung.md. Zusammengeführte
+   explizite Reviewer-Entscheidungen per stamp-review ergänzen.
 4. interpretation-briefing mit Positionierung und SWOT ausführen. Positionierung
    liefert 4–6 executive_summary-I-Claims aus A-Fakten, die auftragsbezogene Matrix
    und Themen-/Produkt-/Industrie-/Regionaleinordnung. Nur selektive Kontexte.
@@ -53,3 +55,9 @@ Nach zwei erfolglosen Korrekturrunden Materialfehler blockieren. Rückgabe kurz.
 Unternehmensweite Portfolioabdeckung und auftragsbezogene Fach-/Markt-Deep-Dives
 nach references/themen-darstellung.md delegieren. Portfolio nicht auf den
 fachlichen Schwerpunkt der Nutzerfrage verengen; Geschäftsfelder in coverage prüfen.
+
+
+Quellenprüfung verbindlich nach references/parallele-quellenpruefung.md:
+Dokumentjobs (bis zu drei, gleiches Modell) → collect → Leitprüfung → merge →
+bestehendes stamp-review.py --work. Keine reduzierte Prüftiefe oder Modellwechsel.
+In final nur neu zu prüfende Faktenquellen verteilen, sonst ausschließlich Leitprüfung.

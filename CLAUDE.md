@@ -74,3 +74,11 @@ Bestehende Positionierungs-/SWOT-Kontexte und ihre vollständigen Pflichtfelder
 bleiben unverändert. Keine neue Recherche-/Prüf-/Designrolle für Darstellung.
 Fehlende Fakten gezielt an zuständige Rolle, neue Basis erneut prüfen und betroffene
 Ableitungen aktualisieren. Abnahme nennt tatsächliche Prüfungen und offene Grenzen.
+
+
+## Quellenprüfung: gleiche Modelle, getrennte Dokumentbündel
+Neue v2-Reviews nach references/parallele-quellenpruefung.md: bis zu drei
+source-document-reviewer mit model: inherit, je Quelle genau ein Job; anschließend
+source-reviewer desselben Modellstands als Leitprüfung. review-shards.py übernimmt
+Aufteilung, fokussierte Übergaben und geprüfte Zusammenführung. Kein geringerer
+Prüfumfang, kein Modellwechsel, keine automatische Freigabe.
