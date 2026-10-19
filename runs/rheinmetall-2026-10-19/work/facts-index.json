@@ -14,19 +14,19 @@
   "inputs": [
     {
       "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/context-facts.json",
-      "sha256": "50bd1aed0f6c8f298f7494c4f63e45044288bd55ca185ae9fdc13740416ea803"
+      "sha256": "b811ebc6dc1deac359ba264e96ad0bceb5d1b094e4263a80140e2f08a07cb08b"
     },
     {
       "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/portfolio-facts.json",
-      "sha256": "48d175f75cc3efa2060997294e038979d651d5699c5c50de140b1f7524359525"
+      "sha256": "887f1f68466b9d252c272a104bbcfcb72559ec0ad2130df4f93114b654575aa6"
     },
     {
       "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/cluster-facts.json",
-      "sha256": "da08f419a7a5672fa23f4b1726b487f1ae36446ef7aa429df59e8125558df05d"
+      "sha256": "9f1a86be77115949eab4a19abc255d5d5f015885ca99364a7f103f13df61906a"
     },
     {
       "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/market-facts.json",
-      "sha256": "fb8ff540bc2a836e2861b17e1da89ae3f10999ca6c47c67ab9eb96a2f2f1b594"
+      "sha256": "ee39de970ad5c72ae119e51d014e2bafd8f522042810a299427c794100b2e7c9"
     }
   ],
   "sources": [
@@ -1645,6 +1645,15 @@
       "source_kind": "Sekundärquelle"
     },
     {
+      "id": "S-d195b923c24e0507",
+      "name": "Rheinmetall AG",
+      "title": "Subsidiaries & JVs",
+      "url": "https://www.rheinmetall.com/en/company/subsidiaries",
+      "published_date": null,
+      "accessed_date": "2026-10-19",
+      "source_kind": "Unternehmensseite"
+    },
+    {
       "id": "S-d32c73540389046f",
       "name": "BÖRSE ONLINE (dpa-AFX)",
       "title": "'Capital': Ausrüstung für das Heer kommt später",
@@ -1918,15 +1927,16 @@
       "role": "context",
       "claim": {
         "id": "T-04",
-        "statement": "Seit 1. Januar 2026 berichtet Rheinmetall in fünf Segmenten: Vehicle Systems, Weapon and Ammunition, Air Defence, Digital Systems und Naval Systems. Air Defence und Digital Systems entstanden zu Jahresbeginn 2026 aus der Aufspaltung des früheren Segments Electronic Solutions; Naval Systems wurde nach der Übernahme von NVL Ende Februar/März 2026 erstmals zum Ende des ersten Quartals 2026 als eigenes Segment einbezogen.",
+        "statement": "Rheinmetall berichtet 2026 in fünf Segmenten: Vehicle Systems, Weapon and Ammunition, Air Defence, Digital Systems und Naval Systems. Air Defence und Digital Systems entstanden zu Jahresbeginn 2026 aus der Aufspaltung des früheren Segments Electronic Solutions. Naval Systems wurde nach dem Erwerb von NVL am 27.02.2026 laut Halbjahresbericht erst ab März 2026 in die Konzernstruktur aufgenommen und im Q1-Bericht erstmals als Segment berichtet.",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-559e0ac19cabd1d0",
-          "S-5b640196f4e87dad"
+          "S-5b640196f4e87dad",
+          "S-3dad8b811c925694"
         ],
         "evidence": "Aus Pressemitteilungen vom 11.03.2026 und 06.08.2026: neue Segmentstruktur zum 01.01.2026; Naval Systems seit Ende Q1 2026 eigenständig berichtet.",
         "location": "Siehe evidence_items",
-        "uncertainty": "Selbstbeschreibung der Berichtsstruktur; Naval Systems wird erst nach dem Stichtag 1. Quartal ganz in der Konzernrechnung abgebildet (Übernahme zum 01.03.2026).",
+        "uncertainty": "Quellenabweichung: Die Pressemitteilung vom 11.03.2026 nennt alle fünf Segmente als zum 01.01.2026 eingerichtet; laut Halbjahresbericht ist Naval Systems erst ab März 2026 Teil der Konzernstruktur (Erwerb 27.02.2026). Naval-Zahlen umfassen nur die Zeit seit März 2026.",
         "evidence_items": [
           {
             "source_id": "S-559e0ac19cabd1d0",
@@ -1939,12 +1949,18 @@
             "text": "Auszug: 'Naval Systems ... wurde zum Ende des ersten Quartals 2026 erstmals als eigenständiges Segment in die Berichterstattung einbezogen.'",
             "mode": "Auszug",
             "location": "Abschnitt 'Naval Systems', Absatz 1"
+          },
+          {
+            "source_id": "S-3dad8b811c925694",
+            "text": "Auszug: 'Nach dem am 27. Februar 2026 vollzogenen Erwerb von Naval Vessels Lürssen ... wurde die neue Division Naval Systems ab März 2026 in die Konzernstruktur aufgenommen.'",
+            "mode": "Auszug",
+            "location": "Zwischenlagebericht, Abschnitt zur Konzernstruktur (PDF-Seite 8)"
           }
         ],
         "proposed_depth": "A",
         "depth_reason": "Segmentabgrenzung der Berichterstattung"
       },
-      "fingerprint": "6855cd84a5e912c04e6fd5849cbf7fd0fa86d57bca338b194ff8e59def49290c"
+      "fingerprint": "0f059fb583dbb81201b20231425264d834acceab9c46d341a6eea466fe0747a0"
     },
     {
       "role": "context",
@@ -2227,7 +2243,7 @@
       "role": "context",
       "claim": {
         "id": "T-20",
-        "statement": "Termine nach dem Stichtag laut Rheinmetall-IR: Veröffentlichung der Q3-2026-Zahlen am 05.11.2026; Capital Markets Day 2026 bei Blohm+Voss (Naval Systems) in Hamburg, im Finanzkalender mit 25.–27.11.2026, auf der CMD-Seite mit 26.–27.11.2026 angegeben.",
+        "statement": "Termine nach dem Stichtag laut Rheinmetall-IR: Veröffentlichung der Q3-2026-Zahlen am 05.11.2026; Capital Markets Day 2026 in Hamburg (laut Finanzkalender bei Blohm+Voss, einem Standort der Division Naval Systems), im Finanzkalender mit 25.–27.11.2026, auf der CMD-Seite mit 26.–27.11.2026 angegeben.",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-0bd71507c5c59e04",
@@ -2253,7 +2269,7 @@
         "proposed_depth": "B",
         "depth_reason": "Folgetermine"
       },
-      "fingerprint": "5bf1e4c78b17f5ed1ba134ec848c1282e9f5005b79eb9d22565a04951eca7299"
+      "fingerprint": "9947f2c6e5dcec8d99adeb65c8f9c13c8cab5eaa3b5f64d64edde4a50375e948"
     },
     {
       "role": "context",
@@ -2390,20 +2406,35 @@
       "role": "context",
       "claim": {
         "id": "T-E07",
-        "statement": "Rheinmetall meldete am 02.03.2026 den Vollzug der Übernahme von NVL (Naval Vessels Lürssen, Bremen-Vegesack) einschließlich aller Tochtergesellschaften zum 01.03.2026 nach Erhalt aller kartellrechtlichen Freigaben; der Kaufpreis bleibt vertraulich. Mit NVL entsteht die Division Naval Systems.",
+        "statement": "Die Rheinmetall Naval Systems GmbH erwarb laut Halbjahresfinanzbericht am 27.02.2026 100 % der Anteile und Stimmrechte an der NVL (Naval Vessels Lürssen, Bremen-Vegesack); Rheinmetall meldete den Vollzug am 02.03.2026 nach Erhalt aller kartellrechtlichen Freigaben mit Übergang zum 01.03.2026. Der Kaufpreis bleibt vertraulich.",
         "kind": "Herstellerangabe",
         "source_ids": [
-          "S-042b26990fdc2a9d"
+          "S-042b26990fdc2a9d",
+          "S-3dad8b811c925694"
         ],
-        "evidence": "Auszug: 'Rheinmetall has now been given all antitrust approvals for the acquisition of Naval Vessels Lürssen ... The transition was concluded on 1 March 2026. Both parties have agreed on keeping the purchasing price concealed.'",
-        "location": "Pressemitteilung, Key Facts und Absatz 1",
-        "uncertainty": "Kaufpreis nicht veröffentlicht; Medienangaben zum Preis wurden nicht übernommen.",
+        "evidence": "Pressemitteilung vom 02.03.2026 und Halbjahresfinanzbericht 2026.",
+        "location": "Siehe evidence_items",
+        "uncertainty": "Ereignisdatum = Erwerb/Closing 27.02.2026; Übergang 01.03.2026; Meldedatum der Pressemitteilung 02.03.2026. Kaufpreis nicht veröffentlicht; Medienangaben nicht übernommen.",
         "proposed_depth": "A",
         "depth_reason": "Übernahme/Marine",
         "event_status": "vollzogen",
-        "event_date": "2026-03-02"
+        "event_date": "2026-02-27",
+        "evidence_items": [
+          {
+            "source_id": "S-042b26990fdc2a9d",
+            "text": "Auszug: 'Rheinmetall has now been given all antitrust approvals for the acquisition of Naval Vessels Lürssen ... The transition was concluded on 1 March 2026. Both parties have agreed on keeping the purchasing price concealed.'",
+            "mode": "Auszug",
+            "location": "Pressemitteilung, Key Facts und Absatz 1"
+          },
+          {
+            "source_id": "S-3dad8b811c925694",
+            "text": "Auszug: 'Am 27. Februar 2026 hat die Rheinmetall Naval Systems GmbH 100% der Anteile und damit 100% der Stimmrechte an der NVL erworben.'",
+            "mode": "Auszug",
+            "location": "Zwischenlagebericht, Abschnitt 'Erwerb Naval Vessels Lürssen' (PDF-Seite 8)"
+          }
+        ]
       },
-      "fingerprint": "046107fd0a5ddfdba9e3e837cd6136dceb28069a80a2a717602b1fe1fcc8da2a"
+      "fingerprint": "dd50ae9713fd2934511d61a39445ec60610e9b50986fd8ef0096b76e3567eb5d"
     },
     {
       "role": "context",
@@ -2549,13 +2580,13 @@
         ],
         "evidence": "Auszug/Paraphrase: 'The contract package was awarded on 29 May 2026 by the Directorate General for Armaments and falls under the European Union’s Security Action for Europe (SAFE) programme ... total value of €5.7 billion. The relevant contracts have now been signed ... Deliveries are scheduled to begin 2028 and be completed by 2030.'",
         "location": "Pressemitteilung, Absätze 1–4",
-        "uncertainty": "Es wurde keine unabhängige Zweitquelle (z. B. rumänisches Ministerium) geöffnet; die Aufteilung auf Segmente ergibt sich aus dem Halbjahresbericht (T-05, T-06, T-09).",
+        "uncertainty": "Es wurde keine unabhängige Zweitquelle (z. B. rumänisches Ministerium) geöffnet; die Aufteilung auf Segmente ergibt sich aus dem Halbjahresbericht (T-05, T-06, T-09). Ereignisdatum = Vergabe 29.05.2026; Meldung/Unterzeichnungsmitteilung am 02.06.2026.",
         "proposed_depth": "A",
         "depth_reason": "Größtes internationales Auftragspaket",
         "event_status": "beauftragt (Verträge laut Unternehmen unterzeichnet)",
-        "event_date": "2026-06-02"
+        "event_date": "2026-05-29"
       },
-      "fingerprint": "bcb6f6287971dd5ede59dca9a8b5e9f42a3e02e5338ac8929de692def86e6b48"
+      "fingerprint": "4b791a4ecc8ff08dbf911169b13f3026f4249a202708affecaaa9c44734d85e2"
     },
     {
       "role": "context",
@@ -2621,20 +2652,20 @@
       "role": "context",
       "claim": {
         "id": "T-E18",
-        "statement": "Rheinmetall meldete am 01.07.2026 den Vollzug der Übernahme der Mehrheitsbeteiligung an DOK-ING (Kroatien; unbemannte Fahrzeuge, Minenräumung); das Unternehmen firmiert künftig als 'Rheinmetall Unmanned Vehicles d.o.o.' (Vertragsunterzeichnung im März 2026 in Zagreb); Basis ist die hybride Komodo-Plattform (Nutzlast über 8,5 t); DOK-ING hat laut Unternehmen rund 500 Plattformen an Kunden in über 40 Staaten geliefert.",
+        "statement": "Rheinmetall meldete am 01.07.2026 den Vollzug der Übernahme der Mehrheitsbeteiligung (51 %) an DOK-ING (Kroatien; unbemannte Fahrzeuge, Minenräumung); das Unternehmen firmiert künftig als 'Rheinmetall Unmanned Vehicles d.o.o.' (Vertragsunterzeichnung im März 2026 in Zagreb); Basis ist die hybride Komodo-Plattform (Nutzlast über 8,5 t); DOK-ING hat laut Unternehmen rund 500 Plattformen an Kunden in über 40 Staaten geliefert.",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-749ebb1bb3cf3947"
         ],
-        "evidence": "Auszug/Paraphrase: 'Closing erfolgt: Rheinmetall übernimmt Mehrheitsbeteiligung an DOK-ING ... firmiert von nun an unter dem Namen „Rheinmetall Unmanned Vehicles d.o.o.“ ... Komodo ... Nutzlast von über 8,5 Tonnen ... rund 500 Plattformen an Kunden in über 40 Staaten ausgeliefert.'",
+        "evidence": "Auszug/Paraphrase: 'Closing erfolgt: Rheinmetall übernimmt Mehrheitsbeteiligung an DOK-ING ... firmiert von nun an unter dem Namen „Rheinmetall Unmanned Vehicles d.o.o.“ ... Komodo ... Nutzlast von über 8,5 Tonnen ... rund 500 Plattformen an Kunden in über 40 Staaten ausgeliefert.' Ergänzung: 'Rheinmetall erwurb 51% des Unterne[hmens]' (Abschnitt 'Über uns').",
         "location": "Pressemitteilung, Keyfacts und Absätze 1–4",
-        "uncertainty": "Genauer Anteil und Kaufpreis in diesem Dokument nicht genannt; die Beschäftigten-/Standortangaben der Unternehmensbeschreibung dieser Mitteilung sind veraltet (siehe T-02).",
+        "uncertainty": "Kaufpreis nicht genannt; die Beschäftigten-/Standortangaben der Unternehmensbeschreibung dieser Mitteilung sind veraltet (siehe T-02).",
         "proposed_depth": "B",
         "depth_reason": "Akquisition unbemannte Systeme",
         "event_status": "vollzogen (laut Unternehmen)",
         "event_date": "2026-07-01"
       },
-      "fingerprint": "23083363cd21efd0389b31c4f9c17c901baa94071a95bcae01a403a1121bc69c"
+      "fingerprint": "3fc4e360dfd7e25fbe1092df26990217c3bceb8d14c6759936809cf376abac86"
     },
     {
       "role": "context",
@@ -2647,13 +2678,13 @@
         ],
         "evidence": "Auszug: 'Rheinmetall today unveiled the GMF 140, a next-generation 140-metre, 6,000+ tonne guided missile frigate ... Rheinmetall is targeting international markets'.",
         "location": "Pressemitteilung, Absatz 1",
-        "uncertainty": "Designvorstellung ohne belegten Kunden/Auftrag; Hinweis auf einen nordamerikanischen Zielmarkt stammt aus Zweitberichten.",
+        "uncertainty": "Designvorstellung ohne belegten Kunden oder Auftrag; Rheinmetall nennt im Original selbst ein Beschaffungsprojekt in Nordamerika als zunächst angestrebten Markt (Angebotsabsicht, kein Vertrag).",
         "proposed_depth": "B",
         "depth_reason": "Neues Marineprodukt",
         "event_status": "vorgestellt (Entwurf; kein Kunde benannt)",
         "event_date": "2026-08-03"
       },
-      "fingerprint": "539344d9fd53e3451864fecd9fb71ba7f477b368b7ee02be41dc7f9be6796d10"
+      "fingerprint": "6517dcd84d1b43afe79d04b0c0c89086584ccb111fb580e09057f6e19289bef0"
     },
     {
       "role": "context",
@@ -2735,20 +2766,20 @@
       "role": "context",
       "claim": {
         "id": "T-E24",
-        "statement": "Rheinmetall ICEYE Space Solutions gab am 06.10.2026 bekannt, dass die Bundeswehr im Programm SPOCK 1 direkten Zugriff auf mehrere dedizierte SAR-Aufklärungssatelliten erhalten hat und die Serienfertigung der Satelliten am Standort Neuss begonnen hat.",
+        "statement": "Rheinmetall ICEYE Space Solutions gab am 06.10.2026 bekannt, dass die Bundeswehr im Programm SPOCK 1 direkten Zugriff auf mehrere dedizierte SAR-Aufklärungssatelliten erhalten hat und die Fertigung (Produktionsbeginn) der SAR-Satelliten am Standort Neuss begonnen hat.",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-04cc080af88f833d"
         ],
         "evidence": "Auszug: 'The German armed forces now have direct access to several Synthetic Aperture Radar (SAR) reconnaissance satellites dedicated exclusively to this purpose ... production of SAR satellites has successfully commenced at the Neuss site.'",
         "location": "Pressemitteilung, Key Facts und Absatz 1–2",
-        "uncertainty": "Herstellerangabe; Zahl der Satelliten und Einsatzbereitschaft nicht genannt.",
+        "uncertainty": "Herstellerangabe; 'production has commenced' – Stückzahl, Serienreife und Zahl der verfügbaren Satelliten nicht genannt.",
         "proposed_depth": "B",
         "depth_reason": "Raumfahrt",
         "event_status": "Meilenstein erreicht (laut Unternehmen)",
         "event_date": "2026-10-06"
       },
-      "fingerprint": "479e35da48cbfb024e1b679a518aeefa47f7a3f213e7c3380c848c677c793f2d"
+      "fingerprint": "171d0ceb759a8f9c5918518adc87fa563051bba4838083db281b9844a7b671af"
     },
     {
       "role": "context",
@@ -2830,7 +2861,7 @@
       "role": "context",
       "claim": {
         "id": "T-E29",
-        "statement": "Rheinmetall plant laut IR-Seiten den Capital Markets Day 2026 in Hamburg bei Blohm+Voss (Naval Systems); Datum im Finanzkalender 25.–27.11.2026, auf der CMD-Seite 26.–27.11.2026.",
+        "statement": "Rheinmetall plant laut IR-Seiten den Capital Markets Day 2026 in Hamburg (laut Finanzkalender bei Blohm+Voss, einem Standort der Division Naval Systems); Datum im Finanzkalender 25.–27.11.2026, auf der CMD-Seite 26.–27.11.2026.",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-0bd71507c5c59e04",
@@ -2858,7 +2889,7 @@
         "event_status": "angekündigt (Termin 25.–27. bzw. 26.–27.11.)",
         "event_date": "2026-11-25"
       },
-      "fingerprint": "37621ebdeba5d04f824d57f9c0eeb876966170ddf7663299c031067cea582f65"
+      "fingerprint": "7ab83d0685f60fa9b9f8ee67a4e5322552400c988281a059e0b608b2ae0532bb"
     },
     {
       "role": "context",
@@ -3203,26 +3234,33 @@
       "role": "portfolio",
       "claim": {
         "id": "P-S01",
-        "statement": "Seit dem 1. Januar 2026 berichtet Rheinmetall in den Segmenten Vehicle Systems, Weapon and Ammunition, Air Defence, Digital Systems und Naval Systems; Air Defence und Digital Systems entstanden zu Beginn des Geschäftsjahres 2026 aus der Aufteilung des früheren Segments Electronic Solutions (laut Rheinmetall).",
+        "statement": "Rheinmetall berichtet 2026 in den Segmenten Vehicle Systems, Weapon and Ammunition, Air Defence, Digital Systems und Naval Systems; Air Defence und Digital Systems entstanden zu Beginn des Geschäftsjahres 2026 aus der Aufteilung des früheren Segments Electronic Solutions. Naval Systems nennt die Mitteilung vom 11.03.2026 unter den zum 1.1.2026 neu gebildeten Segmenten, der Halbjahresbericht führt es jedoch erst seit Ende des ersten Quartals 2026 (nach der NVL-Übernahme Ende Februar/März 2026) als eigenständiges Segment in der Berichterstattung (laut Rheinmetall).",
         "kind": "Fakt",
         "source_ids": [
-          "S-559e0ac19cabd1d0"
+          "S-559e0ac19cabd1d0",
+          "S-5f102cfea2da2738"
         ],
-        "evidence": "Paraphrase: Gruppenstruktur zum 1.1.2026 neu aufgestellt; neben Vehicle Systems und Weapon and Ammunition neue Segmente Air Defence, Digital Systems, Naval Systems; Fußnote: Digital Systems und Air Defence aus Aufspaltung der früheren Division Electronic Solutions.",
-        "location": "Abschnitt 'Rheinmetall Group guidance for 2026' inkl. Fußnote [1]",
-        "uncertainty": "",
+        "evidence": "Paraphrase: Gruppenstruktur zum 1.1.2026 neu aufgestellt; neben Vehicle Systems und Weapon and Ammunition neue Segmente Air Defence, Digital Systems, Naval Systems; Fußnote: Digital Systems und Air Defence aus Aufspaltung der früheren Division Electronic Solutions. | Paraphrase: Naval Systems wurde zum Ende des ersten Quartals 2026 erstmals als eigenständiges Segment in die Berichterstattung einbezogen; Umsatz seit der Übernahme Ende Februar 2026.",
+        "location": "Abschnitt 'Rheinmetall Group guidance for 2026' inkl. Fußnote [1] | Seite 4, Abschnitt 'Naval Systems'",
+        "uncertainty": "Quellkonflikt zum Beginn von Naval Systems als Segment: Mitteilung vom 11.03.2026 (Segmente zum 1.1.2026 neu aufgestellt) vs. Halbjahresbericht (erstmals Ende Q1 2026, nach Übernahme).",
         "evidence_items": [
           {
             "source_id": "S-559e0ac19cabd1d0",
             "text": "Paraphrase: Gruppenstruktur zum 1.1.2026 neu aufgestellt; neben Vehicle Systems und Weapon and Ammunition neue Segmente Air Defence, Digital Systems, Naval Systems; Fußnote: Digital Systems und Air Defence aus Aufspaltung der früheren Division Electronic Solutions.",
             "mode": "Paraphrase",
             "location": "Abschnitt 'Rheinmetall Group guidance for 2026' inkl. Fußnote [1]"
+          },
+          {
+            "source_id": "S-5f102cfea2da2738",
+            "text": "Paraphrase: Naval Systems wurde zum Ende des ersten Quartals 2026 erstmals als eigenständiges Segment in die Berichterstattung einbezogen; Umsatz seit der Übernahme Ende Februar 2026.",
+            "mode": "Paraphrase",
+            "location": "Seite 4, Abschnitt 'Naval Systems'"
           }
         ],
         "proposed_depth": "A",
         "depth_reason": "Segmentabgrenzung der Portfolio-Tabelle"
       },
-      "fingerprint": "4c6ecc06f1eca3ebfed5007de215920acf25cb6e60c1fec5a2850185b0dd75b8"
+      "fingerprint": "6d09356103072bf6e43d720d42233a61554931cd8935ed0bd62de201e3631f9c"
     },
     {
       "role": "portfolio",
@@ -3697,7 +3735,7 @@
         ],
         "evidence": "Paraphrase: Übergabe der ersten vier Lynx KF-41 in Montelibretti; Erstvertrag über 21 A2CS-Combat-Fahrzeuge; Lance-Turm zunächst, später Hitfist.",
         "location": "Absätze 1 und 5-6",
-        "uncertainty": "",
+        "uncertainty": "Quelle nennt 21 Fahrzeuge im Erstvertrag, aber nur 4 + 16 = 20 Fahrzeuge mit zugeordneter Turmkonfiguration; Differenz nicht erklärt.",
         "evidence_items": [
           {
             "source_id": "S-d5770c619bc98981",
@@ -3711,7 +3749,7 @@
         "event_date": "2026-01-27",
         "event_status": "geliefert (erste 4 von 21)"
       },
-      "fingerprint": "3e7254bb3f9c5f889779170336ce17f058382a7aa379d818dd47935549186188"
+      "fingerprint": "7cace4476f0d6b3505338d545dfd06846a2273f31f01753ebdd08aa87b23a772"
     },
     {
       "role": "portfolio",
@@ -4032,18 +4070,18 @@
       "role": "portfolio",
       "claim": {
         "id": "P-V71",
-        "statement": "Rheinmetall Canada zeigte zur CANSEC 2026 (27.-28.05.2026) die Mission-Master-Familie, darunter erstmals in Kanada das amphibische Modell SP2 und die Arctic-Edition XT2; die PATH-Autonomie wurde laut Rheinmetall in Kanada entwickelt.",
+        "statement": "Rheinmetall Canada zeigte zur CANSEC 2026 (27.-28.05.2026) die Mission-Master-Familie, darunter erstmals in Kanada das amphibische Modell SP2 und die Arctic-Edition XT2; Rheinmetall beschreibt die Mission-Master-Familie als Teil kanadisch entwickelter Lösungen, deren Export sie vorangetrieben habe; die Navigation steuert die Software PATH.",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-81a27e8c4bbffb44"
         ],
-        "evidence": "Paraphrase: Mission Master SP2 mit amphibischen Fähigkeiten und XT2 Arctic Edition erstmals in Kanada ausgestellt; PATH steuert die Mission-Master-Fahrzeuge.",
+        "evidence": "Paraphrase: Mission Master SP2 mit amphibischen Fähigkeiten und XT2 Arctic Edition erstmals in Kanada ausgestellt; Rheinmetall PATH steuert die Mission-Master-Fahrzeuge; Familie als Treiber von Exporten kanadisch entwickelter Lösungen beschrieben.",
         "location": "Seite 1, Absätze 1-3",
         "uncertainty": "Messeankündigung ohne Beschaffungsangabe.",
         "evidence_items": [
           {
             "source_id": "S-81a27e8c4bbffb44",
-            "text": "Paraphrase: Mission Master SP2 mit amphibischen Fähigkeiten und XT2 Arctic Edition erstmals in Kanada ausgestellt; PATH steuert die Mission-Master-Fahrzeuge.",
+            "text": "Paraphrase: Mission Master SP2 mit amphibischen Fähigkeiten und XT2 Arctic Edition erstmals in Kanada ausgestellt; Rheinmetall PATH steuert die Mission-Master-Fahrzeuge; Familie als Treiber von Exporten kanadisch entwickelter Lösungen beschrieben.",
             "mode": "Paraphrase",
             "location": "Seite 1, Absätze 1-3"
           }
@@ -4053,7 +4091,7 @@
         "event_date": "2026-05-26",
         "event_status": "Messepräsentation"
       },
-      "fingerprint": "2bbc50b2b6e4874fdb5a7f6838ff8bf19749a9c2f522086234ccd5065ca97ca4"
+      "fingerprint": "1b536e364671cc8e78a43ce524c04822d1cb47c6a5e541453b8c03911ab0a4c1"
     },
     {
       "role": "portfolio",
@@ -5040,9 +5078,9 @@
         "proposed_depth": "A",
         "depth_reason": "SPOCK 1 Betriebsstatus",
         "event_date": "2026-10-06",
-        "event_status": "im Betrieb (Zugriff) / Serienproduktion begonnen"
+        "event_status": "im Betrieb (Zugriff) / Produktion begonnen"
       },
-      "fingerprint": "4ef1ff9699cb9ff4bc16d2bee5efc89654518eeb9f299f59b4197910a707a046"
+      "fingerprint": "522052b5b638c9a387a1db1159bc9aa3a05ab6d7e6ef625d0b39c75b9a06c0da"
     },
     {
       "role": "portfolio",
@@ -5401,7 +5439,7 @@
         ],
         "evidence": "Paraphrase: Serienproduktion des K3 Scout bei Blohm+Voss gestartet; JV Rheinmetall Kraken GmbH; Kapazität zunächst rund 200/Jahr, bis zu 1.000 skalierbar.",
         "location": "Key Facts und Absätze 1-3",
-        "uncertainty": "Kundenaufträge in der geöffneten Mitteilung nicht genannt.",
+        "uncertainty": "Kundenaufträge in der geöffneten Mitteilung nicht genannt; Gründungs-/Vertragsdatum des JV laut Cluster-Claim C-STR-13 widersprüchlich (JV-Vertrag März 2026 laut Halbjahresbericht vs. Gründung 2025 laut Naval News).",
         "evidence_items": [
           {
             "source_id": "S-2c823bb34ce62b61",
@@ -5415,7 +5453,7 @@
         "event_date": "2026-04-20",
         "event_status": "Serienproduktion gestartet (laut Hersteller)"
       },
-      "fingerprint": "46990f06b8221efc65c265555b0e1ed760bb70664afb32e163e295ad3212764c"
+      "fingerprint": "39a27fcd492091f4a2284f45454b665d346f1b202366bfe6092cf56ecf03483e"
     },
     {
       "role": "portfolio",
@@ -5931,7 +5969,7 @@
         ],
         "evidence": "Paraphrase: Vereinbarung über JV-Gründung; Anteile 51/49; ca. 1 Mrd EUR; Standort im Raum Sopot; Produktionsbeginn Geschosshüllen 2027, energetische Materialien ab 2028.",
         "location": "Keyfacts und Absätze 1-3",
-        "uncertainty": "Zum Stichtag nicht bestätigt, ob das JV gegründet wurde; berichtete Überprüfung durch die bulgarische Regierung (Juli 2026) konnte nicht aus geöffneter Quelle belegt werden.",
+        "uncertainty": "Status umstritten: Laut Cluster-Claim C-STR-33 (bne IntelliNews) erklärte der bulgarische Wirtschaftsminister im Juli 2026, es gebe keinen Gründungsvertrag und kein JV, die Regierung wolle neu verhandeln; Gründung der Gesellschaft nicht belegt.",
         "evidence_items": [
           {
             "source_id": "S-b51615fe3bffe105",
@@ -5943,9 +5981,9 @@
         "proposed_depth": "A",
         "depth_reason": "Bulgarien JV-Plan",
         "event_date": "2025-10-28",
-        "event_status": "angekündigt"
+        "event_status": "angekündigt (Status umstritten)"
       },
-      "fingerprint": "846a6059f7ccad4012836d45a2e6a478975bad27063b3e9829634b362f1d5e7d"
+      "fingerprint": "e429d91cd90dd121b5fdd68ee8ef7593b826d4f7f73b857227bc13b157046b96"
     },
     {
       "role": "portfolio",
@@ -6080,33 +6118,40 @@
       "role": "portfolio",
       "claim": {
         "id": "P-R100",
-        "statement": "American Rheinmetall (Hauptsitz Auburn Hills, Michigan) betreibt laut Unternehmensseite Standorte in Michigan (u. a. Lansing, Lapeer, Plymouth), Ohio (St. Marys) und Maine (Biddeford); das Unternehmen übernahm Ende 2024 Loc Performance Products (Ketten-/Mechaniksysteme, Fertigungsstrukturen) und beschäftigt laut Rheinmetall (AUSA 2026) über 1.500 Mitarbeitende in Arkansas, Maine, Michigan, Ohio, Texas und Virginia.",
+        "statement": "In den USA tritt Rheinmetall mit zwei Gesellschaften auf: American Rheinmetall Defense, Inc. ist laut Konzernliste (International Subsidiaries – Hubs) der US-Hub, mit Sitz in Vienna (Virginia) laut Hinweiskarte der AUSA-Mitteilung; American Rheinmetall (American Rheinmetall Vehicles LLC, dba) hat laut eigener Unternehmensseite den Hauptsitz in Auburn Hills (Michigan) und nennt Kontaktstandorte in Biddeford (Maine), Lansing, Lapeer und Plymouth (Michigan) sowie St. Marys (Ohio); Loc Performance Products (Michigan/Ohio) wurde Ende 2024 übernommen. Rheinmetall gibt zum AUSA 2026 an, in den USA über 1.500 Mitarbeitende in Arkansas, Maine, Michigan, Ohio, Texas und Virginia zu beschäftigen.",
         "kind": "Fakt",
         "source_ids": [
           "S-495b6b686aece696",
-          "S-6797a3b3e68d3be1"
+          "S-6797a3b3e68d3be1",
+          "S-d195b923c24e0507"
         ],
-        "evidence": "Paraphrase: Headquarters Auburn Hills; Kontaktstandorte Biddeford, Lansing, Lapeer, Plymouth, St. Marys; Übernahme Loc Performance Products Ende 2024; Tier-1-/OEM-Rolle. | Paraphrase: Domestic footprint spanning Arkansas, Maine, Michigan, Ohio, Texas and Virginia; workforce of over 1,500.",
-        "location": "Kontaktangaben und Abschnitt 'Strategic U.S. Growth' | Key Facts und Absatz 2",
-        "uncertainty": "Funktionen der einzelnen Michigan-/Ohio-Standorte nicht aufgeschlüsselt.",
+        "evidence": "Paraphrase: Headquarters Auburn Hills; Kontaktstandorte Biddeford, Lansing, Lapeer, Plymouth, St. Marys; DBA-Fußnote zu American Rheinmetall Vehicles LLC; Übernahme Loc Performance Products Ende 2024. | Paraphrase: Domestic footprint spanning Arkansas, Maine, Michigan, Ohio, Texas and Virginia; workforce of over 1,500 U.S. employees; Hinweiskarte: American Rheinmetall Defense, Inc., headquartered in Vienna, Virginia, is the U.S. hub. | Paraphrase: American Rheinmetall Defense, Inc. unter 'International Subsidiaries – Hubs'; American Rheinmetall und American Rheinmetall Vehicles unter Subsidiaries of the Vehicle Systems Division.",
+        "location": "Kontaktangaben, Abschnitte 'About us' und 'Strategic U.S. Growth' | Key Facts, Absatz 2 und Karte 'American Rheinmetall Defense, Inc.' | Abschnitte 'Subsidiaries of the Vehicle Systems Division' und 'International Subsidiaries – Hubs'",
+        "uncertainty": "Die Beschäftigtenzahl und die sechs Bundesstaaten gelten für 'American Rheinmetall' insgesamt, nicht je Gesellschaft; Funktionen der Michigan-/Ohio-Standorte nicht aufgeschlüsselt.",
         "evidence_items": [
           {
             "source_id": "S-495b6b686aece696",
-            "text": "Paraphrase: Headquarters Auburn Hills; Kontaktstandorte Biddeford, Lansing, Lapeer, Plymouth, St. Marys; Übernahme Loc Performance Products Ende 2024; Tier-1-/OEM-Rolle.",
+            "text": "Paraphrase: Headquarters Auburn Hills; Kontaktstandorte Biddeford, Lansing, Lapeer, Plymouth, St. Marys; DBA-Fußnote zu American Rheinmetall Vehicles LLC; Übernahme Loc Performance Products Ende 2024.",
             "mode": "Paraphrase",
-            "location": "Kontaktangaben und Abschnitt 'Strategic U.S. Growth'"
+            "location": "Kontaktangaben, Abschnitte 'About us' und 'Strategic U.S. Growth'"
           },
           {
             "source_id": "S-6797a3b3e68d3be1",
-            "text": "Paraphrase: Domestic footprint spanning Arkansas, Maine, Michigan, Ohio, Texas and Virginia; workforce of over 1,500.",
+            "text": "Paraphrase: Domestic footprint spanning Arkansas, Maine, Michigan, Ohio, Texas and Virginia; workforce of over 1,500 U.S. employees; Hinweiskarte: American Rheinmetall Defense, Inc., headquartered in Vienna, Virginia, is the U.S. hub.",
             "mode": "Paraphrase",
-            "location": "Key Facts und Absatz 2"
+            "location": "Key Facts, Absatz 2 und Karte 'American Rheinmetall Defense, Inc.'"
+          },
+          {
+            "source_id": "S-d195b923c24e0507",
+            "text": "Paraphrase: American Rheinmetall Defense, Inc. unter 'International Subsidiaries – Hubs'; American Rheinmetall und American Rheinmetall Vehicles unter Subsidiaries of the Vehicle Systems Division.",
+            "mode": "Paraphrase",
+            "location": "Abschnitte 'Subsidiaries of the Vehicle Systems Division' und 'International Subsidiaries – Hubs'"
           }
         ],
         "proposed_depth": "A",
-        "depth_reason": "USA Standorte"
+        "depth_reason": "USA Standorte und Rechtsträger"
       },
-      "fingerprint": "4aceffa42e00975a9d3ef0fc7f58e1aa746d65db7a02c734e7874a3ef38e1fce"
+      "fingerprint": "4d9dab9ddc48ebd279a41ddc824a4ea52c22e03fb71e9383e6dc0947f3662a28"
     },
     {
       "role": "portfolio",
@@ -6776,23 +6821,38 @@
       "role": "cluster",
       "claim": {
         "id": "C-STR-15",
-        "statement": "Laut Lider Media bestätigte die Lürssen-Gruppe (Eigentümer Peter Lürssen) den Verkauf der NVL an Rheinmetall; Lürssen wolle sich auf zivile Megayachten konzentrieren.",
+        "statement": "Laut Lider Media bestätigte die Lürssen-Gruppe (Eigentümer Peter Lürssen) im September 2025 den Verkauf der NVL an Rheinmetall; Lürssen wolle sich auf zivile Megayachten konzentrieren. Laut Rheinmetall-Pressemitteilung vom 02.03.2026 ist die Übernahme der NVL, des militärischen Bereichs der Lürssen-Gruppe, abgeschlossen.",
         "kind": "Partnerangabe",
         "source_ids": [
-          "S-86b532adf4a3d541"
+          "S-86b532adf4a3d541",
+          "S-042b26990fdc2a9d"
         ],
-        "evidence": "Paraphrase: Lürssen-Gruppe bestätigt, dass NVL Teil von Rheinmetall wird; Integration erfolge schrittweise, Lürssen fokussiere sich auf den Bau ziviler Megayachten.",
-        "location": "Artikeltext, 1. und 4. Absatz",
-        "uncertainty": "Nur Sekundärwiedergabe einer Lürssen-Aussage; keine Lürssen-Originalmitteilung geöffnet; Artikel von Sept. 2025 (vor Vollzug).",
+        "evidence": "Paraphrase (Lider Media): Lürssen-Gruppe bestätigt, dass NVL Teil von Rheinmetall wird; Integration erfolge schrittweise, Lürssen fokussiere sich auf den Bau ziviler Megayachten. | Auszug (Rheinmetall AG): „Düsseldorf-based technology group Rheinmetall has completed the company take-over of NVL, the military part of the Lürssen Group.“",
+        "evidence_items": [
+          {
+            "source_id": "S-86b532adf4a3d541",
+            "mode": "Paraphrase",
+            "text": "Lürssen-Gruppe bestätigt, dass NVL Teil von Rheinmetall wird; Integration erfolge schrittweise, Lürssen fokussiere sich auf den Bau ziviler Megayachten.",
+            "location": "Artikeltext, 1. und 4. Absatz"
+          },
+          {
+            "source_id": "S-042b26990fdc2a9d",
+            "mode": "Auszug",
+            "text": "„Düsseldorf-based technology group Rheinmetall has completed the company take-over of NVL, the military part of the Lürssen Group.“",
+            "location": "Pressemitteilung vom 02.03.2026, 1. Absatz"
+          }
+        ],
+        "location": "Lider Media: Artikeltext, 1. und 4. Absatz; Rheinmetall AG: Pressemitteilung vom 02.03.2026, 1. Absatz",
+        "uncertainty": "Lürssen-Aussage nur als Sekundärwiedergabe vor Vollzug (Sept. 2025); Vollzug nur durch Rheinmetall-Mitteilung (Käuferseite) belegt, keine Lürssen-Originalmitteilung zum Vollzug geöffnet.",
         "proposed_depth": "A",
         "depth_reason": "Gegenpartei der Transaktion",
-        "event_date": "2025-09-18",
-        "event_status": "Verkauf angekündigt (später vollzogen, vgl. C-STR-14)",
+        "event_date": "2026-03-02",
+        "event_status": "Verkauf angekündigt 09/2025; Vollzug laut Rheinmetall 03/2026",
         "depends_on": [
           "C-STR-14"
         ]
       },
-      "fingerprint": "15f586162b63d42d9a1e3a284fcde94e747c49e7a3192074c54e5b87d51af4f2"
+      "fingerprint": "fd9c2dc1eef26048851b6b284bc328bd57a1c92d50bfa959ae0fad097fd909ef"
     },
     {
       "role": "cluster",
@@ -6926,13 +6986,13 @@
       "role": "cluster",
       "claim": {
         "id": "C-STR-20",
-        "statement": "Rheinmetall hält laut Anteilsbesitzliste 2025 indirekt 51% an der Rheinmetall – Ukrainian Defense Industry LLC, Kiew (vollkonsolidiert); laut Geschäftsbericht 2024 wurde das Gemeinschaftsunternehmen 2023 mit der Ukrainian Defense Industry (UDI) gegründet und erbringt zunächst Service und Wartung.",
+        "statement": "Rheinmetall hält laut Anteilsbesitzliste 2025 indirekt 51% an der Rheinmetall – Ukrainian Defense Industry LLC, Kiew (vollkonsolidiert); laut Geschäftsbericht 2024 wurde das Gemeinschaftsunternehmen 2023 mit der Ukrainian Defense Industry (UDI) gegründet, die dort als ukrainischer Staatskonzern bezeichnet wird, und erbringt zunächst Service und Wartung.",
         "kind": "Fakt",
         "source_ids": [
           "S-f4730b21412bb02a",
           "S-b159a0c9329835a7"
         ],
-        "evidence": "Auszug (Rheinmetall AG): „Rheinmetall – Ukrainian Defense Industry LLC, Kiew/Ukraine – 51 750 379“ | Auszug (Rheinmetall AG): „In Kiew wurde im Jahr 2023 ein Gemeinschaftsunternehmen mit der Ukrainian Defense Industry (UDI) gegründet. Im ersten Schritt wird es Service- und Wartungsdienstleistungen für die Ukraine erbringen …“",
+        "evidence": "Auszug (Rheinmetall AG): „Rheinmetall – Ukrainian Defense Industry LLC, Kiew/Ukraine – 51 750 379“ | Auszug (Rheinmetall AG): „In Kiew wurde im Jahr 2023 ein Gemeinschaftsunternehmen mit der Ukrainian Defense Industry (UDI) gegründet. Im ersten Schritt wird es Service- und Wartungsdienstleistungen für die Ukraine erbringen …“; „… der Rheinmetall Landsysteme GmbH und dem ukrainischen Staatskonzern Ukrainian Defence Industry …“",
         "evidence_items": [
           {
             "source_id": "S-f4730b21412bb02a",
@@ -6943,24 +7003,24 @@
           {
             "source_id": "S-b159a0c9329835a7",
             "mode": "Auszug",
-            "text": "„In Kiew wurde im Jahr 2023 ein Gemeinschaftsunternehmen mit der Ukrainian Defense Industry (UDI) gegründet. Im ersten Schritt wird es Service- und Wartungsdienstleistungen für die Ukraine erbringen …“",
-            "location": "Geschäftsbericht 2024 (GJ 2024), An unsere Aktionäre/Strategie, PDF-S. 21 (PDF-Seite = gedruckte Seitenzahl)"
+            "text": "„In Kiew wurde im Jahr 2023 ein Gemeinschaftsunternehmen mit der Ukrainian Defense Industry (UDI) gegründet. Im ersten Schritt wird es Service- und Wartungsdienstleistungen für die Ukraine erbringen …“; „… der Rheinmetall Landsysteme GmbH und dem ukrainischen Staatskonzern Ukrainian Defence Industry …“",
+            "location": "Geschäftsbericht 2024 (GJ 2024), An unsere Aktionäre/Strategie, PDF-S. 21 und Strategie „Strategische Wachstumsmärkte Ukraine und USA“, PDF-S. 31 (PDF-Seite = gedruckte Seitenzahl)"
           }
         ],
-        "location": "Rheinmetall AG: Ziffer (42) Anteilsbesitzliste, Vollkonsolidierte Tochterunternehmen, PDF-S. 268 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Geschäftsbericht 2024 (GJ 2024), An unsere Aktionäre/Strategie, PDF-S. 21 (PDF-Seite = gedruckte Seitenzahl)",
+        "location": "Rheinmetall AG: Ziffer (42) Anteilsbesitzliste, Vollkonsolidierte Tochterunternehmen, PDF-S. 268 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Geschäftsbericht 2024 (GJ 2024), An unsere Aktionäre/Strategie, PDF-S. 21 und Strategie „Strategische Wachstumsmärkte Ukraine und USA“, PDF-S. 31 (PDF-Seite = gedruckte Seitenzahl)",
         "uncertainty": "Quote des UDI-Anteils nicht ausdrücklich genannt (49% nur rechnerisch, nicht belegt); kein ukrainischer Originalbeleg geöffnet.",
         "proposed_depth": "A",
         "depth_reason": "JV-Kontrollart, Netzwerkkante",
         "event_date": "2025-12-31",
         "event_status": "bestehend (Gründung 2023 lt. GB 2024)"
       },
-      "fingerprint": "183039f53a1aacab7693af8f5d24a0887f71810572dee7616c5573f9202a84cb"
+      "fingerprint": "21e0e82508308b39e284f4af4df56a860222a41908e6182836b33a94071f28a2"
     },
     {
       "role": "cluster",
       "claim": {
         "id": "C-STR-21",
-        "statement": "Die Rheinmetall Defence Lietuva, UAB, Ruklos, an der Rheinmetall indirekt 51% hält, soll laut Rheinmetall das 155-mm-Munitionswerk in Baisogala betreiben (Spatenstich 04.11.2025, Investition bis zu 300 MioEUR); JV-Partner ist die staatliche litauische EPSO-G.",
+        "statement": "Die Rheinmetall Defence Lietuva, UAB, Ruklos, an der Rheinmetall indirekt 51% hält, soll laut Rheinmetall das 155-mm-Munitionswerk in Baisogala betreiben (Spatenstich 04.11.2025, Investition bis zu 300 MioEUR); JV-Partner ist laut Rheinmetall die litauische EPSO-G.",
         "kind": "Fakt",
         "source_ids": [
           "S-f4730b21412bb02a",
@@ -6982,13 +7042,13 @@
           }
         ],
         "location": "Rheinmetall AG: Ziffer (42) Anteilsbesitzliste, Vollkonsolidierte Tochterunternehmen, PDF-S. 268 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Pressemitteilung vom 04.11.2025, 1.–3. Absatz",
-        "uncertainty": "EPSO-G-Quote nicht in geöffneten Quellen genannt; Produktionsbeginn zum Stichtag nicht belegt.",
+        "uncertainty": "EPSO-G-Quote und Eigentümer der EPSO-G nicht in geöffneten Quellen genannt; Produktionsbeginn zum Stichtag nicht belegt.",
         "proposed_depth": "A",
         "depth_reason": "JV-Kontrollart, Netzwerkkante",
         "event_date": "2025-11-04",
         "event_status": "Werk im Bau"
       },
-      "fingerprint": "67d79acfc983b23b2be467862e560bc0c07fbd5352c6f838dbd9f65ca456947d"
+      "fingerprint": "5dc57d7cc9f7220e84d48e866aae4ab18e22c79da196a5429fec493ebcf88fcd"
     },
     {
       "role": "cluster",
@@ -7166,18 +7226,18 @@
       "role": "cluster",
       "claim": {
         "id": "C-STR-29",
-        "statement": "An der Rheinmetall 4iG Digital Services Kft., Budapest, hält Rheinmetall laut Anteilsbesitzliste 2025 direkt 49% (Joint Venture, at-equity); ein 2022 gemeldeter Vorvertrag sah dagegen 51% Rheinmetall, 39% 4iG und 10% HM EI Zrt. vor.",
+        "statement": "An der Rheinmetall 4iG Digital Services Kft., Budapest, weist die Anteilsbesitzliste 2025 einen direkten Anteil von 49% und einen indirekten Anteil von 13% aus (Joint Venture, at-equity); eine Gesamtquote wird nicht angegeben. Ein 2022 gemeldeter Vorvertrag nannte eine andere Gesellschafterstruktur (Rheinmetall AG 51%, 4iG 39%, HM EI Zrt. 10%); ob und wie diese umgesetzt bzw. geändert wurde, ist nicht belegt.",
         "kind": "Fakt",
         "source_ids": [
           "S-f4730b21412bb02a",
           "S-e48eee025a306fad"
         ],
-        "evidence": "Auszug (Rheinmetall AG): „Rheinmetall 4iG Digital Services Kft., Budapest/Ungarn (5) 49 13 3.393 956“ | Auszug (EDR Magazine): „Rheinmetall AG (51%), 4iG Plc (39%) and the HM Electronics, Logistics and Property Management PCLS (HM EI Zrt.) (10%) have signed a preliminary agreement to establish a joint venture …“",
+        "evidence": "Auszug (Rheinmetall AG): „Rheinmetall 4iG Digital Services Kft., Budapest/Ungarn (5) 49 13 3.393 956“ (Spalten: direkter Anteil 49, indirekter Anteil 13, Eigenkapital, Jahresergebnis in TEUR) | Auszug (EDR Magazine): „Rheinmetall AG (51%), 4iG Plc (39%) and the HM Electronics, Logistics and Property Management PCLS (HM EI Zrt.) (10%) have signed a preliminary agreement to establish a joint venture …“",
         "evidence_items": [
           {
             "source_id": "S-f4730b21412bb02a",
             "mode": "Auszug",
-            "text": "„Rheinmetall 4iG Digital Services Kft., Budapest/Ungarn (5) 49 13 3.393 956“",
+            "text": "„Rheinmetall 4iG Digital Services Kft., Budapest/Ungarn (5) 49 13 3.393 956“ (Spalten: direkter Anteil 49, indirekter Anteil 13, Eigenkapital, Jahresergebnis in TEUR)",
             "location": "Ziffer (42) Anteilsbesitzliste, At-Equity-bewertete Beteiligungen, PDF-S. 270 (PDF-Seite = gedruckte Seitenzahl)"
           },
           {
@@ -7188,11 +7248,11 @@
           }
         ],
         "location": "Rheinmetall AG: Ziffer (42) Anteilsbesitzliste, At-Equity-bewertete Beteiligungen, PDF-S. 270 (PDF-Seite = gedruckte Seitenzahl); EDR Magazine: Artikel vom 16.05.2022, 1. Absatz",
-        "uncertainty": "Widerspruch zwischen Vorvertrag 2022 (51%) und Anteilsbesitzliste 2025 (49%); aktuelle Mitgesellschafterquoten nicht belegt.",
+        "uncertainty": "Struktur laut Vorvertrag 2022 weicht von der Anteilsbesitzliste 2025 ab; Summe direkt+indirekt nicht als Gesamtquote angegeben (Mehrfachzurechnung über Beteiligungsketten möglich); aktuelle Quoten von 4iG und HM EI nicht belegt.",
         "proposed_depth": "A",
         "depth_reason": "JV-Quote mit dokumentiertem Widerspruch"
       },
-      "fingerprint": "035c86bc94bf782c5d943a66a984acc33ba1d90b7304535d8e9e4c45b2a18313"
+      "fingerprint": "1f687397ab9bdb7faa45a59c1bcf3199804af43aef7f579cc836f361e0c7ba69"
     },
     {
       "role": "cluster",
@@ -7333,9 +7393,9 @@
         "proposed_depth": "A",
         "depth_reason": "Gegenrecherche mit Statuskonflikt",
         "event_date": "2026-07",
-        "event_status": "umstritten / nicht gegründet"
+        "event_status": "umstritten"
       },
-      "fingerprint": "c3ffb6973f0bbeb8172cca4ad10743f394f00b11be760003a602ebc94c8183dd"
+      "fingerprint": "7a093aa2cb82a992859cf8ba0bde3b8d1f4f09949930f6e005941a74b4b17342"
     },
     {
       "role": "cluster",
@@ -7534,12 +7594,12 @@
       "role": "cluster",
       "claim": {
         "id": "C-TEC-03",
-        "statement": "Rheinmetall und Anduril Industries kündigten am 18.06.2025 laut Rheinmetall eine strategische Partnerschaft an: europäische Varianten von Anduril-Barracuda (Integration in Rheinmetall-Systeme) und Fury sowie Feststoff-Raketenmotoren, gemeinsam zu entwickeln und zu produzieren.",
+        "statement": "Rheinmetall und Anduril Industries kündigten am 18.06.2025 laut Rheinmetall eine strategische Partnerschaft an: europäische Varianten von Anduril-Barracuda (Integration in Rheinmetall-Systeme) und Fury sollen gemeinsam entwickelt und produziert werden; bei Feststoff-Raketenmotoren ist lediglich eine Sondierung von Möglichkeiten vorgesehen.",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-2002ef0c3dd21d04"
         ],
-        "evidence": "Auszug: „Rheinmetall and Anduril Industries announced a strategic partnership …“; „The integration of a European variant of Anduril´s Barracuda …“; „The inclusion of a European variant of Anduril´s Fury …“; „These systems will be jointly developed and produced by the two companies …“",
+        "evidence": "Auszug: „Rheinmetall and Anduril Industries announced a strategic partnership …“; „The integration of a European variant of Anduril´s Barracuda …“; „The inclusion of a European variant of Anduril´s Fury …“; „The exploration of opportunities for solid rocket motors for European …“; „These systems will be jointly developed and produced by the two companies …“",
         "location": "Pressemitteilung vom 18.06.2025, S. 1",
         "uncertainty": "Angekündigte Partnerschaft; konkrete Aufträge, Lizenz- oder Fertigungsverträge nicht belegt; Anduril-eigene Quelle nicht geöffnet.",
         "proposed_depth": "A",
@@ -7547,7 +7607,7 @@
         "event_date": "2025-06-18",
         "event_status": "angekündigt"
       },
-      "fingerprint": "dd111cf428d04822b5483e80bbdf145c549f43cf70dbe14823071dd8345a3fbd"
+      "fingerprint": "f53a8f777d39ac581aeb554b6674a1b87977d5f1051747c5f40ad7bcbf09c265"
     },
     {
       "role": "cluster",
@@ -7716,25 +7776,26 @@
           }
         ],
         "location": "Rheinmetall AG: Konzernanhang Ziffer (41), PDF-S. 265 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Zwischenlagebericht, Wesentliche Großaufträge, PDF-S. 10 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Pressemitteilung vom 19.12.2025, 1.–2. Absatz",
-        "uncertainty": "Rheinmetall-Anteil uneinheitlich: Hälfte von 3,5 MrdEUR netto (GB 2025) vs. 2 MrdEUR netto (H1 2026) vs. 2,1 MrdEUR brutto (PM).",
+        "uncertainty": "Rheinmetall-Anteil uneinheitlich: 1,75 MrdEUR netto (Hälfte von 3,5 MrdEUR, GB 2025) vs. 2,0 MrdEUR netto (H1 2026) vs. 2,1 MrdEUR brutto (PM).",
         "proposed_depth": "A",
         "depth_reason": "Wesentlicher Kundenauftrag über JV",
         "event_date": "2026-01",
         "event_status": "beauftragt"
       },
-      "fingerprint": "76d67128b29361be60814a99041a3b00281fda460b9728cddacf7e5637db97b6"
+      "fingerprint": "4d5bab957e9d174e8db308c85fa0857f976c7250b8ada401532fa36a05647412"
     },
     {
       "role": "cluster",
       "claim": {
         "id": "C-MKT-02",
-        "statement": "OCCAR beauftragte im Oktober 2025 die ARTEC GmbH mit 222 Radschützenpanzern Schakal für Deutschland (150) und die Niederlande (72); laut Geschäftsbericht entfallen 2,9 MrdEUR netto auf Rheinmetall, zusätzlich besteht eine Option über bis zu 248 weitere Fahrzeuge (laut ESD: 3,41 MrdEUR brutto gesamt).",
+        "statement": "OCCAR beauftragte im Oktober 2025 die ARTEC GmbH mit 222 Radschützenpanzern Schakal für Deutschland (150) und die Niederlande (72); laut Rheinmetall-Pressemitteilung beträgt der Gesamtwert 4,7 MrdEUR brutto (Rheinmetall-Anteil knapp 3,4 MrdEUR), laut Geschäftsbericht entfallen 2,9 MrdEUR netto auf Rheinmetall; zusätzlich besteht eine Option über bis zu 248 weitere Fahrzeuge. European Security & Defence nennt dagegen 3,41 MrdEUR brutto als Gesamtwert (Quellkonflikt).",
         "kind": "Fakt",
         "source_ids": [
           "S-f4730b21412bb02a",
-          "S-ed8c444ff9f73ed3"
+          "S-ed8c444ff9f73ed3",
+          "S-7a7a5f5d433c1776"
         ],
-        "evidence": "Auszug (Rheinmetall AG): „Die europäische Rüstungsorganisation OCCAR … hat im Oktober 2025 die ARTEC GmbH … damit beauftragt, insgesamt 222 Radschützenpanzer Schakal an die Streitkräfte Deutschlands und der Niederlande zu liefern … Der auf Rheinmetall entfallende Anteil am Auftragswert liegt bei 2,9 MrdEUR (netto) … Option für einen Abruf von bis zu 248 weiteren Fahrzeugen.“ | Auszug (European Security & Defence): „Under the OCCAR contract 150 Schakal vehicles will be delivered to the Bundeswehr, with the remaining 72 bound for the Royal Netherlands Army.“; „… worth EUR 3.41 billion gross, with Rheinmetall’s share amounting to almost EUR 3 billion …“",
+        "evidence": "Auszug (Rheinmetall AG): „Die europäische Rüstungsorganisation OCCAR … hat im Oktober 2025 die ARTEC GmbH … damit beauftragt, insgesamt 222 Radschützenpanzer Schakal an die Streitkräfte Deutschlands und der Niederlande zu liefern … Der auf Rheinmetall entfallende Anteil am Auftragswert liegt bei 2,9 MrdEUR (netto) … Option für einen Abruf von bis zu 248 weiteren Fahrzeugen.“ | Auszug (European Security & Defence): „Under the OCCAR contract 150 Schakal vehicles will be delivered to the Bundeswehr, with the remaining 72 bound for the Royal Netherlands Army.“; „… worth EUR 3.41 billion gross, with Rheinmetall’s share amounting to almost EUR 3 billion …“ | Auszug (Rheinmetall AG): „The total order for the German and Dutch armies is worth €4.7 billion gross, with Rheinmetall's share amounting to almost €3.4 billion.“",
         "evidence_items": [
           {
             "source_id": "S-f4730b21412bb02a",
@@ -7747,35 +7808,56 @@
             "mode": "Auszug",
             "text": "„Under the OCCAR contract 150 Schakal vehicles will be delivered to the Bundeswehr, with the remaining 72 bound for the Royal Netherlands Army.“; „… worth EUR 3.41 billion gross, with Rheinmetall’s share amounting to almost EUR 3 billion …“",
             "location": "Artikel vom 20.10.2025, 3.–4. Absatz"
+          },
+          {
+            "source_id": "S-7a7a5f5d433c1776",
+            "mode": "Auszug",
+            "text": "„The total order for the German and Dutch armies is worth €4.7 billion gross, with Rheinmetall's share amounting to almost €3.4 billion.“",
+            "location": "Pressemitteilung vom 20.10.2025, Key facts und 1. Absatz"
           }
         ],
-        "location": "Rheinmetall AG: Lagebericht, Wesentliche Großaufträge, PDF-S. 53 (PDF-Seite = gedruckte Seitenzahl); European Security & Defence: Artikel vom 20.10.2025, 3.–4. Absatz",
-        "uncertainty": "Abweichende Wertangaben in Medien (brutto/netto); Vertragspartner ist OCCAR, Endnutzer DE/NL.",
+        "location": "Rheinmetall AG: Lagebericht, Wesentliche Großaufträge, PDF-S. 53 (PDF-Seite = gedruckte Seitenzahl); European Security & Defence: Artikel vom 20.10.2025, 3.–4. Absatz; Rheinmetall AG: Pressemitteilung vom 20.10.2025, Key facts und 1. Absatz",
+        "uncertainty": "Offener Quellkonflikt: ESD-Gesamtwert 3,41 MrdEUR brutto widerspricht dem Rheinmetall-Gesamtwert 4,7 MrdEUR brutto (vgl. Portfolio-Claim P-V10); 3,41 MrdEUR entspricht vermutlich dem Rheinmetall-Bruttoanteil (Annahme, nicht belegt). Vertragspartner ist OCCAR, Endnutzer DE/NL.",
         "proposed_depth": "A",
         "depth_reason": "Wesentlicher Kundenauftrag über JV",
         "event_date": "2025-10",
         "event_status": "beauftragt"
       },
-      "fingerprint": "9e3e8fe8e91534ff5494f3d2f44e455914c38e90d872d0b7de3a52f0a5ab02ba"
+      "fingerprint": "9c82ad869272f4ecdf97ae28aac46988a846bd0c33a57b045caa3d83cac78af8"
     },
     {
       "role": "cluster",
       "claim": {
         "id": "C-MKT-03",
-        "statement": "Laut Geschäftsbericht 2025 erhielt Rheinmetall im Februar 2025 als Generalunternehmer den Zuschlag für TaWAN (taktisches Weitverkehrsnetz) der Bundeswehr: Rahmenvertrag 7,5 MrdEUR, zehn Jahre Laufzeit, erster Abruf 1,6 MrdEUR, Auslieferung Ende 2026 bis Ende 2029; am 06.02.2025 schloss das BAAINBw zudem einen Rahmenvertrag über IdZ-ES-Soldatensysteme (max. 1,7 MrdEUR bis 2030).",
+        "statement": "Laut Geschäftsbericht 2025 erhielt Rheinmetall im Februar 2025 als Generalunternehmer den Zuschlag für TaWAN (taktisches Weitverkehrsnetz) der Bundeswehr: Rahmenvertrag 7,5 MrdEUR, zehn Jahre Laufzeit, erster Abruf 1,6 MrdEUR, Auslieferung Ende 2026 bis Ende 2029; am 06.02.2025 schloss das BAAINBw zudem einen Rahmenvertrag über IdZ-ES-Soldatensysteme bis 2030, dessen Höchstvolumen im Geschäftsbericht mit 1,7 MrdEUR, in der Rheinmetall-Pressemitteilung vom 27.04.2026 dagegen mit bis zu 3,1 MrdEUR brutto angegeben wird (Quellkonflikt).",
         "kind": "Herstellerangabe",
         "source_ids": [
-          "S-f4730b21412bb02a"
+          "S-f4730b21412bb02a",
+          "S-8570241741649c2a"
         ],
-        "evidence": "Auszug: „Als Generalunternehmer wird Rheinmetall ein Kommunikationssystem namens Tactical Wide Area Network (TaWAN) aufbauen … Der Rahmenvertrag … hat ein Volumen von 7,5 MrdEUR und eine Laufzeit von zehn Jahren. Ein erster Abruf in Höhe von 1,6 MrdEUR …“; „Am 6. Februar 2025 haben das … (BAAINBw) und Rheinmetall einen Rahmenvertrag zur Nachbeschaffung von Soldatensystemen … (IdZ-ES) abgeschlossen … maximales Volumen von 1,7 MrdEUR …“",
-        "location": "Lagebericht, Wesentliche Großaufträge, PDF-S. 52 (PDF-Seite = gedruckte Seitenzahl)",
-        "uncertainty": "Rahmenvolumen ist kein garantierter Umsatz; keine Behördenquelle geöffnet.",
+        "evidence": "Auszug (Rheinmetall AG): „Als Generalunternehmer wird Rheinmetall ein Kommunikationssystem namens Tactical Wide Area Network (TaWAN) aufbauen … Der Rahmenvertrag … hat ein Volumen von 7,5 MrdEUR und eine Laufzeit von zehn Jahren. Ein erster Abruf in Höhe von 1,6 MrdEUR …“; „Am 6. Februar 2025 haben das … (BAAINBw) und Rheinmetall einen Rahmenvertrag zur Nachbeschaffung von Soldatensystemen … (IdZ-ES) abgeschlossen … maximales Volumen von 1,7 MrdEUR …“ | Auszug (Rheinmetall AG): „In February of 2025, the BAAINBw signed a framework contract with Rheinmetall for the procurement of additional IdZ-ES systems, with a maximum value of €3.1bn gross. The contract runs until the end of 2030 …“",
+        "evidence_items": [
+          {
+            "source_id": "S-f4730b21412bb02a",
+            "mode": "Auszug",
+            "text": "„Als Generalunternehmer wird Rheinmetall ein Kommunikationssystem namens Tactical Wide Area Network (TaWAN) aufbauen … Der Rahmenvertrag … hat ein Volumen von 7,5 MrdEUR und eine Laufzeit von zehn Jahren. Ein erster Abruf in Höhe von 1,6 MrdEUR …“; „Am 6. Februar 2025 haben das … (BAAINBw) und Rheinmetall einen Rahmenvertrag zur Nachbeschaffung von Soldatensystemen … (IdZ-ES) abgeschlossen … maximales Volumen von 1,7 MrdEUR …“",
+            "location": "Lagebericht, Wesentliche Großaufträge, PDF-S. 52 (PDF-Seite = gedruckte Seitenzahl)"
+          },
+          {
+            "source_id": "S-8570241741649c2a",
+            "mode": "Auszug",
+            "text": "„In February of 2025, the BAAINBw signed a framework contract with Rheinmetall for the procurement of additional IdZ-ES systems, with a maximum value of €3.1bn gross. The contract runs until the end of 2030 …“",
+            "location": "Pressemitteilung vom 27.04.2026, 3. Absatz"
+          }
+        ],
+        "location": "Rheinmetall AG: Lagebericht, Wesentliche Großaufträge, PDF-S. 52 (PDF-Seite = gedruckte Seitenzahl); Rheinmetall AG: Pressemitteilung vom 27.04.2026, 3. Absatz",
+        "uncertainty": "Quellkonflikt IdZ-ES-Höchstvolumen: 1,7 MrdEUR (GB 2025, ohne Netto/Brutto-Angabe) vs. bis zu 3,1 MrdEUR brutto (PM 27.04.2026); Ursache (z. B. Netto/Brutto oder Vertragsänderung) nicht belegt; vgl. Portfolio-Claim P-D11 (Abruf 27.04.2026). Rahmenvolumen ist kein garantierter Umsatz; keine Behördenquelle geöffnet.",
         "proposed_depth": "A",
         "depth_reason": "Rahmenverträge Kunde Bundeswehr",
         "event_date": "2025-02",
         "event_status": "beauftragt (Rahmenvertrag)"
       },
-      "fingerprint": "11cef0e10f86418358412a50421ecdbc2da5ae90e1bb5e36bdfb8411a3373d69"
+      "fingerprint": "56dfebc94117dc1852016c4e509e64d0226e70e23b612e894abb63fd7bb105dc"
     },
     {
       "role": "cluster",
@@ -8037,20 +8119,20 @@
       "role": "cluster",
       "claim": {
         "id": "C-MKT-12",
-        "statement": "Laut Australian Defence Magazine schloss die australische Regierung einen Vertrag über 72 Mio. AUD mit Rheinmetall NIOA Munitions für eine 155-mm-M795-Schmiede in Maryborough (Betrieb bis Ende 2028, anfänglich 15.000 Geschosse pro Jahr).",
+        "statement": "Laut Australian Defence Magazine schloss die australische Regierung einen Vertrag über 72 Mio. (im Original „$72 million“, Währung nicht spezifiziert) mit Rheinmetall NIOA Munitions für eine 155-mm-M795-Schmiede in Maryborough; die Schmiede soll bis Ende 2028 den Betrieb aufnehmen und anfänglich 15.000 Geschosse pro Jahr fertigen.",
         "kind": "Fakt",
         "source_ids": [
           "S-ae3e82623d92513c"
         ],
         "evidence": "Auszug: „The government has signed a $72 million deal with Rheinmetall Nioa Munitions to stand up a new capability for forging 155mm shells at its plant in Maryborough, Queensland.“; „It will begin operating by the end of 2028 and is expected to produce an initial 15,000 rounds a year …“",
         "location": "Artikel vom 09.06.2026, 1. und 6. Absatz",
-        "uncertainty": "Keine Regierungsquelle geöffnet.",
+        "uncertainty": "Währung im Original nur als „$“ angegeben (AUD naheliegend, nicht belegt); Betriebsaufnahme erst bis Ende 2028 geplant; keine Regierungsquelle geöffnet.",
         "proposed_depth": "A",
         "depth_reason": "Kunde Australien über JV",
         "event_date": "2026-06-09",
-        "event_status": "beauftragt"
+        "event_status": "beauftragt; Betrieb bis Ende 2028 geplant"
       },
-      "fingerprint": "e70b0a609298c86e0e922b51bf7f16fb35a7ff4dfaaa4fa403859a308651e4a9"
+      "fingerprint": "a21cc82f90953855392d4038d789d45da942f3d6ad5d57d85697aed9713227b1"
     },
     {
       "role": "cluster",
@@ -8174,7 +8256,7 @@
         ],
         "evidence": "Paraphrase: Keyfacts: 200.000 Schuss p.a., 1.900 Tonnen Sprengstoff; Absatz 2: bis zu 1.900 Tonnen RDX; Absatz 5: komplette Wertschöpfungskette 'Full Shot' in Unterlüß.",
         "location": "Keyfacts sowie Absätze 2 und 5 (Pressemitteilung 12/02/2024)",
-        "uncertainty": "Planangabe von 2024; die Eröffnungsmitteilung vom 05.09.2025 nennt Geschosse und Raketentriebwerke, aber keine RDX-Fertigung; ein operativer Status der Sprengstofffertigung in Unterlüß ist in den geöffneten Quellen nicht belegt.",
+        "uncertainty": "Planangabe von 2024; die Eröffnungsmitteilung vom 05.09.2025 nennt Geschosse und Raketentriebwerke, aber keine RDX-Fertigung; ein operativer Status der Sprengstofffertigung in Unterlüß ist in den geöffneten Quellen nicht belegt. Die Geschossangabe (200.000/Jahr) ist durch den neueren Planstand von bis zu 350.000/Jahr ab 2027 überholt (P-W10).",
         "evidence_items": [
           {
             "source_id": "S-2572b016501230b4",
@@ -8186,26 +8268,29 @@
         "proposed_depth": "A",
         "depth_reason": "Vertikalintegration (Plan)",
         "event_date": "2024-02-12",
-        "event_status": "angekündigt"
+        "event_status": "angekündigt",
+        "depends_on": [
+          "P-W10"
+        ]
       },
-      "fingerprint": "4984093dc8af14fcc1982c36e3c2b926e8fb08ab40d7eeb9c3f6bc649261c870"
+      "fingerprint": "1e8f6ce5d7653409ec379a41ca6543aa3da28ecb17c9722e9943d9faac023113"
     },
     {
       "role": "market",
       "claim": {
         "id": "M-RHM-04",
-        "statement": "Rheinmetall und Pirochim Victoria (Romarm-Tochter) gründeten laut Rheinmetall (03.11.2025) das JV Rheinmetall Victoria SA (51/49) für Treibladungspulver und modulare Treibladungen in Victoria (Kreis Brașov): Investition über 500 Mio EUR, erwartete Jahreskapazität rund 300.000 modulare Treibladungen (rund 750 t Pulver) plus 200 t Pulver für lokalen Bedarf, lokale Nitrozellulose-Fertigung, Produktionsbeginn 2028 geplant; CEO Papperger bezeichnet Treibladungspulver als 'strategic bottleneck' und nennt als Ziel 20.000 t Pulverkapazität pro Jahr bis 2030.",
+        "statement": "Rheinmetall und Pirochim Victoria (Romarm-Tochter) unterzeichneten laut Rheinmetall am 03.11.2025 in Bukarest den JV-Vertrag für die im Aufbau befindliche Rheinmetall Victoria SA (51/49; „are establishing“) für Treibladungspulver und modulare Treibladungen in Victoria (Kreis Brașov): Investition über 500 Mio EUR, erwartete Jahreskapazität rund 300.000 modulare Treibladungen (rund 750 t Pulver) plus 200 t Pulver für lokalen Bedarf, lokale Nitrozellulose-Fertigung, Produktionsbeginn 2028 geplant; CEO Papperger bezeichnet Treibladungspulver als 'strategic bottleneck' und nennt als Ziel 20.000 t Pulverkapazität pro Jahr bis 2030.",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-71e68b86d52a8a03"
         ],
-        "evidence": "Paraphrase: JV-Gründung, Investition > €500 Mio., 300.000 modulare Ladungen/~750 t Pulver + 200 t, Nitrozellulose lokal, Produktionsstart 2028; Zitat Papperger zu Engpass und Ziel 20.000 t bis 2030.",
+        "evidence": "Paraphrase: 'are establishing the joint venture Rheinmetall Victoria SA'; 'The joint venture agreement was signed today'; Investition > €500 Mio., 300.000 modulare Ladungen/~750 t Pulver + 200 t, Nitrozellulose lokal, Produktionsstart 2028; Zitat Papperger zu Engpass und Ziel 20.000 t bis 2030.",
         "location": "Key Facts und Absätze 1-5 (Pressemitteilung 03/11/2025)",
-        "uncertainty": "Kapazitäts- und Zeitangaben sind Planwerte; Werk zum Stichtag nicht in Betrieb.",
+        "uncertainty": "Kapazitäts- und Zeitangaben sind Planwerte; Werk zum Stichtag nicht in Betrieb; Gründungs-/Eintragungsstatus des JV nicht geprüft.",
         "evidence_items": [
           {
             "source_id": "S-71e68b86d52a8a03",
-            "text": "Paraphrase: JV-Gründung, Investition > €500 Mio., 300.000 modulare Ladungen/~750 t Pulver + 200 t, Nitrozellulose lokal, Produktionsstart 2028; Zitat Papperger zu Engpass und Ziel 20.000 t bis 2030.",
+            "text": "Paraphrase: 'are establishing the joint venture Rheinmetall Victoria SA'; 'The joint venture agreement was signed today'; Investition > €500 Mio., 300.000 modulare Ladungen/~750 t Pulver + 200 t, Nitrozellulose lokal, Produktionsstart 2028; Zitat Papperger zu Engpass und Ziel 20.000 t bis 2030.",
             "mode": "Paraphrase",
             "location": "Key Facts und Absätze 1-5 (Pressemitteilung 03/11/2025)"
           }
@@ -8213,12 +8298,12 @@
         "proposed_depth": "A",
         "depth_reason": "Pulver/Vertikalintegration (Ziel)",
         "event_date": "2025-11-03",
-        "event_status": "JV gegründet; Werk geplant",
+        "event_status": "JV-Vertrag unterzeichnet; Werk geplant",
         "depends_on": [
           "C-STR-34"
         ]
       },
-      "fingerprint": "e2da3925d5b7bb04236b24ba4903a74aba7f92f69d37336611d0154efa9e9e58"
+      "fingerprint": "06963c914230260d6d8042bd5b4b2af51c621bf48e620678d92dc3ad9e593394"
     },
     {
       "role": "market",
@@ -8506,15 +8591,16 @@
       "role": "market",
       "claim": {
         "id": "M-NAM-08",
-        "statement": "Laut Nammo (Jahresbericht-Meldung 2025, veröffentlicht 30.04.2026) baute der Konzern 2025 Kapazitäten in Norwegen, Schweden, Finnland, Dänemark und den USA aus, schloss Rahmenverträge u. a. für Artilleriemunition und Treibmittel, lieferte weiter an NATO- und Partnerstaaten, erreichte 86,6 % Termintreue und hatte 4.200 Beschäftigte an 27 Standorten in 12 Ländern; Raufoss ist laut Standortseite der größte Entwicklungs- und Fertigungsstandort (mittel- und großkalibrige Munition, Raketenmotoren).",
+        "statement": "Laut Nammo (Jahresbericht-Meldung 2025, veröffentlicht 30.04.2026) baute der Konzern 2025 Kapazitäten in Norwegen, Schweden, Finnland, Dänemark und den USA aus, schloss Rahmenverträge u. a. für Artilleriemunition und Treibmittel, lieferte weiter an NATO- und Partnerstaaten, erreichte 86,6 % Termintreue und hatte 4.200 Beschäftigte an 27 Standorten in 12 Ländern; laut Standortübersicht hat Nammo Fertigungsbetriebe in neun Ländern und Vertriebsbüros in zwei weiteren; Raufoss ist laut Standortseite der größte Entwicklungs- und Fertigungsstandort (mittel- und großkalibrige Munition, Raketenmotoren).",
         "kind": "Herstellerangabe",
         "source_ids": [
           "S-ae6533fe6378a611",
-          "S-8b46f20a7a35fb19"
+          "S-8b46f20a7a35fb19",
+          "S-97aa5b20a4a51ea0"
         ],
         "evidence": "Paraphrase: Ausbau in Norwegen, Schweden, Finnland, Dänemark, USA; 'framework agreements for artillery ammunition and propellants'; 86,6 %; 4200 Beschäftigte, 27 Standorte, 12 Länder.",
         "location": "Absätze 1-5",
-        "uncertainty": "Kunden und Volumen der Rahmenverträge nicht genannt.",
+        "uncertainty": "Kunden und Volumen der Rahmenverträge nicht genannt; welche der neun Länder 155-mm-Komponenten fertigen, ist nicht angegeben.",
         "evidence_items": [
           {
             "source_id": "S-ae6533fe6378a611",
@@ -8527,12 +8613,18 @@
             "text": "Paraphrase: Raufoss: größter Entwicklungs- und Fertigungshub; 'manufacturing medium and large caliber ammunition, as well as rocket motors'.",
             "mode": "Paraphrase",
             "location": "Standortseite Raufoss, Absätze 1-2"
+          },
+          {
+            "source_id": "S-97aa5b20a4a51ea0",
+            "text": "Auszug: 'Nammo today has manufacturing operations in nine countries, and sales offices in a further two.'",
+            "mode": "Auszug",
+            "location": "Locations, Einleitung Absatz 3"
           }
         ],
         "proposed_depth": "A",
         "depth_reason": "Beschaffung/Industrie"
       },
-      "fingerprint": "16b2672c5f1c8196c368815ffa11bb4c6b7e4818f2dc5a434744b5df54b06319"
+      "fingerprint": "b5a98fa772b2b57b01fc48b30e1f1de1bc59cd9509d746e45e6995b2cc9eb8ec"
     },
     {
       "role": "market",

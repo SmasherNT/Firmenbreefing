@@ -462,17 +462,17 @@
     },
     "portfolio": {
       "stage": "portfolio",
-      "checkpoint_id": "44ef12909eab446e92cdd2595867e685",
+      "checkpoint_id": "2d73a616bd9542b98dcb33c50d091f5f",
       "inputs": {
         "cluster": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/cluster-facts.json",
-          "sha256": "da08f419a7a5672fa23f4b1726b487f1ae36446ef7aa429df59e8125558df05d"
+          "sha256": "9f1a86be77115949eab4a19abc255d5d5f015885ca99364a7f103f13df61906a"
         }
       },
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/portfolio-facts.json",
-          "sha256": "48d175f75cc3efa2060997294e038979d651d5699c5c50de140b1f7524359525"
+          "sha256": "887f1f68466b9d252c272a104bbcfcb72559ec0ad2130df4f93114b654575aa6"
         }
       },
       "code": {
@@ -1413,6 +1413,15 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-d195b923c24e0507": {
+          "source_id": "S-d195b923c24e0507",
+          "url": "https://www.rheinmetall.com/en/company/subsidiaries",
+          "content_sha256": "59686382193946d7b4a2515d9a1ec6e40d343f8a9d7405b893dbeb3d14914f42",
+          "text_sha256": "a750b2bb22d5e34afa7d0aac94c52f7e643171e1c0271c9ed12a2be2a268566e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-d32c73540389046f": {
           "source_id": "S-d32c73540389046f",
           "url": "https://www.boerse-online.de/dpa-afx/capital-ausruestung-fuer-das-heer-kommt-spaeter-546388.html",
@@ -1568,22 +1577,22 @@
         }
       },
       "dependencies": {
-        "cluster": "1cbd24a8358ba4e32da2dd7f19ffb4048cb80bde0f538c160d1ab20299bc1420"
+        "cluster": "b186e3230cf7ed5a6aa12cb412856235da97b783354c181a067ff70b99cc3865"
       },
-      "checked_at": "2026-10-19T09:19:10+00:00",
-      "fingerprint": "b8b27930f424ec0496db0e5fceed164387b698e84c0935693e4065a43a6e386f"
+      "checked_at": "2026-10-19T22:00:57+00:00",
+      "fingerprint": "dd92ee05a88cacd50f24d7b817caea0c30fa7157cb63d9c777795da614bda6c7"
     },
     "plan": {
       "stage": "plan",
-      "checkpoint_id": "dee1d7b928154b74a78decf297c32856",
+      "checkpoint_id": "89a6803aa3754da7bf173c13a511a014",
       "inputs": {
         "context": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/context-facts.json",
-          "sha256": "50bd1aed0f6c8f298f7494c4f63e45044288bd55ca185ae9fdc13740416ea803"
+          "sha256": "b811ebc6dc1deac359ba264e96ad0bceb5d1b094e4263a80140e2f08a07cb08b"
         },
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/portfolio-facts.json",
-          "sha256": "48d175f75cc3efa2060997294e038979d651d5699c5c50de140b1f7524359525"
+          "sha256": "887f1f68466b9d252c272a104bbcfcb72559ec0ad2130df4f93114b654575aa6"
         }
       },
       "outputs": {
@@ -1630,20 +1639,20 @@
       },
       "sources": {},
       "dependencies": {
-        "context": "0a9f2fe012cf8162bc9c22f4d3c9ad44aa65cdc2da40bdb59a95c855dfe0d87b",
-        "portfolio": "b8b27930f424ec0496db0e5fceed164387b698e84c0935693e4065a43a6e386f"
+        "context": "41776a7bb2f4ada82ee1a19084123f505b26c20d1eb7e235fe8d096f6f77708d",
+        "portfolio": "dd92ee05a88cacd50f24d7b817caea0c30fa7157cb63d9c777795da614bda6c7"
       },
-      "checked_at": "2026-10-19T09:19:12+00:00",
-      "fingerprint": "45a7894de518f0208be24d3a859a1f6dc0682d3d4cba2a4dd4a328f0f162f134"
+      "checked_at": "2026-10-19T22:00:58+00:00",
+      "fingerprint": "4c7f51e44d935ae252202c16c174789a2a5681128fc4378b0ecd74d18daecbcf"
     },
     "cluster": {
       "stage": "cluster",
-      "checkpoint_id": "526c37762b434af496d70a36d292e313",
+      "checkpoint_id": "b3e5fd7b08c040629732520b80081251",
       "inputs": {},
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/cluster-facts.json",
-          "sha256": "da08f419a7a5672fa23f4b1726b487f1ae36446ef7aa429df59e8125558df05d"
+          "sha256": "9f1a86be77115949eab4a19abc255d5d5f015885ca99364a7f103f13df61906a"
         }
       },
       "code": {
@@ -1882,11 +1891,29 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-7a7a5f5d433c1776": {
+          "source_id": "S-7a7a5f5d433c1776",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/10/2025-10-20-infantry-fighting-vehicle-222-jackals-schakal-for-germany-and-the-netherlands",
+          "content_sha256": "8b6b12945cda5b45b5a1800c70b7a903b8854d198fe818e1720f4f94eeed10a0",
+          "text_sha256": "2b2ca582b0d44224894941c9593792b6299a3ad7a93f4faac2c799449ff7b71d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-823a7eb256c6141a": {
           "source_id": "S-823a7eb256c6141a",
           "url": "https://esut.de/2024/01/meldungen/47058/luftverteidigungssystem-nah-und-naechstbereichsschutz-wird-entwickelt/",
           "content_sha256": "6f3a10eea0a916ed05a78832495d853b96aa8bbb79c973b3b929e921f860909b",
           "text_sha256": "63451853e6845e2e8facd9799e6aa29f547bd7431837a0cc97193a771a9390be",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-8570241741649c2a": {
+          "source_id": "S-8570241741649c2a",
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/04/2026-04-27-bundeswehr-orders-idz-es-soldier-systems-from-rheinmetall",
+          "content_sha256": "e658d51b4954fca8abf9ce1bba5a8d7bcd397d32381336573a574ba93bf34511",
+          "text_sha256": "91f9db208e7ef4a605cff5f2079e68c51f015167e57a4ca7cc930a728686aa64",
           "capture_kind": "http-original",
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
@@ -2073,12 +2100,12 @@
         }
       },
       "dependencies": {},
-      "checked_at": "2026-10-19T09:18:04+00:00",
-      "fingerprint": "1cbd24a8358ba4e32da2dd7f19ffb4048cb80bde0f538c160d1ab20299bc1420"
+      "checked_at": "2026-10-19T22:00:56+00:00",
+      "fingerprint": "b186e3230cf7ed5a6aa12cb412856235da97b783354c181a067ff70b99cc3865"
     },
     "market": {
       "stage": "market",
-      "checkpoint_id": "5d78c44da7e644faadbca96d7c356a8d",
+      "checkpoint_id": "16e468aacb744b11a4aace457411b330",
       "inputs": {
         "plan": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/comparison-plan.json",
@@ -2086,21 +2113,21 @@
         },
         "context": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/context-facts.json",
-          "sha256": "50bd1aed0f6c8f298f7494c4f63e45044288bd55ca185ae9fdc13740416ea803"
+          "sha256": "b811ebc6dc1deac359ba264e96ad0bceb5d1b094e4263a80140e2f08a07cb08b"
         },
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/portfolio-facts.json",
-          "sha256": "48d175f75cc3efa2060997294e038979d651d5699c5c50de140b1f7524359525"
+          "sha256": "887f1f68466b9d252c272a104bbcfcb72559ec0ad2130df4f93114b654575aa6"
         },
         "cluster": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/cluster-facts.json",
-          "sha256": "da08f419a7a5672fa23f4b1726b487f1ae36446ef7aa429df59e8125558df05d"
+          "sha256": "9f1a86be77115949eab4a19abc255d5d5f015885ca99364a7f103f13df61906a"
         }
       },
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/market-facts.json",
-          "sha256": "fb8ff540bc2a836e2861b17e1da89ae3f10999ca6c47c67ab9eb96a2f2f1b594"
+          "sha256": "ee39de970ad5c72ae119e51d014e2bafd8f522042810a299427c794100b2e7c9"
         }
       },
       "code": {
@@ -3752,6 +3779,15 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-d195b923c24e0507": {
+          "source_id": "S-d195b923c24e0507",
+          "url": "https://www.rheinmetall.com/en/company/subsidiaries",
+          "content_sha256": "59686382193946d7b4a2515d9a1ec6e40d343f8a9d7405b893dbeb3d14914f42",
+          "text_sha256": "a750b2bb22d5e34afa7d0aac94c52f7e643171e1c0271c9ed12a2be2a268566e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-d32c73540389046f": {
           "source_id": "S-d32c73540389046f",
           "url": "https://www.boerse-online.de/dpa-afx/capital-ausruestung-fuer-das-heer-kommt-spaeter-546388.html",
@@ -3970,33 +4006,33 @@
         }
       },
       "dependencies": {
-        "cluster": "1cbd24a8358ba4e32da2dd7f19ffb4048cb80bde0f538c160d1ab20299bc1420",
-        "context": "0a9f2fe012cf8162bc9c22f4d3c9ad44aa65cdc2da40bdb59a95c855dfe0d87b",
-        "plan": "45a7894de518f0208be24d3a859a1f6dc0682d3d4cba2a4dd4a328f0f162f134",
-        "portfolio": "b8b27930f424ec0496db0e5fceed164387b698e84c0935693e4065a43a6e386f"
+        "cluster": "b186e3230cf7ed5a6aa12cb412856235da97b783354c181a067ff70b99cc3865",
+        "context": "41776a7bb2f4ada82ee1a19084123f505b26c20d1eb7e235fe8d096f6f77708d",
+        "plan": "4c7f51e44d935ae252202c16c174789a2a5681128fc4378b0ecd74d18daecbcf",
+        "portfolio": "dd92ee05a88cacd50f24d7b817caea0c30fa7157cb63d9c777795da614bda6c7"
       },
-      "checked_at": "2026-10-19T14:01:10+00:00",
-      "fingerprint": "c1de3a7317b91238ba413174b677e29857654366d59028dd198c83fdf5a4f478"
+      "checked_at": "2026-10-19T22:00:59+00:00",
+      "fingerprint": "15fe375529aa35b011c4cf12058ebb3ec15b789d8c7ea7fb234b4bbc01631383"
     },
     "facts": {
       "stage": "facts",
-      "checkpoint_id": "1c170a2a80d54dbd8912281eaea8ccfe",
+      "checkpoint_id": "c62e2810f7e14d3686bc2dfe36b1936c",
       "inputs": {
         "context": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/context-facts.json",
-          "sha256": "50bd1aed0f6c8f298f7494c4f63e45044288bd55ca185ae9fdc13740416ea803"
+          "sha256": "b811ebc6dc1deac359ba264e96ad0bceb5d1b094e4263a80140e2f08a07cb08b"
         },
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/portfolio-facts.json",
-          "sha256": "48d175f75cc3efa2060997294e038979d651d5699c5c50de140b1f7524359525"
+          "sha256": "887f1f68466b9d252c272a104bbcfcb72559ec0ad2130df4f93114b654575aa6"
         },
         "cluster": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/cluster-facts.json",
-          "sha256": "da08f419a7a5672fa23f4b1726b487f1ae36446ef7aa429df59e8125558df05d"
+          "sha256": "9f1a86be77115949eab4a19abc255d5d5f015885ca99364a7f103f13df61906a"
         },
         "market": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/market-facts.json",
-          "sha256": "fb8ff540bc2a836e2861b17e1da89ae3f10999ca6c47c67ab9eb96a2f2f1b594"
+          "sha256": "ee39de970ad5c72ae119e51d014e2bafd8f522042810a299427c794100b2e7c9"
         },
         "plan": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/comparison-plan.json",
@@ -4006,11 +4042,11 @@
       "outputs": {
         "facts": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/review-packet.json",
-          "sha256": "28d855853ac5e5c492e15c2c7d8b82046151992560b4ed8fd0bf085acf4fa133"
+          "sha256": "43330cdcb3c5a160310dfed7f2ddbbbd8dc7103c0ae4fe29f9be3992aebd9741"
         },
         "validation": {
           "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/facts-validation.json",
-          "sha256": "8533bfea7f641442e086c61776449d57bf7032d9bc1d5ff8e289b691edb655c4"
+          "sha256": "25feb7533d7c13ca67a6078d3d2f5fabdc1d42e12030ca12412afb899a85cb43"
         }
       },
       "code": {
@@ -5661,6 +5697,15 @@
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         },
+        "S-d195b923c24e0507": {
+          "source_id": "S-d195b923c24e0507",
+          "url": "https://www.rheinmetall.com/en/company/subsidiaries",
+          "content_sha256": "59686382193946d7b4a2515d9a1ec6e40d343f8a9d7405b893dbeb3d14914f42",
+          "text_sha256": "a750b2bb22d5e34afa7d0aac94c52f7e643171e1c0271c9ed12a2be2a268566e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
         "S-d32c73540389046f": {
           "source_id": "S-d32c73540389046f",
           "url": "https://www.boerse-online.de/dpa-afx/capital-ausruestung-fuer-das-heer-kommt-spaeter-546388.html",
@@ -5879,17 +5924,17 @@
         }
       },
       "dependencies": {
-        "cluster": "1cbd24a8358ba4e32da2dd7f19ffb4048cb80bde0f538c160d1ab20299bc1420",
-        "context": "0a9f2fe012cf8162bc9c22f4d3c9ad44aa65cdc2da40bdb59a95c855dfe0d87b",
-        "market": "c1de3a7317b91238ba413174b677e29857654366d59028dd198c83fdf5a4f478",
-        "plan": "45a7894de518f0208be24d3a859a1f6dc0682d3d4cba2a4dd4a328f0f162f134",
-        "portfolio": "b8b27930f424ec0496db0e5fceed164387b698e84c0935693e4065a43a6e386f"
+        "cluster": "b186e3230cf7ed5a6aa12cb412856235da97b783354c181a067ff70b99cc3865",
+        "context": "41776a7bb2f4ada82ee1a19084123f505b26c20d1eb7e235fe8d096f6f77708d",
+        "market": "15fe375529aa35b011c4cf12058ebb3ec15b789d8c7ea7fb234b4bbc01631383",
+        "plan": "4c7f51e44d935ae252202c16c174789a2a5681128fc4378b0ecd74d18daecbcf",
+        "portfolio": "dd92ee05a88cacd50f24d7b817caea0c30fa7157cb63d9c777795da614bda6c7"
       },
-      "checked_at": "2026-10-19T14:01:17+00:00",
-      "fingerprint": "20c09317c805dcc549a4aa9f345434725aec6c10b903458982222a960bc90e29"
+      "checked_at": "2026-10-19T22:01:01+00:00",
+      "fingerprint": "040c4525845ed6f6f1c587185b21d3b358e569678c9c4148511471e90bf0c81f"
     }
   },
   "created_at": "2026-10-19T08:47:09+00:00",
   "notice": "Local completion records only; content approval and visual QA remain separate.",
-  "fingerprint": "3ac2f624e5d9e30899b68b97cd6ea952aae30de5e7c9df8280c33bf844acfffe"
+  "fingerprint": "b84a615e8add6e32d2f3bbb8ab4106fdbb915ee6eca9eb45159c7b85308fcceb"
 }
