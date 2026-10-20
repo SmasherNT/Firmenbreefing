@@ -1,0 +1,2413 @@
+{
+ "schema_version": 1,
+ "mode": "interpret-v2",
+ "role": "positioning",
+ "run_id": "rheinmetall-2026-10-19",
+ "company": "Rheinmetall AG",
+ "as_of": "2026-10-19",
+ "scope": "Positionierung Rheinmetall-Konzern (Stichtag 2026-10-19) für das vollständige Firmenbriefing: Executive Summary und Highlights, Capability Matrix 155-mm-Artilleriemunition (Vergleichsplan v1, 6 Peers × 6 Kriterien), Produktreife aller 39 Portfolioeinträge (portfolio-maturity-v1), regionale Präsenz aller 21 Regionen (regional-presence-v2) sowie Keyfacts & Insights für Portfolio, Cluster und Markt. Ohne regionalen Markt-Deep-Dive und ohne Nutzerthemen.",
+ "status": "vollständig",
+ "input_fingerprint": "c303981e0f0721aa1bc5a5c3e5700ec984d3f37b06b3288e2d082db783e436e9",
+ "plan_fingerprint": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
+ "interpretations": [
+  {
+   "id": "I-ES-1",
+   "section": "executive_summary",
+   "display_order": 1,
+   "headline": "Starkes Wachstum, hohe Kapitalbindung: Backlog 80,5 Mrd. EUR",
+   "preview": "H1 2026 laut Rheinmetall: Umsatz +39 % auf 5,2 Mrd. EUR, Backlog inkl. erwarteter Rahmenabrufe; operativer Free Cashflow −1,6 Mrd. EUR.",
+   "statement": "Rheinmetall wächst laut eigenen Zahlen kräftig (H1 2026 Umsatz +39 %, Backlog 80,5 Mrd. EUR inkl. erwarteter Rahmenabrufe), bindet dafür aber Kapital (operativer Free Cashflow −1.616 Mio. EUR); die Jahresprognose wurde wegen F126 auf 13,7–14,2 Mrd. EUR gesenkt.",
+   "depends_on": [
+    "T-13",
+    "T-14",
+    "T-16",
+    "T-18"
+   ],
+   "reasoning": "Die Kennzahlen zeigen Skalierung aus Rahmenverträgen; den negativen Cashflow erklärt das Unternehmen mit Vorratsaufbau, verschobenen Anzahlungen und Investitionen. Papperger nannte im November 2025 rund 50 Mrd. EUR Umsatz bis 2030 als Ziel – ein Ziel, kein Ist.",
+   "method": "Verdichtung geprüfter A-Fakten und I-Einordnungen nach Auftragsrelevanz",
+   "uncertainty": "Unternehmensdefinitionen (Backlog, Nomination); Q3-Zahlen erst am 05.11.2026."
+  },
+  {
+   "id": "I-ES-2",
+   "section": "executive_summary",
+   "display_order": 2,
+   "headline": "155-mm-Munition: Werk läuft, Pulver im Konzern, 1,5 Mio sind Ziel",
+   "preview": "Unterlüß produziert seit 2025, Pulverfertigung Aschau ist operativ, Sprengstoff (RDX) nur angekündigt; 1,5 Mio Geschosse/Jahr sind Herstellerziel bis 2030.",
+   "statement": "In der Kerneinheit 155-mm-Munition verbindet Rheinmetall operative Fertigung in drei Ländern mit eigener Pulverfertigung; Sprengstoff-Eigenfertigung und das Ziel von 1,5 Mio Geschossen pro Jahr bis 2030 sind noch Plan.",
+   "depends_on": [
+    "P-W10",
+    "P-W40",
+    "P-W13",
+    "M-RHM-03",
+    "M-RHM-05",
+    "I-M-rheinmetall-integration",
+    "I-M-rheinmetall-industrial",
+    "I-M-rheinmetall-capacity",
+    "I-M-rheinmetall-procurement"
+   ],
+   "reasoning": "Matrix je Kriterium: Vertikalintegration 3/4, Fertigungsnetz 4/4, Beschaffung 4/4 – kein Gesamtrang. Das angekündigte Ausbautempo ist nicht als Ist-Kapazität belegt; ein vergleichbarer Rheinmetall-Reichweitenwert fehlt.",
+   "method": "Verdichtung geprüfter A-Fakten und I-Einordnungen nach Auftragsrelevanz",
+   "uncertainty": "Werk Litauen laut Fachmedium verzögert; Ist-Kapazität nicht veröffentlicht."
+  },
+  {
+   "id": "I-ES-3",
+   "section": "executive_summary",
+   "display_order": 3,
+   "headline": "Konzernumbau: Naval hinzu, Automotive im Verkauf, F126-Aus als Dämpfer",
+   "preview": "NVL seit März 2026 im Konzern, Verkauf von Power Systems an AEQUITA unterzeichnet (Closing Q4 2026 angestrebt); F126-Aus kostet bis zu 300 Mio. EUR Umsatz 2026.",
+   "statement": "Rheinmetall hat sich 2026 mit fünf Verteidigungssegmenten neu aufgestellt (NVL-Übernahme, Verkauf von Power Systems unterzeichnet); die F126-Stornierung zeigt das Programmrisiko des neuen Marinegeschäfts.",
+   "depends_on": [
+    "T-04",
+    "C-STR-14",
+    "P-C01",
+    "T-E17",
+    "C-STR-38",
+    "T-16"
+   ],
+   "reasoning": "Segmentneuordnung und NVL-Erwerb erweitern das Portfolio um Schiffbau; Power Systems ist als nicht fortgeführt gekennzeichnet. Nach der BMVg-Entscheidung zu F126 buchte Blohm+Voss 2.153 Mio. EUR Auftragsbestand aus.",
+   "method": "Verdichtung geprüfter A-Fakten und I-Einordnungen nach Auftragsrelevanz",
+   "uncertainty": "Closing Power Systems zum Stichtag offen; zivile Restaktivitäten bleiben im Konzern."
+  },
+  {
+   "id": "I-ES-4",
+   "section": "executive_summary",
+   "display_order": 4,
+   "headline": "Aufträge stark aus Bundeswehr-Programmen, Umsatz zu 62 % im Ausland",
+   "preview": "Puma, Schakal, TaWAN, IdZ-ES und SPOCK 1 sind beauftragt; der Boxer-Auftrag 'Arminius' (12,4 Mrd. EUR Anteil laut Rheinmetall) ist erwartet, nicht erteilt.",
+   "statement": "Die größten jüngsten Aufträge stammen aus deutschen Programmen, während 62 % des Halbjahresumsatzes im Ausland entstehen; der nächste Großauftrag 'Arminius' ist laut Rheinmetall erwartet, aber nicht erteilt.",
+   "depends_on": [
+    "C-MKT-01",
+    "C-MKT-02",
+    "C-MKT-03",
+    "T-E04",
+    "P-V17",
+    "T-E30",
+    "T-13",
+    "C-MKT-13"
+   ],
+   "reasoning": "Auftrags- und Umsatzseite unterscheiden sich: Rahmenverträge der Bundeswehr prägen den Auftragseingang, laufende Umsätze kommen stark aus dem Ausland. Arminius hängt laut Herstellerangabe an einer Entscheidung des Haushaltsausschusses am 09.12.2026.",
+   "method": "Verdichtung geprüfter A-Fakten und I-Einordnungen nach Auftragsrelevanz",
+   "uncertainty": "Der größte Kunde (rund 3,8 Mrd. EUR Umsatz 2025) wird im Bericht nicht benannt."
+  },
+  {
+   "id": "I-ES-5",
+   "section": "executive_summary",
+   "display_order": 5,
+   "headline": "Internationalisierung über lokale Werke und JV mit staatlichen Partnern",
+   "preview": "Präsenzstufe 5 u. a. in DE, NL, CH, IT, HU, US und ZA; Rumänien-Paket über 5,7 Mrd. EUR mit lokaler Wertschöpfung, Werke im Baltikum erst geplant.",
+   "statement": "Rheinmetall verankert Wertschöpfung in vielen Absatzmärkten, oft über beherrschte JV mit staatlichen Partnern; neue Werke im Baltikum und Bulgarien sind geplant bzw. politisch umstritten.",
+   "depends_on": [
+    "C-MKT-06",
+    "P-R72",
+    "P-R90",
+    "P-R95",
+    "C-STR-33",
+    "I-RP-de",
+    "I-RP-hu",
+    "I-RP-za",
+    "I-RP-us",
+    "I-RP-ro",
+    "I-RP-ua"
+   ],
+   "reasoning": "Präsenzskala: Stufe 5 in zehn Regionen (Ungarn und Südafrika als beherrschte JV), Stufe 4 u. a. in der Ukraine; Litauen und Lettland nur geplant. Kundenaufträge allein zählen nicht als Präsenz.",
+   "method": "Verdichtung geprüfter A-Fakten und I-Einordnungen nach Auftragsrelevanz",
+   "uncertainty": "Stufen messen organisatorische Verankerung, nicht Umsatz; Golfregion nicht bestimmbar."
+  },
+  {
+   "id": "I-ES-6",
+   "section": "executive_summary",
+   "display_order": 6,
+   "headline": "Neue Felder beauftragt, Lieferfähigkeit noch im Nachweis",
+   "preview": "Skyranger und FV-014 sind beauftragt, SPOCK 1 ist im Betrieb; Medien berichten Verzug bei Skyranger 30, Rheinmetall relativiert die Abweichung.",
+   "statement": "Flugabwehr, Loitering Munition und Raumfahrt wachsen über Aufträge (Air Defence H1 2026 +62 %), doch Serienlieferungen stehen teils aus; berichtete Verzüge bei Skyranger 30 sind ein Gesprächspunkt.",
+   "depends_on": [
+    "T-07",
+    "P-A10",
+    "P-A11",
+    "P-D20",
+    "P-D30",
+    "I-PM-skyranger",
+    "I-PM-fv014",
+    "I-PM-sar"
+   ],
+   "reasoning": "Reifeeinordnung: Skyranger und FV-014 auf Kundenprogramm-Stufe (4/6), SPOCK 1 im Betrieb (5/6). Zeitangaben zu Skyranger 30 weichen zwischen Beschaffungsamt und Rheinmetall ab.",
+   "method": "Verdichtung geprüfter A-Fakten und I-Einordnungen nach Auftragsrelevanz",
+   "uncertainty": "Verzugsangaben stammen aus Medienberichten über interne Unterlagen."
+  },
+  {
+   "id": "I-HL-1",
+   "type": "summary_highlight",
+   "section": "executive_highlights",
+   "highlight_kind": "metric",
+   "display_order": 1,
+   "label": "Rheinmetall Backlog (inkl. erwarteter Rahmenabrufe)",
+   "value": "80,5 Mrd. EUR",
+   "scope_label": "Konzern, fortgeführte Aktivitäten · Unternehmensangabe",
+   "period": "Stand 30.06.2026",
+   "statement": "Rheinmetall meldet zum 30.06.2026 einen Backlog von 80,5 Mrd. EUR (Vorjahr 56,0 Mrd. EUR), definiert als Auftragsbestand plus erwartete Rahmenvertragsabrufe.",
+   "depends_on": [
+    "T-14"
+   ],
+   "reasoning": "Zeigt die Auftragsbasis des Wachstums; die Unternehmensdefinition wird sichtbar gekennzeichnet.",
+   "method": "Auswahl aus geprüften A-Fakten (Auftragsbezug, Aktualität, Perspektive)",
+   "uncertainty": "Kein reiner Festauftragsbestand."
+  },
+  {
+   "id": "I-HL-2",
+   "type": "summary_highlight",
+   "section": "executive_highlights",
+   "highlight_kind": "metric",
+   "display_order": 2,
+   "label": "Umsatzprognose 2026 (gesenkt wegen F126)",
+   "value": "13,7–14,2 Mrd. EUR",
+   "scope_label": "Konzern · Unternehmensprognose, kein Ist",
+   "period": "Geschäftsjahr 2026 (Stand 06.08.2026)",
+   "statement": "Rheinmetall erwartet für 2026 einen Konzernumsatz von 13,7 bis 14,2 Mrd. EUR, nach Senkung um 300 Mio. EUR wegen der F126-Stornierung.",
+   "depends_on": [
+    "T-16",
+    "P-S05"
+   ],
+   "reasoning": "Verbindet Wachstumserwartung und Programmrisiko in einer zeitnahen Kennzahl.",
+   "method": "Auswahl aus geprüften A-Fakten (Auftragsbezug, Aktualität, Perspektive)",
+   "uncertainty": "Prognose; Q3-Zahlen folgen am 05.11.2026."
+  },
+  {
+   "id": "I-HL-3",
+   "type": "summary_highlight",
+   "section": "executive_highlights",
+   "highlight_kind": "metric",
+   "display_order": 3,
+   "label": "Ziel 155-mm-Kapazität (Projekt Firepower)",
+   "value": "1,5 Mio. Geschosse/Jahr",
+   "scope_label": "Konzernweit · Herstellerziel, keine Ist-Kapazität",
+   "period": "bis spätestens 2030",
+   "statement": "Rheinmetall will bis spätestens 2030 jährlich 1,5 Mio 155-mm-Artilleriegeschosse fertigen und baut dafür neue Werke.",
+   "depends_on": [
+    "P-W13"
+   ],
+   "reasoning": "Industrielle Perspektive auf die Kerngeschäftseinheit der Capability Matrix.",
+   "method": "Auswahl aus geprüften A-Fakten (Auftragsbezug, Aktualität, Perspektive)",
+   "uncertainty": "Planziel; frühere Mitteilung nannte bereits 2027."
+  },
+  {
+   "id": "I-M-rheinmetall-spectrum",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "rheinmetall",
+   "criterion_id": "spectrum",
+   "cell_status": "bewertet",
+   "value": "HE/ER-Geschosse (Assegai M2005 V-LAP, ER02A1-B/B), SMArt 155, modulare Treibladungen M92/M203, Zünder; gelenktes 155-mm-Geschoss nicht belegt",
+   "headline": "ER-Geschosse, SMArt 155, Ladungen, Zünder",
+   "preview": "V-LAP/ER02A1, M92/M203; gelenktes Geschoss nicht belegt (Herstellerangaben)",
+   "statement": "Rheinmetall bietet laut Herstellerangaben Spreng- und reichweitengesteigerte 155-mm-Geschosse, SMArt 155, modulare Treibladungen und Zünder an; ein gelenktes Geschoss ist nicht belegt.",
+   "depends_on": [
+    "M-RHM-01",
+    "M-RHM-06",
+    "P-W30"
+   ],
+   "reasoning": "Profil verdichtet die RDM-Assegai-Linie (V-LAP mit Raketen-/Base-Bleed-Technik, M92-Ladungen), Expal-ER02A1-B/B mit M203 und SMArt 155 aus Unterlüß. Präzisionsmunition ist in den geöffneten Quellen nicht aufgeführt.",
+   "method": "Profil aus Herstellerangaben nach Vergleichsplan v1",
+   "uncertainty": "Keine vollständige Rheinmetall-Produktliste geöffnet; fehlendes gelenktes Geschoss ist Beleglücke, keine festgestellte Angebotslücke."
+  },
+  {
+   "id": "I-M-rheinmetall-range",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "rheinmetall",
+   "criterion_id": "range",
+   "cell_status": "weitere Faktenprüfung nötig",
+   "value": null,
+   "headline": "Nur Testrekorde 2019, kein Datenblattwert",
+   "preview": "67 km (L52, Test 2019) keiner Serienvariante/Ladung eindeutig zugeordnet",
+   "statement": "Für Rheinmetall liegen nur Testwerte von 2019 vor; eine Datenblatt-Maximalreichweite je angebotener Variante mit Rohr und Ladung ist nicht belegt.",
+   "depends_on": [
+    "M-RHM-02"
+   ],
+   "reasoning": "Der Plan verlangt Werte je Variante mit Rohr/Ladung und trennt Test- von Datenblattwerten. Die Rekordschüsse lassen sich keiner angebotenen Serienvariante mit Ladung eindeutig zuordnen; ein Zahlenwert wäre mit den Datenblattwerten der Peers nicht vergleichbar.",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "Keine Aussage über eine Leistungsschwäche der Serienmunition.",
+   "coverage_note": "Testschießen Alkantpan 06.11.2019 (Herstellerangabe): 67 km aus PzH 2000 L52, 76 km aus G6 (nicht JBMoU-konform), 54 km aus L39; Geschossvariante je Schuss und Ladung nicht vollständig angegeben; kein Datenblattwert in den geöffneten Quellen."
+  },
+  {
+   "id": "I-M-rheinmetall-integration",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "rheinmetall",
+   "criterion_id": "integration",
+   "cell_status": "bewertet",
+   "value": 3,
+   "headline": "3/4: Pulver operativ, Sprengstoff angekündigt",
+   "preview": "Nitrochemie Aschau ~1.700 t Pulver p. a.; RDX Unterlüß/Várpalota nur geplant",
+   "statement": "Rheinmetall fertigt Treibladungspulver operativ im Konzern (Nitrochemie Aschau); eine eigene Sprengstofffertigung ist angekündigt, aber nicht operativ belegt.",
+   "depends_on": [
+    "P-W40",
+    "C-STR-25",
+    "C-STR-27",
+    "P-R140",
+    "M-RHM-03",
+    "M-RHM-05",
+    "M-RHM-04",
+    "C-TEC-05"
+   ],
+   "reasoning": "Stufe 3 trägt die laufende Pulver- und Modulfertigung von Nitrochemie Aschau (Mehrheitsbeteiligung 55 %), ergänzt um den Nitrozellulose-Hersteller Hagedorn-NC und Treib-/Rohstoffe bei RDM. RDX in Unterlüß (Ankündigung 2024), Várpalota (Produktion bis 2027 geplant) und das Pulverwerk Victoria (2028) sind Planstände.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Reliance-MoU betrifft Zukauf, keine Eigenfertigung.",
+   "next_stage_limit": "Stufe 4 erfordert operative eigene Sprengstofffertigung; dafür liegen nur Ankündigungen bzw. Pläne vor (RDX Unterlüß, Várpalota)."
+  },
+  {
+   "id": "I-M-rheinmetall-capacity",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "rheinmetall",
+   "criterion_id": "capacity",
+   "cell_status": "bewertet",
+   "value": 1500000,
+   "headline": "Ziel 1,5 Mio/Jahr konzernweit bis 2030",
+   "preview": "Herstellerziel, keine Ist-Kapazität; Unterlüß bis 350.000/Jahr ab 2027 (Plan)",
+   "statement": "Rheinmetall nennt als konzernweites Ziel 1,5 Mio 155-mm-Geschosse pro Jahr bis spätestens 2030; eine Ist-Jahreskapazität zum Stichtag ist nicht veröffentlicht.",
+   "depends_on": [
+    "P-W13",
+    "P-W10",
+    "T-E01",
+    "C-MKT-12"
+   ],
+   "reasoning": "Wert ist ein Herstellerziel mit Zieljahr (Projekt Firepower, Stand 16.10.2026), konzernweit, Einheit Geschosse pro Jahr. Werkswerte Unterlüß (bis zu 350.000 ab 2027, 140.000 Lieferungen 2026) sind ebenfalls Planwerte; Maryborough ist nur beauftragt.",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "Die Mitteilung vom 05.09.2025 nannte 1,5 Mio bereits ab 2027; Zielwert nur eingeschränkt mit Peer-Zielen vergleichbar."
+  },
+  {
+   "id": "I-M-rheinmetall-procurement",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "rheinmetall",
+   "criterion_id": "procurement",
+   "cell_status": "bewertet",
+   "value": 4,
+   "headline": "4/4: Rahmenverträge, mehrere Staaten, Ukraine",
+   "preview": "Bundeswehr-Rahmen bis 8,5 Mrd EUR, NATO-Rahmen (RDM), Ukraine laut Hersteller",
+   "statement": "Für Rheinmetall sind mehrjährige Rahmenverträge, Lieferungen an mehrere Staaten und laut Hersteller hunderttausende in die Ukraine gelieferte 155-mm-Geschosse belegt.",
+   "depends_on": [
+    "P-W11",
+    "M-RHM-01",
+    "M-RHM-06",
+    "P-W12",
+    "P-W02"
+   ],
+   "reasoning": "Stufe 4 stützt sich auf den Bundeswehr-Rahmenvertrag (Empfänger u. a. Ukraine, Niederlande, Estland, Dänemark), den fünfjährigen RDM-Rahmenvertrag eines NATO-Kunden mit in mehreren NATO-Ländern eingeführter Munition sowie den ukrainischen Direktauftrag 06/2026. Der Einsatzbezug beruht auf Lieferungen in die Ukraine und Einführung bei NATO-Streitkräften laut Hersteller.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Liefer- und Einführungsangaben sind Herstellerangaben ohne Mengenbeleg; Kunde des RDM-Rahmenvertrags ungenannt.",
+   "next_stage_limit": "Höchste Stufe der Skala; unabhängige Liefer-/Einsatzmengen sind nicht belegt."
+  },
+  {
+   "id": "I-M-rheinmetall-industrial",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "rheinmetall",
+   "criterion_id": "industrial",
+   "cell_status": "bewertet",
+   "value": 4,
+   "headline": "4/4: DE, ES, ZA operativ; Litauen im Bau",
+   "preview": "Werk Baisogala im Bau, laut Fachmedium verzögert; Lettland nur MoU",
+   "statement": "Rheinmetall fertigt 155-mm-Munition bzw. Kernkomponenten operativ in Deutschland, Spanien und Südafrika und baut ein neues Werk in Litauen.",
+   "depends_on": [
+    "P-W10",
+    "P-R40",
+    "M-RHM-06",
+    "P-R140",
+    "P-R90",
+    "M-RHM-07",
+    "P-R95",
+    "C-MKT-12",
+    "P-R120"
+   ],
+   "reasoning": "Drei Länder mit operativer Fertigung (Unterlüß seit 2025, Expal-Fertigung für den Ukraine-Auftrag, RDM Südafrika) plus Werksaufbau Baisogala (Spatenstich 11/2025) erfüllen Stufe 4. Australien zählt nicht, weil die 155-mm-Schmiede in Maryborough nur beauftragt ist.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Werksangaben überwiegend Herstellerangaben; Verzögerung Litauen/Lettland nur Medienangabe.",
+   "next_stage_limit": "Höchste Stufe der Skala; Inbetriebnahme Baisogala und Werk Lettland sind nicht belegt."
+  },
+  {
+   "id": "I-M-nammo-spectrum",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "nammo",
+   "criterion_id": "spectrum",
+   "cell_status": "bewertet",
+   "value": "HE, HE-ER, IM HE-ER (Base Bleed/Hollow Base), TP-ER; M119A2-Ladungen aus den USA; raketen-/ramjetgestützte Geschosse ohne Serienstatus",
+   "headline": "HE/ER-Familie, US-Treibladungen M119A2",
+   "preview": "Raketen-/Ramjet-Geschosse nur erwähnt; gelenkt nicht gelistet (Herstellerangabe)",
+   "statement": "Nammo bietet laut Produktseiten eine 155-mm-Familie aus HE- und Extended-Range-Geschossen sowie Übungsmunition an und fertigt in den USA M119A2-Treibladungen.",
+   "depends_on": [
+    "M-NAM-01",
+    "M-NAM-06"
+   ],
+   "reasoning": "Profil aus Nammo-Produktseiten: HE, HE-ER, IM HE-ER mit wechselbarem Base Bleed/Hollow Base und TP-ER. Raketenunterstützte und Ramjet-Geschosse werden ohne Serienstatus erwähnt; M119A2 wird im US-Werk Perry gefertigt.",
+   "method": "Profil aus Herstellerangaben nach Vergleichsplan v1",
+   "uncertainty": "Gelenkte Munition nicht gelistet ist Beleggrenze der geöffneten Seiten."
+  },
+  {
+   "id": "I-M-nammo-range",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "nammo",
+   "criterion_id": "range",
+   "cell_status": "bewertet",
+   "value": 41,
+   "headline": "41 km IM HE-ER Base Bleed (L52, Datenblatt)",
+   "preview": "30 km aus L39; Status 'Qualified' (Herstellerangabe)",
+   "statement": "Nammo gibt für das 155 mm IM HE-ER mit Base Bleed maximal 41 km aus L52-Rohren an (Datenblatt, Status qualifiziert).",
+   "depends_on": [
+    "M-NAM-02"
+   ],
+   "reasoning": "Datenblattwert für die weitreichendste gelistete Variante: 41 km L52 bzw. 30 km L39 mit Base Bleed, Mündungsgeschwindigkeit 935 m/s mit 6 DM72 in L/52. Einheit km, Herstellerangabe.",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "Messbedingungen über die Ladung DM72 hinaus nicht spezifiziert."
+  },
+  {
+   "id": "I-M-nammo-integration",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "nammo",
+   "criterion_id": "integration",
+   "cell_status": "bewertet",
+   "value": 3,
+   "headline": "3/4: Pulver in Vihtavuori und Mesa (USA)",
+   "preview": "Operative Sprengstofffertigung für 155-mm-Füllungen nicht konkret belegt",
+   "statement": "Nammo fertigt laut Unternehmensseiten Treibladungspulver in Vihtavuori (Finnland) und Mesa (USA); eine operative Sprengstofffertigung für 155-mm-Füllungen ist nicht konkret belegt.",
+   "depends_on": [
+    "M-NAM-07",
+    "M-NAM-05"
+   ],
+   "reasoning": "Stufe 3 trägt die als Pulverfabrik bezeichnete Fertigung in Vihtavuori und die Treibladungspulver-Fertigung in Mesa. Sprengstoffe nennt Nammo nur als Konzerngebiet; der finnische Ausbau für Sprengstoffe ist Planangabe.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Welche Pulver konkret in 155-mm-Ladungen gehen, ist nicht angegeben.",
+   "next_stage_limit": "Stufe 4 erfordert konkret belegte operative Sprengstofffertigung; werksbezogene Belege fehlen."
+  },
+  {
+   "id": "I-M-nammo-capacity",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "nammo",
+   "criterion_id": "capacity",
+   "cell_status": "bewertet",
+   "value": 200000,
+   "headline": "Ziel 200.000 Schuss/Jahr bis 2028 (Medien)",
+   "preview": "Keine Ist-Kapazität; Raufoss-Linie soll Produktion verzehnfachen (Plan)",
+   "statement": "Für Nammo ist nur ein konzernweites Ziel von 200.000 155-mm-Schuss pro Jahr bis 2028 als Medienzitat (NYT, 12/2023) belegt; eine Ist-Kapazität ist nicht veröffentlicht.",
+   "depends_on": [
+    "M-NAM-05",
+    "M-NAM-04",
+    "M-NAM-06"
+   ],
+   "reasoning": "Zielwert mit Zieljahr, Einheit Schuss pro Jahr, konzernweit, über Defence Industry Europe zitiert. Die Verzehnfachung in Raufoss hat keinen Basiswert; Perry liefert über 33.000 M119A2-Ladungen pro Monat (Ladungen, keine Geschosse).",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "Medienangabe von 12/2023 ohne Herstellerbestätigung; Stand des Hochlaufs zum Stichtag offen."
+  },
+  {
+   "id": "I-M-nammo-procurement",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "nammo",
+   "criterion_id": "procurement",
+   "cell_status": "bewertet",
+   "value": 3,
+   "headline": "3/4: Norwegen-Verträge, 15-Jahres-Vertrag",
+   "preview": "Ukraine-Spendenvertrag 2023; Einsatznachweis und Kunden 2025 nicht belegt",
+   "statement": "Für Nammo sind norwegische 155-mm-Verträge, ein 15-jähriger Bereitschaftsvertrag sowie Rahmenverträge 2025 ohne Kundennennung belegt.",
+   "depends_on": [
+    "M-NAM-03",
+    "M-NAM-04",
+    "M-NAM-08"
+   ],
+   "reasoning": "Der mehrjährige Bereitschaftsvertrag (1,083 Mrd NOK, Norwegen) erfüllt Stufe 3; hinzu kommen IM-HE-ER-Verträge und ein Vertrag über NM28/M107 für Spenden an die Ukraine. Lieferungen an weitere Staaten nennt Nammo nur pauschal.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Mengen nicht beziffert; norwegische Primärquelle nicht abrufbar.",
+   "next_stage_limit": "Stufe 4 erfordert belegte Rahmenverträge/Lieferungen an mehrere Staaten und belegten Einsatz; Kunden der Rahmenverträge 2025 und Einsatznachweis fehlen."
+  },
+  {
+   "id": "I-M-nammo-industrial",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "nammo",
+   "criterion_id": "industrial",
+   "cell_status": "bewertet",
+   "value": 4,
+   "headline": "4/4: Norwegen, Finnland, USA; Neubau Raufoss",
+   "preview": "Neuer Werksbau Raufoss seit 12/2024; Fertigung in neun Ländern laut Nammo",
+   "statement": "Nammo fertigt 155-mm-Geschosse bzw. Komponenten operativ in Norwegen, Finnland und den USA und baut seit 12/2024 eine neue Anlage in Raufoss.",
+   "depends_on": [
+    "M-NAM-08",
+    "M-NAM-05",
+    "M-NAM-07",
+    "M-NAM-06",
+    "M-NAM-04"
+   ],
+   "reasoning": "Drei Länder mit operativer Fertigung (Raufoss, finnische Artilleriemunition und Vihtavuori, Perry/Mesa) plus belegter Neubau erfüllen Stufe 4.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Welche der neun Fertigungsländer 155-mm-Komponenten liefern, ist offen.",
+   "next_stage_limit": "Höchste Stufe der Skala; Abschluss und Kapazität des Raufoss-Neubaus sind nicht belegt."
+  },
+  {
+   "id": "I-M-knds-spectrum",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "knds",
+   "criterion_id": "spectrum",
+   "cell_status": "bewertet",
+   "value": "HE (LU 211, LU 220 ER, L15A1/A2, LU 107, M107), Nebel/Leucht (LU 215–217), BONUS MKII, gelenktes KATANA, modulare Treibladungen MCS",
+   "headline": "HE/ER, Nebel/Leucht, BONUS, gelenkt KATANA",
+   "preview": "Katalog 2026-2027 inkl. Präzisionsmunition und MCS-Ladungen (Herstellerangaben)",
+   "statement": "KNDS listet im Katalog 2026-2027 Spreng-, Extended-Range-, Nebel- und Leuchtgeschosse, BONUS MKII, das gelenkte KATANA sowie modulare Treibladungen.",
+   "depends_on": [
+    "M-KND-01"
+   ],
+   "reasoning": "Profil aus dem KNDS-Munitionskatalog (KNDS Belgium, Ammo France, Ammo Italy). Neben HE/ER und Ladungen sind Präzisions- (KATANA, GNSS/IMU) und Sensorzündermunition (BONUS MKII) enthalten.",
+   "method": "Profil aus Herstellerangaben nach Vergleichsplan v1",
+   "uncertainty": "Katalog weist auf mögliche Änderungen bei Produkten in Entwicklung hin; Serienstatus je Variante nicht angegeben."
+  },
+  {
+   "id": "I-M-knds-range",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "knds",
+   "criterion_id": "range",
+   "cell_status": "bewertet",
+   "value": 40,
+   "headline": "40 km LU 211 BB (155/52); KATANA >45 km",
+   "preview": "LU 220 ~43 km, KATANA >45 km ohne Rohr-/Ladungsangabe (Hersteller)",
+   "statement": "KNDS gibt für das LU 211 mit Base Bleed bis zu 40 km aus 155/52 an; höhere Katalogwerte für LU 220 und KATANA nennen keine Rohr-/Ladungsbedingungen.",
+   "depends_on": [
+    "M-KND-02"
+   ],
+   "reasoning": "Der Plan verlangt Werte je Variante mit Rohrlänge; nur das LU 211 erfüllt dies (40 km L52, 30 km L39). LU 220 (~43 km) und KATANA (>45 km) bleiben Herstellerangaben ohne Bedingungen und werden nicht als Kennwert übernommen.",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "Ladung auch für LU 211 nicht angegeben; kein Testnachweis geöffnet."
+  },
+  {
+   "id": "I-M-knds-integration",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "knds",
+   "criterion_id": "integration",
+   "cell_status": "nicht öffentlich belegt",
+   "value": null,
+   "headline": "Eigene Pulver-/Sprengstofffertigung nicht belegt",
+   "preview": "MCS-Ladungen im Angebot, Pulverherkunft offen; keine Schwäche abgeleitet",
+   "statement": "Eine eigene Pulver- oder Sprengstofffertigung von KNDS ist in den geöffneten Quellen nicht belegt; daraus folgt keine fehlende Fähigkeit.",
+   "depends_on": [
+    "M-KND-01",
+    "M-KND-09"
+   ],
+   "reasoning": "Ohne werksbezogenen Beleg wird keine Stufe vergeben; Anker 1 wird nicht aus einer Beleglücke abgeleitet. Die Explosion in einer Sprengstoff-Abteilung bei KNDS Ammo Italy belegt Umgang mit Energetik, aber keine eigene Herstellung.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "",
+   "coverage_note": "Geöffnete KNDS-Quellen nennen keine eigene Pulver- oder Sprengstoffherstellung; Bezugsquellen (z. B. Eurenco) nicht geprüft; laut Euronews offen, ob in Colleferro Pulver hergestellt oder nur verarbeitet wird."
+  },
+  {
+   "id": "I-M-knds-capacity",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "knds",
+   "criterion_id": "capacity",
+   "cell_status": "weitere Faktenprüfung nötig",
+   "value": null,
+   "headline": "Werksziel 100.000/Jahr ohne Zieljahr",
+   "preview": "Verdreifachung ohne Basiswert; Polen-Ziel 180.000 betrifft Partnerwerk",
+   "statement": "Für KNDS liegt kein Kennwert nach Planbedingungen vor: Das Werksziel von 100.000 Geschossen pro Jahr hat kein Zieljahr, weitere Angaben betreffen Partner oder Steigerungsraten.",
+   "depends_on": [
+    "M-KND-06",
+    "M-KND-04",
+    "M-KND-05",
+    "M-KND-07"
+   ],
+   "reasoning": "Der Plan verlangt Ist- oder Zielkapazität mit Zieljahr und Kennzeichnung Werk/Konzern. Keine KNDS-Angabe erfüllt dies vollständig; Partner- und Zuliefererwerte werden nicht als KNDS-Kapazität übernommen.",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "",
+   "coverage_note": "Le Monde (04/2025, Sekundärwiedergabe): Ziel 100.000 pro Jahr in La Chapelle-Saint-Ursin ohne Zieljahr; Verdreifachung seit 2022 ohne Basiswert; 180.000 Sätze pro Jahr sind Ziel eines polnischen Partnerwerks; Tarbes liefert nur Hüllen; keine konzernweite Ist-Kapazität."
+  },
+  {
+   "id": "I-M-knds-procurement",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "knds",
+   "criterion_id": "procurement",
+   "cell_status": "bewertet",
+   "value": 4,
+   "headline": "4/4: NSPA-Rahmen, Bundeswehr, Einsatz Ukraine",
+   "preview": "NSPA 1,1 Mrd EUR (mit Junghans); LU211-Einsatz in der Ukraine laut KNDS",
+   "statement": "Für KNDS sind multinationale NSPA-Rahmenverträge, eine Bundeswehr-Bestellung für die Ukraine und laut KNDS der Einsatz des LU211 in der Ukraine seit 2022 belegt.",
+   "depends_on": [
+    "M-KND-03",
+    "M-KND-04",
+    "M-KND-08"
+   ],
+   "reasoning": "Rahmenverträge für mehrere NATO-Staaten (initiiert von drei Staaten), Produktion für Belgien und Lieferungen an die Ukraine erfüllen zusammen mit dem Einsatznachweis Stufe 4.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Einsatzangaben sind Herstellerangaben; Volumenaufteilung Nexter/Junghans offen.",
+   "next_stage_limit": "Höchste Stufe der Skala; Lieferstand der NSPA-Verträge ist nicht belegt."
+  },
+  {
+   "id": "I-M-knds-industrial",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "knds",
+   "criterion_id": "industrial",
+   "cell_status": "bewertet",
+   "value": 4,
+   "headline": "4/4: Frankreich, Belgien, Italien; neue Linie",
+   "preview": "Neue automatisierte Linie Belgien 11/2025; Polen-Lizenzfertigung nur vereinbart",
+   "statement": "KNDS fertigt 155-mm-Munition in Frankreich, Belgien und Italien und hat in Belgien im November 2025 eine neue automatisierte Geschosslinie eröffnet.",
+   "depends_on": [
+    "M-KND-06",
+    "M-KND-08",
+    "M-KND-09",
+    "M-KND-05",
+    "M-KND-01"
+   ],
+   "reasoning": "Drei Länder mit operativer Fertigung plus neue Fertigungseinheit in Petit-Roeulx-lez-Nivelles erfüllen Stufe 4; Polen ist nur vereinbart und zählt nicht.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "155-mm-Bezug in Italien stützt sich auf Katalog und großkalibrige Fertigung laut Euronews; neue Einheit liegt an bestehendem Standort.",
+   "next_stage_limit": "Höchste Stufe der Skala; Folgen der Colleferro-Explosion für die Produktion sind nicht belegt."
+  },
+  {
+   "id": "I-M-bae-spectrum",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "bae",
+   "criterion_id": "spectrum",
+   "cell_status": "bewertet",
+   "value": "L15 HE, XL12E1 HE ER (Base Bleed), L21 HE, L17 Inert; Treibladungen L8/L10/L18; Zünder L174; gelenkte bzw. Bofors-Produkte nicht geprüft",
+   "headline": "L15/XL12E1/L21, Ladungen L8–L18, Zünder L174",
+   "preview": "Laut Broschüre 02/2026; Präzisionsmunition mangels Zugriff nicht geprüft",
+   "statement": "BAE Systems führt in der 155-mm-Broschüre (02/2026) HE- und Base-Bleed-Geschosse, Treibladungen und einen Zünder; gelenkte Produkte wurden nicht geprüft.",
+   "depends_on": [
+    "M-BAE-01"
+   ],
+   "reasoning": "Profil aus dem Original-PDF der BAE-Broschüre; L15 und L21 sind laut BAE beim MOD im Dienst, XL12E1 ist aus L15 abgeleitet. BAE-Bofors- und Präzisionsprodukte blieben wegen gesperrter Produktseiten offen.",
+   "method": "Profil aus Herstellerangaben nach Vergleichsplan v1",
+   "uncertainty": "Spektrum unvollständig erfasst (Zugriffsgrenze); keine Aussage zu fehlenden Produkten."
+  },
+  {
+   "id": "I-M-bae-range",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "bae",
+   "criterion_id": "range",
+   "cell_status": "bewertet",
+   "value": 40,
+   "headline": "40 km XL12E1 ER (L/52), nicht im Dienst",
+   "preview": "Eingeführtes L15: 32 km L/52; '>40 km in Trials' (Herstellerangabe)",
+   "statement": "BAE gibt für das XL12E1 HE ER 40 km aus L/52 an, das Geschoss ist nicht als im Dienst ausgewiesen; das eingeführte L15 erreicht 32 km.",
+   "depends_on": [
+    "M-BAE-02"
+   ],
+   "reasoning": "Weitreichendste gelistete Variante: XL12E1 mit 40 km L/52 und >30 km L/39 laut Broschüre; 'Greater than 40km achieved through trials' ist Qualifikationsangabe. Einheit km, Herstellerangabe.",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "Trial-Bedingungen und Ladung nicht beschrieben."
+  },
+  {
+   "id": "I-M-bae-integration",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "bae",
+   "criterion_id": "integration",
+   "cell_status": "bewertet",
+   "value": 4,
+   "headline": "4/4 als Betreiber staatlicher US-Werke",
+   "preview": "Holston (RDX/HMX), Radford (NC/Treibmittel); UK ohne eigene Sprengstoffe",
+   "statement": "BAE Systems OSI betreibt als Auftragnehmer die US-Army-Werke Holston (Sprengstoffe) und Radford (Nitrozellulose, Treibmittel); im britischen Geschäft ist Energetik importabhängig.",
+   "depends_on": [
+    "M-BAE-06",
+    "M-BAE-05",
+    "M-HAN-02",
+    "M-BAE-04"
+   ],
+   "reasoning": "Stufe 4 beruht auf operativer Sprengstoff- und Treibmittelfertigung durch BAE OSI in Holston und Radford (Betreibermodell, Werke Army-eigen). Für Großbritannien berichtet Calibre Defence fehlende Sprengstoffproduktion; BAE bezieht dort MCS-Ladungen von Hanwha.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Werke nicht im BAE-Eigentum; Angaben aus Interview mit BAE-Vertretern; Verwendung der US-Energetik in UK-Geschossen nicht belegt.",
+   "next_stage_limit": "Höchste Stufe der Skala; sie gilt für das US-Betreibermodell, nicht für die britische 155-mm-Lieferkette."
+  },
+  {
+   "id": "I-M-bae-capacity",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "bae",
+   "criterion_id": "capacity",
+   "cell_status": "nicht öffentlich belegt",
+   "value": null,
+   "headline": "Keine absolute Kapazität veröffentlicht",
+   "preview": "16-fach-Steigerung angekündigt, Glascoed verzögert (Calibre Defence 08/2026)",
+   "statement": "Für BAE ist keine absolute 155-mm-Jahreskapazität öffentlich belegt; angekündigt ist eine sechzehnfache Steigerung mit der verzögerten Füllanlage Glascoed.",
+   "depends_on": [
+    "M-BAE-04",
+    "M-BAE-05"
+   ],
+   "reasoning": "Eine Steigerungsrate ohne Basiswert erfüllt die Kennzahlbedingung nicht; daher kein Wert.",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "",
+   "coverage_note": "Keine absolute Ist- oder Zielkapazität in Geschossen pro Jahr gefunden; baesystems.com-Mitteilungen waren gesperrt; Sechzehnfach-Angabe ohne Basiswert nur über UKDJ."
+  },
+  {
+   "id": "I-M-bae-procurement",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "bae",
+   "criterion_id": "procurement",
+   "cell_status": "bewertet",
+   "value": 3,
+   "headline": "3/4: MOD-Auftrag im 15-Jahres-Rahmen NGMS",
+   "preview": "L15/L21 beim MOD im Dienst; Export- oder Ukraine-Lieferungen nicht belegt",
+   "statement": "Für BAE ist ein MOD-Auftrag über 280 Mio GBP im 15-jährigen Next Generation Munitions Solution belegt; L15/L21 sind laut BAE beim MOD im Dienst.",
+   "depends_on": [
+    "M-BAE-03",
+    "M-BAE-01"
+   ],
+   "reasoning": "Ein mehrjähriger Rahmen mit einem Staat erfüllt Stufe 3. Weitere Staaten als Kunden oder Lieferungen an die Ukraine sind in den geöffneten Quellen nicht belegt.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Exportgeschäft wegen gesperrter Primärquellen möglicherweise unvollständig erfasst.",
+   "next_stage_limit": "Stufe 4 erfordert Rahmenverträge/Lieferungen an mehrere Staaten und belegten Einsatz; dafür fehlen Belege."
+  },
+  {
+   "id": "I-M-bae-industrial",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "bae",
+   "criterion_id": "industrial",
+   "cell_status": "bewertet",
+   "value": 3,
+   "headline": "3/4: UK und USA (Energetik) operativ",
+   "preview": "Washington/Glascoed (UK), Holston/Radford (USA); Glascoed-Ausbau verzögert",
+   "statement": "BAE fertigt 155-mm-Komponenten in Großbritannien und betreibt Energetikwerke in den USA; ein drittes Fertigungsland ist nicht belegt.",
+   "depends_on": [
+    "M-BAE-03",
+    "M-BAE-05",
+    "M-BAE-06"
+   ],
+   "reasoning": "Zwei Länder mit operativer Fertigung erfüllen Stufe 3; der Glascoed-Ausbau ist laut Fachmedium verzögert.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "US-Werke sind Army-eigen (Betreibermodell).",
+   "next_stage_limit": "Stufe 4 erfordert operative Fertigung in mindestens drei Ländern plus Werksaufbau; ein drittes Land ist nicht belegt."
+  },
+  {
+   "id": "I-M-gdots-spectrum",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "gdots",
+   "criterion_id": "spectrum",
+   "cell_status": "bewertet",
+   "value": "M795 HE, M1128-I (Base Bleed), ERA-HE (Start 2026), XM1113 (raketenunterstützt), MR103, SMArt 155/SMArtER155; Ladungen M119A2, MACS M231/M232A1, UBX",
+   "headline": "HE/BB/RAP, SMArt 155, MACS- und M119A2-Ladungen",
+   "preview": "ERA-HE 'Launching in 2026'; SMArt-Fertigungsrolle offen (Herstellerangaben)",
+   "statement": "GD-OTS bietet laut Produktseiten Spreng-, Base-Bleed- und raketenunterstützte Geschosse, SMArt 155/SMArtER155 sowie die Ladungen M119A2, MACS und UBX an.",
+   "depends_on": [
+    "M-GDO-01"
+   ],
+   "reasoning": "Profil aus GD-OTS-Produktseiten; GD-OTS ist laut Seite MACS-Hersteller für Army und Marine Corps. ERA-HE ist als Markteinführung 2026 gekennzeichnet.",
+   "method": "Profil aus Herstellerangaben nach Vergleichsplan v1",
+   "uncertainty": "Ob GD-OTS SMArt 155/SMArtER155 selbst fertigt oder nur anbietet, ist offen."
+  },
+  {
+   "id": "I-M-gdots-range",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "gdots",
+   "criterion_id": "range",
+   "cell_status": "bewertet",
+   "value": 40,
+   "headline": "40 km M1128-I (L52, MCS Zone 6H)",
+   "preview": "Teils aus Ingenieursimulation abgeleitet; ERA-HE 30 km (Herstellerangabe)",
+   "statement": "GD-OTS gibt für das M1128-I maximal 40 km mit MCS Zone 6H aus 52-Kaliber-Rohren an.",
+   "depends_on": [
+    "M-GDO-02"
+   ],
+   "reasoning": "Broschürenwert (06/2026) mit vollständiger Rohr- und Ladungsangabe; ERA-HE (Hollow Base) erreicht unter gleichen Bedingungen 30 km. Einheit km, Herstellerangabe.",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "Werte beruhen teils auf Simulation statt Schießdaten."
+  },
+  {
+   "id": "I-M-gdots-integration",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "gdots",
+   "criterion_id": "integration",
+   "cell_status": "bewertet",
+   "value": 3,
+   "headline": "3/4: Treibmittel in Valleyfield (Kanada)",
+   "preview": "Single/Double/Triple Base, Füllungen; Sprengstoffsynthese nicht belegt",
+   "statement": "GD-OTS Canada fertigt in Valleyfield Single-, Double- und Triple-Base-Treibmittel und Sprengstofffüllungen; eine eigene Sprengstoffsynthese ist nicht belegt.",
+   "depends_on": [
+    "M-GDO-06"
+   ],
+   "reasoning": "Operative Treibmittelfertigung einschließlich M31A2 trägt Stufe 3; die US-Army-UCA (03/2024) erweitert diese Kapazität. Füllung ist keine Sprengstoffherstellung.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Unternehmensseite trennt Füllung und Herstellung nicht eindeutig.",
+   "next_stage_limit": "Stufe 4 erfordert operative eigene Sprengstofffertigung; eine Synthese (z. B. TNT/RDX) ist nicht belegt."
+  },
+  {
+   "id": "I-M-gdots-capacity",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "gdots",
+   "criterion_id": "capacity",
+   "cell_status": "nicht öffentlich belegt",
+   "value": null,
+   "headline": "Keine GD-OTS-Kapazität veröffentlicht",
+   "preview": "Mesquite-Ziel 30.000/Monat nur medial GD-OTS zugeordnet, nicht erreicht",
+   "statement": "Für GD-OTS ist keine eigene 155-mm-Jahreskapazität öffentlich belegt; eine medial zugeordnete Mesquite-Zielmenge wurde laut Bericht nicht geliefert.",
+   "depends_on": [
+    "M-GDO-05",
+    "M-GDO-03"
+   ],
+   "reasoning": "Ein Medienabgleich ohne Behörden- oder Herstellerbestätigung und Metallteile statt Geschosse erfüllen die Kennzahlbedingungen nicht.",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "",
+   "coverage_note": "Keine GD-OTS-spezifische Ist- oder Zielkapazität in Geschossen pro Jahr gefunden; Mesquite-Angabe (30.000 Geschosskörper/Monat) aus IG-Bericht ohne Auftragnehmernennung, Zuordnung nur durch Task & Purpose; IG-Bericht nicht geöffnet."
+  },
+  {
+   "id": "I-M-gdots-procurement",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "gdots",
+   "criterion_id": "procurement",
+   "cell_status": "bewertet",
+   "value": 2,
+   "headline": "2/4: Army-Task-Order, MACS, Treibmittel-UCA",
+   "preview": "Mehrjähriger Liefer-Rahmenvertrag nicht ausdrücklich belegt",
+   "statement": "Für GD-OTS sind ein 217-Mio-USD-Task-Order zum Ausbau der Geschosskörperfertigung, MACS-Fertigung unter Army-Vertrag und eine Treibmittel-UCA belegt.",
+   "depends_on": [
+    "M-GDO-03",
+    "M-GDO-01",
+    "M-GDO-06"
+   ],
+   "reasoning": "Die Belege sind Einzelaufträge des US-Staats (teils über die CCC); ein mehrjähriger Liefer-Rahmenvertrag für 155-mm-Munition ist nicht ausdrücklich beschrieben. Daher Stufe 2.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "army.mil-Vertragsmitteilung nicht abrufbar; die Task-Order-Struktur deutet auf einen Rahmenvertrag hin, ist aber nicht belegt.",
+   "next_stage_limit": "Stufe 3 erfordert einen ausdrücklich belegten mehrjährigen Rahmenvertrag; Vertragsart des 1,48-Mrd-USD-Army-Vertrags ist nicht beschrieben."
+  },
+  {
+   "id": "I-M-gdots-industrial",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "gdots",
+   "criterion_id": "industrial",
+   "cell_status": "bewertet",
+   "value": 3,
+   "headline": "3/4: USA und Kanada operativ",
+   "preview": "Scranton, Wilkes-Barre, Mesquite (Probleme laut Medien), Valleyfield",
+   "statement": "GD-OTS fertigt 155-mm-Komponenten operativ in den USA und Kanada; ein drittes Fertigungsland ist nicht belegt.",
+   "depends_on": [
+    "M-GDO-01",
+    "M-GDO-03",
+    "M-GDO-06",
+    "M-GDO-04",
+    "M-GDO-05"
+   ],
+   "reasoning": "Zwei Länder mit operativer Fertigung erfüllen Stufe 3; Mesquite wurde 2024 eröffnet, Produktionsprobleme sind nur medial zugeordnet.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Scranton ist ein Army-Werk mit GD-OTS als Betreiber.",
+   "next_stage_limit": "Stufe 4 erfordert drei Fertigungsländer; belegt sind nur USA und Kanada."
+  },
+  {
+   "id": "I-M-hanwha-spectrum",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "hanwha",
+   "criterion_id": "spectrum",
+   "cell_status": "bewertet",
+   "value": "Modulare Treibladungen MCS (Export); eigene 155-mm-ER-Geschosse laut Medienbericht in Serie; Base-Bleed-Geschosse angekündigt; vollständige Produktliste nicht gefunden",
+   "headline": "MCS-Ladungen; ER-Geschosse laut Medien",
+   "preview": "Serienstart ER-Geschoss nur als Anrisstext belegt; Produktliste fehlt",
+   "statement": "Für Hanwha sind modulare Treibladungen und laut Medienbericht der Serienstart eigener 155-mm-ER-Geschosse belegt; eine vollständige Geschossliste fehlt.",
+   "depends_on": [
+    "M-HAN-06",
+    "M-HAN-04",
+    "M-HAN-02",
+    "M-HAN-03"
+   ],
+   "reasoning": "Profil stützt sich auf MCS-Exportverträge und Medienberichte (GBP, Army Technology); Base-Bleed-Geschosse sind angekündigt.",
+   "method": "Profil aus Herstellerangaben nach Vergleichsplan v1",
+   "uncertainty": "Entwicklerrolle beim ER-Geschoss offen (frühere Berichte nennen Poongsan)."
+  },
+  {
+   "id": "I-M-hanwha-range",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "hanwha",
+   "criterion_id": "range",
+   "cell_status": "nicht öffentlich belegt",
+   "value": null,
+   "headline": "Keine Reichweitenangabe gefunden",
+   "preview": "Hanwha-Produktseiten nicht gefunden; GBP-Bericht nur als Anrisstext",
+   "statement": "Für Hanwha-155-mm-Geschosse ist keine Reichweitenangabe mit Rohr und Ladung öffentlich belegt.",
+   "depends_on": [
+    "M-HAN-06"
+   ],
+   "reasoning": "Ohne Datenblatt- oder Testwert wird kein Kennwert gesetzt.",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "",
+   "coverage_note": "Keine Hanwha-Reichweitenangabe mit Rohr/Ladung in den geöffneten Quellen; Produktseiten nicht gefunden, GBP-Bericht nur teilweise zugänglich."
+  },
+  {
+   "id": "I-M-hanwha-integration",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "hanwha",
+   "criterion_id": "integration",
+   "cell_status": "bewertet",
+   "value": 3,
+   "headline": "3/4: Treibladungen aus NC/NG (Medien)",
+   "preview": "Laut Werksbesuchsberichten; Sprengstoffsynthese nicht durch Firma belegt",
+   "statement": "Laut Medienberichten nach Werksbesuchen verarbeitet Hanwha in koreanischen Werken Nitrozellulose und Nitroglycerin zu Treibladungen; eine eigene Sprengstoffsynthese ist nicht belegt.",
+   "depends_on": [
+    "M-HAN-01",
+    "M-HAN-07"
+   ],
+   "reasoning": "Die robotergestützte Mischung von Nitrozellulose und Nitroglycerin für MCS an konkreten Werken belegt operative Treibmittelfertigung (Stufe 3). 'Energetic materials all the way to system integration' ist ein Werkszitat.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Eine Pressereise wurde von Hanwha finanziert; Herkunft der Nitrozellulose offen; US-Werk mit NC/NG-Fertigung erst geplant.",
+   "next_stage_limit": "Stufe 4 erfordert belegte operative Sprengstofffertigung; dafür liegt keine Unternehmens- oder Behördenquelle vor."
+  },
+  {
+   "id": "I-M-hanwha-capacity",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "hanwha",
+   "criterion_id": "capacity",
+   "cell_status": "nicht öffentlich belegt",
+   "value": null,
+   "headline": "Nur Treibladungsmodule, keine Geschosszahl",
+   "preview": "Yeosu 1,2 Mio Module/Jahr (Hersteller via Medium); keine Umrechnung",
+   "statement": "Für Hanwha ist keine 155-mm-Geschosskapazität öffentlich belegt; veröffentlichte Werte betreffen Treibladungsmodule.",
+   "depends_on": [
+    "M-HAN-01",
+    "M-HAN-07",
+    "M-HAN-04"
+   ],
+   "reasoning": "Die Planeinheit (Geschosse pro Jahr) ist nicht erfüllt; eigene Umrechnungen sind ausgeschlossen.",
+   "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
+   "uncertainty": "",
+   "coverage_note": "Angaben in Treibladungsmodulen (Yeosu 1,2 Mio/Jahr, Plan 1,6 Mio 2028) statt Geschossen; '300.000 rounds' der 2027 geplanten Fabrik ohne Einheitsklärung; Medienumrechnung 200.000–250.000 Schuss nicht übernommen."
+  },
+  {
+   "id": "I-M-hanwha-procurement",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "hanwha",
+   "criterion_id": "procurement",
+   "cell_status": "bewertet",
+   "value": 3,
+   "headline": "3/4: FMV-Rahmenvertrag, BAE-Liefervertrag",
+   "preview": "Betrifft Treibladungen; Geschosslieferungen an Drittstaaten nicht belegt",
+   "statement": "Für Hanwha sind ein dreijähriger Rahmenvertrag der schwedischen FMV und ein MCS-Liefervertrag mit BAE Systems belegt; beide betreffen Treibladungen.",
+   "depends_on": [
+    "M-HAN-02",
+    "M-HAN-03",
+    "M-HAN-05"
+   ],
+   "reasoning": "Der mehrjährige FMV-Rahmenvertrag mit einem Staat erfüllt Stufe 3. BAE ist Unternehmenskunde; Lieferungen an mehrere Staaten und Einsatz sind nicht belegt.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Pine-Bluff-Lease ist ein Standortvorhaben, kein Liefervertrag.",
+   "next_stage_limit": "Stufe 4 erfordert Rahmenverträge/Lieferungen an mehrere Staaten und belegten Einsatz; nicht belegt."
+  },
+  {
+   "id": "I-M-hanwha-industrial",
+   "type": "matrix_cell",
+   "section": "capability_matrix",
+   "peer_id": "hanwha",
+   "criterion_id": "industrial",
+   "cell_status": "bewertet",
+   "value": 2,
+   "headline": "2/4: mehrere Werke in Südkorea",
+   "preview": "Yeosu, Daejeon; Boeun im Aufbau; US-Campus Pine Bluff nur geplant",
+   "statement": "Hanwha fertigt 155-mm-Komponenten in mehreren südkoreanischen Werken; eine operative Fertigung außerhalb Koreas ist nicht belegt.",
+   "depends_on": [
+    "M-HAN-01",
+    "M-HAN-05",
+    "M-HAN-07"
+   ],
+   "reasoning": "Mehrere Werke in einem Land erfüllen Stufe 2. In Pine Bluff ist zum Stichtag nur ein Verwaltungsgebäude eröffnet.",
+   "method": "Evidenzstufe nach fixierten anchors (Vergleichsplan v1)",
+   "uncertainty": "Werksangaben über Medien, teils nach Pressereise.",
+   "next_stage_limit": "Stufe 3 erfordert operative Fertigung in einem zweiten Land; der US-Campus ist erst geplant."
+  },
+  {
+   "id": "I-PM-boxer",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "boxer",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 6,
+   "statement": "Der Boxer erreicht Serie/Skala: Laut Rheinmetall wurde im Juni 2026 das 100. Boxer-MIV an Großbritannien geliefert; Schakal und RCH-155-Träger sind erst beauftragt.",
+   "depends_on": [
+    "P-V13",
+    "P-V10",
+    "P-V14",
+    "P-V11",
+    "P-V12"
+   ],
+   "reasoning": "Wiederholte Auslieferung (100 MIV für das UK, gefertigt bei RBSL und KNDS UK) belegt Stufe 6 für die Basisplattform. Varianten bleiben getrennt: Schakal (222) und RCH 155 (72) sind Kundenprogramme, der Schwere Waffenträger liegt laut Medienbericht hinter dem Vertragsplan.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Lieferangaben sind Herstellerangaben; Arminius ist nur erwartet.",
+   "next_stage_limit": "Höchste Stufe; gilt nicht automatisch für neue Varianten."
+  },
+  {
+   "id": "I-PM-puma",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "puma",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 6,
+   "statement": "Der Puma ist in Serie: Die Bundeswehr erhielt am 28.08.2026 den ersten Puma aus dem zweiten Produktionslos; 200 weitere Fahrzeuge sind beauftragt.",
+   "depends_on": [
+    "P-V21",
+    "P-V20"
+   ],
+   "reasoning": "Eine Auslieferung aus dem zweiten Produktionslos belegt laufende Serienfertigung (Stufe 6). Die Folgebestellung über 200 Fahrzeuge (erste Lieferungen Mitte 2028) läuft über das JV PSM.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Lieferbeleg nur über Fachmedium mit Verweis auf eine PSM-Meldung.",
+   "next_stage_limit": "Höchste Stufe; der S2-Bauzustand der Folgebestellung ist ein eigener, erst beauftragter Stand."
+  },
+  {
+   "id": "I-PM-lynx",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "lynx",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 6,
+   "statement": "Der Lynx KF41 ist in Serie: Ungarn erhält seit 2024 lokal gefertigte Fahrzeuge, Italien erhielt im Januar 2026 die ersten vier; der XM30-Lynx ist Prototyp.",
+   "depends_on": [
+    "P-V32",
+    "P-V31",
+    "P-V30",
+    "P-V34",
+    "P-V35"
+   ],
+   "reasoning": "Serienfertigung in Zalaegerszeg (erstes Fahrzeug 07/2024, 46 aus deutscher Fertigung) und die Übergabe in Italien belegen wiederholte Auslieferung. Die US-Variante XM30 steht auf Prototyp-/Erprobungsstufe, Rumänien (298 Fahrzeuge) ist beauftragt.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Aktueller Auslieferungsstand Ungarn 2026 nicht belegt.",
+   "next_stage_limit": "Höchste Stufe; die XM30-Variante bleibt Prototyp ohne Auswahlentscheidung."
+  },
+  {
+   "id": "I-PM-mbt",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "mbt",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Kampfpanzer erreichen Kundenprogramm-Stufe: Challenger 3 (148 Panzer) ist beauftragt und in Schießversuchen, Leopard-2-A8-Anteile sind beauftragt; Panther/NMBT ohne Auftrag.",
+   "depends_on": [
+    "P-V40",
+    "P-V16",
+    "P-V41",
+    "C-MKT-08"
+   ],
+   "reasoning": "Höchster konkret belegter Meilenstein sind Kundenaufträge (Challenger 3 über RBSL, Leopard-2-A8-Anteile 2025). Die ersten bemannten Scharfschüsse des Challenger 3 (01/2026) sind Erprobung; Panther KF51 ist nur Basis des NMBT-Programms.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Inhalt der Leopard-2-A8-Anteile nicht spezifiziert.",
+   "next_stage_limit": "Auslieferung bzw. Einsatz von Challenger 3 und Rheinmetall-Umfang beim Leopard 2 A8 sind nicht belegt."
+  },
+  {
+   "id": "I-PM-trucks",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "trucks",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 6,
+   "statement": "HX-Logistikfahrzeuge sind in Serie/Skala: Laut Rheinmetall sind über 20.000 HX weltweit im Einsatz, weitere über 2.000 Fahrzeuge hat die Bundeswehr 2026 abgerufen.",
+   "depends_on": [
+    "P-V50",
+    "P-V51",
+    "P-V52"
+   ],
+   "reasoning": "Herstellerangaben zu mehr als 16.000 verkauften bzw. über 20.000 eingesetzten HX-Fahrzeugen sowie laufende Abrufe belegen tatsächlich gelieferte Skalierung.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Herstellerzahlen ('sold' vs. 'fielded') nicht abgeglichen; Autonomie-Kits gesondert zu betrachten.",
+   "next_stage_limit": "Höchste Stufe."
+  },
+  {
+   "id": "I-PM-lightveh",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "lightveh",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "nicht eindeutig bestimmbar",
+   "score": null,
+   "statement": "Die Reife der leichten Rad- und Spezialfahrzeuge (Fuchs, Caracal, Ermine) ist aus den delegierten Fakten nicht eindeutig bestimmbar.",
+   "depends_on": [
+    "P-V60",
+    "P-R20"
+   ],
+   "reasoning": "Eine reine Portfolioaufzählung trägt keinen Reifestatus; die Wartungsangabe zu Fuchs in Ede ist kein produktbezogener Liefer- oder Einsatzbeleg dieser Zeile.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Beleglücke, keine Aussage zur tatsächlichen Reife.",
+   "coverage_note": "Divisionsseite nennt Fuchs, Caracal und Ermine nur als Portfolio; Auftrags-, Liefer- oder Einsatzstatus je Fahrzeug nicht belegt."
+  },
+  {
+   "id": "I-PM-ugv",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "ugv",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Unbemannte Bodenfahrzeuge erreichen laut Hersteller die Stufe Im Betrieb: Wild Goose gilt als 'fully fielded', MUSKOX und Mission Master SP wurden für US-Programme ausgewählt.",
+   "depends_on": [
+    "P-V70",
+    "P-V71"
+   ],
+   "reasoning": "Höchster Beleg ist die Herstellerangabe zur vollständigen Einführung von Wild Goose (Stufe 5). Die Auswahl von MUSKOX und Mission Master SP entspricht Kundenprogrammen; Ox steht im Wettbewerb.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Status nur als Herstellerangabe ohne Vertragswerte; Varianten unterschiedlich reif.",
+   "next_stage_limit": "Laufende Serienfertigung oder wiederholte Auslieferung ist nicht belegt."
+  },
+  {
+   "id": "I-PM-vsvc",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "vsvc",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Fahrzeug-Instandhaltung ist im Betrieb, u. a. MRO in Singapur und Reparatur von Kampffahrzeugen in der Westukraine seit Juni 2024.",
+   "depends_on": [
+    "P-V72",
+    "P-R98",
+    "P-R130"
+   ],
+   "reasoning": "Laufende Serviceleistungen für Kunden belegen Stufe 5.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Unternehmensseiten undatiert.",
+   "next_stage_limit": "Umfang bzw. Skalierung der Serviceleistungen ist nicht belegt."
+  },
+  {
+   "id": "I-PM-art155",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "art155",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 6,
+   "statement": "155-mm-Artilleriemunition ist in Serie: Das Werk Unterlüß produziert seit 2025, laut Rheinmetall wurden insgesamt hunderttausende Geschosse in die Ukraine geliefert.",
+   "depends_on": [
+    "P-W10",
+    "P-W12",
+    "P-W11",
+    "P-W13"
+   ],
+   "reasoning": "Inbetriebnahme Unterlüß, fünfstellige Produktion für die Ukraine und gelieferte Mengen belegen Stufe 6. Das Ziel von 1,5 Mio Geschossen pro Jahr bis 2030 ist Plan, kein Meilenstein.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Liefermengen sind Herstellerangaben ohne Detailbeleg.",
+   "next_stage_limit": "Höchste Stufe; volle Werkskapazität (2027) und Firepower-Ziel sind nicht erreicht."
+  },
+  {
+   "id": "I-PM-medcal",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "medcal",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 6,
+   "statement": "Mittelkalibermunition ist in Serie: Laut Rheinmetall wurde 35-mm-Gepard-Munition an die Ukraine geliefert, Puma-Munition wird abgerufen, in Albacete läuft eine neue Linie an.",
+   "depends_on": [
+    "P-W20",
+    "P-W21",
+    "P-W02",
+    "P-W12",
+    "T-06"
+   ],
+   "reasoning": "Gelieferte Mengen an die Ukraine und Mittelkaliber als Umsatztreiber im Halbjahr 2026 belegen wiederholte Auslieferung. Die Albacete-Linie (10/2026) erweitert die Kapazität.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Mengen nicht im Detail belegt.",
+   "next_stage_limit": "Höchste Stufe; Kapazität der neuen Linie ist Herstellerangabe."
+  },
+  {
+   "id": "I-PM-gunsys",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "gunsys",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Rohrwaffen erreichen Kundenprogramm-Stufe: Großbritannien beauftragte 72 Waffensysteme 155 mm L/52 RC; 130-mm- und L60-Entwicklungen sind laut Hersteller in Test.",
+   "depends_on": [
+    "P-V14",
+    "P-W30",
+    "P-W31"
+   ],
+   "reasoning": "Konkret belegt ist der RCH-155-Auftrag mit Lieferung 2028–2031 (Stufe 4). Die Fertigung der Leopard-2-Hauptbewaffnung steht nur als undatierte Selbstdarstellung ohne Liefer- oder Mengenbeleg.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Beleglücke bei der Leopard-2-Kanone, keine Aussage zur tatsächlichen Reife.",
+   "next_stage_limit": "Serienfertigung bzw. Auslieferung ist nicht konkret belegt; das neue Geschützwerk Telford wird schrittweise in Betrieb genommen."
+  },
+  {
+   "id": "I-PM-propellant",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "propellant",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 6,
+   "statement": "Pulver und Treibladungsmodule sind in Serie: Nitrochemie Aschau produziert rund 1.700 t Pulver und 300.000 Module pro Jahr.",
+   "depends_on": [
+    "P-W40"
+   ],
+   "reasoning": "Laufende Jahresproduktion belegt Stufe 6. Die neue Pulverfabrik (Grundstein 07/2026, Produktion ab 2027) ist geplant.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Produktionsmengen sind Herstellerangaben.",
+   "next_stage_limit": "Höchste Stufe; Ausbauvolumen ist Plan."
+  },
+  {
+   "id": "I-PM-mortar",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "mortar",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Mörsersysteme sind im Betrieb: 81-mm-Mörser sind laut Rheinmetall Nordic bei den norwegischen Streitkräften im Einsatz; der Dual-Eimos-Ausbau in Spanien ist geplant.",
+   "depends_on": [
+    "P-D50",
+    "P-W20"
+   ],
+   "reasoning": "Der Einsatz bei einem Kunden belegt Stufe 5. Die geplante Fertigung von 40 Dual-Eimos-Systemen und über 650 Mörsern pro Jahr ist eine Ausbauangabe, kein erreichter Serienstand.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Ob der norwegische 81-mm-Mörser zur Eimos-Familie gehört, ist nicht belegt.",
+   "next_stage_limit": "Laufende Serienfertigung bzw. wiederholte Auslieferung ist nicht konkret belegt."
+  },
+  {
+   "id": "I-PM-protect",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "protect",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Schutzsysteme und Services erreichen Kundenprogramm-Stufe: Der Bundeswehr-Rahmenvertrag für mobile Rettungsstationen (über 1.056 Mio EUR) war 2025 größter Einzelauftrag des Segments.",
+   "depends_on": [
+    "P-W51",
+    "P-W50"
+   ],
+   "reasoning": "Der konkrete Rahmenvertrag trägt Stufe 4; Schutzsysteme und Projects & Services sind auf der Divisionsseite ohne Status gelistet.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Heterogenes Bündel; Einordnung beruht auf den Rettungsstationen.",
+   "next_stage_limit": "Lieferung bzw. Betrieb der Rettungsstationen und Einsatz der Schutzsysteme sind nicht belegt."
+  },
+  {
+   "id": "I-PM-mount",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "mount",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "MK93-Waffenhalterungen sind ein Kundenprogramm: American Rheinmetall fertigt 3.104 neue Einheiten und modernisiert 245 gelieferte (Auftrag 20,7 Mio USD).",
+   "depends_on": [
+    "P-W33"
+   ],
+   "reasoning": "Der konkrete Auftrag mit Lieferungen ab 2026 bis Oktober 2027 belegt Stufe 4.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Herkunft und Einsatz der 245 gelieferten Einheiten offen.",
+   "next_stage_limit": "Serienlieferung der neuen Einheiten ist nicht belegt."
+  },
+  {
+   "id": "I-PM-strike",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "strike",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 1,
+   "statement": "Deep-Strike-Systeme sind angekündigt: Das JV mit Destinus ist vereinbart, zum Stichtag aber nicht gegründet; Produktion ist ab Q4 2026/Q1 2027 geplant.",
+   "depends_on": [
+    "P-W60",
+    "T-E10",
+    "C-STR-36"
+   ],
+   "reasoning": "Die offizielle Ankündigung von JV und Raketentriebwerksanlage trägt Stufe 1; Prototyp, Test oder Auftrag sind nicht belegt.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Reine Planangaben.",
+   "next_stage_limit": "Ein funktionsfähiger Prototyp ist nicht belegt."
+  },
+  {
+   "id": "I-PM-skyranger",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "skyranger",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Skyranger ist ein Kundenprogramm: Aufträge aus Deutschland, Österreich, den Niederlanden und Rumänien; Serienauslieferung an die Bundeswehr laut Bericht erst ab 2027.",
+   "depends_on": [
+    "P-A10",
+    "P-A11",
+    "P-A12",
+    "P-A13",
+    "P-A02"
+   ],
+   "reasoning": "Mehrere Kundenaufträge und Fertigung für europäische Kunden belegen Stufe 4; an die Bundeswehr ist erst ein Prototyp geliefert. Die Turmkapazität bis 400 pro Jahr ist Plan.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Liefertermine zwischen Beschaffungsamt und Rheinmetall abweichend; Skyranger 30 und 35 sind Varianten.",
+   "next_stage_limit": "Einsatz bei einem Kunden oder wiederholte Serienlieferung ist nicht konkret belegt."
+  },
+  {
+   "id": "I-PM-skynex",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "skynex",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Skynex ist ein Kundenprogramm mit erster Auslieferung: Italien erhielt im Dezember 2025 die erste Batterie, ein neuer internationaler Kunde bestellte vier Systeme.",
+   "depends_on": [
+    "P-A14",
+    "P-A01",
+    "P-A12"
+   ],
+   "reasoning": "Konkrete Aufträge (Italien, internationaler Kunde, Rumänien) und eine gelieferte Batterie belegen Stufe 4. Eine Einzellieferung ist noch keine wiederholte Auslieferung.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Einsatzstatus nicht recherchiert; keine Aussage zur tatsächlichen Nutzung.",
+   "next_stage_limit": "Einsatz in einer Kundenaufgabe ist in den delegierten Fakten nicht belegt."
+  },
+  {
+   "id": "I-PM-airsensors",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "airsensors",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "nicht eindeutig bestimmbar",
+   "score": null,
+   "statement": "Die Reife der Radar- und Sensorikprodukte (X-TAR3D, Skyspotter, MSU) ist aus den delegierten Fakten nicht eindeutig bestimmbar.",
+   "depends_on": [
+    "P-A30",
+    "P-A01"
+   ],
+   "reasoning": "Aufträge für Systeme mit Radar (z. B. Skynex) werden nicht auf einzelne Sensorprodukte übertragen.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Beleglücke, keine Aussage zur tatsächlichen Reife.",
+   "coverage_note": "Radare und Sensoren nur als Portfolio bzw. Kompetenz von Rheinmetall Italia genannt; kein produktspezifischer Auftrags-, Test- oder Einsatzbeleg."
+  },
+  {
+   "id": "I-PM-navaldef",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "navaldef",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Marineflugabwehr ist ein Kundenprogramm: Rumänien bestellte zwei Millennium Guns für die Marine.",
+   "depends_on": [
+    "P-A12",
+    "P-A40"
+   ],
+   "reasoning": "Der konkrete Auftrag trägt Stufe 4; Searanger und weitere Marineprodukte sind nur als Angebot gelistet.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "",
+   "next_stage_limit": "Lieferung bzw. Einsatz ist nicht belegt."
+  },
+  {
+   "id": "I-PM-cuas",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "cuas",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 2,
+   "statement": "AERIE ist ein Prototyp: Rheinmetall Defence Australia und Praetorian lieferten im Oktober 2026 einen containerisierten Counter-UAS-Prototyp.",
+   "depends_on": [
+    "P-A50"
+   ],
+   "reasoning": "Ein gelieferter funktionsfähiger Prototyp trägt Stufe 2; Bedienerdemonstrationen sind erst für Q4 2026 vorgesehen.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Herstellerangabe; kein Beschaffungsauftrag.",
+   "next_stage_limit": "Durchgeführte Tests oder Demonstrationen sind noch nicht belegt."
+  },
+  {
+   "id": "I-PM-dlbo",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "dlbo",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "D-LBO/TaWAN ist ein Kundenprogramm: Rheinmetall ist Hauptauftragnehmer von TaWAN, im Juli 2026 folgte ein D-LBO-Abruf über rund 100 Mio EUR.",
+   "depends_on": [
+    "P-D10",
+    "P-D12",
+    "P-D02",
+    "C-MKT-03"
+   ],
+   "reasoning": "Rahmenvertrag und Abrufe belegen Stufe 4; TaWAN-Auslieferungen sind für Ende 2026 bis 2029 vorgesehen. Laufende Serienintegration ist nur als Statushinweis des Herstellers erfasst.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Umsatzbeitrag (Treiber im Halbjahr 2026) ohne Liefermengen.",
+   "next_stage_limit": "Betrieb oder wiederholte Auslieferung ist nicht konkret belegt."
+  },
+  {
+   "id": "I-PM-idz",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "idz",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "IdZ-ES ist ein Kundenprogramm: Die Bundeswehr rief im April 2026 Systeme für rund 1,04 Mrd EUR brutto ab, inklusive Modernisierung bestehender Systeme.",
+   "depends_on": [
+    "P-D11",
+    "P-D12",
+    "C-MKT-03"
+   ],
+   "reasoning": "Rahmenvertrag und Abruf belegen Stufe 4. Die Modernisierung 'bestehender Systeme' deutet auf Nutzung hin, belegt aber keinen konkreten Einsatz- oder Lieferumfang.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Höchstvolumen des Rahmenvertrags in den Quellen widersprüchlich (1,7 vs. 3,1 Mrd EUR).",
+   "next_stage_limit": "Einsatz bzw. Auslieferung nicht konkret belegt; neue Lieferungen ab November 2027 geplant."
+  },
+  {
+   "id": "I-PM-battlesuite",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "battlesuite",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "nicht eindeutig bestimmbar",
+   "score": null,
+   "statement": "Die Reife von Battlesuite/Digital Forces ist aus den delegierten Fakten nicht eindeutig bestimmbar.",
+   "depends_on": [
+    "P-D13",
+    "P-D14"
+   ],
+   "reasoning": "Die Selbstbeschreibung als einsatzbereite Software ist kein Kunden- oder Einsatzbeleg; die angekündigte Anduril-Integration betrifft Partnerprodukte.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Beleglücke, keine Aussage zur tatsächlichen Reife.",
+   "coverage_note": "Divisionsseite enthält keine Auftrags- oder Einsatzangabe zu Battlesuite/Digital Forces; Anduril-Integration ist nur angekündigt."
+  },
+  {
+   "id": "I-PM-defelec",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "defelec",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Defence Electronics erreicht Kundenprogramm-Stufe: Die Bundeswehr bestellte neun Ausbildungssimulatoren für den Puma (118,5 Mio EUR).",
+   "depends_on": [
+    "P-D60",
+    "P-D01",
+    "P-D50"
+   ],
+   "reasoning": "Der konkrete Simulatorauftrag trägt Stufe 4; Waffenstationen, Elektrooptik und Feuerleitsysteme sind ohne produktbezogenen Status gelistet.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Heterogenes Bündel; Einordnung beruht auf Simulation und Training.",
+   "next_stage_limit": "Lieferung bzw. Betrieb nicht belegt."
+  },
+  {
+   "id": "I-PM-fv014",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "fv014",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "FV-014 ist ein Kundenprogramm: Rahmenvertrag der Bundeswehr im Milliardenbereich, Qualifikation ab Q2 2026, Lieferungen ab dem ersten Halbjahr 2027.",
+   "depends_on": [
+    "P-D20",
+    "T-E11",
+    "C-MKT-05"
+   ],
+   "reasoning": "Der Rahmenvertrag mit Erstabruf trägt Stufe 4; Lieferungen und Einsatz sind geplant.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Erstabruf 300 Mio EUR brutto (Mitteilung) vs. 250 Mio EUR netto (Halbjahresbericht); Nutzlastangaben abweichend.",
+   "next_stage_limit": "Betrieb bei der Bundeswehr nicht belegt; Qualifikationsergebnis offen."
+  },
+  {
+   "id": "I-PM-uas",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "uas",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 1,
+   "statement": "Drohnen-/CCA-Kooperationen sind angekündigt: Anduril-Partnerschaft (Barracuda, Fury) und MQ-28-Integration mit Boeing Australia ohne belegten Prototyp oder Auftrag.",
+   "depends_on": [
+    "P-D14",
+    "P-D01",
+    "C-TEC-03"
+   ],
+   "reasoning": "Offizielle Ankündigungen tragen Stufe 1; für europäische Varianten ist kein Prototyp-, Test- oder Auftragsstatus belegt.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Partnerprodukte selbst können reifer sein; eingeordnet ist nur die Rheinmetall-Kooperation.",
+   "next_stage_limit": "Ein funktionsfähiger Prototyp ist nicht belegt."
+  },
+  {
+   "id": "I-PM-sar",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "sar",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "SAR-Aufklärung ist im Betrieb: Die Bundeswehr hat laut Rheinmetall direkten Zugriff auf mehrere vom JV betriebene SAR-Satelliten; die Fertigung in Neuss hat begonnen.",
+   "depends_on": [
+    "P-D30",
+    "C-TEC-04",
+    "T-E04"
+   ],
+   "reasoning": "Die laufende Datenbereitstellung an den Kunden belegt Stufe 5 für den Dienst SPOCK 1. Der Produktionsstart in Neuss ist noch keine wiederholte Auslieferung.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Satellitenanzahl nicht genannt; die Betriebserfahrung stammt laut ICEYE-CEO von ICEYE.",
+   "next_stage_limit": "Serienfertigung in Neuss mit gelieferten Satelliten ist nicht belegt."
+  },
+  {
+   "id": "I-PM-airsat",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "airsat",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 3,
+   "statement": "Der Luftraumüberwachungssatellit ist auf Test-/Demo-Stufe: Rheinmetall Italia und Argotec starteten am 01.10.2026 einen ersten Validierungssatelliten.",
+   "depends_on": [
+    "P-D31",
+    "T-E22"
+   ],
+   "reasoning": "Der durchgeführte Start einer Validierungsmission trägt Stufe 3; Kunden und Konstellationsaufbau sind nur als Ziel genannt.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Startnachweis ist Herstellerangabe; Betriebsstatus offen.",
+   "next_stage_limit": "Ein Kundenprogramm ist nicht belegt."
+  },
+  {
+   "id": "I-PM-f35",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "f35",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "F-35A-Mittelrümpfe sind ein Kundenprogramm im Fertigungsanlauf: Fertigung in Weeze seit Juli 2025, Auslieferungen ab 2027 vorgesehen.",
+   "depends_on": [
+    "P-D40",
+    "C-TEC-02"
+   ],
+   "reasoning": "Die Industriekooperation mit Lockheed Martin/Northrop Grumman und die angelaufene Fertigung belegen Stufe 4; eine erste Auslieferung ist nicht belegt.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Vertragsform zwischen den Unternehmen nicht veröffentlicht.",
+   "next_stage_limit": "Laufende Serienproduktion mit Auslieferung ist nicht belegt; 400 Mittelrümpfe sind Planmenge."
+  },
+  {
+   "id": "I-PM-k130",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "k130",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 6,
+   "statement": "K130-Korvetten sind in Serie: Mit der LÜBECK wurde im April 2026 die fünfte Korvette des zweiten Loses getauft; zwei Einheiten sollen 2026 geliefert werden.",
+   "depends_on": [
+    "P-N10",
+    "P-N01",
+    "P-N03"
+   ],
+   "reasoning": "Der Bau eines zweiten Loses mit fünf Einheiten und laufende Umsätze belegen Serienfertigung (Stufe 6).",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Ablieferungsstand des zweiten Loses nicht belegt; Konzernzugehörigkeit erst seit 03/2026.",
+   "next_stage_limit": "Höchste Stufe; die Lieferung von EMDEN und KÖLN 2026 ist Plan."
+  },
+  {
+   "id": "I-PM-fdb",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "fdb",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Flottendienstboote 424 und Betriebsstoffversorger sind Kundenprogramme im Bau: Kiellegung des dritten Boots im September 2026, Indienststellung ab 2029.",
+   "depends_on": [
+    "P-N20",
+    "P-N03",
+    "P-N01"
+   ],
+   "reasoning": "Laufende Neubauprogramme der Deutschen Marine tragen Stufe 4; eine abgelieferte Einheit ist nicht belegt.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Viertes Boot nur eingeleitet; MBV707-Status nicht einzeln belegt.",
+   "next_stage_limit": "Betrieb bzw. Auslieferung erst ab 2029 vorgesehen."
+  },
+  {
+   "id": "I-PM-intlships",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "intlships",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Exportschiffe sind Kundenprogramme: Rumänien beauftragte vier Schiffe, das bulgarische MMPV90-Programm ist im Bau; Ägypten ist Pipeline.",
+   "depends_on": [
+    "P-N30",
+    "P-N03",
+    "P-N31",
+    "P-N61"
+   ],
+   "reasoning": "Konkrete Aufträge (Rumänien 920 Mio EUR, MMPV-Konstruktion) tragen Stufe 4. Ablieferungen sind nicht belegt; die Werft Mangalia ist noch nicht übernommen.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "MMPV-Ablieferungsstand unbekannt (undatierte Seite).",
+   "next_stage_limit": "Abgelieferte Einheiten sind nicht belegt."
+  },
+  {
+   "id": "I-PM-navservice",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "navservice",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Marine-Service ist im Betrieb: Instandsetzung der Fregatte 'Rheinland-Pfalz' (Serviceumsatz 39 Mio EUR) und ein Wartungsrahmenvertrag für vier LNG-Zollboote.",
+   "depends_on": [
+    "P-N03",
+    "P-N40",
+    "P-R02"
+   ],
+   "reasoning": "Laufende Instandsetzungsleistungen für Kunden belegen Stufe 5.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "",
+   "next_stage_limit": "Skalierung über mehrere Kunden bzw. Mengen ist nicht belegt."
+  },
+  {
+   "id": "I-PM-usv",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "usv",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 6,
+   "statement": "Der Kraken K3 Scout ist laut Hersteller in Serienproduktion (Start April 2026 bei Blohm+Voss); Kundenaufträge sind nicht belegt.",
+   "depends_on": [
+    "P-N50",
+    "C-STR-13"
+   ],
+   "reasoning": "Der gemeldete und medial berichtete Serienstart erfüllt den Wortlaut von Stufe 6 (laufende Serienproduktion). Kundenprogramm, Betrieb und Auslieferungen sind nicht belegt; geplante 200 bis 1.000 Einheiten pro Jahr sind Planwerte.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Herstellerangabe; Stufe beruht allein auf dem Produktionsstart ohne Kunden- oder Lieferbeleg.",
+   "next_stage_limit": "Höchste Stufe; Auslieferungen und Kunden sind nicht belegt."
+  },
+  {
+   "id": "I-PM-f126",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "f126",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "nicht eindeutig bestimmbar",
+   "score": null,
+   "statement": "Für die stornierte Fregatte F126 wird keine aktuelle Reifestufe vergeben.",
+   "depends_on": [
+    "P-N60",
+    "P-S05",
+    "C-STR-38"
+   ],
+   "reasoning": "Das BMVg beendete das Programm im Juni 2026, Blohm+Voss löste den Unterauftrag im Juli 2026 auf. Eine frühere Kundenprogramm-Stufe wäre als aktueller Stand irreführend.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "",
+   "coverage_note": "Programm beendet und Unterauftrag aufgelöst; die feste Skala bildet Stornierungen nicht ab."
+  },
+  {
+   "id": "I-PM-frigpipe",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "frigpipe",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 1,
+   "statement": "F127 und F125-Upgrade sind Pipeline: F127 als vorvertragliche Designstudie, F125-Upgrade ohne Vertragsbeleg.",
+   "depends_on": [
+    "P-N61"
+   ],
+   "reasoning": "Offiziell genannte Programme tragen Stufe 1; ein Kundenauftrag an Rheinmetall ist nicht belegt.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Zukunftsgerichtete Investorenangabe.",
+   "next_stage_limit": "Prototyp bzw. Auftrag ist nicht belegt."
+  },
+  {
+   "id": "I-PM-power",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "power",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "bewertet",
+   "score": 6,
+   "statement": "Power Systems ist ein skaliertes Seriengeschäft (Umsatz 2025 rund 2 Mrd EUR), wird aber als nicht fortgeführte Aktivität an AEQUITA verkauft (Closing Q4 2026 angestrebt).",
+   "depends_on": [
+    "P-C01",
+    "P-C02",
+    "P-S02"
+   ],
+   "reasoning": "Umsatz in Milliardenhöhe mit rund 6.250 Beschäftigten belegt gelieferte Skalierung. Die Einordnung beschreibt Reife, nicht strategische Zugehörigkeit.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Kaufpreis vorläufig; Closing zum Stichtag offen.",
+   "next_stage_limit": "Höchste Stufe."
+  },
+  {
+   "id": "I-PM-civilrest",
+   "type": "product_maturity",
+   "section": "portfolio",
+   "product_id": "civilrest",
+   "method_id": "portfolio-maturity-v1",
+   "assessment_status": "nicht eindeutig bestimmbar",
+   "score": null,
+   "statement": "Die Reife der verbleibenden zivilen Aktivitäten ist aus den delegierten Fakten nicht eindeutig bestimmbar.",
+   "depends_on": [
+    "P-C03",
+    "P-W41"
+   ],
+   "reasoning": "Die Angebote (Flugverkehrsmanagement, Smart Airport, Anhänger, Chemie, kommerzieller Schiffbau) sind zu heterogen und ohne Status belegt.",
+   "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+   "uncertainty": "Beleglücke, keine Aussage zur tatsächlichen Reife.",
+   "coverage_note": "Nur Selbstdarstellungen ohne Umsatz-, Auftrags- oder Liefermengen."
+  },
+  {
+   "id": "I-RP-de",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "de",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Deutschland: breit verankerte eigene Wertschöpfung mit Produktion (u. a. Unterlüß, Aschau, Neuss, Weeze, Werften) und Werftservice (Norderwerft, Neue Jadewerft).",
+   "depends_on": [
+    "P-R01",
+    "P-W10",
+    "P-W30",
+    "P-W40",
+    "C-STR-25",
+    "P-A01",
+    "P-D40",
+    "P-N01",
+    "P-N10",
+    "P-R02",
+    "C-STR-14",
+    "P-N20",
+    "P-N40",
+    "P-D30",
+    "C-STR-11"
+   ],
+   "reasoning": "Eigene Produktion (Munition, Pulver, Luftverteidigung, F-35-Mittelrümpfe, Schiffbau) und eigene Reparatur-/Umbauwerften sind zwei Kernfunktionen; das beherrschte ICEYE-JV (60 %, vollkonsolidiert) ergänzt die Satellitenfertigung. Kraken-JV (Kontrolle nicht belegt) und der Aschau-Neubau (geplant) zählen nicht.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Kassel, Kiel, Bremen und München nur als Kartenangabe ohne Einzelstatus.",
+   "next_stage_limit": "Höchste Stufe."
+  },
+  {
+   "id": "I-RP-gb",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "gb",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Vereinigtes Königreich: operative Fertigung im beherrschten JV RBSL (55 %, vollkonsolidiert) in Telford; das neue Geschützwerk wird erst schrittweise in Betrieb genommen.",
+   "depends_on": [
+    "P-R10",
+    "P-V13",
+    "P-V40",
+    "C-STR-06",
+    "P-V14",
+    "P-W02"
+   ],
+   "reasoning": "Boxer- und Challenger-3-Fertigung bei RBSL ist eine Kernfunktion (Stufe 4), ausgewiesen als beherrschtes JV. Das Geschützwerk ist als geplante Erweiterung erfasst.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "BAE-Anteil von 45 % nur aus dem Gründungsbericht 2019.",
+   "next_stage_limit": "Stufe 5 erfordert eine zweite eigenständige Kernfunktion; Entwurf und Betreuung nennt RBSL nur pauschal, sie sind nicht als eigene Aktivität zugeordnet."
+  },
+  {
+   "id": "I-RP-nl",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "nl",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Niederlande: eigene Boxer-Entwicklung, -Produktion und -Wartung bei Rheinmetall Defence Nederland in Ede.",
+   "depends_on": [
+    "P-R20"
+   ],
+   "reasoning": "Drei Kernfunktionen der 100-%-Tochter am selben Standort erfüllen Stufe 5; Kundenaufträge (Schakal, Skyranger) zählen nicht als Infrastruktur.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Undatierte Unternehmensseite.",
+   "next_stage_limit": "Höchste Stufe."
+  },
+  {
+   "id": "I-RP-ch",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "ch",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Schweiz: eigene Entwicklung und Fertigung von Luftverteidigungssystemen bei Rheinmetall Air Defence in Zürich.",
+   "depends_on": [
+    "P-R30",
+    "P-A40"
+   ],
+   "reasoning": "Entwicklung und Fertigung im eigenen Kompetenz- und Fertigungszentrum sind zwei Kernfunktionen; die geplante Skyranger-Linie ist nicht separat belegt.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Undatierte Unternehmensseiten.",
+   "next_stage_limit": "Höchste Stufe."
+  },
+  {
+   "id": "I-RP-es",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "es",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Spanien: eigene Munitionsfertigung bei Rheinmetall Expal (Albacete, Burgos) mit Sitz in Madrid sowie das Hybridwerk Abadiano.",
+   "depends_on": [
+    "P-R40",
+    "C-STR-24",
+    "P-W20",
+    "P-C01"
+   ],
+   "reasoning": "Eigene Produktion (Kernfunktion Fertigung) trägt Stufe 4; Abadiano zählt zur selben Funktion.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Weitere Expal-Standorte nicht einzeln geöffnet.",
+   "next_stage_limit": "Stufe 5 erfordert eine zweite Kernfunktion (Entwicklung oder Service); in der Regionszuordnung nicht belegt."
+  },
+  {
+   "id": "I-RP-it",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "it",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Italien: eigene Radar- und Flugabwehrentwicklung und -fertigung bei Rheinmetall Italia in Rom; das Fahrzeug-JV LRMV ist ohne Kontrollbeleg separat ausgewiesen.",
+   "depends_on": [
+    "P-A30",
+    "P-A14",
+    "P-R50",
+    "P-V31",
+    "C-STR-09"
+   ],
+   "reasoning": "Entwicklung und Produktion der 100-%-Tochter Rheinmetall Italia sind zwei Kernfunktionen (Stufe 5). LRMV (50:50, at-equity) zählt mangels Kontrollnachweis nicht zur Stufe.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Governance von LRMV nicht belegt.",
+   "next_stage_limit": "Höchste Stufe."
+  },
+  {
+   "id": "I-RP-hu",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "hu",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Ungarn: Entwicklung und Serienfertigung des Lynx im beherrschten JV Rheinmetall Hungary (51 %, vollkonsolidiert) in Zalaegerszeg.",
+   "depends_on": [
+    "P-R60",
+    "P-R61",
+    "P-V32",
+    "C-STR-19"
+   ],
+   "reasoning": "Entwicklung und Fertigung sind zwei Kernfunktionen; die Kontrolle ist über die Vollkonsolidierung belegt und als beherrschtes JV ausgewiesen.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Munitionswerk Várpalota nicht als Regionsaktivität belegt.",
+   "next_stage_limit": "Höchste Stufe."
+  },
+  {
+   "id": "I-RP-ro",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "ro",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Rumänien: eigene Fertigung und Wartung von Logistik- und Spezialfahrzeugen bei Rheinmetall Automecanica (Mediaș, Satu Mare); Werft Mangalia und SAFE-Ausbau sind geplant.",
+   "depends_on": [
+    "P-R70",
+    "C-STR-25",
+    "P-R72",
+    "P-V30",
+    "P-N31",
+    "C-STR-37"
+   ],
+   "reasoning": "Fertigung und Service der Mehrheitstochter sind zwei Kernfunktionen. Die Stufe gilt für Spezialfahrzeuge, Aufbauten und Anhänger, nicht für Lynx, Skyranger oder Schiffe aus dem SAFE-Paket.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Produktumfang der lokalen Wertschöpfung eng.",
+   "next_stage_limit": "Höchste Stufe; Ausbau für SAFE-Aufträge und Mangalia-Übernahme sind Pläne."
+  },
+  {
+   "id": "I-RP-bg",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "bg",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Bulgarien: eigene Engineering-Tochter Naval Technology Bulgaria (Varna) für Schiffsentwurf; das VMZ-Munitions-JV ist angekündigt und umstritten.",
+   "depends_on": [
+    "P-N30",
+    "P-R150",
+    "P-R80",
+    "C-STR-33"
+   ],
+   "reasoning": "Konstruktion und Engineering der Tochter tragen die Kernfunktion Entwicklung (Stufe 4). Das VMZ-JV zählt nicht: angekündigt und laut bulgarischer Regierung nicht gegründet.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Engineering-Umfang aus undatierter Seite.",
+   "next_stage_limit": "Stufe 5 erfordert eine zweite Kernfunktion; die MMPV werden auf der Werft MTG Dolphin gebaut, nicht in eigener Infrastruktur."
+  },
+  {
+   "id": "I-RP-lt",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "lt",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "geplant",
+   "score": null,
+   "statement": "Litauen: nur geplant; das 155-mm-Werk des JV Rheinmetall Defence Lietuva in Baisogala ist im Bau, eine operative Präsenz ist nicht belegt.",
+   "depends_on": [
+    "P-R90",
+    "C-STR-21"
+   ],
+   "reasoning": "Eine nur angekündigte bzw. im Bau befindliche Aktivität ergibt 'Geplant' ohne operative Stufe.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Kontrolle im JV mit EPSO-G nicht belegt.",
+   "coverage_note": "Werk im Bau (Spatenstich 04.11.2025); Inbetriebnahme zum Stichtag nicht belegt; weitere litauische Aktivitäten nicht geöffnet."
+  },
+  {
+   "id": "I-RP-lv",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "lv",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "geplant",
+   "score": null,
+   "statement": "Lettland: nur geplant; für ein 155-mm-Werk eines künftigen JV liegt ein MoU vom 25.09.2025 vor.",
+   "depends_on": [
+    "P-R95",
+    "C-STR-35"
+   ],
+   "reasoning": "Absichtserklärung ohne belegte Gründung oder Bau ergibt 'Geplant' ohne operative Stufe.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "",
+   "coverage_note": "Nur MoU; Baustart und JV-Gründung nicht belegt."
+  },
+  {
+   "id": "I-RP-pl",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "pl",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 3,
+   "statement": "Polen: eigene Vertretung über Rheinmetall Polska mit Verbindungsbüro in Warschau und Unterstützungsstandort in Gliwice.",
+   "depends_on": [
+    "P-R96"
+   ],
+   "reasoning": "Eigene Gesellschaft mit Büros trägt Stufe 3; die Unterstützung bei ZMBL ist als Bürostandort, nicht als eigene Wartungsinfrastruktur erfasst.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Undatierte Seite; Munitionsaufträge aus Polen belegen keine lokale Infrastruktur.",
+   "next_stage_limit": "Stufe 4 erfordert eigene operative Entwicklung, Fertigung oder Service-Infrastruktur; nicht belegt."
+  },
+  {
+   "id": "I-RP-nordic",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "nordic",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Nordeuropa: eigene Entwicklung, Produktion und Systemintegration in Skoppum (Norwegen); Schweden ist nur mit einem Büro belegt.",
+   "depends_on": [
+    "P-D50",
+    "P-R97"
+   ],
+   "reasoning": "Stufe 5 beruht ausschließlich auf dem neuen norwegischen Standort (eröffnet 01.10.2026) mit Entwicklung und Produktion. Für Schweden ist nur eine Zweigniederlassung belegt.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Standort erst seit Oktober 2026 in Betrieb.",
+   "next_stage_limit": "Höchste Stufe; gilt nicht für Schweden."
+  },
+  {
+   "id": "I-RP-ua",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "ua",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Ukraine: Instandhaltung von Kampffahrzeugen im beherrschten JV Rheinmetall Ukrainian Defense Industry (51 %, vollkonsolidiert) seit Juni 2024; zusätzlich Lieferungen.",
+   "depends_on": [
+    "P-R98",
+    "C-STR-20",
+    "P-V72",
+    "P-W12"
+   ],
+   "reasoning": "Service-/Wartungsinfrastruktur des JV ist eine Kernfunktion (Stufe 4), ausgewiesen als beherrschtes JV. Lieferungen an die Streitkräfte zählen nur als Kundenaktivität.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Standort in der Westukraine nicht benannt.",
+   "next_stage_limit": "Stufe 5 erfordert eine zweite Kernfunktion; Produktion und Entwicklung sind nur geplant."
+  },
+  {
+   "id": "I-RP-us",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "us",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "USA: eigene Entwicklung (XM30-Prototypen) und Fertigung (u. a. MK93 in Biddeford, Ketten- und Mechaniksysteme) bei American Rheinmetall.",
+   "depends_on": [
+    "P-R100",
+    "C-STR-24",
+    "P-V34",
+    "P-V35",
+    "P-W33"
+   ],
+   "reasoning": "Entwicklung und Fertigung in 100-%-Gesellschaften sind zwei Kernfunktionen.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Funktionen einzelner Michigan-/Ohio-Standorte nicht aufgeschlüsselt.",
+   "next_stage_limit": "Höchste Stufe."
+  },
+  {
+   "id": "I-RP-ca",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "ca",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Kanada: eigene Entwicklung autonomer Landsysteme bei Rheinmetall Canada in Saint-Jean-sur-Richelieu; weitere Standorte in Ottawa und Edmonton.",
+   "depends_on": [
+    "P-R110",
+    "P-V71"
+   ],
+   "reasoning": "Entwicklung ist eine Kernfunktion (Stufe 4); Ottawa und Edmonton sind ohne Funktionsangabe als Standorte erfasst.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Undatierte Seite.",
+   "next_stage_limit": "Stufe 5 erfordert eine zweite Kernfunktion; kanadische Fertigung ist nicht aus geöffneter Primärquelle belegt."
+  },
+  {
+   "id": "I-RP-au",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "au",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 4,
+   "statement": "Australien/Neuseeland: eigene Fahrzeugfertigung im MILVEHCOE Redbank; die Munitionsfertigung Maryborough läuft im NIOA-JV ohne Kontrollbeleg.",
+   "depends_on": [
+    "P-R120",
+    "P-V11",
+    "P-V15",
+    "C-STR-23"
+   ],
+   "reasoning": "Die Boxer-Fertigung in Redbank trägt Stufe 4. Das NIOA-JV zählt mangels Kontrollklassifikation nicht; Neuseeland ist nur mit Operationen in Wellington belegt.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Stufe gilt im Wesentlichen für Australien.",
+   "next_stage_limit": "Stufe 5 erfordert eine zweite eigene Kernfunktion; nicht belegt."
+  },
+  {
+   "id": "I-RP-sg",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "sg",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Singapur: eigenes Service- und Engineering-Zentrum in Tuas mit MRO und Entwicklung KI-gestützter Bildverarbeitung.",
+   "depends_on": [
+    "P-R130"
+   ],
+   "reasoning": "Wartung und Entwicklung am eigenen Standort sind zwei Kernfunktionen.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Entwicklungsfunktion aus der Selbstdarstellung als Engineering-Zentrum; Produktumfang auf Fahrzeug-MRO und Bildverarbeitung begrenzt.",
+   "next_stage_limit": "Höchste Stufe."
+  },
+  {
+   "id": "I-RP-za",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "za",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 5,
+   "statement": "Südafrika: Entwicklung und Fertigung von Munition im beherrschten JV Rheinmetall Denel Munition (51 %, vollkonsolidiert) in Somerset West.",
+   "depends_on": [
+    "P-R140",
+    "C-STR-22"
+   ],
+   "reasoning": "Entwicklung und Fertigung sind zwei Kernfunktionen; die Kontrolle ist über die Vollkonsolidierung belegt.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Denel-eigener Beleg nicht geöffnet.",
+   "next_stage_limit": "Höchste Stufe."
+  },
+  {
+   "id": "I-RP-naval-intl",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "naval-intl",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "bewertet",
+   "score": 2,
+   "statement": "Naval-Auslandsstandorte: JV-Zugang in Ägypten (NVL Egypt) und Brunei (Muara Maritime Services) ohne Kontrollbeleg; Kroatien (Rijeka) im Aufbau.",
+   "depends_on": [
+    "P-R150",
+    "P-N61"
+   ],
+   "reasoning": "Operative JV ohne belegte Kontrolle tragen Stufe 2; Rijeka ist als geplant erfasst.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "Funktionen der JV nicht beschrieben; drei Länder aggregiert.",
+   "next_stage_limit": "Stufe 3 erfordert eine eigene oder kontrollierte Vertretung; Kontrolle und Funktionen der JV sind nicht belegt."
+  },
+  {
+   "id": "I-RP-gulf",
+   "type": "regional_presence",
+   "section": "regional_presence",
+   "region_id": "gulf",
+   "method_id": "regional-presence-v2",
+   "assessment_status": "nicht eindeutig bestimmbar",
+   "score": null,
+   "statement": "Golfstaaten: Präsenzstufe aus der Regionszuordnung nicht eindeutig bestimmbar; belegt ist nur die Herstellerangabe zur Marktbearbeitung.",
+   "depends_on": [
+    "P-R160"
+   ],
+   "reasoning": "P-R160 beschreibt strategische Märkte, keine lokale Struktur oder Lieferung; daraus folgt keine Stufe. Fehlende Evidenz ist kein Beleg fehlender Aktivität.",
+   "method": "Höchste vollständig belegte Präsenzstufe (regional-presence-v2)",
+   "uncertainty": "",
+   "coverage_note": "In der Regionszuordnung sind für VAE und Saudi-Arabien weder Gesellschaft, Standort, Partner noch Lieferung belegt; die Rheinmetall Arabia Simulation and Training LLC (Riad) aus den Cluster-Fakten ist der Region nicht zugeordnet."
+  },
+  {
+   "id": "I-MI-portfolio-1",
+   "type": "module_insight",
+   "section": "module_insights",
+   "module": "portfolio",
+   "display_order": 1,
+   "headline": "Belegte Serienreife im Land- und Munitionskern",
+   "fact_text": "Laut Rheinmetall: 100. Boxer-MIV an das UK geliefert, Lynx und Puma in Serie, Aschau fertigt ~1.700 t Pulver p. a.; AERIE ist Prototyp, Deep Strike angekündigt.",
+   "fact_claim_ids": [
+    "P-V13",
+    "P-V32",
+    "P-V21",
+    "P-W40",
+    "P-A50",
+    "P-W60"
+   ],
+   "statement": "Die Serienreife liegt im Land- und Munitionsgeschäft; neue Felder wie Counter-UAS, Deep Strike und Raumfahrt stehen erst am Anfang der Reifeskala.",
+   "depends_on": [
+    "P-V13",
+    "P-V32",
+    "P-V21",
+    "P-W40",
+    "P-A50",
+    "P-W60",
+    "I-PM-boxer",
+    "I-PM-lynx",
+    "I-PM-puma",
+    "I-PM-propellant",
+    "I-PM-cuas",
+    "I-PM-strike",
+    "I-PM-airsat"
+   ],
+   "reasoning": "Verdichtet die Reifeeinordnungen: Stufe 6 bei Boxer, Lynx, Puma, HX, 155-mm- und Mittelkalibermunition; Stufe 1–3 bei Deep Strike, UAS-Kooperationen, AERIE und Luftraumsatellit.",
+   "method": "Modulbezogene Verdichtung geprüfter A-Fakten",
+   "uncertainty": "Fünf Produkte sind nicht eindeutig bestimmbar (z. B. Radare, Battlesuite); das ist Beleglücke, keine Unreife."
+  },
+  {
+   "id": "I-MI-portfolio-2",
+   "type": "module_insight",
+   "section": "module_insights",
+   "module": "portfolio",
+   "display_order": 2,
+   "headline": "Kapazitätshochlauf und Termine als Umsetzungsrisiko",
+   "fact_text": "Skyranger-Türme: Ausbau von 70–100 auf bis zu 400 p. a. geplant; laut Capital verzögern sich Skyranger 30 und Schwerer Waffenträger, Rheinmetall relativiert.",
+   "fact_claim_ids": [
+    "P-A13",
+    "P-A11",
+    "P-V12"
+   ],
+   "statement": "Mehrere Wachstumsprodukte hängen am Kapazitätsaufbau; berichtete Terminverzüge zeigen, dass Auftragslage und Lieferfähigkeit getrennt zu bewerten sind.",
+   "depends_on": [
+    "P-A13",
+    "P-A11",
+    "P-V12",
+    "P-W10",
+    "I-PM-skyranger"
+   ],
+   "reasoning": "Kapazitätsangaben sind Planwerte; die Verzugsberichte beruhen auf internen Unterlagen des Beschaffungsamts, Rheinmetall nennt kürzere Verschiebungen.",
+   "method": "Modulbezogene Verdichtung geprüfter A-Fakten",
+   "uncertainty": "Abweichende Zeitangaben von Beschaffungsamt und Rheinmetall."
+  },
+  {
+   "id": "I-MI-portfolio-3",
+   "type": "module_insight",
+   "section": "module_insights",
+   "module": "portfolio",
+   "display_order": 3,
+   "headline": "Naval Systems: Werftkapazität mit Programmrisiko",
+   "fact_text": "Naval Systems: Backlog 6.255 Mio. EUR (30.06.2026); nach dem F126-Aus löste Blohm+Voss den Unterauftrag auf und buchte 2.153 Mio. EUR Auftragsbestand aus.",
+   "fact_claim_ids": [
+    "T-09",
+    "C-STR-38"
+   ],
+   "statement": "Die NVL-Übernahme bringt Schiffbau mit Serienprogrammen wie K130; die F126-Stornierung zeigt, wie stark Einzelprogramme Backlog und Prognose bewegen.",
+   "depends_on": [
+    "T-09",
+    "C-STR-38",
+    "P-S05",
+    "I-PM-k130"
+   ],
+   "reasoning": "Segmentzahlen umfassen vier Monate seit Übernahme; die Prognosesenkung um 300 Mio. EUR ist direkt mit F126 begründet.",
+   "method": "Modulbezogene Verdichtung geprüfter A-Fakten",
+   "uncertainty": "Zahlen sind Unternehmensangaben."
+  },
+  {
+   "id": "I-MI-cluster-1",
+   "type": "module_insight",
+   "section": "module_insights",
+   "module": "cluster",
+   "display_order": 1,
+   "headline": "Boxer und Puma laufen über JV mit KNDS – Partner und Wettbewerber",
+   "fact_text": "ARTEC (Boxer, 64 %) und PSM (Puma, 50 %) sind at-equity bilanzierte JV mit KNDS; RBSL (55 %) ist dagegen vollkonsolidiert.",
+   "fact_claim_ids": [
+    "C-STR-08",
+    "C-STR-07",
+    "C-STR-06"
+   ],
+   "statement": "Zwei Kernprogramme hängen an gemeinschaftlich geführten Strukturen mit KNDS, das bei 155-mm-Munition zugleich Wettbewerber ist; Kapitalanteil ist nicht gleich Kontrolle.",
+   "depends_on": [
+    "C-STR-08",
+    "C-STR-07",
+    "C-STR-06",
+    "P-V10",
+    "P-V20",
+    "I-M-knds-procurement"
+   ],
+   "reasoning": "Konsolidierungsart unterscheidet Kontrolle von Kapitalquote; die Doppelrolle von KNDS ergibt sich aus Cluster-Fakten und Vergleichsplan.",
+   "method": "Modulbezogene Verdichtung geprüfter A-Fakten",
+   "uncertainty": "Stimmrechtsregelungen der JV nicht veröffentlicht."
+  },
+  {
+   "id": "I-MI-cluster-2",
+   "type": "module_insight",
+   "section": "module_insights",
+   "module": "cluster",
+   "display_order": 2,
+   "headline": "Staatliche JV-Partner öffnen Märkte – mit politischer Abhängigkeit",
+   "fact_text": "Rheinmetall hält je 51 % an JV mit Ungarns Regierung, UDI (Ukraine) und Denel; in Bulgarien bestreitet die Regierung das gemeldete VMZ-JV (07/2026).",
+   "fact_claim_ids": [
+    "C-STR-19",
+    "C-STR-20",
+    "C-STR-22",
+    "C-STR-33"
+   ],
+   "statement": "Lokale JV mit staatlichen Partnern sichern Wertschöpfung und Marktzugang; der bulgarische Fall zeigt, dass angekündigte Strukturen politisch reversibel sind.",
+   "depends_on": [
+    "C-STR-19",
+    "C-STR-20",
+    "C-STR-22",
+    "C-STR-33",
+    "C-STR-21",
+    "M-RHM-04"
+   ],
+   "reasoning": "Mehrere Werke (Litauen, Rumänien) folgen demselben Muster mit staatlichen Partnern; die Kontrollausprägung ist je Fall unterschiedlich belegt.",
+   "method": "Modulbezogene Verdichtung geprüfter A-Fakten",
+   "uncertainty": "Ausgang der bulgarischen Neuverhandlung offen."
+  },
+  {
+   "id": "I-MI-cluster-3",
+   "type": "module_insight",
+   "section": "module_insights",
+   "module": "cluster",
+   "display_order": 3,
+   "headline": "Technologiepartnerschaften überwiegend im MoU-Stadium",
+   "fact_text": "Lockheed Martin (Raketen), Reliance (Sprengstoff) und Indra: MoU; Anduril: angekündigt. Umgesetzt: F-35-Fertigung in Weeze, ICEYE-JV betreibt SAR-Satelliten.",
+   "fact_claim_ids": [
+    "C-TEC-01",
+    "C-TEC-05",
+    "C-TEC-06",
+    "C-TEC-03",
+    "C-TEC-02",
+    "C-TEC-04"
+   ],
+   "statement": "Nur wenige Allianzen sind operativ; bei Raketen, Drohnen und Energetik bleibt die Umsetzung der angekündigten Partnerschaften ein offener Prüfpunkt.",
+   "depends_on": [
+    "C-TEC-01",
+    "C-TEC-05",
+    "C-TEC-06",
+    "C-TEC-03",
+    "C-TEC-02",
+    "C-TEC-04"
+   ],
+   "reasoning": "Statusklassen der Fakten (MoU, angekündigt, angelaufen) direkt übernommen.",
+   "method": "Modulbezogene Verdichtung geprüfter A-Fakten",
+   "uncertainty": "Partnerquellen (Lockheed, Anduril, Reliance) nicht geöffnet."
+  },
+  {
+   "id": "I-MI-market-1",
+   "type": "module_insight",
+   "section": "module_insights",
+   "module": "market",
+   "display_order": 1,
+   "headline": "Engpass Energetik: Pulver im Konzern, Sprengstoff noch Plan",
+   "fact_text": "EU-ASAP fördert Pulver mit rund 248 Mio. EUR; Papperger nennt Pulver einen 'strategic bottleneck'. Hersteller nennen Pulver-/Sprengstoffmangel als Ursache.",
+   "fact_claim_ids": [
+    "M-MKT-01",
+    "M-RHM-04",
+    "M-MKT-03"
+   ],
+   "statement": "Im Engpass Energetik ist Rheinmetall mit eigener Pulverfertigung abgesichert, aber nicht allein; die Sprengstoffstufe hängt an noch nicht belegten Werken.",
+   "depends_on": [
+    "M-MKT-01",
+    "M-RHM-04",
+    "M-MKT-03",
+    "I-M-rheinmetall-integration",
+    "I-M-nammo-integration",
+    "I-M-bae-integration"
+   ],
+   "reasoning": "Matrix Vertikalintegration: Rheinmetall, Nammo, GD-OTS und Hanwha auf Stufe 3, BAE auf 4 nur über US-Betreiberwerke; ein Kriteriumsstand ist kein Gesamtvorsprung.",
+   "method": "Modulbezogene Verdichtung geprüfter A-Fakten",
+   "uncertainty": "KNDS-Integration nicht öffentlich belegt, keine Schwäche abgeleitet."
+  },
+  {
+   "id": "I-MI-market-2",
+   "type": "module_insight",
+   "section": "module_insights",
+   "module": "market",
+   "display_order": 2,
+   "headline": "Kapazitätsangaben sind überwiegend Ziele",
+   "fact_text": "Rheinmetall: Ziel 1,5 Mio/Jahr bis 2030; Nammo: 200.000 bis 2028 (Medien). EU: Kubilius >2 Mio/Jahr (02/2026) vs. RFE/RL-Recherche ~550.000–600.000 (2024).",
+   "fact_claim_ids": [
+    "P-W13",
+    "M-NAM-05",
+    "M-MKT-04",
+    "M-MKT-03"
+   ],
+   "statement": "Öffentliche Kapazitätszahlen sind Ziele oder umstrittene Gesamtwerte; ein belastbarer Ist-Vergleich der Anbieter ist derzeit nicht möglich.",
+   "depends_on": [
+    "P-W13",
+    "M-NAM-05",
+    "M-MKT-04",
+    "M-MKT-03",
+    "I-M-rheinmetall-capacity",
+    "I-M-nammo-capacity"
+   ],
+   "reasoning": "Nur zwei Peers haben einen planbedingungskonformen Zielwert; BAE, GD-OTS und Hanwha ohne Geschosskapazität, KNDS ohne Zieljahr.",
+   "method": "Modulbezogene Verdichtung geprüfter A-Fakten",
+   "uncertainty": "EU-Werte stammen aus unterschiedlichen Zeitpunkten und Zählweisen."
+  },
+  {
+   "id": "I-MI-market-3",
+   "type": "module_insight",
+   "section": "module_insights",
+   "module": "market",
+   "display_order": 3,
+   "headline": "Beschaffung und Werksnetz: Höchststufe, geteilt mit KNDS",
+   "fact_text": "Rheinmetall: Bundeswehr-Rahmen bis 8,5 Mrd. EUR, Fertigung in DE, ES, ZA plus Werk Litauen; KNDS: NSPA-Rahmen 1,1 Mrd. EUR, neue Linie in Belgien.",
+   "fact_claim_ids": [
+    "P-W11",
+    "P-R90",
+    "M-KND-03",
+    "M-KND-08"
+   ],
+   "statement": "Bei Beschaffungsstand und Werksnetz erreicht Rheinmetall die Höchststufe, teilt sie aber mit KNDS (Nammo beim Werksnetz); das ist kein Gesamtvorsprung.",
+   "depends_on": [
+    "P-W11",
+    "P-R90",
+    "M-KND-03",
+    "M-KND-08",
+    "I-M-rheinmetall-procurement",
+    "I-M-rheinmetall-industrial",
+    "I-M-knds-procurement",
+    "I-M-knds-industrial",
+    "I-M-nammo-industrial"
+   ],
+   "reasoning": "Vergleich je Kriterium nach fixierten Ankern; keine Addition oder Rangbildung.",
+   "method": "Modulbezogene Verdichtung geprüfter A-Fakten",
+   "uncertainty": "Liefer- und Einsatzangaben überwiegend Herstellerangaben."
+  }
+ ],
+ "module_insight_gaps": [],
+ "research_requests": [
+  {
+   "id": "RQ-01",
+   "target_role": "market",
+   "question": "Welche maximale Reichweite gibt Rheinmetall für angebotene 155-mm-Varianten (z. B. Assegai M2005 V-LAP, ER02A1-B/B) mit Rohrlänge und Ladung im Datenblatt an, bzw. welcher Variante und Ladung sind die Testwerte vom 06.11.2019 eindeutig zuzuordnen?",
+   "related_claim_ids": [
+    "M-RHM-02",
+    "M-RHM-01",
+    "M-RHM-06"
+   ],
+   "blocking": false
+  },
+  {
+   "id": "RQ-02",
+   "target_role": "market",
+   "question": "Gibt es eine KNDS-Angabe zur 155-mm-Jahreskapazität mit Zieljahr bzw. Ist-Wert (Werk oder Konzern), insbesondere zum Ziel von 100.000 Geschossen in La Chapelle-Saint-Ursin?",
+   "related_claim_ids": [
+    "M-KND-06",
+    "M-KND-04"
+   ],
+   "blocking": false
+  },
+  {
+   "id": "RQ-03",
+   "target_role": "market",
+   "question": "Ist eine operative RDX-Fertigung in Unterlüß oder Várpalota zum Stichtag öffentlich belegt (Voraussetzung für Integration Stufe 4)?",
+   "related_claim_ids": [
+    "M-RHM-03",
+    "M-RHM-05"
+   ],
+   "blocking": false
+  },
+  {
+   "id": "RQ-04",
+   "target_role": "portfolio",
+   "question": "Soll die laut C-STR-18 seit Juli 2026 vollständig gehaltene Rheinmetall Arabia Simulation and Training LLC (Riad) mit Funktion, Standort und Status als Aktivität der Region gulf erfasst und im Basis-Review geprüft werden?",
+   "related_claim_ids": [
+    "C-STR-18",
+    "P-R160"
+   ],
+   "blocking": false
+  },
+  {
+   "id": "RQ-05",
+   "target_role": "portfolio",
+   "question": "Sind Entwurf und Betreuung bei RBSL (P-R10) als eigenständige operative Kernfunktionen mit Standortbeleg in Telford bzw. weiteren UK-Standorten zuzuordnen (relevant für Stufe 5 im Vereinigten Königreich)?",
+   "related_claim_ids": [
+    "P-R10",
+    "C-STR-06"
+   ],
+   "blocking": false
+  },
+  {
+   "id": "RQ-06",
+   "target_role": "portfolio",
+   "question": "Liegen Auftrags-, Liefer- oder Einsatzbelege für Fuchs/Caracal/Ermine, die Radare X-TAR3D/Skyspotter/MSU und Battlesuite vor (derzeit 'nicht eindeutig bestimmbar')?",
+   "related_claim_ids": [
+    "P-V60",
+    "P-A30",
+    "P-A01",
+    "P-D13"
+   ],
+   "blocking": false
+  },
+  {
+   "id": "RQ-07",
+   "target_role": "source-reviewer",
+   "question": "Schluss-Review: Sind (a) Kraken K3 Scout als Stufe 6 allein auf Basis des gemeldeten Serienstarts ohne Kundenauftrag, (b) BAE-Integration 4/4 über die Betreiberrolle staatseigener US-Werke, (c) GD-OTS-Beschaffung 2/4 trotz Task-Order-Struktur und (d) die Rheinmetall-Reichweite als 'weitere Faktenprüfung nötig' sachgerecht abgegrenzt?",
+   "related_claim_ids": [
+    "P-N50",
+    "C-STR-13",
+    "M-BAE-06",
+    "M-GDO-03",
+    "M-RHM-02"
+   ],
+   "blocking": false
+  }
+ ],
+ "shared_limitations": [
+  "Grundlage sind ausschließlich die 270 geprüften A-Fakten des delegierten Kontexts (Basis-Review freigegeben, keine pending_checks); keine Webrecherche, keine neuen Fakten.",
+  "Unternehmenskennzahlen, Liefer-, Kapazitäts- und Produktangaben sind überwiegend Hersteller- bzw. Medienangaben; Q3-2026-Zahlen lagen zum Stichtag nicht vor.",
+  "Capability-Matrix-Stufen zeigen öffentliche Evidenzreife je Kriterium nach den Ankern des Vergleichsplans v1, keine technische Überlegenheit; keine Addition, Mittelung oder Gesamtrangliste. Reichweitenwerte sind Herstellerangaben mit unterschiedlichen Mess-/Simulationsgrundlagen.",
+  "Anker 1 der Vertikalintegration ('keine eigene Fertigung öffentlich belegt') wird nicht vergeben; Beleglücken stehen als 'nicht öffentlich belegt' bzw. 'weitere Faktenprüfung nötig' ohne Wert.",
+  "Produktreife bündelt teils mehrere Varianten in einer Zeile; die Stufe folgt dem höchsten konkret belegten Meilenstein, Variantenunterschiede stehen in der Begründung. 'Nicht eindeutig bestimmbar' ist Beleglücke, keine Unreife.",
+  "Regionale Präsenzstufen messen organisatorische Verankerung nach regional-presence-v2 (JV-Kontrolle nur über Vollkonsolidierung belegt), nicht Umsatz oder Marktanteil; Regionsaggregate (Nordeuropa, Australien/Neuseeland, Naval-Ausland) folgen dem stärksten belegten Land."
+ ]
+}
