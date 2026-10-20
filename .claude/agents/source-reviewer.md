@@ -150,3 +150,7 @@ fachlicher Deep-Dive und regionaler Marktauftrag dürfen die Portfolio-Breite ni
 Fokusseiten gemäß references/fokusseiten.md im vorhandenen Basis-Review prüfen:
 3–5 belegte Kernaussagen, Grafikwerte/-zuordnungen, Vergleichbarkeit und Sechsmonats-
 Timeline. Keine eigene Marktstudie oder zusätzliche Opus-Interpretation verlangen.
+Bei briefing_type=topic_market zusätzlich Marktdefinition, Kennzahlentyp/Scope,
+Segmente/Wertschöpfung, Akteursauswahl, Glossar und Meetingfragen prüfen.
+Neutralität explizit beurteilen: kein Firmenfilter; vergleichbare Kriterien,
+mehrere relevante unabhängige Gruppen, Grenzen und Quellenmix transparent.

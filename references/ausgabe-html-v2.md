@@ -70,6 +70,10 @@ Dynamische Desktop-Seiten für neue Manifestdateien mit focus_pages:
 4. Quellen immer als letzter Reiter; Nummerierung folgt der tatsächlichen Anzahl.
 
 Neue Manifestdateien immer mit focus_pages=[{id,label}] oder [].
+Neue Fokuseinträge zusätzlich briefing_type="topic_market" nach fokusseiten.md:
+neutrale Grundlagen, Zahlenkarten, Segmente/Wertschöpfung, Akteurstabelle und
+Meetingfragen vor bzw. nach den bestehenden Erkenntnissen/Grafiken/Timelines.
+Historische Einträge ohne Typ behalten ihren geprüften Darstellungsvertrag.
 Allgemeine Unternehmensthemen bleiben topics=[{id,label,page:"main"}].
 Historische Läufe ohne focus_pages behalten ihren alten Vierseitenpfad zur
 Wiederholbarkeit. page=market/market_dashboard nicht in neue Fokusläufe übernehmen.

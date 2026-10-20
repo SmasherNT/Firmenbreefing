@@ -38,6 +38,9 @@ Vollbriefing: unternehmensweites Portfolio als Standard. Allgemeine
 Unternehmensthemen nach themen-darstellung.md. Separate Themen-/Markt-/Länder-
 überblicke nach fokusseiten.md: ein Reiter und eigener focus-analyst-Aufruf je
 Fokusthema, Sonnet 5.5 Medium. Neue Manifestdateien immer mit focus_pages (sonst []).
+Jeder neue Fokus erhält briefing_type="topic_market": neutrales Themen- und
+Marktbriefing mit Grundlagen, Kennzahlen, Segmenten, Akteuren und Meetingfragen
+nach fokusseiten.md. Dies muss nicht im Nutzerprompt wiederholt werden.
 Unter Portfolio, Cluster und Markt/Wettbewerb auf Seite 1 je 1–3 geprüfte
 Fakt/Insight-Karten nach modul-keyfacts.md; Auswahl in bestehender Positionierung.
 Regionale Unternehmenspräsenz nach regionale-praesenz.md im Vollbriefing auf

@@ -40,6 +40,25 @@ def module(manifest, p, source):
         'source_proposals':[source], 'gaps':[], 'coverage':[], 'focus_pages':[p]}
 
 
+def neutral_page(fid='lkw'):
+    p = page(fid)
+    mapped = lambda **kw: dict(claim_ids=p['claim_ids'], **kw)
+    p.update(briefing_type='topic_market',
+        market_definition=mapped(label='Synthetische Marktdefinition', geography='Testregion',
+                                 period='2026', boundary='Explizite Testabgrenzung'),
+        key_metrics=[mapped(id='metric' + str(i), label='Testkennzahl ' + str(i), value=i + 1,
+                            unit='Stück', period='2025', scope='Testprogramm',
+                            definition='Keine reale Marktgröße', metric_type='firm_order') for i in range(4)],
+        segments=[mapped(id='segment', label='Testsegment', description='Belegte Segmentbeschreibung')],
+        value_chain=[mapped(id='integration', label='Integration', description='Belegte Funktion')],
+        actors=[mapped(id='actor' + str(i), label='Anbieter ' + str(i), role='Integrator',
+                       offering='Testangebot', segment='Testsegment', status='Belegter Teststand') for i in range(3)],
+        selection_note='Synthetische Akteursauswahl; keine reale Marktabdeckung.',
+        meeting_questions=[mapped(id='question', label='Welche Schnittstellen sind relevant?')],
+        glossary=[mapped(id='term', label='Testbegriff', definition='Einfache Erläuterung')])
+    return p
+
+
 class FocusTests(unittest.TestCase):
     def setUp(self):
         self.fixture = facts_fixture.FactsTests(); self.fixture.setUp()
@@ -77,6 +96,94 @@ class FocusTests(unittest.TestCase):
         self.assertIn('focus-matrix', rendered)
         self.assertIn('focus-structure', rendered)
         self.assertNotIn('open>', rendered)
+
+    def test_topic_market_renders_grounding_metrics_actors_and_meeting_questions(self):
+        p = neutral_page()
+        checked = set()
+        request = dict(id=p['id'], label=p['label'], briefing_type='topic_market')
+        FOCUS.validate([request], [p], lambda ids:checked.update(ids), self.manifest['as_of'])
+        rendered = FOCUS.render(p, lambda ids:'<p>Beleg</p>', self.manifest['as_of'])
+        headings = ['Thema verstehen', 'Zahlen auf einen Blick', 'Marktsegmente',
+                    'Wertschöpfung &amp; Rollen', 'Akteure im Überblick', 'Kernaussagen',
+                    'Entwicklungen der letzten sechs Monate', 'Fragen für das Meeting']
+        offsets = [rendered.index(h) for h in headings]
+        self.assertEqual(offsets, sorted(offsets))
+        self.assertEqual(rendered.count('class="focus-metric"'),4)
+        self.assertIn('Begriffe &amp; Abkürzungen',rendered)
+        self.assertIn('Explizite Testabgrenzung',rendered)
+        self.assertIn('Auftrag',rendered)
+        self.assertEqual(checked,{'F_lkw_1'})
+
+    def test_topic_market_requires_complete_contract_and_explicit_evidence_limits(self):
+        p = neutral_page()
+        request = dict(id=p['id'], label=p['label'], briefing_type='topic_market')
+        mutations = [lambda p:p.pop('market_definition'),
+                     lambda p:p['market_definition'].pop('boundary'),
+                     lambda p:p['key_metrics'][0].pop('definition'),
+                     lambda p:p['key_metrics'][0].update(value=True),
+                     lambda p:p['key_metrics'][0].update(value=float('inf')),
+                     lambda p:p['key_metrics'][0].update(value=-1),
+                     lambda p:p['key_metrics'][0].update(metric_type='revenue_guess'),
+                     lambda p:p['key_metrics'].pop(),
+                     lambda p:p['actors'].pop(),
+                     lambda p:p.pop('selection_note'),
+                     lambda p:p['actors'][0].pop('status'),
+                     lambda p:p.update(segments=[]),
+                     lambda p:p.update(value_chain=[]),
+                     lambda p:p.update(meeting_questions=[]),
+                     lambda p:p['glossary'][0].pop('definition'),
+                     lambda p:p.pop('briefing_type')]
+        for mutation in mutations:
+            changed=copy.deepcopy(p);mutation(changed)
+            with self.assertRaises(ValueError):
+                FOCUS.validate([request],[changed],lambda ids:None,self.manifest['as_of'])
+        p.update(key_metrics=[],metrics_note='Keine vergleichbar abgegrenzten Zahlen zugänglich.',
+                 actors=[],actors_note='Keine belastbaren Akteure identifiziert.',
+                 segments=[],segments_note='Segmentierung nicht belegt.',
+                 value_chain=[],value_chain_note='Funktionen nicht belegt.')
+        FOCUS.validate([request],[p],lambda ids:None,self.manifest['as_of'])
+
+    def test_new_fields_are_a_reviewed_and_unknown_references_fail(self):
+        p=neutral_page()
+        request=dict(id=p['id'],label=p['label'],briefing_type='topic_market')
+        for field in ('market_definition','key_metrics','segments','value_chain','actors','meeting_questions','glossary'):
+            changed=copy.deepcopy(p)
+            row=changed[field] if field=='market_definition' else changed[field][0]
+            row['claim_ids']=['not-reviewed']
+            def require(ids):
+                if 'not-reviewed' in ids:raise ValueError('unknown refs')
+            with self.assertRaisesRegex(ValueError,'unknown refs'):
+                FOCUS.validate([request],[changed],require,self.manifest['as_of'])
+        self.manifest['focus_pages']=[request]
+        self.modules=[self.fixture.module,module(self.manifest,p,self.fixture.source)]
+        report,packet=self.build()
+        self.assertEqual(report['errors'],[])
+        self.assertIn('F_lkw_1',report['required_full_review_ids'])
+
+    def test_market_text_and_metric_qualifiers_are_escaped(self):
+        p=neutral_page()
+        p['key_metrics'][0].update(qualifier='<script>',note='<img onerror=bad>')
+        p['actors'][0]['role']='<unsafe>'
+        rendered=FOCUS.render(p,lambda ids:'',self.manifest['as_of'])
+        self.assertNotIn('<script>',rendered)
+        self.assertNotIn('<unsafe>',rendered)
+        self.assertIn('&lt;script&gt;',rendered)
+        self.assertIn('&lt;img onerror=bad&gt;',rendered)
+
+    def test_topic_market_full_renderer_binds_new_display_fields(self):
+        b=render_fixture.bundle();p=neutral_page()
+        b['manifest']['focus_pages']=[{k:p[k] for k in ('id','label','briefing_type')}]
+        b['facts']['claims'].append({**b['facts']['claims'][0],'id':'F_lkw_1'})
+        b['facts']['module_views'].append(dict(role='focus:lkw',focus_pages=[p]))
+        render_fixture.refresh_basis(b)
+        output=RENDER.build(**render_fixture.facts_only(b))
+        parser=render_fixture.Links();parser.feed(output)
+        self.assertTrue(set(parser.anchors)<=set(parser.ids))
+        self.assertEqual(output.count('class="focus-metric"'),4)
+        self.assertIn('Fragen für das Meeting',output)
+        b['facts']['module_views'][-1]['focus_pages'][0]['actors'][0]['role']='Geänderte Rolle'
+        with self.assertRaisesRegex(ValueError,'snapshot'):
+            RENDER.build(**render_fixture.facts_only(b))
 
     def test_invalid_graphics_and_dates_are_blocked(self):
         mutations = [lambda p:p['charts'][0]['rows'][0].update(value=float('nan')),

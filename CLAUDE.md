@@ -34,6 +34,9 @@ focus-analyst (Sonnet 5.5 Medium), zwei Interpretationsrollen, Basis- und gemein
 Schluss-Review. Portfolio deckt alle wesentlichen Geschäftsfelder ab; allgemeine
 Unternehmensthemen folgen dem Auftrag. Separate Themen-/Länder-/Marktüberblicke
 als Fokusseiten nach fokusseiten.md, ohne eigene SWOT/Positionierung.
+Fokusstandard briefing_type=topic_market: neutrales Meetingbriefing zum Thema und
+Markt mit Grundlagen, Kennzahlen, Segmenten, Wertschöpfung, Akteuren und Fragen.
+Neue Fokusaufträge automatisch so normalisieren; kein Firmenfilter durch company.
 Keine Horváth-Angebotskapitel oder separaten
 Firmen-Deep-Dives; JV-/Tochterfakten bleiben im Cluster. Themen in Nutzerreihenfolge.
 Keine privaten Personendaten oder erfundenen Personen-/Regionalbeziehungen.

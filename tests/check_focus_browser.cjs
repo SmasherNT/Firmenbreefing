@@ -13,6 +13,10 @@ const {pathToFileURL}=require('node:url'),{chromium}=require('playwright-core');
   assert(await page.locator('#page-focus-lkw').isVisible());
   assert.equal(await page.locator('#page-focus-lkw .focus-chart').count(),3);
   assert.equal(await page.locator('#page-focus-lkw .focus-event').count(),8);
+  assert.equal(await page.locator('#page-focus-lkw .focus-metric').count(),4);
+  assert.equal(await page.locator('#page-focus-lkw .focus-actors tbody tr').count(),3);
+  assert(await page.locator('#page-focus-lkw .focus-definition').isVisible());
+  assert(await page.locator('#page-focus-lkw .focus-meeting').isVisible());
   assert.equal(await page.locator('#page-focus-lkw .focus-gaps').evaluate(n=>n.open),false);
   for(const width of [1440,1280,1024]){
    await page.setViewportSize({width,height:1000});

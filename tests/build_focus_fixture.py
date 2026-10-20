@@ -2,13 +2,13 @@
 from pathlib import Path
 import sys
 import test_render_briefing as render
-from test_focus import page
+from test_focus import neutral_page
 
 
 def build(target):
     bundle = render.bundle()
-    pages = [page(), page('drohnen')]
-    bundle['manifest']['focus_pages'] = [{k:p[k] for k in ('id','label')} for p in pages]
+    pages = [neutral_page(), neutral_page('drohnen')]
+    bundle['manifest']['focus_pages'] = [{k:p[k] for k in ('id','label','briefing_type')} for p in pages]
     bundle['manifest']['person'] = 'Synthetischer Gesprächspartner'
     for focus in pages:
         bundle['facts']['claims'].append({**bundle['facts']['claims'][0], 'id':'F_' + focus['id'] + '_1'})

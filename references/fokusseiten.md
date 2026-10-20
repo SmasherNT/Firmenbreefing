@@ -7,6 +7,25 @@ ein spezifischer Markt, Technologie oder anderes frei benanntes Thema. Die
 Unternehmensanalyse einschließlich allgemeinem Markt/Wettbewerb bleibt auf Seite 1.
 Keine feste dritte Marktseite und keine leere Fokus-Platzhalterseite.
 
+## Standard: neutrales Themen- und Marktbriefing
+
+Fokusseiten dienen der Meetingvorbereitung zum Thema selbst: Grundlagen,
+Marktstruktur, Größenordnung, Akteure und Veränderungen. company bindet den
+Firmenlauf und ist kein Recherchefilter. Zielunternehmen wie andere Akteure nach
+denselben Kriterien aufnehmen, sofern relevant. Keine implizite Firmenstrategie,
+Vertriebsargumentation oder ausschließlich firmeneigene Nachrichtenchronik.
+Die Seite muss ohne Kenntnis der Unternehmensanalyse verständlich sein.
+
+Neue Aufträge erhalten automatisch briefing_type="topic_market" je focus_pages-
+Eintrag und in der Ergebnis-Seite; der kurze Nutzerprompt bleibt unverändert.
+Grundblick global, regionale Vertiefung aus Nutzerauftrag oder ausdrücklich
+begründeter Marktabgrenzung. Bestehende geprüfte Seiten ohne briefing_type bleiben
+historisch renderbar; überarbeitete Seiten können topic_market verwenden.
+
+Aufbau: Thema verstehen → Zahlen → Segmente/Wertschöpfung → Akteure → Erkenntnisse
+→ ergänzende Grafiken → Sechsmonats-Timeline → Meetingfragen. Definitionen,
+Herleitungen und Quellen per Klick; keine zusätzliche Agentenschleife.
+
 ## Delegation und Aufwand
 
 **Genau ein separater focus-analyst-Aufruf je Fokusthema**, ausschließlich
@@ -30,8 +49,8 @@ coverage_note; keine Füllthesen. Umfangreiche Details bleiben per Klick erreich
 
 ```json
 "focus_pages": [
-  {"id": "lkw", "label": "Europäische Lkw-OEMs"},
-  {"id": "drohnen", "label": "Drohnenmarkt in Deutschland"}
+  {"id": "lkw", "label": "Europäische Lkw-OEMs", "briefing_type": "topic_market"},
+  {"id": "drohnen", "label": "Drohnenmarkt in Deutschland", "briefing_type": "topic_market"}
 ]
 ```
 
@@ -61,6 +80,42 @@ Seitenfelder:
   Bei leerer Liste timeline_note mit Recherchebefund/Abdeckung.
 - gaps: kurze Textliste für standardmäßig eingeklappten Abschnitt.
 
+Zusätzliche Pflichtfelder für briefing_type=topic_market:
+- market_definition: {label, geography, period, boundary, claim_ids}. Einfache
+  Definition, geografische und sachliche Abgrenzung sowie Betrachtungszeit sichtbar.
+- key_metrics: Zeilen {id, label, value, unit, period, scope, definition,
+  metric_type, claim_ids, optional qualifier/note}. value endlich, numerisch und
+  nichtnegativ. Ziel 4–6 belastbare Zahlen, höchstens sechs. Unter vier zusätzlich
+  metrics_note mit konkretem Recherchebefund, auch bei leerer Liste.
+- metric_type: market_size / budget / contract_ceiling / firm_order / deliveries /
+  capacity / technical / industry_structure / other. Typ und Definition sichtbar.
+  Jede Karte darf ihre eigene Periode/Abgrenzung haben; keine Rangfolge oder Summe
+  aus inkompatiblen Daten. Rechenableitungen im Beleg transparent machen.
+- segments und value_chain: Zeilen {id, label, description, claim_ids}. Funktionen
+  erklären; keine unbelegte Beziehung oder universelle lineare Kette suggerieren.
+  Leere Listen nur mit segments_note bzw. value_chain_note und konkreter Grenze.
+- actors: Zeilen {id, label, role, offering, segment, status, claim_ids}. Auswahl
+  normalerweise aus mindestens drei unabhängigen Akteursgruppen; unter drei
+  Zeilen actors_note. selection_note erklärt Kriterien und Abdeckung. Keine
+  Vollständigkeit, Rangfolge oder Marktanteile suggerieren.
+- meeting_questions: 1–3 Zeilen {id, label, claim_ids}. Neutrale offene Fragen aus
+  belegten Themen, keine neuen Tatsachenbehauptungen, Empfehlungen oder SWOT.
+- glossary optional: Zeilen {id, label, definition, claim_ids}; zentrale Begriffe
+  allgemeinverständlich erklären. Die 3–5 theses bleiben faktische Erkenntnisse.
+
+Kennzahlen aus tatsächlich geöffneten Originaldaten von Auftraggebern, Behörden,
+Organisationen, Verbänden und Unternehmen; Fach-/Wirtschaftsmedien für Gegenprüfung
+und Entwicklungen. Keine Snippet-Marktprognosen oder ungelesenen kommerziellen
+Reportdaten. Verteidigungsbudget ist kein Luftabwehr-Marktvolumen, Rahmenhöchstwert
+kein fester Auftrag, Bestellung keine Lieferung, Zielkapazität kein Ist-Ausstoß.
+Fehlendes Gesamtvolumen durch belegte Programm-/Strukturdaten ergänzen statt zu
+schätzen. Keine Füllzahlen oder künstliche Vollständigkeit.
+
+Luftabwehr: Bedrohungen, Einsatzrollen, Sensorik/Führung/Effektoren, Anbieter,
+Beschaffungen und industrielle Umsetzung. Fahrzeug-OEM-Kooperationen: zivile und
+militärische Plattformen, Anpassung, Integration, JV/Lizenz, Fertigung und Service;
+Beispiele aus mehreren unabhängigen Unternehmensgruppen statt nur der Zielfirma.
+
 Grafiktypen (alles lokal, offline, ohne LLM-Designrunde):
 
 | type | Daten | Einsatz |
@@ -86,6 +141,11 @@ Originaldateien bleiben getrennt. Facts-Index erhält die ursprüngliche Job-Zus
 Fehlende, doppelte, fremde oder ungeprüfte Fokusseiten verhindern die Ausgabe.
 Alle sichtbaren Fokus-Claims sind A-Pflicht und gehen in das bestehende Basis-Review;
 auch Diagrammwerte/-Zuordnungen und verdichtete Kernaussagen semantisch prüfen.
+Bei topic_market sämtliche Zahlenkarten, Definitionen, Glossar, Segmente,
+Wertschöpfung, Akteurstexte und Meetingfragen mitprüfen. Neutralität/Marktüberblick
+explizit beurteilen: keine unbegründete Dominanz der Zielfirma, vergleichbare
+Auswahlkriterien, Marktdefinition/Datentypen klar, Quellenmix und Lücken offengelegt.
+Feldprüfung allein bestätigt weder Neutralität noch repräsentative Marktabdeckung.
 Keine eigene zusätzliche Reviewrunde pro Seite erzwingen. Quellenkonflikte gezielt
 an genau die zuständige focus-analyst-Instanz geben. Konfiguriertes Sonnet Medium
 für Dokumentprüfung und beide Leitphasen beibehalten.
