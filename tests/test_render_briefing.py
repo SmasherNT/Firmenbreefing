@@ -145,7 +145,7 @@ class RenderTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             RENDER.build(**b)
 
-    def test_events_are_compact_chronological_and_keep_unknown_dates(self):
+    def test_events_are_compact_chronological_and_exclude_unknown_dates(self):
         b = facts_only(self.b)
         b['facts']['module_views'][0]['events'] = [
             dict(id='later', label='Later announcement', date='2026-10-01', claim_ids=['M1']),
@@ -154,11 +154,11 @@ class RenderTests(unittest.TestCase):
         refresh_basis(b)
         body = RENDER.build(**b)
         timeline = body.split('id="current-developments">', 1)[1].split('</section>', 1)[0]
-        self.assertEqual(timeline.count('class="card event-card"'), 3)
+        self.assertEqual(timeline.count('class="card event-card"'), 2)
         self.assertLess(timeline.index('Earlier manufacturer report'), timeline.index('Later announcement'))
-        self.assertLess(timeline.index('Later announcement'), timeline.index('Date not confirmed'))
+        self.assertNotIn('Date not confirmed', timeline)
         self.assertIn('<time datetime="2026-08-01">2026-08-01</time>', timeline)
-        self.assertIn('<time>Datum öffentlich nicht belegt</time>', timeline)
+        self.assertIn('Letzte vier Monate', timeline)
         self.assertIn('Herstellerangabe', timeline)
         self.assertIn('Manufacturer reports test 1', timeline)
         self.assertIn('Manufacturer report', timeline)
@@ -167,6 +167,41 @@ class RenderTests(unittest.TestCase):
         links = Links(); links.feed(body)
         self.assertEqual(len(links.ids), len(set(links.ids)))
         self.assertTrue(set(links.anchors) <= set(links.ids))
+
+    def test_overview_four_month_boundaries_and_source_preservation(self):
+        b = facts_only(self.b)
+        start, end = RENDER.PROFILE.media_window(b['manifest']['as_of'])
+        from datetime import timedelta
+        rows = [('boundary', start), ('today', end),
+                ('too old', start - timedelta(days=1)),
+                ('future', end + timedelta(days=1)), ('undated', None)]
+        b['facts']['module_views'][0]['events'] = [dict(id=str(i), label=label,
+            date=day.isoformat() if day else None, claim_ids=['M1'])
+            for i, (label, day) in enumerate(rows)]
+        refresh_basis(b)
+        body = RENDER.build(**b)
+        timeline = body.split('id="current-developments">', 1)[1].split('</section>', 1)[0]
+        self.assertEqual(timeline.count('class="card event-card"'), 2)
+        for label in ('boundary', 'today'):
+            self.assertIn(label, timeline)
+        for label in ('too old', 'future', 'undated'):
+            self.assertNotIn(label, timeline)
+        self.assertIn('id="M1"', body)
+        self.assertEqual(len(b['facts']['module_views'][0]['events']), 5)
+
+    def test_overview_empty_window_is_explicit(self):
+        b = facts_only(self.b)
+        b['facts']['module_views'][0]['events'] = [dict(id='old', label='Historical',
+            date='2020-01-01', claim_ids=['M1'])]
+        refresh_basis(b)
+        body = RENDER.build(**b)
+        self.assertIn('Keine freigegebenen, datierten Entwicklungen im Viermonatszeitraum', body)
+        self.assertNotIn('class="card event-card"', body)
+
+    def test_overview_calendar_window_clamps_month_end(self):
+        from datetime import date
+        self.assertEqual(RENDER.PROFILE.media_window('2026-06-30')[0], date(2026, 2, 28))
+        self.assertEqual(RENDER.PROFILE.media_window('2024-06-30')[0], date(2024, 2, 29))
 
     def test_event_detail_preserves_multiple_facts_and_subsections(self):
         b = facts_only(self.b)

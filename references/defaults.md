@@ -45,3 +45,9 @@ Unter Portfolio, Cluster und Markt/Wettbewerb auf Seite 1 je 1–3 geprüfte
 Fakt/Insight-Karten nach modul-keyfacts.md; Auswahl in bestehender Positionierung.
 Regionale Unternehmenspräsenz nach regionale-praesenz.md im Vollbriefing auf
 Seite 1 vor Wettbewerb; Firmen-/Regionsdaten neu recherchieren, fixe Skala 1–5.
+
+## Zeitfenster aktueller Entwicklungen
+Im Unternehmensüberblick nur die letzten vier Kalendermonate bis zum Stichtag
+(inklusive) nach ausgabe-html-v2.md recherchieren und anzeigen. Keine pauschale
+Altersgrenze für die übrige Faktenbasis. Fokusseiten behalten sechs Monate;
+Gesprächspartner-Medien folgen unverändert gespraechspartner.md.

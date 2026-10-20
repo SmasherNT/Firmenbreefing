@@ -63,7 +63,10 @@ Redesign oder eine erneute visuelle Abnahme sämtlicher übriger Module.
 Kompakte vertikale Zeitachse mit Datum links, kurzer klickbarer Ereigniskarte
 rechts und gemeinsamem Detailfenster. Vollständige A-Fakten, Aussageursprung,
 Unsicherheiten, direkte Originalquellen und Belegstellen bleiben erhalten.
-Bekannte Ereignisse chronologisch, unbekannte Datumsangaben sichtbar zuletzt;
+Im Überblick nur belegte Ereignisdatumsangaben im inklusiven Viermonatsfenster
+bis zum Manifest-Stichtag chronologisch anzeigen; ältere, zukünftige und undatierte
+Einträge dort ausschließen. Zeitraum sichtbar zeigen. Fokusseiten behalten sechs
+Monate, historische Hintergrundfakten bleiben verfügbar;
 keine neuen Interpretationen oder zusätzliche Modellrunde. Bestehender events-
 Vertrag bleibt nutzbar. Aktuelle Abnahme und künftige Ausgabeprüfungen richten
 sich auf die Desktop-Webansicht.

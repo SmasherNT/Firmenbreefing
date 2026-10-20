@@ -371,12 +371,20 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
                 row.get("preview") or short_text(row["statement"]), executive_detail(row), "Analysteneinordnung"))
         topic_pages[topic.get('page', 'main')] += section(topic["label"], '<div class="topic-grid">' + ''.join(cards) + '</div>' if cards else '<p>Keine freigegebenen Befunde für dieses Thema.</p>', 'topic-' + str(index))
     events = [r for v in views.values() for r in v.get("events", [])]
-    events.sort(key=lambda r: (r.get("date") is None, r.get("date") or ''))
+    # Only the company overview uses this rolling four-calendar-month window.
+    # Keep older/undated facts in the reviewed packet and central sources.
+    window_start, window_end = PROFILE.media_window(manifest['as_of'])
+    had_events = bool(events)
+    events = [r for r in events if r.get('date') and
+              window_start <= date.fromisoformat(r['date']) <= window_end]
+    events.sort(key=lambda r: r['date'])
     timeline = ''
     for row in events:
         dated = ' datetime="' + esc(row["date"]) + '"' if row.get("date") else ''
         timeline += '<div class="event"><time' + dated + '>' + esc(row.get("date") or 'Datum öffentlich nicht belegt') + '</time>' + event_card(row) + '</div>'
-    main += section("Aktuelle Entwicklungen", '<div class="timeline">' + timeline + '</div>' if timeline else '', 'current-developments')
+    window_note = '<p class="meta">Letzte vier Monate · ' + window_start.strftime('%d.%m.%Y') + '–' + window_end.strftime('%d.%m.%Y') + '</p>'
+    timeline_body = '<div class="timeline">' + timeline + '</div>' if timeline else '<p>Keine freigegebenen, datierten Entwicklungen im Viermonatszeitraum vorhanden.</p>'
+    main += section("Aktuelle Entwicklungen", window_note + timeline_body if had_events else '', 'current-developments')
     portfolio_html = PORTFOLIO.render(inventory, product_assessments, claims, evidence, links, CHECK.PORTFOLIO_STAGES)
     portfolio_cards = module_insights('portfolio')
     if portfolio_html or portfolio_cards:

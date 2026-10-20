@@ -27,7 +27,15 @@ Keine kopierten Fakten-/Belegtexte pro Zeile.
 events: zusätzlich date (YYYY-MM-DD oder null), kein Abrufdatum als Ereignisdatum.
 Kurzes sachliches label, gegebenenfalls mit „angekündigt“/„laut Hersteller“/
 „laut Medien“. Chronologische Zeitachse mit Datum links und klickbarer Karte
-rechts; Datum unbekannt ausdrücklich zeigen und diese Einträge zuletzt führen.
+rechts. Im Unternehmensüberblick ausschließlich Ereignisse zwischen Stichtag minus
+vier Kalendermonaten und Stichtag (beide Grenzen inklusive; Monatsende auf den
+letzten gültigen Tag begrenzen). Maßgeblich ist das belegte Ereignisdatum, kein
+Abrufdatum. Ältere, zukünftige oder undatierte Ereignisse nicht in dieser Timeline
+anzeigen; ihre Fakten und Quellen bleiben für andere Module erhalten. Zeitraum
+sichtbar ausweisen; bei ausschließlich ausgeschlossenen Ereignissen Datenlücke zeigen.
+Diese Grenze gilt nur für „Aktuelle Entwicklungen“ im Überblick, nicht für Summary,
+Portfolio, historische Hintergrundfakten oder andere Module. Fokusseiten behalten
+ihre Sechsmonats-Timeline nach fokusseiten.md; Personenmedien ihre eigene Regel.
 Details enthalten vollständige A-Fakten, Aussageursprung, Unsicherheit und direkte
 Originalquellen/Belegstellen. Kein neuer Agent oder zusätzlicher Interpretationstext.
 products: domain und optional short_label nach portfolio-darstellung.md.

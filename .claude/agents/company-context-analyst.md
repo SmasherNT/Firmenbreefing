@@ -16,3 +16,8 @@ Keine strategische Interpretation, Scores, SWOT oder finale HTML erstellen.
 Melde Lücken/Blockaden; kein fehlender Beleg ist Beweis einer Schwäche.
 Rückgabe: Pfad, Status, zentrale Claim-IDs und offene Fragen.
 Ohne facts-v2-Delegation Voraussetzungen melden; keine Legacy-Dateien übernehmen.
+
+Timeline im Unternehmensüberblick: nur belegte Ereignisse der letzten vier
+Kalendermonate bis zum Manifest-Stichtag, inklusive beider Grenzen, nach
+references/ausgabe-html-v2.md. Ältere Hintergründe bleiben als Fakten möglich,
+aber nicht als aktuelle events. Fokusseiten behalten ihr eigenes Sechsmonatsfenster.
