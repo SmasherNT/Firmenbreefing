@@ -1,0 +1,339 @@
+{
+  "schema_version": 1,
+  "format": "run-checkpoints-v1",
+  "run_id": "2026-10-20-vincorion",
+  "company": "VINCORION",
+  "as_of": "2026-10-20",
+  "manifest": {
+    "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/input/facts-run.json",
+    "sha256": "b21f3defe490bc08789174503fb32291882c8ab6ec72db90ba133a3f92cd26da"
+  },
+  "request": {
+    "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/input/auftrag.md",
+    "sha256": "ae9a422d9711b329fdcf6bd540c4b2ee7af81938a4c0b3daaa293b16272d09cd"
+  },
+  "cache_path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/document-cache",
+  "target": "html",
+  "full": true,
+  "stages": [
+    "context",
+    "portfolio",
+    "cluster",
+    "plan",
+    "market",
+    "focus:wachstumsmaerkte",
+    "facts",
+    "basis-review",
+    "positioning",
+    "swot",
+    "final-review",
+    "html"
+  ],
+  "checkpoints": {
+    "focus:wachstumsmaerkte": {
+      "stage": "focus:wachstumsmaerkte",
+      "checkpoint_id": "f980dbc106bb4594be3c93863988d106",
+      "inputs": {},
+      "outputs": {
+        "module": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/focus-wachstumsmaerkte-facts.json",
+          "sha256": "e791d204252c92d992fea208a819c781273dd9db5b51872f397b9d2a1642e577"
+        }
+      },
+      "code": {
+        ".claude/agents/focus-analyst.md": "9182d7f76094e71a15398f5e97dfb478766446e472cb89865097be82bd4a1fe1",
+        ".claude/skills/interpretation-briefing/SKILL.md": "5257a8946517c3c4d4fe19ae9e37a2a9d7ab3250a2da90863ffd862dd57049de",
+        "CLAUDE.md": "83adf93634329e070c1fe736434df733522e565af65802d4d4d94222bb62114e",
+        "references/ausgabe-html-v2.md": "733a6427b3612442bf9ff197bdaf30a55c79b9d58dcf7b6c18741181a6815bbc",
+        "references/briefing-struktur.md": "6dfd7d0b6d9bfa3dcc68101e311ff93386cd03792356c90de6bb49597b9a6167",
+        "references/capability-matrix.md": "fa260d63c8c6d01bfe3b42477f483487eb340753232bbdfe3e667ea09e6e5915",
+        "references/cluster-quellenkatalog.md": "52d1c09bd8ce07524065aaa38a45f673eb68feb6fd8e9e6c6fae2e27fc53a1ea",
+        "references/cluster-recherche.md": "91af7a5e12dd6ceda4eebc8a84e226e809eaf963db83892795d4f738c6ec68ca",
+        "references/datenvertrag.md": "a1ba9d4bbe54a46e72934cb541a4c30462342d4c3f094d10735acd161c0478a0",
+        "references/defaults.md": "2d90192a379bd1a7b2dc051f411effc5417abf5c30d7290fa9eb49623fc337f2",
+        "references/executive-summary.md": "370b09867b079fd4d2f85336d6026f61f6c9c547a5bfba7b5f17efc9275171a3",
+        "references/faktenphase.md": "fcd5b65910b7ef5f939e56f4d889e277ddde19dfc3c05986ce2613c61a68bd9c",
+        "references/fokusseiten.md": "539a0b9049e3f19a9ed6529c0c9f75e5179f493c2dd2a9f90b9efff6ff45b6ef",
+        "references/gespraechspartner.md": "c291ff83b164fbe45357c5d0c349f9213a8d350e2bd8368a62e0f49cf5f9913a",
+        "references/interpretationsphase.md": "c9fd9b97090863df4140564015176ab68da79db1e8ade049fe279d7c030733a9",
+        "references/lauf-wiederaufnahme.md": "bc641cf6c1ebd3603d0c4187f656ab90f0e1fb1f29d55a3f79d169ff262717e4",
+        "references/legacy-company-briefing.md": "115653dff47e664cf2c1610ab8f04d7c986babf77d2e15cb81f4ffcbb0debd37",
+        "references/legacy-html-output.md": "8c73f16f146c1c6dc806a61929bf2d55ab833759bff5da38ce9f35ffe6a886b3",
+        "references/markt-deepdive.md": "ee2b7abe853bd3e6d498a02f95df4f34eff07a6b2fc2c1009a912955fc4835be",
+        "references/modellaufteilung.md": "11156474e0deb4a1d5b41f831b2f3cbd5ff983f0ba1be0d5d9b8711e28c1c3b3",
+        "references/modul-keyfacts.md": "d9f0e3acee641e3736e6fe9861df336b9378c73dd59d3bfc1d9993e39e76f788",
+        "references/modultest.md": "c10cf29675dac6d0b363d2ddddd42bb72dee33afb05bfa1df96dc71bcb88939e",
+        "references/netzwerk-html.md": "6fc27498f6bd2bc6afaf3daccdc3c47e88fb5737a535585b979e545ffb091b60",
+        "references/parallele-quellenpruefung.md": "9b186934d97dd3152c9bee751ce164ff9b20bd4cd111a0aff06ea10409c887b8",
+        "references/portfolio-darstellung.md": "35ec6335707a1d672b2ecbd1599ba33d46f077e2e81e4121122481554fc5ff3e",
+        "references/pruefauftraege.md": "c6d9233b5717c3414135c23d0ec49ea471b66ac642d29675ca7f786b819d9196",
+        "references/quellenpruefung.md": "28c57fd0bbb1ef809f1cb3850b4063b5c1a3595938c8ab5ea9dcfbcbf142bfaf",
+        "references/recherche-wiederverwendung.md": "ff24537378b235bada15e0b81d8c18af0ba51462419d70af59d1087643f376c1",
+        "references/regionale-praesenz.md": "e672c4a9b450c1cd68c673492a085eaf75e52e38835707307a9339b764c3bb16",
+        "references/setup-check.md": "45f3f1f90384833d0a4eed5ed59204e666ea90573950684fea91e562fa7f4e93",
+        "references/themen-darstellung.md": "4b41c9edcf6ccc49473bd5af0b4403341ed33d0696046c67ad3b4fbf94d09d4c",
+        "references/uebergabe.md": "c202b3f442f8c5481d022d25a6222e1e30d4c5ccbabe1dc65e03f3e421536430",
+        "scripts/capability-html.py": "d57aa3acad17cff0f23861746586cf2c0574694920d421bb75fb5f9103c30b06",
+        "scripts/check-interpretation.py": "9b1d1040f2370930394c6ef40282b8b3e146029c5a0980c257d514042e5b19b9",
+        "scripts/check-review-data.py": "7483c14d9b7c122dbbdaf2c25b5d7e2aa90f42f3df4af2829c59d1f5e77d0052",
+        "scripts/cluster-html.py": "aeeb2443ec54fbe3dc5b5e9708ab73928131fe4ef89f3e8442ad94207110449a",
+        "scripts/fact-index.py": "44ca65b8198f7a02da43c95c4b6f3e24186d1b6457530973f4e6928445c29eaf",
+        "scripts/focus-html.py": "bcc2a587729e1efaba5216de15e7c62af2ab0d50cf83a76dc2326be774c6b6d3",
+        "scripts/market-html.py": "be5c320fbd4acc07050b25e9358f3bfc77b4b11740826ed8b550802001fd68c2",
+        "scripts/module-insights-html.py": "6f4db1fbced945f2321bdd640335ccdf69276687e21c919a9c410b6443685d5e",
+        "scripts/portfolio-html.py": "afe7cab419040c1779cb8af7a9659118fc56ca8cd7c469fd6992b110fa351ca5",
+        "scripts/prepare-facts.py": "8a26c7f432f58d9d523f8ca5a3588ef222f9ba11c8aef4665fdf583b7f12776d",
+        "scripts/presence-html.py": "98e16a7a4b662e4c1e729c1ade51aad5386607a125c91f2c03826a386ac451c0",
+        "scripts/profile-html.py": "cab0b5576ee7de44f2e246e7f8830bf305eada4a3ec2d6f2e3128d4b2d256da2",
+        "scripts/render-briefing.py": "6744146dc1270dd1c90149c09d32a7c2a6454fb3d46295e7c17a359aa29a4722",
+        "scripts/resume-run.py": "768a603a746bd147daa0df1bc584f7cbc69142ab9985d0189d14e1db01442161",
+        "scripts/review-shards.py": "99d7ab9bff85e9f24673be3f359fccfe89158d5588133a8ab737fdfb1ae3f6b8",
+        "scripts/review-work.py": "4470a6171f5686afa223cdf01c629a4fa7f77ecdadc5079fc539698e9673858b",
+        "scripts/source-cache.py": "267092e431187b7a6cdd5f4bb051ad8b84fa2a07bf479a441738b5c623bb7eb4",
+        "scripts/stamp-review.py": "12d937d3975e39fc95b750d61f4b699225f9b8f4129b1caecaccd9b264b279d3"
+      },
+      "sources": {
+        "S-01bdf37a77a6b3df": {
+          "source_id": "S-01bdf37a77a6b3df",
+          "url": "https://vincorion.com/en/vehicle-systems/land-stabilization-systems/",
+          "content_sha256": "9759f532ad57db6b8ba6d163acb152fe3d9becc4b7f926198a47190ab83b281b",
+          "text_sha256": "cdddaf659d9e5dde3544a4e0f2c730daeb92fb108985440e876844ed6f4aaf8d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-0d749a7e724be027": {
+          "source_id": "S-0d749a7e724be027",
+          "url": "https://www.janes.com/osint-insights/defence-news/land/iav-2026-bundeswehrs-skyranger-30-air-defence-system-to-become-operational-by-end-of-decade",
+          "content_sha256": "2d58ec54a80eddb531dc76e34f72e3bf602537694c5b94a9f192da9903956dd8",
+          "text_sha256": "24d00ca056df8c0ecf59afde9f2bc5004fcaac9d1f25f629b011a1611dc062b4",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-13147943f3042508": {
+          "source_id": "S-13147943f3042508",
+          "url": "https://www.eqs-news.com/news/ad-hoc/vincorion-se-vincorion-se-reports-41-higher-revenue-for-the-first-9-months-of-2026-compared-to-the-same-period-last-year-full-year-guidance-raised/1e1dc173-dcc2-4702-88cb-fff738bedbe7_en",
+          "content_sha256": "216d003c7f201ee30bf1e2e4d9c23ac68af213f6ca605e51f66adc819c3a6ff5",
+          "text_sha256": "2288b2929da1adbe337f9604da4782e7d78e3b0dfc2681eddc21684a51bd5b16",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2267af5e02fda855": {
+          "source_id": "S-2267af5e02fda855",
+          "url": "https://vincorion.com/en/power-systems/ground-based-air-defense/",
+          "content_sha256": "f372a9047738d1c38819c39a9f057e50baea6d37ca99fe070bbb9efdd66e83bd",
+          "text_sha256": "7e79e553fa657690676ce7325da38f0e107dc2cf753ccc779710d61d2b3bf831",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-3015a99a05a590d1": {
+          "source_id": "S-3015a99a05a590d1",
+          "url": "https://www.hensoldt.net/news/hensoldt-doubles-order-intake-in-the-first-half-of-2026-%E2%80%93-revenue-and-earnings-rise-significantly",
+          "content_sha256": "82e78d7b8a7db8ff65cfea53816f8cbba70970e6b9928b0195ff3aff17c6b04a",
+          "text_sha256": "c55a9136601b914e100b3f4fe48fb0234d466b484897b9f2b0b94e0fc24d0d62",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-35533464036f638e": {
+          "source_id": "S-35533464036f638e",
+          "url": "https://www.bmvg.de/de/aktuelles/weiter-tempo-bei-beschaffung-ruestungsprojekte-bewilligt-6156318",
+          "content_sha256": "0b35f914440e15622e6948a7ab771451a9d44606c037a3f4ade8bc80a79d16ad",
+          "text_sha256": "e7184ed8dae729105ee0c521e30c0ce342fc451677a2267e34de702cbbe4f006",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser. Encoding replacement detected; inspect original."
+        },
+        "S-4953b514319b9b9c": {
+          "source_id": "S-4953b514319b9b9c",
+          "url": "https://www.bmvg.de/de/presse/investitionen-in-sicherheit-verteidigungshaushalt-2026-6039980",
+          "content_sha256": "4702186dc3f075956bba9051c1d488b8fa0653da6eb90a1bf8b0db8a2468b48b",
+          "text_sha256": "aebe9b9307ed5eb02dcc250688540bf7d81ab2deaf22b2aade123ba91667a7cc",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser. Encoding replacement detected; inspect original."
+        },
+        "S-4b1b269f9d58d23c": {
+          "source_id": "S-4b1b269f9d58d23c",
+          "url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge",
+          "content_sha256": "f5aa79011ad4486e2b4d3015ddfa2ba7b88cb7be98f06c43c6c5a06931285b81",
+          "text_sha256": "7ebfae92b0c6fd399bf013609aa283ddda3e7f4ac1f0f57e6413b5ce0357f1d8",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-555547ca1efb774c": {
+          "source_id": "S-555547ca1efb774c",
+          "url": "https://vincorion.com/en/energy-for-europes-security-vincorion-at-eurosatory-2026/",
+          "content_sha256": "be1ee1acf76878e6c50c0c24a5e110591bc00136616962f2def81ad16dc0b306",
+          "text_sha256": "686a88376263b4a0f1f7bc84653dcac4a2b51ee185a571eeb7977b741735e10b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6601b3cf04dd96b0": {
+          "source_id": "S-6601b3cf04dd96b0",
+          "url": "https://asdnews.com/news/defense/2026/04/14/raytheon-deliver-patriot-interceptors-ukraine",
+          "content_sha256": "e2b8783b8e16548e84bafe7b262d5ecfe682c33a596e540d83bca9aca0036d3d",
+          "text_sha256": "a235c481cf3abf829fa3df866bdf46a3ff43f135df4806550ef6b5c19ca5308b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6986318c3c84f038": {
+          "source_id": "S-6986318c3c84f038",
+          "url": "https://esut.de/2026/07/meldungen/72572/entwurf-haushalt-2027-5554-milliarden-euro-ausgaben/",
+          "content_sha256": "3c4f3893bef8d8fda8393553ac119dc19a2976a610d4fb84690d66ddd9cc1bd1",
+          "text_sha256": "5dc72b17d0e2512174b52650bdf5dc598366c6a946c1a1cdb43d5b729a32259f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6bb78e5c6f649738": {
+          "source_id": "S-6bb78e5c6f649738",
+          "url": "https://afm.aero/airbus-2026-global-market-forecast-projects-42060-new-aircraft-demand-and-39percent-annual-traffic-growth",
+          "content_sha256": "b2cdf57325329f9dd437434a9de45f9360b0c8027b0f69424c4fd4a9960c55c6",
+          "text_sha256": "738bdfccce607222bbb797292920ec17c6021b353e754d02e3c91cb35541912f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-77254a54ce96c13c": {
+          "source_id": "S-77254a54ce96c13c",
+          "url": "https://www.nato.int/content/dam/nato/webready/documents/finance/def-exp-2026-en.pdf",
+          "content_sha256": "efd05e4a7e715b361617390016356df04af83ea6febecb9475ce173bf2cffb75",
+          "text_sha256": null,
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "PDF has no extractable text; open original PDF (OCR if needed)."
+        },
+        "S-7ec6e8876e6d48a8": {
+          "source_id": "S-7ec6e8876e6d48a8",
+          "url": "https://www.deraktionaer.de/nachricht/gnw-news-h1-2026-renk-erzielt-rekordauftragseingang-bei-ueberproportionalem-anstieg-des-bereinigten-ebit-und-unterstreicht-marktposition-jahresprognose-auf-kurs-543145.html",
+          "content_sha256": "0f53e0935c280cf9789342037adf9ad81c9c95a58456d6c46ef7118866550287",
+          "text_sha256": "db04c1a9bc330d9cadb60fcb62c2bc1acb74105a9ccd6c178b838d33815c908d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-8235dca98711f60c": {
+          "source_id": "S-8235dca98711f60c",
+          "url": "https://vincorion.com/en/vincorion-ausa-washington-2026/",
+          "content_sha256": "02477797a0631deedfadc376b9160aca5777e3a46c0fa1b08163ee7167975f25",
+          "text_sha256": "c9c944e7a473f122e264179324344d1e193f579fe6f08781311214cc9fb0a1e2",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-843d0f17aae3494b": {
+          "source_id": "S-843d0f17aae3494b",
+          "url": "https://vincorion.com/en/aircraft-systems/hoist-systems/",
+          "content_sha256": "00ce93c57bfbf0ce7f8b1bfa215c0a1a9c901042694c7040b66c4d56d2adc5d0",
+          "text_sha256": "fbde7c3c1d23be10a971f86da1a0f230c298255b7680f6b7ccdf90437d4ddd5b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-911f31a79239eaca": {
+          "source_id": "S-911f31a79239eaca",
+          "url": "https://knds.com/en/press-releases/reinforcement-of-the-bundeswehr-s-puma-fleet-rheinmetall-and-knds-deutschland-to-supply-200-infantry-fighting-vehicles-to-the-german-army-contract-value-around-4-2-billion",
+          "content_sha256": "d42d28533137da90e9013ad8a761ecbaa31ab1ae64938c97ed181a43d4679c3e",
+          "text_sha256": "81b222ebd3dc5036eabb8ba27fb57d60ccd6f3a934886b252ca3db528243e8da",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-98760dc14b59455f": {
+          "source_id": "S-98760dc14b59455f",
+          "url": "https://defence-industry-space.ec.europa.eu/node/832_en",
+          "content_sha256": "939afebc3ca961ccbda9b301916a4c8425f01142ecc11d9ef4d750a7bcc4640a",
+          "text_sha256": "6738a47e6f8acd30e228d551e6089f79fa1132f702e826db297e5727db44e94e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a492cd0df860fc7a": {
+          "source_id": "S-a492cd0df860fc7a",
+          "url": "https://vincorion.com/en/vincorion-grows-revenue-and-earnings/",
+          "content_sha256": "fb7702bd5a5212caf45eeab365d6a5f696ab03fe70f5395d99cc4b05e5f80d5d",
+          "text_sha256": "5ff467a77c0b86f86898d33696affecfde70c1095bf5c7e22b6ace6e2a64eec1",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-cc53a835b9b5e94c": {
+          "source_id": "S-cc53a835b9b5e94c",
+          "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-a-1194766",
+          "content_sha256": "89feb0163f81d9b19a96b86cc9b0b56c1bb62a6f905be6346bd538db2a52be04",
+          "text_sha256": "986e48c5d45725b576732caa4665b7b291e11b2a481e539cce139669625dede9",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-cc67e4cde6b4d5e7": {
+          "source_id": "S-cc67e4cde6b4d5e7",
+          "url": "https://defence-network.com/renk-rekordauftragseingang-im-ersten-halbjahr/",
+          "content_sha256": "621274fc0bc9be7527b5afbb715bec36c4da2d5ecdfa103402f3ba31b1a32564",
+          "text_sha256": "9c83402d41eb915cef50d5dc7c71db1876c633ba99f74919aadea7cd812b8515",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-d0a2881113c61290": {
+          "source_id": "S-d0a2881113c61290",
+          "url": "https://esut.de/2026/07/meldungen/73223/vincorion-meldet-auftraege-im-wert-von-mehr-als-100-millionen-euro/",
+          "content_sha256": "2fea030dcb74ea72f5e37fc04f84237696c1f7918a0ad80e32ebed9c1743c188",
+          "text_sha256": "ac93b4f4da16ab59c5926a2665459e180b269cf04562c341430bca9c9d38c699",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-dac611b633e8e050": {
+          "source_id": "S-dac611b633e8e050",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1205070",
+          "content_sha256": "d6e0ca80d8574156e70f8f2f92bd71b6830222bba8b0dd68d3cf4af8f38b7bd8",
+          "text_sha256": "daf61fc1cd129667b09b916050ee24d569885ef18ae7f60d7146afe1d6fa859b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-e237c20f9db90c17": {
+          "source_id": "S-e237c20f9db90c17",
+          "url": "https://www.nato.int/en/news-and-events/articles/news/2026/07/07/defence-investment-update-record-spending-in-europe-and-canada",
+          "content_sha256": "42dcead9bc1b29827e154d0a35799f32a04293c7d4c441f4a6e61e41baacd06a",
+          "text_sha256": "d0e5a845fe3a4a559466565bd09cb24e6cfbd27b650b0c7db26f03987663d21c",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-e5b3f1b606863b64": {
+          "source_id": "S-e5b3f1b606863b64",
+          "url": "https://suv.report/haushaltsausschuss-billigt-16-ruestungsvorhaben/",
+          "content_sha256": "1746b7e04f3a70a6eb99c25507c246c738413a67f9b14807d7c6656ff36340dd",
+          "text_sha256": "be6eb3436d92f275d16fa50cbb8285ad7de81a018b65ac06f495a5417c9caad7",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-ff2d8a0dfc4437ff": {
+          "source_id": "S-ff2d8a0dfc4437ff",
+          "url": "https://esut.de/2024/02/meldungen/47709/bundeswehr-beschafft-19-flugabwehrsysteme-skyranger-30-auf-boxer/",
+          "content_sha256": "9ff869a93c6de486dee180c9f58ac8cc757f9a07eda39a7e80afe04901f361a6",
+          "text_sha256": "6b1b080b43f391befc9d25923a1cac849e585f8947fb68773170d861681e0d98",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        }
+      },
+      "dependencies": {},
+      "checked_at": "2026-10-20T12:13:56+00:00",
+      "fingerprint": "7a54c30e93916ece73e1cefbbe5298057eddd58b74f1450fc3af86d24129b4e4"
+    }
+  },
+  "created_at": "2026-10-20T12:02:09+00:00",
+  "notice": "Local completion records only; content approval and visual QA remain separate.",
+  "fingerprint": "869163c7d916d764a2ec5a2e5562cae772fc3538c27adefefcc5c7516979782c"
+}

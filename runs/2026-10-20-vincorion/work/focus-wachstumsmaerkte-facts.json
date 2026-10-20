@@ -1,0 +1,1833 @@
+{
+ "schema_version": 1,
+ "mode": "facts-v2",
+ "role": "focus",
+ "focus_id": "wachstumsmaerkte",
+ "run_id": "2026-10-20-vincorion",
+ "company": "VINCORION",
+ "as_of": "2026-10-20",
+ "scope": "Fokusseite 'Wachstumsmärkte, Nachfragetreiber und Anwendungsfelder' (topic_market): neutral belegte Budget-, Programm- und Auftragsdaten für Verteidigungs- und Luftfahrtfelder, in denen mechatronische Energie-, Antriebs- und Stabilisierungssysteme eingesetzt werden; Schwerpunkt Deutschland/Europa, ohne Ableitung von Chancen. Shared limitations: Budgets sind kein Marktvolumen, Rahmenverträge keine Aufträge, Bestellungen keine Lieferungen; Unternehmensangaben sind Herstellerangaben.",
+ "status": "teilweise",
+ "claims": [
+  {
+   "id": "F_wachstumsmaerkte_1",
+   "statement": "SIPRI: Die weltweiten Militärausgaben erreichten 2025 2.887 Mrd. USD (real +2,9 % gegenüber 2024; 11. Anstieg in Folge); die globale Militärlast lag bei 2,5 % des BIP. Außerhalb der USA wuchsen die Ausgaben um 9,2 %.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-4b1b269f9d58d23c"
+   ],
+   "evidence": "Paraphrase/Auszug: 'World military expenditure reached $2887 billion in 2025, an increase of 2.9 per cent in real terms ... 2.5 per cent ... Outside the USA, total spending grew by 9.2 per cent.'",
+   "location": "Pressemitteilung 27.4.2026, Abschnitt 'Rearmament and heightened insecurity fuel widespread spending increases'",
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Zentrale Budgetkennzahl"
+  },
+  {
+   "id": "F_wachstumsmaerkte_2",
+   "statement": "SIPRI: Die Militärausgaben in Europa stiegen 2025 um 14 % auf 864 Mrd. USD und waren der Hauptbeitrag zum globalen Anstieg; die 29 europäischen NATO-Mitglieder gaben zusammen 559 Mrd. USD aus, 22 davon mindestens 2,0 % des BIP (SIPRI-Methodik). Deutschland: +24 % auf 114 Mrd. USD (2,3 % des BIP, erstmals seit 1990 über 2 %).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-4b1b269f9d58d23c"
+   ],
+   "evidence": "Auszug/Paraphrase: 'a 14 per cent rise in Europe to $864 billion ... The 29 European NATO members spent a combined total of $559 billion ... 22 of them ... at least 2.0 per cent ... Germany ... 24 per cent ... $114 billion ... 2.3 per cent of GDP'",
+   "location": "Pressemitteilung 27.4.2026, Abschnitt 'Sharp rise in European spending amid war and new NATO spending target'",
+   "uncertainty": "SIPRI-Ausgaben in konstanten USD; Methodik weicht von NATO-Definition ab.",
+   "proposed_depth": "A",
+   "depth_reason": "Zentrale Budgetkennzahl",
+   "event_date": "2026-04-27",
+   "event_status": "Veröffentlichung"
+  },
+  {
+   "id": "F_wachstumsmaerkte_3",
+   "statement": "NATO (Schätzungen, Stand 3.7.2026): Die Ausgaben für Kernverteidigung (core defence) der europäischen Verbündeten und Kanadas betrugen in Preisen und Wechselkursen von 2021 279 Mrd. USD (2014), 334 (2019), 372 (2022), 480 (2024), 571 (2025e) und 634 Mrd. USD (2026e). Die Werte für 2025 und 2026 sind Schätzungen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-77254a54ce96c13c"
+   ],
+   "evidence": "Auszug aus Grafik: 'Graph 2 - Core Defence Expenditure - Billion $ (2021 prices and exchange rates)', Balken NATO Europe and Canada: 2014 279; 2019 334; 2022 372; 2024 480; 2025e 571; 2026e 634. Fußnote: 'Figures for 2025 and 2026 are estimates.'",
+   "location": "PDF Seite 3, Graph 2 (Dokument ist Bildscan; Seite visuell gelesen)",
+   "uncertainty": "Werte aus Balkenbeschriftung der Grafik abgelesen; Schätzwerte für 2025/2026.",
+   "proposed_depth": "A",
+   "depth_reason": "Diagrammwerte",
+   "event_date": "2026-07-07",
+   "event_status": "Veröffentlichung (Schätzungen)"
+  },
+  {
+   "id": "F_wachstumsmaerkte_4",
+   "statement": "NATO (Schätzungen, Stand 3.7.2026): Der Anteil der Kernverteidigungsausgaben am BIP der europäischen Verbündeten und Kanadas stieg von 1,96 % (2024) auf 2,31 % (2025e) und 2,53 % (2026e); einschließlich verteidigungs- und sicherheitsbezogener Investitionen (je Verbündetem bei 1,5 % BIP gedeckelt) 3,76 % (2025e) bzw. 3,93 % (2026e).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-77254a54ce96c13c"
+   ],
+   "evidence": "Auszug aus Grafik 'Graph 3 - NATO Europe and Canada Core Defence Expenditure and Defence- and Security-Related Investment - % of GDP': 2024 1,96; 2025e 2,31 + 1,45 = 3,76; 2026e 2,53 + 1,40 = 3,93.",
+   "location": "PDF Seite 4, Graph 3",
+   "uncertainty": "Schätzwerte; Aggregat umfasst nur Verbündete, die Zahlen meldeten.",
+   "proposed_depth": "A",
+   "depth_reason": "Diagrammwerte"
+  },
+  {
+   "id": "F_wachstumsmaerkte_5",
+   "statement": "NATO: Beim Gipfel in Den Haag 2025 vereinbarten die Verbündeten, bis 2035 jährlich 5 % des BIP für Kernverteidigung (Richtwert 3,5 %) und verteidigungs- und sicherheitsbezogene Investitionen (Richtwert 1,5 %) aufzuwenden. Für 2026 werden 5 Verbündete bei mindestens 3,5 % Kernverteidigung und 17 Verbündete bei mindestens 1,5 % verteidigungs- und sicherheitsbezogenen Investitionen erwartet; die Kernausgaben der europäischen Verbündeten und Kanadas stiegen 2025 um mehr als 19 % gegenüber 2024.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-77254a54ce96c13c",
+    "S-e237c20f9db90c17"
+   ],
+   "evidence": "Paraphrase: 'Allies committed to invest 5% of GDP annually on core defence requirements as well as defence- and security-related investments by 2035 ... In 2026, 5 Allies are already expected to meet the 3.5% guideline ... 17 Allies ... 1.5% guideline ... more than 19% compared to 2024.'",
+   "location": "NATO-PDF Seite 2 (Executive Summary); NATO-Artikel 7.7.2026, Abschnitt zu Defence investments",
+   "uncertainty": "Zielwerte sind Absichtserklärungen, keine Haushaltsbeschlüsse.",
+   "proposed_depth": "A",
+   "depth_reason": "Zentraler Nachfragetreiber",
+   "event_date": "2026-07-07",
+   "event_status": "Veröffentlichung (Schätzungen)",
+   "evidence_items": [
+    {
+     "source_id": "S-77254a54ce96c13c",
+     "text": "Auszug: 'Allies committed to invest 5% of GDP annually on core defence requirements as well as defence- and security-related investments by 2035 ... In 2026, 5 Allies are already expected to meet the 3.5% guideline ... 17 Allies are predicted to meet the 1.5% guideline ... increased their core defence expenditure by more than 19% compared to 2024.'",
+     "mode": "Auszug",
+     "location": "PDF Seite 2, Executive Summary"
+    },
+    {
+     "source_id": "S-e237c20f9db90c17",
+     "text": "Auszug: 'In 2026, five Allies are already expected to meet the 3.5% guideline for core defence requirements and 17 Allies are predicted to meet the 1.5% guideline ... nearly 20% in 2025 compared to 2024.'",
+     "mode": "Auszug",
+     "location": "NATO-Artikel 7.7.2026, Abschnitt Defence investments"
+    }
+   ]
+  },
+  {
+   "id": "F_wachstumsmaerkte_6",
+   "statement": "Bundestag: Der Regierungsentwurf 2027 sieht für Verteidigung 139,6 Mrd. EUR vor: 109,7 Mrd. EUR im regulären Wehretat (Einzelplan 14; 2026: 82,7 Mrd. EUR) plus 29,9 Mrd. EUR aus dem Sondervermögen Bundeswehr (2026: 25,5 Mrd. EUR). Der Entwurf wurde am 9.9.2026 erstmals im Bundestag beraten.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-cc53a835b9b5e94c"
+   ],
+   "evidence": "Auszug: 'Deutschlands Verteidigungsausgaben sollen im kommenden Jahr auf 139,6 Milliarden Euro ... Einzelplan 14 ... 109,7 Milliarden Euro (2026: 82,7 Milliarden Euro) ... weitere Ausgaben von 29,9 Milliarden Euro ... Sondervermögen ... 2026 ... 25,5 Milliarden Euro'",
+   "location": "Bundestag Textarchiv KW37/2026, Abschnitte 1-2",
+   "uncertainty": "Regierungsentwurf, parlamentarisches Verfahren noch nicht abgeschlossen. Haushaltsmittel sind kein Marktvolumen.",
+   "proposed_depth": "A",
+   "depth_reason": "Zentrale Budgetkennzahl",
+   "event_date": "2026-09-09",
+   "event_status": "Erste Beratung im Bundestag"
+  },
+  {
+   "id": "F_wachstumsmaerkte_7",
+   "statement": "Bundestag: Für militärische Beschaffung sind 2027 insgesamt mehr als 60 Mrd. EUR vorgesehen (30,3 Mrd. EUR aus Einzelplan 14 plus 29,9 Mrd. EUR aus dem Sondervermögen; Summe 60,2 Mrd. EUR); für 2026 sind es 45 Mrd. EUR. Hinzu kommen 8,6 Mrd. EUR für Materialerhalt (2026: 7,7) und 2,9 Mrd. EUR für Wehrforschung, Entwicklung und Erprobung (2026: 1,6).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-cc53a835b9b5e94c"
+   ],
+   "evidence": "Auszug: 'militärische Beschaffung ... Ausgabenvolumen von insgesamt mehr als 60 Milliarden Euro. Aus dem Einzelplan 14 sollen 30,3 Milliarden Euro und aus dem Sondervermögen weitere 29,9 Milliarden Euro ... Im laufenden Jahr ... 45 Milliarden Euro'. Summe 30,3+29,9=60,2 vom Analysten gerechnet.",
+   "location": "Bundestag Textarchiv KW37/2026, Abschnitt 'Sondervermögen Bundeswehr'",
+   "uncertainty": "Planwerte (Ausgabenansatz), keine Bestellungen oder Lieferungen.",
+   "proposed_depth": "A",
+   "depth_reason": "Zentrale Budgetkennzahl"
+  },
+  {
+   "id": "F_wachstumsmaerkte_8",
+   "statement": "ESUT/Bundestag: Die Bundesregierung billigte den Entwurf des Bundeshaushalts 2027 am 6.7.2026 (Gesamtausgaben 555,4 Mrd. EUR); der Entwurf (Drucksache 21/7300) wurde dem Bundestag zugeleitet (hib vom 14.8.2026). Zur Finanzierung sind 85,4 Mrd. EUR Kreditaufnahme über die grundgesetzliche Bereichsausnahme für Verteidigung und bestimmte Sicherheitsausgaben vorgesehen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-6986318c3c84f038",
+    "S-dac611b633e8e050"
+   ],
+   "evidence": "Paraphrase: 'Die Bundesregierung hat am 6. Juli den ... Entwurf des Bundeshaushalts 2027 gebilligt ... 555,4 Milliarden Euro'; hib: 'hat dem Bundestag den Regierungsentwurf ... (21/7300) zugeleitet ... 85,4 Milliarden Euro ... Bereichsausnahme'",
+   "location": "ESUT 7.7.2026 Absatz 1; hib Kurzmeldung 14.8.2026, Absätze 1 und 4",
+   "uncertainty": "",
+   "event_date": "2026-07-06",
+   "event_status": "Kabinettsbeschluss (Entwurf)",
+   "evidence_items": [
+    {
+     "source_id": "S-6986318c3c84f038",
+     "text": "Paraphrase: Bundesregierung billigte am 6. Juli den Entwurf des Bundeshaushalts 2027 mit Ausgaben von 555,4 Mrd. EUR.",
+     "mode": "Paraphrase",
+     "location": "ESUT 7.7.2026, Absatz 1"
+    },
+    {
+     "source_id": "S-dac611b633e8e050",
+     "text": "Auszug/Paraphrase: Regierungsentwurf (21/7300) dem Bundestag zugeleitet; 555,4 Mrd. EUR Kernhaushalt; 85,4 Mrd. EUR Kreditaufnahme über die grundgesetzliche Bereichsausnahme insbesondere für Verteidigung; Verteidigungsetat von 82,7 auf 109,8 Mrd. EUR.",
+     "mode": "Paraphrase",
+     "location": "hib Kurzmeldung 14.8.2026, Absätze 1, 3 und 4"
+    }
+   ]
+  },
+  {
+   "id": "F_wachstumsmaerkte_9",
+   "statement": "Europäische Kommission: SAFE (Security Action for Europe) ist ein EU-Finanzierungsinstrument mit einem Kreditvolumen von 150 Mrd. EUR; es gewährt Mitgliedstaaten langfristige Darlehen für Verteidigungsinvestitionen. Projekte beruhen in der Regel auf gemeinsamer Beschaffung von mindestens zwei Ländern.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-98760dc14b59455f"
+   ],
+   "evidence": "Auszug: 'EU financial instrument providing long-maturity loans to Member States ... €150 bn loan envelope ... projects are generally based on common procurement involving at least two countries'",
+   "location": "Kommissionsseite SAFE, Abschnitte 'What is SAFE?' und 'How SAFE works?'",
+   "uncertainty": "Die Seite nennt den Rahmen, nicht die tatsächlich abgerufenen oder je Land zugeteilten Darlehen; Abrufstand nicht geprüft.",
+   "proposed_depth": "A",
+   "depth_reason": "Finanzierungsrahmen, Rahmenhöchstwert-Charakter"
+  },
+  {
+   "id": "F_wachstumsmaerkte_10",
+   "statement": "KNDS/Rheinmetall: Das BAAINBw unterzeichnete am 19.12.2025 mit dem Gemeinschaftsunternehmen PSM (Rheinmetall/KNDS) eine Änderung des bestehenden Rahmenvertrags über 200 weitere Schützenpanzer Puma; Gesamtvolumen rund 4,2 Mrd. EUR brutto (je 2,1 Mrd. EUR für KNDS und Rheinmetall Landsysteme), rechtswirksam ab Januar 2026, erste Fahrzeuge für Mitte 2028 vorgesehen. Eine Vertragsänderung für den Bauzustand S2 war für Mitte 2026 geplant.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-911f31a79239eaca"
+   ],
+   "evidence": "Auszug/Paraphrase: 'amendment to the existing framework contract ... 200 PUMA ... total gross volume ... €4,2 billion ... legal effect in January 2026 ... first vehicles ... mid-2028 ... contract amendment for the S2 construction status is planned for mid-2026'",
+   "location": "Pressemitteilung 19.12.2025, Absätze 2-4",
+   "uncertainty": "Gemeinsame Herstellermitteilung; Abschluss der S2-Änderung nicht belegt. Bestellung, keine Lieferung.",
+   "proposed_depth": "A",
+   "depth_reason": "Auftragswert/Lieferstatus",
+   "event_date": "2025-12-19",
+   "event_status": "Vertragsunterzeichnung (Bestellung, Lieferung ab 2028 geplant)"
+  },
+  {
+   "id": "F_wachstumsmaerkte_11",
+   "statement": "BMVg: Der Haushaltsausschuss beschloss den Verteidigungshaushalt 2026 einschließlich Wirtschaftsplan des Sondervermögens mit einem Gesamtvolumen von mehr als 108 Mrd. EUR. Genannte Schwerpunkte: höhere Bestände an gepanzerten Fahrzeugen (Puma, Schakal, Boxer) und Unterstützungsfahrzeugen sowie moderne Drohnensysteme; die Umschichtungen berücksichtigen laut BMVg 'angepasste Zeitlinien, Produktionskapazitäten der Industrie und Liefererwartungen'.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-4953b514319b9b9c"
+   ],
+   "evidence": "Auszug: 'Gesamtvolumen in Höhe von mehr als 108 Milliarden Euro ... Bestände an gepanzerten Fahrzeugen ... PUMA ... SCHAKAL ... BOXER ... Drohnensysteme ... angepasste Zeitlinien, Produktionskapazitäten der Industrie und Liefererwartungen'",
+   "location": "BMVg-Meldung, Absätze 1-4",
+   "uncertainty": "Beschlussdatum auf der Seite nicht im geöffneten Text erkennbar.",
+   "proposed_depth": "A",
+   "depth_reason": "Beschaffungsschwerpunkte"
+  },
+  {
+   "id": "F_wachstumsmaerkte_12",
+   "statement": "HENSOLDT (Unternehmensangabe): Auftragseingang im 1. Halbjahr 2026 2.812 Mio. EUR (Vorjahr 1.405 Mio. EUR), Auftragsbestand 10.356 Mio. EUR (Vorjahr 7.070), Umsatz 1.167 Mio. EUR (+23,6 %), Book-to-Bill 2,4. Im Segment Optronics stieg der Auftragseingang auf 971 Mio. EUR (Vorjahr 164), getrieben von Großaufträgen zur Ausstattung von Puma und Schakal mit digitaler Optronik.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-3015a99a05a590d1"
+   ],
+   "evidence": "Auszug: 'order intake of 2,812 million euros ... order backlog ... 10,356 million euros ... Revenue rose by 23.6% to 1,167 million euros ... book-to-bill ratio ... 2.4x ... Optronics ... 971 million euros ... Puma infantry fighting vehicle and the Schakal ... digital optronics'",
+   "location": "Pressemitteilung 31.7.2026, Absätze 1-2 und Segmentabschnitt",
+   "uncertainty": "Konzernangaben, Auftragseingang nicht gleich Umsatz.",
+   "proposed_depth": "A",
+   "depth_reason": "Kennzahlen/Auftragslage",
+   "event_date": "2026-07-31",
+   "event_status": "Veröffentlichung Halbjahreszahlen"
+  },
+  {
+   "id": "F_wachstumsmaerkte_13",
+   "statement": "RENK (Unternehmensangabe): Auftragseingang im 1. Halbjahr 2026 rund 1,2 Mrd. EUR (Vorjahr 921,2 Mio. EUR), Auftragsbestand 7,4 Mrd. EUR (31.12.2025: 6,7 Mrd.), Umsatz 637,2 Mio. EUR (+2,7 %), Book-to-Bill 1,9. Die Division Vehicle Mobility Solutions steigerte den Auftragseingang um 42,6 % auf 970,4 Mio. EUR. Der US-Rahmenvertrag THOR IV (Getriebe HMPT 800) hat ein Volumen von bis zu 691 Mio. USD, davon wurden im 2. Quartal rund 121 Mio. EUR als Auftragseingang (vertragliche Mindestabnahme) erfasst.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-7ec6e8876e6d48a8",
+    "S-cc67e4cde6b4d5e7"
+   ],
+   "evidence": "Auszug/Paraphrase: 'Auftragseingang ... rund 1,2 Mrd. EUR (H1 2025: 921,2 Mio. EUR) ... Auftragsbestand ... 7,4 Mrd. EUR ... Umsatz ... 637,2 Mio. EUR ... VMS ... 970,4 Mio. Euro ... THOR-IV ... bis zu 691 Mio. USD ... rund 121 Mio. Euro ... Mindestabnahmemengen'",
+   "location": "GlobeNewswire-Wiedergabe 6.8.2026, Meldungstext; Gegenbeleg defence-network.com, Absätze 1 und 4-6",
+   "uncertainty": "Originalseite des Unternehmens nicht geöffnet; Wiedergabe über Newswire und Fachmedium.",
+   "proposed_depth": "A",
+   "depth_reason": "Kennzahlen; Rahmenvertrag vs. Auftragseingang",
+   "event_date": "2026-08-06",
+   "event_status": "Veröffentlichung Halbjahreszahlen",
+   "evidence_items": [
+    {
+     "source_id": "S-7ec6e8876e6d48a8",
+     "text": "Auszug: Auftragseingang rund 1,2 Mrd. EUR (H1 2025: 921,2 Mio. EUR), Auftragsbestand 7,4 Mrd. EUR, Umsatz 637,2 Mio. EUR (+2,7 %), Book-to-Bill 1,9x.",
+     "mode": "Auszug",
+     "location": "GlobeNewswire-Wiedergabe 6.8.2026, Kopfzeilen und Meldungstext"
+    },
+    {
+     "source_id": "S-cc67e4cde6b4d5e7",
+     "text": "Auszug: VMS Auftragseingang +42,6 % auf 970,4 Mio. EUR; THOR-IV-Rahmenvertrag bis zu 691 Mio. USD, davon rund 121 Mio. EUR entsprechend den vertraglichen Mindestabnahmemengen als Auftragseingang erfasst.",
+     "mode": "Auszug",
+     "location": "defence-network.com, Absätze 1 und 4-5"
+    }
+   ]
+  },
+  {
+   "id": "F_wachstumsmaerkte_14",
+   "statement": "VINCORION (Unternehmensangabe): Umsatz im 1. Halbjahr 2026 150,2 Mio. EUR (Vorjahr 105,5; +42,4 %), Auftragseingang 330,2 Mio. EUR (Vorjahr 72,7), bereinigtes EBIT 28,4 Mio. EUR (Marge 18,9 %). Für 2026 wurde zunächst ein Konzernumsatz von 280 bis 320 Mio. EUR prognostiziert.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-a492cd0df860fc7a"
+   ],
+   "evidence": "Auszug: 'growing revenue by 42.4% from EUR 105.5 million ... to EUR 150.2 million ... adjusted EBIT ... EUR 28.4 million ... 18.9% ... Order entry ... 330.2 ... 72.7 ... guided Group revenue of between EUR 280 million and EUR 320 million'",
+   "location": "Pressemitteilung 13.8.2026, Absatz 1, Abschnitt 'Key Group figures'",
+   "uncertainty": "Auftragseingang nicht gleich Umsatz.",
+   "proposed_depth": "A",
+   "depth_reason": "Kennzahlen",
+   "event_date": "2026-08-13",
+   "event_status": "Veröffentlichung Halbjahreszahlen"
+  },
+  {
+   "id": "F_wachstumsmaerkte_15",
+   "statement": "VINCORION (Unternehmensangabe): Segment Vehicle Systems Umsatz im 1. Halbjahr 2026 72,6 Mio. EUR (Vorjahr 42,4; +72,0 %), laut Unternehmen vor allem durch Nachfrage nach Stabilisierungsprodukten, insbesondere großvolumige Neuaufträge für gepanzerte Plattformen. Power Systems 46,2 Mio. EUR (Vorjahr 32,7; +41,1 %), Systeme für bodengebundene Luftverteidigung besonders gefragt. Aviation 33,2 Mio. EUR (Vorjahr 32,7), laut Unternehmen durch den schwächeren US-Dollar belastet.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-a492cd0df860fc7a"
+   ],
+   "evidence": "Auszug: 'Vehicle Systems ... EUR 42.4 million to EUR 72.6 million ... large-volume new orders for armored platforms ... Power Systems ... EUR 32.7 million to EUR 46.2 million ... Systems for ground-based air defense were in particularly high demand ... Aviation ... EUR 33.2 million ... EUR 32.7 million ... foreign exchange headwinds'",
+   "location": "Pressemitteilung 13.8.2026, Abschnitte Vehicle Systems, Power Systems, Aviation",
+   "uncertainty": "Zuschreibung der Ursachen stammt vom Unternehmen.",
+   "proposed_depth": "A",
+   "depth_reason": "Segmentkennzahlen"
+  },
+  {
+   "id": "F_wachstumsmaerkte_16",
+   "statement": "VINCORION (Ad-hoc-Mitteilung, vorläufige Zahlen vom 7.10.2026): Umsatz im 3. Quartal 2026 87,5 Mio. EUR (Vorjahr 62,6; +39,8 %), in den ersten neun Monaten 237,7 Mio. EUR (Vorjahr 168,1; +41,4 %); die Umsatzprognose 2026 wurde auf 323 bis 333 Mio. EUR angehoben (zuvor 280 bis 320 Mio. EUR).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-13147943f3042508"
+   ],
+   "evidence": "Auszug: 'consolidated revenue of €87.5 million in the third quarter of 2026 ... 39.8% ... first nine months ... increased by 41.4% from €168.1 million to €237.7 million ... €323 million to €333 million (originally €280 million to €320 million)'",
+   "location": "Ad-hoc-Mitteilung 7.10.2026, Absatz 1",
+   "uncertainty": "Vorläufige Zahlen; Veröffentlichung der Neunmonatsergebnisse für 11.11.2026 angekündigt.",
+   "proposed_depth": "A",
+   "depth_reason": "Aktuelle Kennzahlen",
+   "event_date": "2026-10-07",
+   "event_status": "Ad-hoc-Mitteilung (vorläufig)"
+  },
+  {
+   "id": "F_wachstumsmaerkte_17",
+   "statement": "ESUT (gibt VINCORION-Angaben wieder): VINCORION verbuchte im Juni 2026 Auftragseingänge von mehr als 100 Mio. EUR, darunter 20 Mio. EUR für Stromerzeuger in bodengebundenen Luftverteidigungssystemen und 54 Mio. EUR für Stabilisierungssysteme gepanzerter Fahrzeuge; laut Unternehmen wurde damit ein wesentlicher Teil des bisherigen 'Soft Order Book' in feste Aufträge überführt.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-d0a2881113c61290"
+   ],
+   "evidence": "Auszug: 'Auftragseingänge von mehr als 100 Millionen Euro ... Vertrag über 20 Millionen Euro für Stromerzeuger ... bodengebundenen Luftverteidigungssystemen ... 54 Millionen Euro für Stabilisierungssysteme gepanzerter Fahrzeuge ... Soft Order Books in feste Aufträge'",
+   "location": "ESUT-Meldung 30.7.2026, Absätze 1-3",
+   "uncertainty": "Auftragseingang, keine Lieferung; Endkunden/Plattformen nicht genannt. Ereignis im Juni 2026 (kein Tagesdatum), Meldung vom 30.7.2026.",
+   "proposed_depth": "A",
+   "depth_reason": "Auftragsstatus",
+   "event_date": "2026-07-30",
+   "event_status": "Meldung über Auftragseingang (Juni 2026)"
+  },
+  {
+   "id": "F_wachstumsmaerkte_18",
+   "statement": "VINCORION (Webseite): Die Stromversorgungssysteme des Unternehmens versorgen unter anderem die bodengebundenen Luftverteidigungssysteme PATRIOT (seit mehr als 40 Jahren; Radar, Gefechtsstand, Werfer, Kommunikation) und IRIS-T SLM. Im Auftrag der NATO Support and Procurement Agency (NSPA) entwickelt VINCORION Stromversorgungssysteme der nächsten Generation mit Hybridarchitektur und Energiespeichern für die NATO-Luftverteidigung.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2267af5e02fda855"
+   ],
+   "evidence": "Auszug/Paraphrase: 'proven themselves ... most notably in the PATRIOT and IRIS-T SLM air defense systems ... used in the PATRIOT ... for more than 40 years ... developing our next-generation power supply systems on behalf of the NATO Support and Procurement Agency (NSPA)'",
+   "location": "Produktseite Ground-Based Air Defense, Abschnitte 'Ready for use' und 'Next-Gen Power Supply Systems'",
+   "uncertainty": "Herstellerangabe; Vertragswert und Umfang des NSPA-Auftrags nicht genannt.",
+   "proposed_depth": "A",
+   "depth_reason": "Anwendungsfeld/Auftraggeber"
+  },
+  {
+   "id": "F_wachstumsmaerkte_19",
+   "statement": "VINCORION (Webseite): Das Stabilisierungssystem GTD chaserV für Waffen und Geschütztürme wird nach Unternehmensangabe in Leopard 2, Puma und Panzerhaubitze 2000 eingesetzt; als künftige Plattform wird der Leopard 2 A-RC 3.0 genannt.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-01bdf37a77a6b3df"
+   ],
+   "evidence": "Auszug: 'Deployed in Leopard, Puma, and Panzerhaubitze 2000 ... Future models such as the Leopard 2 A-RC 3.0 will also benefit from this modular system'",
+   "location": "Produktseite Stabilization Systems, Abschnitte 'Mission in Focus' und 'Maximum Probability of the First Hit'",
+   "uncertainty": "Herstellerangabe.",
+   "proposed_depth": "A",
+   "depth_reason": "Anwendungsfeld"
+  },
+  {
+   "id": "F_wachstumsmaerkte_20",
+   "statement": "VINCORION (Unternehmensmitteilung 15.6.2026): rund 900 Vollzeitbeschäftigte an drei deutschen Standorten und einer Niederlassung in El Paso (Texas), Umsatz 2025 rund 240 Mio. EUR. Wedel: Stabilisierungssysteme für gepanzerte Fahrzeuge sowie zivile Luftfahrtprodukte (Heizelemente für Passagierflugzeuge, Rettungswinden für Hubschrauber); Altenstadt: Generatoren für Luftverteidigungssysteme wie Patriot und IRIS-T; Essen: Generatoren für gepanzerte Fahrzeuge.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-555547ca1efb774c"
+   ],
+   "evidence": "Auszug/Paraphrase: 'approximately 900 full-time employees at three German locations and a branch in El Paso, Texas ... revenue of around 240 million euros in 2025 ... Wedel ... Altenstadt ... Essen'",
+   "location": "Pressemitteilung 15.6.2026, Absätze 3 und 'Three locations'",
+   "uncertainty": "Herstellerangabe.",
+   "proposed_depth": "B",
+   "depth_reason": "Hintergrund Anwendungsfelder"
+  },
+  {
+   "id": "F_wachstumsmaerkte_21",
+   "statement": "VINCORION (Unternehmensmitteilung 14.10.2026): Nach Unternehmensdarstellung werden Landfahrzeuge zunehmend elektrifiziert und digital vernetzt, Sensoren, Führungs- und Kommunikationssysteme benötigen mehr und stabilere Energie, und die Luftverteidigung gewinne wegen Bedrohungen durch Drohnen und Flugkörper an Bedeutung. VINCORION hat nach eigenen Angaben Anforderungen für künftige Batteriearchitekturen analysiert und stellt sie auf der AUSA vor.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-8235dca98711f60c"
+   ],
+   "evidence": "Auszug/Paraphrase: 'Land vehicles are becoming increasingly electrified and digitally networked. Sensors, command-and-control systems, and communications equipment require more power ... air defense is becoming increasingly important in response to emerging threats such as drones and missiles ... VINCORION has analyzed and assessed market requirements ... battery architectures'",
+   "location": "Pressemitteilung 14.10.2026, Abschnitt 'Shared Challenges on Both Sides of the Atlantic' und 'One Battery Architecture'",
+   "uncertainty": "Marktaussagen sind Herstellerdarstellung ohne quantitativen Beleg.",
+   "proposed_depth": "B",
+   "depth_reason": "Nachfragetreiber (Herstellerangabe)"
+  },
+  {
+   "id": "F_wachstumsmaerkte_22",
+   "statement": "VINCORION (Webseite): Elektrische Rettungswinde ERH premierV für zivile Rettungseinsätze (Hebekraft bis 303 kg, 90 m Seil, bis 2 m/s); genannte Anwendungen: Katastrophenhilfe, Rettung auf See und im Gebirge, Stadtrettung, Offshore/Windkraft. Über 50 Jahre Erfahrung mit Militärwinden (von Bell UH-1D bis NH90).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-843d0f17aae3494b"
+   ],
+   "evidence": "Auszug/Paraphrase: 'With over 50 years of experience developing hoists for military use ... Bell UH-1D to the NH90 ... ERH premierV ... civilian sector ... lifting up to 303 kilograms ... 90 meters ... two meters per second ... Off-Shore & Wind Power'",
+   "location": "Produktseite Hoist Systems, Einleitung und Abschnitte zu Anwendungen",
+   "uncertainty": "Herstellerangabe.",
+   "proposed_depth": "B",
+   "depth_reason": "Anwendungsfeld Luftfahrt"
+  },
+  {
+   "id": "F_wachstumsmaerkte_23",
+   "statement": "BMVg: Der Haushaltsausschuss billigte am 23.9.2026 den zweiten Änderungsvertrag zur Entwicklung, Herstellung und Lieferung eines Luftverteidigungssystems für den Nah- und Nächstbereichsschutz; u. a. werden die Fahrmodule der Feuerleit- und Flugabwehrraketenpanzer an das Boxer-Fahrmodul B0 angepasst und ein Trainer als Containerlösung entwickelt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-35533464036f638e"
+   ],
+   "evidence": "Auszug/Paraphrase: 'Luftverteidigungssystem Nah- und Nächstbereichsschutz ... zweiten Änderungsvertrag ... Fahrmodule von Feuerleit- und Flugabwehrraketenpanzern an das ... B0-Fahrmodul des Boxer anzupassen ... Trainer ... als Containerlösung'",
+   "location": "BMVg-Meldung zur Bundestags-/Haushaltsausschusssitzung vom 23.9.2026, Abschnitt 'Luftverteidigungssystem Nah- und Nächstbereichsschutz'",
+   "uncertainty": "Vertragswert im geöffneten Text nicht genannt. Beschluss/Änderungsvertrag, keine Lieferung.",
+   "proposed_depth": "A",
+   "depth_reason": "Programmstatus",
+   "event_date": "2026-09-23",
+   "event_status": "Haushaltsausschuss-Zustimmung zu Änderungsvertrag"
+  },
+  {
+   "id": "F_wachstumsmaerkte_24",
+   "statement": "BMVg: Der Haushaltsausschuss stimmte am 23.9.2026 der Beauftragung einer maritimen Anpassung des IRIS-T-Systems für die Fregatten der Klasse F125 zu; als Begründung nennt das BMVg die aktuelle Bedrohungslage im Bereich Luftverteidigung. Zudem wurden zwei weitere Lose des Luft-Luft-Lenkflugkörpers AIM-120 gebilligt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-35533464036f638e"
+   ],
+   "evidence": "Auszug/Paraphrase: 'Die Fähigkeiten zur Selbstverteidigung der Fregatten der Klasse F125 müssen wegen der aktuellen Bedrohungslage im Bereich der Luftverteidigung erweitert werden ... Zustimmung zur Beauftragung einer maritimen Anpassung des IRIS-T-Systems'",
+   "location": "BMVg-Meldung, Absätze 2-4",
+   "uncertainty": "Entwicklung/Anpassung (maritim), betrifft nicht bodengebundene Systeme; Wert nicht genannt.",
+   "proposed_depth": "A",
+   "depth_reason": "Programmstatus",
+   "event_date": "2026-09-23",
+   "event_status": "Haushaltsausschuss-Zustimmung zur Beauftragung"
+  },
+  {
+   "id": "F_wachstumsmaerkte_25",
+   "statement": "ESUT: Der Haushaltsausschuss billigte am 21.2.2024 die Finanzierung von 19 Flugabwehrkanonenpanzern Skyranger 30 auf Boxer (Vorlagen zu Skyranger und Bekleidung zusammen 2,85 Mrd. EUR).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-ff2d8a0dfc4437ff"
+   ],
+   "evidence": "Auszug: 'billigte der Haushaltsausschuss ... die Finanzierung von 19 Flugabwehrkanonenpanzern Skyranger 30 ... Skyranger und Bekleidung im Gesamtwert von 2,85 Milliarden Euro'",
+   "location": "ESUT 2024, Absätze 1-2",
+   "uncertainty": "Der Betrag gilt für Skyranger und Bekleidung zusammen; Skyranger-Anteil hier nicht separat beziffert.",
+   "proposed_depth": "A",
+   "depth_reason": "Programmstatus",
+   "event_date": "2024-02-21",
+   "event_status": "Haushaltsausschuss-Zustimmung (Bestellung 2024)"
+  },
+  {
+   "id": "F_wachstumsmaerkte_26",
+   "statement": "Janes (Konferenzbericht, 26.1.2026): Der Skyranger 30 der Bundeswehr soll 2027 die Anfangsbefähigung (IOC) und 2029 die volle Einsatzbereitschaft (FOC) erreichen; Serienlieferungen sind überwiegend für 2027 und Anfang 2028 geplant; geplant ist u. a. der Einsatz zum Schutz der Panzerbrigade 45 in Litauen. Am 5.11.2025 billigte der Haushaltsausschuss Entwicklung, Produktion und Beschaffung der Small Anti Drone Missile (SADM).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-0d749a7e724be027"
+   ],
+   "evidence": "Paraphrase: 'initial operational capability in 2027 and full operational capability in 2029 ... Serial deliveries are planned mainly for 2027 and the beginning of 2028 ... Lithuania ... Panzerbrigade 45 ... On 5 November 2025 ... budget committee had approved ... Small Anti Drone Missile'",
+   "location": "Janes-Artikel 26.1.2026, Absätze 1-5",
+   "uncertainty": "Berichtet unter Chatham-House-Regel von einer Konferenz; Zeitplan unterliegt Änderungen.",
+   "proposed_depth": "A",
+   "depth_reason": "Lieferstatus"
+  },
+  {
+   "id": "F_wachstumsmaerkte_27",
+   "statement": "Raytheon (Wiedergabe bei ASDNews, 14.4.2026): Raytheon unterzeichnete einen Vertrag über 3,7 Mrd. USD zur Lieferung von Patriot-GEM-T-Abfangflugkörpern an die Ukraine (Direktverkauf); die Fertigung in Schrobenhausen (COMLOG, Gemeinschaftsunternehmen von Raytheon und MBDA Deutschland) soll dabei eine zentrale Rolle spielen. Laut Raytheon ist Patriot die Grundlage der Luftverteidigung von 19 Ländern.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-6601b3cf04dd96b0"
+   ],
+   "evidence": "Auszug: 'signed a contract for $3.7 billion to supply Patriot GEM-T interceptors for Ukraine ... Schrobenhausen, Germany ... COMLOG ... Patriot is the foundation of air defense for 19 countries'",
+   "location": "Meldung 14.4.2026, Absätze 1-2 und 'About Patriot'",
+   "uncertainty": "Betrifft Abfangflugkörper, nicht Feuereinheiten oder deren Stromversorgung. Außerhalb des Sechsmonatsfensters.",
+   "proposed_depth": "A",
+   "depth_reason": "Auftragswert; Nachfrage Patriot"
+  },
+  {
+   "id": "F_wachstumsmaerkte_28",
+   "statement": "suv.report: Der Haushaltsausschuss des Bundestags billigte am 8.7.2026 in seiner letzten Sitzung vor der Sommerpause 16 sogenannte 25-Millionen-Euro-Vorlagen mit einem Gesamtwert von mehr als 9,5 Mrd. EUR (größte Projekte: vier U-Jagd-Fregatten MEKO A-200 DEU, ein Hochenergie-Laserwaffensystem). Vorhaben oberhalb dieser Wertgrenze muss der Bundestag einzeln genehmigen; 2026 waren bis dahin bereits 44 Vorlagen bewilligt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-e5b3f1b606863b64"
+   ],
+   "evidence": "Auszug: 'am 8. Juli 2026 stimmte das Gremium 16 sogenannten 25-Millionen-Euro-Vorlagen zu ... über 9,5 Milliarden Euro ... In diesem Jahr wurden auf diesem Weg bereits 44 Vorlagen bewilligt'",
+   "location": "suv.report 9.7.2026, Absätze 1-3",
+   "uncertainty": "Fachmedium; Primärbeleg (Bundestag/BMVg) für diese Sitzung nicht geöffnet. Die Projekte betreffen überwiegend Marine/Logistik/IT.",
+   "proposed_depth": "A",
+   "depth_reason": "Beschaffungsvolumen",
+   "event_date": "2026-07-08",
+   "event_status": "Haushaltsausschuss-Zustimmung"
+  },
+  {
+   "id": "F_wachstumsmaerkte_29",
+   "statement": "afm.aero (gibt Airbus-Prognose wieder): Airbus erwartet im Global Market Forecast 2026-2045 einen Bedarf von 42.060 neuen Flugzeugen über 20 Jahre (19.820 Ersatz, 22.240 Wachstum; 81 % Single-Aisle) und ein jährliches Passagierwachstum von 3,9 %.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-6bb78e5c6f649738"
+   ],
+   "evidence": "Auszug: 'projecting demand for 42,060 new aircraft over the next 20 years — comprising 19,820 replacements and 22,240 for growth ... passenger traffic ... 3.9% annually ... 81% will be single-aisle'",
+   "location": "afm.aero, Meldungstext Absätze 1-3",
+   "uncertainty": "Herstellerprognose; Originaldokument von Airbus (Zugriff blockiert) nicht geöffnet. Keine Marktgröße für VINCORION-Produktklassen.",
+   "proposed_depth": "B",
+   "depth_reason": "Hintergrund zivile Luftfahrt"
+  },
+  {
+   "id": "F_wachstumsmaerkte_30",
+   "statement": "BMVg/suv.report: Verteidigungsvorhaben mit einem Vertragswert über 25 Mio. EUR benötigen die Einzelzustimmung des Haushaltsausschusses (25-Millionen-Euro-Vorlage); Rahmenvereinbarungen können Festbeauftragungen und Optionen enthalten, deren Abruf eine eigene Vorlage erfordern kann (Beispiel MEKO A-200: Festabruf von vier Schiffen, Option auf vier weitere).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-e5b3f1b606863b64"
+   ],
+   "evidence": "Auszug/Paraphrase: 'Vorhaben dieser Kategorie überschreiten die Wertgrenze, ab der der Bundestag Beschaffungen einzeln genehmigen muss ... vier Schiffe werden über einen Festabruf unmittelbar bestellt; hinzu kommt eine Option auf vier weitere Einheiten, deren Auslösung eine separate 25-Millionen-Euro-Vorlage erfordert'",
+   "location": "suv.report 9.7.2026, Absätze 2-3",
+   "uncertainty": "Beispiel aus dem Marinebereich.",
+   "proposed_depth": "B",
+   "depth_reason": "Begriffserklärung"
+  }
+ ],
+ "source_proposals": [
+  {
+   "id": "S-4b1b269f9d58d23c",
+   "name": "SIPRI",
+   "title": "Global military spending rise continues as European and Asian expenditures surge (Pressemitteilung)",
+   "url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge",
+   "published_date": "2026-04-27",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Forschungsinstitut, Primärquelle"
+  },
+  {
+   "id": "S-77254a54ce96c13c",
+   "name": "NATO",
+   "title": "Defence Investment of NATO Countries (2014-2026), Pressemitteilung mit Tabellen (PDF, Bildscan, Seiten visuell gelesen)",
+   "url": "https://www.nato.int/content/dam/nato/webready/documents/finance/def-exp-2026-en.pdf",
+   "published_date": "2026-07-07",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Internationale Organisation, Primärquelle"
+  },
+  {
+   "id": "S-e237c20f9db90c17",
+   "name": "NATO",
+   "title": "Defence Investment Update: Record Spending in Europe and Canada",
+   "url": "https://www.nato.int/en/news-and-events/articles/news/2026/07/07/defence-investment-update-record-spending-in-europe-and-canada",
+   "published_date": "2026-07-07",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Internationale Organisation, Primärquelle"
+  },
+  {
+   "id": "S-dac611b633e8e050",
+   "name": "Deutscher Bundestag (hib)",
+   "title": "Haushaltsentwurf 2027 zugeleitet",
+   "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1205070",
+   "published_date": "2026-08-14",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Parlament, Primärquelle"
+  },
+  {
+   "id": "S-cc53a835b9b5e94c",
+   "name": "Deutscher Bundestag",
+   "title": "Deutlicher Anstieg bei den Verteidigungsausgaben (Textarchiv, erste Beratung 9.9.2026)",
+   "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-a-1194766",
+   "published_date": "2026-09-09",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Parlament, Primärquelle"
+  },
+  {
+   "id": "S-6986318c3c84f038",
+   "name": "ESUT (Mittler Report)",
+   "title": "Entwurf Haushalt 2027: 555,4 Milliarden Euro Ausgaben - 109,7 Milliarden Euro für Verteidigung",
+   "url": "https://esut.de/2026/07/meldungen/72572/entwurf-haushalt-2027-5554-milliarden-euro-ausgaben/",
+   "published_date": "2026-07-07",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-98760dc14b59455f",
+   "name": "Europäische Kommission",
+   "title": "SAFE | Security Action for Europe",
+   "url": "https://defence-industry-space.ec.europa.eu/node/832_en",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "EU-Institution, Primärquelle"
+  },
+  {
+   "id": "S-35533464036f638e",
+   "name": "Bundesministerium der Verteidigung",
+   "title": "Lenkflugkörper, Funksysteme, Luftverteidigung: Weiter hohes Tempo bei Rüstung (Bundestag billigte am 23.9.2026)",
+   "url": "https://www.bmvg.de/de/aktuelles/weiter-tempo-bei-beschaffung-ruestungsprojekte-bewilligt-6156318",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Ministerium, Primärquelle"
+  },
+  {
+   "id": "S-4953b514319b9b9c",
+   "name": "Bundesministerium der Verteidigung",
+   "title": "Investitionen in unsere Sicherheit: Verteidigungshaushalt 2026",
+   "url": "https://www.bmvg.de/de/presse/investitionen-in-sicherheit-verteidigungshaushalt-2026-6039980",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Ministerium, Primärquelle"
+  },
+  {
+   "id": "S-e5b3f1b606863b64",
+   "name": "Sicherheit & Verteidigung (suv.report)",
+   "title": "Haushaltsausschuss billigt 16 Rüstungsvorhaben",
+   "url": "https://suv.report/haushaltsausschuss-billigt-16-ruestungsvorhaben/",
+   "published_date": "2026-07-09",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-911f31a79239eaca",
+   "name": "KNDS / Rheinmetall",
+   "title": "Reinforcement of the Bundeswehr's PUMA fleet: 200 infantry fighting vehicles, contract value around EUR 4.2 billion",
+   "url": "https://knds.com/en/press-releases/reinforcement-of-the-bundeswehr-s-puma-fleet-rheinmetall-and-knds-deutschland-to-supply-200-infantry-fighting-vehicles-to-the-german-army-contract-value-around-4-2-billion",
+   "published_date": "2025-12-19",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmensmitteilung"
+  },
+  {
+   "id": "S-3015a99a05a590d1",
+   "name": "HENSOLDT",
+   "title": "HENSOLDT doubles order intake in the first half of 2026",
+   "url": "https://www.hensoldt.net/news/hensoldt-doubles-order-intake-in-the-first-half-of-2026-%E2%80%93-revenue-and-earnings-rise-significantly",
+   "published_date": "2026-07-31",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmensmitteilung"
+  },
+  {
+   "id": "S-7ec6e8876e6d48a8",
+   "name": "RENK Group (GlobeNewswire-Wiedergabe bei DER AKTIONÄR)",
+   "title": "H1 2026: RENK erzielt Rekordauftragseingang",
+   "url": "https://www.deraktionaer.de/nachricht/gnw-news-h1-2026-renk-erzielt-rekordauftragseingang-bei-ueberproportionalem-anstieg-des-bereinigten-ebit-und-unterstreicht-marktposition-jahresprognose-auf-kurs-543145.html",
+   "published_date": "2026-08-06",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmensmitteilung (Wiedergabe)"
+  },
+  {
+   "id": "S-cc67e4cde6b4d5e7",
+   "name": "defence-network.com",
+   "title": "RENK erzielt Rekordauftragseingang im ersten Halbjahr",
+   "url": "https://defence-network.com/renk-rekordauftragseingang-im-ersten-halbjahr/",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-a492cd0df860fc7a",
+   "name": "VINCORION",
+   "title": "VINCORION grows revenue and earnings (Halbjahr 2026)",
+   "url": "https://vincorion.com/en/vincorion-grows-revenue-and-earnings/",
+   "published_date": "2026-08-13",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmensmitteilung"
+  },
+  {
+   "id": "S-13147943f3042508",
+   "name": "VINCORION (EQS Ad-hoc)",
+   "title": "VINCORION SE reports 41% higher revenue for the first 9 months of 2026; Full-Year Guidance raised",
+   "url": "https://www.eqs-news.com/news/ad-hoc/vincorion-se-vincorion-se-reports-41-higher-revenue-for-the-first-9-months-of-2026-compared-to-the-same-period-last-year-full-year-guidance-raised/1e1dc173-dcc2-4702-88cb-fff738bedbe7_en",
+   "published_date": "2026-10-07",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmensmitteilung (Ad-hoc, vorläufige Zahlen)"
+  },
+  {
+   "id": "S-2267af5e02fda855",
+   "name": "VINCORION",
+   "title": "Ground-Based Air Defense (Produktseite)",
+   "url": "https://vincorion.com/en/power-systems/ground-based-air-defense/",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmenswebseite"
+  },
+  {
+   "id": "S-01bdf37a77a6b3df",
+   "name": "VINCORION",
+   "title": "Stabilization Systems / GTD chaserV (Produktseite)",
+   "url": "https://vincorion.com/en/vehicle-systems/land-stabilization-systems/",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmenswebseite"
+  },
+  {
+   "id": "S-843d0f17aae3494b",
+   "name": "VINCORION",
+   "title": "Hoist Systems / ERH premierV (Produktseite)",
+   "url": "https://vincorion.com/en/aircraft-systems/hoist-systems/",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmenswebseite"
+  },
+  {
+   "id": "S-555547ca1efb774c",
+   "name": "VINCORION",
+   "title": "Energy for Europe's Security: VINCORION at Eurosatory 2026",
+   "url": "https://vincorion.com/en/energy-for-europes-security-vincorion-at-eurosatory-2026/",
+   "published_date": "2026-06-15",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmensmitteilung"
+  },
+  {
+   "id": "S-8235dca98711f60c",
+   "name": "VINCORION",
+   "title": "The Future of Battlefield Power: VINCORION at AUSA 2026",
+   "url": "https://vincorion.com/en/vincorion-ausa-washington-2026/",
+   "published_date": "2026-10-14",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmensmitteilung"
+  },
+  {
+   "id": "S-d0a2881113c61290",
+   "name": "ESUT (Mittler Report)",
+   "title": "VINCORION meldet Aufträge im Wert von mehr als 100 Millionen Euro",
+   "url": "https://esut.de/2026/07/meldungen/73223/vincorion-meldet-auftraege-im-wert-von-mehr-als-100-millionen-euro/",
+   "published_date": "2026-07-30",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Fachmedium (gibt Unternehmensangaben wieder)"
+  },
+  {
+   "id": "S-6601b3cf04dd96b0",
+   "name": "Raytheon / ASDNews",
+   "title": "Raytheon to Deliver Patriot Interceptors to Ukraine",
+   "url": "https://asdnews.com/news/defense/2026/04/14/raytheon-deliver-patriot-interceptors-ukraine",
+   "published_date": "2026-04-14",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmensmitteilung (Wiedergabe)"
+  },
+  {
+   "id": "S-0d749a7e724be027",
+   "name": "Janes",
+   "title": "IAV 2026: Bundeswehr's Skyranger 30 air-defence system to become operational by end of decade",
+   "url": "https://www.janes.com/osint-insights/defence-news/land/iav-2026-bundeswehrs-skyranger-30-air-defence-system-to-become-operational-by-end-of-decade",
+   "published_date": "2026-01-26",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-ff2d8a0dfc4437ff",
+   "name": "ESUT (Mittler Report)",
+   "title": "Bundeswehr beschafft 19 Flugabwehrsysteme Skyranger 30 auf Boxer",
+   "url": "https://esut.de/2024/02/meldungen/47709/bundeswehr-beschafft-19-flugabwehrsysteme-skyranger-30-auf-boxer/",
+   "published_date": "2024-02-23",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Fachmedium"
+  },
+  {
+   "id": "S-6bb78e5c6f649738",
+   "name": "afm.aero",
+   "title": "Airbus 2026 Global Market Forecast Projects 42,060 New Aircraft Demand",
+   "url": "https://afm.aero/airbus-2026-global-market-forecast-projects-42060-new-aircraft-demand-and-39percent-annual-traffic-growth",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Fachmedium (gibt Airbus-Prognose wieder)"
+  }
+ ],
+ "gaps": [
+  "Keine unabhängige Marktgröße für Generatoren/Hybrid-Stromversorgung, Waffenstabilisierung oder Rettungswinden gefunden; Budgets sind kein Marktvolumen.",
+  "Elektrifizierung militärischer Fahrzeuge und Batteriearchitekturen: nur Herstellerdarstellung (VINCORION), keine quantitativen Marktdaten.",
+  "Drohnenabwehr: Programmstatus (Skyranger, SADM) belegt, aber ohne bestätigten Serienauftragswert 2026; Verzögerungsberichte nicht auf Primärquellen geprüft.",
+  "SAFE: Kreditrahmen belegt, tatsächliche Länderzuteilungen und Abrufe nicht aus Primärquelle geprüft (Ratsseite 403); Deutschland-Bezug nicht geprüft.",
+  "USA und Asien nur über SIPRI-Gesamtwerte bzw. Unternehmensmitteilungen; keine Beschaffungsprogramme der US-Streitkräfte ausgewertet.",
+  "Airbus-Prognose nur über Fachmedium (Airbus-Originalseite blockiert); zivile Luftfahrt ohne Bezug zu Komponentenmärkten.",
+  "NATO-PDF ist ein Bildscan; Grafikwerte wurden visuell abgelesen, die Länder-Tabellen (u. a. Ausrüstungsanteile) nicht ausgewertet.",
+  "Auftragsbestand VINCORION (Tabelle nennt '1.205') wegen uneindeutiger Zahlenformatierung nicht verwendet."
+ ],
+ "coverage": [
+  {
+   "topic": "Verteidigungsbudgets global/Europa/NATO",
+   "search_terms": [
+    "SIPRI military expenditure 2025",
+    "NATO defence expenditure 2026"
+   ],
+   "source_ids": [
+    "S-4b1b269f9d58d23c",
+    "S-77254a54ce96c13c",
+    "S-e237c20f9db90c17"
+   ],
+   "finding": "Originale geöffnet; NATO-Grafiken visuell gelesen; Zahlen belegt.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "Deutscher Haushalt 2026/2027",
+   "search_terms": [
+    "Bundeshaushalt 2027 Verteidigung",
+    "Einzelplan 14"
+   ],
+   "source_ids": [
+    "S-dac611b633e8e050",
+    "S-cc53a835b9b5e94c",
+    "S-6986318c3c84f038",
+    "S-4953b514319b9b9c"
+   ],
+   "finding": "Bundestagsquellen und BMVg geöffnet; Fachmedium als Gegenprüfung (109,7 Mrd. EUR konsistent).",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "EU-Finanzierung SAFE",
+   "search_terms": [
+    "SAFE 150 billion loans"
+   ],
+   "source_ids": [
+    "S-98760dc14b59455f"
+   ],
+   "finding": "Kommissionsseite geöffnet; Ratsseite nicht zugänglich (403); Allokationen nicht geprüft.",
+   "status": "geprüft mit Beleg (Rahmen); Zuteilung nicht geprüft"
+  },
+  {
+   "topic": "Landfahrzeugprogramme (Puma, Boxer, Schakal)",
+   "search_terms": [
+    "Puma 200 Vertrag",
+    "Haushaltsausschuss Schakal Boxer 2026"
+   ],
+   "source_ids": [
+    "S-911f31a79239eaca",
+    "S-4953b514319b9b9c",
+    "S-3015a99a05a590d1",
+    "S-e5b3f1b606863b64"
+   ],
+   "finding": "Puma-Auftrag und Haushaltsschwerpunkte belegt; 2026er Schakal-/Boxer-Beschlüsse nur aus Suchtreffern bekannt, nicht aus geöffneten Primärquellen.",
+   "status": "geprüft mit Beleg (teilweise)"
+  },
+  {
+   "topic": "Luftverteidigung und Drohnenabwehr",
+   "search_terms": [
+    "IRIS-T SLM 2026",
+    "Skyranger 30 Bundeswehr",
+    "Patriot Raytheon 2026"
+   ],
+   "source_ids": [
+    "S-35533464036f638e",
+    "S-ff2d8a0dfc4437ff",
+    "S-0d749a7e724be027",
+    "S-6601b3cf04dd96b0"
+   ],
+   "finding": "NNbS, IRIS-T F125, Skyranger-Zeitplan und Patriot-GEM-T belegt; Skyranger-Serienauftrag 2026 und IRIS-T-Wert nicht belegt.",
+   "status": "geprüft mit Beleg (teilweise)"
+  },
+  {
+   "topic": "Zulieferer als Gegenprüfung der Nachfrage",
+   "search_terms": [
+    "HENSOLDT H1 2026",
+    "RENK H1 2026",
+    "VINCORION H1 2026"
+   ],
+   "source_ids": [
+    "S-3015a99a05a590d1",
+    "S-7ec6e8876e6d48a8",
+    "S-cc67e4cde6b4d5e7",
+    "S-a492cd0df860fc7a",
+    "S-13147943f3042508",
+    "S-d0a2881113c61290"
+   ],
+   "finding": "Unternehmensmitteilungen geöffnet; RENK-Original nicht, nur Newswire und Fachmedium.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "VINCORION-Anwendungsfelder",
+   "search_terms": [
+    "VINCORION Produkte Luftverteidigung Stabilisierung Luftfahrt"
+   ],
+   "source_ids": [
+    "S-2267af5e02fda855",
+    "S-01bdf37a77a6b3df",
+    "S-843d0f17aae3494b",
+    "S-555547ca1efb774c",
+    "S-8235dca98711f60c"
+   ],
+   "finding": "Öffentliche Unternehmensangaben zu Feldern, Standorten und Marktaussagen geöffnet.",
+   "status": "geprüft mit Beleg (Herstellerangaben)"
+  },
+  {
+   "topic": "Zivile Luftfahrt",
+   "search_terms": [
+    "Airbus Global Market Forecast 2026-2045"
+   ],
+   "source_ids": [
+    "S-6bb78e5c6f649738"
+   ],
+   "finding": "Airbus-Original blockiert; Fachmedium geöffnet.",
+   "status": "geprüft mit Beleg (sekundär)"
+  },
+  {
+   "topic": "Elektrifizierung militärischer Fahrzeuge",
+   "search_terms": [
+    "VINCORION AUSA electrification"
+   ],
+   "source_ids": [
+    "S-8235dca98711f60c"
+   ],
+   "finding": "Nur Herstellerangabe; keine unabhängige Quelle gefunden.",
+   "status": "geprüft ohne unabhängigen Beleg"
+  }
+ ],
+ "focus_pages": [
+  {
+   "id": "wachstumsmaerkte",
+   "label": "Wachstumsmärkte, Nachfragetreiber und Anwendungsfelder",
+   "briefing_type": "topic_market",
+   "overview": "Die Seite zeigt belegte Budget-, Programm- und Auftragsdaten für Verteidigungs- und Luftfahrtfelder, in denen mechatronische Energie-, Antriebs- und Stabilisierungssysteme eingesetzt werden; Ableitungen für einzelne Unternehmen enthält sie nicht.",
+   "claim_ids": [
+    "F_wachstumsmaerkte_2",
+    "F_wachstumsmaerkte_3",
+    "F_wachstumsmaerkte_6"
+   ],
+   "market_definition": {
+    "label": "Verteidigungs- und Luftfahrtmärkte für mechatronische Systeme (Energie, Antrieb, Stabilisierung, Rettungswinden)",
+    "geography": "Schwerpunkt Deutschland und europäische NATO-Staaten; globale Budgetsicht (SIPRI); USA nur über Unternehmensangaben",
+    "period": "Stichtag 20.10.2026; Kennzahlen 2014-2027, Timeline 20.4.-20.10.2026",
+    "boundary": "Abgegrenzt über Anwendungsfelder, in denen VINCORION-Typ-Technologien laut öffentlicher Unternehmensangaben eingesetzt werden: gepanzerte Landfahrzeuge, bodengebundene Luftverteidigung, Luftfahrt (Winden, Heizsysteme). Es gibt keine belegte Marktgröße dieser Komponentenklassen; Budgets, Programme und Aufträge werden getrennt ausgewiesen und nicht zu einem Marktvolumen verrechnet.",
+    "claim_ids": [
+     "F_wachstumsmaerkte_20",
+     "F_wachstumsmaerkte_18",
+     "F_wachstumsmaerkte_19",
+     "F_wachstumsmaerkte_22"
+    ]
+   },
+   "theses": [
+    {
+     "id": "t1",
+     "label": "Die Verteidigungsausgaben steigen vor allem in Europa: SIPRI nennt für Europa 2025 +14 % auf 864 Mrd. USD; die NATO schätzt die Kernverteidigungsausgaben Europas und Kanadas von 480 Mrd. USD (2024) auf 634 Mrd. USD (2026e, Preise 2021).",
+     "claim_ids": [
+      "F_wachstumsmaerkte_2",
+      "F_wachstumsmaerkte_3"
+     ]
+    },
+    {
+     "id": "t2",
+     "label": "Politische Zielwerte und Finanzierungsrahmen stützen die Entwicklung: NATO-Richtwert 5 % des BIP bis 2035 (3,5 % Kernverteidigung); 2026 werden 5 Verbündete über 3,5 % erwartet; die EU stellt bis zu 150 Mrd. EUR SAFE-Darlehen bereit.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_5",
+      "F_wachstumsmaerkte_9"
+     ]
+    },
+    {
+     "id": "t3",
+     "label": "Deutschland plant 2027 Verteidigungsausgaben von 139,6 Mrd. EUR (2026: 108,2) und für militärische Beschaffung 60,2 Mrd. EUR (2026: 45); es handelt sich um Haushaltsansätze, nicht um Bestellungen.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_6",
+      "F_wachstumsmaerkte_7"
+     ]
+    },
+    {
+     "id": "t4",
+     "label": "Die Nachfrage zeigt sich in konkreten Programmen der Land- und Luftverteidigungsfelder: Puma-Folgeauftrag (4,2 Mrd. EUR), Schwerpunkte für Puma, Schakal und Boxer im Haushalt 2026, NNbS-Änderungsvertrag und IRIS-T-Anpassung (9/2026); Lieferungen liegen teils erst 2027-2028.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_10",
+      "F_wachstumsmaerkte_11",
+      "F_wachstumsmaerkte_23",
+      "F_wachstumsmaerkte_24",
+      "F_wachstumsmaerkte_26"
+     ]
+    },
+    {
+     "id": "t5",
+     "label": "Zulieferer melden hohe Auftragseingänge, setzen sie aber unterschiedlich schnell in Umsatz um: HENSOLDT Auftragseingang H1 2026 2.812 Mio. EUR (Umsatz +23,6 %), RENK rund 1,2 Mrd. EUR (Umsatz +2,7 %), VINCORION 330,2 Mio. EUR (Umsatz +42,4 %).",
+     "claim_ids": [
+      "F_wachstumsmaerkte_12",
+      "F_wachstumsmaerkte_13",
+      "F_wachstumsmaerkte_14"
+     ]
+    }
+   ],
+   "key_metrics": [
+    {
+     "id": "km_de_budget",
+     "label": "Deutsche Verteidigungsausgaben 2027 (Regierungsentwurf)",
+     "value": 139.6,
+     "unit": "Mrd. EUR",
+     "period": "Haushaltsjahr 2027 (Entwurf)",
+     "scope": "Deutschland: Einzelplan 14 (109,7) plus Sondervermögen Bundeswehr (29,9)",
+     "definition": "Geplante Ausgaben des Bundes für Verteidigung laut Haushaltsentwurf; Budgetansatz, kein Marktvolumen.",
+     "metric_type": "budget",
+     "claim_ids": [
+      "F_wachstumsmaerkte_6"
+     ],
+     "qualifier": "Entwurf",
+     "note": "2026: 108,2 Mrd. EUR (82,7 + 25,5)."
+    },
+    {
+     "id": "km_de_proc",
+     "label": "Geplante militärische Beschaffung Deutschland 2027",
+     "value": 60.2,
+     "unit": "Mrd. EUR",
+     "period": "Haushaltsjahr 2027 (Entwurf)",
+     "scope": "Deutschland: Beschaffung aus Einzelplan 14 (30,3) und Sondervermögen (29,9)",
+     "definition": "Haushaltsansatz für militärische Beschaffung; weder Bestellungen noch Lieferungen noch Branchenumsatz.",
+     "metric_type": "budget",
+     "claim_ids": [
+      "F_wachstumsmaerkte_7"
+     ],
+     "qualifier": "Entwurf",
+     "note": "Bundestag nennt 'mehr als 60'; 60,2 ist die Summe der beiden genannten Teilbeträge. 2026: 45 Mrd. EUR."
+    },
+    {
+     "id": "km_nato",
+     "label": "Kernverteidigungsausgaben europäischer NATO-Staaten und Kanadas 2026 (Schätzung)",
+     "value": 634,
+     "unit": "Mrd. USD (Preise 2021)",
+     "period": "2026 (Schätzung); 2024: 480",
+     "scope": "NATO Europa und Kanada, core defence nach NATO-Definition",
+     "definition": "Von Verbündeten gemeldete bzw. geschätzte Ausgaben für Kernverteidigung in konstanten Preisen und Wechselkursen von 2021; Budgetgröße.",
+     "metric_type": "budget",
+     "claim_ids": [
+      "F_wachstumsmaerkte_3"
+     ],
+     "qualifier": "Schätzung"
+    },
+    {
+     "id": "km_sipri_eur",
+     "label": "Militärausgaben Europa 2025",
+     "value": 864,
+     "unit": "Mrd. USD",
+     "period": "2025",
+     "scope": "Europa insgesamt (einschließlich Russland und Ukraine) nach SIPRI-Methodik",
+     "definition": "Militärausgaben nach SIPRI-Definition in konstanten USD; Budgetgröße, kein Rüstungsmarkt.",
+     "metric_type": "budget",
+     "claim_ids": [
+      "F_wachstumsmaerkte_2"
+     ],
+     "note": "Weltweit 2025: 2.887 Mrd. USD."
+    },
+    {
+     "id": "km_puma",
+     "label": "Puma-Folgeauftrag (Rahmenvertragsänderung, 200 Fahrzeuge)",
+     "value": 4.2,
+     "unit": "Mrd. EUR brutto",
+     "period": "Unterzeichnung 19.12.2025; wirksam Januar 2026; Lieferbeginn Mitte 2028 geplant",
+     "scope": "Deutschland, Schützenpanzer Puma, PSM (Rheinmetall/KNDS) für das BAAINBw",
+     "definition": "Vertragsvolumen einer unterzeichneten Bestellung im Rahmen eines bestehenden Rahmenvertrags; keine Lieferung.",
+     "metric_type": "firm_order",
+     "claim_ids": [
+      "F_wachstumsmaerkte_10"
+     ],
+     "qualifier": "Herstellerangabe"
+    },
+    {
+     "id": "km_safe",
+     "label": "EU-Darlehensrahmen SAFE",
+     "value": 150,
+     "unit": "Mrd. EUR",
+     "period": "Instrument seit 2025; Abrufstand nicht geprüft",
+     "scope": "EU-Mitgliedstaaten, gemeinsame Beschaffung",
+     "definition": "Höchstvolumen des Darlehensinstruments (Finanzierungsrahmen); nicht identisch mit bestellten oder geliefertem Material.",
+     "metric_type": "contract_ceiling",
+     "claim_ids": [
+      "F_wachstumsmaerkte_9"
+     ],
+     "qualifier": "Rahmenhöchstwert"
+    }
+   ],
+   "metrics_note": "Sechs Kennzahlen mit unterschiedlichen Typen (Budget, Auftrag, Finanzierungsrahmen); sie sind nicht addierbar und kein Marktvolumen. Für Komponentenmärkte (Generatoren, Stabilisierung, Winden) wurde keine unabhängige Marktgröße gefunden.",
+   "segments": [
+    {
+     "id": "s_budget",
+     "label": "Verteidigungshaushalte und Finanzierung",
+     "description": "Staatliche Ausgabenpläne (SIPRI, NATO, Bundeshaushalt) und EU-Darlehensrahmen; sie begrenzen und steuern, was bestellt werden kann, und sind kein Marktvolumen.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_1",
+      "F_wachstumsmaerkte_3",
+      "F_wachstumsmaerkte_6",
+      "F_wachstumsmaerkte_9"
+     ]
+    },
+    {
+     "id": "s_land",
+     "label": "Gepanzerte Landfahrzeuge",
+     "description": "Kampf- und Schützenpanzer sowie Radfahrzeuge mit Antrieb, Stabilisierung, Optronik und Energieversorgung; belegt sind u. a. Puma-Folgeauftrag und Haushaltsschwerpunkte für Puma, Schakal und Boxer.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_10",
+      "F_wachstumsmaerkte_11",
+      "F_wachstumsmaerkte_12"
+     ]
+    },
+    {
+     "id": "s_gbad",
+     "label": "Bodengebundene Luftverteidigung und Drohnenabwehr",
+     "description": "Radar, Gefechtsstand, Werfer, Effektoren und die dafür nötige mobile Stromversorgung; belegt sind Programme wie NNbS/Skyranger, IRIS-T-Anpassung und Patriot-Abfangflugkörper.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_23",
+      "F_wachstumsmaerkte_26",
+      "F_wachstumsmaerkte_24",
+      "F_wachstumsmaerkte_27",
+      "F_wachstumsmaerkte_18"
+     ]
+    },
+    {
+     "id": "s_air",
+     "label": "Luftfahrt (Hubschrauber- und Flugzeugkomponenten)",
+     "description": "Rettungswinden und weitere Bordsysteme für militärische und zivile Luftfahrzeuge; für zivile Flugzeuge liegt eine Herstellerprognose zur Flottenentwicklung vor.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_22",
+      "F_wachstumsmaerkte_29",
+      "F_wachstumsmaerkte_20"
+     ]
+    },
+    {
+     "id": "s_energy",
+     "label": "Elektrifizierung und Energieversorgung (Herstellerdarstellung)",
+     "description": "Nach Unternehmensangabe steigt der Energiebedarf elektrifizierter und vernetzter Landfahrzeuge und Sensorik; dazu liegen nur Herstellerangaben ohne quantitative Marktdaten vor.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_21"
+     ]
+    }
+   ],
+   "value_chain": [
+    {
+     "id": "v_budget",
+     "label": "Haushalt und parlamentarische Freigabe",
+     "description": "Haushaltsmittel werden beschlossen; Vorhaben über 25 Mio. EUR benötigen die Einzelzustimmung des Haushaltsausschusses.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_6",
+      "F_wachstumsmaerkte_30"
+     ]
+    },
+    {
+     "id": "v_contract",
+     "label": "Rahmenvertrag, Festbeauftragung und Optionen",
+     "description": "Verträge enthalten Festbeauftragungen und Optionen; Abrufe können eigene Vorlagen erfordern (Rahmenvertrag ist nicht gleich Auftrag).",
+     "claim_ids": [
+      "F_wachstumsmaerkte_30",
+      "F_wachstumsmaerkte_13",
+      "F_wachstumsmaerkte_10"
+     ]
+    },
+    {
+     "id": "v_int",
+     "label": "Systemintegration und Plattformfertigung",
+     "description": "Hersteller wie PSM oder Rheinmetall integrieren Plattformen und Waffensysteme (Beispiele Puma, Skyranger auf Boxer).",
+     "claim_ids": [
+      "F_wachstumsmaerkte_10",
+      "F_wachstumsmaerkte_25",
+      "F_wachstumsmaerkte_23"
+     ]
+    },
+    {
+     "id": "v_comp",
+     "label": "Zulieferung von Subsystemen",
+     "description": "Sensorik, Antrieb, Stabilisierung und Energieversorgung werden von Spezialisten zugeliefert; Auftragseingänge der Zulieferer sind laut Unternehmensangaben im 1. Halbjahr 2026 stark gestiegen.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_12",
+      "F_wachstumsmaerkte_13",
+      "F_wachstumsmaerkte_15"
+     ]
+    },
+    {
+     "id": "v_deliv",
+     "label": "Lieferung und Service",
+     "description": "Lieferungen folgen den Bestellungen zeitversetzt (Beispiel Puma: Vertrag 2025, erste Fahrzeuge Mitte 2028 geplant); Betrieb und Ersatzteile sind weitere Stufen.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_10",
+      "F_wachstumsmaerkte_26"
+     ]
+    }
+   ],
+   "actors": [
+    {
+     "id": "a_bmvg",
+     "label": "BMVg/BAAINBw und Haushaltsausschuss des Bundestags",
+     "role": "Auftraggeber und Genehmigungsinstanz (Deutschland)",
+     "offering": "Haushaltsmittel, Bestellungen, Parlamentsvorlagen ab 25 Mio. EUR",
+     "segment": "Verteidigungsbeschaffung insgesamt",
+     "status": "2026: Haushalt >108 Mrd. EUR beschlossen; 2027: Entwurf 139,6 Mrd. EUR in parlamentarischer Beratung",
+     "claim_ids": [
+      "F_wachstumsmaerkte_11",
+      "F_wachstumsmaerkte_6",
+      "F_wachstumsmaerkte_28"
+     ]
+    },
+    {
+     "id": "a_eu",
+     "label": "Europäische Kommission (SAFE)",
+     "role": "Finanzierungsinstrument für Mitgliedstaaten",
+     "offering": "Langfristige Darlehen bis 150 Mrd. EUR für gemeinsame Beschaffung",
+     "segment": "Verteidigungsinvestitionen EU",
+     "status": "Rahmen belegt; Abrufstand nicht geprüft",
+     "claim_ids": [
+      "F_wachstumsmaerkte_9"
+     ]
+    },
+    {
+     "id": "a_psm",
+     "label": "PSM (Rheinmetall und KNDS Deutschland)",
+     "role": "Systemintegrator Schützenpanzer",
+     "offering": "Puma Schützenpanzer",
+     "segment": "Gepanzerte Landfahrzeuge",
+     "status": "Rahmenvertragsänderung über 200 Fahrzeuge unterzeichnet (19.12.2025); Lieferbeginn Mitte 2028 geplant",
+     "claim_ids": [
+      "F_wachstumsmaerkte_10"
+     ]
+    },
+    {
+     "id": "a_rhm",
+     "label": "Rheinmetall",
+     "role": "Systemhersteller Flugabwehr",
+     "offering": "Skyranger 30 auf Boxer",
+     "segment": "Bodengebundene Luftverteidigung/Drohnenabwehr",
+     "status": "19 Systeme 2024 bewilligt; IOC 2027 und FOC 2029 geplant",
+     "claim_ids": [
+      "F_wachstumsmaerkte_25",
+      "F_wachstumsmaerkte_26"
+     ]
+    },
+    {
+     "id": "a_rtn",
+     "label": "Raytheon",
+     "role": "Systemhersteller Luftverteidigung",
+     "offering": "Patriot-System und GEM-T-Abfangflugkörper",
+     "segment": "Bodengebundene Luftverteidigung",
+     "status": "Vertrag über 3,7 Mrd. USD für GEM-T (Ukraine) am 14.4.2026 gemeldet",
+     "claim_ids": [
+      "F_wachstumsmaerkte_27"
+     ]
+    },
+    {
+     "id": "a_hens",
+     "label": "HENSOLDT",
+     "role": "Subsystem-/Komponentenlieferant",
+     "offering": "Sensorik und Optronik (u. a. für Puma und Schakal)",
+     "segment": "Sensorik, Optronik",
+     "status": "Auftragseingang H1 2026 2.812 Mio. EUR; Auftragsbestand 10.356 Mio. EUR (Unternehmensangabe)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_12"
+     ]
+    },
+    {
+     "id": "a_renk",
+     "label": "RENK",
+     "role": "Subsystem-/Komponentenlieferant",
+     "offering": "Antriebe und Getriebe für Land- und Seeplattformen",
+     "segment": "Antriebstechnik",
+     "status": "Auftragseingang H1 2026 rund 1,2 Mrd. EUR; Auftragsbestand 7,4 Mrd. EUR (Unternehmensangabe)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_13"
+     ]
+    },
+    {
+     "id": "a_vinc",
+     "label": "VINCORION",
+     "role": "Subsystem-/Komponentenlieferant",
+     "offering": "Generatoren und Hybrid-Stromversorgung, Stabilisierungssysteme, Rettungswinden und Heizsysteme",
+     "segment": "Energie, Stabilisierung, Luftfahrt",
+     "status": "Auftragseingang H1 2026 330,2 Mio. EUR; Umsatzprognose 2026 auf 323-333 Mio. EUR angehoben (Unternehmensangabe)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_14",
+      "F_wachstumsmaerkte_16",
+      "F_wachstumsmaerkte_15",
+      "F_wachstumsmaerkte_20"
+     ]
+    }
+   ],
+   "selection_note": "Auswahl nach gleichen Kriterien: öffentlich belegte Rolle in den Anwendungsfeldern (Beschaffer/Finanzierer, Systemhersteller, Subsystemlieferanten) und Beleg im Betrachtungszeitraum. Drei Gruppen: Auftraggeber/Finanzierer, Systemhersteller, Komponentenlieferanten; VINCORION wird wie HENSOLDT und RENK nur nach Unternehmensangaben geführt. Region: Deutschland/Europa mit US-Bezug über Raytheon; keine Vollständigkeit, keine Marktanteile, kein Ranking.",
+   "charts": [
+    {
+     "id": "ch_nato_core",
+     "type": "bars",
+     "title": "Kernverteidigungsausgaben NATO Europa und Kanada",
+     "metric": "Core defence expenditure",
+     "unit": "Mrd. USD (Preise und Wechselkurse 2021)",
+     "period": "2014-2026 (2025 und 2026 Schätzungen)",
+     "scope": "NATO Europa und Kanada (Aggregat nach NATO-Definition)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_3"
+     ],
+     "caption": "Werte aus den Balkenbeschriftungen der NATO-Grafik; Budgetgröße, kein Marktvolumen.",
+     "rows": [
+      {
+       "id": "r2014",
+       "label": "2014",
+       "value": 279,
+       "claim_ids": [
+        "F_wachstumsmaerkte_3"
+       ]
+      },
+      {
+       "id": "r2019",
+       "label": "2019",
+       "value": 334,
+       "claim_ids": [
+        "F_wachstumsmaerkte_3"
+       ]
+      },
+      {
+       "id": "r2022",
+       "label": "2022",
+       "value": 372,
+       "claim_ids": [
+        "F_wachstumsmaerkte_3"
+       ]
+      },
+      {
+       "id": "r2024",
+       "label": "2024",
+       "value": 480,
+       "claim_ids": [
+        "F_wachstumsmaerkte_3"
+       ]
+      },
+      {
+       "id": "r2025",
+       "label": "2025 (Schätzung)",
+       "value": 571,
+       "claim_ids": [
+        "F_wachstumsmaerkte_3"
+       ]
+      },
+      {
+       "id": "r2026",
+       "label": "2026 (Schätzung)",
+       "value": 634,
+       "claim_ids": [
+        "F_wachstumsmaerkte_3"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ch_de_total",
+     "type": "bars",
+     "title": "Deutsche Verteidigungsausgaben: 2026 und Entwurf 2027",
+     "metric": "Einzelplan 14 plus Sondervermögen Bundeswehr",
+     "unit": "Mrd. EUR",
+     "period": "Haushaltsjahre 2026 und 2027 (Entwurf)",
+     "scope": "Deutschland, Bundeshaushalt",
+     "claim_ids": [
+      "F_wachstumsmaerkte_6"
+     ],
+     "caption": "2026 und 2027 als Summe der im Bundestagstext genannten Teilbeträge (82,7 + 25,5 bzw. 109,7 + 29,9).",
+     "rows": [
+      {
+       "id": "r2026",
+       "label": "2026",
+       "value": 108.2,
+       "claim_ids": [
+        "F_wachstumsmaerkte_6"
+       ]
+      },
+      {
+       "id": "r2027",
+       "label": "2027 (Entwurf)",
+       "value": 139.6,
+       "claim_ids": [
+        "F_wachstumsmaerkte_6"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ch_de_proc",
+     "type": "bars",
+     "title": "Deutsche Ausgaben für militärische Beschaffung: 2026 und Entwurf 2027",
+     "metric": "Militärische Beschaffung (Einzelplan 14 plus Sondervermögen)",
+     "unit": "Mrd. EUR",
+     "period": "Haushaltsjahre 2026 und 2027 (Entwurf)",
+     "scope": "Deutschland, Bundeshaushalt",
+     "claim_ids": [
+      "F_wachstumsmaerkte_7"
+     ],
+     "caption": "Haushaltsansätze, keine Bestellungen oder Lieferungen; 2027 = 30,3 + 29,9.",
+     "rows": [
+      {
+       "id": "r2026",
+       "label": "2026",
+       "value": 45,
+       "claim_ids": [
+        "F_wachstumsmaerkte_7"
+       ]
+      },
+      {
+       "id": "r2027",
+       "label": "2027 (Entwurf)",
+       "value": 60.2,
+       "claim_ids": [
+        "F_wachstumsmaerkte_7"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ch_orders_h1",
+     "type": "bars",
+     "title": "Auftragseingang 1. Halbjahr 2026 ausgewählter Zulieferer (Konzernangaben)",
+     "metric": "Auftragseingang, Konzern",
+     "unit": "Mio. EUR",
+     "period": "1. Halbjahr 2026",
+     "scope": "HENSOLDT, RENK, VINCORION jeweils Gesamtkonzern; unterschiedliche Geschäftsmodelle, kein Ranking",
+     "claim_ids": [
+      "F_wachstumsmaerkte_12",
+      "F_wachstumsmaerkte_13",
+      "F_wachstumsmaerkte_14"
+     ],
+     "caption": "Auftragseingang ist nicht Umsatz oder Lieferung; RENK nennt 'rund 1,2 Mrd. EUR'.",
+     "rows": [
+      {
+       "id": "hens",
+       "label": "HENSOLDT",
+       "value": 2812,
+       "claim_ids": [
+        "F_wachstumsmaerkte_12"
+       ]
+      },
+      {
+       "id": "renk",
+       "label": "RENK (rund)",
+       "value": 1200,
+       "claim_ids": [
+        "F_wachstumsmaerkte_13"
+       ]
+      },
+      {
+       "id": "vinc",
+       "label": "VINCORION",
+       "value": 330.2,
+       "claim_ids": [
+        "F_wachstumsmaerkte_14"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ch_fields",
+     "type": "matrix",
+     "title": "Anwendungsfelder und belegte Nachfrageindikatoren",
+     "claim_ids": [
+      "F_wachstumsmaerkte_11",
+      "F_wachstumsmaerkte_10",
+      "F_wachstumsmaerkte_23",
+      "F_wachstumsmaerkte_15"
+     ],
+     "caption": "Qualitative Zuordnung belegter Einzelereignisse; keine Marktgrößen und kein Ranking. Herstellerangaben sind als solche gekennzeichnet.",
+     "columns": [
+      {
+       "id": "demand",
+       "label": "Belegte Nachfrage/Programme"
+      },
+      {
+       "id": "status",
+       "label": "Status laut Beleg"
+      },
+      {
+       "id": "vinc",
+       "label": "VINCORION-Segmentangabe (Herstellerangabe)"
+      }
+     ],
+     "rows": [
+      {
+       "id": "land",
+       "label": "Gepanzerte Landfahrzeuge (Puma, Boxer/Schakal, Leopard)",
+       "claim_ids": [
+        "F_wachstumsmaerkte_11",
+        "F_wachstumsmaerkte_10",
+        "F_wachstumsmaerkte_12",
+        "F_wachstumsmaerkte_19"
+       ],
+       "cells": [
+        {
+         "id": "demand",
+         "value": "Puma-Folgeauftrag 200 Fahrzeuge (4,2 Mrd. EUR); 2026-Haushalt erhöht Bestände Puma, Schakal, Boxer",
+         "claim_ids": [
+          "F_wachstumsmaerkte_10",
+          "F_wachstumsmaerkte_11"
+         ]
+        },
+        {
+         "id": "status",
+         "value": "Puma: Vertrag unterzeichnet 19.12.2025, Lieferbeginn Mitte 2028 geplant; Optronik-Aufträge für Puma und Schakal bei HENSOLDT verbucht",
+         "claim_ids": [
+          "F_wachstumsmaerkte_10",
+          "F_wachstumsmaerkte_12"
+         ]
+        },
+        {
+         "id": "vinc",
+         "value": "Vehicle Systems Umsatz H1 2026 72,6 Mio. EUR (+72,0 %); Stabilisierung u. a. in Leopard 2, Puma, PzH 2000",
+         "claim_ids": [
+          "F_wachstumsmaerkte_15",
+          "F_wachstumsmaerkte_19"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "gbad",
+       "label": "Bodengebundene Luftverteidigung und Drohnenabwehr",
+       "claim_ids": [
+        "F_wachstumsmaerkte_23",
+        "F_wachstumsmaerkte_25",
+        "F_wachstumsmaerkte_26",
+        "F_wachstumsmaerkte_27",
+        "F_wachstumsmaerkte_18"
+       ],
+       "cells": [
+        {
+         "id": "demand",
+         "value": "Skyranger 30 (19 Systeme, 2024), NNbS-Änderungsvertrag, SADM-Zustimmung 11/2025; Patriot-GEM-T-Auftrag 3,7 Mrd. USD (Ukraine)",
+         "claim_ids": [
+          "F_wachstumsmaerkte_25",
+          "F_wachstumsmaerkte_23",
+          "F_wachstumsmaerkte_26",
+          "F_wachstumsmaerkte_27"
+         ]
+        },
+        {
+         "id": "status",
+         "value": "Skyranger: IOC 2027, FOC 2029 geplant; NNbS: Änderungsvertrag am 23.9.2026 gebilligt; keine Lieferung belegt",
+         "claim_ids": [
+          "F_wachstumsmaerkte_26",
+          "F_wachstumsmaerkte_23"
+         ]
+        },
+        {
+         "id": "vinc",
+         "value": "Power Systems Umsatz H1 2026 46,2 Mio. EUR (+41,1 %); Stromversorgung für PATRIOT und IRIS-T SLM",
+         "claim_ids": [
+          "F_wachstumsmaerkte_15",
+          "F_wachstumsmaerkte_18"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "air",
+       "label": "Luftfahrt (zivil und militärisch)",
+       "claim_ids": [
+        "F_wachstumsmaerkte_29",
+        "F_wachstumsmaerkte_22",
+        "F_wachstumsmaerkte_15"
+       ],
+       "cells": [
+        {
+         "id": "demand",
+         "value": "Airbus-Prognose: 42.060 neue Flugzeuge 2026-2045 (Herstellerprognose, über Fachmedium)",
+         "claim_ids": [
+          "F_wachstumsmaerkte_29"
+         ]
+        },
+        {
+         "id": "status",
+         "value": "Langfristprognose, kein Auftrag",
+         "claim_ids": [
+          "F_wachstumsmaerkte_29"
+         ]
+        },
+        {
+         "id": "vinc",
+         "value": "Aviation Umsatz H1 2026 33,2 Mio. EUR (Vorjahr 32,7); u. a. Rettungswinden, Kabinenheizungen",
+         "claim_ids": [
+          "F_wachstumsmaerkte_15",
+          "F_wachstumsmaerkte_22",
+          "F_wachstumsmaerkte_20"
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ch_structure",
+     "type": "structure",
+     "title": "Akteursgruppen entlang der Beschaffungs- und Lieferkette (ohne behauptete Beziehungen)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_6",
+      "F_wachstumsmaerkte_10",
+      "F_wachstumsmaerkte_12"
+     ],
+     "caption": "Gruppierung nach Funktion; Gemeinsame Darstellung bedeutet keine Geschäftsbeziehung.",
+     "groups": [
+      {
+       "id": "g_buyer",
+       "label": "Haushalt, Finanzierung und Beschaffung",
+       "claim_ids": [
+        "F_wachstumsmaerkte_6",
+        "F_wachstumsmaerkte_9",
+        "F_wachstumsmaerkte_28"
+       ],
+       "items": [
+        {
+         "id": "i_bt",
+         "label": "Bundestag/Haushaltsausschuss (Haushalt, 25-Mio.-Vorlagen)",
+         "claim_ids": [
+          "F_wachstumsmaerkte_28",
+          "F_wachstumsmaerkte_6"
+         ]
+        },
+        {
+         "id": "i_eu",
+         "label": "Europäische Kommission (SAFE-Darlehensrahmen)",
+         "claim_ids": [
+          "F_wachstumsmaerkte_9"
+         ]
+        },
+        {
+         "id": "i_nspa",
+         "label": "NATO Support and Procurement Agency (Auftraggeber NG-Stromversorgung laut VINCORION)",
+         "claim_ids": [
+          "F_wachstumsmaerkte_18"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "g_int",
+       "label": "Plattform- und Systemhersteller",
+       "claim_ids": [
+        "F_wachstumsmaerkte_10",
+        "F_wachstumsmaerkte_25",
+        "F_wachstumsmaerkte_27"
+       ],
+       "items": [
+        {
+         "id": "i_psm",
+         "label": "PSM (Rheinmetall/KNDS): Schützenpanzer Puma",
+         "claim_ids": [
+          "F_wachstumsmaerkte_10"
+         ]
+        },
+        {
+         "id": "i_rhm",
+         "label": "Rheinmetall: Skyranger 30 auf Boxer",
+         "claim_ids": [
+          "F_wachstumsmaerkte_25"
+         ]
+        },
+        {
+         "id": "i_rtn",
+         "label": "Raytheon: Patriot",
+         "claim_ids": [
+          "F_wachstumsmaerkte_27"
+         ]
+        }
+       ]
+      },
+      {
+       "id": "g_comp",
+       "label": "Subsystem- und Komponentenlieferanten",
+       "claim_ids": [
+        "F_wachstumsmaerkte_12",
+        "F_wachstumsmaerkte_13",
+        "F_wachstumsmaerkte_15"
+       ],
+       "items": [
+        {
+         "id": "i_hens",
+         "label": "HENSOLDT: Sensorik und Optronik",
+         "claim_ids": [
+          "F_wachstumsmaerkte_12"
+         ]
+        },
+        {
+         "id": "i_renk",
+         "label": "RENK: Antriebe und Getriebe",
+         "claim_ids": [
+          "F_wachstumsmaerkte_13"
+         ]
+        },
+        {
+         "id": "i_vinc",
+         "label": "VINCORION: Energie-, Stabilisierungs- und Luftfahrtsysteme",
+         "claim_ids": [
+          "F_wachstumsmaerkte_15",
+          "F_wachstumsmaerkte_20"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "timeline": [
+    {
+     "id": "tl_sipri",
+     "date": "2026-04-27",
+     "label": "SIPRI veröffentlicht Militärausgaben 2025: weltweit 2.887 Mrd. USD, Europa +14 % auf 864 Mrd. USD",
+     "status": "Veröffentlichung (Ausgaben 2025)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_1",
+      "F_wachstumsmaerkte_2"
+     ]
+    },
+    {
+     "id": "tl_cab",
+     "date": "2026-07-06",
+     "label": "Bundeskabinett billigt Entwurf Bundeshaushalt 2027",
+     "status": "Kabinettsbeschluss (Entwurf)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_8"
+     ]
+    },
+    {
+     "id": "tl_nato",
+     "date": "2026-07-07",
+     "label": "NATO veröffentlicht Schätzungen 2025/2026: 5 Verbündete über 3,5 % BIP für Kernverteidigung erwartet",
+     "status": "Veröffentlichung (Schätzungen)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_5",
+      "F_wachstumsmaerkte_3"
+     ]
+    },
+    {
+     "id": "tl_hhk",
+     "date": "2026-07-08",
+     "label": "Haushaltsausschuss billigt 16 Beschaffungsvorlagen über 9,5 Mrd. EUR (u. a. Fregatten, Laserwaffe)",
+     "status": "Zustimmung des Haushaltsausschusses",
+     "claim_ids": [
+      "F_wachstumsmaerkte_28"
+     ]
+    },
+    {
+     "id": "tl_hens",
+     "date": "2026-07-31",
+     "label": "HENSOLDT meldet Auftragseingang H1 2026 von 2.812 Mio. EUR, darunter Optronik für Puma und Schakal",
+     "status": "Unternehmensmeldung (Auftragseingang)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_12"
+     ]
+    },
+    {
+     "id": "tl_vjune",
+     "date": "2026-07-30",
+     "label": "VINCORION: Aufträge über mehr als 100 Mio. EUR im Juni 2026 verbucht (u. a. 20 Mio. EUR Stromerzeuger Luftverteidigung, 54 Mio. EUR Stabilisierung)",
+     "status": "Unternehmensangabe zu Auftragseingang (Meldung 30.7.; Ereignis Juni 2026)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_17"
+     ]
+    },
+    {
+     "id": "tl_renk",
+     "date": "2026-08-06",
+     "label": "RENK meldet Auftragseingang H1 2026 von rund 1,2 Mrd. EUR und Auftragsbestand von 7,4 Mrd. EUR",
+     "status": "Unternehmensmeldung (Auftragseingang)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_13"
+     ]
+    },
+    {
+     "id": "tl_vh1",
+     "date": "2026-08-13",
+     "label": "VINCORION meldet H1-Umsatz 150,2 Mio. EUR (+42,4 %) und Auftragseingang 330,2 Mio. EUR",
+     "status": "Unternehmensmeldung (Halbjahreszahlen)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_14",
+      "F_wachstumsmaerkte_15"
+     ]
+    },
+    {
+     "id": "tl_hib",
+     "date": "2026-08-14",
+     "label": "Regierungsentwurf Haushalt 2027 (Drucksache 21/7300) dem Bundestag zugeleitet; Verteidigungsetat 82,7 auf 109,8 Mrd. EUR",
+     "status": "Zuleitung an den Bundestag",
+     "claim_ids": [
+      "F_wachstumsmaerkte_8"
+     ]
+    },
+    {
+     "id": "tl_bt",
+     "date": "2026-09-09",
+     "label": "Erste Beratung des Wehretats 2027 im Bundestag: 139,6 Mrd. EUR inkl. Sondervermögen",
+     "status": "Parlamentarische Beratung (Entwurf)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_6",
+      "F_wachstumsmaerkte_7"
+     ]
+    },
+    {
+     "id": "tl_sep",
+     "date": "2026-09-23",
+     "label": "Haushaltsausschuss billigt NNbS-Änderungsvertrag (Boxer-Fahrmodul) und maritime IRIS-T-Anpassung für F125",
+     "status": "Zustimmung des Haushaltsausschusses (keine Lieferung)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_23",
+      "F_wachstumsmaerkte_24"
+     ]
+    },
+    {
+     "id": "tl_v9m",
+     "date": "2026-10-07",
+     "label": "VINCORION hebt Umsatzprognose 2026 auf 323-333 Mio. EUR an (9-Monats-Umsatz 237,7 Mio. EUR, vorläufig)",
+     "status": "Ad-hoc-Mitteilung (vorläufige Zahlen)",
+     "claim_ids": [
+      "F_wachstumsmaerkte_16"
+     ]
+    }
+   ],
+   "meeting_questions": [
+    {
+     "id": "q1",
+     "label": "Wie groß ist der zeitliche Abstand zwischen Haushaltsbeschluss, Vertrag und Lieferung in den einzelnen Programmen, und wie wirkt er auf die Umsatzwirksamkeit von Auftragseingängen?",
+     "claim_ids": [
+      "F_wachstumsmaerkte_10",
+      "F_wachstumsmaerkte_26",
+      "F_wachstumsmaerkte_12",
+      "F_wachstumsmaerkte_13"
+     ]
+    },
+    {
+     "id": "q2",
+     "label": "Wie verteilen sich die zusätzlichen Haushaltsmittel auf Landfahrzeuge, Luftverteidigung, Drohnenabwehr und Sensorik, und welche Fähigkeitsfelder werden zuerst beauftragt?",
+     "claim_ids": [
+      "F_wachstumsmaerkte_7",
+      "F_wachstumsmaerkte_11",
+      "F_wachstumsmaerkte_23"
+     ]
+    },
+    {
+     "id": "q3",
+     "label": "Welche Rolle spielen Produktionskapazitäten und Lieferketten der Industrie bei der Umsetzung der geplanten Beschaffungsvolumina?",
+     "claim_ids": [
+      "F_wachstumsmaerkte_11",
+      "F_wachstumsmaerkte_13",
+      "F_wachstumsmaerkte_14"
+     ]
+    }
+   ],
+   "glossary": [
+    {
+     "id": "g_ep14",
+     "label": "Einzelplan 14 und Sondervermögen Bundeswehr",
+     "definition": "Einzelplan 14 ist der reguläre Verteidigungshaushalt des Bundes; das Sondervermögen Bundeswehr (100 Mrd. EUR, 2022 beschlossen) ist ein kreditfinanzierter Zusatzfonds mit eigenem Wirtschaftsplan.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_6"
+     ]
+    },
+    {
+     "id": "g_25",
+     "label": "25-Millionen-Euro-Vorlage",
+     "definition": "Beschaffungsvorhaben oberhalb von 25 Mio. EUR, die der Haushaltsausschuss des Bundestags vor Vertragsschluss einzeln genehmigen muss.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_28",
+      "F_wachstumsmaerkte_30"
+     ]
+    },
+    {
+     "id": "g_core",
+     "label": "Kernverteidigung (core defence)",
+     "definition": "NATO-Kategorie für Ausgaben zur Deckung militärischer Kernanforderungen (Richtwert 3,5 % des BIP bis 2035), getrennt von verteidigungs- und sicherheitsbezogenen Investitionen (Richtwert 1,5 %).",
+     "claim_ids": [
+      "F_wachstumsmaerkte_5"
+     ]
+    },
+    {
+     "id": "g_safe",
+     "label": "SAFE",
+     "definition": "Security Action for Europe: EU-Instrument mit bis zu 150 Mrd. EUR langfristiger Darlehen für Verteidigungsinvestitionen, in der Regel für gemeinsame Beschaffung.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_9"
+     ]
+    },
+    {
+     "id": "g_gbad",
+     "label": "Bodengebundene Luftverteidigung (GBAD)",
+     "definition": "Landgestützte Systeme (Radar, Gefechtsstand, Werfer, Effektoren) gegen Bedrohungen aus der Luft; sie benötigen eine unterbrechungsfreie, mobile Stromversorgung.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_18"
+     ]
+    },
+    {
+     "id": "g_order",
+     "label": "Auftragseingang, Auftragsbestand, Umsatz",
+     "definition": "Auftragseingang zählt neu gebuchte Aufträge einer Periode, Auftragsbestand die noch nicht abgearbeiteten Aufträge, Umsatz die in der Periode erbrachten Leistungen; Rahmenverträge erscheinen oft nur mit der Mindestabnahme im Auftragseingang.",
+     "claim_ids": [
+      "F_wachstumsmaerkte_13",
+      "F_wachstumsmaerkte_12"
+     ]
+    }
+   ],
+   "gaps": [
+    "Keine unabhängige Marktgröße für Generatoren/Hybrid-Stromversorgung, Waffenstabilisierung oder Rettungswinden gefunden; Budgets sind kein Marktvolumen.",
+    "Elektrifizierung militärischer Fahrzeuge und Batteriearchitekturen: nur Herstellerdarstellung (VINCORION), keine quantitativen Marktdaten.",
+    "Drohnenabwehr: Programmstatus (Skyranger, SADM) belegt, aber ohne bestätigten Serienauftragswert 2026; Verzögerungsberichte nicht auf Primärquellen geprüft.",
+    "SAFE: Kreditrahmen belegt, tatsächliche Länderzuteilungen und Abrufe nicht aus Primärquelle geprüft (Ratsseite 403); Deutschland-Bezug nicht geprüft.",
+    "USA und Asien nur über SIPRI-Gesamtwerte bzw. Unternehmensmitteilungen; keine Beschaffungsprogramme der US-Streitkräfte ausgewertet.",
+    "Airbus-Prognose nur über Fachmedium (Airbus-Originalseite blockiert); zivile Luftfahrt ohne Bezug zu Komponentenmärkten.",
+    "NATO-PDF ist ein Bildscan; Grafikwerte wurden visuell abgelesen, die Länder-Tabellen (u. a. Ausrüstungsanteile) nicht ausgewertet.",
+    "Auftragsbestand VINCORION (Tabelle nennt '1.205') wegen uneindeutiger Zahlenformatierung nicht verwendet."
+   ]
+  }
+ ]
+}
