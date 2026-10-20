@@ -17,9 +17,9 @@ Der Cluster-Agent erstellt keine eigene finale HTML und überspringt keine Revie
   Größenbasis. Keine Größenstaffelung oder Zahlen-/Score-Badges in den Formen.
   Kurze Unternehmensnamen stehen unter den Formen, auch der Name des zentralen Zielknotens.
   Jede Knotenart hat eine konsistente Farbe und Form samt gemeinsamer Legende.
-  Größenbasis: Radius 22 SVG-Einheiten (Durchmesser 44), auch für das Ziel.
+  Größenbasis: Radius 14 SVG-Einheiten (Durchmesser 28), auch für das Ziel.
   Je Bereich fünf Akteure pro Reihe; Namen umbrechen statt Spaltenzahl reduzieren.
-  Bei schmaler Fläche nur das Netz lokal horizontal scrollen. Die vier Bereiche
+  Die Grafik an die verfügbare Feldbreite anpassen. Die vier Bereiche
   bleiben im 2×2-Raster: gleiche Höhe je Bereichsreihe, Höhe nach benötigten
   Akteursreihen. Filter, Reihenfolge, Formen und rechte Detailspalte erhalten.
 - Linien zeigen anfangs keine Beschriftung, Quote, Quellen oder Hover-Details.
@@ -169,7 +169,9 @@ kein Relevanzscore. Formen: Partner Kreis, Tochtergesellschaft Quadrat, JV Sechs
 Eigentümer Achteck, Zulieferer Raute, Kunde Dreieck, Projekt Fünfeck,
 Institution abgerundetes Quadrat, Person Stern, Sonstige Ellipse; Ziel Kreis.
 Grafik zunächst mit allen Akteuren. Pro Cluster stehen fünf Symbole je voller
-Zeile; Restzeilen enthalten entsprechend weniger. Radius 22px bei allen Formen.
+Zeile; Restzeilen enthalten entsprechend weniger. Radius 14px (28px Durchmesser) bei allen Formen; fünf Symbole je voller Zeile.
+Zeilenabstand 94px; Namen bis zu drei Zeilen anhand der verfügbaren Zellbreite
+umbrechen, vollständiger Name per Tooltip und Klickdetail.
 Die kompakte Auswahl bleibt über die vorhandenen Clustersteuerungen erreichbar.
 Querverbindungen zunächst eingeblendet und per Filter umschaltbar.
 Auswahl listet alle Rollen eines Akteurs;
@@ -178,8 +180,11 @@ Suche, Status-, Kategorie- und belegte Produktfilter verwenden.
 Beziehungen der gleichen Akteurspaarung bündeln; jede bleibt rechts einzeln
 auswählbar. Bei beiden Richtungen Pfeile an beiden Enden zeigen. Reduzierte Erstansicht
 mit sichtbarem Gesamtzähler als optionale Ansicht; die vollständige Beziehungstabelle bleibt im Grafikreiter erhalten.
-Im Desktopfenster Grafik lokal horizontal verschiebbar mit lesbarer Mindestbreite
-1240px, Detailanzeige rechts auf sehr breiten Desktops, sonst darunter und Tastatur-Beziehungsauswahl als Alternative.
+Die Grafikbreite folgt dem vorgesehenen Feld, ohne erzwungene Mindestbreite
+von 1240px. SVG-Koordinatenbasis mindestens 640px, bei schmalerem Feld proportional
+skalieren. Clusterhöhen folgen der Zeilenanzahl; Symbole und Namen bleiben innerhalb
+der Bereiche. Detailanzeige rechts auf sehr breiten Desktops, sonst darunter;
+Tastatur-Beziehungsauswahl bleibt als Alternative erhalten.
 Keine gesonderte Mobilansicht oder Mobilabnahme.
 Keine Pflicht, leere Bereiche mit ungeprüften Akteuren zu füllen.
 Lange Prüfhinweise, Abdeckungsmatrix und Register aufklappbar; wesentliche
@@ -209,7 +214,7 @@ Legende der tatsächlich vorkommenden Akteursfarben. Suche und Akteurstypfilter
 wirken auf diese Tabellen; Graphfilter bleiben davon unabhängig.
 Die zweite Ansicht bewahrt das vollständige interaktive Netzwerk einschließlich
 aller direkten und indirekten Beziehungen, Details und Quellen. Fünf Symbole
-pro voller Reihe je Cluster mit lesbaren Namen und lokalem horizontalem Scrollen.
+pro voller Reihe je Cluster mit umbrochenen Namen und an das Feld angepasster Breite.
 Nach Reiterwechsel Grafik neu vermessen. Ohne JavaScript bleiben Akteurdetails
 und vollständige Beziehungstabelle erreichbar. Im Druck vollständige Beziehungen
 einschließlich Quellen zeigen, unabhängig vom aktiven Reiter.

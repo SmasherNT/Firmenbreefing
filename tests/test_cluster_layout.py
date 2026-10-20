@@ -19,7 +19,7 @@ class ClusterLayoutTests(unittest.TestCase):
         self.assertNotIn('data-cnt-edge',actor_part)
         self.assertNotIn('Von → Zu',actor_part)
         self.assertIn('columns=5',output)
-        self.assertIn('const nodeRadius=22',output)
+        self.assertIn('const nodeRadius=14',output)
         self.assertIn('class="data-gaps"><summary',output)
         self.assertNotIn('__CLUSTER_ACTOR_TABLES__',output)
 

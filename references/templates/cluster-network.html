@@ -183,7 +183,7 @@ __CLUSTER_ACTOR_TABLES__<div id="cnt-view-graph" role="tabpanel" aria-labelledby
  function safeURL(value){const u=new URL(value);if(!['http:','https:'].includes(u.protocol))throw Error('Unzulässiger Quellenlink');return u.href;}
  function color(kind){return kinds[kind][1];}
 
- const nodeRadius=22;
+ const nodeRadius=14;
  const shapes={target:'circle',partner:'circle',subsidiary:'square',jv:'hexagon',owner:'octagon',supplier:'diamond',customer:'triangle',project:'pentagon',institution:'capsule',person:'star',other:'ellipse'};
  function polygon(kind,r){const shape=shapes[kind];if(shape==='square'||shape==='capsule')return [[-r,-r],[r,-r],[r,r],[-r,r]];if(shape==='diamond')return [[0,-r],[r,0],[0,r],[-r,0]];if(shape==='triangle')return [[0,-r],[r,r],[-r,r]];if(shape==='hexagon')return [[-r/2,-r],[r/2,-r],[r,0],[r/2,r],[-r/2,r],[-r,0]];if(['octagon','pentagon','star'].includes(shape)){const count=shape==='octagon'?8:shape==='pentagon'?5:10;return Array.from({length:count},(_,i)=>{const radius=shape==='star'&&i%2?r*.5:r,angle=-Math.PI/2+i*2*Math.PI/count;return [radius*Math.cos(angle),radius*Math.sin(angle)]});}return null;}
  function symbol(kind,r,parent,active=false){const shape=shapes[kind],attrs={class:'cn-symbol',fill:kind==='target'?'#163047':color(kind),stroke:active?'#c3872d':'white','stroke-width':active?4:2.5};if(shape==='square'||shape==='capsule')return mark('rect',{...attrs,x:-r,y:-r,width:2*r,height:2*r,rx:shape==='capsule'?r*.65:6},parent);if(shape==='ellipse')return mark('ellipse',{...attrs,cx:0,cy:0,rx:r,ry:r*.75},parent);const points=polygon(kind,r);if(points)return mark('polygon',{...attrs,points:points.map(p=>p.join(',')).join(' ')},parent);return mark('circle',{...attrs,cx:0,cy:0,r},parent);}
@@ -235,13 +235,13 @@ __CLUSTER_ACTOR_TABLES__<div id="cnt-view-graph" role="tabpanel" aria-labelledby
    const visible=eligible.filter(e=>names.has(e.from)&&names.has(e.to)&&(cross||e.from===data.target_id||e.to===data.target_id||nodes.get(e.from).kind==='subsidiary'||nodes.get(e.to).kind==='subsidiary'||e.categories.includes('jv')||e.id===selected||activeNode&&(e.from===activeNode||e.to===activeNode)));
    const connected=new Set([data.target_id,...visible.flatMap(e=>[e.from,e.to])]);for(const id of names)if(!connected.has(id))names.delete(id);
 
-   const w=Math.max(1240,plot.clientWidth||1240),pad=24,gutter=44,panelW=(w-2*pad-gutter)/2,columns=5,cellW=(panelW-32)/columns,rowStep=116;
+   const w=Math.max(640,(plot.clientWidth||960)-10),pad=16,gutter=28,panelW=(w-2*pad-gutter)/2,columns=5,cellW=(panelW-32)/columns,rowStep=94;
    const groups=clusterDefs.map(([id])=>({id,all:grouped.get(id),shown:grouped.get(id).filter(n=>names.has(n.id))}));
-   const get=id=>groups.find(g=>g.id===id),needed=id=>74+Math.max(1,Math.ceil(get(id).shown.length/columns))*rowStep;
-   const topH=Math.max(needed('capital'),needed('structure')),bottomH=Math.max(needed('technology'),needed('market')),centerGap=94,h=2*pad+topH+centerGap+bottomH;
+   const get=id=>groups.find(g=>g.id===id),needed=id=>62+Math.max(1,Math.ceil(get(id).shown.length/columns))*rowStep;
+   const topH=Math.max(needed('capital'),needed('structure')),bottomH=Math.max(needed('technology'),needed('market')),centerGap=128,h=2*pad+topH+centerGap+bottomH;
    const panelH=id=>['capital','structure'].includes(id)?topH:bottomH,areaColors={capital:'#285e7b',structure:'#ac7734',technology:'#287b70',market:'#68648e'};
    const cx=w/2,cy=pad+topH+centerGap/2,positions=new Map([[data.target_id,{x:cx,y:cy,kind:'target'}]]);
-   svg.setAttribute('viewBox','0 0 '+w+' '+h);svg.style.minWidth=w+'px';svg.style.height='auto';svg.replaceChildren();keyboard.replaceChildren();svg.classList.toggle('has-selection',Boolean(selected||activeNode));
+   svg.setAttribute('viewBox','0 0 '+w+' '+h);svg.style.minWidth='0';svg.style.height='auto';svg.replaceChildren();keyboard.replaceChildren();svg.classList.toggle('has-selection',Boolean(selected||activeNode));
    mark('title',{},svg).textContent=data.company+' im Mittelpunkt. Gleich große Knoten, Formen und Farben je Akteurstyp, Namen darunter; Quellen rechts.';
    const placements=[['capital',pad,pad],['structure',pad+panelW+gutter,pad],['technology',pad,pad+topH+centerGap],['market',pad+panelW+gutter,pad+topH+centerGap]];
    placements.forEach(([id,x,y])=>{
@@ -250,7 +250,7 @@ __CLUSTER_ACTOR_TABLES__<div id="cnt-view-graph" role="tabpanel" aria-labelledby
     mark('text',{x:x+18,y:y+27,class:'cn-cluster-title'},svg).textContent=label;
     mark('text',{x:x+18,y:y+46,style:'fill:#7a919d;font-size:10px'},svg).textContent=g.shown.length+' von '+g.all.length+' Akteuren';
     if(!g.shown.length)mark('text',{x:x+18,y:y+86,style:'fill:#7a919d;font-size:11px'},svg).textContent='Keine Verbindung in dieser Auswahl';
-    g.shown.forEach((n,i)=>positions.set(n.id,{x:x+16+(i%columns+.5)*cellW,y:y+106+Math.floor(i/columns)*rowStep,kind:n.kind}));
+    g.shown.forEach((n,i)=>positions.set(n.id,{x:x+16+(i%columns+.5)*cellW,y:y+90+Math.floor(i/columns)*rowStep,kind:n.kind}));
     const b=root.querySelector('[data-cluster="'+id+'"]');b.textContent=label+(expanded.has(id)?' −':' +');b.setAttribute('aria-pressed',String(expanded.has(id)));
    });
    const defs=mark('defs',{},svg),marker=mark('marker',{id:'cn-arrow',viewBox:'0 0 10 10',refX:9,refY:5,markerWidth:5,markerHeight:5,orient:'auto-start-reverse'},defs);mark('path',{d:'M 0 0 L 10 5 L 0 10 Z',fill:'#466372'},marker);
@@ -274,7 +274,7 @@ __CLUSTER_ACTOR_TABLES__<div id="cnt-view-graph" role="tabpanel" aria-labelledby
    data.nodes.filter(n=>positions.has(n.id)).forEach(n=>{
     const p=positions.get(n.id),target=n.id===data.target_id,g=mark('g',{transform:'translate('+p.x+' '+p.y+')',class:'cn-node',role:'button',tabindex:0,'aria-label':n.legal_name||n.label,'data-node':n.id,'data-kind':n.kind,'data-radius':nodeRadius},nlayer);
     symbol(n.kind,nodeRadius,g,activeNode===n.id);
-    const label=wrap(n.label,target?12:Math.max(15,Math.floor((cellW-12)/6))),shown=label.slice(0,3);if(label.length>3)shown[2]=shown[2].slice(0,-1)+'…';
+    const label=wrap(n.label,target?12:Math.max(6,Math.floor((cellW-12)/7))),shown=label.slice(0,3);if(label.length>3)shown[2]=shown[2].slice(0,-1)+'…';
     const start=nodeRadius+17;
     shown.forEach((line,i)=>mark('text',{x:0,y:start+i*(target?12:14),'text-anchor':'middle',class:target?'cn-target-label':'cn-node-label',style:'fill:'+'#193445'+';font-size:'+(target?'10px':'11px')+';font-weight:'+(target?'700':'600')},g).textContent=line);
     mark('title',{},g).textContent=(n.legal_name||n.label)+' · '+kinds[n.kind][0];

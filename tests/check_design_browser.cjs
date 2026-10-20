@@ -30,8 +30,21 @@ const {pathToFileURL}=require('node:url'),{chromium}=require('playwright-core');
   assert.equal(await network.locator('.cn-svg circle:not(.cn-node circle)').count(),0);
   const areas=await network.locator('.cn-area').evaluateAll(ns=>ns.map(n=>({id:n.dataset.clusterArea,x:+n.getAttribute('x'),y:+n.getAttribute('y'),height:+n.getAttribute('height')})));
   assert.deepEqual(areas.map(a=>a.id),['capital','structure','technology','market']);assert.equal(areas[0].y,areas[1].y);assert.equal(areas[2].y,areas[3].y);assert.equal(areas[0].height,areas[1].height);assert.equal(areas[2].height,areas[3].height);assert(areas[0].x<areas[1].x&&areas[2].x<areas[3].x&&areas[0].y<areas[2].y);
-  assert(await network.locator('.cn-node').evaluateAll(ns=>ns.every(n=>n.dataset.radius==='22'&&n.querySelectorAll('.cn-symbol').length===1)),'Uniform node size, one categorical symbol');
-  assert(await network.locator('.cn-node circle').evaluateAll(ns=>ns.every(n=>n.getAttribute('r')==='22')),'All circles have the same radius');
+  assert(await network.locator('.cn-node').evaluateAll(ns=>ns.every(n=>n.dataset.radius==='14'&&n.querySelectorAll('.cn-symbol').length===1)),'Uniform node size, one categorical symbol');
+  assert(await network.locator('.cn-node circle').evaluateAll(ns=>ns.every(n=>n.getAttribute('r')==='14')),'All circles have the same radius');
+  for(const width of [1440,1280,1024]){
+   await page.setViewportSize({width,height:1000});
+   await page.waitForFunction(()=>{const s=document.querySelector('.cn-svg'),p=document.querySelector('.cn-plot');return Math.abs(s.viewBox.baseVal.width-Math.max(640,p.clientWidth-10))<1;});
+   assert(await network.locator('.cn-svg').evaluate(s=>s.getBoundingClientRect().width<=s.parentElement.clientWidth+1),'Graph fits its field');
+   assert(await network.locator('.cn-svg').evaluate(s=>{
+    const areas=[...s.querySelectorAll('.cn-area')].map(a=>a.getBBox());
+    return [...s.querySelectorAll('.cn-node:not([data-kind="target"])')].every(n=>{
+     const b=n.getBBox(),t=n.transform.baseVal.consolidate().matrix;
+     return areas.some(a=>b.x+t.e>=a.x&&b.y+t.f>=a.y&&b.x+t.e+b.width<=a.x+a.width&&b.y+t.f+b.height<=a.y+a.height);
+    });
+   }),'Symbols and labels stay inside cluster fields');
+  }
+  await page.setViewportSize({width:1440,height:1000});
   assert.equal(await network.locator('.cn-node[data-kind=owner] polygon').count(),1);assert.equal(await network.locator('.cn-node[data-kind=jv] polygon').count(),1);assert.equal(await network.locator('.cn-node[data-kind=supplier] polygon').count(),1);assert.equal(await network.locator('.cn-node[data-kind=customer] polygon').count(),1);
   assert(await network.locator('.cn-node:not([data-kind=target]) text').evaluateAll(ns=>ns.every(n=>+n.getAttribute('y')>22)),'Names below symbols');
   const grid=await network.locator('.cn-node:not([data-kind=target])').evaluateAll(ns=>ns.map(n=>({id:n.dataset.node,position:n.getAttribute('transform')})));
