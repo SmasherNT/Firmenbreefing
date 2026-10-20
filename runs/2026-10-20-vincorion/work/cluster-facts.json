@@ -1,0 +1,4893 @@
+{
+ "schema_version": 1,
+ "mode": "facts-v2",
+ "role": "cluster",
+ "run_id": "2026-10-20-vincorion",
+ "company": "VINCORION",
+ "as_of": "2026-10-20",
+ "scope": "Cluster VINCORION-Gruppe (VINCORION SE, Wedel; offizielle Website vincorion.com bestätigt): Eigentum/Kontrolle, Konzernstruktur, Technologie- und Industriepartner, Projekte/Konsortien, Kunden und Marktzugang sowie Querverbindungen; Berichtsanalyse Geschäftsjahre 2023–2025 und H1 2026; Stichtag 2026-10-20.",
+ "status": "teilweise",
+ "status_note": "Alle Pflichtsuchwege bearbeitet; Status teilweise wegen nicht zugänglichem Wertpapierprospekt (13.03.2026), nicht gefundenem Konzernlagebericht 2025 und fehlender Originalbestätigung mehrerer Gegenparteien.",
+ "shared_limitations": "Die meisten Kunden-/Partnerangaben stammen von VINCORION selbst (Herstellerangaben); Fachmedien geben diese überwiegend wieder (keine unabhängige Bestätigung). Rahmenvertragshöchstwerte sind keine garantierten Umsätze. Netzwerk ist nicht geprüft und nicht freigegeben; es ist kein Nachweis einer vollständigen juristischen Konzernstruktur oder Lieferkette.",
+ "document_scope": "Geöffnete Dokumente über scripts/source-cache.py im Laufcache; PDF-Seiten aus pdftotext-Markierungen, gedruckte Seiten bei Abweichung angegeben.",
+ "claims": [
+  {
+   "id": "C-001",
+   "statement": "Laut Halbjahresfinanzbericht 2026 ist die VINCORION SE (Wedel, Amtsgericht Pinneberg HRB 19596) die strategische Management- und Finanzierungsgesellschaft der VINCORION-Gruppe und unmittelbare Rechtsnachfolgerin der VINCORION Holding GmbH als bisheriger Gruppenobergesellschaft; Konsolidierungskreis und Geschäftstätigkeit blieben dabei unverändert.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-71029391d701d972"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Strukturtragende Konzernaussage (Kante Ziel–Holding).",
+   "evidence": "Auszug: VINCORION SE ... functions as the strategic management and financing company of the VINCORION Group ... now represents the direct successor to VINCORION Holding GmbH, which formerly held the Group. The basis of consolidation and business activities have remained unchanged.",
+   "location": "PDF-Seite 23 (gedruckt 21), Notes 1 General Remarks und 4 Basis of Consolidation",
+   "event_status": "umgesetzt"
+  },
+  {
+   "id": "C-002",
+   "statement": "Die VINCORION SE ist alleinige Gesellschafterin der VINCORION Holding GmbH (Wedel, HRB 16869 PI). Konzernabschluss 2025 der Holding und Halbjahresbericht 2026 nennen den 18. Januar 2026; der Einzelabschluss 2025 der SE nennt als Wirksamkeit der Sacheinlage der restlichen 90 % (Handelsregistereintrag) den 28. Januar 2026.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-c937f9b7f798fc88",
+    "S-71029391d701d972",
+    "S-0a9ea0dbc48fd48c"
+   ],
+   "uncertainty": "Widersprüchliches Datum (18.01. vs. 28.01.2026) zwischen Konzernberichten und SE-Einzelabschluss; nicht aufgelöst.",
+   "proposed_depth": "A",
+   "depth_reason": "Eigentum/Kontrolle; Datumswiderspruch.",
+   "evidence_items": [
+    {
+     "source_id": "S-c937f9b7f798fc88",
+     "text": "VINCORION SE, Munich, has been the sole shareholder of VINCORION Holding, Wedel, since 18 January 2026.",
+     "mode": "Auszug",
+     "location": "PDF-Seite 42 (gedruckt F-44), Note 24 Subsequent Events"
+    },
+    {
+     "source_id": "S-71029391d701d972",
+     "text": "VINCORION SE became the sole shareholder of VINCORION Holding GmbH effective January 18, 2026.",
+     "mode": "Auszug",
+     "location": "PDF-Seite 23 (gedruckt 21), Note 4 Basis of Consolidation"
+    },
+    {
+     "source_id": "S-0a9ea0dbc48fd48c",
+     "text": "Mit Wirkung zum 28.01.2026 (Eintragung ins Handelsregister) brachten STAR Holdings S.à r.l. und weitere Gesellschafter die restlichen 90 % an der VINCORION Holding GmbH im Wege einer Sachkapitalerhöhung gegen neue SE-Aktien ein; danach ist die SE alleinige Gesellschafterin.",
+     "mode": "Paraphrase",
+     "location": "Datei VISE_Abschluss_FY25_EN.pdf, PDF-Seite 8, Anhang F Subsequent Events"
+    }
+   ],
+   "evidence": "Siehe evidence_items (3 Belege).",
+   "location": "Datei VISE_Abschluss_FY25_EN.pdf, PDF-Seite 8, Anhang F Subsequent Events; PDF-Seite 23 (gedruckt 21), Note 4 Basis of Consolidation; PDF-Seite 42 (gedruckt F-44), Note 24 Subsequent Events",
+   "event_date": "2026-01-18",
+   "event_status": "abgeschlossen"
+  },
+  {
+   "id": "C-003",
+   "statement": "Laut Anhang zum Einzelabschluss 2025 der VINCORION SE übertrug die damalige Alleinaktionärin STAR Holdings S.à r.l. (Luxemburg) am 30. Dezember 2025 einen 10-%-Anteil an der VINCORION Holding GmbH als Ertragszuschuss ohne Gegenleistung an die SE; bewertet mit 80,1 Mio. EUR auf Basis einer DCF-Bewertung der Gruppe zum 31.10.2025 (Eigenkapitalwert 801 Mio. EUR).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-0a9ea0dbc48fd48c"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Kapital-/Strukturvorgang vor IPO.",
+   "evidence": "Auszug: income subsidy of EUR 80,100k received from the shareholder, STAR Holdings S.à r.l. ... in connection with the transfer of a 10% stake in VINCORION Holding GmbH ... equity value for the Group of EUR 801 million",
+   "location": "Datei VISE_Abschluss_FY25_EN.pdf, PDF-Seiten 6–7, Anhang B.1 und C.1",
+   "event_date": "2025-12-30",
+   "event_status": "abgeschlossen"
+  },
+  {
+   "id": "C-004",
+   "statement": "Beteiligungsliste zum 31.12.2025 (Konzernabschluss VINCORION Holding GmbH): VINCORION Advanced Systems GmbH (Wedel), VINCORION Power Systems GmbH (Altenstadt), VINCORION LLC (El Paso, Texas, USA) und VINCORION ApS (Hellerup, Dänemark) mit jeweils 100 % Beteiligungsquote; die ApS wurde 2025 gegründet und hatte den Geschäftsbetrieb noch nicht aufgenommen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-c937f9b7f798fc88"
+   ],
+   "uncertainty": "Liste nennt Beteiligungsquote der Gruppe, nicht ob direkt von der Holding oder mittelbar gehalten; Stimmrechte nicht separat angegeben.",
+   "proposed_depth": "A",
+   "depth_reason": "Netzwerkkanten Konzernstruktur.",
+   "evidence_items": [
+    {
+     "source_id": "S-c937f9b7f798fc88",
+     "text": "List of the shareholdings ... VINCORION Advanced Systems GmbH Wedel 100%; VINCORION Power Systems GmbH Altenstadt 100%; VINCORION LLC El Paso TX 100%; VINCORION ApS Hellerup, Denmark 100%",
+     "mode": "Auszug",
+     "location": "PDF-Seite 42 (gedruckt F-44), Note 23 Basis of Consolidation"
+    },
+    {
+     "source_id": "S-c937f9b7f798fc88",
+     "text": "VINCORION ApS ... founded in financial year 2025 and not yet started operations",
+     "mode": "Auszug",
+     "location": "PDF-Seite 7 (gedruckt F-9), Note 1 Company Background"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "PDF-Seite 42 (gedruckt F-44), Note 23 Basis of Consolidation; PDF-Seite 7 (gedruckt F-9), Note 1 Company Background"
+  },
+  {
+   "id": "C-005",
+   "statement": "Vorjahresvergleich: Zum 31.12.2023 und 31.12.2024 umfasste die Beteiligungsliste VINCORION Advanced Systems GmbH, VINCORION Power Systems GmbH und VINCORION LLC (je 100 %); 2025 kam VINCORION ApS hinzu (vollkonsolidierte Einheiten 4 → 5).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-a8b6a9bf5c56126e",
+    "S-56ddab9dedaa1e0b",
+    "S-c937f9b7f798fc88"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "B",
+   "depth_reason": "Hintergrund Strukturänderung.",
+   "evidence_items": [
+    {
+     "source_id": "S-a8b6a9bf5c56126e",
+     "text": "Shareholdings as at 31 December 2024: VINCORION Advanced Systems GmbH, VINCORION Power Systems GmbH, VINCORION LLC – je 100%",
+     "mode": "Paraphrase",
+     "location": "PDF-Seite 36, Note 21 Basis of Consolidation"
+    },
+    {
+     "source_id": "S-56ddab9dedaa1e0b",
+     "text": "Shareholdings as at 31 December 2023: VINCORION Advanced Systems GmbH, VINCORION Power Systems GmbH, VINCORION LLC – je 100%",
+     "mode": "Paraphrase",
+     "location": "PDF-Seite 38, Note 21 Basis of Consolidation"
+    },
+    {
+     "source_id": "S-c937f9b7f798fc88",
+     "text": "Fully consolidated entities 31 Dec 2024: 4, Additions 1, 31 Dec 2025: 5",
+     "mode": "Auszug",
+     "location": "PDF-Seite 12 (gedruckt F-14), Note 2.8 Basis of consolidation"
+    }
+   ],
+   "evidence": "Siehe evidence_items (3 Belege).",
+   "location": "PDF-Seite 12 (gedruckt F-14), Note 2.8 Basis of consolidation; PDF-Seite 36, Note 21 Basis of Consolidation; PDF-Seite 38, Note 21 Basis of Consolidation"
+  },
+  {
+   "id": "C-006",
+   "statement": "Laut Konzernabschluss 2025 war direkte Muttergesellschaft der VINCORION Holding GmbH die STAR Holdings S.à r.l. (Luxemburg); oberste beherrschende Muttergesellschaft war die STAR Capital Partnership LLP (England und Wales), die die STAR-Fonds STAR Strategic Assets Partnership III LP, STAR Strategic Assets III-A LP und STAR III Executive Co-Investment Partnership LP verwaltet.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-c937f9b7f798fc88"
+   ],
+   "uncertainty": "Stand vor IPO (Berichtsjahr 2025); Kontrollverhältnis nach IPO siehe C-011/C-014.",
+   "proposed_depth": "A",
+   "depth_reason": "Eigentum/Kontrolle.",
+   "evidence": "Auszug: The direct parent company of VINCORION Holding is STAR Holdings S.à.r.l. ... Luxembourg. The ultimate controlling parent company ... is STAR Capital Partnership LLP ... which manages STAR Funds consisting of STAR Strategic Assets Partnership III LP, STAR Strategic Assets III-A LP and STAR III Executive Co-Investment Partnership LP.",
+   "location": "PDF-Seite 41 (gedruckt F-43), Note 21 Related Parties",
+   "event_status": "Stand 31.12.2025"
+  },
+  {
+   "id": "C-007",
+   "statement": "JENOPTIK AG unterzeichnete am 25.11.2021 eine Vereinbarung zum Verkauf der Sparte VINCORION an einen von der STAR Capital Partnership LLP verwalteten Fonds (Unternehmenswert rund 130 Mio. EUR); laut STAR erwarb der STAR III Fund VINCORION, Vollzug am 30.06.2022 nach behördlichen Genehmigungen. Jenoptik nennt den 30.06.2022 als Closing und Entkonsolidierung.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-aa984398128cc8b6",
+    "S-b9f1cea99e909e3f",
+    "S-40c9171fe2101daa"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Historische Eigentumskante, beidseitig belegt.",
+   "evidence_items": [
+    {
+     "source_id": "S-aa984398128cc8b6",
+     "text": "JENOPTIK AG has signed an agreement to sell the VINCORION division. It will be acquired by a fund managed by STAR Capital Partnership LLP ... The enterprise value amounts to approximately 130 million euros.",
+     "mode": "Auszug",
+     "location": "Ad-hoc-Mitteilung, Absätze 1–2"
+    },
+    {
+     "source_id": "S-b9f1cea99e909e3f",
+     "text": "the STAR III Fund has acquired Vincorion from Jenoptik AG. The carve-out transaction, which was signed in November 2021, completed on the 30th of June 2022 following regulatory approvals.",
+     "mode": "Auszug",
+     "location": "Meldung vom 01.07.2022, Absatz 1"
+    },
+    {
+     "source_id": "S-40c9171fe2101daa",
+     "text": "The transaction closing and deconsolidation took place on June 30, 2022.",
+     "mode": "Auszug",
+     "location": "PDF-Seite 219, Konzernanhang 4.9 Discontinued operation"
+    }
+   ],
+   "evidence": "Siehe evidence_items (3 Belege).",
+   "location": "Ad-hoc-Mitteilung, Absätze 1–2; Meldung vom 01.07.2022, Absatz 1; PDF-Seite 219, Konzernanhang 4.9 Discontinued operation",
+   "event_date": "2022-06-30",
+   "event_status": "abgeschlossen"
+  },
+  {
+   "id": "C-008",
+   "statement": "Nachwirkende Verbindungen zu Jenoptik: Laut VINCORION verbleibt eine aus dem Verkauf stammende Garantie von 10 Mio. EUR zugunsten von VINCORION-Kunden (Erfüllung vertraglicher Leistungspflichten) bei der JENOPTIK AG (Stand 30.06.2026); Jenoptik weist für 2025 eine zeitlich befristete Leistungsgarantie von 10 Mio. EUR gegenüber einem Kunden von VINCORION als Eventualverbindlichkeit aus sowie Erträge von 3,091 Mio. EUR aus der Abwicklung von Ansprüchen und Verpflichtungen aus Freistellungsvereinbarungen mit VINCORION. Der VINCORION-Konzernabschluss 2025 zeigt eine Forderung gegen JENOPTIK AG von 1.518 TEUR.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-71029391d701d972",
+    "S-40c9171fe2101daa",
+    "S-c937f9b7f798fc88"
+   ],
+   "uncertainty": "Begünstigter Kunde wird nicht genannt.",
+   "proposed_depth": "A",
+   "depth_reason": "Fortbestehende Finanzverbindung, beidseitig berichtet.",
+   "evidence_items": [
+    {
+     "source_id": "S-71029391d701d972",
+     "text": "a guarantee of EUR 10 million ... remains with JENOPTIK AG, originating from the completed sale of VINCORION and made in favor of the customers of VINCORION",
+     "mode": "Auszug",
+     "location": "PDF-Seite 25 (gedruckt 23), Note 8 Financial Liabilities"
+    },
+    {
+     "source_id": "S-40c9171fe2101daa",
+     "text": "10,000 thousand euros ... result from a time-limited external contractual performance guarantee to a customer of VINCORION.",
+     "mode": "Auszug",
+     "location": "PDF-Seite 258, Konzernanhang 8.3 Contingent liabilities"
+    },
+    {
+     "source_id": "S-40c9171fe2101daa",
+     "text": "In fiscal year 2025, various claims and obligations were finally settled, resulting in income ... of 3,091 thousand euros",
+     "mode": "Auszug",
+     "location": "PDF-Seite 219, Konzernanhang 4.9"
+    },
+    {
+     "source_id": "S-c937f9b7f798fc88",
+     "text": "Other current financial assets include a receivable from JENOPTIK AG of EUR 1,518k",
+     "mode": "Auszug",
+     "location": "PDF-Seite 22 (gedruckt F-24), Note 8.1"
+    }
+   ],
+   "evidence": "Siehe evidence_items (4 Belege).",
+   "location": "PDF-Seite 219, Konzernanhang 4.9; PDF-Seite 22 (gedruckt F-24), Note 8.1; PDF-Seite 25 (gedruckt 23), Note 8 Financial Liabilities; PDF-Seite 258, Konzernanhang 8.3 Contingent liabilities",
+   "event_status": "laufend (Stand 30.06.2026 bzw. 31.12.2025)"
+  },
+  {
+   "id": "C-009",
+   "statement": "Börsengang: Handelsstart der VINCORION-Aktien am 20.03.2026 im Prime Standard der Frankfurter Wertpapierbörse; alle 20.297.500 angebotenen Aktien stammten aus dem Bestand von STAR Capital (STAR Holdings S.à r.l. als abgebende Aktionärin) und wurden zu 17,00 EUR platziert (Platzierungsvolumen rund 345 Mio. EUR inkl. Greenshoe, Marktkapitalisierung 850 Mio. EUR); die SE wurde am 22.06.2026 in den SDAX aufgenommen.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-125b291429b46297",
+    "S-2aa87887987537b4",
+    "S-a33cf7c1eeb40a5f"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Eigentumsänderung; Herstellerangabe zum Platzierungsergebnis.",
+   "evidence_items": [
+    {
+     "source_id": "S-125b291429b46297",
+     "text": "All 20,297,500 shares from the holdings of STAR Capital offered in the IPO ... were placed with investors at the previously announced offer price of €17.00 per share ... market capitalization at IPO is €850 million.",
+     "mode": "Auszug",
+     "location": "EQS-Meldung vom 19.03.2026, Absätze 2–3"
+    },
+    {
+     "source_id": "S-2aa87887987537b4",
+     "text": "The offering is expected to consist exclusively of existing shares from the holdings of the Selling Shareholder",
+     "mode": "Auszug",
+     "location": "EQS-Meldung vom 06.03.2026, Absatz 4"
+    },
+    {
+     "source_id": "S-a33cf7c1eeb40a5f",
+     "text": "will be included in the SDAX of the Frankfurt Stock Exchange on 22 June 2026",
+     "mode": "Auszug",
+     "location": "Pressemitteilung vom 04.06.2026, Absatz 1"
+    }
+   ],
+   "evidence": "Siehe evidence_items (3 Belege).",
+   "location": "EQS-Meldung vom 06.03.2026, Absatz 4; EQS-Meldung vom 19.03.2026, Absätze 2–3; Pressemitteilung vom 04.06.2026, Absatz 1",
+   "event_date": "2026-03-20",
+   "event_status": "abgeschlossen"
+  },
+  {
+   "id": "C-010",
+   "statement": "Fidelity International, Invesco Asset Management Limited (für bestimmte Fonds/Konten) und von T. Rowe Price Associates, Inc. beratene Konten hatten sich als Cornerstone-Investoren zur Zeichnung von Aktien im Gesamtwert von rund 105 Mio. EUR verpflichtet; diese wurden laut VINCORION im IPO zum Angebotspreis zugeteilt.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-125b291429b46297",
+    "S-54bbffea5b8c5b3a"
+   ],
+   "uncertainty": "Aufteilung auf die einzelnen Investoren nicht veröffentlicht; aktuelle Bestände von Fidelity nicht gemeldet.",
+   "proposed_depth": "A",
+   "depth_reason": "Investorenbeziehung (Kante).",
+   "evidence_items": [
+    {
+     "source_id": "S-125b291429b46297",
+     "text": "approx. € 105 million were placed with the cornerstone investors Fidelity International, Invesco Asset Management Limited ... and accounts advised by T. Rowe Price Associates, Inc.",
+     "mode": "Auszug",
+     "location": "EQS-Meldung vom 19.03.2026, Aufzählung und Absatz 6"
+    },
+    {
+     "source_id": "S-54bbffea5b8c5b3a",
+     "text": "c. €105m were placed with the following cornerstone investors: Fidelity International, Invesco Asset Management Limited ... and accounts advised by T.Rowe Price Associates, Inc.",
+     "mode": "Auszug",
+     "location": "Meldung vom 20.03.2026, Absatz 3"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "EQS-Meldung vom 19.03.2026, Aufzählung und Absatz 6; Meldung vom 20.03.2026, Absatz 3",
+   "event_date": "2026-03-19",
+   "event_status": "abgeschlossen"
+  },
+  {
+   "id": "C-011",
+   "statement": "Stimmrechtsmitteilungen der STAR Capital Partnership LLP: zum 19.03.2026 47,53 % Stimmrechte aus Aktien plus 5,30 % über Instrumente (Wertpapierleihe Greenshoe), zum 17.04.2026 48,63 % Stimmrechte (zugerechnet; direkt gehalten von STAR Holdings S.à r.l.); Kontrollkette laut Mitteilung: STAR Capital Partnership LLP → STAR USR Limited → STAR III General Partner LLP → STAR Strategic Assets III LP → STAR Holdings S.à r.l. STAR gibt auf seiner Website 48,63 % nach IPO an; die Aktionärsgrafik im Halbjahresbericht 2026 weist dagegen 47,53 % aus.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-4988896bf7d4ec42",
+    "S-c27f8234745c7d46",
+    "S-621777214055324d",
+    "S-71029391d701d972"
+   ],
+   "uncertainty": "Abweichung 47,53 % (H1-Bericht) vs. 48,63 % (Mitteilung vom 24.04.2026 und STAR-Website); Stimmrechtsanteil ist nicht automatisch Kontrolle.",
+   "proposed_depth": "A",
+   "depth_reason": "Eigentum/Stimmrechte; Widerspruch dokumentiert.",
+   "evidence_items": [
+    {
+     "source_id": "S-4988896bf7d4ec42",
+     "text": "Date on which threshold was crossed: 19 March 2026; % voting rights attached to shares 47.53 %; % through instruments 5.30 % (Securities Lending (IPO Greenshoe Option)); shareholder holding directly 3% or more: STAR Holdings S.à r.l.",
+     "mode": "Paraphrase",
+     "location": "Abschnitte 4–7"
+    },
+    {
+     "source_id": "S-c27f8234745c7d46",
+     "text": "Datum der Schwellenberührung 17.04.2026; Anteil Stimmrechte 48,63 %; Kette: STAR Capital Partnership LLP, STAR USR Limited, STAR III General Partner LLP, STAR Strategic Assets III LP, STAR Holdings S.à r.l. 48,63 %",
+     "mode": "Paraphrase",
+     "location": "Abschnitte 5–8"
+    },
+    {
+     "source_id": "S-621777214055324d",
+     "text": "STAR continues to own 48.63% of Vincorion post IPO.",
+     "mode": "Auszug",
+     "location": "Portfolio-Seite, Abschnitt Overview"
+    },
+    {
+     "source_id": "S-71029391d701d972",
+     "text": "Aktionärsstruktur: STAR Capital Partnership LLP 47,53 %; Free Float inkl. IPO-Ankerinvestoren 52,47 %; Basis: bis 30.06.2026 eingegangene Mitteilungen",
+     "mode": "Paraphrase",
+     "location": "PDF-Seite 6 (gedruckt 04), Shareholder Structure"
+    }
+   ],
+   "evidence": "Siehe evidence_items (4 Belege).",
+   "location": "Abschnitte 4–7; Abschnitte 5–8; PDF-Seite 6 (gedruckt 04), Shareholder Structure; Portfolio-Seite, Abschnitt Overview",
+   "event_date": "2026-04-17",
+   "event_status": "aktuell gemeldet"
+  },
+  {
+   "id": "C-012",
+   "statement": "Laut Halbjahresbericht 2026 (Basis: bis 30.06.2026 veröffentlichte Stimmrechtsmitteilungen) halten neben STAR: Invesco Ltd. 4,71 %, T. Rowe Price Group Inc. 4,69 %, T. Rowe Price International Funds, Inc. 3,69 %, Dieter Holst (CFO) 3,60 % und Tobias Seige 3,50 % der Stimmrechte.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-71029391d701d972"
+   ],
+   "uncertainty": "Die beiden T.-Rowe-Price-Angaben können sich überschneiden (Zurechnung); spätere Änderungen nach 30.06.2026 nicht vollständig geprüft.",
+   "proposed_depth": "A",
+   "depth_reason": "Eigentumskanten.",
+   "evidence": "Paraphrase: SHAREHOLDER STRUCTURE: 4.71 % Invesco Ltd.; 4.69 % T. Rowe Price Group Inc.; 3.69 % T. Rowe Price International Funds, Inc.; 3.60 % Dieter Holst; 3.50 % Tobias Seige",
+   "location": "PDF-Seite 6 (gedruckt 04), VINCORION on the Capital Markets"
+  },
+  {
+   "id": "C-013",
+   "statement": "Die Caisse des Dépôts et Consignations (Paris) meldete zum 22.09.2026 eine Überschreitung der 3-%-Schwelle mit insgesamt 3,03 % der Stimmrechte an der VINCORION SE (zugerechnet, 1.513.927 Stimmrechte).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-7a846a5847661f28"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Eigentumskante (neuer Aktionär).",
+   "evidence": "Paraphrase: Date on which threshold was crossed or reached: 22 Sep 2026; % of voting rights attached to shares 3.03 %; Total 1513927",
+   "location": "Abschnitte 5–7",
+   "event_date": "2026-09-22",
+   "event_status": "gemeldet"
+  },
+  {
+   "id": "C-014",
+   "statement": "Laut Halbjahresbericht 2026 kontrollierte die frühere Mehrheitsaktionärin STAR die Gesellschaft bis zum Zeitpunkt des Börsengangs; im Zusammenhang mit dem IPO wurde mit STAR ein Kostenteilungsvertrag (CSA) geschlossen, unter dem VINCORION 5,5 Mio. EUR trug.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-71029391d701d972"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Kontrollstatus vs. Stimmrechte.",
+   "evidence": "Auszug: a cost-share agreement (CSA) was arranged with the former majority shareholder, STAR, which controlled the Company until the date of the IPO ... The costs incurred by VINCORION within the framework of the CSA came to EUR 5.5 million",
+   "location": "PDF-Seite 28 (gedruckt 26), Note 11 Related Party Disclosures",
+   "event_status": "Kontrolle bis IPO (20.03.2026)"
+  },
+  {
+   "id": "C-015",
+   "statement": "VINCORION SE schloss am 06.03.2026 einen neuen syndizierten Kreditvertrag (Term Loan 100 Mio. EUR, revolvierende Fazilität 50 Mio. EUR), der die frühere syndizierte Finanzierung ersetzt; die Kreditgeber werden im Bericht nicht genannt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-71029391d701d972"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "B",
+   "depth_reason": "Finanzierungshintergrund ohne benannte Gegenpartei.",
+   "evidence": "Auszug: The Company successfully concluded a new financing arrangement on March 6, 2026 ... term loan of EUR 100 million and a new revolving facility of EUR 50 million",
+   "location": "PDF-Seite 11 (gedruckt 09) und PDF-Seite 25 (gedruckt 23), Note 8"
+  },
+  {
+   "id": "C-016",
+   "statement": "Berufliches Mandat: Laut Anhang zum Einzelabschluss 2025 war Klaas Jacob Klasen vom 18.12.2025 bis 28.01.2026 Mitglied des Vorstands der VINCORION SE (gemeinsam mit Christian Köberle) und schied am 28.01.2026 aus, als Kajetan von Mentzingen und Dieter Holst bestellt wurden. In Pressemitteilungen vom Juni 2026 wird „Klaas Klasen“ als Vice President Strategy & Chief of Staff der VINCORION SE zitiert.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-0a9ea0dbc48fd48c",
+    "S-555547ca1efb774c",
+    "S-41e7bd7b63e2d486"
+   ],
+   "uncertainty": "Personenidentität „Klaas Klasen“ (PM) und „Klaas Jacob Klasen“ (Abschluss) naheliegend, aber nicht ausdrücklich verknüpft; Abgleich durch Personenprofil (context) nötig.",
+   "proposed_depth": "A",
+   "depth_reason": "Personenidentität/aktuelle Rolle des Gesprächspartners.",
+   "evidence_items": [
+    {
+     "source_id": "S-0a9ea0dbc48fd48c",
+     "text": "Klaas Jacob Klasen (from 18 December 2025 until 28 January 2026) ... Effective 28 January 2026, the former members of the Management Board, Mr. Klaas Jacob Klasen and Mr. Christian Köberle resigned",
+     "mode": "Auszug",
+     "location": "Datei VISE_Abschluss_FY25_EN.pdf, PDF-Seite 8, Anhang D Company boards und F Subsequent Events"
+    },
+    {
+     "source_id": "S-555547ca1efb774c",
+     "text": "explains Klaas Klasen, Vice President Strategy & Chief of Staff at VINCORION",
+     "mode": "Auszug",
+     "location": "Pressemitteilung vom 15.06.2026, Absatz 5"
+    },
+    {
+     "source_id": "S-41e7bd7b63e2d486",
+     "text": "explains Klaas Klasen, Vice President of Strategy and Chief of Staff at VINCORION SE",
+     "mode": "Auszug",
+     "location": "Pressemitteilung vom 18.06.2026, Absatz 6"
+    }
+   ],
+   "evidence": "Siehe evidence_items (3 Belege).",
+   "location": "Datei VISE_Abschluss_FY25_EN.pdf, PDF-Seite 8, Anhang D Company boards und F Subsequent Events; Pressemitteilung vom 15.06.2026, Absatz 5; Pressemitteilung vom 18.06.2026, Absatz 6"
+  },
+  {
+   "id": "C-017",
+   "statement": "Standorte laut Halbjahresbericht 2026: Wedel (Hauptsitz; Waffenstabilisierungssysteme und Luftfahrtkomponenten), Essen (Hochleistungsgeneratoren für gepanzerte Fahrzeuge), Altenstadt (Kompetenzzentrum mobile hybride Stromversorgungssysteme), El Paso, Texas (Distributionszentrum für Luftverteidigungssysteme für die US Army und NATO-Partner).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-71029391d701d972"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "B",
+   "depth_reason": "Standortzuordnung Tochtergesellschaften; Präsenzfakten der Portfolio-Rolle prüfen.",
+   "evidence": "Paraphrase: Wedel ... Weapons stabilization systems and aviation components; Essen ... High-performance generators for armored vehicles; Altenstadt ... Competence Center for mobile hybrid power supply systems; El Paso, Texas – Distribution center for air defense systems for the US Army and NATO partners",
+   "location": "PDF-Seite 9 (gedruckt 07), Four locations with a clear performance focus"
+  },
+  {
+   "id": "C-018",
+   "statement": "Laut Konzernabschluss 2025 sind VINCORION-Produkte u. a. im Kampfpanzer Leopard 2, im Schützenpanzer Puma sowie in den Luftverteidigungssystemen PATRIOT und IRIS-T SLM verbaut; Vehicle Systems beliefert u. a. Leopard 2, Puma, Boxer und PzH 2000, Power Systems liefert Aggregate und integrierte Stromversorgungen für Radar-, Feuer- und Führungseinheiten von PATRIOT und IRIS-T. Das Unternehmen bezeichnet sich als Alleinlieferant für die meisten belieferten Plattformen.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-c937f9b7f798fc88"
+   ],
+   "uncertainty": "Plattformzuordnung; Vertragspartner (OEM/Behörde) je Plattform werden im Bericht nicht genannt; Alleinlieferantenposition ist Selbstauskunft.",
+   "proposed_depth": "A",
+   "depth_reason": "Technologie-/Plattformintegration.",
+   "evidence_items": [
+    {
+     "source_id": "S-c937f9b7f798fc88",
+     "text": "The products are installed on important military platforms, including the Leopard 2 main battle tank, the Puma infantry fighting vehicle and the PATRIOT and IRIS-T SLM air defence systems ... We are positioned as the sole supplier for most of the platforms",
+     "mode": "Auszug",
+     "location": "PDF-Seite 7 (gedruckt F-9), Note 1 Company Background"
+    },
+    {
+     "source_id": "S-c937f9b7f798fc88",
+     "text": "Vehicle Systems ... Leopard 2 ..., Puma ..., Boxer ... and the PzH 2000 howitzer; Power Systems ... gensets and integrated power supply systems for radars, firing and command units used on platforms such as PATRIOT and IRIS-T",
+     "mode": "Paraphrase",
+     "location": "PDF-Seite 14 (gedruckt F-16), Segment reporting"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "PDF-Seite 14 (gedruckt F-16), Segment reporting; PDF-Seite 7 (gedruckt F-9), Note 1 Company Background"
+  },
+  {
+   "id": "C-019",
+   "statement": "Halbjahresbericht 2026: Der Umsatzanstieg in Vehicle Systems (+72,1 % auf 72,6 Mio. EUR) beruhte vor allem auf Stabilisierungsprodukten, insbesondere auf großvolumigen Neuaufträgen für Leopard 2, Puma und PzH 2000; in Power Systems (+41,1 % auf 46,2 Mio. EUR) war die Nachfrage nach neuen PATRIOT- und IRIS-T-Systemen Haupttreiber.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-71029391d701d972"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Programmbezug der Nachfrage (Wachstumsthema).",
+   "evidence_items": [
+    {
+     "source_id": "S-71029391d701d972",
+     "text": "the significant increase in customer demand for stabilization products, especially in connection with the large volume of new orders for the Leopard 2, Puma and the PzH 2000 platforms",
+     "mode": "Auszug",
+     "location": "PDF-Seite 13 (gedruckt 11), 2 Financial Performance"
+    },
+    {
+     "source_id": "S-71029391d701d972",
+     "text": "The high demand for new PATRIOT and IRIS-T systems turned out to be the main driver in sales growth",
+     "mode": "Auszug",
+     "location": "PDF-Seite 14 (gedruckt 12), 2 Financial Performance"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "PDF-Seite 13 (gedruckt 11), 2 Financial Performance; PDF-Seite 14 (gedruckt 12), 2 Financial Performance"
+  },
+  {
+   "id": "C-020",
+   "statement": "Kundenkonzentration (Kunden nicht namentlich genannt): 2025 entfiel auf einen Kunden mehr als 10 % des Umsatzes (27,8 Mio. EUR, Vehicle Systems); 2024 auf drei Kunden; im ersten Halbjahr 2026 auf drei Kunden mit zusammen 57,7 Mio. EUR (Vehicle Systems und Power Systems).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-c937f9b7f798fc88",
+    "S-71029391d701d972"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Kundenbeziehungen; Identität offen.",
+   "evidence_items": [
+    {
+     "source_id": "S-c937f9b7f798fc88",
+     "text": "Only one customer accounted for more than 10% of total revenue in financial year 2025. The associated revenue of EUR 27,800k is allocated to the Vehicle Systems segment. In financial year 2024, three customers each accounted for more than 10%",
+     "mode": "Auszug",
+     "location": "PDF-Seite 16 (gedruckt F-18), Segment reporting"
+    },
+    {
+     "source_id": "S-71029391d701d972",
+     "text": "In the first half of 2026, three customers each accounted for more than 10% of total revenue. The associated revenue of EUR 57.7 million is allocated to the Vehicle Systems and Power Systems segments.",
+     "mode": "Auszug",
+     "location": "PDF-Seite 27 (gedruckt 25), Note 9"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "PDF-Seite 16 (gedruckt F-18), Segment reporting; PDF-Seite 27 (gedruckt 25), Note 9"
+  },
+  {
+   "id": "C-021",
+   "statement": "Umsatz nach Kundensitz: 2025 Deutschland 143,3 Mio. EUR, übriges Europa 46,1 Mio. EUR, USA 45,1 Mio. EUR, Sonstige 5,8 Mio. EUR; erstes Halbjahr 2026 Deutschland 95,5 Mio. EUR, übriges Europa 27,8 Mio. EUR, USA 20,6 Mio. EUR, Sonstige 6,4 Mio. EUR.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-c937f9b7f798fc88",
+    "S-71029391d701d972"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "B",
+   "depth_reason": "Marktzugang (Kontext); keine Kante.",
+   "evidence_items": [
+    {
+     "source_id": "S-c937f9b7f798fc88",
+     "text": "Key geographic markets (EUR k) 2025: Germany 143,286; Rest of Europe 46,106; USA 45,135; Other 5,793",
+     "mode": "Paraphrase",
+     "location": "PDF-Seite 18 (gedruckt F-20), Note 5"
+    },
+    {
+     "source_id": "S-71029391d701d972",
+     "text": "Key geographical markets H1 2026: Germany 95,495; Rest of Europe 27,805; USA 20,558; Other 6,383",
+     "mode": "Paraphrase",
+     "location": "PDF-Seite 24 (gedruckt 22), Note 5 Revenue"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "PDF-Seite 18 (gedruckt F-20), Note 5; PDF-Seite 24 (gedruckt 22), Note 5 Revenue"
+  },
+  {
+   "id": "C-022",
+   "statement": "Laut VINCORION (04.04.2024) schloss das Unternehmen einen Rahmenvertrag mit KNDS Deutschland über mehr als 700 Bordnetzgeneratoren EPG huskyV W 600 für den Boxer (Auftragswert damals rund 12 Mio. EUR; erwartete Gesamtstückzahl über 1.000; Fertigung im Werk Essen). Eine spätere Mitteilung nennt 740 Generatoren; die Produktseite nennt „nearly 1,000 generators delivered as part of the Boxer program“.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-6e6d85a309774afc",
+    "S-6a21b1224ef5726f",
+    "S-3d9c89bef4d43468",
+    "S-87c277a6a09bd73e"
+   ],
+   "uncertainty": "Keine KNDS-Bestätigung gefunden; ES&T gibt die VINCORION-Mitteilung wieder (keine unabhängige Bestätigung). Stückzahlangaben 700+/740/knapp 1.000 (geliefert) beziehen sich auf unterschiedliche Zeitpunkte/Bezugsgrößen.",
+   "proposed_depth": "A",
+   "depth_reason": "Kundenkante; nur Herstellerangabe.",
+   "evidence_items": [
+    {
+     "source_id": "S-6e6d85a309774afc",
+     "text": "VINCORION has now signed a framework agreement with KNDS Germany ... The order currently amounts to approximately twelve million euros ... manufactured at the VINCORION plant in Essen",
+     "mode": "Auszug",
+     "location": "Pressemitteilung vom 04.04.2024, Absätze 1, 3–4, 9"
+    },
+    {
+     "source_id": "S-6a21b1224ef5726f",
+     "text": "VINCORION recently signed a contract to supply 740 EPG husky W 600 onboard generators for the Boxer",
+     "mode": "Auszug",
+     "location": "Pressemitteilung vom 18.11.2024, Abschnitt Power for the Infantry Mother Ship"
+    },
+    {
+     "source_id": "S-3d9c89bef4d43468",
+     "text": "Nearly 1,000 generators delivered as part of the Boxer program",
+     "mode": "Auszug",
+     "location": "Produktseite Land Energy Systems, Facts and Figures"
+    },
+    {
+     "source_id": "S-87c277a6a09bd73e",
+     "text": "KNDS Deutschland hat einer Mitteilung von Vincorion zufolge kürzlich mit dem Technologieunternehmen einen Rahmenvertrag über die Lieferung von 700 Bordnetzgeneratoren für den Boxer abgeschlossen",
+     "mode": "Auszug",
+     "location": "Meldung vom 04.04.2024, Absatz 1"
+    }
+   ],
+   "evidence": "Siehe evidence_items (4 Belege).",
+   "location": "Meldung vom 04.04.2024, Absatz 1; Pressemitteilung vom 04.04.2024, Absätze 1, 3–4, 9; Pressemitteilung vom 18.11.2024, Abschnitt Power for the Infantry Mother Ship; Produktseite Land Energy Systems, Facts and Figures",
+   "event_date": "2024-04-04",
+   "event_status": "beauftragt (Rahmenvertrag); Lieferungen laut Herstellerangabe erfolgt"
+  },
+  {
+   "id": "C-023",
+   "statement": "Laut VINCORION (19.06.2024) liefert das Unternehmen für den Leopard 2 Turm- und Waffenantriebe, das Richt- und Stabilisierungssystem, Leistungselektronik und den Generator; im Rahmen der Bestellung von 54 Leopard 2 A8 für Norwegen kommt GTD chaserV erstmals in Serie zum Einsatz, weitere Lieferungen für Deutschland und Partnerländer (über 120 Systeme in drei Jahren) seien in der Auftragspipeline; VINCORION nennt KNDS als Kunden mit dem Leopard-2-Upgradeprogramm zur unbemannten Turmtechnik (Leopard 2 A-RC 3.0).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-1aa8f95b2599facc"
+   ],
+   "uncertainty": "Vertragspartner für Norwegen-Lieferung (vermutlich OEM) nicht ausdrücklich genannt; Pipeline-Angabe ist Unternehmensprognose; keine KNDS-Bestätigung gefunden.",
+   "proposed_depth": "A",
+   "depth_reason": "Kunden-/Plattformkante.",
+   "evidence": "Auszug: 54 LEOPARD 2 A8 tanks will be delivered to NATO partner Norway. This will be the first time that GTD chaser stabilization technology is used in large-scale production ... more than 120 system deliveries over the next three years ... This is also demonstrated by customer KNDS' upgrade program for the LEOPARD 2 to unmanned turret technology",
+   "location": "Pressemitteilung vom 19.06.2024, Absätze 2, 7, 9, 15",
+   "event_date": "2024-06-19",
+   "event_status": "beauftragt (laut Herstellerangabe)"
+  },
+  {
+   "id": "C-024",
+   "statement": "dpa-AFX (06.03.2026) berichtet, zu den Kunden von VINCORION gehörten die Panzerbauer Rheinmetall und KNDS sowie diverse andere große Unternehmen; im zivilen Geschäft seien Heizelemente in Airbus-Passagiermaschinen und Rettungswinden in Hubschraubern verbaut.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-257bf5b7920f7bb4"
+   ],
+   "uncertainty": "Sekundärquelle (Nachrichtenagentur) ohne Nennung von Produkt/Programm/Vertragsform für Rheinmetall; keine Originalbestätigung von Rheinmetall oder Airbus gefunden. Die Meldung enthält zudem „erstes Halbjahr 2025“ als IPO-Zeitraum (offenkundig Tippfehler; VINCORION nennt H1 2026).",
+   "proposed_depth": "A",
+   "depth_reason": "Nur sekundär belegte Kundenkanten.",
+   "evidence": "Auszug: zu den Kunden gehören die Panzerbauer Rheinmetall, KNDS und diverse andere große Unternehmen ... so sind etwa in Airbus-Passagiermaschinen Heizelemente und in Hubschraubern Rettungswinden der norddeutschen Firma eingebaut",
+   "location": "dpa-AFX-Meldung vom 06.03.2026, Absätze 2–3",
+   "event_status": "laufende Kundenbeziehung (laut Bericht)"
+  },
+  {
+   "id": "C-025",
+   "statement": "Fachmedien berichteten 2023 unter Berufung auf VINCORION, Diehl Defence (Generalunternehmer und Systemintegrator von IRIS-T SLM) habe VINCORION mit der Lieferung von Energieversorgungsmodulen (EVM/PSM, 10 kW Dauerleistung) für die IRIS-T-SLM-Launcher im laufenden und folgenden Jahr beauftragt; VINCORION nennt auf seiner Website Aggregate für IRIS-T-SLM-Launcher.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-be02a1cc64071dd5",
+    "S-945a20788677cd82",
+    "S-2267af5e02fda855"
+   ],
+   "uncertainty": "Beide Medienberichte geben die VINCORION-Mitteilung wieder; ursprüngliche PM nicht mehr im Newsroom auffindbar; keine Diehl-Bestätigung gefunden; Auftragswert/Stückzahl unbekannt.",
+   "proposed_depth": "A",
+   "depth_reason": "Kundenkante nur über Wiedergabe.",
+   "evidence_items": [
+    {
+     "source_id": "S-be02a1cc64071dd5",
+     "text": "vom Generalunternehmer und Systemintegrator Diehl Defence beauftragt worden, im laufenden wie im kommenden Jahr Energieversorgungsmodule (EVM) für das Luftverteidigungssystem zu liefern",
+     "mode": "Auszug",
+     "location": "Meldung vom 16.02.2023, Absatz 1"
+    },
+    {
+     "source_id": "S-945a20788677cd82",
+     "text": "The IRIS-T SLM system will receive power supply modules from Wedel both this year and next ... Diehl Defense which acts as general contractor and system integrator",
+     "mode": "Auszug",
+     "location": "Artikel vom 22.03.2023, Absatz 1"
+    },
+    {
+     "source_id": "S-2267af5e02fda855",
+     "text": "Compact, high-performance gensets from VINCORION supply power to the IRIS-T SLM launchers.",
+     "mode": "Auszug",
+     "location": "Produktseite Ground-Based Air Defense, Abschnitt IRIS-T SLM Power Supply"
+    }
+   ],
+   "evidence": "Siehe evidence_items (3 Belege).",
+   "location": "Artikel vom 22.03.2023, Absatz 1; Meldung vom 16.02.2023, Absatz 1; Produktseite Ground-Based Air Defense, Abschnitt IRIS-T SLM Power Supply",
+   "event_date": "2023-02-16",
+   "event_status": "beauftragt (2023, laut Herstellerangabe)"
+  },
+  {
+   "id": "C-026",
+   "statement": "Laut VINCORION-Website liefert das Unternehmen seit über 40 Jahren Stromversorgungssysteme für PATRIOT (Radar, Gefechtsstand, Launcher, Kommunikation) in enger Zusammenarbeit mit Raytheon und Nutzerstaaten, ist mehrfacher Empfänger des Raytheon Supplier Excellence Award und zitiert einen Global Supply Chain Director von Raytheon Missiles & Defense, VINCORION baue Produkte „for Raytheon and our Warfighters“.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2267af5e02fda855"
+   ],
+   "uncertainty": "Zitat ohne Namen und Datum auf Herstellerseite; keine aktuelle Raytheon-Originalquelle geprüft; Liefergegenstände und Volumen pro Jahr unbekannt.",
+   "proposed_depth": "A",
+   "depth_reason": "Zentrale Lieferbeziehung PATRIOT.",
+   "evidence": "Auszug: Through close collaboration between Raytheon, the user nations, and VINCORION ... Multiple recipient of Raytheon's Supplier Excellence Award ... “VINCORION is a key partner ... building 100 procent quality product for Raytheon and our Warfighters” – Global Supply Chain Director Raytheon Missiles & Defense",
+   "location": "Produktseite Ground-Based Air Defense, Abschnitte PATRIOT und Facts and Figures",
+   "event_status": "laufend (Herstellerangabe)"
+  },
+  {
+   "id": "C-027",
+   "statement": "Historisch: Raytheon gab am 24.04.2015 eine Partnerschaft mit der Jenoptik-Tochter Lechmotoren (Sparte Defense & Civil Systems) bekannt; Jenoptik sollte unter dem Vertrag Stromerzeugungsanlagen, Generatoren, Prüfgeräte und Ersatzteile für einen globalen Patriot-Partner bauen.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-399c866fc838bf1b"
+   ],
+   "uncertainty": "Historische Beziehung vor VINCORION-Markenbildung; Rechtsnachfolge Lechmotoren → VINCORION Power Systems GmbH nur über Unternehmenshistorie (C-028) belegt.",
+   "proposed_depth": "A",
+   "depth_reason": "Historische Querverbindung Jenoptik–Raytheon.",
+   "evidence": "Auszug: Raytheon Company ... is partnering with the Jenoptik subsidiary Lechmotoren, a part of the Jenoptik Defense & Civil Systems division, to produce advanced power generators for the Patriot ... Jenoptik will build power plants, power generators, test equipment and spares for one of Patriot's global partners.",
+   "location": "Pressemitteilung vom 24.04.2015, Absatz 1",
+   "event_date": "2015-04-24",
+   "event_status": "beauftragt (2015)"
+  },
+  {
+   "id": "C-028",
+   "statement": "Unternehmenshistorie laut VINCORION (2022): Lechmotoren kam 2003 zu Jenoptik; 2018 führte die Jenoptik-Gruppe die Mechatronik-Marke VINCORION ein; 2022 wurde STAR Capital Partnership LLP neue Eigentümerin der VINCORION-Gruppe; die Power Systems GmbH sitzt in Altenstadt (Darstellung „VINCORION – Jenoptik Power Systems – located in Altenstadt“).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-c52dfb363bd8c860"
+   ],
+   "uncertainty": "Rechtliche Identität/Umfirmierung nicht über Registerauszug geprüft.",
+   "proposed_depth": "B",
+   "depth_reason": "Historischer Hintergrund.",
+   "evidence": "Paraphrase: 2003 Lechmotoren joined JENOPTIK; 2018 JENOPTIK Group launched new mechatonik brand VINCORION; 2022 STAR Capital Partnership LLP becomes new owner of the VINCORION Group; VINCORION – Jenoptik Power Systems – located in Altenstadt",
+   "location": "PDF-Seite 4, History"
+  },
+  {
+   "id": "C-029",
+   "statement": "Laut VINCORION (02.08.2023) liefert das Unternehmen die Stromversorgung (u. a. EPP radarV, 15-kW-Generatoren für Launcher, Frequenzumformer) für die fünf PATRIOT-Systeme, die die Schweiz bei Raytheon im Programm Air2030 bestellt hat; Fertigung in Altenstadt.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-83f92f2cf0494e24"
+   ],
+   "uncertainty": "Auftraggeber (Raytheon oder Schweizer Beschaffungsstelle) nicht genannt; daher keine Netzwerkkante.",
+   "proposed_depth": "B",
+   "depth_reason": "Programmbezug ohne benannte Gegenpartei.",
+   "evidence": "Auszug: Switzerland has ordered five Patriot air and missile defense systems from U.S. manufacturer Raytheon ... The power supply for the systems is being provided by the technology company VINCORION ... VINCORION manufactures the power supply for Patriot at its site in Altenstadt",
+   "location": "Pressemitteilung vom 02.08.2023, Absätze 1, 3",
+   "event_date": "2023-08-02",
+   "event_status": "beauftragt (laut Herstellerangabe)"
+  },
+  {
+   "id": "C-030",
+   "statement": "Laut VINCORION (19.09.2025) hat die NATO Support and Procurement Agency (NSPA) mit VINCORION einen Rahmenvertrag zur Modernisierung der PATRIOT-Stromversorgungsanlagen durch Obsoleszenzmitigation geschlossen; Volumen zunächst 60 Mio. EUR, investierende Staaten Deutschland, Niederlande, Schweden, Rumänien und Polen, Umsetzung 2025–2030; die PM zitiert NSPA-Generaldirektorin Stacy Cummings zum Rahmenvertrag.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-74f313ac4d339267",
+    "S-56db18e5f6a31a81"
+   ],
+   "uncertainty": "Keine NSPA-Originalveröffentlichung gefunden; defence-network gibt die PM wieder (keine unabhängige Bestätigung); Rahmenhöchstwert ist kein garantierter Umsatz.",
+   "proposed_depth": "A",
+   "depth_reason": "Wesentlicher Kundenauftrag (Wachstumsthema).",
+   "evidence_items": [
+    {
+     "source_id": "S-74f313ac4d339267",
+     "text": "The NATO Support and Procurement Agency (NSPA) has signed a framework agreement with VINCORION to modernize PATRIOT power supply systems ... initially valued at 60 million euros ... Germany, the Netherlands, Sweden, Romania, and Poland ... implemented from 2025 to 2030",
+     "mode": "Auszug",
+     "location": "Pressemitteilung vom 19.09.2025, Abschnitt NATO-Wide Procurement"
+    },
+    {
+     "source_id": "S-56db18e5f6a31a81",
+     "text": "Die NSPA hat mit VINCORION einen Rahmenvertrag geschlossen ... Auftragsvolumen liegt bei zunächst 60 Millionen Euro",
+     "mode": "Auszug",
+     "location": "Meldung vom 19.09.2025, Abschnitt NATO-weite Beschaffung"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "Meldung vom 19.09.2025, Abschnitt NATO-weite Beschaffung; Pressemitteilung vom 19.09.2025, Abschnitt NATO-Wide Procurement",
+   "event_date": "2025-09-19",
+   "event_status": "beauftragt (Rahmenvertrag)"
+  },
+  {
+   "id": "C-031",
+   "statement": "Laut VINCORION (13.06.2024) erhielt die US-Tochter VINCORION LLC von der Defense Logistics Agency zwei fünfjährige Rahmenverträge über bis zu je 33 Mio. USD (zusammen bis 67 Mio. USD) für die Instandhaltung der Generatorsysteme des PATRIOT-Systems.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-b8bbd90710a297a5"
+   ],
+   "uncertainty": "PM-Höchstwerte weichen von amtlichem Datensatz (C-032: 35 Mio. USD für einen Vertrag) ab; zweiter Vertrag nicht amtlich geöffnet.",
+   "proposed_depth": "A",
+   "depth_reason": "Kundenkante US.",
+   "evidence": "Auszug: VINCORION LLC ... has signed major five-year framework agreements worth up to $33 million each with the US Army's Defense Logistics Agency (DLA). The contracts cover the maintenance of the Patriot missile defense system's generator systems",
+   "location": "Pressemitteilung vom 13.06.2024, Absatz 2",
+   "event_date": "2024-06-13",
+   "event_status": "beauftragt (Rahmenverträge)"
+  },
+  {
+   "id": "C-032",
+   "statement": "Amtlicher SAM.gov-Datensatz: Award SPRBL124D0008 vom 08.05.2024 über 35.000.000 USD an VINCORION LLC (El Paso, Texas) – Festpreisvertrag über 4 NSNs zur Unterstützung des Electric Power Plant (EPP) des PATRIOT-Programms, fünf Jahre, als Single-Source-Vergabe (10 U.S.C. 3204(a)(1)); Kontaktstellen mit dla.mil-Adressen.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-945d1e412e25a22f"
+   ],
+   "uncertainty": "Höchstwert ist kein garantierter Umsatz; ausgezahlte Beträge nicht amtlich geprüft.",
+   "proposed_depth": "A",
+   "depth_reason": "Amtliche Bestätigung der Kundenkante.",
+   "evidence": "Paraphrase: award date 2024-05-08, amount 35000000.00, number SPRBL124D0008, awardee VINCORION LLC El Paso TX; 'FFP contract for 4 NSNs to support the Electric Power Plant (EPP) for the Patriot Missile System Program ... awarded as a sole source to Vincorion LLC via 10 U.S.C. 3204(a)(1)'",
+   "location": "API-Felder data2.award und description.body",
+   "event_date": "2024-05-08",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "C-033",
+   "statement": "Amtlicher USAspending-Datensatz: Rahmenvertrag (IDV, Indefinite Delivery/Requirements) W911N225D0008 des Department of the Army (Vergabestelle W6QK LAD) an VINCORION LLC, unterzeichnet 05.03.2025, Laufzeit 10.03.2025–09.03.2030, über 40 Single-Source-Teile für Rekapitalisierung, Reset und Reparatur von PATRIOT-EPP-III-Anlagen am Letterkenny Army Depot.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-6271316e5240ae67"
+   ],
+   "uncertainty": "IDV-Ebene ohne Obligationsbetrag (total_obligation 0); Abrufe unter dem Vertrag nicht ausgewertet.",
+   "proposed_depth": "A",
+   "depth_reason": "Amtliche Kundenkante US Army.",
+   "evidence": "Paraphrase: piid W911N225D0008; type INDEFINITE DELIVERY / REQUIREMENTS; description 'PROCUREMENT OF FORTY DIFFERENT SOLE SOURCE PARTS FOR THE RECAPITALIZATION AND RESET OR REPAIR PROGRAMS FOR THE PHASED ARRAY TRACKING RADAR TO INTERCEPT ON TARGET ELECTRICAL POWER PLANT III ASSETS AT LETTERKENNY ARMY DEPOT'; date_signed 2025-03-05; period 2025-03-10 bis 2030-03-09; awarding Department of the Army, W6QK LAD CONTR OFF",
+   "location": "API-Felder piid, description, date_signed, period_of_performance, awarding_agency",
+   "event_date": "2025-03-05",
+   "event_status": "beauftragt (Rahmenvertrag)"
+  },
+  {
+   "id": "C-034",
+   "statement": "Laut Fachmedienbericht (31.08.2023, Quelle VINCORION) beauftragte das BAAINBw VINCORION mit der Entwicklung von Stromerzeugeraggregaten der 20-kW-Klasse samt Batteriespeichermodulen, nachdem VINCORION ein Jahr zuvor bereits mit der Entwicklung der 200- und 50-kW-Klassen beauftragt worden war; laut VINCORION (18.06.2026) entwickelt das Unternehmen im Auftrag des BAAINBw die nächste Generation taktischer mobiler Stromversorgungssysteme für die Bundeswehr.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2b7291ad743a6f18",
+    "S-41e7bd7b63e2d486"
+   ],
+   "uncertainty": "BAAINBw-Originalpressemitteilung (Nr. 26/2023) unter bundeswehr.de nicht abrufbar (HTTP 404); Vertragswerte/Serienbeschaffung nicht belegt.",
+   "proposed_depth": "A",
+   "depth_reason": "Kundenkante Bundeswehr (Wachstumsthema).",
+   "evidence_items": [
+    {
+     "source_id": "S-2b7291ad743a6f18",
+     "text": "Das BAAINBw hat Vincorion nunmehr beauftragt, Aggregate in der Leistungsklasse 20 Kilowatt sowie dazu passende Batteriespeichermodule zu entwickeln. Das Unternehmen war vor einem Jahr auch bereits mit der Entwicklung von Aggregaten der Leistungsklassen 200 und 50 Kilowatt beauftragt worden.",
+     "mode": "Auszug",
+     "location": "Artikel vom 31.08.2023, Absatz 1; Quellenvermerk „Quelle@Vincorion“"
+    },
+    {
+     "source_id": "S-41e7bd7b63e2d486",
+     "text": "On behalf of the BAAINBw, VINCORION is developing the next generation of tactical, mobile power systems for the Bundeswehr.",
+     "mode": "Auszug",
+     "location": "Pressemitteilung vom 18.06.2026, Absatz 2"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "Artikel vom 31.08.2023, Absatz 1; Quellenvermerk „Quelle@Vincorion“; Pressemitteilung vom 18.06.2026, Absatz 2",
+   "event_date": "2023-08-31",
+   "event_status": "Entwicklungsauftrag"
+  },
+  {
+   "id": "C-035",
+   "statement": "Laut übereinstimmenden Mitteilungen beider Seiten (29.07.2025) vereinbarten VINCORION und Heidelberger Druckmaschinen AG (HEIDELBERG) per Memorandum of Understanding eine mehrjährige strategische Partnerschaft; HEIDELBERG übernimmt Entwicklung, Industrialisierung und Fertigung von Energieregelungs- und -verteilungssystemen für VINCORION und tritt damit erstmals in den Verteidigungsmarkt ein. HEIDELBERG nennt als Partner die VINCORION Advanced Systems GmbH, VINCORION die VINCORION SE.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-f113efb0e3928467",
+    "S-1cd4c98ba7f9a5e2"
+   ],
+   "uncertainty": "Absichtserklärung, keine veröffentlichten Volumina; abweichende Bezeichnung des VINCORION-Vertragspartners (SE vs. Advanced Systems GmbH).",
+   "proposed_depth": "A",
+   "depth_reason": "Zentrale Fertigungskooperation (Wachstumsthema).",
+   "evidence_items": [
+    {
+     "source_id": "S-f113efb0e3928467",
+     "text": "VINCORION SE ... has entered a strategic partnership with Heidelberger Druckmaschinen AG ... Under a Memorandum of Understanding ... HEIDELBERG is entering the defence market with the development, industrialisation and manufacturing of energy regulation and distribution systems for VINCORION",
+     "mode": "Auszug",
+     "location": "Pressemitteilung vom 29.07.2025, Absätze 1–2"
+    },
+    {
+     "source_id": "S-1cd4c98ba7f9a5e2",
+     "text": "strategische Partnerschaft mit der VINCORION Advanced Systems GmbH. Im Rahmen eines Memorandum of Understanding (Absichtserklärung) vereinbarten beide Unternehmen eine mehrjährige Zusammenarbeit ... Industrialisierung und dem Bau von Energieregelungs- und -verteilungssystemen für VINCORION",
+     "mode": "Auszug",
+     "location": "EQS-News (HEIDELBERG) vom 29.07.2025, Absatz 1"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "EQS-News (HEIDELBERG) vom 29.07.2025, Absatz 1; Pressemitteilung vom 29.07.2025, Absätze 1–2",
+   "event_date": "2025-07-29",
+   "event_status": "MoU unterzeichnet"
+  },
+  {
+   "id": "C-036",
+   "statement": "HEIDELBERG berichtete am 12.11.2025, die Partnerschaft mit der VINCORION Advanced Systems GmbH im Bereich Defense verlaufe planmäßig („Zusammenarbeit läuft wie geplant“); in der Pressemitteilung zur Bilanzpressekonferenz 2025/26 (10.06.2026) wird VINCORION nicht erwähnt.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-91d594e29b91bc4a",
+    "S-768bc60bd39f6de8",
+    "S-ed98726b2fefc36a"
+   ],
+   "uncertainty": "Statusangabe ohne Kennzahlen; Nichterwähnung im Juni 2026 ist kein Beleg für Beendigung.",
+   "proposed_depth": "A",
+   "depth_reason": "Umsetzungsstatus der Partnerschaft.",
+   "evidence_items": [
+    {
+     "source_id": "S-91d594e29b91bc4a",
+     "text": "Die im Frühjahr verkündete Partnerschaft mit VINCORION Advanced Systems GmbH im Bereich Defense verläuft planmäßig.",
+     "mode": "Auszug",
+     "location": "PDF-Seite 3, Absatz zum Segment Technology Solutions"
+    },
+    {
+     "source_id": "S-768bc60bd39f6de8",
+     "text": "Strategische Partnerschaft mit VINCORION – Zusammenarbeit läuft wie geplant",
+     "mode": "Auszug",
+     "location": "PDF-Seite 9"
+    },
+    {
+     "source_id": "S-ed98726b2fefc36a",
+     "text": "Abschnitt zum Defense-Geschäft nennt ONBERG/Ondas und HD Advanced Technologies GmbH; VINCORION wird nicht genannt.",
+     "mode": "Paraphrase",
+     "location": "Pressemitteilung vom 10.06.2026, Abschnitte Dual-Use und Starke Partnerschaften"
+    }
+   ],
+   "evidence": "Siehe evidence_items (3 Belege).",
+   "location": "PDF-Seite 3, Absatz zum Segment Technology Solutions; PDF-Seite 9; Pressemitteilung vom 10.06.2026, Abschnitte Dual-Use und Starke Partnerschaften",
+   "event_date": "2025-11-12",
+   "event_status": "laufend (Stand 11/2025)"
+  },
+  {
+   "id": "C-037",
+   "statement": "Laut übereinstimmenden Mitteilungen von Heli-One und VINCORION (08.05.2026) unterzeichneten Heli-One (Norway) AS und VINCORION Advanced Systems GmbH ein Memorandum of Understanding zur gemeinsamen Unterstützung von Markteinführung, Zertifizierung (Supplemental-Type-Certificate-Pfade), Integration und Lebenszyklusbetreuung der elektrischen Rettungswinde ERH premierV für mehrere Hubschraubertypen; Heli-One soll MRO-Leistungen an seinem norwegischen Standort erbringen.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-cc471b88cedc6672",
+    "S-a07d2f17d44253db"
+   ],
+   "uncertainty": "Absichtserklärung (\"intend to partner\"); keine Volumina oder Kundenaufträge.",
+   "proposed_depth": "A",
+   "depth_reason": "Neue Partnerschaft (Wachstumsthema).",
+   "evidence_items": [
+    {
+     "source_id": "S-cc471b88cedc6672",
+     "text": "Heli-One (Norway) AS and VINCORION Advanced Systems GmbH have signed a Memorandum of Understanding (MoU) to jointly support the market introduction, certification, integration, and lifecycle support of VINCORION's next-generation Electrical Rescue Hoist ERH premierV",
+     "mode": "Auszug",
+     "location": "Meldung vom 08.05.2026, Absatz 1"
+    },
+    {
+     "source_id": "S-a07d2f17d44253db",
+     "text": "with Heli-One providing Maintenance, Repair and Overhaul support at its Norwegian facility ... The companies will focus on defining Supplemental Type Certificate (STC) pathways",
+     "mode": "Auszug",
+     "location": "Pressemitteilung vom 08.05.2026, Absätze 3–4"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "Meldung vom 08.05.2026, Absatz 1; Pressemitteilung vom 08.05.2026, Absätze 3–4",
+   "event_date": "2026-05-08",
+   "event_status": "MoU unterzeichnet"
+  },
+  {
+   "id": "C-038",
+   "statement": "Laut VINCORION soll die ERH premierV ihr Debüt auf dem Airbus H145 haben; die H1-2026-Präsentation meldet bestandene wesentliche Tests vor dem Erstflug, einen für Oktober geplanten Erstflug („Timeline aligned with Airbus“) und erste ERH-Auslieferungen für das erste Halbjahr 2027; die Entwicklung wird intern finanziert und aktiviert.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-843d0f17aae3494b",
+    "S-9cd9c3ae3af87af5",
+    "S-71029391d701d972"
+   ],
+   "uncertainty": "Keine Airbus-Bestätigung gefunden; Art der Vereinbarung mit Airbus (Zulassung/Kunde/Integration) nicht veröffentlicht; Erstflug zum Stichtag nicht bestätigt.",
+   "proposed_depth": "A",
+   "depth_reason": "Plattformintegration Wachstumsthema; nur Herstellerangabe.",
+   "evidence_items": [
+    {
+     "source_id": "S-843d0f17aae3494b",
+     "text": "The ERH premierV will make its debut on the Airbus H145",
+     "mode": "Auszug",
+     "location": "Produktseite Hoist Systems, Abschnitt Developed for the Airbus H145"
+    },
+    {
+     "source_id": "S-9cd9c3ae3af87af5",
+     "text": "ERH successfully passed crucial tests that need to be completed before the first flight; Due to scheduling constraints, the first ERH flight is planned for October – Timeline aligned with Airbus; First ERH deliveries planned for H1 2027",
+     "mode": "Auszug",
+     "location": "PDF-Seite 5, Highlights Q2 26 – Aviation"
+    },
+    {
+     "source_id": "S-71029391d701d972",
+     "text": "recognition of development costs for the internally financed Electrical Rescue Hoist (ERH) project under intangible assets",
+     "mode": "Auszug",
+     "location": "PDF-Seite 15 (gedruckt 13), 3 Financial Position"
+    }
+   ],
+   "evidence": "Siehe evidence_items (3 Belege).",
+   "location": "PDF-Seite 15 (gedruckt 13), 3 Financial Position; PDF-Seite 5, Highlights Q2 26 – Aviation; Produktseite Hoist Systems, Abschnitt Developed for the Airbus H145",
+   "event_status": "Entwicklung/Test; Lieferung geplant H1 2027"
+  },
+  {
+   "id": "C-039",
+   "statement": "In der Q1-2026-Präsentation nennt VINCORION als langfristiges Umsatzpotenzial u. a. ERH für Airbus H175, IRIS-T SLX, MGCS, Hochvolt-Architektur, TPS (militärisch/zivil) und Spares Pooling sowie „increased strategic partnerships to secure the ramp-up“.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e1f50ca0e7fe88cd"
+   ],
+   "uncertainty": "Unternehmensplanung/Potenzialdarstellung; keine Aufträge oder Verträge mit Airbus, Diehl oder MGCS-Beteiligten belegt.",
+   "proposed_depth": "A",
+   "depth_reason": "Wird im Wachstumsthema referenziert; nur Absichtsdarstellung.",
+   "evidence_items": [
+    {
+     "source_id": "S-e1f50ca0e7fe88cd",
+     "text": "Long-term revenue potential: ... TPS (military/civil), IRIS-T SLX, ERH Airbus H175, High-voltage architecture, MGCS, Spares pooling",
+     "mode": "Paraphrase",
+     "location": "PDF-Seite 16, Well-positioned for long-term revenue growth"
+    },
+    {
+     "source_id": "S-e1f50ca0e7fe88cd",
+     "text": "4 Increased strategic partnerships to secure the ramp-up",
+     "mode": "Auszug",
+     "location": "PDF-Seite 6, Ramp-up measures"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "PDF-Seite 16, Well-positioned for long-term revenue growth; PDF-Seite 6, Ramp-up measures",
+   "event_status": "geplant/Potenzial"
+  },
+  {
+   "id": "C-040",
+   "statement": "Laut VINCORION (12.04.2026) ist die VINCORION Power Systems GmbH Partner im EDF-geförderten Projekt SENTINEL (42 Partner aus 16 Ländern, Koordinator TECES); sie liefert ein 50-kW-Stromerzeugermodul (PGM) und ein 50-kWh-Energiespeichermodul (ESM), leitet die Integration aller Demonstrator-Prototypen und verantwortet den Bereich Energiespeicherung; die erste Testkampagne erfolgt mit der Universität der Bundeswehr München, weitere Feldtests u. a. in den Niederlanden und auf Aruba.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-69e48c46a7fb7031"
+   ],
+   "uncertainty": "Geförderte Forschung/Demonstration, kein Serienauftrag; Fördersumme für VINCORION nicht genannt.",
+   "proposed_depth": "A",
+   "depth_reason": "Projektkante (Wachstumsthema).",
+   "evidence": "Auszug: VINCORION Power Systems GmbH is playing a key role in the European research project SENTINEL ... funded by the European Defence Fund (EDF) and brings together 42 partners from 16 countries ... contributing ... a 50-kilowatt power generator module (PGM) and a 50-kilowatt-hour energy storage module (ESM) ... The first test campaign is being conducted in collaboration with the University of the Federal Armed Forces in Munich ... leading the integration of all demonstration prototypes ... overall responsibility for the area of energy storage",
+   "location": "Pressemitteilung vom 12.04.2026 (deutsche Fassung 04.03.2026), Absätze 1–2, 5–6, 8",
+   "event_status": "laufend"
+  },
+  {
+   "id": "C-041",
+   "statement": "Amtliche bzw. Partnerangaben zu SENTINEL: Das slowenische Verteidigungsministerium nennt ein vom Europäischen Verteidigungsfonds 2025 bestätigtes Projekt im Wert von knapp 57 Mio. EUR, koordiniert vom Maribor-Cluster TECES (Stand 10.02.2026: 40 Partner aus 15 EU-Staaten); die Projektseite der Universität Maribor nennt die Laufzeit 01.11.2025–01.11.2029 und führt u. a. Vincorion Power Systems GmbH, Rheinmetall Project Solutions GmbH, Universität der Bundeswehr München, Leonardo, Thales, Indra, Intracom Defense und Equipos Móviles de Campaña ARPA als Partner.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-c18959e803f1e64d",
+    "S-be1ed12b7791fc5f"
+   ],
+   "uncertainty": "Partnerzahl uneinheitlich (40 laut Ministerium, 42 laut VINCORION/Robotina); gemeinsame Projektteilnahme belegt keine bilaterale Kooperation.",
+   "proposed_depth": "A",
+   "depth_reason": "Unabhängige Bestätigung der Projektteilnahme.",
+   "evidence_items": [
+    {
+     "source_id": "S-c18959e803f1e64d",
+     "text": "Mednarodni projekt v vrednosti skoraj 57 milijonov evrov, ki ga izvaja konzorcij 40 partnerjev iz 15 držav članic Evropske unije, vodi in usklajuje ... TECES",
+     "mode": "Auszug",
+     "location": "Meldung vom 10.02.2026, Absätze 1 und 3"
+    },
+    {
+     "source_id": "S-be1ed12b7791fc5f",
+     "text": "Period: 01.11.2025 – 01.11.2029; PROJECT COORDINATOR: TECES ...; PROJECT PARTNERS: ... Rheinmetall Project Solutions GmbH ... Universitaet der Bundeswehr Muenchen UniBw M, Vincorion Power Systems GmbH, WB Electronics S.A.",
+     "mode": "Paraphrase",
+     "location": "Projektseite, Abschnitte Period/Project Partners"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "Meldung vom 10.02.2026, Absätze 1 und 3; Projektseite, Abschnitte Period/Project Partners",
+   "event_status": "laufend"
+  },
+  {
+   "id": "C-042",
+   "statement": "NOMAD (EDF 2021): Das EU-Factsheet führt die VINCORION POWER SYSTEMS GMBH als Konsortialmitglied des Projekts zur Entwicklung von Energiespeichern für vorgeschobene Operationsbasen (Koordinator Equipos Móviles de Campaña ARPA, Laufzeit 50 Monate, geschätzte Gesamtkosten 20,7 Mio. EUR, maximaler EU-Beitrag 19,7 Mio. EUR); laut VINCORION (2022) erhält das Unternehmen 1,7 Mio. EUR von EU und Bundesministerium der Verteidigung, mit wesentlichen Integrations- und Testarbeiten bei VINCORION.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-908c95b84910ee11",
+    "S-511f097415d21638"
+   ],
+   "uncertainty": "Factsheet als Kopie auf Intracom-Website geöffnet (EU-Original nicht separat geöffnet); Projektstatus 2026 nicht geprüft.",
+   "proposed_depth": "A",
+   "depth_reason": "Projektkante.",
+   "evidence_items": [
+    {
+     "source_id": "S-908c95b84910ee11",
+     "text": "MEMBERS OF THE CONSORTIUM: EQUIPOS MÓVILES DE CAMPAÑA ARPA, S.A.U. Spain (Coordinator) ... VINCORION POWER SYSTEMS GMBH Germany; DURATION 50 months; ESTIMATED TOTAL COST € 20,718,040.72; MAXIMUM EU CONTRIBUTION € 19,687,421.02",
+     "mode": "Paraphrase",
+     "location": "PDF-Seiten 1–3, Members of the Consortium"
+    },
+    {
+     "source_id": "S-511f097415d21638",
+     "text": "Of this amount, 1.7 million euros from the EU as well as the German Ministry of Defense will go to VINCORION ... significant parts of the integration and testing process will take place at VINCORION",
+     "mode": "Auszug",
+     "location": "Pressemitteilung vom 23.09.2022, Absätze 1–2"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "PDF-Seiten 1–3, Members of the Consortium; Pressemitteilung vom 23.09.2022, Absätze 1–2",
+   "event_status": "gefördert (Start laut VINCORION 2024, 4 Jahre)"
+  },
+  {
+   "id": "C-043",
+   "statement": "Überschneidung: TECES (SENTINEL-Koordinator) und Equipos Móviles de Campaña ARPA (NOMAD-Koordinator) sind laut den Konsortiallisten sowohl in NOMAD als auch in SENTINEL vertreten – jeweils gemeinsam mit VINCORION Power Systems GmbH; ebenso u. a. Thales, CEA, Fraunhofer, TNO, INTA, Institutt for Energiteknikk, Intracom Defense und Smartis. Eine bilaterale Kooperation zwischen diesen Akteuren und VINCORION ist damit nicht belegt.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-908c95b84910ee11",
+    "S-be1ed12b7791fc5f"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "A",
+   "depth_reason": "Überschneidungskante, Abgrenzung zu Kooperation.",
+   "evidence_items": [
+    {
+     "source_id": "S-908c95b84910ee11",
+     "text": "Konsortialliste NOMAD u. a. ARPA (Coordinator), CEA, Fraunhofer, IFE, INTA, Intracom Defense, TNO, Smartis, TECES, Thales, VINCORION POWER SYSTEMS GMBH",
+     "mode": "Paraphrase",
+     "location": "PDF-Seiten 2–3"
+    },
+    {
+     "source_id": "S-be1ed12b7791fc5f",
+     "text": "Partnerliste SENTINEL u. a. TECES (Coordinator), CEA, Thales Espana, TNO, ARPA, Fraunhofer, Intracom Defense, IFE, INTA, Smartis, Thales, Vincorion Power Systems GmbH",
+     "mode": "Paraphrase",
+     "location": "Projektseite, Abschnitt Project Partners"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "PDF-Seiten 2–3; Projektseite, Abschnitt Project Partners"
+  },
+  {
+   "id": "C-044",
+   "statement": "Laut VINCORION (18.06.2026) stellte das Unternehmen auf der Eurosatory 2026 mit dem Mitaussteller ReactiveDynamics aus und zeigte, dass PGM tacticalV/ESM hybridV unbemannte Bodenfahrzeuge wie das RDX-1 laden können; eine „potential collaboration“ wird als möglicher Schritt bezeichnet, eine Vereinbarung wird nicht genannt.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-41e7bd7b63e2d486"
+   ],
+   "uncertainty": "Gemeinsamer Messeauftritt/Demonstration; keine vertragliche Kooperation belegt.",
+   "proposed_depth": "A",
+   "depth_reason": "Wird als Kante (Sonstige) gezeigt; Statusgrenze wichtig.",
+   "evidence": "Auszug: VINCORION will be exhibiting at Eurosatory in Paris alongside its co-exhibitor, ReactiveDynamics ... ESM hybridV energy storage modules, which can be used to charge unmanned ground vehicles such as ReactiveDynamics' RDX-1 ... A potential collaboration could represent an important step",
+   "location": "Pressemitteilung vom 18.06.2026, Absätze 1–2, 7",
+   "event_date": "2026-06-15",
+   "event_status": "Messedemonstration; Kooperation nicht vereinbart"
+  },
+  {
+   "id": "C-045",
+   "statement": "VINCORION meldete für Juni 2026 Auftragseingänge von mehr als 100 Mio. EUR, darunter einen Auftrag über 20 Mio. EUR für Stromerzeuger bodengebundener Luftverteidigungssysteme und einen über 54 Mio. EUR für Stabilisierungssysteme gepanzerter Fahrzeuge; Auftraggeber werden nicht genannt. Der Halbjahresbericht nennt den 54-Mio.-EUR-Auftrag als Umwandlung aus dem Soft Order Backlog.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-5b0528578c3076e0",
+    "S-71029391d701d972"
+   ],
+   "uncertainty": "Kunde/Programm nicht genannt (keine Netzwerkkante); ES&T (30.07.2026) gibt nur die Meldung wieder.",
+   "proposed_depth": "A",
+   "depth_reason": "Wachstumsrelevante Aufträge ohne Gegenpartei.",
+   "evidence_items": [
+    {
+     "source_id": "S-5b0528578c3076e0",
+     "text": "secured a major order worth EUR 20 million for power generators used in ground-based air defense systems ... a major contract worth EUR 54 million for stabilization systems for armored vehicles",
+     "mode": "Auszug",
+     "location": "EQS-Meldung vom 29.07.2026, Absätze 2–3"
+    },
+    {
+     "source_id": "S-71029391d701d972",
+     "text": "These include a major contract worth EUR 54 million for stabilization systems for armored vehicles that has been won by the Vehicles segment.",
+     "mode": "Auszug",
+     "location": "PDF-Seite 14 (gedruckt 12), Order Book"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "EQS-Meldung vom 29.07.2026, Absätze 2–3; PDF-Seite 14 (gedruckt 12), Order Book",
+   "event_status": "beauftragt (Juni 2026)"
+  },
+  {
+   "id": "C-046",
+   "statement": "Laut VINCORION-Website bestehen Rahmenverträge u. a. mit der U.S. Army, dem BAAINBw und der NSPA für Instandhaltung und Obsoleszenzmitigation im Bereich bodengebundene Luftverteidigung.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2267af5e02fda855"
+   ],
+   "uncertainty": "Undatierte Webseitenangabe; Einzelverträge siehe C-030 bis C-034.",
+   "proposed_depth": "A",
+   "depth_reason": "Stützt Kundenkanten.",
+   "evidence": "Auszug: Framework agreements with the U.S. Army, BAAINBw, and the NATO Support and Procurement Agency (NSPA), among others, for maintenance and obsolescence mitigation",
+   "location": "Produktseite Ground-Based Air Defense, Facts and Figures"
+  },
+  {
+   "id": "C-047",
+   "statement": "Laut VINCORION-Website: Die hydraulische NH90-Rettungswinde ist exklusiv im NH90 verbaut; Rettungswinden wurden seit den 1970er-Jahren für die Bundeswehr (ab Bell UH-1D) geliefert; für den Eurofighter liefert VINCORION Composite-Radome und Notstromgeneratoren; außerhalb der USA ist VINCORION exklusiv für die Instandhaltung der Radome der Boeing-AWACS-Flugzeuge zuständig.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-843d0f17aae3494b",
+    "S-b99b3531c8acfb3b"
+   ],
+   "uncertainty": "Vertragspartner (OEM, NHIndustries, Eurofighter GmbH, Betreiber) nicht genannt; daher keine Kanten.",
+   "proposed_depth": "B",
+   "depth_reason": "Plattformintegration Aviation ohne Gegenpartei.",
+   "evidence_items": [
+    {
+     "source_id": "S-843d0f17aae3494b",
+     "text": "Our NH90 hydraulic rescue hoist ... Exclusively installed in the NH90 helicopter ... Since the introduction of the Bell UH-1D, the Bundeswehr has relied on our expertise in rescue hoists",
+     "mode": "Auszug",
+     "location": "Produktseite Hoist Systems, Abschnitte NH90 Rescue Hoist und From the UH-1D to the NH90"
+    },
+    {
+     "source_id": "S-b99b3531c8acfb3b",
+     "text": "components for the Eurofighter ... composite radomes ... two emergency power generators ... outside the United States, we are exclusively responsible for maintaining the radomes of Boeing AWACS reconnaissance aircraft",
+     "mode": "Auszug",
+     "location": "Produktseite Special Products, Absätze 1–3"
+    }
+   ],
+   "evidence": "Siehe evidence_items (2 Belege).",
+   "location": "Produktseite Hoist Systems, Abschnitte NH90 Rescue Hoist und From the UH-1D to the NH90; Produktseite Special Products, Absätze 1–3"
+  },
+  {
+   "id": "C-048",
+   "statement": "Laut VINCORION ist der Puma der erste Schützenpanzer mit einem von VINCORION entwickelten 170-kW-Hochvolt-Energiesystem (Generator auf der Hauptwelle zwischen Motor und Getriebe).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-3d9c89bef4d43468"
+   ],
+   "uncertainty": "Abnehmer (OEM/Gemeinschaftsunternehmen) nicht genannt.",
+   "proposed_depth": "B",
+   "depth_reason": "Plattformintegration ohne Gegenpartei.",
+   "evidence": "Auszug: High-voltage generators with over 100 kW, integrated directly onto the main shaft between the engine and transmission ... The Puma is the first IFV with a 170 kW high-voltage power system developed by VINCORION.",
+   "location": "Produktseite Land Energy Systems, Abschnitt Puma"
+  },
+  {
+   "id": "C-049",
+   "statement": "Beim Börsengang agierten BNP PARIBAS, J.P. Morgan SE und Berenberg als Joint Global Coordinators und Joint Bookrunners, COMMERZBANK (in Kooperation mit ODDO BHF) und UniCredit als weitere Joint Bookrunners; Rothschild & Co beriet STAR Capital und VINCORION.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-125b291429b46297"
+   ],
+   "uncertainty": "",
+   "proposed_depth": "B",
+   "depth_reason": "Transaktionsdienstleister; nicht als Netzwerkkante gezeichnet.",
+   "evidence": "Auszug: BNP PARIBAS, J.P. Morgan SE, and Berenberg were acting as Joint Global Coordinators and Joint Bookrunners. COMMERZBANK in cooperation with ODDO BHF, and UniCredit were acting as additional Joint Bookrunners. Rothschild & Co was acting as financial adviser to STAR Capital and VINCORION.",
+   "location": "EQS-Meldung vom 19.03.2026, vorletzter Absatz vor Unternehmensprofil"
+  }
+ ],
+ "source_proposals": [
+  {
+   "id": "S-a33cf7c1eeb40a5f",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "VINCORION SE joins the SDAX just weeks after successful IPO",
+   "url": "https://vincorion.com/en/vincorion-se-joins-the-sdax-just-weeks-after-successful-ipo/",
+   "published_date": "2026-06-04",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-125b291429b46297",
+   "name": "EQS News / VINCORION SE",
+   "title": "VINCORION SE successfully completes Initial Public Offering",
+   "url": "https://www.eqs-news.com/news/corporate/vincorion-se-successfully-completes-initial-public-offering/308745c8-8624-454b-8d71-d00666ac5fc1_en",
+   "published_date": "2026-03-19",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-54bbffea5b8c5b3a",
+   "name": "STAR Capital Partnership LLP",
+   "title": "VINCORION IPO",
+   "url": "https://www.star-capital.com/news-and-insights/vincorion-ipo.html",
+   "published_date": "2026-03-20",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Partnerangabe"
+  },
+  {
+   "id": "S-b9f1cea99e909e3f",
+   "name": "STAR Capital Partnership LLP",
+   "title": "STAR Capital acquires Vincorion from parent company Jenoptik",
+   "url": "https://www.star-capital.com/news-and-insights/star-capital-acquires-vincorion-from-parent-company-jenoptik.html",
+   "published_date": "2022-07-01",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Partnerangabe"
+  },
+  {
+   "id": "S-621777214055324d",
+   "name": "STAR Capital Partnership LLP",
+   "title": "Portfolio: Vincorion",
+   "url": "https://www.star-capital.com/portfolio/vincorion.html",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Partnerangabe"
+  },
+  {
+   "id": "S-0a9ea0dbc48fd48c",
+   "name": "EQS News / VINCORION SE",
+   "title": "Jahresfinanzbericht 2025 VINCORION SE (ZIP; Datei VISE_Abschluss_FY25_EN.pdf: Jahresabschluss und Anhang für das Rumpfgeschäftsjahr 28.01.–31.12.2025)",
+   "url": "https://www.eqs-news.com/media/document/aab835db-f638-4f98-8ab5-d47804eceaf8/assets/DE000VNC0014-JA-2025-EQ-E-00.zip",
+   "published_date": "2026-05-12",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Originalbericht",
+   "report_year": 2025,
+   "section": "Anhang (Exhibit 4), Abschnitte B, C, D, F"
+  },
+  {
+   "id": "S-71029391d701d972",
+   "name": "EQS News / VINCORION SE",
+   "title": "Half-Year Financial Report 2026 (VINCORION SE)",
+   "url": "https://www.eqs-news.com/media/document/4b669fed-814f-48d1-8678-d29720f9560c/assets/DE000VNC0014-Q2-2026-EQ-E-00.pdf",
+   "published_date": "2026-08-13",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Originalbericht",
+   "report_year": 2026,
+   "page": "PDF-Seiten 6–28 (gedruckte Seiten 04–26; gedruckte Seite = PDF-Seite minus 2)"
+  },
+  {
+   "id": "S-9cd9c3ae3af87af5",
+   "name": "EQS News / VINCORION SE",
+   "title": "VINCORION H1 2026 Results Presentation",
+   "url": "https://www.eqs-news.com/media/document/0f2dd31d-9994-4d99-9b4f-9bfc77e5e5f8/assets/2026-08-13_VINC_HY1_2026_result_presentation_final.pdf",
+   "published_date": "2026-08-13",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe",
+   "report_year": 2026,
+   "page": "PDF-Seite 5"
+  },
+  {
+   "id": "S-e1f50ca0e7fe88cd",
+   "name": "EQS News / VINCORION SE",
+   "title": "VINCORION Q1 2026 Results Presentation",
+   "url": "https://www.eqs-news.com/media/document/bcf3789a-c391-49d7-85cb-31b54cd81fd6/assets/20260506_VINCQ1results_presentation_01.pdf",
+   "published_date": "2026-05-07",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe",
+   "report_year": 2026,
+   "page": "PDF-Seiten 6 und 16"
+  },
+  {
+   "id": "S-c937f9b7f798fc88",
+   "name": "EQS News / VINCORION SE",
+   "title": "Audited Consolidated Financial Statements of VINCORION Holding GmbH 2025 (IFRS)",
+   "url": "https://www.eqs-news.com/media/document/24ddf13e-6ac7-4144-b9e7-248345f3c2ca/assets/Audited_Consolidated_Financial_Statements_of_VINCORION_Holding_GmbH_202.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Originalbericht",
+   "report_year": 2025,
+   "page": "PDF-Seiten 7–42 (gedruckte Seiten F-9 bis F-44; gedruckte Seite = PDF-Seite plus 2)"
+  },
+  {
+   "id": "S-a8b6a9bf5c56126e",
+   "name": "EQS News / VINCORION SE",
+   "title": "Audited Consolidated Financial Statements of VINCORION Holding GmbH 2024 (IFRS)",
+   "url": "https://www.eqs-news.com/media/document/53119d46-468f-4cbd-9301-691526a3954e/assets/Audited_Consolidated_Financial_Statements_of_VINCORION_Holding_GmbH_202.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Originalbericht",
+   "report_year": 2024,
+   "page": "PDF-Seiten 35–36"
+  },
+  {
+   "id": "S-56ddab9dedaa1e0b",
+   "name": "EQS News / VINCORION SE",
+   "title": "Audited Consolidated Financial Statements of VINCORION Holding GmbH 2023 (IFRS)",
+   "url": "https://www.eqs-news.com/media/document/a639e48a-2a12-46cd-87f3-75764bdd5045/assets/Audited_Consolidated_Financial_Statements_of_VINCORION_Holding_GmbH_202.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Originalbericht",
+   "report_year": 2023,
+   "page": "PDF-Seiten 37–38"
+  },
+  {
+   "id": "S-4988896bf7d4ec42",
+   "name": "EQS News / VINCORION SE",
+   "title": "Stimmrechtsmitteilung STAR Capital Partnership LLP (Release according to Art. 40 (1) WpHG)",
+   "url": "https://www.eqs-news.com/news/voting-rights/star-capital-partnership-llp-london-united-kingdom/4fb3843c-013c-4e76-90ff-0347b3fe1200_en",
+   "published_date": "2026-03-26",
+   "accessed_date": "2026-10-20",
+   "source_kind": "amtlicher Datensatz",
+   "section": "Pflichtmitteilung nach WpHG"
+  },
+  {
+   "id": "S-c27f8234745c7d46",
+   "name": "EQS News / VINCORION SE",
+   "title": "Stimmrechtsmitteilung STAR Capital Partnership LLP (Veröffentlichung gemäß § 40 Abs. 1 WpHG)",
+   "url": "https://www.eqs-news.com/news/voting-rights/star-capital-partnership-llp-london-grosbritannien/ca26d6d1-b6f4-4843-8026-080b3276d5c3_de",
+   "published_date": "2026-04-24",
+   "accessed_date": "2026-10-20",
+   "source_kind": "amtlicher Datensatz",
+   "section": "Pflichtmitteilung nach WpHG"
+  },
+  {
+   "id": "S-7a846a5847661f28",
+   "name": "EQS News / VINCORION SE",
+   "title": "Stimmrechtsmitteilung Caisse des Dépôts et Consignations (Release according to Art. 40 (1) WpHG)",
+   "url": "https://www.eqs-news.com/news/voting-rights/caisse-des-depots-et-consignations-paris-france/475d8ff9-12d3-44fd-9e12-c6d2e10f5c09_en",
+   "published_date": "2026-09-25",
+   "accessed_date": "2026-10-20",
+   "source_kind": "amtlicher Datensatz",
+   "section": "Pflichtmitteilung nach WpHG"
+  },
+  {
+   "id": "S-2aa87887987537b4",
+   "name": "EQS News / VINCORION SE",
+   "title": "VINCORION plans Initial Public Offering on Frankfurt Stock Exchange",
+   "url": "https://www.eqs-news.com/news/corporate/vincorion-plans-initial-public-offering-on-frankfurt-stock-exchange/f0168675-b51b-4a9c-acdb-48dfaf818238_en",
+   "published_date": "2026-03-06",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-5b0528578c3076e0",
+   "name": "EQS News / VINCORION SE",
+   "title": "VINCORION Records More Than EUR 100 Million in Order Intake in June 2026",
+   "url": "https://www.eqs-news.com/news/corporate/vincorion-records-more-than-eur-100-million-in-order-intake-in-june-2026/e5205123-dc41-4bfd-a5a5-3f14fb8b4278_en",
+   "published_date": "2026-07-29",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-69e48c46a7fb7031",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "VINCORION takes on key role in European defense project SENTINEL",
+   "url": "https://vincorion.com/en/vincorion-takes-on-key-role-in-european-defense-project-sentinel-2/",
+   "published_date": "2026-04-12",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-be1ed12b7791fc5f",
+   "name": "Universität Maribor, GeMMA Lab",
+   "title": "SENTINEL – Projektseite (Partnerliste)",
+   "url": "https://gemma.feri.um.si/projects/international-projects/sentinel/",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Partnerangabe"
+  },
+  {
+   "id": "S-c18959e803f1e64d",
+   "name": "Republik Slowenien, Verteidigungsministerium (gov.si)",
+   "title": "V Mariboru začeli aktivnosti projekta trajnostnih energetskih zmogljivosti (SENTINEL)",
+   "url": "https://www.gov.si/novice/2026-02-10-v-mariboru-zaceli-aktivnosti-projekta-trajnostnih-energetskih-zmogljivosti/",
+   "published_date": "2026-02-10",
+   "accessed_date": "2026-10-20",
+   "source_kind": "amtlicher Datensatz"
+  },
+  {
+   "id": "S-a07d2f17d44253db",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "Heli-One and VINCORION intend to partner to bring next-generation Electrical Rescue Hoist (ERH) to civil and military helicopter market",
+   "url": "https://vincorion.com/en/heli-one-and-vincorion-intend-to-partner-to-bring-next-generation-electrical-rescue-hoist-erh-to-civil-and-military-helicopter-market/",
+   "published_date": "2026-05-08",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-cc471b88cedc6672",
+   "name": "Heli-One",
+   "title": "Heli-One and VINCORION intend to partner to bring next-generation Electrical Rescue Hoist (ERH) to civil and military helicopter market",
+   "url": "https://www.heli-one.com/news-insights/heli-one-and-vincorion-intend-to-partner-to-bring-next-generation-electrical-rescue-hoist-erh-to-civil-and-military-helicopter-market",
+   "published_date": "2026-05-08",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Partnerangabe"
+  },
+  {
+   "id": "S-f113efb0e3928467",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "VINCORION enters strategic partnership with industrialisation specialist HEIDELBERG",
+   "url": "https://vincorion.com/en/strategic-partner-heidelberg/",
+   "published_date": "2025-07-29",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-1cd4c98ba7f9a5e2",
+   "name": "Börse Online (dpa-AFX / EQS-News-Kopie)",
+   "title": "EQS-News: HEIDELBERG vereinbart strategische Partnerschaft mit Defence-Spezialist VINCORION (deutsch)",
+   "url": "https://www.boerse-online.de/dpa-afx/eqs-news-heidelberg-vereinbart-strategische-partnerschaft-mit-defence-spezialist-vincorion-deutsch-461126.html",
+   "published_date": "2025-07-29",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Drittanbieter-Kopie"
+  },
+  {
+   "id": "S-91d594e29b91bc4a",
+   "name": "Heidelberger Druckmaschinen AG",
+   "title": "Pressemitteilung Halbjahr 2025/26 (Q2 2025/26)",
+   "url": "https://www.heidelberg.com/global/media/de/global_media/investor_relations/ir_reports_and_presentations/2025_26/20251112_q2_25_26_press_release.pdf",
+   "published_date": "2025-11-12",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Partnerangabe",
+   "page": "PDF-Seite 3"
+  },
+  {
+   "id": "S-768bc60bd39f6de8",
+   "name": "Heidelberger Druckmaschinen AG",
+   "title": "Q2 2025/26 Presentation (Conference Call)",
+   "url": "https://www.heidelberg.com/global/media/en/global_media/investor_relations/ir_reports_and_presentations/2025_26/251112_q2_2526_presentation_cc.pdf",
+   "published_date": "2025-11-12",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Partnerangabe",
+   "page": "PDF-Seite 9"
+  },
+  {
+   "id": "S-ed98726b2fefc36a",
+   "name": "Heidelberger Druckmaschinen AG",
+   "title": "Pressemitteilung Bilanzpressekonferenz 2025/26",
+   "url": "https://www.heidelberg.com/global/media/de/global_media/investor_relations/ir_reports_and_presentations/2025_26/260610_apc_2526_press_release.pdf",
+   "published_date": "2026-06-10",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Partnerangabe"
+  },
+  {
+   "id": "S-6e6d85a309774afc",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "VINCORION Awarded Major Contract for Generators for the Boxer Wheeled Tank",
+   "url": "https://vincorion.com/en/vincorion-awarded-major-contract-for-generators-for-the-boxer-wheeled-tank/",
+   "published_date": "2024-04-04",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-6a21b1224ef5726f",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "Reliable Power Supply for the Modern Boxer and Other Armored Vehicles",
+   "url": "https://vincorion.com/en/boxer-power-supply-generators-epg/",
+   "published_date": "2024-11-18",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-87c277a6a09bd73e",
+   "name": "ES&T – Europäische Sicherheit & Technik",
+   "title": "600A-Generatoren für die neuen Boxer",
+   "url": "https://esut.de/2024/04/meldungen/48687/600a-generatoren-fuer-die-neuen-boxer/",
+   "published_date": "2024-04-04",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Wiedergabe"
+  },
+  {
+   "id": "S-b8bbd90710a297a5",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "VINCORION Wins $67 Million Contract for Patriot Maintenance in the United States",
+   "url": "https://vincorion.com/en/patriot-maintenance-million-contract/",
+   "published_date": "2024-06-13",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-945d1e412e25a22f",
+   "name": "SAM.gov (U.S. General Services Administration)",
+   "title": "Award Notice SPRBL124D0008 – EPP Spare Parts (API-Datensatz)",
+   "url": "https://sam.gov/api/prod/opps/v2/opportunities/84889090d3d740259c91511e97f1826f",
+   "published_date": "2024-05-22",
+   "accessed_date": "2026-10-20",
+   "source_kind": "amtlicher Datensatz"
+  },
+  {
+   "id": "S-6271316e5240ae67",
+   "name": "USAspending.gov (U.S. Department of the Treasury)",
+   "title": "Award Profile IDV W911N225D0008 (API-Datensatz)",
+   "url": "https://api.usaspending.gov/api/v2/awards/CONT_IDV_W911N225D0008_9700/",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "amtlicher Datensatz"
+  },
+  {
+   "id": "S-1aa8f95b2599facc",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "High-Tech for Precise Hits: VINCORION Supplies Innovative GTD chaserV Weapon Stabilization System",
+   "url": "https://vincorion.com/en/large-scale-weapon-stabilization-gtd-chaser/",
+   "published_date": "2024-06-19",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-83f92f2cf0494e24",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "VINCORION Provides Power for Switzerland's Patriot System",
+   "url": "https://vincorion.com/en/vincorion-switzerland-patriot/",
+   "published_date": "2023-08-02",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-511f097415d21638",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "EU Supports Development of New Power Storage Systems by VINCORION Within the Scope of NOMAD Project",
+   "url": "https://vincorion.com/en/eu-supports-development-of-new-power-storage-systems-by-vincorion-within-the-scope-of-nomad-project/",
+   "published_date": "2022-09-23",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-908c95b84910ee11",
+   "name": "Intracom Defense (Kopie eines EU-Factsheets)",
+   "title": "NOMAD – Selected Projects European Defence Fund (EDF) 2021 (Factsheet ©European Union 2022)",
+   "url": "https://www.intracomdefense.com/wp-content/uploads/2023/08/NOMAD.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Drittanbieter-Kopie",
+   "page": "PDF-Seiten 1–3"
+  },
+  {
+   "id": "S-74f313ac4d339267",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "Operational Superiority with State-of-the-Art Logistics: VINCORION Introduces Next-Gen Power for Air Defense",
+   "url": "https://vincorion.com/en/operational-superiority-with-state-of-the-art-logistics-vincorion-introduces-next-gen-power-for-air-defense/",
+   "published_date": "2025-09-19",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-56db18e5f6a31a81",
+   "name": "defence-network.com",
+   "title": "VINCORION präsentiert „NextGen“-Power für Luftverteidigung",
+   "url": "https://defence-network.com/vincorion-nextgen-power-fuer-luftverteidigung/",
+   "published_date": "2025-09-19",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Wiedergabe"
+  },
+  {
+   "id": "S-41e7bd7b63e2d486",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "Mobile Energy Systems for Future-Proof Deployment Scenarios",
+   "url": "https://vincorion.com/en/mobile-energy-systems-for-future-proof-deployment-scenarios/",
+   "published_date": "2026-06-18",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-555547ca1efb774c",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "Energy for Europe's Security: VINCORION at Eurosatory 2026",
+   "url": "https://vincorion.com/en/energy-for-europes-security-vincorion-at-eurosatory-2026/",
+   "published_date": "2026-06-15",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-2267af5e02fda855",
+   "name": "VINCORION SE (Website)",
+   "title": "Power Systems – Ground-Based Air Defense",
+   "url": "https://vincorion.com/en/power-systems/ground-based-air-defense/",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-843d0f17aae3494b",
+   "name": "VINCORION SE (Website)",
+   "title": "Aircraft Systems – Hoist Systems",
+   "url": "https://vincorion.com/en/aircraft-systems/hoist-systems/",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-3d9c89bef4d43468",
+   "name": "VINCORION SE (Website)",
+   "title": "Vehicle Systems – Land Energy Systems",
+   "url": "https://vincorion.com/en/vehicle-systems/land-energy-systems/",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-b99b3531c8acfb3b",
+   "name": "VINCORION SE (Website)",
+   "title": "Aircraft Systems – Special Products",
+   "url": "https://vincorion.com/en/aircraft-systems/special-products/",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe"
+  },
+  {
+   "id": "S-945a20788677cd82",
+   "name": "Militär Aktuell",
+   "title": "Diehl: Vincorion supplies IRIS-T SLM with energy",
+   "url": "https://militaeraktuell.at/en/diehl-vincorion-supplies-iris-t-slm-with-energy/",
+   "published_date": "2023-03-22",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-be02a1cc64071dd5",
+   "name": "ES&T – Europäische Sicherheit & Technik",
+   "title": "Energieversorgung für IRIS-T SLM",
+   "url": "https://esut.de/2023/02/meldungen/40014/energieversorgung-fuer-iris-t-slm/",
+   "published_date": "2023-02-16",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-2b7291ad743a6f18",
+   "name": "Militär Aktuell",
+   "title": "Vincorion entwickelt für die Bundeswehr Stromaggregate",
+   "url": "https://militaeraktuell.at/vincorion-entwickelt-fuer-die-bundeswehr-stromaggregate/",
+   "published_date": "2023-08-31",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-257bf5b7920f7bb4",
+   "name": "dpa-AFX (via Deutsche Börse live)",
+   "title": "IPO/ROUNDUP: Rüstungszulieferer Vincorion strebt an die Börse",
+   "url": "https://live.deutsche-boerse.com/nachrichten/IPO-ROUNDUP-Ruestungszulieferer-Vincorion-strebt-an-die-Boerse-92c154a6-cc14-4b7f-b985-6912e565c7e8",
+   "published_date": "2026-03-06",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Sekundärquelle"
+  },
+  {
+   "id": "S-aa984398128cc8b6",
+   "name": "JENOPTIK AG",
+   "title": "Ad-hoc: JENOPTIK AG signs agreement to sell VINCORION",
+   "url": "https://www.jenoptik.com/investors/news-and-adhoc-releases/2021/11/25/agreement-to-sell-vincorion",
+   "published_date": "2021-11-25",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Partnerangabe"
+  },
+  {
+   "id": "S-40c9171fe2101daa",
+   "name": "JENOPTIK AG",
+   "title": "Jenoptik Annual Report 2025",
+   "url": "https://www.jenoptik.com/-/media/websitedocuments/ir/berichte-und-tabellen/2025/online/en/jenoptik-annual-report-2025.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Originalbericht",
+   "report_year": 2025,
+   "page": "PDF-Seiten 51, 219, 258 (= gedruckte Seiten)"
+  },
+  {
+   "id": "S-399c866fc838bf1b",
+   "name": "Raytheon (PR Newswire via raytheon.mediaroom.com)",
+   "title": "Germany's Jenoptik and Raytheon partner to produce new generators for global Patriot",
+   "url": "https://raytheon.mediaroom.com/2015-04-24-Germanys-Jenoptik-and-Raytheon-partner-to-produce-new-generators-for-global-Patriot",
+   "published_date": "2015-04-24",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Partnerangabe"
+  },
+  {
+   "id": "S-c52dfb363bd8c860",
+   "name": "VINCORION (Presse-Boilerplate)",
+   "title": "VINCORION Company Overview (Boilerplate Presse EN)",
+   "url": "https://www.vincorion.com/wp-content/uploads/2022/09/220628_VIN_Boilerplate_Presse_EN.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-20",
+   "source_kind": "Herstellerangabe",
+   "page": "PDF-Seiten 3–4"
+  },
+  {
+   "id": "S-d0a2881113c61290",
+   "name": "ES&T – Europäische Sicherheit & Technik",
+   "title": "VINCORION meldet Aufträge im Wert von mehr als 100 Millionen Euro",
+   "url": "https://esut.de/2026/07/meldungen/73223/vincorion-meldet-auftraege-im-wert-von-mehr-als-100-millionen-euro/",
+   "published_date": "2026-07-30",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Wiedergabe"
+  }
+ ],
+ "actors": [
+  {
+   "id": "star_capital",
+   "label": "STAR Capital",
+   "legal_name": "STAR Capital Partnership LLP (London)",
+   "kind": "owner",
+   "cluster": "capital",
+   "research_level": 2,
+   "claim_ids": [
+    "C-006",
+    "C-011"
+   ]
+  },
+  {
+   "id": "star_holdings",
+   "label": "STAR Holdings",
+   "legal_name": "STAR Holdings S.à r.l. (Luxemburg)",
+   "kind": "owner",
+   "cluster": "capital",
+   "research_level": 1,
+   "claim_ids": [
+    "C-006",
+    "C-011",
+    "C-009",
+    "C-014",
+    "C-003"
+   ]
+  },
+  {
+   "id": "invesco",
+   "label": "Invesco",
+   "legal_name": "Invesco Ltd. (Hamilton, Bermuda)",
+   "kind": "owner",
+   "cluster": "capital",
+   "research_level": 1,
+   "claim_ids": [
+    "C-012",
+    "C-010"
+   ]
+  },
+  {
+   "id": "trowe",
+   "label": "T. Rowe Price",
+   "legal_name": "T. Rowe Price Group, Inc. / T. Rowe Price International Funds, Inc.",
+   "kind": "owner",
+   "cluster": "capital",
+   "research_level": 1,
+   "claim_ids": [
+    "C-012",
+    "C-010"
+   ]
+  },
+  {
+   "id": "fidelity",
+   "label": "Fidelity International",
+   "legal_name": "Fidelity International",
+   "kind": "other",
+   "cluster": "capital",
+   "research_level": 1,
+   "claim_ids": [
+    "C-010"
+   ]
+  },
+  {
+   "id": "cdc",
+   "label": "Caisse des Dépôts",
+   "legal_name": "Caisse des Dépôts et Consignations (Paris)",
+   "kind": "owner",
+   "cluster": "capital",
+   "research_level": 1,
+   "claim_ids": [
+    "C-013"
+   ]
+  },
+  {
+   "id": "jenoptik",
+   "label": "Jenoptik",
+   "legal_name": "JENOPTIK AG (Jena)",
+   "kind": "owner",
+   "cluster": "capital",
+   "research_level": 1,
+   "claim_ids": [
+    "C-007",
+    "C-028",
+    "C-008",
+    "C-027"
+   ]
+  },
+  {
+   "id": "vin_holding",
+   "label": "VINCORION Holding",
+   "legal_name": "VINCORION Holding GmbH (Wedel)",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "research_level": 1,
+   "claim_ids": [
+    "C-001",
+    "C-002",
+    "C-003",
+    "C-004",
+    "C-005",
+    "C-017"
+   ]
+  },
+  {
+   "id": "vias",
+   "label": "VINCORION Advanced Systems",
+   "legal_name": "VINCORION Advanced Systems GmbH (Wedel)",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "research_level": 1,
+   "claim_ids": [
+    "C-004",
+    "C-005",
+    "C-017",
+    "C-035",
+    "C-036",
+    "C-037"
+   ]
+  },
+  {
+   "id": "vips",
+   "label": "VINCORION Power Systems",
+   "legal_name": "VINCORION Power Systems GmbH (Altenstadt)",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "research_level": 1,
+   "claim_ids": [
+    "C-004",
+    "C-005",
+    "C-017",
+    "C-040",
+    "C-041",
+    "C-042"
+   ]
+  },
+  {
+   "id": "vius",
+   "label": "VINCORION LLC",
+   "legal_name": "VINCORION LLC (El Paso, Texas)",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "research_level": 1,
+   "claim_ids": [
+    "C-004",
+    "C-005",
+    "C-017",
+    "C-032",
+    "C-031",
+    "C-033",
+    "C-046"
+   ]
+  },
+  {
+   "id": "viaps",
+   "label": "VINCORION ApS",
+   "legal_name": "VINCORION ApS (Hellerup, Dänemark)",
+   "kind": "subsidiary",
+   "cluster": "structure",
+   "research_level": 1,
+   "claim_ids": [
+    "C-004",
+    "C-005"
+   ]
+  },
+  {
+   "id": "klasen",
+   "label": "Klaas Jacob Klasen",
+   "legal_name": "Klaas Jacob Klasen",
+   "kind": "person",
+   "cluster": "structure",
+   "research_level": 1,
+   "claim_ids": [
+    "C-016"
+   ]
+  },
+  {
+   "id": "heidelberg",
+   "label": "HEIDELBERG",
+   "legal_name": "Heidelberger Druckmaschinen AG",
+   "kind": "partner",
+   "cluster": "technology",
+   "research_level": 2,
+   "claim_ids": [
+    "C-035",
+    "C-036"
+   ]
+  },
+  {
+   "id": "heli_one",
+   "label": "Heli-One",
+   "legal_name": "Heli-One (Norway) AS",
+   "kind": "partner",
+   "cluster": "technology",
+   "research_level": 2,
+   "claim_ids": [
+    "C-037"
+   ]
+  },
+  {
+   "id": "reactivedyn",
+   "label": "ReactiveDynamics",
+   "legal_name": "ReactiveDynamics",
+   "kind": "other",
+   "cluster": "technology",
+   "research_level": 1,
+   "claim_ids": [
+    "C-044"
+   ]
+  },
+  {
+   "id": "sentinel",
+   "label": "SENTINEL (EDF)",
+   "legal_name": "SENTINEL – Sustainable Energy Capabilities for Enhanced Military Camps and Operations (EDF)",
+   "kind": "project",
+   "cluster": "technology",
+   "research_level": 2,
+   "claim_ids": [
+    "C-040",
+    "C-041",
+    "C-043"
+   ]
+  },
+  {
+   "id": "nomad",
+   "label": "NOMAD (EDF)",
+   "legal_name": "NOMAD – NOvel energy storage technologies usable at MilitAry Deployments in forward operating bases (EDF 2021)",
+   "kind": "project",
+   "cluster": "technology",
+   "research_level": 2,
+   "claim_ids": [
+    "C-042",
+    "C-043"
+   ]
+  },
+  {
+   "id": "teces",
+   "label": "TECES",
+   "legal_name": "TECES – Grozd zelenih tehnologij Maribor (Green Tech Cluster Maribor)",
+   "kind": "institution",
+   "cluster": "technology",
+   "research_level": 2,
+   "claim_ids": [
+    "C-041",
+    "C-040",
+    "C-043"
+   ]
+  },
+  {
+   "id": "arpa",
+   "label": "ARPA",
+   "legal_name": "Equipos Móviles de Campaña ARPA, S.A.U.",
+   "kind": "other",
+   "cluster": "technology",
+   "research_level": 2,
+   "claim_ids": [
+    "C-042",
+    "C-043",
+    "C-041"
+   ]
+  },
+  {
+   "id": "unibw",
+   "label": "UniBw München",
+   "legal_name": "Universität der Bundeswehr München",
+   "kind": "institution",
+   "cluster": "technology",
+   "research_level": 2,
+   "claim_ids": [
+    "C-041",
+    "C-040"
+   ]
+  },
+  {
+   "id": "raytheon",
+   "label": "Raytheon",
+   "legal_name": "Raytheon (RTX; PATRIOT-Hersteller)",
+   "kind": "customer",
+   "cluster": "market",
+   "research_level": 1,
+   "claim_ids": [
+    "C-026",
+    "C-018",
+    "C-027",
+    "C-028"
+   ]
+  },
+  {
+   "id": "knds",
+   "label": "KNDS Deutschland",
+   "legal_name": "KNDS Deutschland",
+   "kind": "customer",
+   "cluster": "market",
+   "research_level": 1,
+   "claim_ids": [
+    "C-022",
+    "C-023",
+    "C-024"
+   ]
+  },
+  {
+   "id": "rheinmetall",
+   "label": "Rheinmetall",
+   "legal_name": "Rheinmetall AG",
+   "kind": "customer",
+   "cluster": "market",
+   "research_level": 1,
+   "claim_ids": [
+    "C-024"
+   ]
+  },
+  {
+   "id": "diehl",
+   "label": "Diehl Defence",
+   "legal_name": "Diehl Defence (IRIS-T SLM)",
+   "kind": "customer",
+   "cluster": "market",
+   "research_level": 1,
+   "claim_ids": [
+    "C-025"
+   ]
+  },
+  {
+   "id": "airbus",
+   "label": "Airbus",
+   "legal_name": "Airbus (Konzern; Passagierflugzeuge und Hubschrauber)",
+   "kind": "customer",
+   "cluster": "market",
+   "research_level": 1,
+   "claim_ids": [
+    "C-024",
+    "C-038",
+    "C-039"
+   ]
+  },
+  {
+   "id": "nspa",
+   "label": "NSPA",
+   "legal_name": "NATO Support and Procurement Agency",
+   "kind": "institution",
+   "cluster": "market",
+   "research_level": 1,
+   "claim_ids": [
+    "C-030",
+    "C-046"
+   ]
+  },
+  {
+   "id": "dla",
+   "label": "Defense Logistics Agency",
+   "legal_name": "Defense Logistics Agency (DLA), U.S. Department of Defense",
+   "kind": "institution",
+   "cluster": "market",
+   "research_level": 2,
+   "claim_ids": [
+    "C-032",
+    "C-031"
+   ]
+  },
+  {
+   "id": "us_army",
+   "label": "U.S. Army (Letterkenny)",
+   "legal_name": "U.S. Department of the Army – Vergabestelle W6QK LAD (Letterkenny Army Depot)",
+   "kind": "institution",
+   "cluster": "market",
+   "research_level": 2,
+   "claim_ids": [
+    "C-033",
+    "C-046"
+   ]
+  },
+  {
+   "id": "baainbw",
+   "label": "BAAINBw",
+   "legal_name": "Bundesamt für Ausrüstung, Informationstechnik und Nutzung der Bundeswehr",
+   "kind": "institution",
+   "cluster": "market",
+   "research_level": 1,
+   "claim_ids": [
+    "C-034",
+    "C-046"
+   ]
+  }
+ ],
+ "relationships": [
+  {
+   "edge_id": "E01",
+   "from": "star_capital",
+   "to": "star_holdings",
+   "type": "Eigentum/Kontrolle (Kette)",
+   "relation_mode": "indirekt (Teilkante eines Pfads)",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "Beherrschung der Kette laut Stimmrechtsmitteilung; Zwischengesellschaften nicht als eigene Knoten dargestellt",
+   "status": "aktuell (Stimmrechtsmitteilung 17.04.2026)",
+   "as_of": "2026-04-17",
+   "historical": false,
+   "claim_ids": [
+    "C-006",
+    "C-011"
+   ]
+  },
+  {
+   "edge_id": "E02",
+   "from": "star_holdings",
+   "to": "vincorion",
+   "type": "Beteiligung (Aktionärin)",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "48,63 % (Mitteilung 17.04.2026); 47,53 % laut H1-Bericht",
+   "control": "Kontrolle bis zum IPO laut H1-Bericht; danach keine Kontrollangabe",
+   "status": "aktuell",
+   "as_of": "2026-04-17",
+   "historical": false,
+   "claim_ids": [
+    "C-011",
+    "C-009",
+    "C-014",
+    "C-003"
+   ]
+  },
+  {
+   "edge_id": "E03",
+   "from": "invesco",
+   "to": "vincorion",
+   "type": "Beteiligung (Aktionär)",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "4,71 %",
+   "control": "nicht angegeben",
+   "status": "gemeldet (Stand 30.06.2026)",
+   "as_of": "2026-06-30",
+   "historical": false,
+   "claim_ids": [
+    "C-012",
+    "C-010"
+   ]
+  },
+  {
+   "edge_id": "E04",
+   "from": "trowe",
+   "to": "vincorion",
+   "type": "Beteiligung (Aktionär)",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "4,69 % (Group) / 3,69 % (International Funds); mögliche Überschneidung",
+   "control": "nicht angegeben",
+   "status": "gemeldet (Stand 30.06.2026)",
+   "as_of": "2026-06-30",
+   "historical": false,
+   "claim_ids": [
+    "C-012",
+    "C-010"
+   ]
+  },
+  {
+   "edge_id": "E05",
+   "from": "fidelity",
+   "to": "vincorion",
+   "type": "Cornerstone-Investor im IPO",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "IPO-Zuteilung März 2026; aktueller Bestand nicht öffentlich",
+   "as_of": "2026-03-19",
+   "historical": false,
+   "claim_ids": [
+    "C-010"
+   ]
+  },
+  {
+   "edge_id": "E06",
+   "from": "cdc",
+   "to": "vincorion",
+   "type": "Beteiligung (Aktionär)",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "3,03 %",
+   "control": "nicht angegeben",
+   "status": "gemeldet",
+   "as_of": "2026-09-22",
+   "historical": false,
+   "claim_ids": [
+    "C-013"
+   ]
+  },
+  {
+   "edge_id": "E07",
+   "from": "jenoptik",
+   "to": "vincorion",
+   "type": "Historisches Eigentum / Verkauf",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "abgeschlossen (historisch)",
+   "as_of": "2022-06-30",
+   "historical": true,
+   "claim_ids": [
+    "C-007",
+    "C-028"
+   ]
+  },
+  {
+   "edge_id": "E08",
+   "from": "jenoptik",
+   "to": "vincorion",
+   "type": "Fortbestehende Garantie/Freistellung",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "laufend",
+   "as_of": "2026-06-30",
+   "historical": false,
+   "claim_ids": [
+    "C-008"
+   ]
+  },
+  {
+   "edge_id": "E09",
+   "from": "vincorion",
+   "to": "vin_holding",
+   "type": "Tochtergesellschaft (100 %)",
+   "relation_mode": "direkt",
+   "capital_share": "100 %",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "beherrscht",
+   "status": "aktuell",
+   "as_of": "2026-01-28",
+   "historical": false,
+   "claim_ids": [
+    "C-001",
+    "C-002",
+    "C-003"
+   ]
+  },
+  {
+   "edge_id": "E10",
+   "from": "vin_holding",
+   "to": "vias",
+   "type": "Tochtergesellschaft (100 %)",
+   "relation_mode": "direkt (über Tochtergesellschaft)",
+   "capital_share": "100 % (Gruppenquote)",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "aktuell (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "historical": false,
+   "claim_ids": [
+    "C-004",
+    "C-005",
+    "C-017"
+   ]
+  },
+  {
+   "edge_id": "E11",
+   "from": "vin_holding",
+   "to": "vips",
+   "type": "Tochtergesellschaft (100 %)",
+   "relation_mode": "direkt (über Tochtergesellschaft)",
+   "capital_share": "100 % (Gruppenquote)",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "aktuell (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "historical": false,
+   "claim_ids": [
+    "C-004",
+    "C-005",
+    "C-017"
+   ]
+  },
+  {
+   "edge_id": "E12",
+   "from": "vin_holding",
+   "to": "vius",
+   "type": "Tochtergesellschaft (100 %)",
+   "relation_mode": "direkt (über Tochtergesellschaft)",
+   "capital_share": "100 % (Gruppenquote)",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "aktuell (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "historical": false,
+   "claim_ids": [
+    "C-004",
+    "C-005",
+    "C-017"
+   ]
+  },
+  {
+   "edge_id": "E13",
+   "from": "vin_holding",
+   "to": "viaps",
+   "type": "Tochtergesellschaft (100 %)",
+   "relation_mode": "direkt (über Tochtergesellschaft)",
+   "capital_share": "100 % (Gruppenquote)",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "gegründet, nicht operativ (Stand 31.12.2025)",
+   "as_of": "2025-12-31",
+   "historical": false,
+   "claim_ids": [
+    "C-004",
+    "C-005"
+   ]
+  },
+  {
+   "edge_id": "E14",
+   "from": "klasen",
+   "to": "vincorion",
+   "type": "Berufliches Mandat (Vorstand, historisch) / aktuelle Funktion",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "Vorstandsmandat beendet; Funktion VP Strategy laut PM 06/2026",
+   "as_of": "2026-06-18",
+   "historical": false,
+   "claim_ids": [
+    "C-016"
+   ]
+  },
+  {
+   "edge_id": "E15",
+   "from": "heidelberg",
+   "to": "vias",
+   "type": "Industrialisierungs-/Fertigungspartnerschaft (MoU)",
+   "relation_mode": "direkt (über Tochtergesellschaft)",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "MoU unterzeichnet; laufend laut HEIDELBERG (11/2025)",
+   "as_of": "2025-11-12",
+   "historical": false,
+   "claim_ids": [
+    "C-035",
+    "C-036"
+   ]
+  },
+  {
+   "edge_id": "E16",
+   "from": "heli_one",
+   "to": "vias",
+   "type": "Zertifizierungs-, Integrations- und MRO-Partnerschaft (MoU)",
+   "relation_mode": "direkt (über Tochtergesellschaft)",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "MoU unterzeichnet",
+   "as_of": "2026-05-08",
+   "historical": false,
+   "claim_ids": [
+    "C-037"
+   ]
+  },
+  {
+   "edge_id": "E17",
+   "from": "vips",
+   "to": "sentinel",
+   "type": "EDF-Projektteilnahme",
+   "relation_mode": "direkt (über Tochtergesellschaft)",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "laufend (01.11.2025–01.11.2029)",
+   "as_of": "2026-04-12",
+   "historical": false,
+   "claim_ids": [
+    "C-040",
+    "C-041"
+   ]
+  },
+  {
+   "edge_id": "E18",
+   "from": "teces",
+   "to": "sentinel",
+   "type": "Projektkoordination",
+   "relation_mode": "indirekt (Teilkante eines Pfads)",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "laufend",
+   "as_of": "2026-02-10",
+   "historical": false,
+   "claim_ids": [
+    "C-041",
+    "C-040"
+   ]
+  },
+  {
+   "edge_id": "E19",
+   "from": "unibw",
+   "to": "sentinel",
+   "type": "EDF-Projektteilnahme",
+   "relation_mode": "indirekt (Teilkante eines Pfads)",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "laufend",
+   "as_of": "2026-04-12",
+   "historical": false,
+   "claim_ids": [
+    "C-041",
+    "C-040"
+   ]
+  },
+  {
+   "edge_id": "E20",
+   "from": "vips",
+   "to": "nomad",
+   "type": "EDF-Projektteilnahme",
+   "relation_mode": "direkt (über Tochtergesellschaft)",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "gefördert (Projektstart laut VINCORION 2024)",
+   "as_of": "2022-09-23",
+   "historical": false,
+   "claim_ids": [
+    "C-042"
+   ]
+  },
+  {
+   "edge_id": "E21",
+   "from": "arpa",
+   "to": "nomad",
+   "type": "Projektkoordination",
+   "relation_mode": "indirekt (Teilkante eines Pfads)",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "gefördert",
+   "as_of": "2022-09-23",
+   "historical": false,
+   "claim_ids": [
+    "C-042",
+    "C-043"
+   ]
+  },
+  {
+   "edge_id": "E22",
+   "from": "teces",
+   "to": "nomad",
+   "type": "Projektteilnahme (Überschneidung)",
+   "relation_mode": "Überschneidung",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "belegt in Konsortiallisten",
+   "as_of": "2026-02-10",
+   "historical": false,
+   "claim_ids": [
+    "C-043"
+   ]
+  },
+  {
+   "edge_id": "E23",
+   "from": "arpa",
+   "to": "sentinel",
+   "type": "Projektteilnahme (Überschneidung)",
+   "relation_mode": "Überschneidung",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "belegt in Konsortiallisten",
+   "as_of": "2026-02-10",
+   "historical": false,
+   "claim_ids": [
+    "C-043",
+    "C-041"
+   ]
+  },
+  {
+   "edge_id": "E24",
+   "from": "vincorion",
+   "to": "knds",
+   "type": "Lieferung an OEM (Rahmenvertrag Boxer-Generatoren)",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "beauftragt; Lieferungen laut Herstellerangabe",
+   "as_of": "2024-04-04",
+   "historical": false,
+   "claim_ids": [
+    "C-022"
+   ]
+  },
+  {
+   "edge_id": "E25",
+   "from": "vincorion",
+   "to": "knds",
+   "type": "Lieferung an OEM (Leopard 2 / GTD chaserV)",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "beauftragt (laut Herstellerangabe 2024); Kundenbeziehung laut dpa 2026",
+   "as_of": "2024-06-19",
+   "historical": false,
+   "claim_ids": [
+    "C-023",
+    "C-024"
+   ]
+  },
+  {
+   "edge_id": "E26",
+   "from": "vincorion",
+   "to": "rheinmetall",
+   "type": "Kundenbeziehung (Sekundärquelle)",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "laufend laut Bericht (03/2026)",
+   "as_of": "2026-03-06",
+   "historical": false,
+   "claim_ids": [
+    "C-024"
+   ]
+  },
+  {
+   "edge_id": "E27",
+   "from": "vincorion",
+   "to": "diehl",
+   "type": "Lieferung an Systemintegrator (IRIS-T SLM)",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "beauftragt (2023)",
+   "as_of": "2023-02-16",
+   "historical": false,
+   "claim_ids": [
+    "C-025"
+   ]
+  },
+  {
+   "edge_id": "E28",
+   "from": "vincorion",
+   "to": "raytheon",
+   "type": "Zulieferung PATRIOT-Stromversorgung",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "laufend (Herstellerangabe)",
+   "as_of": "2026-10-20",
+   "historical": false,
+   "claim_ids": [
+    "C-026",
+    "C-018"
+   ]
+  },
+  {
+   "edge_id": "E29",
+   "from": "jenoptik",
+   "to": "raytheon",
+   "type": "Historischer Liefervertrag (Jenoptik-Tochter Lechmotoren)",
+   "relation_mode": "indirekt (Teilkante eines Pfads)",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "beauftragt 2015 (historisch)",
+   "as_of": "2015-04-24",
+   "historical": true,
+   "claim_ids": [
+    "C-027",
+    "C-028"
+   ]
+  },
+  {
+   "edge_id": "E30",
+   "from": "vincorion",
+   "to": "airbus",
+   "type": "Zulieferung zivile Luftfahrt (Sekundärquelle)",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "laufend laut Bericht (03/2026)",
+   "as_of": "2026-03-06",
+   "historical": false,
+   "claim_ids": [
+    "C-024"
+   ]
+  },
+  {
+   "edge_id": "E31",
+   "from": "vincorion",
+   "to": "airbus",
+   "type": "Plattformintegration ERH premierV (Airbus H145)",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "Entwicklung/Test; Lieferung geplant",
+   "as_of": "2026-08-13",
+   "historical": false,
+   "claim_ids": [
+    "C-038",
+    "C-039"
+   ]
+  },
+  {
+   "edge_id": "E32",
+   "from": "vincorion",
+   "to": "nspa",
+   "type": "Rahmenvertrag PATRIOT-Stromversorgung (Obsoleszenz)",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "beauftragt (Rahmenvertrag)",
+   "as_of": "2025-09-19",
+   "historical": false,
+   "claim_ids": [
+    "C-030",
+    "C-046"
+   ]
+  },
+  {
+   "edge_id": "E33",
+   "from": "vius",
+   "to": "dla",
+   "type": "Rahmenverträge PATRIOT-EPP-Ersatzteile/Instandhaltung",
+   "relation_mode": "direkt (über Tochtergesellschaft)",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "beauftragt",
+   "as_of": "2024-05-08",
+   "historical": false,
+   "claim_ids": [
+    "C-032",
+    "C-031"
+   ]
+  },
+  {
+   "edge_id": "E34",
+   "from": "vius",
+   "to": "us_army",
+   "type": "Rahmenvertrag PATRIOT-EPP-III-Teile (Letterkenny Army Depot)",
+   "relation_mode": "direkt (über Tochtergesellschaft)",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "beauftragt (Rahmenvertrag)",
+   "as_of": "2025-03-05",
+   "historical": false,
+   "claim_ids": [
+    "C-033",
+    "C-046"
+   ]
+  },
+  {
+   "edge_id": "E35",
+   "from": "vincorion",
+   "to": "baainbw",
+   "type": "Entwicklungsaufträge taktische Stromerzeuger",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "Entwicklungsauftrag",
+   "as_of": "2026-06-18",
+   "historical": false,
+   "claim_ids": [
+    "C-034",
+    "C-046"
+   ]
+  },
+  {
+   "edge_id": "E36",
+   "from": "vincorion",
+   "to": "reactivedyn",
+   "type": "Gemeinsamer Messeauftritt / Demonstration",
+   "relation_mode": "direkt",
+   "capital_share": "nicht anwendbar/unbekannt",
+   "voting_share": "nicht anwendbar/unbekannt",
+   "control": "nicht angegeben",
+   "status": "Demonstration; keine Vereinbarung belegt",
+   "as_of": "2026-06-15",
+   "historical": false,
+   "claim_ids": [
+    "C-044"
+   ]
+  }
+ ],
+ "indirect_paths": [
+  {
+   "id": "P1",
+   "description": "STAR Capital Partnership LLP → STAR Holdings S.à r.l. → VINCORION SE → VINCORION Holding GmbH → operative Tochtergesellschaften",
+   "edge_ids": [
+    "E01",
+    "E02",
+    "E09",
+    "E10",
+    "E11",
+    "E12",
+    "E13"
+   ],
+   "claim_ids": [
+    "C-006",
+    "C-011",
+    "C-002",
+    "C-004"
+   ]
+  },
+  {
+   "id": "P2",
+   "description": "Historische Linie: JENOPTIK AG (Tochter Lechmotoren) → Liefervertrag Raytheon PATRIOT 2015; heute liefert VINCORION laut Herstellerangabe PATRIOT-Stromversorgung (Raytheon) – Abfolge, keine belegte Vertragsübernahme.",
+   "edge_ids": [
+    "E29",
+    "E07",
+    "E28"
+   ],
+   "claim_ids": [
+    "C-027",
+    "C-028",
+    "C-007",
+    "C-026"
+   ]
+  },
+  {
+   "id": "P3",
+   "description": "EDF-Projektverbund: VINCORION Power Systems in NOMAD und SENTINEL; TECES und ARPA in beiden Konsortien (Überschneidung, keine bilaterale Kooperation).",
+   "edge_ids": [
+    "E17",
+    "E18",
+    "E20",
+    "E21",
+    "E22",
+    "E23"
+   ],
+   "claim_ids": [
+    "C-040",
+    "C-041",
+    "C-042",
+    "C-043"
+   ]
+  },
+  {
+   "id": "P4",
+   "description": "PATRIOT-Kundenpfad USA: VINCORION SE → VINCORION LLC (100 %) → DLA bzw. U.S. Army Letterkenny (Rahmenverträge).",
+   "edge_ids": [
+    "E09",
+    "E12",
+    "E33",
+    "E34"
+   ],
+   "claim_ids": [
+    "C-004",
+    "C-032",
+    "C-033"
+   ]
+  }
+ ],
+ "report_log": [
+  {
+   "actor": "VINCORION SE",
+   "report": "Jahresabschluss und Anhang 2025 (HGB, Rumpfgeschäftsjahr 28.01.–31.12.2025), Teil des Jahresfinanzberichts 2025 (ZIP)",
+   "fiscal_year": "2025 (Rumpf-GJ)",
+   "published": "2026-05-12",
+   "source_id": "S-0a9ea0dbc48fd48c",
+   "sections_checked": "Bilanz, GuV, Anhang A–F (PDF-Seiten 1–9 der Datei VISE_Abschluss_FY25_EN.pdf), Bestätigungsvermerk (Datei VISE_Abschluss_FY25_BV_RSM_EN.pdf, Anfang)",
+   "findings_claim_ids": [
+    "C-002",
+    "C-003",
+    "C-016"
+   ],
+   "status": "analysiert",
+   "note": "Enthält nur Einzelabschluss der Holding-SE; kein Konzernabschluss/Lagebericht der SE für 2025 im ZIP."
+  },
+  {
+   "actor": "VINCORION SE",
+   "report": "Half-Year Financial Report 2026 (IAS 34, verkürzter Konzernzwischenabschluss)",
+   "fiscal_year": "H1 2026",
+   "published": "2026-08-13",
+   "source_id": "S-71029391d701d972",
+   "sections_checked": "PDF-Seiten 2–32 vollständig (Aktionärsstruktur, Standorte, Konzernzwischenlagebericht, Notes 1–12)",
+   "findings_claim_ids": [
+    "C-001",
+    "C-002",
+    "C-008",
+    "C-011",
+    "C-012",
+    "C-014",
+    "C-015",
+    "C-017",
+    "C-019",
+    "C-020",
+    "C-021",
+    "C-038",
+    "C-045"
+   ],
+   "status": "analysiert",
+   "note": "Gedruckte Seite = PDF-Seite minus 2. Verweist für Chancen/Risiken auf Konzernlagebericht 2025 der Holding und auf den Prospekt vom 13.03.2026."
+  },
+  {
+   "actor": "VINCORION Holding GmbH",
+   "report": "Audited Consolidated Financial Statements 2025 (IFRS)",
+   "fiscal_year": "2025",
+   "published": null,
+   "source_id": "S-c937f9b7f798fc88",
+   "sections_checked": "Notes 1, 2.8, Segmentbericht, 5, 8, 10.2, 19, 21, 23, 24 (PDF-Seiten 7–42; gedruckt F-9 bis F-44)",
+   "findings_claim_ids": [
+    "C-002",
+    "C-004",
+    "C-005",
+    "C-006",
+    "C-008",
+    "C-018",
+    "C-020",
+    "C-021"
+   ],
+   "status": "analysiert",
+   "note": "Konzernlagebericht 2025 nicht im PDF enthalten (Prüfungsvermerk verweist darauf); Veröffentlichungsdatum auf EQS nicht angegeben, Unterzeichnung 25.02.2026."
+  },
+  {
+   "actor": "VINCORION Holding GmbH",
+   "report": "Audited Consolidated Financial Statements 2024 (IFRS)",
+   "fiscal_year": "2024",
+   "published": null,
+   "source_id": "S-a8b6a9bf5c56126e",
+   "sections_checked": "Note 1, Related Parties, Basis of Consolidation, Subsequent Events (PDF-Seiten 35–36)",
+   "findings_claim_ids": [
+    "C-005"
+   ],
+   "status": "nur teilweise lesbar",
+   "note": "Gezielter Vorjahresvergleich Struktur/Eigentümer; übrige Abschnitte nicht ausgewertet."
+  },
+  {
+   "actor": "VINCORION Holding GmbH",
+   "report": "Audited Consolidated Financial Statements 2023 (IFRS)",
+   "fiscal_year": "2023",
+   "published": null,
+   "source_id": "S-56ddab9dedaa1e0b",
+   "sections_checked": "Related Parties, Basis of Consolidation (PDF-Seiten 37–38)",
+   "findings_claim_ids": [
+    "C-005"
+   ],
+   "status": "nur teilweise lesbar",
+   "note": "Gezielter Vorvorjahresvergleich."
+  },
+  {
+   "actor": "VINCORION SE",
+   "report": "Q1 2026 Results Presentation / Q1-Mitteilung 2026",
+   "fiscal_year": "Q1 2026",
+   "published": "2026-05-07",
+   "source_id": "S-e1f50ca0e7fe88cd",
+   "sections_checked": "Präsentation PDF-Seiten 6–7 und 16; Q1-Mitteilung nur Stichwortsuche nach Akteuren",
+   "findings_claim_ids": [
+    "C-039"
+   ],
+   "status": "nur teilweise lesbar",
+   "note": "Q1-Mitteilung (EQS-PDF) enthielt keine weiteren Akteursnennungen außer STAR."
+  },
+  {
+   "actor": "VINCORION SE",
+   "report": "H1 2026 Results Presentation",
+   "fiscal_year": "H1 2026",
+   "published": "2026-08-13",
+   "source_id": "S-9cd9c3ae3af87af5",
+   "sections_checked": "Akteurssuche über alle 18 PDF-Seiten; PDF-Seiten 5 und 9 gelesen",
+   "findings_claim_ids": [
+    "C-038"
+   ],
+   "status": "nur teilweise lesbar",
+   "note": ""
+  },
+  {
+   "actor": "VINCORION SE",
+   "report": "Wertpapierprospekt (öffentliches Angebot), 13.03.2026",
+   "fiscal_year": "—",
+   "published": "2026-03-13",
+   "source_id": null,
+   "sections_checked": "—",
+   "findings_claim_ids": [],
+   "status": "nicht zugänglich",
+   "note": "Im H1-Bericht referenziert; IR-Seite ir.vincorion.com ist eine JavaScript-Anwendung ohne direkten Dokumentlink; Websuche ohne Treffer. Prospekt würde Kunden/Wettbewerb/Beteiligungen vertiefen."
+  },
+  {
+   "actor": "VINCORION Holding GmbH",
+   "report": "Konzernlagebericht 2025",
+   "fiscal_year": "2025",
+   "published": null,
+   "source_id": null,
+   "sections_checked": "—",
+   "findings_claim_ids": [],
+   "status": "öffentlich nicht gefunden",
+   "note": "Nicht im veröffentlichten Konzernabschluss-PDF enthalten."
+  },
+  {
+   "actor": "JENOPTIK AG",
+   "report": "Annual Report 2025",
+   "fiscal_year": "2025",
+   "published": null,
+   "source_id": "S-40c9171fe2101daa",
+   "sections_checked": "Volltextsuche „VINCORION“; gelesen: Wirtschaftsbericht (PDF-S. 51), Konzernanhang 4.9 (S. 219), 8.3 (S. 258)",
+   "findings_claim_ids": [
+    "C-007",
+    "C-008"
+   ],
+   "status": "nur teilweise lesbar",
+   "note": "Gedruckte Seite = PDF-Seite; genaues Veröffentlichungsdatum nicht ermittelt (Bericht datiert Jena, März 2026)."
+  },
+  {
+   "actor": "STAR Capital Partnership LLP",
+   "report": "Geschäftsbericht/Fondsbericht",
+   "fiscal_year": "—",
+   "published": null,
+   "source_id": null,
+   "sections_checked": "Website-Meldungen und Portfolio-Seite geprüft",
+   "findings_claim_ids": [
+    "C-007",
+    "C-010",
+    "C-011"
+   ],
+   "status": "öffentlich nicht gefunden",
+   "note": "Private Partnership; keine öffentlichen Jahresberichte identifiziert."
+  },
+  {
+   "actor": "Heidelberger Druckmaschinen AG",
+   "report": "Halbjahresmitteilung/Präsentation Q2 2025/26; Pressemitteilung Bilanzpressekonferenz 2025/26",
+   "fiscal_year": "2025/26",
+   "published": "2025-11-12",
+   "source_id": "S-91d594e29b91bc4a",
+   "sections_checked": "Q2-PM (Volltext), Q2-Präsentation (Akteurssuche, PDF-S. 9), Bilanz-PK-PM 10.06.2026 (Defense-Abschnitte)",
+   "findings_claim_ids": [
+    "C-036"
+   ],
+   "status": "nur teilweise lesbar",
+   "note": "Geschäftsbericht 2025/26 nicht gefunden/nicht geprüft."
+  },
+  {
+   "actor": "KNDS Deutschland",
+   "report": "Geschäftsbericht",
+   "fiscal_year": "—",
+   "published": null,
+   "source_id": null,
+   "sections_checked": "Websuche nach KNDS-Mitteilungen zu VINCORION",
+   "findings_claim_ids": [],
+   "status": "öffentlich nicht gefunden",
+   "note": "Kein öffentlicher Bericht mit VINCORION-Bezug gefunden; Beziehung nur über Herstellerangaben belegt."
+  },
+  {
+   "actor": "Diehl Defence / Diehl-Gruppe",
+   "report": "Geschäftsbericht",
+   "fiscal_year": "—",
+   "published": null,
+   "source_id": null,
+   "sections_checked": "Websuche „Diehl Vincorion“ ohne Treffer auf diehl.com",
+   "findings_claim_ids": [],
+   "status": "nicht geprüft",
+   "note": "Konzernbericht nicht geöffnet (Priorisierung); Lieferanten werden dort erfahrungsgemäß nicht einzeln genannt – Annahme, nicht geprüft."
+  },
+  {
+   "actor": "RTX Corporation (Raytheon)",
+   "report": "Form 10-K / 10-Q 2026",
+   "fiscal_year": "2025/2026",
+   "published": null,
+   "source_id": null,
+   "sections_checked": "—",
+   "findings_claim_ids": [],
+   "status": "nicht geprüft",
+   "note": "Nicht geöffnet (Priorisierung); Raytheon-Mediaroom 2015 als Partnerquelle genutzt."
+  }
+ ],
+ "topics": [
+  {
+   "id": "wachstum",
+   "label": "Wachstumschancen: Fakten und Ableitungen",
+   "headline": "Neue Partner, Projekte und Rahmenverträge mit Wachstumsbezug",
+   "preview": "MoUs mit HEIDELBERG (Fertigung) und Heli-One (ERH), EDF-Projekt SENTINEL, NSPA-Rahmenvertrag PATRIOT laut VINCORION; Juni-Aufträge ohne Kundennamen.",
+   "claim_ids": [
+    "C-035",
+    "C-036",
+    "C-037",
+    "C-038",
+    "C-040",
+    "C-041",
+    "C-030",
+    "C-032",
+    "C-033",
+    "C-034",
+    "C-045",
+    "C-022",
+    "C-044",
+    "C-039"
+   ]
+  }
+ ],
+ "network": {
+  "schema_version": 1,
+  "company": "VINCORION",
+  "as_of": "2026-10-20",
+  "target_id": "vincorion",
+  "nodes": [
+   {
+    "id": "vincorion",
+    "label": "VINCORION SE",
+    "kind": "target",
+    "legal_name": "VINCORION SE (Wedel)",
+    "cluster": "structure",
+    "focus": true
+   },
+   {
+    "id": "star_capital",
+    "label": "STAR Capital",
+    "kind": "owner",
+    "legal_name": "STAR Capital Partnership LLP (London)",
+    "cluster": "capital",
+    "focus": true
+   },
+   {
+    "id": "star_holdings",
+    "label": "STAR Holdings",
+    "kind": "owner",
+    "legal_name": "STAR Holdings S.à r.l. (Luxemburg)",
+    "cluster": "capital",
+    "focus": true
+   },
+   {
+    "id": "invesco",
+    "label": "Invesco",
+    "kind": "owner",
+    "legal_name": "Invesco Ltd. (Hamilton, Bermuda)",
+    "cluster": "capital"
+   },
+   {
+    "id": "trowe",
+    "label": "T. Rowe Price",
+    "kind": "owner",
+    "legal_name": "T. Rowe Price Group, Inc. / T. Rowe Price International Funds, Inc.",
+    "cluster": "capital"
+   },
+   {
+    "id": "fidelity",
+    "label": "Fidelity International",
+    "kind": "other",
+    "legal_name": "Fidelity International",
+    "cluster": "capital"
+   },
+   {
+    "id": "cdc",
+    "label": "Caisse des Dépôts",
+    "kind": "owner",
+    "legal_name": "Caisse des Dépôts et Consignations (Paris)",
+    "cluster": "capital"
+   },
+   {
+    "id": "jenoptik",
+    "label": "Jenoptik",
+    "kind": "owner",
+    "legal_name": "JENOPTIK AG (Jena)",
+    "cluster": "capital"
+   },
+   {
+    "id": "vin_holding",
+    "label": "VINCORION Holding",
+    "kind": "subsidiary",
+    "legal_name": "VINCORION Holding GmbH (Wedel)",
+    "cluster": "structure",
+    "focus": true
+   },
+   {
+    "id": "vias",
+    "label": "VINCORION Advanced Systems",
+    "kind": "subsidiary",
+    "legal_name": "VINCORION Advanced Systems GmbH (Wedel)",
+    "cluster": "structure",
+    "focus": true
+   },
+   {
+    "id": "vips",
+    "label": "VINCORION Power Systems",
+    "kind": "subsidiary",
+    "legal_name": "VINCORION Power Systems GmbH (Altenstadt)",
+    "cluster": "structure",
+    "focus": true
+   },
+   {
+    "id": "vius",
+    "label": "VINCORION LLC",
+    "kind": "subsidiary",
+    "legal_name": "VINCORION LLC (El Paso, Texas)",
+    "cluster": "structure"
+   },
+   {
+    "id": "viaps",
+    "label": "VINCORION ApS",
+    "kind": "subsidiary",
+    "legal_name": "VINCORION ApS (Hellerup, Dänemark)",
+    "cluster": "structure"
+   },
+   {
+    "id": "klasen",
+    "label": "Klaas Jacob Klasen",
+    "kind": "person",
+    "legal_name": "Klaas Jacob Klasen",
+    "cluster": "structure"
+   },
+   {
+    "id": "heidelberg",
+    "label": "HEIDELBERG",
+    "kind": "partner",
+    "legal_name": "Heidelberger Druckmaschinen AG",
+    "cluster": "technology",
+    "focus": true
+   },
+   {
+    "id": "heli_one",
+    "label": "Heli-One",
+    "kind": "partner",
+    "legal_name": "Heli-One (Norway) AS",
+    "cluster": "technology",
+    "focus": true
+   },
+   {
+    "id": "reactivedyn",
+    "label": "ReactiveDynamics",
+    "kind": "other",
+    "legal_name": "ReactiveDynamics",
+    "cluster": "technology"
+   },
+   {
+    "id": "sentinel",
+    "label": "SENTINEL (EDF)",
+    "kind": "project",
+    "legal_name": "SENTINEL – Sustainable Energy Capabilities for Enhanced Military Camps and Operations (EDF)",
+    "cluster": "technology",
+    "focus": true
+   },
+   {
+    "id": "nomad",
+    "label": "NOMAD (EDF)",
+    "kind": "project",
+    "legal_name": "NOMAD – NOvel energy storage technologies usable at MilitAry Deployments in forward operating bases (EDF 2021)",
+    "cluster": "technology"
+   },
+   {
+    "id": "teces",
+    "label": "TECES",
+    "kind": "institution",
+    "legal_name": "TECES – Grozd zelenih tehnologij Maribor (Green Tech Cluster Maribor)",
+    "cluster": "technology"
+   },
+   {
+    "id": "arpa",
+    "label": "ARPA",
+    "kind": "other",
+    "legal_name": "Equipos Móviles de Campaña ARPA, S.A.U.",
+    "cluster": "technology"
+   },
+   {
+    "id": "unibw",
+    "label": "UniBw München",
+    "kind": "institution",
+    "legal_name": "Universität der Bundeswehr München",
+    "cluster": "technology"
+   },
+   {
+    "id": "raytheon",
+    "label": "Raytheon",
+    "kind": "customer",
+    "legal_name": "Raytheon (RTX; PATRIOT-Hersteller)",
+    "cluster": "market",
+    "focus": true
+   },
+   {
+    "id": "knds",
+    "label": "KNDS Deutschland",
+    "kind": "customer",
+    "legal_name": "KNDS Deutschland",
+    "cluster": "market",
+    "focus": true
+   },
+   {
+    "id": "rheinmetall",
+    "label": "Rheinmetall",
+    "kind": "customer",
+    "legal_name": "Rheinmetall AG",
+    "cluster": "market"
+   },
+   {
+    "id": "diehl",
+    "label": "Diehl Defence",
+    "kind": "customer",
+    "legal_name": "Diehl Defence (IRIS-T SLM)",
+    "cluster": "market"
+   },
+   {
+    "id": "airbus",
+    "label": "Airbus",
+    "kind": "customer",
+    "legal_name": "Airbus (Konzern; Passagierflugzeuge und Hubschrauber)",
+    "cluster": "market"
+   },
+   {
+    "id": "nspa",
+    "label": "NSPA",
+    "kind": "institution",
+    "legal_name": "NATO Support and Procurement Agency",
+    "cluster": "market",
+    "focus": true
+   },
+   {
+    "id": "dla",
+    "label": "Defense Logistics Agency",
+    "kind": "institution",
+    "legal_name": "Defense Logistics Agency (DLA), U.S. Department of Defense",
+    "cluster": "market"
+   },
+   {
+    "id": "us_army",
+    "label": "U.S. Army (Letterkenny)",
+    "kind": "institution",
+    "legal_name": "U.S. Department of the Army – Vergabestelle W6QK LAD (Letterkenny Army Depot)",
+    "cluster": "market"
+   },
+   {
+    "id": "baainbw",
+    "label": "BAAINBw",
+    "kind": "institution",
+    "legal_name": "Bundesamt für Ausrüstung, Informationstechnik und Nutzung der Bundeswehr",
+    "cluster": "market",
+    "focus": true
+   }
+  ],
+  "edges": [
+   {
+    "id": "E01",
+    "from": "star_capital",
+    "to": "star_holdings",
+    "type": "Eigentum/Kontrolle (Kette)",
+    "summary": "STAR Capital Partnership LLP ist oberste beherrschende Gesellschaft; Kette über STAR USR Limited, STAR III General Partner LLP und STAR Strategic Assets III LP bis STAR Holdings S.à r.l.",
+    "categories": [
+     "owner"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-c937f9b7f798fc88",
+     "S-4988896bf7d4ec42",
+     "S-c27f8234745c7d46",
+     "S-621777214055324d",
+     "S-71029391d701d972"
+    ],
+    "claim_ids": [
+     "C-006",
+     "C-011"
+    ],
+    "status": "aktuell (Stimmrechtsmitteilung 17.04.2026)",
+    "as_of": "2026-04-17",
+    "control": "Beherrschung der Kette laut Stimmrechtsmitteilung; Zwischengesellschaften nicht als eigene Knoten dargestellt"
+   },
+   {
+    "id": "E02",
+    "from": "star_holdings",
+    "to": "vincorion",
+    "type": "Beteiligung (Aktionärin)",
+    "summary": "STAR Holdings S.à r.l. hält direkt 48,63 % der Stimmrechte (Mitteilung zum 17.04.2026); H1-Bericht weist 47,53 % aus. Abgebende Aktionärin im IPO; vor dem IPO Alleinaktionärin bzw. Mehrheitsaktionärin mit Kontrolle.",
+    "categories": [
+     "owner"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-4988896bf7d4ec42",
+     "S-c27f8234745c7d46",
+     "S-621777214055324d",
+     "S-71029391d701d972",
+     "S-125b291429b46297",
+     "S-2aa87887987537b4",
+     "S-a33cf7c1eeb40a5f",
+     "S-0a9ea0dbc48fd48c"
+    ],
+    "claim_ids": [
+     "C-011",
+     "C-009",
+     "C-014",
+     "C-003"
+    ],
+    "status": "aktuell",
+    "as_of": "2026-04-17",
+    "voting_share": "48,63 % (Mitteilung 17.04.2026); 47,53 % laut H1-Bericht",
+    "control": "Kontrolle bis zum IPO laut H1-Bericht; danach keine Kontrollangabe",
+    "uncertainty": "Abweichende Prozentangaben, siehe C-011."
+   },
+   {
+    "id": "E03",
+    "from": "invesco",
+    "to": "vincorion",
+    "type": "Beteiligung (Aktionär)",
+    "summary": "Invesco Ltd. 4,71 % der Stimmrechte (Aktionärsstruktur H1-Bericht); Invesco Asset Management Ltd. war Cornerstone-Investor im IPO.",
+    "categories": [
+     "owner"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-71029391d701d972",
+     "S-125b291429b46297",
+     "S-54bbffea5b8c5b3a"
+    ],
+    "claim_ids": [
+     "C-012",
+     "C-010"
+    ],
+    "status": "gemeldet (Stand 30.06.2026)",
+    "as_of": "2026-06-30",
+    "voting_share": "4,71 %"
+   },
+   {
+    "id": "E04",
+    "from": "trowe",
+    "to": "vincorion",
+    "type": "Beteiligung (Aktionär)",
+    "summary": "T. Rowe Price Group Inc. 4,69 % und T. Rowe Price International Funds, Inc. 3,69 % der Stimmrechte (H1-Bericht); von T. Rowe Price Associates beratene Konten waren Cornerstone-Investoren.",
+    "categories": [
+     "owner"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-71029391d701d972",
+     "S-125b291429b46297",
+     "S-54bbffea5b8c5b3a"
+    ],
+    "claim_ids": [
+     "C-012",
+     "C-010"
+    ],
+    "status": "gemeldet (Stand 30.06.2026)",
+    "as_of": "2026-06-30",
+    "voting_share": "4,69 % (Group) / 3,69 % (International Funds); mögliche Überschneidung",
+    "uncertainty": "Zurechnungsüberschneidung der beiden Meldungen möglich."
+   },
+   {
+    "id": "E05",
+    "from": "fidelity",
+    "to": "vincorion",
+    "type": "Cornerstone-Investor im IPO",
+    "summary": "Fidelity International gehörte zu den Cornerstone-Investoren (zusammen rund 105 Mio. EUR); aktueller Anteil nicht gemeldet.",
+    "categories": [
+     "other"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-125b291429b46297",
+     "S-54bbffea5b8c5b3a"
+    ],
+    "claim_ids": [
+     "C-010"
+    ],
+    "status": "IPO-Zuteilung März 2026; aktueller Bestand nicht öffentlich",
+    "as_of": "2026-03-19",
+    "uncertainty": "Keine Stimmrechtsmitteilung von Fidelity im geprüften Umfang."
+   },
+   {
+    "id": "E06",
+    "from": "cdc",
+    "to": "vincorion",
+    "type": "Beteiligung (Aktionär)",
+    "summary": "Caisse des Dépôts et Consignations: 3,03 % der Stimmrechte (zugerechnet) zum 22.09.2026.",
+    "categories": [
+     "owner"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-7a846a5847661f28"
+    ],
+    "claim_ids": [
+     "C-013"
+    ],
+    "status": "gemeldet",
+    "as_of": "2026-09-22",
+    "voting_share": "3,03 %"
+   },
+   {
+    "id": "E07",
+    "from": "jenoptik",
+    "to": "vincorion",
+    "type": "Historisches Eigentum / Verkauf",
+    "summary": "JENOPTIK AG verkaufte die Sparte VINCORION an einen von STAR Capital verwalteten Fonds (Signing 25.11.2021, Closing 30.06.2022, EV rund 130 Mio. EUR).",
+    "categories": [
+     "owner"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-aa984398128cc8b6",
+     "S-b9f1cea99e909e3f",
+     "S-40c9171fe2101daa",
+     "S-c52dfb363bd8c860"
+    ],
+    "claim_ids": [
+     "C-007",
+     "C-028"
+    ],
+    "status": "abgeschlossen (historisch)",
+    "as_of": "2022-06-30",
+    "historical": true
+   },
+   {
+    "id": "E08",
+    "from": "jenoptik",
+    "to": "vincorion",
+    "type": "Fortbestehende Garantie/Freistellung",
+    "summary": "Garantie von 10 Mio. EUR zugunsten von VINCORION-Kunden verbleibt bei JENOPTIK AG; Abwicklung von Freistellungsansprüchen (Jenoptik-Ertrag 2025: 3,091 Mio. EUR); VINCORION-Forderung gegen Jenoptik 1.518 TEUR (31.12.2025).",
+    "categories": [
+     "other"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-71029391d701d972",
+     "S-40c9171fe2101daa",
+     "S-c937f9b7f798fc88"
+    ],
+    "claim_ids": [
+     "C-008"
+    ],
+    "status": "laufend",
+    "as_of": "2026-06-30"
+   },
+   {
+    "id": "E09",
+    "from": "vincorion",
+    "to": "vin_holding",
+    "type": "Tochtergesellschaft (100 %)",
+    "summary": "VINCORION SE ist alleinige Gesellschafterin der VINCORION Holding GmbH (18.01.2026 laut Konzernberichten; 28.01.2026 laut SE-Einzelabschluss).",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-71029391d701d972",
+     "S-c937f9b7f798fc88",
+     "S-0a9ea0dbc48fd48c"
+    ],
+    "claim_ids": [
+     "C-001",
+     "C-002",
+     "C-003"
+    ],
+    "status": "aktuell",
+    "as_of": "2026-01-28",
+    "capital_share": "100 %",
+    "control": "beherrscht",
+    "uncertainty": "Datumswiderspruch 18.01./28.01.2026."
+   },
+   {
+    "id": "E10",
+    "from": "vin_holding",
+    "to": "vias",
+    "type": "Tochtergesellschaft (100 %)",
+    "summary": "VINCORION Advanced Systems GmbH, Wedel, 100 % (Beteiligungsliste 31.12.2025).",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-c937f9b7f798fc88",
+     "S-a8b6a9bf5c56126e",
+     "S-56ddab9dedaa1e0b",
+     "S-71029391d701d972"
+    ],
+    "claim_ids": [
+     "C-004",
+     "C-005",
+     "C-017"
+    ],
+    "status": "aktuell (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "100 % (Gruppenquote)",
+    "uncertainty": "Direkte oder mittelbare Haltung nicht angegeben."
+   },
+   {
+    "id": "E11",
+    "from": "vin_holding",
+    "to": "vips",
+    "type": "Tochtergesellschaft (100 %)",
+    "summary": "VINCORION Power Systems GmbH, Altenstadt, 100 % (Beteiligungsliste 31.12.2025).",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-c937f9b7f798fc88",
+     "S-a8b6a9bf5c56126e",
+     "S-56ddab9dedaa1e0b",
+     "S-71029391d701d972"
+    ],
+    "claim_ids": [
+     "C-004",
+     "C-005",
+     "C-017"
+    ],
+    "status": "aktuell (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "100 % (Gruppenquote)",
+    "uncertainty": "Direkte oder mittelbare Haltung nicht angegeben."
+   },
+   {
+    "id": "E12",
+    "from": "vin_holding",
+    "to": "vius",
+    "type": "Tochtergesellschaft (100 %)",
+    "summary": "VINCORION LLC, El Paso (Texas), 100 % (Beteiligungsliste 31.12.2025).",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-c937f9b7f798fc88",
+     "S-a8b6a9bf5c56126e",
+     "S-56ddab9dedaa1e0b",
+     "S-71029391d701d972"
+    ],
+    "claim_ids": [
+     "C-004",
+     "C-005",
+     "C-017"
+    ],
+    "status": "aktuell (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "100 % (Gruppenquote)",
+    "uncertainty": "Direkte oder mittelbare Haltung nicht angegeben."
+   },
+   {
+    "id": "E13",
+    "from": "vin_holding",
+    "to": "viaps",
+    "type": "Tochtergesellschaft (100 %)",
+    "summary": "VINCORION ApS, Hellerup (Dänemark), 100 %, 2025 gegründet, Geschäftsbetrieb noch nicht aufgenommen.",
+    "categories": [
+     "subsidiary"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-c937f9b7f798fc88",
+     "S-a8b6a9bf5c56126e",
+     "S-56ddab9dedaa1e0b"
+    ],
+    "claim_ids": [
+     "C-004",
+     "C-005"
+    ],
+    "status": "gegründet, nicht operativ (Stand 31.12.2025)",
+    "as_of": "2025-12-31",
+    "capital_share": "100 % (Gruppenquote)"
+   },
+   {
+    "id": "E14",
+    "from": "klasen",
+    "to": "vincorion",
+    "type": "Berufliches Mandat (Vorstand, historisch) / aktuelle Funktion",
+    "summary": "Vorstandsmitglied der VINCORION SE vom 18.12.2025 bis 28.01.2026; in PMs vom Juni 2026 als VP Strategy & Chief of Staff zitiert.",
+    "categories": [
+     "other"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-0a9ea0dbc48fd48c",
+     "S-555547ca1efb774c",
+     "S-41e7bd7b63e2d486"
+    ],
+    "claim_ids": [
+     "C-016"
+    ],
+    "status": "Vorstandsmandat beendet; Funktion VP Strategy laut PM 06/2026",
+    "as_of": "2026-06-18",
+    "uncertainty": "Personenidentität PM/Abschluss nicht ausdrücklich verknüpft."
+   },
+   {
+    "id": "E15",
+    "from": "heidelberg",
+    "to": "vias",
+    "type": "Industrialisierungs-/Fertigungspartnerschaft (MoU)",
+    "summary": "HEIDELBERG soll Energieregelungs- und -verteilungssysteme für VINCORION entwickeln, industrialisieren und fertigen; laut HEIDELBERG verläuft die Zusammenarbeit planmäßig (11/2025).",
+    "categories": [
+     "partner",
+     "supplier"
+    ],
+    "product_ids": [
+     "p_power_dist"
+    ],
+    "source_ids": [
+     "S-f113efb0e3928467",
+     "S-1cd4c98ba7f9a5e2",
+     "S-91d594e29b91bc4a",
+     "S-768bc60bd39f6de8",
+     "S-ed98726b2fefc36a"
+    ],
+    "claim_ids": [
+     "C-035",
+     "C-036"
+    ],
+    "status": "MoU unterzeichnet; laufend laut HEIDELBERG (11/2025)",
+    "as_of": "2025-11-12",
+    "uncertainty": "VINCORION nennt die SE, HEIDELBERG die Advanced Systems GmbH als Partner."
+   },
+   {
+    "id": "E16",
+    "from": "heli_one",
+    "to": "vias",
+    "type": "Zertifizierungs-, Integrations- und MRO-Partnerschaft (MoU)",
+    "summary": "MoU zur Markteinführung, STC-Zertifizierung, Integration und Lebenszyklus-/MRO-Betreuung der ERH premierV.",
+    "categories": [
+     "partner"
+    ],
+    "product_ids": [
+     "p_erh"
+    ],
+    "source_ids": [
+     "S-cc471b88cedc6672",
+     "S-a07d2f17d44253db"
+    ],
+    "claim_ids": [
+     "C-037"
+    ],
+    "status": "MoU unterzeichnet",
+    "as_of": "2026-05-08"
+   },
+   {
+    "id": "E17",
+    "from": "vips",
+    "to": "sentinel",
+    "type": "EDF-Projektteilnahme",
+    "summary": "VINCORION Power Systems GmbH liefert PGM 50 kW und ESM 50 kWh, leitet Integration der Demonstratoren und verantwortet Energiespeicherung.",
+    "categories": [
+     "project"
+    ],
+    "product_ids": [
+     "p_tps"
+    ],
+    "source_ids": [
+     "S-69e48c46a7fb7031",
+     "S-c18959e803f1e64d",
+     "S-be1ed12b7791fc5f"
+    ],
+    "claim_ids": [
+     "C-040",
+     "C-041"
+    ],
+    "status": "laufend (01.11.2025–01.11.2029)",
+    "as_of": "2026-04-12"
+   },
+   {
+    "id": "E18",
+    "from": "teces",
+    "to": "sentinel",
+    "type": "Projektkoordination",
+    "summary": "TECES (Maribor) koordiniert das EDF-Projekt SENTINEL.",
+    "categories": [
+     "project"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-c18959e803f1e64d",
+     "S-be1ed12b7791fc5f",
+     "S-69e48c46a7fb7031"
+    ],
+    "claim_ids": [
+     "C-041",
+     "C-040"
+    ],
+    "status": "laufend",
+    "as_of": "2026-02-10"
+   },
+   {
+    "id": "E19",
+    "from": "unibw",
+    "to": "sentinel",
+    "type": "EDF-Projektteilnahme",
+    "summary": "Universität der Bundeswehr München ist SENTINEL-Partner; laut VINCORION erste Testkampagne gemeinsam mit VINCORION.",
+    "categories": [
+     "project"
+    ],
+    "product_ids": [
+     "p_tps"
+    ],
+    "source_ids": [
+     "S-c18959e803f1e64d",
+     "S-be1ed12b7791fc5f",
+     "S-69e48c46a7fb7031"
+    ],
+    "claim_ids": [
+     "C-041",
+     "C-040"
+    ],
+    "status": "laufend",
+    "as_of": "2026-04-12",
+    "uncertainty": "Testkampagne nur Herstellerangabe."
+   },
+   {
+    "id": "E20",
+    "from": "vips",
+    "to": "nomad",
+    "type": "EDF-Projektteilnahme",
+    "summary": "VINCORION Power Systems GmbH ist Konsortialmitglied von NOMAD (Energiespeicher für vorgeschobene Operationsbasen); laut VINCORION 1,7 Mio. EUR Förderung.",
+    "categories": [
+     "project"
+    ],
+    "product_ids": [
+     "p_tps"
+    ],
+    "source_ids": [
+     "S-908c95b84910ee11",
+     "S-511f097415d21638"
+    ],
+    "claim_ids": [
+     "C-042"
+    ],
+    "status": "gefördert (Projektstart laut VINCORION 2024)",
+    "as_of": "2022-09-23"
+   },
+   {
+    "id": "E21",
+    "from": "arpa",
+    "to": "nomad",
+    "type": "Projektkoordination",
+    "summary": "Equipos Móviles de Campaña ARPA koordiniert NOMAD; ARPA ist zudem SENTINEL-Partner (Überschneidung).",
+    "categories": [
+     "project"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-908c95b84910ee11",
+     "S-511f097415d21638",
+     "S-be1ed12b7791fc5f"
+    ],
+    "claim_ids": [
+     "C-042",
+     "C-043"
+    ],
+    "status": "gefördert",
+    "as_of": "2022-09-23"
+   },
+   {
+    "id": "E22",
+    "from": "teces",
+    "to": "nomad",
+    "type": "Projektteilnahme (Überschneidung)",
+    "summary": "TECES ist NOMAD-Konsortialmitglied und SENTINEL-Koordinator – gemeinsame Projektteilnahme mit VINCORION Power Systems, keine bilaterale Kooperation belegt.",
+    "categories": [
+     "project"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-908c95b84910ee11",
+     "S-be1ed12b7791fc5f"
+    ],
+    "claim_ids": [
+     "C-043"
+    ],
+    "status": "belegt in Konsortiallisten",
+    "as_of": "2026-02-10",
+    "overlap": true
+   },
+   {
+    "id": "E23",
+    "from": "arpa",
+    "to": "sentinel",
+    "type": "Projektteilnahme (Überschneidung)",
+    "summary": "ARPA ist SENTINEL-Partner und NOMAD-Koordinator – gemeinsame Projektteilnahme, keine bilaterale Kooperation mit VINCORION belegt.",
+    "categories": [
+     "project"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-908c95b84910ee11",
+     "S-be1ed12b7791fc5f",
+     "S-c18959e803f1e64d"
+    ],
+    "claim_ids": [
+     "C-043",
+     "C-041"
+    ],
+    "status": "belegt in Konsortiallisten",
+    "as_of": "2026-02-10",
+    "overlap": true
+   },
+   {
+    "id": "E24",
+    "from": "vincorion",
+    "to": "knds",
+    "type": "Lieferung an OEM (Rahmenvertrag Boxer-Generatoren)",
+    "summary": "Rahmenvertrag mit KNDS Deutschland über >700 (später 740) EPG huskyV W 600 für den Boxer, ca. 12 Mio. EUR (2024); laut Produktseite knapp 1.000 Generatoren im Boxer-Programm geliefert.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "p_vehicle_gen"
+    ],
+    "source_ids": [
+     "S-6e6d85a309774afc",
+     "S-6a21b1224ef5726f",
+     "S-3d9c89bef4d43468",
+     "S-87c277a6a09bd73e"
+    ],
+    "claim_ids": [
+     "C-022"
+    ],
+    "status": "beauftragt; Lieferungen laut Herstellerangabe",
+    "as_of": "2024-04-04",
+    "uncertainty": "Nur Herstellerangabe/Wiedergabe; keine KNDS-Bestätigung."
+   },
+   {
+    "id": "E25",
+    "from": "vincorion",
+    "to": "knds",
+    "type": "Lieferung an OEM (Leopard 2 / GTD chaserV)",
+    "summary": "VINCORION nennt KNDS als Kunden (Leopard-2-Upgrade A-RC 3.0) und liefert Antriebe, Stabilisierung, Leistungselektronik und Generator für den Leopard 2; GTD chaserV erstmals in Serie für 54 Leopard 2 A8 Norwegen.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "p_stab",
+     "p_vehicle_gen"
+    ],
+    "source_ids": [
+     "S-1aa8f95b2599facc",
+     "S-257bf5b7920f7bb4"
+    ],
+    "claim_ids": [
+     "C-023",
+     "C-024"
+    ],
+    "status": "beauftragt (laut Herstellerangabe 2024); Kundenbeziehung laut dpa 2026",
+    "as_of": "2024-06-19",
+    "uncertainty": "Vertragspartner der Norwegen-Lieferung nicht ausdrücklich genannt."
+   },
+   {
+    "id": "E26",
+    "from": "vincorion",
+    "to": "rheinmetall",
+    "type": "Kundenbeziehung (Sekundärquelle)",
+    "summary": "dpa-AFX nennt Rheinmetall als Kunden von VINCORION; Produkt/Programm nicht genannt.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [],
+    "source_ids": [
+     "S-257bf5b7920f7bb4"
+    ],
+    "claim_ids": [
+     "C-024"
+    ],
+    "status": "laufend laut Bericht (03/2026)",
+    "as_of": "2026-03-06",
+    "uncertainty": "Nur Sekundärquelle; keine Originalbestätigung."
+   },
+   {
+    "id": "E27",
+    "from": "vincorion",
+    "to": "diehl",
+    "type": "Lieferung an Systemintegrator (IRIS-T SLM)",
+    "summary": "Diehl Defence beauftragte laut Fachmedien (2023, nach VINCORION-Mitteilung) Energieversorgungsmodule für IRIS-T-SLM-Launcher.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "p_gensets_gbad"
+    ],
+    "source_ids": [
+     "S-be02a1cc64071dd5",
+     "S-945a20788677cd82",
+     "S-2267af5e02fda855"
+    ],
+    "claim_ids": [
+     "C-025"
+    ],
+    "status": "beauftragt (2023)",
+    "as_of": "2023-02-16",
+    "uncertainty": "Nur Wiedergabe der Herstellermitteilung; keine Diehl-Bestätigung."
+   },
+   {
+    "id": "E28",
+    "from": "vincorion",
+    "to": "raytheon",
+    "type": "Zulieferung PATRIOT-Stromversorgung",
+    "summary": "VINCORION liefert seit über 40 Jahren Stromversorgung für PATRIOT in Zusammenarbeit mit Raytheon; Raytheon-Zitat und Supplier-Awards auf VINCORION-Website.",
+    "categories": [
+     "supplier",
+     "customer"
+    ],
+    "product_ids": [
+     "p_gensets_gbad"
+    ],
+    "source_ids": [
+     "S-2267af5e02fda855",
+     "S-c937f9b7f798fc88"
+    ],
+    "claim_ids": [
+     "C-026",
+     "C-018"
+    ],
+    "status": "laufend (Herstellerangabe)",
+    "as_of": "2026-10-20",
+    "uncertainty": "Keine aktuelle Raytheon-Originalquelle geprüft."
+   },
+   {
+    "id": "E29",
+    "from": "jenoptik",
+    "to": "raytheon",
+    "type": "Historischer Liefervertrag (Jenoptik-Tochter Lechmotoren)",
+    "summary": "Raytheon-Vertrag 2015 mit Jenoptik-Tochter Lechmotoren über Stromerzeugungsanlagen und Generatoren für einen globalen PATRIOT-Partner.",
+    "categories": [
+     "supplier"
+    ],
+    "product_ids": [
+     "p_gensets_gbad"
+    ],
+    "source_ids": [
+     "S-399c866fc838bf1b",
+     "S-c52dfb363bd8c860"
+    ],
+    "claim_ids": [
+     "C-027",
+     "C-028"
+    ],
+    "status": "beauftragt 2015 (historisch)",
+    "as_of": "2015-04-24",
+    "historical": true
+   },
+   {
+    "id": "E30",
+    "from": "vincorion",
+    "to": "airbus",
+    "type": "Zulieferung zivile Luftfahrt (Sekundärquelle)",
+    "summary": "dpa-AFX: Heizelemente von VINCORION in Airbus-Passagiermaschinen.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "p_aircraft_heat"
+    ],
+    "source_ids": [
+     "S-257bf5b7920f7bb4"
+    ],
+    "claim_ids": [
+     "C-024"
+    ],
+    "status": "laufend laut Bericht (03/2026)",
+    "as_of": "2026-03-06",
+    "uncertainty": "Nur Sekundärquelle; Vertragsweg (direkt oder über Zulieferer) unbekannt."
+   },
+   {
+    "id": "E31",
+    "from": "vincorion",
+    "to": "airbus",
+    "type": "Plattformintegration ERH premierV (Airbus H145)",
+    "summary": "ERH premierV soll auf dem Airbus H145 debütieren; Erstflug für Oktober geplant, „Timeline aligned with Airbus“; erste Auslieferungen geplant H1 2027.",
+    "categories": [
+     "partner"
+    ],
+    "product_ids": [
+     "p_erh"
+    ],
+    "source_ids": [
+     "S-843d0f17aae3494b",
+     "S-9cd9c3ae3af87af5",
+     "S-71029391d701d972",
+     "S-e1f50ca0e7fe88cd"
+    ],
+    "claim_ids": [
+     "C-038",
+     "C-039"
+    ],
+    "status": "Entwicklung/Test; Lieferung geplant",
+    "as_of": "2026-08-13",
+    "uncertainty": "Nur Herstellerangabe; Art der Vereinbarung mit Airbus nicht veröffentlicht."
+   },
+   {
+    "id": "E32",
+    "from": "vincorion",
+    "to": "nspa",
+    "type": "Rahmenvertrag PATRIOT-Stromversorgung (Obsoleszenz)",
+    "summary": "NSPA-Rahmenvertrag, zunächst 60 Mio. EUR, für DE, NL, SE, RO, PL; Umsetzung 2025–2030.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "p_gensets_gbad"
+    ],
+    "source_ids": [
+     "S-74f313ac4d339267",
+     "S-56db18e5f6a31a81",
+     "S-2267af5e02fda855"
+    ],
+    "claim_ids": [
+     "C-030",
+     "C-046"
+    ],
+    "status": "beauftragt (Rahmenvertrag)",
+    "as_of": "2025-09-19",
+    "uncertainty": "Keine NSPA-Originalquelle gefunden."
+   },
+   {
+    "id": "E33",
+    "from": "vius",
+    "to": "dla",
+    "type": "Rahmenverträge PATRIOT-EPP-Ersatzteile/Instandhaltung",
+    "summary": "SAM.gov: Award SPRBL124D0008 (08.05.2024, 35 Mio. USD, sole source) an VINCORION LLC; laut VINCORION zwei DLA-Rahmenverträge über je bis 33 Mio. USD.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "p_gensets_gbad"
+    ],
+    "source_ids": [
+     "S-945d1e412e25a22f",
+     "S-b8bbd90710a297a5"
+    ],
+    "claim_ids": [
+     "C-032",
+     "C-031"
+    ],
+    "status": "beauftragt",
+    "as_of": "2024-05-08",
+    "uncertainty": "Höchstwerte keine garantierten Umsätze; PM- und Registerwerte weichen ab."
+   },
+   {
+    "id": "E34",
+    "from": "vius",
+    "to": "us_army",
+    "type": "Rahmenvertrag PATRIOT-EPP-III-Teile (Letterkenny Army Depot)",
+    "summary": "USAspending: IDV W911N225D0008, 10.03.2025–09.03.2030, 40 Single-Source-Teile für EPP-III-Rekapitalisierung.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "p_gensets_gbad"
+    ],
+    "source_ids": [
+     "S-6271316e5240ae67",
+     "S-2267af5e02fda855"
+    ],
+    "claim_ids": [
+     "C-033",
+     "C-046"
+    ],
+    "status": "beauftragt (Rahmenvertrag)",
+    "as_of": "2025-03-05"
+   },
+   {
+    "id": "E35",
+    "from": "vincorion",
+    "to": "baainbw",
+    "type": "Entwicklungsaufträge taktische Stromerzeuger",
+    "summary": "BAAINBw-Entwicklungsaufträge für Stromerzeuger 200/50 kW (2022) und 20 kW samt Batteriespeichern (2023); 2026 Entwicklung der nächsten Generation taktischer mobiler Stromversorgung.",
+    "categories": [
+     "customer"
+    ],
+    "product_ids": [
+     "p_tps"
+    ],
+    "source_ids": [
+     "S-2b7291ad743a6f18",
+     "S-41e7bd7b63e2d486",
+     "S-2267af5e02fda855"
+    ],
+    "claim_ids": [
+     "C-034",
+     "C-046"
+    ],
+    "status": "Entwicklungsauftrag",
+    "as_of": "2026-06-18",
+    "uncertainty": "BAAINBw-Originalmitteilung nicht abrufbar; Serienbeschaffung nicht belegt."
+   },
+   {
+    "id": "E36",
+    "from": "vincorion",
+    "to": "reactivedyn",
+    "type": "Gemeinsamer Messeauftritt / Demonstration",
+    "summary": "Eurosatory 2026: ReactiveDynamics als Mitaussteller; Demonstration Laden des UGV RDX-1 mit PGM/ESM; Kooperation nur als Möglichkeit genannt.",
+    "categories": [
+     "other"
+    ],
+    "product_ids": [
+     "p_tps"
+    ],
+    "source_ids": [
+     "S-41e7bd7b63e2d486"
+    ],
+    "claim_ids": [
+     "C-044"
+    ],
+    "status": "Demonstration; keine Vereinbarung belegt",
+    "as_of": "2026-06-15",
+    "uncertainty": "Keine vertragliche Kooperation belegt."
+   }
+  ],
+  "products": [
+   {
+    "id": "p_gensets_gbad",
+    "label": "Stromversorgung Luftverteidigung (PATRIOT/IRIS-T SLM)"
+   },
+   {
+    "id": "p_vehicle_gen",
+    "label": "Fahrzeuggeneratoren EPG huskyV"
+   },
+   {
+    "id": "p_stab",
+    "label": "Waffenstabilisierung GTD chaserV"
+   },
+   {
+    "id": "p_tps",
+    "label": "Taktische Stromversorgung PGM/ESM (TPS)"
+   },
+   {
+    "id": "p_erh",
+    "label": "Rettungswinde ERH premierV"
+   },
+   {
+    "id": "p_aircraft_heat",
+    "label": "Luftfahrt-Heizsysteme"
+   },
+   {
+    "id": "p_power_dist",
+    "label": "Energieregelungs-/verteilungssysteme"
+   }
+  ],
+  "sources": [
+   {
+    "id": "S-a33cf7c1eeb40a5f",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "VINCORION SE joins the SDAX just weeks after successful IPO",
+    "url": "https://vincorion.com/en/vincorion-se-joins-the-sdax-just-weeks-after-successful-ipo/",
+    "published_date": "2026-06-04",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-125b291429b46297",
+    "name": "EQS News / VINCORION SE",
+    "title": "VINCORION SE successfully completes Initial Public Offering",
+    "url": "https://www.eqs-news.com/news/corporate/vincorion-se-successfully-completes-initial-public-offering/308745c8-8624-454b-8d71-d00666ac5fc1_en",
+    "published_date": "2026-03-19",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-54bbffea5b8c5b3a",
+    "name": "STAR Capital Partnership LLP",
+    "title": "VINCORION IPO",
+    "url": "https://www.star-capital.com/news-and-insights/vincorion-ipo.html",
+    "published_date": "2026-03-20",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Partnerangabe"
+   },
+   {
+    "id": "S-b9f1cea99e909e3f",
+    "name": "STAR Capital Partnership LLP",
+    "title": "STAR Capital acquires Vincorion from parent company Jenoptik",
+    "url": "https://www.star-capital.com/news-and-insights/star-capital-acquires-vincorion-from-parent-company-jenoptik.html",
+    "published_date": "2022-07-01",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Partnerangabe"
+   },
+   {
+    "id": "S-621777214055324d",
+    "name": "STAR Capital Partnership LLP",
+    "title": "Portfolio: Vincorion",
+    "url": "https://www.star-capital.com/portfolio/vincorion.html",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "Partnerangabe"
+   },
+   {
+    "id": "S-0a9ea0dbc48fd48c",
+    "name": "EQS News / VINCORION SE",
+    "title": "Jahresfinanzbericht 2025 VINCORION SE (ZIP; Datei VISE_Abschluss_FY25_EN.pdf: Jahresabschluss und Anhang für das Rumpfgeschäftsjahr 28.01.–31.12.2025)",
+    "url": "https://www.eqs-news.com/media/document/aab835db-f638-4f98-8ab5-d47804eceaf8/assets/DE000VNC0014-JA-2025-EQ-E-00.zip",
+    "published_date": "2026-05-12",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Originalbericht",
+    "report_year": 2025,
+    "section": "Anhang (Exhibit 4), Abschnitte B, C, D, F"
+   },
+   {
+    "id": "S-71029391d701d972",
+    "name": "EQS News / VINCORION SE",
+    "title": "Half-Year Financial Report 2026 (VINCORION SE)",
+    "url": "https://www.eqs-news.com/media/document/4b669fed-814f-48d1-8678-d29720f9560c/assets/DE000VNC0014-Q2-2026-EQ-E-00.pdf",
+    "published_date": "2026-08-13",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Originalbericht",
+    "report_year": 2026,
+    "page": "PDF-Seiten 6–28 (gedruckte Seiten 04–26; gedruckte Seite = PDF-Seite minus 2)"
+   },
+   {
+    "id": "S-9cd9c3ae3af87af5",
+    "name": "EQS News / VINCORION SE",
+    "title": "VINCORION H1 2026 Results Presentation",
+    "url": "https://www.eqs-news.com/media/document/0f2dd31d-9994-4d99-9b4f-9bfc77e5e5f8/assets/2026-08-13_VINC_HY1_2026_result_presentation_final.pdf",
+    "published_date": "2026-08-13",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe",
+    "report_year": 2026,
+    "page": "PDF-Seite 5"
+   },
+   {
+    "id": "S-e1f50ca0e7fe88cd",
+    "name": "EQS News / VINCORION SE",
+    "title": "VINCORION Q1 2026 Results Presentation",
+    "url": "https://www.eqs-news.com/media/document/bcf3789a-c391-49d7-85cb-31b54cd81fd6/assets/20260506_VINCQ1results_presentation_01.pdf",
+    "published_date": "2026-05-07",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe",
+    "report_year": 2026,
+    "page": "PDF-Seiten 6 und 16"
+   },
+   {
+    "id": "S-c937f9b7f798fc88",
+    "name": "EQS News / VINCORION SE",
+    "title": "Audited Consolidated Financial Statements of VINCORION Holding GmbH 2025 (IFRS)",
+    "url": "https://www.eqs-news.com/media/document/24ddf13e-6ac7-4144-b9e7-248345f3c2ca/assets/Audited_Consolidated_Financial_Statements_of_VINCORION_Holding_GmbH_202.pdf",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "Originalbericht",
+    "report_year": 2025,
+    "page": "PDF-Seiten 7–42 (gedruckte Seiten F-9 bis F-44; gedruckte Seite = PDF-Seite plus 2)"
+   },
+   {
+    "id": "S-a8b6a9bf5c56126e",
+    "name": "EQS News / VINCORION SE",
+    "title": "Audited Consolidated Financial Statements of VINCORION Holding GmbH 2024 (IFRS)",
+    "url": "https://www.eqs-news.com/media/document/53119d46-468f-4cbd-9301-691526a3954e/assets/Audited_Consolidated_Financial_Statements_of_VINCORION_Holding_GmbH_202.pdf",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "Originalbericht",
+    "report_year": 2024,
+    "page": "PDF-Seiten 35–36"
+   },
+   {
+    "id": "S-56ddab9dedaa1e0b",
+    "name": "EQS News / VINCORION SE",
+    "title": "Audited Consolidated Financial Statements of VINCORION Holding GmbH 2023 (IFRS)",
+    "url": "https://www.eqs-news.com/media/document/a639e48a-2a12-46cd-87f3-75764bdd5045/assets/Audited_Consolidated_Financial_Statements_of_VINCORION_Holding_GmbH_202.pdf",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "Originalbericht",
+    "report_year": 2023,
+    "page": "PDF-Seiten 37–38"
+   },
+   {
+    "id": "S-4988896bf7d4ec42",
+    "name": "EQS News / VINCORION SE",
+    "title": "Stimmrechtsmitteilung STAR Capital Partnership LLP (Release according to Art. 40 (1) WpHG)",
+    "url": "https://www.eqs-news.com/news/voting-rights/star-capital-partnership-llp-london-united-kingdom/4fb3843c-013c-4e76-90ff-0347b3fe1200_en",
+    "published_date": "2026-03-26",
+    "accessed_date": "2026-10-20",
+    "source_kind": "amtlicher Datensatz",
+    "section": "Pflichtmitteilung nach WpHG"
+   },
+   {
+    "id": "S-c27f8234745c7d46",
+    "name": "EQS News / VINCORION SE",
+    "title": "Stimmrechtsmitteilung STAR Capital Partnership LLP (Veröffentlichung gemäß § 40 Abs. 1 WpHG)",
+    "url": "https://www.eqs-news.com/news/voting-rights/star-capital-partnership-llp-london-grosbritannien/ca26d6d1-b6f4-4843-8026-080b3276d5c3_de",
+    "published_date": "2026-04-24",
+    "accessed_date": "2026-10-20",
+    "source_kind": "amtlicher Datensatz",
+    "section": "Pflichtmitteilung nach WpHG"
+   },
+   {
+    "id": "S-7a846a5847661f28",
+    "name": "EQS News / VINCORION SE",
+    "title": "Stimmrechtsmitteilung Caisse des Dépôts et Consignations (Release according to Art. 40 (1) WpHG)",
+    "url": "https://www.eqs-news.com/news/voting-rights/caisse-des-depots-et-consignations-paris-france/475d8ff9-12d3-44fd-9e12-c6d2e10f5c09_en",
+    "published_date": "2026-09-25",
+    "accessed_date": "2026-10-20",
+    "source_kind": "amtlicher Datensatz",
+    "section": "Pflichtmitteilung nach WpHG"
+   },
+   {
+    "id": "S-2aa87887987537b4",
+    "name": "EQS News / VINCORION SE",
+    "title": "VINCORION plans Initial Public Offering on Frankfurt Stock Exchange",
+    "url": "https://www.eqs-news.com/news/corporate/vincorion-plans-initial-public-offering-on-frankfurt-stock-exchange/f0168675-b51b-4a9c-acdb-48dfaf818238_en",
+    "published_date": "2026-03-06",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-69e48c46a7fb7031",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "VINCORION takes on key role in European defense project SENTINEL",
+    "url": "https://vincorion.com/en/vincorion-takes-on-key-role-in-european-defense-project-sentinel-2/",
+    "published_date": "2026-04-12",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-be1ed12b7791fc5f",
+    "name": "Universität Maribor, GeMMA Lab",
+    "title": "SENTINEL – Projektseite (Partnerliste)",
+    "url": "https://gemma.feri.um.si/projects/international-projects/sentinel/",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "Partnerangabe"
+   },
+   {
+    "id": "S-c18959e803f1e64d",
+    "name": "Republik Slowenien, Verteidigungsministerium (gov.si)",
+    "title": "V Mariboru začeli aktivnosti projekta trajnostnih energetskih zmogljivosti (SENTINEL)",
+    "url": "https://www.gov.si/novice/2026-02-10-v-mariboru-zaceli-aktivnosti-projekta-trajnostnih-energetskih-zmogljivosti/",
+    "published_date": "2026-02-10",
+    "accessed_date": "2026-10-20",
+    "source_kind": "amtlicher Datensatz"
+   },
+   {
+    "id": "S-a07d2f17d44253db",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "Heli-One and VINCORION intend to partner to bring next-generation Electrical Rescue Hoist (ERH) to civil and military helicopter market",
+    "url": "https://vincorion.com/en/heli-one-and-vincorion-intend-to-partner-to-bring-next-generation-electrical-rescue-hoist-erh-to-civil-and-military-helicopter-market/",
+    "published_date": "2026-05-08",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-cc471b88cedc6672",
+    "name": "Heli-One",
+    "title": "Heli-One and VINCORION intend to partner to bring next-generation Electrical Rescue Hoist (ERH) to civil and military helicopter market",
+    "url": "https://www.heli-one.com/news-insights/heli-one-and-vincorion-intend-to-partner-to-bring-next-generation-electrical-rescue-hoist-erh-to-civil-and-military-helicopter-market",
+    "published_date": "2026-05-08",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Partnerangabe"
+   },
+   {
+    "id": "S-f113efb0e3928467",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "VINCORION enters strategic partnership with industrialisation specialist HEIDELBERG",
+    "url": "https://vincorion.com/en/strategic-partner-heidelberg/",
+    "published_date": "2025-07-29",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-1cd4c98ba7f9a5e2",
+    "name": "Börse Online (dpa-AFX / EQS-News-Kopie)",
+    "title": "EQS-News: HEIDELBERG vereinbart strategische Partnerschaft mit Defence-Spezialist VINCORION (deutsch)",
+    "url": "https://www.boerse-online.de/dpa-afx/eqs-news-heidelberg-vereinbart-strategische-partnerschaft-mit-defence-spezialist-vincorion-deutsch-461126.html",
+    "published_date": "2025-07-29",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Drittanbieter-Kopie"
+   },
+   {
+    "id": "S-91d594e29b91bc4a",
+    "name": "Heidelberger Druckmaschinen AG",
+    "title": "Pressemitteilung Halbjahr 2025/26 (Q2 2025/26)",
+    "url": "https://www.heidelberg.com/global/media/de/global_media/investor_relations/ir_reports_and_presentations/2025_26/20251112_q2_25_26_press_release.pdf",
+    "published_date": "2025-11-12",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Partnerangabe",
+    "page": "PDF-Seite 3"
+   },
+   {
+    "id": "S-768bc60bd39f6de8",
+    "name": "Heidelberger Druckmaschinen AG",
+    "title": "Q2 2025/26 Presentation (Conference Call)",
+    "url": "https://www.heidelberg.com/global/media/en/global_media/investor_relations/ir_reports_and_presentations/2025_26/251112_q2_2526_presentation_cc.pdf",
+    "published_date": "2025-11-12",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Partnerangabe",
+    "page": "PDF-Seite 9"
+   },
+   {
+    "id": "S-ed98726b2fefc36a",
+    "name": "Heidelberger Druckmaschinen AG",
+    "title": "Pressemitteilung Bilanzpressekonferenz 2025/26",
+    "url": "https://www.heidelberg.com/global/media/de/global_media/investor_relations/ir_reports_and_presentations/2025_26/260610_apc_2526_press_release.pdf",
+    "published_date": "2026-06-10",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Partnerangabe"
+   },
+   {
+    "id": "S-6e6d85a309774afc",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "VINCORION Awarded Major Contract for Generators for the Boxer Wheeled Tank",
+    "url": "https://vincorion.com/en/vincorion-awarded-major-contract-for-generators-for-the-boxer-wheeled-tank/",
+    "published_date": "2024-04-04",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-6a21b1224ef5726f",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "Reliable Power Supply for the Modern Boxer and Other Armored Vehicles",
+    "url": "https://vincorion.com/en/boxer-power-supply-generators-epg/",
+    "published_date": "2024-11-18",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-87c277a6a09bd73e",
+    "name": "ES&T – Europäische Sicherheit & Technik",
+    "title": "600A-Generatoren für die neuen Boxer",
+    "url": "https://esut.de/2024/04/meldungen/48687/600a-generatoren-fuer-die-neuen-boxer/",
+    "published_date": "2024-04-04",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Wiedergabe"
+   },
+   {
+    "id": "S-b8bbd90710a297a5",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "VINCORION Wins $67 Million Contract for Patriot Maintenance in the United States",
+    "url": "https://vincorion.com/en/patriot-maintenance-million-contract/",
+    "published_date": "2024-06-13",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-945d1e412e25a22f",
+    "name": "SAM.gov (U.S. General Services Administration)",
+    "title": "Award Notice SPRBL124D0008 – EPP Spare Parts (API-Datensatz)",
+    "url": "https://sam.gov/api/prod/opps/v2/opportunities/84889090d3d740259c91511e97f1826f",
+    "published_date": "2024-05-22",
+    "accessed_date": "2026-10-20",
+    "source_kind": "amtlicher Datensatz"
+   },
+   {
+    "id": "S-6271316e5240ae67",
+    "name": "USAspending.gov (U.S. Department of the Treasury)",
+    "title": "Award Profile IDV W911N225D0008 (API-Datensatz)",
+    "url": "https://api.usaspending.gov/api/v2/awards/CONT_IDV_W911N225D0008_9700/",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "amtlicher Datensatz"
+   },
+   {
+    "id": "S-1aa8f95b2599facc",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "High-Tech for Precise Hits: VINCORION Supplies Innovative GTD chaserV Weapon Stabilization System",
+    "url": "https://vincorion.com/en/large-scale-weapon-stabilization-gtd-chaser/",
+    "published_date": "2024-06-19",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-511f097415d21638",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "EU Supports Development of New Power Storage Systems by VINCORION Within the Scope of NOMAD Project",
+    "url": "https://vincorion.com/en/eu-supports-development-of-new-power-storage-systems-by-vincorion-within-the-scope-of-nomad-project/",
+    "published_date": "2022-09-23",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-908c95b84910ee11",
+    "name": "Intracom Defense (Kopie eines EU-Factsheets)",
+    "title": "NOMAD – Selected Projects European Defence Fund (EDF) 2021 (Factsheet ©European Union 2022)",
+    "url": "https://www.intracomdefense.com/wp-content/uploads/2023/08/NOMAD.pdf",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "Drittanbieter-Kopie",
+    "page": "PDF-Seiten 1–3"
+   },
+   {
+    "id": "S-74f313ac4d339267",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "Operational Superiority with State-of-the-Art Logistics: VINCORION Introduces Next-Gen Power for Air Defense",
+    "url": "https://vincorion.com/en/operational-superiority-with-state-of-the-art-logistics-vincorion-introduces-next-gen-power-for-air-defense/",
+    "published_date": "2025-09-19",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-56db18e5f6a31a81",
+    "name": "defence-network.com",
+    "title": "VINCORION präsentiert „NextGen“-Power für Luftverteidigung",
+    "url": "https://defence-network.com/vincorion-nextgen-power-fuer-luftverteidigung/",
+    "published_date": "2025-09-19",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Wiedergabe"
+   },
+   {
+    "id": "S-41e7bd7b63e2d486",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "Mobile Energy Systems for Future-Proof Deployment Scenarios",
+    "url": "https://vincorion.com/en/mobile-energy-systems-for-future-proof-deployment-scenarios/",
+    "published_date": "2026-06-18",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-555547ca1efb774c",
+    "name": "VINCORION SE (Newsroom)",
+    "title": "Energy for Europe's Security: VINCORION at Eurosatory 2026",
+    "url": "https://vincorion.com/en/energy-for-europes-security-vincorion-at-eurosatory-2026/",
+    "published_date": "2026-06-15",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-2267af5e02fda855",
+    "name": "VINCORION SE (Website)",
+    "title": "Power Systems – Ground-Based Air Defense",
+    "url": "https://vincorion.com/en/power-systems/ground-based-air-defense/",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-843d0f17aae3494b",
+    "name": "VINCORION SE (Website)",
+    "title": "Aircraft Systems – Hoist Systems",
+    "url": "https://vincorion.com/en/aircraft-systems/hoist-systems/",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-3d9c89bef4d43468",
+    "name": "VINCORION SE (Website)",
+    "title": "Vehicle Systems – Land Energy Systems",
+    "url": "https://vincorion.com/en/vehicle-systems/land-energy-systems/",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe"
+   },
+   {
+    "id": "S-945a20788677cd82",
+    "name": "Militär Aktuell",
+    "title": "Diehl: Vincorion supplies IRIS-T SLM with energy",
+    "url": "https://militaeraktuell.at/en/diehl-vincorion-supplies-iris-t-slm-with-energy/",
+    "published_date": "2023-03-22",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-be02a1cc64071dd5",
+    "name": "ES&T – Europäische Sicherheit & Technik",
+    "title": "Energieversorgung für IRIS-T SLM",
+    "url": "https://esut.de/2023/02/meldungen/40014/energieversorgung-fuer-iris-t-slm/",
+    "published_date": "2023-02-16",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-2b7291ad743a6f18",
+    "name": "Militär Aktuell",
+    "title": "Vincorion entwickelt für die Bundeswehr Stromaggregate",
+    "url": "https://militaeraktuell.at/vincorion-entwickelt-fuer-die-bundeswehr-stromaggregate/",
+    "published_date": "2023-08-31",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-257bf5b7920f7bb4",
+    "name": "dpa-AFX (via Deutsche Börse live)",
+    "title": "IPO/ROUNDUP: Rüstungszulieferer Vincorion strebt an die Börse",
+    "url": "https://live.deutsche-boerse.com/nachrichten/IPO-ROUNDUP-Ruestungszulieferer-Vincorion-strebt-an-die-Boerse-92c154a6-cc14-4b7f-b985-6912e565c7e8",
+    "published_date": "2026-03-06",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Sekundärquelle"
+   },
+   {
+    "id": "S-aa984398128cc8b6",
+    "name": "JENOPTIK AG",
+    "title": "Ad-hoc: JENOPTIK AG signs agreement to sell VINCORION",
+    "url": "https://www.jenoptik.com/investors/news-and-adhoc-releases/2021/11/25/agreement-to-sell-vincorion",
+    "published_date": "2021-11-25",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Partnerangabe"
+   },
+   {
+    "id": "S-40c9171fe2101daa",
+    "name": "JENOPTIK AG",
+    "title": "Jenoptik Annual Report 2025",
+    "url": "https://www.jenoptik.com/-/media/websitedocuments/ir/berichte-und-tabellen/2025/online/en/jenoptik-annual-report-2025.pdf",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "Originalbericht",
+    "report_year": 2025,
+    "page": "PDF-Seiten 51, 219, 258 (= gedruckte Seiten)"
+   },
+   {
+    "id": "S-399c866fc838bf1b",
+    "name": "Raytheon (PR Newswire via raytheon.mediaroom.com)",
+    "title": "Germany's Jenoptik and Raytheon partner to produce new generators for global Patriot",
+    "url": "https://raytheon.mediaroom.com/2015-04-24-Germanys-Jenoptik-and-Raytheon-partner-to-produce-new-generators-for-global-Patriot",
+    "published_date": "2015-04-24",
+    "accessed_date": "2026-10-20",
+    "source_kind": "Partnerangabe"
+   },
+   {
+    "id": "S-c52dfb363bd8c860",
+    "name": "VINCORION (Presse-Boilerplate)",
+    "title": "VINCORION Company Overview (Boilerplate Presse EN)",
+    "url": "https://www.vincorion.com/wp-content/uploads/2022/09/220628_VIN_Boilerplate_Presse_EN.pdf",
+    "published_date": null,
+    "accessed_date": "2026-10-20",
+    "source_kind": "Herstellerangabe",
+    "page": "PDF-Seiten 3–4"
+   }
+  ]
+ },
+ "gaps": [
+  "Wertpapierprospekt vom 13.03.2026 nicht zugänglich (IR-Seite JavaScript, keine Direktverlinkung gefunden); Kunden-, Lieferanten- und Wettbewerbsangaben daraus fehlen.",
+  "Konzernlagebericht 2025 der VINCORION Holding GmbH öffentlich nicht gefunden.",
+  "Keine Originalbestätigung der Gegenparteien für KNDS, Rheinmetall, Diehl Defence, Airbus und NSPA; diese Kanten beruhen auf Herstellerangaben bzw. Sekundärquellen.",
+  "Namen der Kunden mit >10 % Umsatzanteil (2025: einer; H1 2026: drei) und Auftraggeber der Juni-2026-Großaufträge (20 Mio. / 54 Mio. EUR) nicht veröffentlicht.",
+  "Datumswiderspruch Alleingesellschafterstellung SE/Holding (18.01. vs. 28.01.2026) und Anteilswiderspruch STAR (47,53 % vs. 48,63 %) offen.",
+  "Keine öffentlich benannten Zulieferer (z. B. Motoren, Batteriezellen, Elektronik) und keine Software-/KI-Partnerschaften gefunden; das ist eine Recherchegrenze, kein Beleg für deren Fehlen.",
+  "Kein Joint Venture und keine assoziierten Unternehmen im geprüften Konsolidierungskreis 2023–2025 und im H1-Bericht 2026 identifiziert.",
+  "Personenidentität „Klaas Klasen“ (PM) und „Klaas Jacob Klasen“ (Abschluss) nicht ausdrücklich verknüpft; Ulrich Strieder: keine Verbindung im Cluster-Umfang gefunden (Nutzerangabe, unverifiziert).",
+  "Aufsichtsrat der VINCORION SE nicht vollständig belegt (bekannt: Maike Schuh; Jürgen Weber ausgeschieden); mögliche STAR-Vertreter im Aufsichtsrat nicht geprüft."
+ ],
+ "coverage": [
+  {
+   "cluster": "capital",
+   "topic": "Eigentümer, Stimmrechte, IPO",
+   "search": "VINCORION Eigentümer Übernahme; VINCORION acquisition 2026; EQS voting rights VINCORION; STAR Capital Vincorion",
+   "opened_source_ids": [
+    "S-125b291429b46297",
+    "S-2aa87887987537b4",
+    "S-54bbffea5b8c5b3a",
+    "S-621777214055324d",
+    "S-4988896bf7d4ec42",
+    "S-c27f8234745c7d46",
+    "S-7a846a5847661f28",
+    "S-71029391d701d972",
+    "S-0a9ea0dbc48fd48c"
+   ],
+   "claim_ids": [
+    "C-003",
+    "C-009",
+    "C-010",
+    "C-011",
+    "C-012",
+    "C-013",
+    "C-014",
+    "C-049"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Goldman-Sachs-Mitteilungen (09.04.2026) nicht ausgewertet; Stimmrechtsmitteilungen von Invesco/T. Rowe/Holst/Seige nur über H1-Grafik übernommen; Aufsichtsratszusammensetzung nicht vollständig belegt."
+  },
+  {
+   "cluster": "capital",
+   "topic": "Historie Jenoptik-Verkauf und Nachwirkungen",
+   "search": "Jenoptik sell VINCORION; Jenoptik Geschäftsbericht 2025 VINCORION",
+   "opened_source_ids": [
+    "S-aa984398128cc8b6",
+    "S-b9f1cea99e909e3f",
+    "S-40c9171fe2101daa",
+    "S-c52dfb363bd8c860"
+   ],
+   "claim_ids": [
+    "C-007",
+    "C-008",
+    "C-028"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Earn-out-Komponenten nicht beziffert; Registerhistorie Lechmotoren/VINCORION Power Systems nicht über Handelsregister geprüft."
+  },
+  {
+   "cluster": "structure",
+   "topic": "Konzernstruktur, Tochtergesellschaften, Vorjahresvergleich",
+   "search": "VINCORION Konzernabschluss Beteiligungsliste; EQS Reports VINCORION",
+   "opened_source_ids": [
+    "S-c937f9b7f798fc88",
+    "S-a8b6a9bf5c56126e",
+    "S-56ddab9dedaa1e0b",
+    "S-71029391d701d972",
+    "S-0a9ea0dbc48fd48c"
+   ],
+   "claim_ids": [
+    "C-001",
+    "C-002",
+    "C-004",
+    "C-005",
+    "C-006",
+    "C-015",
+    "C-016",
+    "C-017"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Direkte vs. mittelbare Haltung der Töchter nicht angegeben; Registerauszüge nicht geprüft; keine JV/assoziierten Unternehmen im Konsolidierungskreis gefunden (im geprüften Umfang)."
+  },
+  {
+   "cluster": "technology",
+   "topic": "Industrie-/Fertigungspartner (HEIDELBERG)",
+   "search": "Heidelberger Druckmaschinen VINCORION; HEIDELBERG VINCORION Auftrag 2026",
+   "opened_source_ids": [
+    "S-f113efb0e3928467",
+    "S-1cd4c98ba7f9a5e2",
+    "S-91d594e29b91bc4a",
+    "S-768bc60bd39f6de8",
+    "S-ed98726b2fefc36a"
+   ],
+   "claim_ids": [
+    "C-035",
+    "C-036"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Keine Volumina/Serienstart belegt; Aggregatormeldung „Heidelberg-Partnerschaft bringt 300 Millionen“ (boerse-express) nicht als Beleg übernommen, Originalbestätigung nicht gefunden."
+  },
+  {
+   "cluster": "technology",
+   "topic": "Aviation-Partner (Heli-One, Airbus ERH)",
+   "search": "Heli-One VINCORION MoU; ERH premier H145 Airbus Helicopters",
+   "opened_source_ids": [
+    "S-a07d2f17d44253db",
+    "S-cc471b88cedc6672",
+    "S-843d0f17aae3494b",
+    "S-9cd9c3ae3af87af5",
+    "S-e1f50ca0e7fe88cd"
+   ],
+   "claim_ids": [
+    "C-037",
+    "C-038",
+    "C-039"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Keine Airbus-Originalquelle; Zugehörigkeit Heli-One zu CHC nur aus Website-Fußzeile ersichtlich (nicht übernommen)."
+  },
+  {
+   "cluster": "technology",
+   "topic": "EDF-Projekte SENTINEL und NOMAD",
+   "search": "SENTINEL European Defence Fund TECES; NOMAD EDF factsheet",
+   "opened_source_ids": [
+    "S-69e48c46a7fb7031",
+    "S-c18959e803f1e64d",
+    "S-be1ed12b7791fc5f",
+    "S-511f097415d21638",
+    "S-908c95b84910ee11"
+   ],
+   "claim_ids": [
+    "C-040",
+    "C-041",
+    "C-042",
+    "C-043"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "EU-Originalfactsheet SENTINEL (EDF 2024 Results) nicht geöffnet; Robotina-Seite gelesen, aber nicht als Beleg verwendet; Arbeitsanteile anderer Partner nicht ausgewertet."
+  },
+  {
+   "cluster": "technology",
+   "topic": "UGV-/Autonomie-Partner, Software/KI, Zulieferer",
+   "search": "Vincorion Kooperation Partnerschaft 2026; ReactiveDynamics VINCORION; EtherCAT",
+   "opened_source_ids": [
+    "S-41e7bd7b63e2d486",
+    "S-555547ca1efb774c"
+   ],
+   "claim_ids": [
+    "C-044"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Keine öffentlich benannten Zulieferer (Motoren, Batteriezellen, Elektronik) gefunden; EtherCAT-Mitgliedschaft (Suchtreffer) nicht als Beziehung übernommen; keine Software-/KI-Partnerschaften gefunden."
+  },
+  {
+   "cluster": "market",
+   "topic": "Landsysteme-OEMs (KNDS, Rheinmetall)",
+   "search": "KNDS VINCORION Rahmenvertrag Boxer; Vincorion Rheinmetall Auftrag; Vincorion Leopard 2 A8 Norwegen GTD chaser; site:knds",
+   "opened_source_ids": [
+    "S-6e6d85a309774afc",
+    "S-6a21b1224ef5726f",
+    "S-87c277a6a09bd73e",
+    "S-1aa8f95b2599facc",
+    "S-3d9c89bef4d43468",
+    "S-257bf5b7920f7bb4"
+   ],
+   "claim_ids": [
+    "C-022",
+    "C-023",
+    "C-024",
+    "C-048"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Keine Bestätigung durch KNDS oder Rheinmetall; Abnehmer für Puma (Projektgesellschaft/OEM) und PzH 2000 nicht genannt; Kunden der Juni-2026-Großaufträge nicht genannt."
+  },
+  {
+   "cluster": "market",
+   "topic": "Luftverteidigung (Raytheon/PATRIOT, Diehl/IRIS-T SLM, NSPA)",
+   "search": "Diehl Defence IRIS-T SLM VINCORION; NSPA VINCORION Patriot framework; Raytheon Supplier Excellence Vincorion; Raytheon Jenoptik Patriot 2015",
+   "opened_source_ids": [
+    "S-2267af5e02fda855",
+    "S-be02a1cc64071dd5",
+    "S-945a20788677cd82",
+    "S-74f313ac4d339267",
+    "S-56db18e5f6a31a81",
+    "S-83f92f2cf0494e24",
+    "S-399c866fc838bf1b"
+   ],
+   "claim_ids": [
+    "C-025",
+    "C-026",
+    "C-027",
+    "C-029",
+    "C-030",
+    "C-046"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "NSPA- und Diehl-Originalbestätigungen nicht gefunden; aktuelle Raytheon-Quelle nicht gefunden; IRIS-T-SLX-Bezug nur als Unternehmensplanung."
+  },
+  {
+   "cluster": "market",
+   "topic": "US-Behörden (DLA, U.S. Army)",
+   "search": "USAspending Vincorion LLC; SAM.gov SPRBL1-24-D-0008; DLA Vincorion Patriot",
+   "opened_source_ids": [
+    "S-b8bbd90710a297a5",
+    "S-945d1e412e25a22f",
+    "S-6271316e5240ae67"
+   ],
+   "claim_ids": [
+    "C-031",
+    "C-032",
+    "C-033"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Zweiter DLA-Vertrag (laut Sekundärquellen SPRBL1-24-D-0009) nicht amtlich geöffnet; ältere USAspending-IDVs (2012–2020) nur in Trefferliste gesehen, nicht einzeln ausgewertet."
+  },
+  {
+   "cluster": "market",
+   "topic": "Bundeswehr/BAAINBw",
+   "search": "hartpunkt Vincorion BAAINBw Stromerzeuger; Entwicklung innovativer Stromversorgung für die Bundeswehr",
+   "opened_source_ids": [
+    "S-2b7291ad743a6f18",
+    "S-41e7bd7b63e2d486",
+    "S-74f313ac4d339267"
+   ],
+   "claim_ids": [
+    "C-034"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "BAAINBw-PDF (bundeswehr.de) liefert HTTP 404; kein hartpunkt-Artikel gefunden; Serienbeschaffung nicht belegt."
+  },
+  {
+   "cluster": "market",
+   "topic": "Kundenkonzentration, Umsatz nach Regionen, Aviation-Plattformen",
+   "search": "Konzernabschluss/H1-Bericht; Produktseiten Aviation",
+   "opened_source_ids": [
+    "S-c937f9b7f798fc88",
+    "S-71029391d701d972",
+    "S-b99b3531c8acfb3b",
+    "S-843d0f17aae3494b"
+   ],
+   "claim_ids": [
+    "C-020",
+    "C-021",
+    "C-047"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Namen der Großkunden (>10 % Umsatz) nicht veröffentlicht; Kunden für Eurofighter-/AWACS-/NH90-Leistungen nicht benannt."
+  },
+  {
+   "cluster": "market",
+   "topic": "Nachrichten-/Wirtschaftsmedien (Gegenrecherche)",
+   "search": "Vincorion Börsengang Kunden Rheinmetall KNDS Airbus Handelsblatt; Vincorion Aktie Analyst Kunden",
+   "opened_source_ids": [
+    "S-257bf5b7920f7bb4",
+    "S-d0a2881113c61290"
+   ],
+   "claim_ids": [
+    "C-024",
+    "C-045"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Börsenportale (boerse-express, finanztrends, trading-treff) nennen Lockheed Martin/Raytheon als Kunden – ohne Originalbeleg, nicht übernommen; Handelsblatt/Börsen-Zeitung/FAZ-Originalartikel nicht geöffnet (Paywall/kein Treffer)."
+  },
+  {
+   "cluster": "structure",
+   "topic": "Gesprächspartner-Mandate (berufliche Querverbindungen)",
+   "search": "Ulrich Strieder Vincorion OR Jenoptik OR Wedel; Klaas Jacob Klasen",
+   "opened_source_ids": [
+    "S-0a9ea0dbc48fd48c",
+    "S-555547ca1efb774c",
+    "S-41e7bd7b63e2d486"
+   ],
+   "claim_ids": [
+    "C-016"
+   ],
+   "status": "geprüft mit Befund",
+   "gaps": "Für Ulrich Strieder keine öffentliche berufliche Verbindung zu VINCORION/Jenoptik im geprüften Umfang gefunden (Treffer betrifft Demag/Terex, Identität unbestätigt) – Profilprüfung durch context-Rolle."
+  }
+ ]
+}

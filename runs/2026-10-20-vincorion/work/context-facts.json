@@ -1,0 +1,1935 @@
+{
+  "schema_version": 1,
+  "mode": "facts-v2",
+  "role": "context",
+  "run_id": "2026-10-20-vincorion",
+  "company": "VINCORION",
+  "as_of": "2026-10-20",
+  "scope": "VINCORION-Gruppe (VINCORION SE, Wedel, mit Tochtergesellschaften und vier Standorten): Firmenbasis, Management, Eigentum/Börsenstatus, Kennzahlen, Historie, datierte Ereignisse 20.06.-20.10.2026, Wachstumsfakten (Thema wachstum) und berufliche Profile von Ulrich Strieder und Klaas Jacob Klasen. Keine Produkt-, Netzwerk- oder Marktfakten (Rollen portfolio/cluster/market/focus).",
+  "status": "teilweise",
+  "shared_limitations": [
+    "Unternehmenszahlen stammen überwiegend aus Unternehmensquellen (Herstellerangabe); bereinigte Kennzahlen sind Nicht-IFRS; Q3-Zahlen vom 07.10.2026 sind vorläufig.",
+    "IPO-Prospekt, IR-Unterseiten (Gremien, Stimmrechte) und Geschäftsbericht 2025 nicht gelesen; North-Data-Quellen nur per WebFetch erfasst (siehe gaps G5-G7).",
+    "Personenangaben ausschließlich beruflich/öffentlich; Registereinträge geben Eintragsdaten, keine belegten Amtszeiten wieder."
+  ],
+  "document_scope": "Quellenabruf am 2026-10-20; Dokumentcache runs/2026-10-20-vincorion/work/document-cache. Ereignis-Timeline nur belegte Ereignisse 2026-06-20 bis 2026-10-20 (inklusive).",
+  "claims": [
+    {
+      "id": "T1",
+      "statement": "VINCORION SE hat ihren Sitz in Wedel (Feldstraße 155, 22880 Wedel) und ist im Handelsregister des Amtsgerichts Pinneberg unter HRB 19596 eingetragen. Laut Halbjahresbericht fungiert die SE als strategische Management- und Finanzierungsgesellschaft der VINCORION-Gruppe; die Rechtsform ist eine Societas Europaea (SE).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-722f85cd0fe582f0",
+        "S-20ab7c633edc2585"
+      ],
+      "evidence": "Paraphrase: VINCORION SE ist in Wedel ansässig, im Handelsregister des Amtsgerichts Pinneberg unter HRB 19596 eingetragen und fungiert als strategische Management- und Finanzierungsgesellschaft der Gruppe. | Paraphrase: Infobox: Rechtsform Societas Europaea (SE), Sitz Wedel, Gründung 2022. | Paraphrase: Fußzeile/Impressum: VINCORION SE, Feldstraße 155, 22880 Wedel, Deutschland.",
+      "location": "PDF-Seite 23, Notes, Abschnitt 1 General Remarks | Infobox am Artikelanfang | Seitenfuß",
+      "evidence_items": [
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "VINCORION SE ist in Wedel ansässig, im Handelsregister des Amtsgerichts Pinneberg unter HRB 19596 eingetragen und fungiert als strategische Management- und Finanzierungsgesellschaft der Gruppe.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 23, Notes, Abschnitt 1 General Remarks"
+        },
+        {
+          "source_id": "S-722f85cd0fe582f0",
+          "text": "Infobox: Rechtsform Societas Europaea (SE), Sitz Wedel, Gründung 2022.",
+          "mode": "Paraphrase",
+          "location": "Infobox am Artikelanfang"
+        },
+        {
+          "source_id": "S-20ab7c633edc2585",
+          "text": "Fußzeile/Impressum: VINCORION SE, Feldstraße 155, 22880 Wedel, Deutschland.",
+          "mode": "Paraphrase",
+          "location": "Seitenfuß"
+        }
+      ],
+      "uncertainty": "Rechtsform SE nur über Firmierung und sekundäre Wikipedia-Infobox; Gründungsjahr 2022 in der Infobox bezieht sich auf die heutige Gruppenstruktur (Historie siehe T8, T9). Offizielle Website vincorion.com bestätigt (Impressum, IR-Verweis auf ir.vincorion.com).",
+      "proposed_depth": "A",
+      "depth_reason": "Identität/Rechtsträger"
+    },
+    {
+      "id": "T2",
+      "statement": "Laut Unternehmensdarstellung entwickelt und fertigt VINCORION Energie- und mechatronische Lösungen für Verteidigungsplattformen und Luftfahrtsysteme in drei Segmenten: Vehicle Systems (Stromversorgung, Mechanik/Antrieb, Elektronik/Software, Turm- und Waffenstabilisierung), Power Systems (Energieerzeugung und -speicherung für bodengebundene Luftverteidigung und mobile Energieversorgung) und Aviation (Antriebs-/Präzisionskomponenten für zivile und militärische Luftfahrt). Nach eigenen Angaben stammen Schlüsselkomponenten für Leopard 2, Puma, IRIS-T SLM, H145 und NH90 von VINCORION.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-93a1fbca82540d6d",
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: Leading developer and manufacturer of power and mechatronic solutions for defense platforms and aviation; core segments Vehicle Systems, Power Systems, Aviation; Komponenten für Leopard 2, Puma, IRIS-T SLM, H145, NH90. | Paraphrase: Drei Segmente mit Fähigkeitsfeldern: Vehicle Systems (Power supply, Mechanics & powertrain, Electronics & software, Services), Power Systems (Power generation, Energy management, Power storage, Services), Aviation (Energy management, Drive technology, Aviation safety, Services).",
+      "location": "Abschnitt 'Committed to Security' | PDF-Seite 8, 'Three Segments'",
+      "evidence_items": [
+        {
+          "source_id": "S-93a1fbca82540d6d",
+          "text": "Leading developer and manufacturer of power and mechatronic solutions for defense platforms and aviation; core segments Vehicle Systems, Power Systems, Aviation; Komponenten für Leopard 2, Puma, IRIS-T SLM, H145, NH90.",
+          "mode": "Paraphrase",
+          "location": "Abschnitt 'Committed to Security'"
+        },
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "Drei Segmente mit Fähigkeitsfeldern: Vehicle Systems (Power supply, Mechanics & powertrain, Electronics & software, Services), Power Systems (Power generation, Energy management, Power storage, Services), Aviation (Energy management, Drive technology, Aviation safety, Services).",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 8, 'Three Segments'"
+        }
+      ],
+      "uncertainty": "Produkt- und Plattformbezüge sind Unternehmensangaben; Portfolio-Details liefert die Portfolio-Rolle.",
+      "proposed_depth": "A",
+      "depth_reason": "Geschäftsmodell/Segmentstruktur"
+    },
+    {
+      "id": "T3",
+      "statement": "VINCORION betreibt vier Standorte: Wedel bei Hamburg (Hauptsitz; Waffenstabilisierungssysteme und Luftfahrtkomponenten), Essen (Hochleistungsgeneratoren für gepanzerte Fahrzeuge), Altenstadt in Bayern (mobile Energieerzeuger und Energiesysteme; laut Halbjahresbericht Kompetenzzentrum für mobile Hybrid-Energieversorgung) sowie El Paso, Texas (USA; Unterstützung von Luftverteidigungssystemen für die US Army).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-93a1fbca82540d6d",
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: Standortkarte: Wedel/Hamburg HQ (Waffenstabilisierung, Luftfahrt), Essen (Generatoren für gepanzerte Fahrzeuge), Altenstadt/Bayern (mobile Energieerzeuger), El Paso/Texas (Unterstützung Luftverteidigung US Army). | Paraphrase: 'Four locations with a clear performance focus': Wedel (HQ), Essen, Altenstadt (Competence Center for mobile hybrid power supply systems), El Paso (Distribution center for air defense systems for the US Army and NATO partners).",
+      "location": "Abschnitt 'German Engineering, Deployed Worldwide' | PDF-Seite 9, 'Four locations'",
+      "evidence_items": [
+        {
+          "source_id": "S-93a1fbca82540d6d",
+          "text": "Standortkarte: Wedel/Hamburg HQ (Waffenstabilisierung, Luftfahrt), Essen (Generatoren für gepanzerte Fahrzeuge), Altenstadt/Bayern (mobile Energieerzeuger), El Paso/Texas (Unterstützung Luftverteidigung US Army).",
+          "mode": "Paraphrase",
+          "location": "Abschnitt 'German Engineering, Deployed Worldwide'"
+        },
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "'Four locations with a clear performance focus': Wedel (HQ), Essen, Altenstadt (Competence Center for mobile hybrid power supply systems), El Paso (Distribution center for air defense systems for the US Army and NATO partners).",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 9, 'Four locations'"
+        }
+      ],
+      "uncertainty": "Funktionsbeschreibung El Paso unterscheidet sich im Wortlaut (Unterstützung vs. Distribution center); beide Angaben sind Unternehmensangaben.",
+      "proposed_depth": "A",
+      "depth_reason": "Standorte/Regionale Präsenz"
+    },
+    {
+      "id": "T4",
+      "statement": "Die Gruppe beschäftigte laut Halbjahresbericht rund 1.000 Vollzeitäquivalente (Stand 30.06.2026; aktive Festangestellte und Leiharbeitnehmer, ohne Auszubildende, duale Studierende, Praktikanten und bezahlt Freigestellte). Die Unternehmenswebsite nennt rund 1.000 Beschäftigte (Stand erstes Halbjahr 2026) und 50 Auszubildende.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-20ab7c633edc2585"
+      ],
+      "evidence": "Paraphrase: ~1,000 employees, Fußnote: Full-time equivalents (FTE) as of June 30, 2026; active permanent staff and hired temps; excluding trainees, dual-track students, interns and employees released from active duty on pay. | Paraphrase: Facts and Figures: Employees (as of the first half of 2026) 1,000; Vocational trainees 50; 4 locations in Germany and the US.",
+      "location": "PDF-Seite 9, Fußnote 1 | Abschnitt 'Facts and Figures'",
+      "evidence_items": [
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "~1,000 employees, Fußnote: Full-time equivalents (FTE) as of June 30, 2026; active permanent staff and hired temps; excluding trainees, dual-track students, interns and employees released from active duty on pay.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 9, Fußnote 1"
+        },
+        {
+          "source_id": "S-20ab7c633edc2585",
+          "text": "Facts and Figures: Employees (as of the first half of 2026) 1,000; Vocational trainees 50; 4 locations in Germany and the US.",
+          "mode": "Paraphrase",
+          "location": "Abschnitt 'Facts and Figures'"
+        }
+      ],
+      "uncertainty": "Die Pressemitteilung vom 15.06.2026 nennt dagegen 'rund 900 Vollzeitbeschäftigte' (Stichtag nicht genannt); die Angaben sind wegen unterschiedlicher Stichtage/Definitionen nicht direkt vergleichbar.",
+      "proposed_depth": "A",
+      "depth_reason": "Unternehmensgröße"
+    },
+    {
+      "id": "T5",
+      "statement": "Konzernumsatz 2025: EUR 240,3 Mio. (Vehicle Systems EUR 102,8 Mio. / 42,8 %, Power Systems EUR 71,2 Mio. / 29,6 %, Aviation EUR 66,3 Mio. / 27,6 %). Laut Q1-Präsentation lagen 2025 bereinigtes EBIT bei EUR 39,7 Mio. (16,5 % Marge), der Auftragseingang bei EUR 378,9 Mio. und der feste Auftragsbestand bei EUR 435,4 Mio.; das Umsatzwachstum 2025 betrug 17,8 %.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-b87584cb356cf171"
+      ],
+      "evidence": "Paraphrase: Segment revenue in 2025: Total EUR 240.3m; Vehicle Systems EUR 102.8m (42.8%), Power Systems EUR 71.2m (29.6%), Aviation EUR 66.3m (27.6%). | Paraphrase: Financial KPIs FY 2025: Revenue 240.3 (+17.8%), Adj. EBIT 39.7 (16.5%), Order intake 378.9, Fixed order backlog 435.4.",
+      "location": "PDF-Seite 9, 'Segment revenue in 2025' | PDF-Seite 9, Tabelle 'Financial Snapshot'",
+      "evidence_items": [
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "Segment revenue in 2025: Total EUR 240.3m; Vehicle Systems EUR 102.8m (42.8%), Power Systems EUR 71.2m (29.6%), Aviation EUR 66.3m (27.6%).",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 9, 'Segment revenue in 2025'"
+        },
+        {
+          "source_id": "S-b87584cb356cf171",
+          "text": "Financial KPIs FY 2025: Revenue 240.3 (+17.8%), Adj. EBIT 39.7 (16.5%), Order intake 378.9, Fixed order backlog 435.4.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 9, Tabelle 'Financial Snapshot'"
+        }
+      ],
+      "uncertainty": "Bereinigtes EBIT ist eine Nicht-IFRS-Kennzahl (bereinigt um PPA-Effekte und Sondereffekte laut Unternehmensdefinition). Geprüfter Konzernabschluss 2025 (VINCORION Holding GmbH) und Geschäftsbericht-ZIP wurden nicht im Original gelesen.",
+      "proposed_depth": "A",
+      "depth_reason": "Kennzahlen Basisjahr"
+    },
+    {
+      "id": "T6",
+      "statement": "Die Aktie der VINCORION SE ist seit 20.03.2026 im Prime Standard der Frankfurter Wertpapierbörse notiert (Ticker V1NC; Grundkapital EUR 50.000.000 in 50.000.000 Aktien). Alle im IPO angebotenen Aktien stammten aus dem Bestand des Mehrheitsaktionärs STAR Capital Partnership LLP und wurden zu EUR 17,00 platziert (Platzierungsvolumen rund EUR 345 Mio. inkl. Greenshoe; Marktkapitalisierung rund EUR 850 Mio.). Cornerstone-Investoren Fidelity International, Invesco und T. Rowe Price zeichneten rund EUR 105 Mio. Seit 22.06.2026 ist die Aktie im SDAX enthalten.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-a33cf7c1eeb40a5f"
+      ],
+      "evidence": "Paraphrase: IPO am 20.03.2026; alle angebotenen Aktien aus dem Bestand von STAR Capital zu EUR 17,00; ca. EUR 345 Mio. inkl. Greenshoe, Marktkapitalisierung ca. EUR 850 Mio.; Key Share Data: Prime Standard, Ticker V1NC, Grundkapital EUR 50.000.000, 50.000.000 Aktien, Index SDAX; Cornerstone-Zusagen ca. EUR 105 Mio. | Paraphrase: Aufnahme in den SDAX am 22.06.2026; Erstnotiz 20.03.2026 zu EUR 17,00; Cornerstone-Investoren Fidelity International, Invesco, T. Rowe Price zusammen ca. EUR 105 Mio.",
+      "location": "PDF-Seite 6 (Capital Markets) und PDF-Seite 11 (1.1 Significant Developments) | Abschnitt Bullet-Points und letzter Absatz",
+      "evidence_items": [
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "IPO am 20.03.2026; alle angebotenen Aktien aus dem Bestand von STAR Capital zu EUR 17,00; ca. EUR 345 Mio. inkl. Greenshoe, Marktkapitalisierung ca. EUR 850 Mio.; Key Share Data: Prime Standard, Ticker V1NC, Grundkapital EUR 50.000.000, 50.000.000 Aktien, Index SDAX; Cornerstone-Zusagen ca. EUR 105 Mio.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 6 (Capital Markets) und PDF-Seite 11 (1.1 Significant Developments)"
+        },
+        {
+          "source_id": "S-a33cf7c1eeb40a5f",
+          "text": "Aufnahme in den SDAX am 22.06.2026; Erstnotiz 20.03.2026 zu EUR 17,00; Cornerstone-Investoren Fidelity International, Invesco, T. Rowe Price zusammen ca. EUR 105 Mio.",
+          "mode": "Paraphrase",
+          "location": "Abschnitt Bullet-Points und letzter Absatz"
+        }
+      ],
+      "uncertainty": "Der Halbjahresbericht nennt im Fließtext 'ISIN: DE000A409S11', in den Key Share Data und in anderen Quellen DE000VNC0014 - Widerspruch innerhalb des Dokuments; ISIN daher nicht als Claim übernommen. Marktkapitalisierung bezieht sich auf den Ausgabepreis.",
+      "proposed_depth": "A",
+      "depth_reason": "Eigentum/Börsenstatus"
+    },
+    {
+      "id": "T7",
+      "statement": "Aktionärsstruktur laut Halbjahresbericht (Stimmrechtsmitteilungen bis 30.06.2026): STAR Capital Partnership LLP 47,53 %, Streubesitz einschließlich IPO-Ankerinvestoren 52,47 %; als einzelne Streubesitz-Positionen werden Invesco Ltd. 4,71 %, T. Rowe Price Group Inc. 4,69 %, T. Rowe Price International Funds, Inc. 3,69 %, Dieter Holst 3,60 % und Tobias Seige 3,50 % ausgewiesen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: Grafik 'Shareholder structure': STAR Capital Partnership LLP 47.53%; Shares in free float incl. IPO anchor investors 52.47%; Invesco Ltd. 4.71%, T. Rowe Price Group Inc. 4.69%, T. Rowe Price International Funds 3.69%, Dieter Holst 3.60%, Tobias Seige 3.50%; Stand: bis 30.06.2026 eingegangene Mitteilungen nach Sec. 40 (1) WpHG.",
+      "location": "PDF-Seite 6, 'Shareholder Structure' (Textextraktion der Grafik; Zuordnung Wert-Name nach Layout)",
+      "uncertainty": "Werte stammen aus einer Grafik (Textextraktion); Zuordnung der Prozentwerte zu Namen sollte beim Review gegen die Seitenansicht bestätigt werden. Rollen von Dieter Holst (CFO) und Tobias Seige (in der Pressemitteilung vom 06.05.2024 als Chairman des Advisory Board der Gruppe genannt) sind hier nicht im Dokument erläutert. Stimmrechtsanteil kann von Kapitalanteil abweichen (Berichte nennen 48,63 % nach Greenshoe-Ablauf, nicht im Original geprüft).",
+      "proposed_depth": "A",
+      "depth_reason": "Eigentum/Kontrolle"
+    },
+    {
+      "id": "T8",
+      "statement": "Historie des Eigentums: JENOPTIK AG schloss den Verkauf von VINCORION am 30.06.2022 ab; Käufer war ein von STAR Capital Partnership LLP verwalteter Fonds. Laut Jenoptik lag der Unternehmenswert bei rund EUR 130 Mio.; 2021 hatte VINCORION rund 700 Beschäftigte und EUR 145,0 Mio. Umsatz.",
+      "kind": "Partnerangabe",
+      "source_ids": [
+        "S-6d8b01cfee4e69d7"
+      ],
+      "evidence": "Paraphrase: Jenoptik has successfully closed the sale of VINCORION on June 30, 2022; acquired by a fund managed by STAR Capital Partnership LLP; enterprise value approx. EUR 130m; in 2021 approx. 700 employees, revenue EUR 145.0m.",
+      "location": "Pressemitteilung vom 30.06.2022, erster und vierter Absatz",
+      "uncertainty": "Angabe des Verkäufers (Jenoptik); weitere Konditionen nicht offengelegt (Earn-out, Pensionsverpflichtungen im mittleren zweistelligen Mio.-EUR-Bereich laut Quelle).",
+      "proposed_depth": "B",
+      "depth_reason": "Historischer Hintergrund; nicht entscheidungstragend"
+    },
+    {
+      "id": "T9",
+      "statement": "Laut Unternehmensdarstellung reichen die Wurzeln von VINCORION auf die Gründung von AEG und dessen Standort Wedel in den 1960er Jahren zurück; das Unternehmen firmierte später als ESW Systems Wedel. VINCORION nennt über 70 Jahre Innovationsgeschichte.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-93a1fbca82540d6d"
+      ],
+      "evidence": "Paraphrase: Our roots stretch back to the founding of AEG and its Wedel site in the 1960s. Later, the company became known as ESW Systems Wedel. With over 70 years of innovation behind us.",
+      "location": "Abschnitt 'Everyone Deserves a Safe Life'",
+      "uncertainty": "Unternehmensdarstellung (Marketingtext); die Angaben '1960er' und 'über 70 Jahre' sind nicht ohne Weiteres deckungsgleich und nicht unabhängig geprüft.",
+      "proposed_depth": "B",
+      "depth_reason": "Historischer Hintergrund; nicht entscheidungstragend"
+    },
+    {
+      "id": "T10",
+      "statement": "Vor dem IPO wurde die Gruppe umstrukturiert: Am 18.01.2026 wurde die VINCORION SE alleinige Gesellschafterin der VINCORION Holding GmbH und ist deren direkte Rechtsnachfolgerin an der Konzernspitze; Konsolidierungskreis und Geschäftstätigkeit blieben laut Halbjahresbericht unverändert. Vorjahresvergleichszahlen stammen aus dem Konzernabschluss des Rechtsvorgängers.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: VINCORION SE became the sole shareholder of VINCORION Holding GmbH effective January 18, 2026; direct legal successor; basis of consolidation and business activities unchanged; comparative figures from predecessor group.",
+      "location": "PDF-Seite 11 (1.1) und PDF-Seite 23 (Notes 1 und 4)",
+      "uncertainty": "",
+      "proposed_depth": "A",
+      "depth_reason": "Rechtsträgerwechsel/Vergleichbarkeit"
+    },
+    {
+      "id": "T11",
+      "statement": "Der Vorstand der VINCORION SE besteht laut Halbjahresbericht aus Kajetan von Mentzingen (Chief Executive Officer) und Dieter Holst (Chief Financial Officer); beide wurden im Zuge des IPO in den Vorstand berufen und waren zuvor Geschäftsführer der VINCORION Holding GmbH. Von Mentzingen wurde laut Pressemitteilung vom 06.05.2024 mit sofortiger Wirkung zum Sprecher der Geschäftsführung ernannt und übernahm die Verantwortungsbereiche von Dr. Stefan Stenzel (Ruhestand 31.05.2024); er war 2023 als Geschäftsführer Aviation eingetreten.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-db2fa0537999b2fc"
+      ],
+      "evidence": "Paraphrase: Unterzeichner: Kajetan von Mentzingen, Chief Executive Officer; Dieter Holst, Chief Financial Officer. 'The former directors of VINCORION Holding GmbH, Kajetan von Mentzingen and Dieter Holst, were duly appointed to the Management Board within the course of the IPO.' | Paraphrase: Kajetan von Mentzingen wird mit sofortiger Wirkung Management Spokesman und übernimmt Verantwortungsbereiche von Dr. Stefan Stenzel (Ruhestand 31.05.2024); Eintritt 2023 mit Verantwortung für Aviation; zuvor Airbus (ab 2008).",
+      "location": "PDF-Seite 5 (Unterschriften) und PDF-Seite 12 (1.1) | Absätze 1, 3 und 'About Kajetan von Mentzingen'",
+      "evidence_items": [
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "Unterzeichner: Kajetan von Mentzingen, Chief Executive Officer; Dieter Holst, Chief Financial Officer. 'The former directors of VINCORION Holding GmbH, Kajetan von Mentzingen and Dieter Holst, were duly appointed to the Management Board within the course of the IPO.'",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 5 (Unterschriften) und PDF-Seite 12 (1.1)"
+        },
+        {
+          "source_id": "S-db2fa0537999b2fc",
+          "text": "Kajetan von Mentzingen wird mit sofortiger Wirkung Management Spokesman und übernimmt Verantwortungsbereiche von Dr. Stefan Stenzel (Ruhestand 31.05.2024); Eintritt 2023 mit Verantwortung für Aviation; zuvor Airbus (ab 2008).",
+          "mode": "Paraphrase",
+          "location": "Absätze 1, 3 und 'About Kajetan von Mentzingen'"
+        }
+      ],
+      "uncertainty": "Aktuelle Vorstandszusammensetzung nur aus dem Halbjahresbericht (Stand 13.08.2026); ir.vincorion.com/en/bodies war nicht abrufbar (dynamische Seite).",
+      "proposed_depth": "A",
+      "depth_reason": "Management/Kontrolle"
+    },
+    {
+      "id": "T12",
+      "statement": "Zum Aufsichtsrat nennt der Halbjahresbericht für das erste Halbjahr 2026: Maike Schuh wurde neues Aufsichtsratsmitglied und Vorsitzende des Prüfungs- und Risikoausschusses der VINCORION SE; Jürgen Weber schied aus dem Aufsichtsrat aus, sein Nachfolger solle zu gegebener Zeit bekanntgegeben werden.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: Maike Schuh appointed to the Supervisory Board and chair of the audit and risk committee; Jürgen Weber stepped down; replacement to be announced when the time comes.",
+      "location": "PDF-Seite 12, 1.1 Significant Developments",
+      "uncertainty": "Vollständige Aufsichtsratsbesetzung und Vorsitz wurden nicht belegt (Bodies-Seite der IR-Website nicht abrufbar).",
+      "proposed_depth": "A",
+      "depth_reason": "Governance"
+    },
+    {
+      "id": "T13",
+      "statement": "Finanzierung und Ausschüttung 2026: Am 06.03.2026 schloss VINCORION SE eine neue syndizierte Finanzierung ab (Term Loan EUR 100 Mio. und revolvierende Kreditlinie EUR 50 Mio.), die die bisherige Finanzierung ersetzte. Eine Hauptversammlung am 19.03.2026 beschloss eine Dividende von EUR 16,4 Mio., die im Berichtszeitraum ausgezahlt wurde.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: New financing arrangement on March 6, 2026: syndicated loan with term loan of EUR 100 million and revolving facility of EUR 50 million; dividend of EUR 16.4 million resolved on March 19, 2026 and paid out in the reporting period.",
+      "location": "PDF-Seite 11-12 (1.1) und PDF-Seite 15 (Financial Position)",
+      "uncertainty": "Der Bericht bezeichnet die Versammlung vom 19.03.2026 an einer Stelle als 'extraordinary general meeting', an anderer als 'annual general meeting'.",
+      "proposed_depth": "A",
+      "depth_reason": "Finanzierungsstruktur"
+    },
+    {
+      "id": "T14",
+      "statement": "H1 2026 (laut Halbjahresbericht): Umsatz EUR 150,2 Mio. (+42,4 % gegenüber EUR 105,5 Mio.); zweites Quartal EUR 81,2 Mio. (Q2 2025: EUR 56,2 Mio.). Bereinigtes EBIT EUR 28,4 Mio. (H1 2025: EUR 21,4 Mio.), bereinigte EBIT-Marge 18,9 % (20,3 %); EBIT EUR 27,7 Mio.; Ergebnis nach Steuern EUR 16,9 Mio. (EUR 9,8 Mio.). Freier Cashflow H1 EUR -6,1 Mio. (EUR -3,2 Mio.), im zweiten Quartal EUR +1,1 Mio.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-a492cd0df860fc7a"
+      ],
+      "evidence": "Paraphrase: Revenue 150,242 vs 105,497 (EUR k); adjusted EBIT 28,415 vs 21,402 (18.9% vs 20.3%); EBIT 27,704; earnings after tax 16,909 vs 9,763; free cash flow (6,055) vs (3,221); Q2 free cash flow EUR 1.1m. | Paraphrase: Q2-Umsatz EUR 81,2 Mio. (Q2 2025: EUR 56,2 Mio.); Q1-Free-Cashflow EUR -7,1 Mio., Q2 EUR +1,1 Mio.",
+      "location": "PDF-Seite 13 (2 Financial Performance), PDF-Seite 12 (Liquidity), PDF-Seite 16 (Free cash flow) | Pressemitteilung 13.08.2026, erster Absatz und Kennzahlentabelle",
+      "evidence_items": [
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "Revenue 150,242 vs 105,497 (EUR k); adjusted EBIT 28,415 vs 21,402 (18.9% vs 20.3%); EBIT 27,704; earnings after tax 16,909 vs 9,763; free cash flow (6,055) vs (3,221); Q2 free cash flow EUR 1.1m.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 13 (2 Financial Performance), PDF-Seite 12 (Liquidity), PDF-Seite 16 (Free cash flow)"
+        },
+        {
+          "source_id": "S-a492cd0df860fc7a",
+          "text": "Q2-Umsatz EUR 81,2 Mio. (Q2 2025: EUR 56,2 Mio.); Q1-Free-Cashflow EUR -7,1 Mio., Q2 EUR +1,1 Mio.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 13.08.2026, erster Absatz und Kennzahlentabelle"
+        }
+      ],
+      "uncertainty": "Laut Halbjahresbericht ist eine lineare Fortschreibung der H1-Wachstumsrate auf das Gesamtjahr 'mit Einschränkungen' zu sehen, weil die Vergleichszahlen 2025 den Hochlauf noch nicht widerspiegeln. Bereinigte Kennzahlen sind Nicht-IFRS. Pressemitteilung nennt Q1-FCF -7,1 Mio. EUR, H1-FCF -6,1 Mio. EUR (Rundungsdifferenz).",
+      "proposed_depth": "A",
+      "depth_reason": "Kennzahlen/Prognosebasis"
+    },
+    {
+      "id": "T15",
+      "statement": "Auftragslage 30.06.2026 (laut Halbjahresbericht): Auftragseingang H1 EUR 330,2 Mio. (H1 2025: EUR 72,7 Mio.); Auftragsbestand (fest) EUR 615,3 Mio. (31.12.2025: EUR 435,4 Mio.), Rahmenauftragsbestand EUR 416 Mio. (EUR 431 Mio.) und 'Soft Order Backlog' EUR 174 Mio. (EUR 208 Mio.); Gesamtauftragsbestand EUR 1.205 Mio. (+EUR 131 Mio. gegenüber EUR 1.074 Mio.). Der Anstieg wird laut Bericht vor allem großen Aufträgen für Stabilisierungs- und Energiesysteme im Segment Vehicle Systems sowie Energieversorgungssystemen im Segment Power Systems zugeschrieben; darin enthalten ist ein in einen Festauftrag gewandelter Großauftrag über EUR 54 Mio. für Stabilisierungssysteme gepanzerter Fahrzeuge.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: Order entry EUR 330.2m; order book EUR 615.3m; frame order backlog 416, soft order backlog 174, total order book 1,205 (+131); soft backlog = estimated long-term volumes of sole-source projects based on publicly available information; conversion of soft orders includes a major EUR 54 million contract for stabilization systems for armored vehicles.",
+      "location": "PDF-Seite 12 (Business Performance) und PDF-Seite 14 (Order book)",
+      "uncertainty": "Der Gesamtauftragsbestand enthält Rahmenverträge mit geschätzten Volumina (35 %) und einen Soft Order Backlog (rund 14 %), der auf Schätzungen aus öffentlichen Informationen beruht; er ist nicht mit fest kontrahiertem Auftragsbestand gleichzusetzen. Auftragseingang Q2 laut Bericht/Pressemitteilung EUR 180,8 Mio. (Präsentation: 180,9 Mio.; Rundung).",
+      "proposed_depth": "A",
+      "depth_reason": "Wesentliche Kundenaufträge/Wachstumsbasis"
+    },
+    {
+      "id": "T16",
+      "statement": "Segmente H1 2026 (laut Halbjahresbericht): Vehicle Systems EUR 72,6 Mio. (+72,1 %), getrieben von Stabilisierungsprodukten im Zusammenhang mit Großaufträgen für Leopard 2, Puma und PzH 2000; Power Systems EUR 46,2 Mio. (+41,1 %), getrieben von hoher Nachfrage nach neuen PATRIOT- und IRIS-T-Systemen; Aviation EUR 33,2 Mio. (leicht über Vorjahr; +1,5 %), belastet durch Währungseffekte (US-Dollar-Abwertung).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-9670ee4232da6c72"
+      ],
+      "evidence": "Paraphrase: Segmentumsätze (EUR k): Vehicle Systems 72,559 (Vj. 42,174), Power Systems 46,204 (32,736), Aviation 33,171 (32,684); Treiber: Leopard 2, Puma, PzH 2000 bzw. PATRIOT und IRIS-T; Aviation: FX-Belastung durch USD-Abwertung. | Paraphrase: Revenue H1: Vehicle Systems EUR 42.2m -> 72.6m (+72%), Power Systems EUR 32.7m -> 46.2m (+41%), Aviation EUR 32.7m -> 33.2m (+1.5%).",
+      "location": "PDF-Seite 13-14 (2 Financial Performance) | PDF-Seite 5",
+      "evidence_items": [
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "Segmentumsätze (EUR k): Vehicle Systems 72,559 (Vj. 42,174), Power Systems 46,204 (32,736), Aviation 33,171 (32,684); Treiber: Leopard 2, Puma, PzH 2000 bzw. PATRIOT und IRIS-T; Aviation: FX-Belastung durch USD-Abwertung.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 13-14 (2 Financial Performance)"
+        },
+        {
+          "source_id": "S-9670ee4232da6c72",
+          "text": "Revenue H1: Vehicle Systems EUR 42.2m -> 72.6m (+72%), Power Systems EUR 32.7m -> 46.2m (+41%), Aviation EUR 32.7m -> 33.2m (+1.5%).",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 5"
+        }
+      ],
+      "uncertainty": "Die Pressemitteilung vom 13.08.2026 nennt als Vorjahreswert für Vehicle Systems EUR 42,4 Mio. (Bericht/Präsentation: EUR 42,2 Mio.). Segmentumsätze vor Konzernkonsolidierung (Intra-Segment-Umsatz -1,7 Mio. EUR).",
+      "proposed_depth": "A",
+      "depth_reason": "Segmentwachstum"
+    },
+    {
+      "id": "T17",
+      "statement": "Umsatz nach Kundenstandort H1 2026 (Vorjahr): Deutschland EUR 95,5 Mio. (EUR 61,4 Mio.), übriges Europa EUR 27,8 Mio. (EUR 21,5 Mio.), USA EUR 20,6 Mio. (EUR 20,5 Mio.), Sonstige EUR 6,4 Mio. (EUR 2,1 Mio.); Summe EUR 150,2 Mio.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: Note 5 Revenue, key geographical markets (based on customer location), EUR k: Germany 95,495 / 61,364; Rest of Europe 27,805 / 21,510; USA 20,558 / 20,528; Other 6,383 / 2,095; Total 150,242 / 105,497.",
+      "location": "PDF-Seite 24, Note 5",
+      "uncertainty": "Verteilung nach Kundenstandort, nicht nach Endabnehmer oder Programm.",
+      "proposed_depth": "A",
+      "depth_reason": "Regionale Umsatzverteilung"
+    },
+    {
+      "id": "T18",
+      "statement": "Prognose 2026 (Stand Halbjahresbericht, 13.08.2026): Konzernumsatz EUR 280-320 Mio. und bereinigte EBIT-Marge 18-19 %; der Vorstand erwartet aufgrund von Ereignissen nach dem Stichtag und neuen Erkenntnissen nun das obere Ende der Umsatzspanne. Die Ad-hoc-Mitteilung vom 10.07.2026 hatte die Jahresprognose bestätigt.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-1a847178709b22c4"
+      ],
+      "evidence": "Paraphrase: Management Board forecasts total revenue between EUR 280 million and EUR 320 million and adjusted EBIT margin of 18% to 19%; now expects to reach the upper end of the forecast corridor for Group revenue. | Paraphrase: Der Vorstand bestätigt die Prognose für 2026: Konzernumsatz EUR 280-320 Mio., bereinigte EBIT-Marge 18-19 %.",
+      "location": "PDF-Seite 17 (4 Forecast, Opportunities and Risks) | Ad-hoc-Text, Absatz 'The Management Board confirms its full-year guidance'",
+      "evidence_items": [
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "Management Board forecasts total revenue between EUR 280 million and EUR 320 million and adjusted EBIT margin of 18% to 19%; now expects to reach the upper end of the forecast corridor for Group revenue.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 17 (4 Forecast, Opportunities and Risks)"
+        },
+        {
+          "source_id": "S-1a847178709b22c4",
+          "text": "Der Vorstand bestätigt die Prognose für 2026: Konzernumsatz EUR 280-320 Mio., bereinigte EBIT-Marge 18-19 %.",
+          "mode": "Paraphrase",
+          "location": "Ad-hoc-Text, Absatz 'The Management Board confirms its full-year guidance'"
+        }
+      ],
+      "uncertainty": "Prognose wurde am 07.10.2026 angehoben (siehe T19); Annahmen laut Bericht im Wertpapierprospekt vom 13.03.2026 (nicht zugänglich, siehe gaps).",
+      "proposed_depth": "A",
+      "depth_reason": "Prognose/Wachstumsziel"
+    },
+    {
+      "id": "T19",
+      "statement": "Ad-hoc-Mitteilung vom 07.10.2026 (15:45 Uhr, vorläufige Zahlen zum 30.09.2026): Konzernumsatz im dritten Quartal EUR 87,5 Mio. (+39,8 % gegenüber EUR 62,6 Mio.), in den ersten neun Monaten EUR 237,7 Mio. (+41,4 % gegenüber EUR 168,1 Mio.). Der Vorstand erhöht die Umsatzprognose 2026 auf EUR 323-333 Mio. (zuvor EUR 280-320 Mio.) und die bereinigte EBIT-Marge auf 18,5-19,5 % (zuvor 18,0-19,0 %); begründet wird dies mit einem außergewöhnlich starken dritten Quartal in einer traditionell schwächeren Sommersaison. Der Bericht zu den ersten neun Monaten soll am 11.11.2026 erscheinen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-e5b2172843ae61b7"
+      ],
+      "evidence": "Paraphrase: Based on preliminary figures as of September 30, 2026 ... consolidated revenue of EUR 87.5 million in the third quarter of 2026 ... EUR 237.7 million [9M] ... the Executive Board is raising its revenue forecast ... EUR 323 million to EUR 333 million (originally EUR 280 million to EUR 320 million) ... adjusted EBIT margin of 18.5% to 19.5%.",
+      "location": "Ad-hoc 07.10.2026, Haupttext",
+      "uncertainty": "Vorläufige, ungeprüfte Zahlen; endgültige Zahlen folgen mit dem 9M-Bericht am 11.11.2026.",
+      "proposed_depth": "A",
+      "depth_reason": "Aktuelle Prognoseanhebung; Wachstumsgrundlage",
+      "event_date": "2026-10-07",
+      "event_status": "Veröffentlicht; vorläufige Zahlen"
+    },
+    {
+      "id": "T20",
+      "statement": "Ad-hoc-Mitteilung vom 10.07.2026 (10:13 Uhr, vorläufige Zahlen zum 30.06.2026): Konzernumsatz im zweiten Quartal EUR 81,2 Mio. (+44,5 % gegenüber EUR 56,2 Mio.), im ersten Halbjahr EUR 150,2 Mio. (+42,4 % gegenüber EUR 105,5 Mio.); der Vorstand bestätigt die Jahresprognose. Das Unternehmen führt den Anstieg primär auf die erfolgreiche Umsetzung der Hochlaufmaßnahmen zurück. Nachrichtenagentur dpa-AFX berichtete am selben Tag über die Zahlen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-1a847178709b22c4",
+        "S-189bed9f57b7a4b6"
+      ],
+      "evidence": "Paraphrase: Based on provisional figures as of June 30, 2026 ... EUR 81.2m in the second quarter of 2026 ... increase of 44.5% ... first half ... EUR 150.2m ... primarily attributable to the successful implementation of the ramp-up measures. The Management Board confirms its full-year guidance. | Paraphrase: dpa-AFX: Umsatz im zweiten Quartal um fast 45 % auf EUR 81,2 Mio. gestiegen (vorläufige Zahlen), Jahresziele bestätigt.",
+      "location": "Ad-hoc 10.07.2026, Haupttext | Meldung vom 10.07.2026, erster Absatz",
+      "evidence_items": [
+        {
+          "source_id": "S-1a847178709b22c4",
+          "text": "Based on provisional figures as of June 30, 2026 ... EUR 81.2m in the second quarter of 2026 ... increase of 44.5% ... first half ... EUR 150.2m ... primarily attributable to the successful implementation of the ramp-up measures. The Management Board confirms its full-year guidance.",
+          "mode": "Paraphrase",
+          "location": "Ad-hoc 10.07.2026, Haupttext"
+        },
+        {
+          "source_id": "S-189bed9f57b7a4b6",
+          "text": "dpa-AFX: Umsatz im zweiten Quartal um fast 45 % auf EUR 81,2 Mio. gestiegen (vorläufige Zahlen), Jahresziele bestätigt.",
+          "mode": "Paraphrase",
+          "location": "Meldung vom 10.07.2026, erster Absatz"
+        }
+      ],
+      "uncertainty": "Vorläufige Zahlen; durch Halbjahresbericht vom 13.08.2026 bestätigt.",
+      "proposed_depth": "A",
+      "depth_reason": "Ereignis im Viermonatsfenster",
+      "event_date": "2026-07-10",
+      "event_status": "Veröffentlicht; vorläufige Zahlen"
+    },
+    {
+      "id": "T21",
+      "statement": "VINCORION wurde zum 22.06.2026 in den SDAX der Frankfurter Wertpapierbörse aufgenommen (angekündigt per Pressemitteilung vom 04.06.2026); nach Unternehmensangaben zählt sie damit zu den 70 größten und liquidesten Werten unterhalb des MDAX.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a33cf7c1eeb40a5f",
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: Inclusion in the SDAX of Frankfurt Stock Exchange on 22 June 2026 ... ranks among the 70 largest and most liquid listed companies below the MDAX. | Paraphrase: After just three months of its initial listing, the share joined the SDAX index on June 22, 2026.",
+      "location": "Pressemitteilung 04.06.2026, Aufzählung und Absatz 'The inclusion in the SDAX is based on the rulebook' | PDF-Seite 6",
+      "evidence_items": [
+        {
+          "source_id": "S-a33cf7c1eeb40a5f",
+          "text": "Inclusion in the SDAX of Frankfurt Stock Exchange on 22 June 2026 ... ranks among the 70 largest and most liquid listed companies below the MDAX.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 04.06.2026, Aufzählung und Absatz 'The inclusion in the SDAX is based on the rulebook'"
+        },
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "After just three months of its initial listing, the share joined the SDAX index on June 22, 2026.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 6"
+        }
+      ],
+      "uncertainty": "Ereignisdatum ist der Aufnahmetag 22.06.2026 (angekündigte Aufnahme in der Mitteilung vom 04.06.2026; Vollzug durch Halbjahresbericht bestätigt).",
+      "proposed_depth": "A",
+      "depth_reason": "Börsenstatus; Ereignis im Viermonatsfenster",
+      "event_date": "2026-06-22",
+      "event_status": "Vollzug laut Halbjahresbericht berichtet"
+    },
+    {
+      "id": "T22",
+      "statement": "Mit Mitteilung vom 22.06.2026 gab VINCORION die Besetzung der Leitung Investor Relations mit Felix Zander bekannt (laut Unternehmen 25 Jahre Kapitalmarkterfahrung; frühere Positionen u. a. bei VTG AG, Tom Tailor SE und Nordex SE). Der Halbjahresbericht führt ihn als Head of Investor Relations.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-71de625fcaaf1b95",
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: VINCORION has now appointed Felix Zander, an expert with 25 years of experience in the capital markets, to lead its Investor Relations team; früher Head of IR/Communications bei VTG AG, Tom Tailor SE, Nordex SE. | Paraphrase: Kontakt: Felix Zander, Head of Investor Relations.",
+      "location": "Pressemitteilung 22.06.2026, erster Absatz und 'About the New Head of Investor Relations' | PDF-Seite 7",
+      "evidence_items": [
+        {
+          "source_id": "S-71de625fcaaf1b95",
+          "text": "VINCORION has now appointed Felix Zander, an expert with 25 years of experience in the capital markets, to lead its Investor Relations team; früher Head of IR/Communications bei VTG AG, Tom Tailor SE, Nordex SE.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 22.06.2026, erster Absatz und 'About the New Head of Investor Relations'"
+        },
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "Kontakt: Felix Zander, Head of Investor Relations.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 7"
+        }
+      ],
+      "uncertainty": "Das Datum 22.06.2026 ist das Veröffentlichungsdatum der Mitteilung; ein Antrittsdatum nennt die Quelle nicht (die Formulierung 'has integrated seamlessly into our team' deutet auf einen früheren Beginn).",
+      "proposed_depth": "A",
+      "depth_reason": "Ereignis im Viermonatsfenster",
+      "event_date": "2026-06-22",
+      "event_status": "Bekanntgegeben (Veröffentlichungsdatum)"
+    },
+    {
+      "id": "T23",
+      "statement": "Laut Pressemitteilung vom 09.10.2026 verbesserte sich die VINCORION-Gruppe im EcoVadis-Rating von 66 auf 72 Punkte und erhielt erneut (zum dritten Mal in Folge) die Bronze-Auszeichnung; CEO Kajetan von Mentzingen verweist zudem auf die Verpflichtung zum UN Global Compact.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-5ce8ff175434609c"
+      ],
+      "evidence": "Paraphrase: The VINCORION group improved its score from 66 to 72 points, once again earning the Bronze award; commitment to the UN Global Compact.",
+      "location": "Pressemitteilung 09.10.2026, erster Absatz und CEO-Zitat",
+      "uncertainty": "Bewertungsdatum der EcoVadis-Beurteilung nicht genannt; 09.10.2026 ist das Veröffentlichungsdatum der Unternehmensmitteilung.",
+      "proposed_depth": "A",
+      "depth_reason": "Ereignis im Viermonatsfenster",
+      "event_date": "2026-10-09",
+      "event_status": "Veröffentlicht (Herstellerangabe)"
+    },
+    {
+      "id": "T24",
+      "statement": "Laut Pressemitteilung vom 14.10.2026 stellte VINCORION SE auf der AUSA Annual Meeting & Exposition in Washington, D.C. (bis 14.10.2026, Stand 7018) Energie- und Stabilisierungssysteme für gepanzerte Landfahrzeuge sowie Energielösungen für Luftverteidigungssysteme aus; Gesprächsthema war eine Batteriearchitektur für alle Plattformen und Missionsprofile, für die VINCORION Marktanforderungen, Anwendungsfälle und Lebenszyklusaspekte analysiert habe.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-8235dca98711f60c"
+      ],
+      "evidence": "Paraphrase: VINCORION SE is exhibiting at the AUSA Annual Meeting & Exposition in Washington, D.C., through October 14, 2026 ... presenting power and stabilization systems for armored ground vehicles, as well as power solutions for air defense systems ... battery architecture designed to accommodate every platform and mission profile ... booth 7018.",
+      "location": "Pressemitteilung 14.10.2026, Einleitung und 'One Battery Architecture for Every Mission'",
+      "uncertainty": "Die Mitteilung nennt keine Neuaufträge oder Vertragsabschlüsse auf der Messe. Batteriearchitektur ist laut Mitteilung ein Entwicklungs-/Diskussionsthema, kein angekündigtes Produkt mit Zeitplan.",
+      "proposed_depth": "A",
+      "depth_reason": "Ereignis im Viermonatsfenster; Marktzugang USA",
+      "event_date": "2026-10-14",
+      "event_status": "Messeauftritt laut Mitteilung (bis 14.10.2026)"
+    },
+    {
+      "id": "T25",
+      "statement": "Laut dpa-AFX bestätigte JPMorgan-Analyst David H. Perry in einer Studie vom 09.10.2026 die Einstufung 'Overweight' für VINCORION mit Kursziel EUR 27; das Unternehmen habe seit dem Börsengang im März zum zweiten Mal die Zielvorgaben angehoben, die Ergebnis-je-Aktie-Schätzungen 2026 bis 2030 stiegen im Mittel um fünf Prozent.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-2b57f2aeef51e1da"
+      ],
+      "evidence": "Paraphrase: JPMorgan belässt Vincorion auf 'Overweight' mit Kursziel 27 Euro; zweite Zielanhebung seit dem Börsengang; EPS-Annahmen 2026 bis 2030 im Mittel um fünf Prozent höher; Veröffentlichung der Original-Studie 09.10.2026 10:33 BST.",
+      "location": "dpa-AFX-Meldung 'ANALYSE-FLASH', Absatz 1-2",
+      "uncertainty": "Analystenurteil Dritter (Zuschreibung JPMorgan), keine Unternehmensangabe; Original-Studie nicht gelesen.",
+      "proposed_depth": "B",
+      "depth_reason": "Marktkontext, nicht entscheidungstragend",
+      "event_date": "2026-10-09",
+      "event_status": "Veröffentlicht (Analystenmeldung)"
+    },
+    {
+      "id": "T26",
+      "statement": "Laut dpa-AFX stieg die VINCORION-Aktie am 13.08.2026 nach den Halbjahreszahlen zeitweise um fast 15 % auf EUR 22,13 (Spitzenwert im SDAX); das Rekordhoch hatte Anfang Mai bei EUR 23,90 gelegen, der Ausgabepreis im März bei EUR 17,00. Der Auftragseingang im zweiten Quartal wird mit EUR 180,8 Mio. nach EUR 33,9 Mio. angegeben.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-0fcb333a58bc73ae"
+      ],
+      "evidence": "Paraphrase: Aktie zuletzt um fast 15 Prozent auf 22,13 Euro; Rekordhoch Anfang Mai 23,90 Euro; Ausgabepreis 17 Euro; Auftragseingang Q2 von 33,9 auf 180,8 Mio. Euro.",
+      "location": "dpa-AFX ROUNDUP vom 13.08.2026, Absätze 4-5",
+      "uncertainty": "Intraday-Kursangabe zu einem Zeitpunkt des Handelstages; Kursdaten nicht unabhängig geprüft.",
+      "proposed_depth": "B",
+      "depth_reason": "Marktkontext"
+    },
+    {
+      "id": "T30",
+      "statement": "Mittelfristziele laut Unternehmen: durchschnittliches jährliches Umsatzwachstum (CAGR) von mehr als 15 % (ab 2026) und eine bereinigte EBIT-Marge von rund 20 %; Ziel ist zudem, die technologische Führungsposition auf führenden Plattformen zu halten und auszubauen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-9670ee4232da6c72"
+      ],
+      "evidence": "Paraphrase: 'Our mid-range goals': CAGR > 15%; EBIT margin: 20%; retaining and building upon technological leadership on leading platforms. | Paraphrase: FY2026 Guidance / Mid-term target (Fußnote: 2026 onwards): >15% CAGR; adj. EBIT margin ~20%.",
+      "location": "PDF-Seite 8 (VINCORION at a Glance) | PDF-Seite 13",
+      "evidence_items": [
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "'Our mid-range goals': CAGR > 15%; EBIT margin: 20%; retaining and building upon technological leadership on leading platforms.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 8 (VINCORION at a Glance)"
+        },
+        {
+          "source_id": "S-9670ee4232da6c72",
+          "text": "FY2026 Guidance / Mid-term target (Fußnote: 2026 onwards): >15% CAGR; adj. EBIT margin ~20%.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 13"
+        }
+      ],
+      "uncertainty": "Zielgröße des Unternehmens, keine Prognose; Zeithorizont 'mid-term/mid-range' und Bezugsbasis des CAGR werden nicht genauer definiert (Fußnote: '2026 onwards'). Der Halbjahresbericht nennt 'EBIT margin: 20 %', die Präsentation 'adj. EBIT margin ~20 %'.",
+      "proposed_depth": "A",
+      "depth_reason": "Wachstumsziel; Grundlage für Ableitungen"
+    },
+    {
+      "id": "T31",
+      "statement": "Als zentrale Wachstumstreiber nennt das Unternehmen im Halbjahresbericht: breite Marktabdeckung in der EU und in NATO-Staaten; einen dynamisch wachsenden Markt für Verteidigung und sicherheitsrelevante Infrastruktur (Gesamtmarktpotenzial 'TAM' 2025E: EUR 12 Mrd.) sowie Systeme, die geschäftskritische Energie für moderne Plattformen liefern.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: 'Core growth drivers': Broad market coverage within the EU and NATO states; Dynamic growing market for defense and security-related infrastructure (2025E TAM EUR 12 billion); Our systems deliver mission-critical power for modern platforms. Fußnote: TAM = estimated total market potential of the markets in which VINCORION products or comparable solutions can be used; Basis: Estimates for 2025.",
+      "location": "PDF-Seite 8, Spalte 'Core growth drivers' und Fußnote 1",
+      "uncertainty": "TAM ist eine Unternehmensschätzung (2025E); Methodik und Quelle der Schätzung nicht offengelegt. Die Fußnote schließt laut Wortlaut ein 'traffic program' aus (unklar übersetzte Formulierung). Die Marktgröße wird durch die Market-/Fokus-Rollen eigenständig belegt.",
+      "proposed_depth": "A",
+      "depth_reason": "Marktpotenzial laut Unternehmen"
+    },
+    {
+      "id": "T32",
+      "statement": "Die Q1-2026-Präsentation stellt Wachstumshebel schematisch dar: Mittelfristiges Umsatzziel durch 'Grow with market', 'Roll-out of new products' (genannt: ERH, TPS) und 'Develop new business models in aftermarket' (genannt: Spares pooling); langfristiges Umsatzpotenzial durch 'Continue to grow with market', 'Continue to grow around existing products & platforms' (genannt: TPS military/civil, IRIS-T SLX, ERH Airbus H175), 'Leverage technologies across segments' (High-voltage architecture) und 'Capture next-gen platforms' (Bridge technology, MGCS).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-b87584cb356cf171"
+      ],
+      "evidence": "Paraphrase: Folie 'Well-positioned for long-term revenue growth': Mid-term revenue target (Grow with market; Roll-out of new products: ERH, TPS; Develop new business models in aftermarket: Spares pooling) und Long-term revenue potential (Continue to grow with market; Continue to grow around existing products & platforms: TPS (military/civil), IRIS-T SLX, ERH Airbus H175; Leverage technologies across segments: High-voltage architecture; Capture next-gen platforms: Bridge technology, MGCS). Hinweis: Bucket sizes are illustrative.",
+      "location": "PDF-Seite 16",
+      "uncertainty": "Schematische Unternehmensfolie ohne Zahlen ('bucket sizes are illustrative'); Kürzel (TPS, MGCS, SLX, H175) nicht auf der Folie erläutert; Zuordnung der genannten Programme zu Hebeln ist Unternehmensangabe, keine bestätigte Beauftragung.",
+      "proposed_depth": "A",
+      "depth_reason": "Wachstumshebel laut Unternehmen"
+    },
+    {
+      "id": "T33",
+      "statement": "Die Q1-2026-Präsentation nennt vier Hochlaufmaßnahmen: Umsetzung der Standortentwicklungs-Roadmaps (Altenstadt, Essen, Wedel) nach Plan, fortgesetzte Industrialisierung der Produktionsbereiche mit Einführung von 'Pulse Lines', Vereinfachung von Lieferketten- und Logistikprozessen sowie mehr strategische Partnerschaften zur Absicherung des Hochlaufs; zudem erhöhte Produktionskapazität für wachsende Marktnachfrage.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-b87584cb356cf171"
+      ],
+      "evidence": "Paraphrase: 'Ramp-up measures start to take effect across all segments': 1 Deployment of site development roadmaps according to plan; 2 Continued industrialization of production areas and implementation of pulse lines; 3 Simplification of supply chain processes and logistical flows; 4 Increased strategic partnerships to secure the ramp-up. Zusatz: 'Site development in Altenstadt, Essen & Wedel on track to meet growing demand across all segments'; 'Increased production capacity ensuring readiness for growing market demand'.",
+      "location": "PDF-Seite 4, 5 und 6",
+      "uncertainty": "Keine Angaben zu Investitionssummen, Kapazitätszahlen oder Fertigstellungsterminen der Standortprojekte in den gelesenen Dokumenten.",
+      "proposed_depth": "A",
+      "depth_reason": "Kapazitätsausbau"
+    },
+    {
+      "id": "T34",
+      "statement": "Laut Halbjahresbericht wurde das H1-Wachstum durch den erfolgreichen Hochlauf der Produktion auf deutlich höhere Ausbringungsmengen ermöglicht; die Investitionsauszahlungen H1 betrugen EUR 10,6 Mio. (Vorjahr EUR 8,6 Mio.), vor allem für aktivierte Entwicklungskosten des Electrical Rescue Hoist (ERH) und Investitionen zum Ausbau der Produktionskapazität; der Anstieg des Working Capital (EUR 19,9 Mio.) spiegelt die Geschäftsausweitung und geplante Lageraufbauten für Auslieferungen im zweiten Halbjahr 2026.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: Demand 'could be met due to the success at ramping up production to much higher output levels'; cash outflow for investing activities EUR 10.6m (prior year EUR 8.6m) mainly for capitalized development costs for the ERH and investments to increase production capacity; working capital increase EUR 19.9m reflects expansion and planned increase in stock levels to meet incoming orders in H2 2026.",
+      "location": "PDF-Seite 12 (Business Performance), PDF-Seite 12/16 (Liquidity, Cash flow)",
+      "uncertainty": "Kein Betrag speziell für Kapazitätsausbau ausgewiesen (gemeinsam mit ERH-Entwicklungskosten).",
+      "proposed_depth": "A",
+      "depth_reason": "Kapazitätsausbau/Investitionen"
+    },
+    {
+      "id": "T35",
+      "statement": "Am 29.07.2025 vereinbarte VINCORION SE mit Heidelberger Druckmaschinen AG (HEIDELBERG) per Memorandum of Understanding eine strategische, mehrjährige Zusammenarbeit zur Stärkung der industriellen Fähigkeiten und Versorgungssicherheit im Verteidigungsbereich; HEIDELBERG bringt laut Mitteilung Industrialisierungskompetenz und schnelle Skalierbarkeit über vorhandene Infrastruktur und Kapazitäten ein.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-f113efb0e3928467"
+      ],
+      "evidence": "Paraphrase: Strategic partnership under a Memorandum of Understanding: multi-year collaboration intended to strengthen industrial capability and supply security in the defence sector; HEIDELBERG contributes industrialisation competency and rapid scaling through existing infrastructure and capacities.",
+      "location": "Pressemitteilung 29.07.2025, Einleitung und Absatz 1",
+      "uncertainty": "Memorandum of Understanding (Absichtserklärung); Umfang, Volumen und Umsetzungsstand nicht angegeben. Hintergrund vor dem Stichtagsfenster.",
+      "proposed_depth": "B",
+      "depth_reason": "Hintergrund Kapazitätspartnerschaft"
+    },
+    {
+      "id": "T36",
+      "statement": "Electrical Rescue Hoist (ERH premierV): Am 08.05.2026 unterzeichneten Heli-One (Norway) AS und VINCORION Advanced Systems GmbH ein Memorandum of Understanding zur gemeinsamen Marktzulassung, Zertifizierung, Integration und Lifecycle-Unterstützung der Rettungswinde über mehrere Hubschraubertypen (u. a. Wege zu Supplemental Type Certificates). Laut Präsentation vom 13.08.2026 bestand die ERH kritische Tests vor dem Erstflug; der Erstflug sei für Oktober 2026 (Zeitplan mit Airbus abgestimmt) und erste Auslieferungen seien für das erste Halbjahr 2027 geplant. Die Entwicklungskosten werden laut Halbjahresbericht aktiviert (intern finanziertes Projekt).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a07d2f17d44253db",
+        "S-9670ee4232da6c72",
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: MoU between Heli-One (Norway) AS and VINCORION Advanced Systems GmbH to jointly support market introduction, certification, integration and lifecycle support of the ERH premierV across multiple helicopter types; focus on STC pathways. | Paraphrase: ERH successfully passed crucial tests before first flight; first ERH flight planned for October (timeline aligned with Airbus); first ERH deliveries planned for H1 2027. | Paraphrase: Increase in non-current assets largely due to recognition of development costs for the internally financed Electrical Rescue Hoist (ERH) project under intangible assets (IAS 38 criteria).",
+      "location": "Pressemitteilung 08.05.2026, Absätze 1 und 3 | PDF-Seite 5, Spalte Aviation | PDF-Seite 15, Financial Position",
+      "evidence_items": [
+        {
+          "source_id": "S-a07d2f17d44253db",
+          "text": "MoU between Heli-One (Norway) AS and VINCORION Advanced Systems GmbH to jointly support market introduction, certification, integration and lifecycle support of the ERH premierV across multiple helicopter types; focus on STC pathways.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 08.05.2026, Absätze 1 und 3"
+        },
+        {
+          "source_id": "S-9670ee4232da6c72",
+          "text": "ERH successfully passed crucial tests before first flight; first ERH flight planned for October (timeline aligned with Airbus); first ERH deliveries planned for H1 2027.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 5, Spalte Aviation"
+        },
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "Increase in non-current assets largely due to recognition of development costs for the internally financed Electrical Rescue Hoist (ERH) project under intangible assets (IAS 38 criteria).",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 15, Financial Position"
+        }
+      ],
+      "uncertainty": "MoU und geplante Termine sind Absichten bzw. Planungen laut Unternehmen/Partner, keine Beauftragung. Ob der für Oktober 2026 geplante Erstflug stattgefunden hat, wurde nicht belegt.",
+      "proposed_depth": "A",
+      "depth_reason": "Neues Produkt mit Wachstumsbezug"
+    },
+    {
+      "id": "T37",
+      "statement": "Taktische mobile Energiesysteme (Tactical Power Systems): Laut Q1-Präsentation wurden die taktischen Energiesysteme erfolgreich getestet und der Design Freeze abgeschlossen; laut H1-Präsentation sind ausgereifte Pre-Series-Module der mobilen Energieerzeugung für Feldversuche und Training im Einsatz (positives Nutzerfeedback). Im Auftrag des BAAINBw entwickelt VINCORION die nächste Generation taktischer mobiler Energiesysteme für die Bundeswehr; die Systeme PGM tacticalV und ESM hybridV reichen von 20 kW bis zu kombinierbaren 50- und 200-kW-Klassen mit insgesamt mehr als 1 MW (ModularGrid: bis zu acht Systeme parallel). Auf der Eurosatory zeigte VINCORION gemeinsam mit ReactiveDynamics das Laden unbemannter Bodenfahrzeuge (RDX-1-Prototyp); eine mögliche Zusammenarbeit wird als potenziell bezeichnet.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-b87584cb356cf171",
+        "S-9670ee4232da6c72",
+        "S-41e7bd7b63e2d486"
+      ],
+      "evidence": "Paraphrase: Tactical power systems successfully tested and design freeze completed. | Paraphrase: Mature pre-series mobile power generation modules deployed for field trials and training - positive user feedback; Demonstrated UGV charging use-case at EUROSATORY. | Paraphrase: On behalf of the BAAINBw, VINCORION is developing the next generation of tactical, mobile power systems for the Bundeswehr; PGM tacticalV and ESM hybridV from 20 kW to combinable 50- and 200-kW classes with a total output of over 1 MW; ModularGrid up to eight systems; RDX-1 charging; 'A potential collaboration could represent an important step'.",
+      "location": "PDF-Seite 5 | PDF-Seite 5, Spalte Power Systems/Vehicle Systems | Pressemitteilung 18.06.2026, Absätze 2-3 und letzter Absatz",
+      "evidence_items": [
+        {
+          "source_id": "S-b87584cb356cf171",
+          "text": "Tactical power systems successfully tested and design freeze completed.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 5"
+        },
+        {
+          "source_id": "S-9670ee4232da6c72",
+          "text": "Mature pre-series mobile power generation modules deployed for field trials and training - positive user feedback; Demonstrated UGV charging use-case at EUROSATORY.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 5, Spalte Power Systems/Vehicle Systems"
+        },
+        {
+          "source_id": "S-41e7bd7b63e2d486",
+          "text": "On behalf of the BAAINBw, VINCORION is developing the next generation of tactical, mobile power systems for the Bundeswehr; PGM tacticalV and ESM hybridV from 20 kW to combinable 50- and 200-kW classes with a total output of over 1 MW; ModularGrid up to eight systems; RDX-1 charging; 'A potential collaboration could represent an important step'.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 18.06.2026, Absätze 2-3 und letzter Absatz"
+        }
+      ],
+      "uncertainty": "Entwicklungsauftrag des BAAINBw laut Unternehmensmitteilung; Auftragsvolumen und Serienbeschaffung nicht genannt. Zusammenarbeit mit ReactiveDynamics ist ausdrücklich nur 'potenziell'. Bezug TPS = 'Tactical Power Systems' ergibt sich aus dem Zusammenhang der Folien und der Produktseite.",
+      "proposed_depth": "A",
+      "depth_reason": "Neues Produkt mit Wachstumsbezug"
+    },
+    {
+      "id": "T38",
+      "statement": "SENTINEL: VINCORION Power Systems GmbH übernimmt laut Pressemitteilung eine Schlüsselrolle im vom European Defence Fund geförderten Projekt SENTINEL (42 Partner aus 16 Ländern; Kick-off-Treffen Anfang Februar 2026 in Maribor): VINCORION liefert ein 50-kW-Stromerzeugermodul (PGM) und ein 50-kWh-Energiespeichermodul (ESM), leitet die Integration aller Demonstrator-Prototypen und trägt die Gesamtverantwortung für den Bereich Energiespeicher über alle Entwicklungsphasen; Feldtests (u. a. Universität der Bundeswehr München, später Niederlande und Aruba) laufen bzw. sind geplant.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-69e48c46a7fb7031"
+      ],
+      "evidence": "Paraphrase: EDF-funded project with 42 partners from 16 countries; VINCORION contributes a 50-kilowatt power generator module (PGM) and a 50-kilowatt-hour energy storage module (ESM); leads integration of all demonstration prototypes and has overall responsibility for energy storage across all development phases; field trials with University of the Federal Armed Forces in Munich, then Netherlands and Aruba.",
+      "location": "Pressemitteilung (EN-Seite datiert 12.04.2026), Absätze 2-7",
+      "uncertainty": "Die deutsche Fassung der Mitteilung ist auf der Website mit 04.03.2026 datiert, die englische mit 12.04.2026. Projektumfang/Fördervolumen nicht genannt; Aussagen zu Tests/Meilensteinen sind Stand der Mitteilung. Der Halbjahresbericht-Pressetext (13.08.2026) nimmt auf die zentrale Rolle in SENTINEL Bezug.",
+      "proposed_depth": "A",
+      "depth_reason": "Projekt mit Wachstumsbezug (EU-Förderprogramm)"
+    },
+    {
+      "id": "T39",
+      "statement": "Bodengebundene Luftverteidigung: Laut Halbjahresbericht war die hohe Nachfrage nach neuen PATRIOT- und IRIS-T-Systemen der Haupttreiber des Wachstums im Segment Power Systems und konnte kurzfristig durch bestehende Kapazitäten bedient werden; laut H1-Präsentation wurden bei der nächsten Patriot-Generation erfolgreiche System Design Reviews erreicht. Der Standort Altenstadt fertigt laut Pressemitteilung die Generatoren, die Luftverteidigungssysteme wie Patriot und IRIS-T mit Strom versorgen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-9670ee4232da6c72",
+        "S-555547ca1efb774c"
+      ],
+      "evidence": "Paraphrase: The high demand for new PATRIOT and IRIS-T systems turned out to be the main driver in sales growth of Power Systems, which was met at short notice by existing capacity. | Paraphrase: Air defence: Successful Patriot next gen. system design reviews (SDRs). | Paraphrase: Altenstadt site: center of excellence for mobile power generators, where the generators that supply power to air defense systems such as Patriot and Iris-T are built.",
+      "location": "PDF-Seite 14, Absatz Power Systems | PDF-Seite 5, Spalte Power Systems | Pressemitteilung 15.06.2026, Abschnitt 'Three locations, a clear division of responsibilities'",
+      "evidence_items": [
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "The high demand for new PATRIOT and IRIS-T systems turned out to be the main driver in sales growth of Power Systems, which was met at short notice by existing capacity.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 14, Absatz Power Systems"
+        },
+        {
+          "source_id": "S-9670ee4232da6c72",
+          "text": "Air defence: Successful Patriot next gen. system design reviews (SDRs).",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 5, Spalte Power Systems"
+        },
+        {
+          "source_id": "S-555547ca1efb774c",
+          "text": "Altenstadt site: center of excellence for mobile power generators, where the generators that supply power to air defense systems such as Patriot and Iris-T are built.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 15.06.2026, Abschnitt 'Three locations, a clear division of responsibilities'"
+        }
+      ],
+      "uncertainty": "Zuschreibung der Nachfrage (Kunden, Stückzahlen, Verträge) wird in den Unterlagen nicht aufgeschlüsselt; Unternehmensangaben.",
+      "proposed_depth": "A",
+      "depth_reason": "Nachfragetreiber Luftverteidigung"
+    },
+    {
+      "id": "T40",
+      "statement": "Zum US-Markt: In der Pressemitteilung zur AUSA 2026 beschreibt VINCORION, dass die US-Streitkräfte ähnliche Herausforderungen wie europäische Streitkräfte hätten (zunehmend elektrifizierte, digital vernetzte Landfahrzeuge mit höherem Strombedarf; wachsende Bedeutung der Luftverteidigung gegen Drohnen und Raketen; steigender Interoperabilitätsbedarf); CEO Kajetan von Mentzingen sagt, man wolle mit US-Betreibern und Partnern erörtern, wie künftige Gefechtsfeldenergie aussehen müsse. VINCORION unterhält einen Standort in El Paso, Texas; der Umsatz mit Kunden in den USA lag im H1 2026 bei EUR 20,6 Mio. (Vorjahr EUR 20,5 Mio.).",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-8235dca98711f60c",
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: The U.S. armed forces face many of the same key challenges as European militaries ... Land vehicles are becoming increasingly electrified and digitally networked ... air defense is becoming increasingly important ... need for interoperability ... CEO: 'we want to ... engage with U.S. operators and partners on what battlefield power needs to look like in the future'. | Paraphrase: Umsatz nach Kundenstandort USA: EUR 20,558 Mio. (H1 2026) vs. EUR 20,528 Mio. (H1 2025).",
+      "location": "Pressemitteilung 14.10.2026, Abschnitte 'Shared Challenges on Both Sides of the Atlantic' | PDF-Seite 24, Note 5",
+      "evidence_items": [
+        {
+          "source_id": "S-8235dca98711f60c",
+          "text": "The U.S. armed forces face many of the same key challenges as European militaries ... Land vehicles are becoming increasingly electrified and digitally networked ... air defense is becoming increasingly important ... need for interoperability ... CEO: 'we want to ... engage with U.S. operators and partners on what battlefield power needs to look like in the future'.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 14.10.2026, Abschnitte 'Shared Challenges on Both Sides of the Atlantic'"
+        },
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "Umsatz nach Kundenstandort USA: EUR 20,558 Mio. (H1 2026) vs. EUR 20,528 Mio. (H1 2025).",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 24, Note 5"
+        }
+      ],
+      "uncertainty": "Marktbeschreibung stammt vom Unternehmen (Messe-Pressemitteilung); keine genannten US-Aufträge oder Zielprogramme. Der US-Umsatz war im H1 2026 praktisch unverändert; Aviation-Umsätze werden überwiegend in US-Dollar abgerechnet (FX-Wirkung laut Bericht).",
+      "proposed_depth": "A",
+      "depth_reason": "Marktzugang USA/Nachfrageargumente"
+    },
+    {
+      "id": "T41",
+      "statement": "Zuschreibungen des Managements zur Nachfrage: CEO Kajetan von Mentzingen sagt in der Mitteilung vom 13.08.2026, die Nachfrage nach Produkten, Services und Lösungen bleibe hoch, die Sichtbarkeit sei 'überdurchschnittlich' und man sei zuversichtlich, den Wachstumskurs fortzusetzen. Im Aktionärsbrief des Halbjahresberichts heißt es, die Systeme positionierten VINCORION an der Stelle, an der der 'Super-Zyklus' der Verteidigungsindustrie am stärksten wirke, und man wolle durch strategische Partnerschaften das Produktportfolio gezielt erweitern.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-a492cd0df860fc7a",
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: CEO: Demand for our products, services and tailored solutions remains high ... our visibility is above average ... confident in our ability to continue our growth trajectory successfully. | Paraphrase: Letter from the Management Board: systems position VINCORION exactly where the super-cycle in the defense industry has its greatest effect; strategic partnerships with which the company intends to expand its product portfolio in a targeted manner.",
+      "location": "Pressemitteilung 13.08.2026, CEO-Zitat | PDF-Seite 4-5 (Letter from the Management Board)",
+      "evidence_items": [
+        {
+          "source_id": "S-a492cd0df860fc7a",
+          "text": "CEO: Demand for our products, services and tailored solutions remains high ... our visibility is above average ... confident in our ability to continue our growth trajectory successfully.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 13.08.2026, CEO-Zitat"
+        },
+        {
+          "source_id": "S-757e91a75b0726fb",
+          "text": "Letter from the Management Board: systems position VINCORION exactly where the super-cycle in the defense industry has its greatest effect; strategic partnerships with which the company intends to expand its product portfolio in a targeted manner.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 4-5 (Letter from the Management Board)"
+        }
+      ],
+      "uncertainty": "Aussagen des Managements (Zukunfts-/Positionierungsaussagen); keine unabhängige Bestätigung.",
+      "proposed_depth": "A",
+      "depth_reason": "Management-Aussagen zu Wachstum"
+    },
+    {
+      "id": "T42",
+      "statement": "Zum Marktumfeld schreibt VINCORION im Halbjahresbericht (ohne genannte Quelle für die Budgetzahl), für Deutschlands Verteidigungsbudget 2027 seien rund EUR 109 Mrd. vorgesehen und die Summe werde voraussichtlich weiter steigen; das weitgehend ausgeschöpfte Sondervermögen müsse entsprechend aufgefüllt werden. Der Verteidigungsmarkt profitiere vom strukturellen Wachstumstrend; hohe Auftragsbestände und lebhafter Auftragseingang zeigten sich branchenweit.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-757e91a75b0726fb"
+      ],
+      "evidence": "Paraphrase: The defense market is profiting from the structural growth trend ... approximately EUR 109 billion has been allocated to Germany's 2027 defense budget and this sum is expected to keep rising ... the separate government fund ('Sondervermögen'), which has already been largely exhausted, will need to be replenished.",
+      "location": "PDF-Seite 11, 1.1 Significant Developments, Abschnitt 'The defense market is profiting from the structural growth trend'",
+      "uncertainty": "Makro-/Haushaltsangaben des Unternehmens ohne Primärquelle im Bericht; Fußnoten im Bericht belegen nur den Konjunkturteil (ifo, IfW Kiel). Zur unabhängigen Prüfung ist die Market-/Fokus-Rolle zuständig.",
+      "proposed_depth": "A",
+      "depth_reason": "Nachfragetreiber Verteidigungsbudget laut Unternehmen"
+    },
+    {
+      "id": "T43",
+      "statement": "Aftermarket/Service: Die Q1-Präsentation führt als Investment-Highlight 'Building up decades of recurring aftermarket business' auf und stellt neue Aftermarket-Geschäftsmodelle (Spares pooling) als mittelfristigen Wachstumshebel dar; die Unternehmenswebsite nennt über 30 Jahre Service- und Ersatzteilverfügbarkeit.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-b87584cb356cf171",
+        "S-20ab7c633edc2585"
+      ],
+      "evidence": "Paraphrase: Investment highlight 4: 'Building up decades of recurring aftermarket business'. | Paraphrase: Facts and Figures: Service and spare parts availability 30+ years.",
+      "location": "PDF-Seite 7 | Abschnitt 'Facts and Figures'",
+      "evidence_items": [
+        {
+          "source_id": "S-b87584cb356cf171",
+          "text": "Investment highlight 4: 'Building up decades of recurring aftermarket business'.",
+          "mode": "Paraphrase",
+          "location": "PDF-Seite 7"
+        },
+        {
+          "source_id": "S-20ab7c633edc2585",
+          "text": "Facts and Figures: Service and spare parts availability 30+ years.",
+          "mode": "Paraphrase",
+          "location": "Abschnitt 'Facts and Figures'"
+        }
+      ],
+      "uncertainty": "Aftermarket-Umsatzanteile und Kennzahlen werden in den gelesenen Dokumenten nicht genannt.",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzender Hintergrund zu Wachstumshebel T32"
+    },
+    {
+      "id": "H1",
+      "statement": "Ulrich Strieder (Solingen) ist laut North Data (Handelsregister-Aggregator) Prokurist (ppa) der VINCORION Power Systems GmbH, Altenstadt (Amtsgericht München HRB 46214); die Eintragung wird mit Datum 10.04.2025 aufgeführt.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-3191dd472a54f6e3"
+      ],
+      "evidence": "Paraphrase: Authorized signatory (ppa): Ulrich Strieder - Eintrag 10 Apr 2025; Status: appointed (kein Ausscheiden verzeichnet).",
+      "location": "Abschnitt Prokura/ppa der Firmenseite (Tabelle der Personen)",
+      "uncertainty": "Sekundäre, automatisiert erzeugte Registerdaten (North Data weist auf mögliche Fehler hin); Originalseite war per Dokumentcache wegen HTTP 429 nicht abrufbar, Inhalt wurde über den WebFetch-Abruf erfasst und ist bei der Prüfung gegen die Originalseite bzw. das Handelsregister zu verifizieren. Das Datum ist ein Veröffentlichungs-/Eintragsdatum, kein belegter Beginn der Funktion. Funktionsbezeichnung im Unternehmen nicht belegt.",
+      "proposed_depth": "A",
+      "depth_reason": "Personenidentität/aktuelle Rolle"
+    },
+    {
+      "id": "H2",
+      "statement": "Ulrich Strieder ist laut North Data auch Prokurist (ppa) der VINCORION Advanced Systems GmbH, Wedel (Amtsgericht Pinneberg HRB 4160 PI); die Eintragung wird mit Datum 07.05.2025 aufgeführt, ohne verzeichnetes Ausscheiden.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-cc917e5b65707856"
+      ],
+      "evidence": "Paraphrase: Authorized signatory (ppa): Ulrich Strieder - 7 May 2025; No removal shown.",
+      "location": "Tabelle Prokura/ppa der Firmenseite (VINCORION Advanced Systems GmbH, früher ESW GmbH)",
+      "uncertainty": "Wie H1 (sekundäre Registerdaten; Originalseite im Cache nicht abrufbar, Abruf per WebFetch). Datum ist Veröffentlichungs-/Eintragsdatum; Funktionsbezeichnung nicht belegt.",
+      "proposed_depth": "A",
+      "depth_reason": "Personenidentität/aktuelle Rolle"
+    },
+    {
+      "id": "H3",
+      "statement": "Nach der North-Data-Personenseite 'Ulrich Strieder, Solingen' war er Geschäftsführer der LEISTRITZ Turbinentechnik GmbH (Remscheid; Eintrag 23.12.2021) und der Leistritz Turbinentechnik Nürnberg GmbH (Eintrag 24.12.2021); Einträge vom 05.11.2024 verzeichnen ihn jeweils als nicht mehr Geschäftsführer.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a584c45b3d30a5a9"
+      ],
+      "evidence": "Paraphrase: Geschäftsführer: Ulrich Strieder (23.12.2021 Remscheid; 24.12.2021 Nürnberg); 'Nicht mehr Geschäftsführer: Ulrich Strieder' (je 05.11.2024).",
+      "location": "Personenseite North Data, Abschnitt Firmenbeteiligungen/Funktionen",
+      "uncertainty": "Zuordnung zur selben Person wie in H1/H2 beruht nur auf der North-Data-Personenseite (Name und Wohnort Solingen; automatisierte Zuordnung); Einträge geben Veröffentlichungs-, nicht Amtszeitdaten wieder. Originalseite im Cache nicht abrufbar (HTTP 429).",
+      "proposed_depth": "A",
+      "depth_reason": "Werdegang; Personenidentität"
+    },
+    {
+      "id": "H4",
+      "statement": "Auf derselben Personenseite wird Ulrich Strieder mit Prokura bei der FMS Holding GmbH (Solingen) geführt (Eintrag 28.11.2023). Die Funktion steht in keinem belegten Zusammenhang mit VINCORION.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a584c45b3d30a5a9"
+      ],
+      "evidence": "Paraphrase: Prokura: Ulrich Strieder bei FMS Holding GmbH, Solingen - Eintrag 28.11.2023.",
+      "location": "Personenseite North Data, Abschnitt Firmenbeteiligungen/Funktionen",
+      "uncertainty": "Nur ergänzender Registerhinweis; Bedeutung für VINCORION nicht belegt. Quelle wie H3.",
+      "proposed_depth": "B",
+      "depth_reason": "Ergänzender Werdegangshinweis"
+    },
+    {
+      "id": "H20",
+      "statement": "In der Pressemitteilung vom 15.06.2026 zum Eurosatory-Auftritt wird Klaas Klasen als 'Vice President Strategy & Chief of Staff at VINCORION' zitiert; er erläutert dort die Eigenschaften der taktischen mobilen Energiesysteme PGM tacticalV und ESM hybridV.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-555547ca1efb774c"
+      ],
+      "evidence": "Paraphrase: Zitat 'explains Klaas Klasen, Vice President Strategy & Chief of Staff at VINCORION' zu PGM tacticalV/ESM hybridV (20 kW bis kombinierbare 50- und 200-kW-Klassen, über 1 MW; ModularGrid bis zu acht Systeme).",
+      "location": "Pressemitteilung 15.06.2026, Abschnitt 'We Power Your Mission', Zitat",
+      "uncertainty": "Titel laut Unternehmensmitteilung; Veröffentlichungsdatum 15.06.2026 liegt vor dem Viermonatsfenster der Medienpräsenz (20.06.-20.10.2026). Die Nutzerangabe 'Klaas Jacob Klasen' wird über das Verzeichnis (H22) und Registerdaten (H23-H25) dem Namen 'Klaas Klasen' zugeordnet.",
+      "proposed_depth": "A",
+      "depth_reason": "Personenidentität/aktuelle Rolle"
+    },
+    {
+      "id": "H21",
+      "statement": "In der Pressemitteilung vom 18.06.2026 zu mobilen Energiesystemen wird 'Klaas Klasen, Vice President of Strategy and Chief of Staff at VINCORION SE' zitiert; er sagt, die PGM- und ESM-Plattformen seien von Anfang an für künftige Einsatzszenarien ausgelegt (Gefechtsstände, medizinische Einrichtungen, Versorgung autonomer Systeme) und das Laden unbemannter Bodenfahrzeuge zeige die Breite der mobilen Energiesysteme; die Eurosatory biete die Gelegenheit, dies mit Partnern wie ReactiveDynamics zu zeigen.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-41e7bd7b63e2d486"
+      ],
+      "evidence": "Paraphrase: Zitat von Klaas Klasen, Vice President of Strategy and Chief of Staff at VINCORION SE: Charging unmanned ground vehicles such as the RDX-1 demonstrates the breadth of the mobile energy systems; PGM and ESM platforms designed for command posts, medical facilities, supply of autonomous systems; Eurosatory as opportunity to showcase versatility with partners such as ReactiveDynamics.",
+      "location": "Pressemitteilung 18.06.2026, Abschnitt 'Thinking Together', erstes Zitat",
+      "uncertainty": "Persönliche Aussage in Unternehmensmitteilung (Herstellerangabe); Veröffentlichung 18.06.2026 liegt vor dem Medienfenster (ab 20.06.2026).",
+      "proposed_depth": "A",
+      "depth_reason": "Personenidentität/Rolle; Themenbezug"
+    },
+    {
+      "id": "H22",
+      "statement": "Das Verzeichnis The Org listet im VINCORION-Organigramm 'Klaas Jacob Klasen' mit dem Titel 'VP Strategy & Chief of Staff' (Leadership Team).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-a3609ab109a44dd6"
+      ],
+      "evidence": "Paraphrase: Org-Chart-Eintrag: Klaas Jacob Klasen - VP Strategy & Chief of Staff.",
+      "location": "Seite 'VINCORION - Leadership Team', Org chart",
+      "uncertainty": "Von der Plattform als 'Unverified' gekennzeichnetes Drittverzeichnis; dient nur der Verknüpfung des vollständigen Namens mit der in den Unternehmensmitteilungen genannten Rolle. Ein Suchtreffer nennt abweichend 'Director Transformation and Strategy' (RocketReach, nicht geöffnet, HTTP 403).",
+      "proposed_depth": "B",
+      "depth_reason": "Namenszuordnung (vollständiger Name)"
+    },
+    {
+      "id": "H23",
+      "statement": "Klaas Jacob Klasen ist laut North Data Prokurist (ppa) der VINCORION Advanced Systems GmbH, Wedel (Eintrag 03.03.2026; kein Ausscheiden verzeichnet).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-cc917e5b65707856"
+      ],
+      "evidence": "Paraphrase: Authorized signatory (ppa): Klaas Jacob Klasen - 3 Mar 2026; No removal shown.",
+      "location": "Tabelle Prokura/ppa der Firmenseite",
+      "uncertainty": "Sekundäre Registerdaten; Originalseite im Cache nicht abrufbar (HTTP 429), Erfassung per WebFetch; Eintragsdatum ist kein belegter Funktionsbeginn.",
+      "proposed_depth": "A",
+      "depth_reason": "Personenidentität/Rolle"
+    },
+    {
+      "id": "H24",
+      "statement": "Klaas Jacob Klasen ist laut North Data zudem Prokurist (ppa) der VINCORION Power Systems GmbH, Altenstadt (Eintrag 06.03.2026; kein Ausscheiden verzeichnet).",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-3191dd472a54f6e3"
+      ],
+      "evidence": "Paraphrase: Authorized signatory (ppa): Klaas Jacob Klasen - 6 Mar 2026; Status: appointed.",
+      "location": "Tabelle Prokura/ppa der Firmenseite",
+      "uncertainty": "Wie H23.",
+      "proposed_depth": "A",
+      "depth_reason": "Personenidentität/Rolle"
+    },
+    {
+      "id": "H25",
+      "statement": "Laut North-Data-Personenseite war Klaas Jacob Klasen bei der VINCORION SE (Amtsgericht Pinneberg HRB 19596 PI) mit Eintrag vom 18.12.2025 als Mitglied des Vorstands verzeichnet und mit Eintrag vom 28.01.2026 als nicht mehr Mitglied des Vorstands; im selben Eintrag sind der Eintritt von Dieter Holst und K. J. von Mentzingen in den Vorstand verzeichnet.",
+      "kind": "Fakt",
+      "source_ids": [
+        "S-83c623a2c8787fc5"
+      ],
+      "evidence": "Paraphrase: VINCORION SE: 18 Dec 2025 Member of the Executive Board (mit Christian Köberle); 28 Jan 2026 'No longer Member of the Executive Board'; im selben Eintrag Dieter Holst und K. J. von Mentzingen neu im Vorstand.",
+      "location": "Personenseite North Data, Abschnitt VINCORION Group",
+      "uncertainty": "Automatisiert erzeugte Registerdaten; Anlass und Hintergrund der Eintragung nicht genannt (nicht interpretieren); Originalseite im Cache nicht abrufbar (HTTP 429), Erfassung per WebFetch.",
+      "proposed_depth": "A",
+      "depth_reason": "Werdegang/Gremienrolle"
+    },
+    {
+      "id": "H26",
+      "statement": "Fachliche Themen in seinen belegten Äußerungen (Juni 2026): modulare, hybride und mobile Energieversorgung für Feldlager (PGM tacticalV, ESM hybridV, ModularGrid mit autonomem Energiemanagement zur Minimierung des Kraftstoffverbrauchs) und deren Einsatz für Gefechtsstände, medizinische Bereiche und autonome Systeme.",
+      "kind": "Herstellerangabe",
+      "source_ids": [
+        "S-555547ca1efb774c",
+        "S-41e7bd7b63e2d486"
+      ],
+      "evidence": "Paraphrase: Klasen erläutert: ModularGrid-Betrieb mit bis zu acht Systemen verschiedener Leistungsklassen, gesteuert von einem intelligenten, autonomen Energiemanagement, das den Kraftstoffverbrauch minimiert. | Paraphrase: Klasen: PGM- und ESM-Plattformen seien von Anfang an für Gefechtsstände, medizinische Einrichtungen und die Versorgung autonomer Systeme ausgelegt.",
+      "location": "Pressemitteilung 15.06.2026, Zitat im Abschnitt 'We Power Your Mission' | Pressemitteilung 18.06.2026, Zitat",
+      "evidence_items": [
+        {
+          "source_id": "S-555547ca1efb774c",
+          "text": "Klasen erläutert: ModularGrid-Betrieb mit bis zu acht Systemen verschiedener Leistungsklassen, gesteuert von einem intelligenten, autonomen Energiemanagement, das den Kraftstoffverbrauch minimiert.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 15.06.2026, Zitat im Abschnitt 'We Power Your Mission'"
+        },
+        {
+          "source_id": "S-41e7bd7b63e2d486",
+          "text": "Klasen: PGM- und ESM-Plattformen seien von Anfang an für Gefechtsstände, medizinische Einrichtungen und die Versorgung autonomer Systeme ausgelegt.",
+          "mode": "Paraphrase",
+          "location": "Pressemitteilung 18.06.2026, Zitat"
+        }
+      ],
+      "uncertainty": "Fachthema aus zwei Zitaten abgeleitet; keine Angabe zu persönlicher Ausbildung oder Erfahrungsbereich (öffentlich nicht belegt).",
+      "proposed_depth": "A",
+      "depth_reason": "Fachprofil (aus eigenen Äußerungen)"
+    }
+  ],
+  "source_proposals": [
+    {
+      "id": "S-0fcb333a58bc73ae",
+      "name": "dpa-AFX (Wiedergabe ariva.de)",
+      "title": "ROUNDUP/Rüstungsboom: Vincorion optimistischer für Jahresumsatz - Aktie steigt",
+      "url": "https://www.ariva.de/aktien/vincorion-se-aktie/news/roundup-ruestungsboom-vincorion-optimistischer-fuer-12102939",
+      "published_date": "2026-08-13",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Nachrichtenagentur (dpa-AFX)"
+    },
+    {
+      "id": "S-189bed9f57b7a4b6",
+      "name": "dpa-AFX (Wiedergabe finanznachrichten.de)",
+      "title": "Rüstungsboom beschert Vincorion Umsatzsprung",
+      "url": "https://www.finanznachrichten.de/nachrichten-2026-07/68993909-ruestungsboom-beschert-vincorion-umsatzsprung-016.htm",
+      "published_date": "2026-07-10",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Nachrichtenagentur (dpa-AFX)"
+    },
+    {
+      "id": "S-1a847178709b22c4",
+      "name": "VINCORION SE Ad-hoc-Mitteilung (EQS, Wiedergabe gettex)",
+      "title": "VINCORION revenue for the first half of 2026 is up significantly compared to the same period last year; full-year guidance confirmed",
+      "url": "https://www.gettex.de/en/news-overview/newsdetail/eqs-adhoc-vincorion-se-vincorion-revenue-for-the-first-half-of-2026-is-up-significantly-compared-to-the-same-period-last-year-full-year-guidance-confirmed/",
+      "published_date": "2026-07-10",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Ad-hoc-Mitteilung (EQS, Kopie)"
+    },
+    {
+      "id": "S-20ab7c633edc2585",
+      "name": "VINCORION (Unternehmenswebsite)",
+      "title": "VINCORION - We power your mission! (Startseite, Facts and Figures)",
+      "url": "https://www.vincorion.com/en/",
+      "published_date": null,
+      "accessed_date": "2026-10-20",
+      "source_kind": "Unternehmenswebsite"
+    },
+    {
+      "id": "S-2b57f2aeef51e1da",
+      "name": "dpa-AFX (Wiedergabe Deutsche Börse live)",
+      "title": "ANALYSE-FLASH: JPMorgan belässt Vincorion auf 'Overweight' - Ziel 27 Euro",
+      "url": "https://live.deutsche-boerse.com/nachrichten/ANALYSE-FLASH-JPMorgan-belaesst-Vincorion-auf-Overweight---Ziel-27-Euro-4d2c45f5-a010-4f65-9d88-21742813ca51",
+      "published_date": "2026-10-09",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Nachrichtenagentur (dpa-AFX), Analystenmeldung"
+    },
+    {
+      "id": "S-3191dd472a54f6e3",
+      "name": "North Data",
+      "title": "VINCORION Power Systems GmbH, Altenstadt, Amtsgericht München HRB 46214",
+      "url": "https://www.northdata.com/VINCORION%20Power%20Systems%20GmbH,%20Altenstadt/Amtsgericht%20M%C3%BCnchen%20HRB%2046214",
+      "published_date": null,
+      "accessed_date": "2026-10-20",
+      "source_kind": "Registerdatenaggregator (Handelsregister-nah)"
+    },
+    {
+      "id": "S-41e7bd7b63e2d486",
+      "name": "VINCORION SE Pressemitteilung",
+      "title": "Mobile Energy Systems for Future-Proof Deployment Scenarios",
+      "url": "https://vincorion.com/en/mobile-energy-systems-for-future-proof-deployment-scenarios/",
+      "published_date": "2026-06-18",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung"
+    },
+    {
+      "id": "S-555547ca1efb774c",
+      "name": "VINCORION SE Pressemitteilung",
+      "title": "Energy for Europe's Security: VINCORION at Eurosatory 2026",
+      "url": "https://vincorion.com/en/energy-for-europes-security-vincorion-at-eurosatory-2026/",
+      "published_date": "2026-06-15",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung"
+    },
+    {
+      "id": "S-5ce8ff175434609c",
+      "name": "VINCORION SE Pressemitteilung",
+      "title": "VINCORION has once again improved its EcoVadis rating and has secured the bronze medal for the third consecutive year",
+      "url": "https://vincorion.com/en/vincorion-has-once-again-improved-its-ecovadis-rating-and-has-secured-the-bronze-medal-for-the-third-consecutive-year/",
+      "published_date": "2026-10-09",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung"
+    },
+    {
+      "id": "S-69e48c46a7fb7031",
+      "name": "VINCORION SE Pressemitteilung",
+      "title": "VINCORION takes on key role in European defense project SENTINEL",
+      "url": "https://vincorion.com/en/vincorion-takes-on-key-role-in-european-defense-project-sentinel-2/",
+      "published_date": "2026-04-12",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung"
+    },
+    {
+      "id": "S-6d8b01cfee4e69d7",
+      "name": "JENOPTIK AG Pressemitteilung",
+      "title": "Sale of VINCORION successfully closed",
+      "url": "https://www.jenoptik.com/news/pressreleases/2022/06/30/closing-sale-vincorion",
+      "published_date": "2022-06-30",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung (Verkäufer)"
+    },
+    {
+      "id": "S-71de625fcaaf1b95",
+      "name": "VINCORION SE Pressemitteilung",
+      "title": "VINCORION Appoints Investor Relations Leadership Position",
+      "url": "https://vincorion.com/en/vincorion-besetzt-leitung-investor-relations/",
+      "published_date": "2026-06-22",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung"
+    },
+    {
+      "id": "S-722f85cd0fe582f0",
+      "name": "Wikipedia (de)",
+      "title": "Vincorion",
+      "url": "https://de.wikipedia.org/wiki/Vincorion",
+      "published_date": null,
+      "accessed_date": "2026-10-20",
+      "source_kind": "Enzyklopädie (sekundär)"
+    },
+    {
+      "id": "S-757e91a75b0726fb",
+      "name": "VINCORION SE Halbjahresfinanzbericht",
+      "title": "Half-Year Financial Report 2026 (1st half-year, IFRS-Zwischenabschluss)",
+      "url": "https://ir.vincorion.com/media/document/4b669fed-814f-48d1-8678-d29720f9560c/assets/DE000VNC0014-Q2-2026-EQ-E-00.pdf",
+      "published_date": "2026-08-13",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Halbjahresfinanzbericht (PDF)"
+    },
+    {
+      "id": "S-8235dca98711f60c",
+      "name": "VINCORION SE Pressemitteilung",
+      "title": "The Future of Battlefield Power: VINCORION at AUSA 2026",
+      "url": "https://vincorion.com/en/vincorion-ausa-washington-2026/",
+      "published_date": "2026-10-14",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung"
+    },
+    {
+      "id": "S-83c623a2c8787fc5",
+      "name": "North Data",
+      "title": "Klaas Jacob Klasen (Personenseite, Registerdaten-Aggregator)",
+      "url": "https://www.northdata.com/Klasen,%20Klaas%20Jacob/",
+      "published_date": null,
+      "accessed_date": "2026-10-20",
+      "source_kind": "Registerdatenaggregator (Handelsregister-nah)"
+    },
+    {
+      "id": "S-93a1fbca82540d6d",
+      "name": "VINCORION (Unternehmenswebsite)",
+      "title": "About VINCORION",
+      "url": "https://vincorion.com/en/about-vincorion/",
+      "published_date": null,
+      "accessed_date": "2026-10-20",
+      "source_kind": "Unternehmenswebsite"
+    },
+    {
+      "id": "S-9670ee4232da6c72",
+      "name": "VINCORION SE Investorenpräsentation",
+      "title": "H1 2026 Results (Präsentation, 13. August 2026)",
+      "url": "https://ir.vincorion.com/media/document/0f2dd31d-9994-4d99-9b4f-9bfc77e5e5f8/assets/2026-08-13_VINC_HY1_2026_result_presentation_final.pdf",
+      "published_date": "2026-08-13",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Investorenpräsentation (PDF)"
+    },
+    {
+      "id": "S-a07d2f17d44253db",
+      "name": "VINCORION SE Pressemitteilung",
+      "title": "Heli-One and VINCORION intend to partner to bring next-generation Electrical Rescue Hoist (ERH) to civil and military helicopter market",
+      "url": "https://vincorion.com/en/heli-one-and-vincorion-intend-to-partner-to-bring-next-generation-electrical-rescue-hoist-erh-to-civil-and-military-helicopter-market/",
+      "published_date": "2026-05-08",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung"
+    },
+    {
+      "id": "S-a33cf7c1eeb40a5f",
+      "name": "VINCORION SE Pressemitteilung",
+      "title": "VINCORION SE joins the SDAX just weeks after successful IPO",
+      "url": "https://vincorion.com/en/vincorion-se-joins-the-sdax-just-weeks-after-successful-ipo/",
+      "published_date": "2026-06-04",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung"
+    },
+    {
+      "id": "S-a3609ab109a44dd6",
+      "name": "The Org (Personenverzeichnis)",
+      "title": "VINCORION - Leadership Team",
+      "url": "https://theorg.com/org/vincorion/teams/leadership-team",
+      "published_date": null,
+      "accessed_date": "2026-10-20",
+      "source_kind": "Personen-/Organigrammverzeichnis (unverifiziert)"
+    },
+    {
+      "id": "S-a492cd0df860fc7a",
+      "name": "VINCORION SE Pressemitteilung",
+      "title": "VINCORION grows revenue and earnings",
+      "url": "https://vincorion.com/en/vincorion-grows-revenue-and-earnings/",
+      "published_date": "2026-08-13",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung"
+    },
+    {
+      "id": "S-a584c45b3d30a5a9",
+      "name": "North Data",
+      "title": "Ulrich Strieder, Solingen (Personenseite, Registerdaten-Aggregator)",
+      "url": "https://www.northdata.de/Strieder,+Ulrich,+Solingen/qwm",
+      "published_date": null,
+      "accessed_date": "2026-10-20",
+      "source_kind": "Registerdatenaggregator (Handelsregister-nah)"
+    },
+    {
+      "id": "S-b87584cb356cf171",
+      "name": "VINCORION SE Investorenpräsentation",
+      "title": "Q1 2026 Results (Präsentation)",
+      "url": "https://ir.vincorion.com/media/document/bcf3789a-c391-49d7-85cb-31b54cd81fd6/assets/20260506_VINCQ1results_presentation_01.pdf",
+      "published_date": "2026-05-07",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Investorenpräsentation (PDF)"
+    },
+    {
+      "id": "S-cc917e5b65707856",
+      "name": "North Data",
+      "title": "VINCORION Advanced Systems GmbH (früher ESW GmbH), Wedel, Amtsgericht Pinneberg HRB 4160 PI",
+      "url": "https://www.northdata.com/ESW%20GmbH,%20Wedel/Amtsgericht%20Pinneberg%20HRB%204160%20PI",
+      "published_date": null,
+      "accessed_date": "2026-10-20",
+      "source_kind": "Registerdatenaggregator (Handelsregister-nah)"
+    },
+    {
+      "id": "S-db2fa0537999b2fc",
+      "name": "VINCORION Pressemitteilung",
+      "title": "Change in Management at VINCORION",
+      "url": "https://vincorion.com/en/change-in-management-at-vincorion/",
+      "published_date": "2024-05-06",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung"
+    },
+    {
+      "id": "S-e5b2172843ae61b7",
+      "name": "VINCORION SE Ad-hoc-Mitteilung (EQS News)",
+      "title": "VINCORION SE reports 41% higher revenue for the first 9 months of 2026 compared to the same period last year; Full-Year Guidance raised",
+      "url": "https://www.eqs-news.com/news/ad-hoc/vincorion-se-vincorion-se-reports-41-higher-revenue-for-the-first-9-months-of-2026-compared-to-the-same-period-last-year-full-year-guidance-raised/1e1dc173-dcc2-4702-88cb-fff738bedbe7",
+      "published_date": "2026-10-07",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Ad-hoc-Mitteilung (EQS)"
+    },
+    {
+      "id": "S-f113efb0e3928467",
+      "name": "VINCORION Pressemitteilung",
+      "title": "VINCORION enters strategic partnership with industrialisation specialist HEIDELBERG",
+      "url": "https://vincorion.com/en/strategic-partner-heidelberg/",
+      "published_date": "2025-07-29",
+      "accessed_date": "2026-10-20",
+      "source_kind": "Pressemitteilung"
+    }
+  ],
+  "company_facts": [
+    {
+      "id": "cf_identity",
+      "label": "Identität, Rechtsträger und Geschäftsmodell",
+      "claim_ids": [
+        "T1",
+        "T2",
+        "T10"
+      ]
+    },
+    {
+      "id": "cf_sites",
+      "label": "Standorte und Mitarbeitende",
+      "claim_ids": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "id": "cf_owner",
+      "label": "Eigentümer, Börsenstatus und Aktionäre",
+      "claim_ids": [
+        "T6",
+        "T7",
+        "T13"
+      ]
+    },
+    {
+      "id": "cf_mgmt",
+      "label": "Management und Aufsichtsrat",
+      "claim_ids": [
+        "T11",
+        "T12"
+      ]
+    },
+    {
+      "id": "cf_fin",
+      "label": "Kennzahlen 2025 und erstes Halbjahr 2026",
+      "claim_ids": [
+        "T5",
+        "T14",
+        "T17"
+      ]
+    },
+    {
+      "id": "cf_orders",
+      "label": "Auftragslage und Segmente (30.06.2026)",
+      "claim_ids": [
+        "T15",
+        "T16"
+      ]
+    },
+    {
+      "id": "cf_guidance",
+      "label": "Prognose 2026 (Stand 07.10.2026)",
+      "claim_ids": [
+        "T18",
+        "T19"
+      ]
+    },
+    {
+      "id": "cf_history",
+      "label": "Historie und frühere Konzernzugehörigkeit",
+      "claim_ids": [
+        "T8",
+        "T9"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "ev_sdax",
+      "label": "SDAX-Aufnahme (Vollzug laut Halbjahresbericht berichtet)",
+      "date": "2026-06-22",
+      "claim_ids": [
+        "T21"
+      ]
+    },
+    {
+      "id": "ev_ir",
+      "label": "Leitung Investor Relations: Felix Zander bekanntgegeben",
+      "date": "2026-06-22",
+      "claim_ids": [
+        "T22"
+      ]
+    },
+    {
+      "id": "ev_h1pre",
+      "label": "Ad-hoc: vorläufige H1-Zahlen, Prognose bestätigt",
+      "date": "2026-07-10",
+      "claim_ids": [
+        "T20"
+      ]
+    },
+    {
+      "id": "ev_h1",
+      "label": "Halbjahresbericht: Umsatz +42,4 %, Obergrenze der Umsatzprognose erwartet",
+      "date": "2026-08-13",
+      "claim_ids": [
+        "T14",
+        "T15",
+        "T18"
+      ]
+    },
+    {
+      "id": "ev_9m",
+      "label": "Ad-hoc: Prognose 2026 angehoben (vorläufige 9M-Zahlen)",
+      "date": "2026-10-07",
+      "claim_ids": [
+        "T19"
+      ]
+    },
+    {
+      "id": "ev_eco",
+      "label": "EcoVadis: 72 Punkte, erneut Bronze (laut Unternehmen)",
+      "date": "2026-10-09",
+      "claim_ids": [
+        "T23"
+      ]
+    },
+    {
+      "id": "ev_jpm",
+      "label": "JPMorgan bestätigt Overweight, Ziel EUR 27 (laut dpa-AFX)",
+      "date": "2026-10-09",
+      "claim_ids": [
+        "T25"
+      ]
+    },
+    {
+      "id": "ev_ausa",
+      "label": "AUSA 2026 Washington: Messeauftritt, Batteriearchitektur (laut Unternehmen)",
+      "date": "2026-10-14",
+      "claim_ids": [
+        "T24"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "wachstum",
+      "label": "Wachstumschancen: Fakten und Ableitungen",
+      "headline": "Wachstumsziele, Auftragslage und Kapazitätsausbau",
+      "preview": "Mittelfristziel >15 % CAGR (Unternehmensziel), Auftragsbestand EUR 1,2 Mrd., Prognose 2026 angehoben, laufender Kapazitätsausbau.",
+      "claim_ids": [
+        "T30",
+        "T18",
+        "T19",
+        "T15"
+      ],
+      "sections": [
+        {
+          "label": "Ziele, Wachstumshebel und Zielmarkt laut Unternehmen",
+          "claim_ids": [
+            "T31",
+            "T32",
+            "T41"
+          ]
+        },
+        {
+          "label": "Umsatz- und Segmententwicklung",
+          "claim_ids": [
+            "T14",
+            "T16",
+            "T17"
+          ]
+        },
+        {
+          "label": "Kapazitätsausbau und Industrialisierung",
+          "claim_ids": [
+            "T33",
+            "T34",
+            "T35"
+          ]
+        },
+        {
+          "label": "Produkte und Projekte mit Wachstumsbezug",
+          "claim_ids": [
+            "T36",
+            "T37",
+            "T38",
+            "T39"
+          ]
+        },
+        {
+          "label": "Nachfragetreiber und Märkte laut Unternehmen",
+          "claim_ids": [
+            "T42",
+            "T40",
+            "T43"
+          ]
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "name": "Ulrich Strieder",
+      "claim_ids": [
+        "H1",
+        "H2",
+        "H3",
+        "H4"
+      ],
+      "intro": {
+        "text": "Ulrich Strieder ist laut Handelsregister-Aggregator North Data (Stand der Einträge April/Mai 2025) Prokurist der VINCORION Power Systems GmbH und der VINCORION Advanced Systems GmbH; eine Funktionsbezeichnung im Unternehmen ist in den geöffneten öffentlichen Quellen nicht belegt.",
+        "claim_ids": [
+          "H1",
+          "H2"
+        ]
+      },
+      "snapshot": [
+        {
+          "label": "Registerrolle bei VINCORION",
+          "value": "Prokurist (ppa) VINCORION Power Systems GmbH (Eintrag 10.04.2025) und VINCORION Advanced Systems GmbH (Eintrag 07.05.2025), laut North Data",
+          "claim_ids": [
+            "H1",
+            "H2"
+          ]
+        },
+        {
+          "label": "Frühere Registerrolle",
+          "value": "Geschäftsführer LEISTRITZ Turbinentechnik GmbH (Remscheid) und Leistritz Turbinentechnik Nürnberg GmbH (Einträge Dezember 2021; nicht mehr Geschäftsführer laut Einträgen vom 05.11.2024)",
+          "claim_ids": [
+            "H3"
+          ]
+        }
+      ],
+      "career": [
+        {
+          "period": "Einträge 23./24.12.2021 bis 05.11.2024 (Eintragsdaten, keine belegten Amtszeiten)",
+          "organization": "LEISTRITZ Turbinentechnik GmbH (Remscheid) und Leistritz Turbinentechnik Nürnberg GmbH",
+          "role": "Geschäftsführer (laut North Data)",
+          "context": "Registereinträge zur Geschäftsführung; Inhalt der Tätigkeit öffentlich nicht beschrieben.",
+          "claim_ids": [
+            "H3"
+          ]
+        },
+        {
+          "period": "Eintrag 28.11.2023 (Beginn nicht belegt)",
+          "organization": "FMS Holding GmbH (Solingen)",
+          "role": "Prokurist (laut North Data)",
+          "context": "Ergänzender Registerhinweis ohne belegten Bezug zu VINCORION.",
+          "claim_ids": [
+            "H4"
+          ]
+        },
+        {
+          "period": "Eintrag 10.04.2025 (Funktionsbeginn nicht belegt)",
+          "organization": "VINCORION Power Systems GmbH (Altenstadt)",
+          "role": "Prokurist (ppa) (laut North Data)",
+          "context": "Operative Gesellschaft der VINCORION-Gruppe; Funktionsbezeichnung im Unternehmen nicht belegt.",
+          "claim_ids": [
+            "H1"
+          ]
+        },
+        {
+          "period": "Eintrag 07.05.2025 (Funktionsbeginn nicht belegt)",
+          "organization": "VINCORION Advanced Systems GmbH (Wedel)",
+          "role": "Prokurist (ppa) (laut North Data)",
+          "context": "Operative Gesellschaft der VINCORION-Gruppe; Funktionsbezeichnung im Unternehmen nicht belegt.",
+          "claim_ids": [
+            "H2"
+          ]
+        }
+      ],
+      "expertise": [],
+      "responsibilities": [],
+      "media": []
+    },
+    {
+      "name": "Klaas Jacob Klasen",
+      "claim_ids": [
+        "H20",
+        "H21",
+        "H22",
+        "H23",
+        "H24",
+        "H25",
+        "H26"
+      ],
+      "intro": {
+        "text": "Klaas (Jacob) Klasen wird in zwei Unternehmensmitteilungen vom Juni 2026 als Vice President Strategy & Chief of Staff der VINCORION SE genannt; Registerdaten nennen ihn zudem als Prokuristen von zwei VINCORION-Gesellschaften.",
+        "claim_ids": [
+          "H20",
+          "H21",
+          "H23",
+          "H24"
+        ]
+      },
+      "snapshot": [
+        {
+          "label": "Rolle laut Unternehmensmitteilungen (Juni 2026)",
+          "value": "Vice President Strategy & Chief of Staff, VINCORION SE",
+          "claim_ids": [
+            "H20",
+            "H21"
+          ]
+        },
+        {
+          "label": "Namenszuordnung",
+          "value": "Verzeichnis The Org: Klaas Jacob Klasen, VP Strategy & Chief of Staff (Drittverzeichnis, unverifiziert)",
+          "claim_ids": [
+            "H22"
+          ]
+        },
+        {
+          "label": "Registerrolle",
+          "value": "Prokurist (ppa) VINCORION Advanced Systems GmbH (Eintrag 03.03.2026) und VINCORION Power Systems GmbH (Eintrag 06.03.2026), laut North Data",
+          "claim_ids": [
+            "H23",
+            "H24"
+          ]
+        },
+        {
+          "label": "Fachthema in eigenen Äußerungen",
+          "value": "Taktische mobile Energiesysteme (PGM tacticalV, ESM hybridV) und deren Einsatz für autonome Systeme",
+          "claim_ids": [
+            "H21",
+            "H26"
+          ]
+        }
+      ],
+      "career": [
+        {
+          "period": "Eintrag 18.12.2025 bis Eintrag 28.01.2026 (Eintragsdaten)",
+          "organization": "VINCORION SE",
+          "role": "Mitglied des Vorstands (laut North Data)",
+          "context": "Im Eintrag vom 28.01.2026 sind zugleich der Eintritt von Dieter Holst und K. J. von Mentzingen in den Vorstand verzeichnet; Hintergrund der Eintragungen nicht genannt.",
+          "claim_ids": [
+            "H25"
+          ]
+        },
+        {
+          "period": "Eintrag 03.03.2026 (Funktionsbeginn nicht belegt)",
+          "organization": "VINCORION Advanced Systems GmbH (Wedel)",
+          "role": "Prokurist (ppa) (laut North Data)",
+          "context": "Operative Gesellschaft der VINCORION-Gruppe.",
+          "claim_ids": [
+            "H23"
+          ]
+        },
+        {
+          "period": "Eintrag 06.03.2026 (Funktionsbeginn nicht belegt)",
+          "organization": "VINCORION Power Systems GmbH (Altenstadt)",
+          "role": "Prokurist (ppa) (laut North Data)",
+          "context": "Operative Gesellschaft der VINCORION-Gruppe.",
+          "claim_ids": [
+            "H24"
+          ]
+        },
+        {
+          "period": "Zeitraum nicht belegt (Rolle belegt für 15.06. und 18.06.2026)",
+          "organization": "VINCORION SE",
+          "role": "Vice President Strategy & Chief of Staff",
+          "context": "Rolle laut Pressemitteilungen vom 15.06. und 18.06.2026 und Drittverzeichnis; Eintrittsdatum und frühere Stationen öffentlich nicht belegt.",
+          "claim_ids": [
+            "H20",
+            "H21",
+            "H22"
+          ]
+        }
+      ],
+      "expertise": [
+        {
+          "label": "Taktische mobile Energiesysteme (aus eigenen Äußerungen)",
+          "text": "Erläutert in Pressemitteilungen vom Juni 2026 Leistungsklassen, ModularGrid-Betrieb und Einsatzszenarien der mobilen Energiesysteme PGM tacticalV und ESM hybridV, einschließlich Laden unbemannter Bodenfahrzeuge.",
+          "claim_ids": [
+            "H21",
+            "H26"
+          ]
+        }
+      ],
+      "responsibilities": [
+        {
+          "label": "Strategie und Chief of Staff",
+          "text": "Funktionsbezeichnung laut Pressemitteilungen: Strategie und Chief of Staff der VINCORION SE; konkrete Zuständigkeiten, Berichtslinie und Teamumfang sind öffentlich nicht belegt.",
+          "claim_ids": [
+            "H20",
+            "H21"
+          ]
+        }
+      ],
+      "media": []
+    }
+  ],
+  "gaps": [
+    {
+      "id": "G1",
+      "topic": "Ulrich Strieder - Funktionsbezeichnung",
+      "gap": "In keiner geöffneten Quelle (Unternehmenswebsite, Pressemitteilungen, Berichte) wird Ulrich Strieder genannt. Registerdaten (North Data) zeigen Prokura bei zwei VINCORION-Gesellschaften. Suchtreffer führen ihn in Drittverzeichnissen (Craft, RocketReach) als \"Vice President, Operations\"; diese Seiten waren nicht abrufbar (HTTP 403) und sind nicht als Beleg übernommen.",
+      "impact": "Rolle/Verantwortung nur als Registerrolle darstellbar; keine Aussage zu operativen Zuständigkeiten. Kein Beleg einer Schwäche."
+    },
+    {
+      "id": "G2",
+      "topic": "Ulrich Strieder - Namensgleichheit",
+      "gap": "Presseartikel über einen gleichnamigen Ulrich Strieder (Operations Director Terex Cranes Zweibrücken 2019, zuvor u. a. Mannesmann Röhren-Werke, Kronenberg, MAN, Schütz; Produktionsleiter Tadano Demag, Rheinpfalz 24.11.2019) wurden geöffnet (S-7976d6cc321ac273, S-3f8a397f4e6c3ada, S-72620ee26b4256d6). Eine Identität mit dem VINCORION-Prokuristen ist in keiner Quelle belegt; die Angaben wurden nicht in das Profil übernommen.",
+      "impact": "Werdegang vor 2021 offen. Falls identisch, wäre ein Industrie-/Produktionswerdegang zu erwarten - das ist nicht belegt und nicht angenommen."
+    },
+    {
+      "id": "G3",
+      "topic": "Personenprofile - Medienpräsenz im Fenster 20.06.-20.10.2026",
+      "gap": "Für beide Personen wurden keine öffentlichen Interviews, Reden, offiziellen Mitteilungen mit persönlichem Zitat oder Artikel mit Namensnennung im Fenster gefunden. Klasen-Zitate stammen vom 15.06. und 18.06.2026 (vor dem Fenster). media ist daher leer.",
+      "impact": "Fehlende Treffer sind keine Aussage über fehlende Medienpräsenz; LinkedIn (HTTP 999) und Verzeichnisdienste waren nicht abrufbar."
+    },
+    {
+      "id": "G4",
+      "topic": "Klaas Jacob Klasen - Titelabweichung",
+      "gap": "Ein Suchtreffer nennt bei RocketReach abweichend \"Director Transformation and Strategy\"; Seite nicht abrufbar (HTTP 403). Unternehmensmitteilungen (Juni 2026) nennen \"Vice President Strategy & Chief of Staff\"; The Org stimmt überein.",
+      "impact": "Aktuelle Rolle laut Unternehmensmitteilungen verwendet; Wechsel nicht belegt. Frühere Stationen (Ausbildung, Vorarbeitgeber) öffentlich nicht belegt; weitere, nicht VINCORION-bezogene Registereinträge unter dem Namen (Hamburger Kleingesellschaften 2019-2020) wurden wegen unklarer Relevanz/Identität nicht übernommen."
+    },
+    {
+      "id": "G5",
+      "topic": "North Data (Handelsregister-Aggregator) - Originalabruf",
+      "gap": "Die North-Data-Seiten lieferten über den Dokumentcache HTTP 429 (Rate Limit); die Inhalte wurden per WebFetch-Abruf (Modellextraktion der Seite) erfasst. Die vier North-Data-URLs sind daher nicht im Dokumentcache gespeichert. Der amtliche Handelsregisterauszug wurde nicht eingesehen.",
+      "impact": "H1-H4 und H23-H25 benötigen vollständige Prüfung (A) gegen Originalseite bzw. Handelsregister; bis dahin sekundär und mit Unsicherheit."
+    },
+    {
+      "id": "G6",
+      "topic": "IPO-Prospekt, Prospektzusammenfassung, Facts & Figures, Annual Report ZIP",
+      "gap": "Prospekt (13.03.2026), Zusammenfassung und Factsheet auf ir.vincorion.com sind per Dokumentabruf nicht lesbar (JavaScript-Weiterleitung; IPO-Bereich laut Seitentext geografisch beschränkt); Geschäftsbericht 2025 liegt als ZIP vor und wurde nicht geöffnet. Annahmen der Prognose und Marktdaten (Roland Berger als Marktquelle erwähnt) wurden nicht eingesehen.",
+      "impact": "Zahlen 2025 stammen aus Halbjahresbericht und Q1-Präsentation (Sekundärwiedergabe des Unternehmens). Marktgröße/TAM nur als Unternehmensangabe."
+    },
+    {
+      "id": "G7",
+      "topic": "IR-Website: Gremien, Stimmrechtsmitteilungen, Directors Dealings",
+      "gap": "Die dynamischen Seiten ir.vincorion.com/en/bodies, /shareholderstructure, /voting-rights-notifications und /directors-dealings konnten nicht per Dokumentabruf gelesen werden. Aufsichtsratsvorsitz und vollständige Zusammensetzung sind nicht belegt; Aktionärsstruktur nur aus dem Halbjahresbericht (Stand 30.06.2026).",
+      "impact": "Governance-Details und aktuelle Stimmrechte (z. B. Veränderungen nach Lock-up) offen."
+    },
+    {
+      "id": "G8",
+      "topic": "Lock-up-Ende STAR Capital / Platzierungen",
+      "gap": "Sekundärquellen (Finanzportale) nennen ein Lock-up-Ende im Herbst 2026 für die STAR-Capital-Beteiligung; in den geöffneten Primärquellen wurde kein Lock-up-Datum und keine Platzierung belegt.",
+      "impact": "Nicht als Ereignis übernommen."
+    },
+    {
+      "id": "G9",
+      "topic": "Analystenabdeckung",
+      "gap": "Deutsche-Bank-Erstbewertung (Buy, Ziel EUR 26), Oddo-BHF-Hochstufung und Berenberg-Bestätigung (Ziel EUR 27) wurden nur in Suchtreffern/Finanzportalen mit abweichenden Datumsangaben gefunden; nur die JPMorgan-Meldung (09.10.2026, dpa-AFX) wurde geöffnet.",
+      "impact": "Nur T25 als Marktkontext übernommen; keine vollständige Analystenübersicht."
+    },
+    {
+      "id": "G10",
+      "topic": "Widersprüche/Abweichungen in Primärquellen",
+      "gap": "(1) Vehicle-Systems-Vorjahresumsatz H1 2025: Pressemitteilung EUR 42,4 Mio., Bericht/Präsentation EUR 42,2 Mio. (2) ISIN im Fließtext des Halbjahresberichts DE000A409S11 vs. DE000VNC0014 in den Key Share Data. (3) Beschäftigte: rund 900 (Pressemitteilung 15.06.2026) vs. rund 1.000 (Stand 30.06.2026, FTE). (4) Hauptversammlung 19.03.2026 als \"extraordinary\" und \"annual\" bezeichnet. (5) SENTINEL-Mitteilung: DE-Fassung 04.03.2026, EN-Fassung 12.04.2026.",
+      "impact": "In den jeweiligen Claims als Unsicherheit geführt; ISIN nicht als Claim übernommen."
+    },
+    {
+      "id": "G11",
+      "topic": "Ereignisse außerhalb des Viermonatsfensters (nicht als events geführt)",
+      "gap": "Eurosatory-Pressemitteilungen (15.06. und 18.06.2026), SENTINEL (12.04.2026), Heli-One-MoU (08.05.2026), IPO (20.03.2026), Q1-Bericht (07.05.2026) und Heidelberg-MoU (29.07.2025) liegen vor dem Fenster 20.06.-20.10.2026 und sind nur als Claims erhalten. Der laut H1-Präsentation für Oktober 2026 geplante ERH-Erstflug wurde nicht belegt.",
+      "impact": "Keine Timeline-Einträge; ERH-Erstflug-Status offen."
+    },
+    {
+      "id": "G12",
+      "topic": "Fachmedien/Wirtschaftsmedien",
+      "gap": "Unabhängige redaktionelle Berichte wurden primär als dpa-AFX-Meldungen (ariva.de, finanznachrichten.de, Börsen-Zeitung als Kopie) gefunden; Handelsblatt, Reuters, Hamburger Abendblatt und Fachmedien (ESUT, Europäische Sicherheit & Technik, militaeraktuell) lieferten im Fenster keine geöffneten, belastbaren Eigenberichte zu neuen Ereignissen. Mehrere Finanzportal-Artikel sind KI-gestützt (Kennzeichnung) und wurden nicht als Beleg verwendet.",
+      "impact": "Gegenrecherche liefert vor allem Bestätigung der Unternehmenszahlen, keine abweichenden Faktenbehauptungen."
+    }
+  ],
+  "coverage": [
+    {
+      "topic": "Offizielle Website, Standorte, Geschäftsmodell",
+      "search_terms": [
+        "vincorion.com",
+        "About VINCORION",
+        "Facts and Figures"
+      ],
+      "source_ids": [
+        "S-20ab7c633edc2585",
+        "S-93a1fbca82540d6d"
+      ],
+      "finding": "Website bestätigt vincorion.com als offizielle Domain, Sitz Wedel, vier Standorte, rund 1.000 Beschäftigte (H1 2026).",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Finanzkennzahlen, Auftragsbestand, Prognose",
+      "search_terms": [
+        "Half-Year Financial Report 2026",
+        "H1 2026 results presentation",
+        "Q1 2026 presentation",
+        "ad hoc 9M 2026"
+      ],
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-9670ee4232da6c72",
+        "S-b87584cb356cf171",
+        "S-1a847178709b22c4",
+        "S-e5b2172843ae61b7",
+        "S-a492cd0df860fc7a"
+      ],
+      "finding": "Halbjahresbericht, Präsentationen, Pressemitteilung und zwei EQS-Ad-hoc-Mitteilungen gelesen; Prognoseanhebung 07.10.2026 belegt. Q3-/9M-Bericht erscheint erst am 11.11.2026.",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Eigentümer, Börsengang, Aktionäre, Historie",
+      "search_terms": [
+        "STAR Capital VINCORION",
+        "IPO Frankfurt 2026",
+        "Jenoptik sale VINCORION",
+        "Shareholder structure"
+      ],
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-a33cf7c1eeb40a5f",
+        "S-6d8b01cfee4e69d7",
+        "S-722f85cd0fe582f0"
+      ],
+      "finding": "IPO, SDAX, Aktionärsstruktur und Verkauf durch Jenoptik 2022 belegt. IPO-Prospekt/IR-Unterseiten nicht lesbar (G6, G7).",
+      "status": "teilweise geprüft"
+    },
+    {
+      "topic": "Management und Gremien",
+      "search_terms": [
+        "VINCORION Management Board",
+        "Change in Management",
+        "Maike Schuh Supervisory Board"
+      ],
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-db2fa0537999b2fc"
+      ],
+      "finding": "Vorstand und Aufsichtsratsänderungen belegt; Aufsichtsratsvorsitz nicht belegt.",
+      "status": "teilweise geprüft"
+    },
+    {
+      "topic": "Ereignisse 20.06.-20.10.2026 (Pressebereich, EQS, Nachrichtenagentur)",
+      "search_terms": [
+        "vincorion.com Press 2026",
+        "VINCORION Ad-hoc Oktober 2026",
+        "Vincorion Aktie Auftrag Oktober 2026",
+        "Vincorion Partnerschaft September 2026",
+        "Vincorion AUSA 2026",
+        "EcoVadis"
+      ],
+      "source_ids": [
+        "S-a33cf7c1eeb40a5f",
+        "S-71de625fcaaf1b95",
+        "S-1a847178709b22c4",
+        "S-a492cd0df860fc7a",
+        "S-e5b2172843ae61b7",
+        "S-5ce8ff175434609c",
+        "S-8235dca98711f60c",
+        "S-2b57f2aeef51e1da",
+        "S-0fcb333a58bc73ae",
+        "S-189bed9f57b7a4b6"
+      ],
+      "finding": "Acht datierte Ereignisse im Fenster belegt. Newsroom-Liste (WordPress-API) zeigt im Fenster nur Pressemitteilungen vom 22.06., 13.08., 09.10. und 14.10.2026 sowie die Ad-hoc-Mitteilungen. Keine Neuauftrags-, Partnerschafts- oder M&A-Meldung im Fenster gefunden.",
+      "status": "geprüft mit Beleg"
+    },
+    {
+      "topic": "Wachstumsfakten (Ziele, Hochlauf, Produkte, Projekte)",
+      "search_terms": [
+        "mid-range goals CAGR",
+        "pulse lines capacity ramp-up",
+        "ERH premierV Heli-One",
+        "SENTINEL EDF",
+        "Tactical power systems BAAINBw",
+        "Heidelberg partnership"
+      ],
+      "source_ids": [
+        "S-757e91a75b0726fb",
+        "S-9670ee4232da6c72",
+        "S-b87584cb356cf171",
+        "S-a07d2f17d44253db",
+        "S-69e48c46a7fb7031",
+        "S-41e7bd7b63e2d486",
+        "S-555547ca1efb774c",
+        "S-f113efb0e3928467",
+        "S-8235dca98711f60c"
+      ],
+      "finding": "Mittelfristziele, Wachstumshebel, Hochlaufmaßnahmen, ERH-, TPS-, SENTINEL- und Heidelberg-Fakten aus Primärquellen belegt. Keine Investitionssummen/Kapazitätszahlen für Pulse Lines; Prospekt nicht lesbar.",
+      "status": "teilweise geprüft"
+    },
+    {
+      "topic": "Gesprächspartner Ulrich Strieder",
+      "search_terms": [
+        "Ulrich Strieder",
+        "Ulrich Strieder VINCORION",
+        "Strieder Vincorion Prokura",
+        "Strieder Vice President Operations Vincorion",
+        "Leistritz Turbinentechnik Strieder"
+      ],
+      "source_ids": [
+        "S-7976d6cc321ac273",
+        "S-3f8a397f4e6c3ada",
+        "S-72620ee26b4256d6",
+        "S-a584c45b3d30a5a9",
+        "S-3191dd472a54f6e3",
+        "S-cc917e5b65707856"
+      ],
+      "finding": "Nur Registerdaten (North Data) verbinden den Namen mit VINCORION (Prokura 2025). Funktionsbezeichnung \"VP Operations\" nur in nicht abrufbaren Drittverzeichnissen; Namensgleichheit mit Presseartikeln (Terex/Tadano) nicht belegt.",
+      "status": "teilweise geprüft (Rolle nur als Registerrolle belegt)"
+    },
+    {
+      "topic": "Gesprächspartner Klaas Jacob Klasen",
+      "search_terms": [
+        "Klaas Klasen VINCORION",
+        "Klaas Jacob Klasen",
+        "VINCORION Strategy Chief of Staff"
+      ],
+      "source_ids": [
+        "S-555547ca1efb774c",
+        "S-41e7bd7b63e2d486",
+        "S-a3609ab109a44dd6",
+        "S-cc917e5b65707856",
+        "S-3191dd472a54f6e3",
+        "S-83c623a2c8787fc5"
+      ],
+      "finding": "Rolle \"Vice President Strategy & Chief of Staff\" in zwei Unternehmensmitteilungen (Juni 2026) belegt; Verzeichnis und Registerdaten ergänzen den vollen Namen und Prokura. Abweichender Titel in nicht abrufbarem Verzeichnis (G4).",
+      "status": "geprüft mit Beleg (Rolle); Werdegang vor VINCORION nicht belegt"
+    },
+    {
+      "topic": "Medienpräsenz beider Personen im Fenster",
+      "search_terms": [
+        "Interview",
+        "Rede",
+        "Zitat",
+        "Artikel mit Namen",
+        "Fachmedien ESUT/militaeraktuell"
+      ],
+      "source_ids": [
+        "S-555547ca1efb774c",
+        "S-41e7bd7b63e2d486"
+      ],
+      "finding": "Keine Treffer im Fenster 20.06.-20.10.2026; Klasen-Zitate datieren vom 15.06./18.06.2026.",
+      "status": "geprüft ohne Beleg im Fenster"
+    },
+    {
+      "topic": "Nicht abrufbare Quellen",
+      "search_terms": [
+        "craft.co",
+        "rocketreach.co",
+        "companyhouse.de",
+        "linkedin.com",
+        "zoominfo.com",
+        "northdata (Cache)",
+        "ir.vincorion.com (IPO-Bereich, Bodies)"
+      ],
+      "source_ids": [],
+      "finding": "HTTP 403/999/429 bzw. JavaScript-/Geo-Beschränkung; Inhalte nicht gelesen und nicht als Beleg verwendet (North Data: nur WebFetch-Erfassung, siehe G5).",
+      "status": "nicht zugänglich"
+    }
+  ]
+}
