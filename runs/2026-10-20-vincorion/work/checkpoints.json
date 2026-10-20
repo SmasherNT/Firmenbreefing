@@ -1542,9 +1542,2117 @@
       "dependencies": {},
       "checked_at": "2026-10-20T12:28:32+00:00",
       "fingerprint": "e4604c5f3ff9b07e50d0dddf039945567fca1595cf8975363cc06be67a6d40e7"
+    },
+    "market": {
+      "stage": "market",
+      "checkpoint_id": "18ed71b722a8443d9d6634e8442029ca",
+      "inputs": {
+        "plan": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/comparison-plan.json",
+          "sha256": "c640cdbc602a4e87a593396b2708d453292fd57345c7e1850086ae74c4f293d7"
+        },
+        "portfolio": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/portfolio-facts.json",
+          "sha256": "1056a050783dd5717966b759f30024dd511899c21dd93ed1be8d26dd3dff2ca4"
+        }
+      },
+      "outputs": {
+        "module": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/market-facts.json",
+          "sha256": "dd43d0d27efb0eba05ed08a9f42dac76abcc67cc74441cca01841a35209305b2"
+        }
+      },
+      "code": {
+        ".claude/agents/market-facts-analyst.md": "8215d56f9eb2c17e822d62e88ccbcdd20df2f0f658879d981f81964f5a37b4d3",
+        ".claude/skills/facts-briefing/SKILL.md": "9053f6781d4651bd029750c909ef640367288958d1239fda324248f9226d2175",
+        "CLAUDE.md": "83adf93634329e070c1fe736434df733522e565af65802d4d4d94222bb62114e",
+        "references/ausgabe-html-v2.md": "733a6427b3612442bf9ff197bdaf30a55c79b9d58dcf7b6c18741181a6815bbc",
+        "references/briefing-struktur.md": "6dfd7d0b6d9bfa3dcc68101e311ff93386cd03792356c90de6bb49597b9a6167",
+        "references/capability-matrix.md": "fa260d63c8c6d01bfe3b42477f483487eb340753232bbdfe3e667ea09e6e5915",
+        "references/cluster-quellenkatalog.md": "52d1c09bd8ce07524065aaa38a45f673eb68feb6fd8e9e6c6fae2e27fc53a1ea",
+        "references/cluster-recherche.md": "91af7a5e12dd6ceda4eebc8a84e226e809eaf963db83892795d4f738c6ec68ca",
+        "references/datenvertrag.md": "a1ba9d4bbe54a46e72934cb541a4c30462342d4c3f094d10735acd161c0478a0",
+        "references/defaults.md": "2d90192a379bd1a7b2dc051f411effc5417abf5c30d7290fa9eb49623fc337f2",
+        "references/executive-summary.md": "370b09867b079fd4d2f85336d6026f61f6c9c547a5bfba7b5f17efc9275171a3",
+        "references/faktenphase.md": "fcd5b65910b7ef5f939e56f4d889e277ddde19dfc3c05986ce2613c61a68bd9c",
+        "references/fokusseiten.md": "539a0b9049e3f19a9ed6529c0c9f75e5179f493c2dd2a9f90b9efff6ff45b6ef",
+        "references/gespraechspartner.md": "c291ff83b164fbe45357c5d0c349f9213a8d350e2bd8368a62e0f49cf5f9913a",
+        "references/interpretationsphase.md": "c9fd9b97090863df4140564015176ab68da79db1e8ade049fe279d7c030733a9",
+        "references/lauf-wiederaufnahme.md": "bc641cf6c1ebd3603d0c4187f656ab90f0e1fb1f29d55a3f79d169ff262717e4",
+        "references/legacy-company-briefing.md": "115653dff47e664cf2c1610ab8f04d7c986babf77d2e15cb81f4ffcbb0debd37",
+        "references/legacy-html-output.md": "8c73f16f146c1c6dc806a61929bf2d55ab833759bff5da38ce9f35ffe6a886b3",
+        "references/markt-deepdive.md": "ee2b7abe853bd3e6d498a02f95df4f34eff07a6b2fc2c1009a912955fc4835be",
+        "references/modellaufteilung.md": "11156474e0deb4a1d5b41f831b2f3cbd5ff983f0ba1be0d5d9b8711e28c1c3b3",
+        "references/modul-keyfacts.md": "d9f0e3acee641e3736e6fe9861df336b9378c73dd59d3bfc1d9993e39e76f788",
+        "references/modultest.md": "c10cf29675dac6d0b363d2ddddd42bb72dee33afb05bfa1df96dc71bcb88939e",
+        "references/netzwerk-html.md": "6fc27498f6bd2bc6afaf3daccdc3c47e88fb5737a535585b979e545ffb091b60",
+        "references/parallele-quellenpruefung.md": "9b186934d97dd3152c9bee751ce164ff9b20bd4cd111a0aff06ea10409c887b8",
+        "references/portfolio-darstellung.md": "35ec6335707a1d672b2ecbd1599ba33d46f077e2e81e4121122481554fc5ff3e",
+        "references/pruefauftraege.md": "c6d9233b5717c3414135c23d0ec49ea471b66ac642d29675ca7f786b819d9196",
+        "references/quellenpruefung.md": "28c57fd0bbb1ef809f1cb3850b4063b5c1a3595938c8ab5ea9dcfbcbf142bfaf",
+        "references/recherche-wiederverwendung.md": "ff24537378b235bada15e0b81d8c18af0ba51462419d70af59d1087643f376c1",
+        "references/regionale-praesenz.md": "e672c4a9b450c1cd68c673492a085eaf75e52e38835707307a9339b764c3bb16",
+        "references/setup-check.md": "45f3f1f90384833d0a4eed5ed59204e666ea90573950684fea91e562fa7f4e93",
+        "references/themen-darstellung.md": "4b41c9edcf6ccc49473bd5af0b4403341ed33d0696046c67ad3b4fbf94d09d4c",
+        "references/uebergabe.md": "c202b3f442f8c5481d022d25a6222e1e30d4c5ccbabe1dc65e03f3e421536430",
+        "scripts/check-review-data.py": "7483c14d9b7c122dbbdaf2c25b5d7e2aa90f42f3df4af2829c59d1f5e77d0052",
+        "scripts/prepare-facts.py": "8a26c7f432f58d9d523f8ca5a3588ef222f9ba11c8aef4665fdf583b7f12776d",
+        "scripts/resume-run.py": "768a603a746bd147daa0df1bc584f7cbc69142ab9985d0189d14e1db01442161",
+        "scripts/source-cache.py": "267092e431187b7a6cdd5f4bb051ad8b84fa2a07bf479a441738b5c623bb7eb4"
+      },
+      "sources": {
+        "S-033562504c480370": {
+          "source_id": "S-033562504c480370",
+          "url": "https://www.airmedandrescue.com/latest/news/leonardo-selects-onboard-pegasus-rescue-hoist-aw139-fleet",
+          "content_sha256": "234b881279dac3b7f3ec572a5895389e11b344ec4c2e7a5130f4cae98c8ac5ba",
+          "text_sha256": "a8119cf0e4f093f3b9a53a8d0edc94832b361a1c6745279e872bea345d2db2c9",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-03d7ff221e65f6c3": {
+          "source_id": "S-03d7ff221e65f6c3",
+          "url": "https://esut.de/en/2021/11/meldungen/30686/neuer-vincorion-standort-in-el-paso/",
+          "content_sha256": "828606b28cfdb98a77d00890dd93e8b6c7578d37c8a578599df0ae024629f12f",
+          "text_sha256": "4f5ada0dae97cd132b42eee16f5ea4e07abda878783ed515b7e052129b7f6be9",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-0e49f2bddf946124": {
+          "source_id": "S-0e49f2bddf946124",
+          "url": "https://euro-sd.com/2025/12/major-news/48310/spain-orders-100-helicopters/",
+          "content_sha256": "43ea2722b30f2a14b71238fc03b8f6c518922ddd0be00e1e35c32e6fbe08892c",
+          "text_sha256": "9c74d19fd4b381b1532d11e69ad2752a23a1bb027b9e3cbae5a3a94c9ba98ecb",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-1386ad7ef888f055": {
+          "source_id": "S-1386ad7ef888f055",
+          "url": "https://www.mobilityengineeringtech.com/component/content/article/28394-turret-aiming-and-stabilization-system",
+          "content_sha256": "3b8e4190ec5fc755fb960137551b32ad929476e65c153031963b8142a546ef3b",
+          "text_sha256": "86fd5a54fc8691cc439e13e20e5eedfe1cfb342c5c52d7fe75d379afe5ece662",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-1489f29cb8fa3d34": {
+          "source_id": "S-1489f29cb8fa3d34",
+          "url": "https://www.militarysystems-tech.com/articles/leonardo-drs-board-vehicle-power-system-shines-major-us-army-evaluation",
+          "content_sha256": "9ae0f9f636ae498460fe266bd6af6e81223f50e208b936abbfa49b194530abfd",
+          "text_sha256": "818d9bd1e8651da2c62a3cf9188e09ffc36a00bd467c6e6df7e74a5373d82596",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-1aa8f95b2599facc": {
+          "source_id": "S-1aa8f95b2599facc",
+          "url": "https://vincorion.com/en/large-scale-weapon-stabilization-gtd-chaser/",
+          "content_sha256": "80b4d9b82bc7ce3b6b0fadc5315a559030569dd8a74d1a8de419d95f0d398cd5",
+          "text_sha256": "06e0b722e0db4ff8c992e8fd0c5cdc7cff1f4b081b3b4a5d6b4e7694248c6f7b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-22341c86325e820e": {
+          "source_id": "S-22341c86325e820e",
+          "url": "https://asiapacificdefencereporter.com/posts/curtiss-wright-completes-requirements-for-australian-turret-drive-stabilisation",
+          "content_sha256": "5b85dc225328dd98e17f9129ea42ce4bfe5c320a54d1c72ed880efeb85656a44",
+          "text_sha256": "9cfabc48d6b774df2a6d9c1c8777fd2782b587bcc0354c242cd7b70b89ff9b94",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2b5d1f5751bce5a6": {
+          "source_id": "S-2b5d1f5751bce5a6",
+          "url": "https://www.tagesspiegel.de/wirtschaft/verteidigung-knds-erhalt-bislang-350-auftrage-fur-neues-leopard-2-modell-14989796.html",
+          "content_sha256": "d1eca9c1c19f1c543003d2f4da1ceb62a91e4d49fac354c30501d58d8c970016",
+          "text_sha256": "933843edfe9ac0597032c3c4d63265cf5f5860fa340eeb9aed37f619e5496107",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2b6c91a582f6386f": {
+          "source_id": "S-2b6c91a582f6386f",
+          "url": "https://instagrid.co/blog/instagrid-unveils-tactical-power-system-go-mil-at-enforcetac-2026-following-successful-deployment-with-the-german-bundeswehr",
+          "content_sha256": "baa370d7d26cf447f1282d23812560647a4614f13227e751092d6f7a2a25622b",
+          "text_sha256": "3dbc5d5ae5ccb3658fd5f345691193339dcaf730e981891c0a8a6c447fe63c92",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2dd5d59675c0404d": {
+          "source_id": "S-2dd5d59675c0404d",
+          "url": "https://www.militarysystems-tech.com/articles/army-vehicle-modernization-mounted-mission-command-and-onboard-power",
+          "content_sha256": "286792e25d799db6e3f6f929cbc82104cddbe1d04d6385d40a13c39ef7897649",
+          "text_sha256": "d87ec3f21dbbd2beff3b822cb084a9eea8b4777631d69d8b65d3795c448fe180",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-34e151b8f9f56d7b": {
+          "source_id": "S-34e151b8f9f56d7b",
+          "url": "https://fragoutmag.com/leonardo-drs-advanced-vehicle-based-power-generation-capability-us-army/",
+          "content_sha256": "491b3005a8575812b0089bb43ccf75a4c6dd84a9597870c997712eed213f4b6e",
+          "text_sha256": "97f0d903938f142e98f00b1241ca21d34f44f56ef7cb9a8d74fdf6e7f48b0f6e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-3dbea8c3b38ded55": {
+          "source_id": "S-3dbea8c3b38ded55",
+          "url": "https://vincorion.com/vincorion-ausa-washington-2026/",
+          "content_sha256": "05588f1ce968a08f4f50fe674df147a9680a49395bdc2a3a3e62e99aebca27d6",
+          "text_sha256": "abb7e79335c0e1e331448884e8cc13ecc7dfdfa096b851cc7bc0d498fa4715d3",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-41c8e325d744de3f": {
+          "source_id": "S-41c8e325d744de3f",
+          "url": "https://hoist-winch.onboardsystems.com/mro-facility-opens/",
+          "content_sha256": "d95e7a0a155d3959dc19c11cbe60dfa4fe42eb30f551d19f7b50719cef603634",
+          "text_sha256": "d280945887f34f9180f7daa490a48c650323dc518fa25a5b0370c2dd17d56e3e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-4425857ef283fad8": {
+          "source_id": "S-4425857ef283fad8",
+          "url": "https://www.vincorion.com",
+          "content_sha256": "68bee4b4f5290e92c6961e31af48ba7cecf075ff073c7b3dc9f82518b02c39aa",
+          "text_sha256": "558d9496307767fa4bb02400c968c3cf47e398018276f88498f76855a6df273c",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-497e00ffcba5a802": {
+          "source_id": "S-497e00ffcba5a802",
+          "url": "https://vincorion.com/energie-fuer-europas-sicherheit-vincorion-auf-der-eurosatory/",
+          "content_sha256": "3bc44886339c65526b795cdec0bf0df0ded5696ba5a7638edc187fe7af9ceafc",
+          "text_sha256": "5e75f9364a498f845daf836ed63bca077276a637c05d7cd5ec3921af23c862e3",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-498be168b3d7e76b": {
+          "source_id": "S-498be168b3d7e76b",
+          "url": "https://esut.de/2025/12/meldungen/66092/daenemark-ordert-weitere-feuereinheiten-iris-t-slm/",
+          "content_sha256": "fbc4e59557764b83099d371028833138a23fbd7135693baf0be3963829f0c040",
+          "text_sha256": "7d5718f8ef10aec6ce883e7af87ece9b8ccaa823dd5dd74c4c1fe6725bd7bcda",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-53bcc5e6f20b82f7": {
+          "source_id": "S-53bcc5e6f20b82f7",
+          "url": "https://vincorion.com/aircraft-systems/special-products/",
+          "content_sha256": "735b6f2eecf099fc844a8c1732fb2ded270209a1940e9fa468da97c0b9aa9d2a",
+          "text_sha256": "a26c869962f858476535bdf17e818afe49f8b7e24dece5ef623ee246b3828023",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-570ee7bc8cbb2ed7": {
+          "source_id": "S-570ee7bc8cbb2ed7",
+          "url": "https://vincorion.com/services/lifecycle-services/",
+          "content_sha256": "d9b29530cd06e7e2120fdc46824cab43826bdebb54b7fcf61c6ff204baaf6f6c",
+          "text_sha256": "4e94a802dc5f04e0d550c75cd9e25a0e0f2f237d16d04b482291ec6c36a7adf2",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-5d3486ad638df03b": {
+          "source_id": "S-5d3486ad638df03b",
+          "url": "https://vincorion.com/vehicle-systems/stabilization-systems/",
+          "content_sha256": "2f4b314463f1d5460efdd6db2d8149de1c8363ebc10509720a2ade39a898530a",
+          "text_sha256": "21123ae672d55da3d904f014b788f9b102597fa8e46b7169bafa4fe135c2390a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-60403080e91bc8d5": {
+          "source_id": "S-60403080e91bc8d5",
+          "url": "https://vincorion.com/services/logistics/",
+          "content_sha256": "783baba35738c3a12c72d4df0fb524f0e6f5afe279362a183876d5f4a4ca5161",
+          "text_sha256": "92cb447af8c7e7eb001319d82edeac36ea6b94e3ccdc10dd8f932657c3baddfe",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-65b4796258a315d9": {
+          "source_id": "S-65b4796258a315d9",
+          "url": "https://shephardmedia.com/news/defence-notes/vincorion-opens-new-us-site",
+          "content_sha256": "c36e48bf4b55e2ce7b791d6aa178d78af157d8127e0a0f5ae9726f612b144f6c",
+          "text_sha256": "492827696155e6efaa4e1b2b9431d27a7ee44041bb81345fdb2169ed5c48f73d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6774a8ff4bfbe570": {
+          "source_id": "S-6774a8ff4bfbe570",
+          "url": "https://www.mynewsdesk.com/uk/saltwater/pressreleases/fischer-panda-uk-secures-major-defence-contract-3272380",
+          "content_sha256": "f8b406ef39ec1b32e5ceb7a3dfc47f3bd298668e26cda8d3f667f880b7a744dd",
+          "text_sha256": "976d7bdf055d06641d2670ba2c3dae611cf794c4160c4805c3a60800ab40a0c0",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6888cb6ccf8cb794": {
+          "source_id": "S-6888cb6ccf8cb794",
+          "url": "https://eejournal.com/industry_news/curtiss-wright-addresses-high-voltage-power-requirements-for-u-s-ground-vehicles-with-high-voltage-turret-drive-system",
+          "content_sha256": "a9641ae36266b89799842fac05f50f455f8ec93e7031502a6419072620e1027f",
+          "text_sha256": "342e3b5e7c2916c43f8ae719e8e8af72c1e666c2c129453f9a28ed0c45d3a084",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6e6d85a309774afc": {
+          "source_id": "S-6e6d85a309774afc",
+          "url": "https://vincorion.com/en/vincorion-awarded-major-contract-for-generators-for-the-boxer-wheeled-tank/",
+          "content_sha256": "1a35d81423cffeea22c7c51646ccc0b244bc3ed081517f03d8cd1fa49a4a2b9f",
+          "text_sha256": "16bfc64094bd843a45918a093d169b538822cd8c4a79bfc7f333fedad7696d14",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-74f313ac4d339267": {
+          "source_id": "S-74f313ac4d339267",
+          "url": "https://vincorion.com/en/operational-superiority-with-state-of-the-art-logistics-vincorion-introduces-next-gen-power-for-air-defense/",
+          "content_sha256": "bc10ab43c8e8ed98c08c42d9d968e82a24bd63493119aced12d125f9577c60e9",
+          "text_sha256": "05b26160ea1aac6a11b8e3bc081d0e409c7d47e732c122ac9a20bbf8c6cd279a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-762e72ba2f88c34a": {
+          "source_id": "S-762e72ba2f88c34a",
+          "url": "https://hoist-winch.onboardsystems.com/leonardo-selects-pegasus/",
+          "content_sha256": "f3d0652b0a6b8f6ed47b1e97d350bcb23efcd796b6a22916e4870c270fd9eaf0",
+          "text_sha256": "ebfa38afe7a7e7bca83f63cc571708a2666c71a9220494c31fc8b42e852d2242",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-763b90a8ac782ec3": {
+          "source_id": "S-763b90a8ac782ec3",
+          "url": "https://www.moog.com/products/turreted-weapon-systems/turret-stabilization-fire-control.html",
+          "content_sha256": "cd9f187fa6476db85894b032d858f0aafe33ad839a7d335b6b2dd6847a426b68",
+          "text_sha256": "33b71c1630041f8ef3a8724299964152a163f694070bd5c70d44e463f81133fd",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-7bc3da69386f5632": {
+          "source_id": "S-7bc3da69386f5632",
+          "url": "https://esut.de/2025/10/meldungen/ruestung2/64254/25-millionen-euro-vorlagen/",
+          "content_sha256": "fb9687c4951afc8654cb873ef319ed4068958b37e21e6a75d47aa5ffaac39f63",
+          "text_sha256": "9bae9ad6ec2d0a43e73db172287c19b9c24feb78540c83244e6055e34553068a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-81f9be39223c032c": {
+          "source_id": "S-81f9be39223c032c",
+          "url": "https://vincorion.com/vehicle-systems/",
+          "content_sha256": "c9eb3cf2483ad2ee991cae266319edba961ed972b1248110932346084dc11a3d",
+          "text_sha256": "26fb429ea02ec2606b9959204526a8c318aeee7518aa5bd997cd9e5b8ab9b37b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-82e92fcfda288787": {
+          "source_id": "S-82e92fcfda288787",
+          "url": "https://militaeraktuell.at/instagrid-praesentierte-go-mil-enforcetac-2026/",
+          "content_sha256": "58d38927d8c20d01a4dfc654107f9566fbef030a00bec7448b356406bf4792ca",
+          "text_sha256": "8a6364a735f5abd2927ee50b86c094ef2bdb9ad5dd4d429ecf8c665edc343703",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-83243f19a7cdac3d": {
+          "source_id": "S-83243f19a7cdac3d",
+          "url": "https://www.breeze-eastern.com/hs-29900/",
+          "content_sha256": "51510265c3f8eb6aec1587963ca445990e553139e04fd464607cbbdee9d39102",
+          "text_sha256": "c1b6fdb2a6fe0fc27ff6756b0d8d9b98c82713bfd4ea6ab558f2b3fbffbb299e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-83c5f88e2f7ce1c7": {
+          "source_id": "S-83c5f88e2f7ce1c7",
+          "url": "https://vincorion.com/aircraft-systems/hoist-systems/",
+          "content_sha256": "22f83e6d1672551f0f6b426f1dc5db38ed69e7997081d58acd256d4976d85c06",
+          "text_sha256": "128e28021685e0eaae40d3efc865d5e5ee8cd479f5f11aab6fcd9bb288fbe552",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-83f92f2cf0494e24": {
+          "source_id": "S-83f92f2cf0494e24",
+          "url": "https://vincorion.com/en/vincorion-switzerland-patriot/",
+          "content_sha256": "6f770d61951d03bce20842d386dfae176418bbd807ed751d19b63649ca551e6b",
+          "text_sha256": "6c7a49e8e31fcb1127f76e19d0675346a254a7215116ab652e92e4a11bb7d1fa",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-84325599aa18c073": {
+          "source_id": "S-84325599aa18c073",
+          "url": "https://esut.de/2024/06/fachbeitraege/50687/vincorion-und-der-leopard-2/",
+          "content_sha256": "431d46de09fd60e9670deab248d9af470086ab497aa7dd9e4dccc4ed6775e7c6",
+          "text_sha256": "7a353a89723062d2e50667908b8a342314314cfb0e651ecf9c2cc31db9259276",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-87f21a2765c8e7c7": {
+          "source_id": "S-87f21a2765c8e7c7",
+          "url": "https://www.nasdaq.com/press-release/curtiss-wright-awarded-contracts-rheinmetall-provide-turret-drive-stabilization",
+          "content_sha256": "59a8ef8fe8e9154121ea6a55f249f7dcd34ec32dcff3dfb63efcd70e484556dd",
+          "text_sha256": "fe87e48b517fcb806499176d39bae9278519cce25278dc75c5a7dd2690fb6ce1",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-8c2424c1c883ee90": {
+          "source_id": "S-8c2424c1c883ee90",
+          "url": "https://vincorion.com/mobile-energiesysteme-sichern-zukunftsfaehige-einsatzszenarien/",
+          "content_sha256": "4392e5a2b9183c0cd32649a96c67c2c0773e392d9677b2c228597fdea2befe8b",
+          "text_sha256": "87ecc79f2c2d7052f21073538c1d3d00611225212be6c84c3d8b4ad27b3ec153",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-8d6c7e86f7a28760": {
+          "source_id": "S-8d6c7e86f7a28760",
+          "url": "https://ir-api.eqs.com//media/document/1b9d9c1b-2549-4a15-8725-3977bc99af72/assets/DE000VNC0014-Q1-2026-EQ-D-00.pdf",
+          "content_sha256": "78a59af917972562c6d1bec795af47f7737e57646550ceb8214907b48fbe6ce2",
+          "text_sha256": "278f834cf723773f33a5f240497fcb609bcfc1889df26fb46ca55da75d260b17",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-911f31a79239eaca": {
+          "source_id": "S-911f31a79239eaca",
+          "url": "https://knds.com/en/press-releases/reinforcement-of-the-bundeswehr-s-puma-fleet-rheinmetall-and-knds-deutschland-to-supply-200-infantry-fighting-vehicles-to-the-german-army-contract-value-around-4-2-billion",
+          "content_sha256": "d42d28533137da90e9013ad8a761ecbaa31ab1ae64938c97ed181a43d4679c3e",
+          "text_sha256": "81b222ebd3dc5036eabb8ba27fb57d60ccd6f3a934886b252ca3db528243e8da",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-9227186ed7938c55": {
+          "source_id": "S-9227186ed7938c55",
+          "url": "https://hoist-winch.onboardsystems.com/hoists/",
+          "content_sha256": "b98df06ecbb097f6db48047773d9d4dbb09ba4c1e9e897ed89c570540f7b1ee5",
+          "text_sha256": "43120bc4c1135be70340b1eb1ff122ce988160d241464f75d2f13beddbf05fe0",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-945a20788677cd82": {
+          "source_id": "S-945a20788677cd82",
+          "url": "https://militaeraktuell.at/en/diehl-vincorion-supplies-iris-t-slm-with-energy/",
+          "content_sha256": "6bf3cbbd1973c172aec8e9617fb3d7648cbe0af5b5e50571c1cf92807bdb3d87",
+          "text_sha256": "3a65f70a3e7c3e653fb9fb5ba8a847396052584800eeb2b719aa40311386e26a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-9670ee4232da6c72": {
+          "source_id": "S-9670ee4232da6c72",
+          "url": "https://ir.vincorion.com/media/document/0f2dd31d-9994-4d99-9b4f-9bfc77e5e5f8/assets/2026-08-13_VINC_HY1_2026_result_presentation_final.pdf",
+          "content_sha256": "a77cc2b97c03a1b9ee803efa4adcc779d93732f3b6db847b2b83cfa31a87fae9",
+          "text_sha256": "5c2eb1ae5fb765719ffd3e8d17e38aacab0abfd0fa9ee3b8acc7d09ee072b1bf",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-9948d40c2fb37d43": {
+          "source_id": "S-9948d40c2fb37d43",
+          "url": "https://vincorion.com/vehicle-systems/energy-systems/",
+          "content_sha256": "f72e2a3b6448a2224c596b9f055dcc2c5f93d26fa102d490e5d3975d2b4680ea",
+          "text_sha256": "744f8e9cc29a776465b0461b11af87ea1b455c84ed8517966c2f35bcce71be5a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b168fbe6b6465626": {
+          "source_id": "S-b168fbe6b6465626",
+          "url": "https://www.boerse-express.com/news/articles/vincorion-aktie-pulse-lines-gegen-auftragsstau-932243",
+          "content_sha256": "73e7a9a8801c56f55849ce0061e7049fd476abbfd833a93c7c0b6e2f4bd6b5ee",
+          "text_sha256": "b31eb4010958944c2b38f6ca328e3869f176f2d9a85e0e9945f8709134d7ead5",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b3f0167ab422975a": {
+          "source_id": "S-b3f0167ab422975a",
+          "url": "https://vincorion.com/power-systems/",
+          "content_sha256": "863510adb82abd28649fcd057b8615759612d01820548f48625945643199c857",
+          "text_sha256": "19eb402fd6ef2f61d4fded9cad2e3b4ef0fefdec4e3d2c6c127098f31c77ea6c",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b46ae9b4a1b7e77e": {
+          "source_id": "S-b46ae9b4a1b7e77e",
+          "url": "https://vincorion.com/services/knowledge-and-training/",
+          "content_sha256": "3cd088641e010f978ea59c10fc5e7b4ffdfcae4492173e64835bf83a3fd81a39",
+          "text_sha256": "a66da27fbc16f8275e3e190da2abbbfe4ed0e0861b7f61aaac365f64fce0fe72",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b87584cb356cf171": {
+          "source_id": "S-b87584cb356cf171",
+          "url": "https://ir.vincorion.com/media/document/bcf3789a-c391-49d7-85cb-31b54cd81fd6/assets/20260506_VINCQ1results_presentation_01.pdf",
+          "content_sha256": "f77c67cecdf3eccf8b5c98a5c0102062eb6bb99c222d9119d896619c5a585c3a",
+          "text_sha256": "a0aff4eea25d1f723197f67686d059907b4d16af8b418686d77603fc89439334",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-b8bbd90710a297a5": {
+          "source_id": "S-b8bbd90710a297a5",
+          "url": "https://vincorion.com/en/patriot-maintenance-million-contract/",
+          "content_sha256": "0ca0e4fccb53fd006d103e0c8a13ac83e017662464259347d0d220b127a03eb9",
+          "text_sha256": "58a9d4cd4d4d143a91c9d12abe28e247b54e8e829cf118123de382fb0224996b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-be4a4ed066ec245d": {
+          "source_id": "S-be4a4ed066ec245d",
+          "url": "https://vincorion.com/vincorion-steigert-umsatz-und-ergebnis/",
+          "content_sha256": "05120d6f041ff9c08f74969a77e944de2c3045a5b3f1474d7a78f0f0b62a65b9",
+          "text_sha256": "a4aa85b12826ffbdd2137ab633ef93da9a6f938af5d0f08915b68acc2f66cee6",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-c23d11c7e0c54dbb": {
+          "source_id": "S-c23d11c7e0c54dbb",
+          "url": "https://esut.de/2026/03/meldungen/69375/sofortbestellung-patriot-und-schakal/",
+          "content_sha256": "f5dafd7f8ea78de398d4a945fb508966fc873fb0cc82c14d0e0dce554237be10",
+          "text_sha256": "a1b6ef356101fc573d87a994cb438df63755c9d9126ac4481af45d0fcfbc21a7",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-c757f1378f7cb8e8": {
+          "source_id": "S-c757f1378f7cb8e8",
+          "url": "https://vincorion.com/ueber-vincorion/",
+          "content_sha256": "37d3692aec29db9b940cd86d8c202d071640a43b4b64d7323657a60d922327ad",
+          "text_sha256": "5ad312f0f2f7e4e2334f22e5262b486c79f11efa4121ae3de0ddf8714edd8605",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-cc02087fd9dc8a31": {
+          "source_id": "S-cc02087fd9dc8a31",
+          "url": "https://www.army-technology.com/news/curtiss-wright-subcontracted-to-deliver-tdss-for-kf51-panther/",
+          "content_sha256": "08e27ade8c1cf2364befab6aba9f84d6c403ab55936f7cdeaac91b4a9b24bca6",
+          "text_sha256": "5cd3e8bd78882410ee2f1ed8b05f3d0ca0ec76cb8c93b3fdba7e0a26021c5bd5",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-cc471b88cedc6672": {
+          "source_id": "S-cc471b88cedc6672",
+          "url": "https://www.heli-one.com/news-insights/heli-one-and-vincorion-intend-to-partner-to-bring-next-generation-electrical-rescue-hoist-erh-to-civil-and-military-helicopter-market",
+          "content_sha256": "2c7be0794e66686edb2ca851a6aa7adff207755b6ec577933b8d9d940f6c0601",
+          "text_sha256": "a0d2338fdac374b2d6fd0fd2881a943992261b8a4b774442066d40b436166893",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-ce00f9dbb3f39faf": {
+          "source_id": "S-ce00f9dbb3f39faf",
+          "url": "https://thedefensepost.com/2025/12/11/nato-nh90-netherlands/",
+          "content_sha256": "6cb771f95a045eef3810cea756bca35796a637c29da891579e89843d1b96a2e2",
+          "text_sha256": "9773c60a7ee6997fbb8ffa72ccf9f48aba889d59e56bba179ffed702441ba05b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-cf5da52d7e491be7": {
+          "source_id": "S-cf5da52d7e491be7",
+          "url": "https://esut.de/2024/07/meldungen/51431/weitere-vier-feuereinheiten-patriot-fuer-die-luftverteidigung/",
+          "content_sha256": "f347ef13300ce76a2532ea2d740f41397b376968be39b9a88ac44b50a69b1d8f",
+          "text_sha256": "7165fb899c2d10a09f0324d0d64534f0383737378910fe600a381342f8e6f72c",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-d0a2881113c61290": {
+          "source_id": "S-d0a2881113c61290",
+          "url": "https://esut.de/2026/07/meldungen/73223/vincorion-meldet-auftraege-im-wert-von-mehr-als-100-millionen-euro/",
+          "content_sha256": "2fea030dcb74ea72f5e37fc04f84237696c1f7918a0ad80e32ebed9c1743c188",
+          "text_sha256": "ac93b4f4da16ab59c5926a2665459e180b269cf04562c341430bca9c9d38c699",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-d0d2972eaed04786": {
+          "source_id": "S-d0d2972eaed04786",
+          "url": "https://de.tradingview.com/news/eqs:052883646600c:0/",
+          "content_sha256": "26817d8a53ee373b7401982b84a40b75340e6ac56b83f68844113e67994a598d",
+          "text_sha256": "8c796335b08de7184a982360d6443821f5e7d8ec8e655a9ada5601a7f70a5bdf",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-d0efd24bcbc15570": {
+          "source_id": "S-d0efd24bcbc15570",
+          "url": "https://vincorion.com/services/",
+          "content_sha256": "965e016c257a38cffeea614e623725e7ba7aa36128ae3ef5ce6a7fcef4ddccb7",
+          "text_sha256": "758b1e45eae6f3c62bc12b6a985e062339b997dfd99f705153615a6c8fd74925",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-dc13a62f8aaefe56": {
+          "source_id": "S-dc13a62f8aaefe56",
+          "url": "https://www.aviationpros.com/aircraft-maintenance-technology/aircraft-technology/maintenance-providers/helicopter-maintenance/press-release/11299951/breeze-eastern-corporation-breeze-eastern-secures-37-million-contract-for-advanced-rescue-hoists",
+          "content_sha256": "c40f121918279f6ec335b023e8ae8524824828eda417b8135c6a43cf6ccd2cc5",
+          "text_sha256": "13369c0a0ac6f7ee6288b910381e8db52d6d53368ab6f2edc65d87f9161f8f9d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-dd0084d15f0763e9": {
+          "source_id": "S-dd0084d15f0763e9",
+          "url": "https://www.helis.com/database/news/pegasus-rescue-hoist-leonardo",
+          "content_sha256": "5db77d26f981f4d32ea1a1c7f2670ea1e60c6cbd27aa4000631bff69dbd7ddc8",
+          "text_sha256": "f1f6b0e7e9c58a2c806db3931ff1080becf6a9182e98e15c58bede2cf1e9b3ca",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-e1deeb15ad1f4105": {
+          "source_id": "S-e1deeb15ad1f4105",
+          "url": "https://vincorion.com/power-systems/tactical-power-systems/",
+          "content_sha256": "3be98665c27d1390be9776fffbfd1e6fd8938f52b3603ced6e6017727fb27a43",
+          "text_sha256": "a7f1580266f6f27d0826b671156df24634ddc8254deef2ffe591a31cd1e00437",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-e6d4f9c56a8f6ac9": {
+          "source_id": "S-e6d4f9c56a8f6ac9",
+          "url": "https://esut.de/2025/12/meldungen/66279/20-weitere-leichte-kampfhubschrauber-h145m-abgerufen/",
+          "content_sha256": "0582e3447e7c7a3b558459639dcf8ac6d29c62b543c7c3a1ad8ae4f3ddc53e4c",
+          "text_sha256": "910f3e7f92c09b5a6f0b7cbcd328f352751ead93853c4bd282589d3d66b19821",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-ea665c3b5913031c": {
+          "source_id": "S-ea665c3b5913031c",
+          "url": "https://www.webdisclosure.com/press-release/vincorion-se-etr-vincorion-plans-initial-public-offering-on-frankfurt-stock-exchange-cXxkDYxUa4t",
+          "content_sha256": "48ee8be89932a14afa6aa4c17faf20527feb81a803945b62dd5df89d7b9c81fe",
+          "text_sha256": "5cae4aa942bb5695d41983ea121df37889cd3590c5440df4c07a944930b5a3ee",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-f5bf30dfbbbbe817": {
+          "source_id": "S-f5bf30dfbbbbe817",
+          "url": "https://strategic-technologies.europa.eu/step-results/step-stories/sentinel-autonomous-energy-solutions-military-camps-and-tactical-operations_en",
+          "content_sha256": "9d964da691e14a68eb8900f3a7b2b9fc5031b6b75cc48cee5ea96c4b64648df4",
+          "text_sha256": "36069358077e59c8255f710eaa88048c34b1b99989c129ffeeadb952cbec962a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-f942f17095dddde3": {
+          "source_id": "S-f942f17095dddde3",
+          "url": "https://www.defence-industries.com/index.php/pressreleases/signia-aerospace-completes-acquisition-of-goodrich-hoist",
+          "content_sha256": "0f813c177042b3fd97ba7756f3e566950fa6a8ea9311c7bb755b17ec6f6a6fe5",
+          "text_sha256": "259e765c0356ed70c06aaca41500f7f56e88ae94a636df13d254709526a45417",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-faafad3dafb1ee13": {
+          "source_id": "S-faafad3dafb1ee13",
+          "url": "https://militaeraktuell.at/vincorion-investiert-in-standort-altenstadt/",
+          "content_sha256": "a6e40c6e85b4123642adb55439e60674f85b09c5e4648d94c77fee5fdd7d4ec4",
+          "text_sha256": "e73a71d677eb6bcbcd19910a4ec16fcd54d4034c547177a9167d2b3e2726a75e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-fc1cb698358d5e90": {
+          "source_id": "S-fc1cb698358d5e90",
+          "url": "https://vincorion.com/power-systems/air-defense-power-systems/",
+          "content_sha256": "887bfbac8628279874837fadcb0bd6dcedd784f48bf4d467654fc2aab54663b2",
+          "text_sha256": "005064d45f845eae3cca1d1c45af08a3dbb557b7b8e31d9c4bce0be515fbd16b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-fc700fac0eba154e": {
+          "source_id": "S-fc700fac0eba154e",
+          "url": "https://vincorion.com/aircraft-systems/",
+          "content_sha256": "7af038aa3d83e98c97362dd787c2b53cf79bdb32c92961966d27b222471f8f59",
+          "text_sha256": "2c21f8406ee7c80c57711bad6a2d465e2c80daa27fd1945dab8649acca3d7c5d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-fc98b1be625dfcf4": {
+          "source_id": "S-fc98b1be625dfcf4",
+          "url": "https://vincorion.com/aircraft-systems/auxiliary-systems/",
+          "content_sha256": "25eda596416361c110bbd4baf0925e736c5d7b7a2b334a320cf00a28d628717a",
+          "text_sha256": "1563d4858b911cc1fd2c50258337a8131c32070725db1ec335e036dfcc786394",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        }
+      },
+      "dependencies": {
+        "plan": "a152b1e06cd1247696e8ba7f0042d3cbc6f4b1269235c291e838b05751b04f31",
+        "portfolio": "d3f674c6788044fce8caa4c918d55d4c90c2e03a63ccceecfc11f74d2434d381"
+      },
+      "checked_at": "2026-10-20T17:10:00+00:00",
+      "fingerprint": "f7e13626d6eeddc8cdab983603557af88f4ee263401201dbd5c098d8a3f0243c"
+    },
+    "facts": {
+      "stage": "facts",
+      "checkpoint_id": "8e90926bfa7a45e3ad361f300887a9cb",
+      "inputs": {
+        "context": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/context-facts.json",
+          "sha256": "36ed7bf6c12b688ec754776f47587f4f51bfd929fbecae1cacb3c32bfd6b6a23"
+        },
+        "portfolio": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/portfolio-facts.json",
+          "sha256": "1056a050783dd5717966b759f30024dd511899c21dd93ed1be8d26dd3dff2ca4"
+        },
+        "cluster": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/cluster-facts.json",
+          "sha256": "dfad5503bc47130a39a07aa5d0b85eda3d53da925c5165487efa1d8184427903"
+        },
+        "market": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/market-facts.json",
+          "sha256": "dd43d0d27efb0eba05ed08a9f42dac76abcc67cc74441cca01841a35209305b2"
+        },
+        "focus:wachstumsmaerkte": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/focus-wachstumsmaerkte-facts.json",
+          "sha256": "2c0e4a643b1ea37d8a4f2ac2bde2438fe72c7a17ab9231d9ea18c1ae60d9eb4f"
+        },
+        "plan": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/comparison-plan.json",
+          "sha256": "c640cdbc602a4e87a593396b2708d453292fd57345c7e1850086ae74c4f293d7"
+        }
+      },
+      "outputs": {
+        "facts": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/review-packet.json",
+          "sha256": "c700781adc05934c1910eaf416f29bfb0d781e9fbeef5ba5081606165c7751b9"
+        },
+        "validation": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/facts-validation.json",
+          "sha256": "216cae103149f84aa587f9f785f6f1804750d3b285f103e6d188b1df6db1fe30"
+        }
+      },
+      "code": {
+        ".claude/skills/facts-briefing/SKILL.md": "9053f6781d4651bd029750c909ef640367288958d1239fda324248f9226d2175",
+        "CLAUDE.md": "83adf93634329e070c1fe736434df733522e565af65802d4d4d94222bb62114e",
+        "references/ausgabe-html-v2.md": "733a6427b3612442bf9ff197bdaf30a55c79b9d58dcf7b6c18741181a6815bbc",
+        "references/briefing-struktur.md": "6dfd7d0b6d9bfa3dcc68101e311ff93386cd03792356c90de6bb49597b9a6167",
+        "references/capability-matrix.md": "fa260d63c8c6d01bfe3b42477f483487eb340753232bbdfe3e667ea09e6e5915",
+        "references/cluster-quellenkatalog.md": "52d1c09bd8ce07524065aaa38a45f673eb68feb6fd8e9e6c6fae2e27fc53a1ea",
+        "references/cluster-recherche.md": "91af7a5e12dd6ceda4eebc8a84e226e809eaf963db83892795d4f738c6ec68ca",
+        "references/datenvertrag.md": "a1ba9d4bbe54a46e72934cb541a4c30462342d4c3f094d10735acd161c0478a0",
+        "references/defaults.md": "2d90192a379bd1a7b2dc051f411effc5417abf5c30d7290fa9eb49623fc337f2",
+        "references/executive-summary.md": "370b09867b079fd4d2f85336d6026f61f6c9c547a5bfba7b5f17efc9275171a3",
+        "references/faktenphase.md": "fcd5b65910b7ef5f939e56f4d889e277ddde19dfc3c05986ce2613c61a68bd9c",
+        "references/fokusseiten.md": "539a0b9049e3f19a9ed6529c0c9f75e5179f493c2dd2a9f90b9efff6ff45b6ef",
+        "references/gespraechspartner.md": "c291ff83b164fbe45357c5d0c349f9213a8d350e2bd8368a62e0f49cf5f9913a",
+        "references/interpretationsphase.md": "c9fd9b97090863df4140564015176ab68da79db1e8ade049fe279d7c030733a9",
+        "references/lauf-wiederaufnahme.md": "bc641cf6c1ebd3603d0c4187f656ab90f0e1fb1f29d55a3f79d169ff262717e4",
+        "references/legacy-company-briefing.md": "115653dff47e664cf2c1610ab8f04d7c986babf77d2e15cb81f4ffcbb0debd37",
+        "references/legacy-html-output.md": "8c73f16f146c1c6dc806a61929bf2d55ab833759bff5da38ce9f35ffe6a886b3",
+        "references/markt-deepdive.md": "ee2b7abe853bd3e6d498a02f95df4f34eff07a6b2fc2c1009a912955fc4835be",
+        "references/modellaufteilung.md": "11156474e0deb4a1d5b41f831b2f3cbd5ff983f0ba1be0d5d9b8711e28c1c3b3",
+        "references/modul-keyfacts.md": "d9f0e3acee641e3736e6fe9861df336b9378c73dd59d3bfc1d9993e39e76f788",
+        "references/modultest.md": "c10cf29675dac6d0b363d2ddddd42bb72dee33afb05bfa1df96dc71bcb88939e",
+        "references/netzwerk-html.md": "6fc27498f6bd2bc6afaf3daccdc3c47e88fb5737a535585b979e545ffb091b60",
+        "references/parallele-quellenpruefung.md": "9b186934d97dd3152c9bee751ce164ff9b20bd4cd111a0aff06ea10409c887b8",
+        "references/portfolio-darstellung.md": "35ec6335707a1d672b2ecbd1599ba33d46f077e2e81e4121122481554fc5ff3e",
+        "references/pruefauftraege.md": "c6d9233b5717c3414135c23d0ec49ea471b66ac642d29675ca7f786b819d9196",
+        "references/quellenpruefung.md": "28c57fd0bbb1ef809f1cb3850b4063b5c1a3595938c8ab5ea9dcfbcbf142bfaf",
+        "references/recherche-wiederverwendung.md": "ff24537378b235bada15e0b81d8c18af0ba51462419d70af59d1087643f376c1",
+        "references/regionale-praesenz.md": "e672c4a9b450c1cd68c673492a085eaf75e52e38835707307a9339b764c3bb16",
+        "references/setup-check.md": "45f3f1f90384833d0a4eed5ed59204e666ea90573950684fea91e562fa7f4e93",
+        "references/themen-darstellung.md": "4b41c9edcf6ccc49473bd5af0b4403341ed33d0696046c67ad3b4fbf94d09d4c",
+        "references/uebergabe.md": "c202b3f442f8c5481d022d25a6222e1e30d4c5ccbabe1dc65e03f3e421536430",
+        "scripts/check-review-data.py": "7483c14d9b7c122dbbdaf2c25b5d7e2aa90f42f3df4af2829c59d1f5e77d0052",
+        "scripts/prepare-facts.py": "8a26c7f432f58d9d523f8ca5a3588ef222f9ba11c8aef4665fdf583b7f12776d",
+        "scripts/resume-run.py": "768a603a746bd147daa0df1bc584f7cbc69142ab9985d0189d14e1db01442161",
+        "scripts/source-cache.py": "267092e431187b7a6cdd5f4bb051ad8b84fa2a07bf479a441738b5c623bb7eb4"
+      },
+      "sources": {
+        "S-01bdf37a77a6b3df": {
+          "source_id": "S-01bdf37a77a6b3df",
+          "url": "https://vincorion.com/en/vehicle-systems/land-stabilization-systems/",
+          "content_sha256": "9759f532ad57db6b8ba6d163acb152fe3d9becc4b7f926198a47190ab83b281b",
+          "text_sha256": "cdddaf659d9e5dde3544a4e0f2c730daeb92fb108985440e876844ed6f4aaf8d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-033562504c480370": {
+          "source_id": "S-033562504c480370",
+          "url": "https://www.airmedandrescue.com/latest/news/leonardo-selects-onboard-pegasus-rescue-hoist-aw139-fleet",
+          "content_sha256": "234b881279dac3b7f3ec572a5895389e11b344ec4c2e7a5130f4cae98c8ac5ba",
+          "text_sha256": "a8119cf0e4f093f3b9a53a8d0edc94832b361a1c6745279e872bea345d2db2c9",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-03d7ff221e65f6c3": {
+          "source_id": "S-03d7ff221e65f6c3",
+          "url": "https://esut.de/en/2021/11/meldungen/30686/neuer-vincorion-standort-in-el-paso/",
+          "content_sha256": "828606b28cfdb98a77d00890dd93e8b6c7578d37c8a578599df0ae024629f12f",
+          "text_sha256": "4f5ada0dae97cd132b42eee16f5ea4e07abda878783ed515b7e052129b7f6be9",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-0a9ea0dbc48fd48c": {
+          "source_id": "S-0a9ea0dbc48fd48c",
+          "url": "https://www.eqs-news.com/media/document/aab835db-f638-4f98-8ab5-d47804eceaf8/assets/DE000VNC0014-JA-2025-EQ-E-00.zip",
+          "content_sha256": "0cb553fb358aced92dbb051df07d5588ac7eac57c09e78a004b84a0e73fd6223",
+          "text_sha256": null,
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Unsupported text extraction; original bytes retained."
+        },
+        "S-0d749a7e724be027": {
+          "source_id": "S-0d749a7e724be027",
+          "url": "https://www.janes.com/osint-insights/defence-news/land/iav-2026-bundeswehrs-skyranger-30-air-defence-system-to-become-operational-by-end-of-decade",
+          "content_sha256": "2d58ec54a80eddb531dc76e34f72e3bf602537694c5b94a9f192da9903956dd8",
+          "text_sha256": "24d00ca056df8c0ecf59afde9f2bc5004fcaac9d1f25f629b011a1611dc062b4",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-0e49f2bddf946124": {
+          "source_id": "S-0e49f2bddf946124",
+          "url": "https://euro-sd.com/2025/12/major-news/48310/spain-orders-100-helicopters/",
+          "content_sha256": "43ea2722b30f2a14b71238fc03b8f6c518922ddd0be00e1e35c32e6fbe08892c",
+          "text_sha256": "9c74d19fd4b381b1532d11e69ad2752a23a1bb027b9e3cbae5a3a94c9ba98ecb",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-0fcb333a58bc73ae": {
+          "source_id": "S-0fcb333a58bc73ae",
+          "url": "https://www.ariva.de/aktien/vincorion-se-aktie/news/roundup-ruestungsboom-vincorion-optimistischer-fuer-12102939",
+          "content_sha256": "71f1e6007596a48d27fa525c6ceb369cb3a080c76c33629d0aff22c52cb24e0e",
+          "text_sha256": "21cb49ed7c204a7c030174a1a2e9ca7754975c6d13ef4457fbc023f4581156be",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-125b291429b46297": {
+          "source_id": "S-125b291429b46297",
+          "url": "https://www.eqs-news.com/news/corporate/vincorion-se-successfully-completes-initial-public-offering/308745c8-8624-454b-8d71-d00666ac5fc1_en",
+          "content_sha256": "340953ac5449903694940228d7212d9fefa291cb90e0a7f7a5f7ba10079e0260",
+          "text_sha256": "378de1665367ae4e1b3ed154f86d5718483a0694a8d308e7532776199e50effd",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-13147943f3042508": {
+          "source_id": "S-13147943f3042508",
+          "url": "https://www.eqs-news.com/news/ad-hoc/vincorion-se-vincorion-se-reports-41-higher-revenue-for-the-first-9-months-of-2026-compared-to-the-same-period-last-year-full-year-guidance-raised/1e1dc173-dcc2-4702-88cb-fff738bedbe7_en",
+          "content_sha256": "216d003c7f201ee30bf1e2e4d9c23ac68af213f6ca605e51f66adc819c3a6ff5",
+          "text_sha256": "2288b2929da1adbe337f9604da4782e7d78e3b0dfc2681eddc21684a51bd5b16",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-1386ad7ef888f055": {
+          "source_id": "S-1386ad7ef888f055",
+          "url": "https://www.mobilityengineeringtech.com/component/content/article/28394-turret-aiming-and-stabilization-system",
+          "content_sha256": "3b8e4190ec5fc755fb960137551b32ad929476e65c153031963b8142a546ef3b",
+          "text_sha256": "86fd5a54fc8691cc439e13e20e5eedfe1cfb342c5c52d7fe75d379afe5ece662",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-1489f29cb8fa3d34": {
+          "source_id": "S-1489f29cb8fa3d34",
+          "url": "https://www.militarysystems-tech.com/articles/leonardo-drs-board-vehicle-power-system-shines-major-us-army-evaluation",
+          "content_sha256": "9ae0f9f636ae498460fe266bd6af6e81223f50e208b936abbfa49b194530abfd",
+          "text_sha256": "818d9bd1e8651da2c62a3cf9188e09ffc36a00bd467c6e6df7e74a5373d82596",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-189bed9f57b7a4b6": {
+          "source_id": "S-189bed9f57b7a4b6",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-07/68993909-ruestungsboom-beschert-vincorion-umsatzsprung-016.htm",
+          "content_sha256": "b7192f36fc9d8ed97bd706c36f6f6422cb48c68823e6d55d4cebe092c607b2b5",
+          "text_sha256": "cc54e43fcfee13c781104a3875964456f4c54f48f99dcaf91b7c463ad644d3fc",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-1a847178709b22c4": {
+          "source_id": "S-1a847178709b22c4",
+          "url": "https://www.gettex.de/en/news-overview/newsdetail/eqs-adhoc-vincorion-se-vincorion-revenue-for-the-first-half-of-2026-is-up-significantly-compared-to-the-same-period-last-year-full-year-guidance-confirmed/",
+          "content_sha256": "c3d24ee30700c8e315c94b190b951d4cfe0e1351376baf840f68080aa19c96c0",
+          "text_sha256": "a90aa031da540f01392cff10199a0c4f94293d8c632add978662a194c124c9c3",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-1aa8f95b2599facc": {
+          "source_id": "S-1aa8f95b2599facc",
+          "url": "https://vincorion.com/en/large-scale-weapon-stabilization-gtd-chaser/",
+          "content_sha256": "80b4d9b82bc7ce3b6b0fadc5315a559030569dd8a74d1a8de419d95f0d398cd5",
+          "text_sha256": "06e0b722e0db4ff8c992e8fd0c5cdc7cff1f4b081b3b4a5d6b4e7694248c6f7b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-1cd4c98ba7f9a5e2": {
+          "source_id": "S-1cd4c98ba7f9a5e2",
+          "url": "https://www.boerse-online.de/dpa-afx/eqs-news-heidelberg-vereinbart-strategische-partnerschaft-mit-defence-spezialist-vincorion-deutsch-461126.html",
+          "content_sha256": "de355fe0fe5201fe42962aa3b4685500970cfbaf2d6d151efaac0f0d4c627a5f",
+          "text_sha256": "235bcb4fbd619b03ee13845254113ce47b087ae7ab5c824eea10844d169f68c6",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-20ab7c633edc2585": {
+          "source_id": "S-20ab7c633edc2585",
+          "url": "https://www.vincorion.com/en/",
+          "content_sha256": "c1cfb91efacebacc4d3163c2d710317655335277a1f7dd10f1d456e6f88cce81",
+          "text_sha256": "6c9488ae6eb4193f697afdcd0d09352e949779877c7fb5123d60ca409f0f661a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-22341c86325e820e": {
+          "source_id": "S-22341c86325e820e",
+          "url": "https://asiapacificdefencereporter.com/posts/curtiss-wright-completes-requirements-for-australian-turret-drive-stabilisation",
+          "content_sha256": "5b85dc225328dd98e17f9129ea42ce4bfe5c320a54d1c72ed880efeb85656a44",
+          "text_sha256": "9cfabc48d6b774df2a6d9c1c8777fd2782b587bcc0354c242cd7b70b89ff9b94",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2267af5e02fda855": {
+          "source_id": "S-2267af5e02fda855",
+          "url": "https://vincorion.com/en/power-systems/ground-based-air-defense/",
+          "content_sha256": "f372a9047738d1c38819c39a9f057e50baea6d37ca99fe070bbb9efdd66e83bd",
+          "text_sha256": "7e79e553fa657690676ce7325da38f0e107dc2cf753ccc779710d61d2b3bf831",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-257bf5b7920f7bb4": {
+          "source_id": "S-257bf5b7920f7bb4",
+          "url": "https://live.deutsche-boerse.com/nachrichten/IPO-ROUNDUP-Ruestungszulieferer-Vincorion-strebt-an-die-Boerse-92c154a6-cc14-4b7f-b985-6912e565c7e8",
+          "content_sha256": "d5f3fb164abc9480566c8da16c4635cde238db3cda7f60b0f2337e4e05bd9263",
+          "text_sha256": "2a5ebd1e37199fbbe3fd194d669d861a757a624ca0df1efec81dcfb01ad17631",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2aa87887987537b4": {
+          "source_id": "S-2aa87887987537b4",
+          "url": "https://www.eqs-news.com/news/corporate/vincorion-plans-initial-public-offering-on-frankfurt-stock-exchange/f0168675-b51b-4a9c-acdb-48dfaf818238_en",
+          "content_sha256": "3e91044ddf0b9b069b9b37817cff88767946f0f270ee345a1e63eb4fe09b0ce3",
+          "text_sha256": "a1b2828b56dbe99dbe4cb5ec670925b13262eab3076729ce8c0e718170ae996d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2b57f2aeef51e1da": {
+          "source_id": "S-2b57f2aeef51e1da",
+          "url": "https://live.deutsche-boerse.com/nachrichten/ANALYSE-FLASH-JPMorgan-belaesst-Vincorion-auf-Overweight---Ziel-27-Euro-4d2c45f5-a010-4f65-9d88-21742813ca51",
+          "content_sha256": "378da1944ceb6a563066e3a8a28973b582bb5e4433da1cf08dea54f4ce2e68a2",
+          "text_sha256": "b7ec70d6cf479ead9472b173f3b5ed078c025bbd41d4b5bb2492dec3f8dc5c00",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2b5d1f5751bce5a6": {
+          "source_id": "S-2b5d1f5751bce5a6",
+          "url": "https://www.tagesspiegel.de/wirtschaft/verteidigung-knds-erhalt-bislang-350-auftrage-fur-neues-leopard-2-modell-14989796.html",
+          "content_sha256": "d1eca9c1c19f1c543003d2f4da1ceb62a91e4d49fac354c30501d58d8c970016",
+          "text_sha256": "933843edfe9ac0597032c3c4d63265cf5f5860fa340eeb9aed37f619e5496107",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2b6c91a582f6386f": {
+          "source_id": "S-2b6c91a582f6386f",
+          "url": "https://instagrid.co/blog/instagrid-unveils-tactical-power-system-go-mil-at-enforcetac-2026-following-successful-deployment-with-the-german-bundeswehr",
+          "content_sha256": "baa370d7d26cf447f1282d23812560647a4614f13227e751092d6f7a2a25622b",
+          "text_sha256": "3dbc5d5ae5ccb3658fd5f345691193339dcaf730e981891c0a8a6c447fe63c92",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2b7291ad743a6f18": {
+          "source_id": "S-2b7291ad743a6f18",
+          "url": "https://militaeraktuell.at/vincorion-entwickelt-fuer-die-bundeswehr-stromaggregate/",
+          "content_sha256": "d61b07b86d34f6b6eb883a3846d42fa9959c909a242e4e543814e9ff44314273",
+          "text_sha256": "4c8ea1c99606690064ace3ff15739c9c2fac2794d7cc8004d95e492d7b9dbb13",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2dd5d59675c0404d": {
+          "source_id": "S-2dd5d59675c0404d",
+          "url": "https://www.militarysystems-tech.com/articles/army-vehicle-modernization-mounted-mission-command-and-onboard-power",
+          "content_sha256": "286792e25d799db6e3f6f929cbc82104cddbe1d04d6385d40a13c39ef7897649",
+          "text_sha256": "d87ec3f21dbbd2beff3b822cb084a9eea8b4777631d69d8b65d3795c448fe180",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-3015a99a05a590d1": {
+          "source_id": "S-3015a99a05a590d1",
+          "url": "https://www.hensoldt.net/news/hensoldt-doubles-order-intake-in-the-first-half-of-2026-%E2%80%93-revenue-and-earnings-rise-significantly",
+          "content_sha256": "82e78d7b8a7db8ff65cfea53816f8cbba70970e6b9928b0195ff3aff17c6b04a",
+          "text_sha256": "c55a9136601b914e100b3f4fe48fb0234d466b484897b9f2b0b94e0fc24d0d62",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-34e151b8f9f56d7b": {
+          "source_id": "S-34e151b8f9f56d7b",
+          "url": "https://fragoutmag.com/leonardo-drs-advanced-vehicle-based-power-generation-capability-us-army/",
+          "content_sha256": "491b3005a8575812b0089bb43ccf75a4c6dd84a9597870c997712eed213f4b6e",
+          "text_sha256": "97f0d903938f142e98f00b1241ca21d34f44f56ef7cb9a8d74fdf6e7f48b0f6e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-35533464036f638e": {
+          "source_id": "S-35533464036f638e",
+          "url": "https://www.bmvg.de/de/aktuelles/weiter-tempo-bei-beschaffung-ruestungsprojekte-bewilligt-6156318",
+          "content_sha256": "0b35f914440e15622e6948a7ab771451a9d44606c037a3f4ade8bc80a79d16ad",
+          "text_sha256": "e7184ed8dae729105ee0c521e30c0ce342fc451677a2267e34de702cbbe4f006",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser. Encoding replacement detected; inspect original."
+        },
+        "S-399c866fc838bf1b": {
+          "source_id": "S-399c866fc838bf1b",
+          "url": "https://raytheon.mediaroom.com/2015-04-24-Germanys-Jenoptik-and-Raytheon-partner-to-produce-new-generators-for-global-Patriot",
+          "content_sha256": "50fec049d979c0a97369530144aa945eacb167533e7b2e8938393026b5a0d7ad",
+          "text_sha256": "d613593cf14b79dcea050807843110b30e134c227cd9a7fb846a0d24780aff21",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-3d9c89bef4d43468": {
+          "source_id": "S-3d9c89bef4d43468",
+          "url": "https://vincorion.com/en/vehicle-systems/land-energy-systems/",
+          "content_sha256": "b09ec7a17fc83d203e14c3541022f7474bc95ea22387b63712b900ca9444e997",
+          "text_sha256": "60019ab83d3d08efb82fc553bdced924f7fb761462da88005e210c73c9ba720e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-3dbea8c3b38ded55": {
+          "source_id": "S-3dbea8c3b38ded55",
+          "url": "https://vincorion.com/vincorion-ausa-washington-2026/",
+          "content_sha256": "05588f1ce968a08f4f50fe674df147a9680a49395bdc2a3a3e62e99aebca27d6",
+          "text_sha256": "abb7e79335c0e1e331448884e8cc13ecc7dfdfa096b851cc7bc0d498fa4715d3",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-40c9171fe2101daa": {
+          "source_id": "S-40c9171fe2101daa",
+          "url": "https://www.jenoptik.com/-/media/websitedocuments/ir/berichte-und-tabellen/2025/online/en/jenoptik-annual-report-2025.pdf",
+          "content_sha256": "32d304eb1d4ba3a50d00d86fc1c9764c64b48b708f4891ae5a2dd35e0d54426e",
+          "text_sha256": "1cebaf1459710601347cf8f139d26ccd5c1ccbbe9fb16a605e7a2df4cd539fc6",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-41c8e325d744de3f": {
+          "source_id": "S-41c8e325d744de3f",
+          "url": "https://hoist-winch.onboardsystems.com/mro-facility-opens/",
+          "content_sha256": "d95e7a0a155d3959dc19c11cbe60dfa4fe42eb30f551d19f7b50719cef603634",
+          "text_sha256": "d280945887f34f9180f7daa490a48c650323dc518fa25a5b0370c2dd17d56e3e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-41e7bd7b63e2d486": {
+          "source_id": "S-41e7bd7b63e2d486",
+          "url": "https://vincorion.com/en/mobile-energy-systems-for-future-proof-deployment-scenarios/",
+          "content_sha256": "e33afe55941105587da6595d9520c531a9452ba9b7441c1290b4626e2547a851",
+          "text_sha256": "8e7ff1d2a09dd17c4e561af3320728817a7df64b62fc0cdd5d26216a68f4fa7d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-4425857ef283fad8": {
+          "source_id": "S-4425857ef283fad8",
+          "url": "https://www.vincorion.com",
+          "content_sha256": "68bee4b4f5290e92c6961e31af48ba7cecf075ff073c7b3dc9f82518b02c39aa",
+          "text_sha256": "558d9496307767fa4bb02400c968c3cf47e398018276f88498f76855a6df273c",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-4953b514319b9b9c": {
+          "source_id": "S-4953b514319b9b9c",
+          "url": "https://www.bmvg.de/de/presse/investitionen-in-sicherheit-verteidigungshaushalt-2026-6039980",
+          "content_sha256": "4702186dc3f075956bba9051c1d488b8fa0653da6eb90a1bf8b0db8a2468b48b",
+          "text_sha256": "aebe9b9307ed5eb02dcc250688540bf7d81ab2deaf22b2aade123ba91667a7cc",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser. Encoding replacement detected; inspect original."
+        },
+        "S-497e00ffcba5a802": {
+          "source_id": "S-497e00ffcba5a802",
+          "url": "https://vincorion.com/energie-fuer-europas-sicherheit-vincorion-auf-der-eurosatory/",
+          "content_sha256": "3bc44886339c65526b795cdec0bf0df0ded5696ba5a7638edc187fe7af9ceafc",
+          "text_sha256": "5e75f9364a498f845daf836ed63bca077276a637c05d7cd5ec3921af23c862e3",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-4988896bf7d4ec42": {
+          "source_id": "S-4988896bf7d4ec42",
+          "url": "https://www.eqs-news.com/news/voting-rights/star-capital-partnership-llp-london-united-kingdom/4fb3843c-013c-4e76-90ff-0347b3fe1200_en",
+          "content_sha256": "fb05e39527d1a53b2eec4d3ecfc9beb69a1febfe740e1255ccf34ab9f3627d51",
+          "text_sha256": "390fb48573cdf87cacbe5dd720959ee9339604538ed3c3a4929de179b36278ed",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-498be168b3d7e76b": {
+          "source_id": "S-498be168b3d7e76b",
+          "url": "https://esut.de/2025/12/meldungen/66092/daenemark-ordert-weitere-feuereinheiten-iris-t-slm/",
+          "content_sha256": "fbc4e59557764b83099d371028833138a23fbd7135693baf0be3963829f0c040",
+          "text_sha256": "7d5718f8ef10aec6ce883e7af87ece9b8ccaa823dd5dd74c4c1fe6725bd7bcda",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-4b1b269f9d58d23c": {
+          "source_id": "S-4b1b269f9d58d23c",
+          "url": "https://www.sipri.org/media/press-release/2026/global-military-spending-rise-continues-european-and-asian-expenditures-surge",
+          "content_sha256": "f5aa79011ad4486e2b4d3015ddfa2ba7b88cb7be98f06c43c6c5a06931285b81",
+          "text_sha256": "7ebfae92b0c6fd399bf013609aa283ddda3e7f4ac1f0f57e6413b5ce0357f1d8",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-511f097415d21638": {
+          "source_id": "S-511f097415d21638",
+          "url": "https://vincorion.com/en/eu-supports-development-of-new-power-storage-systems-by-vincorion-within-the-scope-of-nomad-project/",
+          "content_sha256": "9ac4f0ff26d2f88a0296c6289b5f6c6d557b551317090914d4e611e6d95cec93",
+          "text_sha256": "4dc5d8891cd1865a205363bf69be1c15af1e306f6f872e25f8379c6c6565371d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-53bcc5e6f20b82f7": {
+          "source_id": "S-53bcc5e6f20b82f7",
+          "url": "https://vincorion.com/aircraft-systems/special-products/",
+          "content_sha256": "735b6f2eecf099fc844a8c1732fb2ded270209a1940e9fa468da97c0b9aa9d2a",
+          "text_sha256": "a26c869962f858476535bdf17e818afe49f8b7e24dece5ef623ee246b3828023",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-54bbffea5b8c5b3a": {
+          "source_id": "S-54bbffea5b8c5b3a",
+          "url": "https://www.star-capital.com/news-and-insights/vincorion-ipo.html",
+          "content_sha256": "e62ce5a7ad8739286d0c4a17d203d0420248493f99f5fe4878315dd36fc0a41d",
+          "text_sha256": "cc9dcbe00185145341c8c460ddf8c0f35dedbdafe5820bb8f5d2b7963684202d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-555547ca1efb774c": {
+          "source_id": "S-555547ca1efb774c",
+          "url": "https://vincorion.com/en/energy-for-europes-security-vincorion-at-eurosatory-2026/",
+          "content_sha256": "be1ee1acf76878e6c50c0c24a5e110591bc00136616962f2def81ad16dc0b306",
+          "text_sha256": "686a88376263b4a0f1f7bc84653dcac4a2b51ee185a571eeb7977b741735e10b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-56db18e5f6a31a81": {
+          "source_id": "S-56db18e5f6a31a81",
+          "url": "https://defence-network.com/vincorion-nextgen-power-fuer-luftverteidigung/",
+          "content_sha256": "0073dfc6b6a6121887f80a1942e37af515417a2df96c16494b83b89b67430182",
+          "text_sha256": "30da53f56874201ec09c904e1c99188d2609184ce1c6a8fb7cbc85780d975643",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-56ddab9dedaa1e0b": {
+          "source_id": "S-56ddab9dedaa1e0b",
+          "url": "https://www.eqs-news.com/media/document/a639e48a-2a12-46cd-87f3-75764bdd5045/assets/Audited_Consolidated_Financial_Statements_of_VINCORION_Holding_GmbH_202.pdf",
+          "content_sha256": "40898cf32163a7fd0fe763c4eafc6c6f4e7bae92c9f9bd92bcb6c6b773c08dab",
+          "text_sha256": "b11c1505a0c52fb8056064aa8299b31de57e49d77300205dce3b0c22fbfdc450",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-570ee7bc8cbb2ed7": {
+          "source_id": "S-570ee7bc8cbb2ed7",
+          "url": "https://vincorion.com/services/lifecycle-services/",
+          "content_sha256": "d9b29530cd06e7e2120fdc46824cab43826bdebb54b7fcf61c6ff204baaf6f6c",
+          "text_sha256": "4e94a802dc5f04e0d550c75cd9e25a0e0f2f237d16d04b482291ec6c36a7adf2",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-5b0528578c3076e0": {
+          "source_id": "S-5b0528578c3076e0",
+          "url": "https://www.eqs-news.com/news/corporate/vincorion-records-more-than-eur-100-million-in-order-intake-in-june-2026/e5205123-dc41-4bfd-a5a5-3f14fb8b4278_en",
+          "content_sha256": "942cd35762527698d0271a817d69a7d21a648d1e914a030d5d15a7d3a906b230",
+          "text_sha256": "e6d9371aa7eba0baf065bcb3d87d0217ebb5ff140096f822ad1c23198c71a4c0",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-5ce8ff175434609c": {
+          "source_id": "S-5ce8ff175434609c",
+          "url": "https://vincorion.com/en/vincorion-has-once-again-improved-its-ecovadis-rating-and-has-secured-the-bronze-medal-for-the-third-consecutive-year/",
+          "content_sha256": "7050d4b2567a83aaed7a1c9434d83759675926c9f80b071db228387430f56990",
+          "text_sha256": "ec9fdac7a978c66cee22d628ae9bb59a38ecd4072c5b9e7a4967a9062dbc3729",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-5d3486ad638df03b": {
+          "source_id": "S-5d3486ad638df03b",
+          "url": "https://vincorion.com/vehicle-systems/stabilization-systems/",
+          "content_sha256": "2f4b314463f1d5460efdd6db2d8149de1c8363ebc10509720a2ade39a898530a",
+          "text_sha256": "21123ae672d55da3d904f014b788f9b102597fa8e46b7169bafa4fe135c2390a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-60403080e91bc8d5": {
+          "source_id": "S-60403080e91bc8d5",
+          "url": "https://vincorion.com/services/logistics/",
+          "content_sha256": "783baba35738c3a12c72d4df0fb524f0e6f5afe279362a183876d5f4a4ca5161",
+          "text_sha256": "92cb447af8c7e7eb001319d82edeac36ea6b94e3ccdc10dd8f932657c3baddfe",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-621777214055324d": {
+          "source_id": "S-621777214055324d",
+          "url": "https://www.star-capital.com/portfolio/vincorion.html",
+          "content_sha256": "bdcee22cd9cd6130ad3e06d8baa3dab2bf980934b865589ce529757d2f0e1d69",
+          "text_sha256": "48b9d86f6238e6710fff03dd1e6474d5aad54a242c9ee04da02294e2819f2ea1",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6271316e5240ae67": {
+          "source_id": "S-6271316e5240ae67",
+          "url": "https://api.usaspending.gov/api/v2/awards/CONT_IDV_W911N225D0008_9700/",
+          "content_sha256": "2f42c75e87e9d9af43a758fdbfc8228c9c67d18946983d4e6221118b37afd96f",
+          "text_sha256": "2f42c75e87e9d9af43a758fdbfc8228c9c67d18946983d4e6221118b37afd96f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Decoded full text; verify original if encoding or layout matters."
+        },
+        "S-65b4796258a315d9": {
+          "source_id": "S-65b4796258a315d9",
+          "url": "https://shephardmedia.com/news/defence-notes/vincorion-opens-new-us-site",
+          "content_sha256": "c36e48bf4b55e2ce7b791d6aa178d78af157d8127e0a0f5ae9726f612b144f6c",
+          "text_sha256": "492827696155e6efaa4e1b2b9431d27a7ee44041bb81345fdb2169ed5c48f73d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6601b3cf04dd96b0": {
+          "source_id": "S-6601b3cf04dd96b0",
+          "url": "https://asdnews.com/news/defense/2026/04/14/raytheon-deliver-patriot-interceptors-ukraine",
+          "content_sha256": "e2b8783b8e16548e84bafe7b262d5ecfe682c33a596e540d83bca9aca0036d3d",
+          "text_sha256": "a235c481cf3abf829fa3df866bdf46a3ff43f135df4806550ef6b5c19ca5308b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6774a8ff4bfbe570": {
+          "source_id": "S-6774a8ff4bfbe570",
+          "url": "https://www.mynewsdesk.com/uk/saltwater/pressreleases/fischer-panda-uk-secures-major-defence-contract-3272380",
+          "content_sha256": "f8b406ef39ec1b32e5ceb7a3dfc47f3bd298668e26cda8d3f667f880b7a744dd",
+          "text_sha256": "976d7bdf055d06641d2670ba2c3dae611cf794c4160c4805c3a60800ab40a0c0",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6888cb6ccf8cb794": {
+          "source_id": "S-6888cb6ccf8cb794",
+          "url": "https://eejournal.com/industry_news/curtiss-wright-addresses-high-voltage-power-requirements-for-u-s-ground-vehicles-with-high-voltage-turret-drive-system",
+          "content_sha256": "a9641ae36266b89799842fac05f50f455f8ec93e7031502a6419072620e1027f",
+          "text_sha256": "342e3b5e7c2916c43f8ae719e8e8af72c1e666c2c129453f9a28ed0c45d3a084",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6986318c3c84f038": {
+          "source_id": "S-6986318c3c84f038",
+          "url": "https://esut.de/2026/07/meldungen/72572/entwurf-haushalt-2027-5554-milliarden-euro-ausgaben/",
+          "content_sha256": "3c4f3893bef8d8fda8393553ac119dc19a2976a610d4fb84690d66ddd9cc1bd1",
+          "text_sha256": "5dc72b17d0e2512174b52650bdf5dc598366c6a946c1a1cdb43d5b729a32259f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-69e48c46a7fb7031": {
+          "source_id": "S-69e48c46a7fb7031",
+          "url": "https://vincorion.com/en/vincorion-takes-on-key-role-in-european-defense-project-sentinel-2/",
+          "content_sha256": "68886594203f078b14b7deb4b77dcdc891fd93611d4317a8d83830af43f55192",
+          "text_sha256": "eb41af385754d7bd411063840392a33b6e5964c6ad9b0c9ab2a6e17e897f92de",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6a21b1224ef5726f": {
+          "source_id": "S-6a21b1224ef5726f",
+          "url": "https://vincorion.com/en/boxer-power-supply-generators-epg/",
+          "content_sha256": "0d0cab9e3422ed916aad37ecf0dfa14e732dda74be15611f0ec5ebd80cc0b5f5",
+          "text_sha256": "eb0a7f7c9c24d50738859007758e35d8a59e046bd22699925ecf5ab4ca8aac80",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6bb78e5c6f649738": {
+          "source_id": "S-6bb78e5c6f649738",
+          "url": "https://afm.aero/airbus-2026-global-market-forecast-projects-42060-new-aircraft-demand-and-39percent-annual-traffic-growth",
+          "content_sha256": "b2cdf57325329f9dd437434a9de45f9360b0c8027b0f69424c4fd4a9960c55c6",
+          "text_sha256": "738bdfccce607222bbb797292920ec17c6021b353e754d02e3c91cb35541912f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6d8b01cfee4e69d7": {
+          "source_id": "S-6d8b01cfee4e69d7",
+          "url": "https://www.jenoptik.com/news/pressreleases/2022/06/30/closing-sale-vincorion",
+          "content_sha256": "9d3918086ecbd7f7b8310beb66700f3e3d2cfdcbfbe5ec8a1b3de95ce5b14dba",
+          "text_sha256": "ea71d05738924c911a45c3904c82ed9d3417b2efb7b7f7099aa75d3f83466dc1",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6e6d85a309774afc": {
+          "source_id": "S-6e6d85a309774afc",
+          "url": "https://vincorion.com/en/vincorion-awarded-major-contract-for-generators-for-the-boxer-wheeled-tank/",
+          "content_sha256": "1a35d81423cffeea22c7c51646ccc0b244bc3ed081517f03d8cd1fa49a4a2b9f",
+          "text_sha256": "16bfc64094bd843a45918a093d169b538822cd8c4a79bfc7f333fedad7696d14",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-71029391d701d972": {
+          "source_id": "S-71029391d701d972",
+          "url": "https://www.eqs-news.com/media/document/4b669fed-814f-48d1-8678-d29720f9560c/assets/DE000VNC0014-Q2-2026-EQ-E-00.pdf",
+          "content_sha256": "3d06f9d843f7fca0d9c9c2c021da02391b64c72a2de21ae7d80843d99ad64775",
+          "text_sha256": "83e966067f3802b5be7650e16728912a5808f497f32a21dff05fde08f19bf3bb",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-71de625fcaaf1b95": {
+          "source_id": "S-71de625fcaaf1b95",
+          "url": "https://vincorion.com/en/vincorion-besetzt-leitung-investor-relations/",
+          "content_sha256": "c9985a1a0d69546041dc73bef50a92d0901aebd5b5eed5ea50c29d644a3e33c6",
+          "text_sha256": "7cd6c6109aa95cefac49f34348b332199fc03d6e81f2f334ec16d7f3fe9ea976",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-722f85cd0fe582f0": {
+          "source_id": "S-722f85cd0fe582f0",
+          "url": "https://de.wikipedia.org/wiki/Vincorion",
+          "content_sha256": "f0c9ba5eaa7ec1cdc2aa69a6c825aa161ccfb8a0266e9c72aff2053e56e9cd60",
+          "text_sha256": "52063de8ffba1e290de8f3675eed451a9310f8ab9b626ddc4414723f51c52913",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-74f313ac4d339267": {
+          "source_id": "S-74f313ac4d339267",
+          "url": "https://vincorion.com/en/operational-superiority-with-state-of-the-art-logistics-vincorion-introduces-next-gen-power-for-air-defense/",
+          "content_sha256": "bc10ab43c8e8ed98c08c42d9d968e82a24bd63493119aced12d125f9577c60e9",
+          "text_sha256": "05b26160ea1aac6a11b8e3bc081d0e409c7d47e732c122ac9a20bbf8c6cd279a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-757e91a75b0726fb": {
+          "source_id": "S-757e91a75b0726fb",
+          "url": "https://ir.vincorion.com/media/document/4b669fed-814f-48d1-8678-d29720f9560c/assets/DE000VNC0014-Q2-2026-EQ-E-00.pdf",
+          "content_sha256": "3d06f9d843f7fca0d9c9c2c021da02391b64c72a2de21ae7d80843d99ad64775",
+          "text_sha256": "83e966067f3802b5be7650e16728912a5808f497f32a21dff05fde08f19bf3bb",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-762e72ba2f88c34a": {
+          "source_id": "S-762e72ba2f88c34a",
+          "url": "https://hoist-winch.onboardsystems.com/leonardo-selects-pegasus/",
+          "content_sha256": "f3d0652b0a6b8f6ed47b1e97d350bcb23efcd796b6a22916e4870c270fd9eaf0",
+          "text_sha256": "ebfa38afe7a7e7bca83f63cc571708a2666c71a9220494c31fc8b42e852d2242",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-763b90a8ac782ec3": {
+          "source_id": "S-763b90a8ac782ec3",
+          "url": "https://www.moog.com/products/turreted-weapon-systems/turret-stabilization-fire-control.html",
+          "content_sha256": "cd9f187fa6476db85894b032d858f0aafe33ad839a7d335b6b2dd6847a426b68",
+          "text_sha256": "33b71c1630041f8ef3a8724299964152a163f694070bd5c70d44e463f81133fd",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-768bc60bd39f6de8": {
+          "source_id": "S-768bc60bd39f6de8",
+          "url": "https://www.heidelberg.com/global/media/en/global_media/investor_relations/ir_reports_and_presentations/2025_26/251112_q2_2526_presentation_cc.pdf",
+          "content_sha256": "076850aca1a9845fbfc5ee957013a0362be48c27e195406d9c005f4f460d6c75",
+          "text_sha256": "bc51edccd8c55fe2cc710885ccd80552ec9462647f43a909e77c1b685cc4a69a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-77254a54ce96c13c": {
+          "source_id": "S-77254a54ce96c13c",
+          "url": "https://www.nato.int/content/dam/nato/webready/documents/finance/def-exp-2026-en.pdf",
+          "content_sha256": "efd05e4a7e715b361617390016356df04af83ea6febecb9475ce173bf2cffb75",
+          "text_sha256": null,
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "PDF has no extractable text; open original PDF (OCR if needed)."
+        },
+        "S-7a846a5847661f28": {
+          "source_id": "S-7a846a5847661f28",
+          "url": "https://www.eqs-news.com/news/voting-rights/caisse-des-depots-et-consignations-paris-france/475d8ff9-12d3-44fd-9e12-c6d2e10f5c09_en",
+          "content_sha256": "298ae936611d09e012be663de2caa789abcce5960bcb547fed36ce0043555dfb",
+          "text_sha256": "24ea7189f0ad0212ff49ce73192c872939bd0f0fffad45fddd25ab74411d798a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-7bc3da69386f5632": {
+          "source_id": "S-7bc3da69386f5632",
+          "url": "https://esut.de/2025/10/meldungen/ruestung2/64254/25-millionen-euro-vorlagen/",
+          "content_sha256": "fb9687c4951afc8654cb873ef319ed4068958b37e21e6a75d47aa5ffaac39f63",
+          "text_sha256": "9bae9ad6ec2d0a43e73db172287c19b9c24feb78540c83244e6055e34553068a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-7ec6e8876e6d48a8": {
+          "source_id": "S-7ec6e8876e6d48a8",
+          "url": "https://www.deraktionaer.de/nachricht/gnw-news-h1-2026-renk-erzielt-rekordauftragseingang-bei-ueberproportionalem-anstieg-des-bereinigten-ebit-und-unterstreicht-marktposition-jahresprognose-auf-kurs-543145.html",
+          "content_sha256": "0f53e0935c280cf9789342037adf9ad81c9c95a58456d6c46ef7118866550287",
+          "text_sha256": "db04c1a9bc330d9cadb60fcb62c2bc1acb74105a9ccd6c178b838d33815c908d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-81f9be39223c032c": {
+          "source_id": "S-81f9be39223c032c",
+          "url": "https://vincorion.com/vehicle-systems/",
+          "content_sha256": "c9eb3cf2483ad2ee991cae266319edba961ed972b1248110932346084dc11a3d",
+          "text_sha256": "26fb429ea02ec2606b9959204526a8c318aeee7518aa5bd997cd9e5b8ab9b37b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-8235dca98711f60c": {
+          "source_id": "S-8235dca98711f60c",
+          "url": "https://vincorion.com/en/vincorion-ausa-washington-2026/",
+          "content_sha256": "02477797a0631deedfadc376b9160aca5777e3a46c0fa1b08163ee7167975f25",
+          "text_sha256": "c9c944e7a473f122e264179324344d1e193f579fe6f08781311214cc9fb0a1e2",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-82e92fcfda288787": {
+          "source_id": "S-82e92fcfda288787",
+          "url": "https://militaeraktuell.at/instagrid-praesentierte-go-mil-enforcetac-2026/",
+          "content_sha256": "58d38927d8c20d01a4dfc654107f9566fbef030a00bec7448b356406bf4792ca",
+          "text_sha256": "8a6364a735f5abd2927ee50b86c094ef2bdb9ad5dd4d429ecf8c665edc343703",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-83243f19a7cdac3d": {
+          "source_id": "S-83243f19a7cdac3d",
+          "url": "https://www.breeze-eastern.com/hs-29900/",
+          "content_sha256": "51510265c3f8eb6aec1587963ca445990e553139e04fd464607cbbdee9d39102",
+          "text_sha256": "c1b6fdb2a6fe0fc27ff6756b0d8d9b98c82713bfd4ea6ab558f2b3fbffbb299e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-83c5f88e2f7ce1c7": {
+          "source_id": "S-83c5f88e2f7ce1c7",
+          "url": "https://vincorion.com/aircraft-systems/hoist-systems/",
+          "content_sha256": "22f83e6d1672551f0f6b426f1dc5db38ed69e7997081d58acd256d4976d85c06",
+          "text_sha256": "128e28021685e0eaae40d3efc865d5e5ee8cd479f5f11aab6fcd9bb288fbe552",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-83f92f2cf0494e24": {
+          "source_id": "S-83f92f2cf0494e24",
+          "url": "https://vincorion.com/en/vincorion-switzerland-patriot/",
+          "content_sha256": "6f770d61951d03bce20842d386dfae176418bbd807ed751d19b63649ca551e6b",
+          "text_sha256": "6c7a49e8e31fcb1127f76e19d0675346a254a7215116ab652e92e4a11bb7d1fa",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-84325599aa18c073": {
+          "source_id": "S-84325599aa18c073",
+          "url": "https://esut.de/2024/06/fachbeitraege/50687/vincorion-und-der-leopard-2/",
+          "content_sha256": "431d46de09fd60e9670deab248d9af470086ab497aa7dd9e4dccc4ed6775e7c6",
+          "text_sha256": "7a353a89723062d2e50667908b8a342314314cfb0e651ecf9c2cc31db9259276",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-843d0f17aae3494b": {
+          "source_id": "S-843d0f17aae3494b",
+          "url": "https://vincorion.com/en/aircraft-systems/hoist-systems/",
+          "content_sha256": "00ce93c57bfbf0ce7f8b1bfa215c0a1a9c901042694c7040b66c4d56d2adc5d0",
+          "text_sha256": "fbde7c3c1d23be10a971f86da1a0f230c298255b7680f6b7ccdf90437d4ddd5b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-87c277a6a09bd73e": {
+          "source_id": "S-87c277a6a09bd73e",
+          "url": "https://esut.de/2024/04/meldungen/48687/600a-generatoren-fuer-die-neuen-boxer/",
+          "content_sha256": "ec296b3b02f4e033080ae71a18bf3ad5ecd5d12fea63a350e1e8da9994e6bc16",
+          "text_sha256": "4c848f3e4500097b7a15ab5172a3c6002a6cb83da69c2dbdf44174aa5039d770",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-87f21a2765c8e7c7": {
+          "source_id": "S-87f21a2765c8e7c7",
+          "url": "https://www.nasdaq.com/press-release/curtiss-wright-awarded-contracts-rheinmetall-provide-turret-drive-stabilization",
+          "content_sha256": "59a8ef8fe8e9154121ea6a55f249f7dcd34ec32dcff3dfb63efcd70e484556dd",
+          "text_sha256": "fe87e48b517fcb806499176d39bae9278519cce25278dc75c5a7dd2690fb6ce1",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-8c2424c1c883ee90": {
+          "source_id": "S-8c2424c1c883ee90",
+          "url": "https://vincorion.com/mobile-energiesysteme-sichern-zukunftsfaehige-einsatzszenarien/",
+          "content_sha256": "4392e5a2b9183c0cd32649a96c67c2c0773e392d9677b2c228597fdea2befe8b",
+          "text_sha256": "87ecc79f2c2d7052f21073538c1d3d00611225212be6c84c3d8b4ad27b3ec153",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-8d6c7e86f7a28760": {
+          "source_id": "S-8d6c7e86f7a28760",
+          "url": "https://ir-api.eqs.com//media/document/1b9d9c1b-2549-4a15-8725-3977bc99af72/assets/DE000VNC0014-Q1-2026-EQ-D-00.pdf",
+          "content_sha256": "78a59af917972562c6d1bec795af47f7737e57646550ceb8214907b48fbe6ce2",
+          "text_sha256": "278f834cf723773f33a5f240497fcb609bcfc1889df26fb46ca55da75d260b17",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-908c95b84910ee11": {
+          "source_id": "S-908c95b84910ee11",
+          "url": "https://www.intracomdefense.com/wp-content/uploads/2023/08/NOMAD.pdf",
+          "content_sha256": "f82933b14b2bff3253cf5e999730d1c0b45b32c06aa097c50e628b9ffde07350",
+          "text_sha256": "410338422bc30fb0840aef6e31861a9484e51bd23855a1cbf71cd26a44347e7f",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-911f31a79239eaca": {
+          "source_id": "S-911f31a79239eaca",
+          "url": "https://knds.com/en/press-releases/reinforcement-of-the-bundeswehr-s-puma-fleet-rheinmetall-and-knds-deutschland-to-supply-200-infantry-fighting-vehicles-to-the-german-army-contract-value-around-4-2-billion",
+          "content_sha256": "d42d28533137da90e9013ad8a761ecbaa31ab1ae64938c97ed181a43d4679c3e",
+          "text_sha256": "81b222ebd3dc5036eabb8ba27fb57d60ccd6f3a934886b252ca3db528243e8da",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-91d594e29b91bc4a": {
+          "source_id": "S-91d594e29b91bc4a",
+          "url": "https://www.heidelberg.com/global/media/de/global_media/investor_relations/ir_reports_and_presentations/2025_26/20251112_q2_25_26_press_release.pdf",
+          "content_sha256": "c364cafab0fbf940d766458f9da66fd66d3c37938baeeb18a93939b8122cc86d",
+          "text_sha256": "1ff064067dd295f7dcda2f934d7f0e2e1822d90777b50093048608d4356af353",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-9227186ed7938c55": {
+          "source_id": "S-9227186ed7938c55",
+          "url": "https://hoist-winch.onboardsystems.com/hoists/",
+          "content_sha256": "b98df06ecbb097f6db48047773d9d4dbb09ba4c1e9e897ed89c570540f7b1ee5",
+          "text_sha256": "43120bc4c1135be70340b1eb1ff122ce988160d241464f75d2f13beddbf05fe0",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-93a1fbca82540d6d": {
+          "source_id": "S-93a1fbca82540d6d",
+          "url": "https://vincorion.com/en/about-vincorion/",
+          "content_sha256": "78539de79d3d2c10b0def230f72d2204f2a399f794f248984e76f58c27406e0b",
+          "text_sha256": "f4c654b5b60b5d66281dc86681d987e7d563bce37a900869c1510977f12e9c33",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-945a20788677cd82": {
+          "source_id": "S-945a20788677cd82",
+          "url": "https://militaeraktuell.at/en/diehl-vincorion-supplies-iris-t-slm-with-energy/",
+          "content_sha256": "6bf3cbbd1973c172aec8e9617fb3d7648cbe0af5b5e50571c1cf92807bdb3d87",
+          "text_sha256": "3a65f70a3e7c3e653fb9fb5ba8a847396052584800eeb2b719aa40311386e26a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-945d1e412e25a22f": {
+          "source_id": "S-945d1e412e25a22f",
+          "url": "https://sam.gov/api/prod/opps/v2/opportunities/84889090d3d740259c91511e97f1826f",
+          "content_sha256": "b427a7ea5d588c2bc75fe5259f924936b35ddd78829e1848e8ec97a380e3589e",
+          "text_sha256": null,
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Unsupported text extraction; original bytes retained."
+        },
+        "S-9670ee4232da6c72": {
+          "source_id": "S-9670ee4232da6c72",
+          "url": "https://ir.vincorion.com/media/document/0f2dd31d-9994-4d99-9b4f-9bfc77e5e5f8/assets/2026-08-13_VINC_HY1_2026_result_presentation_final.pdf",
+          "content_sha256": "a77cc2b97c03a1b9ee803efa4adcc779d93732f3b6db847b2b83cfa31a87fae9",
+          "text_sha256": "5c2eb1ae5fb765719ffd3e8d17e38aacab0abfd0fa9ee3b8acc7d09ee072b1bf",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-98760dc14b59455f": {
+          "source_id": "S-98760dc14b59455f",
+          "url": "https://defence-industry-space.ec.europa.eu/node/832_en",
+          "content_sha256": "939afebc3ca961ccbda9b301916a4c8425f01142ecc11d9ef4d750a7bcc4640a",
+          "text_sha256": "6738a47e6f8acd30e228d551e6089f79fa1132f702e826db297e5727db44e94e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-9948d40c2fb37d43": {
+          "source_id": "S-9948d40c2fb37d43",
+          "url": "https://vincorion.com/vehicle-systems/energy-systems/",
+          "content_sha256": "f72e2a3b6448a2224c596b9f055dcc2c5f93d26fa102d490e5d3975d2b4680ea",
+          "text_sha256": "744f8e9cc29a776465b0461b11af87ea1b455c84ed8517966c2f35bcce71be5a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-9cd9c3ae3af87af5": {
+          "source_id": "S-9cd9c3ae3af87af5",
+          "url": "https://www.eqs-news.com/media/document/0f2dd31d-9994-4d99-9b4f-9bfc77e5e5f8/assets/2026-08-13_VINC_HY1_2026_result_presentation_final.pdf",
+          "content_sha256": "a77cc2b97c03a1b9ee803efa4adcc779d93732f3b6db847b2b83cfa31a87fae9",
+          "text_sha256": "5c2eb1ae5fb765719ffd3e8d17e38aacab0abfd0fa9ee3b8acc7d09ee072b1bf",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-a07d2f17d44253db": {
+          "source_id": "S-a07d2f17d44253db",
+          "url": "https://vincorion.com/en/heli-one-and-vincorion-intend-to-partner-to-bring-next-generation-electrical-rescue-hoist-erh-to-civil-and-military-helicopter-market/",
+          "content_sha256": "4c496b364bc1be032c3e40450a4a2268aace4c6d98ecc3118634e7cbdf60094a",
+          "text_sha256": "1e5e49e894c1988181149fecaf99efb95201a9fc3c773f628187128274c6d394",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a33cf7c1eeb40a5f": {
+          "source_id": "S-a33cf7c1eeb40a5f",
+          "url": "https://vincorion.com/en/vincorion-se-joins-the-sdax-just-weeks-after-successful-ipo/",
+          "content_sha256": "294311960f4cebb8846243458dd50714b540b4b5ceffa3115c0dcd46b9133671",
+          "text_sha256": "af0e76becbdafad2471dbfd9b000dad0a10f58907adb4d28f74b626027410c2e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a3609ab109a44dd6": {
+          "source_id": "S-a3609ab109a44dd6",
+          "url": "https://theorg.com/org/vincorion/teams/leadership-team",
+          "content_sha256": "a7b9d9b897cb099bc5357a7e601b0db3ac94ee78dcffeeff9fd9ac6ab0ea8afc",
+          "text_sha256": "fe7c1929ad04ee0dddca4c4d35250567d603dc2e2b45cca8e461fa746cdd2abd",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a492cd0df860fc7a": {
+          "source_id": "S-a492cd0df860fc7a",
+          "url": "https://vincorion.com/en/vincorion-grows-revenue-and-earnings/",
+          "content_sha256": "fb7702bd5a5212caf45eeab365d6a5f696ab03fe70f5395d99cc4b05e5f80d5d",
+          "text_sha256": "5ff467a77c0b86f86898d33696affecfde70c1095bf5c7e22b6ace6e2a64eec1",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a8b6a9bf5c56126e": {
+          "source_id": "S-a8b6a9bf5c56126e",
+          "url": "https://www.eqs-news.com/media/document/53119d46-468f-4cbd-9301-691526a3954e/assets/Audited_Consolidated_Financial_Statements_of_VINCORION_Holding_GmbH_202.pdf",
+          "content_sha256": "5f268c7f3c46c6affa359240b91553011dde1e47f326d6be01f0e187c5ab2b00",
+          "text_sha256": "17dc5f78f8ccef90e7e74af9d20b403b5ce77cba4cf1414070c0e67dd22d5897",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-aa984398128cc8b6": {
+          "source_id": "S-aa984398128cc8b6",
+          "url": "https://www.jenoptik.com/investors/news-and-adhoc-releases/2021/11/25/agreement-to-sell-vincorion",
+          "content_sha256": "bcc2afd99343c185c336bca4e547a3d2320752ea8dc0fa777295bf6eb11c3043",
+          "text_sha256": "fd2dcdf308ec849ca27752134c238595ba77cab31f69616e1477f128925ef018",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b168fbe6b6465626": {
+          "source_id": "S-b168fbe6b6465626",
+          "url": "https://www.boerse-express.com/news/articles/vincorion-aktie-pulse-lines-gegen-auftragsstau-932243",
+          "content_sha256": "73e7a9a8801c56f55849ce0061e7049fd476abbfd833a93c7c0b6e2f4bd6b5ee",
+          "text_sha256": "b31eb4010958944c2b38f6ca328e3869f176f2d9a85e0e9945f8709134d7ead5",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b3f0167ab422975a": {
+          "source_id": "S-b3f0167ab422975a",
+          "url": "https://vincorion.com/power-systems/",
+          "content_sha256": "863510adb82abd28649fcd057b8615759612d01820548f48625945643199c857",
+          "text_sha256": "19eb402fd6ef2f61d4fded9cad2e3b4ef0fefdec4e3d2c6c127098f31c77ea6c",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b46ae9b4a1b7e77e": {
+          "source_id": "S-b46ae9b4a1b7e77e",
+          "url": "https://vincorion.com/services/knowledge-and-training/",
+          "content_sha256": "3cd088641e010f978ea59c10fc5e7b4ffdfcae4492173e64835bf83a3fd81a39",
+          "text_sha256": "a66da27fbc16f8275e3e190da2abbbfe4ed0e0861b7f61aaac365f64fce0fe72",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b87584cb356cf171": {
+          "source_id": "S-b87584cb356cf171",
+          "url": "https://ir.vincorion.com/media/document/bcf3789a-c391-49d7-85cb-31b54cd81fd6/assets/20260506_VINCQ1results_presentation_01.pdf",
+          "content_sha256": "f77c67cecdf3eccf8b5c98a5c0102062eb6bb99c222d9119d896619c5a585c3a",
+          "text_sha256": "a0aff4eea25d1f723197f67686d059907b4d16af8b418686d77603fc89439334",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-b8bbd90710a297a5": {
+          "source_id": "S-b8bbd90710a297a5",
+          "url": "https://vincorion.com/en/patriot-maintenance-million-contract/",
+          "content_sha256": "0ca0e4fccb53fd006d103e0c8a13ac83e017662464259347d0d220b127a03eb9",
+          "text_sha256": "58a9d4cd4d4d143a91c9d12abe28e247b54e8e829cf118123de382fb0224996b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b99b3531c8acfb3b": {
+          "source_id": "S-b99b3531c8acfb3b",
+          "url": "https://vincorion.com/en/aircraft-systems/special-products/",
+          "content_sha256": "643b60565dd812b2614dc08eb37d18551f8f649a60c02477e88a8b46f638d2a1",
+          "text_sha256": "a7eed3c0facf5d03bc0497389c363f8d854019f07cab135382ec7a59b460e026",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b9f1cea99e909e3f": {
+          "source_id": "S-b9f1cea99e909e3f",
+          "url": "https://www.star-capital.com/news-and-insights/star-capital-acquires-vincorion-from-parent-company-jenoptik.html",
+          "content_sha256": "525232532719acaf53a5832e98ac05804235ac3f32eb54aeaecd1c5698ee275e",
+          "text_sha256": "834571223ed5c2bb3613cd2ae502320da8c90bc43ae2bd5881a68dd6e4e1e4ed",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-be02a1cc64071dd5": {
+          "source_id": "S-be02a1cc64071dd5",
+          "url": "https://esut.de/2023/02/meldungen/40014/energieversorgung-fuer-iris-t-slm/",
+          "content_sha256": "c3dd83816ce2c55ab4b973e42e56a129a92d9b0347a3be5869309ddf6ef197a1",
+          "text_sha256": "58e94836da7ecebd960f83a415de99a38f0976882ce7b6b1759aa6564fef37bb",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-be1ed12b7791fc5f": {
+          "source_id": "S-be1ed12b7791fc5f",
+          "url": "https://gemma.feri.um.si/projects/international-projects/sentinel/",
+          "content_sha256": "bb47418094987ea31adcfbbfe4df233c026bda8ed24de68fc302c3e02f7d56af",
+          "text_sha256": "44d8616d9b383a517084b4426042e73903c8126bdecf3f307dedc0ffd585f77d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-be4a4ed066ec245d": {
+          "source_id": "S-be4a4ed066ec245d",
+          "url": "https://vincorion.com/vincorion-steigert-umsatz-und-ergebnis/",
+          "content_sha256": "05120d6f041ff9c08f74969a77e944de2c3045a5b3f1474d7a78f0f0b62a65b9",
+          "text_sha256": "a4aa85b12826ffbdd2137ab633ef93da9a6f938af5d0f08915b68acc2f66cee6",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-c18959e803f1e64d": {
+          "source_id": "S-c18959e803f1e64d",
+          "url": "https://www.gov.si/novice/2026-02-10-v-mariboru-zaceli-aktivnosti-projekta-trajnostnih-energetskih-zmogljivosti/",
+          "content_sha256": "30a01aa1a22726a26d564472c5c75e53e501ba7d0f9dfd0eb38b542e96593e6d",
+          "text_sha256": "a9f932dd4e6d02dd2bf071b2f61e90cb1bfd7067787d9538aa2230391f79876b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-c23d11c7e0c54dbb": {
+          "source_id": "S-c23d11c7e0c54dbb",
+          "url": "https://esut.de/2026/03/meldungen/69375/sofortbestellung-patriot-und-schakal/",
+          "content_sha256": "f5dafd7f8ea78de398d4a945fb508966fc873fb0cc82c14d0e0dce554237be10",
+          "text_sha256": "a1b6ef356101fc573d87a994cb438df63755c9d9126ac4481af45d0fcfbc21a7",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-c27f8234745c7d46": {
+          "source_id": "S-c27f8234745c7d46",
+          "url": "https://www.eqs-news.com/news/voting-rights/star-capital-partnership-llp-london-grosbritannien/ca26d6d1-b6f4-4843-8026-080b3276d5c3_de",
+          "content_sha256": "0c97d24569eaf95870f82c0b75d469bec951b32faee3c207079ac042721525e0",
+          "text_sha256": "27f3a04606d66186a284d7a563bee01e4b9b37348654504936affcf013f7686e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-c52dfb363bd8c860": {
+          "source_id": "S-c52dfb363bd8c860",
+          "url": "https://www.vincorion.com/wp-content/uploads/2022/09/220628_VIN_Boilerplate_Presse_EN.pdf",
+          "content_sha256": "309b92d8d2933f193286b2ba978aa37bb20443eb176ecb9734ef694299faba92",
+          "text_sha256": "a778c2017fda21222398aa41e27f6a10fa71781a5094ece6f7eab4242999b625",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-c757f1378f7cb8e8": {
+          "source_id": "S-c757f1378f7cb8e8",
+          "url": "https://vincorion.com/ueber-vincorion/",
+          "content_sha256": "37d3692aec29db9b940cd86d8c202d071640a43b4b64d7323657a60d922327ad",
+          "text_sha256": "5ad312f0f2f7e4e2334f22e5262b486c79f11efa4121ae3de0ddf8714edd8605",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-c937f9b7f798fc88": {
+          "source_id": "S-c937f9b7f798fc88",
+          "url": "https://www.eqs-news.com/media/document/24ddf13e-6ac7-4144-b9e7-248345f3c2ca/assets/Audited_Consolidated_Financial_Statements_of_VINCORION_Holding_GmbH_202.pdf",
+          "content_sha256": "b76fa69b022471ff4e0b077cd3dc7bff950e315f45bcb34f9d1aeeb2200f4cb4",
+          "text_sha256": "b93ecf70fdf5d921dd4b963cd131d1efd903a3f03c2329278113955f17fb2888",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-cc02087fd9dc8a31": {
+          "source_id": "S-cc02087fd9dc8a31",
+          "url": "https://www.army-technology.com/news/curtiss-wright-subcontracted-to-deliver-tdss-for-kf51-panther/",
+          "content_sha256": "08e27ade8c1cf2364befab6aba9f84d6c403ab55936f7cdeaac91b4a9b24bca6",
+          "text_sha256": "5cd3e8bd78882410ee2f1ed8b05f3d0ca0ec76cb8c93b3fdba7e0a26021c5bd5",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-cc471b88cedc6672": {
+          "source_id": "S-cc471b88cedc6672",
+          "url": "https://www.heli-one.com/news-insights/heli-one-and-vincorion-intend-to-partner-to-bring-next-generation-electrical-rescue-hoist-erh-to-civil-and-military-helicopter-market",
+          "content_sha256": "2c7be0794e66686edb2ca851a6aa7adff207755b6ec577933b8d9d940f6c0601",
+          "text_sha256": "a0d2338fdac374b2d6fd0fd2881a943992261b8a4b774442066d40b436166893",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-cc53a835b9b5e94c": {
+          "source_id": "S-cc53a835b9b5e94c",
+          "url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw37-de-a-1194766",
+          "content_sha256": "89feb0163f81d9b19a96b86cc9b0b56c1bb62a6f905be6346bd538db2a52be04",
+          "text_sha256": "986e48c5d45725b576732caa4665b7b291e11b2a481e539cce139669625dede9",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-cc67e4cde6b4d5e7": {
+          "source_id": "S-cc67e4cde6b4d5e7",
+          "url": "https://defence-network.com/renk-rekordauftragseingang-im-ersten-halbjahr/",
+          "content_sha256": "621274fc0bc9be7527b5afbb715bec36c4da2d5ecdfa103402f3ba31b1a32564",
+          "text_sha256": "9c83402d41eb915cef50d5dc7c71db1876c633ba99f74919aadea7cd812b8515",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-ce00f9dbb3f39faf": {
+          "source_id": "S-ce00f9dbb3f39faf",
+          "url": "https://thedefensepost.com/2025/12/11/nato-nh90-netherlands/",
+          "content_sha256": "6cb771f95a045eef3810cea756bca35796a637c29da891579e89843d1b96a2e2",
+          "text_sha256": "9773c60a7ee6997fbb8ffa72ccf9f48aba889d59e56bba179ffed702441ba05b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-cf5da52d7e491be7": {
+          "source_id": "S-cf5da52d7e491be7",
+          "url": "https://esut.de/2024/07/meldungen/51431/weitere-vier-feuereinheiten-patriot-fuer-die-luftverteidigung/",
+          "content_sha256": "f347ef13300ce76a2532ea2d740f41397b376968be39b9a88ac44b50a69b1d8f",
+          "text_sha256": "7165fb899c2d10a09f0324d0d64534f0383737378910fe600a381342f8e6f72c",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-d0a2881113c61290": {
+          "source_id": "S-d0a2881113c61290",
+          "url": "https://esut.de/2026/07/meldungen/73223/vincorion-meldet-auftraege-im-wert-von-mehr-als-100-millionen-euro/",
+          "content_sha256": "2fea030dcb74ea72f5e37fc04f84237696c1f7918a0ad80e32ebed9c1743c188",
+          "text_sha256": "ac93b4f4da16ab59c5926a2665459e180b269cf04562c341430bca9c9d38c699",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-d0d2972eaed04786": {
+          "source_id": "S-d0d2972eaed04786",
+          "url": "https://de.tradingview.com/news/eqs:052883646600c:0/",
+          "content_sha256": "26817d8a53ee373b7401982b84a40b75340e6ac56b83f68844113e67994a598d",
+          "text_sha256": "8c796335b08de7184a982360d6443821f5e7d8ec8e655a9ada5601a7f70a5bdf",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-d0efd24bcbc15570": {
+          "source_id": "S-d0efd24bcbc15570",
+          "url": "https://vincorion.com/services/",
+          "content_sha256": "965e016c257a38cffeea614e623725e7ba7aa36128ae3ef5ce6a7fcef4ddccb7",
+          "text_sha256": "758b1e45eae6f3c62bc12b6a985e062339b997dfd99f705153615a6c8fd74925",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-dac611b633e8e050": {
+          "source_id": "S-dac611b633e8e050",
+          "url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1205070",
+          "content_sha256": "d6e0ca80d8574156e70f8f2f92bd71b6830222bba8b0dd68d3cf4af8f38b7bd8",
+          "text_sha256": "daf61fc1cd129667b09b916050ee24d569885ef18ae7f60d7146afe1d6fa859b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-db2fa0537999b2fc": {
+          "source_id": "S-db2fa0537999b2fc",
+          "url": "https://vincorion.com/en/change-in-management-at-vincorion/",
+          "content_sha256": "f5f8dec1958c5479159907a00bff706a706797ab3f38a978ee5f6fc32034b06b",
+          "text_sha256": "699dddab20a7d689b2f81d6ae3342f997e1d8c528e0bf5f377c49b3f0a987988",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-dc13a62f8aaefe56": {
+          "source_id": "S-dc13a62f8aaefe56",
+          "url": "https://www.aviationpros.com/aircraft-maintenance-technology/aircraft-technology/maintenance-providers/helicopter-maintenance/press-release/11299951/breeze-eastern-corporation-breeze-eastern-secures-37-million-contract-for-advanced-rescue-hoists",
+          "content_sha256": "c40f121918279f6ec335b023e8ae8524824828eda417b8135c6a43cf6ccd2cc5",
+          "text_sha256": "13369c0a0ac6f7ee6288b910381e8db52d6d53368ab6f2edc65d87f9161f8f9d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-dd0084d15f0763e9": {
+          "source_id": "S-dd0084d15f0763e9",
+          "url": "https://www.helis.com/database/news/pegasus-rescue-hoist-leonardo",
+          "content_sha256": "5db77d26f981f4d32ea1a1c7f2670ea1e60c6cbd27aa4000631bff69dbd7ddc8",
+          "text_sha256": "f1f6b0e7e9c58a2c806db3931ff1080becf6a9182e98e15c58bede2cf1e9b3ca",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-e1deeb15ad1f4105": {
+          "source_id": "S-e1deeb15ad1f4105",
+          "url": "https://vincorion.com/power-systems/tactical-power-systems/",
+          "content_sha256": "3be98665c27d1390be9776fffbfd1e6fd8938f52b3603ced6e6017727fb27a43",
+          "text_sha256": "a7f1580266f6f27d0826b671156df24634ddc8254deef2ffe591a31cd1e00437",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-e1f50ca0e7fe88cd": {
+          "source_id": "S-e1f50ca0e7fe88cd",
+          "url": "https://www.eqs-news.com/media/document/bcf3789a-c391-49d7-85cb-31b54cd81fd6/assets/20260506_VINCQ1results_presentation_01.pdf",
+          "content_sha256": "f77c67cecdf3eccf8b5c98a5c0102062eb6bb99c222d9119d896619c5a585c3a",
+          "text_sha256": "a0aff4eea25d1f723197f67686d059907b4d16af8b418686d77603fc89439334",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-e237c20f9db90c17": {
+          "source_id": "S-e237c20f9db90c17",
+          "url": "https://www.nato.int/en/news-and-events/articles/news/2026/07/07/defence-investment-update-record-spending-in-europe-and-canada",
+          "content_sha256": "42dcead9bc1b29827e154d0a35799f32a04293c7d4c441f4a6e61e41baacd06a",
+          "text_sha256": "d0e5a845fe3a4a559466565bd09cb24e6cfbd27b650b0c7db26f03987663d21c",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-e5b2172843ae61b7": {
+          "source_id": "S-e5b2172843ae61b7",
+          "url": "https://www.eqs-news.com/news/ad-hoc/vincorion-se-vincorion-se-reports-41-higher-revenue-for-the-first-9-months-of-2026-compared-to-the-same-period-last-year-full-year-guidance-raised/1e1dc173-dcc2-4702-88cb-fff738bedbe7",
+          "content_sha256": "53e745e6bea4b328a00b2d1d9867da337570c693d48b0ecdb8f5b2aeb55e8cf3",
+          "text_sha256": "2288b2929da1adbe337f9604da4782e7d78e3b0dfc2681eddc21684a51bd5b16",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-e5b3f1b606863b64": {
+          "source_id": "S-e5b3f1b606863b64",
+          "url": "https://suv.report/haushaltsausschuss-billigt-16-ruestungsvorhaben/",
+          "content_sha256": "1746b7e04f3a70a6eb99c25507c246c738413a67f9b14807d7c6656ff36340dd",
+          "text_sha256": "be6eb3436d92f275d16fa50cbb8285ad7de81a018b65ac06f495a5417c9caad7",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-e6d4f9c56a8f6ac9": {
+          "source_id": "S-e6d4f9c56a8f6ac9",
+          "url": "https://esut.de/2025/12/meldungen/66279/20-weitere-leichte-kampfhubschrauber-h145m-abgerufen/",
+          "content_sha256": "0582e3447e7c7a3b558459639dcf8ac6d29c62b543c7c3a1ad8ae4f3ddc53e4c",
+          "text_sha256": "910f3e7f92c09b5a6f0b7cbcd328f352751ead93853c4bd282589d3d66b19821",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-ea665c3b5913031c": {
+          "source_id": "S-ea665c3b5913031c",
+          "url": "https://www.webdisclosure.com/press-release/vincorion-se-etr-vincorion-plans-initial-public-offering-on-frankfurt-stock-exchange-cXxkDYxUa4t",
+          "content_sha256": "48ee8be89932a14afa6aa4c17faf20527feb81a803945b62dd5df89d7b9c81fe",
+          "text_sha256": "5cae4aa942bb5695d41983ea121df37889cd3590c5440df4c07a944930b5a3ee",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-ed98726b2fefc36a": {
+          "source_id": "S-ed98726b2fefc36a",
+          "url": "https://www.heidelberg.com/global/media/de/global_media/investor_relations/ir_reports_and_presentations/2025_26/260610_apc_2526_press_release.pdf",
+          "content_sha256": "6a406bc4a17c8554ee086948bc35dd17747f0f63d9507f4732b15b3ea590b36e",
+          "text_sha256": "55c2b4400f07199752611d3e63f38be16e68f453ec7010666bb9b7ffb4b9a5bf",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-f113efb0e3928467": {
+          "source_id": "S-f113efb0e3928467",
+          "url": "https://vincorion.com/en/strategic-partner-heidelberg/",
+          "content_sha256": "96d5e1f99f0452fc42511620c3c2264486031563c931e076037777c3bd88e5d4",
+          "text_sha256": "f9321a5ee133d3bf89e2f0d94b0c763a846c3c17101a4a78400054185de6c861",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-f5bf30dfbbbbe817": {
+          "source_id": "S-f5bf30dfbbbbe817",
+          "url": "https://strategic-technologies.europa.eu/step-results/step-stories/sentinel-autonomous-energy-solutions-military-camps-and-tactical-operations_en",
+          "content_sha256": "9d964da691e14a68eb8900f3a7b2b9fc5031b6b75cc48cee5ea96c4b64648df4",
+          "text_sha256": "36069358077e59c8255f710eaa88048c34b1b99989c129ffeeadb952cbec962a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-f942f17095dddde3": {
+          "source_id": "S-f942f17095dddde3",
+          "url": "https://www.defence-industries.com/index.php/pressreleases/signia-aerospace-completes-acquisition-of-goodrich-hoist",
+          "content_sha256": "0f813c177042b3fd97ba7756f3e566950fa6a8ea9311c7bb755b17ec6f6a6fe5",
+          "text_sha256": "259e765c0356ed70c06aaca41500f7f56e88ae94a636df13d254709526a45417",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-faafad3dafb1ee13": {
+          "source_id": "S-faafad3dafb1ee13",
+          "url": "https://militaeraktuell.at/vincorion-investiert-in-standort-altenstadt/",
+          "content_sha256": "a6e40c6e85b4123642adb55439e60674f85b09c5e4648d94c77fee5fdd7d4ec4",
+          "text_sha256": "e73a71d677eb6bcbcd19910a4ec16fcd54d4034c547177a9167d2b3e2726a75e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-fc1cb698358d5e90": {
+          "source_id": "S-fc1cb698358d5e90",
+          "url": "https://vincorion.com/power-systems/air-defense-power-systems/",
+          "content_sha256": "887bfbac8628279874837fadcb0bd6dcedd784f48bf4d467654fc2aab54663b2",
+          "text_sha256": "005064d45f845eae3cca1d1c45af08a3dbb557b7b8e31d9c4bce0be515fbd16b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-fc700fac0eba154e": {
+          "source_id": "S-fc700fac0eba154e",
+          "url": "https://vincorion.com/aircraft-systems/",
+          "content_sha256": "7af038aa3d83e98c97362dd787c2b53cf79bdb32c92961966d27b222471f8f59",
+          "text_sha256": "2c21f8406ee7c80c57711bad6a2d465e2c80daa27fd1945dab8649acca3d7c5d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-fc98b1be625dfcf4": {
+          "source_id": "S-fc98b1be625dfcf4",
+          "url": "https://vincorion.com/aircraft-systems/auxiliary-systems/",
+          "content_sha256": "25eda596416361c110bbd4baf0925e736c5d7b7a2b334a320cf00a28d628717a",
+          "text_sha256": "1563d4858b911cc1fd2c50258337a8131c32070725db1ec335e036dfcc786394",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-ff2d8a0dfc4437ff": {
+          "source_id": "S-ff2d8a0dfc4437ff",
+          "url": "https://esut.de/2024/02/meldungen/47709/bundeswehr-beschafft-19-flugabwehrsysteme-skyranger-30-auf-boxer/",
+          "content_sha256": "9ff869a93c6de486dee180c9f58ac8cc757f9a07eda39a7e80afe04901f361a6",
+          "text_sha256": "6b1b080b43f391befc9d25923a1cac849e585f8947fb68773170d861681e0d98",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        }
+      },
+      "dependencies": {
+        "cluster": "62a8a6318afeba31ba58d466322d7c40b69e7348c1382e260765af5792f89608",
+        "context": "e4604c5f3ff9b07e50d0dddf039945567fca1595cf8975363cc06be67a6d40e7",
+        "focus:wachstumsmaerkte": "64cac6ab40b0d589f3df8fca48b346cc2e6fc29cd996e0bde9b3b299546272a7",
+        "market": "f7e13626d6eeddc8cdab983603557af88f4ee263401201dbd5c098d8a3f0243c",
+        "plan": "a152b1e06cd1247696e8ba7f0042d3cbc6f4b1269235c291e838b05751b04f31",
+        "portfolio": "d3f674c6788044fce8caa4c918d55d4c90c2e03a63ccceecfc11f74d2434d381"
+      },
+      "checked_at": "2026-10-20T17:10:08+00:00",
+      "fingerprint": "ea815f61e42b68b127f078f7a3afdc191b3b8b086857522b6ce2237daaa21bd7"
     }
   },
   "created_at": "2026-10-20T12:02:09+00:00",
   "notice": "Local completion records only; content approval and visual QA remain separate.",
-  "fingerprint": "ca21ad4efb215de3514fe5741bdecacaffaaa0dcc85825d0ebcfaaf84838f605"
+  "fingerprint": "a1a55d2dba3aa04c35469830be4d4b1f274a7b79db9bfa7dbccc6055726eb85f"
 }

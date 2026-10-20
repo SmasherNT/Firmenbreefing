@@ -659,10 +659,24 @@
    "depth_reason": "Matrix-Beobachtung (Wettbewerbsvergleich); vollständige Prüfung nach Vergleichsvertrag",
    "event_date": "2014-01-22",
    "event_status": "beauftragt (laut Unternehmen)"
+  },
+  {
+   "id": "M42",
+   "statement": "Laut KNDS-Pressemitteilung vom 19.12.2025 hat das BAAINBw mit dem Gemeinschaftsunternehmen PSM (Rheinmetall/KNDS Deutschland) eine Änderung des Puma-Rahmenvertrags über 200 Schützenpanzer Puma unterzeichnet (Bruttovolumen rund 4,2 Mrd. Euro, je 2,1 Mrd. Euro für KNDS und Rheinmetall Landsysteme; rechtswirksam ab Januar 2026; erste Fahrzeuge Mitte 2028). Eine Vertragsänderung zum Bauzustand S2 (u. a. Obsoleszenzbeseitigung, Drohnenabwehr) ist für Mitte 2026 geplant; zudem wurde 2023–2024 die Modernisierung von 297 Bestands-Puma auf S1 beauftragt (Abschluss 2029).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-911f31a79239eaca"
+   ],
+   "evidence": "Auszug: „It has commissioned Projekt System & Management GmbH (PSM) … to supply 200 PUMA Infantry Fighting Vehicles … The corresponding amendment to the existing framework contract has now been signed at the … BAAINBw … The contract will take legal effect in January 2026. The total gross volume of the procurement is €4,2 billion … The first vehicles are scheduled for delivery in mid-2028.“ „…a contract amendment for the S2 construction status is planned for mid-2026.“ „Between 2023 and 2024, the BAAINBw commissioned the comprehensive modernisation of 297 PUMA IFVs … will be completed in 2029“",
+   "location": "Pressemitteilung, Absätze 1–3 und 5",
+   "uncertainty": "Unternehmensangabe des Herstellers; Zulieferumfang (z. B. Energie-/Stabilisierungssysteme) nicht genannt; S2-Änderung nur geplant.",
+   "proposed_depth": "A",
+   "depth_reason": "Markt-/Nachfragefakt für Seite 1 und Wachstumsthema; trägt spätere Ableitungen",
+   "event_date": "2025-12-19",
+   "event_status": "Vertragsänderung unterzeichnet (laut Hersteller)"
   }
  ],
  "reuse_claim_ids": [
-  "F_wachstumsmaerkte_10",
   "P04",
   "P06",
   "P07",
@@ -758,7 +772,9 @@
    "claim_ids": [
     "M09",
     "M10",
-    "F_wachstumsmaerkte_10",
+    "M42",
+    "P13",
+    "P14",
     "M11",
     "M04",
     "M12",
@@ -775,7 +791,9 @@
     {
      "label": "Puma",
      "claim_ids": [
-      "F_wachstumsmaerkte_10"
+      "M42",
+      "P13",
+      "P14"
      ]
     },
     {
@@ -838,6 +856,7 @@
     "M08",
     "M09",
     "M10",
+    "M42",
     "M11",
     "M12",
     "M13",
@@ -1831,57 +1850,57 @@
   },
   {
    "id": "S-9670ee4232da6c72",
-   "name": "VINCORION SE",
-   "title": "H1 2026 Results (Ergebnispräsentation)",
+   "name": "VINCORION SE Investorenpräsentation",
+   "title": "H1 2026 Results (Präsentation, 13. August 2026)",
    "url": "https://ir.vincorion.com/media/document/0f2dd31d-9994-4d99-9b4f-9bfc77e5e5f8/assets/2026-08-13_VINC_HY1_2026_result_presentation_final.pdf",
    "published_date": "2026-08-13",
    "accessed_date": "2026-10-20",
-   "source_kind": "Unternehmenspräsentation (IR)"
+   "source_kind": "Investorenpräsentation (PDF)"
   },
   {
    "id": "S-b87584cb356cf171",
-   "name": "VINCORION SE",
-   "title": "Q1 2026 Results (Ergebnispräsentation)",
+   "name": "VINCORION SE Investorenpräsentation",
+   "title": "Q1 2026 Results (Präsentation)",
    "url": "https://ir.vincorion.com/media/document/bcf3789a-c391-49d7-85cb-31b54cd81fd6/assets/20260506_VINCQ1results_presentation_01.pdf",
    "published_date": "2026-05-07",
    "accessed_date": "2026-10-20",
-   "source_kind": "Unternehmenspräsentation (IR)"
+   "source_kind": "Investorenpräsentation (PDF)"
   },
   {
    "id": "S-83f92f2cf0494e24",
-   "name": "VINCORION",
-   "title": "VINCORION Provides Power for Switzerland’s Patriot System",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "VINCORION Provides Power for Switzerland's Patriot System",
    "url": "https://vincorion.com/en/vincorion-switzerland-patriot/",
    "published_date": "2023-08-02",
    "accessed_date": "2026-10-20",
-   "source_kind": "Pressemitteilung (Unternehmen)"
+   "source_kind": "Herstellerangabe"
   },
   {
    "id": "S-b8bbd90710a297a5",
-   "name": "VINCORION",
-   "title": "VINCORION Lands $67 Million Contract for Patriot Maintenance",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "VINCORION Wins $67 Million Contract for Patriot Maintenance in the United States",
    "url": "https://vincorion.com/en/patriot-maintenance-million-contract/",
    "published_date": "2024-06-13",
    "accessed_date": "2026-10-20",
-   "source_kind": "Pressemitteilung (Unternehmen)"
+   "source_kind": "Herstellerangabe"
   },
   {
    "id": "S-6e6d85a309774afc",
-   "name": "VINCORION",
+   "name": "VINCORION SE (Newsroom)",
    "title": "VINCORION Awarded Major Contract for Generators for the Boxer Wheeled Tank",
    "url": "https://vincorion.com/en/vincorion-awarded-major-contract-for-generators-for-the-boxer-wheeled-tank/",
    "published_date": "2024-04-04",
    "accessed_date": "2026-10-20",
-   "source_kind": "Pressemitteilung (Unternehmen)"
+   "source_kind": "Herstellerangabe"
   },
   {
    "id": "S-1aa8f95b2599facc",
-   "name": "VINCORION",
-   "title": "VINCORION Supplies Innovative Weapon Stabilization System",
+   "name": "VINCORION SE (Newsroom)",
+   "title": "High-Tech for Precise Hits: VINCORION Supplies Innovative GTD chaserV Weapon Stabilization System",
    "url": "https://vincorion.com/en/large-scale-weapon-stabilization-gtd-chaser/",
    "published_date": "2024-06-19",
    "accessed_date": "2026-10-20",
-   "source_kind": "Pressemitteilung (Unternehmen)"
+   "source_kind": "Herstellerangabe"
   },
   {
    "id": "S-945a20788677cd82",
@@ -1890,7 +1909,7 @@
    "url": "https://militaeraktuell.at/en/diehl-vincorion-supplies-iris-t-slm-with-energy/",
    "published_date": "2023-03-22",
    "accessed_date": "2026-10-20",
-   "source_kind": "Fachmedium"
+   "source_kind": "Sekundärquelle"
   },
   {
    "id": "S-cf5da52d7e491be7",
@@ -2143,6 +2162,15 @@
    "published_date": null,
    "accessed_date": "2026-10-20",
    "source_kind": "Herstellerwebsite (Wettbewerber)"
+  },
+  {
+   "id": "S-911f31a79239eaca",
+   "name": "KNDS / Rheinmetall",
+   "title": "Reinforcement of the Bundeswehr's PUMA fleet: 200 infantry fighting vehicles, contract value around EUR 4.2 billion",
+   "url": "https://knds.com/en/press-releases/reinforcement-of-the-bundeswehr-s-puma-fleet-rheinmetall-and-knds-deutschland-to-supply-200-infantry-fighting-vehicles-to-the-german-army-contract-value-around-4-2-billion",
+   "published_date": "2025-12-19",
+   "accessed_date": "2026-10-20",
+   "source_kind": "Unternehmensmitteilung"
   }
  ],
  "gaps": [
@@ -2153,7 +2181,6 @@
   "Pegasus-Kennwerte nur aus Aggregator-Einleitung (Helis), nicht aus Herstellerdatenblatt.",
   "Durchführung des für Oktober 2026 geplanten ERH-Erstflugs bis Stichtag nicht belegt.",
   "Status der Schakal-Vorlage (DE, 15.10.2025) nach Ausschussbefassung in der geöffneten Quelle nicht belegt.",
-  "Puma-Programm wird über F_wachstumsmaerkte_10 (Fokusmodul) referenziert; bei Änderung der Fokus-IDs ist die Region-Zuordnung anzupassen.",
   "Matrix: vin_tactical × service – öffentlich nicht belegt (Kein angebotsspezifisches Service-/Lifecycle-Angebot für PGM tacticalV/ESM hybridV gefunden; nur unternehmensweites Lifecycle-Angebot (P46) – nicht übertragen.)",
   "Matrix: drs_obvp × fertigung – öffentlich nicht belegt (Kein Fertigungsstandort/Kapazitätsbeleg für OBVP in geöffneten Quellen; leonardodrs.com nicht abrufbar (HTTP 403).)",
   "Matrix: drs_obvp × service – öffentlich nicht belegt (Kein angebotsspezifisches Service-/Lifecycle-Angebot gefunden.)",
@@ -2219,9 +2246,10 @@
     "S-7bc3da69386f5632",
     "S-c23d11c7e0c54dbb",
     "S-1aa8f95b2599facc",
-    "S-6e6d85a309774afc"
+    "S-6e6d85a309774afc",
+    "S-911f31a79239eaca"
    ],
-   "finding": "350 A8-Bestellungen aus fünf Ländern; Schakal DE-Vorlage/NL-Vertrag; Puma-Erweiterung über Fokus-Claim F_wachstumsmaerkte_10 referenziert. PzH-2000-Neuaufträge 2025/26 nicht gesondert belegt.",
+   "finding": "350 A8-Bestellungen aus fünf Ländern; Schakal DE-Vorlage/NL-Vertrag; Puma-Erweiterung 200 Fahrzeuge (KNDS-Mitteilung, M42). PzH-2000-Neuaufträge 2025/26 nicht gesondert belegt.",
    "status": "geprüft mit Beleg"
   },
   {
