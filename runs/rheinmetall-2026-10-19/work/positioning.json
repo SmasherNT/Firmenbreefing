@@ -215,18 +215,18 @@
    "section": "capability_matrix",
    "peer_id": "rheinmetall",
    "criterion_id": "range",
-   "cell_status": "weitere Faktenprüfung nötig",
+   "cell_status": "nicht öffentlich belegt",
    "value": null,
-   "headline": "Nur Testrekorde 2019, kein Datenblattwert",
-   "preview": "67 km (L52, Test 2019) keiner Serienvariante/Ladung eindeutig zugeordnet",
-   "statement": "Für Rheinmetall liegen nur Testwerte von 2019 vor; eine Datenblatt-Maximalreichweite je angebotener Variante mit Rohr und Ladung ist nicht belegt.",
+   "headline": "Kein Datenblattwert; nur Testrekorde 2019",
+   "preview": "Testwerte (u. a. 67 km L52) ohne eindeutige Varianten-/Ladungszuordnung",
+   "statement": "Für Rheinmetall ist keine veröffentlichte Maximalreichweite einer angebotenen 155-mm-Variante mit Rohr und Ladung belegt; vorhanden sind nur Testwerte von 2019.",
    "depends_on": [
     "M-RHM-02"
    ],
-   "reasoning": "Der Plan verlangt Werte je Variante mit Rohr/Ladung und trennt Test- von Datenblattwerten. Die Rekordschüsse lassen sich keiner angebotenen Serienvariante mit Ladung eindeutig zuordnen; ein Zahlenwert wäre mit den Datenblattwerten der Peers nicht vergleichbar.",
+   "reasoning": "Das Kriterium verlangt die Maximalreichweite der weitreichendsten angebotenen Variante mit Rohr/Ladung und trennt Test- von Datenblattwerten. Die Rekordschüsse 2019 sind keiner angebotenen Serienvariante mit Ladung eindeutig zugeordnet und erfüllen die Bedingung daher nicht.",
    "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
-   "uncertainty": "Keine Aussage über eine Leistungsschwäche der Serienmunition.",
-   "coverage_note": "Testschießen Alkantpan 06.11.2019 (Herstellerangabe): 67 km aus PzH 2000 L52, 76 km aus G6 (nicht JBMoU-konform), 54 km aus L39; Geschossvariante je Schuss und Ladung nicht vollständig angegeben; kein Datenblattwert in den geöffneten Quellen."
+   "uncertainty": "Keine Aussage, dass die Fähigkeit fehlt oder die Serienmunition geringere Reichweiten erzielt.",
+   "coverage_note": "Belegt sind nur Testwerte vom 06.11.2019 (Alkantpan, Herstellerangabe): 67 km aus PzH 2000 L52, 76 km aus G6 (nicht JBMoU-konform), 54 km aus L39; Geschossvariante je Schuss und Ladung nicht vollständig angegeben; kein Datenblattwert in den geöffneten Quellen."
   },
   {
    "id": "I-M-rheinmetall-integration",
@@ -508,21 +508,21 @@
    "section": "capability_matrix",
    "peer_id": "knds",
    "criterion_id": "capacity",
-   "cell_status": "weitere Faktenprüfung nötig",
+   "cell_status": "nicht öffentlich belegt",
    "value": null,
    "headline": "Werksziel 100.000/Jahr ohne Zieljahr",
    "preview": "Verdreifachung ohne Basiswert; Polen-Ziel 180.000 betrifft Partnerwerk",
-   "statement": "Für KNDS liegt kein Kennwert nach Planbedingungen vor: Das Werksziel von 100.000 Geschossen pro Jahr hat kein Zieljahr, weitere Angaben betreffen Partner oder Steigerungsraten.",
+   "statement": "Für KNDS ist keine Ist- oder Zielkapazität mit Zieljahr öffentlich belegt; das Werksziel von 100.000 Geschossen pro Jahr hat kein Zieljahr.",
    "depends_on": [
     "M-KND-06",
     "M-KND-04",
     "M-KND-05",
     "M-KND-07"
    ],
-   "reasoning": "Der Plan verlangt Ist- oder Zielkapazität mit Zieljahr und Kennzeichnung Werk/Konzern. Keine KNDS-Angabe erfüllt dies vollständig; Partner- und Zuliefererwerte werden nicht als KNDS-Kapazität übernommen.",
+   "reasoning": "Das Kriterium verlangt Ist- oder Zielkapazität mit Zieljahr und Kennzeichnung Werk/Konzern. Keine geprüfte KNDS-Angabe erfüllt dies; Partner- und Zuliefererwerte werden nicht als KNDS-Kapazität übernommen.",
    "method": "Kennzahl nach Planbedingungen (Einheit/Variante/Bedingung)",
-   "uncertainty": "",
-   "coverage_note": "Le Monde (04/2025, Sekundärwiedergabe): Ziel 100.000 pro Jahr in La Chapelle-Saint-Ursin ohne Zieljahr; Verdreifachung seit 2022 ohne Basiswert; 180.000 Sätze pro Jahr sind Ziel eines polnischen Partnerwerks; Tarbes liefert nur Hüllen; keine konzernweite Ist-Kapazität."
+   "uncertainty": "Keine Aussage über die tatsächliche Fertigungskapazität.",
+   "coverage_note": "Belegt sind: Ziel 100.000 pro Jahr in La Chapelle-Saint-Ursin ohne Zieljahr (Le Monde 04/2025, Sekundärwiedergabe); Verdreifachung seit 2022 ohne Basiswert; 180.000 Sätze pro Jahr als Ziel eines polnischen Partnerwerks; Tarbes liefert nur Hüllen; keine konzernweite Ist-Kapazität."
   },
   {
    "id": "I-M-knds-procurement",
@@ -2391,7 +2391,7 @@
   {
    "id": "RQ-07",
    "target_role": "source-reviewer",
-   "question": "Schluss-Review: Sind (a) Kraken K3 Scout als Stufe 6 allein auf Basis des gemeldeten Serienstarts ohne Kundenauftrag, (b) BAE-Integration 4/4 über die Betreiberrolle staatseigener US-Werke, (c) GD-OTS-Beschaffung 2/4 trotz Task-Order-Struktur und (d) die Rheinmetall-Reichweite als 'weitere Faktenprüfung nötig' sachgerecht abgegrenzt?",
+   "question": "Schluss-Review: Sind (a) Kraken K3 Scout als Stufe 6 allein auf Basis des gemeldeten Serienstarts ohne Kundenauftrag, (b) BAE-Integration 4/4 über die Betreiberrolle staatseigener US-Werke, (c) GD-OTS-Beschaffung 2/4 trotz Task-Order-Struktur und (d) Rheinmetall-Reichweite sowie KNDS-Kapazität als 'nicht öffentlich belegt' sachgerecht abgegrenzt?",
    "related_claim_ids": [
     "P-N50",
     "C-STR-13",
@@ -2406,7 +2406,7 @@
   "Grundlage sind ausschließlich die 270 geprüften A-Fakten des delegierten Kontexts (Basis-Review freigegeben, keine pending_checks); keine Webrecherche, keine neuen Fakten.",
   "Unternehmenskennzahlen, Liefer-, Kapazitäts- und Produktangaben sind überwiegend Hersteller- bzw. Medienangaben; Q3-2026-Zahlen lagen zum Stichtag nicht vor.",
   "Capability-Matrix-Stufen zeigen öffentliche Evidenzreife je Kriterium nach den Ankern des Vergleichsplans v1, keine technische Überlegenheit; keine Addition, Mittelung oder Gesamtrangliste. Reichweitenwerte sind Herstellerangaben mit unterschiedlichen Mess-/Simulationsgrundlagen.",
-  "Anker 1 der Vertikalintegration ('keine eigene Fertigung öffentlich belegt') wird nicht vergeben; Beleglücken stehen als 'nicht öffentlich belegt' bzw. 'weitere Faktenprüfung nötig' ohne Wert.",
+  "Anker 1 der Vertikalintegration ('keine eigene Fertigung öffentlich belegt') wird nicht vergeben; Beleglücken stehen als 'nicht öffentlich belegt' ohne Wert; RQ-01/RQ-02 bleiben dokumentierte, nicht blockierende Grenzen.",
   "Produktreife bündelt teils mehrere Varianten in einer Zeile; die Stufe folgt dem höchsten konkret belegten Meilenstein, Variantenunterschiede stehen in der Begründung. 'Nicht eindeutig bestimmbar' ist Beleglücke, keine Unreife.",
   "Regionale Präsenzstufen messen organisatorische Verankerung nach regional-presence-v2 (JV-Kontrolle nur über Vollkonsolidierung belegt), nicht Umsatz oder Marktanteil; Regionsaggregate (Nordeuropa, Australien/Neuseeland, Naval-Ausland) folgen dem stärksten belegten Land."
  ]

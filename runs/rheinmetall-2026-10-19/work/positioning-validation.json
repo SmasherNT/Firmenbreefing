@@ -1,0 +1,962 @@
+{
+  "run_id": "rheinmetall-2026-10-19",
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-19",
+  "phase": "final",
+  "required_full_review_ids": [
+    "I-ES-1",
+    "I-ES-2",
+    "I-ES-3",
+    "I-ES-4",
+    "I-ES-5",
+    "I-ES-6",
+    "I-HL-1",
+    "I-HL-2",
+    "I-HL-3",
+    "I-M-bae-capacity",
+    "I-M-bae-industrial",
+    "I-M-bae-integration",
+    "I-M-bae-procurement",
+    "I-M-bae-range",
+    "I-M-bae-spectrum",
+    "I-M-gdots-capacity",
+    "I-M-gdots-industrial",
+    "I-M-gdots-integration",
+    "I-M-gdots-procurement",
+    "I-M-gdots-range",
+    "I-M-gdots-spectrum",
+    "I-M-hanwha-capacity",
+    "I-M-hanwha-industrial",
+    "I-M-hanwha-integration",
+    "I-M-hanwha-procurement",
+    "I-M-hanwha-range",
+    "I-M-hanwha-spectrum",
+    "I-M-knds-capacity",
+    "I-M-knds-industrial",
+    "I-M-knds-integration",
+    "I-M-knds-procurement",
+    "I-M-knds-range",
+    "I-M-knds-spectrum",
+    "I-M-nammo-capacity",
+    "I-M-nammo-industrial",
+    "I-M-nammo-integration",
+    "I-M-nammo-procurement",
+    "I-M-nammo-range",
+    "I-M-nammo-spectrum",
+    "I-M-rheinmetall-capacity",
+    "I-M-rheinmetall-industrial",
+    "I-M-rheinmetall-integration",
+    "I-M-rheinmetall-procurement",
+    "I-M-rheinmetall-range",
+    "I-M-rheinmetall-spectrum",
+    "I-MI-cluster-1",
+    "I-MI-cluster-2",
+    "I-MI-cluster-3",
+    "I-MI-market-1",
+    "I-MI-market-2",
+    "I-MI-market-3",
+    "I-MI-portfolio-1",
+    "I-MI-portfolio-2",
+    "I-MI-portfolio-3",
+    "I-PM-airsat",
+    "I-PM-airsensors",
+    "I-PM-art155",
+    "I-PM-battlesuite",
+    "I-PM-boxer",
+    "I-PM-civilrest",
+    "I-PM-cuas",
+    "I-PM-defelec",
+    "I-PM-dlbo",
+    "I-PM-f126",
+    "I-PM-f35",
+    "I-PM-fdb",
+    "I-PM-frigpipe",
+    "I-PM-fv014",
+    "I-PM-gunsys",
+    "I-PM-idz",
+    "I-PM-intlships",
+    "I-PM-k130",
+    "I-PM-lightveh",
+    "I-PM-lynx",
+    "I-PM-mbt",
+    "I-PM-medcal",
+    "I-PM-mortar",
+    "I-PM-mount",
+    "I-PM-navaldef",
+    "I-PM-navservice",
+    "I-PM-power",
+    "I-PM-propellant",
+    "I-PM-protect",
+    "I-PM-puma",
+    "I-PM-sar",
+    "I-PM-skynex",
+    "I-PM-skyranger",
+    "I-PM-strike",
+    "I-PM-trucks",
+    "I-PM-uas",
+    "I-PM-ugv",
+    "I-PM-usv",
+    "I-PM-vsvc",
+    "I-RP-au",
+    "I-RP-bg",
+    "I-RP-ca",
+    "I-RP-ch",
+    "I-RP-de",
+    "I-RP-es",
+    "I-RP-gb",
+    "I-RP-gulf",
+    "I-RP-hu",
+    "I-RP-it",
+    "I-RP-lt",
+    "I-RP-lv",
+    "I-RP-naval-intl",
+    "I-RP-nl",
+    "I-RP-nordic",
+    "I-RP-pl",
+    "I-RP-ro",
+    "I-RP-sg",
+    "I-RP-ua",
+    "I-RP-us",
+    "I-RP-za"
+  ],
+  "errors": [],
+  "fingerprints": {
+    "I-ES-1": "d976364be5b3e19e0e22a807f37c07270307d689ffc0765167d5dbe14a8c298c",
+    "I-M-rheinmetall-integration": "cb51c6d1b1e82f266edab87ce345f4a9646d9236d98c3a61c5a2a5e154150aaa",
+    "I-M-rheinmetall-industrial": "cfe4692706ce9d721c91bb25ce45d1e045672548bc946ede9cdf9c1b4f62933a",
+    "I-M-rheinmetall-capacity": "9ce3288bda69570e8f8d442419432dc57764410a579dbc7dfdb0b9ea2a57637c",
+    "I-M-rheinmetall-procurement": "29a522e006c9070db92012ffb744350911f8d13d903012a9022031c45ffd6a5e",
+    "I-ES-2": "0e2a1a8889a4f9b0cc4381a411b3c0459d63312fb41585934f4017332ccb2069",
+    "I-ES-3": "301b81945255f537308cdb252456e5f38d75e11e1aaa4eb3658ce1639e70eb64",
+    "I-ES-4": "8d944dc658feda1b1705070b5683e863a34a7a6022c406e4f71f95abb93f282f",
+    "I-RP-de": "8c3960409164c072b2db1179d989c3b920824356ad04264ba25967e18ebd5033",
+    "I-RP-hu": "daf1d12e2692c3f92f2f016e96cec92096d5617648319f13707c304d96032858",
+    "I-RP-za": "6360aa0b2868bba1ab53edff542c2b58b45794c3ff63341511f1d29c6d6e7e83",
+    "I-RP-us": "8bd0469ddbfa1f29a092c29799dda28d4c05e5ae8b81691a6841f1bf826eb7d8",
+    "I-RP-ro": "3d711e4be90b82882b968912a5edf944c5758a513d18a9eb5340504ca4c2a699",
+    "I-RP-ua": "af7db36008989a100eabb40e0e77b6d8410bed930945b4150fcf7a2ee2adac97",
+    "I-ES-5": "23382f8edf14d0f316f52658bbdb2c530ef63b7dd8d852cc2ebb43ac1988b387",
+    "I-PM-skyranger": "94230c5e223b8828d08d2a1062bd1ecfa8712d2ee2e263e070e505da7c61e42b",
+    "I-PM-fv014": "0d040cf4299d1f7969df2637ab49b491f57d133a6ed857d68842d7b17c5a902c",
+    "I-PM-sar": "32b704029c3228636bc49d442e8b74b16eca692530f6e85774f17de0218e418d",
+    "I-ES-6": "018162c2ab308b0edc34d8a0669b0b97d5b705a3b08a72270c953be2b25a4847",
+    "I-HL-1": "fec94a9264c92722928aac1242756e50c1b44dec2f6ce04339743a664589b7e3",
+    "I-HL-2": "3bf84528e95b714152d4031a43bd58fe00b8a02e882f284ab5a319f712e6c4fd",
+    "I-HL-3": "7bc90ee74c6dcb0ac246bf53387cc97e1f0f570421ddba659a6fdacf3e8d17d0",
+    "I-M-rheinmetall-spectrum": "6b52de1892543923cc8a4b1838cb7006c80c638d0d13b5fc8259a3ea6c936a61",
+    "I-M-rheinmetall-range": "ff3e09a04b05161b531613106fa56497d4c0bd85973c2a70c2f1d2648dff5549",
+    "I-M-nammo-spectrum": "2202a8cf1600d731e4b5f69b13c6988af455f019cb412c3f697d251a6ac2ff0a",
+    "I-M-nammo-range": "858b7b1f0250c1eb2f5604608c392d5bd83ad5ba1ee84c8528e52b823d083665",
+    "I-M-nammo-integration": "e4292e63e40d20c3d3e7ab3c8860b9217053c322c25ced494986ea102bc9db1f",
+    "I-M-nammo-capacity": "a6e8e8f841782049d6ec691117b5bd58324347fa09d2d7abaf4fd0ff4ce234e5",
+    "I-M-nammo-procurement": "a060f28a18407a80cc38a95c5bf2b6870602f9449a68949f1dc6e5076bddcce4",
+    "I-M-nammo-industrial": "1c8d5396712ebe645c791726793f0c820e6e742a157a13391afc054588cd88db",
+    "I-M-knds-spectrum": "4961ca28fc9693bad34aaed17457e5321c98de1dab6ddcbd8b1a3511761eff82",
+    "I-M-knds-range": "1a57ac270a6b94fe2cf0ed9d17f23a05a876397a0ad7a9ba4c1aaa11b0930b9a",
+    "I-M-knds-integration": "2aea8de48badc07643177ecdb9b0848021bf8632fc3b320a701f5df4e3806e69",
+    "I-M-knds-capacity": "a7a5a15bf455492137b5f93b5351c9c0ea9bd5e099bae8bf692382f4fc7f2ea4",
+    "I-M-knds-procurement": "3f44ada68981f968f9b3667bf041ff0f3dc6dc68a28349d475159b9dc759279c",
+    "I-M-knds-industrial": "9b5b699e53947e356c00d1a4d45ae098f017799923fdb7734bf4e80998b5ce82",
+    "I-M-bae-spectrum": "5404632d2088152d34db9b7a86c927455774d60013276f3033704227fbc3301e",
+    "I-M-bae-range": "fcb489e06e7d17089e375829cf0e1befe00e9db0e943c80e31ad8014e7e1fa50",
+    "I-M-bae-integration": "438056ba61336af87113e6b2894d2f22ac07d5a7ecab7efe05042dad9c04023c",
+    "I-M-bae-capacity": "52d474c4668c08c8eda5e91b1c8f383e469033e515812cd5833411053f98e211",
+    "I-M-bae-procurement": "9c7baf76266d0509fe4c14b848f25117a556af1dd11bf46f82fbb613a2cff118",
+    "I-M-bae-industrial": "af86e88019157372e305d0d62b9911a8285f7a0ed7f2e590bfd24d5afff62294",
+    "I-M-gdots-spectrum": "9300baf31c0b7a634ac863292309d909412534c24e8c37d7051204e6710d9d75",
+    "I-M-gdots-range": "c3ee713cee0030c775137ce2980073bad97d25d98586e696c0c49b381b199294",
+    "I-M-gdots-integration": "e9a748e21deaacd746f1b218bcedc105b8b4039e107748cf57318bc0ddc45879",
+    "I-M-gdots-capacity": "396445d86b330907fb4d6050aad04377a194d426b64df9ef061f3cba8403d0ba",
+    "I-M-gdots-procurement": "addd14c8636ee0371ed32d17621c5398955a59e8e8166e57fe13449240ac1052",
+    "I-M-gdots-industrial": "d8f51f68ab2233056c151f2177a3ef12eb40f7eafbb6feda5a84a6f780fa5e8b",
+    "I-M-hanwha-spectrum": "92697e404013ddcd407498a9e0f28121e3842675a20b32406304c1e656830b8a",
+    "I-M-hanwha-range": "e007fdfe0f88148811f21a48aab34d0f02207448ce739c0d4b80bc5d3c8db676",
+    "I-M-hanwha-integration": "8670471515ddbc8afd74e3a22c25259b8c16818bbd371a4c62c9dcdb2ecbb788",
+    "I-M-hanwha-capacity": "b23cf640c380fc1731cbe3f0e40e2e5cb928551d8c4bcbd99ecc805d2f0200fd",
+    "I-M-hanwha-procurement": "36f13870593923ed45a89d612df1fe36f8275c78c21265cf477310d0204956f2",
+    "I-M-hanwha-industrial": "9ec123aae17433eb898f693f93c303aed2403de5cba59ef0dcf0f0122f2d3318",
+    "I-PM-boxer": "06ce8854574ed315fe82f22b811c19d0510d0acc0235d84d18c02fee3d8746b3",
+    "I-PM-puma": "f8d433abb97bcbf7c104a543d3355ad579584248fd00d32a4246da6ad08b76a8",
+    "I-PM-lynx": "791366bca5a6e1ad5cd699e7c686cdb58dae78da9177939a865ae41e5486b12e",
+    "I-PM-mbt": "78c2f7f78351cc95514c84f18d82bc47e68db793cbf4ef4370a091f312dd2d99",
+    "I-PM-trucks": "c840c9a4540448599824006d4919b15b5f20e83ee717c03bcf66d93ba03621d3",
+    "I-PM-lightveh": "1fcb7bbea30a67f7e92b161e5265850fd6b66ef0960e2b59de0db1b036d868da",
+    "I-PM-ugv": "0847e22fb5f42d904a2ed208fd0ee1f7f16c00b6f25d663788c20cc999bf1187",
+    "I-PM-vsvc": "9d9945f3e7e02aba4b16470486aee9ee02b5918f4cc2276077b7df9226171860",
+    "I-PM-art155": "af7a622efd16ef5b3e2e926829d03e0acc62a6762c63ac374be6c5991bb6442b",
+    "I-PM-medcal": "6eb62db7c8df1341a3e7124bf1588709756122ff924d0a87f35a20f84fda62a8",
+    "I-PM-gunsys": "c740273d85c19724c0b013947dd824de07bc7c0801913f5f380f84fac380151c",
+    "I-PM-propellant": "5d890e9e2ca2373f0173965d7e18f766710f06be9abd0454cfdfe90ce8e6ca60",
+    "I-PM-mortar": "59a25c3f3fc1ac4416da4e0e02bb8058288d6375611c6c6c57a5be12e0f95212",
+    "I-PM-protect": "9866a2656539662015dbf8243cc91f9e8b816e345cdbd8659c2a17f7ff688402",
+    "I-PM-mount": "41555a29c154275661efdf52f0e48eafc17bb5904a609affa36feaadf8671ac4",
+    "I-PM-strike": "e1207f6de55845fba77460ee445da56204e7aec294fa3bd489fb43333dc883da",
+    "I-PM-skynex": "0b7c4b8efa90aa711941259acf4c5f099ee1002fd6afc95a4425d4087b83b91b",
+    "I-PM-airsensors": "cba0581ea1f8bf6ea63414ad21e90f132773b11055bee379d5bc0f29985b720f",
+    "I-PM-navaldef": "c4576937b0268329752cd906227292e03f7fd8550817e007c18adf3a87a13be1",
+    "I-PM-cuas": "989eb616bc19261a15f47ed429fa4a5b08cf7bcb38334efc7e9799460da8ec80",
+    "I-PM-dlbo": "a76c682b8823f4da88bfc3e00ce94ac51a6e4d6c206f0edfbb52260c419a6e03",
+    "I-PM-idz": "032af20f5ff6288186405ba8f282084def2a34e32b0cf7e719e4fb7dc47a8864",
+    "I-PM-battlesuite": "dc11b10009058aa924c3cde1cec8acc403045513f5a29cae5be14ce2c560a78c",
+    "I-PM-defelec": "770322f19c765dd3845e1034ae09576d1bf2d6235324316604ec145d89fbc767",
+    "I-PM-uas": "2c0d338a213c1c28b984e0f43d0f908924222a879b09e45b3f013a634f1f0d41",
+    "I-PM-airsat": "297166cda4b69172184b210c2cdbb78896b7c87b882657e8550273a843084836",
+    "I-PM-f35": "d862fa675a9464ad3bedbead8b957c24bd44b077ab384fb8832e5faa3c2efca6",
+    "I-PM-k130": "8ebcc27bfaee710578e5c270cd08827129e054bf76db4c049c5f74ee3de6cc65",
+    "I-PM-fdb": "b5b8222c81e4629ef49a028c5e818ba39d3ad415438d026d54097014a3e3653a",
+    "I-PM-intlships": "7d8c96b8999e6c011ee81046b5c1c35ae19a09f58b6ad2d1a84b8cde927bbcba",
+    "I-PM-navservice": "1ab0272ada53e9a6c11a03d4b3eb4bc97253b826d8f1dece1c4e2f5e4d84465c",
+    "I-PM-usv": "7b52239a9b012d632237023e77f19b3a65f3fc0eb4001e708af811e01da0c722",
+    "I-PM-f126": "c98fd3c84c3cca201f39976093c101a10733a84a0fabf118f64e2950cfc9df06",
+    "I-PM-frigpipe": "32452525d7cfdacb7cb02e640eef56624a2e114ef359e3314225606b3f2a64de",
+    "I-PM-power": "26113f321557640edc4ea20304423570659c068d26c6be9f3340729dfa36ea6e",
+    "I-PM-civilrest": "61e323faa19acab346c415d3ddf91807f565d7944d2fa84b1539e7b331eaf2ce",
+    "I-RP-gb": "84268f30e3c0f5f573a191a21dd594b2673be335b7d27ac69ae46d109b6016b3",
+    "I-RP-nl": "34d6a6c9efdd03c4c0087a47fbc867f305892edf870cf2dc4e7efcb236d55024",
+    "I-RP-ch": "3e98d22c66cd8b70112fa9df1e87d3c842e92058d4f734ac60110cf4f5374bfd",
+    "I-RP-es": "b61c7e8ff3777e28793a536be3579e586d73051353dd46ae71bf189bb6183bc5",
+    "I-RP-it": "1151d48b6f1d894c00fb49e0fcabc1a9c608b420291acc69e1bdca5d637ea372",
+    "I-RP-bg": "4d3665a9b6f6673601b5d5e544ae0ee28279b761678bf37310b19aa075cf6b6a",
+    "I-RP-lt": "e1273500b1b3e7e5752e91b3dc7844b611187bbb530f124baaf5210777fdbddd",
+    "I-RP-lv": "16c29f2a58cd74de7a5554545de12099db88f67a37e2d028fbd82ed34b779147",
+    "I-RP-pl": "aa385b9285c58fcb4b750fd903577a722e03691a04cd893ff3de9b4f4b9f761b",
+    "I-RP-nordic": "2cb75f2f72e199293a80e78de5fd68d37845b40929acdd52bb81bbbe1cbaf497",
+    "I-RP-ca": "dd91c11075d5e92c31674ebefa65ab88becc2b0e81cc2fd4021c4d0b6a3e2321",
+    "I-RP-au": "340d651702bdfd738b7a4c40b2c736b886e3c5b3c8266916d7ac429f049cb0e6",
+    "I-RP-sg": "69b0244b578fcc87673b853900ece5b9756b54e47a96605703af8d90d07fc9e9",
+    "I-RP-naval-intl": "db0d5cc3b9983e19e9f07b16823ef1c3c65b89439c4f9b61638c7c12eb9be121",
+    "I-RP-gulf": "c4cb07a612936c89f4c300c6a0239d141a702b842bbe07217e0dd23413ff0d26",
+    "I-MI-portfolio-1": "68eb10268c268bb2fb92150e2014ba08c84b9b4e90b0c05362310dacb7afd4ba",
+    "I-MI-portfolio-2": "ecc117d15f993cd5c513bf618a2ac0abbbaeb6728d9ebd716548d57f58f47d6c",
+    "I-MI-portfolio-3": "14cc07efd6c5e7faf69af9e55b7a40b6e3f65a2235eaafd97fde4d89585d40d7",
+    "I-MI-cluster-1": "0eae2289e317cbde407065fc224b435703d6a97e5beb92f9562062f1be46e2ff",
+    "I-MI-cluster-2": "58798f8f76294bca24388448eaeb70784208e9905a5b8d827eeb0cc74a7f43fa",
+    "I-MI-cluster-3": "361d3f140f0db4aceecf12a0da514a26b8300024d4d5382eb41a922e52a3dbff",
+    "I-MI-market-1": "6bec642354c7f3067dfe2f9d82a5485bba1089c50760bb653b3ee7c48e186253",
+    "I-MI-market-2": "7f285c2f31288148a8314dcd4e1136babb40cc76d85af2f1dcebdd73941c04fc",
+    "I-MI-market-3": "5d3206d2bf0b8c84cb7878fae20d22b0f632f6300c75985c0967c1ef74f4ad9a"
+  },
+  "fact_dependencies": {
+    "I-ES-1": [
+      "T-13",
+      "T-14",
+      "T-16",
+      "T-18"
+    ],
+    "I-M-rheinmetall-integration": [
+      "C-STR-25",
+      "C-STR-27",
+      "C-STR-34",
+      "C-TEC-05",
+      "M-RHM-03",
+      "M-RHM-04",
+      "M-RHM-05",
+      "P-R140",
+      "P-W10",
+      "P-W40"
+    ],
+    "I-M-rheinmetall-industrial": [
+      "C-MKT-12",
+      "M-RHM-06",
+      "M-RHM-07",
+      "P-R120",
+      "P-R140",
+      "P-R40",
+      "P-R90",
+      "P-R95",
+      "P-W10"
+    ],
+    "I-M-rheinmetall-capacity": [
+      "C-MKT-12",
+      "P-W10",
+      "P-W13",
+      "T-E01"
+    ],
+    "I-M-rheinmetall-procurement": [
+      "M-RHM-01",
+      "M-RHM-06",
+      "P-W02",
+      "P-W11",
+      "P-W12"
+    ],
+    "I-ES-2": [
+      "C-MKT-12",
+      "C-STR-25",
+      "C-STR-27",
+      "C-STR-34",
+      "C-TEC-05",
+      "M-RHM-01",
+      "M-RHM-03",
+      "M-RHM-04",
+      "M-RHM-05",
+      "M-RHM-06",
+      "M-RHM-07",
+      "P-R120",
+      "P-R140",
+      "P-R40",
+      "P-R90",
+      "P-R95",
+      "P-W02",
+      "P-W10",
+      "P-W11",
+      "P-W12",
+      "P-W13",
+      "P-W40",
+      "T-E01"
+    ],
+    "I-ES-3": [
+      "C-STR-14",
+      "C-STR-38",
+      "P-C01",
+      "T-04",
+      "T-16",
+      "T-E17"
+    ],
+    "I-ES-4": [
+      "C-MKT-01",
+      "C-MKT-02",
+      "C-MKT-03",
+      "C-MKT-13",
+      "P-V17",
+      "T-13",
+      "T-E04",
+      "T-E30"
+    ],
+    "I-RP-de": [
+      "C-STR-11",
+      "C-STR-14",
+      "C-STR-25",
+      "P-A01",
+      "P-D30",
+      "P-D40",
+      "P-N01",
+      "P-N10",
+      "P-N20",
+      "P-N40",
+      "P-R01",
+      "P-R02",
+      "P-W10",
+      "P-W30",
+      "P-W40"
+    ],
+    "I-RP-hu": [
+      "C-STR-19",
+      "P-R60",
+      "P-R61",
+      "P-V32"
+    ],
+    "I-RP-za": [
+      "C-STR-22",
+      "P-R140"
+    ],
+    "I-RP-us": [
+      "C-STR-24",
+      "P-R100",
+      "P-V34",
+      "P-V35",
+      "P-W33"
+    ],
+    "I-RP-ro": [
+      "C-STR-25",
+      "C-STR-37",
+      "P-N31",
+      "P-R70",
+      "P-R72",
+      "P-V30"
+    ],
+    "I-RP-ua": [
+      "C-STR-20",
+      "P-R98",
+      "P-V72",
+      "P-W12"
+    ],
+    "I-ES-5": [
+      "C-MKT-06",
+      "C-STR-11",
+      "C-STR-14",
+      "C-STR-19",
+      "C-STR-20",
+      "C-STR-22",
+      "C-STR-24",
+      "C-STR-25",
+      "C-STR-33",
+      "C-STR-37",
+      "P-A01",
+      "P-D30",
+      "P-D40",
+      "P-N01",
+      "P-N10",
+      "P-N20",
+      "P-N31",
+      "P-N40",
+      "P-R01",
+      "P-R02",
+      "P-R100",
+      "P-R140",
+      "P-R60",
+      "P-R61",
+      "P-R70",
+      "P-R72",
+      "P-R90",
+      "P-R95",
+      "P-R98",
+      "P-V30",
+      "P-V32",
+      "P-V34",
+      "P-V35",
+      "P-V72",
+      "P-W10",
+      "P-W12",
+      "P-W30",
+      "P-W33",
+      "P-W40"
+    ],
+    "I-PM-skyranger": [
+      "P-A02",
+      "P-A10",
+      "P-A11",
+      "P-A12",
+      "P-A13"
+    ],
+    "I-PM-fv014": [
+      "C-MKT-05",
+      "P-D20",
+      "T-E11"
+    ],
+    "I-PM-sar": [
+      "C-TEC-04",
+      "P-D30",
+      "T-E04"
+    ],
+    "I-ES-6": [
+      "C-MKT-05",
+      "C-TEC-04",
+      "P-A02",
+      "P-A10",
+      "P-A11",
+      "P-A12",
+      "P-A13",
+      "P-D20",
+      "P-D30",
+      "T-07",
+      "T-E04",
+      "T-E11"
+    ],
+    "I-HL-1": [
+      "T-14"
+    ],
+    "I-HL-2": [
+      "P-S05",
+      "T-16"
+    ],
+    "I-HL-3": [
+      "P-W13"
+    ],
+    "I-M-rheinmetall-spectrum": [
+      "M-RHM-01",
+      "M-RHM-06",
+      "P-W30"
+    ],
+    "I-M-rheinmetall-range": [
+      "M-RHM-02"
+    ],
+    "I-M-nammo-spectrum": [
+      "M-NAM-01",
+      "M-NAM-06"
+    ],
+    "I-M-nammo-range": [
+      "M-NAM-02"
+    ],
+    "I-M-nammo-integration": [
+      "M-NAM-05",
+      "M-NAM-07"
+    ],
+    "I-M-nammo-capacity": [
+      "M-NAM-04",
+      "M-NAM-05",
+      "M-NAM-06"
+    ],
+    "I-M-nammo-procurement": [
+      "M-NAM-03",
+      "M-NAM-04",
+      "M-NAM-08"
+    ],
+    "I-M-nammo-industrial": [
+      "M-NAM-04",
+      "M-NAM-05",
+      "M-NAM-06",
+      "M-NAM-07",
+      "M-NAM-08"
+    ],
+    "I-M-knds-spectrum": [
+      "M-KND-01"
+    ],
+    "I-M-knds-range": [
+      "M-KND-02"
+    ],
+    "I-M-knds-integration": [
+      "M-KND-01",
+      "M-KND-09"
+    ],
+    "I-M-knds-capacity": [
+      "M-KND-04",
+      "M-KND-05",
+      "M-KND-06",
+      "M-KND-07"
+    ],
+    "I-M-knds-procurement": [
+      "M-KND-03",
+      "M-KND-04",
+      "M-KND-08"
+    ],
+    "I-M-knds-industrial": [
+      "M-KND-01",
+      "M-KND-05",
+      "M-KND-06",
+      "M-KND-08",
+      "M-KND-09"
+    ],
+    "I-M-bae-spectrum": [
+      "M-BAE-01"
+    ],
+    "I-M-bae-range": [
+      "M-BAE-02"
+    ],
+    "I-M-bae-integration": [
+      "M-BAE-04",
+      "M-BAE-05",
+      "M-BAE-06",
+      "M-HAN-02"
+    ],
+    "I-M-bae-capacity": [
+      "M-BAE-04",
+      "M-BAE-05"
+    ],
+    "I-M-bae-procurement": [
+      "M-BAE-01",
+      "M-BAE-03"
+    ],
+    "I-M-bae-industrial": [
+      "M-BAE-03",
+      "M-BAE-05",
+      "M-BAE-06"
+    ],
+    "I-M-gdots-spectrum": [
+      "M-GDO-01"
+    ],
+    "I-M-gdots-range": [
+      "M-GDO-02"
+    ],
+    "I-M-gdots-integration": [
+      "M-GDO-06"
+    ],
+    "I-M-gdots-capacity": [
+      "M-GDO-03",
+      "M-GDO-04",
+      "M-GDO-05"
+    ],
+    "I-M-gdots-procurement": [
+      "M-GDO-01",
+      "M-GDO-03",
+      "M-GDO-06"
+    ],
+    "I-M-gdots-industrial": [
+      "M-GDO-01",
+      "M-GDO-03",
+      "M-GDO-04",
+      "M-GDO-05",
+      "M-GDO-06"
+    ],
+    "I-M-hanwha-spectrum": [
+      "M-HAN-02",
+      "M-HAN-03",
+      "M-HAN-04",
+      "M-HAN-06"
+    ],
+    "I-M-hanwha-range": [
+      "M-HAN-06"
+    ],
+    "I-M-hanwha-integration": [
+      "M-HAN-01",
+      "M-HAN-07"
+    ],
+    "I-M-hanwha-capacity": [
+      "M-HAN-01",
+      "M-HAN-04",
+      "M-HAN-07"
+    ],
+    "I-M-hanwha-procurement": [
+      "M-HAN-02",
+      "M-HAN-03",
+      "M-HAN-05"
+    ],
+    "I-M-hanwha-industrial": [
+      "M-HAN-01",
+      "M-HAN-05",
+      "M-HAN-07"
+    ],
+    "I-PM-boxer": [
+      "P-V10",
+      "P-V11",
+      "P-V12",
+      "P-V13",
+      "P-V14"
+    ],
+    "I-PM-puma": [
+      "P-V20",
+      "P-V21"
+    ],
+    "I-PM-lynx": [
+      "P-V30",
+      "P-V31",
+      "P-V32",
+      "P-V34",
+      "P-V35"
+    ],
+    "I-PM-mbt": [
+      "C-MKT-08",
+      "P-V16",
+      "P-V40",
+      "P-V41"
+    ],
+    "I-PM-trucks": [
+      "P-V50",
+      "P-V51",
+      "P-V52"
+    ],
+    "I-PM-lightveh": [
+      "P-R20",
+      "P-V60"
+    ],
+    "I-PM-ugv": [
+      "P-V70",
+      "P-V71"
+    ],
+    "I-PM-vsvc": [
+      "P-R130",
+      "P-R98",
+      "P-V72"
+    ],
+    "I-PM-art155": [
+      "P-W10",
+      "P-W11",
+      "P-W12",
+      "P-W13"
+    ],
+    "I-PM-medcal": [
+      "P-W02",
+      "P-W12",
+      "P-W20",
+      "P-W21",
+      "T-06"
+    ],
+    "I-PM-gunsys": [
+      "P-V14",
+      "P-W30",
+      "P-W31"
+    ],
+    "I-PM-propellant": [
+      "P-W40"
+    ],
+    "I-PM-mortar": [
+      "P-D50",
+      "P-W20"
+    ],
+    "I-PM-protect": [
+      "P-W50",
+      "P-W51"
+    ],
+    "I-PM-mount": [
+      "P-W33"
+    ],
+    "I-PM-strike": [
+      "C-STR-36",
+      "P-W60",
+      "T-E10"
+    ],
+    "I-PM-skynex": [
+      "P-A01",
+      "P-A12",
+      "P-A14"
+    ],
+    "I-PM-airsensors": [
+      "P-A01",
+      "P-A30"
+    ],
+    "I-PM-navaldef": [
+      "P-A12",
+      "P-A40"
+    ],
+    "I-PM-cuas": [
+      "P-A50"
+    ],
+    "I-PM-dlbo": [
+      "C-MKT-03",
+      "P-D02",
+      "P-D10",
+      "P-D12"
+    ],
+    "I-PM-idz": [
+      "C-MKT-03",
+      "P-D11",
+      "P-D12"
+    ],
+    "I-PM-battlesuite": [
+      "P-D13",
+      "P-D14"
+    ],
+    "I-PM-defelec": [
+      "P-D01",
+      "P-D50",
+      "P-D60"
+    ],
+    "I-PM-uas": [
+      "C-TEC-03",
+      "P-D01",
+      "P-D14"
+    ],
+    "I-PM-airsat": [
+      "P-D31",
+      "T-E22"
+    ],
+    "I-PM-f35": [
+      "C-TEC-02",
+      "P-D40"
+    ],
+    "I-PM-k130": [
+      "P-N01",
+      "P-N03",
+      "P-N10"
+    ],
+    "I-PM-fdb": [
+      "P-N01",
+      "P-N03",
+      "P-N20"
+    ],
+    "I-PM-intlships": [
+      "P-N03",
+      "P-N30",
+      "P-N31",
+      "P-N61"
+    ],
+    "I-PM-navservice": [
+      "P-N03",
+      "P-N40",
+      "P-R02"
+    ],
+    "I-PM-usv": [
+      "C-STR-13",
+      "P-N50"
+    ],
+    "I-PM-f126": [
+      "C-STR-38",
+      "P-N60",
+      "P-S05"
+    ],
+    "I-PM-frigpipe": [
+      "P-N61"
+    ],
+    "I-PM-power": [
+      "P-C01",
+      "P-C02",
+      "P-S02"
+    ],
+    "I-PM-civilrest": [
+      "P-C03",
+      "P-W41"
+    ],
+    "I-RP-gb": [
+      "C-STR-06",
+      "P-R10",
+      "P-V13",
+      "P-V14",
+      "P-V40",
+      "P-W02"
+    ],
+    "I-RP-nl": [
+      "P-R20"
+    ],
+    "I-RP-ch": [
+      "P-A40",
+      "P-R30"
+    ],
+    "I-RP-es": [
+      "C-STR-24",
+      "P-C01",
+      "P-R40",
+      "P-W20"
+    ],
+    "I-RP-it": [
+      "C-STR-09",
+      "P-A14",
+      "P-A30",
+      "P-R50",
+      "P-V31"
+    ],
+    "I-RP-bg": [
+      "C-STR-33",
+      "P-N30",
+      "P-R150",
+      "P-R80"
+    ],
+    "I-RP-lt": [
+      "C-STR-21",
+      "P-R90"
+    ],
+    "I-RP-lv": [
+      "C-STR-35",
+      "P-R95"
+    ],
+    "I-RP-pl": [
+      "P-R96"
+    ],
+    "I-RP-nordic": [
+      "P-D50",
+      "P-R97"
+    ],
+    "I-RP-ca": [
+      "P-R110",
+      "P-V71"
+    ],
+    "I-RP-au": [
+      "C-STR-23",
+      "P-R120",
+      "P-V11",
+      "P-V15"
+    ],
+    "I-RP-sg": [
+      "P-R130"
+    ],
+    "I-RP-naval-intl": [
+      "P-N61",
+      "P-R150"
+    ],
+    "I-RP-gulf": [
+      "P-R160"
+    ],
+    "I-MI-portfolio-1": [
+      "C-STR-36",
+      "P-A50",
+      "P-D31",
+      "P-V10",
+      "P-V11",
+      "P-V12",
+      "P-V13",
+      "P-V14",
+      "P-V20",
+      "P-V21",
+      "P-V30",
+      "P-V31",
+      "P-V32",
+      "P-V34",
+      "P-V35",
+      "P-W40",
+      "P-W60",
+      "T-E10",
+      "T-E22"
+    ],
+    "I-MI-portfolio-2": [
+      "P-A02",
+      "P-A10",
+      "P-A11",
+      "P-A12",
+      "P-A13",
+      "P-V12",
+      "P-W10"
+    ],
+    "I-MI-portfolio-3": [
+      "C-STR-38",
+      "P-N01",
+      "P-N03",
+      "P-N10",
+      "P-S05",
+      "T-09"
+    ],
+    "I-MI-cluster-1": [
+      "C-STR-06",
+      "C-STR-07",
+      "C-STR-08",
+      "M-KND-03",
+      "M-KND-04",
+      "M-KND-08",
+      "P-V10",
+      "P-V20"
+    ],
+    "I-MI-cluster-2": [
+      "C-STR-19",
+      "C-STR-20",
+      "C-STR-21",
+      "C-STR-22",
+      "C-STR-33",
+      "C-STR-34",
+      "M-RHM-04"
+    ],
+    "I-MI-cluster-3": [
+      "C-TEC-01",
+      "C-TEC-02",
+      "C-TEC-03",
+      "C-TEC-04",
+      "C-TEC-05",
+      "C-TEC-06"
+    ],
+    "I-MI-market-1": [
+      "C-STR-25",
+      "C-STR-27",
+      "C-STR-34",
+      "C-TEC-05",
+      "M-BAE-04",
+      "M-BAE-05",
+      "M-BAE-06",
+      "M-HAN-02",
+      "M-MKT-01",
+      "M-MKT-03",
+      "M-NAM-05",
+      "M-NAM-07",
+      "M-RHM-03",
+      "M-RHM-04",
+      "M-RHM-05",
+      "P-R140",
+      "P-W10",
+      "P-W40"
+    ],
+    "I-MI-market-2": [
+      "C-MKT-12",
+      "M-MKT-03",
+      "M-MKT-04",
+      "M-NAM-04",
+      "M-NAM-05",
+      "M-NAM-06",
+      "P-W10",
+      "P-W13",
+      "T-E01"
+    ],
+    "I-MI-market-3": [
+      "C-MKT-12",
+      "M-KND-01",
+      "M-KND-03",
+      "M-KND-04",
+      "M-KND-05",
+      "M-KND-06",
+      "M-KND-08",
+      "M-KND-09",
+      "M-NAM-04",
+      "M-NAM-05",
+      "M-NAM-06",
+      "M-NAM-07",
+      "M-NAM-08",
+      "M-RHM-01",
+      "M-RHM-06",
+      "M-RHM-07",
+      "P-R120",
+      "P-R140",
+      "P-R40",
+      "P-R90",
+      "P-R95",
+      "P-W02",
+      "P-W10",
+      "P-W11",
+      "P-W12"
+    ]
+  },
+  "notice": "Mechanical references/snapshots only; interpretation correctness requires final source review."
+}
