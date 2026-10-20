@@ -593,8 +593,8 @@
       }
     },
     "I-ES-4": {
-      "fingerprint": "8d944dc658feda1b1705070b5683e863a34a7a6022c406e4f71f95abb93f282f",
-      "row_fingerprint": "17ef4b231b46279817eaef042d8fa88a8a182eef4b93a157342bd706beac09a9",
+      "fingerprint": "78604f9004a8a14ec082b229c2643f185955d80aa63eda93f7926282a6ebbc4e",
+      "row_fingerprint": "0e6a5328e1a62e78a03b756a6ce2a2290743034b6acdb673ab35e4895dcc8c09",
       "facts": {
         "C-MKT-01": {
           "fingerprint": "4d5bab957e9d174e8db308c85fa0857f976c7250b8ada401532fa36a05647412",
@@ -680,6 +680,39 @@
               "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/04/2026-04-27-bundeswehr-orders-idz-es-soldier-systems-from-rheinmetall",
               "content_sha256": "e658d51b4954fca8abf9ce1bba5a8d7bcd397d32381336573a574ba93bf34511",
               "text_sha256": "91f9db208e7ef4a605cff5f2079e68c51f015167e57a4ca7cc930a728686aa64",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
+        "C-MKT-06": {
+          "fingerprint": "d9ffec9603cffe8245ad348fcb56e08b15b43406e099da73baab6861fa162ab4",
+          "mapping": "3dfbc51d54922d43e3be6f8cb63f592a0e6d040b81ad1200f821a7ef1e7bc1f3",
+          "sources": {
+            "S-3dad8b811c925694": {
+              "source_id": "S-3dad8b811c925694",
+              "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/Q2/Rheinmetall-Halbjahresfinanzbericht-2026.pdf",
+              "content_sha256": "214decfe1cd910eedff5de83482a93f410fb63d3e92a852c34d543790d07098c",
+              "text_sha256": "81050c484e68e1792956cbb723d122779ed58e1fd2c8970251c3d66ccd41854a",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+            },
+            "S-5b640196f4e87dad": {
+              "source_id": "S-5b640196f4e87dad",
+              "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/08/2026-08-06-rheinmetall-pressemitteilung-halbjahresfinanzbericht-h1",
+              "content_sha256": "cf8878be08ef2530410ffc52aed9b3ae41a31f8b487ab9dee22eb4652d56eab7",
+              "text_sha256": "9129f4bb5b65c304529a6064915b400b92c78372f8e3e4e97ec81141f1719ad5",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            },
+            "S-75731f2457a30bcf": {
+              "source_id": "S-75731f2457a30bcf",
+              "url": "https://soldiersystems.net/2026/06/04/major-historic-international-contract-for-rheinmetall-romania-orders-lynx-combat-vehicles-vessels-and-air-defence-systems-worth-a-total-of-e5-7-billion/",
+              "content_sha256": "c743d16c4dccbdf0c292c6e071f9a8ce7010bc3641e6962239add85ba54e0467",
+              "text_sha256": "28fde4adcceb14bd764023456a6a762468da9144e9b0484b3bd7b48594eb2caf",
               "capture_kind": "http-original",
               "capture_note": null,
               "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
@@ -1778,8 +1811,8 @@
       }
     },
     "I-HL-3": {
-      "fingerprint": "7bc90ee74c6dcb0ac246bf53387cc97e1f0f570421ddba659a6fdacf3e8d17d0",
-      "row_fingerprint": "a4842fea52bea946c5edbacb6d825a6e21dca1b91b317b3587cf70eeec18dc52",
+      "fingerprint": "061b311ea98aa7e8ae3b449d817e6f4fa81bf5e9dc923f5e4a23ef0789a88364",
+      "row_fingerprint": "a9b4687a203731a0df70d917228d1459d80d325f44b98569743240fb6a9d05d9",
       "facts": {
         "P-W13": {
           "fingerprint": "c35eefe91e412883bdc19cf57c86281ce1d8e2ca1684bd2e8cf6cb221383e24a",
@@ -1793,6 +1826,21 @@
               "capture_kind": "http-original",
               "capture_note": null,
               "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
+        "T-E01": {
+          "fingerprint": "b9f561fbd195c714b9ff2ace5e5397e6c74482f8bea55d570a81a7b685cdde8b",
+          "mapping": "454f14898e18d218c7ab727f659e928349496e2066cac60e4ec5f5205b4029bc",
+          "sources": {
+            "S-3ab860d4e2d076b2": {
+              "source_id": "S-3ab860d4e2d076b2",
+              "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2025/09/2025-09-05-werkseroeffnung-in-unterluess.pdf",
+              "content_sha256": "e0166a4660ffa8e646d5958c2e400d31d7b1a27dafa10f42e24fd6d6e7c0de53",
+              "text_sha256": "f754cfb5a317d7d940d267dc1dc3f13f09dfb9f49a84a5df3ea98d4f6f191725",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
             }
           }
         }
@@ -3392,8 +3440,8 @@
       }
     },
     "I-M-gdots-procurement": {
-      "fingerprint": "addd14c8636ee0371ed32d17621c5398955a59e8e8166e57fe13449240ac1052",
-      "row_fingerprint": "0cbfbc284ff384d2381617f4c645b64b2bd3ab57f5c23e1dc43fc2d201bbaf7e",
+      "fingerprint": "9e5c2290ad9475feabe60cc5753d24d8151e5d1b72589c0ad4a508bd99a117a4",
+      "row_fingerprint": "3cbced5b1f1c9371d6e46ad48855ece3f753f24912f4ae2808e2ef2be33acf14",
       "facts": {
         "M-GDO-01": {
           "fingerprint": "1eac430bf25798c2bba281fd31100d16d19ac99c1804e45ac3b403fd68c4cfe4",
@@ -3962,9 +4010,24 @@
       }
     },
     "I-PM-lynx": {
-      "fingerprint": "791366bca5a6e1ad5cd699e7c686cdb58dae78da9177939a865ae41e5486b12e",
-      "row_fingerprint": "e8870eaf5e683df82632ff4683377bf64f5f93ff52b2e7341faf4085c35ed6eb",
+      "fingerprint": "299a6f38064645ee0128bf306d45bedc54a6d354e87a375f899ba8de16b9b978",
+      "row_fingerprint": "515879f8989690b38368364042897672853517e1babdf17e5038fffa23d46139",
       "facts": {
+        "P-R61": {
+          "fingerprint": "95f5eda9105e49c727817e7663068e768cd6f41b3ddd796b1ed4b6ce157c2aaa",
+          "mapping": "fd15e836599c5471c47fb6df12d27eaf50b16c70e7f82c93f754767b24ecf814",
+          "sources": {
+            "S-df4cbdd63bde02d6": {
+              "source_id": "S-df4cbdd63bde02d6",
+              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/07/2024-07-26-rheinmetall-hands-over-the-first-lynx-from-hungarian-production",
+              "content_sha256": "1dca0777e70818f6625367fdac577ef70ec0d60d1eeaad3fd6c484debf6d5fac",
+              "text_sha256": "e10a90fb57cbe99b9b570b22d326b4d14251cc70d22a75b978a1e2db51f00b49",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
         "P-V30": {
           "fingerprint": "b9564f422b8f43211be241586e6eb58fc00ddbe4931d11dc1fb42c3857efe2a9",
           "mapping": "548326a1cf5390523e37ea24d2ebd637cdf2618a02b0d6da31561bafe31f3204",
@@ -4043,8 +4106,8 @@
       }
     },
     "I-PM-mbt": {
-      "fingerprint": "78c2f7f78351cc95514c84f18d82bc47e68db793cbf4ef4370a091f312dd2d99",
-      "row_fingerprint": "36bf4c4528751fceb87f357141f8139d9a37e1ed1357f0137009b3e42922b7c8",
+      "fingerprint": "968c69597b23905fcf041105dadf4ffaddb008a0ec4912ff7b62bece84d717d2",
+      "row_fingerprint": "743bca2b5fe006512e1c62f2c4a174fc03786ee6dbd8bebb80bb4481ada73106",
       "facts": {
         "C-MKT-08": {
           "fingerprint": "809e1f42228e713ae8c358f7d393399efc4f98ea68d66fcb3610a0ee036c9c5c",
@@ -4658,8 +4721,8 @@
       }
     },
     "I-PM-strike": {
-      "fingerprint": "e1207f6de55845fba77460ee445da56204e7aec294fa3bd489fb43333dc883da",
-      "row_fingerprint": "9614dcc29f49add6e3c7f558a56c4d1c0b85dabd7f95a66c55c0c6ab3862f917",
+      "fingerprint": "bf8f6a671f43f8beadded4cefe30637d2506fe568cc2cbeec21bcf0a816641c1",
+      "row_fingerprint": "552686ca5d8399c7e0fd81a0d4822f7ca0f9dab548463d437cd4ba69f852ccc3",
       "facts": {
         "C-STR-36": {
           "fingerprint": "7dac007f2ec978b913ba1781a21723b6591b8a41fdb2d8b570faf6bd9db21ce4",
@@ -5630,8 +5693,8 @@
       }
     },
     "I-PM-navservice": {
-      "fingerprint": "1ab0272ada53e9a6c11a03d4b3eb4bc97253b826d8f1dece1c4e2f5e4d84465c",
-      "row_fingerprint": "884477c558b7de1306650de3cbba9f0b5319d674a0ecce25310ed7a6285597d3",
+      "fingerprint": "cca74c5653bd7f74a4d332633dd6249124ccc9622190ff4368b029fd75df6062",
+      "row_fingerprint": "157b278e1fe13ff9dfecced0cbef22b0bcb986574b8948a9a9460b97dcba3201",
       "facts": {
         "P-N03": {
           "fingerprint": "d9c6a8116e404f8448fc1e44b0ced6f1e2fc236f4a0f947f4e42ccb869cd8c64",
@@ -7424,8 +7487,8 @@
       }
     },
     "I-MI-portfolio-1": {
-      "fingerprint": "68eb10268c268bb2fb92150e2014ba08c84b9b4e90b0c05362310dacb7afd4ba",
-      "row_fingerprint": "2901e2b76e3fea97b35949bc0b7464be65755f932cb21cb89c4b8b02d7e7476e",
+      "fingerprint": "256ae08413295df381eca9982d43b44c1f48d29910669eee17382b0e9dc1df44",
+      "row_fingerprint": "f5c8a1bd966e8bc3fdae3a552dae07c5091dc1227d8891f23415a754bb6dba2e",
       "facts": {
         "C-STR-36": {
           "fingerprint": "7dac007f2ec978b913ba1781a21723b6591b8a41fdb2d8b570faf6bd9db21ce4",
@@ -7436,6 +7499,21 @@
               "url": "https://esut.de/2026/04/meldungen/69857/rheinmetall-vergroessert-mit-destinus-die-basis-fuer-raketensysteme/",
               "content_sha256": "2e4e61a09a4c06e21a35998922d4e3ca4139ac772c087e4b7fbebaad13fd3666",
               "text_sha256": "14e1d2ce0b8e75efcdc1c5d8e338cfa1006b0a0cbb7be79c92014f92ca60959a",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
+        "C-TEC-04": {
+          "fingerprint": "2b713b962d96000e9dc85bcadc02f6206901c08822ce8bb24289ea8ac7d01feb",
+          "mapping": "1c137a4459ab1dec33cb978d49fd231fc5470d7d44d892ab2ef12c59be9a0116",
+          "sources": {
+            "S-04cc080af88f833d": {
+              "source_id": "S-04cc080af88f833d",
+              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-06-rheinmetall-iceye-space-solutions-provides-the-bundeswehr-with-access-to-sar-satellites",
+              "content_sha256": "be998ef3f2f260fc290f20565c2e9f22f67e28306832fccf8e97dd7f6bd33b72",
+              "text_sha256": "442b06303382b93c7fafdadc0ed3428b8eb3921d2c4ba73d49f4d3e80b67ed3f",
               "capture_kind": "http-original",
               "capture_note": null,
               "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
@@ -7457,6 +7535,21 @@
             }
           }
         },
+        "P-D30": {
+          "fingerprint": "522052b5b638c9a387a1db1159bc9aa3a05ab6d7e6ef625d0b39c75b9a06c0da",
+          "mapping": "5e7aff31ba25e94257a44eb58cec032fb8b6d232b9b6ae4adbd6f494ea5c34df",
+          "sources": {
+            "S-04cc080af88f833d": {
+              "source_id": "S-04cc080af88f833d",
+              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-06-rheinmetall-iceye-space-solutions-provides-the-bundeswehr-with-access-to-sar-satellites",
+              "content_sha256": "be998ef3f2f260fc290f20565c2e9f22f67e28306832fccf8e97dd7f6bd33b72",
+              "text_sha256": "442b06303382b93c7fafdadc0ed3428b8eb3921d2c4ba73d49f4d3e80b67ed3f",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
         "P-D31": {
           "fingerprint": "442a1e6e3b2c4e548e7e7633403f9bf40af77bf3c10f7e1227d95736d46b9f90",
           "mapping": "3e489bbac6c0784ae87a3b6bdd87a4a2466eaf5f35ecc9fe0d6163b5979d9b4b",
@@ -7466,6 +7559,21 @@
               "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-02-rheinmetall-and-argotec-launch-their-first-satellite-into-space-with-spacex",
               "content_sha256": "dd8508cbc783629e851f11fa129d6400c59d21bae2268e0aff020430b58d5900",
               "text_sha256": "5e88d12e0c58fb568fd1fd2444ec77ee4abfc41f41e883be3f690a2d92a3cd33",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
+        "P-R61": {
+          "fingerprint": "95f5eda9105e49c727817e7663068e768cd6f41b3ddd796b1ed4b6ce157c2aaa",
+          "mapping": "fd15e836599c5471c47fb6df12d27eaf50b16c70e7f82c93f754767b24ecf814",
+          "sources": {
+            "S-df4cbdd63bde02d6": {
+              "source_id": "S-df4cbdd63bde02d6",
+              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/07/2024-07-26-rheinmetall-hands-over-the-first-lynx-from-hungarian-production",
+              "content_sha256": "1dca0777e70818f6625367fdac577ef70ec0d60d1eeaad3fd6c484debf6d5fac",
+              "text_sha256": "e10a90fb57cbe99b9b570b22d326b4d14251cc70d22a75b978a1e2db51f00b49",
               "capture_kind": "http-original",
               "capture_note": null,
               "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
@@ -7688,6 +7796,21 @@
               "capture_kind": "http-original",
               "capture_note": null,
               "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+            }
+          }
+        },
+        "T-E04": {
+          "fingerprint": "63459d8cf40d6b133ecb3b3d65a4bac628b8ee605a3dfe804bd226c48626b1d9",
+          "mapping": "61974c713c862585e0a9fb2791e5cb1dcd58a71b4ebf5041bc9458c7291bc9ec",
+          "sources": {
+            "S-aa782bd6fedfefb7": {
+              "source_id": "S-aa782bd6fedfefb7",
+              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-18-rheinmetall-and-iceye-win-billion-euro-contract-for-space-reconnaissance",
+              "content_sha256": "ee898c3afdf9fc6fd171d8f54ed53744150e9399cf2c5a6050cfd81abb3a723d",
+              "text_sha256": "11495193d48839922eca7d5a6f516bc5c081d91d779c63e1e09224947245661f",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
             }
           }
         },
@@ -8156,8 +8279,8 @@
       }
     },
     "I-MI-cluster-2": {
-      "fingerprint": "58798f8f76294bca24388448eaeb70784208e9905a5b8d827eeb0cc74a7f43fa",
-      "row_fingerprint": "1f0c661ca8a87e6c1d7b0a608cc0eb8914f617d55336d15e1e013d6d9c0abc16",
+      "fingerprint": "059af7fdb4562a07240a86cf2b26ec516897b0169ff9f9a77d7377eaaaf97a1c",
+      "row_fingerprint": "01372231e5333bfa0e36518a5ffde8d3742e5146eb29c5025b376e181a2c1ded",
       "facts": {
         "C-STR-19": {
           "fingerprint": "f47033e4e261a154fedf22eb1a2c954be7f8fae83fd3aeb72659f5b59d214338",
@@ -8435,8 +8558,8 @@
       }
     },
     "I-MI-market-1": {
-      "fingerprint": "6bec642354c7f3067dfe2f9d82a5485bba1089c50760bb653b3ee7c48e186253",
-      "row_fingerprint": "766aea1fa3f9c7a4bac3712306ef86af63223002eb35eec273772b2c9b6e1bab",
+      "fingerprint": "02d4d65407fe36b70b89248a19b5431fc871891a7a8eca16a0cf8f8cfa3cf68b",
+      "row_fingerprint": "b093507f6db37d02ca863492025dcf5a7f8d2134985efc6b14ea0c955aa8abf0",
       "facts": {
         "C-STR-25": {
           "fingerprint": "544211755911d37c99532d4c63ef3c88c3a47dc775e00aa5fa9ee7850521c5cb",
@@ -9314,8 +9437,8 @@
       }
     },
     "S-STR-1": {
-      "fingerprint": "bc0732305b231be29cd6d47fa27a2106f046c48c2b1df7c640d38b7c25ea2582",
-      "row_fingerprint": "3b048c60289c8c612a3b6da66611ad5c6e36a09818d16bdd5e38e8429946379e",
+      "fingerprint": "4821e5a1dc8197d6f86a4b3b0812a3b5804a1d34e665a5b2a9cec8d057607381",
+      "row_fingerprint": "bb73ecdf9d464d4084c7b90eca061dd53a82190980dd59a688111a6e6023b9f9",
       "facts": {
         "C-MKT-01": {
           "fingerprint": "4d5bab957e9d174e8db308c85fa0857f976c7250b8ada401532fa36a05647412",
@@ -9365,6 +9488,21 @@
             }
           }
         },
+        "C-TEC-04": {
+          "fingerprint": "2b713b962d96000e9dc85bcadc02f6206901c08822ce8bb24289ea8ac7d01feb",
+          "mapping": "1c137a4459ab1dec33cb978d49fd231fc5470d7d44d892ab2ef12c59be9a0116",
+          "sources": {
+            "S-04cc080af88f833d": {
+              "source_id": "S-04cc080af88f833d",
+              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-06-rheinmetall-iceye-space-solutions-provides-the-bundeswehr-with-access-to-sar-satellites",
+              "content_sha256": "be998ef3f2f260fc290f20565c2e9f22f67e28306832fccf8e97dd7f6bd33b72",
+              "text_sha256": "442b06303382b93c7fafdadc0ed3428b8eb3921d2c4ba73d49f4d3e80b67ed3f",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
         "P-A50": {
           "fingerprint": "0a3f78e08540ef31c1f822174655d0bed53aced475597f59c22a0b34cd6b8bb3",
           "mapping": "584497051c15483e0aae985bc318c86de69e8f57a3881c34f572d9c847c04bb8",
@@ -9380,6 +9518,21 @@
             }
           }
         },
+        "P-D30": {
+          "fingerprint": "522052b5b638c9a387a1db1159bc9aa3a05ab6d7e6ef625d0b39c75b9a06c0da",
+          "mapping": "5e7aff31ba25e94257a44eb58cec032fb8b6d232b9b6ae4adbd6f494ea5c34df",
+          "sources": {
+            "S-04cc080af88f833d": {
+              "source_id": "S-04cc080af88f833d",
+              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-06-rheinmetall-iceye-space-solutions-provides-the-bundeswehr-with-access-to-sar-satellites",
+              "content_sha256": "be998ef3f2f260fc290f20565c2e9f22f67e28306832fccf8e97dd7f6bd33b72",
+              "text_sha256": "442b06303382b93c7fafdadc0ed3428b8eb3921d2c4ba73d49f4d3e80b67ed3f",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
         "P-D31": {
           "fingerprint": "442a1e6e3b2c4e548e7e7633403f9bf40af77bf3c10f7e1227d95736d46b9f90",
           "mapping": "3e489bbac6c0784ae87a3b6bdd87a4a2466eaf5f35ecc9fe0d6163b5979d9b4b",
@@ -9389,6 +9542,21 @@
               "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-02-rheinmetall-and-argotec-launch-their-first-satellite-into-space-with-spacex",
               "content_sha256": "dd8508cbc783629e851f11fa129d6400c59d21bae2268e0aff020430b58d5900",
               "text_sha256": "5e88d12e0c58fb568fd1fd2444ec77ee4abfc41f41e883be3f690a2d92a3cd33",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
+        "P-R61": {
+          "fingerprint": "95f5eda9105e49c727817e7663068e768cd6f41b3ddd796b1ed4b6ce157c2aaa",
+          "mapping": "fd15e836599c5471c47fb6df12d27eaf50b16c70e7f82c93f754767b24ecf814",
+          "sources": {
+            "S-df4cbdd63bde02d6": {
+              "source_id": "S-df4cbdd63bde02d6",
+              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2024/07/2024-07-26-rheinmetall-hands-over-the-first-lynx-from-hungarian-production",
+              "content_sha256": "1dca0777e70818f6625367fdac577ef70ec0d60d1eeaad3fd6c484debf6d5fac",
+              "text_sha256": "e10a90fb57cbe99b9b570b22d326b4d14251cc70d22a75b978a1e2db51f00b49",
               "capture_kind": "http-original",
               "capture_note": null,
               "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
@@ -9614,6 +9782,21 @@
             }
           }
         },
+        "T-E04": {
+          "fingerprint": "63459d8cf40d6b133ecb3b3d65a4bac628b8ee605a3dfe804bd226c48626b1d9",
+          "mapping": "61974c713c862585e0a9fb2791e5cb1dcd58a71b4ebf5041bc9458c7291bc9ec",
+          "sources": {
+            "S-aa782bd6fedfefb7": {
+              "source_id": "S-aa782bd6fedfefb7",
+              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/12/2025-12-18-rheinmetall-and-iceye-win-billion-euro-contract-for-space-reconnaissance",
+              "content_sha256": "ee898c3afdf9fc6fd171d8f54ed53744150e9399cf2c5a6050cfd81abb3a723d",
+              "text_sha256": "11495193d48839922eca7d5a6f516bc5c081d91d779c63e1e09224947245661f",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
         "T-E10": {
           "fingerprint": "cde1997b27cc7680920a8c7b33d2099536a8a444d2042f3d64f8d0f2090653f2",
           "mapping": "d7fe07ba4567470507b6c3f8386b6f720b14ab499a0fa254b0d114c2eec3ded2",
@@ -9647,8 +9830,8 @@
       }
     },
     "S-STR-2": {
-      "fingerprint": "2f67620cff769e91fa7e06bc67309498d18ddc50d00a7208971a1b8341d7382c",
-      "row_fingerprint": "14c6ac402d93ee744bf7b9872384a8c013d6e3677254a20d05e348e8d4feacfe",
+      "fingerprint": "405e1cb56e84da868893240f656614c3933836382423ff2cc0a2663fb78f39bc",
+      "row_fingerprint": "cc5b65d04881ac6f10d245b4565b97e6210d5b8033f8f15db0c4476f4fe6874f",
       "facts": {
         "C-MKT-12": {
           "fingerprint": "a21cc82f90953855392d4038d789d45da942f3d6ad5d57d85697aed9713227b1",
@@ -9998,8 +10181,8 @@
       }
     },
     "S-STR-3": {
-      "fingerprint": "bfc4cb88c89f9671b8799c0f8311080dad288d83551f96bb5d08fae7e02d2a0c",
-      "row_fingerprint": "78bd8967b9a76beca61330cbae8b50dcd0039738e4274831092502d0ad348ffc",
+      "fingerprint": "3cec1360bbec071e8532b9ef4361aa565cfbd40eeff91ad1afba7ff2748ddaa0",
+      "row_fingerprint": "4c5d68e078cc7fe202efd178570a8e7d06b1906c356153eb5c1117f57d5653bf",
       "facts": {
         "C-MKT-06": {
           "fingerprint": "d9ffec9603cffe8245ad348fcb56e08b15b43406e099da73baab6861fa162ab4",
@@ -10853,8 +11036,8 @@
       }
     },
     "S-WKN-2": {
-      "fingerprint": "12ee8c989c8bccf251acac3e388b9253e0f671d49ab74fa1b4c36e58c1292489",
-      "row_fingerprint": "57e5a1a4be071242d922548a6730f54df592aa49bdcffc850a5ab657b9b97eef",
+      "fingerprint": "8ef1aa2186d89519d0edebf97ee1b0e01344f34665db969de50880df6aa95a97",
+      "row_fingerprint": "b2966fc29100d077a35d7053b7eb2c1d936089367f6613551f8ad3c9c479beb6",
       "facts": {
         "C-MKT-05": {
           "fingerprint": "24b6f48d3ea38a7e50683f9730591daa9236e27d93751853ef2df208d154674a",
@@ -10871,6 +11054,30 @@
             }
           }
         },
+        "C-STR-21": {
+          "fingerprint": "5dc57d7cc9f7220e84d48e866aae4ab18e22c79da196a5429fec493ebcf88fcd",
+          "mapping": "9fc452164d4bd624f3576d923fe13b5271260fa4ea8ac081e8b027b784d76abc",
+          "sources": {
+            "S-f4730b21412bb02a": {
+              "source_id": "S-f4730b21412bb02a",
+              "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Investor%20Relations/Ver%C3%B6ffentlichungen/2026/GB/Rheinmetall-Geschaeftsbericht-2025.pdf",
+              "content_sha256": "138727c9936e18cce3a3e85772863f35c22cc8d842ec9baee46b5cbf5035bd6d",
+              "text_sha256": "770480588acc0f7d1b5c644315270d9e6425c27c7363c930590e51a72afefe76",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+            },
+            "S-3baecfc3362bcad9": {
+              "source_id": "S-3baecfc3362bcad9",
+              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/11/2025-11-04-groundbreaking-ceremony-for-munitions-factory-in-lithuania",
+              "content_sha256": "fdfdd501a0d7426f7450e637be54d1f79de2c2eb15dc18aa1717db76c376c235",
+              "text_sha256": "343fc5c8c44996ff9075144c96ac9506666ff0de92045aefaf196136163a3dd4",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
         "C-TEC-04": {
           "fingerprint": "2b713b962d96000e9dc85bcadc02f6206901c08822ce8bb24289ea8ac7d01feb",
           "mapping": "1c137a4459ab1dec33cb978d49fd231fc5470d7d44d892ab2ef12c59be9a0116",
@@ -10880,6 +11087,21 @@
               "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-06-rheinmetall-iceye-space-solutions-provides-the-bundeswehr-with-access-to-sar-satellites",
               "content_sha256": "be998ef3f2f260fc290f20565c2e9f22f67e28306832fccf8e97dd7f6bd33b72",
               "text_sha256": "442b06303382b93c7fafdadc0ed3428b8eb3921d2c4ba73d49f4d3e80b67ed3f",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
+        "M-RHM-07": {
+          "fingerprint": "a9e08111df3cab7a55e6715c002d5f630a8c78a585182182fe792f80b6573258",
+          "mapping": "95d6bec2af5b782a49ab69f88dda4055fec96a1a3c25ca0f3d49f7b55caa3feb",
+          "sources": {
+            "S-22b4e8c338d5fc31": {
+              "source_id": "S-22b4e8c338d5fc31",
+              "url": "https://www.calibredefence.co.uk/mod-funds-22-firms-uk-munitions-factory-sites/",
+              "content_sha256": "c9e0e35474199a0c7fd741ddfd437c6888932c8a892ea8a2d4d5563dac95d2c4",
+              "text_sha256": "280fc7023f704fc81e3c9d78f1b3ccde7943e04822fd7e58c79d048fe35867d2",
               "capture_kind": "http-original",
               "capture_note": null,
               "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
@@ -11018,6 +11240,36 @@
             }
           }
         },
+        "P-R90": {
+          "fingerprint": "386cf1e843fc57e1ebfb1d1750ee2e915f32cb5cf6a5fd417df4c793a9659b4b",
+          "mapping": "9fd234a054737ca728a718b7faf9a1ce357d5c69286dabfc3154f37c8c3e379b",
+          "sources": {
+            "S-3baecfc3362bcad9": {
+              "source_id": "S-3baecfc3362bcad9",
+              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/11/2025-11-04-groundbreaking-ceremony-for-munitions-factory-in-lithuania",
+              "content_sha256": "fdfdd501a0d7426f7450e637be54d1f79de2c2eb15dc18aa1717db76c376c235",
+              "text_sha256": "343fc5c8c44996ff9075144c96ac9506666ff0de92045aefaf196136163a3dd4",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
+        "P-R95": {
+          "fingerprint": "3bd17dab3fbcdf6a4525a37e4710d8270b705bdfff76c4fe59b9ace44b1340f8",
+          "mapping": "dd8583bbd8d28aeae1d152207d18b91d70a2c67025af6a32d251854d801a9b5d",
+          "sources": {
+            "S-89bc6e8457e5ef24": {
+              "source_id": "S-89bc6e8457e5ef24",
+              "url": "https://www.rheinmetall.com/de/media/news-watch/news/2025/09/2025-09-25-lettland-bestellt-munitionsfabrik-von-rheinmetall",
+              "content_sha256": "67d617bad347a5430d0b8ba18180897fd3672c52819b0bac1b592e75dacfbb1f",
+              "text_sha256": "49843dfb40a46a6ba93bc558e823300b9bd2510546ff934a832c28bad0683854",
+              "capture_kind": "http-original",
+              "capture_note": null,
+              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+            }
+          }
+        },
         "P-V12": {
           "fingerprint": "bc06a895ff80e713ed7b22deed5e31ec13ccdddc8ee6d77b4cd5f1a9dcadf8ee",
           "mapping": "02079b590a0135f4426b43aa0ca1c4d43b7fae01f90be8e2a4a7875329601cf2",
@@ -11057,21 +11309,6 @@
             }
           }
         },
-        "P-W13": {
-          "fingerprint": "c35eefe91e412883bdc19cf57c86281ce1d8e2ca1684bd2e8cf6cb221383e24a",
-          "mapping": "b4ffe4b3badeb409e64950b9742686bdcd57cd92564658a7d8b8886957199f02",
-          "sources": {
-            "S-65384ba645706eba": {
-              "source_id": "S-65384ba645706eba",
-              "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/10/2026-10-16-rheinmetall-opens-modern-medium-calibre-production-facility-in-albacete",
-              "content_sha256": "f11973824a31b4e37429ffc9a4988019dd6a43f8cbd812df502f03b7bd664bc9",
-              "text_sha256": "0bb784453190868474056de68147d56f669bda048e2b4af64e6b21fdbada8dd2",
-              "capture_kind": "http-original",
-              "capture_note": null,
-              "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
-            }
-          }
-        },
         "T-07": {
           "fingerprint": "8a006dfec5952f8b0fc590f5045c90c91d877f4718179651e84fa39cbc0c1cf1",
           "mapping": "28a58db0d36965b7fe9ed40c69d7ad58d669d7a8c213250628bbd553d905ef39",
@@ -11084,21 +11321,6 @@
               "capture_kind": "http-original",
               "capture_note": null,
               "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
-            }
-          }
-        },
-        "T-E01": {
-          "fingerprint": "b9f561fbd195c714b9ff2ace5e5397e6c74482f8bea55d570a81a7b685cdde8b",
-          "mapping": "454f14898e18d218c7ab727f659e928349496e2066cac60e4ec5f5205b4029bc",
-          "sources": {
-            "S-3ab860d4e2d076b2": {
-              "source_id": "S-3ab860d4e2d076b2",
-              "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2025/09/2025-09-05-werkseroeffnung-in-unterluess.pdf",
-              "content_sha256": "e0166a4660ffa8e646d5958c2e400d31d7b1a27dafa10f42e24fd6d6e7c0de53",
-              "text_sha256": "f754cfb5a317d7d940d267dc1dc3f13f09dfb9f49a84a5df3ea98d4f6f191725",
-              "capture_kind": "http-original",
-              "capture_note": null,
-              "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
             }
           }
         },
@@ -11135,8 +11357,8 @@
       }
     },
     "S-WKN-3": {
-      "fingerprint": "d307f5e11fb7d6338029d918dedf5ea43e9e175846136544ca59423aad1bd702",
-      "row_fingerprint": "22438bf33828b48255900b7d2d5430438f2d1e5889a1986ff18250c5257260b3",
+      "fingerprint": "8ec05d8e9bcce2a60dd8b46c7994a320a4b7d2d3759b7bc3ba2a39ce586e5053",
+      "row_fingerprint": "45d57c04aafbd21bd361ac0980f17d4d4474d231b9f578b3f039a135f4534833",
       "facts": {
         "C-MKT-13": {
           "fingerprint": "055e13cfac490c9f59684bb25287c2bbff1d0b3aa4cd4d39432e0674112d6f61",
@@ -11426,8 +11648,8 @@
       }
     },
     "S-OPP-2": {
-      "fingerprint": "faaa5655c66c471c062dd94a4fe24680ca288bc119a17df3c479643f1e62368e",
-      "row_fingerprint": "0e95e443c807d0a116a3f080cf5bb005abf3e8d5e74c6fc335567eb0e704f86a",
+      "fingerprint": "d1c5fee6f9181ee9ead36519dc250e46fe58ebe9bb1126fd27781cf038148388",
+      "row_fingerprint": "b4cfdb92335c3b1a3d6a5d672e807b7a734a9edac5be3cef262aca52bdfded3d",
       "facts": {
         "C-MKT-04": {
           "fingerprint": "be148eb37438867f034193b86b54114a73e9dca6698f6c9bb23f54c9f8459852",
@@ -11672,8 +11894,8 @@
       }
     },
     "S-OPP-3": {
-      "fingerprint": "24e1b2e269f373581f9db0293460ef402c291b0d8850b35093f14e92bf4bbb67",
-      "row_fingerprint": "d0cf7e0f5b3b7d2e13d985f3bd68e0dd6b74d3c41df8286874f3acac6a21b109",
+      "fingerprint": "dfc8a9df77b98524b5a1885794e5b6b6cdfdc121750ffc117f0e9b2ab5daca3f",
+      "row_fingerprint": "098a068a925c07bfbd69ccfad623ae15f6ba1203a56e6b663ceb017e69c1a89a",
       "facts": {
         "C-STR-25": {
           "fingerprint": "544211755911d37c99532d4c63ef3c88c3a47dc775e00aa5fa9ee7850521c5cb",
@@ -11966,7 +12188,7 @@
       }
     },
     "S-THR-1": {
-      "fingerprint": "b72b9494feb468cbf9f42f2fe5f6630a2deb6b96026968022d7a9fa26c68385e",
+      "fingerprint": "d984de382b8352f858d1ccf9c07b52a6dc5155540fbfbccd64812a7f79cbf958",
       "row_fingerprint": "678deceb070165c92afe3d7e6c131dde9036fe470ffc62355fada793d391f63f",
       "facts": {
         "C-STR-19": {
@@ -22116,7 +22338,7 @@
     {
       "name": "validation",
       "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/interpretation-validation.json",
-      "sha256": "2a6d0f964abcf3321a8b1e45e80a26577711c542e31fc7bd700d3630db8741b5"
+      "sha256": "0e49054f60ee2418a7bbd49dc7fccbe8dc92b5b3ec7a6991420bc19a64b5d424"
     },
     {
       "name": "basis_review",
@@ -22131,7 +22353,7 @@
     {
       "name": "positioning",
       "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/positioning.json",
-      "sha256": "562ec3951bf673de398154ce076d128a099501077b69992bfc497492f2ba24f3"
+      "sha256": "45a151094e18c3eacb41de16c3982626189b9e607b0777abc2f74961f8301ce6"
     },
     {
       "name": "positioning_context",
@@ -22141,12 +22363,12 @@
     {
       "name": "swot",
       "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/swot.json",
-      "sha256": "e990383ba685a53b79b9c02ad9a92349f840b48461f7d68b0f6d6ff1213a4f72"
+      "sha256": "e579ebab9033d49651c6f66cfcf2d273d478b7ef03393cff076337eabed0f279"
     },
     {
       "name": "swot_context",
       "path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/swot-context.json",
-      "sha256": "14b8403307edbe7c50deab51271c1d4c36eec850cd63f632320099bcb8021880"
+      "sha256": "17d72ca3932703ad5227fc37f82db2f82d2a0f376320323709ec029251286306"
     },
     {
       "name": "plan",
@@ -22156,5 +22378,5 @@
   ],
   "cache_path": "/home/user/Firmenbreefing/runs/rheinmetall-2026-10-19/work/document-cache",
   "notice": "Work order only. No approval generated; explicit reviewer decisions required.",
-  "fingerprint": "62a58b1c44dcc3b20a8b7494b88fdf8912fafd188f9f3bb2e3a6bd7f5677fe51"
+  "fingerprint": "bc98270aa8c1139e047b6fb64b352d427877ce2300a76ffc9348a09ce478841e"
 }

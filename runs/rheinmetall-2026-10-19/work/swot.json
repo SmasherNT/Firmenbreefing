@@ -7,7 +7,7 @@
  "as_of": "2026-10-19",
  "scope": "SWOT Rheinmetall-Konzern (global), Stichtag 2026-10-19, auf Basis geprüfter A-Fakten und aktueller I-Claims der Positionierung.",
  "status": "vollständig",
- "input_fingerprint": "a6751366a6227a283eb9a3e3ed2a540612010ff50105cbae8900d00b50a57344",
+ "input_fingerprint": "1eb067294159b227fd93c5370669dda48f3aef43659c8fc8184bafd013c07c94",
  "interpretations": [
   {
    "id": "S-STR-1",
@@ -22,13 +22,13 @@
     "I-PM-propellant",
     "C-MKT-01"
    ],
-   "reasoning": "Mehrere Produktfamilien liegen laut Reifeeinordnung in Serie bzw. Skala und werden bereits an Kunden ausgeliefert. Das Puma-Los von 200 Fahrzeugen zeigt, dass diese Reife in Folgeaufträge mündet. Das ist ein interner Vorsprung gegenüber Feldern, die erst Prototyp oder Ankündigung sind.",
+   "reasoning": "Boxer, Lynx, Puma, HX sowie 155-mm- und Mittelkalibermunition liegen laut Reifeeinordnung auf der höchsten Stufe und werden bereits an Kunden geliefert. Das Puma-Los von 200 Fahrzeugen zeigt, dass diese Reife in Folgeaufträge mündet. Das ist ein interner Vorsprung gegenüber Feldern, die erst Prototyp oder Ankündigung sind.",
    "method": "Ableitung aus Produktreife-Claims und Auftragsfakt",
    "uncertainty": "Liefer- und Mengenangaben sind überwiegend Herstellerangaben."
   },
   {
    "id": "S-STR-2",
-   "statement": "Bei 155-mm-Munition verbindet Rheinmetall operative Fertigung in drei Ländern mit eigener Treibladungspulver-Fertigung und mehrjährigen Rahmenverträgen.",
+   "statement": "Bei 155-mm-Munition verbindet Rheinmetall operative Fertigung in drei Ländern mit eigener Treibladungspulver-Fertigung und einem mehrjährigen Bundeswehr-Rahmenvertrag (Obergrenze bis 8,5 Mrd EUR brutto).",
    "section": "Strengths",
    "category": "Strengths",
    "depends_on": [
@@ -39,13 +39,13 @@
     "P-W11",
     "P-W40"
    ],
-   "reasoning": "Operative Werke in Deutschland, Spanien und Südafrika sowie die konzerneigene Pulverstufe decken zwei der Engpassstufen im Wertschöpfungsablauf ab. Der Bundeswehr-Rahmenvertrag von bis zu 8,5 Mrd EUR brutto sichert die Nachfrage. Der Vorteil ist nicht exklusiv, da KNDS beim Beschaffungsstand und Nammo beim Werksnetz vergleichbare Stufen erreichen.",
+   "reasoning": "Operative Werke in Deutschland, Spanien und Südafrika sowie die konzerneigene Pulverstufe decken zwei Stufen der Wertschöpfung ab. Der Bundeswehr-Rahmenvertrag über bis zu 8,5 Mrd EUR brutto ist ein Höchstwert ohne Abrufgarantie und belegt einen mehrjährigen Beschaffungsrahmen, keine gesicherte Nachfrage. Der Vorteil ist nicht exklusiv, da KNDS beim Beschaffungsstand und Nammo beim Werksnetz vergleichbare Stufen erreichen.",
    "method": "Vergleich anhand der Matrixzellen der Kerneinheit",
-   "uncertainty": "Sprengstoff-Eigenfertigung und Ziel von 1,5 Mio Geschossen pro Jahr sind Plan, kein Ist-Stand."
+   "uncertainty": "Sprengstoff-Eigenfertigung und Ziel von 1,5 Mio Geschossen pro Jahr sind Plan, kein Ist-Stand; tatsächliche Abrufe aus dem Rahmenvertrag sind nicht belegt."
   },
   {
    "id": "S-STR-3",
-   "statement": "Rheinmetall verankert Fertigung und Marktzugang in mehreren Ländern über mehrheitlich gehaltene, vollkonsolidierte JV mit staatlichen Partnern.",
+   "statement": "Rheinmetall hält in Ungarn, Südafrika und der Ukraine mehrheitlich gehaltene, vollkonsolidierte JV mit lokalen Partnern, in denen Fertigung bzw. Instandhaltung vor Ort stattfindet.",
    "section": "Strengths",
    "category": "Strengths",
    "depends_on": [
@@ -58,9 +58,9 @@
     "C-STR-20",
     "C-STR-22"
    ],
-   "reasoning": "In Ungarn, Südafrika und der Ukraine hält Rheinmetall jeweils 51 % und konsolidiert voll; dort entstehen Lynx, Munition bzw. Instandhaltung. Lokale Wertschöpfung mit Staatspartnern erleichtert den Zugang zu nationalen Beschaffungen. Die Aussage gilt nur für die genannten voll konsolidierten JV.",
+   "reasoning": "Rheinmetall hält jeweils 51 % und konsolidiert voll; dort entstehen Lynx, Munition bzw. Instandhaltung. Als Interpretation gilt, dass solche lokalen Strukturen den Marktzugang stützen können; belegt ist die Struktur, nicht ein Beschaffungsvorteil. Ein staatlicher Partner ist nur für Ungarn (Regierung) und die Ukraine (UDI laut Geschäftsbericht 2024) belegt, für Denel nicht.",
    "method": "Ableitung aus Konzernstruktur- und Präsenz-Claims",
-   "uncertainty": "Stufen messen organisatorische Verankerung, nicht Umsatz; Bulgarien-JV ist umstritten und hier nicht eingerechnet."
+   "uncertainty": "Staatsstatus von Denel nicht belegt; Wirkung auf Beschaffungszugang ist Interpretation; Bulgarien-JV ist umstritten und nicht eingerechnet."
   },
   {
    "id": "S-WKN-1",
@@ -78,19 +78,19 @@
   },
   {
    "id": "S-WKN-2",
-   "statement": "Mehrere Wachstumsprodukte hängen am Kapazitätsaufbau, und berichtete Terminverzüge zeigen eine Lücke zwischen Auftragslage und Lieferfähigkeit.",
+   "statement": "Bei Skyranger 30 liegen Auftrag und Serienlieferung auseinander, und Medien berichten zusätzlich Verzug beim litauischen Munitionswerk; Lieferfähigkeit ist hier noch nicht nachgewiesen.",
    "section": "Weaknesses",
    "category": "Weaknesses",
    "depends_on": [
     "I-MI-portfolio-2",
     "I-PM-skyranger",
     "I-ES-6",
-    "P-W13",
-    "T-E01"
+    "C-STR-21",
+    "M-RHM-07"
    ],
-   "reasoning": "Skyranger-Serienlieferungen an die Bundeswehr werden laut Bericht erst ab 2027 erwartet, das Werk in Litauen gilt laut Fachmedium als verzögert. Gleichzeitig sind die Kapazitätsziele (1,5 Mio Geschosse bis 2030) noch nicht erreicht. Lieferfähigkeit begrenzt damit die Umsetzung des Auftragsbestands.",
+   "reasoning": "Skyranger-Serienlieferungen an die Bundeswehr werden laut Bericht erst ab 2027 erwartet, Medien berichten Verzug bei Skyranger 30, den Rheinmetall relativiert. Für das Werk in Litauen nennt ein Fachmedium einen Rückstand wegen eines harten Winters. Beide Einzelfälle zeigen, dass Auftragslage und Lieferfähigkeit getrennt zu bewerten sind; eine konzernweite Lieferschwäche folgt daraus nicht.",
    "method": "Abgleich von Auftrags- und Lieferstatus",
-   "uncertainty": "Verzugsangaben stammen aus Medienberichten bzw. abweichend zwischen Beschaffungsamt und Rheinmetall."
+   "uncertainty": "Beide Berichte sind Medienangaben (teils über interne Unterlagen) und umstritten; Termine weichen zwischen Beschaffungsamt und Rheinmetall ab."
   },
   {
    "id": "S-WKN-3",
@@ -104,9 +104,9 @@
     "T-16",
     "T-E17"
    ],
-   "reasoning": "Die F126-Stornierung senkte die Umsatzprognose 2026 um 300 Mio EUR auf 13,7 bis 14,2 Mrd EUR. Der größte Kunde stand 2025 für rund 3,8 Mrd EUR des Umsatzes von 9.935 Mio EUR. Beides zeigt, dass Einzelentscheidungen den Konzern merklich bewegen.",
+   "reasoning": "Die F126-Stornierung senkte die Umsatzprognose 2026 um 300 Mio EUR auf 13,7 bis 14,2 Mrd EUR. Der größte Kunde stand 2025 laut Konzernanhang für rund 3,8 Mrd EUR Umsatz, ohne dass er benannt wird. Beides zeigt, dass Einzelentscheidungen den Konzern merklich bewegen können.",
    "method": "Konzentrationsbetrachtung aus Konzernanhang und Prognoseänderung",
-   "uncertainty": "Identität des größten Kunden ist nicht angegeben; die Konzentrationsquote ist eine einfache Verhältnisbildung beider Berichtszahlen."
+   "uncertainty": "Identität des größten Kunden ist nicht angegeben; die Umsatzbasis des Konzernanhangs wurde nicht mit dem berichteten Konzernumsatz abgeglichen, daher keine Konzentrationsquote."
   },
   {
    "id": "S-OPP-1",
@@ -134,15 +134,16 @@
     "T-07",
     "C-MKT-04",
     "C-MKT-05",
-    "I-PM-fv014"
+    "I-PM-fv014",
+    "I-PM-sar"
    ],
-   "reasoning": "Air Defence wuchs im Halbjahr um 62 %, und die Bundeswehr beauftragte SAR-Daten (SPOCK 1) sowie den FV-014-Rahmenvertrag. Diese Felder sind noch am Anfang der Reifeskala, haben aber erste Kundenbindung. Chance besteht, wenn Serienlieferungen termingerecht gelingen.",
+   "reasoning": "Air Defence wuchs im Halbjahr um 62 %, und die Bundeswehr beauftragte SAR-Daten (SPOCK 1) sowie den FV-014-Rahmenvertrag. Laut Reifeeinordnung liegen SAR-Aufklärung und FV-014 auf Stufe 5 bzw. 4 von 6, also zwischen Beauftragung und Betrieb, mit erster Kundenbindung. Die Chance realisiert sich, wenn Serienlieferungen termingerecht gelingen.",
    "method": "Ableitung aus Auftragsfakten und Segmentzahlen",
-   "uncertainty": "Lieferungen stehen teils aus; Wert- und Nettoangaben weichen zwischen Mitteilung und Bericht ab."
+   "uncertainty": "Lieferungen stehen teils aus; Wert- und Nettoangaben weichen zwischen Mitteilung und Bericht ab; Betrieb von FV-014 nicht belegt."
   },
   {
    "id": "S-OPP-3",
-   "statement": "Der Engpass bei Energetik bietet Rheinmetall die Chance, sich über eigene Pulver- und Sprengstofffertigung im Munitionsmarkt abzusetzen.",
+   "statement": "Der Pulver-Engpass im Munitionsmarkt bietet Rheinmetall die Chance, mit eigener Pulverfertigung und geplanten Ausbauten Marktposition zu gewinnen.",
    "section": "Opportunities",
    "category": "Opportunities",
    "depends_on": [
@@ -152,9 +153,9 @@
     "M-RHM-04",
     "M-RHM-05"
    ],
-   "reasoning": "Die EU förderte allein rund 124 Mio EUR für Sprengstoffe und 248 Mio EUR für Pulver, was den Engpass belegt. Rheinmetall hat Pulver operativ und kündigt Sprengstoffwerke in Unterlüß, Várpalota und Victoria an. Gelingt die Umsetzung, wäre das ein Vorsprung gegenüber Wettbewerbern ohne belegte Eigenfertigung.",
+   "reasoning": "Die EU förderte im ASAP rund 248 Mio EUR für Pulver und 124 Mio EUR für Sprengstoffe, und der Rheinmetall-CEO nennt Pulver einen strategischen Engpass. Rheinmetall fertigt Pulver bereits selbst und plant mit Victoria (Rumänien, Produktionsbeginn 2028) weitere Pulver-/Treibladungskapazität; Sprengstoffwerke in Unterlüß und Várpalota sind nur angekündigt. Gelingt der Ausbau, kann dies gegenüber Wettbewerbern mit nicht belegter Eigenfertigung ein Vorteil sein, der Matrixstand ist aber kein Gesamtvorsprung.",
    "method": "Verknüpfung von Marktengpass und angekündigten Investitionen",
-   "uncertainty": "Werke sind angekündigt, nicht operativ; Wettbewerber-Fähigkeit nur als nicht öffentlich belegt, nicht als fehlend."
+   "uncertainty": "Victoria, Unterlüß und Várpalota sind geplant, nicht operativ; Nichtbelegung bei Wettbewerbern ist keine festgestellte Schwäche."
   },
   {
    "id": "S-THR-1",
