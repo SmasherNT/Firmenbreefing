@@ -32,12 +32,12 @@
   "checkpoints": {
     "focus:wachstumsmaerkte": {
       "stage": "focus:wachstumsmaerkte",
-      "checkpoint_id": "131540193934446484e0f73088623b31",
+      "checkpoint_id": "7c6d3b0804f648639032cdd38caef126",
       "inputs": {},
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/focus-wachstumsmaerkte-facts.json",
-          "sha256": "2c0e4a643b1ea37d8a4f2ac2bde2438fe72c7a17ab9231d9ea18c1ae60d9eb4f"
+          "sha256": "4a8c3a3feb747616a7e55c46dd1d5683e7bd26b05e823bacba9f830dde814995"
         }
       },
       "code": {
@@ -329,17 +329,17 @@
         }
       },
       "dependencies": {},
-      "checked_at": "2026-10-20T12:26:53+00:00",
-      "fingerprint": "64cac6ab40b0d589f3df8fca48b346cc2e6fc29cd996e0bde9b3b299546272a7"
+      "checked_at": "2026-10-20T17:28:22+00:00",
+      "fingerprint": "fbbd0f7f2176cb145ce2d238fa55f2227c380f930cabef05833cadf821f072ba"
     },
     "portfolio": {
       "stage": "portfolio",
-      "checkpoint_id": "6770dddbd04d42f897172739020672d8",
+      "checkpoint_id": "88ba64e1ba29488498e9f20871f44615",
       "inputs": {},
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/portfolio-facts.json",
-          "sha256": "1056a050783dd5717966b759f30024dd511899c21dd93ed1be8d26dd3dff2ca4"
+          "sha256": "78f79b677d4e192da404d4a91293c541e2162603463546278fa09b470e467fc4"
         }
       },
       "code": {
@@ -671,16 +671,16 @@
         }
       },
       "dependencies": {},
-      "checked_at": "2026-10-20T12:15:49+00:00",
-      "fingerprint": "d3f674c6788044fce8caa4c918d55d4c90c2e03a63ccceecfc11f74d2434d381"
+      "checked_at": "2026-10-20T17:28:21+00:00",
+      "fingerprint": "781217f1205ddb1e14f19b75146fd8efacfe1c85db26f8ff87106ea709557264"
     },
     "plan": {
       "stage": "plan",
-      "checkpoint_id": "21c1f24e2e854aa5a65534f873e350f4",
+      "checkpoint_id": "b2d10128791242c990269367d31d7f1d",
       "inputs": {
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/portfolio-facts.json",
-          "sha256": "1056a050783dd5717966b759f30024dd511899c21dd93ed1be8d26dd3dff2ca4"
+          "sha256": "78f79b677d4e192da404d4a91293c541e2162603463546278fa09b470e467fc4"
         }
       },
       "outputs": {
@@ -728,19 +728,19 @@
       },
       "sources": {},
       "dependencies": {
-        "portfolio": "d3f674c6788044fce8caa4c918d55d4c90c2e03a63ccceecfc11f74d2434d381"
+        "portfolio": "781217f1205ddb1e14f19b75146fd8efacfe1c85db26f8ff87106ea709557264"
       },
-      "checked_at": "2026-10-20T12:16:33+00:00",
-      "fingerprint": "a152b1e06cd1247696e8ba7f0042d3cbc6f4b1269235c291e838b05751b04f31"
+      "checked_at": "2026-10-20T17:28:32+00:00",
+      "fingerprint": "d0ad162d2a7b5fb6426d22d237dc5afd3c6472776d0c28844e96db2a0fa4a3b9"
     },
     "cluster": {
       "stage": "cluster",
-      "checkpoint_id": "eecff4062b734ce0ad7a6d9ddb9b03f7",
+      "checkpoint_id": "715c4fce42f44f9b9ce5960d8de6a166",
       "inputs": {},
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/cluster-facts.json",
-          "sha256": "dfad5503bc47130a39a07aa5d0b85eda3d53da925c5165487efa1d8184427903"
+          "sha256": "2c569e1c02ab78a5f33db2140791610f2463cf9a0353be3f2dbfebf52bc9bfc4"
         }
       },
       "code": {
@@ -1267,20 +1267,29 @@
           "capture_kind": "http-original",
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-ff9097e7ebe7975a": {
+          "source_id": "S-ff9097e7ebe7975a",
+          "url": "https://www.gov.si/novice/2025-05-07-slovenija-izjemno-uspesna-na-zadnjem-razpisu-evropskega-obrambnega-sklada/",
+          "content_sha256": "207819846a41a423dd1b34b3d94177c08baffaffc37b7ab7d45701dab563187b",
+          "text_sha256": "4a721b509f3612c7dd61e7c0cc553e88e07bc7367ddbe8ccb4ad3796b3c3e75b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         }
       },
       "dependencies": {},
-      "checked_at": "2026-10-20T12:27:54+00:00",
-      "fingerprint": "62a8a6318afeba31ba58d466322d7c40b69e7348c1382e260765af5792f89608"
+      "checked_at": "2026-10-20T17:28:21+00:00",
+      "fingerprint": "8d835d7cbe8e19010d9b4685c8a68c2a1ab0eebba6a4521438675cb814c6f147"
     },
     "context": {
       "stage": "context",
-      "checkpoint_id": "e07ee895c373413287ce37e70b8df0a1",
+      "checkpoint_id": "ed02c604ab374028a67b42185bccbfea",
       "inputs": {},
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/context-facts.json",
-          "sha256": "36ed7bf6c12b688ec754776f47587f4f51bfd929fbecae1cacb3c32bfd6b6a23"
+          "sha256": "584c50667277cbf33fc3966c28a4de4fa8ba479dcc4f4ac61ee1f8f2d5ef1f24"
         }
       },
       "code": {
@@ -1540,12 +1549,12 @@
         }
       },
       "dependencies": {},
-      "checked_at": "2026-10-20T12:28:32+00:00",
-      "fingerprint": "e4604c5f3ff9b07e50d0dddf039945567fca1595cf8975363cc06be67a6d40e7"
+      "checked_at": "2026-10-20T17:28:20+00:00",
+      "fingerprint": "77d35fbdf809834f5cf72941c3c43c6e6b736b2e73cb13a8c0387d309b9f900c"
     },
     "market": {
       "stage": "market",
-      "checkpoint_id": "18ed71b722a8443d9d6634e8442029ca",
+      "checkpoint_id": "24935ea320f14ba0893ac234e059bbbd",
       "inputs": {
         "plan": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/comparison-plan.json",
@@ -1553,13 +1562,13 @@
         },
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/portfolio-facts.json",
-          "sha256": "1056a050783dd5717966b759f30024dd511899c21dd93ed1be8d26dd3dff2ca4"
+          "sha256": "78f79b677d4e192da404d4a91293c541e2162603463546278fa09b470e467fc4"
         }
       },
       "outputs": {
         "module": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/market-facts.json",
-          "sha256": "dd43d0d27efb0eba05ed08a9f42dac76abcc67cc74441cca01841a35209305b2"
+          "sha256": "8d9a4181d248501d610d1a56e136cbd85a9af8299b2d9f0de36afe0a30693d47"
         }
       },
       "code": {
@@ -2215,35 +2224,35 @@
         }
       },
       "dependencies": {
-        "plan": "a152b1e06cd1247696e8ba7f0042d3cbc6f4b1269235c291e838b05751b04f31",
-        "portfolio": "d3f674c6788044fce8caa4c918d55d4c90c2e03a63ccceecfc11f74d2434d381"
+        "plan": "d0ad162d2a7b5fb6426d22d237dc5afd3c6472776d0c28844e96db2a0fa4a3b9",
+        "portfolio": "781217f1205ddb1e14f19b75146fd8efacfe1c85db26f8ff87106ea709557264"
       },
-      "checked_at": "2026-10-20T17:10:00+00:00",
-      "fingerprint": "f7e13626d6eeddc8cdab983603557af88f4ee263401201dbd5c098d8a3f0243c"
+      "checked_at": "2026-10-20T17:28:33+00:00",
+      "fingerprint": "85730927fa9212290b3b23b3b5d560e2efaa6472e75fb36594f60a083305dfec"
     },
     "facts": {
       "stage": "facts",
-      "checkpoint_id": "8e90926bfa7a45e3ad361f300887a9cb",
+      "checkpoint_id": "b3a623a58a8d4d8d9870b522f204fa1f",
       "inputs": {
         "context": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/context-facts.json",
-          "sha256": "36ed7bf6c12b688ec754776f47587f4f51bfd929fbecae1cacb3c32bfd6b6a23"
+          "sha256": "584c50667277cbf33fc3966c28a4de4fa8ba479dcc4f4ac61ee1f8f2d5ef1f24"
         },
         "portfolio": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/portfolio-facts.json",
-          "sha256": "1056a050783dd5717966b759f30024dd511899c21dd93ed1be8d26dd3dff2ca4"
+          "sha256": "78f79b677d4e192da404d4a91293c541e2162603463546278fa09b470e467fc4"
         },
         "cluster": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/cluster-facts.json",
-          "sha256": "dfad5503bc47130a39a07aa5d0b85eda3d53da925c5165487efa1d8184427903"
+          "sha256": "2c569e1c02ab78a5f33db2140791610f2463cf9a0353be3f2dbfebf52bc9bfc4"
         },
         "market": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/market-facts.json",
-          "sha256": "dd43d0d27efb0eba05ed08a9f42dac76abcc67cc74441cca01841a35209305b2"
+          "sha256": "8d9a4181d248501d610d1a56e136cbd85a9af8299b2d9f0de36afe0a30693d47"
         },
         "focus:wachstumsmaerkte": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/focus-wachstumsmaerkte-facts.json",
-          "sha256": "2c0e4a643b1ea37d8a4f2ac2bde2438fe72c7a17ab9231d9ea18c1ae60d9eb4f"
+          "sha256": "4a8c3a3feb747616a7e55c46dd1d5683e7bd26b05e823bacba9f830dde814995"
         },
         "plan": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/comparison-plan.json",
@@ -2253,11 +2262,11 @@
       "outputs": {
         "facts": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/review-packet.json",
-          "sha256": "c700781adc05934c1910eaf416f29bfb0d781e9fbeef5ba5081606165c7751b9"
+          "sha256": "756455a3874bfe9be70be3d44e59bac934a56875c3326def5d6a20e4afa04224"
         },
         "validation": {
           "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/facts-validation.json",
-          "sha256": "216cae103149f84aa587f9f785f6f1804750d3b285f103e6d188b1df6db1fe30"
+          "sha256": "872e3063c1b6e96ddff74f725bce75c6a8cea61e91e0d4418afb001b60da5d5c"
         }
       },
       "code": {
@@ -3638,21 +3647,30 @@
           "capture_kind": "http-original",
           "capture_note": null,
           "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-ff9097e7ebe7975a": {
+          "source_id": "S-ff9097e7ebe7975a",
+          "url": "https://www.gov.si/novice/2025-05-07-slovenija-izjemno-uspesna-na-zadnjem-razpisu-evropskega-obrambnega-sklada/",
+          "content_sha256": "207819846a41a423dd1b34b3d94177c08baffaffc37b7ab7d45701dab563187b",
+          "text_sha256": "4a721b509f3612c7dd61e7c0cc553e88e07bc7367ddbe8ccb4ad3796b3c3e75b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
         }
       },
       "dependencies": {
-        "cluster": "62a8a6318afeba31ba58d466322d7c40b69e7348c1382e260765af5792f89608",
-        "context": "e4604c5f3ff9b07e50d0dddf039945567fca1595cf8975363cc06be67a6d40e7",
-        "focus:wachstumsmaerkte": "64cac6ab40b0d589f3df8fca48b346cc2e6fc29cd996e0bde9b3b299546272a7",
-        "market": "f7e13626d6eeddc8cdab983603557af88f4ee263401201dbd5c098d8a3f0243c",
-        "plan": "a152b1e06cd1247696e8ba7f0042d3cbc6f4b1269235c291e838b05751b04f31",
-        "portfolio": "d3f674c6788044fce8caa4c918d55d4c90c2e03a63ccceecfc11f74d2434d381"
+        "cluster": "8d835d7cbe8e19010d9b4685c8a68c2a1ab0eebba6a4521438675cb814c6f147",
+        "context": "77d35fbdf809834f5cf72941c3c43c6e6b736b2e73cb13a8c0387d309b9f900c",
+        "focus:wachstumsmaerkte": "fbbd0f7f2176cb145ce2d238fa55f2227c380f930cabef05833cadf821f072ba",
+        "market": "85730927fa9212290b3b23b3b5d560e2efaa6472e75fb36594f60a083305dfec",
+        "plan": "d0ad162d2a7b5fb6426d22d237dc5afd3c6472776d0c28844e96db2a0fa4a3b9",
+        "portfolio": "781217f1205ddb1e14f19b75146fd8efacfe1c85db26f8ff87106ea709557264"
       },
-      "checked_at": "2026-10-20T17:10:08+00:00",
-      "fingerprint": "ea815f61e42b68b127f078f7a3afdc191b3b8b086857522b6ce2237daaa21bd7"
+      "checked_at": "2026-10-20T17:28:35+00:00",
+      "fingerprint": "c7e31086156462a1f075b0be3ebbafd4c5d5591ffbe7c579f587cfa6d5c4128d"
     }
   },
   "created_at": "2026-10-20T12:02:09+00:00",
   "notice": "Local completion records only; content approval and visual QA remain separate.",
-  "fingerprint": "a1a55d2dba3aa04c35469830be4d4b1f274a7b79db9bfa7dbccc6055726eb85f"
+  "fingerprint": "25f76e614043a8433ac6f28846a17234b236e754ca6c8955bb66fe6f3d4b2c45"
 }
