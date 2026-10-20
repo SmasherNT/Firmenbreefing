@@ -174,11 +174,13 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
                     if not CHECK.text(section.get("label")):
                         raise ValueError("region section label missing")
                     require(section.get("claim_ids"))
-        profile = view.get("profile")
-        if profile is not None:
-            if role != "context" or not manifest.get("person") or not CHECK.text(profile.get("name")):
+        if view.get("profile") is not None or view.get("profiles") is not None:
+            if role != "context" or not manifest.get("person"):
                 raise ValueError("profile needs named person and context role")
-            PROFILE.validate(profile, require, manifest["as_of"], claims)
+            for profile in PROFILE.profiles_of(view, manifest["person"]):
+                if not CHECK.text(profile.get("name")):
+                    raise ValueError("profile needs named person and context role")
+                PROFILE.validate(profile, require, manifest["as_of"], claims)
         if view.get('market_dashboard') is not None:
             if role != 'market':
                 raise ValueError('market_dashboard belongs to market role')
@@ -488,7 +490,30 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     profile_body = '<p>Kein Gesprächspartner im Auftrag angegeben.</p>'
     person_sources = ''
     person_media = ''
-    if manifest.get('person'):
+    profile_pages = []
+    if isinstance(manifest.get('person'), list):
+        # Several requested contacts: one profile page each, in request order.
+        context_view = views.get('context', {})
+        found = {p['name']: p for p in PROFILE.profiles_of(context_view, manifest['person'])} if context_view else {}
+        entries = manifest['person']
+        PROFILE.person_names(entries)
+        for index, entry in enumerate(entries, 1):
+            name = entry['name'] if isinstance(entry, dict) else entry
+            role = (entry.get('position') or entry.get('role')) if isinstance(entry, dict) else None
+            if role is not None and not CHECK.text(role):
+                raise ValueError('person role must be text')
+            prefix = 'person' + str(index)
+            body = '<p class="meta">Gesprächspartner aus dem Auftrag (Nutzerangabe): ' + esc(name + (' · ' + role if role else '')) + '</p>'
+            media = ''
+            profile = found.get(name.strip())
+            if profile:
+                body = PROFILE.render(profile, claims, sources, manifest['company'], manifest['as_of'], prefix)
+                person_sources += section('Gesprächspartner · ' + profile['name'] + ' · Quellen & Evidenz', PROFILE.render_sources(profile, claims, sources, prefix), prefix + '-profile-sources')
+                media = PROFILE.render_media(profile, claims, manifest['as_of'], sources, prefix)
+            else:
+                body += '<p>Berufliches Profil öffentlich nicht verifiziert.</p>'
+            profile_pages.append(('page-profile-' + str(index), 'Gesprächspartner · ' + name, section('Gesprächspartner', body) + media))
+    elif manifest.get('person'):
         profile = views.get('context', {}).get('profile')
         person = manifest['person']
         if isinstance(person, dict):
@@ -508,6 +533,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         else:
             body += '<p>Berufliches Profil öffentlich nicht verifiziert.</p>'
         profile_body = body
+        profile_pages = [('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media)]
     def market_facts(ids):
         return ''.join('<details class="mk-fact"><summary>Beleg · ' + esc(cid) + '</summary><p>' + esc(claims[cid]['statement']) + '</p><p class="meta">' + esc(claims[cid]['kind']) + '</p>' + paragraphs([claims[cid]['uncertainty']]) + evidence(claims[cid]) + links([cid]) + '</details>' for cid in dict.fromkeys(ids))
 
@@ -532,8 +558,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             regional.append(section('Einordnung · Marktzugang', grid(region_interpretations)))
         main += ''.join(regional)
         pages = [('page-main', 'Überblick', main)]
-        if manifest.get('person'):
-            pages.append(('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media))
+        pages.extend(profile_pages)
         def focus_details(ids):
             return '<div class="focus-evidence">' + ''.join('<p>' + esc(claims[c]['statement']) + '</p>' + paragraphs([claims[c].get('uncertainty')]) for c in dict.fromkeys(ids)) + links(ids) + '</div>'
         for page in focus_pages:
@@ -541,7 +566,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     else:
         # Explicit compatibility for reviewed historical runs only.
         market_label = 'Markt-Deep-Dive' + (' · ' + manifest['market_title'] if manifest.get('market_title') else '')
-        pages = [('page-main', 'Überblick', main), ('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media),
+        pages = [('page-main', 'Überblick', main)] + (profile_pages or [('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media)]) + [
                  ('page-regions', market_label, ''.join(regions) or section(market_label, '<p>Keine freigegebenen regionalen Befunde für diesen Auftrag.</p>'))]
     register = '<label class="source-search">Quellen und Aussagen durchsuchen<input id="source-search-input" type="search" placeholder="Stichwort, Claim oder Quelle"></label>'
     for cid, row in claims.items():

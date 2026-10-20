@@ -143,7 +143,7 @@ def build(manifest, modules, plan=None):
             page_rows = data.get('focus_pages')
             if not isinstance(page_rows, list) or len(page_rows) != 1 or not isinstance(page_rows[0], dict) or page_rows[0].get('id') != fid:
                 errors.append('focus module must contain exactly its own page')
-            if set(data) & {'profile', 'topics', 'events', 'company_facts', 'products', 'regions', 'market_dashboard', 'regional_presence', 'peers', 'observations', 'network'}:
+            if set(data) & {'profile', 'profiles', 'topics', 'events', 'company_facts', 'products', 'regions', 'market_dashboard', 'regional_presence', 'peers', 'observations', 'network'}:
                 errors.append('focus module may only supply its own focus page')
         else:
             if role in roles or role not in selected:
@@ -279,11 +279,12 @@ def build(manifest, modules, plan=None):
         if not isinstance(refs, list) or not refs or any(not isinstance(c, str) or c not in ids for c in refs):
             raise ValueError("profile requires known claim_ids")
     for data in modules:
-        if isinstance(data, dict) and data.get("profile") is not None:
+        if isinstance(data, dict) and (data.get("profile") is not None or data.get("profiles") is not None):
             try:
                 if data.get("role") != "context" or not manifest.get("person"):
                     raise ValueError("profile requires context and person in manifest")
-                profile_helper.validate(data["profile"], profile_refs, manifest["as_of"], {c["id"]:c for c in claims})
+                for profile in profile_helper.profiles_of(data, manifest.get("person")):
+                    profile_helper.validate(profile, profile_refs, manifest["as_of"], {c["id"]:c for c in claims})
             except ValueError as error:
                 errors.append(str(error))
     spec = importlib.util.spec_from_file_location('presence_html', Path(__file__).with_name('presence-html.py'))
@@ -341,7 +342,7 @@ def build(manifest, modules, plan=None):
               "company": manifest.get("company"), "as_of": manifest.get("as_of"),
               "claims": claims, "sources": sorted(sources.values(), key=lambda s: s["id"]),
               "module_views": [{"role": module_key(d), **{k: d[k] for k in
-                                  ("company_facts", "events", "profile", "products", "regions",
+                                  ("company_facts", "events", "profile", "profiles", "products", "regions",
                                    "topics", "peers", "observations", "market_dashboard", "focus_pages", "regional_presence", "gaps", "coverage", "report_log")
                                   if k in d}} for d in modules if isinstance(d, dict)],
               "module_context": [{"role": module_key(d), "scope": d.get("scope"),

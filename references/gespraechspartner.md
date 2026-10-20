@@ -82,3 +82,15 @@ Datum links, drei farbige Kategorien samt Legende. Klick oder Tastatur öffnet
 Zusammenfassung, optional Zitat, Kontext und Zugriffshinweis. Auf Seite 2 nur interne
 Quellen-/Evidenzverweise; volle Belege im letzten Quellenreiter. Native details funktionieren auch
 ohne JavaScript. Keine Personendaten vom vorigen Unternehmen übernehmen.
+
+
+## Mehrere Gesprächspartner
+Nennt der Auftrag mehrere Personen, ist `manifest.person` eine Liste (Text oder
+`{name, role}` je Eintrag, Auftragsreihenfolge). Der context-Agent liefert dann
+statt `profile` das Feld `profiles`: je belegter Person genau ein Profilobjekt mit
+obiger Struktur, `name` exakt wie im Manifest. H-Claims gehören genau einem Profil;
+`profile` und `profiles` schließen sich aus. Ohne öffentliche berufliche Evidenz
+entfällt das Profilobjekt und die Lücke steht in gaps/coverage. Der Renderer zeigt
+je angefragter Person eine eigene Seite („Gesprächspartner · Name“) mit getrennten
+Quellenankern; nicht belegte Personen bleiben als „öffentlich nicht verifiziert“
+sichtbar. Ein einzelner Gesprächspartner behält den bisherigen Pfad.

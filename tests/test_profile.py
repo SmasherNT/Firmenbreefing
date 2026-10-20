@@ -77,3 +77,55 @@ class PersonMediaTests(unittest.TestCase):
         self.profile['media'][0].update(quote='Testzitat',quote_source_id='unknown',quote_location='Seite 1')
         refresh_basis(self.b)
         with self.assertRaisesRegex(ValueError,'quote source'):RENDER.build(**self.b)
+
+
+class MultiPersonTests(unittest.TestCase):
+    """Several requested contacts: one profile page each, separate anchors."""
+    @classmethod
+    def setUpClass(cls):
+        ProfileTests.setUpClass()
+        cls.original = ProfileTests.original
+    def setUp(self):
+        ProfileTests.setUp(self)
+        view = self.b['facts']['module_views'][0]
+        first = view.pop('profile')
+        h1 = next(c for c in self.b['facts']['claims'] if c['id'] == 'H1')
+        self.b['facts']['claims'].append({**h1, 'id': 'H2', 'statement': 'Bea Example leitet den synthetischen Vertrieb.'})
+        second = dict(name='Bea Example', claim_ids=['H2'], intro=dict(text='Synthetische Leitung', claim_ids=['H2']),
+                      snapshot=[dict(label='Rolle', value='Vertrieb', claim_ids=['H2'])], career=[], expertise=[], responsibilities=[], media=[])
+        view['profiles'] = [first, second]
+        self.b['manifest']['person'] = [first['name'], 'Bea Example']
+        refresh_basis(self.b)
+    def test_one_page_per_person_with_unique_anchors(self):
+        body = RENDER.build(**self.b)
+        self.assertIn('id="page-profile-1"', body)
+        self.assertIn('id="page-profile-2"', body)
+        self.assertNotIn('id="page-profile"', body)
+        second = body.split('id="page-profile-2"', 1)[1].split('id="page-regions"', 1)[0]
+        self.assertIn('Bea Example', second)
+        self.assertIn('person2-source-1', body.split('id="page-sources"', 1)[1])
+        links = Links(); links.feed(body)
+        self.assertEqual(len(links.ids), len(set(links.ids)))
+        self.assertTrue(set(links.anchors) <= set(links.ids))
+    def test_requested_person_without_profile_stays_visible(self):
+        self.b['facts']['module_views'][0]['profiles'].pop()
+        self.b['facts']['claims'] = [c for c in self.b['facts']['claims'] if c['id'] != 'H2']
+        refresh_basis(self.b)
+        second = RENDER.build(**self.b).split('id="page-profile-2"', 1)[1]
+        self.assertIn('öffentlich nicht verifiziert', second.split('id="page-regions"', 1)[0])
+    def test_shared_claims_and_unrequested_names_rejected(self):
+        profiles = self.b['facts']['module_views'][0]['profiles']
+        profiles[1]['claim_ids'].append('H1')
+        refresh_basis(self.b)
+        with self.assertRaisesRegex(ValueError, 'share claims'):
+            RENDER.build(**self.b)
+        profiles[1]['claim_ids'].remove('H1'); profiles[1]['name'] = 'Unknown Person'
+        refresh_basis(self.b)
+        with self.assertRaisesRegex(ValueError, 'not requested'):
+            RENDER.build(**self.b)
+    def test_profile_and_profiles_are_exclusive(self):
+        view = self.b['facts']['module_views'][0]
+        view['profile'] = view['profiles'][0]
+        refresh_basis(self.b)
+        with self.assertRaisesRegex(ValueError, 'either profile or profiles'):
+            RENDER.build(**self.b)

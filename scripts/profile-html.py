@@ -66,7 +66,46 @@ def validate(profile, require, as_of=None, claims=None):
                 raise ValueError('media quote source outside referenced claims')
 
 
-def render(profile, claims, sources, company, as_of):
+def person_names(person):
+    """Manifest person: text, {name, role/position} or a list of these."""
+    items = person if isinstance(person, list) else [person]
+    names = []
+    for item in items:
+        name = item.get('name') if isinstance(item, dict) else item
+        if not isinstance(name, str) or not name.strip():
+            raise ValueError('person entries require a name')
+        names.append(name.strip())
+    if not names or len(set(names)) != len(names):
+        raise ValueError('person list must be non-empty and unique')
+    return names
+
+
+def profiles_of(view, person=None):
+    """One profile (historical `profile`) or one per requested person (`profiles`)."""
+    if view.get('profile') is not None and view.get('profiles') is not None:
+        raise ValueError('use either profile or profiles')
+    if view.get('profiles') is None:
+        return [view['profile']] if view.get('profile') is not None else []
+    rows = view['profiles']
+    if not isinstance(rows, list) or not rows or any(not isinstance(r, dict) for r in rows):
+        raise ValueError('profiles must be a non-empty list of profile objects')
+    names = [r.get('name') for r in rows]
+    if len(set(names)) != len(names):
+        raise ValueError('profiles require unique names')
+    if person is not None:
+        allowed = person_names(person)
+        if any(n not in allowed for n in names):
+            raise ValueError('profile name not requested in manifest person')
+    seen = set()
+    for r in rows:
+        refs = r.get('claim_ids') if isinstance(r.get('claim_ids'), list) else []
+        if seen & set(refs):
+            raise ValueError('profiles must not share claims')
+        seen.update(refs)
+    return rows
+
+
+def render(profile, claims, sources, company, as_of, prefix='person'):
     """Caller validates review status and profile mappings before rendering."""
     source_order = list(dict.fromkeys(s for cid in profile['claim_ids'] for s in claims[cid]['source_ids']))
     source_numbers = {sid: i+1 for i,sid in enumerate(source_order)}
@@ -74,7 +113,7 @@ def render(profile, claims, sources, company, as_of):
     def refs(ids):
         used.update(ids)
         ids = list(dict.fromkeys(sid for cid in ids for sid in claims[cid]['source_ids']))
-        return '<sup>'+' '.join('<a href="#person-source-'+str(source_numbers[s])+'">['+str(source_numbers[s])+']</a>' for s in ids)+'</sup>'
+        return '<sup>'+' '.join('<a href="#'+prefix+'-source-'+str(source_numbers[s])+'">['+str(source_numbers[s])+']</a>' for s in ids)+'</sup>'
     def block(title, body, number, klass=''):
         return '<section class="pp-block '+klass+'"><h3><span class="pp-num">'+number+'</span>'+ESC(title)+'</h3>'+body+'</section>'
     def missing():
@@ -102,15 +141,15 @@ def render(profile, claims, sources, company, as_of):
     return '<style>'+css+'</style><article class="person-profile">'+body+'</article>'
 
 
-def render_sources(profile, claims, sources):
+def render_sources(profile, claims, sources, prefix='person'):
     """Full evidence is rendered on the sources page only."""
     source_order = list(dict.fromkeys(s for cid in profile['claim_ids'] for s in claims[cid]['source_ids']))
     source_numbers = {sid:i+1 for i,sid in enumerate(source_order)}
     body = ''
-    body+='<div class="pp-sources"><h3>Quellen &amp; Evidenz</h3>'
+    body+='<div class="pp-sources"><h3>'+('Quellen &amp; Evidenz' if prefix=='person' else 'Quellen &amp; Evidenz · '+ESC(profile['name']))+'</h3>'
     for sid in source_order:
         s=sources[sid];n=source_numbers[sid]
-        body+='<p id="person-source-'+str(n)+'">['+str(n)+'] '+ESC(s['name'])+' · <a href="'+ESC(s['url'])+'" target="_blank" rel="noopener noreferrer">'+ESC(s['title'])+'</a> · '+ESC(s.get('published_date') or 'o. D.')+'</p>'
+        body+='<p id="'+prefix+'-source-'+str(n)+'">['+str(n)+'] '+ESC(s['name'])+' · <a href="'+ESC(s['url'])+'" target="_blank" rel="noopener noreferrer">'+ESC(s['title'])+'</a> · '+ESC(s.get('published_date') or 'o. D.')+'</p>'
     # Exact claims and uncertainty remain visible and do not become hidden behind a dialog.
     body+='<div class="pp-evidence">'
     for cid in profile['claim_ids']:
@@ -131,11 +170,11 @@ def media_window(as_of):
     start = date(year, zero_month+1, min(end.day, calendar.monthrange(year, zero_month+1)[1]))
     return start, end
 
-def render_media(profile, claims, as_of, sources=None):
+def render_media(profile, claims, as_of, sources=None, prefix='person'):
     entries = sorted(profile.get('media', []), key=lambda x:x['published_date'], reverse=True)
     start, end = media_window(as_of)
     labels = {**MEDIA_CATEGORIES, 'media':'Artikel über '+profile['name']}
-    out = ['<section class="module" id="person-media"><h2>Aktuelle Äußerungen &amp; Medienpräsenz der letzten vier Monate</h2>',
+    out = ['<section class="module person-media" id="'+prefix+'-media"><h2>Aktuelle Äußerungen &amp; Medienpräsenz der letzten vier Monate'+('' if prefix=='person' else ' · '+ESC(profile['name']))+'</h2>',
         '<div class="pm-head"><p class="pm-window">'+start.strftime('%d.%m.%Y')+'–'+end.strftime('%d.%m.%Y')+' · Nach Veröffentlichung sortiert</p><div class="pm-legend" aria-label="Kategorien">']
     out += ['<span class="pm-tag pm-'+key+'">'+ESC(label)+'</span>' for key,label in labels.items()]
     out += ['</div></div><div class="timeline pm-timeline">']
@@ -143,7 +182,7 @@ def render_media(profile, claims, as_of, sources=None):
         publishers = list(dict.fromkeys(sources[sid]['name'] for cid in entry['claim_ids'] for sid in claims[cid]['source_ids'])) if sources else []
         publisher = '<span class="pm-publisher">'+ESC(' · '.join(publishers))+'</span>' if publishers else ''
         published = date.fromisoformat(entry['published_date'])
-        out += ['<div class="event pm-event"><time datetime="'+entry['published_date']+'">'+published.strftime('%d.%m.%Y')+'</time><details class="pm-entry pm-'+entry['category']+'" id="person-media-'+str(index)+'"><summary><span class="pm-kicker">'+ESC(labels[entry['category']]+' · '+entry['format'])+'</span><span class="pm-title">'+ESC(entry['title'])+'</span><span class="pm-preview">'+ESC(entry['preview'])+'</span>'+publisher+'<span class="pm-arrow" aria-hidden="true">⌄</span></summary><div class="pm-body">']
+        out += ['<div class="event pm-event"><time datetime="'+entry['published_date']+'">'+published.strftime('%d.%m.%Y')+'</time><details class="pm-entry pm-'+entry['category']+'" id="'+prefix+'-media-'+str(index)+'"><summary><span class="pm-kicker">'+ESC(labels[entry['category']]+' · '+entry['format'])+'</span><span class="pm-title">'+ESC(entry['title'])+'</span><span class="pm-preview">'+ESC(entry['preview'])+'</span>'+publisher+'<span class="pm-arrow" aria-hidden="true">⌄</span></summary><div class="pm-body">']
         out += ['<p>'+ESC(claims[cid]['statement'])+'</p>' for cid in entry['claim_ids']]
         if entry.get('quote'):
             out += ['<blockquote>„'+ESC(entry['quote'])+'“</blockquote>']
