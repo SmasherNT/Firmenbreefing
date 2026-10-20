@@ -5,12 +5,12 @@
   "run_id": "2026-10-20-vincorion",
   "company": "VINCORION",
   "as_of": "2026-10-20",
-  "scope": "VINCORION-Gruppe (VINCORION SE, Wedel, mit Tochtergesellschaften und vier Standorten): Firmenbasis, Management, Eigentum/Börsenstatus, Kennzahlen, Historie, datierte Ereignisse 20.06.-20.10.2026, Wachstumsfakten (Thema wachstum) und berufliche Profile von Ulrich Strieder und Klaas Jacob Klasen. Keine Produkt-, Netzwerk- oder Marktfakten (Rollen portfolio/cluster/market/focus).",
+  "scope": "VINCORION-Gruppe (VINCORION SE, Wedel, mit Tochtergesellschaften und vier Standorten): Firmenbasis, Management, Eigentum/Börsenstatus, Kennzahlen, Historie, datierte Ereignisse 20.06.-20.10.2026, Wachstumsfakten (Thema wachstum) und berufliches Profil von Klaas Jacob Klasen (für Ulrich Strieder kein prüfbarer Beleg). Keine Produkt-, Netzwerk- oder Marktfakten (Rollen portfolio/cluster/market/focus).",
   "status": "teilweise",
   "shared_limitations": [
     "Unternehmenszahlen stammen überwiegend aus Unternehmensquellen (Herstellerangabe); bereinigte Kennzahlen sind Nicht-IFRS; Q3-Zahlen vom 07.10.2026 sind vorläufig.",
-    "IPO-Prospekt, IR-Unterseiten (Gremien, Stimmrechte) und Geschäftsbericht 2025 nicht gelesen; North-Data-Quellen nur per WebFetch erfasst (siehe gaps G5-G7).",
-    "Personenangaben ausschließlich beruflich/öffentlich; Registereinträge geben Eintragsdaten, keine belegten Amtszeiten wieder."
+    "IPO-Prospekt, IR-Unterseiten (Gremien, Stimmrechte) und Geschäftsbericht 2025 nicht gelesen; North-Data-Quellen entfernt (siehe gaps G5-G7).",
+    "Personenangaben ausschließlich beruflich/öffentlich; Keine Registerdaten verwendet."
   ],
   "document_scope": "Quellenabruf am 2026-10-20; Dokumentcache runs/2026-10-20-vincorion/work/document-cache. Ereignis-Timeline nur belegte Ereignisse 2026-06-20 bis 2026-10-20 (inklusive).",
   "claims": [
@@ -877,58 +877,6 @@
       "depth_reason": "Ergänzender Hintergrund zu Wachstumshebel T32"
     },
     {
-      "id": "H1",
-      "statement": "Ulrich Strieder (Solingen) ist laut North Data (Handelsregister-Aggregator) Prokurist (ppa) der VINCORION Power Systems GmbH, Altenstadt (Amtsgericht München HRB 46214); die Eintragung wird mit Datum 10.04.2025 aufgeführt.",
-      "kind": "Fakt",
-      "source_ids": [
-        "S-3191dd472a54f6e3"
-      ],
-      "evidence": "Paraphrase: Authorized signatory (ppa): Ulrich Strieder - Eintrag 10 Apr 2025; Status: appointed (kein Ausscheiden verzeichnet).",
-      "location": "Abschnitt Prokura/ppa der Firmenseite (Tabelle der Personen)",
-      "uncertainty": "Sekundäre, automatisiert erzeugte Registerdaten (North Data weist auf mögliche Fehler hin); Originalseite war per Dokumentcache wegen HTTP 429 nicht abrufbar, Inhalt wurde über den WebFetch-Abruf erfasst und ist bei der Prüfung gegen die Originalseite bzw. das Handelsregister zu verifizieren. Das Datum ist ein Veröffentlichungs-/Eintragsdatum, kein belegter Beginn der Funktion. Funktionsbezeichnung im Unternehmen nicht belegt.",
-      "proposed_depth": "A",
-      "depth_reason": "Personenidentität/aktuelle Rolle"
-    },
-    {
-      "id": "H2",
-      "statement": "Ulrich Strieder ist laut North Data auch Prokurist (ppa) der VINCORION Advanced Systems GmbH, Wedel (Amtsgericht Pinneberg HRB 4160 PI); die Eintragung wird mit Datum 07.05.2025 aufgeführt, ohne verzeichnetes Ausscheiden.",
-      "kind": "Fakt",
-      "source_ids": [
-        "S-cc917e5b65707856"
-      ],
-      "evidence": "Paraphrase: Authorized signatory (ppa): Ulrich Strieder - 7 May 2025; No removal shown.",
-      "location": "Tabelle Prokura/ppa der Firmenseite (VINCORION Advanced Systems GmbH, früher ESW GmbH)",
-      "uncertainty": "Wie H1 (sekundäre Registerdaten; Originalseite im Cache nicht abrufbar, Abruf per WebFetch). Datum ist Veröffentlichungs-/Eintragsdatum; Funktionsbezeichnung nicht belegt.",
-      "proposed_depth": "A",
-      "depth_reason": "Personenidentität/aktuelle Rolle"
-    },
-    {
-      "id": "H3",
-      "statement": "Nach der North-Data-Personenseite 'Ulrich Strieder, Solingen' war er Geschäftsführer der LEISTRITZ Turbinentechnik GmbH (Remscheid; Eintrag 23.12.2021) und der Leistritz Turbinentechnik Nürnberg GmbH (Eintrag 24.12.2021); Einträge vom 05.11.2024 verzeichnen ihn jeweils als nicht mehr Geschäftsführer.",
-      "kind": "Fakt",
-      "source_ids": [
-        "S-a584c45b3d30a5a9"
-      ],
-      "evidence": "Paraphrase: Geschäftsführer: Ulrich Strieder (23.12.2021 Remscheid; 24.12.2021 Nürnberg); 'Nicht mehr Geschäftsführer: Ulrich Strieder' (je 05.11.2024).",
-      "location": "Personenseite North Data, Abschnitt Firmenbeteiligungen/Funktionen",
-      "uncertainty": "Zuordnung zur selben Person wie in H1/H2 beruht nur auf der North-Data-Personenseite (Name und Wohnort Solingen; automatisierte Zuordnung); Einträge geben Veröffentlichungs-, nicht Amtszeitdaten wieder. Originalseite im Cache nicht abrufbar (HTTP 429).",
-      "proposed_depth": "A",
-      "depth_reason": "Werdegang; Personenidentität"
-    },
-    {
-      "id": "H4",
-      "statement": "Auf derselben Personenseite wird Ulrich Strieder mit Prokura bei der FMS Holding GmbH (Solingen) geführt (Eintrag 28.11.2023). Die Funktion steht in keinem belegten Zusammenhang mit VINCORION.",
-      "kind": "Fakt",
-      "source_ids": [
-        "S-a584c45b3d30a5a9"
-      ],
-      "evidence": "Paraphrase: Prokura: Ulrich Strieder bei FMS Holding GmbH, Solingen - Eintrag 28.11.2023.",
-      "location": "Personenseite North Data, Abschnitt Firmenbeteiligungen/Funktionen",
-      "uncertainty": "Nur ergänzender Registerhinweis; Bedeutung für VINCORION nicht belegt. Quelle wie H3.",
-      "proposed_depth": "B",
-      "depth_reason": "Ergänzender Werdegangshinweis"
-    },
-    {
       "id": "H20",
       "statement": "In der Pressemitteilung vom 15.06.2026 zum Eurosatory-Auftritt wird Klaas Klasen als 'Vice President Strategy & Chief of Staff at VINCORION' zitiert; er erläutert dort die Eigenschaften der taktischen mobilen Energiesysteme PGM tacticalV und ESM hybridV.",
       "kind": "Herstellerangabe",
@@ -937,7 +885,7 @@
       ],
       "evidence": "Paraphrase: Zitat 'explains Klaas Klasen, Vice President Strategy & Chief of Staff at VINCORION' zu PGM tacticalV/ESM hybridV (20 kW bis kombinierbare 50- und 200-kW-Klassen, über 1 MW; ModularGrid bis zu acht Systeme).",
       "location": "Pressemitteilung 15.06.2026, Abschnitt 'We Power Your Mission', Zitat",
-      "uncertainty": "Titel laut Unternehmensmitteilung; Veröffentlichungsdatum 15.06.2026 liegt vor dem Viermonatsfenster der Medienpräsenz (20.06.-20.10.2026). Die Nutzerangabe 'Klaas Jacob Klasen' wird über das Verzeichnis (H22) und Registerdaten (H23-H25) dem Namen 'Klaas Klasen' zugeordnet.",
+      "uncertainty": "Titel laut Unternehmensmitteilung; Veröffentlichungsdatum 15.06.2026 liegt vor dem Viermonatsfenster der Medienpräsenz (20.06.-20.10.2026). Die Nutzerangabe 'Klaas Jacob Klasen' wird über das Verzeichnis (H22) dem Namen 'Klaas Klasen' zugeordnet.",
       "proposed_depth": "A",
       "depth_reason": "Personenidentität/aktuelle Rolle"
     },
@@ -966,45 +914,6 @@
       "uncertainty": "Von der Plattform als 'Unverified' gekennzeichnetes Drittverzeichnis; dient nur der Verknüpfung des vollständigen Namens mit der in den Unternehmensmitteilungen genannten Rolle. Ein Suchtreffer nennt abweichend 'Director Transformation and Strategy' (RocketReach, nicht geöffnet, HTTP 403).",
       "proposed_depth": "B",
       "depth_reason": "Namenszuordnung (vollständiger Name)"
-    },
-    {
-      "id": "H23",
-      "statement": "Klaas Jacob Klasen ist laut North Data Prokurist (ppa) der VINCORION Advanced Systems GmbH, Wedel (Eintrag 03.03.2026; kein Ausscheiden verzeichnet).",
-      "kind": "Fakt",
-      "source_ids": [
-        "S-cc917e5b65707856"
-      ],
-      "evidence": "Paraphrase: Authorized signatory (ppa): Klaas Jacob Klasen - 3 Mar 2026; No removal shown.",
-      "location": "Tabelle Prokura/ppa der Firmenseite",
-      "uncertainty": "Sekundäre Registerdaten; Originalseite im Cache nicht abrufbar (HTTP 429), Erfassung per WebFetch; Eintragsdatum ist kein belegter Funktionsbeginn.",
-      "proposed_depth": "A",
-      "depth_reason": "Personenidentität/Rolle"
-    },
-    {
-      "id": "H24",
-      "statement": "Klaas Jacob Klasen ist laut North Data zudem Prokurist (ppa) der VINCORION Power Systems GmbH, Altenstadt (Eintrag 06.03.2026; kein Ausscheiden verzeichnet).",
-      "kind": "Fakt",
-      "source_ids": [
-        "S-3191dd472a54f6e3"
-      ],
-      "evidence": "Paraphrase: Authorized signatory (ppa): Klaas Jacob Klasen - 6 Mar 2026; Status: appointed.",
-      "location": "Tabelle Prokura/ppa der Firmenseite",
-      "uncertainty": "Wie H23.",
-      "proposed_depth": "A",
-      "depth_reason": "Personenidentität/Rolle"
-    },
-    {
-      "id": "H25",
-      "statement": "Laut North-Data-Personenseite war Klaas Jacob Klasen bei der VINCORION SE (Amtsgericht Pinneberg HRB 19596 PI) mit Eintrag vom 18.12.2025 als Mitglied des Vorstands verzeichnet und mit Eintrag vom 28.01.2026 als nicht mehr Mitglied des Vorstands; im selben Eintrag sind der Eintritt von Dieter Holst und K. J. von Mentzingen in den Vorstand verzeichnet.",
-      "kind": "Fakt",
-      "source_ids": [
-        "S-83c623a2c8787fc5"
-      ],
-      "evidence": "Paraphrase: VINCORION SE: 18 Dec 2025 Member of the Executive Board (mit Christian Köberle); 28 Jan 2026 'No longer Member of the Executive Board'; im selben Eintrag Dieter Holst und K. J. von Mentzingen neu im Vorstand.",
-      "location": "Personenseite North Data, Abschnitt VINCORION Group",
-      "uncertainty": "Automatisiert erzeugte Registerdaten; Anlass und Hintergrund der Eintragung nicht genannt (nicht interpretieren); Originalseite im Cache nicht abrufbar (HTTP 429), Erfassung per WebFetch.",
-      "proposed_depth": "A",
-      "depth_reason": "Werdegang/Gremienrolle"
     },
     {
       "id": "H26",
@@ -1080,15 +989,6 @@
       "published_date": "2026-10-09",
       "accessed_date": "2026-10-20",
       "source_kind": "Nachrichtenagentur (dpa-AFX), Analystenmeldung"
-    },
-    {
-      "id": "S-3191dd472a54f6e3",
-      "name": "North Data",
-      "title": "VINCORION Power Systems GmbH, Altenstadt, Amtsgericht München HRB 46214",
-      "url": "https://www.northdata.com/VINCORION%20Power%20Systems%20GmbH,%20Altenstadt/Amtsgericht%20M%C3%BCnchen%20HRB%2046214",
-      "published_date": null,
-      "accessed_date": "2026-10-20",
-      "source_kind": "Registerdatenaggregator (Handelsregister-nah)"
     },
     {
       "id": "S-41e7bd7b63e2d486",
@@ -1172,15 +1072,6 @@
       "source_kind": "Pressemitteilung"
     },
     {
-      "id": "S-83c623a2c8787fc5",
-      "name": "North Data",
-      "title": "Klaas Jacob Klasen (Personenseite, Registerdaten-Aggregator)",
-      "url": "https://www.northdata.com/Klasen,%20Klaas%20Jacob/",
-      "published_date": null,
-      "accessed_date": "2026-10-20",
-      "source_kind": "Registerdatenaggregator (Handelsregister-nah)"
-    },
-    {
       "id": "S-93a1fbca82540d6d",
       "name": "VINCORION (Unternehmenswebsite)",
       "title": "About VINCORION",
@@ -1235,15 +1126,6 @@
       "source_kind": "Pressemitteilung"
     },
     {
-      "id": "S-a584c45b3d30a5a9",
-      "name": "North Data",
-      "title": "Ulrich Strieder, Solingen (Personenseite, Registerdaten-Aggregator)",
-      "url": "https://www.northdata.de/Strieder,+Ulrich,+Solingen/qwm",
-      "published_date": null,
-      "accessed_date": "2026-10-20",
-      "source_kind": "Registerdatenaggregator (Handelsregister-nah)"
-    },
-    {
       "id": "S-b87584cb356cf171",
       "name": "VINCORION SE Investorenpräsentation",
       "title": "Q1 2026 Results (Präsentation)",
@@ -1251,15 +1133,6 @@
       "published_date": "2026-05-07",
       "accessed_date": "2026-10-20",
       "source_kind": "Investorenpräsentation (PDF)"
-    },
-    {
-      "id": "S-cc917e5b65707856",
-      "name": "North Data",
-      "title": "VINCORION Advanced Systems GmbH (früher ESW GmbH), Wedel, Amtsgericht Pinneberg HRB 4160 PI",
-      "url": "https://www.northdata.com/ESW%20GmbH,%20Wedel/Amtsgericht%20Pinneberg%20HRB%204160%20PI",
-      "published_date": null,
-      "accessed_date": "2026-10-20",
-      "source_kind": "Registerdatenaggregator (Handelsregister-nah)"
     },
     {
       "id": "S-db2fa0537999b2fc",
@@ -1485,97 +1358,19 @@
   ],
   "profiles": [
     {
-      "name": "Ulrich Strieder",
-      "claim_ids": [
-        "H1",
-        "H2",
-        "H3",
-        "H4"
-      ],
-      "intro": {
-        "text": "Ulrich Strieder ist laut Handelsregister-Aggregator North Data (Stand der Einträge April/Mai 2025) Prokurist der VINCORION Power Systems GmbH und der VINCORION Advanced Systems GmbH; eine Funktionsbezeichnung im Unternehmen ist in den geöffneten öffentlichen Quellen nicht belegt.",
-        "claim_ids": [
-          "H1",
-          "H2"
-        ]
-      },
-      "snapshot": [
-        {
-          "label": "Registerrolle bei VINCORION",
-          "value": "Prokurist (ppa) VINCORION Power Systems GmbH (Eintrag 10.04.2025) und VINCORION Advanced Systems GmbH (Eintrag 07.05.2025), laut North Data",
-          "claim_ids": [
-            "H1",
-            "H2"
-          ]
-        },
-        {
-          "label": "Frühere Registerrolle",
-          "value": "Geschäftsführer LEISTRITZ Turbinentechnik GmbH (Remscheid) und Leistritz Turbinentechnik Nürnberg GmbH (Einträge Dezember 2021; nicht mehr Geschäftsführer laut Einträgen vom 05.11.2024)",
-          "claim_ids": [
-            "H3"
-          ]
-        }
-      ],
-      "career": [
-        {
-          "period": "Einträge 23./24.12.2021 bis 05.11.2024 (Eintragsdaten, keine belegten Amtszeiten)",
-          "organization": "LEISTRITZ Turbinentechnik GmbH (Remscheid) und Leistritz Turbinentechnik Nürnberg GmbH",
-          "role": "Geschäftsführer (laut North Data)",
-          "context": "Registereinträge zur Geschäftsführung; Inhalt der Tätigkeit öffentlich nicht beschrieben.",
-          "claim_ids": [
-            "H3"
-          ]
-        },
-        {
-          "period": "Eintrag 28.11.2023 (Beginn nicht belegt)",
-          "organization": "FMS Holding GmbH (Solingen)",
-          "role": "Prokurist (laut North Data)",
-          "context": "Ergänzender Registerhinweis ohne belegten Bezug zu VINCORION.",
-          "claim_ids": [
-            "H4"
-          ]
-        },
-        {
-          "period": "Eintrag 10.04.2025 (Funktionsbeginn nicht belegt)",
-          "organization": "VINCORION Power Systems GmbH (Altenstadt)",
-          "role": "Prokurist (ppa) (laut North Data)",
-          "context": "Operative Gesellschaft der VINCORION-Gruppe; Funktionsbezeichnung im Unternehmen nicht belegt.",
-          "claim_ids": [
-            "H1"
-          ]
-        },
-        {
-          "period": "Eintrag 07.05.2025 (Funktionsbeginn nicht belegt)",
-          "organization": "VINCORION Advanced Systems GmbH (Wedel)",
-          "role": "Prokurist (ppa) (laut North Data)",
-          "context": "Operative Gesellschaft der VINCORION-Gruppe; Funktionsbezeichnung im Unternehmen nicht belegt.",
-          "claim_ids": [
-            "H2"
-          ]
-        }
-      ],
-      "expertise": [],
-      "responsibilities": [],
-      "media": []
-    },
-    {
       "name": "Klaas Jacob Klasen",
       "claim_ids": [
         "H20",
         "H21",
         "H22",
-        "H23",
-        "H24",
-        "H25",
         "H26"
       ],
       "intro": {
-        "text": "Klaas (Jacob) Klasen wird in zwei Unternehmensmitteilungen vom Juni 2026 als Vice President Strategy & Chief of Staff der VINCORION SE genannt; Registerdaten nennen ihn zudem als Prokuristen von zwei VINCORION-Gesellschaften.",
+        "text": "Klaas (Jacob) Klasen wird in zwei Unternehmensmitteilungen vom Juni 2026 als Vice President Strategy & Chief of Staff der VINCORION SE genannt; ein Drittverzeichnis führt ihn mit vollem Namen.",
         "claim_ids": [
           "H20",
           "H21",
-          "H23",
-          "H24"
+          "H22"
         ]
       },
       "snapshot": [
@@ -1595,14 +1390,6 @@
           ]
         },
         {
-          "label": "Registerrolle",
-          "value": "Prokurist (ppa) VINCORION Advanced Systems GmbH (Eintrag 03.03.2026) und VINCORION Power Systems GmbH (Eintrag 06.03.2026), laut North Data",
-          "claim_ids": [
-            "H23",
-            "H24"
-          ]
-        },
-        {
           "label": "Fachthema in eigenen Äußerungen",
           "value": "Taktische mobile Energiesysteme (PGM tacticalV, ESM hybridV) und deren Einsatz für autonome Systeme",
           "claim_ids": [
@@ -1612,33 +1399,6 @@
         }
       ],
       "career": [
-        {
-          "period": "Eintrag 18.12.2025 bis Eintrag 28.01.2026 (Eintragsdaten)",
-          "organization": "VINCORION SE",
-          "role": "Mitglied des Vorstands (laut North Data)",
-          "context": "Im Eintrag vom 28.01.2026 sind zugleich der Eintritt von Dieter Holst und K. J. von Mentzingen in den Vorstand verzeichnet; Hintergrund der Eintragungen nicht genannt.",
-          "claim_ids": [
-            "H25"
-          ]
-        },
-        {
-          "period": "Eintrag 03.03.2026 (Funktionsbeginn nicht belegt)",
-          "organization": "VINCORION Advanced Systems GmbH (Wedel)",
-          "role": "Prokurist (ppa) (laut North Data)",
-          "context": "Operative Gesellschaft der VINCORION-Gruppe.",
-          "claim_ids": [
-            "H23"
-          ]
-        },
-        {
-          "period": "Eintrag 06.03.2026 (Funktionsbeginn nicht belegt)",
-          "organization": "VINCORION Power Systems GmbH (Altenstadt)",
-          "role": "Prokurist (ppa) (laut North Data)",
-          "context": "Operative Gesellschaft der VINCORION-Gruppe.",
-          "claim_ids": [
-            "H24"
-          ]
-        },
         {
           "period": "Zeitraum nicht belegt (Rolle belegt für 15.06. und 18.06.2026)",
           "organization": "VINCORION SE",
@@ -1678,8 +1438,8 @@
     {
       "id": "G1",
       "topic": "Ulrich Strieder - Funktionsbezeichnung",
-      "gap": "In keiner geöffneten Quelle (Unternehmenswebsite, Pressemitteilungen, Berichte) wird Ulrich Strieder genannt. Registerdaten (North Data) zeigen Prokura bei zwei VINCORION-Gesellschaften. Suchtreffer führen ihn in Drittverzeichnissen (Craft, RocketReach) als \"Vice President, Operations\"; diese Seiten waren nicht abrufbar (HTTP 403) und sind nicht als Beleg übernommen.",
-      "impact": "Rolle/Verantwortung nur als Registerrolle darstellbar; keine Aussage zu operativen Zuständigkeiten. Kein Beleg einer Schwäche."
+      "gap": "In keiner geöffneten, im Dokumentcache gespeicherten Quelle (Unternehmenswebsite, Pressemitteilungen, Berichte, Registeraggregatoren Implisense/Firminform) wird Ulrich Strieder genannt. Ein Suchtreffer-Hinweis auf North Data (Prokura bei VINCORION Power Systems GmbH und Advanced Systems GmbH, Einträge 2025) ist nicht als Beleg übernommen, da kein Original abrufbar war (G5). Suchtreffer führen ihn in Drittverzeichnissen (Craft, RocketReach) als \"Vice President, Operations\"; diese Seiten waren nicht abrufbar (HTTP 403) und sind nicht als Beleg übernommen.",
+      "impact": "Kein Profil für Ulrich Strieder in profiles (kein prüfbarer H-Claim). Nutzerangabe unverifiziert; kein Beleg einer Schwäche."
     },
     {
       "id": "G2",
@@ -1701,9 +1461,9 @@
     },
     {
       "id": "G5",
-      "topic": "North Data (Handelsregister-Aggregator) - Originalabruf",
-      "gap": "Die North-Data-Seiten lieferten über den Dokumentcache HTTP 429 (Rate Limit); die Inhalte wurden per WebFetch-Abruf (Modellextraktion der Seite) erfasst. Die vier North-Data-URLs sind daher nicht im Dokumentcache gespeichert. Der amtliche Handelsregisterauszug wurde nicht eingesehen.",
-      "impact": "H1-H4 und H23-H25 benötigen vollständige Prüfung (A) gegen Originalseite bzw. Handelsregister; bis dahin sekundär und mit Unsicherheit."
+      "topic": "North Data (Registerdaten-Aggregator)",
+      "gap": "Vier North-Data-Seiten (Strieder-Personenseite, Klasen-Personenseite, VINCORION Power Systems GmbH, VINCORION Advanced Systems GmbH) lieferten im Dokumentcache auch nach Wartezeit HTTP 429; WebFetch-Modellextraktionen sind kein speicherbares Original. Alle darauf beruhenden Claims (zuvor H1-H4, H23-H25) und die vier Quellen wurden entfernt. Implisense und Firminform (im Cache) nennen keine Prokuristen. Amtlicher Registerauszug nicht eingesehen.",
+      "impact": "Strieder: keine belegte Verbindung zu VINCORION. Klasen: Registerrollen (Prokura, früheres Vorstandsmandat der SE) nicht belegt; Rolle stützt sich auf Unternehmensmitteilungen."
     },
     {
       "id": "G6",
@@ -1875,12 +1635,11 @@
         "S-7976d6cc321ac273",
         "S-3f8a397f4e6c3ada",
         "S-72620ee26b4256d6",
-        "S-a584c45b3d30a5a9",
-        "S-3191dd472a54f6e3",
-        "S-cc917e5b65707856"
+        "S-f810872e78e52b9c",
+        "S-e0e19517c8351f13"
       ],
-      "finding": "Nur Registerdaten (North Data) verbinden den Namen mit VINCORION (Prokura 2025). Funktionsbezeichnung \"VP Operations\" nur in nicht abrufbaren Drittverzeichnissen; Namensgleichheit mit Presseartikeln (Terex/Tadano) nicht belegt.",
-      "status": "teilweise geprüft (Rolle nur als Registerrolle belegt)"
+      "finding": "Keine abrufbare Quelle verbindet den Namen mit VINCORION (North Data nicht abrufbar, HTTP 429; Drittverzeichnisse HTTP 403). Namensgleichheit mit Presseartikeln (Terex/Tadano) nicht belegt.",
+      "status": "geprüft ohne Beleg (Profil entfällt)"
     },
     {
       "topic": "Gesprächspartner Klaas Jacob Klasen",
@@ -1892,12 +1651,9 @@
       "source_ids": [
         "S-555547ca1efb774c",
         "S-41e7bd7b63e2d486",
-        "S-a3609ab109a44dd6",
-        "S-cc917e5b65707856",
-        "S-3191dd472a54f6e3",
-        "S-83c623a2c8787fc5"
+        "S-a3609ab109a44dd6"
       ],
-      "finding": "Rolle \"Vice President Strategy & Chief of Staff\" in zwei Unternehmensmitteilungen (Juni 2026) belegt; Verzeichnis und Registerdaten ergänzen den vollen Namen und Prokura. Abweichender Titel in nicht abrufbarem Verzeichnis (G4).",
+      "finding": "Rolle \"Vice President Strategy & Chief of Staff\" in zwei Unternehmensmitteilungen (Juni 2026) belegt; Verzeichnis ergänzt den vollen Namen. Abweichender Titel in nicht abrufbarem Verzeichnis (G4).",
       "status": "geprüft mit Beleg (Rolle); Werdegang vor VINCORION nicht belegt"
     },
     {
@@ -1928,7 +1684,7 @@
         "ir.vincorion.com (IPO-Bereich, Bodies)"
       ],
       "source_ids": [],
-      "finding": "HTTP 403/999/429 bzw. JavaScript-/Geo-Beschränkung; Inhalte nicht gelesen und nicht als Beleg verwendet (North Data: nur WebFetch-Erfassung, siehe G5).",
+      "finding": "HTTP 403/999/429 bzw. JavaScript-/Geo-Beschränkung; Inhalte nicht gelesen und nicht als Beleg verwendet (North Data: siehe G5).",
       "status": "nicht zugänglich"
     }
   ]

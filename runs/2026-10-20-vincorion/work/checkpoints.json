@@ -1272,9 +1272,279 @@
       "dependencies": {},
       "checked_at": "2026-10-20T12:27:54+00:00",
       "fingerprint": "62a8a6318afeba31ba58d466322d7c40b69e7348c1382e260765af5792f89608"
+    },
+    "context": {
+      "stage": "context",
+      "checkpoint_id": "e07ee895c373413287ce37e70b8df0a1",
+      "inputs": {},
+      "outputs": {
+        "module": {
+          "path": "/home/user/Firmenbreefing/runs/2026-10-20-vincorion/work/context-facts.json",
+          "sha256": "36ed7bf6c12b688ec754776f47587f4f51bfd929fbecae1cacb3c32bfd6b6a23"
+        }
+      },
+      "code": {
+        ".claude/agents/company-context-analyst.md": "c333cde0355865d88e45a57933240c6a619e6dfd4854159b301bdca190aaef10",
+        ".claude/skills/facts-briefing/SKILL.md": "9053f6781d4651bd029750c909ef640367288958d1239fda324248f9226d2175",
+        "CLAUDE.md": "83adf93634329e070c1fe736434df733522e565af65802d4d4d94222bb62114e",
+        "references/ausgabe-html-v2.md": "733a6427b3612442bf9ff197bdaf30a55c79b9d58dcf7b6c18741181a6815bbc",
+        "references/briefing-struktur.md": "6dfd7d0b6d9bfa3dcc68101e311ff93386cd03792356c90de6bb49597b9a6167",
+        "references/capability-matrix.md": "fa260d63c8c6d01bfe3b42477f483487eb340753232bbdfe3e667ea09e6e5915",
+        "references/cluster-quellenkatalog.md": "52d1c09bd8ce07524065aaa38a45f673eb68feb6fd8e9e6c6fae2e27fc53a1ea",
+        "references/cluster-recherche.md": "91af7a5e12dd6ceda4eebc8a84e226e809eaf963db83892795d4f738c6ec68ca",
+        "references/datenvertrag.md": "a1ba9d4bbe54a46e72934cb541a4c30462342d4c3f094d10735acd161c0478a0",
+        "references/defaults.md": "2d90192a379bd1a7b2dc051f411effc5417abf5c30d7290fa9eb49623fc337f2",
+        "references/executive-summary.md": "370b09867b079fd4d2f85336d6026f61f6c9c547a5bfba7b5f17efc9275171a3",
+        "references/faktenphase.md": "fcd5b65910b7ef5f939e56f4d889e277ddde19dfc3c05986ce2613c61a68bd9c",
+        "references/fokusseiten.md": "539a0b9049e3f19a9ed6529c0c9f75e5179f493c2dd2a9f90b9efff6ff45b6ef",
+        "references/gespraechspartner.md": "c291ff83b164fbe45357c5d0c349f9213a8d350e2bd8368a62e0f49cf5f9913a",
+        "references/interpretationsphase.md": "c9fd9b97090863df4140564015176ab68da79db1e8ade049fe279d7c030733a9",
+        "references/lauf-wiederaufnahme.md": "bc641cf6c1ebd3603d0c4187f656ab90f0e1fb1f29d55a3f79d169ff262717e4",
+        "references/legacy-company-briefing.md": "115653dff47e664cf2c1610ab8f04d7c986babf77d2e15cb81f4ffcbb0debd37",
+        "references/legacy-html-output.md": "8c73f16f146c1c6dc806a61929bf2d55ab833759bff5da38ce9f35ffe6a886b3",
+        "references/markt-deepdive.md": "ee2b7abe853bd3e6d498a02f95df4f34eff07a6b2fc2c1009a912955fc4835be",
+        "references/modellaufteilung.md": "11156474e0deb4a1d5b41f831b2f3cbd5ff983f0ba1be0d5d9b8711e28c1c3b3",
+        "references/modul-keyfacts.md": "d9f0e3acee641e3736e6fe9861df336b9378c73dd59d3bfc1d9993e39e76f788",
+        "references/modultest.md": "c10cf29675dac6d0b363d2ddddd42bb72dee33afb05bfa1df96dc71bcb88939e",
+        "references/netzwerk-html.md": "6fc27498f6bd2bc6afaf3daccdc3c47e88fb5737a535585b979e545ffb091b60",
+        "references/parallele-quellenpruefung.md": "9b186934d97dd3152c9bee751ce164ff9b20bd4cd111a0aff06ea10409c887b8",
+        "references/portfolio-darstellung.md": "35ec6335707a1d672b2ecbd1599ba33d46f077e2e81e4121122481554fc5ff3e",
+        "references/pruefauftraege.md": "c6d9233b5717c3414135c23d0ec49ea471b66ac642d29675ca7f786b819d9196",
+        "references/quellenpruefung.md": "28c57fd0bbb1ef809f1cb3850b4063b5c1a3595938c8ab5ea9dcfbcbf142bfaf",
+        "references/recherche-wiederverwendung.md": "ff24537378b235bada15e0b81d8c18af0ba51462419d70af59d1087643f376c1",
+        "references/regionale-praesenz.md": "e672c4a9b450c1cd68c673492a085eaf75e52e38835707307a9339b764c3bb16",
+        "references/setup-check.md": "45f3f1f90384833d0a4eed5ed59204e666ea90573950684fea91e562fa7f4e93",
+        "references/themen-darstellung.md": "4b41c9edcf6ccc49473bd5af0b4403341ed33d0696046c67ad3b4fbf94d09d4c",
+        "references/uebergabe.md": "c202b3f442f8c5481d022d25a6222e1e30d4c5ccbabe1dc65e03f3e421536430",
+        "scripts/check-review-data.py": "7483c14d9b7c122dbbdaf2c25b5d7e2aa90f42f3df4af2829c59d1f5e77d0052",
+        "scripts/prepare-facts.py": "8a26c7f432f58d9d523f8ca5a3588ef222f9ba11c8aef4665fdf583b7f12776d",
+        "scripts/resume-run.py": "768a603a746bd147daa0df1bc584f7cbc69142ab9985d0189d14e1db01442161",
+        "scripts/source-cache.py": "267092e431187b7a6cdd5f4bb051ad8b84fa2a07bf479a441738b5c623bb7eb4"
+      },
+      "sources": {
+        "S-0fcb333a58bc73ae": {
+          "source_id": "S-0fcb333a58bc73ae",
+          "url": "https://www.ariva.de/aktien/vincorion-se-aktie/news/roundup-ruestungsboom-vincorion-optimistischer-fuer-12102939",
+          "content_sha256": "71f1e6007596a48d27fa525c6ceb369cb3a080c76c33629d0aff22c52cb24e0e",
+          "text_sha256": "21cb49ed7c204a7c030174a1a2e9ca7754975c6d13ef4457fbc023f4581156be",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-189bed9f57b7a4b6": {
+          "source_id": "S-189bed9f57b7a4b6",
+          "url": "https://www.finanznachrichten.de/nachrichten-2026-07/68993909-ruestungsboom-beschert-vincorion-umsatzsprung-016.htm",
+          "content_sha256": "b7192f36fc9d8ed97bd706c36f6f6422cb48c68823e6d55d4cebe092c607b2b5",
+          "text_sha256": "cc54e43fcfee13c781104a3875964456f4c54f48f99dcaf91b7c463ad644d3fc",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-1a847178709b22c4": {
+          "source_id": "S-1a847178709b22c4",
+          "url": "https://www.gettex.de/en/news-overview/newsdetail/eqs-adhoc-vincorion-se-vincorion-revenue-for-the-first-half-of-2026-is-up-significantly-compared-to-the-same-period-last-year-full-year-guidance-confirmed/",
+          "content_sha256": "c3d24ee30700c8e315c94b190b951d4cfe0e1351376baf840f68080aa19c96c0",
+          "text_sha256": "a90aa031da540f01392cff10199a0c4f94293d8c632add978662a194c124c9c3",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-20ab7c633edc2585": {
+          "source_id": "S-20ab7c633edc2585",
+          "url": "https://www.vincorion.com/en/",
+          "content_sha256": "c1cfb91efacebacc4d3163c2d710317655335277a1f7dd10f1d456e6f88cce81",
+          "text_sha256": "6c9488ae6eb4193f697afdcd0d09352e949779877c7fb5123d60ca409f0f661a",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-2b57f2aeef51e1da": {
+          "source_id": "S-2b57f2aeef51e1da",
+          "url": "https://live.deutsche-boerse.com/nachrichten/ANALYSE-FLASH-JPMorgan-belaesst-Vincorion-auf-Overweight---Ziel-27-Euro-4d2c45f5-a010-4f65-9d88-21742813ca51",
+          "content_sha256": "378da1944ceb6a563066e3a8a28973b582bb5e4433da1cf08dea54f4ce2e68a2",
+          "text_sha256": "b7ec70d6cf479ead9472b173f3b5ed078c025bbd41d4b5bb2492dec3f8dc5c00",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-41e7bd7b63e2d486": {
+          "source_id": "S-41e7bd7b63e2d486",
+          "url": "https://vincorion.com/en/mobile-energy-systems-for-future-proof-deployment-scenarios/",
+          "content_sha256": "e33afe55941105587da6595d9520c531a9452ba9b7441c1290b4626e2547a851",
+          "text_sha256": "8e7ff1d2a09dd17c4e561af3320728817a7df64b62fc0cdd5d26216a68f4fa7d",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-555547ca1efb774c": {
+          "source_id": "S-555547ca1efb774c",
+          "url": "https://vincorion.com/en/energy-for-europes-security-vincorion-at-eurosatory-2026/",
+          "content_sha256": "be1ee1acf76878e6c50c0c24a5e110591bc00136616962f2def81ad16dc0b306",
+          "text_sha256": "686a88376263b4a0f1f7bc84653dcac4a2b51ee185a571eeb7977b741735e10b",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-5ce8ff175434609c": {
+          "source_id": "S-5ce8ff175434609c",
+          "url": "https://vincorion.com/en/vincorion-has-once-again-improved-its-ecovadis-rating-and-has-secured-the-bronze-medal-for-the-third-consecutive-year/",
+          "content_sha256": "7050d4b2567a83aaed7a1c9434d83759675926c9f80b071db228387430f56990",
+          "text_sha256": "ec9fdac7a978c66cee22d628ae9bb59a38ecd4072c5b9e7a4967a9062dbc3729",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-69e48c46a7fb7031": {
+          "source_id": "S-69e48c46a7fb7031",
+          "url": "https://vincorion.com/en/vincorion-takes-on-key-role-in-european-defense-project-sentinel-2/",
+          "content_sha256": "68886594203f078b14b7deb4b77dcdc891fd93611d4317a8d83830af43f55192",
+          "text_sha256": "eb41af385754d7bd411063840392a33b6e5964c6ad9b0c9ab2a6e17e897f92de",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-6d8b01cfee4e69d7": {
+          "source_id": "S-6d8b01cfee4e69d7",
+          "url": "https://www.jenoptik.com/news/pressreleases/2022/06/30/closing-sale-vincorion",
+          "content_sha256": "9d3918086ecbd7f7b8310beb66700f3e3d2cfdcbfbe5ec8a1b3de95ce5b14dba",
+          "text_sha256": "ea71d05738924c911a45c3904c82ed9d3417b2efb7b7f7099aa75d3f83466dc1",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-71de625fcaaf1b95": {
+          "source_id": "S-71de625fcaaf1b95",
+          "url": "https://vincorion.com/en/vincorion-besetzt-leitung-investor-relations/",
+          "content_sha256": "c9985a1a0d69546041dc73bef50a92d0901aebd5b5eed5ea50c29d644a3e33c6",
+          "text_sha256": "7cd6c6109aa95cefac49f34348b332199fc03d6e81f2f334ec16d7f3fe9ea976",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-722f85cd0fe582f0": {
+          "source_id": "S-722f85cd0fe582f0",
+          "url": "https://de.wikipedia.org/wiki/Vincorion",
+          "content_sha256": "f0c9ba5eaa7ec1cdc2aa69a6c825aa161ccfb8a0266e9c72aff2053e56e9cd60",
+          "text_sha256": "52063de8ffba1e290de8f3675eed451a9310f8ab9b626ddc4414723f51c52913",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-757e91a75b0726fb": {
+          "source_id": "S-757e91a75b0726fb",
+          "url": "https://ir.vincorion.com/media/document/4b669fed-814f-48d1-8678-d29720f9560c/assets/DE000VNC0014-Q2-2026-EQ-E-00.pdf",
+          "content_sha256": "3d06f9d843f7fca0d9c9c2c021da02391b64c72a2de21ae7d80843d99ad64775",
+          "text_sha256": "83e966067f3802b5be7650e16728912a5808f497f32a21dff05fde08f19bf3bb",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-8235dca98711f60c": {
+          "source_id": "S-8235dca98711f60c",
+          "url": "https://vincorion.com/en/vincorion-ausa-washington-2026/",
+          "content_sha256": "02477797a0631deedfadc376b9160aca5777e3a46c0fa1b08163ee7167975f25",
+          "text_sha256": "c9c944e7a473f122e264179324344d1e193f579fe6f08781311214cc9fb0a1e2",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-93a1fbca82540d6d": {
+          "source_id": "S-93a1fbca82540d6d",
+          "url": "https://vincorion.com/en/about-vincorion/",
+          "content_sha256": "78539de79d3d2c10b0def230f72d2204f2a399f794f248984e76f58c27406e0b",
+          "text_sha256": "f4c654b5b60b5d66281dc86681d987e7d563bce37a900869c1510977f12e9c33",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-9670ee4232da6c72": {
+          "source_id": "S-9670ee4232da6c72",
+          "url": "https://ir.vincorion.com/media/document/0f2dd31d-9994-4d99-9b4f-9bfc77e5e5f8/assets/2026-08-13_VINC_HY1_2026_result_presentation_final.pdf",
+          "content_sha256": "a77cc2b97c03a1b9ee803efa4adcc779d93732f3b6db847b2b83cfa31a87fae9",
+          "text_sha256": "5c2eb1ae5fb765719ffd3e8d17e38aacab0abfd0fa9ee3b8acc7d09ee072b1bf",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-a07d2f17d44253db": {
+          "source_id": "S-a07d2f17d44253db",
+          "url": "https://vincorion.com/en/heli-one-and-vincorion-intend-to-partner-to-bring-next-generation-electrical-rescue-hoist-erh-to-civil-and-military-helicopter-market/",
+          "content_sha256": "4c496b364bc1be032c3e40450a4a2268aace4c6d98ecc3118634e7cbdf60094a",
+          "text_sha256": "1e5e49e894c1988181149fecaf99efb95201a9fc3c773f628187128274c6d394",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a33cf7c1eeb40a5f": {
+          "source_id": "S-a33cf7c1eeb40a5f",
+          "url": "https://vincorion.com/en/vincorion-se-joins-the-sdax-just-weeks-after-successful-ipo/",
+          "content_sha256": "294311960f4cebb8846243458dd50714b540b4b5ceffa3115c0dcd46b9133671",
+          "text_sha256": "af0e76becbdafad2471dbfd9b000dad0a10f58907adb4d28f74b626027410c2e",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a3609ab109a44dd6": {
+          "source_id": "S-a3609ab109a44dd6",
+          "url": "https://theorg.com/org/vincorion/teams/leadership-team",
+          "content_sha256": "a7b9d9b897cb099bc5357a7e601b0db3ac94ee78dcffeeff9fd9ac6ab0ea8afc",
+          "text_sha256": "fe7c1929ad04ee0dddca4c4d35250567d603dc2e2b45cca8e461fa746cdd2abd",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-a492cd0df860fc7a": {
+          "source_id": "S-a492cd0df860fc7a",
+          "url": "https://vincorion.com/en/vincorion-grows-revenue-and-earnings/",
+          "content_sha256": "fb7702bd5a5212caf45eeab365d6a5f696ab03fe70f5395d99cc4b05e5f80d5d",
+          "text_sha256": "5ff467a77c0b86f86898d33696affecfde70c1095bf5c7e22b6ace6e2a64eec1",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-b87584cb356cf171": {
+          "source_id": "S-b87584cb356cf171",
+          "url": "https://ir.vincorion.com/media/document/bcf3789a-c391-49d7-85cb-31b54cd81fd6/assets/20260506_VINCQ1results_presentation_01.pdf",
+          "content_sha256": "f77c67cecdf3eccf8b5c98a5c0102062eb6bb99c222d9119d896619c5a585c3a",
+          "text_sha256": "a0aff4eea25d1f723197f67686d059907b4d16af8b418686d77603fc89439334",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "pdftotext; page markers refer to PDF pages, not printed numbering."
+        },
+        "S-db2fa0537999b2fc": {
+          "source_id": "S-db2fa0537999b2fc",
+          "url": "https://vincorion.com/en/change-in-management-at-vincorion/",
+          "content_sha256": "f5f8dec1958c5479159907a00bff706a706797ab3f38a978ee5f6fc32034b06b",
+          "text_sha256": "699dddab20a7d689b2f81d6ae3342f997e1d8c528e0bf5f377c49b3f0a987988",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-e5b2172843ae61b7": {
+          "source_id": "S-e5b2172843ae61b7",
+          "url": "https://www.eqs-news.com/news/ad-hoc/vincorion-se-vincorion-se-reports-41-higher-revenue-for-the-first-9-months-of-2026-compared-to-the-same-period-last-year-full-year-guidance-raised/1e1dc173-dcc2-4702-88cb-fff738bedbe7",
+          "content_sha256": "53e745e6bea4b328a00b2d1d9867da337570c693d48b0ecdb8f5b2aeb55e8cf3",
+          "text_sha256": "2288b2929da1adbe337f9604da4782e7d78e3b0dfc2681eddc21684a51bd5b16",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        },
+        "S-f113efb0e3928467": {
+          "source_id": "S-f113efb0e3928467",
+          "url": "https://vincorion.com/en/strategic-partner-heidelberg/",
+          "content_sha256": "96d5e1f99f0452fc42511620c3c2264486031563c931e076037777c3bd88e5d4",
+          "text_sha256": "f9321a5ee133d3bf89e2f0d94b0c763a846c3c17101a4a78400054185de6c861",
+          "capture_kind": "http-original",
+          "capture_note": null,
+          "extraction_notice": "Derived HTML text; scripts/styles omitted. Original HTML retained; dynamic content may require browser."
+        }
+      },
+      "dependencies": {},
+      "checked_at": "2026-10-20T12:28:32+00:00",
+      "fingerprint": "e4604c5f3ff9b07e50d0dddf039945567fca1595cf8975363cc06be67a6d40e7"
     }
   },
   "created_at": "2026-10-20T12:02:09+00:00",
   "notice": "Local completion records only; content approval and visual QA remain separate.",
-  "fingerprint": "513b562bdcf91fbe7eb2df335c7ec308346c195801cb9350c760fe75c5aa33bb"
+  "fingerprint": "ca21ad4efb215de3514fe5741bdecacaffaaa0dcc85825d0ebcfaaf84838f605"
 }
