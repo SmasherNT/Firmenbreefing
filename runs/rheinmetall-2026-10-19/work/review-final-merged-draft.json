@@ -1,0 +1,988 @@
+{
+  "schema_version": 1,
+  "run_id": "rheinmetall-2026-10-19",
+  "company": "Rheinmetall AG",
+  "as_of": "2026-10-19",
+  "phase": "final",
+  "status": "teilweise",
+  "material_errors": [
+    "I-ES-4 (positioning): Dominanzaussage 'größte jüngste Aufträge aus deutschen Programmen/Bundeswehr prägt Auftragseingang' nicht von den Fakten getragen und durch C-MKT-06 (Rumänien 5,7 Mrd EUR) widerlegt.",
+    "I-MI-portfolio-1 (positioning): 'Raumfahrt am Anfang der Reifeskala' widerspricht I-PM-sar (5/6) und I-ES-6; Reasoning nennt Stufen ohne Abhängigkeits-IDs.",
+    "I-MI-market-1 (positioning): 'mit eigener Pulverfertigung abgesichert' widerspricht dem zitierten Engpass-Fakt (M-RHM-04).",
+    "I-MI-cluster-2 (positioning): 'staatliche Partner' für LT/RO/ZA nicht belegt (C-STR-21 nennt Eigentümer nicht); 'reversibel' bei umstrittenem Bulgarien-JV.",
+    "S-OPP-3 (swot): Victoria als Sprengstoffwerk falsch (Pulver/Treibladungen laut M-RHM-04).",
+    "S-OPP-2 (swot): 'am Anfang der Reifeskala' widerspricht I-PM-skyranger/-fv014/-sar.",
+    "S-WKN-2 (swot): Litauen-Verzug ohne Basis-ID, Verallgemeinerung zweier umstrittener Medienberichte, 'Kapazitätsziel nicht erreicht' als Schwäche.",
+    "S-STR-3 (swot): Denel/Staatspartner und Zugangs-Kausalannahme nicht belegt.",
+    "S-STR-2 (swot): Rahmenhöchstwert als 'sichert die Nachfrage'."
+  ],
+  "review_scope": "Leitprüfung Schluss-Review (mode interpret-v2), 0 Dokumentjobs, facts_to_verify=0, source-findings leer. Alle 126 neuen I-/S-Claims (114 Positionierung: 6 Summary, 3 Highlights, 36 Matrixzellen, 39 Produktreife, 21 Regionen, 9 Keyfacts; 12 SWOT) einzeln gegen die abhängigen A-Fakten (Statement, Evidenz, Unsicherheit), Vergleichsplan v1 (Kriterien/Anker/Einheiten), portfolio-maturity-v1 (sechs Meilensteine), regional-presence-v2 (Funktions- und JV-Kontrollregeln) und die Darstellungsfelder gelesen; zusätzlich Zahlen-/Datums-Rückverfolgung aller Kurzfelder gegen die abhängigen Fakten (Skript), Längen-/display_order-Kontrolle, SWOT intern/extern und Quadrantenanzahl (3 je Quadrant, keine künstlichen Füllpunkte erkennbar). Alle 200 reuse_fact_ids sind genau die Fakten, auf die I-/S-Claims transitiv verweisen; im Basis-Review (freigegeben, 297 Claims) als A-geprüft mit identischem Fingerprint, Mapping und Quellen-Snapshot bestätigt; keine Neurecherche. Ermessensfragen: Kraken Stufe 6, BAE-Integration 4/4, GD-OTS-Beschaffung 2/4, Rheinmetall-Reichweite und KNDS-Kapazität 'nicht öffentlich belegt' sowie S-WKN-3-Verhältnisbildung beurteilt (siehe Claim-Notizen). 15 Claims mit Korrektur (10 positioning, 5 swot); zwei Korrekturrunden-Regel beginnt mit dieser Runde.",
+  "open_limits": [
+    "Überwiegend Herstellerangaben (Rheinmetall-Mitteilungen/Investorenpräsentation), Plan- und Zielwerte keine Ist-Werte; Q3-2026-Zahlen erst 05.11.2026; Closing Power Systems offen.",
+    "Matrix: RQ-01 (Rheinmetall-Reichweite je Variante/Ladung) und RQ-02 (KNDS-Jahreskapazität mit Zieljahr) bleiben dokumentierte, nicht blockierende Datenlücken; RQ-03 (RDX-Status) und RQ-06 (Produktreife Fuchs/Radare/Battlesuite) ebenso.",
+    "Regionale Präsenz: RQ-04 (Rheinmetall Arabia Simulation and Training LLC, Riad laut C-STR-18) und RQ-05 (RBSL Entwurf/Betreuung) nicht in der Regionszuordnung; Golf bleibt 'nicht eindeutig bestimmbar', GB bei Stufe 4.",
+    "Modelle nur als claude-sonnet-5-5/medium konfiguriert; das tatsächlich ausgeführte Modell ist aus dem Lauf nicht nachweisbar. Keine Dokumentjobs in der Schlussphase, daher keine neuen Originallektüren; Fakten-Reuse stützt sich auf das freigegebene Basis-Review."
+  ],
+  "non_blocking_notes": [
+    "I-ES-1 Rundung 5,2/-1,6 Mrd EUR im Preview; I-ES-5 Preview 'mit lokaler Wertschöpfung' ist Herstellerplan (C-MKT-06).",
+    "I-M-knds-industrial: Italien/'Neubau' nur über Katalog bzw. neue Linie an bestehendem Standort belegt (offengelegt); I-M-bae-industrial: Bofors-Zugriffsgrenze nur in der Spektrum-Zelle.",
+    "I-PM-cuas 'funktionsfähig' ist Inferenz; I-RP-sg Entwicklungsfunktion aus Selbstbeschreibung; I-MI-portfolio-3 Backlog vor/nach F126-Ausbuchung; I-MI-market-3 fact_claim_ids ohne Fertigungsfakten.",
+    "S-WKN-3: keine abgeleitete Prozentzahl rendern; S-THR-1/S-THR-3 Wortlaut ('umkehren', 'begrenzt') abschwächen; S-STR-1/S-THR-1/S-STR-3/S-OPP-3 nach Korrektur der jeweiligen I-MI-Abhängigkeiten gezielt gegenprüfen.",
+    "Nach Korrekturen neuen Positionierungs-/SWOT-Kontext (inkl. T-E01, P-R61, M-RHM-07 in --claim-ids), neue Validierung und neues Arbeitsblatt erzeugen; unveränderte geprüfte I-/S-Claims sind dann Reuse-Kandidaten, geänderte und abhängige gezielt erneut prüfen."
+  ],
+  "review_work_fingerprint": "62a58b1c44dcc3b20a8b7494b88fdf8912fafd188f9f3bb2e3a6bd7f5677fe51",
+  "plan_fingerprint": "8b45d2d996552c652ddd2338b9b322e687b79a395a2120fcc68c5967c7d986d3",
+  "source_collection_fingerprint": "3104fcae54bc1e2f5e4cfc4cc622bb616321b343c3dad3c61f0be16f1e6b19f5",
+  "review_groups": [
+    {
+      "claim_ids": [
+        "I-ES-1"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Kennzahlen gegen T-13/T-14/T-16/T-18 geprüft: +39 %, 5.227 Mio EUR, Backlog 80,5 Mrd (inkl. erwarteter Rahmenabrufe, im Preview benannt), FCF -1.616 Mio, Prognose 13,7-14,2 Mrd, 50-Mrd-Ziel 2030 ausdrücklich als Ziel. Hersteller-Zuschreibung ('laut eigenen Zahlen') sichtbar; Rundung 5,2 bzw. -1,6 Mrd im Preview ist reine Darstellungsrundung (nicht blockierend). Kurzfelder: Headline/Preview innerhalb der Grenzen."
+    },
+    {
+      "claim_ids": [
+        "I-ES-2"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Ableitung aus P-W10/P-W40/P-W13/M-RHM-03/-05 und den Matrixzellen (Integration 3/4, Industrial 4/4, Procurement 4/4) nachvollzogen; Ist (Unterlüß in Betrieb, Aschau 1.700 t) und Plan (RDX, 1,5 Mio bis 2030) getrennt, Herstellerziel im Preview gekennzeichnet; Litauen-Verzug laut Fachmedium über I-M-rheinmetall-industrial (M-RHM-07) gedeckt."
+    },
+    {
+      "claim_ids": [
+        "I-ES-3"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "T-04, C-STR-14, P-C01, T-E17, C-STR-38, T-16 abgeglichen: fünf Segmente, NVL-Erwerb (27.02./01.03.2026 Datumsabweichung im Faktum ausgewiesen), Power-Systems-Verkauf unterzeichnet, Closing Q4 nur angestrebt, F126 bis 300 Mio EUR Umsatz, 2.153 Mio EUR ausgebucht. Keine Überdehnung."
+    },
+    {
+      "claim_ids": [
+        "I-ES-4"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Zahlen und Programmstatus (Puma, Schakal, TaWAN, IdZ-ES, SPOCK 1 beauftragt; Arminius erwartet, nicht erteilt; 62 % Auslandsumsatz H1; größter Kunde 3,8 Mrd EUR unbenannt) sind korrekt wiedergegeben. Die Gesamtaussage ist jedoch nicht von den Fakten getragen.",
+      "reason": "Headline/Statement 'Die größten jüngsten Aufträge stammen aus deutschen Programmen' und Reasoning 'Rahmenverträge der Bundeswehr prägen den Auftragseingang' sind eine nicht belegte Vergleichs-/Mengenaussage: Die Nomination (16,2 Mrd EUR H1) ist im Paket nicht nach Kunden aufgeschlüsselt; die Auswahl deutscher Beispiele belegt keine Dominanz. Das in I-ES-5 selbst genutzte Rumänien-Paket (C-MKT-06, 5,7 Mrd EUR, 29.05.2026, Herstellerangabe) ist größer als Puma (4,2 Mrd brutto) bzw. IdZ-ES und widerspricht der Größenaussage. Auch der Gegensatz 'Auftragsseite deutsch, Umsatzseite Ausland' ist so nicht belegt.",
+      "action": "Aussage auf das Belegte begrenzen, z. B. 'Zu den jüngsten Großaufträgen zählen mehrere deutsche Programme (Puma, Schakal, TaWAN, IdZ-ES, SPOCK 1) sowie das Rumänien-Paket (laut Rheinmetall); 62 % des H1-Umsatzes entstehen im Ausland; Arminius ist erwartet, nicht erteilt.' Dominanz-/Gegensatzformulierung in Headline, Statement und Reasoning streichen; C-MKT-06 in depends_on aufnehmen, falls das Rumänien-Paket genannt wird.",
+      "owner": "positioning"
+    },
+    {
+      "claim_ids": [
+        "I-ES-5"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Stufenzählung gegen I-RP-* geprüft: Stufe 5 in genau zehn Regionen (DE, NL, CH, IT, HU, RO, Nordeuropa, US, SG, ZA), Stufe 4 u. a. UA, Litauen/Lettland nur geplant, Golf nicht bestimmbar; HU/ZA als beherrschte JV (Vollkonsolidierung) korrekt. 'Staatliche Partner' ist über HU-Regierung, UDI (C-STR-20) und State Defence Corporation (P-R95) für 'oft' getragen; Denel/EPSO-G-Status ist im Paket nicht belegt (siehe I-MI-cluster-2). Nicht blockierend: Preview 'Rumänien-Paket ... mit lokaler Wertschöpfung' sollte 'soll' (Herstellerplan, C-MKT-06) tragen."
+    },
+    {
+      "claim_ids": [
+        "I-ES-6"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Konsistent mit I-PM-skyranger (4), I-PM-fv014 (4), I-PM-sar (5) und T-07 (Air Defence +62 %); Medienverzug Skyranger 30 und Rheinmetall-Gegenangabe (P-A11) beide genannt; Einordnung 'SPOCK 1 im Betrieb' beruht auf Herstellerangabe (P-D30), im Reasoning/Uncertainty erkennbar."
+    },
+    {
+      "claim_ids": [
+        "I-HL-1"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "T-14: 80,5 Mrd EUR zum 30.06.2026 (Vj. 56,0), Definition inkl. erwarteter Rahmenvertragsabrufe im Label; Konzern/Unternehmensangabe/Stichtag korrekt, Länge der Felder innerhalb der Grenzen."
+    },
+    {
+      "claim_ids": [
+        "I-HL-2"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "T-16/P-S05: 13,7-14,2 Mrd EUR, Senkung um 300 Mio EUR wegen F126, Stand 06.08.2026; als Prognose ('kein Ist') in scope_label gekennzeichnet; Bezugsobjekt Konzern, Zeitraum GJ 2026 korrekt."
+    },
+    {
+      "claim_ids": [
+        "I-HL-3"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Wert (1,5 Mio 155-mm-Geschosse/Jahr), Bezug (konzernweit), Zeitbezug (bis spätestens 2030) und Kennzeichnung als Herstellerziel/keine Ist-Kapazität im sichtbaren scope_label sind durch P-W13 korrekt.",
+      "reason": "Das Uncertainty-Feld führt 'frühere Mitteilung nannte bereits 2027' ein; dieser Fakt steht in T-E01 (Eröffnungsmitteilung 05.09.2025: ab 2027 rund 1,5 Mio im Produktionsnetz), das nicht in depends_on steht. Highlights müssen direkt auf die tragenden A-Fakten verweisen; keine Fakten ohne Basis-ID.",
+      "action": "T-E01 in depends_on aufnehmen (im Kontext enthalten) oder den Halbsatz streichen.",
+      "owner": "positioning"
+    },
+    {
+      "claim_ids": [
+        "I-M-rheinmetall-spectrum",
+        "I-M-rheinmetall-integration",
+        "I-M-rheinmetall-capacity",
+        "I-M-rheinmetall-procurement",
+        "I-M-rheinmetall-industrial"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Rheinmetall-Zellen gegen Plan v1 und Fakten geprüft. Spektrum: Profil nur aus Herstellerangaben, gelenktes Geschoss als Beleglücke. Integration 3/4: Aschau (55 %, P-W40/C-STR-25) operativ, RDX Unterlüß/Várpalota und Victoria (Pulver, 2028) Planstände -> nächste Stufe korrekt begründet. Kapazität: 1,5 Mio/Jahr ist Herstellerziel (konzernweit, Zieljahr 2030), Werks-/Hochlaufwerte als Plan, Maryborough nur beauftragt; Headline kennzeichnet 'Ziel'. Beschaffung 4/4: Bundeswehr-Rahmen (bis 8,5 Mrd, Höchstwert), RDM-Rahmen, Ukraine-Auftrag; Liefer-/Einsatzangaben als Hersteller ausgewiesen. Industrial 4/4: DE/ES/ZA operativ, Baisogala im Bau (Spatenstich 04.11.2025), Verzug nur Medienangabe, Australien/Lettland nicht gezählt."
+    },
+    {
+      "claim_ids": [
+        "I-M-rheinmetall-range"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Ermessensfrage (d) geprüft: M-RHM-02 liefert nur Testwerte 06.11.2019 (67/76/54 km, Herstellerangabe, 76 km mit nicht JBMoU-konformem Geschütz), ohne eindeutige Geschossvariante/Ladung je Schuss und ohne Datenblattwert. Der Plan verlangt Datenblatt oder dokumentierten Test mit Rohr/Ladung und trennt Test- von Datenblattwerten; 'nicht öffentlich belegt' mit Wert null ist sachgerecht, alle Testwerte stehen vollständig im coverage_note, keine Schwächenaussage ('Keine Aussage, dass die Fähigkeit fehlt'). Hinweis (nicht blockierend): BAE/KNDS-Werte sind ebenfalls ohne Ladungsangabe bewertet; tragender Unterschied bei Rheinmetall ist das Fehlen eines Datenblattwerts bzw. der Variantenzuordnung, was das coverage_note benennt."
+    },
+    {
+      "claim_ids": [
+        "I-M-nammo-spectrum",
+        "I-M-nammo-range",
+        "I-M-nammo-integration",
+        "I-M-nammo-capacity",
+        "I-M-nammo-procurement",
+        "I-M-nammo-industrial"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Nammo-Zellen geprüft: Spektrum aus Produktseiten (Raketen-/Ramjet-Geschosse nur erwähnt, kein Serienstatus). Reichweite 41 km IM HE-ER Base Bleed L52 (Datenblatt, Ladung 6 DM72). Integration 3/4 (Vihtavuori/Mesa, Sprengstoff nicht konkret belegt). Kapazität: nur Medienziel 200.000/Jahr bis 2028 (NYT via DIE), als Ziel gekennzeichnet; Perry-Ladungen nicht als Geschosse gezählt. Beschaffung 3/4 konservativ, nächste Stufe mit Beleglücken begründet. Industrial 4/4 (NO/FI/US + Raufoss-Neubau); 'neun Fertigungsländer' nicht als 155-mm-Beleg gewertet."
+    },
+    {
+      "claim_ids": [
+        "I-M-knds-spectrum",
+        "I-M-knds-range",
+        "I-M-knds-procurement",
+        "I-M-knds-industrial"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "KNDS-Zellen geprüft: Spektrum aus Katalog 2026-27 (KATANA gelenkt, BONUS). Reichweite 40 km nur für LU 211 mit Rohrlänge; LU 220/KATANA ohne Rohr/Ladung bewusst nicht als Kennwert übernommen. Beschaffung 4/4 (NSPA-Rahmen mehrere Staaten, Bundeswehr-Auftrag für Ukraine, Einsatz laut KNDS). Industrial 4/4: FR/BE/IT; Italien stützt sich auf Katalog und großkalibrige Fertigung laut Euronews (in uncertainty offengelegt), 'Neubau' ist eine neue Linie an bestehendem Standort (offengelegt) - nicht blockierend: Wortlaut 'fertigt in Italien' bleibt an den Katalogbezug gebunden."
+    },
+    {
+      "claim_ids": [
+        "I-M-knds-integration",
+        "I-M-knds-capacity"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Ermessensfrage (d) KNDS-Kapazität: 'nicht öffentlich belegt' ist sachgerecht, weil die einzige Werkszahl (100.000/Jahr, La Chapelle-Saint-Ursin) ohne Zieljahr und nur sekundär (Le Monde via Euromaidan Press) vorliegt, Polen-180.000 ein Partnerwerk und Tarbes nur Hüllen betrifft; Plan verlangt Zieljahr und Werk/Konzern-Kennzeichnung. coverage_note nennt alle Werte, keine Schwächenaussage. Integration: keine eigene Pulver-/Sprengstofffertigung belegt, Anker 1 ausdrücklich nicht vergeben, Colleferro-Explosion nicht als Herstellung gewertet."
+    },
+    {
+      "claim_ids": [
+        "I-M-bae-spectrum",
+        "I-M-bae-range",
+        "I-M-bae-capacity",
+        "I-M-bae-procurement",
+        "I-M-bae-industrial"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "BAE-Zellen geprüft: Spektrum aus Broschüre 02/2026, Bofors/gelenkte Produkte wegen Zugriffsgrenze ausdrücklich nicht geprüft. Reichweite: XL12E1 40 km L/52 (nicht im Dienst, im Kurzfeld ausgewiesen), L15 32 km. Kapazität: Sechzehnfach-Steigerung ohne Basiswert -> null mit coverage_note. Beschaffung 3/4 (280-Mio-GBP-Auftrag im 15-Jahres-NGMS). Industrial 3/4 (UK, US-Energetik); nicht blockierend: das Bofors-Zugriffsproblem steht nur in der Spektrum-Zelle, 'drittes Fertigungsland nicht belegt' bleibt reine Belegaussage."
+    },
+    {
+      "claim_ids": [
+        "I-M-bae-integration"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Ermessensfrage (b) BAE-Integration 4/4 geprüft: M-BAE-06 belegt BAE OSI als Betreiber von Holston (RDX/HMX) und Radford (Nitrozellulose, Treibmittel) und damit operative Sprengstoff- und Treibmittelfertigung; der Anker 4 sagt 'eigene operative Fertigung'. Die Einstufung ist vertretbar, weil Betreibermodell, Army-Eigentum, Interview-Herkunft und fehlender Bezug zur britischen 155-mm-Kette in Headline ('als Betreiber staatlicher US-Werke'), Preview ('UK ohne eigene Sprengstoffe'), uncertainty und next_stage_limit offengelegt sind; I-MI-market-1 relativiert korrekt ('nur über US-Betreiberwerke'). Nicht blockierend, aber die Sichtbarkeit der Einschränkung im Kurzfeld muss erhalten bleiben."
+    },
+    {
+      "claim_ids": [
+        "I-M-gdots-spectrum",
+        "I-M-gdots-range",
+        "I-M-gdots-integration",
+        "I-M-gdots-capacity",
+        "I-M-gdots-industrial"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "GD-OTS-Zellen geprüft: Spektrum (SMArt-Fertigungsrolle offen), Reichweite 40 km M1128-I mit MCS Zone 6H aus L52 (teils Simulation, offengelegt), Integration 3/4 (Valleyfield Treibmittel, Füllung nicht als Synthese gewertet), Kapazität: Mesquite-30.000/Monat nur medial GD-OTS zugeordnet und nicht erreicht - korrekt als Beleggrenze statt Wert/Schwäche geführt, Zuordnung im Kurzfeld als 'medial' gekennzeichnet. Industrial 3/4 (US, CA); Mesquite-Probleme nur medial zugeordnet."
+    },
+    {
+      "claim_ids": [
+        "I-M-gdots-procurement"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Ermessensfrage (c) GD-OTS-Beschaffung 2/4 geprüft: Stufe 2 ist vertretbar, weil M-GDO-03 (217-Mio-USD-Task-Order unter modifiziertem 1,48-Mrd-Army-Vertrag, Ziel Geschosskörperfertigung) und M-GDO-06 (UCA Treibmittel) Investitions-/Kapazitätsaufträge sind, kein ausdrücklich beschriebener mehrjähriger 155-mm-Lieferrahmen; die Task-Order-Struktur und die Beleglücke stehen in uncertainty/next_stage_limit, keine Schwächenaussage. Nur die Formulierung ist zu korrigieren.",
+      "reason": "Statement nennt 'MACS-Fertigung unter Army-Vertrag'. M-GDO-01 belegt lediglich 'GD-OTS als Hersteller für US Army und Marine Corps' (Produktseite); ein Vertrag/Auftrag wird nicht beschrieben. Damit wird eine Vertragsangabe eingeführt, die kein A-Fakt trägt.",
+      "action": "Statement/Reasoning auf 'MACS-Ladungen laut Produktseite für US Army und Marine Corps' umformulieren und M-GDO-01 nicht als Auftragsbeleg anführen; Stufe 2 und next_stage_limit unverändert.",
+      "owner": "positioning"
+    },
+    {
+      "claim_ids": [
+        "I-M-hanwha-spectrum",
+        "I-M-hanwha-range",
+        "I-M-hanwha-integration",
+        "I-M-hanwha-capacity",
+        "I-M-hanwha-procurement",
+        "I-M-hanwha-industrial"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Hanwha-Zellen geprüft: Spektrum (MCS-Exportverträge; ER-Serienstart nur laut Medien-Anrisstext), Reichweite null (keine Datenangabe), Integration 3/4 nur auf Medien/Werksbesuch (Hanwha-finanzierte Reise offengelegt), Kapazität null weil Angaben in Treibladungsmodulen (keine Umrechnung übernommen), Beschaffung 3/4 (FMV-Rahmen, BAE-Vertrag; betrifft Treibladungen, im Kurzfeld genannt), Industrial 2/4 (mehrere koreanische Werke, US-Campus nur geplant)."
+    },
+    {
+      "claim_ids": [
+        "I-PM-boxer"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-V13/P-V10/P-V14/P-V11/P-V12: 100. Boxer-MIV 25.06.2026 (Herstellerangabe) trägt Stufe 6 für die Basisplattform; Schakal, RCH 155 und Schwerer Waffenträger als eigene Varianten mit abweichendem Stand (Auftrag/Verzug) getrennt, next_stage_limit begrenzt die Übertragung."
+    },
+    {
+      "claim_ids": [
+        "I-PM-puma"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-V21/P-V20: Übergabe des ersten Puma aus dem zweiten Los (28.08.2026, Fachmedium mit PSM-Verweis) und 200-Fahrzeug-Folgebestellung getrennt; Stufe 6 vertretbar, Sekundärquelle in uncertainty offengelegt."
+    },
+    {
+      "claim_ids": [
+        "I-PM-lynx"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Stufe 6 ist vertretbar (Ungarn: erstes in Zalaegerszeg gefertigtes Lynx 24.07.2024 übergeben, Fertigung der restlichen Fahrzeuge laut P-R61/C-STR-19 seit Ende 2023 im Gange; Italien: erste vier Lynx 27.01.2026; XM30 und Rumänien-Auftrag als Varianten/Aufträge getrennt).",
+      "reason": "Statement 'Ungarn erhält seit 2024 lokal gefertigte Fahrzeuge' behauptet laufende Lieferungen; P-V32 belegt nur die erste Übergabe 24.07.2024 (46 Fahrzeuge aus deutscher Fertigung 'vorgesehen'), der aktuelle Auslieferungsstand 2026 ist ausdrücklich nicht belegt (uncertainty widerspricht dem Statement). Das Reasoning stützt 'Serienfertigung in Zalaegerszeg' auf Fakten (P-R61/C-STR-19), die nicht in depends_on stehen.",
+      "action": "Statement auf 'erstes in Ungarn gefertigtes Lynx 07/2024 übergeben, Italien erhielt im Januar 2026 die ersten vier' begrenzen; P-R61 (bzw. C-STR-19) in depends_on aufnehmen, wenn 'Serienfertigung' genannt wird.",
+      "owner": "positioning"
+    },
+    {
+      "claim_ids": [
+        "I-PM-mbt"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Stufe 4 ist belegt (Challenger 3: 148 Panzer, Auftrag/Schießversuche P-V40/C-MKT-08; Leopard-2-A8-Anteile P-V16); Scharfschüsse als Erprobung, nicht als Betrieb gewertet.",
+      "reason": "Statement 'Panther/NMBT ohne Auftrag' formuliert eine Beleglücke als Tatsache; P-V41 belegt nur, dass in den geöffneten Quellen kein Serien- oder Beschaffungsauftrag gefunden wurde.",
+      "action": "Formulierung in 'ohne belegten Auftrag' (bzw. 'kein Auftrag in den geöffneten Quellen belegt') ändern; Stufe unverändert.",
+      "owner": "positioning"
+    },
+    {
+      "claim_ids": [
+        "I-PM-trucks"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-V50/P-V51/P-V52: über 20.000 HX im Einsatz bzw. über 16.000 verkauft (Herstellerzahlen, Abweichung in uncertainty), Abruf von über 2.000 UTF; Stufe 6 durch tatsächlich gelieferte Skalierung getragen, Autonomie-Kits ausgeklammert."
+    },
+    {
+      "claim_ids": [
+        "I-PM-lightveh",
+        "I-PM-airsensors",
+        "I-PM-battlesuite",
+        "I-PM-civilrest"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Vier 'nicht eindeutig bestimmbar'-Einträge: score null, coverage_note nennt die konkrete Beleggrenze (nur Portfolio-/Selbstdarstellungsangaben, Anduril-Integration nur angekündigt); Reasoning/uncertainty stellen ausdrücklich Beleglücke und nicht Unreife fest; kein SWOT hängt an diesen Einträgen."
+    },
+    {
+      "claim_ids": [
+        "I-PM-ugv"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-V70/P-V71: Wild Goose 'fully fielded' ausdrücklich als Herstellerangabe, MUSKOX/Mission Master SP als Programmauswahl, Ox im Wettbewerb; Stufe 5 mit Herstellerzuschreibung und Variantenunterschied vertretbar."
+    },
+    {
+      "claim_ids": [
+        "I-PM-vsvc"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-V72/P-R98/P-R130: laufende Instandhaltung (Singapur MRO, Westukraine seit 06/2024); Stufe 5 getragen, undatierte Seiten in uncertainty."
+    },
+    {
+      "claim_ids": [
+        "I-PM-art155"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-W10/P-W11/P-W12/P-W13: Unterlüß seit 05.09.2025 in Betrieb, laut Hersteller hunderttausende Geschosse in die Ukraine geliefert; Stufe 6 vertretbar, Herstellerangabe und Firepower-Ziel (kein Meilenstein) getrennt."
+    },
+    {
+      "claim_ids": [
+        "I-PM-medcal"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-W20/P-W21/P-W02/P-W12/T-06: Lieferung 35-mm-Munition Ukraine (Hersteller), Puma-Munition abgerufen, Umsatztreiber; Albacete-Linie als Kapazitätserweiterung getrennt; Stufe 6 vertretbar."
+    },
+    {
+      "claim_ids": [
+        "I-PM-gunsys"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-V14/P-W30/P-W31: RCH-155-Auftrag UK (Stufe 4); Leopard-2-Kanone nur undatierte Selbstdarstellung und 130-mm/L60 in Test nach Investorenpräsentation -> Beleglücke, keine Reifeaussage; Telford-Werk als schrittweise im Betrieb."
+    },
+    {
+      "claim_ids": [
+        "I-PM-propellant"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-W40: Aschau produziert derzeit rund 1.700 t Pulver und 300.000 Module p. a. (Herstellerangabe); Stufe 6 für Bestand, Ausbau (2027/2028) als Plan getrennt."
+    },
+    {
+      "claim_ids": [
+        "I-PM-mortar"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-D50/P-W20: 81-mm-Mörser laut Unternehmensseite bei norwegischen Streitkräften im Einsatz (Stufe 5), Dual-Eimos-Ausbau geplant; Zuordnung zur Eimos-Familie als offen markiert."
+    },
+    {
+      "claim_ids": [
+        "I-PM-protect",
+        "I-PM-mount",
+        "I-PM-defelec"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Stufe-4-Einordnungen durch die konkreten Aufträge getragen (Rettungsstationen >1.056 Mio EUR; MK93 3.104 Einheiten, 20,7 Mio USD; Puma-Simulatoren 118,5 Mio EUR); heterogene Bündel bzw. offene Herkunft der 245 gelieferten MK93 in uncertainty, Lieferung/Betrieb als nicht belegt ausgewiesen."
+    },
+    {
+      "claim_ids": [
+        "I-PM-strike"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Stufe 1 ist korrekt (JV-Vereinbarung 13.04.2026 und Planung laut P-W60/T-E10/C-STR-36; weder Prototyp noch Test noch Auftrag).",
+      "reason": "Statement 'zum Stichtag aber nicht gegründet' formuliert eine Beleglücke als Tatsache; T-E10, C-STR-36 und P-W60 sagen nur, dass die Gründung bis zum Stichtag nicht belegt bzw. keine Gründungsmeldung gelesen wurde.",
+      "action": "Formulierung in 'Gründung zum Stichtag nicht belegt' ändern; Stufe unverändert.",
+      "owner": "positioning"
+    },
+    {
+      "claim_ids": [
+        "I-PM-skyranger"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-A10/P-A11/P-A12/P-A13/P-A02: Aufträge DE (19), AT (36), NL, RO (24 Skyranger 35); Prototyp an die Bundeswehr, Serienlieferung laut Medien ab Mitte 2027 gegen Rheinmetall-Angabe Februar 2028 (beide genannt); Turmkapazität 400/Jahr als Plan; Varianten 30/35 in uncertainty. Stufe 4 sachgerecht."
+    },
+    {
+      "claim_ids": [
+        "I-PM-skynex"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-A14/P-A01/P-A12: erste Batterie Italien 18.12.2025 geliefert, weitere Aufträge; Stufe 4 mit Begründung, dass eine Einzellieferung keine wiederholte Auslieferung ist und Einsatz nicht recherchiert wurde."
+    },
+    {
+      "claim_ids": [
+        "I-PM-navaldef"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-A12/P-A40: Rumänien bestellte zwei Millennium Guns (Herstellerangabe), Searanger u. a. nur Angebot; Stufe 4 getragen."
+    },
+    {
+      "claim_ids": [
+        "I-PM-cuas"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-A50: AERIE-Prototyp 07.10.2026 geliefert, Bedienerdemonstrationen erst Q4 2026; Stufe 2 vertretbar (nicht blockierend: 'funktionsfähig' im Reasoning ist eine Inferenz aus der Lieferung eines containerisierten Prototyps; Tests/Demos als nicht belegt ausgewiesen)."
+    },
+    {
+      "claim_ids": [
+        "I-PM-dlbo",
+        "I-PM-idz"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-D10/P-D12/P-D02/C-MKT-03/P-D11: TaWAN-Rahmenvertrag und D-LBO-Abruf (20.07.2026, ~100 Mio EUR) bzw. IdZ-ES-Abruf (~1,04 Mrd EUR brutto, Lieferung ab 11/2027) tragen Stufe 4; IdZ-ES-Quellkonflikt (1,7 vs. 3,1 Mrd EUR) in uncertainty; Einsatz/Auslieferung nicht belegt."
+    },
+    {
+      "claim_ids": [
+        "I-PM-fv014"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-D20/T-E11/C-MKT-05: Rahmenvertrag 22.04.2026, Qualifikation ab Q2 2026, Lieferung ab H1 2027 (Plan); Brutto/Netto-Abweichung beim Erstabruf (300 vs. 250 Mio EUR) in uncertainty; Stufe 4 vertretbar."
+    },
+    {
+      "claim_ids": [
+        "I-PM-uas"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-D14/P-D01/C-TEC-03: Anduril-Partnerschaft (18.06.2025) und MQ-28-Zusammenarbeit nur angekündigt, kein Prototyp/Auftrag belegt; Stufe 1, Partnerprodukte ausgeklammert."
+    },
+    {
+      "claim_ids": [
+        "I-PM-sar"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-D30/C-TEC-04/T-E04: Rheinmetall ICEYE betreibt die SAR-Satelliten, Bundeswehr hat laut Rheinmetall direkten Zugriff (06.10.2026); Satellitenfertigung begonnen (kein Serienbegriff). Stufe 5 für den Dienst SPOCK 1 auf Herstellerbasis, Satellitenanzahl offen - vertretbar."
+    },
+    {
+      "claim_ids": [
+        "I-PM-airsat"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-D31/T-E22: Start 01.10.2026 (Herstellerangabe) trägt Stufe 3 (durchgeführte Validierungsmission); Kundenprogramm nicht belegt."
+    },
+    {
+      "claim_ids": [
+        "I-PM-f35"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-D40/C-TEC-02: Fertigung in Weeze seit Juli 2025 im Rahmen der Industriekooperation, Auslieferungen ab 2027 vorgesehen, 400 Mittelrümpfe Planmenge; Stufe 4 mit klarer Abgrenzung zu Lieferung."
+    },
+    {
+      "claim_ids": [
+        "I-PM-k130"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-N10/P-N01/P-N03: Taufe der LÜBECK (fünfte Einheit des zweiten Loses, 29.04.2026), Lieferung EMDEN/KÖLN 2026 nur Plan; Serienbau (zweites Los), Konzernzugehörigkeit erst seit 03/2026 ausgewiesen; Stufe 6 vertretbar."
+    },
+    {
+      "claim_ids": [
+        "I-PM-fdb"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-N20/P-N03/P-N01: Kiellegung drittes FDB 14.09.2026, Indienststellung ab 2029, viertes Boot nur eingeleitet; Stufe 4 getragen, MBV707-Status als nicht einzeln belegt markiert."
+    },
+    {
+      "claim_ids": [
+        "I-PM-intlships"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-N30/P-N03/P-N31/P-N61: Rumänien vier Schiffe (920 Mio EUR in P-N03), MMPV-Konstruktion und Bau in Bulgarien, Mangalia-Übernahme noch nicht abgeschlossen, Ägypten Pipeline; Stufe 4 ohne Ablieferungsbeleg korrekt."
+    },
+    {
+      "claim_ids": [
+        "I-PM-navservice"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Stufe 5 ist getragen (laufende Fregatten-Instandsetzung P-N03, mehrjähriger Wartungsrahmenvertrag Zoll P-N40 vom 23.09.2026, Werftprofile P-R02).",
+      "reason": "Der Zahlenzusatz '(Serviceumsatz 39 Mio EUR)' hängt am Fregatten-Halbsatz. P-N03/T-09 nennen 39 Mio EUR als gesamten Naval-Serviceumsatz der ersten vier Monate nach Übernahme (März-Juni 2026), 'v. a.' Fregatteninstandsetzung. Bezugsobjekt und Zeitraum fehlen im Statement.",
+      "action": "Zahl mit Bezug ergänzen, z. B. 'Naval-Serviceumsatz 39 Mio EUR in vier Monaten seit Übernahme, v. a. Fregatteninstandsetzung'.",
+      "owner": "positioning"
+    },
+    {
+      "claim_ids": [
+        "I-PM-usv"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Ermessensfrage (a) Kraken K3 Scout Stufe 6 geprüft: Stufe 6 der festen Skala lautet 'laufende Serienproduktion, wiederholte Auslieferung oder gelieferte Skalierung'; P-N50 (Mitteilung 20.04.2026) und C-STR-13 (Naval News) melden den Serienstart bei Blohm+Voss im JV Rheinmetall Kraken GmbH. Der Wortlaut 'laufende Serienproduktion' ist erfüllt; die Skala verlangt keine vorherige Kundenprogramm-Stufe. Die Einordnung ist vertretbar, weil Hersteller-/Medienursprung, fehlende Kunden/Lieferungen und Planzahlen (200 bis 1.000/Jahr) in Statement, Reasoning, uncertainty und next_stage_limit offengelegt sind. Nicht blockierend; die Sichtbarkeit von 'ohne Kundenauftrag' im Produktprofil ist beizubehalten."
+    },
+    {
+      "claim_ids": [
+        "I-PM-f126"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-N60/P-S05/C-STR-38: Programm Ende Juni 2026 beendet, Unterauftrag Mitte Juli 2026 aufgelöst; keine aktuelle Stufe vergeben, Skala bildet Stornierungen nicht ab - korrekt als 'nicht eindeutig bestimmbar' mit coverage_note."
+    },
+    {
+      "claim_ids": [
+        "I-PM-frigpipe"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-N61: F127 vorvertragliche Designstudie, F125-Upgrade ohne Vertragsbeleg -> Stufe 1 (offiziell genannte Programme), zukunftsgerichtete Investorenangabe in uncertainty."
+    },
+    {
+      "claim_ids": [
+        "I-PM-power"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-C01/P-C02/P-S02: Umsatz 2025 rund 2 Mrd EUR, rund 6.250 Beschäftigte (Stufe 6 für das Seriengeschäft), Verkauf an AEQUITA unterzeichnet, Closing offen, 'discontinued operations' ausgewiesen; Einordnung beschreibt Reife, nicht Konzernzugehörigkeit."
+    },
+    {
+      "claim_ids": [
+        "I-RP-de",
+        "I-RP-nl",
+        "I-RP-ch",
+        "I-RP-it",
+        "I-RP-ro",
+        "I-RP-sg",
+        "I-RP-us",
+        "I-RP-za",
+        "I-RP-hu"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Stufe 5 je Region gegen regional-presence-v2 geprüft (höchste durch A-Fakten belegte Stufe, mindestens zwei Kernfunktionsgruppen, keine Mehrfachzählung derselben Funktion, Standorte per site_id dedupliziert): DE (Produktion + Service/Werftservice), NL (Entwicklung, Produktion, Wartung Ede, 100 %), CH (Entwicklung + Fertigung Zürich), IT (Rheinmetall Italia Entwicklung + Produktion; LRMV 50:50 at-equity ohne Kontrollbeleg ausgeschlossen), RO (Automecanica 72,5 % Mehrheitstochter: Fertigung + Service; Stufe ausdrücklich nur für Spezialfahrzeuge, SAFE-Ausbau und Mangalia geplant), SG (Service + Engineering; nicht blockierend: Entwicklungsfunktion stützt sich auf die Selbstbeschreibung 'Engineering/AI & Vision', in uncertainty offengelegt, im Basis-Review als Aktivitätszuordnung freigegeben), US (Entwicklung XM30 + Fertigung MK93/Loc, 100 % laut C-STR-24; Hub Vienna nur Büro), ZA (RDM 51 % vollkonsolidiert = beherrschtes JV, Entwicklung + Fertigung, Kontrollbeleg C-STR-22 in depends_on), HU (Rheinmetall Hungary 51 % vollkonsolidiert, Entwicklung + Serienfertigung, Kontrollbeleg C-STR-19). Kundenaufträge werden nirgends als Präsenz gezählt."
+    },
+    {
+      "claim_ids": [
+        "I-RP-gb",
+        "I-RP-es",
+        "I-RP-bg",
+        "I-RP-ua",
+        "I-RP-ca",
+        "I-RP-au"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Stufe 4 je Region geprüft: GB (RBSL 55 % vollkonsolidiert = beherrscht, Boxer/Challenger-Fertigung Telford; Geschützwerk nur schrittweise im Anlauf, getrennt als geplant; Entwurf/Betreuung nicht als eigene Funktion gezählt), ES (Expal 100 %: Fertigung; zweite Kernfunktion nicht belegt), BG (Naval Technology Bulgaria: Entwicklung/Engineering; VMZ-JV angekündigt und umstritten, nicht gezählt), UA (JV 51 % vollkonsolidiert, Instandhaltung; Produktion/Entwicklung nur Plan; Kundenlieferung nur customer_activity), CA (Entwicklung autonomer Systeme; Fertigung nicht belegt), AU/NZ (Redbank-Fertigung; NIOA-JV Maryborough ohne Kontrollklassifikation nicht gezählt, Neuseeland nur Büro/Operationen). Funktionszählung und next_stage_limit konsistent."
+    },
+    {
+      "claim_ids": [
+        "I-RP-pl"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Stufe 3 (Rheinmetall Polska: Verbindungsbüro Warschau, Unterstützungsstandort Gliwice bei ZMBL als Büro statt eigener Service-Infrastruktur gewertet); Munitionsaufträge zählen nicht als Infrastruktur - konservativ und belegt (P-R96, undatiert)."
+    },
+    {
+      "claim_ids": [
+        "I-RP-nordic"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Stufe 5 beruht ausschließlich auf Skoppum (eröffnet 01.10.2026, Entwicklung + Produktion, 100 Mitarbeitende zur Eröffnung, P-D50); Schweden nur Büro, Aggregat folgt dem stärksten belegten Land (in shared_limitations und Statement ausgewiesen); junger Standort in uncertainty."
+    },
+    {
+      "claim_ids": [
+        "I-RP-naval-intl"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Stufe 2 für Ägypten (NVL Egypt) und Brunei (Muara Maritime Services): operative JV ohne Kontrollbeleg gemäß JV-Regel; Rijeka im Aufbau getrennt als geplant; Aggregat von drei Ländern in uncertainty, Bulgarien bewusst separat."
+    },
+    {
+      "claim_ids": [
+        "I-RP-lt",
+        "I-RP-lv"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "'Geplant' ohne operative Stufe korrekt: Litauen (Baisogala im Bau, Spatenstich 04.11.2025, JV-Kontrolle nicht belegt, Inbetriebnahme nicht bestätigt, C-STR-21) und Lettland (nur MoU 25.09.2025, P-R95/C-STR-35); score null, coverage_note mit Beleggrenze, keine operative Stufe aus Kundenbelieferung abgeleitet."
+    },
+    {
+      "claim_ids": [
+        "I-RP-gulf"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "'nicht eindeutig bestimmbar' (score null) ist korrekt: P-R160 beschreibt nur strategische Märkte; coverage_note stellt klar, dass dies keine fehlende Aktivität beweist. Offene Grenze (nicht blockierend): Die laut C-STR-18 seit Juli 2026 vollständig gehaltene Rheinmetall Arabia Simulation and Training LLC (Riad) ist der Region im Faktenpaket nicht zugeordnet (RQ-04); die Stufe ist daher bewusst unbestimmt, nicht niedrig."
+    },
+    {
+      "claim_ids": [
+        "I-MI-portfolio-1"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Fakt-Kurztext, fact_claim_ids (P-V13, P-V32, P-V21, P-W40, P-A50, P-W60) und Zählung 'fünf nicht bestimmbare Produkte' sind korrekt.",
+      "reason": "Das Statement ordnet 'Raumfahrt' den Feldern am Anfang der Reifeskala zu. Das widerspricht I-PM-sar (Stufe 5, SPOCK 1 im Betrieb laut Hersteller) und I-ES-6; nur der Luftraumüberwachungssatellit (I-PM-airsat, Stufe 3) liegt dort. Das Reasoning nennt außerdem Stufe 6 bei HX, 155-mm- und Mittelkalibermunition, ohne I-PM-trucks/I-PM-art155/I-PM-medcal in depends_on zu führen.",
+      "action": "'Raumfahrt' im Statement durch 'Luftraumüberwachungssatellit' ersetzen oder SPOCK 1/I-PM-sar korrekt einbeziehen; fehlende I-PM-IDs in depends_on aufnehmen oder aus dem Reasoning streichen.",
+      "owner": "positioning"
+    },
+    {
+      "claim_ids": [
+        "I-MI-portfolio-2"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "fact_text/fact_claim_ids (P-A13, P-A11, P-V12) treffen die Quellen; Kapazitätswerte als Plan, Verzugsberichte als Medienangabe mit Rheinmetall-Gegenangabe gekennzeichnet; Insight als Auftrags-/Lieferfähigkeit getrennt formuliert und mit uncertainty begrenzt."
+    },
+    {
+      "claim_ids": [
+        "I-MI-portfolio-3"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "T-09/C-STR-38/P-S05/I-PM-k130 abgeglichen; Vier-Monats-Zeitraum ist im Reasoning ausgewiesen. Nicht blockierend: der Backlog 30.06.2026 (6.255 Mio EUR) enthält laut P-N60 noch die F126 (2,1 Mrd EUR), die Ausbuchung folgte im Juli; fact_text stellt beides nebeneinander, ohne dies zu sagen."
+    },
+    {
+      "claim_ids": [
+        "I-MI-cluster-1"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "C-STR-06/-07/-08: ARTEC 64 % und PSM 50 % at-equity, RBSL 55 % vollkonsolidiert; 'Kapitalanteil ist nicht gleich Kontrolle' und KNDS-Doppelrolle durch I-M-knds-procurement/Cluster-Fakten gedeckt; Stimmrechtsgrenze in uncertainty."
+    },
+    {
+      "claim_ids": [
+        "I-MI-cluster-2"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "fact_text und fact_claim_ids (C-STR-19/-20/-22/-33) stimmen: je 51 % (HU-Regierung, UDI, Denel), Bulgarien-Streit (07/2026).",
+      "reason": "Reasoning und Statement behaupten ein gemeinsames Muster mit 'staatlichen Partnern' auch für Litauen und Rumänien sowie Südafrika. Das Paket belegt Staatsstatus nur für die ungarische Regierung, UDI (C-STR-20) und N7 Holding; für EPSO-G sagt C-STR-21 ausdrücklich, der Eigentümer sei nicht genannt, für Pirochim (Romarm-Tochter, M-RHM-04) und Denel (C-STR-22) fehlt ein Staatsnachweis. 'zeigt, dass angekündigte Strukturen politisch reversibel sind' setzt voraus, dass das bulgarische JV bestand; die Quelle zeigt einen widersprüchlichen Status (C-STR-33).",
+      "action": "Auf belegte Staatspartner (Ungarn, UDI) begrenzen und LT/RO/ZA nur als 'Partner mit staatsnahem Bezug laut Medien/Herstellername' bzw. gar nicht als Muster führen (oder Staatsstatus über die Faktenrolle belegen lassen); Bulgarien als 'umstritten/politisch angreifbar' statt 'reversibel' formulieren.",
+      "owner": "positioning"
+    },
+    {
+      "claim_ids": [
+        "I-MI-cluster-3"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "C-TEC-01/-02/-03/-04/-05/-06: Statusklassen MoU/angekündigt/angelaufen unverändert übernommen (Weeze angelaufen, ICEYE betreibt SAR-Satelliten laut Rheinmetall); Insight 'Umsetzung offener Prüfpunkt' ist keine Schwächenaussage; Partnerquellen nicht geöffnet in uncertainty."
+    },
+    {
+      "claim_ids": [
+        "I-MI-market-1"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "fact_text und fact_claim_ids (M-MKT-01 ASAP ~248 Mio EUR Pulver, M-RHM-04 'strategic bottleneck', M-MKT-03) sind korrekt; Matrixverweis (RHM/Nammo/GD-OTS/Hanwha Stufe 3, BAE 4 nur über US-Betreiberwerke) stimmt.",
+      "reason": "Statement 'Rheinmetall ist mit eigener Pulverfertigung abgesichert' ist nicht gedeckt: Aschau (1.700 t) ist belegt, aber M-RHM-04 zitiert Papperger, Pulver sei ein 'strategic bottleneck', mit Ziel 20.000 t/Jahr bis 2030; Victoria/Aschau-Neubau sind Planstände (I-M-rheinmetall-integration).",
+      "action": "Formulieren als 'Rheinmetall fertigt operativ eigenes Pulver (Stufe 3), nennt Pulver aber selbst einen Engpass und plant erheblichen Ausbau; die Sprengstoffstufe hängt an noch nicht belegten Werken'.",
+      "owner": "positioning"
+    },
+    {
+      "claim_ids": [
+        "I-MI-market-2"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "P-W13, M-NAM-05, M-MKT-03/-04 und die Zellen I-M-*-capacity abgeglichen: nur Rheinmetall und Nammo haben planbedingungskonforme Zielwerte, BAE/GD-OTS/Hanwha ohne Geschosswert, KNDS ohne Zieljahr; EU-Zahlen (Kubilius >2 Mio vs. RFE/RL ~550-600 Tsd.) mit abweichenden Zeitpunkten/Zählweisen gekennzeichnet; keine Ist-Vergleichsbehauptung."
+    },
+    {
+      "claim_ids": [
+        "I-MI-market-3"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Matrixverweise stimmen (Beschaffung 4/4: Rheinmetall, KNDS; Werksnetz 4/4: Rheinmetall, KNDS, Nammo); 'kein Gesamtvorsprung' erhalten. Nicht blockierend: fact_text nennt 'Fertigung in DE, ES, ZA', wofür keine fact_claim_ids (P-W10/P-R40/P-R140) geführt sind; die Deckung liegt in I-M-rheinmetall-industrial."
+    },
+    {
+      "claim_ids": [
+        "S-STR-1"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Ableitung aus I-PM-boxer/puma/lynx/propellant (Stufe 6) und C-MKT-01 (200 Puma, Rahmenvertrag) tragfähig, intern (Produktreife), Folgeauftrag belegt, Herstellerzuschreibung in uncertainty. Hinweis: depends_on enthält I-MI-portfolio-1, das korrigiert wird; Fingerprint-/Abhängigkeitsprüfung nach der Korrektur gezielt wiederholen (Aussage selbst trägt die zu korrigierende Raumfahrt-Formulierung nicht)."
+    },
+    {
+      "claim_ids": [
+        "S-STR-2"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Operative Fertigung in DE/ES/ZA, Aschau-Pulver (Stufe 3) und Rahmenverträge sind über die Matrixzellen und P-W11/P-W40 belegt; Nicht-Exklusivität (KNDS, Nammo) korrekt benannt; internes Merkmal.",
+      "reason": "Reasoning: 'Der Bundeswehr-Rahmenvertrag von bis zu 8,5 Mrd EUR brutto sichert die Nachfrage.' P-W11 belegt ein Höchstvolumen (Rahmenvertrag, Lieferbeginn 2025), keine Abrufmenge; 'sichert' überdehnt Rahmenhöchstwert zu gesicherter Nachfrage.",
+      "action": "'sichert' durch 'bietet einen Nachfragerahmen (Höchstvolumen; Abrufe nicht belegt)' ersetzen und die Grenze in uncertainty ergänzen.",
+      "owner": "swot"
+    },
+    {
+      "claim_ids": [
+        "S-STR-3"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Quoten (HU, ZA, UA je 51 %, vollkonsolidiert) und Funktionen (Lynx, Munition, Instandhaltung) stimmen mit C-STR-19/-20/-22 und I-RP-hu/-za/-ua überein; Bulgarien korrekt ausgeklammert.",
+      "reason": "(1) 'JV mit staatlichen Partnern' wird für alle drei Länder behauptet; das Paket belegt Staatsstatus nur für die ungarische Regierung und UDI (C-STR-20), nicht für Denel (C-STR-22). (2) 'Lokale Wertschöpfung mit Staatspartnern erleichtert den Zugang zu nationalen Beschaffungen' ist eine unbelegte Kausalannahme und in uncertainty nicht als solche gekennzeichnet. (3) Abhängigkeit von I-MI-cluster-2, das korrigiert wird.",
+      "action": "Statement/Reasoning auf belegte Staatspartner (Ungarn, UDI) bzw. neutral auf 'Partner vor Ort' begrenzen oder Denel-Status über die Faktenrolle belegen; Zugangsaussage als Annahme kennzeichnen (uncertainty) oder streichen; nach Korrektur von I-MI-cluster-2 gegenprüfen.",
+      "owner": "swot"
+    },
+    {
+      "claim_ids": [
+        "S-WKN-1"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "T-13/T-14: operativer FCF -1.616 Mio EUR H1 2026 (Vj. -631), Umsatz +39 %; Herstellerbegründung (verschobene Anzahlungen, Vorratsaufbau, Investitionen) im Reasoning sinngemäß wiedergegeben, Halbjahreswert und Q3-Termin in uncertainty. Interne finanzielle Grenze, keine Datenlücke."
+    },
+    {
+      "claim_ids": [
+        "S-WKN-2"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Skyranger-Termin laut Medienbericht vs. Rheinmetall (P-A11), Kapazitätsziel 1,5 Mio (P-W13) und Unterlüß-Hochlauf (T-E01) korrekt zitiert; interne Kapazitäts-/Lieferfähigkeitsfrage.",
+      "reason": "(1) Die Aussage 'das Werk in Litauen gilt laut Fachmedium als verzögert' hat keine Basis-ID in depends_on (M-RHM-07 bzw. I-M-rheinmetall-industrial fehlen). (2) 'Kapazitätsziele (1,5 Mio bis 2030) noch nicht erreicht' belegt keine Schwäche (Zieljahr 2030) und ist kein Verzugsnachweis. (3) 'Lieferfähigkeit begrenzt damit die Umsetzung des Auftragsbestands' und 'zeigen eine Lücke' verallgemeinern zwei umstrittene Medienberichte (Skyranger 30, Rheinmetall nennt nur fünf Monate; Litauen Medienangabe ohne Primärquelle) zu einer Konzernaussage.",
+      "action": "M-RHM-07 in depends_on aufnehmen (Swot-Kontext ggf. mit dieser Claim-ID neu erzeugen), den Satz zu 'nicht erreichten Kapazitätszielen' streichen und die Schlussfolgerung auf 'berichtete Verzüge bei einzelnen Programmen deuten auf Umsetzungsrisiko hin; Rheinmetall bestreitet Teile' abschwächen.",
+      "owner": "swot"
+    },
+    {
+      "claim_ids": [
+        "S-WKN-3"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Ermessensfrage (S-WKN-3 Verhältnisbildung C-MKT-13 / T-10) beurteilt: zulässig. C-MKT-13 (größter Kunde ~3,8 Mrd EUR 2025, kein weiterer Kunde >=10 %) und T-10 (Konzernumsatz 9.935 Mio EUR 2025, fortgeführte Aktivitäten) sind A-geprüfte Angaben desselben Geschäftsjahres; das Reasoning stellt sie gegenüber, nennt keine Prozentzahl und kennzeichnet in uncertainty die einfache Verhältnisbildung sowie die Unbenanntheit des Kunden. F126 (-300 Mio EUR Prognose) korrekt. Bedingungen: keine abgeleitete %-Zahl als Fakt rendern oder in Summary/Highlights verwenden (neue Zahl müsste zuerst in Faktenphase/Basis-Review); nicht blockierend: uncertainty sollte offenlegen, dass die Umsatzbasis des Konzernanhangs (fortgeführte Aktivitäten) nicht abgeglichen wurde, und 'abhängig' als Konzentration, nicht als nachgewiesene Abhängigkeit zu lesen ist."
+    },
+    {
+      "claim_ids": [
+        "S-OPP-1"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Extern, belegt: ASAP >500 Mio EUR (M-MKT-01), EDIP 1,5 Mrd EUR (M-MKT-06), Rumänien SAFE 5,7 Mrd EUR (C-MKT-06, Herstellerangabe), P-W11/T-14 als Ausgangsposition; Reasoning und uncertainty sagen ausdrücklich, dass Förderentscheidungen kein Auftrag an Rheinmetall sind."
+    },
+    {
+      "claim_ids": [
+        "S-OPP-2"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Air Defence +62 % (T-07), SPOCK 1 (C-MKT-04, Netto/Brutto-Abweichung) und FV-014-Rahmenvertrag (C-MKT-05) korrekt; externe Nachfrage.",
+      "reason": "Reasoning: 'Diese Felder sind noch am Anfang der Reifeskala' widerspricht den freigegebenen Einordnungen I-PM-skyranger (4/6), I-PM-fv014 (4/6) und I-PM-sar (5/6) bzw. I-ES-6.",
+      "action": "Durch 'auf Kundenprogramm- bzw. Betriebsstufe (4-5 von 6), Serienlieferungen stehen teils aus' ersetzen.",
+      "owner": "swot"
+    },
+    {
+      "claim_ids": [
+        "S-OPP-3"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Engpass-Narrativ (ASAP-Mittel 124/248 Mio EUR, Papperger 'strategic bottleneck'), Pulver operativ (Aschau) und Plan-Charakter der Werke sind im Kern belegt; Wettbewerber korrekt nur als 'nicht öffentlich belegt' geführt.",
+      "reason": "Reasoning: 'kündigt Sprengstoffwerke in Unterlüß, Várpalota und Victoria an' ist für Victoria falsch: M-RHM-04 betrifft die Rheinmetall Victoria SA für Treibladungspulver und Treibladungen (Nitrozellulose), nicht Sprengstoff; I-M-rheinmetall-integration führt Victoria korrekt als Pulverwerk. Zudem belegt die ASAP-Förderung allein 'den Engpass' nicht; sie zeigt die EU-Priorität (Engpassbeleg: M-RHM-04, M-MKT-03). Abhängigkeit von I-MI-market-1 (wird korrigiert).",
+      "action": "Victoria als geplantes Pulverwerk, Unterlüß/Várpalota als geplante RDX-Fertigung ausweisen; 'was den Engpass belegt' durch 'zeigt die Förderpriorität' ersetzen; nach Korrektur von I-MI-market-1 gegenprüfen.",
+      "owner": "swot"
+    },
+    {
+      "claim_ids": [
+        "S-THR-1"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Extern, belegt: T-E17/C-STR-38 (BMVg beendet F126, Unterauftrag gelöst) und C-STR-33 (Bulgarien-Streit, Parteiensicht beide genannt, Neuverhandlung offen). Nicht blockierend: 'umkehren ... zeigen' ist für Bulgarien wegen des widersprüchlichen Status zu stark; Wortlaut bei der Anpassung von I-MI-cluster-2 angleichen ('politisch angreifbar'). Abhängigkeit von I-MI-cluster-2 nach Korrektur gezielt gegenprüfen."
+    },
+    {
+      "claim_ids": [
+        "S-THR-2"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Extern, belegt: KNDS-Linie Belgien 11/2025 (M-KND-08 über I-M-knds-industrial), Nammo Raufoss seit 12/2024; Bezug zu Matrix (Höchststufe geteilt) und Marktkapazitätsunsicherheit korrekt, keine Marktanteilsableitung. Ableitung nicht von der Matrix überdehnt (kein Gesamtvorsprung/Ranking)."
+    },
+    {
+      "claim_ids": [
+        "S-THR-3"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "C-STR-07/-08 über I-MI-cluster-1: PSM 50 %, ARTEC 64 %, beide at-equity; KNDS zugleich Wettbewerber (Matrix). Als externes Partner-/Wettbewerberrisiko vertretbar eingeordnet; nicht blockierend: 'Das begrenzt Rheinmetalls Spielraum' ist laut uncertainty nicht belegt und sollte als Möglichkeit formuliert werden."
+    }
+  ],
+  "fact_groups": [],
+  "reuse_fact_ids": [
+    "C-MKT-01",
+    "C-MKT-02",
+    "C-MKT-03",
+    "C-MKT-04",
+    "C-MKT-05",
+    "C-MKT-06",
+    "C-MKT-08",
+    "C-MKT-12",
+    "C-MKT-13",
+    "C-STR-06",
+    "C-STR-07",
+    "C-STR-08",
+    "C-STR-09",
+    "C-STR-11",
+    "C-STR-13",
+    "C-STR-14",
+    "C-STR-19",
+    "C-STR-20",
+    "C-STR-21",
+    "C-STR-22",
+    "C-STR-23",
+    "C-STR-24",
+    "C-STR-25",
+    "C-STR-27",
+    "C-STR-33",
+    "C-STR-34",
+    "C-STR-35",
+    "C-STR-36",
+    "C-STR-37",
+    "C-STR-38",
+    "C-TEC-01",
+    "C-TEC-02",
+    "C-TEC-03",
+    "C-TEC-04",
+    "C-TEC-05",
+    "C-TEC-06",
+    "M-BAE-01",
+    "M-BAE-02",
+    "M-BAE-03",
+    "M-BAE-04",
+    "M-BAE-05",
+    "M-BAE-06",
+    "M-GDO-01",
+    "M-GDO-02",
+    "M-GDO-03",
+    "M-GDO-04",
+    "M-GDO-05",
+    "M-GDO-06",
+    "M-HAN-01",
+    "M-HAN-02",
+    "M-HAN-03",
+    "M-HAN-04",
+    "M-HAN-05",
+    "M-HAN-06",
+    "M-HAN-07",
+    "M-KND-01",
+    "M-KND-02",
+    "M-KND-03",
+    "M-KND-04",
+    "M-KND-05",
+    "M-KND-06",
+    "M-KND-07",
+    "M-KND-08",
+    "M-KND-09",
+    "M-MKT-01",
+    "M-MKT-03",
+    "M-MKT-04",
+    "M-MKT-06",
+    "M-NAM-01",
+    "M-NAM-02",
+    "M-NAM-03",
+    "M-NAM-04",
+    "M-NAM-05",
+    "M-NAM-06",
+    "M-NAM-07",
+    "M-NAM-08",
+    "M-RHM-01",
+    "M-RHM-02",
+    "M-RHM-03",
+    "M-RHM-04",
+    "M-RHM-05",
+    "M-RHM-06",
+    "M-RHM-07",
+    "P-A01",
+    "P-A02",
+    "P-A10",
+    "P-A11",
+    "P-A12",
+    "P-A13",
+    "P-A14",
+    "P-A30",
+    "P-A40",
+    "P-A50",
+    "P-C01",
+    "P-C02",
+    "P-C03",
+    "P-D01",
+    "P-D02",
+    "P-D10",
+    "P-D11",
+    "P-D12",
+    "P-D13",
+    "P-D14",
+    "P-D20",
+    "P-D30",
+    "P-D31",
+    "P-D40",
+    "P-D50",
+    "P-D60",
+    "P-N01",
+    "P-N03",
+    "P-N10",
+    "P-N20",
+    "P-N30",
+    "P-N31",
+    "P-N40",
+    "P-N50",
+    "P-N60",
+    "P-N61",
+    "P-R01",
+    "P-R02",
+    "P-R10",
+    "P-R100",
+    "P-R110",
+    "P-R120",
+    "P-R130",
+    "P-R140",
+    "P-R150",
+    "P-R160",
+    "P-R20",
+    "P-R30",
+    "P-R40",
+    "P-R50",
+    "P-R60",
+    "P-R61",
+    "P-R70",
+    "P-R72",
+    "P-R80",
+    "P-R90",
+    "P-R95",
+    "P-R96",
+    "P-R97",
+    "P-R98",
+    "P-S02",
+    "P-S05",
+    "P-V10",
+    "P-V11",
+    "P-V12",
+    "P-V13",
+    "P-V14",
+    "P-V15",
+    "P-V16",
+    "P-V17",
+    "P-V20",
+    "P-V21",
+    "P-V30",
+    "P-V31",
+    "P-V32",
+    "P-V34",
+    "P-V35",
+    "P-V40",
+    "P-V41",
+    "P-V50",
+    "P-V51",
+    "P-V52",
+    "P-V60",
+    "P-V70",
+    "P-V71",
+    "P-V72",
+    "P-W02",
+    "P-W10",
+    "P-W11",
+    "P-W12",
+    "P-W13",
+    "P-W20",
+    "P-W21",
+    "P-W30",
+    "P-W31",
+    "P-W33",
+    "P-W40",
+    "P-W41",
+    "P-W50",
+    "P-W51",
+    "P-W60",
+    "T-04",
+    "T-06",
+    "T-07",
+    "T-09",
+    "T-10",
+    "T-13",
+    "T-14",
+    "T-16",
+    "T-18",
+    "T-E01",
+    "T-E04",
+    "T-E10",
+    "T-E11",
+    "T-E17",
+    "T-E22",
+    "T-E30"
+  ],
+  "source_checks": [],
+  "parallel_review": {
+    "plan_fingerprint": "8b45d2d996552c652ddd2338b9b322e687b79a395a2120fcc68c5967c7d986d3",
+    "source_collection_fingerprint": "3104fcae54bc1e2f5e4cfc4cc622bb616321b343c3dad3c61f0be16f1e6b19f5",
+    "part_fingerprints": {},
+    "model_policy": {
+      "source-document-reviewer": {
+        "model": "claude-sonnet-5-5",
+        "effort": "medium"
+      },
+      "source-reviewer": {
+        "model": "claude-sonnet-5-5",
+        "effort": "medium"
+      }
+    }
+  }
+}
