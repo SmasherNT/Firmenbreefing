@@ -6279,7 +6279,7 @@
         "M-RHM-04",
         "M-MKT-03"
       ],
-      "statement": "Im Engpass Energetik ist Rheinmetall mit eigener Pulverfertigung abgesichert, aber nicht allein; die Sprengstoffstufe hängt an noch nicht belegten Werken.",
+      "statement": "Pulver bleibt laut Rheinmetall-CEO ein strategischer Engpass; Rheinmetall fertigt Pulver bereits selbst, die Sprengstoffstufe hängt aber an noch nicht belegten Werken.",
       "depends_on": [
         "M-MKT-01",
         "M-RHM-04",
@@ -6395,15 +6395,15 @@
       "section": "module_insights",
       "module": "cluster",
       "display_order": 2,
-      "headline": "Staatliche JV-Partner öffnen Märkte – mit politischer Abhängigkeit",
-      "fact_text": "Rheinmetall hält je 51 % an JV mit Ungarns Regierung, UDI (Ukraine) und Denel; in Bulgarien bestreitet die Regierung das gemeldete VMZ-JV (07/2026).",
+      "headline": "Lokale JV-Partner öffnen Märkte – Status nicht überall gesichert",
+      "fact_text": "Rheinmetall hält je 51 % an JV mit Ungarns Regierung, UDI (laut GB 2024 Staatskonzern) und Denel; in Bulgarien bestreitet die Regierung das gemeldete VMZ-JV (07/2026).",
       "fact_claim_ids": [
         "C-STR-19",
         "C-STR-20",
         "C-STR-22",
         "C-STR-33"
       ],
-      "statement": "Lokale JV mit staatlichen Partnern sichern Wertschöpfung und Marktzugang; der bulgarische Fall zeigt, dass angekündigte Strukturen politisch reversibel sind.",
+      "statement": "Lokale 51-%-JV sichern Wertschöpfung und Marktzugang, teils mit staatlichen Partnern; in Bulgarien ist bereits der Gründungsstatus des gemeldeten JV politisch umstritten.",
       "depends_on": [
         "C-STR-19",
         "C-STR-20",
@@ -6412,7 +6412,7 @@
         "C-STR-21",
         "M-RHM-04"
       ],
-      "reasoning": "Mehrere Werke (Litauen, Rumänien) folgen demselben Muster mit staatlichen Partnern; die Kontrollausprägung ist je Fall unterschiedlich belegt.",
+      "reasoning": "Staatlicher Partner belegt für Ungarn (Regierung) und UDI (laut GB 2024); weitere JV-Vorhaben mit lokalen Partnern (EPSO-G in Litauen, Romarm-Tochter in Rumänien) ohne belegten Staatsstatus.",
       "method": "Modulbezogene Verdichtung geprüfter A-Fakten",
       "uncertainty": "Ausgang der bulgarischen Neuverhandlung offen."
     },
@@ -6546,7 +6546,7 @@
         "P-A50",
         "P-W60"
       ],
-      "statement": "Die Serienreife liegt im Land- und Munitionsgeschäft; neue Felder wie Counter-UAS, Deep Strike und Raumfahrt stehen erst am Anfang der Reifeskala.",
+      "statement": "Die Serienreife liegt im Land- und Munitionsgeschäft; neue Felder sind uneinheitlich: SAR-Aufklärung ist im Betrieb, Counter-UAS, Deep Strike und Luftraumsatellit auf Stufe 1–3.",
       "depends_on": [
         "P-V13",
         "P-V32",
@@ -6558,11 +6558,12 @@
         "I-PM-lynx",
         "I-PM-puma",
         "I-PM-propellant",
+        "I-PM-sar",
         "I-PM-cuas",
         "I-PM-strike",
         "I-PM-airsat"
       ],
-      "reasoning": "Verdichtet die Reifeeinordnungen: Stufe 6 bei Boxer, Lynx, Puma, HX, 155-mm- und Mittelkalibermunition; Stufe 1–3 bei Deep Strike, UAS-Kooperationen, AERIE und Luftraumsatellit.",
+      "reasoning": "Verdichtet die Reifeeinordnungen: Stufe 6 bei Boxer, Lynx, Puma, HX, 155-mm- und Mittelkalibermunition; SPOCK 1 auf Stufe 5; Stufe 1–3 bei Deep Strike, UAS-Kooperationen, AERIE und Luftraumsatellit.",
       "method": "Modulbezogene Verdichtung geprüfter A-Fakten",
       "uncertainty": "Fünf Produkte sind nicht eindeutig bestimmbar (z. B. Radare, Battlesuite); das ist Beleglücke, keine Unreife."
     },
@@ -6592,7 +6593,7 @@
       "method_id": "portfolio-maturity-v1",
       "assessment_status": "bewertet",
       "score": 1,
-      "statement": "Deep-Strike-Systeme sind angekündigt: Das JV mit Destinus ist vereinbart, zum Stichtag aber nicht gegründet; Produktion ist ab Q4 2026/Q1 2027 geplant.",
+      "statement": "Deep-Strike-Systeme sind angekündigt: Das JV mit Destinus ist vereinbart, eine Gründung zum Stichtag ist nicht belegt; Produktion ist ab Q4 2026/Q1 2027 geplant.",
       "depends_on": [
         "P-W60",
         "T-E10",
@@ -6619,6 +6620,25 @@
       "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
       "uncertainty": "Herstellerangabe; kein Beschaffungsauftrag.",
       "next_stage_limit": "Durchgeführte Tests oder Demonstrationen sind noch nicht belegt."
+    },
+    {
+      "id": "I-PM-sar",
+      "type": "product_maturity",
+      "section": "portfolio",
+      "product_id": "sar",
+      "method_id": "portfolio-maturity-v1",
+      "assessment_status": "bewertet",
+      "score": 5,
+      "statement": "SAR-Aufklärung ist im Betrieb: Die Bundeswehr hat laut Rheinmetall direkten Zugriff auf mehrere vom JV betriebene SAR-Satelliten; die Fertigung in Neuss hat begonnen.",
+      "depends_on": [
+        "P-D30",
+        "C-TEC-04",
+        "T-E04"
+      ],
+      "reasoning": "Die laufende Datenbereitstellung an den Kunden belegt Stufe 5 für den Dienst SPOCK 1. Der Produktionsstart in Neuss ist noch keine wiederholte Auslieferung.",
+      "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
+      "uncertainty": "Satellitenanzahl nicht genannt; die Betriebserfahrung stammt laut ICEYE-CEO von ICEYE.",
+      "next_stage_limit": "Serienfertigung in Neuss mit gelieferten Satelliten ist nicht belegt."
     },
     {
       "id": "I-PM-propellant",
@@ -6663,15 +6683,16 @@
       "method_id": "portfolio-maturity-v1",
       "assessment_status": "bewertet",
       "score": 6,
-      "statement": "Der Lynx KF41 ist in Serie: Ungarn erhält seit 2024 lokal gefertigte Fahrzeuge, Italien erhielt im Januar 2026 die ersten vier; der XM30-Lynx ist Prototyp.",
+      "statement": "Der Lynx KF41 ist in Serie: In Ungarn begann laut Rheinmetall die Serienfertigung mit dem ersten lokal gefertigten Fahrzeug (07/2024), Italien erhielt im Januar 2026 die ersten vier; der XM30-Lynx ist Prototyp.",
       "depends_on": [
         "P-V32",
+        "P-R61",
         "P-V31",
         "P-V30",
         "P-V34",
         "P-V35"
       ],
-      "reasoning": "Serienfertigung in Zalaegerszeg (erstes Fahrzeug 07/2024, 46 aus deutscher Fertigung) und die Übergabe in Italien belegen wiederholte Auslieferung. Die US-Variante XM30 steht auf Prototyp-/Erprobungsstufe, Rumänien (298 Fahrzeuge) ist beauftragt.",
+      "reasoning": "Serienfertigungsbeginn in Zalaegerszeg (erstes Fahrzeug 07/2024, Fertigung der restlichen Lynx dort, 46 aus deutscher Fertigung) und die Übergabe in Italien belegen wiederholte Auslieferung. Die US-Variante XM30 steht auf Prototyp-/Erprobungsstufe, Rumänien (298 Fahrzeuge) ist beauftragt.",
       "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
       "uncertainty": "Aktueller Auslieferungsstand Ungarn 2026 nicht belegt.",
       "next_stage_limit": "Höchste Stufe; die XM30-Variante bleibt Prototyp ohne Auswahlentscheidung."
@@ -6737,25 +6758,6 @@
       "reasoning": "Reifeeinordnung: Skyranger und FV-014 auf Kundenprogramm-Stufe (4/6), SPOCK 1 im Betrieb (5/6). Zeitangaben zu Skyranger 30 weichen zwischen Beschaffungsamt und Rheinmetall ab.",
       "method": "Verdichtung geprüfter A-Fakten und I-Einordnungen nach Auftragsrelevanz",
       "uncertainty": "Verzugsangaben stammen aus Medienberichten über interne Unterlagen."
-    },
-    {
-      "id": "I-PM-sar",
-      "type": "product_maturity",
-      "section": "portfolio",
-      "product_id": "sar",
-      "method_id": "portfolio-maturity-v1",
-      "assessment_status": "bewertet",
-      "score": 5,
-      "statement": "SAR-Aufklärung ist im Betrieb: Die Bundeswehr hat laut Rheinmetall direkten Zugriff auf mehrere vom JV betriebene SAR-Satelliten; die Fertigung in Neuss hat begonnen.",
-      "depends_on": [
-        "P-D30",
-        "C-TEC-04",
-        "T-E04"
-      ],
-      "reasoning": "Die laufende Datenbereitstellung an den Kunden belegt Stufe 5 für den Dienst SPOCK 1. Der Produktionsstart in Neuss ist noch keine wiederholte Auslieferung.",
-      "method": "Höchster konkret belegter Meilenstein (portfolio-maturity-v1)",
-      "uncertainty": "Satellitenanzahl nicht genannt; die Betriebserfahrung stammt laut ICEYE-CEO von ICEYE.",
-      "next_stage_limit": "Serienfertigung in Neuss mit gelieferten Satelliten ist nicht belegt."
     },
     {
       "id": "I-PM-fv014",
@@ -6936,22 +6938,23 @@
       "id": "I-ES-4",
       "section": "executive_summary",
       "display_order": 4,
-      "headline": "Aufträge stark aus Bundeswehr-Programmen, Umsatz zu 62 % im Ausland",
-      "preview": "Puma, Schakal, TaWAN, IdZ-ES und SPOCK 1 sind beauftragt; der Boxer-Auftrag 'Arminius' (12,4 Mrd. EUR Anteil laut Rheinmetall) ist erwartet, nicht erteilt.",
-      "statement": "Die größten jüngsten Aufträge stammen aus deutschen Programmen, während 62 % des Halbjahresumsatzes im Ausland entstehen; der nächste Großauftrag 'Arminius' ist laut Rheinmetall erwartet, aber nicht erteilt.",
+      "headline": "Bundeswehr-Programme und Auslandspakete tragen den Auftragseingang",
+      "preview": "Puma, Schakal, TaWAN, IdZ-ES, SPOCK 1 und das Rumänien-Paket (5,7 Mrd. EUR) sind beauftragt; 'Arminius' ist erwartet, nicht erteilt; 62 % Auslandsumsatz H1.",
+      "statement": "Viele jüngere Großaufträge stammen aus Bundeswehr-bezogenen Programmen, daneben steht das SAFE-finanzierte Rumänien-Paket über 5,7 Mrd. EUR; 62 % des Halbjahresumsatzes entstehen im Ausland, der Boxer-Auftrag 'Arminius' ist erwartet, aber nicht erteilt.",
       "depends_on": [
         "C-MKT-01",
         "C-MKT-02",
         "C-MKT-03",
         "T-E04",
+        "C-MKT-06",
         "P-V17",
         "T-E30",
         "T-13",
         "C-MKT-13"
       ],
-      "reasoning": "Auftrags- und Umsatzseite unterscheiden sich: Rahmenverträge der Bundeswehr prägen den Auftragseingang, laufende Umsätze kommen stark aus dem Ausland. Arminius hängt laut Herstellerangabe an einer Entscheidung des Haushaltsausschusses am 09.12.2026.",
+      "reasoning": "Der Auftragseingang stützt sich auf deutsche Rahmenverträge und große Auslandspakete; laufende Umsätze kommen überwiegend aus dem Ausland. Arminius hängt laut Herstellerangabe an einer Entscheidung des Haushaltsausschusses am 09.12.2026.",
       "method": "Verdichtung geprüfter A-Fakten und I-Einordnungen nach Auftragsrelevanz",
-      "uncertainty": "Der größte Kunde (rund 3,8 Mrd. EUR Umsatz 2025) wird im Bericht nicht benannt."
+      "uncertainty": "Rangfolge der Aufträge nach Volumen nicht ermittelt; der größte Kunde (rund 3,8 Mrd. EUR Umsatz 2025) wird im Bericht nicht benannt."
     },
     {
       "id": "I-ES-3",
@@ -7022,28 +7025,28 @@
     "I-MI-market-2": "7f285c2f31288148a8314dcd4e1136babb40cc76d85af2f1dcebdd73941c04fc",
     "I-M-nammo-capacity": "a6e8e8f841782049d6ec691117b5bd58324347fa09d2d7abaf4fd0ff4ce234e5",
     "I-M-rheinmetall-capacity": "9ce3288bda69570e8f8d442419432dc57764410a579dbc7dfdb0b9ea2a57637c",
-    "I-MI-market-1": "6bec642354c7f3067dfe2f9d82a5485bba1089c50760bb653b3ee7c48e186253",
+    "I-MI-market-1": "02d4d65407fe36b70b89248a19b5431fc871891a7a8eca16a0cf8f8cfa3cf68b",
     "I-M-bae-integration": "438056ba61336af87113e6b2894d2f22ac07d5a7ecab7efe05042dad9c04023c",
     "I-M-nammo-integration": "e4292e63e40d20c3d3e7ab3c8860b9217053c322c25ced494986ea102bc9db1f",
     "I-M-rheinmetall-integration": "cb51c6d1b1e82f266edab87ce345f4a9646d9236d98c3a61c5a2a5e154150aaa",
     "I-MI-cluster-3": "361d3f140f0db4aceecf12a0da514a26b8300024d4d5382eb41a922e52a3dbff",
-    "I-MI-cluster-2": "58798f8f76294bca24388448eaeb70784208e9905a5b8d827eeb0cc74a7f43fa",
+    "I-MI-cluster-2": "059af7fdb4562a07240a86cf2b26ec516897b0169ff9f9a77d7377eaaaf97a1c",
     "I-MI-cluster-1": "0eae2289e317cbde407065fc224b435703d6a97e5beb92f9562062f1be46e2ff",
     "I-MI-portfolio-3": "14cc07efd6c5e7faf69af9e55b7a40b6e3f65a2235eaafd97fde4d89585d40d7",
     "I-PM-k130": "8ebcc27bfaee710578e5c270cd08827129e054bf76db4c049c5f74ee3de6cc65",
     "I-MI-portfolio-2": "ecc117d15f993cd5c513bf618a2ac0abbbaeb6728d9ebd716548d57f58f47d6c",
     "I-PM-skyranger": "94230c5e223b8828d08d2a1062bd1ecfa8712d2ee2e263e070e505da7c61e42b",
-    "I-MI-portfolio-1": "68eb10268c268bb2fb92150e2014ba08c84b9b4e90b0c05362310dacb7afd4ba",
+    "I-MI-portfolio-1": "256ae08413295df381eca9982d43b44c1f48d29910669eee17382b0e9dc1df44",
     "I-PM-airsat": "297166cda4b69172184b210c2cdbb78896b7c87b882657e8550273a843084836",
-    "I-PM-strike": "e1207f6de55845fba77460ee445da56204e7aec294fa3bd489fb43333dc883da",
+    "I-PM-strike": "bf8f6a671f43f8beadded4cefe30637d2506fe568cc2cbeec21bcf0a816641c1",
     "I-PM-cuas": "989eb616bc19261a15f47ed429fa4a5b08cf7bcb38334efc7e9799460da8ec80",
+    "I-PM-sar": "32b704029c3228636bc49d442e8b74b16eca692530f6e85774f17de0218e418d",
     "I-PM-propellant": "5d890e9e2ca2373f0173965d7e18f766710f06be9abd0454cfdfe90ce8e6ca60",
     "I-PM-puma": "f8d433abb97bcbf7c104a543d3355ad579584248fd00d32a4246da6ad08b76a8",
-    "I-PM-lynx": "791366bca5a6e1ad5cd699e7c686cdb58dae78da9177939a865ae41e5486b12e",
+    "I-PM-lynx": "299a6f38064645ee0128bf306d45bedc54a6d354e87a375f899ba8de16b9b978",
     "I-PM-boxer": "06ce8854574ed315fe82f22b811c19d0510d0acc0235d84d18c02fee3d8746b3",
     "I-M-rheinmetall-spectrum": "6b52de1892543923cc8a4b1838cb7006c80c638d0d13b5fc8259a3ea6c936a61",
     "I-ES-6": "018162c2ab308b0edc34d8a0669b0b97d5b705a3b08a72270c953be2b25a4847",
-    "I-PM-sar": "32b704029c3228636bc49d442e8b74b16eca692530f6e85774f17de0218e418d",
     "I-PM-fv014": "0d040cf4299d1f7969df2637ab49b491f57d133a6ed857d68842d7b17c5a902c",
     "I-ES-5": "23382f8edf14d0f316f52658bbdb2c530ef63b7dd8d852cc2ebb43ac1988b387",
     "I-RP-ua": "af7db36008989a100eabb40e0e77b6d8410bed930945b4150fcf7a2ee2adac97",
@@ -7052,7 +7055,7 @@
     "I-RP-za": "6360aa0b2868bba1ab53edff542c2b58b45794c3ff63341511f1d29c6d6e7e83",
     "I-RP-hu": "daf1d12e2692c3f92f2f016e96cec92096d5617648319f13707c304d96032858",
     "I-RP-de": "8c3960409164c072b2db1179d989c3b920824356ad04264ba25967e18ebd5033",
-    "I-ES-4": "8d944dc658feda1b1705070b5683e863a34a7a6022c406e4f71f95abb93f282f",
+    "I-ES-4": "78604f9004a8a14ec082b229c2643f185955d80aa63eda93f7926282a6ebbc4e",
     "I-ES-3": "301b81945255f537308cdb252456e5f38d75e11e1aaa4eb3658ce1639e70eb64",
     "I-ES-2": "0e2a1a8889a4f9b0cc4381a411b3c0459d63312fb41585934f4017332ccb2069",
     "I-ES-1": "d976364be5b3e19e0e22a807f37c07270307d689ffc0765167d5dbe14a8c298c"
@@ -7082,13 +7085,13 @@
     "I-PM-airsat": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
     "I-PM-strike": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
     "I-PM-cuas": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
+    "I-PM-sar": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
     "I-PM-propellant": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
     "I-PM-puma": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
     "I-PM-lynx": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
     "I-PM-boxer": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
     "I-M-rheinmetall-spectrum": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
     "I-ES-6": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
-    "I-PM-sar": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
     "I-PM-fv014": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
     "I-ES-5": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
     "I-RP-ua": "6381252b93520a4d33dcaacace8fd84b6e44562a364d1cc92eabc1220948e8e1",
@@ -7881,5 +7884,5 @@
       }
     }
   },
-  "fingerprint": "a6751366a6227a283eb9a3e3ed2a540612010ff50105cbae8900d00b50a57344"
+  "fingerprint": "1eb067294159b227fd93c5370669dda48f3aef43659c8fc8184bafd013c07c94"
 }
