@@ -116,14 +116,14 @@
   },
   {
    "id": "P07",
-   "statement": "Laut VINCORION kommt GTD chaserV beim Kampfpanzer Leopard 2, beim Schützenpanzer Puma und bei der Panzerhaubitze 2000 zum Einsatz; zukünftige Plattformen wie der Leopard 2 A-RC 3.0 würden von dem Baukasten profitieren.",
+   "statement": "Die VINCORION-Produktseite nennt allgemein, dass GTD chaserV beim Kampfpanzer Leopard 2, beim Schützenpanzer Puma und bei der Panzerhaubitze 2000 „zum Einsatz kommt“, und dass künftige Plattformen wie der Leopard 2 A-RC 3.0 vom Baukasten profitieren würden. Konkrete Aufträge, Stückzahlen oder Serienstatus je Plattform nennt die Seite nicht; ein berichteter Auftrag für GTD chaserV mit Serienbezug ist nur zum Leopard 2 A8 NOR (P08) belegt.",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-5d3486ad638df03b"
    ],
    "evidence": "Auszug: „Sie kommt sowohl bei kleineren Launchern zum Einsatz als auch bei der mittleren bis schweren Bewaffnung vom Kampfpanzer Leopard 2, dem Schützenpanzer Puma und der Panzerhaubitze 2000… Von diesem Baukasten-System profitieren auch zukünftige Modelle wie der Leopard 2 A-RC 3.0.“",
    "location": "Stabilization Systems, Abschnitt „Maximale Ersttrefferwahrscheinlichkeit“",
-   "uncertainty": "Herstellerangabe; Bezug zu Leopard 2 A-RC 3.0 ist nur als künftige Plattform genannt, kein belegter Auftrag.",
+   "uncertainty": "Herstellerangabe ohne Zeit- und Mengenangabe; Einsatzstatus je Plattform (Serie, Test, Nachrüstung) nicht unterschieden; Leopard 2 A-RC 3.0 nur als künftige Plattform, kein belegter Auftrag.",
    "proposed_depth": "A",
    "depth_reason": "Plattform-/Einsatzstatus der Kernprodukte"
   },
@@ -298,7 +298,7 @@
   },
   {
    "id": "P20",
-   "statement": "Laut VINCORION besteht die PATRIOT-Stromversorgung aus EPP radarV (2 × 150-kW-Diesel-Stromerzeugeraggregate, 400 Hz, für Multifunktionsradar und Feuerleitstand), EPU commandV (2 × 30 kW, 400 Hz, für Kampfführungsgefechtsstand/Communications Relay Group) und EPS launcherV (Aggregat bis 15 kW, 400 Hz, für Startgerät und optional Antennenmastanlage).",
+   "statement": "Laut VINCORION besteht die PATRIOT-Stromversorgung aus EPP radarV (2 × 150-kW-Diesel-Stromerzeugeraggregate, 400 Hz, für Multifunktionsradar und Feuerleitstand), EPU commandV (2 × 30 kW, 400 Hz, für den Kampfführungsgefechtsstand Information Coordination Central, ICC) und EPS launcherV (Aggregat bis 15 kW, 400 Hz, für Startgerät und optional Antennenmastanlage).",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-fc1cb698358d5e90",
@@ -307,7 +307,7 @@
    "evidence_items": [
     {
      "source_id": "S-fc1cb698358d5e90",
-     "text": "Paraphrase: Abschnitt „Im Überblick“ mit „VINCORION Anteil“ je PATRIOT-Komponente und Produktdatenzeilen EPP radarV, EPU commandV, EPS launcherV.",
+     "text": "Auszug: „Stromaggregat bestehend aus 2 x 150-kW-Systemen mit 400 Hz“ (EPP radarV); „2 × 30-kW-Systemen mit 400 Hz“ (EPU commandV, versorgt den Kampfführungsgefechtsstand); „15-kW-Systemen mit 400 Hz“ (EPS launcherV); „…zwei eigenständigen 150-kW-Diesel-Stromerzeugeraggregaten“.",
      "mode": "Paraphrase",
      "location": "Ground-based Air Defense, Abschnitt „Höchstleistung für PATRIOT“"
     },
@@ -318,9 +318,9 @@
      "location": "Pressemitteilung 19.09.2025, Abschnitt „Entire Power Supply Developed in Germany“"
     }
    ],
-   "evidence": "Paraphrase: Abschnitt „Im Überblick“ mit „VINCORION Anteil“ je PATRIOT-Komponente und Produktdatenzeilen EPP radarV, EPU commandV, EPS launcherV. | Auszug: „The Electric Power Plant (EPP) supplies power to the radar and Engagement Control Station (ECS) via two 150-kilowatt gensets… (EPU) … two 30-kilowatt units… Launching Station (LS) receives 15 kW from a genset“",
+   "evidence": "Auszug: „Stromaggregat bestehend aus 2 x 150-kW-Systemen mit 400 Hz“ (EPP radarV); „2 × 30-kW-Systemen mit 400 Hz“ (EPU commandV, versorgt den Kampfführungsgefechtsstand); „15-kW-Systemen mit 400 Hz“ (EPS launcherV); „…zwei eigenständigen 150-kW-Diesel-Stromerzeugeraggregaten“. | Auszug: „The Electric Power Plant (EPP) supplies power to the radar and Engagement Control Station (ECS) via two 150-kilowatt gensets… (EPU) … two 30-kilowatt units… Launching Station (LS) receives 15 kW from a genset“",
    "location": "Ground-based Air Defense, Abschnitt „Höchstleistung für PATRIOT“; Pressemitteilung 19.09.2025, Abschnitt „Entire Power Supply Developed in Germany“",
-   "uncertainty": "Beide Quellen stammen vom Unternehmen."
+   "uncertainty": "Beide Quellen stammen vom Unternehmen. Die Produktzeile der Webseite nennt für EPU commandV zusätzlich die Communications Relay Group; die Pressemitteilung nennt nur ICC/Kampfführungsgefechtsstand. Dieselbetrieb ist für EPP radarV auf der Webseite belegt."
   },
   {
    "id": "P21",
@@ -352,11 +352,11 @@
   },
   {
    "id": "P23",
-   "statement": "Laut VINCORION reduziert die hybride PATRIOT-Stromversorgung die Betankungsvorgänge von 72 auf 24 pro Tag und Bataillon, senkt den Kraftstoffverbrauch um 48 %, verlängert Wartungsintervalle auf bis zu das Vierfache und verkürzt Wartungsstillstand um mehr als 80 %. Die GBAD-Produktseite nennt bis zu 66 % weniger Betankungsvorgänge und Wartungsintervalle bis 3.000 Stunden.",
+   "statement": "Laut VINCORION reduziert die hybride PATRIOT-Stromversorgung die Betankungsvorgänge von 72 auf 24 pro Tag und Bataillon, senkt den Kraftstoffverbrauch um 48 %, verlängert Wartungsintervalle auf bis zu das Vierfache und verkürzt Wartungsstillstand um mehr als 80 %. Die Power-Systems-Übersichtsseite nennt bis zu 66 % weniger Betankungsvorgänge und Wartungsintervalle bis 3.000 Stunden.",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-74f313ac4d339267",
-    "S-fc1cb698358d5e90"
+    "S-b3f0167ab422975a"
    ],
    "evidence_items": [
     {
@@ -366,14 +366,14 @@
      "location": "Pressemitteilung 19.09.2025, Abschnitte „Tactical Advantages…“ und „New Hybrid Technology…“"
     },
     {
-     "source_id": "S-fc1cb698358d5e90",
-     "text": "Auszug: „…Anzahl der Betankungsvorgänge im Vergleich zu herkömmlichen Dieselaggregaten um bis zu 66 Prozent reduzieren… Wartungsintervalle auf bis zu 3.000 Stunden verlängern.“",
+     "source_id": "S-b3f0167ab422975a",
+     "text": "Auszug: „…die Anzahl der Betankungsvorgänge im Vergleich zu herkömmlichen Dieselaggregaten um bis zu 66 Prozent reduzieren. Gleichzeitig lassen sich Wartungsintervalle auf bis zu 3.000 Stunden verlängern.“",
      "mode": "Auszug",
-     "location": "Power Systems, Abschnitt „Auf einen Blick“ (Seite power-systems)"
+     "location": "Power Systems (Übersichtsseite power-systems), Abschnitt „Auf einen Blick“"
     }
    ],
-   "evidence": "Auszug: „…reduces the number of required refueling operations by two-thirds – from 72 to just 24 times per day per battalion“; „cutting fuel consumption by 48%“; „maintenance intervals are up to four times longer“; „downtime for maintenance itself has also been reduced by more than 80%“ | Auszug: „…Anzahl der Betankungsvorgänge im Vergleich zu herkömmlichen Dieselaggregaten um bis zu 66 Prozent reduzieren… Wartungsintervalle auf bis zu 3.000 Stunden verlängern.“",
-   "location": "Pressemitteilung 19.09.2025, Abschnitte „Tactical Advantages…“ und „New Hybrid Technology…“; Power Systems, Abschnitt „Auf einen Blick“ (Seite power-systems)",
+   "evidence": "Auszug: „…reduces the number of required refueling operations by two-thirds – from 72 to just 24 times per day per battalion“; „cutting fuel consumption by 48%“; „maintenance intervals are up to four times longer“; „downtime for maintenance itself has also been reduced by more than 80%“ | Auszug: „…die Anzahl der Betankungsvorgänge im Vergleich zu herkömmlichen Dieselaggregaten um bis zu 66 Prozent reduzieren. Gleichzeitig lassen sich Wartungsintervalle auf bis zu 3.000 Stunden verlängern.“",
+   "location": "Pressemitteilung 19.09.2025, Abschnitte „Tactical Advantages…“ und „New Hybrid Technology…“; Power Systems (Übersichtsseite power-systems), Abschnitt „Auf einen Blick“",
    "uncertainty": "Leistungsangaben des Herstellers ohne unabhängige Messung; Vergleichsbasis und Einsatzszenario nur teilweise genannt."
   },
   {
@@ -517,19 +517,19 @@
    "evidence_items": [
     {
      "source_id": "S-e1deeb15ad1f4105",
-     "text": "Auszug: „Unsere modularen Energiesysteme sind Dual-Use-fähig und können sowohl von militärischen als auch zivilen Anwendern wie Feuerwehr, THW oder Katastrophenschutz genutzt werden.“",
+     "text": "Auszug: „Unsere modularen Energiesysteme sind Dual-Use-fähig und können sowohl von militärischen als auch zivilen Anwendern wie Feuerwehr, THW oder Katastrophenschutz genutzt werden.“ Kritische Infrastrukturen: „Umspannwerke und Energieverteilnetze, Gleisweichen und Pumpstationen… medizinische Einrichtungen und Notunterkünfte“; Produktnamen PGM tacticalV und ESM hybridV auf dieser Seite.",
      "mode": "Auszug",
-     "location": "Tactical Power Systems, Abschnitt „Ein Standard für alle Einsatzkräfte“"
+     "location": "Tactical Power Systems (S-e1deeb15ad1f4105), Abschnitt „Ein Standard für alle Einsatzkräfte“"
     },
     {
      "source_id": "S-b3f0167ab422975a",
      "text": "Paraphrase: Anwendungsfeld „Kritische Infrastruktur & Krisenmanagement“ unter den Power-Systems-Einsatzszenarien.",
      "mode": "Paraphrase",
-     "location": "Power Systems, Abschnitt „Resilient. Flexibel. Einsatzbereit.“"
+     "location": "Power Systems (Übersichtsseite), Abschnitt „Resilient. Flexibel. Einsatzbereit.“ – trägt nur das Anwendungsfeld, nicht Dual-Use/Feuerwehr/THW"
     }
    ],
-   "evidence": "Auszug: „Unsere modularen Energiesysteme sind Dual-Use-fähig und können sowohl von militärischen als auch zivilen Anwendern wie Feuerwehr, THW oder Katastrophenschutz genutzt werden.“ | Paraphrase: Anwendungsfeld „Kritische Infrastruktur & Krisenmanagement“ unter den Power-Systems-Einsatzszenarien.",
-   "location": "Tactical Power Systems, Abschnitt „Ein Standard für alle Einsatzkräfte“; Power Systems, Abschnitt „Resilient. Flexibel. Einsatzbereit.“",
+   "evidence": "Auszug: „Unsere modularen Energiesysteme sind Dual-Use-fähig und können sowohl von militärischen als auch zivilen Anwendern wie Feuerwehr, THW oder Katastrophenschutz genutzt werden.“ Kritische Infrastrukturen: „Umspannwerke und Energieverteilnetze, Gleisweichen und Pumpstationen… medizinische Einrichtungen und Notunterkünfte“; Produktnamen PGM tacticalV und ESM hybridV auf dieser Seite. | Paraphrase: Anwendungsfeld „Kritische Infrastruktur & Krisenmanagement“ unter den Power-Systems-Einsatzszenarien.",
+   "location": "Tactical Power Systems (S-e1deeb15ad1f4105), Abschnitt „Ein Standard für alle Einsatzkräfte“; Power Systems (Übersichtsseite), Abschnitt „Resilient. Flexibel. Einsatzbereit.“ – trägt nur das Anwendungsfeld, nicht Dual-Use/Feuerwehr/THW",
    "uncertainty": "Es sind keine zivilen Kunden oder Aufträge genannt; Anwendungsfeld ist Herstellerangabe."
   },
   {
@@ -571,7 +571,7 @@
    ],
    "evidence": "Auszug: „SENTINEL will develop and test 17 essential energy capabilities…“; „EU funding €39.9 million“; „Funding source European Defence Fund“; Teilnehmerliste enthält „Vincorion advanced systems GMBH - Vincorion power systems GMBH“. | Auszug: „…wird VINCORION im Rahmen des EU-geförderten SENTINEL-Projekts eine zentrale Rolle in Deutschlands Industrie übernehmen mit dem Ziel, moderne taktische Energiesysteme zu entwickeln.“",
    "location": "STEP-Seite „SENTINEL“, Abschnitte Beschreibung, Beneficiaries, EU funding; Pressemitteilung 13.08.2026, Abschnitt Power Systems",
-   "uncertainty": "Die EU-Fördersumme betrifft das Gesamtprojekt, nicht VINCORIONs Anteil; Auftragswert, Laufzeit und Meilensteine für VINCORION nicht gefunden. Projekt-Partnerschaften sind Cluster-Thema.",
+   "uncertainty": "Die STEP-Seite listet 16 Standort-Einträge, darunter Belgien doppelt, also 15 verschiedene Länder; eine abweichende Länderzahl (16) in anderen Unterlagen ist in den geöffneten Quellen nicht belegt, die Abweichung ist ungeklärt. Die EU-Fördersumme betrifft das Gesamtprojekt, nicht VINCORIONs Anteil; Auftragswert, Laufzeit und Meilensteine für VINCORION nicht gefunden. Projekt-Partnerschaften sind Cluster-Thema.",
    "event_status": "laufendes EU-gefördertes Entwicklungsvorhaben (Teilnahme belegt)",
    "proposed_depth": "A",
    "depth_reason": "Förderprogramm und zentrale Rollenaussage"
@@ -773,19 +773,19 @@
    "evidence_items": [
     {
      "source_id": "S-d0efd24bcbc15570",
-     "text": "Auszug: „Ziel ist es, die Ersatzteilverfügbarkeit langfristig sicherzustellen, auch über Zeiträume von 30 Jahren und darüber hinaus.“",
+     "text": "Auszug (trägt nur die Teilaussage zum Obsoleszenzmanagement): „Ein wesentlicher Leistungsbaustein… ist unser Obsoleszenzmanagement. Ziel ist es, die Ersatzteilverfügbarkeit langfristig sicherzustellen, auch über Zeiträume von 30 Jahren und darüber hinaus.“",
      "mode": "Auszug",
-     "location": "Services, Abschnitt „Integrierte Serviceleistungen über den gesamten Lebenszyklus“"
+     "location": "Services (Übersichtsseite), Absatz 2 unter „Integrierte Serviceleistungen über den gesamten Lebenszyklus“"
     },
     {
      "source_id": "S-570ee7bc8cbb2ed7",
-     "text": "Paraphrase: „Auszug aus dem Service Portfolio: Lifecycle Support“ mit acht Leistungsbausteinen; Fähigkeiten Bauzustand, Veredelung, Integration, Fehlererkennung.",
+     "text": "Auszug (trägt nur die Aufzählung der Bausteine): Risikoanalyse; Wartungs- und Instandsetzungskonzept; Konfigurationsmanagement; Special-to-Type Test Equipment; Musterbefundung; Produktbeobachtung; Obsoleszenzmanagement; Update und Upgrade.",
      "mode": "Paraphrase",
      "location": "Lifecycle Support, Abschnitte Service-Portfolio und „Unsere Fähigkeiten“"
     }
    ],
-   "evidence": "Auszug: „Ziel ist es, die Ersatzteilverfügbarkeit langfristig sicherzustellen, auch über Zeiträume von 30 Jahren und darüber hinaus.“ | Paraphrase: „Auszug aus dem Service Portfolio: Lifecycle Support“ mit acht Leistungsbausteinen; Fähigkeiten Bauzustand, Veredelung, Integration, Fehlererkennung.",
-   "location": "Services, Abschnitt „Integrierte Serviceleistungen über den gesamten Lebenszyklus“; Lifecycle Support, Abschnitte Service-Portfolio und „Unsere Fähigkeiten“",
+   "evidence": "Auszug (trägt nur die Teilaussage zum Obsoleszenzmanagement): „Ein wesentlicher Leistungsbaustein… ist unser Obsoleszenzmanagement. Ziel ist es, die Ersatzteilverfügbarkeit langfristig sicherzustellen, auch über Zeiträume von 30 Jahren und darüber hinaus.“ | Auszug (trägt nur die Aufzählung der Bausteine): Risikoanalyse; Wartungs- und Instandsetzungskonzept; Konfigurationsmanagement; Special-to-Type Test Equipment; Musterbefundung; Produktbeobachtung; Obsoleszenzmanagement; Update und Upgrade.",
+   "location": "Services (Übersichtsseite), Absatz 2 unter „Integrierte Serviceleistungen über den gesamten Lebenszyklus“; Lifecycle Support, Abschnitte Service-Portfolio und „Unsere Fähigkeiten“",
    "uncertainty": "Herstellerangabe."
   },
   {
@@ -849,7 +849,7 @@
    ],
    "evidence": "Paraphrase: Zwischenüberschrift „Pulse-Lines sollen den Auftragsstau lösen“ sowie Absätze zu Kapazitätsausbau und USA-Präsenz (Aussagen des Finanzportals, keine Primärquelle genannt).",
    "location": "Börse Express „Vincorion Aktie: Pulse-Lines gegen Auftragsstau“, 26.07.2026, Absätze 1–4",
-   "uncertainty": "Finanzportal ohne genannte Primärquelle; Pulse-Lines, USA-Ausbau und Kundennachfrage konnten in Unternehmensquellen nicht bestätigt werden (Gegenbeleg-Lücke). Artikel enthält zudem Anlagehinweise und ist nur als Hinweis auf Berichterstattung verwendbar.",
+   "uncertainty": "Finanzportal ohne genannte Primärquelle; Pulse-Lines, USA-Ausbau und Kundennachfrage konnten in Unternehmensquellen nicht bestätigt werden (Gegenbeleg-Lücke). Der Artikel enthält laut eigenem Hinweis teilweise mit Künstlicher Intelligenz erstellte, redaktionell geprüfte Passagen, eine KI-generierte Illustration sowie Anlagehinweise (keine Anlageberatung); nur als Hinweis auf Berichterstattung verwendbar, nicht als alleinige Faktenbasis.",
    "event_date": "2026-07-26",
    "event_status": "Berichterstattung eines Finanzportals",
    "proposed_depth": "A",
@@ -857,7 +857,7 @@
   },
   {
    "id": "P52",
-   "statement": "Laut ES&T/Shephard (Oktober/November 2021) eröffnete VINCORION am 21.10.2021 in El Paso (Texas, nahe Fort Bliss) einen neuen Standort (Investition rund 2 Mio. US-Dollar); Schwerpunkt sei die Montage der Stromversorgungsanlage EPP radarV für PATRIOT, dazu Komponenten und Ersatzteile; zusätzliche Ingenieure sollten Zukunftsprojekte wie Mobile Hybrid Power Systems (MoHPS) vorantreiben. Der Geschäftsführer nannte die USA den wichtigsten ausländischen Verteidigungsmarkt.",
+   "statement": "Laut ES&T (03.11.2021) weihte VINCORION am 21.10.2021 in El Paso (Texas, nahe Fort Bliss) einen neuen Firmensitz ein (Investition rund 2 Mio. US-Dollar); Herzstück sei die Montage der Stromversorgungsanlage EPP radarV für PATRIOT, zusätzliche Ingenieure sollten Zukunftsprojekte wie Mobile Hybrid Power Systems (MoHPS) vorantreiben. Laut Shephard (22.10.2021, sichtbarer Text) liegt der Fokus auf der Montage der Stromversorgung für das PATRIOT-System und weiteren Komponenten wie Ersatzteilen; der Geschäftsführer nannte die USA den wichtigsten ausländischen Verteidigungsmarkt.",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-03d7ff221e65f6c3",
@@ -872,14 +872,14 @@
     },
     {
      "source_id": "S-65b4796258a315d9",
-     "text": "Auszug: „The US is already the most important foreign market for us in the defence sector,“ MD Stefan Stenzel said. Facility of 3,250m2, investment of more than $2 million.",
+     "text": "Auszug: „The US is already the most important foreign market for us in the defence sector,“ MD Stefan Stenzel said. Facility of 3,250m2, investment of more than $2 million. Vincorion will focus on assembling the electrical power plant for the Patriot SAM system and other key components such as spare parts.",
      "mode": "Auszug",
-     "location": "Shephard News 22.10.2021, Absätze 1–3"
+     "location": "Shephard News 22.10.2021, sichtbare Absätze 1–3 (Rest hinter Bezahlschranke nicht gelesen)"
     }
    ],
-   "evidence": "Auszug: „Herzstück der Betriebsstätte sei die Montage des Electrical Power Plant EPP radarV…“; „Mit weiteren Ingenieuren solle… die Entwicklung strategischer Zukunftsprojekte wie die so genannten Mobile Hybrid Power Systems (MoHPS)… vorangetrieben werden.“ | Auszug: „The US is already the most important foreign market for us in the defence sector,“ MD Stefan Stenzel said. Facility of 3,250m2, investment of more than $2 million.",
-   "location": "ES&T 03.11.2021, Absätze 1–2; Shephard News 22.10.2021, Absätze 1–3",
-   "uncertainty": "Stand 2021 (damals Business-Unit der Jenoptik-Gruppe); Flächenangaben unterscheiden sich (ca. 35.000 m² Gelände bei ES&T, 3.250 m² Gebäude bei Shephard); aktueller Montage-/Entwicklungsumfang 2026 nicht in den geöffneten Quellen bestätigt.",
+   "evidence": "Auszug: „Herzstück der Betriebsstätte sei die Montage des Electrical Power Plant EPP radarV…“; „Mit weiteren Ingenieuren solle… die Entwicklung strategischer Zukunftsprojekte wie die so genannten Mobile Hybrid Power Systems (MoHPS)… vorangetrieben werden.“ | Auszug: „The US is already the most important foreign market for us in the defence sector,“ MD Stefan Stenzel said. Facility of 3,250m2, investment of more than $2 million. Vincorion will focus on assembling the electrical power plant for the Patriot SAM system and other key components such as spare parts.",
+   "location": "ES&T 03.11.2021, Absätze 1–2; Shephard News 22.10.2021, sichtbare Absätze 1–3 (Rest hinter Bezahlschranke nicht gelesen)",
+   "uncertainty": "Shephard-Artikel nur teilweise sichtbar (Bezahlschranke); Produktname EPP radarV und MoHPS nur aus ES&T belegt. Stand 2021 (damals Business-Unit der Jenoptik-Gruppe); Flächenangaben unterscheiden sich (ca. 35.000 m² Gelände bei ES&T, 3.250 m² Gebäude bei Shephard); aktueller Montage-/Entwicklungsumfang 2026 nicht in den geöffneten Quellen bestätigt.",
    "event_date": "2021-10-21",
    "event_status": "Eröffnung laut Unternehmen berichtet",
    "proposed_depth": "A",
