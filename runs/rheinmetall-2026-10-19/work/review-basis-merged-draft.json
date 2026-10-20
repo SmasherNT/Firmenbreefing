@@ -4,48 +4,26 @@
   "company": "Rheinmetall AG",
   "as_of": "2026-10-19",
   "phase": "basis",
-  "status": "teilweise",
-  "material_errors": [
-    "P-R51 (+ Region it, Aktivität it-lrmv): Wannenfertigung/weitere Varianten sind Rheinmetall-Teilbeitrag, nicht JV-Tätigkeit; operative Einstufung von it-lrmv ohne Beleg - owner portfolio.",
-    "P-R100 (+ Region us): Evidenzzeile 3 falsch (Konzernliste führt keine Einheit \"American Rheinmetall Vehicles\"; ARD Inc. steht unter Vehicle Systems und unter Hubs) - owner portfolio.",
-    "M-KND-01: \"Hollow Base\" beim LU 211 in keiner zugeordneten Quelle - owner market.",
-    "P-R60: Testzentrum/Schießtunnel als 2023 eröffnet dargestellt, Quelle: im Bau - owner portfolio."
-  ],
-  "review_scope": "Leitprüfung Basis Runde 2 (nach Korrekturrunde 1): 297 Claims auf Grundlage der neu gesammelten Dokumentbefunde (3 Jobs; 4 Korrektur-Befunde P-R51, P-R100, M-KND-01, P-R60), Diff Paket Runde 1/2 (28 geänderte Claims, module_views, Netzwerk, coverage/gaps, shared_limitations) und Gegenlektüre der Originale im Cache (Albacete/Konzernliste/Katalog/Produktseite/GB 2024 S. 31). Gesamte module_views und Abdeckung erneut semantisch geprüft; alle 297 Claims explizit entschieden. Freigabe nicht erteilt wegen der 4 offenen Korrekturen.",
+  "status": "freigegeben",
+  "material_errors": [],
+  "review_scope": "Leitprüfung Basis Runde 3: 297 Claims, Dokumentbefunde aller 3 Jobs ohne Korrektur/offen; Umsetzung der vier Runde-2-Korrekturen (P-R51, P-R100, M-KND-01, P-R60/P-R61) samt Folgeänderungen (it-lrmv, us-hub/us-hq, hu-zala-dev, O-knds-spectrum) gegen Paket und Originale geprüft; gesamte module_views, Netzwerk, coverage/gaps und Auftragsabdeckung erneut semantisch bestätigt.",
   "open_limits": [
-    "Ungelöste, ausgewiesene Quellkonflikte: IdZ-ES (1,7 vs. 3,1 Mrd.), Schakal (ESD vs. Rheinmetall-PM), Puma-Anteil, VMZ (unterzeichnet vs. kein JV), Kraken-JV-Datum, NVL-Datum, CMD-Datum.",
-    "Bezahlschranken: H-M01, H-M08, M-HAN-06 nur im Teaserumfang.",
-    "Überwiegend Herstellerangaben; keine Behörden-/Vergabedaten; Cluster: Software/KI-Partner und Vergabeportale nicht geprüft; JV-Quoten der Partnerseite nicht belegt.",
-    "Portfolio: Kassel/Kiel/Bremen/München, Hochenergielaser/Aktivschutz, Battlesuite/Gladius/MQ-28 ohne Status-/Kundenbeleg (Beleglücke); Golfstaaten ohne belegte Präsenz.",
-    "Dokumentjobs und Leitprüfung konfiguriert als claude-sonnet-5-5/medium; kein Nachweis des tatsächlich ausgeführten Modells."
+    "Ausgewiesene, nicht auflösbare Quellkonflikte (IdZ-ES, Schakal, Puma-Anteil, VMZ, Kraken-Datum, NVL-Datum, CMD-Datum); Bezahlschranken nur im Teaserumfang (H-M01, H-M08, M-HAN-06); überwiegend Herstellerangaben, keine Behörden-/Vergabedaten; Cluster: Software/KI und Vergabeportale nicht geprüft; Portfolio: Beleglücken (Kassel/Kiel/Bremen/München, Battlesuite/Gladius/MQ-28, Golfstaaten); Modelle nur als sonnet-5-5/medium konfiguriert."
   ],
   "non_blocking": [
-    "C-STR-21: \"die litauische EPSO-G\" nicht der Rheinmetall-Zuschreibung zuordnen (PM nennt Herkunft nicht).",
-    "C-CAP-04: als Auszug kennzeichnen (BlackRock 5,09 %/2022 und FMR siehe C-CAP-02/-03; BlackRock-Eintrag der GB-Tabelle ist durch die Meldung 04.03.2026 überholt).",
-    "P-D11: Querverweis auf C-MKT-03 (1,7 vs. 3,1 Mrd. EUR).",
-    "T-E07: Unsicherheit \"Kaufpreis nicht veröffentlicht\" mit dem vorläufigen Kaufpreis im Halbjahresbericht (C-STR-14) abgleichen.",
-    "P-R90: \"ab 2026\" = frühestens 2026; P-N10: Taufe durch Taufpatin; T-E09/T-E13: Datumsbasis im Label; C-STR-35: Lettland-MoU 25.09.2025 und PGZ-Absichtserklärung Oktober 2025 unter einem event_date.",
-    "Region us: geographic_scope/coverage_note nennen Virginia nur als Gesamtangabe, obwohl der Hub Vienna VA als Aktivität geführt wird.",
-    "M-MKT-01..07 sind in keiner module_view referenziert (nur Faktenregister)."
+    "Siehe Claim-Notizen: M-KND-01 location/HB-Kürzel, P-R100 Vienna nur AUSA-Quelle, C-STR-37 Datum, C-STR-21 \"litauische\", C-CAP-04 Auszug, P-D11 Querverweis, it-lrmv kind/status großzügig.",
+    "Weiter aus Runde 2: T-E07 Kaufpreis-Unsicherheit abgleichen; P-R90, P-N10, T-E09/T-E13, C-STR-35 Datumsbasis; Region us Virginia im coverage_note; M-MKT-01..07 in keiner module_view."
   ],
   "non_blocking_notes": [
-    "C-STR-21: \"die litauische EPSO-G\" nicht der Rheinmetall-Zuschreibung zuordnen (PM nennt Herkunft nicht).",
-    "C-CAP-04: als Auszug kennzeichnen (BlackRock 5,09 %/2022 und FMR siehe C-CAP-02/-03; BlackRock-Eintrag der GB-Tabelle ist durch die Meldung 04.03.2026 überholt).",
-    "P-D11: Querverweis auf C-MKT-03 (1,7 vs. 3,1 Mrd. EUR).",
-    "T-E07: Unsicherheit \"Kaufpreis nicht veröffentlicht\" mit dem vorläufigen Kaufpreis im Halbjahresbericht (C-STR-14) abgleichen.",
-    "P-R90: \"ab 2026\" = frühestens 2026; P-N10: Taufe durch Taufpatin; T-E09/T-E13: Datumsbasis im Label; C-STR-35: Lettland-MoU 25.09.2025 und PGZ-Absichtserklärung Oktober 2025 unter einem event_date.",
-    "Region us: geographic_scope/coverage_note nennen Virginia nur als Gesamtangabe, obwohl der Hub Vienna VA als Aktivität geführt wird.",
-    "M-MKT-01..07 sind in keiner module_view referenziert (nur Faktenregister)."
+    "Siehe Claim-Notizen: M-KND-01 location/HB-Kürzel, P-R100 Vienna nur AUSA-Quelle, C-STR-37 Datum, C-STR-21 \"litauische\", C-CAP-04 Auszug, P-D11 Querverweis, it-lrmv kind/status großzügig.",
+    "Weiter aus Runde 2: T-E07 Kaufpreis-Unsicherheit abgleichen; P-R90, P-N10, T-E09/T-E13, C-STR-35 Datumsbasis; Region us Virginia im coverage_note; M-MKT-01..07 in keiner module_view."
   ],
   "view_findings": {
-    "context": "Alle Korrekturen aus Runde 1 in Events (ev-spock, ev-nvl_close 2026-02-27, ev-romania 2026-05-29), cf-segments, Gaps G-03/G-05 und coverage (Cache-Nutzung ehrlich beschrieben) sachgerecht umgesetzt. Profil/Medien-Timeline unverändert korrekt.",
-    "portfolio": "Runde-1-Korrekturen umgesetzt: airsat/cuas \"segmentübergreifend\", idz mit P-D13, ro-mangalia kind access/announced, G-P04/shared_limitations/coverage_notes (gb, hu, za, ua, bg) mit Kontrollangaben und C-STR-33 abgestimmt, us-hub ergänzt. Offen: it-lrmv (P-R51), us-Evidenz (P-R100), P-R60/hu-zala-dev.",
-    "cluster": "Knoten udi/epsog, Kanten E14, E44, E45, E46, E59, E71/E72 (Richtung jetzt Lieferant -> PSM, supplier-Konvention), E73, E83 und neue Abdeckungszeile \"Breite Entdeckung\" sachgerecht; 68 Knoten/83 Kanten referenziell konsistent.",
-    "market": "36 Beobachtungen gegen Vergleichsplan v1 geprüft; O-rheinmetall-industrial (Australien nicht operativ), O-rheinmetall-capacity, O-gdots-capacity/-industrial (Medienabgleich Mesquite) und O-nammo-industrial (M-NAM-08) korrigiert; offen nur M-KND-01 (Hollow Base)."
+    "all": "Alle vier module_views, Profil/Medien-Timeline, Events, 39 Produkte, 21 Regionen, Netzwerk (68 Knoten/83 Kanten), 36 Marktbeobachtungen, coverage/gaps und shared_limitations bestätigt; keine wesentliche Abweichung offen."
   },
-  "review_work_fingerprint": "21336c434f75524e7778a9b5c35e0c798d6e1ca2bd5024cbcd61aea6a3e70bb2",
-  "plan_fingerprint": "bef6420ecfb310b0ac6a90e181647adeb7db203c8224827674253cdf2d92163f",
-  "source_collection_fingerprint": "1624f4cae96c6cf75dcad8a325da0ce002139ffe8928e4cc371a31dcb6a004fd",
+  "review_work_fingerprint": "c3898a724d2c55bc1d52895dd4efe377f62dfe2ec29f09fd8bb6ef89e270caa1",
+  "plan_fingerprint": "da10258b7ec6256e20eb86c78d3bdc96f05f736f1741533f5204a4fcc8f347e0",
+  "source_collection_fingerprint": "04779e4a0d7c98e567157de197d57e126b3b92d1ed7950fd6edfe208ca9747df",
   "scope_and_mappings_checked": true,
   "review_groups": [
     {
@@ -53,72 +31,48 @@
         "P-R51"
       ],
       "depth": "A",
-      "status": "Korrektur",
-      "note": "Rheinmetall-Seite S-b04118fa6c556f66 (Original-HTML) gelesen: \"Production of vehicle hulls and supply of other variants, including air defence\" steht auf der Folie mit Rheinmetall-Logo, \"Development and production of mission systems and electronic suites ... propulsion\" auf der Leonardo-Folie (\"European synergy\"). Dokumentbefund Korrektur bestätigt. Gleichanteil 50/50 und Programme NMBT/A2CS (16 Varianten) belegt.",
-      "reason": "Statement schreibt dem JV \"produziert Fahrzeugwannen sowie weitere Varianten\" zu; die Seite weist Wannenfertigung/Lieferung weiterer Varianten als Rheinmetall-Teilbeitrag innerhalb der Programme aus, nicht als JV-Tätigkeit. Folge: Aktivität it-lrmv (kind integration, status operational, Endmontage/Zulassungstests/Auslieferung/Logistik) stützt sich dann nur auf P-R50 (Plan: Aktivitäten \"sollen\" in Italien stattfinden) und die Übergabe der ersten vier Lynx (P-V31).",
-      "action": "(1) P-R51: Statement ändern in \"führt die Programme NMBT und A2CS (16 Varianten); Rheinmetall-Teilbeitrag laut Seite: Wannenfertigung und Lieferung weiterer Varianten (inkl. Flugabwehr), Leonardo-Teilbeitrag: Missionssysteme, Elektronik, Antrieb\"; kein \"JV produziert\". (2) Region it, Aktivität it-lrmv: description auf belegte Auslieferung (\"erste vier Lynx am 27.01.2026 in Montelibretti übergeben\", P-V31) begrenzen und Endmontage/Zulassungstests/Logistik als Planangabe (P-R50) kennzeichnen oder die Aktivität auf status announced setzen; claim_ids ggf. um nicht mehr tragende P-R51 bereinigen.",
-      "owner": "portfolio"
-    },
-    {
-      "claim_ids": [
-        "P-R100"
-      ],
-      "depth": "A",
-      "status": "Korrektur",
-      "note": "Konzernliste S-d195b923c24e0507 gelesen: Unter \"Subsidiaries of the Vehicle Systems Division\" stehen \"American Rheinmetall\" und \"American Rheinmetall Defense, Inc.\", unter \"International Subsidiaries - Hubs\" ebenfalls \"American Rheinmetall Defense, Inc.\", unter Weapon and Ammunition \"American Rheinmetall Munitions, Inc.\"; eine Einheit \"American Rheinmetall Vehicles\" steht dort nicht. DBA-Fußnote (S-495b6b686aece696) und Vienna VA (AUSA-PM) belegt; das Statement ist inhaltlich jetzt tragfähig.",
-      "reason": "Evidenzzeile 3 behauptet \"American Rheinmetall und American Rheinmetall Vehicles unter Subsidiaries of the Vehicle Systems Division\" (falsch: dort stehen American Rheinmetall und American Rheinmetall Defense, Inc.); ownership_note us-hub nennt nur die Hub-Rubrik, obwohl ARD Inc. in der Liste auch unter Vehicle Systems geführt wird; \"zwei Gesellschaften\" dadurch relativiert.",
-      "action": "P-R100 evidence/Paraphrase Nr. 3 korrigieren (\"American Rheinmetall\" und \"American Rheinmetall Defense, Inc.\" unter Vehicle Systems Division; ARD Inc. zusätzlich unter International Subsidiaries - Hubs; American Rheinmetall Munitions, Inc. unter Weapon and Ammunition; ARV LLC nur laut Anteilsbesitzliste C-STR-24 und DBA-Fußnote); ownership_note von us-hub und us-hq daran angleichen; Statement \"zwei Gesellschaften\" durch \"American Rheinmetall (dba ARV LLC) und American Rheinmetall Defense, Inc. (US-Hub; in der Konzernliste auch unter Vehicle Systems)\" ersetzen.",
-      "owner": "portfolio"
-    },
-    {
-      "claim_ids": [
-        "M-KND-01"
-      ],
-      "depth": "A",
-      "status": "Korrektur",
-      "note": "KNDS-Katalog S-2a19a44bae9c9218 und Produktseite S-aadcb3da199c3d17 gelesen: Produktseite nennt Kompatibilität PZH2000, K9, Archer (Archer damit gedeckt, Claim-Text schreibt es richtig der Produktseite zu), Katalog LU 211 \"Base Bleed, IM\", kompatibel K9/M109. \"Hollow Base\" beim LU 211 steht in keiner der beiden Quellen.",
-      "reason": "Teilaussage \"LU 211 (HE, Hollow Base/Base Bleed, auch IM)\" nicht durch die zugeordneten Quellen gedeckt.",
-      "action": "M-KND-01: \"Hollow Base/\" streichen (LU 211: HE, Base Bleed, auch IM); Archer-Teil unverändert lassen (Produktseite).",
-      "owner": "market"
+      "status": "geprüft",
+      "note": "Runde-2-Korrektur umgesetzt: Seite S-b04118fa6c556f66 zuordnet Wannenfertigung/weitere Varianten Rheinmetall, Missionssysteme/Elektronik/Antrieb Leonardo; Statement und Unsicherheit (Foliengestaltung, kein JV-Fertigungsnachweis) korrekt. Folge it-lrmv: Beschreibung auf belegte Übergabe 27.01.2026 begrenzt, Endmontage/Zulassungstests/Logistik als Plan, P-R51 aus claim_ids entfernt. Nicht blockierend: kind \"integration\"/status operational für die reine Übergabe großzügig, Einstufung bleibt wegen control unknown Stufe 2."
     },
     {
       "claim_ids": [
         "P-R60"
       ],
       "depth": "A",
-      "status": "Korrektur",
-      "note": "PM 18.08.2023 (S-c36a781afbd14e05) gelesen: offizielle Eröffnung der Lynx-Fabrik 18.08.2023, Rheinmetall Hungary Zrt. mit Sitz dort; Entwicklungs-, Produktions- und Testzentrum auf 33 ha einschließlich Schießtunnel wird als \"is now being built\" beschrieben. PM 2024 (S-df4cbdd63bde02d6, P-R61) nennt den Testbereich als vorhanden.",
-      "reason": "Statement stellt das Testzentrum samt Schießtunnel als mit dem Werk am 18.08.2023 eröffnet dar; die Quelle des Claims beschreibt es als im Bau.",
-      "action": "P-R60 auf Werkseröffnung 18.08.2023 und Sitz/Entwicklung/Fertigung beschränken; Testzentrum mit Schießtunnel nur mit späterer Quelle (PM 07/2024, S-df4cbdd63bde02d6) und Datum aufnehmen (Quelle zu P-R60 ergänzen oder auf P-R61 verweisen); hu-zala-dev-Beschreibung (Region hu, status_date 2023-08-18) entsprechend anpassen.",
-      "owner": "portfolio"
+      "status": "geprüft",
+      "note": "Runde-2-Korrektur umgesetzt: nur Werkseröffnung 18.08.2023, Sitz, Entwicklung/Fertigung; Testzentrum laut PM 2023 im Bau (Unsicherheit)."
     },
     {
       "claim_ids": [
-        "T-E24",
-        "T-E19",
-        "T-E07",
-        "T-04",
-        "T-E15",
-        "T-E18",
-        "P-S01",
-        "P-D30",
-        "P-V71",
-        "P-V31",
-        "P-R80",
-        "C-TEC-03",
-        "C-STR-29",
-        "C-MKT-03",
-        "C-MKT-02",
-        "C-MKT-01",
-        "C-STR-20",
-        "C-STR-33",
-        "C-STR-15",
-        "C-MKT-12",
-        "M-RHM-04"
+        "P-R61"
       ],
       "depth": "A",
       "status": "geprüft",
-      "note": "Korrektur aus Runde 1 sachgerecht umgesetzt und gegen das Original erneut geprüft (Statement/Unsicherheit/event_date bzw. Status, zugehörige module_views und Kanten): Produktions- statt Serienbegriff (T-E24, P-D30, ev-spock); Nordamerika-Unsicherheit (T-E19); NVL Erwerb 27.02./Übergang 01.03./Meldung 02.03. einheitlich, ev-nvl_close 2026-02-27 (T-E07); Naval Systems erst ab März 2026, cf-segments neu beschriftet (T-04, P-S01); Vergabe 29.05.2026, ev-romania 2026-05-29 (T-E15); 51/49 DOK-ING (T-E18); PATH-Formulierung abgeschwächt (P-V71); 4+16=20 gekennzeichnet (P-V31); VMZ-Status \"umstritten\" mit Verweis auf C-STR-33 in P-R80, E46, Region bg, G-P02 (P-R80, C-STR-33); Anduril: Raketenmotoren nur Sondierung, E59 (C-TEC-03); 49 % direkt/13 % indirekt, E44/E45 (C-STR-29); IdZ-ES-Quellkonflikt 1,7 vs. 3,1 Mrd. im Claim mit Quelle S-8570241741649c2a (C-MKT-03); Schakal 4,7/3,4/2,9 und ESD-Konflikt, E73 (C-MKT-02); E71/E72 jetzt Lieferant -> PSM, Anteile je Quelle (C-MKT-01); UDI als \"ukrainischer Staatskonzern\" laut GB 2024 S. 31 belegt, Knoten udi (C-STR-20); E14 mit Vollzugsquelle PM 02.03.2026 und Unsicherheit (C-STR-15); \"$72 Mio.\" ohne AUD, Betrieb bis Ende 2028, E83 (C-MKT-12); JV-Vertrag statt Gründung, event_status (M-RHM-04). Hinweis (nicht blockierend) T-E07: Unsicherheit \"Kaufpreis nicht veröffentlicht\" mit dem Halbjahresbericht-Preis (C-STR-14) abgleichen."
+      "note": "PM 26.07.2024 gelesen: JV 51/49 und Testzentrum mit Schießtunnel am Standort belegt; hu-zala-dev-Beschreibung (Testzentrum laut Mitteilung 07/2024) konsistent."
+    },
+    {
+      "claim_ids": [
+        "P-R100"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Runde-2-Korrektur umgesetzt: Evidenz 3 korrekt (American Rheinmetall und ARD Inc. unter Vehicle Systems, ARD Inc. zusätzlich Hubs, ARV nicht in der Liste, ARV LLC über DBA-Fußnote und C-STR-24); us-hub/us-hq ownership_notes angeglichen. Nicht blockierend: Vienna VA nur in AUSA-Quelle S-6797a3b3e68d3be1 (im Claim so zugeschrieben); Region us coverage_note nennt Virginia nur als Gesamtangabe."
+    },
+    {
+      "claim_ids": [
+        "M-KND-01"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Runde-2-Korrektur umgesetzt: \"Hollow Base\" gestrichen; Archer über Produktseite gedeckt. Nicht blockierend: location \"PDF-S. 8-16\" zu knapp (Produkte S. 9-19); \"HB\" in O-knds-spectrum (\"LU 211 HB/BB\") ist Variantenkürzel des Katalogs."
+    },
+    {
+      "claim_ids": [
+        "C-STR-37"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Quellen gelesen. Nicht blockierend: Datum 09.10.2026 der Maritime-Executive-Quelle stammt aus Metadaten, Seitenkopf nennt 15.10.2026."
     },
     {
       "claim_ids": [
@@ -126,64 +80,7 @@
       ],
       "depth": "A",
       "status": "geprüft",
-      "note": "Teilbeiträge Anteilsbesitzliste (51 % indirekt) und PM 04.11.2025 (Betreiber, 300 Mio. EUR, JV-Partner EPSO-G) geprüft; \"staatlich\" entfernt, Knoten epsog \"EPSO-G (Litauen)\". Nicht blockierend: Das Statement führt \"die litauische EPSO-G\" als \"laut Rheinmetall\", die PM nennt die Herkunft nicht; \"litauische\" aus der Rheinmetall-Zuschreibung lösen."
-    },
-    {
-      "claim_ids": [
-        "P-N50"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "PM 20.04.2026 gelesen; Unsicherheit zum JV-Datum (März 2026 vs. \"last year\") jetzt ergänzt (Verweis C-STR-13). Konflikt bleibt offen und ist ausgewiesen."
-    },
-    {
-      "claim_ids": [
-        "C-STR-13"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "Halbjahresbericht S. 9, Naval News und PM 20.04.2026 als Teilbeiträge A geprüft; Datumskonflikt ungelöst, in Unsicherheit dokumentiert."
-    },
-    {
-      "claim_ids": [
-        "M-RHM-03"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "PM Spatenstich 12.02.2024 gelesen; Verweis auf überholte Kapazität (350.000, P-W10) und depends_on ergänzt; als Ankündigung 2024 korrekt datiert."
-    },
-    {
-      "claim_ids": [
-        "M-NAM-08"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "Teilbeiträge Jahresbericht-Meldung 2025, Standortseite Raufoss und Nammo-Seite (Fertigung in neun Ländern, zwei Vertriebsbüros) A geprüft; O-nammo-industrial nun gedeckt."
-    },
-    {
-      "claim_ids": [
-        "T-20",
-        "T-E29"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "Finanzkalender (Q3 05.11.2026; CMD 25.-27.11., Blohm+Voss) und CMD-Seite (26.-27.11.) als Teilbeiträge geprüft; Ortsangabe jetzt dem Finanzkalender zugeschrieben, Datumsabweichung ausgewiesen."
-    },
-    {
-      "claim_ids": [
-        "C-STR-14"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "GB 2025 S. 265 (27.02.2026, 100 %, vorläufiger Kaufpreis 1.515 Mio. EUR gezahlt; Kaufpreisbandbreite 1.515-1.650), Halbjahresbericht, PM 02.03.2026 (Übergang 01.03., Preis vertraulich) und defence-network als Teilbeiträge A geprüft; Datums-/Preisabweichung ausgewiesen."
-    },
-    {
-      "claim_ids": [
-        "C-STR-03"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "GB S. 265 und Halbjahresbericht S. 8 als Teilbeiträge geprüft; trennt 01.01.2026 und März 2026 korrekt."
+      "note": "Teilbeiträge geprüft. Nicht blockierend: \"die litauische EPSO-G\" nicht der Rheinmetall-Zuschreibung zuordnen."
     },
     {
       "claim_ids": [
@@ -191,38 +88,7 @@
       ],
       "depth": "A",
       "status": "geprüft",
-      "note": "GB 2025 S. 263 gelesen; GS/MS/BoA/UBS wörtlich. BlackRock 5,09 % (03.03.2022) und FMR stehen in derselben Tabelle, sind aber durch neuere Meldungen in C-CAP-02/-03 abgedeckt; kein Vollständigkeitsanspruch im Claim. Nicht blockierend: als Auszug kennzeichnen (BlackRock/FMR siehe C-CAP-02/-03)."
-    },
-    {
-      "claim_ids": [
-        "M-KND-03"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "EDR- und ESuT-Teilbeiträge A geprüft; gemeinsam tragen sie das Statement (ESuT \"ein Vertrag\"/\"Junghans Defence\" ist Medienabweichung, EDR maßgeblich)."
-    },
-    {
-      "claim_ids": [
-        "P-V12"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "dpa-AFX/Capital und Defence Blog als Teilbeiträge geprüft; Rheinmetall-Aussage nur über dpa-AFX, als Medienbericht gekennzeichnet."
-    },
-    {
-      "claim_ids": [
-        "P-R30",
-        "P-V50",
-        "P-V72",
-        "P-R150",
-        "C-MKT-06",
-        "P-A14",
-        "P-A10",
-        "H-02"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "Teilbeiträge der zugeordneten Quellen jeweils A geprüft; gemeinsam tragen sie die Statements; Herstellerangaben und Begriffs-/Zeitgrenzen sind in den Claims gekennzeichnet."
+      "note": "GB S. 263 gelesen; Claim erhebt keinen Vollständigkeitsanspruch (BlackRock/FMR durch C-CAP-02/-03 abgedeckt). Nicht blockierend: als Auszug kennzeichnen."
     },
     {
       "claim_ids": [
@@ -230,24 +96,23 @@
       ],
       "depth": "A",
       "status": "geprüft",
-      "note": "PM 27.04.2026 wörtlich belegt (bis 3,1 Mrd. brutto); Quellkonflikt in C-MKT-03 jetzt ausgewiesen. Nicht blockierend: Querverweis auf C-MKT-03 in der Unsicherheit."
+      "note": "PM wörtlich belegt; Quellkonflikt in C-MKT-03 ausgewiesen. Nicht blockierend: Querverweis ergänzen."
     },
     {
       "claim_ids": [
-        "P-V10"
+        "H-M01"
       ],
       "depth": "A",
       "status": "geprüft",
-      "note": "PM 20.10.2025 wörtlich belegt (4,7 Mrd. brutto, Anteil knapp 3,4 Mrd.); Konflikt in C-MKT-02 ausgewiesen."
+      "note": "Bezahlschranke: nur Teaser geprüft/freigegeben; Aussagen auf Teaserumfang begrenzt."
     },
     {
       "claim_ids": [
-        "H-M01",
         "H-M08"
       ],
       "depth": "A",
       "status": "geprüft",
-      "note": "Handelsblatt-Seiten: Bezahlschranke, nur Anreißer/Bildunterschrift/Eingangsfrage; Aussagen auf Teaser begrenzt, Medienzeilen pm-01/pm-08 kennzeichnen die Grenze."
+      "note": "Bezahlschranke: nur Teaser geprüft/freigegeben; Aussagen auf Teaserumfang begrenzt."
     },
     {
       "claim_ids": [
@@ -255,7 +120,7 @@
       ],
       "depth": "A",
       "status": "geprüft",
-      "note": "GBP: nur Teaser; Freigabe nur im Teaserumfang (Unsicherheit im Claim, Beobachtung \"teilweise\")."
+      "note": "Bezahlschranke: nur Teaser geprüft/freigegeben (Unsicherheit im Claim)."
     },
     {
       "claim_ids": [
@@ -263,50 +128,30 @@
       ],
       "depth": "A",
       "status": "geprüft",
-      "note": "Konzernanhang Ziffer (36), Governance S. 171 und Halbjahresbericht Ziffer 12 als Teilbeiträge geprüft. Personenbezug: Related-Party-Offenlegung des Unternehmens mit direktem Geschäftsbezug, beruflich/geschäftlich zulässig, keine privaten Personendaten; Darstellung nur als \"nahestehendes Unternehmen laut Konzernanhang\" mit den Rheinmetall-Aussagen (marktüblich, Aufsichtsrat genehmigt), ohne Wertung; Kanten E07-E09 gedeckt."
-    },
-    {
-      "claim_ids": [
-        "P-N02"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "PM 02.03.2026: Übergang 01.03.; Datumsabweichung 27.02./01.03. in Unsicherheit."
-    },
-    {
-      "claim_ids": [
-        "P-R90"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "PM 04.11.2025 gelesen; \"as early as 2026\". Nicht blockierend: \"ab 2026\" als \"frühestens 2026\" formulieren; M-RHM-07 Verzögerung."
-    },
-    {
-      "claim_ids": [
-        "P-N10",
-        "T-E09",
-        "T-E13"
-      ],
-      "depth": "A",
-      "status": "geprüft",
-      "note": "Quellen gelesen. Nicht blockierend: P-N10 \"Rheinmetall taufte\" verkürzt (Taufpatin), T-E09 Datum = Artikeldatum, T-E13 Label zeigt Abwicklungsdatum 28.05. (Platzierung 21.05.)."
+      "note": "Teilbeiträge GB Ziffer (36)/S. 171 und Halbjahresbericht Ziffer 12 geprüft. Related-Party-Offenlegung des Unternehmens mit Geschäftsbezug, beruflich zulässig, keine privaten Personendaten; Darstellung nur als nahestehendes Unternehmen mit Rheinmetall-Aussagen, ohne Wertung."
     },
     {
       "claim_ids": [
         "C-CAP-01",
         "C-CAP-02",
         "C-CAP-03",
+        "C-MKT-01",
+        "C-MKT-02",
+        "C-MKT-03",
         "C-MKT-04",
         "C-MKT-05",
+        "C-MKT-06",
         "C-MKT-07",
         "C-MKT-08",
         "C-MKT-09",
         "C-MKT-10",
         "C-MKT-11",
+        "C-MKT-12",
         "C-MKT-13",
         "C-MKT-15",
         "C-STR-01",
         "C-STR-02",
+        "C-STR-03",
         "C-STR-04",
         "C-STR-05",
         "C-STR-06",
@@ -316,10 +161,14 @@
         "C-STR-10",
         "C-STR-11",
         "C-STR-12",
+        "C-STR-13",
+        "C-STR-14",
+        "C-STR-15",
         "C-STR-16",
         "C-STR-17",
         "C-STR-18",
         "C-STR-19",
+        "C-STR-20",
         "C-STR-22",
         "C-STR-23",
         "C-STR-24",
@@ -327,14 +176,16 @@
         "C-STR-26",
         "C-STR-27",
         "C-STR-28",
+        "C-STR-29",
         "C-STR-30",
+        "C-STR-33",
         "C-STR-34",
         "C-STR-35",
         "C-STR-36",
-        "C-STR-37",
         "C-STR-38",
         "C-TEC-01",
         "C-TEC-02",
+        "C-TEC-03",
         "C-TEC-04",
         "C-TEC-05",
         "C-TEC-06",
@@ -342,6 +193,7 @@
         "C-TEC-08",
         "C-TEC-09",
         "H-01",
+        "H-02",
         "H-03",
         "H-04",
         "H-05",
@@ -375,6 +227,7 @@
         "M-HAN-05",
         "M-HAN-07",
         "M-KND-02",
+        "M-KND-03",
         "M-KND-04",
         "M-KND-05",
         "M-KND-06",
@@ -385,7 +238,6 @@
         "M-MKT-02",
         "M-MKT-03",
         "M-MKT-04",
-        "M-MKT-05",
         "M-MKT-06",
         "M-MKT-07",
         "M-NAM-01",
@@ -395,16 +247,21 @@
         "M-NAM-05",
         "M-NAM-06",
         "M-NAM-07",
+        "M-NAM-08",
         "M-RHM-01",
         "M-RHM-02",
+        "M-RHM-03",
+        "M-RHM-04",
         "M-RHM-05",
         "M-RHM-06",
         "M-RHM-07",
         "P-A01",
         "P-A02",
+        "P-A10",
         "P-A11",
         "P-A12",
         "P-A13",
+        "P-A14",
         "P-A30",
         "P-A40",
         "P-A50",
@@ -418,16 +275,20 @@
         "P-D13",
         "P-D14",
         "P-D20",
+        "P-D30",
         "P-D31",
         "P-D40",
         "P-D50",
         "P-D60",
         "P-N01",
+        "P-N02",
         "P-N03",
+        "P-N10",
         "P-N20",
         "P-N30",
         "P-N31",
         "P-N40",
+        "P-N50",
         "P-N60",
         "P-N61",
         "P-R01",
@@ -438,23 +299,29 @@
         "P-R120",
         "P-R130",
         "P-R140",
+        "P-R150",
         "P-R160",
         "P-R20",
+        "P-R30",
         "P-R40",
         "P-R50",
-        "P-R61",
         "P-R70",
         "P-R72",
+        "P-R80",
+        "P-R90",
         "P-R95",
         "P-R96",
         "P-R97",
         "P-R98",
+        "P-S01",
         "P-S02",
         "P-S04",
         "P-S05",
         "P-V01",
         "P-V02",
+        "P-V10",
         "P-V11",
+        "P-V12",
         "P-V13",
         "P-V14",
         "P-V15",
@@ -463,16 +330,20 @@
         "P-V20",
         "P-V21",
         "P-V30",
+        "P-V31",
         "P-V32",
         "P-V33",
         "P-V34",
         "P-V35",
         "P-V40",
         "P-V41",
+        "P-V50",
         "P-V51",
         "P-V52",
         "P-V60",
         "P-V70",
+        "P-V71",
+        "P-V72",
         "P-W01",
         "P-W02",
         "P-W10",
@@ -492,6 +363,7 @@
         "T-01",
         "T-02",
         "T-03",
+        "T-04",
         "T-05",
         "T-06",
         "T-07",
@@ -507,6 +379,7 @@
         "T-17",
         "T-18",
         "T-19",
+        "T-20",
         "T-21",
         "T-E01",
         "T-E02",
@@ -514,37 +387,46 @@
         "T-E04",
         "T-E05",
         "T-E06",
+        "T-E07",
         "T-E08",
+        "T-E09",
         "T-E10",
         "T-E11",
         "T-E12",
+        "T-E13",
         "T-E14",
+        "T-E15",
         "T-E16",
         "T-E17",
+        "T-E18",
+        "T-E19",
         "T-E20",
         "T-E21",
         "T-E22",
         "T-E23",
+        "T-E24",
         "T-E25",
         "T-E26",
         "T-E27",
         "T-E28",
+        "T-E29",
         "T-E30"
       ],
       "depth": "A",
       "status": "geprüft",
-      "note": "Aussage, Zeitbezug, Aussageursprung und Status gegen die zugeordneten Originalquellen durch den Dokumentjob geprüft (Originalbelegstelle gelesen, kein Quellenproblem gemeldet); Leitprüfung: alle Quellenbefunde des Claims vorhanden und geprüft, Teilbeiträge tragen das Statement gemeinsam, keine Überdehnung oder unaufgelöster Quellkonflikt erkannt, Hersteller-/Medienangaben und Planwerte bleiben gekennzeichnet, Zuordnung in module_views geprüft."
+      "note": "Aussage, Zeitbezug, Aussageursprung und Status gegen alle zugeordneten Originalquellen durch Dokumentjobs geprüft (Originalbelegstelle gelesen, kein Quellenproblem); Leitprüfung: Quellenbefunde vollständig, Teilbeiträge tragen das Statement gemeinsam, Runde-1/2-Korrekturen (soweit betroffen) sachgerecht umgesetzt, Quellkonflikte (IdZ-ES, Schakal, Puma-Anteil, VMZ, Kraken, NVL-Datum, CMD) im Claim ausgewiesen, Hersteller-/Medienangaben und Planwerte gekennzeichnet, Zuordnung in module_views geprüft."
     },
     {
       "claim_ids": [
         "C-CAP-05",
         "C-MKT-14",
         "C-STR-32",
+        "M-MKT-05",
         "P-S03"
       ],
       "depth": "B",
       "status": "geprüft",
-      "note": "Aussage, Zeitbezug, Aussageursprung und Status gegen die zugeordneten Originalquellen durch den Dokumentjob geprüft (Originalbelegstelle gelesen, kein Quellenproblem gemeldet); Leitprüfung: alle Quellenbefunde des Claims vorhanden und geprüft, Teilbeiträge tragen das Statement gemeinsam, keine Überdehnung oder unaufgelöster Quellkonflikt erkannt, Hersteller-/Medienangaben und Planwerte bleiben gekennzeichnet, Zuordnung in module_views geprüft."
+      "note": "Aussage, Zeitbezug, Aussageursprung und Status gegen alle zugeordneten Originalquellen durch Dokumentjobs geprüft (Originalbelegstelle gelesen, kein Quellenproblem); Leitprüfung: Quellenbefunde vollständig, Teilbeiträge tragen das Statement gemeinsam, Runde-1/2-Korrekturen (soweit betroffen) sachgerecht umgesetzt, Quellkonflikte (IdZ-ES, Schakal, Puma-Anteil, VMZ, Kraken, NVL-Datum, CMD) im Claim ausgewiesen, Hersteller-/Medienangaben und Planwerte gekennzeichnet, Zuordnung in module_views geprüft."
     }
   ],
   "source_checks": [
@@ -554,7 +436,7 @@
         "P-A01",
         "P-R30"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: P-A01, P-R30 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-042b26990fdc2a9d",
@@ -571,7 +453,7 @@
       "claim_ids": [
         "T-E09"
       ],
-      "note": "Militarnyi-Artikel 29.03.2026 Z. 36-46 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-04cc080af88f833d",
@@ -590,28 +472,28 @@
         "P-R01",
         "P-S02"
       ],
-      "note": "Rheinmetall-Seite Our divisions at a glance (undatiert) Z. 8-27 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-052e7d1e29545a63",
       "claim_ids": [
         "M-NAM-07"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 4c6e4ac9d02b..."
     },
     {
       "source_id": "S-05d2ba4a7ea0433c",
       "claim_ids": [
         "M-MKT-04"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 75ed5e114ced..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-0720809d463a2525",
       "claim_ids": [
         "M-RHM-05"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 0d61eb6409cf..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-078c6e124a0a035b",
@@ -632,7 +514,7 @@
       "claim_ids": [
         "M-NAM-02"
       ],
-      "note": "Nammo-Datenblatt 155 mm IM HE-ER (Z. 26-44) gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 8d43cfa90050..."
     },
     {
       "source_id": "S-0b6a8c7f7a47ed28",
@@ -640,7 +522,7 @@
         "H-09",
         "T-E02"
       ],
-      "note": "Pressemitteilung 15.09.2025 (NVL-Eckpunkte) Z. 9-28 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 8fdb7b926db3..."
     },
     {
       "source_id": "S-0bd71507c5c59e04",
@@ -667,7 +549,7 @@
       "claim_ids": [
         "M-MKT-06"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 92c30dcc054e..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-110cc749cec119a4",
@@ -675,21 +557,21 @@
         "P-V20",
         "T-E05"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: P-V20, T-E05 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-11207e9f835a9f20",
       "claim_ids": [
         "M-HAN-06"
       ],
-      "note": "GBP Aerospace & Defence (Login/Bezahlschranke): nur Überschrift und Teaser-Absatz im gespeicherten Original gelesen; Volltext nicht zugänglich und nicht geprüft. Snapshot http-original, content_sha256 89300d2df823..."
+      "note": "GBP (Login/Bezahlschranke): nur Überschrift und Teaser gelesen; Volltext nicht zugänglich. Snapshot http-original, content_sha256 89300d2df823..."
     },
     {
       "source_id": "S-11a2bf8c21d08244",
       "claim_ids": [
         "M-BAE-04"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 bb0ca5b73c3d..."
     },
     {
       "source_id": "S-126b43514d72258d",
@@ -710,7 +592,7 @@
       "claim_ids": [
         "P-W10"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 63c1418d8884..."
+      "note": "Pressemitteilung 05.09.2025 Z. 9-35 (Key Facts, Absätze 1-8, Standortbox) gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-1a21add65a752dbe",
@@ -724,14 +606,14 @@
       "claim_ids": [
         "P-D10"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: P-D10 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-1a558a92449e8e86",
       "claim_ids": [
         "P-A50"
       ],
-      "note": "Pressemitteilung AERIE (07.10.2026) Z. 10-29 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-1db9c54bc6663d61",
@@ -752,14 +634,14 @@
       "claim_ids": [
         "H-M01"
       ],
-      "note": "Handelsblatt-Interview 22.09.2026: nur frei lesbarer Teil (Anreißer, Bildunterschrift, Eingangsfrage, Z. 9-14) gelesen; Bezahlinhalt nicht zugänglich. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Handelsblatt (Bezahlinhalt): nur frei lesbarer Kopf/Anreißer/Eingangsfrage gelesen; Rest hinter Bezahlschranke nicht geprüft. Snapshot http-original, content_sha256 1d9d70fd0696..."
     },
     {
       "source_id": "S-1eae2dae5ac99788",
       "claim_ids": [
         "M-GDO-06"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 07f385e76e80..."
     },
     {
       "source_id": "S-1f76748059d5008c",
@@ -773,7 +655,7 @@
       "claim_ids": [
         "T-19"
       ],
-      "note": "Investor-Presentation (PDF, Folientext im Layout-Extrakt): Folien 5, 10, 22, 29, 38 gelesen; Zahlenzuordnung zu Jahren folgt aus der Folienstruktur. Snapshot http-original, content_sha256 24eb1efde161..."
+      "note": "Investorenpräsentation September 2026 (PDF), Folien 5, 10, 22, 29, 38"
     },
     {
       "source_id": "S-1fcfbe98a40fffd8",
@@ -788,7 +670,7 @@
       "claim_ids": [
         "C-TEC-03"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 617b004d6d44..."
+      "note": "PDF-Pressemitteilung Rheinmetall/Anduril 18.06.2025 Z. 1-40 gelesen; Web-Fassung S-5366... parallel eingesehen (identischer Inhalt). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-202cf065062fc9bb",
@@ -803,7 +685,7 @@
         "M-BAE-01",
         "M-BAE-02"
       ],
-      "note": "Herstellerbroschüre (PDF, lokales Original). Text der PDF-Seiten 2-5 gelesen, Datentabellen auf PDF-Seite 3 zusätzlich als gerendertes Bild gegengeprüft. Snapshot local-original, content_sha256 623ac3e5c6a5..."
+      "note": "Herstellerbroschüre (PDF): Text der Seiten 2-5 gelesen, Datentabellen Seite 3 zusätzlich als Bild gegengeprüft. Snapshot local-original, content_sha256 623ac3e5c6a5..."
     },
     {
       "source_id": "S-22b4e8c338d5fc31",
@@ -811,14 +693,14 @@
         "M-BAE-05",
         "M-RHM-07"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Calibre-Defence-Artikel 04.08.2026 Z. 35-52 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-250325098e8c729a",
       "claim_ids": [
         "H-M09"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 417dc8990a85..."
     },
     {
       "source_id": "S-2572b016501230b4",
@@ -832,28 +714,28 @@
       "claim_ids": [
         "M-HAN-02"
       ],
-      "note": "Korea-JoongAng-Daily-Artikel Z. 124-140 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 f3eaec906ef3..."
     },
     {
       "source_id": "S-265b6ce2d616b964",
       "claim_ids": [
         "C-STR-06"
       ],
-      "note": "UKDJ-Artikel 22.01.2019 Z. 60-76 gelesen (Kommentare nicht verwendet). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-2706942fb5928fec",
       "claim_ids": [
         "M-BAE-06"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 2257cec586c7..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-2706c2d0310324c4",
       "claim_ids": [
         "C-STR-37"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 5aa095448f52..."
     },
     {
       "source_id": "S-2851734a3f197c02",
@@ -874,9 +756,10 @@
     {
       "source_id": "S-2a19a44bae9c9218",
       "claim_ids": [
+        "M-KND-01",
         "M-KND-02"
       ],
-      "note": "KNDS-Munitionskatalog 2026-2027 (PDF): Titelseiten, 155-mm-Produktseiten BONUS MKII, KATANA, LU 220, LU 211, L15, LU 215-217, LU 107, IM170 und Modular Charges gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "KNDS Ammunition Catalogue 2026-2027 (PDF, Cache-Text): Seiten 2 und 7-19 (155 mm Artillery) gelesen; übrige Katalogseiten nicht geprüft. Snapshot http-original, content_sha256 1d0f80f9ae2c..."
     },
     {
       "source_id": "S-2a52354ff7d7f7f4",
@@ -904,7 +787,7 @@
       "claim_ids": [
         "M-KND-04"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "ESD-Artikel 01.09.2025 Z. 95-110 gelesen (Absätze zu KNDS-Angebot, LU211). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-2e979d6255b023ee",
@@ -918,21 +801,21 @@
       "claim_ids": [
         "C-STR-33"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 2c44a0f7a65e..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-314418b5ddde95dc",
       "claim_ids": [
         "P-V21"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 4db5e8330071..."
     },
     {
       "source_id": "S-358fde57439e652d",
       "claim_ids": [
         "C-STR-16"
       ],
-      "note": "ESD-Artikel 05.06.2026 Z. 101-116 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 1cfc10d7148e..."
     },
     {
       "source_id": "S-35e0db80122396e5",
@@ -946,28 +829,28 @@
       "claim_ids": [
         "P-R96"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 da73bde61dd3..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-3828eee11ecc6273",
       "claim_ids": [
         "M-KND-03"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: M-KND-03 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-3ab860d4e2d076b2",
       "claim_ids": [
         "T-E01"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: T-E01 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-3b27cf3712ca73d2",
       "claim_ids": [
         "P-A14"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: P-A14 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-3b33c5118cdc79d2",
@@ -984,7 +867,7 @@
         "C-STR-21",
         "P-R90"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 fdfdd501a0d7..."
     },
     {
       "source_id": "S-3c816a672098cdd2",
@@ -998,7 +881,7 @@
       "claim_ids": [
         "P-N20"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Pressemitteilung 14.09.2026 Z. 9-23 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-3dad8b811c925694",
@@ -1030,7 +913,7 @@
       "claim_ids": [
         "P-W12"
       ],
-      "note": "Rheinmetall-Story Ukraine (23.09.2026) Z. 27-31 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-3ffdec73e87f03c2",
@@ -1045,28 +928,28 @@
       "claim_ids": [
         "T-E11"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 b19facb72424..."
     },
     {
       "source_id": "S-46b937ed4712bcf6",
       "claim_ids": [
         "P-A10"
       ],
-      "note": "Pressemitteilung Niederlande Skyranger 30 (12.12.2025) Z. 7-19 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 df754d05e218..."
     },
     {
       "source_id": "S-486bb87d545a7e5d",
       "claim_ids": [
         "M-GDO-02"
       ],
-      "note": "GD-OTS-Broschüre ERA-HE (PDF) Z. 3-94 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-495b6b686aece696",
       "claim_ids": [
         "P-R100"
       ],
-      "note": "American-Rheinmetall-Seite (undatiert): Kontaktangaben, About us, Strategic U.S. Growth gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 b8a147c27ce3..."
     },
     {
       "source_id": "S-4990a0c7872510f8",
@@ -1096,28 +979,28 @@
       "claim_ids": [
         "C-STR-13"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 222a27043c1f..."
     },
     {
       "source_id": "S-4f9807383dbfe574",
       "claim_ids": [
         "P-R110"
       ],
-      "note": "Rheinmetall-Canada-Seite (DE) Z. 12-18 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 19edc4ae0263..."
     },
     {
       "source_id": "S-5366eb8816ff2cea",
       "claim_ids": [
         "P-D14"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 b22e2acf0c99..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-544652c53afaff87",
       "claim_ids": [
         "M-RHM-02"
       ],
-      "note": "Pressemitteilung 27.11.2019 Z. 15-20 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-553789c22ec26699",
@@ -1125,14 +1008,14 @@
         "P-W21",
         "T-E06"
       ],
-      "note": "Pressemitteilung Puma-Munition (05.01.2026) Z. 16-21 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-5590349d6f29de4e",
       "claim_ids": [
         "M-GDO-05"
       ],
-      "note": "Task-&-Purpose-Artikel 14.07.2026 Z. 45-75 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 c0ad780b9ac7..."
     },
     {
       "source_id": "S-559e0ac19cabd1d0",
@@ -1155,14 +1038,14 @@
       "claim_ids": [
         "T-E13"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 06e96c9385f5..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-57b3617f24a7d47b",
       "claim_ids": [
         "P-N01"
       ],
-      "note": "Divisionsseite Naval Systems Z. 9-13 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 23f58991e4af..."
     },
     {
       "source_id": "S-5b640196f4e87dad",
@@ -1191,7 +1074,7 @@
       "claim_ids": [
         "M-HAN-03"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 750733f0afee..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-5f102cfea2da2738",
@@ -1222,7 +1105,7 @@
       "claim_ids": [
         "P-R40"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 8444256be03e..."
+      "note": "Zugewiesenes Original gelesen: P-R40 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-64b8fa1a98bafd6e",
@@ -1246,7 +1129,7 @@
       "claim_ids": [
         "M-GDO-02"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 b7a943273c78..."
+      "note": "Zugewiesenes Original gelesen: M-GDO-02 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-6724ed6c8698ea5b",
@@ -1279,28 +1162,28 @@
       "claim_ids": [
         "M-HAN-01"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 76c13b346b64..."
     },
     {
       "source_id": "S-6bdb338d23c29e11",
       "claim_ids": [
         "P-A12"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: P-A12 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-6c35892360c66d5a",
       "claim_ids": [
         "M-BAE-03"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Defense-News-Artikel 11.07.2023 Z. 50-72 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-6c84242ff77b4c1c",
       "claim_ids": [
         "M-KND-08"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 bf6bb7af0630..."
+      "note": "EDR-Artikel 04.11.2025 Z. 41-46 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-6d2c1c75db9e7ad4",
@@ -1316,21 +1199,21 @@
       "claim_ids": [
         "M-NAM-01"
       ],
-      "note": "Nammo-Seite 155 mm-series Z. 27-38 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 b0899eb70099..."
     },
     {
       "source_id": "S-6e6c0340ee9c8a72",
       "claim_ids": [
         "P-W33"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 935b5fab413d..."
     },
     {
       "source_id": "S-700febb47c6229bf",
       "claim_ids": [
         "P-D60"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 d2adf82135a2..."
+      "note": "Zugewiesenes Original gelesen: P-D60 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-71883fd06cc70f3c",
@@ -1367,7 +1250,7 @@
       "claim_ids": [
         "C-STR-05"
       ],
-      "note": "TRATON-Geschäftsbericht 2025 (Kopie im Cache) gelesen, Konzernanhang PDF-S. 192"
+      "note": "TRATON-Geschäftsbericht 2025 (Kopie im Lobbyregister, Cache-Text): Konzernanhang PDF-S. 192 gelesen; übrige Teile nicht geprüft. Snapshot http-original, content_sha256 496284ea9847..."
     },
     {
       "source_id": "S-73cf7c9497cad059",
@@ -1381,7 +1264,7 @@
       "claim_ids": [
         "T-E18"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 21ba33ff8836..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-75731f2457a30bcf",
@@ -1403,49 +1286,49 @@
       "claim_ids": [
         "T-E15"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: T-E15 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-7f0bea0216cf289e",
       "claim_ids": [
         "P-R150"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 7f07f6577f04..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-7f6de13c77cb340f",
       "claim_ids": [
         "T-E23"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 e32e32f6337a..."
+      "note": "Zugewiesenes Original gelesen: T-E23 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-818ac8c5a1a773b5",
       "claim_ids": [
         "P-N40"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Pressemitteilung 23.09.2026 Z. 9-23 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-81a27e8c4bbffb44",
       "claim_ids": [
         "P-V71"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 81fa09a4ae6c..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-823a7eb256c6141a",
       "claim_ids": [
         "C-TEC-07"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: C-TEC-07 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-84620b98214b90e5",
       "claim_ids": [
         "M-MKT-02"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 4a2a0040fc60..."
     },
     {
       "source_id": "S-8570241741649c2a",
@@ -1460,14 +1343,14 @@
       "claim_ids": [
         "C-MKT-08"
       ],
-      "note": "GOV.UK-Meldung 07.05.2021 Z. 57-64 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-86b532adf4a3d541",
       "claim_ids": [
         "C-STR-15"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: C-STR-15 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-89bc6e8457e5ef24",
@@ -1481,21 +1364,21 @@
       "claim_ids": [
         "M-GDO-01"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 1d0099044389..."
     },
     {
       "source_id": "S-8b46f20a7a35fb19",
       "claim_ids": [
         "M-NAM-08"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: M-NAM-08 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-8d249b1db35129b2",
       "claim_ids": [
         "C-TEC-02"
       ],
-      "note": "ESD-Artikel 05.07.2023 Z. 94-108 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-8f1fd53628424ca7",
@@ -1510,7 +1393,7 @@
       "claim_ids": [
         "T-E14"
       ],
-      "note": "Pressemitteilung 28.05.2026 Z. 9-21 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-91be1f9c04508de5",
@@ -1527,7 +1410,7 @@
         "P-A40",
         "P-R30"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: P-A40, P-R30 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-943f5a439ab01032",
@@ -1559,21 +1442,21 @@
         "T-01",
         "T-03"
       ],
-      "note": "Rheinmetall-Startseite: sichtbarer Text vollständig gelesen; da Kennzahlen als animierte Zähler verzerrt sind (z. B. 7122535), eingebetteten Seitendatensatz im Original-HTML (source.bin) gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
+      "note": "Rheinmetall-Startseite gelesen; Kennzahlenleiste zusätzlich im Original-HTML (source.bin, eingebetteter Datensatz) geprüft."
     },
     {
       "source_id": "S-9ae1f8e16f1f1d76",
       "claim_ids": [
         "M-RHM-06"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: M-RHM-06 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-9dbd280720401c1f",
       "claim_ids": [
         "M-KND-05"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Bankier.pl/PAP-Meldung 18.06.2026 Z. 177-187 vollständig gelesen (Polnisch). Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-a0a52d4597ffc995",
@@ -1581,7 +1464,7 @@
         "P-R98",
         "P-V72"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 4f98929c0e1f..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-a103a3f44e96a221",
@@ -1595,7 +1478,7 @@
       "claim_ids": [
         "T-E10"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 70badfa2231c..."
     },
     {
       "source_id": "S-a412156de9747510",
@@ -1609,21 +1492,21 @@
       "claim_ids": [
         "M-MKT-01"
       ],
-      "note": "EU-Kommission ASAP-Seite Z. 88-108 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-a54a5988eef2046e",
       "claim_ids": [
         "M-NAM-03"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 59274400d422..."
     },
     {
       "source_id": "S-a5a55ae4e279062f",
       "claim_ids": [
         "M-KND-04"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 fae6ad97ac99..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-a6309db699669326",
@@ -1631,7 +1514,7 @@
         "T-20",
         "T-E29"
       ],
-      "note": "IR-Seite Capital Markets Days Z. 10-18 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-a6bde625685f0047",
@@ -1683,21 +1566,21 @@
       "claim_ids": [
         "P-V40"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Pressemitteilung 20.01.2026 Z. 9-30 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-aa0e041164bf4895",
       "claim_ids": [
         "P-V52"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 078c081eb69b..."
     },
     {
       "source_id": "S-aa0ff06d95479d16",
       "claim_ids": [
         "M-KND-09"
       ],
-      "note": "Euronews-Meldung 13.08.2026 (DE) Z. 227-270 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-aa782bd6fedfefb7",
@@ -1713,7 +1596,7 @@
         "H-02",
         "H-M02"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Euronews-Interview 17.09.2026 Z. 266-325 vollständig gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-aadcb3da199c3d17",
@@ -1728,7 +1611,7 @@
         "P-R20",
         "P-V60"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 8ff0da4a4569..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-ae3e82623d92513c",
@@ -1736,28 +1619,35 @@
         "C-MKT-12",
         "C-STR-23"
       ],
-      "note": "ADM-Artikel 09.06.2026 Z. 38-70 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 9e3d1212d5ae..."
     },
     {
       "source_id": "S-ae6533fe6378a611",
       "claim_ids": [
         "M-NAM-08"
       ],
-      "note": "Nammo-Meldung 30.04.2026 Z. 24-34 gelesen; Datum aus Metadaten im Original-HTML. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-ae7a06352c503d15",
       "claim_ids": [
         "M-GDO-06"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 19fd860a42f1..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-b003618b3ae9eba2",
       "claim_ids": [
         "P-A14"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 6c6ddd6170cc..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+    },
+    {
+      "source_id": "S-b04118fa6c556f66",
+      "claim_ids": [
+        "P-R51"
+      ],
+      "note": "Zugewiesenes Original gelesen: P-R51 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-b0798e89d3ef051f",
@@ -1773,42 +1663,42 @@
         "C-STR-20",
         "C-STR-30"
       ],
-      "note": "Geschäftsbericht 2024 als PDF-Original mit pdftotext gelesen (PDF-S. 21, 31, 158)"
+      "note": "Geschäftsbericht 2024 als PDF-Original gelesen (PDF-S. 21, 31, 158)"
     },
     {
       "source_id": "S-b51615fe3bffe105",
       "claim_ids": [
         "P-R80"
       ],
-      "note": "Pressemitteilung VMZ (DE, 28.10.2025) Z. 16-22 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-b5266898eb6af45b",
       "claim_ids": [
         "P-V15"
       ],
-      "note": "Pressemitteilung Human Machine Teaming (06.10.2026) Z. 15-28 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 205ceb886324..."
     },
     {
       "source_id": "S-b64e5959eefe9394",
       "claim_ids": [
         "P-R120"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: P-R120 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-ba345071cf3244b4",
       "claim_ids": [
         "M-KND-06"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 30346a862804..."
     },
     {
       "source_id": "S-be6a33c1caf2a631",
       "claim_ids": [
         "T-E25"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 10e625bf4e3f..."
     },
     {
       "source_id": "S-be9afa65076fd992",
@@ -1816,7 +1706,7 @@
         "T-12",
         "T-E12"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 1ee00d8af1b6..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-c0d13e5db6387716",
@@ -1834,11 +1724,18 @@
       "note": "Handelsblatt-Analyse 04.09.2026: nur Anreißer (Z. 10-11) frei lesbar. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
     },
     {
+      "source_id": "S-c36a781afbd14e05",
+      "claim_ids": [
+        "P-R60"
+      ],
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+    },
+    {
       "source_id": "S-c3ea3c18a3447ce4",
       "claim_ids": [
         "M-NAM-07"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 2748ead72849..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-c4cf8d872c93d230",
@@ -1852,14 +1749,14 @@
       "claim_ids": [
         "P-V11"
       ],
-      "note": "Pressemitteilung Schwerer Waffenträger Infanterie (21.03.2024) Z. 17-25 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 1bb01d6a263b..."
     },
     {
       "source_id": "S-c72d2f16b02e496c",
       "claim_ids": [
         "T-11"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: T-11 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-c85fbd35697b1263",
@@ -1873,7 +1770,7 @@
       "claim_ids": [
         "P-R140"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 2f34d27ba44d..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-cb779c0fc1dc604f",
@@ -1881,14 +1778,14 @@
         "P-C03",
         "P-R70"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 7612b4614d2f..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-cba7c69a4b9f251e",
       "claim_ids": [
         "H-M04"
       ],
-      "note": "SCMP/dpa-Meldung 09.08.2026: Titel, Untertitel, Einleitung (Z. 6-13) gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-cd90025f003c456d",
@@ -1896,7 +1793,7 @@
         "P-D50",
         "P-R97"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Unternehmensseite Rheinmetall Nordic Z. 8-100 gelesen; Meldung zur Standorteröffnung 01.10.2026 steht nicht auf dieser Seite. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-cede873d57924937",
@@ -1904,14 +1801,14 @@
         "P-R72",
         "P-V30"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 a15eeaeeefcb..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-cf746dc76f173082",
       "claim_ids": [
         "M-HAN-07"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 9fce58dc7a9c..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-d15683e7fcc1068b",
@@ -1919,6 +1816,13 @@
         "C-MKT-09"
       ],
       "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 59b226349d5d..."
+    },
+    {
+      "source_id": "S-d195b923c24e0507",
+      "claim_ids": [
+        "P-R100"
+      ],
+      "note": "Zugewiesenes Original gelesen: P-R100 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-d32c73540389046f",
@@ -1933,7 +1837,7 @@
       "claim_ids": [
         "P-V13"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 2cbc33d04286..."
     },
     {
       "source_id": "S-d4c67e98e04fa64b",
@@ -1967,7 +1871,7 @@
       "claim_ids": [
         "M-KND-02"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 f359526cc504..."
     },
     {
       "source_id": "S-de8e49377d100ea9",
@@ -1984,7 +1888,7 @@
         "P-R61",
         "P-V32"
       ],
-      "note": "Pressemitteilung erstes ungarisches Lynx (26.07.2024) Z. 16-26 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Pressemitteilung erstes ungarisches Lynx (26.07.2024) Z. 16-26 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original. Runde 3 ergänzt: weitere Abschnitte des gespeicherten Originals gelesen."
     },
     {
       "source_id": "S-dff299ab3ecf3cd9",
@@ -1998,21 +1902,21 @@
       "claim_ids": [
         "C-MKT-07"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 72e1223c5065..."
+      "note": "EDR-Artikel 28.01.2026 Z. 42-47 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-e40dbc076868eb5c",
       "claim_ids": [
         "P-N30"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 ce4741acb789..."
+      "note": "Zugewiesenes Original gelesen: P-N30 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-e48eee025a306fad",
       "claim_ids": [
         "C-STR-29"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "Zugewiesenes Original gelesen: C-STR-29 an den genannten Belegstellen im gespeicherten Original geprüft."
     },
     {
       "source_id": "S-e4c101cb061aafcf",
@@ -2020,21 +1924,21 @@
         "C-CAP-02",
         "C-CAP-03"
       ],
-      "note": "IR-Seite Stimmrechtsmitteilungen: Tabelle 2026 Z. 60-89 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-e8d99b5c0a3aebdf",
       "claim_ids": [
         "M-MKT-05"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 49f895c55690..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-ea5f61dc37c5379a",
       "claim_ids": [
         "M-MKT-03"
       ],
-      "note": "RFE/RL-Recherche 08.07.2024 Z. 98-111 und Z. 141-142 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-ea6a47ff86b90b1c",
@@ -2057,7 +1961,7 @@
       "claim_ids": [
         "M-GDO-03"
       ],
-      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
+      "note": "GD-OTS-Meldung 27.04.2023 Z. 49-50 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
     },
     {
       "source_id": "S-f4730b21412bb02a",
@@ -2103,14 +2007,14 @@
         "C-TEC-06",
         "C-TEC-07"
       ],
-      "note": "Geschäftsbericht 2025 (Original-PDF, 13,9 MB; Cache-Text mit Seitenmarken, ergänzend Original-PDF per pdftotext in Lesereihenfolge und gerenderte Seitenbilder). Eigene Originallektüre der Belegseiten PDF-S. 22, 49-53, 163, 171, 252, 260-261, 263, 265 und der Anteilsbesitzliste PDF-S. 267-271 (Zeile Rheinmetall 4iG Digital Services zusätzlich als Bild; Spalten direkt/indirekt). Kein Volltext-Durchlauf; nicht gelesene Berichtsteile sind nicht geprüft. Alle zugewiesenen Claims einzeln gegen die Belegstelle geprüft (keine Stichprobe). Snapshot http-original, content_sha256 138727c9936e..."
+      "note": "Geschäftsbericht 2025 (Original-PDF, 13,9 MB; Cache-Text mit Seitenmarken, ergänzend Original-PDF per pdftotext in Lesereihenfolge und gerenderte Seitenbilder). Eigene Originallektüre der Belegseiten PDF-S. 22, 49-53, 163, 171, 252, 260-261, 263, 265 und der Anteilsbesitzliste PDF-S. 267-271. Kein Volltext-Durchlauf; nicht gelesene Berichtsteile sind nicht geprüft. Alle zugewiesenen Claims einzeln gegen die Belegstelle geprüft. Snapshot http-original, content_sha256 138727c9936e..."
     },
     {
       "source_id": "S-f550c79e68fc9c76",
       "claim_ids": [
         "M-NAM-04"
       ],
-      "note": "Militarnyi-Artikel 04.12.2024 Z. 39-48 gelesen. Vollständige Originale sind im Dokumentcache erreichbar; Prüfung gegen gespeichertes Original (Text bzw. bei S-98082c5c6a5443c4 zusätzlich Original-HTML)."
+      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 f091391af06a..."
     },
     {
       "source_id": "S-f55f74045ea5d4f3",
@@ -2125,14 +2029,14 @@
       "claim_ids": [
         "C-TEC-07"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 957b3782f9ab..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-f67a3aa803cc0e9f",
       "claim_ids": [
         "T-17"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 913908bad120..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     },
     {
       "source_id": "S-fa3be73251a7e9c6",
@@ -2141,16 +2045,16 @@
         "T-E21",
         "T-E30"
       ],
-      "note": "Gespeichertes Original-Snapshot (http-original) per source-cache read im Textteil gelesen; Belegstellen je Befund; Seitentext als Daten, keine Anweisungen. Snapshot http-original, content_sha256 89a50cd8fb90..."
+      "note": "Gespeichertes Original (document-cache, http-original) per source-cache.py read gelesen; zugeordnete Passagen gegen die Claims geprüft; Navigations-/Cookie-/Werbeteile ignoriert."
     }
   ],
   "parallel_review": {
-    "plan_fingerprint": "bef6420ecfb310b0ac6a90e181647adeb7db203c8224827674253cdf2d92163f",
-    "source_collection_fingerprint": "1624f4cae96c6cf75dcad8a325da0ce002139ffe8928e4cc371a31dcb6a004fd",
+    "plan_fingerprint": "da10258b7ec6256e20eb86c78d3bdc96f05f736f1741533f5204a4fcc8f347e0",
+    "source_collection_fingerprint": "04779e4a0d7c98e567157de197d57e126b3b92d1ed7950fd6edfe208ca9747df",
     "part_fingerprints": {
-      "sources-1": "7f023eaee6d5d5c3316e42da51d00774400595e588d847d3ec62ddba86105284",
-      "sources-2": "d3ab04bb15f793d481014b93d681bf61c73455234a32758d5af084c4ab6a86be",
-      "sources-3": "a934e9fcbf773d1107106250359d8524ec79821a267672c79a82bb51032aa343"
+      "sources-1": "22254134447c8f9098093b12062ae68f0b5d26bd5bf3e5c0882e755b5dfba984",
+      "sources-2": "2213667f306ba4f104b5432792b6007d6733f4fed3c1a0570a3c9eee73920270",
+      "sources-3": "2a14c69ce6ea10da39df67a70f4f4a442f6cd3ea3566eaf26112d16ee8506331"
     },
     "model_policy": {
       "source-document-reviewer": {
