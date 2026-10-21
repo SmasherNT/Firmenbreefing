@@ -1,0 +1,982 @@
+{
+ "schema_version": 1,
+ "format": "review-source-part-v1",
+ "run_id": "2026-10-20-vincorion",
+ "company": "VINCORION",
+ "as_of": "2026-10-20",
+ "phase": "basis",
+ "job_id": "sources-3",
+ "review_work_fingerprint": "8fd04f4db8e2b495178d39784983414f3a9a53feb1c6126a0356211fa8c76fb4",
+ "plan_fingerprint": "85096d205200d13dc7646a2c5d354634acd5c6607e1db2288eea91ec560b3bed",
+ "documents": [
+  {
+   "source_id": "S-0a9ea0dbc48fd48c",
+   "original_read": true,
+   "note": "ZIP lokal entpackt (VISE_Abschluss_FY25_EN.pdf, pdftotext); gelesen: Anhang B.1/C.1 (Other operating income, Equity investments), D Company boards, F Subsequent Events inkl. Vorstandswechsel (Einzelabschluss SE, Rumpfgeschäftsjahr 28.01.-31.12.2025, Datum 25.02.2026). Cache-Textextrakt unbrauchbar, Originalbytes genutzt.",
+   "findings": [
+    {
+     "claim_id": "C-002",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (SE-Einzelabschluss, Anhang F): Eintragung ins Handelsregister und Wirksamkeit der Sacheinlage der restlichen 90 % zum 28.01.2026, danach ist die SE alleinige Gesellschafterin der Holding - im Original bestätigt. Der abweichende Termin 18.01.2026 sowie Sitz/HRB-Angaben der Holding stammen aus anderen Quellen (Konzernabschluss S-c937..., Halbjahresbericht); der Widerspruch 18.01. vs. 28.01. bleibt offen und ist vom Leitprüfer zu bewerten, hier nicht aufgelöst."
+    },
+    {
+     "claim_id": "C-003",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Anhang B.1/C.1, Other operating income): Ertragszuschuss 80.100 TEUR von STAR Holdings S.à r.l. im Zusammenhang mit der Übertragung von 10 % der Holding-Anteile, zum Zeitpunkt der Übertragung hielt der Gesellschafter 100 %, ohne Gegenleistung; Bewertung per DCF-Gruppenbewertung zum 31.10.2025 mit Eigenkapitalwert 801 Mio. EUR = 80,1 Mio. EUR; Übertragung am 30.12.2025 (Equity investments Note 1). Einzige Quelle des Claims; keine Abweichung."
+    },
+    {
+     "claim_id": "C-016",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle: Anhang D (Company boards) und F bestätigen Klaas Jacob Klasen vom 18.12.2025 bis 28.01.2026 und Christian Köberle gleichen Zeitraums als Vorstand der SE, Rücktritt zum 28.01.2026, gleichzeitig Bestellung von Kajetan von Mentzingen und Dieter Holst - im Original gelesen. Die Juni-2026-Pressemitteilungen (\"Klaas Klasen\", VP Strategy & Chief of Staff) liegen in anderen Quellen; die Personenidentität Klasen/Klaas Jacob Klasen wird durch diese Quelle nicht gestützt (Leitprüfer: S-a3609ab109a44dd6 H22 ist nur ein als \"Unverified\" gekennzeichnetes Drittverzeichnis). E14 (Netzwerkkante Mandat historisch): Identität, Zeitraum und Richtung des historischen Mandats hier bestätigt, \"aktuelle Funktion\" nicht."
+    }
+   ]
+  },
+  {
+   "source_id": "S-0fcb333a58bc73ae",
+   "original_read": true,
+   "note": "ariva.de-Wiedergabe dpa-AFX ROUNDUP 13.08.2026 aus Originalbytes (HTML) im Wortlaut gelesen: Absätze zu Kurs, Rekordhoch, Ausgabepreis, Auftragseingang Q2.",
+   "findings": [
+    {
+     "claim_id": "T26",
+     "depth": "B",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Aktie zuletzt um fast 15 % auf 22,13 EUR (Spitze im SDax), Rekordhoch Anfang Mai 23,90 EUR, Ende März zu 17 EUR an die Börse gebracht, Auftragseingang Q2 von 33,9 auf 180,8 Mio. EUR (Unternehmensmitteilung, wiedergegeben). Intraday-Kursangabe, Zeitpunkt nur als \"zuletzt\" - Unsicherheit korrekt benannt. B-Claim, hier vollständig am Original gelesen."
+    }
+   ]
+  },
+  {
+   "source_id": "S-13147943f3042508",
+   "original_read": true,
+   "note": "EQS-Ad-hoc 07.10.2026 (EN) Haupttext gelesen.",
+   "findings": [
+    {
+     "claim_id": "F_wachstumsmaerkte_16",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Q3 2026 Umsatz 87,5 Mio. EUR (+39,8 % ggü. 62,6), 9M 237,7 Mio. EUR (+41,4 % ggü. 168,1), Prognose Umsatz 323-333 Mio. EUR (ursprünglich 280-320), vorläufige Zahlen zum 30.09.2026, 9M-Bericht 11.11.2026 angekündigt. Die ebenfalls genannte Anhebung der bereinigten EBIT-Marge (18,5-19,5 %) ist nicht Teil des Claims."
+    }
+   ]
+  },
+  {
+   "source_id": "S-1a847178709b22c4",
+   "original_read": true,
+   "note": "gettex-Wiedergabe der EQS-Ad-hoc vom 10.07.2026 (10:13 Uhr) im Original gelesen (Haupttext).",
+   "findings": [
+    {
+     "claim_id": "T18",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle: Ad-hoc 10.07.2026 bestätigt die Prognose 2026 (Konzernumsatz 280-320 Mio. EUR, bereinigte EBIT-Marge 18-19 %) - im Original gelesen. Die Aussagen zum Halbjahresbericht vom 13.08.2026 (oberes Ende der Spanne, Ereignisse nach dem Stichtag, PDF-Seite 17) liegen in S-757e91a75b0726fb und sind hier nicht geprüft."
+    },
+    {
+     "claim_id": "T20",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt: vorläufige Zahlen zum 30.06.2026, Q2-Umsatz 81,2 Mio. EUR (+44,5 % ggü. 56,2), H1 150,2 Mio. EUR (+42,4 % ggü. 105,5), Anstieg \"primarily attributable to the successful implementation of the ramp-up measures\", Prognose bestätigt, 10-Jul-2026 10:13 CET. Die dpa-AFX-Zuschreibung (höhere Wehrausgaben) liegt in S-189bed9f57b7a4b6 und ist hier nicht geprüft."
+    }
+   ]
+  },
+  {
+   "source_id": "S-1aa8f95b2599facc",
+   "original_read": true,
+   "note": "VINCORION-Pressemitteilung 19.06.2024 (GTD chaser) im Original vollständig gelesen.",
+   "findings": [
+    {
+     "claim_id": "C-023",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Leopard-2-Komponenten (Turm- und Waffenantriebe, Richt-/Stabilisierungssystem, Leistungselektronik, Generator); 54 Leopard 2 A8 für Norwegen, erstmals Großserieneinsatz GTD chaser; weitere Lieferungen für Deutschland/Partnerländer \"already confirmed in the order pipeline\", >120 Systemlieferungen in drei Jahren; \"customer KNDS' upgrade program for the LEOPARD 2 to unmanned turret technology\". Leopard 2 A-RC 3.0 wird separat genannt, keine Gleichsetzung in der Quelle (Claim formuliert dies korrekt). Der Vertragspartner für Norwegen wird nicht genannt; die Quelle ist reine Herstellerangabe. E25 (VINCORION -> KNDS): Richtung und Beziehungstyp (Lieferung/Kundenangabe, Produktbezug GTD chaserV/Leopard 2) durch VINCORION-Aussage gestützt, KNDS-Bestätigung fehlt (im Claim als Unsicherheit ausgewiesen)."
+    },
+    {
+     "claim_id": "M10",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Absätze 1, 4-5, Technical Background): \"ready for large-scale production\", 54 Leopard 2 A8 Norwegen, \"confirmed in the order pipeline\", >120 Systemlieferungen in drei Jahren, Komponenten (Turm- und Waffenantriebe, Richt-/Stabilisierungssystem, Leistungselektronik, Generator), redundanter mechanisch/elektrisch bedienbarer Notantrieb, datenbasierte Instandhaltung und Obsoleszenzmanagement. Wörtliche Formulierung \"confirmed in the order pipeline\" im Claim korrekt wiedergegeben; kein Auftragsbestandsbeleg."
+    }
+   ]
+  },
+  {
+   "source_id": "S-20ab7c633edc2585",
+   "original_read": true,
+   "note": "vincorion.com Startseite (Originalbytes, Textextrakt) gelesen: Facts and Figures, Press, Footer.",
+   "findings": [
+    {
+     "claim_id": "T1",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle: Fußzeile \"VINCORION SE, Feldstraße 155, 22880 Wedel, Deutschland\" bestätigt (Firmierung SE und Sitz Wedel). HRB 19596/Amtsgericht Pinneberg, SE-Rechtsform als Gesellschaftsform und Halbjahresberichtsaussage sind nicht Teil dieses Seitenbelegs (andere Quellen). Bekannte Abweichung (Konzernabschluss Holding nennt \"VINCORION SE, Munich\") bleibt Sache des Leitprüfers."
+    },
+    {
+     "claim_id": "T4",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Abschnitt Facts and Figures: Employees (as of the first half of 2026) 1,000; Vocational trainees 50; 4 Locations in Germany and the US. Die Halbjahresbericht-Aussage (rund 1.000 FTE, 30.06.2026, Definition) liegt in S-757e91a75b0726fb; Abweichung zu \"rund 900\" der PM vom 15.06.2026 im Claim als Unsicherheit ausgewiesen."
+    },
+    {
+     "claim_id": "T43",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag bestätigt: Facts and Figures \"Service and spare parts availability 30+ years\". Der Q1-Präsentationsanteil liegt in S-b87584cb356cf171 (dort geprüft). B-Claim, hier am Original gelesen."
+    }
+   ]
+  },
+  {
+   "source_id": "S-2267af5e02fda855",
+   "original_read": true,
+   "note": "vincorion.com Ground-Based Air Defense (EN) Produktseite im Original gelesen: Intro, IRIS-T/PATRIOT, Hybrid, NSPA, Facts and Figures, Raytheon-Zitat.",
+   "findings": [
+    {
+     "claim_id": "C-025",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (nur Website-Anteil): \"Compact, high-performance gensets from VINCORION supply power to the IRIS-T SLM launchers\" - im Original bestätigt, undatierte Herstellerseite. Diehl-Beauftragung, Datum und Stückzahlen/Leistung tragen nicht diese Seite (ES&T in S-be02a1cc64071dd5 / S-945a20788677cd82). E27 (VINCORION -> Diehl): von dieser Seite nur Produktbezug IRIS-T-SLM-Launcher, Diehl wird nicht genannt."
+    },
+    {
+     "claim_id": "C-026",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: PATRIOT-Power seit mehr als 40 Jahren (Radar, Gefechtsstand, Launcher, Kommunikation), \"Through close collaboration between Raytheon, the user nations, and VINCORION\", \"Multiple recipient of Raytheon's Supplier Excellence Award\", Zitat \"building 100 procent quality product for Raytheon and our Warfighters\" - Global Supply Chain Director, Raytheon Missiles & Defense (ohne Name/Datum, Wortlaut inkl. Schreibfehler \"procent\" wie in Quelle). E28 (VINCORION -> Raytheon): Beziehungstyp Zulieferung belegt durch Herstellerseite; keine Raytheon-Originalquelle in diesem Beleg."
+    },
+    {
+     "claim_id": "C-046",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Facts and Figures, Framework agreements): \"Framework agreements with the U.S. Army, BAAINBw, and the NATO Support and Procurement Agency (NSPA), among others, for maintenance and obsolescence mitigation\". Undatiert, keine Entwicklungsaufträge, keine Werte. Für Kanten E32/E34: nur allgemeiner Rahmenvertragshinweis; Einzelverträge (C-030, C-033) nicht durch diese Seite getragen."
+    },
+    {
+     "claim_id": "F_wachstumsmaerkte_18",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: \"most notably in the PATRIOT and IRIS-T SLM air defense systems\", PATRIOT seit mehr als 40 Jahren, \"developing our next-generation power supply systems on behalf of the NATO Support and Procurement Agency (NSPA)\" mit Hybridarchitektur und Energiespeichern. Herstellerangabe, Vertragswert unbekannt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-2b57f2aeef51e1da",
+   "original_read": true,
+   "note": "Deutsche Börse live (dpa-AFX ANALYSE-FLASH 09.10.2026) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "T25",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: JPMorgan belässt Vincorion auf Overweight, Ziel 27 EUR; zum zweiten Mal seit dem Börsengang im März Zielvorgaben angehoben (David H Perry, Studie am Freitag); EPS-Annahmen 2026-2030 im Mittel +5 %; Veröffentlichung Original-Studie 09.10.2026 10:33 BST. Analystenurteil Dritter, Zuschreibung korrekt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-2b7291ad743a6f18",
+   "original_read": true,
+   "note": "militaeraktuell.at Artikel 31.08.2023 im Original gelesen (Absätze zu BAAINBw-Auftrag, Quellenvermerk \"Quelle @Vincorion\").",
+   "findings": [
+    {
+     "claim_id": "C-034",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt: BAAINBw hat Vincorion beauftragt, Aggregate der 20-kW-Klasse samt Batteriespeichermodulen zu entwickeln; vor einem Jahr bereits Entwicklung der 200- und 50-kW-Klassen; Erstmuster 20 kW Ende 2024 geplant; Quelle @Vincorion (VINCORION-Mitteilung). Der 18.06.2026-Anteil (nächste Generation taktischer mobiler Stromversorgung) liegt in S-41e7bd7b63e2d486. E35: Richtung/Typ (Entwicklungsauftrag BAAINBw -> VINCORION) für 2022/2023 gestützt, ohne BAAINBw-Original und ohne Vertragswerte; \"2022\" nur indirekt über \"vor einem Jahr\"."
+    }
+   ]
+  },
+  {
+   "source_id": "S-2dd5d59675c0404d",
+   "original_read": true,
+   "note": "militarysystems-tech.com Beitrag (26.10.2020) gelesen, Abschnitt Onboard Power.",
+   "findings": [
+    {
+     "claim_id": "M22",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: \"This year\" (Beitrag 26.10.2020) lieferte Leonardo DRS eingebettete Onboard Vehicle Power für FMTV im Programm CPI2 unter PEO C3T und liefert FMTV/HEMMT mit integrierter On-Board Vehicle Power für THAAD. Unternehmensbeitrag, keine Mengen/Lieferstand; \"HEMMT\" so im Original. Kein VINCORION-Bezug in der Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-3015a99a05a590d1",
+   "original_read": true,
+   "note": "HENSOLDT-Pressemitteilung 31.07.2026 im Original gelesen (Absätze 1-2, Optronics-Abschnitt).",
+   "findings": [
+    {
+     "claim_id": "F_wachstumsmaerkte_12",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Auftragseingang H1 2026 2.812 Mio. EUR (Vj. 1.405), Auftragsbestand 10.356 Mio. EUR (Vj. 7.070), Umsatz 1.167 Mio. EUR (+23,6 %), Book-to-Bill 2,4x, Optronics-Auftragseingang 971 Mio. EUR (Vj. 164) getrieben von Großaufträgen für Puma und Schakal (digitale Optronik). Konzernangaben; Auftragseingang nicht gleich Umsatz."
+    }
+   ]
+  },
+  {
+   "source_id": "S-35533464036f638e",
+   "original_read": true,
+   "note": "BMVg-Meldung zur Haushaltsausschusssitzung/Bundestag 23.09.2026 im Original gelesen (Abschnitte Luftverteidigungssystem Nah-/Nächstbereichsschutz, IRIS-T-Fregatte F125, AIM-120).",
+   "findings": [
+    {
+     "claim_id": "F_wachstumsmaerkte_23",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Haushaltsausschuss billigt den zweiten Änderungsvertrag zur Entwicklung, Herstellung und Lieferung des Luftverteidigungssystems Nah- und Nächstbereichsschutz; Fahrmodule der Feuerleit- und Flugabwehrraketenpanzer an das Boxer-B0-Fahrmodul anpassen, Trainer als Containerlösung. Beschluss zu einem Änderungsvertrag, keine Lieferung, kein Wert."
+    },
+    {
+     "claim_id": "F_wachstumsmaerkte_24",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Zustimmung zur Beauftragung einer maritimen Anpassung des IRIS-T-Systems für Fregatten der Klasse F125 (Begründung aktuelle Bedrohungslage Luftverteidigung); zwei weitere Lose AIM-120. Maritime Entwicklung, kein Wert."
+    }
+   ]
+  },
+  {
+   "source_id": "S-399c866fc838bf1b",
+   "original_read": true,
+   "note": "Raytheon-Pressemitteilung 24.04.2015 im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "C-027",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Raytheon partnert mit der Jenoptik-Tochter Lechmotoren (Jenoptik Defense & Civil Systems), Jenoptik baut power plants, power generators, test equipment und spares für einen der globalen Patriot-Partner (24.04.2015). Rechtsnachfolge Lechmotoren -> VINCORION nicht in dieser Quelle (C-028). E29 (Jenoptik -> Raytheon): Identitäten, Richtung, Zeitraum und Produktbezug für die Jenoptik/Lechmotoren-Kante belegt; VINCORION ist nicht Kantenendpunkt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-3dbea8c3b38ded55",
+   "original_read": true,
+   "note": "VINCORION-Pressemitteilung 14.10.2026 (AUSA 2026) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "P34",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Zukunftsthema \"Batteriearchitektur für jede Plattform und jedes Einsatzprofil\"; Marktanforderungen, technologische Anwendungsfälle, Herausforderungen und Lebenszyklus-Erfahrungswerte erarbeitet und mit Anwendern, Partnern und Beschaffungsverantwortlichen des nordamerikanischen Markts besprochen; Stand 7018. Gesprächs-/Entwicklungsthema, kein Produkt/Kunde."
+    },
+    {
+     "claim_id": "P35",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Abschnitt zu gleichen Herausforderungen beiderseits des Atlantiks): Landfahrzeuge zunehmend elektrifiziert/vernetzt, Sensorik/Führung/Kommunikation brauchen mehr stabile Energie, Luftverteidigung gewinnt durch Drohnen/Flugkörper an Bedeutung, Interoperabilität im Bündnis. Marktbeschreibung des Unternehmens, keine unabhängigen Daten."
+    }
+   ]
+  },
+  {
+   "source_id": "S-4988896bf7d4ec42",
+   "original_read": true,
+   "note": "EQS-Stimmrechtsmitteilung STAR Capital Partnership LLP vom 26.03.2026 (EN) vollständig gelesen.",
+   "findings": [
+    {
+     "claim_id": "C-011",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (Mitteilung 26.03.2026) bestätigt: Schwellenberührung 19.03.2026, 47,53 % Stimmrechte aus Aktien, 5,30 % über Instrumente (Securities Lending / IPO Greenshoe Option, 2.647.500 Stimmrechte), direkt haltend STAR Holdings S.à r.l.; zwei Ketten STAR Capital Partnership LLP -> STAR USR Limited bzw. STAR III Limited -> STAR III General Partner LLP -> STAR Strategic Assets III LP -> STAR Holdings S.à r.l. Die Mitteilung vom 24.04.2026 (48,63 %) liegt in S-c27f8234745c7d46; die H1-Bericht-/STAR-Website-Abweichung ist nicht Teil dieses Teilbefunds. E01/E02: Kette, Richtung (aufwärts Kontrolle) und Quote 47,53 % zum 19.03.2026 hier belegt; Stimmrechtsanteil ist nicht automatisch Kontrolle (im Claim ausgewiesen)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-54bbffea5b8c5b3a",
+   "original_read": true,
+   "note": "STAR-Capital-Website, Eintrag \"VINCORION IPO\" 20.03.2026 im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "C-010",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle, im Original bestätigt: \"As part of the IPO, c. €105m were placed with the following cornerstone investors: Fidelity International, Invesco Asset Management Limited, for and on behalf of certain collective investment funds and/or accounts, and accounts advised by T.Rowe Price Associates, Inc.\" (STAR-Eintrag vom 20.03.2026, nicht VINCORION-Mitteilung). Nicht in dieser Quelle: Verpflichtung zur Zeichnung, Zuteilung \"zum Angebotspreis\" und die Zuschreibung \"laut VINCORION\" (diese Teile müssen von S-125b291429b46297 getragen werden; Leitprüfer). Die Quelle belegt zugleich, dass die Zuschreibung hier der Hauptaktionär STAR ist. E03/E04/E05: Cornerstone-Rolle von Fidelity, Invesco AM Ltd. und T. Rowe Price-beratenen Konten bestätigt; Quoten (4,71 %, 4,69 %, 3,69 %) nicht Gegenstand dieser Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-56db18e5f6a31a81",
+   "original_read": true,
+   "note": "defence-network.com Artikel 19.09.2025 im Original gelesen (Abschnitt NATO-weite Beschaffung).",
+   "findings": [
+    {
+     "claim_id": "C-030",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt: NSPA hat mit VINCORION einen Rahmenvertrag zur Anpassung der PATRIOT-Stromversorgungsanlagen über Obsoleszenzmitigation geschlossen, Auftragsvolumen zunächst 60 Mio. EUR, investierende Staaten Deutschland, Niederlande, Schweden, Rumänien, Polen, Projektzeitraum 2025-2030, Zitat NSPA-Generaldirektorin Stacy Cummings. Wiedergabe der VINCORION-Mitteilung, keine NSPA-Originalquelle; Rahmenhöchstwert kein garantierter Umsatz. E32 (VINCORION -> NSPA): Identitäten, Typ, Status (geschlossen), Zeitraum, Volumen und Staaten durch diese Quelle belegt; Originalpressemitteilung in S-74f313ac4d339267."
+    }
+   ]
+  },
+  {
+   "source_id": "S-570ee7bc8cbb2ed7",
+   "original_read": true,
+   "note": "vincorion.com Lifecycle Support (DE) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "P41",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: VINCORION verantwortet für mehr als 500 Rettungswinden der NH90-Flotte das Lebenszyklus-Management (Produktbeobachtung, Wartung/Befundinstandsetzung, STTE, GSE); \"Ende 2025 wurde die erste NH90-Rettungswinde der sechsten Generation (G6-Standard) an die Nutzer ausgeliefert\"; ergänzendes STTE HMU portable. Lieferung laut Hersteller; Kunde/Nutzerstaaten nicht genannt."
+    },
+    {
+     "claim_id": "P46",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (Aufzählung der Bausteine) bestätigt: Risikoanalyse, Wartungs-/Instandsetzungskonzept, Konfigurationsmanagement, Special-to-Type Test Equipment, Musterbefundung, Produktbeobachtung, Obsoleszenzmanagement, Update und Upgrade. Die Aussage \"Ersatzteilverfügbarkeit über 30 Jahre\" steht nicht auf dieser Seite (S-d0efd24bcbc15570)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-65b4796258a315d9",
+   "original_read": true,
+   "note": "Shephard News 22.10.2021 (Originalbytes) gelesen; der Artikeltext ist im Cache vollständig sichtbar (Subscriber-Hinweise nur Navigation).",
+   "findings": [
+    {
+     "claim_id": "P52",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (Shephard) bestätigt: neue Einrichtung nahe Fort Bliss, Texas, am 21. Oktober eröffnet; Investition mehr als 2 Mio. USD in 3.250-m2-Einrichtung; Fokus Montage der Stromversorgung für PATRIOT SAM und weitere Komponenten wie Ersatzteile; MD Stefan Stenzel: \"US is already the most important foreign market for us in the defence sector\". El Paso, Firmensitz, EPP radarV, MoHPS, Jenoptik-Bezug und 35.000-m2-Gelände stehen nicht bei Shephard (ES&T, S-03d7ff221e65f6c3, anderer Job). Abweichende Flächenangaben im Claim als Unsicherheit korrekt ausgewiesen."
+    }
+   ]
+  },
+  {
+   "source_id": "S-6774a8ff4bfbe570",
+   "original_read": true,
+   "note": "Fischer-Panda-UK-Pressemitteilung 12.09.2023 im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "M33",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Auftrag über 10 Mio. Pfund mit \"global aerospace and defence company\" zur Ausstattung der AJAX-Fahrzeuge der British Army mit Panda AGT 8000 PVM-NE 24V (28V), variable speed DC generators -46 bis +50 Grad C, vier Prototypen bis Produktionsstandard, Integrationstests laufen, Systemdesign/Service/Aftercare, Fischer Panda GmbH Paderborn. Auftragnehmer-OEM nicht genannt, Lieferstand nicht berichtet. Kein VINCORION-Bezug in der Quelle."
+    }
+   ]
+  },
+  {
+   "source_id": "S-6888cb6ccf8cb794",
+   "original_read": true,
+   "note": "EEJournal-Wiedergabe der Curtiss-Wright-Mitteilung (12.10.2023, AUSA 09.10.2023) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "M28",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: HV TDSS zur Wandlung/Speicherung/Regelung von 28 V auf bis zu 750 V (DC/DC-Wandler, Energiespeichermodul, Hochvolt-Bewegungsregler) für neue Plattformen oder Nachrüstung; genannte mögliche Programme u. a. M1E3 Abrams, MPF M10 Booker, ERCA, RCV, XM30 (Zielanwendungen, keine Aufträge). Produktvorstellung ohne Kunden."
+    }
+   ]
+  },
+  {
+   "source_id": "S-6986318c3c84f038",
+   "original_read": true,
+   "note": "ESUT 07.07.2026 (Haushalt 2027) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "F_wachstumsmaerkte_8",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt: Bundesregierung billigte am 6. Juli den Entwurf des Bundeshaushalts 2027 (Bundesfinanzminister Klingbeil), Ausgaben 555,4 Mrd. EUR; ESUT-Artikel 7. Juli 2026. Drucksache 21/7300, hib vom 14.08.2026 und die 85,4 Mrd. EUR Kreditaufnahme/Bereichsausnahme stehen in S-dac611b633e8e050 (anderer Job) und sind hier nicht geprüft."
+    }
+   ]
+  },
+  {
+   "source_id": "S-762e72ba2f88c34a",
+   "original_read": true,
+   "note": "Onboard Systems Hoist & Winch Pressemitteilung (Originalbytes; Veröffentlichungsdatum 2026-02-25 aus Seiten-Metadaten datePublished, Seite zeigt nur \"Feb 25\") gelesen.",
+   "findings": [
+    {
+     "claim_id": "M35",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Leonardo hat Pegasus für Integration in verschiedene Hubschraubertypen ausgewählt, beginnend mit AW139; Leonardo bietet ETSO-zertifizierte Winde an; \"ideal partner and launch customer\" (Zitat Signia Aerospace/Onboard); mehr als 50 Jahre Erfahrung, weltweite Flotte >7.000 Rettungswinden, erste Neukonstruktion seit mehr als drei Jahrzehnten, 37 neue Designpatente; Nachrüstsätze für Bestandsflugzeuge. Datum 25.02.2026 nur über Metadaten (datePublished), nicht im sichtbaren Text. Auswahl/Integration, kein Lieferbeleg. Der Zweitbeleg (S-033562504c480370) ist nicht Gegenstand dieses Befunds."
+    }
+   ]
+  },
+  {
+   "source_id": "S-763b90a8ac782ec3",
+   "original_read": true,
+   "note": "Moog-Produktseite Turret Stabilization & Fire Control im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "M30",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Multi-Axis-Controller, lineare und rotatorische Elevations-Aktuatoren, rotatorische Azimut-Aktuatoren; Expertise in Feuerleitung/Waffenstabilisierung auf \"over 30\" militärischen Fahrzeugplattformen inkl. bemannter/unbemannter Türme; kleine (12,7 mm), mittlere (30 mm), große Kaliber (155 mm). Undatierte Herstellerseite."
+    },
+    {
+     "claim_id": "M31",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Moog liefert aus mehreren europäischen Standorten Gun-Actuation-Technik an KNDS für RCH 155, Deliverables u. a. speed stabilized Turret Drive System; \"first deliveries ... in Summer 2024\" angekündigt (Zitat Jason Weiss). Ausführung nicht belegt."
+    },
+    {
+     "claim_id": "M32",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Moog-Turmantriebssysteme seit drei Jahrzehnten für CV90-Spezialvarianten (CV90120, CV9035, CV9030), Antriebe/Steuerungen aus Moog Germany und Moog Ireland; CV90-Varianten im Einsatz in Schweden, Norwegen, Schweiz, Finnland, Niederlande, Dänemark, Estland, geplant Slowakei, Tschechien, Schweden. Herstellerangabe."
+    }
+   ]
+  },
+  {
+   "source_id": "S-768bc60bd39f6de8",
+   "original_read": true,
+   "note": "HEIDELBERG Q2 2025/26 Conference-Call-Präsentation (PDF, 12.11.2025) gelesen: Folie 9 auch als Bild geprüft, Folien 2-4 Kontext.",
+   "findings": [
+    {
+     "claim_id": "C-036",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt (Folie 9): \"Strategische Partnerschaft mit VINCORION - Zusammenarbeit läuft wie geplant\"; \"R&D-Aktivitäten gestartet mit erstem finanziellem Beitrag in diesem Geschäftsjahr\", Ziel End-to-End-Systempartner; Präsentation Wiesloch, 12. November 2025. Auf der Folie steht \"VINCORION\", nicht \"VINCORION Advanced Systems GmbH\", und kein Begriff \"Defense\" (Folie sagt \"sicherheitskritische Branchen\"); diese beiden Bezeichnungen und die Nichterwähnung in der PM vom 10.06.2026 sind hier nicht belegt (S-91d594e29b91bc4a/S-ed98726b2fefc36a). E15: Typ/Status der Zusammenarbeit (HEIDELBERG-Aussage, Stand 12.11.2025) bestätigt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-7a846a5847661f28",
+   "original_read": true,
+   "note": "EQS-Stimmrechtsmitteilung Caisse des Dépôts et Consignations vom 25.09.2026 (EN) vollständig gelesen.",
+   "findings": [
+    {
+     "claim_id": "C-013",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Meldepflichtiger Caisse des Dépôts et Consignations (Paris), Schwellenberührung 22.09.2026, 3,03 % Stimmrechte aus Aktien (772.962 = 1,55 % + 740.965 = 1,48 %, beide indirekt nach § 34 WpHG), 0,00 % Instrumente, Summe 1.513.927 Stimmrechte bei 50.000.000 Gesamtstimmrechten; vorherige Mitteilung n/a (Schwellenüberschreitung). Veröffentlichung 25.09.2026 08:28. E06: Identität, Beteiligungsart (zugerechnet), Quote und Datum bestätigt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-83f92f2cf0494e24",
+   "original_read": true,
+   "note": "VINCORION-Pressemitteilung 02.08.2023 (Schweiz/Patriot) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "C-029",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Schweiz hat fünf Patriot-Systeme bei Raytheon (Air2030) bestellt; Stromversorgung durch VINCORION, EPP radarV, 15-kW-Generatoren, Frequenzumrichter; Fertigung in Altenstadt laut Pressemitteilung. Auftraggeber nicht genannt (Unsicherheit im Claim korrekt). B-Claim, hier am Original gelesen."
+    },
+    {
+     "claim_id": "M05",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: fünf Patriot-Systeme, Air2030, \"EPP radarV\", 15-kW-Generatoren für den Launcher, Frequenzumrichter 150 kW und 2 x 15 kW für Netzbetrieb ohne CO2-Emissionen, Generatoren bleiben als Back-up; Fertigung in Altenstadt (Bavaria). Herstellerangabe 2023, Lieferstand nicht berichtet."
+    }
+   ]
+  },
+  {
+   "source_id": "S-84325599aa18c073",
+   "original_read": true,
+   "note": "ES&T-Fachbeitrag \"VINCORION und der Leopard 2\" 17.06.2024 im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "P08",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Zulieferung der Komponenten für 54 Leopard 2 A8, die an Norwegen geliefert werden sollen (\"sollen\"), GTD chaser erstmals zum Einsatz (Norwegische Variante A8 NOR), VINCORION baut Kapazitäten aus wegen Optionen auf weitere Bestellungen aus NATO-Ländern. Lieferstatus nicht belegt, Stand 2024."
+    },
+    {
+     "claim_id": "P09",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Einleitungsabsatz): Energieversorgung aus Generator, digitalem Regler und Auxiliary Power Units (je nach Ausrüstungsstand), elektromechanischer Turmantrieb; Stabilisierung und Leistungselektronik (Zitat von Mentzingen) sowie Generator, vom Dieselmotor angetrieben. Stand 2024, Leopard 2 allgemein."
+    }
+   ]
+  },
+  {
+   "source_id": "S-945d1e412e25a22f",
+   "original_read": true,
+   "note": "SAM.gov-API-Datensatz (JSON, Originalbytes) gelesen: data2.award, awardee, description.body, pointOfContact.",
+   "findings": [
+    {
+     "claim_id": "C-032",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Award SPRBL124D0008, Datum 2024-05-08, Betrag 35.000.000 USD, Awardee VINCORION LLC (El Paso, Texas 79906), FFP contract for 4 NSNs zur Unterstützung des Electric Power Plant (EPP) für das Patriot Missile System Program, \"5 one-year base contract\", Sole Source nach 10 U.S.C. 3204(a)(1); Kontaktstellen @dla.mil. Hinweis zu E33 (VINCORION LLC -> DLA): Der Datensatz nennt die Defense Logistics Agency nicht ausdrücklich im Text/Feld (organizationHierarchy leer), der DLA-Bezug folgt nur aus dla.mil-Adressen und dem Nummernkreis - die Kantenrichtung/Behördenidentität ist daher aus dieser Quelle nur indirekt belegt (Leitprüfer). Höchstwert kein garantierter Umsatz."
+    }
+   ]
+  },
+  {
+   "source_id": "S-9670ee4232da6c72",
+   "original_read": true,
+   "note": "H1-2026-Ergebnispräsentation (PDF, 13.08.2026) gelesen: Folien 5, 8, 9, 11, 13 (Text und Layout).",
+   "findings": [
+    {
+     "claim_id": "M16",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Folie 5 (Highlights Q2 26, Power Systems): \"Air defence: Successful Patriot next gen. system design reviews (SDRs)\"; Folie 11: \"Power Systems: growth fueled by power generation solutions for Patriot\". Herstellerangabe, Inhalt der Reviews nicht veröffentlicht."
+    },
+    {
+     "claim_id": "M17",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt (Folie 5, Power Systems): \"Mature pre-series mobile power generation modules deployed for field trials and training - positive user feedback\". Der Q1-Anteil (Design Freeze) ist in S-b87584cb356cf171 geprüft."
+    },
+    {
+     "claim_id": "M18",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Folie 5, Aviation): ERH hat entscheidende Tests vor dem Erstflug bestanden; \"Due to scheduling constraints, the first ERH flight is planned for October - Timeline aligned with Airbus\"; \"First ERH deliveries planned for H1 2027\". Das Jahr 2026 für den Oktober-Erstflug steht nicht auf der Folie, ergibt sich aus dem Präsentationsdatum 13.08.2026; Planangabe."
+    },
+    {
+     "claim_id": "M19",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Folie 11 \"Vehicle Systems: growth led by stabilization products for Leopard 2\"; Folie 9: \"Exceptionally strong Order Entry from contract awards for stabilization products in the Vehicles Segment that converted from soft into fixed order backlog\", Order Entry HY1-26 330 Mio. EUR (HY1-25 73)."
+    },
+    {
+     "claim_id": "T16",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (Folie 5) bestätigt: Segmentumsätze ohne Konzernkonsolidierung H1 2026: Vehicle Systems 72,6 Mio. EUR (H1 2025 42,2; +72 %), Power Systems 46,2 (32,7; +41 %), Aviation 33,2 (32,7; +1,5 %). Die Treiberangaben (Leopard 2, Puma, PzH 2000, PATRIOT/IRIS-T, USD) und +72,1 %/+41,1 % stammen aus dem Halbjahresbericht (S-757e91a75b0726fb), nicht aus dieser Folie. Vorjahreswert Vehicle Systems 42,2 hier belegt (PM nennt 42,4 - im Claim ausgewiesen)."
+    },
+    {
+     "claim_id": "T30",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (Folie 13) bestätigt: FY2026 Guidance Umsatz 280-320 Mio. EUR (at upper end), Adj. EBIT-Marge ~18-19 % (confirmed); Mid-term target >15 % CAGR und Adj. EBIT-Marge ~20 % mit Fußnote \"2026 onwards\". Zeithorizont/Bezugsbasis nicht definiert, Zielgröße keine Prognose - im Claim korrekt. \"EBIT margin: 20 %\" und technologische Führungsposition (Halbjahresbericht, VINCORION at a Glance) sind hier nicht belegt."
+    },
+    {
+     "claim_id": "T36",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (Folie 5, Aviation) bestätigt: ERH Tests vor Erstflug bestanden, Erstflug für \"October\" geplant (Zeitplan mit Airbus abgestimmt, Jahr 2026 nur aus Präsentationsdatum), erste Auslieferungen H1 2027 geplant. MoU mit Heli-One (08.05.2026) und aktivierte Entwicklungskosten (Halbjahresbericht) stehen nicht in dieser Quelle. Ob der Erstflug stattgefunden hat, belegt die Quelle nicht."
+    },
+    {
+     "claim_id": "T37",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (Folie 5) bestätigt: \"Mature pre-series mobile power generation modules deployed for field trials and training - positive user feedback\" (Power Systems) und \"Demonstrated UGV charging use-case at EUROSATORY\" (Vehicle Systems); Unternehmensangabe. Q1-Anteil (S-b875...) und PM 18.06.2026 (S-41e7...) in anderen Jobs."
+    },
+    {
+     "claim_id": "T39",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (Folie 5, Power Systems) bestätigt: \"Air defence: Successful Patriot next gen. system design reviews (SDRs)\". Halbjahresbericht-Aussage (Haupttreiber PATRIOT/IRIS-T-Nachfrage, kurzfristig durch Kapazitäten bedient) und PM 15.06.2026 (Altenstadt) liegen in S-757e91a75b0726fb bzw. S-555547ca1efb774c."
+    }
+   ]
+  },
+  {
+   "source_id": "S-9948d40c2fb37d43",
+   "original_read": true,
+   "note": "vincorion.com Vehicle Energy Systems / EPG huskyV (DE) im Original gelesen: Generatortabelle, APU-Tabelle, Hochvolt Puma, Zahlen und Fakten.",
+   "findings": [
+    {
+     "claim_id": "P10",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: EPG huskyV bis zu 1000 A in 28-V-Bordnetzen; Leistungen 5,6-28 kW bei 28 V sowie über 100 kW im Hochvoltbereich; \"Langjähriger Einsatz von EPG huskyV auf bewährten Plattformen wie Leopard 2, GTK Boxer, Puma und Panzerhaubitze 2000\". Herstellerangabe, Auftragsumfang unbekannt."
+    },
+    {
+     "claim_id": "P11",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: W 600 (wassergekühlt) 17,1 kW/600 A bei 28,0 V DC, 48 kg; A-600+/A-670 luftgekühlt 17,1 kW/600 A bzw. 19,1 kW/670 A, 48/50 kg; O-700 bis O-1000 ölgekühlt 19,6-28,0 kW / 700-1000 A, 55 kg; W 600: +62 % gegenüber Vorgängermodell SF 217 (370 A). Herstellerdatenblatt, keine unabhängige Messung."
+    },
+    {
+     "claim_id": "P12",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Zahlen und Fakten): \"Fast 1.000 ausgelieferte Generatoren im Boxer-Programm\"; \"Im Einsatz bei Streitkräften weltweit in Europa, Asien, Amerika und Australien\". Lieferung laut Hersteller berichtet; Länder/Zeitraum nicht genannt."
+    },
+    {
+     "claim_id": "P14",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: \"Beim Puma handelt es sich um den ersten Schützenpanzer mit einem 170-kW-Hochvolt-Energiesystem, entwickelt von VINCORION\"; Hochvoltgeneratoren über 100 kW direkt auf der Hauptwelle zwischen Triebwerk und Getriebe. \"Erster\" ist Herstellerangabe."
+    },
+    {
+     "claim_id": "P15",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: APU 8 kW (Luftkühlung, ca. 98 kg) und 17 kW (Flüssigkeitskühlung, ca. 270 kg), 28 V DC, Kerosin (F-34/F-63) und Diesel (F-54), MIL-STD-461F/-1275D/-810F, Silent Watch Mode. Herstellerdatenblatt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-a3609ab109a44dd6",
+   "original_read": true,
+   "note": "theorg.com Leadership Team im Original gelesen (Org-Chart-Eintrag, Plattformhinweis \"Unverified\").",
+   "findings": [
+    {
+     "claim_id": "H22",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Eintrag \"Klaas Jacob Klasen - VP Strategy & Chief of Staff\" im Leadership-Team-Organigramm; Seite trägt den Plattformvermerk \"Unverified\". Die Quelle belegt nur die Listung im Drittverzeichnis (nicht die tatsächliche aktuelle Rolle); der Claim ist entsprechend eng formuliert. Abweichender Suchtreffer (RocketReach) nicht Teil dieses Befunds."
+    }
+   ]
+  },
+  {
+   "source_id": "S-a492cd0df860fc7a",
+   "original_read": true,
+   "note": "VINCORION-Pressemitteilung 13.08.2026 (H1 2026) im Original gelesen (Fließtext, CEO-/CFO-Zitate, Segmentabschnitte, Key Group figures).",
+   "findings": [
+    {
+     "claim_id": "F_wachstumsmaerkte_14",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Umsatz H1 2026 150,2 Mio. EUR (+42,4 % von 105,5), Auftragseingang 330,2 Mio. EUR (Vj. 72,7), bereinigtes EBIT 28,4 Mio. EUR (Marge 18,9 %), ursprüngliche Prognose 280-320 Mio. EUR; ferner Gesamtauftragsbuch 1.205 Mio. EUR. Auftragseingang nicht gleich Umsatz."
+    },
+    {
+     "claim_id": "F_wachstumsmaerkte_15",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Vehicle Systems 72,6 Mio. EUR (von 42,4; +72,0 %), getrieben von Stabilisierungsprodukten/großvolumigen Neuaufträgen für gepanzerte Plattformen; Power Systems 46,2 (von 32,7; +41,1 %), Systeme für bodengebundene Luftverteidigung besonders gefragt; Aviation 33,2 (Vj. 32,7), belastet durch Abwertung des US-Dollars. Ursachenzuschreibungen vom Unternehmen."
+    },
+    {
+     "claim_id": "T14",
+     "depth": "A",
+     "status": "Korrektur",
+     "note": "Teilbeitrag dieser Quelle im Original geprüft: Q2-Umsatz 81,2 Mio. EUR (Q2 2025: 56,2), H1 150,2 (+42,4 %), bereinigtes EBIT 28,4 (21,4), Marge 18,9 % (20,3 %), Free Cashflow H1 -6,1 (-3,2), Q2 +1,1 (Q2 2025: -4,8). Die im Evidence-Item/der Unsicherheit behauptete \"Q1-Free-Cashflow -7,1 Mio. EUR\" und \"Pressemitteilung nennt Q1-FCF -7,1, H1-FCF -6,1 (Rundungsdifferenz)\" ist in der Pressemitteilung nicht enthalten; -7,1 steht in der Q1-Präsentation (Folie 9, S-b87584cb356cf171). Die Claim-Aussage selbst (ohne Q1-FCF) wird von der PM getragen; EBIT 27,7 und Ergebnis nach Steuern stehen nicht in der PM (Halbjahresbericht).",
+     "reason": "Evidence-Item und Unsicherheitstext ordnen der Pressemitteilung vom 13.08.2026 einen Q1-Free-Cashflow von -7,1 Mio. EUR zu; die PM enthält ihn nicht (nur Q2 +1,1, H1 -6,1, Q2 2025 -4,8). -7,1 stammt aus der Q1-Präsentation.",
+     "action": "Evidence-Item/Unsicherheit korrigieren: Q1-FCF-Angabe entfernen oder korrekt der Q1-Präsentation (Folie 9) zuordnen, \"Rundungsdifferenz\"-Satz streichen bzw. korrekt begründen; Claim-Statement kann unverändert bleiben.",
+     "owner": "context (T-Fakten)"
+    },
+    {
+     "claim_id": "T41",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt: CEO-Zitat von Mentzingen: \"Demand for our products, services and tailored solutions remains high\", \"our visibility is above average\", \"confident in our ability to continue our growth trajectory successfully\" (13.08.2026). Der Aktionärsbrief-Anteil (\"Super-Zyklus\", strategische Partnerschaften) liegt in S-757e91a75b0726fb. Managementaussage, keine unabhängige Bestätigung."
+    }
+   ]
+  },
+  {
+   "source_id": "S-a8b6a9bf5c56126e",
+   "original_read": true,
+   "note": "Geprüfter Konzernabschluss VINCORION Holding GmbH 2024 (IFRS, PDF) gelesen: Note 2.6 und Note 21 Basis of Consolidation, Seite 36.",
+   "findings": [
+    {
+     "claim_id": "C-005",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt (PDF-Seite 36, Note 21): Beteiligungsliste zum 31.12.2024 mit VINCORION Advanced Systems GmbH (Wedel), VINCORION Power Systems GmbH (Altenstadt), VINCORION LLC (El Paso TX) je 100 %; Basis of consolidation 2024: 4 vollkonsolidierte Einheiten. 2023 und 2025 (ApS, 4 -> 5) in S-56ddab9dedaa1e0b bzw. S-c937f9b7f798fc88. B-Claim; hier am Original gelesen. E10-E12: Beteiligungsquoten 100 % zum 31.12.2024 bestätigt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-b168fbe6b6465626",
+   "original_read": true,
+   "note": "Börse Express Artikel 26.07.2026 im Original gelesen (Absätze 1-4, KI-Hinweis).",
+   "findings": [
+    {
+     "claim_id": "P51",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Kapazitätsausbau, weil Kunden wie die Hersteller des Leopard 2 und des Patriot wollen mehr Bauteile als aktuell lieferbar; \"Pulse-Lines\" als taktgebundene Fertigungslinien zur effizienteren Skalierung der Produktion von Mechatronik- und Energiesystemen; Parallel Ausbau der USA-Präsenz, \"Green Defense\" und mobile Energieversorgung; Artikel vom 26.07.2026, Hinweis, dass Teile mit KI erstellt und redaktionell geprüft wurden, keine Anlageberatung. Keine Primärquelle genannt; Aussagen sind Finanzportal-Darstellung (nicht als alleinige Faktenbasis zu verwenden). Pulse Lines als Maßnahme wird zusätzlich in der Q1-Präsentation genannt (Folie 6), USA-Ausbau und Kundenaussage nicht."
+    }
+   ]
+  },
+  {
+   "source_id": "S-b3f0167ab422975a",
+   "original_read": true,
+   "note": "vincorion.com Power Systems Übersichtsseite (DE) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "P23",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt (Abschnitt \"Auf einen Blick\"): Betankungsvorgänge im Vergleich zu herkömmlichen Dieselaggregaten \"um bis zu 66 Prozent\" reduzierbar, Wartungsintervalle \"auf bis zu 3.000 Stunden\" verlängerbar (abhängig vom Einsatzszenario). Die 72->24-Betankungen/48 %/vierfache Wartungsintervalle/80 % stammen aus der PM vom 19.09.2025 (S-74f313ac4d339267). Herstellerangabe."
+    },
+    {
+     "claim_id": "P31",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt: Abschnitt \"Resilient. Flexibel. Einsatzbereit.\" nennt für die für die Bundeswehr entwickelten Stromerzeugeraggregate/Energiespeichermodule 20-200 kW Eignung für \"Streitkräfte, Zivilschutz und Krisenmanagement\" sowie Anwendungsfeld \"Kritische Infrastruktur & Krisenmanagement\". \"Dual-Use-fähig\", Feuerwehr/THW und die Beispiele (Umspannwerke, Pumpstationen) tragen diese Seite nicht (S-e1deeb15ad1f4105). Keine zivilen Kunden/Aufträge genannt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-b87584cb356cf171",
+   "original_read": true,
+   "note": "Q1-2026-Ergebnispräsentation (PDF) gelesen: Folien 4, 5 (als Bild geprüft), 6, 7, 9, 16.",
+   "findings": [
+    {
+     "claim_id": "M17",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt (Folie 5): \"Tactical power systems successfully tested and design freeze completed\"; Aufzählung unter Power Systems enthält \"Tactical power systems\"; die Zeile steht in einer segmentübergreifenden Highlight-Box. H1-Anteil in S-9670ee4232da6c72."
+    },
+    {
+     "claim_id": "T32",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Folie 16, \"Well-positioned for long-term revenue growth\"): Mid-term revenue target: Grow with market; Roll-out of new products (ERH, TPS); Develop new business models in aftermarket (Spares pooling); Long-term revenue potential: Continue to grow with market; Continue to grow around existing products & platforms (TPS military/civil, IRIS-T SLX, ERH Airbus H175); Leverage technologies across segments (High-voltage architecture); Capture next-gen platforms (Bridge technology, MGCS); Hinweis \"Bucket sizes are illustrative\". Schematische Unternehmensfolie."
+    },
+    {
+     "claim_id": "T33",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Folien 4-6): Folie 6 vier Hochlaufmaßnahmen (Site-Roadmaps nach Plan; Industrialisierung inkl. Pulse Lines; Vereinfachung Lieferketten/Logistik; mehr strategische Partnerschaften); Folie 4 \"Site development in Altenstadt, Essen & Wedel on track to meet growing demand across all segments\"; Folie 5 \"Increased production capacity ensuring readiness for growing market demand\". Keine Investitions-/Kapazitätszahlen."
+    },
+    {
+     "claim_id": "T37",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt (Folie 5): \"Tactical power systems successfully tested and design freeze completed\". H1-Präsentation und PM 18.06.2026 in anderen Quellen."
+    },
+    {
+     "claim_id": "T43",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag bestätigt (Folie 7): Investment highlight 4 \"Building up decades of recurring aftermarket business\"; Spares pooling als mittelfristiger Hebel (Folie 16). Keine Aftermarket-Umsatzanteile. B-Claim, hier am Original gelesen."
+    },
+    {
+     "claim_id": "T5",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt (Folie 9, Financial Snapshot): FY 2025 Umsatz 240,3 Mio. EUR (+17,8 %), Adj. EBIT 39,7 (16,5 %), Auftragseingang 378,9, fester Auftragsbestand 435,4. Die Segmentumsätze 2025 (102,8/71,2/66,3 Mio. EUR mit Anteilen) enthält diese Quelle nicht (keine Segmentaufteilung auf Folie 9); sie müssen von S-757e91a75b0726fb getragen werden (Leitprüfer). Adj. EBIT ist Non-IFRS."
+    }
+   ]
+  },
+  {
+   "source_id": "S-b99b3531c8acfb3b",
+   "original_read": true,
+   "note": "vincorion.com Aircraft Systems - Special Products (EN) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "C-047",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt (Special Products): Komponenten für den Eurofighter, Composite-Radome und zwei Notstromgeneratoren; \"outside the United States, we are exclusively responsible for maintaining the radomes of Boeing AWACS reconnaissance aircraft\". Der NH90-Rettungswinden-/UH-1D-Anteil (Hoist Systems) liegt in S-843d0f17aae3494b. B-Claim; keine Vertragspartner, daher keine Kanten."
+    }
+   ]
+  },
+  {
+   "source_id": "S-be02a1cc64071dd5",
+   "original_read": true,
+   "note": "ES&T-Meldung \"Energieversorgung für IRIS-T SLM\" 16.02.2023 im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "C-025",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt (Meldung 16.02.2023): \"Wie das Unternehmen mitgeteilt hat, ist es vom Generalunternehmer und Systemintegrator Diehl Defence beauftragt worden, im laufenden wie im kommenden Jahr Energieversorgungsmodule (EVM) ... zu liefern\"; Module versorgen den Launcher, Dauerleistung zehn Kilowatt, Neuentwicklung, Dieselgenerator. Diehl als Hersteller nicht ausdrücklich im gelesenen Text, nur Generalunternehmer/Systemintegrator. VINCORION-Mitteilung wiedergegeben, keine Diehl-Bestätigung. E27 (VINCORION -> Diehl): Beauftragung ausdrücklich nur hier; Richtung/Typ gestützt durch Herstellermitteilung über ES&T, Auftragswert/Stückzahl unbekannt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-c27f8234745c7d46",
+   "original_read": true,
+   "note": "EQS-Stimmrechtsmitteilung STAR Capital Partnership LLP vom 24.04.2026 (DE) vollständig gelesen.",
+   "findings": [
+    {
+     "claim_id": "C-011",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (Mitteilung 24.04.2026, DE) bestätigt: Schwellenberührung 17.04.2026, 48,63 % Stimmrechte, direkt haltend STAR Holdings S.à r.l.; Kette 1 (STAR USR Limited) und Kette 2 (STAR III Limited) jeweils über STAR III General Partner LLP und STAR Strategic Assets III LP bis STAR Holdings S.à r.l. mit 48,63 %. Der Abweichungsbefund zu 47,53 % (H1-Bericht) betrifft andere Quellen. E02: Quote 48,63 % zum 17.04.2026 hier belegt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-c937f9b7f798fc88",
+   "original_read": true,
+   "note": "Konzernabschluss VINCORION Holding GmbH 2025 (IFRS, PDF) gelesen: Note 1 Company Background, Basis of consolidation (F-14), Revenue/Segment reporting (F-18 bis F-20), Related Parties (F-43), Shareholdings (F-44), Subsequent Events, Note 8 Other financial assets.",
+   "findings": [
+    {
+     "claim_id": "C-002",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt: Note 24 Subsequent Events \"VINCORION SE, Munich, has been the sole shareholder of VINCORION Holding, Wedel, since 18 January 2026\"; Note 1: VINCORION Holding GmbH, HRB 16869 PI, Amtsgericht Pinneberg, Feldstrasse 155, Wedel. Der Konzernabschluss nennt die SE mit Sitz \"Munich\" (Abweichung zu Wedel, siehe T1) und den 18.01.2026, der SE-Einzelabschluss 28.01.2026 (S-0a9ea0dbc48fd48c) - Widerspruch bleibt ungelöst und ist im Claim ausgewiesen. E09: Richtung/Typ (100 %-Tochter, alleinige Gesellschafterin) hier bestätigt, Datum strittig."
+    },
+    {
+     "claim_id": "C-004",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Note 23 und Note 1): Beteiligungsliste zum 31.12.2025: VINCORION Advanced Systems GmbH (Wedel), VINCORION Power Systems GmbH (Altenstadt), VINCORION LLC (El Paso TX), VINCORION ApS (Hellerup, Denmark), je 100 % Ownership interest; ApS \"founded in financial year 2025 and not yet started operations\". E10-E13: Identitäten, Richtung, Quote und Status bestätigt; direkte/mittelbare Haltung nicht ausgewiesen (Unsicherheit korrekt)."
+    },
+    {
+     "claim_id": "C-005",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt (Note 2.8/F-14): Fully consolidated entities 31 Dec 2024: 4, Additions 1, Disposals 0, 31 Dec 2025: 5; ApS 2025 gegründet. Die 2023/2024-Beteiligungsliste liegt in S-a8b6a9bf5c56126e/S-56ddab9dedaa1e0b. B-Claim; hier am Original gelesen."
+    },
+    {
+     "claim_id": "C-006",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Note 21 Related Parties, F-43): \"The direct parent company of VINCORION Holding is STAR Holdings S.à.r.l. ... Luxembourg. The ultimate controlling parent company ... is STAR Capital Partnership LLP, registered in England and Wales, which manages STAR Funds consisting of STAR Strategic Assets Partnership III LP, STAR Strategic Assets III-A LP and STAR III Executive Co-Investment Partnership LP.\" Stand Berichtsjahr 2025 (vor IPO). E01: Kontrollkette an der Spitze (STAR Capital Partnership LLP als ultimate controlling parent) bestätigt; Zwischenstufen (USR/III Limited, GP, Strategic Assets III LP) stehen nicht in dieser Note."
+    },
+    {
+     "claim_id": "C-008",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt: Note 8.1 \"Other current financial assets include a receivable from JENOPTIK AG of EUR 1,518k (prior year: EUR 1,250k)\"; nach dem Share Purchase Agreement wurden bestimmte Risiken (u. a. Gewährleistungsansprüche) wirtschaftlich dem Verkäufer zugewiesen. Die 10-Mio.-EUR-Garantie (Stand 30.06.2026) und Jenoptik-Erträge von 3,091 Mio. EUR liegen in S-71029391d701d972 bzw. S-40c9171fe2101daa. E08: nur Forderung gegen JENOPTIK AG hier belegt, Garantie/Freistellung nicht."
+    },
+    {
+     "claim_id": "C-018",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Note 1 \"The products are installed on important military platforms, including the Leopard 2 main battle tank, the Puma infantry fighting vehicle and the PATRIOT and IRIS-T SLM air defence systems ... We are positioned as the sole supplier for most of the platforms ...\" (gewichtet nach Produkten mit Alleinlieferanten-/führender Marktposition); Segmentbeschreibung Vehicle Systems (Leopard 2, Puma, Boxer, PzH 2000) und Power Systems (Gensets/integrierte Stromversorgung für PATRIOT/IRIS-T). Selbstauskunft, keine OEM-/Behördenpartner genannt. E28: Produktbezug PATRIOT bestätigt, Raytheon wird hier nicht genannt."
+    },
+    {
+     "claim_id": "C-020",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt (Segment reporting, F-18): \"Only one customer accounted for more than 10 % of total revenue in financial year 2025. The associated revenue of EUR 27,800k is allocated to the Vehicle Systems segment\"; 2024: three customers each >10 % (kumuliert 45.338 TEUR Vehicle Systems + 21.818 TEUR Aviation); 2023: two Kunden. Der H1-2026-Anteil (drei Kunden, 57,7 Mio. EUR) liegt in S-71029391d701d972."
+    },
+    {
+     "claim_id": "C-021",
+     "depth": "A",
+     "status": "Korrektur",
+     "note": "Zahlenteil 2025 im Original bestätigt (Note 5.1, F-20): Key geographic markets 2025: Germany 143.286, Rest of Europe 46.106, USA 45.135, Other 5.793 TEUR (Summe 240.321, 2024: 116.678/50.322/33.942/3.035). Die Bezeichnung \"Umsatz nach Kundensitz\" ist in dieser Quelle nicht belegt: der Abschluss spricht nur von \"main geographic markets\"/\"geographical perspective\" und definiert die Zuordnung (Kundensitz oder Lieferort) nicht. H1-2026-Zahlen in S-71029391d701d972. B-Claim, hier am Original gelesen.",
+     "reason": "Zuordnungsbasis \"nach Kundensitz\" wird im Konzernabschluss 2025 nicht ausdrücklich genannt; dort nur \"main geographic markets\". Zahlen selbst stimmen.",
+     "action": "Bezeichnung in Claim/Darstellung auf \"nach geografischen Märkten\" ändern oder die Kundensitz-Definition aus dem Halbjahresbericht (S-71029391d701d972) belegen; Vergleichbarkeit 2025/H1 2026 damit sichern.",
+     "owner": "cluster (C-Fakten)"
+    }
+   ]
+  },
+  {
+   "source_id": "S-cc53a835b9b5e94c",
+   "original_read": true,
+   "note": "Bundestag Textarchiv KW37/2026 im Original gelesen (Eingangsabsätze, Abschnitt Sondervermögen/Beschaffung).",
+   "findings": [
+    {
+     "claim_id": "F_wachstumsmaerkte_6",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Verteidigungsausgaben im Entwurf 2027 139,6 Mrd. EUR; Einzelplan 14 109,7 Mrd. EUR (2026: 82,7), weitere 29,9 Mrd. EUR aus dem Sondervermögen Bundeswehr (2026: 25,5); erste Beratung Mittwoch 9. September 2026. Regierungsentwurf, Haushaltsmittel kein Marktvolumen."
+    },
+    {
+     "claim_id": "F_wachstumsmaerkte_7",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: militärische Beschaffung insgesamt mehr als 60 Mrd. EUR (30,3 Einzelplan 14 + 29,9 Sondervermögen; Summe 60,2 vom Analysten gerechnet), 2026: 45 Mrd. EUR; Materialerhalt 8,6 (2026: 7,7), Wehrforschung/Entwicklung/Erprobung 2,9 (2026: 1,6). Planwerte, keine Bestellungen."
+    }
+   ]
+  },
+  {
+   "source_id": "S-cf5da52d7e491be7",
+   "original_read": true,
+   "note": "ES&T-Meldung 08.07.2024 (Patriot-Feuereinheiten) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "M03",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Bundeswehr erweitert den Rahmenvertrag mit RTX (Raytheon) aus dem März 2024 um vier Feuereinheiten auf insgesamt acht, Vertragswert verdoppelt auf 2,8 Mrd. EUR, Haushaltsausschuss am 3. Juli zugestimmt, Zulauf 2025-2029; Beschaffungsumfang u. a. vier Stromversorgungsanlagen von Vincorion für knapp 20 Mio. EUR. Mediendarstellung (Quelle BAAINBw/Haushaltsausschuss), Lieferstand nicht berichtet."
+    }
+   ]
+  },
+  {
+   "source_id": "S-d0efd24bcbc15570",
+   "original_read": true,
+   "note": "vincorion.com Services Übersichtsseite (DE) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "P46",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt: \"Ein wesentlicher Leistungsbaustein ... ist unser Obsoleszenzmanagement. Ziel ist es, die Ersatzteilverfügbarkeit langfristig sicherzustellen, auch über Zeiträume von 30 Jahren und darüber hinaus.\" Aufzählung der Bausteine in S-570ee7bc8cbb2ed7. Herstellerangabe."
+    }
+   ]
+  },
+  {
+   "source_id": "S-db2fa0537999b2fc",
+   "original_read": true,
+   "note": "VINCORION-Pressemitteilung 06.05.2024 (Change in Management) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "T11",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle bestätigt: Kajetan von Mentzingen mit sofortiger Wirkung Management Spokesman, übernimmt Verantwortungsbereiche von Dr. Stefan Stenzel (Ruhestand 31.05.2024); Eintritt 2023 mit Verantwortung für Aviation, zuvor Airbus Group ab 2008 (zuletzt Global Head of Quality Airbus Defence & Space). Zusammensetzung des SE-Vorstands (von Mentzingen CEO, Holst CFO, IPO-Berufung) stammt aus dem Halbjahresbericht (S-757e91a75b0726fb)."
+    }
+   ]
+  },
+  {
+   "source_id": "S-e5b2172843ae61b7",
+   "original_read": true,
+   "note": "EQS-Ad-hoc 07.10.2026 (DE-Seitenvariante mit englischem Meldungstext) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "T19",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Ad-hoc 07.10.2026 15:45 Uhr, vorläufige Zahlen zum 30.09.2026: Q3-Umsatz 87,5 Mio. EUR (+39,8 % ggü. 62,6), 9M 237,7 (+41,4 % ggü. 168,1), Prognose Umsatz 323-333 Mio. EUR (ursprünglich 280-320), bereinigte EBIT-Marge 18,5-19,5 % (ursprünglich 18,0-19,0 %), außergewöhnlich starkes Q3 in traditionell schwächerer Sommersaison, 9M-Bericht 11.11.2026. Vorläufige, ungeprüfte Zahlen."
+    }
+   ]
+  },
+  {
+   "source_id": "S-e6d4f9c56a8f6ac9",
+   "original_read": true,
+   "note": "ES&T-Meldung 16.12.2025 (H145M) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "M15",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: BAAINBw rief am 15. Dezember aus dem Rahmenvertrag vom Dezember 2023 die optionalen 20 LKH H145M ab (82 Hubschrauber, davon 62 fest); Auslieferung seit November 2024 bis 2028, die 20 abgerufenen bis 2030; \"Zu den umfassenden Einsatzpaketen gehören Hebe- und Außenlastfähigkeiten\" (Airbus). Kein VINCORION-Bezug/Winden-Hersteller genannt. B-Claim, hier am Original gelesen."
+    }
+   ]
+  },
+  {
+   "source_id": "S-f113efb0e3928467",
+   "original_read": true,
+   "note": "VINCORION-Pressemitteilung 29.07.2025 (Strategic partnership HEIDELBERG) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "C-035",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (VINCORION-PM) bestätigt: \"VINCORION SE ... has entered a strategic partnership with Heidelberger Druckmaschinen AG ... Under a Memorandum of Understanding ... multi-year collaboration ... HEIDELBERG is entering the defence market with the development, industrialisation and manufacturing of energy regulation and distribution systems for VINCORION\". Benennung \"VINCORION Advanced Systems GmbH\" durch HEIDELBERG liegt in S-1cd4c98ba7f9a5e2. E15: Partner SE (VINCORION-Seite), Typ MoU, keine Volumina."
+    },
+    {
+     "claim_id": "T35",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: MoU vom 29.07.2025, mehrjährige Zusammenarbeit zur Stärkung der industriellen Fähigkeiten und Versorgungssicherheit im Verteidigungsbereich; HEIDELBERG bringt Industrialisierungskompetenz und \"rapid scaling through utilisation of existing infrastructure and capacities\". Absichtserklärung, keine Volumina. B-Claim, hier am Original gelesen."
+    }
+   ]
+  },
+  {
+   "source_id": "S-f5bf30dfbbbbe817",
+   "original_read": true,
+   "note": "EU-STEP-Seite SENTINEL (Originalbytes) gelesen: Beschreibung, Participants, Länderliste, EU funding.",
+   "findings": [
+    {
+     "claim_id": "P33",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (STEP-Seite) bestätigt: SENTINEL will develop and test 17 essential energy capabilities, mit Streitkräften getestet; EU funding 39,9 Mio. EUR, Funding source European Defence Fund; Teilnehmerliste enthält \"Vincorion advanced systems GMBH - Vincorion power systems GMBH\", Rheinmetall, Thales/Thales Espana. Länderliste 16 Einträge (Belgium doppelt = 15 Länder), Zahl nicht im Claim. Die Aussage \"zentrale Rolle in Deutschlands Industrie\" (PM 13.08.2026) liegt in S-be4a4ed066ec245d und ist hier nicht geprüft; die EU-Fördersumme betrifft das Gesamtprojekt, nicht VINCORIONs Anteil."
+    }
+   ]
+  },
+  {
+   "source_id": "S-faafad3dafb1ee13",
+   "original_read": true,
+   "note": "militaeraktuell.at Artikel 17.03.2025 (Altenstadt) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "P30",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Schlussabsätze): \"Die ersten Testmodelle der neuen Aggregate sind bereits ausgeliefert worden, die Vorserienmodelle folgen Ende des Jahres 2025. Für eine Serienproduktion müssen die Hallenflächen jedoch deutlich erweitert werden.\"; Altenstadt als Kompetenzzentrum für mobile Energieversorgung (Zitat Arold); Stand März 2025."
+    },
+    {
+     "claim_id": "P50",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Planung einer neuen Produktionshalle auf dem ehemaligen Militärflugplatz für erwartete Nachfrage nach Luftverteidigungssystemen wie Patriot und Iris-T; Ziel, den Umsatz am Standort Altenstadt in den nächsten Jahren auf 150 Mio. EUR auszubauen (Vervierfachung), Zitate Jürgen Arold, über 200 Fachkräfte am Standort; Stand 17.03.2025, Baubeginn/Investition nicht genannt."
+    }
+   ]
+  },
+  {
+   "source_id": "S-fc1cb698358d5e90",
+   "original_read": true,
+   "note": "vincorion.com Ground-Based Air Defense (GBAD) Power Systems (DE) im Original gelesen.",
+   "findings": [
+    {
+     "claim_id": "P19",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Energiesysteme \"gefertigt in Deutschland, stecken seit mehr als 40 Jahren im Flugabwehrraketensystem PATRIOT\" (Radar, Gefechtsstand, Startgerät, Kommunikation); \"Kompakte, leistungsfähige Stromaggregate von VINCORION versorgen die Startgeräte von IRIS-T SLM\", Bestandteil des European Sky Shield. Herstellerangabe."
+    },
+    {
+     "claim_id": "P20",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Teilbeitrag dieser Quelle (Webseite) bestätigt: EPP radarV 2 x 150-kW-Diesel-Aggregate 400 Hz für Multifunktionsradar und Feuerleitstand (über Power Distribution Unit verbunden), EPU commandV 2 x 30 kW 400 Hz für den Kampfführungsgefechtsstand ICC (Produktzeile nennt zusätzlich Communications Relay Group), EPS launcherV Aggregat bis 15 kW 400 Hz für das Startgerät, optional für die Antennenmastanlage. Pressemitteilung 19.09.2025 liegt in S-74f313ac4d339267. Herstellerangabe."
+    },
+    {
+     "claim_id": "P21",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt: Energieversorgung der nächsten Generation für PATRIOT \"im Auftrag der NATO Support and Procurement Agency (NSPA)\" entwickelt, hybride Systemarchitektur mit Energiespeichern, integrierte USV-Funktion, standardisierte ISO-Container-Schnittstellen, Emission-Downgrade-Technologie (MissionUpgrade) für Alternativkraftstoffe nach NATO Single Fuel Policy. Entwicklungsstatus, keine Serienlieferung belegt."
+    },
+    {
+     "claim_id": "P24",
+     "depth": "A",
+     "status": "geprüft",
+     "note": "Im Original bestätigt (Zahlen und Fakten): \"Rahmenverträge mit der US Army, BAAINBw und der NATO Support and Procurement Agency (NSPA) für Instandsetzung und Obsoleszenz-Mitigation\"; \"Mehrfache Auszeichnung mit dem Raytheon Supplier Excellence Award\". Keine Werte/Laufzeiten."
+    }
+   ]
+  }
+ ]
+}
