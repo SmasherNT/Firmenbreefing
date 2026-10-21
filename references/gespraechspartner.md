@@ -2,6 +2,13 @@
 
 Der bestehende company-context-Faktenagent liefert `profile` im context-facts.json.
 Kein zusätzlicher Agent, keine HTML und keine strategische Personenbewertung.
+Bei mehreren genannten Gesprächspartnern für jede Person Schreibweise, aktuelle
+Funktion und Unternehmenszugehörigkeit eigenständig verifizieren. Die erste Person
+steht in `profile`, weitere in `additional_profiles` als Liste identisch aufgebauter
+Profile in Nutzerreihenfolge. `additional_profiles` benötigt ein primäres `profile`;
+ohne weitere Personen weglassen oder `[]` liefern. `manifest.person` bleibt die
+Nutzerangabe als String/Objekt; bei mehreren Personen enthält der String alle Namen.
+Keine gemeinsamen Biografien oder vermischten H-Claim-Zuordnungen erstellen.
 Darstellung wie die freigegebene Profilvorlage: Name/Einleitung, Snapshot (bis zu
 sechs Felder, drei Spalten), Werdegangstabelle, Fachprofil und Verantwortung
 nebeneinander. Danach folgt die Medien-Timeline. Quellen und Evidenz stehen
@@ -35,12 +42,22 @@ Alle claim_ids müssen in profile.claim_ids stehen. Der Renderer verlangt aktuel
 A-Prüfungen; prepare-facts prüft Struktur und Verweise vor dem Basis-Review.
 Auch name, Texte, Chronologie und Zuordnungen gehören zur semantischen Basisprüfung;
 Änderungen am Profil entwerten den Paket-Fingerprint. Keine automatische Freigabe.
+Dies gilt für jedes zusätzliche Profil einschließlich seiner Medienzuordnungen;
+auch zusätzliche Profile vollständig validieren und in `module_views` erhalten.
+Jeder Profilname muss eindeutig sein.
 Nicht einsortierte H-Claims bleiben unter „Weitere belegte Profilangaben“ erreichbar.
 Ältere Profile ohne neue Felder bleiben nutzbar, zeigen aber explizite Datenlücken.
 
 ## Darstellung und Quellen
 
 Die lokale Komponente scripts/profile-html.py und profile.css erzeugt das Profil.
+Jede Person erhält einen eigenen benannten Reiter nach dem Überblick und vor den
+Fokusseiten. Das Profil steht in einem weißen `section.module.profile-module` mit
+dem gemeinsamen Rahmen, Innenabstand, Schrift- und Farbsystem der anderen Seiten.
+Die Medien-Timeline folgt als eigenes `section.module.profile-media`. Beide Blöcke
+bleiben direkte Geschwister; keine verschachtelten Modulrahmen. Die Medienstile an
+`.profile-media` binden, damit sie auch für weitere Personen greifen. Interne IDs
+und Verweise je Profil eindeutig halten; Quellen bleiben im letzten Quellenreiter.
 Nummerierte Belege springen zu direkten Originalquellen; vollständige Aussagen,
 Unsicherheiten und Links ins gemeinsame Claimregister stehen im letzten Quellenreiter.
 Der Profilteil enthält nur nummerierte Quellenverweise dorthin.
@@ -79,6 +96,6 @@ Alte Profile ohne media bleiben technisch lesbar; neue Aufträge recherchieren d
 
 Darstellung: exakte Überschrift oben, kompakte chronologische Zeilen (neueste zuerst),
 Datum links, drei farbige Kategorien samt Legende. Klick oder Tastatur öffnet
-Zusammenfassung, optional Zitat, Kontext und Zugriffshinweis. Auf Seite 2 nur interne
+Zusammenfassung, optional Zitat, Kontext und Zugriffshinweis. Auf jeder Personenseite nur interne
 Quellen-/Evidenzverweise; volle Belege im letzten Quellenreiter. Native details funktionieren auch
 ohne JavaScript. Keine Personendaten vom vorigen Unternehmen übernehmen.

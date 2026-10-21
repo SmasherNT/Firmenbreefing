@@ -1,5 +1,6 @@
 """Profile mapping boundaries and source integrity."""
 import copy
+import json
 import unittest
 import test_executive_summary as summary_fixtures
 from test_render_briefing import RENDER, facts_only, refresh_basis, Links
@@ -77,3 +78,78 @@ class PersonMediaTests(unittest.TestCase):
         self.profile['media'][0].update(quote='Testzitat',quote_source_id='unknown',quote_location='Seite 1')
         refresh_basis(self.b)
         with self.assertRaisesRegex(ValueError,'quote source'):RENDER.build(**self.b)
+
+
+class MultipleProfileTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        ProfileTests.setUpClass()
+        cls.original = ProfileTests.original
+
+    def setUp(self):
+        PersonMediaTests.setUp(self)
+        self.extra = json.loads(json.dumps(self.profile).replace('H1', 'H2').replace('Alex Example', 'Blair Example'))
+        context = self.b['facts']['module_views'][0]
+        context['additional_profiles'] = [self.extra]
+        first_claim = next(c for c in self.b['facts']['claims'] if c['id'] == 'H1')
+        self.b['facts']['claims'].append({**first_claim, 'id': 'H2',
+            'statement': 'Blair Example leitet laut fiktivem Profil die Entwicklung.'})
+        self.b['manifest']['person'] = 'Alex Example; Blair Example'
+        refresh_basis(self.b)
+
+    def test_separate_pages_share_module_frames_and_keep_independent_links(self):
+        for dynamic in (False, True):
+            with self.subTest(dynamic=dynamic):
+                b = copy.deepcopy(self.b)
+                if dynamic:
+                    b['manifest']['focus_pages'] = []
+                    for topic in b['manifest']['topics']:
+                        topic['page'] = 'main'
+                    for view in b['facts']['module_views']:
+                        view.pop('market_dashboard', None)
+                    refresh_basis(b)
+                body = RENDER.build(**b)
+                first = body.split('id="page-profile"', 1)[1].split('id="page-profile-2"', 1)[0]
+                second = body.split('id="page-profile-2"', 1)[1].split('id="page-regions"' if not dynamic else 'id="page-sources"', 1)[0]
+                for html, name, prefix in ((first, 'Alex Example', 'person-'), (second, 'Blair Example', 'person-2-')):
+                    self.assertIn('<h2>' + name + '</h2>', html)
+                    self.assertEqual(html.count('<section class="module profile-module">'), 1)
+                    self.assertEqual(html.count('<section class="module profile-media"'), 1)
+                    self.assertIn('</article></section><section class="module profile-media"', html)
+                    self.assertIn('href="#' + prefix + 'source-1"', html)
+                    self.assertIn('id="' + prefix + 'media-1"', html)
+                    self.assertNotIn('class="pp-sources"', html)
+                self.assertNotIn('<h2>Blair Example</h2>', first)
+                self.assertNotIn('<h2>Alex Example</h2>', second)
+                links = Links(); links.feed(body)
+                self.assertEqual(len(links.ids), len(set(links.ids)))
+                self.assertTrue(set(links.anchors) <= set(links.ids))
+                sources = body.split('id="page-sources"', 1)[1]
+                for prefix in ('person-', 'person-2-'):
+                    self.assertIn('id="' + prefix + 'source-1"', sources)
+
+    def test_additional_profile_changes_require_new_basis_review(self):
+        self.extra['snapshot'][0]['value'] = 'Geänderte Verantwortung'
+        with self.assertRaisesRegex(ValueError, 'snapshot missing/stale'):
+            RENDER.build(**self.b)
+
+    def test_additional_profile_requires_own_valid_person_claims(self):
+        self.extra['claim_ids'] = ['M1']
+        refresh_basis(self.b)
+        with self.assertRaisesRegex(ValueError, 'non-professional-person'):
+            RENDER.build(**self.b)
+
+    def test_duplicate_names_and_nonlist_additional_profiles_rejected(self):
+        for value, error in (([{**self.extra, 'name': ' alex EXAMPLE '}], 'duplicate professional'),
+                             ({'name': 'Blair Example'}, 'must be a list')):
+            with self.subTest(value=value):
+                self.b['facts']['module_views'][0]['additional_profiles'] = value
+                refresh_basis(self.b)
+                with self.assertRaisesRegex(ValueError, error):
+                    RENDER.build(**self.b)
+
+    def test_additional_profiles_without_primary_rejected(self):
+        del self.b['facts']['module_views'][0]['profile']
+        refresh_basis(self.b)
+        with self.assertRaisesRegex(ValueError, 'requires a primary profile'):
+            RENDER.build(**self.b)

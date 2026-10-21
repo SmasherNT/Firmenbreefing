@@ -18,7 +18,7 @@ Keine kopierten Fakten-/Belegtexte pro Zeile.
 
 | Rolle | Optionale Tabellen |
 |---|---|
-| context | company_facts, events, profile, topics |
+| context | company_facts, events, profile, additional_profiles, topics |
 | portfolio | products, regions, topics, regional_presence nach regionale-praesenz.md |
 | cluster | topics, report_log; network bleibt eigenes Paketfeld |
 | market | regions, topics, peers, observations gemäß Vergleichsvertrag; historische market_dashboard-Daten nur im alten Layout |
@@ -41,6 +41,9 @@ Originalquellen/Belegstellen. Kein neuer Agent oder zusätzlicher Interpretation
 products: domain und optional short_label nach portfolio-darstellung.md.
 profile: Struktur und H-Claim-Verweise nach gespraechspartner.md; nur berufliche
 Fakten der benannten Person. Snapshot/Werdegang/Fachprofil/Verantwortung offen zeigen.
+additional_profiles: weitere eigenständige Profile in Nutzerreihenfolge mit demselben
+Daten- und Prüfvertrag; jede Person auf einem eigenen benannten Reiter. Alle Profile
+im gemeinsamen weißen Modulrahmen und mit einheitlicher Typografie darstellen.
 regions: optional sections:[{label,claim_ids}] für Unterthemen.
 topics: gleiche id wie manifest.topics[].id; Reihenfolge aus Manifest.
 peers/observations nach capability-matrix.md, keine Scores in Faktenphase.
@@ -71,7 +74,8 @@ Dynamische Desktop-Seiten für neue Manifestdateien mit focus_pages:
 1. Überblick: Summary, Entwicklungen, Gesamtportfolio, allgemeine Themen, Cluster,
    regionale Unternehmenspräsenz, Capability Matrix, Einordnung, SWOT und offene
    Fragen. Module untereinander; Keyfacts/Insights bleiben unter ihren Modulen.
-2. Beruflicher Gesprächspartner-Kontext, nur wenn beauftragt.
+2. Je beauftragter Person ein eigener beruflicher Gesprächspartner-Kontext in
+   Nutzerreihenfolge; ohne Personenauftrag keine Personenseite.
 3. Danach genau eine Seite je focus_pages-Thema in Prompt-Reihenfolge:
    Kernaussagen, passende Grafiken und Sechsmonats-Timeline nach fokusseiten.md.
    Keine feste Markt-Deep-Dive-Seite, keine Grenze für Timeline-/Grafikanzahl.

@@ -279,11 +279,23 @@ def build(manifest, modules, plan=None):
         if not isinstance(refs, list) or not refs or any(not isinstance(c, str) or c not in ids for c in refs):
             raise ValueError("profile requires known claim_ids")
     for data in modules:
-        if isinstance(data, dict) and data.get("profile") is not None:
+        if isinstance(data, dict) and (data.get("profile") is not None or "additional_profiles" in data):
             try:
                 if data.get("role") != "context" or not manifest.get("person"):
                     raise ValueError("profile requires context and person in manifest")
+                if data.get("profile") is None:
+                    raise ValueError("additional_profiles requires a primary profile")
                 profile_helper.validate(data["profile"], profile_refs, manifest["as_of"], {c["id"]:c for c in claims})
+                extra_profiles = data.get("additional_profiles", [])
+                if not isinstance(extra_profiles, list):
+                    raise ValueError("additional_profiles must be a list")
+                names = {data["profile"]["name"].strip().casefold()}
+                for extra_profile in extra_profiles:
+                    profile_helper.validate(extra_profile, profile_refs, manifest["as_of"], {c["id"]:c for c in claims})
+                    name = extra_profile["name"].strip().casefold()
+                    if name in names:
+                        raise ValueError("duplicate professional profile name")
+                    names.add(name)
             except ValueError as error:
                 errors.append(str(error))
     spec = importlib.util.spec_from_file_location('presence_html', Path(__file__).with_name('presence-html.py'))
@@ -341,7 +353,7 @@ def build(manifest, modules, plan=None):
               "company": manifest.get("company"), "as_of": manifest.get("as_of"),
               "claims": claims, "sources": sorted(sources.values(), key=lambda s: s["id"]),
               "module_views": [{"role": module_key(d), **{k: d[k] for k in
-                                  ("company_facts", "events", "profile", "products", "regions",
+                                  ("company_facts", "events", "profile", "additional_profiles", "products", "regions",
                                    "topics", "peers", "observations", "market_dashboard", "focus_pages", "regional_presence", "gaps", "coverage", "report_log")
                                   if k in d}} for d in modules if isinstance(d, dict)],
               "module_context": [{"role": module_key(d), "scope": d.get("scope"),

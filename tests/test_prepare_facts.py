@@ -78,6 +78,36 @@ class FactsTests(unittest.TestCase):
         self.assertEqual(original['fingerprints'], later['fingerprints'])
         self.assertNotEqual(original['packet_fingerprint'], later['packet_fingerprint'])
 
+    def profiles(self):
+        self.manifest.update(selected_roles=['context'], person='Alex Example; Blair Example')
+        self.module.update(role='context',
+            claims=[{**self.claim, 'id': 'H001'}, {**self.claim, 'id': 'H002'}],
+            profile=dict(name='Alex Example', claim_ids=['H001']),
+            additional_profiles=[dict(name='Blair Example', claim_ids=['H002'])])
+
+    def test_additional_profiles_preserved_and_bound_to_packet_review(self):
+        self.profiles()
+        original, packet = FACTS.build(self.manifest, [self.module])
+        self.assertEqual(original['errors'], [])
+        self.assertEqual(packet['module_views'][0]['additional_profiles'], self.module['additional_profiles'])
+        self.module['additional_profiles'][0]['name'] = 'Blair Changed'
+        later = self.result()
+        self.assertEqual(later['errors'], [])
+        self.assertEqual(original['fingerprints'], later['fingerprints'])
+        self.assertNotEqual(original['packet_fingerprint'], later['packet_fingerprint'])
+
+    def test_additional_profiles_require_primary_list_unique_names_and_valid_claims(self):
+        for mutation, error in (
+            (lambda: self.module.pop('profile'), 'requires a primary profile'),
+            (lambda: self.module.update(additional_profiles={}), 'must be a list'),
+            (lambda: self.module['additional_profiles'][0].update(name=' alex EXAMPLE '), 'duplicate professional'),
+            (lambda: self.module['additional_profiles'][0].update(claim_ids=['unknown']), 'known claim_ids'),
+        ):
+            with self.subTest(error=error):
+                self.profiles()
+                mutation()
+                self.assertTrue(any(error in e for e in self.result()['errors']))
+
     def test_source_identity_preserves_queries(self):
         self.assertEqual(FACTS.source_id("https://example.org/product#page=4"), self.source["id"])
         self.assertNotEqual(FACTS.source_id("https://example.org/product?lang=de"), self.source["id"])

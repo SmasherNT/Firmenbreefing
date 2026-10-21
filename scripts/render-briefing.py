@@ -175,10 +175,22 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
                         raise ValueError("region section label missing")
                     require(section.get("claim_ids"))
         profile = view.get("profile")
+        if "additional_profiles" in view and profile is None:
+            raise ValueError("additional_profiles requires a primary profile")
         if profile is not None:
-            if role != "context" or not manifest.get("person") or not CHECK.text(profile.get("name")):
+            if role != "context" or not manifest.get("person"):
                 raise ValueError("profile needs named person and context role")
             PROFILE.validate(profile, require, manifest["as_of"], claims)
+            extra_profiles = view.get("additional_profiles", [])
+            if not isinstance(extra_profiles, list):
+                raise ValueError("additional_profiles must be a list")
+            names = {profile['name'].strip().casefold()}
+            for extra_profile in extra_profiles:
+                PROFILE.validate(extra_profile, require, manifest['as_of'], claims)
+                name = extra_profile['name'].strip().casefold()
+                if name in names:
+                    raise ValueError('duplicate professional profile name')
+                names.add(name)
         if view.get('market_dashboard') is not None:
             if role != 'market':
                 raise ValueError('market_dashboard belongs to market role')
@@ -487,7 +499,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     main += '<section class="module"><details class="data-gaps"><summary style="cursor:pointer"><h2 style="display:inline;margin:0">Datenlücken &amp; offene Fragen</h2></summary><div style="margin-top:18px">' + limits + '</div></details></section>'
     profile_body = '<p>Kein Gesprächspartner im Auftrag angegeben.</p>'
     person_sources = ''
-    person_media = ''
+    profile_pages = []
     if manifest.get('person'):
         profile = views.get('context', {}).get('profile')
         person = manifest['person']
@@ -502,9 +514,16 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
             raise ValueError('person must be text or name/role object')
         body = '<p class="meta">Gesprächspartner aus dem Auftrag (Nutzerangabe): ' + esc(person) + '</p>'
         if profile:
-            body = PROFILE.render(profile, claims, sources, manifest['company'], manifest['as_of'])
-            person_sources = section('Gesprächspartner · Quellen & Evidenz', PROFILE.render_sources(profile, claims, sources), 'person-profile-sources')
-            person_media = PROFILE.render_media(profile, claims, manifest['as_of'], sources)
+            all_profiles = [profile] + views.get('context', {}).get('additional_profiles', [])
+            for index, item in enumerate(all_profiles, 1):
+                # Reuse the current profile renderer; namespace its internal IDs.
+                prefix = 'person-' if index == 1 else 'person-' + str(index) + '-'
+                namespaced = lambda html: html.replace('id="person-', 'id="' + prefix).replace('href="#person-', 'href="#' + prefix)
+                item_body = '<section class="module profile-module">' + namespaced(PROFILE.render(item, claims, sources, manifest['company'], manifest['as_of'])) + '</section>'
+                item_media = namespaced(PROFILE.render_media(item, claims, manifest['as_of'], sources))
+                item_sources = namespaced(PROFILE.render_sources(item, claims, sources))
+                person_sources += section(item['name'] + ' · Quellen & Evidenz', item_sources, prefix + 'profile-sources')
+                profile_pages.append(('page-profile' if index == 1 else 'page-profile-' + str(index), item['name'], item_body + item_media))
         else:
             body += '<p>Berufliches Profil öffentlich nicht verifiziert.</p>'
         profile_body = body
@@ -533,7 +552,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
         main += ''.join(regional)
         pages = [('page-main', 'Überblick', main)]
         if manifest.get('person'):
-            pages.append(('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media))
+            pages.extend(profile_pages or [('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body))])
         def focus_details(ids):
             return '<div class="focus-evidence">' + ''.join('<p>' + esc(claims[c]['statement']) + '</p>' + paragraphs([claims[c].get('uncertainty')]) for c in dict.fromkeys(ids)) + links(ids) + '</div>'
         for page in focus_pages:
@@ -541,8 +560,9 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     else:
         # Explicit compatibility for reviewed historical runs only.
         market_label = 'Markt-Deep-Dive' + (' · ' + manifest['market_title'] if manifest.get('market_title') else '')
-        pages = [('page-main', 'Überblick', main), ('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body) + person_media),
-                 ('page-regions', market_label, ''.join(regions) or section(market_label, '<p>Keine freigegebenen regionalen Befunde für diesen Auftrag.</p>'))]
+        pages = [('page-main', 'Überblick', main)]
+        pages.extend(profile_pages or [('page-profile', 'Gesprächspartner', section('Gesprächspartner', profile_body))])
+        pages.append(('page-regions', market_label, ''.join(regions) or section(market_label, '<p>Keine freigegebenen regionalen Befunde für diesen Auftrag.</p>')))
     register = '<label class="source-search">Quellen und Aussagen durchsuchen<input id="source-search-input" type="search" placeholder="Stichwort, Claim oder Quelle"></label>'
     for cid, row in claims.items():
         status = reviews.get(cid, {}).get('status', 'nicht einzeln geprüft')

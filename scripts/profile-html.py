@@ -135,7 +135,7 @@ def render_media(profile, claims, as_of, sources=None):
     entries = sorted(profile.get('media', []), key=lambda x:x['published_date'], reverse=True)
     start, end = media_window(as_of)
     labels = {**MEDIA_CATEGORIES, 'media':'Artikel über '+profile['name']}
-    out = ['<section class="module" id="person-media"><h2>Aktuelle Äußerungen &amp; Medienpräsenz der letzten vier Monate</h2>',
+    out = ['<section class="module profile-media" id="person-media"><h2>Aktuelle Äußerungen &amp; Medienpräsenz der letzten vier Monate</h2>',
         '<div class="pm-head"><p class="pm-window">'+start.strftime('%d.%m.%Y')+'–'+end.strftime('%d.%m.%Y')+' · Nach Veröffentlichung sortiert</p><div class="pm-legend" aria-label="Kategorien">']
     out += ['<span class="pm-tag pm-'+key+'">'+ESC(label)+'</span>' for key,label in labels.items()]
     out += ['</div></div><div class="timeline pm-timeline">']
