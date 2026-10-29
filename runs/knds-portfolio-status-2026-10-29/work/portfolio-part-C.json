@@ -1,0 +1,1972 @@
+{
+ "schema_version": 1,
+ "mode": "facts-v2",
+ "role": "portfolio",
+ "run_id": "knds-portfolio-status-2026-10-29",
+ "company": "KNDS N.V.",
+ "as_of": "2026-10-29",
+ "scope": "KNDS group product portfolio: current public status (announcement, prototype/testing, series production/deliveries, operational use by customers) per product for the portfolio-status-v2 matrix. Statements in English to match the delivered English briefing. Teilauftrag C: gun ammunition (BONUS, KATANA, SHARD), MATARIS loitering munitions and robotics (NERVA-LG, NERVA-XX, CENTURIO, ULTRO).",
+ "status": "teilweise",
+ "products": [
+  {
+   "id": "gun-ammunition",
+   "label": "Gun ammunition (20–155 mm)",
+   "short_label": "Gun ammunition",
+   "domain": "Ammunition",
+   "claim_ids": [
+    "P-13",
+    "P-SC-001",
+    "P-SC-002",
+    "P-SC-003",
+    "P-SC-004",
+    "P-SC-005",
+    "P-SC-006"
+   ]
+  },
+  {
+   "id": "bonus",
+   "label": "BONUS (155 mm)",
+   "short_label": "BONUS",
+   "domain": "Ammunition",
+   "claim_ids": [
+    "P-13",
+    "P-SC-007",
+    "P-SC-008"
+   ]
+  },
+  {
+   "id": "katana",
+   "label": "KATANA (155 mm)",
+   "short_label": "KATANA",
+   "domain": "Ammunition",
+   "claim_ids": [
+    "P-13",
+    "P-SC-009",
+    "P-SC-010",
+    "P-SC-011",
+    "P-SC-012",
+    "P-SC-013"
+   ]
+  },
+  {
+   "id": "shard",
+   "label": "SHARD (120 mm APFSDS)",
+   "short_label": "SHARD",
+   "domain": "Ammunition",
+   "claim_ids": [
+    "P-13",
+    "P-SC-014",
+    "P-SC-015",
+    "P-SC-016",
+    "P-SC-017"
+   ]
+  },
+  {
+   "id": "mataris-mv-100",
+   "label": "MATARIS MV-100 VELOCE",
+   "short_label": "MV-100 VELOCE",
+   "domain": "Ammunition",
+   "claim_ids": [
+    "P-14",
+    "P-SC-018",
+    "P-SC-019",
+    "P-SC-028",
+    "P-SC-029",
+    "P-SC-030",
+    "P-SC-031"
+   ]
+  },
+  {
+   "id": "mataris-mv-25",
+   "label": "MATARIS MV-25 OSKAR",
+   "short_label": "MV-25 OSKAR",
+   "domain": "Ammunition",
+   "claim_ids": [
+    "P-14",
+    "P-SC-018",
+    "P-SC-019",
+    "P-SC-024",
+    "P-SC-025",
+    "P-SC-026",
+    "P-SC-027"
+   ]
+  },
+  {
+   "id": "mataris-mt-10",
+   "label": "MATARIS MT-10",
+   "short_label": "MT-10",
+   "domain": "Ammunition",
+   "claim_ids": [
+    "P-14",
+    "P-SC-018",
+    "P-SC-019",
+    "P-SC-032",
+    "P-SC-033",
+    "P-SC-034",
+    "P-SC-035"
+   ]
+  },
+  {
+   "id": "mataris-mx-10",
+   "label": "MATARIS MX-10 DAMOCLES",
+   "short_label": "MX-10 DAMOCLES",
+   "domain": "Ammunition",
+   "claim_ids": [
+    "P-14",
+    "P-SC-018",
+    "P-SC-019",
+    "P-SC-020",
+    "P-SC-021",
+    "P-SC-022",
+    "P-SC-023"
+   ]
+  },
+  {
+   "id": "nerva-lg",
+   "label": "NERVA-LG",
+   "short_label": "NERVA-LG",
+   "domain": "Robotics",
+   "claim_ids": [
+    "P-15",
+    "P-SC-036",
+    "P-SC-037",
+    "P-SC-038",
+    "P-SC-039",
+    "P-SC-040",
+    "P-SC-041",
+    "P-SC-042",
+    "P-SC-043"
+   ]
+  },
+  {
+   "id": "nerva-xx",
+   "label": "NERVA-XX",
+   "short_label": "NERVA-XX",
+   "domain": "Robotics",
+   "claim_ids": [
+    "P-16",
+    "P-SC-037",
+    "P-SC-040",
+    "P-SC-043",
+    "P-SC-044",
+    "P-SC-045",
+    "P-SC-046"
+   ]
+  },
+  {
+   "id": "centurio",
+   "label": "CENTURIO",
+   "short_label": "CENTURIO",
+   "domain": "Robotics",
+   "claim_ids": [
+    "P-16",
+    "P-SC-047",
+    "P-SC-048",
+    "P-SC-049"
+   ]
+  },
+  {
+   "id": "ultro",
+   "label": "ULTRO",
+   "short_label": "ULTRO",
+   "domain": "Robotics",
+   "claim_ids": [
+    "P-16",
+    "P-SC-035",
+    "P-SC-050",
+    "P-SC-051"
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "id": "P-13",
+   "statement": "According to the manufacturer, KNDS's ammunition portfolio ranges from 20 to 155 mm and includes artillery, tank, naval and medium-calibre ammunition; examples are BONUS, KATANA and SHARD.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-ce3e22104f8c89b5"
+   ],
+   "evidence": "Paraphrase: The 20–155 mm calibre range and the named families are catalogued.",
+   "location": "Ammunition; Artillery; Tank; Naval; Medium caliber",
+   "uncertainty": "No uniform delivery/qualification status across all ammunition variants."
+  },
+  {
+   "id": "P-14",
+   "statement": "KNDS lists MATARIS as a family of remotely controlled munitions comprising MV-100 VELOCE, MV-25 OSKAR, MT-10 and MX-10 DAMOCLES.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-ce3e22104f8c89b5"
+   ],
+   "evidence": "Paraphrase: MATARIS and 4 named products appear in the product list.",
+   "location": "Loitering munitions / MATARIS",
+   "uncertainty": "A catalogue entry alone documents neither delivery nor series production status."
+  },
+  {
+   "id": "P-15",
+   "statement": "KNDS offers NERVA-LG as a small, reconfigurable ground robot for reconnaissance, observation and detection, including IED/CBRN tasks.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4242af39d20d3562"
+   ],
+   "evidence": "Paraphrase: multi-mission robotics, remote observation, detection and various payloads.",
+   "location": "introduction; Versatility & Agility in operation",
+   "uncertainty": "No specific customer/delivery status can be established from this product page."
+  },
+  {
+   "id": "P-16",
+   "statement": "KNDS's robotics offering lists NERVA-XX, CENTURIO and ULTRO alongside NERVA-LG.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4f97ad522106cb38"
+   ],
+   "evidence": "Paraphrase: The robotics list names NERVA-LG, NERVA-XX, CENTURIO and ULTRO.",
+   "location": "Robotics",
+   "uncertainty": "The status of each robot type must be checked separately."
+  },
+  {
+   "id": "P-SC-001",
+   "statement": "According to KNDS, its 155mm ammunition portfolio is qualified for use on the CAESAr self-propelled gun and is compatible with all NATO-standard 155mm howitzers; the LU family has a base-bleed option and the family also includes BONUS and KATANA.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-aadcb3da199c3d17"
+   ],
+   "evidence": "Excerpt: \"KNDS 155mm portfolio is qualified for use on CAESAr SPG and is compatible with all NATO standard 155mm howitzers.\"",
+   "location": "155mm Ammunition product page, intro and Advantages list",
+   "uncertainty": "Manufacturer statement on a product page; no qualification date and no customer named. Qualification on other guns is stated only for named rounds in the catalogue.",
+   "proposed_depth": "A",
+   "event_status": "abgeschlossen"
+  },
+  {
+   "id": "P-SC-002",
+   "statement": "According to the KNDS Ammunition Catalogue 2026-2027, the 155mm LU 211 high-explosive shell is qualified on CAESAR and PZH2000 and is described as a combat-proven, ITAR-free solution in service in multiple armed forces around the world.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2a19a44bae9c9218"
+   ],
+   "evidence": "Excerpt: \"Qualified on CAESAR and PZH2000 and compatible with other 155mm JBMoU compliant systems\"; Paraphrase: the Advantages list also calls LU 211 a combat-proven ITAR-free solution in service in multiple armed forces around the world.",
+   "location": "Catalogue PDF page 12 (155 MM LU 211, Advantages)",
+   "uncertainty": "Manufacturer catalogue; users are not named and no delivery figures are given.",
+   "proposed_depth": "A",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SC-003",
+   "statement": "According to KNDS, further rounds in its 20-155 mm range are in service: the 120mm cannister round in the French armed forces, a 155mm shell upgraded from the M107 in various armed forces, and 30x150mm rounds in the French Air Force and other forces.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2a19a44bae9c9218"
+   ],
+   "evidence": "Excerpt: \"In service in the French armed forces\" (120mm CAN); \"Combat proven solution, in service in various armed forces around the world\" (155mm, p.17); \"Combat proven solution, in service in French Air Force and other\" (30mm, p.80)",
+   "location": "Catalogue PDF pages 17, 44 and 80 (Advantages lists)",
+   "uncertainty": "Catalogue statements per product; the range is not uniform and many entries carry no status wording. Customers beyond France are not named.",
+   "proposed_depth": "A",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SC-004",
+   "statement": "According to KNDS, the Belgian Minister of Defence inaugurated on 4 November 2025 a new automated 155 mm artillery-shell production line at KNDS Belgium, which added to two existing production lines.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-674182f0d8468117",
+    "S-6c84242ff77b4c1c"
+   ],
+   "evidence": "Excerpt: \"inaugurated a new Large-Calibre Machining and Banding Unit (UCGC) ... The facility includes an automated production line for 155 mm artillery shells, ... which already included two production lines\"",
+   "location": "KNDS press release, first paragraph; EDR Magazine, first paragraph (dateline 4 November 2025)",
+   "uncertainty": "The press release text read does not state the date; the date is taken from the EDR copy. No output rate is given.",
+   "proposed_depth": "A",
+   "event_date": "2025-11-04",
+   "event_status": "durchgeführt",
+   "evidence_items": [
+    {
+     "source_id": "S-674182f0d8468117",
+     "text": "Paraphrase: Minister Francken inaugurated a new large-calibre machining and banding unit with an automated 155 mm shell line, added to two existing lines.",
+     "mode": "Paraphrase",
+     "location": "Press release, first paragraph"
+    },
+    {
+     "source_id": "S-6c84242ff77b4c1c",
+     "text": "Excerpt: \"Petit-Roeulx-Lez-Nivelles, Tuesday, November 4 2025 – The Belgian Minister of Defence ... inaugurated a new Large-Calibre Machining and Driving-Band assembly unit (UCGC)\"",
+     "mode": "Auszug",
+     "location": "EDR Magazine copy, first paragraph"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-005",
+   "statement": "According to the director of KNDS Belgium (press release of 4 November 2025), nearly six months of production in 2026 will be dedicated to shells for the Belgian Defence; the Belgian Minister states that Belgian munitions will be fired from the CAESAR howitzers in 2026.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-674182f0d8468117",
+    "S-6c84242ff77b4c1c"
+   ],
+   "evidence": "Excerpt: \"In 2026, nearly six months of production will be dedicated to shells for the Belgian Defence.\"",
+   "location": "KNDS press release, quotations of Mr. Girard and Minister Francken; EDR copy",
+   "uncertainty": "Planned 2026 production for one customer; no quantity and no delivery confirmation.",
+   "proposed_depth": "A",
+   "event_date": "2026",
+   "event_status": "geplant",
+   "evidence_items": [
+    {
+     "source_id": "S-674182f0d8468117",
+     "text": "Excerpt: \"In 2026, nearly six months of production will be dedicated to shells for the Belgian Defence.\"",
+     "mode": "Auszug",
+     "location": "Press release, Girard quotation"
+    },
+    {
+     "source_id": "S-6c84242ff77b4c1c",
+     "text": "Excerpt: \"In 2026, nearly six months of production will be dedicated to shells for the Belgian Defence.\"",
+     "mode": "Auszug",
+     "location": "EDR copy, Girard quotation"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-006",
+   "statement": "Niewiadow-PGM states in a company communique, reported on 18 June 2026, that it signed a one-year strategic cooperation agreement with KNDS Ammo France on 155 mm ammunition production and supply, with local production of complete rounds (target 180,000 per year) and a framework agreement aimed for end of 2026.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-b089d8c896987d3f"
+   ],
+   "evidence": "Paraphrase: The agreement regulates general cooperation principles for 155 mm production and supply for the Polish MoD and KNDS customers; qualification of polonised KNDS 155 mm solutions in KRAB and K9 is planned; target 180,000 rounds a year; one-year term, framework agreement targeted by end of 2026.",
+   "location": "Article body, paragraphs 1-6",
+   "uncertainty": "Planned production under a cooperation agreement; no production start, qualification result or delivery is reported. Partner statement in Polish.",
+   "proposed_depth": "A",
+   "event_date": "2026-06-18",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SC-007",
+   "statement": "According to KNDS, the 155mm BONUS MkII is listed on its product page with the status \"In service\"; KNDS states the shell is combat proven in operation by the French Army.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-b43dc0babc198b25",
+    "S-2a19a44bae9c9218"
+   ],
+   "evidence": "Excerpt: \"The BONUS MkII shell's distinctive feature is its unrivalled hit probability, which has been combat proven in operation by the French Army!\"; Status: \"In service\"",
+   "location": "KNDS 155mm Bonus page, intro and Product Features / Status; catalogue PDF page 9 (Advantages: Combat proven solution)",
+   "uncertainty": "Manufacturer statements; the French Army operation and the number of users are not documented in the sources read.",
+   "proposed_depth": "A",
+   "event_status": "laufend",
+   "evidence_items": [
+    {
+     "source_id": "S-b43dc0babc198b25",
+     "text": "Excerpt: \"BONUS MkII shell's distinctive feature is its unrivalled hit probability, which has been combat proven in operation by the French Army!\" and Status \"In service\"",
+     "mode": "Auszug",
+     "location": "Product page, introduction and Product Features / Status"
+    },
+    {
+     "source_id": "S-2a19a44bae9c9218",
+     "text": "Excerpt: \"Combat proven solution, showcasing unrivalled hit and destruction probability\"",
+     "mode": "Auszug",
+     "location": "Catalogue PDF page 9, Advantages"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-008",
+   "statement": "The Finnish Ministry of Defence authorised the Finnish Defence Forces on 24 February 2023 to procure more 155mm BONUS Mk II special munitions from Nexter, with a value of about EUR 35 million excluding VAT; an earlier 2014 authorisation and first firings by the Finnish Army in November 2016 are reported.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-a31e610f0253ec38",
+    "S-3f82023a2b6d96d7"
+   ],
+   "evidence": "Excerpt: \"The overall value of the procurement without value-added tax is about EUR 35 million\"; \"The first Bonus rounds were fired by the Finnish Army on November 2016.\"",
+   "location": "Defence Industry Europe, paragraphs 1-2 and 5; Defence24, first paragraph",
+   "uncertainty": "Trade media relay the ministry release (primary text not opened). Quantity and delivery schedule not disclosed. BONUS is co-developed with BAE Systems Bofors; the KNDS share of final assembly is not documented here.",
+   "proposed_depth": "A",
+   "event_date": "2023-02-24",
+   "event_status": "beauftragt",
+   "evidence_items": [
+    {
+     "source_id": "S-a31e610f0253ec38",
+     "text": "Excerpt: \"Finland's Ministry of Defence has authorised the Defence Forces to procure more 155mm Bonus MK II special munitions\"; \"The overall value ... without value-added tax is about EUR 35 million\"; first rounds fired November 2016",
+     "mode": "Auszug",
+     "location": "Defence Industry Europe, paragraphs 1-2 and 5"
+    },
+    {
+     "source_id": "S-3f82023a2b6d96d7",
+     "text": "Paraphrase: Finnish MoD authorised the purchase of a large quantity of 155 mm Bonus MK II from Nexter Munitions; net value about EUR 35 million.",
+     "mode": "Paraphrase",
+     "location": "Defence24, first paragraph (Polish)"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-009",
+   "statement": "According to KNDS, KATANA is a 155mm precision-guided fire-and-forget artillery munition with combined GNSS/inertial guidance, offered on its product page and in the 2026-2027 ammunition catalogue.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-89dce88192650540",
+    "S-2a19a44bae9c9218"
+   ],
+   "evidence": "Excerpt: \"KATANA is a guided artillery ammunition for 155mm JBMoU compliant systems for precision strikes over 45km.\"",
+   "location": "KATANA product page, intro and specifications; catalogue PDF page 10",
+   "uncertainty": "Product-page and catalogue wording differ on guidance mode (page lists GPS, INS and semi-active laser; catalogue lists GNSS/inertial) and accuracy (sub-meter vs decametric); presence in a catalogue is not evidence of series production.",
+   "proposed_depth": "A",
+   "event_status": "angekündigt",
+   "evidence_items": [
+    {
+     "source_id": "S-89dce88192650540",
+     "text": "Paraphrase: KATANA described as 155mm precision-guided munition, multiple guidance modes incl. GPS, inertial and semi-active laser, range over 40 km.",
+     "mode": "Paraphrase",
+     "location": "KATANA product page, intro and 'Why choose KATANA?'"
+    },
+    {
+     "source_id": "S-2a19a44bae9c9218",
+     "text": "Excerpt: \"KATANA is a guided artillery ammunition for 155mm JBMoU compliant systems for precision strikes over 45km. ... combined GNSS and inertial unit guidance system paired with folding fins\"",
+     "mode": "Auszug",
+     "location": "Catalogue PDF page 10, Mission"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-010",
+   "statement": "According to Nexter (now KNDS France), a test campaign in Sweden from 7 to 11 December 2020, with KATANA fired from a 155mm CAESAR gun on a carriage, confirmed the flight-control capability: all canard actuation systems deployed as simulated; the first coordinate-guided firings were scheduled for 2021 and marketing was targeted for as early as 2023.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-cacbe83eed4a50bb"
+   ],
+   "evidence": "Excerpt: \"The success of this test campaign in Sweden from December 7 to 11 2020 marks a decisive milestone for the KATANA development programme.\"; \"The next test campaign, scheduled for 2021, will give rise to the first coordinate-guided and coordinate-controlled firings.\"",
+   "location": "Article, paragraphs 1-3",
+   "uncertainty": "Trade-media report of a manufacturer statement from January 2021; the 2023 marketing target was not met according to later KNDS statements.",
+   "proposed_depth": "A",
+   "event_date": "2020-12-07",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SC-011",
+   "statement": "According to KNDS (press release of 21 June 2024), the French procurement agency DGA notified a contract to KNDS France to support the development of KATANA.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-b960b68760070182",
+    "S-7a154b749e856b87"
+   ],
+   "evidence": "Excerpt: \"The French procurement agency (DGA) has notified a contract to KNDS France to support the development of the KATANA® high-precision guided ammunition.\"",
+   "location": "KNDS press release, first paragraph; Defense Post, first paragraph",
+   "uncertainty": "Development-support contract, not a production order; value and scope not disclosed. DGA primary document not read.",
+   "proposed_depth": "A",
+   "event_date": "2024-06-21",
+   "event_status": "beauftragt",
+   "evidence_items": [
+    {
+     "source_id": "S-b960b68760070182",
+     "text": "Excerpt: \"The French procurement agency (DGA) has notified a contract to KNDS France to support the development of the KATANA® high-precision guided ammunition.\"",
+     "mode": "Auszug",
+     "location": "Press release, paragraph 2"
+    },
+    {
+     "source_id": "S-7a154b749e856b87",
+     "text": "Excerpt: \"The French defense procurement agency has contracted KNDS France for its support in developing the Katana high precision guided ammunition.\"",
+     "mode": "Auszug",
+     "location": "Defense Post, first paragraph"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-012",
+   "statement": "According to KNDS (press release of 21 June 2024), in recent firing campaigns KATANA demonstrated accuracy of just a few metres, can now be fired at full charge to the maximum range of a 52-calibre gun, and evaluation of its resistance to jamming with DGA support began in 2024.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-b960b68760070182"
+   ],
+   "evidence": "Excerpt: \"During recent firing campaigns, KATANA® demonstrated accuracy of just a few metres\"; \"evaluation of the ammunition's ability to withstand various forms of jamming began in 2024\"",
+   "location": "KNDS press release, section 'Essential capabilities for future warfare'",
+   "uncertainty": "Manufacturer statement; firing dates, number of rounds and the outcome of the jamming evaluation are not given. No later test report was found.",
+   "proposed_depth": "A",
+   "event_date": "2024-06-21",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SC-013",
+   "statement": "According to KNDS (press release of 21 June 2024), the KATANA ammunition was at demonstrator level (TRL 6) and would be offered for sale within the next two years.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-b960b68760070182",
+    "S-7a154b749e856b87"
+   ],
+   "evidence": "Excerpt: \"The KATANA® ammunition is currently at the demonstrator level (TRL6). It will be offered for sale within the next two years.\"",
+   "location": "KNDS press release, last paragraph of body; Defense Post, paragraph 2",
+   "uncertainty": "Forecast stated in 2024; no source read confirms qualification, an order or series production up to 29 October 2026.",
+   "proposed_depth": "A",
+   "event_date": "2024-06-21",
+   "event_status": "geplant",
+   "evidence_items": [
+    {
+     "source_id": "S-b960b68760070182",
+     "text": "Excerpt: \"The KATANA® ammunition is currently at the demonstrator level (TRL6). It will be offered for sale within the next two years.\"",
+     "mode": "Auszug",
+     "location": "Press release, final body paragraph"
+    },
+    {
+     "source_id": "S-7a154b749e856b87",
+     "text": "Excerpt: \"The 155 mm shell is currently at technology readiness level 6 (demonstration), with sale approval expected in two years.\"",
+     "mode": "Auszug",
+     "location": "Defense Post, paragraph 2"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-014",
+   "statement": "According to KNDS, the 120mm SHARD APFSDS tank round (tungsten penetrator, lightweight sabot) has already been fired from Leclerc (L52) and Leopard 2 (L44/L55) guns; KNDS claims +15% penetration compared with existing APFSDS rounds and 25% reduced barrel wear.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2a19a44bae9c9218"
+   ],
+   "evidence": "Excerpt: \"Already fired from Leclerc (L52) and Leopard 2 (L44/L55)\"; \"+15% penetration compared to existing APFSDS rounds\"",
+   "location": "Catalogue PDF page 43 (SHARD APFSDS)",
+   "uncertainty": "Performance figures are manufacturer claims.",
+   "proposed_depth": "A",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SC-015",
+   "statement": "According to Nexter/KNDS (announced 29 February 2024), SHARD was qualified in late 2023 and is ready for mass production; a demonstration for Leclerc and Leopard 2 users took place in late 2023 in Alcochete, Portugal.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-236a4e15250320c1"
+   ],
+   "evidence": "Excerpt: \"Nexter announced on 29 February 2024 that in late 2023 it qualified its SHARD new-generation 120 mm armoured-piercing, fin-stabilised, discarding sabot (APFSDS) tank ammunition, adding that it is now ready for mass production.\"",
+   "location": "Article, paragraphs 1 and 6",
+   "uncertainty": "Qualifying authority and test standard are not named in the article (sources differ on STANAG reference); readiness for mass production is a manufacturer statement.",
+   "proposed_depth": "A",
+   "event_date": "2023",
+   "event_status": "abgeschlossen"
+  },
+  {
+   "id": "P-SC-016",
+   "statement": "According to KNDS (press release of 18 February 2026 as cited by Calibre Defence and European Security & Defence), the French DGA ordered several thousand SHARD new-generation APFSDS rounds from KNDS Ammo France for the French cavalry.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-f867eabd40cee703",
+    "S-e72bc468a97fc7d0"
+   ],
+   "evidence": "Excerpt: \"The French Defence Procurement Agency (DGA) has placed an order with KNDS Ammo for several thousand SHARD new-generation Armour Piercing Fin-Stabilized Discarded Sabot (APFSDS) rounds.\"",
+   "location": "European Security & Defence, paragraph 2; Calibre Defence, paragraph 2",
+   "uncertainty": "KNDS press release not opened directly; DGA/ministry confirmation not read. Delivery timeframe not stated by KNDS.",
+   "proposed_depth": "A",
+   "event_date": "2026-02-18",
+   "event_status": "beauftragt",
+   "evidence_items": [
+    {
+     "source_id": "S-f867eabd40cee703",
+     "text": "Excerpt: \"The French Defence Procurement Agency (DGA) has placed an order with KNDS Ammo for several thousand SHARD new-generation Armour Piercing Fin-Stabilized Discarded Sabot (APFSDS) rounds.\"",
+     "mode": "Auszug",
+     "location": "European Security & Defence, paragraph 2"
+    },
+    {
+     "source_id": "S-e72bc468a97fc7d0",
+     "text": "Excerpt: \"KNDS France has received an order for thousands of SHARD ... rounds from the French Army\" (February 18 press release cited)",
+     "mode": "Auszug",
+     "location": "Calibre Defence, paragraph 2"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-017",
+   "statement": "Trade media report that the order is a seven-year framework agreement worth more than EUR 100 million, notified by the DGA on 24 December 2025, with production shared with Eurenco for energetic materials and first serial rounds expected around 2029.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-b8f957ad1ccbc530",
+    "S-e72bc468a97fc7d0"
+   ],
+   "evidence": "Excerpt: \"The notification is described as having been issued on 24 December 2025 and later made public, with first serial rounds expected in the 2029 timeframe\"",
+   "location": "Army Recognition, paragraph 3; Calibre Defence, programme milestones list (24 December 2025)",
+   "uncertainty": "Value and 2029 timing are reported by media and described as 'reportedly'; Calibre Defence states the delivery timeframe for France is unclear. Not confirmed in a KNDS/DGA text read.",
+   "proposed_depth": "A",
+   "event_date": "2025-12-24",
+   "event_status": "geplant",
+   "evidence_items": [
+    {
+     "source_id": "S-b8f957ad1ccbc530",
+     "text": "Excerpt: \"a seven-year framework arrangement valued at more than EUR 100 million, with production work shared with Eurenco ... first serial rounds expected in the 2029 timeframe\"",
+     "mode": "Auszug",
+     "location": "Army Recognition, paragraph 3"
+    },
+    {
+     "source_id": "S-e72bc468a97fc7d0",
+     "text": "Excerpt: \"24 December 2025 — DGA notifies KNDS Ammo France of a framework order for several thousand SHARD rounds under a seven-year agreement valued at more than €100 million.\"",
+     "mode": "Auszug",
+     "location": "Calibre Defence, programme milestones list"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-018",
+   "statement": "According to KNDS (press release of 18 June 2026), the MATARIS family is the first sovereign complete line of loitering munitions, developed with Delair and EOS Technologie, and its relevance has been validated by the French Army with the MX-10 in active service since December 2025.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-89bdf6749f713790"
+   ],
+   "evidence": "Excerpt: \"Its relevance has already been validated by the French Army, with the MX-10 in active service since December 2025.\"",
+   "location": "KNDS press release, section 'KNDS warhead and loitering munition expertise'",
+   "uncertainty": "Manufacturer statement; applies to the MX-10 only, not to the other MATARIS members.",
+   "proposed_depth": "A",
+   "event_date": "2026-06-18",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SC-019",
+   "statement": "Trade media report that KNDS France unveiled the MATARIS family (MT-10, MX-10 DAMOCLES, MV-25 OSKAR, MV-100 VELOCE 330) at IDEX 2025 and detailed it at the Paris Air Show in June 2025, with partners Delair and EOS Technologie.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-3a3cf5ff81f73786",
+    "S-ff9d328558f6334a"
+   ],
+   "evidence": "Excerpt: \"At IDEX 2025 KNDS France unveiled its family of loitering munitions, named Mataris.\"",
+   "location": "EDR Magazine, paragraph 1; Defence Industry Europe, paragraphs 1-2",
+   "uncertainty": "Announcement-level fact; the status of each member differs (see product rows).",
+   "proposed_depth": "A",
+   "event_date": "2025",
+   "event_status": "angekündigt",
+   "evidence_items": [
+    {
+     "source_id": "S-3a3cf5ff81f73786",
+     "text": "Excerpt: \"At IDEX 2025 KNDS France unveiled its family of loitering munitions, named Mataris.\"",
+     "mode": "Auszug",
+     "location": "EDR Magazine, paragraph 1"
+    },
+    {
+     "source_id": "S-ff9d328558f6334a",
+     "text": "Paraphrase: KNDS France with DELAIR and EOS Technologie launched MATARIS with four solutions: MT-10, MX-10 DAMOCLES, MV-25 OSKAR, MV-100 VELOCE 330.",
+     "mode": "Paraphrase",
+     "location": "Defence Industry Europe, paragraphs 1-2"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-020",
+   "statement": "According to Breaking Defense (citing KNDS at the June 2025 Paris Air Show), a DGA contract signed in July 2024 covers 2,270 MX-10 DAMOCLES to be delivered in tranches over seven years, with a firm first tranche of 460; the DGA reportedly wants production of 2,000 per year.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-6efe75db8d4fd730"
+   ],
+   "evidence": "Excerpt: \"A contract from the DGA was signed in July 2024 for 2,270 Damocles to be delivered in tranches over the next seven years. The first, firm tranche is for 460\"",
+   "location": "Breaking Defense, paragraph on MX-10 Damocles",
+   "uncertainty": "Order size and production rate come from company statements to the press; other sources describe 460 as the quantity to be delivered by July 2026. Not confirmed in a DGA text read.",
+   "proposed_depth": "A",
+   "event_date": "2024-07",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SC-021",
+   "statement": "According to the French Ministry of the Armed Forces (as reported by Army Recognition), the DGA qualified the initial MX-10 DAMOCLES standard on 21 November 2025 and the first units were handed over to the Joint Munitions Service on 2 December 2025; the Ministry announced the delivery on 22 January 2026.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-2947965d6409d2ab",
+    "S-459a4d4a1990b30e"
+   ],
+   "evidence": "Excerpt: \"received qualification of its initial standard from the Direction générale de l'armement on 21 November 2025 ... first units were formally handed over to the Joint Munitions Service on 2 December 2025\"",
+   "location": "Army Recognition, paragraphs 1-2; Defense Mirror, paragraphs 1 and 4",
+   "uncertainty": "Ministry text not opened directly; both sources are secondary. Number of units delivered so far is not stated.",
+   "proposed_depth": "A",
+   "event_date": "2025-12-02",
+   "event_status": "abgeschlossen",
+   "evidence_items": [
+    {
+     "source_id": "S-2947965d6409d2ab",
+     "text": "Excerpt: \"received qualification of its initial standard from the Direction générale de l'armement on 21 November 2025 ... The first units were formally handed over to the Joint Munitions Service on 2 December 2025\"",
+     "mode": "Auszug",
+     "location": "Army Recognition, paragraph 2"
+    },
+    {
+     "source_id": "S-459a4d4a1990b30e",
+     "text": "Excerpt: \"Deliveries to the armed forces began in early December 2025, shortly after qualification\"",
+     "mode": "Auszug",
+     "location": "Defense Mirror, paragraph 4"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-022",
+   "statement": "According to KNDS as reported by Defense Mirror, the final DAMOCLES qualification campaign comprised 10 live shots, all successful, after several hundred blank firings in previous months.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-459a4d4a1990b30e"
+   ],
+   "evidence": "Excerpt: \"The final qualification campaign included 10 live shots, all of which were successful, following several hundred blank test firings\"",
+   "location": "Defense Mirror, paragraph 2",
+   "uncertainty": "Single secondary source for the test count.",
+   "proposed_depth": "A",
+   "event_date": "2025-11",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SC-023",
+   "statement": "According to KNDS and Delair (press release of 13 October 2026), the DGA exercised an optional tranche of the July 2024 contract for MX-10 DAMOCLES, adding a further batch for the French armed forces two years after the initial contract and following first deliveries in December 2025.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-b60dbc45fdcac0ac",
+    "S-98f07af64f55666e"
+   ],
+   "evidence": "Excerpt: \"The French Defence Procurement Agency (DGA) has renewed its confidence in KNDS and DELAIR by exercising an optional tranche of the contract signed in 2024.\"",
+   "location": "ASDNews (press release text), paragraphs 1-2; Defense Post, paragraph 1",
+   "uncertainty": "Quantity, value and delivery schedule of the additional batch are not disclosed.",
+   "proposed_depth": "A",
+   "event_date": "2026-10-13",
+   "event_status": "beauftragt",
+   "evidence_items": [
+    {
+     "source_id": "S-b60dbc45fdcac0ac",
+     "text": "Excerpt: \"The French Defence Procurement Agency (DGA) has renewed its confidence in KNDS and DELAIR by exercising an optional tranche of the contract signed in 2024.\"",
+     "mode": "Auszug",
+     "location": "ASDNews, paragraph 1"
+    },
+    {
+     "source_id": "S-98f07af64f55666e",
+     "text": "Excerpt: \"France has placed an order for additional MX-10 Damocles loitering munitions, exercising a contract option with KNDS France.\"",
+     "mode": "Auszug",
+     "location": "Defense Post, paragraph 1"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-024",
+   "statement": "According to Breaking Defense (quoting KNDS and Delair, June 2025), the MV-25 OSKAR was developed under the French Defence Innovation Agency's Colibri project and the DGA decided after the Colibri demonstration to order its industrialisation.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-6efe75db8d4fd730"
+   ],
+   "evidence": "Excerpt: \"According to Travert, after the Colibri demonstration, the DGA decided to order its industrialization.\"",
+   "location": "Breaking Defense, paragraphs on MV-25 Oskar",
+   "uncertainty": "Company statement; no DGA contract value or quantity found.",
+   "proposed_depth": "A",
+   "event_date": "2025-06-19",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SC-025",
+   "statement": "According to KNDS, the MV-25 OSKAR completed a test flight with a live warhead in June 2024.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-ff9d328558f6334a",
+    "S-937ae61f03cd1731"
+   ],
+   "evidence": "Excerpt: \"successfully test-flown with a live warhead in June 2024\"",
+   "location": "Defence Industry Europe, paragraph 4; Euromaidan Press, paragraph 5",
+   "uncertainty": "Manufacturer statement relayed by media; no test report read.",
+   "proposed_depth": "A",
+   "event_date": "2024-06",
+   "event_status": "durchgeführt",
+   "evidence_items": [
+    {
+     "source_id": "S-ff9d328558f6334a",
+     "text": "Excerpt: \"was successfully test-flown with a live warhead in June 2024\"",
+     "mode": "Auszug",
+     "location": "Defence Industry Europe, paragraph 4"
+    },
+    {
+     "source_id": "S-937ae61f03cd1731",
+     "text": "Excerpt: \"It successfully underwent a test flight with a live warhead in June 2024.\"",
+     "mode": "Auszug",
+     "location": "Euromaidan Press, paragraph 5"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-026",
+   "statement": "According to KNDS (June 2025), Ukraine has received and is deploying the MV-25 OSKAR with positive feedback from the Ukrainian Armed Forces; KNDS's product page calls it the only French combat-proven loitering munition.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-937ae61f03cd1731",
+    "S-ff9d328558f6334a",
+    "S-683ba892c2c8c1d5"
+   ],
+   "evidence": "Excerpt: \"Ukraine has officially received and deployed the MV-25 Oskar loitering munition ... KNDS France ... stated the drone is already in operational use\"",
+   "location": "Euromaidan Press, paragraph 3; Defence Industry Europe, paragraph 4; KNDS product page, paragraph 2",
+   "uncertainty": "All sources trace to KNDS statements; no independent confirmation, quantities or delivery dates found.",
+   "proposed_depth": "A",
+   "event_date": "2025-06",
+   "event_status": "laufend",
+   "evidence_items": [
+    {
+     "source_id": "S-937ae61f03cd1731",
+     "text": "Excerpt: \"Ukraine has officially received and deployed the MV-25 Oskar loitering munition ... KNDS France ... stated the drone is already in operational use\"",
+     "mode": "Auszug",
+     "location": "Euromaidan Press, paragraph 3"
+    },
+    {
+     "source_id": "S-ff9d328558f6334a",
+     "text": "Excerpt: \"the MV-25 OSKAR ... is already operational in Ukraine\"",
+     "mode": "Auszug",
+     "location": "Defence Industry Europe, paragraph 4"
+    },
+    {
+     "source_id": "S-683ba892c2c8c1d5",
+     "text": "Excerpt: \"Discover the MV-25 OSKAR, the only French combat-proven loitering munition.\"",
+     "mode": "Auszug",
+     "location": "KNDS MV-25 OSKAR page, paragraph 2"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-027",
+   "statement": "EDR Magazine reports (June 2025) that the MV-25 OSKAR has not been fully qualified under French regulations and is not in service with French forces for the time being.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-3a3cf5ff81f73786"
+   ],
+   "evidence": "Excerpt: \"The MV-25 Oskar has not been fully qualified according to French regulations, and is not in service with French Forces, for the time being.\"",
+   "location": "EDR Magazine, footnote [2]",
+   "uncertainty": "State as of June 2025; no later update found as of 29 October 2026.",
+   "proposed_depth": "A",
+   "event_date": "2025-06-24",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SC-028",
+   "statement": "According to KNDS, the MV-100 VELOCE is a fixed-wing, turbine-powered, top-attack loitering munition developed with EOS Technologie that can carry a 2.5 kg explosively formed penetrator warhead (BONUS-derived) to a distance of up to 100 km; EDR reports it was unveiled as the MV-100 VELOCE 330 at Eurosatory 2024.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-990434c1b62f333f",
+    "S-3a3cf5ff81f73786"
+   ],
+   "evidence": "Excerpt: \"The MV-100 VELOCE is a top attack anti-armoured vehicle loitering munition ... can carry the MW-EFP 2.5 kg ... warhead, similar to the BONUS top attack module, and can reach a distance up to 100 km\"",
+   "location": "KNDS MV-100 page, paragraph 1; EDR Magazine, MV-100 paragraph",
+   "uncertainty": "Page uses 'can carry'; warhead integration is not evidenced as fielded.",
+   "proposed_depth": "A",
+   "event_date": "2024-06",
+   "event_status": "angekündigt",
+   "evidence_items": [
+    {
+     "source_id": "S-990434c1b62f333f",
+     "text": "Excerpt: \"It can carry the MW-EFP 2.5 kg (explosively formed penetrator) warhead, similar to the BONUS top attack module, and can reach a distance up to 100 km\"",
+     "mode": "Auszug",
+     "location": "KNDS MV-100 page, paragraph 1"
+    },
+    {
+     "source_id": "S-3a3cf5ff81f73786",
+     "text": "Excerpt: \"EOS Technologie and KNDS unveiled the MV-100 Veloce 330 at Eurosatory 2024\"",
+     "mode": "Auszug",
+     "location": "EDR Magazine, MV-100 paragraph"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-029",
+   "statement": "The French DGA acquired 23 MV-100 units without warheads for experimentation by the armed forces (17 VELOCE 330 jet-powered and 6 RODEUR 330), with the 17 VELOCE 330 bought for testing and training by the Air and Space Force, Navy and Army, as stated by KNDS and EOS Technologie at the June 2025 Paris Air Show.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-6efe75db8d4fd730",
+    "S-3a3cf5ff81f73786"
+   ],
+   "evidence": "Excerpt: \"France has procured 17 of the MV-100 Veloce 330 for testing and training by the Air & Space Force, Navy and Army.\"",
+   "location": "Breaking Defense, paragraph 2; EDR Magazine, paragraph on MV-100 acquisition",
+   "uncertainty": "Partner/company statements; EOS said the 17 units carry no warhead. Deliveries were scheduled just after the show; completion not confirmed.",
+   "proposed_depth": "A",
+   "event_date": "2025-06",
+   "event_status": "laufend",
+   "evidence_items": [
+    {
+     "source_id": "S-6efe75db8d4fd730",
+     "text": "Excerpt: \"France has procured 17 of the MV-100 Veloce 330 for testing and training by the Air & Space Force, Navy and Army.\"",
+     "mode": "Auszug",
+     "location": "Breaking Defense, paragraph 2"
+    },
+    {
+     "source_id": "S-3a3cf5ff81f73786",
+     "text": "Excerpt: \"the DGA acquired 23 MV-100 that will be distributed to the forces for experimentation ... off those, 17 are of the MV-100 Veloce 330 type, while 6 are MV-100 Rodeur 330\"",
+     "mode": "Auszug",
+     "location": "EDR Magazine, MV-100 acquisition paragraph"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-030",
+   "statement": "According to EOS Technologie (June 2025), the VELOCE 330 entered a new phase of operational qualification and is being tested across the three branches of the French armed forces after more than a hundred test flights and several DGA-validated demonstrations.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-b5d05a3c25aa13c6"
+   ],
+   "evidence": "Excerpt: \"the system is now undergoing testing across all three branches of the French armed forces\"; \"more than a hundred test flights and multiple demonstrations validated by the DGA\"",
+   "location": "SAE Media Group article, paragraphs 1-3",
+   "uncertainty": "Developer statement; qualification outcome and warhead live-fire result not documented.",
+   "proposed_depth": "A",
+   "event_date": "2025-06",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SC-031",
+   "statement": "According to KNDS (June 2025), an operational detonation test of the VELOCE 330 was planned before the end of 2025; EDR reports an initial production of about 100 units per year (2026) and the freezing of the MV-100 development at the end of 2025, with exports considered from 2026.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-ff9d328558f6334a",
+    "S-3a3cf5ff81f73786"
+   ],
+   "evidence": "Excerpt: \"An operational detonation test for the VELOCE 330 is planned before the end of 2025.\"",
+   "location": "Defence Industry Europe, paragraph 5; EDR Magazine, MV-100 production paragraph",
+   "uncertainty": "Plans, not achievements; no source read reports the detonation test result, a series order or start of production.",
+   "proposed_depth": "A",
+   "event_date": "2025-06",
+   "event_status": "geplant",
+   "evidence_items": [
+    {
+     "source_id": "S-ff9d328558f6334a",
+     "text": "Excerpt: \"An operational detonation test for the VELOCE 330 is planned before the end of 2025.\"",
+     "mode": "Auszug",
+     "location": "Defence Industry Europe, paragraph 5"
+    },
+    {
+     "source_id": "S-3a3cf5ff81f73786",
+     "text": "Paraphrase: Initial production of 100 units per year is understood to be the 2026 output; development to be frozen at year end, export phase considered in 2026.",
+     "mode": "Paraphrase",
+     "location": "EDR Magazine, paragraphs on MV-100 freeze and mass production"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-032",
+   "statement": "According to KNDS, the MT-10 is a short-range loitering munition developed by KNDS France with a counter-rotating bi-rotor design, 10 km range and 30 minutes endurance, deployable tube-launched or by vertical take-off.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-7de56aec0f84a3c6"
+   ],
+   "evidence": "Excerpt: \"The MT-10 is a short-range loitering munition, developed by KNDS France. As part of the MATARIS range, it features a folder counter-rotative bi-rotor architecture.\"",
+   "location": "KNDS MT-10 page, paragraph 1",
+   "uncertainty": "Product page, no status wording.",
+   "proposed_depth": "A",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SC-033",
+   "statement": "Breaking Defense and EDR report (June 2025) that the MT-10 was still under development at KNDS, remaining at design level until a customer expresses interest.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-6efe75db8d4fd730",
+    "S-3a3cf5ff81f73786"
+   ],
+   "evidence": "Excerpt: \"it remains at design level, as long as a customer does not express an interest in that product\"",
+   "location": "Breaking Defense, paragraph on MT-10; EDR Magazine, MT-10 paragraph",
+   "uncertainty": "State as of June 2025; later KNDS statements announce availability from mid-2027.",
+   "proposed_depth": "A",
+   "event_date": "2025-06",
+   "event_status": "laufend",
+   "evidence_items": [
+    {
+     "source_id": "S-6efe75db8d4fd730",
+     "text": "Excerpt: \"The fourth member of the Mataris family is the MT-10 currently being developed by KNDS on its own. It is the still-under-development system, for the moment\"",
+     "mode": "Auszug",
+     "location": "Breaking Defense, MT-10 paragraph"
+    },
+    {
+     "source_id": "S-3a3cf5ff81f73786",
+     "text": "Excerpt: \"for the time being it remains at design level, as long as a customer does not express an interest in that product\"",
+     "mode": "Auszug",
+     "location": "EDR Magazine, MT-10 paragraph"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-034",
+   "statement": "According to KNDS (press release of 18 June 2026), the MT-10 onboard loitering munition for armoured vehicles will be available from mid-2027.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-89bdf6749f713790"
+   ],
+   "evidence": "Excerpt: \"Designed for integration on armoured vehicles, the MT10 will be available from mid-2027.\"",
+   "location": "KNDS press release, section 'Mission Solution' approach",
+   "uncertainty": "Availability forecast.",
+   "proposed_depth": "A",
+   "event_date": "2026-06-18",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SC-035",
+   "statement": "Army Recognition reports that KNDS France released a video on 16 March 2026 showing the integration of the MATARIS MT-10 on the Leclerc, Serval, Titus and the ULTRO unmanned ground vehicle.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-716eee0af365f067"
+   ],
+   "evidence": "Excerpt: \"On March 16, 2026, KNDS France released a video showing the integration of the Mataris MT-10 loitering munition on the Leclerc main battle tank, the Serval 4x4 armored vehicle, the Titus internal security vehicle, and the Ultro unmanned ground vehicle\"",
+   "location": "Army Recognition, paragraph 1 and 3",
+   "uncertainty": "Video demonstration of integration; the source does not state live firings, tests or a customer.",
+   "proposed_depth": "A",
+   "event_date": "2026-03-16",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SC-036",
+   "statement": "According to KNDS France, NERVA-LG was first unveiled at Eurosatory 2012 and has been used since 2017 by US Navy SEALs and by units such as France's GIGN, the Canadian Armed Forces and emergency services in Shanghai.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-1e36d6e4ba085ffa"
+   ],
+   "evidence": "Excerpt: \"First unveiled at the Eurosatory 2012 exhibition, the NERVA LG has a proven track record of deployment across various global organisations. Since 2017, it has been utilised by the US Navy SEALs\"",
+   "location": "Defence Industry Europe, paragraph 6",
+   "uncertainty": "Manufacturer statement relayed by trade media; user numbers and dates are not given.",
+   "proposed_depth": "A",
+   "event_date": "2012",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SC-037",
+   "statement": "According to Nexter (press release of 24 May 2019), Nexter was selected by the Canadian government to supply the Canadian Army with 88 robots, including 79 NERVA-LG and 9 NERVA-XX, under a C$6 million High Research Secured Remotely Operated Vehicle contract.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-15fc00956abaf7b7"
+   ],
+   "evidence": "Excerpt: \"delivery of 79 NERVA-LG and 9 NERVA-XX robots through its subsidiary Nexter Robotics. ... The HRS-ROV contract has a value of C$6 million\"",
+   "location": "Joint Forces News, press release paragraphs 2-3",
+   "uncertainty": "Order announcement of 2019; delivery completion not reported in the sources read.",
+   "proposed_depth": "A",
+   "event_date": "2019-05-24",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SC-038",
+   "statement": "The French DGA notified Nexter on 26 August 2019 of an order for 56 NERVA and CAMELEON-LG ground micro-robots under SCORPION; the DGA received the first five NERVA-LG on 18 December 2019 for evaluation by the Army Technical Section.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-88235a3b6dda2acd",
+    "S-eb4ccecc405a5467"
+   ],
+   "evidence": "Excerpt: \"The DGA received five first NERVA-LG extended recognition micro-robots on December 18, 2019.\"",
+   "location": "EDR Magazine, paragraph 3; Defense Mirror, paragraphs 1-2",
+   "uncertainty": "Trade media relaying ministry information; the later full delivery is reported only in a 2021 EDR article (separate claim).",
+   "proposed_depth": "A",
+   "event_date": "2019-12-18",
+   "event_status": "durchgeführt",
+   "evidence_items": [
+    {
+     "source_id": "S-88235a3b6dda2acd",
+     "text": "Excerpt: \"The General Armaments' Directorate (DGA) notified, on August 26, 2019, the NEXTER company, associated with ECA, the order for 56 Nerva and Camaléon-LG ground micro-robots.\"",
+     "mode": "Auszug",
+     "location": "EDR Magazine, paragraph 3"
+    },
+    {
+     "source_id": "S-eb4ccecc405a5467",
+     "text": "Excerpt: \"The French defense procurement agency (DGA) received five first NERVA-LG extended recognition micro-robots on December 18, 2019.\"",
+     "mode": "Auszug",
+     "location": "Defense Mirror, paragraph 1"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-039",
+   "statement": "EDR Magazine reported in October 2021 that 56 such UGVs had been delivered to the DGA for testing with the Army Technical Section and operational units, that Canada is the major user with an order for 88 robots in 2019, and that numerous other countries have the NERVA-LG in service, mostly with police SWAT teams.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-cf970a56bf82bfee"
+   ],
+   "evidence": "Excerpt: \"56 such UGVs have been delivered to the French Direction Générale de l'Armement (DGA) that will test the system together with the STAT\"; \"Numerous other countries have the Nexter UGV in service, mostly with police SWAT teams.\"",
+   "location": "EDR Magazine, paragraph 2",
+   "uncertainty": "Report from 2021, 'according to Nexter'; no 2025-2026 update on French fielding found.",
+   "proposed_depth": "A",
+   "event_date": "2021-10-19",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SC-040",
+   "statement": "Nexter stated in June 2021 that 56 NERVA robots were sold to the DGA under SCORPION and that several hundred NERVA robots had been produced for foreign armies.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-762f7c6bc635d7a2"
+   ],
+   "evidence": "Excerpt: \"Fifty-six of these modular reconnaissance robots were sold to the French defense procurement agency (DGA) as part of the SCORPION program\" ... \"several hundred\" produced for foreign armies",
+   "location": "Al Defaiya, paragraph 4",
+   "uncertainty": "Manufacturer statement, 2021; the NERVA type split ('these robots') is not specified.",
+   "proposed_depth": "A",
+   "event_date": "2021-06-10",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SC-041",
+   "statement": "According to KNDS France (reported 29-30 November 2024), KNDS France Robotics received a contract to supply 10 NERVA-LG robots to US Special Operations Forces.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-1e36d6e4ba085ffa",
+    "S-1d6c74253ee37970"
+   ],
+   "evidence": "Excerpt: \"KNDS France has announced ... securing a contract to supply 10 NERVA LG multi-purpose robots to the U.S. Special Operations Forces.\"",
+   "location": "Defence Industry Europe, paragraph 1; Defense Mirror, paragraph 1",
+   "uncertainty": "Contract value and delivery date not disclosed; announcement relayed by trade media.",
+   "proposed_depth": "A",
+   "event_date": "2024-11",
+   "event_status": "beauftragt",
+   "evidence_items": [
+    {
+     "source_id": "S-1e36d6e4ba085ffa",
+     "text": "Excerpt: \"securing a contract to supply 10 NERVA LG multi-purpose robots to the U.S. Special Operations Forces\"",
+     "mode": "Auszug",
+     "location": "Defence Industry Europe, paragraph 1"
+    },
+    {
+     "source_id": "S-1d6c74253ee37970",
+     "text": "Excerpt: \"KNDS France Robotics has been awarded a contract to supply 10 NERVA LG robots to the U.S. Special Forces.\"",
+     "mode": "Auszug",
+     "location": "Defense Mirror, paragraph 1"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-042",
+   "statement": "KNDS France announced in October 2024 the export of NERVA LG multi-mission robots to Italy for use by Italian special forces; no quantity or value was disclosed.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-08414f6312d07936"
+   ],
+   "evidence": "Excerpt: \"KNDS France has announced the export of its NERVA LG multi-mission robots to Italy for use by Italian special forces\"",
+   "location": "Defense Mirror, paragraph 1",
+   "uncertainty": "Single secondary source; export announced, but quantity, contract and delivery status are unknown.",
+   "proposed_depth": "A",
+   "event_date": "2024-10-16",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SC-043",
+   "statement": "Military Aktuell reports (26 March 2026) that KNDS Germany is adding NERVA-LG and NERVA-XX to its portfolio for the German market, presented at Xponential Europe, and that the products have been available in France and internationally for some time.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-736964fb687bbb29"
+   ],
+   "evidence": "Excerpt: \"In future, the Nerva-LG and Nerva-XX tactical robots will be integrated into the portfolio and also offered on the German market. ... The products have been available in France and internationally for some time.\"",
+   "location": "Military Aktuell, paragraph 1 of body",
+   "uncertainty": "Offering to Germany; no Bundeswehr order or trial reported.",
+   "proposed_depth": "A",
+   "event_date": "2026-03-26",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SC-044",
+   "statement": "According to KNDS, NERVA-XX is the latest member of the NERVA family, a mini multi-mission robot for demining, counter-IED and EOD tasks that uses the same mission modules as NERVA-LG.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-eacce69e02fa08ce"
+   ],
+   "evidence": "Excerpt: \"NERVA-XX is the latest member of the NERVA Family aiming at performing demining, counter-IED ... and EOD ... tasks\"",
+   "location": "KNDS NERVA-XX page, paragraph 1",
+   "uncertainty": "Product page without status wording.",
+   "proposed_depth": "A",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SC-045",
+   "statement": "According to Nexter officials (EDR Magazine, October 2021), NERVA-XX development was finalised and the system was in the validation phase; EDR understood the French Army would be launch customer, with Canada and Portugal close to acquiring it.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-cf970a56bf82bfee"
+   ],
+   "evidence": "Excerpt: \"According to Nexter officials the Nerva XX development has been finalised, the system being now in the validation phase. EDR On-Line understood that the French Army will be the launch customer\"",
+   "location": "EDR Magazine, final paragraph",
+   "uncertainty": "2021 status; EDR's launch-customer statement is its own understanding. No later validation or production report found.",
+   "proposed_depth": "A",
+   "event_date": "2021-10-19",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SC-046",
+   "statement": "Defense Mirror (January 2020) reports that, within the first global order of 56 micro-robots, other robots delivered in 2020 include 36 NERVA-XX / CAMELEON-LG engineering robots (12 kg).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-eb4ccecc405a5467"
+   ],
+   "evidence": "Excerpt: \"Other robots delivered in 2020: include 5 additional NERVA-LG, 10 NERVA-S ... and 36 NERVA -XX / CAMELEON -LG of engineering (12 kg).\"",
+   "location": "Defense Mirror, paragraph 3",
+   "uncertainty": "Written in January 2020 as a delivery plan; actual delivery of the 36 units is not confirmed in the sources read, and the equivalence of NERVA-XX and CAMELEON-LG is as stated by the source.",
+   "proposed_depth": "A",
+   "event_date": "2020-01-17",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SC-047",
+   "statement": "According to KNDS, the CENTURIO robotic system (2 to 3 tonne class) is built on the PHOBOS all-terrain vehicle tested by SERA Engineering (SOGECLAIR) with a KNDS robotics kit, offered as CENTURIO-X20 (20 mm cannon) and a PIONEER counter-IED variant.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-c94303e94d1e46f1"
+   ],
+   "evidence": "Excerpt: \"CENTURIO is based on the PHOBOS all-terrain vehicle, tested by SERA Engineering (SOGECLAIR group)\"",
+   "location": "KNDS CENTURIO page, paragraphs 1-4",
+   "uncertainty": "The test relates to the PHOBOS rolling platform, not to a CENTURIO X20 firing; no customer or order named.",
+   "proposed_depth": "A",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SC-048",
+   "statement": "Defence24 reports that CENTURIO was first presented at Eurosatory in June 2022, a CENTURIO X20 with an ARX 20 turret was shown at Eurosatory 2024, and a CENTURIO X30 with an ARX 30 30 mm turret was shown at IDEX 2025.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-81ce428ece268924",
+    "S-fd7ccc7b386def8c"
+   ],
+   "evidence": "Paraphrase: Centurio was first presented in June 2022 at Eurosatory; at Eurosatory 2024 the X20 with ARX 20 turret; at IDEX 2025 the X30 variant.",
+   "location": "Defence24 article, paragraphs on Centurio; Overt Defense, paragraph 1",
+   "uncertainty": "Trade-media chronology; Overt Defense calls the X30 'introduced' in partnership with Sogeclair. Exhibition shows are not tests or orders.",
+   "proposed_depth": "A",
+   "event_date": "2025",
+   "event_status": "angekündigt",
+   "evidence_items": [
+    {
+     "source_id": "S-81ce428ece268924",
+     "text": "Paraphrase: Centurio first presented June 2022 at Eurosatory; Centurio X20 with ARX 20 at Eurosatory 2024; Centurio X30 with ARX 30 at IDEX 2025.",
+     "mode": "Paraphrase",
+     "location": "Defence24, paragraphs 5-6 (Polish)"
+    },
+    {
+     "source_id": "S-fd7ccc7b386def8c",
+     "text": "Excerpt: \"KNDS France, in partnership with Sogeclair, has introduced the CENTURIO-X30\"",
+     "mode": "Auszug",
+     "location": "Overt Defense, paragraph 1"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-049",
+   "statement": "The French DGA awarded KNDS France and Safran Electronics & Defense a seven-year framework agreement on 30 December 2024 to mature land robotics capabilities for 2030-2035, including a multi-mission robotic demonstrator; the source does not name CENTURIO as the subject.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5d64e28c5982c862"
+   ],
+   "evidence": "Excerpt: \"A core component of the initiative is the development of a multi-mission robotic demonstrator designed to support dismounted troops\"",
+   "location": "Defense Mirror, paragraph 3",
+   "uncertainty": "Framework for technology maturation; not an order for CENTURIO (a CENTURIO photo illustrates the article).",
+   "proposed_depth": "A",
+   "event_date": "2024-12-30",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SC-050",
+   "statement": "According to KNDS, ULTRO is an 800 kg, fully electric wheeled multi-mission tactical UGV with up to 600 kg payload and 15 km/h top speed, supporting mounted and dismounted operations, fitted with mission kits such as a logistics tray or remote weapon stations up to 12.7 mm.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-39b29037729ef83f",
+    "S-df95121b822ba92f"
+   ],
+   "evidence": "Excerpt: \"ULTRO is an 800 kg, fully electric wheeled platform designed to support both mounted and dismounted tactical operations\"",
+   "location": "KNDS ULTRO page, paragraphs 1-2; KNDS unmanned systems page",
+   "uncertainty": "KNDS pages differ on stand-by autonomy (4-9 h vs 8-12 h); no status wording on either page.",
+   "proposed_depth": "A",
+   "event_status": "angekündigt",
+   "evidence_items": [
+    {
+     "source_id": "S-39b29037729ef83f",
+     "text": "Excerpt: \"ULTRO is an 800 kg, fully electric wheeled platform ... carrying capacity of up to 600 kg ... maximum speed of 15 km/h\"",
+     "mode": "Auszug",
+     "location": "KNDS ULTRO page, paragraphs 1-2"
+    },
+    {
+     "source_id": "S-df95121b822ba92f",
+     "text": "Excerpt: \"ULTRO is an 800kg, fully electric wheeled platform ... Operational autonomy of 8 to 12 hours\"",
+     "mode": "Auszug",
+     "location": "KNDS unmanned systems page, ULTRO section"
+    }
+   ]
+  },
+  {
+   "id": "P-SC-051",
+   "statement": "Military Aktuell (26 March 2026) reports that KNDS includes the wheeled ULTRO in its robotics spectrum with the Boxer UxV Command & Control System for all UGVs, and auto motor und sport (7 April 2026) reports that KNDS presented the ULTRO again in March 2026.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-736964fb687bbb29",
+    "S-59e8dbacbb32b001"
+   ],
+   "evidence": "Excerpt: \"KNDS hat im März 2026 ein spezielles Fahrzeugkonzept erneut vorgestellt\"",
+   "location": "Military Aktuell, paragraphs on Ultro and C2; auto motor und sport, paragraph 1",
+   "uncertainty": "Presentation/exhibition level; no tests, order or customer reported.",
+   "proposed_depth": "A",
+   "event_date": "2026-03",
+   "event_status": "angekündigt",
+   "evidence_items": [
+    {
+     "source_id": "S-736964fb687bbb29",
+     "text": "Paraphrase: Wheeled Ultro (about 800 kg) complements the NERVA robots and Themis; all systems can be controlled from the Boxer UxV C2 system.",
+     "mode": "Paraphrase",
+     "location": "Military Aktuell, paragraphs on Ultro and Boxer UxV C2"
+    },
+    {
+     "source_id": "S-59e8dbacbb32b001",
+     "text": "Excerpt: \"KNDS hat im März 2026 ein spezielles Fahrzeugkonzept erneut vorgestellt\"",
+     "mode": "Auszug",
+     "location": "auto motor und sport, paragraph 1 (German)"
+    }
+   ]
+  }
+ ],
+ "source_proposals": [
+  {
+   "id": "S-08414f6312d07936",
+   "name": "Defense Mirror",
+   "title": "KNDS Exports Multi-Mission Robots to Italy",
+   "url": "https://defensemirror.com/news/37931/KNDS_Exports_Multi_Mission_Robots_to_Italy",
+   "published_date": "2024-10-16",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-15fc00956abaf7b7",
+   "name": "Joint Forces News",
+   "title": "Canada Orders Nexter NERVA ROV Systems",
+   "url": "https://www.joint-forces.com/?p=23749",
+   "published_date": "2019-05-24",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-1d6c74253ee37970",
+   "name": "Defense Mirror",
+   "title": "U.S. Special Forces Order French NERVA-LG Robots",
+   "url": "https://defensemirror.com/news/38276/U_S__Special_Forces_Order_French_NERVA_LG_Robots",
+   "published_date": "2024-11-29",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-1e36d6e4ba085ffa",
+   "name": "Defence Industry Europe",
+   "title": "U.S. Special Operations Forces purchase Nerva LG robots from French manufacturer",
+   "url": "https://defence-industry.eu/u-s-special-operations-forces-purchase-nerva-lg-robots-from-french-manufacturer/",
+   "published_date": "2024-11-30",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-236a4e15250320c1",
+   "name": "European Security & Defence",
+   "title": "Nexter announces it has qualified new SHARD 120 mm tank ammunition",
+   "url": "https://euro-sd.com/2024/02/major-news/36812/nexter-qualifies-shard-ammo",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-2947965d6409d2ab",
+   "name": "Army Recognition",
+   "title": "French Armed Forces Receive First DAMOCLES Short-Range Loitering Munition",
+   "url": "https://armyrecognition.com/news/army-news/2026/french-armed-forces-receive-first-damocles-short-range-loitering-munition",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-2a19a44bae9c9218",
+   "name": "KNDS",
+   "title": "KNDS Ammunition Catalogue 2026-2027",
+   "url": "https://knds.com/media/knds_ammunition_2026_2027_a5b0dd631b.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Primary source"
+  },
+  {
+   "id": "S-39b29037729ef83f",
+   "name": "KNDS",
+   "title": "ULTRO",
+   "url": "https://knds.com/en/products/systems/ultro",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-3a3cf5ff81f73786",
+   "name": "EDR Magazine",
+   "title": "PAS 2025 - KNDS France further details its Mataris loitering munitions portfolio",
+   "url": "https://www.edrmagazine.eu/pas-2025-knds-france-further-details-its-mataris-loitering-munitions-portfolio",
+   "published_date": "2025-06-24",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-3f82023a2b6d96d7",
+   "name": "Defence24",
+   "title": "Najnowszy BONUS dla Finlandii",
+   "url": "https://defence24.pl/sily-zbrojne/najnowszy-bonus-dla-finlandii",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-4242af39d20d3562",
+   "name": "KNDS",
+   "title": "NERVA-LG",
+   "url": "https://knds.com/en/products/systems/nerva-lg",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-459a4d4a1990b30e",
+   "name": "Defense Mirror",
+   "title": "France Qualifies DAMOCLES Short-Range Remotely Operated Munition after Trials",
+   "url": "https://defensemirror.com/news/41033/France_Qualifies_DAMOCLES_Short_Range_Remotely_Operated_Munition_after_Trials",
+   "published_date": "2026-02-05",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-4f97ad522106cb38",
+   "name": "KNDS",
+   "title": "Systems",
+   "url": "https://knds.com/en/products/systems",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-59e8dbacbb32b001",
+   "name": "auto motor und sport",
+   "title": "Ultro: Der Super-Bollerwagen für Soldaten",
+   "url": "https://www.auto-motor-und-sport.de/verkehr/neuer-ultro-was-kann-der-bollerwagen-fuer-soldaten/",
+   "published_date": "2026-04-07",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-5d64e28c5982c862",
+   "name": "Defense Mirror",
+   "title": "KNDS, Safran to Develop Land Robotics for France",
+   "url": "https://defensemirror.com/news/38791/KNDS__Safran_to_Develop_Land_Robotics_for_France",
+   "published_date": "2025-02-08",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-674182f0d8468117",
+   "name": "KNDS",
+   "title": "Inauguration of a new 155 mm artillery-shell production unit at KNDS Belgium",
+   "url": "https://knds.com/en/press-releases/inauguration-of-a-new-155-mm-artillery-shell-production-unit-at-knds-belgium-a-major-strengthening-of-belgian-and-european-industrial-capacity",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Manufacturer statement"
+  },
+  {
+   "id": "S-683ba892c2c8c1d5",
+   "name": "KNDS",
+   "title": "MV-25 OSKAR",
+   "url": "https://knds.com/en/products/ammunition/mv-25-oskar",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-6c84242ff77b4c1c",
+   "name": "EDR Magazine",
+   "title": "Inauguration of a new 155 mm artillery-shell production unit at KNDS Belgium",
+   "url": "https://www.edrmagazine.eu/inauguration-of-a-new-155-mm-artillery-shell-production-unit-at-knds-belgium-a-major-strengthening-of-belgian-and-european-industrial-capacity",
+   "published_date": "2025-11-04",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-6efe75db8d4fd730",
+   "name": "Breaking Defense",
+   "title": "KNDS’s Mataris loitering munitions finding contracts from French government",
+   "url": "https://breakingdefense.com/2025/06/knds-mataris-loitering-munitions-finding-contracts-from-french-government/",
+   "published_date": "2025-06-19",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-716eee0af365f067",
+   "name": "Army Recognition",
+   "title": "New French Mataris Drone Could Turn Every Military Vehicle Into an Independent Strike Unit",
+   "url": "https://armyrecognition.com/news/army-news/2026/new-french-mataris-drone-could-turn-every-military-vehicle-into-an-independent-strike-unit",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-736964fb687bbb29",
+   "name": "Militär Aktuell",
+   "title": "KNDS expands Nerva robot acquisition to include the German market",
+   "url": "https://militaeraktuell.at/en/knds-expands-nerva-robot-acquisition-to-include-the-german-market/",
+   "published_date": "2026-03-26",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-762f7c6bc635d7a2",
+   "name": "Al Defaiya",
+   "title": "Nexter Partner of French Army for First Air-Land Robotics Day",
+   "url": "https://www.defaiya.com/news/International%20News/Europe/2021/06/11/nexter-partner-of-french-army-for-first-air-land-robotics-day",
+   "published_date": "2021-06-11",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-7a154b749e856b87",
+   "name": "The Defense Post",
+   "title": "France Greenlights High Precision KNDS Artillery Shell Development",
+   "url": "https://thedefensepost.com/2024/06/24/france-knds-artillery-shell/",
+   "published_date": "2024-06-24",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-7de56aec0f84a3c6",
+   "name": "KNDS",
+   "title": "MT-10",
+   "url": "https://knds.com/en/products/ammunition/mt-10",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-81ce428ece268924",
+   "name": "Defence24",
+   "title": "IDEX 2025: KNDS pokazuje bezzałogowiec lądowy X30",
+   "url": "https://defence24.pl/polityka-obronna/idex-2025-knds-pokazuje-bezzalogowiec-ladowy-x30",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-88235a3b6dda2acd",
+   "name": "EDR Magazine",
+   "title": "France: the Ministry of the Armies will soon receive reconnaissance micro robots",
+   "url": "https://www.edrmagazine.eu/france-the-ministry-of-the-armies-will-soon-receive-reconnaissance-micro-robots",
+   "published_date": "2019-09-20",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-89bdf6749f713790",
+   "name": "KNDS",
+   "title": "KNDS asserts leadership in loitering munition at Eurosatory 2026",
+   "url": "https://knds.com/en/press-releases/knds-asserts-leadership-in-loitering-munition-at-eurosatory-2026",
+   "published_date": "2026-06-18",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Manufacturer statement"
+  },
+  {
+   "id": "S-89dce88192650540",
+   "name": "KNDS",
+   "title": "155 KATANA",
+   "url": "https://knds.com/en/products/ammunition/155mm-ammunition/155-katana",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-937ae61f03cd1731",
+   "name": "Euromaidan Press",
+   "title": "Ukraine deploys new French MV-25 Oskar drone in battlefield use",
+   "url": "https://euromaidanpress.com/2025/06/17/ukraine-deploys-new-french-mv-25-oskar-drone-in-battlefield-use/",
+   "published_date": "2025-06-17",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-98f07af64f55666e",
+   "name": "The Defense Post",
+   "title": "France Boosts Kamikaze Drone Fleet With New MX-10 Order From KNDS",
+   "url": "https://thedefensepost.com/2026/10/16/france-mx10-damocles-knds/",
+   "published_date": "2026-10-16",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-990434c1b62f333f",
+   "name": "KNDS",
+   "title": "MV-100 VELOCE",
+   "url": "https://knds.com/en/products/ammunition/mv-100-veloce",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-a31e610f0253ec38",
+   "name": "Defence Industry Europe",
+   "title": "Finland to procure more Bonus Mk II projectiles from Nexter",
+   "url": "https://defence-industry.eu/finland-to-procure-more-bonus-mk-ii-projectiles-from-nexter/",
+   "published_date": "2023-02-24",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-aadcb3da199c3d17",
+   "name": "KNDS",
+   "title": "155mm Ammunition",
+   "url": "https://knds.com/en/products/ammunition/155mm-ammunition",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-b089d8c896987d3f",
+   "name": "XYZ",
+   "title": "Niewładow-PGM będzie współpracować z francuskim gigantem branży zbrojeniowej",
+   "url": "https://xyz.pl/?p=218688",
+   "published_date": "2026-06-18",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-b43dc0babc198b25",
+   "name": "KNDS",
+   "title": "155mm Bonus",
+   "url": "https://knds.com/en/products/ammunition/155mm-ammunition/155mm-bonus",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-b5d05a3c25aa13c6",
+   "name": "SAE Media Group",
+   "title": "News - France Adopts Veloce 330 Loitering Munition to enhance precision-strikes against armoured targets",
+   "url": "https://smgconferences.com/editors-corner/5997-news--france-adopts-veloce-330-loitering-munition-to-enhance-precisionstrikes-against-armoured-targets",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-b60dbc45fdcac0ac",
+   "name": "ASDNews",
+   "title": "French Forces Order More MX-10 DAMOCLES Loitering Munitions: KNDS and DELAIR Consolidate Their Position As the Benchmark in the Field",
+   "url": "https://asdnews.com/news/defense/2026/10/13/french-forces-order-more-mx10-damocles-loitering-munitions-knds-delair-consolidate-their-position-as-benchmark-field",
+   "published_date": "2026-10-13",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Manufacturer statement"
+  },
+  {
+   "id": "S-b8f957ad1ccbc530",
+   "name": "Army Recognition",
+   "title": "France Orders SHARD 120mm Arrow APFSDS to Replace Leclerc Tank Rounds by 2030",
+   "url": "https://armyrecognition.com/news/army-news/2026/france-orders-shard-120mm-arrow-apfsds-to-replace-leclerc-tank-rounds-by-2030",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-b960b68760070182",
+   "name": "KNDS",
+   "title": "The French procurement agency supports the development of the KATANA 155mm high precision ammunition",
+   "url": "https://knds.com/en/press-releases/the-french-procurement-agency-supports-the-development-of-the-katana-155mm-high-precision-ammunition",
+   "published_date": "2024-06-21",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Manufacturer statement"
+  },
+  {
+   "id": "S-c94303e94d1e46f1",
+   "name": "KNDS",
+   "title": "CENTURIO",
+   "url": "https://knds.com/products/systems/centurio",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-cacbe83eed4a50bb",
+   "name": "European Security & Defence",
+   "title": "Successful KATANA Guided Artillery Tests",
+   "url": "https://euro-sd.com/2021/01/articles/exclusive/20790/katana-guided-artillery-tests/",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-ce3e22104f8c89b5",
+   "name": "KNDS",
+   "title": "Ammunition",
+   "url": "https://knds.com/en/products/ammunition",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-cf970a56bf82bfee",
+   "name": "EDR Magazine",
+   "title": "Nexter unveils the final configuration of its Nerva XX medium-size multi-mission UGV",
+   "url": "https://www.edrmagazine.eu/nexter-unveils-the-final-configuration-of-its-nerva-xx-medium-size-multi-mission-ugv",
+   "published_date": "2021-10-19",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-df95121b822ba92f",
+   "name": "KNDS",
+   "title": "Unmanned systems",
+   "url": "https://knds.com/en/media-days/unmanned-systems",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-e72bc468a97fc7d0",
+   "name": "Calibre Defence",
+   "title": "France orders SHARD APFSDS, enhancing its armoured firepower",
+   "url": "https://www.calibredefence.co.uk/france-orders-shard-apfsds-enhancing-its-armoured-firepower/",
+   "published_date": "2026-02-19",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-eacce69e02fa08ce",
+   "name": "KNDS",
+   "title": "NERVA-XX",
+   "url": "https://knds.com/en/products/systems/nerva-xx",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-eb4ccecc405a5467",
+   "name": "Defense Mirror",
+   "title": "French Army Receives NERVA-LG Micro Surveillance Robots from NEXTER",
+   "url": "https://defensemirror.com/news/26183/French_Army_Receives_NERVA_LG_Micro_Surveillance_Robots_from_NEXTER",
+   "published_date": "2020-01-17",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-f867eabd40cee703",
+   "name": "European Security & Defence",
+   "title": "DGA selects KNDS’ New Generation SHARD sabot round",
+   "url": "https://euro-sd.com/2026/02/news/land/49406/dga-selects-knds-new-generation-shard-sabot-round/",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-fd7ccc7b386def8c",
+   "name": "Overt Defense",
+   "title": "KNDS France Unveils CENTURIO-X30 (Next-Gen Combat Robot)",
+   "url": "https://www.overtdefense.com/2025/03/04/knds-france-unveils-centurio-x30-next-gen-combat-robot",
+   "published_date": "2025-03-04",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-ff9d328558f6334a",
+   "name": "Defence Industry Europe",
+   "title": "MATARIS: KNDS launches France’s first full range of loitering munitions",
+   "url": "https://defence-industry.eu/mataris-knds-launches-frances-first-full-range-of-loitering-munitions/",
+   "published_date": "2025-06-18",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-e9d542a0c9a45ca1",
+   "name": "KNDS",
+   "title": "MX-10 DAMOCLES",
+   "url": "https://knds.com/en/products/ammunition/mx-10-damocles",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  }
+ ],
+ "gaps": [
+  "gun-ammunition: No source read documents production volumes, delivery records or customer lists for KNDS 155mm or other 20-155 mm ammunition as a whole; statuses are manufacturer catalogue wording ('in service', 'qualified') plus the Belgian production line and the Polish cooperation plan. No uniform status exists across the 20-155 mm range. (Coverage gap, not evidence of weakness.)",
+  "gun-ammunition: Polish cooperation (Niewiadow-PGM) is reported only by a Polish trade source; the KNDS side of the agreement and any production start were not found. The 200,000-rounds-per-year KNDS offer reported by Defence24 and the Les Forges de Tarbes supply agreement were found in search results but not opened and are not used.",
+  "bonus: No current (2024-2026) BONUS delivery, production-lot or order report for KNDS was found besides the Finnish 2023 authorisation; the BONUS MkII is co-developed with BAE Systems Bofors and Swedish orders (Bofors) were not opened. KNDS's statement that BONUS MkII is combat proven in operation by the French Army has no independent source in the material read.",
+  "katana: No evidence found of completed qualification, a production or procurement order, or customer deliveries for KATANA up to 29 October 2026. The 2024 forecast (offered for sale within two years) and the 2023 marketing target of the 2021 article were not confirmed by any later source read. Several KNDS France news pages (first guided firings, wind tunnel) redirect to the KNDS France home page in the cache and could not be read.",
+  "katana: Guidance and accuracy specifications differ between the KNDS product page (GPS/INS/semi-active laser, sub-meter) and the 2026-2027 catalogue (combined GNSS/inertial, decametric precision); an official statement on which configuration is current was not found.",
+  "shard: The KNDS press release on the DGA order (February 2026) and the DGA/ministry text were not opened directly (search results only); the order is documented through European Security & Defence and Calibre Defence. The KNDS SHARD datasheet PDF at knds.fr redirects to the home page in the cache and was not read. The EUR 100 million value, the 7-year term and the 2029 first-serial date come from media only; Calibre Defence states the delivery timeframe is unclear. No evidence of serial production output or deliveries to another customer found (demonstrations and negotiations in Europe, Middle East and Asia are reported as ongoing by KNDS in 2024).",
+  "mataris-mv-100: Result of the planned 2025 operational detonation test, a DGA series order, the start of series production and the actual LRIP output for 2026 were not found. A French ministry communique of 22 January 2026 on the first order of long-range remotely operated munitions appeared in search results but was not opened; its relation to MV-100/VELOCE is unknown and not asserted.",
+  "mataris-mv-25: No French qualification, DGA order quantity or independent confirmation of OSKAR use in Ukraine found; Ukrainian deployment rests on KNDS statements (June 2025). The KNDS press release 'The First French Range of Loitering Munitions' could not be fetched; its content is documented through Defence Industry Europe and Euromaidan Press.",
+  "mataris-mx-10: The French Ministry/DGA communiques on the qualification (21 November 2025) and first delivery (22 January 2026) were not opened; they are documented through Army Recognition and Defense Mirror. The size of the first tranche delivered, the additional batch of October 2026 and total deliveries are not disclosed; sources differ on whether 460 is an order or a delivery target by July 2026. Export campaigns are mentioned by KNDS but no export customer is named.",
+  "mataris-mt-10: Customer, qualification, test firings or order for the MT-10 not found; KNDS states availability from mid-2027 and a March 2026 integration video exists, but no test result. The Defense Post article on first MX-10 deliveries contains a date inconsistency and was used only for the October 2026 order.",
+  "nerva-lg: No 2025-2026 order, delivery or French fielding update found. Italy export (October 2024) lacks quantity/value; the US SOF contract (10 units, November 2024) lacks delivery date. Original KNDS press releases for the US and Italy items were not opened.",
+  "nerva-xx: Delivery of the 9 NERVA-XX units to Canada and of the 36 NERVA-XX/CAMELEON-LG to France is not confirmed in the sources read; the 2021 'validation phase' status was not followed by a later source. Whether NERVA-XX and CAMELEON-LG are the same product is as stated in the source only.",
+  "centurio: No order, qualification, firing test result or customer found for CENTURIO (X20, X30, PIONEER); the DROIDE framework (DGA with KNDS France and Safran, 30 December 2024) is not tied to a named product in the source. KNDS states the PHOBOS platform was tested, but no CENTURIO prototype trial report was found. Armyrecognition page on CENTURIO could not be fetched. ROBIN tender involvement of KNDS is only mentioned in search results and was not opened.",
+  "ultro: No order, trial, qualification or customer found for ULTRO; evidence is limited to KNDS product pages, the March 2026 presentation and the MT-10 integration video. KNDS pages disagree on stand-by autonomy (4-9 h vs 8-12 h). An earlier public showing in 2021 was found only in search results (not opened) and is not used. ULTRO is led by KNDS France Robotics; the German market integration refers to NERVA and ULTRO/THeMIS portfolio presentation only.",
+  "all: Old catalogue rows 'ammo', 'mataris' and 'robotics' from existing-portfolio.json are replaced by the split product rows of this module; claims P-13, P-14, P-15 and P-16 are carried over unchanged and mapped to the new rows. regional_presence is not part of Teilauftrag C."
+ ],
+ "coverage": [
+  {
+   "topic": "gun-ammunition",
+   "search_terms": [
+    "KNDS 155mm ammunition production",
+    "KNDS Belgium 155mm line",
+    "Niewiadow KNDS Ammo France",
+    "KNDS ammunition catalogue 2026-2027 in service"
+   ],
+   "source_ids": [
+    "S-ce3e22104f8c89b5",
+    "S-aadcb3da199c3d17",
+    "S-2a19a44bae9c9218",
+    "S-674182f0d8468117",
+    "S-6c84242ff77b4c1c",
+    "S-b089d8c896987d3f"
+   ],
+   "finding": "Catalogue and product page give qualification/in-service wording; Belgian automated shell line inaugurated 4 Nov 2025; Polish cooperation planned (June 2026). No production-volume or delivery records found.",
+   "status": "geprüft mit Beleg (Teilbefund)"
+  },
+  {
+   "topic": "bonus",
+   "search_terms": [
+    "BONUS MkII KNDS production delivery",
+    "BONUS Finland Nexter",
+    "BONUS French Army combat proven"
+   ],
+   "source_ids": [
+    "S-b43dc0babc198b25",
+    "S-2a19a44bae9c9218",
+    "S-a31e610f0253ec38",
+    "S-3f82023a2b6d96d7",
+    "S-aadcb3da199c3d17"
+   ],
+   "finding": "KNDS lists BONUS MkII as 'In service'; Finland authorised further purchase on 24 Feb 2023. No 2024-2026 order or delivery report found.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "katana",
+   "search_terms": [
+    "KATANA 155mm qualification",
+    "KATANA DGA contract",
+    "KATANA guided firing campaign",
+    "KATANA Eurosatory 2026"
+   ],
+   "source_ids": [
+    "S-89dce88192650540",
+    "S-b960b68760070182",
+    "S-7a154b749e856b87",
+    "S-cacbe83eed4a50bb",
+    "S-2a19a44bae9c9218"
+   ],
+   "finding": "Flight-control firing Dec 2020; DGA development-support contract June 2024; demonstrator TRL 6, sale offer forecast within two years. No qualification, order or delivery found.",
+   "status": "geprüft mit Beleg (Teilbefund)"
+  },
+  {
+   "topic": "shard",
+   "search_terms": [
+    "SHARD APFSDS qualification",
+    "SHARD DGA order",
+    "SHARD framework Eurenco"
+   ],
+   "source_ids": [
+    "S-2a19a44bae9c9218",
+    "S-236a4e15250320c1",
+    "S-f867eabd40cee703",
+    "S-e72bc468a97fc7d0",
+    "S-b8f957ad1ccbc530"
+   ],
+   "finding": "Qualified late 2023 (KNDS), order for several thousand rounds announced February 2026; first serial rounds expected about 2029 (media).",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "mataris-mv-100",
+   "search_terms": [
+    "MV-100 VELOCE 330 order test",
+    "VELOCE 330 EOS Technologie DGA",
+    "MV-100 Rodeur"
+   ],
+   "source_ids": [
+    "S-990434c1b62f333f",
+    "S-6efe75db8d4fd730",
+    "S-3a3cf5ff81f73786",
+    "S-ff9d328558f6334a",
+    "S-b5d05a3c25aa13c6"
+   ],
+   "finding": "Unveiled 2024; 17 VELOCE (without warhead) bought for testing and training 2025; operational qualification phase reported June 2025; detonation test planned end 2025 (no result found).",
+   "status": "geprüft mit Beleg (Teilbefund)"
+  },
+  {
+   "topic": "mataris-mv-25",
+   "search_terms": [
+    "MV-25 OSKAR Ukraine",
+    "OSKAR Colibri DGA industrialisation"
+   ],
+   "source_ids": [
+    "S-683ba892c2c8c1d5",
+    "S-6efe75db8d4fd730",
+    "S-3a3cf5ff81f73786",
+    "S-ff9d328558f6334a",
+    "S-937ae61f03cd1731"
+   ],
+   "finding": "Live-warhead test flight June 2024; KNDS reports use in Ukraine from June 2025; EDR notes no French qualification or service entry (June 2025).",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "mataris-mt-10",
+   "search_terms": [
+    "MT-10 MATARIS availability",
+    "MT-10 integration Leclerc Serval Ultro"
+   ],
+   "source_ids": [
+    "S-7de56aec0f84a3c6",
+    "S-6efe75db8d4fd730",
+    "S-3a3cf5ff81f73786",
+    "S-89bdf6749f713790",
+    "S-716eee0af365f067"
+   ],
+   "finding": "Under development; availability from mid-2027 (KNDS); integration video 16 March 2026. No order or test results found.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "mataris-mx-10",
+   "search_terms": [
+    "MX-10 DAMOCLES DGA qualification delivery",
+    "MX-10 option tranche October 2026",
+    "MTO-CP"
+   ],
+   "source_ids": [
+    "S-e9d542a0c9a45ca1",
+    "S-6efe75db8d4fd730",
+    "S-2947965d6409d2ab",
+    "S-459a4d4a1990b30e",
+    "S-b60dbc45fdcac0ac",
+    "S-98f07af64f55666e",
+    "S-89bdf6749f713790"
+   ],
+   "finding": "Contract July 2024; qualification 21 Nov 2025; first deliveries 2 Dec 2025; active service since Dec 2025 (KNDS); optional tranche exercised 13 Oct 2026.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "nerva-lg",
+   "search_terms": [
+    "NERVA-LG order delivery",
+    "NERVA-LG US special forces Italy Canada",
+    "NERVA Scorpion DGA micro-robots"
+   ],
+   "source_ids": [
+    "S-4242af39d20d3562",
+    "S-1e36d6e4ba085ffa",
+    "S-1d6c74253ee37970",
+    "S-08414f6312d07936",
+    "S-15fc00956abaf7b7",
+    "S-88235a3b6dda2acd",
+    "S-eb4ccecc405a5467",
+    "S-cf970a56bf82bfee",
+    "S-762f7c6bc635d7a2",
+    "S-736964fb687bbb29"
+   ],
+   "finding": "Orders and uses documented: Canada 2019, France 2019-2020 (56 robots), US SOF 10 (Nov 2024), Italy export (Oct 2024); KNDS Germany offering since Mar 2026.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "nerva-xx",
+   "search_terms": [
+    "NERVA-XX validation order Canada France"
+   ],
+   "source_ids": [
+    "S-eacce69e02fa08ce",
+    "S-cf970a56bf82bfee",
+    "S-15fc00956abaf7b7",
+    "S-eb4ccecc405a5467",
+    "S-736964fb687bbb29"
+   ],
+   "finding": "9 units in 2019 Canadian order; 2021 validation phase; French delivery of NERVA-XX/CAMELEON-LG planned for 2020; no later status found.",
+   "status": "geprüft mit Beleg (Teilbefund)"
+  },
+  {
+   "topic": "centurio",
+   "search_terms": [
+    "CENTURIO KNDS order trial",
+    "CENTURIO X20 X30 IDEX",
+    "DROIDE KNDS Safran"
+   ],
+   "source_ids": [
+    "S-c94303e94d1e46f1",
+    "S-81ce428ece268924",
+    "S-fd7ccc7b386def8c",
+    "S-5d64e28c5982c862",
+    "S-df95121b822ba92f"
+   ],
+   "finding": "Shown 2022, 2024 (X20) and 2025 (X30); platform tested by SERA; no order, trial result or customer found.",
+   "status": "geprüft mit Beleg (Teilbefund)"
+  },
+  {
+   "topic": "ultro",
+   "search_terms": [
+    "ULTRO KNDS order trial",
+    "ULTRO UGV KNDS France Robotics"
+   ],
+   "source_ids": [
+    "S-39b29037729ef83f",
+    "S-df95121b822ba92f",
+    "S-736964fb687bbb29",
+    "S-59e8dbacbb32b001",
+    "S-716eee0af365f067"
+   ],
+   "finding": "Product description, March 2026 presentation and MT-10 integration video only; no order, trial or customer found.",
+   "status": "geprüft ohne Beleg für Auftrag/Einsatz"
+  }
+ ]
+}
