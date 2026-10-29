@@ -1,0 +1,1447 @@
+{
+ "schema_version": 1,
+ "mode": "facts-v2",
+ "role": "portfolio",
+ "run_id": "knds-portfolio-status-2026-10-29",
+ "company": "KNDS N.V.",
+ "as_of": "2026-10-29",
+ "scope": "KNDS group product portfolio: current public status (announcement, prototype/testing, series production/deliveries, operational use by customers) per product for the portfolio-status-v2 matrix. Statements in English to match the delivered English briefing.",
+ "status": "teilweise",
+ "shared_limitations": "Part D covers bridging, digital systems, CBRN, training and service rows only. Orders, contracts and planned deliveries are recorded separately from deliveries and operation. Manufacturer statements remain manufacturer statements even where media reproduce them.",
+ "products": [
+  {
+   "id": "leguan",
+   "label": "LEGUAN",
+   "short_label": "LEGUAN",
+   "domain": "Bridges and engineering equipment",
+   "claim_ids": [
+    "P-17",
+    "P-SD-001",
+    "P-SD-002",
+    "P-SD-003",
+    "P-SD-004",
+    "P-SD-005",
+    "P-SD-006",
+    "P-SD-007"
+   ]
+  },
+  {
+   "id": "dsb",
+   "label": "Dry Support Bridge (DSB)",
+   "short_label": "DSB",
+   "domain": "Bridges and engineering equipment",
+   "claim_ids": [
+    "P-18",
+    "P-SD-010",
+    "P-SD-011",
+    "P-SD-012",
+    "P-SD-013",
+    "P-SD-014",
+    "P-SD-015"
+   ]
+  },
+  {
+   "id": "mgb",
+   "label": "Medium Girder Bridge (MGB)",
+   "short_label": "MGB",
+   "domain": "Bridges and engineering equipment",
+   "claim_ids": [
+    "P-18",
+    "P-SD-013",
+    "P-SD-020",
+    "P-SD-021",
+    "P-SD-015"
+   ]
+  },
+  {
+   "id": "hstb",
+   "label": "Heavy Short Trackway Bridge (HSTB)",
+   "short_label": "HSTB",
+   "domain": "Bridges and engineering equipment",
+   "claim_ids": [
+    "P-18",
+    "P-SD-030"
+   ]
+  },
+  {
+   "id": "digital",
+   "label": "C4ISR · Vetronics · Mission Electronics",
+   "short_label": "C4ISR · Vetronics · Mission Electronics",
+   "domain": "Digital systems and equipment",
+   "claim_ids": [
+    "P-19",
+    "P-SD-043"
+   ]
+  },
+  {
+   "id": "dlbo",
+   "label": "D-LBO vehicle digitalisation (ArGe D-LBO)",
+   "short_label": "D-LBO",
+   "domain": "Digital systems and equipment",
+   "claim_ids": [
+    "P-SD-040",
+    "P-SD-041",
+    "P-SD-042"
+   ]
+  },
+  {
+   "id": "cbrn",
+   "label": "CBRN protection / detection / decontamination",
+   "short_label": "CBRN (range)",
+   "domain": "Digital systems and equipment",
+   "claim_ids": [
+    "P-19",
+    "P-SD-050"
+   ]
+  },
+  {
+   "id": "cbrn-mask",
+   "label": "CBRN gas mask TGM48 (KNDS CBRN)",
+   "short_label": "TGM48 gas mask",
+   "domain": "Digital systems and equipment",
+   "claim_ids": [
+    "P-SD-050",
+    "P-SD-051",
+    "P-SD-052"
+   ]
+  },
+  {
+   "id": "cbrn-decon",
+   "label": "ESSENTIAL DECON decontamination systems (KNDS CBRN)",
+   "short_label": "ESSENTIAL DECON",
+   "domain": "Digital systems and equipment",
+   "claim_ids": [
+    "P-SD-050",
+    "P-SD-053"
+   ]
+  },
+  {
+   "id": "training",
+   "label": "Training and simulation",
+   "short_label": "Training and simulation",
+   "domain": "Services and training",
+   "claim_ids": [
+    "P-20",
+    "P-SD-065"
+   ]
+  },
+  {
+   "id": "training-leo2-sweden",
+   "label": "LEOPARD 2 simulators (Sweden)",
+   "short_label": "Leopard 2 simulators",
+   "domain": "Services and training",
+   "claim_ids": [
+    "P-SD-060",
+    "P-SD-061"
+   ]
+  },
+  {
+   "id": "training-puma-agsp",
+   "label": "Puma AGSP firing and combat training system",
+   "short_label": "Puma AGSP",
+   "domain": "Services and training",
+   "claim_ids": [
+    "P-SD-062",
+    "P-SD-063"
+   ]
+  },
+  {
+   "id": "service",
+   "label": "Lifecycle Support · MRO · Spare parts",
+   "short_label": "Lifecycle Support · MRO",
+   "domain": "Services and training",
+   "claim_ids": [
+    "P-21"
+   ]
+  },
+  {
+   "id": "service-canada",
+   "label": "Leopard 2 fleet sustainment (Canada)",
+   "short_label": "Sustainment Canada",
+   "domain": "Services and training",
+   "claim_ids": [
+    "P-21",
+    "P-SD-070"
+   ]
+  },
+  {
+   "id": "service-ukraine",
+   "label": "KNDS Ukraine MRO / repair joint venture",
+   "short_label": "MRO Ukraine",
+   "domain": "Services and training",
+   "claim_ids": [
+    "P-21",
+    "P-SD-071",
+    "P-SD-072"
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "id": "P-17",
+   "statement": "KNDS describes LEGUAN as a modular bridge system; according to a manufacturer statement, armed forces of 19 nations use LEGUAN variants.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-0dd13a3430574f68"
+   ],
+   "evidence": "Paraphrase: 19 armed forces rely on LEGUAN in wheeled, tracked or both versions.",
+   "location": "International teaming/pooling/sharing",
+   "uncertainty": "The 19-nation figure is an undated manufacturer statement and is not evidence for every new variant."
+  },
+  {
+   "id": "P-18",
+   "statement": "KNDS's bridge portfolio includes Dry Support Bridge, Medium Girder Bridge and HSTB alongside LEGUAN.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4f97ad522106cb38"
+   ],
+   "evidence": "Paraphrase: DSB, MGB and HSTB are listed as product families.",
+   "location": "Bridges",
+   "uncertainty": ""
+  },
+  {
+   "id": "P-19",
+   "statement": "KNDS offers C4ISR/command and weapon employment systems, vetronics, mission electronics and CBRN protection, detection and decontamination.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-64902f4dbe1a905a"
+   ],
+   "evidence": "Paraphrase: C4ISR, electronic components and 4 CBRN categories are offered.",
+   "location": "Mission solutions; Protection and more; CBRN; Mission Electronics",
+   "uncertainty": "Performance and delivery status depend on the specific subsystem."
+  },
+  {
+   "id": "P-20",
+   "statement": "KNDS offers driver, gunnery, combat and tactical training as well as maintenance/diagnostics training; the offering includes VR, AR and MR solutions.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-d93ed235185f04c5"
+   ],
+   "evidence": "Paraphrase: Training from individual soldier to battalion level; maintenance/diagnostics and immersive technologies.",
+   "location": "training programmes for all needs; operation",
+   "uncertainty": "No uniform series production status for the entire range of services."
+  },
+  {
+   "id": "P-21",
+   "statement": "KNDS Deutschland describes maintenance, repair, spare parts management, logistics and training as services for its vehicle customers, including on-site during deployment.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-086937648044a782"
+   ],
+   "evidence": "Paraphrase: On-site maintenance/repair, spare parts and training programmes are included in the scope of services.",
+   "location": "Long-term partner; The systems integrator",
+   "uncertainty": ""
+  },
+  {
+   "id": "P-SD-001",
+   "statement": "According to KMW (KNDS), the Dutch Defence Materiel Organisation took over the first two LEGUAN bridge-laying systems on Leopard 2 chassis on 10 December 2019 in a handover ceremony; the Netherlands had ordered eight systems in 2016 with the last due in 2021, and ESUT reports that series deliveries to Germany began in 2019 after a proof-and-training demonstrator was received in mid-2018.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-47bb621c6a3c6d4c",
+    "S-e903df08d36255bb"
+   ],
+   "evidence": "Paraphrase: KMW transferred the first two Leguan systems to the Dutch DMO on 10 Dec 2019; eight CSB on Leopard 2 chassis ordered in 2016. (further sources in evidence_items)",
+   "location": "Press release dated Munich, 10 December 2019, first paragraph; Article dated 11 Dec 2019, first and second paragraphs",
+   "evidence_items": [
+    {
+     "source_id": "S-47bb621c6a3c6d4c",
+     "text": "Paraphrase: KMW transferred the first two Leguan systems to the Dutch DMO on 10 Dec 2019; eight CSB on Leopard 2 chassis ordered in 2016.",
+     "mode": "Paraphrase",
+     "location": "Press release dated Munich, 10 December 2019, first paragraph"
+    },
+    {
+     "source_id": "S-e903df08d36255bb",
+     "text": "Paraphrase: DMO took over first two Leguan on 10 Dec 2019; Germany received a proof-and-training demonstrator mid-2018; series deliveries began 2019.",
+     "mode": "Paraphrase",
+     "location": "Article dated 11 Dec 2019, first and second paragraphs"
+    }
+   ],
+   "uncertainty": "Both documents originate from the same KMW handover announcement; the later completion of the Dutch and German first lots is not documented in the sources read.",
+   "proposed_depth": "A",
+   "event_date": "2019-12-10",
+   "event_status": "durchgefuehrt (Uebergabe Serienexemplare)"
+  },
+  {
+   "id": "P-SD-002",
+   "statement": "ESUT reports (3 August 2020) that since 2018 the Bundeswehr has been receiving a first lot of seven LEGUAN bridge-laying systems on Leopard 2 chassis, and that BAAINBw commissioned KMW to deliver a further 24 systems between 2023 and 2028.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-687b84418c044515"
+   ],
+   "evidence": "Paraphrase: Since 2018 the first lot of seven Leguan has been delivered to the Bundeswehr; 24 more ordered for 2023-2028.",
+   "location": "Article text, paragraph 2 (contract signing)",
+   "uncertainty": "Media report on the contract; handover status of the first lot and of any systems of the 24-system lot after 2020 is not stated.",
+   "proposed_depth": "A",
+   "event_date": "2018",
+   "event_status": "laufend zum Berichtszeitpunkt 2020 (erstes Los); Folgeauftrag erteilt"
+  },
+  {
+   "id": "P-SD-003",
+   "statement": "According to KNDS (press release of 23 July 2020), BAAINBw commissioned KMW to supply 24 LEGUAN systems on Leopard 2 chassis plus training simulators, ancillary equipment and transport systems for delivery between 2023 and 2028, order volume about EUR 280 million; KNDS states the Leguan on Leopard 2 chassis has nine users and the system is used by armies of 19 countries.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-108999689b0d838d"
+   ],
+   "evidence": "Paraphrase: 24 Leguan systems on Leopard 2 chassis, simulators, ancillary equipment, transport systems; delivery 2023-2028; approx. EUR 280 million; nine users on Leopard 2 chassis, 19 countries overall.",
+   "location": "Press release 'German Army receives further LEGUAN bridge layer', paragraphs 1-3",
+   "uncertainty": "Order and planned delivery period, not a delivery report; the press release is from 2020 and no delivery count for 2023-2026 was found. ESUT cites a EUR 25 million parliamentary submission in the same context, so the order value is not uniformly reported.",
+   "proposed_depth": "A",
+   "event_date": "2020-07-23",
+   "event_status": "Auftrag; Lieferung geplant 2023-2028"
+  },
+  {
+   "id": "P-SD-004",
+   "statement": "According to KNDS (press release of 9 December 2025), Denmark already operates the LEGUAN on a LEOPARD 2 chassis; the Danish Procurement Agency (DALO) awarded KNDS Deutschland a contract for three LEGUAN bridge layers on a TATRA 10x10 chassis (about EUR 33 million) with an option, decision expected in 2026, for training equipment and three further wheeled bridge layers (EUR 25 million).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-c448e86fde84d62e"
+   ],
+   "evidence": "Paraphrase: Denmark already operates LEGUAN on LEOPARD 2; DALO contract for three TATRA 10x10 LEGUAN bridge layers, ca. EUR 33 million; option EUR 25 million, decision 2026.",
+   "location": "Press release, Munich, 9 December 2025, paragraphs 1-5",
+   "uncertainty": "Operation by Denmark is a manufacturer statement without date or fleet size; the wheeled order is a contract, not a delivery.",
+   "proposed_depth": "A",
+   "event_date": "2025-12-09",
+   "event_status": "Einsatz Leopard-2-Variante (Herstellerangabe); Auftrag Radvariante"
+  },
+  {
+   "id": "P-SD-005",
+   "statement": "According to KNDS (release of 20 January 2026), KNDS Deutschland and the Belgian Ministry of Defence signed a contract for eight LEGUAN bridge layers on a 10x10 wheeled chassis and 17 LEGUAN 26 m bridges (about EUR 80 million); KNDS states the LEGUAN on tracked and wheeled platforms is in use or being procured by 22 armies.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-ea11e6d3f5209174"
+   ],
+   "evidence": "Paraphrase: Contract signed 20 Jan 2026: eight LEGUAN bridge layers on 10x10 chassis, 17 bridges, ca. EUR 80 million; 22 armies in use or procuring.",
+   "location": "Article body (Munich, January 20, 2026), paragraphs 1-4",
+   "uncertainty": "Contract only; delivery dates not stated. The 22-army figure mixes users and procuring nations.",
+   "proposed_depth": "A",
+   "event_date": "2026-01-20",
+   "event_status": "Auftrag"
+  },
+  {
+   "id": "P-SD-006",
+   "statement": "UK Defence Journal reports, citing KNDS, that Lithuania commissioned KNDS Deutschland to deliver twelve LEGUAN bridge layers on Leopard 2 chassis (about EUR 210 million), each with two 14 m bridges and one 26 m bridge, plus an integrated logistics support package (training, special tools, spare parts).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-5b1a551b6e9e9475"
+   ],
+   "evidence": "Paraphrase: Lithuania commissioned twelve LEGUAN on Leopard 2 chassis, ca. EUR 210 million; ILS package with training, tools, spare parts.",
+   "location": "Article paragraphs 1-4 (19 Feb 2026)",
+   "uncertainty": "Secondary media report of a KNDS announcement; exact contract date and delivery schedule not stated in the source read.",
+   "proposed_depth": "A",
+   "event_status": "Auftrag"
+  },
+  {
+   "id": "P-SD-007",
+   "statement": "According to KNDS's LEGUAN product page, the armed forces of nine nations rely on the LEGUAN LEOPARD 2 and armed forces of 19 nations on LEGUAN in wheeled, tracked or both versions; the page also lists a wheeled variant, a BOXER mission module and a dual-use civilian kit as available.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-0dd13a3430574f68"
+   ],
+   "evidence": "Paraphrase: Nine nations use LEGUAN LEOPARD 2; 19 nations rely on LEGUAN (wheel-based, track-based or both).",
+   "location": "Product page, section 'Facts about the LEGUAN LEOPARD 2' and 'International teaming/pooling/sharing'",
+   "uncertainty": "Undated manufacturer statement without named customers on this page; the 22-army figure in 2026 releases differs from the 19-nation figure.",
+   "proposed_depth": "A",
+   "event_status": "Einsatz bei Streitkraeften (Herstellerangabe, undatiert)"
+  },
+  {
+   "id": "P-SD-010",
+   "statement": "KNDS UK states that its Medium Girder Bridge and Dry Support Bridge are used by coalition forces worldwide and are currently in service with the British Army, the U.S. Army and many other NATO forces.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-a5a797cf3b776ceb"
+   ],
+   "evidence": "Paraphrase: MGB and DSB in service with British Army, U.S. Army and many other NATO forces.",
+   "location": "Company page, introductory section on rapidly deployable bridging",
+   "uncertainty": "Undated manufacturer statement; does not state which of the two systems serves which army.",
+   "proposed_depth": "A",
+   "event_status": "Einsatz (Herstellerangabe, undatiert)"
+  },
+  {
+   "id": "P-SD-011",
+   "statement": "Army Technology (project profile, 2016) states that the Dry Support Bridge is operational with the armed forces of the US, Turkey and Switzerland; the US has received DSBs since 2003 with the 100th delivered in November 2013, and Swiss armasuisse took delivery of its first four systems in June 2014 with further deliveries planned through November 2016.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-39fa72dccabdf08b"
+   ],
+   "evidence": "Paraphrase: DSB operational with US, Turkey, Switzerland; US deliveries since 2003, 100th in Nov 2013; Swiss first batch June 2014, deliveries through 2016.",
+   "location": "Project profile, overview and 'contracts' sections",
+   "uncertainty": "Profile of 2016 apparently based on WFEL/KMW company data; shows historic repeated deliveries, not current production.",
+   "proposed_depth": "A",
+   "event_date": "2013-11",
+   "event_status": "abgeschlossen/laufend zum Berichtszeitpunkt 2016 (wiederholte Auslieferungen)"
+  },
+  {
+   "id": "P-SD-012",
+   "statement": "According to WFEL (September 2017 release), a contract for four more DSB systems brought the US military's DSB stockholding to 112 systems, alongside a five-year agreement for DSB upgrades worth GBP 30 million; WFEL states the DSB has been in US Army service since 2003 and adopted by Turkey, Switzerland and Australia.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-cc65bc16b7e1415b"
+   ],
+   "evidence": "Paraphrase: Four more DSB for the US Army bring stock to 112; five-year upgrade agreement GBP 30 million; adopted by Turkey, Switzerland, Australia.",
+   "location": "Member news article, paragraphs 1-4",
+   "uncertainty": "Company statement from 2017; no later US delivery data found.",
+   "proposed_depth": "A",
+   "event_date": "2017-09-21",
+   "event_status": "Auftrag/Lieferung 2017; Bestand 112 laut Hersteller"
+  },
+  {
+   "id": "P-SD-013",
+   "statement": "Army Technology reports (8 March 2018) that WFEL delivered the first scheduled tranche of dry support bridges and medium girder bridges to the Australian Defence Force under project Land 155; the DSBs were delivered after trials at Millbrook Proving Ground and the DSB launcher is on a Rheinmetall MAN 10x10 chassis.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5a6a692d962fc23f"
+   ],
+   "evidence": "Paraphrase: First scheduled tranche of DSBs and MGBs delivered to ADF under Land 155; DSB launcher on RMMV 10x10 chassis.",
+   "location": "Article paragraphs 1-3 and 5",
+   "uncertainty": "Report of 2018; the article is based on WFEL information, and the later tranche completion was not read in this source.",
+   "proposed_depth": "A",
+   "event_date": "2018-03-08",
+   "event_status": "durchgefuehrt (erste Teillieferung)"
+  },
+  {
+   "id": "P-SD-014",
+   "statement": "According to UK Defence Equipment & Support (25 January 2024), a GBP 150 million contract under Project TYRO was placed with KNDS UK for general support bridges based on the Dry Support Bridge design (up to 46 m, to be mounted on RMMV HX2 trucks) to replace the BR90 ABLE system; The Defense Post reports the same award.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-8353b232dcdf4c30",
+    "S-aa11d141db260364"
+   ],
+   "evidence": "Paraphrase: GBP 150 million contract for general support bridges based on the DSB design; replaces BR90 ABLE; mounted on RMMV HX2. (further sources in evidence_items)",
+   "location": "DES news article, paragraphs 1-3 and 8; Article paragraphs 1-5",
+   "evidence_items": [
+    {
+     "source_id": "S-8353b232dcdf4c30",
+     "text": "Paraphrase: GBP 150 million contract for general support bridges based on the DSB design; replaces BR90 ABLE; mounted on RMMV HX2.",
+     "mode": "Paraphrase",
+     "location": "DES news article, paragraphs 1-3 and 8"
+    },
+    {
+     "source_id": "S-aa11d141db260364",
+     "text": "Paraphrase: GBP 150 million agreement for solutions based on the Dry Support Bridge variant; 46 m span; replaces BR90 ABLE.",
+     "mode": "Paraphrase",
+     "location": "Article paragraphs 1-5"
+    }
+   ],
+   "uncertainty": "Order only; delivery schedule or first deliveries not stated in the sources read. The quoted KNDS UK statement that it manufactures and exports the DSB is a manufacturer statement.",
+   "proposed_depth": "A",
+   "event_date": "2024-01-25",
+   "event_status": "Auftrag; Lieferung nicht belegt"
+  },
+  {
+   "id": "P-SD-015",
+   "statement": "According to KNDS, it has supplied rapidly deployable military bridges (Dry Support Bridge and Medium Girder Bridge are listed) to over 40 armed forces worldwide over more than fifty years.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-64902f4dbe1a905a"
+   ],
+   "evidence": "Paraphrase: KNDS is a world leader in rapidly deployable military bridging, supplying over 40 armed forces for over fifty years; DSB and MGB listed.",
+   "location": "Equipment overview page, section 'Tactical military bridges'",
+   "uncertainty": "Group-level, undated manufacturer statement, not specific to current production.",
+   "proposed_depth": "A",
+   "event_status": "Lieferungen an Streitkraefte (Herstellerangabe, undatiert)"
+  },
+  {
+   "id": "P-SD-020",
+   "statement": "Army Technology (project profile) states the Medium Girder Bridge has been operational with the British Army since 1971 and that WFEL has supplied more than 500 MGBs to 40 armed forces; the UK MoD ordered 17 MGB sets in October 2020 (over GBP 46 million), the first was delivered to the Royal Engineers in July 2021 and the remaining bridges were expected by December 2025.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-a757e9aba1762b82"
+   ],
+   "evidence": "Paraphrase: MGB operational since 1971; over 500 MGBs to 40 forces; UK order of 17 MGBs Oct 2020; first delivered July 2021; remainder expected by Dec 2025.",
+   "location": "Project profile, overview and 'contracts and deliveries' sections",
+   "uncertainty": "Profile is undated and WFEL-derived; completion of the UK delivery by December 2025 was not confirmed in the sources read.",
+   "proposed_depth": "A",
+   "event_date": "2021-07",
+   "event_status": "durchgefuehrt (erste Lieferung); Restlieferung bis Dez 2025 geplant, Abschluss nicht belegt"
+  },
+  {
+   "id": "P-SD-021",
+   "statement": "According to KNDS UK (company page), the Medium Girder Bridge is in service with the British Army, the U.S. Army and many other NATO forces and KNDS UK is the Prime Contractor to the UK MoD and U.S. DoD.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-a5a797cf3b776ceb"
+   ],
+   "evidence": "Paraphrase: MGB and DSB currently in service with British Army, U.S. Army and many other NATO forces.",
+   "location": "Company page, introductory section",
+   "uncertainty": "Duplicate basis of P-SD-010 for the MGB row; undated.",
+   "proposed_depth": "A",
+   "event_status": "Einsatz (Herstellerangabe, undatiert)"
+  },
+  {
+   "id": "P-SD-030",
+   "statement": "According to KNDS, the Heavy Short Trackway Bridge (HSTB) is a modular MLC 40 bridge kit for obstacles up to 8 m wide that can be laid by many 4x4 APCs or smaller tracked vehicles, with the laying frame adapted to the vehicle specified by the customer; KNDS's bridges overview lists HSTB among its systems and says its bridge systems are in use worldwide.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-853f4c3e4301aa4d",
+    "S-ce07e1ada13e6f22"
+   ],
+   "evidence": "Paraphrase: HSTB is a modular MLC 40 bridge building kit, obstacle width up to 8 m; laying frame adapted to the customer's vehicle. (further sources in evidence_items)",
+   "location": "Product page, introduction and technical sections; Bridges overview, section 'Bridge systems from KNDS are in use worldwide'",
+   "evidence_items": [
+    {
+     "source_id": "S-853f4c3e4301aa4d",
+     "text": "Paraphrase: HSTB is a modular MLC 40 bridge building kit, obstacle width up to 8 m; laying frame adapted to the customer's vehicle.",
+     "mode": "Paraphrase",
+     "location": "Product page, introduction and technical sections"
+    },
+    {
+     "source_id": "S-ce07e1ada13e6f22",
+     "text": "Paraphrase: Bridge systems from KNDS are in use worldwide, from HSTB to LEGUAN.",
+     "mode": "Paraphrase",
+     "location": "Bridges overview, section 'Bridge systems from KNDS are in use worldwide'"
+    }
+   ],
+   "uncertainty": "No named HSTB customer, delivery, test or order was found; the 'in use worldwide' sentence covers the bridge range and is not an HSTB-specific delivery statement.",
+   "proposed_depth": "A",
+   "event_status": "Produktangebot; Kundeneinsatz/Lieferung/Test nicht belegt"
+  },
+  {
+   "id": "P-SD-040",
+   "statement": "According to KNDS (19 December 2024), the ArGe D-LBO of KNDS Deutschland and Rheinmetall was commissioned by BAAINBw to digitise the command-and-control equipment of the Army's vehicle systems (six-year term, EUR 1.98 billion gross, half for KNDS Deutschland); series integration was to start in mid-2025 on about 10,000 combat and support vehicles with completion expected by end of 2030.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-86b2f2d091553389"
+   ],
+   "evidence": "Paraphrase: ArGe D-LBO commissioned by BAAINBw; EUR 1.98bn gross, half KNDS; series integration from mid-2025 on about 10,000 vehicles; completion by end of 2030.",
+   "location": "Press release, paragraphs 1-4",
+   "uncertainty": "Contract and plan statement by the manufacturer; the Bundeswehr pages read later do not break out the KNDS share of work.",
+   "proposed_depth": "A",
+   "event_date": "2024-12-19",
+   "event_status": "Auftrag; Serienintegration ab Mitte 2025 geplant"
+  },
+  {
+   "id": "P-SD-041",
+   "statement": "According to the Bundeswehr (12 October 2026), the D-LBO system has been in a field operational test at the Munster training area for about five weeks; the pattern integration of the vehicle types is largely complete and series integration is progressing, but fewer vehicles have been converted by industry than agreed; the Panzergrenadierbrigade 37 is to be the first large unit to use the digital technology from 1 January 2027.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-b1618e7ff9721cd4"
+   ],
+   "evidence": "Paraphrase: Einsatzpruefung at Munster running about five weeks; Musterintegration largely complete; Serienintegration progressing but behind agreement; first large unit to use D-LBO from 1 Jan 2027.",
+   "location": "Report of the minister's briefing, paragraphs 3-6 and 'Zeitplan' paragraph",
+   "uncertainty": "The page refers to the Bundeswehr programme D-LBO as a whole and does not name KNDS or its share; the link to the KNDS-Rheinmetall ArGe rests on the KNDS release.",
+   "proposed_depth": "A",
+   "event_date": "2026-10-12",
+   "event_status": "laufend (Einsatzpruefung, Serienintegration); Truppennutzung ab 2027 geplant"
+  },
+  {
+   "id": "P-SD-042",
+   "statement": "According to the Federal Ministry of Defence (16 October 2026), the field operational test of the D-LBO system 'D-LBO basic' at Munster was completed, basic functionality is given, over 2,000 vehicles have already been converted to 'D-LBO basic', about 300 vehicles fewer than the self-set target, and industry is to reach 2,700 converted vehicles by end of 2026.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-55e7ca27a0361c81"
+   ],
+   "evidence": "Paraphrase: Einsatzpruefung of D-LBO basic completed; over 2000 vehicles converted; about 300 behind target; target 2,700 by end 2026.",
+   "location": "Press article, paragraphs 1-2 and the passage on Serienintegration",
+   "uncertainty": "Programme-level figure covering all industry partners; the page does not name KNDS or give a KNDS-specific vehicle count. Operational use by troop units is planned from January 2027.",
+   "proposed_depth": "A",
+   "event_date": "2026-10-16",
+   "event_status": "durchgefuehrt (Einsatzpruefung); Serienintegration laufend"
+  },
+  {
+   "id": "P-SD-043",
+   "statement": "According to KNDS, the iC2 command system family of KNDS Deutschland provides basic C2 functions such as blue force tracking and fire control for artillery, and KNDS states that the technology is 'already in use internationally'.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-df209e8e3de10b23"
+   ],
+   "evidence": "Paraphrase: iC2 family integrates KNDS Deutschland management software; 'Technology already in use internationally'.",
+   "location": "Product page, sections 'iC2 command system family' and feature list",
+   "uncertainty": "No customer, country, fleet or delivery date is named; use is an undated manufacturer statement.",
+   "proposed_depth": "A",
+   "event_status": "Einsatz behauptet (Herstellerangabe); Kunden nicht benannt"
+  },
+  {
+   "id": "P-SD-050",
+   "statement": "According to KNDS CBRN (subsidiary of KNDS France), it has supported military and civil customers worldwide, specifically in Europe, Asia and the Middle East, for more than 70 years and offers decontamination systems, gas masks and filters, NBC filtration and air conditioning, chemical detectors and biological detection kits with in-house design, production and testing.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-a700649482832648"
+   ],
+   "evidence": "Paraphrase: KNDS CBRN: more than 70 years of support to customers in Europe, Asia and the Middle East; list of decontamination, protection, filtration and detection products.",
+   "location": "Subsidiary page, introduction and product list",
+   "uncertainty": "Undated manufacturer statement; no named customers or product-specific delivery data.",
+   "proposed_depth": "A",
+   "event_status": "Angebot; Kundenbasis behauptet (Herstellerangabe)"
+  },
+  {
+   "id": "P-SD-051",
+   "statement": "According to KNDS CBRN (release of 13 March 2026), the French DGA ordered the first models of the new TGM48 gas mask for the French armed forces; KNDS CBRN states the TGM48 was certified for industrial production in 2025 after 35 years of continuous production of the previous mask generation at its facilities.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4caf2e8adadc1cdf",
+    "S-2c2ab405ba99057a"
+   ],
+   "evidence": "Paraphrase: DGA ordered the first models of the new gas mask; TGM48 certified for industrial production in 2025; 35 years of continuous production of the previous generation. (further sources in evidence_items)",
+   "location": "Release text (Brussels, March 13, 2026), paragraphs 1-4; Article paragraphs 2-3 (16 Mar 2026)",
+   "evidence_items": [
+    {
+     "source_id": "S-4caf2e8adadc1cdf",
+     "text": "Paraphrase: DGA ordered the first models of the new gas mask; TGM48 certified for industrial production in 2025; 35 years of continuous production of the previous generation.",
+     "mode": "Paraphrase",
+     "location": "Release text (Brussels, March 13, 2026), paragraphs 1-4"
+    },
+    {
+     "source_id": "S-2c2ab405ba99057a",
+     "text": "Paraphrase: Same KNDS CBRN announcement reproduced: first models of new gas mask ordered; TGM48 certified in 2025; 35 years of previous generation production.",
+     "mode": "Paraphrase",
+     "location": "Article paragraphs 2-3 (16 Mar 2026)"
+    }
+   ],
+   "uncertainty": "Both documents reproduce the same KNDS CBRN announcement and are not independent; the 35-year production claim concerns the previous generation, and deliveries of the TGM48 are not stated.",
+   "proposed_depth": "A",
+   "event_date": "2026-03-13",
+   "event_status": "Auftrag (Erstlos); Zertifizierung fuer Serienfertigung 2025 laut Hersteller"
+  },
+  {
+   "id": "P-SD-052",
+   "statement": "European Security & Defence reports (29 November 2021), citing a Nexter press release, that NBC-Sys (then a Nexter Group subsidiary, now KNDS CBRN) is the supplier of the gas masks for the French armed forces and inaugurated on 16 November 2021 a fully automated production line for its NBC filter cartridges, which is intended to guarantee the supply of current filter cartridges for the French armed forces.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-84c8affa9e078c89"
+   ],
+   "evidence": "Paraphrase: NBC-Sys supplies gas masks for French Armed Forces; automated filter cartridge line inaugurated 16 Nov 2021.",
+   "location": "Article paragraphs 1-2",
+   "uncertainty": "Media report of a Nexter release (2021); the mask generation supplied is not specified and the corporate link of NBC-Sys to KNDS CBRN is not described in the article.",
+   "proposed_depth": "A",
+   "event_date": "2021-11-16",
+   "event_status": "durchgefuehrt (Fertigungslinie eroeffnet); Lieferantenrolle laut Hersteller"
+  },
+  {
+   "id": "P-SD-053",
+   "statement": "According to KNDS CBRN (release of 13 March 2026), the DGA and UGAP ordered two decontamination systems of the ESSENTIAL DECON range: the L-01 truck-based system, of which 21 are to be deployed by the French Army by the beginning of 2028, and the S-04 aircraft decontamination system, first deliveries by the beginning of 2028; the lighter M-01 was presented at BEDEX 2026.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4caf2e8adadc1cdf",
+    "S-2c2ab405ba99057a"
+   ],
+   "evidence": "Paraphrase: DGA and UGAP ordered two ESSENTIAL DECON systems; L-01: 21 to be deployed by early 2028; S-04: first systems delivered by early 2028; M-01 promoted at the show. (further sources in evidence_items)",
+   "location": "Release text, sections 'Two versions of the ESSENTIAL DECON range' and system descriptions; Article paragraphs 4-8",
+   "evidence_items": [
+    {
+     "source_id": "S-4caf2e8adadc1cdf",
+     "text": "Paraphrase: DGA and UGAP ordered two ESSENTIAL DECON systems; L-01: 21 to be deployed by early 2028; S-04: first systems delivered by early 2028; M-01 promoted at the show.",
+     "mode": "Paraphrase",
+     "location": "Release text, sections 'Two versions of the ESSENTIAL DECON range' and system descriptions"
+    },
+    {
+     "source_id": "S-2c2ab405ba99057a",
+     "text": "Paraphrase: Same announcement: two decontamination systems ordered; L-01 21 systems by beginning of 2028; S-04 first systems by beginning of 2028.",
+     "mode": "Paraphrase",
+     "location": "Article paragraphs 4-8"
+    }
+   ],
+   "uncertainty": "Orders and future deployment/delivery targets, not delivered or fielded systems; both documents reproduce one KNDS CBRN announcement; range developed with company funds.",
+   "proposed_depth": "A",
+   "event_date": "2026-03-13",
+   "event_status": "Auftrag; Auslieferung/Einsatz geplant bis Anfang 2028"
+  },
+  {
+   "id": "P-SD-065",
+   "statement": "According to KNDS (23 July 2020), the BAAINBw order for 24 LEGUAN systems includes training simulators; according to KMW (10 December 2019), the Dutch order of eight Leguan on Leopard 2 chassis likewise included additional equipment and training simulators.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-108999689b0d838d",
+    "S-47bb621c6a3c6d4c"
+   ],
+   "evidence": "Paraphrase: Contract covers 24 Leguan systems, training simulators, ancillary equipment and transport systems. (further sources in evidence_items)",
+   "location": "Press release 23.07.2020, paragraph 1; Release text dated 10 December 2019, first paragraph",
+   "evidence_items": [
+    {
+     "source_id": "S-108999689b0d838d",
+     "text": "Paraphrase: Contract covers 24 Leguan systems, training simulators, ancillary equipment and transport systems.",
+     "mode": "Paraphrase",
+     "location": "Press release 23.07.2020, paragraph 1"
+    },
+    {
+     "source_id": "S-47bb621c6a3c6d4c",
+     "text": "Paraphrase: Netherlands ordered eight Leguan on Leopard 2 chassis, additional equipment and training simulators.",
+     "mode": "Paraphrase",
+     "location": "Release text dated 10 December 2019, first paragraph"
+    }
+   ],
+   "uncertainty": "Simulators are listed as order scope; delivery or training use of these simulators is not documented in the sources read.",
+   "proposed_depth": "A",
+   "event_date": "2020-07-23",
+   "event_status": "Auftrag (Teil des Leguan-Pakets); Lieferung nicht belegt"
+  },
+  {
+   "id": "P-SD-060",
+   "statement": "According to KNDS (press release of 13 February 2024), the Swedish procurement agency FMV and KNDS concluded a contract for 18 high-fidelity LEOPARD 2 simulators (turret and driving simulators) for training at the Land Warfare Center in Skoevde and three further sites, including integration of the Swedish C2 Mark management system; ESUT reports the simulators replace the existing devices.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-670840d28766decf",
+    "S-34828887c7a7a16c"
+   ],
+   "evidence": "Paraphrase: Contract between FMV and KNDS for 18 high-fidelity simulators; turret and driving simulators; training at Skoevde and three more sites; C2 Mark integration. (further sources in evidence_items)",
+   "location": "Press release dated 13.02.2024, paragraphs 1-3; Article of 14 Feb 2024, paragraphs 1-4",
+   "evidence_items": [
+    {
+     "source_id": "S-670840d28766decf",
+     "text": "Paraphrase: Contract between FMV and KNDS for 18 high-fidelity simulators; turret and driving simulators; training at Skoevde and three more sites; C2 Mark integration.",
+     "mode": "Paraphrase",
+     "location": "Press release dated 13.02.2024, paragraphs 1-3"
+    },
+    {
+     "source_id": "S-34828887c7a7a16c",
+     "text": "Paraphrase: 18 high-fidelity simulators; they replace the existing devices; training from basic training to troop training.",
+     "mode": "Paraphrase",
+     "location": "Article of 14 Feb 2024, paragraphs 1-4"
+    }
+   ],
+   "uncertainty": "Contract and capability description; first delivery or acceptance of the new simulators is not stated in the sources read.",
+   "proposed_depth": "A",
+   "event_date": "2024-02-13",
+   "event_status": "Auftrag; Lieferung nicht belegt"
+  },
+  {
+   "id": "P-SD-061",
+   "statement": "According to KNDS (13 February 2024), the Swedish armed forces have been using KNDS Deutschland simulation technology for 25 years, and ESUT adds that the new Leopard 2 simulators continue this 25-year cooperation and replace the devices already in place.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-670840d28766decf",
+    "S-34828887c7a7a16c"
+   ],
+   "evidence": "Paraphrase: Swedish armed forces have been using KNDS Deutschland simulation technology for 25 years. (further sources in evidence_items)",
+   "location": "Press release dated 13.02.2024, paragraph 4; Article of 14 Feb 2024, paragraph 1",
+   "evidence_items": [
+    {
+     "source_id": "S-670840d28766decf",
+     "text": "Paraphrase: Swedish armed forces have been using KNDS Deutschland simulation technology for 25 years.",
+     "mode": "Paraphrase",
+     "location": "Press release dated 13.02.2024, paragraph 4"
+    },
+    {
+     "source_id": "S-34828887c7a7a16c",
+     "text": "Paraphrase: Simulators replace existing devices; KNDS continues 25 years of cooperation in simulation.",
+     "mode": "Paraphrase",
+     "location": "Article of 14 Feb 2024, paragraph 1"
+    }
+   ],
+   "uncertainty": "Applies to earlier-generation KNDS simulation equipment, not to the 18 newly ordered simulators; type and number of the existing devices are not stated.",
+   "proposed_depth": "A",
+   "event_status": "Einsatz frueherer Simulatorengeneration (Herstellerangabe)"
+  },
+  {
+   "id": "P-SD-062",
+   "statement": "The Defense Post reports (12 January 2026) that the KNDS and Rheinmetall joint business Projekt System & Management secured a contract to deliver nine Puma IFV firing and combat training systems (AGSP) to Germany for EUR 119.5 million, with the first platforms scheduled for mid-2027.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f6d4aa6643f3b5ed"
+   ],
+   "evidence": "Paraphrase: Projekt System & Management contracted for nine Puma AGSP, EUR 119.5 million, first deliveries mid-2027.",
+   "location": "Article paragraphs 1-4",
+   "uncertainty": "Media report; the article states that EUR 118.5 million of the value is allocated to Rheinmetall's electronics segment as key subcontractor; contract date not given.",
+   "proposed_depth": "A",
+   "event_date": "2026-01-12",
+   "event_status": "Auftrag; Lieferung geplant ab Mitte 2027"
+  },
+  {
+   "id": "P-SD-063",
+   "statement": "The Defense Post reports that Germany's Office for Army Development cleared the Puma AGSP simulator for acceptance in September 2025.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-f6d4aa6643f3b5ed"
+   ],
+   "evidence": "Paraphrase: Office for Army Development cleared the system for acceptance in September 2025.",
+   "location": "Article, paragraph 'cleared the system for acceptance'",
+   "uncertainty": "Single media statement without named primary source; the nature of the clearance (qualification vs. formal acceptance) is not specified.",
+   "proposed_depth": "A",
+   "event_date": "2025-09",
+   "event_status": "durchgefuehrt (Freigabe zur Abnahme laut Medienbericht)"
+  },
+  {
+   "id": "P-SD-070",
+   "statement": "According to the Government of Canada (release of September 2024, reproduced by Canadian Defence Review), a contract was awarded to KNDS Deutschland for the long-term sustainment of the Leopard 2 family of vehicles (initial period of 6 years and 7 months, four option periods to March 2036, estimated value CAD 2 billion including taxes) covering program management, maintenance, technical services, supply support and engineering support, with a Regional Maintenance Centre to be established near Edmonton; Army Technology reports the same award.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-b3d6ea0a4ecf3ff5",
+    "S-f50e6574f787d1cc"
+   ],
+   "evidence": "Paraphrase: Contract awarded to KNDS Deutschland for Leopard 2 FoV sustainment; initial 6 years 7 months; options to March 2036; scope; Regional Maintenance Centre near Edmonton; CAF operates 103 Leopard 2 in 5 variants. (further sources in evidence_items)",
+   "location": "Government release text, paragraphs 3-5, 9, 12; Article paragraphs 1-4 (19 Sep 2024)",
+   "evidence_items": [
+    {
+     "source_id": "S-b3d6ea0a4ecf3ff5",
+     "text": "Paraphrase: Contract awarded to KNDS Deutschland for Leopard 2 FoV sustainment; initial 6 years 7 months; options to March 2036; scope; Regional Maintenance Centre near Edmonton; CAF operates 103 Leopard 2 in 5 variants.",
+     "mode": "Paraphrase",
+     "location": "Government release text, paragraphs 3-5, 9, 12"
+    },
+    {
+     "source_id": "S-f50e6574f787d1cc",
+     "text": "Paraphrase: Canada has contracted KNDS Germany to sustain the Leopard 2 family; contract signed in Ottawa; Regional Maintenance and Repair Centre near Edmonton.",
+     "mode": "Paraphrase",
+     "location": "Article paragraphs 1-4 (19 Sep 2024)"
+    }
+   ],
+   "uncertainty": "Contract award; actual delivery of services since the start, and whether the Edmonton centre is operating, are not documented in the sources read. Reported euro values differ by source.",
+   "proposed_depth": "A",
+   "event_date": "2024-09-17",
+   "event_status": "Auftrag erteilt; Durchfuehrung/Zentrum in Betrieb nicht belegt"
+  },
+  {
+   "id": "P-SD-071",
+   "statement": "Ukraine's Strategic Industries Minister announced on 21 January 2025 that KNDS Deutschland had opened a joint venture with a Ukrainian defence company to service and repair German-made equipment supplied to the Ukrainian armed forces; according to the minister, Ukrainian specialists have been trained in Germany and the first systems have been installed at the facilities.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-faf0f3da7c18e608",
+    "S-e5b36faedd6ac2e1",
+    "S-75166609aad6b378"
+   ],
+   "evidence": "Paraphrase: Minister Smetanin: KNDS Deutschland opened a joint venture to maintain and repair equipment supplied to Ukraine. (further sources in evidence_items)",
+   "location": "Article lead (21 Jan 2025); Article paragraphs 1-3; Article paragraphs 2-5",
+   "evidence_items": [
+    {
+     "source_id": "S-faf0f3da7c18e608",
+     "text": "Paraphrase: Minister Smetanin: KNDS Deutschland opened a joint venture to maintain and repair equipment supplied to Ukraine.",
+     "mode": "Paraphrase",
+     "location": "Article lead (21 Jan 2025)"
+    },
+    {
+     "source_id": "S-e5b36faedd6ac2e1",
+     "text": "Paraphrase: JV will service and repair German-made equipment; specialists trained in Germany; first systems installed at facilities.",
+     "mode": "Paraphrase",
+     "location": "Article paragraphs 1-3"
+    },
+    {
+     "source_id": "S-75166609aad6b378",
+     "text": "Paraphrase: JV specialises in maintenance and repair; specialists trained in Germany have installed the first systems; KNDS Ukraine branch established October 2024.",
+     "mode": "Paraphrase",
+     "location": "Article paragraphs 2-5"
+    }
+   ],
+   "uncertainty": "The three reports rely on the same ministerial announcement; the partner company is not named; completed repairs are not documented by these sources.",
+   "proposed_depth": "A",
+   "event_date": "2025-01-21",
+   "event_status": "eingerichtet (JV eroeffnet); erbrachte Reparaturleistungen nicht belegt"
+  },
+  {
+   "id": "P-SD-072",
+   "statement": "Army Technology reports (2 October 2024) that KNDS opened KNDS Ukraine, an MRO establishment in Ukraine, which aims to improve the operational readiness of military assets in Ukraine such as Leopard 1 and 2 main battle tanks.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5d0f11d37d7d69bf"
+   ],
+   "evidence": "Paraphrase: Opening of KNDS Ukraine, an MRO establishment; aims to improve readiness of Leopard 1 and 2.",
+   "location": "Article lead and caption, 2 Oct 2024",
+   "uncertainty": "Describes an opening and intended scope; throughput, customers served and repairs completed are not stated.",
+   "proposed_depth": "A",
+   "event_date": "2024-10-02",
+   "event_status": "durchgefuehrt (Gesellschaft eroeffnet); Leistungserbringung nicht belegt"
+  }
+ ],
+ "source_proposals": [
+  {
+   "id": "S-0dd13a3430574f68",
+   "name": "KNDS",
+   "title": "LEGUAN",
+   "url": "https://knds.com/en/products/systems/bridges/leguan",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-4f97ad522106cb38",
+   "name": "KNDS",
+   "title": "Systems",
+   "url": "https://knds.com/en/products/systems",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-64902f4dbe1a905a",
+   "name": "KNDS",
+   "title": "Equipment",
+   "url": "https://knds.com/en/products/equipment",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-d93ed235185f04c5",
+   "name": "KNDS",
+   "title": "Training and simulation",
+   "url": "https://knds.com/de/produkte/training-und-simulation",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-086937648044a782",
+   "name": "KNDS",
+   "title": "KNDS Deutschland",
+   "url": "https://knds.com/de/standorte/knds-deutschland",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-108999689b0d838d",
+   "name": "KNDS",
+   "title": "German Army receives further LEGUAN bridge layer",
+   "url": "https://knds.com/press-releases/german-army-receives-further-leguan-bridge-layer",
+   "published_date": "2020-07-23",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-c448e86fde84d62e",
+   "name": "KNDS",
+   "title": "Denmark procures KNDS LEGUAN bridge layers based on wheeled vehicles",
+   "url": "https://knds.com/en/press-releases/denmark-procures-knds-leguan-bridge-layers-based-on-wheeled-vehicles",
+   "published_date": "2025-12-09",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-ea11e6d3f5209174",
+   "name": "EDR Magazine",
+   "title": "Belgium Selects LEGUAN Bridge Layer from KNDS",
+   "url": "https://www.edrmagazine.eu/belgium-selects-leguan-bridge-layer-from-knds",
+   "published_date": "2026-01-20",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media (republished KNDS release)"
+  },
+  {
+   "id": "S-5b1a551b6e9e9475",
+   "name": "UK Defence Journal",
+   "title": "Lithuania orders Leopard 2 bridge layers in KNDS deal",
+   "url": "https://ukdefencejournal.org.uk/lithuania-orders-leopard-2-bridge-layers-in-knds-deal",
+   "published_date": "2026-02-19",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-e903df08d36255bb",
+   "name": "Europaeische Sicherheit & Technik (ESUT)",
+   "title": "Gefechtsfeldbruecken Leguan an die Niederlande uebergeben",
+   "url": "https://esut.de/2019/12/meldungen/ruestung2/17319/gefechtsfeldbruecken-leguan-an-die-niederlande-uebergeben/",
+   "published_date": "2019-12-11",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-47bb621c6a3c6d4c",
+   "name": "EDR Magazine",
+   "title": "The Netherlands receive the first Leguan bridge-layers",
+   "url": "https://www.edrmagazine.eu/the-netherlands-receive-the-first-leguan-bridge-layers",
+   "published_date": "2019-12-10",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media (republished KMW release)"
+  },
+  {
+   "id": "S-687b84418c044515",
+   "name": "Europaeische Sicherheit & Technik (ESUT)",
+   "title": "Liefervertrag fuer weitere Leguan-Brueckenlegesysteme",
+   "url": "https://esut.de/2020/08/meldungen/22096/liefervertrag-fuer-weitere-leguan-brueckenlegesysteme/",
+   "published_date": "2020-08-03",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-853f4c3e4301aa4d",
+   "name": "KNDS",
+   "title": "HSTB",
+   "url": "https://knds.com/en/products/bridges/hstb",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-ce07e1ada13e6f22",
+   "name": "KNDS",
+   "title": "Bridges",
+   "url": "https://knds.com/en/products/systems/bridges",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-a5a797cf3b776ceb",
+   "name": "KNDS UK",
+   "title": "KNDS UK (company website, bridging overview)",
+   "url": "https://knds.co.uk/?p=36",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-39fa72dccabdf08b",
+   "name": "Army Technology",
+   "title": "Dry Support Bridge (DSB), project profile",
+   "url": "https://www.army-technology.com/projects/dry-support-bridge-dsb/",
+   "published_date": "2016-05-03",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-a757e9aba1762b82",
+   "name": "Army Technology",
+   "title": "Medium Girder Bridge, United Kingdom, project profile",
+   "url": "https://www.army-technology.com/projects/medium-girder-bridge-united-kingdom/",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-cc65bc16b7e1415b",
+   "name": "ADS Group (WFEL member news)",
+   "title": "WFEL to supply four more Dry Support Bridges to US Army",
+   "url": "https://www.adsgroup.org.uk/knowledge/industry-member-news/wfel-to-supply-four-more-dry-support-bridges-to-us-army/",
+   "published_date": "2017-09-21",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release (industry body site)"
+  },
+  {
+   "id": "S-5a6a692d962fc23f",
+   "name": "Army Technology",
+   "title": "WFEL delivers first tranche of military bridges to ADF",
+   "url": "https://www.army-technology.com/news/wfel-delivers-first-tranche-military-bridges-adf/",
+   "published_date": "2018-03-08",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-8353b232dcdf4c30",
+   "name": "Defence Equipment & Support (UK MoD)",
+   "title": "Bridging the gap: essential military bridging contract secures 300 UK jobs",
+   "url": "https://des.mod.uk/bridging-the-gap-essential-military-bridging-contract-secures-300-uk-jobs",
+   "published_date": "2024-01-25",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Government publication"
+  },
+  {
+   "id": "S-aa11d141db260364",
+   "name": "The Defense Post",
+   "title": "KNDS to Supply Tactical Support Bridges for British Army",
+   "url": "https://thedefensepost.com/2024/02/06/uk-tactical-support-bridges-knds/amp/",
+   "published_date": "2024-02-06",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-86b2f2d091553389",
+   "name": "KNDS",
+   "title": "Order worth billions: KNDS and Rheinmetall will equip 10,000 Bundeswehr vehicles with digital radio equipment",
+   "url": "https://knds.com/en/press-releases/order-worth-billions-knds-and-rheinmetall-will-equip-10-000-bundeswehr-vehicles-with-digital-radio-equipment",
+   "published_date": "2024-12-19",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-b1618e7ff9721cd4",
+   "name": "Bundeswehr",
+   "title": "Digitalisierung der Landstreitkraefte: Zwischenbilanz zur Einsatzpruefung",
+   "url": "https://www.bundeswehr.de/de/meldungen/digitalisierung-landbasierte-operationen/digitalisierung-zwischenbilanz-einsatzpruefung-6164064",
+   "published_date": "2026-10-12",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Government publication"
+  },
+  {
+   "id": "S-55e7ca27a0361c81",
+   "name": "Bundesministerium der Verteidigung",
+   "title": "Digitalisierung der Landstreitkraefte nimmt wichtigen Meilenstein",
+   "url": "https://www.bmvg.de/de/presse/einsatzpruefung-ruestungsprogramm-d-lbo-6165388",
+   "published_date": "2026-10-16",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Government publication"
+  },
+  {
+   "id": "S-df209e8e3de10b23",
+   "name": "KNDS",
+   "title": "Command and weapon engagement systems",
+   "url": "https://knds.com/en/products/equipment/command-and-weapon-engagement-systems",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-a700649482832648",
+   "name": "KNDS",
+   "title": "KNDS CBRN",
+   "url": "https://knds.com/en/subsidiaries/knds-cbrn",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-4caf2e8adadc1cdf",
+   "name": "EDR Magazine",
+   "title": "Three new orders from the DGA for KNDS CBRN (BEDEX 2026)",
+   "url": "https://www.edrmagazine.eu/bedex-2026-three-new-orders-from-the-dga-for-knds-cbrn-subsidiary-of-knds-france-global-specialist-in-cbrn-detection-protection-and-decontamination",
+   "published_date": "2026-03-13",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media (republished KNDS CBRN release)"
+  },
+  {
+   "id": "S-2c2ab405ba99057a",
+   "name": "Al Defaiya",
+   "title": "KNDS CBRN to Supply New Gas Mask & Decontamination Systems to French DGA",
+   "url": "https://www.defaiya.com/news/Security/Security/2026/03/16/knds-cbrn-to-supply-new-gas-mask-decontamination-systems-to-french-dga",
+   "published_date": "2026-03-16",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media (republished KNDS CBRN release)"
+  },
+  {
+   "id": "S-84c8affa9e078c89",
+   "name": "European Security & Defence",
+   "title": "NBC-Sys Opens Automated Integration Line for Filter Cartridges",
+   "url": "https://euro-sd.com/2021/11/articles/exclusive/24710/nbc-sys/",
+   "published_date": "2021-11-29",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-670840d28766decf",
+   "name": "KNDS",
+   "title": "Cutting-edge KNDS Simulators for Swedish Armed Forces",
+   "url": "https://knds.com/press-releases/cutting-edge-knds-simulators-for-swedish-armed-forces",
+   "published_date": "2024-02-13",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-34828887c7a7a16c",
+   "name": "Europaeische Sicherheit & Technik (ESUT)",
+   "title": "Das schwedische Heer trainiert mit KNDS-Simulatoren",
+   "url": "https://esut.de/2024/02/meldungen/47558/das-schwedische-heer-trainiert-mit-knds-simulatoren/",
+   "published_date": "2024-02-14",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-f6d4aa6643f3b5ed",
+   "name": "The Defense Post",
+   "title": "Germany Orders Puma IFV Simulators From KNDS-Rheinmetall Venture",
+   "url": "https://thedefensepost.com/2026/01/12/germany-puma-simulators/amp/",
+   "published_date": "2026-01-12",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-b3d6ea0a4ecf3ff5",
+   "name": "Canadian Defence Review",
+   "title": "Contract Awarded to KNDS Deutschland GmbH & Co. KG (KNDS) for the Long-Term Sustainment of the Leopard 2 Family of Vehicles",
+   "url": "https://canadiandefencereview.com/contract-awarded-to-knds-deutschland-gmbh-co-kg-knds-for-the-long-term-sustainment-of-the-leopard-2-family-of-vehicles/",
+   "published_date": "2024-09-17",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media (republished Government of Canada release)"
+  },
+  {
+   "id": "S-f50e6574f787d1cc",
+   "name": "Army Technology",
+   "title": "KNDS will sustain all of Canada’s Leopard 2 tanks",
+   "url": "https://www.army-technology.com/news/knds-will-sustain-all-of-canadas-leopard-2-tanks/",
+   "published_date": "2024-09-19",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-faf0f3da7c18e608",
+   "name": "The Kyiv Independent",
+   "title": "Germany's KNDS launches joint venture with Ukraine for military equipment repair, minister says",
+   "url": "https://kyivindependent.com/germanys-knds-launches-joint-venture-with-ukraine-for-military-equipment-repair/",
+   "published_date": "2025-01-21",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-e5b36faedd6ac2e1",
+   "name": "The New Voice of Ukraine",
+   "title": "Germany’s KNDS opens joint venture in Ukraine",
+   "url": "https://english.nv.ua/nation/germany-s-knds-opens-joint-venture-in-ukraine-50483525.html",
+   "published_date": "2025-01-21",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-75166609aad6b378",
+   "name": "Babel",
+   "title": "Leopard tank manufacturer creates joint venture in Ukraine to help with equipment repairs",
+   "url": "https://babel.ua/en/news/114671-leopard-tank-manufacturer-creates-joint-venture-in-ukraine-to-help-with-equipment-repairs",
+   "published_date": "2025-01-21",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-5d0f11d37d7d69bf",
+   "name": "Army Technology",
+   "title": "KNDS opens Ukraine subsidiary to enhance MRO of systems",
+   "url": "https://www.army-technology.com/news/knds-opens-ukraine-subsidiary-to-enhance-mro-of-systems/",
+   "published_date": "2024-10-02",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  }
+ ],
+ "gaps": [
+  {
+   "product_id": "leguan",
+   "gap": "No public delivery report for the 24-system Bundeswehr lot (2023-2028) or for the 2025-2026 export orders was found; current series delivery is evidenced only by orders, not by handovers after 2019/2020."
+  },
+  {
+   "product_id": "dsb",
+   "gap": "No delivery report for the UK TYRO general support bridges (ordered January 2024); US/Swiss/Australian delivery evidence dates from 2013-2018."
+  },
+  {
+   "product_id": "mgb",
+   "gap": "Completion of the UK 17-set MGB delivery (expected December 2025) and the 2024 MGB spares contract (Find a Tender notice, HTTP 403) could not be verified."
+  },
+  {
+   "product_id": "hstb",
+   "gap": "No named customer, order, delivery or trial for HSTB found; absence of evidence does not show absence of use."
+  },
+  {
+   "product_id": "digital",
+   "gap": "No named customer or delivery evidence for iC2 or QBA/iVeNet; no readable source on use in delivered vehicles."
+  },
+  {
+   "product_id": "dlbo",
+   "gap": "KNDS-specific conversion counts and the allocation of conversions between ArGe D-LBO partners are not public in the sources read; the Bundeswehr pages do not name KNDS."
+  },
+  {
+   "product_id": "cbrn",
+   "gap": "No evidence for status of KNDS CBRN detection and collective protection lines or for non-French customers."
+  },
+  {
+   "product_id": "cbrn-mask",
+   "gap": "No delivery report for the TGM48 mask; use of the previous generation by French forces rests on a 2021 media report of a Nexter release."
+  },
+  {
+   "product_id": "training",
+   "gap": "No named delivered simulator beyond order scope (Leguan simulators, Swedish and Puma orders); KNDS driver-training page not readable."
+  },
+  {
+   "product_id": "service",
+   "gap": "No Bundeswehr maintenance, MRO or spare-parts framework contract with KNDS found; Canadian service performance and Edmonton centre opening not documented."
+  },
+  {
+   "product_id": "service-ukraine",
+   "gap": "Ukrainian MoD statement (August 2025) that KNDS repaired the first three Gepard systems could not be opened (HTTP 403) and is not used as evidence."
+  }
+ ],
+ "coverage": [
+  {
+   "product_id": "leguan",
+   "topic": "LEGUAN status",
+   "search_terms": [
+    "LEGUAN bridge layer delivery KNDS Bundeswehr",
+    "Leguan Uebergabe Bundeswehr Niederlande",
+    "Leguan order Denmark Belgium Lithuania 2025 2026"
+   ],
+   "source_ids": [
+    "S-0dd13a3430574f68",
+    "S-108999689b0d838d",
+    "S-687b84418c044515",
+    "S-47bb621c6a3c6d4c",
+    "S-e903df08d36255bb",
+    "S-c448e86fde84d62e",
+    "S-ea11e6d3f5209174",
+    "S-5b1a551b6e9e9475"
+   ],
+   "finding": "Series deliveries since 2019 (NL, Germany), Bundeswehr 24-system order with deliveries 2023-2028, Danish operation of the Leopard 2 variant (manufacturer), new 2025-2026 orders (DK, BE, LT). No delivery report from 2024-2026 found.",
+   "status": "geprueft mit Beleg; aktuelle Auslieferung nicht belegt"
+  },
+  {
+   "product_id": "dsb",
+   "topic": "DSB status",
+   "search_terms": [
+    "Dry Support Bridge US Army Swiss Turkey",
+    "Project TYRO KNDS UK DSB delivery",
+    "KNDS UK Stockport DSB production 2025 2026"
+   ],
+   "source_ids": [
+    "S-a5a797cf3b776ceb",
+    "S-39fa72dccabdf08b",
+    "S-cc65bc16b7e1415b",
+    "S-5a6a692d962fc23f",
+    "S-8353b232dcdf4c30",
+    "S-aa11d141db260364",
+    "S-64902f4dbe1a905a"
+   ],
+   "finding": "Historic repeated deliveries (US, Switzerland, Australia 2003-2018), operation by named armies, UK TYRO order January 2024; no 2024-2026 delivery report found. Find-a-Tender/Contracts Finder notices not accessible (HTTP 403).",
+   "status": "geprueft mit Beleg; aktuelle Auslieferung nicht belegt"
+  },
+  {
+   "product_id": "mgb",
+   "topic": "MGB status",
+   "search_terms": [
+    "Medium Girder Bridge UK order delivery",
+    "MGB KNDS UK spares contract",
+    "WFEL MGB ADF"
+   ],
+   "source_ids": [
+    "S-a757e9aba1762b82",
+    "S-a5a797cf3b776ceb",
+    "S-5a6a692d962fc23f"
+   ],
+   "finding": "Operational with British Army, UK order of 17 sets with first delivery July 2021, ADF delivery 2018; completion of UK order by December 2025 and 2024 spares contract (Find a Tender notice HTTP 403) not confirmed.",
+   "status": "geprueft mit Beleg; aktuelle Auslieferung nicht belegt"
+  },
+  {
+   "product_id": "hstb",
+   "topic": "HSTB status",
+   "search_terms": [
+    "HSTB Heavy Short Trackway Bridge customer",
+    "HSTB KNDS Bundeswehr order delivered"
+   ],
+   "source_ids": [
+    "S-853f4c3e4301aa4d",
+    "S-ce07e1ada13e6f22"
+   ],
+   "finding": "Only manufacturer product description found; no customer, order, delivery or test report in several searches (German, English).",
+   "status": "geprueft ohne Beleg fuer Status"
+  },
+  {
+   "product_id": "digital",
+   "topic": "C4ISR / Vetronics / Mission electronics",
+   "search_terms": [
+    "KNDS C4ISR vetronics delivered",
+    "KNDS iVeNet QBA in use",
+    "KNDS Waffeneinsatzsystem Fuehrungssystem Auftrag"
+   ],
+   "source_ids": [
+    "S-df209e8e3de10b23",
+    "S-64902f4dbe1a905a"
+   ],
+   "finding": "iC2 family: manufacturer says \"in use internationally\" without customers. KNDS vetronics (QBA/iVeNet) page read gives no customer or delivery statement; a search snippet claiming use in many vehicles was not verifiable on the pages read.",
+   "status": "geprueft; Status ohne Kundenbeleg"
+  },
+  {
+   "product_id": "dlbo",
+   "topic": "D-LBO",
+   "search_terms": [
+    "D-LBO Serienintegration KNDS Rheinmetall",
+    "D-LBO Bundeswehr Einsatzpruefung 2026"
+   ],
+   "source_ids": [
+    "S-86b2f2d091553389",
+    "S-b1618e7ff9721cd4",
+    "S-55e7ca27a0361c81"
+   ],
+   "finding": "Order (Dec 2024), operational test completed October 2026, over 2000 vehicles converted (programme level); troop use planned from January 2027. KNDS share of conversions not stated. Cached original HTML for the two government pages is gzip-encoded; text was decoded locally from the cached original.",
+   "status": "geprueft mit Beleg"
+  },
+  {
+   "product_id": "cbrn",
+   "topic": "CBRN range",
+   "search_terms": [
+    "KNDS CBRN customers Europe Asia Middle East",
+    "KNDS CBRN Bundeswehr ABC"
+   ],
+   "source_ids": [
+    "S-a700649482832648"
+   ],
+   "finding": "Offer and customer base only as manufacturer statement; no KNDS Deutschland/Bundeswehr CBRN contract found; no status evidence for detection and collective protection lines.",
+   "status": "geprueft ohne Beleg fuer Status der uebrigen Linien"
+  },
+  {
+   "product_id": "cbrn-mask",
+   "topic": "TGM48 / gas masks",
+   "search_terms": [
+    "KNDS CBRN gas mask DGA",
+    "NBC-Sys gas masks French Armed Forces"
+   ],
+   "source_ids": [
+    "S-4caf2e8adadc1cdf",
+    "S-2c2ab405ba99057a",
+    "S-84c8affa9e078c89"
+   ],
+   "finding": "TGM48 certified for series production 2025; first DGA order March 2026; previous generation produced for 35 years and supplied to French forces (media).",
+   "status": "geprueft mit Beleg"
+  },
+  {
+   "product_id": "cbrn-decon",
+   "topic": "ESSENTIAL DECON",
+   "search_terms": [
+    "ESSENTIAL DECON L-01 S-04 DGA UGAP"
+   ],
+   "source_ids": [
+    "S-4caf2e8adadc1cdf",
+    "S-2c2ab405ba99057a"
+   ],
+   "finding": "Two systems ordered March 2026; deployment/delivery targets early 2028; no delivered units.",
+   "status": "geprueft mit Beleg (nur Auftrag)"
+  },
+  {
+   "product_id": "training",
+   "topic": "Training range",
+   "search_terms": [
+    "KNDS Deutschland Simulatoren Bundeswehr",
+    "KNDS driver training simulator"
+   ],
+   "source_ids": [
+    "S-d93ed235185f04c5",
+    "S-108999689b0d838d",
+    "S-47bb621c6a3c6d4c"
+   ],
+   "finding": "No named delivered simulator beyond order scope. KNDS driver-training product page returned no readable text (script-rendered).",
+   "status": "geprueft; Kundeneinsatz fuer Gesamtangebot nicht belegt"
+  },
+  {
+   "product_id": "training-leo2-sweden",
+   "topic": "Swedish Leopard 2 simulators",
+   "search_terms": [
+    "KNDS Leopard 2 simulator Sweden FMV 18 simulators",
+    "KNDS simulators delivered handed over"
+   ],
+   "source_ids": [
+    "S-670840d28766decf",
+    "S-34828887c7a7a16c"
+   ],
+   "finding": "Contract February 2024; manufacturer states 25 years of KNDS simulation technology use in Sweden; Janes page (deliveries until 2029) not retrievable; no handover report found.",
+   "status": "geprueft; Lieferung nicht belegt"
+  },
+  {
+   "product_id": "training-puma-agsp",
+   "topic": "Puma AGSP",
+   "search_terms": [
+    "Puma AGSP simulator Projekt System & Management"
+   ],
+   "source_ids": [
+    "S-f6d4aa6643f3b5ed"
+   ],
+   "finding": "Order for nine systems, clearance for acceptance September 2025 (media), first deliveries mid-2027.",
+   "status": "geprueft mit Beleg (Auftrag/Freigabe)"
+  },
+  {
+   "product_id": "service",
+   "topic": "Lifecycle support range",
+   "search_terms": [
+    "KNDS Deutschland Rahmenvertrag Instandhaltung Bundeswehr 2025 2026"
+   ],
+   "source_ids": [
+    "S-086937648044a782"
+   ],
+   "finding": "No Bundeswehr maintenance framework contract found in public sources; range statement only.",
+   "status": "geprueft ohne Beleg fuer Bundeswehr-Vertrag"
+  },
+  {
+   "product_id": "service-canada",
+   "topic": "Canada sustainment",
+   "search_terms": [
+    "KNDS Canada Leopard 2 sustainment Edmonton"
+   ],
+   "source_ids": [
+    "S-b3d6ea0a4ecf3ff5",
+    "S-f50e6574f787d1cc"
+   ],
+   "finding": "Contract awarded September 2024; centre opening and service performance not found.",
+   "status": "geprueft mit Beleg (Auftrag)"
+  },
+  {
+   "product_id": "service-ukraine",
+   "topic": "KNDS Ukraine",
+   "search_terms": [
+    "KNDS Ukraine repair joint venture Gepard repaired"
+   ],
+   "source_ids": [
+    "S-faf0f3da7c18e608",
+    "S-e5b36faedd6ac2e1",
+    "S-75166609aad6b378",
+    "S-5d0f11d37d7d69bf"
+   ],
+   "finding": "JV and subsidiary opened; Ukrainian MoD statement of three Gepard repaired (August 2025) was reported in search results but the page (pravda.com.ua) returned HTTP 403 and is not used.",
+   "status": "geprueft; erbrachte Reparaturen nicht belegt"
+  }
+ ]
+}
