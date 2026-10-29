@@ -1,0 +1,2068 @@
+{
+ "schema_version": 1,
+ "mode": "facts-v2",
+ "role": "portfolio",
+ "run_id": "knds-portfolio-status-2026-10-29",
+ "company": "KNDS N.V.",
+ "as_of": "2026-10-29",
+ "scope": "KNDS group product portfolio: current public status (announcement, prototype/testing, series production/deliveries, operational use by customers) per product for the portfolio-status-v2 matrix. Statements in English to match the delivered English briefing. Teilauftrag B: CAESAR 6x6, RCH 155, PzH 2000, MARS II, AGM, DONAR, RapidFire Land, GEPARD, FLW, ARX, THL.",
+ "status": "teilweise",
+ "shared_limitations": "Facts only; no stage, score or maturity assessment. Manufacturer statements stay marked as Herstellerangabe even when media repeat them; media reports of deliveries are reports, not independent confirmation of completion. Product-page sources are undated. Existing claims P-06 to P-12 are carried over unchanged from existing-portfolio.json (earlier_review omitted).",
+ "products": [
+  {
+   "id": "caesar",
+   "label": "CAESAR 6x6",
+   "short_label": "CAESAR 6x6",
+   "domain": "Artillery and rockets",
+   "claim_ids": [
+    "P-06",
+    "P-SB-001",
+    "P-SB-002",
+    "P-SB-003",
+    "P-SB-004",
+    "P-SB-005",
+    "P-SB-006"
+   ],
+   "sections": [
+    {
+     "label": "Delimitation (CAESAR MkII, not a 6x6 status)",
+     "claim_ids": [
+      "P-SB-007"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rch155",
+   "label": "RCH 155",
+   "short_label": "RCH 155",
+   "domain": "Artillery and rockets",
+   "claim_ids": [
+    "P-07",
+    "P-SB-008",
+    "P-SB-009",
+    "P-SB-010",
+    "P-SB-011",
+    "P-SB-012",
+    "P-SB-013",
+    "P-SB-014",
+    "P-SB-015",
+    "P-SB-016",
+    "P-SB-017",
+    "P-SB-018",
+    "P-SB-019",
+    "P-SB-020",
+    "P-SB-021",
+    "P-SB-022",
+    "P-SB-023"
+   ],
+   "sections": [
+    {
+     "label": "Tests and qualification",
+     "claim_ids": [
+      "P-SB-008",
+      "P-SB-009",
+      "P-SB-023"
+     ]
+    },
+    {
+     "label": "Orders and contracts",
+     "claim_ids": [
+      "P-SB-011",
+      "P-SB-016",
+      "P-SB-017",
+      "P-SB-019",
+      "P-SB-021",
+      "P-SB-022"
+     ]
+    },
+    {
+     "label": "Deliveries, training and use",
+     "claim_ids": [
+      "P-SB-010",
+      "P-SB-012",
+      "P-SB-013",
+      "P-SB-014",
+      "P-SB-015",
+      "P-SB-018",
+      "P-SB-020"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pzh2000",
+   "label": "PzH 2000",
+   "short_label": "PzH 2000",
+   "domain": "Artillery and rockets",
+   "claim_ids": [
+    "P-08",
+    "P-SB-024",
+    "P-SB-025",
+    "P-SB-026",
+    "P-SB-027",
+    "P-SB-028",
+    "P-SB-029"
+   ]
+  },
+  {
+   "id": "mars2",
+   "label": "MARS II / MLRS Evolution",
+   "short_label": "MARS II / MLRS-E",
+   "domain": "Artillery and rockets",
+   "claim_ids": [
+    "P-09",
+    "P-SB-030",
+    "P-SB-031",
+    "P-SB-032",
+    "P-SB-033",
+    "P-SB-034"
+   ]
+  },
+  {
+   "id": "agm",
+   "label": "AGM (Artillery Gun Module)",
+   "short_label": "AGM",
+   "domain": "Artillery and rockets",
+   "claim_ids": [
+    "P-09",
+    "P-07",
+    "P-SB-013",
+    "P-SB-035",
+    "P-SB-036",
+    "P-SB-037",
+    "P-SB-038",
+    "P-SB-039",
+    "P-SB-040"
+   ],
+   "sections": [
+    {
+     "label": "AGM in the RCH 155 (see row rch155 for delivery status)",
+     "claim_ids": [
+      "P-07",
+      "P-SB-013"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "donar",
+   "label": "DONAR",
+   "short_label": "DONAR",
+   "domain": "Artillery and rockets",
+   "claim_ids": [
+    "P-09",
+    "P-SB-038",
+    "P-SB-039",
+    "P-SB-041",
+    "P-SB-042"
+   ]
+  },
+  {
+   "id": "rapidfire",
+   "label": "RapidFire Land",
+   "short_label": "RapidFire Land",
+   "domain": "Air defence and armament",
+   "claim_ids": [
+    "P-10",
+    "P-SB-043",
+    "P-SB-044",
+    "P-SB-045",
+    "P-SB-046",
+    "P-SB-047",
+    "P-SB-048"
+   ]
+  },
+  {
+   "id": "gepard",
+   "label": "GEPARD",
+   "short_label": "GEPARD",
+   "domain": "Air defence and armament",
+   "claim_ids": [
+    "P-11",
+    "P-SB-049",
+    "P-SB-050",
+    "P-SB-051",
+    "P-SB-052",
+    "P-SB-053",
+    "P-SB-054"
+   ],
+   "sections": [
+    {
+     "label": "Ammunition (Rheinmetall, not KNDS vehicle production)",
+     "claim_ids": [
+      "P-SB-051"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "flw",
+   "label": "FLW (remote-controlled light weapon stations FLW 100 / 200 / 200 Plus)",
+   "short_label": "FLW",
+   "domain": "Air defence and armament",
+   "claim_ids": [
+    "P-12",
+    "P-SB-055",
+    "P-SB-056",
+    "P-SB-057"
+   ]
+  },
+  {
+   "id": "arx",
+   "label": "ARX (ARX20 / ARX25 / ARX30 remote turrets)",
+   "short_label": "ARX",
+   "domain": "Air defence and armament",
+   "claim_ids": [
+    "P-12",
+    "P-SB-058",
+    "P-SB-059",
+    "P-SB-060",
+    "P-SB-061"
+   ]
+  },
+  {
+   "id": "thl",
+   "label": "THL (THL20 / THL30 helicopter gun turrets)",
+   "short_label": "THL",
+   "domain": "Air defence and armament",
+   "claim_ids": [
+    "P-12",
+    "P-SB-062",
+    "P-SB-063",
+    "P-SB-064"
+   ]
+  }
+ ],
+ "claims": [
+  {
+   "id": "P-06",
+   "statement": "KNDS offers CAESAR 6x6 as a wheeled 155 mm/L52 artillery system and describes this version as used in combat and ordered again.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-eb5571e8d8324a23"
+   ],
+   "evidence": "Paraphrase: 155 mm / 52 Cal; users in combat place repeat orders.",
+   "location": "Facts about CAESAR 6x6",
+   "uncertainty": "Manufacturer statement; does not automatically apply to CAESAR Mk2."
+  },
+  {
+   "id": "P-07",
+   "statement": "According to KNDS, RCH 155 combines an automated, remotely operated 155-mm/L52 artillery module with the BOXER wheeled vehicle.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-af673b6817266e46"
+   ],
+   "evidence": "Paraphrase: AGM on BOXER; 155 mm/L52 as the main armament.",
+   "location": "introduction; Product features",
+   "uncertainty": "The operational readiness of the BOXER base does not establish the delivery status of the complete RCH system."
+  },
+  {
+   "id": "P-08",
+   "statement": "KNDS offers the PzH 2000 as a howitzer with a 155-mm/L52 barrel and automatic loader.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-cdb071d12fc238e7"
+   ],
+   "evidence": "Paraphrase: 155 mm/L52; automatic loader.",
+   "location": "Performance characteristics / Product features",
+   "uncertainty": ""
+  },
+  {
+   "id": "P-09",
+   "statement": "The KNDS systems portfolio lists MARS II / MLRS Evolution, as well as AGM and DONAR, as artillery offerings.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4f97ad522106cb38"
+   ],
+   "evidence": "Paraphrase: these product families are listed in the artillery list.",
+   "location": "Artillery: MARS II / MLRS Evolution; AGM; DONAR",
+   "uncertainty": "Catalogue listing does not demonstrate current series production of each variant."
+  },
+  {
+   "id": "P-10",
+   "statement": "KNDS describes RapidFire Land as a system for countering air and ground targets with a 40-CTAS cannon, optronic fire control and possible standalone or integrated operating concepts.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e21b199c143a41de"
+   ],
+   "evidence": "Paraphrase: 40 CTAS plus optronic fire control; GBAD integration or autonomous system.",
+   "location": "introduction; integration",
+   "uncertainty": "Use of the 40 CTAS component on other vehicles does not demonstrate that a complete RapidFire land configuration has entered service."
+  },
+  {
+   "id": "P-11",
+   "statement": "KNDS Deutschland lists GEPARD air defence systems, FENNEK reconnaissance vehicles and DINGO, MUNGO and GFF4 in its own vehicle portfolio.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-086937648044a782"
+   ],
+   "evidence": "Paraphrase: The portfolio lists GEPARD/FENNEK and protected wheeled vehicles.",
+   "location": "The Future of European Land Systems",
+   "uncertainty": "No current series production of new GEPARD vehicles is inferred from the portfolio entry."
+  },
+  {
+   "id": "P-12",
+   "statement": "KNDS lists remotely controlled FLW/ARX weapon stations and THL/medium-calibre weapons as integration offerings for various platforms.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4f97ad522106cb38"
+   ],
+   "evidence": "Paraphrase: FLW, ARX, THL and medium-calibre weapons listed.",
+   "location": "Turrets; Cannons",
+   "uncertainty": "This catalogue does not document every combination as integrated or delivered."
+  },
+  {
+   "id": "P-SB-001",
+   "statement": "According to KNDS (press release of 18 June 2024), KNDS has tripled the CAESAR production rate so that 6 CAESAR are produced each month; Ukraine has become the 10th CAESAR user, 78 systems are under production in 2024 for the Ukrainian army, and more than 600 CAESAR are in service or under contract.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-c414879d32b9e9d1"
+   ],
+   "evidence": "Paraphrase: KNDS multiplied the CAESAR production rate by three, 'today, 6 CAESAR are produced each month'; Ukraine 'has become the 10th user of the CAESAR'; '78 systems are currently under production this year' for Ukraine; 'more than 600 CAESAR are now in service or under contract'.",
+   "location": "Press release 'KNDS offers the complete range of proven artillery systems', introductory paragraphs and the paragraph beginning 'Ukraine has become the 10th user of the CAESAR'",
+   "uncertainty": "Rates and numbers are as of June 2024 and not variant-specific (CAESAR family, including MkII announcement); the 78 systems for Ukraine are a 2024 production statement, not a delivery count.",
+   "proposed_depth": "A",
+   "event_date": "2024-06-18",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-002",
+   "statement": "According to KNDS (FY2025 results release of 26 May 2026), CAESAR production expanded at the Roanne facilities in France in 2025, supported by additional orders from Lithuania and Croatia.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-7d4e2671399627b1"
+   ],
+   "evidence": "Paraphrase: 'CAESAR production expanded at the Company's facilities in Roanne in France, supported by additional orders from Lithuania and Croatia.'",
+   "location": "Press release 'KNDS achieves strong revenue growth and record order intake in 2025', section on ramp-up of flagship platforms",
+   "uncertainty": "Release does not state unit numbers or the CAESAR variant (6x6 versus MkII/8x8).",
+   "proposed_depth": "A",
+   "event_date": "2026-05-26",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-003",
+   "statement": "Lyon Capitale reports (13 July 2026) that the KNDS France plant in Roanne now produces CAESAR howitzers at a monthly rate of ten (against two per month before 2022), that production time has been halved from 30 to 15 months, and that more than 400 CAESAR equipped the armies of fourteen countries at the end of 2025; the site is also preparing the series ramp-up of the CAESAR Mk 2.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-06421b50be671aa0"
+   ],
+   "evidence": "Paraphrase: Roanne plant director quoted; 'le canon Caesar ... atteint aujourd'hui un rythme mensuel de dix'; production time from 30 to 15 months; 'Fin 2025, plus de 400 exemplaires équipaient les armées de quatorze pays'; 'Le site prépare également la montée en série du Caesar Mk 2'.",
+   "location": "Article 'Loire : l'usine KNDS de Roanne, symbole du réarmement', paragraphs on Nextfab / production rates and on SCORPION/CAESAR",
+   "uncertainty": "The article does not name the origin of each figure; they are treated as manufacturer-side information because the plant director is quoted. Variant (6x6 Mk I versus Mk 2) not stated for the monthly rate.",
+   "proposed_depth": "A",
+   "event_date": "2026-07-13",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-004",
+   "statement": "According to KNDS (16 June 2026), the Malaysian Ministry of Defence ordered 18 CAESAR artillery systems with a licence for technology transfer and local assembly, making Malaysia the 15th CAESAR customer country, with 800 systems 'already ordered or delivered worldwide'.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-735b6d1356a73251"
+   ],
+   "evidence": "Paraphrase: order for 18 CAESAR formalised on 16 June 2026 at Eurosatory with ADS Sdn Bhd; 'Malaysia thus becomes the 15th country'; '800 systems already ordered or delivered worldwide'.",
+   "location": "Press release 'Malaysia becomes the 15th CAESAR customer country ...', paragraphs 1-4",
+   "uncertainty": "An order is not evidence of delivery; the release does not state the CAESAR variant ordered or delivery dates; the 800 figure combines orders and deliveries.",
+   "proposed_depth": "A",
+   "event_date": "2026-06-16",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-005",
+   "statement": "The KNDS France datasheet for CAESAR 6x6 (K2V-001-EN-06/2024) states that CAESAR 6x6 has been deployed by the French and other armies since 2009 in Afghanistan, Lebanon, Mali, the Sahel, Iraq, the Middle East, East Asia and Ukraine, with more than 3 million km travelled, 300,000 rounds fired and more than 600 CAESAR in service or in production.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-3090eecc207ffa9a"
+   ],
+   "evidence": "Excerpt: 'Long-range proven. Deployed by the French and other armies since 2009 in Afghanistan, Lebanon, Mali and in Sahel, Iraq, in Middle-East, East Asia and Ukraine.' ... 'More than 600 CAESAR in service or in production'.",
+   "location": "PDF p.1, header strip and box 'Maturity and long-term support'",
+   "uncertainty": "Manufacturer retrospective dated 06/2024; no current inventory per customer; not extrapolated to CAESAR MkII.",
+   "proposed_depth": "A",
+   "event_date": "2024-06",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-006",
+   "statement": "Defence24 reports (22 May 2025) that President Macron announced that all CAESAR howitzers produced in 2025 would go to Ukraine (about 150 in two variants in total) and that Ukraine had received at least 85 CAESAR by the end of 2024, of which 66 were the Mark I (6x6) and 19 the 8x8 version transferred by Denmark.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-b83a36907da809b2"
+   ],
+   "evidence": "Paraphrase: Macron said all CAESAR produced this year would go to Ukraine; about 150 in two variants; at least 85 delivered by end of last year (66 Mark I, 19 8x8 from Denmark); French industry capacity 8-12 per month.",
+   "location": "Defence24 article 'Duże wzmocnienie ukraińskiej artylerii z Francji. Cała produkcja nad Dniepr', paragraphs 1-2 and 'ukraiński' section",
+   "uncertainty": "Polish trade-media account of a political statement; the date of Macron's statement and the source of the 85 figure are not given; the 150 figure is a plan.",
+   "proposed_depth": "A",
+   "event_date": "2025-05-22",
+   "event_status": "berichtet"
+  },
+  {
+   "id": "P-SB-007",
+   "statement": "Delimitation only: KNDS announced on 24 January 2024 that the French DGA ordered 109 CAESAR MkII, described as a new version under development since December 2021, with first delivery scheduled for 2026; this status concerns CAESAR MkII and is not used for CAESAR 6x6.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-1c5dd1f131f057a4"
+   ],
+   "evidence": "Paraphrase: DGA awarded Nexter a contract for 109 CAESAR MkII; first delivery scheduled for 2026; development launched December 2021; 'a new version currently under development'.",
+   "location": "Press release 'The French MOD orders 109 CAESAR MkII from Nexter', paragraphs 1-3",
+   "uncertainty": "Different product (MkII); a planned delivery date is not a delivery. Included only to separate MkII from the 6x6 row.",
+   "proposed_depth": "A",
+   "event_date": "2024-01-24",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-008",
+   "statement": "European Pravda reported on 7 February 2023, citing Welt, that the Bundeswehr had begun testing the RCH 155 and that Ukraine would be the first customer.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-10bb2db9567e98a1"
+   ],
+   "evidence": "Paraphrase: 'The Bundeswehr has begun testing a new self-propelled artillery system, the RCH-155'; delivery expected no earlier than 30 months after contract signature.",
+   "location": "Article 'Germany Starts Testing RCH-155 Artillery Systems, Ukraine to Receive Them First', paragraphs 1-6",
+   "uncertainty": "Secondary report relaying Welt; test scope, location and results are not given.",
+   "proposed_depth": "A",
+   "event_date": "2023-02-07",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-009",
+   "statement": "Defence-network.com stated on 25 April 2024 that the RCH 155 had already proven itself at test facilities and training grounds of the Bundeswehr and that its components were tested and the overall system qualified sufficiently for 36 systems to go to Ukraine, with delivery to the first customer planned until 2027.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-7fa97d679979c2c6"
+   ],
+   "evidence": "Excerpt: 'Die RCH 155 bewährte sich bereits in Erprobungseinrichtungen und auf Truppenübungsplätzen der Bundeswehr.' Paraphrase: components tested, overall system qualified enough for 36 systems for Ukraine; delivery to Ukraine planned until 2027.",
+   "location": "Article 'Bundeswehr und British Army erhalten RCH 155', paragraphs on test status and Ukraine deliveries",
+   "uncertainty": "Trade-media statement without test dates or test reports; 36 systems figure differs from the later 54 systems.",
+   "proposed_depth": "A",
+   "event_date": "2024-04-25",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SB-010",
+   "statement": "European Security & Defence reported that KNDS presented the first RCH 155 for Ukraine in Kassel on 13 January 2025 in the presence of Defence Minister Pistorius; this vehicle was initially to be used for crew training in Germany, six more systems were to follow in 2025, and Ukraine's order of 18 (2022) extended by 36 to 54 systems has deliveries extending beyond 2027.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-b87afeb6be3f399c"
+   ],
+   "evidence": "Paraphrase: first RCH 155 'rolled out' and symbolically handed over on 13 January 2025; initially used for training in Germany; training March/April 2025 for about two months; six more systems this year; 54 ordered; deliveries beyond 2027.",
+   "location": "Article 'First RCH 155 wheeled SPH for Ukraine rolled out in Kassel', paragraphs 1-4",
+   "uncertainty": "Symbolic handover; the vehicle remained in Germany for training; the planned six systems in 2025 are a plan.",
+   "proposed_depth": "A",
+   "event_date": "2025-01-13",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SB-011",
+   "statement": "According to KNDS (press release of 18 June 2024), the Ukrainian army has signed for 54 RCH 155 with KNDS, and the UK and Germany have recently agreed to co-develop the RCH 155 with KNDS with a potential of 400 artillery systems.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-c414879d32b9e9d1"
+   ],
+   "evidence": "Paraphrase: 'Currently, Ukrainian Army have signed 54 RCH 155 with KNDS. UK and Germany have recently agreed to co-develop the RCH 155 with KNDS with a potential of 400 artillery systems.'",
+   "location": "Press release 'KNDS offers the complete range of proven artillery systems', paragraph on RCH 155 and PzH 2000",
+   "uncertainty": "Contract and potential volume, not delivery; 'potential of 400' is not an order.",
+   "proposed_depth": "A",
+   "event_date": "2024-06-18",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-012",
+   "statement": "The Ukrinform report of 15 March 2026 on a German Federal Ministry of Defence statement says that more than 600 Ukrainian soldiers had been trained on the RCH 155 at the Bundeswehr Artillery School in Idar-Oberstein, that the system had not yet entered service with the Bundeswehr, and that the Bundeswehr will now also receive the RCH 155.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-5f3c57dfe3f913fd"
+   ],
+   "evidence": "Paraphrase: Ministry statement after Minister Pistorius' visit: 'more than 600 Ukrainian servicemen were initially trained on this new system. Now the Bundeswehr will also receive the RCH 155.'",
+   "location": "Article 'More than 600 Ukrainian artillery soldiers finish training on new artillery system in Germany', paragraphs 1-4",
+   "uncertainty": "Ministry statement reported by Ukrinform; the statement that the system 'has not yet even entered service' is Ukrinform's wording; training is not field deployment.",
+   "proposed_depth": "A",
+   "event_date": "2026-03-15",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SB-013",
+   "statement": "European Pravda reported on 4 August 2026 that Defence Minister Pistorius, at the KNDS plant in Kassel, confirmed that Ukraine is receiving the RCH 155 wheeled howitzer and said the first vehicle destined for Ukraine had stood there about two years earlier; Bild reported that only training of Ukrainian soldiers in Germany had been officially confirmed and that presence in the combat zone had not been disclosed.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-aefe2b891ea7e529"
+   ],
+   "evidence": "Paraphrase: 'Pistorius has confirmed that Ukraine is receiving the RCH-155 wheeled howitzer'; Bild: 'only training ... in Germany had been officially confirmed, while their actual presence in the combat zone has not been disclosed'.",
+   "location": "Article 'German defence minister confirms delivery of latest RCH-155 howitzers to Ukraine', paragraphs 1-4",
+   "uncertainty": "Minister's remark is ambiguous about timing and number of vehicles delivered; combat use is explicitly not confirmed by the article.",
+   "proposed_depth": "A",
+   "event_date": "2026-08-04",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SB-014",
+   "statement": "Militarnyi reported on 6 September 2026, citing German Aid to Ukraine, that Ukraine's Defense Forces have received the first RCH 155; it also recounts that deliveries planned for April 2025 slipped, that systems for Ukraine were being modified in August 2025 on the basis of Ukrainian feedback, that technical issues were still being resolved, and that firm RCH 155 contracts exist with Ukraine, the UK and Qatar.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-87963d9398e36190"
+   ],
+   "evidence": "Paraphrase: 'Ukraine's Defense Forces have received the first RCH 155'; June 2025 deliveries 'postponed indefinitely'; August 2025 modifications; 'Technical issues are still arising'; caption 'An RCH 155 during testing in Britain'.",
+   "location": "Article 'Ukraine Receives First RCH 155 Self-Propelled Howitzer', paragraphs 1-4, 6-8 and section on contracts",
+   "uncertainty": "Report relays the tracker German Aid to Ukraine (non-official) and earlier media; the number of vehicles delivered is not stated; combat use is not established by this article.",
+   "proposed_depth": "A",
+   "event_date": "2026-09-06",
+   "event_status": "berichtet"
+  },
+  {
+   "id": "P-SB-015",
+   "statement": "According to Nicholas Drummond, adviser to KNDS Deutschland (X post of July 2026, as reported by Militarnyi and a French-language report of 22 July 2026), the Boxer RCH 155 has undergone combat testing and is combat-proven.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-87963d9398e36190",
+    "S-b94028cc148d68b8"
+   ],
+   "evidence": "Paraphrase: an adviser to KNDS Deutschland describes the RCH 155 as combat-tested/combat-proven (two secondary reports).",
+   "location": "see evidence_items (per source)",
+   "uncertainty": "Adviser's social-media statement relayed by secondary media; it is not an official KNDS or Ukrainian statement and does not state where, when or by which unit the system was used.",
+   "evidence_items": [
+    {
+     "source_id": "S-87963d9398e36190",
+     "text": "Paraphrase: Drummond, an adviser to the German division of KNDS, reported on X in July 2026 that the system had already undergone combat testing.",
+     "mode": "Paraphrase",
+     "location": "Article 'Ukraine Receives First RCH 155 ...', paragraph 4"
+    },
+    {
+     "source_id": "S-b94028cc148d68b8",
+     "text": "Paraphrase: in July 2026 Drummond described the Boxer RCH 155 as a combat-proven system able to hit targets at 40 km with standard shells.",
+     "mode": "Paraphrase",
+     "location": "Article on RCH 155 howitzers operational in Ukraine, paragraphs on Drummond (published 22 July 2026)"
+    }
+   ],
+   "proposed_depth": "A",
+   "event_date": "2026-07-22",
+   "event_status": "berichtet"
+  },
+  {
+   "id": "P-SB-016",
+   "statement": "According to KNDS (19 December 2025), the Bundeswehr will introduce 84 RCH 155; KNDS Deutschland received the order from ARTEC under a framework agreement between BAAINBw and ARTEC for 500 RCH 155 systems that other nations can also call off, worth about EUR 1.2 billion including training, service and logistic support, and the RCH 155 is to be the primary weapon system of the artillery of the new 'Medium Forces'.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-615341f26bb37ce2"
+   ],
+   "evidence": "Paraphrase: 84 RCH 155 ordered; framework for 500; about 1.2 bn EUR; training aids, service and logistics support included; primary weapon system of the artillery of the Mittlere Kräfte.",
+   "location": "Press release 'Deutschland beschafft Radhaubitze RCH 155 von KNDS' (Munich, 19 December 2025), paragraphs 1-4",
+   "uncertainty": "500 is the framework scope, not a firm order; an order is not evidence of delivery.",
+   "proposed_depth": "A",
+   "event_date": "2025-12-19",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-017",
+   "statement": "According to Rheinmetall (19 December 2025), it supplies electrics, software and the 155 mm weapon systems for the Bundeswehr RCH 155 to ARTEC, with deliveries beginning in 2027 and to be completed in 2029, and Ukraine, the first user, has ordered 54 RCH 155 directly from KNDS Deutschland in three lots.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-2570c8a1f788d668"
+   ],
+   "evidence": "Paraphrase: ARTEC received the order for the first 84 RCH155 on 19 December 2025; Rheinmetall deliveries begin 2027 and are to be completed in 2029; Ukraine ordered 54 in three lots.",
+   "location": "Press release 'Großauftrag Radhaubitze RCH155', paragraphs 1-4",
+   "uncertainty": "Describes Rheinmetall's component deliveries, not vehicle handover dates; planned dates.",
+   "proposed_depth": "A",
+   "event_date": "2025-12-19",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SB-018",
+   "statement": "The overview 'Beschaffungsvorhaben des Heeres' (Sicherheit & Verteidigung) lists the Bundeswehr RCH 155 project as ordered with 84 systems ordered, 0 in inventory and a requirement of 229, with series vehicle deliveries planned for 2028 to the end of 2030, and reports (citing Hartpunkt) that 149 further RCH 155 are to be ordered in 2026.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-0df7d1e4993cf9cd"
+   ],
+   "evidence": "Paraphrase: project status 'bestellt'; Bestand 0; Bestellt 84; Bedarf 229; Auslieferung 2028-2030; BAAINBw framework of 19 December 2025.",
+   "location": "Section 'RCH 155' (Projektstatus, Bestand, Bestellt, Bedarf, Auslieferung, Projektverlauf)",
+   "uncertainty": "Secondary compilation page that is continuously updated (page metadata shows modification on 2026-10-22); the 149 further systems are a report, not an order.",
+   "proposed_depth": "A",
+   "event_date": "2025-12-19",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SB-019",
+   "statement": "According to KNDS (14 May 2026), the British government ordered 72 RCH 155 wheeled howitzers for the British Army through OCCAR from ARTEC, KNDS signed a corresponding contract with ARTEC, and a December 2025 Germany-UK bi-national framework agreement foresees qualifying the RCH 155 for use by both nations.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-985a5fe13a4cd562"
+   ],
+   "evidence": "Paraphrase: 'KNDS will deliver a total of 72 RCH 155 wheeled howitzers to the British Army'; in December 2025 Germany and UK signed a bi-national framework 'under which the RCH 155 is to be qualified for use by both nations'.",
+   "location": "Press release 'British Government Orders Artillery System from KNDS' (Munich, 14 May 2026), paragraphs 1-4",
+   "uncertainty": "Order, not delivery; qualification for both nations is stated as intended ('is to be qualified').",
+   "proposed_depth": "A",
+   "event_date": "2026-05-14",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-020",
+   "statement": "Esut.de reported on 15 May 2026 that the British Army's 72 RCH 155 are to be delivered from 2028, that the contract follows a December 2025 contract for an 'Early Capability Demonstrator' worth GBP 52 million, that Ukraine as first user has ordered 54 systems whose delivery to the troops is imminent, and that Germany's firm order of 84 is to begin delivery in 2028.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-8a06882d2a6a1929"
+   ],
+   "evidence": "Paraphrase: first vehicles from 2028; Early Capability Demonstrator contract GBP 52 million (December 2025); Ukraine first user with 54 ordered, delivery 'unmittelbar bevorsteht'; Germany delivery from 2028.",
+   "location": "Article 'Die British Army erhält 72 Radhaubitzen RCH 155', paragraphs 1, 5, 12-14",
+   "uncertainty": "Trade-media statements about planned dates; the 'imminent' Ukrainian delivery is as of May 2026.",
+   "proposed_depth": "A",
+   "event_date": "2026-05-15",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SB-021",
+   "statement": "According to KNDS (8 June 2026), the RCH 155 is under contract in Germany, the UK, Qatar and Ukraine (four nations).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-d7d7587226163f27"
+   ],
+   "evidence": "Excerpt: 'In addition to the RCH 155, which is under contract in Germany, the UK, Qatar, and Ukraine ...' ; 'The KNDS RCH 155 is currently under contract with four nations.'",
+   "location": "Press release 'Switzerland Procures Artillery System from KNDS', paragraphs 3 and 6",
+   "uncertainty": "Contract status only; no quantities for Qatar.",
+   "proposed_depth": "A",
+   "event_date": "2026-06-08",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-022",
+   "statement": "Esut.de reported on 15 May 2026 that Qatar has ordered twelve RCH 155, which are to replace the same number of PzH 2000 in a swap, and that the replaced PzH 2000 are to be handed to Ukraine after overhaul.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-8a06882d2a6a1929"
+   ],
+   "evidence": "Paraphrase: 'Katar hat zwölf Radhaubitzen RCH 155 bestellt, die im Ringtausch die gleiche Anzahl PzH 2000 ersetzen sollen. Die PzH 2000 sollen nach Überholung an die Ukraine abgegeben werden.'",
+   "location": "Article 'Die British Army erhält 72 Radhaubitzen RCH 155', paragraph 14",
+   "uncertainty": "Single trade-media source for the quantity; no KNDS or Qatari primary document found.",
+   "proposed_depth": "A",
+   "event_date": "2026-05-15",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-023",
+   "statement": "According to Rheinmetall (31 July 2026), the 155 mm L/52 RC weapon system of the RCH 155 is currently being qualified by Germany and the United Kingdom, and Rheinmetall will deliver 72 systems for the British order after the verification is completed; the weapon systems are built at the new Rheinmetall facility in Telford, which is gradually starting operation.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-6c8b3e18669d4597"
+   ],
+   "evidence": "Excerpt: 'Die Waffenanlage 155mm L/52 RC ... wird derzeit durch Deutschland und Großbritannien qualifiziert. Nach Abschluss der Verifikation wird Rheinmetall insgesamt 72 Anlagen liefern.'",
+   "location": "Press release 'Rheinmetall liefert Waffenanlage für britische Radhaubitze RCH 155', paragraph 2",
+   "uncertainty": "Qualification refers to the RC weapon system for the German/British configuration; Ukrainian vehicles are not covered.",
+   "proposed_depth": "A",
+   "event_date": "2026-07-31",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-024",
+   "statement": "According to KNDS (rollout release of 19 November 2025), the first PzH 2000 for the Bundeswehr was rolled out at the Munich site; the procurement of 22 PzH 2000 (contract of 2023) replaces artillery delivered to Ukraine, PzH 2000 will continue to be manufactured for Ukraine, and the first PzH 2000 are to be delivered to the German Armed Forces starting in May 2026.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-cd4d8a27a37624e4"
+   ],
+   "evidence": "Excerpt: 'The first PzH 2000 self-propelled howitzers will be delivered to the German Armed Forces starting in May 2026.' Paraphrase: 22 PzH 2000 replace systems delivered to Ukraine (contract 2023); 'PzH 2000s will continue to be manufactured for Ukraine'.",
+   "location": "Press release 'Roll-out: LEOPARD 2A8 and PzH 2000 Systems', paragraphs 1, 4 and 8",
+   "uncertainty": "Roll-out and planned start of delivery; no handover after May 2026 was found in the sources read (see gaps).",
+   "proposed_depth": "A",
+   "event_date": "2025-11-19",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SB-025",
+   "statement": "According to KNDS (press release of 18 June 2024), KNDS then had 41 PzH 2000 for new production under contract, with 54 more systems under discussion for Germany and Ukraine, after the donation of 25 PzH 2000 to the Ukrainian army; Ukraine became the 9th PzH 2000 user and 400 PzH 2000 had been ordered by several European customers.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-c414879d32b9e9d1"
+   ],
+   "evidence": "Paraphrase: 'KNDS has currently 41 PzH 2000 for new production under contract, 54 more systems are under discussion for Germany and UA'; 'Ukraine becomes the 9th user of the PzH 2000, 400 of which have been ordered by several European customers'.",
+   "location": "Press release 'KNDS offers the complete range of proven artillery systems', introductory paragraph and paragraph beginning 'Ukraine has become the 10th user of the CAESAR'",
+   "uncertainty": "June 2024 statement; contracted count is not a delivery count; 'under discussion' is not an order.",
+   "proposed_depth": "A",
+   "event_date": "2024-06-18",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-026",
+   "statement": "According to KNDS (19 November 2025), besides Germany and Ukraine, Croatia, Greece, Hungary, Italy, the Netherlands, Lithuania and Qatar have procured the PzH 2000, and the system 'has proven itself in action' in Ukraine.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-cd4d8a27a37624e4"
+   ],
+   "evidence": "Excerpt: 'Besides Germany and Ukraine, Croatia, Greece, Hungary, Italy, the Netherlands, Lithuania and Qatar have also procured the PzH 2000.' Paraphrase: PzH 2000 has proven itself in action in Ukraine.",
+   "location": "Press release 'Roll-out: LEOPARD 2A8 and PzH 2000 Systems', paragraphs 4 and 5",
+   "uncertainty": "'Procured' does not state current inventory; the proven-in-action claim is a manufacturer statement.",
+   "proposed_depth": "A",
+   "event_date": "2025-11-19",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-027",
+   "statement": "European Security & Defence reported (14 January 2025) that Defence Minister Pistorius said Germany had handed Ukraine 14 PzH 2000 from Bundeswehr stocks and financed 11 more from industrial stocks, and that another 18 newly built PzH 2000 are to follow by mid-2027, for a total of 54.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-b87afeb6be3f399c"
+   ],
+   "evidence": "Paraphrase: 'Germany has handed Ukraine 14 PzH 2000s from Bundeswehr stocks and financed 11 more from industrial stocks ... Another 18 newly built PzH 2000s are to follow by mid-2027, giving a total of 54'.",
+   "location": "Article 'First RCH 155 wheeled SPH for Ukraine rolled out in Kassel', paragraph 'In total, Ukraine will receive enough systems ...'",
+   "uncertainty": "Minister statement relayed by trade media; the 18 newly built systems are a plan.",
+   "proposed_depth": "A",
+   "event_date": "2025-01-13",
+   "event_status": "abgeschlossen"
+  },
+  {
+   "id": "P-SB-028",
+   "statement": "European Security & Defence reported (3 April 2024) that Rheinmetall was contracted by KNDS Germany to supply 22 L52 155 mm gun systems and 22 PzH 2000 chassis for the Bundeswehr (EUR 135 million), with the first systems to be delivered to the Bundeswehr in summer 2025 after final integration at Rheinmetall in Unterlüß.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-584f9f611e8055e9"
+   ],
+   "evidence": "Paraphrase: contract announced 2 April 2024; value around EUR 135 million; 22 gun systems and 22 chassis; first systems to be delivered in summer 2025.",
+   "location": "Article 'Guns and chassis for 22 PzH 2000 SPHs for the Bundeswehr ordered from Rheinmetall', paragraphs 1-3",
+   "uncertainty": "The summer-2025 delivery date was a plan and was later superseded (KNDS: delivery from May 2026).",
+   "proposed_depth": "A",
+   "event_date": "2024-04-02",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-029",
+   "statement": "The overview 'Beschaffungsvorhaben des Heeres' (Sicherheit & Verteidigung) lists the PzH 2000 A4 project with 22 ordered, 97 in Bundeswehr inventory, delivery planned 2026-2030 and a delay of about one year (originally from 2025), and records the roll-out of 19 November 2025 with KNDS stating that delivery is to begin in May 2026.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-0df7d1e4993cf9cd"
+   ],
+   "evidence": "Paraphrase: Projektstatus 'bestellt'; Bestand 97; Bestellt 22; Auslieferung 2026-2030; Verzögerung ca. 1 Jahr; last project-history entry 19 November 2025.",
+   "location": "Section 'PzH 2000 A4' (key data and Projektverlauf)",
+   "uncertainty": "Secondary compilation page (modified 2026-10-22); its project history contains no first-handover entry after the roll-out.",
+   "proposed_depth": "A",
+   "event_date": "2025-11-19",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SB-030",
+   "statement": "According to KNDS, MARS II / MLRS Evolution is the advancement of the basic MLRS, 'in service with artillery troops for over 25 years', used in Germany since 1990 as MARS, and KNDS Deutschland upgraded and modernised the MLRS for Germany (MARS to MARS II/MLRS-E), Italy (MLRS Improved) and France (LRU).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-7836dc8f37af6164"
+   ],
+   "evidence": "Paraphrase: 'In service with artillery troops for over 25 years'; 'The MLRS has been in use in Germany since 1990 under the designation MARS'; upgrades for Germany, Italy, France.",
+   "location": "Product page 'MARS II / MLRS Evolution', sections 'Facts about the MARS II/MLRS evolution' and upgrade list",
+   "uncertainty": "Undated product page; no unit numbers or current upgrade/delivery programme stated; describes upgrades of existing launchers, not new-build series production.",
+   "proposed_depth": "A",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-031",
+   "statement": "The Augen geradeaus blog reported (15 June 2022) that Defence Minister Lambrecht announced the transfer of three MARS II rocket launchers from Bundeswehr stocks to Ukraine together with several hundred rockets and spare parts, with training organised jointly with the USA and the UK.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-0ed42f15608cd2cd"
+   ],
+   "evidence": "Paraphrase: 'Aus Bundeswehrbeständen sollen nicht nur drei Raketenwerfer MARS II kommen, sondern auch eine umfangreiche Munitionslieferung.'",
+   "location": "Article 'Lambrecht bestätigt: Bundeswehr-Raketenartillerie für die Ukraine', paragraphs 3-4",
+   "uncertainty": "Announcement by the minister relayed by a specialist blog (published 15 June 2022); announcement, not delivery.",
+   "proposed_depth": "A",
+   "event_date": "2022-06-15",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SB-032",
+   "statement": "The German Federal Ministry of Defence stated (15 September 2022) that two additional MARS II rocket artillery systems including ammunition would be delivered to Ukraine, with crew training to begin in Germany in September.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-42e84694be062d71"
+   ],
+   "evidence": "Excerpt: 'Nach intensiver Prüfung werden zwei zusätzliche Raketenartilleriesysteme MARS II inkl. zugehöriger Munition an die Ukraine geliefert.'",
+   "location": "Press release 'Bundeswehr liefert DINGO und weitere MARS II an die Ukraine' (15 September 2022), paragraph 1",
+   "uncertainty": "Future-tense announcement; the page's cached text derivation was unreadable and the original (gzip) bytes were decoded manually.",
+   "proposed_depth": "A",
+   "event_date": "2022-09-15",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SB-033",
+   "statement": "According to an Army Recognition report, Ukrainian Defence Minister Reznikov stated on 1 August 2022 that the MARS II from Germany, the 'third brother in the Long Hand family' after HIMARS and M270, had arrived in Ukraine.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-e21f141dc8121dce"
+   ],
+   "evidence": "Paraphrase: Reznikov tweet of 1 August: 'Third brother in the Long Hand family - MLRS MARS II from Germany - has arrived in Ukraine'.",
+   "location": "Article 'M270 MLRS MARS II from Germany has arrived in Ukraine', paragraphs 1-3",
+   "uncertainty": "Customer-side statement relayed by trade media; number of launchers not stated in the quoted tweet; 2022 event (publication date not captured).",
+   "proposed_depth": "A",
+   "event_date": "2022-08-01",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SB-034",
+   "statement": "Defensa.com reported (10 August 2022) that Germany has about forty MARS II systems and intends to upgrade at least half of them for GPS-guided rockets, and that Ukrainian soldiers were being trained in Germany on three MARS II to be supplied.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-69fd8295dce358bf"
+   ],
+   "evidence": "Paraphrase: 'Alemania dispone de unos cuarenta de estos sistemas'; plan to improve at least half; Ukrainian soldiers trained on MARS II.",
+   "location": "Article 'Gran impulso a la Artillería lanzacohetes de Alemania', paragraphs on the German MLRS fleet",
+   "uncertainty": "2022 trade-media estimate; not a current inventory figure.",
+   "proposed_depth": "A",
+   "event_date": "2022-08-10",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-035",
+   "statement": "According to KNDS, the truck-mounted AGM combines the automatic, remotely operable AGM artillery gun module (155 mm/L52) with a suitable 40 t military truck of the user's choice, as a systematic development of the PzH 2000.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-2d388c04c392e1b0"
+   ],
+   "evidence": "Paraphrase: 'The truck-mounted AGM combines the firepower of the automatic and remote-controllable AGM artillery gun module (155mm/L52 gun) with ... a suitable 40 t military truck of the user's choice.'",
+   "location": "Product page 'AGM', introductory paragraphs and 'Integration example: Iveco Trakker chassis'",
+   "uncertainty": "Undated product page; no customer, test or delivery information for the truck-mounted configuration on the page.",
+   "proposed_depth": "A",
+   "event_status": "angeboten"
+  },
+  {
+   "id": "P-SB-036",
+   "statement": "European Security & Defence reported that KNDS Deutschland and GDELS presented the unmanned 155 mm/L52 Artillery Gun Module on the GDELS 10x10 Piranha Heavy Mission Carrier at the Future Artillery Conference in Paris (21-23 May 2024), stating that the AGM can fire on the move and that KNDS also offers the AGM on the 8x8 Boxer.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-838217822395dd4a"
+   ],
+   "evidence": "Paraphrase: 'KNDS Deutschland and GDELS have mated KNDS' unmanned 155 mm, 52-calibre Artillery Gun Module with the GDELS 10x10 Piranha Heavy Mission Carrier'; joint press release statements.",
+   "location": "Article 'KNDS and GDELS introduce 155 mm Artillery Gun Module on Piranha Heavy Mission Carrier', paragraphs 1-4 and 7",
+   "uncertainty": "Static presentation; joint company statements; event date given as start of the three-day conference.",
+   "proposed_depth": "A",
+   "event_date": "2024-05-21",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SB-037",
+   "statement": "Esut.de reported (27 June 2024) that KNDS Deutschland and GDELS demonstrated the Boxer RCH 155 and the Piranha HMC AGM, which carry an identical unmanned Artillery Gun Module, in live firing at the Altengrabow training area, that the AGM was developed for more than 15 years and was first shown at Eurosatory 2008 on an ASCOD carrier, and that the Boxer RCH 155 was 'in production' with deliveries to Ukraine to start in 2025.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-86d61336ff39d3dd"
+   ],
+   "evidence": "Paraphrase: dynamic live-fire demonstration at Altengrabow after static presentation in Paris; identical AGM; 'Der 8x8-Boxer RCH 155 ist in Produktion und soll ab 2025 an die Ukraine ausgeliefert werden.'",
+   "location": "Article 'Artillerie-Geschütz-Modul auf Boxer und Piranha in direktem Vergleich', paragraphs 1-6",
+   "uncertainty": "The demonstration day is not stated in the extracted text (report date used as event date); production statement is of June 2024.",
+   "proposed_depth": "A",
+   "event_date": "2024-06-27",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SB-038",
+   "statement": "According to KNDS (8 June 2026), armasuisse and KNDS signed a contract for 32 AGM wheeled howitzer systems on the Piranha IV (KNDS designation DONAR 10x10) with deliveries of the production systems to the Swiss Armed Forces starting in 2031; KNDS calls DONAR 10x10 its second wheeled howitzer system after the RCH 155.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-d7d7587226163f27"
+   ],
+   "evidence": "Paraphrase: contract for 32 AGM on Piranha IV (DONAR 10x10); delivery from 2031; 32 ammunition loading containers, training equipment and logistic support included.",
+   "location": "Press release 'Switzerland Procures Artillery System from KNDS' (Munich/Bern, 8 June 2026), paragraphs 1-3",
+   "uncertainty": "Order and planned delivery start only.",
+   "proposed_depth": "A",
+   "event_date": "2026-06-08",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-039",
+   "statement": "Armada International reported (2 July 2026) that armasuisse contracted 33 Piranha IV platforms with the AGM (Swiss configuration DONAR), that a prototype is to be delivered to the Swiss Army by 2027 for evaluation and approval, and that series systems start in 2031.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-7455eac2de5250a1"
+   ],
+   "evidence": "Paraphrase: 'A prototype will be delivered to the Swiss Army by 2027 for further evaluation and approval. The series production systems will commence in 2031.'",
+   "location": "Article 'Swiss Army Replacing M109 Howitzers with Piranha DONAR', paragraphs on the Swiss contract",
+   "uncertainty": "Trade-media report; platform count (33) differs from KNDS (32 systems), possibly counting a prototype; planned dates.",
+   "proposed_depth": "A",
+   "event_date": "2026-07-02",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SB-040",
+   "statement": "StratPost reported (16 December 2025) that KNDS Deutschland and Leonardo signed a Letter of Intent on 16 December 2025 to jointly develop a new mobile artillery system combining KNDS's Artillery Gun Module with an enhanced version of Leonardo's protected wheeled vehicle platform for future Italian Army needs.",
+   "kind": "Partnerangabe",
+   "source_ids": [
+    "S-e39570202194e479"
+   ],
+   "evidence": "Paraphrase: LOI signed in Amsterdam; 'combine KNDS's Artillery Gun Module with an enhanced version of Leonardo's protected wheeled vehicle platform'; to be offered in an upcoming acquisition programme.",
+   "location": "Article 'KNDS and Leonardo to Jointly Develop Mobile Artillery', paragraphs 1-3",
+   "uncertainty": "Letter of intent only; no Italian contract found.",
+   "proposed_depth": "A",
+   "event_date": "2025-12-16",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SB-041",
+   "statement": "According to KNDS, DONAR combines the automatic remote-controlled Artillery Gun Module (AGM) with the protection and mobility of the mission-tested GDELS ASCOD infantry fighting vehicle (tracked chassis) and is a systematic development of the PzH 2000.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-effee1b7a20dfb27"
+   ],
+   "evidence": "Paraphrase: 'DONAR combines the fire power and range of the automatic and remote-controlled Artillery Gun Module (AGM) with the protection and mobility of the mission-tested GDELS ASCOD infantry fighting vehicle.'",
+   "location": "Product page 'DONAR', introductory paragraphs",
+   "uncertainty": "Undated product page; no customer, test or delivery information on the page; the ASCOD (tracked) DONAR differs from the Swiss DONAR 10x10 on Piranha IV.",
+   "proposed_depth": "A",
+   "event_status": "angeboten"
+  },
+  {
+   "id": "P-SB-042",
+   "statement": "General Dynamics European Land Systems and Krauss-Maffei Wegmann stated at AUSA 2009 that the autonomous, remotely operated tracked DONAR prototype, unveiled in Europe in 2008, had already undergone mobility and fire trials at the test facility of the German procurement agency BWB, including Smart Camp Defence trials.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-4da0f1a41c4b8354"
+   ],
+   "evidence": "Excerpt: 'The prototype displayed at the AUSA Meeting ... has already undergone rigorous mobility and fire trials at the test facility of the German procurement agency BWB ..., including Smart Camp Defence trials.'",
+   "location": "Press text 'General Dynamics and KMW display DONAR ... at AUSA 2009', paragraphs 1 and 4",
+   "uncertainty": "2009 joint manufacturer statement relayed by Army Guide (event and publication dates within 2009 not captured); no independent test report, no later status of the tracked DONAR found; publication day not captured.",
+   "proposed_depth": "A",
+   "event_status": "durchgeführt"
+  },
+  {
+   "id": "P-SB-043",
+   "statement": "According to KNDS and Thales (RAPIDFire Land release, announced 16 June 2025), the DGA awarded a production contract for 48 RAPIDFire units, 14 of which are firmly ordered for French Navy vessels; the first two systems are operational aboard the replenishment ship Jacques Chevallier, which completed two long deployments with numerous live-fire campaigns, and the RAPIDFire system was officially qualified in early 2025.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-d47b4031096d3c20"
+   ],
+   "evidence": "Paraphrase: 'A production contract for 48 units was awarded by the DGA ... the first two systems are now operational aboard the new-generation replenishment ships'; '14 RAPIDFire units have already been firmly ordered'; 'officially qualified in early 2025'.",
+   "location": "Press release 'Thales and KNDS France unveil RAPIDFire Land ...', paragraphs 1-2, 4-5",
+   "uncertainty": "Describes the naval RAPIDFire; operational status refers to the naval installation, not the land variant. Page carries no date; announcement date taken from the Janes report.",
+   "proposed_depth": "A",
+   "event_date": "2025-06-16",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-044",
+   "statement": "According to KNDS and Thales (announced 16 June 2025), RAPIDFire now comes in a land-based version, unveiled to meet needs such as defending sensitive sites against varied and saturating attacks, and the development of the airburst ammunition that is key for anti-air defence is reaching new milestones.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-d47b4031096d3c20"
+   ],
+   "evidence": "Paraphrase: 'RAPIDFire now comes in a land-based version to meet emerging operational needs, particularly for defending sensitive sites ...'; Airburst ammunition development 'reaching new milestones'.",
+   "location": "Press release 'Thales and KNDS France unveil RAPIDFire Land ...', paragraph 2-3",
+   "uncertainty": "Unveiling of the land variant; no test, order or delivery of land systems is stated in this release.",
+   "proposed_depth": "A",
+   "event_date": "2025-06-16",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SB-045",
+   "statement": "Janes reported (17 June 2025) that Thales and KNDS France are developing two configurations of the land-based RAPIDFire (a semi-mobile 20 ft platform for site protection and a vehicle-mounted 20 ft platform), planned after discussions with the French Air and Space Force on protecting air bases, and that the DGA ordered 48 'land-based' versions according to Thales.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-fb0c3ce8dc87caae"
+   ],
+   "evidence": "Paraphrase: 'The DGA ... has ordered 48 land-based versions of the 40 mm RapidFire system, Thales announced in a press release on 16 June'; two configurations; qualified in early 2025.",
+   "location": "Article 'Paris Air Show 2025: France orders land-based version of 40 mm RAPIDFire system', paragraphs 1-4",
+   "uncertainty": "Janes' count of 48 land-based systems conflicts with the KNDS/Thales release (48 units in total, 14 firmly ordered for the Navy); the split between naval and land units is unresolved.",
+   "proposed_depth": "A",
+   "event_date": "2025-06-17",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-046",
+   "statement": "EDR Magazine reported (21 June 2025) that at the Paris Air Show only the firing module of the land version of RAPIDFire was shown and that the French Air and Space Force is going to receive two RAPIDFire in the land version soon, to undergo operational testing for base and key-target protection.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-fbe7bae5557bc1a3"
+   ],
+   "evidence": "Paraphrase: 'the French Air and Space Force is going to receive soon two RAPIDFire in the land version that will undergo operational testing'.",
+   "location": "Article 'PAS 2025 - KNDS France and Thales present the land-based variant of the 40 mm RAPIDFire', paragraphs on the land version and the contract",
+   "uncertainty": "Forward-looking statement from June 2025; no report of the actual delivery or of the operational tests was found.",
+   "proposed_depth": "A",
+   "event_date": "2025-06-21",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SB-047",
+   "statement": "Naval News reported (20 June 2025) that the DGA awarded KNDS France a contract for 25,000 40 mm telescoped rounds which from 2026 will equip JAGUAR reconnaissance vehicles and RAPIDFire turrets in all their variants, and that the 40 mm telescoped technology is deployed on land and naval systems including the RAPIDFire turret in service on the replenishment ship Jacques Chevallier, with the land-based version showcased for the first time at the Paris Air Show.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-0d0668145edf4607"
+   ],
+   "evidence": "Paraphrase: 25,000 rounds; first annual deliveries 18,000 training rounds; 'The RAPIDFire turret in service on the Jacques Chevallier'; 'The land-based version of RAPIDFire, showcased for the first time this year'.",
+   "location": "Article 'France orders 40mm ammunition rounds for Navy and Army', paragraphs 1-6",
+   "uncertainty": "Ammunition order, not an order of land systems; ammunition deliveries from 2026 are planned.",
+   "proposed_depth": "A",
+   "event_date": "2025-06-20",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-048",
+   "statement": "According to KNDS, the 40 CTAS cannon used in RapidFire Land is in service on the French Jaguar and the UK Ajax and is contracted on Belgian Scorpion armoured vehicles, and RapidFire Land is offered as an autonomous or GBAD-integrated system with a 3D radar and C2.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e21b199c143a41de"
+   ],
+   "evidence": "Excerpt: 'remote controlled turret including gyro-stabilised 40 CTAS (Cased Telescoped Armament System) - in-service on French Jaguar and UK Ajax and contracted on Belgium Scorpion armoured vehicles'.",
+   "location": "Product page 'RapidFire Land', section listing system components",
+   "uncertainty": "Component status of the 40 CTAS on other vehicles; does not show that a complete RapidFire Land configuration has entered service. Undated page.",
+   "proposed_depth": "A",
+   "event_status": "angeboten"
+  },
+  {
+   "id": "P-SB-049",
+   "statement": "According to a KNDS communication reported by defence-network.com (1 October 2024), KNDS opened KNDS Ukraine LLC in Kyiv, with about 800 KNDS systems in operation or under contract in Ukraine, to enable Ukrainian industry to maintain and repair KNDS systems including the Leopard 1 and 2, CAESAR, AMX10 RC, PzH 2000 and the Gepard anti-aircraft tank.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-70dc963267bd3ddf"
+   ],
+   "evidence": "Paraphrase: 'KNDS ... mit rund 800 im Einsatz befindlichen oder unter Vertrag stehenden Systemen'; Wartungs- und Instandsetzungsarbeiten an KNDS-Systemen wie Leopard 1 und 2, CAESAR, AMX10 RC, Panzerhaubitze 2000 und dem Flakpanzer Gepard.",
+   "location": "Article 'Von Munition bis zum Leopard: KNDS geht in die Ukraine', paragraphs 1-4",
+   "uncertainty": "Describes a maintenance/repair role; it does not state who manufactured the Gepard or that KNDS builds new Gepard vehicles.",
+   "proposed_depth": "A",
+   "event_date": "2024-10-01",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-050",
+   "statement": "Rheinmetall stated (6 January 2025) that the Federal Republic of Germany had handed over a total of 55 Gepard anti-aircraft tanks, decommissioned by the Bundeswehr, to Ukraine, where they have proven their value in air defence for more than two years.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-081455a6101c816e"
+   ],
+   "evidence": "Excerpt: 'Until today, the Federal Republic of Germany has handed over a total of 55 Gepard anti-aircraft tanks to Ukraine, which had been decommissioned by the Bundeswehr.'",
+   "location": "Press release 'Rheinmetall delivers 35mm Gepard ammunition to Ukraine', paragraph 3",
+   "uncertainty": "Statement by Rheinmetall (ammunition supplier), not by the Federal Government or KNDS; later reports give a higher total (see P-SB-052).",
+   "proposed_depth": "A",
+   "event_date": "2025-01-06",
+   "event_status": "abgeschlossen"
+  },
+  {
+   "id": "P-SB-051",
+   "statement": "Rheinmetall stated (6 January 2025) that the Ukrainian Ministry of Defence ordered 180,000 rounds of 35 mm HEI-T Gepard ammunition (booked December 2024, funded by Germany, produced at Unterlüß) after an earlier February 2023 order for 300,000 rounds; this is ammunition production by Rheinmetall and not Gepard vehicle production.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-081455a6101c816e"
+   ],
+   "evidence": "Paraphrase: 'The new order comprises 180,000 rounds of HEI-T ammunition ... booked in December of 2024'; 'Already in February of 2023, Rheinmetall received an order to supply 300,000 rounds'.",
+   "location": "Press release 'Rheinmetall delivers 35mm Gepard ammunition to Ukraine', paragraphs 1-2",
+   "uncertainty": "Ammunition order by a company other than KNDS; keeps ammunition separate from vehicle status; delivery of the 180,000 rounds is not confirmed.",
+   "proposed_depth": "A",
+   "event_date": "2025-01-06",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-052",
+   "statement": "Keystone-SDA/dpa reported (25 July 2025) that Ukraine's ambassador to Germany, Oleksii Makeiev, said Germany had already supplied Ukraine with more than 60 Gepard anti-aircraft tanks, which are effective against Russian drones.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-6bfb59bbe9a3dcf6"
+   ],
+   "evidence": "Paraphrase: 'Germany has already supplied Ukraine with more than 60 Gepard anti-aircraft tanks'; Makeiev praised the system's effectiveness against drones.",
+   "location": "Article 'Already more than 60 Gepard anti-aircraft tanks in Ukraine', paragraphs 1-2",
+   "uncertainty": "Customer-side oral statement relayed by an agency; not an official Federal Government tally.",
+   "proposed_depth": "A",
+   "event_date": "2025-07-25",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-053",
+   "statement": "Leinetal24/ntv reported (22 September 2025) that Ukraine's defence minister and KNDS chief Ketzel discussed new supply arrangements, technical support and joint production of Gepard systems at DSEI, that it remained open whether this meant new production or repair of delivered vehicles, and that KNDS declined to comment on production but said it maintains and repairs the system together with Ukraine.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-d3d43cc97cc81389"
+   ],
+   "evidence": "Paraphrase: 'Ob damit tatsächlich eine Neuproduktion gemeint ist oder lediglich die Instandsetzung bereits gelieferter Panzer, bleibt vorerst offen.'",
+   "location": "Article 'Neue Panzer-Produktion? Geparden weiden auf ukrainischem Grasland', paragraphs 3-6",
+   "uncertainty": "Press report of talks and a ministerial Telegram post; no agreement or production start is documented.",
+   "proposed_depth": "A",
+   "event_date": "2025-09-22",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SB-054",
+   "statement": "According to KNDS Deutschland CEO Ralf Ketzel (Defense Express interview, relayed by Espreso on 31 January 2025), KNDS has a modern version of the Gepard and a batch of older models and would like to develop, within a partnership, a Ukrainian version with an upgraded radar and improved tracking system.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-e92862a57ce9ebf6"
+   ],
+   "evidence": "Excerpt: 'We have a modern version of the Gepard, but we also have a batch of older models. And we would be happy ... [to] develop a Ukrainian version with an upgraded radar and improved tracking system.'",
+   "location": "Article 'Ukraine, KNDS Deutschland to modernize Gepard air defense tank', paragraphs 3-4",
+   "uncertainty": "Statement of intent in an interview relayed by secondary media; no contract or production status given.",
+   "proposed_depth": "A",
+   "event_date": "2025-01-31",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SB-055",
+   "statement": "The German Federal Ministry of Defence stated that the Bundestag budget committee approved on 29 January 2025 the procurement of further remote-controlled light weapon stations FLW 100 (order value about EUR 48 million, from the Special Fund) and that the FLW 100, like the FLW 200, 'has already been in service in the Bundeswehr for several years'.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-bcc88003de5b9217"
+   ],
+   "evidence": "Excerpt: 'Die FLW 100 ist - wie die FLW 200 auch - bereits seit mehreren Jahren in der Bundeswehr eingeführt.' Paraphrase: Auftragswert rund 48 Mio. EUR.",
+   "location": "BMVg news item 'Beschaffung: Mörsersystem, IdZ-Ausstattungen und TaWAN-Richtfunknetz' (30 January 2025), section 'Kauf weiterer FLW 100'",
+   "uncertainty": "Ministry text; the page's cached text derivation was unreadable and the original (gzip) bytes were decoded manually; delivery status of the new tranche is not stated.",
+   "proposed_depth": "A",
+   "event_date": "2025-01-29",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-056",
+   "statement": "Defence-network.com reported (24 January 2025) that a Bundestag defence committee template covered a possible contract under a framework agreement for delivery of FLW 100 and FLW 200 remote-controlled light weapon stations, smoke dischargers and gun-mounted sights, described as modular KNDS stations operated from inside light combat and command vehicles.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-40d6550e6d325387"
+   ],
+   "evidence": "Paraphrase: 'Rahmenvereinbarung über die Lieferung von fernbedienbaren leichten Waffenstationen 100 und 200 und Nebelmittelwurfanlagen sowie ... LAZ 200 und LAZ 400L'.",
+   "location": "Article 'Fünf Bundeswehr-Beschaffungen im Verteidigungsausschuss', section 'Fernbedienbare leichte Waffenstationen 100 und 200'",
+   "uncertainty": "Template under parliamentary consideration at the time; contract signature and deliveries are not documented in the sources read.",
+   "proposed_depth": "A",
+   "event_date": "2025-01-24",
+   "event_status": "geplant"
+  },
+  {
+   "id": "P-SB-057",
+   "statement": "According to KNDS Deutschland, the FLW 200 remote-controlled light weapon station was developed and qualified according to the specifications of the German Bundeswehr and 'has remained a dependable partner since its introduction', and the FLW 200 Plus is its direct advancement with a 20 mm automatic cannon (Rh202 DM6 A1, 20x139 mm).",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-413ab7fe9469ddec",
+    "S-4d6adea9226ecb34"
+   ],
+   "evidence": "Paraphrase: see items.",
+   "location": "see evidence_items (per source)",
+   "uncertainty": "Undated manufacturer product pages; no FLW 200 Plus order or delivery information found; weapon-station status is not transferred to other KNDS turrets.",
+   "evidence_items": [
+    {
+     "source_id": "S-413ab7fe9469ddec",
+     "text": "Excerpt: 'Developed and qualified in accordance with the specifications of the German Bundeswehr ... the weapon stations have remained consistently dependable partners since their introduction.'",
+     "mode": "Auszug",
+     "location": "Product page 'FLW 200', section on KNDS Deutschland weapon stations"
+    },
+    {
+     "source_id": "S-4d6adea9226ecb34",
+     "text": "Paraphrase: the FLW 200 Plus is the direct advancement of the FLW 200 with the integrated mission-proven Rh202 DM6 A1 20x139 mm automatic cannon.",
+     "mode": "Paraphrase",
+     "location": "Product page 'FLW 200 Plus', introductory paragraphs"
+    }
+   ],
+   "proposed_depth": "A",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-058",
+   "statement": "According to KNDS France, the French DGA ordered 530 SERVAL vehicles in December 2024, of which 24 SERVAL Counter-UAV vehicles equipped with the ARX30 remotely operated 30 mm turret are to be delivered to the French army starting in 2028 (the military programming law plans 48), and the contract includes ongoing development of a 30 mm airburst munition.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-6e37c58f05fb5c88"
+   ],
+   "evidence": "Paraphrase: '24 SERVAL C-UAV vehicles will be delivered to the French army starting in 2028'; 'The French Military Programming Law (LPM) ultimately plans for the acquisition of 48 such systems'; contract 'includes the ongoing development ... of a 30 mm Airburst munition'.",
+   "location": "Press release 'From Identification to Neutralization: KNDS France Unveils the SERVAL Counter-UAV Variant', bullet list and paragraphs 3-4",
+   "uncertainty": "Order and planned delivery start; the page is undated (June 2025 per trade media); the ARX30 airburst munition is still in development.",
+   "proposed_depth": "A",
+   "event_date": "2024-12",
+   "event_status": "beauftragt"
+  },
+  {
+   "id": "P-SB-059",
+   "statement": "KNDS France presents the ARX20, ARX25 and ARX30 as remotely controlled turrets with 20 mm, 25 mm and 30 mm guns respectively, for integration on platforms from light 4x4 vehicles to 8x8 vehicles and robots; the product pages name no customer, test or delivery.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-1fbf7e7a634158bc",
+    "S-77aababed8daf0b8",
+    "S-f29f7e1a60049a10"
+   ],
+   "evidence": "Paraphrase: see items.",
+   "location": "see evidence_items (per source)",
+   "uncertainty": "Undated product pages; the absence of customers on the pages does not show that none exist.",
+   "evidence_items": [
+    {
+     "source_id": "S-1fbf7e7a634158bc",
+     "text": "Paraphrase: ARX20 is a 20 mm automatic cannon system (750 rounds/min) with a modular design for armoured vehicles, naval ships, light 4x4 vehicles and robots.",
+     "mode": "Paraphrase",
+     "location": "Product page 'ARX20', introductory paragraphs"
+    },
+    {
+     "source_id": "S-77aababed8daf0b8",
+     "text": "Paraphrase: ARX25 is a remotely controlled mini-turret with a 25 mm gun (25x137) for 4x4 (12 t class) to 8x8 IFVs, up to 280 ready rounds.",
+     "mode": "Paraphrase",
+     "location": "Product page 'ARX25', introductory paragraphs"
+    },
+    {
+     "source_id": "S-f29f7e1a60049a10",
+     "text": "Paraphrase: ARX30 RWS with the 30M781 gun replaces 12.7 mm and 40 mm grenade-launcher RWS; adaptable from 4x4 vehicles to secondary armament for tanks and robots; upgradable against mini/micro UAV.",
+     "mode": "Paraphrase",
+     "location": "Product page 'ARX30', introductory paragraphs"
+    }
+   ],
+   "proposed_depth": "A",
+   "event_status": "angeboten"
+  },
+  {
+   "id": "P-SB-060",
+   "statement": "Defence ReDEFiNED reported (10 April 2024) that KNDS showcased the OPTIO-X20 armed unmanned ground vehicle, a tracked robot armed with the ARX20 remote weapon station (20M621 cannon, 750 rounds/min).",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-a43a1af456113f5d"
+   ],
+   "evidence": "Paraphrase: 'KNDS showcased the Unmanned Ground Vehicle (UGV) OPTIO-X20 ... armed with the ARX20 turret.'",
+   "location": "Article 'OPTIO-X20 | KNDS' Armed Multi-mission Unmanned Ground Vehicle', paragraphs 1-4",
+   "uncertainty": "Showcase of an armed demonstrator; no order or test results given.",
+   "proposed_depth": "A",
+   "event_date": "2024-04-10",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SB-061",
+   "statement": "European Security & Defence reported (12 March 2026, BEDEX) that KNDS promotes a 3D protection ecosystem (C-UAS, VSHORAD, ground-to-ground) that includes the SERVAL LAD with its ARX30 cannon using airburst technology on 30x113 ammunition, alongside RAPIDFire Land.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-45496f93e428e25f"
+   ],
+   "evidence": "Paraphrase: 'This ecosystem notably includes the Serval LAD and its ARX30 cannon, which uses proven airburst technology on its 30x113 ammunition.'",
+   "location": "Article 'BEDEX 2026: KNDS, a trusted partner of the Belgian Armed Forces', paragraph on the 3D protection ecosystem",
+   "uncertainty": "Marketing statement at a trade show; the airburst munition is still described as in development in the KNDS release (P-SB-058).",
+   "proposed_depth": "A",
+   "event_date": "2026-03-12",
+   "event_status": "angekündigt"
+  },
+  {
+   "id": "P-SB-062",
+   "statement": "According to KNDS (press release of 22 June 2023), the THL30 is a light turret with a 30 mm gun designed for the Tiger helicopter, produced in 136 units between 2003 and 2014 for France, Spain and Australia and used in operations in Afghanistan, Libya and Mali, and KNDS is enhancing it and will deliver retrofit kits to Airbus Helicopters for the upgraded Tiger.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-92d4e0a75a36b0f2"
+   ],
+   "evidence": "Paraphrase: 'Developed in the late 1990s and produced in 136 units between 2003 and 2014 for France, Spain and Australia, the THL30 has proved its capacities in numerous theatres of operation, including Afghanistan, Libya and Mali.'",
+   "location": "Press release 'The new Nexter turret, a KNDS company, takes off with the upgraded Tiger', paragraphs 2-4",
+   "uncertainty": "Manufacturer retrospective; the THL30 series production ended in 2014 according to the release, the retrofit is a modernisation.",
+   "proposed_depth": "A",
+   "event_date": "2023-06-22",
+   "event_status": "abgeschlossen"
+  },
+  {
+   "id": "P-SB-063",
+   "statement": "According to KNDS, the THL20 helicopter turret (20M621 cannon) is qualified on the IAR 330, the Indian ALH and LCH and is already integrated on the Black Hawk, and the THL30 turret is qualified on the Airbus Tigre helicopter.",
+   "kind": "Herstellerangabe",
+   "source_ids": [
+    "S-6e26579fbf388dc1",
+    "S-1fb6bc3d36a3ffa1"
+   ],
+   "evidence": "Paraphrase: see items.",
+   "location": "see evidence_items (per source)",
+   "uncertainty": "Undated manufacturer product pages; 'qualified' is a manufacturer statement; no operator counts on the pages.",
+   "evidence_items": [
+    {
+     "source_id": "S-6e26579fbf388dc1",
+     "text": "Excerpt: 'This turret is qualified on the IAR 330 helicopter ..., on the Indian ALH and LCH and already integrated on Black Hawk helicopter.'",
+     "mode": "Auszug",
+     "location": "Product page 'THL20', introductory paragraphs"
+    },
+    {
+     "source_id": "S-1fb6bc3d36a3ffa1",
+     "text": "Excerpt: 'This turret is qualified on the Airbus Helicopters's TIGRE helicopter.'",
+     "mode": "Auszug",
+     "location": "Product page 'THL30', introductory paragraphs"
+    }
+   ],
+   "proposed_depth": "A",
+   "event_status": "laufend"
+  },
+  {
+   "id": "P-SB-064",
+   "statement": "Idrw.org reported (17 September 2026) that KNDS will deliver 126 newly manufactured 20 mm THL20 turrets for India's Light Combat Helicopter, building on earlier supply of 136 THL20 turrets for the Indian Air Force's Advanced Light Helicopters, and that the THL20 is derived from the THL30 'currently in service on Tiger helicopters'.",
+   "kind": "Fakt",
+   "source_ids": [
+    "S-804fa628e354cfad"
+   ],
+   "evidence": "Paraphrase: 'KNDS will deliver 126 newly manufactured 20mm THL20 turrets'; 'already includes the supply of 136 THL20 turrets for the Advanced Light Helicopters (ALH) currently operated by the Indian Air Force'.",
+   "location": "Article 'KNDS THL20 Turrets Selected For India's New Light Combat Helicopter Program', paragraphs 3-5",
+   "uncertainty": "Trade/news site; no KNDS or HAL primary release was found; contract value and delivery schedule are not stated.",
+   "proposed_depth": "A",
+   "event_date": "2026-09-17",
+   "event_status": "beauftragt"
+  }
+ ],
+ "source_proposals": [
+  {
+   "id": "S-06421b50be671aa0",
+   "name": "Lyon Capitale",
+   "title": "Loire : l'usine KNDS de Roanne, symbole du réarmement",
+   "url": "https://www.lyoncapitale.fr/?p=510269",
+   "published_date": "2026-07-13",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-081455a6101c816e",
+   "name": "Rheinmetall",
+   "title": "Rheinmetall delivers 35mm Gepard ammunition to Ukraine",
+   "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/01/2025-01-06-35mm-gepardmunition-fuer-ukr",
+   "published_date": "2025-01-06",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-086937648044a782",
+   "name": "KNDS",
+   "title": "KNDS Deutschland",
+   "url": "https://knds.com/de/standorte/knds-deutschland",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-0d0668145edf4607",
+   "name": "Naval News",
+   "title": "France orders 40mm ammunition rounds for Navy and Army",
+   "url": "https://www.navalnews.com/naval-news/2025/06/france-orders-40mm-ammunition-rounds-for-navy-and-army/",
+   "published_date": "2025-06-20",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-0df7d1e4993cf9cd",
+   "name": "Sicherheit & Verteidigung",
+   "title": "Beschaffungsvorhaben des Heeres",
+   "url": "https://suv.report/beschaffungsvorhaben-des-heeres/",
+   "published_date": "2025-01-26",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-0ed42f15608cd2cd",
+   "name": "Augen geradeaus!",
+   "title": "Lambrecht bestätigt: Bundeswehr-Raketenartillerie für die Ukraine",
+   "url": "https://augengeradeaus.net/2022/06/lambrecht-bestaetigt-bundeswehr-raketenartillerie-fuer-die-ukraine/",
+   "published_date": "2022-06-15",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-10bb2db9567e98a1",
+   "name": "European Pravda",
+   "title": "Germany Starts Testing RCH-155 Artillery Systems, Ukraine to Receive Them First",
+   "url": "https://eurointegration.com.ua/eng/news/2023/02/7/7155678",
+   "published_date": "2023-02-07",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-1c5dd1f131f057a4",
+   "name": "KNDS",
+   "title": "The French MOD orders 109 CAESAR MkII from Nexter, a company of KNDS",
+   "url": "https://knds.com/en/press-releases/the-french-mod-orders-109-caesar-mk-ii-from-nexter-a-company-of-knds",
+   "published_date": "2024-01-24",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-1fb6bc3d36a3ffa1",
+   "name": "KNDS",
+   "title": "THL30",
+   "url": "https://knds.com/en/products/systems/thl-30",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-1fbf7e7a634158bc",
+   "name": "KNDS",
+   "title": "ARX20",
+   "url": "https://knds.com/en/products/systems/arx-20",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-2570c8a1f788d668",
+   "name": "Rheinmetall",
+   "title": "Großauftrag Radhaubitze RCH155",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2025/12/2025-12-19-grossauftrag-radhaubitze-rch155",
+   "published_date": "2025-12-19",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-2d388c04c392e1b0",
+   "name": "KNDS",
+   "title": "AGM",
+   "url": "https://knds.com/en/products/systems/agm",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-3090eecc207ffa9a",
+   "name": "KNDS France",
+   "title": "CAESAR 6x6 – Datasheet K2V-001-EN-06/2024",
+   "url": "https://knds.com/media/K2_V_001_CAESAR_6_X6_EN_BAT_BDEF_91a6b0aeb4.pdf",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Primary source"
+  },
+  {
+   "id": "S-40d6550e6d325387",
+   "name": "defence-network.com",
+   "title": "Fünf Bundeswehr-Beschaffungen im Verteidigungsausschuss",
+   "url": "https://defence-network.com/fuenf-bundeswehr-beschaffungen/",
+   "published_date": "2025-01-24",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-413ab7fe9469ddec",
+   "name": "KNDS",
+   "title": "FLW 200",
+   "url": "https://knds.com/en/products/systems/flw-200-range/flw-200",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-42e84694be062d71",
+   "name": "Bundesministerium der Verteidigung",
+   "title": "Bundeswehr liefert DINGO und weitere MARS II an die Ukraine",
+   "url": "https://www.bmvg.de/de/presse/bundeswehr-liefert-dingo-weitere-mars-an-ukraine-5498110",
+   "published_date": "2022-09-15",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Government publication"
+  },
+  {
+   "id": "S-45496f93e428e25f",
+   "name": "European Security & Defence",
+   "title": "BEDEX 2026: KNDS, a trusted partner of the Belgian Armed Forces",
+   "url": "https://euro-sd.com/2026/03/news/land/49878/bedex-2026-knds/",
+   "published_date": "2026-03-12",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-4d6adea9226ecb34",
+   "name": "KNDS",
+   "title": "FLW 200 Plus",
+   "url": "https://knds.com/en/products/systems/flw-200-range/flw-200-plus",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-4da0f1a41c4b8354",
+   "name": "Army Guide",
+   "title": "General Dynamics and KMW display DONAR autonomous, remotely operated artillery system at AUSA 2009",
+   "url": "https://army-guide.com/eng/article/article_1443.html",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-4f97ad522106cb38",
+   "name": "KNDS",
+   "title": "Systems",
+   "url": "https://knds.com/en/products/systems",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-584f9f611e8055e9",
+   "name": "European Security & Defence",
+   "title": "Guns and chassis for 22 PzH 2000 SPHs for the Bundeswehr ordered from Rheinmetall",
+   "url": "https://euro-sd.com/2024/04/major-news/37346/rheinmetall-pzh-2000-order/",
+   "published_date": "2024-04-03",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-5f3c57dfe3f913fd",
+   "name": "Ukrinform",
+   "title": "More than 600 Ukrainian artillery soldiers finish training on new artillery system in Germany",
+   "url": "https://www.ukrinform.net/rubric-ato/4101916-more-than-600-ukrainian-artillery-soldiers-finish-training-on-new-artillery-system-in-germany.html",
+   "published_date": "2026-03-15",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-615341f26bb37ce2",
+   "name": "KNDS",
+   "title": "Germany procures RCH 155 wheeled howitzers from KNDS",
+   "url": "https://knds.com/de/pressemitteilungen/deutschland-beschafft-radhaubitze-rch-155-von-knds",
+   "published_date": "2025-12-19",
+   "accessed_date": "2026-10-28",
+   "source_kind": "Manufacturer statement"
+  },
+  {
+   "id": "S-69fd8295dce358bf",
+   "name": "Defensa.com",
+   "title": "Gran impulso a la Artillería lanzacohetes de Alemania",
+   "url": "https://www.defensa.com/otan-y-europa/alemania-da-gran-impulso-artilleria-lanzacohetes",
+   "published_date": "2022-08-10",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-6bfb59bbe9a3dcf6",
+   "name": "blue News (Keystone-SDA)",
+   "title": "More than 60 Gepard anti-aircraft tanks already in Ukraine",
+   "url": "https://www.bluewin.ch/en/news/international/more-than-60-gepard-anti-aircraft-tanks-already-in-ukraine-2798943.html",
+   "published_date": "2025-07-25",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-6c8b3e18669d4597",
+   "name": "Rheinmetall",
+   "title": "Rheinmetall liefert Waffenanlage für britische Radhaubitze RCH 155",
+   "url": "https://www.rheinmetall.com/de/media/news-watch/news/2026/07/2026-07-31-rheinmetall-liefert-waffenanlage-fuer-britische-radhaubitze-rch-155",
+   "published_date": "2026-07-31",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-6e26579fbf388dc1",
+   "name": "KNDS",
+   "title": "THL20",
+   "url": "https://knds.com/en/products/systems/thl-20",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-6e37c58f05fb5c88",
+   "name": "KNDS",
+   "title": "From Identification to Neutralization: KNDS France Unveils the SERVAL Counter-UAV Variant",
+   "url": "https://knds.com/press-releases/from-identification-to-neutralization-knds-france-unveils-the-serval-counter-uav-variant",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-70dc963267bd3ddf",
+   "name": "defence-network.com",
+   "title": "Von Munition bis zum Leopard: KNDS geht in die Ukraine",
+   "url": "https://defence-network.com/munition-leopard-knds-geht-in-die-ukraine/",
+   "published_date": "2024-10-01",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-735b6d1356a73251",
+   "name": "KNDS",
+   "title": "Malaysia becomes the 15th CAESAR customer country with an initial order of 18 artillery systems",
+   "url": "https://knds.com/en/press-releases/malaysia-becomes-the-15-th-caesar-customer-country-with-an-initial-order-of-18-artillery-systems",
+   "published_date": "2026-06-16",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-7455eac2de5250a1",
+   "name": "Armada International",
+   "title": "Swiss Army Replacing M109 Howitzers with Piranha DONAR",
+   "url": "https://www.armadainternational.com/2026/07/swiss-army-replacing-m109-howitzers-with-piranha-donar-foc/",
+   "published_date": "2026-07-02",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-77aababed8daf0b8",
+   "name": "KNDS",
+   "title": "ARX25",
+   "url": "https://knds.com/en/products/systems/arx-25",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-7836dc8f37af6164",
+   "name": "KNDS",
+   "title": "MARS II / MLRS Evolution",
+   "url": "https://knds.com/en/products/systems/mars-ii-mlrs-evolution",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-7d4e2671399627b1",
+   "name": "KNDS",
+   "title": "KNDS achieves strong revenue growth and record order intake in 2025",
+   "url": "https://knds.com/en/press-releases/knds-achieves-strong-revenue-growth-and-record-order-intake-in-2025",
+   "published_date": "2026-05-26",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-7fa97d679979c2c6",
+   "name": "defence-network.com",
+   "title": "Bundeswehr und British Army erhalten RCH 155",
+   "url": "https://defence-network.com/bundeswehr-und-british-army-erhalten-rch-155/",
+   "published_date": "2024-04-25",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-804fa628e354cfad",
+   "name": "idrw.org",
+   "title": "KNDS THL20 Turrets Selected For India's New Light Combat Helicopter Program",
+   "url": "https://idrw.org/knds-thl20-turrets-selected-for-indias-new-light-combat-helicopter-program/",
+   "published_date": "2026-09-17",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-838217822395dd4a",
+   "name": "European Security & Defence",
+   "title": "KNDS and GDELS introduce 155 mm Artillery Gun Module on Piranha Heavy Mission Carrier",
+   "url": "https://euro-sd.com/2024/05/major-news/38218/knds-gdels-install-agm-on-hmc/",
+   "published_date": "2024-05-22",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-86d61336ff39d3dd",
+   "name": "esut.de",
+   "title": "Artillerie-Geschütz-Modul auf Boxer und Piranha in direktem Vergleich",
+   "url": "https://esut.de/en/2024/06/meldungen/51049/artillerie-geschuetz-modul-auf-boxer-und-piranha-in-direktem-vergleich/",
+   "published_date": "2024-06-27",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-87963d9398e36190",
+   "name": "Militarnyi",
+   "title": "Ukraine Receives First RCH 155 Self-Propelled Howitzer — German Aid to Ukraine",
+   "url": "https://militarnyi.com/en/news/ukraine-receives-first-rch-155-self-propelled-howitzer-german-aid-to-ukraine/",
+   "published_date": "2026-09-06",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-8a06882d2a6a1929",
+   "name": "esut.de",
+   "title": "Die British Army erhält 72 Radhaubitzen RCH 155",
+   "url": "https://esut.de/2026/05/meldungen/70815/die-british-army-erhaelt-72-radhaubitzen-rch-155/",
+   "published_date": "2026-05-15",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-92d4e0a75a36b0f2",
+   "name": "KNDS",
+   "title": "The new Nexter turret, a KNDS company, takes off with the upgraded Tiger",
+   "url": "https://knds.com/press-releases/the-new-nexter-turret-a-knds-company-takes-off-with-the-upgraded-tiger",
+   "published_date": "2023-06-22",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-985a5fe13a4cd562",
+   "name": "KNDS",
+   "title": "British Government Orders Artillery System from KNDS",
+   "url": "https://knds.com/en/press-releases/british-government-orders-latest-generation-artillery-system-from-knds",
+   "published_date": "2026-05-14",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-a43a1af456113f5d",
+   "name": "Defence ReDEFiNED",
+   "title": "OPTIO-X20 | KNDS' Armed Multi-mission Unmanned Ground Vehicle",
+   "url": "https://defenceredefined.com.cy/optio-x20-knds-armed-multi-mission-unmanned-ground-vehicle",
+   "published_date": "2024-04-10",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-aefe2b891ea7e529",
+   "name": "European Pravda",
+   "title": "German defence minister confirms delivery of latest RCH-155 howitzers to Ukraine",
+   "url": "https://www.eurointegration.com.ua/eng/news/2026/08/4/7242942/",
+   "published_date": "2026-08-04",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-af673b6817266e46",
+   "name": "KNDS",
+   "title": "RCH 155",
+   "url": "https://knds.com/en/products/systems/rch-155",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-b83a36907da809b2",
+   "name": "Defence24",
+   "title": "Duże wzmocnienie ukraińskiej artylerii z Francji. Cała produkcja nad Dniepr",
+   "url": "https://defence24.pl/wojna-na-ukrainie-raport-specjalny-defence24/duze-wzmocnienie-ukrainskiej-artylerii-z-francji-cala-produkcja-nad-dniepr",
+   "published_date": "2025-05-22",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-b87afeb6be3f399c",
+   "name": "European Security & Defence",
+   "title": "First RCH 155 wheeled SPH for Ukraine rolled out in Kassel",
+   "url": "https://euro-sd.com/2025/01/major-news/42032/first-rch-155-for-ukraine/",
+   "published_date": "2025-01-14",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-b94028cc148d68b8",
+   "name": "Business AM FR",
+   "title": "Obusiers RCH 155 désormais opérationnels en Ukraine, confirme l'Allemagne",
+   "url": "https://fr.businessam.be/?p=266819",
+   "published_date": "2026-07-22",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-bcc88003de5b9217",
+   "name": "Bundesministerium der Verteidigung",
+   "title": "Beschaffung: Mörsersystem, IdZ-Ausstattungen und TaWAN-Richtfunknetz",
+   "url": "https://www.bmvg.de/de/aktuelles/beschaffung-moersersystem-idz-ausstattungen-tawan-richtfunknetz-5882320",
+   "published_date": "2025-01-30",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Government publication"
+  },
+  {
+   "id": "S-c414879d32b9e9d1",
+   "name": "KNDS",
+   "title": "KNDS offers the complete range of proven artillery systems",
+   "url": "https://knds.com/en/press-releases/knds-offers-the-complete-range-of-proven-artillery-systems",
+   "published_date": "2024-06-18",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-cd4d8a27a37624e4",
+   "name": "KNDS",
+   "title": "Roll-out: LEOPARD 2A8 and PzH 2000 Systems",
+   "url": "https://knds.com/en/press-releases/roll-out-of-the-knds-leopard-2-a8-and-pz-h-2000-systems",
+   "published_date": "2025-11-19",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-cdb071d12fc238e7",
+   "name": "KNDS",
+   "title": "PzH 2000",
+   "url": "https://knds.com/en/products/systems/pzh-2000",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-d3d43cc97cc81389",
+   "name": "Leinetal24",
+   "title": "Neue Panzer-Produktion? „Geparden weiden auf ukrainischem Grasland“",
+   "url": "https://www.leinetal24.de/wirtschaft/neue-panzer-produktion-geparden-weiden-auf-ukrainischem-grasland-zr-93935393.html",
+   "published_date": "2025-09-22",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-d47b4031096d3c20",
+   "name": "KNDS",
+   "title": "Thales and KNDS France unveil RAPIDFire Land, a land-based variant of the 40 mm RAPIDFire Naval defence system",
+   "url": "https://knds.com/en/press-releases/thales-and-knds-france-unveil-rapid-fire-land-a-land-based-variant-of-the-40-mm-rapid-fire-naval-defence-system",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-d7d7587226163f27",
+   "name": "KNDS",
+   "title": "Switzerland Procures Artillery System from KNDS",
+   "url": "https://knds.com/en/press-releases/switzerland-procures-state-of-the-art-artillery-system-from-knds",
+   "published_date": "2026-06-08",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company press release"
+  },
+  {
+   "id": "S-e21b199c143a41de",
+   "name": "KNDS",
+   "title": "RapidFire Land",
+   "url": "https://knds.com/en/products/systems/rapid-fire-land",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-e21f141dc8121dce",
+   "name": "Army Recognition",
+   "title": "M270 MLRS MARS II from Germany has arrived in Ukraine",
+   "url": "https://www.armyrecognition.com/focus-analysis-conflicts/army/conflicts-in-the-world/russia-ukraine-war-2022/m270-mlrs-mars-ii-from-germany-has-arrived-in-ukraine",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-e39570202194e479",
+   "name": "StratPost",
+   "title": "KNDS and Leonardo to Jointly Develop Mobile Artillery",
+   "url": "https://stratpost.com/knds-and-leonardo-to-jointly-develop-mobile-artillery/",
+   "published_date": "2025-12-16",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-e92862a57ce9ebf6",
+   "name": "Espreso",
+   "title": "Ukraine, KNDS Deutschland to modernize Gepard air defense tank",
+   "url": "https://global.espreso.tv/russia-ukraine-war-ukrainian-gepard-with-upgraded-radar-will-mark-start-of-joint-projects-with-knds-deutschlandwhy-this-project-was-chosen",
+   "published_date": "2025-01-31",
+   "accessed_date": "2026-10-29",
+   "source_kind": "News media"
+  },
+  {
+   "id": "S-eb5571e8d8324a23",
+   "name": "KNDS",
+   "title": "CAESAR 6x6",
+   "url": "https://knds.com/en/products/systems/caesar-6x6",
+   "published_date": null,
+   "accessed_date": "2026-10-28",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-effee1b7a20dfb27",
+   "name": "KNDS",
+   "title": "DONAR",
+   "url": "https://knds.com/en/products/systems/donar",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-f29f7e1a60049a10",
+   "name": "KNDS",
+   "title": "ARX30",
+   "url": "https://knds.com/en/products/systems/arx-30",
+   "published_date": null,
+   "accessed_date": "2026-10-29",
+   "source_kind": "Company website"
+  },
+  {
+   "id": "S-fb0c3ce8dc87caae",
+   "name": "Janes",
+   "title": "Paris Air Show 2025: France orders land-based version of 40 mm RAPIDFire system",
+   "url": "https://www.janes.com/osint-insights/defence-news/industry/paris-air-show-2025-france-orders-land-based-version-of-40-mm-rapidfire-system",
+   "published_date": "2025-06-17",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  },
+  {
+   "id": "S-fbe7bae5557bc1a3",
+   "name": "EDR Magazine",
+   "title": "PAS 2025 - KNDS France and Thales present the land-based variant of the 40 mm RAPIDFire",
+   "url": "https://www.edrmagazine.eu/pas-2025-knds-france-and-thales-present-the-land-based-variant-of-the-40-mm-rapidfire",
+   "published_date": "2025-06-21",
+   "accessed_date": "2026-10-29",
+   "source_kind": "Trade media"
+  }
+ ],
+ "gaps": [
+  {
+   "topic": "caesar",
+   "gap": "No official 2025-2026 delivery counts for CAESAR 6x6 (Mk I); the monthly rates (6 in 2024, 10 in July 2026 per media) are not variant-specific. No public evidence separates CAESAR 6x6 production from MkII/8x8 ramp-up. A gap is not evidence of weakness."
+  },
+  {
+   "topic": "rch155",
+   "gap": "Combat use in Ukraine is not officially confirmed (minister statement ambiguous; adviser post only); number of vehicles delivered to Ukraine unknown; German delivery start differs by source (Rheinmetall component deliveries 2027-2029 versus vehicle deliveries 2028-2030); no primary test/qualification report (BAAINBw, WTD 91) was obtained; Qatar quantity rests on one trade-media report."
+  },
+  {
+   "topic": "pzh2000",
+   "gap": "No source read documents the first handover of the new-build PzH 2000 to the Bundeswehr after the planned May 2026 start (overview page modified 2026-10-22 shows none); several esut.de articles (Renk gearbox order, Rheinmetall subcontract) returned HTTP 403 and were not read; no BAAINBw primary page obtained."
+  },
+  {
+   "topic": "mars2",
+   "gap": "No 2024-2026 evidence of new-build production, retrofit deliveries or customer deliveries; the evidence is the KNDS product page (undated) and 2022 transfers to Ukraine; announced numbers for Ukraine differ between sources (three launchers announced, two additional announced in September 2022)."
+  },
+  {
+   "topic": "agm",
+   "gap": "Truck-mounted AGM: no test, customer or delivery evidence found; Eurosatory 2026 LORAS (58-calibre AGM on tracked RCH 155 chassis) was only seen in a search result and not read."
+  },
+  {
+   "topic": "donar",
+   "gap": "No status of the tracked ASCOD DONAR after the 2009 manufacturer statement found; the KNDS Deutschland DONAR page (knds.de) redirected to a generic page and was not used."
+  },
+  {
+   "topic": "rapidfire",
+   "gap": "No live-fire test, order or delivery report for the land variant found; Janes (48 land-based) and KNDS (48 in total, 14 firmly ordered for the Navy) conflict on the number of land systems; Air and Space Force operational testing not confirmed."
+  },
+  {
+   "topic": "gepard",
+   "gap": "KNDS role as original manufacturer or current producer of the Gepard is not documented beyond the portfolio listing (P-11) and maintenance/repair statements; no evidence of new-built Gepard; other Gepard operators were not searched; Gepard ammunition (Rheinmetall) is not KNDS production."
+  },
+  {
+   "topic": "flw",
+   "gap": "Delivery status of the January 2025 FLW 100 tranche (126 stations, delivery 2026-2027 per a snippet of an esut.de article that returned HTTP 403) not verified and not used; FLW customers outside the Bundeswehr not searched; no order evidence for the FLW 200 Plus."
+  },
+  {
+   "topic": "arx",
+   "gap": "ARX20 and ARX25: no order, customer or test evidence found; ARX30: no qualification or firing-test report (airburst munition in development); no separate ARX 40 product found in the KNDS catalogue."
+  },
+  {
+   "topic": "thl",
+   "gap": "Scope limited to THL20/THL30 helicopter turrets; the medium-calibre cannons of the KNDS catalogue (20M621, 25M811, 30M781, P20, NC621) were not assessed; the Tiger THL30 retrofit service-entry date appeared only in a search snippet and was not read; THL20 India order has no KNDS/HAL primary source."
+  },
+  {
+   "topic": "tooling",
+   "gap": "source-cache read failed for the PDF datasheet (decoded with pdftotext from the retained original) and returned unreadable text for gzip-encoded bmvg.de pages (decoded manually from the retained original bytes); knds.de PDFs and some knds.de pages redirect to a generic page; esut.de returned HTTP 403 for several URLs."
+  },
+  {
+   "topic": "scope",
+   "gap": "Existing claims M-004 and M-009 belong to other modules; their facts were recaptured as P-SB-016 and P-SB-005. regional_presence was not requested for Teilauftrag B and is not part of this module."
+  }
+ ],
+ "coverage": [
+  {
+   "topic": "caesar",
+   "search_terms": "CAESAR 6x6 production rate 2025 2026; Roanne cadence; DGA commande livraison; Ukraine CAESAR delivered; Malaysia order; CAESAR customers",
+   "source_ids": [
+    "S-eb5571e8d8324a23",
+    "S-3090eecc207ffa9a",
+    "S-c414879d32b9e9d1",
+    "S-7d4e2671399627b1",
+    "S-06421b50be671aa0",
+    "S-735b6d1356a73251",
+    "S-b83a36907da809b2",
+    "S-1c5dd1f131f057a4",
+    "S-6dfbe334020edf1a"
+   ],
+   "finding": "Series production and repeated orders documented from manufacturer (June 2024, May 2026) and media (Jul 2026); operational use in France and Ukraine from datasheet and Defence24. Army Recognition 2025 article (production 6/8/12 per month plan) was read (S-6dfbe334020edf1a) but not used as a claim because it relays La Tribune plans.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "rch155",
+   "search_terms": "RCH 155 Auslieferung Serienfertigung; Ukraine first delivery; Qualifikation Erprobung WTD 91; Qatar order; UK 72; Rheinmetall weapon system qualification",
+   "source_ids": [
+    "S-af673b6817266e46",
+    "S-10bb2db9567e98a1",
+    "S-7fa97d679979c2c6",
+    "S-b87afeb6be3f399c",
+    "S-5f3c57dfe3f913fd",
+    "S-aefe2b891ea7e529",
+    "S-87963d9398e36190",
+    "S-b94028cc148d68b8",
+    "S-615341f26bb37ce2",
+    "S-2570c8a1f788d668",
+    "S-0df7d1e4993cf9cd",
+    "S-985a5fe13a4cd562",
+    "S-8a06882d2a6a1929",
+    "S-d7d7587226163f27",
+    "S-6c8b3e18669d4597"
+   ],
+   "finding": "Tests (Bundeswehr, 2023-2024 reports), first rollout and training vehicle (Jan 2025), Ukrainian crew training (>600), delivery to Ukraine confirmed by minister (Aug 2026) and reported by tracker (Sep 2026); German/UK/Qatar orders; qualification of the RC weapon system still running (Jul 2026). Combat use not officially confirmed.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "pzh2000",
+   "search_terms": "PzH 2000 neue Fertigung Lose 2025 2026; Rollout Nov 2025; Auslieferung Bundeswehr Mai 2026; Ukraine PzH 2000 Neubau; users",
+   "source_ids": [
+    "S-cdb071d12fc238e7",
+    "S-cd4d8a27a37624e4",
+    "S-c414879d32b9e9d1",
+    "S-b87afeb6be3f399c",
+    "S-584f9f611e8055e9",
+    "S-0df7d1e4993cf9cd"
+   ],
+   "finding": "New production for the Bundeswehr (22) and continued production for Ukraine stated by KNDS (Nov 2025); roll-out held; planned delivery from May 2026. In-service use by nine customers and Ukraine. No report of the first handover after May 2026 found.",
+   "status": "geprüft mit Beleg (Auslieferung 2026 nicht bestätigt)"
+  },
+  {
+   "topic": "mars2",
+   "search_terms": "MARS II MLRS Evolution KNDS Bundeswehr Ukraine; MARS II Modernisierung 2025 2026",
+   "source_ids": [
+    "S-4f97ad522106cb38",
+    "S-7836dc8f37af6164",
+    "S-0ed42f15608cd2cd",
+    "S-42e84694be062d71",
+    "S-e21f141dc8121dce",
+    "S-69fd8295dce358bf",
+    "S-9d84809f78993c94"
+   ],
+   "finding": "In-service use in Germany (manufacturer) and transfers to Ukraine in 2022 (government and customer statements). No 2024-2026 retrofit or delivery evidence found; the 2020 Defence Blog missile-purchase article was read but not used.",
+   "status": "geprüft mit Beleg (aktuelle Fertigung/Lieferung ohne Beleg)"
+  },
+  {
+   "topic": "agm",
+   "search_terms": "KNDS AGM artillery gun module truck-mounted; AGM Piranha HMC; AGM Leonardo Italy; AGM Switzerland",
+   "source_ids": [
+    "S-2d388c04c392e1b0",
+    "S-86d61336ff39d3dd",
+    "S-838217822395dd4a",
+    "S-d7d7587226163f27",
+    "S-7455eac2de5250a1",
+    "S-e39570202194e479"
+   ],
+   "finding": "Module is in use through the RCH 155 (see rch155); Piranha HMC configuration demonstrated with live firing (2024) and contracted by Switzerland (June 2026); Italy only a letter of intent; truck-mounted configuration offered without customer/test evidence.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "donar",
+   "search_terms": "DONAR tracked ASCOD prototype tests; DONAR 10x10 Switzerland",
+   "source_ids": [
+    "S-effee1b7a20dfb27",
+    "S-4da0f1a41c4b8354",
+    "S-d7d7587226163f27",
+    "S-7455eac2de5250a1"
+   ],
+   "finding": "Tracked DONAR prototype with manufacturer-reported BWB trials (2009 statement); no later status found. DONAR 10x10 (Swiss name for AGM on Piranha IV) contracted June 2026 with prototype by 2027 and series from 2031.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "rapidfire",
+   "search_terms": "RapidFire Land 40 CTAS KNDS Thales DGA contract; land version tests; Air and Space Force; 40mm ammunition",
+   "source_ids": [
+    "S-e21b199c143a41de",
+    "S-d47b4031096d3c20",
+    "S-fb0c3ce8dc87caae",
+    "S-fbe7bae5557bc1a3",
+    "S-0d0668145edf4607"
+   ],
+   "finding": "Naval RAPIDFire qualified and operating; land variant unveiled June 2025 and expected for operational testing by the French Air and Space Force; no land-variant test, delivery or 2026 progress report found.",
+   "status": "geprüft mit Beleg (Land-Variante ohne Test-/Lieferbeleg)"
+  },
+  {
+   "topic": "gepard",
+   "search_terms": "Gepard Ukraine Flakpanzer KNDS Rolle; Gepard Munition Rheinmetall; KNDS Ukraine Instandsetzung; Gepard Produktion",
+   "source_ids": [
+    "S-086937648044a782",
+    "S-70dc963267bd3ddf",
+    "S-081455a6101c816e",
+    "S-6bfb59bbe9a3dcf6",
+    "S-d3d43cc97cc81389",
+    "S-e92862a57ce9ebf6",
+    "S-d8d41c116e982e40"
+   ],
+   "finding": "Use in Ukraine documented (55 then >60 vehicles handed over, ex-Bundeswehr stock); KNDS role documented as listed portfolio item and maintenance/repair partner; no evidence of new-built Gepard by KNDS; ammunition production kept separate (Rheinmetall).",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "topic": "flw",
+   "search_terms": "FLW 100 FLW 200 Bundeswehr Beschaffung 2025; FLW 200 Plus Auftrag",
+   "source_ids": [
+    "S-4f97ad522106cb38",
+    "S-0e5a0218a4e4c3ea",
+    "S-413ab7fe9469ddec",
+    "S-4d6adea9226ecb34",
+    "S-bcc88003de5b9217",
+    "S-40d6550e6d325387"
+   ],
+   "finding": "FLW 100 and FLW 200 in Bundeswehr service for several years and a further FLW 100 tranche approved (Jan 2025); FLW 200 Plus offered without order evidence.",
+   "status": "geprüft mit Beleg (Lieferstand 2026 ohne Beleg)"
+  },
+  {
+   "topic": "arx",
+   "search_terms": "ARX20 ARX25 ARX30 order delivery; SERVAL LAD ARX30; OPTIO-X20",
+   "source_ids": [
+    "S-1fbf7e7a634158bc",
+    "S-77aababed8daf0b8",
+    "S-f29f7e1a60049a10",
+    "S-6e37c58f05fb5c88",
+    "S-a43a1af456113f5d",
+    "S-45496f93e428e25f"
+   ],
+   "finding": "Only the ARX30 on SERVAL C-UAV has a contract (December 2024; deliveries from 2028); ARX20 shown on an unmanned ground vehicle demonstrator; ARX25 without any customer or test information.",
+   "status": "geprüft mit Beleg (ARX20/ARX25 ohne Auftragsbeleg)"
+  },
+  {
+   "topic": "thl",
+   "search_terms": "THL20 THL30 KNDS helicopter turret order; Tiger retrofit; India LCH",
+   "source_ids": [
+    "S-6e26579fbf388dc1",
+    "S-1fb6bc3d36a3ffa1",
+    "S-92d4e0a75a36b0f2",
+    "S-804fa628e354cfad"
+   ],
+   "finding": "THL30 produced 2003-2014 (136 units) and used in operations; THL20 qualified on several helicopters with India order of 126 turrets (Sep 2026, media). Medium-calibre cannons listed separately in the KNDS catalogue were not covered.",
+   "status": "geprüft mit Beleg"
+  }
+ ]
+}
