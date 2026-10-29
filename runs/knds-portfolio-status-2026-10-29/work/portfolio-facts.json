@@ -31,8 +31,15 @@
     "P-SA-005",
     "P-SA-006",
     "P-SA-007",
-    "P-SA-008",
-    "P-SA-009"
+    "P-SA-008"
+   ],
+   "sections": [
+    {
+     "label": "Related variant LEOPARD 2 A7A1 (Trophy), not A7V status",
+     "claim_ids": [
+      "P-SA-009"
+     ]
+    }
    ]
   },
   {
@@ -69,7 +76,7 @@
    "id": "puma",
    "label": "PUMA",
    "short_label": "PUMA",
-   "domain": "Infantry fighting vehicles and wheeled vehicles",
+   "domain": "Infantry fighting and wheeled vehicles",
    "claim_ids": [
     "P-03",
     "P-SA-023",
@@ -83,7 +90,7 @@
    "id": "boxer",
    "label": "BOXER RCT30",
    "short_label": "BOXER RCT30",
-   "domain": "Infantry fighting vehicles and wheeled vehicles",
+   "domain": "Infantry fighting and wheeled vehicles",
    "claim_ids": [
     "P-04",
     "P-SA-028",
@@ -98,7 +105,7 @@
    "id": "griffon",
    "label": "GRIFFON",
    "short_label": "GRIFFON",
-   "domain": "Infantry fighting vehicles and wheeled vehicles",
+   "domain": "Infantry fighting and wheeled vehicles",
    "claim_ids": [
     "P-05",
     "P-SA-034",
@@ -112,7 +119,7 @@
    "id": "jaguar",
    "label": "JAGUAR",
    "short_label": "JAGUAR",
-   "domain": "Infantry fighting vehicles and wheeled vehicles",
+   "domain": "Infantry fighting and wheeled vehicles",
    "claim_ids": [
     "P-SA-039",
     "P-SA-040",
@@ -125,7 +132,7 @@
    "id": "serval",
    "label": "SERVAL",
    "short_label": "SERVAL",
-   "domain": "Infantry fighting vehicles and wheeled vehicles",
+   "domain": "Infantry fighting and wheeled vehicles",
    "claim_ids": [
     "P-SA-044",
     "P-SA-045",
@@ -138,7 +145,7 @@
    "id": "vbci",
    "label": "VBCI",
    "short_label": "VBCI",
-   "domain": "Infantry fighting vehicles and wheeled vehicles",
+   "domain": "Infantry fighting and wheeled vehicles",
    "claim_ids": [
     "P-SA-049",
     "P-SA-050",
@@ -150,7 +157,7 @@
    "id": "fennek",
    "label": "FENNEK",
    "short_label": "FENNEK",
-   "domain": "Infantry fighting vehicles and wheeled vehicles",
+   "domain": "Infantry fighting and wheeled vehicles",
    "claim_ids": [
     "P-11",
     "P-SA-053",
@@ -161,21 +168,28 @@
    "id": "dingo",
    "label": "DINGO",
    "short_label": "DINGO",
-   "domain": "Infantry fighting vehicles and wheeled vehicles",
+   "domain": "Infantry fighting and wheeled vehicles",
    "claim_ids": [
     "P-11",
     "P-SA-055",
     "P-SA-056",
-    "P-SA-057",
-    "P-SA-058",
-    "P-SA-059"
+    "P-SA-057"
+   ],
+   "sections": [
+    {
+     "label": "Dingo 3 / designation overlap (variant not attributed to the Dingo 2 A4.1 status)",
+     "claim_ids": [
+      "P-SA-058",
+      "P-SA-059"
+     ]
+    }
    ]
   },
   {
    "id": "mungo",
    "label": "MUNGO",
    "short_label": "MUNGO",
-   "domain": "Infantry fighting vehicles and wheeled vehicles",
+   "domain": "Infantry fighting and wheeled vehicles",
    "claim_ids": [
     "P-11",
     "P-SA-060",
@@ -186,7 +200,7 @@
    "id": "gff4",
    "label": "GFF4",
    "short_label": "GFF4",
-   "domain": "Infantry fighting vehicles and wheeled vehicles",
+   "domain": "Infantry fighting and wheeled vehicles",
    "claim_ids": [
     "P-11",
     "P-SA-062",
@@ -312,35 +326,46 @@
    "claim_ids": [
     "P-09",
     "P-07",
-    "P-SB-013",
     "P-SB-035",
     "P-SB-036",
     "P-SB-037",
-    "P-SB-038",
-    "P-SB-039",
     "P-SB-040"
    ],
    "sections": [
     {
      "label": "AGM in the RCH 155 (see row rch155 for delivery status)",
      "claim_ids": [
-      "P-07",
-      "P-SB-013"
+      "P-07"
+     ]
+    },
+    {
+     "label": "AGM on Piranha IV for Switzerland (DONAR 10x10; see row donar-10x10)",
+     "claim_ids": [
+      "P-SB-038",
+      "P-SB-039"
      ]
     }
    ]
   },
   {
    "id": "donar",
-   "label": "DONAR",
-   "short_label": "DONAR",
+   "label": "DONAR (tracked, on ASCOD)",
+   "short_label": "DONAR (ASCOD)",
    "domain": "Artillery and rockets",
    "claim_ids": [
     "P-09",
-    "P-SB-038",
-    "P-SB-039",
     "P-SB-041",
     "P-SB-042"
+   ]
+  },
+  {
+   "id": "donar-10x10",
+   "label": "DONAR 10x10 (AGM on Piranha IV, Switzerland)",
+   "short_label": "DONAR 10x10",
+   "domain": "Artillery and rockets",
+   "claim_ids": [
+    "P-SB-038",
+    "P-SB-039"
    ]
   },
   {
@@ -350,12 +375,24 @@
    "domain": "Air defence and armament",
    "claim_ids": [
     "P-10",
-    "P-SB-043",
     "P-SB-044",
-    "P-SB-045",
-    "P-SB-046",
-    "P-SB-047",
-    "P-SB-048"
+    "P-SB-046"
+   ],
+   "sections": [
+    {
+     "label": "Naval RAPIDFire, ammunition and component context (not RapidFire Land status)",
+     "claim_ids": [
+      "P-SB-043",
+      "P-SB-047",
+      "P-SB-048"
+     ]
+    },
+    {
+     "label": "Conflicting report on number of land systems (not established)",
+     "claim_ids": [
+      "P-SB-045"
+     ]
+    }
    ]
   },
   {
@@ -366,17 +403,16 @@
    "claim_ids": [
     "P-11",
     "P-SB-049",
-    "P-SB-050",
-    "P-SB-051",
-    "P-SB-052",
     "P-SB-053",
     "P-SB-054"
    ],
    "sections": [
     {
-     "label": "Ammunition (Rheinmetall, not KNDS vehicle production)",
+     "label": "Context: transferred Bundeswehr Gepard and Rheinmetall ammunition (KNDS role maintenance/repair, not production)",
      "claim_ids": [
-      "P-SB-051"
+      "P-SB-050",
+      "P-SB-051",
+      "P-SB-052"
      ]
     }
    ]
@@ -478,7 +514,6 @@
    "domain": "Ammunition",
    "claim_ids": [
     "P-14",
-    "P-SC-018",
     "P-SC-019",
     "P-SC-028",
     "P-SC-029",
@@ -493,7 +528,6 @@
    "domain": "Ammunition",
    "claim_ids": [
     "P-14",
-    "P-SC-018",
     "P-SC-019",
     "P-SC-024",
     "P-SC-025",
@@ -508,7 +542,6 @@
    "domain": "Ammunition",
    "claim_ids": [
     "P-14",
-    "P-SC-018",
     "P-SC-019",
     "P-SC-032",
     "P-SC-033",
@@ -542,10 +575,17 @@
     "P-SC-037",
     "P-SC-038",
     "P-SC-039",
-    "P-SC-040",
     "P-SC-041",
     "P-SC-042",
     "P-SC-043"
+   ],
+   "sections": [
+    {
+     "label": "NERVA family context (type split not stated)",
+     "claim_ids": [
+      "P-SC-040"
+     ]
+    }
    ]
   },
   {
@@ -556,11 +596,18 @@
    "claim_ids": [
     "P-16",
     "P-SC-037",
-    "P-SC-040",
     "P-SC-043",
     "P-SC-044",
     "P-SC-045",
     "P-SC-046"
+   ],
+   "sections": [
+    {
+     "label": "NERVA family context (type split not stated)",
+     "claim_ids": [
+      "P-SC-040"
+     ]
+    }
    ]
   },
   {
@@ -571,8 +618,15 @@
    "claim_ids": [
     "P-16",
     "P-SC-047",
-    "P-SC-048",
-    "P-SC-049"
+    "P-SC-048"
+   ],
+   "sections": [
+    {
+     "label": "Context (not CENTURIO-specific)",
+     "claim_ids": [
+      "P-SC-049"
+     ]
+    }
    ]
   },
   {
@@ -582,9 +636,16 @@
    "domain": "Robotics",
    "claim_ids": [
     "P-16",
-    "P-SC-035",
     "P-SC-050",
     "P-SC-051"
+   ],
+   "sections": [
+    {
+     "label": "Context (MT-10 integration, not ULTRO status)",
+     "claim_ids": [
+      "P-SC-035"
+     ]
+    }
    ]
   },
   {
@@ -610,12 +671,19 @@
    "domain": "Bridges and engineering equipment",
    "claim_ids": [
     "P-18",
-    "P-SD-010",
     "P-SD-011",
     "P-SD-012",
     "P-SD-013",
     "P-SD-014",
     "P-SD-015"
+   ],
+   "sections": [
+    {
+     "label": "Joint DSB and MGB statements",
+     "claim_ids": [
+      "P-SD-010"
+     ]
+    }
    ]
   },
   {
@@ -627,8 +695,16 @@
     "P-18",
     "P-SD-013",
     "P-SD-020",
-    "P-SD-021",
     "P-SD-015"
+   ],
+   "sections": [
+    {
+     "label": "Joint DSB and MGB statements",
+     "claim_ids": [
+      "P-SD-021",
+      "P-SD-010"
+     ]
+    }
    ]
   },
   {
@@ -660,6 +736,15 @@
     "P-SD-040",
     "P-SD-041",
     "P-SD-042"
+   ],
+   "sections": [
+    {
+     "label": "Programme-level evidence (D-LBO as a whole, not KNDS-specific)",
+     "claim_ids": [
+      "P-SD-041",
+      "P-SD-042"
+     ]
+    }
    ]
   },
   {
@@ -678,9 +763,21 @@
    "short_label": "TGM48 gas mask",
    "domain": "Digital systems and equipment",
    "claim_ids": [
-    "P-SD-050",
-    "P-SD-051",
-    "P-SD-052"
+    "P-SD-051"
+   ],
+   "sections": [
+    {
+     "label": "Company-level CBRN context",
+     "claim_ids": [
+      "P-SD-050"
+     ]
+    },
+    {
+     "label": "Predecessor-company evidence (NBC-Sys, 2021)",
+     "claim_ids": [
+      "P-SD-052"
+     ]
+    }
    ]
   },
   {
@@ -689,8 +786,15 @@
    "short_label": "ESSENTIAL DECON",
    "domain": "Digital systems and equipment",
    "claim_ids": [
-    "P-SD-050",
     "P-SD-053"
+   ],
+   "sections": [
+    {
+     "label": "Company-level CBRN context",
+     "claim_ids": [
+      "P-SD-050"
+     ]
+    }
    ]
   },
   {
@@ -715,7 +819,7 @@
   },
   {
    "id": "training-puma-agsp",
-   "label": "Puma AGSP firing and combat training system",
+   "label": "Puma AGSP firing and combat training system (PSM, KNDS-Rheinmetall joint business; developed by Rheinmetall)",
    "short_label": "Puma AGSP",
    "domain": "Services and training",
    "claim_ids": [
@@ -887,7 +991,7 @@
    ],
    "evidence": "Paraphrase: Janes, 5 Dec 2024: first Trophy-equipped Leopard 2 (2A7A1 version) rolled out on 29 October; delivery to the German Army planned for mid-2025, then 16 more by end of 2025; testing by industry and WTD 41.",
    "location": "Paragraph 4",
-   "uncertainty": "Variant-specific (A7A1); the delivery dates are planned figures from December 2024 and are not confirmed in sources read.",
+   "uncertainty": "Variant-specific (LEOPARD 2 A7A1 with Trophy), not LEOPARD 2 A7V status; the delivery dates are planned figures from December 2024 and are not confirmed in sources read.",
    "event_date": "2024-10-29",
    "event_status": "rolled out / delivery planned",
    "proposed_depth": "A"
@@ -1013,8 +1117,8 @@
    "source_ids": [
     "S-f78bf9f5633dc0c2"
    ],
-   "evidence": "Paraphrase: Modernisation under the SCORPION programme; designated XLR after modernisation.",
-   "location": "LECLERC XLR introduction",
+   "evidence": "Excerpt: \"Through its modernization as part of the SCORPION program, the LECLERC tank is modernized ... After modernization, the tank is known as the LECLERC XLR.\"",
+   "location": "LECLERC XLR product page, introductory paragraph 2",
    "uncertainty": "No specific delivery date for XLR was inferred from the product description."
   },
   {
@@ -1111,9 +1215,9 @@
    ],
    "evidence": "Paraphrase: Defense News, 15 Jun 2026: 'now being manufactured by KNDS France and in the process of being delivered to the tank units' (Gen. Olivier Coquet); upgraded Leclerc XLR shown at Eurosatory on 14 June 2026.",
    "location": "Paragraphs 1-3",
-   "uncertainty": "Shows XLR tanks in army tank units; no XLR fleet count given.",
+   "uncertainty": "The article shows one Leclerc XLR with a drone cage at Eurosatory; only the cage (not the tank) is stated to be manufactured and delivered to tank units. It gives no XLR fleet count and is not a basis for XLR deliveries (see P-SA-016 to P-SA-020).",
    "event_date": "2026-06-14",
-   "event_status": "in service (army units)",
+   "event_status": "presented (Eurosatory 2026); add-on cage in production/delivery to tank units",
    "proposed_depth": "A"
   },
   {
@@ -1137,9 +1241,9 @@
    "source_ids": [
     "S-2190194daccd00d4"
    ],
-   "evidence": "Paraphrase: PUMA development and manufacturing under PSM; 30-mm automatic cannon and unmanned turret.",
-   "location": "Cutting-edge technologies combined; Product features / Equipment features",
-   "uncertainty": ""
+   "evidence": "Excerpt: \"KNDS develops and manufactures the PUMA infantry fighting vehicle together with Rheinmetall under the umbrella of PSM Projekt System & Management GmbH based in Kassel.\"; specifications list 'Armaments 30 mm (MK 30-2/ABM)'; \"Crewless, remote-operable turret with 30mm automatic cannon\"",
+   "location": "Section 'Cutting-edge technologies combined in a single product'; Product features (Specifications / Equipment features)",
+   "uncertainty": "Product page without date; it states no delivery, order or fleet status."
   },
   {
    "id": "P-SA-023",
@@ -1178,9 +1282,9 @@
    ],
    "evidence": "Paraphrase: 'Bis Ende 2025 haben die deutschen Streitkräfte insgesamt 350 Schützenpanzer-Puma (337 Schützenpanzer und 13 Fahrschulpanzer) des ersten Loses ... sowie 50 Schützenpanzer-Puma des zweiten Loses (Rüststand S1) beschafft.' Deliveries of the 200 start in 2028.",
    "location": "Paragraph 'Bis Ende 2025 ...'",
-   "uncertainty": "Procured (ordered/acquired) counts, not a delivery ledger for the second lot.",
+   "uncertainty": "hartpunkt says 'procured' (beschafft); Lot 1 vehicles are still being brought to S1 by industry. Counts are procurement counts, not a delivery ledger; delivery of Lot 2 only via P-SA-027.",
    "event_date": "2025-12-31",
-   "event_status": "delivered (Lot 1) / ordered (Lot 2, further 200)",
+   "event_status": "procured (Lot 1: 350; Lot 2: 50) / ordered (further 200, delivery from 2028 planned)",
    "proposed_depth": "A"
   },
   {
@@ -1325,14 +1429,14 @@
   },
   {
    "id": "P-05",
-   "statement": "KNDS France cites the production of GRIFFON and JAGUAR as well as SERVAL under the French SCORPION programme; the portfolio also includes VBCI.",
+   "statement": "According to KNDS France, it ensures under the French SCORPION programme the production of the GRIFFON and the JAGUAR with its partners Arquus and Thales and of the SERVAL with Texelis, and the modernisation of the LECLERC main battle tank.",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-3e48809a6efb1a20"
    ],
-   "evidence": "Paraphrase: SCORPION production of GRIFFON/JAGUAR and SERVAL; VBCI in the KNDS France portfolio.",
-   "location": "KNDS in France; Product portfolio",
-   "uncertainty": "Variants and current quantities are not determined from this overview."
+   "evidence": "Paraphrase (German page): 'KNDS France spielt die zentrale Rolle im SCORPION-Programm und gewährleistet die Produktion des GRIFFON und des JAGUAR mit seinen Partnern Arquus und Thales, des SERVAL mit Texelis und die Modernisierung des Kampfpanzers Leclerc.'",
+   "location": "Section 'KNDS in Frankreich', first paragraph",
+   "uncertainty": "Company page statement without date, variants or quantities; it does not document the current production status or deliveries. VBCI is not covered by this claim (it appears only in the page's history timeline); see P-SA-049."
   },
   {
    "id": "P-SA-034",
@@ -1479,14 +1583,14 @@
   },
   {
    "id": "P-SA-043",
-   "statement": "The CaMo programme covers Jaguar for Belgium and Luxembourg: Luxembourg acquires 38 Jaguar through the Belgian order, and the SCORPION consortium of KNDS France, Arquus and Thales builds the Jaguar.",
+   "statement": "According to the cited report, Luxembourg acquires 38 Jaguar (and 16 Griffon) vehicles through the Belgian CaMo order, and the SCORPION consortium of KNDS France, Arquus and Thales builds the Jaguar.",
    "kind": "Fakt",
    "source_ids": [
     "S-3b6ac7ad2710c1a9"
    ],
    "evidence": "Paraphrase: 'With 38 Jaguar and 16 Griffon vehicles, Luxembourg acquires SCORPION vehicles' via the Belgian order; Griffon and Jaguar produced by a GME of KNDS France, Arquus and Thales.",
    "location": "Paragraphs 2-3",
-   "uncertainty": "Order; Belgian Jaguar deliveries not found in sources read.",
+   "uncertainty": "Order only. The Belgian Jaguar order itself is not covered by this source, and Belgian Jaguar deliveries were not found in sources read.",
    "event_date": "2025-12-30",
    "event_status": "ordered (export via Belgium)",
    "proposed_depth": "A"
@@ -1593,12 +1697,12 @@
   },
   {
    "id": "P-SA-050",
-   "statement": "Army Technology reports that the French DGA ordered 630 VBCI in total (up to 550 infantry fighting vehicles and command post vehicles planned in two versions), that the first three production vehicles were delivered in May 2008, and that deliveries began in mid-2009.",
+   "statement": "Army Technology reports that the French DGA planned up to 550 VCI infantry fighting vehicles and 150 VPC command post vehicles (700 conditional) in two versions, that 630 VBCI in total were ordered by September 2009, that the first three production vehicles were delivered in May 2008, and that deliveries began in mid-2009.",
    "kind": "Fakt",
    "source_ids": [
     "S-23ce523685ff5782"
    ],
-   "evidence": "Paraphrase: Order total reached 630 in September 2009; first three production vehicles delivered May 2008; 'Deliveries began in mid-2009'; 200 vehicles delivered by June 2010.",
+   "evidence": "Paraphrase: Up to 550 VCI and 150 VPC (700 conditional) planned; order total reached 630 in September 2009; first three production vehicles delivered May 2008; 'Deliveries began in mid-2009'; 200 vehicles delivered by June 2010.",
    "location": "Project overview paragraphs 2-4",
    "uncertainty": "Undated project page; the end of French production is not stated in the text read (page forecast 2015).",
    "event_date": "2009",
@@ -1676,17 +1780,32 @@
   },
   {
    "id": "P-SA-055",
-   "statement": "According to KNDS, it was commissioned by BAAINBw in November 2023 under a framework agreement for 50 DINGO 2 (A4 variant) protected command and special-function vehicles to replace vehicles transferred to Ukraine; KNDS states that more than 1,200 DINGO have been delivered to ten countries.",
+   "statement": "According to KNDS (press release of 6 December 2023), KNDS was commissioned by BAAINBw under a framework agreement for 50 DINGO 2 (A4 variant) protected command and special-function vehicles to replace vehicles transferred to Ukraine, and KNDS states that more than 1,200 DINGO have been delivered to ten countries; Janes reports that the contract was signed on 29 November 2023.",
    "kind": "Herstellerangabe",
    "source_ids": [
-    "S-5ddece3621c9c23c"
+    "S-5ddece3621c9c23c",
+    "S-1a4e06392b187ffb"
    ],
    "evidence": "Paraphrase: 'The resupply project encompasses a framework agreement for 50 DINGO 2 protected command and special-function vehicles (GFF) of the A4 variant'; 'With over 1,200 vehicles delivered to ten countries'.",
    "location": "Paragraphs 1-3",
-   "uncertainty": "Press release is undated in the text read; Janes places the signing on 29 November 2023.",
+   "uncertainty": "The KNDS release carries no signing date; the signing date of 29 November 2023 rests on Janes (announced on 30 November, signed 'the day before'). Janes calls the vehicle Dingo 2 A4.1.",
    "event_date": "2023-11-29",
    "event_status": "ordered",
-   "proposed_depth": "A"
+   "proposed_depth": "A",
+   "evidence_items": [
+    {
+     "source_id": "S-5ddece3621c9c23c",
+     "text": "Paraphrase: 'The resupply project encompasses a framework agreement for 50 DINGO 2 protected command and special-function vehicles (GFF) of the A4 variant'; 'With over 1,200 vehicles delivered to ten countries'.",
+     "mode": "Paraphrase",
+     "location": "KNDS press release dated 06.12.2023, paragraphs 1-3"
+    },
+    {
+     "source_id": "S-1a4e06392b187ffb",
+     "text": "Paraphrase: BAAINBw and KNDS 'announced on 30 November that they had signed a contract for 50 Dingo 2 A4.1 armoured vehicles the day before'.",
+     "mode": "Paraphrase",
+     "location": "Janes, paragraph 1"
+    }
+   ]
   },
   {
    "id": "P-SA-056",
@@ -1697,7 +1816,7 @@
    ],
    "evidence": "Paraphrase: 'The vehicles are scheduled to be delivered by the end of 2026.'",
    "location": "Paragraph 2",
-   "uncertainty": "Planned delivery date; delivery progress not reported in sources read.",
+   "uncertainty": "Planned delivery date for Dingo 2 A4.1; delivery progress not reported in sources read. Janes names Dingo 2 A4.1, Shephard (P-SA-058) names Dingo 3 for the same order; the designation is unresolved.",
    "event_date": "2026-12-31",
    "event_status": "planned (delivery)",
    "proposed_depth": "A"
@@ -1711,7 +1830,7 @@
    ],
    "evidence": "Paraphrase: second lot of 65 called off; 'Während das erste Los bis Ende 2026 ausgeliefert werden soll. Beginnt die Auslieferung des zweiten Loses ab 2027'; 'Aktuell sind mehr als 500 Dingos in unterschiedlichen Varianten in Nutzung.'",
    "location": "Paragraphs 1-2",
-   "uncertainty": "Contract date inferred from publication on 19 Dec 2024 ('heute'); delivery dates are planned.",
+   "uncertainty": "Variant: Dingo 2 A4.1 (not Dingo 3). Contract date inferred from publication on 19 Dec 2024 ('heute'); delivery dates are planned; the '>500 in use' figure is a family-level fleet statement.",
    "event_date": "2024-12-19",
    "event_status": "ordered (65) / in use (>500 fleet)",
    "proposed_depth": "A"
@@ -1725,7 +1844,7 @@
    ],
    "evidence": "Paraphrase: 'KNDS-Deutschland has confirmed that its latest Dingo 3 4×4 PPV has entered production for the German Army, with first deliveries scheduled to take place late in 2025'; initial order 50, second contract 65.",
    "location": "Paragraphs 2-3",
-   "uncertainty": "Contract naming differs between sources (Dingo 2 A4.1 vs Dingo 3); first delivery was planned, not confirmed, in this report.",
+   "uncertainty": "Variant: Dingo 3 4x4 per Shephard; contract naming differs between sources (Dingo 2 A4.1 vs Dingo 3), so it is not attributed to the Dingo 2 A4.1 status; first delivery was planned, not confirmed, in this report.",
    "event_date": "2025-07-03",
    "event_status": "production started / deliveries planned",
    "proposed_depth": "A"
@@ -1892,7 +2011,7 @@
    ],
    "evidence": "Paraphrase: KNDS multiplied the CAESAR production rate by three, 'today, 6 CAESAR are produced each month'; Ukraine 'has become the 10th user of the CAESAR'; '78 systems are currently under production this year' for Ukraine; 'more than 600 CAESAR are now in service or under contract'.",
    "location": "Press release 'KNDS offers the complete range of proven artillery systems', introductory paragraphs and the paragraph beginning 'Ukraine has become the 10th user of the CAESAR'",
-   "uncertainty": "Rates and numbers are as of June 2024 and not variant-specific (CAESAR family, including MkII announcement); the 78 systems for Ukraine are a 2024 production statement, not a delivery count.",
+   "uncertainty": "Rates and numbers are as of June 2024 and the CAESAR variant is not named (CAESAR family, incl. MkII announcement); not variant-specific. The 78 systems for Ukraine are a 2024 production statement, not a delivery count.",
    "proposed_depth": "A",
    "event_date": "2024-06-18",
    "event_status": "laufend"
@@ -1914,13 +2033,13 @@
   {
    "id": "P-SB-003",
    "statement": "Lyon Capitale reports (13 July 2026) that the KNDS France plant in Roanne now produces CAESAR howitzers at a monthly rate of ten (against two per month before 2022), that production time has been halved from 30 to 15 months, and that more than 400 CAESAR equipped the armies of fourteen countries at the end of 2025; the site is also preparing the series ramp-up of the CAESAR Mk 2.",
-   "kind": "Herstellerangabe",
+   "kind": "Fakt",
    "source_ids": [
     "S-06421b50be671aa0"
    ],
    "evidence": "Paraphrase: Roanne plant director quoted; 'le canon Caesar ... atteint aujourd'hui un rythme mensuel de dix'; production time from 30 to 15 months; 'Fin 2025, plus de 400 exemplaires équipaient les armées de quatorze pays'; 'Le site prépare également la montée en série du Caesar Mk 2'.",
    "location": "Article 'Loire : l'usine KNDS de Roanne, symbole du réarmement', paragraphs on Nextfab / production rates and on SCORPION/CAESAR",
-   "uncertainty": "The article does not name the origin of each figure; they are treated as manufacturer-side information because the plant director is quoted. Variant (6x6 Mk I versus Mk 2) not stated for the monthly rate.",
+   "uncertainty": "Media report; the article does not attribute the figures to the plant or KNDS (the plant director is quoted only for one remark) and does not name the origin of each figure. The variant (6x6 Mk I versus Mk 2) is not stated for the monthly rate; the article mentions the Mk 2 series ramp-up only as being prepared.",
    "proposed_depth": "A",
    "event_date": "2026-07-13",
    "event_status": "laufend"
@@ -1934,7 +2053,7 @@
    ],
    "evidence": "Paraphrase: order for 18 CAESAR formalised on 16 June 2026 at Eurosatory with ADS Sdn Bhd; 'Malaysia thus becomes the 15th country'; '800 systems already ordered or delivered worldwide'.",
    "location": "Press release 'Malaysia becomes the 15th CAESAR customer country ...', paragraphs 1-4",
-   "uncertainty": "An order is not evidence of delivery; the release does not state the CAESAR variant ordered or delivery dates; the 800 figure combines orders and deliveries.",
+   "uncertainty": "An order is not evidence of delivery; the release does not state the CAESAR variant ordered or delivery dates; the 800 figure combines orders and deliveries across variants.",
    "proposed_depth": "A",
    "event_date": "2026-06-16",
    "event_status": "beauftragt"
@@ -1962,7 +2081,7 @@
    ],
    "evidence": "Paraphrase: Macron said all CAESAR produced this year would go to Ukraine; about 150 in two variants; at least 85 delivered by end of last year (66 Mark I, 19 8x8 from Denmark); French industry capacity 8-12 per month.",
    "location": "Defence24 article 'Duże wzmocnienie ukraińskiej artylerii z Francji. Cała produkcja nad Dniepr', paragraphs 1-2 and 'ukraiński' section",
-   "uncertainty": "Polish trade-media account of a political statement; the date of Macron's statement and the source of the 85 figure are not given; the 150 figure is a plan.",
+   "uncertainty": "Polish trade-media account of a political statement; mixes variants: 66 Mark I (6x6) and 19 8x8 versions (Denmark) of the 85; the date of Macron's statement and the source of the 85 figure are not given; the 150 figure is a plan.",
    "proposed_depth": "A",
    "event_date": "2025-05-22",
    "event_status": "berichtet"
@@ -2060,10 +2179,10 @@
    ],
    "evidence": "Paraphrase: 'Pistorius has confirmed that Ukraine is receiving the RCH-155 wheeled howitzer'; Bild: 'only training ... in Germany had been officially confirmed, while their actual presence in the combat zone has not been disclosed'.",
    "location": "Article 'German defence minister confirms delivery of latest RCH-155 howitzers to Ukraine', paragraphs 1-4",
-   "uncertainty": "Minister's remark is ambiguous about timing and number of vehicles delivered; combat use is explicitly not confirmed by the article.",
+   "uncertainty": "Minister's remark is ambiguous about timing and number of vehicles handed over (the quote says only that the first vehicle destined for Ukraine stood in Kassel about two years earlier); Bild states that combat use is not disclosed. Not established as confirmed delivery or operation.",
    "proposed_depth": "A",
    "event_date": "2026-08-04",
-   "event_status": "durchgeführt"
+   "event_status": "delivery stated by minister, timing/number unclear; Ukrainian use unconfirmed"
   },
   {
    "id": "P-SB-014",
@@ -2222,14 +2341,14 @@
   },
   {
    "id": "P-SB-024",
-   "statement": "According to KNDS (rollout release of 19 November 2025), the first PzH 2000 for the Bundeswehr was rolled out at the Munich site; the procurement of 22 PzH 2000 (contract of 2023) replaces artillery delivered to Ukraine, PzH 2000 will continue to be manufactured for Ukraine, and the first PzH 2000 are to be delivered to the German Armed Forces starting in May 2026.",
+   "statement": "According to KNDS (rollout release of 19 November 2025), a PzH 2000 for the Bundeswehr was rolled out at the Munich site; the procurement of 22 PzH 2000 (contract of 2023) replaces artillery delivered to Ukraine, PzH 2000 will continue to be manufactured for Ukraine, and the first PzH 2000 are to be delivered to the German Armed Forces starting in May 2026.",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-cd4d8a27a37624e4"
    ],
    "evidence": "Excerpt: 'The first PzH 2000 self-propelled howitzers will be delivered to the German Armed Forces starting in May 2026.' Paraphrase: 22 PzH 2000 replace systems delivered to Ukraine (contract 2023); 'PzH 2000s will continue to be manufactured for Ukraine'.",
    "location": "Press release 'Roll-out: LEOPARD 2A8 and PzH 2000 Systems', paragraphs 1, 4 and 8",
-   "uncertainty": "Roll-out and planned start of delivery; no handover after May 2026 was found in the sources read (see gaps).",
+   "uncertainty": "Roll-out done; delivery from May 2026 is a plan. No handover after May 2026 was found in the sources read (see gaps).",
    "proposed_depth": "A",
    "event_date": "2025-11-19",
    "event_status": "durchgeführt"
@@ -2264,12 +2383,12 @@
   },
   {
    "id": "P-SB-027",
-   "statement": "European Security & Defence reported (14 January 2025) that Defence Minister Pistorius said Germany had handed Ukraine 14 PzH 2000 from Bundeswehr stocks and financed 11 more from industrial stocks, and that another 18 newly built PzH 2000 are to follow by mid-2027, for a total of 54.",
+   "statement": "European Security & Defence reported (14 January 2025) that Defence Minister Pistorius said Germany had handed Ukraine 14 PzH 2000 from Bundeswehr stocks and financed 11 more from industrial stocks, and that another 18 newly built PzH 2000 are to follow by mid-2027, giving a total of 54 that, per the article, also includes 11 systems from other countries (43 provided by Germany).",
    "kind": "Fakt",
    "source_ids": [
     "S-b87afeb6be3f399c"
    ],
-   "evidence": "Paraphrase: 'Germany has handed Ukraine 14 PzH 2000s from Bundeswehr stocks and financed 11 more from industrial stocks ... Another 18 newly built PzH 2000s are to follow by mid-2027, giving a total of 54'.",
+   "evidence": "Paraphrase: 'Germany has handed Ukraine 14 PzH 2000s from Bundeswehr stocks and financed 11 more from industrial stocks ... Another 18 newly built PzH 2000s are to follow by mid-2027'; the total of 54 is given in addition to 11 SPHs from other countries.",
    "location": "Article 'First RCH 155 wheeled SPH for Ukraine rolled out in Kassel', paragraph 'In total, Ukraine will receive enough systems ...'",
    "uncertainty": "Minister statement relayed by trade media; the 18 newly built systems are a plan.",
    "proposed_depth": "A",
@@ -2292,14 +2411,14 @@
   },
   {
    "id": "P-SB-029",
-   "statement": "The overview 'Beschaffungsvorhaben des Heeres' (Sicherheit & Verteidigung) lists the PzH 2000 A4 project with 22 ordered, 97 in Bundeswehr inventory, delivery planned 2026-2030 and a delay of about one year (originally from 2025), and records the roll-out of 19 November 2025 with KNDS stating that delivery is to begin in May 2026.",
+   "statement": "The overview 'Beschaffungsvorhaben des Heeres' (Sicherheit & Verteidigung) lists the PzH 2000 A4 project with 22 ordered, a field 'Bestand: 97' that the page does not explain, delivery planned 2026-2030 and a delay of about one year (originally from 2025), and records the roll-out of 19 November 2025 with KNDS stating that delivery is to begin in May 2026.",
    "kind": "Fakt",
    "source_ids": [
     "S-0df7d1e4993cf9cd"
    ],
-   "evidence": "Paraphrase: Projektstatus 'bestellt'; Bestand 97; Bestellt 22; Auslieferung 2026-2030; Verzögerung ca. 1 Jahr; last project-history entry 19 November 2025.",
+   "evidence": "Paraphrase: Projektstatus 'bestellt'; field Bestand 97 (not explained on the page); Bestellt 22; Auslieferung 2026-2030; Verzögerung ca. 1 Jahr; last project-history entry 19 November 2025.",
    "location": "Section 'PzH 2000 A4' (key data and Projektverlauf)",
-   "uncertainty": "Secondary compilation page (modified 2026-10-22); its project history contains no first-handover entry after the roll-out.",
+   "uncertainty": "Secondary compilation page (modified 2026-10-22). The 'Bestand: 97' field is not explained (probably older PzH 2000) and is not evidence of delivered A4 vehicles; the page shows no A4 handover and its project history has no first-handover entry after the roll-out.",
    "proposed_depth": "A",
    "event_date": "2025-11-19",
    "event_status": "geplant"
@@ -2465,7 +2584,7 @@
    ],
    "evidence": "Paraphrase: 'DONAR combines the fire power and range of the automatic and remote-controlled Artillery Gun Module (AGM) with the protection and mobility of the mission-tested GDELS ASCOD infantry fighting vehicle.'",
    "location": "Product page 'DONAR', introductory paragraphs",
-   "uncertainty": "Undated product page; no customer, test or delivery information on the page; the ASCOD (tracked) DONAR differs from the Swiss DONAR 10x10 on Piranha IV.",
+   "uncertainty": "Undated product page for the tracked ASCOD-based DONAR; no customer, test or delivery information on the page; differs from the Swiss DONAR 10x10 on Piranha IV (own row donar-10x10).",
    "proposed_depth": "A",
    "event_status": "angeboten"
   },
@@ -2491,7 +2610,7 @@
    ],
    "evidence": "Paraphrase: 'A production contract for 48 units was awarded by the DGA ... the first two systems are now operational aboard the new-generation replenishment ships'; '14 RAPIDFire units have already been firmly ordered'; 'officially qualified in early 2025'.",
    "location": "Press release 'Thales and KNDS France unveil RAPIDFire Land ...', paragraphs 1-2, 4-5",
-   "uncertainty": "Describes the naval RAPIDFire; operational status refers to the naval installation, not the land variant. Page carries no date; announcement date taken from the Janes report.",
+   "uncertainty": "Context for RapidFire Land: describes the naval RAPIDFire; operational status refers to the naval installation, not the land variant. Page carries no date; announcement date taken from the Janes report.",
    "proposed_depth": "A",
    "event_date": "2025-06-16",
    "event_status": "laufend"
@@ -2512,17 +2631,17 @@
   },
   {
    "id": "P-SB-045",
-   "statement": "Janes reported (17 June 2025) that Thales and KNDS France are developing two configurations of the land-based RAPIDFire (a semi-mobile 20 ft platform for site protection and a vehicle-mounted 20 ft platform), planned after discussions with the French Air and Space Force on protecting air bases, and that the DGA ordered 48 'land-based' versions according to Thales.",
+   "statement": "Janes reported (17 June 2025) that Thales and KNDS France are developing two configurations of the land-based RAPIDFire (a semi-mobile 20 ft platform for site protection and a vehicle-mounted 20 ft platform) after discussions with the French Air and Space Force, and, citing a Thales release, that the DGA ordered 48 'land-based' versions; the KNDS/Thales release and EDR instead describe 48 RAPIDFire in total, 14 firmly ordered for the Navy.",
    "kind": "Fakt",
    "source_ids": [
     "S-fb0c3ce8dc87caae"
    ],
-   "evidence": "Paraphrase: 'The DGA ... has ordered 48 land-based versions of the 40 mm RapidFire system, Thales announced in a press release on 16 June'; two configurations; qualified in early 2025.",
+   "evidence": "Paraphrase: 'The DGA ... has ordered 48 land-based versions of the 40 mm RapidFire system, Thales announced in a press release on 16 June' (Janes); two land configurations; qualified in early 2025. Conflicting: KNDS/Thales release (P-SB-043/-044) and EDR (P-SB-046): 48 in total, 14 firmly ordered for the Navy, land version in development.",
    "location": "Article 'Paris Air Show 2025: France orders land-based version of 40 mm RAPIDFire system', paragraphs 1-4",
-   "uncertainty": "Janes' count of 48 land-based systems conflicts with the KNDS/Thales release (48 units in total, 14 firmly ordered for the Navy); the split between naval and land units is unresolved.",
+   "uncertainty": "Unresolved source conflict: a land order of 48 systems is not established. Not usable as land order or stage basis; see P-SB-044 and P-SB-046 for the land variant.",
    "proposed_depth": "A",
    "event_date": "2025-06-17",
-   "event_status": "beauftragt"
+   "event_status": "conflicting reports; land order not established"
   },
   {
    "id": "P-SB-046",
@@ -2547,7 +2666,7 @@
    ],
    "evidence": "Paraphrase: 25,000 rounds; first annual deliveries 18,000 training rounds; 'The RAPIDFire turret in service on the Jacques Chevallier'; 'The land-based version of RAPIDFire, showcased for the first time this year'.",
    "location": "Article 'France orders 40mm ammunition rounds for Navy and Army', paragraphs 1-6",
-   "uncertainty": "Ammunition order, not an order of land systems; ammunition deliveries from 2026 are planned.",
+   "uncertainty": "Context for RapidFire Land: ammunition order, not an order of land systems; ammunition deliveries from 2026 are planned.",
    "proposed_depth": "A",
    "event_date": "2025-06-20",
    "event_status": "beauftragt"
@@ -2561,7 +2680,7 @@
    ],
    "evidence": "Excerpt: 'remote controlled turret including gyro-stabilised 40 CTAS (Cased Telescoped Armament System) - in-service on French Jaguar and UK Ajax and contracted on Belgium Scorpion armoured vehicles'.",
    "location": "Product page 'RapidFire Land', section listing system components",
-   "uncertainty": "Component status of the 40 CTAS on other vehicles; does not show that a complete RapidFire Land configuration has entered service. Undated page.",
+   "uncertainty": "Context for RapidFire Land: component status of the 40 CTAS on other vehicles; does not show that a complete RapidFire Land configuration has entered service. Undated page.",
    "proposed_depth": "A",
    "event_status": "angeboten"
   },
@@ -2588,7 +2707,7 @@
    ],
    "evidence": "Excerpt: 'Until today, the Federal Republic of Germany has handed over a total of 55 Gepard anti-aircraft tanks to Ukraine, which had been decommissioned by the Bundeswehr.'",
    "location": "Press release 'Rheinmetall delivers 35mm Gepard ammunition to Ukraine', paragraph 3",
-   "uncertainty": "Statement by Rheinmetall (ammunition supplier), not by the Federal Government or KNDS; later reports give a higher total (see P-SB-052).",
+   "uncertainty": "Context only: statement by Rheinmetall (ammunition supplier), not by the Federal Government or KNDS; refers to Bundeswehr vehicles transferred to Ukraine. KNDS manufacturer/production role is not documented here (KNDS role per P-SB-049 is maintenance/repair). Later reports give a higher total (see P-SB-052).",
    "proposed_depth": "A",
    "event_date": "2025-01-06",
    "event_status": "abgeschlossen"
@@ -2602,7 +2721,7 @@
    ],
    "evidence": "Paraphrase: 'The new order comprises 180,000 rounds of HEI-T ammunition ... booked in December of 2024'; 'Already in February of 2023, Rheinmetall received an order to supply 300,000 rounds'.",
    "location": "Press release 'Rheinmetall delivers 35mm Gepard ammunition to Ukraine', paragraphs 1-2",
-   "uncertainty": "Ammunition order by a company other than KNDS; keeps ammunition separate from vehicle status; delivery of the 180,000 rounds is not confirmed.",
+   "uncertainty": "Context only: ammunition order by a company other than KNDS; keeps ammunition separate from vehicle status; KNDS role is maintenance/repair, not documented as production (P-SB-049); delivery of the 180,000 rounds is not confirmed.",
    "proposed_depth": "A",
    "event_date": "2025-01-06",
    "event_status": "beauftragt"
@@ -2616,7 +2735,7 @@
    ],
    "evidence": "Paraphrase: 'Germany has already supplied Ukraine with more than 60 Gepard anti-aircraft tanks'; Makeiev praised the system's effectiveness against drones.",
    "location": "Article 'Already more than 60 Gepard anti-aircraft tanks in Ukraine', paragraphs 1-2",
-   "uncertainty": "Customer-side oral statement relayed by an agency; not an official Federal Government tally.",
+   "uncertainty": "Context only: customer-side oral statement relayed by an agency; not an official Federal Government tally; KNDS manufacturer/production role not documented here (KNDS role per P-SB-049 is maintenance/repair).",
    "proposed_depth": "A",
    "event_date": "2025-07-25",
    "event_status": "laufend"
@@ -2658,7 +2777,7 @@
    ],
    "evidence": "Excerpt: 'Die FLW 100 ist - wie die FLW 200 auch - bereits seit mehreren Jahren in der Bundeswehr eingeführt.' Paraphrase: Auftragswert rund 48 Mio. EUR.",
    "location": "BMVg news item 'Beschaffung: Mörsersystem, IdZ-Ausstattungen und TaWAN-Richtfunknetz' (30 January 2025), section 'Kauf weiterer FLW 100'",
-   "uncertainty": "Ministry text; the page's cached text derivation was unreadable and the original (gzip) bytes were decoded manually; delivery status of the new tranche is not stated.",
+   "uncertainty": "Ministry text does not name the manufacturer; the KNDS attribution rests on P-12, P-SB-056 and P-SB-057. It supports in-service status for FLW 100 and FLW 200 only; no status evidence for FLW 200 Plus. Delivery status of the new tranche is not stated. (The page's cached text derivation was unreadable and the original gzip bytes were decoded manually.)",
    "proposed_depth": "A",
    "event_date": "2025-01-29",
    "event_status": "laufend"
@@ -2687,7 +2806,7 @@
    ],
    "evidence": "Paraphrase: see items.",
    "location": "see evidence_items (per source)",
-   "uncertainty": "Undated manufacturer product pages; no FLW 200 Plus order or delivery information found; weapon-station status is not transferred to other KNDS turrets.",
+   "uncertainty": "Undated manufacturer product pages; status wording applies to the FLW 200 only; no FLW 200 Plus order, delivery or in-service information found; weapon-station status is not transferred to other KNDS turrets.",
    "evidence_items": [
     {
      "source_id": "S-413ab7fe9469ddec",
@@ -2910,14 +3029,14 @@
   },
   {
    "id": "P-SC-003",
-   "statement": "According to KNDS, further rounds in its 20-155 mm range are in service: the 120mm cannister round in the French armed forces, a 155mm shell upgraded from the M107 in various armed forces, and 30x150mm rounds in the French Air Force and other forces.",
+   "statement": "According to KNDS, further rounds in its 20-155 mm range are in service: the 120mm cannister round in the French armed forces, a 155mm shell upgraded from the M107 in various armed forces, and the 30x150mm SAPHEI round in the French Air Force and other (forces).",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-2a19a44bae9c9218"
    ],
    "evidence": "Excerpt: \"In service in the French armed forces\" (120mm CAN); \"Combat proven solution, in service in various armed forces around the world\" (155mm, p.17); \"Combat proven solution, in service in French Air Force and other\" (30mm, p.80)",
    "location": "Catalogue PDF pages 17, 44 and 80 (Advantages lists)",
-   "uncertainty": "Catalogue statements per product; the range is not uniform and many entries carry no status wording. Customers beyond France are not named.",
+   "uncertainty": "Catalogue statements per product; the range is not uniform and many entries carry no status wording. Page 80 describes only the 30x150 SAPHEI round; customers beyond France are not named.",
    "proposed_depth": "A",
    "event_status": "laufend"
   },
@@ -3031,10 +3150,10 @@
    ],
    "evidence": "Excerpt: \"The overall value of the procurement without value-added tax is about EUR 35 million\"; \"The first Bonus rounds were fired by the Finnish Army on November 2016.\"",
    "location": "Defence Industry Europe, paragraphs 1-2 and 5; Defence24, first paragraph",
-   "uncertainty": "Trade media relay the ministry release (primary text not opened). Quantity and delivery schedule not disclosed. BONUS is co-developed with BAE Systems Bofors; the KNDS share of final assembly is not documented here.",
+   "uncertainty": "Trade media relay the ministry release (primary text not opened). The source supports a procurement authorisation, not a signed supply contract; quantity and delivery schedule not disclosed. BONUS is co-developed with BAE Systems Bofors; the KNDS share of final assembly is not documented here.",
    "proposed_depth": "A",
    "event_date": "2023-02-24",
-   "event_status": "beauftragt",
+   "event_status": "procurement authorised / announced",
    "evidence_items": [
     {
      "source_id": "S-a31e610f0253ec38",
@@ -3193,17 +3312,18 @@
   },
   {
    "id": "P-SC-016",
-   "statement": "According to KNDS (press release of 18 February 2026 as cited by Calibre Defence and European Security & Defence), the French DGA ordered several thousand SHARD new-generation APFSDS rounds from KNDS Ammo France for the French cavalry.",
+   "statement": "According to KNDS (press release cited by European Security & Defence and Calibre Defence; Calibre dates it 18 February 2026, Army Recognition dates the announcement 17 February 2026), the French DGA ordered several thousand SHARD new-generation APFSDS rounds from KNDS Ammo France for the French cavalry.",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-f867eabd40cee703",
-    "S-e72bc468a97fc7d0"
+    "S-e72bc468a97fc7d0",
+    "S-b8f957ad1ccbc530"
    ],
    "evidence": "Excerpt: \"The French Defence Procurement Agency (DGA) has placed an order with KNDS Ammo for several thousand SHARD new-generation Armour Piercing Fin-Stabilized Discarded Sabot (APFSDS) rounds.\"",
    "location": "European Security & Defence, paragraph 2; Calibre Defence, paragraph 2",
-   "uncertainty": "KNDS press release not opened directly; DGA/ministry confirmation not read. Delivery timeframe not stated by KNDS.",
+   "uncertainty": "KNDS press release not opened directly. Announcement date differs by source (17 February per Army Recognition, 18 February per Calibre Defence, article of 19 February); DGA/ministry confirmation not read. Delivery timeframe not stated by KNDS.",
    "proposed_depth": "A",
-   "event_date": "2026-02-18",
+   "event_date": "2026-02-17",
    "event_status": "beauftragt",
    "evidence_items": [
     {
@@ -3217,6 +3337,12 @@
      "text": "Excerpt: \"KNDS France has received an order for thousands of SHARD ... rounds from the French Army\" (February 18 press release cited)",
      "mode": "Auszug",
      "location": "Calibre Defence, paragraph 2"
+    },
+    {
+     "source_id": "S-b8f957ad1ccbc530",
+     "text": "Excerpt: \"KNDS Group signaled a major step ... on 17 February 2026, after the Direction générale de l'armement notified KNDS Ammo France of an order for several thousand SHARD new-generation 'obus flèche' rounds\"",
+     "mode": "Auszug",
+     "location": "Army Recognition, opening paragraph"
     }
    ]
   },
@@ -3258,7 +3384,7 @@
    ],
    "evidence": "Excerpt: \"Its relevance has already been validated by the French Army, with the MX-10 in active service since December 2025.\"",
    "location": "KNDS press release, section 'KNDS warhead and loitering munition expertise'",
-   "uncertainty": "Manufacturer statement; applies to the MX-10 only, not to the other MATARIS members.",
+   "uncertainty": "Manufacturer statement; applies to the MX-10 only, not to the other MATARIS members (mapped to the MX-10 row only).",
    "proposed_depth": "A",
    "event_date": "2026-06-18",
    "event_status": "laufend"
@@ -3294,14 +3420,14 @@
   },
   {
    "id": "P-SC-020",
-   "statement": "According to Breaking Defense (citing KNDS at the June 2025 Paris Air Show), a DGA contract signed in July 2024 covers 2,270 MX-10 DAMOCLES to be delivered in tranches over seven years, with a firm first tranche of 460; the DGA reportedly wants production of 2,000 per year.",
-   "kind": "Herstellerangabe",
+   "statement": "Breaking Defense reports (June 2025, Paris Air Show) that a DGA contract signed in July 2024 covers 2,270 MX-10 DAMOCLES to be delivered in tranches over seven years, with a firm first tranche of 460; the DGA reportedly wants production of 2,000 per year.",
+   "kind": "Fakt",
    "source_ids": [
     "S-6efe75db8d4fd730"
    ],
    "evidence": "Excerpt: \"A contract from the DGA was signed in July 2024 for 2,270 Damocles to be delivered in tranches over the next seven years. The first, firm tranche is for 460\"",
    "location": "Breaking Defense, paragraph on MX-10 Damocles",
-   "uncertainty": "Order size and production rate come from company statements to the press; other sources describe 460 as the quantity to be delivered by July 2026. Not confirmed in a DGA text read.",
+   "uncertainty": "Media report; the paragraph names no speaker, so the figures are not attributed to KNDS. Other sources describe 460 as the quantity to be delivered by July 2026. Not confirmed in a DGA text read.",
    "proposed_depth": "A",
    "event_date": "2024-07",
    "event_status": "beauftragt"
@@ -3337,17 +3463,16 @@
   },
   {
    "id": "P-SC-022",
-   "statement": "According to KNDS as reported by Defense Mirror, the final DAMOCLES qualification campaign comprised 10 live shots, all successful, after several hundred blank firings in previous months.",
-   "kind": "Herstellerangabe",
+   "statement": "Defense Mirror reports that the final DAMOCLES qualification campaign comprised 10 live shots, all successful, after several hundred blank firings in previous months.",
+   "kind": "Fakt",
    "source_ids": [
     "S-459a4d4a1990b30e"
    ],
    "evidence": "Excerpt: \"The final qualification campaign included 10 live shots, all of which were successful, following several hundred blank test firings\"",
    "location": "Defense Mirror, paragraph 2",
-   "uncertainty": "Single secondary source for the test count.",
+   "uncertainty": "Single secondary source for the test count; the sentence is not attributed to KNDS in the article and the article gives no date for the campaign (before qualification, date not stated).",
    "proposed_depth": "A",
-   "event_date": "2025-11",
-   "event_status": "durchgeführt"
+   "event_status": "durchgeführt (before qualification; date not stated)"
   },
   {
    "id": "P-SC-023",
@@ -3387,10 +3512,10 @@
    ],
    "evidence": "Excerpt: \"According to Travert, after the Colibri demonstration, the DGA decided to order its industrialization.\"",
    "location": "Breaking Defense, paragraphs on MV-25 Oskar",
-   "uncertainty": "Company statement; no DGA contract value or quantity found.",
+   "uncertainty": "Company statement relayed by Breaking Defense; no DGA contract, value or quantity shown.",
    "proposed_depth": "A",
    "event_date": "2025-06-19",
-   "event_status": "beauftragt"
+   "event_status": "industrialisation decision stated by company; contract not shown"
   },
   {
    "id": "P-SC-025",
@@ -3502,15 +3627,15 @@
   },
   {
    "id": "P-SC-029",
-   "statement": "The French DGA acquired 23 MV-100 units without warheads for experimentation by the armed forces (17 VELOCE 330 jet-powered and 6 RODEUR 330), with the 17 VELOCE 330 bought for testing and training by the Air and Space Force, Navy and Army, as stated by KNDS and EOS Technologie at the June 2025 Paris Air Show.",
-   "kind": "Partnerangabe",
+   "statement": "EDR Magazine reports that the French DGA acquired 23 MV-100 units for experimentation by the armed forces, 17 VELOCE 330 and 6 RODEUR 330 according to EDR's understanding; Breaking Defense reports, citing the EOS Technologie president, that 17 MV-100 VELOCE 330 were procured for testing and training by the Air and Space Force, Navy and Army.",
+   "kind": "Fakt",
    "source_ids": [
     "S-6efe75db8d4fd730",
     "S-3a3cf5ff81f73786"
    ],
    "evidence": "Excerpt: \"France has procured 17 of the MV-100 Veloce 330 for testing and training by the Air & Space Force, Navy and Army.\"",
    "location": "Breaking Defense, paragraph 2; EDR Magazine, paragraph on MV-100 acquisition",
-   "uncertainty": "Partner/company statements; EOS said the 17 units carry no warhead. Deliveries were scheduled just after the show; completion not confirmed.",
+   "uncertainty": "The 23 total, the DGA purchase and the 17/6 split are EDR's own understanding; only the 17 VELOCE 330 purchase for test/training is attributed to EOS Technologie (Breaking Defense). EOS said the 17 units carry no warhead. Deliveries were scheduled just after the show; completion not confirmed.",
    "proposed_depth": "A",
    "event_date": "2025-06",
    "event_status": "laufend",
@@ -3637,21 +3762,21 @@
    ],
    "evidence": "Excerpt: \"On March 16, 2026, KNDS France released a video showing the integration of the Mataris MT-10 loitering munition on the Leclerc main battle tank, the Serval 4x4 armored vehicle, the Titus internal security vehicle, and the Ultro unmanned ground vehicle\"",
    "location": "Army Recognition, paragraph 1 and 3",
-   "uncertainty": "Video demonstration of integration; the source does not state live firings, tests or a customer.",
+   "uncertainty": "Context only: video demonstration of MT-10 integration on several carriers incl. ULTRO; the source does not state live firings, tests or a customer and is not ULTRO status evidence.",
    "proposed_depth": "A",
    "event_date": "2026-03-16",
    "event_status": "durchgeführt"
   },
   {
    "id": "P-SC-036",
-   "statement": "According to KNDS France, NERVA-LG was first unveiled at Eurosatory 2012 and has been used since 2017 by US Navy SEALs and by units such as France's GIGN, the Canadian Armed Forces and emergency services in Shanghai.",
-   "kind": "Herstellerangabe",
+   "statement": "Defence Industry Europe reports that NERVA-LG was first unveiled at Eurosatory 2012 and has been used since 2017 by US Navy SEALs and by units such as France's GIGN, the Canadian Armed Forces and emergency services in Shanghai.",
+   "kind": "Fakt",
    "source_ids": [
     "S-1e36d6e4ba085ffa"
    ],
    "evidence": "Excerpt: \"First unveiled at the Eurosatory 2012 exhibition, the NERVA LG has a proven track record of deployment across various global organisations. Since 2017, it has been utilised by the US Navy SEALs\"",
    "location": "Defence Industry Europe, paragraph 6",
-   "uncertainty": "Manufacturer statement relayed by trade media; user numbers and dates are not given.",
+   "uncertainty": "Trade-media statement not attributed to KNDS in the article; user numbers and dates are not given.",
    "proposed_depth": "A",
    "event_date": "2012",
    "event_status": "angekündigt"
@@ -3722,7 +3847,7 @@
    ],
    "evidence": "Excerpt: \"Fifty-six of these modular reconnaissance robots were sold to the French defense procurement agency (DGA) as part of the SCORPION program\" ... \"several hundred\" produced for foreign armies",
    "location": "Al Defaiya, paragraph 4",
-   "uncertainty": "Manufacturer statement, 2021; the NERVA type split ('these robots') is not specified.",
+   "uncertainty": "Manufacturer statement, 2021; family-level only: the NERVA type split ('these robots') is not stated, so it is not status evidence for NERVA-XX or NERVA-LG individually.",
    "proposed_depth": "A",
    "event_date": "2021-06-10",
    "event_status": "laufend"
@@ -3876,7 +4001,7 @@
    ],
    "evidence": "Excerpt: \"A core component of the initiative is the development of a multi-mission robotic demonstrator designed to support dismounted troops\"",
    "location": "Defense Mirror, paragraph 3",
-   "uncertainty": "Framework for technology maturation; not an order for CENTURIO (a CENTURIO photo illustrates the article).",
+   "uncertainty": "Context only, not CENTURIO-specific: framework for technology maturation; the source does not name CENTURIO as subject (a CENTURIO photo illustrates the article); not an order for CENTURIO.",
    "proposed_depth": "A",
    "event_date": "2024-12-30",
    "event_status": "beauftragt"
@@ -4113,7 +4238,7 @@
    ],
    "evidence": "Paraphrase: MGB and DSB in service with British Army, U.S. Army and many other NATO forces.",
    "location": "Company page, introductory section on rapidly deployable bridging",
-   "uncertainty": "Undated manufacturer statement; does not state which of the two systems serves which army.",
+   "uncertainty": "Undated manufacturer statement that applies jointly to MGB and DSB; it does not state which of the two systems serves which army (no product-specific split).",
    "proposed_depth": "A",
    "event_status": "Einsatz (Herstellerangabe, undatiert)"
   },
@@ -4133,31 +4258,61 @@
   },
   {
    "id": "P-SD-012",
-   "statement": "According to WFEL (September 2017 release), a contract for four more DSB systems brought the US military's DSB stockholding to 112 systems, alongside a five-year agreement for DSB upgrades worth GBP 30 million; WFEL states the DSB has been in US Army service since 2003 and adopted by Turkey, Switzerland and Australia.",
+   "statement": "According to WFEL (September 2017 release; WFEL later became a KMW member and thus part of KNDS per the KNDS UK page), a contract for four more DSB systems brought the US military's DSB stockholding to 112 systems, alongside a five-year agreement for DSB upgrades worth GBP 30 million; WFEL states the DSB has been in US Army service since 2003 and adopted by Turkey, Switzerland and Australia.",
    "kind": "Herstellerangabe",
    "source_ids": [
-    "S-cc65bc16b7e1415b"
+    "S-cc65bc16b7e1415b",
+    "S-a5a797cf3b776ceb"
    ],
    "evidence": "Paraphrase: Four more DSB for the US Army bring stock to 112; five-year upgrade agreement GBP 30 million; adopted by Turkey, Switzerland, Australia.",
    "location": "Member news article, paragraphs 1-4",
-   "uncertainty": "Company statement from 2017; no later US delivery data found.",
+   "uncertainty": "Company statement from 2017 by WFEL as predecessor of today's KNDS UK (identity link: KNDS UK company page timeline); no later US delivery data found.",
    "proposed_depth": "A",
    "event_date": "2017-09-21",
-   "event_status": "Auftrag/Lieferung 2017; Bestand 112 laut Hersteller"
+   "event_status": "Auftrag/Lieferung 2017; Bestand 112 laut Hersteller",
+   "evidence_items": [
+    {
+     "source_id": "S-cc65bc16b7e1415b",
+     "text": "Paraphrase: Four more DSB for the US Army bring stock to 112; five-year upgrade agreement GBP 30 million; adopted by Turkey, Switzerland, Australia.",
+     "mode": "Paraphrase",
+     "location": "Member news article, paragraphs 1-4"
+    },
+    {
+     "source_id": "S-a5a797cf3b776ceb",
+     "text": "Excerpt: \"WFEL becomes member of KMW (Krauss-Maffei Wegmann), which then merged with Nexter to form KNDS\"",
+     "mode": "Auszug",
+     "location": "KNDS UK company page, company timeline entry"
+    }
+   ]
   },
   {
    "id": "P-SD-013",
-   "statement": "Army Technology reports (8 March 2018) that WFEL delivered the first scheduled tranche of dry support bridges and medium girder bridges to the Australian Defence Force under project Land 155; the DSBs were delivered after trials at Millbrook Proving Ground and the DSB launcher is on a Rheinmetall MAN 10x10 chassis.",
+   "statement": "Army Technology reports (8 March 2018) that WFEL (later part of KMW and thus of KNDS per the KNDS UK page) delivered the first scheduled tranche of dry support bridges and medium girder bridges to the Australian Defence Force under project Land 155; the DSBs were delivered after trials at Millbrook Proving Ground and the DSB launcher is on a Rheinmetall MAN 10x10 chassis.",
    "kind": "Fakt",
    "source_ids": [
-    "S-5a6a692d962fc23f"
+    "S-5a6a692d962fc23f",
+    "S-a5a797cf3b776ceb"
    ],
    "evidence": "Paraphrase: First scheduled tranche of DSBs and MGBs delivered to ADF under Land 155; DSB launcher on RMMV 10x10 chassis.",
    "location": "Article paragraphs 1-3 and 5",
-   "uncertainty": "Report of 2018; the article is based on WFEL information, and the later tranche completion was not read in this source.",
+   "uncertainty": "Historical 2018 first tranche by WFEL, predecessor of today's KNDS UK (identity link: KNDS UK company page timeline; the article itself names neither KMW nor KNDS); the report is based on WFEL information and the later tranche completion was not read in this source.",
    "proposed_depth": "A",
    "event_date": "2018-03-08",
-   "event_status": "durchgefuehrt (erste Teillieferung)"
+   "event_status": "durchgefuehrt (erste Teillieferung)",
+   "evidence_items": [
+    {
+     "source_id": "S-5a6a692d962fc23f",
+     "text": "Paraphrase: First scheduled tranche of DSBs and MGBs delivered to ADF under Land 155; DSB launcher on RMMV 10x10 chassis.",
+     "mode": "Paraphrase",
+     "location": "Article paragraphs 1-3 and 5"
+    },
+    {
+     "source_id": "S-a5a797cf3b776ceb",
+     "text": "Excerpt: \"WFEL becomes member of KMW (Krauss-Maffei Wegmann), which then merged with Nexter to form KNDS\"",
+     "mode": "Auszug",
+     "location": "KNDS UK company page, company timeline entry"
+    }
+   ]
   },
   {
    "id": "P-SD-014",
@@ -4217,14 +4372,14 @@
   },
   {
    "id": "P-SD-021",
-   "statement": "According to KNDS UK (company page), the Medium Girder Bridge is in service with the British Army, the U.S. Army and many other NATO forces and KNDS UK is the Prime Contractor to the UK MoD and U.S. DoD.",
+   "statement": "According to KNDS UK (company page), the Medium Girder Bridge and the Dry Support Bridge together are currently in service with the British Army, the U.S. Army and many other NATO forces, and KNDS UK is the Prime Contractor to the UK MoD and U.S. DoD.",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-a5a797cf3b776ceb"
    ],
    "evidence": "Paraphrase: MGB and DSB currently in service with British Army, U.S. Army and many other NATO forces.",
    "location": "Company page, introductory section",
-   "uncertainty": "Duplicate basis of P-SD-010 for the MGB row; undated.",
+   "uncertainty": "Page states in-service use jointly for MGB and DSB; no MGB-specific statement. Duplicate basis of P-SD-010; undated.",
    "proposed_depth": "A",
    "event_status": "Einsatz (Herstellerangabe, undatiert)"
   },
@@ -4279,7 +4434,7 @@
    ],
    "evidence": "Paraphrase: Einsatzpruefung at Munster running about five weeks; Musterintegration largely complete; Serienintegration progressing but behind agreement; first large unit to use D-LBO from 1 Jan 2027.",
    "location": "Report of the minister's briefing, paragraphs 3-6 and 'Zeitplan' paragraph",
-   "uncertainty": "The page refers to the Bundeswehr programme D-LBO as a whole and does not name KNDS or its share; the link to the KNDS-Rheinmetall ArGe rests on the KNDS release.",
+   "uncertainty": "Programme-level evidence on the Bundeswehr D-LBO programme as a whole; the page does not name KNDS, the ArGe D-LBO or the KNDS share. The link to the KNDS-Rheinmetall ArGe rests on the KNDS release (P-SD-040). Not usable alone for a KNDS-specific series/operation stage.",
    "proposed_depth": "A",
    "event_date": "2026-10-12",
    "event_status": "laufend (Einsatzpruefung, Serienintegration); Truppennutzung ab 2027 geplant"
@@ -4293,7 +4448,7 @@
    ],
    "evidence": "Paraphrase: Einsatzpruefung of D-LBO basic completed; over 2000 vehicles converted; about 300 behind target; target 2,700 by end 2026.",
    "location": "Press article, paragraphs 1-2 and the passage on Serienintegration",
-   "uncertainty": "Programme-level figure covering all industry partners; the page does not name KNDS or give a KNDS-specific vehicle count. Operational use by troop units is planned from January 2027.",
+   "uncertainty": "Programme-level figure covering all industry partners; the page does not name KNDS/ArGe D-LBO or give a KNDS-specific vehicle count or share. Not usable alone for a KNDS-specific series/operation stage. Operational use by troop units is planned from January 2027.",
    "proposed_depth": "A",
    "event_date": "2026-10-16",
    "event_status": "durchgefuehrt (Einsatzpruefung); Serienintegration laufend"
@@ -4320,7 +4475,7 @@
    ],
    "evidence": "Paraphrase: KNDS CBRN: more than 70 years of support to customers in Europe, Asia and the Middle East; list of decontamination, protection, filtration and detection products.",
    "location": "Subsidiary page, introduction and product list",
-   "uncertainty": "Undated manufacturer statement; no named customers or product-specific delivery data.",
+   "uncertainty": "Company-level context for CBRN products, not product identity or status: undated manufacturer statement; no named customers or product-specific delivery data.",
    "proposed_depth": "A",
    "event_status": "Angebot; Kundenbasis behauptet (Herstellerangabe)"
   },
@@ -4355,14 +4510,14 @@
   },
   {
    "id": "P-SD-052",
-   "statement": "European Security & Defence reports (29 November 2021), citing a Nexter press release, that NBC-Sys (then a Nexter Group subsidiary, now KNDS CBRN) is the supplier of the gas masks for the French armed forces and inaugurated on 16 November 2021 a fully automated production line for its NBC filter cartridges, which is intended to guarantee the supply of current filter cartridges for the French armed forces.",
+   "statement": "European Security & Defence reports (29 November 2021), citing a Nexter press release, that NBC-Sys (a Nexter Group subsidiary) is the supplier of the gas masks for the French armed forces and inaugurated on 16 November 2021 a fully automated production line for its NBC filter cartridges, which is intended to guarantee the supply of current filter cartridges for the French armed forces.",
    "kind": "Herstellerangabe",
    "source_ids": [
     "S-84c8affa9e078c89"
    ],
    "evidence": "Paraphrase: NBC-Sys supplies gas masks for French Armed Forces; automated filter cartridge line inaugurated 16 Nov 2021.",
    "location": "Article paragraphs 1-2",
-   "uncertainty": "Media report of a Nexter release (2021); the mask generation supplied is not specified and the corporate link of NBC-Sys to KNDS CBRN is not described in the article.",
+   "uncertainty": "Media report of a Nexter release (2021); the mask generation supplied is not specified, and the article names NBC-Sys only as a Nexter Group subsidiary (no link to today's KNDS CBRN is stated). Supplier role is a 2021 manufacturer statement, predecessor-company evidence.",
    "proposed_depth": "A",
    "event_date": "2021-11-16",
    "event_status": "durchgefuehrt (Fertigungslinie eroeffnet); Lieferantenrolle laut Hersteller"
@@ -4491,7 +4646,7 @@
    ],
    "evidence": "Paraphrase: Projekt System & Management contracted for nine Puma AGSP, EUR 119.5 million, first deliveries mid-2027.",
    "location": "Article paragraphs 1-4",
-   "uncertainty": "Media report; the article states that EUR 118.5 million of the value is allocated to Rheinmetall's electronics segment as key subcontractor; contract date not given.",
+   "uncertainty": "Media report; the article states the AGSP was developed by Rheinmetall and that EUR 118.5 million of the value is allocated to Rheinmetall's electronics segment as key subcontractor; KNDS involvement is as partner in the PSM joint business. Contract date not given.",
    "proposed_depth": "A",
    "event_date": "2026-01-12",
    "event_status": "Auftrag; Lieferung geplant ab Mitte 2027"
@@ -4606,7 +4761,7 @@
    "title": "LECLERC XLR",
    "url": "https://knds.com/en/products/systems/leclerc-xlr",
    "published_date": null,
-   "accessed_date": "2026-10-28",
+   "accessed_date": "2026-10-29",
    "source_kind": "Company website"
   },
   {
@@ -4615,7 +4770,7 @@
    "title": "PUMA",
    "url": "https://knds.com/en/products/systems/puma",
    "published_date": null,
-   "accessed_date": "2026-10-28",
+   "accessed_date": "2026-10-29",
    "source_kind": "Company website"
   },
   {
@@ -4642,7 +4797,7 @@
    "title": "KNDS France",
    "url": "https://knds.com/de/standorte/knds-france",
    "published_date": null,
-   "accessed_date": "2026-10-28",
+   "accessed_date": "2026-10-29",
    "source_kind": "Company website"
   },
   {
@@ -6725,6 +6880,58 @@
   {
    "product_id": "service-ukraine",
    "gap": "Ukrainian MoD statement (August 2025) that KNDS repaired the first three Gepard systems could not be opened (HTTP 403) and is not used as evidence."
+  },
+  {
+   "product_id": "agm",
+   "gap": "AGM row status rests on AGM-specific claims (offer P-SB-035, presentation P-SB-036, live-fire demonstration P-SB-037); the Swiss Piranha IV order is assigned to row donar-10x10. RCH 155 Ukraine delivery (P-SB-013) is not AGM status evidence."
+  },
+  {
+   "product_id": "rapidfire",
+   "gap": "Land status rests on P-SB-044 (unveiling) and P-SB-046 (two units for operational testing announced); the Janes report of 48 land-based units conflicts with KNDS/Thales and is not used as a land order. Naval service, ammunition order and component status are context only."
+  },
+  {
+   "product_id": "dlbo",
+   "gap": "D-LBO Bundeswehr programme facts (P-SD-041, P-SD-042) do not name KNDS or give the KNDS share; no KNDS-specific series/operation evidence beyond the KNDS contract release (P-SD-040)."
+  },
+  {
+   "product_id": "centurio",
+   "gap": "No CENTURIO-specific order or test evidence beyond exhibition/chronology claims; the DROIDE-type framework (P-SC-049) does not name CENTURIO."
+  },
+  {
+   "product_id": "nerva-xx",
+   "gap": "No NERVA-XX-specific status evidence: the 2021 NERVA sales figures (P-SC-040) do not split the NERVA types."
+  },
+  {
+   "product_id": "ultro",
+   "gap": "ULTRO status rests on presentation-level claims (P-SC-050, P-SC-051); the MT-10 integration video (P-SC-035) is context only."
+  },
+  {
+   "product_id": "gepard",
+   "gap": "Transferred Bundeswehr Gepard and Rheinmetall ammunition are context only; KNDS production role is not documented (KNDS role: maintenance/repair per P-SB-049)."
+  },
+  {
+   "product_id": "flw",
+   "gap": "FLW status evidence covers FLW 100 and FLW 200 only (BMVg text does not name the manufacturer; KNDS attribution via P-12, P-SB-056, P-SB-057); no status evidence for FLW 200 Plus."
+  },
+  {
+   "product_id": "training-puma-agsp",
+   "gap": "AGSP was developed by Rheinmetall; KNDS involvement is as partner in the PSM joint business (P-SD-062); KNDS-specific share of development is not documented."
+  },
+  {
+   "product_id": "medium-calibre-weapons",
+   "gap": "Medium-calibre cannons (20M621, 25M811, 30M781, P20, NC621) have no product row because no current status evidence was collected in this run."
+  },
+  {
+   "product_id": "leopard-2a7v",
+   "gap": "LEOPARD 2 A7A1 (Trophy) rollout/delivery claim P-SA-009 is kept as variant context only, not as A7V status."
+  },
+  {
+   "product_id": "dingo",
+   "gap": "Row status rests on Dingo 2 A4.1 claims (P-SA-055 to P-SA-057); Dingo 3 claims (P-SA-058, P-SA-059) are kept as context because the Dingo 2 A4.1 / Dingo 3 designation overlap is unresolved."
+  },
+  {
+   "product_id": "dsb",
+   "gap": "Joint DSB/MGB in-service statements (P-SD-010, P-SD-021) are family-level; WFEL-named claims (P-SD-012, P-SD-013) are predecessor-company evidence linked to KNDS UK via the KNDS UK company page timeline."
   }
  ],
  "coverage": [
@@ -7048,19 +7255,31 @@
     "S-7455eac2de5250a1",
     "S-e39570202194e479"
    ],
-   "finding": "Module is in use through the RCH 155 (see rch155); Piranha HMC configuration demonstrated with live firing (2024) and contracted by Switzerland (June 2026); Italy only a letter of intent; truck-mounted configuration offered without customer/test evidence.",
+   "finding": "Module is in use through the RCH 155 (see rch155); Piranha HMC configuration demonstrated with live firing (2024); Italy only a letter of intent; truck-mounted configuration offered without customer/test evidence. Swiss Piranha IV order assigned to row donar-10x10.",
    "status": "geprüft mit Beleg"
   },
   {
    "topic": "donar",
-   "search_terms": "DONAR tracked ASCOD prototype tests; DONAR 10x10 Switzerland",
+   "search_terms": [
+    "DONAR tracked ASCOD prototype tests"
+   ],
    "source_ids": [
     "S-effee1b7a20dfb27",
-    "S-4da0f1a41c4b8354",
-    "S-d7d7587226163f27",
-    "S-7455eac2de5250a1"
+    "S-4da0f1a41c4b8354"
    ],
-   "finding": "Tracked DONAR prototype with manufacturer-reported BWB trials (2009 statement); no later status found. DONAR 10x10 (Swiss name for AGM on Piranha IV) contracted June 2026 with prototype by 2027 and series from 2031.",
+   "finding": "Tracked ASCOD DONAR prototype with manufacturer-reported BWB trials (2009 statement); no later status found. The Swiss DONAR 10x10 (AGM on Piranha IV) is assigned to row donar-10x10.",
+   "status": "geprüft mit Beleg"
+  },
+  {
+   "product_id": "donar-10x10",
+   "search_terms": [
+    "DONAR 10x10 Piranha IV armasuisse AGM"
+   ],
+   "source_ids": [
+    "S-7455eac2de5250a1",
+    "S-d7d7587226163f27"
+   ],
+   "finding": "armasuisse/KNDS contract of 8 June 2026 for 32 AGM systems on Piranha IV (DONAR 10x10), prototype by 2027 and series from 2031 planned; order and plan only, no test or delivery.",
    "status": "geprüft mit Beleg"
   },
   {
@@ -7073,7 +7292,7 @@
     "S-fbe7bae5557bc1a3",
     "S-0d0668145edf4607"
    ],
-   "finding": "Naval RAPIDFire qualified and operating; land variant unveiled June 2025 and expected for operational testing by the French Air and Space Force; no land-variant test, delivery or 2026 progress report found.",
+   "finding": "Land variant unveiled June 2025 and expected for operational testing by the French Air and Space Force; no land-variant test, delivery or 2026 progress report found; Janes land-order report conflicts with KNDS/Thales and is not used. Naval service, ammunition order and component status are context only.",
    "status": "geprüft mit Beleg (Land-Variante ohne Test-/Lieferbeleg)"
   },
   {
@@ -7562,9 +7781,19 @@
    ],
    "finding": "JV and subsidiary opened; Ukrainian MoD statement of three Gepard repaired (August 2025) was reported in search results but the page (pravda.com.ua) returned HTTP 403 and is not used.",
    "status": "geprueft; erbrachte Reparaturen nicht belegt"
+  },
+  {
+   "product_id": "medium-calibre-weapons",
+   "search_terms": [
+    "KNDS catalogue medium-calibre cannons 20M621 25M811 30M781 P20 NC621"
+   ],
+   "source_ids": [],
+   "finding": "No own product row: the medium-calibre cannons of the KNDS catalogue were not researched for current status in this run (no status evidence collected); absence of a row is a coverage limit, not evidence of immaturity.",
+   "status": "nicht geprüft (Scope des Teilauftrags: THL20/THL30 und Waffenstationen)"
   }
  ],
  "shared_limitations": [
-  "Consolidated by the main agent from four delegated portfolio parts (A–D) without content changes; one duplicate source record (S-cd4d8a27a37624e4) unified to the page title from part A and source_kind from part D."
+  "Consolidated by the main agent from four delegated portfolio parts (A–D) without content changes; one duplicate source record (S-cd4d8a27a37624e4) unified to the page title from part A and source_kind from part D.",
+  "Correction round 1 (after basis lead review): claims corrected at the original sources; mapping findings M1-M16 applied (context claims moved into sections, DONAR split into two rows, group name aligned to the delivered briefing). Source records S-f78bf9f5633dc0c2, S-2190194daccd00d4, S-3e48809a6efb1a20 were read from the document cache (retrieved 2026-10-29)."
  ]
 }
