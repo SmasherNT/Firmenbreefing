@@ -15,11 +15,21 @@ CELL_STATUS = {"bewertet", "nicht öffentlich belegt", "nicht anwendbar",
 ROLES = {"context", "portfolio", "cluster", "market", "source-reviewer"}
 SUMMARY_SECTION = "executive_summary"
 HIGHLIGHT_SECTION = "executive_highlights"
-PORTFOLIO_METHOD = "portfolio-maturity-v1"
-PORTFOLIO_STAGES = {str(i): label for i, label in enumerate(
+PORTFOLIO_METHOD = "portfolio-status-v2"
+PORTFOLIO_STAGES = {"announced": "Angekündigt", "prototype": "Prototyp",
+                    "series": "Serienproduktion", "operation": "Im Betrieb"}
+# Older runs keep their six-milestone scale; they are rendered and validated unchanged.
+LEGACY_PORTFOLIO_METHOD = "portfolio-maturity-v1"
+LEGACY_PORTFOLIO_STAGES = {str(i): label for i, label in enumerate(
     ("Angekündigt", "Prototyp", "Test / Demo", "Kundenprogramm", "Im Betrieb", "Serie / Skala"), 1)}
+PORTFOLIO_METHODS = {PORTFOLIO_METHOD: PORTFOLIO_STAGES, LEGACY_PORTFOLIO_METHOD: LEGACY_PORTFOLIO_STAGES}
 
-def portfolio_context(facts):
+def previous_stage(stage):
+    """Directly preceding v2 stage; only series/operation have a meaningful '*'."""
+    keys = list(PORTFOLIO_STAGES)
+    return keys[keys.index(stage) - 1] if stage in ("series", "operation") else None
+
+def portfolio_context(facts, method=PORTFOLIO_METHOD):
     """Compact reviewed inventory; maturity remains exclusively interpretation data."""
     products = []
     for view in facts.get("module_views", []):
@@ -39,7 +49,46 @@ def portfolio_context(facts):
             if row.get('sections'):
                 products[-1]['sections'] = copy.deepcopy(row['sections'])
     index(products, "portfolio products")
-    return {"method_id": PORTFOLIO_METHOD, "stages": PORTFOLIO_STAGES, "products": products}
+    if method not in PORTFOLIO_METHODS:
+        raise ValueError("unknown portfolio method")
+    return {"method_id": method, "stages": PORTFOLIO_METHODS[method], "products": products}
+
+def status_errors(row, product, found):
+    """portfolio-status-v2: one column (highest stage) plus optional '*' for the still-active previous stage."""
+    errors, state, stage = [], row.get("assessment_status"), row.get("stage")
+    depends = set(row.get("depends_on") or [])
+    own = set(product["claim_ids"]) if product else set()
+    if "score" in row:
+        errors.append("status method uses stage, not score")
+    if state == "bewertet":
+        basis = row.get("stage_basis")
+        if stage not in PORTFOLIO_STAGES:
+            errors.append("stage must be announced, prototype, series or operation")
+        if not found:
+            errors.append("rated product needs fact basis")
+        if not isinstance(basis, list) or not basis or not set(basis) <= depends:
+            errors.append("stage_basis must list checked facts from depends_on")
+        elif product and not set(basis) & own:
+            errors.append("stage must rest on the product's own facts")
+        if stage != "operation" and not text(row.get("next_stage_limit")):
+            errors.append("rated product below operation needs next_stage_limit")
+        extra = row.get("also_previous")
+        if extra is not None:
+            prev = previous_stage(stage)
+            if not isinstance(extra, dict) or prev is None or extra.get("stage") != prev:
+                errors.append("'*' only for the directly preceding stage of series or operation")
+            else:
+                eb = extra.get("basis")
+                if not isinstance(eb, list) or not eb or not set(eb) <= depends or not text(extra.get("note")):
+                    errors.append("'*' needs its own basis from depends_on and a note")
+                elif product and not set(eb) & own:
+                    errors.append("'*' must rest on the product's own facts")
+    elif state == "nicht eindeutig bestimmbar":
+        if stage is not None or row.get("also_previous") is not None or not text(row.get("coverage_note")):
+            errors.append("unassessed product needs stage=null, no '*' and coverage_note")
+    else:
+        errors.append("invalid product assessment_status")
+    return errors
 
 def product_assessment(row):
     return row.get("type") == "product_maturity" and "product_id" in row
@@ -311,7 +360,7 @@ def validate_output(manifest, facts, review, context, output,
     inventory = context.get("portfolio")
     product_ids = set()
     if inventory is not None:
-        if inventory != portfolio_context(facts):
+        if inventory.get("method_id") not in PORTFOLIO_METHODS or inventory != portfolio_context(facts, inventory["method_id"]):
             errors.append("portfolio inventory changed")
         product_ids = {p["id"] for p in inventory.get("products", [])}
     assessed_products = set()
@@ -491,13 +540,17 @@ def validate_output(manifest, facts, review, context, output,
             if pid in assessed_products:
                 errors.append(cid + ": duplicate product assessment")
             assessed_products.add(pid)
-            if row.get("method_id") != PORTFOLIO_METHOD or row.get("section") != "portfolio":
+            method = inventory.get("method_id") if inventory else None
+            if row.get("method_id") != method or row.get("section") != "portfolio":
                 errors.append(cid + ": product assessment needs canonical portfolio method/section")
             if any(d not in claims for d in row.get("depends_on", [])):
                 errors.append(cid + ": product maturity must reference checked facts directly")
             score, state = row.get("score"), row.get("assessment_status")
-            if state == "bewertet":
-                if not isinstance(score, int) or isinstance(score, bool) or str(score) not in PORTFOLIO_STAGES:
+            if method == PORTFOLIO_METHOD:
+                product = next((p for p in inventory.get('products', []) if p['id'] == pid), None)
+                errors.extend(cid + ": " + e for e in status_errors(row, product, found))
+            elif state == "bewertet":
+                if not isinstance(score, int) or isinstance(score, bool) or str(score) not in LEGACY_PORTFOLIO_STAGES:
                     errors.append(cid + ": product maturity must be an integer from 1 to 6")
                 if not found or not text(row.get("next_stage_limit")):
                     errors.append(cid + ": rated product needs fact basis and next-stage limit")

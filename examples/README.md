@@ -9,8 +9,9 @@ Aktuelle Entwicklungen erscheinen als chronologische kompakte Ereigniskarten mit
 Datum links und vollständigen Fakten/Originalquellen im gemeinsamen Detailfenster.
 Alle Inhalte und Review-Entscheidungen sind erfunden; keine URL wurde geöffnet.
 Die Beispiele sind keine Recherchevorlage für echte Firmen.
-Portfolio: farbige Gruppen und sechs Reifestufen, zwei eingeordnete Produkte
-und ein unbestimmbarer Service, Such-/Gruppen-/Stufen-/Ursprungsfilter und Tabelle.
+Portfolio: farbige Gruppen, vier Statusstufen plus Spalte „Nicht eindeutig
+bestimmbar“, zwei eingeordnete Produkte und ein unbestimmbarer Service, „*“ für
+noch aktive Vorstufe, Such-/Gruppen-/Status-/Ursprungsfilter und Tabelle.
 Der gesamte Detailprofilbereich ist zunächst geschlossen. Produktklick öffnet
 Block und Profil. Person, Markt-Deep-Dive Europa und Quellen stehen auf Seite 2–4.
 Das Netzwerk zeigt vier Akteursgruppen im 2×2-Raster, gleich große Symbole mit

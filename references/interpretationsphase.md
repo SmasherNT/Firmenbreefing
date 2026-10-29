@@ -72,8 +72,8 @@ Jeder Peer/Kriterium-Paarung genau eine Zelle zuordnen, kein Auslassen schwacher
 oder fehlender Evidenz. peer_ids, criteria und plan_fingerprint bleiben fest.
 Höchste vollständig belegte Stufe begründen; auch erklären, warum die nächsthöhere
 nicht belegt ist. Ordinale Scores nicht zu Gesamt-Ranglisten mitteln/addieren.
-Portfolio-Reife im Vollbriefing nach portfolio-darstellung.md: feste Methode
-portfolio-maturity-v1, genau eine Einordnung pro delegiertem Produkt.
+Portfolio-Status im Vollbriefing nach portfolio-darstellung.md: feste Methode
+portfolio-status-v2 (höchste Stufe, optional „*“), genau eine Einordnung pro Produkt.
 Andere numerische Bewertungen (z. B. regionale Präsenz) nur bei vorab
 definierter assessment_methods im Vergleichsplan mit id, assessment_type,
 anchors und applicability. Methode method_id und bewertetes subject nennen.

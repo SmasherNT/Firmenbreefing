@@ -105,7 +105,8 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     if full and (set(selected) != {"context", "portfolio", "cluster", "market"} or
                  positioning is None or swot is None or not 4 <= len(summary_rows) <= 6 or len(highlight_rows) != 3):
         raise ValueError("full briefing requires four facts roles, positioning, SWOT, 4–6 summary claims and three reviewed highlights")
-    inventory = CHECK.portfolio_context(facts)
+    method = ((positioning_context or {}).get('portfolio') or {}).get('method_id', CHECK.PORTFOLIO_METHOD)
+    inventory = CHECK.portfolio_context(facts, method if method in CHECK.PORTFOLIO_METHODS else CHECK.PORTFOLIO_METHOD)
     product_assessments = {r['product_id']: r for r in interpreted.values() if CHECK.product_assessment(r)}
     if full and (positioning_context.get('portfolio') != inventory or
                  set(product_assessments) != {p['id'] for p in inventory['products']}):
@@ -397,7 +398,7 @@ def build(manifest, facts, basis, positioning=None, positioning_context=None,
     window_note = '<p class="meta">Letzte vier Monate · ' + window_start.strftime('%d.%m.%Y') + '–' + window_end.strftime('%d.%m.%Y') + '</p>'
     timeline_body = '<div class="timeline">' + timeline + '</div>' if timeline else '<p>Keine freigegebenen, datierten Entwicklungen im Viermonatszeitraum vorhanden.</p>'
     main += section("Aktuelle Entwicklungen", window_note + timeline_body if had_events else '', 'current-developments')
-    portfolio_html = PORTFOLIO.render(inventory, product_assessments, claims, evidence, links, CHECK.PORTFOLIO_STAGES)
+    portfolio_html = PORTFOLIO.render(inventory, product_assessments, claims, evidence, links)
     portfolio_cards = module_insights('portfolio')
     if portfolio_html or portfolio_cards:
         main += '<section class="module" id="portfolio">' + (portfolio_html or '<h2>Portfolio</h2>') + portfolio_cards + '</section>'

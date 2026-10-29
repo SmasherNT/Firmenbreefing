@@ -134,7 +134,7 @@ Bei v2-Basis-Review module_views semantisch prüfen: Labels, Akteurs-/Produkt-/
 Themen-/Länderzuordnung, Ereignisdatum und A-Claims. Paket-Snapshot per
 stamp-review ergänzen; Hash ist kein Inhaltsurteil. Änderungen gezielt prüfen.
 Bei Portfolio references/portfolio-darstellung.md nutzen: Basis prüft Gruppen/
-Produktvarianten, final die sechs Reifemeilensteine und konkrete höhere Evidenzgrenze.
+Produktvarianten, final Statusstufe, „*“ samt eigenem aktuellen Beleg und Evidenzgrenze.
 Kapazitätsziele sind keine Serienlieferung; Beleglücken keine tatsächliche Unreife.
 In die bestehende Prüfrunde integrieren; Dokumentjobs teilen diese Pflichtprüfung
 auf, ohne zusätzliche fachliche Prüfrunde.

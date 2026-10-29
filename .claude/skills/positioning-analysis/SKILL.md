@@ -7,8 +7,10 @@ Lies Auftrag, delegierten Kontext und references/interpretationsphase.md an der
 Repositorywurzel. references/-Pfade dort auflösen, nicht relativ zum Skillordner.
 Bei Matrix references/capability-matrix.md und im Kontext fixierten Plan nutzen.
 Bei context.portfolio references/portfolio-darstellung.md lesen; genau eine
-product_maturity-I-Interpretation pro Produkt nach portfolio-maturity-v1 liefern.
-Unbestimmbare Einträge mit null, niemals aus einer Datenlücke einen Score ableiten.
+product_maturity-I-Interpretation pro Produkt nach portfolio-status-v2 liefern:
+stage = höchste belegte Stufe, also_previous („*“) nur für eigens belegte, noch
+aktive direkte Vorstufe. Unbestimmbare Einträge mit stage=null; niemals aus einer
+Datenlücke eine Stufe ableiten, fehlende Statusbelege als research_request melden.
 Bei context.regional_presence references/regionale-praesenz.md lesen; genau eine
 regional_presence-I-Einordnung je Region nach regional-presence-v2 (1–5) liefern.
 Nur belegte eigene/Partner-Infrastruktur einstufen; angekündigte Standorte und

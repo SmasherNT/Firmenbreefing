@@ -304,16 +304,16 @@ def generate(destination):
             method='Feste ordinale Präsenzskala 1–5',uncertainty='Synthetischer Offline-Test; keine reale Unternehmenspräsenz bewertet.',
             next_stage_limit='Keine höhere Infrastrukturstufe in den bereitgestellten Dokumenten belegt.' if score and score<5 else 'Höchster Skalenanker; keine Umsatz-/Marktanteilsaussage.' if score else '',
             coverage_note='Keine konkreten Präsenzbelege im bereitgestellten Testpaket.' if score is None else ''))
-    for ident, pid, grade, ids, reason in [('I20', 'kit', 3, ['P1', 'M2'], 'Ein durchgeführter Labortest ist dokumentiert; ein geplanter Pilot ist noch kein Kundenprogramm.'),
-            ('I22', 'sensor-kit', 6, ['P4'], 'Wiederholte Serienauslieferung ist im fiktiven Datensatz ausdrücklich dokumentiert.'),
-            ('I23', 'data-assist', None, ['P5'], 'Das Dokument nennt den Service, aber keinen konkreten Reifemeilenstein.')]:
+    for ident, pid, stage, ids, reason in [('I20', 'kit', 'prototype', ['P1', 'M2'], 'Ein durchgeführter Labortest des funktionsfähigen Systems ist dokumentiert; ein geplanter Pilot ist noch keine Serie.'),
+            ('I22', 'sensor-kit', 'series', ['P4'], 'Wiederholte Serienauslieferung ist im fiktiven Datensatz ausdrücklich dokumentiert.'),
+            ('I23', 'data-assist', None, ['P5'], 'Das Dokument nennt den Service, aber keinen konkreten Statusmeilenstein.')]:
         interpretations.append(dict(id=ident, type='product_maturity', product_id=pid,
-            method_id=CHECK.PORTFOLIO_METHOD, section='portfolio', score=grade,
-            assessment_status='bewertet' if grade else 'nicht eindeutig bestimmbar',
-            statement='Öffentlich belegte Reife im fiktiven Datensatz: ' + (str(grade) if grade else 'nicht bestimmbar'),
-            depends_on=ids, reasoning=reason, method='Höchster konkret belegter Meilenstein', uncertainty='Synthetischer Offline-Test',
-            next_stage_limit='Kein konkretes Kundenprogramm belegt.' if grade == 3 else 'Höchster Skalenanker; keine Aussage zur technischen Überlegenheit.' if grade == 6 else '',
-            coverage_note='Keine ausreichende Statusinformation im bereitgestellten Datensatz.' if grade is None else ''))
+            method_id=CHECK.PORTFOLIO_METHOD, section='portfolio', stage=stage,
+            stage_basis=ids if stage else [], assessment_status='bewertet' if stage else 'nicht eindeutig bestimmbar',
+            statement='Öffentlich belegter Status im fiktiven Datensatz: ' + (CHECK.PORTFOLIO_STAGES[stage] if stage else 'nicht bestimmbar'),
+            depends_on=ids if stage else [], reasoning=reason, method='Höchste konkret belegte Statusstufe', uncertainty='Synthetischer Offline-Test',
+            next_stage_limit='Keine laufende Serienfertigung belegt.' if stage == 'prototype' else 'Kein tatsächlicher Kundeneinsatz belegt.' if stage == 'series' else '',
+            coverage_note='Keine ausreichende Statusinformation im bereitgestellten Datensatz.' if stage is None else ''))
     for module, items in [
         ('portfolio', [('Serie je Produktfamilie', 'Das Sensor Kit wird im fiktiven Datensatz seit 2025 wiederholt in Serie ausgeliefert.',
             'Der Seriennachweis gilt für diese Produktfamilie, nicht pauschal für das Gesamtportfolio.', ['P4']),

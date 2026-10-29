@@ -1,8 +1,11 @@
-# Portfolio: Darstellung und Reifevertrag
+# Portfolio: Darstellung und Statusvertrag
 
 Der Renderer nutzt die vereinbarte Portfolio-Matrix: Produktgruppen als farbige
-Zeilen, sechs Reifestufen als Spalten, klickbare Produkte, Filter und alternative
-Tabelle. Darunter Methodik und ein vollständig geschlossenes Detailmodul.
+Zeilen, vier Statusstufen als Spalten plus abgesetzte Spalte „Nicht eindeutig
+bestimmbar“, klickbare Produkte, Filter und alternative Tabelle. Jedes Produkt
+steht in genau einer Spalte; ein „*“ hinter dem Namen markiert eine zusätzlich
+noch aktive Vorstufe und wird im Detailprofil erklärt. Darunter Methodik und ein
+vollständig geschlossenes Detailmodul.
 Nur „03 / DETAILPROFILE & EVIDENZ“ und „Von der Position zur Begründung.“ sind
 zunächst sichtbar. Produktklick öffnet beide Disclosure-Ebenen; Druck alle Profile.
 CSS/JS bleiben lokal. Keine neue Grafik-, Recherche- oder Bewertungsrolle.
@@ -15,30 +18,44 @@ Faktenvertrag und feste Präsenzskala siehe references/regionale-praesenz.md.
 portfolio-facts.json.products: id (stabil, Buchstaben/Ziffern/_/-), label,
 short_label (optional), domain (sachliche Produktgruppe), claim_ids.
 IDs, Labels und Gruppen müssen von geprüften A-Fakten getragen sein.
-Je Zeile nur Identifikation und entscheidende Statusbelege referenzieren;
+Je Zeile Identifikation und die entscheidenden aktuellen Statusbelege referenzieren
+(Ankündigung, Prototyp/Test, laufende Serienfertigung/Auslieferung, Kundeneinsatz);
 weitere Merkmale optional in sections=[{label,claim_ids}] bündeln.
-Kein score/grade/Reifeurteil im Faktenmodul. Ankündigung, Test, Auftrag,
-Lieferung, Betrieb und Kapazitätsziel als getrennte Tatsachen erfassen.
-Keine zusätzliche pauschale Lieferstatusrecherche.
+Kein score/stage/Reifeurteil im Faktenmodul. Ankündigung, Test, Auftrag,
+Lieferung, Betrieb und Kapazitätsziel als getrennte Tatsachen mit Datum erfassen.
+Damit möglichst wenige Produkte unbestimmbar bleiben, je Produktzeile den aktuellen
+Status gezielt belegen: Wird die Serie noch gefertigt/ausgeliefert? Ist das Produkt
+bei einem benannten Kunden im Einsatz? Bündelzeilen mit unterschiedlichem Status
+in Varianten-Zeilen aufteilen statt einen gemeinsamen Status zu behaupten.
 
 ## Vorab festgelegte Skala
-Methode portfolio-maturity-v1, ordinale Meilensteine, kein Leistungsindex:
+Methode portfolio-status-v2, ordinale Statusstufen, kein Leistungsindex:
 
-| Stufe | Öffentlicher Nachweis |
+| Stufe (Schlüssel) | Öffentlicher Nachweis |
 |---|---|
-| 1 Angekündigt | Konkretes Produkt/Programm offiziell angekündigt |
-| 2 Prototyp | Funktionsfähiger Prototyp; Konzeptbild/Messemodell reicht nicht |
-| 3 Test / Demo | Tatsächlich durchgeführte Tests oder Demonstration |
-| 4 Kundenprogramm | Konkreter Kundenauftrag, Pilot oder beauftragte Validierung |
-| 5 Im Betrieb | Tatsächlicher Einsatz in einer relevanten Kundenaufgabe |
-| 6 Serie / Skala | Laufende Serienproduktion, wiederholte Auslieferung oder tatsächlich gelieferte Skalierung |
+| Angekündigt (announced) | Konkretes Produkt/Programm offiziell angekündigt; kein funktionsfähiger Prototyp belegt |
+| Prototyp (prototype) | Funktionsfähiger Prototyp/Demonstrator inkl. durchgeführter Tests/Qualifizierung; Konzeptbild/Messemodell reicht nicht |
+| Serienproduktion (series) | Laufende Serienfertigung oder wiederholte Auslieferung |
+| Im Betrieb (operation) | Tatsächlicher Einsatz bei mindestens einem Kunden in einer relevanten Aufgabe |
+| Nicht eindeutig bestimmbar | Abgesetzte Sammelspalte, keine Stufe |
 
-Höchste konkret gestützte Stufe verwenden. Geplante Tests, Lieferziele,
-Bestellungen und Produktionskapazität sind kein erreichten Meilenstein.
+Spalte = höchste konkret gestützte Stufe. Geplante Tests, Lieferziele,
+Bestellungen/Kundenaufträge und Produktionskapazität sind keine erreichte Stufe;
+ein Auftrag bleibt als Fakt im Profil sichtbar.
+Stern „*“: nur bei Serienproduktion und Im Betrieb, wenn die direkt vorherige
+Stufe heute zusätzlich noch aktiv und eigens belegt ist (Im Betrieb* = weiterhin
+laufende Serienfertigung/Auslieferung; Serienproduktion* = Prototypen-/
+Qualifizierungsphase läuft parallel). Früheres Durchlaufen reicht nicht. Bei
+Prototyp entfällt der Stern, weil die Ankündigung immer mit erfüllt ist.
+Fehlender Stern behauptet nicht das Ende der Vorstufe.
 Demonstrator, künftiges Kundenprodukt, Konfigurationen und Varianten getrennt
-bewerten; Reife einer Plattform nicht auf neue Sensoren/Software übertragen.
+bewerten; Status einer Plattform nicht auf neue Sensoren/Software übertragen.
+Bei Produktfamilien zählt der für die Zeile belegte Status; abweichende Varianten
+in Unsicherheit/Grenze nennen statt den Status pauschal zu übertragen.
 Eine Behauptung des Herstellers bleibt als solche sichtbar, auch in Medien.
 Eine Beleglücke beschreibt Rechercheabdeckung, nicht tatsächliche Unreife.
+Ältere Läufe mit portfolio-maturity-v1 (sechs Meilensteine) bleiben les- und
+renderbar; neue Positionierungskontexte nutzen ausschließlich v2.
 
 ## Positionierungsrolle
 Kontext mit check-interpretation.py --prepare --portfolio erzeugen. Er enthält
@@ -52,34 +69,45 @@ liefern. Zusätzlich zum Standardvertrag:
   "type": "product_maturity",
   "section": "portfolio",
   "product_id": "kit",
-  "method_id": "portfolio-maturity-v1",
+  "method_id": "portfolio-status-v2",
   "assessment_status": "bewertet",
-  "score": 3,
+  "stage": "operation",
+  "stage_basis": ["P4"],
+  "also_previous": {"stage": "series", "basis": ["P2"],
+                    "note": "Serienfertigung läuft weiter; Stückzahl nicht veröffentlicht."},
   "statement": "…",
-  "depends_on": ["P1"],
+  "depends_on": ["P2", "P4"],
   "reasoning": "…",
-  "method": "Höchster konkret belegter Meilenstein",
+  "method": "Höchste konkret belegte Statusstufe",
   "uncertainty": "…",
-  "next_stage_limit": "Ein konkretes Kundenprogramm ist nicht belegt."
+  "next_stage_limit": ""
 }
 ```
 
+stage_basis und also_previous.basis: nicht leere Teilmengen von depends_on mit
+mindestens einem eigenen Produktfakt. also_previous nur bei stage=series/operation
+und nur mit der direkt vorherigen Stufe; ohne Stern Feld weglassen.
+next_stage_limit für alle Stufen unterhalb Im Betrieb (warum die nächste nicht belegt ist).
 Nur direkte geprüfte Fakten als depends_on, Begründung normalerweise 2–3 Sätze.
-Unbestimmbar: assessment_status="nicht eindeutig bestimmbar", score=null,
-coverage_note mit konkreter Beleggrenze. Keine Null-/Ersatzstufe. Solche Einträge
-können leere depends_on haben und tragen keine SWOT-Ableitung.
+Unbestimmbar: assessment_status="nicht eindeutig bestimmbar", stage=null, kein
+also_previous, coverage_note mit konkreter Beleggrenze. Keine Ersatzstufe.
+Solche Einträge können leere depends_on haben und tragen keine SWOT-Ableitung.
+Fehlt für eine Einordnung ein konkreter aktueller Statusbeleg, research_request
+an portfolio stellen, statt vorschnell „nicht eindeutig bestimmbar“ zu vergeben.
 Andere Zusatzscores bleiben an assessment_methods des Vergleichsplans gebunden;
 Capability-Matrix-Kriterien ergeben sich weiterhin aus dem Prüfauftrag.
 
 ## Review und Ausgabe
 Basis-Reviewer prüft Produktidentität, Gruppe, Statusdatum und Claim-Zuordnung.
-Final-Reviewer prüft I-Reifezuordnung samt Varianten-/Zeitbezug und Evidenzgrenze
+Final-Reviewer prüft I-Statuszuordnung, Stern samt eigenem aktuellen Beleg,
+Varianten-/Zeitbezug und Evidenzgrenze
 in der bestehenden gemeinsamen Prüfrunde. Kein zusätzlicher Quellenprüfer.
 Inventaränderungen invalidieren den Positionierungskontext. Alle freigegebenen
 Einordnungen und Abhängigkeiten behalten Fingerprints und Schluss-Review.
 --full verlangt aktuelle Produktzuordnung und eine freigegebene Einordnung pro
-Produkt. Reine Fakten-HTML zeigt Produkte ohne interpretierte Reifestufe.
-Details enthalten Fakten, Einordnung, Grenzen und direkte Originalbelege.
+Produkt. Reine Fakten-HTML zeigt Produkte ohne interpretierte Stufe („Noch nicht eingeordnet“).
+Details enthalten Status mit Beleg, ggf. „* Zusätzlich: <Vorstufe>“ mit Hinweis
+und Beleg, weitere Fakten, Einordnung, Grenzen und direkte Originalbelege.
 Aussageursprungsfilter nutzt vorhandene Claim-Arten; „Fakt“ behauptet keine
 unabhängige Bestätigung. Keine Quellenklassifikation allein aus dem Publishernamen.
 
