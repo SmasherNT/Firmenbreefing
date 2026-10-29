@@ -1,0 +1,2406 @@
+{
+  "schema_version": 1,
+  "run_id": "knds-portfolio-status-2026-10-29",
+  "company": "KNDS N.V.",
+  "as_of": "2026-10-29",
+  "phase": "basis",
+  "status": "teilweise",
+  "material_errors": [
+    "Open claim corrections (26): P-02, P-03, P-05, P-SA-021, P-SA-025, P-SA-043, P-SA-050, P-SA-055, P-SB-003, P-SB-013, P-SB-024, P-SB-027, P-SB-029, P-SB-045, P-SC-003, P-SC-008, P-SC-016, P-SC-020, P-SC-022, P-SC-024, P-SC-029, P-SC-036, P-SD-012, P-SD-013, P-SD-021, P-SD-052 - see review_groups.",
+    "Open cache items: P-02, P-03, P-05 have no cache snapshot for S-f78bf9f5633dc0c2, S-2190194daccd00d4, S-3e48809a6efb1a20 (owner main).",
+    "Product mapping defects M1-M16 (mapping_findings) must be corrected by portfolio before release.",
+    "Unresolved source conflicts (documented, not resolvable from public sources): Leopard 2 A8 handover (KNDS April 2026 vs BAAINBw 2027), RCH 155 Ukraine delivery/use, RapidFire 48 units (naval vs land), KATANA specification; SERVAL contract date resolved as outlier; SHARD date corrected to 17 Feb 2026."
+  ],
+  "review_scope": "Lead review (source-reviewer, claude-sonnet-5-5 medium configured; actual executed model not verifiable from the run) after 3 document jobs (sources-1..3, 218 sources, 232 claims, 278 claim/source findings). Read: all 232 findings with notes; full portfolio-facts products/module_views (52 products, 9 groups) against claims and existing-portfolio split; product identity, group, status date, event_status vs sources, Aussageursprung, order/delivery/use, variants. Targeted lead checks: EDR page for SHARD date (17 Feb 2026); web checks for Leopard 2 A8 Bundeswehr handover (none found) and RCH 155 Ukraine (no official delivery confirmation). Originals not re-read in full; document-job reading relied upon for geprüft claims. Corrections go back to portfolio/main; no analyst file changed. scope_and_mappings_checked = semantic check performed, not an acceptance of the mapping (defects listed).",
+  "review_work_fingerprint": "fddc81e0a025d338d2d8d8154afeafeb092c8c4d0c71298e4a46ec9a41c39584",
+  "plan_fingerprint": "125875bd1971b5fca7ca6afdf84be8b5c58fbb6c8d0d793cefac768745e4fc18",
+  "source_collection_fingerprint": "105cd826f889fd21477098f35b115cd56e3679ef42be431428cf268f5689c4ba",
+  "scope_and_mappings_checked": true,
+  "review_groups": [
+    {
+      "claim_ids": [
+        "P-02"
+      ],
+      "depth": "A",
+      "status": "offen",
+      "note": "No cached original for S-f78bf9f5633dc0c2; document job could not read the original; the live summary is not evidence. Plausible, consistent with S-219f5e5f415564c3/S-ed7414b15db0642e, but not releasable.",
+      "reason": "No cached original for S-f78bf9f5633dc0c2; document job could not read the original; the live summary is not evidence. Plausible, consistent with S-219f5e5f415564c3/S-ed7414b15db0642e, but not releasable.",
+      "action": "Main agent: fetch/store the KNDS page via source-cache.py (access date 2026-10-29), rebuild review-work/split and re-run the document job; alternatively portfolio replaces the evidence by already checked sources (S-2b10b29533252970, S-219f5e5f415564c3).",
+      "owner": "main"
+    },
+    {
+      "claim_ids": [
+        "P-03"
+      ],
+      "depth": "A",
+      "status": "offen",
+      "note": "No cached original for S-2190194daccd00d4 (KNDS PUMA product page); document job read no stored original.",
+      "reason": "No cached original for S-2190194daccd00d4 (KNDS PUMA product page); document job read no stored original.",
+      "action": "Main agent: fetch/store via source-cache.py, rebuild work/split, re-run document job for P-03; alternatively portfolio adds an already checked KNDS/PSM source.",
+      "owner": "main"
+    },
+    {
+      "claim_ids": [
+        "P-05"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Document job: only the SCORPION production part (GRIFFON/JAGUAR with Arquus/Thales, SERVAL with Texelis) is supported; \"the portfolio also includes VBCI\" is not supported (VBCI only appears in a history timeline); additionally no cache snapshot (S-3e48809a6efb1a20). Lead concurs.",
+      "reason": "Document job: only the SCORPION production part (GRIFFON/JAGUAR with Arquus/Thales, SERVAL with Texelis) is supported; \"the portfolio also includes VBCI\" is not supported (VBCI only appears in a history timeline); additionally no cache snapshot (S-3e48809a6efb1a20). Lead concurs.",
+      "action": "Portfolio: restrict claim to SCORPION production of GRIFFON/JAGUAR/SERVAL or support VBCI with a proper source (e.g. KNDS VBCI product page S-94e524ffa416c9c1 already backs P-SA-049). Main: store the page in the document cache and rebind the snapshot.",
+      "owner": "portfolio / main"
+    },
+    {
+      "claim_ids": [
+        "P-SA-021"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "event_status \"in service (army units)\" and uncertainty \"Shows XLR tanks in army tank units\" go beyond the article: it shows an XLR with a drone cage at Eurosatory and says the cage (not the tank) is being manufactured and delivered to tank units. Lead concurs with the document job.",
+      "reason": "event_status \"in service (army units)\" and uncertainty \"Shows XLR tanks in army tank units\" go beyond the article: it shows an XLR with a drone cage at Eurosatory and says the cage (not the tank) is being manufactured and delivered to tank units. Lead concurs with the document job.",
+      "action": "Set event_status to \"presented (Eurosatory 2026); add-on cage in production/delivery to tank units\" and fix the uncertainty; base XLR deliveries only on P-SA-016..020 (P-SA-018 count of 34 by 10 Dec 2024), not on this claim.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SA-025"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "event_status \"delivered (Lot 1)\" is not supported: hartpunkt says \"procured\" (beschafft); Lot 1 vehicles are still being brought to S1 by industry. Statement text itself is supported.",
+      "reason": "event_status \"delivered (Lot 1)\" is not supported: hartpunkt says \"procured\" (beschafft); Lot 1 vehicles are still being brought to S1 by industry. Statement text itself is supported.",
+      "action": "Set event_status to \"procured (Lot 1: 350; Lot 2: 50) / ordered (further 200, delivery from 2028 planned)\"; delivery of Lot 2 only via P-SA-027.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SA-043"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Single source (S-3b6ac7ad2710c1a9) supports only Luxembourg acquiring 38 Jaguar via the Belgian order and the GME consortium building Jaguar; the part \"CaMo covers Jaguar for Belgium\" (Belgian Jaguar order) is not in that document (document job states it needs another source).",
+      "reason": "Single source (S-3b6ac7ad2710c1a9) supports only Luxembourg acquiring 38 Jaguar via the Belgian order and the GME consortium building Jaguar; the part \"CaMo covers Jaguar for Belgium\" (Belgian Jaguar order) is not in that document (document job states it needs another source).",
+      "action": "Narrow the statement to the Luxembourg/consortium part or add a source for the Belgian Jaguar order (60 vehicles) as evidence_item.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SA-050"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Statement parenthesis \"up to 550 infantry fighting vehicles and command post vehicles\" can be read as total scope and contradicts 630 ordered; source: up to 550 VCI and 150 VPC (700 conditional), 630 ordered.",
+      "reason": "Statement parenthesis \"up to 550 infantry fighting vehicles and command post vehicles\" can be read as total scope and contradicts 630 ordered; source: up to 550 VCI and 150 VPC (700 conditional), 630 ordered.",
+      "action": "Rephrase: up to 550 VCI and 150 VPC (700 conditional) planned, 630 ordered by Sept 2009.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SA-055"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "\"In November 2023\" and event_date 2023-11-29 are not supported by the claim's only source (KNDS release dated 06.12.2023, no signing date); the signing date 29.11.2023 comes from Janes (S-1a4e06392b187ffb, used in P-SA-056). Uncertainty \"undated\" is outdated.",
+      "reason": "\"In November 2023\" and event_date 2023-11-29 are not supported by the claim's only source (KNDS release dated 06.12.2023, no signing date); the signing date 29.11.2023 comes from Janes (S-1a4e06392b187ffb, used in P-SA-056). Uncertainty \"undated\" is outdated.",
+      "action": "Either add S-1a4e06392b187ffb as evidence_item for the signing date or restate as \"announced 6 December 2023\"; fix the uncertainty.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SB-003"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "kind \"Herstellerangabe\" and the uncertainty \"treated as manufacturer-side because the plant director is quoted\" are not supported: the director is quoted only for one remark; the figures are not attributed to the plant/KNDS in the article.",
+      "reason": "kind \"Herstellerangabe\" and the uncertainty \"treated as manufacturer-side because the plant director is quoted\" are not supported: the director is quoted only for one remark; the figures are not attributed to the plant/KNDS in the article.",
+      "action": "Change kind to Fakt (media report by Lyon Capitale), remove the manufacturer-side assumption from the uncertainty.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SB-013"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "event_status \"durchgeführt\" and the article title \"confirms delivery\" overstate the body: minister says Ukraine \"is receiving\"; the quote only says the first vehicle destined for Ukraine was stationed in Kassel two years ago (paraphrase says \"sent\"); number/time of handover unclear; combat use explicitly unconfirmed (Bild). Lead cross-check (RCH-155 conflict, see group note) confirms status unresolved.",
+      "reason": "event_status \"durchgeführt\" and the article title \"confirms delivery\" overstate the body: minister says Ukraine \"is receiving\"; the quote only says the first vehicle destined for Ukraine was stationed in Kassel two years ago (paraphrase says \"sent\"); number/time of handover unclear; combat use explicitly unconfirmed (Bild). Lead cross-check (RCH-155 conflict, see group note) confirms status unresolved.",
+      "action": "Set event_status to \"delivery stated by minister, timing/number unclear; Ukrainian use unconfirmed\"; do not present as confirmed delivery or operation. Also remove P-SB-013 from the AGM row (see mapping findings).",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SB-024"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "\"the first PzH 2000 ... was rolled out\" - the release does not say \"first\" for the roll-out; it says the first PzH 2000 are to be delivered from May 2026.",
+      "reason": "\"the first PzH 2000 ... was rolled out\" - the release does not say \"first\" for the roll-out; it says the first PzH 2000 are to be delivered from May 2026.",
+      "action": "Remove \"first\" from the roll-out clause; keep delivery from May 2026 as plan.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SB-027"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Statement says 14 + 11 + 18 \"for a total of 54\", but the source puts the 54 total after \"in addition to 11 SPHs from other countries\"; the omission makes the arithmetic misleading (43 German-provided).",
+      "reason": "Statement says 14 + 11 + 18 \"for a total of 54\", but the source puts the 54 total after \"in addition to 11 SPHs from other countries\"; the omission makes the arithmetic misleading (43 German-provided).",
+      "action": "Add that the total of 54 includes 11 systems from other countries.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SB-029"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "\"97 in Bundeswehr inventory\" is a field of the A4 project entry whose reference the page does not explain (probably older PzH 2000); it can be read as 97 A4 delivered. The page shows no A4 handover.",
+      "reason": "\"97 in Bundeswehr inventory\" is a field of the A4 project entry whose reference the page does not explain (probably older PzH 2000); it can be read as 97 A4 delivered. The page shows no A4 handover.",
+      "action": "Rephrase: page field \"Bestand: 97\" without explanation; no delivery of new A4 vehicles shown.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SB-045"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Unresolved source conflict (RapidFire, 48 systems): Janes says DGA ordered \"48 land-based versions\" (citing a Thales release); KNDS/Thales release (P-SB-043/-044) and EDR (P-SB-046) say 48 RAPIDFire in total, 14 firmly ordered for the Navy, land version \"currently being developed\", two land units for the Air and Space Force \"soon\" for operational testing. event_status \"beauftragt\" therefore not established for land systems.",
+      "reason": "Unresolved source conflict (RapidFire, 48 systems): Janes says DGA ordered \"48 land-based versions\" (citing a Thales release); KNDS/Thales release (P-SB-043/-044) and EDR (P-SB-046) say 48 RAPIDFire in total, 14 firmly ordered for the Navy, land version \"currently being developed\", two land units for the Air and Space Force \"soon\" for operational testing. event_status \"beauftragt\" therefore not established for land systems.",
+      "action": "Restate as conflicting report (Janes: 48 land-based vs manufacturer/EDR: 48 total incl. Navy; land order not established) and set event_status accordingly; do not use as land order or stage basis.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SC-003"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Plural \"30x150mm rounds in the French Air Force and other forces\" generalises: the catalogue page 80 describes only the 30x150 SAPHEI round.",
+      "reason": "Plural \"30x150mm rounds in the French Air Force and other forces\" generalises: the catalogue page 80 describes only the 30x150 SAPHEI round.",
+      "action": "Name the SAPHEI round only.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SC-008"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "event_status \"beauftragt\" overstates: the source supports a procurement authorisation (authorised), not a signed supply contract; statement text (\"authorised\") is correct.",
+      "reason": "event_status \"beauftragt\" overstates: the source supports a procurement authorisation (authorised), not a signed supply contract; statement text (\"authorised\") is correct.",
+      "action": "Set event_status to \"procurement authorised / announced\".",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SC-016"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Source conflict on SHARD announcement date: claim says press release of 18 February 2026 (Calibre Defence); EDR (checked by lead, 17/02/2026 dateline) and Army Recognition give 17 February 2026; ESD article is 19 Feb. KNDS primary release not read by anyone.",
+      "reason": "Source conflict on SHARD announcement date: claim says press release of 18 February 2026 (Calibre Defence); EDR (checked by lead, 17/02/2026 dateline) and Army Recognition give 17 February 2026; ESD article is 19 Feb. KNDS primary release not read by anyone.",
+      "action": "Use 17 February 2026 (announcement per EDR/Army Recognition), mention Calibre's 18 Feb, adjust event_date; or support the date with the KNDS primary release.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SC-020"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Attribution not supported: Breaking Defense paragraph names no speaker; \"citing KNDS at the Paris Air Show\" and kind Herstellerangabe are not established.",
+      "reason": "Attribution not supported: Breaking Defense paragraph names no speaker; \"citing KNDS at the Paris Air Show\" and kind Herstellerangabe are not established.",
+      "action": "Change kind to Fakt (media report) or remove \"citing KNDS\"; keep the uncertainty about the 460 quantity.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SC-022"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Attribution \"According to KNDS\" not supported: the test-count sentence in Defense Mirror is not attributed to KNDS; event_date 2025-11 is not in the article.",
+      "reason": "Attribution \"According to KNDS\" not supported: the test-count sentence in Defense Mirror is not attributed to KNDS; event_date 2025-11 is not in the article.",
+      "action": "Reattribute to Defense Mirror (kind Fakt) and mark the date as \"before qualification, date not stated\".",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SC-024"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "event_status \"beauftragt\" not supported: Breaking Defense (Travert) only says the DGA decided after the Colibri demonstration to order industrialisation; no contract, value or quantity.",
+      "reason": "event_status \"beauftragt\" not supported: Breaking Defense (Travert) only says the DGA decided after the Colibri demonstration to order industrialisation; no contract, value or quantity.",
+      "action": "Set event_status to \"industrialisation decision stated by company; contract not shown\".",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SC-029"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Attribution overstated: \"as stated by KNDS and EOS\" - the 23 MV-100 total, \"DGA acquired\" and the 17/6 VELOCE/RODEUR split are EDR's own understanding; only the 17 VELOCE 330 purchase for test/training is in Breaking Defense (EOS president).",
+      "reason": "Attribution overstated: \"as stated by KNDS and EOS\" - the 23 MV-100 total, \"DGA acquired\" and the 17/6 VELOCE/RODEUR split are EDR's own understanding; only the 17 VELOCE 330 purchase for test/training is in Breaking Defense (EOS president).",
+      "action": "Reattribute: EDR reports DGA acquired 23 (17 VELOCE 330, 6 RODEUR 330 per EDR understanding); Breaking Defense: 17 VELOCE 330 procured for test/training.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SC-036"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "\"According to KNDS France\" is only indirectly supported: Defence Industry Europe states the 2012 unveiling and the use since 2017 (US Navy SEALs, GIGN, CAF, Shanghai) without attributing them to KNDS.",
+      "reason": "\"According to KNDS France\" is only indirectly supported: Defence Industry Europe states the 2012 unveiling and the use since 2017 (US Navy SEALs, GIGN, CAF, Shanghai) without attributing them to KNDS.",
+      "action": "Reattribute to Defence Industry Europe (kind Fakt) or add KNDS source.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SD-012"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Identity link missing: statement and source name WFEL only; no checked source ties WFEL to KNDS UK/KMW for this claim (P-SD-011 only says \"KMW subsidiary\" in 2016). Mapping to KNDS rows DSB relies on this.",
+      "reason": "Identity link missing: statement and source name WFEL only; no checked source ties WFEL to KNDS UK/KMW for this claim (P-SD-011 only says \"KMW subsidiary\" in 2016). Mapping to KNDS rows DSB relies on this.",
+      "action": "Add an evidence item/claim stating WFEL is today KNDS UK (company source) or label the claim as predecessor-company evidence.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SD-013"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Identity link missing: article names neither KNDS nor KMW (document job text search empty); WFEL = KNDS UK not shown; status date 2018 only. Claim is mapped to both DSB and MGB rows.",
+      "reason": "Identity link missing: article names neither KNDS nor KMW (document job text search empty); WFEL = KNDS UK not shown; status date 2018 only. Claim is mapped to both DSB and MGB rows.",
+      "action": "Add evidence linking WFEL to KNDS UK/KMW, or remove from KNDS rows; keep as historical 2018 first tranche to ADF.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SD-021"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "Page states in-service use jointly for MGB and DSB; an MGB-specific statement (British Army, U.S. Army, NATO) is not on the page. Prime-contractor part is supported.",
+      "reason": "Page states in-service use jointly for MGB and DSB; an MGB-specific statement (British Army, U.S. Army, NATO) is not on the page. Prime-contractor part is supported.",
+      "action": "Rephrase to \"MGB and DSB together\" or add an MGB-specific source; keep prime-contractor part.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SD-052"
+      ],
+      "depth": "A",
+      "status": "Korrektur",
+      "note": "\"now KNDS CBRN\" not supported: the article only names NBC-Sys as a subsidiary of the Nexter Group.",
+      "reason": "\"now KNDS CBRN\" not supported: the article only names NBC-Sys as a subsidiary of the Nexter Group.",
+      "action": "Remove the successor wording or support it with a company source; supplier role stays a 2021 manufacturer statement.",
+      "owner": "portfolio"
+    },
+    {
+      "claim_ids": [
+        "P-SA-011",
+        "P-SA-014"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Leopard 2 A8 handover conflict (lead): both statements are correctly attributed and supported. KNDS (19 Nov 2025): handover to the soldiers of both nations to begin April 2026 as contractually agreed; BAAINBw/dpa and Defense News: test vehicles to the Bundeswehr in 2026, delivery to the troops from 2027, all 123 by 2030. Not reconcilable from the documents; lead web check found no report of a Bundeswehr handover by 29 Oct 2026. Treat April 2026 as a manufacturer plan, not as delivery; Bundeswehr row must not exceed roll-out/ordered. Norway handover (P-SA-012) is separate."
+    },
+    {
+      "claim_ids": [
+        "P-SA-012"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Norway delivery of first two A8 NO on 30 Apr 2026 is manufacturer-reported (KNDS release, repeated by Janes citing the KNDS release). Minor source differences (release 29/30 Apr vs 4 May; Levanger start \"autumn\" vs \"Q3 2026\") do not affect the delivery date; production start remains future. Lieferung laut Hersteller berichtet."
+    },
+    {
+      "claim_ids": [
+        "P-SA-027"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Handover of first Lot-2 Puma (28 Aug 2026) is a PSM manufacturer statement relayed by media; vehicles go to testing at WTD 81/91, not troop use. Lieferung laut Hersteller berichtet."
+    },
+    {
+      "claim_ids": [
+        "P-SA-047"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "SERVAL contract date conflict (lead): Theatrum Belli (notified 31 Dec 2024) and KNDS France release (P-SB-058, Dec 2024) agree; Army Recognition says Feb 2025 - treated as outlier. The statement makes no contract-date assertion; uncertainty documents the divergence. Delivery of first 30 and the 21 Jan 2026 announcement are secondary to the unopened ministry release."
+    },
+    {
+      "claim_ids": [
+        "P-SB-010",
+        "P-SB-012",
+        "P-SB-014",
+        "P-SB-015",
+        "P-SB-020"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "RCH 155 / Ukraine (lead cross-check, unresolved): each claim is supported as an attributed report (ESD 13 Jan 2025: first vehicle presented, to train crews in Germany; Ukrinform 15 Mar 2026: 600 Ukrainians trained, system not yet in Bundeswehr service; esut 15 May 2026: delivery to troops imminent; Militarnyi 6 Sep 2026 citing the unofficial tracker German Aid to Ukraine: Ukraine received first; Drummond X post as reported July 2026: combat testing/combat-proven, adviser not an official statement). Together with P-SB-013 no official confirmation of vehicles delivered to or used by Ukraine exists; combat use unconfirmed; lead web check found no new official source. Matrix must not derive series/operation for RCH 155 from these claims."
+    },
+    {
+      "claim_ids": [
+        "P-SB-043",
+        "P-SB-044",
+        "P-SB-046",
+        "P-SB-047",
+        "P-SB-048"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "RapidFire (lead): P-SB-043 and P-SB-047 describe the NAVAL RAPIDFire (in service on Jacques Chevallier; ammunition order for JAGUAR/RAPIDFire) and P-SB-048 the 40 CTAS component on other vehicles; none establishes a status for RapidFire Land. Land version: unveiled/under development (P-SB-044), two units for the Air and Space Force announced \"soon\" for operational testing (P-SB-046, June 2025), no later report. See P-SB-045 correction for the 48-unit conflict."
+    },
+    {
+      "claim_ids": [
+        "P-SB-049",
+        "P-SB-050",
+        "P-SB-051",
+        "P-SB-052",
+        "P-SB-053",
+        "P-SB-054"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "GEPARD (lead): claims are supported as attributed. They concern Gepard transferred from Bundeswehr stocks, KNDS maintenance (KNDS Ukraine), Rheinmetall ammunition (P-SB-051, not KNDS production) and talks/intent; KNDS role as manufacturer/producer of new Gepard is not documented. No series-production or KNDS delivery status derivable."
+    },
+    {
+      "claim_ids": [
+        "P-SB-055",
+        "P-SB-056",
+        "P-SB-057",
+        "P-12"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "FLW (lead): P-SB-055 (BMVg) supports FLW 100/FLW 200 Bundeswehr use and the Jan 2025 further FLW 100 purchase but names no manufacturer; the KNDS attribution of FLW 100 rests on P-12 (KNDS catalogue) and P-SB-056 (defence-network, \"KNDS stations\") and is accepted on that basis. FLW 200 Plus has no order/delivery evidence; status of the FLW 200 Plus variant must not be inferred from FLW 100/200."
+    },
+    {
+      "claim_ids": [
+        "P-SC-009",
+        "P-SC-012"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "KATANA (lead): guidance mode/accuracy differ between product page (GPS/INS/semi-active laser, sub-metre, >40 km), catalogue (GNSS/inertial, decametric, >45 km) and 2024 release (accuracy \"few metres\"); recorded in the uncertainty. Supported as manufacturer statements; no series evidence."
+    },
+    {
+      "claim_ids": [
+        "P-SC-001",
+        "P-SC-013"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "KATANA/155 mm (lead): catalogue/product listing of KATANA gives no status; P-SC-013 (demonstrator TRL 6, offer within two years from June 2024) has expired by the as-of date without confirmation of qualification/order."
+    },
+    {
+      "claim_ids": [
+        "P-SC-018"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "MATARIS (lead): the operational statement (active service since Dec 2025) concerns the MX-10 only and must not be transferred to MV-100, MV-25 or MT-10 although the claim is mapped to those rows (see mapping findings)."
+    },
+    {
+      "claim_ids": [
+        "P-SC-049"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "CENTURIO (lead): DROIDE framework (DGA with KNDS France/Safran, 30 Dec 2024) names no CENTURIO as subject; claim states this; it must not support a CENTURIO status (see mapping findings)."
+    },
+    {
+      "claim_ids": [
+        "P-SC-040",
+        "P-SC-035"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "NERVA/ULTRO (lead): P-SC-040 does not split NERVA types, so no NERVA-XX-specific status follows; P-SC-035 is a video of MT-10 integration on several platforms incl. ULTRO and is no ULTRO test/status evidence."
+    },
+    {
+      "claim_ids": [
+        "P-SC-039"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Supported (EDR 2021); note that the uncertainty \"according to Nexter\" is not what the article says (editorial statement); non-blocking wording fix for the next portfolio round."
+    },
+    {
+      "claim_ids": [
+        "P-SD-041",
+        "P-SD-042"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "D-LBO (lead): Bundeswehr/BMVg pages are programme-level, name neither KNDS nor ArGe D-LBO; conversion counts (>2,000 converted, target 2,700) cover industry as a whole, not a KNDS share; the troop-use date 1 Jan 2027 relates to the first large unit/NATO commitment. Supported as programme-level facts; the link to the KNDS-Rheinmetall ArGe rests on P-SD-040 and must be shown as programme-level in the profile."
+    },
+    {
+      "claim_ids": [
+        "P-SD-050",
+        "P-SD-010",
+        "P-SD-015"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Company/family-level statements (lead): P-SD-050 (CBRN, 70 years), P-SD-010 (MGB and DSB jointly) and P-SD-015 (over 40 armed forces) are supported as manufacturer statements but do not give product-specific status for single rows (cbrn-mask, cbrn-decon, dsb, mgb)."
+    },
+    {
+      "claim_ids": [
+        "P-SD-062",
+        "P-SD-063"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Puma AGSP (lead): supported; the AGSP was developed by Rheinmetall (EUR 118.5m of 119.5m to Rheinmetall electronics); KNDS involvement is only via the PSM joint venture."
+    },
+    {
+      "claim_ids": [
+        "P-SB-004"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Malaysia: KNDS announces acquisition by the Malaysian MoD; the order was formalised between KNDS and local partner ADS; variant and delivery not stated; order only."
+    },
+    {
+      "claim_ids": [
+        "P-SB-036",
+        "P-SB-037",
+        "P-SB-038",
+        "P-SB-039",
+        "P-SB-041",
+        "P-SB-042"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "AGM/DONAR variants (lead): claims mix the truck-mounted AGM, AGM on Piranha HMC/DONAR 10x10 (Swiss order 2026), tracked ASCOD DONAR (2009 prototype) and AGM in RCH 155; each is supported for its own variant only; no common status for the row."
+    },
+    {
+      "claim_ids": [
+        "P-SA-064"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "GFF 4: hobby source (WarWheels.Net), hedged statement; supported only as indication, not decisive for status; prototype status rests on P-SA-063 (2008, historic)."
+    },
+    {
+      "claim_ids": [
+        "P-SA-002"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Handover date: the release (12 Dec 2025) reports completion of delivery with a parade; the exact date of the last vehicle handover is not stated, 12 Dec 2025 is the release date."
+    },
+    {
+      "claim_ids": [
+        "P-01",
+        "P-SA-001",
+        "P-SA-003",
+        "P-SA-004",
+        "P-SA-005",
+        "P-SA-006",
+        "P-SA-007",
+        "P-SA-008",
+        "P-SA-009",
+        "P-SA-010",
+        "P-SA-013",
+        "P-SA-015",
+        "P-SA-016",
+        "P-SA-017",
+        "P-SA-018",
+        "P-SA-019",
+        "P-SA-020",
+        "P-SA-022",
+        "P-SA-023",
+        "P-SA-024",
+        "P-SA-026",
+        "P-04",
+        "P-SA-028",
+        "P-SA-029",
+        "P-SA-030",
+        "P-SA-031",
+        "P-SA-032",
+        "P-SA-033",
+        "P-SA-034",
+        "P-SA-035",
+        "P-SA-036",
+        "P-SA-037",
+        "P-SA-038",
+        "P-SA-039",
+        "P-SA-040",
+        "P-SA-041",
+        "P-SA-042",
+        "P-SA-044",
+        "P-SA-045",
+        "P-SA-046",
+        "P-SA-048",
+        "P-SA-049",
+        "P-SA-051",
+        "P-SA-052",
+        "P-11",
+        "P-SA-053",
+        "P-SA-054",
+        "P-SA-056",
+        "P-SA-057",
+        "P-SA-058",
+        "P-SA-059",
+        "P-SA-060",
+        "P-SA-061",
+        "P-SA-062",
+        "P-SA-063",
+        "P-06",
+        "P-07",
+        "P-08",
+        "P-09",
+        "P-10",
+        "P-SB-001",
+        "P-SB-002",
+        "P-SB-005",
+        "P-SB-006",
+        "P-SB-007",
+        "P-SB-008",
+        "P-SB-009",
+        "P-SB-011",
+        "P-SB-016",
+        "P-SB-017",
+        "P-SB-018",
+        "P-SB-019",
+        "P-SB-021",
+        "P-SB-022",
+        "P-SB-023",
+        "P-SB-025",
+        "P-SB-026",
+        "P-SB-028",
+        "P-SB-030",
+        "P-SB-031",
+        "P-SB-032",
+        "P-SB-033",
+        "P-SB-034",
+        "P-SB-035",
+        "P-SB-040",
+        "P-SB-058",
+        "P-SB-059",
+        "P-SB-060",
+        "P-SB-061",
+        "P-SB-062",
+        "P-SB-063",
+        "P-SB-064",
+        "P-13",
+        "P-14",
+        "P-15",
+        "P-16",
+        "P-SC-002",
+        "P-SC-004",
+        "P-SC-005",
+        "P-SC-006",
+        "P-SC-007",
+        "P-SC-010",
+        "P-SC-011",
+        "P-SC-014",
+        "P-SC-015",
+        "P-SC-017",
+        "P-SC-019",
+        "P-SC-021",
+        "P-SC-023",
+        "P-SC-025",
+        "P-SC-026",
+        "P-SC-027",
+        "P-SC-028",
+        "P-SC-030",
+        "P-SC-031",
+        "P-SC-032",
+        "P-SC-033",
+        "P-SC-034",
+        "P-SC-037",
+        "P-SC-038",
+        "P-SC-041",
+        "P-SC-042",
+        "P-SC-043",
+        "P-SC-044",
+        "P-SC-045",
+        "P-SC-046",
+        "P-SC-047",
+        "P-SC-048",
+        "P-SC-050",
+        "P-SC-051",
+        "P-17",
+        "P-18",
+        "P-19",
+        "P-20",
+        "P-21",
+        "P-SD-001",
+        "P-SD-002",
+        "P-SD-003",
+        "P-SD-004",
+        "P-SD-005",
+        "P-SD-006",
+        "P-SD-007",
+        "P-SD-011",
+        "P-SD-014",
+        "P-SD-020",
+        "P-SD-030",
+        "P-SD-040",
+        "P-SD-043",
+        "P-SD-051",
+        "P-SD-053",
+        "P-SD-065",
+        "P-SD-060",
+        "P-SD-061",
+        "P-SD-070",
+        "P-SD-071",
+        "P-SD-072"
+      ],
+      "depth": "A",
+      "status": "geprüft",
+      "note": "Lead concurrence: all assigned document findings are A/geprüft for every source of the claim (evidence_items sub-contributions read individually; shared claims carried jointly by all sources); statement, Aussageursprung, event date/status (order vs delivery vs use, manufacturer statement kept visible) and product assignment compared with the findings; no higher status than the sources support. Remaining minor wording notes are in the document findings."
+    }
+  ],
+  "mapping_findings": [
+    {
+      "id": "M1",
+      "products": [
+        "agm"
+      ],
+      "claims": [
+        "P-SB-013"
+      ],
+      "issue": "AGM row (claim_ids and section) contains P-SB-013, the RCH 155 Ukraine delivery claim, which is also overstated; it is no AGM status evidence.",
+      "action": "Remove P-SB-013 from agm; derive AGM status only from AGM-specific claims or state it via rch155 without transferring Ukraine delivery.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M2",
+      "products": [
+        "centurio"
+      ],
+      "claims": [
+        "P-SC-049"
+      ],
+      "issue": "DROIDE framework agreement does not name CENTURIO; mapped as CENTURIO status claim.",
+      "action": "Remove from centurio claim_ids (or move to a context section clearly labelled not CENTURIO-specific).",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M3",
+      "products": [
+        "mataris-mv-100",
+        "mataris-mv-25",
+        "mataris-mt-10"
+      ],
+      "claims": [
+        "P-SC-018"
+      ],
+      "issue": "P-SC-018 states operational service for the MX-10 only but is mapped to all four MATARIS rows.",
+      "action": "Keep P-SC-018 only in mataris-mx-10 (family identity via P-14/P-SC-019).",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M4",
+      "products": [
+        "dlbo"
+      ],
+      "claims": [
+        "P-SD-041",
+        "P-SD-042"
+      ],
+      "issue": "Programme-level Bundeswehr/BMVg facts without KNDS/ArGe naming and without KNDS share.",
+      "action": "Keep as programme-level evidence with explicit limitation; do not use alone for a KNDS-specific series/operation stage.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M5",
+      "products": [
+        "rapidfire"
+      ],
+      "claims": [
+        "P-SB-043",
+        "P-SB-047",
+        "P-SB-048",
+        "P-SB-045"
+      ],
+      "issue": "Naval RAPIDFire service, ammunition order, component status and the conflicting 48-unit report are mapped to RapidFire Land.",
+      "action": "Mark naval/ammunition/component claims as context sections; land status only from P-SB-044/P-SB-046; fix P-SB-045.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M6",
+      "products": [
+        "gepard"
+      ],
+      "claims": [
+        "P-SB-050",
+        "P-SB-051",
+        "P-SB-052"
+      ],
+      "issue": "Transferred Bundeswehr Gepard and Rheinmetall ammunition are mapped as status claims although KNDS manufacturer/production role is undocumented.",
+      "action": "Label as context; state in uncertainty that KNDS role is maintenance/repair; P-SB-051 into the existing context section only.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M7",
+      "products": [
+        "cbrn-mask",
+        "cbrn-decon"
+      ],
+      "claims": [
+        "P-SD-050"
+      ],
+      "issue": "Company-level CBRN statement mapped as identity/status for individual products.",
+      "action": "Use only as context; product identity from P-SD-051/-053.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M8",
+      "products": [
+        "training-puma-agsp"
+      ],
+      "claims": [
+        "P-SD-062",
+        "P-SD-063"
+      ],
+      "issue": "AGSP developed by Rheinmetall; KNDS involvement only via PSM JV; row sits in KNDS portfolio without this being visible.",
+      "action": "State PSM/Rheinmetall role in label or uncertainty, or confirm with main agent that the row is within the delegated scope.",
+      "owner": "portfolio / main"
+    },
+    {
+      "id": "M9",
+      "products": [
+        "flw"
+      ],
+      "claims": [
+        "P-SB-055"
+      ],
+      "issue": "BMVg source does not name FLW manufacturer; FLW 200 Plus has no status evidence; row covers three variants.",
+      "action": "Document KNDS attribution via P-12/P-SB-056; limit status to FLW 100/200; variant limits in uncertainty.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M10",
+      "products": [
+        "nerva-xx",
+        "nerva-lg"
+      ],
+      "claims": [
+        "P-SC-040"
+      ],
+      "issue": "Type split of \"56 NERVA robots / several hundred for foreign armies\" not stated.",
+      "action": "No NERVA-XX status from P-SC-040; keep as family context.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M11",
+      "products": [
+        "ultro"
+      ],
+      "claims": [
+        "P-SC-035"
+      ],
+      "issue": "MT-10 integration video is mapped to ULTRO as if ULTRO status evidence.",
+      "action": "Context only; ULTRO status from P-SC-050/-051.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M12",
+      "products": [
+        "dsb",
+        "mgb"
+      ],
+      "claims": [
+        "P-SD-010",
+        "P-SD-012",
+        "P-SD-013",
+        "P-SD-021"
+      ],
+      "issue": "Family-level or WFEL-named claims mapped to single-product rows without KNDS UK identity link.",
+      "action": "See claim corrections P-SD-012/-013/-021; P-SD-010 jointly DSB+MGB must be labelled as such.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M13",
+      "products": [
+        "donar",
+        "agm"
+      ],
+      "claims": [
+        "P-SB-038",
+        "P-SB-039",
+        "P-SB-041",
+        "P-SB-042"
+      ],
+      "issue": "Row donar mixes tracked ASCOD DONAR (2009 prototype) and Swiss DONAR 10x10 on Piranha IV (2026 order); agm row also receives P-SB-038/-039. Variants with different status are not split.",
+      "action": "Split into variant rows or state the represented variant; one status per row.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M14",
+      "products": [
+        "dingo",
+        "caesar",
+        "leopard-2a7v"
+      ],
+      "claims": [
+        "P-SA-056",
+        "P-SA-058",
+        "P-SB-003",
+        "P-SB-006",
+        "P-SA-009"
+      ],
+      "issue": "Variant mixing within rows: Dingo 2 A4.1 vs Dingo 3 (naming unresolved), CAESAR 6x6 vs Mk II/8x8 (rates not variant-specific), A7V vs A7A1.",
+      "action": "Name variants in uncertainty; final reviewer must not carry variant evidence into the row stage.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M15",
+      "products": [
+        "all"
+      ],
+      "claims": [],
+      "issue": "Domain \"Services and training\" differs from the delivered HTML/existing-portfolio group name \"Service and training\" (delegation: keep existing group names).",
+      "action": "Use \"Service and training\" (check the HTML) for training, training-leo2-sweden, training-puma-agsp, service, service-canada, service-ukraine.",
+      "owner": "portfolio"
+    },
+    {
+      "id": "M16",
+      "products": [
+        "thl",
+        "gepard"
+      ],
+      "claims": [],
+      "issue": "Old bundled row \"FLW · ARX · THL / Medium calibre\" lost its Medium calibre part (cannons 20M621, 25M811, 30M781 etc. not assessed; gap recorded). Rows added beyond the old labels (leopard-2a8, dlbo, cbrn-mask, cbrn-decon, training-leo2-sweden, training-puma-agsp, service-canada, service-ukraine) should be checked against the Teilaufträge A-D scope.",
+      "action": "Portfolio/main: add medium-calibre row or state exclusion in the matrix methodology; confirm the extra rows are in scope.",
+      "owner": "portfolio / main"
+    }
+  ],
+  "source_checks": [
+    {
+      "source_id": "S-00d6ee6495184271",
+      "claim_ids": [
+        "P-SA-006"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-04a9c382f0bc91bf",
+      "claim_ids": [
+        "P-SA-018",
+        "P-SA-019"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-06421b50be671aa0",
+      "claim_ids": [
+        "P-SB-003"
+      ],
+      "note": "Lyon Capitale-Artikel (13.07.2026) über Quellencache gelesen (Volltext, Absätze zu Nextfab/Raten und SCORPION/Caesar)."
+    },
+    {
+      "source_id": "S-081455a6101c816e",
+      "claim_ids": [
+        "P-SB-050",
+        "P-SB-051"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-08414f6312d07936",
+      "claim_ids": [
+        "P-SC-042"
+      ],
+      "note": "Defense Mirror 16.10.2024 gelesen (Absätze 1-2 und Datumszeile)."
+    },
+    {
+      "source_id": "S-086937648044a782",
+      "claim_ids": [
+        "P-11",
+        "P-21"
+      ],
+      "note": "Gelesen: cache read (HTML-Text, http-original), Seite KNDS Deutschland Zeilen 10-60 (Portfolio-/Leistungsspektrum, Kundendienst, Wartung/Ausbildung)."
+    },
+    {
+      "source_id": "S-0d0668145edf4607",
+      "claim_ids": [
+        "P-SB-047"
+      ],
+      "note": "Naval News 20.06.2025 gelesen (Absätze 1-7, Aufzählung der Einsatzsysteme)."
+    },
+    {
+      "source_id": "S-0dd13a3430574f68",
+      "claim_ids": [
+        "P-17",
+        "P-SD-007"
+      ],
+      "note": "Gelesen: cache read, komplette LEGUAN-Produktseite (Zeilen 17-80: Features, 'International teaming', 'Facts about the LEGUAN LEOPARD 2')."
+    },
+    {
+      "source_id": "S-0df7d1e4993cf9cd",
+      "claim_ids": [
+        "P-SB-018",
+        "P-SB-029"
+      ],
+      "note": "Gelesen: cache read; Abschnitte PzH 2000 A4 (Z. 429-449), RCH 155 (Z. 450-466) sowie Dingo (Z. 304-320) im Original-Text; Metadaten dateModified 2026-10-22 im gespeicherten Original-HTML (source.bin) bestätigt."
+    },
+    {
+      "source_id": "S-0ed42f15608cd2cd",
+      "claim_ids": [
+        "P-SB-031"
+      ],
+      "note": "Augen geradeaus 15.06.2022 gelesen (Absätze 1-4, Statement-Nachtrag)."
+    },
+    {
+      "source_id": "S-1076e757bfbb6481",
+      "claim_ids": [
+        "P-SA-033"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-108999689b0d838d",
+      "claim_ids": [
+        "P-SD-003",
+        "P-SD-065"
+      ],
+      "note": "KNDS-Pressemitteilung 23.07.2020 gelesen (Absätze 1-3). Seitenfuß enthält spätere Kennzahlen (2023); nicht verwendet."
+    },
+    {
+      "source_id": "S-10bb2db9567e98a1",
+      "claim_ids": [
+        "P-SB-008"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-15fc00956abaf7b7",
+      "claim_ids": [
+        "P-SC-037"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-1a4e06392b187ffb",
+      "claim_ids": [
+        "P-SA-056"
+      ],
+      "note": "Gelesen: cache read, Janes-Artikel vom 01.12.2023 vollständig (Zeilen 11-22 Inhalt; Rest Navigation)."
+    },
+    {
+      "source_id": "S-1b6c2f2ee1b05d06",
+      "claim_ids": [
+        "P-SA-044"
+      ],
+      "note": "Gelesen: cache read, SERVAL-Produktseite Zeilen 15-60 (Intro, Facts, Specifications)."
+    },
+    {
+      "source_id": "S-1c5dd1f131f057a4",
+      "claim_ids": [
+        "P-SB-007"
+      ],
+      "note": "Gelesen: cache read, KNDS-Pressemitteilung vom 24.01.2024 vollständig (Zeilen 11-24)."
+    },
+    {
+      "source_id": "S-1d6c74253ee37970",
+      "claim_ids": [
+        "P-SC-041"
+      ],
+      "note": "Gelesen: cache read, Defense-Mirror-Artikel vom 29.11.2024 vollständig (Zeilen 73-83; Rest Navigation)."
+    },
+    {
+      "source_id": "S-1e36d6e4ba085ffa",
+      "claim_ids": [
+        "P-SC-036",
+        "P-SC-041"
+      ],
+      "note": "Gelesen: cache read, Defence-Industry-Europe-Artikel vom 30.11.2024 vollständig (Zeilen 11-26)."
+    },
+    {
+      "source_id": "S-1fb6bc3d36a3ffa1",
+      "claim_ids": [
+        "P-SB-063"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-1fbf7e7a634158bc",
+      "claim_ids": [
+        "P-SB-059"
+      ],
+      "note": "Gelesen: cache read, ARX20-Produktseite Zeilen 14-75 (Intro, Facts, Specs, Related)."
+    },
+    {
+      "source_id": "S-219f5e5f415564c3",
+      "claim_ids": [
+        "P-SA-017"
+      ],
+      "note": "Defence Redefined 01.12.2023 gelesen (Absätze 1-5)."
+    },
+    {
+      "source_id": "S-236a4e15250320c1",
+      "claim_ids": [
+        "P-SC-015"
+      ],
+      "note": "European Security & Defence (Artikel 29.02.2024, Seite ohne Metadatum, Datum im Text) gelesen (Absätze 1-8)."
+    },
+    {
+      "source_id": "S-2570c8a1f788d668",
+      "claim_ids": [
+        "P-SB-017"
+      ],
+      "note": "Gelesen: cache read, Rheinmetall-Pressemitteilung 19.12.2025 vollständig (Zeilen 9-22)."
+    },
+    {
+      "source_id": "S-26ccacf7b7f08845",
+      "claim_ids": [
+        "P-SA-035"
+      ],
+      "note": "Gelesen: cache read, DGA-Meldung vom 14.10.2024 (Zeilen 41-55) sowie Teaser-Block 'Dossier' (Z. 65-73)."
+    },
+    {
+      "source_id": "S-2947965d6409d2ab",
+      "claim_ids": [
+        "P-SC-021"
+      ],
+      "note": "Army Recognition (2026, ohne Metadatum) gelesen (Absätze 1-3 und Planung)."
+    },
+    {
+      "source_id": "S-2a19a44bae9c9218",
+      "claim_ids": [
+        "P-SC-002",
+        "P-SC-003",
+        "P-SC-007",
+        "P-SC-009",
+        "P-SC-014"
+      ],
+      "note": "KNDS Ammunition Catalogue 2026-2027 über Cache (pdftotext, PDF-Seiten 9, 10, 12, 17, 43, 44, 80) gelesen; Herstellerkatalog."
+    },
+    {
+      "source_id": "S-2b10b29533252970",
+      "claim_ids": [
+        "P-SA-022"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-2c2ab405ba99057a",
+      "claim_ids": [
+        "P-SD-051",
+        "P-SD-053"
+      ],
+      "note": "Gelesen: cache read, Al-Defaiya-Wiederveröffentlichung vom 16.03.2026 vollständig (Zeilen 21-40)."
+    },
+    {
+      "source_id": "S-2cd221b99b7d9180",
+      "claim_ids": [
+        "P-SA-028"
+      ],
+      "note": "Gelesen: cache read, KNDS-Pressemitteilung 07.08.2026 (Zeilen 11-25)."
+    },
+    {
+      "source_id": "S-2d388c04c392e1b0",
+      "claim_ids": [
+        "P-SB-035"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-2ee9de3ff66befeb",
+      "claim_ids": [
+        "P-SA-051"
+      ],
+      "note": "Army Recognition Eurosatory-2026-Artikel (ohne Metadatum, Datum im Text) gelesen (Absätze 1-6)."
+    },
+    {
+      "source_id": "S-3090eecc207ffa9a",
+      "claim_ids": [
+        "P-SB-005"
+      ],
+      "note": "PDF-Datenblatt über source-cache.py read (extrahierter PDF-Text, mehrspaltig, Spalten vermischt) gelesen: Kopfzeile und Kästen 'Maturity and long-term support'."
+    },
+    {
+      "source_id": "S-314418b5ddde95dc",
+      "claim_ids": [
+        "P-SA-027"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-326d2a4038c68789",
+      "claim_ids": [
+        "P-SA-016"
+      ],
+      "note": "Gelesen: cache read, Europe-1-Artikel 12.01.2023 (Zeilen 59-82 vollständig)."
+    },
+    {
+      "source_id": "S-34828887c7a7a16c",
+      "claim_ids": [
+        "P-SD-060",
+        "P-SD-061"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-3496e4ec33c08cb2",
+      "claim_ids": [
+        "P-SA-042",
+        "P-SA-046"
+      ],
+      "note": "Army Recognition Serval-Estland-Artikel (Jahr 2024 in Seitenkopf/Pfad) gelesen (Absätze 1-5)."
+    },
+    {
+      "source_id": "S-372b572774c041fa",
+      "claim_ids": [
+        "P-SA-037"
+      ],
+      "note": "Army Recognition (2025) gelesen (Absätze 1-8)."
+    },
+    {
+      "source_id": "S-39b29037729ef83f",
+      "claim_ids": [
+        "P-SC-050"
+      ],
+      "note": "KNDS ULTRO-Produktseite gelesen (Absätze 1-3, Kennwerte)."
+    },
+    {
+      "source_id": "S-39fa72dccabdf08b",
+      "claim_ids": [
+        "P-SD-011"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-3a3cf5ff81f73786",
+      "claim_ids": [
+        "P-SC-019",
+        "P-SC-027",
+        "P-SC-028",
+        "P-SC-029",
+        "P-SC-031",
+        "P-SC-033"
+      ],
+      "note": "Gelesen: cache read, EDR-Magazine-Artikel 24.06.2025 (Zeilen 38-60) vollständig inkl. Fußnoten [1]-[3]."
+    },
+    {
+      "source_id": "S-3b6ac7ad2710c1a9",
+      "claim_ids": [
+        "P-SA-038",
+        "P-SA-043",
+        "P-SA-048"
+      ],
+      "note": "EDR Magazine 03.02.2026 gelesen (Absätze 1-5)."
+    },
+    {
+      "source_id": "S-3d9c8d75722ab803",
+      "claim_ids": [
+        "P-SA-012"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-3dc1d7011297ff48",
+      "claim_ids": [
+        "P-SA-062"
+      ],
+      "note": "Gelesen: cache read, GFF-4-Produktseite Zeilen 12-60 (Overview, Facts)."
+    },
+    {
+      "source_id": "S-3f82023a2b6d96d7",
+      "claim_ids": [
+        "P-SC-008"
+      ],
+      "note": "Gelesen: cache read, Defence24-Artikel (polnisch) Zeilen 22-46; Veröffentlichungsdatum im Seitentext: 27.02.2023."
+    },
+    {
+      "source_id": "S-40d6550e6d325387",
+      "claim_ids": [
+        "P-SB-056"
+      ],
+      "note": "defence-network.com 24.01.2025 gelesen (Abschnitt FLW 100/200 und Einleitung)."
+    },
+    {
+      "source_id": "S-413ab7fe9469ddec",
+      "claim_ids": [
+        "P-SB-057"
+      ],
+      "note": "KNDS FLW-200-Produktseite gelesen (Einleitung, Spezifikation, Abschnitt KNDS Deutschland)."
+    },
+    {
+      "source_id": "S-4242af39d20d3562",
+      "claim_ids": [
+        "P-15"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-42e84694be062d71",
+      "claim_ids": [
+        "P-SB-032"
+      ],
+      "note": "BMVg-Pressemitteilung 15.09.2022: Cache-Textextrakt unlesbar (gzip); Originalbytes (source.bin, SHA-256 c8e3b558…, identisch mit Snapshot) selbst per gzip dekodiert und gelesen (Absätze 1-3)."
+    },
+    {
+      "source_id": "S-45496f93e428e25f",
+      "claim_ids": [
+        "P-SB-061"
+      ],
+      "note": "ESD-Artikel 12.03.2026 (BEDEX) gelesen (Absatz 3D-Schutzökosystem)."
+    },
+    {
+      "source_id": "S-459a4d4a1990b30e",
+      "claim_ids": [
+        "P-SC-021"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-47bb621c6a3c6d4c",
+      "claim_ids": [
+        "P-SD-001",
+        "P-SD-065"
+      ],
+      "note": "Gelesen: cache read, EDR-Artikel (Wiedergabe der KMW-Mitteilung) vom 10.12.2019 vollständig (Zeile 42 Haupttext)."
+    },
+    {
+      "source_id": "S-4a4602eb35f54d01",
+      "claim_ids": [
+        "P-SA-008"
+      ],
+      "note": "Gelesen: cache read, Defence24-Artikel (polnisch) vom 29.10.2019, Zeilen 22-46 vollständig."
+    },
+    {
+      "source_id": "S-4c8c6bf777afe77f",
+      "claim_ids": [
+        "P-SA-015"
+      ],
+      "note": "hartpunkt 17.12.2025 gelesen (Absätze 1-4)."
+    },
+    {
+      "source_id": "S-4caf2e8adadc1cdf",
+      "claim_ids": [
+        "P-SD-051",
+        "P-SD-053"
+      ],
+      "note": "EDR Magazine (Pressemitteilung KNDS CBRN, Brüssel 13.03.2026) gelesen (Absätze 1-12)."
+    },
+    {
+      "source_id": "S-4d6adea9226ecb34",
+      "claim_ids": [
+        "P-SB-057"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-4da0f1a41c4b8354",
+      "claim_ids": [
+        "P-SB-042"
+      ],
+      "note": "Gelesen: cache read, Army-Guide-Artikel (GD ELS/KMW-Pressetext, AUSA 2009) Zeilen 33-41."
+    },
+    {
+      "source_id": "S-4f97ad522106cb38",
+      "claim_ids": [
+        "P-09",
+        "P-12",
+        "P-16",
+        "P-18"
+      ],
+      "note": "KNDS-Systemübersicht gelesen (Abschnitte Artillery, Turrets, Cannons, Bridges, Robotics)."
+    },
+    {
+      "source_id": "S-51e10c963ec834f4",
+      "claim_ids": [
+        "P-SA-012",
+        "P-SA-013"
+      ],
+      "note": "Gelesen: cache read, Janes-Artikel vom 12.05.2026 vollständig (Zeilen 17-21)."
+    },
+    {
+      "source_id": "S-55e7ca27a0361c81",
+      "claim_ids": [
+        "P-SD-042"
+      ],
+      "note": "Extrakttext aus source-cache.py read war durch gzip-Bytes beschädigt (Hinweis 'Encoding replacement detected'); Original aus den gespeicherten Originalbytes (source.bin, gzip) dekodiert und Artikeltext vollständig gelesen; Veröffentlichungsdatum 16.10.2026 auf der Seite bestätigt."
+    },
+    {
+      "source_id": "S-584f9f611e8055e9",
+      "claim_ids": [
+        "P-SB-028"
+      ],
+      "note": "Gelesen: cache read, ESD-Artikel vom 03.04.2024 (Zeilen 95-109) vollständig."
+    },
+    {
+      "source_id": "S-59e8dbacbb32b001",
+      "claim_ids": [
+        "P-SC-051"
+      ],
+      "note": "Gelesen: cache read, auto-motor-und-sport-Artikel vom 07.04.2026 (Zeilen 31-50) vollständig."
+    },
+    {
+      "source_id": "S-5a6a692d962fc23f",
+      "claim_ids": [
+        "P-SD-013"
+      ],
+      "note": "Gelesen: cache read, Army-Technology-Artikel vom 08.03.2018 (Zeilen 149-180 inkl. nachgeladenem Textblock ab Z. 171)."
+    },
+    {
+      "source_id": "S-5b1a551b6e9e9475",
+      "claim_ids": [
+        "P-SD-006"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-5d0f11d37d7d69bf",
+      "claim_ids": [
+        "P-SD-072"
+      ],
+      "note": "Army Technology 02.10.2024 gelesen (Absätze 1-12)."
+    },
+    {
+      "source_id": "S-5d64e28c5982c862",
+      "claim_ids": [
+        "P-SC-049"
+      ],
+      "note": "Defense Mirror 08.02.2025 gelesen (Absätze 1-3)."
+    },
+    {
+      "source_id": "S-5ddece3621c9c23c",
+      "claim_ids": [
+        "P-SA-055"
+      ],
+      "note": "Gelesen: cache read, KNDS-Pressemitteilung Zeilen 11-31; Datum im Text '06.12.2023' (Z. 14)."
+    },
+    {
+      "source_id": "S-5f3c57dfe3f913fd",
+      "claim_ids": [
+        "P-SB-012"
+      ],
+      "note": "Ukrinform 15.03.2026 gelesen (Absätze 1-8)."
+    },
+    {
+      "source_id": "S-612d6e55d2eb1a65",
+      "claim_ids": [
+        "P-SA-059"
+      ],
+      "note": "KNDS-Seite DINGO 3 (Deutsch) gelesen (Einleitung, Faktenabschnitt, Schlussabsatz)."
+    },
+    {
+      "source_id": "S-615341f26bb37ce2",
+      "claim_ids": [
+        "P-SB-016"
+      ],
+      "note": "Gelesen: cache read, KNDS-Pressemitteilung (deutsch) vom 19.12.2025 Zeilen 11-19."
+    },
+    {
+      "source_id": "S-62287c49ce019261",
+      "claim_ids": [
+        "P-SA-047"
+      ],
+      "note": "Gelesen: cache read, Theatrum-Belli-Artikel vom 24.01.2026 (Zeilen 87-124) vollständig."
+    },
+    {
+      "source_id": "S-647e234dfcf4098f",
+      "claim_ids": [
+        "P-04"
+      ],
+      "note": "KNDS BOXER-RCT30-Produktseite gelesen (Einleitung, Spezifikation, Beschreibung)."
+    },
+    {
+      "source_id": "S-64902f4dbe1a905a",
+      "claim_ids": [
+        "P-19",
+        "P-SD-015"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-670840d28766decf",
+      "claim_ids": [
+        "P-SD-060",
+        "P-SD-061"
+      ],
+      "note": "Gelesen: cache read, KNDS-Pressemitteilung 13.02.2024 (Zeilen 13-18)."
+    },
+    {
+      "source_id": "S-674182f0d8468117",
+      "claim_ids": [
+        "P-SC-004",
+        "P-SC-005"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-683ba892c2c8c1d5",
+      "claim_ids": [
+        "P-SC-026"
+      ],
+      "note": "KNDS MV-25-OSKAR-Produktseite gelesen (Absätze 1-3)."
+    },
+    {
+      "source_id": "S-687b84418c044515",
+      "claim_ids": [
+        "P-SD-002"
+      ],
+      "note": "Gelesen: cache read, ESUT-Meldung (03.08.2020) Zeilen 124-131 (Artikeltext vollständig, Rest Navigation/Cookie-Text)."
+    },
+    {
+      "source_id": "S-69fd8295dce358bf",
+      "claim_ids": [
+        "P-SB-034"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-6bc5f70defe492d2",
+      "claim_ids": [
+        "P-SA-037"
+      ],
+      "note": "Frei sichtbarer Janes-Artikeltext (Abs. 1-4) über source-cache.py read gelesen; Janes-Zusatzmaterial hinter Abo nicht benötigt."
+    },
+    {
+      "source_id": "S-6bfb59bbe9a3dcf6",
+      "claim_ids": [
+        "P-SB-052"
+      ],
+      "note": "Gelesen: cache read, Keystone-SDA/dpa-Meldung vom 25.07.2025 (Zeilen 38-50)."
+    },
+    {
+      "source_id": "S-6c6ee0e3fd30c937",
+      "claim_ids": [
+        "P-SA-018"
+      ],
+      "note": "Gelesen: cache read, Defense-Mirror-Artikel vom 31.01.2025 (Zeilen 72-84) vollständig."
+    },
+    {
+      "source_id": "S-6c84242ff77b4c1c",
+      "claim_ids": [
+        "P-SC-004",
+        "P-SC-005"
+      ],
+      "note": "Gelesen: cache read, EDR-Magazine-Wiedergabe der KNDS-Belgium-Mitteilung (Zeilen 38-46) vollständig."
+    },
+    {
+      "source_id": "S-6c8b3e18669d4597",
+      "claim_ids": [
+        "P-SB-023"
+      ],
+      "note": "Gelesen: cache read, Rheinmetall-Pressemitteilung vom 31.07.2026 (Zeilen 10-22) vollständig."
+    },
+    {
+      "source_id": "S-6e26579fbf388dc1",
+      "claim_ids": [
+        "P-SB-063"
+      ],
+      "note": "KNDS-THL20-Produktseite gelesen (Einleitung, Faktenabschnitt)."
+    },
+    {
+      "source_id": "S-6e37c58f05fb5c88",
+      "claim_ids": [
+        "P-SB-058"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-6efe75db8d4fd730",
+      "claim_ids": [
+        "P-SC-020",
+        "P-SC-024",
+        "P-SC-029",
+        "P-SC-033"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-70dc963267bd3ddf",
+      "claim_ids": [
+        "P-SB-049"
+      ],
+      "note": "defence-network.com 01.10.2024 gelesen (Absätze 1-8)."
+    },
+    {
+      "source_id": "S-716eee0af365f067",
+      "claim_ids": [
+        "P-SC-035"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-735b6d1356a73251",
+      "claim_ids": [
+        "P-SB-004"
+      ],
+      "note": "Gelesen: cache read, KNDS-Pressemitteilung vom 16.06.2026 (Zeilen 11-27) vollständig."
+    },
+    {
+      "source_id": "S-736964fb687bbb29",
+      "claim_ids": [
+        "P-SC-043",
+        "P-SC-051"
+      ],
+      "note": "Gelesen: cache read, Military-Aktuell-Artikel vom 26.03.2026 (Zeilen 213-241) vollständig."
+    },
+    {
+      "source_id": "S-7455eac2de5250a1",
+      "claim_ids": [
+        "P-SB-039"
+      ],
+      "note": "Armada International 02.07.2026 gelesen (Absätze 1-6)."
+    },
+    {
+      "source_id": "S-75166609aad6b378",
+      "claim_ids": [
+        "P-SD-071"
+      ],
+      "note": "Babel 21.01.2025 gelesen (Absätze 1-6)."
+    },
+    {
+      "source_id": "S-762f7c6bc635d7a2",
+      "claim_ids": [
+        "P-SC-040"
+      ],
+      "note": "Al Defaiya 11.06.2021 gelesen (Absätze 1-6)."
+    },
+    {
+      "source_id": "S-77aababed8daf0b8",
+      "claim_ids": [
+        "P-SB-059"
+      ],
+      "note": "KNDS ARX25-Produktseite gelesen (Abschnitte 1-6)."
+    },
+    {
+      "source_id": "S-7836dc8f37af6164",
+      "claim_ids": [
+        "P-SB-030"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-7a154b749e856b87",
+      "claim_ids": [
+        "P-SC-011",
+        "P-SC-013"
+      ],
+      "note": "Gelesen: cache read, Defense-Post-Artikel vom 24.06.2024 (Zeilen 33-56)."
+    },
+    {
+      "source_id": "S-7d4e2671399627b1",
+      "claim_ids": [
+        "P-SB-002"
+      ],
+      "note": "Gelesen: cache read, KNDS-Pressemitteilung (Amsterdam, 26.05.2026) Zeilen 11-29; Absatz zum Ramp-up Zeile 29."
+    },
+    {
+      "source_id": "S-7de56aec0f84a3c6",
+      "claim_ids": [
+        "P-SC-032"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-7fa97d679979c2c6",
+      "claim_ids": [
+        "P-SB-009"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-7fcb16935538891a",
+      "claim_ids": [
+        "P-SA-009"
+      ],
+      "note": "Frei sichtbarer Janes-Artikeltext (Abs. 1-6) über source-cache.py read gelesen; Zusatzinhalte hinter Abo nicht benötigt."
+    },
+    {
+      "source_id": "S-804fa628e354cfad",
+      "claim_ids": [
+        "P-SB-064"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-81ce428ece268924",
+      "claim_ids": [
+        "P-SC-048"
+      ],
+      "note": "Defence24 (polnisch) gelesen (Absätze zu Centurio X30 und Chronologie)."
+    },
+    {
+      "source_id": "S-82a378b89948e5f5",
+      "claim_ids": [
+        "P-SA-063"
+      ],
+      "note": "Gelesen: cache read, Army-Technology-Projektseite GFF 4 (Zeilen 152-200); undatiert."
+    },
+    {
+      "source_id": "S-8353b232dcdf4c30",
+      "claim_ids": [
+        "P-SD-014"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-838217822395dd4a",
+      "claim_ids": [
+        "P-SB-036"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-853f4c3e4301aa4d",
+      "claim_ids": [
+        "P-SD-030"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-86b2f2d091553389",
+      "claim_ids": [
+        "P-SD-040"
+      ],
+      "note": "Gelesen: cache read, KNDS-Pressemitteilung (München/Koblenz, 19.12.2024) Zeilen 13-19."
+    },
+    {
+      "source_id": "S-86d61336ff39d3dd",
+      "claim_ids": [
+        "P-SB-037"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-87963d9398e36190",
+      "claim_ids": [
+        "P-SB-014",
+        "P-SB-015"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-88235a3b6dda2acd",
+      "claim_ids": [
+        "P-SC-038"
+      ],
+      "note": "Gelesen: cache read, EDR-Meldung (Ministerium-Mitteilung vom 20.09.2019) Zeilen 38-55."
+    },
+    {
+      "source_id": "S-89bdf6749f713790",
+      "claim_ids": [
+        "P-SC-018",
+        "P-SC-034"
+      ],
+      "note": "KNDS-Pressemitteilung 18.06.2026 gelesen (Absätze 1-8)."
+    },
+    {
+      "source_id": "S-89dce88192650540",
+      "claim_ids": [
+        "P-SC-009"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-89dd10c16b4f1318",
+      "claim_ids": [
+        "P-SA-004"
+      ],
+      "note": "Gelesen: cache read, Defence-Industry-Europe-Artikel vom 08.10.2023 (Zeilen 11-22)."
+    },
+    {
+      "source_id": "S-8a06882d2a6a1929",
+      "claim_ids": [
+        "P-SB-020",
+        "P-SB-022"
+      ],
+      "note": "esut.de 15.05.2026 gelesen (Absätze 1-14)."
+    },
+    {
+      "source_id": "S-8a42e4d1ad6e2219",
+      "claim_ids": [
+        "P-01",
+        "P-SA-001",
+        "P-SA-005"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-8d5522a067055b85",
+      "claim_ids": [
+        "P-SA-047"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-92d4e0a75a36b0f2",
+      "claim_ids": [
+        "P-SB-062"
+      ],
+      "note": "Gelesen: cache read, KNDS-Pressemitteilung (22.06.2023) Zeilen 13-27."
+    },
+    {
+      "source_id": "S-937ae61f03cd1731",
+      "claim_ids": [
+        "P-SC-025",
+        "P-SC-026"
+      ],
+      "note": "Euromaidan Press 17.06.2025 gelesen (Absätze 1-8)."
+    },
+    {
+      "source_id": "S-94e524ffa416c9c1",
+      "claim_ids": [
+        "P-SA-049"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-985a5fe13a4cd562",
+      "claim_ids": [
+        "P-SB-019"
+      ],
+      "note": "KNDS-Pressemitteilung München 14.05.2026 gelesen (Absätze 1-6)."
+    },
+    {
+      "source_id": "S-98f07af64f55666e",
+      "claim_ids": [
+        "P-SC-023"
+      ],
+      "note": "The Defense Post 16.10.2026 gelesen (Absätze 1-8)."
+    },
+    {
+      "source_id": "S-990434c1b62f333f",
+      "claim_ids": [
+        "P-SC-028"
+      ],
+      "note": "Gelesen: cache read, KNDS MV-100 VELOCE Produktseite Zeilen 15-46."
+    },
+    {
+      "source_id": "S-991d4220bb3c40c6",
+      "claim_ids": [
+        "P-SA-064"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-9a324c1b2ff6ef2e",
+      "claim_ids": [
+        "P-SA-024"
+      ],
+      "note": "Bundeswehr-Artikel 15.06.2023: Cache-Text unlesbar (gzip); Originalbytes selbst per gzip dekodiert und gelesen (Absätze 1-9)."
+    },
+    {
+      "source_id": "S-9a994f8cc65fad0b",
+      "claim_ids": [
+        "P-SA-007"
+      ],
+      "note": "Gelesen: cache read, EDR-Wiedergabe der KMW-Mitteilung (München, 29.10.2019; EDR 30.10.2019) Zeilen 38-56 vollständig."
+    },
+    {
+      "source_id": "S-9ce97642693d7c16",
+      "claim_ids": [
+        "P-SA-034"
+      ],
+      "note": "Gelesen: cache read, KNDS-GRIFFON-Produktseite Zeilen 16-73."
+    },
+    {
+      "source_id": "S-a2e2089920633f48",
+      "claim_ids": [
+        "P-SA-032"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-a320eae326a26335",
+      "claim_ids": [
+        "P-SA-003"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-a43a1af456113f5d",
+      "claim_ids": [
+        "P-SB-060"
+      ],
+      "note": "Defence ReDEFiNED 10.04.2024 gelesen (Absätze 1-8)."
+    },
+    {
+      "source_id": "S-a5a797cf3b776ceb",
+      "claim_ids": [
+        "P-SD-010"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-a700649482832648",
+      "claim_ids": [
+        "P-SD-050"
+      ],
+      "note": "KNDS-CBRN-Unterseite gelesen (Einleitung, Produktliste)."
+    },
+    {
+      "source_id": "S-a757e9aba1762b82",
+      "claim_ids": [
+        "P-SD-020"
+      ],
+      "note": "Army Technology MGB-Projektprofil (undatiert) gelesen (Absätze Übersicht und Contracts)."
+    },
+    {
+      "source_id": "S-a956241b6fee9a37",
+      "claim_ids": [
+        "P-SA-061"
+      ],
+      "note": "Shephard 10.11.2021 gelesen (Absätze 1-9; Premium-Teaser, Artikelteil vollständig sichtbar)."
+    },
+    {
+      "source_id": "S-a99fd782e733a804",
+      "claim_ids": [
+        "P-SA-060"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-aa11d141db260364",
+      "claim_ids": [
+        "P-SD-014"
+      ],
+      "note": "Gelesen: cache read, Defense-Post-Artikel vom 06.02.2024 (Zeilen 7-23) vollständig."
+    },
+    {
+      "source_id": "S-aadcb3da199c3d17",
+      "claim_ids": [
+        "P-SC-001"
+      ],
+      "note": "Gelesen: cache read, KNDS-Produktseite '155mm Ammunition' Zeilen 7-35."
+    },
+    {
+      "source_id": "S-ad189a4b9c19e1c2",
+      "claim_ids": [
+        "P-SA-039"
+      ],
+      "note": "KNDS-JAGUAR-Produktseite gelesen (Einleitung, Faktenabschnitt)."
+    },
+    {
+      "source_id": "S-af49a45e847aebd4",
+      "claim_ids": [
+        "P-SA-053"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-af673b6817266e46",
+      "claim_ids": [
+        "P-07"
+      ],
+      "note": "Gelesen: cache read, KNDS-Produktseite RCH 155 Zeilen 14-81."
+    },
+    {
+      "source_id": "S-b089d8c896987d3f",
+      "claim_ids": [
+        "P-SC-006"
+      ],
+      "note": "Gelesen: cache read, Artikeltext (polnisch, Live-Beitrag vom 18.06.2026) Zeilen 83-91 vollständig."
+    },
+    {
+      "source_id": "S-b1618e7ff9721cd4",
+      "claim_ids": [
+        "P-SD-041"
+      ],
+      "note": "Bundeswehr-Meldung 12.10.2026: Cache-Text unlesbar (gzip); Originalbytes der aktuellen Version (SHA-256 0894d53a…, stimmt mit Snapshot) selbst per gzip dekodiert und gelesen (Absätze 1-12). Eine ältere Cacheversion (1d76d492…) existiert; nicht verwendet."
+    },
+    {
+      "source_id": "S-b30c05fe1b577a0f",
+      "claim_ids": [
+        "P-SA-057"
+      ],
+      "note": "Sicherheit & Verteidigung 19.12.2024 gelesen (Absätze 1-5)."
+    },
+    {
+      "source_id": "S-b3d6ea0a4ecf3ff5",
+      "claim_ids": [
+        "P-SD-070"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-b43dc0babc198b25",
+      "claim_ids": [
+        "P-SC-007"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-b5d05a3c25aa13c6",
+      "claim_ids": [
+        "P-SC-030"
+      ],
+      "note": "Gelesen: cache read, SAE-Media-Group-Artikel zu EOS/Veloce 330 (Zeilen 45-63); undatiert, Ereignisse Juni 2025."
+    },
+    {
+      "source_id": "S-b60dbc45fdcac0ac",
+      "claim_ids": [
+        "P-SC-023"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-b83a36907da809b2",
+      "claim_ids": [
+        "P-SB-006"
+      ],
+      "note": "Defence24 (polnisch) 22.05.2025 gelesen (Absätze 1-6)."
+    },
+    {
+      "source_id": "S-b87afeb6be3f399c",
+      "claim_ids": [
+        "P-SB-010",
+        "P-SB-027"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-b8f957ad1ccbc530",
+      "claim_ids": [
+        "P-SC-017"
+      ],
+      "note": "Gelesen: cache read, Army-Recognition-Artikel zu SHARD (Zeilen 242-255); undatiert, nennt Ankündigung 17.02.2026."
+    },
+    {
+      "source_id": "S-b94028cc148d68b8",
+      "claim_ids": [
+        "P-SB-015"
+      ],
+      "note": "Business AM FR 22.07.2026 gelesen (Absätze 1-10)."
+    },
+    {
+      "source_id": "S-b960b68760070182",
+      "claim_ids": [
+        "P-SC-011",
+        "P-SC-012",
+        "P-SC-013"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-bcc88003de5b9217",
+      "claim_ids": [
+        "P-SB-055"
+      ],
+      "note": "Gelesen: Cache-Textableitung ist unlesbar (Gzip-Bytes im Text, Hinweis 'Encoding replacement'); gespeicherte Originalbytes (source.bin, gzip, sha256 3c945092...) lokal dekomprimiert (python gzip) und HTML-Text extrahiert; BMVg-Meldung Abschnitt 'Kauf weiterer FLW 100' (Zeilen 77, 104-107 der dekodierten Fassung) gelesen. Dokumentiert, nicht im Cache gespeichert."
+    },
+    {
+      "source_id": "S-be3e133eccbcde11",
+      "claim_ids": [
+        "P-SA-058"
+      ],
+      "note": "Frei sichtbarer Artikelteil (Abs. 2-3) über source-cache.py read gelesen; weitere Inhalte hinter Bezahlschranke (Shephard Defence Insight) nicht lesbar."
+    },
+    {
+      "source_id": "S-bec206fc40beea51",
+      "claim_ids": [
+        "P-SA-040"
+      ],
+      "note": "Gelesen: cache read, Ministère-des-Armées-Meldung (Besuch Roanne, 19.02.2022) Zeilen 71-91."
+    },
+    {
+      "source_id": "S-c35f56a0525f290b",
+      "claim_ids": [
+        "P-SA-023"
+      ],
+      "note": "Extrakttext aus source-cache.py read war durch gzip-Bytes beschädigt; Original aus den gespeicherten Originalbytes (source.bin, gzip) dekodiert und Artikeltext gelesen."
+    },
+    {
+      "source_id": "S-c414879d32b9e9d1",
+      "claim_ids": [
+        "P-SB-001",
+        "P-SB-011",
+        "P-SB-025"
+      ],
+      "note": "KNDS-Pressemitteilung 18.06.2024 gelesen (Absätze 1-9)."
+    },
+    {
+      "source_id": "S-c448e86fde84d62e",
+      "claim_ids": [
+        "P-SD-004"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-c48aed5f6aa1dc24",
+      "claim_ids": [
+        "P-SA-045"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-c94303e94d1e46f1",
+      "claim_ids": [
+        "P-SC-047"
+      ],
+      "note": "Gelesen: cache read, KNDS-CENTURIO-Produktseite Zeilen 17-70."
+    },
+    {
+      "source_id": "S-cacbe83eed4a50bb",
+      "claim_ids": [
+        "P-SC-010"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-cb77fab4ccd5db0b",
+      "claim_ids": [
+        "P-SA-036"
+      ],
+      "note": "Gelesen: cache read, Army-Recognition-Artikel zu ORION 26 (Zeilen 242-249); Datum aus Text 9.2.2026."
+    },
+    {
+      "source_id": "S-cc65bc16b7e1415b",
+      "claim_ids": [
+        "P-SD-012"
+      ],
+      "note": "ADS-Mitgliedsmeldung (WFEL) 21.09.2017 gelesen (Absätze 1-8)."
+    },
+    {
+      "source_id": "S-cd4d8a27a37624e4",
+      "claim_ids": [
+        "P-SA-010",
+        "P-SA-011",
+        "P-SB-026"
+      ],
+      "note": "KNDS-Pressemitteilung München 19.11.2025 gelesen (Absätze 1-10)."
+    },
+    {
+      "source_id": "S-cdb071d12fc238e7",
+      "claim_ids": [
+        "P-08"
+      ],
+      "note": "KNDS-PzH-2000-Seite gelesen (Kennwerte, Beschreibung)."
+    },
+    {
+      "source_id": "S-ce07e1ada13e6f22",
+      "claim_ids": [
+        "P-SD-030"
+      ],
+      "note": "KNDS-Bridges-Übersicht gelesen (Abschnitt „Bridge systems from KNDS are in use worldwide“, Produktliste)."
+    },
+    {
+      "source_id": "S-ce3e22104f8c89b5",
+      "claim_ids": [
+        "P-13",
+        "P-14"
+      ],
+      "note": "KNDS-Munitionsübersicht gelesen (Abschnitte Artillery, Tank, Naval, Medium caliber, MATARIS)."
+    },
+    {
+      "source_id": "S-cf970a56bf82bfee",
+      "claim_ids": [
+        "P-SC-039",
+        "P-SC-045"
+      ],
+      "note": "Gelesen: cache read, EDR-Artikel vom 19.10.2021 (Zeilen 38-65) vollständig inkl. Schlussabsatz (Z. 62-65)."
+    },
+    {
+      "source_id": "S-d0a13e4be327c0ab",
+      "claim_ids": [
+        "P-SA-014"
+      ],
+      "note": "Gelesen: cache read, dpa-Meldung via Yahoo (19.11.2025) Zeilen 43-58."
+    },
+    {
+      "source_id": "S-d34ec41e13214dfc",
+      "claim_ids": [
+        "P-SA-030"
+      ],
+      "note": "Gelesen: cache read, KNDS/KMW-Pressemitteilung Eurosatory 2022 (13.06.2022) Zeilen 13-33."
+    },
+    {
+      "source_id": "S-d3d43cc97cc81389",
+      "claim_ids": [
+        "P-SB-053"
+      ],
+      "note": "Leinetal24 (ntv) 22.09.2025 gelesen (Absätze 1-8)."
+    },
+    {
+      "source_id": "S-d47b4031096d3c20",
+      "claim_ids": [
+        "P-SB-043",
+        "P-SB-044"
+      ],
+      "note": "KNDS-Pressemitteilung RAPIDFire Land (undatiert) gelesen (Absätze 1-9)."
+    },
+    {
+      "source_id": "S-d7d7587226163f27",
+      "claim_ids": [
+        "P-SB-021",
+        "P-SB-038"
+      ],
+      "note": "Gelesen: cache read, KNDS-Pressemitteilung (München/Bern, 08.06.2026) Zeilen 11-26."
+    },
+    {
+      "source_id": "S-d7f97d9c6b065b7f",
+      "claim_ids": [
+        "P-SA-014"
+      ],
+      "note": "Defense News 20.11.2025 gelesen (Absätze 1-12)."
+    },
+    {
+      "source_id": "S-d93ed235185f04c5",
+      "claim_ids": [
+        "P-20"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-da8fcddb92a3fdcb",
+      "claim_ids": [
+        "P-SA-002"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-df209e8e3de10b23",
+      "claim_ids": [
+        "P-SD-043"
+      ],
+      "note": "KNDS-Seite Command and weapon engagement systems gelesen (Abschnitt iC2)."
+    },
+    {
+      "source_id": "S-df95121b822ba92f",
+      "claim_ids": [
+        "P-SC-050"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-e21b199c143a41de",
+      "claim_ids": [
+        "P-10",
+        "P-SB-048"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-e21f141dc8121dce",
+      "claim_ids": [
+        "P-SB-033"
+      ],
+      "note": "Army Recognition (2022, ohne Metadatum) gelesen (Absätze 1-6)."
+    },
+    {
+      "source_id": "S-e39570202194e479",
+      "claim_ids": [
+        "P-SB-040"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-e5b36faedd6ac2e1",
+      "claim_ids": [
+        "P-SD-071"
+      ],
+      "note": "Gelesen: cache read, New-Voice-of-Ukraine-Artikel vom 21.01.2025 (Zeilen 9-19)."
+    },
+    {
+      "source_id": "S-e65e191e1089c866",
+      "claim_ids": [
+        "P-SA-052"
+      ],
+      "note": "Gelesen: cache read, EDR-Artikel vom 20.01.2026 (Zeilen 38-60)."
+    },
+    {
+      "source_id": "S-e72bc468a97fc7d0",
+      "claim_ids": [
+        "P-SC-016",
+        "P-SC-017"
+      ],
+      "note": "Calibre Defence 19.02.2026 gelesen (Absätze 1-10 und Meilensteinliste)."
+    },
+    {
+      "source_id": "S-e903df08d36255bb",
+      "claim_ids": [
+        "P-SD-001"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-e92862a57ce9ebf6",
+      "claim_ids": [
+        "P-SB-054"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-ea11e6d3f5209174",
+      "claim_ids": [
+        "P-SD-005"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-eacce69e02fa08ce",
+      "claim_ids": [
+        "P-SC-044"
+      ],
+      "note": "KNDS NERVA-XX-Produktseite gelesen (Absätze 1-4)."
+    },
+    {
+      "source_id": "S-eb4ccecc405a5467",
+      "claim_ids": [
+        "P-SC-038",
+        "P-SC-046"
+      ],
+      "note": "Gelesen: cache read, Defense-Mirror-Artikel vom 17.01.2020 (Zeilen 70-80) vollständig."
+    },
+    {
+      "source_id": "S-eb5571e8d8324a23",
+      "claim_ids": [
+        "P-06"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-ed7414b15db0642e",
+      "claim_ids": [
+        "P-SA-020"
+      ],
+      "note": "Defense Magazine 27.04.2025 gelesen (Absätze 1-6)."
+    },
+    {
+      "source_id": "S-ee4267732f9a7094",
+      "claim_ids": [
+        "P-SA-054"
+      ],
+      "note": "Janes 29.07.2024 gelesen (Absätze 1-5)."
+    },
+    {
+      "source_id": "S-effee1b7a20dfb27",
+      "claim_ids": [
+        "P-SB-041"
+      ],
+      "note": "KNDS-DONAR-Produktseite gelesen (Einleitung, Beschreibung)."
+    },
+    {
+      "source_id": "S-f0b9b622bee87228",
+      "claim_ids": [
+        "P-SA-031"
+      ],
+      "note": "Gelesen: cache read, cpm-Defence-Network-Artikel vom 16.06.2024 (Zeilen 31-47)."
+    },
+    {
+      "source_id": "S-f29f7e1a60049a10",
+      "claim_ids": [
+        "P-SB-059"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-f2d42409b1c3a92d",
+      "claim_ids": [
+        "P-SA-027"
+      ],
+      "note": "Gelesen: cache read, PSM-Meldung 'Erste Auslieferung aus dem 2. Los SPz PUMA' Zeilen 72-75; Seite ohne Datum."
+    },
+    {
+      "source_id": "S-f33a58fa096a6070",
+      "claim_ids": [
+        "P-SA-029"
+      ],
+      "note": "Gelesen: cache read, EDR-Wiedergabe der KNDS-Mitteilung vom 13.10.2025 (Zeilen 41-45)."
+    },
+    {
+      "source_id": "S-f50e6574f787d1cc",
+      "claim_ids": [
+        "P-SD-070"
+      ],
+      "note": "Army Technology 19.09.2024 gelesen (Absätze 1-10)."
+    },
+    {
+      "source_id": "S-f55f74045ea5d4f3",
+      "claim_ids": [
+        "P-SA-026"
+      ],
+      "note": "Rheinmetall-Pressemitteilung 19.12.2025 gelesen (Absätze 1-6)."
+    },
+    {
+      "source_id": "S-f6d4aa6643f3b5ed",
+      "claim_ids": [
+        "P-SD-062",
+        "P-SD-063"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-f867eabd40cee703",
+      "claim_ids": [
+        "P-SC-016"
+      ],
+      "note": "Gelesen: cache read, ESD-Artikel (KNDS-Mitteilungstext) vom 19.02.2026 Zeilen 94-112."
+    },
+    {
+      "source_id": "S-faf0f3da7c18e608",
+      "claim_ids": [
+        "P-SD-071"
+      ],
+      "note": "Kyiv Independent 21.01.2025 gelesen (Absätze 1-8)."
+    },
+    {
+      "source_id": "S-fb0c3ce8dc87caae",
+      "claim_ids": [
+        "P-SB-045"
+      ],
+      "note": "Frei sichtbarer Janes-Artikeltext (Abs. 1-4) über source-cache.py read gelesen; Rest hinter Abo nicht lesbar."
+    },
+    {
+      "source_id": "S-fbe7bae5557bc1a3",
+      "claim_ids": [
+        "P-SB-046"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    },
+    {
+      "source_id": "S-fd7ccc7b386def8c",
+      "claim_ids": [
+        "P-SC-048"
+      ],
+      "note": "Gelesen: cache read, Overt-Defense-Artikel vom 04.03.2025 (Zeilen 17-35)."
+    },
+    {
+      "source_id": "S-fec6c39538475055",
+      "claim_ids": [
+        "P-SA-041"
+      ],
+      "note": "EDR Magazine (KNDS-France-Pressemitteilung Versailles 23.09.2026) gelesen (Absätze 1-10)."
+    },
+    {
+      "source_id": "S-ff9d328558f6334a",
+      "claim_ids": [
+        "P-SC-019",
+        "P-SC-025",
+        "P-SC-026",
+        "P-SC-031"
+      ],
+      "note": "Gespeicherter Original-/Extrakttext über source-cache.py read gelesen (Titel, Datum und Textabschnitte der zugewiesenen Claims; Navigations-/Cookie-Boilerplate übergangen); alle Claims vollständig (A) gegen die genannten Abschnitte geprüft."
+    }
+  ],
+  "parallel_review": {
+    "plan_fingerprint": "125875bd1971b5fca7ca6afdf84be8b5c58fbb6c8d0d793cefac768745e4fc18",
+    "source_collection_fingerprint": "105cd826f889fd21477098f35b115cd56e3679ef42be431428cf268f5689c4ba",
+    "part_fingerprints": {
+      "sources-1": "2b31d4416e7fd2b06a1ece4891b78b6ffe874a8395364acabad7f2150b55ec36",
+      "sources-2": "d290f16440cba4d3849c671c58d8eb40de41786881fb2fa8522334bf59b8a21c",
+      "sources-3": "80b6f21a7080f5e94141ddc709af3e5ae356457b5c8f04f4dc0f982e286f8f30"
+    },
+    "model_policy": {
+      "source-document-reviewer": {
+        "model": "claude-sonnet-5-5",
+        "effort": "medium"
+      },
+      "source-reviewer": {
+        "model": "claude-sonnet-5-5",
+        "effort": "medium"
+      }
+    }
+  }
+}
