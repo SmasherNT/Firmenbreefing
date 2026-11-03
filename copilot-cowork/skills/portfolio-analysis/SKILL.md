@@ -1,0 +1,43 @@
+---
+name: portfolio-analysis
+description: Recherchiere Produkte, Anwendungen, Eigenschaften und belegten Status für Firmenbriefings. Liefere reine Fakten; Reifegradbewertung erst in der späteren Positionierung.
+---
+
+Arbeite vom Projektstamm dieser Cowork-Kopie aus. Lies AGENTS.md und
+references/cowork-betrieb.md; wende die dortige Laufzeitprüfung vor Ausführung an.
+Rollenverträge unter roles/ explizit lesen; Skillnamen registrieren keine Subagenten.
+
+
+Lies tatsächlichen Auftrag; ohne ihn keine Recherche.
+1. Im vollständigen Firmenbriefing das gesamte Zielunternehmen mit allen
+   wesentlichen Geschäftsfeldern und Produktfamilien untersuchen, auch außerhalb
+   des beauftragten Fach-Deep-Dives. Umfang und Abdeckung nach
+   references/themen-darstellung.md dokumentieren. Explizite isolierte Modultests
+   behalten ihren beauftragten Umfang. Produkte, Software, Dienstleistungen und
+   Ankündigungen unterscheiden.
+2. Eigenschaften/Subsysteme, Anwendungen, belegte Integration und gemeldete
+   Tests/Aufträge/Lieferungen erfassen, Quellenart und Aussageursprung nennen.
+3. Technologie & Industrie der Zielprodukte erfassen; Partnerbeziehungen an
+   Cluster, Peervergleich an Markt weitergeben. Keine doppelte Faktfassung.
+4. Nachrichten/Fachmedien nach cluster-quellenkatalog.md aktiv einbeziehen.
+   Quellen lesen; Werbung ist kein Beleg technischer Überlegenheit oder Serienreife.
+5. P-Claims mit Belegstelle/Unsicherheit liefern. Lieferstatus beim Lesen
+   erfassen, keine eigene routinemäßige zusätzliche Lieferstatusrecherche.
+
+Bei mode=facts-v2 references/faktenphase.md lesen und ausschließlich den delegierten
+portfolio-facts.json mit products/claims/coverage/source_proposals schreiben.
+Keine Scores, Skalen, Rankings oder Analysteninterpretation.
+Sonst AGENTS.md, uebergabe.md, defaults.md und briefing-struktur.md lesen:
+work/portfolio.md nach bisherigem Übergabeschema schreiben, ebenfalls nur Fakten.
+Bei Modultest ersetzen die delegierten Pfade diese Standardpfade; nur den
+ausgewählten Umfang bearbeiten (references/modultest.md).
+
+Bei facts-v2 für HTML die kompakten Tabellen/Claim-Zuordnungen nach
+references/ausgabe-html-v2.md liefern. Keine parallelen Langberichte erstellen.
+Für products auch references/portfolio-darstellung.md lesen: stabile Produkt-ID,
+sachliche domain und kompakte A-Claim-Zuordnung. Reife erst durch Positionierung.
+Im vollständigen Briefing auch die unternehmensweite regionale Präsenz nach
+references/regionale-praesenz.md recherchieren und regional_presence liefern.
+Eigene Standorte, Partner/JVs, Kunden und angekündigte Aktivitäten getrennt;
+Länder-/Produktumfang erhalten, vorhandene Cluster-Fakten über IDs wiederverwenden.
+Keine Präsenzstufen in Faktenphase; fehlende Belege als offene Abdeckung führen.

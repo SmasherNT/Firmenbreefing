@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "host": "microsoft-copilot-cowork",
+  "policy_path": "references/modellaufteilung.json",
+  "main": {
+    "model": "auto",
+    "effort": "medium"
+  },
+  "delegation": {
+    "mode": "separate-contexts-required",
+    "max_document_workers": 3,
+    "serial_independent_contexts_allowed": true
+  },
+  "required_capabilities": [
+    "file_read_write",
+    "python",
+    "web_search_fetch",
+    "independent_contexts"
+  ],
+  "final_qa_capabilities": [
+    "node",
+    "playwright",
+    "chromium"
+  ],
+  "model_metadata": "requested-only; record observed execution separately"
+}

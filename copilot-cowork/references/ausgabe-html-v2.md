@@ -1,0 +1,165 @@
+# HTML-Ausgabe v2
+
+## Ablauf
+Neue vollständige HTML-Briefings: runs/<run_id>/input/, work/ und output.
+Fakten -> Basis-Review -> Positionierung -> SWOT -> gemeinsamer Schluss-Review
+-> fester Renderer. Hauptagent delegiert Fakten und Bewertungen.
+Vorlage/Renderer lokal ausführen, nicht als Standard in den Modellkontext laden.
+Keine zusätzliche Modellrunde für HTML. Reale Kostenersparnis später messen.
+Bestehende Markdown-Modultests: legacy-html-output.md. Keine Mischläufe.
+Keine Horváth-Kapitel und keine separaten Unternehmens-Deep-Dives.
+
+## Faktenübergabe
+Zusätzlich zu faktenphase.md liefern Rollen kompakte Darstellungszuordnungen.
+prepare-facts übernimmt diese in module_views. Basis-Review prüft Labels/Zuordnung
+semantisch; kein Label darf neue ungeprüfte Aussagen enthalten.
+Tabellenzeile: id, label, claim_ids (nicht leer, vorhandene A-Fakten).
+Keine kopierten Fakten-/Belegtexte pro Zeile.
+
+| Rolle | Optionale Tabellen |
+|---|---|
+| context | company_facts, events, profile, additional_profiles, topics |
+| portfolio | products, regions, topics, regional_presence nach regionale-praesenz.md |
+| cluster | topics, report_log; network bleibt eigenes Paketfeld |
+| market | regions, topics, peers, observations gemäß Vergleichsvertrag; historische market_dashboard-Daten nur im alten Layout |
+| focus:<id> | eine focus_pages-Seite je eigenständigem focus-analyst-Aufruf, nach fokusseiten.md |
+
+events: zusätzlich date (YYYY-MM-DD oder null), kein Abrufdatum als Ereignisdatum.
+Kurzes sachliches label, gegebenenfalls mit „angekündigt“/„laut Hersteller“/
+„laut Medien“. Chronologische Zeitachse mit Datum links und klickbarer Karte
+rechts. Im Unternehmensüberblick ausschließlich Ereignisse zwischen Stichtag minus
+vier Kalendermonaten und Stichtag (beide Grenzen inklusive; Monatsende auf den
+letzten gültigen Tag begrenzen). Maßgeblich ist das belegte Ereignisdatum, kein
+Abrufdatum. Ältere, zukünftige oder undatierte Ereignisse nicht in dieser Timeline
+anzeigen; ihre Fakten und Quellen bleiben für andere Module erhalten. Zeitraum
+sichtbar ausweisen; bei ausschließlich ausgeschlossenen Ereignissen Datenlücke zeigen.
+Diese Grenze gilt nur für „Aktuelle Entwicklungen“ im Überblick, nicht für Summary,
+Portfolio, historische Hintergrundfakten oder andere Module. Fokusseiten behalten
+ihre Sechsmonats-Timeline nach fokusseiten.md; Personenmedien ihre eigene Regel.
+Details enthalten vollständige A-Fakten, Aussageursprung, Unsicherheit und direkte
+Originalquellen/Belegstellen. Kein neuer Agent oder zusätzlicher Interpretationstext.
+products: domain und optional short_label nach portfolio-darstellung.md.
+profile: Struktur und H-Claim-Verweise nach gespraechspartner.md; nur berufliche
+Fakten der benannten Person. Snapshot/Werdegang/Fachprofil/Verantwortung offen zeigen.
+additional_profiles: weitere eigenständige Profile in Nutzerreihenfolge mit demselben
+Daten- und Prüfvertrag; jede Person auf einem eigenen benannten Reiter. Alle Profile
+im gemeinsamen weißen Modulrahmen und mit einheitlicher Typografie darstellen.
+regions: optional sections:[{label,claim_ids}] für Unterthemen.
+topics: gleiche id wie manifest.topics[].id; Reihenfolge aus Manifest.
+peers/observations nach capability-matrix.md, keine Scores in Faktenphase.
+gaps/coverage/report_log: dokumentierte Grenzen, Suchstatus und offene Punkte.
+Manifest topics=[{id,label}], optional person (String/Objekt) als Nutzerangabe.
+Quellen tatsächlich öffnen; Nachrichtensnippet allein ist keine Tatsachenevidenz.
+
+## Interpretation und Darstellung
+positioning: section=executive_summary für 4–6 Hauptaussagen des Vollbriefings;
+headline/preview/display_order und drei section=executive_highlights-I-Claims
+nach executive-summary.md liefern. Keine fest vorgegebenen Finanzkennzahlen.
+section=topic:<id> für Themen, weitere sections z. B. portfolio/regions/technology.
+Typisierte matrix_cell-I-Claims und aktueller Plan erzeugen die Matrix:
+Spalten aus Prüfauftrag, Zellen mit Methode, Begründung, Grenzen und A-Fakten.
+Evidenzstufen sind ordinale Skalenanker; kein gemitteltes Gesamt-Ranking.
+Portfolio-Reife nach portfolio-darstellung.md im bestehenden Positionierungsschritt.
+Weitere Scores nur mit vorher definierten assessment_methods; null bei Datenlücke.
+SWOT standardmäßig drei eigenständige, belegte Punkte je Quadrant, maximal drei.
+Weniger nur, wenn die geprüfte Faktenbasis keinen sinnvollen dritten Punkt trägt;
+Evidenzgrenze knapp dokumentieren, keine künstlichen Füllpunkte.
+Datenlücke ist keine tatsächliche Schwäche.
+Keine neue Interpretation beim Rendern erzeugen.
+Positionierung liefert außerdem je 1–3 modulspezifische Fakt/Insight-Karten nach
+modul-keyfacts.md im Kontextauftrag --module-insights. Alle Kartenfelder und
+Zuordnungen gehören zum geprüften I-Claim, fehlende Auswahl explizit dokumentieren.
+
+Dynamische Desktop-Seiten für neue Manifestdateien mit focus_pages:
+1. Überblick: Summary, Entwicklungen, Gesamtportfolio, allgemeine Themen, Cluster,
+   regionale Unternehmenspräsenz, Capability Matrix, Einordnung, SWOT und offene
+   Fragen. Module untereinander; Keyfacts/Insights bleiben unter ihren Modulen.
+2. Je beauftragter Person ein eigener beruflicher Gesprächspartner-Kontext in
+   Nutzerreihenfolge; ohne Personenauftrag keine Personenseite.
+3. Danach genau eine Seite je focus_pages-Thema in Prompt-Reihenfolge:
+   Kernaussagen, passende Grafiken und Sechsmonats-Timeline nach fokusseiten.md.
+   Keine feste Markt-Deep-Dive-Seite, keine Grenze für Timeline-/Grafikanzahl.
+4. Quellen immer als letzter Reiter; Nummerierung folgt der tatsächlichen Anzahl.
+
+Neue Manifestdateien immer mit focus_pages=[{id,label}] oder [].
+Neue Fokuseinträge zusätzlich briefing_type="topic_market" nach fokusseiten.md:
+neutrale Grundlagen, Zahlenkarten, Segmente/Wertschöpfung, Akteurstabelle und
+Meetingfragen vor bzw. nach den bestehenden Erkenntnissen/Grafiken/Timelines.
+Historische Einträge ohne Typ behalten ihren geprüften Darstellungsvertrag.
+Allgemeine Unternehmensthemen bleiben topics=[{id,label,page:"main"}].
+Historische Läufe ohne focus_pages behalten ihren alten Vierseitenpfad zur
+Wiederholbarkeit. page=market/market_dashboard nicht in neue Fokusläufe übernehmen.
+Fokusdaten sind Bestandteil der vorhandenen Basisprüfung und vollständig A-geprüft;
+kein Fokus-Positionierungs-/SWOT-Kontext und keine zusätzliche Interpretationsrunde.
+
+Portfolio nach portfolio-darstellung.md: sechs Stufen, farbige Produktgruppen,
+Filter/Tabelle und ein vollständig geschlossener Detailblock. Produktklick öffnet
+Block und Profil; keine firmenspezifischen Bewertungen in der Vorlage.
+Cluster: Ziel in der Mitte, vier Gruppen einzeln klickbarer Akteure, kompakte
+Auswahl, Filter/Querverbindungen und feste rechte Detailspalte. Vier Bereiche im
+2×2-Raster in der bestehenden Reihenfolge; gleiche Höhe pro Zeile, abhängig von
+der Anzahl. Einheitliche Knotengröße, Form und Farbe je Akteurskategorie, Namen
+unter den Formen und keine Zahlen-/Score-Badges. Gebogene Linien mit Pfeilen,
+ohne Endpunktkreise; normales Seitenscrollen. Details in netzwerk-html.md.
+Mehrere Vorgänge je Akteurspaar über eine gemeinsame Linie
+auswählen; sämtliche Einzelbelege erhalten. Matrix nach capability-matrix.md:
+Spalten folgen dem Auftrag, einheitlich hohe Kurztextzellen, große Evidenzstufen
+mit tatsächlichem Skalenmaximum, lokale Scrollfläche und feste Akteursspalte.
+Zellklick zeigt vollständige Bewertung unter der Matrix; Spaltenkopfklick vergleicht
+alle Wettbewerber im selben Kriterium. Native Details bewahren sämtliche Quellen
+ohne JavaScript und im Druck. Andere Karten öffnen den gemeinsamen Dialog.
+Statische zugängliche Netzwerktabelle auch ohne JavaScript. Druck öffnet Details
+und stellt anschließend die vorherige Ansicht wieder her.
+Keine externen Assets, Laufzeit-Netzabfragen oder zusätzliche LLM-Designrunde.
+Keine gesonderte Mobilansicht/-abnahme. Regionale Zeitreihen aus market_dashboard
+werden generisch gerendert; spezielle Landkarten sind kein Pflichtbestandteil.
+
+## Prüfbarrieren
+Basis-Review input_fingerprint aus facts-validation.packet_fingerprint bindet
+auch Tabellenlabels/Zuordnungen und Netzwerk. Nach Änderung Paket neu erzeugen,
+geänderte Inhalte/Zuordnungen gezielt prüfen und stamp-review erneut ausführen.
+Unveränderte A-Claim-Urteile bleiben wiederverwendbar.
+Aktuelle I-/S-Kontexte und Schluss-Review-Fingerprints notwendig.
+Kernansicht, Netzwerk und Interpretationen nur aus aktuellen A-Fakten;
+B-Hintergrunddetails mit tatsächlichem Prüfstatus im Register.
+Blockierte Module, Materialfehler, blockierende Fragen und pending Matrix-Prüfung
+verhindern finale HTML. Formaler Pass prüft keine Quellenwahrheit.
+Bei Fehlern keine neue HTML; frühere Erfolgsdatei nicht als aktuell ausgeben.
+
+## Aufruf
+Pfade aus delegiertem Lauf; keine festen Firmendaten.
+
+```bash
+python3 scripts/render-briefing.py --manifest <facts-run.json> --facts <review-packet.json> --basis-review <review-basis.md> --positioning <positioning.json> --positioning-context <positioning-context.json> --swot <swot.json> --swot-context <swot-context.json> --final-review <review-final.md> --plan <comparison-plan.json> --full --out <Lauf>/output/briefing.html
+```
+
+Ohne Vergleich --plan weglassen. Explizite reine Fakten-HTML: Interpretationsargumente
+und --full weglassen; Basis-Review bleibt erforderlich.
+Ältere Reviews ohne Paket-Snapshot vor Ausgabe um Zuordnungsprüfung ergänzen.
+stamp-review erteilt keine Freigabe.
+Abnahme: Agentenprotokoll/Review, Mechanik, Links/JS und Desktop-Browser/Druck/Filter
+getrennt prüfen. Fehlende Werkzeuge als nicht geprüft benennen.
+Testbeispiele sind keine öffentliche Unternehmensrecherche.
+
+
+Auftragsbezogene Themenkarten mit headline/preview sowie unternehmensweite
+Portfolioabdeckung folgen themen-darstellung.md. SWOT-Kategorien farbig darstellen.
+
+
+## Darstellungsvorgaben vom 17.10.2026
+Cluster: lokale Reiter Tabellen/Grafik gemäß netzwerk-html.md, Einzelakteure in
+vier nebeneinander angeordneten Tabellen und Farblegende direkt beim Zähler;
+Grafik mit fünf Symbolen pro voller Reihe je Cluster. Executive Summary gemäß
+executive-summary.md kompakt ohne Inhaltsverlust. Den gesamten abschließenden
+Block „Datenlücken & offene Fragen“ in einem standardmäßig geschlossenen nativen
+details-Element darstellen; Überschrift öffnet ihn. Alle Inhalte erhalten.
+
+Gesprächspartnerseite ab 17.10.2026: Nach dem Profil die Timeline
+„Aktuelle Äußerungen & Medienpräsenz der letzten vier Monate“ gemäß
+gespraechspartner.md. Kein Abschnitt „Regionaler Bezug“. Quellen und Evidenz
+ausschließlich im letzten Quellenreiter, auf der Personenseite nur anklickbare interne Verweise.
+
+Regionale Präsenz: Methodik regional-presence-v2 gemäß regionale-praesenz.md.
+Eigene und belegte gemeinsam/allein kontrollierte JV-Strukturen nach tatsächlichen
+Funktionen bewerten; JV-Kontrollart sichtbar erhalten. Ankündigungen separat
+„Geplant“, ohne operative Stufe. Vollständige Skalen-/JV-Erklärung aufklappbar.

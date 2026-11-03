@@ -1,0 +1,166 @@
+# Flexible Fokusseiten statt separatem Markt-Deep-Dive
+
+Neue vollständige Briefings verwenden immer manifest.focus_pages, auch als [].
+Pro im Prompt genanntem Fokus genau eine eigenständige Seite nach dem optionalen
+Gesprächspartner; Quellen folgen zuletzt. Beispiele: Lkw-OEMs, ein Land, Drohnen,
+ein spezifischer Markt, Technologie oder anderes frei benanntes Thema. Die
+Unternehmensanalyse einschließlich allgemeinem Markt/Wettbewerb bleibt auf Seite 1.
+Keine feste dritte Marktseite und keine leere Fokus-Platzhalterseite.
+
+## Standard: neutrales Themen- und Marktbriefing
+
+Fokusseiten dienen der Meetingvorbereitung zum Thema selbst: Grundlagen,
+Marktstruktur, Größenordnung, Akteure und Veränderungen. company bindet den
+Firmenlauf und ist kein Recherchefilter. Zielunternehmen wie andere Akteure nach
+denselben Kriterien aufnehmen, sofern relevant. Keine implizite Firmenstrategie,
+Vertriebsargumentation oder ausschließlich firmeneigene Nachrichtenchronik.
+Die Seite muss ohne Kenntnis der Unternehmensanalyse verständlich sein.
+
+Neue Aufträge erhalten automatisch briefing_type="topic_market" je focus_pages-
+Eintrag und in der Ergebnis-Seite; der kurze Nutzerprompt bleibt unverändert.
+Grundblick global, regionale Vertiefung aus Nutzerauftrag oder ausdrücklich
+begründeter Marktabgrenzung. Bestehende geprüfte Seiten ohne briefing_type bleiben
+historisch renderbar; überarbeitete Seiten können topic_market verwenden.
+
+Aufbau: Thema verstehen → Zahlen → Segmente/Wertschöpfung → Akteure → Erkenntnisse
+→ ergänzende Grafiken → Sechsmonats-Timeline → Meetingfragen. Definitionen,
+Herleitungen und Quellen per Klick; keine zusätzliche Agentenschleife.
+
+## Delegation und Aufwand
+
+**Genau ein separater focus-analyst-Aufruf je Fokusthema**, ausschließlich
+das konfigurierte Rollenprofil. Zwei Themen = zwei getrennte Agentenkontexte
+und zwei Dateien, auch wenn dieselbe Agentendefinition verwendet wird. Nicht an
+company-context-analyst, market-facts-analyst oder positioning-analyst routen.
+Hauptagent übernimmt nur Auftragsnormalisierung, lokale Zusammenführung und Rendern.
+Unabhängige Jobs können parallel laufen, schreiben aber nie dieselbe Datei.
+Keine Fokusrecherche/Interpretation durch die Positionierungsrolle und keine zusätzliche SWOT-Runde.
+Bestehende Dokument-/Basis-/Schlussprüfer verwenden ebenfalls dem konfigurierten Rollenprofil.
+
+Begrenze die Analysetiefe statt Timeline-/Grafikanzahl: Orientierung, wesentliche
+Akteure/Segmente, klar belegte Kernaussagen und jüngste relevante Entwicklungen.
+Keine vollständige Marktstudie, rekursiven Unteranalysen, feste Quellenquote oder
+Suche nach künstlicher Vollständigkeit. Bestehende Fakten/Originalcache gezielt
+wiederverwenden; nur nötigen Kontext übergeben, nicht ganze Briefings/Quelltexte.
+3–5 Kernaussagen mit wenigen kurzen Belegfakten. Bei dünner Evidenz weniger mit
+coverage_note; keine Füllthesen. Umfangreiche Details bleiben per Klick erreichbar.
+
+## Manifest und Ergebnisvertrag
+
+```json
+"focus_pages": [
+  {"id": "lkw", "label": "Europäische Lkw-OEMs", "briefing_type": "topic_market"},
+  {"id": "drohnen", "label": "Drohnenmarkt in Deutschland", "briefing_type": "topic_market"}
+]
+```
+
+Reihenfolge aus dem Prompt erhalten. IDs nur A–Z/a–z/0–9/_/-; je Lauf eindeutig.
+Prompt „Fokusseiten: …“ ist eindeutig. Auch gewünschte separate Markt-/Länder-/
+Themenüberblicke auf diesen generischen Vertrag routen. Allgemeine fachliche
+Unternehmensthemen auf Seite 1 bleiben topics mit page=main. Explizite Nutzervorgaben
+haben Vorrang; keine alten page=market/market_dashboard-Strukturen für neue Läufe.
+
+Je Job work/focus-<id>-facts.json mit Standard-Faktenmetadaten nach faktenphase.md:
+role=focus, focus_id=<id>, Claim-Präfix F_<id>_, claims/source_proposals/gaps/coverage.
+focus_pages enthält genau eine Seite mit derselben ID/Bezeichnung wie im Manifest.
+Eigene Quellenmetadaten vollständig liefern; gemeinsame Quellen konsistent halten.
+
+Seitenfelder:
+- id, label, overview (ein Orientierungssatz), claim_ids für overview.
+- theses: 3–5 Zeilen mit id, label (belegte Kernaussage), claim_ids. Unter drei
+  zusätzlich coverage_note. Keine unbelegten eigenen Schlussfolgerungen.
+- charts: Liste mit id, type, title, claim_ids, optional caption. So viele fachlich
+  sinnvolle Grafiken wie nötig, keine starre Begrenzung. Bei null Grafiken
+  visualization_note mit konkreter Evidenzgrenze. Jeder sichtbare Text wird mitgeprüft.
+- timeline: Zeilen id, date (YYYY-MM-DD), label, status, claim_ids. Zeitfenster:
+  Stichtag minus sechs Kalendermonate bis einschließlich Stichtag. Relevante
+  Ereignisse, keine starre Anzahl; beim Rendern neueste zuerst. Veröffentlichungs-
+  und Ereignisdatum unterscheiden. Fehlendes Ereignisdatum als Grenze dokumentieren,
+  nicht erfinden. Ankündigung, Auftrag, Pilot und Betrieb ausdrücklich unterscheiden.
+  Bei leerer Liste timeline_note mit Recherchebefund/Abdeckung.
+- gaps: kurze Textliste für standardmäßig eingeklappten Abschnitt.
+
+Zusätzliche Pflichtfelder für briefing_type=topic_market:
+- market_definition: {label, geography, period, boundary, claim_ids}. Einfache
+  Definition, geografische und sachliche Abgrenzung sowie Betrachtungszeit sichtbar.
+- key_metrics: Zeilen {id, label, value, unit, period, scope, definition,
+  metric_type, claim_ids, optional qualifier/note}. value endlich, numerisch und
+  nichtnegativ. Ziel 4–6 belastbare Zahlen, höchstens sechs. Unter vier zusätzlich
+  metrics_note mit konkretem Recherchebefund, auch bei leerer Liste.
+- metric_type: market_size / budget / contract_ceiling / firm_order / deliveries /
+  capacity / technical / industry_structure / other. Typ und Definition sichtbar.
+  Jede Karte darf ihre eigene Periode/Abgrenzung haben; keine Rangfolge oder Summe
+  aus inkompatiblen Daten. Rechenableitungen im Beleg transparent machen.
+- segments und value_chain: Zeilen {id, label, description, claim_ids}. Funktionen
+  erklären; keine unbelegte Beziehung oder universelle lineare Kette suggerieren.
+  Leere Listen nur mit segments_note bzw. value_chain_note und konkreter Grenze.
+- actors: Zeilen {id, label, role, offering, segment, status, claim_ids}. Auswahl
+  normalerweise aus mindestens drei unabhängigen Akteursgruppen; unter drei
+  Zeilen actors_note. selection_note erklärt Kriterien und Abdeckung. Keine
+  Vollständigkeit, Rangfolge oder Marktanteile suggerieren.
+- meeting_questions: 1–3 Zeilen {id, label, claim_ids}. Neutrale offene Fragen aus
+  belegten Themen, keine neuen Tatsachenbehauptungen, Empfehlungen oder SWOT.
+- glossary optional: Zeilen {id, label, definition, claim_ids}; zentrale Begriffe
+  allgemeinverständlich erklären. Die 3–5 theses bleiben faktische Erkenntnisse.
+
+Kennzahlen aus tatsächlich geöffneten Originaldaten von Auftraggebern, Behörden,
+Organisationen, Verbänden und Unternehmen; Fach-/Wirtschaftsmedien für Gegenprüfung
+und Entwicklungen. Keine Snippet-Marktprognosen oder ungelesenen kommerziellen
+Reportdaten. Verteidigungsbudget ist kein Luftabwehr-Marktvolumen, Rahmenhöchstwert
+kein fester Auftrag, Bestellung keine Lieferung, Zielkapazität kein Ist-Ausstoß.
+Fehlendes Gesamtvolumen durch belegte Programm-/Strukturdaten ergänzen statt zu
+schätzen. Keine Füllzahlen oder künstliche Vollständigkeit.
+
+Luftabwehr: Bedrohungen, Einsatzrollen, Sensorik/Führung/Effektoren, Anbieter,
+Beschaffungen und industrielle Umsetzung. Fahrzeug-OEM-Kooperationen: zivile und
+militärische Plattformen, Anpassung, Integration, JV/Lizenz, Fertigung und Service;
+Beispiele aus mehreren unabhängigen Unternehmensgruppen statt nur der Zielfirma.
+
+Grafiktypen (alles lokal, offline, ohne LLM-Designrunde):
+
+| type | Daten | Einsatz |
+|---|---|---|
+| matrix | columns:[{id,label}], rows:[{id,label,claim_ids,cells:[{id,value,claim_ids}]}]; Zell-IDs entsprechen exakt der Spaltenfolge | Anbieter × Segmente, Länder × Aktivitäten, Programme × Status |
+| bars | metric, unit, period, scope; rows:[{id,label,value,claim_ids}] | Vergleichbare Mengen/Marktwerte/Standorte mit gleicher Definition und Periode |
+| structure | groups:[{id,label,claim_ids,items:[{id,label,claim_ids}]}] | Akteurslandschaft, Rollen oder Wertschöpfungsstufen ohne behauptete Beziehungen |
+
+Alle Zeilen-/Grafik-IDs innerhalb ihrer Liste eindeutig. Balkenwerte endlich,
+nichtnegativ, belegt; keine Rangfolge aus inkompatiblen Daten. Fehlende Kennzahlen
+als Datenlücke oder qualitative Matrix statt erfundener Balken. Keine Verbindung
+zwischen Akteuren allein durch gemeinsame Darstellung suggerieren. Beschriftungen,
+Einheiten, Zeitraum, Scope und tatsächlicher Status bleiben direkt sichtbar.
+Belegfakten und interne Quellenverweise per Klick, vollständige Evidenz zentral.
+
+## Integration und Prüfung
+
+prepare-facts.py --modules erhält die vier bisherigen Faktenmodule und alle
+focus-<id>-facts.json. selected_roles bleibt die Auswahl der vier Kernrollen;
+focus_pages fordert die zusätzlichen Jobs unabhängig davon an. Im Prüfpaket
+führt jede Instanz eine eigene module_view und module_context mit role=focus:<id>.
+Originaldateien bleiben getrennt. Facts-Index erhält die ursprüngliche Job-Zuständigkeit.
+Fehlende, doppelte, fremde oder ungeprüfte Fokusseiten verhindern die Ausgabe.
+Alle sichtbaren Fokus-Claims sind A-Pflicht und gehen in das bestehende Basis-Review;
+auch Diagrammwerte/-Zuordnungen und verdichtete Kernaussagen semantisch prüfen.
+Bei topic_market sämtliche Zahlenkarten, Definitionen, Glossar, Segmente,
+Wertschöpfung, Akteurstexte und Meetingfragen mitprüfen. Neutralität/Marktüberblick
+explizit beurteilen: keine unbegründete Dominanz der Zielfirma, vergleichbare
+Auswahlkriterien, Marktdefinition/Datentypen klar, Quellenmix und Lücken offengelegt.
+Feldprüfung allein bestätigt weder Neutralität noch repräsentative Marktabdeckung.
+Keine eigene zusätzliche Reviewrunde pro Seite erzwingen. Quellenkonflikte gezielt
+an genau die zuständige focus-analyst-Instanz geben. Konfiguriertes Rollenprofil
+für Dokumentprüfung und beide Leitphasen beibehalten.
+
+Fokusfakten/-grafiken gehören nicht zum Positionierungs- oder SWOT-Auftrag und
+werden nicht allein wegen der Fokusseite in deren selektive Kontexte übernommen.
+Das vollständige Faktenpaket bleibt für Prüf-/Fingerprintkontrollen erreichbar.
+
+Wiederaufnahme: resume-run.py erzeugt focus:<id> als eigenständigen Checkpoint je
+Job. Nach Agentenabschluss --stage focus:<id> --output module=<Datei> checkpointen;
+benötigte vorhandene Kernmodule als explizite Inputs nennen. Facts-Checkpoint erhält
+zusätzlich --input focus:<id>=<Datei> für jeden Fokus. Nur reusable-Jobs überspringen.
+Änderungen invalidieren den betroffenen Job und die abhängigen Fakten-/Review-/HTML-
+Schritte. Fehlende Dateien sind nie ein erfolgreicher Agentenabschluss.
+
+Alte geprüfte Manifestdateien ohne focus_pages behalten zur Wiederholbarkeit ihren
+historischen Rendererpfad. Neue Aufträge schreiben focus_pages ausdrücklich und
+nutzen damit ausschließlich die dynamische Seitenfolge und Seitenanzahl.

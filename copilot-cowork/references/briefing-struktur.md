@@ -1,0 +1,52 @@
+# Verbindliche Struktur und Ausgabeabnahme
+## HTML-Reihenfolge
+1. Kopf: Firma, Stichtag, Themen, genannte Person/Position mit Quellenstatus.
+2. Executive Summary: 4–6 belegte, für die Nutzerthemen relevante Kernaussagen.
+3. Je Nutzerthema ein eigenes Kapitel, in Nutzerreihenfolge:
+   belegte Lage, relevante Akteure/Produkte, Status/Datum, Bedeutung als
+   Analysteninterpretation, Datenlücken und daraus abgeleitete Gesprächsfragen.
+4. Beruflicher Gesprächspartner-Kontext, falls genannt: belegte aktuelle Rolle,
+   Zuständigkeit und öffentlich dokumentierter beruflicher Hintergrund.
+   Nutzerangabe und verifizierte Information sichtbar unterscheiden.
+5. Kompakte Firmenbasis: Portfolio, Struktur/Partnerschaften, Markt/Wettbewerb.
+6. Themenbezogene SWOT, standardmäßig drei eigenständige, belegte Punkte je Quadrant.
+   Weniger nur ohne sinnvollen belegten dritten Punkt; Evidenzgrenze knapp benennen.
+   Maximal drei Punkte, keine künstlichen Füllpunkte.
+7. Offene Punkte und Gesprächsfragen (Vorschläge, keine Firmenbehauptungen).
+8. Quellenregister mit Claim-Zuordnung, Titel, Datum, Direktlink, Abrufdatum.
+
+## Darstellung
+Eine eigenständige HTML mit eingebettetem CSS, ohne externe Bibliotheken.
+Übersicht oben, Details in details/summary, klare Typografie, responsive,
+druckbar. Jede wesentliche Aussage mit Claim-ID und anklickbarem Beleg.
+Keine erfundenen Logos oder dekorativen Charts mit erfundenen Zahlen.
+HTML-Sonderzeichen in recherchierten Texten escapen; keine fremden Skripte.
+Wesentliche Widersprüche und öffentliche Lücken auch in Kurzfassung sichtbar.
+
+## output/abnahme.md automatisch erstellen
+Tatsächlich aufgerufene Agenten und deren Dateien benennen.
+Auftragsnormalisierung, Themenabdeckung, Personenstatus, Delegation,
+Reihenfolge, Reviews, geschlossene Fehler, Quellenlinks, interne HTML-Links,
+Desktop-Webansicht/Druckansicht und Dateisicherung: bestanden/offen/nicht geprüft.
+Konfigurationstest allein ist kein durchgeführter Agentenlauf.
+Keine Prüfung als bestanden melden, die nicht tatsächlich durchgeführt wurde.
+
+## Cluster-Netzwerk in der HTML
+Im Abschnitt Struktur/Partnerschaften bzw. einem eigenständigen 2b-Modultest
+kompakte anklickbare Netzwerkübersicht nach references/cluster-recherche.md
+zeigen: Zielunternehmen in der Mitte, umliegende Knoten als Netz und belegte
+Querverbindungen zwischen ihnen. Jede Knotenart hat eine eigene Farbe.
+Linien bleiben unbeschriftet; Informationen erst beim Anklicken anzeigen.
+Kategorie- und Produktfilter nach references/netzwerk-html.md anbieten.
+Beziehungstypen, historische Status, Überschneidungen und indirekte Pfade
+im Detailfeld klar trennen. Zugehörige Deep-Dives zeigen Rolle/Gegenstand, Quotenarten,
+Status/Bezugszeitpunkt, Claim-ID und Quellen inklusive Geschäftsbericht-Seiten.
+Beziehungstabelle als zugängliche und druckbare Alternative bereitstellen.
+Geschäftsbericht-Abdeckung, Recherchegrenzen und wesentliche Lücken nennen.
+Abnahme ergänzt Netzwerk-Konsistenz, Bericht-Belegstellen und Querverbindungs-
+prüfung; nicht durchgeführte Kontrollen nicht als bestanden melden.
+
+Die Netzwerkkomponente aus references/templates/cluster-network.html lokal
+mit geprüften Cluster-Daten einbetten. Originalquellen direkt im Verbindungs-
+detail und im Quellenregister verlinken. Abnahme ergänzt Filter, Auswahl,
+Knotenfarben, zentrale Zielposition und Übereinstimmung von JSON/Claims/Quellen.

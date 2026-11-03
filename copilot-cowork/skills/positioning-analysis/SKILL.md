@@ -1,0 +1,55 @@
+---
+name: positioning-analysis
+description: Leite bei interpret-v2 auftragsbezogene Capability-Matrix-Bewertungen sowie Produkt-, Industrie-, Regional- und Netzwerkposition aus geprüften Fakten ab. Keine eigene Faktenrecherche.
+---
+
+Arbeite vom Projektstamm dieser Cowork-Kopie aus. Lies AGENTS.md und
+references/cowork-betrieb.md; wende die dortige Laufzeitprüfung vor Ausführung an.
+Rollenverträge unter roles/ explizit lesen; Skillnamen registrieren keine Subagenten.
+
+
+Lies Auftrag, delegierten Kontext und references/interpretationsphase.md an der
+Repositorywurzel. references/-Pfade dort auflösen, nicht relativ zum Skillordner.
+Bei Matrix references/capability-matrix.md und im Kontext fixierten Plan nutzen.
+Bei context.portfolio references/portfolio-darstellung.md lesen; genau eine
+product_maturity-I-Interpretation pro Produkt nach portfolio-maturity-v1 liefern.
+Unbestimmbare Einträge mit null, niemals aus einer Datenlücke einen Score ableiten.
+Bei context.regional_presence references/regionale-praesenz.md lesen; genau eine
+regional_presence-I-Einordnung je Region nach regional-presence-v2 (1–5) liefern.
+Nur belegte eigene/Partner-Infrastruktur einstufen; angekündigte Standorte und
+Kundenprogramme nicht als operativen Eigenstandort werten. Beleglücke bleibt null.
+1. Eingabeidentität/Prüfstand beachten; pending_checks nicht als sichere Basis nutzen.
+2. Je Peer/Kriterium genau eine Zelle liefern. Profil, Kennzahl und Evidenzstufe
+   unterscheiden; veröffentlichte Herstellerangabe ist kein unabhängiger Benchmark.
+   Kurze headline/preview in derselben I-Bewertung nach capability-matrix.md
+   liefern; vorhandene Aussagen und Einschränkungen verdichten, keine neuen Claims.
+3. Aussage, depends_on, Begründung/Methode und konkrete Unsicherheit angeben.
+   Scores ausschließlich nach fixierten anchors, keine Gesamt-Rangliste.
+4. Bei unbelegter höherer Stufe diese Grenze erklären. Nicht öffentlich belegt
+   von nicht anwendbar trennen; keine Lücke als tatsächliche Schwäche darstellen.
+5. Weitere beauftragte Produkt-/Industrie-/Regional-/Netzwerkeinordnungen aus
+   passenden A-Fakten ableiten. Portfolio nutzt die feste Sechsstufenskala;
+   sonstige Zusatzscores nur bei fixierter assessment_method.
+6. Fehlende wesentliche Daten/Prüfung als research_requests zurückgeben,
+   keine neue Quelle oder Unternehmensbehauptung erfinden.
+Nur positioning.json nach Vertrag schreiben; keine HTML/SWOT. Eingabefingerprint
+kopieren, allgemeine Grenzen einmal nennen. Kompakte Rückgabe statt Berichtskopie.
+Begründung normalerweise 2–3 Sätze; referenzierte Fakten und gemeinsame
+Quellen-/Scope-Grenzen nicht je Zelle erneut ausschreiben.
+
+Bei vollständigem HTML-Auftrag 4–6 I-Claims mit section=executive_summary
+und Themen mit section=topic:<id> liefern; weitere Einordnungen z. B. portfolio/regions/technology.
+Für die Summary references/executive-summary.md lesen: kurze headline/preview,
+Reihenfolge und drei auftragsbezogene Highlights aus den vorhandenen A-Fakten
+liefern. Auswahl in diesem Schritt, keine feste Kennzahlenliste oder Zusatzrecherche.
+Ausgabevertrag in references/ausgabe-html-v2.md; keine neue Faktenrecherche.
+
+Für section=topic:<id> kompakte headline/preview nach
+references/themen-darstellung.md liefern; Faktenbezug und Einschränkungen erhalten.
+
+Bei context.module_insights references/modul-keyfacts.md lesen. Für jedes
+beauftragte Portfolio-/Cluster-/Marktmodul 1–3 module_insight-I-Claims mit kurzem
+Titel, fact_text/fact_claim_ids und statement als Insight liefern. Modulbezug und
+Quellengrenzen erhalten; keine Wiederholung der Summary oder Rasterfüllung.
+Ohne zusätzlichen belastbaren Punkt module_insight_gaps mit Begründung für den
+Reviewer dokumentieren. Keine neue Recherche oder eigene Design-/Agentenrunde.

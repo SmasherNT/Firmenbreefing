@@ -1,0 +1,301 @@
+<!-- Datensatz und Akteurstabellen werden je Auftrag aus geprüften Daten eingesetzt. -->
+<section id="briefing-company-network" aria-label="Unternehmensnetzwerk">
+  <div class="cnt-heading"><h3>Unternehmensnetzwerk</h3><div class="cnt-tabs" role="tablist" aria-label="Ansicht der Clusteranalyse"><button type="button" role="tab" id="cnt-tab-tables" aria-selected="true" aria-controls="cnt-view-tables">Tabellen</button><button type="button" role="tab" id="cnt-tab-graph" aria-selected="false" aria-controls="cnt-view-graph" tabindex="-1">Grafik</button></div></div>
+__CLUSTER_ACTOR_TABLES__<div id="cnt-view-graph" role="tabpanel" aria-labelledby="cnt-tab-graph" tabindex="0" hidden>
+  <div class="cn-filters" aria-label="Beziehungen filtern"></div>
+  <label class="cn-product-label">Produktbezug <select class="cn-product"><option value="all">Alle Produkte</option></select></label>
+  <div class="cn-toolbar"><label>Suche <input type="search" class="cn-search" placeholder="Akteur oder Beziehung"></label><label>Status <select class="cn-status"><option value="all">Alle Status</option></select></label><label><input type="checkbox" class="cn-cross"> Querverbindungen</label><button type="button" class="cn-expand">Alle Cluster aufklappen</button><button type="button" class="cn-reset">Zurücksetzen</button></div>
+  <div class="cn-grid"><div class="cn-board"><div class="cn-clusters"></div><div class="cn-plot"><svg class="cn-svg" role="img" aria-label="Unternehmensnetzwerk mit dem Zielunternehmen im Zentrum"></svg></div>
+  <div class="cn-legend" aria-label="Farben und Formen der Akteurstypen"></div>
+  <div class="cn-count" aria-live="polite"></div>
+  <details class="cn-access"><summary>Verbindungen per Tastatur auswählen</summary><div class="cn-keyboard"></div></details></div><aside class="cn-sidebar" aria-labelledby="network-panel-title"><div class="cn-details" aria-live="polite"><div class="cn-detail-head"><h4 id="network-panel-title"></h4><button type="button" class="cn-close">Zurücksetzen</button></div><div class="cn-detail-content"></div></div></aside></div>
+  <p class="cn-error" hidden role="alert"></p>
+  <details class="cn-table"><summary>Beziehungen und Originalquellen</summary><div class="cn-table-wrap"><table><thead><tr><th>Von → Zu</th><th>Beziehung</th><th>Status</th><th>Originalquellen</th></tr></thead><tbody></tbody></table></div></details>
+  </div>
+  <script type="application/json" class="cn-data">__CLUSTER_NETWORK_JSON__</script>
+</section>
+<noscript><style>#briefing-company-network .cnt-tabs,#briefing-company-network .cnt-tools{display:none!important}#briefing-company-network #cnt-view-graph[hidden]{display:block!important}</style></noscript>
+<style>
+#briefing-company-network{--cn-fg:light-dark(#20252d,#edf0f5);--cn-bg:light-dark(#fff,#15181e);--cn-muted:light-dark(#636b77,#aab3c1);--cn-line:light-dark(#bcc3cd,#626c7b);--cn-ring:light-dark(#2563eb,#86b0ff);--cn-target:light-dark(#273447,#e0e8f4);--cn-target-text:light-dark(#fff,#182335);color-scheme:light dark;color:var(--cn-fg);width:100%}
+#briefing-company-network .cn-filters,#briefing-company-network .cn-legend{display:flex;flex-wrap:wrap;gap:8px 16px}
+#briefing-company-network .cn-filters label,#briefing-company-network .cn-legend span{display:inline-flex;gap:6px;align-items:center}
+#briefing-company-network .cn-product-label{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0}
+#briefing-company-network button,#briefing-company-network select{font:inherit;color:var(--cn-fg);background:var(--cn-bg);border:1px solid var(--cn-line);border-radius:6px;padding:6px 9px}
+#briefing-company-network .cn-dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex-shrink:0}
+#briefing-company-network .cn-plot{position:relative;width:100%}
+#briefing-company-network .cn-svg{display:block;width:100%}
+#briefing-company-network .cn-keyboard{position:absolute;inset:0;pointer-events:none}
+#briefing-company-network .cn-key{position:absolute;width:32px;height:32px;transform:translate(-50%,-50%);border:0;background:transparent;padding:0;pointer-events:none}
+#briefing-company-network .cn-key:focus-visible{outline:2px solid var(--cn-ring);background:var(--cn-bg)}
+#briefing-company-network .cn-line{stroke:var(--cn-line);stroke-width:1.5;fill:none}
+#briefing-company-network .cn-line-selected{stroke:var(--cn-fg);stroke-width:2.5}
+#briefing-company-network .cn-hit{stroke:transparent;stroke-width:24;fill:none;pointer-events:stroke;cursor:pointer}
+#briefing-company-network .cn-svg text{font:12px sans-serif;fill:var(--cn-fg)}
+#briefing-company-network .cn-node-label{paint-order:stroke;stroke:var(--cn-bg);stroke-width:5px;stroke-linejoin:round}
+#briefing-company-network .cn-count{color:var(--cn-muted);margin:10px 0;font-size:12px}
+#briefing-company-network .cn-detail-head{display:flex;gap:12px;align-items:center;justify-content:space-between}
+#briefing-company-network .cn-detail-head h4{margin:0}
+#briefing-company-network .cn-details{border-top:1px solid var(--cn-line);padding:14px 0}
+#briefing-company-network .cn-details p{margin:8px 0;overflow-wrap:anywhere}
+#briefing-company-network a{color:var(--cn-ring);overflow-wrap:anywhere}
+#briefing-company-network .cn-table-wrap{overflow-x:auto}
+#briefing-company-network table{width:100%;border-collapse:collapse;font-size:13px}
+#briefing-company-network th,#briefing-company-network td{padding:8px;text-align:left;vertical-align:top;border-bottom:1px solid var(--cn-line);overflow-wrap:anywhere}
+#briefing-company-network .cn-error{color:var(--cn-fg)}
+@media(pointer:coarse){#briefing-company-network .cn-hit{stroke-width:36}#briefing-company-network button,#briefing-company-network select{min-height:44px}}
+@media print{#briefing-company-network .cn-filters,#briefing-company-network .cn-product-label,#briefing-company-network .cn-close,#briefing-company-network .cn-keyboard{display:none}#briefing-company-network .cn-table{display:block}#briefing-company-network .cn-table-wrap{overflow:visible}#briefing-company-network .cn-table summary{display:none}#briefing-company-network .cn-table>*:not(summary){display:block!important}#briefing-company-network .cn-svg{break-inside:avoid}}
+
+#briefing-company-network{--cn-soft:light-dark(#f5f8fa,#202833)}
+#briefing-company-network .cn-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px;align-items:start}
+#briefing-company-network .cn-board{border:1px solid var(--cn-line);border-radius:8px;min-width:0;background:var(--cn-bg)}
+#briefing-company-network .cn-toolbar,#briefing-company-network .cn-clusters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:10px 0}
+#briefing-company-network .cn-toolbar label{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+#briefing-company-network .cn-toolbar input,#briefing-company-network .cn-toolbar select{font:inherit;color:var(--cn-fg);background:var(--cn-bg);max-width:100%}
+#briefing-company-network .cn-clusters{padding:10px;border-bottom:1px solid var(--cn-line)}
+#briefing-company-network .cn-clusters button[aria-pressed=true]{background:var(--cn-target);color:var(--cn-target-text)}
+#briefing-company-network .cn-plot{overflow-x:auto}#briefing-company-network .cn-keyboard{position:static;pointer-events:auto}
+#briefing-company-network .cn-edge-button{margin:4px;text-align:left}#briefing-company-network .cn-node{cursor:pointer}
+#briefing-company-network .cn-node:focus-visible{outline:3px solid var(--cn-ring)}
+#briefing-company-network .cn-line{opacity:.35}#briefing-company-network .cn-line-selected{opacity:1}
+#briefing-company-network .cn-svg .cn-cluster-title{font-size:16px;font-weight:600}
+#briefing-company-network .cn-details{border:1px solid var(--cn-line);border-radius:8px;padding:16px;background:var(--cn-bg);min-width:0}
+#briefing-company-network .cn-relation{display:block;width:100%;text-align:left;margin-top:8px}
+#briefing-company-network .cn-count,#briefing-company-network .cn-legend,#briefing-company-network .cn-access{padding:8px 12px}
+@media print{#briefing-company-network .cn-grid{display:block}#briefing-company-network .cn-toolbar,#briefing-company-network .cn-clusters,#briefing-company-network .cn-details,#briefing-company-network .cn-access{display:none!important}#briefing-company-network .cn-plot{overflow:visible}}
+#briefing-company-network{--cn-fg:#193445;--cn-bg:#fff;--cn-muted:#647b88;--cn-line:#cedde5;--cn-ring:#c3872d;--cn-target:#154c61;--cn-target-text:#fff;--cn-soft:#f8fafb;color-scheme:light}#briefing-company-network .cn-board{border-color:#dce6eb;border-radius:10px}#briefing-company-network .cn-filters{gap:7px;margin:12px 0}#briefing-company-network .cn-filters label{font-size:11px;border:1px solid #d9e5eb;border-radius:6px;padding:6px 9px;background:#f4f8fa;gap:6px}#briefing-company-network .cn-filters label:has(input:not(:checked)){background:#fff;color:#93a4ae}#briefing-company-network .cn-filters input{accent-color:#154c61}#briefing-company-network .cn-toolbar{padding:0;gap:12px}#briefing-company-network .cn-toolbar label{font-size:11px}#briefing-company-network input.cn-search{border:1px solid #cedee6;border-radius:6px;padding:7px 9px;width:230px}#briefing-company-network .cn-toolbar select{max-width:270px}#briefing-company-network button,#briefing-company-network select{font-size:11px;border-color:#cedee6;padding:7px 10px}#briefing-company-network .cn-product-label{font-size:11px;margin:0}#briefing-company-network .cn-product{max-width:330px}.network-tools{border:1px solid #e1e9ee;border-radius:8px;padding:10px 13px;margin-bottom:12px;background:#fbfcfd}.network-tools>summary{font-size:11px;font-weight:600;color:var(--teal)}.network-tools[open]>summary{margin-bottom:12px}.network-tools .cn-product-label{margin-bottom:10px!important}#briefing-company-network .cn-clusters{gap:7px;padding:10px}#briefing-company-network .cn-clusters button{background:#fff;font-size:10px}#briefing-company-network .cn-plot{padding:0 5px;background:#fff}#briefing-company-network .cn-svg text{font-family:inherit;font-size:11px}#briefing-company-network .cn-svg .cn-cluster-title{font-size:12px;font-weight:700}#briefing-company-network .cn-line{stroke:#b6cbd6;stroke-width:1.25;opacity:.65}#briefing-company-network .cn-line-selected{stroke:#154c61;stroke-width:2.8;opacity:1}#briefing-company-network .cn-svg.has-selection .cn-line:not(.cn-line-selected){opacity:.16}#briefing-company-network .cn-node:hover rect{stroke:#c3872d;stroke-width:2}#briefing-company-network .cn-node-label{stroke-width:0}#briefing-company-network .cn-legend{padding:12px 15px 7px;gap:7px 15px;font-size:10px;border-top:1px solid #e1e9ee}#briefing-company-network .cn-count{font-size:10px;padding:6px 15px 10px;color:#607180}#briefing-company-network .cn-access{font-size:11px;padding:0 15px 12px}#briefing-company-network .cn-table{font-size:11px;margin-top:15px}#briefing-company-network .cn-table td{font-size:11px}
+
+#briefing-company-network .cn-grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:18px;align-items:start}
+#briefing-company-network .cn-sidebar{position:sticky;top:82px;min-width:0}
+#briefing-company-network .cn-details{padding:0;border:1px solid #dce6eb;border-radius:10px;overflow:hidden;background:#fff}
+#briefing-company-network .cn-detail-head{padding:18px 17px;background:#f4f8fa;border-bottom:1px solid #dce6eb;align-items:flex-start}
+#briefing-company-network .cn-detail-head h4{font-size:16px;line-height:1.4;overflow-wrap:anywhere}
+#briefing-company-network .cn-detail-head button{font-size:10px;padding:5px 7px;flex-shrink:0}
+#briefing-company-network .cn-detail-content{padding:12px 18px 22px;min-height:230px;max-height:calc(100vh - 205px);overflow-y:auto;font-size:12px;line-height:1.65}
+#briefing-company-network .cn-detail-content a{color:#176274}
+#briefing-company-network .cn-detail-content p+p{margin-top:13px}
+#briefing-company-network .cn-detail-content .cn-relation{font-size:11px;line-height:1.5;padding:10px 12px}
+#briefing-company-network .cn-line-cross{stroke:#176274;opacity:.8;stroke-width:1.7}
+#briefing-company-network .cn-line-selected{stroke:#c3872d;opacity:1;stroke-width:2.4}
+@media print{#briefing-company-network .cn-grid{display:block}#briefing-company-network .cn-sidebar{display:none}}
+
+#briefing-company-network .cn-svg{touch-action:auto}#briefing-company-network .cn-plot{overflow:auto;overscroll-behavior:auto}#briefing-company-network .cn-kind-icon{flex:none;overflow:visible}#briefing-company-network .cn-node-label{paint-order:stroke;stroke:white;stroke-width:3px;pointer-events:none}#briefing-company-network .cn-target-label{pointer-events:none}#briefing-company-network .cn-node:hover .cn-symbol,#briefing-company-network .cn-node:focus-visible .cn-symbol{stroke:#c3872d;stroke-width:4}#briefing-company-network .cn-svg .cn-cluster-title{font-size:14px}#briefing-company-network .cn-svg.has-selection .cn-line:not(.cn-line-selected){opacity:.2}#briefing-company-network .cn-line{stroke:var(--cn-edge-color,#466372);opacity:.4;stroke-width:1.4}#briefing-company-network .cn-line-cross{opacity:.55}#briefing-company-network .cn-line-selected{stroke:#c3872d;opacity:1;stroke-width:2.7}
+
+/* Zwei lokale Ansichten der Clusteranalyse. */
+#briefing-company-network [hidden]{display:none!important}
+#briefing-company-network .cnt-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:18px}
+#briefing-company-network .cnt-heading h3{margin:0}
+#briefing-company-network .cnt-tabs{display:flex;gap:4px;padding:4px;border:1px solid #c9d5df;border-radius:10px;background:#edf2f6}
+#briefing-company-network .cnt-tabs button{border:0;border-radius:7px;background:transparent;color:#36536a;padding:9px 20px;font:inherit;font-weight:650;cursor:pointer}
+#briefing-company-network .cnt-tabs button[aria-selected="true"]{background:#163047;color:white;box-shadow:0 2px 5px #16304722}
+#briefing-company-network .cnt-tools{display:flex;align-items:end;gap:12px;flex-wrap:wrap;padding:16px;border:1px solid #d7e1e8;border-radius:10px;background:#f6f8fa}
+#briefing-company-network .cnt-tools label{display:grid;gap:5px;font-size:13px;color:#36536a}
+#briefing-company-network .cnt-tools input[type="search"],#briefing-company-network .cnt-tools select{font:inherit;padding:9px 10px;border:1px solid #b6c8d5;border-radius:6px;background:white;min-height:40px;max-width:100%}
+#briefing-company-network .cnt-tools .cnt-direct-label{display:flex;align-items:center;gap:7px;min-height:40px}
+#briefing-company-network .cnt-reset{font:inherit;border:1px solid #b6c8d5;border-radius:6px;background:white;padding:9px 12px;min-height:40px;cursor:pointer}
+#briefing-company-network .cnt-count{font-size:13px;color:#52697a;margin:12px 0 20px}
+#briefing-company-network .cnt-group{margin:22px 0 28px}
+#briefing-company-network .cnt-group h4{font-size:17px;margin:0 0 12px;color:#163047}
+#briefing-company-network .cnt-table-scroll{overflow-x:auto;border:1px solid #d7e1e8;border-radius:9px}
+#briefing-company-network .cnt-group table{width:100%;border-collapse:collapse;table-layout:fixed;margin:0;font-size:13px}
+#briefing-company-network .cnt-group th{background:#edf2f6;text-align:left;color:#254358;padding:12px;vertical-align:top}
+#briefing-company-network .cnt-group td{padding:12px;vertical-align:top;border-top:1px solid #e1e8ee;overflow-wrap:anywhere;line-height:1.5}
+#briefing-company-network .cnt-group th:nth-child(1),#briefing-company-network .cnt-group th:nth-child(2){width:18%}
+#briefing-company-network .cnt-group th:nth-child(3){width:23%}
+#briefing-company-network .cnt-group th:nth-child(4){width:16%}
+#briefing-company-network .cnt-group details{margin:0;background:transparent;border:0;padding:0}
+#briefing-company-network .cnt-group summary{cursor:pointer;color:#235d83;font-weight:650}
+#briefing-company-network .cnt-group details p{font-size:12px;line-height:1.55;margin:10px 0}
+#briefing-company-network .cnt-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+#briefing-company-network .cnt-tabs button:focus-visible,#briefing-company-network .cnt-tools :focus-visible{outline:3px solid #c3872d;outline-offset:3px}
+@media(max-width:700px){#briefing-company-network .cnt-heading{align-items:flex-start}#briefing-company-network .cnt-group table{min-width:700px}#briefing-company-network .cnt-tools>label{max-width:100%}}
+@media print{#briefing-company-network .cnt-tabs,#briefing-company-network #cnt-view-tables{display:none!important}#briefing-company-network #cnt-view-graph[hidden]{display:block!important}}
+
+/* Kompakte, farbcodierte Beziehungsliste mit Details auf Klick. */
+#briefing-company-network .cnt-group{margin:24px 0}
+#briefing-company-network .cnt-group h4{font-size:15px;letter-spacing:.015em;margin:0 0 10px}
+#briefing-company-network .cnt-list{border:1px solid #d9e2e9;border-radius:10px;overflow:hidden;background:#fff}
+#briefing-company-network .cnt-group .cnt-entry{display:block;margin:0;padding:0;border:0;border-bottom:1px solid #e5ebf0;border-radius:0;background:#fff}
+#briefing-company-network .cnt-entry:last-child{border-bottom:0}
+#briefing-company-network .cnt-group .cnt-entry>summary{display:grid;grid-template-columns:minmax(0,1fr) minmax(130px,230px) 100px 12px;align-items:center;gap:16px;list-style:none;padding:15px 17px;cursor:pointer;color:#243e52;font-size:13px;font-weight:500;line-height:1.45;transition:background .15s}
+#briefing-company-network .cnt-entry>summary::-webkit-details-marker{display:none}
+#briefing-company-network .cnt-entry>summary:hover{background:#f5f8fa}
+#briefing-company-network .cnt-entry>summary:focus-visible{outline:3px solid #c3872d;outline-offset:-3px}
+#briefing-company-network .cnt-entry[open]>summary{background:#edf3f7}
+#briefing-company-network .cnt-pair{display:flex;align-items:center;gap:10px;flex-wrap:wrap;min-width:0}
+#briefing-company-network .cnt-actor{display:inline-flex;align-items:center;gap:7px;min-width:0;font-weight:650;overflow-wrap:anywhere}
+#briefing-company-network .cnt-dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex:0 0 8px;background:#686b75}
+#briefing-company-network .cnt-kind-target{background:#273447}#briefing-company-network .cnt-kind-partner{background:#2563eb}#briefing-company-network .cnt-kind-customer{background:#198761}#briefing-company-network .cnt-kind-jv{background:#8550b8}#briefing-company-network .cnt-kind-owner{background:#bd6a17}#briefing-company-network .cnt-kind-supplier{background:#bf405a}#briefing-company-network .cnt-kind-subsidiary{background:#127d90}#briefing-company-network .cnt-kind-project{background:#8b7920}#briefing-company-network .cnt-kind-institution{background:#526580}#briefing-company-network .cnt-kind-person{background:#b14ea1}
+#briefing-company-network .cnt-arrow{color:#8c9aa6;font-size:15px}
+#briefing-company-network .cnt-type{justify-self:start;padding:4px 9px;border-radius:5px;font-size:11px;font-weight:650;line-height:1.4;background:#f0f2f5;color:#515b6b}
+#briefing-company-network .cnt-type-partner{background:#eaf1ff;color:#2456ab}#briefing-company-network .cnt-type-customer{background:#e9f6ef;color:#186344}#briefing-company-network .cnt-type-jv{background:#f2ecf9;color:#714298}#briefing-company-network .cnt-type-owner{background:#fff2e3;color:#925010}#briefing-company-network .cnt-type-supplier{background:#fcecf0;color:#a33750}#briefing-company-network .cnt-type-subsidiary{background:#e7f5f7;color:#116b7b}#briefing-company-network .cnt-type-project{background:#f7f4e3;color:#756216}
+#briefing-company-network .cnt-state{font-size:11px;color:#687b89}
+#briefing-company-network .cnt-chevron{display:block;width:7px;height:7px;border-right:1.5px solid #687b89;border-bottom:1.5px solid #687b89;transform:rotate(45deg);transition:transform .15s}
+#briefing-company-network .cnt-entry[open] .cnt-chevron{transform:rotate(225deg)}
+#briefing-company-network .cnt-expanded{padding:4px 20px 16px;border-top:1px solid #e0e8ee;max-width:100%;background:#f9fbfc}
+#briefing-company-network .cnt-meta{display:flex;flex-wrap:wrap;gap:8px 24px;padding:13px 0 3px;font-size:11px;color:#627787}
+#briefing-company-network .cnt-meta strong{font-weight:600;color:#324e62;margin-right:5px}
+#briefing-company-network .cnt-group .cnt-expanded p{font-size:13px;line-height:1.65;overflow-wrap:anywhere}
+#briefing-company-network .cnt-expanded small{font-size:11px;color:#6a7c89}
+@media(max-width:800px){#briefing-company-network .cnt-group .cnt-entry>summary{grid-template-columns:minmax(0,1fr) 12px;gap:8px 12px;padding:13px}.cnt-pair{grid-column:1}.cnt-type{grid-column:1}.cnt-state{grid-column:1}#briefing-company-network .cnt-chevron{grid-column:2;grid-row:1/4}#briefing-company-network .cnt-expanded{padding:4px 13px 13px}}
+
+/* Einzelakteure in vier nebeneinander angeordneten Clustertabellen. */
+#briefing-company-network .cnt-actor-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:start}
+#briefing-company-network .cnt-actor-grid .cnt-group{margin:0;border:1px solid #dce5eb;border-radius:10px;overflow:hidden;background:#fff;border-top:3px solid var(--cnt-accent)}
+#briefing-company-network .cnt-cluster-capital{--cnt-accent:#285e7b}#briefing-company-network .cnt-cluster-structure{--cnt-accent:#ac7734}#briefing-company-network .cnt-cluster-technology{--cnt-accent:#287b70}#briefing-company-network .cnt-cluster-market{--cnt-accent:#68648e}
+#briefing-company-network .cnt-actor-grid h4{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:14px 13px;margin:0;font-size:13px;line-height:1.45;min-height:65px;background:#f5f8fa;color:var(--cnt-accent);border-bottom:1px solid #e1e8ed}
+#briefing-company-network .cnt-group-count{font-size:11px;flex:none;border-radius:20px;padding:2px 7px;background:white;border:1px solid #dce5eb}
+#briefing-company-network .cnt-group .cnt-actor-table{min-width:0;width:100%;table-layout:fixed;border-collapse:collapse;margin:0}
+#briefing-company-network .cnt-group .cnt-actor-table td{padding:0;border:0;border-bottom:1px solid #e6ecf0}
+#briefing-company-network .cnt-actor-table tr:last-child td{border-bottom:0}
+#briefing-company-network .cnt-group .cnt-actor-entry{padding:0;margin:0;border:0;border-radius:0;background:transparent}
+#briefing-company-network .cnt-group .cnt-actor-entry>summary{display:flex;justify-content:space-between;align-items:center;gap:10px;list-style:none;padding:13px;font-size:12px;line-height:1.5;color:#243e52;min-height:48px;cursor:pointer}
+#briefing-company-network .cnt-actor-entry>summary::-webkit-details-marker{display:none}
+#briefing-company-network .cnt-actor-entry>summary:hover,#briefing-company-network .cnt-actor-entry[open]>summary{background:#edf3f7}
+#briefing-company-network .cnt-actor-entry>summary:focus-visible{outline:3px solid #c3872d;outline-offset:-3px}
+#briefing-company-network .cnt-actor-entry[open] .cnt-chevron{transform:rotate(225deg)}
+#briefing-company-network .cnt-actor-entry .cnt-chevron{flex:0 0 7px}
+#briefing-company-network .cnt-actor-entry .cnt-expanded{padding:4px 13px 13px}
+#briefing-company-network .cnt-group .cnt-actor-entry .cnt-expanded p{font-size:12px}
+#briefing-company-network .cnt-source-title{font-weight:700;color:#36536a;padding-top:8px}
+#briefing-company-network .cn-grid{grid-template-columns:minmax(0,1fr)}
+#briefing-company-network .cn-sidebar{position:static}
+#briefing-company-network .cn-detail-content{min-height:0;max-height:380px}
+@media(min-width:1750px){#briefing-company-network .cn-grid{grid-template-columns:minmax(0,1fr) 300px}#briefing-company-network .cn-sidebar{position:sticky}}
+@media(max-width:1050px){#briefing-company-network .cnt-actor-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){#briefing-company-network .cnt-actor-grid{grid-template-columns:minmax(0,1fr)}}
+
+#briefing-company-network .cnt-overview{display:flex;align-items:center;flex-wrap:wrap;gap:10px 24px;margin:13px 0 20px}
+#briefing-company-network .cnt-overview .cnt-count{margin:0;flex:none;font-size:12px;font-weight:600}
+#briefing-company-network .cnt-legend{display:flex;align-items:center;flex-wrap:wrap;gap:7px 14px;font-size:11px;line-height:1.5;color:#52697a}
+#briefing-company-network .cnt-legend-title{font-weight:650;color:#36536a}
+#briefing-company-network .cnt-legend-item{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+</style>
+<script>
+(()=>{
+ const root=document.getElementById('briefing-company-network');
+ if(!root)return;
+ const kinds={target:['Zielunternehmen','#273447','#e0e8f4'],partner:['Partner','#2563eb','#83b1ff'],customer:['Kunde','#198761','#63d4a6'],jv:['Joint Venture','#8550b8','#c6a0fb'],owner:['Eigentümer','#bd6a17','#f2b46c'],supplier:['Zulieferer','#bf405a','#ff92aa'],subsidiary:['Tochtergesellschaft','#127d90','#71d3e7'],project:['Projektpartner','#8b7920','#dace77'],person:['Mandatsträger','#b14ea1','#efa1dd'],institution:['Institution','#526580','#abc0dd'],other:['Weitere Akteure','#686b75','#b7bbc8']};
+ const categories={partner:'Partner',customer:'Kunden',jv:'Joint Ventures',owner:'Eigentum',supplier:'Zulieferer',subsidiary:'Tochtergesellschaften',project:'Projekte',other:'Weitere Beziehungen'};
+ const svg=root.querySelector('.cn-svg'),plot=root.querySelector('.cn-plot'),keyboard=root.querySelector('.cn-keyboard'),detail=root.querySelector('.cn-details');
+ const ns='http://www.w3.org/2000/svg';
+ function dom(tag,parent,text){const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(parent)parent.appendChild(e);return e;}
+ function mark(tag,attrs,parent){const e=document.createElementNS(ns,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,String(v)));parent.appendChild(e);return e;}
+ function safeURL(value){const u=new URL(value);if(!['http:','https:'].includes(u.protocol))throw Error('Unzulässiger Quellenlink');return u.href;}
+ function color(kind){return kinds[kind][1];}
+
+ const nodeRadius=14;
+ const shapes={target:'circle',partner:'circle',subsidiary:'square',jv:'hexagon',owner:'octagon',supplier:'diamond',customer:'triangle',project:'pentagon',institution:'capsule',person:'star',other:'ellipse'};
+ function polygon(kind,r){const shape=shapes[kind];if(shape==='square'||shape==='capsule')return [[-r,-r],[r,-r],[r,r],[-r,r]];if(shape==='diamond')return [[0,-r],[r,0],[0,r],[-r,0]];if(shape==='triangle')return [[0,-r],[r,r],[-r,r]];if(shape==='hexagon')return [[-r/2,-r],[r/2,-r],[r,0],[r/2,r],[-r/2,r],[-r,0]];if(['octagon','pentagon','star'].includes(shape)){const count=shape==='octagon'?8:shape==='pentagon'?5:10;return Array.from({length:count},(_,i)=>{const radius=shape==='star'&&i%2?r*.5:r,angle=-Math.PI/2+i*2*Math.PI/count;return [radius*Math.cos(angle),radius*Math.sin(angle)]});}return null;}
+ function symbol(kind,r,parent,active=false){const shape=shapes[kind],attrs={class:'cn-symbol',fill:kind==='target'?'#163047':color(kind),stroke:active?'#c3872d':'white','stroke-width':active?4:2.5};if(shape==='square'||shape==='capsule')return mark('rect',{...attrs,x:-r,y:-r,width:2*r,height:2*r,rx:shape==='capsule'?r*.65:6},parent);if(shape==='ellipse')return mark('ellipse',{...attrs,cx:0,cy:0,rx:r,ry:r*.75},parent);const points=polygon(kind,r);if(points)return mark('polygon',{...attrs,points:points.map(p=>p.join(',')).join(' ')},parent);return mark('circle',{...attrs,cx:0,cy:0,r},parent);}
+ function anchor(p,q,extra=0){const dx=q.x-p.x,dy=q.y-p.y,r=nodeRadius,points=polygon(p.kind,r);let t;if(points){t=Infinity;for(let i=0;i<points.length;i++){const [ax,ay]=points[i],[bx,by]=points[(i+1)%points.length],ex=bx-ax,ey=by-ay,den=dx*ey-dy*ex;if(Math.abs(den)<1e-9)continue;const k=(ax*ey-ay*ex)/den,u=(ax*dy-ay*dx)/den;if(k>=0&&u>=0&&u<=1)t=Math.min(t,k);}}else{const ry=shapes[p.kind]==='ellipse'?r*.75:r;t=1/Math.sqrt(dx*dx/(r*r)+dy*dy/(ry*ry));}const length=Math.hypot(dx,dy)||1;return {x:p.x+dx*t+dx/length*extra,y:p.y+dy*t+dy/length*extra};}
+ function validDate(v,month=false){if(typeof v!=='string'||!(month?/^\d{4}-\d{2}(?:-\d{2})?$/:/^\d{4}-\d{2}-\d{2}$/).test(v))return false;const a=v.split('-').map(Number);return a[1]>=1&&a[1]<=12&&(a.length===2||a[2]>=1&&a[2]<=new Date(Date.UTC(a[0],a[1],0)).getUTCDate());}
+ try{
+  const data=JSON.parse(root.querySelector('.cn-data').textContent);
+  if(data.schema_version!==1||typeof data.company!=='string'||!data.company.trim()||!validDate(data.as_of)||![data.nodes,data.edges,data.sources,data.products].every(Array.isArray))throw Error('Ungültiges Netzwerkformat oder Firmenbezug');
+  function index(items){const m=new Map();items.forEach(x=>{if(!x.id||m.has(x.id))throw Error('Fehlende oder doppelte ID');m.set(x.id,x);});return m;}
+  const nodes=index(data.nodes),sources=index(data.sources),products=index(data.products),edgeIndex=index(data.edges);
+  if(!nodes.has(data.target_id)||data.nodes.filter(n=>n.kind==='target').length!==1||nodes.get(data.target_id).kind!=='target')throw Error('Zielunternehmen fehlt');
+  data.nodes.forEach(n=>{if(!kinds[n.kind]||typeof n.label!=='string'||!n.label.trim()||n.cluster&&!['capital','structure','technology','market'].includes(n.cluster))throw Error('Ungültiger Knoten');});
+  data.products.forEach(p=>{if(typeof p.label!=='string')throw Error('Ungültiges Produkt');});
+  data.sources.forEach(s=>{if(typeof s.title!=='string'||!s.title||typeof s.name!=='string'||!s.name||!Object.hasOwn(s,'published_date')||!Object.hasOwn(s,'accessed_date')||s.published_date!==null&&!validDate(s.published_date)||!validDate(s.accessed_date))throw Error('Quellenmetadaten fehlen');safeURL(s.url);});
+  data.edges.forEach(e=>{if(!nodes.has(e.from)||!nodes.has(e.to)||e.from===e.to||!Array.isArray(e.categories)||!e.categories.length||e.categories.some(c=>!categories[c])||!Array.isArray(e.product_ids)||e.product_ids.some(p=>!products.has(p))||!Array.isArray(e.source_ids)||!e.source_ids.length||e.source_ids.some(s=>!sources.has(s))||!Array.isArray(e.claim_ids)||!e.claim_ids.length||e.claim_ids.some(c=>typeof c!=='string'||!c.trim())||typeof e.type!=='string'||!e.type||typeof e.summary!=='string'||!e.summary||typeof e.status!=='string'||!e.status||!validDate(e.as_of,true))throw Error('Unvollständige Beziehung oder Belege');});
+  function openNetwork(){detail.hidden=false;detail.querySelector('.cn-detail-content').scrollTop=0;}
+  let selected=null;
+  const available=[...new Set(data.edges.flatMap(e=>e.categories))];
+  available.forEach(c=>{const label=dom('label',root.querySelector('.cn-filters'));const input=dom('input',label);input.type='checkbox';input.value=c;input.checked=true;dom('span',label,categories[c]);input.addEventListener('change',()=>{clear();draw();});});
+  data.products.forEach(p=>{const option=dom('option',root.querySelector('.cn-product'),p.label);option.value=p.id;});
+  root.querySelector('.cn-product-label').hidden=!data.products.length;
+  [...new Set(data.nodes.map(n=>n.kind))].forEach(k=>{const label=dom('span',root.querySelector('.cn-legend'));const icon=document.createElementNS(ns,'svg');icon.setAttribute('width','20');icon.setAttribute('height','20');icon.setAttribute('viewBox','-10 -10 20 20');icon.setAttribute('aria-hidden','true');icon.classList.add('cn-kind-icon');label.appendChild(icon);symbol(k,8,icon);dom('span',label,kinds[k][0]);});
+  function sourceList(ids,parent){ids.forEach(id=>{const s=sources.get(id);const p=dom('p',parent);const a=dom('a',p,s.name+' · '+s.title);a.href=safeURL(s.url);a.target='_blank';a.rel='noopener noreferrer';dom('span',p,' · '+(s.published_date||'o. D.')+(s.source_kind?' · '+s.source_kind:'')+(s.report_year?' · Geschäftsjahr '+s.report_year:'')+(s.page?' · Seite '+s.page:'')+(s.section?' · '+s.section:'')+(s.accessed_date?' · Abruf '+s.accessed_date:''));});}
+  function selectEdge(id){selected=id;const e=edgeIndex.get(id);detail.hidden=false;detail.querySelector('h4').textContent=nodes.get(e.from).label+' → '+nodes.get(e.to).label;const body=detail.querySelector('.cn-detail-content');body.replaceChildren();dom('p',body,e.type+' · '+e.status+' · Stand '+e.as_of);dom('p',body,e.summary);if(e.interpretation)dom('p',body,'Analysteninterpretation: '+e.interpretation);if(e.capital_share!==undefined&&e.capital_share!==null)dom('p',body,'Kapitalanteil: '+e.capital_share);if(e.voting_share!==undefined&&e.voting_share!==null)dom('p',body,'Stimmrechte: '+e.voting_share);if(e.control)dom('p',body,'Kontrolle: '+e.control);if(e.product_ids.length)dom('p',body,'Produktbezug: '+e.product_ids.map(p=>products.get(p).label).join(', '));if(e.uncertainty)dom('p',body,'Unsicherheit: '+e.uncertainty);const cp=dom('p',body,'Belegdetails: ');claimLinks(e.claim_ids,cp);sourceList(e.source_ids,body);draw();openNetwork();}
+  function claimLinks(ids,parent){ids.forEach((id,i)=>{if(i)dom('span',parent,', ');const a=dom('a',parent,id);a.href='#'+encodeURIComponent(id);});}
+  const tableBody=root.querySelector('.cn-table tbody');tableBody.replaceChildren();
+  data.edges.forEach(e=>{const tr=dom('tr',tableBody);dom('td',tr,nodes.get(e.from).label+' → '+nodes.get(e.to).label);const rel=dom('td',tr,e.type+' · '+e.summary);claimLinks(e.claim_ids,dom('p',rel,'Belegdetails: '));for(const [k,label]of [['capital_share','Kapitalanteil'],['voting_share','Stimmrechte'],['control','Kontrolle'],['uncertainty','Evidenzgrenze'],['interpretation','Analysteninterpretation']])if(e[k]!==undefined&&e[k]!==null&&e[k]!=='')dom('p',rel,label+': '+e[k]);if(e.product_ids.length)dom('p',rel,'Produkt: '+e.product_ids.map(id=>products.get(id).label).join(', '));dom('td',tr,e.status+' · '+e.as_of);sourceList(e.source_ids,dom('td',tr));});
+  const clusterDefs=[['capital','Kapital & Investoren'],['structure','Konzern & Joint Ventures'],['technology','Technologie & Industrie'],['market','Kunden & Marktzugang']];
+  let expanded=new Set(clusterDefs.map(c=>c[0])),activeNode=null;root.querySelector('.cn-cross').checked=true;
+  function group(n){return n.cluster||({owner:'capital',subsidiary:'structure',jv:'structure',customer:'market',institution:'market'}[n.kind]||'technology');}
+  const grouped=new Map(clusterDefs.map(([id])=>[id,data.nodes.filter(n=>n.id!==data.target_id&&group(n)===id)]));
+  const first=new Set();grouped.forEach(list=>[...list.filter(n=>n.focus===true),...list.filter(n=>n.focus!==true)].slice(0,6).forEach(n=>first.add(n.id)));
+  clusterDefs.forEach(([id,label])=>{const b=dom('button',root.querySelector('.cn-clusters'),label+' +');b.type='button';b.dataset.cluster=id;b.setAttribute('aria-pressed','false');b.addEventListener('click',()=>{expanded.has(id)?expanded.delete(id):expanded.add(id);draw();});});
+  [...new Set(data.edges.map(e=>e.status))].forEach(s=>{const o=dom('option',root.querySelector('.cn-status'),s);o.value=s;});
+  function clear(){selected=null;activeNode=null;detail.hidden=false;detail.querySelector('h4').textContent='Beziehungen & Quellen';const body=detail.querySelector('.cn-detail-content');body.replaceChildren();dom('p',body,'Wähle einen Akteur oder eine Verbindung im Netzwerk. Hier erscheinen die zugehörigen Inhalte und Originalquellen.');}
+  function selectNode(id){activeNode=id;selected=null;detail.hidden=false;detail.querySelector('h4').textContent=nodes.get(id).legal_name||nodes.get(id).label;const body=detail.querySelector('.cn-detail-content');body.replaceChildren();dom('p',body,kinds[nodes.get(id).kind][0]+' · Eine Organisation, mehrere Rollen möglich.');data.edges.filter(e=>e.from===id||e.to===id).forEach(e=>{const b=dom('button',body,nodes.get(e.from).label+' → '+nodes.get(e.to).label+' · '+e.type+' · '+e.status);b.className='cn-relation';b.type='button';b.addEventListener('click',()=>{activeNode=null;selectEdge(e.id);});});draw();openNetwork();}
+  function selectBundle(ids){if(ids.length===1){activeNode=null;selectEdge(ids[0]);return;}const first=edgeIndex.get(ids[0]);selected=ids[0];activeNode=null;detail.hidden=false;detail.querySelector('h4').textContent=nodes.get(first.from).label+' ↔ '+nodes.get(first.to).label;const body=detail.querySelector('.cn-detail-content');body.replaceChildren();dom('p',body,ids.length+' belegte Beziehungen zwischen diesen Akteuren. Eine Beziehung wählen, um Status und Originalquellen zu lesen.');ids.forEach(id=>{const e=edgeIndex.get(id),b=dom('button',body,e.type+' · '+e.status+' · '+e.as_of);b.type='button';b.className='cn-relation';b.addEventListener('click',()=>selectEdge(id));});draw();openNetwork();}
+  function draw(){
+   const enabled=new Set([...root.querySelectorAll('.cn-filters input:checked')].map(x=>x.value)),product=root.querySelector('.cn-product').value,status=root.querySelector('.cn-status').value,query=root.querySelector('.cn-search').value.toLocaleLowerCase().trim(),restrict=query||product!=='all'||status!=='all'||enabled.size!==available.length;
+   const eligible=data.edges.filter(e=>e.categories.some(c=>enabled.has(c))&&(product==='all'||e.product_ids.includes(product))&&(status==='all'||e.status===status)&&(!query||[nodes.get(e.from).label,nodes.get(e.to).label,e.type,e.summary].join(' ').toLocaleLowerCase().includes(query)));
+   if(selected&&!eligible.some(e=>e.id===selected)){clear();}
+   const names=new Set([data.target_id]);if(restrict)eligible.forEach(e=>{names.add(e.from);names.add(e.to);});else grouped.forEach((list,id)=>list.filter(n=>expanded.has(id)||first.has(n.id)).forEach(n=>names.add(n.id)));
+   if(activeNode)eligible.filter(e=>e.from===activeNode||e.to===activeNode).forEach(e=>{names.add(e.from);names.add(e.to);});
+   if(selected){const e=edgeIndex.get(selected);names.add(e.from);names.add(e.to);}
+   // Retain the participants and actual partial edges of a visible joint venture.
+   eligible.filter(e=>e.categories.includes('jv')&&(names.has(e.from)||names.has(e.to))).forEach(e=>{names.add(e.from);names.add(e.to);});
+   eligible.filter(e=>e.from!==data.target_id&&e.to!==data.target_id&&(names.has(e.from)||names.has(e.to))).forEach(e=>{if(nodes.get(e.from).kind==='subsidiary')names.add(e.from);if(nodes.get(e.to).kind==='subsidiary')names.add(e.to);});
+   const cross=root.querySelector('.cn-cross').checked;
+   const visible=eligible.filter(e=>names.has(e.from)&&names.has(e.to)&&(cross||e.from===data.target_id||e.to===data.target_id||nodes.get(e.from).kind==='subsidiary'||nodes.get(e.to).kind==='subsidiary'||e.categories.includes('jv')||e.id===selected||activeNode&&(e.from===activeNode||e.to===activeNode)));
+   const connected=new Set([data.target_id,...visible.flatMap(e=>[e.from,e.to])]);for(const id of names)if(!connected.has(id))names.delete(id);
+
+   const w=Math.max(640,(plot.clientWidth||960)-10),pad=16,gutter=28,panelW=(w-2*pad-gutter)/2,columns=5,cellW=(panelW-32)/columns,rowStep=94;
+   const groups=clusterDefs.map(([id])=>({id,all:grouped.get(id),shown:grouped.get(id).filter(n=>names.has(n.id))}));
+   const get=id=>groups.find(g=>g.id===id),needed=id=>62+Math.max(1,Math.ceil(get(id).shown.length/columns))*rowStep;
+   const topH=Math.max(needed('capital'),needed('structure')),bottomH=Math.max(needed('technology'),needed('market')),centerGap=128,h=2*pad+topH+centerGap+bottomH;
+   const panelH=id=>['capital','structure'].includes(id)?topH:bottomH,areaColors={capital:'#285e7b',structure:'#ac7734',technology:'#287b70',market:'#68648e'};
+   const cx=w/2,cy=pad+topH+centerGap/2,positions=new Map([[data.target_id,{x:cx,y:cy,kind:'target'}]]);
+   svg.setAttribute('viewBox','0 0 '+w+' '+h);svg.style.minWidth='0';svg.style.height='auto';svg.replaceChildren();keyboard.replaceChildren();svg.classList.toggle('has-selection',Boolean(selected||activeNode));
+   mark('title',{},svg).textContent=data.company+' im Mittelpunkt. Gleich große Knoten, Formen und Farben je Akteurstyp, Namen darunter; Quellen rechts.';
+   const placements=[['capital',pad,pad],['structure',pad+panelW+gutter,pad],['technology',pad,pad+topH+centerGap],['market',pad+panelW+gutter,pad+topH+centerGap]];
+   placements.forEach(([id,x,y])=>{
+    const g=get(id),label=clusterDefs.find(d=>d[0]===id)[1],area=areaColors[id];
+    mark('rect',{x,y,width:panelW,height:panelH(id),rx:14,fill:area,'fill-opacity':.035,stroke:area,'stroke-opacity':.22,class:'cn-area','data-cluster-area':id},svg);
+    mark('text',{x:x+18,y:y+27,class:'cn-cluster-title'},svg).textContent=label;
+    mark('text',{x:x+18,y:y+46,style:'fill:#7a919d;font-size:10px'},svg).textContent=g.shown.length+' von '+g.all.length+' Akteuren';
+    if(!g.shown.length)mark('text',{x:x+18,y:y+86,style:'fill:#7a919d;font-size:11px'},svg).textContent='Keine Verbindung in dieser Auswahl';
+    g.shown.forEach((n,i)=>positions.set(n.id,{x:x+16+(i%columns+.5)*cellW,y:y+90+Math.floor(i/columns)*rowStep,kind:n.kind}));
+    const b=root.querySelector('[data-cluster="'+id+'"]');b.textContent=label+(expanded.has(id)?' −':' +');b.setAttribute('aria-pressed',String(expanded.has(id)));
+   });
+   const defs=mark('defs',{},svg),marker=mark('marker',{id:'cn-arrow',viewBox:'0 0 10 10',refX:9,refY:5,markerWidth:5,markerHeight:5,orient:'auto-start-reverse'},defs);mark('path',{d:'M 0 0 L 10 5 L 0 10 Z',fill:'#466372'},marker);
+   const lines=mark('g',{},svg),hits=mark('g',{},svg),nlayer=mark('g',{},svg);
+   const pairs=new Map();visible.forEach(e=>{const key=[e.from,e.to].sort().join('|');if(!pairs.has(key))pairs.set(key,[]);pairs.get(key).push(e);});
+
+   let pairNumber=0;
+   pairs.forEach(relations=>{
+    const e=relations[0],a=positions.get(e.from),b=positions.get(e.to);if(!a||!b)return;
+    const aa=anchor(a,b,3),bb=anchor(b,a,7),dx=bb.x-aa.x,dy=bb.y-aa.y,length=Math.hypot(dx,dy)||1,cross=e.from!==data.target_id&&e.to!==data.target_id;
+    const bend=cross?Math.min(52,length*.1):((pairNumber++%3)-1)*12,mx=(aa.x+bb.x)/2-dy/length*bend,my=(aa.y+bb.y)/2+dx/length*bend;
+    const d='M '+aa.x+' '+aa.y+' Q '+mx+' '+my+' '+bb.x+' '+bb.y;
+    const active=relations.some(r=>r.id===selected||activeNode&&(r.from===activeNode||r.to===activeNode)),reverse=relations.some(r=>r.from===e.to&&r.to===e.from);
+    const dash=relations.every(r=>r.historical||/historisch/i.test(r.status))?'2 5':relations.every(r=>/angekündigt|geplant|announced/i.test(r.status))?'7 5':'none';
+    const attrs={d,class:'cn-line'+(cross?' cn-line-cross':'')+(active?' cn-line-selected':''),'data-edge':e.id,'data-relations':relations.map(r=>r.id).join(','),'stroke-dasharray':dash,style:'--cn-edge-color:'+(cross?'#24485d':areaColors[group(nodes.get(e.to))]||'#466372'),'marker-end':'url(#cn-arrow)'};if(reverse)attrs['marker-start']='url(#cn-arrow)';mark('path',attrs,lines);
+    const hit=mark('path',{d,class:'cn-hit','aria-hidden':'true','data-edge':e.id},hits);hit.addEventListener('click',()=>selectBundle(relations.map(r=>r.id)));
+    const button=dom('button',keyboard,nodes.get(e.from).label+' ↔ '+nodes.get(e.to).label+(relations.length>1?' · '+relations.length+' Beziehungen':' · '+e.type));button.type='button';button.className='cn-edge-button';button.addEventListener('click',()=>selectBundle(relations.map(r=>r.id)));
+   });
+   function wrap(label,max=32){const words=label.split(/\s+/).flatMap(word=>Array.from({length:Math.ceil(word.length/max)},(_,i)=>word.slice(i*max,(i+1)*max))),out=[];let line='';words.forEach(word=>{if((line+' '+word).trim().length>max&&line){out.push(line);line=word;}else line=(line+' '+word).trim();});if(line)out.push(line);return out;}
+
+   data.nodes.filter(n=>positions.has(n.id)).forEach(n=>{
+    const p=positions.get(n.id),target=n.id===data.target_id,g=mark('g',{transform:'translate('+p.x+' '+p.y+')',class:'cn-node',role:'button',tabindex:0,'aria-label':n.legal_name||n.label,'data-node':n.id,'data-kind':n.kind,'data-radius':nodeRadius},nlayer);
+    symbol(n.kind,nodeRadius,g,activeNode===n.id);
+    const label=wrap(n.label,target?12:Math.max(6,Math.floor((cellW-12)/7))),shown=label.slice(0,3);if(label.length>3)shown[2]=shown[2].slice(0,-1)+'…';
+    const start=nodeRadius+17;
+    shown.forEach((line,i)=>mark('text',{x:0,y:start+i*(target?12:14),'text-anchor':'middle',class:target?'cn-target-label':'cn-node-label',style:'fill:'+'#193445'+';font-size:'+(target?'10px':'11px')+';font-weight:'+(target?'700':'600')},g).textContent=line);
+    mark('title',{},g).textContent=(n.legal_name||n.label)+' · '+kinds[n.kind][0];
+    g.addEventListener('click',()=>selectNode(n.id));g.addEventListener('keydown',ev=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();selectNode(n.id);}});
+   });
+   root.querySelector('.cn-count').textContent=(positions.size-1)+' / '+(data.nodes.length-1)+' Akteure · '+visible.length+' / '+data.edges.length+' Beziehungen · '+(cross?'Querverbindungen eingeblendet':'Weitere Querverbindungen per Filter oder Auswahl');root.querySelector('.cn-expand').textContent=expanded.size===4?'Kompakte Auswahl':'Alle Akteure zeigen';
+
+  }
+  root.querySelector('.cn-expand').addEventListener('click',()=>{expanded=expanded.size===4?new Set():new Set(clusterDefs.map(c=>c[0]));root.querySelector('.cn-cross').checked=expanded.size===4;draw();});root.querySelector('.cn-reset').addEventListener('click',()=>{root.querySelector('.cn-search').value='';root.querySelector('.cn-status').value='all';root.querySelector('.cn-product').value='all';root.querySelector('.cn-cross').checked=true;root.querySelectorAll('.cn-filters input').forEach(i=>i.checked=true);expanded.clear();clear();draw();});root.querySelector('.cn-search').addEventListener('input',()=>{clear();draw();});['.cn-status','.cn-cross'].forEach(s=>root.querySelector(s).addEventListener('change',()=>{clear();draw();}));
+  root.querySelector('.cn-close').addEventListener('click',()=>{clear();draw();});root.querySelector('.cn-product').addEventListener('change',()=>{clear();draw();});root.addEventListener('cn:viewchange',draw);new ResizeObserver(draw).observe(plot);clear();draw();
+
+ }catch(error){const warning=root.querySelector('.cn-error');warning.hidden=false;warning.textContent='Netzwerkdaten sind unvollständig oder ungültig. Bitte die Cluster-Übergabe prüfen.';console.error('Cluster network:',error.message);}
+})();
+</script>
+<script>
+(()=>{
+ const root=document.getElementById('briefing-company-network');if(!root)return;
+ const tabs=[...root.querySelectorAll('.cnt-tabs [role="tab"]')],rows=[...root.querySelectorAll('[data-cnt-node]')],search=root.querySelector('.cnt-search'),category=root.querySelector('.cnt-category');
+ function activate(tab,focus=false){tabs.forEach(t=>{const active=t===tab;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1;document.getElementById(t.getAttribute('aria-controls')).hidden=!active;});if(focus)tab.focus();root.dispatchEvent(new CustomEvent('cn:viewchange'));}
+ tabs.forEach((tab,i)=>{tab.addEventListener('click',()=>activate(tab));tab.addEventListener('keydown',e=>{let next;if(e.key==='ArrowRight')next=(i+1)%tabs.length;else if(e.key==='ArrowLeft')next=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')next=0;else if(e.key==='End')next=tabs.length-1;else return;e.preventDefault();activate(tabs[next],true);});});
+ function filter(){const q=search.value.trim().toLocaleLowerCase(),cat=category.value;let visible=0;rows.forEach(row=>{row.hidden=(cat!=='all'&&row.dataset.kind!==cat)||(q&&!row.dataset.search.includes(q));if(!row.hidden)visible++;});root.querySelectorAll('.cnt-group').forEach(g=>{const count=[...g.querySelectorAll('[data-cnt-node]')].filter(r=>!r.hidden).length;g.hidden=count===0;g.querySelector('.cnt-group-count').textContent=count;});root.querySelector('.cnt-empty').hidden=visible!==0;root.querySelector('.cnt-count').textContent=visible+' von '+rows.length+' Akteuren';}
+ search.addEventListener('input',filter);category.addEventListener('change',filter);root.querySelector('.cnt-reset').addEventListener('click',()=>{search.value='';category.value='all';filter();});filter();
+})();
+</script>
