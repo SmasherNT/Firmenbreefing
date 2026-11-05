@@ -10,7 +10,7 @@ Recherchiert je Aufruf ein Modul: Kontext & Person, Portfolio & Präsenz oder ei
 | Skill | `schlank-recherche`: [`skill/SKILL.md`](skill/SKILL.md), Paket über `skills-bauen.py` |
 | Modell | Claude Sonnet 5.5 (heute Effort medium) |
 | Websuche | an |
-| Tools | SharePoint: Datei lesen und Datei schreiben (Lauf-Ordner); Websuche und Abruf einzelner Webseiten/PDFs |
+| Tools | SharePoint-Connector (siehe unten); Websuche und Abruf einzelner Webseiten/PDFs |
 | Gedächtnis | keines, jeder Aufruf startet frisch |
 | Modus | Voll und Kurz (focus nur Voll) |
 | Bisher | company-context-analyst, portfolio-analyst, focus-analyst |
@@ -24,15 +24,32 @@ Recherchiert je Aufruf ein Modul: Kontext & Person, Portfolio & Präsenz oder ei
 | Ausgänge | context-facts.json bzw. portfolio-facts.json bzw. focus-<id>-facts.json |
 | Bei Korrektur zusätzlich | `pruefergebnis.json`, eigene bisherige Ausgabe |
 
+## SharePoint-Tools einrichten
+
+Copilot Studio: **Tools → Add a tool → Connector → SharePoint**, je Aktion einmal hinzufügen.
+Unter **Inputs** die Site-Adresse fest eintragen (Custom value), alles andere füllt der Agent
+aus der Aufrufnachricht `Lauf-Ordner: <Bibliothek>/<Ordner>`. **Authentication:** „End user“
+(jeder Nutzer braucht Schreibrechte auf die Bibliothek) oder „Maker-provided“.
+
+| Aktion (englisch) | deutsche Oberfläche | wofür | Inputs |
+|---|---|---|---|
+| Get file content using path | Dateiinhalt mithilfe des Pfads abrufen | Eingangsdatei lesen | Site Address: Custom value `https://<firma>.sharepoint.com/sites/<site>` · File Path: Dynamically fill with AI |
+| Create file | Datei erstellen | neue Ausgangsdatei schreiben | Site Address: Custom value · Folder Path, File Name, File Content: Dynamically fill with AI |
+| Get file metadata using path | Dateimetadaten mithilfe des Pfads abrufen | ID einer vorhandenen Datei für „Update file“ | Site Address: Custom value · File Path: Dynamically fill with AI |
+| Update file | Datei aktualisieren | vorhandene Ausgangsdatei überschreiben | Site Address: Custom value · File Identifier, File Content: Dynamically fill with AI |
+
 ## Anweisungen (in Copilot Studio einfügen)
 
 ```text
 Du bist der Baustein R1 „Recherche“ eines Firmenbriefing-Systems.
 Du startest ohne Vorwissen und rufst keine anderen Agenten auf.
-Du erhältst den Pfad eines Lauf-Ordners und das Modul (modul).
-Lies ausschließlich deine Eingangsdateien: auftrag.md, facts-run.json. Liegt zusätzlich pruefergebnis.json mit Einträgen für dich vor, liest du auch diese Datei und deine bisherige Ausgabe und korrigierst genau die genannten Punkte.
+Du erhältst den Pfad eines Lauf-Ordners in SharePoint und das Modul (modul).
+Deine Eingangsdateien: auftrag.md, facts-run.json. Liegt zusätzlich pruefergebnis.json mit Einträgen für dich vor, liest du auch diese Datei und deine bisherige Ausgabe und korrigierst genau die genannten Punkte.
+Deine Ausgangsdateien: context-facts.json bzw. portfolio-facts.json bzw. focus-<id>-facts.json.
 Arbeite immer nach dem Skill „schlank-recherche“.
-Schreibe ausschließlich deine Ausgangsdateien: context-facts.json bzw. portfolio-facts.json bzw. focus-<id>-facts.json. Vorhandene überschreibst du.
+Lies jede Eingangsdatei mit „Get file content using path“ (Pfad: Lauf-Ordner/Dateiname).
+Schreibe jede Ausgangsdatei mit „Create file“ in den Lauf-Ordner. Gibt es sie dort schon, hole ihre ID mit „Get file metadata using path“ und überschreibe sie mit „Update file“.
+Lies und schreibe keine anderen Dateien.
 Fehlt eine Eingangsdatei, schreibe nichts und antworte nur mit dem Namen der fehlenden Datei.
 Antworte am Ende in einem Satz mit den geschriebenen Dateien und dem Status.
 ```

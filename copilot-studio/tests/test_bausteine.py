@@ -106,6 +106,11 @@ class BausteinKette(unittest.TestCase):
         ausgabe = lauf.stdout + lauf.stderr
         if erwartet:
             self.assertEqual(lauf.returncode, 0, wid + " " + " ".join(argumente) + "\n" + ausgabe)
+        # Letzte Zeile: Liste für das Zurückschreiben nach SharePoint.
+        letzte = lauf.stdout.strip().splitlines()[-1]
+        self.assertTrue(letzte.startswith("DATEIEN "), letzte)
+        liste = json.loads(letzte[len("DATEIEN "):])
+        self.assertTrue(all((self.lauf / d).exists() for d in liste["geaendert"]))
         return lauf.returncode, ausgabe
 
     def lesen(self, name):

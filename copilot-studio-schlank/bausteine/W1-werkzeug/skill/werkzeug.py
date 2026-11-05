@@ -78,18 +78,22 @@ class Lauf:
             self.entfernt.append(pfad.relative_to(self.arbeit))
 
     def __exit__(self, *fehler):
-        if self.arbeit == self.ordner:
-            return False
-        for rel in self.entfernt:
-            ziel = self.ordner / rel
-            if ziel.exists():
-                ziel.unlink()
-        for quelle in self.arbeit.rglob("*"):
-            if quelle.is_file():
-                ziel = self.ordner / quelle.relative_to(self.arbeit)
-                if not ziel.exists() or ziel.read_bytes() != quelle.read_bytes():
-                    ziel.parent.mkdir(parents=True, exist_ok=True)
-                    shutil.copy2(quelle, ziel)
+        geaendert, geloescht = [], sorted(str(p) for p in self.entfernt)
+        if self.arbeit != self.ordner:
+            for rel in self.entfernt:
+                ziel = self.ordner / rel
+                if ziel.exists():
+                    ziel.unlink()
+            for quelle in sorted(self.arbeit.rglob("*")):
+                if quelle.is_file():
+                    rel = quelle.relative_to(self.arbeit)
+                    ziel = self.ordner / rel
+                    if not ziel.exists() or ziel.read_bytes() != quelle.read_bytes():
+                        ziel.parent.mkdir(parents=True, exist_ok=True)
+                        shutil.copy2(quelle, ziel)
+                        geaendert.append(rel.as_posix())
+        # Liste für das Zurückschreiben in den SharePoint-Lauf-Ordner.
+        print("DATEIEN " + json.dumps(dict(geaendert=geaendert, geloescht=geloescht), ensure_ascii=False))
         return False
 
 

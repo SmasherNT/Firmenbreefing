@@ -9,17 +9,22 @@ Parameter `schritt`: `fakten`, `swot` oder `abschluss`.
 
 ## So arbeitest du
 
-1. **Lauf-Ordner lokal bereitstellen.** Liegt der Lauf-Ordner in SharePoint,
-   lade alle seine Dateien einschließlich des Unterordners `_pruefstand/` in
-   einen lokalen Ordner der Sandbox. Liegt er schon lokal, nutze ihn direkt.
+1. **Lauf-Ordner aus SharePoint laden.** Ordner-ID mit „Get folder metadata
+   using path“ holen, mit „List folder“ alle Dateien und Unterordner auflisten
+   (auch `_pruefstand/` und tiefer) und jede Datei mit „Get file content using
+   path“ in einen lokalen Ordner der Sandbox laden, mit gleicher Struktur.
 2. **Genau diesen einen Befehl ausführen** (aus dem Wurzelordner dieses Skills):
 
    ```bash
    python3 werkzeug.py --lauf <Lauf-Ordner> --schritt <fakten|swot|abschluss>
    ```
 
-3. **Ergebnis zurückschreiben.** Alle neuen und geänderten Dateien
-   (einschließlich `_pruefstand/`) zurück in den Lauf-Ordner schreiben.
+3. **Ergebnis nach SharePoint zurückschreiben.** Die letzte Zeile der Ausgabe
+   beginnt mit `DATEIEN` und nennt `geaendert` und `geloescht` (Pfade relativ
+   zum Lauf-Ordner). Jede Datei aus `geaendert` mit „Create file“ schreiben;
+   existiert sie schon, ihre ID mit „Get file metadata using path“ holen und mit
+   „Update file“ überschreiben. Jede Datei aus `geloescht` mit „Delete file“
+   entfernen.
 4. **Antworten** mit der letzten Ausgabe des Skripts in einem Satz.
 
 Du änderst keine Inhalte, bewertest nichts und rufst keine anderen Befehle auf.

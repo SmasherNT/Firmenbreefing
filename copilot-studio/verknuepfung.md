@@ -11,7 +11,9 @@ passen die Bausteine zusammen.
 2. Darin `anfrage.txt` mit der Nachricht ablegen. Erste Zeile optional
    `modus: voll` oder `modus: kurz`.
 
-Alle weiteren Dateien entstehen durch die Bausteine. Welche das sind, steht in
+Alle weiteren Dateien entstehen durch die Bausteine. Jeder Baustein liest und
+schreibt sie selbst über seine SharePoint-Aktionen; Einrichtung siehe
+`README.md`, Abschnitt „SharePoint einrichten“. Welche das sind, steht in
 [`dateien.md`](dateien.md).
 
 ## Aufruf eines Bausteins

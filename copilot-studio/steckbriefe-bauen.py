@@ -20,6 +20,29 @@ PARAM = {
     "modul": "das Modul (modul)",
 }
 
+SITE = "https://<firma>.sharepoint.com/sites/<site>"
+
+# SharePoint-Aktionen (englische Oberfläche · deutsche Oberfläche): wofür, Einstellungen der Inputs
+SP_LESEN = [
+    ("Get file content using path", "Dateiinhalt mithilfe des Pfads abrufen", "Eingangsdatei lesen",
+     "Site Address: Custom value `" + SITE + "` · File Path: Dynamically fill with AI"),
+    ("Create file", "Datei erstellen", "neue Ausgangsdatei schreiben",
+     "Site Address: Custom value · Folder Path, File Name, File Content: Dynamically fill with AI"),
+    ("Get file metadata using path", "Dateimetadaten mithilfe des Pfads abrufen", "ID einer vorhandenen Datei für „Update file“",
+     "Site Address: Custom value · File Path: Dynamically fill with AI"),
+    ("Update file", "Datei aktualisieren", "vorhandene Ausgangsdatei überschreiben",
+     "Site Address: Custom value · File Identifier, File Content: Dynamically fill with AI"),
+]
+SP_ORDNER = [
+    ("Get folder metadata using path", "Ordnermetadaten mithilfe des Pfads abrufen", "ID des Lauf-Ordners und seiner Unterordner",
+     "Site Address: Custom value · Folder Path: Dynamically fill with AI"),
+    ("List folder", "Ordner auflisten", "alle Dateien und Unterordner finden, auch `_pruefstand/`",
+     "Site Address: Custom value · File Identifier (Ordner-ID): Dynamically fill with AI"),
+    ("Delete file", "Datei löschen", "Dateien entfernen, die das Skript gelöscht hat",
+     "Site Address: Custom value · File Identifier: Dynamically fill with AI"),
+]
+
+
 def trenner(xs):
     """Semikolon, wenn die Einträge nach Modulen gegliedert sind (\"modul: dateien\")."""
     return "; " if any(": " in x for x in xs) else ", "
@@ -30,7 +53,7 @@ def liste(xs):
 
 for b in data["bausteine"]:
     denk = b["art"] == "denk"
-    tools = ["SharePoint: Datei lesen und Datei schreiben (Lauf-Ordner)"]
+    tools = ["SharePoint-Connector (siehe unten)"]
     if denk and b["websuche"].startswith("an"):
         tools.append("Websuche und Abruf einzelner Webseiten/PDFs")
     elif denk:
@@ -70,19 +93,43 @@ for b in data["bausteine"]:
     ]
     if b["korrektur"]:
         lines.append("| Bei Korrektur zusätzlich | `pruefergebnis.json`, eigene bisherige Ausgabe |")
+    aktionen = SP_LESEN + ([] if denk else SP_ORDNER)
+    lines += ["", "## SharePoint-Tools einrichten", "",
+              "Copilot Studio: **Tools → Add a tool → Connector → SharePoint**, je Aktion einmal hinzufügen.",
+              "Unter **Inputs** die Site-Adresse fest eintragen (Custom value), alles andere füllt der Agent",
+              "aus der Aufrufnachricht `Lauf-Ordner: <Bibliothek>/<Ordner>`. **Authentication:** „End user“",
+              "(jeder Nutzer braucht Schreibrechte auf die Bibliothek) oder „Maker-provided“.", "",
+              "| Aktion (englisch) | deutsche Oberfläche | wofür | Inputs |", "|---|---|---|---|"]
+    lines += [f"| {en} | {de} | {zweck} | {inp} |" for en, de, zweck, inp in aktionen]
     lines += ["", "## Anweisungen (in Copilot Studio einfügen)", "", "```text"]
     text = [
         f"Du bist der Baustein {b['id']} „{b['titel']}“ eines Firmenbriefing-Systems.",
         "Du startest ohne Vorwissen und rufst keine anderen Agenten auf.",
-        f"Du erhältst den Pfad eines Lauf-Ordners{params}.",
-        "Lies ausschließlich deine Eingangsdateien: " + trenner(b["eingaenge"]).join(b["eingaenge"]) + "." + korr.replace("`", ""),
+        f"Du erhältst den Pfad eines Lauf-Ordners in SharePoint{params}.",
+        "Deine Eingangsdateien: " + trenner(b["eingaenge"]).join(b["eingaenge"]) + "." + korr.replace("`", ""),
+        "Deine Ausgangsdateien: " + trenner(b["ausgaenge"]).join(b["ausgaenge"]) + ".",
         f"Arbeite immer nach dem Skill „{b['skill']}“.",
     ]
-    if not denk:
-        text.append("Du führst genau den einen Befehl aus deinem Skill aus. Du änderst keine Inhalte, "
-                    "bewertest nichts und ergänzt nichts. Fehlermeldungen gibst du wörtlich weiter.")
+    if denk:
+        text += [
+            "Lies jede Eingangsdatei mit „Get file content using path“ (Pfad: Lauf-Ordner/Dateiname).",
+            "Schreibe jede Ausgangsdatei mit „Create file“ in den Lauf-Ordner. Gibt es sie dort schon, hole ihre ID "
+            "mit „Get file metadata using path“ und überschreibe sie mit „Update file“.",
+            "Lies und schreibe keine anderen Dateien.",
+        ]
+    else:
+        text += [
+            "1. Hole die ID des Lauf-Ordners mit „Get folder metadata using path“, liste mit „List folder“ alle Dateien "
+            "und Unterordner auf (auch _pruefstand/ und tiefer) und lade jede Datei mit „Get file content using path“ "
+            "in einen lokalen Ordner der Sandbox, mit gleicher Unterordnerstruktur.",
+            "2. Führe genau den einen Befehl aus deinem Skill aus, mit dem lokalen Ordner als --lauf.",
+            "3. Die letzte Zeile der Ausgabe beginnt mit DATEIEN und nennt geaendert und geloescht. Schreibe jede Datei "
+            "aus geaendert mit „Create file“ (bzw. „Get file metadata using path“ und „Update file“, wenn sie schon "
+            "existiert) an denselben relativen Pfad im Lauf-Ordner zurück und lösche jede Datei aus geloescht mit "
+            "„Delete file“.",
+            "Du änderst keine Inhalte, bewertest nichts und ergänzt nichts. Fehlermeldungen gibst du wörtlich weiter.",
+        ]
     text += [
-        "Schreibe ausschließlich deine Ausgangsdateien: " + trenner(b["ausgaenge"]).join(b["ausgaenge"]) + ". Vorhandene überschreibst du.",
         "Fehlt eine Eingangsdatei, schreibe nichts und antworte nur mit dem Namen der fehlenden Datei.",
         "Antworte am Ende in einem Satz mit den geschriebenen Dateien und dem Status.",
     ]

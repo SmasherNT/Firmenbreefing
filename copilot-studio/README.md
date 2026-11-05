@@ -128,10 +128,40 @@ schreibt: [`dateien.md`](dateien.md).
 2. In Copilot Studio einen neuen Agenten anlegen, Name wie im Steckbrief.
 3. Modell und Websuche laut Steckbrief einstellen.
 4. Skill-Paket `<skill>.zip` hochladen und dem Agenten zuordnen.
-5. Tools hinzufügen: SharePoint (Datei lesen, Datei schreiben), bei Werkzeug-
-   Agenten die Code-Ausführung.
+5. Tools hinzufügen: die SharePoint-Aktionen laut Steckbrief (siehe
+   „SharePoint einrichten“ unten), bei Werkzeug-Agenten zusätzlich die
+   Code-Ausführung.
 6. Den Anweisungstext aus `agent.md` in das Anweisungsfeld kopieren.
 7. Einzeln testen: im Chat „Lauf-Ordner: …“ schreiben und die Dateien prüfen.
+
+## 5a. SharePoint einrichten (einmalig)
+
+Agenten übernehmen Dateien **nur über einen gemeinsamen Lauf-Ordner in
+SharePoint**. Dateien, die ein Agent im Chat als Dateikarte ausgibt, sieht der
+nächste Agent nicht; einen zentralen Ablageort kann man in Copilot Studio nicht
+einstellen. Deshalb liest und schreibt jeder Agent selbst über den
+SharePoint-Connector.
+
+1. **Bibliothek anlegen:** eine SharePoint-Site, darin die Dokumentbibliothek
+   `Briefings`.
+2. **Je Briefing einen Lauf-Ordner:** `Briefings/<firma>-<datum>/`, darin
+   `anfrage.txt`. Alle weiteren Dateien schreiben die Agenten hierhin.
+3. **Je Agent die SharePoint-Aktionen hinzufügen** (Tools → Add a tool →
+   Connector → SharePoint), wie im Abschnitt „SharePoint-Tools einrichten“ des
+   Steckbriefs. Denk-Agenten brauchen 4 Aktionen, Werkzeug-Agenten 7.
+4. **Site-Adresse festlegen:** in jeder Aktion unter Inputs „Site Address“ auf
+   „Custom value“ mit eurer Site-Adresse, z. B.
+   `https://<firma>.sharepoint.com/sites/<site>`. Damit ist festgelegt, **wo**
+   abgelegt wird. Ordnerpfad und Dateiname füllt der Agent selbst.
+5. **Anmeldung:** „End user“ (jeder Nutzer braucht Schreibrechte auf
+   `Briefings` und legt beim ersten Aufruf seine eigene Verbindung an) oder
+   „Maker-provided“ (eine zentrale Verbindung).
+6. **Aufruf:** Jeder Agent bekommt die Nachricht `Lauf-Ordner: Briefings/<ordner>`
+   (plus Parameter laut Schaltplan).
+
+Werkzeug-Agenten laden den ganzen Lauf-Ordner in ihre Sandbox, führen ihr
+Skript aus und schreiben genau die Dateien zurück, die das Skript in seiner
+letzten Ausgabezeile `DATEIEN` als geändert oder gelöscht meldet.
 
 ## 6. Aufbau Schritt für Schritt
 
