@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firmenbriefing in Copilot Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: eine Lesespalte für Text, breitere Spalte für Diagramme und Tabellen. */
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --ink: #17212b;
+  --muted: #56626e;
+  --line: #d3dae1;
+  --accent: #0b5d7a;
+  --agent-fill: #e2eff4;
+  --gate: #9a6412;
+  --gate-fill: #fbf0dc;
+  --stop: #b42318;
+  --display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f151b; --surface: #161e26; --ink: #e5ecf2; --muted: #9ba8b5;
+    --line: #2d3945; --accent: #63b6d6; --agent-fill: #133442;
+    --gate: #e3a94e; --gate-fill: #3a2b12; --stop: #f08a7e;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f151b; --surface: #161e26; --ink: #e5ecf2; --muted: #9ba8b5;
+  --line: #2d3945; --accent: #63b6d6; --agent-fill: #133442;
+  --gate: #e3a94e; --gate-fill: #3a2b12; --stop: #f08a7e;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg); color: var(--ink); font-family: var(--body);
+  font-size: 16px; line-height: 1.55;
+}
+main { max-width: 1000px; margin: 0 auto; padding: 40px 20px 80px; display: grid; gap: 44px; }
+.prose { max-width: 68ch; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.5rem; padding-top: 8px; border-top: 2px solid var(--ink); }
+h3 { font-size: 1.12rem; }
+p { margin: 0; }
+section { display: grid; gap: 16px; }
+.lede { color: var(--muted); font-size: 1.05rem; max-width: 68ch; }
+.meta { font-size: .85rem; color: var(--muted); }
+.brief { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.brief div { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: grid; gap: 4px; }
+.brief b { font-family: var(--display); font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+ul, ol { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; background: var(--surface); border: 1px solid var(--line); font-size: .93rem; }
+th, td { text-align: left; vertical-align: top; padding: 9px 12px; border-bottom: 1px solid var(--line); }
+th { font-family: var(--display); font-weight: 600; background: var(--agent-fill); }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+figure { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: grid; gap: 12px; }
+figure svg { width: 100%; max-width: 100%; height: auto; display: block; color: var(--ink); }
+figcaption { font-size: .9rem; color: var(--muted); max-width: 80ch; }
+.legend { display: flex; flex-wrap: wrap; gap: 18px; font-size: .85rem; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.sw { width: 22px; height: 14px; border-radius: 3px; display: inline-block; }
+.sw-agent { background: var(--agent-fill); border: 1.5px solid var(--accent); }
+.sw-flow { border: 1.5px dashed var(--ink); }
+.sw-gate { background: var(--gate-fill); border: 1.5px solid var(--gate); transform: rotate(45deg) scale(.7); width: 16px; height: 16px; }
+.sw-stop { border: 1.5px solid var(--stop); }
+/* SVG-Klassen */
+.ag { fill: var(--agent-fill); stroke: var(--accent); stroke-width: 1.5; }
+.fl { fill: var(--surface); stroke: currentColor; stroke-width: 1.3; stroke-dasharray: 5 4; }
+.pl { fill: var(--surface); stroke: currentColor; stroke-width: 1.3; }
+.gt { fill: var(--gate-fill); stroke: var(--gate); stroke-width: 1.5; }
+.st { fill: var(--surface); stroke: var(--stop); stroke-width: 1.5; }
+.ln { fill: none; stroke: currentColor; stroke-width: 1.3; }
+.lb { fill: none; stroke: var(--gate); stroke-width: 1.3; }
+.t1 { font: 600 13px var(--body); fill: currentColor; }
+.t2 { font: 400 11.5px var(--body); fill: var(--muted); }
+.tp { font: 600 12px var(--display); fill: var(--accent); letter-spacing: .05em; }
+.tg { font: 500 11.5px var(--body); fill: var(--gate); }
+.ts { font: 600 12px var(--body); fill: var(--stop); }
+.ah { fill: currentColor; }
+.ahg { fill: var(--gate); }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; display: grid; gap: 8px; align-content: start; }
+.card.rec { border: 2px solid var(--accent); }
+.pill { font-size: .75rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: .05em; }
+.pro::marker { content: "+  "; color: var(--accent); font-weight: 700; }
+.con::marker { content: "–  "; color: var(--stop); font-weight: 700; }
+.steps { counter-reset: s; list-style: none; padding: 0; display: grid; gap: 10px; }
+.steps li { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; padding: 12px 16px; display: grid; gap: 4px; }
+.steps li b { font-family: var(--display); }
+.steps .ok { font-size: .88rem; color: var(--muted); }
+.open li::marker { color: var(--gate); }
+pre { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px; overflow-x: auto; font: 13px/1.55 var(--mono); white-space: pre-wrap; }
+button { font: 600 .9rem var(--body); color: var(--surface); background: var(--accent); border: 0; border-radius: 6px; padding: 8px 14px; cursor: pointer; justify-self: start; }
+button:focus-visible, a:focus-visible { outline: 3px solid var(--gate); outline-offset: 2px; }
+a { color: var(--accent); }
+.sources { font-size: .85rem; color: var(--muted); }
+@media (max-width: 420px) { h1 { font-size: 1.7rem; } main { padding: 28px 16px 60px; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<main>
+
+<header style="display:grid;gap:12px">
+  <p class="meta">Zielbild · Stand 05.11.2026 · Grundlage: Firmenbriefing-Repository (Claude Code) und Microsoft-Learn-Dokumentation zu Copilot Studio</p>
+  <h1>Firmenbriefing in Copilot Studio</h1>
+  <p class="lede">Vereinfachte Version B des bestehenden Briefing-Tools: fünf Agenten statt vierzehn Rollen, ein Agent Flow als Taktgeber, ein Dossier je Lauf. Zwei Abläufe: Vollbriefing und Kurzbriefing.</p>
+</header>
+
+<section>
+  <h2>Auftrag in Kürze</h2>
+  <div class="brief">
+    <div><b>Absicht</b><p>Ein einfaches Flussdiagramm, das zeigt, wie die Agenten zusammenarbeiten.</p></div>
+    <div><b>Ziel</b><p>Das Tool Schritt für Schritt in Copilot Studio nachbauen und für alle Kolleginnen und Kollegen freigeben.</p></div>
+    <div><b>Leitfragen</b><p>Agenten, Workflow oder Agent Flow? Wie viele JSON-Dateien? Welches Modell je Agent? Kurz- und Vollversion?</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>Version B in einem Satz je Entscheidung</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Thema</th><th>Heute (Claude Code)</th><th>Version B (Copilot Studio)</th></tr></thead>
+    <tbody>
+      <tr><td>Steuerung</td><td>Hauptagent folgt langen Regeltexten</td><td>Ein <b>Agent Flow</b> gibt die Reihenfolge fest vor: Schleifen, Bedingungen, Prüftore</td></tr>
+      <tr><td>Rollen</td><td>10 Rollen plus bis zu 3 Dokumentprüfer und Leitprüfer</td><td><b>5 Agenten</b>, die mit wechselndem Modulauftrag mehrfach aufgerufen werden</td></tr>
+      <tr><td>Dateien je Lauf</td><td>rund 15 JSON-Dateien plus Prüfpläne und Checkpoints</td><td><b>1 Dossier</b> mit einem Abschnitt je Agent, dazu das fertige Briefing</td></tr>
+      <tr><td>Wer schreibt</td><td>Jede Rolle schreibt ihre eigene Datei</td><td>Agenten liefern Ergebnisse zurück, <b>nur der Flow schreibt</b></td></tr>
+      <tr><td>Freigabe</td><td>Regeln im Prompt plus Python-Prüfskripte</td><td>Prüf-Agent urteilt, Flow-Bedingung setzt das Urteil hart durch</td></tr>
+      <tr><td>Regelwerk</td><td>rund 315 KB in 36 Referenzdateien</td><td>je Modul eine kurze Auftragskarte, aus dem Repository erzeugt</td></tr>
+      <tr><td>Ausgabe</td><td>HTML über lokale Renderer</td><td>Gleiche Renderer als Tool, dazu PDF, Ablage in SharePoint</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section>
+  <h2>Ablauf Vollbriefing</h2>
+  <div class="legend">
+    <span><i class="sw sw-agent"></i>KI-Schritt (Agent oder Prompt)</span>
+    <span><i class="sw sw-flow"></i>Flow- oder Code-Schritt</span>
+    <span><i class="sw sw-gate"></i>Prüftor</span>
+    <span><i class="sw sw-stop"></i>Abbruch</span>
+  </div>
+  <figure>
+  <div class="scroll">
+  <svg viewBox="0 0 860 1060" role="img" aria-label="Vollbriefing: Front-Agent legt den Auftrag an, ein Agent Flow ruft vier Recherche-Module und je Fokusthema einen Aufruf auf, der Prüf-Agent gibt die Fakten frei, danach Positionierung, SWOT und Schlussprüfung, zuletzt rendert ein Tool HTML und PDF in SharePoint.">
+    <defs>
+      <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker>
+      <marker id="g1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ahg"/></marker>
+    </defs>
+
+    <!-- Start -->
+    <rect x="320" y="16" width="220" height="40" rx="20" class="pl"/>
+    <text x="430" y="41" text-anchor="middle" class="t1">Anfrage im Teams-Chat</text>
+    <line x1="430" y1="56" x2="430" y2="88" class="ln" marker-end="url(#a1)"/>
+
+    <rect x="260" y="90" width="340" height="56" rx="8" class="ag"/>
+    <text x="430" y="114" text-anchor="middle" class="t1">Front-Agent „Firmenbriefing“</text>
+    <text x="430" y="133" text-anchor="middle" class="t2">Firma, Themen, Person, Modus Voll · Sonnet 5.5</text>
+    <line x1="430" y1="146" x2="430" y2="180" class="ln" marker-end="url(#a1)"/>
+    <text x="440" y="168" class="t2">legt Auftrag an, antwortet sofort</text>
+
+    <rect x="260" y="182" width="340" height="56" rx="8" class="fl"/>
+    <text x="430" y="206" text-anchor="middle" class="t1">Agent Flow „Briefing-Lauf“ startet</text>
+    <text x="430" y="225" text-anchor="middle" class="t2">neuer Eintrag in SharePoint-Liste · Ordner + Dossier</text>
+
+    <!-- Phase 1 -->
+    <text x="36" y="249" class="tp">PHASE 1 · FAKTEN</text>
+    <line x1="430" y1="238" x2="430" y2="258" class="ln"/>
+    <line x1="110" y1="258" x2="750" y2="258" class="ln"/>
+    <line x1="110" y1="258" x2="110" y2="286" class="ln" marker-end="url(#a1)"/>
+    <line x1="270" y1="258" x2="270" y2="286" class="ln" marker-end="url(#a1)"/>
+    <line x1="430" y1="258" x2="430" y2="286" class="ln" marker-end="url(#a1)"/>
+    <line x1="590" y1="258" x2="590" y2="286" class="ln" marker-end="url(#a1)"/>
+    <line x1="750" y1="258" x2="750" y2="286" class="ln" marker-end="url(#a1)"/>
+
+    <rect x="36" y="288" width="148" height="66" rx="8" class="ag"/>
+    <text x="110" y="313" text-anchor="middle" class="t1">Unternehmen</text>
+    <text x="110" y="329" text-anchor="middle" class="t1">&amp; Person</text>
+    <text x="110" y="346" text-anchor="middle" class="t2">Recherche · Sonnet</text>
+
+    <rect x="196" y="288" width="148" height="66" rx="8" class="ag"/>
+    <text x="270" y="313" text-anchor="middle" class="t1">Portfolio</text>
+    <text x="270" y="329" text-anchor="middle" class="t1">&amp; Präsenz</text>
+    <text x="270" y="346" text-anchor="middle" class="t2">Recherche · Sonnet</text>
+
+    <rect x="356" y="288" width="148" height="66" rx="8" class="ag"/>
+    <text x="430" y="313" text-anchor="middle" class="t1">Struktur</text>
+    <text x="430" y="329" text-anchor="middle" class="t1">&amp; Netzwerk</text>
+    <text x="430" y="346" text-anchor="middle" class="t2">Recherche Tiefe · Opus</text>
+
+    <rect x="516" y="288" width="148" height="66" rx="8" class="ag"/>
+    <text x="590" y="313" text-anchor="middle" class="t1">Markt</text>
+    <text x="590" y="329" text-anchor="middle" class="t1">&amp; Wettbewerb</text>
+    <text x="590" y="346" text-anchor="middle" class="t2">Recherche Tiefe · Opus</text>
+
+    <rect x="682" y="282" width="148" height="66" rx="8" class="ag"/>
+    <rect x="676" y="288" width="148" height="66" rx="8" class="ag"/>
+    <text x="750" y="313" text-anchor="middle" class="t1">Fokusthema</text>
+    <text x="750" y="329" text-anchor="middle" class="t1">je Thema 1 Aufruf</text>
+    <text x="750" y="346" text-anchor="middle" class="t2">Recherche · Sonnet</text>
+
+    <line x1="110" y1="354" x2="110" y2="374" class="ln"/>
+    <line x1="270" y1="354" x2="270" y2="374" class="ln"/>
+    <line x1="430" y1="354" x2="430" y2="374" class="ln"/>
+    <line x1="590" y1="354" x2="590" y2="374" class="ln"/>
+    <line x1="750" y1="354" x2="750" y2="374" class="ln"/>
+    <line x1="110" y1="374" x2="750" y2="374" class="ln"/>
+    <line x1="430" y1="374" x2="430" y2="402" class="ln" marker-end="url(#a1)"/>
+    <text x="440" y="394" class="t2">Faktenabschnitte mit Quellen-URL</text>
+
+    <rect x="260" y="404" width="340" height="52" rx="8" class="fl"/>
+    <text x="430" y="426" text-anchor="middle" class="t1">Flow schreibt Abschnitte ins Dossier</text>
+    <text x="430" y="444" text-anchor="middle" class="t2">Formatprüfung per Code, Zwischenstand gesichert</text>
+    <line x1="430" y1="456" x2="430" y2="484" class="ln" marker-end="url(#a1)"/>
+
+    <rect x="260" y="486" width="340" height="56" rx="8" class="ag"/>
+    <text x="430" y="510" text-anchor="middle" class="t1">Prüf-Agent · Faktenprüfung</text>
+    <text x="430" y="529" text-anchor="middle" class="t2">ohne Chatverlauf, 1 Aufruf je Modul · Sonnet 5.5</text>
+    <line x1="430" y1="542" x2="430" y2="566" class="ln" marker-end="url(#a1)"/>
+
+    <polygon points="430,568 494,604 430,640 366,604" class="gt"/>
+    <text x="430" y="608" text-anchor="middle" class="tg">bestanden?</text>
+
+    <!-- Rücklauf Phase 1 -->
+    <polyline points="366,604 18,604 18,321 34,321" class="lb" marker-end="url(#g1)"/>
+    <text x="40" y="596" class="tg">nein: Korrektur an das betroffene Modul</text>
+    <!-- Abbruch -->
+    <line x1="494" y1="604" x2="626" y2="604" class="lb" marker-end="url(#g1)"/>
+    <text x="504" y="596" class="tg">nach 2 Runden</text>
+    <rect x="628" y="580" width="202" height="48" rx="8" class="st"/>
+    <text x="729" y="602" text-anchor="middle" class="ts">Lauf blockiert</text>
+    <text x="729" y="619" text-anchor="middle" class="t2">Meldung mit offenen Punkten</text>
+
+    <!-- Phase 2 -->
+    <text x="36" y="676" class="tp">PHASE 2 · BEWERTUNG</text>
+    <line x1="430" y1="640" x2="430" y2="658" class="ln"/>
+    <text x="440" y="654" class="tg">ja</text>
+    <polyline points="430,658 325,658 325,686" class="ln" marker-end="url(#a1)"/>
+
+    <rect x="220" y="688" width="210" height="56" rx="8" class="ag"/>
+    <text x="325" y="712" text-anchor="middle" class="t1">Positionierung</text>
+    <text x="325" y="731" text-anchor="middle" class="t2">Matrix, Reife, Präsenz · Opus 5.5</text>
+    <line x1="430" y1="716" x2="466" y2="716" class="ln" marker-end="url(#a1)"/>
+    <rect x="468" y="688" width="172" height="56" rx="8" class="ag"/>
+    <text x="554" y="712" text-anchor="middle" class="t1">SWOT</text>
+    <text x="554" y="731" text-anchor="middle" class="t2">Bewertungs-Agent · Opus 5.5</text>
+    <text x="36" y="700" class="t2">nur geprüfte Fakten,</text>
+    <text x="36" y="716" class="t2">keine Websuche</text>
+
+    <polyline points="554,744 554,762 430,762 430,780" class="ln" marker-end="url(#a1)"/>
+    <rect x="260" y="782" width="340" height="56" rx="8" class="ag"/>
+    <text x="430" y="806" text-anchor="middle" class="t1">Prüf-Agent · Schlussprüfung</text>
+    <text x="430" y="825" text-anchor="middle" class="t2">Ableitungen gegen Fakten · Sonnet 5.5</text>
+    <line x1="430" y1="838" x2="430" y2="862" class="ln" marker-end="url(#a1)"/>
+
+    <polygon points="430,864 494,900 430,936 366,900" class="gt"/>
+    <text x="430" y="904" text-anchor="middle" class="tg">bestanden?</text>
+    <polyline points="366,900 196,900 196,716 218,716" class="lb" marker-end="url(#g1)"/>
+    <text x="204" y="892" class="tg">nein: Korrektur</text>
+    <line x1="494" y1="900" x2="626" y2="900" class="lb" marker-end="url(#g1)"/>
+    <text x="504" y="892" class="tg">nach 2 Runden</text>
+    <rect x="628" y="876" width="202" height="48" rx="8" class="st"/>
+    <text x="729" y="898" text-anchor="middle" class="ts">Lauf blockiert</text>
+    <text x="729" y="915" text-anchor="middle" class="t2">Meldung mit offenen Punkten</text>
+
+    <!-- Ausgabe -->
+    <line x1="430" y1="936" x2="430" y2="962" class="ln" marker-end="url(#a1)"/>
+    <text x="440" y="954" class="tg">ja</text>
+    <rect x="260" y="964" width="340" height="52" rx="8" class="fl"/>
+    <text x="430" y="986" text-anchor="middle" class="t1">Tool „Briefing rendern“</text>
+    <text x="430" y="1004" text-anchor="middle" class="t2">bestehende HTML-Vorlage + PDF → SharePoint</text>
+    <line x1="600" y1="990" x2="660" y2="990" class="ln" marker-end="url(#a1)"/>
+    <rect x="662" y="970" width="168" height="40" rx="20" class="pl"/>
+    <text x="746" y="995" text-anchor="middle" class="t1">Link im Teams-Chat</text>
+  </svg>
+  </div>
+  <figcaption>Der Flow ruft dieselben Agenten mehrfach auf, jeweils mit einer anderen Auftragskarte. Alle Recherche-Aufrufe nutzen die Tools „Websuche“ und „Quelle abrufen“; Bewertung und SWOT arbeiten ohne Websuche. Jeder Rücklauf geht gezielt an das betroffene Modul, nicht an den ganzen Lauf.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Ablauf Kurzbriefing</h2>
+  <figure>
+  <div class="scroll">
+  <svg viewBox="0 0 860 640" role="img" aria-label="Kurzbriefing: Front-Agent legt den Auftrag an, der Flow ruft einen Schnellrecherche-Aufruf auf, der Prüf-Agent prüft alle Kernaussagen, ein Prompt schreibt Summary und Gesprächsfragen, das Ergebnis landet als Word oder PDF in SharePoint.">
+    <defs>
+      <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker>
+      <marker id="g2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ahg"/></marker>
+    </defs>
+    <rect x="320" y="16" width="220" height="40" rx="20" class="pl"/>
+    <text x="430" y="41" text-anchor="middle" class="t1">Anfrage im Teams-Chat</text>
+    <line x1="430" y1="56" x2="430" y2="88" class="ln" marker-end="url(#a2)"/>
+
+    <rect x="260" y="90" width="340" height="56" rx="8" class="ag"/>
+    <text x="430" y="114" text-anchor="middle" class="t1">Front-Agent „Firmenbriefing“</text>
+    <text x="430" y="133" text-anchor="middle" class="t2">Firma, max. 2 Themen, Person, Modus Kurz</text>
+    <line x1="430" y1="146" x2="430" y2="172" class="ln" marker-end="url(#a2)"/>
+
+    <rect x="260" y="174" width="340" height="52" rx="8" class="fl"/>
+    <text x="430" y="196" text-anchor="middle" class="t1">Agent Flow „Briefing-Lauf“, Zweig Kurz</text>
+    <text x="430" y="214" text-anchor="middle" class="t2">Ordner + Dossier anlegen</text>
+    <line x1="430" y1="226" x2="430" y2="252" class="ln" marker-end="url(#a2)"/>
+
+    <rect x="260" y="254" width="340" height="56" rx="8" class="ag"/>
+    <text x="430" y="278" text-anchor="middle" class="t1">Recherche-Agent · Schnellauftrag</text>
+    <text x="430" y="297" text-anchor="middle" class="t2">Profil, letzte 4 Monate, Portfolio, Person · Sonnet 5.5</text>
+    <line x1="430" y1="310" x2="430" y2="336" class="ln" marker-end="url(#a2)"/>
+
+    <rect x="260" y="338" width="340" height="56" rx="8" class="ag"/>
+    <text x="430" y="362" text-anchor="middle" class="t1">Prüf-Agent · alle Kernaussagen</text>
+    <text x="430" y="381" text-anchor="middle" class="t2">ohne Chatverlauf · Sonnet 5.5</text>
+    <line x1="430" y1="394" x2="430" y2="414" class="ln" marker-end="url(#a2)"/>
+
+    <polygon points="430,416 494,450 430,484 366,450" class="gt"/>
+    <text x="430" y="454" text-anchor="middle" class="tg">bestanden?</text>
+    <polyline points="366,450 200,450 200,282 258,282" class="lb" marker-end="url(#g2)"/>
+    <text x="206" y="442" class="tg">nein: 1 Korrektur</text>
+    <line x1="494" y1="450" x2="626" y2="450" class="lb" marker-end="url(#g2)"/>
+    <text x="504" y="442" class="tg">danach</text>
+    <rect x="628" y="426" width="202" height="48" rx="8" class="st"/>
+    <text x="729" y="448" text-anchor="middle" class="ts">Lauf blockiert</text>
+    <text x="729" y="465" text-anchor="middle" class="t2">Meldung mit offenen Punkten</text>
+
+    <line x1="430" y1="484" x2="430" y2="508" class="ln" marker-end="url(#a2)"/>
+    <text x="440" y="500" class="tg">ja</text>
+    <rect x="260" y="510" width="340" height="56" rx="8" class="ag"/>
+    <text x="430" y="534" text-anchor="middle" class="t1">Prompt „Kurzfassung“</text>
+    <text x="430" y="553" text-anchor="middle" class="t2">Summary + Gesprächsfragen nur aus geprüften Fakten</text>
+    <line x1="430" y1="566" x2="430" y2="584" class="ln" marker-end="url(#a2)"/>
+
+    <rect x="260" y="586" width="340" height="44" rx="8" class="fl"/>
+    <text x="430" y="613" text-anchor="middle" class="t1">Word/PDF in SharePoint, Link im Chat</text>
+  </svg>
+  </div>
+  <figcaption>Gleiche Bausteine wie im Vollbriefing, nur ein Recherche-Aufruf und keine Matrix, Positionierung oder SWOT. Die Prüfung bleibt Pflicht: Auch die Kurzfassung entsteht ausschließlich aus freigegebenen Fakten.</figcaption>
+  </figure>
+  <div class="scroll">
+  <table>
+    <thead><tr><th></th><th>Kurzbriefing</th><th>Vollbriefing</th></tr></thead>
+    <tbody>
+      <tr><td>Zweck</td><td>Schnelle Gesprächsvorbereitung</td><td>Strategische Vorbereitung für das Top-Management</td></tr>
+      <tr><td class="num">KI-Aufrufe</td><td class="num">3 (+1 bei Korrektur)</td><td class="num">8 + 1 je Fokusthema + Prüfaufrufe je Modul</td></tr>
+      <tr><td>Inhalte</td><td>Profil, aktuelle Entwicklungen, Portfolio-Überblick, Person, Gesprächsfragen</td><td>dazu Struktur/Netzwerk, Markt und Wettbewerb, Capability-Matrix, Positionierung, SWOT, Fokusseiten</td></tr>
+      <tr><td>Ausgabe</td><td>Word oder PDF, 2–3 Seiten</td><td>interaktive HTML (bestehende Vorlage) und PDF</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section>
+  <h2>Welcher Copilot-Studio-Baustein wofür</h2>
+  <p class="prose">Microsoft empfiehlt, mit einem Agenten zu beginnen und nur dort zu trennen, wo eigene Werkzeuge, eigenes Wissen oder eigene Regeln nötig sind. Für dieses Tool heißt das: ein deterministischer Flow als Rückgrat, wenige eigenständige Agenten, Code nur für Abruf, Formatprüfung und Rendering.</p>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Baustein</th><th>Einsatz im Briefing</th><th>Warum</th></tr></thead>
+    <tbody>
+      <tr><td><b>Agent</b> (veröffentlicht in Teams/M365 Copilot)</td><td>Front-Agent „Firmenbriefing“</td><td>Nimmt die Anfrage in normaler Sprache an und legt den Auftrag ab. Gibt am Ende den Link aus.</td></tr>
+      <tr><td><b>Agent Flow</b></td><td>„Briefing-Lauf“: Reihenfolge, Schleife je Fokusthema, Prüftore, Korrekturrunden, Dossier schreiben</td><td>Deterministisch, mit Schleifen, Bedingungen und Agentenaufrufen. Startet über einen neuen Listeneintrag, weil ein vom Agenten direkt aufgerufener Flow nach rund zwei Minuten antworten muss.</td></tr>
+      <tr><td><b>Connected Agent</b></td><td>Recherche, Recherche Tiefe, Prüfung, Bewertung</td><td>Eigenes Modell, eigene Werkzeuge. Der Chatverlauf lässt sich abschalten, so bleibt der Prüf-Agent unabhängig.</td></tr>
+      <tr><td><b>Child Agent</b></td><td>nicht für Rollen verwenden</td><td>Child Agents teilen immer den Kontext des Haupt-Agenten. Damit wäre die Prüfung nicht unabhängig.</td></tr>
+      <tr><td><b>Prompt-Aktion</b> im Flow</td><td>Kurzfassung im Kurzbriefing</td><td>Ein einzelner, klar umrissener Textschritt braucht keinen eigenen Agenten.</td></tr>
+      <tr><td><b>Websuche</b> (Bing)</td><td>alle Recherche-Aufrufe</td><td>Liefert Treffer mit Links. Reicht allein nicht, weil Snippets kein Beleg sind.</td></tr>
+      <tr><td><b>Custom Connector</b> (z. B. Azure Function)</td><td>Tools „Quelle abrufen“ und „Briefing rendern“</td><td>Öffnet Seiten und PDFs vollständig. Nutzt die vorhandenen Python-Skripte: Quellen-Cache, Formatprüfung, HTML-Renderer.</td></tr>
+      <tr><td><b>SharePoint</b></td><td>Auftragsliste, Lauf-Ordner, Dossier, Ergebnis</td><td>Ablage für alle, Rechte und Versionierung sind bereits geregelt.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="prose meta">„Workflows“ ist in Copilot Studio der Bereich, in dem Agent Flows angelegt werden. Gemeint ist hier also ein Agent Flow.</p>
+</section>
+
+<section>
+  <h2>Viele JSON-Dateien oder ein Dossier?</h2>
+  <div class="cols">
+    <div class="card">
+      <span class="pill">Variante 1</span>
+      <h3>Eine Datei je Rolle (wie heute)</h3>
+      <ul>
+        <li class="pro">Jede Rolle schreibt nur ihre Datei, keine Schreibkonflikte bei Parallelarbeit</li>
+        <li class="pro">Gezielte Nachprüfung nur geänderter Module, Wiederaufnahme nach Abbruch</li>
+        <li class="pro">Kleine Eingaben je Agent, weniger Verbrauch</li>
+        <li class="con">Viele Lese- und Schreibaktionen und Pfade im Flow, mehr Fehlerquellen</li>
+        <li class="con">Quellen-IDs müssen über Dateien hinweg abgeglichen werden</li>
+        <li class="con">Für Fachanwender schwer zu überblicken</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="pill">Variante 2</span>
+      <h3>Ein gemeinsames Dossier, Agenten schreiben selbst</h3>
+      <ul>
+        <li class="pro">Ein Ort für alles, leicht zu öffnen und zu archivieren</li>
+        <li class="pro">Einfacher Flow</li>
+        <li class="con">Parallel schreibende Agenten überschreiben sich gegenseitig</li>
+        <li class="con">Jeder Agent bekommt schnell das ganze Dossier, teurer und unschärfer</li>
+        <li class="con">Ein Formatfehler blockiert den ganzen Lauf</li>
+      </ul>
+    </div>
+    <div class="card rec">
+      <span class="pill">Empfehlung</span>
+      <h3>Ein Dossier, nur der Flow schreibt</h3>
+      <ul>
+        <li class="pro">Agenten geben ihren Abschnitt strukturiert zurück, der Flow trägt ihn ein. Keine Konflikte.</li>
+        <li class="pro">Abschnitt je Agent erhält die Zuständigkeit und erlaubt gezielte Korrekturen</li>
+        <li class="pro">Der Flow übergibt jedem Agenten nur die Abschnitte, die er braucht</li>
+        <li class="pro">Ein gemeinsames Quellenregister im Dossier, keine doppelten Quellenangaben</li>
+        <li class="con">Abschnitte brauchen ein festes Format, das der Flow prüft</li>
+      </ul>
+    </div>
+  </div>
+  <p class="prose">Quellen müssen als Feld im Abschnitt stehen (URL, Datum, Belegstelle). Microsoft weist darauf hin, dass Zitate bei der Rückgabe zwischen Agenten verloren gehen können. Wenn das Tool später für viele Läufe genutzt wird, können Fakten und Quellen von der Datei in Dataverse-Tabellen wandern. Dann sind Prüfstatus je Aussage und Wiederverwendung zwischen Läufen möglich.</p>
+</section>
+
+<section>
+  <h2>Modellempfehlung je Agent</h2>
+  <div class="scroll">
+  <table>
+    <thead><tr><th>Agent</th><th>Aufgaben</th><th>Modell</th><th>Begründung</th></tr></thead>
+    <tbody>
+      <tr><td>Front-Agent</td><td>Auftrag aufnehmen, Rückfragen nur bei echter Mehrdeutigkeit</td><td>Sonnet 5.5</td><td>Kurzer Dialog, kein Fachurteil</td></tr>
+      <tr><td>Recherche</td><td>Unternehmen &amp; Person, Portfolio, Fokusthemen, Schnellauftrag</td><td>Sonnet 5.5</td><td>Heute ebenfalls Sonnet; breite Suche, klare Auftragskarten</td></tr>
+      <tr><td>Recherche Tiefe</td><td>Struktur &amp; Netzwerk, Markt &amp; Wettbewerb</td><td>Opus 5.5</td><td>Heute Opus High: Geschäftsberichte, Querverbindungen, Vergleichsplan</td></tr>
+      <tr><td>Prüfung</td><td>Faktenprüfung je Modul, Schlussprüfung</td><td>Sonnet 5.5</td><td>Heute Sonnet Medium für Dokument- und Leitprüfung</td></tr>
+      <tr><td>Bewertung</td><td>Positionierung, danach SWOT</td><td>Opus 5.5</td><td>Positionierung heute Opus High. SWOT mitzuführen spart einen Agenten; Sonnet bleibt als Sparvariante möglich.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="prose meta">Welche Claude-Modelle im eigenen Mandanten produktiv freigegeben sind, legt die Administration fest. Microsoft beschreibt Anthropic-Modelle teils noch als Auswahl für nicht produktive Agenten. Eine Effort-Einstellung je Agent ist in Copilot Studio nicht dokumentiert.</p>
+</section>
+
+<section>
+  <h2>Umsetzung Stück für Stück</h2>
+  <ol class="steps">
+    <li><b>Stufe 0 · Voraussetzungen</b><span>Power-Platform-Umgebung, Copilot Credits mit Budgetgrenze, Anthropic-Modelle und Websuche durch die Administration freigeben, SharePoint-Site mit Auftragsliste und Bibliothek „Läufe“.</span><span class="ok">Fertig, wenn ein Test-Agent mit Claude-Modell im Teams-Chat antwortet.</span></li>
+    <li><b>Stufe 1 · Durchstich Kurzbriefing</b><span>Front-Agent, Auftragsliste, Agent Flow mit Zweig „Kurz“, Recherche-Agent, Prüf-Agent, Kurzfassung als Word-Datei.</span><span class="ok">Fertig, wenn ein echter Lauf durchläuft, jede Aussage eine URL trägt und ein absichtlich falscher Fakt am Prüftor hängen bleibt.</span></li>
+    <li><b>Stufe 2 · Quellen richtig lesen</b><span>Tool „Quelle abrufen“ als Custom Connector auf Basis des vorhandenen Quellen-Caches: HTML und PDF, Seitenangabe, Abrufdatum.</span><span class="ok">Fertig, wenn ein Geschäftsbericht mit Seitenangabe belegt wird.</span></li>
+    <li><b>Stufe 3 · Vollbriefing Fakten</b><span>Recherche-Tiefe-Agent, Zweig „Voll“ mit vier Modulen, Schleife je Fokusthema, Prüfung je Modul, Korrekturschleife mit höchstens 2 Runden.</span><span class="ok">Fertig, wenn zwei Fokusthemen getrennte Abschnitte liefern und eine Korrektur nur das betroffene Modul neu startet.</span></li>
+    <li><b>Stufe 4 · Bewertung</b><span>Bewertungs-Agent für Positionierung und SWOT, Schlussprüfung.</span><span class="ok">Fertig, wenn jede Bewertung auf geprüfte Fakten verweist.</span></li>
+    <li><b>Stufe 5 · Ausgabe</b><span>Tool „Briefing rendern“ mit der bestehenden HTML-Vorlage, zusätzlich PDF, Ablage in SharePoint.</span><span class="ok">Fertig, wenn das Ergebnis der heutigen HTML entspricht und in SharePoint geöffnet werden kann.</span></li>
+    <li><b>Stufe 6 · Freigabe für alle</b><span>Als Lösung von Test nach Produktion übertragen, Veröffentlichung in Teams, Verbrauch beobachten, Kurzanleitung.</span><span class="ok">Fertig nach einem Pilot mit drei Nutzern und drei Firmen.</span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Vor Stufe 1 im Test klären</h2>
+  <ul class="open prose">
+    <li>Wartet die Flow-Aktion „Agent aufrufen“ auf das Ergebnis, auch wenn eine Recherche mehrere Minuten dauert?</li>
+    <li>Laufen Agentenaufrufe im Flow parallel oder nur nacheinander? Nacheinander funktioniert, dauert aber länger.</li>
+    <li>Welche Claude-Modelle sind im Mandanten produktiv nutzbar?</li>
+    <li>Wie lang dürfen Anweisungen je Agent sein? Das bestimmt den Zuschnitt der Auftragskarten.</li>
+    <li>Was kostet ein Lauf in Copilot Credits? Abgerechnet werden Modell-Tokens, Werkzeuge und Flow-Aktionen.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Auftrag an Claude für die nächste Ausarbeitung</h2>
+  <p class="prose">Diesen Text zusammen mit dem Repository (CLAUDE.md, references/, scripts/) an Claude geben, um Version B weiter auszuarbeiten: Auftragskarten, Dossier-Format und Flow-Schritte.</p>
+  <pre id="prompt">Du kennst das Firmenbriefing-Tool aus den beigefügten Dateien (CLAUDE.md, references/, scripts/).
+Ziel: Version B für Microsoft Copilot Studio, einfach und modular, Schritt für Schritt umsetzbar.
+
+Rahmen:
+- 5 Connected Agents: Front-Agent, Recherche (Sonnet 5.5), Recherche Tiefe (Opus 5.5), Prüfung (Sonnet 5.5, ohne Chatverlauf), Bewertung (Opus 5.5).
+- Ein Agent Flow „Briefing-Lauf“ steuert Reihenfolge, Schleife je Fokusthema, Prüftore und höchstens 2 Korrekturrunden.
+- Ein Dossier je Lauf in SharePoint; Agenten liefern Abschnitte zurück, nur der Flow schreibt.
+- Tools per Custom Connector: „Quelle abrufen“ (source-cache.py) und „Briefing rendern“ (render-briefing.py).
+- Zwei Zweige: Kurzbriefing und Vollbriefing.
+
+Liefere:
+1. Je Modul eine Auftragskarte (max. 1 Seite) aus den bestehenden Regeln, ohne fachliche Abstriche bei Quellenprüfung.
+2. Das Dossier-Format (JSON-Schema) mit Quellenregister und einem Abschnitt je Agent.
+3. Die Flow-Schritte für Stufe 1 (Kurzbriefing) als nummerierte Liste mit Copilot-Studio-Aktionen.
+4. Eine Liste der heutigen Regeln, die in Version B entfallen oder in Code wandern, jeweils mit Begründung.</pre>
+  <button type="button" id="copy">Auftrag kopieren</button>
+</section>
+
+<section class="sources">
+  <h3>Quellen (Microsoft Learn, abgerufen 05.11.2026)</h3>
+  <ul>
+    <li><a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/multi-agent-patterns">Multi-Agent-Muster</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/flows-overview">Agent Flows: Überblick</a> · <a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-flow">Flows als Agent-Werkzeug</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-add-other-agents">Weitere Agenten hinzufügen</a> · <a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-child-agent">Child Agents</a></li>
+    <li><a href="https://learn.microsoft.com/microsoft-copilot-studio/authoring-select-external-response-model">Externe Modelle (Anthropic)</a> · <a href="https://learn.microsoft.com/microsoft-copilot-studio/data-privacy-security-web-search">Websuche</a></li>
+    <li><a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/guidance/choose-harness">Harness wählen</a> · <a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/billing-credit-overview">Abrechnung</a></li>
+  </ul>
+</section>
+
+</main>
+<script>
+document.getElementById("copy").addEventListener("click", async function () {
+  var btn = this;
+  try {
+    await navigator.clipboard.writeText(document.getElementById("prompt").textContent);
+    btn.textContent = "Kopiert";
+  } catch (e) {
+    btn.textContent = "Kopieren nicht möglich, Text bitte markieren";
+  }
+  setTimeout(function () { btn.textContent = "Auftrag kopieren"; }, 2500);
+});
+</script>
+</body>
+</html>
