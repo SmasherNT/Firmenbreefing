@@ -9,9 +9,15 @@ Die Dateien werden nur beim Bauen in das Paket gelegt; im Repository gibt es
 keine Kopien. Aufruf aus dem Repository-Stamm:
 
     python3 copilot-studio/skills-bauen.py --out dist/skills
+
+Mit --upload entsteht zusätzlich ein vollständiger Upload-Ordner mit
+skills/ (Pakete), agenten/ (Steckbriefe) und schaltplan.png:
+
+    python3 copilot-studio/skills-bauen.py --upload copilot-studio-upload
 """
 import argparse
 import json
+import shutil
 import sys
 import zipfile
 from pathlib import Path
@@ -47,7 +53,11 @@ def bauen(baustein, ziel):
     paket = ziel / (baustein["skill"] + ".zip")
     with zipfile.ZipFile(paket, "w", zipfile.ZIP_DEFLATED) as zf:
         for quelle, name in inhalt:
-            zf.write(quelle, name)
+            # Fester Zeitstempel: gleicher Inhalt ergibt dasselbe Paket.
+            info = zipfile.ZipInfo(name, date_time=(2026, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = (0o755 if quelle.suffix == ".py" else 0o644) << 16
+            zf.writestr(info, quelle.read_bytes())
     groesse = paket.stat().st_size
     if len(inhalt) > MAX_DATEIEN:
         hinweise.append(f"mehr als {MAX_DATEIEN} Dateien")
@@ -59,11 +69,19 @@ def bauen(baustein, ziel):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--out", required=True, help="Zielordner für die .zip-Pakete")
+    parser.add_argument("--out", help="Zielordner für die .zip-Pakete")
+    parser.add_argument("--upload", help="vollständigen Upload-Ordner erzeugen (skills/, agenten/, schaltplan.png)")
     parser.add_argument("--nur", nargs="*", help="nur diese Baustein-IDs, z. B. A02 W1")
     args = parser.parse_args()
+    if not args.out and not args.upload:
+        parser.error("--out oder --upload angeben")
     daten = json.loads((HERE / "bausteine.json").read_text(encoding="utf-8"))
-    ziel = Path(args.out)
+    upload = Path(args.upload) if args.upload else None
+    if upload:
+        for unterordner in ("skills", "agenten"):
+            if (upload / unterordner).exists():
+                shutil.rmtree(upload / unterordner)
+    ziel = upload / "skills" if upload else Path(args.out)
     ziel.mkdir(parents=True, exist_ok=True)
     ergebnis, fehler = [], []
     for baustein in daten["bausteine"]:
@@ -73,6 +91,14 @@ def main():
             ergebnis.append(bauen(baustein, ziel))
         except FileNotFoundError as exc:
             fehler.append(f"{baustein['id']}: fehlt {exc}")
+    if upload and not fehler:
+        (upload / "agenten").mkdir(parents=True, exist_ok=True)
+        for baustein in daten["bausteine"]:
+            if args.nur and baustein["id"] not in args.nur:
+                continue
+            shutil.copyfile(HERE / "bausteine" / baustein["ordner"] / "agent.md",
+                            upload / "agenten" / (baustein["ordner"] + ".md"))
+        shutil.copyfile(HERE / "zielbild" / "schaltplan.png", upload / "schaltplan.png")
     print(json.dumps(dict(pakete=ergebnis, fehler=fehler), ensure_ascii=False, indent=2))
     return 1 if fehler else 0
 

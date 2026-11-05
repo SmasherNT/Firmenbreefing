@@ -117,10 +117,12 @@ schreibt: [`dateien.md`](dateien.md).
 
 ## 5. Einen Baustein in Copilot Studio anlegen
 
-1. Skill-Pakete bauen (aus dem Repository-Stamm):
+1. Upload-Ordner verwenden: [`copilot-studio-upload/`](../copilot-studio-upload/)
+   enthält alle Skill-Pakete, Steckbriefe und den Schaltplan. Nach Änderungen
+   neu bauen (aus dem Repository-Stamm):
 
    ```bash
-   python3 copilot-studio/skills-bauen.py --out dist/skills
+   python3 copilot-studio/skills-bauen.py --upload copilot-studio-upload
    ```
 
 2. In Copilot Studio einen neuen Agenten anlegen, Name wie im Steckbrief.
