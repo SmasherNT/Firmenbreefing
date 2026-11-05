@@ -59,6 +59,7 @@ Im Flow: Datei lesen, als JSON auswerten, Bedingung auf `bestanden`.
 | `focus:<id>` | A06 mit `focus_id` | W1 basis |
 | `positioning` | A09 | W4 swot |
 | `swot` | A10 | W1 final |
+| `werkzeug` | keiner: technischer Fehler | Meldung in `fehler` lesen, Ursache beheben, Schritt wiederholen |
 
 ## Rezept Vollbriefing
 
@@ -101,7 +102,7 @@ testen, bevor er in den Flow kommt.
 
 | Nr. | Frage | Falls nein |
 |---|---|---|
-| T1 | Führt ein Agent (Copilot-Harness) die Python-Skripte aus seinem Skill in der Sandbox aus? | Werkzeug-Bausteine rufen dieselben Skripte über einen Connector auf; Ein- und Ausgänge bleiben gleich |
+| T1 | Führt ein Agent (Copilot-Harness) das Python-Startskript aus seinem Skill in der Sandbox aus? | Werkzeug-Bausteine rufen dasselbe Startskript über einen Connector auf; Ein- und Ausgänge bleiben gleich |
 | T2 | Hat die Sandbox Internetzugang (Quellen-Cache in W1)? | W1 lässt den Abruf aus; A07/A08 öffnen Quellen selbst; `review-work.py` muss ohne gespeicherte Originale laufen |
 | T3 | Können Agenten Dateien im SharePoint-Lauf-Ordner lesen und schreiben? | Dateien als Anhang übergeben und als erzeugte Dateien zurückgeben |
 | T4 | Wartet „Agent aufrufen“ im Flow auch bei mehreren Minuten Laufzeit? | Bausteine einzeln von Hand starten |

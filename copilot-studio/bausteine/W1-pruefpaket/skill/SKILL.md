@@ -1,57 +1,59 @@
 ---
 name: werkzeug-pruefpaket
-description: Prüft die Ergebnisse eines Firmenbriefing-Laufs formal, baut das Prüfpaket und verteilt die Quellen auf bis zu drei Prüfjobs. Führt nur Skripte aus.
+description: Prüft die Ergebnisse eines Firmenbriefing-Laufs formal, baut das Prüfpaket und verteilt die Quellen auf bis zu drei Prüfjobs. Führt nur das Startskript des Skills aus.
 ---
 
 # Werkzeug: Prüfpaket
 
-Führe nur die Befehle unten aus. Ändere keine Inhalte und bewerte nichts.
-`L` ist der übergebene Lauf-Ordner, `P` ist `L/_pruefstand`. Die Skripte liegen
-im Skill-Paket unter `scripts/`.
+Parameter: `phase`: `basis` nach den Faktenbausteinen, `final` nach der SWOT.
 
-Bricht ein Befehl mit Fehlern ab: `scripts/anpassen.py pruefergebnis` mit der
-Fehlerausgabe aufrufen (Schritt „Fehler melden“) und aufhören.
+## So arbeitest du
 
-## Phase basis
+1. **Lauf-Ordner lokal bereitstellen.** Liegt der Lauf-Ordner in SharePoint,
+   lade alle seine Dateien einschließlich des Unterordners `_pruefstand/` in
+   einen lokalen Ordner der Sandbox. Liegt er schon lokal, nutze ihn direkt.
+2. **Genau diesen einen Befehl ausführen** (aus dem Wurzelordner dieses Skills):
 
-1. Kopf und Quellen-IDs vereinheitlichen:
-   `python3 scripts/anpassen.py module --lauf L`
-   (ergänzt Kopffelder aus `facts-run.json`, berechnet `S-…`-IDs aus den URLs,
-   passt alle Verweise an, meldet Formatfehler je Modul).
-2. Quellen-Cache anlegen und Originale laden:
-   `python3 scripts/source-cache.py --manifest L/facts-run.json --cache P/document-cache init`,
-   danach für jede URL aus den `source_proposals`:
-   `python3 scripts/source-cache.py --manifest L/facts-run.json --cache P/document-cache fetch --url <URL>`
-   Nicht erreichbare Quellen nur notieren, nicht abbrechen.
-3. Formale Gesamtprüfung und Prüfpaket:
-   `python3 scripts/prepare-facts.py --manifest L/facts-run.json --modules <alle L/*-facts.json> [--plan L/comparison-plan.json] --out P`
-   Danach `P/review-packet.json` nach `L/review-packet.json` kopieren.
-4. Prüfauftrag:
-   `python3 scripts/review-work.py prepare --manifest L/facts-run.json --facts L/review-packet.json --validation P/facts-validation.json --cache P/document-cache --out P/review-work-basis.json`
-5. Quellen verteilen:
-   `python3 scripts/review-shards.py split --work P/review-work-basis.json --facts L/review-packet.json --workers 3 --out P/review-split-basis.json`
-6. Je Job `sources-<n>`:
-   `python3 scripts/review-shards.py show --plan P/review-split-basis.json --work P/review-work-basis.json --facts L/review-packet.json --job sources-<n>`
-   Ausgabe unverändert als `L/pruefjob-<n>.json` speichern. Alte `pruefjob-*.json`
-   und `befund-*.json` vorher löschen.
-7. Ergebnis: `python3 scripts/anpassen.py pruefergebnis --lauf L --schritt pruefpaket --phase basis`
+   ```bash
+   python3 w1_pruefpaket.py --lauf <Lauf-Ordner> --phase <basis|final>
+   ```
 
-## Phase final
+3. **Ergebnis zurückschreiben.** Alle neuen und geänderten Dateien
+   (einschließlich `_pruefstand/`) zurück in den Lauf-Ordner schreiben. Dateien,
+   die das Skript gelöscht hat, dort ebenfalls löschen.
+4. **Antworten** mit der letzten Ausgabe des Skripts in einem Satz.
 
-1. SWOT vervollständigen: `python3 scripts/anpassen.py bewertung --lauf L --rolle swot`
-2. Bewertungen prüfen:
-   `python3 scripts/check-interpretation.py --manifest L/facts-run.json --facts L/review-packet.json --review L/review-basis.md --context L/positioning-context.json --output L/positioning.json --plan L/comparison-plan.json --out P/positioning-validation.json`
-   `python3 scripts/check-interpretation.py --manifest L/facts-run.json --facts L/review-packet.json --review L/review-basis.md --context L/swot-context.json --output L/swot.json --positioning L/positioning.json --positioning-context L/positioning-context.json --plan L/comparison-plan.json --out P/swot-validation.json`
-   `python3 scripts/check-interpretation.py --merge-validation P/positioning-validation.json P/swot-validation.json --out P/interpretation-validation.json`
-3. Prüfauftrag:
-   `python3 scripts/review-work.py prepare --manifest L/facts-run.json --facts L/review-packet.json --validation P/interpretation-validation.json --cache P/document-cache --basis-review L/review-basis.md --basis-work P/review-work-basis.json --positioning L/positioning.json --positioning-context L/positioning-context.json --swot L/swot.json --swot-context L/swot-context.json --plan L/comparison-plan.json --out P/review-work-final.json`
-4. Schritte 5 und 6 wie in basis, mit `final` statt `basis` in den Dateinamen.
-   Oft gibt es in final keinen Job.
-5. Ergebnis: `python3 scripts/anpassen.py pruefergebnis --lauf L --schritt pruefpaket --phase final`
+Du änderst keine Inhalte, bewertest nichts und rufst keine anderen Befehle auf.
+Bricht das Skript ab, gibst du die Fehlermeldung wörtlich zurück.
 
-## Fehler melden
+## Eingänge
 
-`python3 scripts/anpassen.py pruefergebnis --lauf L --schritt pruefpaket --phase <phase> --fehler <Fehlerausgabe>`
+| Phase | Dateien im Lauf-Ordner |
+|---|---|
+| basis | `facts-run.json`, `comparison-plan.json` (falls vorhanden), alle `*-facts.json` |
+| final | zusätzlich `review-packet.json`, `review-basis.md`, `positioning.json`, `positioning-context.json`, `swot.json`, `swot-context.json`, `_pruefstand/` |
 
-Schreibt `L/pruefergebnis.json` mit `bestanden: false` und den Fehlern je
-zuständigem Baustein (`owner`).
+## Ausgänge
+
+| Phase | Dateien im Lauf-Ordner |
+|---|---|
+| beide | `pruefergebnis.json` (Prüftor), `pruefjob-<n>.json` je Prüfjob, `_pruefstand/` |
+| basis | zusätzlich `review-packet.json`; die `*-facts.json` mit einheitlichem Kopf und endgültigen Quellen-IDs |
+| final | zusätzlich `swot.json` mit Kopf und Prüfsummen |
+
+## Was das Skript tut
+
+- **basis:** ergänzt in allen Faktenmodulen den Kopf aus `facts-run.json`,
+  berechnet die Quellen-IDs (`S-…`) aus den URLs und passt alle Verweise an,
+  lädt die Originale in den Quellen-Cache, prüft alle Module formal
+  (`prepare-facts.py`), baut den Prüfauftrag (`review-work.py`) und verteilt die
+  Quellen auf bis zu drei Prüfjobs (`review-shards.py`).
+- **final:** vervollständigt `swot.json`, prüft Positionierung und SWOT formal
+  (`check-interpretation.py`) und baut den Prüfauftrag für die Schlussprüfung.
+- Formatfehler landen in `pruefergebnis.json` mit `bestanden: false` und einer
+  `rueckgabe` an den zuständigen Baustein. `jobs` nennt die Zahl der Prüfjobs.
+
+Das Skript nutzt die vorhandenen Skripte unter `scripts/` in diesem Skill-Paket
+unverändert. Es arbeitet intern unter einem festen Arbeitspfad, weil die
+Prüfskripte Pfade in ihre Prüfsummen aufnehmen; so passt jeder Schritt zum
+vorherigen, auch wenn der Lauf-Ordner in jeder Sandbox woanders liegt.

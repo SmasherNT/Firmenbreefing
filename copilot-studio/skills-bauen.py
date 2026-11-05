@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Baut die Skill-Pakete der Copilot-Studio-Bausteine aus dem Repository.
 
-Jedes Paket enthält SKILL.md im Wurzelverzeichnis und die in bausteine.json
-genannten Dateien mit ihren Repository-Pfaden (references/..., scripts/...).
+Jedes Paket enthält den Inhalt von bausteine/<ID>/skill/ (SKILL.md und bei
+Werkzeug-Agenten das Startskript) im Wurzelverzeichnis sowie die in
+bausteine.json genannten Dateien mit ihren Repository-Pfaden
+(references/..., scripts/...).
 Die Dateien werden nur beim Bauen in das Paket gelegt; im Repository gibt es
 keine Kopien. Aufruf aus dem Repository-Stamm:
 
@@ -16,7 +18,6 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
-HILFSSKRIPT = HERE / "werkzeuge" / "anpassen.py"
 # Grenzen für hochgeladene Skill-Archive; im eigenen Mandanten bestätigen.
 MAX_DATEIEN = 100
 MAX_BYTES = 10 * 1024 * 1024
@@ -35,18 +36,14 @@ def dateien(eintrag):
 
 
 def bauen(baustein, ziel):
-    skill_md = HERE / "bausteine" / baustein["ordner"] / "skill" / "SKILL.md"
-    if not skill_md.is_file():
-        raise FileNotFoundError(skill_md)
-    inhalt = [(skill_md, "SKILL.md")]
+    skill_ordner = HERE / "bausteine" / baustein["ordner"] / "skill"
+    if not (skill_ordner / "SKILL.md").is_file():
+        raise FileNotFoundError(skill_ordner / "SKILL.md")
+    inhalt = [(p, p.relative_to(skill_ordner).as_posix()) for p in sorted(skill_ordner.rglob("*"))
+              if p.is_file() and "__pycache__" not in p.parts]
     for eintrag in baustein["skill_dateien"]:
         inhalt += [(p, p.relative_to(ROOT).as_posix()) for p in dateien(eintrag)]
     hinweise = []
-    if baustein["art"] == "werkzeug":
-        if HILFSSKRIPT.is_file():
-            inhalt.append((HILFSSKRIPT, "scripts/anpassen.py"))
-        else:
-            hinweise.append("scripts/anpassen.py fehlt noch (copilot-studio/werkzeuge/anpassen.py)")
     paket = ziel / (baustein["skill"] + ".zip")
     with zipfile.ZipFile(paket, "w", zipfile.ZIP_DEFLATED) as zf:
         for quelle, name in inhalt:
