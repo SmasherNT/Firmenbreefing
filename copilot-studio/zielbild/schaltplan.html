@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schaltplan Firmenbriefing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: eine Lesespalte, Diagramme und Tabellen dürfen breiter sein. */
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --ink: #17212b;
+  --muted: #56626e;
+  --line: #d3dae1;
+  --accent: #0b5d7a;
+  --agent-fill: #e2eff4;
+  --gate: #9a6412;
+  --gate-fill: #fbf0dc;
+  --wz-fill: #eceff2;
+  --display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f151b; --surface: #161e26; --ink: #e5ecf2; --muted: #9ba8b5;
+    --line: #2d3945; --accent: #63b6d6; --agent-fill: #133442;
+    --gate: #e3a94e; --gate-fill: #3a2b12; --wz-fill: #222c36;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f151b; --surface: #161e26; --ink: #e5ecf2; --muted: #9ba8b5;
+  --line: #2d3945; --accent: #63b6d6; --agent-fill: #133442;
+  --gate: #e3a94e; --gate-fill: #3a2b12; --wz-fill: #222c36;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.55; }
+main { max-width: 1000px; margin: 0 auto; padding: 40px 20px 80px; display: grid; gap: 44px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; line-height: 1.2; margin: 0; }
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.5rem; padding-top: 8px; border-top: 2px solid var(--ink); }
+h3 { font-size: 1.1rem; }
+p { margin: 0; }
+section { display: grid; gap: 16px; }
+.prose { max-width: 68ch; }
+.lede { color: var(--muted); font-size: 1.05rem; max-width: 68ch; }
+.meta { font-size: .85rem; color: var(--muted); }
+.cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: grid; gap: 6px; align-content: start; }
+.card b { font-family: var(--display); font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); }
+.scroll { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; background: var(--surface); border: 1px solid var(--line); font-size: .93rem; }
+th, td { text-align: left; vertical-align: top; padding: 9px 12px; border-bottom: 1px solid var(--line); }
+th { font-family: var(--display); font-weight: 600; background: var(--agent-fill); }
+td.num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+figure { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: grid; gap: 12px; }
+figure svg { width: 100%; height: auto; display: block; color: var(--ink); }
+figcaption { font-size: .9rem; color: var(--muted); max-width: 80ch; }
+.legend { display: flex; flex-wrap: wrap; gap: 18px; font-size: .85rem; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.sw { width: 22px; height: 14px; border-radius: 3px; display: inline-block; }
+.sw-agent { background: var(--agent-fill); border: 1.5px solid var(--accent); }
+.sw-wz { background: var(--wz-fill); border: 1.5px solid var(--ink); }
+.sw-gate { background: var(--gate-fill); border: 1.5px solid var(--gate); transform: rotate(45deg) scale(.7); width: 16px; height: 16px; }
+.sw-frame { border: 1.5px dashed var(--accent); }
+.ag { fill: var(--agent-fill); stroke: var(--accent); stroke-width: 1.5; }
+.fl { fill: var(--surface); stroke: currentColor; stroke-width: 1.3; stroke-dasharray: 5 4; }
+.pl { fill: var(--surface); stroke: currentColor; stroke-width: 1.3; }
+.gt { fill: var(--gate-fill); stroke: var(--gate); stroke-width: 1.5; }
+.wz { fill: var(--wz-fill); stroke: currentColor; stroke-width: 1.3; }
+.fr { fill: none; stroke: var(--accent); stroke-width: 1.3; stroke-dasharray: 7 5; }
+.ln { fill: none; stroke: currentColor; stroke-width: 1.3; }
+.lb { fill: none; stroke: var(--gate); stroke-width: 1.3; }
+.t1 { font: 600 13px var(--body); fill: currentColor; }
+.t2 { font: 400 11.5px var(--body); fill: var(--muted); }
+.td { font: 500 11px var(--body); fill: var(--accent); }
+.tp { font: 600 12px var(--display); fill: var(--accent); letter-spacing: .05em; }
+.tg { font: 500 11.5px var(--body); fill: var(--gate); }
+.ah { fill: currentColor; }
+.ahg { fill: var(--gate); }
+a { color: var(--accent); }
+a:focus-visible { outline: 3px solid var(--gate); outline-offset: 2px; }
+ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+@media (max-width: 420px) { h1 { font-size: 1.7rem; } main { padding: 28px 16px 60px; } }
+.tn { font: 600 13px var(--display); fill: var(--muted); font-variant-numeric: tabular-nums; }
+.th { font: 600 12px var(--display); fill: var(--accent); letter-spacing: .04em; }
+.to { font: 500 11.5px var(--body); fill: currentColor; }
+.tv { font: 600 11px var(--body); fill: var(--muted); }
+.tgb { font: 600 12px var(--body); fill: var(--gate); }
+.kz { fill: var(--accent); }
+figure.breit svg { min-width: 900px; }
+</style>
+</head>
+<body>
+<main>
+<header style="display:grid;gap:12px">
+  <p class="meta">Schaltplan · Stand 05.11.2026 · Ordner <code>copilot-studio/</code> im Repository</p>
+  <h1>Schaltplan Firmenbriefing</h1>
+  <p class="lede">So werden die 15 Agenten in Reihe geschaltet. Jede Zeile ist ein Aufruf: links die Dateien, die der Agent aus dem Lauf-Ordner liest, rechts die Dateien, die er dort schreibt. Kein Agent ruft einen anderen auf.</p>
+</header>
+<section>
+  <div class="legend">
+    <span><i class="sw sw-agent"></i>Denk-Agent (A01–A10)</span>
+    <span><i class="sw sw-wz"></i>Werkzeug-Agent (W1–W5, ein Befehl)</span>
+    <span><i class="sw sw-gate"></i>Prüftor: Bedingung auf pruefergebnis.json</span>
+  </div>
+  <figure class="breit">
+  <div class="scroll">
+  <svg viewBox="0 0 1080 1783" role="img" aria-label="Schaltplan des Vollbriefings mit 21 Schritten: je Schritt ein Agent mit seinen Eingangsdateien links und Ausgangsdateien rechts, dazu die Prüftore mit ihren Rücksprüngen. Gefüllte Punkte markieren die Schritte des Kurzbriefings.">
+  <defs><marker id="pf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker></defs>
+  <text x="44" y="30" class="th">Nr.</text>
+  <text x="410" y="30" text-anchor="end" class="th">Eingänge (liest aus dem Lauf-Ordner)</text>
+  <text x="550.0" y="30" text-anchor="middle" class="th">Agent · Parameter</text>
+  <text x="690" y="30" class="th">Ausgänge (schreibt in den Lauf-Ordner)</text>
+  <circle cx="22" cy="58" r="6" class="kz"/><text x="34" y="62" class="t2">= auch im Kurzbriefing</text>
+  <line x1="12" y1="78" x2="1068" y2="78" class="ln" stroke-opacity=".25"/>
+  <circle cx="22" cy="122.0" r="6" class="kz"/>
+  <text x="44" y="127.0" class="tn">1</text>
+  <text x="410" y="126.0" text-anchor="end" class="td">anfrage.txt</text>
+  <line x1="418" y1="122.0" x2="446" y2="122.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="96" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="127.0" text-anchor="middle" class="t1">A01 Auftrag</text>
+  <line x1="654" y1="122.0" x2="682" y2="122.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="118.5" class="to">auftrag.md · facts-run.json</text>
+  <text x="690" y="133.5" class="to">comparison-plan.json (nur Voll)</text>
+  <line x1="550" y1="148" x2="550" y2="156" class="ln"/>
+  <circle cx="22" cy="182.0" r="6" class="kz"/>
+  <text x="44" y="187.0" class="tn">2</text>
+  <text x="410" y="186.0" text-anchor="end" class="td">auftrag.md · facts-run.json</text>
+  <line x1="418" y1="182.0" x2="446" y2="182.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="156" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="187.0" text-anchor="middle" class="t1">A02 Kontext &amp; Person</text>
+  <line x1="654" y1="182.0" x2="682" y2="182.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="186.0" class="to">context-facts.json</text>
+  <line x1="550" y1="208" x2="550" y2="216" class="ln"/>
+  <circle cx="22" cy="242.0" r="6" class="kz"/>
+  <text x="44" y="247.0" class="tn">3</text>
+  <text x="410" y="246.0" text-anchor="end" class="td">auftrag.md · facts-run.json</text>
+  <line x1="418" y1="242.0" x2="446" y2="242.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="216" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="247.0" text-anchor="middle" class="t1">A03 Portfolio &amp; Präsenz</text>
+  <line x1="654" y1="242.0" x2="682" y2="242.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="246.0" class="to">portfolio-facts.json</text>
+  <line x1="550" y1="268" x2="550" y2="276" class="ln"/>
+  <text x="44" y="307.0" class="tn">4</text>
+  <text x="410" y="306.0" text-anchor="end" class="td">auftrag.md · facts-run.json</text>
+  <line x1="418" y1="302.0" x2="446" y2="302.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="276" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="307.0" text-anchor="middle" class="t1">A04 Cluster &amp; Netzwerk</text>
+  <line x1="654" y1="302.0" x2="682" y2="302.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="306.0" class="to">cluster-facts.json</text>
+  <line x1="550" y1="328" x2="550" y2="336" class="ln"/>
+  <text x="44" y="367.0" class="tn">5</text>
+  <text x="410" y="358.5" text-anchor="end" class="td">auftrag.md · facts-run.json</text>
+  <text x="410" y="373.5" text-anchor="end" class="td">comparison-plan.json</text>
+  <line x1="418" y1="362.0" x2="446" y2="362.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="336" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="367.0" text-anchor="middle" class="t1">A05 Markt &amp; Wettbewerb</text>
+  <line x1="654" y1="362.0" x2="682" y2="362.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="366.0" class="to">market-facts.json</text>
+  <line x1="550" y1="388" x2="550" y2="396" class="ln"/>
+  <text x="44" y="427.0" class="tn">6</text>
+  <text x="410" y="426.0" text-anchor="end" class="td">auftrag.md · facts-run.json</text>
+  <line x1="418" y1="422.0" x2="446" y2="422.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="396" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="419.0" text-anchor="middle" class="t1">A06 Fokusthema</text>
+  <text x="550.0" y="435.0" text-anchor="middle" class="t2">focus_id · je Thema</text>
+  <line x1="654" y1="422.0" x2="682" y2="422.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="426.0" class="to">focus-&lt;id&gt;-facts.json</text>
+  <line x1="550" y1="448" x2="550" y2="456" class="ln"/>
+  <circle cx="22" cy="493.0" r="6" class="kz"/>
+  <text x="44" y="498.0" class="tn">7</text>
+  <text x="410" y="474.5" text-anchor="end" class="td">facts-run.json · comparison-plan.json</text>
+  <text x="410" y="489.5" text-anchor="end" class="td">context-facts.json · portfolio-facts.json</text>
+  <text x="410" y="504.5" text-anchor="end" class="td">cluster-facts.json · market-facts.json</text>
+  <text x="410" y="519.5" text-anchor="end" class="td">focus-&lt;id&gt;-facts.json</text>
+  <line x1="418" y1="493.0" x2="446" y2="493.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="456" width="200" height="74" rx="8" class="wz"/>
+  <text x="550.0" y="490.0" text-anchor="middle" class="t1">W1 Prüfpaket</text>
+  <text x="550.0" y="506.0" text-anchor="middle" class="t2">phase: basis</text>
+  <line x1="654" y1="493.0" x2="682" y2="493.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="482.0" class="to">pruefergebnis.json · review-packet.json</text>
+  <text x="690" y="497.0" class="to">pruefjob-&lt;n&gt;.json · *-facts.json (vereinheitlicht)</text>
+  <text x="690" y="512.0" class="to">_pruefstand/</text>
+  <line x1="550" y1="530" x2="550" y2="538" class="ln"/>
+  <polygon points="550,542 590,561.0 550,580 510,561.0" class="gt"/>
+  <text x="550" y="565.0" text-anchor="middle" class="tg">?</text>
+  <text x="410" y="558.0" text-anchor="end" class="tgb">Prüftor A</text>
+  <text x="410" y="573.0" text-anchor="end" class="tg">pruefergebnis.json → bestanden?</text>
+  <text x="690" y="554" class="tg">nein: Baustein aus „rueckgabe“ (A02–A06) korrigiert, dann ab 7</text>
+  <text x="690" y="569" class="tg">ja: „jobs“ = Anzahl Aufrufe in 8</text>
+  <line x1="550" y1="530" x2="550" y2="542" class="ln"/>
+  <circle cx="22" cy="618.0" r="6" class="kz"/>
+  <text x="44" y="623.0" class="tn">8</text>
+  <text x="410" y="622.0" text-anchor="end" class="td">pruefjob-&lt;n&gt;.json</text>
+  <line x1="418" y1="618.0" x2="446" y2="618.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="592" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="615.0" text-anchor="middle" class="t1">A07 Dokumentprüfung</text>
+  <text x="550.0" y="631.0" text-anchor="middle" class="t2">job: &lt;n&gt; · je Job</text>
+  <line x1="654" y1="618.0" x2="682" y2="618.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="622.0" class="to">befund-&lt;n&gt;.json</text>
+  <line x1="550" y1="644" x2="550" y2="652" class="ln"/>
+  <circle cx="22" cy="678.0" r="6" class="kz"/>
+  <text x="44" y="683.0" class="tn">9</text>
+  <text x="410" y="674.5" text-anchor="end" class="td">befund-&lt;n&gt;.json · review-packet.json</text>
+  <text x="410" y="689.5" text-anchor="end" class="td">auftrag.md · _pruefstand/</text>
+  <line x1="418" y1="678.0" x2="446" y2="678.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="652" width="200" height="52" rx="8" class="wz"/>
+  <text x="550.0" y="675.0" text-anchor="middle" class="t1">W2 Befunde bündeln</text>
+  <text x="550.0" y="691.0" text-anchor="middle" class="t2">phase: basis</text>
+  <line x1="654" y1="678.0" x2="682" y2="678.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="674.5" class="to">leitpruefung-eingabe.json · befund-&lt;n&gt;.json (ergänzt)</text>
+  <text x="690" y="689.5" class="to">_pruefstand/</text>
+  <line x1="550" y1="704" x2="550" y2="712" class="ln"/>
+  <circle cx="22" cy="738.0" r="6" class="kz"/>
+  <text x="44" y="743.0" class="tn">10</text>
+  <text x="410" y="742.0" text-anchor="end" class="td">leitpruefung-eingabe.json</text>
+  <line x1="418" y1="738.0" x2="446" y2="738.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="712" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="743.0" text-anchor="middle" class="t1">A08 Leitprüfung</text>
+  <line x1="654" y1="738.0" x2="682" y2="738.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="742.0" class="to">leitentscheid.json</text>
+  <line x1="550" y1="764" x2="550" y2="772" class="ln"/>
+  <circle cx="22" cy="798.0" r="6" class="kz"/>
+  <text x="44" y="803.0" class="tn">11</text>
+  <text x="410" y="794.5" text-anchor="end" class="td">leitentscheid.json · befund-&lt;n&gt;.json</text>
+  <text x="410" y="809.5" text-anchor="end" class="td">review-packet.json · _pruefstand/</text>
+  <line x1="418" y1="798.0" x2="446" y2="798.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="772" width="200" height="52" rx="8" class="wz"/>
+  <text x="550.0" y="795.0" text-anchor="middle" class="t1">W3 Freigabe</text>
+  <text x="550.0" y="811.0" text-anchor="middle" class="t2">phase: basis</text>
+  <line x1="654" y1="798.0" x2="682" y2="798.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="794.5" class="to">review-basis.md · pruefergebnis.json</text>
+  <text x="690" y="809.5" class="to">_pruefstand/</text>
+  <line x1="550" y1="824" x2="550" y2="832" class="ln"/>
+  <polygon points="550,836 590,855.0 550,874 510,855.0" class="gt"/>
+  <text x="550" y="859.0" text-anchor="middle" class="tg">?</text>
+  <text x="410" y="852.0" text-anchor="end" class="tgb">Prüftor 1</text>
+  <text x="410" y="867.0" text-anchor="end" class="tg">pruefergebnis.json → bestanden?</text>
+  <text x="690" y="848" class="tg">nein: Baustein aus „rueckgabe“ (A02–A06) korrigiert, dann ab 7</text>
+  <text x="690" y="863" class="tg">ja: Kurz weiter mit 21, Voll mit 12</text>
+  <line x1="550" y1="824" x2="550" y2="836" class="ln"/>
+  <text x="44" y="920.5" class="tn">12</text>
+  <text x="410" y="904.5" text-anchor="end" class="td">facts-run.json · review-packet.json</text>
+  <text x="410" y="919.5" text-anchor="end" class="td">review-basis.md · comparison-plan.json</text>
+  <text x="410" y="934.5" text-anchor="end" class="td">market-facts.json · portfolio-facts.json</text>
+  <line x1="418" y1="915.5" x2="446" y2="915.5" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="886" width="200" height="59" rx="8" class="wz"/>
+  <text x="550.0" y="912.5" text-anchor="middle" class="t1">W4 Bewertungskontext</text>
+  <text x="550.0" y="928.5" text-anchor="middle" class="t2">schritt: positioning</text>
+  <line x1="654" y1="915.5" x2="682" y2="915.5" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="919.5" class="to">positioning-context.json · pruefergebnis.json</text>
+  <line x1="550" y1="945" x2="550" y2="953" class="ln"/>
+  <text x="44" y="984.0" class="tn">13</text>
+  <text x="410" y="983.0" text-anchor="end" class="td">positioning-context.json</text>
+  <line x1="418" y1="979.0" x2="446" y2="979.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="953" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="984.0" text-anchor="middle" class="t1">A09 Positionierung</text>
+  <line x1="654" y1="979.0" x2="682" y2="979.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="983.0" class="to">positioning.json</text>
+  <line x1="550" y1="1005" x2="550" y2="1013" class="ln"/>
+  <text x="44" y="1047.5" class="tn">14</text>
+  <text x="410" y="1031.5" text-anchor="end" class="td">facts-run.json · review-packet.json</text>
+  <text x="410" y="1046.5" text-anchor="end" class="td">review-basis.md · comparison-plan.json</text>
+  <text x="410" y="1061.5" text-anchor="end" class="td">positioning.json · positioning-context.json</text>
+  <line x1="418" y1="1042.5" x2="446" y2="1042.5" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="1013" width="200" height="59" rx="8" class="wz"/>
+  <text x="550.0" y="1039.5" text-anchor="middle" class="t1">W4 Bewertungskontext</text>
+  <text x="550.0" y="1055.5" text-anchor="middle" class="t2">schritt: swot</text>
+  <line x1="654" y1="1042.5" x2="682" y2="1042.5" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="1039.0" class="to">swot-context.json · positioning.json (ergänzt)</text>
+  <text x="690" y="1054.0" class="to">pruefergebnis.json · _pruefstand/</text>
+  <line x1="550" y1="1072" x2="550" y2="1080" class="ln"/>
+  <polygon points="550,1084 590,1103.0 550,1122 510,1103.0" class="gt"/>
+  <text x="550" y="1107.0" text-anchor="middle" class="tg">?</text>
+  <text x="410" y="1100.0" text-anchor="end" class="tgb">Prüftor B</text>
+  <text x="410" y="1115.0" text-anchor="end" class="tg">pruefergebnis.json → bestanden?</text>
+  <text x="690" y="1096" class="tg">nein: A09 korrigiert, dann ab 14</text>
+  <text x="690" y="1111" class="tg">bei Rückfrage an A02–A05: diese korrigieren, dann ab 7</text>
+  <line x1="550" y1="1072" x2="550" y2="1084" class="ln"/>
+  <text x="44" y="1165.0" class="tn">15</text>
+  <text x="410" y="1164.0" text-anchor="end" class="td">swot-context.json</text>
+  <line x1="418" y1="1160.0" x2="446" y2="1160.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="1134" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="1165.0" text-anchor="middle" class="t1">A10 SWOT</text>
+  <line x1="654" y1="1160.0" x2="682" y2="1160.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="1164.0" class="to">swot.json</text>
+  <line x1="550" y1="1186" x2="550" y2="1194" class="ln"/>
+  <text x="44" y="1243.5" class="tn">16</text>
+  <text x="410" y="1212.5" text-anchor="end" class="td">facts-run.json · review-packet.json</text>
+  <text x="410" y="1227.5" text-anchor="end" class="td">review-basis.md · comparison-plan.json</text>
+  <text x="410" y="1242.5" text-anchor="end" class="td">positioning.json · positioning-context.json</text>
+  <text x="410" y="1257.5" text-anchor="end" class="td">swot.json · swot-context.json</text>
+  <text x="410" y="1272.5" text-anchor="end" class="td">_pruefstand/</text>
+  <line x1="418" y1="1238.5" x2="446" y2="1238.5" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="1194" width="200" height="89" rx="8" class="wz"/>
+  <text x="550.0" y="1235.5" text-anchor="middle" class="t1">W1 Prüfpaket</text>
+  <text x="550.0" y="1251.5" text-anchor="middle" class="t2">phase: final</text>
+  <line x1="654" y1="1238.5" x2="682" y2="1238.5" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="1235.0" class="to">pruefergebnis.json · pruefjob-&lt;n&gt;.json (oft keiner)</text>
+  <text x="690" y="1250.0" class="to">swot.json (ergänzt) · _pruefstand/</text>
+  <line x1="550" y1="1283" x2="550" y2="1291" class="ln"/>
+  <polygon points="550,1295 590,1314.0 550,1333 510,1314.0" class="gt"/>
+  <text x="550" y="1318.0" text-anchor="middle" class="tg">?</text>
+  <text x="410" y="1311.0" text-anchor="end" class="tgb">Prüftor C</text>
+  <text x="410" y="1326.0" text-anchor="end" class="tg">pruefergebnis.json → bestanden?</text>
+  <text x="690" y="1307" class="tg">nein: A09 bzw. A10 korrigiert, dann ab 14 bzw. 16</text>
+  <text x="690" y="1322" class="tg">ja: „jobs“ = Anzahl Aufrufe in 17 (0 = überspringen)</text>
+  <line x1="550" y1="1283" x2="550" y2="1295" class="ln"/>
+  <text x="44" y="1376.0" class="tn">17</text>
+  <text x="410" y="1375.0" text-anchor="end" class="td">pruefjob-&lt;n&gt;.json</text>
+  <line x1="418" y1="1371.0" x2="446" y2="1371.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="1345" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="1368.0" text-anchor="middle" class="t1">A07 Dokumentprüfung</text>
+  <text x="550.0" y="1384.0" text-anchor="middle" class="t2">job: &lt;n&gt; · nur falls jobs &gt; 0</text>
+  <line x1="654" y1="1371.0" x2="682" y2="1371.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="1375.0" class="to">befund-&lt;n&gt;.json</text>
+  <line x1="550" y1="1397" x2="550" y2="1405" class="ln"/>
+  <text x="44" y="1447.0" class="tn">18</text>
+  <text x="410" y="1423.5" text-anchor="end" class="td">befund-&lt;n&gt;.json · review-packet.json</text>
+  <text x="410" y="1438.5" text-anchor="end" class="td">auftrag.md · positioning.json</text>
+  <text x="410" y="1453.5" text-anchor="end" class="td">positioning-context.json · swot.json</text>
+  <text x="410" y="1468.5" text-anchor="end" class="td">swot-context.json · _pruefstand/</text>
+  <line x1="418" y1="1442.0" x2="446" y2="1442.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="1405" width="200" height="74" rx="8" class="wz"/>
+  <text x="550.0" y="1439.0" text-anchor="middle" class="t1">W2 Befunde bündeln</text>
+  <text x="550.0" y="1455.0" text-anchor="middle" class="t2">phase: final</text>
+  <line x1="654" y1="1442.0" x2="682" y2="1442.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="1446.0" class="to">leitpruefung-eingabe.json · _pruefstand/</text>
+  <line x1="550" y1="1479" x2="550" y2="1487" class="ln"/>
+  <text x="44" y="1518.0" class="tn">19</text>
+  <text x="410" y="1517.0" text-anchor="end" class="td">leitpruefung-eingabe.json</text>
+  <line x1="418" y1="1513.0" x2="446" y2="1513.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="1487" width="200" height="52" rx="8" class="ag"/>
+  <text x="550.0" y="1518.0" text-anchor="middle" class="t1">A08 Leitprüfung</text>
+  <line x1="654" y1="1513.0" x2="682" y2="1513.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="1517.0" class="to">leitentscheid.json</text>
+  <line x1="550" y1="1539" x2="550" y2="1547" class="ln"/>
+  <text x="44" y="1578.0" class="tn">20</text>
+  <text x="410" y="1569.5" text-anchor="end" class="td">leitentscheid.json · befund-&lt;n&gt;.json</text>
+  <text x="410" y="1584.5" text-anchor="end" class="td">review-packet.json · _pruefstand/</text>
+  <line x1="418" y1="1573.0" x2="446" y2="1573.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="1547" width="200" height="52" rx="8" class="wz"/>
+  <text x="550.0" y="1570.0" text-anchor="middle" class="t1">W3 Freigabe</text>
+  <text x="550.0" y="1586.0" text-anchor="middle" class="t2">phase: final</text>
+  <line x1="654" y1="1573.0" x2="682" y2="1573.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="1569.5" class="to">review-final.md · pruefergebnis.json</text>
+  <text x="690" y="1584.5" class="to">_pruefstand/</text>
+  <line x1="550" y1="1599" x2="550" y2="1607" class="ln"/>
+  <polygon points="550,1611 590,1630.0 550,1649 510,1630.0" class="gt"/>
+  <text x="550" y="1634.0" text-anchor="middle" class="tg">?</text>
+  <text x="410" y="1627.0" text-anchor="end" class="tgb">Prüftor 2</text>
+  <text x="410" y="1642.0" text-anchor="end" class="tg">pruefergebnis.json → bestanden?</text>
+  <text x="690" y="1623" class="tg">nein: A09 korrigiert, dann ab 14</text>
+  <text x="690" y="1638" class="tg">A10 korrigiert, dann ab 16</text>
+  <text x="690" y="1653" class="tg">Faktenbaustein, dann ab 7</text>
+  <line x1="550" y1="1599" x2="550" y2="1611" class="ln"/>
+  <circle cx="22" cy="1713.0" r="6" class="kz"/>
+  <text x="44" y="1718.0" class="tn">21</text>
+  <text x="410" y="1679.5" text-anchor="end" class="td">facts-run.json · review-packet.json</text>
+  <text x="410" y="1694.5" text-anchor="end" class="td">review-basis.md</text>
+  <text x="410" y="1709.5" text-anchor="end" class="tv">Voll zusätzlich:</text>
+  <text x="410" y="1724.5" text-anchor="end" class="td">comparison-plan.json · positioning.json</text>
+  <text x="410" y="1739.5" text-anchor="end" class="td">positioning-context.json · swot.json</text>
+  <text x="410" y="1754.5" text-anchor="end" class="td">swot-context.json · review-final.md</text>
+  <line x1="418" y1="1713.0" x2="446" y2="1713.0" class="ln" marker-end="url(#pf)"/>
+  <rect x="450" y="1661" width="200" height="104" rx="8" class="wz"/>
+  <text x="550.0" y="1718.0" text-anchor="middle" class="t1">W5 Briefing rendern</text>
+  <line x1="654" y1="1713.0" x2="682" y2="1713.0" class="ln" marker-end="url(#pf)"/>
+  <text x="690" y="1717.0" class="to">briefing.html</text>
+  <line x1="550" y1="1765" x2="550" y2="1773" class="ln"/>
+</svg>
+  </div>
+  <figcaption>Vollbriefing: Schritte 1 bis 21. Kurzbriefing: nur die Schritte mit Punkt (1, 2, 3, 7 bis 11, 21), anfrage.txt beginnt dann mit „modus: kurz“. Schritte 2 bis 6 können parallel laufen. 6 läuft einmal je Eintrag in facts-run.json → focus_pages, 8 und 17 einmal je Prüfjob. _pruefstand/ ist ein Unterordner für die Zwischenstände der Werkzeug-Agenten.</figcaption>
+  </figure>
+</section>
+</main>
+</body>
+</html>

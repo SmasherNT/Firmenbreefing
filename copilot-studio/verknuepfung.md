@@ -57,40 +57,54 @@ Im Flow: Datei lesen, als JSON auswerten, Bedingung auf `bestanden`.
 | `cluster` | A04 | W1 basis |
 | `market` | A05 | W1 basis |
 | `focus:<id>` | A06 mit `focus_id` | W1 basis |
-| `positioning` | A09 | W4 swot |
+| `positioning` | A09 | W4 swot (14), danach A10 und W1 final |
 | `swot` | A10 | W1 final |
 | `werkzeug` | keiner: technischer Fehler | Meldung in `fehler` lesen, Ursache beheben, Schritt wiederholen |
 
+## Schaltplan
+
+Alle Schritte mit sämtlichen Ein- und Ausgabedateien:
+[`zielbild/schaltplan.html`](zielbild/schaltplan.html), als Bild
+[`zielbild/schaltplan.png`](zielbild/schaltplan.png).
+
 ## Rezept Vollbriefing
 
-| # | Baustein | Parameter | Ergebnis |
-|---|---|---|---|
-| 1 | A01 Auftrag | – | `auftrag.md`, `facts-run.json`, `comparison-plan.json` |
-| 2 | A02, A03, A04, A05 (parallel, falls möglich) | – | vier `*-facts.json` |
-| 3 | A06 je Eintrag in `facts-run.json → focus_pages` | `focus_id` | `focus-<id>-facts.json` |
-| 4 | W1 Prüfpaket | `phase: basis` | Prüftor; `pruefjob-<n>.json` |
-| 5 | A07 je Job (Anzahl in `pruefergebnis.json → jobs`) | `job: <n>` | `befund-<n>.json` |
-| 6 | W2 Befunde bündeln | `phase: basis` | `leitpruefung-eingabe.json` |
-| 7 | A08 Leitprüfung | – | `leitentscheid.json` |
-| 8 | W3 Freigabe | `phase: basis` | **Prüftor 1**; `review-basis.md` |
-| 9 | W4 Bewertungskontext | `schritt: positioning` | `positioning-context.json` |
-| 10 | A09 Positionierung | – | `positioning.json` |
-| 11 | W4 Bewertungskontext | `schritt: swot` | Prüftor; `swot-context.json` |
-| 12 | A10 SWOT | – | `swot.json` |
-| 13 | W1 Prüfpaket | `phase: final` | Prüftor; ggf. `pruefjob-<n>.json` |
-| 14 | A07 je Job, falls Jobs | `job: <n>` | `befund-<n>.json` |
-| 15 | W2 Befunde bündeln | `phase: final` | `leitpruefung-eingabe.json` |
-| 16 | A08 Leitprüfung | – | `leitentscheid.json` |
-| 17 | W3 Freigabe | `phase: final` | **Prüftor 2**; `review-final.md` |
-| 18 | W5 Briefing rendern | – | `briefing.html` |
+| # | Agent | Parameter | liest | schreibt |
+|---|---|---|---|---|
+| 1 | A01 Auftrag | – | `anfrage.txt` | `auftrag.md`, `facts-run.json`, `comparison-plan.json` |
+| 2 | A02 Kontext & Person | – | `auftrag.md`, `facts-run.json` | `context-facts.json` |
+| 3 | A03 Portfolio & Präsenz | – | `auftrag.md`, `facts-run.json` | `portfolio-facts.json` |
+| 4 | A04 Cluster & Netzwerk | – | `auftrag.md`, `facts-run.json` | `cluster-facts.json` |
+| 5 | A05 Markt & Wettbewerb | – | `auftrag.md`, `facts-run.json`, `comparison-plan.json` | `market-facts.json` |
+| 6 | A06 Fokusthema, je Eintrag in `facts-run.json → focus_pages` | `focus_id` | `auftrag.md`, `facts-run.json` | `focus-<id>-facts.json` |
+| 7 | W1 Prüfpaket | `phase: basis` | `facts-run.json`, `comparison-plan.json`, alle `*-facts.json` | `pruefergebnis.json`, `review-packet.json`, `pruefjob-<n>.json`, `_pruefstand/` |
+| | **Prüftor A** | | `pruefergebnis.json` | nein: Baustein aus `rueckgabe` korrigiert, dann ab 7 |
+| 8 | A07 Dokumentprüfung, je Job (`jobs` aus Prüftor A) | `job: <n>` | `pruefjob-<n>.json` | `befund-<n>.json` |
+| 9 | W2 Befunde bündeln | `phase: basis` | `befund-<n>.json`, `review-packet.json`, `auftrag.md`, `_pruefstand/` | `leitpruefung-eingabe.json` |
+| 10 | A08 Leitprüfung | – | `leitpruefung-eingabe.json` | `leitentscheid.json` |
+| 11 | W3 Freigabe | `phase: basis` | `leitentscheid.json`, `befund-<n>.json`, `review-packet.json`, `_pruefstand/` | `review-basis.md`, `pruefergebnis.json` |
+| | **Prüftor 1** | | `pruefergebnis.json` | nein: Baustein aus `rueckgabe` korrigiert, dann ab 7 |
+| 12 | W4 Bewertungskontext | `schritt: positioning` | `facts-run.json`, `review-packet.json`, `review-basis.md`, `comparison-plan.json`, `market-facts.json`, `portfolio-facts.json` | `positioning-context.json`, `pruefergebnis.json` |
+| 13 | A09 Positionierung | – | `positioning-context.json` | `positioning.json` |
+| 14 | W4 Bewertungskontext | `schritt: swot` | wie 12 plus `positioning.json`, `positioning-context.json` | `swot-context.json`, `pruefergebnis.json` |
+| | **Prüftor B** | | `pruefergebnis.json` | nein: A09 korrigiert, dann ab 14; Rückfrage an A02–A05: diese korrigieren, dann ab 7 |
+| 15 | A10 SWOT | – | `swot-context.json` | `swot.json` |
+| 16 | W1 Prüfpaket | `phase: final` | Prüfpaket, Review, Positionierung, SWOT, Kontexte, `_pruefstand/` | `pruefergebnis.json`, `pruefjob-<n>.json` |
+| | **Prüftor C** | | `pruefergebnis.json` | nein: A09 bzw. A10 korrigiert, dann ab 14 bzw. 16 |
+| 17 | A07 Dokumentprüfung, je Job (oft keiner) | `job: <n>` | `pruefjob-<n>.json` | `befund-<n>.json` |
+| 18 | W2 Befunde bündeln | `phase: final` | wie 9 plus Positionierung, SWOT, Kontexte | `leitpruefung-eingabe.json` |
+| 19 | A08 Leitprüfung | – | `leitpruefung-eingabe.json` | `leitentscheid.json` |
+| 20 | W3 Freigabe | `phase: final` | `leitentscheid.json`, `befund-<n>.json`, `review-packet.json`, `_pruefstand/` | `review-final.md`, `pruefergebnis.json` |
+| | **Prüftor 2** | | `pruefergebnis.json` | nein: A09 → ab 14, A10 → ab 16, Faktenbaustein → ab 7 |
+| 21 | W5 Briefing rendern | – | alle freigegebenen Dateien | `briefing.html` |
 
 Danach im Flow: Link zu `briefing.html` per Teams oder E-Mail verschicken.
 
 ## Rezept Kurzbriefing
 
-`anfrage.txt` mit `modus: kurz`. Dann die Schritte 1, 2 (nur A02 und A03),
-4 bis 8 und 18. A01 schreibt keinen Vergleichsplan, W5 erzeugt dieselbe Vorlage
-ohne Bewertungsseiten.
+`anfrage.txt` beginnt mit `modus: kurz`. Dann nur die Schritte 1, 2, 3, 7 bis 11
+und 21. A01 schreibt keinen Vergleichsplan, W5 erzeugt dieselbe Vorlage ohne
+Bewertungsseiten.
 
 ## Von Hand statt im Flow
 

@@ -10,9 +10,28 @@ Die fachlichen Regeln (`references/`) und die Skripte (`scripts/`) bleiben die
 einzige Quelle. Sie werden erst beim Bauen der Skill-Pakete eingepackt, nicht
 in diesen Ordner kopiert.
 
+**Schaltplan mit allen Ein- und Ausgabedateien:**
+[`zielbild/schaltplan.html`](zielbild/schaltplan.html), als Bild
+[`schaltplan.png`](zielbild/schaltplan.png).
 **Zielbild mit Diagrammen:** [`zielbild/zielbild.html`](zielbild/zielbild.html),
 als Bilder [`ablauf-vollbriefing.png`](zielbild/ablauf-vollbriefing.png) und
 [`ablauf-kurzbriefing.png`](zielbild/ablauf-kurzbriefing.png).
+
+## Reicht es, nur Agenten und Skills hochzuladen?
+
+Ja. Außer den 15 Agenten und ihren 15 Skill-Paketen wird nichts installiert:
+kein Backend, kein Connector, kein Hilfsskript. Damit es läuft, muss gelten:
+
+| Voraussetzung | Wer | Status |
+|---|---|---|
+| Kette W1–W5 erzeugt dieselbe HTML wie heute | Repository-Test | lokal nachgewiesen |
+| Agent führt das Python-Startskript aus seinem Skill aus (T1) | Copilot Studio | im Mandanten testen |
+| Agent liest und schreibt Dateien im Lauf-Ordner (T3) | Copilot Studio | im Mandanten testen |
+| Je Agent Modell, Websuche, Tools und Anweisungen laut `agent.md` eingestellt | du | beim Anlegen |
+| Lauf-Ordner mit `anfrage.txt` angelegt | du bzw. der Flow | je Briefing |
+| Reihenfolge 1–21, Prüftore und Schleifen laut Schaltplan geschaltet | du | einmal im Agent Flow |
+
+Internetzugang der Sandbox (T2) ist hilfreich, aber keine Bedingung.
 
 ---
 
@@ -77,6 +96,7 @@ anfrage.txt
 
 **Kurzbriefing:** A01 → A02 · A03 → W1 → A07 → W2 → A08 → W3 → W5.
 
+Jeder Schritt mit allen Dateien: [`zielbild/schaltplan.html`](zielbild/schaltplan.html).
 Genaue Rezepte, Prüftore und die Zuordnung „Rückgabe an welchen Baustein“:
 [`verknuepfung.md`](verknuepfung.md). Alle Dateien und wer sie liest und
 schreibt: [`dateien.md`](dateien.md).
@@ -93,7 +113,7 @@ schreibt: [`dateien.md`](dateien.md).
 | `verknuepfung.md` | wie du die Bausteine im Flow verknüpfst, Rezepte, Testpunkte |
 | `dateien.md` | Dateivertrag des Lauf-Ordners |
 | `tests/test_bausteine.py` | Durchlauf W1–W5 mit Demodaten aus den gebauten Paketen |
-| `zielbild/` | Diagramme |
+| `zielbild/` | Schaltplan und Diagramme (HTML und PNG) |
 
 ## 5. Einen Baustein in Copilot Studio anlegen
 
