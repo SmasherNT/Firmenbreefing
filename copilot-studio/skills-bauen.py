@@ -24,6 +24,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
+QUELLE = HERE  # Ordner mit bausteine.json; per --quelle änderbar
 # Grenzen für hochgeladene Skill-Archive; im eigenen Mandanten bestätigen.
 MAX_DATEIEN = 100
 MAX_BYTES = 10 * 1024 * 1024
@@ -42,7 +43,7 @@ def dateien(eintrag):
 
 
 def bauen(baustein, ziel):
-    skill_ordner = HERE / "bausteine" / baustein["ordner"] / "skill"
+    skill_ordner = QUELLE / "bausteine" / baustein["ordner"] / "skill"
     if not (skill_ordner / "SKILL.md").is_file():
         raise FileNotFoundError(skill_ordner / "SKILL.md")
     inhalt = [(p, p.relative_to(skill_ordner).as_posix()) for p in sorted(skill_ordner.rglob("*"))
@@ -72,10 +73,14 @@ def main():
     parser.add_argument("--out", help="Zielordner für die .zip-Pakete")
     parser.add_argument("--upload", help="vollständigen Upload-Ordner erzeugen (skills/, agenten/, schaltplan.png)")
     parser.add_argument("--nur", nargs="*", help="nur diese Baustein-IDs, z. B. A02 W1")
+    parser.add_argument("--quelle", help="Ordner mit bausteine.json (Standard: copilot-studio)")
     args = parser.parse_args()
     if not args.out and not args.upload:
         parser.error("--out oder --upload angeben")
-    daten = json.loads((HERE / "bausteine.json").read_text(encoding="utf-8"))
+    global QUELLE
+    if args.quelle:
+        QUELLE = Path(args.quelle).resolve()
+    daten = json.loads((QUELLE / "bausteine.json").read_text(encoding="utf-8"))
     upload = Path(args.upload) if args.upload else None
     if upload:
         for unterordner in ("skills", "agenten"):
@@ -96,9 +101,10 @@ def main():
         for baustein in daten["bausteine"]:
             if args.nur and baustein["id"] not in args.nur:
                 continue
-            shutil.copyfile(HERE / "bausteine" / baustein["ordner"] / "agent.md",
+            shutil.copyfile(QUELLE / "bausteine" / baustein["ordner"] / "agent.md",
                             upload / "agenten" / (baustein["ordner"] + ".md"))
-        shutil.copyfile(HERE / "zielbild" / "schaltplan.png", upload / "schaltplan.png")
+        plan = QUELLE / "zielbild" / "schaltplan.png"
+        shutil.copyfile(plan if plan.exists() else QUELLE / "schaltplan.png", upload / "schaltplan.png")
     print(json.dumps(dict(pakete=ergebnis, fehler=fehler), ensure_ascii=False, indent=2))
     return 1 if fehler else 0
 

@@ -3,23 +3,30 @@
 
 Aufruf aus dem Repository-Stamm:
 
-    python3 copilot-studio/steckbriefe-bauen.py
+    python3 copilot-studio/steckbriefe-bauen.py [Ordner mit bausteine.json]
 """
 import json
+import sys
 from pathlib import Path
 
-root = Path(__file__).resolve().parent
+root = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parent
 data = json.loads((root / "bausteine.json").read_text(encoding="utf-8"))
 
 PARAM = {
     "focus_id": "die ID genau eines Fokusthemas (focus_id)",
     "job": "die Nummer genau eines Prüfjobs (job)",
     "phase": "die Phase: basis oder final",
-    "schritt": "den Schritt: positioning oder swot",
+    "schritt": "den Schritt (schritt)",
+    "modul": "das Modul (modul)",
 }
 
+def trenner(xs):
+    """Semikolon, wenn die Einträge nach Modulen gegliedert sind (\"modul: dateien\")."""
+    return "; " if any(": " in x for x in xs) else ", "
+
+
 def liste(xs):
-    return ", ".join(f"`{x}`" if not x.startswith(("bei ", "Prüfstand")) and "(" not in x and "…" not in x and " " not in x else x for x in xs)
+    return trenner(xs).join(f"`{x}`" if not x.startswith(("bei ", "Prüfstand")) and "(" not in x and "…" not in x and " " not in x else x for x in xs)
 
 for b in data["bausteine"]:
     denk = b["art"] == "denk"
@@ -68,14 +75,14 @@ for b in data["bausteine"]:
         f"Du bist der Baustein {b['id']} „{b['titel']}“ eines Firmenbriefing-Systems.",
         "Du startest ohne Vorwissen und rufst keine anderen Agenten auf.",
         f"Du erhältst den Pfad eines Lauf-Ordners{params}.",
-        "Lies ausschließlich deine Eingangsdateien: " + ", ".join(b["eingaenge"]) + "." + korr.replace("`", ""),
+        "Lies ausschließlich deine Eingangsdateien: " + trenner(b["eingaenge"]).join(b["eingaenge"]) + "." + korr.replace("`", ""),
         f"Arbeite immer nach dem Skill „{b['skill']}“.",
     ]
     if not denk:
         text.append("Du führst genau den einen Befehl aus deinem Skill aus. Du änderst keine Inhalte, "
                     "bewertest nichts und ergänzt nichts. Fehlermeldungen gibst du wörtlich weiter.")
     text += [
-        "Schreibe ausschließlich deine Ausgangsdateien: " + ", ".join(b["ausgaenge"]) + ". Vorhandene überschreibst du.",
+        "Schreibe ausschließlich deine Ausgangsdateien: " + trenner(b["ausgaenge"]).join(b["ausgaenge"]) + ". Vorhandene überschreibst du.",
         "Fehlt eine Eingangsdatei, schreibe nichts und antworte nur mit dem Namen der fehlenden Datei.",
         "Antworte am Ende in einem Satz mit den geschriebenen Dateien und dem Status.",
     ]

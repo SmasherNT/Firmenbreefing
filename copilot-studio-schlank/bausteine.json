@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "beschreibung": "Schlanke Variante ohne Prüfagenten: vier Agenten. Quelle für Steckbriefe und Skill-Pakete.",
+  "bausteine": [
+    {
+      "id": "R1", "ordner": "R1-recherche", "titel": "Recherche", "art": "denk",
+      "skill": "schlank-recherche",
+      "kurz": "Recherchiert je Aufruf ein Modul: Kontext & Person, Portfolio & Präsenz oder ein Fokusthema.",
+      "bisher": "company-context-analyst, portfolio-analyst, focus-analyst",
+      "modell": "Claude Sonnet 5.5", "effort_heute": "medium",
+      "websuche": "an", "modus": "Voll und Kurz (focus nur Voll)",
+      "parameter": ["modul"],
+      "eingaenge": ["auftrag.md", "facts-run.json"],
+      "ausgaenge": ["context-facts.json bzw. portfolio-facts.json bzw. focus-<id>-facts.json"],
+      "korrektur": true,
+      "skill_dateien": ["references/faktenphase.md", "references/gespraechspartner.md", "references/themen-darstellung.md", "references/ausgabe-html-v2.md", "references/cluster-quellenkatalog.md", "references/portfolio-darstellung.md", "references/regionale-praesenz.md", "references/fokusseiten.md"]
+    },
+    {
+      "id": "R2", "ordner": "R2-tiefenrecherche", "titel": "Tiefenrecherche", "art": "denk",
+      "skill": "schlank-tiefenrecherche",
+      "kurz": "Legt den Auftrag und Vergleichsplan fest und recherchiert Cluster & Netzwerk sowie Markt & Wettbewerb.",
+      "bisher": "Hauptagent (Auftrag), cluster-analyst, market-facts-analyst",
+      "modell": "Claude Opus 5.5", "effort_heute": "high",
+      "websuche": "an", "modus": "auftrag: Voll und Kurz; cluster, market: nur Voll",
+      "parameter": ["modul"],
+      "eingaenge": ["auftrag: anfrage.txt", "cluster, market: auftrag.md, facts-run.json, comparison-plan.json"],
+      "ausgaenge": ["auftrag: auftrag.md, facts-run.json, comparison-plan.json", "cluster: cluster-facts.json", "market: market-facts.json"],
+      "korrektur": true,
+      "skill_dateien": ["references/defaults.md", "references/capability-matrix.md", "references/fokusseiten.md", "references/themen-darstellung.md", "references/faktenphase.md", "references/cluster-recherche.md", "references/cluster-quellenkatalog.md", "references/netzwerk-html.md"]
+    },
+    {
+      "id": "B1", "ordner": "B1-bewertung", "titel": "Bewertung", "art": "denk",
+      "skill": "schlank-bewertung",
+      "kurz": "Leitet aus den Fakten die Positionierung (Summary, Matrix, Reife, Präsenz, Insights) und danach die SWOT ab.",
+      "bisher": "positioning-analyst, swot-analyst",
+      "modell": "Claude Opus 5.5", "effort_heute": "high",
+      "websuche": "aus", "modus": "nur Voll",
+      "parameter": ["schritt"],
+      "eingaenge": ["positioning: positioning-context.json", "swot: swot-context.json"],
+      "ausgaenge": ["positioning: positioning.json", "swot: swot.json"],
+      "korrektur": true,
+      "skill_dateien": ["references/interpretationsphase.md", "references/capability-matrix.md", "references/executive-summary.md", "references/portfolio-darstellung.md", "references/regionale-praesenz.md", "references/modul-keyfacts.md", "references/themen-darstellung.md"]
+    },
+    {
+      "id": "W1", "ordner": "W1-werkzeug", "titel": "Werkzeug", "art": "werkzeug",
+      "skill": "schlank-werkzeug",
+      "kurz": "Prüft Formate, baut Prüfpaket und Bewertungskontexte, kennzeichnet alles als ungeprüft und rendert die HTML.",
+      "bisher": "Hauptagent: prepare-facts, check-interpretation, render-briefing",
+      "modell": "Claude Sonnet 5.5 (nur Ausführung)", "effort_heute": "–",
+      "websuche": "aus", "modus": "Voll und Kurz",
+      "parameter": ["schritt"],
+      "eingaenge": ["fakten: facts-run.json, comparison-plan.json, alle *-facts.json", "swot: positioning.json, positioning-context.json", "abschluss: swot.json, swot-context.json bzw. im Kurzbriefing nur das Prüfpaket"],
+      "ausgaenge": ["fakten: review-packet.json, review-basis.md, positioning-context.json (Voll), pruefergebnis.json", "swot: swot-context.json, pruefergebnis.json", "abschluss: review-final.md (Voll), briefing.html, pruefergebnis.json"],
+      "korrektur": false,
+      "skill_dateien": ["scripts/", "references/templates/", "references/modellaufteilung.json"]
+    }
+  ]
+}

@@ -20,7 +20,7 @@ Prüft alle Ergebnisse formal, baut das Prüfpaket und verteilt die Quellen auf 
 | | Dateien im Lauf-Ordner |
 |---|---|
 | Aufruf mit | Pfad des Lauf-Ordners, `phase` |
-| Eingänge | `facts-run.json`, `*-facts.json`, comparison-plan.json (falls vorhanden), bei final: review-basis.md, positioning*.json, swot*.json |
+| Eingänge | `facts-run.json`; `*-facts.json`; comparison-plan.json (falls vorhanden); bei final: review-basis.md, positioning*.json, swot*.json |
 | Ausgänge | `pruefergebnis.json`, `review-packet.json`, pruefjob-1.json … pruefjob-3.json, Prüfstand in _pruefstand/ |
 
 ## Anweisungen (in Copilot Studio einfügen)
@@ -29,7 +29,7 @@ Prüft alle Ergebnisse formal, baut das Prüfpaket und verteilt die Quellen auf 
 Du bist der Baustein W1 „Prüfpaket“ eines Firmenbriefing-Systems.
 Du startest ohne Vorwissen und rufst keine anderen Agenten auf.
 Du erhältst den Pfad eines Lauf-Ordners und die Phase: basis oder final.
-Lies ausschließlich deine Eingangsdateien: facts-run.json, *-facts.json, comparison-plan.json (falls vorhanden), bei final: review-basis.md, positioning*.json, swot*.json.
+Lies ausschließlich deine Eingangsdateien: facts-run.json; *-facts.json; comparison-plan.json (falls vorhanden); bei final: review-basis.md, positioning*.json, swot*.json.
 Arbeite immer nach dem Skill „werkzeug-pruefpaket“.
 Du führst genau den einen Befehl aus deinem Skill aus. Du änderst keine Inhalte, bewertest nichts und ergänzt nichts. Fehlermeldungen gibst du wörtlich weiter.
 Schreibe ausschließlich deine Ausgangsdateien: pruefergebnis.json, review-packet.json, pruefjob-1.json … pruefjob-3.json, Prüfstand in _pruefstand/. Vorhandene überschreibst du.
