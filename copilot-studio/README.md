@@ -1,10 +1,14 @@
 # Firmenbriefing in Microsoft Copilot Studio
 
-Dieser Ordner beschreibt, wie das Firmenbriefing-Tool in Copilot Studio
-aufgebaut wird. Er ist aus der aktuellen Fassung des Repositorys neu
-strukturiert. Die fachlichen Regeln unter `references/` und die Skripte unter
-`scripts/` bleiben die einzige Quelle. Hier wird nichts davon kopiert, sondern
-festgelegt, wie Copilot Studio sie nutzt.
+Das Firmenbriefing besteht in Copilot Studio nur aus **Agenten mit Skills**.
+Jeder Agent ist ein Baustein mit festen Eingangs- und Ausgangsdateien, läuft
+auch für sich allein und kennt keine anderen Agenten. **Du steckst die Bausteine
+selbst zusammen**, im Agent Flow oder von Hand.
+
+Dieser Ordner ist aus der aktuellen Fassung des Repositorys neu strukturiert.
+Die fachlichen Regeln (`references/`) und die Skripte (`scripts/`) bleiben die
+einzige Quelle. Sie werden erst beim Bauen der Skill-Pakete eingepackt, nicht
+in diesen Ordner kopiert.
 
 **Zielbild mit Diagrammen:** [`zielbild/zielbild.html`](zielbild/zielbild.html),
 als Bilder [`ablauf-vollbriefing.png`](zielbild/ablauf-vollbriefing.png) und
@@ -14,121 +18,122 @@ als Bilder [`ablauf-vollbriefing.png`](zielbild/ablauf-vollbriefing.png) und
 
 ## 1. Grundprinzip
 
-| Baustein | Aufgabe | In Copilot Studio |
+| | Denk-Agenten (A01–A10) | Werkzeug-Agenten (W1–W5) |
 |---|---|---|
-| **Agenten** | Recherchieren, prüfen, bewerten. Jeder kennt nur seine Aufgabe. | 11 eigene Agenten |
-| **Agent Flow** | Feste Reihenfolge, Prüftore, Rückläufe, Weitergabe der Dokumente | Workflows → Agent flows |
-| **Werkstatt** | Ablage, Formatprüfung, Prüfpakete, Freigabe, HTML | Custom Connector auf ein kleines Backend |
+| Aufgabe | recherchieren, prüfen, bewerten | Formate prüfen, Prüfpakete bauen, freigeben, rendern |
+| Skill enthält | Arbeitsweise, Dateiformat, Fachregeln aus `references/` | Befehlsfolge und die vorhandenen Skripte aus `scripts/` |
+| Modell | Opus 5.5 oder Sonnet 5.5 nach heutiger Zuordnung | kleines Modell genügt, es führt nur aus |
 
-Drei Regeln gelten immer:
+Für alle Bausteine gilt:
 
-1. **Kein Agent ruft einen anderen auf.** Nur der Flow ruft Agenten auf.
-2. **Jeder Aufruf startet frisch.** Ein Agent kennt nur sein Eingabedokument.
-3. **Die Werkstatt nutzt die vorhandenen Skripte.** Gleiche Daten ergeben die
-   gleiche HTML wie heute.
+1. **Feste Anschlüsse:** Ein Baustein liest nur seine Eingangsdateien und
+   schreibt nur seine Ausgangsdateien im Lauf-Ordner.
+2. **Frischer Start:** Jeder Aufruf beginnt ohne Vorwissen.
+3. **Kein Baustein ruft einen anderen auf.** Die Reihenfolge legst du fest.
+4. **Gleiches Ergebnis wie heute:** Die Werkzeug-Agenten nutzen die vorhandenen
+   Prüf- und Renderskripte unverändert.
 
-## 2. Ablauf in Kürze
+## 2. Die Bausteine
+
+| ID | Baustein | Eingänge | Ausgänge | Modell |
+|---|---|---|---|---|
+| [A01](bausteine/A01-auftrag/agent.md) | Auftrag | `anfrage.txt` | `auftrag.md`, `facts-run.json`, `comparison-plan.json` | Opus 5.5 |
+| [A02](bausteine/A02-kontext/agent.md) | Kontext & Person | `auftrag.md`, `facts-run.json` | `context-facts.json` | Sonnet 5.5 |
+| [A03](bausteine/A03-portfolio/agent.md) | Portfolio & Präsenz | `auftrag.md`, `facts-run.json` | `portfolio-facts.json` | Sonnet 5.5 |
+| [A04](bausteine/A04-cluster/agent.md) | Cluster & Netzwerk | `auftrag.md`, `facts-run.json` | `cluster-facts.json` | Opus 5.5 |
+| [A05](bausteine/A05-markt/agent.md) | Markt & Wettbewerb | + `comparison-plan.json` | `market-facts.json` | Opus 5.5 |
+| [A06](bausteine/A06-fokus/agent.md) | Fokusthema (je Thema) | `auftrag.md`, `facts-run.json`, `focus_id` | `focus-<id>-facts.json` | Sonnet 5.5 |
+| [W1](bausteine/W1-pruefpaket/agent.md) | Prüfpaket | alle `*-facts.json` | `review-packet.json`, `pruefjob-<n>.json`, `pruefergebnis.json` | klein |
+| [A07](bausteine/A07-dokumentpruefung/agent.md) | Dokumentprüfung (je Job) | `pruefjob-<n>.json` | `befund-<n>.json` | Sonnet 5.5 |
+| [W2](bausteine/W2-befunde/agent.md) | Befunde bündeln | `befund-*.json` | `leitpruefung-eingabe.json` | klein |
+| [A08](bausteine/A08-leitpruefung/agent.md) | Leitprüfung | `leitpruefung-eingabe.json` | `leitentscheid.json` | Sonnet 5.5 |
+| [W3](bausteine/W3-freigabe/agent.md) | Freigabe | `leitentscheid.json`, Befunde | `review-basis.md` / `review-final.md`, `pruefergebnis.json` | klein |
+| [W4](bausteine/W4-bewertungskontext/agent.md) | Bewertungskontext | Prüfpaket, Review, ggf. `positioning.json` | `positioning-context.json` / `swot-context.json`, `pruefergebnis.json` | klein |
+| [A09](bausteine/A09-positionierung/agent.md) | Positionierung | `positioning-context.json` | `positioning.json` | Opus 5.5 |
+| [A10](bausteine/A10-swot/agent.md) | SWOT | `swot-context.json` | `swot.json` | Sonnet 5.5 |
+| [W5](bausteine/W5-rendern/agent.md) | Briefing rendern | alle freigegebenen Dateien | `briefing.html` | klein |
+
+Die Modelle der Denk-Agenten entsprechen `references/modellaufteilung.json`.
+Den Effort (medium/high) kann man in Copilot Studio nach heutigem Stand nicht
+je Agent einstellen.
+
+## 3. Ablauf
 
 ```
-Nutzer in Teams
-  └─ 00 Start-Agent ── startet ──► Agent Flow „Briefing-Lauf“
-        01 Auftrag
-        02 Kontext · 03 Portfolio · 04 Cluster · 05 Markt · 06 Fokus je Thema   (parallel)
-        Werkstatt: zusammenführen, Format prüfen
-        07 Dokumentprüfung (bis zu 3 Jobs) → 08 Leitprüfung
-        Prüftor 1: nicht bestanden → Befunde zurück an das Modul
-        09 Positionierung → 10 SWOT → 08 Leitprüfung (Schluss)
-        Prüftor 2: nicht bestanden → zurück an 09 bzw. 10
-        Werkstatt: Briefing rendern → SharePoint → Link per Teams
+anfrage.txt
+  → A01
+  → A02 · A03 · A04 · A05 · A06 je Thema
+  → W1 (basis) → A07 je Job → W2 → A08 → W3        Prüftor 1
+       nicht bestanden: zuständiger Baustein korrigiert → W1
+  → W4 (positioning) → A09 → W4 (swot) → A10
+  → W1 (final) → A07 je Job → W2 → A08 → W3        Prüftor 2
+       nicht bestanden: A09 bzw. A10 korrigiert
+  → W5 → briefing.html
 ```
 
-**Kurzbriefing:** nur 01, 02, 03, 07 und 08; dieselbe HTML-Vorlage ohne
-Bewertungsseiten.
+**Kurzbriefing:** A01 → A02 · A03 → W1 → A07 → W2 → A08 → W3 → W5.
 
-## 3. Inhalt des Ordners
+Genaue Rezepte, Prüftore und die Zuordnung „Rückgabe an welchen Baustein“:
+[`verknuepfung.md`](verknuepfung.md). Alle Dateien und wer sie liest und
+schreibt: [`dateien.md`](dateien.md).
+
+## 4. Inhalt des Ordners
 
 | Pfad | Inhalt |
 |---|---|
-| [`zielbild/`](zielbild/) | Diagramme Voll- und Kurzbriefing zur Orientierung |
-| [`agenten/`](agenten/) | je Agent: Steckbrief mit Einstellungen und fertige Anweisungen zum Einfügen |
-| [`flow/briefing-lauf.md`](flow/briefing-lauf.md) | alle Schritte des Agent Flows, Unterablauf, Testpunkte |
-| [`uebergaben.md`](uebergaben.md) | welches Dokument von wem zu wem geht, und warum als JSON |
-| [`werkstatt/schnittstelle.md`](werkstatt/schnittstelle.md) | Aktionen des Backends und welche Skripte sie nutzen |
-| [`werkstatt/openapi.yaml`](werkstatt/openapi.yaml) | Definition für den Custom Connector |
+| `bausteine/<ID>/agent.md` | Steckbrief: Einstellungen, Anschlüsse, Anweisungstext zum Einfügen |
+| `bausteine/<ID>/skill/SKILL.md` | Skill: Arbeitsweise bzw. Befehlsfolge, Dateiformat, Korrektur |
+| `bausteine.json` | alle Bausteine als Daten: Anschlüsse, Modell, Paketinhalt |
+| `skills-bauen.py` | baut je Baustein ein Skill-Paket (`.zip`) aus dem Repository |
+| `verknuepfung.md` | wie du die Bausteine im Flow verknüpfst, Rezepte, Testpunkte |
+| `dateien.md` | Dateivertrag des Lauf-Ordners |
+| `zielbild/` | Diagramme |
+| `werkzeuge/` | Hilfsskript `anpassen.py` für die Werkzeug-Agenten (noch zu bauen) |
 
-## 4. Die Agenten
+## 5. Einen Baustein in Copilot Studio anlegen
 
-| Nr. | Agent | Bisherige Rolle | Modell | Websuche | Modus |
-|---|---|---|---|---|---|
-| 00 | [Start-Agent](agenten/00-start.md) | – | Sonnet 5.5 | aus | beide |
-| 01 | [Auftrag](agenten/01-auftrag.md) | Hauptagent (inhaltlicher Teil) | Opus 5.5 | nur Firmenidentität | beide |
-| 02 | [Kontext & Person](agenten/02-kontext.md) | company-context-analyst | Sonnet 5.5 | an | beide |
-| 03 | [Portfolio & Präsenz](agenten/03-portfolio.md) | portfolio-analyst | Sonnet 5.5 | an | beide |
-| 04 | [Cluster & Netzwerk](agenten/04-cluster.md) | cluster-analyst | Opus 5.5 | an | voll |
-| 05 | [Markt & Wettbewerb](agenten/05-markt.md) | market-facts-analyst | Opus 5.5 | an | voll |
-| 06 | [Fokusthema](agenten/06-fokus.md) | focus-analyst | Sonnet 5.5 | an | voll |
-| 07 | [Dokumentprüfung](agenten/07-dokumentpruefung.md) | source-document-reviewer | Sonnet 5.5 | aus | beide |
-| 08 | [Leitprüfung](agenten/08-leitpruefung.md) | source-reviewer | Sonnet 5.5 | aus | beide |
-| 09 | [Positionierung](agenten/09-positionierung.md) | positioning-analyst | Opus 5.5 | aus | voll |
-| 10 | [SWOT](agenten/10-swot.md) | swot-analyst | Sonnet 5.5 | aus | voll |
+1. Skill-Pakete bauen (aus dem Repository-Stamm):
 
-Die Modelle entsprechen `references/modellaufteilung.json`. Der Effort
-(medium/high) lässt sich in Copilot Studio nach heutigem Stand nicht je Agent
-einstellen. Die mechanische Arbeit des bisherigen Hauptagenten übernimmt die
-Werkstatt.
+   ```bash
+   python3 copilot-studio/skills-bauen.py --out dist/skills
+   ```
 
-**Jede Agentendatei enthält:**
+2. In Copilot Studio einen neuen Agenten anlegen, Name wie im Steckbrief.
+3. Modell und Websuche laut Steckbrief einstellen.
+4. Skill-Paket `<skill>.zip` hochladen und dem Agenten zuordnen.
+5. Tools hinzufügen: SharePoint (Datei lesen, Datei schreiben), bei Werkzeug-
+   Agenten die Code-Ausführung.
+6. Den Anweisungstext aus `agent.md` in das Anweisungsfeld kopieren.
+7. Einzeln testen: im Chat „Lauf-Ordner: …“ schreiben und die Dateien prüfen.
 
-- **Steckbrief:** Modell, Websuche, Tools, hochzuladendes Wissen, Gedächtnis.
-- **Eingabe und Ausgabe:** was der Flow übergibt und was zurückkommt.
-- **Anweisungen:** Textblock, der unverändert in das Anweisungsfeld kommt.
-
-**Wissen hochladen** heißt: die genannten Dateien aus `references/` direkt aus
-dem Repository als Wissensquelle des Agenten hochladen. Die Anweisungen
-enthalten die Pflichtregeln; das Wissen liefert die Details.
-
-## 5. Aufbau Schritt für Schritt
+## 6. Aufbau Schritt für Schritt
 
 | Stufe | Was tun | Fertig, wenn |
 |---|---|---|
-| **0 Voraussetzungen** | Power-Platform-Umgebung, Copilot Credits mit Budget, Claude-Modelle und Websuche durch die Administration freigeben, SharePoint-Bibliothek „Briefings“ | ein Test-Agent mit Claude Sonnet 5.5 antwortet |
-| **1 Machbarkeit** | Testpunkte T1 bis T8 aus [`flow/briefing-lauf.md`](flow/briefing-lauf.md) mit einem Mini-Flow und zwei Test-Agenten klären | alle Testpunkte beantwortet |
-| **2 Werkstatt** | Backend nach [`werkstatt/schnittstelle.md`](werkstatt/schnittstelle.md) bauen und als Custom Connector anlegen | Demo-Daten ergeben byte-gleiche HTML wie `examples/build-demo.py` |
-| **3 Agenten einzeln** | Agenten 01 bis 08 anlegen, jeden einzeln im Testbereich mit einem Beispieldokument prüfen | jedes Ergebnis besteht die Formatprüfung der Werkstatt |
-| **4 Fließband Kurz** | Flow mit Start-Agent, Zweig „kurz“ und Prüftor 1 | ein echtes Kurzbriefing landet in SharePoint, ein absichtlich falscher Fakt geht zurück und wird korrigiert |
-| **5 Fließband Voll** | Agenten 09 und 10, Fokus-Schleife, Prüftor 2 | ein Vollbriefing mit zwei Fokusthemen entspricht inhaltlich einem heutigen Lauf |
-| **6 Freigabe für alle** | Start-Agent in Teams veröffentlichen, Verbrauch beobachten, Kurzanleitung | Pilot mit drei Nutzern und drei Firmen |
-
-## 6. Wie das Ergebnis gleich bleibt
-
-| Risiko in Copilot Studio | Gegenmaßnahme |
-|---|---|
-| Lange Regeln passen nicht in eine Anweisung | Pflichtregeln in der Anweisung, Details als Wissen aus `references/` |
-| Wissen wird nur auszugsweise durchsucht | Die Werkstatt prüft jedes Ergebnis mit den vorhandenen Skripten und gibt Fehler an den Agenten zurück |
-| Websuche liefert nur Snippets | Tool „Quelle abrufen“ öffnet Seiten und PDFs vollständig (`source-cache.py`) |
-| Zitate gehen zwischen Agenten verloren | Quellen stehen als Datenfelder im Ergebnis, nicht als Zitat |
-| Agenten schreiben Prüfsummen falsch ab | Die Werkstatt ergänzt Kopf, Quellen-IDs und Prüfsummen |
-| Prüfung soll unabhängig sein | Prüfer sind eigene Agenten ohne Verlauf; Autoren und Prüfer teilen nie einen Kontext |
-| Ein Agent wartet höchstens rund 2 Minuten auf einen Flow | Der Flow meldet sofort „gestartet“ und läuft danach weiter (Testpunkt T1) |
+| **0 Voraussetzungen** | Umgebung, Copilot Credits, Claude-Modelle, Websuche, SharePoint-Bibliothek „Briefings“ | ein Test-Agent mit Claude antwortet |
+| **1 Machbarkeit** | Testpunkte T1–T10 aus [`verknuepfung.md`](verknuepfung.md) klären, vor allem T1 (Skripte in der Sandbox) und T3 (SharePoint-Dateien) | alle Testpunkte beantwortet |
+| **2 Hilfsskript** | `werkzeuge/anpassen.py` bauen und mit den Demodaten prüfen | Demodaten ergeben dieselbe HTML wie `examples/build-demo.py` |
+| **3 Bausteine einzeln** | A01–A08 und W1–W3, W5 anlegen und einzeln testen | jeder Baustein schreibt gültige Dateien |
+| **4 Kurzbriefing** | Rezept Kurz im Agent Flow verknüpfen | ein echtes Kurzbriefing; ein falscher Fakt geht zurück und wird korrigiert |
+| **5 Vollbriefing** | A09, A10, W4 dazu, Rezept Voll | Vollbriefing mit zwei Fokusthemen, inhaltlich wie ein heutiger Lauf |
+| **6 Freigabe für alle** | Einstieg für Nutzer (z. B. Teams), Verbrauch beobachten | Pilot mit drei Nutzern und drei Firmen |
 
 ## 7. Pflege
 
-- **Fachliche Änderung** (z. B. eine neue Regel zur Quellenprüfung):
-  in `references/` ändern, das Wissen des betroffenen Agenten neu hochladen.
-  Betrifft sie eine Pflichtregel, auch den Anweisungsblock in `agenten/` anpassen.
-- **Darstellungsänderung:** in `scripts/` und `references/templates/` ändern.
-  Die Werkstatt nutzt sie automatisch.
-- **Modelländerung:** in `references/modellaufteilung.json` und im Steckbrief
-  des Agenten anpassen.
+- **Fachregel ändern:** in `references/` ändern, Skill-Pakete neu bauen und
+  hochladen. Betrifft es eine Pflichtregel, auch `SKILL.md` anpassen.
+- **Darstellung ändern:** in `scripts/` und `references/templates/`; die
+  Werkzeug-Pakete neu bauen.
+- **Baustein ändern:** zuerst `bausteine.json`, dann `agent.md` und `SKILL.md`.
 
-## 8. Offen und bewusst noch nicht gebaut
+## 8. Noch offen
 
-- **Werkstatt-Code:** Die Schnittstelle steht, der Code noch nicht. Er wird eine
-  dünne Hülle um `scripts/`.
-- **Auswahl für die Bewertung:** In der ersten Version bekommt die
-  Positionierung alle A-geprüften Kernfakten. Eine engere Auswahl spart später
-  Token.
-- **Testpunkte T1 bis T8:** müssen im eigenen Mandanten beantwortet werden,
-  bevor der Flow gebaut wird.
-- **Effort je Agent:** in Copilot Studio nicht einstellbar; die Modellwahl
-  bleibt.
+- **`werkzeuge/anpassen.py`:** ergänzt Kopffelder, berechnet Quellen-IDs,
+  setzt Prüfsummen ein, stellt `leitpruefung-eingabe.json` zusammen und schreibt
+  `pruefergebnis.json`. Die Aufrufe stehen in den Werkzeug-Skills; der Code fehlt
+  noch.
+- **Testpunkte T1–T10** im eigenen Mandanten.
+- **Faktenauswahl für die Bewertung:** Version 1 nimmt alle A-geprüften
+  Kernfakten. Eine engere Auswahl spart später Token.
+- **Einstieg für alle Nutzer:** Wer den Lauf-Ordner anlegt und den Flow startet,
+  wird nach dem Pilot festgelegt.

@@ -19,6 +19,7 @@
   --agent-fill: #e2eff4;
   --gate: #9a6412;
   --gate-fill: #fbf0dc;
+  --wz-fill: #eceff2;
   --display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
   --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   color-scheme: light;
@@ -27,14 +28,14 @@
   :root:not([data-theme="light"]) {
     --bg: #0f151b; --surface: #161e26; --ink: #e5ecf2; --muted: #9ba8b5;
     --line: #2d3945; --accent: #63b6d6; --agent-fill: #133442;
-    --gate: #e3a94e; --gate-fill: #3a2b12;
+    --gate: #e3a94e; --gate-fill: #3a2b12; --wz-fill: #222c36;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0f151b; --surface: #161e26; --ink: #e5ecf2; --muted: #9ba8b5;
   --line: #2d3945; --accent: #63b6d6; --agent-fill: #133442;
-  --gate: #e3a94e; --gate-fill: #3a2b12;
+  --gate: #e3a94e; --gate-fill: #3a2b12; --wz-fill: #222c36;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -65,13 +66,14 @@ figcaption { font-size: .9rem; color: var(--muted); max-width: 80ch; }
 .legend span { display: inline-flex; align-items: center; gap: 8px; }
 .sw { width: 22px; height: 14px; border-radius: 3px; display: inline-block; }
 .sw-agent { background: var(--agent-fill); border: 1.5px solid var(--accent); }
-.sw-flow { border: 1.5px dashed var(--ink); }
+.sw-wz { background: var(--wz-fill); border: 1.5px solid var(--ink); }
 .sw-gate { background: var(--gate-fill); border: 1.5px solid var(--gate); transform: rotate(45deg) scale(.7); width: 16px; height: 16px; }
 .sw-frame { border: 1.5px dashed var(--accent); }
 .ag { fill: var(--agent-fill); stroke: var(--accent); stroke-width: 1.5; }
 .fl { fill: var(--surface); stroke: currentColor; stroke-width: 1.3; stroke-dasharray: 5 4; }
 .pl { fill: var(--surface); stroke: currentColor; stroke-width: 1.3; }
 .gt { fill: var(--gate-fill); stroke: var(--gate); stroke-width: 1.5; }
+.wz { fill: var(--wz-fill); stroke: currentColor; stroke-width: 1.3; }
 .fr { fill: none; stroke: var(--accent); stroke-width: 1.3; stroke-dasharray: 7 5; }
 .ln { fill: none; stroke: currentColor; stroke-width: 1.3; }
 .lb { fill: none; stroke: var(--gate); stroke-width: 1.3; }
@@ -94,46 +96,44 @@ ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
 <header style="display:grid;gap:12px">
   <p class="meta">Zielbild · Stand 05.11.2026 · Ordner <code>copilot-studio/</code> im Repository</p>
   <h1>Firmenbriefing in Copilot Studio</h1>
-  <p class="lede">Zehn unabhängige Agenten, ein Agent Flow als Fließband und eine Werkstatt für die mechanischen Schritte. Kein Agent ruft einen anderen auf. Jeder startet ohne Vorwissen und bekommt nur seine Dokumente.</p>
+  <p class="lede">Nur Agenten mit Skills: zehn Denk-Agenten und fünf Werkzeug-Agenten. Jeder ist ein Baustein mit festen Eingangs- und Ausgangsdateien, läuft auch für sich allein und kennt keine anderen Agenten. Die Bausteine steckst du selbst zusammen.</p>
 </header>
 
 <section>
   <h2>Grundprinzip</h2>
   <div class="cols">
-    <div class="card"><b>Agenten denken</b><p>Recherchieren, prüfen, bewerten. Jeder kennt nur seine eigene Aufgabe und sein Eingabedokument.</p></div>
-    <div class="card"><b>Der Flow organisiert</b><p>Feste Reihenfolge, Prüftore und Rückläufe. Er reicht die Dokumente weiter und ruft jeden Agenten einzeln auf.</p></div>
-    <div class="card"><b>Die Werkstatt rechnet</b><p>Ablage, Formatprüfung, Prüfpakete, Freigabe und HTML. Sie nutzt die vorhandenen Skripte, deshalb bleibt das Ergebnis gleich.</p></div>
+    <div class="card"><b>Denk-Agenten A01–A10</b><p>Recherchieren, prüfen, bewerten. Der Skill enthält Arbeitsweise, Dateiformat und die Fachregeln.</p></div>
+    <div class="card"><b>Werkzeug-Agenten W1–W5</b><p>Formate prüfen, Prüfpakete bauen, freigeben, rendern. Der Skill enthält die vorhandenen Skripte; deshalb bleibt das Ergebnis gleich.</p></div>
+    <div class="card"><b>Du verknüpfst</b><p>Im Agent Flow oder von Hand. Jeder Baustein bekommt nur den Lauf-Ordner, liest seine Eingänge und schreibt seine Ausgänge.</p></div>
   </div>
 </section>
 
 <section>
   <h2>Ablauf Vollbriefing</h2>
   <div class="legend">
-    <span><i class="sw sw-agent"></i>Agent (startet frisch)</span>
-    <span><i class="sw sw-flow"></i>Werkstatt-Schritt</span>
-    <span><i class="sw sw-gate"></i>Prüftor</span>
-    <span><i class="sw sw-frame"></i>Agent Flow</span>
+    <span><i class="sw sw-agent"></i>Denk-Agent</span>
+    <span><i class="sw sw-wz"></i>Werkzeug-Agent</span>
+    <span><i class="sw sw-gate"></i>Prüftor (pruefergebnis.json)</span>
+    <span><i class="sw sw-frame"></i>deine Verknüpfung</span>
   </div>
   <figure>
   <div class="scroll">
-  <svg viewBox="0 0 860 1124" role="img" aria-label="Vollbriefing: Der Start-Agent startet den Agent Flow. Der Flow ruft nacheinander den Auftrags-Agenten, parallel die fünf Faktenagenten, die Dokumentprüfung und die Leitprüfung auf. Bei nicht bestanden gehen die Befunde zurück an das zuständige Modul. Danach Positionierung, SWOT und Schlussprüfung, zuletzt rendert die Werkstatt die HTML.">
+  <svg viewBox="0 0 860 1276" role="img" aria-label="Vollbriefing aus Bausteinen: A01 Auftrag, parallel A02 bis A06, W1 Prüfpaket, A07 Dokumentprüfung je Job, W2 Befunde bündeln, A08 Leitprüfung, W3 Freigabe mit Prüftor 1. Danach W4 Bewertungskontext, A09 Positionierung, A10 SWOT, Schlussprüfung mit Prüftor 2 und W5 Briefing rendern.">
     <defs>
       <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker>
       <marker id="g1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ahg"/></marker>
     </defs>
 
-    <rect x="260" y="12" width="340" height="52" rx="8" class="ag"/>
-    <text x="430" y="34" text-anchor="middle" class="t1">00 Start-Agent in Teams</text>
-    <text x="430" y="52" text-anchor="middle" class="t2">nimmt die Anfrage an und startet den Flow</text>
-    <line x1="430" y1="64" x2="430" y2="110" class="ln" marker-end="url(#a1)"/>
-    <text x="440" y="86" class="td">anfrage, modus</text>
+    <rect x="290" y="12" width="280" height="40" rx="20" class="pl"/>
+    <text x="430" y="37" text-anchor="middle" class="t1">anfrage.txt im Lauf-Ordner</text>
+    <line x1="430" y1="52" x2="430" y2="110" class="ln" marker-end="url(#a1)"/>
 
-    <rect x="8" y="92" width="844" height="1018" rx="12" class="fr"/>
-    <text x="22" y="110" class="tp">AGENT FLOW „BRIEFING-LAUF“</text>
+    <rect x="8" y="82" width="844" height="1180" rx="12" class="fr"/>
+    <text x="22" y="100" class="tp">DEINE VERKNÜPFUNG IM AGENT FLOW</text>
 
     <rect x="260" y="112" width="340" height="58" rx="8" class="ag"/>
-    <text x="430" y="134" text-anchor="middle" class="t1">01 Auftrags-Agent · Opus 5.5</text>
-    <text x="430" y="152" text-anchor="middle" class="td">→ facts-run.json · comparison-plan.json</text>
+    <text x="430" y="134" text-anchor="middle" class="t1">A01 Auftrag · Opus 5.5</text>
+    <text x="430" y="152" text-anchor="middle" class="td">→ auftrag.md · facts-run.json · comparison-plan.json</text>
     <line x1="430" y1="170" x2="430" y2="200" class="ln"/>
 
     <text x="22" y="192" class="tp">PHASE 1 · FAKTEN</text>
@@ -145,28 +145,24 @@ ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
     <line x1="750" y1="200" x2="750" y2="218" class="ln" marker-end="url(#a1)"/>
 
     <rect x="36" y="226" width="148" height="74" rx="8" class="ag"/>
-    <text x="110" y="248" text-anchor="middle" class="t1">02 Kontext &amp; Person</text>
+    <text x="110" y="248" text-anchor="middle" class="t1">A02 Kontext &amp; Person</text>
     <text x="110" y="268" text-anchor="middle" class="td">context-facts.json</text>
     <text x="110" y="287" text-anchor="middle" class="t2">Sonnet 5.5</text>
-
     <rect x="196" y="226" width="148" height="74" rx="8" class="ag"/>
-    <text x="270" y="248" text-anchor="middle" class="t1">03 Portfolio</text>
+    <text x="270" y="248" text-anchor="middle" class="t1">A03 Portfolio</text>
     <text x="270" y="268" text-anchor="middle" class="td">portfolio-facts.json</text>
     <text x="270" y="287" text-anchor="middle" class="t2">Sonnet 5.5</text>
-
     <rect x="356" y="226" width="148" height="74" rx="8" class="ag"/>
-    <text x="430" y="248" text-anchor="middle" class="t1">04 Cluster</text>
+    <text x="430" y="248" text-anchor="middle" class="t1">A04 Cluster</text>
     <text x="430" y="268" text-anchor="middle" class="td">cluster-facts.json</text>
     <text x="430" y="287" text-anchor="middle" class="t2">Opus 5.5</text>
-
     <rect x="516" y="226" width="148" height="74" rx="8" class="ag"/>
-    <text x="590" y="248" text-anchor="middle" class="t1">05 Markt</text>
+    <text x="590" y="248" text-anchor="middle" class="t1">A05 Markt</text>
     <text x="590" y="268" text-anchor="middle" class="td">market-facts.json</text>
     <text x="590" y="287" text-anchor="middle" class="t2">Opus 5.5</text>
-
     <rect x="682" y="220" width="148" height="74" rx="8" class="ag"/>
     <rect x="676" y="226" width="148" height="74" rx="8" class="ag"/>
-    <text x="750" y="248" text-anchor="middle" class="t1">06 Fokus je Thema</text>
+    <text x="750" y="248" text-anchor="middle" class="t1">A06 Fokus je Thema</text>
     <text x="750" y="268" text-anchor="middle" class="td">focus-&lt;id&gt;-facts.json</text>
     <text x="750" y="287" text-anchor="middle" class="t2">Sonnet 5.5</text>
 
@@ -178,70 +174,80 @@ ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
     <line x1="110" y1="320" x2="750" y2="320" class="ln"/>
     <line x1="430" y1="320" x2="430" y2="346" class="ln" marker-end="url(#a1)"/>
 
-    <rect x="240" y="348" width="380" height="52" rx="8" class="fl"/>
-    <text x="430" y="370" text-anchor="middle" class="t1">Werkstatt: zusammenführen, Format prüfen</text>
-    <text x="430" y="388" text-anchor="middle" class="td">review-packet.json · Quellen auf bis zu 3 Jobs</text>
+    <rect x="240" y="348" width="380" height="52" rx="8" class="wz"/>
+    <text x="430" y="370" text-anchor="middle" class="t1">W1 Prüfpaket · Phase basis</text>
+    <text x="430" y="388" text-anchor="middle" class="td">→ review-packet.json · pruefjob-1…3.json</text>
     <line x1="430" y1="400" x2="430" y2="426" class="ln" marker-end="url(#a1)"/>
 
     <rect x="266" y="422" width="340" height="56" rx="8" class="ag"/>
     <rect x="260" y="428" width="340" height="56" rx="8" class="ag"/>
-    <text x="430" y="451" text-anchor="middle" class="t1">07 Dokumentprüfung · je Job · Sonnet 5.5</text>
-    <text x="430" y="470" text-anchor="middle" class="td">Quellenbündel → Befunde je Aussage</text>
+    <text x="430" y="451" text-anchor="middle" class="t1">A07 Dokumentprüfung · je Job · Sonnet 5.5</text>
+    <text x="430" y="470" text-anchor="middle" class="td">pruefjob-n.json → befund-n.json</text>
     <line x1="430" y1="484" x2="430" y2="510" class="ln" marker-end="url(#a1)"/>
 
-    <rect x="260" y="512" width="340" height="56" rx="8" class="ag"/>
-    <text x="430" y="535" text-anchor="middle" class="t1">08 Leitprüfung · Basis · Sonnet 5.5</text>
-    <text x="430" y="554" text-anchor="middle" class="td">alle Befunde → Entscheidung je Aussage</text>
-    <line x1="430" y1="568" x2="430" y2="586" class="ln" marker-end="url(#a1)"/>
+    <rect x="240" y="512" width="380" height="48" rx="8" class="wz"/>
+    <text x="430" y="532" text-anchor="middle" class="t1">W2 Befunde bündeln</text>
+    <text x="430" y="550" text-anchor="middle" class="td">→ leitpruefung-eingabe.json</text>
+    <line x1="430" y1="560" x2="430" y2="586" class="ln" marker-end="url(#a1)"/>
 
-    <polygon points="430,588 494,624 430,660 366,624" class="gt"/>
-    <text x="430" y="628" text-anchor="middle" class="tg">bestanden?</text>
-    <polyline points="366,624 22,624 22,263 34,263" class="lb" marker-end="url(#g1)"/>
-    <text x="40" y="616" class="tg">nein: Befunde zurück an das zuständige Modul</text>
+    <rect x="260" y="588" width="340" height="56" rx="8" class="ag"/>
+    <text x="430" y="611" text-anchor="middle" class="t1">A08 Leitprüfung · Sonnet 5.5</text>
+    <text x="430" y="630" text-anchor="middle" class="td">→ leitentscheid.json</text>
+    <line x1="430" y1="644" x2="430" y2="670" class="ln" marker-end="url(#a1)"/>
 
-    <text x="22" y="700" class="tp">PHASE 2 · BEWERTUNG</text>
-    <line x1="430" y1="660" x2="430" y2="684" class="ln" marker-end="url(#a1)"/>
-    <text x="422" y="677" text-anchor="end" class="tg">ja</text>
+    <rect x="240" y="672" width="380" height="48" rx="8" class="wz"/>
+    <text x="430" y="692" text-anchor="middle" class="t1">W3 Freigabe</text>
+    <text x="430" y="710" text-anchor="middle" class="td">→ review-basis.md · pruefergebnis.json</text>
+    <line x1="430" y1="720" x2="430" y2="742" class="ln" marker-end="url(#a1)"/>
 
-    <rect x="240" y="686" width="380" height="48" rx="8" class="fl"/>
-    <text x="430" y="706" text-anchor="middle" class="t1">Werkstatt: Bewertungskontext auswählen</text>
-    <text x="430" y="724" text-anchor="middle" class="td">positioning-context.json</text>
-    <polyline points="430,734 430,746 325,746 325,758" class="ln" marker-end="url(#a1)"/>
+    <polygon points="430,744 494,780 430,816 366,780" class="gt"/>
+    <text x="430" y="784" text-anchor="middle" class="tg">bestanden?</text>
+    <polyline points="366,780 22,780 22,263 34,263" class="lb" marker-end="url(#g1)"/>
+    <text x="40" y="772" class="tg">nein: zuständiger Baustein korrigiert, dann wieder W1</text>
 
-    <rect x="220" y="760" width="210" height="66" rx="8" class="ag"/>
-    <text x="325" y="782" text-anchor="middle" class="t1">09 Positionierung</text>
-    <text x="325" y="800" text-anchor="middle" class="td">positioning.json</text>
-    <text x="325" y="817" text-anchor="middle" class="t2">Opus 5.5</text>
-    <line x1="430" y1="793" x2="466" y2="793" class="ln" marker-end="url(#a1)"/>
-    <rect x="468" y="760" width="172" height="66" rx="8" class="ag"/>
-    <text x="554" y="782" text-anchor="middle" class="t1">10 SWOT</text>
-    <text x="554" y="800" text-anchor="middle" class="td">swot.json</text>
-    <text x="554" y="817" text-anchor="middle" class="t2">Sonnet 5.5</text>
-    <text x="40" y="784" class="t2">ohne Websuche,</text>
-    <text x="40" y="800" class="t2">nur geprüfte Fakten</text>
+    <text x="22" y="856" class="tp">PHASE 2 · BEWERTUNG</text>
+    <line x1="430" y1="816" x2="430" y2="840" class="ln" marker-end="url(#a1)"/>
+    <text x="422" y="833" text-anchor="end" class="tg">ja</text>
 
-    <polyline points="554,826 554,842 430,842 430,858" class="ln" marker-end="url(#a1)"/>
-    <rect x="260" y="860" width="340" height="56" rx="8" class="ag"/>
-    <text x="430" y="883" text-anchor="middle" class="t1">08 Leitprüfung · Schluss · Sonnet 5.5</text>
-    <text x="430" y="902" text-anchor="middle" class="td">Ableitungen gegen Fakten prüfen</text>
-    <line x1="430" y1="916" x2="430" y2="938" class="ln" marker-end="url(#a1)"/>
+    <rect x="240" y="842" width="380" height="48" rx="8" class="wz"/>
+    <text x="430" y="862" text-anchor="middle" class="t1">W4 Bewertungskontext</text>
+    <text x="430" y="880" text-anchor="middle" class="td">→ positioning-context.json, später swot-context.json</text>
+    <polyline points="430,890 430,902 325,902 325,914" class="ln" marker-end="url(#a1)"/>
 
-    <polygon points="430,940 494,976 430,1012 366,976" class="gt"/>
-    <text x="430" y="980" text-anchor="middle" class="tg">bestanden?</text>
-    <polyline points="366,976 196,976 196,793 218,793" class="lb" marker-end="url(#g1)"/>
-    <text x="204" y="968" class="tg">nein: zurück an 09 / 10</text>
+    <rect x="220" y="916" width="210" height="66" rx="8" class="ag"/>
+    <text x="325" y="938" text-anchor="middle" class="t1">A09 Positionierung</text>
+    <text x="325" y="956" text-anchor="middle" class="td">positioning.json</text>
+    <text x="325" y="973" text-anchor="middle" class="t2">Opus 5.5</text>
+    <line x1="430" y1="949" x2="466" y2="949" class="ln" marker-end="url(#a1)"/>
+    <rect x="468" y="916" width="172" height="66" rx="8" class="ag"/>
+    <text x="554" y="938" text-anchor="middle" class="t1">A10 SWOT</text>
+    <text x="554" y="956" text-anchor="middle" class="td">swot.json</text>
+    <text x="554" y="973" text-anchor="middle" class="t2">Sonnet 5.5</text>
+    <text x="40" y="940" class="t2">ohne Websuche,</text>
+    <text x="40" y="956" class="t2">nur geprüfte Fakten</text>
 
-    <line x1="430" y1="1012" x2="430" y2="1036" class="ln" marker-end="url(#a1)"/>
-    <text x="422" y="1029" text-anchor="end" class="tg">ja</text>
-    <rect x="240" y="1038" width="380" height="52" rx="8" class="fl"/>
-    <text x="430" y="1060" text-anchor="middle" class="t1">Werkstatt: Briefing rendern</text>
-    <text x="430" y="1078" text-anchor="middle" class="td">bestehende HTML-Vorlage → SharePoint</text>
-    <line x1="620" y1="1064" x2="660" y2="1064" class="ln" marker-end="url(#a1)"/>
-    <rect x="662" y="1044" width="168" height="40" rx="20" class="pl"/>
-    <text x="746" y="1069" text-anchor="middle" class="t1">Link per Teams</text>
+    <polyline points="554,982 554,998 430,998 430,1014" class="ln" marker-end="url(#a1)"/>
+    <rect x="200" y="1016" width="460" height="56" rx="8" class="wz"/>
+    <text x="430" y="1039" text-anchor="middle" class="t1">Schlussprüfung: W1 → A07 → W2 → A08 → W3 (Phase final)</text>
+    <text x="430" y="1058" text-anchor="middle" class="td">→ review-final.md · pruefergebnis.json</text>
+    <line x1="430" y1="1072" x2="430" y2="1092" class="ln" marker-end="url(#a1)"/>
+
+    <polygon points="430,1094 494,1130 430,1166 366,1130" class="gt"/>
+    <text x="430" y="1134" text-anchor="middle" class="tg">bestanden?</text>
+    <polyline points="366,1130 196,1130 196,949 218,949" class="lb" marker-end="url(#g1)"/>
+    <text x="204" y="1122" class="tg">nein: A09 / A10 korrigiert</text>
+
+    <line x1="430" y1="1166" x2="430" y2="1190" class="ln" marker-end="url(#a1)"/>
+    <text x="422" y="1183" text-anchor="end" class="tg">ja</text>
+    <rect x="240" y="1192" width="380" height="52" rx="8" class="wz"/>
+    <text x="430" y="1214" text-anchor="middle" class="t1">W5 Briefing rendern</text>
+    <text x="430" y="1232" text-anchor="middle" class="td">bestehende HTML-Vorlage → briefing.html</text>
+    <line x1="620" y1="1218" x2="660" y2="1218" class="ln" marker-end="url(#a1)"/>
+    <rect x="662" y="1198" width="168" height="40" rx="20" class="pl"/>
+    <text x="746" y="1223" text-anchor="middle" class="t1">Link verschicken</text>
   </svg>
   </div>
-  <figcaption>Der Flow ruft jeden Agenten einzeln mit genau einem Eingabedokument auf und speichert sein Ergebnis über die Werkstatt. Bei „nicht bestanden“ geht nur das betroffene Modul mit den Befunden zurück, so oft wie nötig. Fragt die Bewertung nach fehlenden Fakten, läuft das zuständige Faktenmodul erneut durch Prüftor 1. Im Schluss prüft die Dokumentprüfung nur neu hinzugekommene Fakten.</figcaption>
+  <figcaption>Jeder Kasten ist ein eigener Agent mit Skill. Er liest nur die Dateien, die über ihm entstanden sind, und schreibt die Dateien, die an ihm stehen. Bei „nicht bestanden“ nennt pruefergebnis.json den zuständigen Baustein; nur dieser korrigiert, danach geht es wieder durch die Prüfung. W4 läuft zweimal: vor A09 für den Positionierungskontext, vor A10 für den SWOT-Kontext.</figcaption>
   </figure>
 </section>
 
@@ -249,34 +255,32 @@ ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
   <h2>Ablauf Kurzbriefing</h2>
   <figure>
   <div class="scroll">
-  <svg viewBox="0 0 860 770" role="img" aria-label="Kurzbriefing: Der Start-Agent startet den Flow. Auftrags-Agent, danach Kontext und Portfolio parallel, Werkstatt prüft das Format, Dokumentprüfung und Leitprüfung. Bei nicht bestanden zurück an das Modul, sonst rendert die Werkstatt die HTML ohne Bewertungsseiten.">
+  <svg viewBox="0 0 860 924" role="img" aria-label="Kurzbriefing aus Bausteinen: A01 Auftrag, A02 und A03, W1 Prüfpaket, A07 Dokumentprüfung, W2 Befunde bündeln, A08 Leitprüfung, W3 Freigabe mit Prüftor, W5 Briefing rendern ohne Bewertungsseiten.">
     <defs>
       <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker>
       <marker id="g2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ahg"/></marker>
     </defs>
-    <rect x="260" y="12" width="340" height="52" rx="8" class="ag"/>
-    <text x="430" y="34" text-anchor="middle" class="t1">00 Start-Agent in Teams</text>
-    <text x="430" y="52" text-anchor="middle" class="t2">„Kurzbriefing zu …“</text>
-    <line x1="430" y1="64" x2="430" y2="110" class="ln" marker-end="url(#a2)"/>
-    <text x="440" y="86" class="td">anfrage, modus = kurz</text>
+    <rect x="270" y="12" width="320" height="40" rx="20" class="pl"/>
+    <text x="430" y="37" text-anchor="middle" class="t1">anfrage.txt mit „modus: kurz“</text>
+    <line x1="430" y1="52" x2="430" y2="110" class="ln" marker-end="url(#a2)"/>
 
-    <rect x="8" y="92" width="844" height="664" rx="12" class="fr"/>
-    <text x="22" y="110" class="tp">AGENT FLOW · ZWEIG KURZ</text>
+    <rect x="8" y="82" width="844" height="828" rx="12" class="fr"/>
+    <text x="22" y="100" class="tp">DEINE VERKNÜPFUNG · KURZ</text>
 
     <rect x="260" y="112" width="340" height="58" rx="8" class="ag"/>
-    <text x="430" y="134" text-anchor="middle" class="t1">01 Auftrags-Agent · Opus 5.5</text>
-    <text x="430" y="152" text-anchor="middle" class="td">→ facts-run.json · Rollen Kontext, Portfolio</text>
+    <text x="430" y="134" text-anchor="middle" class="t1">A01 Auftrag · Opus 5.5</text>
+    <text x="430" y="152" text-anchor="middle" class="td">→ auftrag.md · facts-run.json</text>
     <line x1="430" y1="170" x2="430" y2="200" class="ln"/>
     <line x1="270" y1="200" x2="590" y2="200" class="ln"/>
     <line x1="270" y1="200" x2="270" y2="224" class="ln" marker-end="url(#a2)"/>
     <line x1="590" y1="200" x2="590" y2="224" class="ln" marker-end="url(#a2)"/>
 
     <rect x="196" y="226" width="148" height="74" rx="8" class="ag"/>
-    <text x="270" y="248" text-anchor="middle" class="t1">02 Kontext &amp; Person</text>
+    <text x="270" y="248" text-anchor="middle" class="t1">A02 Kontext &amp; Person</text>
     <text x="270" y="268" text-anchor="middle" class="td">context-facts.json</text>
     <text x="270" y="287" text-anchor="middle" class="t2">Sonnet 5.5</text>
     <rect x="516" y="226" width="148" height="74" rx="8" class="ag"/>
-    <text x="590" y="248" text-anchor="middle" class="t1">03 Portfolio</text>
+    <text x="590" y="248" text-anchor="middle" class="t1">A03 Portfolio</text>
     <text x="590" y="268" text-anchor="middle" class="td">portfolio-facts.json</text>
     <text x="590" y="287" text-anchor="middle" class="t2">Sonnet 5.5</text>
 
@@ -285,81 +289,81 @@ ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
     <line x1="270" y1="320" x2="590" y2="320" class="ln"/>
     <line x1="430" y1="320" x2="430" y2="346" class="ln" marker-end="url(#a2)"/>
 
-    <rect x="240" y="348" width="380" height="52" rx="8" class="fl"/>
-    <text x="430" y="370" text-anchor="middle" class="t1">Werkstatt: zusammenführen, Format prüfen</text>
-    <text x="430" y="388" text-anchor="middle" class="td">review-packet.json</text>
+    <rect x="240" y="348" width="380" height="52" rx="8" class="wz"/>
+    <text x="430" y="370" text-anchor="middle" class="t1">W1 Prüfpaket</text>
+    <text x="430" y="388" text-anchor="middle" class="td">→ review-packet.json · pruefjob-n.json</text>
     <line x1="430" y1="400" x2="430" y2="426" class="ln" marker-end="url(#a2)"/>
-
     <rect x="260" y="428" width="340" height="56" rx="8" class="ag"/>
-    <text x="430" y="451" text-anchor="middle" class="t1">07 Dokumentprüfung · Sonnet 5.5</text>
-    <text x="430" y="470" text-anchor="middle" class="td">Quellenbündel → Befunde je Aussage</text>
+    <text x="430" y="451" text-anchor="middle" class="t1">A07 Dokumentprüfung · Sonnet 5.5</text>
+    <text x="430" y="470" text-anchor="middle" class="td">pruefjob-n.json → befund-n.json</text>
     <line x1="430" y1="484" x2="430" y2="510" class="ln" marker-end="url(#a2)"/>
+    <rect x="240" y="512" width="380" height="48" rx="8" class="wz"/>
+    <text x="430" y="532" text-anchor="middle" class="t1">W2 Befunde bündeln</text>
+    <text x="430" y="550" text-anchor="middle" class="td">→ leitpruefung-eingabe.json</text>
+    <line x1="430" y1="560" x2="430" y2="586" class="ln" marker-end="url(#a2)"/>
+    <rect x="260" y="588" width="340" height="56" rx="8" class="ag"/>
+    <text x="430" y="611" text-anchor="middle" class="t1">A08 Leitprüfung · Sonnet 5.5</text>
+    <text x="430" y="630" text-anchor="middle" class="td">→ leitentscheid.json</text>
+    <line x1="430" y1="644" x2="430" y2="670" class="ln" marker-end="url(#a2)"/>
+    <rect x="240" y="672" width="380" height="48" rx="8" class="wz"/>
+    <text x="430" y="692" text-anchor="middle" class="t1">W3 Freigabe</text>
+    <text x="430" y="710" text-anchor="middle" class="td">→ review-basis.md · pruefergebnis.json</text>
+    <line x1="430" y1="720" x2="430" y2="742" class="ln" marker-end="url(#a2)"/>
 
-    <rect x="260" y="512" width="340" height="56" rx="8" class="ag"/>
-    <text x="430" y="535" text-anchor="middle" class="t1">08 Leitprüfung · Sonnet 5.5</text>
-    <text x="430" y="554" text-anchor="middle" class="td">Entscheidung je Aussage</text>
-    <line x1="430" y1="568" x2="430" y2="586" class="ln" marker-end="url(#a2)"/>
+    <polygon points="430,744 494,780 430,816 366,780" class="gt"/>
+    <text x="430" y="784" text-anchor="middle" class="tg">bestanden?</text>
+    <polyline points="366,780 150,780 150,263 194,263" class="lb" marker-end="url(#g2)"/>
+    <text x="156" y="772" class="tg">nein: A02 / A03 korrigiert, wieder W1</text>
 
-    <polygon points="430,588 494,624 430,660 366,624" class="gt"/>
-    <text x="430" y="628" text-anchor="middle" class="tg">bestanden?</text>
-    <polyline points="366,624 150,624 150,263 194,263" class="lb" marker-end="url(#g2)"/>
-    <text x="156" y="616" class="tg">nein: zurück an das Modul</text>
-
-    <line x1="430" y1="660" x2="430" y2="684" class="ln" marker-end="url(#a2)"/>
-    <text x="422" y="677" text-anchor="end" class="tg">ja</text>
-    <rect x="240" y="686" width="380" height="52" rx="8" class="fl"/>
-    <text x="430" y="708" text-anchor="middle" class="t1">Werkstatt: Briefing rendern</text>
-    <text x="430" y="726" text-anchor="middle" class="td">gleiche Vorlage, ohne Bewertungsseiten</text>
-    <line x1="620" y1="712" x2="660" y2="712" class="ln" marker-end="url(#a2)"/>
-    <rect x="662" y="692" width="168" height="40" rx="20" class="pl"/>
-    <text x="746" y="717" text-anchor="middle" class="t1">Link per Teams</text>
+    <line x1="430" y1="816" x2="430" y2="840" class="ln" marker-end="url(#a2)"/>
+    <text x="422" y="833" text-anchor="end" class="tg">ja</text>
+    <rect x="240" y="842" width="380" height="52" rx="8" class="wz"/>
+    <text x="430" y="864" text-anchor="middle" class="t1">W5 Briefing rendern</text>
+    <text x="430" y="882" text-anchor="middle" class="td">gleiche Vorlage, ohne Bewertungsseiten</text>
+    <line x1="620" y1="868" x2="660" y2="868" class="ln" marker-end="url(#a2)"/>
+    <rect x="662" y="848" width="168" height="40" rx="20" class="pl"/>
+    <text x="746" y="873" text-anchor="middle" class="t1">Link verschicken</text>
   </svg>
   </div>
-  <figcaption>Gleiche Agenten, weniger Rollen: kein Cluster, kein Markt, keine Fokusseiten, keine Bewertung. Die Quellenprüfung bleibt vollständig.</figcaption>
+  <figcaption>Dieselben Bausteine, weniger davon: kein Cluster, kein Markt, keine Fokusseiten, keine Bewertung. Die Quellenprüfung bleibt vollständig.</figcaption>
   </figure>
-  <div class="scroll">
-  <table>
-    <thead><tr><th></th><th>Kurzbriefing</th><th>Vollbriefing</th></tr></thead>
-    <tbody>
-      <tr><td>Agenten im Einsatz</td><td>00, 01, 02, 03, 07, 08</td><td>alle: 00 bis 10</td></tr>
-      <tr><td>Inhalte</td><td>Unternehmensüberblick, aktuelle Entwicklungen, Portfolio, Person</td><td>dazu Cluster-Netzwerk, Markt und Wettbewerb, Capability Matrix, Präsenz, Summary, SWOT, Fokusseiten</td></tr>
-      <tr><td>Ausgabe</td><td>HTML, gleiche Vorlage</td><td>HTML, gleiche Vorlage, alle Seiten</td></tr>
-    </tbody>
-  </table>
-  </div>
 </section>
 
 <section>
-  <h2>Die Agenten</h2>
+  <h2>Die Bausteine</h2>
   <div class="scroll">
   <table>
-    <thead><tr><th>Nr.</th><th>Agent</th><th>Liefert</th><th>Modell</th><th>Websuche</th></tr></thead>
+    <thead><tr><th>ID</th><th>Baustein</th><th>Art</th><th>Schreibt</th><th>Modell</th></tr></thead>
     <tbody>
-      <tr><td class="num">00</td><td>Start-Agent (Teams)</td><td>startet den Flow</td><td>Sonnet 5.5</td><td>aus</td></tr>
-      <tr><td class="num">01</td><td>Auftrag</td><td>Manifest, Vergleichsplan</td><td>Opus 5.5</td><td>nur Firmenidentität</td></tr>
-      <tr><td class="num">02</td><td>Kontext &amp; Person</td><td>context-facts.json</td><td>Sonnet 5.5</td><td>an</td></tr>
-      <tr><td class="num">03</td><td>Portfolio &amp; Präsenz</td><td>portfolio-facts.json</td><td>Sonnet 5.5</td><td>an</td></tr>
-      <tr><td class="num">04</td><td>Cluster &amp; Netzwerk</td><td>cluster-facts.json</td><td>Opus 5.5</td><td>an</td></tr>
-      <tr><td class="num">05</td><td>Markt &amp; Wettbewerb</td><td>market-facts.json</td><td>Opus 5.5</td><td>an</td></tr>
-      <tr><td class="num">06</td><td>Fokusthema (je Thema)</td><td>focus-&lt;id&gt;-facts.json</td><td>Sonnet 5.5</td><td>an</td></tr>
-      <tr><td class="num">07</td><td>Dokumentprüfung (je Job)</td><td>Befunde je Quelle</td><td>Sonnet 5.5</td><td>aus</td></tr>
-      <tr><td class="num">08</td><td>Leitprüfung</td><td>Entscheidung je Aussage</td><td>Sonnet 5.5</td><td>aus</td></tr>
-      <tr><td class="num">09</td><td>Positionierung</td><td>positioning.json</td><td>Opus 5.5</td><td>aus</td></tr>
-      <tr><td class="num">10</td><td>SWOT</td><td>swot.json</td><td>Sonnet 5.5</td><td>aus</td></tr>
+      <tr><td class="num">A01</td><td>Auftrag</td><td>Denk</td><td>auftrag.md, facts-run.json, comparison-plan.json</td><td>Opus 5.5</td></tr>
+      <tr><td class="num">A02</td><td>Kontext &amp; Person</td><td>Denk</td><td>context-facts.json</td><td>Sonnet 5.5</td></tr>
+      <tr><td class="num">A03</td><td>Portfolio &amp; Präsenz</td><td>Denk</td><td>portfolio-facts.json</td><td>Sonnet 5.5</td></tr>
+      <tr><td class="num">A04</td><td>Cluster &amp; Netzwerk</td><td>Denk</td><td>cluster-facts.json</td><td>Opus 5.5</td></tr>
+      <tr><td class="num">A05</td><td>Markt &amp; Wettbewerb</td><td>Denk</td><td>market-facts.json</td><td>Opus 5.5</td></tr>
+      <tr><td class="num">A06</td><td>Fokusthema (je Thema)</td><td>Denk</td><td>focus-&lt;id&gt;-facts.json</td><td>Sonnet 5.5</td></tr>
+      <tr><td class="num">A07</td><td>Dokumentprüfung (je Job)</td><td>Denk</td><td>befund-&lt;n&gt;.json</td><td>Sonnet 5.5</td></tr>
+      <tr><td class="num">A08</td><td>Leitprüfung</td><td>Denk</td><td>leitentscheid.json</td><td>Sonnet 5.5</td></tr>
+      <tr><td class="num">A09</td><td>Positionierung</td><td>Denk</td><td>positioning.json</td><td>Opus 5.5</td></tr>
+      <tr><td class="num">A10</td><td>SWOT</td><td>Denk</td><td>swot.json</td><td>Sonnet 5.5</td></tr>
+      <tr><td class="num">W1</td><td>Prüfpaket</td><td>Werkzeug</td><td>review-packet.json, pruefjob-&lt;n&gt;.json, pruefergebnis.json</td><td>klein</td></tr>
+      <tr><td class="num">W2</td><td>Befunde bündeln</td><td>Werkzeug</td><td>leitpruefung-eingabe.json</td><td>klein</td></tr>
+      <tr><td class="num">W3</td><td>Freigabe</td><td>Werkzeug</td><td>review-basis.md / review-final.md, pruefergebnis.json</td><td>klein</td></tr>
+      <tr><td class="num">W4</td><td>Bewertungskontext</td><td>Werkzeug</td><td>positioning-context.json / swot-context.json</td><td>klein</td></tr>
+      <tr><td class="num">W5</td><td>Briefing rendern</td><td>Werkzeug</td><td>briefing.html</td><td>klein</td></tr>
     </tbody>
   </table>
   </div>
-  <p class="prose meta">Modelle wie in <code>references/modellaufteilung.json</code>. Recherche- und Prüfagenten öffnen Quellen über das Werkstatt-Tool „Quelle abrufen“. Anweisungen und Einstellungen je Agent: <code>copilot-studio/agenten/</code>.</p>
+  <p class="prose meta">Steckbriefe, Anweisungen und Skills je Baustein: <code>copilot-studio/bausteine/</code>. Skill-Pakete baut <code>copilot-studio/skills-bauen.py</code> aus dem Repository.</p>
 </section>
 
 <section>
   <h2>Im Ordner</h2>
   <ul class="prose">
-    <li><code>README.md</code>: Überblick und Aufbau Schritt für Schritt</li>
-    <li><code>agenten/</code>: Steckbrief und Anweisungen je Agent zum Einfügen</li>
-    <li><code>flow/briefing-lauf.md</code>: alle Schritte des Agent Flows und Testpunkte</li>
-    <li><code>uebergaben.md</code>: welches Dokument von wem zu wem geht</li>
-    <li><code>werkstatt/</code>: Aktionen des Tool-Backends und Connector-Definition</li>
+    <li><code>README.md</code>: Überblick, Anlegen eines Bausteins, Aufbau Schritt für Schritt</li>
+    <li><code>bausteine/</code>: je Baustein <code>agent.md</code> (Steckbrief, Anweisungen) und <code>skill/SKILL.md</code></li>
+    <li><code>verknuepfung.md</code>: Rezepte Voll und Kurz, Prüftore, Rückgabe, Testpunkte</li>
+    <li><code>dateien.md</code>: alle Dateien des Lauf-Ordners, wer sie schreibt und liest</li>
+    <li><code>bausteine.json</code> und <code>skills-bauen.py</code>: Daten und Paketbau</li>
   </ul>
 </section>
 

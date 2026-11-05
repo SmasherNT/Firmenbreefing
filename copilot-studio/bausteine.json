@@ -1,0 +1,449 @@
+{
+  "schema_version": 1,
+  "beschreibung": "Bausteine des Firmenbriefings in Copilot Studio. Quelle für Steckbriefe und Skill-Pakete (skills-bauen.py).",
+  "bausteine": [
+    {
+      "id": "A01",
+      "ordner": "A01-auftrag",
+      "titel": "Auftrag",
+      "art": "denk",
+      "skill": "briefing-auftrag",
+      "kurz": "Macht aus der Anfrage einen eindeutigen Auftrag und legt vor der Recherche den Vergleichsplan fest.",
+      "bisher": "Hauptagent (inhaltlicher Teil)",
+      "modell": "Claude Opus 5.5",
+      "effort_heute": "medium",
+      "websuche": "an, nur zur Identifikation der Firma",
+      "modus": "Voll und Kurz",
+      "parameter": [],
+      "eingaenge": [
+        "anfrage.txt"
+      ],
+      "ausgaenge": [
+        "auftrag.md",
+        "facts-run.json",
+        "comparison-plan.json"
+      ],
+      "korrektur": true,
+      "skill_dateien": [
+        "references/defaults.md",
+        "references/capability-matrix.md",
+        "references/fokusseiten.md",
+        "references/themen-darstellung.md"
+      ]
+    },
+    {
+      "id": "A02",
+      "ordner": "A02-kontext",
+      "titel": "Kontext & Person",
+      "art": "denk",
+      "skill": "briefing-kontext",
+      "kurz": "Firmenbasis, aktuelle Entwicklungen der letzten vier Monate und berufliche Profile genannter Gesprächspartner.",
+      "bisher": "company-context-analyst",
+      "modell": "Claude Sonnet 5.5",
+      "effort_heute": "medium",
+      "websuche": "an",
+      "modus": "Voll und Kurz",
+      "parameter": [],
+      "eingaenge": [
+        "auftrag.md",
+        "facts-run.json"
+      ],
+      "ausgaenge": [
+        "context-facts.json"
+      ],
+      "korrektur": true,
+      "skill_dateien": [
+        "references/faktenphase.md",
+        "references/gespraechspartner.md",
+        "references/themen-darstellung.md",
+        "references/ausgabe-html-v2.md",
+        "references/cluster-quellenkatalog.md"
+      ]
+    },
+    {
+      "id": "A03",
+      "ordner": "A03-portfolio",
+      "titel": "Portfolio & Präsenz",
+      "art": "denk",
+      "skill": "briefing-portfolio",
+      "kurz": "Gesamtes Produktangebot über alle Geschäftsfelder und, im Vollbriefing, die regionale Präsenz.",
+      "bisher": "portfolio-analyst",
+      "modell": "Claude Sonnet 5.5",
+      "effort_heute": "medium",
+      "websuche": "an",
+      "modus": "Voll und Kurz",
+      "parameter": [],
+      "eingaenge": [
+        "auftrag.md",
+        "facts-run.json"
+      ],
+      "ausgaenge": [
+        "portfolio-facts.json"
+      ],
+      "korrektur": true,
+      "skill_dateien": [
+        "references/faktenphase.md",
+        "references/portfolio-darstellung.md",
+        "references/regionale-praesenz.md",
+        "references/themen-darstellung.md",
+        "references/cluster-quellenkatalog.md"
+      ]
+    },
+    {
+      "id": "A04",
+      "ordner": "A04-cluster",
+      "titel": "Cluster & Netzwerk",
+      "art": "denk",
+      "skill": "briefing-cluster",
+      "kurz": "Eigentum, Kontrolle, Joint Ventures, Technologie- und Industriepartner, Kunden und Querverbindungen.",
+      "bisher": "cluster-analyst",
+      "modell": "Claude Opus 5.5",
+      "effort_heute": "high",
+      "websuche": "an",
+      "modus": "nur Voll",
+      "parameter": [],
+      "eingaenge": [
+        "auftrag.md",
+        "facts-run.json"
+      ],
+      "ausgaenge": [
+        "cluster-facts.json"
+      ],
+      "korrektur": true,
+      "skill_dateien": [
+        "references/faktenphase.md",
+        "references/cluster-recherche.md",
+        "references/cluster-quellenkatalog.md",
+        "references/netzwerk-html.md"
+      ]
+    },
+    {
+      "id": "A05",
+      "ordner": "A05-markt",
+      "titel": "Markt & Wettbewerb",
+      "art": "denk",
+      "skill": "briefing-markt",
+      "kurz": "Unternehmensmarkt, Nachfrage, Programme und Wettbewerbsfakten nach dem festen Vergleichsplan.",
+      "bisher": "market-facts-analyst",
+      "modell": "Claude Opus 5.5",
+      "effort_heute": "high",
+      "websuche": "an",
+      "modus": "nur Voll",
+      "parameter": [],
+      "eingaenge": [
+        "auftrag.md",
+        "facts-run.json",
+        "comparison-plan.json"
+      ],
+      "ausgaenge": [
+        "market-facts.json"
+      ],
+      "korrektur": true,
+      "skill_dateien": [
+        "references/faktenphase.md",
+        "references/capability-matrix.md",
+        "references/cluster-quellenkatalog.md",
+        "references/themen-darstellung.md"
+      ]
+    },
+    {
+      "id": "A06",
+      "ordner": "A06-fokus",
+      "titel": "Fokusthema",
+      "art": "denk",
+      "skill": "briefing-fokus",
+      "kurz": "Neutrales Themen- und Marktbriefing zu genau einem Fokusthema; ein Aufruf je Thema.",
+      "bisher": "focus-analyst",
+      "modell": "Claude Sonnet 5.5",
+      "effort_heute": "medium",
+      "websuche": "an",
+      "modus": "nur Voll, je beauftragtem Fokusthema",
+      "parameter": [
+        "focus_id"
+      ],
+      "eingaenge": [
+        "auftrag.md",
+        "facts-run.json"
+      ],
+      "ausgaenge": [
+        "focus-<focus_id>-facts.json"
+      ],
+      "korrektur": true,
+      "skill_dateien": [
+        "references/fokusseiten.md",
+        "references/faktenphase.md"
+      ]
+    },
+    {
+      "id": "A07",
+      "ordner": "A07-dokumentpruefung",
+      "titel": "Dokumentprüfung",
+      "art": "denk",
+      "skill": "briefing-dokumentpruefung",
+      "kurz": "Prüft ein zugewiesenes Quellenbündel gegen die zugehörigen Aussagen; ein Aufruf je Prüfjob, keine Freigabe.",
+      "bisher": "source-document-reviewer",
+      "modell": "Claude Sonnet 5.5",
+      "effort_heute": "medium",
+      "websuche": "aus (Quellen direkt öffnen)",
+      "modus": "Voll und Kurz",
+      "parameter": [
+        "job"
+      ],
+      "eingaenge": [
+        "pruefjob-<job>.json"
+      ],
+      "ausgaenge": [
+        "befund-<job>.json"
+      ],
+      "korrektur": false,
+      "skill_dateien": [
+        "references/quellenpruefung.md",
+        "references/parallele-quellenpruefung.md"
+      ]
+    },
+    {
+      "id": "A08",
+      "ordner": "A08-leitpruefung",
+      "titel": "Leitprüfung",
+      "art": "denk",
+      "skill": "briefing-leitpruefung",
+      "kurz": "Entscheidet je Aussage über die Freigabe, nach den Fakten (basis) und nach der Bewertung (final).",
+      "bisher": "source-reviewer",
+      "modell": "Claude Sonnet 5.5",
+      "effort_heute": "medium",
+      "websuche": "aus (Quellen bei Bedarf direkt öffnen)",
+      "modus": "Voll und Kurz",
+      "parameter": [],
+      "eingaenge": [
+        "leitpruefung-eingabe.json"
+      ],
+      "ausgaenge": [
+        "leitentscheid.json"
+      ],
+      "korrektur": false,
+      "skill_dateien": [
+        "references/quellenpruefung.md",
+        "references/parallele-quellenpruefung.md",
+        "references/pruefauftraege.md",
+        "references/interpretationsphase.md",
+        "references/fokusseiten.md",
+        "references/gespraechspartner.md",
+        "references/portfolio-darstellung.md",
+        "references/regionale-praesenz.md",
+        "references/cluster-recherche.md",
+        "references/netzwerk-html.md",
+        "references/executive-summary.md"
+      ]
+    },
+    {
+      "id": "A09",
+      "ordner": "A09-positionierung",
+      "titel": "Positionierung",
+      "art": "denk",
+      "skill": "briefing-positionierung",
+      "kurz": "Executive Summary, Capability Matrix, Produktreife, regionale Präsenz, Themen und Modul-Insights aus geprüften Fakten.",
+      "bisher": "positioning-analyst",
+      "modell": "Claude Opus 5.5",
+      "effort_heute": "high",
+      "websuche": "aus",
+      "modus": "nur Voll",
+      "parameter": [],
+      "eingaenge": [
+        "positioning-context.json"
+      ],
+      "ausgaenge": [
+        "positioning.json"
+      ],
+      "korrektur": true,
+      "skill_dateien": [
+        "references/interpretationsphase.md",
+        "references/capability-matrix.md",
+        "references/executive-summary.md",
+        "references/portfolio-darstellung.md",
+        "references/regionale-praesenz.md",
+        "references/modul-keyfacts.md",
+        "references/themen-darstellung.md"
+      ]
+    },
+    {
+      "id": "A10",
+      "ordner": "A10-swot",
+      "titel": "SWOT",
+      "art": "denk",
+      "skill": "briefing-swot",
+      "kurz": "Konkrete SWOT aus geprüften Fakten und aktueller Positionierung.",
+      "bisher": "swot-analyst",
+      "modell": "Claude Sonnet 5.5",
+      "effort_heute": "medium",
+      "websuche": "aus",
+      "modus": "nur Voll",
+      "parameter": [],
+      "eingaenge": [
+        "swot-context.json"
+      ],
+      "ausgaenge": [
+        "swot.json"
+      ],
+      "korrektur": true,
+      "skill_dateien": [
+        "references/interpretationsphase.md"
+      ]
+    },
+    {
+      "id": "W1",
+      "ordner": "W1-pruefpaket",
+      "titel": "Prüfpaket",
+      "art": "werkzeug",
+      "skill": "werkzeug-pruefpaket",
+      "kurz": "Prüft alle Ergebnisse formal, baut das Prüfpaket und verteilt die Quellen auf bis zu drei Prüfjobs.",
+      "bisher": "Hauptagent: prepare-facts, review-work, review-shards split/show",
+      "modell": "Claude Sonnet 5.5 (nur Ausführung)",
+      "effort_heute": "–",
+      "websuche": "aus",
+      "modus": "Voll und Kurz",
+      "parameter": [
+        "phase"
+      ],
+      "eingaenge": [
+        "facts-run.json",
+        "*-facts.json",
+        "comparison-plan.json (falls vorhanden)",
+        "bei final: review-basis.md, positioning*.json, swot*.json"
+      ],
+      "ausgaenge": [
+        "pruefergebnis.json",
+        "review-packet.json",
+        "pruefjob-1.json … pruefjob-3.json",
+        "Prüfstand in _pruefstand/"
+      ],
+      "korrektur": false,
+      "skill_dateien": [
+        "scripts/",
+        "references/templates/",
+        "references/modellaufteilung.json"
+      ]
+    },
+    {
+      "id": "W2",
+      "ordner": "W2-befunde",
+      "titel": "Befunde bündeln",
+      "art": "werkzeug",
+      "skill": "werkzeug-befunde",
+      "kurz": "Sammelt die Befunde der Dokumentprüfung ein und erzeugt die Eingabe der Leitprüfung.",
+      "bisher": "Hauptagent: review-shards collect",
+      "modell": "Claude Sonnet 5.5 (nur Ausführung)",
+      "effort_heute": "–",
+      "websuche": "aus",
+      "modus": "Voll und Kurz",
+      "parameter": [
+        "phase"
+      ],
+      "eingaenge": [
+        "befund-1.json … befund-3.json",
+        "Prüfstand aus W1"
+      ],
+      "ausgaenge": [
+        "leitpruefung-eingabe.json"
+      ],
+      "korrektur": false,
+      "skill_dateien": [
+        "scripts/",
+        "references/modellaufteilung.json"
+      ]
+    },
+    {
+      "id": "W3",
+      "ordner": "W3-freigabe",
+      "titel": "Freigabe",
+      "art": "werkzeug",
+      "skill": "werkzeug-freigabe",
+      "kurz": "Führt Leitentscheid und Befunde zusammen, wendet die Freigaberegeln an und schreibt das Prüfergebnis.",
+      "bisher": "Hauptagent: review-shards merge, stamp-review",
+      "modell": "Claude Sonnet 5.5 (nur Ausführung)",
+      "effort_heute": "–",
+      "websuche": "aus",
+      "modus": "Voll und Kurz",
+      "parameter": [
+        "phase"
+      ],
+      "eingaenge": [
+        "leitentscheid.json",
+        "befund-*.json",
+        "Prüfstand aus W1"
+      ],
+      "ausgaenge": [
+        "review-basis.md bzw. review-final.md",
+        "pruefergebnis.json",
+        "Prüfstand in _pruefstand/"
+      ],
+      "korrektur": false,
+      "skill_dateien": [
+        "scripts/",
+        "references/modellaufteilung.json"
+      ]
+    },
+    {
+      "id": "W4",
+      "ordner": "W4-bewertungskontext",
+      "titel": "Bewertungskontext",
+      "art": "werkzeug",
+      "skill": "werkzeug-bewertungskontext",
+      "kurz": "Erzeugt den Kontext für Positionierung bzw. SWOT und prüft die Positionierung formal.",
+      "bisher": "Hauptagent: check-interpretation --prepare",
+      "modell": "Claude Sonnet 5.5 (nur Ausführung)",
+      "effort_heute": "–",
+      "websuche": "aus",
+      "modus": "nur Voll",
+      "parameter": [
+        "schritt"
+      ],
+      "eingaenge": [
+        "facts-run.json",
+        "review-packet.json",
+        "review-basis.md",
+        "comparison-plan.json",
+        "market-facts.json",
+        "bei swot: positioning.json, positioning-context.json"
+      ],
+      "ausgaenge": [
+        "positioning-context.json bzw. swot-context.json",
+        "pruefergebnis.json",
+        "Prüfstand in _pruefstand/"
+      ],
+      "korrektur": false,
+      "skill_dateien": [
+        "scripts/",
+        "references/modellaufteilung.json"
+      ]
+    },
+    {
+      "id": "W5",
+      "ordner": "W5-rendern",
+      "titel": "Briefing rendern",
+      "art": "werkzeug",
+      "skill": "werkzeug-rendern",
+      "kurz": "Erzeugt aus den freigegebenen Dateien die HTML mit der bestehenden Vorlage.",
+      "bisher": "Hauptagent: render-briefing",
+      "modell": "Claude Sonnet 5.5 (nur Ausführung)",
+      "effort_heute": "–",
+      "websuche": "aus",
+      "modus": "Voll und Kurz",
+      "parameter": [],
+      "eingaenge": [
+        "facts-run.json",
+        "review-packet.json",
+        "review-basis.md",
+        "bei Voll: positioning*.json, swot*.json, review-final.md, comparison-plan.json"
+      ],
+      "ausgaenge": [
+        "briefing.html"
+      ],
+      "korrektur": false,
+      "skill_dateien": [
+        "scripts/",
+        "references/templates/",
+        "references/modellaufteilung.json"
+      ]
+    }
+  ]
+}
