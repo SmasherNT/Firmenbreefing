@@ -73,7 +73,7 @@ figcaption { font-size: .9rem; color: var(--muted); max-width: 80ch; }
 .sw-agent { background: var(--agent-fill); border: 1.5px solid var(--accent); }
 .sw-flow { border: 1.5px dashed var(--ink); }
 .sw-gate { background: var(--gate-fill); border: 1.5px solid var(--gate); transform: rotate(45deg) scale(.7); width: 16px; height: 16px; }
-.sw-stop { border: 1.5px solid var(--stop); }
+.sw-vm { background: var(--gate-fill); border: 1.5px solid var(--gate); }
 /* SVG-Klassen */
 .ag { fill: var(--agent-fill); stroke: var(--accent); stroke-width: 1.5; }
 .fl { fill: var(--surface); stroke: currentColor; stroke-width: 1.3; stroke-dasharray: 5 4; }
@@ -87,6 +87,8 @@ figcaption { font-size: .9rem; color: var(--muted); max-width: 80ch; }
 .tp { font: 600 12px var(--display); fill: var(--accent); letter-spacing: .05em; }
 .tg { font: 500 11.5px var(--body); fill: var(--gate); }
 .ts { font: 600 12px var(--body); fill: var(--stop); }
+.vm { fill: var(--gate-fill); stroke: var(--gate); stroke-width: 1.5; }
+.tv { font: 600 12px var(--body); fill: var(--gate); }
 .ah { fill: currentColor; }
 .ahg { fill: var(--gate); }
 .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
@@ -137,7 +139,8 @@ a { color: var(--accent); }
       <tr><td>Rollen</td><td>10 Rollen plus bis zu 3 Dokumentprüfer und Leitprüfer</td><td><b>5 Agenten</b>, die mit wechselndem Modulauftrag mehrfach aufgerufen werden</td></tr>
       <tr><td>Dateien je Lauf</td><td>rund 15 JSON-Dateien plus Prüfpläne und Checkpoints</td><td><b>1 Dossier</b> mit einem Abschnitt je Agent, dazu das fertige Briefing</td></tr>
       <tr><td>Wer schreibt</td><td>Jede Rolle schreibt ihre eigene Datei</td><td>Agenten liefern Ergebnisse zurück, <b>nur der Flow schreibt</b></td></tr>
-      <tr><td>Freigabe</td><td>Regeln im Prompt plus Python-Prüfskripte</td><td>Prüf-Agent urteilt, Flow-Bedingung setzt das Urteil hart durch</td></tr>
+      <tr><td>Freigabe</td><td>Regeln im Prompt plus Python-Prüfskripte</td><td>Prüf-Agent urteilt je Aussage, Flow-Bedingung setzt das Urteil durch</td></tr>
+      <tr><td>Nicht bestätigte Aussagen</td><td>Lauf wird nach 2 erfolglosen Korrekturrunden blockiert</td><td><b>Lauf läuft weiter</b>: Aussage bekommt einen Prüfvermerk, wird nicht für Summary und Bewertung genutzt und erscheint unter „Offene Punkte“</td></tr>
       <tr><td>Regelwerk</td><td>rund 315 KB in 36 Referenzdateien</td><td>je Modul eine kurze Auftragskarte, aus dem Repository erzeugt</td></tr>
       <tr><td>Ausgabe</td><td>HTML über lokale Renderer</td><td>Gleiche Renderer als Tool, dazu PDF, Ablage in SharePoint</td></tr>
     </tbody>
@@ -151,11 +154,11 @@ a { color: var(--accent); }
     <span><i class="sw sw-agent"></i>KI-Schritt (Agent oder Prompt)</span>
     <span><i class="sw sw-flow"></i>Flow- oder Code-Schritt</span>
     <span><i class="sw sw-gate"></i>Prüftor</span>
-    <span><i class="sw sw-stop"></i>Abbruch</span>
+    <span><i class="sw sw-vm"></i>Weiter mit Prüfvermerk</span>
   </div>
   <figure>
   <div class="scroll">
-  <svg viewBox="0 0 860 1060" role="img" aria-label="Vollbriefing: Front-Agent legt den Auftrag an, ein Agent Flow ruft vier Recherche-Module und je Fokusthema einen Aufruf auf, der Prüf-Agent gibt die Fakten frei, danach Positionierung, SWOT und Schlussprüfung, zuletzt rendert ein Tool HTML und PDF in SharePoint.">
+  <svg viewBox="0 0 860 1060" role="img" aria-label="Vollbriefing: Front-Agent legt den Auftrag an, ein Agent Flow ruft vier Recherche-Module und je Fokusthema einen Aufruf auf, der Prüf-Agent gibt die Fakten frei, nach höchstens zwei Korrekturrunden geht es mit Prüfvermerk weiter, danach Positionierung, SWOT und Schlussprüfung, zuletzt rendert ein Tool HTML und PDF in SharePoint. Der Lauf wird nie blockiert.">
     <defs>
       <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker>
       <marker id="g1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ahg"/></marker>
@@ -237,17 +240,18 @@ a { color: var(--accent); }
     <!-- Rücklauf Phase 1 -->
     <polyline points="366,604 18,604 18,321 34,321" class="lb" marker-end="url(#g1)"/>
     <text x="40" y="596" class="tg">nein: Korrektur an das betroffene Modul</text>
-    <!-- Abbruch -->
+    <!-- Weiter mit Prüfvermerk -->
     <line x1="494" y1="604" x2="626" y2="604" class="lb" marker-end="url(#g1)"/>
     <text x="504" y="596" class="tg">nach 2 Runden</text>
-    <rect x="628" y="580" width="202" height="48" rx="8" class="st"/>
-    <text x="729" y="602" text-anchor="middle" class="ts">Lauf blockiert</text>
-    <text x="729" y="619" text-anchor="middle" class="t2">Meldung mit offenen Punkten</text>
+    <rect x="628" y="580" width="202" height="48" rx="8" class="vm"/>
+    <text x="729" y="602" text-anchor="middle" class="tv">Weiter mit Prüfvermerk</text>
+    <text x="729" y="619" text-anchor="middle" class="t2">offene Aussagen markiert</text>
+    <polyline points="729,628 729,658 434,658" class="lb" marker-end="url(#g1)"/>
 
     <!-- Phase 2 -->
     <text x="36" y="676" class="tp">PHASE 2 · BEWERTUNG</text>
     <line x1="430" y1="640" x2="430" y2="658" class="ln"/>
-    <text x="440" y="654" class="tg">ja</text>
+    <text x="422" y="653" text-anchor="end" class="tg">ja</text>
     <polyline points="430,658 325,658 325,686" class="ln" marker-end="url(#a1)"/>
 
     <rect x="220" y="688" width="210" height="56" rx="8" class="ag"/>
@@ -272,13 +276,14 @@ a { color: var(--accent); }
     <text x="204" y="892" class="tg">nein: Korrektur</text>
     <line x1="494" y1="900" x2="626" y2="900" class="lb" marker-end="url(#g1)"/>
     <text x="504" y="892" class="tg">nach 2 Runden</text>
-    <rect x="628" y="876" width="202" height="48" rx="8" class="st"/>
-    <text x="729" y="898" text-anchor="middle" class="ts">Lauf blockiert</text>
-    <text x="729" y="915" text-anchor="middle" class="t2">Meldung mit offenen Punkten</text>
+    <rect x="628" y="876" width="202" height="48" rx="8" class="vm"/>
+    <text x="729" y="898" text-anchor="middle" class="tv">Weiter mit Prüfvermerk</text>
+    <text x="729" y="915" text-anchor="middle" class="t2">offene Ableitungen markiert</text>
+    <polyline points="729,924 729,950 434,950" class="lb" marker-end="url(#g1)"/>
 
     <!-- Ausgabe -->
     <line x1="430" y1="936" x2="430" y2="962" class="ln" marker-end="url(#a1)"/>
-    <text x="440" y="954" class="tg">ja</text>
+    <text x="422" y="955" text-anchor="end" class="tg">ja</text>
     <rect x="260" y="964" width="340" height="52" rx="8" class="fl"/>
     <text x="430" y="986" text-anchor="middle" class="t1">Tool „Briefing rendern“</text>
     <text x="430" y="1004" text-anchor="middle" class="t2">bestehende HTML-Vorlage + PDF → SharePoint</text>
@@ -287,7 +292,7 @@ a { color: var(--accent); }
     <text x="746" y="995" text-anchor="middle" class="t1">Link im Teams-Chat</text>
   </svg>
   </div>
-  <figcaption>Der Flow ruft dieselben Agenten mehrfach auf, jeweils mit einer anderen Auftragskarte. Alle Recherche-Aufrufe nutzen die Tools „Websuche“ und „Quelle abrufen“; Bewertung und SWOT arbeiten ohne Websuche. Jeder Rücklauf geht gezielt an das betroffene Modul, nicht an den ganzen Lauf.</figcaption>
+  <figcaption>Der Flow ruft dieselben Agenten mehrfach auf, jeweils mit einer anderen Auftragskarte. Alle Recherche-Aufrufe nutzen die Tools „Websuche“ und „Quelle abrufen“; Bewertung und SWOT arbeiten ohne Websuche. Jeder Rücklauf geht gezielt an das betroffene Modul, nicht an den ganzen Lauf. Der Lauf blockiert nie: Was nach den Korrekturrunden nicht bestätigt ist, bekommt einen Prüfvermerk, fließt nicht in Bewertung oder Summary ein und steht im Briefing unter „Offene Punkte“. Fällt ein Modul ganz aus, zeigt das Briefing dort eine Datenlücke.</figcaption>
   </figure>
 </section>
 
@@ -295,7 +300,7 @@ a { color: var(--accent); }
   <h2>Ablauf Kurzbriefing</h2>
   <figure>
   <div class="scroll">
-  <svg viewBox="0 0 860 640" role="img" aria-label="Kurzbriefing: Front-Agent legt den Auftrag an, der Flow ruft einen Schnellrecherche-Aufruf auf, der Prüf-Agent prüft alle Kernaussagen, ein Prompt schreibt Summary und Gesprächsfragen, das Ergebnis landet als Word oder PDF in SharePoint.">
+  <svg viewBox="0 0 860 640" role="img" aria-label="Kurzbriefing: Front-Agent legt den Auftrag an, der Flow ruft einen Schnellrecherche-Aufruf auf, der Prüf-Agent prüft alle Kernaussagen, nach einer Korrekturrunde geht es mit Prüfvermerk weiter, ein Prompt schreibt Summary und Gesprächsfragen, das Ergebnis landet als Word oder PDF in SharePoint.">
     <defs>
       <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ah"/></marker>
       <marker id="g2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="ahg"/></marker>
@@ -329,13 +334,14 @@ a { color: var(--accent); }
     <polyline points="366,450 200,450 200,282 258,282" class="lb" marker-end="url(#g2)"/>
     <text x="206" y="442" class="tg">nein: 1 Korrektur</text>
     <line x1="494" y1="450" x2="626" y2="450" class="lb" marker-end="url(#g2)"/>
-    <text x="504" y="442" class="tg">danach</text>
-    <rect x="628" y="426" width="202" height="48" rx="8" class="st"/>
-    <text x="729" y="448" text-anchor="middle" class="ts">Lauf blockiert</text>
-    <text x="729" y="465" text-anchor="middle" class="t2">Meldung mit offenen Punkten</text>
+    <text x="504" y="442" class="tg">nach 1 Runde</text>
+    <rect x="628" y="426" width="202" height="48" rx="8" class="vm"/>
+    <text x="729" y="448" text-anchor="middle" class="tv">Weiter mit Prüfvermerk</text>
+    <text x="729" y="465" text-anchor="middle" class="t2">offene Aussagen markiert</text>
+    <polyline points="729,474 729,496 434,496" class="lb" marker-end="url(#g2)"/>
 
     <line x1="430" y1="484" x2="430" y2="508" class="ln" marker-end="url(#a2)"/>
-    <text x="440" y="500" class="tg">ja</text>
+    <text x="422" y="501" text-anchor="end" class="tg">ja</text>
     <rect x="260" y="510" width="340" height="56" rx="8" class="ag"/>
     <text x="430" y="534" text-anchor="middle" class="t1">Prompt „Kurzfassung“</text>
     <text x="430" y="553" text-anchor="middle" class="t2">Summary + Gesprächsfragen nur aus geprüften Fakten</text>
@@ -345,7 +351,7 @@ a { color: var(--accent); }
     <text x="430" y="613" text-anchor="middle" class="t1">Word/PDF in SharePoint, Link im Chat</text>
   </svg>
   </div>
-  <figcaption>Gleiche Bausteine wie im Vollbriefing, nur ein Recherche-Aufruf und keine Matrix, Positionierung oder SWOT. Die Prüfung bleibt Pflicht: Auch die Kurzfassung entsteht ausschließlich aus freigegebenen Fakten.</figcaption>
+  <figcaption>Gleiche Bausteine wie im Vollbriefing, nur ein Recherche-Aufruf und keine Matrix, Positionierung oder SWOT. Die Prüfung bleibt Pflicht, blockiert aber nicht: Die Kurzfassung nutzt nur freigegebene Fakten, Aussagen mit Prüfvermerk erscheinen getrennt unter „Offene Punkte“.</figcaption>
   </figure>
   <div class="scroll">
   <table>
@@ -354,6 +360,7 @@ a { color: var(--accent); }
       <tr><td>Zweck</td><td>Schnelle Gesprächsvorbereitung</td><td>Strategische Vorbereitung für das Top-Management</td></tr>
       <tr><td class="num">KI-Aufrufe</td><td class="num">3 (+1 bei Korrektur)</td><td class="num">8 + 1 je Fokusthema + Prüfaufrufe je Modul</td></tr>
       <tr><td>Inhalte</td><td>Profil, aktuelle Entwicklungen, Portfolio-Überblick, Person, Gesprächsfragen</td><td>dazu Struktur/Netzwerk, Markt und Wettbewerb, Capability-Matrix, Positionierung, SWOT, Fokusseiten</td></tr>
+      <tr><td>Ergebnis</td><td>immer, offene Punkte gekennzeichnet</td><td>immer, offene Punkte gekennzeichnet</td></tr>
       <tr><td>Ausgabe</td><td>Word oder PDF, 2–3 Seiten</td><td>interaktive HTML (bestehende Vorlage) und PDF</td></tr>
     </tbody>
   </table>
@@ -404,7 +411,7 @@ a { color: var(--accent); }
         <li class="pro">Einfacher Flow</li>
         <li class="con">Parallel schreibende Agenten überschreiben sich gegenseitig</li>
         <li class="con">Jeder Agent bekommt schnell das ganze Dossier, teurer und unschärfer</li>
-        <li class="con">Ein Formatfehler blockiert den ganzen Lauf</li>
+        <li class="con">Ein Formatfehler gefährdet den ganzen Lauf</li>
       </ul>
     </div>
     <div class="card rec">
@@ -443,9 +450,9 @@ a { color: var(--accent); }
   <h2>Umsetzung Stück für Stück</h2>
   <ol class="steps">
     <li><b>Stufe 0 · Voraussetzungen</b><span>Power-Platform-Umgebung, Copilot Credits mit Budgetgrenze, Anthropic-Modelle und Websuche durch die Administration freigeben, SharePoint-Site mit Auftragsliste und Bibliothek „Läufe“.</span><span class="ok">Fertig, wenn ein Test-Agent mit Claude-Modell im Teams-Chat antwortet.</span></li>
-    <li><b>Stufe 1 · Durchstich Kurzbriefing</b><span>Front-Agent, Auftragsliste, Agent Flow mit Zweig „Kurz“, Recherche-Agent, Prüf-Agent, Kurzfassung als Word-Datei.</span><span class="ok">Fertig, wenn ein echter Lauf durchläuft, jede Aussage eine URL trägt und ein absichtlich falscher Fakt am Prüftor hängen bleibt.</span></li>
+    <li><b>Stufe 1 · Durchstich Kurzbriefing</b><span>Front-Agent, Auftragsliste, Agent Flow mit Zweig „Kurz“, Recherche-Agent, Prüf-Agent, Kurzfassung als Word-Datei.</span><span class="ok">Fertig, wenn ein echter Lauf durchläuft, jede Aussage eine URL trägt und ein absichtlich falscher Fakt einen Prüfvermerk bekommt, ohne dass der Lauf stoppt.</span></li>
     <li><b>Stufe 2 · Quellen richtig lesen</b><span>Tool „Quelle abrufen“ als Custom Connector auf Basis des vorhandenen Quellen-Caches: HTML und PDF, Seitenangabe, Abrufdatum.</span><span class="ok">Fertig, wenn ein Geschäftsbericht mit Seitenangabe belegt wird.</span></li>
-    <li><b>Stufe 3 · Vollbriefing Fakten</b><span>Recherche-Tiefe-Agent, Zweig „Voll“ mit vier Modulen, Schleife je Fokusthema, Prüfung je Modul, Korrekturschleife mit höchstens 2 Runden.</span><span class="ok">Fertig, wenn zwei Fokusthemen getrennte Abschnitte liefern und eine Korrektur nur das betroffene Modul neu startet.</span></li>
+    <li><b>Stufe 3 · Vollbriefing Fakten</b><span>Recherche-Tiefe-Agent, Zweig „Voll“ mit vier Modulen, Schleife je Fokusthema, Prüfung je Modul, Korrekturschleife mit höchstens 2 Runden.</span><span class="ok">Fertig, wenn zwei Fokusthemen getrennte Abschnitte liefern, eine Korrektur nur das betroffene Modul neu startet und ein ausgefallenes Modul als Datenlücke erscheint.</span></li>
     <li><b>Stufe 4 · Bewertung</b><span>Bewertungs-Agent für Positionierung und SWOT, Schlussprüfung.</span><span class="ok">Fertig, wenn jede Bewertung auf geprüfte Fakten verweist.</span></li>
     <li><b>Stufe 5 · Ausgabe</b><span>Tool „Briefing rendern“ mit der bestehenden HTML-Vorlage, zusätzlich PDF, Ablage in SharePoint.</span><span class="ok">Fertig, wenn das Ergebnis der heutigen HTML entspricht und in SharePoint geöffnet werden kann.</span></li>
     <li><b>Stufe 6 · Freigabe für alle</b><span>Als Lösung von Test nach Produktion übertragen, Veröffentlichung in Teams, Verbrauch beobachten, Kurzanleitung.</span><span class="ok">Fertig nach einem Pilot mit drei Nutzern und drei Firmen.</span></li>
@@ -472,6 +479,7 @@ Ziel: Version B für Microsoft Copilot Studio, einfach und modular, Schritt für
 Rahmen:
 - 5 Connected Agents: Front-Agent, Recherche (Sonnet 5.5), Recherche Tiefe (Opus 5.5), Prüfung (Sonnet 5.5, ohne Chatverlauf), Bewertung (Opus 5.5).
 - Ein Agent Flow „Briefing-Lauf“ steuert Reihenfolge, Schleife je Fokusthema, Prüftore und höchstens 2 Korrekturrunden.
+- Der Lauf blockiert nie: Nicht bestätigte Aussagen bekommen einen Prüfvermerk, werden nicht für Summary/Bewertung genutzt und erscheinen unter „Offene Punkte“.
 - Ein Dossier je Lauf in SharePoint; Agenten liefern Abschnitte zurück, nur der Flow schreibt.
 - Tools per Custom Connector: „Quelle abrufen“ (source-cache.py) und „Briefing rendern“ (render-briefing.py).
 - Zwei Zweige: Kurzbriefing und Vollbriefing.
