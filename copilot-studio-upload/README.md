@@ -5,6 +5,7 @@ Skill-Pakete und der Schaltplan. Sonst wird nichts installiert.
 
 | Inhalt | Zweck |
 |---|---|
+| `dateifluss.png` | Flussdiagramm: welcher Agent welche Datei an welchen Agenten gibt |
 | `schaltplan.png` | Reihenfolge der 21 Aufrufe mit allen Ein- und Ausgabedateien und den Prüftoren |
 | `agenten/` | je Agent: Einstellungen, Anschlüsse und Anweisungstext zum Einfügen |
 | `skills/` | je Agent ein Skill-Paket (`.zip`) zum Hochladen |

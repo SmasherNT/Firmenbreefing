@@ -105,6 +105,9 @@ def main():
                             upload / "agenten" / (baustein["ordner"] + ".md"))
         plan = QUELLE / "zielbild" / "schaltplan.png"
         shutil.copyfile(plan if plan.exists() else QUELLE / "schaltplan.png", upload / "schaltplan.png")
+        fluss = QUELLE / "zielbild" / "dateifluss.png"
+        if fluss.exists():
+            shutil.copyfile(fluss, upload / "dateifluss.png")
     print(json.dumps(dict(pakete=ergebnis, fehler=fehler), ensure_ascii=False, indent=2))
     return 1 if fehler else 0
 

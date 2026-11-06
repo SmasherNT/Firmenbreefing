@@ -1,0 +1,115 @@
+// Dateifluss der vollständigen Variante: wer gibt welche Dateien an wen.
+// Erzeugen (aus dem Repository-Stamm):
+//   dot -Tpng -Gdpi=170 copilot-studio/zielbild/dateifluss.dot -o copilot-studio/zielbild/dateifluss.png
+digraph Dateifluss {
+  graph [rankdir=TB, compound=true, newrank=true, nodesep=0.45, ranksep=0.7, pad=0.4,
+         fontname="DejaVu Sans", fontsize=22, labelloc=t, bgcolor="white",
+         label=<<b>Firmenbriefing · Dateifluss der vollständigen Variante</b><br/><font point-size="13" color="#56626e">Pfeile: Datei geht von Agent zu Agent · alle Dateien liegen im SharePoint-Lauf-Ordner · orange: Rücklauf bei „nicht bestanden“</font>>];
+  node  [fontname="DejaVu Sans", fontsize=13, shape=box, style="rounded,filled", penwidth=1.6, margin="0.18,0.1"];
+  edge  [fontname="DejaVu Sans", fontsize=10.5, fontcolor="#0b5d7a", color="#17212b", penwidth=1.2, arrowsize=0.8];
+
+  // Stile
+  // Denk-Agent: blau · Werkzeug-Agent: grau · Prüftor: Raute
+  nutzer  [label="Du\n(Lauf-Ordner anlegen)", shape=box, style="rounded", color="#17212b"];
+  ergebnis [label="briefing.html\nLink an Nutzer", shape=box, style="rounded,bold", color="#17212b"];
+
+  A01 [label=<<b>A01 Auftrag</b><br/><font point-size="10">Opus 5.5</font>>, fillcolor="#e2eff4", color="#0b5d7a"];
+
+  subgraph cluster_fakten {
+    label=<<b>Phase 1 · Fakten</b> <font point-size="11">(parallel)</font>>; fontsize=14; fontcolor="#0b5d7a";
+    labeljust=l; style="rounded,dashed"; color="#0b5d7a";
+    node [fillcolor="#e2eff4", color="#0b5d7a"];
+    A02 [label=<<b>A02 Kontext &amp; Person</b><br/><font point-size="10">Sonnet 5.5</font>>];
+    A03 [label=<<b>A03 Portfolio</b><br/><font point-size="10">Sonnet 5.5</font>>];
+    A04 [label=<<b>A04 Cluster</b><br/><font point-size="10">Opus 5.5</font>>];
+    A05 [label=<<b>A05 Markt</b><br/><font point-size="10">Opus 5.5</font>>];
+    A06 [label=<<b>A06 Fokusthema</b><br/><font point-size="10">Sonnet 5.5 · je Thema</font>>];
+  }
+
+  subgraph cluster_basis {
+    label=<<b>Prüftor 1 · Quellenprüfung der Fakten</b>>; fontsize=14; fontcolor="#17212b";
+    labeljust=l; style="rounded,dashed"; color="#8a96a3";
+    W1b [label=<<b>W1 Prüfpaket</b><br/><font point-size="10">phase: basis</font>>, fillcolor="#eceff2", color="#17212b"];
+    TA  [label="Prüftor A\nFormat ok?", shape=diamond, fillcolor="#fbf0dc", color="#9a6412", fontsize=11];
+    A07b [label=<<b>A07 Dokumentprüfung</b><br/><font point-size="10">je Job</font>>, fillcolor="#e2eff4", color="#0b5d7a"];
+    W2b [label=<<b>W2 Befunde bündeln</b><br/><font point-size="10">phase: basis</font>>, fillcolor="#eceff2", color="#17212b"];
+    A08b [label=<<b>A08 Leitprüfung</b><br/><font point-size="10">phase: basis</font>>, fillcolor="#e2eff4", color="#0b5d7a"];
+    W3b [label=<<b>W3 Freigabe</b><br/><font point-size="10">phase: basis</font>>, fillcolor="#eceff2", color="#17212b"];
+    T1  [label="Prüftor 1\nbestanden?", shape=diamond, fillcolor="#fbf0dc", color="#9a6412", fontsize=11];
+  }
+
+  subgraph cluster_bewertung {
+    label=<<b>Phase 2 · Bewertung</b>>; fontsize=14; fontcolor="#0b5d7a";
+    labeljust=l; style="rounded,dashed"; color="#0b5d7a";
+    W4a [label=<<b>W4 Bewertungskontext</b><br/><font point-size="10">schritt: positioning</font>>, fillcolor="#eceff2", color="#17212b"];
+    A09 [label=<<b>A09 Positionierung</b><br/><font point-size="10">Opus 5.5</font>>, fillcolor="#e2eff4", color="#0b5d7a"];
+    W4b [label=<<b>W4 Bewertungskontext</b><br/><font point-size="10">schritt: swot</font>>, fillcolor="#eceff2", color="#17212b"];
+    TB  [label="Prüftor B\nok?", shape=diamond, fillcolor="#fbf0dc", color="#9a6412", fontsize=11];
+    A10 [label=<<b>A10 SWOT</b><br/><font point-size="10">Sonnet 5.5</font>>, fillcolor="#e2eff4", color="#0b5d7a"];
+  }
+
+  subgraph cluster_final {
+    label=<<b>Prüftor 2 · Schlussprüfung der Bewertung</b>>; fontsize=14; fontcolor="#17212b";
+    labeljust=l; style="rounded,dashed"; color="#8a96a3";
+    W1f [label=<<b>W1 Prüfpaket</b><br/><font point-size="10">phase: final</font>>, fillcolor="#eceff2", color="#17212b"];
+    TC  [label="Prüftor C\nFormat ok?", shape=diamond, fillcolor="#fbf0dc", color="#9a6412", fontsize=11];
+    A07f [label=<<b>A07 Dokumentprüfung</b><br/><font point-size="10">je Job, oft keiner</font>>, fillcolor="#e2eff4", color="#0b5d7a"];
+    W2f [label=<<b>W2 Befunde bündeln</b><br/><font point-size="10">phase: final</font>>, fillcolor="#eceff2", color="#17212b"];
+    A08f [label=<<b>A08 Leitprüfung</b><br/><font point-size="10">phase: final</font>>, fillcolor="#e2eff4", color="#0b5d7a"];
+    W3f [label=<<b>W3 Freigabe</b><br/><font point-size="10">phase: final</font>>, fillcolor="#eceff2", color="#17212b"];
+    T2  [label="Prüftor 2\nbestanden?", shape=diamond, fillcolor="#fbf0dc", color="#9a6412", fontsize=11];
+  }
+
+  W5 [label=<<b>W5 Briefing rendern</b>>, fillcolor="#eceff2", color="#17212b"];
+
+  hinweis [shape=note, style="filled", fillcolor="#f4f6f8", color="#8a96a3", fontsize=10.5, fontcolor="#17212b",
+           label="Zusätzlich gelesen (ohne eigenen Pfeil):\l· facts-run.json: alle Agenten\l· comparison-plan.json: W1, W4, W5 (A05 siehe Pfeil)\l· review-packet.json, _pruefstand/: W2, W3, W4, W5\l· review-basis.md: W1 final, W5\l· positioning*.json, swot*.json: W2 final, W5\l\lKurzbriefing: A01 → A02, A03 → Prüftor 1 → W5\l"];
+
+  // Phase 1
+  nutzer -> A01 [label="anfrage.txt"];
+  { rank=same; A02; A03; A04; A05; A06; }
+  A01 -> A02 [label="auftrag.md\nfacts-run.json"];
+  A01 -> A03 [label="auftrag.md\nfacts-run.json"];
+  A01 -> A04 [label="auftrag.md\nfacts-run.json"];
+  A01 -> A05 [label="auftrag.md\nfacts-run.json\ncomparison-plan.json"];
+  A01 -> A06 [label="auftrag.md\nfacts-run.json"];
+  A02 -> W1b [label="context-facts.json"];
+  A03 -> W1b [label="portfolio-facts.json"];
+  A04 -> W1b [label="cluster-facts.json"];
+  A05 -> W1b [label="market-facts.json"];
+  A06 -> W1b [label="focus-<id>-facts.json"];
+
+  // Prüftor 1
+  W1b -> TA  [label="pruefergebnis.json"];
+  TA  -> A07b [label="ja: pruefjob-<n>.json"];
+  A07b -> W2b [label="befund-<n>.json"];
+  W2b -> A08b [label="leitpruefung-eingabe.json"];
+  A08b -> W3b [label="leitentscheid.json"];
+  W3b -> T1  [label="pruefergebnis.json"];
+  TA -> A02  [lhead=cluster_fakten, label="nein: pruefergebnis.json\n(rueckgabe)", color="#c2410c", fontcolor="#c2410c", style=dashed, constraint=false];
+  T1 -> A06  [lhead=cluster_fakten, label="nein: pruefergebnis.json\n(rueckgabe an zuständigen Agenten)", color="#c2410c", fontcolor="#c2410c", style=dashed, constraint=false];
+
+  // Phase 2
+  T1  -> W4a [label="ja: review-basis.md"];
+  W4a -> A09 [label="positioning-context.json"];
+  A09 -> W4b [label="positioning.json"];
+  W4b -> TB  [label="pruefergebnis.json"];
+  TB  -> A10 [label="ja: swot-context.json"];
+  TB  -> A09 [label="nein", color="#c2410c", fontcolor="#c2410c", style=dashed, constraint=false];
+
+  // Prüftor 2
+  A10 -> W1f [label="swot.json"];
+  W1f -> TC  [label="pruefergebnis.json"];
+  TC  -> A07f [label="ja: pruefjob-<n>.json"];
+  A07f -> W2f [label="befund-<n>.json"];
+  W2f -> A08f [label="leitpruefung-eingabe.json"];
+  A08f -> W3f [label="leitentscheid.json"];
+  W3f -> T2  [label="pruefergebnis.json"];
+  TC -> A10 [label="nein", color="#c2410c", fontcolor="#c2410c", style=dashed, constraint=false];
+  T2 -> A09 [label="nein: pruefergebnis.json\n(an A09 bzw. A10)", color="#c2410c", fontcolor="#c2410c", style=dashed, constraint=false];
+
+  // Ausgabe
+  T2 -> W5 [label="ja: review-final.md"];
+  W5 -> ergebnis [label="briefing.html"];
+  { rank=same; W5; hinweis; }
+}

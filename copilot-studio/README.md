@@ -13,6 +13,8 @@ in diesen Ordner kopiert.
 **Schaltplan mit allen Ein- und Ausgabedateien:**
 [`zielbild/schaltplan.html`](zielbild/schaltplan.html), als Bild
 [`schaltplan.png`](zielbild/schaltplan.png).
+**Dateifluss als Flussdiagramm (wer gibt welche Datei an wen):**
+[`zielbild/dateifluss.png`](zielbild/dateifluss.png), Quelle `zielbild/dateifluss.dot`.
 **Zielbild mit Diagrammen:** [`zielbild/zielbild.html`](zielbild/zielbild.html),
 als Bilder [`ablauf-vollbriefing.png`](zielbild/ablauf-vollbriefing.png) und
 [`ablauf-kurzbriefing.png`](zielbild/ablauf-kurzbriefing.png).
