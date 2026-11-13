@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<title>Firmenbriefing in Copilot Studio – Einfacher Start</title>
+<style>
+:root{--ink:#1f2937;--muted:#6b7280;--orch:#1d4ed8;--orchbg:#dbeafe;--fact:#047857;--factbg:#d1fae5;--int:#7c3aed;--intbg:#ede9fe;--tool:#0e7490;--toolbg:#cffafe;--store:#475569;--storebg:#e2e8f0;--ext:#9f1239;--extbg:#ffe4e6;--warn:#dc2626}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;font-family:"DejaVu Sans",Arial,sans-serif;color:var(--ink);font-size:14px}
+#canvas{position:relative;width:1560px;padding:30px 96px 28px 36px}
+h1{margin:0 0 4px;font-size:26px}
+.sub{color:var(--muted);font-size:14px;margin-bottom:26px}
+.band{position:relative;padding:0 0 0 150px;margin-bottom:70px;min-height:120px}
+.band>.bt{position:absolute;left:0;top:0;width:135px;font-weight:bold;font-size:13px;color:#334155;line-height:1.3;border-left:4px solid #cbd5e1;padding-left:8px}
+.band>.bt small{display:block;font-weight:normal;color:var(--muted);margin-top:4px;font-size:11.5px}
+.row{display:flex;gap:18px;align-items:stretch}
+.box{border:2px solid #9ca3af;border-radius:10px;padding:11px 13px;background:#fff;position:relative}
+.box .t{font-weight:bold;font-size:15px;margin-bottom:5px}
+.box .d{font-size:12.5px;color:#374151;line-height:1.4}
+.box ul{margin:4px 0 0;padding-left:16px}
+.orch{border-color:var(--orch);background:var(--orchbg)}
+.fact{border-color:var(--fact);background:var(--factbg)}
+.int{border-color:var(--int);background:var(--intbg)}
+.tool{border-color:var(--tool);background:var(--toolbg)}
+.store{border-color:var(--store);background:var(--storebg)}
+.ext{border-color:var(--ext);background:var(--extbg)}
+.user{border-color:#111827}
+.opt{border-style:dashed;background:#fff}
+.step{position:absolute;top:-14px;left:12px;background:var(--orch);color:#fff;font-weight:bold;border-radius:12px;padding:1px 10px;font-size:12.5px}
+.warn{color:var(--warn);font-weight:bold}
+.mono{font-family:"DejaVu Sans Mono",monospace;font-size:12px}
+#arrows{position:absolute;left:0;top:0;pointer-events:none}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;align-items:center;margin-top:-10px}
+.legend .sw{display:inline-block;width:16px;height:12px;border:2px solid;border-radius:3px;vertical-align:-2px;margin-right:4px}
+</style></head>
+<body><div id="canvas">
+<h1>Firmenbriefing in Copilot Studio – Einfacher Start</h1>
+<div class="sub">Ein Orchestrator, fünf Rollen-Agenten, drei Werkzeuge, ein SharePoint-Ordner je Lauf. Ohne Basis- und Schlussreview, ohne Trigger-Kette, Cache und Modul-Orchestrator. Alles davon ist später ergänzbar. Stand 13.11.2026.</div>
+
+<div class="band" id="b1"><div class="bt">1 · Einstieg<small>Chat in Teams oder M365 Copilot</small></div>
+ <div class="row">
+  <div class="box user" id="user" style="width:300px"><div class="t">Nutzer</div><div class="d">Schreibt: „Briefing zu [Firma], Fokus: [Thema], Gesprächspartner: [Person]“.<br>Erhält am Ende den Link auf die fertige HTML (Rückpfeil).<br><br>Für die Modulvariante genügt: „Nur Portfolio zu [Firma]“.</div></div>
+  <div class="box orch" id="orch" style="flex:1"><div class="t">Orchestrator-Agent „Firmenbriefing“</div><div class="d">Instructions: Auftragswahl, Zuständigkeit, Quellenregeln (Kern aus CLAUDE.md). Antwortet als einziger dem Nutzer.
+   <ul><li><b>Schritt 1</b> run_id vergeben, Ordner anlegen, auftrag.json schreiben</li>
+   <li><b>Schritt 2</b> Faktenrollen nacheinander aufrufen; bei „nur Portfolio“ nur diese eine</li>
+   <li><b>Schritt 3</b> Interpretation aufrufen (entfällt bei Modulauftrag)</li>
+   <li><b>Schritt 4</b> HTML rendern lassen, Link zurückgeben</li></ul>
+   Modell: im Mandanten eingestellter Standard. Konversationsverlauf wird nicht an die Rollen weitergegeben.</div></div>
+ </div>
+</div>
+
+<div class="band" id="b2"><div class="bt">2 · Rollen<small>Connected Agents, eigener Kontext, eigene Instructions und Wissensdateien</small></div>
+ <div class="row">
+  <div class="box fact" id="aCtx" style="flex:1"><div class="step">2a</div><div class="t">Kontext</div><div class="d">company-context-analyst<br>Firmenbasis, Timeline, berufliches Profil<br>→ <span class="mono">context-facts.json</span></div></div>
+  <div class="box fact" id="aPort" style="flex:1"><div class="step">2b</div><div class="t">Portfolio</div><div class="d">portfolio-analyst<br>Produkte, Eigenschaften, belegter Einsatz<br>→ <span class="mono">portfolio-facts.json</span></div></div>
+  <div class="box fact" id="aClu" style="flex:1"><div class="step">2c</div><div class="t">Cluster</div><div class="d">cluster-analyst<br>Eigentum, Partner, Kunden, Netzwerk<br>→ <span class="mono">cluster-facts.json</span></div></div>
+  <div class="box fact" id="aMkt" style="flex:1"><div class="step">2d</div><div class="t">Markt</div><div class="d">market-facts-analyst<br>Länder, Markt, Wettbewerb<br>→ <span class="mono">market-facts.json</span></div></div>
+  <div class="box fact opt" id="aFoc" style="flex:1;border-color:var(--fact)"><div class="step">2e</div><div class="t">Fokusthema ×n</div><div class="d">focus-analyst, ein Aufruf je Thema, optional<br>→ <span class="mono">focus-&lt;id&gt;.json</span></div></div>
+  <div class="box int" id="aInt" style="flex:1.15"><div class="step">3</div><div class="t">Interpretation</div><div class="d">positioning → swot in einem Agenten, nacheinander, nur aus den Fakten-JSON, keine Websuche<br>→ <span class="mono">positioning.json, swot.json</span></div></div>
+ </div>
+</div>
+
+<div class="band" id="b3"><div class="bt">3 · Werkzeuge<small>je Agent nur das Nötige</small></div>
+ <div class="row">
+  <div class="box tool" id="tWeb" style="flex:1"><div class="t">Websuche</div><div class="d">eingebaut, Bing-Grounding; nur für die Faktenrollen aktiv.<br><span class="warn">⚠ Liefert Treffer, nicht sicher den Volltext oder PDFs. Erste Hostprobe.</span></div></div>
+  <div class="box tool" id="tFile" style="flex:1"><div class="t">Agent Flow „Datei schreiben / lesen“</div><div class="d">zwei Flows mit SharePoint-Aktionen. Eingabe: run_id, Dateiname, Inhalt. Jede Rolle schreibt genau ihre Datei.</div></div>
+  <div class="box tool" id="tRender" style="flex:1"><div class="t">Prompt-Tool „HTML rendern“</div><div class="d">HTML-Vorlage als Wissen + JSON-Dateien → <span class="mono">briefing.html</span><br><span class="warn">⚠ LLM-gefüllte Vorlage, kein Python-Renderer.</span></div></div>
+ </div>
+</div>
+
+<div class="band" id="b4" style="margin-bottom:60px"><div class="bt">4 · Ablage<small>alles außerhalb des Chats</small></div>
+ <div class="row">
+  <div class="box ext" id="xWeb" style="width:300px"><div class="t">Öffentliche Quellen</div><div class="d">Unternehmensseiten, Geschäftsberichte, Fachmedien, Register.</div></div>
+  <div class="box store" id="sRuns" style="flex:1"><div class="t">SharePoint-Bibliothek „Briefing-Runs“ · Ordner je run_id</div><div class="d row" style="gap:20px">
+   <div><b>input/</b><br><span class="mono">auftrag.json</span></div>
+   <div><b>work/</b><br><span class="mono">context-facts.json · portfolio-facts.json · cluster-facts.json · market-facts.json · focus-&lt;id&gt;.json · positioning.json · swot.json</span></div>
+   <div><b>output/</b><br><span class="mono">briefing.html</span></div></div></div>
+  <div class="box store" id="sRef" style="width:330px"><div class="t">SharePoint-Bibliothek „Briefing-Referenzen“</div><div class="d">Wissensdateien je Agent (Datenvertrag, Fachregeln) und die HTML-Vorlagen, aus dem Repo übernommen.</div></div>
+ </div>
+</div>
+
+<div class="band" style="margin-bottom:40px;min-height:0"><div class="bt" style="color:var(--muted)">Später ergänzbar</div>
+ <div class="box opt" id="later" style="border-color:#9ca3af;padding:8px 13px"><div class="d" style="color:#4b5563">Basis- und Schlussreview mit zwei Prüfagenten (source-document-reviewer, source-reviewer) · Topic „Quelle öffnen“ für Volltext und PDFs · Quellen-Cache · Trigger-Kette für Läufe über 100 s · eigener Modul-Orchestrator · Azure Function mit echtem Python-Renderer und Druckprüfung</div></div>
+</div>
+<div class="legend"><b>Legende:</b>
+ <span><i class="sw" style="border-color:var(--orch);background:var(--orchbg)"></i>Orchestrator</span>
+ <span><i class="sw" style="border-color:var(--fact);background:var(--factbg)"></i>Faktenrolle</span>
+ <span><i class="sw" style="border-color:var(--int);background:var(--intbg)"></i>Interpretation</span>
+ <span><i class="sw" style="border-color:var(--tool);background:var(--toolbg)"></i>Werkzeug</span>
+ <span><i class="sw" style="border-color:var(--store);background:var(--storebg)"></i>SharePoint</span>
+ <span><i class="sw" style="border-color:#9ca3af;border-style:dashed"></i>optional / später</span>
+ <span style="color:var(--orch)">—— Aufruf</span><span style="color:var(--tool)">—— nutzt</span><span style="color:var(--store)">—— Dateien</span>
+ <span class="warn">⚠ im Mandanten zu belegen</span></div>
+
+<svg id="arrows"></svg></div>
+<script>
+const C=document.getElementById('canvas'),svg=document.getElementById('arrows');
+function rect(id){const r=document.getElementById(id).getBoundingClientRect(),c=C.getBoundingClientRect();return{x:r.left-c.left,y:r.top-c.top,w:r.width,h:r.height}}
+function pt(r,s,f){switch(s){case't':return[r.x+r.w*f,r.y];case'b':return[r.x+r.w*f,r.y+r.h];case'l':return[r.x,r.y+r.h*f];case'r':return[r.x+r.w,r.y+r.h*f]}}
+const col={ctl:'#1d4ed8',tool:'#0e7490',file:'#475569',ext:'#9f1239'};let defs='',paths='';
+for(const k in col)defs+=`<marker id="m-${k}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="${col[k]}"/></marker>`;
+function arrow(a,sa,fa,b,sb,fb,kind,dash,label,lf){const A=pt(rect(a),sa,fa),B=pt(rect(b),sb,fb),dx=B[0]-A[0],dy=B[1]-A[1];
+ const c1=(sa==='b'||sa==='t')?[A[0],A[1]+dy*.5]:[A[0]+dx*.5,A[1]],c2=(sb==='b'||sb==='t')?[B[0],B[1]-dy*.5]:[B[0]-dx*.5,B[1]];
+ paths+=`<path d="M${A[0]},${A[1]} C${c1[0]},${c1[1]} ${c2[0]},${c2[1]} ${B[0]},${B[1]}" fill="none" stroke="${col[kind]}" stroke-width="2.2" ${dash?'stroke-dasharray="7 5"':''} marker-end="url(#m-${kind})"/>`;
+ if(label){const t=lf||.5,lx=A[0]+dx*t,ly=A[1]+dy*t;paths+=`<rect x="${lx-label.length*3.4-5}" y="${ly-9}" width="${label.length*6.8+10}" height="17" rx="4" fill="#fff" stroke="${col[kind]}" stroke-width=".8"/><text x="${lx}" y="${ly+4}" font-size="11.5" text-anchor="middle" fill="${col[kind]}" font-family="DejaVu Sans">${label}</text>`}}
+arrow('user','r',0.35,'orch','l',0.35,'ctl',false,'Auftrag');
+arrow('orch','l',0.8,'user','r',0.8,'ctl',false,null);
+for(const [id,f] of [['aCtx',0.12],['aPort',0.3],['aClu',0.48],['aMkt',0.63],['aFoc',0.78]])arrow('orch','b',f,id,'t',0.5,'ctl',id==='aFoc',null);
+arrow('orch','b',0.94,'aInt','t',0.5,'ctl',false,'Schritt 3 nach allen Fakten',0.55);
+arrow('aPort','b',0.5,'tWeb','t',0.5,'tool',false,'recherchieren (2a–2e)',0.5);
+arrow('aClu','b',0.5,'tFile','t',0.35,'tool',false,'Fakten-JSON schreiben',0.45);
+arrow('aInt','b',0.4,'tFile','t',0.7,'tool',false,'Fakten lesen, I/S schreiben',0.4);
+{const A=pt(rect('orch'),'r',0.6),B=pt(rect('tRender'),'r',0.5),X=A[0]+70;
+ paths+=`<path d="M${A[0]},${A[1]} H${X-12} Q${X},${A[1]} ${X},${A[1]+12} V${B[1]-12} Q${X},${B[1]} ${X-12},${B[1]} H${B[0]+2}" fill="none" stroke="${col.tool}" stroke-width="2.2" marker-end="url(#m-tool)"/>`;
+ const ly=(A[1]+B[1])/2;paths+=`<rect x="${X-34}" y="${ly-9}" width="68" height="17" rx="4" fill="#fff" stroke="${col.tool}" stroke-width=".8"/><text x="${X}" y="${ly+4}" font-size="11.5" text-anchor="middle" fill="${col.tool}" font-family="DejaVu Sans">Schritt 4</text>`;}
+arrow('tWeb','b',0.5,'xWeb','t',0.5,'ext',false,'Bing');
+arrow('tFile','b',0.5,'sRuns','t',0.4,'file',false,'input/ work/');
+arrow('tRender','b',0.5,'sRuns','t',0.8,'file',false,'output/briefing.html');
+arrow('sRef','t',0.5,'tRender','b',0.85,'file',false,'Vorlage + Wissen',0.5);
+svg.setAttribute('width',C.scrollWidth);svg.setAttribute('height',C.scrollHeight);svg.innerHTML=`<defs>${defs}</defs>${paths}`;
+</script></body></html>

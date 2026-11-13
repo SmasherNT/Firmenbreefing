@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de"><head><meta charset="utf-8">
+<title>Firmenbriefing in Copilot Studio – Zielarchitektur</title>
+<style>
+:root{
+ --ink:#1f2937;--muted:#6b7280;--line:#9ca3af;
+ --orch:#1d4ed8;--orchbg:#dbeafe;
+ --fact:#047857;--factbg:#d1fae5;
+ --rev:#b45309;--revbg:#fef3c7;
+ --int:#7c3aed;--intbg:#ede9fe;
+ --tool:#0e7490;--toolbg:#cffafe;
+ --store:#475569;--storebg:#e2e8f0;
+ --ext:#9f1239;--extbg:#ffe4e6;
+ --repo:#374151;--repobg:#f3f4f6;
+ --warn:#dc2626;
+}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;font-family:"DejaVu Sans",Arial,sans-serif;color:var(--ink);font-size:13px}
+#canvas{position:relative;width:1900px;padding:28px 34px 30px;}
+h1{margin:0 0 4px;font-size:26px}
+.sub{color:var(--muted);font-size:13.5px;margin-bottom:18px}
+.band{position:relative;border:1px dashed #cbd5e1;border-radius:10px;padding:30px 16px 22px;margin-bottom:54px}
+.band .bsub{font-size:12px;color:var(--muted);margin:-14px 0 12px}
+.band>.bt{position:absolute;top:-11px;left:16px;background:#fff;padding:0 8px;font-weight:bold;font-size:14px;color:#334155;letter-spacing:.3px}
+.row{display:flex;gap:16px;align-items:stretch}
+.box{border:2px solid var(--line);border-radius:8px;padding:9px 11px;background:#fff;position:relative}
+.box .t{font-weight:bold;font-size:14px;margin-bottom:4px}
+.box .d{font-size:12px;color:#374151;line-height:1.35}
+.box .d li{margin:1px 0}
+.box ul{margin:4px 0 0;padding-left:15px}
+.tag{display:inline-block;font-size:10.5px;padding:1px 6px;border-radius:9px;background:#f1f5f9;color:#334155;margin:2px 3px 0 0;border:1px solid #e2e8f0}
+.orch{border-color:var(--orch);background:var(--orchbg)}
+.fact{border-color:var(--fact);background:var(--factbg)}
+.rev{border-color:var(--rev);background:var(--revbg)}
+.int{border-color:var(--int);background:var(--intbg)}
+.tool{border-color:var(--tool);background:var(--toolbg)}
+.store{border-color:var(--store);background:var(--storebg)}
+.ext{border-color:var(--ext);background:var(--extbg)}
+.repo{border-color:var(--repo);background:var(--repobg)}
+.user{border-color:#111827;background:#fff}
+.opt{border-style:dashed;background:#fff}
+.group{border:1.5px solid #94a3b8;border-radius:8px;padding:26px 10px 10px;position:relative;background:#fafafa}
+.group>.gt{position:absolute;top:-10px;left:10px;background:#fafafa;padding:0 6px;font-weight:bold;font-size:12.5px;color:#334155}
+.phase{flex:1;min-width:0}
+.phase .n{position:absolute;top:-13px;left:10px;background:var(--orch);color:#fff;font-weight:bold;border-radius:12px;padding:1px 9px;font-size:12px}
+.warn{color:var(--warn);font-weight:bold}
+.small{font-size:11px;color:var(--muted)}
+#arrows{position:absolute;left:0;top:0;pointer-events:none}
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;align-items:center;margin-top:4px}
+.legend .sw{display:inline-block;width:16px;height:12px;border:2px solid;border-radius:3px;vertical-align:-2px;margin-right:4px}
+.mono{font-family:"DejaVu Sans Mono",monospace;font-size:11.5px}
+</style></head>
+<body><div id="canvas">
+<h1>Firmenbriefing in Microsoft Copilot Studio – Zielarchitektur (Stufe 1, ohne eigenen Code)</h1>
+<div class="sub">Orchestrator + zehn Rollen als Connected Agents, SharePoint als Laufordner, Agent Flows und Ereignistrigger für asynchrone Phasen. Gestrichelt: optional oder im Mandanten erst zu belegen. Stand 13.11.2026.</div>
+
+<!-- Band A -->
+<div class="band" id="bandA"><div class="bt">A · EINSTIEG, ORCHESTRATOREN, PFLEGE</div>
+ <div class="row">
+  <div class="box user" id="user" style="width:230px"><div class="t">Nutzer</div><div class="d">Teams-Chat oder Microsoft 365 Copilot.<br>Schreibt: Firma, Themen in Reihenfolge, optional berufliche Person.<br>Erhält am Ende Teams-Nachricht mit Link auf briefing.html.</div></div>
+  <div class="box orch" id="orchFull" style="width:400px"><div class="t">Orchestrator-Agent „Firmenbriefing“ (Vollbriefing)</div><div class="d">Instructions = Kern aus CLAUDE.md: Auftragswahl, Zuständigkeit, Quellen-/Freigaberegeln.<ul><li>erzeugt run_id, Ordner, auftrag.json, manifest.json</li><li>ruft Rollen seriell auf, teilt Quellenbündel in ≤ 3 Prüfjobs</li><li>prüft Freigabetore, max. 2 Korrekturrunden, sonst Stopp</li><li>antwortet als einziger dem Nutzer</li></ul><span class="tag">Websuche aus</span><span class="tag">Trigger: Datei erstellt</span><span class="tag">Modell: Mandantenstandard</span></div></div>
+  <div class="box orch" id="orchMod" style="width:330px"><div class="t">Orchestrator-Agent „Firmenbriefing-Modul“</div><div class="d">Modulvariante und Pilot. Auftrag → module-contractor plant → genau ein Faktenmodul (z. B. Portfolio) → Dokumentprüfung → source-reviewer → Modul-HTML.<br>Keine SWOT, keine Positionierung. Nutzt dieselben Connected Agents.</div></div>
+  <div class="box repo" id="repo" style="width:410px"><div class="t">GitHub-Repo · copilot-studio/</div><div class="d"><b>Build-Skript</b> erzeugt je Agent: Instruction-Datei (Rolle + Skill + Pflichtregeln, auf Zeichenlimit gekürzt) und Liste der Wissensdateien.<br><b>Solution-Export</b> der Agenten/Flows zurück ins Repo (ALM, Phase 4).<br>Protokollvorlagen: hostproben.md, abnahme.md.<br><span class="warn">⚠ Instruction-Limit im Mandanten prüfen</span></div></div>
+  <div class="box ext" id="admin" style="width:300px"><div class="t">Admin / Governance</div><div class="d">Maker-Lizenz reicht für Agenten, Flows, SharePoint-Konnektor.<br>Admin nötig für: DLP-Freigabe HTTP-Knoten, Ereignistrigger, Websuche, Veröffentlichung an die Firma, ggf. Code Interpreter (nicht genutzt).</div></div>
+ </div>
+</div>
+
+<!-- Band B -->
+<div class="band" id="bandB"><div class="bt">B · ASYNCHRONER LAUF – Phasenkette je run_id</div>
+ <div class="bsub">Jede Phase startet über Ereignistrigger „Datei erstellt“ in work/, Zustand in work/status.json. Flows laufen nach „Respond to Copilot“ bis 30 Tage; synchron bricht nach 100 s ab. Kein Zwischen-Freigabeschritt durch Menschen.</div>
+ <div class="row" style="padding-top:8px">
+  <div class="box orch phase" id="p1"><div class="n">1</div><div class="t">Auftrag</div><div class="d">Defaults ergänzen, Fokusthemen normalisieren (topic_market).<br>→ input/auftrag.json, work/manifest.json, work/status.json</div></div>
+  <div class="box fact phase" id="p2"><div class="n">2</div><div class="t">Faktenphase</div><div class="d">Seriell: context → portfolio → cluster → market, danach je Fokusthema ein focus-Aufruf.<br>Jede Rolle schreibt nur ihre Datei unter work/.</div></div>
+  <div class="box rev phase" id="p3"><div class="n">3</div><div class="t">Basisreview</div><div class="d">≤ 3 Dokumentprüfer-Jobs mit disjunkten Quellenbündeln, dann Leitprüfer.<br>→ work/review-basis.json<br>Materialfehler → Rückgabe an Rolle (max. 2 Runden)</div></div>
+  <div class="box int phase" id="p4"><div class="n">4</div><div class="t">Interpretation</div><div class="d">positioning (Capability Matrix, Reife, Präsenz, Netzwerkposition) → danach swot.<br>Keine Webrecherche dieser Rollen.</div></div>
+  <div class="box rev phase" id="p5"><div class="n">5</div><div class="t">Schlussreview</div><div class="d">source-reviewer prüft I-/S-Claims gegen geprüfte Fakten.<br>→ work/review-final.json<br>Blockiert finale Ausgabe bei offenen Fehlern.</div></div>
+  <div class="box tool phase" id="p6"><div class="n">6</div><div class="t">Ausgabe</div><div class="d">Prompt-Tool füllt HTML-Vorlage mit geprüften JSON.<br>→ output/briefing.html, output/abnahme.md (tatsächliche Prüfungen, beobachtete Modelle, Grenzen)<br>→ Teams-Nachricht an Nutzer</div></div>
+ </div>
+</div>
+
+<!-- Band C -->
+<div class="band" id="bandC"><div class="bt">C · CONNECTED AGENTS – zehn Rollen</div>
+ <div class="bsub">Je Rolle eigener Kontext, Konversationsverlauf AUS, eigene Instructions (aus dem Repo) und Wissensdateien (Bibliothek „Briefing-Referenzen“). Modell = im Mandanten eingestellter Standard, nur beobachtet protokollieren. Autoren und Prüfer nie im selben Kontext.</div>
+ <div class="row">
+  <div class="group" id="gFact" style="flex:5"><div class="gt">Faktenrollen (recherchieren, Websuche + Quelle öffnen)</div>
+   <div class="row">
+    <div class="box fact" id="aCtx" style="flex:1"><div class="t">company-context-analyst</div><div class="d">Firmenbasis, Timeline, berufliches Profil (T/H-Claims)<br>→ work/context-facts.json</div></div>
+    <div class="box fact" id="aPort" style="flex:1"><div class="t">portfolio-analyst</div><div class="d">Produkte, Eigenschaften, belegter Einsatzstatus (P-Claims)<br>→ work/portfolio-facts.json</div></div>
+    <div class="box fact" id="aClu" style="flex:1"><div class="t">cluster-analyst</div><div class="d">Eigentum, Partner, Kunden, Querverbindungen, Netzwerkdaten (C)<br>→ work/cluster-facts.json</div></div>
+    <div class="box fact" id="aMkt" style="flex:1"><div class="t">market-facts-analyst</div><div class="d">Länder, Markt, Wettbewerb nach Vergleichsplan (M)<br>→ work/market-facts.json</div></div>
+    <div class="box fact" id="aFoc" style="flex:1"><div class="t">focus-analyst ×n</div><div class="d">je Fokusthema ein Aufruf, neutrales Markt-Meetingbriefing (F_&lt;id&gt;)<br>→ work/focus-&lt;id&gt;.json</div></div>
+   </div>
+  </div>
+  <div class="group" id="gRev" style="flex:2"><div class="gt">Prüfrollen (unabhängig von Autoren)</div>
+   <div class="row">
+    <div class="box rev" id="aDoc" style="flex:1"><div class="t">source-document-reviewer</div><div class="d">genau ein Quellenbündel je Job, ≤ 3 Jobs seriell, öffnet Belege erneut<br>→ work/review-doc-&lt;n&gt;.json</div></div>
+    <div class="box rev" id="aSrc" style="flex:1"><div class="t">source-reviewer</div><div class="d">Leitprüfer: Abdeckung, Mehrfachbelege, Ableitungen; Basis- und Schlussreview<br>→ review-basis/-final.json</div></div>
+   </div>
+  </div>
+  <div class="group" id="gInt" style="flex:2"><div class="gt">Interpretationsrollen (keine Webrecherche)</div>
+   <div class="row">
+    <div class="box int" id="aPos" style="flex:1"><div class="t">positioning-analyst</div><div class="d">Capability Matrix, Produkt-/Industrieposition, regionale Präsenz (I)<br>→ work/positioning.json</div></div>
+    <div class="box int" id="aSwot" style="flex:1"><div class="t">swot-analyst</div><div class="d">drei belegte Punkte je Quadrant aus geprüften Fakten (S)<br>→ work/swot.json</div></div>
+   </div>
+  </div>
+  <div class="box orch" id="aMod" style="width:170px"><div class="t">module-contractor</div><div class="d">nur Modulvariante, vom Modul-Orchestrator aufgerufen: wählt 2a/2b/3, optional 4 und 7<br>→ work/plan.md</div></div>
+ </div>
+</div>
+
+<!-- Band D -->
+<div class="band" id="bandD"><div class="bt">D · GEMEINSAME WERKZEUGE</div>
+ <div class="bsub">Agent Flows, ein Topic und ein Prompt-Tool; jedem Agenten nur zugeordnet, soweit die Rolle sie braucht. Flow „Phase abschließen“ wird vom jeweiligen Orchestrator nach jedem Rollenaufruf genutzt.</div>
+ <div class="row">
+  <div class="box tool" id="tWeb" style="flex:1"><div class="t">Websuche</div><div class="d">Bing-Grounding, nur Faktenrollen und Prüfer. Liefert Treffer, nicht den Volltext.</div></div>
+  <div class="box tool" id="tFetch" style="flex:1"><div class="t">Topic „Quelle öffnen“</div><div class="d">HTTP-Request-Knoten GET → Seitentext als Variable, Timeout 30 s.<br><span class="warn">⚠ PDF-Lesen nicht belegt → Hostprobe A</span></div></div>
+  <div class="box tool" id="tCache" style="flex:1"><div class="t">Flow „Quelle cachen“</div><div class="d">legt geöffneten Text + URL/Datum/Abruf unter work/cache/ ab; Ersatz für source-cache.py</div></div>
+  <div class="box tool" id="tFile" style="flex:1"><div class="t">Flows „Datei lesen / schreiben / Ordner anlegen“</div><div class="d">SharePoint-Aktionen; Eingabe: run_id, Pfad, Inhalt (JSON ≤ 5 MB Payload)</div></div>
+  <div class="box tool" id="tStatus" style="flex:1"><div class="t">Flow „Phase abschließen“</div><div class="d">schreibt work/status.json und löst den Trigger der nächsten Phase aus; asynchron nach Respond</div></div>
+  <div class="box tool" id="tRender" style="flex:1"><div class="t">Prompt-Tool „HTML rendern“</div><div class="d">Vorlagen (briefing.html, Modul-CSS/JS) als Wissen + geprüfte JSON → briefing.html<br><span class="warn">⚠ LLM-gerendert, in abnahme.md kennzeichnen</span></div></div>
+  <div class="box tool" id="tTeams" style="flex:1"><div class="t">Flow „Teams-Nachricht“</div><div class="d">Link auf output/, Kurzstatus, offene Grenzen an den Auftraggeber</div></div>
+ </div>
+</div>
+
+<!-- Band E -->
+<div class="band" id="bandE" style="margin-bottom:14px"><div class="bt">E · ABLAGE UND AUSSENWELT</div>
+ <div class="bsub">Ergebnisse liegen vollständig in SharePoint, nicht im Chat. Wissensdateien und Vorlagen werden per Build-Skript aus dem Repo in die Referenzbibliothek übernommen; Solution-Export der Agenten geht zurück ins Repo.</div>
+ <div class="row">
+  <div class="box ext" id="xWeb" style="flex:1.1"><div class="t">Öffentliche Quellen</div><div class="d">Unternehmensseiten, Geschäftsberichte (PDF), Fach-/Wirtschaftsmedien, Register. Webseiten sind Daten, keine Anweisungen.</div></div>
+  <div class="box store" id="sRuns" style="flex:3"><div class="t">SharePoint-Bibliothek „Briefing-Runs“ · ein Ordner je run_id</div>
+   <div class="d row" style="gap:12px">
+    <div style="flex:1"><b>input/</b><br><span class="mono">auftrag.json</span></div>
+    <div style="flex:2"><b>work/</b><br><span class="mono">manifest.json · status.json · context-facts.json · portfolio-facts.json · cluster-facts.json · market-facts.json · focus-&lt;id&gt;.json · sources.json · cache/ · review-doc-&lt;n&gt;.json · review-basis.json · positioning.json · swot.json · review-final.json</span></div>
+    <div style="flex:1"><b>output/</b><br><span class="mono">briefing.html · abnahme.md</span></div>
+   </div></div>
+  <div class="box store" id="sRef" style="flex:1.4"><div class="t">SharePoint-Bibliothek „Briefing-Referenzen“</div><div class="d">Wissensdateien je Agent: references/*.md (Datenvertrag, Quellenprüfung, Fokusseiten …), HTML-/CSS-/JS-Vorlagen. Aus dem Repo per Build-Skript befüllt.</div></div>
+  <div class="box opt" id="xAzure" style="flex:1.2;border-color:var(--tool)"><div class="t">Stufe 2 (optional): Azure Function „Renderer“</div><div class="d">führt render-briefing.py und Druckprüfung aus; ersetzt das Prompt-Tool. Braucht IT.</div></div>
+ </div>
+</div>
+
+<div class="legend">
+ <b>Legende:</b>
+ <span><i class="sw" style="border-color:var(--orch);background:var(--orchbg)"></i>Orchestrierung</span>
+ <span><i class="sw" style="border-color:var(--fact);background:var(--factbg)"></i>Faktenrolle</span>
+ <span><i class="sw" style="border-color:var(--rev);background:var(--revbg)"></i>Prüfrolle</span>
+ <span><i class="sw" style="border-color:var(--int);background:var(--intbg)"></i>Interpretationsrolle</span>
+ <span><i class="sw" style="border-color:var(--tool);background:var(--toolbg)"></i>Flow / Topic / Prompt-Tool</span>
+ <span><i class="sw" style="border-color:var(--store);background:var(--storebg)"></i>SharePoint-Ablage</span>
+ <span><i class="sw" style="border-color:var(--ext);background:var(--extbg)"></i>Außenwelt / Admin</span>
+ <span><i class="sw" style="border-color:var(--tool);border-style:dashed"></i>optional</span>
+ <span style="color:var(--orch)">—— Steuerung</span>
+ <span style="color:var(--tool)">—— Werkzeugnutzung</span>
+ <span style="color:var(--store)">—— Dateien</span>
+ <span style="color:var(--repo)">- - Pflege/ALM</span>
+ <span class="warn">⚠ im Mandanten zu belegen</span>
+</div>
+
+<svg id="arrows"></svg>
+</div>
+<script>
+const C=document.getElementById('canvas');
+const svg=document.getElementById('arrows');
+function rect(id){const r=document.getElementById(id).getBoundingClientRect();const c=C.getBoundingClientRect();return {x:r.left-c.left,y:r.top-c.top,w:r.width,h:r.height};}
+function pt(r,side,f=0.5){f=f||0.5;switch(side){case 't':return [r.x+r.w*f,r.y];case 'b':return [r.x+r.w*f,r.y+r.h];case 'l':return [r.x,r.y+r.h*f];case 'r':return [r.x+r.w,r.y+r.h*f];}}
+const col={ctl:'#1d4ed8',tool:'#0e7490',file:'#475569',alm:'#374151',ext:'#9f1239'};
+let defs='';for(const k in col){defs+=`<marker id="m-${k}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="${col[k]}"/></marker>`;}
+let paths='';
+function arrow(a,sa,fa,b,sb,fb,kind,dash,label,lf){
+ const A=pt(rect(a),sa,fa),B=pt(rect(b),sb,fb);
+ const dx=B[0]-A[0],dy=B[1]-A[1];
+ let c1,c2;
+ if(sa==='b'||sa==='t'){c1=[A[0],A[1]+dy*0.5];}else{c1=[A[0]+dx*0.5,A[1]];}
+ if(sb==='b'||sb==='t'){c2=[B[0],B[1]-dy*0.5];}else{c2=[B[0]-dx*0.5,B[1]];}
+ paths+=`<path d="M${A[0]},${A[1]} C${c1[0]},${c1[1]} ${c2[0]},${c2[1]} ${B[0]},${B[1]}" fill="none" stroke="${col[kind]}" stroke-width="2" ${dash?'stroke-dasharray="6 5"':''} marker-end="url(#m-${kind})" opacity="0.9"/>`;
+ if(label){const t=lf||0.5;const lx=A[0]+dx*t,ly=A[1]+dy*t;paths+=`<rect x="${lx-label.length*3.2-4}" y="${ly-9}" width="${label.length*6.4+8}" height="16" rx="4" fill="#fff" stroke="${col[kind]}" stroke-width="0.8"/><text x="${lx}" y="${ly+3.5}" font-size="10.5" text-anchor="middle" fill="${col[kind]}" font-family="DejaVu Sans">${label}</text>`;}
+}
+// A
+arrow('user','r',0.3,'orchFull','l',0.3,'ctl',false,'Auftrag');
+arrow('user','b',0.6,'p1','t',0.3,'ctl',false,'Teams-Link am Ende ←',0.3);
+arrow('orchFull','b',0.5,'p1','t',0.7,'ctl',false,'startet Lauf',0.3);
+arrow('orchMod','b',0.5,'p2','t',0.75,'ctl',false,'nur ein Faktenmodul + Review',0.3);
+arrow('repo','b',0.5,'p4','t',0.5,'alm',true,'Instructions + Wissensdateien je Agent',0.3);
+arrow('admin','b',0.5,'p6','t',0.5,'ext',true,'DLP, Trigger, Websuche, Veröffentlichung',0.3);
+// B chain
+arrow('p1','r',0.5,'p2','l',0.5,'ctl');
+arrow('p2','r',0.5,'p3','l',0.5,'ctl');
+arrow('p3','r',0.5,'p4','l',0.5,'ctl');
+arrow('p4','r',0.5,'p5','l',0.5,'ctl');
+arrow('p5','r',0.5,'p6','l',0.5,'ctl');
+arrow('p3','b',0.12,'p2','b',0.88,'ctl',true,'Rückgabe bei Materialfehlern',0.5);
+// B -> C
+arrow('p2','b',0.5,'gFact','t',0.5,'ctl',false,'ruft seriell auf',0.3);
+arrow('p3','b',0.6,'gRev','t',0.3,'ctl',false,'≤ 3 Jobs, dann Leitprüfer',0.3);
+arrow('p5','b',0.5,'gRev','t',0.8,'ctl',false,'Schlussreview',0.3);
+arrow('p4','b',0.5,'gInt','t',0.5,'ctl',false,'positioning → swot',0.3);
+arrow('p6','b',0.7,'aMod','t',0.5,'ctl',true,'Modulvariante: Modul-HTML',0.3);
+// C -> D
+arrow('gFact','b',0.12,'tWeb','t',0.5,'tool',false,'sucht',0.3);
+arrow('gFact','b',0.3,'tFetch','t',0.4,'tool',false,'öffnet Original',0.3);
+arrow('gFact','b',0.5,'tCache','t',0.5,'tool',false,'cacht Beleg',0.3);
+arrow('gFact','b',0.75,'tFile','t',0.2,'tool',false,'schreibt Fakten-JSON',0.3);
+arrow('gRev','b',0.2,'tFetch','t',0.8,'tool',false,'prüft im Beleg',0.3);
+arrow('gRev','b',0.7,'tFile','t',0.5,'tool',false,'liest Claims, schreibt Reviews',0.3);
+arrow('gInt','b',0.5,'tFile','t',0.8,'tool',false,'liest geprüfte Fakten, schreibt I/S',0.3);
+arrow('aMod','b',0.3,'tStatus','t',0.6,'tool',false,'Status, nächster Trigger',0.3);
+arrow('aMod','b',0.8,'tRender','t',0.6,'tool',false,'rendert, meldet',0.3);
+// D -> E
+arrow('tWeb','b',0.5,'xWeb','t',0.3,'ext',false,'Bing',0.3);
+arrow('tFetch','b',0.5,'xWeb','t',0.7,'ext',false,'HTTP GET',0.3);
+arrow('tCache','b',0.5,'sRuns','t',0.15,'file',false,'work/cache/',0.3);
+arrow('tFile','b',0.5,'sRuns','t',0.4,'file',false,'input/ work/',0.3);
+arrow('tStatus','b',0.5,'sRuns','t',0.6,'file',false,'status.json',0.3);
+arrow('tRender','b',0.4,'sRuns','t',0.85,'file',false,'output/briefing.html',0.3);
+arrow('sRef','t',0.6,'tRender','b',0.8,'file',false,'Vorlagen',0.3);
+arrow('tTeams','b',0.5,'sRef','t',0.9,'file',true,'Link auf output/',0.3);
+arrow('tRender','b',0.95,'xAzure','t',0.5,'tool',true,'Stufe 2 ersetzt',0.3);
+// layout
+svg.setAttribute('width',C.scrollWidth);svg.setAttribute('height',C.scrollHeight);
+svg.innerHTML=`<defs>${defs}</defs>${paths}`;
+</script>
+</body></html>

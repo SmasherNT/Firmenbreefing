@@ -31,6 +31,27 @@ danach das Vollbriefing. Modelle werden nicht fest vorgegeben; jeder Agent nutzt
 die im Mandanten eingestellte Standardwahl, und die Abnahme protokolliert nur,
 was sichtbar ist.
 
+## Vereinfachter Start (Entscheidung vom 13.11.2026)
+
+Für den Anfang entfallen Basis- und Schlussreview, Trigger-Kette, Quellen-Cache,
+Topic „Quelle öffnen“ und der eigene Modul-Orchestrator. Es bleiben:
+
+- ein Orchestrator-Agent, der Auftrag, Rollenaufrufe und Rendering steuert und
+  bei „nur Portfolio“ nur dieses eine Modul aufruft;
+- fünf Connected Agents: Kontext, Portfolio, Cluster, Markt, optional Fokus je
+  Thema, dazu ein Interpretationsagent mit positioning → swot nacheinander;
+- drei Werkzeuge: eingebaute Websuche, Agent Flows „Datei schreiben / lesen“
+  auf SharePoint, Prompt-Tool „HTML rendern“;
+- eine SharePoint-Bibliothek mit input/, work/, output/ je run_id und eine
+  Bibliothek für Wissensdateien und Vorlagen.
+
+Ohne Reviews gibt es keine unabhängige Quellenprüfung; die HTML trägt deshalb
+den Hinweis „ungeprüfte Faktenbasis“. Die weggelassenen Teile sind in der
+vollständigen Zielarchitektur beschrieben und später ergänzbar.
+
+Diagramme: architektur-einfach.png (Start) und architektur-vollstaendig.png
+(Zielbild); Quelldateien als HTML daneben, Rendering per Playwright.
+
 ## Zielarchitektur
 
 | Heute (Claude Code) | Copilot Studio |
