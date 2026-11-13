@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Briefing {{FIRMA}} – {{STICHTAG}}</title>
+<!--
+Vorlage für briefing.html. Platzhalter {{...}} ersetzen, Blöcke in [[...]] je Eintrag
+wiederholen, nicht beauftragte Kapitel samt Navigationseintrag entfernen.
+Keine externen Bibliotheken, keine Skripte. Recherchierte Texte HTML-escapen.
+-->
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f3f6f8;color:#173345;font:15px/1.55 Arial,Helvetica,sans-serif}
+a{color:#154c61;text-underline-offset:3px}
+.mast{background:#132d40;color:#fff}.mast>div{max-width:1200px;margin:auto;padding:24px 32px}
+.mast h1{margin:4px 0;font-size:28px}.mast p{margin:5px 0}
+.badge{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:#e7c690}
+.warn{display:inline-block;margin-top:8px;padding:5px 10px;border-radius:6px;background:#c3872d;color:#fff;font-size:12px;font-weight:700}
+nav{position:sticky;top:0;background:#fff;border-bottom:1px solid #cfdce2;padding:10px 24px;display:flex;gap:8px;overflow:auto;z-index:2}
+nav a{background:#f0f5f7;border:1px solid #d6e1e6;border-radius:7px;padding:7px 13px;text-decoration:none;white-space:nowrap;font-size:13px}
+main{max-width:1200px;margin:auto;padding:22px 28px}
+section{background:#fff;border:1px solid #dbe4e8;border-radius:12px;padding:20px 24px;margin:0 0 20px;scroll-margin-top:70px}
+h2{font-size:22px;margin:0 0 14px;padding-bottom:9px;border-bottom:2px solid #dce8eb}
+h3{font-size:16px;margin:16px 0 6px}
+.meta,small{color:#607887;font-size:12px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.hl{background:#f2f7f9;border-top:3px solid #176274;border-radius:9px;padding:12px 15px}
+.hl .label{font-size:12px;font-weight:700;color:#365562}.hl .value{font-size:26px;font-weight:700;color:#154c61;margin:4px 0}
+.hl .scope,.hl .period{font-size:11px;color:#607887}
+details.card{background:#f7fafb;border:1px solid #dbe7eb;border-radius:9px;padding:10px 14px;margin:8px 0}
+details.card summary{font-weight:600;cursor:pointer}
+details.card[open]{border-left:3px solid #c3872d}
+.claim{display:inline-block;margin:2px 4px 2px 0;padding:1px 7px;border-radius:5px;background:#e6eff2;font-size:12px}
+.origin{display:inline-block;padding:1px 7px;border-radius:5px;font-size:11px;font-weight:700;margin-right:4px}
+.origin.fakt{background:#e3f3ea;color:#16734a}.origin.hersteller{background:#fff3e0;color:#9b5c14}
+.origin.medien{background:#eef5ff;color:#235c9b}.origin.interpretation{background:#f1e9ff;color:#6b3fa0}
+.table-wrap{overflow-x:auto;border:1px solid #dbe5e9;border-radius:8px;margin:12px 0}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+td,th{text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid #dce7eb}
+th{background:#eef4f6}tbody tr:last-child td{border-bottom:0}
+.timeline{border-left:2px solid #b9d0dc;padding-left:16px}
+.event{display:grid;grid-template-columns:110px 1fr;gap:12px;margin-bottom:10px}
+.event time{font-weight:600;color:#154c61;font-size:12px;padding-top:2px}
+.swot{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.quadrant{border:1px solid #dce6ea;border-top:4px solid var(--a);border-radius:9px;padding:14px;background:var(--b)}
+.quadrant h3{margin:0 0 8px;color:var(--a);font-size:13px;text-transform:uppercase;letter-spacing:.06em}
+.q-s{--a:#16734a;--b:#edf8f1}.q-w{--a:#b3343c;--b:#fff0f1}.q-o{--a:#235c9b;--b:#eef5ff}.q-t{--a:#9b5c14;--b:#fff5e8}
+.lücke{border-left:3px solid #b3343c;padding-left:10px;color:#6b2a2f}
+footer{max-width:1200px;margin:0 auto;padding:0 30px 25px;color:#607887;font-size:12px}
+@media(max-width:760px){.grid3,.grid2,.swot{grid-template-columns:1fr}.event{grid-template-columns:1fr}}
+@media print{body{background:#fff;font-size:10pt}nav{display:none}.mast{background:#fff;color:#173345}
+ section{border:0;border-bottom:1px solid #ddd;box-shadow:none;break-inside:auto}details.card{break-inside:avoid}
+ details:not([open])>*:not(summary){display:block}.swot{display:block}.quadrant{margin-bottom:10px;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<header class="mast"><div>
+ <div class="badge">Firmenbriefing · Gesprächsvorbereitung</div>
+ <h1>{{FIRMA}}</h1>
+ <p>Themen: {{THEMEN_IN_REIHENFOLGE}}</p>
+ <p>Gesprächspartner: {{PERSON}} – {{POSITION_LAUT_NUTZER}} ({{VERIFIZIERUNGSSTATUS}})</p>
+ <p>Stand {{STICHTAG}}</p>
+ <span class="warn">Ungeprüfte Faktenbasis, Quellen bitte vor Verwendung stichprobenartig prüfen.</span>
+</div></header>
+
+<nav>
+ <a href="#summary">Summary</a><a href="#unternehmen">Unternehmen</a>
+ [[<a href="#thema-{{THEMA_ID}}">{{THEMA}}</a>]]
+ <a href="#person">Gesprächspartner</a><a href="#portfolio">Portfolio</a><a href="#cluster">Struktur &amp; Partner</a>
+ <a href="#markt">Markt &amp; Wettbewerb</a><a href="#positionierung">Positionierung</a><a href="#swot">SWOT</a>
+ <a href="#fragen">Offene Punkte</a><a href="#quellen">Quellen</a><a href="#abnahme">Abnahme</a>
+</nav>
+
+<main>
+<section id="summary"><h2>Executive Summary</h2>
+ <div class="grid3">
+ [[<div class="hl"><div class="label">{{HIGHLIGHT_LABEL}}</div><div class="value">{{WERT_ODER_STATUS}}</div>
+   <div class="scope">{{BEZUGSOBJEKT}}</div><div class="period">{{ZEITRAUM}} · <span class="claim">{{CLAIM_IDS}}</span></div></div>]]
+ </div>
+ [[<details class="card"><summary>{{KERNAUSSAGE_UEBERSCHRIFT}} <small>{{VORSCHAUSATZ}}</small></summary>
+   <p><span class="origin interpretation">Interpretation</span>{{VOLLSTAENDIGE_AUSSAGE}}</p>
+   <p><b>Begründung:</b> {{BEGRUENDUNG}}<br><b>Unsicherheit:</b> {{UNSICHERHEIT}}<br>Faktenbasis: <span class="claim">{{CLAIM_IDS}}</span></p>
+ </details>]]
+</section>
+
+<section id="unternehmen"><h2>Unternehmen und aktuelle Entwicklungen</h2>
+ <div class="table-wrap"><table><tbody>
+  <tr><th>Rechtsform / Sitz</th><td>{{...}} <span class="claim">T1</span></td></tr>
+  <tr><th>Eigentümer</th><td>{{...}}</td></tr>
+  <tr><th>Beschäftigte</th><td>{{ZAHL}} ({{JAHR}})</td></tr>
+  <tr><th>Umsatz</th><td>{{ZAHL_MIT_WAEHRUNG}} ({{JAHR}}, {{KONZERN_ODER_SEGMENT}})</td></tr>
+ </tbody></table></div>
+ <h3>Entwicklungen der letzten vier Monate</h3>
+ <div class="timeline">
+ [[<div class="event"><time>{{DATUM}}</time><div><span class="origin fakt">Fakt</span>{{EREIGNIS}} – Status: {{STATUS}}
+   <span class="claim">{{CLAIM_ID}}</span> <a href="#q{{QUELLEN_NR}}">[{{QUELLEN_NR}}]</a></div></div>]]
+ </div>
+</section>
+
+[[<section id="thema-{{THEMA_ID}}"><h2>Thema: {{THEMA}}</h2>
+ <h3>Thema verstehen</h3><p>{{GRUNDLAGEN}}</p>
+ <h3>Zahlen</h3><div class="table-wrap"><table><thead><tr><th>Kennzahl</th><th>Wert</th><th>Definition / Jahr</th><th>Beleg</th></tr></thead>
+  <tbody>[[<tr><td>{{...}}</td><td>{{...}}</td><td>{{...}}</td><td><span class="claim">{{CLAIM_ID}}</span> <a href="#q{{NR}}">[{{NR}}]</a></td></tr>]]</tbody></table></div>
+ <h3>Segmente und Wertschöpfung</h3><p>{{...}}</p>
+ <h3>Akteure</h3><div class="table-wrap"><table><thead><tr><th>Akteur</th><th>Rolle</th><th>Belegte Aktivität</th><th>Beleg</th></tr></thead><tbody>[[<tr>…</tr>]]</tbody></table></div>
+ <h3>Kernaussagen</h3>[[<details class="card"><summary>{{...}}</summary><p>{{...}} <span class="claim">{{CLAIM_IDS}}</span></p></details>]]
+ <h3>Veränderungen der letzten sechs Monate</h3><div class="timeline">[[<div class="event">…</div>]]</div>
+ <h3>Meetingfragen</h3><ul>[[<li>{{FRAGE}}</li>]]</ul>
+</section>]]
+
+<section id="person"><h2>Gesprächspartner: {{PERSON}}</h2>
+ <p class="meta">Position laut Nutzer: {{POSITION_LAUT_NUTZER}} · Status: {{VERIFIZIERUNGSSTATUS}} <span class="claim">{{H_CLAIMS}}</span></p>
+ <p>{{EINLEITUNG}}</p>
+ <div class="grid3">[[<div class="hl"><div class="label">{{FELD}}</div><div class="scope">{{WERT}} <span class="claim">{{CLAIM_ID}}</span></div></div>]]</div>
+ <h3>Werdegang</h3><div class="table-wrap"><table><thead><tr><th>Zeitraum</th><th>Organisation</th><th>Rolle</th><th>Kontext</th><th>Beleg</th></tr></thead><tbody>[[<tr>…</tr>]]</tbody></table></div>
+ <div class="grid2"><div><h3>Fachprofil</h3><ul>[[<li>…</li>]]</ul></div><div><h3>Verantwortung</h3><ul>[[<li>…</li>]]</ul></div></div>
+ <h3>Öffentliche Auftritte und Beiträge (12 Monate)</h3><div class="timeline">[[<div class="event">…</div>]]</div>
+</section>
+
+<section id="portfolio"><h2>Portfolio</h2>
+ <div class="grid3">[[<div class="hl"><div class="label">Keyfact</div><div class="scope">{{...}} <span class="claim">{{P_ID}}</span></div></div>]]</div>
+ [[<h3>{{GESCHAEFTSFELD}}</h3>
+ <div class="table-wrap"><table><thead><tr><th>Produkt / Leistung</th><th>Anwendung</th><th>Belegte Eigenschaften</th><th>Status</th><th>Ursprung</th><th>Beleg</th></tr></thead>
+  <tbody>[[<tr><td>{{...}}</td><td>{{...}}</td><td>{{...}}</td><td>{{KONZEPT_ENTWICKLUNG_ERPROBUNG_SERIE_EINSATZ}}</td><td><span class="origin hersteller">Herstellerangabe</span></td><td><span class="claim">{{P_ID}}</span> <a href="#q{{NR}}">[{{NR}}]</a></td></tr>]]</tbody></table></div>]]
+</section>
+
+<section id="cluster"><h2>Struktur, Partner und Kunden</h2>
+ <div class="grid3">[[<div class="hl"><div class="label">Keyfact</div><div class="scope">{{...}} <span class="claim">{{C_ID}}</span></div></div>]]</div>
+ <div class="table-wrap"><table><thead><tr><th>Akteur</th><th>Beziehung</th><th>Richtung / Gegenstand</th><th>Quote / Rolle</th><th>Status</th><th>Datum</th><th>Beleg</th></tr></thead>
+  <tbody>[[<tr>…</tr>]]</tbody></table></div>
+</section>
+
+<section id="markt"><h2>Markt und Wettbewerb</h2>
+ <h3>Markt</h3><div class="table-wrap"><table><thead><tr><th>Kennzahl</th><th>Wert</th><th>Definition / Währung / Jahr</th><th>Beleg</th></tr></thead><tbody>[[<tr>…</tr>]]</tbody></table></div>
+ <h3>Vergleich</h3><div class="table-wrap"><table><thead><tr><th>Unternehmen / Angebot</th>[[<th>{{KRITERIUM}}</th>]]<th>Belegter Einsatzstand</th><th>Fertigung / Lieferfähigkeit</th></tr></thead>
+  <tbody>[[<tr><th>{{AKTEUR}}</th>[[<td>{{KURZAUSSAGE}} <span class="claim">{{M_ID}}</span></td>]]</tr>]]</tbody></table></div>
+ <p class="meta">„nicht öffentlich belegt“ bedeutet fehlende Daten, nicht Schwäche.</p>
+ <h3>Regionale Präsenz</h3><div class="table-wrap"><table><thead><tr><th>Region</th><th>Rechtsträger / Standort</th><th>Rolle</th><th>Status</th><th>Beleg</th></tr></thead><tbody>[[<tr>…</tr>]]</tbody></table></div>
+</section>
+
+<section id="positionierung"><h2>Positionierung</h2>
+ [[<details class="card"><summary>{{KRITERIUM_ODER_DIMENSION}}: {{KURZURTEIL}}</summary>
+  <p><span class="origin interpretation">Interpretation</span>{{AUSSAGE}}</p>
+  <p><b>Methode:</b> {{METHODE}} · <b>Unsicherheit:</b> {{UNSICHERHEIT}} · Basis: <span class="claim">{{CLAIM_IDS}}</span></p></details>]]
+</section>
+
+<section id="swot"><h2>SWOT (themenbezogen)</h2>
+ <div class="swot">
+  <div class="quadrant q-s"><h3>Stärken</h3>[[<details class="card"><summary>{{...}}</summary><p>{{AUSSAGE}}<br><b>Faktenbasis:</b> <span class="claim">{{IDS}}</span><br><b>Einschränkung:</b> {{...}}</p></details>]]</div>
+  <div class="quadrant q-w"><h3>Schwächen</h3>[[…]]</div>
+  <div class="quadrant q-o"><h3>Chancen</h3>[[…]]</div>
+  <div class="quadrant q-t"><h3>Risiken</h3>[[…]]</div>
+ </div>
+</section>
+
+<section id="fragen"><h2>Offene Punkte und Gesprächsfragen</h2>
+ <h3>Datenlücken und Widersprüche</h3>[[<p class="lücke">{{...}}</p>]]
+ <h3>Fragen für das Gespräch</h3><ol>[[<li>{{FRAGE}}</li>]]</ol>
+</section>
+
+<section id="quellen"><h2>Quellenregister</h2>
+ <div class="table-wrap"><table><thead><tr><th>Nr.</th><th>Claims</th><th>Titel</th><th>Herausgeber</th><th>Datum</th><th>Link</th><th>Abruf</th><th>Art</th><th>Status</th></tr></thead>
+  <tbody>[[<tr id="q{{NR}}"><td>{{NR}}</td><td>{{CLAIM_IDS}}</td><td>{{TITEL}}</td><td>{{HERAUSGEBER}}</td><td>{{DATUM}}</td><td><a href="{{URL}}">{{URL_KURZ}}</a></td><td>{{ABRUF}}</td><td>{{ORIGINAL_MEDIEN_DATENBANK}}</td><td>{{GEOEFFNET_ODER_NICHT}}</td></tr>]]</tbody></table></div>
+</section>
+
+<section id="abnahme"><h2>Abnahme</h2>
+ <ul>
+  <li>Stichtag: {{STICHTAG}}</li>
+  <li>Bearbeitete Kapitel: {{LISTE}}</li>
+  <li>Quellen geöffnet: {{N}} · nicht geöffnet (nur Suchtreffer): {{N}}</li>
+  <li>Bekannte Lücken: {{...}}</li>
+  <li>Ohne unabhängige Quellenprüfung erstellt. Fakten und Interpretationen sind gekennzeichnet.</li>
+ </ul>
+</section>
+</main>
+<footer>Fakten und Interpretation getrennt · Belege per Klick · Quellenstand {{STICHTAG}}</footer>
+</body>
+</html>

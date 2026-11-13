@@ -31,6 +31,13 @@ danach das Vollbriefing. Modelle werden nicht fest vorgegeben; jeder Agent nutzt
 die im Mandanten eingestellte Standardwahl, und die Abnahme protokolliert nur,
 was sichtbar ist.
 
+## Entscheidung vom 13.11.2026: Start mit Variante A
+
+Der Mandant hat die neue Copilot-Studio-Agentenumgebung. Start ist Variante A:
+ein einziger Agent mit Websuche, drei Wissensdateien und Dateiausgabe im Chat,
+ohne SharePoint, Flows, Reviews und weitere Agenten. Paket und Einrichtung:
+copilot-studio/variante-a/. Die Abschnitte unten beschreiben den späteren Ausbau.
+
 ## Vereinfachter Start (Entscheidung vom 13.11.2026)
 
 Für den Anfang entfallen Basis- und Schlussreview, Trigger-Kette, Quellen-Cache,
