@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><title>Minimal</title>
+<style>
+:root{--orch:#1d4ed8;--orchbg:#dbeafe;--fact:#047857;--factbg:#d1fae5;--int:#7c3aed;--intbg:#ede9fe;--tool:#0e7490;--toolbg:#cffafe;--warn:#dc2626;--muted:#6b7280}
+*{box-sizing:border-box}body{margin:0;background:#fff;font-family:"DejaVu Sans",Arial,sans-serif;color:#1f2937;font-size:14px}
+#canvas{position:relative;width:1500px;padding:30px 36px 26px}
+h1{margin:0 0 4px;font-size:26px}.sub{color:var(--muted);font-size:14px;margin-bottom:24px}
+.cols{display:flex;gap:40px}
+.opt{flex:1;border:1px dashed #cbd5e1;border-radius:12px;padding:18px 18px 16px;position:relative}
+.opt h2{margin:0 0 4px;font-size:18px}.opt .h{color:var(--muted);font-size:13px;margin-bottom:22px}
+.box{border:2px solid #9ca3af;border-radius:10px;padding:11px 14px;background:#fff;position:relative}
+.box .t{font-weight:bold;font-size:15px;margin-bottom:4px}.box .d{font-size:12.5px;color:#374151;line-height:1.4}
+.box ul{margin:4px 0 0;padding-left:16px}
+.orch{border-color:var(--orch);background:var(--orchbg)}.fact{border-color:var(--fact);background:var(--factbg)}.int{border-color:var(--int);background:var(--intbg)}.tool{border-color:var(--tool);background:var(--toolbg)}.user{border-color:#111827}
+.row{display:flex;gap:16px}.gap{height:64px}
+.warn{color:var(--warn);font-weight:bold}
+.pro{margin-top:18px;font-size:12.5px;line-height:1.5;border-top:1px solid #e5e7eb;padding-top:10px}
+#arrows{position:absolute;left:0;top:0;pointer-events:none}
+</style></head><body><div id="canvas">
+<h1>Firmenbriefing in Copilot Studio – ohne SharePoint, minimal</h1>
+<div class="sub">Ergebnisse wandern nur als Text durch den Chat. Keine Ablage, keine Flows, kein Rendering-Tool. Das Briefing kommt als Antwort im Chat; HTML bei Bedarf als Codeblock zum Speichern.</div>
+<div class="cols">
+ <div class="opt"><h2>Variante A · ein einziger Agent</h2><div class="h">Kleinster Aufbau, in einer Stunde gebaut. Alles in einem Kontext.</div>
+  <div class="box user" id="uA"><div class="t">Nutzer</div><div class="d">„Briefing zu [Firma], Fokus: [Thema], Gesprächspartner: [Person]“</div></div>
+  <div class="gap"></div>
+  <div class="box orch" id="aA"><div class="t">Agent „Firmenbriefing“</div><div class="d">Instructions: komprimierte Regeln aus CLAUDE.md und den Rollen (Quellen nennen, Fakt von Einschätzung trennen, keine erfundenen Zahlen).<br>Wissen: hochgeladene Dateien direkt im Agenten (Datenvertrag, Gliederung, HTML-Vorlage).<br>Websuche: an.
+  <ul><li>recherchiert Firma, Portfolio, Cluster, Markt nacheinander</li><li>leitet Positionierung und SWOT ab</li><li>antwortet mit dem fertigen Briefing</li></ul></div></div>
+  <div class="gap"></div>
+  <div class="box tool" id="oA"><div class="t">Antwort im Chat</div><div class="d">Briefing als Markdown direkt lesbar, oder HTML als Codeblock, das der Nutzer als .html speichert.</div></div>
+  <div class="pro"><b>Dafür:</b> nichts außer dem Agenten anzulegen, keine Flows, keine Bibliothek.<br><b>Dagegen:</b> Recherche und Bewertung im selben Kontext; Antwortlänge begrenzt, ein Vollbriefing muss ggf. in Teilen abgefragt werden; nichts wird gespeichert.<br><span class="warn">⚠ Websuche liefert nicht sicher Volltext/PDFs.</span></div>
+ </div>
+ <div class="opt"><h2>Variante B · Orchestrator + drei Rollen</h2><div class="h">Getrennte Kontexte für Fakten und Bewertung, immer noch ohne Ablage.</div>
+  <div class="box user" id="uB"><div class="t">Nutzer</div><div class="d">gleicher Auftrag; „nur Portfolio“ ruft nur die Portfolio-Rolle</div></div>
+  <div class="gap"></div>
+  <div class="box orch" id="aB"><div class="t">Orchestrator „Firmenbriefing“</div><div class="d">ruft die drei Rollen nacheinander auf, reicht nur den Auftrag weiter (Verlauf aus), sammelt deren Textrückgaben und schreibt daraus das Briefing.</div></div>
+  <div class="gap"></div>
+  <div class="row">
+   <div class="box fact" id="r1" style="flex:1"><div class="t">Rolle Firma + Portfolio</div><div class="d">Websuche an. Gibt Fakten mit Quelle als strukturierten Text zurück.</div></div>
+   <div class="box fact" id="r2" style="flex:1"><div class="t">Rolle Cluster + Markt</div><div class="d">Websuche an. Partner, Kunden, Markt, Wettbewerber mit Quelle.</div></div>
+   <div class="box int" id="r3" style="flex:1"><div class="t">Rolle Interpretation</div><div class="d">Websuche aus. Bekommt nur die Fakten, liefert Positionierung und SWOT.</div></div>
+  </div>
+  <div class="gap"></div>
+  <div class="box tool" id="oB"><div class="t">Antwort im Chat</div><div class="d">wie A: Markdown oder HTML-Codeblock. Optional später: ein Flow, der die Antwort als Datei ablegt.</div></div>
+  <div class="pro"><b>Dafür:</b> Bewertung sieht nur Fakten, nicht die Suche; Rollen einzeln testbar; „nur Portfolio“ ohne Extraaufbau.<br><b>Dagegen:</b> vier Agenten statt einem; Rückgaben müssen in die Nachrichtengröße passen; nichts wird gespeichert.<br><span class="warn">⚠ Websuche liefert nicht sicher Volltext/PDFs.</span></div>
+ </div>
+</div>
+<svg id="arrows"></svg></div>
+<script>
+const C=document.getElementById('canvas'),svg=document.getElementById('arrows');
+function rect(id){const r=document.getElementById(id).getBoundingClientRect(),c=C.getBoundingClientRect();return{x:r.left-c.left,y:r.top-c.top,w:r.width,h:r.height}}
+function pt(r,s,f){switch(s){case't':return[r.x+r.w*f,r.y];case'b':return[r.x+r.w*f,r.y+r.h];case'l':return[r.x,r.y+r.h*f];case'r':return[r.x+r.w,r.y+r.h*f]}}
+let paths='';const col='#1d4ed8';
+function arrow(a,sa,fa,b,sb,fb,label,lf){const A=pt(rect(a),sa,fa),B=pt(rect(b),sb,fb),dx=B[0]-A[0],dy=B[1]-A[1];
+ paths+=`<path d="M${A[0]},${A[1]} C${A[0]},${A[1]+dy*.5} ${B[0]},${B[1]-dy*.5} ${B[0]},${B[1]}" fill="none" stroke="${col}" stroke-width="2.2" marker-end="url(#m)"/>`;
+ if(label){const t=lf||.5,lx=A[0]+dx*t,ly=A[1]+dy*t;paths+=`<rect x="${lx-label.length*3.4-5}" y="${ly-9}" width="${label.length*6.8+10}" height="17" rx="4" fill="#fff" stroke="${col}" stroke-width=".8"/><text x="${lx}" y="${ly+4}" font-size="11.5" text-anchor="middle" fill="${col}" font-family="DejaVu Sans">${label}</text>`}}
+arrow('uA','b',0.5,'aA','t',0.5,'Auftrag');arrow('aA','b',0.5,'oA','t',0.5,'Briefing');
+arrow('uB','b',0.5,'aB','t',0.5,'Auftrag');
+arrow('aB','b',0.2,'r1','t',0.5,'1');arrow('aB','b',0.5,'r2','t',0.5,'2');arrow('aB','b',0.78,'r3','t',0.3,'3: nur Fakten',0.3);
+arrow('r1','t',0.8,'aB','b',0.3,'Text zurück',0.5);arrow('r2','t',0.8,'aB','b',0.6,'Text zurück',0.5);arrow('r3','t',0.85,'aB','b',0.93,'Text zurück',0.72);
+arrow('r2','b',0.5,'oB','t',0.5,'Orchestrator antwortet');
+svg.setAttribute('width',C.scrollWidth);svg.setAttribute('height',C.scrollHeight);
+svg.innerHTML=`<defs><marker id="m" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="${col}"/></marker></defs>${paths}`;
+</script></body></html>
