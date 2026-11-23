@@ -1,76 +1,88 @@
 <!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><style>
-:root{--a1:#1d4ed8;--a1bg:#dbeafe;--a2:#b45309;--a2bg:#fef3c7;--sk:#047857;--skbg:#ecfdf5;--f:#475569;--fbg:#f1f5f9;--muted:#6b7280}
+:root{--a1:#1d4ed8;--a1bg:#dbeafe;--a2:#b45309;--a2bg:#fef3c7;--sk:#047857;--skbg:#ecfdf5;--sh:#7c3aed;--shbg:#f3e8ff;--f:#475569;--fbg:#f1f5f9;--muted:#6b7280;--warn:#dc2626}
 *{box-sizing:border-box}body{margin:0;font-family:"DejaVu Sans",Arial,sans-serif;color:#1f2937;background:#fff}
-#c{position:relative;width:1500px;padding:30px 36px 30px}
-h1{margin:0 0 4px;font-size:26px}.sub{color:var(--muted);font-size:14px;margin-bottom:26px}
-.row{display:flex;gap:150px;align-items:stretch}
+#c{position:relative;width:1500px;padding:30px 36px 28px}
+h1{margin:0 0 4px;font-size:26px}.sub{color:var(--muted);font-size:14px;margin-bottom:24px}
+.row{display:flex;gap:170px;align-items:stretch}
 .box{border:2px solid #9ca3af;border-radius:10px;padding:12px 14px;background:#fff;position:relative}
-.t{font-weight:bold;font-size:16px;margin-bottom:4px}.d{font-size:12.5px;line-height:1.4;color:#374151}
-.user{border-color:#111827}
-.a1{border-color:var(--a1);background:var(--a1bg)}.a2{border-color:var(--a2);background:var(--a2bg)}
-.file{border-color:var(--f);background:var(--fbg)}
+.t{font-weight:bold;font-size:16px;margin-bottom:4px}.d{font-size:12.5px;line-height:1.42;color:#374151}
+.user{border-color:#111827}.a1{border-color:var(--a1);background:var(--a1bg)}.a2{border-color:var(--a2);background:var(--a2bg)}
+.sh{border-color:var(--sh);background:var(--shbg)}.file{border-color:var(--f);background:var(--fbg)}
 .skills{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}
 .sk{border:1.5px solid var(--sk);background:var(--skbg);border-radius:7px;padding:5px 8px;font-size:12px}
 .sk b{display:block;font-size:12.5px;color:#065f46}
-.sk.out{border-style:dashed}
-.tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;background:#fff;border:1px solid #cbd5e1;margin:3px 4px 0 0}
-.gap{height:58px}.mono{font-family:"DejaVu Sans Mono",monospace;font-size:12px}
-.note{margin-top:26px;font-size:12.5px;color:#374151;border-top:1px solid #e5e7eb;padding-top:10px;line-height:1.5}
+.shk{border:1.5px solid var(--sh);background:#fff;border-radius:7px;padding:6px 9px;font-size:12px}
+.shk b{display:block;font-size:12.5px;color:#5b21b6}
+.tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;background:#fff;border:1px solid #cbd5e1;margin:4px 4px 0 0}
+.gap{height:56px}.mono{font-family:"DejaVu Sans Mono",monospace;font-size:12px}
+.warn{color:var(--warn);font-weight:bold}
+.verd{display:grid;grid-template-columns:auto 1fr;gap:2px 8px;font-size:11.5px;margin-top:8px}
+.verd i{font-style:normal;font-weight:bold}
+.note{margin-top:22px;font-size:12.5px;color:#374151;border-top:1px solid #e5e7eb;padding-top:10px;line-height:1.55}
 svg{position:absolute;left:0;top:0;pointer-events:none}
 </style></head><body><div id="c">
-<h1>Firmenbriefing in Microsoft 365 Copilot: zwei Agenten mit Skills</h1>
-<div class="sub">Agent Builder, keine Flows, kein SharePoint. Agent 1 erstellt ohne Prüfung. Agent 2 prüft nur, wenn der Nutzer es wünscht. Übergabe über eine Excel-Datei.</div>
+<h1>Firmenbriefing in Copilot Studio: zwei Agenten, gemeinsame Skills</h1>
+<div class="sub">Microsoft-Copilot-Laufzeit, veröffentlicht in Teams und Microsoft 365 Copilot. Agent 1 erstellt ohne Prüfung. Agent 2 prüft nur auf Wunsch, in eigenem Kontext. Version 2, 23.11.2026, im Mandanten noch nicht getestet.</div>
 
-<div class="row">
- <div class="box user" id="u1" style="flex:1"><div class="t">Nutzer · Schritt 1</div><div class="d">„Briefing zu [Firma], Fokus: [Thema], Gesprächspartner: [Name]“<br>oder „Nur Portfolio zu [Firma]“</div></div>
- <div class="box user" id="u2" style="flex:1"><div class="t">Nutzer · Schritt 2, optional</div><div class="d">lädt <span class="mono">briefing-daten.xlsx</span> hoch: „prüfen“<br>oder „nur Portfolio prüfen“, „nur A-Fakten prüfen“</div></div>
-</div>
+<div class="box user" id="u"><div class="t">Nutzer im Chat mit „Firmenbriefing“</div><div class="d">1. „Briefing zu [Firma], Fokus: [Thema], Gesprächspartner: [Name], [Position]“ · bei Abbruch wegen Länge: „weiter“<br>2. optional: „prüfen“, „nur Portfolio prüfen“ oder „nur A-Fakten prüfen“</div></div>
 <div class="gap"></div>
 <div class="row">
  <div class="box a1" id="a1" style="flex:1"><div class="t">Agent 1 „Firmenbriefing“ – erstellt</div>
-  <div class="d">Instructions ≤ 8.000 Zeichen: Auftragswahl, Reihenfolge der Skills, Quellenregeln kurz, Hinweis „ungeprüft“.</div>
-  <span class="tag">Websuche: alle Websites</span><span class="tag">Code Interpreter</span><span class="tag">8 Skills</span>
+  <div class="d">Instructions: Auftrag erkennen, Defaults, Reihenfolge, Arbeit in Phasen mit Zwischenstand in der Datei, Hinweis „ungeprüft“.</div>
+  <span class="tag">Websuche</span><span class="tag">Python im Container</span><span class="tag">verbundener Agent: Briefing-Prüfung</span>
   <div class="skills">
-   <div class="sk"><b>1 firmenbasis-person</b>Firma, Timeline 4 Monate, Profil</div>
-   <div class="sk"><b>2 portfolio</b>alle Geschäftsfelder, Status</div>
-   <div class="sk"><b>3 cluster</b>Eigentum, JV, Partner, Kunden</div>
-   <div class="sk"><b>4 markt-wettbewerb</b>Markt, Vergleich, Präsenz</div>
-   <div class="sk"><b>5 fokusthema</b>neutrales Themenbriefing je Thema</div>
-   <div class="sk"><b>6 interpretation</b>Positionierung, SWOT, Summary</div>
-   <div class="sk"><b>7 quellen-claims</b>Claim-IDs, Ursprung, Register</div>
-   <div class="sk out"><b>8 briefing-ausgabe</b>Python-Skript: Daten → HTML + Excel</div>
+   <div class="sk"><b>firmenbasis-person</b>Firma, Timeline 4 Monate, Profil</div>
+   <div class="sk"><b>portfolio</b>alle Geschäftsfelder, Status</div>
+   <div class="sk"><b>cluster</b>Eigentum, JV, Partner, Kunden</div>
+   <div class="sk"><b>markt-wettbewerb</b>Markt, Vergleich, Präsenz</div>
+   <div class="sk"><b>fokusthema</b>neutrales Briefing je Thema</div>
+   <div class="sk"><b>interpretation</b>Positionierung, SWOT, Summary</div>
   </div></div>
  <div class="box a2" id="a2" style="flex:1"><div class="t">Agent 2 „Briefing-Prüfung“ – prüft</div>
-  <div class="d">Instructions: nur prüfen, keine neuen Fakten, Korrekturen nur vorschlagen. Urteil je Claim: bestätigt, abweichend, nicht belegt, nicht erreichbar.</div>
-  <span class="tag">Websuche: alle Websites</span><span class="tag">Code Interpreter</span><span class="tag">3 Skills</span>
+  <div class="d">Instructions: nur prüfen, keine neuen Fakten, Korrekturen nur vorschlagen. A-Fakten vollständig, B-Fakten Stichprobe.</div>
+  <span class="tag">Websuche</span><span class="tag">Python im Container</span><span class="tag">eigener Kontext</span>
   <div class="skills">
-   <div class="sk"><b>1 quellenpruefung</b>Quelle öffnen, Claim gegen Belegstelle; A voll, B Stichprobe</div>
-   <div class="sk"><b>2 ableitungspruefung</b>Summary, Positionierung, SWOT gegen geprüfte Fakten</div>
-   <div class="sk out" style="grid-column:1/-1"><b>3 briefing-ausgabe (Kopie von Skill 8)</b>dasselbe Skript, rendert jetzt mit Prüfstatus an jeder Aussage</div>
-  </div></div>
+   <div class="sk"><b>quellenpruefung</b>Claim gegen Quelle, Netzwerkkanten, Person, Kennzahlen</div>
+   <div class="sk"><b>ableitungspruefung</b>Summary, Positionierung, SWOT gegen geprüfte Fakten</div>
+  </div>
+  <div class="verd"><i style="color:#16734a">im Original bestätigt</i><span>Belegstelle im geöffneten Original</span>
+   <i style="color:#235c9b">durch Suche gestützt</i><span>unabhängiges Suchergebnis, Original nicht geöffnet</span>
+   <i style="color:#b3343c">abweichend · nicht belegt · nicht erreichbar</i><span>mit Korrekturvorschlag</span></div>
+ </div>
 </div>
 <div class="gap"></div>
+<div style="display:flex;justify-content:center"><div class="box sh" id="sh" style="width:820px"><div class="t">Gemeinsame Skill-Bibliothek – einmal gepflegt, beiden Agenten zugeordnet</div>
+ <div class="skills">
+  <div class="shk"><b>briefing-standards</b>Quellenregeln, Aussageursprung, Claim-IDs, Datenformat, Kennzeichnung</div>
+  <div class="shk"><b>briefing-ausgabe</b>Python-Renderskript + Vorlage; mit und ohne Prüfstatus; Skript auch als Codeblock in SKILL.md</div>
+ </div></div></div>
+<div class="gap"></div>
 <div class="row">
- <div class="box file" id="f1" style="flex:1"><div class="t">Download im Chat</div><div class="d"><span class="mono">briefing.html</span> mit Hinweis „Ungeprüfte Faktenbasis“<br><span class="mono">briefing-daten.xlsx</span> ein Blatt je Kapitel, eine Zeile je Claim: ID, Aussage, Ursprung, Status, Quelle, Belegstelle</div></div>
- <div class="box file" id="f2" style="flex:1"><div class="t">Download im Chat</div><div class="d"><span class="mono">briefing-geprueft.html</span> mit Prüfstatus je Aussage<br><span class="mono">pruefbericht.html</span> mit Befunden und Korrekturvorschlägen<br><span class="mono">briefing-daten.xlsx</span> mit Spalte Prüfstatus</div></div>
+ <div class="box file" id="f1" style="flex:1"><div class="t">Datei im Chat: briefing.html</div><div class="d">lesbares Briefing mit Hinweis „Ungeprüfte Faktenbasis“<br>+ unsichtbarer Datenblock: alle Claims, Quellen, Ableitungen<br>bleibt 28 Tage im Chat, in Folgerunden wieder lesbar</div></div>
+ <div class="box file" id="f2" style="flex:1"><div class="t">Datei im Chat: briefing-geprueft.html</div><div class="d">gleiches Layout, Prüfstatus an jeder Aussage<br>Prüfbericht als letztes Kapitel: bestanden · mit Einschränkungen · nicht bestanden<br>Regel: ein A-Claim abweichend oder nicht belegt = nicht bestanden</div></div>
 </div>
-<div class="note"><b>Warum so:</b> Skills sind im Agent Builder allgemein verfügbar und führen Python-Skripte in einer Sandbox aus, deshalb rendert ein Skript die HTML statt des Modells. Ein Agent kann keinen anderen aufrufen und Skills sind nicht zwischen Agenten teilbar, deshalb startet der Nutzer die Prüfung selbst und Skill 8 liegt als Kopie in beiden Agenten. HTML ist als Chat-Upload nicht dokumentiert, Excel schon, deshalb läuft die Übergabe über Excel.<br>
-<b>Pflege:</b> Instructions und Skillordner liegen im Repo, ein Build-Skript packt die ZIP-Dateien und hält die Kopien gleich.</div>
+<div class="note"><b>Warum Copilot Studio:</b> nur hier gibt es zugleich zwei echte Agenten, zwischen Agenten teilbare Skills und den Aufruf des Prüfers aus dem Chat des Erstellers. Abrechnung über Copilot Credits, keine persönliche Copilot-Studio-Lizenz nötig.<br>
+<span class="warn">⚠ Offen:</span> Ob ein Agent eine bestimmte URL oder ein PDF öffnen kann, ist nicht dokumentiert; deshalb trennen die Urteile „im Original bestätigt“ und „durch Suche gestützt“. Ob Skill-Skripte direkt laufen, ist nicht dokumentiert; deshalb steht das Skript auch als Codeblock im Skill. Beides klärt ein Machbarkeitstest von etwa 30 Minuten vor dem Bau.</div>
 <svg id="s"></svg></div>
 <script>
 const C=document.getElementById('c'),S=document.getElementById('s');
 function r(id){const a=document.getElementById(id).getBoundingClientRect(),c=C.getBoundingClientRect();return{x:a.left-c.left,y:a.top-c.top,w:a.width,h:a.height}}
-let p='';const col={b:'#1d4ed8',o:'#b45309',g:'#475569'};
-function ar(a,b,k,lab,fa,fb){const A=r(a),B=r(b);const x1=A.x+A.w*(fa||.5),y1=A.y+A.h,x2=B.x+B.w*(fb||.5),y2=B.y;const m=(y1+y2)/2;
- p+=`<path d="M${x1},${y1} C${x1},${m} ${x2},${m} ${x2},${y2}" fill="none" stroke="${col[k]}" stroke-width="2.4" marker-end="url(#m${k})"/>`;
- if(lab){const lx=(x1+x2)/2,ly=m;p+=`<rect x="${lx-lab.length*3.5-6}" y="${ly-10}" width="${lab.length*7+12}" height="19" rx="4" fill="#fff" stroke="${col[k]}"/><text x="${lx}" y="${ly+4}" font-size="12" text-anchor="middle" fill="${col[k]}" font-family="DejaVu Sans">${lab}</text>`}}
-ar('u1','a1','b','Auftrag');ar('a1','f1','b','erstellt ohne Prüfung');ar('u2','a2','o','Prüfauftrag');ar('a2','f2','o','prüft, rendert neu');
-// handoff f1 -> u2 through middle lane
-{const A=r('f1'),B=r('u2');const x1=A.x+A.w,y1=A.y+A.h*.5,X=(A.x+A.w+B.x)/2,y2=B.y+B.h*.5,x2=B.x;
-p+=`<path d="M${x1},${y1} H${X-12} Q${X},${y1} ${X},${y1-12} V${y2+12} Q${X},${y2} ${X+12},${y2} H${x2-2}" fill="none" stroke="${col.g}" stroke-width="2.4" stroke-dasharray="8 6" marker-end="url(#mg)"/>`;
-const ly=r('a1').y+r('a1').h*.5;const lines=['Nutzer reicht','briefing-','daten.xlsx','weiter, wenn','gewünscht'];
-p+=`<rect x="${X-62}" y="${ly-52}" width="124" height="104" rx="6" fill="#fff" stroke="${col.g}"/>`;
-lines.forEach((t,i)=>{p+=`<text x="${X}" y="${ly-30+i*18}" font-size="12.5" text-anchor="middle" fill="${col.g}" font-family="DejaVu Sans">${t}</text>`});}
+let p='';const col={b:'#1d4ed8',o:'#b45309',g:'#475569',v:'#7c3aed'};
+function lab(x,y,t,k){p+=`<rect x="${x-t.length*3.5-7}" y="${y-10}" width="${t.length*7+14}" height="20" rx="4" fill="#fff" stroke="${col[k]}"/><text x="${x}" y="${y+4}" font-size="12" text-anchor="middle" fill="${col[k]}" font-family="DejaVu Sans">${t}</text>`}
+function v(a,fa,b,fb,k,t,dash){const A=r(a),B=r(b);const x1=A.x+A.w*fa,y1=A.y+A.h,x2=B.x+B.w*fb,y2=B.y;const m=(y1+y2)/2;
+ p+=`<path d="M${x1},${y1} C${x1},${m} ${x2},${m} ${x2},${y2}" fill="none" stroke="${col[k]}" stroke-width="2.4" ${dash?'stroke-dasharray="7 5"':''} marker-end="url(#m${k})"/>`;if(t)lab((x1+x2)/2,m,t,k)}
+function up(a,fa,b,fb,k,t){const A=r(a),B=r(b);const x1=A.x+A.w*fa,y1=A.y,x2=B.x+B.w*fb,y2=B.y+B.h;const m=(y1+y2)/2;
+ p+=`<path d="M${x1},${y1} C${x1},${m} ${x2},${m} ${x2},${y2}" fill="none" stroke="${col[k]}" stroke-width="2.2" stroke-dasharray="4 4" marker-end="url(#m${k})"/>`;if(t)lab((x1+x2)/2,m,t,k)}
+v('u',0.25,'a1',0.5,'b','Auftrag');
+// handoff a1 -> a2 horizontal
+{const A=r('a1'),B=r('a2');const y=A.y+A.h*0.35;p+=`<path d="M${A.x+A.w},${y} H${B.x-2}" fill="none" stroke="${col.o}" stroke-width="2.6" marker-end="url(#mo)"/>`;
+ const X=(A.x+A.w+B.x)/2;const L=['„prüfen“','übergibt Datei','verbundener Agent,','eigener Kontext'];p+=`<rect x="${X-76}" y="${y+12}" width="152" height="82" rx="6" fill="#fff" stroke="${col.o}"/>`;L.forEach((t,i)=>p+=`<text x="${X}" y="${y+32+i*18}" font-size="12" text-anchor="middle" fill="${col.o}" font-family="DejaVu Sans">${t}</text>`);}
+// fallback user -> a2
+v('u',0.85,'a2',0.6,'g','Ausweg bei großen Dateien: Agent 2 direkt, HTML hochladen',true);
+up('sh',0.2,'a1',0.6,'v','zugeordnet');up('sh',0.8,'a2',0.4,'v','zugeordnet');
+// outputs from agents: go around skill box via sides
+{const A=r('a1'),B=r('f1');const x=A.x+40;p+=`<path d="M${x},${A.y+A.h} V${B.y-2}" fill="none" stroke="${col.b}" stroke-width="2.4" marker-end="url(#mb)"/>`;lab(x+70,(A.y+A.h+B.y)/2-60,'erstellt ohne Prüfung','b');}
+{const A=r('a2'),B=r('f2');const x=A.x+A.w-40;p+=`<path d="M${x},${A.y+A.h} V${B.y-2}" fill="none" stroke="${col.o}" stroke-width="2.4" marker-end="url(#mo)"/>`;lab(x-70,(A.y+A.h+B.y)/2-60,'prüft, rendert neu','o');}
 let d='';for(const k in col)d+=`<marker id="m${k}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${col[k]}"/></marker>`;
 S.setAttribute('width',C.scrollWidth);S.setAttribute('height',C.scrollHeight);S.innerHTML=`<defs>${d}</defs>${p}`;
 </script></body></html>
