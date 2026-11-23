@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><style>
+:root{--a1:#1d4ed8;--a1bg:#dbeafe;--a2:#b45309;--a2bg:#fef3c7;--sk:#047857;--skbg:#ecfdf5;--f:#475569;--fbg:#f1f5f9;--muted:#6b7280}
+*{box-sizing:border-box}body{margin:0;font-family:"DejaVu Sans",Arial,sans-serif;color:#1f2937;background:#fff}
+#c{position:relative;width:1500px;padding:30px 36px 30px}
+h1{margin:0 0 4px;font-size:26px}.sub{color:var(--muted);font-size:14px;margin-bottom:26px}
+.row{display:flex;gap:150px;align-items:stretch}
+.box{border:2px solid #9ca3af;border-radius:10px;padding:12px 14px;background:#fff;position:relative}
+.t{font-weight:bold;font-size:16px;margin-bottom:4px}.d{font-size:12.5px;line-height:1.4;color:#374151}
+.user{border-color:#111827}
+.a1{border-color:var(--a1);background:var(--a1bg)}.a2{border-color:var(--a2);background:var(--a2bg)}
+.file{border-color:var(--f);background:var(--fbg)}
+.skills{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:10px}
+.sk{border:1.5px solid var(--sk);background:var(--skbg);border-radius:7px;padding:5px 8px;font-size:12px}
+.sk b{display:block;font-size:12.5px;color:#065f46}
+.sk.out{border-style:dashed}
+.tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;background:#fff;border:1px solid #cbd5e1;margin:3px 4px 0 0}
+.gap{height:58px}.mono{font-family:"DejaVu Sans Mono",monospace;font-size:12px}
+.note{margin-top:26px;font-size:12.5px;color:#374151;border-top:1px solid #e5e7eb;padding-top:10px;line-height:1.5}
+svg{position:absolute;left:0;top:0;pointer-events:none}
+</style></head><body><div id="c">
+<h1>Firmenbriefing in Microsoft 365 Copilot: zwei Agenten mit Skills</h1>
+<div class="sub">Agent Builder, keine Flows, kein SharePoint. Agent 1 erstellt ohne Prüfung. Agent 2 prüft nur, wenn der Nutzer es wünscht. Übergabe über eine Excel-Datei.</div>
+
+<div class="row">
+ <div class="box user" id="u1" style="flex:1"><div class="t">Nutzer · Schritt 1</div><div class="d">„Briefing zu [Firma], Fokus: [Thema], Gesprächspartner: [Name]“<br>oder „Nur Portfolio zu [Firma]“</div></div>
+ <div class="box user" id="u2" style="flex:1"><div class="t">Nutzer · Schritt 2, optional</div><div class="d">lädt <span class="mono">briefing-daten.xlsx</span> hoch: „prüfen“<br>oder „nur Portfolio prüfen“, „nur A-Fakten prüfen“</div></div>
+</div>
+<div class="gap"></div>
+<div class="row">
+ <div class="box a1" id="a1" style="flex:1"><div class="t">Agent 1 „Firmenbriefing“ – erstellt</div>
+  <div class="d">Instructions ≤ 8.000 Zeichen: Auftragswahl, Reihenfolge der Skills, Quellenregeln kurz, Hinweis „ungeprüft“.</div>
+  <span class="tag">Websuche: alle Websites</span><span class="tag">Code Interpreter</span><span class="tag">8 Skills</span>
+  <div class="skills">
+   <div class="sk"><b>1 firmenbasis-person</b>Firma, Timeline 4 Monate, Profil</div>
+   <div class="sk"><b>2 portfolio</b>alle Geschäftsfelder, Status</div>
+   <div class="sk"><b>3 cluster</b>Eigentum, JV, Partner, Kunden</div>
+   <div class="sk"><b>4 markt-wettbewerb</b>Markt, Vergleich, Präsenz</div>
+   <div class="sk"><b>5 fokusthema</b>neutrales Themenbriefing je Thema</div>
+   <div class="sk"><b>6 interpretation</b>Positionierung, SWOT, Summary</div>
+   <div class="sk"><b>7 quellen-claims</b>Claim-IDs, Ursprung, Register</div>
+   <div class="sk out"><b>8 briefing-ausgabe</b>Python-Skript: Daten → HTML + Excel</div>
+  </div></div>
+ <div class="box a2" id="a2" style="flex:1"><div class="t">Agent 2 „Briefing-Prüfung“ – prüft</div>
+  <div class="d">Instructions: nur prüfen, keine neuen Fakten, Korrekturen nur vorschlagen. Urteil je Claim: bestätigt, abweichend, nicht belegt, nicht erreichbar.</div>
+  <span class="tag">Websuche: alle Websites</span><span class="tag">Code Interpreter</span><span class="tag">3 Skills</span>
+  <div class="skills">
+   <div class="sk"><b>1 quellenpruefung</b>Quelle öffnen, Claim gegen Belegstelle; A voll, B Stichprobe</div>
+   <div class="sk"><b>2 ableitungspruefung</b>Summary, Positionierung, SWOT gegen geprüfte Fakten</div>
+   <div class="sk out" style="grid-column:1/-1"><b>3 briefing-ausgabe (Kopie von Skill 8)</b>dasselbe Skript, rendert jetzt mit Prüfstatus an jeder Aussage</div>
+  </div></div>
+</div>
+<div class="gap"></div>
+<div class="row">
+ <div class="box file" id="f1" style="flex:1"><div class="t">Download im Chat</div><div class="d"><span class="mono">briefing.html</span> mit Hinweis „Ungeprüfte Faktenbasis“<br><span class="mono">briefing-daten.xlsx</span> ein Blatt je Kapitel, eine Zeile je Claim: ID, Aussage, Ursprung, Status, Quelle, Belegstelle</div></div>
+ <div class="box file" id="f2" style="flex:1"><div class="t">Download im Chat</div><div class="d"><span class="mono">briefing-geprueft.html</span> mit Prüfstatus je Aussage<br><span class="mono">pruefbericht.html</span> mit Befunden und Korrekturvorschlägen<br><span class="mono">briefing-daten.xlsx</span> mit Spalte Prüfstatus</div></div>
+</div>
+<div class="note"><b>Warum so:</b> Skills sind im Agent Builder allgemein verfügbar und führen Python-Skripte in einer Sandbox aus, deshalb rendert ein Skript die HTML statt des Modells. Ein Agent kann keinen anderen aufrufen und Skills sind nicht zwischen Agenten teilbar, deshalb startet der Nutzer die Prüfung selbst und Skill 8 liegt als Kopie in beiden Agenten. HTML ist als Chat-Upload nicht dokumentiert, Excel schon, deshalb läuft die Übergabe über Excel.<br>
+<b>Pflege:</b> Instructions und Skillordner liegen im Repo, ein Build-Skript packt die ZIP-Dateien und hält die Kopien gleich.</div>
+<svg id="s"></svg></div>
+<script>
+const C=document.getElementById('c'),S=document.getElementById('s');
+function r(id){const a=document.getElementById(id).getBoundingClientRect(),c=C.getBoundingClientRect();return{x:a.left-c.left,y:a.top-c.top,w:a.width,h:a.height}}
+let p='';const col={b:'#1d4ed8',o:'#b45309',g:'#475569'};
+function ar(a,b,k,lab,fa,fb){const A=r(a),B=r(b);const x1=A.x+A.w*(fa||.5),y1=A.y+A.h,x2=B.x+B.w*(fb||.5),y2=B.y;const m=(y1+y2)/2;
+ p+=`<path d="M${x1},${y1} C${x1},${m} ${x2},${m} ${x2},${y2}" fill="none" stroke="${col[k]}" stroke-width="2.4" marker-end="url(#m${k})"/>`;
+ if(lab){const lx=(x1+x2)/2,ly=m;p+=`<rect x="${lx-lab.length*3.5-6}" y="${ly-10}" width="${lab.length*7+12}" height="19" rx="4" fill="#fff" stroke="${col[k]}"/><text x="${lx}" y="${ly+4}" font-size="12" text-anchor="middle" fill="${col[k]}" font-family="DejaVu Sans">${lab}</text>`}}
+ar('u1','a1','b','Auftrag');ar('a1','f1','b','erstellt ohne Prüfung');ar('u2','a2','o','Prüfauftrag');ar('a2','f2','o','prüft, rendert neu');
+// handoff f1 -> u2 through middle lane
+{const A=r('f1'),B=r('u2');const x1=A.x+A.w,y1=A.y+A.h*.5,X=(A.x+A.w+B.x)/2,y2=B.y+B.h*.5,x2=B.x;
+p+=`<path d="M${x1},${y1} H${X-12} Q${X},${y1} ${X},${y1-12} V${y2+12} Q${X},${y2} ${X+12},${y2} H${x2-2}" fill="none" stroke="${col.g}" stroke-width="2.4" stroke-dasharray="8 6" marker-end="url(#mg)"/>`;
+const ly=r('a1').y+r('a1').h*.5;const lines=['Nutzer reicht','briefing-','daten.xlsx','weiter, wenn','gewünscht'];
+p+=`<rect x="${X-62}" y="${ly-52}" width="124" height="104" rx="6" fill="#fff" stroke="${col.g}"/>`;
+lines.forEach((t,i)=>{p+=`<text x="${X}" y="${ly-30+i*18}" font-size="12.5" text-anchor="middle" fill="${col.g}" font-family="DejaVu Sans">${t}</text>`});}
+let d='';for(const k in col)d+=`<marker id="m${k}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${col[k]}"/></marker>`;
+S.setAttribute('width',C.scrollWidth);S.setAttribute('height',C.scrollHeight);S.innerHTML=`<defs>${d}</defs>${p}`;
+</script></body></html>
