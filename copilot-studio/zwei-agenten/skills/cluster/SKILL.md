@@ -55,6 +55,17 @@ suchen. Aus Artikeln neu gefundene Akteure erneut suchen. Wichtige Eigentums-,
 Kontroll- und Kundenbeziehungen möglichst mit unabhängigem Original bestätigen.
 Widersprüche zu Quote, Datum oder Status offen benennen.
 
+## Mindestumfang
+
+- Mindestens drei belegte Beziehungen; bei Konzernen deutlich mehr: Mutter,
+  wichtige Töchter, jedes JV, zentrale Kunden und Partner der Fokusthemen.
+- Mindestens ein Geschäftsbericht mit Status „analysiert“ in `berichte`.
+- Mindestens zwei Nachrichten- oder Fachmedien zur Entdeckung und Gegenprüfung.
+- `typ` genau einer von: Eigentum, Joint Venture, Kooperation, Kunde, Lieferant,
+  Projekt, Lizenz, Mandat, historisch. `art` genau einer von: direkt, indirekt,
+  Überschneidung.
+- Fehlt nach gezielter Suche etwas, Ausnahme mit Suchumfang statt Fülltext.
+
 ## Teil schreiben
 
 - `inhalt.cluster.beziehungen`: von, zu, typ, gegenstand, anteil_rolle, art

@@ -38,6 +38,10 @@ Den Umfang in `pruefung.umfang` eintragen.
 3. Lässt sich das Original nicht öffnen: unabhängige Quelle suchen. Kopierte
    Pressemitteilungen zählen nicht als unabhängig.
 4. Nie aus eigenem Wissen bestätigen. Ein Suchsnippet ist keine Originalprüfung.
+5. **Ausnahmen kontrollieren:** Für jede begründete Ausnahme im Umfang kurz
+   gezielt suchen. Findest du doch belastbare Quellen, schreibe einen Hinweis in
+   `pruefung.hinweise` mit Regel-ID und Fundstelle. Prüfe auch, ob Quellentyp und
+   Statusstufe zum Beleg passen; Abweichungen als `abweichend` beim betroffenen Claim.
 
 ## Urteile
 

@@ -101,6 +101,101 @@ class Validierung(unittest.TestCase):
         self.assertTrue(any("http" in f for f in fehler))
 
 
+class Mindestregeln(unittest.TestCase):
+    def fehler(self, d):
+        return b.validieren(d)[0]
+
+    def test_division_als_einziges_angebot_ist_fehler(self):
+        d = briefing()
+        d["inhalt"]["portfolio"]["felder"][0]["angebote"] = d["inhalt"]["portfolio"]["felder"][0]["angebote"][:1]
+        self.assertTrue(any("portfolio.angebote_je_feld" in f for f in self.fehler(d)))
+
+    def test_begruendete_ausnahme_hebt_fehler_auf(self):
+        d = briefing()
+        d["inhalt"]["portfolio"]["felder"][0]["angebote"] = d["inhalt"]["portfolio"]["felder"][0]["angebote"][:1]
+        d["inhalt"]["portfolio"]["ausnahmen"] = [{"regel": "portfolio.angebote_je_feld",
+            "grund": "Das Geschäftsfeld umfasst laut Geschäftsbericht und Produktseite nur ein einziges Produkt."}]
+        self.assertEqual(self.fehler(d), [])
+        self.assertIn("Ausnahme von der Mindestregel", b.rendern(d))
+
+    def test_ausnahme_ohne_konkreten_grund_ist_fehler(self):
+        d = briefing()
+        d["inhalt"]["portfolio"]["ausnahmen"] = [{"regel": "portfolio.medien", "grund": "nichts gefunden"}]
+        self.assertTrue(any("konkreten Grund" in f for f in self.fehler(d)))
+
+    def test_unbekannte_regel_ist_fehler(self):
+        d = briefing()
+        d["inhalt"]["portfolio"]["ausnahmen"] = [{"regel": "portfolio.egal", "grund": "x" * 50}]
+        self.assertTrue(any("unbekannte Regel" in f for f in self.fehler(d)))
+
+    def test_fehlender_geschaeftsbericht_und_medien(self):
+        d = briefing()
+        for q in d["quellen"]:
+            if q["typ"] in ("geschaeftsbericht", "medien", "fachmedien"):
+                q["typ"] = "produktseite"
+        f = self.fehler(d)
+        for regel in ("portfolio.geschaeftsbericht", "portfolio.medien", "cluster.medien", "unternehmen.medien"):
+            self.assertTrue(any(regel in x for x in f), regel)
+
+    def test_status_stufe_pflicht_und_liste(self):
+        d = briefing()
+        d["inhalt"]["portfolio"]["felder"][0]["angebote"][0]["status_stufe"] = "aktuelles Portfolio"
+        self.assertTrue(any("status_stufe" in f for f in self.fehler(d)))
+
+    def test_zu_viele_angebote_ohne_status(self):
+        d = briefing()
+        for f in d["inhalt"]["portfolio"]["felder"]:
+            for a in f["angebote"]:
+                a["status_stufe"] = "nicht_belegt"
+        self.assertTrue(any("portfolio.status" in f for f in self.fehler(d)))
+
+    def test_zeile_nur_mit_b_claims_ist_fehler(self):
+        d = briefing()
+        d["inhalt"]["portfolio"]["felder"][1]["angebote"][0]["claims"] = ["P4"]
+        self.assertTrue(any("nur auf B-Claims" in f for f in self.fehler(d)))
+
+    def test_quellentyp_pflicht(self):
+        d = briefing()
+        d["quellen"][0].pop("typ")
+        self.assertTrue(any("typ muss" in f for f in self.fehler(d)))
+
+    def test_cluster_und_markt_mindestumfang(self):
+        d = briefing()
+        d["inhalt"]["cluster"]["beziehungen"] = d["inhalt"]["cluster"]["beziehungen"][:2]
+        d["inhalt"]["markt"]["vergleich"]["zeilen"] = d["inhalt"]["markt"]["vergleich"]["zeilen"][:2]
+        f = self.fehler(d)
+        self.assertTrue(any("cluster.beziehungen" in x for x in f))
+        self.assertTrue(any("markt.vergleich" in x for x in f))
+
+    def test_ungueltige_beziehung_und_praesenz(self):
+        d = briefing()
+        d["inhalt"]["cluster"]["beziehungen"][0]["typ"] = "Freundschaft"
+        d["inhalt"]["markt"]["praesenz"][0]["aktivitaeten"][0]["status"] = "operativ laut Medien"
+        f = self.fehler(d)
+        self.assertTrue(any("Beziehung" in x and "typ muss" in x for x in f))
+        self.assertTrue(any("Präsenz" in x for x in f))
+
+    def test_fokus_mindestumfang_und_beispielausnahme(self):
+        d = briefing()
+        self.assertEqual(self.fehler(d), [])
+        d["inhalt"]["fokus"][0]["ausnahmen"] = []
+        self.assertTrue(any("fokus.kennzahlen" in x for x in self.fehler(d)))
+
+    def test_portfolio_felder_werden_einzeln_ergaenzt(self):
+        d = briefing()
+        neu = {"inhalt": {"portfolio": {"felder": [{"name": "Neues Feld", "angebote": []}], "luecken": ["neu"]}}}
+        d2, _ = b.zusammenfuehren(d, neu)
+        namen = [f["name"] for f in d2["inhalt"]["portfolio"]["felder"]]
+        self.assertEqual(namen, ["Wärmepumpen", "Service", "Neues Feld"])
+        self.assertIn("neu", d2["inhalt"]["portfolio"]["luecken"])
+
+    def test_kopf_zeigt_modulauftrag(self):
+        d = briefing(bis="03")
+        d["auftrag"]["modus"] = "modul"
+        d["auftrag"]["module"] = ["portfolio"]
+        self.assertIn("Modulauftrag: Portfolio", b.rendern(d))
+
+
 class Rendern(unittest.TestCase):
     def test_ungeprueft_enthaelt_hinweis_und_kapitel(self):
         html = b.rendern(briefing())
@@ -168,7 +263,8 @@ class Pruefung(unittest.TestCase):
     def test_teilpruefung_ist_hoechstens_mit_einschraenkungen(self):
         d = self.geprueft()
         d["pruefung"]["umfang"] = {"kapitel": ["portfolio"], "nur_a": True}
-        d["pruefung"]["claims"] = [{"id": "P1", "urteil": "im_original_bestaetigt"}, {"id": "P2", "urteil": "im_original_bestaetigt"}]
+        d["pruefung"]["claims"] = [{"id": c["id"], "urteil": "im_original_bestaetigt"} for c in d["claims"]
+                                   if c["id"].startswith("P") and c["stufe"] == "A"]
         d["pruefung"]["ableitungen"] = []
         self.assertEqual(b.auswerten(d)[0], "bestanden_mit_einschraenkungen")
 

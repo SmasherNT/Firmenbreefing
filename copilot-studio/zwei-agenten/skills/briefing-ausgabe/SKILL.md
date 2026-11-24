@@ -18,6 +18,7 @@ Arbeitsdateien liegen im Arbeitsverzeichnis. Ist der Pfad unklar, suche die Date
 
 ```bash
 python3 scripts/briefing.py version
+python3 scripts/briefing.py regeln
 python3 scripts/briefing.py zusammenfuehren --daten briefing-daten.json --teil teil-portfolio.json
 python3 scripts/briefing.py zusammenfuehren --daten briefing-daten.json --teil korrektur.json --ersetzen
 python3 scripts/briefing.py validieren --daten briefing-daten.json
@@ -34,9 +35,11 @@ der erste Teil muss dann den Block `auftrag` enthalten.
 ## Ablauf beim Erstellen
 
 1. Nach jeder Phase den Teil schreiben und `zusammenfuehren` aufrufen.
-2. `validieren` aufrufen. **Fehler** sofort im Teil beheben und den Teil erneut
-   mit `--ersetzen` zusammenführen. **Hinweise** beheben, wenn sie einen echten
-   Mangel zeigen; sonst bleiben sie in der Abnahme sichtbar.
+2. `validieren` aufrufen. **Fehler** sofort beheben und den Teil erneut mit
+   `--ersetzen` zusammenführen. Ein Fehler zu einer **Mindestregel** heißt: weiter
+   recherchieren und neue Claims ergänzen; eine Ausnahme nur nach gezielter,
+   erfolgloser Suche mit konkretem Grund. **Hinweise** beheben, wenn sie einen
+   echten Mangel zeigen; sonst bleiben sie in der Abnahme sichtbar.
 3. `rendern` nach `briefing.html`. Das Skript verweigert die Ausgabe bei Fehlern.
 4. Zwischenstand: Nach jeder abgeschlossenen Phase `briefing.html` als Datei
    ausgeben. Die Daten stecken in der HTML; damit lässt sich später fortsetzen.

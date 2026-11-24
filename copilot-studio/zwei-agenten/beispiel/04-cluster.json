@@ -1,18 +1,22 @@
 {
  "quellen": [
-  {"id": "Q1", "titel": "Geschäftsbericht 2025", "herausgeber": "Musterwerk GmbH", "datum": "2026-04-15", "url": "https://www.example.com/gb-2025.pdf", "abruf": "2026-11-20", "art": "original", "geoeffnet": true}
+  {"id": "Q1", "titel": "Geschäftsbericht 2025", "herausgeber": "Musterwerk GmbH", "datum": "2026-04-15", "url": "https://www.example.com/gb-2025.pdf", "abruf": "2026-11-20", "art": "original", "typ": "geschaeftsbericht", "geoeffnet": true},
+  {"id": "Q2", "titel": "Musterwerk erhält Großauftrag aus der Chemie", "herausgeber": "Beispiel-Wirtschaftszeitung", "datum": "2026-10-12", "url": "https://zeitung.example.org/musterwerk-auftrag", "abruf": "2026-11-20", "art": "medien", "typ": "medien", "geoeffnet": true},
+  {"id": "Q3", "titel": "Beispiel Kälte bestätigt Joint Venture", "herausgeber": "Beispiel-Fachblatt", "datum": "2026-02-10", "url": "https://news.example.org/jv-kaelte", "abruf": "2026-11-20", "art": "medien", "typ": "fachmedien", "geoeffnet": true}
  ],
  "claims": [
   {"id": "C1", "aussage": "Musterwerk gehört zu 100 % der Muster Holding AG.", "ursprung": "fakt", "status": "laufend", "datum": "2025-12-31", "quellen": ["Q1"], "belegstelle": "S. 80, Anteilsbesitz", "stufe": "A"},
-  {"id": "C2", "aussage": "Musterwerk und die Beispiel Kälte AG betreiben ein 50/50-Joint-Venture für Großanlagen.", "ursprung": "fakt", "status": "laufend", "datum": "2025-12-31", "quellen": ["Q1"], "belegstelle": "S. 81", "stufe": "A"}
+  {"id": "C2", "aussage": "Musterwerk und die Beispiel Kälte AG betreiben ein 50/50-Joint-Venture für Großanlagen.", "ursprung": "fakt", "status": "laufend", "datum": "2025-12-31", "quellen": ["Q1", "Q3"], "belegstelle": "S. 81; Fachblatt Absatz 1", "stufe": "A"},
+  {"id": "C3", "aussage": "Ein Chemieunternehmen hat Musterwerk laut Bericht im Oktober 2026 mit Wärmepumpen und Fernüberwachung beauftragt.", "ursprung": "medien", "status": "beauftragt laut Bericht", "datum": "2026-10-12", "quellen": ["Q2"], "belegstelle": "Absatz 2", "stufe": "A"}
  ],
  "inhalt": {"cluster": {
   "beziehungen": [
    {"von": "Muster Holding AG", "zu": "Musterwerk", "typ": "Eigentum", "gegenstand": "Mehrheit", "anteil_rolle": "100 % Kapital", "art": "direkt", "status": "laufend", "datum": "2025-12-31", "claims": ["C1"]},
-   {"von": "Musterwerk", "zu": "Beispiel Kälte AG", "typ": "Joint Venture", "gegenstand": "Großanlagen", "anteil_rolle": "50 % Kapital, Kontrolle nicht belegt", "art": "direkt", "status": "laufend", "datum": "2025-12-31", "claims": ["C2"]}
+   {"von": "Musterwerk", "zu": "Beispiel Kälte AG", "typ": "Joint Venture", "gegenstand": "Großanlagen", "anteil_rolle": "50 % Kapital, Kontrolle nicht belegt", "art": "direkt", "status": "laufend", "datum": "2025-12-31", "claims": ["C2"]},
+   {"von": "Chemieunternehmen (nicht genannt)", "zu": "Musterwerk", "typ": "Kunde", "gegenstand": "Wärmepumpen und Fernüberwachung", "anteil_rolle": "Auftraggeber", "art": "direkt", "status": "beauftragt laut Bericht", "datum": "2026-10-12", "claims": ["C3"]}
   ],
   "berichte": [{"akteur": "Musterwerk", "bericht": "Geschäftsbericht 2025", "jahr": "2025", "abschnitte": "S. 12–25, 80–81", "status": "analysiert"}],
-  "luecken": ["Kundenbeziehungen nur aus Herstellerangaben ableitbar; keine Vergabeeinträge gefunden."]
+  "luecken": ["Name des Chemiekunden nicht öffentlich."]
  }},
  "phasen": {"cluster": "fertig"}
 }

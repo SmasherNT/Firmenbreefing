@@ -6,22 +6,22 @@ Automatisch erzeugt von tools/build.py. Nicht von Hand ändern.
 
 | Datei | Größe | SHA-256 (gekürzt) |
 |---|---|---|
-| skills/briefing-standards.zip | 5668 Bytes | 36892c869c207258 |
-| skills/briefing-ausgabe.zip | 16003 Bytes | 32549486d0a25a8f |
-| skills/firmenbasis-person.zip | 1885 Bytes | a41eb65da7c85878 |
-| skills/portfolio.zip | 1412 Bytes | 033cdfd5e628fe69 |
-| skills/cluster.zip | 3220 Bytes | e6398178e8880515 |
-| skills/markt-wettbewerb.zip | 2844 Bytes | 903f9b39fba4a000 |
-| skills/fokusthema.zip | 1441 Bytes | e55a86655c2336fb |
+| skills/briefing-standards.zip | 7057 Bytes | d8d4c6a77b1d0d35 |
+| skills/briefing-ausgabe.zip | 18875 Bytes | 5621b4783e81bddf |
+| skills/firmenbasis-person.zip | 2066 Bytes | c21f0ec3deb107c5 |
+| skills/portfolio.zip | 2847 Bytes | 399e3db539407def |
+| skills/cluster.zip | 3441 Bytes | 2a271191783833fa |
+| skills/markt-wettbewerb.zip | 3031 Bytes | a458a0093661d05c |
+| skills/fokusthema.zip | 1556 Bytes | faec4240cac8e1f9 |
 | skills/interpretation.zip | 3141 Bytes | 197321670a731040 |
 
 ## Agent briefing-pruefung
 
 | Datei | Größe | SHA-256 (gekürzt) |
 |---|---|---|
-| skills/briefing-standards.zip | 5668 Bytes | 36892c869c207258 |
-| skills/briefing-ausgabe.zip | 16003 Bytes | 32549486d0a25a8f |
-| skills/quellenpruefung.zip | 1702 Bytes | bf8471d822b2268b |
+| skills/briefing-standards.zip | 7057 Bytes | d8d4c6a77b1d0d35 |
+| skills/briefing-ausgabe.zip | 18875 Bytes | 5621b4783e81bddf |
+| skills/quellenpruefung.zip | 1855 Bytes | bcf110413d2dd403 |
 | skills/ableitungspruefung.zip | 1170 Bytes | 62453a1df3eb9abb |
 
 ## Machbarkeitstest

@@ -53,7 +53,18 @@ Bevor Wettbewerber recherchiert werden, festlegen und im Teil speichern:
 - Länder genau benennen: eine US-Präsenz belegt keine Präsenz in Kanada.
 - Keine Stufen vergeben; das macht interpretation.
 
-## 5 Teil schreiben
+## 5 Mindestumfang
+
+- Mindestens zwei Marktkennzahlen mit Definition, Region, Zeitraum und Quelle.
+- Vergleich mit mindestens drei Zeilen (Zielunternehmen und zwei Wettbewerber)
+  und mindestens drei Kriterien.
+- Mindestens zwei Nachrichten- oder Fachmedien.
+- Präsenz: `betreiber` genau einer von eigen, partner, jv, kunde, ausland;
+  `status` genau einer von operativ, angekündigt. Details in den Text, nicht in
+  diese Felder.
+- Fehlt nach gezielter Suche etwas, Ausnahme mit Suchumfang statt Fülltext.
+
+## 6 Teil schreiben
 
 - `inhalt.markt`: `kennzahlen`, `vergleich` (einheit, kriterien, zeilen),
   `praesenz`, `luecken`. Alle sichtbaren Angaben sind A.

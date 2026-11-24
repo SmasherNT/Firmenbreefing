@@ -61,6 +61,21 @@ Währung, Einheit, Preisbasis und Jahr immer nennen.
 - **B**: ergänzende Hintergrunddetails, die nichts tragen. Wird ein B-Fakt
   Grundlage einer Interpretation, stufe ihn auf A hoch.
 
+## Quellentyp (`typ`)
+
+Jede Quelle bekommt einen Typ: `geschaeftsbericht`, `investor`, `produktseite`,
+`datenblatt`, `pressemitteilung`, `register`, `behoerde`, `vergabe`, `verband`,
+`statistik`, `medien` (Nachrichten- und Wirtschaftsmedien), `fachmedien` oder
+`sonstiges`. Daran prüft das Skript, ob Pflichtquellen genutzt wurden.
+
+## Ein Claim, eine Aussage
+
+Ein Claim enthält genau eine prüfbare Aussage: eine Zahl, einen Status, eine
+Beziehung, ein Ereignis. Falsch: „Ein Medium berichtet Wachstum in vier
+Divisionen sowie Verzögerungen bei zwei Programmen.“ Richtig: je Division und je
+Verzögerung ein eigener Claim. Jede sichtbare Tabellenzeile braucht mindestens
+einen A-Claim; B-Claims ergänzen nur.
+
 ## Claim-IDs
 
 Ein Claim ist genau eine belegte Aussage. Präfix nach Kapitel, dann fortlaufende Nummer:
@@ -89,8 +104,23 @@ zusammen. Regeln für Teile:
   Skript erkennt gleiche URLs und nummeriert neu.
 - Claim-IDs sind global. Vor einem neuen Teil die höchste vorhandene Nummer je
   Präfix nachsehen und danach weiterzählen.
-- Ein Teil ersetzt ganze Kapitel (`inhalt.unternehmen`, `inhalt.portfolio` …).
-  Fokusthemen und Personen werden einzeln über `id` bzw. `name` ersetzt.
+- Ein Teil ersetzt ganze Kapitel (`inhalt.unternehmen`, `inhalt.cluster` …).
+  Fokusthemen und Personen werden einzeln über `id` bzw. `name` ersetzt,
+  Portfolio-Geschäftsfelder einzeln über `name`; Lücken und Ausnahmen im
+  Portfolio werden ergänzt.
+
+## Mindestregeln und Ausnahmen
+
+Das Skript prüft je Kapitel einen Mindestumfang, z. B. mindestens zwei Angebote je
+Geschäftsfeld, ein Geschäftsbericht im Portfolio, zwei Medienquellen je Kapitel.
+Die Liste zeigt `python3 scripts/briefing.py regeln`; Details in references/datenformat.md.
+
+- Ein Fehler zu einer Mindestregel heißt: **weiter recherchieren**, nicht abschwächen.
+- Nur wenn nach gezielter Suche öffentlich wirklich nichts zu finden ist, eine
+  Ausnahme in das Kapitel schreiben: `{"regel": "portfolio.medien", "grund": "…"}`.
+  Der Grund nennt Suchwege und Ergebnis, mindestens 40 Zeichen. Ausnahmen
+  erscheinen sichtbar in der HTML und werden bei der Prüfung kontrolliert.
+- Nie Fakten erfinden oder Zeilen aufteilen, nur um eine Regel zu erfüllen.
 
 Das vollständige Format mit allen Feldern steht in references/datenformat.md.
 Lies es vor dem ersten Teil.

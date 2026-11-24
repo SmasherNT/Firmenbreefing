@@ -14,7 +14,7 @@ Nur Python-Standardbibliothek; die Excel-Befehle brauchen zusätzlich openpyxl.
 """
 import argparse, calendar, datetime, html, json, os, re, sys
 
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 SCHEMA = "firmenbriefing/1"
 FACT_RE = re.compile(r"^(T|H|P|C|M|F_[A-Za-z0-9-]+_)\d+$")
 INTERP_RE = re.compile(r"^[IS][A-Za-z0-9_-]*$")
@@ -26,6 +26,8 @@ KAPITEL = {"T": "unternehmen", "H": "personen", "P": "portfolio", "C": "cluster"
 KAPITEL_TITEL = {"unternehmen": "Unternehmen", "personen": "Gesprächspartner", "portfolio": "Portfolio",
                  "cluster": "Struktur & Partner", "markt": "Markt & Wettbewerb", "fokus": "Fokusthemen",
                  "interpretation": "Interpretation"}
+MODULE = {"firmenbasis": "Firmenbasis", "person": "Gesprächspartner", "portfolio": "Portfolio", "cluster": "Struktur, Partner und Kunden",
+          "markt": "Markt und Wettbewerb", "fokus": "Fokusthemen", "interpretation": "Interpretation"}
 URTEIL = {"im_original_bestaetigt": ("im Original bestätigt", "ok", "✓"),
           "durch_suche_gestuetzt": ("durch Suche gestützt", "such", "≈"),
           "abweichend": ("abweichend", "bad", "✗"), "nicht_belegt": ("nicht belegt", "bad", "?"),
@@ -36,6 +38,39 @@ URTEIL = {"im_original_bestaetigt": ("im Original bestätigt", "ok", "✓"),
 ERGEBNIS = {"bestanden": "Prüfung bestanden",
             "bestanden_mit_einschraenkungen": "Prüfung bestanden mit Einschränkungen",
             "unvollstaendig": "Prüfung unvollständig", "nicht_bestanden": "Prüfung nicht bestanden"}
+
+
+STATUS_STUFE = {"angekuendigt": "Angekündigt", "prototyp": "Prototyp", "test": "Test / Demo",
+                "kundenauftrag": "Kundenauftrag / Pilot", "im_einsatz": "Im Einsatz", "serie": "Serie / Skala",
+                "eingestellt": "Eingestellt", "nicht_belegt": "Status nicht belegt"}
+QUELLENTYP = {"geschaeftsbericht": "Geschäftsbericht", "investor": "Investorenunterlage", "produktseite": "Produktseite",
+              "datenblatt": "Datenblatt", "pressemitteilung": "Pressemitteilung", "register": "Register",
+              "behoerde": "Behörde", "vergabe": "Vergabe", "verband": "Verband", "statistik": "Statistik",
+              "medien": "Nachrichtenmedium", "fachmedien": "Fachmedium", "sonstiges": "Sonstiges"}
+MEDIEN = {"medien", "fachmedien"}
+BERICHTE = {"geschaeftsbericht", "investor"}
+BEZIEHUNG = {"Eigentum", "Joint Venture", "Kooperation", "Kunde", "Lieferant", "Projekt", "Lizenz", "Mandat", "historisch"}
+BEZIEHUNG_ART = {"direkt", "indirekt", "Überschneidung"}
+BETREIBER = {"eigen", "partner", "jv", "kunde", "ausland"}
+PRAESENZ_STATUS = {"operativ", "angekündigt"}
+REGELN = {
+    "unternehmen.profil": "Das Profil hat mindestens vier belegte Zeilen.",
+    "unternehmen.medien": "Firmenbasis nutzt mindestens zwei Nachrichten- oder Fachmedien.",
+    "personen.quellen": "Je Person mindestens zwei verschiedene Quellen.",
+    "portfolio.angebote_je_feld": "Jedes Geschäftsfeld hat mindestens zwei Angebote (Produktfamilien oder Systeme).",
+    "portfolio.geschaeftsbericht": "Das Portfolio stützt sich auf mindestens einen Geschäftsbericht oder eine Investorenunterlage.",
+    "portfolio.medien": "Das Portfolio nutzt mindestens zwei Nachrichten- oder Fachmedien zur Gegenrecherche.",
+    "portfolio.status": "Höchstens die Hälfte der Angebote hat den Status „nicht_belegt“.",
+    "cluster.beziehungen": "Mindestens drei belegte Beziehungen.",
+    "cluster.bericht": "Mindestens ein ausgewerteter Geschäftsbericht ist protokolliert.",
+    "cluster.medien": "Das Cluster nutzt mindestens zwei Nachrichten- oder Fachmedien.",
+    "markt.kennzahlen": "Mindestens zwei Marktkennzahlen mit Definition.",
+    "markt.vergleich": "Der Vergleich hat mindestens drei Zeilen und drei Kriterien.",
+    "markt.medien": "Markt und Wettbewerb nutzen mindestens zwei Nachrichten- oder Fachmedien.",
+    "fokus.kennzahlen": "Je Fokusthema mindestens vier Kennzahlen.",
+    "fokus.akteure": "Je Fokusthema mindestens drei Akteure.",
+    "fokus.kernaussagen": "Je Fokusthema drei bis fünf Kernaussagen.",
+}
 
 
 class Fehler(Exception):
@@ -141,6 +176,19 @@ def zusammenfuehren(haupt, teil, ersetzen=False):
                     liste[treffer[0]] = eintrag
                 else:
                     liste.append(eintrag)
+        elif k == "portfolio" and isinstance(v, dict) and isinstance(haupt["inhalt"].get(k), dict):
+            alt = haupt["inhalt"][k]
+            felder = alt.setdefault("felder", [])
+            for feld in v.get("felder", []):
+                treffer = [i for i, x in enumerate(felder) if x.get("name") == feld.get("name")]
+                if treffer:
+                    felder[treffer[0]] = feld
+                else:
+                    felder.append(feld)
+            for liste in ("luecken", "ausnahmen"):
+                for x in v.get(liste, []):
+                    if x not in alt.setdefault(liste, []):
+                        alt[liste].append(x)
         else:
             haupt["inhalt"][k] = v
     for k, v in teil.get("interpretation", {}).items():
@@ -197,6 +245,19 @@ def alle_verweise(obj, schluessel=("claims", "basis")):
             yield from alle_verweise(x, schluessel)
 
 
+def zeilen_mit_claims(obj, pfad="inhalt"):
+    """Findet Inhaltszeilen mit claims-Liste."""
+    if isinstance(obj, dict):
+        if isinstance(obj.get("claims"), list):
+            yield pfad, next((str(v)[:60] for k, v in obj.items() if k != "claims" and isinstance(v, str) and v), ""), obj["claims"]
+        for k, v in obj.items():
+            if k != "claims":
+                yield from zeilen_mit_claims(v, pfad + "." + k)
+    elif isinstance(obj, list):
+        for i, x in enumerate(obj):
+            yield from zeilen_mit_claims(x, "%s[%d]" % (pfad, i))
+
+
 def zeilen_ohne_beleg(obj, pfad="inhalt"):
     """Findet Inhaltszeilen mit leerer claims-Liste."""
     if isinstance(obj, dict):
@@ -208,6 +269,80 @@ def zeilen_ohne_beleg(obj, pfad="inhalt"):
     elif isinstance(obj, list):
         for i, x in enumerate(obj):
             yield from zeilen_ohne_beleg(x, "%s[%d]" % (pfad, i))
+
+
+def quellen_von(daten, obj):
+    """Quellen aller Claims, auf die ein Inhaltsobjekt verweist."""
+    claims = {c["id"]: c for c in daten.get("claims", [])}
+    quellen = {q["id"]: q for q in daten.get("quellen", [])}
+    out = {}
+    for cid in alle_verweise(obj, ("claims",)):
+        for s in claims.get(cid, {}).get("quellen", []):
+            if s in quellen:
+                out[s] = quellen[s]
+    return out
+
+
+def anzahl_medien(daten, obj):
+    return sum(1 for q in quellen_von(daten, obj).values() if q.get("typ") in MEDIEN or (not q.get("typ") and q.get("art") == "medien"))
+
+
+def mindestregeln(daten):
+    """Liefert (regel, ort, ausnahmen) für jede nicht erfüllte Mindestregel."""
+    inhalt = daten.get("inhalt", {})
+    out = []
+
+    def pruefe(bedingung, regel, ort, container):
+        if not bedingung:
+            out.append((regel, ort, container.get("ausnahmen", [])))
+
+    u = inhalt.get("unternehmen")
+    if isinstance(u, dict):
+        pruefe(len(u.get("profil", [])) >= 4, "unternehmen.profil", "Unternehmen", u)
+        pruefe(anzahl_medien(daten, u) >= 2, "unternehmen.medien", "Unternehmen", u)
+    for p in inhalt.get("personen", []):
+        pruefe(len(quellen_von(daten, p)) >= 2, "personen.quellen", "Person %s" % p.get("name"), p)
+    pf = inhalt.get("portfolio")
+    if isinstance(pf, dict):
+        angebote = []
+        for f in pf.get("felder", []):
+            pruefe(len(f.get("angebote", [])) >= 2, "portfolio.angebote_je_feld", "Geschäftsfeld %s" % f.get("name"), pf)
+            angebote += f.get("angebote", [])
+        pruefe(any(q.get("typ") in BERICHTE for q in quellen_von(daten, pf).values()), "portfolio.geschaeftsbericht", "Portfolio", pf)
+        pruefe(anzahl_medien(daten, pf) >= 2, "portfolio.medien", "Portfolio", pf)
+        offen = sum(1 for a in angebote if a.get("status_stufe") == "nicht_belegt")
+        pruefe(not angebote or offen * 2 <= len(angebote), "portfolio.status", "Portfolio", pf)
+    cl = inhalt.get("cluster")
+    if isinstance(cl, dict):
+        pruefe(len(cl.get("beziehungen", [])) >= 3, "cluster.beziehungen", "Cluster", cl)
+        pruefe(any(b.get("status") == "analysiert" for b in cl.get("berichte", [])), "cluster.bericht", "Cluster", cl)
+        pruefe(anzahl_medien(daten, cl) >= 2, "cluster.medien", "Cluster", cl)
+    m = inhalt.get("markt")
+    if isinstance(m, dict):
+        pruefe(len([k for k in m.get("kennzahlen", []) if k.get("definition")]) >= 2, "markt.kennzahlen", "Markt", m)
+        v = m.get("vergleich") or {}
+        pruefe(len(v.get("zeilen", [])) >= 3 and len(v.get("kriterien", [])) >= 3, "markt.vergleich", "Markt", m)
+        pruefe(anzahl_medien(daten, m) >= 2, "markt.medien", "Markt", m)
+    for f in inhalt.get("fokus", []):
+        ort = "Fokus %s" % f.get("id")
+        pruefe(len(f.get("kennzahlen", [])) >= 4, "fokus.kennzahlen", ort, f)
+        pruefe(len(f.get("akteure", [])) >= 3, "fokus.akteure", ort, f)
+        pruefe(3 <= len(f.get("kernaussagen", [])) <= 5, "fokus.kernaussagen", ort, f)
+    return out
+
+
+def alle_ausnahmen(daten):
+    inhalt = daten.get("inhalt", {})
+    for k in ("unternehmen", "portfolio", "cluster", "markt"):
+        if isinstance(inhalt.get(k), dict):
+            for a in inhalt[k].get("ausnahmen", []):
+                yield KAPITEL_TITEL.get(k, k), a
+    for p in inhalt.get("personen", []):
+        for a in p.get("ausnahmen", []):
+            yield "Person %s" % p.get("name"), a
+    for f in inhalt.get("fokus", []):
+        for a in f.get("ausnahmen", []):
+            yield "Fokus %s" % f.get("id"), a
 
 
 def interpretationen(daten):
@@ -298,6 +433,43 @@ def validieren(daten):
         fehler.append("Interpretation verweist auf unbekannte ID %s" % x)
     for pfad, zeile in zeilen_ohne_beleg(daten.get("inhalt", {})):
         hinweise.append("Eintrag ohne Beleg in %s: %s" % (pfad, zeile))
+    stufe_von = {c.get("id"): c.get("stufe") for c in daten.get("claims", [])}
+    for pfad, zeile, ids in zeilen_mit_claims(daten.get("inhalt", {})):
+        if ids and all(stufe_von.get(i) == "B" for i in ids):
+            fehler.append("Zeile stützt sich nur auf B-Claims (%s) in %s: %s – mindestens ein A-Claim nötig" % (", ".join(ids), pfad, zeile))
+    for q in daten.get("quellen", []):
+        if q.get("typ") not in QUELLENTYP:
+            fehler.append("Quelle %s: typ muss einer von %s sein" % (q.get("id"), ", ".join(QUELLENTYP)))
+    for c in daten.get("claims", []):
+        if len(str(c.get("aussage", ""))) > 350:
+            hinweise.append("Claim %s ist sehr lang; ein Claim soll genau eine Aussage enthalten" % c.get("id"))
+    inhalt = daten.get("inhalt", {})
+    for f in (inhalt.get("portfolio") or {}).get("felder", []):
+        for an in f.get("angebote", []):
+            if an.get("status_stufe") not in STATUS_STUFE:
+                fehler.append("Angebot %s: status_stufe muss einer von %s sein" % (an.get("name"), ", ".join(STATUS_STUFE)))
+            elif an.get("status_stufe") not in ("nicht_belegt",) and not any(
+                    next((c for c in daten.get("claims", []) if c.get("id") == i), {}).get("datum") for i in an.get("claims", [])):
+                hinweise.append("Angebot %s: Status ohne datierten Beleg" % an.get("name"))
+    for b in (inhalt.get("cluster") or {}).get("beziehungen", []):
+        if b.get("typ") not in BEZIEHUNG:
+            fehler.append("Beziehung %s–%s: typ muss einer von %s sein" % (b.get("von"), b.get("zu"), ", ".join(sorted(BEZIEHUNG))))
+        if b.get("art") not in BEZIEHUNG_ART:
+            fehler.append("Beziehung %s–%s: art muss direkt, indirekt oder Überschneidung sein" % (b.get("von"), b.get("zu")))
+    for reg in (inhalt.get("markt") or {}).get("praesenz", []):
+        for akt in reg.get("aktivitaeten", []):
+            if akt.get("betreiber") not in BETREIBER or akt.get("status") not in PRAESENZ_STATUS:
+                fehler.append("Präsenz %s/%s: betreiber muss eigen, partner, jv, kunde oder ausland sein, status operativ oder angekündigt" % (
+                    reg.get("region"), akt.get("standort")))
+    for ort, aus in alle_ausnahmen(daten):
+        if aus.get("regel") not in REGELN:
+            fehler.append("%s: Ausnahme für unbekannte Regel %r" % (ort, aus.get("regel")))
+        elif len(str(aus.get("grund", ""))) < 40:
+            fehler.append("%s: Ausnahme %s braucht einen konkreten Grund mit Suchumfang (mindestens 40 Zeichen)" % (ort, aus.get("regel")))
+    for regel, ort, ausnahmen in mindestregeln(daten):
+        if not any(x.get("regel") == regel for x in ausnahmen):
+            fehler.append("Mindestregel %s nicht erfüllt (%s): %s Weiter recherchieren; nur wenn öffentlich nichts zu finden ist, "
+                          "eine Ausnahme mit konkretem Grund eintragen." % (regel, ort, REGELN[regel]))
     genutzt = set(alle_verweise(daten.get("inhalt", {}))) | set(alle_verweise(daten.get("interpretation", {})))
     for c in sorted(claimset - genutzt):
         hinweise.append("Claim %s wird nur im Faktenregister gezeigt" % c)
@@ -487,8 +659,10 @@ class Ausgabe:
             rumpf.append("<tr>%s</tr>" % zellen)
         return '<div class="tw"><table><thead><tr>%s</tr></thead><tbody>%s</tbody></table></div>' % (kopf, "".join(rumpf))
 
-    def luecken(self, liste):
-        return "".join('<p class="lu">Lücke: %s</p>' % e(x) for x in liste or [])
+    def luecken(self, liste, ausnahmen=None):
+        out = "".join('<p class="lu">Lücke: %s</p>' % e(x) for x in liste or [])
+        return out + "".join('<p class="lu">Ausnahme von der Mindestregel „%s“: %s</p>' % (
+            e(REGELN.get(a.get("regel"), a.get("regel"))), e(a.get("grund"))) for a in ausnahmen or [])
 
     def zeitleiste(self, eintraege):
         if not eintraege:
@@ -537,17 +711,18 @@ class Ausgabe:
         r = self.tabelle([("feld", "Merkmal"), ("wert", "Angabe")], u.get("profil"))
         if u.get("timeline"):
             r += "<h3>Entwicklungen der letzten vier Monate</h3>" + self.zeitleiste(u["timeline"])
-        return self.abschnitt("unternehmen", "Unternehmen und aktuelle Entwicklungen", r + self.luecken(u.get("luecken")))
+        return self.abschnitt("unternehmen", "Unternehmen und aktuelle Entwicklungen", r + self.luecken(u.get("luecken"), u.get("ausnahmen")))
 
     def portfolio(self):
         p = self.d.get("inhalt", {}).get("portfolio", {})
         r = ""
         for f in p.get("felder", []):
+            zeilen = [dict(a, stufe=STATUS_STUFE.get(a.get("status_stufe"), "")) for a in f.get("angebote", [])]
             r += "<h3>%s</h3>" % e(f.get("name")) + self.tabelle(
-                [("name", "Angebot"), ("anwendung", "Anwendung"), ("eigenschaften", "Belegte Eigenschaften"), ("status", "Status")], f.get("angebote"))
+                [("name", "Angebot"), ("anwendung", "Anwendung"), ("eigenschaften", "Belegte Eigenschaften"), ("stufe", "Stufe"), ("status", "Status laut Beleg")], zeilen)
         if r or p.get("luecken"):
             r += self.keyfacts("portfolio")
-        return self.abschnitt("portfolio", "Portfolio", r + self.luecken(p.get("luecken")))
+        return self.abschnitt("portfolio", "Portfolio", r + self.luecken(p.get("luecken"), p.get("ausnahmen")))
 
     def cluster(self):
         c = self.d.get("inhalt", {}).get("cluster", {})
@@ -559,7 +734,7 @@ class Ausgabe:
                 c["berichte"], claims=None)
         if r:
             r += self.keyfacts("cluster")
-        return self.abschnitt("cluster", "Struktur, Partner und Kunden", r + self.luecken(c.get("luecken")))
+        return self.abschnitt("cluster", "Struktur, Partner und Kunden", r + self.luecken(c.get("luecken"), c.get("ausnahmen")))
 
     def markt(self):
         m = self.d.get("inhalt", {}).get("markt", {})
@@ -587,7 +762,7 @@ class Ausgabe:
                                                               ("funktion", "Funktion"), ("betreiber", "Rolle"), ("status", "Status")], praesenz)
         if r:
             r += self.keyfacts("markt")
-        return self.abschnitt("markt", "Markt und Wettbewerb", r + self.luecken(m.get("luecken")))
+        return self.abschnitt("markt", "Markt und Wettbewerb", r + self.luecken(m.get("luecken"), m.get("ausnahmen")))
 
     def positionierung(self):
         pos = self.d.get("interpretation", {}).get("positionierung", [])
@@ -623,7 +798,7 @@ class Ausgabe:
                     r += "<h3>%s</h3><ul>%s</ul>" % (t, "".join("<li><b>%s:</b> %s %s</li>" % (e(x.get("titel")), e(x.get("text")), self.chips(x.get("claims"))) for x in p[k]))
             if p.get("medien"):
                 r += "<h3>Äußerungen und Medienpräsenz der letzten vier Monate</h3>" + self.zeitleiste(p["medien"])
-            out += self.abschnitt("person-%d" % n, "Gesprächspartner: %s" % p.get("name", ""), r + self.luecken(p.get("luecken")))
+            out += self.abschnitt("person-%d" % n, "Gesprächspartner: %s" % p.get("name", ""), r + self.luecken(p.get("luecken"), p.get("ausnahmen")))
         return out
 
     def fokus(self):
@@ -645,7 +820,7 @@ class Ausgabe:
                 r += "<h3>Entwicklungen der letzten sechs Monate</h3>" + self.zeitleiste(f["entwicklungen"])
             if f.get("fragen"):
                 r += "<h3>Fragen für das Gespräch</h3><ol>%s</ol>" % "".join("<li>%s</li>" % e(x) for x in f["fragen"])
-            out += self.abschnitt("fokus-%s" % f.get("id"), "Fokus: %s" % f.get("titel", ""), r + self.luecken(f.get("luecken")))
+            out += self.abschnitt("fokus-%s" % f.get("id"), "Fokus: %s" % f.get("titel", ""), r + self.luecken(f.get("luecken"), f.get("ausnahmen")))
         return out
 
     def offen(self):
@@ -713,11 +888,11 @@ class Ausgabe:
                 nutzung.setdefault(s, []).append(c["id"])
         zeilen = "".join('<tr id="q-%s"><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td><a href="%s" rel="noopener">%s</a></td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>' % (
             e(q["id"]), e(q["id"]), e(q.get("titel")), e(q.get("herausgeber")), e(q.get("datum")), e(sichere_url(q.get("url", "#"))),
-            e(re.sub(r"^https?://(www\.)?", "", q.get("url", ""))[:60]), e(q.get("abruf")), e(q.get("art")),
+            e(re.sub(r"^https?://(www\.)?", "", q.get("url", ""))[:60]), e(q.get("abruf")), e(QUELLENTYP.get(q.get("typ"), q.get("art"))),
             "geöffnet" if q.get("geoeffnet") else "nicht geöffnet, nur Suchtreffer", self.chips(nutzung.get(q["id"]))) for q in self.d.get("quellen", []))
         if not zeilen:
             return ""
-        return self.abschnitt("quellen", "Quellenregister", '<div class="tw"><table><thead><tr><th>Nr.</th><th>Titel</th><th>Herausgeber</th><th>Datum</th><th>Link</th><th>Abruf</th><th>Art</th><th>Status</th><th>Claims</th></tr></thead><tbody>%s</tbody></table></div>' % zeilen)
+        return self.abschnitt("quellen", "Quellenregister", '<div class="tw"><table><thead><tr><th>Nr.</th><th>Titel</th><th>Herausgeber</th><th>Datum</th><th>Link</th><th>Abruf</th><th>Typ</th><th>Status</th><th>Claims</th></tr></thead><tbody>%s</tbody></table></div>' % zeilen)
 
     def abnahme(self, hinweise):
         qs = self.d.get("quellen", [])
@@ -727,6 +902,7 @@ class Ausgabe:
                   "Claims: %d, davon A: %d" % (len(self.d.get("claims", [])), sum(1 for c in self.d.get("claims", []) if c.get("stufe") == "A")),
                   "Quellen: %d, geöffnet: %d, nur Suchtreffer: %d" % (len(qs), sum(1 for q in qs if q.get("geoeffnet")), sum(1 for q in qs if not q.get("geoeffnet"))),
                   "Phasen: %s" % (", ".join("%s=%s" % kv for kv in self.d.get("phasen", {}).items()) or "nicht angegeben"),
+                  "Begründete Ausnahmen von Mindestregeln: %d" % len(list(alle_ausnahmen(self.d))),
                   ERGEBNIS.get(self.p.get("ergebnis"), "Prüfung nicht ausgewertet") if self.p else "Ohne unabhängige Quellenprüfung erstellt.",
                   "Gerendert mit briefing.py %s" % VERSION]
         r = "<ul>%s</ul>" % "".join("<li>%s</li>" % e(x) for x in punkte)
@@ -749,6 +925,8 @@ class Ausgabe:
         personen = "; ".join("%s (%s, %s)" % (p.get("name"), p.get("position_laut_nutzer") or "Position offen", p.get("verifizierung", "laut Nutzer, nicht verifiziert"))
                              for p in a.get("personen", []))
         kopf = '<header class="mast"><div><div class="badge">Firmenbriefing · Gesprächsvorbereitung</div><h1>%s</h1>' % e(a.get("firma"))
+        if a.get("modus") == "modul":
+            kopf += "<p>Modulauftrag: %s</p>" % e(", ".join(MODULE.get(m, m) for m in a.get("module", [])) or "nicht angegeben")
         if a.get("fokus"):
             kopf += "<p>Fokus: %s</p>" % e(", ".join(f.get("titel", "") for f in a["fokus"]))
         if personen:
@@ -790,9 +968,9 @@ def excel(daten, pfad):
         ws.append([c["id"], kapitel_von(c["id"]), c.get("aussage"), c.get("ursprung"), c.get("status"), c.get("datum"), ", ".join(c.get("quellen", [])),
                    c.get("belegstelle"), c.get("unsicherheit"), c.get("stufe"), u.get("urteil"), u.get("begruendung"), u.get("korrektur")])
     wq = wb.create_sheet("Quellen")
-    wq.append(["ID", "Titel", "Herausgeber", "Datum", "URL", "Abruf", "Art", "Geöffnet"])
+    wq.append(["ID", "Titel", "Herausgeber", "Datum", "URL", "Abruf", "Art", "Typ", "Geöffnet"])
     for q in daten.get("quellen", []):
-        wq.append([q.get("id"), q.get("titel"), q.get("herausgeber"), q.get("datum"), q.get("url"), q.get("abruf"), q.get("art"), "ja" if q.get("geoeffnet") else "nein"])
+        wq.append([q.get("id"), q.get("titel"), q.get("herausgeber"), q.get("datum"), q.get("url"), q.get("abruf"), q.get("art"), q.get("typ"), "ja" if q.get("geoeffnet") else "nein"])
     wi = wb.create_sheet("Interpretationen")
     wi.append(["ID", "Titel", "Aussage", "Basis"])
     for i in interpretationen(daten):
@@ -826,10 +1004,14 @@ def main(argv=None):
     s = sub.add_parser("excel"); s.add_argument("--daten", required=True); s.add_argument("--out", required=True)
     s = sub.add_parser("aus-excel"); s.add_argument("--xlsx", required=True); s.add_argument("--out", required=True)
     sub.add_parser("version")
+    sub.add_parser("regeln")
     a = ap.parse_args(argv)
     try:
         if a.befehl == "version":
             print("briefing.py %s, Schema %s" % (VERSION, SCHEMA))
+        elif a.befehl == "regeln":
+            for k, v in REGELN.items():
+                print("%-28s %s" % (k, v))
         elif a.befehl == "zusammenfuehren":
             haupt = lade(a.daten) if os.path.exists(a.daten) else None
             haupt, meldung = zusammenfuehren(haupt, lade(a.teil), a.ersetzen)

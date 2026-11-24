@@ -40,6 +40,12 @@ Kennzahlen aus geöffneten Originaldaten von Auftraggebern, Behörden,
 Organisationen, Verbänden und Unternehmen. Fach- und Wirtschaftsmedien für
 Gegenprüfung und Entwicklungen. Alle sichtbaren Fokus-Fakten sind A.
 
+## Mindestumfang
+
+Mindestens vier Kennzahlen, drei Akteure und drei bis fünf Kernaussagen je Thema.
+Fehlt nach gezielter Suche etwas, im Fokuseintrag eine Ausnahme mit Suchumfang
+eintragen, z. B. `{"regel": "fokus.kennzahlen", "grund": "…"}`. Keine Füllzahlen.
+
 ## Teil schreiben
 
 - `inhalt.fokus`: ein Eintrag mit derselben `id` und `titel` wie im Auftrag.

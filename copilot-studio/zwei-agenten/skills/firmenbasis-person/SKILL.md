@@ -56,7 +56,16 @@ ohne Jahr und Bezugsobjekt.
   persönlichen Bezüge herleiten.
 - Mehrere Personen: je Person ein eigener Eintrag, keine vermischten Biografien.
 
-## 5 Teil schreiben
+## 5 Mindestumfang
+
+- Profil mit mindestens vier belegten Zeilen, darunter Umsatz mit Jahr und Bezug.
+- Mindestens zwei Nachrichten- oder Fachmedien (`typ: medien` oder `fachmedien`)
+  für die Entwicklungen; Unternehmensmeldungen allein reichen nicht.
+- Je Person mindestens zwei verschiedene Quellen, z. B. Unternehmensseite und
+  Interview, Konferenzprogramm oder Registereintrag.
+- Fehlt nach gezielter Suche etwas, Ausnahme mit Suchumfang statt Fülltext.
+
+## 6 Teil schreiben
 
 - Datei `teil-firmenbasis.json`, dann zusammenführen und validieren.
 - `phasen`: `{"firmenbasis": "fertig", "person": "fertig"}`; ohne Person

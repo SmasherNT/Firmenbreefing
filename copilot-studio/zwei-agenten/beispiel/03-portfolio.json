@@ -1,16 +1,26 @@
 {
  "quellen": [
-  {"id": "Q1", "titel": "Geschäftsbericht 2025", "herausgeber": "Musterwerk GmbH", "datum": "2026-04-15", "url": "https://www.example.com/gb-2025.pdf", "abruf": "2026-11-20", "art": "original", "geoeffnet": true},
-  {"id": "Q2", "titel": "Produktseite HT-400", "herausgeber": "Musterwerk GmbH", "datum": "2026-06-01", "url": "https://www.example.com/produkte/ht-400", "abruf": "2026-11-20", "art": "original", "geoeffnet": true}
+  {"id": "Q1", "titel": "Geschäftsbericht 2025", "herausgeber": "Musterwerk GmbH", "datum": "2026-04-15", "url": "https://www.example.com/gb-2025.pdf", "abruf": "2026-11-20", "art": "original", "typ": "geschaeftsbericht", "geoeffnet": true},
+  {"id": "Q2", "titel": "Produktseite HT-400", "herausgeber": "Musterwerk GmbH", "datum": "2026-06-01", "url": "https://www.example.com/produkte/ht-400", "abruf": "2026-11-20", "art": "original", "typ": "produktseite", "geoeffnet": true},
+  {"id": "Q3", "titel": "Erste HT-400 an Molkerei ausgeliefert", "herausgeber": "Beispiel-Fachblatt", "datum": "2026-07-03", "url": "https://news.example.org/ht400-molkerei", "abruf": "2026-11-20", "art": "medien", "typ": "fachmedien", "geoeffnet": true},
+  {"id": "Q4", "titel": "Musterwerk erhält Großauftrag aus der Chemie", "herausgeber": "Beispiel-Wirtschaftszeitung", "datum": "2026-10-12", "url": "https://zeitung.example.org/musterwerk-auftrag", "abruf": "2026-11-20", "art": "medien", "typ": "medien", "geoeffnet": true}
  ],
  "claims": [
   {"id": "P1", "aussage": "Die Hochtemperatur-Wärmepumpe HT-400 liefert laut Hersteller bis zu 150 °C Vorlauftemperatur.", "ursprung": "hersteller", "status": "Herstellerangabe", "quellen": ["Q2"], "belegstelle": "Technische Daten", "stufe": "A"},
-  {"id": "P2", "aussage": "Die HT-400 ist laut Geschäftsbericht seit 2025 in Serienfertigung.", "ursprung": "hersteller", "status": "Serie laut Hersteller", "quellen": ["Q1"], "belegstelle": "S. 22, Produktbericht", "stufe": "A"},
-  {"id": "P3", "aussage": "Musterwerk bietet Wartungsverträge für Industrieanlagen an.", "ursprung": "hersteller", "status": "Angebot", "quellen": ["Q1"], "belegstelle": "S. 25", "stufe": "B"}
+  {"id": "P2", "aussage": "Die HT-400 ist laut Geschäftsbericht seit 2025 in Serienfertigung.", "ursprung": "hersteller", "status": "Serie laut Hersteller", "datum": "2025-12-31", "quellen": ["Q1"], "belegstelle": "S. 22, Produktbericht", "stufe": "A"},
+  {"id": "P3", "aussage": "Musterwerk bietet Wartungsverträge für Industrieanlagen an.", "ursprung": "hersteller", "status": "im Angebot", "datum": "2025-12-31", "quellen": ["Q1"], "belegstelle": "S. 25", "stufe": "A"},
+  {"id": "P4", "aussage": "Wartungsverträge laufen laut Geschäftsbericht bis zu zehn Jahre.", "ursprung": "hersteller", "status": "Herstellerangabe", "quellen": ["Q1"], "belegstelle": "S. 25", "stufe": "B"},
+  {"id": "P5", "aussage": "Ein Fachmedium berichtet über die Auslieferung einer HT-400 an eine Molkerei im Juli 2026.", "ursprung": "medien", "status": "Lieferung laut Medien", "datum": "2026-07-03", "quellen": ["Q3"], "belegstelle": "Absatz 1", "stufe": "A"},
+  {"id": "P6", "aussage": "Die kleinere HT-200 befindet sich laut Geschäftsbericht in der Erprobung bei Pilotkunden.", "ursprung": "hersteller", "status": "Test laut Hersteller", "datum": "2025-12-31", "quellen": ["Q1"], "belegstelle": "S. 23", "stufe": "A"},
+  {"id": "P7", "aussage": "Der Großauftrag aus der Chemie umfasst laut Bericht auch Fernüberwachung der Anlagen.", "ursprung": "medien", "status": "beauftragt laut Bericht", "datum": "2026-10-12", "quellen": ["Q4"], "belegstelle": "Absatz 3", "stufe": "A"}
  ],
  "inhalt": {"portfolio": {"felder": [
-  {"name": "Wärmepumpen", "angebote": [{"name": "HT-400", "anwendung": "Prozesswärme bis 150 °C", "eigenschaften": "bis zu 150 °C Vorlauf (Herstellerangabe)", "status": "Serie laut Hersteller", "claims": ["P1", "P2"]}]},
-  {"name": "Service", "angebote": [{"name": "Wartungsverträge", "anwendung": "Industrieanlagen", "eigenschaften": "", "status": "Angebot", "claims": ["P3"]}]}
+  {"name": "Wärmepumpen", "angebote": [
+   {"name": "HT-400", "anwendung": "Prozesswärme bis 150 °C", "eigenschaften": "bis zu 150 °C Vorlauf (Herstellerangabe)", "status_stufe": "serie", "status": "Serie laut Hersteller; Auslieferung laut Fachmedium", "claims": ["P1", "P2", "P5"]},
+   {"name": "HT-200", "anwendung": "Prozesswärme kleinerer Betriebe", "eigenschaften": "nicht öffentlich beschrieben", "status_stufe": "test", "status": "Erprobung bei Pilotkunden laut Hersteller", "claims": ["P6"]}]},
+  {"name": "Service", "angebote": [
+   {"name": "Wartungsverträge", "anwendung": "Industrieanlagen", "eigenschaften": "Laufzeit bis zehn Jahre (Herstellerangabe)", "status_stufe": "im_einsatz", "status": "im Angebot laut Hersteller", "claims": ["P3", "P4"]},
+   {"name": "Fernüberwachung", "anwendung": "Anlagenbetrieb beim Kunden", "eigenschaften": "Teil eines Großauftrags laut Medien", "status_stufe": "kundenauftrag", "status": "beauftragt laut Bericht", "claims": ["P7"]}]}
  ], "luecken": []}},
  "phasen": {"portfolio": "fertig"}
 }

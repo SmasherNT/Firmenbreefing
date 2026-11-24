@@ -41,10 +41,13 @@ ohne Beleg gehört als Text in `luecken`.
 ```json
 {"id": "Q1", "titel": "Geschäftsbericht 2025", "herausgeber": "Firma AG",
  "datum": "2026-03-20", "url": "https://…", "abruf": "2026-11-24",
- "art": "original", "geoeffnet": true}
+ "art": "original", "typ": "geschaeftsbericht", "geoeffnet": true}
 ```
 
 `art`: `original`, `medien`, `register`, `datenbank` oder `sonstige`.
+`typ` (Pflicht): `geschaeftsbericht`, `investor`, `produktseite`, `datenblatt`,
+`pressemitteilung`, `register`, `behoerde`, `vergabe`, `verband`, `statistik`,
+`medien`, `fachmedien`, `sonstiges`.
 `url` beginnt mit http:// oder https://. `geoeffnet: false` heißt nur Suchtreffer.
 
 ## claims
@@ -82,12 +85,15 @@ PDF-Seite unterscheiden, wenn sie abweichen.
  }],
  "portfolio": {
   "felder": [{"name": "Geschäftsfeld", "angebote": [
-   {"name": "…", "anwendung": "…", "eigenschaften": "…", "status": "…", "claims": ["P1", "P2"]}]}],
-  "luecken": ["…"]
+   {"name": "Produktfamilie oder System, nie die Division", "anwendung": "…", "eigenschaften": "… (Herstellerangabe)",
+    "status_stufe": "angekuendigt | prototyp | test | kundenauftrag | im_einsatz | serie | eingestellt | nicht_belegt",
+    "status": "Kurztext mit Ursprung, Quelle und Datum", "claims": ["P1", "P2"]}]}],
+  "luecken": ["…"],
+  "ausnahmen": [{"regel": "portfolio.medien", "grund": "Suchwege und Ergebnis, mindestens 40 Zeichen"}]
  },
  "cluster": {
-  "beziehungen": [{"von": "…", "zu": "…", "typ": "Eigentum | Joint Venture | Kooperation | Kunde | Lieferant | Projekt | Lizenz | Mandat | historisch",
-   "gegenstand": "…", "anteil_rolle": "…", "art": "direkt | indirekt | Überschneidung", "status": "…", "datum": "…", "claims": ["C1"]}],
+  "beziehungen": [{"von": "…", "zu": "…", "typ": "genau einer: Eigentum, Joint Venture, Kooperation, Kunde, Lieferant, Projekt, Lizenz, Mandat, historisch",
+   "gegenstand": "…", "anteil_rolle": "…", "art": "genau einer: direkt, indirekt, Überschneidung", "status": "…", "datum": "…", "claims": ["C1"]}],
   "berichte": [{"akteur": "…", "bericht": "…", "jahr": "2025", "abschnitte": "S. 80–84", "status": "analysiert | nicht gefunden | nicht zugänglich | teilweise lesbar"}],
   "luecken": ["…"]
  },
@@ -98,7 +104,7 @@ PDF-Seite unterscheiden, wenn sie abweichen.
    "zeilen": [{"akteur": "…", "angebot": "…", "zellen": {"k1": {"text": "…", "claims": ["P1"]}}}]},
   "praesenz": [{"region": "…", "aktivitaeten": [
    {"akteur": "Rechtsträger", "standort": "Ort, Land", "funktion": "Büro | Produktion | Integration | Service | Entwicklung | Partner | Kundenaktivität",
-    "betreiber": "eigen | partner | jv | kunde | ausland", "status": "operativ | angekündigt", "claims": ["M5"]}]}],
+    "betreiber": "genau einer: eigen, partner, jv, kunde, ausland", "status": "genau einer: operativ, angekündigt", "claims": ["M5"]}]}],
   "luecken": ["…"]
  },
  "fokus": [{
@@ -114,6 +120,9 @@ PDF-Seite unterscheiden, wenn sie abweichen.
  }]
 }
 ```
+
+`unternehmen`, `portfolio`, `cluster`, `markt`, jede Person und jedes Fokusthema
+können `ausnahmen` enthalten, siehe Mindestregeln unten.
 
 In einer Vergleichszeile fehlt eine Zelle, wenn nichts öffentlich belegt ist;
 die Ausgabe zeigt dann „nicht öffentlich belegt“. Nicht anwendbar als Text
@@ -144,6 +153,33 @@ Interpretations-IDs. Keine neuen Zahlen oder Fakten, die nicht in der Basis steh
 
 `luecken`: wichtige Datenlücken und Widersprüche. `fragen`: neutrale
 Gesprächsfragen, keine Behauptungen über die Firma.
+
+## Mindestregeln
+
+Das Skript meldet einen Fehler, wenn eine Regel nicht erfüllt ist und im
+Kapitel keine begründete Ausnahme mit derselben Regel-ID steht.
+
+| Regel-ID | Anforderung |
+|---|---|
+| unternehmen.profil | Profil mit mindestens vier belegten Zeilen |
+| unternehmen.medien | mindestens zwei Nachrichten- oder Fachmedien |
+| personen.quellen | je Person mindestens zwei verschiedene Quellen |
+| portfolio.angebote_je_feld | je Geschäftsfeld mindestens zwei Angebote |
+| portfolio.geschaeftsbericht | mindestens ein Geschäftsbericht oder eine Investorenunterlage |
+| portfolio.medien | mindestens zwei Nachrichten- oder Fachmedien |
+| portfolio.status | höchstens die Hälfte der Angebote `nicht_belegt` |
+| cluster.beziehungen | mindestens drei Beziehungen |
+| cluster.bericht | mindestens ein Bericht mit Status „analysiert“ |
+| cluster.medien | mindestens zwei Nachrichten- oder Fachmedien |
+| markt.kennzahlen | mindestens zwei Kennzahlen mit Definition |
+| markt.vergleich | mindestens drei Zeilen und drei Kriterien |
+| markt.medien | mindestens zwei Nachrichten- oder Fachmedien |
+| fokus.kennzahlen | je Fokus mindestens vier Kennzahlen |
+| fokus.akteure | je Fokus mindestens drei Akteure |
+| fokus.kernaussagen | je Fokus drei bis fünf Kernaussagen |
+
+Weitere harte Prüfungen: Quellentyp, Statusstufe, erlaubte Werte bei Beziehungen
+und Präsenz, keine Zeile nur mit B-Claims.
 
 ## pruefung (nur Prüfagent)
 
