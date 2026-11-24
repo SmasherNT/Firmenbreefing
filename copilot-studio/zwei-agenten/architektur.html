@@ -21,15 +21,15 @@ h1{margin:0 0 4px;font-size:26px}.sub{color:var(--muted);font-size:14px;margin-b
 .note{margin-top:22px;font-size:12.5px;color:#374151;border-top:1px solid #e5e7eb;padding-top:10px;line-height:1.55}
 svg{position:absolute;left:0;top:0;pointer-events:none}
 </style></head><body><div id="c">
-<h1>Firmenbriefing in Copilot Studio: zwei Agenten, gemeinsame Skills</h1>
-<div class="sub">Microsoft-Copilot-Laufzeit, veröffentlicht in Teams und Microsoft 365 Copilot. Agent 1 erstellt ohne Prüfung. Agent 2 prüft nur auf Wunsch, in eigenem Kontext. Version 2, 23.11.2026, im Mandanten noch nicht getestet.</div>
+<h1>Firmenbriefing in Copilot: zwei Agenten, Skills als ZIP-Pakete</h1>
+<div class="sub">Agent Builder in Microsoft 365 Copilot oder Copilot Studio. Agent 1 erstellt ohne Prüfung. Agent 2 prüft nur auf Wunsch, in eigenem Kontext. Version 3, 24.11.2026. Paket gebaut, im Mandanten noch nicht getestet.</div>
 
-<div class="box user" id="u"><div class="t">Nutzer im Chat mit „Firmenbriefing“</div><div class="d">1. „Briefing zu [Firma], Fokus: [Thema], Gesprächspartner: [Name], [Position]“ · bei Abbruch wegen Länge: „weiter“<br>2. optional: „prüfen“, „nur Portfolio prüfen“ oder „nur A-Fakten prüfen“</div></div>
+<div class="box user" id="u"><div class="t">Nutzer</div><div class="d">1. „Briefing zu [Firma], Fokus: [Thema], Gesprächspartner: [Name], [Position]“ · bei Abbruch wegen Länge: „weiter“<br>2. optional: „prüfen“, „nur Portfolio prüfen“ oder „nur A-Fakten prüfen“ · Copilot Studio: im selben Chat · Agent Builder: im Agenten „Briefing-Prüfung“ mit Datei</div></div>
 <div class="gap"></div>
 <div class="row">
  <div class="box a1" id="a1" style="flex:1"><div class="t">Agent 1 „Firmenbriefing“ – erstellt</div>
   <div class="d">Instructions: Auftrag erkennen, Defaults, Reihenfolge, Arbeit in Phasen mit Zwischenstand in der Datei, Hinweis „ungeprüft“.</div>
-  <span class="tag">Websuche</span><span class="tag">Python im Container</span><span class="tag">verbundener Agent: Briefing-Prüfung</span>
+  <span class="tag">Websuche</span><span class="tag">Python im Container</span><span class="tag">8 Skills</span>
   <div class="skills">
    <div class="sk"><b>firmenbasis-person</b>Firma, Timeline 4 Monate, Profil</div>
    <div class="sk"><b>portfolio</b>alle Geschäftsfelder, Status</div>
@@ -40,7 +40,7 @@ svg{position:absolute;left:0;top:0;pointer-events:none}
   </div></div>
  <div class="box a2" id="a2" style="flex:1"><div class="t">Agent 2 „Briefing-Prüfung“ – prüft</div>
   <div class="d">Instructions: nur prüfen, keine neuen Fakten, Korrekturen nur vorschlagen. A-Fakten vollständig, B-Fakten Stichprobe.</div>
-  <span class="tag">Websuche</span><span class="tag">Python im Container</span><span class="tag">eigener Kontext</span>
+  <span class="tag">Websuche</span><span class="tag">Python im Container</span><span class="tag">4 Skills</span>
   <div class="skills">
    <div class="sk"><b>quellenpruefung</b>Claim gegen Quelle, Netzwerkkanten, Person, Kennzahlen</div>
    <div class="sk"><b>ableitungspruefung</b>Summary, Positionierung, SWOT gegen geprüfte Fakten</div>
@@ -51,18 +51,18 @@ svg{position:absolute;left:0;top:0;pointer-events:none}
  </div>
 </div>
 <div class="gap"></div>
-<div style="display:flex;justify-content:center"><div class="box sh" id="sh" style="width:820px"><div class="t">Gemeinsame Skill-Bibliothek – einmal gepflegt, beiden Agenten zugeordnet</div>
+<div style="display:flex;justify-content:center"><div class="box sh" id="sh" style="width:820px"><div class="t">Gemeinsame Skills – Agent Builder: in beide Agenten hochladen · Copilot Studio: teilen</div>
  <div class="skills">
   <div class="shk"><b>briefing-standards</b>Quellenregeln, Aussageursprung, Claim-IDs, Datenformat, Kennzeichnung</div>
-  <div class="shk"><b>briefing-ausgabe</b>Python-Renderskript + Vorlage; mit und ohne Prüfstatus; Skript auch als Codeblock in SKILL.md</div>
+  <div class="shk"><b>briefing-ausgabe</b>Skript briefing.py im ZIP: zusammenführen, validieren, rendern, Prüfung auswerten, Excel</div>
  </div></div></div>
 <div class="gap"></div>
 <div class="row">
- <div class="box file" id="f1" style="flex:1"><div class="t">Datei im Chat: briefing.html</div><div class="d">lesbares Briefing mit Hinweis „Ungeprüfte Faktenbasis“<br>+ unsichtbarer Datenblock: alle Claims, Quellen, Ableitungen<br>bleibt 28 Tage im Chat, in Folgerunden wieder lesbar</div></div>
- <div class="box file" id="f2" style="flex:1"><div class="t">Datei im Chat: briefing-geprueft.html</div><div class="d">gleiches Layout, Prüfstatus an jeder Aussage<br>Prüfbericht als letztes Kapitel: bestanden · mit Einschränkungen · nicht bestanden<br>Regel: ein A-Claim abweichend oder nicht belegt = nicht bestanden</div></div>
+ <div class="box file" id="f1" style="flex:1"><div class="t">Dateien im Chat: briefing.html + briefing-daten.xlsx</div><div class="d">lesbares Briefing mit Hinweis „Ungeprüfte Faktenbasis“ und eingebetteten Daten<br>Excel mit Claims, Quellen, Interpretationen als Übergabe zur Prüfung<br>bei „weiter“ liest der Agent den Zwischenstand wieder ein</div></div>
+ <div class="box file" id="f2" style="flex:1"><div class="t">Dateien im Chat: briefing-geprueft.html + Excel</div><div class="d">gleiches Layout, Prüfstatus an jeder Aussage<br>Prüfbericht: bestanden · mit Einschränkungen · unvollständig · nicht bestanden<br>Ergebnis berechnet das Skript; A-Claim abweichend oder nicht belegt = nicht bestanden</div></div>
 </div>
-<div class="note"><b>Warum Copilot Studio:</b> nur hier gibt es zugleich zwei echte Agenten, zwischen Agenten teilbare Skills und den Aufruf des Prüfers aus dem Chat des Erstellers. Abrechnung über Copilot Credits, keine persönliche Copilot-Studio-Lizenz nötig.<br>
-<span class="warn">⚠ Offen:</span> Ob ein Agent eine bestimmte URL oder ein PDF öffnen kann, ist nicht dokumentiert; deshalb trennen die Urteile „im Original bestätigt“ und „durch Suche gestützt“. Ob Skill-Skripte direkt laufen, ist nicht dokumentiert; deshalb steht das Skript auch als Codeblock im Skill. Beides klärt ein Machbarkeitstest von etwa 30 Minuten vor dem Bau.</div>
+<div class="note"><b>Paket:</b> zehn Skills als ZIP mit SKILL.md im Hauptordner, Instructions je Agent, Machbarkeitstest; gebaut und geprüft mit tools/build.py. Agent Builder: Skill-Skripte laufen dokumentiert, Prüfung per Agentwechsel. Copilot Studio: zusätzlich Übergabe im Chat und geteilte Skills.<br>
+<span class="warn">⚠ Offen:</span> Ob ein Agent eine bestimmte URL oder ein PDF öffnen kann, ist nicht dokumentiert; deshalb trennen die Urteile „im Original bestätigt“ und „durch Suche gestützt“. Ob HTML-Dateien hochgeladen und gelesen werden, ist nicht dokumentiert; deshalb gibt es die Excel-Übergabe. Beides klärt der Machbarkeitstest von etwa 30 Minuten.</div>
 <svg id="s"></svg></div>
 <script>
 const C=document.getElementById('c'),S=document.getElementById('s');
@@ -76,9 +76,9 @@ function up(a,fa,b,fb,k,t){const A=r(a),B=r(b);const x1=A.x+A.w*fa,y1=A.y,x2=B.x
 v('u',0.25,'a1',0.5,'b','Auftrag');
 // handoff a1 -> a2 horizontal
 {const A=r('a1'),B=r('a2');const y=A.y+A.h*0.35;p+=`<path d="M${A.x+A.w},${y} H${B.x-2}" fill="none" stroke="${col.o}" stroke-width="2.6" marker-end="url(#mo)"/>`;
- const X=(A.x+A.w+B.x)/2;const L=['„prüfen“','übergibt Datei','verbundener Agent,','eigener Kontext'];p+=`<rect x="${X-76}" y="${y+12}" width="152" height="82" rx="6" fill="#fff" stroke="${col.o}"/>`;L.forEach((t,i)=>p+=`<text x="${X}" y="${y+32+i*18}" font-size="12" text-anchor="middle" fill="${col.o}" font-family="DejaVu Sans">${t}</text>`);}
+ const X=(A.x+A.w+B.x)/2;const L=['Copilot Studio:','„prüfen“ übergibt','als verbundener','Agent'];p+=`<rect x="${X-76}" y="${y+12}" width="152" height="82" rx="6" fill="#fff" stroke="${col.o}"/>`;L.forEach((t,i)=>p+=`<text x="${X}" y="${y+32+i*18}" font-size="12" text-anchor="middle" fill="${col.o}" font-family="DejaVu Sans">${t}</text>`);}
 // fallback user -> a2
-v('u',0.85,'a2',0.6,'g','Ausweg bei großen Dateien: Agent 2 direkt, HTML hochladen',true);
+v('u',0.85,'a2',0.6,'g','Agent Builder: Agent 2 öffnen, Excel oder HTML hochladen',true);
 up('sh',0.2,'a1',0.6,'v','zugeordnet');up('sh',0.8,'a2',0.4,'v','zugeordnet');
 // outputs from agents: go around skill box via sides
 {const A=r('a1'),B=r('f1');const x=A.x+40;p+=`<path d="M${x},${A.y+A.h} V${B.y-2}" fill="none" stroke="${col.b}" stroke-width="2.4" marker-end="url(#mb)"/>`;lab(x+70,(A.y+A.h+B.y)/2-60,'erstellt ohne Prüfung','b');}

@@ -1,0 +1,19 @@
+{
+ "quellen": [
+  {"id": "Q1", "titel": "Marktstatistik Wärmepumpen 2025", "herausgeber": "Beispielverband", "datum": "2026-05-10", "url": "https://verband.example.net/statistik-2025", "abruf": "2026-11-20", "art": "original", "geoeffnet": true},
+  {"id": "Q2", "titel": "Förderprogramm Prozesswärme", "herausgeber": "Beispielministerium", "datum": "2026-08-15", "url": "https://ministerium.example.gov/foerderung", "abruf": "2026-11-20", "art": "original", "geoeffnet": true}
+ ],
+ "claims": [
+  {"id": "F_waermepumpen_1", "aussage": "Industrielle Wärmepumpen über 1 MW: 1.200 verkaufte Einheiten in Europa 2025.", "ursprung": "fakt", "status": "berichtet", "datum": "2026-05-10", "quellen": ["Q1"], "belegstelle": "Tabelle 3", "stufe": "A"},
+  {"id": "F_waermepumpen_2", "aussage": "Das Ministerium hat im August 2026 ein Förderprogramm für Prozesswärme gestartet.", "ursprung": "fakt", "status": "gestartet", "datum": "2026-08-15", "quellen": ["Q2"], "belegstelle": "Pressemitteilung, Absatz 1", "stufe": "A"}
+ ],
+ "inhalt": {"fokus": [{"id": "waermepumpen", "titel": "Industrielle Wärmepumpen in Europa",
+  "definition": {"text": "Elektrisch angetriebene Wärmepumpen für Prozesswärme in Industriebetrieben, hier ab 1 MW.", "claims": ["F_waermepumpen_1"]},
+  "kennzahlen": [{"kennzahl": "Verkaufte Einheiten > 1 MW", "wert": "1.200", "definition": "Europa, 2025", "claims": ["F_waermepumpen_1"]}],
+  "segmente": [], "akteure": [],
+  "kernaussagen": [{"titel": "Förderung setzt Impulse", "text": "Ein neues Förderprogramm für Prozesswärme läuft seit August 2026.", "claims": ["F_waermepumpen_2"]}],
+  "entwicklungen": [{"datum": "2026-08-15", "ereignis": "Förderprogramm Prozesswärme gestartet", "status": "gestartet", "claims": ["F_waermepumpen_2"]}],
+  "fragen": ["Welche Rolle spielt das Förderprogramm in Ihren Kundengesprächen?"],
+  "luecken": ["Keine belastbaren Marktanteile öffentlich verfügbar."]}]},
+ "phasen": {"fokus:waermepumpen": "fertig"}
+}

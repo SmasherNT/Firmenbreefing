@@ -1,0 +1,125 @@
+{
+ "quellen": [
+  {
+   "id": "Q1",
+   "titel": "Marktstatistik Wärmepumpen 2025",
+   "herausgeber": "Beispielverband",
+   "datum": "2026-05-10",
+   "url": "https://verband.example.net/statistik-2025",
+   "abruf": "2026-11-20",
+   "art": "original",
+   "geoeffnet": true
+  },
+  {
+   "id": "Q2",
+   "titel": "Produktdatenblatt Konkurrent",
+   "herausgeber": "Andere AG",
+   "datum": "2026-03-01",
+   "url": "https://andere.example.net/datenblatt",
+   "abruf": "2026-11-20",
+   "art": "original",
+   "geoeffnet": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "M1",
+   "aussage": "Der Verband meldet für 2025 in Europa 1.200 verkaufte Industrie-Wärmepumpen über 1 MW.",
+   "ursprung": "fakt",
+   "status": "berichtet",
+   "datum": "2026-05-10",
+   "quellen": [
+    "Q1"
+   ],
+   "belegstelle": "Tabelle 3",
+   "stufe": "A"
+  },
+  {
+   "id": "M2",
+   "aussage": "Das Konkurrenzmodell X-500 erreicht laut Datenblatt bis zu 120 °C Vorlauf.",
+   "ursprung": "hersteller",
+   "status": "Herstellerangabe",
+   "quellen": [
+    "Q2"
+   ],
+   "belegstelle": "Seite 1",
+   "stufe": "A"
+  }
+ ],
+ "inhalt": {
+  "markt": {
+   "kennzahlen": [
+    {
+     "kennzahl": "Verkaufte Industrie-Wärmepumpen > 1 MW",
+     "wert": "1.200 Stück",
+     "definition": "Europa, 2025, Verbandsstatistik",
+     "claims": [
+      "M1"
+     ]
+    }
+   ],
+   "vergleich": {
+    "einheit": "Hochtemperatur-Wärmepumpen",
+    "kriterien": [
+     {
+      "id": "temp",
+      "name": "Max. Vorlauftemperatur",
+      "definition": "Herstellerangabe, Maximalwert"
+     },
+     {
+      "id": "einsatz",
+      "name": "Belegter Einsatzstand",
+      "definition": "Öffentlich belegter Einsatz"
+     }
+    ],
+    "zeilen": [
+     {
+      "akteur": "Musterwerk",
+      "angebot": "HT-400",
+      "zellen": {
+       "temp": {
+        "text": "bis zu 150 °C (Herstellerangabe)",
+        "claims": [
+         "P1"
+        ]
+       }
+      }
+     },
+     {
+      "akteur": "Andere AG",
+      "angebot": "X-500",
+      "zellen": {
+       "temp": {
+        "text": "bis zu 120 °C (Herstellerangabe)",
+        "claims": [
+         "M2"
+        ]
+       }
+      }
+     }
+    ]
+   },
+   "praesenz": [
+    {
+     "region": "Deutschland",
+     "aktivitaeten": [
+      {
+       "akteur": "Musterwerk",
+       "standort": "Hamburg",
+       "funktion": "Service",
+       "betreiber": "eigen",
+       "status": "operativ laut Fachmedium",
+       "claims": [
+        "T3"
+       ]
+      }
+     ]
+    }
+   ],
+   "luecken": []
+  }
+ },
+ "phasen": {
+  "markt": "fertig"
+ }
+}

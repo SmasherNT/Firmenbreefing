@@ -1,20 +1,34 @@
-# Zwei Agenten mit Skills in Copilot: überarbeiteter Vorschlag
+# Zwei Agenten mit Skills in Copilot: Vorschlag
 
-Stand: 23.11.2026, Version 2. Ersetzt Version 1 vom selben Tag, die Agent
-Builder empfahl. Grundlage sind die am Ende genannten Microsoft-Seiten.
-Nichts davon ist im Mandanten getestet.
+Stand: 24.11.2026, Version 3. Das Paket ist gebaut: Einrichtung in README.md,
+Dateien zum Hochladen in dist/. Grundlage sind die am Ende genannten
+Microsoft-Seiten. Nichts davon ist im Mandanten getestet.
+
+Änderung gegenüber Version 2: Die Skills werden als ZIP-Pakete im
+Agent-Builder-Format geliefert, also SKILL.md im Hauptordner mit Skript und
+Referenzen daneben. Dieselben Pakete laufen im Agent Builder und in Copilot
+Studio. Der frühere Ersatzweg mit dem Skript als Codeblock entfällt.
 
 ## Empfehlung
 
-Zwei Agenten in **Copilot Studio mit der Microsoft-Copilot-Laufzeit**
-(Microsoft nennt sie „Microsoft Copilot harness“, früher „GitHub Copilot harness“;
-allgemein verfügbar). Veröffentlicht in Teams und Microsoft 365 Copilot.
+Zwei Agenten mit Skills als ZIP-Paketen. Beide Oberflächen sind möglich:
+
+- **Agent Builder in Microsoft 365 Copilot:** am einfachsten einzurichten;
+  Skill-Skripte laufen dort dokumentiert in einer Sandbox. Die Prüfung startet
+  der Nutzer im zweiten Agenten mit der Excel-Datei. Für Skills ist
+  voraussichtlich eine Microsoft-365-Copilot-Lizenz nötig.
+- **Copilot Studio mit der Microsoft-Copilot-Laufzeit** (früher „GitHub Copilot
+  harness“, allgemein verfügbar): zusätzlich Prüfung per „prüfen“ im selben Chat
+  über einen verbundenen Agenten und geteilte Skills. Abrechnung über Copilot Credits.
+
+Die Lizenzlage im Mandanten entscheidet; der Machbarkeitstest zeigt den Rest.
 
 - **Agent 1 „Firmenbriefing“** erstellt das Briefing ohne Prüfung.
 - **Agent 2 „Briefing-Prüfung“** prüft auf Wunsch danach, in eigenem Kontext.
 - **Eine gemeinsame Skill-Bibliothek** statt Kopien: Standards und Ausgabe
   werden einmal gepflegt und beiden Agenten zugeordnet.
-- **Eine einzige Übergabedatei:** briefing.html mit eingebetteten Daten.
+- **Übergabe per Datei:** briefing.html mit eingebetteten Daten und
+  briefing-daten.xlsx, weil Excel als Upload überall dokumentiert ist.
 
 ## Warum diese Oberfläche
 
@@ -89,38 +103,44 @@ Urteilsstufen, Freigaberegel. Websuche an.
 **Prüftiefe:** A vollständig für Summary-Kennzahlen, Person und Rolle,
 Eigentum und Kontrolle, jede Beziehung im Cluster, Vergleichswerte und jede
 Grundlage der SWOT. B als dokumentierte Stichprobe für Hintergrunddetails.
-**Freigaberegel:** Ein A-Claim „abweichend“ oder „nicht belegt“ ergibt
-„Prüfung nicht bestanden“, sonst „bestanden“ oder „bestanden mit Einschränkungen“.
+**Freigaberegel**, vom Skript berechnet: Ein A-Claim „abweichend“ oder „nicht
+belegt“ oder eine nicht gestützte Ableitung ergibt „nicht bestanden“. Offene
+oder nicht erreichbare A-Claims ergeben „unvollständig“. Nur durch Suche
+gestützte A-Claims, eingeschränkte Ableitungen oder eine Teilprüfung ergeben
+„bestanden mit Einschränkungen“. Sonst „bestanden“.
 
 ## Ablauf für den Nutzer
 
 1. Im Chat mit „Firmenbriefing“: „Briefing zu [Firma], Fokus: [Thema],
    Gesprächspartner: [Name], [Position]“. Ergebnis: briefing.html mit
-   Hinweis „Ungeprüfte Faktenbasis“.
-2. Optional im selben Chat: „prüfen“, „nur Portfolio prüfen“ oder „nur
-   A-Fakten prüfen“. Agent 1 übergibt an „Briefing-Prüfung“, der in eigenem
-   Kontext arbeitet. Ergebnis: briefing-geprueft.html mit Status an jeder
-   Aussage und einem Prüfbericht als letztem Kapitel.
-3. Ausweg bei großen Dateien: Übergaben an verbundene Agenten haben eine
-   Größengrenze. Dann „Briefing-Prüfung“ direkt öffnen und briefing.html hochladen.
+   Hinweis „Ungeprüfte Faktenbasis“ und briefing-daten.xlsx.
+2. Optional prüfen: Im Agent Builder den Agenten „Briefing-Prüfung“ öffnen,
+   briefing-daten.xlsx hochladen und „prüfen“, „nur Portfolio prüfen“ oder
+   „nur A-Fakten prüfen“ schreiben. In Copilot Studio genügt „prüfen“ im
+   selben Chat; Agent 1 übergibt an den verbundenen Agenten. Ergebnis:
+   briefing-geprueft.html mit Status an jeder Aussage und Prüfbericht.
+3. Korrekturen: die geprüfte Datei bei „Firmenbriefing“ hochladen und
+   „Korrekturen umsetzen“ schreiben. Geänderte Fakten entfernen die alte
+   Prüfung automatisch; danach erneut prüfen lassen.
 
-## Übergabe: eine Datei
+## Übergabe per Datei
 
 briefing.html enthält neben der lesbaren Seite einen unsichtbaren Datenblock
-mit allen Claims, Quellen und Ableitungen. Der Prüfer liest diesen Block,
-ergänzt die Urteile und rendert mit demselben Skript neu. Damit gibt es nur
-eine Datei, und die geprüfte Fassung sieht genauso aus wie die ungeprüfte.
-Ersatz, falls der Datenblock beim Hochladen nicht ankommt: zusätzlich
-briefing-daten.xlsx ausgeben, denn Excel-Anhänge sind überall dokumentiert.
+mit allen Claims, Quellen und Ableitungen. briefing-daten.xlsx enthält dieselben
+Daten, dazu lesbare Blätter für Claims, Quellen und Interpretationen. Der Prüfer
+liest eine der beiden Dateien, ergänzt die Urteile und rendert mit demselben
+Skript neu; die geprüfte Fassung sieht genauso aus wie die ungeprüfte. Excel ist
+der sichere Weg, weil Excel-Uploads in allen Oberflächen dokumentiert sind.
+Ob HTML-Uploads gelesen werden, zeigt der Machbarkeitstest.
 
-## Rendering ohne Rätselraten
+## Rendering durch ein Skript
 
-Ob Skript-Dateien aus einem Skill in dieser Laufzeit ausgeführt werden, ist
-nicht dokumentiert. Python im Container ist es. Deshalb steht das Renderskript
-zweimal im Skill briefing-ausgabe: als Datei im Paket und als Codeblock in
-SKILL.md. Kommt die Datei nicht im Container an, schreibt der Agent den
-Codeblock unverändert in eine Datei und führt sie aus. Das Modell schreibt
-die HTML in keinem Fall selbst.
+Das Skript `briefing.py` liegt im ZIP des Skills briefing-ausgabe. Es führt
+Teile zusammen, validiert, rendert, wertet die Prüfung aus und schreibt Excel.
+Das Modell schreibt die HTML in keinem Fall selbst. Läuft das Skript nicht,
+gibt der Agent keine HTML aus und nennt die Fehlermeldung. Im Agent Builder ist
+die Ausführung von Skill-Skripten dokumentiert; Probe 1 des Machbarkeitstests
+bestätigt sie im Mandanten.
 
 ## Was bewusst wegfällt gegenüber Claude Code
 
@@ -150,7 +170,7 @@ Ein Testagent mit der Copilot-Laufzeit und einem Mini-Skill.
 
 | Probe | Bestanden wenn | Wenn nicht |
 |---|---|---|
-| 1 Skript aus dem Skill | Skill-Skript rendert eine Mini-HTML, Datei erscheint im Chat | Codeblock-Ersatz aus SKILL.md nutzen |
+| 1 Skript aus dem Skill | Skill-Skript rendert eine Mini-HTML, Datei erscheint im Chat | Paket nicht nutzbar, mit IT klären |
 | 2 HTML-Download | .html kommt als Dateikarte | Ausgabe als PDF über reportlab |
 | 3 Datenblock lesen | hochgeladene HTML wird samt Datenblock gelesen | Excel-Übergabe |
 | 4 URL und PDF | Agent nennt aus einem Geschäftsbericht Zahl, Seite, Link | Urteilsstufe „durch Suche gestützt“, Cowork-Ausweg |
@@ -161,9 +181,8 @@ Dazu je Probe Dauer und verbrauchte Copilot Credits notieren.
 ## Pflege im Repo
 
 copilot-studio/zwei-agenten/ hält Instructions, Skillordner und Renderskript.
-Ein Build-Skript prüft Zeichenlängen, testet das Renderskript lokal mit
-Beispieldaten, setzt den Codeblock-Ersatz in SKILL.md ein und packt die ZIPs.
-Hochgeladen werden nur die erzeugten Pakete.
+tools/build.py prüft Zeichen- und Dateigrenzen, führt die Tests mit fiktiven
+Beispieldaten aus und packt die ZIPs nach dist/. Hochgeladen werden nur diese Pakete.
 
 ## Ersatzwege
 

@@ -1,5 +1,9 @@
 # Firmenbriefing in Microsoft Copilot Studio: Vorgehensvorschlag
 
+> **Aktueller Stand (24.11.2026):** Umsetzung mit zwei Agenten und Skills als
+> ZIP-Paketen in `zwei-agenten/`. Einrichtung: `zwei-agenten/README.md`.
+> Dieses Dokument beschreibt frühere Varianten und bleibt zum Vergleich erhalten.
+
 Stand: 13.11.2026. Grundlage: Nutzerantworten vom selben Tag und die am Ende
 genannten Microsoft-Learn-Seiten. Die bestehende Kopie unter copilot-cowork/
 wird ausdrücklich nicht weiterverwendet.

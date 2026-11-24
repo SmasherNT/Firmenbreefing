@@ -1,0 +1,25 @@
+{
+ "quellen": [
+  {"id": "Q1", "titel": "Geschäftsbericht 2025", "herausgeber": "Musterwerk GmbH", "datum": "2026-04-15", "url": "https://www.example.com/gb-2025.pdf", "abruf": "2026-11-20", "art": "original", "geoeffnet": true},
+  {"id": "Q2", "titel": "Musterwerk eröffnet Servicezentrum <Nord>", "herausgeber": "Beispiel-Fachblatt", "datum": "2026-09-02", "url": "https://news.example.org/musterwerk-service", "abruf": "2026-11-20", "art": "medien", "geoeffnet": true},
+  {"id": "Q3", "titel": "Teamseite", "herausgeber": "Musterwerk GmbH", "datum": "2026-10-01", "url": "https://www.example.com/team", "abruf": "2026-11-20", "art": "original", "geoeffnet": false}
+ ],
+ "claims": [
+  {"id": "T1", "aussage": "Musterwerk erzielte 2025 einen Konzernumsatz von 412 Mio. EUR.", "ursprung": "fakt", "status": "berichtet", "datum": "2026-04-15", "quellen": ["Q1"], "belegstelle": "S. 12, Kennzahlenübersicht", "stufe": "A"},
+  {"id": "T2", "aussage": "Musterwerk beschäftigte Ende 2025 rund 1.900 Mitarbeitende.", "ursprung": "fakt", "status": "berichtet", "datum": "2026-04-15", "quellen": ["Q1"], "belegstelle": "S. 14", "stufe": "B"},
+  {"id": "T3", "aussage": "Musterwerk hat im September 2026 ein Servicezentrum in Hamburg eröffnet.", "ursprung": "medien", "status": "eröffnet laut Bericht", "datum": "2026-09-02", "quellen": ["Q2"], "belegstelle": "Absatz 1", "stufe": "A"},
+  {"id": "H1", "aussage": "Erika Beispiel wird auf der Teamseite als Leiterin Vertrieb Europa geführt.", "ursprung": "hersteller", "status": "aktuell laut Website", "quellen": ["Q3"], "belegstelle": "Abschnitt Management", "stufe": "A"}
+ ],
+ "inhalt": {
+  "unternehmen": {
+   "profil": [{"feld": "Umsatz 2025", "wert": "412 Mio. EUR (Konzern)", "claims": ["T1"]}, {"feld": "Beschäftigte", "wert": "rund 1.900 (Ende 2025)", "claims": ["T2"]}],
+   "timeline": [{"datum": "2026-09-02", "ereignis": "Servicezentrum Hamburg eröffnet", "status": "laut Fachmedium", "claims": ["T3"]}],
+   "luecken": ["Kein Quartalsbericht 2026 öffentlich gefunden."]
+  },
+  "personen": [{"name": "Erika Beispiel", "position_laut_nutzer": "Vertriebsleiterin", "verifizierung": "bestätigt durch H1, abweichende Bezeichnung",
+   "einleitung": {"text": "Leiterin Vertrieb Europa laut Unternehmenswebsite.", "claims": ["H1"]},
+   "snapshot": [{"feld": "Rolle", "wert": "Leiterin Vertrieb Europa", "claims": ["H1"]}],
+   "werdegang": [], "medien": [], "luecken": ["Kein öffentlicher Werdegang gefunden."]}]
+ },
+ "phasen": {"firmenbasis": "fertig", "person": "fertig"}
+}

@@ -1,0 +1,144 @@
+{
+ "pruefung": {
+  "stand": "2026-11-21",
+  "umfang": {
+   "kapitel": "alle",
+   "nur_a": false
+  },
+  "zusammenfassung": "Ein Fakt weicht vom Beleg ab; eine Quelle war nicht erreichbar.",
+  "claims": [
+   {
+    "id": "T1",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A",
+    "beleg": "https://www.example.com/gb-2025.pdf S. 12",
+    "begruendung": "Wert und Jahr stimmen."
+   },
+   {
+    "id": "T3",
+    "urteil": "durch_suche_gestuetzt",
+    "stufe": "A",
+    "begruendung": "Zweiter Bericht über Suche gefunden, Original nicht geöffnet."
+   },
+   {
+    "id": "H1",
+    "urteil": "nicht_erreichbar",
+    "stufe": "A",
+    "begruendung": "Teamseite nicht abrufbar."
+   },
+   {
+    "id": "P1",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A",
+    "begruendung": "Datenblatt nennt 150 °C."
+   },
+   {
+    "id": "P2",
+    "urteil": "abweichend",
+    "stufe": "A",
+    "begruendung": "Bericht nennt Pilotserie, nicht Serienfertigung.",
+    "korrektur": "Status auf 'Pilotserie laut Hersteller' ändern."
+   },
+   {
+    "id": "C1",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "C2",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "M1",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "M2",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "F_waermepumpen_1",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "F_waermepumpen_2",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "T2",
+    "urteil": "nicht_einzeln_geprueft",
+    "stufe": "B"
+   },
+   {
+    "id": "P3",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "B"
+   }
+  ],
+  "ableitungen": [
+   {
+    "id": "I1",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I2",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I3",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I4",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I5",
+    "urteil": "eingeschraenkt",
+    "begruendung": "Nur ein Medienbericht."
+   },
+   {
+    "id": "I6",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I7",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I8",
+    "urteil": "nicht_gestuetzt",
+    "begruendung": "Basis P2 abweichend.",
+    "korrektur": "Keyfact streichen oder auf Pilotserie anpassen."
+   },
+   {
+    "id": "I9",
+    "urteil": "nicht_gestuetzt",
+    "begruendung": "Basis P2 abweichend; höchste belegte Stufe ist Kundenprogramm/Pilot."
+   },
+   {
+    "id": "S1",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "S2",
+    "urteil": "gestuetzt"
+   }
+  ],
+  "stichprobe": [
+   {
+    "gruppe": "Unternehmen, Q1, Kennzahlen B",
+    "auswahl": "T2",
+    "ergebnis": "nicht einzeln geprüft"
+   }
+  ],
+  "hinweise": [
+   "Fiktives Beispiel für Tests."
+  ]
+ }
+}

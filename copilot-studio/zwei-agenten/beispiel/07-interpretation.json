@@ -1,0 +1,26 @@
+{
+ "interpretation": {
+  "summary": {
+   "highlights": [
+    {"id": "I1", "label": "Konzernumsatz", "wert": "412 Mio. EUR", "bezug": "Musterwerk-Konzern", "zeitraum": "Geschäftsjahr 2025", "basis": ["T1"]},
+    {"id": "I2", "label": "Max. Vorlauf HT-400 (Herstellerangabe)", "wert": "150 °C", "bezug": "Produkt HT-400", "zeitraum": "Stand 2026", "basis": ["P1"]},
+    {"id": "I3", "label": "Markt > 1 MW", "wert": "1.200 Stück", "bezug": "Europa", "zeitraum": "2025", "basis": ["M1"]}
+   ],
+   "kernaussagen": [
+    {"id": "I4", "titel": "Hochtemperatur als Unterscheidungsmerkmal", "vorschau": "Laut Herstellerangaben höhere Vorlauftemperatur als ein Wettbewerber.", "aussage": "Die HT-400 erreicht laut Hersteller höhere Vorlauftemperaturen als das verglichene X-500.", "begruendung": "Vergleich zweier Herstellerangaben.", "unsicherheit": "Keine unabhängigen Messungen.", "basis": ["P1", "M2"]},
+    {"id": "I5", "titel": "Service wird regional ausgebaut", "vorschau": "Neues Servicezentrum in Hamburg laut Fachmedium.", "aussage": "Musterwerk baut seine Servicepräsenz in Norddeutschland aus.", "begruendung": "Eröffnung des Servicezentrums.", "unsicherheit": "Nur ein Medienbericht.", "basis": ["T3"]},
+    {"id": "I6", "titel": "Konzernrückhalt", "vorschau": "Vollständig im Besitz einer Holding.", "aussage": "Die Eigentümerstruktur ist einfach und stabil.", "begruendung": "100 % Holding laut Geschäftsbericht.", "unsicherheit": "", "basis": ["C1"]},
+    {"id": "I7", "titel": "JV für Großanlagen", "vorschau": "50/50-JV, Kontrolle nicht belegt.", "aussage": "Großanlagen werden über ein Joint Venture adressiert.", "begruendung": "JV laut Anhang.", "unsicherheit": "Kontrollrechte unbekannt.", "basis": ["C2"]}
+   ]
+  },
+  "keyfacts": [{"id": "I8", "modul": "portfolio", "titel": "Serienreife Hochtemperatur", "fakt": "HT-400 laut Hersteller in Serie.", "insight": "Das Kernprodukt ist über die Demonstrationsphase hinaus.", "basis": ["P2"]}],
+  "positionierung": [{"id": "I9", "dimension": "Produktreife HT-400", "urteil": "Stufe 6 Serie (laut Hersteller)", "aussage": "Höchste belegte Stufe ist Serienfertigung laut Herstellerangabe.", "methode": "portfolio-maturity-v1", "unsicherheit": "Nur Herstellerangabe.", "basis": ["P2"]}],
+  "swot": {
+   "staerken": [{"id": "S1", "titel": "Hochtemperatur-Kompetenz", "aussage": "Höchste Vorlauftemperatur im Vergleich laut Herstellerangaben.", "einschraenkung": "Herstellerangaben", "basis": ["I4"]}],
+   "schwaechen": [], "chancen": [{"id": "S2", "titel": "Förderung Prozesswärme", "aussage": "Neue Förderung kann Nachfrage stützen.", "basis": ["F_waermepumpen_2"]}], "risiken": []
+  },
+  "grenzen": ["Vergleich beruht auf Herstellerangaben."]
+ },
+ "offen": {"luecken": ["Keine unabhängigen Leistungstests gefunden."], "fragen": ["Welche Referenzkunden nutzen die HT-400 im Dauerbetrieb?"]},
+ "phasen": {"interpretation": "fertig"}
+}
