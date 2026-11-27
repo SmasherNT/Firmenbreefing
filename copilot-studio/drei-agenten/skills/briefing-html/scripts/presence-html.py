@@ -4,6 +4,9 @@ import html
 import re
 from datetime import date
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from vorlagen import vorlage
 
 METHOD = 'regional-presence-v2'
 SECTION = 'regional_presence'
@@ -238,5 +241,4 @@ def render(regions, assessments, detail, as_of):
         state = str(score) + '/5' if score is not None else 'Geplant' if row and row.get('assessment_status') == 'geplant' else 'Nicht eindeutig bestimmbar' if row else 'Noch nicht bewertet'
         out += '<details class="rp-profile" id="presence-region-' + esc(region['id']) + '"><summary><strong>' + esc(region['label']) + '</strong><span>' + esc(state) + ' · Deep Dive</span></summary><div class="rp-profile-body">' + detail(region, row) + '</div></details>'
     out += '</div></div>'
-    assets = Path(__file__).resolve().parents[1]/'references/templates'
-    return '<style>' + (assets/'presence.css').read_text(encoding='utf-8') + '</style>' + out + '<script>' + (assets/'presence.js').read_text(encoding='utf-8') + '</script>'
+    return '<style>' + vorlage('presence.css') + '</style>' + out + '<script>' + vorlage('presence.js') + '</script>'

@@ -260,5 +260,31 @@ class Html(unittest.TestCase):
             self.assertEqual(B.main(["validieren", "--daten", pfad]), 0)
 
 
+
+class Paket(unittest.TestCase):
+    """Was der Agent Builder beim Hochladen eines Skills verlangt."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.build = modul("build", "tools/build.py")
+
+    def test_skills_nur_erlaubte_dateitypen(self):
+        for wurzel, _, dateien in os.walk(os.path.join(BASIS, "skills")):
+            for d in dateien:
+                if "__pycache__" in wurzel or d.endswith(".pyc"):
+                    continue
+                with self.subTest(datei=os.path.join(wurzel, d)):
+                    self.assertIn(os.path.splitext(d)[1].lower(), self.build.ERLAUBT)
+
+    def test_html_skill_enthaelt_nur_md_und_py(self):
+        ordner = os.path.join(BASIS, "skills", "briefing-html")
+        typen = {os.path.splitext(rel)[1] for _, rel in self.build.dateien(ordner)}
+        self.assertEqual(typen, {".md", ".py"})
+
+    def test_vorlagen_py_passt_zu_html_vorlagen(self):
+        with open(os.path.join(BASIS, self.build.VORLAGEN_ZIEL), "rb") as f:
+            self.assertEqual(f.read(), self.build.vorlagen_py())
+
+
 if __name__ == "__main__":
     unittest.main()

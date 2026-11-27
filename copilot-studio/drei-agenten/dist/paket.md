@@ -31,7 +31,7 @@ Automatisch erzeugt von tools/build.py. Nicht von Hand ändern.
 
 | Datei | Größe | SHA-256 (gekürzt) |
 |---|---|---|
-| skills/briefing-html.zip | 83277 Bytes | 1482704d2efee7ae |
+| skills/briefing-html.zip | 79272 Bytes | 3be00b1e58ed5e37 |
 
 ## Machbarkeitstest
 

@@ -6,7 +6,8 @@ description: Erzeugt aus briefing-daten.xlsx oder briefing-daten-geprueft.xlsx e
 # Briefing-HTML
 
 Die HTML entsteht ausschließlich durch das Skript `scripts/briefing_html.py`.
-Es nutzt eine feste Vorlage und feste Bausteine in `references/templates/`.
+Es nutzt eine feste Vorlage und feste Bausteine: die Skripte `*-html.py` und
+`vorlagen.py` im selben Ordner. Alle Skripte müssen zusammen in `scripts/` liegen.
 Schreibe oder ändere nie selbst HTML, CSS oder JavaScript, und erfinde keine
 Inhalte. Alles, was in der HTML steht, kommt aus der Datei des Nutzers.
 

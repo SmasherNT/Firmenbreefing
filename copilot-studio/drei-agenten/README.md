@@ -22,11 +22,12 @@ Einrichtung Schritt für Schritt: ANLEITUNG.md. Grafik: architektur.png.
 | agenten/ | Instructions und Einstellungen je Agent |
 | skills/ | Quellordner der neun Skills |
 | skills/briefing-grundlagen/scripts/briefing.py | Zusammenführen, Validieren, Mindestregeln, Prüfung auswerten, Excel |
-| skills/briefing-html/scripts/briefing_html.py | Seitenzusammenbau; nutzt die unveränderten Claude-Bausteine *-html.py und references/templates/ |
+| skills/briefing-html/scripts/briefing_html.py | Seitenzusammenbau; nutzt die Claude-Bausteine *-html.py und die eingebetteten Vorlagen in vorlagen.py |
+| html-vorlagen/ | Quellen der HTML-, CSS- und JS-Vorlagen; der Build bettet sie in vorlagen.py ein, weil der Agent Builder in Skills keine .css-Dateien annimmt |
 | machbarkeitstest/ | Test-Skill, Proben, Protokoll |
 | beispiel/ | fiktive Beispieldaten in acht Teilen, inklusive Prüfung und Vertiefung |
 | tests/ | automatische Tests |
-| tools/build.py | synchronisiert die Skriptkopie, prüft Grenzen, führt Tests aus, baut dist/ |
+| tools/build.py | erzeugt Skriptkopie und vorlagen.py, prüft Grenzen und erlaubte Dateitypen, führt Tests aus, baut dist/ |
 | dist/ | ZIP-Dateien zum Hochladen und Gesamtpaket firmenbriefing-drei-agenten.zip |
 
 ## Pflege

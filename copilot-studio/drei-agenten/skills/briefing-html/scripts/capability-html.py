@@ -1,6 +1,9 @@
 """Render the approved capability layout from reviewed, task-specific records."""
 import html
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from vorlagen import vorlage
 
 
 def esc(value):
@@ -89,5 +92,4 @@ def render(criteria, peers, cells, company, detail, source_counts, reference_id=
         out += '</div>'
     out += '</div></details><section class="cm-detail" aria-live="polite" hidden></section>'
     out += '<div class="cm-fallback"><h3>Vollständige Bewertungen &amp; Originalquellen</h3>' + ''.join(records) + '</div></div>'
-    assets = Path(__file__).resolve().parents[1] / 'references/templates'
-    return '<style>' + (assets / 'capability.css').read_text(encoding='utf-8') + '</style>' + out + '<script>' + (assets / 'capability.js').read_text(encoding='utf-8') + '</script>'
+    return '<style>' + vorlage('capability.css') + '</style>' + out + '<script>' + vorlage('capability.js') + '</script>'

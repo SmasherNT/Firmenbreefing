@@ -1,8 +1,13 @@
 #!/usr/bin/env python3
 """Prüft Skills und Instructions der drei Agenten und packt alles als ZIP.
 
-  python3 tools/build.py            Datenskript synchronisieren, prüfen, Tests ausführen, dist/ neu schreiben
-  python3 tools/build.py --pruefen  nur prüfen, ob dist/ und die Skriptkopie aktuell sind (Exit 1, wenn nicht)
+  python3 tools/build.py            abgeleitete Dateien erzeugen, prüfen, Tests ausführen, dist/ neu schreiben
+  python3 tools/build.py --pruefen  nur prüfen, ob dist/ und die abgeleiteten Dateien aktuell sind (Exit 1, wenn nicht)
+
+Abgeleitete Dateien (nie von Hand ändern):
+  skills/briefing-html/scripts/briefing.py   Kopie von skills/briefing-grundlagen/scripts/briefing.py
+  skills/briefing-html/scripts/vorlagen.py   alle Dateien aus html-vorlagen/ als Python-Texte, weil der
+                                             Agent Builder in Skills z. B. keine .css-Dateien annimmt
 """
 import argparse, hashlib, io, os, re, subprocess, sys, zipfile
 
@@ -17,6 +22,14 @@ AGENTEN = {
 TITEL = {"recherche": "Firmenbriefing Recherche", "pruefung": "Firmenbriefing Prüfung", "html": "Firmenbriefing HTML"}
 QUELLE = os.path.join("skills", "briefing-grundlagen", "scripts", "briefing.py")
 KOPIE = os.path.join("skills", "briefing-html", "scripts", "briefing.py")
+VORLAGEN_QUELLE = "html-vorlagen"
+VORLAGEN_ZIEL = os.path.join("skills", "briefing-html", "scripts", "vorlagen.py")
+# Dateitypen, die der Agent Builder in Skills annimmt (Microsoft Learn, „Skills in declarative agents“,
+# Tabelle „Supported file and script types“, Stand 18.11.2026). Alles andere lehnt der Upload ab.
+ERLAUBT = {".json", ".xml", ".yaml", ".yml", ".ini", ".config", ".utf8", ".docx", ".doc", ".docm", ".pdf",
+           ".txt", ".rtf", ".md", ".ppt", ".pptx", ".ppsm", ".xlsx", ".xls", ".xlsm", ".csv", ".tsv", ".html",
+           ".htm", ".png", ".jpg", ".jpeg", ".gif", ".bmp", ".log",
+           ".py", ".js", ".mjs", ".cjs", ".ts", ".mts", ".sh", ".bash"}
 GRENZEN = {"skills_je_agent": 8, "skill_md_zeichen": 20000, "instructions_zeichen": 8000,
            "datei_bytes": 25 * 1024 * 1024, "zip_bytes": 10 * 1024 * 1024, "dateien_je_agent": 350,
            "ordnertiefe": 3, "beschreibung_zeichen": 1024}
@@ -67,6 +80,8 @@ def pruefe_skill(ordner, fehler):
             fehler.append("%s: %s größer als 25 MB" % (name, rel))
         if rel.count("/") > GRENZEN["ordnertiefe"]:
             fehler.append("%s: %s liegt tiefer als drei Ordner" % (name, rel))
+        if os.path.splitext(rel)[1].lower() not in ERLAUBT:
+            fehler.append("%s: Dateityp von %s nimmt der Agent Builder nicht an" % (name, rel))
     return liste
 
 
@@ -82,14 +97,37 @@ def zip_bytes(liste):
     return puffer.getvalue()
 
 
-def kopie_pruefen(synchronisieren):
-    quelle, kopie = os.path.join(BASIS, QUELLE), os.path.join(BASIS, KOPIE)
-    inhalt = open(quelle, "rb").read()
-    if synchronisieren:
-        with open(kopie, "wb") as f:
-            f.write(inhalt)
-        return []
-    return [] if os.path.exists(kopie) and open(kopie, "rb").read() == inhalt else ["Kopie von briefing.py im Skill briefing-html ist veraltet"]
+def vorlagen_py():
+    """Erzeugt vorlagen.py: jede Datei aus html-vorlagen/ als Text, zeilenweise, damit Änderungen lesbar bleiben."""
+    ordner = os.path.join(BASIS, VORLAGEN_QUELLE)
+    teile = ['"""Eingebettete Vorlagen für briefing_html.py und die Bausteine *-html.py.',
+             "",
+             "Automatisch erzeugt von tools/build.py aus html-vorlagen/. Nicht von Hand ändern.",
+             "Der Agent Builder nimmt in Skills keine .css-Dateien an; deshalb liegen alle Vorlagen hier.",
+             '"""', "", "VORLAGEN = {"]
+    for datei in sorted(os.listdir(ordner)):
+        with open(os.path.join(ordner, datei), encoding="utf-8") as f:
+            zeilen = f.read().splitlines(keepends=True)
+        teile.append("    %r: (" % datei)
+        teile += ["        %r" % z for z in zeilen] or ["        ''"]
+        teile.append("    ),")
+    teile += ["}", "", "", "def vorlage(name):",
+              '    """Text einer Vorlage, z. B. vorlage("portfolio.css")."""', "    return VORLAGEN[name]", ""]
+    return "\n".join(teile).encode("utf-8")
+
+
+def abgeleitete_pruefen(synchronisieren):
+    fehler = []
+    for ziel, inhalt, text in (
+            (KOPIE, open(os.path.join(BASIS, QUELLE), "rb").read(), "Kopie von briefing.py im Skill briefing-html ist veraltet"),
+            (VORLAGEN_ZIEL, vorlagen_py(), "vorlagen.py im Skill briefing-html passt nicht zu html-vorlagen/")):
+        pfad = os.path.join(BASIS, ziel)
+        if synchronisieren:
+            with open(pfad, "wb") as f:
+                f.write(inhalt)
+        elif not os.path.exists(pfad) or open(pfad, "rb").read() != inhalt:
+            fehler.append(text)
+    return fehler
 
 
 def bauen():
@@ -157,7 +195,7 @@ def main():
     ap.add_argument("--pruefen", action="store_true", help="nur prüfen, ob dist/ aktuell ist")
     ap.add_argument("--ohne-tests", action="store_true")
     a = ap.parse_args()
-    fehler = kopie_pruefen(not a.pruefen)
+    fehler = abgeleitete_pruefen(not a.pruefen)
     if fehler:
         print("\n".join("FEHLER: " + f for f in fehler))
         return 1

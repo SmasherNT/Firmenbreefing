@@ -1,6 +1,9 @@
 """Compact module facts/insights from reviewed positioning claims."""
 import html
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from vorlagen import vorlage
 
 MODULES = ('portfolio', 'cluster', 'market')
 SECTION = 'module_insights'
@@ -92,4 +95,4 @@ def render(module, rows, requested, detail):
 
 
 def css():
-    return '<style>' + (Path(__file__).resolve().parents[1]/'references/templates/module-insights.css').read_text(encoding='utf-8') + '</style>'
+    return '<style>' + vorlage('module-insights.css') + '</style>'

@@ -3,7 +3,8 @@
 
 Layout wie die Briefings des Claude-Systems: Reiter Überblick, Gesprächspartner, Fokusthemen,
 Quellen; Reifematrix, Unternehmensnetzwerk, Präsenzprofile, Capability Matrix. Die Bausteine
-*-html.py und references/templates/ sind unverändert aus dem Claude-System übernommen.
+*-html.py und die Vorlagen (eingebettet in vorlagen.py) stammen aus dem Claude-System;
+in den Bausteinen ist nur das Laden der Vorlagen angepasst.
 Keine Modell- oder Webaufrufe; offline lesbar und druckbar.
 
   python3 briefing_html.py --daten briefing-daten.xlsx --out briefing.html
@@ -14,7 +15,8 @@ from datetime import date
 from pathlib import Path
 
 HIER = Path(__file__).resolve().parent
-VORLAGEN = HIER.parent / "references" / "templates"
+sys.path.insert(0, str(HIER))
+from vorlagen import vorlage  # noqa: E402  (eingebettete Vorlagen, erzeugt von tools/build.py)
 
 
 def _modul(name, datei):
@@ -368,7 +370,7 @@ class Seite:
                 "nodes": list(knoten.values()), "edges": kanten,
                 "products": [{"id": p, "label": produkte[p]} for p in produkte if p in benutzt],
                 "sources": [self.quellen[s] for s in dict.fromkeys(quellen_ids)]}
-        frag = (VORLAGEN / "cluster-network.html").read_text(encoding="utf-8")
+        frag = vorlage("cluster-network.html")
         frag = frag.replace("__CLUSTER_NETWORK_JSON__", safe_json(netz))
         frag = frag.replace("<tbody></tbody>", "<tbody>" + "".join(zeilen) + "</tbody>", 1)
         frag = frag.replace("__CLUSTER_ACTOR_TABLES__", CLUSTER.actor_tables(netz), 1)
@@ -683,8 +685,8 @@ class Seite:
             teile.append("Gesprächspartner: " + "; ".join(p.get("name", "") + (" · " + p["position_laut_nutzer"] if p.get("position_laut_nutzer") else "") for p in self.a["personen"]))
         badge = "Ungeprüfte Faktenbasis & Analysteninterpretation" if not self.p else B.ERGEBNIS.get(self.p.get("ergebnis"), "Geprüft") + " · Fakten & Analysteninterpretation"
         werte = {"TITLE": esc(self.firma), "DATE": esc(self.a.get("stichtag")), "SCOPE": esc(" · ".join(teile)), "BADGE": esc(badge), "TABS": tabs, "CONTENT": inhalt}
-        vorlage = (VORLAGEN / "briefing.html").read_text(encoding="utf-8")
-        seite = re.sub(r"__([A-Z]+)__", lambda m: werte.get(m[1], m[0]), vorlage)
+        rahmen = vorlage("briefing.html")
+        seite = re.sub(r"__([A-Z]+)__", lambda m: werte.get(m[1], m[0]), rahmen)
         block = '<script type="application/json" id="briefing-daten">' + B.datenblock(self.d) + "</script>"
         return seite.replace("</body>", block + "</body>", 1) if "</body>" in seite else seite + block
 

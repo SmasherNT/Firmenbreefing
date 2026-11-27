@@ -3,6 +3,9 @@ from html import escape
 from pathlib import Path
 from datetime import date
 import calendar
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from vorlagen import vorlage
 
 ESC = lambda value: escape(str(value), quote=True)
 FIELDS = ('snapshot', 'career', 'expertise', 'responsibilities')
@@ -98,7 +101,7 @@ def render(profile, claims, sources, company, as_of):
     remaining=[c for c in profile['claim_ids'] if c not in used]
     if remaining:
         body+=block('Weitere belegte Profilangaben',''.join('<p>'+ESC(claims[c]['statement'])+refs([c])+'</p>' for c in remaining),'05')
-    css=(Path(__file__).resolve().parents[1]/'references/templates/profile.css').read_text()
+    css=vorlage('profile.css')
     return '<style>'+css+'</style><article class="person-profile">'+body+'</article>'
 
 

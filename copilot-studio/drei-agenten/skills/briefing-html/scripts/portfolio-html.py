@@ -1,6 +1,9 @@
 """Render the approved portfolio style from reviewed product/interpretation records."""
 import html
 from pathlib import Path
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from vorlagen import vorlage
 
 COLORS = ("#176e91", "#4d7852", "#7960a0", "#196a79", "#9a563e", "#ad8429")
 
@@ -63,5 +66,4 @@ def render(inventory, assessments, claims, evidence, links, stages):
             out += '<details class="pf-evidence"><summary>' + esc(claims[cid]["statement"]) + '</summary><p class="meta">' + esc(claims[cid]["kind"]) + '</p><p>' + esc(claims[cid]["uncertainty"]) + '</p>' + evidence(claims[cid]) + links([cid]) + '</details>'
         out += '</dd></dl></div></details>'
     out += '</div></details></div>'
-    assets = Path(__file__).resolve().parents[1] / 'references/templates'
-    return '<style>' + (assets / 'portfolio.css').read_text(encoding='utf-8') + '</style>' + out + '<script>' + (assets / 'portfolio.js').read_text(encoding='utf-8') + '</script>'
+    return '<style>' + vorlage('portfolio.css') + '</style>' + out + '<script>' + vorlage('portfolio.js') + '</script>'
