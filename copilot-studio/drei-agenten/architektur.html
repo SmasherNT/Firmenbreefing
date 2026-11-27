@@ -1,0 +1,65 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><style>
+:root{--a1:#1d4ed8;--a1bg:#dbeafe;--a2:#b45309;--a2bg:#fef3c7;--a3:#047857;--a3bg:#d1fae5;--f:#475569;--fbg:#f1f5f9;--muted:#6b7280}
+*{box-sizing:border-box}body{margin:0;font-family:"DejaVu Sans",Arial,sans-serif;color:#1f2937;background:#fff}
+#c{position:relative;width:1500px;padding:30px 36px 28px}
+h1{margin:0 0 4px;font-size:26px}.sub{color:var(--muted);font-size:14px;margin-bottom:24px}
+.row{display:flex;gap:90px;align-items:stretch}
+.box{border:2px solid #9ca3af;border-radius:10px;padding:12px 14px;background:#fff;position:relative;flex:1}
+.t{font-weight:bold;font-size:16px;margin-bottom:6px}.d{font-size:12.5px;line-height:1.45;color:#374151}
+.user{border-color:#111827}.a1{border-color:var(--a1);background:var(--a1bg)}.a2{border-color:var(--a2);background:var(--a2bg);border-style:dashed}.a3{border-color:var(--a3);background:var(--a3bg)}
+.file{border-color:var(--f);background:var(--fbg)}
+.sk{display:inline-block;border:1px solid #94a3b8;background:#fff;border-radius:6px;padding:2px 7px;font-size:11.5px;margin:3px 3px 0 0}
+.gap{height:64px}.mono{font-family:"DejaVu Sans Mono",monospace;font-size:12.5px;font-weight:bold}
+.tag{display:inline-block;font-size:11px;padding:1px 7px;border-radius:9px;background:#fff;border:1px solid #cbd5e1;margin-right:4px}
+ul{margin:6px 0 0;padding-left:18px}li{margin:2px 0}
+.note{margin-top:22px;font-size:12.5px;color:#374151;border-top:1px solid #e5e7eb;padding-top:10px;line-height:1.55}
+svg{position:absolute;left:0;top:0;pointer-events:none}
+</style></head><body><div id="c">
+<h1>Firmenbriefing in Copilot: drei Agenten, Übergabe per Excel</h1>
+<div class="sub">Agent Builder in Microsoft 365 Copilot. Jeder Agent arbeitet unabhängig. Der Nutzer gibt die Excel-Datei von Hand weiter. Stand 27.11.2026, im Mandanten noch nicht getestet.</div>
+
+<div class="box user" id="u"><div class="t">Nutzer</div><div class="d">„Briefing zu [Firma], Fokus: [Thema], Gesprächspartner: [Name], [Position]“ oder „Nur Portfolio zu [Firma]“ · bei langen Aufträgen mehrfach „weiter“</div></div>
+<div class="gap"></div>
+<div class="row">
+ <div class="box a1" id="a1"><div class="t">1 · Firmenbriefing Recherche</div>
+  <div class="d">Recherchiert alle Kapitel möglichst ausführlich, in Runden. Schreibt Fakten mit Quellen, dazu Summary, Reife, Präsenz, Positionierung und SWOT. Mindestregeln im Skript erzwingen Tiefe.</div>
+  <div><span class="tag">Websuche</span><span class="tag">7 Skills</span></div>
+  <span class="sk">briefing-grundlagen</span><span class="sk">firmenbasis-person</span><span class="sk">portfolio</span><span class="sk">cluster</span><span class="sk">markt-wettbewerb</span><span class="sk">fokusthema</span><span class="sk">interpretation</span></div>
+ <div class="box a2" id="a2"><div class="t">2 · Firmenbriefing Prüfung · optional</div>
+  <div class="d">Prüft jede Quelle selbst, korrigiert belegte Abweichungen direkt, vertieft Lücken und gewünschte Themen, passt abhängige Aussagen an. Jede Änderung landet im Änderungsprotokoll.</div>
+  <div><span class="tag">Websuche</span><span class="tag">8 Skills</span></div>
+  <span class="sk">briefing-grundlagen</span><span class="sk">pruefung-vertiefung</span><span class="sk">+ die 6 Fach-Skills</span></div>
+ <div class="box a3" id="a3"><div class="t">3 · Firmenbriefing HTML</div>
+  <div class="d">Erzeugt per Skript aus einer der beiden Excel-Dateien die HTML. Feste Vorlage, keine eigenen Inhalte, keine Recherche.</div>
+  <div><span class="tag">ohne Websuche</span><span class="tag">1 Skill</span></div>
+  <span class="sk">briefing-html</span></div>
+</div>
+<div class="gap"></div>
+<div class="row">
+ <div class="box file" id="f1"><div class="t"><span class="mono">briefing-daten.xlsx</span></div><div class="d">Blätter Claims, Quellen, Interpretationen und vollständiger Datenstand. Ungeprüft.</div></div>
+ <div class="box file" id="f2"><div class="t"><span class="mono">briefing-daten-geprueft.xlsx</span></div><div class="d">Gleicher Aufbau, dazu Prüfurteile je Aussage, Vertiefungen und Blatt Änderungen mit alt und neu.</div></div>
+ <div class="box file" id="f3"><div class="t"><span class="mono">briefing.html</span></div><div class="d">Layout wie die Claude-Briefings:
+  <ul><li>Überblick: Summary, Entwicklungen, Reifematrix, Netzwerk, Präsenz, Capability Matrix, SWOT</li><li>je Gesprächspartner und Fokusthema ein Reiter</li><li>Quellen mit Prüfbericht und Änderungsprotokoll</li></ul></div></div>
+</div>
+<div style="height:64px"></div><div class="note"><b>Warum so:</b> Die drei Agenten bleiben unabhängig und einzeln austauschbar. Die Excel ist die feste Übergabe, die jeder Agent lesen kann und die man selbst öffnen kann. Die HTML entsteht immer durch dasselbe Skript, deshalb sieht sie vor und nach der Prüfung gleich aus.<br>
+<b>Offen bis zum Machbarkeitstest:</b> ob Excel-Dateien im Mandanten ausgegeben und wieder hochgeladen werden können, und ob die Agenten PDFs aus dem Web öffnen.</div>
+<svg id="s"></svg></div>
+<script>
+const C=document.getElementById('c'),S=document.getElementById('s');
+function r(id){const a=document.getElementById(id).getBoundingClientRect(),c=C.getBoundingClientRect();return{x:a.left-c.left,y:a.top-c.top,w:a.width,h:a.height}}
+let p='';const col={b:'#1d4ed8',o:'#b45309',g:'#047857',s:'#475569'};
+function lab(x,y,t,k){p+=`<rect x="${x-t.length*3.4-7}" y="${y-10}" width="${t.length*6.8+14}" height="20" rx="4" fill="#fff" stroke="${col[k]}"/><text x="${x}" y="${y+4}" font-size="12" text-anchor="middle" fill="${col[k]}" font-family="DejaVu Sans">${t}</text>`}
+function v(a,fa,b,fb,k,t,dash,lf){const A=r(a),B=r(b);const x1=A.x+A.w*fa,y1=A.y+A.h,x2=B.x+B.w*fb,y2=B.y;const m=(y1+y2)/2;
+ p+=`<path d="M${x1},${y1} C${x1},${m} ${x2},${m} ${x2},${y2}" fill="none" stroke="${col[k]}" stroke-width="2.4" ${dash?'stroke-dasharray="7 5"':''} marker-end="url(#m${k})"/>`;if(t)lab((x1+x2)/2,y1+(y2-y1)*(lf||0.5),t,k)}
+function h(a,b,k,t,yf,dash){const A=r(a),B=r(b);const y=A.y+A.h*yf;p+=`<path d="M${A.x+A.w},${y} H${B.x-2}" fill="none" stroke="${col[k]}" stroke-width="2.4" ${dash?'stroke-dasharray="7 5"':''} marker-end="url(#m${k})"/>`;if(t)lab((A.x+A.w+B.x)/2,y-16,t,k)}
+v('u',0.15,'a1',0.5,'b','Auftrag');
+v('a1',0.5,'f1',0.5,'b','Excel');
+v('a2',0.5,'f2',0.5,'o','Excel',true);
+v('a3',0.5,'f3',0.5,'g','HTML');
+// Upload-Pfeile von Dateien zu Agenten
+{const A=r('f1'),B=r('a2');const x1=A.x+A.w,y1=A.y+A.h*0.3,x2=B.x+B.w*0.15,y2=B.y+B.h;p+=`<path d="M${x1},${y1} C${x1+60},${y1} ${x2},${y2+40} ${x2},${y2+2}" fill="none" stroke="${col.s}" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ms)"/>`;lab(x1+46,y1-62,'optional hochladen','s');}
+{const A=r('f2'),B=r('a3');const x1=A.x+A.w,y1=A.y+A.h*0.3,x2=B.x+B.w*0.15,y2=B.y+B.h;p+=`<path d="M${x1},${y1} C${x1+60},${y1} ${x2},${y2+40} ${x2},${y2+2}" fill="none" stroke="${col.s}" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ms)"/>`;lab(x1+46,y1-62,'hochladen','s');}
+{const A=r('f1'),B=r('a3');const x1=A.x+A.w*0.5,y1=A.y+A.h,x2=B.x+B.w*0.85,y2=B.y+B.h;const yb=y1+34;p+=`<path d="M${x1},${y1} V${yb} H${B.x+B.w+30} V${y2+20} H${x2} V${y2+2}" fill="none" stroke="${col.s}" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ms)"/>`;lab((x1+B.x+B.w)/2,yb,'ohne Prüfung direkt hochladen','s');}
+let d='';for(const k in col)d+=`<marker id="m${k}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${col[k]}"/></marker>`;
+S.setAttribute('width',C.scrollWidth);S.setAttribute('height',C.scrollHeight);S.innerHTML=`<defs>${d}</defs>${p}`;
+</script></body></html>

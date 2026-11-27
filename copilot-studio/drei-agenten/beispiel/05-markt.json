@@ -1,0 +1,287 @@
+{
+ "quellen": [
+  {
+   "titel": "Marktstatistik Wärmepumpen 2025",
+   "herausgeber": "Beispielverband",
+   "datum": "2026-05-10",
+   "url": "https://verband.example.net/statistik-2025",
+   "abruf": "2026-11-20",
+   "art": "original",
+   "typ": "verband",
+   "geoeffnet": true,
+   "id": "Q1"
+  },
+  {
+   "id": "Q2",
+   "titel": "Produktdatenblatt X-500",
+   "herausgeber": "Andere AG",
+   "datum": "2026-03-01",
+   "url": "https://andere.example.net/datenblatt",
+   "abruf": "2026-11-20",
+   "art": "original",
+   "typ": "datenblatt",
+   "geoeffnet": true
+  },
+  {
+   "titel": "Musterwerk eröffnet Servicezentrum <Nord>",
+   "herausgeber": "Beispiel-Fachblatt",
+   "datum": "2026-09-02",
+   "url": "https://news.example.org/musterwerk-service",
+   "abruf": "2026-11-20",
+   "art": "medien",
+   "typ": "fachmedien",
+   "geoeffnet": true,
+   "id": "Q3"
+  },
+  {
+   "titel": "Hochtemperatur-Wärmepumpen im Vergleich",
+   "herausgeber": "Beispiel-Wirtschaftszeitung",
+   "datum": "2026-06-18",
+   "url": "https://zeitung.example.org/vergleich-ht",
+   "abruf": "2026-11-20",
+   "art": "medien",
+   "typ": "medien",
+   "geoeffnet": true,
+   "id": "Q4"
+  },
+  {
+   "id": "Q5",
+   "titel": "Produktseite Z-300",
+   "herausgeber": "Dritte GmbH",
+   "datum": "2026-04-01",
+   "url": "https://dritte.example.net/z-300",
+   "abruf": "2026-11-20",
+   "art": "original",
+   "typ": "produktseite",
+   "geoeffnet": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "M1",
+   "aussage": "Der Verband meldet für 2025 in Europa 1.200 verkaufte Industrie-Wärmepumpen über 1 MW.",
+   "ursprung": "fakt",
+   "status": "berichtet",
+   "datum": "2026-05-10",
+   "quellen": [
+    "Q1"
+   ],
+   "belegstelle": "Tabelle 3",
+   "stufe": "A"
+  },
+  {
+   "id": "M2",
+   "aussage": "Das Konkurrenzmodell X-500 erreicht laut Datenblatt bis zu 120 °C Vorlauf.",
+   "ursprung": "hersteller",
+   "status": "Herstellerangabe",
+   "quellen": [
+    "Q2"
+   ],
+   "belegstelle": "Seite 1",
+   "stufe": "A"
+  },
+  {
+   "id": "M3",
+   "aussage": "Der Verband meldet für 2025 ein Wachstum der verkauften Einheiten über 1 MW von 18 % gegenüber 2024.",
+   "ursprung": "fakt",
+   "status": "berichtet",
+   "datum": "2026-05-10",
+   "quellen": [
+    "Q1"
+   ],
+   "belegstelle": "Tabelle 3",
+   "stufe": "A"
+  },
+  {
+   "id": "M4",
+   "aussage": "Das Modell Z-300 der Dritte GmbH erreicht laut Hersteller bis zu 130 °C Vorlauf.",
+   "ursprung": "hersteller",
+   "status": "Herstellerangabe",
+   "quellen": [
+    "Q5"
+   ],
+   "belegstelle": "Technische Daten",
+   "stufe": "A"
+  },
+  {
+   "id": "M5",
+   "aussage": "Laut einem Zeitungsvergleich sind HT-400 und X-500 in mehreren Industrieanlagen in Betrieb.",
+   "ursprung": "medien",
+   "status": "in Betrieb laut Medien",
+   "datum": "2026-06-18",
+   "quellen": [
+    "Q4"
+   ],
+   "belegstelle": "Tabelle im Artikel",
+   "stufe": "A"
+  },
+  {
+   "id": "M6",
+   "aussage": "Musterwerk betreibt seit September 2026 ein eigenes Servicezentrum in Hamburg.",
+   "ursprung": "medien",
+   "status": "operativ laut Medien",
+   "datum": "2026-09-02",
+   "quellen": [
+    "Q3"
+   ],
+   "belegstelle": "Absatz 1",
+   "stufe": "A"
+  }
+ ],
+ "inhalt": {
+  "markt": {
+   "kennzahlen": [
+    {
+     "kennzahl": "Verkaufte Industrie-Wärmepumpen > 1 MW",
+     "wert": "1.200 Stück",
+     "definition": "Europa, 2025, Verbandsstatistik",
+     "claims": [
+      "M1"
+     ]
+    },
+    {
+     "kennzahl": "Wachstum der Stückzahl > 1 MW",
+     "wert": "18 %",
+     "definition": "Europa, 2025 gegenüber 2024, Verbandsstatistik",
+     "claims": [
+      "M3"
+     ]
+    }
+   ],
+   "vergleich": {
+    "einheit": "Hochtemperatur-Wärmepumpen",
+    "kriterien": [
+     {
+      "id": "temp",
+      "name": "Max. Vorlauftemperatur",
+      "typ": "kennzahl",
+      "einheit": "°C",
+      "frage": "Welche maximale Vorlauftemperatur nennt der Hersteller?",
+      "beleganforderung": "Datenblatt oder Produktseite",
+      "bedingungen": "Herstellerangabe, Maximalwert"
+     },
+     {
+      "id": "einsatz",
+      "name": "Belegter Einsatzstand",
+      "typ": "evidenzstufe",
+      "frage": "Wie weit ist der Einsatz öffentlich belegt?",
+      "beleganforderung": "Liefer- oder Betriebsnachweis",
+      "stufen": {
+       "1": "angekündigt",
+       "2": "Pilot oder Test",
+       "3": "in Betrieb bei Kunden",
+       "4": "Serie mit wiederholten Lieferungen"
+      }
+     },
+     {
+      "id": "fertigung",
+      "name": "Fertigungs- und Lieferfähigkeit",
+      "typ": "profil",
+      "frage": "Was ist zu Fertigung und Lieferung belegt?",
+      "beleganforderung": "Geschäftsbericht oder Medien"
+     }
+    ],
+    "zeilen": [
+     {
+      "akteur": "Musterwerk",
+      "angebot": "HT-400",
+      "referenz": true,
+      "zellen": {
+       "temp": {
+        "wert": 150,
+        "text": "bis zu 150 °C (Herstellerangabe)",
+        "claims": [
+         "P1"
+        ]
+       },
+       "einsatz": {
+        "stufe": 4,
+        "text": "Serie und Lieferungen",
+        "aussage": "Serie laut Hersteller und Auslieferung laut Fachmedium.",
+        "einordnung": "Zwei Belege für wiederholte Lieferung.",
+        "grenze": "Serienstand nur Herstellerangabe.",
+        "claims": [
+         "P2",
+         "P5"
+        ]
+       },
+       "fertigung": {
+        "text": "Serienfertigung laut Geschäftsbericht",
+        "claims": [
+         "P2"
+        ]
+       }
+      }
+     },
+     {
+      "akteur": "Andere AG",
+      "angebot": "X-500",
+      "zellen": {
+       "temp": {
+        "wert": 120,
+        "text": "bis zu 120 °C (Herstellerangabe)",
+        "claims": [
+         "M2"
+        ]
+       },
+       "einsatz": {
+        "stufe": 3,
+        "text": "in Betrieb laut Medien",
+        "claims": [
+         "M5"
+        ]
+       }
+      }
+     },
+     {
+      "akteur": "Dritte GmbH",
+      "angebot": "Z-300",
+      "zellen": {
+       "temp": {
+        "wert": 130,
+        "text": "bis zu 130 °C (Herstellerangabe)",
+        "claims": [
+         "M4"
+        ]
+       }
+      }
+     }
+    ]
+   },
+   "praesenz": [
+    {
+     "region": "Deutschland",
+     "laender": [
+      "Deutschland"
+     ],
+     "schwerpunkt": "Heimatmarkt, Service im Norden",
+     "produktbezug": "Wärmepumpen und Service",
+     "fokus": true,
+     "abdeckung": "Nur Servicestandort Hamburg öffentlich belegt; Produktionsstandort nicht recherchiert.",
+     "aktivitaeten": [
+      {
+       "akteur": "Musterwerk GmbH",
+       "land": "Deutschland",
+       "ort": "Hamburg",
+       "funktion": "Service",
+       "betreiber": "eigen",
+       "status": "operativ",
+       "statusdatum": "2026-09-02",
+       "produktbezug": "Service",
+       "beschreibung": "Eigenes Servicezentrum laut Fachmedium.",
+       "eigentum": "eigene Gesellschaft",
+       "claims": [
+        "M6"
+       ]
+      }
+     ]
+    }
+   ],
+   "luecken": [],
+   "ausnahmen": []
+  }
+ },
+ "phasen": {
+  "markt": "fertig"
+ }
+}

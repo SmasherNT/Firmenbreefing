@@ -1,0 +1,254 @@
+{
+ "quellen": [
+  {
+   "titel": "Marktstatistik Wärmepumpen 2025",
+   "herausgeber": "Beispielverband",
+   "datum": "2026-05-10",
+   "url": "https://verband.example.net/statistik-2025",
+   "abruf": "2026-11-20",
+   "art": "original",
+   "typ": "verband",
+   "geoeffnet": true,
+   "id": "Q1"
+  },
+  {
+   "id": "Q2",
+   "titel": "Förderprogramm Prozesswärme",
+   "herausgeber": "Beispielministerium",
+   "datum": "2026-08-15",
+   "url": "https://ministerium.example.gov/foerderung",
+   "abruf": "2026-11-20",
+   "art": "original",
+   "typ": "behoerde",
+   "geoeffnet": true
+  },
+  {
+   "titel": "Hochtemperatur-Wärmepumpen im Vergleich",
+   "herausgeber": "Beispiel-Wirtschaftszeitung",
+   "datum": "2026-06-18",
+   "url": "https://zeitung.example.org/vergleich-ht",
+   "abruf": "2026-11-20",
+   "art": "medien",
+   "typ": "medien",
+   "geoeffnet": true,
+   "id": "Q3"
+  }
+ ],
+ "claims": [
+  {
+   "id": "F_waermepumpen_1",
+   "aussage": "Industrielle Wärmepumpen über 1 MW: 1.200 verkaufte Einheiten in Europa 2025.",
+   "ursprung": "fakt",
+   "status": "berichtet",
+   "datum": "2026-05-10",
+   "quellen": [
+    "Q1"
+   ],
+   "belegstelle": "Tabelle 3",
+   "stufe": "A"
+  },
+  {
+   "id": "F_waermepumpen_2",
+   "aussage": "Das Ministerium hat im August 2026 ein Förderprogramm für Prozesswärme gestartet.",
+   "ursprung": "fakt",
+   "status": "gestartet",
+   "datum": "2026-08-15",
+   "quellen": [
+    "Q2"
+   ],
+   "belegstelle": "Pressemitteilung, Absatz 1",
+   "stufe": "A"
+  },
+  {
+   "id": "F_waermepumpen_3",
+   "aussage": "Das Förderprogramm hat laut Ministerium ein Volumen von 500 Mio. EUR bis 2029.",
+   "ursprung": "fakt",
+   "status": "Programmvolumen",
+   "datum": "2026-08-15",
+   "quellen": [
+    "Q2"
+   ],
+   "belegstelle": "Absatz 2",
+   "stufe": "A"
+  },
+  {
+   "id": "F_waermepumpen_4",
+   "aussage": "Ein Zeitungsvergleich nennt Musterwerk, Andere AG und Dritte GmbH als Anbieter von Hochtemperatur-Wärmepumpen.",
+   "ursprung": "medien",
+   "status": "Marktüberblick",
+   "datum": "2026-06-18",
+   "quellen": [
+    "Q3"
+   ],
+   "belegstelle": "Tabelle",
+   "stufe": "A"
+  },
+  {
+   "id": "F_waermepumpen_5",
+   "aussage": "Der Verband meldet für 2025 ein Wachstum der Einheiten über 1 MW von 18 %.",
+   "ursprung": "fakt",
+   "status": "berichtet",
+   "datum": "2026-05-10",
+   "quellen": [
+    "Q1"
+   ],
+   "belegstelle": "Tabelle 3",
+   "stufe": "A"
+  }
+ ],
+ "inhalt": {
+  "fokus": [
+   {
+    "id": "waermepumpen",
+    "titel": "Industrielle Wärmepumpen in Europa",
+    "ueberblick": {
+     "text": "Industrie-Wärmepumpen über 1 MW sind ein kleiner, wachsender Markt mit neuer öffentlicher Förderung.",
+     "claims": [
+      "F_waermepumpen_1",
+      "F_waermepumpen_2"
+     ]
+    },
+    "definition": {
+     "text": "Elektrisch angetriebene Wärmepumpen für Prozesswärme in Industriebetrieben, hier ab 1 MW.",
+     "region": "Europa",
+     "zeitraum": "2025 bis 2026",
+     "abgrenzung": "Ohne Gebäudewärme und ohne Anlagen unter 1 MW.",
+     "claims": [
+      "F_waermepumpen_1"
+     ]
+    },
+    "kennzahlen": [
+     {
+      "kennzahl": "Verkaufte Einheiten über 1 MW",
+      "wert": 1200,
+      "einheit": "Stück",
+      "zeitraum": "2025",
+      "abgrenzung": "Europa",
+      "definition": "Verbandsstatistik, Stückzahl",
+      "typ": "lieferung",
+      "claims": [
+       "F_waermepumpen_1"
+      ]
+     },
+     {
+      "kennzahl": "Wachstum der Stückzahl",
+      "wert": 18,
+      "einheit": "%",
+      "zeitraum": "2025 gegenüber 2024",
+      "abgrenzung": "Europa, über 1 MW",
+      "definition": "Verbandsstatistik",
+      "typ": "struktur",
+      "claims": [
+       "F_waermepumpen_5"
+      ]
+     },
+     {
+      "kennzahl": "Förderprogramm Prozesswärme",
+      "wert": 500,
+      "einheit": "Mio. EUR",
+      "zeitraum": "bis 2029",
+      "abgrenzung": "Programmbudget",
+      "definition": "Budget laut Ministerium",
+      "typ": "budget",
+      "claims": [
+       "F_waermepumpen_3"
+      ]
+     }
+    ],
+    "segmente": [
+     {
+      "titel": "Lebensmittelindustrie",
+      "text": "Prozesswärme für Molkereien und Brauereien.",
+      "claims": [
+       "F_waermepumpen_4"
+      ]
+     }
+    ],
+    "wertschoepfung": [],
+    "akteure": [
+     {
+      "akteur": "Musterwerk",
+      "rolle": "Hersteller",
+      "angebot": "HT-400",
+      "segment": "Hochtemperatur",
+      "stand": "Serie laut Hersteller",
+      "claims": [
+       "F_waermepumpen_4"
+      ]
+     },
+     {
+      "akteur": "Andere AG",
+      "rolle": "Hersteller",
+      "angebot": "X-500",
+      "segment": "Hochtemperatur",
+      "stand": "im Markt",
+      "claims": [
+       "F_waermepumpen_4"
+      ]
+     },
+     {
+      "akteur": "Beispielministerium",
+      "rolle": "Fördergeber",
+      "angebot": "Förderprogramm Prozesswärme",
+      "segment": "Förderung",
+      "stand": "gestartet 08/2026",
+      "claims": [
+       "F_waermepumpen_2"
+      ]
+     }
+    ],
+    "auswahl": "Hersteller aus dem Zeitungsvergleich und der zentrale Fördergeber; keine Vollständigkeit.",
+    "kernaussagen": [
+     {
+      "titel": "Förderung setzt Impulse: neues Programm seit August 2026",
+      "claims": [
+       "F_waermepumpen_2"
+      ]
+     },
+     {
+      "titel": "Kleiner Markt: 1.200 Einheiten über 1 MW in Europa 2025",
+      "claims": [
+       "F_waermepumpen_1"
+      ]
+     },
+     {
+      "titel": "Mindestens drei Hersteller bieten Hochtemperatur-Wärmepumpen an",
+      "claims": [
+       "F_waermepumpen_4"
+      ]
+     }
+    ],
+    "entwicklungen": [
+     {
+      "datum": "2026-08-15",
+      "ereignis": "Förderprogramm Prozesswärme gestartet",
+      "status": "gestartet",
+      "claims": [
+       "F_waermepumpen_2"
+      ]
+     }
+    ],
+    "fragen": [
+     {
+      "frage": "Welche Rolle spielt das Förderprogramm in Ihren Kundengesprächen?",
+      "claims": [
+       "F_waermepumpen_2"
+      ]
+     }
+    ],
+    "luecken": [
+     "Keine belastbaren Marktanteile öffentlich verfügbar."
+    ],
+    "ausnahmen": [
+     {
+      "regel": "fokus.kennzahlen",
+      "grund": "Verband, Ministerium und zwei Wirtschaftsmedien durchsucht; weitere belastbare Kennzahlen zu Volumen oder Preisen sind öffentlich nicht verfügbar."
+     }
+    ]
+   }
+  ]
+ },
+ "phasen": {
+  "fokus:waermepumpen": "fertig"
+ }
+}

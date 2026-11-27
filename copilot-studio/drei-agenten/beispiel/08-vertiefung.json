@@ -1,0 +1,681 @@
+{
+ "quellen": [
+  {
+   "titel": "Geschäftsbericht 2025",
+   "herausgeber": "Musterwerk GmbH",
+   "datum": "2026-04-15",
+   "url": "https://www.example.com/gb-2025.pdf",
+   "abruf": "2026-11-20",
+   "art": "original",
+   "typ": "geschaeftsbericht",
+   "geoeffnet": true,
+   "geschaeftsjahr": "2025",
+   "id": "Q1"
+  },
+  {
+   "id": "Q2",
+   "titel": "Molkerei setzt auf Hochtemperatur",
+   "herausgeber": "Beispiel-Regionalzeitung",
+   "datum": "2026-07-10",
+   "url": "https://regional.example.org/molkerei",
+   "abruf": "2026-11-21",
+   "art": "medien",
+   "typ": "medien",
+   "geoeffnet": true
+  }
+ ],
+ "claims": [
+  {
+   "id": "P2",
+   "aussage": "Die HT-400 ist laut Geschäftsbericht seit 2025 in Pilotserienfertigung.",
+   "ursprung": "hersteller",
+   "status": "Pilotserie laut Hersteller",
+   "datum": "2025-12-31",
+   "quellen": [
+    "Q1"
+   ],
+   "belegstelle": "S. 22, Produktbericht",
+   "stufe": "A",
+   "korrekturgrund": "Geschäftsbericht nennt Pilotserie, nicht Serie."
+  },
+  {
+   "id": "P8",
+   "aussage": "Eine Regionalzeitung bestätigt den Betrieb der HT-400 in einer Molkerei seit Juli 2026.",
+   "ursprung": "medien",
+   "status": "in Betrieb laut Medien",
+   "datum": "2026-07-10",
+   "quellen": [
+    "Q2"
+   ],
+   "belegstelle": "Absatz 3",
+   "stufe": "A"
+  }
+ ],
+ "inhalt": {
+  "portfolio": {
+   "felder": [
+    {
+     "name": "Wärmepumpen",
+     "angebote": [
+      {
+       "name": "HT-400",
+       "anwendung": "Prozesswärme bis 150 °C",
+       "eigenschaften": "bis zu 150 °C Vorlauf (Herstellerangabe)",
+       "status_stufe": "im_einsatz",
+       "status": "Pilotserie laut Hersteller; Betrieb in Molkerei laut Medien",
+       "claims": [
+        "P1",
+        "P2",
+        "P5",
+        "P8"
+       ]
+      },
+      {
+       "name": "HT-200",
+       "anwendung": "Prozesswärme kleinerer Betriebe",
+       "eigenschaften": "nicht öffentlich beschrieben",
+       "status_stufe": "test",
+       "status": "Erprobung bei Pilotkunden laut Hersteller",
+       "claims": [
+        "P6"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "markt": {
+   "kennzahlen": [
+    {
+     "kennzahl": "Verkaufte Industrie-Wärmepumpen > 1 MW",
+     "wert": "1.200 Stück",
+     "definition": "Europa, 2025, Verbandsstatistik",
+     "claims": [
+      "M1"
+     ]
+    },
+    {
+     "kennzahl": "Wachstum der Stückzahl > 1 MW",
+     "wert": "18 %",
+     "definition": "Europa, 2025 gegenüber 2024, Verbandsstatistik",
+     "claims": [
+      "M3"
+     ]
+    }
+   ],
+   "vergleich": {
+    "einheit": "Hochtemperatur-Wärmepumpen",
+    "kriterien": [
+     {
+      "id": "temp",
+      "name": "Max. Vorlauftemperatur",
+      "typ": "kennzahl",
+      "einheit": "°C",
+      "frage": "Welche maximale Vorlauftemperatur nennt der Hersteller?",
+      "beleganforderung": "Datenblatt oder Produktseite",
+      "bedingungen": "Herstellerangabe, Maximalwert"
+     },
+     {
+      "id": "einsatz",
+      "name": "Belegter Einsatzstand",
+      "typ": "evidenzstufe",
+      "frage": "Wie weit ist der Einsatz öffentlich belegt?",
+      "beleganforderung": "Liefer- oder Betriebsnachweis",
+      "stufen": {
+       "1": "angekündigt",
+       "2": "Pilot oder Test",
+       "3": "in Betrieb bei Kunden",
+       "4": "Serie mit wiederholten Lieferungen"
+      }
+     },
+     {
+      "id": "fertigung",
+      "name": "Fertigungs- und Lieferfähigkeit",
+      "typ": "profil",
+      "frage": "Was ist zu Fertigung und Lieferung belegt?",
+      "beleganforderung": "Geschäftsbericht oder Medien"
+     }
+    ],
+    "zeilen": [
+     {
+      "akteur": "Musterwerk",
+      "angebot": "HT-400",
+      "referenz": true,
+      "zellen": {
+       "temp": {
+        "wert": 150,
+        "text": "bis zu 150 °C (Herstellerangabe)",
+        "claims": [
+         "P1"
+        ]
+       },
+       "einsatz": {
+        "stufe": 3,
+        "text": "in Betrieb, Serie nicht belegt",
+        "aussage": "Betrieb in einer Molkerei laut zwei Medien; nur Pilotserie laut Geschäftsbericht.",
+        "einordnung": "Betrieb belegt, wiederholte Serienlieferung nicht.",
+        "grenze": "Stückzahlen unbekannt.",
+        "claims": [
+         "P5",
+         "P8"
+        ]
+       },
+       "fertigung": {
+        "text": "Pilotserie laut Geschäftsbericht",
+        "claims": [
+         "P2"
+        ]
+       }
+      }
+     },
+     {
+      "akteur": "Andere AG",
+      "angebot": "X-500",
+      "zellen": {
+       "temp": {
+        "wert": 120,
+        "text": "bis zu 120 °C (Herstellerangabe)",
+        "claims": [
+         "M2"
+        ]
+       },
+       "einsatz": {
+        "stufe": 3,
+        "text": "in Betrieb laut Medien",
+        "claims": [
+         "M5"
+        ]
+       }
+      }
+     },
+     {
+      "akteur": "Dritte GmbH",
+      "angebot": "Z-300",
+      "zellen": {
+       "temp": {
+        "wert": 130,
+        "text": "bis zu 130 °C (Herstellerangabe)",
+        "claims": [
+         "M4"
+        ]
+       }
+      }
+     }
+    ]
+   },
+   "praesenz": [
+    {
+     "region": "Deutschland",
+     "laender": [
+      "Deutschland"
+     ],
+     "schwerpunkt": "Heimatmarkt, Service im Norden",
+     "produktbezug": "Wärmepumpen und Service",
+     "fokus": true,
+     "abdeckung": "Nur Servicestandort Hamburg öffentlich belegt; Produktionsstandort nicht recherchiert.",
+     "aktivitaeten": [
+      {
+       "akteur": "Musterwerk GmbH",
+       "land": "Deutschland",
+       "ort": "Hamburg",
+       "funktion": "Service",
+       "betreiber": "eigen",
+       "status": "operativ",
+       "statusdatum": "2026-09-02",
+       "produktbezug": "Service",
+       "beschreibung": "Eigenes Servicezentrum laut Fachmedium.",
+       "eigentum": "eigene Gesellschaft",
+       "claims": [
+        "M6"
+       ]
+      }
+     ]
+    }
+   ],
+   "luecken": [],
+   "ausnahmen": []
+  }
+ },
+ "interpretation": {
+  "reife": [
+   {
+    "id": "I11",
+    "angebot": "HT-400",
+    "stufe": 5,
+    "aussage": "Höchste belegte Stufe: Im Betrieb.",
+    "begruendung": "Betrieb in einer Molkerei laut zwei Medien; Serie nicht belegt, nur Pilotserie.",
+    "unsicherheit": "Keine Herstellerangabe zu Stückzahlen.",
+    "naechste_stufe": "Serienfertigung nicht belegt.",
+    "basis": [
+     "P5",
+     "P8"
+    ]
+   },
+   {
+    "id": "I12",
+    "angebot": "HT-200",
+    "stufe": 3,
+    "aussage": "Höchste belegte Stufe: Test / Demo.",
+    "begruendung": "Erprobung bei Pilotkunden laut Hersteller.",
+    "unsicherheit": "Nur Herstellerangabe.",
+    "naechste_stufe": "Kein konkreter Kundenauftrag belegt.",
+    "basis": [
+     "P6"
+    ]
+   },
+   {
+    "id": "I13",
+    "angebot": "Wartungsverträge",
+    "stufe": 5,
+    "aussage": "Höchste belegte Stufe: Im Betrieb.",
+    "begruendung": "Angebot laut Geschäftsbericht.",
+    "unsicherheit": "Kundenzahl unbekannt.",
+    "naechste_stufe": "Keine Skalierungsangaben.",
+    "basis": [
+     "P3"
+    ]
+   },
+   {
+    "id": "I14",
+    "angebot": "Fernüberwachung",
+    "stufe": 4,
+    "aussage": "Höchste belegte Stufe: Kundenprogramm.",
+    "begruendung": "Teil eines Auftrags laut Medien.",
+    "unsicherheit": "Nur ein Medienbericht.",
+    "naechste_stufe": "Betrieb nicht belegt.",
+    "basis": [
+     "P7"
+    ]
+   }
+  ],
+  "summary": {
+   "highlights": [
+    {
+     "id": "I1",
+     "label": "Konzernumsatz",
+     "wert": "412 Mio. EUR",
+     "bezug": "Musterwerk-Konzern",
+     "zeitraum": "Geschäftsjahr 2025",
+     "basis": [
+      "T1"
+     ]
+    },
+    {
+     "id": "I2",
+     "label": "Max. Vorlauf HT-400 (Herstellerangabe)",
+     "wert": "150 °C",
+     "bezug": "Produkt HT-400",
+     "zeitraum": "Stand 2026",
+     "basis": [
+      "P1"
+     ]
+    },
+    {
+     "id": "I3",
+     "label": "Status HT-400",
+     "wert": "Pilotserie, im Betrieb",
+     "art": "status",
+     "bezug": "Produkt HT-400",
+     "zeitraum": "seit 2025 / Juli 2026",
+     "basis": [
+      "P2",
+      "P8"
+     ]
+    }
+   ],
+   "kernaussagen": [
+    {
+     "id": "I4",
+     "titel": "Hochtemperatur als Unterscheidungsmerkmal",
+     "vorschau": "Laut Herstellerangaben höhere Vorlauftemperatur als zwei Wettbewerber.",
+     "aussage": "Die HT-400 erreicht laut Hersteller höhere Vorlauftemperaturen als X-500 und Z-300.",
+     "begruendung": "Vergleich dreier Herstellerangaben.",
+     "methode": "Vergleich der Kriterienwerte",
+     "unsicherheit": "Keine unabhängigen Messungen.",
+     "basis": [
+      "P1",
+      "M2",
+      "M4"
+     ]
+    },
+    {
+     "id": "I5",
+     "titel": "Service wird regional ausgebaut",
+     "vorschau": "Neues Servicezentrum in Hamburg laut Fachmedium.",
+     "aussage": "Musterwerk baut seine Servicepräsenz in Norddeutschland aus.",
+     "begruendung": "Eröffnung des Servicezentrums.",
+     "unsicherheit": "Nur ein Medienbericht.",
+     "basis": [
+      "T3"
+     ]
+    },
+    {
+     "id": "I6",
+     "titel": "Einfache Eigentümerstruktur",
+     "vorschau": "Vollständig im Besitz einer Holding.",
+     "aussage": "Die Eigentümerstruktur ist einfach.",
+     "begruendung": "100 % Holding laut Geschäftsbericht.",
+     "unsicherheit": "",
+     "basis": [
+      "C1"
+     ]
+    },
+    {
+     "id": "I7",
+     "titel": "JV für Großanlagen",
+     "vorschau": "50/50-JV, Kontrolle nicht belegt.",
+     "aussage": "Großanlagen werden über ein Joint Venture adressiert.",
+     "begruendung": "JV laut Anhang.",
+     "unsicherheit": "Kontrollrechte unbekannt.",
+     "basis": [
+      "C2"
+     ]
+    }
+   ]
+  },
+  "keyfacts": [
+   {
+    "id": "I8",
+    "modul": "portfolio",
+    "titel": "Hochtemperatur im Betrieb, Serie offen",
+    "fakt": "HT-400 in Pilotserie, Betrieb in einer Molkerei laut zwei Medien.",
+    "insight": "Das Kernprodukt ist im Einsatz; der Schritt zur Serie ist noch nicht belegt.",
+    "unsicherheit": "Stückzahlen unbekannt.",
+    "basis": [
+     "P2",
+     "P8"
+    ]
+   },
+   {
+    "id": "I9",
+    "modul": "cluster",
+    "titel": "Großanlagen nur über JV",
+    "fakt": "50/50-JV mit Beispiel Kälte AG.",
+    "insight": "Für Großanlagen ist Musterwerk auf einen Partner angewiesen.",
+    "unsicherheit": "Kontrolle nicht belegt.",
+    "basis": [
+     "C2"
+    ]
+   },
+   {
+    "id": "I10",
+    "modul": "markt",
+    "titel": "Temperaturvorsprung laut Datenblättern",
+    "fakt": "150 °C gegenüber 120 und 130 °C.",
+    "insight": "Ein Kriterium spricht für Musterwerk, kein Gesamtvorsprung.",
+    "unsicherheit": "Herstellerangaben.",
+    "basis": [
+     "P1",
+     "M2",
+     "M4"
+    ]
+   }
+  ]
+ },
+ "pruefung": {
+  "stand": "2026-11-21",
+  "umfang": {
+   "kapitel": "alle",
+   "nur_a": false
+  },
+  "zusammenfassung": "Ein Status war zu hoch angesetzt und wurde korrigiert; der Betrieb wurde durch eine zweite Quelle vertieft.",
+  "claims": [
+   {
+    "id": "T1",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A",
+    "beleg": "https://www.example.com/gb-2025.pdf S. 12",
+    "begruendung": "Wert und Jahr stimmen."
+   },
+   {
+    "id": "T2",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "T3",
+    "urteil": "durch_suche_gestuetzt",
+    "stufe": "A",
+    "begruendung": "Zweiter Bericht gefunden, Original nicht geöffnet."
+   },
+   {
+    "id": "T4",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "T5",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "T6",
+    "urteil": "nicht_einzeln_geprueft",
+    "stufe": "B"
+   },
+   {
+    "id": "H1",
+    "urteil": "nicht_erreichbar",
+    "stufe": "A",
+    "begruendung": "Teamseite nicht abrufbar."
+   },
+   {
+    "id": "H2",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "P1",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "P2",
+    "urteil": "korrigiert",
+    "stufe": "A",
+    "begruendung": "Bericht nennt Pilotserie.",
+    "korrektur": "Status auf Pilotserie geändert."
+   },
+   {
+    "id": "P3",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "P4",
+    "urteil": "nicht_einzeln_geprueft",
+    "stufe": "B"
+   },
+   {
+    "id": "P5",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "P6",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "P7",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "P8",
+    "urteil": "neu_aus_vertiefung",
+    "stufe": "A",
+    "begruendung": "Bei der Vertiefung gefunden und im Original gelesen."
+   },
+   {
+    "id": "C1",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "C2",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "C3",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "M1",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "M2",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "M3",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "M4",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "M5",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "M6",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "F_waermepumpen_1",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "F_waermepumpen_2",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "F_waermepumpen_3",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "F_waermepumpen_4",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   },
+   {
+    "id": "F_waermepumpen_5",
+    "urteil": "im_original_bestaetigt",
+    "stufe": "A"
+   }
+  ],
+  "ableitungen": [
+   {
+    "id": "I1",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I2",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I4",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I6",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I7",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I9",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I10",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I12",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I13",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I14",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I15",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I16",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "S1",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "S2",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "S3",
+    "urteil": "gestuetzt"
+   },
+   {
+    "id": "I3",
+    "urteil": "angepasst",
+    "begruendung": "Status nach Korrektur von P2 angepasst."
+   },
+   {
+    "id": "I8",
+    "urteil": "angepasst",
+    "begruendung": "Keyfact nach Korrektur angepasst."
+   },
+   {
+    "id": "I11",
+    "urteil": "angepasst",
+    "begruendung": "Reifestufe von 6 auf 5 gesenkt."
+   },
+   {
+    "id": "I5",
+    "urteil": "eingeschraenkt",
+    "begruendung": "Nur ein Medienbericht."
+   }
+  ],
+  "vertiefung": [
+   {
+    "bereich": "Portfolio HT-400",
+    "ergebnis": "Zweite Quelle für den Betrieb gefunden; Serienstatus nicht bestätigt."
+   }
+  ],
+  "stichprobe": [
+   {
+    "gruppe": "Unternehmen und Portfolio, Q1, Hintergrund B",
+    "auswahl": "T6, P4",
+    "ergebnis": "nicht einzeln geprüft"
+   }
+  ],
+  "hinweise": [
+   "Fiktives Beispiel für Tests.",
+   "Matrixzellen Einsatzstand und Fertigung nach Korrektur von P2 angepasst."
+  ]
+ }
+}

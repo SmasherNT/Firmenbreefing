@@ -1,0 +1,260 @@
+{
+ "interpretation": {
+  "summary": {
+   "highlights": [
+    {
+     "id": "I1",
+     "label": "Konzernumsatz",
+     "wert": "412 Mio. EUR",
+     "bezug": "Musterwerk-Konzern",
+     "zeitraum": "Geschäftsjahr 2025",
+     "basis": [
+      "T1"
+     ]
+    },
+    {
+     "id": "I2",
+     "label": "Max. Vorlauf HT-400 (Herstellerangabe)",
+     "wert": "150 °C",
+     "bezug": "Produkt HT-400",
+     "zeitraum": "Stand 2026",
+     "basis": [
+      "P1"
+     ]
+    },
+    {
+     "id": "I3",
+     "label": "Status HT-400",
+     "wert": "Serie",
+     "art": "status",
+     "bezug": "Produkt HT-400",
+     "zeitraum": "seit 2025, laut Hersteller",
+     "basis": [
+      "P2"
+     ]
+    }
+   ],
+   "kernaussagen": [
+    {
+     "id": "I4",
+     "titel": "Hochtemperatur als Unterscheidungsmerkmal",
+     "vorschau": "Laut Herstellerangaben höhere Vorlauftemperatur als zwei Wettbewerber.",
+     "aussage": "Die HT-400 erreicht laut Hersteller höhere Vorlauftemperaturen als X-500 und Z-300.",
+     "begruendung": "Vergleich dreier Herstellerangaben.",
+     "methode": "Vergleich der Kriterienwerte",
+     "unsicherheit": "Keine unabhängigen Messungen.",
+     "basis": [
+      "P1",
+      "M2",
+      "M4"
+     ]
+    },
+    {
+     "id": "I5",
+     "titel": "Service wird regional ausgebaut",
+     "vorschau": "Neues Servicezentrum in Hamburg laut Fachmedium.",
+     "aussage": "Musterwerk baut seine Servicepräsenz in Norddeutschland aus.",
+     "begruendung": "Eröffnung des Servicezentrums.",
+     "unsicherheit": "Nur ein Medienbericht.",
+     "basis": [
+      "T3"
+     ]
+    },
+    {
+     "id": "I6",
+     "titel": "Einfache Eigentümerstruktur",
+     "vorschau": "Vollständig im Besitz einer Holding.",
+     "aussage": "Die Eigentümerstruktur ist einfach.",
+     "begruendung": "100 % Holding laut Geschäftsbericht.",
+     "unsicherheit": "",
+     "basis": [
+      "C1"
+     ]
+    },
+    {
+     "id": "I7",
+     "titel": "JV für Großanlagen",
+     "vorschau": "50/50-JV, Kontrolle nicht belegt.",
+     "aussage": "Großanlagen werden über ein Joint Venture adressiert.",
+     "begruendung": "JV laut Anhang.",
+     "unsicherheit": "Kontrollrechte unbekannt.",
+     "basis": [
+      "C2"
+     ]
+    }
+   ]
+  },
+  "keyfacts": [
+   {
+    "id": "I8",
+    "modul": "portfolio",
+    "titel": "Serienreife Hochtemperatur",
+    "fakt": "HT-400 laut Hersteller in Serie, Lieferung laut Fachmedium.",
+    "insight": "Das Kernprodukt ist über die Demonstrationsphase hinaus.",
+    "begruendung": "Serienangabe plus Lieferbericht.",
+    "unsicherheit": "Serienstand nur Herstellerangabe.",
+    "basis": [
+     "P2",
+     "P5"
+    ]
+   },
+   {
+    "id": "I9",
+    "modul": "cluster",
+    "titel": "Großanlagen nur über JV",
+    "fakt": "50/50-JV mit Beispiel Kälte AG.",
+    "insight": "Für Großanlagen ist Musterwerk auf einen Partner angewiesen.",
+    "unsicherheit": "Kontrolle nicht belegt.",
+    "basis": [
+     "C2"
+    ]
+   },
+   {
+    "id": "I10",
+    "modul": "markt",
+    "titel": "Temperaturvorsprung laut Datenblättern",
+    "fakt": "150 °C gegenüber 120 und 130 °C.",
+    "insight": "Ein Kriterium spricht für Musterwerk, kein Gesamtvorsprung.",
+    "unsicherheit": "Herstellerangaben.",
+    "basis": [
+     "P1",
+     "M2",
+     "M4"
+    ]
+   }
+  ],
+  "reife": [
+   {
+    "id": "I11",
+    "angebot": "HT-400",
+    "stufe": 6,
+    "aussage": "Höchste belegte Stufe: Serie / Skala.",
+    "begruendung": "Serienfertigung laut Geschäftsbericht und Auslieferung laut Fachmedium.",
+    "unsicherheit": "Serienstand nur Herstellerangabe.",
+    "naechste_stufe": "Höchste Stufe erreicht.",
+    "basis": [
+     "P2",
+     "P5"
+    ]
+   },
+   {
+    "id": "I12",
+    "angebot": "HT-200",
+    "stufe": 3,
+    "aussage": "Höchste belegte Stufe: Test / Demo.",
+    "begruendung": "Erprobung bei Pilotkunden laut Hersteller.",
+    "unsicherheit": "Nur Herstellerangabe.",
+    "naechste_stufe": "Kein konkreter Kundenauftrag belegt.",
+    "basis": [
+     "P6"
+    ]
+   },
+   {
+    "id": "I13",
+    "angebot": "Wartungsverträge",
+    "stufe": 5,
+    "aussage": "Höchste belegte Stufe: Im Betrieb.",
+    "begruendung": "Angebot laut Geschäftsbericht.",
+    "unsicherheit": "Kundenzahl unbekannt.",
+    "naechste_stufe": "Keine Skalierungsangaben.",
+    "basis": [
+     "P3"
+    ]
+   },
+   {
+    "id": "I14",
+    "angebot": "Fernüberwachung",
+    "stufe": 4,
+    "aussage": "Höchste belegte Stufe: Kundenprogramm.",
+    "begruendung": "Teil eines Auftrags laut Medien.",
+    "unsicherheit": "Nur ein Medienbericht.",
+    "naechste_stufe": "Betrieb nicht belegt.",
+    "basis": [
+     "P7"
+    ]
+   }
+  ],
+  "praesenz": [
+   {
+    "id": "I15",
+    "region": "Deutschland",
+    "stufe": 4,
+    "status": "bewertet",
+    "aussage": "Eigene operative Service-Infrastruktur.",
+    "begruendung": "Eigenes Servicezentrum Hamburg.",
+    "methode": "regional-presence-v2",
+    "unsicherheit": "Nur ein Medienbericht.",
+    "naechste_stufe": "Zweite Kernfunktion nicht belegt.",
+    "basis": [
+     "M6"
+    ]
+   }
+  ],
+  "positionierung": [
+   {
+    "id": "I16",
+    "dimension": "Netzwerkposition",
+    "urteil": "abhängig bei Großanlagen",
+    "aussage": "Großanlagen nur über ein JV mit offener Kontrollfrage.",
+    "methode": "Auswertung der belegten Beziehungen",
+    "begruendung": "Einziges JV im Netz betrifft Großanlagen.",
+    "unsicherheit": "Kontrollrechte unbekannt.",
+    "basis": [
+     "C2"
+    ]
+   }
+  ],
+  "swot": {
+   "staerken": [
+    {
+     "id": "S1",
+     "titel": "Hochtemperatur-Kompetenz",
+     "aussage": "Höchste Vorlauftemperatur im Vergleich laut Herstellerangaben.",
+     "begruendung": "Kriterienvergleich.",
+     "einschraenkung": "Herstellerangaben",
+     "basis": [
+      "I4"
+     ]
+    }
+   ],
+   "schwaechen": [
+    {
+     "id": "S2",
+     "titel": "Großanlagen nur mit Partner",
+     "aussage": "Für Großanlagen auf ein JV angewiesen.",
+     "begruendung": "Einziges JV betrifft Großanlagen.",
+     "einschraenkung": "Kontrolle unbekannt.",
+     "basis": [
+      "C2"
+     ]
+    }
+   ],
+   "chancen": [
+    {
+     "id": "S3",
+     "titel": "Förderung Prozesswärme",
+     "aussage": "Neue Förderung kann Nachfrage stützen.",
+     "begruendung": "Programm seit August 2026.",
+     "basis": [
+      "F_waermepumpen_2"
+     ]
+    }
+   ],
+   "risiken": []
+  },
+  "grenzen": [
+   "Vergleich beruht auf Herstellerangaben."
+  ]
+ },
+ "offen": {
+  "luecken": [
+   "Keine unabhängigen Leistungstests gefunden."
+  ],
+  "fragen": [
+   "Welche Referenzkunden nutzen die HT-400 im Dauerbetrieb?"
+  ]
+ },
+ "phasen": {
+  "interpretation": "fertig"
+ }
+}
